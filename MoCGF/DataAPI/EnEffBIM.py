@@ -16,4 +16,7 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 
 def fetchData(uriList=[]):
     # FIXME: add Yuns API here
-    return {'foo' : 42}
+    # discussion: what data do we need? probably almost all
+    # return just one dictionary? many small functions? where is the preprocessing done?
+    dataDictionary = {'foo' : 42, 'bar' : 'blaBar', choiceAllMatching : True}
+    return dataDictionary

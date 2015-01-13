@@ -1,4 +1,2 @@
-
-The value of foo is ${foo}.
-
+## Main controller file, call subfiles from here
 <%include file="Sub.mot"/>
