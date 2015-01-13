@@ -23,3 +23,8 @@ simulator.log
 unitTests.log
 # Ignore some Python stuff
 __pycache__/
+
+#Ignore Eclipse Stuff
+/.settings
+.project
+.pydevproject
