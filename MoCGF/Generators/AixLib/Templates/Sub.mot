@@ -3,10 +3,10 @@ model UseCase1_1
   import AixLib;
 
   inner AixLib.HVAC.BaseParameters baseParameters(
-    mu_Water=4.7729e-4,
-    rho_Water=983.83,
-    cp_Water=4182.7,
-    lambda_Water=0.65297)
+    mu_Water=${mu_water},
+    rho_Water=${rho_Water},
+    cp_Water=${cp_Water},
+    lambda_Water=${lambda_Water})
     annotation (Placement(transformation(extent={{-98,74},{-78,94}})));
   AixLib.Building.LowOrder.ThermalZone thermalZone(zoneParam=
         UseCaseEnEffBIM.Utilities.AixLib.VDI6007HeavyWeight())
