@@ -18,5 +18,5 @@ def fetchData(uriList=[]):
     # FIXME: add Yuns API here
     # discussion: what data do we need? probably almost all
     # return just one dictionary? many small functions? where is the preprocessing done?
-    dataDictionary = {'foo' : 42, 'bar' : 'blaBar', choiceAllMatching : True}
+    dataDictionary = {'foo' : 42, 'bar' : 'blaBar', 'choiceAllMatching' : True}
     return dataDictionary
