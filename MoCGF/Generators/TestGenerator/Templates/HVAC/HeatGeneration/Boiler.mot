@@ -1,0 +1,1 @@
+<%page args="modelCounter"/>	AixLib.HVAC.HeatGeneration.Boiler ${models[modelCounter].modelName}(Q_flow_max = ${models[modelCounter].power})

@@ -1,0 +1,21 @@
+## Main controller file
+## call subfiles from here 
+within;
+model ${modelName}
+  import AixLib;
+
+  inner AixLib.HVAC.BaseParameters baseParameters(
+    mu_Water=${mu_Water},
+    rho_Water=${rho_Water},
+    cp_Water=${cp_Water},
+    lambda_Water=${lambda_Water})
+    annotation (Placement(transformation(extent={{-100,80},{-80,100}})));
+
+equation
+  connect(weather.WeatherDataVector, thermalZone.weather);
+  connect(weather.SolarRadiation_OrientedSurfaces, thermalZone.solarRad_in);
+
+  annotation(
+    experiment(StopTime=3.1536e+007, Interval=1800)
+  );
+end ${modelName};
