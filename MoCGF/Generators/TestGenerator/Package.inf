@@ -20,4 +20,4 @@ module = Filter01
 function = filter01
 
 [TEMPLATES]
-topFile = Main.mot
+topFile = TestModel.mo
