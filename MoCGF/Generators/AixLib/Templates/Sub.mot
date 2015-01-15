@@ -3,7 +3,7 @@ model UseCase1_1
   import AixLib;
 
   inner AixLib.HVAC.BaseParameters baseParameters(
-    mu_Water=${mu_water},
+    mu_Water=${mu_Water},
     rho_Water=${rho_Water},
     cp_Water=${cp_Water},
     lambda_Water=${lambda_Water})
