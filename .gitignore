@@ -18,13 +18,19 @@ request
 stat
 status
 stop
+#
 # Ignore files created by the unit tests.
 simulator.log
 unitTests.log
-# Ignore some Python stuff
+#
+# Ignore some Python files
 __pycache__/
 .pyc
-#Ignore Eclipse Stuff
+#
+# Ignore Eclipse files
 /.settings
 .project
 .pydevproject
+#
+# Ignore PyCharm files
+/.idea
