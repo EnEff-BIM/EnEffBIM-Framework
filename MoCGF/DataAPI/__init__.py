@@ -8,4 +8,4 @@
 # specify the name of the MODULE (filename without .py)
 # the API name (name = ...) may be different!
 
-__all__ = ['Dummy', 'EnEffBIM']
+__all__ = ['Dummy', 'EnEffBIM', 'TestAPI']
