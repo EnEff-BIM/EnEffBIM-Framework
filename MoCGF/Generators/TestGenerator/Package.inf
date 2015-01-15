@@ -1,0 +1,23 @@
+[GENERATOR]
+name = TestGenerator
+version = 0.1
+description = Generates Modelica code for AixLib from EnEFF-BIM data
+author = EnEff-BIM team
+
+[REQUIRES]
+modelicaLibs = [AIXLIB]
+
+[API]
+name = TestAPI
+minVer = 0.1
+maxVer = 0.9
+
+[MAPRULES]
+files = RuleSet01.xml
+
+[PYFILTER]
+module = Filter01
+function = filter01
+
+[TEMPLATES]
+topFile = TestModel.mo

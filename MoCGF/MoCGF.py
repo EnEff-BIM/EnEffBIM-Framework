@@ -221,6 +221,7 @@ class MoCGFGenerator(object):
             raise Exception('Generator is not valid - canceling execution!')
         # fill data model from the api using the data URIs
         dm = self.api.fetchData(uriList)
+        print(dm)
         # apply filter
         # FIXME
         # handle data to template
