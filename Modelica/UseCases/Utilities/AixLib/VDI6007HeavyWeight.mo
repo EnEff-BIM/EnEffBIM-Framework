@@ -1,0 +1,42 @@
+within UseCases.Utilities.AixLib;
+record VDI6007HeavyWeight
+  import AixLib;
+  extends AixLib.DataBase.Buildings.ZoneBaseRecord(
+ zoneID = "VDI6007HeavyWeight",
+    usage = "UseCase",
+    h_heater = 1300,
+    Heater_on = true,
+    l_cooler = -4200,
+    Cooler_on = false,
+    NrPeople = 3.00,
+    NrPeopleMachines = 2,
+    RoomArea = 17.5,
+    LightingPower = 30,
+    RatioConvectiveHeatLighting = 0.580000,
+    withInnerwalls = true,
+    R1i = 0.000595515,
+    C1i = 1.48216e+007,
+    Ai = 75.5,
+    alphaiwi = 2.2,
+    withOuterwalls = true,
+    RRest = 0.042748777,
+    R1o = 0.004366222,
+    C1o = 1.60085e+006,
+    Ao = 10.5,
+    alphaowi = 2.7,
+    alphaowo = 25.0,
+    aowo = 0.7,
+    n = 1,
+    weightfactorswall = {0.125273332},
+    weightfactorground = 0,
+    withWindows = true,
+    Aw = {7},
+    gsunblind = {1.00},
+    weightfactorswindow = {0.874726653},
+    g = 0.60,
+    Vair = 52.5,
+    epsi=1,
+    epso=1,
+    epsw=1);
+  annotation ();
+end VDI6007HeavyWeight;
