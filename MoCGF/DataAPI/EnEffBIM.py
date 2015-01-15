@@ -25,9 +25,9 @@ def fetchData(uriList=[]):
     # FIXME: add Yuns API here
     # discussion: what data do we need? probably almost all
     # return just one dictionary? many small functions? where is the preprocessing done?
-    #dataDictionary = {'mu_water' : 4.7729e-4, 'rho_Water' : 983.83, 'cp_Water' : 4182.7, 'lambda_Water' : 0.65297, 'choiceAllMatching' : True}
+    # dataDictionary = {'mu_water': 4.7729e-4, 'rho_Water': 983.83, 'cp_Water': 4182.7, 'lambda_Water': 0.65297}
     dataDictionary = dict(
-        mu_Water=4.7729e-4, 
+        mu_Water=4.7729e-4,
         rho_Water=983.83,
         cp_Water=4182.7,
         lambda_Water=0.65297,
