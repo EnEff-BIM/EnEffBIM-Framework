@@ -225,7 +225,7 @@ class MoCGFGenerator(object):
         # FIXME
         # handle data to template
         tLookup = TemplateLookup(directories=[self.getTemplateFolder()])
-        template = Template("""<%%include file="%s"/>""" % self.cfg['TEMPLATES'].get('topFile'), lookup=tLookup)
+        template = Template("""<%%include file="%s"/>""" % self.cfg['TEMPLATES'].get('topFile'), lookup=tLookup, strict_undefined=True)
         buf = StringIO()
         ctx = Context(buf, **dm)
         template.render_context(ctx)
