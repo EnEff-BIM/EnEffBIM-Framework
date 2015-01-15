@@ -1,2 +1,0 @@
-## Main controller file, call subfiles from here
-<%include file="firstTryTemplate.mo"/>
