@@ -1,3 +1,3 @@
 within UseCases;
-package Utilities 
+package Utilities
 end Utilities;

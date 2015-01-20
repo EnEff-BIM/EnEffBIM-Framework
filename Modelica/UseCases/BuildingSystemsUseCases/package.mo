@@ -1,4 +1,4 @@
 within UseCases;
-package BuildingSystemsUseCases 
+package BuildingSystemsUseCases
   extends Modelica.Icons.Package;
 end BuildingSystemsUseCases;

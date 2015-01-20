@@ -4,16 +4,16 @@
 # Station: Essen                           WMO-Nummer: 10410
 # Lage: 51°24'N <- B.   6°58'O <- L.   152 Meter über NN
 # Zeitpunkt der Erstellung: November 2010
-#  
+#
 # Art des TRY    : mittleres Jahr
 # Bezugszeitraum : 1988-2007
 # Stadteffekt    : -----
 # Höhenkorrektur : -----
-#  
+#
 # Datenbasis : Beobachtungsdaten Zeitraum 1988-2007
-#  
+#
 # Format: (i2,2x,i4,2x,i2,2x,i2,2x,i2,2x,i1,2x,i3,2x,f6.1,2x,f6.1,2x,f7.1,2x,f6.1,2x,i3,2x,i2,2x,i4,2x,i4,1x,i1,2x,i4,2x,i5,2x,i1)
-#  
+#
 # Reihenfolge der Parameter:
 # RG TRY-Region                                                           {1..15}
 # IS Standortinformation                                                  {1,2}
@@ -26,18 +26,18 @@
 # t  Lufttemperatur in 2m Höhe über Grund                        [°C]
 # p  Luftdruck in Stationshöhe                                   [hPa]
 # x  Wasserdampfgehalt, Mischungsverhältnis                      [g/kg]
-# RF Relative Feuchte in 2 m Höhe über Grund                     [%]      {1..100} 
-# W  Wetterereignis der aktuellen Stunde                                  {0..99}  
-# B  Direkte Sonnenbestrahlungsstärke (horiz. Ebene)             [W/m²]   abwärts gerichtet: positiv 
+# RF Relative Feuchte in 2 m Höhe über Grund                     [%]      {1..100}
+# W  Wetterereignis der aktuellen Stunde                                  {0..99}
+# B  Direkte Sonnenbestrahlungsstärke (horiz. Ebene)             [W/m²]   abwärts gerichtet: positiv
 # D  Difuse Sonnenbetrahlungsstärke (horiz. Ebene)               [W/m²]   abwärts gerichtet: positiv
 # IK Information, ob B und oder D Messwert/Rechenwert                     {1;2;3;4;9}
 # A  Bestrahlungsstärke d. atm. Wärmestrahlung (horiz. Ebene)    [W/m²]   abwärts gerichtet: positiv
 # E  Bestrahlungsstärke d. terr. Wärmestrahlung                  [W/m²]   aufwärts gerichtet: negativ
 # IL Qualitätsbit für die langwelligen Strahlungsgrößen                   {1;2;3;4;5;6;7;8;9}
-# 
-#  
+#
+#
 # RG    IS  MM  DD  HH  N   WR      WG       t       p        x   RF   W     B     D IK    A      E IL
-# 
+#
 double wetter(8761,20)
 0	5	1	12	31	24	7	180	2.7	3.6	988.0	3.5	62.0	-1	0	0	9	298	-339	9
 3600	5	1	1	1	1	8	70	2.5	2.1	985.7	3.8	96.0	24	0	0	9	282	-314	9

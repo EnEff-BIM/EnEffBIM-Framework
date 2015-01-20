@@ -1,5 +1,5 @@
 within ;
-package UseCases 
+package UseCases
 
 
 extends Modelica.Icons.Package;
