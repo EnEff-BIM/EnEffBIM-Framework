@@ -1,14 +1,14 @@
-within UseCases.AixLib;
+within UseCases.AixLibUseCases;
 model UseCase2_1
   import AixLib;
   Modelica.SIunits.Energy Year_Energy_Consumption;
 
   inner AixLib.HVAC.BaseParameters baseParameters(T0=567.3)
     annotation (Placement(transformation(extent={{-98,74},{-78,94}})));
-  AixLib.Building.LowOrder.ThermalZone thermalZone(zoneParam=
+  AixLibUseCases.Building.LowOrder.ThermalZone thermalZone(zoneParam=
         UseCase_Project_Final.AixLib.DataBase.VDI6007HeavyWeight_TestCase5())
     annotation (Placement(transformation(extent={{18,34},{52,68}})));
-  AixLib.Building.Components.Weather.Weather weather(
+  AixLibUseCases.Building.Components.Weather.Weather weather(
     Outopt=1,
     Air_temp=true,
     Sky_rad=true,
@@ -84,7 +84,7 @@ model UseCase2_1
   Modelica.Blocks.Sources.Constant set_vorl_temp(k=308.15)
     annotation (Placement(transformation(extent={{-56,-29},{-46,-19}})));
   AixLib.HVAC.Radiators.Radiator radiator(RadiatorType=
-        AixLib.DataBase.Radiators.ThermX2_ProfilV_979W(
+        AixLibUseCases.DataBase.Radiators.ThermX2_ProfilV_979W(
           NominalPower=885.94,
           T_flow_nom=56.719,
           T_return_nom=53.984,

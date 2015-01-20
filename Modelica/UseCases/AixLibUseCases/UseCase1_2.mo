@@ -1,4 +1,4 @@
-within UseCases.AixLib;
+within UseCases.AixLibUseCases;
 model UseCase1_2
   import AixLib;
 
@@ -9,10 +9,10 @@ model UseCase1_2
     cp_Water=4182.7,
     lambda_Water=0.65297)
     annotation (Placement(transformation(extent={{-96,74},{-76,94}})));
-  AixLib.Building.LowOrder.ThermalZone thermalZone(zoneParam=
-        UseCaseEnEffBIM.Utilities.AixLib.VDI6007HeavyWeight())        annotation (Placement(transformation(extent={{18,40},
-            {52,74}})));
-  AixLib.Building.Components.Weather.Weather weather(
+  AixLibUseCases.Building.LowOrder.ThermalZone thermalZone(zoneParam=
+        UseCaseEnEffBIM.Utilities.AixLib.VDI6007HeavyWeight())
+    annotation (Placement(transformation(extent={{18,40},{52,74}})));
+  AixLibUseCases.Building.Components.Weather.Weather weather(
     Outopt=1,
     Air_temp=true,
     Sky_rad=true,
@@ -20,8 +20,9 @@ model UseCase1_2
     Latitude=50.87,
     Longitude=7.17,
     fileName="D:/workspaces/Wetter_Koeln_AixLib.txt",
-    SOD=UseCaseEnEffBIM.Utilities.AixLib.South())
-    annotation (Placement(transformation(extent={{-19,-13},{19,13}},
+    SOD=UseCaseEnEffBIM.Utilities.AixLib.South()) annotation (Placement(
+        transformation(
+        extent={{-19,-13},{19,13}},
         rotation=0,
         origin={-55,85})));
   Modelica.Blocks.Sources.Constant infiltrationRate(k=0)
@@ -33,7 +34,7 @@ model UseCase1_2
   AixLib.HVAC.Valves.SimpleValve valve(dp(start=1000))
     annotation (Placement(transformation(extent={{21,-42},{41,-22}})));
   AixLib.HVAC.HeatGeneration.Boiler boiler(Q_flow_max=1300, boilerEfficiencyB=
-        AixLib.DataBase.Boiler.BoilerEfficiencyBaseDataDefinition(
+        AixLibUseCases.DataBase.Boiler.BoilerEfficiencyBaseDataDefinition(
         boilerEfficiency=[0,1; 1,1]))
     annotation (Placement(transformation(extent={{-48,-42},{-28,-22}})));
   AixLib.HVAC.Pipes.StaticPipe flowPipe(dp(start=100))

@@ -1,4 +1,4 @@
-within UseCases.AixLib;
+within UseCases.AixLibUseCases;
 model UseCase1_1
   import AixLib;
 
@@ -8,10 +8,10 @@ model UseCase1_1
     cp_Water=4182.7,
     lambda_Water=0.65297)
     annotation (Placement(transformation(extent={{-98,74},{-78,94}})));
-  AixLib.Building.LowOrder.ThermalZone thermalZone(zoneParam=
+  AixLibUseCases.Building.LowOrder.ThermalZone thermalZone(zoneParam=
         UseCaseEnEffBIM.Utilities.AixLib.VDI6007HeavyWeight())
     annotation (Placement(transformation(extent={{18,34},{52,68}})));
-  AixLib.Building.Components.Weather.Weather weather(
+  AixLibUseCases.Building.Components.Weather.Weather weather(
     Outopt=1,
     Air_temp=true,
     Sky_rad=true,
@@ -37,7 +37,7 @@ model UseCase1_1
   AixLib.HVAC.Pipes.StaticPipe flowPipe(dp(start=100))
     annotation (Placement(transformation(extent={{-14,-48},{6,-28}})));
   AixLib.HVAC.Radiators.Radiator radiator(RadiatorType=
-        AixLib.DataBase.Radiators.ThermX2_ProfilV_979W(
+        AixLibUseCases.DataBase.Radiators.ThermX2_ProfilV_979W(
           NominalPower=885.94,
           T_flow_nom=56.719,
           T_return_nom=53.984,

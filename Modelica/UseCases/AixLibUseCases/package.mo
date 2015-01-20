@@ -1,4 +1,4 @@
 within UseCases;
-package AixLib 
+package AixLibUseCases 
 extends Modelica.Icons.Package;
-end AixLib;
+end AixLibUseCases;
