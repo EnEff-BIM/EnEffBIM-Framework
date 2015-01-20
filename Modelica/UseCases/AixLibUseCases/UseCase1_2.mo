@@ -1,6 +1,5 @@
-within UseCases.AixLib;
+within UseCases.AixLibUseCases;
 model UseCase1_2
-  import AixLib;
 
   Modelica.SIunits.Energy Year_Energy_Consumption;
   inner AixLib.HVAC.BaseParameters baseParameters(
@@ -10,8 +9,8 @@ model UseCase1_2
     lambda_Water=0.65297)
     annotation (Placement(transformation(extent={{-96,74},{-76,94}})));
   AixLib.Building.LowOrder.ThermalZone thermalZone(zoneParam=
-        UseCaseEnEffBIM.Utilities.AixLib.VDI6007HeavyWeight())        annotation (Placement(transformation(extent={{18,40},
-            {52,74}})));
+        UseCases.Utilities.AixLib.VDI6007HeavyWeight())
+    annotation (Placement(transformation(extent={{18,40},{52,74}})));
   AixLib.Building.Components.Weather.Weather weather(
     Outopt=1,
     Air_temp=true,
@@ -19,9 +18,10 @@ model UseCase1_2
     Ter_rad=true,
     Latitude=50.87,
     Longitude=7.17,
-    fileName="D:/workspaces/Wetter_Koeln_AixLib.txt",
-    SOD=UseCaseEnEffBIM.Utilities.AixLib.South())
-    annotation (Placement(transformation(extent={{-19,-13},{19,13}},
+    fileName="./Resources/TRY_5_Essen.txt",
+    SOD=UseCases.Utilities.AixLib.South()) annotation (Placement(
+        transformation(
+        extent={{-19,-13},{19,13}},
         rotation=0,
         origin={-55,85})));
   Modelica.Blocks.Sources.Constant infiltrationRate(k=0)
@@ -138,7 +138,7 @@ model UseCase1_2
   Modelica.Blocks.Sources.CombiTimeTable internalLoads(
     tableName="InnerLoads",
     columns={2,3,4},
-    fileName="InnerLoads.txt",
+    fileName="./Resources/InnerLoads.txt",
     tableOnFile=true)
     annotation (Placement(transformation(extent={{82,24},{62,44}})));
   Modelica.Blocks.Sources.Constant setTemp(k=296.46)

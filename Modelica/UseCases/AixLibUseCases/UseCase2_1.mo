@@ -1,22 +1,21 @@
-within UseCases.AixLib;
+within UseCases.AixLibUseCases;
 model UseCase2_1
-  import AixLib;
   Modelica.SIunits.Energy Year_Energy_Consumption;
 
   inner AixLib.HVAC.BaseParameters baseParameters(T0=567.3)
     annotation (Placement(transformation(extent={{-98,74},{-78,94}})));
   AixLib.Building.LowOrder.ThermalZone thermalZone(zoneParam=
-        UseCase_Project_Final.AixLib.DataBase.VDI6007HeavyWeight_TestCase5())
+        UseCases.Utilities.AixLib.VDI6007HeavyWeight())
     annotation (Placement(transformation(extent={{18,34},{52,68}})));
   AixLib.Building.Components.Weather.Weather weather(
     Outopt=1,
     Air_temp=true,
     Sky_rad=true,
     Ter_rad=true,
-    SOD=UseCase_Project_Final.AixLib.DataBase.South(),
+    SOD=UseCases.Utilities.AixLib.South(),
     Latitude=50.87,
     Longitude=7.17,
-    fileName="D:/workspaces/TRY_5_Essen.txt")
+    fileName="./Resources/TRY_5_Essen.txt")
     annotation (Placement(transformation(extent={{-48,68},{-10,94}})));
   Modelica.Blocks.Sources.Constant infiltrationRate(k=0.0)
     annotation (Placement(transformation(extent={{0,27},{10,38}})));
@@ -102,7 +101,7 @@ model UseCase2_1
     tableOnFile=true,
     tableName="InnerLoads",
     columns={2,3,4},
-    fileName="InnerLoads.txt")
+    fileName="./Resources/InnerLoads.txt")
     annotation (Placement(transformation(extent={{90,16},{70,36}})));
 equation
 der(Year_Energy_Consumption)=heatPump.Power;

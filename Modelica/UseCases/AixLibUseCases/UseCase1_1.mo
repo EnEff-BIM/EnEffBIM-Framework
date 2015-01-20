@@ -1,6 +1,5 @@
-within UseCases.AixLib;
+within UseCases.AixLibUseCases;
 model UseCase1_1
-  import AixLib;
 
   inner AixLib.HVAC.BaseParameters baseParameters(
     mu_Water=4.7729e-4,
@@ -9,15 +8,15 @@ model UseCase1_1
     lambda_Water=0.65297)
     annotation (Placement(transformation(extent={{-98,74},{-78,94}})));
   AixLib.Building.LowOrder.ThermalZone thermalZone(zoneParam=
-        UseCaseEnEffBIM.Utilities.AixLib.VDI6007HeavyWeight())
+        UseCases.Utilities.AixLib.VDI6007HeavyWeight())
     annotation (Placement(transformation(extent={{18,34},{52,68}})));
   AixLib.Building.Components.Weather.Weather weather(
     Outopt=1,
     Air_temp=true,
     Sky_rad=true,
     Ter_rad=true,
-    SOD=UseCaseEnEffBIM.Utilities.AixLib.South(),
-    fileName="TRY_5_Essen.txt")
+    SOD=UseCases.Utilities.AixLib.South(),
+    fileName="./Resources/TRY_5_Essen.txt")
     annotation (Placement(transformation(extent={{-48,68},{-10,94}})));
   Modelica.Blocks.Sources.Constant infiltrationRate(k=0)
     annotation (Placement(transformation(extent={{0,21},{10,32}})));
@@ -25,7 +24,7 @@ model UseCase1_1
     tableOnFile=true,
     tableName="InnerLoads",
     columns={2,3,4},
-    fileName="InnerLoads.txt")
+    fileName="./Resources/InnerLoads.txt")
     annotation (Placement(transformation(extent={{94,16},{74,36}})));
   AixLib.HVAC.Pumps.Pump pump(Head_max=3.9688)
     annotation (Placement(transformation(extent={{-74,-48},{-54,-28}})));
