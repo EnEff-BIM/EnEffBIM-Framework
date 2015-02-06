@@ -78,9 +78,11 @@ class MoCGFWidget(QtGui.QWidget):
     def activateAPI(self):
         items = self.apiList.selectedItems()
         if items:
-            i = items[0]
+            api = items[0].text()
+            if MoCGF.py27:
+                api = unicode(api)
         self.apiView.clear()
-        self.apiView.setText(self.mocgf.apiInfoText(i.text(), 'html'))
+        self.apiView.setText(self.mocgf.apiInfoText(api, 'html'))
 
     # generator methods
     def exploreGenerators(self):
@@ -97,13 +99,18 @@ class MoCGFWidget(QtGui.QWidget):
     def activateGenerator(self):
         items = self.generatorList.selectedItems()
         if items:
-            i = items[0]
-        self.activeGenerator = self.mocgf.generators[i.text()]
+            gen = items[0].text()
+            if MoCGF.py27:
+                gen = unicode(gen)
+        self.activeGenerator = self.mocgf.generators[gen]
         self.generatorView.clear()
         self.generatorView.setText(self.activeGenerator.infoText('html'))
 
     def executeGenerator(self):
-        uriList = [u.strip() for u in self.uriInput.text().split(',')]
+        line = self.uriInput.text()
+        if MoCGF.py27:
+            line = unicode(line)
+        uriList = [u.strip() for u in line.split(',')]
         outputFile = self.outputInput.text()
         if not outputFile:
             tmp, outputFile = tempfile.mkstemp(suffix='.txt', text=True)
