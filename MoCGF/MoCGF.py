@@ -4,13 +4,30 @@
 # 20141114 Joerg Raedler jraedler@udk-berlin.de
 #
 
-import sys, os, os.path, zipfile, configparser, tempfile
+import sys
+
+# version check
+# please handle py27 a s a special case which may be removed later
+v = sys.version_info
+if v >= (3, 4):
+    py34 = True
+    py27 = False
+elif v >= (2, 7) and v < (3,):
+    py34 = False
+    py27 = True
+else:
+    raise Exception('This software runs on python versions 2.7 or >3.4 only!')
+
+if py27:
+    from urllib import pathname2url
+else: # py34
+    from urllib.request import pathname2url
+
+import os, os.path, zipfile, tempfile, configparser
 from mako.template import Template
 from mako.lookup import TemplateLookup
 from mako.runtime import Context
 from io import StringIO
-import urllib
-from urllib.request import pathname2url
 
 __version__ = '0.1-proof-of-concept'
 
@@ -159,7 +176,7 @@ class MoCGFGenerator(object):
         else:
             self.zf = None
         self.cfg = configparser.ConfigParser()
-        self.cfg.read_string(self.getTextFileContents('Package.inf'))
+        self.cfg.read_file(self.getReadableFile('Package.inf'))
         g = self.cfg['GENERATOR']
         self.name = g.get('name')
         self.version = g.get('version')
