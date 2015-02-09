@@ -7,7 +7,7 @@ PROOF OF CONCEPT
 Dependencies
 ------------
 
- 1. Python 3.4 or 2.7 - WinPython is recommended (includes a lot of packages)
+ 1. Python >=3.3 or 2.7 - WinPython is recommended (includes a lot of packages)
  2. PyQt for the GUI (included in WinPython)
  3. Mako template Engine:
      install on a python-enabled command line with "pip install mako"

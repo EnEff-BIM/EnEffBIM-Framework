@@ -24,17 +24,17 @@ lb.append(l)
 
 ## Checking python version
 py27 = False
-py34 = False
+py33 = False
 v = sys.version_info
 l = ['Checking python version... ', '.'.join(str(i) for i in v)]
-if v >= (3, 4):
-    py34 = True
+if v >= (3, 3):
+    py33 = True
     l.append('- Ok!')
 elif v >= (2, 7) and v < (3,):
     py27 = True
     l.append('Ok!')
 else:
-    l.append('- Please install Python 3.4 or newer and retry!')
+    l.append('- Please install Python 3.3 or newer and retry!')
     lb.append(l)
     done(1)
 lb.append(l)
