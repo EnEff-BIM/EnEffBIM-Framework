@@ -1,31 +1,27 @@
-#!/usr/bin/env python3
 #-*- coding:utf-8 -*-
 #
 # This file is part of MoCGF - a code generation framework
-# 20141114 Joerg Raedler jraedler@udk-berlin.de
+# 201500225 Joerg Raedler jraedler@udk-berlin.de
 #
 
 import sys, os, os.path, tempfile
 import MoCGF
+from MoCGF.Controller import Controller
 from PyQt4 import QtCore, QtGui, uic
 
-myPath = os.path.split(__file__)[0]
 
-
-def loadResources(rcPath=None):
-    if rcPath is None:
-        rcPath = os.path.join(myPath, 'Resources')
-    sys.path.insert(0, rcPath)
+def loadResources(resPath):
+    sys.path.insert(0, resPath)
     import Icons_rc
 
 
 class MoCGFWidget(QtGui.QWidget):
-    def __init__(self, app):
+    def __init__(self, app, resPath):
         QtGui.QWidget.__init__(self)
         self.app = app
         # load the ui
-        self.ui = uic.loadUi(os.path.join(myPath, 'Resources', 'MoCGF-GUI.ui'), self)
-        self.mocgf = MoCGF.MoCGFController()
+        self.ui = uic.loadUi(os.path.join(resPath, 'MoCGF-GUI.ui'), self)
+        self.mocgf = Controller()
         self.setWindowTitle('MoCGF GUI | Version: %s' % (MoCGF.__version__))
 
         # apis
@@ -122,11 +118,14 @@ class MoCGFWidget(QtGui.QWidget):
         if self.openOutputButton.isChecked():
             QtGui.QDesktopServices.openUrl(QtCore.QUrl.fromLocalFile(outputFile))
 
-
-if __name__ == "__main__":
-    loadResources()
+def main():
+    parent = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
+    #FIXME: this needs to be adjusted if package is installed
+    resPath = os.path.join(parent, 'Resources')
+    loadResources(resPath)
     app = QtGui.QApplication(sys.argv)
-    mw = MoCGFWidget(app)
+    mw = MoCGFWidget(app, resPath)
     mw.show()
     r = app.exec_()
-    sys.exit(r)
+    return(r)
+
