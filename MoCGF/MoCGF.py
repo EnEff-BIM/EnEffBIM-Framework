@@ -28,6 +28,7 @@ from mako.template import Template
 from mako.lookup import TemplateLookup
 from mako.runtime import Context
 from io import StringIO
+from import_file import import_file
 
 __version__ = '0.1-proof-of-concept'
 
@@ -238,9 +239,15 @@ class MoCGFGenerator(object):
             raise Exception('Generator is not valid - canceling execution!')
         # fill data model from the api using the data URIs
         dm = self.api.fetchData(uriList)
-        print(dm)
+        # print(dm)
         # apply filter
-        # FIXME
+        if self.cfg.has_section('PYFILTER'):
+            moduleName = self.cfg['PYFILTER'].get('module')
+            functionName = self.cfg['PYFILTER'].get('function')
+            modulePath = os.path.join(self.packagePath, 'Filters')
+            module = import_file(modulePath, moduleName)
+            function = getattr(module, functionName)
+            function(dm)
         # handle data to template
         tLookup = TemplateLookup(directories=[self.getTemplateFolder()])
         template = Template("""<%%include file="%s"/>""" % self.cfg['TEMPLATES'].get('topFile'), lookup=tLookup, strict_undefined=True)
