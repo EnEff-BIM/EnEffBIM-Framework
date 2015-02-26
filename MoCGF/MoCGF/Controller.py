@@ -9,9 +9,9 @@ from mako.template import Template
 from mako.lookup import TemplateLookup
 from mako.runtime import Context
 from io import StringIO
-from import_file import import_file
 import MoCGF
 from MoCGF.Generator import Generator
+from MoCGF.import_file import import_file
 
 if MoCGF.py27:
     from urllib import pathname2url
