@@ -1,12 +1,11 @@
-#!/usr/bin/env python3
 #-*- coding:utf-8 -*-
 #
 # This file is part of MoCGF - a code generation framework
-# 20141114 Joerg Raedler jraedler@udk-berlin.de
+# 201500225 Joerg Raedler jraedler@udk-berlin.de
 #
 
 import sys, os, argparse
-import MoCGF
+from MoCGF.Controller import Controller
 
 descr = """
 MoCGF is a framework to generate source code from data sources.
@@ -31,8 +30,10 @@ def main():
                         help='execute the generator with these data source URIs passed to the data API (needs -g)')
     args = parser.parse_args()
 
-    mocgf = MoCGF.MoCGFController()
-    # print(dir(args))
+    generatorPath = os.environ.get('MOCGF_GENERATORS', None)
+
+    mocgf = Controller(generatorPath)
+
     if args.list_apis:
         for n in sorted(mocgf.apis):
             a = mocgf.apis[n]
@@ -72,7 +73,3 @@ def main():
         return 0
     else:
         parser.print_help()
-
-
-if __name__ == '__main__':
-    sys.exit(main())
