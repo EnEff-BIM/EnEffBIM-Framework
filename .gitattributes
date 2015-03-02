@@ -1,2 +1,3 @@
+simmodel2modelica/simmodel2modelica.pro linguist-vendored
 simmodel2modelica/simmodel_framework/* linguist-vendored
 simmodel2modelica/mapping_rule_framework/* linguist-vendored
