@@ -4,6 +4,16 @@
 # 20141114 Joerg Raedler jraedler@udk-berlin.de
 #
 
-def filter01(*args, **kwargs):
-    pass
+# the data dictionary read from the api is the first argument,
+# other arguments may be introduced later...
 
+def filter01(d, *args, **kwargs):
+    
+    print('Filter running from module:', __file__)
+
+    # manipulate some data
+    d['foo'] += 1
+
+    # add more data
+    d['bar'] = 2.0 * d['foo']
+    
