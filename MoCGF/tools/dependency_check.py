@@ -48,6 +48,15 @@ except:
     l.append('- Please install mako and retry (pip install mako)!')
 lb.append(l)
 
+## Checking Jinja2
+l = ['Checking jinja2 template engine... ']
+try:
+    from jinja2 import Environment
+    l.append('Ok!')
+except:
+    l.append('- Please install jinja2 and retry (pip install jinja2)!')
+lb.append(l)
+
 ## Checking PyQt4
 l = ['Checking PyQt4... ']
 try:
