@@ -10,15 +10,13 @@ from MoCGF.Controller import Controller
 from PyQt4 import QtCore, QtGui, uic
 
 
-def loadResources(resPath):
-    sys.path.insert(0, resPath)
-    import Icons_rc
-
-
 class MoCGFWidget(QtGui.QWidget):
     def __init__(self, app, resPath):
         QtGui.QWidget.__init__(self)
         self.app = app
+        # load the Icons
+        sys.path.insert(0, resPath)
+        import Icons_rc
         # load the ui
         self.ui = uic.loadUi(os.path.join(resPath, 'MoCGF-GUI.ui'), self)
         generatorPath = os.environ.get('MOCGF_GENERATORS', None)
@@ -120,10 +118,8 @@ class MoCGFWidget(QtGui.QWidget):
             QtGui.QDesktopServices.openUrl(QtCore.QUrl.fromLocalFile(outputFile))
 
 def main():
-    parent = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
-    #FIXME: this needs to be adjusted if package is installed
-    resPath = os.path.join(parent, 'Resources')
-    loadResources(resPath)
+    # FIXME: resPath may need to be adjusted after installation?
+    resPath = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'res')
     app = QtGui.QApplication(sys.argv)
     mw = MoCGFWidget(app, resPath)
     mw.show()
