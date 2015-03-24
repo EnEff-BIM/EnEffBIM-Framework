@@ -4,14 +4,10 @@
 # 201500225 Joerg Raedler jraedler@udk-berlin.de
 #
 
-import os, os.path, zipfile, tempfile, configparser
+import os, os.path, zipfile
 from mako.template import Template
-from mako.lookup import TemplateLookup
-from mako.runtime import Context
-from io import StringIO
 import MoCGF
 from MoCGF.Generator import Generator
-from MoCGF.import_file import import_file
 
 if MoCGF.py27:
     from urllib import pathname2url
