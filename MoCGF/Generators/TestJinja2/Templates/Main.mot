@@ -1,0 +1,4 @@
+
+The value of foo is {{foo}}.
+
+{% include 'Sub.mot' %}

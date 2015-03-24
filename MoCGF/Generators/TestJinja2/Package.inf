@@ -1,0 +1,24 @@
+[GENERATOR]
+name = TestJinja2
+version = 0.1
+description = test the jinja2 engine - first implementation
+author = EnEff-BIM team
+
+[REQUIRES]
+modelicaLibs = []
+
+[API]
+name = TestDummy
+minVer = 0.1
+maxVer = 0.9
+
+[MAPRULES]
+files = RuleSet01.xml
+
+[PYFILTER]
+module = Filter01
+function = filter01
+
+[TEMPLATES]
+topFile = Main.mot
+type = jinja2
