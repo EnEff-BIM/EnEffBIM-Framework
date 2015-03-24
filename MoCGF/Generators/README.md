@@ -1,4 +1,4 @@
-MoCFG: Generator Packages
+MoCGF: Generator Packages
 =========================
 
 MoCGFs generators are bundles of files that are specific to an output
@@ -16,5 +16,5 @@ A generator may be:
 containing a file Package.inf and a special folder structure.
 
 Documentation will follow soon, please have a look at the examples for now. The
-easiest way to create a generator is to create a copy of an existing generator
+easiest way to create a generator is to make a copy of an existing generator
 and adjust the contents.
