@@ -5,9 +5,15 @@
 #
 
 import os, os.path, zipfile, tempfile, configparser
+
+# mako template engine
 from mako.template import Template
 from mako.lookup import TemplateLookup
 from mako.runtime import Context
+
+# jinja2 template engine
+from jinja2 import Environment, FileSystemLoader
+
 from io import StringIO
 import MoCGF
 from MoCGF.import_file import import_file
@@ -158,27 +164,50 @@ class Generator(object):
             f.close()
         return self.tempDir.name
 
+    def executeDataAPI(self, uriList=[]):
+        """execute the dataAPI to fetch data from the source"""
+        self.data = self.api.fetchData(uriList)
+
+    def executePyFilter(self):
+        """execute the python filter to manipulate loaded data"""
+        moduleName = self.cfg['PYFILTER'].get('module')
+        functionName = self.cfg['PYFILTER'].get('function')
+        modulePath = os.path.join(self.packagePath, 'Filters')
+        module = import_file(modulePath, moduleName)
+        function = getattr(module, functionName)
+        function(self.data)
+
+    def executeTemplates(self):
+        """execeute the templates with the data, return the output buffer"""
+        tmplType = self.cfg['TEMPLATES'].get('type', 'mako')
+        if tmplType == 'mako':
+            tLookup = TemplateLookup(directories=[self.getTemplateFolder()])
+            template = Template("""<%%include file="%s"/>""" % self.cfg['TEMPLATES'].get('topFile'), lookup=tLookup, strict_undefined=True)
+            buf = StringIO()
+            ctx = Context(buf, **self.data)
+            template.render_context(ctx)
+            buf.flush()
+            buf.seek(0)
+            return buf
+        elif tmplType == 'jinja2':
+            env = Environment(loader=FileSystemLoader(self.getTemplateFolder()))
+            template = env.get_template(self.cfg['TEMPLATES'].get('topFile'))
+            tmp = template.render(self.data)
+            buf = StringIO(tmp)
+            return(buf)
+        else:
+            raise Exception('Unknown template system: '+tmplType)
+
     def execute(self, uriList=[]):
         if not self.api:
             raise Exception('Generator is not valid - canceling execution!')
         # fill data model from the api using the data URIs
-        dm = self.api.fetchData(uriList)
-        # print(dm)
+        self.executeDataAPI(uriList)
         # apply filter
         if self.cfg.has_section('PYFILTER'):
-            moduleName = self.cfg['PYFILTER'].get('module')
-            functionName = self.cfg['PYFILTER'].get('function')
-            modulePath = os.path.join(self.packagePath, 'Filters')
-            module = import_file(modulePath, moduleName)
-            function = getattr(module, functionName)
-            function(dm)
-        # handle data to template
-        tLookup = TemplateLookup(directories=[self.getTemplateFolder()])
-        template = Template("""<%%include file="%s"/>""" % self.cfg['TEMPLATES'].get('topFile'), lookup=tLookup, strict_undefined=True)
-        buf = StringIO()
-        ctx = Context(buf, **dm)
-        template.render_context(ctx)
-        buf.flush()
-        buf.seek(0)
-        return buf
+            self.executePyFilter()
+        # handle data to template, return text buffer
+        return self.executeTemplates()
 
+    # make the generator executable
+    __call__ = execute
