@@ -21,7 +21,8 @@ class MoCGFWidget(QtGui.QWidget):
         self.app = app
         # load the ui
         self.ui = uic.loadUi(os.path.join(resPath, 'MoCGF-GUI.ui'), self)
-        self.mocgf = Controller()
+        generatorPath = os.environ.get('MOCGF_GENERATORS', None)
+        self.mocgf = Controller(generatorPath)
         self.setWindowTitle('MoCGF GUI | Version: %s' % (MoCGF.__version__))
 
         # apis
@@ -128,4 +129,3 @@ def main():
     mw.show()
     r = app.exec_()
     return(r)
-
