@@ -53,7 +53,8 @@ class Controller(object):
         # if not specified, use 'Generators' subfolder in the parent folder of this file
         if generatorPath is None:
             parent = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
-            self.generatorPath = os.path.join(parent, 'Generators')
+            generatorPath = os.path.join(parent, 'Generators')
+        self.generatorPath = generatorPath
         self.rescanGenerators()
 
     def readAPIs(self):
