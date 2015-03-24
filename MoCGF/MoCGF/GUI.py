@@ -118,7 +118,9 @@ class MoCGFWidget(QtGui.QWidget):
             QtGui.QDesktopServices.openUrl(QtCore.QUrl.fromLocalFile(outputFile))
 
 def main():
-    # FIXME: resPath may need to be adjusted after installation?
+    # FIXME: resPath may need to be adjusted after installation,
+    # or use pkg_resources? See:
+    # http://stackoverflow.com/questions/779495/python-access-data-in-package-subdirectory
     resPath = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'res')
     app = QtGui.QApplication(sys.argv)
     mw = MoCGFWidget(app, resPath)
