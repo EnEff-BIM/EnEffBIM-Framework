@@ -5,9 +5,15 @@
 #
 
 import os, os.path, zipfile, tempfile, configparser
+
+# mako template engine
 from mako.template import Template
 from mako.lookup import TemplateLookup
 from mako.runtime import Context
+
+# jinja2 template engine
+from jinja2 import Environment, FileSystemLoader
+
 from io import StringIO
 import MoCGF
 from MoCGF.import_file import import_file
@@ -173,14 +179,24 @@ class Generator(object):
 
     def executeTemplates(self):
         """execeute the templates with the data, return the output buffer"""
-        tLookup = TemplateLookup(directories=[self.getTemplateFolder()])
-        template = Template("""<%%include file="%s"/>""" % self.cfg['TEMPLATES'].get('topFile'), lookup=tLookup, strict_undefined=True)
-        buf = StringIO()
-        ctx = Context(buf, **self.data)
-        template.render_context(ctx)
-        buf.flush()
-        buf.seek(0)
-        return buf
+        tmplType = self.cfg['TEMPLATES'].get('type', 'mako')
+        if tmplType == 'mako':
+            tLookup = TemplateLookup(directories=[self.getTemplateFolder()])
+            template = Template("""<%%include file="%s"/>""" % self.cfg['TEMPLATES'].get('topFile'), lookup=tLookup, strict_undefined=True)
+            buf = StringIO()
+            ctx = Context(buf, **self.data)
+            template.render_context(ctx)
+            buf.flush()
+            buf.seek(0)
+            return buf
+        elif tmplType == 'jinja2':
+            env = Environment(loader=FileSystemLoader(self.getTemplateFolder()))
+            template = env.get_template(self.cfg['TEMPLATES'].get('topFile'))
+            tmp = template.render(self.data)
+            buf = StringIO(tmp)
+            return(buf)
+        else:
+            raise Exception('Unknown template system: '+tmplType)
 
     def execute(self, uriList=[]):
         if not self.api:
@@ -195,4 +211,3 @@ class Generator(object):
 
     # make the generator executable
     __call__ = execute
-
