@@ -158,27 +158,41 @@ class Generator(object):
             f.close()
         return self.tempDir.name
 
-    def execute(self, uriList=[]):
-        if not self.api:
-            raise Exception('Generator is not valid - canceling execution!')
-        # fill data model from the api using the data URIs
-        dm = self.api.fetchData(uriList)
-        # print(dm)
-        # apply filter
-        if self.cfg.has_section('PYFILTER'):
-            moduleName = self.cfg['PYFILTER'].get('module')
-            functionName = self.cfg['PYFILTER'].get('function')
-            modulePath = os.path.join(self.packagePath, 'Filters')
-            module = import_file(modulePath, moduleName)
-            function = getattr(module, functionName)
-            function(dm)
-        # handle data to template
+    def executeDataAPI(self, uriList=[]):
+        """execute the dataAPI to fetch data from the source"""
+        self.data = self.api.fetchData(uriList)
+
+    def executePyFilter(self):
+        """execute the python filter to manipulate loaded data"""
+        moduleName = self.cfg['PYFILTER'].get('module')
+        functionName = self.cfg['PYFILTER'].get('function')
+        modulePath = os.path.join(self.packagePath, 'Filters')
+        module = import_file(modulePath, moduleName)
+        function = getattr(module, functionName)
+        function(self.data)
+
+    def executeTemplates(self):
+        """execeute the templates with the data, return the output buffer"""
         tLookup = TemplateLookup(directories=[self.getTemplateFolder()])
         template = Template("""<%%include file="%s"/>""" % self.cfg['TEMPLATES'].get('topFile'), lookup=tLookup, strict_undefined=True)
         buf = StringIO()
-        ctx = Context(buf, **dm)
+        ctx = Context(buf, **self.data)
         template.render_context(ctx)
         buf.flush()
         buf.seek(0)
         return buf
+
+    def execute(self, uriList=[]):
+        if not self.api:
+            raise Exception('Generator is not valid - canceling execution!')
+        # fill data model from the api using the data URIs
+        self.executeDataAPI(uriList)
+        # apply filter
+        if self.cfg.has_section('PYFILTER'):
+            self.executePyFilter()
+        # handle data to template, return text buffer
+        return self.executeTemplates()
+
+    # make the generator executable
+    __call__ = execute
 
