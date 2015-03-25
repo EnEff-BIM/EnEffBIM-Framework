@@ -23,6 +23,7 @@ def main():
     grp = parser.add_argument_group('general information')
     grp.add_argument('-a', '--list-apis', action='store_true', help='list available data APIs')
     grp.add_argument('-l', '--list-generators', action='store_true', help='list available code generators')
+    grp.add_argument('-d', '--debug', metavar='LEVEL', help='set debug level to show on stderr (1...5)')
     grp = parser.add_argument_group('generator actions')
     grp.add_argument('-g', '--generator', metavar='GEN', nargs=1, help='select generator GEN (needed for the following actions)')
     grp.add_argument('-o', '--output', metavar='FILE', nargs=1, help='use FILE for output instead of stdout')
@@ -35,7 +36,11 @@ def main():
     gp = args.search_path or os.environ.get('MOCGF_GENERATORS', '')
     generatorPath = [p for p in gp.split(';') if p]
 
-    mocgf = Controller(generatorPath)
+    logLevel = 0
+    if args.debug:
+        logLevel = 10 * int(args.debug)
+
+    mocgf = Controller(generatorPath, logLevel=logLevel)
 
     if args.list_apis:
         for n in sorted(mocgf.apis):

@@ -16,7 +16,7 @@ MoCGF-cli is the command line interface to MoCGF. MoCGF-gui provides a graphical
 
 
 class MoCGFWidget(QtGui.QWidget):
-    def __init__(self, app, resPath, generatorPath):
+    def __init__(self, app, resPath, *arg, **kwarg):
         QtGui.QWidget.__init__(self)
         self.app = app
         # load the Icons
@@ -24,7 +24,7 @@ class MoCGFWidget(QtGui.QWidget):
         import Icons_rc
         # load the ui
         self.ui = uic.loadUi(os.path.join(resPath, 'MoCGF-GUI.ui'), self)
-        self.mocgf = Controller(generatorPath)
+        self.mocgf = Controller(*arg, **kwarg)
         self.setWindowTitle('MoCGF GUI | Version: %s' % (MoCGF.__version__))
 
         # apis
@@ -127,10 +127,18 @@ def main():
     parser = argparse.ArgumentParser(description=descr)
     grp = parser.add_argument_group('path settings')
     grp.add_argument('-p', '--search-path', metavar='PATH', help='search path for generators (separated by ;)')
+    grp = parser.add_argument_group('general information')
+    grp.add_argument('-d', '--debug', metavar='LEVEL', help='set debug level to show on stderr (1...5)')
+
     args = parser.parse_args()
+
 
     gp = args.search_path or os.environ.get('MOCGF_GENERATORS', '')
     generatorPath = [p for p in gp.split(';') if p]
+
+    logLevel = 0
+    if args.debug:
+        logLevel = 10 * int(args.debug)
 
     # FIXME: resPath may need to be adjusted after installation,
     # or use pkg_resources? See:
@@ -138,7 +146,7 @@ def main():
     resPath = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'res')
 
     app = QtGui.QApplication(sys.argv)
-    mw = MoCGFWidget(app, resPath, generatorPath)
+    mw = MoCGFWidget(app, resPath, generatorPath, logLevel=logLevel)
     mw.show()
     r = app.exec_()
     return(r)

@@ -102,6 +102,8 @@ class Generator(object):
         self.controller = controller
         self.packagePath = packagePath
         self.tempDir = None
+        self.logger = controller.logger
+        self.logger.debug('GEN | start to create instance for path %s', packagePath)
         if zipfile.is_zipfile(packagePath):
             self.zf = zipfile.ZipFile(packagePath)
         else:
