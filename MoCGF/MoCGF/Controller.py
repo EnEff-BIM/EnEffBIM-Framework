@@ -44,12 +44,17 @@ Path:        ${m.__file__}
 class Controller(object):
     """main controller of the code generation framework"""
 
-    def __init__(self, generatorPath=None):
+    def __init__(self, generatorPath=[]):
         self.readAPIs()
-        # if not specified, use 'Generators' subfolder in the parent folder of this file
-        if generatorPath is None:
+        # handle empty path list
+        if not generatorPath:
+            # running from source folder?
             parent = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
-            generatorPath = os.path.join(parent, 'Generators')
+            p = os.path.join(parent, 'Generators')
+            if os.path.isdir(p):
+                generatorPath.append(p)
+            else:
+                raise Exception('No folders to search for generators specified!')
         self.generatorPath = generatorPath
         self.rescanGenerators()
 
@@ -65,15 +70,15 @@ class Controller(object):
     def rescanGenerators(self):
         """rescan generatorPath and load generator packages"""
         self.generators = {}
-        for o in os.listdir(self.generatorPath):
-            p = os.path.join(self.generatorPath, o)
-            if os.path.isdir(p) or zipfile.is_zipfile(p):
-                g = Generator(self, p)
-                n = '%s::%s' % (g.name, g.version)
-                self.generators[n] = g
+        for p in self.generatorPath:
+            for e in os.listdir(p):
+                o = os.path.join(p, e)
+                if os.path.isdir(o) or zipfile.is_zipfile(o):
+                    g = Generator(self, o)
+                    n = '%s::%s' % (g.name, g.version)
+                    self.generators[n] = g
 
     def apiInfoText(self, api, fmt='txt'):
         """return information on an api in text form"""
         t = Template(apiInfoTmpl[fmt])
         return t.render(m=self.apis[api], p2u=pathname2url)
-

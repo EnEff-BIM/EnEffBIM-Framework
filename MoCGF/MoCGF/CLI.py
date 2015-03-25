@@ -18,6 +18,8 @@ nl = os.linesep
 def main():
     """main function when MoCGF is used on the command line"""
     parser = argparse.ArgumentParser(description=descr)
+    grp = parser.add_argument_group('path settings')
+    grp.add_argument('-p', '--search-path', metavar='PATH', help='search path for generators (separated by ;)')
     grp = parser.add_argument_group('general information')
     grp.add_argument('-a', '--list-apis', action='store_true', help='list available data APIs')
     grp.add_argument('-l', '--list-generators', action='store_true', help='list available code generators')
@@ -26,11 +28,12 @@ def main():
     grp.add_argument('-o', '--output', metavar='FILE', nargs=1, help='use FILE for output instead of stdout')
     grp.add_argument('-m', '--mapping-rules', action='store_true', help='extract mapping rules to stdout (needs -g)')
     grp.add_argument('-s', '--show-generator', action='store_true', help='show information on generator (needs -g)')
-    grp.add_argument('data_source', metavar='dataSource', type=str, default='', nargs='*', 
+    grp.add_argument('data_source', metavar='dataSource', type=str, default='', nargs='*',
                         help='execute the generator with these data source URIs passed to the data API (needs -g)')
     args = parser.parse_args()
 
-    generatorPath = os.environ.get('MOCGF_GENERATORS', None)
+    gp = args.search_path or os.environ.get('MOCGF_GENERATORS', '')
+    generatorPath = [p for p in gp.split(';') if p]
 
     mocgf = Controller(generatorPath)
 

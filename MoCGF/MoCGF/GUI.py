@@ -4,14 +4,19 @@
 # 201500225 Joerg Raedler jraedler@udk-berlin.de
 #
 
-import sys, os, os.path, tempfile
+import sys, os, os.path, tempfile, argparse
 import MoCGF
 from MoCGF.Controller import Controller
 from PyQt4 import QtCore, QtGui, uic
 
+descr = """
+MoCGF is a framework to generate source code from data sources.
+It is developed in the EnEff-BIM project to generate Modelica code from SimModel data.
+MoCGF-cli is the command line interface to MoCGF. MoCGF-gui provides a graphical interface."""
+
 
 class MoCGFWidget(QtGui.QWidget):
-    def __init__(self, app, resPath):
+    def __init__(self, app, resPath, generatorPath):
         QtGui.QWidget.__init__(self)
         self.app = app
         # load the Icons
@@ -19,7 +24,6 @@ class MoCGFWidget(QtGui.QWidget):
         import Icons_rc
         # load the ui
         self.ui = uic.loadUi(os.path.join(resPath, 'MoCGF-GUI.ui'), self)
-        generatorPath = os.environ.get('MOCGF_GENERATORS', None)
         self.mocgf = Controller(generatorPath)
         self.setWindowTitle('MoCGF GUI | Version: %s' % (MoCGF.__version__))
 
@@ -118,12 +122,23 @@ class MoCGFWidget(QtGui.QWidget):
             QtGui.QDesktopServices.openUrl(QtCore.QUrl.fromLocalFile(outputFile))
 
 def main():
+    """main function when MoCGF is used with the Qt gui"""
+
+    parser = argparse.ArgumentParser(description=descr)
+    grp = parser.add_argument_group('path settings')
+    grp.add_argument('-p', '--search-path', metavar='PATH', help='search path for generators (separated by ;)')
+    args = parser.parse_args()
+
+    gp = args.search_path or os.environ.get('MOCGF_GENERATORS', '')
+    generatorPath = [p for p in gp.split(';') if p]
+
     # FIXME: resPath may need to be adjusted after installation,
     # or use pkg_resources? See:
     # http://stackoverflow.com/questions/779495/python-access-data-in-package-subdirectory
     resPath = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'res')
+
     app = QtGui.QApplication(sys.argv)
-    mw = MoCGFWidget(app, resPath)
+    mw = MoCGFWidget(app, resPath, generatorPath)
     mw.show()
     r = app.exec_()
     return(r)
