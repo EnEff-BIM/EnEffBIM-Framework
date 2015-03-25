@@ -2,15 +2,17 @@
 MoCGF - Modelica Code Generation Framework
 ==========================================
 
+This software is work-in-progress. Documentation will be incomplete or missing
+and the software may not run properly.
+
 General Purpose
 ---------------
-
 MoCGF is a framework for the generation of Modelica code. It is part of the
 research project EnEff-BIM.
 
+
 Concept
 -------
-
 MoCGF manages a list of generators and data APIs. An generator is a package
 (contained in folder or a zip file) that contains output specific elements:
 
@@ -24,10 +26,8 @@ Generators are loaded from a folder (default: ./Generators). Each generator
 specific API. APIs are python modules loaded from the module package DataAPI
 (register in MoCGF_DataAPI/__init__.py).
 
-
 Dependencies
 ------------
-
 1. Python >=3.3 or 2.7 - WinPython is recommended (includes a lot of packages)
 2. PyQt for the GUI (included in WinPython)
 3. Mako template Engine:
@@ -58,19 +58,31 @@ This is the preferred way during development.
 
 Contents
 --------
-To be filled with contents.
+The source folder contains different elements. After installation these elements
+are stored in different places depending on your system.
 
 ### Package: MoCGF
-To be filled with contents.
+This is the main python module package. It should be installed in your python
+search path, this is usually done during the installation. This package contains
+the core functions of MoCGF.
 
 ### Package: MoCGF_DataAPI
-To be filled with contents.
+This is a python module package containing the data APIs. Developers will
+probably need to edit and amend these modules. If you add new modules, you need
+to list them in __init__.py. The package should be installed
+in your python search path, this is usually done during the installation.
 
 ### Folder: Generators
-To be filled with contents.
+This folder contains the predefined generators. You can copy this to your
+working environment. MoCGF can handle a list of folders to search for
+generators. You can set an environment variable MOCGF_GENERATORS to point to
+these folders or use the -p switch of the CLI or GUI.
 
 ### Executable Scripts
-To be filled with contents.
+The scripts give you an interface to MoCGF on the command line or in a graphical
+environment. The scripts require the packages MoCGF and MoCGF_DataAPI. Call the
+scripts with the --help switch to get some usage information.
 
 ### Tools
-To be filled with contents.
+At the moment there's only one tool available. You can call dependency_check to
+check for the required packages in your python installation.
