@@ -4,14 +4,10 @@
 # 201500225 Joerg Raedler jraedler@udk-berlin.de
 #
 
-import os, os.path, zipfile, tempfile, configparser
+import os, os.path, zipfile
 from mako.template import Template
-from mako.lookup import TemplateLookup
-from mako.runtime import Context
-from io import StringIO
 import MoCGF
 from MoCGF.Generator import Generator
-from MoCGF.import_file import import_file
 
 if MoCGF.py27:
     from urllib import pathname2url
@@ -48,12 +44,18 @@ Path:        ${m.__file__}
 class Controller(object):
     """main controller of the code generation framework"""
 
-    def __init__(self, generatorPath=None):
+    def __init__(self, generatorPath=[]):
         self.readAPIs()
-        # if not specified, use 'Generators' subfolder in the parent folder of this file
-        if generatorPath is None:
+        # handle empty path list
+        if not generatorPath:
+            # running from source folder?
             parent = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
-            self.generatorPath = os.path.join(parent, 'Generators')
+            p = os.path.join(parent, 'Generators')
+            if os.path.isdir(p):
+                generatorPath.append(p)
+            else:
+                raise Exception('No folders to search for generators specified!')
+        self.generatorPath = generatorPath
         self.rescanGenerators()
 
     def readAPIs(self):
@@ -68,15 +70,15 @@ class Controller(object):
     def rescanGenerators(self):
         """rescan generatorPath and load generator packages"""
         self.generators = {}
-        for o in os.listdir(self.generatorPath):
-            p = os.path.join(self.generatorPath, o)
-            if os.path.isdir(p) or zipfile.is_zipfile(p):
-                g = Generator(self, p)
-                n = '%s::%s' % (g.name, g.version)
-                self.generators[n] = g
+        for p in self.generatorPath:
+            for e in os.listdir(p):
+                o = os.path.join(p, e)
+                if os.path.isdir(o) or zipfile.is_zipfile(o):
+                    g = Generator(self, o)
+                    n = '%s::%s' % (g.name, g.version)
+                    self.generators[n] = g
 
     def apiInfoText(self, api, fmt='txt'):
         """return information on an api in text form"""
         t = Template(apiInfoTmpl[fmt])
         return t.render(m=self.apis[api], p2u=pathname2url)
-
