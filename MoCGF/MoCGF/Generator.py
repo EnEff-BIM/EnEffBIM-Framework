@@ -18,11 +18,6 @@ from io import StringIO
 import MoCGF
 from MoCGF.import_file import import_file
 
-if MoCGF.py27:
-    from urllib import pathname2url
-else: # py33
-    from urllib.request import pathname2url
-
 # a template for the generator info text as txt and html
 generatorInfoTmpl = {
 'txt' : """
@@ -109,6 +104,7 @@ class Generator(object):
         else:
             self.zf = None
         self.cfg = configparser.ConfigParser()
+        self.logger.debug('GEN | read Package.ini')
         self.cfg.read_file(self.getReadableFile('Package.inf'))
         g = self.cfg['GENERATOR']
         self.name = g.get('name')
@@ -119,15 +115,17 @@ class Generator(object):
         # check for a usable api
         acfg = self.cfg['API']
         self.api = None
+        self.logger.debug('GEN | locate API')
         for api in self.controller.apis.values():
             if acfg.get('name') == api.name:
                 if (acfg.get('minVer', '000') <= api.version) and (acfg.get('maxVer', '999999') >= api.version):
+                    self.logger.debug('GEN | found API: %s::%s', api.name, api.version)
                     self.api = api
 
     def infoText(self, fmt='txt'):
         """return information on this generator in text form"""
         t = Template(generatorInfoTmpl[fmt])
-        return t.render(cfg=self.cfg, path=self.packagePath, api=self.api, p2u=pathname2url)
+        return t.render(cfg=self.cfg, path=self.packagePath, api=self.api, p2u=self.controller.pathname2url)
 
     def getReadableFile(self, name, folder=''):
         """return a readable file-like object from package folder or zip"""
@@ -168,32 +166,38 @@ class Generator(object):
 
     def executeDataAPI(self, uriList=[]):
         """execute the dataAPI to fetch data from the source"""
-        self.data = self.api.fetchData(uriList)
+        self.logger.debug('GEN | calling data api')
+        self.data = self.api.fetchData(uriList, self.controller.systemCfg, self.cfg, self.logger)
 
     def executePyFilter(self):
         """execute the python filter to manipulate loaded data"""
         moduleName = self.cfg['PYFILTER'].get('module')
         functionName = self.cfg['PYFILTER'].get('function')
         modulePath = os.path.join(self.packagePath, 'Filters')
+        self.logger.debug('GEN | import pyfilter module %s', moduleName)
         module = import_file(modulePath, moduleName)
+        self.logger.debug('GEN | calling pyfilter function %s', functionName)
         function = getattr(module, functionName)
-        function(self.data)
+        function(self.data, self.controller.systemCfg, self.cfg, self.logger)
 
     def executeTemplates(self):
         """execeute the templates with the data, return the output buffer"""
         tmplType = self.cfg['TEMPLATES'].get('type', 'mako')
         if tmplType == 'mako':
+            self.logger.debug('GEN | calling mako template')
             tLookup = TemplateLookup(directories=[self.getTemplateFolder()])
             template = Template("""<%%include file="%s"/>""" % self.cfg['TEMPLATES'].get('topFile'), lookup=tLookup, strict_undefined=True)
             buf = StringIO()
-            ctx = Context(buf, **self.data)
+            ctx = Context(buf, systemCfg=self.controller.systemCfg, generatorCfg=self.cfg, logger=self.logger, **self.data)
             template.render_context(ctx)
             buf.flush()
             buf.seek(0)
             return buf
         elif tmplType == 'jinja2':
+            self.logger.debug('GEN | calling jinja2 template')
             env = Environment(loader=FileSystemLoader(self.getTemplateFolder()))
             template = env.get_template(self.cfg['TEMPLATES'].get('topFile'))
+            # FIXME: give access to systemCfg, generatorCfg, logger
             tmp = template.render(self.data)
             buf = StringIO(tmp)
             return(buf)

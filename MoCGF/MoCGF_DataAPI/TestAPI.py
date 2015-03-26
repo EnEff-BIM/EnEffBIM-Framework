@@ -10,34 +10,34 @@ version = '0.1'
 author = 'EnEff-BIM team'
 helptxt = """no helptext"""
 
-def fetchData(uriList=[]):
-    
+def fetchData(uriList, systemCfg, generatorCfg, logger):
+
     class Project(object):
-    
-    
+
+
         def __init__(self):
             self.projectName = 'TestModel'
             self.modelDescription = 'This is just a Testmodel'
             self.libraryName = 'AixLib'
             #self.model = model
-        
+
     class Model(object):
-        
+
         def __init__(self):
-            
+
             self.modelName = ''
-            
+
     class Connections(object):
-        
+
         def __init__(self):
-            
+
             self.connections = {}
-            
+
     boiler = Model()
     pump = Model()
     connections = Connections()
-    
-    
+
+
     boiler.modelName= 'Boiler'
     boiler.modelPath= 'HVAC/HeatGeneration/Boiler'
     boiler.power = 1000.0
@@ -46,5 +46,5 @@ def fetchData(uriList=[]):
     pump.head = 5.0
     connections = Connections()
     connections.connections = {'Boiler' : 'Pump', 'test1':'test2'}
-        
+
     return {'project' : Project(), 'models' : [boiler,pump], 'connections' : connections}

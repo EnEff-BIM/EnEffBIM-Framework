@@ -53,6 +53,15 @@ class Controller(object):
         self.logger.addHandler(logHandler)
         self.logger.setLevel(logLevel)
         self.logger.info('Starting MoCGF.Controller from file %s, version %s', __file__, MoCGF.__version__)
+        # create system configuration dict - will be available to subsystems
+        self.systemCfg = {
+            'py27': MoCGF.py27,
+            'py33': MoCGF.py33,
+            'platform': sys.platform,
+            'version': MoCGF.__version__,
+            # need more here?
+        }
+        self.pathname2url = pathname2url
         # read APIs
         self.readAPIs()
         # handle empty path list
