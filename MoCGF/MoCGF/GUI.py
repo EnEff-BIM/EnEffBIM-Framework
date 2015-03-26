@@ -4,7 +4,7 @@
 # 201500225 Joerg Raedler jraedler@udk-berlin.de
 #
 
-import sys, os, os.path, tempfile, argparse, logging
+import sys, os, os.path, tempfile, argparse, logging, configparser
 import MoCGF
 from MoCGF.Controller import Controller
 from PyQt4 import QtCore, QtGui, uic
@@ -179,11 +179,20 @@ def main():
 
     args = parser.parse_args()
 
+    # first read config file for default values
+    defaults = {
+        'GeneratorPath': os.environ.get('MOCGF_GENERATORS', ''),
+        'LogLevel' : '0',
+    }
+    cfg = configparser.ConfigParser(defaults)
+    cfg.read(os.path.expanduser('~/.MoCGF.cfg'))
 
-    gp = args.search_path or os.environ.get('MOCGF_GENERATORS', '')
+    # generatorPath
+    gp = args.search_path or cfg['DEFAULT']['GeneratorPath']
     generatorPath = [p for p in gp.split(';') if p]
 
-    logLevel = 0
+    # logLevel
+    logLevel = 10 * cfg.getint('DEFAULT', 'LogLevel')
     if args.debug:
         logLevel = 10 * int(args.debug)
 
