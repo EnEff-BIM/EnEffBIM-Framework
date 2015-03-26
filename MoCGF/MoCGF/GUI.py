@@ -4,7 +4,7 @@
 # 201500225 Joerg Raedler jraedler@udk-berlin.de
 #
 
-import sys, os, os.path, tempfile, argparse
+import sys, os, os.path, tempfile, argparse, logging
 import MoCGF
 from MoCGF.Controller import Controller
 from PyQt4 import QtCore, QtGui, uic
@@ -13,6 +13,43 @@ descr = """
 MoCGF is a framework to generate source code from data sources.
 It is developed in the EnEff-BIM project to generate Modelica code from SimModel data.
 MoCGF-cli is the command line interface to MoCGF. MoCGF-gui provides a graphical interface."""
+
+
+# view log in Qt - inspired by
+# http://stackoverflow.com/questions/14349563/how-to-get-non-blocking-real-time-behavior-from-python-logging-module-output-t
+
+class QtLogHandler(logging.Handler):
+    def __init__(self):
+        logging.Handler.__init__(self)
+    def emit(self, record):
+        record = self.format(record)
+        if record:
+            XStream.stdout().write('%s\n'%record)
+
+class XStream(QtCore.QObject):
+    _stdout = None
+    _stderr = None
+    messageWritten = QtCore.pyqtSignal(str)
+    def flush( self ):
+        pass
+    def fileno( self ):
+        return -1
+    def write( self, msg ):
+        if not self.signalsBlocked():
+            self.messageWritten.emit(msg)
+    @staticmethod
+    def stdout():
+        if not XStream._stdout:
+            XStream._stdout = XStream()
+            sys.stdout = XStream._stdout
+        return XStream._stdout
+    @staticmethod
+    def stderr():
+        if not XStream._stderr:
+            XStream._stderr = XStream()
+            sys.stderr = XStream._stderr
+        return XStream._stderr
+
 
 
 class MoCGFWidget(QtGui.QWidget):
@@ -24,8 +61,18 @@ class MoCGFWidget(QtGui.QWidget):
         import Icons_rc
         # load the ui
         self.ui = uic.loadUi(os.path.join(resPath, 'MoCGF-GUI.ui'), self)
-        self.mocgf = Controller(*arg, **kwarg)
         self.setWindowTitle('MoCGF GUI | Version: %s' % (MoCGF.__version__))
+        # create a logView?
+        if kwarg['logLevel'] > 0:
+            self.logView = QtGui.QTextBrowser(self)
+            self.moCGFMainView.addTab(self.logView, 'Messages')
+            XStream.stdout().messageWritten.connect(self.logView.insertPlainText)
+            XStream.stderr().messageWritten.connect(self.logView.insertPlainText)
+            logHandler = QtLogHandler()
+            logHandler.setFormatter(logging.Formatter("%(levelname)s: %(message)s"))
+            kwarg['logHandler'] = logHandler
+        # create a controller
+        self.mocgf = Controller(*arg, **kwarg)
 
         # apis
         self.apiList.itemSelectionChanged.connect(self.activateAPI)
@@ -128,7 +175,7 @@ def main():
     grp = parser.add_argument_group('path settings')
     grp.add_argument('-p', '--search-path', metavar='PATH', help='search path for generators (separated by ;)')
     grp = parser.add_argument_group('general information')
-    grp.add_argument('-d', '--debug', metavar='LEVEL', help='set debug level to show on stderr (1...5)')
+    grp.add_argument('-d', '--debug', metavar='LEVEL', help='set debug level to show on a messages tab (1...5)')
 
     args = parser.parse_args()
 
