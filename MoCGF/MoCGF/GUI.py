@@ -175,7 +175,7 @@ def main():
     grp = parser.add_argument_group('path settings')
     grp.add_argument('-p', '--search-path', metavar='PATH', help='search path for generators (separated by ;)')
     grp = parser.add_argument_group('general information')
-    grp.add_argument('-d', '--debug', metavar='LEVEL', help='set debug level to show on a messages tab (1...5)')
+    grp.add_argument('-d', '--debug', metavar='LEVEL', help='set debug level and activate messages tab (1...5)')
 
     args = parser.parse_args()
 
