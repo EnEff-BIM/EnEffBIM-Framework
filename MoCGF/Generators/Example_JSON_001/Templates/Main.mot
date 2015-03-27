@@ -1,0 +1,10 @@
+% for j in d:
+  File: ${j}
+  % for p in d[j]:
+    Name: ${p['name']}
+    Age: ${p['age']}
+    Tags: ${', '.join(p['tags'])}
+
+  % endfor
+% endfor
+<%include file="Sub.mot"/>

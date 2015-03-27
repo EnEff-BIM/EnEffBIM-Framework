@@ -198,7 +198,6 @@ class Generator(object):
             self.logger.debug('GEN | calling jinja2 template')
             env = Environment(loader=FileSystemLoader(self.getTemplateFolder()))
             template = env.get_template(self.cfg['TEMPLATES'].get('topFile'))
-            # FIXME: give access to systemCfg, generatorCfg, logger
             tmp = template.render({'d': self.data, 'systemCfg': self.controller.systemCfg,
                 'generatorCfg': self.cfg, 'logger': self.logger})
             buf = StringIO(tmp)
