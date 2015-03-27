@@ -185,7 +185,8 @@ def main():
         'LogLevel' : '0',
     }
     cfg = configparser.ConfigParser(defaults)
-    cfg.read(os.path.expanduser('~/.MoCGF.cfg'))
+    homeVar = {'win32':'USERPROFILE', 'linux2':'HOME', 'darwin':'HOME'}.get(sys.platform)
+    cfg.read(os.path.join(os.environ.get(homeVar, ''), '.MoCGF.cfg'))
 
     # generatorPath
     gp = args.search_path or cfg['DEFAULT']['GeneratorPath']
