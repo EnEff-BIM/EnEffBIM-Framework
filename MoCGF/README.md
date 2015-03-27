@@ -16,30 +16,29 @@ Concept
 MoCGF manages a list of generators and data APIs. An generator is a package
 (contained in folder or a zip file) that contains output specific elements:
 
-- general information in file Package.inf (Windows ini-file syntax)
-- mapping rule files in folder MappingRules
-- preprocessor / filter function in folder Filter
-- template files (mako) in file Templates
+- general information in file `Package.inf` (Windows ini-file syntax)
+- mapping rule files in folder `MappingRules`
+- preprocessor / filter function in folder `Filter`
+- template files (mako) in file `Templates`
 
-Generators are loaded from a folder (default: ./Generators). Each generator
-(defined by a name and a version number in Package.inf) depends on a
-specific API. APIs are python modules loaded from the module package DataAPI
-(register in MoCGF_DataAPI/__init__.py).
+Generators are loaded from a list of folders. Each generator (defined by a name
+and a version number in Package.inf) depends on a specific data API. Data APIs
+are python modules loaded from the module package `MoCGF_DataAPI`.
 
 Dependencies
 ------------
 1. Python >=3.3 or 2.7 - WinPython is recommended (includes a lot of packages)
 2. PyQt for the GUI (included in WinPython)
 3. Mako template Engine:
-   install on a python-enabled command line with "pip install mako"
+   install on a python-enabled command line with `pip install mako`
 4. Jinja2 template Engine:
-   install on a python-enabled command line with "pip install jinja2"
+   install on a python-enabled command line with `pip install jinja2`
    (included in WinPython)
 5. configparser for python 2.7:
-   install on a python-enabled command line with "pip install configparser"
+   install on a python-enabled command line with `pip install configparser`
 
-You can check these dependencies by running the script tools/dependency_check.py
-if you already have a python interpreter installed.
+You can check these dependencies by running the script
+`tools/dependency_check.py` if you already have a python interpreter installed.
 
 Installation
 ------------
@@ -49,7 +48,7 @@ The framework can be used in different ways:
 This is the preferred way during development.
 
 2. After installation with pythons standard tools (distutils):
-  * run "python setup.py install" in the source folder
+  * run `python setup.py install` in the source folder
   * all parts should now be installed on your computer (depending on the
     operating system)
   * this procedure is not fully implemented yet!
@@ -69,20 +68,20 @@ the core functions of MoCGF.
 ### Package: MoCGF_DataAPI
 This is a python module package containing the data APIs. Developers will
 probably need to edit and amend these modules. If you add new modules, you need
-to list them in __init__.py. The package should be installed
+to list them in `__init__.py`. The package should be installed
 in your python search path, this is usually done during the installation.
 
 ### Folder: Generators
 This folder contains the predefined generators. You can copy this to your
 working environment. MoCGF can handle a list of folders to search for
-generators. You can set an environment variable MOCGF_GENERATORS to point to
-these folders or use the -p switch of the CLI or GUI.
+generators.
 
 ### Executable Scripts
 The scripts give you an interface to MoCGF on the command line or in a graphical
-environment. The scripts require the packages MoCGF and MoCGF_DataAPI. Call the
-scripts with the --help switch to get some usage information.
+environment. The scripts require the packages `MoCGF` and `MoCGF_DataAPI`. Call
+the scripts with the `--help` switch to get some usage information.
 
 ### Tools
-At the moment there's only one tool available. You can call dependency_check to
-check for the required packages in your python installation.
+At the moment there's only one tool available. You can call
+`dependency_check.py` to check for the required packages in your python
+installation.
