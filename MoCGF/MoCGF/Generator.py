@@ -167,7 +167,8 @@ class Generator(object):
     def executeDataAPI(self, uriList=[]):
         """execute the dataAPI to fetch data from the source"""
         self.logger.debug('GEN | calling data api')
-        self.data = self.api.fetchData(uriList, self.controller.systemCfg, self.cfg, self.logger)
+        self.data = self.api.fetchData(uriList, self.controller.systemCfg,
+            self.cfg, self.logger)
 
     def executePyFilter(self):
         """execute the python filter to manipulate loaded data"""
@@ -186,10 +187,12 @@ class Generator(object):
         if tmplType == 'mako':
             self.logger.debug('GEN | calling mako template')
             tLookup = TemplateLookup(directories=[self.getTemplateFolder()])
-            template = Template("""<%%include file="%s"/>""" % self.cfg['TEMPLATES'].get('topFile'), lookup=tLookup, strict_undefined=True)
+            template = Template("""<%%include file="%s"/>""" %
+                self.cfg['TEMPLATES'].get('topFile'),
+                lookup=tLookup, strict_undefined=True)
             buf = StringIO()
-            ctx = Context(buf, d=self.data, systemCfg=self.controller.systemCfg,
-                generatorCfg=self.cfg, logger=self.logger)
+            ctx = Context(buf, _systemCfg=self.controller.systemCfg,
+                _generatorCfg=self.cfg, _logger=self.logger, **self.data)
             template.render_context(ctx)
             buf.flush()
             buf.seek(0)
@@ -198,8 +201,10 @@ class Generator(object):
             self.logger.debug('GEN | calling jinja2 template')
             env = Environment(loader=FileSystemLoader(self.getTemplateFolder()))
             template = env.get_template(self.cfg['TEMPLATES'].get('topFile'))
-            tmp = template.render({'d': self.data, 'systemCfg': self.controller.systemCfg,
-                'generatorCfg': self.cfg, 'logger': self.logger})
+            self.data['_systemCfg'] = self.controller.systemCfg
+            self.data['_generatorCfg'] = self.cfg
+            self.data['_logger'] = self.logger
+            tmp = template.render(self.data)
             buf = StringIO(tmp)
             return(buf)
         else:
