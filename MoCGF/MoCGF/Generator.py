@@ -188,7 +188,8 @@ class Generator(object):
             tLookup = TemplateLookup(directories=[self.getTemplateFolder()])
             template = Template("""<%%include file="%s"/>""" % self.cfg['TEMPLATES'].get('topFile'), lookup=tLookup, strict_undefined=True)
             buf = StringIO()
-            ctx = Context(buf, systemCfg=self.controller.systemCfg, generatorCfg=self.cfg, logger=self.logger, **self.data)
+            ctx = Context(buf, d=self.data, systemCfg=self.controller.systemCfg,
+                generatorCfg=self.cfg, logger=self.logger)
             template.render_context(ctx)
             buf.flush()
             buf.seek(0)
@@ -198,7 +199,8 @@ class Generator(object):
             env = Environment(loader=FileSystemLoader(self.getTemplateFolder()))
             template = env.get_template(self.cfg['TEMPLATES'].get('topFile'))
             # FIXME: give access to systemCfg, generatorCfg, logger
-            tmp = template.render(self.data)
+            tmp = template.render({'d': self.data, 'systemCfg': self.controller.systemCfg,
+                'generatorCfg': self.cfg, 'logger': self.logger})
             buf = StringIO(tmp)
             return(buf)
         else:
