@@ -12,6 +12,6 @@ def filter01(d, systemCfg, generatorCfg, logger):
     logger.info('Hello, this is the filter running from module: %s', __file__)
 
     # walk up structure, increment age :^)
-    for f in d:
-        for p in d[f]:
+    for f in d['json_files'].values():
+        for p in f:
             p['age'] += 1

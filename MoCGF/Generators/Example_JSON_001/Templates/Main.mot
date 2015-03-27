@@ -1,6 +1,6 @@
-% for j in d:
+% for j in json_files:
   File: ${j}
-  % for p in d[j]:
+  % for p in json_files[j]:
     Name: ${p['name']}
     Age: ${p['age']}
     Tags: ${', '.join(p['tags'])}
