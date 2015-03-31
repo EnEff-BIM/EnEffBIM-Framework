@@ -8,7 +8,7 @@
 # other arguments may be introduced later...
 
 def filter01(d, *args, **kwargs):
-    
+
     print('Filter running from module:', __file__)
 
     # manipulate some data
@@ -16,4 +16,3 @@ def filter01(d, *args, **kwargs):
 
     # add more data
     d['bar'] = 2.0 * d['foo']
-    

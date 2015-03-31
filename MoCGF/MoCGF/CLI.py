@@ -4,7 +4,7 @@
 # 201500225 Joerg Raedler jraedler@udk-berlin.de
 #
 
-import sys, os, argparse
+import sys, os, argparse, configparser
 from MoCGF.Controller import Controller
 
 descr = """
@@ -23,6 +23,7 @@ def main():
     grp = parser.add_argument_group('general information')
     grp.add_argument('-a', '--list-apis', action='store_true', help='list available data APIs')
     grp.add_argument('-l', '--list-generators', action='store_true', help='list available code generators')
+    grp.add_argument('-d', '--debug', metavar='LEVEL', help='set debug level to show on stderr (1...5)')
     grp = parser.add_argument_group('generator actions')
     grp.add_argument('-g', '--generator', metavar='GEN', nargs=1, help='select generator GEN (needed for the following actions)')
     grp.add_argument('-o', '--output', metavar='FILE', nargs=1, help='use FILE for output instead of stdout')
@@ -32,10 +33,26 @@ def main():
                         help='execute the generator with these data source URIs passed to the data API (needs -g)')
     args = parser.parse_args()
 
-    gp = args.search_path or os.environ.get('MOCGF_GENERATORS', '')
+    # first read config file for default values
+    defaults = {
+        'GeneratorPath': os.environ.get('MOCGF_GENERATORS', ''),
+        'LogLevel' : '0',
+    }
+    cfg = configparser.ConfigParser(defaults)
+    homeVar = {'win32':'USERPROFILE', 'linux':'HOME', 'linux2':'HOME', 'darwin':'HOME'}.get(sys.platform)
+    cfg.read(os.path.join(os.environ.get(homeVar, ''), '.MoCGF.cfg'))
+
+    # generatorPath
+    gp = args.search_path or cfg['DEFAULT']['GeneratorPath']
     generatorPath = [p for p in gp.split(';') if p]
 
-    mocgf = Controller(generatorPath)
+    # logLevel
+    logLevel = 10 * cfg.getint('DEFAULT', 'LogLevel')
+    if args.debug:
+        logLevel = 10 * int(args.debug)
+
+    # create teh controller
+    mocgf = Controller(generatorPath, logLevel=logLevel)
 
     if args.list_apis:
         for n in sorted(mocgf.apis):

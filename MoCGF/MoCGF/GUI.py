@@ -4,7 +4,7 @@
 # 201500225 Joerg Raedler jraedler@udk-berlin.de
 #
 
-import sys, os, os.path, tempfile, argparse
+import sys, os, os.path, tempfile, argparse, logging, configparser
 import MoCGF
 from MoCGF.Controller import Controller
 from PyQt4 import QtCore, QtGui, uic
@@ -15,8 +15,45 @@ It is developed in the EnEff-BIM project to generate Modelica code from SimModel
 MoCGF-cli is the command line interface to MoCGF. MoCGF-gui provides a graphical interface."""
 
 
+# view log in Qt - inspired by
+# http://stackoverflow.com/questions/14349563/how-to-get-non-blocking-real-time-behavior-from-python-logging-module-output-t
+
+class QtLogHandler(logging.Handler):
+    def __init__(self):
+        logging.Handler.__init__(self)
+    def emit(self, record):
+        record = self.format(record)
+        if record:
+            XStream.stdout().write('%s\n'%record)
+
+class XStream(QtCore.QObject):
+    _stdout = None
+    _stderr = None
+    messageWritten = QtCore.pyqtSignal(str)
+    def flush( self ):
+        pass
+    def fileno( self ):
+        return -1
+    def write( self, msg ):
+        if not self.signalsBlocked():
+            self.messageWritten.emit(msg)
+    @staticmethod
+    def stdout():
+        if not XStream._stdout:
+            XStream._stdout = XStream()
+            sys.stdout = XStream._stdout
+        return XStream._stdout
+    @staticmethod
+    def stderr():
+        if not XStream._stderr:
+            XStream._stderr = XStream()
+            sys.stderr = XStream._stderr
+        return XStream._stderr
+
+
+
 class MoCGFWidget(QtGui.QWidget):
-    def __init__(self, app, resPath, generatorPath):
+    def __init__(self, app, resPath, *arg, **kwarg):
         QtGui.QWidget.__init__(self)
         self.app = app
         # load the Icons
@@ -24,8 +61,18 @@ class MoCGFWidget(QtGui.QWidget):
         import Icons_rc
         # load the ui
         self.ui = uic.loadUi(os.path.join(resPath, 'MoCGF-GUI.ui'), self)
-        self.mocgf = Controller(generatorPath)
         self.setWindowTitle('MoCGF GUI | Version: %s' % (MoCGF.__version__))
+        # create a logView?
+        if kwarg['logLevel'] > 0:
+            self.logView = QtGui.QTextBrowser(self)
+            self.moCGFMainView.addTab(self.logView, 'Messages')
+            XStream.stdout().messageWritten.connect(self.logView.insertPlainText)
+            XStream.stderr().messageWritten.connect(self.logView.insertPlainText)
+            logHandler = QtLogHandler()
+            logHandler.setFormatter(logging.Formatter("%(levelname)s: %(message)s"))
+            kwarg['logHandler'] = logHandler
+        # create a controller
+        self.mocgf = Controller(*arg, **kwarg)
 
         # apis
         self.apiList.itemSelectionChanged.connect(self.activateAPI)
@@ -127,10 +174,29 @@ def main():
     parser = argparse.ArgumentParser(description=descr)
     grp = parser.add_argument_group('path settings')
     grp.add_argument('-p', '--search-path', metavar='PATH', help='search path for generators (separated by ;)')
+    grp = parser.add_argument_group('general information')
+    grp.add_argument('-d', '--debug', metavar='LEVEL', help='set debug level and activate messages tab (1...5)')
+
     args = parser.parse_args()
 
-    gp = args.search_path or os.environ.get('MOCGF_GENERATORS', '')
+    # first read config file for default values
+    defaults = {
+        'GeneratorPath': os.environ.get('MOCGF_GENERATORS', ''),
+        'LogLevel' : '0',
+    }
+    cfg = configparser.ConfigParser(defaults)
+    homeVar = {'win32':'USERPROFILE', 'linux':'HOME', 'linux2':'HOME', 'darwin':'HOME'}.get(sys.platform)
+    print(sys.platform, homeVar)
+    cfg.read(os.path.join(os.environ.get(homeVar, ''), '.MoCGF.cfg'))
+
+    # generatorPath
+    gp = args.search_path or cfg['DEFAULT']['GeneratorPath']
     generatorPath = [p for p in gp.split(';') if p]
+
+    # logLevel
+    logLevel = 10 * cfg.getint('DEFAULT', 'LogLevel')
+    if args.debug:
+        logLevel = 10 * int(args.debug)
 
     # FIXME: resPath may need to be adjusted after installation,
     # or use pkg_resources? See:
@@ -138,7 +204,7 @@ def main():
     resPath = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'res')
 
     app = QtGui.QApplication(sys.argv)
-    mw = MoCGFWidget(app, resPath, generatorPath)
+    mw = MoCGFWidget(app, resPath, generatorPath, logLevel=logLevel)
     mw.show()
     r = app.exec_()
     return(r)
