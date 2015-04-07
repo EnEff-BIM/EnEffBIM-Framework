@@ -146,7 +146,7 @@ package AixLib
    <li><i>June 16, 2006&nbsp;</i>
           by Timo Haase:<br>
           Implemented.</li>
-   
+
  </ul>
  </html>"));
       end Star;
@@ -3669,11 +3669,11 @@ BuildingSystems.Fluid.FixedResistances.Pipe</a>.
                              elseif (computeFlowResistance) then
                              deltaM * m_flow_nominal_pos
                else 0);
-        parameter Boolean use_dh = false
+        parameter Boolean use_dh = true
         "Set to true to specify hydraulic diameter"
              annotation(Dialog(enable = not linearized));
         parameter Modelica.SIunits.Length dh=1 "Hydraulic diameter"
-             annotation(Dialog(enable = use_dh and not linearized));
+             annotation(Dialog(enable = use_dh and not linearized),Evaluate=false);
         parameter Real ReC(min=0)=4000
         "Reynolds number where transition to turbulent starts"
              annotation(Dialog(enable = use_dh and not linearized));
