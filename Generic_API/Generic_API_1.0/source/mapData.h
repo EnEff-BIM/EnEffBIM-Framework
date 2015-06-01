@@ -11,8 +11,8 @@
 class map_rule_data
 {
 public:
-    map_rule_data() { load_map_data(); }
-	//map_rule_data() {}
+    //map_rule_data() { load_map_data(); }
+	map_rule_data() {}
 	~map_rule_data() {}
 
 	// retrieve

@@ -50,6 +50,10 @@ class RuleData(object):
         return lib.rule_data_get_component_number(self.obj)
     def getSimProject(self):
         return lib.sim_project_init(self.obj)
+    def transformModel(self):
+        return lib.rule_data_transform_model(self.obj)
+    def setUseCaseLocation(self, case_loc):
+        return lib.rule_data_set_use_case_location(self.obj, case_loc)
     
 class SimProject(object):
     def __init__(self, obj):
@@ -97,6 +101,12 @@ lib.rule_data_get_component_number.restype = c_int
 lib.rule_data_get_component_number.argtypes = ()
 
 # generic API
+lib.rule_data_transform_model.argtypes = ()
+lib.rule_data_transform_model.restype = None
+
+lib.rule_data_set_use_case_location.argtypes = [c_void_p, c_char_p]
+lib.rule_data_set_use_case_location.restype = None
+
 lib.sim_project_init.restype = SimProject
 lib.sim_project_init.argtypes = ()
 # sim project
@@ -112,6 +122,9 @@ lib.sim_site_get_name.argtypes = ()
 
 # create mapped data object
 MapData = RuleData()
+case_loc = "..\\xml_use_case\\Boiler_Gas_VDI6020_Test.xml"
+MapData.setUseCaseLocation(case_loc)
+MapData.transformModel()
 # print result
 componentNumber = MapData.getComponentNumber()
 for comId in range(0, componentNumber):
@@ -131,3 +144,6 @@ print "Weather location city: " + SimProject.getWeatherLocationCity()
 print "Get 1st SimSite object"
 SimSite = SimProject.getSimSite(0);
 print "Site name: " + SimSite.getSiteName()
+
+print case_loc
+
