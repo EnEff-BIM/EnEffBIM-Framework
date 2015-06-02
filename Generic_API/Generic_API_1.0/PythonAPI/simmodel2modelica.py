@@ -54,6 +54,9 @@ class RuleData(object):
         return lib.rule_data_transform_model(self.obj)
     def setUseCaseLocation(self, case_loc):
         return lib.rule_data_set_use_case_location(self.obj, case_loc)
+    def setDataLocation(self, useCaseLoc, mapRuleLoc):
+        return lib.rule_data_set_data_location(self.obj, useCaseLoc, mapRuleLoc)
+    
     
 class SimProject(object):
     def __init__(self, obj):
@@ -101,15 +104,17 @@ lib.rule_data_get_component_number.restype = c_int
 lib.rule_data_get_component_number.argtypes = ()
 
 # generic API
-lib.rule_data_transform_model.argtypes = ()
-lib.rule_data_transform_model.restype = None
-
+# file IO
 lib.rule_data_set_use_case_location.argtypes = [c_void_p, c_char_p]
 lib.rule_data_set_use_case_location.restype = None
-
+lib.rule_data_set_data_location.argtypes = [c_void_p, c_char_p, c_char_p]
+lib.rule_data_set_data_location.restype = None
+# load SimModel data and transform the model
+lib.rule_data_transform_model.argtypes = ()
+lib.rule_data_transform_model.restype = None
+# sim project
 lib.sim_project_init.restype = SimProject
 lib.sim_project_init.argtypes = ()
-# sim project
 lib.sim_project_get_weather_location_city.restype = c_char_p
 lib.sim_project_get_weather_location_city.argtypes = ()
 lib.sim_project_get_sim_site_number.restype = c_int
@@ -120,12 +125,18 @@ lib.sim_project_get_sim_site.argtypes = [c_void_p, c_int]
 lib.sim_site_get_name.restype = c_char_p
 lib.sim_site_get_name.argtypes = ()
 
+# specify the data location: SimModel use case and its
+# mapping rule instance for given Modelica library
+useCaseLoc = "..\\xml_use_case\\Boiler_Gas_VDI6020_Test.xml"
+mapRuleLoc = "..\\xml_mapping_rule\\AixLib_Mapping_Rule.xml"
 # create mapped data object
 MapData = RuleData()
-case_loc = "..\\xml_use_case\\Boiler_Gas_VDI6020_Test.xml"
-MapData.setUseCaseLocation(case_loc)
+# set data location
+MapData.setDataLocation(useCaseLoc, mapRuleLoc)
+# transform SimModel data into Modelica objects
 MapData.transformModel()
-# print result
+
+# print transformed / mapped data
 componentNumber = MapData.getComponentNumber()
 for comId in range(0, componentNumber):
     print "Component " + repr(comId) + ": " + MapData.getComponent(comId).getTargetLocation() + " " + MapData.getComponent(comId).getTargetName()   
@@ -144,6 +155,4 @@ print "Weather location city: " + SimProject.getWeatherLocationCity()
 print "Get 1st SimSite object"
 SimSite = SimProject.getSimSite(0);
 print "Site name: " + SimSite.getSiteName()
-
-print case_loc
 
