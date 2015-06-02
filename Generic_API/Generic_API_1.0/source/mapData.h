@@ -31,6 +31,9 @@ public:
 
 	// get SimModel use case location
 	void set_use_case_location(char* _use_case_loc);
+	// set SimModel use case location
+	// set mapping rule location
+	void set_data_location(char* _use_case_loc, char* _map_rule_loc);
 	// load mapped data
     void load_map_data();
 
@@ -41,8 +44,10 @@ private:
 	simmodel_parser sim_parse;
 	// use case data stored in the SimXML file
 	auto_ptr<SimModel> ob_model;
-	// save use case directory
+	// use case directory
 	char* _use_case_location;
+	// mapping rule location
+	char* _map_rule_location;
 };
 
 #endif

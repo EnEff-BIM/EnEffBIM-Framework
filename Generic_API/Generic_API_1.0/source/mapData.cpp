@@ -6,6 +6,14 @@ void map_rule_data::set_use_case_location(char* _use_case_loc)
 	_use_case_location = _use_case_loc;
 }
 
+// set SimModel use case location
+// set mapping rule location
+void map_rule_data::set_data_location(char* _use_case_loc, char* _map_rule_loc)
+{
+	_use_case_location = _use_case_loc;
+	_map_rule_location = _map_rule_loc;
+}
+
 // load mapped data
 void map_rule_data::load_map_data()
 {
@@ -18,11 +26,10 @@ void map_rule_data::load_map_data()
     {
 		// load the use case data defined by SimModel from the SimXML file
         //ob_model = namespaces::Sim::Model::SimModel_("..\\xml_use_case\\Boiler_Gas_VDI6020_Test.xml");
-		//char* case_loc = "..\\xml_use_case\\Boiler_Gas_VDI6020_Test.xml";
-		//set_use_case_location(case_loc);
 		ob_model = namespaces::Sim::Model::SimModel_(_use_case_location);
 		// load the mapping rules defined for AixLib
-		auto_ptr<SimMap> rule_model = namespaces::Sim::DataMap::Data_Model_Map_("..\\xml_mapping_rule\\AixLib_Mapping_Rule.xml");
+		//auto_ptr<SimMap> rule_model = namespaces::Sim::DataMap::Data_Model_Map_("..\\xml_mapping_rule\\AixLib_Mapping_Rule.xml");
+		auto_ptr<SimMap> rule_model = namespaces::Sim::DataMap::Data_Model_Map_(_map_rule_location);
 
 		// load SimModel hierarchy
 		//simmodel_parser sim_parse;
@@ -62,9 +69,12 @@ void map_rule_data::load_map_data()
 extern "C" {
 	// list of components
     map_rule_data* TEST_COMMON_DLLSPEC rule_data_init() { return new map_rule_data(); }
-	void TEST_COMMON_DLLSPEC rule_data_transform_model(map_rule_data* _rule_data) { _rule_data->load_map_data(); } 
+	// set SimModel use case location and mapping rule location
+	void TEST_COMMON_DLLSPEC rule_data_set_data_location(map_rule_data* _rule_data, char* _use_case_loc, char* _map_rule_loc) { _rule_data->set_data_location(_use_case_loc, _map_rule_loc); }
 	// set data file directory
 	void TEST_COMMON_DLLSPEC rule_data_set_use_case_location(map_rule_data* _rule_data, char* _use_case_loc) { _rule_data->set_use_case_location(_use_case_loc); }
+	// load use case and mapping rule, then transform the model
+	void TEST_COMMON_DLLSPEC rule_data_transform_model(map_rule_data* _rule_data) { _rule_data->load_map_data(); } 
 	// retrieve component
     component_data* TEST_COMMON_DLLSPEC rule_data_get_component(map_rule_data* _rule_data, int id) { return _rule_data->get_component(id); }
 	int TEST_COMMON_DLLSPEC rule_data_get_component_number(map_rule_data* _rule_data) { return _rule_data->get_component_total_number(); }
