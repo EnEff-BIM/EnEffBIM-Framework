@@ -137,6 +137,8 @@ void simmodel_parser::load_model_hierarchy(auto_ptr<SimModel>& ob_model)
 		{
 			//! save child reference for sim_site: sim building model
 			sim_site_mo.set_sim_building(sim_building_mo);
+			// save the pointer to the children list
+			sim_site_mo.save_sim_building(&sim_building_mo);
 			//! init sim building reference
 			sim_building_mo.sim_building_it = sim_building_it;
 			//! set storey number: nb+1
@@ -269,6 +271,8 @@ void simmodel_parser::load_model_hierarchy(auto_ptr<SimModel>& ob_model)
 		{
 			//! save child class: thermal zone
 			sim_space_occupied_mo.set_thermal_zone(sim_thermal_zone_mo);
+			//! save the pointer to the child class for sim_building
+			sim_building_mo.save_sim_thermal_zone(&sim_thermal_zone_mo);
 		}
 
 		// 2.1.3 load simulation hot water system info from SimModel

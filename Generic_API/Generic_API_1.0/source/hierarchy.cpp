@@ -228,6 +228,21 @@
 			{
 				return sim_site_it->Name().get().c_str();
 			}
+			// save the child class sim_building into the childeren list
+			void sim_site::save_sim_building(sim_building* _sim_building)
+			{
+				sim_building_list.push_back(_sim_building);
+			}
+			// retrieve the total number of sim_building objects
+			int sim_site::get_sim_building_total_number()
+			{
+				return sim_building_list.size();
+			}
+			// retrieve the sim_building object with given id position in the children list
+			sim_building* sim_site::get_sim_building(int id)
+			{
+				return sim_building_list.at(id);
+			}
 
 			// 2.1.1 simulation buidling
 			//
@@ -244,6 +259,23 @@
 			{
 				return storey_nb;
 			}
+			// generic API
+			// save child class sim_thermal_zone
+			void sim_building::save_sim_thermal_zone(sim_thermal_zone* _sim_thermal_zone)
+			{
+				sim_thermal_zone_list.push_back(_sim_thermal_zone);
+			}
+			// retrieve the total number of sim_thermal_zone objects
+			int sim_building::get_sim_thermal_zone_total_number()
+			{
+				return sim_thermal_zone_list.size();
+			}
+			// retrieve the sim_thermal_zone object with a given id
+			sim_thermal_zone* sim_building::get_sim_thermal_zone(int id)
+			{
+				return sim_thermal_zone_list.at(id);
+			}
+
 
 			//  2.1.1.1 buidling stories: n+1
 			//
@@ -302,7 +334,7 @@
 			{
 				return gap_param_nr;
 			}
-
+		
 			//   2.1.1.1.1 space occupied
 			//
 			// set child class: thermal zone
@@ -462,7 +494,6 @@
 			{
 				return gap_param_nr;
 			}
-
 			// set child class: sim thermal zone
 			void sim_group::set_thermal_zone(sim_thermal_zone& _sim_thermal_zone_mo)
 			{

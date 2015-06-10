@@ -56,6 +56,8 @@ public:
 	sim_project& get_sim_project() { return sim_pro_mo; }
 
 private:
+	// generica API
+	// sim_project* sim_pro_mo = new sim_pro_mo();
 	//1. single simulation project model (in object model)
 	sim_project sim_pro_mo;
 	//2.1 simulation site model

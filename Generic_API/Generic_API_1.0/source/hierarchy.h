@@ -255,6 +255,10 @@
 				double _T0; // Initial temperature [degC]
 				bool _calcMFlow; // Calculate m_flow from p
 
+				// for generic API
+				// save child class
+				vector<sim_building*> sim_building_list;
+
 			public:
 				// constructor
 				 sim_site() 
@@ -311,6 +315,14 @@
 				SimModel::SimSite_BuildingSite_Default_iterator sim_site_it;
 
 				// generic API
+				// save the child class sim_building into the childeren list
+				void save_sim_building(sim_building* _sim_building);
+				// retrieve the total number of sim_building objects
+				int get_sim_building_total_number();
+				// retrieve the sim_building object with given id position in the children list
+				sim_building* get_sim_building(int id);
+				// internal properties
+				// retrieve the site name
 				const char* get_sim_site_name();
 			};
 			
@@ -321,6 +333,13 @@
 			private:
 				// storey number
 				int storey_nb;
+
+				// generic API
+				// thermal zone defined in the building
+				vector<sim_thermal_zone*> sim_thermal_zone_list;
+				// zone group and HVAC group
+				vector<sim_group*> sim_group_list;
+
 			public:
 				// constructor
 				sim_building() { storey_nb = 0; }
@@ -350,6 +369,16 @@
 				sim_building_storey* sim_building_storey_ptr1;
 				//!! temp:  point to child class: buidling stories
 				sim_building_storey* sim_building_storey_ptr2;
+
+				// generic API
+				// save child class sim_thermal_zone
+				void save_sim_thermal_zone(sim_thermal_zone* _sim_thermal_zone);
+				// retrieve the total number of sim_thermal_zone objects
+				int get_sim_thermal_zone_total_number();
+				// retrieve the sim_thermal_zone object with a given id
+				sim_thermal_zone* get_sim_thermal_zone(int id);
+				// internal properties
+				//BuildingHeight;
 			};
 
 			//  2.1.1.1 buidling stories: n+1

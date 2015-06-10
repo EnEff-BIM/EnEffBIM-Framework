@@ -95,11 +95,26 @@ extern "C" {
 	// hierarchy object list
 	// sim_project
 	sim_project* TEST_COMMON_DLLSPEC  sim_project_init(map_rule_data* _rule_data) { return _rule_data->get_root_class(); }
+	// internal properties of sim project
 	const char* TEST_COMMON_DLLSPEC sim_project_get_weather_location_city(sim_project* _sim_project) { return _sim_project->get_weather_location_city(); }
-	// retrieve total number of sim site objects
-	int TEST_COMMON_DLLSPEC sim_project_get_sim_site_number(sim_project* _sim_project) { return _sim_project->get_sim_site_total_number(); }
+
+	// sim_site
 	// retrieve the sim site object at position id
 	sim_site* TEST_COMMON_DLLSPEC sim_project_get_sim_site(sim_project* _sim_project, int id) { return _sim_project->get_sim_site(id); }
-	// sim_site
+	// retrieve total number of sim site objects
+	int TEST_COMMON_DLLSPEC sim_project_get_sim_site_number(sim_project* _sim_project) { return _sim_project->get_sim_site_total_number(); }
+	// internal properties of sim project
 	const char* TEST_COMMON_DLLSPEC sim_site_get_name(sim_site* _sim_site) { return _sim_site->get_sim_site_name(); }
+
+	// sim_building
+	// retrieve the sim building object at position id
+	sim_building* TEST_COMMON_DLLSPEC sim_site_get_sim_building(sim_site* _sim_site, int id) { return _sim_site->get_sim_building(id); }
+	// retrieve the total number of sim_building objects
+	int TEST_COMMON_DLLSPEC sim_site_get_sim_building_number(sim_site* _sim_site) { return _sim_site->get_sim_building_total_number(); }
+
+	// sim_thermal_zone
+	// retrieve the sim_thermal_zone object with a given id
+	sim_thermal_zone* TEST_COMMON_DLLSPEC sim_building_get_sim_thermal_zone(sim_building* _sim_building, int id) { return _sim_building->get_sim_thermal_zone(id); }
+	// retrieve the total number of sim_thermal_zone objects
+	int TEST_COMMON_DLLSPEC sim_building_get_sim_thermal_zone_number(sim_building* _sim_building) { return _sim_building->get_sim_thermal_zone_total_number(); }
 }

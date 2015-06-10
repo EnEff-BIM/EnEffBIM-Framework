@@ -73,6 +73,22 @@ class SimSite(object):
         self.obj = obj
     def getSiteName(self):
         return lib.sim_site_get_name(self.obj)
+    def getSimBuilding(self, id):
+        return lib.sim_site_get_sim_building(self.obj, id)
+    def getSimBuildingNumber(self):
+        return lib.sim_site_get_sim_building_number(self.obj)
+
+class SimBuilding(object):
+    def __init__(self, obj):
+        self.obj = obj
+    def getSimThermalZone(self, id):
+        return lib.sim_building_get_sim_thermal_zone(self.obj, id)
+    def getSimThermalZoneNumber(self):
+        return lib.sim_building_get_sim_thermal_zone_number(self.obj)
+
+class SimThermalZone(object):
+    def __init__(self, obj):
+        self.obj = obj
 
 lib.property_get_name.restype = c_char_p
 lib.property_get_name.argtypes = ()
@@ -124,6 +140,16 @@ lib.sim_project_get_sim_site.argtypes = [c_void_p, c_int]
 # sim site
 lib.sim_site_get_name.restype = c_char_p
 lib.sim_site_get_name.argtypes = ()
+# sim building
+lib.sim_site_get_sim_building.restype = SimBuilding
+lib.sim_site_get_sim_building.argtypes = [c_void_p, c_int]
+lib.sim_site_get_sim_building_number.restype = c_int
+lib.sim_site_get_sim_building_number.argtypes = ()
+# sim thermal zone
+lib.sim_building_get_sim_thermal_zone.restype = SimThermalZone
+lib.sim_building_get_sim_thermal_zone.argtypes = [c_void_p, c_int]
+lib.sim_building_get_sim_thermal_zone_number.restype = c_int
+lib.sim_building_get_sim_thermal_zone_number.argtypes = ()
 
 # specify the data location: SimModel use case and its
 # mapping rule instance for given Modelica library
@@ -149,10 +175,20 @@ for comId in range(0, componentNumber):
 
 # access hierarchy
 print "Get SimProject object"
-SimProject = MapData.getSimProject()
-print "Weather location city: " + SimProject.getWeatherLocationCity()
+simProject = MapData.getSimProject()
+print "Weather location city: " + simProject.getWeatherLocationCity()
 
 print "Get 1st SimSite object"
-SimSite = SimProject.getSimSite(0);
-print "Site name: " + SimSite.getSiteName()
+simSite = simProject.getSimSite(0);
+print "Site name: " + simSite.getSiteName()
+
+print "Get SimBuilding object"
+simBuilding = simSite.getSimBuilding(0)
+print "SimBuilding number: {}".format(simSite.getSimBuildingNumber())
+
+print "Get SimThermalZone object"
+simBuilding.getSimThermalZone(0)
+print "SimThermalZone number: {}".format(simBuilding.getSimThermalZoneNumber())
+
+
 
