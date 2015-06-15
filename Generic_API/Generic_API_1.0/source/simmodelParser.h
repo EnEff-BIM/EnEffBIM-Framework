@@ -54,10 +54,13 @@ public:
 	// for generic API
 	// retrieve the root class of SimModel hierarchy
 	sim_project& get_sim_project() { return sim_pro_mo; }
+	// retrieve the connections in the system loop
+	vector<sim_conns>& get_loop_connection_list() { return conns_vec; }
 
 private:
-	// generica API
+	// generic API
 	// sim_project* sim_pro_mo = new sim_pro_mo();
+
 	//1. single simulation project model (in object model)
 	sim_project sim_pro_mo;
 	//2.1 simulation site model
@@ -94,7 +97,7 @@ private:
 
 	// HVAC component id list
 	map<string, sim_base*> id_map;
-	// list of physical connections between HVAC components
+	//! list of physical connections between HVAC components
 	vector<sim_conns> conns_vec;
 	// retrieve hosted component attached with outlet port
 	string get_host_out_id(auto_ptr<SimModel>& ob_model, string _port_id);

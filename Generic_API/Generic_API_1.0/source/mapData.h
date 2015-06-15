@@ -17,6 +17,11 @@ public:
 
 	// retrieve
 	vector<component_data>& get_component_list();
+	// loop connections
+	// retrieve the total number of loop connections
+	int get_loop_connection_total_number();
+	// retrieve the connection at the position id
+	sim_conns* get_loop_connection(int id);
 	
 	// set value
     void set_target_component(component_data& _c) { component_list.push_back(_c); }

@@ -14,6 +14,18 @@ void map_rule_data::set_data_location(char* _use_case_loc, char* _map_rule_loc)
 	_map_rule_location = _map_rule_loc;
 }
 
+// retrieve the total number of loop connections
+int map_rule_data::get_loop_connection_total_number()
+{
+	return sim_parse.get_loop_connection_list().size();
+}
+
+// retrieve the connection at the position id
+sim_conns* map_rule_data::get_loop_connection(int id)
+{
+	return &sim_parse.get_loop_connection_list().at(id);
+}
+
 // load mapped data
 void map_rule_data::load_map_data()
 {
@@ -117,4 +129,23 @@ extern "C" {
 	sim_thermal_zone* TEST_COMMON_DLLSPEC sim_building_get_sim_thermal_zone(sim_building* _sim_building, int id) { return _sim_building->get_sim_thermal_zone(id); }
 	// retrieve the total number of sim_thermal_zone objects
 	int TEST_COMMON_DLLSPEC sim_building_get_sim_thermal_zone_number(sim_building* _sim_building) { return _sim_building->get_sim_thermal_zone_total_number(); }
+
+	// sim system objects
+	// retrieve the system object
+	sim_base* TEST_COMMON_DLLSPEC sim_building_get_sim_system(sim_building* _sim_building, int id) { return _sim_building->get_sim_system(id); }
+	// retrieve the total number of sim systems
+	int TEST_COMMON_DLLSPEC sim_building_get_sim_system_total_number(sim_building* _sim_building) { return _sim_building->get_sim_system_total_number(); }
+
+	// sim system for hot water
+	// convert to hot water system
+	sim_hotwater_system* TEST_COMMON_DLLSPEC sim_system_to_hotwater_system(sim_base* _sim_base) { return _sim_base->to_hotwater_system(); }
+	// internal properties
+	double TEST_COMMON_DLLSPEC sim_system_hotwater_get_max_loop_temp(sim_hotwater_system* _sim_sys_hotwater) { return _sim_sys_hotwater->get_max_loop_temp(); }
+
+	// loop connections
+	// retrieve the connection at the position id
+	sim_conns* TEST_COMMON_DLLSPEC sim_system_get_loop_connection(map_rule_data* _rule_data, int id) { return _rule_data->get_loop_connection(id); }
+	// retrieve the total number of loop connections
+	int TEST_COMMON_DLLSPEC sim_system_get_loop_connection_number(map_rule_data* _rule_data) { return _rule_data->get_loop_connection_total_number(); }
+				
 }

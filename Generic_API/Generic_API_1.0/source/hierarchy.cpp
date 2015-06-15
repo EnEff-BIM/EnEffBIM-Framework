@@ -34,6 +34,12 @@
 // include the head file
 #include "hierarchy.h"
 
+			// convert to hot water system
+			sim_hotwater_system* sim_base::to_hotwater_system()
+			{
+				return dynamic_cast<sim_hotwater_system*>(this);
+			}
+
 			//1. simulation project
 			//
 			// constructor
@@ -275,7 +281,21 @@
 			{
 				return sim_thermal_zone_list.at(id);
 			}
-
+			// save child: sim system class
+			void sim_building::save_sim_system(sim_base* _sim_base)
+			{
+				sim_system_list.push_back(_sim_base);
+			}
+			// retrieve the total number of sim systems
+			int sim_building::get_sim_system_total_number()
+			{
+				return sim_system_list.size();
+			}
+			// retrieve the hot water system object
+			sim_base* sim_building::get_sim_system(int id)
+			{
+				return sim_system_list.at(id);
+			}
 
 			//  2.1.1.1 buidling stories: n+1
 			//
@@ -507,6 +527,7 @@
 
 			//  2.1.2.1 simulation thermal zone
 
+
 			// 2.1.3 simulation hot water system
 			// set child class: sim thermal zone
 			void sim_hotwater_system::set_hotwater_control(sim_hotwater_control& _sim_hotwater_control_mo)
@@ -572,6 +593,13 @@
 			{
 				return gap_param_nr;
 			}
+			// generic API
+			// internal properites
+			double sim_hotwater_system::get_max_loop_temp()
+			{
+				return sim_hotwater_system_it->SimSys_MaxLoopTemp().get();
+			}
+
 			//  2.1.3.1 sim hot water loop controler
 			// set child class: sim supply water temperature control
 			void sim_hotwater_control::set_supplywater_temp_control(sim_supplywater_temp_control& _sim_sw_temp_ctl_mo)

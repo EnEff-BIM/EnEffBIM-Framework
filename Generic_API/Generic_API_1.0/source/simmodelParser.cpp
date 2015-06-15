@@ -292,6 +292,8 @@ void simmodel_parser::load_model_hierarchy(auto_ptr<SimModel>& ob_model)
 			{
 				//! init sim hot wate system reference
 				sim_hw_sys_mo.sim_hotwater_system_it = sim_hw_system_it;
+				//! save child class: sim system objects
+				sim_building_mo.save_sim_system(&sim_hw_sys_mo);
 				break;
 			}
 		}

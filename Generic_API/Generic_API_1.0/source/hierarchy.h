@@ -83,6 +83,9 @@
 			// 3 sim connection between components
 			class sim_conns;
 
+			// generica API classes
+			class sim_system;
+
 // decalration
 //
 
@@ -104,6 +107,10 @@
 				
 				// zero degree (273.15 K)
 				double _zero_deg;
+
+				// generic API
+				// convert to hot water system
+				sim_hotwater_system* to_hotwater_system();
 			};
 
 			//1. simulation project
@@ -339,6 +346,8 @@
 				vector<sim_thermal_zone*> sim_thermal_zone_list;
 				// zone group and HVAC group
 				vector<sim_group*> sim_group_list;
+				// sim system list
+				vector<sim_base*> sim_system_list;
 
 			public:
 				// constructor
@@ -377,6 +386,16 @@
 				int get_sim_thermal_zone_total_number();
 				// retrieve the sim_thermal_zone object with a given id
 				sim_thermal_zone* get_sim_thermal_zone(int id);
+
+				// save sim system objects
+				void save_sim_system(sim_base* _sim_base);
+				// retrieve the total number of sim systems
+				int get_sim_system_total_number();
+				// retrieve the hot water system object
+				sim_base* get_sim_system(int id);
+				// convert to hot water system
+				sim_hotwater_system* to_hotwater_system(sim_base* _sim_base);
+
 				// internal properties
 				//BuildingHeight;
 			};
@@ -513,6 +532,37 @@
 				list<pair<string, string> > prop_val_maps;
 			};
 
+			// generica API
+			// sim system class
+			class sim_system
+			{
+			private:
+				// sim system for hot water
+				vector<sim_hotwater_system*> sim_system_hotwater_list;
+				// optional
+				vector<sim_base*> sim_system_list;
+			public:
+				sim_system() {}
+
+				// save sim hot water system
+				void save_sim_system_hotwater(sim_hotwater_system* _sim_hotwater_sys);
+				// retrieve the total number of the hot water systems
+				int get_sim_system_hotwater_total_number();
+				// retrieve the hot water system object
+				sim_hotwater_system* get_sim_hotwater_system(int id);
+
+				// optional
+				// save sim system
+				void save_sim_system(sim_base* _sim_base);
+				// retrieve the total number of sim systems
+				int get_sim_system_total_number();
+				// retrieve the hot water system object
+				sim_base* get_sim_system(int id);
+			};
+
+			/*control
+			demand
+			supply*/
 			// 2.1.3 simulation hot water system
 			class sim_hotwater_system : public virtual sim_base
 			{
@@ -531,6 +581,12 @@
 				int gap_param_nr;
 				// save property values
 				list<pair<string, string> > prop_val_maps;
+
+				// gernica API
+				vector<sim_hotwater_control*> sim_hotwater_control_list;
+				vector<sim_hotwater_demand*> sim_hotwater_demand_list;
+				vector<sim_hotwater_supply*> sim_hotwater_supply_list;
+
 			public:
 				// constructor
 				sim_hotwater_system() 
@@ -560,6 +616,10 @@
 				void save_prop_val(list<pair<string, string> >::iterator& _prop_it) {}
 				// retrieve the number of gaps
 				int get_gap();
+
+				// generic API
+				// internal properites
+				double get_max_loop_temp();
 			};
 			//  2.1.3.1 sim hot water loop controler
 			class sim_hotwater_control : public virtual sim_base

@@ -56,8 +56,15 @@ class RuleData(object):
         return lib.rule_data_set_use_case_location(self.obj, case_loc)
     def setDataLocation(self, useCaseLoc, mapRuleLoc):
         return lib.rule_data_set_data_location(self.obj, useCaseLoc, mapRuleLoc)
-    
-    
+    def getLoopConnection(self, id):
+        return lib.sim_system_get_loop_connection(self.obj, id)
+    def getLoopConnectionNumber(self):
+        return lib.sim_system_get_loop_connection_number(self.obj)    
+
+class SimConnection(object):
+    def __init__(self, obj):
+        self.obj = obj
+        
 class SimProject(object):
     def __init__(self, obj):
         self.obj = obj
@@ -85,11 +92,28 @@ class SimBuilding(object):
         return lib.sim_building_get_sim_thermal_zone(self.obj, id)
     def getSimThermalZoneNumber(self):
         return lib.sim_building_get_sim_thermal_zone_number(self.obj)
+    def getSimSystem(self, id):
+        return lib.sim_building_get_sim_system(self.obj, id)
+    def getSimSystemNumber(self):
+        return lib.sim_building_get_sim_system_total_number(self.obj)
 
 class SimThermalZone(object):
     def __init__(self, obj):
         self.obj = obj
 
+class SimSystem(object):
+    def __init__(self, obj):
+        self.obj = obj
+    def toHotwaterSystem(self):
+        return lib.sim_system_to_hotwater_system(self.obj)
+        
+class SimSystemHotwater(object):
+    def __init__(self, obj):
+        self.obj = obj
+    def getMaxLoopTemp(self):
+        return lib.sim_system_hotwater_get_max_loop_temp(self.obj)
+    
+# property data level
 lib.property_get_name.restype = c_char_p
 lib.property_get_name.argtypes = ()
 lib.property_get_value.restype = c_char_p
@@ -104,7 +128,7 @@ lib.property_get_value_group.restype = c_char_p
 lib.property_get_value_group.argtypes = ()
 lib.property_get_flag.restype = c_bool
 lib.property_get_flag.argtypes = ()
-
+# component data level
 lib.component_get_target_name.restype = c_char_p
 lib.component_get_target_name.argtypes = ()
 lib.component_get_target_location.restype = c_char_p
@@ -113,12 +137,16 @@ lib.component_get_property_number.restype = c_int
 lib.component_get_property_number.argtypes = ()
 lib.component_get_property.restype = Property
 lib.component_get_property.argtypes = [c_void_p, c_int]
-
+# component list level
 lib.rule_data_get_component.restype = Component
 lib.rule_data_get_component.argtypes = [c_void_p, c_int]
 lib.rule_data_get_component_number.restype = c_int
 lib.rule_data_get_component_number.argtypes = ()
-
+# system loop connections
+lib.sim_system_get_loop_connection.restype = SimConnection
+lib.sim_system_get_loop_connection.argtypes = [c_void_p, c_int]
+lib.sim_system_get_loop_connection_number.restype = c_int
+lib.sim_system_get_loop_connection_number.argtypes = ()
 # generic API
 # file IO
 lib.rule_data_set_use_case_location.argtypes = [c_void_p, c_char_p]
@@ -150,6 +178,16 @@ lib.sim_building_get_sim_thermal_zone.restype = SimThermalZone
 lib.sim_building_get_sim_thermal_zone.argtypes = [c_void_p, c_int]
 lib.sim_building_get_sim_thermal_zone_number.restype = c_int
 lib.sim_building_get_sim_thermal_zone_number.argtypes = ()
+# sim systems
+lib.sim_building_get_sim_system.restype = SimSystem
+lib.sim_building_get_sim_system.argtypes = [c_void_p, c_int]
+lib.sim_building_get_sim_system_total_number.restype = c_int
+lib.sim_building_get_sim_system_total_number.argtypes = ()
+# sim system for hot water
+lib.sim_system_to_hotwater_system.restype = SimSystemHotwater
+lib.sim_system_to_hotwater_system.argtypes = ()
+lib.sim_system_hotwater_get_max_loop_temp.restype = c_double
+lib.sim_system_hotwater_get_max_loop_temp.argtypes = ()
 
 # specify the data location: SimModel use case and its
 # mapping rule instance for given Modelica library
@@ -190,5 +228,19 @@ print "Get SimThermalZone object"
 simBuilding.getSimThermalZone(0)
 print "SimThermalZone number: {}".format(simBuilding.getSimThermalZoneNumber())
 
+print "Get SimSystem object"
+simSystem = simBuilding.getSimSystem(0)
+print "SimSystem number: {}".format(simBuilding.getSimSystemNumber())
+
+# hot water system
+simSystemHotwater = simSystem.toHotwaterSystem()
+print "System max loop temp: {}".format(simSystemHotwater.getMaxLoopTemp())
+
+# access loop connections
+connectionNumber = MapData.getLoopConnectionNumber()
+for conId in range(0, connectionNumber):
+    print "Connection " + repr(conId)
+    # retrieve one connection
+    simConnection = MapData.getLoopConnection(conId)
 
 
