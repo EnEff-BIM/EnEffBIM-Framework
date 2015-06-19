@@ -1,0 +1,24 @@
+[GENERATOR]
+name = JsonFluid
+version = 0.1
+description = Reads information about Equations of States for fluids from CoolProp json file and generates HelmholtzMedia Modelica input files.
+author = Matthis
+
+[REQUIRES]
+modelicaLibs = [HelmholtzMedia]
+
+[API]
+name = JSONReader
+minVer = 0.1
+maxVer = 0.9
+
+[MAPRULES]
+files = RuleSet01.xml
+
+[PYFILTER]
+module = Filter01
+function = filter01
+
+[TEMPLATES]
+topFile = package.mot
+type = mako

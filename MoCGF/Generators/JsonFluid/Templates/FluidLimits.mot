@@ -1,0 +1,12 @@
+  final constant FluidLimits
+  fluidLimitsButane(
+    TMIN=fluidConstantsButane.triplePointTemperature,
+    TMAX=575,
+    DMIN=Modelica.Constants.small,
+    DMAX=800,
+    PMIN=Modelica.Constants.small,
+    PMAX=200e6,
+    HMIN=-100e3,
+    HMAX=+1300e3,
+    SMIN=-465,
+    SMAX=8100) "Helmholtz EoS Limits";
