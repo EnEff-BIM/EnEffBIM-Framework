@@ -1,4 +1,4 @@
-<%page args="jFile"/>
+<%page args="jObj, jFile"/>
   annotation (Documentation(info="<html>
 These are the coefficients for Butane,
 auto-generated from File: ${jFile}
