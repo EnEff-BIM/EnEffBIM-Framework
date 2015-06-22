@@ -147,5 +147,8 @@ extern "C" {
 	sim_conns* TEST_COMMON_DLLSPEC sim_system_get_loop_connection(map_rule_data* _rule_data, int id) { return _rule_data->get_loop_connection(id); }
 	// retrieve the total number of loop connections
 	int TEST_COMMON_DLLSPEC sim_system_get_loop_connection_number(map_rule_data* _rule_data) { return _rule_data->get_loop_connection_total_number(); }
-				
+	// retrieve the component with outlet port
+	sim_base* TEST_COMMON_DLLSPEC sim_system_get_outlet_component(sim_conns* _sim_conn) { return _sim_conn->get_com_out_ptr(); }
+	// retrieve the component with inlet port
+	sim_base* TEST_COMMON_DLLSPEC sim_system_get_inlet_component(sim_conns* _sim_conn) { return _sim_conn->get_com_in_ptr(); }
 }

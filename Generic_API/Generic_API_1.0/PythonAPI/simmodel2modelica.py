@@ -64,6 +64,10 @@ class RuleData(object):
 class SimConnection(object):
     def __init__(self, obj):
         self.obj = obj
+    def getOutletComponent(self):
+        return lib.sim_system_get_outlet_component(self.obj)
+    def getInletComponent(self):
+        return lib.sim_system_get_inlet_component(self.obj)
         
 class SimProject(object):
     def __init__(self, obj):
@@ -147,6 +151,10 @@ lib.sim_system_get_loop_connection.restype = SimConnection
 lib.sim_system_get_loop_connection.argtypes = [c_void_p, c_int]
 lib.sim_system_get_loop_connection_number.restype = c_int
 lib.sim_system_get_loop_connection_number.argtypes = ()
+lib.sim_system_get_outlet_component.restype = SimSystem
+lib.sim_system_get_outlet_component.argtypes = ()
+lib.sim_system_get_inlet_component.restype = SimSystem
+lib.sim_system_get_inlet_component.argtypes = ()
 # generic API
 # file IO
 lib.rule_data_set_use_case_location.argtypes = [c_void_p, c_char_p]
@@ -242,5 +250,5 @@ for conId in range(0, connectionNumber):
     print "Connection " + repr(conId)
     # retrieve one connection
     simConnection = MapData.getLoopConnection(conId)
-
-
+    simConnection.getOutletComponent()
+    simConnection.getInletComponent()
