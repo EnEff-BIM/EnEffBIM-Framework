@@ -4,7 +4,7 @@
     casRegistryNumber="${jObj['CAS']}",
     iupacName="${jObj['NAME']}" "full name",
     structureFormula="",
-    chemicalFormula="${jObj['FORMULA']}",
+    chemicalFormula="${jObj['FORMULA'].translate({ord(i):None for i in '-_{}'})}",
     molarMass=${jObj['EOS'][0]['molar_mass']},
     hasCriticalData=true,
        criticalTemperature=${jObj['EOS'][0]['STATES']['reducing']['T']},

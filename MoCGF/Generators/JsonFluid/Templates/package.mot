@@ -1,7 +1,7 @@
 % for jFile in json_files:
   % for jObj in json_files[jFile]:
   <% name=jObj['NAME'].replace('-','') %>
-
+##
 within HelmholtzMedia.HelmholtzFluids;
 package ${name} "${name}"
 extends Interfaces.PartialHelmholtzMedium(
@@ -20,10 +20,15 @@ extends Interfaces.PartialHelmholtzMedium(
   SpecificEntropy(min=${name}FluidLimits.SMIN, max=${name}FluidLimits.SMAX, start=(${name}FluidLimits.SMIN+${name}FluidLimits.SMAX)/2));
 
 <%include file="FluidConstants.mot" args="jObj=jObj"/>
+<%include file="FluidLimits.mot" args="jObj=jObj"/>
+<%include file="ThermalConductivityCoefficients.mot" args="jObj=jObj"/>
+<%include file="DynamicViscosityCoefficients.mot" args="jObj=jObj"/>
+<%include file="SurfaceTensionCoefficients.mot" args="jObj=jObj"/>
+<%include file="AncillaryCoefficients.mot" args="jObj=jObj"/>
 <%include file="HelmholtzCoefficients.mot" args="jObj=jObj"/>
 <%include file="AnnotationDocumentation.mot" args="jObj=jObj, jFile=jFile"/>
 
 end Butane;
-
+##
   % endfor
 % endfor
