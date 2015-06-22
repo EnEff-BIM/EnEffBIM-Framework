@@ -20,6 +20,7 @@ extends Interfaces.PartialHelmholtzMedium(
   SpecificEntropy(min=${name}FluidLimits.SMIN, max=${name}FluidLimits.SMAX, start=(${name}FluidLimits.SMIN+${name}FluidLimits.SMAX)/2));
 
 <%include file="FluidConstants.mot" args="jObj=jObj"/>
+<%include file="HelmholtzCoefficients.mot" args="jObj=jObj"/>
 <%include file="AnnotationDocumentation.mot" args="jObj=jObj, jFile=jFile"/>
 
 end Butane;

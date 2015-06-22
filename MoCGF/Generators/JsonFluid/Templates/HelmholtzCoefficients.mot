@@ -1,3 +1,4 @@
+<%page args="jObj"/>
   final constant EoS.HelmholtzCoefficients
   helmholtzCoefficientsButane(
     idealLog=[
@@ -39,3 +40,11 @@
        -0.28390056949441E-01,   2.0,    1., 2, 2,  -10.,  -150.,  1.16,  0.85;
        +0.14904666224681E-02,   0.0,    2., 2, 2,  -10.,  -200.,  1.13,  1.0])
   "Coefficients of the Helmholtz EoS";
+  
+  
+  <% 
+     residualGauss_n = [x['n'] for x in jObj['EOS'][0]['alphar'] if x['type'] == "ResidualHelmholtzGaussian"] 
+     residualGauss_d = [x['d'] for x in jObj['EOS'][0]['alphar'] if x['type'] == "ResidualHelmholtzGaussian"] 
+     residualGauss = residualGauss_d
+  %>
+  ${residualGauss}
