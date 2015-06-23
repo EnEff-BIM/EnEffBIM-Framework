@@ -1,5 +1,7 @@
 [
 {
+  "NAME": "n-Butane", 
+  "REFPROP_NAME": "BUTANE", 
   "ALIASES": [
     "nButane", 
     "butane", 
@@ -7,6 +9,59 @@
     "N-BUTANE", 
     "R600"
   ], 
+  "CAS": "106-97-8", 
+  "FORMULA": "C_{4}H_{10}", 
+  "ENVIRONMENTAL": {
+    "ASHRAE34": "A3", 
+    "FH": 4, 
+    "GWP100": 3.0, 
+    "GWP20": -1.0, 
+    "GWP500": -1.0, 
+    "HH": 1, 
+    "Name": "n-Butane", 
+    "ODP": -1.0, 
+    "PH": 0
+  }, 
+  
+  "STATES": {
+    "critical": {
+      "T": 425.125, 
+      "T_units": "K", 
+      "hmolar": 40331.42740266437, 
+      "hmolar_units": "J/mol", 
+      "p": 3796000.0, 
+      "p_units": "Pa", 
+      "rhomolar": 3922.769612987809, 
+      "rhomolar_units": "mol/m^3", 
+      "smolar": 137.34805198475811, 
+      "smolar_units": "J/mol/K"
+    }, 
+    "triple_liquid": {
+      "T": 134.895, 
+      "T_units": "K", 
+      "hmolar": -5220.749887455389, 
+      "hmolar_units": "J/mol", 
+      "p": 0.6656581039692712, 
+      "p_units": "Pa", 
+      "rhomolar": 12645.062133275149, 
+      "rhomolar_units": "mol/m^3", 
+      "smolar": -27.033334124053958, 
+      "smolar_units": "J/mol/K"
+    }, 
+    "triple_vapor": {
+      "T": 134.895, 
+      "T_units": "K", 
+      "hmolar": 23603.75338595084, 
+      "hmolar_units": "J/mol", 
+      "p": 0.6656588978750391, 
+      "p_units": "Pa", 
+      "rhomolar": 0.0005935027093652988, 
+      "rhomolar_units": "mol/m^3", 
+      "smolar": 186.6477011654006, 
+      "smolar_units": "J/mol/K"
+    }
+  }, 
+  
   "ANCILLARIES": {
     "hL": {
       "A": [
@@ -231,18 +286,7 @@
       ]
     }
   }, 
-  "CAS": "106-97-8", 
-  "ENVIRONMENTAL": {
-    "ASHRAE34": "A3", 
-    "FH": 4, 
-    "GWP100": 3.0, 
-    "GWP20": -1.0, 
-    "GWP500": -1.0, 
-    "HH": 1, 
-    "Name": "n-Butane", 
-    "ODP": -1.0, 
-    "PH": 0
-  }, 
+
   "EOS": [
     {
       "BibTeX_CP0": "", 
@@ -499,47 +543,7 @@
       "pseudo_pure": false
     }
   ], 
-  "FORMULA": "C_{4}H_{10}", 
-  "NAME": "n-Butane", 
-  "REFPROP_NAME": "BUTANE", 
-  "STATES": {
-    "critical": {
-      "T": 425.125, 
-      "T_units": "K", 
-      "hmolar": 40331.42740266437, 
-      "hmolar_units": "J/mol", 
-      "p": 3796000.0, 
-      "p_units": "Pa", 
-      "rhomolar": 3922.769612987809, 
-      "rhomolar_units": "mol/m^3", 
-      "smolar": 137.34805198475811, 
-      "smolar_units": "J/mol/K"
-    }, 
-    "triple_liquid": {
-      "T": 134.895, 
-      "T_units": "K", 
-      "hmolar": -5220.749887455389, 
-      "hmolar_units": "J/mol", 
-      "p": 0.6656581039692712, 
-      "p_units": "Pa", 
-      "rhomolar": 12645.062133275149, 
-      "rhomolar_units": "mol/m^3", 
-      "smolar": -27.033334124053958, 
-      "smolar_units": "J/mol/K"
-    }, 
-    "triple_vapor": {
-      "T": 134.895, 
-      "T_units": "K", 
-      "hmolar": 23603.75338595084, 
-      "hmolar_units": "J/mol", 
-      "p": 0.6656588978750391, 
-      "p_units": "Pa", 
-      "rhomolar": 0.0005935027093652988, 
-      "rhomolar_units": "mol/m^3", 
-      "smolar": 186.6477011654006, 
-      "smolar_units": "J/mol/K"
-    }
-  }, 
+  
   "TRANSPORT": {
     "conductivity": {
       "BibTeX": "Perkins-JCED-2002-nButane", 
