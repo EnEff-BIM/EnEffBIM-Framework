@@ -2,11 +2,11 @@
   final constant FluidLimits
   fluidLimitsButane(
     TMIN=fluidConstantsButane.triplePointTemperature,
-    TMAX=575,
+    TMAX=${jObj['EOS'][0]['T_max']},
     DMIN=Modelica.Constants.small,
     DMAX=800,
     PMIN=Modelica.Constants.small,
-    PMAX=200e6,
+    PMAX=${jObj['EOS'][0]['p_max']},
     HMIN=-100e3,
     HMAX=+1300e3,
     SMIN=-465,
