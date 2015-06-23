@@ -215,7 +215,7 @@ for comId in range(0, componentNumber):
     propertyNumber = MapData.getComponent(comId).getPropertyNumber()    
     for proId in range(0, propertyNumber):
         if MapData.getComponent(comId).getProperty(proId).getFlag():
-            print "Property: " + MapData.getComponent(comId).getProperty(proId).getName() + "=" + MapData.getComponent(comId).getProperty(proId).getValue() + " "
+            print "Property: " + MapData.getComponent(comId).getProperty(proId).getTargetLocation() + "(" + MapData.getComponent(comId).getProperty(proId).getName() + "=" + MapData.getComponent(comId).getProperty(proId).getValue() + ") "
         else:
             print "Property: " + MapData.getComponent(comId).getProperty(proId).getTargetLocation() + "(" + MapData.getComponent(comId).getProperty(proId).getValueGroup() + ") "
 
