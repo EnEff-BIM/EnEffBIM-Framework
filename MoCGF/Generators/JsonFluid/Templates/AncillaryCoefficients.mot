@@ -31,10 +31,10 @@
   "Coefficients for the ancillary equations (PS5, DL1, DV3, ML1)";
   
     <% 
-     import numpy
+     import numpy as np
      n = jObj['ANCILLARIES']['rhoL']['n']
      t = jObj['ANCILLARIES']['rhoL']['t']
-     densityLiquid = numpy.empty([len(n),2])
+     densityLiquid = np.empty([len(n),2])
      densityLiquid[:,0] = n
      densityLiquid[:,1] = t
   %>
