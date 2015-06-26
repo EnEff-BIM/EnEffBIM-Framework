@@ -83,9 +83,12 @@ public:
     const char* get_value_group() { return property_value_group.c_str(); }
 
 private:
+	// the name
 	string single_property_name;
-	// string, int, double, or array (matrix)
+	// the value
 	string property_value; 
+	//! string, int, double, or array (matrix)
+	string property_type;
 	//! a group of properties and their values
 	string property_value_group;
 	//! if not single, we seperate the returned values

@@ -39,6 +39,16 @@
 			{
 				return dynamic_cast<sim_hotwater_system*>(this);
 			}
+			// convert to the pump of variable speed return
+			sim_flwMov_pump_varSpedRet* sim_base::to_pump_varSpedRet()
+			{
+				return dynamic_cast<sim_flwMov_pump_varSpedRet*>(this);
+			}
+			// convert to hot water boiler
+			sim_flwPlt_hotwater_boiler* sim_base::to_boiler_hotwater()
+			{
+				return dynamic_cast<sim_flwPlt_hotwater_boiler*>(this);
+			}
 
 			//1. simulation project
 			//
@@ -877,6 +887,22 @@
 			int sim_hotwater_supply::get_gap()
 			{
 				return gap_param_nr;
+			}
+			// generic API
+			// save child component for the supply side
+			void sim_hotwater_supply::save_water_supply_component(sim_base* _sim_base)
+			{
+				water_supply_component_list.push_back(_sim_base);
+			}
+			// retrieve the total number of water supply components
+			int sim_hotwater_supply::get_water_supply_component_total_number()
+			{
+				return water_supply_component_list.size();
+			}
+			// retrieve the water supply component
+			sim_base* sim_hotwater_supply::get_water_supply_component(int id)
+			{
+				return water_supply_component_list.at(id);
 			}
 
 			//   2.1.3.3.1 sim flow mover for variable speed pump

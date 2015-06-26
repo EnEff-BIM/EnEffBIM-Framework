@@ -134,13 +134,34 @@ extern "C" {
 	// retrieve the system object
 	sim_base* TEST_COMMON_DLLSPEC sim_building_get_sim_system(sim_building* _sim_building, int id) { return _sim_building->get_sim_system(id); }
 	// retrieve the total number of sim systems
-	int TEST_COMMON_DLLSPEC sim_building_get_sim_system_total_number(sim_building* _sim_building) { return _sim_building->get_sim_system_total_number(); }
-
-	// sim system for hot water
-	// convert to hot water system
+	int TEST_COMMON_DLLSPEC sim_building_get_sim_system_number(sim_building* _sim_building) { return _sim_building->get_sim_system_total_number(); }
+	// retrieve the system component name
+	const char* TEST_COMMON_DLLSPEC sim_system_get_name(sim_base* _sim_base) { return _sim_base->get_com_name().c_str(); }
+	// convert system objects
+	// convert to the hot water system
 	sim_hotwater_system* TEST_COMMON_DLLSPEC sim_system_to_hotwater_system(sim_base* _sim_base) { return _sim_base->to_hotwater_system(); }
+	// convert to the pump of variable speed return
+	sim_flwMov_pump_varSpedRet* TEST_COMMON_DLLSPEC sim_system_to_pump_varSpedRet(sim_base* _sim_base) { return _sim_base->to_pump_varSpedRet(); }
+	// convert to hot water boiler
+	sim_flwPlt_hotwater_boiler* TEST_COMMON_DLLSPEC sim_system_to_boiler_hotwater(sim_base* _sim_base) { return _sim_base->to_boiler_hotwater(); }
+
+
+	// sim system: hot water
 	// internal properties
 	double TEST_COMMON_DLLSPEC sim_system_hotwater_get_max_loop_temp(sim_hotwater_system* _sim_sys_hotwater) { return _sim_sys_hotwater->get_max_loop_temp(); }
+	
+	// hot water system: supply side
+	// retrieve the supply side of the sim hot water system
+	sim_hotwater_supply* TEST_COMMON_DLLSPEC sim_system_hotwater_get_supply(sim_hotwater_system* _sim_sys_hotwater) { return _sim_sys_hotwater->get_hotwater_supply(); }
+	// retrieve the water supply component
+	sim_base* TEST_COMMON_DLLSPEC sim_system_hotwater_get_water_supply_component(sim_hotwater_supply* _sim_hotwater_supply, int id) { return _sim_hotwater_supply->get_water_supply_component(id); }
+	// retrieve the total number of water supply components
+	int TEST_COMMON_DLLSPEC sim_system_hotwater_get_water_supply_component_number(sim_hotwater_supply* _sim_hotwater_supply) { return _sim_hotwater_supply->get_water_supply_component_total_number(); }
+
+	// components in the supply side
+	// water pump of variable speed return
+	// internal properties
+	const char* TEST_COMMON_DLLSPEC sim_pump_varSpedRet_ratedFlowRate(sim_flwMov_pump_varSpedRet* _sim_pump_varSpedRet) { return _sim_pump_varSpedRet->get_SimFlowMover_RatedFlowRate().c_str(); }
 
 	// loop connections
 	// retrieve the connection at the position id

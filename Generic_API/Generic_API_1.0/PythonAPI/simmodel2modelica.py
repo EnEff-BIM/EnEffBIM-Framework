@@ -99,7 +99,7 @@ class SimBuilding(object):
     def getSimSystem(self, id):
         return lib.sim_building_get_sim_system(self.obj, id)
     def getSimSystemNumber(self):
-        return lib.sim_building_get_sim_system_total_number(self.obj)
+        return lib.sim_building_get_sim_system_number(self.obj)
 
 class SimThermalZone(object):
     def __init__(self, obj):
@@ -110,12 +110,41 @@ class SimSystem(object):
         self.obj = obj
     def toHotwaterSystem(self):
         return lib.sim_system_to_hotwater_system(self.obj)
+    def getSystemName(self):
+        return lib.sim_system_get_name(self.obj)
+    def toPumpVarSpedRet(self):
+        return lib.sim_system_to_pump_varSpedRet(self.obj)
+    def toBoilerHotWater(self):
+        return lib.sim_system_to_boiler_hotwater(self.obj)
+    
         
 class SimSystemHotwater(object):
     def __init__(self, obj):
         self.obj = obj
     def getMaxLoopTemp(self):
         return lib.sim_system_hotwater_get_max_loop_temp(self.obj)
+    def getSupplySide(self):
+        return lib.sim_system_hotwater_get_supply(self.obj)
+
+class SimSystemHotwaterSupply(object):
+    def __init__(self, obj):
+        self.obj = obj
+    def getSupplyComponent(self, id):
+        return lib.sim_system_hotwater_get_water_supply_component(self.obj, id)
+    def getSupplyComponentNumber(self):
+        return lib.sim_system_hotwater_get_water_supply_component_number(self.obj)
+
+# sim pump of variable speed return
+class SimPumpVarSpedRet(object):
+    def __init__(self, obj):
+        self.obj = obj
+    def getRatedFlowRate(self):
+        return lib.sim_pump_varSpedRet_ratedFlowRate(self.obj)
+
+# sim boiler of hot water
+class SimBoilerHotWater(object):
+    def __init__(self, obj):
+        self.obj = obj
     
 # property data level
 lib.property_get_name.restype = c_char_p
@@ -189,13 +218,29 @@ lib.sim_building_get_sim_thermal_zone_number.argtypes = ()
 # sim systems
 lib.sim_building_get_sim_system.restype = SimSystem
 lib.sim_building_get_sim_system.argtypes = [c_void_p, c_int]
-lib.sim_building_get_sim_system_total_number.restype = c_int
-lib.sim_building_get_sim_system_total_number.argtypes = ()
+lib.sim_building_get_sim_system_number.restype = c_int
+lib.sim_building_get_sim_system_number.argtypes = ()
+lib.sim_system_get_name.restype = c_char_p
+lib.sim_system_get_name.argtypes = ()
+lib.sim_system_to_pump_varSpedRet.restype = SimPumpVarSpedRet
+lib.sim_system_to_pump_varSpedRet.argtypes = ()
+lib.sim_system_to_boiler_hotwater.restype = SimBoilerHotWater
+lib.sim_system_to_boiler_hotwater.argtypes = ()
 # sim system for hot water
 lib.sim_system_to_hotwater_system.restype = SimSystemHotwater
 lib.sim_system_to_hotwater_system.argtypes = ()
 lib.sim_system_hotwater_get_max_loop_temp.restype = c_double
 lib.sim_system_hotwater_get_max_loop_temp.argtypes = ()
+# sim system for hot water: supply side
+lib.sim_system_hotwater_get_supply.restype = SimSystemHotwaterSupply
+lib.sim_system_hotwater_get_supply.argtypes = ()
+lib.sim_system_hotwater_get_water_supply_component.restype = SimSystem
+lib.sim_system_hotwater_get_water_supply_component.argtypes = [c_void_p, c_int]
+lib.sim_system_hotwater_get_water_supply_component_number.restype = c_int
+lib.sim_system_hotwater_get_water_supply_component_number.argtypes = ()
+# sim pump of variable flow speed return
+lib.sim_pump_varSpedRet_ratedFlowRate.restype = c_char_p
+lib.sim_pump_varSpedRet_ratedFlowRate.argtypes = ()
 
 # specify the data location: SimModel use case and its
 # mapping rule instance for given Modelica library
@@ -214,10 +259,10 @@ for comId in range(0, componentNumber):
     print "Component " + repr(comId) + ": " + MapData.getComponent(comId).getTargetLocation() + " " + MapData.getComponent(comId).getTargetName()   
     propertyNumber = MapData.getComponent(comId).getPropertyNumber()    
     for proId in range(0, propertyNumber):
-        if MapData.getComponent(comId).getProperty(proId).getFlag():
+        #if MapData.getComponent(comId).getProperty(proId).getFlag():
             print "Property: " + MapData.getComponent(comId).getProperty(proId).getTargetLocation() + "(" + MapData.getComponent(comId).getProperty(proId).getName() + "=" + MapData.getComponent(comId).getProperty(proId).getValue() + ") "
-        else:
-            print "Property: " + MapData.getComponent(comId).getProperty(proId).getTargetLocation() + "(" + MapData.getComponent(comId).getProperty(proId).getValueGroup() + ") "
+        #else:
+            #print "Property: " + MapData.getComponent(comId).getProperty(proId).getTargetLocation() + "(" + MapData.getComponent(comId).getProperty(proId).getValueGroup() + ") "
 
 # access hierarchy
 print "Get SimProject object"
@@ -236,13 +281,41 @@ print "Get SimThermalZone object"
 simBuilding.getSimThermalZone(0)
 print "SimThermalZone number: {}".format(simBuilding.getSimThermalZoneNumber())
 
-print "Get SimSystem object"
-simSystem = simBuilding.getSimSystem(0)
-print "SimSystem number: {}".format(simBuilding.getSimSystemNumber())
-
-# hot water system
-simSystemHotwater = simSystem.toHotwaterSystem()
+# access the HVAC system objects of the data model
+# retrieve the total number of HVAC systems saved in the data model
+systemNumber = simBuilding.getSimSystemNumber()
+# iterate each HVAC system
+for id in range(0, systemNumber):
+    # retrieve the SimSystem object
+    simSystem = simBuilding.getSimSystem(id)
+    # e.g., the hot water loop system in our 1st use case
+    if simSystem.getSystemName() == "hw_system":
+        # convert the system object to its own class type: hot water system
+        simSystemHotwater = simSystem.toHotwaterSystem()
+        
+# access the internal properties of the hot water looping system: max loop temperature
 print "System max loop temp: {}".format(simSystemHotwater.getMaxLoopTemp())
+# retrieve the supply side of the hot water system
+supplySystem = simSystemHotwater.getSupplySide()
+# retrieve the total number of water supply components
+supplyComponentNumber = supplySystem.getSupplyComponentNumber()
+print "supply component number: {}".format(supplyComponentNumber)
+# iterate each components of the supply side
+for id in range(0, supplyComponentNumber):
+    simComponent = supplySystem.getSupplyComponent(id)
+    # retrieve the component name
+    print "supply component name: " + simComponent.getSystemName()
+    # convert the component object to its own class type based on the name
+    if simComponent.getSystemName() == "SimFlowMover_Pump_VariableSpeedReturn":
+        # convert to the pump type with variable flow speed return
+        simPump = simComponent.toPumpVarSpedRet()
+        # access the internal properties of the pump: flow rate
+        print "pump rated flow rate:" + simPump.getRatedFlowRate()
+    elif simComponent.getSystemName() == "SimFlowPlant_Boiler_BoilerHotWater":
+        # convert to the boiler type of hot water
+        simBoiler = simComponent.toBoilerHotWater()
+        # ...
+        
 
 # access loop connections
 connectionNumber = MapData.getLoopConnectionNumber()

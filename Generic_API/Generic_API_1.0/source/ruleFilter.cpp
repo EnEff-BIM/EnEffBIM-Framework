@@ -142,6 +142,7 @@ void map_rule_filter::filter_property_map_one2one(SimMap::Property_Map_One2one_i
             QMetaMethod method = myClassPtr->metaObject()->method(fid);
             string retVal = "";
 			//! determine the return value type
+			// get_value_type() or retVal
 			method.invoke(myClassPtr,
                           Q_RETURN_ARG(string, retVal));
 			//! save property value

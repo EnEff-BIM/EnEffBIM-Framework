@@ -111,6 +111,11 @@
 				// generic API
 				// convert to hot water system
 				sim_hotwater_system* to_hotwater_system();
+				// supply side of hot water system
+				// convert to the pump of variable speed return
+				sim_flwMov_pump_varSpedRet* to_pump_varSpedRet();
+				// convert to hot water boiler
+				sim_flwPlt_hotwater_boiler* to_boiler_hotwater();
 			};
 
 			//1. simulation project
@@ -394,7 +399,7 @@
 				// retrieve the hot water system object
 				sim_base* get_sim_system(int id);
 				// convert to hot water system
-				sim_hotwater_system* to_hotwater_system(sim_base* _sim_base);
+				//sim_hotwater_system* to_hotwater_system(sim_base* _sim_base);
 
 				// internal properties
 				//BuildingHeight;
@@ -874,6 +879,9 @@
 			// save property values
 			list<pair<string, string> > prop_val_maps;
 
+			// generic API
+			vector<sim_base*> water_supply_component_list;
+
 			public:
 				// constructor
 				sim_hotwater_supply() 
@@ -899,6 +907,14 @@
 				void save_prop_val(list<pair<string, string> >::iterator& _prop_it) {}
 				// retrieve the number of gaps
 				int get_gap();
+
+				// generic API
+				// save child component for the supply side
+				void save_water_supply_component(sim_base* _sim_base);
+				// retrieve the total number of water supply components
+				int get_water_supply_component_total_number();
+				// retrieve the water supply component
+				sim_base* get_water_supply_component(int id);
 			};
 			//   2.1.3.3.1 sim flow mover for variable speed pump
 			class sim_flwMov_pump_varSpedRet : public sim_base

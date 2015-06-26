@@ -429,6 +429,8 @@ void simmodel_parser::load_model_hierarchy(auto_ptr<SimModel>& ob_model)
 			{
 				//! save child class pointer
 				sim_hw_supy_mo.set_flwMov_pump_varSpedRet(sim_flwMov_pump_varSpedRet_mo);
+				// generic API
+				sim_hw_supy_mo.save_water_supply_component(&sim_flwMov_pump_varSpedRet_mo);
 				//! init pump reference
 				sim_flwMov_pump_varSpedRet_mo.sim_flwMov_pump_varSpedRet_it = flwMov_pump_varSpedRet_it;
 				// save pump id
@@ -463,6 +465,8 @@ void simmodel_parser::load_model_hierarchy(auto_ptr<SimModel>& ob_model)
 			{
 				//! save child class pointer
 				sim_hw_supy_mo.set_flwPlt_hotwater_boiler(sim_flwPlt_hotwater_boiler_mo);
+				// generic API
+				sim_hw_supy_mo.save_water_supply_component(&sim_flwPlt_hotwater_boiler_mo);
 				//! init boiler reference
 				sim_flwPlt_hotwater_boiler_mo.sim_flwPlt_hw_boiler_it = sim_flwPlt_hw_boiler_it;
 				// save boiler id
