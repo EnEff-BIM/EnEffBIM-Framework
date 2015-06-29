@@ -262,16 +262,21 @@ MapData.setDataLocation(useCaseLoc, mapRuleLoc)
 # transform SimModel data into Modelica objects
 MapData.transformModel()
 
-# print transformed / mapped data
+# access transformed / mapped data
 componentNumber = MapData.getComponentNumber()
+# iterate each mapped component data
 for comId in range(0, componentNumber):
-    print "Component " + repr(comId) + ": " + MapData.getComponent(comId).getTargetLocation() + " " + MapData.getComponent(comId).getTargetName()   
-    propertyNumber = MapData.getComponent(comId).getPropertyNumber()    
+    # retrieve the mapped component name and its location in AixLib
+    print "Component location: " + MapData.getComponent(comId).getTargetLocation() + ", name: " + MapData.getComponent(comId).getTargetName()   
+    propertyNumber = MapData.getComponent(comId).getPropertyNumber()
+    # iterate mapped properties of each component
     for proId in range(0, propertyNumber):
-        #if MapData.getComponent(comId).getProperty(proId).getFlag():
-            print "Property: " + MapData.getComponent(comId).getProperty(proId).getTargetLocation() + "(" + MapData.getComponent(comId).getProperty(proId).getName() + "=" + MapData.getComponent(comId).getProperty(proId).getValue() + ") "
-        #else:
-            #print "Property: " + MapData.getComponent(comId).getProperty(proId).getTargetLocation() + "(" + MapData.getComponent(comId).getProperty(proId).getValueGroup() + ") "
+        if MapData.getComponent(comId).getProperty(proId).getRecordInstance() != "":
+            print "record structure name: " + MapData.getComponent(comId).getProperty(proId).getRecordInstance()
+        if MapData.getComponent(comId).getProperty(proId).getRecordLocation() != "":
+            print "record structure location: " + MapData.getComponent(comId).getProperty(proId).getRecordLocation()
+        print "Property: " + MapData.getComponent(comId).getProperty(proId).getTargetLocation() + MapData.getComponent(comId).getProperty(proId).getName() + "=" + MapData.getComponent(comId).getProperty(proId).getValue()
+        print "\n"
 
 # access hierarchy
 print "Get SimProject object"
