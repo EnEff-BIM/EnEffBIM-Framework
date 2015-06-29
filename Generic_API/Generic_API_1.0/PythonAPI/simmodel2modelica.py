@@ -116,6 +116,8 @@ class SimSystem(object):
         return lib.sim_system_to_pump_varSpedRet(self.obj)
     def toBoilerHotWater(self):
         return lib.sim_system_to_boiler_hotwater(self.obj)
+    def toHeaterConvectiveWater(self):
+        return lib.sim_system_to_heater_convectwater(self.obj)
     
         
 class SimSystemHotwater(object):
@@ -127,7 +129,10 @@ class SimSystemHotwater(object):
         return lib.sim_system_hotwater_get_supply(self.obj)
     def getDemandSide(self):
         return lib.sim_system_hotwater_get_demand(self.obj)
+    def getControlSide(self):
+        return lib.sim_system_hotwater_get_control(self.obj)
 
+# supply side of the hot water system
 class SimSystemHotwaterSupply(object):
     def __init__(self, obj):
         self.obj = obj
@@ -148,9 +153,29 @@ class SimBoilerHotWater(object):
     def __init__(self, obj):
         self.obj = obj
 
+# demand side of the hot water system
 class SimSystemHotwaterDemand(object):
     def __init__(self, obj):
         self.obj = obj
+    def getDemandComponent(self, id):
+        return lib.sim_system_hotwater_get_water_demand_component(self.obj, id)
+    def getDemandComponentNumber(self):
+        return lib.sim_system_hotwater_get_water_demand_component_number(self.obj)
+
+# sim heater of convective water
+class SimHeaterConvectiveWater(object):
+    def __init__(self, obj):
+        self.obj = obj
+
+# control side of the hot water system
+class SimSystemHotwaterControl(object):
+    def __init__(self, obj):
+        self.obj = obj
+    def getControlComponent(self, id):
+        return lib.sim_system_hotwater_get_water_control_component(self.obj, id)
+    def getControlComponentNumber(self):
+        return lib.sim_system_hotwater_get_water_control_component_number(self.obj)
+
     
 # property data level
 lib.property_get_name.restype = c_char_p
@@ -232,6 +257,8 @@ lib.sim_system_to_pump_varSpedRet.restype = SimPumpVarSpedRet
 lib.sim_system_to_pump_varSpedRet.argtypes = ()
 lib.sim_system_to_boiler_hotwater.restype = SimBoilerHotWater
 lib.sim_system_to_boiler_hotwater.argtypes = ()
+lib.sim_system_to_heater_convectwater.restype = SimHeaterConvectiveWater
+lib.sim_system_to_heater_convectwater.argtypes = ()
 # sim system for hot water
 lib.sim_system_to_hotwater_system.restype = SimSystemHotwater
 lib.sim_system_to_hotwater_system.argtypes = ()
@@ -250,6 +277,17 @@ lib.sim_pump_varSpedRet_ratedFlowRate.argtypes = ()
 # sim system for hot water: demand side
 lib.sim_system_hotwater_get_demand.restype = SimSystemHotwaterDemand
 lib.sim_system_hotwater_get_demand.argtypes = ()
+lib.sim_system_hotwater_get_water_demand_component.restype = SimSystem
+lib.sim_system_hotwater_get_water_demand_component.argtypes = [c_void_p, c_int]
+lib.sim_system_hotwater_get_water_demand_component_number.restype = c_int
+lib.sim_system_hotwater_get_water_demand_component_number.argtypes = ()
+# control side
+lib.sim_system_hotwater_get_control.restype = SimSystemHotwaterControl
+lib.sim_system_hotwater_get_control.argtypes = ()
+lib.sim_system_hotwater_get_water_control_component.restype = SimSystem
+lib.sim_system_hotwater_get_water_control_component.argtypes = [c_void_p, c_int]
+lib.sim_system_hotwater_get_water_control_component_number.restype = c_int
+lib.sim_system_hotwater_get_water_control_component_number.argtypes = ()
 
 # specify the data location: SimModel use case and its
 # mapping rule instance for given Modelica library
@@ -330,7 +368,26 @@ for id in range(0, supplyComponentNumber):
         # convert to the boiler type of hot water
         simBoiler = simComponent.toBoilerHotWater()
         # ...
-        
+
+# retrieve the demand side of the hot water system
+demandSystem = simSystemHotwater.getDemandSide()
+# retrieve the total number of water demand components
+demandComponentNumber = demandSystem.getDemandComponentNumber()
+# iterate each components of the demand side
+for id in range(0, demandComponentNumber):
+    simComponent = demandSystem.getDemandComponent(id)
+    # convert to the convective water heater
+    if simComponent.getSystemName() == "SimFlowEnergyTransfer_ConvectiveHeater_Water":
+        simHeater = simComponent.toHeaterConvectiveWater()
+        # ...
+
+# retrieve the control side of the hot water system
+controlSystem = simSystemHotwater.getControlSide()
+controlComponentNumber = controlSystem.getControlComponentNumber()
+print "control component number: {}".format(controlComponentNumber);
+for id in range(0, controlComponentNumber):
+    simComponent = controlSystem.getControlComponent(id)
+    # convert to
 
 # access loop connections
 connectionNumber = MapData.getLoopConnectionNumber()
@@ -338,5 +395,15 @@ for conId in range(0, connectionNumber):
     print "Connection " + repr(conId)
     # retrieve one connection
     simConnection = MapData.getLoopConnection(conId)
-    simConnection.getOutletComponent()
-    simConnection.getInletComponent()
+    
+    # retrieve the component with water outlet port 
+    simComponentWaterOut = simConnection.getOutletComponent()
+    if simComponentWaterOut.getSystemName() == "SimFlowMover_Pump_VariableSpeedReturn":
+        # convert to the pump type with variable flow speed return
+        simPumpWaterOut = simComponentWaterOut.toPumpVarSpedRet()
+        # access the internal properties of the pump:
+        print "pump rated flow rate in the loop: " + simPumpWaterOut.getRatedFlowRate()
+        
+    # retrieve the component with water inlet port
+    simComponentWaterIn = simConnection.getInletComponent()
+    # ...

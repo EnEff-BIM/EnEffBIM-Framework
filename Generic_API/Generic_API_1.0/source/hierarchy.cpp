@@ -49,6 +49,11 @@
 			{
 				return dynamic_cast<sim_flwPlt_hotwater_boiler*>(this);
 			}
+			// convert to convective water heater
+			sim_flwEngyTran_convectheater_water* sim_base::to_heater_convectwater()
+			{
+				return dynamic_cast<sim_flwEngyTran_convectheater_water*>(this);
+			}
 
 			//1. simulation project
 			//
@@ -651,6 +656,22 @@
 			int sim_hotwater_control::get_gap()
 			{
 				return gap_param_nr;
+			}
+			// generic API
+			// save child component for the control side
+			void sim_hotwater_control::save_water_control_component(sim_base* _sim_base)
+			{
+				water_control_component_list.push_back(_sim_base);
+			}
+			// retrieve the total number of water control components
+			int sim_hotwater_control::get_water_control_component_total_number()
+			{
+				return water_control_component_list.size();
+			}
+			// retrieve the water control component
+			sim_base* sim_hotwater_control::get_water_control_component(int id)
+			{
+				return water_control_component_list.at(id);
 			}
 
 			// 2.1.3.1.1 sim supply water temperature control

@@ -325,6 +325,8 @@ void simmodel_parser::load_model_hierarchy(auto_ptr<SimModel>& ob_model)
 			{
 				//! save child class pointer
 				sim_hw_ctl_mo.set_supplywater_temp_control(sim_sw_temp_ctl_mo);
+				// generic API
+				sim_hw_ctl_mo.save_water_control_component(&sim_sw_temp_ctl_mo);
 				//! init object reference
 				sim_sw_temp_ctl_mo.sim_sw_temp_ctl_it = sim_sw_temp_ctl_it;
 				// stop iterating
@@ -342,6 +344,8 @@ void simmodel_parser::load_model_hierarchy(auto_ptr<SimModel>& ob_model)
 			{
 				//! save child class pointer
 				sim_hw_ctl_mo.set_temp_drybulb_sensor(sim_temp_dbb_ssr_mo);
+				// generic API
+				sim_hw_ctl_mo.save_water_control_component(&sim_temp_dbb_ssr_mo);
 				//! init object reference
 				sim_temp_dbb_ssr_mo.sim_temp_dbb_ssr_it = sim_temp_dbb_ssr_it;
 				// stop iterating

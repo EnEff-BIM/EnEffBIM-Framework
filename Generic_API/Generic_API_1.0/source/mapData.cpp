@@ -146,13 +146,15 @@ extern "C" {
 	sim_flwMov_pump_varSpedRet* TEST_COMMON_DLLSPEC sim_system_to_pump_varSpedRet(sim_base* _sim_base) { return _sim_base->to_pump_varSpedRet(); }
 	// convert to hot water boiler
 	sim_flwPlt_hotwater_boiler* TEST_COMMON_DLLSPEC sim_system_to_boiler_hotwater(sim_base* _sim_base) { return _sim_base->to_boiler_hotwater(); }
+	// convert to convective water heater
+	sim_flwEngyTran_convectheater_water* TEST_COMMON_DLLSPEC sim_system_to_heater_convectwater(sim_base* _sim_base) { return _sim_base->to_heater_convectwater(); }
 
 
 	// sim system: hot water
 	// internal properties
 	double TEST_COMMON_DLLSPEC sim_system_hotwater_get_max_loop_temp(sim_hotwater_system* _sim_sys_hotwater) { return _sim_sys_hotwater->get_max_loop_temp(); }
 	
-	// supply side: hot water system
+	// supply side: of hot water system
 	// retrieve the supply side of the sim hot water system
 	sim_hotwater_supply* TEST_COMMON_DLLSPEC sim_system_hotwater_get_supply(sim_hotwater_system* _sim_sys_hotwater) { return _sim_sys_hotwater->get_hotwater_supply(); }
 	// retrieve the water supply component
@@ -160,12 +162,11 @@ extern "C" {
 	// retrieve the total number of water supply components
 	int TEST_COMMON_DLLSPEC sim_system_hotwater_get_water_supply_component_number(sim_hotwater_supply* _sim_hotwater_supply) { return _sim_hotwater_supply->get_water_supply_component_total_number(); }
 
-	// components in the supply side
+	// component internal properties of the supply side
 	// water pump of variable speed return
-	// internal properties
 	const char* TEST_COMMON_DLLSPEC sim_pump_varSpedRet_ratedFlowRate(sim_flwMov_pump_varSpedRet* _sim_pump_varSpedRet) { return _sim_pump_varSpedRet->get_SimFlowMover_RatedFlowRate().c_str(); }
 
-	// demand side of the hot water system
+	// demand side: of the hot water system
 	// retrieve the demand side of the sim hot water system
 	sim_hotwater_demand* TEST_COMMON_DLLSPEC sim_system_hotwater_get_demand(sim_hotwater_system* _sim_sys_hotwater) { return _sim_sys_hotwater->get_hotwater_demand(); }
 	// retrieve the water demand component
@@ -173,6 +174,13 @@ extern "C" {
 	// retrieve the total number of water demand components
 	int TEST_COMMON_DLLSPEC sim_system_hotwater_get_water_demand_component_number(sim_hotwater_demand* _sim_hotwater_demand) { return _sim_hotwater_demand->get_water_demand_component_total_number(); }
 
+	// control side:
+	// retrieve the control side system of the sim hot water system loop
+	sim_hotwater_control* TEST_COMMON_DLLSPEC sim_system_hotwater_get_control(sim_hotwater_system* _sim_sys_hotwater) { return _sim_sys_hotwater->get_hotwater_control(); }
+	// retrieve the water control component
+	sim_base* TEST_COMMON_DLLSPEC sim_system_hotwater_get_water_control_component(sim_hotwater_control* _sim_hotwater_control, int id) { return _sim_hotwater_control->get_water_control_component(id); }
+	// retrieve the total number of water control components
+	int TEST_COMMON_DLLSPEC sim_system_hotwater_get_water_control_component_number(sim_hotwater_control* _sim_hotwater_control) { return _sim_hotwater_control->get_water_control_component_total_number(); }
 
 
 

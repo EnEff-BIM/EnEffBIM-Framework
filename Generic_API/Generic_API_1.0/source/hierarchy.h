@@ -113,6 +113,8 @@
 				sim_flwMov_pump_varSpedRet* to_pump_varSpedRet();
 				// convert to hot water boiler
 				sim_flwPlt_hotwater_boiler* to_boiler_hotwater();
+				// convert to convective water heater
+				sim_flwEngyTran_convectheater_water* to_heater_convectwater();
 			};
 
 			//1. simulation project
@@ -612,6 +614,10 @@
 				int gap_param_nr;
 				// save property values
 				list<pair<string, string> > prop_val_maps;
+
+				// generic API
+				vector<sim_base*> water_control_component_list;
+
 			public:
 				// constructor
 				sim_hotwater_control() 
@@ -637,6 +643,14 @@
 				void save_prop_val(list<pair<string, string> >::iterator& _prop_it) {}
 				// retrieve the number of gaps
 				int get_gap();
+
+				// generic API
+				// save child component for the control side
+				void save_water_control_component(sim_base* _sim_base);
+				// retrieve the total number of water control components
+				int get_water_control_component_total_number();
+				// retrieve the water control component
+				sim_base* get_water_control_component(int id);
 			};
 			//   2.1.3.1.1 sim supply water temperature control
 			class sim_supplywater_temp_control : public virtual sim_base
