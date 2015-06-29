@@ -125,6 +125,8 @@ class SimSystemHotwater(object):
         return lib.sim_system_hotwater_get_max_loop_temp(self.obj)
     def getSupplySide(self):
         return lib.sim_system_hotwater_get_supply(self.obj)
+    def getDemandSide(self):
+        return lib.sim_system_hotwater_get_demand(self.obj)
 
 class SimSystemHotwaterSupply(object):
     def __init__(self, obj):
@@ -143,6 +145,10 @@ class SimPumpVarSpedRet(object):
 
 # sim boiler of hot water
 class SimBoilerHotWater(object):
+    def __init__(self, obj):
+        self.obj = obj
+
+class SimSystemHotwaterDemand(object):
     def __init__(self, obj):
         self.obj = obj
     
@@ -241,6 +247,9 @@ lib.sim_system_hotwater_get_water_supply_component_number.argtypes = ()
 # sim pump of variable flow speed return
 lib.sim_pump_varSpedRet_ratedFlowRate.restype = c_char_p
 lib.sim_pump_varSpedRet_ratedFlowRate.argtypes = ()
+# sim system for hot water: demand side
+lib.sim_system_hotwater_get_demand.restype = SimSystemHotwaterDemand
+lib.sim_system_hotwater_get_demand.argtypes = ()
 
 # specify the data location: SimModel use case and its
 # mapping rule instance for given Modelica library
@@ -295,6 +304,7 @@ for id in range(0, systemNumber):
         
 # access the internal properties of the hot water looping system: max loop temperature
 print "System max loop temp: {}".format(simSystemHotwater.getMaxLoopTemp())
+
 # retrieve the supply side of the hot water system
 supplySystem = simSystemHotwater.getSupplySide()
 # retrieve the total number of water supply components

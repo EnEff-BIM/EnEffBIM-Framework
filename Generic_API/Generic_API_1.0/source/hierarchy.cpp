@@ -742,6 +742,22 @@
 			{
 				return gap_param_nr;
 			}
+			// generic API
+			// save child component for the demand side
+			void sim_hotwater_demand::save_water_demand_component(sim_base* _sim_base)
+			{
+				water_demand_component_list.push_back(_sim_base);
+			}
+			// retrieve the total number of water demand components
+			int sim_hotwater_demand::get_water_demand_component_total_number()
+			{
+				return water_demand_component_list.size();
+			}
+			// retrieve the water demand component
+			sim_base* sim_hotwater_demand::get_water_demand_component(int id)
+			{
+				return water_demand_component_list.at(id);
+			}
 
 			//   2.1.3.2.1 sim flow energy transferred by the convective heater water radiator
 			//

@@ -111,6 +111,14 @@ bool map_rule_filter::filter_component(sim_base* component_ptr, vector<component
 		filter_component_map_one2many(_com_one2many_it->second, component_ptr, _component_list);
 		return true;
 	}
+
+	// filter is not found
+	return false;
+}
+
+// add the missing components
+bool map_rule_filter::add_gap_component(vector<component_data>& _component_list)
+{
 	// check gap component mapping
 	for(SimMap::Component_Map_Gap_iterator _com_gap_it=_component_gap_list_ptr->begin(); _com_gap_it!=_component_gap_list_ptr->end(); ++_com_gap_it)
 	{
@@ -119,11 +127,9 @@ bool map_rule_filter::filter_component(sim_base* component_ptr, vector<component
 		filter_component_map_gap(_com_gap_it, _component);
 		// save the component data
 		_component_list.push_back(_component);
-		return true;
 	}
 
-	// filter is not found
-	return false;
+	return true;
 }
 
 // propetry mapping template: one to one mapping

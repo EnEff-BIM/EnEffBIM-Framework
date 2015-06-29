@@ -385,6 +385,8 @@ void simmodel_parser::load_model_hierarchy(auto_ptr<SimModel>& ob_model)
 					{
 						//! save child class pointer
 						sim_hw_dmd_mo.set_flwEngyTran_convectheater_water(sim_flwEngyTran_convectheater_w_mo);
+						// generic API
+						sim_hw_dmd_mo.save_water_demand_component(&sim_flwEngyTran_convectheater_w_mo);
 						//! init sim flow energy transfer reference
 						sim_flwEngyTran_convectheater_w_mo.sim_flwEngyTran_convectheater_w_it = sim_flwEngyTran_convectheater_w_it;
 						// save radiator id

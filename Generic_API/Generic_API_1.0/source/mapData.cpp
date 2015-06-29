@@ -59,6 +59,8 @@ void map_rule_data::load_map_data()
 		{
 			sim_map.filter_component(_com_list_it->second, component_list);
 		}
+		// add the missing components
+		sim_map.add_gap_component(component_list);
 	}
 	catch (const xml_schema::exception& e)
         {
@@ -150,7 +152,7 @@ extern "C" {
 	// internal properties
 	double TEST_COMMON_DLLSPEC sim_system_hotwater_get_max_loop_temp(sim_hotwater_system* _sim_sys_hotwater) { return _sim_sys_hotwater->get_max_loop_temp(); }
 	
-	// hot water system: supply side
+	// supply side: hot water system
 	// retrieve the supply side of the sim hot water system
 	sim_hotwater_supply* TEST_COMMON_DLLSPEC sim_system_hotwater_get_supply(sim_hotwater_system* _sim_sys_hotwater) { return _sim_sys_hotwater->get_hotwater_supply(); }
 	// retrieve the water supply component
@@ -162,6 +164,17 @@ extern "C" {
 	// water pump of variable speed return
 	// internal properties
 	const char* TEST_COMMON_DLLSPEC sim_pump_varSpedRet_ratedFlowRate(sim_flwMov_pump_varSpedRet* _sim_pump_varSpedRet) { return _sim_pump_varSpedRet->get_SimFlowMover_RatedFlowRate().c_str(); }
+
+	// demand side of the hot water system
+	// retrieve the demand side of the sim hot water system
+	sim_hotwater_demand* TEST_COMMON_DLLSPEC sim_system_hotwater_get_demand(sim_hotwater_system* _sim_sys_hotwater) { return _sim_sys_hotwater->get_hotwater_demand(); }
+	// retrieve the water demand component
+	sim_base* TEST_COMMON_DLLSPEC sim_system_hotwater_get_water_demand_component(sim_hotwater_demand* _sim_hotwater_demand, int id) { return _sim_hotwater_demand->get_water_demand_component(id); }
+	// retrieve the total number of water demand components
+	int TEST_COMMON_DLLSPEC sim_system_hotwater_get_water_demand_component_number(sim_hotwater_demand* _sim_hotwater_demand) { return _sim_hotwater_demand->get_water_demand_component_total_number(); }
+
+
+
 
 	// loop connections
 	// retrieve the connection at the position id

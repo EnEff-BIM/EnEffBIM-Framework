@@ -54,6 +54,8 @@ public:
 
 	// filter the SimModel data of given component
 	bool filter_component(sim_base* component_ptr, vector<component_data>& _component_list);
+	// add the missing components
+	bool add_gap_component(vector<component_data>& _component_list);
 
 	// filter gap component
 

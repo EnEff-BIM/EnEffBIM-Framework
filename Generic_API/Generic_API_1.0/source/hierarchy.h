@@ -83,9 +83,6 @@
 			// 3 sim connection between components
 			class sim_conns;
 
-			// generica API classes
-			class sim_system;
-
 // decalration
 //
 
@@ -537,33 +534,6 @@
 				list<pair<string, string> > prop_val_maps;
 			};
 
-			// generica API
-			// sim system class
-			class sim_system
-			{
-			private:
-				// sim system for hot water
-				vector<sim_hotwater_system*> sim_system_hotwater_list;
-				// optional
-				vector<sim_base*> sim_system_list;
-			public:
-				sim_system() {}
-
-				// save sim hot water system
-				void save_sim_system_hotwater(sim_hotwater_system* _sim_hotwater_sys);
-				// retrieve the total number of the hot water systems
-				int get_sim_system_hotwater_total_number();
-				// retrieve the hot water system object
-				sim_hotwater_system* get_sim_hotwater_system(int id);
-
-				// optional
-				// save sim system
-				void save_sim_system(sim_base* _sim_base);
-				// retrieve the total number of sim systems
-				int get_sim_system_total_number();
-				// retrieve the hot water system object
-				sim_base* get_sim_system(int id);
-			};
 
 			/*control
 			demand
@@ -588,9 +558,9 @@
 				list<pair<string, string> > prop_val_maps;
 
 				// gernica API
-				vector<sim_hotwater_control*> sim_hotwater_control_list;
+				/*vector<sim_hotwater_control*> sim_hotwater_control_list;
 				vector<sim_hotwater_demand*> sim_hotwater_demand_list;
-				vector<sim_hotwater_supply*> sim_hotwater_supply_list;
+				vector<sim_hotwater_supply*> sim_hotwater_supply_list;*/
 
 			public:
 				// constructor
@@ -746,6 +716,9 @@
 				// generic component name (without id)
 				string com_name;
 
+				// generic API
+				vector<sim_base*> water_demand_component_list;
+
 			public:
 				// constructor
 				sim_hotwater_demand() 
@@ -767,6 +740,14 @@
 				void save_prop_val(list<pair<string, string> >::iterator& _prop_it) {}
 				// retrieve the number of gaps
 				int get_gap();
+
+				// generic API
+				// save child component for the demand side
+				void save_water_demand_component(sim_base* _sim_base);
+				// retrieve the total number of water demand components
+				int get_water_demand_component_total_number();
+				// retrieve the water demand component
+				sim_base* get_water_demand_component(int id);
 			};
 			//   2.1.3.2.1 sim flow energy transferred by convective heater water radiator
 			class sim_flwEngyTran_convectheater_water : public sim_base

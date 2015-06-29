@@ -235,6 +235,28 @@
     <TargetPropertyName>l</TargetPropertyName>
   </Property_Map_One2one>
   
+  <!-- property mapping for the water pipe -->
+  <!-- pipe length -->
+  <Property_Map_Gap RefId="ID063T">
+    <Description>Pipe length</Description>
+    <TargetPropertyName>l</TargetPropertyName>
+	<DefaultValue>2</DefaultValue>
+  </Property_Map_Gap>
+
+  <!-- pipe inside diameter [m] -->
+  <Property_Map_Gap RefId="ID061T">
+    <Description>Pipe inside diameter [m]</Description>
+    <TargetPropertyName>D</TargetPropertyName>
+	<DefaultValue>0.006</DefaultValue>    
+  </Property_Map_Gap>
+
+  <!-- a temporary rule instance for default ambient pressure [bar] -->
+  <Property_Map_Gap RefId="ID051T">
+    <Description>Default ambient pressure [bar]</Description>
+    <TargetPropertyName>p_ambient</TargetPropertyName>
+    <DefaultValue>101325</DefaultValue>
+  </Property_Map_Gap>
+
   <!-- property mapping for the water type radiator -->
   <!-- Initialize properties: V -->
   <Property_Map_Gap RefId="ID021">
@@ -475,7 +497,62 @@
     <TargetPropertyName>e</TargetPropertyName>
     <DefaultValue>0.0000249999993684</DefaultValue>
   </Property_Map_Gap>
-  
+
+  <!-- a temporary rule instance for boiler outlet water temperature setting -->
+  <Property_Map_Gap RefId="ID0121T">
+    <Description>boiler outlet water temperature defintion</Description>
+    <TargetPropertyName>k</TargetPropertyName>
+    <DefaultValue>328.15</DefaultValue>
+  </Property_Map_Gap>
+
+  <!-- a temporary rule instance for the boiler efficiency curve defintion -->
+  <Property_Map_Gap RefId="ID0114T">
+    <Description>Boiler efficiency curve defintion</Description>
+    <TargetPropertyName>boilerEfficiency</TargetPropertyName>
+    <DefaultValue>0.0000, 0.78; 0.2000, 0.79; 0.4000, 0.82; 0.6000, 0.84; 0.8000, 0.86; 1.0000, 0.88</DefaultValue>
+	<RecordInstance>boilerEfficiencyB</RecordInstance>
+	<RecordLocation>AixLib.DataBase.Boiler.BoilerEfficiencyBaseDataDefinition</RecordLocation>
+  </Property_Map_Gap>
+
+  <!-- a temporary rule instance for the pump head for min and max rotational speed defintion -->
+  <Property_Map_Gap RefId="ID0311T">
+    <Description>Pump head for min and max rotational speed defintion</Description>
+	<TargetPropertyName>minMaxHead</TargetPropertyName>
+	<DefaultValue>0.0000, 0.6, 0.6; 0.5000, 2.5, 2.5; 0.7500, 2.1, 2.1; 1.3000, 1.5, 1.5; 1.5000, 2.25, 2.25; 2.5000, 0.75, 0.75; 3.0000, 0.5, 0.5; 3.5000, 0.25, 0.25; 4.0000, 0.0, 0.0; 4.5000, 0.0, 0.0</DefaultValue>
+    <RecordInstance>MinMaxCharacteristics</RecordInstance>
+    <RecordLocation>AixLib.DataBase.Pumps.MinMaxCharacteristicsBaseDataDefinition</RecordLocation>
+  </Property_Map_Gap>
+
+  <!-- a temporary rule instance for the pump head for the control strategy [m] -->
+  <Property_Map_Gap RefId="ID0312T">
+    <Description>Pump head for the control strategy [m]</Description>
+    <TargetPropertyName>Head_max</TargetPropertyName>
+    <DefaultValue>1</DefaultValue>
+  </Property_Map_Gap>
+
+  <!-- a temporary rule instance for the control strategy -->
+  <Property_Map_Gap RefId="ID0313T">
+    <Description>control strategy: 2 or 1</Description>
+    <TargetPropertyName>ControlStrategy</TargetPropertyName>
+    <DefaultValue>1</DefaultValue>
+  </Property_Map_Gap>
+
+  <!-- a temporary rule instance for the width of pulse -->
+  <Property_Map_Gap RefId="ID0322T">
+    <Description>Width of pulse in % of period</Description>
+    <TargetPropertyName>width</TargetPropertyName>
+    <DefaultValue>45.8</DefaultValue>
+  </Property_Map_Gap>
+
+   <!-- a temporary rule instance for the time instant of first pulse [s] -->
+  <Property_Map_Gap RefId="ID0323T">
+    <Description>time instant of first pulse [s]</Description>
+    <TargetPropertyName>startTime</TargetPropertyName>
+    <DefaultValue>64800</DefaultValue>
+  </Property_Map_Gap>
+
+
+
   <!-- property mapping for the hot water boiler -->
   <!-- boiler efficiency curve defintion: reuse a record structure -->
   <Property_Map_Conversion RefId="ID0114">
@@ -644,6 +721,7 @@
     <Property_Map_One2one_Name>ID0111</Property_Map_One2one_Name>
 	<Property_Map_Gap_Name>ID0112</Property_Map_Gap_Name>
     <Property_Map_Gap_Name>ID0113</Property_Map_Gap_Name>
+	<Property_Map_Gap_Name>ID0114T</Property_Map_Gap_Name>
     <Property_Map_Conversion_Name>ID0114</Property_Map_Conversion_Name>
     <!-- <Property_Map_Combination_Name>ID0112</Property_Map_Combination_Name> -->
   </ComponentMappingGroup>
@@ -653,6 +731,7 @@
     <Description>Boiler outlet water temperature mapping</Description>
     <TargetComponentName>const</TargetComponentName>
     <TargetLocation>Modelica.Blocks.Sources.Constant</TargetLocation>
+	<Property_Map_Gap_Name>ID0121T</Property_Map_Gap_Name>
     <Property_Map_Conversion_Name>ID0121</Property_Map_Conversion_Name>
   </ComponentMappingGroup>
 
@@ -664,6 +743,9 @@
     <Property_Map_One2one_Name>ID0314</Property_Map_One2one_Name>
     <Property_Map_Gap_Name>ID0315</Property_Map_Gap_Name>
     <Property_Map_Gap_Name>ID0316</Property_Map_Gap_Name>
+	<Property_Map_Gap_Name>ID0311T</Property_Map_Gap_Name>
+	<Property_Map_Gap_Name>ID0312T</Property_Map_Gap_Name>
+	<Property_Map_Gap_Name>ID0313T</Property_Map_Gap_Name>
     <Property_Map_Conversion_Name>ID0311</Property_Map_Conversion_Name>
     <Property_Map_Conversion_Name>ID0312</Property_Map_Conversion_Name>
     <Property_Map_Conversion_Name>ID0313</Property_Map_Conversion_Name>
@@ -676,6 +758,8 @@
     <TargetComponentName>NightSignal</TargetComponentName>
     <TargetLocation>Modelica.Blocks.Sources.BooleanPulse</TargetLocation>
     <Property_Map_Gap_Name>ID0321</Property_Map_Gap_Name>
+	<Property_Map_Gap_Name>ID0322T</Property_Map_Gap_Name>
+	<Property_Map_Gap_Name>ID0323T</Property_Map_Gap_Name>
     <Property_Map_Conversion_Name>ID0322</Property_Map_Conversion_Name>
     <Property_Map_Conversion_Name>ID0323</Property_Map_Conversion_Name>
   </ComponentMappingGroup>
@@ -698,6 +782,34 @@
     <ComponentMappingGroupName>ID032</ComponentMappingGroupName>
   </Component_Map_One2Many>
 
+  <!-- a temporary rule instance for the base paramters -->
+  <Component_Map_Gap RefId="ID05T">
+    <Description>Map different components into the base parameters</Description>
+    <TargetComponentName>baseParameters</TargetComponentName>
+    <TargetLocation>AixLib.HVAC.BaseParameters</TargetLocation>
+    <Property_Map_Gap_Name>ID051T</Property_Map_Gap_Name>
+    <Property_Map_Gap_Name>ID052</Property_Map_Gap_Name>
+    <Property_Map_Gap_Name>ID053</Property_Map_Gap_Name>
+    <Property_Map_Gap_Name>ID054</Property_Map_Gap_Name>
+    <Property_Map_Gap_Name>ID055</Property_Map_Gap_Name>
+    <Property_Map_Gap_Name>ID056</Property_Map_Gap_Name>
+    <Property_Map_Gap_Name>ID057</Property_Map_Gap_Name>
+    <Property_Map_Gap_Name>ID058</Property_Map_Gap_Name>
+    <Property_Map_Gap_Name>ID059</Property_Map_Gap_Name>
+    <Property_Map_Gap_Name>ID060</Property_Map_Gap_Name>
+  </Component_Map_Gap>
+
+  <!-- component mapping for the water pipe -->
+  <Component_Map_Gap RefId="ID06T">
+    <Description>map a water pipe into AixLib</Description>
+    <TargetComponentName>pipe_HeatTransfer</TargetComponentName>
+    <TargetLocation>AixLib.HVAC.Pipes.Pipe</TargetLocation>
+    <Property_Map_Gap_Name>ID061T</Property_Map_Gap_Name>
+    <Property_Map_Gap_Name>ID063T</Property_Map_Gap_Name>
+    <Property_Map_Gap_Name>ID062</Property_Map_Gap_Name>
+    <Property_Map_Gap_Name>ID064</Property_Map_Gap_Name>
+  </Component_Map_Gap>
+
   <!-- component mapping for the expansion vessel -->
   <Component_Map_Gap RefId="ID04">
     <Description> Add an expansion vessel connecting to the radiator</Description>
@@ -711,11 +823,13 @@
     <Description>XML mapping rule instance between SimModel and AixLib</Description>
     <TargetLibraryName>AixLib</TargetLibraryName>
     <Component_Map_One2one_Name>ID02</Component_Map_One2one_Name>
-    <Component_Map_One2one_Name>ID06</Component_Map_One2one_Name>
-    <Component_Map_Many2One_Name>ID05</Component_Map_Many2One_Name>
+    <!-- <Component_Map_One2one_Name>ID06</Component_Map_One2one_Name>
+    <Component_Map_Many2One_Name>ID05</Component_Map_Many2One_Name> -->
     <Component_Map_One2Many_Name>ID01</Component_Map_One2Many_Name>
     <Component_Map_One2Many_Name>ID03</Component_Map_One2Many_Name>
     <Component_Map_Gap_Name>ID04</Component_Map_Gap_Name>
+	<Component_Map_Gap_Name>ID05T</Component_Map_Gap_Name>
+	<Component_Map_Gap_Name>ID06T</Component_Map_Gap_Name>
   </Multiple_Library_Map>
   
   <!-- mapping rules defined for BuildingSystems -->
