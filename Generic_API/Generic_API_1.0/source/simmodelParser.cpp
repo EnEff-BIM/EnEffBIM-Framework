@@ -208,6 +208,8 @@ void simmodel_parser::load_model_hierarchy(auto_ptr<SimModel>& ob_model)
 		{
 			//! init sim zone group reference
 			sim_group_mo.sim_zone_group_it = sim_zone_group_it;
+			// generic API
+			sim_building_mo.save_sim_zone_hvac_group(&sim_group_mo);
 		}
 
 		// 2.1.2-2 load sim zone HVAC group info from SimModel

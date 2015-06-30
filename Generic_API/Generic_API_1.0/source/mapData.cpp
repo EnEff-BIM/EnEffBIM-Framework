@@ -126,6 +126,12 @@ extern "C" {
 	// retrieve the total number of sim_building objects
 	int TEST_COMMON_DLLSPEC sim_site_get_sim_building_number(sim_site* _sim_site) { return _sim_site->get_sim_building_total_number(); }
 
+	// sim zone & HVAC group
+	// retrieve the zone & HVAC group object
+	sim_group* TEST_COMMON_DLLSPEC sim_building_get_sim_zone_hvac_group(sim_building* _sim_building, int id) { return _sim_building->get_sim_zone_hvac_group(id); }
+	// retrieve the total number of the group object
+	int TEST_COMMON_DLLSPEC sim_building_get_sim_zone_hvac_group_number(sim_building* _sim_building) { return _sim_building->get_sim_zone_hvac_group_total_number(); }
+
 	// sim_thermal_zone
 	// retrieve the sim_thermal_zone object with a given id
 	sim_thermal_zone* TEST_COMMON_DLLSPEC sim_building_get_sim_thermal_zone(sim_building* _sim_building, int id) { return _sim_building->get_sim_thermal_zone(id); }
@@ -148,6 +154,10 @@ extern "C" {
 	sim_flwPlt_hotwater_boiler* TEST_COMMON_DLLSPEC sim_system_to_boiler_hotwater(sim_base* _sim_base) { return _sim_base->to_boiler_hotwater(); }
 	// convert to convective water heater
 	sim_flwEngyTran_convectheater_water* TEST_COMMON_DLLSPEC sim_system_to_heater_convectwater(sim_base* _sim_base) { return _sim_base->to_heater_convectwater(); }
+	// convert to supply water temperature control
+	sim_supplywater_temp_control* TEST_COMMON_DLLSPEC sim_system_to_supplywater_tempCtl(sim_base* _sim_base) { return _sim_base->to_supplywater_tempCtl(); }
+	// convert to dry bulb temperature sensor
+	sim_temp_drybulb_sensor* TEST_COMMON_DLLSPEC sim_system_to_tempdrybulb_sensor(sim_base* _sim_base) { return _sim_base->to_tempdrybulb_sensor(); }
 
 
 	// sim system: hot water
@@ -161,7 +171,19 @@ extern "C" {
 	sim_base* TEST_COMMON_DLLSPEC sim_system_hotwater_get_water_supply_component(sim_hotwater_supply* _sim_hotwater_supply, int id) { return _sim_hotwater_supply->get_water_supply_component(id); }
 	// retrieve the total number of water supply components
 	int TEST_COMMON_DLLSPEC sim_system_hotwater_get_water_supply_component_number(sim_hotwater_supply* _sim_hotwater_supply) { return _sim_hotwater_supply->get_water_supply_component_total_number(); }
-
+	
+	// hot water boiler
+	// internal properties
+	const char* TEST_COMMON_DLLSPEC sim_boiler_hotwater_get_SimFlowPlant_NomCap(sim_flwPlt_hotwater_boiler* _sim_hotwater_boiler) { return _sim_hotwater_boiler->get_SimFlowPlant_NomCap().c_str(); }
+	double TEST_COMMON_DLLSPEC sim_boiler_hotwater_get_SimFlowPlant_NomThermalEff(sim_flwPlt_hotwater_boiler* _sim_hotwater_boiler) { return _sim_hotwater_boiler->get_SimFlowPlant_NomThermalEff(); }
+	double TEST_COMMON_DLLSPEC sim_boiler_hotwater_get_SimFlowPlant_DesignWaterOutletTemp(sim_flwPlt_hotwater_boiler* _sim_hotwater_boiler) { return _sim_hotwater_boiler->get_SimFlowPlant_DesignWaterOutletTemp(); }
+	double TEST_COMMON_DLLSPEC sim_boiler_hotwater_get_SimFlowPlant_DesignWaterFlowRate(sim_flwPlt_hotwater_boiler* _sim_hotwater_boiler) { return _sim_hotwater_boiler->get_SimFlowPlant_DesignWaterFlowRate(); }
+	double TEST_COMMON_DLLSPEC sim_boiler_hotwater_get_SimFlowPlant_MinPartLoadRatio(sim_flwPlt_hotwater_boiler* _sim_hotwater_boiler) { return _sim_hotwater_boiler->get_SimFlowPlant_MinPartLoadRatio(); }
+	double TEST_COMMON_DLLSPEC sim_boiler_hotwater_get_SimFlowPlant_MaxPartLoadRatio(sim_flwPlt_hotwater_boiler* _sim_hotwater_boiler) { return _sim_hotwater_boiler->get_SimFlowPlant_MaxPartLoadRatio(); }
+	double TEST_COMMON_DLLSPEC sim_boiler_hotwater_get_SimFlowPlant_OptimumPartLoadRatio(sim_flwPlt_hotwater_boiler* _sim_hotwater_boiler) { return _sim_hotwater_boiler->get_SimFlowPlant_OptimumPartLoadRatio(); }
+	double TEST_COMMON_DLLSPEC sim_boiler_hotwater_get_SimFlowPlant_WaterOutletUpTempLimit(sim_flwPlt_hotwater_boiler* _sim_hotwater_boiler) { return _sim_hotwater_boiler->get_SimFlowPlant_WaterOutletUpTempLimit(); }
+	const char* TEST_COMMON_DLLSPEC sim_boiler_hotwater_get_SimFlowPlant_BoilerFlowMode(sim_flwPlt_hotwater_boiler* _sim_hotwater_boiler) { return _sim_hotwater_boiler->get_SimFlowPlant_BoilerFlowMode(); }
+	double TEST_COMMON_DLLSPEC sim_boiler_hotwater_get_SimFlowPlant_SizingFactor(sim_flwPlt_hotwater_boiler* _sim_hotwater_boiler) { return _sim_hotwater_boiler->get_SimFlowPlant_SizingFactor(); }
 	// component internal properties of the supply side
 	// water pump of variable speed return
 	const char* TEST_COMMON_DLLSPEC sim_pump_varSpedRet_ratedFlowRate(sim_flwMov_pump_varSpedRet* _sim_pump_varSpedRet) { return _sim_pump_varSpedRet->get_SimFlowMover_RatedFlowRate().c_str(); }

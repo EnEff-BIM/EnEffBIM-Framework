@@ -54,6 +54,16 @@
 			{
 				return dynamic_cast<sim_flwEngyTran_convectheater_water*>(this);
 			}
+			// convert to supply water temperature control
+			sim_supplywater_temp_control* sim_base::to_supplywater_tempCtl()
+			{
+				return dynamic_cast<sim_supplywater_temp_control*>(this);
+			}
+			// convert to dry bulb temperature sensor
+			sim_temp_drybulb_sensor* sim_base::to_tempdrybulb_sensor()
+			{
+				return dynamic_cast<sim_temp_drybulb_sensor*>(this);
+			}
 
 			//1. simulation project
 			//
@@ -310,6 +320,21 @@
 			sim_base* sim_building::get_sim_system(int id)
 			{
 				return sim_system_list.at(id);
+			}
+			// save zone and HVAC group
+			void sim_building::save_sim_zone_hvac_group(sim_group* _sim_group)
+			{
+				sim_group_list.push_back(_sim_group);
+			}
+			// retrieve the total number of the group object
+			int sim_building::get_sim_zone_hvac_group_total_number()
+			{
+				return sim_group_list.size();
+			}
+			// retrieve the zone & HVAC group object
+			sim_group* sim_building::get_sim_zone_hvac_group(int id)
+			{
+				return sim_group_list.at(id);
 			}
 
 			//  2.1.1.1 buidling stories: n+1

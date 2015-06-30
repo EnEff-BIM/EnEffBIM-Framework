@@ -115,6 +115,10 @@
 				sim_flwPlt_hotwater_boiler* to_boiler_hotwater();
 				// convert to convective water heater
 				sim_flwEngyTran_convectheater_water* to_heater_convectwater();
+				// convert to supply water temperature control
+				sim_supplywater_temp_control* to_supplywater_tempCtl();
+				// convert to dry bulb temperature sensor
+				sim_temp_drybulb_sensor* to_tempdrybulb_sensor();
 			};
 
 			//1. simulation project
@@ -397,8 +401,13 @@
 				int get_sim_system_total_number();
 				// retrieve the hot water system object
 				sim_base* get_sim_system(int id);
-				// convert to hot water system
-				//sim_hotwater_system* to_hotwater_system(sim_base* _sim_base);
+
+				// save zone and HVAC group
+				void save_sim_zone_hvac_group(sim_group* _sim_group);
+				// retrieve the total number of the group object
+				int get_sim_zone_hvac_group_total_number();
+				// retrieve the zone & HVAC group object
+				sim_group* get_sim_zone_hvac_group(int id);
 
 				// internal properties
 				//BuildingHeight;
@@ -485,7 +494,7 @@
 			};
 
 			// 2.1.2 simulation zone & HVAC group
-			class sim_group
+			class sim_group : sim_building
 			{
 
 			private:
@@ -1011,6 +1020,15 @@
 				// retrieve the generic component name
 				Q_INVOKABLE string get_com_name() { return com_name; }
 				Q_INVOKABLE string get_SimFlowPlant_NomCap() { return QString::number( sim_flwPlt_hw_boiler_it->SimFlowPlant_NomCap().get() ).toStdString(); }
+				double get_SimFlowPlant_NomThermalEff() { return sim_flwPlt_hw_boiler_it->SimFlowPlant_NomThermalEff().get(); }
+				double get_SimFlowPlant_DesignWaterOutletTemp() { return sim_flwPlt_hw_boiler_it->SimFlowPlant_DesignWaterOutletTemp().get(); }
+				double get_SimFlowPlant_DesignWaterFlowRate() { return sim_flwPlt_hw_boiler_it->SimFlowPlant_DesignWaterFlowRate().get(); }
+				double get_SimFlowPlant_MinPartLoadRatio() { return sim_flwPlt_hw_boiler_it->SimFlowPlant_MinPartLoadRatio().get(); }
+				double get_SimFlowPlant_MaxPartLoadRatio() { return sim_flwPlt_hw_boiler_it->SimFlowPlant_MaxPartLoadRatio().get(); }
+				double get_SimFlowPlant_OptimumPartLoadRatio() { return sim_flwPlt_hw_boiler_it->SimFlowPlant_OptimumPartLoadRatio().get(); }
+				double get_SimFlowPlant_WaterOutletUpTempLimit() { return sim_flwPlt_hw_boiler_it->SimFlowPlant_WaterOutletUpTempLimit().get(); }
+				const char* get_SimFlowPlant_BoilerFlowMode() { return sim_flwPlt_hw_boiler_it->SimFlowPlant_BoilerFlowMode().get().c_str(); }
+				double get_SimFlowPlant_SizingFactor() { return sim_flwPlt_hw_boiler_it->SimFlowPlant_SizingFactor().get(); }
 				// retrieve additional paramters
 				double get_vol() { return _vol; }
 				double get_vol_t() { return _vol_t; }
