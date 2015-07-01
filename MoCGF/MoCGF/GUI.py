@@ -19,8 +19,10 @@ MoCGF-cli is the command line interface to MoCGF. MoCGF-gui provides a graphical
 # http://stackoverflow.com/questions/14349563/how-to-get-non-blocking-real-time-behavior-from-python-logging-module-output-t
 
 class QtLogHandler(logging.Handler):
+
     def __init__(self):
         logging.Handler.__init__(self)
+
     def emit(self, record):
         record = self.format(record)
         if record:
@@ -30,19 +32,24 @@ class XStream(QtCore.QObject):
     _stdout = None
     _stderr = None
     messageWritten = QtCore.pyqtSignal(str)
+
     def flush( self ):
         pass
+
     def fileno( self ):
         return -1
+
     def write( self, msg ):
         if not self.signalsBlocked():
             self.messageWritten.emit(msg)
+
     @staticmethod
     def stdout():
         if not XStream._stdout:
             XStream._stdout = XStream()
             sys.stdout = XStream._stdout
         return XStream._stdout
+
     @staticmethod
     def stderr():
         if not XStream._stderr:
@@ -50,6 +57,39 @@ class XStream(QtCore.QObject):
             sys.stderr = XStream._stderr
         return XStream._stderr
 
+
+class LogViewer(QtGui.QWidget):
+    def __init__(self, resPath, *arg, **kwarg):
+        QtGui.QWidget.__init__(self)
+        # load the ui
+        self.ui = uic.loadUi(os.path.join(resPath, 'MessageBrowser.ui'), self)
+        XStream.stdout().messageWritten.connect(self.textBrowser.insertPlainText)
+        XStream.stderr().messageWritten.connect(self.textBrowser.insertPlainText)
+        self.logHandler = QtLogHandler()
+        self.logHandler.setFormatter(logging.Formatter("%(levelname)s: %(message)s"))
+        self.logger = logging.getLogger('MoCGF')
+        i = int(kwarg['logLevel'] / 10 ) - 1 # convert level to QComboBox index
+        self.levelSelect.setCurrentIndex(i)
+        self.levelSelect.currentIndexChanged.connect(self.setLevel)
+        self.clearButton.pressed.connect(self.clearLog)
+        self.saveButton.pressed.connect(self.saveLog)
+
+    def setLevel(self, i):
+        l = (i+1) * 10 # convert QComboBox index to level :-)
+        self.logger.setLevel(l)
+
+    def clearLog(self):
+        self.textBrowser.clear()
+        
+    def saveLog(self):
+        f = QtGui.QFileDialog.getSaveFileName(self, 'Select Output File', '*')
+        if not f:
+            return
+        try:
+            open(f, 'w').write(self.textBrowser.toPlainText())
+        except Exception as e:
+            QtGui.QMessageBox.critical(self, 'Error during save', 'Message log could not be saved!')
+            self.logger.exception('Could not save message log')
 
 
 class MoCGFWidget(QtGui.QWidget):
@@ -64,16 +104,11 @@ class MoCGFWidget(QtGui.QWidget):
         self.setWindowTitle('MoCGF GUI | Version: %s' % (MoCGF.__version__))
         # create a logView?
         if kwarg['logLevel'] > 0:
-            self.logView = QtGui.QTextBrowser(self)
+            self.logView = LogViewer(resPath, *arg, **kwarg)
             self.moCGFMainView.addTab(self.logView, 'Messages')
-            XStream.stdout().messageWritten.connect(self.logView.insertPlainText)
-            XStream.stderr().messageWritten.connect(self.logView.insertPlainText)
-            logHandler = QtLogHandler()
-            logHandler.setFormatter(logging.Formatter("%(levelname)s: %(message)s"))
-            kwarg['logHandler'] = logHandler
+            kwarg['logHandler'] = self.logView.logHandler
         # create a controller
         self.mocgf = Controller(*arg, **kwarg)
-
         # apis
         self.apiList.itemSelectionChanged.connect(self.activateAPI)
         self.apiView.anchorClicked.connect(self.openURL)
