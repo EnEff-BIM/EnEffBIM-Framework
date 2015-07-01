@@ -31,6 +31,8 @@ class QtLogHandler(logging.Handler):
 class XStream(QtCore.QObject):
     _stdout = None
     _stderr = None
+    _ostdout = None
+    _ostderr = None
     messageWritten = QtCore.pyqtSignal(str)
 
     def flush( self ):
@@ -47,6 +49,7 @@ class XStream(QtCore.QObject):
     def stdout():
         if not XStream._stdout:
             XStream._stdout = XStream()
+            XStream._ostdout = sys.stdout
             sys.stdout = XStream._stdout
         return XStream._stdout
 
@@ -54,8 +57,16 @@ class XStream(QtCore.QObject):
     def stderr():
         if not XStream._stderr:
             XStream._stderr = XStream()
+            XStream._ostderr = sys.stderr
             sys.stderr = XStream._stderr
         return XStream._stderr
+
+    @staticmethod
+    def reset():
+        if XStream._stdout:
+            sys.stdout = XStream._ostdout
+        if XStream._stderr:
+            sys.stdout = XStream._ostderr
 
 
 class LogViewer(QtGui.QWidget):
@@ -93,7 +104,7 @@ class LogViewer(QtGui.QWidget):
 
 
 class MoCGFWidget(QtGui.QWidget):
-    def __init__(self, app, resPath, *arg, **kwarg):
+    def __init__(self, app, resPath, cfg, *arg, **kwarg):
         QtGui.QWidget.__init__(self)
         self.app = app
         # load the Icons
@@ -102,8 +113,9 @@ class MoCGFWidget(QtGui.QWidget):
         # load the ui
         self.ui = uic.loadUi(os.path.join(resPath, 'MoCGF-GUI.ui'), self)
         self.setWindowTitle('MoCGF GUI | Version: %s' % (MoCGF.__version__))
+        self.cfg = cfg
         # create a logView?
-        if kwarg['logLevel'] > 0:
+        if 'logLevel' in kwarg and kwarg['logLevel'] > 0:
             self.logView = LogViewer(resPath, *arg, **kwarg)
             self.moCGFMainView.addTab(self.logView, 'Messages')
             kwarg['logHandler'] = self.logView.logHandler
@@ -128,6 +140,20 @@ class MoCGFWidget(QtGui.QWidget):
         # buttons
         self.uriLoadButton.clicked.connect(self.getUriList)
         self.outputLoadButton.clicked.connect(self.getOutputFile)
+
+        # set preferences from cfg
+        if cfg.has_section('PREFERENCES'):
+            p = cfg['PREFERENCES']
+            self.uriInput.setText(p.get('uriList', ''))
+            self.outputInput.setText(p.get('outputFile', ''))
+            g = p.get('generator', '')
+            for x in range(self.generatorList.count()):
+                i = self.generatorList.item(x)
+                if i.text() == g:
+                    i.setSelected(1)
+                    break
+        # end of preferences
+    
 
     # general methods
     def openURL(self, url):
@@ -219,6 +245,35 @@ class MoCGFWidget(QtGui.QWidget):
         if self.openOutputButton.isChecked():
             QtGui.QDesktopServices.openUrl(QtCore.QUrl.fromLocalFile(outputFile))
 
+    def closeEvent(self, e):
+        # first reset output streams to standard settings
+        XStream.reset()
+        # save preferences to config file
+        if hasattr(self.cfg, 'path'):
+            uriList = self.uriInput.text()
+            outputFile = self.outputInput.text()
+            generator = ''
+            tmp = self.generatorList.selectedItems()
+            if tmp:
+                generator = tmp[0].text()
+                if MoCGF.py27:
+                    generator = unicode(generator)
+            try:
+                c = self.cfg
+                p = 'PREFERENCES'
+                if not c.has_section(p):
+                    c.add_section(p)
+                c.set(p, 'uriList', uriList)
+                c.set(p, 'outputFile', outputFile)
+                c.set(p, 'generator', generator)
+                with open(c.path, 'w') as configfile:
+                    c.write(configfile)
+            except:
+                # silently ignore errors
+                pass
+        e.accept()
+
+
 def main():
     """main function when MoCGF is used with the Qt gui"""
 
@@ -237,7 +292,10 @@ def main():
     }
     cfg = configparser.ConfigParser(defaults)
     homeVar = {'win32':'USERPROFILE', 'linux':'HOME', 'linux2':'HOME', 'darwin':'HOME'}.get(sys.platform)
-    cfg.read(os.path.join(os.environ.get(homeVar, ''), '.MoCGF.cfg'))
+    cfgFile = os.path.join(os.environ.get(homeVar, ''), '.MoCGF.cfg')
+    if os.path.isfile(cfgFile):
+        cfg.read(cfgFile)
+        cfg.path = cfgFile
 
     # generatorPath
     gp = args.search_path or cfg['DEFAULT']['GeneratorPath']
@@ -254,7 +312,7 @@ def main():
     resPath = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'res')
 
     app = QtGui.QApplication(sys.argv)
-    mw = MoCGFWidget(app, resPath, generatorPath, logLevel=logLevel)
+    mw = MoCGFWidget(app, resPath, cfg, generatorPath, logLevel=logLevel)
     mw.show()
     r = app.exec_()
     return(r)
