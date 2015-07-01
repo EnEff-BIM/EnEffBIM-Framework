@@ -135,19 +135,35 @@ class MoCGFWidget(QtGui.QWidget):
         QtGui.QDesktopServices.openUrl(QtCore.QUrl.fromLocalFile(self.mocgf.generatorPath))
 
     def updateGeneratorList(self, rescan=True):
+        # get old selection
+        selItems = self.generatorList.selectedItems()
+        selected = None
+        if selItems:
+            selected = selItems[0].text()
+            if MoCGF.py27:
+                seleected = unicode(selected)
         if rescan:
             self.mocgf.rescanGenerators()
         self.generatorList.clear()
+        i = 0
         for n in sorted(self.mocgf.generators):
             self.generatorList.addItem(n)
-        self.generatorList.item(0).setSelected(True)
+            if n == selected:
+                # select previously selected generator 
+                self.generatorList.item(i).setSelected(True)
+            i += 1
+        if not self.generatorList.selectedItems():
+            # nothing selected, select the first in the list
+            self.generatorList.item(0).setSelected(True)
 
     def activateGenerator(self):
-        items = self.generatorList.selectedItems()
-        if items:
-            gen = items[0].text()
+        sel = self.generatorList.selectedItems()
+        if sel:
+            gen = sel[0].text()
             if MoCGF.py27:
                 gen = unicode(gen)
+        else:
+            return
         self.activeGenerator = self.mocgf.generators[gen]
         self.generatorView.clear()
         self.generatorView.setText(self.activeGenerator.infoText('html'))
