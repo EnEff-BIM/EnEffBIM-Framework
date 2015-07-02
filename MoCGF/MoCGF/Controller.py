@@ -44,7 +44,7 @@ Path:        ${m.__file__}
 class Controller(object):
     """main controller of the code generation framework"""
 
-    def __init__(self, generatorPath=[], logger='MoCGF',logHandler=None, logLevel=logging.WARNING):
+    def __init__(self, generatorPath=[], logger='MoCGF', logHandler=None, logLevel=logging.WARNING):
         # initialize logging system
         self.logger = logging.getLogger(logger)
         if logHandler is None:
