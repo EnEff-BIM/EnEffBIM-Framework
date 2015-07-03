@@ -234,10 +234,12 @@ class MoCGFWidget(QtGui.QWidget):
         if MoCGF.py27:
             line = unicode(line)
         uriList = [u.strip() for u in line.split(',')]
-        outputFile = self.outputInput.text()
+        outputFile = str(self.outputInput.text())
         if not outputFile:
             tmp, outputFile = tempfile.mkstemp(suffix='.txt', text=True)
             self.outputInput.setText(outputFile)
+        if not os.path.isabs(outputFile):
+            outputFile = os.path.abspath(outputFile)
         x = self.activeGenerator.execute(uriList)
         o = open(outputFile, 'w')
         o.write(x.read())
