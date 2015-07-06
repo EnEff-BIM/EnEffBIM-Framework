@@ -1,0 +1,5 @@
+<%page args="jObj"/>
+  final constant Transport.SurfaceTensionCoefficients
+  surfaceTensionCoefficientsButane(
+    coeffs=[
+      0.05418,    1.26]) "Coefficients for the surface tension";

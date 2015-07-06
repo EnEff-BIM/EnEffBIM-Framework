@@ -1,0 +1,34 @@
+% for jFile in json_files:
+  % for jObj in json_files[jFile]:
+  <% name=jObj['NAME'].replace('-','') %>
+##
+within HelmholtzMedia.HelmholtzFluids;
+package ${name} "${name}"
+extends Interfaces.PartialHelmholtzMedium(
+  mediumName="${name}" "short name",
+  final fluidConstants={${name}FluidConstants},
+  final helmholtzCoefficients=${name}HelmholtzCoefficients,
+  final thermalConductivityCoefficients=${name}ThermalConductivityCoefficients,
+  final dynamicViscosityCoefficients=${name}DynamicViscosityCoefficients,
+  final surfaceTensionCoefficients=${name}SurfaceTensionCoefficients,
+  final ancillaryCoefficients=${name}AncillaryCoefficients,
+  final FluidLimits=${name}FluidLimits,
+  Density(min=${name}FluidLimits.DMIN, max=${name}FluidLimits.DMAX, start=${name}FluidConstants.molarMass/${name}FluidConstants.criticalMolarVolume),
+  Temperature(min=${name}FluidLimits.TMIN, max=${name}FluidLimits.TMAX, start=298.15),
+  AbsolutePressure(min=0, max=200e6, start=101325),
+  SpecificEnthalpy(min=${name}FluidLimits.HMIN, max=${name}FluidLimits.HMAX, start=(${name}FluidLimits.HMIN+${name}FluidLimits.HMAX)/2),
+  SpecificEntropy(min=${name}FluidLimits.SMIN, max=${name}FluidLimits.SMAX, start=(${name}FluidLimits.SMIN+${name}FluidLimits.SMAX)/2));
+
+<%include file="FluidConstants.mot" args="jObj=jObj"/>
+<%include file="FluidLimits.mot" args="jObj=jObj"/>
+<%include file="HelmholtzCoefficients.mot" args="jObj=jObj"/>
+<%include file="ThermalConductivityCoefficients.mot" args="jObj=jObj"/>
+<%include file="DynamicViscosityCoefficients.mot" args="jObj=jObj"/>
+<%include file="SurfaceTensionCoefficients.mot" args="jObj=jObj"/>
+<%include file="AncillaryCoefficients.mot" args="jObj=jObj"/>
+<%include file="AnnotationDocumentation.mot" args="jObj=jObj, jFile=jFile"/>
+
+end Butane;
+##
+  % endfor
+% endfor
