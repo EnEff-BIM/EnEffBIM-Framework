@@ -26,12 +26,12 @@ unitTests.log
 #
 # Ignore some Python files
 __pycache__/
-*.pyc
+*.py[cod]
 #
 # Ignore Eclipse files
-/.settings
+.settings/
 .project
 .pydevproject
 #
 # Ignore PyCharm files
-/.idea
+.idea/
