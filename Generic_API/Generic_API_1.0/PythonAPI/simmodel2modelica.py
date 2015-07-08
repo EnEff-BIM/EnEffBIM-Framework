@@ -40,7 +40,7 @@ class Component(object):
         return lib.component_get_property(self.obj, id)
     def getPropertyNumber(self):
         return lib.component_get_property_number(self.obj)
-    
+
 class RuleData(object):
     def __init__(self):
         self.obj = lib.rule_data_init()
@@ -59,7 +59,7 @@ class RuleData(object):
     def getLoopConnection(self, id):
         return lib.sim_system_get_loop_connection(self.obj, id)
     def getLoopConnectionNumber(self):
-        return lib.sim_system_get_loop_connection_number(self.obj)    
+        return lib.sim_system_get_loop_connection_number(self.obj)
 
 class SimConnection(object):
     def __init__(self, obj):
@@ -68,7 +68,7 @@ class SimConnection(object):
         return lib.sim_system_get_outlet_component(self.obj)
     def getInletComponent(self):
         return lib.sim_system_get_inlet_component(self.obj)
-        
+
 class SimProject(object):
     def __init__(self, obj):
         self.obj = obj
@@ -108,7 +108,7 @@ class SimBuilding(object):
 class SimZoneHvacGroup(SimBuilding):
     def __init__(self, obj):
         self.obj = obj
-        
+
 class SimThermalZone(object):
     def __init__(self, obj):
         self.obj = obj
@@ -130,7 +130,7 @@ class SimSystem(object):
         return lib.sim_system_to_supplywater_tempCtl(self.obj)
     def toTemperatureDryBulbSensor(self):
         return lib.sim_system_to_tempdrybulb_sensor(self.obj)
-    
+
 class SimSystemHotwater(object):
     def __init__(self, obj):
         self.obj = obj
@@ -183,7 +183,7 @@ class SimBoilerHotWater(object):
         return lib.sim_boiler_hotwater_get_SimFlowPlant_BoilerFlowMode(self.obj)
     def getFlowPlantSizingFactor(self):
         return lib.sim_boiler_hotwater_get_SimFlowPlant_SizingFactor(self.obj)
-    
+
 
 # demand side of the hot water system
 class SimSystemHotwaterDemand(object):
@@ -218,7 +218,7 @@ class SimTemperatureDryBulbSensor(object):
     def __init__(self, obj):
         self.obj = obj
 
-    
+
 # property data level
 lib.property_get_name.restype = c_char_p
 lib.property_get_name.argtypes = ()
@@ -381,33 +381,33 @@ if __name__ == "__main__":
     # iterate each mapped component data
     for comId in range(0, componentNumber):
         # retrieve the mapped component name and its location in AixLib
-        print "Component location: " + MapData.getComponent(comId).getTargetLocation() + ", name: " + MapData.getComponent(comId).getTargetName()   
+        print("Component location: " + MapData.getComponent(comId).getTargetLocation() + ", name: " + MapData.getComponent(comId).getTargetName())
         propertyNumber = MapData.getComponent(comId).getPropertyNumber()
         # iterate mapped properties of each component
         for proId in range(0, propertyNumber):
             if MapData.getComponent(comId).getProperty(proId).getRecordInstance() != "":
-                print "record structure name: " + MapData.getComponent(comId).getProperty(proId).getRecordInstance()
+                print("record structure name: " + MapData.getComponent(comId).getProperty(proId).getRecordInstance())
             if MapData.getComponent(comId).getProperty(proId).getRecordLocation() != "":
-                print "record structure location: " + MapData.getComponent(comId).getProperty(proId).getRecordLocation()
-            print "Property: " + MapData.getComponent(comId).getProperty(proId).getTargetLocation() + MapData.getComponent(comId).getProperty(proId).getName() + "=" + MapData.getComponent(comId).getProperty(proId).getValue()
-            print "\n"
+                print("record structure location: " + MapData.getComponent(comId).getProperty(proId).getRecordLocation())
+            print("Property: " + MapData.getComponent(comId).getProperty(proId).getTargetLocation() + MapData.getComponent(comId).getProperty(proId).getName() + "=" + MapData.getComponent(comId).getProperty(proId).getValue())
+            print("\n")
 
     # access hierarchy
-    print "Get SimProject object"
+    print("Get SimProject object")
     simProject = MapData.getSimProject()
-    print "Weather location city: " + simProject.getWeatherLocationCity()
+    print("Weather location city: " + simProject.getWeatherLocationCity())
 
-    print "Get 1st SimSite object"
+    print("Get 1st SimSite object")
     simSite = simProject.getSimSite(0);
-    print "Site name: " + simSite.getSiteName()
+    print("Site name: " + simSite.getSiteName())
 
-    print "Get SimBuilding object"
+    print("Get SimBuilding object")
     simBuilding = simSite.getSimBuilding(0)
-    print "SimBuilding number: {}".format(simSite.getSimBuildingNumber())
+    print("SimBuilding number: {}".format(simSite.getSimBuildingNumber()))
 
-    print "Get SimThermalZone object"
+    print("Get SimThermalZone object")
     simBuilding.getSimThermalZone(0)
-    print "SimThermalZone number: {}".format(simBuilding.getSimThermalZoneNumber())
+    print("SimThermalZone number: {}".format(simBuilding.getSimThermalZoneNumber()))
 
     # access the HVAC system objects of the data model
     # retrieve the total number of HVAC systems saved in the data model
@@ -420,31 +420,31 @@ if __name__ == "__main__":
         if simSystem.getSystemName() == "hw_system":
             # convert the system object to its own class type: hot water system
             simSystemHotwater = simSystem.toHotwaterSystem()
-            
+
     # access the internal properties of the hot water looping system: max loop temperature
-    print "System max loop temp: {}".format(simSystemHotwater.getMaxLoopTemp())
+    print("System max loop temp: {}".format(simSystemHotwater.getMaxLoopTemp()))
 
     # retrieve the supply side of the hot water system
     supplySystem = simSystemHotwater.getSupplySide()
     # retrieve the total number of water supply components
     supplyComponentNumber = supplySystem.getSupplyComponentNumber()
-    print "supply component number: {}".format(supplyComponentNumber)
+    print("supply component number: {}".format(supplyComponentNumber))
     # iterate each components of the supply side
     for id in range(0, supplyComponentNumber):
         simComponent = supplySystem.getSupplyComponent(id)
         # retrieve the component name
-        print "supply component name: " + simComponent.getSystemName()
+        print("supply component name: " + simComponent.getSystemName())
         # convert the component object to its own class type based on the name
         if simComponent.getSystemName() == "SimFlowMover_Pump_VariableSpeedReturn":
             # convert to the pump type with variable flow speed return
             simPump = simComponent.toPumpVarSpedRet()
             # access the internal properties of the pump: flow rate
-            print "pump rated flow rate:" + simPump.getRatedFlowRate()
+            print("pump rated flow rate:" + simPump.getRatedFlowRate())
         elif simComponent.getSystemName() == "SimFlowPlant_Boiler_BoilerHotWater":
             # convert to the boiler type of hot water
             simBoiler = simComponent.toBoilerHotWater()
-            print "Nom Cap: " + simBoiler.getFlowPlantNomCap()
-            print "Sizing factor" + repr(simBoiler.getFlowPlantSizingFactor())
+            print("Nom Cap: " + simBoiler.getFlowPlantNomCap())
+            print("Sizing factor" + repr(simBoiler.getFlowPlantSizingFactor()))
             # ...
 
     # retrieve the demand side of the hot water system
@@ -462,7 +462,7 @@ if __name__ == "__main__":
     # retrieve the control side of the hot water system
     controlSystem = simSystemHotwater.getControlSide()
     controlComponentNumber = controlSystem.getControlComponentNumber()
-    print "control component number: {}".format(controlComponentNumber);
+    print("control component number: {}".format(controlComponentNumber))
     for id in range(0, controlComponentNumber):
         simComponent = controlSystem.getControlComponent(id)
         # convert to the supply water temperature control
@@ -477,18 +477,18 @@ if __name__ == "__main__":
     # access loop connections
     connectionNumber = MapData.getLoopConnectionNumber()
     for conId in range(0, connectionNumber):
-        print "Connection " + repr(conId)
+        print("Connection " + repr(conId))
         # retrieve one connection
         simConnection = MapData.getLoopConnection(conId)
-        
-        # retrieve the component with water outlet port 
+
+        # retrieve the component with water outlet port
         simComponentWaterOut = simConnection.getOutletComponent()
         if simComponentWaterOut.getSystemName() == "SimFlowMover_Pump_VariableSpeedReturn":
             # convert to the pump type with variable flow speed return
             simPumpWaterOut = simComponentWaterOut.toPumpVarSpedRet()
             # access the internal properties of the pump:
-            print "pump rated flow rate in the loop: " + simPumpWaterOut.getRatedFlowRate()
-            
+            print("pump rated flow rate in the loop: " + simPumpWaterOut.getRatedFlowRate())
+
         # retrieve the component with water inlet port
         simComponentWaterIn = simConnection.getInletComponent()
         # ...
