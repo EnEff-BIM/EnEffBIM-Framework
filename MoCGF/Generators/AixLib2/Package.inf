@@ -21,3 +21,4 @@ function = filter01
 
 [TEMPLATES]
 topFile = Main.mot
+type = mako

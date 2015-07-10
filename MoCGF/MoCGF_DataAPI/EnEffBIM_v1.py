@@ -33,8 +33,10 @@ def fetchData(uriList, systemCfg, generatorCfg, logger):
     MapData.setDataLocation(useCaseLoc, mapRuleLoc)
     # transform SimModel data into Modelica objects
     MapData.transformModel()
-
     simProject = MapData.getSimProject()
-    location = simProject.getWeatherLocationCity()
 
-    return {location}
+    dataDictionary = dict(
+        modelName='TestOutput',
+        location=simProject.getWeatherLocationCity(),
+    )
+    return dataDictionary
