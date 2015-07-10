@@ -1,6 +1,18 @@
 from ctypes import *
 
-import sys
+import os, sys
+rootPath = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(__file__))))
+modulePath = os.path.join(rootPath, 'Generic_API\Generic_API_1.0')
+dllPath = os.path.join(rootPath, 'Generic_API\Generic_API_1.0\PythonAPI')
+
+# add dllPath to Windows Path
+os.environ['PATH'] = ';'.join([dllPath, os.environ['PATH']])
+# add modulePath to Python Path
+sys.path.append(modulePath)
+
+lib = cdll.LoadLibrary('./simmodel2modelica')
+
+
 # b2s : bytes to string
 if sys.version_info < (3, 0):
     def b2s(b):
@@ -8,8 +20,6 @@ if sys.version_info < (3, 0):
 else:
     def b2s(b):
         return str(b, 'latin1')
-
-lib = cdll.LoadLibrary('./simmodel2modelica')
 
 class Property(object):
     def __init__(self, obj):
@@ -367,8 +377,8 @@ if __name__ == "__main__":
 
     # specify the data location: SimModel use case and its
     # mapping rule instance for given Modelica library
-    useCaseLoc = "..\\xml_use_case\\Boiler_Gas_VDI6020_Test.xml"
-    mapRuleLoc = "..\\xml_mapping_rule\\AixLib_Mapping_Rule.xml"
+    useCaseLoc = os.path.join(rootPath, "Generic_API\\Generic_API_1.0\\xml_use_case\\Boiler_Gas_VDI6020_Test.xml")
+    mapRuleLoc = os.path.join(rootPath, "Generic_API\\Generic_API_1.0\\xml_mapping_rule\\AixLib_Mapping_Rule.xml")
     # create mapped data object
     MapData = RuleData()
     # set data location
