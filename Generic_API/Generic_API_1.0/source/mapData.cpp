@@ -162,7 +162,10 @@ extern "C" {
 
 	// sim system: hot water
 	// internal properties
-	double TEST_COMMON_DLLSPEC sim_system_hotwater_get_max_loop_temp(sim_hotwater_system* _sim_sys_hotwater) { return _sim_sys_hotwater->get_max_loop_temp(); }
+	double TEST_COMMON_DLLSPEC sim_system_hotwater_get_max_loop_temp(sim_hotwater_system* _sim_sys_hotwater) { return _sim_sys_hotwater->get_SimSys_MaxLoopTemp(); }
+	double TEST_COMMON_DLLSPEC sim_system_hotwater_get_min_loop_temp(sim_hotwater_system* _sim_sys_hotwater) { return _sim_sys_hotwater->get_SimSys_MinLoopTemp(); }
+	double TEST_COMMON_DLLSPEC sim_system_hotwater_get_max_loop_flow_rate(sim_hotwater_system* _sim_sys_hotwater) { return _sim_sys_hotwater->get_SimSys_MaxLoopFlowRate(); }
+
 	
 	// supply side: of hot water system
 	// retrieve the supply side of the sim hot water system
@@ -174,7 +177,7 @@ extern "C" {
 	
 	// hot water boiler
 	// internal properties
-	const char* TEST_COMMON_DLLSPEC sim_boiler_hotwater_get_SimFlowPlant_NomCap(sim_flwPlt_hotwater_boiler* _sim_hotwater_boiler) { return _sim_hotwater_boiler->get_SimFlowPlant_NomCap().c_str(); }
+	double TEST_COMMON_DLLSPEC sim_boiler_hotwater_get_SimFlowPlant_NomCap(sim_flwPlt_hotwater_boiler* _sim_hotwater_boiler) { return QString::fromStdString(_sim_hotwater_boiler->get_SimFlowPlant_NomCap()).toDouble(); }
 	double TEST_COMMON_DLLSPEC sim_boiler_hotwater_get_SimFlowPlant_NomThermalEff(sim_flwPlt_hotwater_boiler* _sim_hotwater_boiler) { return _sim_hotwater_boiler->get_SimFlowPlant_NomThermalEff(); }
 	double TEST_COMMON_DLLSPEC sim_boiler_hotwater_get_SimFlowPlant_DesignWaterOutletTemp(sim_flwPlt_hotwater_boiler* _sim_hotwater_boiler) { return _sim_hotwater_boiler->get_SimFlowPlant_DesignWaterOutletTemp(); }
 	double TEST_COMMON_DLLSPEC sim_boiler_hotwater_get_SimFlowPlant_DesignWaterFlowRate(sim_flwPlt_hotwater_boiler* _sim_hotwater_boiler) { return _sim_hotwater_boiler->get_SimFlowPlant_DesignWaterFlowRate(); }
@@ -195,6 +198,12 @@ extern "C" {
 	sim_base* TEST_COMMON_DLLSPEC sim_system_hotwater_get_water_demand_component(sim_hotwater_demand* _sim_hotwater_demand, int id) { return _sim_hotwater_demand->get_water_demand_component(id); }
 	// retrieve the total number of water demand components
 	int TEST_COMMON_DLLSPEC sim_system_hotwater_get_water_demand_component_number(sim_hotwater_demand* _sim_hotwater_demand) { return _sim_hotwater_demand->get_water_demand_component_total_number(); }
+	
+	// convective heater water radiator
+	// internal properties
+	double TEST_COMMON_DLLSPEC sim_heater_convective_water_get_max_water_flow_rate(sim_flwEngyTran_convectheater_water* _sim_heater_convect_water) { return _sim_heater_convect_water->get_SimFlowEnergyTrans_MaxWaterFlowRate(); }
+	double TEST_COMMON_DLLSPEC sim_heater_convective_water_get_converg_tol(sim_flwEngyTran_convectheater_water* _sim_heater_convect_water) { return _sim_heater_convect_water->get_SimFlowEnergyTrans_ConvergTol(); }
+	double TEST_COMMON_DLLSPEC sim_heater_convective_water_get_ufactor_times_area(sim_flwEngyTran_convectheater_water* _sim_heater_convect_water) { return _sim_heater_convect_water->get_SimFlowEnergyTrans_UFactorTimesAreaVal(); }
 
 	// control side:
 	// retrieve the control side system of the sim hot water system loop

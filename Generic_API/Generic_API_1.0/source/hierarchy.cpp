@@ -635,9 +635,17 @@
 			}
 			// generic API
 			// internal properites
-			double sim_hotwater_system::get_max_loop_temp()
+			double sim_hotwater_system::get_SimSys_MaxLoopTemp()
 			{
 				return sim_hotwater_system_it->SimSys_MaxLoopTemp().get();
+			}
+			double sim_hotwater_system::get_SimSys_MinLoopTemp()
+			{
+				return sim_hotwater_system_it->SimSys_MinLoopTemp().get();
+			}
+			double sim_hotwater_system::get_SimSys_MaxLoopFlowRate()
+			{
+				return sim_hotwater_system_it->SimSys_MaxLoopFlowRate().get();
 			}
 
 			//  2.1.3.1 sim hot water loop controler
@@ -905,6 +913,19 @@
 			int sim_flwEngyTran_convectheater_water::get_gap()
 			{
 				return gap_param_nr;
+			}
+			// generic API
+			double sim_flwEngyTran_convectheater_water::get_SimFlowEnergyTrans_MaxWaterFlowRate()
+			{
+				return sim_flwEngyTran_convectheater_w_it->SimFlowEnergyTrans_MaxWaterFlowRate().get();
+			}
+			double sim_flwEngyTran_convectheater_water::get_SimFlowEnergyTrans_ConvergTol()
+			{
+				return sim_flwEngyTran_convectheater_w_it->SimFlowEnergyTrans_ConvergTol().get();
+			}
+			double sim_flwEngyTran_convectheater_water::get_SimFlowEnergyTrans_UFactorTimesAreaVal()
+			{
+				return sim_flwEngyTran_convectheater_w_it->SimFlowEnergyTrans_UFactorTimesAreaVal().get();
 			}
 
 			//  2.1.3.3 sim hot water supply

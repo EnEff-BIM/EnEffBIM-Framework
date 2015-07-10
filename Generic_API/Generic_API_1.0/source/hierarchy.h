@@ -605,7 +605,9 @@
 
 				// generic API
 				// internal properites
-				double get_max_loop_temp();
+				double get_SimSys_MaxLoopTemp();
+				double get_SimSys_MinLoopTemp();
+				double get_SimSys_MaxLoopFlowRate();
 			};
 			//  2.1.3.1 sim hot water loop controler
 			class sim_hotwater_control : public virtual sim_base
@@ -836,6 +838,10 @@
 				
 				// Meta methods
 				Q_INVOKABLE string get_SimModelType() { return sim_flwEngyTran_convectheater_w_it->SimModelType().get(); }
+				// generic API
+				double get_SimFlowEnergyTrans_MaxWaterFlowRate();
+				double get_SimFlowEnergyTrans_ConvergTol();
+				double get_SimFlowEnergyTrans_UFactorTimesAreaVal();
 			private:
 				// generic component name (without id)
 				string com_name;
@@ -966,6 +972,15 @@
 				double get_c4() { return c4; }
 				int get_period() { return _period; }
 
+				// generic API
+				double get_SimFlowMover_MotorEff();
+				double get_SimFlowMover_MinFlowRate();
+				//double get_SimFlowMover_RatedFlowRate();
+				double get_SimFlowMover_RatedPumpHead();
+				double get_SimFlowMover_RatedPowerConsump();
+				double get_SimFlowMover_FracMotorInEffToFluidStream();
+				string get_SimFlowMover_PumpContType();
+ 
 			private:
 				// generic component name (without id)
 				string com_name;

@@ -50,7 +50,7 @@ class Component(object):
         return lib.component_get_property(self.obj, id)
     def getPropertyNumber(self):
         return lib.component_get_property_number(self.obj)
-
+    
 class RuleData(object):
     def __init__(self):
         self.obj = lib.rule_data_init()
@@ -69,7 +69,7 @@ class RuleData(object):
     def getLoopConnection(self, id):
         return lib.sim_system_get_loop_connection(self.obj, id)
     def getLoopConnectionNumber(self):
-        return lib.sim_system_get_loop_connection_number(self.obj)
+        return lib.sim_system_get_loop_connection_number(self.obj)    
 
 class SimConnection(object):
     def __init__(self, obj):
@@ -78,7 +78,7 @@ class SimConnection(object):
         return lib.sim_system_get_outlet_component(self.obj)
     def getInletComponent(self):
         return lib.sim_system_get_inlet_component(self.obj)
-
+        
 class SimProject(object):
     def __init__(self, obj):
         self.obj = obj
@@ -118,7 +118,7 @@ class SimBuilding(object):
 class SimZoneHvacGroup(SimBuilding):
     def __init__(self, obj):
         self.obj = obj
-
+        
 class SimThermalZone(object):
     def __init__(self, obj):
         self.obj = obj
@@ -140,12 +140,16 @@ class SimSystem(object):
         return lib.sim_system_to_supplywater_tempCtl(self.obj)
     def toTemperatureDryBulbSensor(self):
         return lib.sim_system_to_tempdrybulb_sensor(self.obj)
-
+    
 class SimSystemHotwater(object):
     def __init__(self, obj):
         self.obj = obj
     def getMaxLoopTemp(self):
         return lib.sim_system_hotwater_get_max_loop_temp(self.obj)
+    def getMinLoopTemp(self):
+        return lib.sim_system_hotwater_get_min_loop_temp(self.obj)
+    def getMaxLoopFlowRate(self):
+        lib.sim_system_hotwater_get_max_loop_flow_rate(self.obj)
     def getSupplySide(self):
         return lib.sim_system_hotwater_get_supply(self.obj)
     def getDemandSide(self):
@@ -193,7 +197,7 @@ class SimBoilerHotWater(object):
         return lib.sim_boiler_hotwater_get_SimFlowPlant_BoilerFlowMode(self.obj)
     def getFlowPlantSizingFactor(self):
         return lib.sim_boiler_hotwater_get_SimFlowPlant_SizingFactor(self.obj)
-
+    
 
 # demand side of the hot water system
 class SimSystemHotwaterDemand(object):
@@ -208,6 +212,12 @@ class SimSystemHotwaterDemand(object):
 class SimHeaterConvectiveWater(object):
     def __init__(self, obj):
         self.obj = obj
+    def getMaxWaterFlowRate(self):
+        return lib.sim_heater_convective_water_get_max_water_flow_rate(self.obj)
+    def getConvergTol(self):
+        return lib.sim_heater_convective_water_get_converg_tol(self.obj)
+    def getUFactorTimesAreaVal(self):
+        return lib.sim_heater_convective_water_get_ufactor_times_area(self.obj)
 
 # control side of the hot water system
 class SimSystemHotwaterControl(object):
@@ -228,7 +238,7 @@ class SimTemperatureDryBulbSensor(object):
     def __init__(self, obj):
         self.obj = obj
 
-
+    
 # property data level
 lib.property_get_name.restype = c_char_p
 lib.property_get_name.argtypes = ()
@@ -325,6 +335,10 @@ lib.sim_system_to_hotwater_system.restype = SimSystemHotwater
 lib.sim_system_to_hotwater_system.argtypes = ()
 lib.sim_system_hotwater_get_max_loop_temp.restype = c_double
 lib.sim_system_hotwater_get_max_loop_temp.argtypes = ()
+lib.sim_system_hotwater_get_min_loop_temp.restype = c_double
+lib.sim_system_hotwater_get_min_loop_temp.argtypes = ()
+lib.sim_system_hotwater_get_max_loop_flow_rate.restype = c_double
+lib.sim_system_hotwater_get_max_loop_flow_rate.argtypes = ()
 # sim system for hot water: supply side
 lib.sim_system_hotwater_get_supply.restype = SimSystemHotwaterSupply
 lib.sim_system_hotwater_get_supply.argtypes = ()
@@ -333,7 +347,7 @@ lib.sim_system_hotwater_get_water_supply_component.argtypes = [c_void_p, c_int]
 lib.sim_system_hotwater_get_water_supply_component_number.restype = c_int
 lib.sim_system_hotwater_get_water_supply_component_number.argtypes = ()
 # sim hot water boiler
-lib.sim_boiler_hotwater_get_SimFlowPlant_NomCap.restype = c_char_p
+lib.sim_boiler_hotwater_get_SimFlowPlant_NomCap.restype = c_double
 lib.sim_boiler_hotwater_get_SimFlowPlant_NomCap.argtypes = ()
 lib.sim_boiler_hotwater_get_SimFlowPlant_NomThermalEff.restype = c_double
 lib.sim_boiler_hotwater_get_SimFlowPlant_NomThermalEff.argtypes = ()
@@ -363,6 +377,13 @@ lib.sim_system_hotwater_get_water_demand_component.restype = SimSystem
 lib.sim_system_hotwater_get_water_demand_component.argtypes = [c_void_p, c_int]
 lib.sim_system_hotwater_get_water_demand_component_number.restype = c_int
 lib.sim_system_hotwater_get_water_demand_component_number.argtypes = ()
+# sim heater of convective water
+lib.sim_heater_convective_water_get_max_water_flow_rate.restype = c_double
+lib.sim_heater_convective_water_get_max_water_flow_rate.argtypes = ()
+lib.sim_heater_convective_water_get_converg_tol.restype = c_double
+lib.sim_heater_convective_water_get_converg_tol.argtypes = ()
+lib.sim_heater_convective_water_get_ufactor_times_area.restype = c_double
+lib.sim_heater_convective_water_get_ufactor_times_area.argtypes = ()
 # control side
 lib.sim_system_hotwater_get_control.restype = SimSystemHotwaterControl
 lib.sim_system_hotwater_get_control.argtypes = ()
@@ -370,7 +391,6 @@ lib.sim_system_hotwater_get_water_control_component.restype = SimSystem
 lib.sim_system_hotwater_get_water_control_component.argtypes = [c_void_p, c_int]
 lib.sim_system_hotwater_get_water_control_component_number.restype = c_int
 lib.sim_system_hotwater_get_water_control_component_number.argtypes = ()
-
 
 if __name__ == "__main__":
     # all following lines are just  examples
@@ -453,8 +473,8 @@ if __name__ == "__main__":
         elif simComponent.getSystemName() == "SimFlowPlant_Boiler_BoilerHotWater":
             # convert to the boiler type of hot water
             simBoiler = simComponent.toBoilerHotWater()
-            print("Nom Cap: " + simBoiler.getFlowPlantNomCap())
-            print("Sizing factor" + repr(simBoiler.getFlowPlantSizingFactor()))
+            print("Nom Cap: " + repr(simBoiler.getFlowPlantNomCap()))
+            print("Sizing factor: " + repr(simBoiler.getFlowPlantSizingFactor()))
             # ...
 
     # retrieve the demand side of the hot water system

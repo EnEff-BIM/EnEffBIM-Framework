@@ -57,6 +57,7 @@ typedef namespaces::Sim::DataMap::Data_Model_Map SimMap;
 // load XML schema type
 using xml_schema::idrefs;
 using xml_schema::idref;
+using namespaces::Sim::SimModelCore::doubleList;
 // using IO API
 using namespace std;
 
