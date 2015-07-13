@@ -2,3 +2,8 @@
 ## call subfiles from here
 
 ${location}
+${componentNumber}
+
+% for key, value in comDict.iteritems() :
+${value} ${key};
+% endfor

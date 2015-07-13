@@ -35,8 +35,32 @@ def fetchData(uriList, systemCfg, generatorCfg, logger):
     MapData.transformModel()
     simProject = MapData.getSimProject()
 
-    dataDictionary = dict(
+    # access transformed / mapped data
+    componentNumber = MapData.getComponentNumber()
+    # iterate each mapped component data
+    comDict = {}
+    for comId in range(0, componentNumber):
+        # retrieve the mapped component name and its location in AixLib
+        comPath = MapData.getComponent(comId).getTargetLocation()
+        comName = MapData.getComponent(comId).getTargetName()
+        comDict[comName] = comPath
+        nProperties = MapData.getComponent(comId).getPropertyNumber()
+        # iterate mapped properties of each component
+        for proId in range(0, nProperties):
+            testXYZ = MapData.getComponent(comId).getProperty(proId).getRecordInstance()
+                #print("record structure name: " +
+                # MapData.getComponent(comId).getProperty(proId).getRecordInstance())
+            testZYX = MapData.getComponent(comId).getProperty(proId).getRecordLocation()
+                #print("record structure location: " + MapData.getComponent(comId).getProperty(proId).getRecordLocation())
+            # print("Property: " +
+            # MapData.getComponent(comId).getProperty(proId).getTargetLocation()
+            # + MapData.getComponent(comId).getProperty(proId).getName() + "="
+            # + MapData.getComponent(comId).getProperty(proId).getValue())
+
+    dataDictionary=dict(
         modelName='TestOutput',
         location=simProject.getWeatherLocationCity(),
+        componentNumber=componentNumber,
+        comDict=comDict
     )
     return dataDictionary
