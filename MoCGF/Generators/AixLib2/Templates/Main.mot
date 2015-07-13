@@ -2,7 +2,7 @@
 ## call subfiles from here
 
 within ;
-model ${modelName} "little demonstrator"
+model ${modelName | trim} "${modelName}"
 
 % for key, value in comDict.iteritems() :
   ${value} ${key} "documentation string";
@@ -12,4 +12,4 @@ equation
 // connect() equations only
 
 annotation(uses( Modelica(version = "3.2.1"), AixLib(version = "0.1.0")));
-end ${modelName};
+end ${modelName | trim};
