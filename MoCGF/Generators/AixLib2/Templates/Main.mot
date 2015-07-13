@@ -4,7 +4,7 @@
 within ;
 model ${modelName | trim} "${modelName}"
 
-% for key, value in comDict.iteritems() :
+% for key, value in comDict.items() :
   ${value} ${key} "documentation string";
 % endfor
 
