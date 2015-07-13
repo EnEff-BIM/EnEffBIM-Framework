@@ -1,9 +1,15 @@
 ## Main controller file
 ## call subfiles from here
 
-${location}
-${componentNumber}
+within ;
+model ${modelName} "little demonstrator"
 
 % for key, value in comDict.iteritems() :
-${value} ${key};
+  ${value} ${key} "documentation string";
 % endfor
+
+equation
+// connect() equations only
+
+annotation(uses( Modelica(version = "3.2.1"), AixLib(version = "0.1.0")));
+end ${modelName};

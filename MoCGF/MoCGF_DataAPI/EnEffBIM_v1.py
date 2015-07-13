@@ -34,6 +34,7 @@ def fetchData(uriList, systemCfg, generatorCfg, logger):
     # transform SimModel data into Modelica objects
     MapData.transformModel()
     simProject = MapData.getSimProject()
+    simSite = simProject.getSimSite(0);
 
     # access transformed / mapped data
     componentNumber = MapData.getComponentNumber()
@@ -58,9 +59,8 @@ def fetchData(uriList, systemCfg, generatorCfg, logger):
             # + MapData.getComponent(comId).getProperty(proId).getValue())
 
     dataDictionary=dict(
-        modelName='TestOutput',
+        modelName=simSite.getSiteName(),
         location=simProject.getWeatherLocationCity(),
-        componentNumber=componentNumber,
         comDict=comDict
     )
     return dataDictionary
