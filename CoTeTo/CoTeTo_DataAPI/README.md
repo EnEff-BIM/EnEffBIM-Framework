@@ -1,7 +1,7 @@
-MoCGF - Data API
-================
+CoTeTo - Data API
+=================
 
-This folder contains the python package with the data APIs for MoCGF.
+This folder contains the python package with the data APIs for CoTeTo.
 
 To add an API just put a python module file here and add it to the
 list `__all__` in the file `__init__.py`.

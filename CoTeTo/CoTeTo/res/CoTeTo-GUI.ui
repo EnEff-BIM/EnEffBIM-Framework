@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>MoCCFWidgetUI</class>
- <widget class="QWidget" name="MoCCFWidgetUI">
+ <class>CoTeToWidgetUI</class>
+ <widget class="QWidget" name="CoTeToWidgetUI">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
     <width>731</width>
-    <height>457</height>
+    <height>384</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MoCGF-GUI</string>
+   <string>CoTeTo-GUI</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout_5">
    <item>
-    <widget class="QTabWidget" name="moCGFMainView">
+    <widget class="QTabWidget" name="coTeToMainView">
      <property name="toolTip">
       <string notr="true"/>
      </property>

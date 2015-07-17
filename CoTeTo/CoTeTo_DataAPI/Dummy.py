@@ -1,11 +1,11 @@
 #-*- coding:utf-8 -*-
 #
-# This file is part of MoCGF - a code generation framework
+# This file is part of CoTeTo - a code generation tool
 # 20141114 Joerg Raedler jraedler@udk-berlin.de
 #
 
 name = 'TestDummy'
-description = 'Dummy data API for MoCGF, containing some simple data structures to test generators.'
+description = 'Dummy data API for CoTeTo, containing some simple data structures to test generators.'
 version = '0.1'
 author = 'EnEff-BIM team'
 helptxt = """

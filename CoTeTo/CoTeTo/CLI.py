@@ -1,22 +1,22 @@
 #-*- coding:utf-8 -*-
 #
-# This file is part of MoCGF - a code generation framework
+# This file is part of CoTeTo - a code generation tool
 # 201500225 Joerg Raedler jraedler@udk-berlin.de
 #
 
 import sys, os, argparse, configparser
-from MoCGF.Controller import Controller
+from CoTeTo.Controller import Controller
 
 descr = """
-MoCGF is a framework to generate source code from data sources.
+CoTeTo is a tool to generate source code from data sources.
 It is developed in the EnEff-BIM project to generate Modelica code from SimModel data.
-MoCGF-cli is the command line interface to MoCGF. MoCGF-gui provides a graphical interface."""
+CoTeTo-cli is the command line interface to CoTeTo. CoTeTo-gui provides a graphical interface."""
 
 
 nl = os.linesep
 
 def main():
-    """main function when MoCGF is used on the command line"""
+    """main function when CoTeTo is used on the command line"""
     parser = argparse.ArgumentParser(description=descr)
     grp = parser.add_argument_group('path settings')
     grp.add_argument('-p', '--search-path', metavar='PATH', help='search path for generators (separated by ;)')
@@ -35,12 +35,12 @@ def main():
 
     # first read config file for default values
     defaults = {
-        'GeneratorPath': os.environ.get('MOCGF_GENERATORS', ''),
+        'GeneratorPath': os.environ.get('COTETO_GENERATORS', ''),
         'LogLevel' : '0',
     }
     cfg = configparser.ConfigParser(defaults)
     homeVar = {'win32':'USERPROFILE', 'linux':'HOME', 'linux2':'HOME', 'darwin':'HOME'}.get(sys.platform)
-    cfg.read(os.path.join(os.environ.get(homeVar, ''), '.MoCGF.cfg'))
+    cfg.read(os.path.join(os.environ.get(homeVar, ''), '.CoTeTo.cfg'))
 
     # generatorPath
     gp = args.search_path or cfg['DEFAULT']['GeneratorPath']
@@ -52,17 +52,17 @@ def main():
         logLevel = 10 * int(args.debug)
 
     # create teh controller
-    mocgf = Controller(generatorPath, logLevel=logLevel)
+    ctt = Controller(generatorPath, logLevel=logLevel)
 
     if args.list_apis:
-        for n in sorted(mocgf.apis):
-            a = mocgf.apis[n]
+        for n in sorted(ctt.apis):
+            a = ctt.apis[n]
             print('%s%s (%s):%s\t%s' % (nl, n, a.author, nl, a.description))
         print()
         return 0
     elif args.list_generators:
-        for n in sorted(mocgf.generators):
-            g = mocgf.generators[n]
+        for n in sorted(ctt.generators):
+            g = ctt.generators[n]
             print('%s%s (%s):%s\t%s' % (nl, n, g.author, nl, g.description))
         print()
         return 0
@@ -70,9 +70,9 @@ def main():
     # from here we need a valid generator name!
     if not args.generator:
         parser.error('Please specify a generator with -g or --generator or get help with -h!'+nl)
-    if not args.generator[0] in mocgf.generators:
+    if not args.generator[0] in ctt.generators:
         parser.error('This generator is not valid, list choices with -l!'+nl)
-    g = mocgf.generators[args.generator[0]]
+    g = ctt.generators[args.generator[0]]
 
     if args.output:
         outFile = open(args.output[0], 'w')

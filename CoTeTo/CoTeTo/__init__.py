@@ -1,6 +1,6 @@
 #-*- coding:utf-8 -*-
 #
-# This file is part of MoCGF - a code generation framework
+# This file is part of CoTeTo - a code generation tool
 # 201500225 Joerg Raedler jraedler@udk-berlin.de
 #
 

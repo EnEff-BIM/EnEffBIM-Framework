@@ -1,18 +1,18 @@
 #-*- coding:utf-8 -*-
 #
-# This file is part of MoCGF - a code generation framework
+# This file is part of CoTeTo - a code generation tool
 # 201500225 Joerg Raedler jraedler@udk-berlin.de
 #
 
 import sys, os, os.path, tempfile, argparse, logging, configparser
-import MoCGF
-from MoCGF.Controller import Controller
+import CoTeTo
+from CoTeTo.Controller import Controller
 from PyQt4 import QtCore, QtGui, uic
 
 descr = """
-MoCGF is a framework to generate source code from data sources.
+CoTeTo is a tool to generate source code from data sources.
 It is developed in the EnEff-BIM project to generate Modelica code from SimModel data.
-MoCGF-cli is the command line interface to MoCGF. MoCGF-gui provides a graphical interface."""
+CoTeTo-cli is the command line interface to CoTeTo. CoTeTo-gui provides a graphical interface."""
 
 
 # view log in Qt - inspired by
@@ -78,7 +78,7 @@ class LogViewer(QtGui.QWidget):
         XStream.stderr().messageWritten.connect(self.textBrowser.insertPlainText)
         self.logHandler = QtLogHandler()
         self.logHandler.setFormatter(logging.Formatter("%(levelname)s: %(message)s"))
-        self.logger = logging.getLogger('MoCGF')
+        self.logger = logging.getLogger('CoTeTo')
         i = int(kwarg['logLevel'] / 10 ) - 1 # convert level to QComboBox index
         self.levelSelect.setCurrentIndex(i)
         self.levelSelect.currentIndexChanged.connect(self.setLevel)
@@ -103,7 +103,7 @@ class LogViewer(QtGui.QWidget):
             self.logger.exception('Could not save message log')
 
 
-class MoCGFWidget(QtGui.QWidget):
+class CoTeToWidget(QtGui.QWidget):
     def __init__(self, app, resPath, cfg, *arg, **kwarg):
         QtGui.QWidget.__init__(self)
         self.app = app
@@ -111,20 +111,20 @@ class MoCGFWidget(QtGui.QWidget):
         sys.path.insert(0, resPath)
         import Icons_rc
         # load the ui
-        self.ui = uic.loadUi(os.path.join(resPath, 'MoCGF-GUI.ui'), self)
-        self.setWindowTitle('MoCGF GUI | Version: %s' % (MoCGF.__version__))
+        self.ui = uic.loadUi(os.path.join(resPath, 'CoTeTo-GUI.ui'), self)
+        self.setWindowTitle('CoTeTo GUI | Version: %s' % (CoTeTo.__version__))
         self.cfg = cfg
         # create a logView?
         if 'logLevel' in kwarg and kwarg['logLevel'] > 0:
             self.logView = LogViewer(resPath, *arg, **kwarg)
-            self.moCGFMainView.addTab(self.logView, 'Messages')
+            self.coTeToMainView.addTab(self.logView, 'Messages')
             kwarg['logHandler'] = self.logView.logHandler
         # create a controller
-        self.mocgf = Controller(*arg, **kwarg)
+        self.ctt = Controller(*arg, **kwarg)
         # apis
         self.apiList.itemSelectionChanged.connect(self.activateAPI)
         self.apiView.anchorClicked.connect(self.openURL)
-        for a in sorted(self.mocgf.apis):
+        for a in sorted(self.ctt.apis):
             self.apiList.addItem(a)
         self.apiList.item(0).setSelected(True)
 
@@ -167,7 +167,7 @@ class MoCGFWidget(QtGui.QWidget):
             i = self.apiList.findItems(a, QtCore.Qt.MatchFixedString)[0]
             self.apiList.setCurrentItem(i)
             self.apiList.itemActivated.emit(i)
-            self.moCGFMainView.setCurrentIndex(1)
+            self.coTeToMainView.setCurrentIndex(1)
         else:
             print('Unknown URL scheme:', url)
 
@@ -186,14 +186,14 @@ class MoCGFWidget(QtGui.QWidget):
         items = self.apiList.selectedItems()
         if items:
             api = items[0].text()
-            if MoCGF.py27:
+            if CoTeTo.py27:
                 api = unicode(api)
         self.apiView.clear()
-        self.apiView.setText(self.mocgf.apiInfoText(api, 'html'))
+        self.apiView.setText(self.ctt.apiInfoText(api, 'html'))
 
     # generator methods
     def exploreGenerators(self):
-        QtGui.QDesktopServices.openUrl(QtCore.QUrl.fromLocalFile(self.mocgf.generatorPath))
+        QtGui.QDesktopServices.openUrl(QtCore.QUrl.fromLocalFile(self.ctt.generatorPath))
 
     def updateGeneratorList(self, rescan=True):
         # get old selection
@@ -201,13 +201,13 @@ class MoCGFWidget(QtGui.QWidget):
         selected = None
         if selItems:
             selected = selItems[0].text()
-            if MoCGF.py27:
+            if CoTeTo.py27:
                 seleected = unicode(selected)
         if rescan:
-            self.mocgf.rescanGenerators()
+            self.ctt.rescanGenerators()
         self.generatorList.clear()
         i = 0
-        for n in sorted(self.mocgf.generators):
+        for n in sorted(self.ctt.generators):
             self.generatorList.addItem(n)
             if n == selected:
                 # select previously selected generator 
@@ -221,17 +221,17 @@ class MoCGFWidget(QtGui.QWidget):
         sel = self.generatorList.selectedItems()
         if sel:
             gen = sel[0].text()
-            if MoCGF.py27:
+            if CoTeTo.py27:
                 gen = unicode(gen)
         else:
             return
-        self.activeGenerator = self.mocgf.generators[gen]
+        self.activeGenerator = self.ctt.generators[gen]
         self.generatorView.clear()
         self.generatorView.setText(self.activeGenerator.infoText('html'))
 
     def executeGenerator(self):
         line = self.uriInput.text()
-        if MoCGF.py27:
+        if CoTeTo.py27:
             line = unicode(line)
         uriList = [u.strip() for u in line.split(',')]
         outputFile = str(self.outputInput.text())
@@ -258,7 +258,7 @@ class MoCGFWidget(QtGui.QWidget):
             tmp = self.generatorList.selectedItems()
             if tmp:
                 generator = tmp[0].text()
-                if MoCGF.py27:
+                if CoTeTo.py27:
                     generator = unicode(generator)
             try:
                 c = self.cfg
@@ -277,7 +277,7 @@ class MoCGFWidget(QtGui.QWidget):
 
 
 def main():
-    """main function when MoCGF is used with the Qt gui"""
+    """main function when CoTeTo is used with the Qt gui"""
 
     parser = argparse.ArgumentParser(description=descr)
     grp = parser.add_argument_group('path settings')
@@ -289,12 +289,12 @@ def main():
 
     # first read config file for default values
     defaults = {
-        'GeneratorPath': os.environ.get('MOCGF_GENERATORS', ''),
+        'GeneratorPath': os.environ.get('COTETO_GENERATORS', ''),
         'LogLevel' : '0',
     }
     cfg = configparser.ConfigParser(defaults)
     homeVar = {'win32':'USERPROFILE', 'linux':'HOME', 'linux2':'HOME', 'darwin':'HOME'}.get(sys.platform)
-    cfgFile = os.path.join(os.environ.get(homeVar, ''), '.MoCGF.cfg')
+    cfgFile = os.path.join(os.environ.get(homeVar, ''), '.CoTeTo.cfg')
     if os.path.isfile(cfgFile):
         cfg.read(cfgFile)
         cfg.path = cfgFile
@@ -314,7 +314,7 @@ def main():
     resPath = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'res')
 
     app = QtGui.QApplication(sys.argv)
-    mw = MoCGFWidget(app, resPath, cfg, generatorPath, logLevel=logLevel)
+    mw = CoTeToWidget(app, resPath, cfg, generatorPath, logLevel=logLevel)
     mw.show()
     r = app.exec_()
     return(r)

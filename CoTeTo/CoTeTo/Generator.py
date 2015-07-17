@@ -1,6 +1,6 @@
 #-*- coding:utf-8 -*-
 #
-# This file is part of MoCGF - a code generation framework
+# This file is part of CoTeTo - a code generation tool
 # 201500225 Joerg Raedler jraedler@udk-berlin.de
 #
 
@@ -15,8 +15,8 @@ from mako.runtime import Context
 from jinja2 import Environment, FileSystemLoader
 
 from io import StringIO
-import MoCGF
-from MoCGF.import_file import import_file
+import CoTeTo
+from CoTeTo.import_file import import_file
 
 # a template for the generator info text as txt and html
 generatorInfoTmpl = {

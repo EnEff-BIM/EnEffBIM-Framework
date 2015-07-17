@@ -1,15 +1,15 @@
 #-*- coding:utf-8 -*-
 #
-# This file is part of MoCGF - a code generation framework
+# This file is part of CoTeTo - a code generation tool
 # 201500225 Joerg Raedler jraedler@udk-berlin.de
 #
 
 import sys, os, os.path, zipfile, logging
 from mako.template import Template
-import MoCGF
-from MoCGF.Generator import Generator
+import CoTeTo
+from CoTeTo.Generator import Generator
 
-if MoCGF.py27:
+if CoTeTo.py27:
     from urllib import pathname2url
 else: # py33
     from urllib.request import pathname2url
@@ -44,7 +44,7 @@ Path:        ${m.__file__}
 class Controller(object):
     """main controller of the code generation framework"""
 
-    def __init__(self, generatorPath=[], logger='MoCGF', logHandler=None, logLevel=logging.WARNING):
+    def __init__(self, generatorPath=[], logger='CoTeTo', logHandler=None, logLevel=logging.WARNING):
         # initialize logging system
         self.logger = logging.getLogger(logger)
         if logHandler is None:
@@ -52,13 +52,13 @@ class Controller(object):
             logHandler = logging.StreamHandler(sys.stderr)
         self.logger.addHandler(logHandler)
         self.logger.setLevel(logLevel)
-        self.logger.info('Starting MoCGF.Controller from file %s, version %s', __file__, MoCGF.__version__)
+        self.logger.info('Starting CoTeTo.Controller from file %s, version %s', __file__, CoTeTo.__version__)
         # create system configuration dict - will be available to subsystems
         self.systemCfg = {
-            'py27': MoCGF.py27,
-            'py33': MoCGF.py33,
+            'py27': CoTeTo.py27,
+            'py33': CoTeTo.py33,
             'platform': sys.platform,
-            'version': MoCGF.__version__,
+            'version': CoTeTo.__version__,
             # need more here?
         }
         self.pathname2url = pathname2url
@@ -79,12 +79,12 @@ class Controller(object):
 
     def readAPIs(self):
         """read list of APIs and load corresponding modules"""
-        import MoCGF_DataAPI, importlib
+        import CoTeTo_DataAPI, importlib
         self.apis = {}
         self.logger.debug('CON-API | start to loading')
-        for a in MoCGF_DataAPI.__all__:
+        for a in CoTeTo_DataAPI.__all__:
             self.logger.debug('CON-API | try to load: %s', a)
-            m = importlib.import_module('.'+a, 'MoCGF_DataAPI')
+            m = importlib.import_module('.'+a, 'CoTeTo_DataAPI')
             n = '%s::%s' % (m.name, m.version)
             self.apis[n] = m
 
