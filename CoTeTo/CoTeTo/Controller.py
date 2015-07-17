@@ -98,10 +98,13 @@ class Controller(object):
                 o = os.path.join(p, e)
                 if os.path.isdir(o) or zipfile.is_zipfile(o):
                     self.logger.debug('CON-GEN | load element: %s', o)
-                    g = Generator(self, o)
-                    n = '%s::%s' % (g.name, g.version)
-                    self.logger.debug('CON-GEN | found: %s::%s', g.name, g.version)
-                    self.generators[n] = g
+                    try:
+                        g = Generator(self, o)
+                        n = '%s::%s' % (g.name, g.version)
+                        self.logger.debug('CON-GEN | found: %s::%s', g.name, g.version)
+                        self.generators[n] = g
+                    except Exception as e:
+                        self.logger.exception('CON-GEN | exception while loading element')
 
     def apiInfoText(self, api, fmt='txt'):
         """return information on an api in text form"""
