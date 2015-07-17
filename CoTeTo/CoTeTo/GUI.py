@@ -256,7 +256,11 @@ class CoTeToWidget(QtGui.QWidget):
         # save preferences to config file
         if hasattr(self.cfg, 'path'):
             uriList = self.uriInput.text()
+            if CoTeTo.py27:
+                uriList = unicode(uriList)
             outputFile = self.outputInput.text()
+            if CoTeTo.py27:
+                outputFile = unicode(outputFile)
             generator = ''
             tmp = self.generatorList.selectedItems()
             if tmp:
@@ -275,6 +279,7 @@ class CoTeToWidget(QtGui.QWidget):
                     c.write(configfile)
             except:
                 # silently ignore errors
+                # FIXME: is this a good idea? But where should the errors appear?
                 pass
         e.accept()
 
