@@ -1,5 +1,5 @@
 
-CoTeTo - Code Generation Tool
+CoTeTo - Code Templating Tool
 =============================
 
 This software is work-in-progress. Documentation will be incomplete or missing
@@ -7,8 +7,8 @@ and the software may not run properly.
 
 General Purpose
 ---------------
-CoTeTo is a framework for the generation of (Modelica) source  code. It is 
-part of the research project EnEff-BIM.
+CoTeTo is a tool for the generation of (Modelica) source  code. 
+It is part of the research project EnEff-BIM.
 
 
 Concept
@@ -27,7 +27,7 @@ are python modules loaded from the module package `CoTeTo_DataAPI`.
 
 Dependencies
 ------------
-1. Python >=3.3 or 2.7 - WinPython is recommended (includes a lot of packages)
+1. Python >=3.3 or >=2.7.10 - WinPython is recommended (includes a lot of packages). `libSimModel` is compiled to 64bit, and only 64bit Python will be tested.
 2. PyQt for the GUI (included in WinPython)
 3. Mako template Engine:
    install on a python-enabled command line with `pip install mako`
