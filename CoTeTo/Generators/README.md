@@ -1,7 +1,7 @@
-MoCGF: Generator Packages
-=========================
+CoTeTo: Generator Packages
+==========================
 
-MoCGFs generators are bundles of files that are specific to an output
+CoTeTo generators are bundles of files that are specific to an output
 configuration (like a special modelica library or a specific input data API).
 
 Search Path
@@ -10,9 +10,9 @@ Generators are loaded from a list of folders (usually containing this folder).
 When using the provided command line or graphical interface you may adjust
 the folder search using different ways:
 
-1. The environment variable `MOCGF_GENERATORS` (path elements separated by ;)
+1. The environment variable `COTETO_GENERATORS` (path elements separated by ;)
 2. An entry `GeneratorPath` in the section `DEFAULT` in the configuration file
-  `.MoCGF.cfg` in the users home folder
+  `.CoTeTo.cfg` in the users home folder
 3. The `-d` switch on the CLI or GUI
 
 

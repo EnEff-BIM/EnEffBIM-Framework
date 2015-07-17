@@ -1,10 +1,10 @@
 #-*- coding:utf-8 -*-
 #
-# This file is part of MoCGF - a code generation framework
+# This file is part of CoTeTo - a code generation tool
 #
 
 name = 'EnEffBIM'
-description = 'Data API for MoCGF to load SimModel/EnEff-BIM data.'
+description = 'Data API for CoTeTo to load SimModel/EnEff-BIM data.'
 version = '1.0'
 author = 'EnEff-BIM team'
 helptxt = """
