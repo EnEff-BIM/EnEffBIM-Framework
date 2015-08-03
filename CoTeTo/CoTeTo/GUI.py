@@ -152,27 +152,7 @@ class CoTeToWidget(QtGui.QWidget):
                 if i.text() == g:
                     i.setSelected(1)
                     break
-
-        # file types
-        tmp = ['All files (*)']
-        self.fileTypeDefaultOut = tmp[0]
-        self.fileTypeDefaultIn = tmp[0]
-        # file types
-        if cfg.has_section('FILETYPES'):
-            t = cfg['FILETYPES']
-            defaultIn = t.get('defaultInput', '')
-            defaultOut = t.get('defaultOutput', '')
-            for s in t:
-                if s.startswith('.'):
-                    d = t[s]
-                    tmp.append('%s (*%s)' % (d, s))
-                    if s == defaultIn:
-                        self.fileTypeDefaultIn = tmp[-1]
-                    if s == defaultOut:
-                        self.fileTypeDefaultOut = tmp[-1]
-        print(tmp)
-        print(self.fileTypeDefaultIn, self.fileTypeDefaultOut)
-        self.fileTypes = ';;'.join(tmp)
+        # end of preferences
     
 
     # general methods
@@ -192,16 +172,15 @@ class CoTeToWidget(QtGui.QWidget):
             print('Unknown URL scheme:', url)
 
     def getUriList(self):
-        flist = QtGui.QFileDialog.getOpenFileNames(self, 'Select Data Sources', 
-                self.uriInput.text(), self.fileTypes, self.fileTypeDefaultIn)
+        flist = QtGui.QFileDialog.getOpenFileNames(self, 'Select Data Sources')
+
         if flist:
             if CoTeTo.py27:
                 flist = [unicode(f) for f in flist]
             self.uriInput.setText(', '.join(flist))
 
     def getOutputFile(self):
-        f = QtGui.QFileDialog.getSaveFileName(self, 'Select Output File', 
-                self.outputInput.text(), self.fileTypes, self.fileTypeDefaultOut)
+        f = QtGui.QFileDialog.getSaveFileName(self, 'Select Output File', '*')
         if f:
             self.outputInput.setText(f)
 
