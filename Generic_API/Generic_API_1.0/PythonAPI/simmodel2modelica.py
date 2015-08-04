@@ -1,6 +1,7 @@
 from ctypes import *
 
 import os, sys
+fs_enc = sys.getfilesystemencoding()
 rootPath = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(__file__))))
 modulePath = os.path.join(rootPath, 'Generic_API\Generic_API_1.0')
 dllPath = os.path.join(rootPath, 'Generic_API\Generic_API_1.0\PythonAPI')
@@ -50,7 +51,7 @@ class Component(object):
         return lib.component_get_property(self.obj, id)
     def getPropertyNumber(self):
         return lib.component_get_property_number(self.obj)
-    
+
 class RuleData(object):
     def __init__(self):
         self.obj = lib.rule_data_init()
@@ -65,11 +66,11 @@ class RuleData(object):
     def setUseCaseLocation(self, case_loc):
         return lib.rule_data_set_use_case_location(self.obj, case_loc)
     def setDataLocation(self, useCaseLoc, mapRuleLoc):
-        return lib.rule_data_set_data_location(self.obj, useCaseLoc, mapRuleLoc)
+        return lib.rule_data_set_data_location(self.obj, useCaseLoc.encode(fs_enc), mapRuleLoc.encode(fs_enc))
     def getLoopConnection(self, id):
         return lib.sim_system_get_loop_connection(self.obj, id)
     def getLoopConnectionNumber(self):
-        return lib.sim_system_get_loop_connection_number(self.obj)    
+        return lib.sim_system_get_loop_connection_number(self.obj)
 
 class SimConnection(object):
     def __init__(self, obj):
@@ -78,7 +79,7 @@ class SimConnection(object):
         return lib.sim_system_get_outlet_component(self.obj)
     def getInletComponent(self):
         return lib.sim_system_get_inlet_component(self.obj)
-        
+
 class SimProject(object):
     def __init__(self, obj):
         self.obj = obj
@@ -118,7 +119,7 @@ class SimBuilding(object):
 class SimZoneHvacGroup(SimBuilding):
     def __init__(self, obj):
         self.obj = obj
-        
+
 class SimThermalZone(object):
     def __init__(self, obj):
         self.obj = obj
@@ -127,20 +128,20 @@ class SimSystem(object):
     def __init__(self, obj):
         self.obj = obj
     def toHotwaterSystem(self):
-        return lib.sim_system_to_hotwater_system(self.obj)
+        return lib.sim_system_to_hotwater_system(self.obj).decode(fs_enc)
     def getSystemName(self):
-        return lib.sim_system_get_name(self.obj)
+        return lib.sim_system_get_name(self.obj).decode(fs_enc)
     def toPumpVarSpedRet(self):
-        return lib.sim_system_to_pump_varSpedRet(self.obj)
+        return lib.sim_system_to_pump_varSpedRet(self.obj).decode(fs_enc)
     def toBoilerHotWater(self):
-        return lib.sim_system_to_boiler_hotwater(self.obj)
+        return lib.sim_system_to_boiler_hotwater(self.obj).decode(fs_enc)
     def toHeaterConvectiveWater(self):
         return lib.sim_system_to_heater_convectwater(self.obj)
     def toSupplyWaterTemperatureControl(self):
         return lib.sim_system_to_supplywater_tempCtl(self.obj)
     def toTemperatureDryBulbSensor(self):
         return lib.sim_system_to_tempdrybulb_sensor(self.obj)
-    
+
 class SimSystemHotwater(object):
     def __init__(self, obj):
         self.obj = obj
@@ -197,7 +198,7 @@ class SimBoilerHotWater(object):
         return lib.sim_boiler_hotwater_get_SimFlowPlant_BoilerFlowMode(self.obj)
     def getFlowPlantSizingFactor(self):
         return lib.sim_boiler_hotwater_get_SimFlowPlant_SizingFactor(self.obj)
-    
+
 
 # demand side of the hot water system
 class SimSystemHotwaterDemand(object):
@@ -238,7 +239,7 @@ class SimTemperatureDryBulbSensor(object):
     def __init__(self, obj):
         self.obj = obj
 
-    
+
 # property data level
 lib.property_get_name.restype = c_char_p
 lib.property_get_name.argtypes = ()
