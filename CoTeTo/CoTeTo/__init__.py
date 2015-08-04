@@ -20,3 +20,18 @@ elif v >= (2, 7) and v < (3,):
     py27 = True
 else:
     raise Exception('This software runs on python versions 2.7 or >=3.3 only!')
+
+	
+# special hack for mako on windows to correct a nasty line ending problem
+if py33 and sys.platform.startswith('win'):
+	def read_file(path, mode='r'):
+		fp = open(path, mode)
+		try:
+			data = fp.read()
+			return data
+		finally:
+			fp.close()
+	# hot patch loaded module :-)
+	import mako.util
+	mako.util.read_file = read_file
+	del read_file
