@@ -23,7 +23,7 @@ else:
 
 	
 # special hack for mako on windows to correct a nasty line ending problem
-if py33 and sys.platform.startswith('win'):
+if sys.platform.startswith('win'):
 	def read_file(path, mode='r'):
 		fp = open(path, mode)
 		try:
