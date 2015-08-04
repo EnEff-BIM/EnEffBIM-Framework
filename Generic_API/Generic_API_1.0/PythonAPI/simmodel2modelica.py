@@ -1,7 +1,6 @@
 from ctypes import *
 
 import os, sys
-fs_enc = sys.getfilesystemencoding()
 rootPath = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(__file__))))
 modulePath = os.path.join(rootPath, 'Generic_API\Generic_API_1.0')
 dllPath = os.path.join(rootPath, 'Generic_API\Generic_API_1.0\PythonAPI')
@@ -13,14 +12,13 @@ sys.path.append(modulePath)
 
 lib = cdll.LoadLibrary('./simmodel2modelica')
 
-
-# b2s : bytes to string
-if sys.version_info < (3, 0):
-    def b2s(b):
-        return b
-else:
-    def b2s(b):
-        return str(b, 'latin1')
+fs_enc = sys.getfilesystemencoding()
+# b2s : decode bytes to string
+# s2b : encode string to bytes
+def b2s(b):
+    return b.decode(fs_enc)
+def s2b(s):
+    return s.encode(fs_enc)
 
 class Property(object):
     def __init__(self, obj):
@@ -44,9 +42,9 @@ class Component(object):
     def __init__(self, obj):
         self.obj = obj
     def getTargetName(self):
-        return lib.component_get_target_name(self.obj)
+        return b2s(lib.component_get_target_name(self.obj))
     def getTargetLocation(self):
-        return lib.component_get_target_location(self.obj)
+        return b2s(lib.component_get_target_location(self.obj))
     def getProperty(self, id):
         return lib.component_get_property(self.obj, id)
     def getPropertyNumber(self):
@@ -66,7 +64,7 @@ class RuleData(object):
     def setUseCaseLocation(self, case_loc):
         return lib.rule_data_set_use_case_location(self.obj, case_loc)
     def setDataLocation(self, useCaseLoc, mapRuleLoc):
-        return lib.rule_data_set_data_location(self.obj, useCaseLoc.encode(fs_enc), mapRuleLoc.encode(fs_enc))
+        return lib.rule_data_set_data_location(self.obj, s2b(useCaseLoc), s2b(mapRuleLoc))
     def getLoopConnection(self, id):
         return lib.sim_system_get_loop_connection(self.obj, id)
     def getLoopConnectionNumber(self):
@@ -94,7 +92,7 @@ class SimSite(object):
     def __init__(self, obj):
         self.obj = obj
     def getSiteName(self):
-        return lib.sim_site_get_name(self.obj)
+        return b2s(lib.sim_site_get_name(self.obj))
     def getSimBuilding(self, id):
         return lib.sim_site_get_sim_building(self.obj, id)
     def getSimBuildingNumber(self):
@@ -128,13 +126,13 @@ class SimSystem(object):
     def __init__(self, obj):
         self.obj = obj
     def toHotwaterSystem(self):
-        return lib.sim_system_to_hotwater_system(self.obj).decode(fs_enc)
+        return lib.sim_system_to_hotwater_system(self.obj)
     def getSystemName(self):
-        return lib.sim_system_get_name(self.obj).decode(fs_enc)
+        return lib.sim_system_get_name(self.obj)
     def toPumpVarSpedRet(self):
-        return lib.sim_system_to_pump_varSpedRet(self.obj).decode(fs_enc)
+        return lib.sim_system_to_pump_varSpedRet(self.obj)
     def toBoilerHotWater(self):
-        return lib.sim_system_to_boiler_hotwater(self.obj).decode(fs_enc)
+        return lib.sim_system_to_boiler_hotwater(self.obj)
     def toHeaterConvectiveWater(self):
         return lib.sim_system_to_heater_convectwater(self.obj)
     def toSupplyWaterTemperatureControl(self):
