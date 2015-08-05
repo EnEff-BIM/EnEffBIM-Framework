@@ -13,26 +13,29 @@ sys.path.append(modulePath)
 lib = cdll.LoadLibrary('./simmodel2modelica')
 
 fs_enc = sys.getfilesystemencoding()
+df_enc = sys.getdefaultencoding()
 # b2s : decode bytes to string
 # s2b : encode string to bytes
 def b2s(b):
     return b.decode(fs_enc)
 def s2b(s):
     return s.encode(fs_enc)
+    #return s.encode('mbcs')
+    #return s
 
 class Property(object):
     def __init__(self, obj):
         self.obj = obj
     def getName(self):
-        return lib.property_get_name(self.obj)
+        return b2s(lib.property_get_name(self.obj))
     def getValue(self):
-        return lib.property_get_value(self.obj)
+        return b2s(lib.property_get_value(self.obj))
     def getTargetLocation(self):
-        return lib.property_get_target_location(self.obj)
+        return b2s(lib.property_get_target_location(self.obj))
     def getRecordInstance(self):
-        return lib.property_get_record_instance(self.obj)
+        return b2s(lib.property_get_record_instance(self.obj))
     def getRecordLocation(self):
-        return lib.property_get_record_location(self.obj)
+        return b2s(lib.property_get_record_location(self.obj))
     def getValueGroup(self):
         return lib.property_get_value_group(self.obj)
     def getFlag(self):
@@ -65,6 +68,8 @@ class RuleData(object):
         return lib.rule_data_set_use_case_location(self.obj, case_loc)
     def setDataLocation(self, useCaseLoc, mapRuleLoc):
         return lib.rule_data_set_data_location(self.obj, s2b(useCaseLoc), s2b(mapRuleLoc))
+        #return lib.rule_data_set_data_location(self.obj, useCaseLoc.encode(fs_enc), mapRuleLoc.encode(fs_enc))
+        #return lib.rule_data_set_data_location(self.obj, useCaseLoc, mapRuleLoc)
     def getLoopConnection(self, id):
         return lib.sim_system_get_loop_connection(self.obj, id)
     def getLoopConnectionNumber(self):
@@ -82,7 +87,7 @@ class SimProject(object):
     def __init__(self, obj):
         self.obj = obj
     def getWeatherLocationCity(self):
-        return lib.sim_project_get_weather_location_city(self.obj)
+        return b2s(lib.sim_project_get_weather_location_city(self.obj))
     def getSimSiteNumber(self):
         return lib.sim_project_get_sim_site_number(self.obj)
     def getSimSite(self, id):
@@ -402,6 +407,8 @@ if __name__ == "__main__":
     MapData = RuleData()
     # set data location
     MapData.setDataLocation(useCaseLoc, mapRuleLoc)
+    #MapData.setDataLocation(b"..\\xml_use_case\\Boiler_Gas_VDI6020_Test.xml", b"..\\xml_mapping_rule\\AixLib_Mapping_Rule.xml")
+    print(sys.getfilesystemencoding())
     # transform SimModel data into Modelica objects
     MapData.transformModel()
 
