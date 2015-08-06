@@ -90,7 +90,7 @@ class Component(object):
         self.obj = obj
         self._targetName = None
         self._targetLocation = None
-        self._property = None
+        self._properties = None
      
     @property
     def targetName(self):
@@ -107,37 +107,53 @@ class Component(object):
         else:
             return self._targetLocation
     @property
-    def property(self):
-        if self._property == None:
-            self._property = []
+    def properties(self):
+        if self._properties == None:
+            self._properties = []
             for id in range(lib.component_get_property_number(self.obj)):
-                self._property.append(lib.component_get_property(self.obj, id))
-            return self._property
+                self._properties.append(lib.component_get_property(self.obj, id))
+            return self._properties
         else:
-            return self._property    
+            return self._properties    
 
 
 class RuleData(object):
     def __init__(self):
         self.obj = lib.rule_data_init()
-    def getComponent(self, id):
-        return lib.rule_data_get_component(self.obj, id)
-    def getComponentNumber(self):
-        return lib.rule_data_get_component_number(self.obj)
-    def getSimProject(self):
-        return lib.sim_project_init(self.obj)
+        self._components = None
+        self._simProject = None
+        self._loopConnections = None
+    @property 
+    def components(self):
+        if self._components == None:
+            self._components = []
+            for id in range(lib.rule_data_get_component_number(self.obj)):
+                self._components.append(lib.rule_data_get_component(self.obj, id))
+            return self._components
+        else:
+            return self._components    
+    @property
+    def simProject(self):
+         if self._simProject == None:
+             self._simProject = lib.sim_project_init(self.obj)
+         else:
+             return self._simProject
+    @property 
+    def loopConnections(self):
+        if self._loopConnections == None:
+            self._loopConnections = []
+            for id in range(lib.sim_system_get_loop_connection_number(self.obj)):
+                self._loopConnections.append(lib.sim_system_get_loop_connection(self.obj, id))
+            return self._loopConnections
+        else:
+            return self._loopConnections   
+
     def transformModel(self):
         return lib.rule_data_transform_model(self.obj)
     def setUseCaseLocation(self, case_loc):
         return lib.rule_data_set_use_case_location(self.obj, case_loc)
     def setDataLocation(self, useCaseLoc, mapRuleLoc):
         return lib.rule_data_set_data_location(self.obj, s2b(useCaseLoc), s2b(mapRuleLoc))
-        #return lib.rule_data_set_data_location(self.obj, useCaseLoc.encode(fs_enc), mapRuleLoc.encode(fs_enc))
-        #return lib.rule_data_set_data_location(self.obj, useCaseLoc, mapRuleLoc)
-    def getLoopConnection(self, id):
-        return lib.sim_system_get_loop_connection(self.obj, id)
-    def getLoopConnectionNumber(self):
-        return lib.sim_system_get_loop_connection_number(self.obj)
 
 class SimConnection(object):
     def __init__(self, obj):
@@ -478,11 +494,11 @@ if __name__ == "__main__":
     MapData.transformModel()
 
     # access transformed / mapped data
-    componentNumber = MapData.getComponentNumber()
-    # iterate each mapped component data
+        # iterate each mapped component data
     #print(MapData.getComponent(0).getPropertyNumber())
     
-    print(MapData.getComponent(0).property[2].value)
+    print(MapData.components)
+    print(MapData.loopConnections)
     
     """
     for comId in range(0, componentNumber):
