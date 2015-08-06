@@ -44,7 +44,7 @@ class Property(object):
     @property
     def value(self):
         if self._value == None:    
-            self._value = b2s(lib.property_get_name(self.obj))
+            self._value = b2s(lib.property_get_value(self.obj))
             return self._value
         else:
             return self._value

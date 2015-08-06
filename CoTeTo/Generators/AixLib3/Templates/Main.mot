@@ -1,0 +1,10 @@
+## Main controller file
+## call subfiles from here
+
+% for test in comDict:
+	${test.targetName}
+	
+	% for i in test.properties:
+		${i.value}
+	% endfor
+% endfor
