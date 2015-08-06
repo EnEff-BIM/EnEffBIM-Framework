@@ -26,32 +26,96 @@ def s2b(s):
 class Property(object):
     def __init__(self, obj):
         self.obj = obj
-    def getName(self):
-        return b2s(lib.property_get_name(self.obj))
-    def getValue(self):
-        return b2s(lib.property_get_value(self.obj))
-    def getTargetLocation(self):
-        return b2s(lib.property_get_target_location(self.obj))
-    def getRecordInstance(self):
-        return b2s(lib.property_get_record_instance(self.obj))
-    def getRecordLocation(self):
-        return b2s(lib.property_get_record_location(self.obj))
-    def getValueGroup(self):
-        return lib.property_get_value_group(self.obj)
-    def getFlag(self):
-        return lib.property_get_flag(self.obj)
+        self._name = None
+        self._value = None
+        self._targetLocation = None
+        self._recordInstance = None
+        self._recordLocation = None
+        self._valueGroup = None
+        self._flag = None
+   
+    @property
+    def name(self):
+        if self._name == None:
+            self._name = b2s(lib.property_get_name(self.obj))
+            return self._name
+        else:
+            return self._name
+    @property
+    def value(self):
+        if self._value == None:    
+            self._value = b2s(lib.property_get_name(self.obj))
+            return self._value
+        else:
+            return self._value
+    @property
+    def targetLocation(self):
+        if self._targetLocation == None:    
+            self._targetLocation = b2s(lib.property_get_target_location(self.obj))
+            return self._targetLocation
+        else:
+            return self._targetLocation
+    @property
+    def recordInstance(self):
+        if self._recordInstance == None:    
+            self._recordInstance = b2s(lib.property_get_record_instance(self.obj))
+            return self._recordInstance
+        else:
+            return self._recordInstance
+    @property
+    def recordLocation(self):
+        if self._recordLocation == None:    
+            self._recordLocation = b2s(lib.property_get__record_location(self.obj))
+            return self._recordLocation
+        else:
+            return self._recordLocation
+    @property
+    def valueGroup(self):
+        if self._valueGroup == None:    
+            self._valueGroup = lib.property_get_value_group(self.obj)
+            return self._valueGroup
+        else:
+            return self._valueGroup
+    @property
+    def flag(self):
+        if self._flag == None:    
+            self._flag = lib.lib.property_get_flag(self.obj)
+            return self._flag
+        else:
+            return self._flag
+
 
 class Component(object):
     def __init__(self, obj):
         self.obj = obj
-    def getTargetName(self):
-        return b2s(lib.component_get_target_name(self.obj))
-    def getTargetLocation(self):
-        return b2s(lib.component_get_target_location(self.obj))
-    def getProperty(self, id):
-        return lib.component_get_property(self.obj, id)
-    def getPropertyNumber(self):
-        return lib.component_get_property_number(self.obj)
+        self._targetName = None
+        self._targetLocation = None
+        self._property = None
+     
+    @property
+    def targetName(self):
+        if self._targetName == None:
+            self._targetName = b2s(lib.component_get_target_name(self.obj))
+            return self._targetName
+        else:
+            return self._targetName
+    @property
+    def targetLocation(self):
+        if self._targetLocation == None:
+            self._targetLocation = b2s(lib.component_get_target_location(self.obj))
+            return self._targetLocation
+        else:
+            return self._targetLocation
+    @property
+    def property(self):
+        if self._property == None:
+            self._property = []
+            for id in range(lib.component_get_property_number(self.obj)):
+                self._property.append(lib.component_get_property(self.obj, id))
+            return self._property
+        else:
+            return self._property    
+
 
 class RuleData(object):
     def __init__(self):
@@ -396,6 +460,7 @@ lib.sim_system_hotwater_get_water_control_component.argtypes = [c_void_p, c_int]
 lib.sim_system_hotwater_get_water_control_component_number.restype = c_int
 lib.sim_system_hotwater_get_water_control_component_number.argtypes = ()
 
+
 if __name__ == "__main__":
     # all following lines are just  examples
 
@@ -415,6 +480,11 @@ if __name__ == "__main__":
     # access transformed / mapped data
     componentNumber = MapData.getComponentNumber()
     # iterate each mapped component data
+    #print(MapData.getComponent(0).getPropertyNumber())
+    
+    print(MapData.getComponent(0).property[2].value)
+    
+    """
     for comId in range(0, componentNumber):
         # retrieve the mapped component name and its location in AixLib
         print("Component location: " + MapData.getComponent(comId).getTargetLocation() + ", name: " + MapData.getComponent(comId).getTargetName())
@@ -528,3 +598,4 @@ if __name__ == "__main__":
         # retrieve the component with water inlet port
         simComponentWaterIn = simConnection.getInletComponent()
         # ...
+"""
