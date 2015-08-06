@@ -158,10 +158,23 @@ class RuleData(object):
 class SimConnection(object):
     def __init__(self, obj):
         self.obj = obj
-    def getOutletComponent(self):
-        return lib.sim_system_get_outlet_component(self.obj)
-    def getInletComponent(self):
-        return lib.sim_system_get_inlet_component(self.obj)
+        self._outletComponent = None
+        self._inletComponent = None
+        
+    @property
+    def outletComponent(self):
+        if self._outletComponent == None:
+            self._outletComponent = lib.sim_system_get_outlet_component(self.obj)
+            return self._outletComponent
+        else:
+            return self._outletComponent
+    @property
+    def inletComponent(self):
+        if self._inletComponent == None:
+            self._inletComponent = lib.sim_system_get_inlet_component(self.obj)
+            return self._inletComponent
+        else:
+            return self._inletComponent
 
 class SimProject(object):
     def __init__(self, obj):
