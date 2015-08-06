@@ -1,6 +1,7 @@
 ## Main controller file
 ## call subfiles from here
-
+${location}
+${modelName[0].name}
 % for test in comDict:
 	${test.targetName}
 	

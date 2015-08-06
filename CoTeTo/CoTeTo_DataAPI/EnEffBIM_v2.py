@@ -34,13 +34,13 @@ def fetchData(uriList, systemCfg, generatorCfg, logger):
     # transform SimModel data into Modelica objects
     MapData.transformModel()
     simProject = MapData.simProject
-    #simSite = simProject.getSimSite(0);
+    simSite = simProject.simSite;
     
     comDict = MapData.components
    
     dataDictionary=dict(
-        modelName="",
-        location="",
+        modelName=simSite,
+        location=simProject.weatherLocation,
         comDict=comDict
     )
     return dataDictionary

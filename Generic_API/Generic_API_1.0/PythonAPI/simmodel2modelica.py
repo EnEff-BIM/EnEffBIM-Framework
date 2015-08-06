@@ -136,6 +136,7 @@ class RuleData(object):
     def simProject(self):
          if self._simProject == None:
              self._simProject = lib.sim_project_init(self.obj)
+             return self._simProject
          else:
              return self._simProject
     @property 
@@ -515,7 +516,7 @@ lib.sim_system_hotwater_get_water_control_component.argtypes = [c_void_p, c_int]
 lib.sim_system_hotwater_get_water_control_component_number.restype = c_int
 lib.sim_system_hotwater_get_water_control_component_number.argtypes = ()
 
-"""
+
 if __name__ == "__main__":
     # all following lines are just  examples
 
@@ -538,8 +539,8 @@ if __name__ == "__main__":
     
     print(MapData.components)
     print(MapData.loopConnections)
-    
-   
+    print(MapData.simProject)
+    """
     for comId in range(0, componentNumber):
         # retrieve the mapped component name and its location in AixLib
         print("Component location: " + MapData.getComponent(comId).getTargetLocation() + ", name: " + MapData.getComponent(comId).getTargetName())
