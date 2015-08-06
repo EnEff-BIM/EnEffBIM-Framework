@@ -179,22 +179,48 @@ class SimConnection(object):
 class SimProject(object):
     def __init__(self, obj):
         self.obj = obj
-    def getWeatherLocationCity(self):
-        return b2s(lib.sim_project_get_weather_location_city(self.obj))
-    def getSimSiteNumber(self):
-        return lib.sim_project_get_sim_site_number(self.obj)
-    def getSimSite(self, id):
-        return lib.sim_project_get_sim_site(self.obj, id)
+        self._weatherLocation = None
+        self._simSite = None
+        
+    @property
+    def weatherLocation(self):
+        if self._weatherLocation == None:
+            self._weatherLocation = b2s(lib.sim_project_get_weather_location_city(self.obj))
+            return self._weatherLocation
+        else:
+            return self._weatherLocation
+    @property
+    def simSite(self):
+        if self._simSite == None:
+            self._simSite = []
+            for id in range(lib.sim_project_get_sim_site_number(self.obj)):
+                self._simSite.append(lib.sim_project_get_sim_site(self.obj, id))
+            return self._simSite
+        else:
+            return self._simSite 
 
 class SimSite(object):
     def __init__(self, obj):
         self.obj = obj
-    def getSiteName(self):
-        return b2s(lib.sim_site_get_name(self.obj))
-    def getSimBuilding(self, id):
-        return lib.sim_site_get_sim_building(self.obj, id)
-    def getSimBuildingNumber(self):
-        return lib.sim_site_get_sim_building_number(self.obj)
+        self._name = None
+        self._buildings = None
+        
+    @property
+    def name(self):
+        if self._name == None:
+            self._name = b2s(lib.sim_site_get_name(self.obj))
+            return self._name
+        else:
+            return self._name
+    @property
+    def buildings(self):
+        if self._buildings == None:
+            self._buildings = []
+            for id in range(lib.sim_site_get_sim_building_number(self.obj)):
+                self._buildings.append(lib.sim_site_get_sim_building(self.obj, id))
+            return self._buildings
+        else:
+            return self._buildings   
 
 class SimBuilding(object):
     def __init__(self, obj):
@@ -489,7 +515,7 @@ lib.sim_system_hotwater_get_water_control_component.argtypes = [c_void_p, c_int]
 lib.sim_system_hotwater_get_water_control_component_number.restype = c_int
 lib.sim_system_hotwater_get_water_control_component_number.argtypes = ()
 
-
+"""
 if __name__ == "__main__":
     # all following lines are just  examples
 
@@ -513,7 +539,7 @@ if __name__ == "__main__":
     print(MapData.components)
     print(MapData.loopConnections)
     
-    """
+   
     for comId in range(0, componentNumber):
         # retrieve the mapped component name and its location in AixLib
         print("Component location: " + MapData.getComponent(comId).getTargetLocation() + ", name: " + MapData.getComponent(comId).getTargetName())
