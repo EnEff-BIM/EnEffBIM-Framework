@@ -24,6 +24,42 @@ def s2b(s):
     #return s
 
 class Property(object):
+    
+    '''
+    This class represents a mapped property 
+
+    Parameters:
+    ----------
+        
+               
+    obj: obj
+        ?
+        
+
+    Attributes:
+    ----------
+       
+    name : str
+        Modelica name of property
+    
+    
+    value : str
+        Value of property
+    
+    targetLocation : str
+        ?
+        
+    recordInstance : str
+        ?
+        
+    valueGroup : str
+        ?
+    
+    flag : str
+        ?
+
+    '''
+    
     def __init__(self, obj):
         self.obj = obj
         self._name = None
@@ -65,7 +101,7 @@ class Property(object):
     @property
     def recordLocation(self):
         if self._recordLocation == None:    
-            self._recordLocation = b2s(lib.property_get__record_location(self.obj))
+            self._recordLocation = b2s(lib.property_get_record_location(self.obj))
             return self._recordLocation
         else:
             return self._recordLocation
@@ -79,13 +115,38 @@ class Property(object):
     @property
     def flag(self):
         if self._flag == None:    
-            self._flag = lib.lib.property_get_flag(self.obj)
+            self._flag = lib.property_get_flag(self.obj)
             return self._flag
         else:
             return self._flag
 
 
 class Component(object):
+    '''
+    This class represents a mapped component 
+
+    Parameters:
+    ----------
+        
+               
+    obj: obj
+        ?
+        
+
+    Attributes:
+    ----------
+       
+    targetName : str
+        Modelica name of component
+    
+    
+    targetLocation : str
+        Modelica library path of component
+    
+    properties : list of Property()
+        Properties of Modelica model
+
+    '''
     def __init__(self, obj):
         self.obj = obj
         self._targetName = None
@@ -118,6 +179,31 @@ class Component(object):
 
 
 class RuleData(object):
+    '''
+    This class is the root object of Python API 
+
+    Parameters:
+    ----------
+        
+               
+    obj: obj
+        ?
+        
+
+    Attributes:
+    ----------
+       
+    components : list of Component()
+        List of all Modelica components
+    
+    
+    simProject : SimProject()
+        Instance of SimProject()
+    
+    loopConnections : list of SimConnection()
+        list of Sim Connections between components(?)
+
+    '''
     def __init__(self):
         self.obj = lib.rule_data_init()
         self._components = None
@@ -157,6 +243,29 @@ class RuleData(object):
         return lib.rule_data_set_data_location(self.obj, s2b(useCaseLoc), s2b(mapRuleLoc))
 
 class SimConnection(object):
+    '''
+    This class represents an unmapped connection of SimModel
+
+    Parameters:
+    ----------
+ 
+    obj: obj
+        ?  
+
+    Attributes:
+    ----------
+       
+    outletComponent : str
+        ?
+    
+    
+    inletComponent : str
+        Modelica library path of component
+    
+    properties : list of Property()
+        Properties of Modelica model
+
+    '''
     def __init__(self, obj):
         self.obj = obj
         self._outletComponent = None
@@ -178,6 +287,26 @@ class SimConnection(object):
             return self._inletComponent
 
 class SimProject(object):
+    '''
+    This class represents an unmapped SimProject 
+
+    Parameters:
+    ----------
+ 
+    obj: obj
+        ?  
+
+    Attributes:
+    ----------
+       
+    weatherLocation : str
+        Location of reference year
+    
+    
+    simSite : str
+        Location of building
+
+    '''
     def __init__(self, obj):
         self.obj = obj
         self._weatherLocation = None
@@ -201,6 +330,26 @@ class SimProject(object):
             return self._simSite 
 
 class SimSite(object):
+    '''
+    This class represents an unmapped SimSite 
+
+    Parameters:
+    ----------
+ 
+    obj: obj
+        ?  
+
+    Attributes:
+    ----------
+       
+    name : str
+        name of the site
+    
+    
+    buildings : list SimBuilding()
+        list of SimBuilding instances
+
+    '''
     def __init__(self, obj):
         self.obj = obj
         self._name = None

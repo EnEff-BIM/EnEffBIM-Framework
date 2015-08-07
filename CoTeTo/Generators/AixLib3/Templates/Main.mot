@@ -9,3 +9,11 @@ ${modelName[0].name}
 		${i.value}
 	% endfor
 % endfor
+
+${comDict[0].properties[1].name}
+${comDict[0].properties[1].value}
+${comDict[0].properties[1].targetLocation}
+${comDict[0].properties[1].recordInstance}
+${comDict[0].properties[1].recordLocation}
+${comDict[0].properties[1].valueGroup}
+${comDict[0].properties[1].flag}
