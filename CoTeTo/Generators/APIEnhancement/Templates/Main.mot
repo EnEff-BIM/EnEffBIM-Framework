@@ -13,7 +13,6 @@ ${MapData.simProject.weatherLocation}
 	${connect.inletComponent}
 % endfor
 
-
 % for comp in MapData.components:
 	${comp.targetName} ${comp.targetLocation}
 	% for i in comp.properties:

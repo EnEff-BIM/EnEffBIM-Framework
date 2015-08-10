@@ -47,10 +47,15 @@ class Property(object):
         Value of property
     
     targetLocation : str
-        ?
+        if the parameter is a modifier of a submodel, this is the name of the 
+        submodel
         
     recordInstance : str
-        ?
+        if the parameter is part of a record, this is the record name
+       
+    recorLocation : str
+        if the parameter is part of a record, this is the record location in
+        the lib
         
     valueGroup : str
         ?
