@@ -1,7 +1,7 @@
 [GENERATOR]
-name = EEB2AIX
-version = 1.2
-description = Generates Modelica code for AixLib from EnEFF-BIM data
+name = APIEnhancement
+version = 0.1
+description = Generator used for API Testing and Enhancement
 author = EnEff-BIM team
 
 [REQUIRES]
