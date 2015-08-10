@@ -98,7 +98,7 @@ class Property(object):
     @property
     def valueGroup(self):
         if self._valueGroup == None:    
-            self._valueGroup = lib.property_get_value_group(self.obj)
+            self._valueGroup = b2s(lib.property_get_value_group(self.obj))
         return self._valueGroup
     @property
     def flag(self):
@@ -337,18 +337,34 @@ class SimSite(object):
 class SimBuilding(object):
     def __init__(self, obj):
         self.obj = obj
-    def getSimZoneHvacGroup(self, id):
-        return lib.sim_building_get_sim_zone_hvac_group(self.obj, id)
-    def getSimZoneHvacGroupNumber(self):
-        return lib.sim_building_get_sim_zone_hvac_group_number(self.obj)
-    def getSimThermalZone(self, id):
-        return lib.sim_building_get_sim_thermal_zone(self.obj, id)
-    def getSimThermalZoneNumber(self):
-        return lib.sim_building_get_sim_thermal_zone_number(self.obj)
-    def getSimSystem(self, id):
-        return lib.sim_building_get_sim_system(self.obj, id)
-    def getSimSystemNumber(self):
-        return lib.sim_building_get_sim_system_number(self.obj)
+        self._simZoneHvacGroup = None
+        self._simThermalZone = None
+        self._simSystem = None
+        
+
+    @property
+    def simZoneHvacGroup(self):
+        if self._simZoneHvacGroup == None:
+            self._simZoneHvacGroup = []
+            for id in range(lib.sim_building_get_sim_zone_hvac_group_number(self.obj)):
+                self._simZoneHvacGroup.append(lib.sim_building_get_sim_zone_hvac_group(self.obj, id))
+        return self._simZoneHvacGroup 
+	
+    @property
+    def simThermalZone(self):
+        if self._simThermalZone == None:
+            self._simThermalZone = []
+            for id in range(lib.sim_building_get_sim_thermal_zone_number(self.obj)):
+                self._simThermalZone.append(lib.sim_building_get_sim_thermal_zone(self.obj, id))
+        return self._simThermalZone 
+	
+    @property
+    def simSystem(self):
+        if self._simSystem == None:
+            self._simSystem = []
+            for id in range(lib.sim_building_get_sim_system_number(self.obj)):
+                self._simSystem.append(lib.sim_building_get_sim_system(self.obj, id))
+        return self._simSystem 	
 
 class SimZoneHvacGroup(SimBuilding):
     def __init__(self, obj):

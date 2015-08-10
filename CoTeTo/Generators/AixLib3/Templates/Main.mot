@@ -1,19 +1,19 @@
-## Main controller file
-## call subfiles from here
-${location}
-${modelName[0].name}
-% for test in comDict:
-	${test.targetName}
-	
-	% for i in test.properties:
-		${i.value}
+${MapData.simProject.weatherLocation}
+% for site in MapData.simProject.simSite:
+	${site.name}
+	% for bldg in site.buildings:
+		${bldg.simZoneHvacGroup}
+		${bldg.simThermalZone}
+		${bldg.simSystem}
 	% endfor
 % endfor
 
-${comDict[0].properties[1].name}
-${comDict[0].properties[1].value}
-${comDict[0].properties[1].targetLocation}
-${comDict[0].properties[1].recordInstance}
-${comDict[0].properties[1].recordLocation}
-${comDict[0].properties[1].valueGroup}
-${comDict[0].properties[1].flag}
+
+${MapData.loopConnections}
+
+% for comp in MapData.components:
+	${comp.targetName} ${comp.targetLocation}
+	% for i in comp.properties:
+		${i.name} ${i.value} ${i.targetLocation} ${i.recordInstance}  ${i.recordLocation} ${i.valueGroup} ${i.flag}
+	% endfor
+% endfor
