@@ -8,8 +8,11 @@ ${MapData.simProject.weatherLocation}
 	% endfor
 % endfor
 
+% for connect in MapData.loopConnections:
+	${connect.outletComponent}
+	${connect.inletComponent}
+% endfor
 
-${MapData.loopConnections}
 
 % for comp in MapData.components:
 	${comp.targetName} ${comp.targetLocation}

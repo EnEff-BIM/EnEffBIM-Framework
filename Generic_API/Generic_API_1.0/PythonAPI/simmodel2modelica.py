@@ -234,11 +234,7 @@ class SimConnection(object):
     
     
     inletComponent : str
-        Modelica library path of component
-    
-    properties : list of Property()
-        Properties of Modelica model
-
+        ?
     '''
     def __init__(self, obj):
         self.obj = obj
