@@ -74,51 +74,37 @@ class Property(object):
     def name(self):
         if self._name == None:
             self._name = b2s(lib.property_get_name(self.obj))
-            return self._name
-        else:
-            return self._name
+        return self._name
     @property
     def value(self):
         if self._value == None:    
             self._value = b2s(lib.property_get_value(self.obj))
-            return self._value
-        else:
-            return self._value
+        return self._value
     @property
     def targetLocation(self):
         if self._targetLocation == None:    
             self._targetLocation = b2s(lib.property_get_target_location(self.obj))
-            return self._targetLocation
-        else:
-            return self._targetLocation
+        return self._targetLocation
     @property
     def recordInstance(self):
         if self._recordInstance == None:    
             self._recordInstance = b2s(lib.property_get_record_instance(self.obj))
-            return self._recordInstance
-        else:
-            return self._recordInstance
+        return self._recordInstance
     @property
     def recordLocation(self):
         if self._recordLocation == None:    
             self._recordLocation = b2s(lib.property_get_record_location(self.obj))
-            return self._recordLocation
-        else:
-            return self._recordLocation
+        return self._recordLocation
     @property
     def valueGroup(self):
         if self._valueGroup == None:    
             self._valueGroup = lib.property_get_value_group(self.obj)
-            return self._valueGroup
-        else:
-            return self._valueGroup
+        return self._valueGroup
     @property
     def flag(self):
         if self._flag == None:    
             self._flag = lib.property_get_flag(self.obj)
-            return self._flag
-        else:
-            return self._flag
+        return self._flag
 
 
 class Component(object):
@@ -157,25 +143,19 @@ class Component(object):
     def targetName(self):
         if self._targetName == None:
             self._targetName = b2s(lib.component_get_target_name(self.obj))
-            return self._targetName
-        else:
-            return self._targetName
+        return self._targetName
     @property
     def targetLocation(self):
         if self._targetLocation == None:
             self._targetLocation = b2s(lib.component_get_target_location(self.obj))
-            return self._targetLocation
-        else:
-            return self._targetLocation
+        return self._targetLocation
     @property
     def properties(self):
         if self._properties == None:
             self._properties = []
             for id in range(lib.component_get_property_number(self.obj)):
                 self._properties.append(lib.component_get_property(self.obj, id))
-            return self._properties
-        else:
-            return self._properties    
+        return self._properties    
 
 
 class RuleData(object):
@@ -215,25 +195,19 @@ class RuleData(object):
             self._components = []
             for id in range(lib.rule_data_get_component_number(self.obj)):
                 self._components.append(lib.rule_data_get_component(self.obj, id))
-            return self._components
-        else:
-            return self._components    
+        return self._components    
     @property
     def simProject(self):
          if self._simProject == None:
              self._simProject = lib.sim_project_init(self.obj)
-             return self._simProject
-         else:
-             return self._simProject
+         return self._simProject
     @property 
     def loopConnections(self):
         if self._loopConnections == None:
             self._loopConnections = []
             for id in range(lib.sim_system_get_loop_connection_number(self.obj)):
                 self._loopConnections.append(lib.sim_system_get_loop_connection(self.obj, id))
-            return self._loopConnections
-        else:
-            return self._loopConnections   
+        return self._loopConnections   
 
     def transformModel(self):
         return lib.rule_data_transform_model(self.obj)
@@ -275,16 +249,12 @@ class SimConnection(object):
     def outletComponent(self):
         if self._outletComponent == None:
             self._outletComponent = lib.sim_system_get_outlet_component(self.obj)
-            return self._outletComponent
-        else:
-            return self._outletComponent
+        return self._outletComponent
     @property
     def inletComponent(self):
         if self._inletComponent == None:
             self._inletComponent = lib.sim_system_get_inlet_component(self.obj)
-            return self._inletComponent
-        else:
-            return self._inletComponent
+        return self._inletComponent
 
 class SimProject(object):
     '''
@@ -316,18 +286,14 @@ class SimProject(object):
     def weatherLocation(self):
         if self._weatherLocation == None:
             self._weatherLocation = b2s(lib.sim_project_get_weather_location_city(self.obj))
-            return self._weatherLocation
-        else:
-            return self._weatherLocation
+        return self._weatherLocation
     @property
     def simSite(self):
         if self._simSite == None:
             self._simSite = []
             for id in range(lib.sim_project_get_sim_site_number(self.obj)):
                 self._simSite.append(lib.sim_project_get_sim_site(self.obj, id))
-            return self._simSite
-        else:
-            return self._simSite 
+        return self._simSite 
 
 class SimSite(object):
     '''
@@ -359,18 +325,14 @@ class SimSite(object):
     def name(self):
         if self._name == None:
             self._name = b2s(lib.sim_site_get_name(self.obj))
-            return self._name
-        else:
-            return self._name
+        return self._name
     @property
     def buildings(self):
         if self._buildings == None:
             self._buildings = []
             for id in range(lib.sim_site_get_sim_building_number(self.obj)):
                 self._buildings.append(lib.sim_site_get_sim_building(self.obj, id))
-            return self._buildings
-        else:
-            return self._buildings   
+        return self._buildings   
 
 class SimBuilding(object):
     def __init__(self, obj):
