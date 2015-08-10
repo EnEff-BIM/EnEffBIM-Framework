@@ -1,5 +1,0 @@
-Hello!
-
-The value of foo is ${foo}.
-
-<%include file="Sub.mot"/>

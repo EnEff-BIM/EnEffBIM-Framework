@@ -1,1 +1,0 @@
-Modelica.Blocks.Sources.Constant ${blockConstant.name}(k=${blockConstant.k});

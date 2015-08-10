@@ -1,1 +1,0 @@
-<%page args="modelCounter"/>	AixLib.HVAC.HeatGeneration.Pump ${models[modelCounter].modelName}(Head_max = ${models[modelCounter].head})
