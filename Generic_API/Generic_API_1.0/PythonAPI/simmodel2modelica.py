@@ -24,84 +24,315 @@ def s2b(s):
     #return s
 
 class Property(object):
+    
+    '''
+    This class represents a mapped property 
+
+    Parameters:
+    ----------
+        
+               
+    obj: obj
+        ?
+        
+
+    Attributes:
+    ----------
+       
+    name : str
+        Modelica name of property
+    
+    
+    value : str
+        Value of property
+    
+    targetLocation : str
+        ?
+        
+    recordInstance : str
+        ?
+        
+    valueGroup : str
+        ?
+    
+    flag : str
+        ?
+
+    '''
+    
     def __init__(self, obj):
         self.obj = obj
-    def getName(self):
-        return b2s(lib.property_get_name(self.obj))
-    def getValue(self):
-        return b2s(lib.property_get_value(self.obj))
-    def getTargetLocation(self):
-        return b2s(lib.property_get_target_location(self.obj))
-    def getRecordInstance(self):
-        return b2s(lib.property_get_record_instance(self.obj))
-    def getRecordLocation(self):
-        return b2s(lib.property_get_record_location(self.obj))
-    def getValueGroup(self):
-        return lib.property_get_value_group(self.obj)
-    def getFlag(self):
-        return lib.property_get_flag(self.obj)
+        self._name = None
+        self._value = None
+        self._targetLocation = None
+        self._recordInstance = None
+        self._recordLocation = None
+        self._valueGroup = None
+        self._flag = None
+   
+    @property
+    def name(self):
+        if self._name == None:
+            self._name = b2s(lib.property_get_name(self.obj))
+        return self._name
+    @property
+    def value(self):
+        if self._value == None:    
+            self._value = b2s(lib.property_get_value(self.obj))
+        return self._value
+    @property
+    def targetLocation(self):
+        if self._targetLocation == None:    
+            self._targetLocation = b2s(lib.property_get_target_location(self.obj))
+        return self._targetLocation
+    @property
+    def recordInstance(self):
+        if self._recordInstance == None:    
+            self._recordInstance = b2s(lib.property_get_record_instance(self.obj))
+        return self._recordInstance
+    @property
+    def recordLocation(self):
+        if self._recordLocation == None:    
+            self._recordLocation = b2s(lib.property_get_record_location(self.obj))
+        return self._recordLocation
+    @property
+    def valueGroup(self):
+        if self._valueGroup == None:    
+            self._valueGroup = lib.property_get_value_group(self.obj)
+        return self._valueGroup
+    @property
+    def flag(self):
+        if self._flag == None:    
+            self._flag = lib.property_get_flag(self.obj)
+        return self._flag
+
 
 class Component(object):
+    '''
+    This class represents a mapped component 
+
+    Parameters:
+    ----------
+        
+               
+    obj: obj
+        ?
+        
+
+    Attributes:
+    ----------
+       
+    targetName : str
+        Modelica name of component
+    
+    
+    targetLocation : str
+        Modelica library path of component
+    
+    properties : list of Property()
+        Properties of Modelica model
+
+    '''
     def __init__(self, obj):
         self.obj = obj
-    def getTargetName(self):
-        return b2s(lib.component_get_target_name(self.obj))
-    def getTargetLocation(self):
-        return b2s(lib.component_get_target_location(self.obj))
-    def getProperty(self, id):
-        return lib.component_get_property(self.obj, id)
-    def getPropertyNumber(self):
-        return lib.component_get_property_number(self.obj)
+        self._targetName = None
+        self._targetLocation = None
+        self._properties = None
+     
+    @property
+    def targetName(self):
+        if self._targetName == None:
+            self._targetName = b2s(lib.component_get_target_name(self.obj))
+        return self._targetName
+    @property
+    def targetLocation(self):
+        if self._targetLocation == None:
+            self._targetLocation = b2s(lib.component_get_target_location(self.obj))
+        return self._targetLocation
+    @property
+    def properties(self):
+        if self._properties == None:
+            self._properties = []
+            for id in range(lib.component_get_property_number(self.obj)):
+                self._properties.append(lib.component_get_property(self.obj, id))
+        return self._properties    
+
 
 class RuleData(object):
+    '''
+    This class is the root object of Python API 
+
+    Parameters:
+    ----------
+        
+               
+    obj: obj
+        ?
+        
+
+    Attributes:
+    ----------
+       
+    components : list of Component()
+        List of all Modelica components
+    
+    
+    simProject : SimProject()
+        Instance of SimProject()
+    
+    loopConnections : list of SimConnection()
+        list of Sim Connections between components(?)
+
+    '''
     def __init__(self):
         self.obj = lib.rule_data_init()
-    def getComponent(self, id):
-        return lib.rule_data_get_component(self.obj, id)
-    def getComponentNumber(self):
-        return lib.rule_data_get_component_number(self.obj)
-    def getSimProject(self):
-        return lib.sim_project_init(self.obj)
+        self._components = None
+        self._simProject = None
+        self._loopConnections = None
+    @property 
+    def components(self):
+        if self._components == None:
+            self._components = []
+            for id in range(lib.rule_data_get_component_number(self.obj)):
+                self._components.append(lib.rule_data_get_component(self.obj, id))
+        return self._components    
+    @property
+    def simProject(self):
+         if self._simProject == None:
+             self._simProject = lib.sim_project_init(self.obj)
+         return self._simProject
+    @property 
+    def loopConnections(self):
+        if self._loopConnections == None:
+            self._loopConnections = []
+            for id in range(lib.sim_system_get_loop_connection_number(self.obj)):
+                self._loopConnections.append(lib.sim_system_get_loop_connection(self.obj, id))
+        return self._loopConnections   
+
     def transformModel(self):
         return lib.rule_data_transform_model(self.obj)
     def setUseCaseLocation(self, case_loc):
         return lib.rule_data_set_use_case_location(self.obj, case_loc)
     def setDataLocation(self, useCaseLoc, mapRuleLoc):
         return lib.rule_data_set_data_location(self.obj, s2b(useCaseLoc), s2b(mapRuleLoc))
-        #return lib.rule_data_set_data_location(self.obj, useCaseLoc.encode(fs_enc), mapRuleLoc.encode(fs_enc))
-        #return lib.rule_data_set_data_location(self.obj, useCaseLoc, mapRuleLoc)
-    def getLoopConnection(self, id):
-        return lib.sim_system_get_loop_connection(self.obj, id)
-    def getLoopConnectionNumber(self):
-        return lib.sim_system_get_loop_connection_number(self.obj)
 
 class SimConnection(object):
+    '''
+    This class represents an unmapped connection of SimModel
+
+    Parameters:
+    ----------
+ 
+    obj: obj
+        ?  
+
+    Attributes:
+    ----------
+       
+    outletComponent : str
+        ?
+    
+    
+    inletComponent : str
+        Modelica library path of component
+    
+    properties : list of Property()
+        Properties of Modelica model
+
+    '''
     def __init__(self, obj):
         self.obj = obj
-    def getOutletComponent(self):
-        return lib.sim_system_get_outlet_component(self.obj)
-    def getInletComponent(self):
-        return lib.sim_system_get_inlet_component(self.obj)
+        self._outletComponent = None
+        self._inletComponent = None
+        
+    @property
+    def outletComponent(self):
+        if self._outletComponent == None:
+            self._outletComponent = lib.sim_system_get_outlet_component(self.obj)
+        return self._outletComponent
+    @property
+    def inletComponent(self):
+        if self._inletComponent == None:
+            self._inletComponent = lib.sim_system_get_inlet_component(self.obj)
+        return self._inletComponent
 
 class SimProject(object):
+    '''
+    This class represents an unmapped SimProject 
+
+    Parameters:
+    ----------
+ 
+    obj: obj
+        ?  
+
+    Attributes:
+    ----------
+       
+    weatherLocation : str
+        Location of reference year
+    
+    
+    simSite : str
+        Location of building
+
+    '''
     def __init__(self, obj):
         self.obj = obj
-    def getWeatherLocationCity(self):
-        return b2s(lib.sim_project_get_weather_location_city(self.obj))
-    def getSimSiteNumber(self):
-        return lib.sim_project_get_sim_site_number(self.obj)
-    def getSimSite(self, id):
-        return lib.sim_project_get_sim_site(self.obj, id)
+        self._weatherLocation = None
+        self._simSite = None
+        
+    @property
+    def weatherLocation(self):
+        if self._weatherLocation == None:
+            self._weatherLocation = b2s(lib.sim_project_get_weather_location_city(self.obj))
+        return self._weatherLocation
+    @property
+    def simSite(self):
+        if self._simSite == None:
+            self._simSite = []
+            for id in range(lib.sim_project_get_sim_site_number(self.obj)):
+                self._simSite.append(lib.sim_project_get_sim_site(self.obj, id))
+        return self._simSite 
 
 class SimSite(object):
+    '''
+    This class represents an unmapped SimSite 
+
+    Parameters:
+    ----------
+ 
+    obj: obj
+        ?  
+
+    Attributes:
+    ----------
+       
+    name : str
+        name of the site
+    
+    
+    buildings : list SimBuilding()
+        list of SimBuilding instances
+
+    '''
     def __init__(self, obj):
         self.obj = obj
-    def getSiteName(self):
-        return b2s(lib.sim_site_get_name(self.obj))
-    def getSimBuilding(self, id):
-        return lib.sim_site_get_sim_building(self.obj, id)
-    def getSimBuildingNumber(self):
-        return lib.sim_site_get_sim_building_number(self.obj)
+        self._name = None
+        self._buildings = None
+        
+    @property
+    def name(self):
+        if self._name == None:
+            self._name = b2s(lib.sim_site_get_name(self.obj))
+        return self._name
+    @property
+    def buildings(self):
+        if self._buildings == None:
+            self._buildings = []
+            for id in range(lib.sim_site_get_sim_building_number(self.obj)):
+                self._buildings.append(lib.sim_site_get_sim_building(self.obj, id))
+        return self._buildings   
 
 class SimBuilding(object):
     def __init__(self, obj):
@@ -395,136 +626,3 @@ lib.sim_system_hotwater_get_water_control_component.restype = SimSystem
 lib.sim_system_hotwater_get_water_control_component.argtypes = [c_void_p, c_int]
 lib.sim_system_hotwater_get_water_control_component_number.restype = c_int
 lib.sim_system_hotwater_get_water_control_component_number.argtypes = ()
-
-if __name__ == "__main__":
-    # all following lines are just  examples
-
-    # specify the data location: SimModel use case and its
-    # mapping rule instance for given Modelica library
-    useCaseLoc = os.path.join(rootPath, "Generic_API\\Generic_API_1.0\\xml_use_case\\Boiler_Gas_VDI6020_Test.xml")
-    mapRuleLoc = os.path.join(rootPath, "Generic_API\\Generic_API_1.0\\xml_mapping_rule\\AixLib_Mapping_Rule.xml")
-    # create mapped data object
-    MapData = RuleData()
-    # set data location
-    MapData.setDataLocation(useCaseLoc, mapRuleLoc)
-    #MapData.setDataLocation(b"..\\xml_use_case\\Boiler_Gas_VDI6020_Test.xml", b"..\\xml_mapping_rule\\AixLib_Mapping_Rule.xml")
-    print(sys.getfilesystemencoding())
-    # transform SimModel data into Modelica objects
-    MapData.transformModel()
-
-    # access transformed / mapped data
-    componentNumber = MapData.getComponentNumber()
-    # iterate each mapped component data
-    for comId in range(0, componentNumber):
-        # retrieve the mapped component name and its location in AixLib
-        print("Component location: " + MapData.getComponent(comId).getTargetLocation() + ", name: " + MapData.getComponent(comId).getTargetName())
-        propertyNumber = MapData.getComponent(comId).getPropertyNumber()
-        # iterate mapped properties of each component
-        for proId in range(0, propertyNumber):
-            if MapData.getComponent(comId).getProperty(proId).getRecordInstance() != "":
-                print("record structure name: " + MapData.getComponent(comId).getProperty(proId).getRecordInstance())
-            if MapData.getComponent(comId).getProperty(proId).getRecordLocation() != "":
-                print("record structure location: " + MapData.getComponent(comId).getProperty(proId).getRecordLocation())
-            print("Property: " + MapData.getComponent(comId).getProperty(proId).getTargetLocation() + MapData.getComponent(comId).getProperty(proId).getName() + "=" + MapData.getComponent(comId).getProperty(proId).getValue())
-            print("\n")
-
-    # access hierarchy
-    print("Get SimProject object")
-    simProject = MapData.getSimProject()
-    print("Weather location city: " + simProject.getWeatherLocationCity())
-
-    print("Get 1st SimSite object")
-    simSite = simProject.getSimSite(0);
-    print("Site name: " + simSite.getSiteName())
-
-    print("Get SimBuilding object")
-    simBuilding = simSite.getSimBuilding(0)
-    print("SimBuilding number: {}".format(simSite.getSimBuildingNumber()))
-
-    print("Get SimThermalZone object")
-    simBuilding.getSimThermalZone(0)
-    print("SimThermalZone number: {}".format(simBuilding.getSimThermalZoneNumber()))
-
-    # access the HVAC system objects of the data model
-    # retrieve the total number of HVAC systems saved in the data model
-    systemNumber = simBuilding.getSimSystemNumber()
-    # iterate each HVAC system
-    for id in range(0, systemNumber):
-        # retrieve the SimSystem object
-        simSystem = simBuilding.getSimSystem(id)
-        # e.g., the hot water loop system in our 1st use case
-        if simSystem.getSystemName() == "hw_system":
-            # convert the system object to its own class type: hot water system
-            simSystemHotwater = simSystem.toHotwaterSystem()
-
-    # access the internal properties of the hot water looping system: max loop temperature
-    print("System max loop temp: {}".format(simSystemHotwater.getMaxLoopTemp()))
-
-    # retrieve the supply side of the hot water system
-    supplySystem = simSystemHotwater.getSupplySide()
-    # retrieve the total number of water supply components
-    supplyComponentNumber = supplySystem.getSupplyComponentNumber()
-    print("supply component number: {}".format(supplyComponentNumber))
-    # iterate each components of the supply side
-    for id in range(0, supplyComponentNumber):
-        simComponent = supplySystem.getSupplyComponent(id)
-        # retrieve the component name
-        print("supply component name: " + simComponent.getSystemName())
-        # convert the component object to its own class type based on the name
-        if simComponent.getSystemName() == "SimFlowMover_Pump_VariableSpeedReturn":
-            # convert to the pump type with variable flow speed return
-            simPump = simComponent.toPumpVarSpedRet()
-            # access the internal properties of the pump: flow rate
-            print("pump rated flow rate:" + simPump.getRatedFlowRate())
-        elif simComponent.getSystemName() == "SimFlowPlant_Boiler_BoilerHotWater":
-            # convert to the boiler type of hot water
-            simBoiler = simComponent.toBoilerHotWater()
-            print("Nom Cap: " + repr(simBoiler.getFlowPlantNomCap()))
-            print("Sizing factor: " + repr(simBoiler.getFlowPlantSizingFactor()))
-            # ...
-
-    # retrieve the demand side of the hot water system
-    demandSystem = simSystemHotwater.getDemandSide()
-    # retrieve the total number of water demand components
-    demandComponentNumber = demandSystem.getDemandComponentNumber()
-    # iterate each components of the demand side
-    for id in range(0, demandComponentNumber):
-        simComponent = demandSystem.getDemandComponent(id)
-        # convert to the convective water heater
-        if simComponent.getSystemName() == "SimFlowEnergyTransfer_ConvectiveHeater_Water":
-            simHeater = simComponent.toHeaterConvectiveWater()
-            # ...
-
-    # retrieve the control side of the hot water system
-    controlSystem = simSystemHotwater.getControlSide()
-    controlComponentNumber = controlSystem.getControlComponentNumber()
-    print("control component number: {}".format(controlComponentNumber))
-    for id in range(0, controlComponentNumber):
-        simComponent = controlSystem.getControlComponent(id)
-        # convert to the supply water temperature control
-        if simComponent.getSystemName() == "temperature_control":
-            simTempCtrl = simComponent.toSupplyWaterTemperatureControl()
-            # ...
-        # convert to the dry bulb temperature sensor
-        elif simComponent.getSystemName() == "drybulb":
-            simTempDryBulb = simComponent.toTemperatureDryBulbSensor()
-            # ...
-
-    # access loop connections
-    connectionNumber = MapData.getLoopConnectionNumber()
-    for conId in range(0, connectionNumber):
-        print("Connection " + repr(conId))
-        # retrieve one connection
-        simConnection = MapData.getLoopConnection(conId)
-
-        # retrieve the component with water outlet port
-        simComponentWaterOut = simConnection.getOutletComponent()
-        if simComponentWaterOut.getSystemName() == "SimFlowMover_Pump_VariableSpeedReturn":
-            # convert to the pump type with variable flow speed return
-            simPumpWaterOut = simComponentWaterOut.toPumpVarSpedRet()
-            # access the internal properties of the pump:
-            print("pump rated flow rate in the loop: " + simPumpWaterOut.getRatedFlowRate())
-
-        # retrieve the component with water inlet port
-        simComponentWaterIn = simConnection.getInletComponent()
-        # ...
