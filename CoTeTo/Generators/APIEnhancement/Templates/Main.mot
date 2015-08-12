@@ -19,3 +19,7 @@ ${MapData.simProject.weatherLocation}
 		${i.name} ${i.value} ${i.targetLocation} ${i.recordInstance}  ${i.recordLocation} ${i.valueGroup} ${i.flag}
 	% endfor
 % endfor
+${"this is some text" | u}
+${"this is some text" | h}
+${"this is some text" | x}
+${"this is some text" | trim}

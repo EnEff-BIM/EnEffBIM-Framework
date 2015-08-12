@@ -1,0 +1,14 @@
+within AixLib;
+model ${MapData.simProject.simSite[0].name | }
+
+% for comp in MapData.components:
+${comp.targetLocation} ${comp.targetName}(
+% for i in comp.properties: 
+% if i.recordInstance != '':
+${i.recordInstance}=${i.recordLocation}(),
+% else:
+${i.name} = ${i.value},
+% endif;
+% endfor  
+);
+% endfor
