@@ -1,7 +1,9 @@
 ## json_files is a dictionary (key=file path, value=file content)
 % for jFile in json_files:
-  <% jObj = json_files[jFile] %>
-  <% name=jObj['NAME'].replace('-','') %>
+<%
+jObj = json_files[jFile]
+name=jObj['NAME'].replace('-','')
+%>
 ##
 within HelmholtzMedia.HelmholtzFluids;
 package ${name} "${name}"
