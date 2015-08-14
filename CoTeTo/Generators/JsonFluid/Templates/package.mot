@@ -1,4 +1,6 @@
-## json_files is a dictionary (key=file path, value=file content)
+## json_files is a dictionary with keys=filepath and values=json.load(file)
+## json.load returns json arrays as python list
+## json.load returns json objects as python dict
 % for jFile in json_files:
 <%
 jObj = json_files[jFile]
