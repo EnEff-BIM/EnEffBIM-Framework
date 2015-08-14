@@ -29,13 +29,13 @@
     pressureMelting2=fill(0.0, 0, 2),
     pressureMelting3=fill(0.0, 0, 2))
   "Coefficients for the ancillary equations (PS5, DL1, DV3, ML1)";
-  
-    <% 
+
+    <%
      import numpy as np
-     n = jObj['ANCILLARIES']['rhoL']['n']
-     t = jObj['ANCILLARIES']['rhoL']['t']
-     densityLiquid = np.empty([len(n),2])
-     densityLiquid[:,0] = n
-     densityLiquid[:,1] = t
+     n = jObj['ANCILLARIES']['pS']['n']
+     t = jObj['ANCILLARIES']['pS']['t']
+     pressureSaturation = np.empty([len(n),2])
+     pressureSaturation[:,0] = n
+     pressureSaturation[:,1] = t
   %>
-  ${densityLiquid}
+  ${pressureSaturation}

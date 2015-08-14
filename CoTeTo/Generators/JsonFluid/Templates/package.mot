@@ -1,5 +1,5 @@
 % for jFile in json_files:
-  % for jObj in json_files[jFile]:
+  <% jObj = json_files[jFile] %>
   <% name=jObj['NAME'].replace('-','') %>
 ##
 within HelmholtzMedia.HelmholtzFluids;
@@ -30,5 +30,4 @@ extends Interfaces.PartialHelmholtzMedium(
 
 end Butane;
 ##
-  % endfor
 % endfor
