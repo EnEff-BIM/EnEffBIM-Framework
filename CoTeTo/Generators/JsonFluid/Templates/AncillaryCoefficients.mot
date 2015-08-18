@@ -9,8 +9,8 @@
   ancillaryCoefficientsButane(
     pressureSaturationModel=PressureSaturationModel.PS5,
     pressureSaturation=[
-    % for n in pSn:
-      ${n}, ${pSt[loop.index]}${endLin if not loop.last else endMat+','}
+    % for n,t in list(zip(pSn,pSt)):
+      ${n}, ${t}${endLin if not loop.last else endMat+','}
     % endfor
     densityLiquidModel=DensityLiquidModel.DL1,
     densityLiquid=[
