@@ -1,20 +1,17 @@
 <%page args="jObj"/>
 <%
- import numpy as np
+ endLin = ';'
+ endMat = ']'
  pSn = jObj['ANCILLARIES']['pS']['n']
  pSt = jObj['ANCILLARIES']['pS']['t']
- pressureSaturation = np.empty([len(pSn),2])
- pressureSaturation[:,0] = pSn
- pressureSaturation[:,1] = pSt
 %>
   final constant Ancillary.AncillaryCoefficients
   ancillaryCoefficientsButane(
     pressureSaturationModel=PressureSaturationModel.PS5,
     pressureSaturation=[
-    % for i in range(0,len(pSn)-1):
-      ${pSn[i]}, ${pSt[i]};
+    % for n in pSn:
+      ${n}, ${pSt[loop.index]}${endLin if not loop.last else endMat+','}
     % endfor
-      ${pSn[-1]}, ${pSt[-1]}]
     densityLiquidModel=DensityLiquidModel.DL1,
     densityLiquid=[
        0.52341E+01,   0.44;
