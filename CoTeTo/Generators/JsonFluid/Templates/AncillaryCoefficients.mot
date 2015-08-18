@@ -2,14 +2,12 @@
 <%
  endLin = ';'
  endMat = ']'
- pSn = jObj['ANCILLARIES']['pS']['n']
- pSt = jObj['ANCILLARIES']['pS']['t']
 %>
   final constant Ancillary.AncillaryCoefficients
   ancillaryCoefficientsButane(
     pressureSaturationModel=PressureSaturationModel.PS5,
     pressureSaturation=[
-    % for n,t in list(zip(pSn,pSt)):
+    % for n,t in list(zip(jObj['ANCILLARIES']['pS']['n'],jObj['ANCILLARIES']['pS']['t'])):
       ${n}, ${t}${endLin if not loop.last else endMat+','}
     % endfor
     densityLiquidModel=DensityLiquidModel.DL1,
