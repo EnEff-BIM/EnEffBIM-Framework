@@ -1,12 +1,20 @@
 <%page args="jObj"/>
+<%
+ import numpy as np
+ pSn = jObj['ANCILLARIES']['pS']['n']
+ pSt = jObj['ANCILLARIES']['pS']['t']
+ pressureSaturation = np.empty([len(pSn),2])
+ pressureSaturation[:,0] = pSn
+ pressureSaturation[:,1] = pSt
+%>
   final constant Ancillary.AncillaryCoefficients
   ancillaryCoefficientsButane(
     pressureSaturationModel=PressureSaturationModel.PS5,
     pressureSaturation=[
-      -0.71897E+01,   1.0;
-       0.26122E+01,   1.5;
-      -0.21729E+01,   2.0;
-      -0.27230E+01,   4.5],
+    % for i in range(0,len(pSn)-1):
+      ${pSn[i]}, ${pSt[i]};
+    % endfor
+      ${pSn[-1]}, ${pSt[-1]}]
     densityLiquidModel=DensityLiquidModel.DL1,
     densityLiquid=[
        0.52341E+01,   0.44;
@@ -29,13 +37,3 @@
     pressureMelting2=fill(0.0, 0, 2),
     pressureMelting3=fill(0.0, 0, 2))
   "Coefficients for the ancillary equations (PS5, DL1, DV3, ML1)";
-
-    <%
-     import numpy as np
-     n = jObj['ANCILLARIES']['pS']['n']
-     t = jObj['ANCILLARIES']['pS']['t']
-     pressureSaturation = np.empty([len(n),2])
-     pressureSaturation[:,0] = n
-     pressureSaturation[:,1] = t
-  %>
-  ${pressureSaturation}
