@@ -1,25 +1,31 @@
 <%page args="jObj"/>
+<%
+ endLin = ';'
+ endMat = ']'
+ pSn = jObj['ANCILLARIES']['pS']['n']
+ pSt = jObj['ANCILLARIES']['pS']['t']
+ dLn = jObj['ANCILLARIES']['rhoL']['n']
+ dLt = jObj['ANCILLARIES']['rhoL']['t']
+ dVn = jObj['ANCILLARIES']['rhoV']['n']
+ dVt = jObj['ANCILLARIES']['rhoV']['t']
+%>
   final constant Ancillary.AncillaryCoefficients
   ancillaryCoefficientsButane(
     pressureSaturationModel=PressureSaturationModel.PS5,
     pressureSaturation=[
-      -0.71897E+01,   1.0;
-       0.26122E+01,   1.5;
-      -0.21729E+01,   2.0;
-      -0.27230E+01,   4.5],
+    % for n,t in list(zip(pSn,pSt)):
+      ${n}, ${t}${endLin if not loop.last else endMat+','}
+    % endfor
     densityLiquidModel=DensityLiquidModel.DL1,
     densityLiquid=[
-       0.52341E+01,   0.44;
-      -0.62011E+01,   0.60;
-       0.36063E+01,   0.76;
-       0.22137E+00,   5.00],
+    % for n,t in list(zip(dLn,dLt)):
+      ${n}, ${t}${endLin if not loop.last else endMat+','}
+    % endfor
     densityVaporModel=DensityVaporModel.DV3,
     densityVapor=[
-      -0.27390E+01,   0.391;
-      -0.57347E+01,   1.14;
-      -0.16408E+02,   3.0;
-      -0.46986E+02,   6.5;
-      -0.10090E+03,  14.0],
+    % for n,t in list(zip(dVn,dVt)):
+      ${n}, ${t}${endLin if not loop.last else endMat+','}
+    % endfor
     pressureMeltingModel=PressureMeltingModel.ML1,
     T_reducing=134.895,
     p_reducing=0.00066566e3,
@@ -29,13 +35,3 @@
     pressureMelting2=fill(0.0, 0, 2),
     pressureMelting3=fill(0.0, 0, 2))
   "Coefficients for the ancillary equations (PS5, DL1, DV3, ML1)";
-  
-    <% 
-     import numpy as np
-     n = jObj['ANCILLARIES']['rhoL']['n']
-     t = jObj['ANCILLARIES']['rhoL']['t']
-     densityLiquid = np.empty([len(n),2])
-     densityLiquid[:,0] = n
-     densityLiquid[:,1] = t
-  %>
-  ${densityLiquid}
