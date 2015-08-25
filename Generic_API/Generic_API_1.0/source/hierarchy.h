@@ -34,11 +34,11 @@
 #ifndef HIERARCH_H
 #define HIERARCH_H
 
-// include Qt base object
-#include <QObject>
 // include the head file
 // saving translated model data
 #include "SimmodelAPI.h"
+// include Qt base object
+#include <QObject>
 
 // Forward declarations.
 //

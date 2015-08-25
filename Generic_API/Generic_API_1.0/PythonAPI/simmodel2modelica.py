@@ -337,6 +337,7 @@ class SimSite(object):
 class SimBuilding(object):
     def __init__(self, obj):
         self.obj = obj
+        self._simSystem = None
     def getSimZoneHvacGroup(self, id):
         return lib.sim_building_get_sim_zone_hvac_group(self.obj, id)
     def getSimZoneHvacGroupNumber(self):
@@ -349,6 +350,11 @@ class SimBuilding(object):
         return lib.sim_building_get_sim_system(self.obj, id)
     def getSimSystemNumber(self):
         return lib.sim_building_get_sim_system_number(self.obj)
+    @property
+    def simSystem(self):
+        if self._simSystem == None:
+            self._simSystem = [lib.sim_building_get_sim_system(self.obj, id) for id in range(lib.sim_building_get_sim_system_number(self.obj))]
+        return self._simSystem                
 
 class SimZoneHvacGroup(SimBuilding):
     def __init__(self, obj):
@@ -364,7 +370,7 @@ class SimSystem(object):
     def toHotwaterSystem(self):
         return lib.sim_system_to_hotwater_system(self.obj)
     def getSystemName(self):
-        return lib.sim_system_get_name(self.obj)
+        return b2s(lib.sim_system_get_name(self.obj))
     def toPumpVarSpedRet(self):
         return lib.sim_system_to_pump_varSpedRet(self.obj)
     def toBoilerHotWater(self):
