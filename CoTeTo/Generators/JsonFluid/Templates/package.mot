@@ -1,6 +1,11 @@
+## json_files is a dictionary with keys=filepath and values=json.load(file)
+## json.load returns json arrays as python list
+## json.load returns json objects as python dict
 % for jFile in json_files:
-  % for jObj in json_files[jFile]:
-  <% name=jObj['NAME'].replace('-','') %>
+<%
+jObj = json_files[jFile]
+name=jObj['NAME'].replace('-','')
+%>
 ##
 within HelmholtzMedia.HelmholtzFluids;
 package ${name} "${name}"
@@ -30,5 +35,4 @@ extends Interfaces.PartialHelmholtzMedium(
 
 end Butane;
 ##
-  % endfor
 % endfor

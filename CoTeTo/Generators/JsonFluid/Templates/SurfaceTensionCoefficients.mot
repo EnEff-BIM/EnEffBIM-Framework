@@ -1,5 +1,13 @@
-<%page args="jObj"/>
+<%page args="jObj"/><%
+ endLin = ';'
+ endMat = ']'
+ sta = jObj['ANCILLARIES']['surface_tension']['a']
+ stn = jObj['ANCILLARIES']['surface_tension']['n']
+%>
   final constant Transport.SurfaceTensionCoefficients
   surfaceTensionCoefficientsButane(
     coeffs=[
-      0.05418,    1.26]) "Coefficients for the surface tension";
+    % for a,n in list(zip(sta,stn)):
+      ${a}, ${n}${endLin if not loop.last else endMat+')'}
+    % endfor
+    "Coefficients for the surface tension";
