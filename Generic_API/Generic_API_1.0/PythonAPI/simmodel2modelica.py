@@ -250,6 +250,7 @@ class SimConnection(object):
     def outletComponent(self):
         if self._outletComponent == None:
             self._outletComponent = lib.sim_system_get_outlet_component(self.obj)
+            
         return self._outletComponent
     @property
     def inletComponent(self):
@@ -364,7 +365,11 @@ class SimBuilding(object):
         if self._simSystem == None:
             self._simSystem = []
             for id in range(lib.sim_building_get_sim_system_number(self.obj)):
-                self._simSystem.append(lib.sim_building_get_sim_system(self.obj, id))
+                inter_system = lib.sim_building_get_sim_system(self.obj, id)
+                if b2s(inter_system.getSystemName())== "hw_system":
+                    inter_system = inter_system.toHotwaterSystem()
+                    print(inter_system)
+                self._simSystem.append(inter_system)
         return self._simSystem 	
 
 class SimZoneHvacGroup(SimBuilding):
