@@ -468,16 +468,19 @@ class SimSystemHotwater(object):
             self._supplySide = lib.sim_system_hotwater_get_supply(self.obj)
         return self._supplySide
         
+    @property
+    def demandSide(self):
+        if self._demandSide == None:
+            self._demandSide = lib.sim_system_hotwater_get_demand(self.obj)
+        return self._demandSide
+    
     def getMaxLoopTemp(self):
         return lib.sim_system_hotwater_get_max_loop_temp(self.obj)
     def getMinLoopTemp(self):
         return lib.sim_system_hotwater_get_min_loop_temp(self.obj)
     def getMaxLoopFlowRate(self):
         lib.sim_system_hotwater_get_max_loop_flow_rate(self.obj)
-    def getSupplySide(self):
-        return lib.sim_system_hotwater_get_supply(self.obj)
-    def getDemandSide(self):
-        return lib.sim_system_hotwater_get_demand(self.obj)
+
     def getControlSide(self):
         return lib.sim_system_hotwater_get_control(self.obj)
 
@@ -496,22 +499,21 @@ class SimSystemHotwaterSupply(object):
                     supply_help = lib.sim_system_hotwater_get_water_supply_component(self.obj, id).toPumpVarSpedRet()
                 elif lib.sim_system_hotwater_get_water_supply_component(self.obj, id).identifier== "SimFlowPlant_Boiler_BoilerHotWater":
                     supply_help = lib.sim_system_hotwater_get_water_supply_component(self.obj, id).toBoilerHotWater()    
-                self._supplyComponents.append(supply_help)
-                
+                self._supplyComponents.append(supply_help)      
         return self._supplyComponents
-     
-    def getSupplyComponent(self, id):
-        return lib.sim_system_hotwater_get_water_supply_component(self.obj, id)
-    def getSupplyComponentNumber(self):
-        return lib.sim_system_hotwater_get_water_supply_component_number(self.obj)
 
 # sim pump of variable speed return
 class SimPumpVarSpedRet(object):
     def __init__(self, obj):
         self.obj = obj
-    def getRatedFlowRate(self):
-        return lib.sim_pump_varSpedRet_ratedFlowRate(self.obj)
-
+        self._ratedFlowRate = None
+        
+    @property
+    def ratedFlowRate(self):
+        if self._ratedFlowRate == None:
+            self._ratedFlowRate == lib.sim_pump_varSpedRet_ratedFlowRate(self.obj)
+        return self._ratedFlowRate
+    
 # sim boiler of hot water
 class SimBoilerHotWater(object):
     def __init__(self, obj):
@@ -542,11 +544,23 @@ class SimBoilerHotWater(object):
 class SimSystemHotwaterDemand(object):
     def __init__(self, obj):
         self.obj = obj
+        
+        self._demandComponents = None
+        
+    @property
+    def demandComponents(self):
+        if self._demandComponents == None:
+            self._demandComponents = []
+            for id in range(lib.sim_system_hotwater_get_water_demand_component_number(self.obj)):
+                if lib.sim_system_hotwater_get_water_demand_component(self.obj, id).identifier == "SimFlowEnergyTransfer_ConvectiveHeater_Water":
+                    demand_help = lib.sim_system_hotwater_get_water_demand_component(self.obj, id).toHeaterConvectiveWater()
+                self._demandComponents.append(demand_help)
+        return self._demandComponents
     def getDemandComponent(self, id):
         return lib.sim_system_hotwater_get_water_demand_component(self.obj, id)
     def getDemandComponentNumber(self):
         return lib.sim_system_hotwater_get_water_demand_component_number(self.obj)
-
+            
 # sim heater of convective water
 class SimHeaterConvectiveWater(object):
     def __init__(self, obj):
