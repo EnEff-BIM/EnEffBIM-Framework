@@ -23,6 +23,13 @@ MapData.setDataLocation(useCaseLoc, mapRuleLoc)
 # transform SimModel data into Modelica objects
 MapData.transformModel()
 
+#This example is telated to issue57 
+print(MapData.simProject.simSite[0].buildings[0].buildingSystem[0].supplySide.supplyComponents[1])
+print(MapData.loopConnections[0].inletComponent)
+print(MapData.loopConnections[0].outletComponent)
+
+
+"""
 for component in MapData.components:
     print("Component location: " + component.targetName + ", name: " + component.targetLocation)
     for property in component.properties:
@@ -31,3 +38,4 @@ for component in MapData.components:
         if property.recordLocation != "":
             print("record structure location: " + property.recordLocation)
         print("Property: "+ property.targetLocation + property.name + "=" + property.value)
+"""

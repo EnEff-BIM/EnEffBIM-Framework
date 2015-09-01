@@ -1,6 +1,7 @@
 from ctypes import *
 
 import os, sys
+
 rootPath = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(__file__))))
 modulePath = os.path.join(rootPath, 'Generic_API\Generic_API_1.0')
 dllPath = os.path.join(rootPath, 'Generic_API\Generic_API_1.0\PythonAPI')
@@ -249,13 +250,30 @@ class SimConnection(object):
     @property
     def outletComponent(self):
         if self._outletComponent == None:
-            self._outletComponent = lib.sim_system_get_outlet_component(self.obj)
             
+            if lib.sim_system_get_outlet_component(self.obj).identifier == "SimFlowPlant_Boiler_BoilerHotWater":
+                print("Pointer to specific Boiler")
+                self._outletComponent =lib.sim_system_get_outlet_component(self.obj).toBoilerHotWater()
+            elif lib.sim_system_get_outlet_component(self.obj).identifier == "SimFlowEnergyTransfer_ConvectiveHeater_Water":
+                print("Pointer to specific Radiator")
+                self._outletComponent =lib.sim_system_get_outlet_component(self.obj).toHeaterConvectiveWater()
+            elif lib.sim_system_get_outlet_component(self.obj).identifier == "SimFlowMover_Pump_VariableSpeedReturn":
+                print("Pointer to specific Pump")
+                self._outletComponent =lib.sim_system_get_outlet_component(self.obj).toPumpVarSpedRet()
         return self._outletComponent
     @property
     def inletComponent(self):
         if self._inletComponent == None:
-            self._inletComponent = lib.sim_system_get_inlet_component(self.obj)
+            
+            if lib.sim_system_get_inlet_component(self.obj).identifier == "SimFlowPlant_Boiler_BoilerHotWater":
+                print("Pointer to specific Boiler")
+                self._inletComponent =lib.sim_system_get_inlet_component(self.obj).toBoilerHotWater()
+            elif lib.sim_system_get_inlet_component(self.obj).identifier == "SimFlowEnergyTransfer_ConvectiveHeater_Water":
+                print("Pointer to specific Radiator")
+                self._inletComponent =lib.sim_system_get_inlet_component(self.obj).toHeaterConvectiveWater()
+            elif lib.sim_system_get_inlet_component(self.obj).identifier == "SimFlowMover_Pump_VariableSpeedReturn":
+                print("Pointer to specific Pump")
+                self._inletComponent =lib.sim_system_get_inlet_component(self.obj).toPumpVarSpedRet()
         return self._inletComponent
 
 class SimProject(object):
@@ -289,6 +307,7 @@ class SimProject(object):
         if self._weatherLocation == None:
             self._weatherLocation = b2s(lib.sim_project_get_weather_location_city(self.obj))
         return self._weatherLocation
+    
     @property
     def simSite(self):
         if self._simSite == None:
@@ -506,6 +525,7 @@ class SimSystemHotwaterSupply(object):
 class SimPumpVarSpedRet(object):
     def __init__(self, obj):
         self.obj = obj
+
         self._ratedFlowRate = None
         
     @property
@@ -556,10 +576,6 @@ class SimSystemHotwaterDemand(object):
                     demand_help = lib.sim_system_hotwater_get_water_demand_component(self.obj, id).toHeaterConvectiveWater()
                 self._demandComponents.append(demand_help)
         return self._demandComponents
-    def getDemandComponent(self, id):
-        return lib.sim_system_hotwater_get_water_demand_component(self.obj, id)
-    def getDemandComponentNumber(self):
-        return lib.sim_system_hotwater_get_water_demand_component_number(self.obj)
             
 # sim heater of convective water
 class SimHeaterConvectiveWater(object):
