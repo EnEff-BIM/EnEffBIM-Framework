@@ -64,6 +64,7 @@ for simSiteObj in simProject.simSite:
                             print("water outlet component: "+connectionObj.outletComponent.getSystemName())
                             # retrieve the water inlet component of this loop connection
                             print("water intlet component: "+connectionObj.inletComponent.getSystemName())
+                            print("\n")
                 
                 
 
