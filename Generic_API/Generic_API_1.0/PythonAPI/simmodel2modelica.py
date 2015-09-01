@@ -337,6 +337,28 @@ class SimSite(object):
         return self._buildings   
 
 class SimBuilding(object):
+    '''
+    This class represents an unmapped SimBuilding
+
+    Parameters:
+    ----------
+ 
+    obj: obj
+        ?  
+
+    Attributes:
+    ----------
+       
+    simZoneHvacGroup : SimZoneHvacGroup()
+        list of zone hvac groups (?)
+    
+    
+    simThermalZone : SimThermalZone()
+        list of thermal zones (SimModel)
+        
+    buildingSystem : list
+        list of Systems in building (e.g. hot water system - SimSystemHotwater())
+    '''
     def __init__(self, obj):
         self.obj = obj
         self._simZoneHvacGroup = None
@@ -361,7 +383,7 @@ class SimBuilding(object):
         return self._simThermalZone 
 	
     @property
-    def _buildingSystem(self):
+    def buildingSystem(self):
         if self._buildingSystem == None:
             self._buildingSystem = []
             for id in range(lib.sim_building_get_sim_system_number(self.obj)): 
@@ -383,6 +405,30 @@ class SimSystem(object):
         self.obj = obj
         
         self._identifier = None
+    '''
+    This class represents an unmapped SimSystem (root element)
+
+    Parameters:
+    ----------
+ 
+    obj: obj
+        ?  
+
+    Attributes:
+    ----------
+       
+    identifier: str
+        identifier of a SimSystem
+        
+    Methods:
+    ----------
+    
+    toHotwaterSystem()
+        transforms to SimSystemHotwater()
+        
+    
+    
+    '''
         
     @property
     def identifier(self):
@@ -408,6 +454,20 @@ class SimSystem(object):
 class SimSystemHotwater(object):
     def __init__(self, obj):
         self.obj = obj
+        
+        self._supplySide = None
+        self._demandSide = None
+        self._controlSide = None
+        self._maxLoopTemp = None
+        self._minLoopTemp = None
+        self._get_maxLoopFlowRate = None
+     
+    @property
+    def supplySide(self):
+        if self._supplySide == None:
+            self._supplySide = lib.sim_system_hotwater_get_supply(self.obj)
+        return self._supplySide
+        
     def getMaxLoopTemp(self):
         return lib.sim_system_hotwater_get_max_loop_temp(self.obj)
     def getMinLoopTemp(self):
@@ -425,6 +485,21 @@ class SimSystemHotwater(object):
 class SimSystemHotwaterSupply(object):
     def __init__(self, obj):
         self.obj = obj
+        self._supplyComponents = None
+        
+    @property
+    def supplyComponents(self):
+        if self._supplyComponents == None:
+            self._supplyComponents = []
+            for id in range(lib.sim_system_hotwater_get_water_supply_component_number(self.obj)):
+                if lib.sim_system_hotwater_get_water_supply_component(self.obj, id).identifier== "SimFlowMover_Pump_VariableSpeedReturn":
+                    supply_help = lib.sim_system_hotwater_get_water_supply_component(self.obj, id).toPumpVarSpedRet()
+                elif lib.sim_system_hotwater_get_water_supply_component(self.obj, id).identifier== "SimFlowPlant_Boiler_BoilerHotWater":
+                    supply_help = lib.sim_system_hotwater_get_water_supply_component(self.obj, id).toBoilerHotWater()    
+                self._supplyComponents.append(supply_help)
+                
+        return self._supplyComponents
+     
     def getSupplyComponent(self, id):
         return lib.sim_system_hotwater_get_water_supply_component(self.obj, id)
     def getSupplyComponentNumber(self):
