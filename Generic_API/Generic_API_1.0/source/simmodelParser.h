@@ -38,8 +38,9 @@
 // for SimModel hierarchy
 #include "hierarchy.h"
 
-class simmodel_parser
+class simmodel_parser : sim_base
 {
+	//Q_OBJECT
 public:
 	simmodel_parser() {};
 	~simmodel_parser() {};
@@ -56,6 +57,21 @@ public:
 	sim_project& get_sim_project() { return sim_pro_mo; }
 	// retrieve the connections in the system loop
 	vector<sim_conns>& get_loop_connection_list() { return conns_vec; }
+	// retrieve the loop connections index map
+	//map<string, sim_conns*>&  get_loop_connection_map() { return loop_connection_map; }
+
+	// inheritance ovrride API
+	list<pair<string, string> >& get_prop_val() {}
+	// save the modified propety values
+	void save_prop_val(list<pair<string, string> >::iterator& _prop_it) {}
+	// the number of gap parameters
+	int get_gap() {}
+	// retrieve the generic component name
+	string get_com_name() {}
+	// retrieve the simmodel element reference id
+	string get_ref_id() {}
+	// retrieve the loop connection assigned to the component
+	void get_component_connection() {}
 
 private:
 	// generic API
@@ -103,6 +119,9 @@ private:
 	string get_host_out_id(auto_ptr<SimModel>& ob_model, string _port_id);
 	// retrieve hosted component attached with inlet port
 	string get_host_in_id(auto_ptr<SimModel>& ob_model, string _port_id);
+	// generic API
+	// simmodel HVAC element id maps to the loop connections
+	//map<string, sim_conns*> loop_connection_map;
 };
 
 #endif

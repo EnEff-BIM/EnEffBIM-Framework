@@ -85,7 +85,6 @@
 
 // decalration
 //
-
 			//0. base class
 			class sim_base : public QObject
 			{
@@ -119,6 +118,17 @@
 				sim_supplywater_temp_control* to_supplywater_tempCtl();
 				// convert to dry bulb temperature sensor
 				sim_temp_drybulb_sensor* to_tempdrybulb_sensor();
+
+				// generic API
+				// retrieve the simmodel element reference id
+				virtual string get_ref_id() = 0;
+				
+				// simmodel HVAC element id maps to the loop connections
+				static multimap<string, sim_conns*> loop_connection_map;
+				// retrieve the loop connection assigned to the component
+				virtual void get_component_connection() = 0;
+				// save the loop connections link to the component
+				vector<sim_conns*> _connection_vec;
 			};
 
 			//1. simulation project
@@ -236,6 +246,10 @@
 				int get_sim_site_total_number();
 				// retrieve the sim site object at position id
 				sim_site* get_sim_site(int id);
+				// retrieve the simmodel element reference id
+				string get_ref_id();
+				// retrieve the loop connection assigned to the component
+				void get_component_connection();
 			};
 			//2.1 simulation site
 			class sim_site : public virtual sim_base
@@ -339,6 +353,10 @@
 				// internal properties
 				// retrieve the site name
 				const char* get_sim_site_name();
+				// retrieve the simmodel element reference id
+				string get_ref_id();
+				// retrieve the loop connection assigned to the component
+				void get_component_connection();
 			};
 			
 			// 2.1.1 simulation buidling
@@ -454,6 +472,10 @@
 				void save_prop_val(list<pair<string, string> >::iterator& _prop_it) {}
 				// retrieve the number of gaps
 				int get_gap();
+				// retrieve the simmodel element reference id
+				string get_ref_id();
+				// retrieve the loop connection assigned to the component
+				void get_component_connection();
 			};
 			//   2.1.1.1.1 space occupied
 			class sim_space_occupied : public virtual sim_base
@@ -491,6 +513,10 @@
 				void save_prop_val(list<pair<string, string> >::iterator& _prop_it) {}
 				// retrieve the number of gaps
 				int get_gap();
+				// retrieve the simmodel element reference id
+				string get_ref_id();
+				// retrieve the loop connection assigned to the component
+				void get_component_connection();
 			};
 
 			// 2.1.2 simulation zone & HVAC group
@@ -536,6 +562,11 @@
 				void save_prop_val(list<pair<string, string> >::iterator& _prop_it) {}
 				// retrieve the number of gaps
 				int get_gap();
+				// retrieve the simmodel element reference id
+				string get_ref_id();
+				// retrieve the loop connection assigned to the component
+				void get_component_connection();
+
 			private:
 				// generic component name (without id)
 				string com_name;
@@ -602,6 +633,10 @@
 				void save_prop_val(list<pair<string, string> >::iterator& _prop_it) {}
 				// retrieve the number of gaps
 				int get_gap();
+				// retrieve the simmodel element reference id
+				string get_ref_id();
+				// retrieve the loop connection assigned to the component
+				void get_component_connection();
 
 				// generic API
 				// internal properites
@@ -654,6 +689,10 @@
 				void save_prop_val(list<pair<string, string> >::iterator& _prop_it) {}
 				// retrieve the number of gaps
 				int get_gap();
+				// retrieve the simmodel element reference id
+				string get_ref_id();
+				// retrieve the loop connection assigned to the component
+				void get_component_connection();
 
 				// generic API
 				// save child component for the control side
@@ -685,6 +724,10 @@
 				void save_prop_val(list<pair<string, string> >::iterator& _prop_it) {}
 				// retrieve the number of gaps
 				int get_gap();
+				// retrieve the simmodel element reference id
+				string get_ref_id();
+				// retrieve the loop connection assigned to the component
+				void get_component_connection();
 			
 			private:
 				// generic component name (without id)
@@ -716,6 +759,10 @@
 				void save_prop_val(list<pair<string, string> >::iterator& _prop_it) {}
 				// retrieve the number of gaps
 				int get_gap();
+				// retrieve the simmodel element reference id
+				string get_ref_id();
+				// retrieve the loop connection assigned to the component
+				void get_component_connection();
 
 			private:
 				// generic component name (without id)
@@ -765,6 +812,10 @@
 				void save_prop_val(list<pair<string, string> >::iterator& _prop_it) {}
 				// retrieve the number of gaps
 				int get_gap();
+				// retrieve the simmodel element reference id
+				string get_ref_id();
+				// retrieve the loop connection assigned to the component
+				void get_component_connection();
 
 				// generic API
 				// save child component for the demand side
@@ -816,6 +867,11 @@
 				void save_prop_val(list<pair<string, string> >::iterator& _prop_it);
 				// retrieve the number of gaps
 				int get_gap();
+				// retrieve the simmodel element reference id
+				string get_ref_id();
+				// retrieve the loop connection assigned to the component
+				void get_component_connection();
+
 				// retrieve the generic component name
 				Q_INVOKABLE string get_com_name() { return com_name; }
 				// retrieve additional paramters
@@ -917,6 +973,10 @@
 				void save_prop_val(list<pair<string, string> >::iterator& _prop_it) {}
 				// retrieve the number of gaps
 				int get_gap();
+				// retrieve the simmodel element reference id
+				string get_ref_id();
+				// retrieve the loop connection assigned to the component
+				void get_component_connection();
 
 				// generic API
 				// save child component for the supply side
@@ -952,6 +1012,8 @@
 				 void save_prop_val(list<pair<string, string> >::iterator& _prop_it);
 				// retrieve the number of gaps
 				 int get_gap();
+				// retrieve the simmodel element reference id
+				string get_ref_id();
 				// save the time series of the pump
 				void save_time_series(SimModel::SimTimeSeriesSchedule_Day_Hourly_iterator& _tmsrs_dayhour_it);
 				// retrieve the time series
@@ -971,6 +1033,8 @@
 				double get_c3() { return c3; }
 				double get_c4() { return c4; }
 				int get_period() { return _period; }
+				// retrieve the loop connection assigned to the component
+				void get_component_connection();
 
 				// generic API
 				double get_SimFlowMover_MotorEff();
@@ -1028,6 +1092,11 @@
 				void save_prop_val(list<pair<string, string> >::iterator& _prop_it);
 				// retrieve the number of gaps
 				int get_gap();
+				// retrieve the simmodel element reference id
+				string get_ref_id();
+				// retrieve the loop connection assigned to the component
+				void get_component_connection();
+
 				// save performance curve iterator
 				void set_percur(SimModel::SimPerformanceCurve_Mathematical_Quadratic_iterator& _it);
 				// get performance curve iterator
@@ -1095,6 +1164,10 @@
 				int get_gap();
 				// retrieve the generic component name
 				string get_com_name() { return com_name; }
+				// retrieve the simmodel element reference id
+				string get_ref_id();
+				// retrieve the loop connection assigned to the component
+				void get_component_connection();
 			};
 
 			// 3 sim connection between components

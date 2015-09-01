@@ -65,6 +65,9 @@
 				return dynamic_cast<sim_temp_drybulb_sensor*>(this);
 			}
 
+			// simmodel HVAC element id maps to the loop connections
+			multimap<string, sim_conns*> sim_base::loop_connection_map;
+
 			//1. simulation project
 			//
 			// constructor
@@ -149,6 +152,20 @@
 			sim_site* sim_project::get_sim_site(int id)
 			{
 				return sim_site_list.at(id);
+			}
+			// retrieve the simmodel element reference id
+			string sim_project::get_ref_id()
+			{
+				return sim_project_it->RefId();
+			}
+			// retrieve the loop connection assigned to the component
+			void sim_project::get_component_connection()
+			{
+				// save the loop connections link to the component
+				for(multimap<string, sim_conns*>::iterator _it=loop_connection_map.equal_range(this->get_ref_id()).first; _it!=loop_connection_map.equal_range(this->get_ref_id()).second; ++_it)
+				{
+					_connection_vec.push_back(_it->second);
+				}
 			}
 
 			//2.1 simulation site
@@ -274,6 +291,20 @@
 			{
 				return sim_building_list.at(id);
 			}
+			// retrieve the simmodel element reference id
+			string sim_site::get_ref_id()
+			{
+				return sim_site_it->RefId();
+			}
+			// retrieve the loop connection assigned to the component
+			void sim_site::get_component_connection()
+			{
+				// save the loop connections link to the component
+				for(multimap<string, sim_conns*>::iterator _it=loop_connection_map.equal_range(this->get_ref_id()).first; _it!=loop_connection_map.equal_range(this->get_ref_id()).second; ++_it)
+				{
+					_connection_vec.push_back(_it->second);
+				}
+			}
 
 			// 2.1.1 simulation buidling
 			//
@@ -393,6 +424,20 @@
 			int sim_building_storey::get_gap()
 			{
 				return gap_param_nr;
+			}
+			// retrieve the simmodel element reference id
+			string sim_building_storey::get_ref_id()
+			{
+				return sim_building_storey_it->RefId();
+			}
+			// retrieve the loop connection assigned to the component
+			void sim_building_storey::get_component_connection()
+			{
+				// save the loop connections link to the component
+				for(multimap<string, sim_conns*>::iterator _it=loop_connection_map.equal_range(this->get_ref_id()).first; _it!=loop_connection_map.equal_range(this->get_ref_id()).second; ++_it)
+				{
+					_connection_vec.push_back(_it->second);
+				}
 			}
 		
 			//   2.1.1.1.1 space occupied
@@ -524,6 +569,21 @@
 			{
 				return gap_param_nr;
 			}
+			// retrieve the simmodel element reference id
+			string sim_space_occupied::get_ref_id()
+			{
+				return sim_space_occupied_it->RefId();
+			}
+			// retrieve the loop connection assigned to the component
+			void sim_space_occupied::get_component_connection()
+			{
+				// save the loop connections link to the component
+				for(multimap<string, sim_conns*>::iterator _it=loop_connection_map.equal_range(this->get_ref_id()).first; _it!=loop_connection_map.equal_range(this->get_ref_id()).second; ++_it)
+				{
+					_connection_vec.push_back(_it->second);
+				}
+			}
+
 			// 2.1.2 simulation zone & HVAC group
 			//
 			// retrieve property values
@@ -553,6 +613,20 @@
 			int sim_thermal_zone::get_gap()
 			{
 				return gap_param_nr;
+			}
+			// retrieve the simmodel element reference id
+			string sim_thermal_zone::get_ref_id()
+			{
+				return sim_thermal_zone_it->RefId();
+			}
+			// retrieve the loop connection assigned to the component
+			void sim_thermal_zone::get_component_connection()
+			{
+				// save the loop connections link to the component
+				for(multimap<string, sim_conns*>::iterator _it=loop_connection_map.equal_range(this->get_ref_id()).first; _it!=loop_connection_map.equal_range(this->get_ref_id()).second; ++_it)
+				{
+					_connection_vec.push_back(_it->second);
+				}
 			}
 			// set child class: sim thermal zone
 			void sim_group::set_thermal_zone(sim_thermal_zone& _sim_thermal_zone_mo)
@@ -633,6 +707,20 @@
 			{
 				return gap_param_nr;
 			}
+			// retrieve the simmodel element reference id
+			string sim_hotwater_system::get_ref_id()
+			{
+				return sim_hotwater_system_it->RefId();
+			}
+			// retrieve the loop connection assigned to the component
+			void sim_hotwater_system::get_component_connection()
+			{
+				// save the loop connections link to the component
+				for(multimap<string, sim_conns*>::iterator _it=loop_connection_map.equal_range(this->get_ref_id()).first; _it!=loop_connection_map.equal_range(this->get_ref_id()).second; ++_it)
+				{
+					_connection_vec.push_back(_it->second);
+				}
+			}
 			// generic API
 			// internal properites
 			double sim_hotwater_system::get_SimSys_MaxLoopTemp()
@@ -690,6 +778,20 @@
 			{
 				return gap_param_nr;
 			}
+			// retrieve the simmodel element reference id
+			string sim_hotwater_control::get_ref_id()
+			{
+				return sim_hw_ctl_it->RefId();
+			}
+			// retrieve the loop connection assigned to the component
+			void sim_hotwater_control::get_component_connection()
+			{
+				// save the loop connections link to the component
+				for(multimap<string, sim_conns*>::iterator _it=loop_connection_map.equal_range(this->get_ref_id()).first; _it!=loop_connection_map.equal_range(this->get_ref_id()).second; ++_it)
+				{
+					_connection_vec.push_back(_it->second);
+				}
+			}
 			// generic API
 			// save child component for the control side
 			void sim_hotwater_control::save_water_control_component(sim_base* _sim_base)
@@ -734,6 +836,20 @@
 			{
 				return gap_param_nr;
 			}
+			// retrieve the simmodel element reference id
+			string sim_supplywater_temp_control::get_ref_id()
+			{
+				return sim_sw_temp_ctl_it->RefId();
+			}
+			// retrieve the loop connection assigned to the component
+			void sim_supplywater_temp_control::get_component_connection()
+			{
+				// save the loop connections link to the component
+				for(multimap<string, sim_conns*>::iterator _it=loop_connection_map.equal_range(this->get_ref_id()).first; _it!=loop_connection_map.equal_range(this->get_ref_id()).second; ++_it)
+				{
+					_connection_vec.push_back(_it->second);
+				}
+			}
 			// 2.1.3.1.2 sim dry bulb temperature sensor
 			//
 			// retrieve property values
@@ -761,6 +877,20 @@
 			int sim_temp_drybulb_sensor::get_gap()
 			{
 				return gap_param_nr;
+			}
+			// retrieve the simmodel element reference id
+			string sim_temp_drybulb_sensor::get_ref_id()
+			{
+				return sim_temp_dbb_ssr_it->RefId();
+			}
+			// retrieve the loop connection assigned to the component
+			void sim_temp_drybulb_sensor::get_component_connection()
+			{
+				// save the loop connections link to the component
+				for(multimap<string, sim_conns*>::iterator _it=loop_connection_map.equal_range(this->get_ref_id()).first; _it!=loop_connection_map.equal_range(this->get_ref_id()).second; ++_it)
+				{
+					_connection_vec.push_back(_it->second);
+				}
 			}
 
 			//  2.1.3.2 sim hot water demand
@@ -795,6 +925,20 @@
 			int sim_hotwater_demand::get_gap()
 			{
 				return gap_param_nr;
+			}
+			// retrieve the simmodel element reference id
+			string sim_hotwater_demand::get_ref_id()
+			{
+				return sim_hw_dmd_it->RefId();
+			}
+			// retrieve the loop connection assigned to the component
+			void sim_hotwater_demand::get_component_connection()
+			{
+				// save the loop connections link to the component
+				for(multimap<string, sim_conns*>::iterator _it=loop_connection_map.equal_range(this->get_ref_id()).first; _it!=loop_connection_map.equal_range(this->get_ref_id()).second; ++_it)
+				{
+					_connection_vec.push_back(_it->second);
+				}
 			}
 			// generic API
 			// save child component for the demand side
@@ -914,6 +1058,20 @@
 			{
 				return gap_param_nr;
 			}
+			// retrieve the simmodel element reference id
+			string sim_flwEngyTran_convectheater_water::get_ref_id()
+			{
+				return sim_flwEngyTran_convectheater_w_it->RefId();
+			}
+			// retrieve the loop connection assigned to the component
+			void sim_flwEngyTran_convectheater_water::get_component_connection()
+			{
+				// save the loop connections link to the component
+				for(multimap<string, sim_conns*>::iterator _it=loop_connection_map.equal_range(this->get_ref_id()).first; _it!=loop_connection_map.equal_range(this->get_ref_id()).second; ++_it)
+				{
+					_connection_vec.push_back(_it->second);
+				}
+			}
 			// generic API
 			double sim_flwEngyTran_convectheater_water::get_SimFlowEnergyTrans_MaxWaterFlowRate()
 			{
@@ -970,6 +1128,20 @@
 			int sim_hotwater_supply::get_gap()
 			{
 				return gap_param_nr;
+			}
+			// retrieve the simmodel element reference id
+			string sim_hotwater_supply::get_ref_id()
+			{
+				return sim_hw_supy_it->RefId();
+			}
+			// retrieve the loop connection assigned to the component
+			void sim_hotwater_supply::get_component_connection()
+			{
+				// save the loop connections link to the component
+				for(multimap<string, sim_conns*>::iterator _it=loop_connection_map.equal_range(this->get_ref_id()).first; _it!=loop_connection_map.equal_range(this->get_ref_id()).second; ++_it)
+				{
+					_connection_vec.push_back(_it->second);
+				}
 			}
 			// generic API
 			// save child component for the supply side
@@ -1110,7 +1282,20 @@
 			{
 				return gap_param_nr;
 			}
-
+			// retrieve the simmodel element reference id
+			string sim_flwMov_pump_varSpedRet::get_ref_id()
+			{
+				return sim_flwMov_pump_varSpedRet_it->RefId();
+			}
+			// retrieve the loop connection assigned to the component
+			void sim_flwMov_pump_varSpedRet::get_component_connection()
+			{
+				// save the loop connections link to the component
+				for(multimap<string, sim_conns*>::iterator _it=loop_connection_map.equal_range(this->get_ref_id()).first; _it!=loop_connection_map.equal_range(this->get_ref_id()).second; ++_it)
+				{
+					_connection_vec.push_back(_it->second);
+				}
+			}
 			// save the time series of the pump
 			void sim_flwMov_pump_varSpedRet::save_time_series(SimModel::SimTimeSeriesSchedule_Day_Hourly_iterator& _tmsrs_dayhour_it)
 			{
@@ -1258,7 +1443,20 @@
 			{
 				return gap_param_nr;
 			}
-
+			// retrieve the simmodel element reference id
+			string sim_flwPlt_hotwater_boiler::get_ref_id()
+			{
+				return sim_flwPlt_hw_boiler_it->RefId();
+			}
+			// retrieve the loop connection assigned to the component
+			void sim_flwPlt_hotwater_boiler::get_component_connection()
+			{
+				// save the loop connections link to the component
+				for(multimap<string, sim_conns*>::iterator _it=loop_connection_map.equal_range(this->get_ref_id()).first; _it!=loop_connection_map.equal_range(this->get_ref_id()).second; ++_it)
+				{
+					_connection_vec.push_back(_it->second);
+				}
+			}
 			//2.2 simulation configuration
 			//
 			// retrieve property values
@@ -1286,4 +1484,18 @@
 			int sim_configuration::get_gap()
 			{
 				return gap_param_nr;
+			}
+			// retrieve the simmodel element reference id
+			string sim_configuration::get_ref_id()
+			{
+				return sim_config_it->RefId();
+			}
+			// retrieve the loop connection assigned to the component
+			void sim_configuration::get_component_connection()
+			{
+				// save the loop connections link to the component
+				for(multimap<string, sim_conns*>::iterator _it=loop_connection_map.equal_range(this->get_ref_id()).first; _it!=loop_connection_map.equal_range(this->get_ref_id()).second; ++_it)
+				{
+					_connection_vec.push_back(_it->second);
+				}
 			}
