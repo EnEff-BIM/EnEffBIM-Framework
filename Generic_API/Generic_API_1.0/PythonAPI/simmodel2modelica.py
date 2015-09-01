@@ -341,7 +341,7 @@ class SimBuilding(object):
         self.obj = obj
         self._simZoneHvacGroup = None
         self._simThermalZone = None
-        self._simSystem = None
+        self._buildingSystem = None
         
 
     @property
@@ -361,18 +361,16 @@ class SimBuilding(object):
         return self._simThermalZone 
 	
     @property
-    def simSystem(self):
-        if self._simSystem == None:
-            self._simSystem = []
-            for id in range(lib.sim_building_get_sim_system_number(self.obj)):
-                inter_system = lib.sim_building_get_sim_system(self.obj, id)
-                if b2s(inter_system.getSystemName())== "hw_system":
-                    inter_system = inter_system.toHotwaterSystem()
-                    print(inter_system)
-                self._simSystem.append(inter_system)
-        return self._simSystem 	
+    def _buildingSystem(self):
+        if self._buildingSystem == None:
+            self._buildingSystem = []
+            for id in range(lib.sim_building_get_sim_system_number(self.obj)): 
+                if lib.sim_building_get_sim_system(self.obj, id).identifier== "hw_system":
+                    sytem_help = lib.sim_building_get_sim_system(self.obj, id).toHotwaterSystem()
+                self._buildingSystem.append(sytem_help)
+        return self._buildingSystem 	
 
-class SimZoneHvacGroup(SimBuilding):
+class SimZoneHvacGroup(object):
     def __init__(self, obj):
         self.obj = obj
 
@@ -383,6 +381,15 @@ class SimThermalZone(object):
 class SimSystem(object):
     def __init__(self, obj):
         self.obj = obj
+        
+        self._identifier = None
+        
+    @property
+    def identifier(self):
+        if self._identifier == None:
+            self._identifier = b2s(lib.sim_system_get_name(self.obj))
+        return self._identifier
+    
     def toHotwaterSystem(self):
         return lib.sim_system_to_hotwater_system(self.obj)
     def getSystemName(self):
