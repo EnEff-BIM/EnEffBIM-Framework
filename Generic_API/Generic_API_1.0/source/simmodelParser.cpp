@@ -588,6 +588,9 @@ void simmodel_parser::load_sim_conns(auto_ptr<SimModel>& ob_model)
 			// save this connection
 			sim_conns _conn_obj(_id_map_out_it->second, _id_map_in_it->second);
 			conns_vec.push_back(_conn_obj);
+			// set the connection index map
+			loop_connection_map.insert( pair<string, sim_conns*>(_id_map_out_it->second->get_ref_id(), &conns_vec.back()) );
+			loop_connection_map.insert( pair<string, sim_conns*>(_id_map_in_it->second->get_ref_id(), &conns_vec.back()) );
 		}	
 	}
 }

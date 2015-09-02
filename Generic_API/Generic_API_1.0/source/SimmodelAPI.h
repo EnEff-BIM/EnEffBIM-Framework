@@ -32,8 +32,8 @@
 //
 
 // include the head files
-#include <QtCore/QtGlobal>
 #include "include_files.h"
+#include <QtCore/QtGlobal>
 
 #if defined TEST
 #define TEST_COMMON_DLLSPEC  Q_DECL_EXPORT

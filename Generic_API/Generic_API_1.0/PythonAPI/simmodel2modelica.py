@@ -212,8 +212,8 @@ class RuleData(object):
             self._loopConnections = []
             for id in range(lib.sim_system_get_loop_connection_number(self.obj)):
                 self._loopConnections.append(lib.sim_system_get_loop_connection(self.obj, id))
-        return self._loopConnections   
-
+        return self._loopConnections
+    
     def transformModel(self):
         return lib.rule_data_transform_model(self.obj)
     def setUseCaseLocation(self, case_loc):
@@ -250,13 +250,13 @@ class SimConnection(object):
         if self._outletComponent == None:
             
             if lib.sim_system_get_outlet_component(self.obj).identifier == "SimFlowPlant_Boiler_BoilerHotWater":
-                print("Pointer to specific Boiler")
+                #print("Pointer to specific Boiler")
                 self._outletComponent =lib.sim_system_get_outlet_component(self.obj).toBoilerHotWater()
             elif lib.sim_system_get_outlet_component(self.obj).identifier == "SimFlowEnergyTransfer_ConvectiveHeater_Water":
-                print("Pointer to specific Radiator")
+                #print("Pointer to specific Radiator")
                 self._outletComponent =lib.sim_system_get_outlet_component(self.obj).toHeaterConvectiveWater()
             elif lib.sim_system_get_outlet_component(self.obj).identifier == "SimFlowMover_Pump_VariableSpeedReturn":
-                print("Pointer to specific Pump")
+                #print("Pointer to specific Pump")
                 self._outletComponent =lib.sim_system_get_outlet_component(self.obj).toPumpVarSpedRet()
         return self._outletComponent
     @property
@@ -377,10 +377,10 @@ class SimBuilding(object):
     '''
     def __init__(self, obj):
         self.obj = obj
+        self._simSystem = None
         self._simZoneHvacGroup = None
         self._simThermalZone = None
         self._buildingSystem = None
-        
 
     @property
     def simZoneHvacGroup(self):
@@ -411,6 +411,21 @@ class SimBuilding(object):
 class SimZoneHvacGroup(object):
     def __init__(self, obj):
         self.obj = obj
+                
+        
+    def getSimZoneHvacGroup(self, id):
+        return lib.sim_building_get_sim_zone_hvac_group(self.obj, id)
+    def getSimZoneHvacGroupNumber(self):
+        return lib.sim_building_get_sim_zone_hvac_group_number(self.obj)
+    def getSimThermalZone(self, id):
+        return lib.sim_building_get_sim_thermal_zone(self.obj, id)
+    def getSimThermalZoneNumber(self):
+        return lib.sim_building_get_sim_thermal_zone_number(self.obj)
+    def getSimSystem(self, id):
+        return lib.sim_building_get_sim_system(self.obj, id)
+    def getSimSystemNumber(self):
+        return lib.sim_building_get_sim_system_number(self.obj)
+   
 
 class SimThermalZone(object):
     def __init__(self, obj):
@@ -421,6 +436,8 @@ class SimSystem(object):
         self.obj = obj
         
         self._identifier = None
+        self._loopConnection = None
+        
     '''
     This class represents an unmapped SimSystem (root element)
 
@@ -455,7 +472,7 @@ class SimSystem(object):
     def toHotwaterSystem(self):
         return lib.sim_system_to_hotwater_system(self.obj)
     def getSystemName(self):
-        return lib.sim_system_get_name(self.obj)
+        return b2s(lib.sim_system_get_name(self.obj))
     def toPumpVarSpedRet(self):
         return lib.sim_system_to_pump_varSpedRet(self.obj)
     def toBoilerHotWater(self):
@@ -466,6 +483,12 @@ class SimSystem(object):
         return lib.sim_system_to_supplywater_tempCtl(self.obj)
     def toTemperatureDryBulbSensor(self):
         return lib.sim_system_to_tempdrybulb_sensor(self.obj)
+    @property
+    def loopConnection(self):
+        if self._loopConnection == None:
+            lib.sim_system_check_component_connection(self.obj)
+            self._loopConnection = [lib.sim_system_get_component_connection(self.obj, id) for id in range(lib.sim_system_get_component_connection_number(self.obj))]
+        return self._loopConnection
 
 class SimSystemHotwater(object):
     def __init__(self, obj):
@@ -519,9 +542,13 @@ class SimSystemHotwaterSupply(object):
         return self._supplyComponents
 
 # sim pump of variable speed return
-class SimPumpVarSpedRet(object):
+class SimPumpVarSpedRet(SimSystem):
     def __init__(self, obj):
+        super(SimPumpVarSpedRet,self).__init__(obj)
         self.obj = obj
+        
+    def getRatedFlowRate(self):
+        return b2s(lib.sim_pump_varSpedRet_ratedFlowRate(self.obj))
 
         self._ratedFlowRate = None
         
@@ -532,9 +559,11 @@ class SimPumpVarSpedRet(object):
         return self._ratedFlowRate
     
 # sim boiler of hot water
-class SimBoilerHotWater(object):
+class SimBoilerHotWater(SimSystem):
     def __init__(self, obj):
+        super(SimBoilerHotWater,self).__init__(obj)
         self.obj = obj
+        
     def getFlowPlantNomCap(self):
         return lib.sim_boiler_hotwater_get_SimFlowPlant_NomCap(self.obj)
     def getFlowPlantNomThermalEff(self):
@@ -575,9 +604,10 @@ class SimSystemHotwaterDemand(object):
         return self._demandComponents
             
 # sim heater of convective water
-class SimHeaterConvectiveWater(object):
+class SimHeaterConvectiveWater(SimSystem):
     def __init__(self, obj):
         self.obj = obj
+        super(SimHeaterConvectiveWater,self).__init__(obj)
     def getMaxWaterFlowRate(self):
         return lib.sim_heater_convective_water_get_max_water_flow_rate(self.obj)
     def getConvergTol(self):
@@ -586,23 +616,26 @@ class SimHeaterConvectiveWater(object):
         return lib.sim_heater_convective_water_get_ufactor_times_area(self.obj)
 
 # control side of the hot water system
-class SimSystemHotwaterControl(object):
+class SimSystemHotwaterControl(SimSystem):
     def __init__(self, obj):
         self.obj = obj
+        super(SimSystemHotwaterControl,self).__init__(obj)
     def getControlComponent(self, id):
         return lib.sim_system_hotwater_get_water_control_component(self.obj, id)
     def getControlComponentNumber(self):
         return lib.sim_system_hotwater_get_water_control_component_number(self.obj)
 
 # sim supply water temperature control
-class SimSupplyWaterTemperatureControl(object):
+class SimSupplyWaterTemperatureControl(SimSystem):
     def __init__(self, obj):
         self.obj = obj
+        super(SimSupplyWaterTemperatureControl,self).__init__(obj)
 
 # sim dry bulb temperature sensor
-class SimTemperatureDryBulbSensor(object):
+class SimTemperatureDryBulbSensor(SimSystem):
     def __init__(self, obj):
         self.obj = obj
+        super(SimTemperatureDryBulbSensor,self).__init__(obj)
 
 
 # property data level
@@ -696,6 +729,12 @@ lib.sim_system_to_supplywater_tempCtl.restype = SimSupplyWaterTemperatureControl
 lib.sim_system_to_supplywater_tempCtl.argtypes = ()
 lib.sim_system_to_tempdrybulb_sensor.restype = SimTemperatureDryBulbSensor
 lib.sim_system_to_tempdrybulb_sensor.argtypes = ()
+lib.sim_system_check_component_connection.argtypes = ()
+lib.sim_system_check_component_connection.restype = None
+lib.sim_system_get_component_connection_number.argtypes = ()
+lib.sim_system_get_component_connection_number.restype = c_int
+lib.sim_system_get_component_connection.argtypes = [c_void_p, c_int]
+lib.sim_system_get_component_connection.restype = SimConnection
 # sim system for hot water
 lib.sim_system_to_hotwater_system.restype = SimSystemHotwater
 lib.sim_system_to_hotwater_system.argtypes = ()

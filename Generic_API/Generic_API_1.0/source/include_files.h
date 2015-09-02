@@ -34,6 +34,7 @@
 #ifndef INCLUDE_FILES_H
 #define INCLUDE_FILES_H
 
+#include <Python.h>
 #include <iostream>
 #include <iomanip>
 #include <fstream>

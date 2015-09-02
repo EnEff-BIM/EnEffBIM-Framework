@@ -26,6 +26,17 @@ sim_conns* map_rule_data::get_loop_connection(int id)
 	return &sim_parse.get_loop_connection_list().at(id);
 }
 
+// retrieve the loop connection attached to the component
+/*sim_conns* map_rule_data::get_component_connection(sim_base* sim_obj)
+{
+	map<string, sim_conns*>::iterator _it = sim_parse.get_loop_connection_map().find(sim_obj->get_ref_id());
+	
+	if(_it==sim_parse.get_loop_connection_map().end())
+		return NULL;
+
+	return _it->second;
+}*/
+
 // load mapped data
 void map_rule_data::load_map_data()
 {
@@ -224,4 +235,9 @@ extern "C" {
 	sim_base* TEST_COMMON_DLLSPEC sim_system_get_outlet_component(sim_conns* _sim_conn) { return _sim_conn->get_com_out_ptr(); }
 	// retrieve the component with inlet port
 	sim_base* TEST_COMMON_DLLSPEC sim_system_get_inlet_component(sim_conns* _sim_conn) { return _sim_conn->get_com_in_ptr(); }
+	// retrieve the loop connection attached to the component
+	void TEST_COMMON_DLLSPEC sim_system_check_component_connection(sim_base* _sim_base) { _sim_base->get_component_connection(); }
+	int TEST_COMMON_DLLSPEC sim_system_get_component_connection_number(sim_base* _sim_base) { return _sim_base->_connection_vec.size(); }
+	sim_conns* TEST_COMMON_DLLSPEC sim_system_get_component_connection(sim_base* _sim_base, int id) { return _sim_base->_connection_vec.at(id); }
+
 }

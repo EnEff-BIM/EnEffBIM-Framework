@@ -41,6 +41,8 @@ public:
 	void set_data_location(char* _use_case_loc, char* _map_rule_loc);
 	// load mapped data
     void load_map_data();
+	// retrieve the loop connection attached to the component
+	//sim_conns* get_component_connection(sim_base* sim_obj);
 
 private:
 	// a list of component data after filtering the mapping rules
