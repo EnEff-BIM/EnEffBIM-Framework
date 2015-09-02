@@ -26,8 +26,7 @@ def s2b(s):
 
 class Property(object):
     
-    '''
-    This class represents a mapped property 
+    '''This class represents a mapped property 
 
     Parameters:
     ----------
@@ -114,8 +113,7 @@ class Property(object):
 
 
 class Component(object):
-    '''
-    This class represents a mapped component 
+    '''This class represents a mapped component 
 
     Parameters:
     ----------
@@ -144,6 +142,7 @@ class Component(object):
         self._targetName = None
         self._targetLocation = None
         self._properties = None
+
      
     @property
     def targetName(self):
@@ -223,8 +222,7 @@ class RuleData(object):
         return lib.rule_data_set_data_location(self.obj, s2b(useCaseLoc), s2b(mapRuleLoc))
 
 class SimConnection(object):
-    '''
-    This class represents an unmapped connection of SimModel
+    '''This class represents an unmapped connection of SimModel
 
     Parameters:
     ----------
@@ -277,8 +275,7 @@ class SimConnection(object):
         return self._inletComponent
 
 class SimProject(object):
-    '''
-    This class represents an unmapped SimProject 
+    '''This class represents an unmapped SimProject 
 
     Parameters:
     ----------
