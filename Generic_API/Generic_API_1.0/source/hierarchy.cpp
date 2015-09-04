@@ -721,6 +721,12 @@
 					_connection_vec.push_back(_it->second);
 				}
 			}
+			// automated data type pass
+			const char* sim_hotwater_system::datatype()
+			{
+				return _data_type.c_str();
+			}
+
 			// generic API
 			// internal properites
 			double sim_hotwater_system::get_SimSys_MaxLoopTemp()
@@ -850,6 +856,11 @@
 					_connection_vec.push_back(_it->second);
 				}
 			}
+			// automated data type pass
+			const char* sim_supplywater_temp_control::datatype()
+			{
+				return _data_type.c_str();
+			}
 			// 2.1.3.1.2 sim dry bulb temperature sensor
 			//
 			// retrieve property values
@@ -891,6 +902,11 @@
 				{
 					_connection_vec.push_back(_it->second);
 				}
+			}
+			// automated data type pass
+			const char* sim_temp_drybulb_sensor::datatype()
+			{
+				return _data_type.c_str();
 			}
 
 			//  2.1.3.2 sim hot water demand
@@ -1071,6 +1087,11 @@
 				{
 					_connection_vec.push_back(_it->second);
 				}
+			}
+			// automated data type pass
+			const char* sim_flwEngyTran_convectheater_water::datatype()
+			{
+				return _data_type.c_str();
 			}
 			// generic API
 			double sim_flwEngyTran_convectheater_water::get_SimFlowEnergyTrans_MaxWaterFlowRate()
@@ -1296,6 +1317,11 @@
 					_connection_vec.push_back(_it->second);
 				}
 			}
+			// automated data type pass
+			const char* sim_flwMov_pump_varSpedRet::datatype()
+			{
+				return _data_type.c_str();
+			}
 			// save the time series of the pump
 			void sim_flwMov_pump_varSpedRet::save_time_series(SimModel::SimTimeSeriesSchedule_Day_Hourly_iterator& _tmsrs_dayhour_it)
 			{
@@ -1456,6 +1482,11 @@
 				{
 					_connection_vec.push_back(_it->second);
 				}
+			}
+			// automated data type pass
+			const char* sim_flwPlt_hotwater_boiler::datatype()
+			{
+				return _data_type.c_str();
 			}
 			//2.2 simulation configuration
 			//

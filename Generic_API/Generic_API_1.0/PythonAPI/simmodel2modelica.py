@@ -142,6 +142,7 @@ class Component(object):
         self._targetName = None
         self._targetLocation = None
         self._properties = None
+        self._unmappedComponent = None
 
      
     @property
@@ -160,7 +161,12 @@ class Component(object):
             self._properties = []
             for id in range(lib.component_get_property_number(self.obj)):
                 self._properties.append(lib.component_get_property(self.obj, id))
-        return self._properties    
+        return self._properties
+    @property
+    def unmapComponent(self):
+        if self._unmappedComponent == None:
+            self._unmappedComponent = [lib.component_get_unmapped_component(self.obj, id) for id in range(lib.component_get_unmapped_component_number(self.obj))]
+        return self._unmappedComponent
 
 
 class RuleData(object):
@@ -248,8 +254,9 @@ class SimConnection(object):
     @property
     def outletComponent(self):
         if self._outletComponent == None:
-            
-            if lib.sim_system_get_outlet_component(self.obj).identifier == "SimFlowPlant_Boiler_BoilerHotWater":
+            self._outletComponent = lib.sim_system_get_outlet_component(self.obj)
+        return self._outletComponent
+        '''if lib.sim_system_get_outlet_component(self.obj).identifier == "SimFlowPlant_Boiler_BoilerHotWater":
                 #print("Pointer to specific Boiler")
                 self._outletComponent =lib.sim_system_get_outlet_component(self.obj).toBoilerHotWater()
             elif lib.sim_system_get_outlet_component(self.obj).identifier == "SimFlowEnergyTransfer_ConvectiveHeater_Water":
@@ -258,12 +265,13 @@ class SimConnection(object):
             elif lib.sim_system_get_outlet_component(self.obj).identifier == "SimFlowMover_Pump_VariableSpeedReturn":
                 #print("Pointer to specific Pump")
                 self._outletComponent =lib.sim_system_get_outlet_component(self.obj).toPumpVarSpedRet()
-        return self._outletComponent
+        return self._outletComponent'''
     @property
     def inletComponent(self):
         if self._inletComponent == None:
-            
-            if lib.sim_system_get_inlet_component(self.obj).identifier == "SimFlowPlant_Boiler_BoilerHotWater":
+            self._inletComponent = lib.sim_system_get_inlet_component(self.obj)
+        return self._inletComponent
+        '''if lib.sim_system_get_inlet_component(self.obj).identifier == "SimFlowPlant_Boiler_BoilerHotWater":
                 print("Pointer to specific Boiler")
                 self._inletComponent =lib.sim_system_get_inlet_component(self.obj).toBoilerHotWater()
             elif lib.sim_system_get_inlet_component(self.obj).identifier == "SimFlowEnergyTransfer_ConvectiveHeater_Water":
@@ -272,7 +280,7 @@ class SimConnection(object):
             elif lib.sim_system_get_inlet_component(self.obj).identifier == "SimFlowMover_Pump_VariableSpeedReturn":
                 print("Pointer to specific Pump")
                 self._inletComponent =lib.sim_system_get_inlet_component(self.obj).toPumpVarSpedRet()
-        return self._inletComponent
+        return self._inletComponent'''
 
 class SimProject(object):
     '''This class represents an unmapped SimProject 
@@ -402,17 +410,14 @@ class SimBuilding(object):
     def buildingSystem(self):
         if self._buildingSystem == None:
             self._buildingSystem = []
-            for id in range(lib.sim_building_get_sim_system_number(self.obj)): 
-                if lib.sim_building_get_sim_system(self.obj, id).identifier== "hw_system":
-                    sytem_help = lib.sim_building_get_sim_system(self.obj, id).toHotwaterSystem()
-                self._buildingSystem.append(sytem_help)
-        return self._buildingSystem 	
+            for id in range(lib.sim_building_get_sim_system_number(self.obj)):
+                self._buildingSystem.append(lib.sim_building_get_sim_system(self.obj, id))
+        return self._buildingSystem
 
 class SimZoneHvacGroup(object):
     def __init__(self, obj):
         self.obj = obj
                 
-        
     def getSimZoneHvacGroup(self, id):
         return lib.sim_building_get_sim_zone_hvac_group(self.obj, id)
     def getSimZoneHvacGroupNumber(self):
@@ -437,7 +442,7 @@ class SimSystem(object):
         
         self._identifier = None
         self._loopConnection = None
-        
+        self._dataType = None
     '''
     This class represents an unmapped SimSystem (root element)
 
@@ -462,13 +467,13 @@ class SimSystem(object):
     
     
     '''
-        
     @property
     def identifier(self):
         if self._identifier == None:
             self._identifier = b2s(lib.sim_system_get_name(self.obj))
         return self._identifier
-    
+    def getDataType(self):
+        return b2s(lib.sim_system_get_datatype(self.obj))
     def toHotwaterSystem(self):
         return lib.sim_system_to_hotwater_system(self.obj)
     def getSystemName(self):
@@ -489,6 +494,10 @@ class SimSystem(object):
             lib.sim_system_check_component_connection(self.obj)
             self._loopConnection = [lib.sim_system_get_component_connection(self.obj, id) for id in range(lib.sim_system_get_component_connection_number(self.obj))]
         return self._loopConnection
+    def typeConversion(self):
+        if self._dataType == None:
+            self._dataType = self.getDataType()
+        return getattr(self, self._dataType)()
 
 class SimSystemHotwater(object):
     def __init__(self, obj):
@@ -534,11 +543,7 @@ class SimSystemHotwaterSupply(object):
         if self._supplyComponents == None:
             self._supplyComponents = []
             for id in range(lib.sim_system_hotwater_get_water_supply_component_number(self.obj)):
-                if lib.sim_system_hotwater_get_water_supply_component(self.obj, id).identifier== "SimFlowMover_Pump_VariableSpeedReturn":
-                    supply_help = lib.sim_system_hotwater_get_water_supply_component(self.obj, id).toPumpVarSpedRet()
-                elif lib.sim_system_hotwater_get_water_supply_component(self.obj, id).identifier== "SimFlowPlant_Boiler_BoilerHotWater":
-                    supply_help = lib.sim_system_hotwater_get_water_supply_component(self.obj, id).toBoilerHotWater()    
-                self._supplyComponents.append(supply_help)      
+                self._supplyComponents.append(lib.sim_system_hotwater_get_water_supply_component(self.obj, id))      
         return self._supplyComponents
 
 # sim pump of variable speed return
@@ -546,6 +551,7 @@ class SimPumpVarSpedRet(SimSystem):
     def __init__(self, obj):
         super(SimPumpVarSpedRet,self).__init__(obj)
         self.obj = obj
+        self._loopConnection = None
         
     def getRatedFlowRate(self):
         return b2s(lib.sim_pump_varSpedRet_ratedFlowRate(self.obj))
@@ -563,6 +569,7 @@ class SimBoilerHotWater(SimSystem):
     def __init__(self, obj):
         super(SimBoilerHotWater,self).__init__(obj)
         self.obj = obj
+        self._loopConnection = None
         
     def getFlowPlantNomCap(self):
         return lib.sim_boiler_hotwater_get_SimFlowPlant_NomCap(self.obj)
@@ -598,15 +605,14 @@ class SimSystemHotwaterDemand(object):
         if self._demandComponents == None:
             self._demandComponents = []
             for id in range(lib.sim_system_hotwater_get_water_demand_component_number(self.obj)):
-                if lib.sim_system_hotwater_get_water_demand_component(self.obj, id).identifier == "SimFlowEnergyTransfer_ConvectiveHeater_Water":
-                    demand_help = lib.sim_system_hotwater_get_water_demand_component(self.obj, id).toHeaterConvectiveWater()
-                self._demandComponents.append(demand_help)
+                self._demandComponents.append(lib.sim_system_hotwater_get_water_demand_component(self.obj, id))
         return self._demandComponents
             
 # sim heater of convective water
 class SimHeaterConvectiveWater(SimSystem):
     def __init__(self, obj):
         self.obj = obj
+        self._loopConnection = None
         super(SimHeaterConvectiveWater,self).__init__(obj)
     def getMaxWaterFlowRate(self):
         return lib.sim_heater_convective_water_get_max_water_flow_rate(self.obj)
@@ -619,6 +625,7 @@ class SimHeaterConvectiveWater(SimSystem):
 class SimSystemHotwaterControl(SimSystem):
     def __init__(self, obj):
         self.obj = obj
+        self._loopConnection = None
         super(SimSystemHotwaterControl,self).__init__(obj)
     def getControlComponent(self, id):
         return lib.sim_system_hotwater_get_water_control_component(self.obj, id)
@@ -629,12 +636,14 @@ class SimSystemHotwaterControl(SimSystem):
 class SimSupplyWaterTemperatureControl(SimSystem):
     def __init__(self, obj):
         self.obj = obj
+        self._loopConnection = None
         super(SimSupplyWaterTemperatureControl,self).__init__(obj)
 
 # sim dry bulb temperature sensor
 class SimTemperatureDryBulbSensor(SimSystem):
     def __init__(self, obj):
         self.obj = obj
+        self._loopConnection = None
         super(SimTemperatureDryBulbSensor,self).__init__(obj)
 
 
@@ -662,6 +671,10 @@ lib.component_get_property_number.restype = c_int
 lib.component_get_property_number.argtypes = ()
 lib.component_get_property.restype = Property
 lib.component_get_property.argtypes = [c_void_p, c_int]
+lib.component_get_unmapped_component.restype = SimSystem
+lib.component_get_unmapped_component.argtypes = [c_void_p, c_int]
+lib.component_get_unmapped_component_number.restype = c_int
+lib.component_get_unmapped_component_number.argtypes = ()
 # component list level
 lib.rule_data_get_component.restype = Component
 lib.rule_data_get_component.argtypes = [c_void_p, c_int]
@@ -719,6 +732,8 @@ lib.sim_building_get_sim_system_number.restype = c_int
 lib.sim_building_get_sim_system_number.argtypes = ()
 lib.sim_system_get_name.restype = c_char_p
 lib.sim_system_get_name.argtypes = ()
+lib.sim_system_get_datatype.restype = c_char_p
+lib.sim_system_get_datatype.argtypes = ()
 lib.sim_system_to_pump_varSpedRet.restype = SimPumpVarSpedRet
 lib.sim_system_to_pump_varSpedRet.argtypes = ()
 lib.sim_system_to_boiler_hotwater.restype = SimBoilerHotWater

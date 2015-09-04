@@ -72,6 +72,8 @@ public:
 	string get_ref_id() {}
 	// retrieve the loop connection assigned to the component
 	void get_component_connection() {}
+	// automated data type pass
+	const char* datatype() {}
 
 private:
 	// generic API

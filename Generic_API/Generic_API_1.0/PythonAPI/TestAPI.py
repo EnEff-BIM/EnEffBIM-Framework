@@ -22,72 +22,39 @@ MapData.setDataLocation(useCaseLoc, mapRuleLoc)
 # transform SimModel data into Modelica objects
 MapData.transformModel()
 
-print(MapData.components)
-"""
-#This example is telated to issue57 
-print(MapData.simProject.simSite[0].buildings[0].buildingSystem[0].supplySide.supplyComponents[1])
-print(MapData.loopConnections[0].inletComponent)
-print(MapData.loopConnections[0].outletComponent)
-"""
-
-"""
+# access the mapped data
 for component in MapData.components:
     print("Component location: " + component.targetName + ", name: " + component.targetLocation)
+    
+    # access the corresponding unmapped component in SimModel side
+    for unmappedComponentObj in component.unmapComponent:
+        # automated type conversion to the real data type
+        unmappedComponent = unmappedComponentObj.typeConversion()
+        # print the unmapeed component name
+        print("unmapped component name: " + unmappedComponent.getSystemName())
+        
+    # access the internal property of the mapped component    
     for property in component.properties:
         if property.recordInstance != "":
             print("record structure name: " + property.recordInstance)
         if property.recordLocation != "":
             print("record structure location: " + property.recordLocation)
         print("Property: "+ property.targetLocation + property.name + "=" + property.value)
-    
-# create SimProject object
+
+# create SimProject object        
 simProject = MapData.simProject
 # iterate simSite list
 for simSiteObj in simProject.simSite:
     # iterate SimBuilding list
     for simBuildingObj in simSiteObj.buildings:
         # iterate SimSystem (HVAC system) list
-        for simSystemObj in simBuildingObj.simSystem:
-            # e.g., the hot water loop system in our 1st use case
-            if simSystemObj.getSystemName() == "hw_system": # if isinstance(simSystem, hw_system):
-                # convert the system object to its own class type: hot water system
-                simSystemHotwater = simSystemObj.toHotwaterSystem()
-                # access the internal properties of the hot water looping system: max loop temperature
-                print("System max loop temp: {}".format(simSystemHotwater.getMaxLoopTemp()))
-                # retrieve the supply side of the hot water system
-                supplySystem = simSystemHotwater.getSupplySide()
-                # retrieve the total number of water supply components
-                supplyComponentNumber = supplySystem.getSupplyComponentNumber()
-                # iterate each components of the supply side
-                for id in range(0, supplyComponentNumber):
-                    simComponent = supplySystem.getSupplyComponent(id)
-                    # retrieve the component name
-                    #print("supply component name: " + simComponent.getSystemName())
-                    # convert the component object to its own class type based on the name (data type conversion)
-                    if simComponent.getSystemName() == "SimFlowMover_Pump_VariableSpeedReturn":
-                        # convert to the pump type with variable flow speed return
-                        simPump = simComponent.toPumpVarSpedRet()
-                        # 1. access the loop connections assigned to the sim component object (after the data type conversion)
-                        for connectionObj in simPump.loopConnection:
-                            # retrieve the water outlet component of this loop connection
-                            print("water outlet component: "+connectionObj.outletComponent.getSystemName())
-                            # retrieve the water inlet component of this loop connection
-                            print("water intlet component: "+connectionObj.inletComponent.getSystemName())
-                            print("\n")
-                
-                
-
-# access all loop connections
-for connection in MapData.loopConnections:
-    componentWaterOut = connection.outletComponent
-    componentWaterIn = connection.inletComponent
-    # 2. access the loop connection assigned to the sim system object (before the data type conversion)
-    for connectionObj in componentWaterOut.loopConnection:
-        print("water outlet component: "+connectionObj.outletComponent.getSystemName())
-        print("water intlet component: "+connectionObj.inletComponent.getSystemName())
-    # data type conversion
-    if componentWaterOut.getSystemName() == "SimFlowMover_Pump_VariableSpeedReturn":
-        # convert to the pump type with variable flow speed return
-            simPumpWaterOut = componentWaterOut.toPumpVarSpedRet()
-            # access the internal properties of the pump:
-            print("pump rated flow rate in the loop: " + simPumpWaterOut.getRatedFlowRate())
+        for simSystemObj in simBuildingObj.buildingSystem:
+            # automated type conversion, e.g., the hot water loop system in our 1st use case
+            simHotWaterLoop = simSystemObj.typeConversion()
+            print(simHotWaterLoop)
+            for supply in simHotWaterLoop.supplySide.supplyComponents:
+                print(supply.typeConversion(), "has following connections:")
+                # access the connection of given component
+                for connection in supply.typeConversion().loopConnection:
+                    print(connection.outletComponent.typeConversion(),"is connected to",connection.inletComponent.typeConversion())
+                print("\n")

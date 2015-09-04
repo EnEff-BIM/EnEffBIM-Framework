@@ -108,6 +108,10 @@ extern "C" {
     const char* TEST_COMMON_DLLSPEC component_get_target_location(component_data* _component) { return _component->get_target_location(); }
     property_data* TEST_COMMON_DLLSPEC component_get_property(component_data* _component, int id) { return _component->get_property(id); }
 	int TEST_COMMON_DLLSPEC component_get_property_number(component_data* _component) { return _component->get_property_total_number(); }
+	// unmapped simmodel component
+	int TEST_COMMON_DLLSPEC component_get_unmapped_component_number(component_data* _component) { return _component->get_unmapped_component_number(); }
+	sim_base* TEST_COMMON_DLLSPEC component_get_unmapped_component(component_data* _component, int id) { return _component->get_unmapped_component(id); }
+
 	// each property
     const char* TEST_COMMON_DLLSPEC property_get_name(property_data* _property) { return _property->get_name(); }
 	const char* TEST_COMMON_DLLSPEC property_get_value(property_data* _property) { return _property->get_value(); }
@@ -156,6 +160,8 @@ extern "C" {
 	int TEST_COMMON_DLLSPEC sim_building_get_sim_system_number(sim_building* _sim_building) { return _sim_building->get_sim_system_total_number(); }
 	// retrieve the system component name
 	const char* TEST_COMMON_DLLSPEC sim_system_get_name(sim_base* _sim_base) { return _sim_base->get_com_name().c_str(); }
+	// retrieve the system object data type
+	const char* TEST_COMMON_DLLSPEC sim_system_get_datatype(sim_base* _sim_base) { return _sim_base->datatype(); }
 	// convert system objects
 	// convert to the hot water system
 	sim_hotwater_system* TEST_COMMON_DLLSPEC sim_system_to_hotwater_system(sim_base* _sim_base) { return _sim_base->to_hotwater_system(); }

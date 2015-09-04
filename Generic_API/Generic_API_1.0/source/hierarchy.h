@@ -36,7 +36,8 @@
 
 // include the head file
 // saving translated model data
-#include "SimmodelAPI.h"
+//#include "SimmodelAPI.h"
+#include "include_files.h"
 // include Qt base object
 #include <QObject>
 
@@ -129,6 +130,8 @@
 				virtual void get_component_connection() = 0;
 				// save the loop connections link to the component
 				vector<sim_conns*> _connection_vec;
+				// automated data type pass
+				virtual const char* datatype() = 0;
 			};
 
 			//1. simulation project
@@ -250,6 +253,8 @@
 				string get_ref_id();
 				// retrieve the loop connection assigned to the component
 				void get_component_connection();
+				// automated data type pass
+				const char* datatype() {}
 			};
 			//2.1 simulation site
 			class sim_site : public virtual sim_base
@@ -357,6 +362,8 @@
 				string get_ref_id();
 				// retrieve the loop connection assigned to the component
 				void get_component_connection();
+				// automated data type pass
+				const char* datatype() {}
 			};
 			
 			// 2.1.1 simulation buidling
@@ -476,6 +483,8 @@
 				string get_ref_id();
 				// retrieve the loop connection assigned to the component
 				void get_component_connection();
+				// automated data type pass
+				const char* datatype() {}
 			};
 			//   2.1.1.1.1 space occupied
 			class sim_space_occupied : public virtual sim_base
@@ -517,6 +526,8 @@
 				string get_ref_id();
 				// retrieve the loop connection assigned to the component
 				void get_component_connection();
+				// automated data type pass
+				const char* datatype() {}
 			};
 
 			// 2.1.2 simulation zone & HVAC group
@@ -566,6 +577,8 @@
 				string get_ref_id();
 				// retrieve the loop connection assigned to the component
 				void get_component_connection();
+				// automated data type pass
+				const char* datatype() {}
 
 			private:
 				// generic component name (without id)
@@ -598,6 +611,8 @@
 				int gap_param_nr;
 				// save property values
 				list<pair<string, string> > prop_val_maps;
+				// class data type conversion for Python
+				string _data_type;
 
 				// gernica API
 				/*vector<sim_hotwater_control*> sim_hotwater_control_list;
@@ -610,6 +625,7 @@
 				{ 
 					com_name = "hw_system";
 					gap_param_nr = 0; 
+					_data_type = "toHotwaterSystem";
 				}
 				// set child class: sim thermal zone
 				void set_hotwater_control(sim_hotwater_control& _sim_hotwater_control_mo);
@@ -637,6 +653,8 @@
 				string get_ref_id();
 				// retrieve the loop connection assigned to the component
 				void get_component_connection();
+				// automated data type pass
+				const char* datatype();
 
 				// generic API
 				// internal properites
@@ -693,6 +711,8 @@
 				string get_ref_id();
 				// retrieve the loop connection assigned to the component
 				void get_component_connection();
+				// automated data type pass
+				const char* datatype() {}
 
 				// generic API
 				// save child component for the control side
@@ -712,6 +732,7 @@
 				sim_supplywater_temp_control() 
 				{
 					com_name = "temperature_control";
+					_data_type = "toSupplyWaterTemperatureControl";
 					gap_param_nr = 0; 
 				}
 				// refer to object class: sim supply water temperature controler
@@ -728,10 +749,14 @@
 				string get_ref_id();
 				// retrieve the loop connection assigned to the component
 				void get_component_connection();
+				// automated data type pass
+				const char* datatype();
 			
 			private:
 				// generic component name (without id)
 				string com_name;
+				// class data type conversion for Python
+				string _data_type;
 				// quantity of gaps
 				int gap_param_nr;
 				// save property values
@@ -747,6 +772,7 @@
 				sim_temp_drybulb_sensor() 
 				{ 
 					com_name = "drybulb";
+					_data_type = "toTemperatureDryBulbSensor";
 					gap_param_nr = 0; 
 				}
 				// refer to object class: sim temperature dry bulb sensor
@@ -763,10 +789,14 @@
 				string get_ref_id();
 				// retrieve the loop connection assigned to the component
 				void get_component_connection();
+				// automated data type pass
+				const char* datatype();
 
 			private:
 				// generic component name (without id)
 				string com_name;
+				// class data type conversion for Python
+				string _data_type;
 				// quantity of gaps
 				int gap_param_nr;
 				// save property values
@@ -816,6 +846,8 @@
 				string get_ref_id();
 				// retrieve the loop connection assigned to the component
 				void get_component_connection();
+				// automated data type pass
+				const char* datatype() {}
 
 				// generic API
 				// save child component for the demand side
@@ -835,6 +867,7 @@
 				 sim_flwEngyTran_convectheater_water() 
 				{
 					com_name = "SimFlowEnergyTransfer_ConvectiveHeater_Water";
+					_data_type = "toHeaterConvectiveWater";
 					gap_param_nr = 0; 
 					// default values
 					nom_power = 644; 
@@ -871,6 +904,8 @@
 				string get_ref_id();
 				// retrieve the loop connection assigned to the component
 				void get_component_connection();
+				// automated data type pass
+				const char* datatype();
 
 				// retrieve the generic component name
 				Q_INVOKABLE string get_com_name() { return com_name; }
@@ -901,6 +936,8 @@
 			private:
 				// generic component name (without id)
 				string com_name;
+				// class data type conversion for Python
+				string _data_type;		
 				// quantity of gaps
 				int gap_param_nr;
 				// save property values
@@ -977,6 +1014,8 @@
 				string get_ref_id();
 				// retrieve the loop connection assigned to the component
 				void get_component_connection();
+				// automated data type pass
+				const char* datatype() {}
 
 				// generic API
 				// save child component for the supply side
@@ -996,6 +1035,7 @@
 				sim_flwMov_pump_varSpedRet() 
 				{ 
 					com_name = "SimFlowMover_Pump_VariableSpeedReturn";
+					_data_type = "toPumpVarSpedRet";
 					gap_param_nr = 0;
 					// default paramters
 					c1 = 0;
@@ -1035,6 +1075,8 @@
 				int get_period() { return _period; }
 				// retrieve the loop connection assigned to the component
 				void get_component_connection();
+				// automated data type pass
+				const char* datatype();
 
 				// generic API
 				double get_SimFlowMover_MotorEff();
@@ -1057,6 +1099,8 @@
 				double v_flow; // volume flow rate through the pump [m3/s]
 				double p_head; // pumping head [m]
 				int _period; // time for one period [s]
+				// class data type conversion for Python
+				string _data_type;
 
 				// refer to the time series of the pump
 				SimModel::SimTimeSeriesSchedule_Day_Hourly_iterator sim_tmsrs_dayhour_it;
@@ -1074,6 +1118,7 @@
 				Q_INVOKABLE sim_flwPlt_hotwater_boiler() 
 				{ 
 					com_name = "SimFlowPlant_Boiler_BoilerHotWater";
+					_data_type = "toBoilerHotWater";
 					gap_param_nr = 0; 
 					// default values
 					_vol = 0.00999999977648;
@@ -1096,6 +1141,8 @@
 				string get_ref_id();
 				// retrieve the loop connection assigned to the component
 				void get_component_connection();
+				// automated data type pass
+				const char* datatype();
 
 				// save performance curve iterator
 				void set_percur(SimModel::SimPerformanceCurve_Mathematical_Quadratic_iterator& _it);
@@ -1120,6 +1167,8 @@
 			private:
 				// generic component name (without id)
 				string com_name;
+				// class data type conversion for Python
+				string _data_type;
 				// quantity of gaps
 				int gap_param_nr;
 				// save property values
@@ -1168,6 +1217,8 @@
 				string get_ref_id();
 				// retrieve the loop connection assigned to the component
 				void get_component_connection();
+				// automated data type pass
+				const char* datatype() {}
 			};
 
 			// 3 sim connection between components

@@ -32,7 +32,8 @@
 //
 
 // include the head files
-#include "include_files.h"
+//#include "include_files.h"
+#include "hierarchy.h"
 #include <QtCore/QtGlobal>
 
 #if defined TEST
@@ -128,11 +129,18 @@ public:
     property_data* get_property(int id) { return &proptery_list.at(id); }
     int get_property_total_number() { return proptery_list.size(); }
 
+	// save the corresponding SimModel component before mapping
+	void save_unmapped_component(sim_base* _com);
+	int get_unmapped_component_number();
+	sim_base* get_unmapped_component(int id);
+
 private:
 	string target_component_name;
 	string target_location;
 	// a list of internal properties
 	vector<property_data> proptery_list;
+	// refer to the corresponding SimModel component
+	vector<sim_base*> unmapped_component_list;
 };
 
 #endif

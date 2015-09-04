@@ -3,7 +3,6 @@
 # Project created by QtCreator 2015-02-01T13:04:31
 #
 #-------------------------------------------------
-
 QT       += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
@@ -16,10 +15,12 @@ DEFINES += TEST
 #INCLUDEPATH += "C:\xsd\xsd3.3\xerces-c-3.1.1\src" \
 #               "C:\xsd\xsd3.3\include"
 INCLUDEPATH += "C:\xsd\xsd4.0\xerces-c-3.1.1\src" \
-               "C:\xsd\xsd4.0\include"
+               "C:\xsd\xsd4.0\include" \
+               "C:\Python34\include"
 
 #LIBS += -L"C:\xsd\xsd3.3\xerces-c-3.1.1\src\.libs" -lxerces-c
-LIBS += -L"C:\xsd\xsd4.0\xerces-c-3.1.1\src\.libs" -lxerces-c
+LIBS += -L"C:\xsd\xsd4.0\xerces-c-3.1.1\src\.libs" -lxerces-c \
+        -L"C:\Python34\libs" -lpython34
 
 #QMAKE_CXXFLAGS_DEBUG -= -O
 #QMAKE_CXXFLAGS_DEBUG -= -O1
@@ -2670,7 +2671,8 @@ SOURCES += \
     source/hierarchy.cpp \
     source/simmodelParser.cpp \
     source/ruleFilter.cpp \
-    source/mapData.cpp
+    source/mapData.cpp \
+    source/SimmodelAPI.cpp
 
 HEADERS  += \
     simmodel_framework/AddressLines.hxx \

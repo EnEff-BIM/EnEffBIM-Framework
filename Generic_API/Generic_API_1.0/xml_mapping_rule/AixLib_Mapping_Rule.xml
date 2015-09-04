@@ -800,7 +800,7 @@
   </Component_Map_Gap>
 
   <!-- component mapping for the water pipe -->
-  <Component_Map_Gap RefId="ID06T">
+  <!-- <Component_Map_Gap RefId="ID06T">
     <Description>map a water pipe into AixLib</Description>
     <TargetComponentName>pipe_HeatTransfer</TargetComponentName>
     <TargetLocation>AixLib.HVAC.Pipes.Pipe</TargetLocation>
@@ -808,7 +808,7 @@
     <Property_Map_Gap_Name>ID063T</Property_Map_Gap_Name>
     <Property_Map_Gap_Name>ID062</Property_Map_Gap_Name>
     <Property_Map_Gap_Name>ID064</Property_Map_Gap_Name>
-  </Component_Map_Gap>
+  </Component_Map_Gap>  -->
 
   <!-- component mapping for the expansion vessel -->
   <Component_Map_Gap RefId="ID04">
@@ -828,8 +828,8 @@
     <Component_Map_One2Many_Name>ID01</Component_Map_One2Many_Name>
     <Component_Map_One2Many_Name>ID03</Component_Map_One2Many_Name>
     <Component_Map_Gap_Name>ID04</Component_Map_Gap_Name>
-	<Component_Map_Gap_Name>ID05T</Component_Map_Gap_Name>
-	<Component_Map_Gap_Name>ID06T</Component_Map_Gap_Name>
+	  <Component_Map_Gap_Name>ID05T</Component_Map_Gap_Name>
+	  <!-- <Component_Map_Gap_Name>ID06T</Component_Map_Gap_Name> -->
   </Multiple_Library_Map>
   
   <!-- mapping rules defined for BuildingSystems -->
