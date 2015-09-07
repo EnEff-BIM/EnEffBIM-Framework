@@ -27,12 +27,11 @@ for component in MapData.components:
     print("Component location: " + component.targetName + ", name: " + component.targetLocation)
     
     # access the corresponding unmapped component in SimModel side
-    for unmappedComponentObj in component.unmapComponent:
+    for unmappedComponentObj in component.unmappedComponent:
         # automated type conversion to the real data type
-        unmappedComponent = unmappedComponentObj.typeConversion()
         # print the unmapeed component name
-        print("unmapped component name: " + unmappedComponent.getSystemName())
-        
+        print("unmapped component name: " + unmappedComponentObj.identifier)
+"""        
     # access the internal property of the mapped component    
     for property in component.properties:
         if property.recordInstance != "":
@@ -58,3 +57,4 @@ for simSiteObj in simProject.simSite:
                 for connection in supply.typeConversion().loopConnection:
                     print(connection.outletComponent.typeConversion(),"is connected to",connection.inletComponent.typeConversion())
                 print("\n")
+"""

@@ -165,7 +165,9 @@ class Component(object):
     @property
     def unmappedComponent(self):
         if self._unmappedComponent == None:
-            self._unmappedComponent = [lib.component_get_unmapped_component(self.obj, id) for id in range(lib.component_get_unmapped_component_number(self.obj))]
+            self._unmappedComponent = []
+            for id in  range(lib.component_get_unmapped_component_number(self.obj)):
+                self._unmappedComponent.append(lib.component_get_unmapped_component(self.obj, id).typeConversion())
         return self._unmappedComponent
 
 
