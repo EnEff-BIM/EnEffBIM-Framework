@@ -245,12 +245,13 @@ class SimConnection(object):
     ----------
        
     outletComponent : str
-        ?
+        outlet component of the Connection 
     
     
     inletComponent : str
-        ?
+        inlet component of the connection
     '''
+    
     def __init__(self, obj):
         self.obj = obj
         self._outletComponent = None
@@ -259,33 +260,15 @@ class SimConnection(object):
     @property
     def outletComponent(self):
         if self._outletComponent == None:
-            self._outletComponent = lib.sim_system_get_outlet_component(self.obj)
+            self._outletComponent = lib.sim_system_get_outlet_component(self.obj).typeConversion()
         return self._outletComponent
-        '''if lib.sim_system_get_outlet_component(self.obj).identifier == "SimFlowPlant_Boiler_BoilerHotWater":
-                #print("Pointer to specific Boiler")
-                self._outletComponent =lib.sim_system_get_outlet_component(self.obj).toBoilerHotWater()
-            elif lib.sim_system_get_outlet_component(self.obj).identifier == "SimFlowEnergyTransfer_ConvectiveHeater_Water":
-                #print("Pointer to specific Radiator")
-                self._outletComponent =lib.sim_system_get_outlet_component(self.obj).toHeaterConvectiveWater()
-            elif lib.sim_system_get_outlet_component(self.obj).identifier == "SimFlowMover_Pump_VariableSpeedReturn":
-                #print("Pointer to specific Pump")
-                self._outletComponent =lib.sim_system_get_outlet_component(self.obj).toPumpVarSpedRet()
-        return self._outletComponent'''
+
     @property
     def inletComponent(self):
         if self._inletComponent == None:
-            self._inletComponent = lib.sim_system_get_inlet_component(self.obj)
+            self._inletComponent = lib.sim_system_get_inlet_component(self.obj).typeConversion()
         return self._inletComponent
-        '''if lib.sim_system_get_inlet_component(self.obj).identifier == "SimFlowPlant_Boiler_BoilerHotWater":
-                print("Pointer to specific Boiler")
-                self._inletComponent =lib.sim_system_get_inlet_component(self.obj).toBoilerHotWater()
-            elif lib.sim_system_get_inlet_component(self.obj).identifier == "SimFlowEnergyTransfer_ConvectiveHeater_Water":
-                print("Pointer to specific Radiator")
-                self._inletComponent =lib.sim_system_get_inlet_component(self.obj).toHeaterConvectiveWater()
-            elif lib.sim_system_get_inlet_component(self.obj).identifier == "SimFlowMover_Pump_VariableSpeedReturn":
-                print("Pointer to specific Pump")
-                self._inletComponent =lib.sim_system_get_inlet_component(self.obj).toPumpVarSpedRet()
-        return self._inletComponent'''
+
 
 class SimProject(object):
     '''This class represents an unmapped SimProject 

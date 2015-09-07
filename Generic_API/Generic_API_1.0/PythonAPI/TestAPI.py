@@ -31,6 +31,9 @@ for component in MapData.components:
         # automated type conversion to the real data type
         # print the unmapeed component name
         print("unmapped component name: " + unmappedComponentObj.identifier)
+        
+for connection in MapData.loopConnections:
+    print(connection.outletComponent)
 """        
     # access the internal property of the mapped component    
     for property in component.properties:
