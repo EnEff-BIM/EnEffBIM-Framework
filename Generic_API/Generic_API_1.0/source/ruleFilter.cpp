@@ -273,6 +273,10 @@ void map_rule_filter::filter_component_map_one2one(SimMap::Component_Map_One2one
 	{
 		_component.set_target_location( *component_it->TargetLocation().get().begin() );
 	}
+	
+	// save the unmapped simmodel component reference
+	_component.save_unmapped_component(component_ptr);
+
 	// retrieve properties belong to current component
 	// property one2one mapping
 	com_map_one2one::Property_Map_One2one_Name_sequence& _property_one2one_list = component_it->Property_Map_One2one_Name();
@@ -347,6 +351,9 @@ void map_rule_filter::filter_component_map_one2many(SimMap::Component_Map_One2Ma
 			_component.set_target_component_name( _com_map_it->second->TargetComponentName() + QString::number(next_id).toStdString() );
 			// increase the id number
 			map_rule_filter::next_component_id();
+			// save the unmapped simmodel component reference
+			_component.save_unmapped_component(component_ptr);
+
 			//! retrieve target component location in the Modelica lib
 			if( _com_map_it->second->TargetLocation().present() )
 			{

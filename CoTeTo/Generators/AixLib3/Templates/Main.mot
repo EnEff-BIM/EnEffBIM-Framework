@@ -1,19 +1,6 @@
 ## Main controller file
 ## call subfiles from here
-${location}
-${modelName[0].name}
-% for test in comDict:
-	${test.targetName}
-	
-	% for i in test.properties:
-		${i.value}
-	% endfor
-% endfor
-
-${comDict[0].properties[1].name}
-${comDict[0].properties[1].value}
-${comDict[0].properties[1].targetLocation}
-${comDict[0].properties[1].recordInstance}
-${comDict[0].properties[1].recordLocation}
-${comDict[0].properties[1].valueGroup}
-${comDict[0].properties[1].flag}
+${MapData.components[0].targetName}
+${MapData.components[0].targetLocation}
+${MapData.components[0].properties}
+${MapData.components[0].unmappedComponent}

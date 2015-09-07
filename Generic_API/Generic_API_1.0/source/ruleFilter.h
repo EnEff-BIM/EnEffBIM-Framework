@@ -36,7 +36,8 @@
 
 // include SimModel hierarchy
 // and SimModel API for Python
-#include "hierarchy.h"
+//#include "hierarchy.h"
+#include "SimmodelAPI.h"
 
 // refer to the mapping rule class
 typedef namespaces::Sim::DataMap::Component_Map_One2one com_map_one2one;
