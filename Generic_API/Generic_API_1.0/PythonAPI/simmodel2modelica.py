@@ -135,6 +135,9 @@ class Component(object):
     
     properties : list of Property()
         Properties of Modelica model
+        
+    unmappedComponent : list of SimSystem()
+        This list provides the link to the SimModel Class(es)
 
     '''
     def __init__(self, obj):
@@ -466,7 +469,9 @@ class SimSystem(object):
     toHotwaterSystem()
         transforms to SimSystemHotwater()
         
-    
+    typeConversion()
+        automatically calls the corresponding transforming method 
+        (e.g. toHotwaterSystem())
     
     '''
     @property

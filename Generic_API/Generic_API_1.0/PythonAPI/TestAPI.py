@@ -25,7 +25,7 @@ MapData.transformModel()
 # access the mapped data
 for component in MapData.components:
     print("Component location: " + component.targetName + ", name: " + component.targetLocation)
-    
+    print(component.unmappedComponent)
     # access the corresponding unmapped component in SimModel side
     for unmappedComponentObj in component.unmappedComponent:
         # automated type conversion to the real data type
