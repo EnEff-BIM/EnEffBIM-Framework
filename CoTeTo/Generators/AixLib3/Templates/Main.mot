@@ -1,0 +1,6 @@
+## Main controller file
+## call subfiles from here
+${MapData.components[0].targetName}
+${MapData.components[0].targetLocation}
+${MapData.components[0].properties}
+${MapData.components[0].unmappedComponent}

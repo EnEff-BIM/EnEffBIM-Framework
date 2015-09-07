@@ -1,0 +1,24 @@
+[GENERATOR]
+name = EEB2AIX
+version = 1.2
+description = Generates Modelica code for AixLib from EnEFF-BIM data
+author = EnEff-BIM team
+
+[REQUIRES]
+modelicaLibs = [AIXLIB]
+
+[API]
+name = EnEffBIM
+minVer = 1.1
+maxVer = 1.2
+
+[MAPRULES]
+files = RuleSet01.xml
+
+[PYFILTER]
+module = Filter01
+function = filter01
+
+[TEMPLATES]
+topFile = Main.mot
+type = mako

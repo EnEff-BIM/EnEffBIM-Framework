@@ -163,7 +163,7 @@ class Component(object):
                 self._properties.append(lib.component_get_property(self.obj, id))
         return self._properties
     @property
-    def unmapComponent(self):
+    def unmappedComponent(self):
         if self._unmappedComponent == None:
             self._unmappedComponent = [lib.component_get_unmapped_component(self.obj, id) for id in range(lib.component_get_unmapped_component_number(self.obj))]
         return self._unmappedComponent
@@ -494,6 +494,7 @@ class SimSystem(object):
             lib.sim_system_check_component_connection(self.obj)
             self._loopConnection = [lib.sim_system_get_component_connection(self.obj, id) for id in range(lib.sim_system_get_component_connection_number(self.obj))]
         return self._loopConnection
+    
     def typeConversion(self):
         if self._dataType == None:
             self._dataType = self.getDataType()
