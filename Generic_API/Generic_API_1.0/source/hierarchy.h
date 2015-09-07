@@ -132,6 +132,8 @@
 				vector<sim_conns*> _connection_vec;
 				// automated data type pass
 				virtual const char* datatype() = 0;
+				// parent class instance
+				// virtual sim_base* check_parent_node() = 0;
 			};
 
 			//1. simulation project
@@ -436,6 +438,21 @@
 
 				// internal properties
 				//BuildingHeight;
+
+				// inheritance ovrride API
+				/*list<pair<string, string> >& get_prop_val() {}
+				// save the modified propety values
+				void save_prop_val(list<pair<string, string> >::iterator& _prop_it) {}
+				// the number of gap parameters
+				int get_gap() {}
+				// retrieve the generic component name
+				string get_com_name() {}
+				// retrieve the simmodel element reference id
+				string get_ref_id() {}
+				// retrieve the loop connection assigned to the component
+				void get_component_connection() {}
+				// automated data type pass
+				const char* datatype() {}*/
 			};
 
 			//  2.1.1.1 buidling stories: n+1

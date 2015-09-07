@@ -158,6 +158,8 @@ extern "C" {
 	sim_base* TEST_COMMON_DLLSPEC sim_building_get_sim_system(sim_building* _sim_building, int id) { return _sim_building->get_sim_system(id); }
 	// retrieve the total number of sim systems
 	int TEST_COMMON_DLLSPEC sim_building_get_sim_system_number(sim_building* _sim_building) { return _sim_building->get_sim_system_total_number(); }
+	// retrieve the simmodel element reference id
+	const char* TEST_COMMON_DLLSPEC sim_system_get_ref_id(sim_base* _sim_base) { return _sim_base->get_ref_id().c_str(); }
 	// retrieve the system component name
 	const char* TEST_COMMON_DLLSPEC sim_system_get_name(sim_base* _sim_base) { return _sim_base->get_com_name().c_str(); }
 	// retrieve the system object data type

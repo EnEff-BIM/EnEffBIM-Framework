@@ -27,11 +27,13 @@ for component in MapData.components:
     print("Component location: " + component.targetName + ", name: " + component.targetLocation)
     
     # access the corresponding unmapped component in SimModel side
-    for unmappedComponentObj in component.unmapComponent:
+    for unmappedComponentObj in component.unmappedComponent:
         # automated type conversion to the real data type
         unmappedComponent = unmappedComponentObj.typeConversion()
-        # print the unmapeed component name
+        # print the unmapped component name
         print("unmapped component name: " + unmappedComponent.getSystemName())
+        # print the component ID
+        print("unmapped component ID:", unmappedComponent.typeConversion().RefId())
         
     # access the internal property of the mapped component    
     for property in component.properties:

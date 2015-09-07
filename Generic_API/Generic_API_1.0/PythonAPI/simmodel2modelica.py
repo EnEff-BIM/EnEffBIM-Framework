@@ -494,11 +494,13 @@ class SimSystem(object):
             lib.sim_system_check_component_connection(self.obj)
             self._loopConnection = [lib.sim_system_get_component_connection(self.obj, id) for id in range(lib.sim_system_get_component_connection_number(self.obj))]
         return self._loopConnection
-    
     def typeConversion(self):
         if self._dataType == None:
             self._dataType = self.getDataType()
         return getattr(self, self._dataType)()
+    def RefId(self):
+        return b2s(lib.sim_system_get_ref_id(self.obj))
+    
 
 class SimSystemHotwater(object):
     def __init__(self, obj):
@@ -733,6 +735,8 @@ lib.sim_building_get_sim_system_number.restype = c_int
 lib.sim_building_get_sim_system_number.argtypes = ()
 lib.sim_system_get_name.restype = c_char_p
 lib.sim_system_get_name.argtypes = ()
+lib.sim_system_get_ref_id.restype = c_char_p
+lib.sim_system_get_ref_id.argtypes = ()
 lib.sim_system_get_datatype.restype = c_char_p
 lib.sim_system_get_datatype.argtypes = ()
 lib.sim_system_to_pump_varSpedRet.restype = SimPumpVarSpedRet
