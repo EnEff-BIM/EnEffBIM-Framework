@@ -21,7 +21,7 @@ MapData = lsm.RuleData()
 MapData.setDataLocation(useCaseLoc, mapRuleLoc)
 # transform SimModel data into Modelica objects
 MapData.transformModel()
-"""
+
 # access the mapped data
 for component in MapData.components:
     print("Component location: " + component.targetName + ", name: " + component.targetLocation)
@@ -30,18 +30,14 @@ for component in MapData.components:
     for unmappedComponentObj in component.unmappedComponent:
         # automated type conversion to the real data type
         # print the unmapped component name
-        print("unmapped component name: " + unmappedComponent.getSystemName())
+        print("unmapped component name: " + unmappedComponentObj.identifier)
         # print the component ID
-        print("unmapped component ID:", unmappedComponent.typeConversion().RefId())
+        print("unmapped component ID:", unmappedComponentObj.typeConversion().RefId())
         
 #for connection in MapData.loopConnections:
 #    print(connection.outletComponent)
-#for component in MapData.components:
-#    print(component.unmappedComponent[0].loopConnection)
-print(MapData.components[0].unmappedComponent[0].inletConnection)
-#print(MapData.components[0].unmappedComponent[0].loopConnection[1].outletComponent)
-#print(MapData.components[0].unmappedComponent[0].loopConnection[1].inletComponent)
-    # access the internal property of the mapped component    
+for component in MapData.components:
+
     for property in component.properties:
         if property.recordInstance != "":
             print("record structure name: " + property.recordInstance)
@@ -66,4 +62,3 @@ for simSiteObj in simProject.simSite:
                 for connection in supply.typeConversion().loopConnection:
                     print(connection.outletComponent.typeConversion(),"is connected to",connection.inletComponent.typeConversion())
                 print("\n")
-"""
