@@ -431,6 +431,8 @@ class SimSystem(object):
         self._identifier = None
         self._loopConnection = None
         self._dataType = None
+        self._inletConnection = None
+        self._outletConnection = None
     '''
     This class represents an unmapped SimSystem (root element)
 
@@ -445,6 +447,18 @@ class SimSystem(object):
        
     identifier: str
         identifier of a SimSystem
+        
+    loopConnection: list
+        a list of all SimConnection connected to that SimSystem
+        
+    dataType: str
+        the type of the SimSystem, needed for the data type conversion
+        
+    inletConnection : SimSystem
+        link to the SimSystem where the inlet connection comes from
+        
+    outletConnection: SimSystem
+        link to the SimSystem where it is connected to
         
     Methods:
     ----------
@@ -481,9 +495,27 @@ class SimSystem(object):
     @property
     def loopConnection(self):
         if self._loopConnection == None:
+            self._loopConnection = []
             lib.sim_system_check_component_connection(self.obj)
-            self._loopConnection = [lib.sim_system_get_component_connection(self.obj, id) for id in range(lib.sim_system_get_component_connection_number(self.obj))]
+            for id in range(lib.sim_system_get_component_connection_number(self.obj)):
+                self._loopConnection.append(lib.sim_system_get_component_connection(self.obj, id))
         return self._loopConnection
+    
+    @property
+    def inletConnection(self):
+        if self._inletConnection == None:
+            for connection in self.loopConnection:
+                if connection.outletComponent == self:
+                    self._inletConnection = connection.inletComponent
+        return self._inletConnection               
+    
+    @property
+    def outetConnection(self):
+        if self._outetConnection == None:
+            for connection in self.loopConnection:
+                if connection.inletComponent == self:
+                    self._outetConnection = connection.outletComponent
+        return self._outetConnection          
     
     def typeConversion(self):
         if self._dataType == None:

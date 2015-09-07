@@ -21,7 +21,7 @@ MapData = lsm.RuleData()
 MapData.setDataLocation(useCaseLoc, mapRuleLoc)
 # transform SimModel data into Modelica objects
 MapData.transformModel()
-
+"""
 # access the mapped data
 for component in MapData.components:
     print("Component location: " + component.targetName + ", name: " + component.targetLocation)
@@ -31,9 +31,15 @@ for component in MapData.components:
         # automated type conversion to the real data type
         # print the unmapeed component name
         print("unmapped component name: " + unmappedComponentObj.identifier)
-        
-for connection in MapData.loopConnections:
-    print(connection.outletComponent)
+"""        
+#for connection in MapData.loopConnections:
+#    print(connection.outletComponent)
+#for component in MapData.components:
+#    print(component.unmappedComponent[0].loopConnection)
+print(MapData.components[0].unmappedComponent[0].inletConnection)
+#print(MapData.components[0].unmappedComponent[0].loopConnection[1].outletComponent)
+#print(MapData.components[0].unmappedComponent[0].loopConnection[1].inletComponent)
+
 """        
     # access the internal property of the mapped component    
     for property in component.properties:
