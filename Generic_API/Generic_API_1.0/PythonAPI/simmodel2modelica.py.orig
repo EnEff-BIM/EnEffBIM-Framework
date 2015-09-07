@@ -500,6 +500,9 @@ class SimSystem(object):
             for id in range(lib.sim_system_get_component_connection_number(self.obj)):
                 self._loopConnection.append(lib.sim_system_get_component_connection(self.obj, id))
         return self._loopConnection
+<<<<<<< HEAD
+=======
+    
     @property
     def inletConnection(self):
         if self._inletConnection == None:
@@ -516,6 +519,7 @@ class SimSystem(object):
                     self._outetConnection = connection.outletComponent
         return self._outetConnection          
     
+>>>>>>> issue55_ComponentConnection
     def typeConversion(self):
         if self._dataType == None:
             self._dataType = self.getDataType()
