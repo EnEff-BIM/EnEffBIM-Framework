@@ -25,14 +25,14 @@ MapData.transformModel()
 # access the mapped data
 for component in MapData.components:
     print("Component location: " + component.targetName + ", name: " + component.targetLocation)
-    print(component.unmappedComponent)
+    #print(component.unmappedComponent)
     # access the corresponding unmapped component in SimModel side
     for unmappedComponentObj in component.unmappedComponent:
         # automated type conversion to the real data type
         # print the unmapped component name
         print("unmapped component name: " + unmappedComponentObj.identifier)
         # print the component ID
-        print("unmapped component ID:", unmappedComponentObj.typeConversion().RefId())
+        print("unmapped component ID:", unmappedComponentObj.refID)
         
 #for connection in MapData.loopConnections:
 #    print(connection.outletComponent)

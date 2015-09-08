@@ -429,6 +429,7 @@ class SimSystem(object):
         self.obj = obj
         
         self._identifier = None
+        self._refID = None
         self._loopConnection = None
         self._dataType = None
         self._inletConnection = None
@@ -447,6 +448,9 @@ class SimSystem(object):
        
     identifier: str
         identifier of a SimSystem
+        
+    refID : str
+        SimModel redID to identify Instances
         
     loopConnection: list
         a list of all SimConnection connected to that SimSystem
@@ -504,7 +508,7 @@ class SimSystem(object):
     def inletConnection(self):
         if self._inletConnection == None:
             for connection in self.loopConnection:
-                if connection.outletComponent == self:
+                if connection.outletComponent.refID == self.refID:
                     self._inletConnection = connection.inletComponent
         return self._inletConnection               
     
@@ -512,16 +516,20 @@ class SimSystem(object):
     def outetConnection(self):
         if self._outetConnection == None:
             for connection in self.loopConnection:
-                if connection.inletComponent == self:
+                if connection.inletComponent.refID == self.refID:
                     self._outetConnection = connection.outletComponent
         return self._outetConnection          
+    @property
+    def refID(self):
+        if self._refID == None:
+            self._refID = b2s(lib.sim_system_get_ref_id(self.obj))
+        return self._refID
     
     def typeConversion(self):
         if self._dataType == None:
             self._dataType = self.getDataType()
         return getattr(self, self._dataType)()
-    def RefId(self):
-        return b2s(lib.sim_system_get_ref_id(self.obj))
+
     
 
 class SimSystemHotwater(object):
