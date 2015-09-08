@@ -33,6 +33,10 @@ for component in MapData.components:
         print("unmapped component name: " + unmappedComponentObj.identifier)
         # print the component ID
         print("unmapped component ID:", unmappedComponentObj.refID)
+        # print the inlet Connection
+        print("inlet Connection:", unmappedComponentObj.inletConnection)
+        # print the outlet Connection
+        print("outlet Connection:", unmappedComponentObj.outletConnection)
         
 #for connection in MapData.loopConnections:
 #    print(connection.outletComponent)

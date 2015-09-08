@@ -508,17 +508,17 @@ class SimSystem(object):
     def inletConnection(self):
         if self._inletConnection == None:
             for connection in self.loopConnection:
-                if connection.outletComponent.refID == self.refID:
-                    self._inletConnection = connection.inletComponent
+                if connection.inletComponent.refID == self.refID:
+                    self._inletConnection = connection.outletComponent
         return self._inletConnection               
     
     @property
-    def outetConnection(self):
-        if self._outetConnection == None:
+    def outletConnection(self):
+        if self._outletConnection == None:
             for connection in self.loopConnection:
-                if connection.inletComponent.refID == self.refID:
-                    self._outetConnection = connection.outletComponent
-        return self._outetConnection          
+                if connection.outletComponent.refID == self.refID:
+                    self._outletConnection = connection.inletComponent
+        return self._outletConnection          
     @property
     def refID(self):
         if self._refID == None:
