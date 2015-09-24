@@ -21,7 +21,7 @@ class MappedRecord(object):
         
     parameters : list of MappedProperties or MappedRecords
         This is an *iterable* list containing all records and properties of
-        the MappedComponent
+        the MappedRecord
 
     """
     
