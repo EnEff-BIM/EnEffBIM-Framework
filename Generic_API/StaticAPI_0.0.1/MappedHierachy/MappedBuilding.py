@@ -3,6 +3,14 @@ class MappedBuilding(object):
         
     The MappedBuilding class is a representation of a building mapped with
     Modelica information. It contains HVAC and geometric information.
+    
+    Parameters
+    ----------
+    
+    parent_project : instance of MappedProject()
+        MappedBuilding recieves an instance of MappedProject, in order to know
+        to what Project it belongs to. Might be trivial in the case of the 
+        project, more because of consistency.
         
     Attributes
     ----------
@@ -24,8 +32,9 @@ class MappedBuilding(object):
     
     """
     
-    def __init__(self):
+    def __init__(self, parent_project):
         
+        self.parent_project = parent_project
         self.building_name = ""
         self.thermal_zones = []
         self.supply_components = []
