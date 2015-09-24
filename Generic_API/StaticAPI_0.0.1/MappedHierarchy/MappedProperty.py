@@ -16,17 +16,15 @@ class MappedProperty(object):
     name : str
         Modelica name of the Parameter (e.g. Q_flow_max)
         
-    value : float/int/bool/str/list
-        Value of the Property, can be float, int, boolean, string or a list 
+    value : float/int/bool/str/list/array
+        Value of the Property, can be float, int, boolean, string, list or array
         with corresponding data type.
-        
-    
-        
-    
 
     """
     
     def __init__(self, parent_component):
         
         self.parent_component = parent_component
+        self.name = ""
+        self.value = None
         
