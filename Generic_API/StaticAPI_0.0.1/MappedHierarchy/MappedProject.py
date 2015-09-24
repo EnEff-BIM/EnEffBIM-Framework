@@ -25,7 +25,7 @@ class MappedProject(object):
     def __init__(self):
         
         self.buildings = []
-        self.used_library = ""
+        self.used_library = "asd"
         self.library_version = ""
     
         
