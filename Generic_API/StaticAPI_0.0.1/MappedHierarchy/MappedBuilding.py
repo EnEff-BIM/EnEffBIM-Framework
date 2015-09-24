@@ -8,7 +8,7 @@ class MappedBuilding(object):
     ----------
     
     parent_project : instance of MappedProject()
-        MappedBuilding recieves an instance of MappedProject, in order to know
+        MappedBuilding receives an instance of MappedProject, in order to know
         to what Project it belongs to. Might be trivial in the case of the 
         project, more because of consistency.
         

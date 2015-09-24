@@ -8,7 +8,7 @@ class MappedThermalZone(object):
     ----------
     
     parent_building : instance of MappedBuilding()
-        MappedThermalZone recieves an instance of MappedProject, in order to 
+        MappedThermalZone receives an instance of MappedProject, in order to 
         know to what building it belongs to.
         
     Attributes
