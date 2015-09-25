@@ -20,9 +20,10 @@ def fetchData(uriList, systemCfg, generatorCfg, logger):
     dllPath = os.path.join(rootPath, 'Generic_API\Generic_API_1.0\PythonAPI')
     useCaseLoc = os.path.join(rootPath, "Generic_API\\Generic_API_1.0\\xml_use_case\\Boiler_Gas_VDI6020_Test.xml")
     mapRuleLoc = os.path.join(rootPath, "Generic_API\\Generic_API_1.0\\xml_mapping_rule\\AixLib_Mapping_Rule.xml")
-
+    
     # add dllPath to Windows Path
     os.environ['PATH'] = ';'.join([dllPath, os.environ['PATH']])
+    print(os.environ['PATH'])
     # add modulePath to Python Path
     sys.path.append(modulePath)
 

@@ -1,4 +1,6 @@
 from MappedHierarchy import FilledMapped as stat_api
 
-stat_api.return_mapped_project()
+def static_api():
+    return stat_api.return_mapped_project()
 
+test = static_api()
