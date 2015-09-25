@@ -20,13 +20,14 @@ class MappedComponent(object):
     target_name : str
         name of the Modelica object (if not set: this could be SimModel name)
         
-    parameters : list of MappedProperties or MappedRecords
+    parameters : list of MappedProperty or MappedRecord
         This is an *iterable* list containing all records and properties of
         the MappedComponent
         
-    connections : not yet sure how to handle this
-        
-    
+    connectors : list of MappedConnector
+        This is an *iterable* list containing all Modelica connectors of the
+        MappedComponent
+
     """
     
     def __init__(self, parent_class):
@@ -35,4 +36,4 @@ class MappedComponent(object):
         self.target_location = ""
         self.target_name = ""
         self.parameters = []
-        self.connections = []
+        self.connectors = []

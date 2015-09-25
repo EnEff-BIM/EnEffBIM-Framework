@@ -92,6 +92,10 @@ def return_mapped_project():
     m_tz2.supply_components = [m_tz2_sc_radiator]
     m_bldg.thermal_zones = [m_tz1, m_tz2]
     m_prj.buildings = [m_bldg]
+    
+    
+    
+    
     return m_prj
     
 def add_mapped_property(parent, name, value):
