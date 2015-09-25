@@ -1,4 +1,7 @@
-class MappedBuilding(object):
+from MappedHierarchy.MappedSystem import MappedSystem
+
+
+class MappedBuilding(MappedSystem):
     """Representation of a mapped building
         
     The MappedBuilding class is a representation of a building mapped with
@@ -32,9 +35,11 @@ class MappedBuilding(object):
     
     """
     
-    def __init__(self, parent_project):
+    def __init__(self, parent_class):
         
-        self.parent_project = parent_project
+        super(MappedBuilding, self).__init__(parent_class)
+        
+        self.parent_project = parent_class
         self.building_name = ""
         self.thermal_zones = []
         self.supply_components = []

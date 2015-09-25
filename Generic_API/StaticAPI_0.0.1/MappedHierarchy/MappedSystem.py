@@ -1,10 +1,8 @@
-from MappedHierarchy.MappedSystem import MappedSystem
-
-class MappedComponent(MappedSystem):
-    """Representation of a mapped component
+class MappedSystem(object):
+    """Base class for all mapped objects
         
-    The MappedComponent class is a representation of any HVAC component mapped
-    with Modelica information. It contains library specific information. 
+    The MappedSystem class is the base class for all mapped objects in the
+    StaticAPI. It contains some library specific data.
     
     
     Parameters
@@ -16,21 +14,26 @@ class MappedComponent(MappedSystem):
     Attributes
     ----------
     
-    target_location : str
+    target_location : str (optional)
         location within the library
-    target_name : str
+
+    target_name : str (optional)
         name of the Modelica object (if not set: this could be SimModel name)
         
-    parameters : list of MappedProperty or MappedRecord
+    parameters : list of MappedProperty or MappedRecord 
         This is an *iterable* list containing all records and properties of
-        the MappedComponent
+        the MappedSystem
         
     connectors : list of MappedConnector
         This is an *iterable* list containing all Modelica connectors of the
-        MappedComponent
+        MappedSystem
+
     """
     
     def __init__(self, parent_class):
         
-        super(MappedComponent, self).__init__(parent_class)
-
+        self.parent_class = parent_class
+        self.target_location = None
+        self.target_name = None
+        self.parameters = []
+        self.connectors = []

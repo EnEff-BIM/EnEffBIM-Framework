@@ -1,4 +1,6 @@
-class MappedThermalZone(object):
+from MappedHierarchy.MappedSystem import MappedSystem
+
+class MappedThermalZone(MappedSystem):
     """Representation of a mapped thermal zhone
         
     The MappedThermalZone class is a representation of a thermal zone mapped 
@@ -7,7 +9,7 @@ class MappedThermalZone(object):
     Parameters
     ----------
     
-    parent_building : instance of MappedBuilding()
+    parent_class : instance of MappedBuilding()
         MappedThermalZone receives an instance of MappedProject, in order to 
         know to what building it belongs to.
         
@@ -29,9 +31,11 @@ class MappedThermalZone(object):
     
     """
     
-    def __init__(self, parent_building):
+    def __init__(self, parent_class):
         
-        self.parent_building = parent_building
+        super(MappedThermalZone, self).__init__(parent_class)
+        
+        self.parent_building = parent_class
         self.zone_name = ""
         self.space_boundaries = []
         self.supply_components = []
