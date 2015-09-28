@@ -21,6 +21,9 @@ class MappedProject(object):
 
     connections : list of MappedConnection()
         This is an *iterable* list containing all connections.
+        
+    project_name : str
+        name of the project
 
     """
     
@@ -29,6 +32,7 @@ class MappedProject(object):
         self.buildings = []
         self.used_library = "asd"
         self.library_version = ""
+        self.project_name = ""
         self.connections = []
         
     

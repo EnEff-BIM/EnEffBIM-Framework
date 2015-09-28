@@ -1,1 +1,8 @@
-${static_data.used_library}
+package ${static_data.project_name}
+extends Modelica.Icons.Package;
+	model ${static_data.project_name}${static_data.used_library}
+	
+	%for con in static_data.connections:
+	
+		${con}
+	%endfor

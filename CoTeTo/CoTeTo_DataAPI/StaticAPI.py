@@ -16,21 +16,17 @@ def fetchData(uriList, systemCfg, generatorCfg, logger):
     import sys
     
     rootPath = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
-    print(rootPath)
     modulePath = os.path.join(rootPath, 'Generic_API\StaticAPI_0.0.1')
-    print(modulePath)
     dllPath = os.path.join(rootPath, 'Generic_API\StaticAPI_0.0.1\MappedHierarchy')
-    print(dllPath)
     
     # add dllPath to Windows Path
     os.environ['PATH'] = ';'.join([modulePath, os.environ['PATH']])
-    print(os.environ['PATH'])
     # add modulePath to Python Path
     sys.path.append(modulePath)
     
-    import StaticAPI 
+    from StaticAPI import StaticAPI
     
-    static_data = StaticAPI.static_api()
+    static_data = StaticAPI().mapped_data
    
     dataDictionary=dict(
         static_data=static_data
