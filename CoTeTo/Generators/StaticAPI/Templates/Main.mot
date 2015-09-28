@@ -27,11 +27,13 @@ ${comp.target_location} ${comp.target_name}(
 %for param in comp.parameters:
 %if type(param).__name__ == "MappedProperty":
 ${param.name} = ${param.value}\
+${',' if not loop.last else ''}\
 %else:
-${param.name} = ${param.record_location}(
+${param.name} = ${param.record_location}(\
 %for param_rec in param.parameters:
 ${param_rec.name} = ${param_rec.value}\
 ${',' if not loop.last else ')'}\
+${',' if not loop.parent.last else ''}\
 %endfor
 %endif
 %endfor
@@ -42,6 +44,3 @@ ${'' if not loop.last else ');'}
 %endfor
 
 
-%for con in static_data.connections:
-${con}
-%endfor
