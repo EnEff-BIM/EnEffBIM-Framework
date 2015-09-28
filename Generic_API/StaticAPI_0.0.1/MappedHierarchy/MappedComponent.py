@@ -5,32 +5,16 @@ class MappedComponent(MappedSystem):
         
     The MappedComponent class is a representation of any HVAC component mapped
     with Modelica information. It contains library specific information. 
-    
-    
-    Parameters
-    ----------
-    
-    parent_class : instance of a Mapped class
-        MappedComponent receives any mapped class (MappedBuilding etc.)
-        
+
     Attributes
     ----------
     
-    target_location : str
-        location within the library
-    target_name : str
-        name of the Modelica object (if not set: this could be SimModel name)
-        
-    parameters : list of MappedProperty or MappedRecord
-        This is an *iterable* list containing all records and properties of
-        the MappedComponent
-        
-    connectors : list of MappedConnector
-        This is an *iterable* list containing all Modelica connectors of the
-        MappedComponent
+    mapped_control : MappedControl()
+        This is an instance of MappedControl()
     """
     
     def __init__(self, parent_class):
         
         super(MappedComponent, self).__init__(parent_class)
 
+        self.mapped_control = None
