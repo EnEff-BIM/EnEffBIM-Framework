@@ -42,5 +42,8 @@ ${'' if not loop.last else ');'}
 %endfor
 
 %endfor
-
-
+equation
+%for con in static_data.connections_hard:
+connect(${con[0]},${con[1]});
+%endfor
+end ${static_data.project_name}${static_data.used_library};

@@ -18,7 +18,26 @@ def return_mapped_project():
             
     m_bldg.building_name = "UseCase1.1"
     
-    
+    m_prj.connections_hard = [["weather.WeatherDataVector", "thermalZone.weather"],
+                              ["weather.SolarRadiation_OrientedSurfaces", "thermalZone.solarRad_in"],
+                              ["infiltrationRate.y", "thermalZone.infiltrationRate"],
+                              ["internalLoads.y", "thermalZone.internalGains"],
+                              ["pump.port_b", "boiler.port_a"],
+                              ["boiler.port_b", "flowPipe.port_a"],
+                              ["valve.port_a", "flowPipe.port_b"],
+                              ["valve.port_b", "radiator.port_a"],
+                              ["radiator.port_b", "returnPipe.port_a"],
+                              ["pump.port_a", "returnPipe.port_b"],
+                              ["radiator.convPort", "thermalZone.internalGainsConv"],
+                              ["thermalZone.internalGainsConv", "temperatureSensor.port"],
+                              ["temperatureSensor.T", "PID.u_m"],
+                              ["PID.u_s", "setTemp.y"],
+                              ["PID.y", "valve.opening"],
+                              ["nightSignal.y", "pump.IsNight"],
+                              ["thermalZone.internalGainsRad", "radiator.radPort"],
+                              ["flowTemp.y", "boiler.T_set"],
+                              ["weather.WeatherDataVector[1]", "thermalZone.infiltrationTemperature"],
+                              ["expansionVessel.ports[1]", "pump.port_a"]]
 
     #Pipe 1
     m_bldg_sc_pipe1 = return_mapped_component(m_bldg,\

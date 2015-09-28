@@ -24,6 +24,10 @@ class MappedProject(object):
         
     project_name : str
         name of the project
+        
+    connections_hard : list of list of strings
+        This is a hardcoded list, how the connections list should look like
+        at the end
 
     """
     
@@ -34,6 +38,7 @@ class MappedProject(object):
         self.library_version = ""
         self.project_name = ""
         self.connections = []
+        self.connections_hard = []
         
     
     
