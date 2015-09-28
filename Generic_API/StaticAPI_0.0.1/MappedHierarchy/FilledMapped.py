@@ -12,7 +12,7 @@ def return_mapped_project():
     
     m_prj.used_library = "AixLib"
     m_prj.library_version = "0.1.0"
-    
+    m_prj.project_name = "StaticAPI"
     
     m_bldg = MappedBuilding(m_prj)
             
