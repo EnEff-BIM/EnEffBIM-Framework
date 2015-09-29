@@ -8,11 +8,13 @@ class MappedConnection(object):
     Parameters
     ----------
     
-    input_component : instance of a MappedComponent()
-        The input component 
+    connector_a : instance of a MappedConnector()
+        The input connector, with the parent/child relationshsip we can access
+        the component
         
-    output_component : instance of a MappedComponent()
-        The output component
+    connector_b : instance of a MappedConnector()
+        The output component, with the parent/child relationshsip we can access
+        the component
         
     Attributes
     ----------
@@ -26,8 +28,8 @@ class MappedConnection(object):
 
     """
     
-    def __init__(self, input_component,output_component):
+    def __init__(self, connector_a,connector_b):
         
-        self.input_component = input_component
-        self.output_component = output_component
+        self.connector_a = connector_a
+        self.connector_b = connector_b
         self.type = ""
