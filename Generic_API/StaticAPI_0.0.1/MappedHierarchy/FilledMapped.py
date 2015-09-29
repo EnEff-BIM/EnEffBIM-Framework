@@ -208,10 +208,3 @@ def add_mapped_connections(project, input, output, type):
     
     project.connections.append(mapped_con)
 
-"""    
-    
-    
-test = return_mapped_project()
-
-print(test.buildings[0].thermal_zones[0].supply_components[0].parameters[1].parameters)
-"""
