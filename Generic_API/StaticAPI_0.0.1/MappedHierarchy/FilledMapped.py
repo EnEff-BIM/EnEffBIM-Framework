@@ -49,8 +49,8 @@ def return_mapped_project():
     add_mapped_property(m_bldg_sc_pipe1, "D", 0.01)
     add_mapped_property(m_bldg_sc_pipe1, "l", 10.01)
     add_mapped_property(m_bldg_sc_pipe1, "e", 0.000021)
-    add_mapped_connector(m_bldg_sc_pipe1, "port_a", "Fluid", "Input")
-    add_mapped_connector(m_bldg_sc_pipe1, "port_b", "Fluid", "Output")
+    pipe1_a = add_mapped_connector(m_bldg_sc_pipe1, "port_a", "Fluid", "Input")
+    pipe1_b = add_mapped_connector(m_bldg_sc_pipe1, "port_b", "Fluid", "Output")
     #Pipe 2
     m_bldg_sc_pipe2 = return_mapped_component(m_bldg,\
                              "AixLib.Fluid.FixedResistances.StaticPipe", \
@@ -60,8 +60,8 @@ def return_mapped_project():
     add_mapped_property(m_bldg_sc_pipe2, "D", 0.02)
     add_mapped_property(m_bldg_sc_pipe2, "l", 10.02)
     add_mapped_property(m_bldg_sc_pipe2, "e", 0.000022)
-    add_mapped_connector(m_bldg_sc_pipe2, "port_a", "Fluid", "Input")
-    add_mapped_connector(m_bldg_sc_pipe2, "port_b", "Fluid", "Output")
+    pipe2_a = add_mapped_connector(m_bldg_sc_pipe2, "port_a", "Fluid", "Input")
+    pipe2_b = add_mapped_connector(m_bldg_sc_pipe2, "port_b", "Fluid", "Output")
     #Boiler
     m_bldg_sc_boiler = return_mapped_component(m_bldg,\
                              "AixLib.Fluid.HeatExchangers.Boiler", \
@@ -73,9 +73,9 @@ def return_mapped_project():
     add_mapped_record(m_bldg_sc_boiler, "boilerEfficiencyB", "AixLib.DataBase.Boiler")
     add_mapped_property(m_bldg_sc_boiler.parameters[3], "boilerEfficiency",\
                          [[0,0.5,1],[0.8,0.9,1.1]])
-    add_mapped_connector(m_bldg_sc_boiler, "port_a", "Fluid", "Input")
-    add_mapped_connector(m_bldg_sc_boiler, "port_b", "Fluid", "Output")
-    add_mapped_connector(m_bldg_sc_boiler, "T_set", "Real", "Input")
+    boiler_a = add_mapped_connector(m_bldg_sc_boiler, "port_a", "Fluid", "Input")
+    boiler_b = add_mapped_connector(m_bldg_sc_boiler, "port_b", "Fluid", "Output")
+    boiler_real = add_mapped_connector(m_bldg_sc_boiler, "T_set", "Real", "Input")
     #Pump
     m_bldg_sc_pump = return_mapped_component(m_bldg,\
                              "AixLib.Fluid.Movers.Pump", \
@@ -89,9 +89,9 @@ def return_mapped_project():
     add_mapped_property(m_bldg_sc_pump.parameters[4], "minMaxHead",\
                          [[0,0.5,1],[0.8,0.9,1.1],[0.1,0.2,0.3]])
     m_bldg.supply_components = [m_bldg_sc_pipe1, m_bldg_sc_pipe2, m_bldg_sc_boiler, m_bldg_sc_pump]
-    add_mapped_connector(m_bldg_sc_pump, "port_a", "Fluid", "Input")
-    add_mapped_connector(m_bldg_sc_pump, "port_b", "Fluid", "Output")
-    add_mapped_connector(m_bldg_sc_pump, "IsNight", "Boolean", "Input")
+    pump_a = add_mapped_connector(m_bldg_sc_pump, "port_a", "Fluid", "Input")
+    pump_b = add_mapped_connector(m_bldg_sc_pump, "port_b", "Fluid", "Output")
+    pump_bool = add_mapped_connector(m_bldg_sc_pump, "IsNight", "Boolean", "Input")
     
     #first zone  
     m_tz1 = MappedThermalZone(m_bldg)
@@ -107,13 +107,13 @@ def return_mapped_project():
     add_mapped_property(m_tz1_sc_radiator.parameters[1], "T_flow_nom", 56.94)
     add_mapped_property(m_tz1_sc_radiator.parameters[1], "T_return_nom", 36.94)
     
-    add_mapped_connector(m_tz1_sc_radiator, "port_a", "Fluid", "Input")
-    add_mapped_connector(m_tz1_sc_radiator, "port_b", "Fluid", "Output")
-    add_mapped_connector(m_tz1_sc_radiator, "convPort", "HeatPort", "Output")
-    add_mapped_connector(m_tz1_sc_radiator, "radPort", "Star", "Output")
+    rad1_a = add_mapped_connector(m_tz1_sc_radiator, "port_a", "Fluid", "Input")
+    rad1_b = add_mapped_connector(m_tz1_sc_radiator, "port_b", "Fluid", "Output")
+    rad1_conv = add_mapped_connector(m_tz1_sc_radiator, "convPort", "HeatPort", "Output")
+    rad1_rad = add_mapped_connector(m_tz1_sc_radiator, "radPort", "Star", "Output")
     
-    add_mapped_connector(m_tz1, "internalGainsCon", "HeatPort", "Input")
-    add_mapped_connector(m_tz1, "internalGainsRad", "Star", "Input")
+    tz1_conv = add_mapped_connector(m_tz1, "internalGainsCon", "HeatPort", "Input")
+    tz1_rad = add_mapped_connector(m_tz1, "internalGainsRad", "Star", "Input")
     
     m_tz1.supply_components = [m_tz1_sc_radiator]
     #seccond zone 
@@ -121,7 +121,7 @@ def return_mapped_project():
     m_tz2.zone_name = "TwoZone"
     m_tz2_sc_radiator = return_mapped_component(m_tz2, \
                             "AixLib.Fluid.HeatExchangers.Radiators.Radiator", \
-                            "radiator_tz1")
+                            "radiator_tz2")
     add_mapped_property(m_tz2_sc_radiator, "Medium",\
                              "Modelica.Media.Water.ConstantPropertyLiquidWater")
     add_mapped_record(m_tz2_sc_radiator, "RadiatorType", \
@@ -130,13 +130,13 @@ def return_mapped_project():
     add_mapped_property(m_tz2_sc_radiator.parameters[1], "T_flow_nom", 56.94)
     add_mapped_property(m_tz2_sc_radiator.parameters[1], "T_return_nom", 36.94)
     
-    add_mapped_connector(m_tz2_sc_radiator, "port_a", "Fluid", "Input")
-    add_mapped_connector(m_tz2_sc_radiator, "port_b", "Fluid", "Output")
-    add_mapped_connector(m_tz2_sc_radiator, "convPort", "HeatPort", "Output")
-    add_mapped_connector(m_tz2_sc_radiator, "radPort", "Star", "Output")
+    rad2_a = add_mapped_connector(m_tz2_sc_radiator, "port_a", "Fluid", "Input")
+    rad2_b = add_mapped_connector(m_tz2_sc_radiator, "port_b", "Fluid", "Output")
+    rad2_conv = add_mapped_connector(m_tz2_sc_radiator, "convPort", "HeatPort", "Output")
+    rad2_rad = add_mapped_connector(m_tz2_sc_radiator, "radPort", "Star", "Output")
     
-    add_mapped_connector(m_tz2, "internalGainsCon", "HeatPort", "Input")
-    add_mapped_connector(m_tz2, "internalGainsRad", "Star", "Input")
+    tz2_conv = add_mapped_connector(m_tz2, "internalGainsCon", "HeatPort", "Input")
+    tz2_rad = add_mapped_connector(m_tz2, "internalGainsRad", "Star", "Input")
     
     
     m_tz2.supply_components = [m_tz2_sc_radiator]
@@ -144,17 +144,17 @@ def return_mapped_project():
     m_prj.buildings = [m_bldg]
     
     #FluidConnections
-    add_mapped_connections(m_prj, m_bldg_sc_pipe1, m_tz1_sc_radiator , "Fluid")
-    add_mapped_connections(m_prj, m_tz1_sc_radiator, m_tz2_sc_radiator , "Fluid")
-    add_mapped_connections(m_prj, m_tz2_sc_radiator, m_bldg_sc_pipe2 , "Fluid")
-    add_mapped_connections(m_prj, m_bldg_sc_pipe2, m_bldg_sc_pump , "Fluid")
-    add_mapped_connections(m_prj, m_bldg_sc_pump, m_bldg_sc_boiler , "Fluid")
-    add_mapped_connections(m_prj, m_bldg_sc_boiler, m_bldg_sc_pipe1 , "Fluid")
+    add_mapped_connections(m_prj, pipe1_b, rad1_a , "Fluid")
+    add_mapped_connections(m_prj, rad1_b, rad2_a, "Fluid")
+    add_mapped_connections(m_prj, rad2_b, pipe2_a, "Fluid")
+    add_mapped_connections(m_prj, pipe2_b, pump_a , "Fluid")
+    add_mapped_connections(m_prj, pump_b, boiler_a, "Fluid")
+    add_mapped_connections(m_prj, boiler_b, pipe1_a , "Fluid")
     #Connections from radiator to zone
-    add_mapped_connections(m_prj, m_tz2_sc_radiator, m_tz2 , "Heat")
-    add_mapped_connections(m_prj, m_tz2_sc_radiator, m_tz2 , "Star")
-    add_mapped_connections(m_prj, m_tz1_sc_radiator, m_tz1 , "Heat")
-    add_mapped_connections(m_prj, m_tz1_sc_radiator, m_tz1 , "Star")
+    add_mapped_connections(m_prj, rad2_conv, tz2_conv, "Heat")
+    add_mapped_connections(m_prj, rad2_rad, tz2_rad, "Star")
+    add_mapped_connections(m_prj, rad1_conv, tz1_conv, "Heat")
+    add_mapped_connections(m_prj, rad1_rad, tz1_rad, "Star")
     #
     
     
@@ -193,12 +193,14 @@ def add_mapped_connector(parent, name, type, input_output):
         mapped_con.type = type
         
         parent.input_connectors.append(mapped_con)
+        
     elif input_output == "Output":
         mapped_con = MappedConnector(parent)
         mapped_con.name = name
         mapped_con.type = type
         
         parent.input_connectors.append(mapped_con)
+    return mapped_con
     
 def add_mapped_connections(project, input, output, type): 
     mapped_con = MappedConnection(input,output)

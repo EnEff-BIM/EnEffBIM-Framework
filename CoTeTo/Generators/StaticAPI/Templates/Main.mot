@@ -43,7 +43,7 @@ ${'' if not loop.last else ');'}
 
 %endfor
 equation
-%for con in static_data.connections_hard:
-connect(${con[0]},${con[1]});
+%for con in static_data.connections:
+connect(${con.connector_a.parent_class.target_name}.${con.connector_a.name},${con.connector_b.parent_class.target_name}.${con.connector_b.name});
 %endfor
 end ${static_data.project_name}${static_data.used_library};
