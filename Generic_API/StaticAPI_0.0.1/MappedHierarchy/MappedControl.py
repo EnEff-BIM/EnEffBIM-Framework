@@ -21,6 +21,9 @@ class MappedControl(object):
     parameters : list of MappedProperty or MappedRecord 
         This is an *iterable* list containing all records and properties of
         the MappedControl
+        
+    control_connector : instance of a MappedConnector()
+        MappedConnector to know where the control is mapped to
 
     """
     
@@ -29,4 +32,5 @@ class MappedControl(object):
         self.parent_component = parent_component
         self.control_strategy = ""
         self.parameters = []
+        self.control_connector = None
         
