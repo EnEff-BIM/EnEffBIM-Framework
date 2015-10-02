@@ -89,10 +89,32 @@ class MappedProject(object):
         self.project_name = ""
         self.connections = []
         self.connections_hard = []
+        self.systems = []
         
     def add_connection(self, connector_a, connector_b):
         self.connections.append(MappedConnection(connector_a, connector_b))
-		
+	
+    def create_system(self, target_location, target_name, connector):
+
+        mapp_sys = MappedSystem(self)
+        mapp_sys.target_location = target_location
+        mapp_sys.target_name = target_name
+        
+        for con in connector:
+            mapp_sys.connectors.append(con)
+
+        self.systems.append(mapp_sys)
+        
+        return mapp_sys
+        
+    def create_connector(self, parent, name, type):
+        
+        connector = MappedConnector(parent)
+        connector.name = name
+        connector.type = type
+        
+        return connector
+    	
 class MappedBuilding(MappedSystem):
     """Representation of a mapped building
         

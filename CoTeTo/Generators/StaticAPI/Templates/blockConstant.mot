@@ -1,2 +1,0 @@
-<%page args="name,value"/>
-Modelica.Blocks.Sources.Constant ${name}(k=${value});

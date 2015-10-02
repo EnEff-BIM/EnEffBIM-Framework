@@ -1,0 +1,8 @@
+<%page args="T_set,yMax,yMin,P,static_data"/>
+Modelica.Blocks.Sources.Constant setTemp(k=${T_set});
+Modelica.Thermal.HeatTransfer.Sensors.TemperatureSensor temperatureSensor;
+Modelica.Blocks.Continuous.LimPID PID(
+    controllerType=Modelica.Blocks.Types.SimpleController.P,
+    yMax=yMax,
+    yMin=yMin,
+    k=P,)

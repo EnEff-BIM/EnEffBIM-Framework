@@ -1,12 +1,13 @@
-${static_data.connections[-1].connector_a}
-%for comp in static_data.buildings[0].supply_components:
 
-%if comp.mapped_control != None and comp.mapped_control.control_strategy == "T_set-const":
-${comp.mapped_control.control_strategy}
-<%include file="blockConstant.mot" args="name=comp.mapped_control.control_strategy, value=comp.mapped_control.parameters[0].value"/>
-<%static_data.add_connection("asd","asd") %>
-${static_data.connections[-1].connector_a}
+%for comp in static_data.buildings[0].supply_components:
+${comp.target_name}
+%if comp.mapped_control != None: 
+%if comp.mapped_control.control_strategy == "T_set_const" or comp.mapped_control.control_strategy == "dp_const":
+<%include file="Controls/blockConstant.mot" args="static_data=static_data, comp=comp"/>
+%endif
 %endif
 %endfor
-${static_data.project_name}
 
+%for con in static_data.connections:
+connect(${con.connector_a.parent.target_name}.${con.connector_a.name}, ${con.connector_b.parent.target_name}.${con.connector_b.name})
+%endfor

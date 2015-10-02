@@ -52,7 +52,7 @@ def return_mapped_project():
     boiler_b = add_mapped_connector(m_bldg_sc_boiler, "port_b", "Fluid")
     boiler_real = add_mapped_connector(m_bldg_sc_boiler, "T_set", "Real")
     
-    ctrl_boiler = add_mapped_control(m_bldg_sc_boiler, 'T_set-const', boiler_real)
+    ctrl_boiler = add_mapped_control(m_bldg_sc_boiler, 'T_set_const', boiler_real)
     add_mapped_property(ctrl_boiler, "k", 330.0)
     
     '''Instantiate Pump as MappedComponent, add Properties, add connectors'''
@@ -69,7 +69,7 @@ def return_mapped_project():
     pump_real = add_mapped_connector(m_bldg_sc_pump, "dp_in", "Real")
     pump_heat = add_mapped_connector(m_bldg_sc_pump, "heatPort", "Heat")
     
-    ctrl_pump = add_mapped_control(m_bldg_sc_pump, 'dp-const', pump_real)
+    ctrl_pump = add_mapped_control(m_bldg_sc_pump, 'dp_const', pump_real)
     add_mapped_property(ctrl_pump, "k", 330.0)
     
     '''Instantiate Pipe pipe1 and pipe 2 as MappedComponent, add Properties, add connectors'''
