@@ -24,18 +24,17 @@ class MappedSystem(object):
         This is an *iterable* list containing all records and properties of
         the MappedSystem
         
-    input_connectors : list of MappedConnector()
-        This is an *iterable* list containing all Input Modelica connectors of the
-        MappedSystem (e.g. Real Input, Heatport (red), Fluid (blue)
-        
-    output_connectors : list of MappedConnector()
-        This is an *iterable* list containing all Output Modelica connectors of the
-        MappedSystem (e.g. Real Output, Heatport , Fluid 
-               
+    connectors : list of MappedConnector()
+        This is an *iterable* list containing all  Modelica connectors of the
+        MappedSystem (e.g. Real, Heatport, Fluid)        
+                   
     unmapped_system : list of SimClasses in StaticAPI.unmapped_data
         This is an *iterable* list containing all SimClasses where this system
         was mapped from. (e.g. SimBoilerHotWater). The Class should be referenced
         in StaticAPI.unmapped_data
+        
+    control: MappedControl()
+        Pointer to an optional control element, instance of MappedContorl()
 
     """
     
@@ -45,7 +44,6 @@ class MappedSystem(object):
         self.target_location = None
         self.target_name = None
         self.parameters = []
-        self.input_connectors = []
-        self.output_connectors = []
+        self.connectors = []
         self.unmapped_system = []
 

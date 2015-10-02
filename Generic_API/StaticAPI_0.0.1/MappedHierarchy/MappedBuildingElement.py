@@ -61,7 +61,7 @@ class MappedBuildingElement(MappedSystem):
         
         self.area = None
         self.tilt = None
-        self._orientation = None
+        self.orientation = None
         self.inner_convection = None
         self.inner_radiation = None
         self.outer_convection = None
