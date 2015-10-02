@@ -9,7 +9,7 @@ class MappedBuildingElement(MappedSystem):
     Parameters
     ----------
     
-    parent_class : instance of MappedSpaceBoundary()
+    parent : instance of MappedSpaceBoundary()
         MappedBuildingElement receives an instance of MappedSpaceBoundary, 
         in order to know to what zone it belongs to.
         
@@ -54,10 +54,10 @@ class MappedBuildingElement(MappedSystem):
             
     """
     
-    def __init__(self, parent_class):
+    def __init__(self, parent):
         
               
-        self.parent_class = parent_class
+        self.parent = parent
         
         self.area = None
         self.tilt = None

@@ -6,7 +6,7 @@ class MappedMaterialLayer(object):
     Parameters
     ----------
     
-    parent_class : instance of MappedBuildingElement()
+    parent : instance of MappedBuildingElement()
         MappedMaterialLayer receives an instance of MappedBuildingElement, 
         in order to know to what element it belongs to.
         
@@ -21,10 +21,10 @@ class MappedMaterialLayer(object):
             
     """
     
-    def __init__(self, parent_class):
+    def __init__(self, parent):
         
               
-        self.parent_class = parent_class
+        self.parent = parent
         
         self.material = None
         self.thickness = None

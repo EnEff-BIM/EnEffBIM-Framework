@@ -6,7 +6,7 @@ class MappedMaterial(object):
     Parameters
     ----------
     
-    parent_class : instance of MappedMaterialLayer()
+    parent : instance of MappedMaterialLayer()
         MappedMaterial receives an instance of MappedMaterialLayer, 
         in order to know to what layer it belongs to.
         
@@ -37,10 +37,10 @@ class MappedMaterial(object):
     """
 
 
-    def __init__(self, parent_class):
+    def __init__(self, parent):
 
         
-        self.parent_class = parent_class
+        self.parent_class = parent
         self.name = ""
         self.density = 0.0  
         self.thermal_conduc = 0.0

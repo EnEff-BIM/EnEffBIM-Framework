@@ -9,7 +9,7 @@ class MappedControl(object):
     Parameters
     ----------
     
-    parent_component : instance of a MappedComponent()
+    parent : instance of a MappedComponent()
         MappedProperty receives an instance of MappedComponent. 
         
     Attributes
@@ -27,9 +27,9 @@ class MappedControl(object):
 
     """
     
-    def __init__(self, parent_component):
+    def __init__(self, parent):
         
-        self.parent_component = parent_component
+        self.parent = parent
         self.control_strategy = ""
         self.parameters = []
         self.control_connector = None

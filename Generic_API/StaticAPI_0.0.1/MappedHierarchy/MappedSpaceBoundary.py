@@ -7,7 +7,7 @@ class MappedSpaceBoundary(object):
     Parameters
     ----------
     
-    parent_class : instance of MappedZone()
+    parent : instance of MappedZone()
         MappedSpaceBoundary receives an instance of MappedZone, in order to 
         know to what zone it belongs to.
         
@@ -19,9 +19,9 @@ class MappedSpaceBoundary(object):
             
     """
     
-    def __init__(self, parent_class):
+    def __init__(self, parent):
         
               
-        self.parent_class = parent_class
+        self.parent = parent
         self.mapped_building_elements = []
         

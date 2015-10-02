@@ -8,7 +8,7 @@ class MappedConnector(object):
     Parameters
     ----------
     
-    parent_class : instance of a MappedComponent()
+    parent : instance of a MappedComponent()
         MappedProperty receives an instance of MappedComponent. 
         
     Attributes
@@ -26,8 +26,8 @@ class MappedConnector(object):
 
     """
     
-    def __init__(self, parent_class):
+    def __init__(self, parent):
         
-        self.parent_class = parent_class
+        self.parent = parent
         self.name = ""
         self.type = ""

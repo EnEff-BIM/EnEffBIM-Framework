@@ -9,7 +9,7 @@ class MappedThermalZone(MappedSystem):
     Parameters
     ----------
     
-    parent_class : instance of MappedBuilding()
+    parent : instance of MappedBuilding()
         MappedThermalZone receives an instance of MappedProject, in order to 
         know to what building it belongs to.
         
@@ -31,11 +31,11 @@ class MappedThermalZone(MappedSystem):
     
     """
     
-    def __init__(self, parent_class):
+    def __init__(self, parent):
         
-        super(MappedThermalZone, self).__init__(parent_class)
+        super(MappedThermalZone, self).__init__(parent)
         
-        self.parent_building = parent_class
+        
         self.zone_name = ""
         self.space_boundaries = []
         self.supply_components = []

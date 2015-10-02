@@ -13,8 +13,8 @@ class MappedComponent(MappedSystem):
         This is an instance of MappedControl()
     """
     
-    def __init__(self, parent_class):
+    def __init__(self, parent):
         
-        super(MappedComponent, self).__init__(parent_class)
+        super(MappedComponent, self).__init__(parent)
 
         self.mapped_control = None

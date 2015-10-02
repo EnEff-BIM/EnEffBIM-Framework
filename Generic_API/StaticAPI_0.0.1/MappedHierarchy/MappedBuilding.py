@@ -10,7 +10,7 @@ class MappedBuilding(MappedSystem):
     Parameters
     ----------
     
-    parent_project : instance of MappedProject()
+    parent : instance of MappedProject()
         MappedBuilding receives an instance of MappedProject, in order to know
         to what Project it belongs to. Might be trivial in the case of the 
         project, more because of consistency.
@@ -35,11 +35,10 @@ class MappedBuilding(MappedSystem):
     
     """
     
-    def __init__(self, parent_class):
+    def __init__(self, parent):
         
-        super(MappedBuilding, self).__init__(parent_class)
-        
-        self.parent_project = parent_class
+        super(MappedBuilding, self).__init__(parent)
+                
         self.building_name = ""
         self.thermal_zones = []
         self.supply_components = []

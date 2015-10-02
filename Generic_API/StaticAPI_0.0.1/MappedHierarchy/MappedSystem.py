@@ -8,7 +8,7 @@ class MappedSystem(object):
     Parameters
     ----------
     
-    parent_class : instance of a Mapped class
+    parent : instance of a Mapped class
         MappedComponent receives any mapped class (MappedBuilding etc.)
         
     Attributes
@@ -38,9 +38,10 @@ class MappedSystem(object):
 
     """
     
-    def __init__(self, parent_class):
+    def __init__(self, parent):
         
-        self.parent_class = parent_class
+        self.parent = parent
+        
         self.target_location = None
         self.target_name = None
         self.parameters = []
