@@ -6,7 +6,7 @@ from MappedHierarchy.MappedProperty import MappedProperty
 from MappedHierarchy.MappedRecord import MappedRecord
 from MappedHierarchy.MappedConnector import MappedConnector
 from MappedHierarchy.MappedConnection import MappedConnection
-
+from MappedHierarchy.MappedControl import MappedControl
 '''
 StaticAPI Use Case Scenario:
 
@@ -60,6 +60,9 @@ def return_mapped_project():
     boiler_b = add_mapped_connector(m_bldg_sc_boiler, "port_b", "Fluid")
     boiler_real = add_mapped_connector(m_bldg_sc_boiler, "T_set", "Real")
     
+    ctrl_boiler = add_mapped_control(m_bldg_sc_boiler, 'T_set-const', boiler_real)
+    add_mapped_property(ctrl_boiler, "k", 330.0)
+    
     '''Instantiate Pump as MappedComponent, add Properties, add connectors'''
     
     m_bldg_sc_pump = return_mapped_component(m_bldg,"AixLib.Fluid.Movers.FlowControlled_dp","pump")
@@ -72,8 +75,10 @@ def return_mapped_project():
     pump_a = add_mapped_connector(m_bldg_sc_pump, "port_a", "Fluid")
     pump_b = add_mapped_connector(m_bldg_sc_pump, "port_b", "Fluid")
     pump_real = add_mapped_connector(m_bldg_sc_pump, "dp_in", "Real")
-    pump_bool = add_mapped_connector(m_bldg_sc_pump, "dp_in", "Real")
     pump_heat = add_mapped_connector(m_bldg_sc_pump, "heatPort", "Heat")
+    
+    ctrl_pump = add_mapped_control(m_bldg_sc_pump, 'dp-const', pump_real)
+    add_mapped_property(ctrl_pump, "k", 330.0)
     
     '''Instantiate Pipe pipe1 and pipe 2 as MappedComponent, add Properties, add connectors'''
     
@@ -98,7 +103,7 @@ def return_mapped_project():
     m_bldg.supply_components = [m_bldg_sc_pipe1, m_bldg_sc_pipe2, m_bldg_sc_boiler, m_bldg_sc_pump]
    
   
-    '''Instantiate Radiator 1 and 2 as MappedComponent, add Properties, add connectors, add to thermal zone'''
+    '''Instantiate Radiator 1 MappedComponent, add Properties, add connectors, add to thermal zone'''
     
     m_tz1_sc_radiator = return_mapped_component(m_tz1,"AixLib.Fluid.HeatExchangers.Radiators.Radiator","radiator_tz1")
     add_mapped_property(m_tz1_sc_radiator, "Medium","Modelica.Media.Water.ConstantPropertyLiquidWater")
@@ -112,9 +117,27 @@ def return_mapped_project():
     rad1_b = add_mapped_connector(m_tz1_sc_radiator, "port_b", "Fluid")
     rad1_conv = add_mapped_connector(m_tz1_sc_radiator, "convPort", "HeatPort")
     rad1_rad = add_mapped_connector(m_tz1_sc_radiator, "radPort", "Star")
-       
-    m_tz1.supply_components = [m_tz1_sc_radiator]
+    
+    '''Instantiate Valve 1 as MappedComponent, add Properties, add connectors, add to thermal zone'''
+    
+    m_tz1_sc_valve = return_mapped_component(m_tz1,"AixLib.Fluid.Actuators.Valves.SimpleValve","valve_tz1")
+    add_mapped_property(m_tz1_sc_radiator, "Medium","Modelica.Media.Water.ConstantPropertyLiquidWater")
+    add_mapped_property(m_tz1_sc_radiator, "Kvs",1.4)
+    
+    valve1_a = add_mapped_connector(m_tz1_sc_valve, "port_a", "Fluid")
+    valve1_b = add_mapped_connector(m_tz1_sc_valve, "port_b", "Fluid")
+    valve1_real = add_mapped_connector(m_tz1_sc_valve, "dp_in", "Real")
+    
+    ctrl_v1 = add_mapped_control(m_tz1_sc_valve, 'room_T_PID', valve1_real)
+    add_mapped_property(ctrl_v1, "setTemp", 330.0)
+    add_mapped_property(ctrl_v1, "k", 0.19688)
+    add_mapped_property(ctrl_v1, "yMin", 0)
+    add_mapped_property(ctrl_v1, "yMax", 1)
+           
+    m_tz1.supply_components = [m_tz1_sc_radiator, m_tz1_sc_valve]
 
+    '''Instantiate Radiator 2 MappedComponent, add Properties, add connectors, add to thermal zone'''
+    
     m_tz2_sc_radiator = return_mapped_component(m_tz2,"AixLib.Fluid.HeatExchangers.Radiators.Radiator","radiator_tz2")
     add_mapped_property(m_tz2_sc_radiator, "Medium","Modelica.Media.Water.ConstantPropertyLiquidWater")
     add_mapped_record(m_tz2_sc_radiator, "RadiatorType","AixLib.DataBase.Radiators")
@@ -128,12 +151,30 @@ def return_mapped_project():
     rad2_conv = add_mapped_connector(m_tz2_sc_radiator, "convPort", "HeatPort")
     rad2_rad = add_mapped_connector(m_tz2_sc_radiator, "radPort", "Star") 
     
-    m_tz2.supply_components = [m_tz2_sc_radiator]
+    '''Instantiate Valve 1 as MappedComponent, add Properties, add connectors, add to thermal zone'''
+    
+    m_tz2_sc_valve = return_mapped_component(m_tz2,"AixLib.Fluid.Actuators.Valves.SimpleValve","valve_tz1")
+    add_mapped_property(m_tz2_sc_valve, "Medium","Modelica.Media.Water.ConstantPropertyLiquidWater")
+    add_mapped_property(m_tz2_sc_valve, "Kvs",1.4)
+    
+    valve2_a = add_mapped_connector(m_tz2_sc_valve, "port_a", "Fluid")
+    valve2_b = add_mapped_connector(m_tz2_sc_valve, "port_b", "Fluid")
+    valve2_real = add_mapped_connector(m_tz2_sc_valve, "dp_in", "Real")
+    
+    ctrl_v2 = add_mapped_control(m_tz2_sc_valve, 'room_T_PID', valve1_real)
+    add_mapped_property(ctrl_v2, "setTemp", 330.0)
+    add_mapped_property(ctrl_v2, "k", 0.19688)
+    add_mapped_property(ctrl_v2, "yMin", 0)
+    add_mapped_property(ctrl_v2, "yMax", 1)
+
+    m_tz2.supply_components = [m_tz2_sc_radiator,m_tz2_sc_valve]
     
     '''Add all connections'''
     #FluidConnections
-    add_mapped_connections(m_prj, pipe1_b, rad1_a , "Fluid")
-    add_mapped_connections(m_prj, rad1_b, rad2_a, "Fluid")
+    add_mapped_connections(m_prj, pipe1_b, valve1_a , "Fluid")
+    add_mapped_connections(m_prj, valve1_b, rad1_a , "Fluid")
+    add_mapped_connections(m_prj, rad1_b, valve2_a, "Fluid")
+    add_mapped_connections(m_prj, valve1_b, rad2_a , "Fluid")
     add_mapped_connections(m_prj, rad2_b, pipe2_a, "Fluid")
     add_mapped_connections(m_prj, pipe2_b, pump_a , "Fluid")
     add_mapped_connections(m_prj, pump_b, boiler_a, "Fluid")
@@ -143,6 +184,8 @@ def return_mapped_project():
     add_mapped_connections(m_prj, rad2_rad, tz2_rad, "Star")
     add_mapped_connections(m_prj, rad1_conv, tz1_conv, "Heat")
     add_mapped_connections(m_prj, rad1_rad, tz1_rad, "Star")
+    
+    
     
     return m_prj
     
@@ -161,8 +204,7 @@ def add_mapped_record(parent, name, record_location):
     mapped_rec.record_location = record_location
     
     parent.parameters.append(mapped_rec)
-
-    
+   
 def return_mapped_component(parent, target_location, target_name):
     
     mapped_comp = MappedComponent(parent)
@@ -176,8 +218,12 @@ def add_mapped_connector(parent, name, type):
     mapped_con = MappedConnector(parent)
     mapped_con.name = name
     mapped_con.type = type
-    
-    parent.connectors.append(mapped_con)
+
+    if isinstance(parent, MappedControl):
+        parent.control_connector.append(mapped_con)
+    else:
+        parent.connectors.append(mapped_con)
+           
     return mapped_con
     
 def add_mapped_connections(project, input, output, type): 
@@ -186,3 +232,11 @@ def add_mapped_connections(project, input, output, type):
     
     project.connections.append(mapped_con)
 
+def add_mapped_control(parent, strategy, ctrl_con):
+    
+    mapped_ctrl = MappedControl(parent)
+    mapped_ctrl.control_strategy = strategy
+    mapped_ctrl.control_connector = ctrl_con
+    parent.mapped_control = mapped_ctrl
+    
+    return mapped_ctrl
