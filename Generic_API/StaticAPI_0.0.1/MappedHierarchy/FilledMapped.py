@@ -51,6 +51,8 @@ def return_mapped_project():
     add_mapped_property(m_bldg_sc_pipe1, "e", 0.000021)
     pipe1_a = add_mapped_connector(m_bldg_sc_pipe1, "port_a", "Fluid", "Input")
     pipe1_b = add_mapped_connector(m_bldg_sc_pipe1, "port_b", "Fluid", "Output")
+    
+    
     #Pipe 2
     m_bldg_sc_pipe2 = return_mapped_component(m_bldg,\
                              "AixLib.Fluid.FixedResistances.StaticPipe", \
@@ -187,19 +189,12 @@ def return_mapped_component(parent, target_location, target_name):
     return mapped_comp
 
 def add_mapped_connector(parent, name, type, input_output):
-    if input_output == "Input":
-        mapped_con = MappedConnector(parent)
-        mapped_con.name = name
-        mapped_con.type = type
-        
-        parent.input_connectors.append(mapped_con)
-        
-    elif input_output == "Output":
-        mapped_con = MappedConnector(parent)
-        mapped_con.name = name
-        mapped_con.type = type
-        
-        parent.input_connectors.append(mapped_con)
+    
+    mapped_con = MappedConnector(parent)
+    mapped_con.name = name
+    mapped_con.type = type
+    
+    parent.connectors.append(mapped_con)
     return mapped_con
     
 def add_mapped_connections(project, input, output, type): 
