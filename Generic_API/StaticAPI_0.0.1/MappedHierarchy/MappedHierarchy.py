@@ -114,6 +114,14 @@ class MappedProject(object):
         connector.type = type
         
         return connector
+    
+    def create_mapped_property(self, parent, name, value):
+    
+        mapped_prop = MappedProperty(parent)
+        mapped_prop.name = name
+        mapped_prop.value = value
+        
+        parent.parameters.append(mapped_prop)
     	
 class MappedBuilding(MappedSystem):
     """Representation of a mapped building

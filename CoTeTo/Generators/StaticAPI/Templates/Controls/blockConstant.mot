@@ -2,9 +2,10 @@
 <% 
  con = static_data.create_connector(None, "y", "Real")
  sys = static_data.create_system("Modelica.Blocks.Sources.Constant", comp.mapped_control.control_strategy, [con])
+ for para in comp.mapped_control.parameters:
+ 	static_data.create_mapped_property(sys, para.name, para.value)
  con.parent = sys
- 
  static_data.add_connection(con, comp.mapped_control.control_connector)
 %>
 
-Modelica.Blocks.Sources.Constant ${comp.mapped_control.control_strategy}(k=${comp.mapped_control.parameters[0].value});
+${sys.target_location} ${comp.mapped_control.control_strategy}(${sys.parameters[0].name}=${sys.parameters[0].value});

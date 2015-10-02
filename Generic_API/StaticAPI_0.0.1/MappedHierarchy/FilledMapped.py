@@ -118,7 +118,7 @@ def return_mapped_project():
     
     valve1_a = add_mapped_connector(m_tz1_sc_valve, "port_a", "Fluid")
     valve1_b = add_mapped_connector(m_tz1_sc_valve, "port_b", "Fluid")
-    valve1_real = add_mapped_connector(m_tz1_sc_valve, "dp_in", "Real")
+    valve1_real = add_mapped_connector(m_tz1_sc_valve, "opening", "Real")
     
     ctrl_v1 = add_mapped_control(m_tz1_sc_valve, 'room_T_PID', valve1_real)
     add_mapped_property(ctrl_v1, "setTemp", 330.0)
@@ -151,9 +151,9 @@ def return_mapped_project():
     
     valve2_a = add_mapped_connector(m_tz2_sc_valve, "port_a", "Fluid")
     valve2_b = add_mapped_connector(m_tz2_sc_valve, "port_b", "Fluid")
-    valve2_real = add_mapped_connector(m_tz2_sc_valve, "dp_in", "Real")
+    valve2_real = add_mapped_connector(m_tz2_sc_valve, "opening", "Real")
     
-    ctrl_v2 = add_mapped_control(m_tz2_sc_valve, 'room_T_PID', valve1_real)
+    ctrl_v2 = add_mapped_control(m_tz2_sc_valve, 'room_T_PID', valve2_real)
     add_mapped_property(ctrl_v2, "setTemp", 330.0)
     add_mapped_property(ctrl_v2, "k", 0.19688)
     add_mapped_property(ctrl_v2, "yMin", 0)
