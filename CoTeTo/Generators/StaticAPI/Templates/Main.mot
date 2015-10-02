@@ -1,3 +1,14 @@
+${static_data.project_name}
+%for comp in static_data.buildings[0].supply_components:
+
+%if comp.mapped_control != None and comp.mapped_control.control_strategy == "T_set-const":
+${comp.mapped_control.control_strategy}
+<%include file="blockConstant.mot" args="name=comp.mapped_control.control_strategy, value=comp.mapped_control.parameters[0].value"/>
+<%static_data.project_name = "manipulate the name"%>
+%endif
+%endfor
+${static_data.project_name}
+
 package ${static_data.project_name}
 extends Modelica.Icons.Package;
 	model ${static_data.project_name}${static_data.used_library}
