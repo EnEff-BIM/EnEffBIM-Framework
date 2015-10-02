@@ -13,9 +13,11 @@ ${',' if not loop.last else ''}\
 %else:
 ${param.name} = ${param.record_location}(\
 %for param_rec in param.parameters:
+%if type(param_rec).__name__ == "MappedProperty":
 ${param_rec.name} = ${param_rec.value}\
 ${',' if not loop.last else ')'}\
 ${',' if not loop.parent.last else ''}\
+%endif
 %endfor
 %endif
 ${'' if not loop.last else ');'}
@@ -30,11 +32,15 @@ ${param.name} = ${param.value}\
 ${',' if not loop.last else ''}\
 %else:
 ${param.name} = ${param.record_location}(\
+
 %for param_rec in param.parameters:
+%if type(param_rec).__name__ == "MappedProperty":
 ${param_rec.name} = ${param_rec.value}\
 ${',' if not loop.last else ')'}\
 ${',' if not loop.parent.last else ''}\
+%endif
 %endfor
+
 %endif
 %endfor
 ${'' if not loop.last else ');'}
