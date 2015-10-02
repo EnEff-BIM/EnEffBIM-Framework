@@ -30,11 +30,13 @@ def return_mapped_project():
     '''Instantiate MappedThermalZone m_tz1, m_tz2, fill attributes, add thermal zone to building'''
     m_tz1 = MappedThermalZone(m_bldg)
     m_tz1.zone_name = "OneZone"
+    m_tz1.target_name = "OneZone"
     tz1_conv = add_mapped_connector(m_tz1, "internalGainsCon", "HeatPort")
     tz1_rad = add_mapped_connector(m_tz1, "internalGainsRad", "Star")
     
     m_tz2 = MappedThermalZone(m_bldg)
     m_tz2.zone_name = "TwoZone"
+    m_tz2.target_name = "TwoZone"
     tz2_conv = add_mapped_connector(m_tz2, "internalGainsCon", "HeatPort")
     tz2_rad = add_mapped_connector(m_tz2, "internalGainsRad", "Star")
     
