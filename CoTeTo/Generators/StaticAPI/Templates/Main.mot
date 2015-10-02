@@ -1,66 +1,12 @@
-${static_data.project_name}
+${static_data.connections[-1].connector_a}
 %for comp in static_data.buildings[0].supply_components:
 
 %if comp.mapped_control != None and comp.mapped_control.control_strategy == "T_set-const":
 ${comp.mapped_control.control_strategy}
 <%include file="blockConstant.mot" args="name=comp.mapped_control.control_strategy, value=comp.mapped_control.parameters[0].value"/>
-<%static_data.project_name = "manipulate the name"%>
+<%static_data.add_connection("asd","asd") %>
+${static_data.connections[-1].connector_a}
 %endif
 %endfor
 ${static_data.project_name}
 
-package ${static_data.project_name}
-extends Modelica.Icons.Package;
-	model ${static_data.project_name}${static_data.used_library}
-	
-	%for bldg in static_data.buildings:
-	
-%for comp in bldg.supply_components:
-${comp.target_location} ${comp.target_name}(
-%for param in comp.parameters:
-%if type(param).__name__ == "MappedProperty":
-${param.name} = ${param.value}\
-${',' if not loop.last else ''}\
-%else:
-${param.name} = ${param.record_location}(\
-%for param_rec in param.parameters:
-%if type(param_rec).__name__ == "MappedProperty":
-${param_rec.name} = ${param_rec.value}\
-${',' if not loop.last else ')'}\
-${',' if not loop.parent.last else ''}\
-%endif
-%endfor
-%endif
-${'' if not loop.last else ');'}
-%endfor
-%endfor
-%for zone in bldg.thermal_zones:
-%for comp in zone.supply_components:
-${comp.target_location} ${comp.target_name}(
-%for param in comp.parameters:
-%if type(param).__name__ == "MappedProperty":
-${param.name} = ${param.value}\
-${',' if not loop.last else ''}\
-%else:
-${param.name} = ${param.record_location}(\
-
-%for param_rec in param.parameters:
-%if type(param_rec).__name__ == "MappedProperty":
-${param_rec.name} = ${param_rec.value}\
-${',' if not loop.last else ')'}\
-${',' if not loop.parent.last else ''}\
-%endif
-%endfor
-
-%endif
-%endfor
-${'' if not loop.last else ');'}
-%endfor
-%endfor
-
-%endfor
-equation
-%for con in static_data.connections:
-connect(${con.connector_a.parent.target_name}.${con.connector_a.name},${con.connector_b.parent.target_name}.${con.connector_b.name});
-%endfor
-end ${static_data.project_name}${static_data.used_library};

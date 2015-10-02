@@ -8,4 +8,3 @@ class StaticAPI(object):
         self.mapped_data = stat_api.return_mapped_project()
         self.unmapped_data = None
 
-

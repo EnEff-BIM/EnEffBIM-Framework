@@ -1,12 +1,4 @@
-from MappedHierarchy.MappedProject import MappedProject
-from MappedHierarchy.MappedBuilding import MappedBuilding
-from MappedHierarchy.MappedThermalZone import MappedThermalZone
-from MappedHierarchy.MappedComponent import MappedComponent
-from MappedHierarchy.MappedProperty import MappedProperty
-from MappedHierarchy.MappedRecord import MappedRecord
-from MappedHierarchy.MappedConnector import MappedConnector
-from MappedHierarchy.MappedConnection import MappedConnection
-from MappedHierarchy.MappedControl import MappedControl
+from MappedHierarchy.MappedHierarchy import *
 '''
 StaticAPI Use Case Scenario:
 
