@@ -49,7 +49,7 @@ class MappedSystem(object):
         self.unmapped_system = []
 
 class MappedProject(object):
-    """Base Class for each mapped data information_centrality
+    """Root Class for each mapped data information
         
     The MappedProject class is the root class for all mapped information
     and thus the head of the hierarchy tree. Further more it contains meta 
@@ -129,6 +129,9 @@ class MappedBuilding(MappedSystem):
     The MappedBuilding class is a representation of a building mapped with
     Modelica information. It contains HVAC and geometric information.
     
+    Note: As MappedBuilding inherits from MappedSystem it is possible to
+    implement connectors, parameters and whole models target names.
+    
     Parameters
     ----------
     
@@ -152,8 +155,6 @@ class MappedBuilding(MappedSystem):
         This is an *iterable* list containing all supply components (e.g. pump,
         boiler, storage) of the building. The items of the list have to be an 
         instance of the class "MappedModelicaComponent".
-        
-    supply_connections : not sure if I want to implement it here.
     
     """
     
@@ -166,10 +167,13 @@ class MappedBuilding(MappedSystem):
         self.supply_components = []
              
 class MappedThermalZone(MappedSystem):
-    """Representation of a mapped thermal zhone
+    """Representation of a mapped thermal zone
         
     The MappedThermalZone class is a representation of a thermal zone mapped 
     with Modelica information. It contains HVAC and geometric information.
+    
+    Note: As MappedThermalZone inherits from MappedSystem it is possible to
+    implement connectors, parameters and whole models target names.
     
     Parameters
     ----------
@@ -190,9 +194,8 @@ class MappedThermalZone(MappedSystem):
     supply_components : list of MappedModelicaComponents()
         This is an *iterable* list containing all supply components (e.g. 
         radiator) of the thermal zone. The items of the list have to be an 
-        instance of the class "MappedModelicaComponent".
+        instance of the class "MappedComponent".
         
-    supply_connections : not sure if I want to implement it here.
     
     """
     
@@ -228,7 +231,7 @@ class MappedConnection(object):
     """Representation of a mapped connector
         
     The MappedConnection class is a representation of a connection in Modelica.
-    It contains connection
+    It contains two MappedConnectors and the Modelica Type of the connection.
     
     
     Parameters
@@ -246,6 +249,7 @@ class MappedConnection(object):
     ----------
        
     type : str
+        Modelica Type of the connection.
         - Fluid
         - Real
         - Boolean
@@ -264,7 +268,7 @@ class MappedConnector(object):
     """Representation of a mapped connector
         
     The MappedConnector class is a representation of any connector in Modelica.
-    It contains connector information
+    It contains connector information like name and type.
     
     
     Parameters
@@ -311,7 +315,7 @@ class MappedControl(object):
     Attributes
     ----------
     
-    control_strategy : str
+    control_strategy : str (library specific codelist)
         Probably a code list of possible control strategies
         
     parameters : list of MappedProperty or MappedRecord 
