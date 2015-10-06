@@ -20,9 +20,10 @@ def filter01(filter, *args, **kwargs):
                     con.parent = sys
                     static_data.add_connection(con, comp_count.mapped_control.control_connector)
                     comp_count.parent.supply_components.append(sys)
-                    
+
         for zone_count in bldg_count.thermal_zones:
             for comp_zone_count in zone_count.supply_components:
+                
                 if comp_zone_count.mapped_control != None:
                     if comp_zone_count.mapped_control.control_strategy == "room_T_PID1":
                     
@@ -55,4 +56,5 @@ def filter01(filter, *args, **kwargs):
                                  con_f = check
                          static_data.add_connection(con_b, con_f)
                          static_data.add_connection(con_e, comp_zone_count.mapped_control.control_connector)
-
+        
+        

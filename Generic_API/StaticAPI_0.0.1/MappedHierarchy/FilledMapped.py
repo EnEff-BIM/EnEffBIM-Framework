@@ -84,7 +84,7 @@ def return_mapped_project():
     pipe1_a = add_mapped_connector(m_bldg_sc_pipe1, "port_a", "Fluid")
     pipe1_b = add_mapped_connector(m_bldg_sc_pipe1, "port_b", "Fluid")
     
-    m_bldg_sc_pipe2 = return_mapped_component(m_bldg, "AixLib.Fluid.FixedResistances.StaticPipe","flowPipe")
+    m_bldg_sc_pipe2 = return_mapped_component(m_bldg, "AixLib.Fluid.FixedResistances.StaticPipe","returnPipe")
     add_mapped_property(m_bldg_sc_pipe2, "Medium","Modelica.Media.Water.ConstantPropertyLiquidWater")
     add_mapped_property(m_bldg_sc_pipe2, "D", 0.02)
     add_mapped_property(m_bldg_sc_pipe2, "l", 10.02)
