@@ -1,22 +1,12 @@
 
 %for comp in static_data.buildings[0].supply_components:
 ${comp.target_name}
-%if comp.mapped_control != None: 
-%if comp.mapped_control.control_strategy == "T_set_const" or comp.mapped_control.control_strategy == "dp_const":
-<%include file="Controls/blockConstant.mot" args="static_data=static_data, comp=comp"/>
-%endif
-%endif
 %endfor
 
 %for comp in static_data.buildings[0].thermal_zones[0].supply_components:
 ${comp.target_name}
-%if comp.mapped_control != None: 
-%if comp.mapped_control.control_strategy == "room_T_PID":
-<%include file="Controls/roomTemp_P.mot" args="static_data=static_data, comp=comp"/>
-%endif
-%endif
 %endfor
 
 %for con in static_data.connections:
-connect(${con.connector_a.parent.target_name}.${con.connector_a.name}, ${con.connector_b.parent.target_name}.${con.connector_b.name})
+connect(${con.connector_a.parent.target_name}.${con.connector_a.name}, ${con.connector_b.parent.target_name}.${con.connector_b.name});
 %endfor

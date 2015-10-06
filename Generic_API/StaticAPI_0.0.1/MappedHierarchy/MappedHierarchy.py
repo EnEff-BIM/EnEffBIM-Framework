@@ -96,7 +96,7 @@ class MappedProject(object):
 	
     def create_system(self, target_location, target_name, connector):
 
-        mapp_sys = MappedSystem(self)
+        mapp_sys = MappedComponent(self)
         mapp_sys.target_location = target_location
         mapp_sys.target_name = target_name
         
