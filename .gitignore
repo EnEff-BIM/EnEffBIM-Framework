@@ -26,7 +26,7 @@ unitTests.log
 #
 # Ignore some Python files
 __pycache__/
-*.py[cod]
+#*.py[cod]
 #
 # Ignore Eclipse files
 .settings/
