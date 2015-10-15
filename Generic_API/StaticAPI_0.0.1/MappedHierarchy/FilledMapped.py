@@ -18,23 +18,23 @@ StaticAPI Use Case Scenario:
 
 def return_mapped_project():
     '''Instantiate MappedPropject, fill attributes'''
-    m_prj = MappedProject()
+    m_prj = MapProject()
     m_prj.used_library = "AixLib"
     m_prj.library_version = "0.1.0"
     m_prj.project_name = "StaticAPI"
     
-    '''Instantiate MappedBuilding, fill attributes, add building to project'''
-    m_bldg = MappedBuilding(m_prj)
+    '''Instantiate MapBuilding, fill attributes, add building to project'''
+    m_bldg = MapBuilding(m_prj)
     m_bldg.building_name = "UseCase1.1"
     m_prj.buildings = [m_bldg]
-    '''Instantiate MappedThermalZone m_tz1, m_tz2, fill attributes, add thermal zone to building'''
-    m_tz1 = MappedThermalZone(m_bldg)
+    '''Instantiate MapThermalZone m_tz1, m_tz2, fill attributes, add thermal zone to building'''
+    m_tz1 = MapThermalZone(m_bldg)
     m_tz1.zone_name = "OneZone"
     m_tz1.target_name = "OneZone"
     tz1_conv = add_mapped_connector(m_tz1, "internalGainsCon", "HeatPort")
     tz1_rad = add_mapped_connector(m_tz1, "internalGainsRad", "Star")
     
-    m_tz2 = MappedThermalZone(m_bldg)
+    m_tz2 = MapThermalZone(m_bldg)
     m_tz2.zone_name = "TwoZone"
     m_tz2.target_name = "TwoZone"
     tz2_conv = add_mapped_connector(m_tz2, "internalGainsCon", "HeatPort")
@@ -42,7 +42,7 @@ def return_mapped_project():
     
     m_bldg.thermal_zones = [m_tz1, m_tz2]
     
-    '''Instantiate Boiler as MappedComponent, add Properties, add connectors'''
+    '''Instantiate Boiler as MapComponent, add Properties, add connectors'''
     
     m_bldg_sc_boiler = return_mapped_component(m_bldg,"AixLib.Fluid.HeatExchangers.Boiler","boiler")
     add_mapped_property(m_bldg_sc_boiler, "Medium", "Modelica.Media.Water.ConstantPropertyLiquidWater")  
@@ -57,7 +57,7 @@ def return_mapped_project():
     ctrl_boiler = add_mapped_control(m_bldg_sc_boiler, 'T_set_const', boiler_real)
     add_mapped_property(ctrl_boiler, "k", 330.0)
     
-    '''Instantiate Pump as MappedComponent, add Properties, add connectors'''
+    '''Instantiate Pump as MapComponent, add Properties, add connectors'''
     
     m_bldg_sc_pump = return_mapped_component(m_bldg,"AixLib.Fluid.Movers.FlowControlled_dp","pump")
     add_mapped_property(m_bldg_sc_pump, "Medium","Modelica.Media.Water.ConstantPropertyLiquidWater")
@@ -74,7 +74,7 @@ def return_mapped_project():
     ctrl_pump = add_mapped_control(m_bldg_sc_pump, 'dp_const', pump_real)
     add_mapped_property(ctrl_pump, "k", 330.0)
     
-    '''Instantiate Pipe pipe1 and pipe 2 as MappedComponent, add Properties, add connectors'''
+    '''Instantiate Pipe pipe1 and pipe 2 as MapComponent, add Properties, add connectors'''
     
     m_bldg_sc_pipe1 = return_mapped_component(m_bldg,"AixLib.Fluid.FixedResistances.StaticPipe", "flowPipe")
     add_mapped_property(m_bldg_sc_pipe1, "Medium","Modelica.Media.Water.ConstantPropertyLiquidWater")
@@ -97,7 +97,7 @@ def return_mapped_project():
     m_bldg.supply_components = [m_bldg_sc_pipe1, m_bldg_sc_pipe2, m_bldg_sc_boiler, m_bldg_sc_pump]
    
   
-    '''Instantiate Radiator 1 MappedComponent, add Properties, add connectors, add to thermal zone'''
+    '''Instantiate Radiator 1 MapComponent, add Properties, add connectors, add to thermal zone'''
     
     m_tz1_sc_radiator = return_mapped_component(m_tz1,"AixLib.Fluid.HeatExchangers.Radiators.Radiator","radiator_tz1")
     add_mapped_property(m_tz1_sc_radiator, "Medium","Modelica.Media.Water.ConstantPropertyLiquidWater")
@@ -112,7 +112,7 @@ def return_mapped_project():
     rad1_conv = add_mapped_connector(m_tz1_sc_radiator, "convPort", "HeatPort")
     rad1_rad = add_mapped_connector(m_tz1_sc_radiator, "radPort", "Star")
     
-    '''Instantiate Valve 1 as MappedComponent, add Properties, add connectors, add to thermal zone'''
+    '''Instantiate Valve 1 as MapComponent, add Properties, add connectors, add to thermal zone'''
     
     m_tz1_sc_valve = return_mapped_component(m_tz1,"AixLib.Fluid.Actuators.Valves.SimpleValve","valve_tz1")
     add_mapped_property(m_tz1_sc_radiator, "Medium","Modelica.Media.Water.ConstantPropertyLiquidWater")
@@ -130,7 +130,7 @@ def return_mapped_project():
            
     m_tz1.supply_components = [m_tz1_sc_radiator, m_tz1_sc_valve]
 
-    '''Instantiate Radiator 2 MappedComponent, add Properties, add connectors, add to thermal zone'''
+    '''Instantiate Radiator 2 MapComponent, add Properties, add connectors, add to thermal zone'''
     
     m_tz2_sc_radiator = return_mapped_component(m_tz2,"AixLib.Fluid.HeatExchangers.Radiators.Radiator","radiator_tz2")
     add_mapped_property(m_tz2_sc_radiator, "Medium","Modelica.Media.Water.ConstantPropertyLiquidWater")
@@ -145,7 +145,7 @@ def return_mapped_project():
     rad2_conv = add_mapped_connector(m_tz2_sc_radiator, "convPort", "HeatPort")
     rad2_rad = add_mapped_connector(m_tz2_sc_radiator, "radPort", "Star") 
     
-    '''Instantiate Valve 1 as MappedComponent, add Properties, add connectors, add to thermal zone'''
+    '''Instantiate Valve 1 as MapComponent, add Properties, add connectors, add to thermal zone'''
     
     m_tz2_sc_valve = return_mapped_component(m_tz2,"AixLib.Fluid.Actuators.Valves.SimpleValve","valve_tz1")
     add_mapped_property(m_tz2_sc_valve, "Medium","Modelica.Media.Water.ConstantPropertyLiquidWater")
@@ -185,7 +185,7 @@ def return_mapped_project():
     
 def add_mapped_property(parent, name, value):
     
-    mapped_prop = MappedProperty(parent)
+    mapped_prop = MapProperty(parent)
     mapped_prop.name = name
     mapped_prop.value = value
     
@@ -193,7 +193,7 @@ def add_mapped_property(parent, name, value):
     
 def add_mapped_record(parent, name, record_location):
     
-    mapped_rec = MappedRecord(parent)
+    mapped_rec = MapRecord(parent)
     mapped_rec.name = name
     mapped_rec.record_location = record_location
     
@@ -201,7 +201,7 @@ def add_mapped_record(parent, name, record_location):
    
 def return_mapped_component(parent, target_location, target_name):
     
-    mapped_comp = MappedComponent(parent)
+    mapped_comp = MapComponent(parent)
     mapped_comp.target_location = target_location
     mapped_comp.target_name = target_name
     
@@ -209,11 +209,11 @@ def return_mapped_component(parent, target_location, target_name):
 
 def add_mapped_connector(parent, name, type):
     
-    mapped_con = MappedConnector(parent)
+    mapped_con = MapConnector(parent)
     mapped_con.name = name
     mapped_con.type = type
 
-    if isinstance(parent, MappedControl):
+    if isinstance(parent, MapControl):
         parent.control_connector.append(mapped_con)
     else:
         parent.connectors.append(mapped_con)
@@ -221,14 +221,14 @@ def add_mapped_connector(parent, name, type):
     return mapped_con
     
 def add_mapped_connections(project, input, output, type): 
-    mapped_con = MappedConnection(input,output)
+    mapped_con = MapConnection(input,output)
     mapped_con.type = type   
     
     project.connections.append(mapped_con)
 
 def add_mapped_control(parent, strategy, ctrl_con):
     
-    mapped_ctrl = MappedControl(parent)
+    mapped_ctrl = MapControl(parent)
     mapped_ctrl.control_strategy = strategy
     mapped_ctrl.control_connector = ctrl_con
     parent.mapped_control = mapped_ctrl
