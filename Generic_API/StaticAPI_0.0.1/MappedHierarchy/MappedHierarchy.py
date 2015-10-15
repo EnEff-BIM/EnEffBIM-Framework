@@ -28,10 +28,9 @@ class MoObject(object):
         This is an *iterable* list containing all  Modelica connectors of the
         MoObject (e.g. Real, Heatport, Fluid)        
                    
-    unmapped_system : list of SimClasses in StaticAPI.unmapped_data
-        This is an *iterable* list containing all SimClasses where this system
-        was mapped from. (e.g. SimBoilerHotWater). The Class should be referenced
-        in StaticAPI.unmapped_data
+    sim_ref_id : list 
+        This is an *iterable* list containing all SImModel refID where this system
+        was mapped from. (e.g. SimBoilerHotWater). 
         
     control: MapControl()
         Pointer to an optional control element, instance of MapContorl()
@@ -46,7 +45,7 @@ class MoObject(object):
         self.target_name = None
         self.parameters = []
         self.connectors = []
-        self.unmapped_system = []
+        self.sim_ref_id = []
 
 class MapProject(object):
     """Root Class for each mapped data information
@@ -96,14 +95,14 @@ class MapProject(object):
 	
     def create_system(self, target_location, target_name, connector):
 
-        mapp_sys = MapComponent(self)
-        mapp_sys.target_location = target_location
-        mapp_sys.target_name = target_name
+        map_sys = MapComponent(self)
+        map_sys.target_location = target_location
+        map_sys.target_name = target_name
         
         for con in connector:
-            mapp_sys.connectors.append(con)
+            map_sys.connectors.append(con)
 
-        self.systems.append(mapp_sys)
+        self.systems.append(map_sys)
         
         return mapp_sys
         
@@ -117,11 +116,11 @@ class MapProject(object):
     
     def create_mapped_property(self, parent, name, value):
     
-        mapped_prop = MapProperty(parent)
-        mapped_prop.name = name
-        mapped_prop.value = value
+        map_prop = MapProperty(parent)
+        map_prop.name = name
+        map_prop.value = value
         
-        parent.parameters.append(mapped_prop)
+        parent.parameters.append(map_prop)
     	
 class MapBuilding(MoObject):
     """Representation of a mapped building
@@ -225,7 +224,7 @@ class MapComponent(MoObject):
         
         super(MapComponent, self).__init__(parent)
 
-        self.mapped_control = None
+        self.map_control = None
 		
 class MapConnection(object):
     """Representation of a mapped connector
@@ -255,6 +254,9 @@ class MapConnection(object):
         - Boolean
         - Heat
         - ...
+        
+    sim_ref_id : str
+        refID of SimModel for the corresponding distributionPort
 
     """
     
@@ -263,6 +265,7 @@ class MapConnection(object):
         self.connector_a = connector_a
         self.connector_b = connector_b
         self.type = ""
+        self.sim_ref_id = None
 		
 class MapConnector(object):
     """Representation of a mapped connector
@@ -289,7 +292,10 @@ class MapConnector(object):
         - Boolean
         - HeatPort
         - ...
-
+        
+    sim_ref_id : str
+        refID of SimModel for the corresponding distributionPort
+        
     """
     
     def __init__(self, parent):
@@ -297,7 +303,9 @@ class MapConnector(object):
         self.parent = parent
         self.name = ""
         self.type = ""
+        self.sim_ref_id = None
 		
+        
 class MapControl(object):
     """Representation of a mapped control strategy
         
