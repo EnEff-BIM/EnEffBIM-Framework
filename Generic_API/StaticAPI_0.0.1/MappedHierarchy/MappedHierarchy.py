@@ -1,15 +1,15 @@
-class MappedSystem(object):
+class MoObject(object):
     """Base class for all mapped objects
         
-    The MappedSystem class is the base class for all mapped objects in the
+    The MoObject class is the base class for all mapped objects in the
     StaticAPI. It contains some library specific data.
     
     
     Parameters
     ----------
     
-    parent : instance of a Mapped class
-        MappedComponent receives any mapped class (MappedBuilding etc.)
+    parent : instance of a Map class
+        MapComponent receives any mapped class (MapBuilding etc.)
         
     Attributes
     ----------
@@ -20,21 +20,21 @@ class MappedSystem(object):
     target_name : str (optional)
         name of the Modelica object (if not set: this could be SimModel name)
         
-    parameters : list of MappedProperty or MappedRecord 
+    parameters : list of MapProperty or MapRecord 
         This is an *iterable* list containing all records and properties of
-        the MappedSystem
+        the MoObject
         
-    connectors : list of MappedConnector()
+    connectors : list of MapConnector()
         This is an *iterable* list containing all  Modelica connectors of the
-        MappedSystem (e.g. Real, Heatport, Fluid)        
+        MoObject (e.g. Real, Heatport, Fluid)        
                    
     unmapped_system : list of SimClasses in StaticAPI.unmapped_data
         This is an *iterable* list containing all SimClasses where this system
         was mapped from. (e.g. SimBoilerHotWater). The Class should be referenced
         in StaticAPI.unmapped_data
         
-    control: MappedControl()
-        Pointer to an optional control element, instance of MappedContorl()
+    control: MapControl()
+        Pointer to an optional control element, instance of MapContorl()
 
     """
     
@@ -48,10 +48,10 @@ class MappedSystem(object):
         self.connectors = []
         self.unmapped_system = []
 
-class MappedProject(object):
+class MapProject(object):
     """Root Class for each mapped data information
         
-    The MappedProject class is the root class for all mapped information
+    The MapProject class is the root class for all mapped information
     and thus the head of the hierarchy tree. Further more it contains meta 
     information about the used library.
         
@@ -64,12 +64,12 @@ class MappedProject(object):
     library_version : str
         Version of used library
     
-    buildings : list of MappedBuilding()
+    buildings : list of MapBuilding()
         This is an *iterable* list containing all buildings of the 
         project. The items of the list have to be an instance of
-        the class "MappedBuilding".
+        the class "MapBuilding".
 
-    connections : list of MappedConnection()
+    connections : list of MapConnection()
         This is an *iterable* list containing all connections.
         
     project_name : str
@@ -92,11 +92,11 @@ class MappedProject(object):
         self.systems = []
         
     def add_connection(self, connector_a, connector_b):
-        self.connections.append(MappedConnection(connector_a, connector_b))
+        self.connections.append(MapConnection(connector_a, connector_b))
 	
     def create_system(self, target_location, target_name, connector):
 
-        mapp_sys = MappedComponent(self)
+        mapp_sys = MapComponent(self)
         mapp_sys.target_location = target_location
         mapp_sys.target_name = target_name
         
@@ -109,7 +109,7 @@ class MappedProject(object):
         
     def create_connector(self, parent, name, type):
         
-        connector = MappedConnector(parent)
+        connector = MapConnector(parent)
         connector.name = name
         connector.type = type
         
@@ -117,26 +117,26 @@ class MappedProject(object):
     
     def create_mapped_property(self, parent, name, value):
     
-        mapped_prop = MappedProperty(parent)
+        mapped_prop = MapProperty(parent)
         mapped_prop.name = name
         mapped_prop.value = value
         
         parent.parameters.append(mapped_prop)
     	
-class MappedBuilding(MappedSystem):
+class MapBuilding(MoObject):
     """Representation of a mapped building
         
-    The MappedBuilding class is a representation of a building mapped with
+    The MapBuilding class is a representation of a building mapped with
     Modelica information. It contains HVAC and geometric information.
     
-    Note: As MappedBuilding inherits from MappedSystem it is possible to
+    Note: As MapBuilding inherits from MoObject it is possible to
     implement connectors, parameters and whole models target names.
     
     Parameters
     ----------
     
-    parent : instance of MappedProject()
-        MappedBuilding receives an instance of MappedProject, in order to know
+    parent : instance of MapProject()
+        MapBuilding receives an instance of MapProject, in order to know
         to what Project it belongs to. Might be trivial in the case of the 
         project, more because of consistency.
         
@@ -146,10 +146,10 @@ class MappedBuilding(MappedSystem):
     building_name : str
         Name of the building
 
-    thermal_zones : list of MappedThermalZone()
+    thermal_zones : list of MapThermalZone()
         This is an *iterable* list containing all thermal zones of the 
         building. The items of the list have to be an instance of
-        the class "MappedThermalZone".
+        the class "MapThermalZone".
         
     supply_components : list of MappedModelicaComponents()
         This is an *iterable* list containing all supply components (e.g. pump,
@@ -160,26 +160,26 @@ class MappedBuilding(MappedSystem):
     
     def __init__(self, parent):
         
-        super(MappedBuilding, self).__init__(parent)
+        super(MapBuilding, self).__init__(parent)
                 
         self.building_name = ""
         self.thermal_zones = []
         self.supply_components = []
              
-class MappedThermalZone(MappedSystem):
+class MapThermalZone(MoObject):
     """Representation of a mapped thermal zone
         
-    The MappedThermalZone class is a representation of a thermal zone mapped 
+    The MapThermalZone class is a representation of a thermal zone mapped 
     with Modelica information. It contains HVAC and geometric information.
     
-    Note: As MappedThermalZone inherits from MappedSystem it is possible to
+    Note: As MapThermalZone inherits from MoObject it is possible to
     implement connectors, parameters and whole models target names.
     
     Parameters
     ----------
     
-    parent : instance of MappedBuilding()
-        MappedThermalZone receives an instance of MappedProject, in order to 
+    parent : instance of MapBuilding()
+        MapThermalZone receives an instance of MapProject, in order to 
         know to what building it belongs to.
         
     Attributes
@@ -188,60 +188,60 @@ class MappedThermalZone(MappedSystem):
     zone_name : str
         Name of the thermal_zone 
 
-    space_boundaries : MappedSpaceBoundaries()
-        This is a instance of MappedSpaceBoundaries.
+    space_boundaries : MapSpaceBoundaries()
+        This is a instance of MapSpaceBoundaries.
         
     supply_components : list of MappedModelicaComponents()
         This is an *iterable* list containing all supply components (e.g. 
         radiator) of the thermal zone. The items of the list have to be an 
-        instance of the class "MappedComponent".
+        instance of the class "MapComponent".
         
     
     """
     
     def __init__(self, parent):
         
-        super(MappedThermalZone, self).__init__(parent)
+        super(MapThermalZone, self).__init__(parent)
         
         
         self.zone_name = ""
         self.space_boundaries = []
         self.supply_components = []
 		
-class MappedComponent(MappedSystem):
+class MapComponent(MoObject):
     """Representation of a mapped component
         
-    The MappedComponent class is a representation of any HVAC component mapped
+    The MapComponent class is a representation of any HVAC component mapped
     with Modelica information. It contains library specific information. 
 
     Attributes
     ----------
     
-    mapped_control : MappedControl()
-        This is an instance of MappedControl()
+    mapped_control : MapControl()
+        This is an instance of MapControl()
     """
     
     def __init__(self, parent):
         
-        super(MappedComponent, self).__init__(parent)
+        super(MapComponent, self).__init__(parent)
 
         self.mapped_control = None
 		
-class MappedConnection(object):
+class MapConnection(object):
     """Representation of a mapped connector
         
-    The MappedConnection class is a representation of a connection in Modelica.
-    It contains two MappedConnectors and the Modelica Type of the connection.
+    The MapConnection class is a representation of a connection in Modelica.
+    It contains two MapConnectors and the Modelica Type of the connection.
     
     
     Parameters
     ----------
     
-    connector_a : instance of a MappedConnector()
+    connector_a : instance of a MapConnector()
         The input connector, with the parent/child relationshsip we can access
         the component
         
-    connector_b : instance of a MappedConnector()
+    connector_b : instance of a MapConnector()
         The output component, with the parent/child relationshsip we can access
         the component
         
@@ -264,18 +264,18 @@ class MappedConnection(object):
         self.connector_b = connector_b
         self.type = ""
 		
-class MappedConnector(object):
+class MapConnector(object):
     """Representation of a mapped connector
         
-    The MappedConnector class is a representation of any connector in Modelica.
+    The MapConnector class is a representation of any connector in Modelica.
     It contains connector information like name and type.
     
     
     Parameters
     ----------
     
-    parent : instance of a MappedComponent()
-        MappedProperty receives an instance of MappedComponent. 
+    parent : instance of a MapComponent()
+        MapProperty receives an instance of MapComponent. 
         
     Attributes
     ----------
@@ -298,10 +298,10 @@ class MappedConnector(object):
         self.name = ""
         self.type = ""
 		
-class MappedControl(object):
+class MapControl(object):
     """Representation of a mapped control strategy
         
-    The MappedControl class is a representation of a mapped control system.
+    The MapControl class is a representation of a mapped control system.
     It is used to store control parameters and more important the control 
     strategy/system itself
     
@@ -309,8 +309,8 @@ class MappedControl(object):
     Parameters
     ----------
     
-    parent : instance of a MappedComponent()
-        MappedProperty receives an instance of MappedComponent. 
+    parent : instance of a MapComponent()
+        MapProperty receives an instance of MapComponent. 
         
     Attributes
     ----------
@@ -318,12 +318,12 @@ class MappedControl(object):
     control_strategy : str (library specific codelist)
         Probably a code list of possible control strategies
         
-    parameters : list of MappedProperty or MappedRecord 
+    parameters : list of MapProperty or MapRecord 
         This is an *iterable* list containing all records and properties of
-        the MappedControl
+        the MapControl
         
-    control_connector : instance of a MappedConnector()
-        MappedConnector to know where the control is mapped to
+    control_connector : instance of a MapConnector()
+        MapConnector to know where the control is mapped to
 
     """
     
@@ -334,17 +334,17 @@ class MappedControl(object):
         self.parameters = []
         self.control_connector = None
         
-class MappedProperty(object):
+class MapProperty(object):
     """Representation of a mapped property
         
-    The MappedProperty class is a representation of any Modelica property. 
+    The MapProperty class is a representation of any Modelica property. 
     
     
     Parameters
     ----------
     
-    parent : instance of a MappedComponent()
-        MappedProperty receives an instance of MappedComponent. 
+    parent : instance of a MapComponent()
+        MapProperty receives an instance of MapComponent. 
         
     Attributes
     ----------
@@ -364,17 +364,17 @@ class MappedProperty(object):
         self.name = ""
         self.value = None
         
-class MappedRecord(object):
+class MapRecord(object):
     """Representation of a mapped record
         
-    The MappedRecord class is a representation of any Modelica Record class. 
+    The MapRecord class is a representation of any Modelica Record class. 
     
     
     Parameters
     ----------
     
-    parent : instance of a MappedComponent()
-        MappedRecords receives an instance of MappedComponent. 
+    parent : instance of a MapComponent()
+        MapRecords receives an instance of MapComponent. 
         
     Attributes
     ----------
@@ -385,9 +385,9 @@ class MappedRecord(object):
     record_location : str
         location in the library of the base record
         
-    parameters : list of MappedProperties or MappedRecords
+    parameters : list of MappedProperties or MapRecords
         This is an *iterable* list containing all records and properties of
-        the MappedRecord
+        the MapRecord
 
     """
     
@@ -398,23 +398,23 @@ class MappedRecord(object):
         self.record_location = ""
         self.parameters = []
 		
-class MappedSpaceBoundary(object):
+class MapSpaceBoundary(object):
     """Representation of a mapped space boundary
         
-    The MappedSpaceBoundary class is a representation of a space boundary 
+    The MapSpaceBoundary class is a representation of a space boundary 
     filled with geometric information.
     
     Parameters
     ----------
     
     parent : instance of MappedZone()
-        MappedSpaceBoundary receives an instance of MappedZone, in order to 
+        MapSpaceBoundary receives an instance of MappedZone, in order to 
         know to what zone it belongs to.
         
     Attributes
     ----------
 
-    mapped_building_elements : list of MappedBuildingElements()
+    mapped_building_elements : list of MapBuildingElements()
         list of all building elements that form the space boundary
             
     """
@@ -425,23 +425,23 @@ class MappedSpaceBoundary(object):
         self.parent = parent
         self.mapped_building_elements = []
         
-class MappedBuildingElement(MappedSystem):
+class MapBuildingElement(MoObject):
     """Representation of a mapped building element
         
-    The MappedBuildingElement class is the root class of any mapped
+    The MapBuildingElement class is the root class of any mapped
     building element
     
     Parameters
     ----------
     
-    parent : instance of MappedSpaceBoundary()
-        MappedBuildingElement receives an instance of MappedSpaceBoundary, 
+    parent : instance of MapSpaceBoundary()
+        MapBuildingElement receives an instance of MapSpaceBoundary, 
         in order to know to what zone it belongs to.
         
     Attributes
     ----------
 
-    mapped_building_elements : list of MappedBuildingElements()
+    mapped_building_elements : list of MapBuildingElements()
         list of all building elements that form the space boundary
 
     area : float
@@ -474,7 +474,7 @@ class MappedBuildingElement(MappedSystem):
     simmodel_normal_vector: array
         normal vector from SimModel
     
-    mapped_layer : list of MappedMaterialLayer
+    mapped_layer : list of MapMaterialLayer
         list of all layers of a building element 
             
     """
@@ -496,22 +496,22 @@ class MappedBuildingElement(MappedSystem):
 
         self.mapped_layer = []
         
-class MappedMaterialLayer(object):
+class MapMaterialLayer(object):
     """Representation of a mapped building element layer
         
-    The MappedMaterialLayer class is the representation of a material layer
+    The MapMaterialLayer class is the representation of a material layer
     
     Parameters
     ----------
     
-    parent : instance of MappedBuildingElement()
-        MappedMaterialLayer receives an instance of MappedBuildingElement, 
+    parent : instance of MapBuildingElement()
+        MapMaterialLayer receives an instance of MapBuildingElement, 
         in order to know to what element it belongs to.
         
     Attributes
     ----------
 
-    material : MappedMaterial()
+    material : MapMaterialLayer()
         material of the layer
         
     thickness : float
@@ -527,16 +527,16 @@ class MappedMaterialLayer(object):
         self.material = None
         self.thickness = None
 
-class MappedMaterial(object):
+class MapMaterialLayer(object):
     """Representation of a mapped material
         
-    The MappedMaterial class is the representation of a material
+    The MapMaterialLayer class is the representation of a material
     
     Parameters
     ----------
     
-    parent : instance of MappedMaterialLayer()
-        MappedMaterial receives an instance of MappedMaterialLayer, 
+    parent : instance of MapMaterialLayer()
+        MapMaterialLayer receives an instance of MapMaterialLayer, 
         in order to know to what layer it belongs to.
         
     Attributes:
