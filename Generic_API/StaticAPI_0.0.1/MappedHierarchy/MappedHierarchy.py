@@ -412,37 +412,16 @@ class MapSpaceBoundary(object):
         
     Attributes
     ----------
-
-    mapped_building_elements : list of MapBuildingElements()
-        list of all building elements that form the space boundary
-            
-    """
     
-    def __init__(self, parent):
+    sim_ref_id : str 
+        SimModel ref id
         
-              
-        self.parent = parent
-        self.mapped_building_elements = []
+    type: str(?)
+        OuterWall, InnerWall, Roof, Floor, Ceiling, Door, etc.
         
-class MapBuildingElement(MoObject):
-    """Representation of a mapped building element
-        
-    The MapBuildingElement class is the root class of any mapped
-    building element
+    internal_external: str(?)
+        internal or external space boundary (is sun exposed?)
     
-    Parameters
-    ----------
-    
-    parent : instance of MapSpaceBoundary()
-        MapBuildingElement receives an instance of MapSpaceBoundary, 
-        in order to know to what zone it belongs to.
-        
-    Attributes
-    ----------
-
-    mapped_building_elements : list of MapBuildingElements()
-        list of all building elements that form the space boundary
-
     area : float
         area of building element
 
@@ -482,7 +461,9 @@ class MapBuildingElement(MoObject):
         
               
         self.parent = parent
-        
+        self.sim_ref_id = None
+        self.type = None
+        self.internal_external = None
         self.area = None
         self.tilt = None
         self.orientation = None
@@ -494,6 +475,7 @@ class MapBuildingElement(MoObject):
         self.simmodel_normal_vector = None
 
         self.mapped_layer = []
+
         
 class MapMaterialLayer(object):
     """Representation of a mapped building element layer
