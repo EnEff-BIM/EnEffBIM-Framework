@@ -147,7 +147,7 @@ def return_mapped_project():
     
     '''Instantiate Valve 1 as MapComponent, add Properties, add connectors, add to thermal zone'''
     
-    m_tz2_sc_valve = return_mapped_component(m_tz2,"AixLib.Fluid.Actuators.Valves.SimpleValve","valve_tz1")
+    m_tz2_sc_valve = return_mapped_component(m_tz2,"AixLib.Fluid.Actuators.Valves.SimpleValve","valve_tz2")
     add_mapped_property(m_tz2_sc_valve, "Medium","Modelica.Media.Water.ConstantPropertyLiquidWater")
     add_mapped_property(m_tz2_sc_valve, "Kvs",1.4)
     

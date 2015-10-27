@@ -1,11 +1,11 @@
 
-%for comp in static_data.buildings[0].supply_components:
-${comp.target_name}
+%for key,comp in static_data.buildings[0].hvac_component_group.items():
+%for count in comp:
+${count.target_name}
+%endfor
 %endfor
 
-%for comp in static_data.buildings[0].thermal_zones[0].supply_components:
-${comp.target_name}
-%endfor
+
 
 %for con in static_data.connections:
 connect(${con.connector_a.parent.target_name}.${con.connector_a.name}, ${con.connector_b.parent.target_name}.${con.connector_b.name});
