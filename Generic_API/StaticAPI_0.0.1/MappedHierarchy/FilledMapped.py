@@ -94,7 +94,7 @@ def return_mapped_project():
      
     '''Add Pipe1, Pipe2, Boiler, Pump to the buildings components'''
     
-    m_bldg.supply_components = [m_bldg_sc_pipe1, m_bldg_sc_pipe2, m_bldg_sc_boiler, m_bldg_sc_pump]
+    
    
   
     '''Instantiate Radiator 1 MapComponent, add Properties, add connectors, add to thermal zone'''
@@ -128,7 +128,7 @@ def return_mapped_project():
     add_mapped_property(ctrl_v1, "yMin", 0)
     add_mapped_property(ctrl_v1, "yMax", 1)
            
-    m_tz1.supply_components = [m_tz1_sc_radiator, m_tz1_sc_valve]
+    
 
     '''Instantiate Radiator 2 MapComponent, add Properties, add connectors, add to thermal zone'''
     
@@ -161,7 +161,14 @@ def return_mapped_project():
     add_mapped_property(ctrl_v2, "yMin", 0)
     add_mapped_property(ctrl_v2, "yMax", 1)
 
-    m_tz2.supply_components = [m_tz2_sc_radiator,m_tz2_sc_valve]
+    m_bldg.hvac_component_group['HVAC_Hot_Water'] = [m_bldg_sc_pipe1, 
+                                m_bldg_sc_pipe2, 
+                                m_bldg_sc_boiler, 
+                                m_bldg_sc_pump, 
+                                m_tz1_sc_radiator, 
+                                m_tz2_sc_radiator,
+                                m_tz1_sc_valve,
+                                m_tz2_sc_valve ]
     
     '''Add all connections'''
     #FluidConnections

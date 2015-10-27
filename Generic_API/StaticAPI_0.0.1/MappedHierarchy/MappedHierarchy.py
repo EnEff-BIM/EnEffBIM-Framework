@@ -87,13 +87,11 @@ class MapProject(object):
         self.library_version = ""
         self.project_name = ""
         self.connections = []
-        self.connections_hard = []
-        self.systems = []
         
     def add_connection(self, connector_a, connector_b):
         self.connections.append(MapConnection(connector_a, connector_b))
 	
-    def create_system(self, target_location, target_name, connector):
+    def create_system(self, target_location, target_name, connector, bldg):
 
         map_sys = MapComponent(self)
         map_sys.target_location = target_location
@@ -102,9 +100,9 @@ class MapProject(object):
         for con in connector:
             map_sys.connectors.append(con)
 
-        self.systems.append(map_sys)
+        bldg.hvac_component_group['HVAC_Hot_Water'].append(map_sys)
         
-        return mapp_sys
+        return map_sys
         
     def create_connector(self, parent, name, type):
         
@@ -150,10 +148,10 @@ class MapBuilding(MoObject):
         building. The items of the list have to be an instance of
         the class "MapThermalZone".
         
-    supply_components : list of MappedModelicaComponents()
-        This is an *iterable* list containing all supply components (e.g. pump,
-        boiler, storage) of the building. The items of the list have to be an 
-        instance of the class "MappedModelicaComponent".
+    supply_components : dict
+        This is an dict with all HVAC groups. The Key is the HVAC Group name 
+        (e.g. HVAC_Hot_Water), the value is a list with *all* components in this
+        group. These are instances of "MapComponent".
     
     """
     
@@ -163,7 +161,7 @@ class MapBuilding(MoObject):
                 
         self.building_name = ""
         self.thermal_zones = []
-        self.supply_components = []
+        self.hvac_component_group = {}
              
 class MapThermalZone(MoObject):
     """Representation of a mapped thermal zone
@@ -189,13 +187,7 @@ class MapThermalZone(MoObject):
 
     space_boundaries : MapSpaceBoundaries()
         This is a instance of MapSpaceBoundaries.
-        
-    supply_components : list of MappedModelicaComponents()
-        This is an *iterable* list containing all supply components (e.g. 
-        radiator) of the thermal zone. The items of the list have to be an 
-        instance of the class "MapComponent".
-        
-    
+cd    
     """
     
     def __init__(self, parent):
@@ -205,8 +197,7 @@ class MapThermalZone(MoObject):
         
         self.zone_name = ""
         self.space_boundaries = []
-        self.supply_components = []
-		
+        
 class MapComponent(MoObject):
     """Representation of a mapped component
         
