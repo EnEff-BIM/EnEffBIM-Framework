@@ -35,3 +35,5 @@ __pycache__/
 #
 # Ignore PyCharm files
 .idea/
+#Ignore Spyder files
+.spyderproject

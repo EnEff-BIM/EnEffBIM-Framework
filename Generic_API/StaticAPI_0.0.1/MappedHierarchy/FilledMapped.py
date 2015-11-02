@@ -69,7 +69,6 @@ def return_mapped_project():
     pump_a = add_mapped_connector(m_bldg_sc_pump, "port_a", "Fluid")
     pump_b = add_mapped_connector(m_bldg_sc_pump, "port_b", "Fluid")
     pump_real = add_mapped_connector(m_bldg_sc_pump, "dp_in", "Real")
-    pump_heat = add_mapped_connector(m_bldg_sc_pump, "heatPort", "Heat")
     
     ctrl_pump = add_mapped_control(m_bldg_sc_pump, 'dp_const', pump_real)
     add_mapped_property(ctrl_pump, "k", 330.0)
@@ -175,7 +174,7 @@ def return_mapped_project():
     add_mapped_connections(m_prj, pipe1_b, valve1_a , "Fluid")
     add_mapped_connections(m_prj, valve1_b, rad1_a , "Fluid")
     add_mapped_connections(m_prj, rad1_b, valve2_a, "Fluid")
-    add_mapped_connections(m_prj, valve1_b, rad2_a , "Fluid")
+    add_mapped_connections(m_prj, valve2_b, rad2_a , "Fluid")
     add_mapped_connections(m_prj, rad2_b, pipe2_a, "Fluid")
     add_mapped_connections(m_prj, pipe2_b, pump_a , "Fluid")
     add_mapped_connections(m_prj, pump_b, boiler_a, "Fluid")
