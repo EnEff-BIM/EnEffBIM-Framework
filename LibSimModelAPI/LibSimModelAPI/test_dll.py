@@ -90,6 +90,13 @@ except AttributeError:
     _newclass = 0
 
 
+try:
+    import weakref
+    weakref_proxy = weakref.proxy
+except:
+    weakref_proxy = lambda x: x
+
+
 class SwigPyIterator(_object):
     __swig_setmethods__ = {}
     __setattr__ = lambda self, name, value: _swig_setattr(self, SwigPyIterator, name, value)
@@ -154,10 +161,379 @@ class SwigPyIterator(_object):
 SwigPyIterator_swigregister = _test_dll.SwigPyIterator_swigregister
 SwigPyIterator_swigregister(SwigPyIterator)
 
-class SimRoot(_object):
+class element_one(_object):
     __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, element_one, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, element_one, name)
+    __repr__ = _swig_repr
+    __swig_destroy__ = _test_dll.delete_element_one
+    __del__ = lambda self: None
+
+    def __init__(self, *args):
+        this = _test_dll.new_element_one(*args)
+        try:
+            self.this.append(this)
+        except:
+            self.this = this
+
+    def get(self, *args):
+        return _test_dll.element_one_get(self, *args)
+
+    def set(self, *args):
+        return _test_dll.element_one_set(self, *args)
+
+    def present(self):
+        return _test_dll.element_one_present(self)
+element_one_swigregister = _test_dll.element_one_swigregister
+element_one_swigregister(element_one)
+
+class element_optional(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, element_optional, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, element_optional, name)
+    __repr__ = _swig_repr
+    __swig_destroy__ = _test_dll.delete_element_optional
+    __del__ = lambda self: None
+
+    def __init__(self, *args):
+        this = _test_dll.new_element_optional(*args)
+        try:
+            self.this.append(this)
+        except:
+            self.this = this
+
+    def __deref__(self, *args):
+        return _test_dll.element_optional___deref__(self, *args)
+
+    def __ref__(self, *args):
+        return _test_dll.element_optional___ref__(self, *args)
+
+    def present(self):
+        return _test_dll.element_optional_present(self)
+
+    def get(self, *args):
+        return _test_dll.element_optional_get(self, *args)
+
+    def set(self, *args):
+        return _test_dll.element_optional_set(self, *args)
+
+    def reset(self):
+        return _test_dll.element_optional_reset(self)
+element_optional_swigregister = _test_dll.element_optional_swigregister
+element_optional_swigregister(element_optional)
+
+class element_sequence(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, element_sequence, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, element_sequence, name)
+    __repr__ = _swig_repr
+
+    def __init__(self, *args):
+        this = _test_dll.new_element_sequence(*args)
+        try:
+            self.this.append(this)
+        except:
+            self.this = this
+
+    def assign(self, n, x):
+        return _test_dll.element_sequence_assign(self, n, x)
+
+    def resize(self, *args):
+        return _test_dll.element_sequence_resize(self, *args)
+
+    def size(self):
+        return _test_dll.element_sequence_size(self)
+
+    def max_size(self):
+        return _test_dll.element_sequence_max_size(self)
+
+    def capacity(self):
+        return _test_dll.element_sequence_capacity(self)
+
+    def empty(self):
+        return _test_dll.element_sequence_empty(self)
+
+    def reserve(self, n):
+        return _test_dll.element_sequence_reserve(self, n)
+
+    def clear(self):
+        return _test_dll.element_sequence_clear(self)
+
+    def begin(self, *args):
+        return _test_dll.element_sequence_begin(self, *args)
+
+    def end(self, *args):
+        return _test_dll.element_sequence_end(self, *args)
+
+    def rbegin(self, *args):
+        return _test_dll.element_sequence_rbegin(self, *args)
+
+    def rend(self, *args):
+        return _test_dll.element_sequence_rend(self, *args)
+
+    def at(self, *args):
+        return _test_dll.element_sequence_at(self, *args)
+
+    def front(self, *args):
+        return _test_dll.element_sequence_front(self, *args)
+
+    def back(self, *args):
+        return _test_dll.element_sequence_back(self, *args)
+
+    def push_back(self, *args):
+        return _test_dll.element_sequence_push_back(self, *args)
+
+    def pop_back(self):
+        return _test_dll.element_sequence_pop_back(self)
+
+    def insert(self, *args):
+        return _test_dll.element_sequence_insert(self, *args)
+
+    def erase(self, *args):
+        return _test_dll.element_sequence_erase(self, *args)
+
+    def swap(self, x):
+        return _test_dll.element_sequence_swap(self, x)
+    __swig_destroy__ = _test_dll.delete_element_sequence
+    __del__ = lambda self: None
+element_sequence_swigregister = _test_dll.element_sequence_swigregister
+element_sequence_swigregister(element_sequence)
+
+class attribute_set_common(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, attribute_set_common, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, attribute_set_common, name)
+    __repr__ = _swig_repr
+
+    def __init__(self):
+        this = _test_dll.new_attribute_set_common()
+        try:
+            self.this.append(this)
+        except:
+            self.this = this
+    __swig_destroy__ = _test_dll.delete_attribute_set_common
+    __del__ = lambda self: None
+attribute_set_common_swigregister = _test_dll.attribute_set_common_swigregister
+attribute_set_common_swigregister(attribute_set_common)
+
+class flags(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, flags, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, flags, name)
+    __repr__ = _swig_repr
+    keep_dom = _test_dll.flags_keep_dom
+    own_dom = _test_dll.flags_own_dom
+    dont_validate = _test_dll.flags_dont_validate
+    extract_content = _test_dll.flags_extract_content
+    dont_initialize = _test_dll.flags_dont_initialize
+    no_xml_declaration = _test_dll.flags_no_xml_declaration
+    dont_pretty_print = _test_dll.flags_dont_pretty_print
+    base = _test_dll.flags_base
+
+    def __init__(self, x=0):
+        this = _test_dll.new_flags(x)
+        try:
+            self.this.append(this)
+        except:
+            self.this = this
+    __swig_destroy__ = _test_dll.delete_flags
+    __del__ = lambda self: None
+flags_swigregister = _test_dll.flags_swigregister
+flags_swigregister(flags)
+
+class content_order(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, content_order, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, content_order, name)
+    __repr__ = _swig_repr
+
+    def __init__(self, id, index=0):
+        this = _test_dll.new_content_order(id, index)
+        try:
+            self.this.append(this)
+        except:
+            self.this = this
+    __swig_setmethods__["id"] = _test_dll.content_order_id_set
+    __swig_getmethods__["id"] = _test_dll.content_order_id_get
+    if _newclass:
+        id = _swig_property(_test_dll.content_order_id_get, _test_dll.content_order_id_set)
+    __swig_setmethods__["index"] = _test_dll.content_order_index_set
+    __swig_getmethods__["index"] = _test_dll.content_order_index_get
+    if _newclass:
+        index = _swig_property(_test_dll.content_order_index_get, _test_dll.content_order_index_set)
+    __swig_destroy__ = _test_dll.delete_content_order
+    __del__ = lambda self: None
+content_order_swigregister = _test_dll.content_order_swigregister
+content_order_swigregister(content_order)
+
+
+def __eq__(*args):
+    return _test_dll.__eq__(*args)
+__eq__ = _test_dll.__eq__
+
+def __ne__(*args):
+    return _test_dll.__ne__(*args)
+__ne__ = _test_dll.__ne__
+
+def __lt__(arg1, arg2):
+    return _test_dll.__lt__(arg1, arg2)
+__lt__ = _test_dll.__lt__
+class identity(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, identity, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, identity, name)
+
+    def __init__(self, *args, **kwargs):
+        raise AttributeError("No constructor defined - class is abstract")
+    __repr__ = _swig_repr
+    __swig_destroy__ = _test_dll.delete_identity
+    __del__ = lambda self: None
+
+    def before(self, arg2):
+        return _test_dll.identity_before(self, arg2)
+
+    def throw_duplicate_id(self):
+        return _test_dll.identity_throw_duplicate_id(self)
+identity_swigregister = _test_dll.identity_swigregister
+identity_swigregister(identity)
+
+class _type(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, _type, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, _type, name)
+    __repr__ = _swig_repr
+    __swig_destroy__ = _test_dll.delete__type
+    __del__ = lambda self: None
+
+    def _clone(self, *args):
+        return _test_dll._type__clone(self, *args)
+
+    def __init__(self, *args):
+        this = _test_dll.new__type(*args)
+        try:
+            self.this.append(this)
+        except:
+            self.this = this
+
+    def dom_content(self, *args):
+        return _test_dll._type_dom_content(self, *args)
+
+    def dom_content_document(self, *args):
+        return _test_dll._type_dom_content_document(self, *args)
+
+    def null_content(self):
+        return _test_dll._type_null_content(self)
+
+    def _container(self, *args):
+        return _test_dll._type__container(self, *args)
+
+    def _root(self, *args):
+        return _test_dll._type__root(self, *args)
+
+    def _node(self, *args):
+        return _test_dll._type__node(self, *args)
+
+    def _register_id(self, i, t):
+        return _test_dll._type__register_id(self, i, t)
+
+    def _unregister_id(self, id):
+        return _test_dll._type__unregister_id(self, id)
+
+    def _lookup_id(self, id):
+        return _test_dll._type__lookup_id(self, id)
+_type_swigregister = _test_dll._type_swigregister
+_type_swigregister(_type)
+
+class schema_type(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, schema_type, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, schema_type, name)
+    __repr__ = _swig_repr
+    other = _test_dll.schema_type_other
+    double_ = _test_dll.schema_type_double_
+    decimal = _test_dll.schema_type_decimal
+
+    def __init__(self):
+        this = _test_dll.new_schema_type()
+        try:
+            self.this.append(this)
+        except:
+            self.this = this
+    __swig_destroy__ = _test_dll.delete_schema_type
+    __del__ = lambda self: None
+schema_type_swigregister = _test_dll.schema_type_swigregister
+schema_type_swigregister(schema_type)
+
+class sequence_common(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, sequence_common, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, sequence_common, name)
+    __repr__ = _swig_repr
+
+    def __init__(self, *args):
+        this = _test_dll.new_sequence_common(*args)
+        try:
+            self.this.append(this)
+        except:
+            self.this = this
+
+    def size(self):
+        return _test_dll.sequence_common_size(self)
+
+    def max_size(self):
+        return _test_dll.sequence_common_max_size(self)
+
+    def capacity(self):
+        return _test_dll.sequence_common_capacity(self)
+
+    def empty(self):
+        return _test_dll.sequence_common_empty(self)
+
+    def reserve(self, n):
+        return _test_dll.sequence_common_reserve(self, n)
+
+    def clear(self):
+        return _test_dll.sequence_common_clear(self)
+
+    def assign(self, n, x):
+        return _test_dll.sequence_common_assign(self, n, x)
+
+    def resize(self, n, x):
+        return _test_dll.sequence_common_resize(self, n, x)
+
+    def insert(self, p, n, x):
+        return _test_dll.sequence_common_insert(self, p, n, x)
+    __swig_setmethods__["container_"] = _test_dll.sequence_common_container__set
+    __swig_getmethods__["container_"] = _test_dll.sequence_common_container__get
+    if _newclass:
+        container_ = _swig_property(_test_dll.sequence_common_container__get, _test_dll.sequence_common_container__set)
+    __swig_setmethods__["v_"] = _test_dll.sequence_common_v__set
+    __swig_getmethods__["v_"] = _test_dll.sequence_common_v__get
+    if _newclass:
+        v_ = _swig_property(_test_dll.sequence_common_v__get, _test_dll.sequence_common_v__set)
+    __swig_destroy__ = _test_dll.delete_sequence_common
+    __del__ = lambda self: None
+sequence_common_swigregister = _test_dll.sequence_common_swigregister
+sequence_common_swigregister(sequence_common)
+
+class SimRoot(_type):
+    __swig_setmethods__ = {}
+    for _s in [_type]:
+        __swig_setmethods__.update(getattr(_s, '__swig_setmethods__', {}))
     __setattr__ = lambda self, name, value: _swig_setattr(self, SimRoot, name, value)
     __swig_getmethods__ = {}
+    for _s in [_type]:
+        __swig_getmethods__.update(getattr(_s, '__swig_getmethods__', {}))
     __getattr__ = lambda self, name: _swig_getattr(self, SimRoot, name)
     __repr__ = _swig_repr
 
@@ -483,10 +859,14 @@ class SimBuilding_Building_Default(SimBuilding_Building):
 SimBuilding_Building_Default_swigregister = _test_dll.SimBuilding_Building_Default_swigregister
 SimBuilding_Building_Default_swigregister(SimBuilding_Building_Default)
 
-class SimModel(_object):
+class SimModel(_type):
     __swig_setmethods__ = {}
+    for _s in [_type]:
+        __swig_setmethods__.update(getattr(_s, '__swig_setmethods__', {}))
     __setattr__ = lambda self, name, value: _swig_setattr(self, SimModel, name, value)
     __swig_getmethods__ = {}
+    for _s in [_type]:
+        __swig_getmethods__.update(getattr(_s, '__swig_getmethods__', {}))
     __getattr__ = lambda self, name: _swig_getattr(self, SimModel, name)
     __repr__ = _swig_repr
 
@@ -511,6 +891,266 @@ SimModel_swigregister(SimModel)
 def SimModel_(*args):
     return _test_dll.SimModel_(*args)
 SimModel_ = _test_dll.SimModel_
+class SimBuilding_Building_DefaultVector(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, SimBuilding_Building_DefaultVector, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, SimBuilding_Building_DefaultVector, name)
+    __repr__ = _swig_repr
+
+    def iterator(self):
+        return _test_dll.SimBuilding_Building_DefaultVector_iterator(self)
+    def __iter__(self):
+        return self.iterator()
+
+    def __nonzero__(self):
+        return _test_dll.SimBuilding_Building_DefaultVector___nonzero__(self)
+
+    def __bool__(self):
+        return _test_dll.SimBuilding_Building_DefaultVector___bool__(self)
+
+    def __len__(self):
+        return _test_dll.SimBuilding_Building_DefaultVector___len__(self)
+
+    def pop(self):
+        return _test_dll.SimBuilding_Building_DefaultVector_pop(self)
+
+    def __getslice__(self, i, j):
+        return _test_dll.SimBuilding_Building_DefaultVector___getslice__(self, i, j)
+
+    def __setslice__(self, *args):
+        return _test_dll.SimBuilding_Building_DefaultVector___setslice__(self, *args)
+
+    def __delslice__(self, i, j):
+        return _test_dll.SimBuilding_Building_DefaultVector___delslice__(self, i, j)
+
+    def __delitem__(self, *args):
+        return _test_dll.SimBuilding_Building_DefaultVector___delitem__(self, *args)
+
+    def __getitem__(self, *args):
+        return _test_dll.SimBuilding_Building_DefaultVector___getitem__(self, *args)
+
+    def __setitem__(self, *args):
+        return _test_dll.SimBuilding_Building_DefaultVector___setitem__(self, *args)
+
+    def append(self, x):
+        return _test_dll.SimBuilding_Building_DefaultVector_append(self, x)
+
+    def empty(self):
+        return _test_dll.SimBuilding_Building_DefaultVector_empty(self)
+
+    def size(self):
+        return _test_dll.SimBuilding_Building_DefaultVector_size(self)
+
+    def clear(self):
+        return _test_dll.SimBuilding_Building_DefaultVector_clear(self)
+
+    def swap(self, v):
+        return _test_dll.SimBuilding_Building_DefaultVector_swap(self, v)
+
+    def get_allocator(self):
+        return _test_dll.SimBuilding_Building_DefaultVector_get_allocator(self)
+
+    def begin(self):
+        return _test_dll.SimBuilding_Building_DefaultVector_begin(self)
+
+    def end(self):
+        return _test_dll.SimBuilding_Building_DefaultVector_end(self)
+
+    def rbegin(self):
+        return _test_dll.SimBuilding_Building_DefaultVector_rbegin(self)
+
+    def rend(self):
+        return _test_dll.SimBuilding_Building_DefaultVector_rend(self)
+
+    def pop_back(self):
+        return _test_dll.SimBuilding_Building_DefaultVector_pop_back(self)
+
+    def erase(self, *args):
+        return _test_dll.SimBuilding_Building_DefaultVector_erase(self, *args)
+
+    def __init__(self, *args):
+        this = _test_dll.new_SimBuilding_Building_DefaultVector(*args)
+        try:
+            self.this.append(this)
+        except:
+            self.this = this
+
+    def push_back(self, x):
+        return _test_dll.SimBuilding_Building_DefaultVector_push_back(self, x)
+
+    def front(self):
+        return _test_dll.SimBuilding_Building_DefaultVector_front(self)
+
+    def back(self):
+        return _test_dll.SimBuilding_Building_DefaultVector_back(self)
+
+    def assign(self, n, x):
+        return _test_dll.SimBuilding_Building_DefaultVector_assign(self, n, x)
+
+    def resize(self, *args):
+        return _test_dll.SimBuilding_Building_DefaultVector_resize(self, *args)
+
+    def insert(self, *args):
+        return _test_dll.SimBuilding_Building_DefaultVector_insert(self, *args)
+
+    def reserve(self, n):
+        return _test_dll.SimBuilding_Building_DefaultVector_reserve(self, n)
+
+    def capacity(self):
+        return _test_dll.SimBuilding_Building_DefaultVector_capacity(self)
+    __swig_destroy__ = _test_dll.delete_SimBuilding_Building_DefaultVector
+    __del__ = lambda self: None
+SimBuilding_Building_DefaultVector_swigregister = _test_dll.SimBuilding_Building_DefaultVector_swigregister
+SimBuilding_Building_DefaultVector_swigregister(SimBuilding_Building_DefaultVector)
+
+class fundamental_pBool(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, fundamental_pBool, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, fundamental_pBool, name)
+    __repr__ = _swig_repr
+    r = _test_dll.fundamental_pBool_r
+
+    def __init__(self):
+        this = _test_dll.new_fundamental_pBool()
+        try:
+            self.this.append(this)
+        except:
+            self.this = this
+    __swig_destroy__ = _test_dll.delete_fundamental_pBool
+    __del__ = lambda self: None
+fundamental_pBool_swigregister = _test_dll.fundamental_pBool_swigregister
+fundamental_pBool_swigregister(fundamental_pBool)
+
+class SimBuilding_Building_Default_sequence(sequence_common):
+    __swig_setmethods__ = {}
+    for _s in [sequence_common]:
+        __swig_setmethods__.update(getattr(_s, '__swig_setmethods__', {}))
+    __setattr__ = lambda self, name, value: _swig_setattr(self, SimBuilding_Building_Default_sequence, name, value)
+    __swig_getmethods__ = {}
+    for _s in [sequence_common]:
+        __swig_getmethods__.update(getattr(_s, '__swig_getmethods__', {}))
+    __getattr__ = lambda self, name: _swig_getattr(self, SimBuilding_Building_Default_sequence, name)
+    __repr__ = _swig_repr
+
+    def __init__(self, *args):
+        this = _test_dll.new_SimBuilding_Building_Default_sequence(*args)
+        try:
+            self.this.append(this)
+        except:
+            self.this = this
+
+    def assign(self, n, x):
+        return _test_dll.SimBuilding_Building_Default_sequence_assign(self, n, x)
+
+    def begin(self, *args):
+        return _test_dll.SimBuilding_Building_Default_sequence_begin(self, *args)
+
+    def end(self, *args):
+        return _test_dll.SimBuilding_Building_Default_sequence_end(self, *args)
+
+    def rbegin(self, *args):
+        return _test_dll.SimBuilding_Building_Default_sequence_rbegin(self, *args)
+
+    def rend(self, *args):
+        return _test_dll.SimBuilding_Building_Default_sequence_rend(self, *args)
+
+    def at(self, *args):
+        return _test_dll.SimBuilding_Building_Default_sequence_at(self, *args)
+
+    def front(self, *args):
+        return _test_dll.SimBuilding_Building_Default_sequence_front(self, *args)
+
+    def back(self, *args):
+        return _test_dll.SimBuilding_Building_Default_sequence_back(self, *args)
+
+    def push_back(self, *args):
+        return _test_dll.SimBuilding_Building_Default_sequence_push_back(self, *args)
+
+    def pop_back(self):
+        return _test_dll.SimBuilding_Building_Default_sequence_pop_back(self)
+
+    def detach_back(self, pop=True):
+        return _test_dll.SimBuilding_Building_Default_sequence_detach_back(self, pop)
+
+    def insert(self, *args):
+        return _test_dll.SimBuilding_Building_Default_sequence_insert(self, *args)
+
+    def erase(self, *args):
+        return _test_dll.SimBuilding_Building_Default_sequence_erase(self, *args)
+
+    def detach(self, position, r, erase=True):
+        return _test_dll.SimBuilding_Building_Default_sequence_detach(self, position, r, erase)
+
+    def swap(self, x):
+        return _test_dll.SimBuilding_Building_Default_sequence_swap(self, x)
+    __swig_destroy__ = _test_dll.delete_SimBuilding_Building_Default_sequence
+    __del__ = lambda self: None
+SimBuilding_Building_Default_sequence_swigregister = _test_dll.SimBuilding_Building_Default_sequence_swigregister
+SimBuilding_Building_Default_sequence_swigregister(SimBuilding_Building_Default_sequence)
+
+class SimBuilding_Building_Default_sequence1(SimBuilding_Building_DefaultVector):
+    __swig_setmethods__ = {}
+    for _s in [SimBuilding_Building_DefaultVector]:
+        __swig_setmethods__.update(getattr(_s, '__swig_setmethods__', {}))
+    __setattr__ = lambda self, name, value: _swig_setattr(self, SimBuilding_Building_Default_sequence1, name, value)
+    __swig_getmethods__ = {}
+    for _s in [SimBuilding_Building_DefaultVector]:
+        __swig_getmethods__.update(getattr(_s, '__swig_getmethods__', {}))
+    __getattr__ = lambda self, name: _swig_getattr(self, SimBuilding_Building_Default_sequence1, name)
+    __repr__ = _swig_repr
+
+    def __init__(self, *args):
+        this = _test_dll.new_SimBuilding_Building_Default_sequence1(*args)
+        try:
+            self.this.append(this)
+        except:
+            self.this = this
+    __swig_destroy__ = _test_dll.delete_SimBuilding_Building_Default_sequence1
+    __del__ = lambda self: None
+SimBuilding_Building_Default_sequence1_swigregister = _test_dll.SimBuilding_Building_Default_sequence1_swigregister
+SimBuilding_Building_Default_sequence1_swigregister(SimBuilding_Building_Default_sequence1)
+
+class BuildingHeight_optional(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, BuildingHeight_optional, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, BuildingHeight_optional, name)
+    __repr__ = _swig_repr
+
+    def __init__(self, *args):
+        this = _test_dll.new_BuildingHeight_optional(*args)
+        try:
+            self.this.append(this)
+        except:
+            self.this = this
+
+    def __deref__(self, *args):
+        return _test_dll.BuildingHeight_optional___deref__(self, *args)
+
+    def __ref__(self, *args):
+        return _test_dll.BuildingHeight_optional___ref__(self, *args)
+
+    def present(self):
+        return _test_dll.BuildingHeight_optional_present(self)
+
+    def get(self, *args):
+        return _test_dll.BuildingHeight_optional_get(self, *args)
+
+    def getV(self):
+        return _test_dll.BuildingHeight_optional_getV(self)
+
+    def set(self, y):
+        return _test_dll.BuildingHeight_optional_set(self, y)
+
+    def reset(self):
+        return _test_dll.BuildingHeight_optional_reset(self)
+    __swig_destroy__ = _test_dll.delete_BuildingHeight_optional
+    __del__ = lambda self: None
+BuildingHeight_optional_swigregister = _test_dll.BuildingHeight_optional_swigregister
+BuildingHeight_optional_swigregister(BuildingHeight_optional)
+
 # This file is compatible with both classic and new-style classes.
 
 
