@@ -15,7 +15,9 @@ print("\n")
 
 # access the 1st elment saving in the list
 sim_build = sim_build_seq.front()
-# the iteration operator [] of accessing list element is under developing (E.g., sim_build[0])
+# the iteration operator [] of accessing list element is under developing (E.g., sim_build[0]). We need further development.
+# Reason: in C++ side, the STL container used to save the class element does not support [] operator.
+# we will try to provide such convinent operator in Python API.
 # right now, we can only call the function, like front() to access the 1st element,
 # end() to the last element or at() to access internal elements at given positions.
 # here at() needs an position index id given as input. The data type of the id in Python
