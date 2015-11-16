@@ -508,7 +508,7 @@ class MapMaterialLayer(object):
         self.material = None
         self.thickness = None
 
-class MapMaterialLayer(object):
+class MapMaterial(object):
     """Representation of a mapped material
         
     The MapMaterialLayer class is the representation of a material

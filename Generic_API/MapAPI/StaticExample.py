@@ -1,4 +1,4 @@
-from MappedHierarchy.MappedHierarchy import *
+from MapHierarchy.MapHierarchy import *
 '''
 StaticAPI Use Case Scenario:
 
@@ -237,6 +237,6 @@ def add_mapped_control(parent, strategy, ctrl_con):
     mapped_ctrl = MapControl(parent)
     mapped_ctrl.control_strategy = strategy
     mapped_ctrl.control_connector = ctrl_con
-    parent.mapped_control = mapped_ctrl
+    parent.map_control = mapped_ctrl
     
     return mapped_ctrl

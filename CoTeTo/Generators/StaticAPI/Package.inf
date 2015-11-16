@@ -1,7 +1,7 @@
 [GENERATOR]
-name = StaticAPI	
+name = StaticAPIExample	
 version = 0.0.1
-description = Static API
+description = Static API to test the MapHierarchy
 author = EnEff-BIM team
 
 [REQUIRES]
