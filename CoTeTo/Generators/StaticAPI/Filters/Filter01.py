@@ -8,13 +8,11 @@ def filter01(filter, *args, **kwargs):
     static_data = filter['static_data']
 
     for bldg_count in static_data.buildings:
-        print("HALLO")
+        
         for comp_key, comp_value in bldg_count.hvac_component_group.items():
             for comp_count in comp_value:
-                print(comp_count)
-                print(comp_count.map_control)
                 if comp_count.map_control != None:
-                    print("HALLLLLLLO")
+                    
                     if comp_count.map_control.control_strategy == "T_set_const" or \
                        comp_count.map_control.control_strategy == "dp_const":
                         
@@ -25,7 +23,7 @@ def filter01(filter, *args, **kwargs):
                         con.parent = sys
                         static_data.add_connection(con, comp_count.map_control.control_connector)
                     elif comp_count.map_control == "room_T_PID1":
-                        print("MAP CONTROL")
+                        
                         con = static_data.create_connector(None, "y", "Real")
                         sys = static_data.create_system("Modelica.Blocks.Sources.Constant", (comp_zone_count.map_control.control_strategy+"_T_set"), [con], bldg_count)
                         for para in comp_count.map_control.parameters:
