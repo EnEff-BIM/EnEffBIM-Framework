@@ -7,9 +7,9 @@ Created on Mon Nov 23 12:00:26 2015
 
 import os
 import sys
+import tools.utilities as ut
 
-modulePath = "D:\\GIT\\EnEffBIM-Framework\\Generic_API\\MapAPI\\MapHierarchy"
-print(modulePath)
+modulePath = ut.get_full_path("Generic_API/MapAPI/MapHierarchy")
 
 os.environ['PATH'] = ';'.join([modulePath, os.environ['PATH']])
 # add modulePath to Python Path
@@ -34,11 +34,7 @@ class Radiator(MapHierarchy.MapComponent):
         
     def connect_tz_AixLib(self, thermal_zone):
         
-        self.add_connection(self.conv_port,
-                            thermal_zone.convPort)
-        
-        
-        
-        
-        
-Radiator().connect_tz_AixLib()
+        self.add_connection(self.convPort,
+                            thermal_zone.internalGainsConv)
+        self.add_connection(self.radPort,
+                            thermal_zone.internalGainsRad)

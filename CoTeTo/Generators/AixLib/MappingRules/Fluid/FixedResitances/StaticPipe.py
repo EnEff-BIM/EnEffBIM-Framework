@@ -8,13 +8,13 @@ Created on Mon Nov 23 12:00:26 2015
 import os
 import sys
 
-modulePath = "D:\\GIT\\EnEffBIM-Framework\\Generic_API\\MapAPI\\MapHierarchy"
-print(modulePath)
+import tools.utilities as ut
+
+modulePath = ut.get_full_path("Generic_API/MapAPI/MapHierarchy")
 
 os.environ['PATH'] = ';'.join([modulePath, os.environ['PATH']])
 # add modulePath to Python Path
 sys.path.append(modulePath)
-
 
 import MapHierarchy 
 
