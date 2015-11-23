@@ -382,12 +382,13 @@ class MapControl(object):
     control_strategy : str (library specific codelist)
         Probably a code list of possible control strategies
         
-    parameters : list of MapProperty or MapRecord 
-        This is an *iterable* list containing all records and properties of
-        the MapControl
+    control_objects : list of MoObject
+        This is an *iterable* list containing all MoObjects of the control 
+        strategy
         
     control_connector : instance of a MapConnector()
-        MapConnector to know where the control is mapped to
+        MapConnector of one of the control_objects that provides the output
+        control variable
 
     """
     
@@ -395,7 +396,7 @@ class MapControl(object):
         
         self.parent = parent
         self.control_strategy = ""
-        self.parameters = []
+        self.control_objects = None
         self.control_connector = None
         
 class MapProperty(object):
