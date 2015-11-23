@@ -46,7 +46,22 @@ class MoObject(object):
         self.parameters = []
         self.connectors = []
         self.sim_ref_id = []
+     
+    def apply_component_mapping(self,
+                                target_location,
+                                target_name,
+                                sim_ref_id):
+                                    
+        self.target_location = target_location
+        self.target_name = target_name
+        self.sim_ref_id.append(sim_ref_id)
         
+    def apply_property_mapping(self,
+                               name,
+                               value):
+                               
+         self.parameters.append(MapProperty(name, value))
+
     def add_connector(self, name, type, dimension = 1):
         
         connector = MapConnector(self)
@@ -66,15 +81,20 @@ class MoObject(object):
         self.parameters.append(mapped_prop)
         
     def add_connection(self,
+                       project,
                        input_connector,
                        output_connector):
         """maybe it would be better to define this on project level? But how?
         """
-        mapped_con = MapConnection(input_connector, output_connector)
+        
 
         if input_connector.type == output_connector.type and \
             input_connector.dimension == output_connector.dimension:
+
+            mapped_con = MapConnection(input_connector, output_connector)
             mapped_con.type = input_connector.type
+            project.connections.append(mapped_con)
+            
         else:
              raise TypeError("Input/Ouput connector type or dimension" +
                              "do not match")
@@ -268,6 +288,11 @@ class MapConnection(object):
         The output component, with the parent/child relationshsip we can access
         the component
 
+    index_a : index of connector_a
+        default is None, only appicable if MapConnector has an index
+        
+    index_b : index of connector_b
+        default is None, only appicable if MapConnector has an index
 
     Attributes
     ----------
@@ -285,10 +310,15 @@ class MapConnection(object):
 
     """
     
-    def __init__(self, connector_a,connector_b):
+    def __init__(self, connector_a,
+                 connector_b,
+                 index_a = None,
+                 index_b = None):
         
         self.connector_a = connector_a
         self.connector_b = connector_b
+        self.index_a = index_a
+        self.index_b = index_b
         self.type = ""
         self.sim_ref_id = None
 		

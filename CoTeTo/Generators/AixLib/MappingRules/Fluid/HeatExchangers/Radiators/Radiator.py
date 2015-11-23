@@ -32,9 +32,21 @@ class Radiator(MapHierarchy.MapComponent):
         self.radPort = self.add_connector("radPort", "HeatPort")
         
         
-    def connect_tz_AixLib(self, thermal_zone):
-        
-        self.add_connection(self.convPort,
+    def connect_tz_AixLib(self, project, thermal_zone):
+        """connect AixLib Radiator to AixLib ThermalZone"""
+        self.add_connection(project,
+                            self.convPort,
                             thermal_zone.internalGainsConv)
-        self.add_connection(self.radPort,
+        self.add_connection(project,
+                            self.radPort,
                             thermal_zone.internalGainsRad)
+                            
+    def connect_tz_Buildings(self, project, thermal_zone):
+        """just a code example, will not work"""
+        
+        self.add_connection(project,
+                            self.convPort,
+                            thermal_zone.heaPorAir)
+        self.add_connection(project,
+                            self.radPort,
+                            thermal_zone.heaPorRad)

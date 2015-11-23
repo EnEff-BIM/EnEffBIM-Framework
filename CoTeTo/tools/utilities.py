@@ -21,14 +21,13 @@ def get_full_path(rel_path):
     Returns
     ----------
     full_path : str
-
+        Full path, e.g. for use of imports from Generic_API folder
     '''
 
     directory = os.path.dirname(__file__)
-    
     src = "\\EnEffBIM-Framework"
     last_index = directory.rfind(src)
     first_path = directory[:last_index]+"\\EnEffBIM-Framework\\"
     full_path = os.path.join(first_path, rel_path)
-    print(full_path)
+    
     return full_path
