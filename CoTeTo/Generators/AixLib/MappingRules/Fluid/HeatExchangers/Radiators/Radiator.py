@@ -26,13 +26,18 @@ class Radiator(MapHierarchy.MapComponent):
         
         super(Radiator, self).__init__(parent)
 
-        self.add_connector("port_a", "FluidPort")
-        self.add_connector("port_b", "FluidPort")
-        self.add_connector("convPort", "HeatPort")
-        self.add_connector("radPort", "HeatPort")
+        self.port_a = self.add_connector("port_a", "FluidPort")
+        self.port_b = self.add_connector("port_b", "FluidPort")
+        self.convPort = self.add_connector("convPort", "HeatPort")
+        self.radPort = self.add_connector("radPort", "HeatPort")
         
         
-    def connect_tz_AixLib(self):
+    def connect_tz_AixLib(self, thermal_zone):
+        
+        self.add_connection(self.conv_port,
+                            thermal_zone.convPort)
+        
+        
         
         
         

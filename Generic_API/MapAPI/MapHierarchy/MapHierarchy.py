@@ -47,13 +47,15 @@ class MoObject(object):
         self.connectors = []
         self.sim_ref_id = []
         
-    def add_connector(self, name, type):
+    def add_connector(self, name, type, dimension = 1):
         
         connector = MapConnector(self)
         connector.name = name
         connector.type = type
-        
+        connector.dimension = dimension
         self.connectors.append(connector)
+        
+        return connector
         
     def add_property(self, name, value):
     
@@ -70,10 +72,12 @@ class MoObject(object):
         """
         mapped_con = MapConnection(input_connector, output_connector)
 
-        if input_connector.type == output_connector.type:
+        if input_connector.type == output_connector.type and \
+            input_connector.dimension == output_connector.dimension:
             mapped_con.type = input_connector.type
         else:
-             raise TypeError("Input/Ouput connector type does not match")
+             raise TypeError("Input/Ouput connector type or dimension" +
+                             "do not match")
 
         
 class MapProject(object):
@@ -263,7 +267,8 @@ class MapConnection(object):
     connector_b : instance of a MapConnector()
         The output component, with the parent/child relationshsip we can access
         the component
-        
+
+
     Attributes
     ----------
        
@@ -312,6 +317,9 @@ class MapConnector(object):
         - Boolean
         - HeatPort
         - ...
+
+    dimension : int
+        dimension of the Modelica connector (default = 1)     
         
     sim_ref_id : str
         refID of SimModel for the corresponding distributionPort
@@ -323,6 +331,7 @@ class MapConnector(object):
         self.parent = parent
         self.name = ""
         self.type = ""
+        self.dimension = 1
         self.sim_ref_id = None
 		
         
