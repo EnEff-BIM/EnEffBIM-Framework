@@ -30,3 +30,10 @@ class Radiator(MapHierarchy.MapComponent):
         self.add_connector("port_b", "FluidPort")
         self.add_connector("convPort", "HeatPort")
         self.add_connector("radPort", "HeatPort")
+        
+        
+    def connect_tz_AixLib(self):
+        
+        
+        
+Radiator().connect_tz_AixLib()

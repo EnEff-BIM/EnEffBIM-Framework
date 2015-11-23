@@ -55,14 +55,27 @@ class MoObject(object):
         
         self.connectors.append(connector)
         
-    def app_property(self, name, value):
+    def add_property(self, name, value):
     
         mapped_prop = MapProperty(self)
         mapped_prop.name = name
         mapped_prop.value = value
         
         self.parameters.append(mapped_prop)
+        
+    def add_connection(self,
+                       input_connector,
+                       output_connector):
+        """maybe it would be better to define this on project level? But how?
+        """
+        mapped_con = MapConnection(input_connector, output_connector)
 
+        if input_connector.type == output_connector.type:
+            mapped_con.type = input_connector.type
+        else:
+             raise TypeError("Input/Ouput connector type does not match")
+
+        
 class MapProject(object):
     """Root Class for each mapped data information
         
@@ -203,7 +216,7 @@ class MapThermalZone(MoObject):
 
     space_boundaries : MapSpaceBoundaries()
         This is a instance of MapSpaceBoundaries.
-cd    
+
     """
     
     def __init__(self, parent):
