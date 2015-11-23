@@ -37,7 +37,7 @@ class MoObject(object):
 
     """
     
-    def __init__(self, parent):
+    def __init__(self, parent=None):
         
         self.parent = parent
         
@@ -46,6 +46,22 @@ class MoObject(object):
         self.parameters = []
         self.connectors = []
         self.sim_ref_id = []
+        
+    def add_connector(self, name, type):
+        
+        connector = MapConnector(self)
+        connector.name = name
+        connector.type = type
+        
+        self.connectors.append(connector)
+        
+    def app_property(self, name, value):
+    
+        mapped_prop = MapProperty(self)
+        mapped_prop.name = name
+        mapped_prop.value = value
+        
+        self.parameters.append(mapped_prop)
 
 class MapProject(object):
     """Root Class for each mapped data information
@@ -211,7 +227,7 @@ class MapComponent(MoObject):
         This is an instance of MapControl()
     """
     
-    def __init__(self, parent):
+    def __init__(self, parent=None):
         
         super(MapComponent, self).__init__(parent)
 
