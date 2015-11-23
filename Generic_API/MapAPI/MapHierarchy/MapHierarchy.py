@@ -51,19 +51,15 @@ class MoObject(object):
                                 target_location,
                                 target_name,
                                 sim_ref_id):
-                                    
+        """once libSimModel API is finished, with this function we can add the
+        information we get from the MappingRules to MapHierarchy for components
+        """
         self.target_location = target_location
         self.target_name = target_name
         self.sim_ref_id.append(sim_ref_id)
         
-    def apply_property_mapping(self,
-                               name,
-                               value):
-                               
-         self.parameters.append(MapProperty(name, value))
-
     def add_connector(self, name, type, dimension = 1):
-        
+        """This adds a MapConnector to the MoObject"""
         connector = MapConnector(self)
         connector.name = name
         connector.type = type
@@ -73,7 +69,8 @@ class MoObject(object):
         return connector
         
     def add_property(self, name, value):
-    
+        """This adds a Property to the MoObject, this can be done by applying
+        the mapping"""
         mapped_prop = MapProperty(self)
         mapped_prop.name = name
         mapped_prop.value = value
@@ -84,8 +81,8 @@ class MoObject(object):
                        project,
                        input_connector,
                        output_connector):
-        """maybe it would be better to define this on project level? But how?
-        """
+        """This connects the MoObject to another connector, maybe this would
+        fit better in MapProject, but function call could get strange"""
         
 
         if input_connector.type == output_connector.type and \
