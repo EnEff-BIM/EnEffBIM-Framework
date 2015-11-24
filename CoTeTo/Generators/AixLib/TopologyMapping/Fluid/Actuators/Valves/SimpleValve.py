@@ -21,15 +21,15 @@ import MapHierarchy
 class SimpleValve(MapHierarchy.MapComponent):
     """Representation of AixLib.Fluid.Actuators.Valves.SimpleValve
     """
-    
+
     def __init__(self, parent=None):
-        
+
         super(SimpleValve, self).__init__(parent)
 
         self.port_a = self.add_connector("port_a", "FluidPort")
         self.port_b = self.add_connector("port_b", "FluidPort")
         self.opening = self.add_connector("opening", "RealInput")
-        
+
     def ctrl_P_room(self,  project, thermal_zone, t, k, yMax=1, yMin=0):
         """adds a Pcontroller to valve, works with AixLib components
         room temperature is control variable
@@ -38,7 +38,7 @@ class SimpleValve(MapHierarchy.MapComponent):
         yMax maximum output 
         yMin minimum output
         """
-        
+
         self.map_control = MapHierarchy.MapControl(self)
         """constant, define Template for often used components"""
         self.map_control.control_objects.append(MapHierarchy.MoObject(self))
@@ -72,8 +72,8 @@ class SimpleValve(MapHierarchy.MapComponent):
                                                                "RealInput")
         u_m = self.map_control.control_objects[-1].add_connector("u_m",
                                                                "RealInput")
-                                                               
-        
+                                  
+
         self.add_connection(project, const_y, u_s)
         self.add_connection(project, port, thermal_zone.internalGainsConv)
         self.add_connection(project, T, u_m)
