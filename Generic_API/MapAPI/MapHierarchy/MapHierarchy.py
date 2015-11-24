@@ -11,6 +11,10 @@ class MoObject(object):
     parent : instance of a Map class
         MapComponent receives any mapped class (MapBuilding etc.)
         
+    project : instance of MapProject()
+        MapProject as a "root" parent to have control over the connections in 
+        the overall model
+        
     Attributes
     ----------
     
@@ -37,10 +41,10 @@ class MoObject(object):
 
     """
     
-    def __init__(self, parent=None):
+    def __init__(self, parent=None, project=None):
         
         self.parent = parent
-        
+        self.project = project
         self.target_location = None
         self.target_name = None
         self.parameters = []
@@ -78,7 +82,6 @@ class MoObject(object):
         self.parameters.append(mapped_prop)
         
     def add_connection(self,
-                       project,
                        input_connector,
                        output_connector):
         """This connects the MoObject to another connector, maybe this would
@@ -90,7 +93,7 @@ class MoObject(object):
 
             mapped_con = MapConnection(input_connector, output_connector)
             mapped_con.type = input_connector.type
-            project.connections.append(mapped_con)
+            self.project.connections.append(mapped_con)
             
         else:
              raise TypeError("Input/Ouput connector type or dimension" +
@@ -137,38 +140,7 @@ class MapProject(object):
         self.library_version = ""
         self.project_name = ""
         self.connections = []
-        
-    def add_connection(self, connector_a, connector_b):
-        self.connections.append(MapConnection(connector_a, connector_b))
-	
-    def create_system(self, target_location, target_name, connector, bldg):
-
-        map_sys = MapComponent(self)
-        map_sys.target_location = target_location
-        map_sys.target_name = target_name
-        
-        for con in connector:
-            map_sys.connectors.append(con)
-
-        bldg.hvac_component_group['HVAC_Hot_Water'].append(map_sys)
-        
-        return map_sys
-        
-    def create_connector(self, parent, name, type):
-        
-        connector = MapConnector(parent)
-        connector.name = name
-        connector.type = type
-        
-        return connector
-    
-    def create_mapped_property(self, parent, name, value):
-    
-        map_prop = MapProperty(parent)
-        map_prop.name = name
-        map_prop.value = value
-        
-        parent.parameters.append(map_prop)
+        	
     	
 class MapBuilding(MoObject):
     """Representation of a mapped building
