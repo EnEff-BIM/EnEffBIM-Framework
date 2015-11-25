@@ -30,8 +30,11 @@ class ThermalZone(MapHierarchy.MoObject):
                                                     "HeatPort")
         self.internalGainsRad = self.add_connector("internalGainsRad", 
                                                     "HeatPort")
-        self.add_connector("port_b", "FluidPort")
-        self.add_connector("infiltrationTemperature", "RealInput")
-        self.add_connector("infiltrationRate", "RealInput")
-        self.add_connector("internalGains", "RealInput", dimension = 3)
-        self.add_connector("solarRad_in", "SolarRad_in ")
+        self.infiltrationTemperature = self.add_connector(
+                                        "infiltrationTemperature",
+                                        "RealInput")
+        self.infiltrationRate = self.add_connector("infiltrationRate",
+                                                   "RealInput")
+        self.internalGains = self.add_connector("internalGains",
+                                                "RealInput", dimension = 3)
+        self.solarRad_in = self.add_connector("solarRad_in", "SolarRad_in ")

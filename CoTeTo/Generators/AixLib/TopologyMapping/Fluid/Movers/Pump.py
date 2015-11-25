@@ -22,9 +22,9 @@ class Pump(MapHierarchy.MapComponent):
     """Representation of AixLib.Fluid.Movers.Pump
     """
     
-    def __init__(self, parent=None):
+    def __init__(self, parent, project):
         
-        super(Pump, self).__init__(parent)
+        super(Pump, self).__init__(parent, project)
 
         self.port_a = self.add_connector("port_a", "FluidPort")
         self.port_b = self.add_connector("port_b", "FluidPort")
@@ -33,9 +33,9 @@ class Pump(MapHierarchy.MapComponent):
         """automatically instantiate an expansion vessel to pump"""
         self.con_expansion_vessel("project", 0.01)
         
-    def ctrl_switching_night(self, project, width, period, startTime):
+    def ctrl_switching_night(self, width, period, startTime):
         """adds a boolean pulse to the boiler for switching the night mode"""
-        
+
         self.map_control = MapHierarchy.MapControl(self)
         self.map_control.control_objects.append(MapHierarchy.MoObject(self))
         self.map_control.control_objects[-1].target_location = \
@@ -47,16 +47,18 @@ class Pump(MapHierarchy.MapComponent):
                                                           startTime)
         y = self.map_control.control_objects[-1].add_connector("y",
                                                                "BooleanOutput")
-        project.systems.append(self.map_control.control_objects[-1])
-        self.add_connection(project, y, self.IsNight)
-        
-    def con_expansion_vessel(self, project, V_start):
+        self.project.systems.append(self.map_control.control_objects[-1])
+        self.add_connection(self.project, y, self.IsNight)
+
+    def con_expansion_vessel(self, V_start):
         import Generators.AixLib.MappingRules.Fluid.Storage.ExpansionVessel \
                                                 as ExpansionVessel
-        project.systems.append(ExpansionVessel.ExpansionVessel())
-        project.systems[-1].target_location = "AixLib.Fluid.Storage.ExpansionVessel"
-        project.systems[-1].target_name = "expansionVessel"
-        project.systems[-1].add_property = ("V_start", V_start)
+        self.project.systems.append(ExpansionVessel.ExpansionVessel(self,
+                                                                    self.project))
+        self.project.systems[-1].target_location = ("AixLib.Fluid.Storage" +
+                                                            ".ExpansionVessel")
+        self.project.systems[-1].target_name = "expansionVessel"
+        self.project.systems[-1].add_property = ("V_start", V_start)
         port_a = self.map_control.control_objects[-1].add_connector("port_a",
                                                                     "Fluid")
-        self.add_connection(project, port_a, self.port_a)
+        self.add_connection(self.project, port_a, self.port_a)

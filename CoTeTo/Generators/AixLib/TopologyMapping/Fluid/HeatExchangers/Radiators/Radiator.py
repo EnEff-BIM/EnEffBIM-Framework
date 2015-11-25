@@ -22,9 +22,9 @@ class Radiator(MapHierarchy.MapComponent):
     """Representation of AixLib.Fluid.HeatExchangers.Radiators.Radiator
     """
     
-    def __init__(self, parent=None):
+    def __init__(self, parent, project):
         
-        super(Radiator, self).__init__(parent)
+        super(Radiator, self).__init__(parent, project)
 
         self.port_a = self.add_connector("port_a", "FluidPort")
         self.port_b = self.add_connector("port_b", "FluidPort")
@@ -32,21 +32,21 @@ class Radiator(MapHierarchy.MapComponent):
         self.radPort = self.add_connector("radPort", "HeatPort")
         
         
-    def connect_tz_AixLib(self, project, thermal_zone):
+    def connect_tz_AixLib(self, thermal_zone):
         """connect AixLib Radiator to AixLib ThermalZone"""
-        self.add_connection(project,
+        self.add_connection(self.project,
                             self.convPort,
                             thermal_zone.internalGainsConv)
-        self.add_connection(project,
+        self.add_connection(self.project,
                             self.radPort,
                             thermal_zone.internalGainsRad)
                             
-    def connect_tz_Buildings(self, project, thermal_zone):
+    def connect_tz_Buildings(self, thermal_zone):
         """just a code example, will not work"""
         
-        self.add_connection(project,
+        self.add_connection(self.project,
                             self.convPort,
                             thermal_zone.heaPorAir)
-        self.add_connection(project,
+        self.add_connection(self.project,
                             self.radPort,
                             thermal_zone.heaPorRad)

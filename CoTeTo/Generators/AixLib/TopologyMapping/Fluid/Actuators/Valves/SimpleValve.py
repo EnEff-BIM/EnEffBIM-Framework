@@ -22,15 +22,15 @@ class SimpleValve(MapHierarchy.MapComponent):
     """Representation of AixLib.Fluid.Actuators.Valves.SimpleValve
     """
 
-    def __init__(self, parent=None):
+    def __init__(self, parent, project):
 
-        super(SimpleValve, self).__init__(parent)
+        super(SimpleValve, self).__init__(parent, project)
 
         self.port_a = self.add_connector("port_a", "FluidPort")
         self.port_b = self.add_connector("port_b", "FluidPort")
         self.opening = self.add_connector("opening", "RealInput")
 
-    def ctrl_P_room(self,  project, thermal_zone, t, k, yMax=1, yMin=0):
+    def ctrl_P_room(self, thermal_zone, t, k, yMax=1, yMin=0):
         """adds a Pcontroller to valve, works with AixLib components
         room temperature is control variable
         t is set temperature
@@ -48,7 +48,7 @@ class SimpleValve(MapHierarchy.MapComponent):
         self.map_control.control_objects[-1].add_property("k", t)
         const_y = self.map_control.control_objects[-1].add_connector("y",
                                                                "RealOutput")
-        project.systems.append(self.map_control.control_objects[-1])
+        self.project.systems.append(self.map_control.control_objects[-1])
         """sensor, define Template for often used components"""
         self.map_control.control_objects.append(MapHierarchy.MoObject(self))
         self.map_control.control_objects[-1].target_location = \
@@ -58,6 +58,7 @@ class SimpleValve(MapHierarchy.MapComponent):
                                                                "RealOutput")
         port = self.map_control.control_objects[-1].add_connector("port",
                                                                "HeatPort")
+        self.project.systems.append(self.map_control.control_objects[-1])
         """P controller"""
         self.map_control.control_objects.append(MapHierarchy.MoObject(self))
         self.map_control.control_objects[-1].target_location = \
@@ -72,10 +73,10 @@ class SimpleValve(MapHierarchy.MapComponent):
                                                                "RealInput")
         u_m = self.map_control.control_objects[-1].add_connector("u_m",
                                                                "RealInput")
-                                  
+        self.project.systems.append(self.map_control.control_objects[-1])                       
 
-        self.add_connection(project, const_y, u_s)
-        self.add_connection(project, port, thermal_zone.internalGainsConv)
-        self.add_connection(project, T, u_m)
-        self.add_connection(project, p_y, self.opening)
+        self.add_connection(self.project, const_y, u_s)
+        self.add_connection(self.project, port, thermal_zone.internalGainsConv)
+        self.add_connection(self.project, T, u_m)
+        self.add_connection(self.project, p_y, self.opening)
         

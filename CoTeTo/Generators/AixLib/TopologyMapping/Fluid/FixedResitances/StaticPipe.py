@@ -22,9 +22,9 @@ class StaticPipe(MapHierarchy.MapComponent):
     """Representation of AixLib.Fluid.FixedResistances.Pipe
     """
     
-    def __init__(self, parent=None):
+    def __init__(self, parent, project):
         
-        super(StaticPipe, self).__init__(parent)
+        super(StaticPipe, self).__init__(parent, project)
 
         self.add_connector("port_a", "FluidPort")
         self.add_connector("port_b", "FluidPort")

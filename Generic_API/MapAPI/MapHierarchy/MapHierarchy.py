@@ -233,9 +233,9 @@ class MapComponent(MoObject):
         This is an instance of MapControl()
     """
     
-    def __init__(self, parent=None):
+    def __init__(self, parent=None, project=None):
         
-        super(MapComponent, self).__init__(parent)
+        super(MapComponent, self).__init__(parent, project)
 
         self.map_control = None
 		

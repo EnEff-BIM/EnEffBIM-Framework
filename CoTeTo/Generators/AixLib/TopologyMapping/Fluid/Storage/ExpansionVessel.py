@@ -23,7 +23,7 @@ class ExpansionVessel(MapHierarchy.MapComponent):
     """Representation of AixLib.Fluid.Movers.Pump
     """
     
-    def __init__(self, parent=None):
+    def __init__(self, parent, project):
         
         super(ExpansionVessel, self).__init__(parent)
         print("ExpansionVessel")
