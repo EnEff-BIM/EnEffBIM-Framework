@@ -20,17 +20,16 @@ sys.path.append(modulePath)
 
 import MapHierarchy 
 import random
-class Constant(MapHierarchy.MapComponent):
-    """Representation of Modelica.Blocks.Sources.Constant
+class BooleanPulse(MapHierarchy.MapComponent):
+    """Representation of AixLib.Fluid.Movers.Pump
     """
     
     def __init__(self, parent, project):
         
-        super(Constant, self).__init__(parent, project)
+        super(BooleanPulse, self).__init__(parent, project)
         
-        self.target_location = "Modelica.Blocks.Sources.Constant"
+        self.target_location = "Modelica.Blocks.Sources.BooleanPulse"
         self.target_name = "const"+str(random.randint(1, 100))
-        self.k = MapHierarchy.MapProperty(self, "k", 1.0)
-        self.y = self.add_connector("y", "RealOutput")
+        self.y = self.add_connector("y", "BooleanOutput")
         
 

@@ -75,9 +75,7 @@ class MoObject(object):
     def add_property(self, name, value):
         """This adds a Property to the MoObject, this can be done by applying
         the mapping"""
-        mapped_prop = MapProperty(self)
-        mapped_prop.name = name
-        mapped_prop.value = value
+        mapped_prop = MapProperty(self, name, value)
         
         self.parameters.append(mapped_prop)
         
@@ -395,11 +393,11 @@ class MapProperty(object):
 
     """
     
-    def __init__(self, parent):
+    def __init__(self, parent, name, value):
         
         self.parent = parent
-        self.name = ""
-        self.value = None
+        self.name = name
+        self.value = value
         
 class MapRecord(object):
     """Representation of a mapped record

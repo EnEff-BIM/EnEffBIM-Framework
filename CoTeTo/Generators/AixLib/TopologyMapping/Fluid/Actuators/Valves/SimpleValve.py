@@ -45,22 +45,19 @@ class SimpleValve(MapHierarchy.MapComponent):
         const = Constant(self, self.project)
         self.map_control = MapHierarchy.MapControl(self)
         self.map_control.control_objects.append(const)
-        const.target_name = "setTemp"
         const.add_property("k", t)
 
         self.project.systems.append(const)
 
 
         """sensor, define Template for often used components"""
-        self.map_control.control_objects.append(MapHierarchy.MoObject(self))
-        self.map_control.control_objects[-1].target_location = \
-                    "Modelica.Thermal.HeatTransfer.Sensors.TemperatureSensor"
-        self.map_control.control_objects[-1].target_name = "setTemp"
-        T = self.map_control.control_objects[-1].add_connector("T",
-                                                               "RealOutput")
-        port = self.map_control.control_objects[-1].add_connector("port",
-                                                               "HeatPort")
-        self.project.systems.append(self.map_control.control_objects[-1])
+        from tools.MSL.Thermal.HeatTransfer.Sensors.TemperatureSensor \
+                                import TemperatureSensor
+        sensT = TemperatureSensor(self, self.project)
+        self.map_control.control_objects.append(sensT)
+        
+        self.project.systems.append(sensT)
+        
         """P controller"""
         from tools.MSL.Blocks.Continuous.LimPID import LimPID
         p_ctrl = LimPID(self, self.project)
@@ -73,7 +70,7 @@ class SimpleValve(MapHierarchy.MapComponent):
         self.project.systems.append(p_ctrl)                       
 
         self.add_connection(const.y, p_ctrl.u_s)
-        self.add_connection(port, thermal_zone.internalGainsConv)
-        self.add_connection(T, p_ctrl.u_m)
+        self.add_connection(sensT.port, thermal_zone.internalGainsConv)
+        self.add_connection(sensT.T, p_ctrl.u_m)
         self.add_connection(p_ctrl.y, self.opening)
         
