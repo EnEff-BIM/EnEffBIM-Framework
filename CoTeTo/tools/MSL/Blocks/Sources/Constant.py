@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
 """
-Created on Tue Nov 24 09:59:24 2015
+Created on Wed Nov 25 12:10:45 2015
 
 @author: pre
 """
+
 
 
 import os
@@ -18,15 +19,17 @@ sys.path.append(modulePath)
 
 
 import MapHierarchy 
-
-class ExpansionVessel(MapHierarchy.MapComponent):
+import random
+class Constant(MapHierarchy.MapComponent):
     """Representation of AixLib.Fluid.Movers.Pump
     """
     
     def __init__(self, parent, project):
         
-        super(ExpansionVessel, self).__init__(parent, project)
+        super(Constant, self).__init__(parent, project)
         
-        self.port_a = self.add_connector("port_a", "FluidPort")
+        self.target_location = "Modelica.Blocks.Sources.Constant"
+        self.target_name = "const"+str(random.randint(1, 100))
+        self.y = self.add_connector("y", "RealOutput")
         
-   
+

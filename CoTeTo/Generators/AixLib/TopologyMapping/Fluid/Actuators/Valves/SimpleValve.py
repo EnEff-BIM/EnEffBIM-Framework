@@ -41,14 +41,16 @@ class SimpleValve(MapHierarchy.MapComponent):
 
         self.map_control = MapHierarchy.MapControl(self)
         """constant, define Template for often used components"""
-        self.map_control.control_objects.append(MapHierarchy.MoObject(self))
-        self.map_control.control_objects[-1].target_location = \
-                                            "Modelica.Blocks.Sources.Constant"
-        self.map_control.control_objects[-1].target_name = "setTemp"
-        self.map_control.control_objects[-1].add_property("k", t)
-        const_y = self.map_control.control_objects[-1].add_connector("y",
-                                                               "RealOutput")
-        self.project.systems.append(self.map_control.control_objects[-1])
+        from tools.MSL.Blocks.Sources.Constant import Constant
+        const = Constant(self, self.project)
+        self.map_control = MapHierarchy.MapControl(self)
+        self.map_control.control_objects.append(const)
+        const.target_name = "setTemp"
+        const.add_property("k", t)
+
+        self.project.systems.append(const)
+
+
         """sensor, define Template for often used components"""
         self.map_control.control_objects.append(MapHierarchy.MoObject(self))
         self.map_control.control_objects[-1].target_location = \
@@ -60,23 +62,18 @@ class SimpleValve(MapHierarchy.MapComponent):
                                                                "HeatPort")
         self.project.systems.append(self.map_control.control_objects[-1])
         """P controller"""
-        self.map_control.control_objects.append(MapHierarchy.MoObject(self))
-        self.map_control.control_objects[-1].target_location = \
-                    "Modelica.Thermal.HeatTransfer.Sensors.TemperatureSensor"
-        self.map_control.control_objects[-1].target_name = "setTemp"
-        self.map_control.control_objects[-1].add_property("k", k)
-        self.map_control.control_objects[-1].add_property("yMax", yMax)
-        self.map_control.control_objects[-1].add_property("yMin", yMin)
-        p_y = self.map_control.control_objects[-1].add_connector("y",
-                                                               "RealOutput")
-        u_s = self.map_control.control_objects[-1].add_connector("u_s",
-                                                               "RealInput")
-        u_m = self.map_control.control_objects[-1].add_connector("u_m",
-                                                               "RealInput")
-        self.project.systems.append(self.map_control.control_objects[-1])                       
+        from tools.MSL.Blocks.Continuous.LimPID import LimPID
+        p_ctrl = LimPID(self, self.project)
+        self.map_control.control_objects.append(p_ctrl)
+        p_ctrl.target_name = "PIDController"
+        p_ctrl.add_property("k", k)
+        p_ctrl.add_property("yMax", yMax)
+        p_ctrl.add_property("yMin", yMin)
 
-        self.add_connection(self.project, const_y, u_s)
-        self.add_connection(self.project, port, thermal_zone.internalGainsConv)
-        self.add_connection(self.project, T, u_m)
-        self.add_connection(self.project, p_y, self.opening)
+        self.project.systems.append(p_ctrl)                       
+
+        self.add_connection(const.y, p_ctrl.u_s)
+        self.add_connection(port, thermal_zone.internalGainsConv)
+        self.add_connection(T, p_ctrl.u_m)
+        self.add_connection(p_ctrl.y, self.opening)
         
