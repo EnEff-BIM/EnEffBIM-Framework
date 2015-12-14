@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema targetNamespace="http://www.lbl.gov/namespaces/Sim/ResourcesGeometry" xmlns:simgeom="http://www.lbl.gov/namespaces/Sim/ResourcesGeometry" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:simcore="http://www.lbl.gov/namespaces/Sim/SimModelCore" xmlns:simres="http://www.lbl.gov/namespaces/Sim/ResourcesGeneral" elementFormDefault="qualified" attributeFormDefault="unqualified">
+<xs:schema targetNamespace="http://d-alchemy.com/schema/simxml/ResourcesGeometry/" xmlns:simgeom="http://d-alchemy.com/schema/simxml/ResourcesGeometry/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:simcore="http://d-alchemy.com/schema/simxml/SimModelCore/" xmlns:simres="http://d-alchemy.com/schema/simxml/ResourcesGeneral/" elementFormDefault="qualified" attributeFormDefault="unqualified" >
 
-    <xs:import namespace="http://www.lbl.gov/namespaces/Sim/SimModelCore" schemaLocation="simcore.xsd"/>
-<xs:import namespace="http://www.lbl.gov/namespaces/Sim/ResourcesGeneral" schemaLocation="simres.xsd"/>
+    <xs:import namespace="http://d-alchemy.com/schema/simxml/SimModelCore/" schemaLocation="simcore.xsd"/>
+<xs:import namespace="http://d-alchemy.com/schema/simxml/ResourcesGeneral/" schemaLocation="simres.xsd"/>
 
 
 	<!-- Entity elements -->
 	<xs:complexType name="SimAnalyticalRepresentation">
 <xs:complexContent>
-<xs:extension base="simgeom:SimRepresentation">
+<xs:extension base="simcore:SimRepresentation">
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
@@ -26,7 +26,7 @@
 	</xs:complexType>
 <xs:complexType name="SimAnalyticalRepresentationItem" abstract="true">
 <xs:complexContent>
-<xs:extension base="simgeom:SimRepresentationItem">
+<xs:extension base="simcore:SimRepresentationItem">
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
@@ -72,7 +72,7 @@
 	</xs:complexType>
 <xs:complexType name="SimCartesianTransformOperator">
 <xs:complexContent>
-<xs:extension base="simgeom:SimRepresentationItem">
+<xs:extension base="simcore:SimRepresentationItem">
 <xs:sequence>
 <xs:element ref="simgeom:Axis1" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simgeom:Axis2" minOccurs="0" maxOccurs="1"/>
@@ -157,7 +157,7 @@
 	</xs:complexType>
 <xs:complexType name="SimConnectedFaceSet">
 <xs:complexContent>
-<xs:extension base="simgeom:SimTopologicalRepresentationItem">
+<xs:extension base="simcore:SimTopologicalRepresentationItem">
 <xs:sequence>
 <xs:element ref="simgeom:CfsFaces" minOccurs="0" maxOccurs="1"/>
 </xs:sequence>
@@ -190,7 +190,7 @@
 	</xs:complexType>
 <xs:complexType name="SimEdge">
 <xs:complexContent>
-<xs:extension base="simgeom:SimTopologicalRepresentationItem">
+<xs:extension base="simcore:SimTopologicalRepresentationItem">
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
@@ -233,7 +233,7 @@
 	</xs:complexType>
 <xs:complexType name="SimFace">
 <xs:complexContent>
-<xs:extension base="simgeom:SimTopologicalRepresentationItem">
+<xs:extension base="simcore:SimTopologicalRepresentationItem">
 <xs:sequence>
 <xs:element ref="simgeom:Bounds" minOccurs="0" maxOccurs="1"/>
 </xs:sequence>
@@ -264,7 +264,7 @@
 	</xs:complexType>
 <xs:complexType name="SimFaceBound">
 <xs:complexContent>
-<xs:extension base="simgeom:SimTopologicalRepresentationItem">
+<xs:extension base="simcore:SimTopologicalRepresentationItem">
 <xs:sequence>
 <xs:element ref="simgeom:Bound" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simgeom:Orientation" minOccurs="0" maxOccurs="1"/>
@@ -292,7 +292,13 @@
 	</xs:complexType>
 <xs:complexType name="SimFeatureAirFlowNetwork">
 <xs:complexContent>
-<xs:extension base="simgeom:SimFeatureElement">
+<xs:extension base="simcore:SimFeatureElement">
+<xs:sequence>
+<xs:element ref="simgeom:ObjectType" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simgeom:ObjectPlacement" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simgeom:Representation" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simgeom:Tag" minOccurs="0" maxOccurs="1"/>
+</xs:sequence>
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
@@ -330,12 +336,6 @@
 <xs:complexType name="SimFeatureAirFlowNetwork_Exhaust" abstract="true">
 <xs:complexContent>
 <xs:extension base="simgeom:SimFeatureAirFlowNetwork">
-<xs:sequence>
-<xs:element ref="simgeom:SimFeatureAirFlowNetwk_RefCrackCond" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simgeom:SimFeatureAirFlowNetwk_FanName" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simgeom:SimFeatureAirFlowNetwk_AirMassFlowCoefWhenZoneExhFanfAtRefCond" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simgeom:SimFeatureAirFlowNetwk_AirMassFlowExptWhenZoneExhFanf" minOccurs="0" maxOccurs="1"/>
-</xs:sequence>
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
@@ -409,6 +409,7 @@
 <xs:element ref="simgeom:SimFeatureAirFlowNetwk_AirMassFlowCoefAtRefCond" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simgeom:SimFeatureAirFlowNetwk_AirMassFlowExp" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simgeom:SimFeatureAirFlowNetwk_RefCrackCond" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simgeom:Airflow_MZone_RefCrackCond_Name" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simgeom:Airflow_MZone_RefCrackCond_RefTemp" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simgeom:Airflow_MZone_RefCrackCond_RefBarometricPressure" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simgeom:Airflow_MZone_RefCrackCond_RefHumidRatio" minOccurs="0" maxOccurs="1"/>
@@ -445,18 +446,10 @@
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
-<xs:complexType name="SimFeatureElement" abstract="true">
-<xs:complexContent>
-<xs:extension base="simres:SimResourceObject">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
 <xs:complexType name="SimFeatureElementAddition">
 <xs:complexContent>
-<xs:extension base="simgeom:SimFeatureElement">
+<xs:extension base="simcore:SimFeatureElement">
 <xs:sequence>
-<xs:element ref="simgeom:GlobalId" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simgeom:OwnerHistory" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simgeom:ObjectType" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simgeom:ObjectPlacement" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simgeom:Representation" minOccurs="0" maxOccurs="1"/>
@@ -479,7 +472,13 @@
 	</xs:complexType>
 <xs:complexType name="SimFeatureElementSubtraction">
 <xs:complexContent>
-<xs:extension base="simgeom:SimFeatureElement">
+<xs:extension base="simcore:SimFeatureElement">
+<xs:sequence>
+<xs:element ref="simgeom:Name" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simgeom:ObjectType" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simgeom:Representation" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simgeom:Tag" minOccurs="0" maxOccurs="1"/>
+</xs:sequence>
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
@@ -487,7 +486,7 @@
 <xs:complexContent>
 <xs:extension base="simgeom:SimFeatureElementSubtraction">
 <xs:sequence>
-<xs:element ref="simgeom:Name" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simgeom:FeatureLength" minOccurs="0" maxOccurs="1"/>
 </xs:sequence>
 </xs:extension>
 </xs:complexContent>
@@ -495,52 +494,18 @@
 <xs:complexType name="SimFeatureElementSubtraction_EdgeFeature_ChamferedEdge">
 <xs:complexContent>
 <xs:extension base="simgeom:SimFeatureElementSubtraction_EdgeFeature">
-<xs:sequence>
-<xs:element ref="simgeom:IfcGlobalID" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simgeom:ObjectOwnerHistory" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simgeom:OpeningHeight" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simgeom:OpeningWidth" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simgeom:OpeningDepth" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simgeom:OpeningPerimeter" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simgeom:OpeningArea" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simgeom:OpeningVolume" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simgeom:TypeDefinition" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simgeom:Placement" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simgeom:GeometricRepresentations" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simgeom:VoidedBldgElement" minOccurs="0" maxOccurs="1"/>
-</xs:sequence>
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
 <xs:complexType name="SimFeatureElementSubtraction_EdgeFeature_Default">
 <xs:complexContent>
 <xs:extension base="simgeom:SimFeatureElementSubtraction_EdgeFeature">
-<xs:sequence>
-<xs:element ref="simgeom:ObjectType" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simgeom:Representation" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simgeom:Tag" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simgeom:FeatureLength" minOccurs="0" maxOccurs="1"/>
-</xs:sequence>
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
 <xs:complexType name="SimFeatureElementSubtraction_EdgeFeature_RoundedEdge">
 <xs:complexContent>
 <xs:extension base="simgeom:SimFeatureElementSubtraction_EdgeFeature">
-<xs:sequence>
-<xs:element ref="simgeom:IfcGlobalID" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simgeom:ObjectOwnerHistory" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simgeom:OpeningHeight" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simgeom:OpeningWidth" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simgeom:OpeningDepth" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simgeom:OpeningPerimeter" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simgeom:OpeningArea" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simgeom:OpeningVolume" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simgeom:TypeDefinition" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simgeom:Placement" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simgeom:GeometricRepresentations" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simgeom:VoidedBldgElement" minOccurs="0" maxOccurs="1"/>
-</xs:sequence>
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
@@ -560,12 +525,6 @@
 <xs:complexContent>
 <xs:extension base="simgeom:SimFeatureElementSubtraction">
 <xs:sequence>
-<xs:element ref="simgeom:Name" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simgeom:ObjectType" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simgeom:Representation" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simgeom:Tag" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simgeom:IfcGlobalID" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simgeom:ObjectOwnerHistory" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simgeom:OpeningHeight" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simgeom:OpeningWidth" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simgeom:OpeningDepth" minOccurs="0" maxOccurs="1"/>
@@ -588,7 +547,7 @@
 	</xs:complexType>
 <xs:complexType name="SimGeomBooleanResult">
 <xs:complexContent>
-<xs:extension base="simgeom:SimGeometricRepresentationItem">
+<xs:extension base="simcore:SimGeometricRepresentationItem">
 <xs:sequence>
 <xs:element ref="simgeom:Operator" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simgeom:FirstOperand" minOccurs="0" maxOccurs="1"/>
@@ -623,7 +582,7 @@
 	</xs:complexType>
 <xs:complexType name="SimGeomBoundingBox">
 <xs:complexContent>
-<xs:extension base="simgeom:SimGeometricRepresentationItem">
+<xs:extension base="simcore:SimGeometricRepresentationItem">
 <xs:sequence>
 <xs:element ref="simgeom:Corner" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simgeom:XDim" minOccurs="0" maxOccurs="1"/>
@@ -647,7 +606,7 @@
 	</xs:complexType>
 <xs:complexType name="SimGeomCsgPrimative3D">
 <xs:complexContent>
-<xs:extension base="simgeom:SimGeometricRepresentationItem">
+<xs:extension base="simcore:SimGeometricRepresentationItem">
 <xs:sequence>
 <xs:element ref="simgeom:Position" minOccurs="0" maxOccurs="1"/>
 </xs:sequence>
@@ -713,7 +672,7 @@
 	</xs:complexType>
 <xs:complexType name="SimGeomCurve">
 <xs:complexContent>
-<xs:extension base="simgeom:SimGeometricRepresentationItem">
+<xs:extension base="simcore:SimGeometricRepresentationItem">
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
@@ -898,15 +857,9 @@
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
-<xs:complexType name="SimGeometricRepresentationItem" abstract="true">
-<xs:complexContent>
-<xs:extension base="simgeom:SimRepresentationItem">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
 <xs:complexType name="SimGeomHalfSpaceSolid">
 <xs:complexContent>
-<xs:extension base="simgeom:SimGeometricRepresentationItem">
+<xs:extension base="simcore:SimGeometricRepresentationItem">
 <xs:sequence>
 <xs:element ref="simgeom:BaseSurface" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simgeom:AgreementFlag" minOccurs="0" maxOccurs="1"/>
@@ -941,7 +894,7 @@
 	</xs:complexType>
 <xs:complexType name="SimGeomPoint">
 <xs:complexContent>
-<xs:extension base="simgeom:SimGeometricRepresentationItem">
+<xs:extension base="simcore:SimGeometricRepresentationItem">
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
@@ -983,7 +936,7 @@
 	</xs:complexType>
 <xs:complexType name="SimGeomSet">
 <xs:complexContent>
-<xs:extension base="simgeom:SimGeometricRepresentationItem">
+<xs:extension base="simcore:SimGeometricRepresentationItem">
 <xs:sequence>
 <xs:element ref="simgeom:Elements" minOccurs="0" maxOccurs="1"/>
 </xs:sequence>
@@ -1016,7 +969,7 @@
 	</xs:complexType>
 <xs:complexType name="SimGeomSolidModel">
 <xs:complexContent>
-<xs:extension base="simgeom:SimGeometricRepresentationItem">
+<xs:extension base="simcore:SimGeometricRepresentationItem">
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
@@ -1132,7 +1085,7 @@
 	</xs:complexType>
 <xs:complexType name="SimGeomSurface">
 <xs:complexContent>
-<xs:extension base="simgeom:SimGeometricRepresentationItem">
+<xs:extension base="simcore:SimGeometricRepresentationItem">
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
@@ -1244,7 +1197,7 @@
 	</xs:complexType>
 <xs:complexType name="SimGeomSurfaceModel">
 <xs:complexContent>
-<xs:extension base="simgeom:SimGeometricRepresentationItem">
+<xs:extension base="simcore:SimGeometricRepresentationItem">
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
@@ -1280,7 +1233,7 @@
 	</xs:complexType>
 <xs:complexType name="SimGeomVector">
 <xs:complexContent>
-<xs:extension base="simgeom:SimGeometricRepresentationItem">
+<xs:extension base="simcore:SimGeometricRepresentationItem">
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
@@ -1294,7 +1247,7 @@
 <xs:complexContent>
 <xs:extension base="simgeom:SimGeomVector_Vector">
 <xs:sequence>
-<xs:element ref="simgeom:Orientation" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simgeom:Orientation.Reference" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simgeom:Magnitude" minOccurs="0" maxOccurs="1"/>
 </xs:sequence>
 </xs:extension>
@@ -1311,7 +1264,7 @@
 	</xs:complexType>
 <xs:complexType name="SimGridPlacement">
 <xs:complexContent>
-<xs:extension base="simgeom:SimObjectPlacement">
+<xs:extension base="simcore:SimObjectPlacement">
 <xs:sequence>
 <xs:element ref="simgeom:PlacementLocation" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simgeom:PlacementRefDirection" minOccurs="0" maxOccurs="1"/>
@@ -1333,7 +1286,7 @@
 	</xs:complexType>
 <xs:complexType name="SimLocalPlacement">
 <xs:complexContent>
-<xs:extension base="simgeom:SimObjectPlacement">
+<xs:extension base="simcore:SimObjectPlacement">
 <xs:sequence>
 <xs:element ref="simgeom:PlacementRelTo" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simgeom:RelativePlacement" minOccurs="0" maxOccurs="1"/>
@@ -1361,7 +1314,7 @@
 	</xs:complexType>
 <xs:complexType name="SimLoop">
 <xs:complexContent>
-<xs:extension base="simgeom:SimTopologicalRepresentationItem">
+<xs:extension base="simcore:SimTopologicalRepresentationItem">
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
@@ -1397,7 +1350,7 @@
 	</xs:complexType>
 <xs:complexType name="SimMappedRepresentationItem">
 <xs:complexContent>
-<xs:extension base="simgeom:SimRepresentationItem">
+<xs:extension base="simcore:SimRepresentationItem">
 <xs:sequence>
 <xs:element ref="simgeom:MappingSource" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simgeom:MappingTarget" minOccurs="0" maxOccurs="1"/>
@@ -1414,12 +1367,6 @@
 <xs:complexType name="SimMappedRepresentationItem_Default_Default">
 <xs:complexContent>
 <xs:extension base="simgeom:SimMappedRepresentationItem_Default">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimObjectPlacement" abstract="true">
-<xs:complexContent>
-<xs:extension base="simres:SimResourceObject">
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
@@ -1606,6 +1553,7 @@
 <xs:element ref="simgeom:SimPerfCurve_Coef_3_X_2" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simgeom:SimPerfCurve_Coeff5_Y_2" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simgeom:SimPerfCurve_Coeff6_X_y" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simgeom:SimPerfCurve_InputUnitTypeForY" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simgeom:SimPerfCurve_Coeff7_X_3" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simgeom:SimPerfCurve_Coeff8_Y_3" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simgeom:SimPerfCurve_Coeff9_X_2_Y" minOccurs="0" maxOccurs="1"/>
@@ -1630,6 +1578,7 @@
 <xs:element ref="simgeom:SimPerfCurve_Coef_3_X_2" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simgeom:SimPerfCurve_Coeff5_Y_2" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simgeom:SimPerfCurve_Coeff6_X_y" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simgeom:SimPerfCurve_InputUnitTypeForY" minOccurs="0" maxOccurs="1"/>
 </xs:sequence>
 </xs:extension>
 </xs:complexContent>
@@ -1657,6 +1606,7 @@
 <xs:element ref="simgeom:SimPerfCurve_MinValX" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simgeom:SimPerfCurve_MaxValX" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simgeom:SimPerfCurve_OutputUnitType" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simgeom:SimPerfCurve_InputUnitTypeForX" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simgeom:SimPerfCurve_Coeff1C1" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simgeom:SimPerfCurve_Coeff2C2" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simgeom:SimPerfCurve_Coeff3C3" minOccurs="0" maxOccurs="1"/>
@@ -1686,6 +1636,7 @@
 <xs:element ref="simgeom:SimPerfCurve_MinValX" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simgeom:SimPerfCurve_MaxValX" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simgeom:SimPerfCurve_OutputUnitType" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simgeom:SimPerfCurve_InputUnitTypeForX" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simgeom:SimPerfCurve_Coeff1C1" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simgeom:SimPerfCurve_Coeff2C2" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simgeom:SimPerfCurve_Coeff3C3" minOccurs="0" maxOccurs="1"/>
@@ -1700,6 +1651,7 @@
 <xs:element ref="simgeom:SimPerfCurve_MinValX" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simgeom:SimPerfCurve_MaxValX" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simgeom:SimPerfCurve_OutputUnitType" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simgeom:SimPerfCurve_InputUnitTypeForX" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simgeom:SimPerfCurve_Coeff1C1" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simgeom:SimPerfCurve_Coeff2C2" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simgeom:SimPerfCurve_Coeff3C3" minOccurs="0" maxOccurs="1"/>
@@ -1756,6 +1708,7 @@
 <xs:element ref="simgeom:SimPerfCurve_MinValZ" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simgeom:SimPerfCurve_MaxValZ" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simgeom:SimPerfCurve_InputUnitTypeforw" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simgeom:SimPerfCurve_InputUnitTypeForX" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simgeom:SimPerfCurve_InputUnitTypeForY" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simgeom:SimPerfCurve_InputUnitTypeForZ" minOccurs="0" maxOccurs="1"/>
 </xs:sequence>
@@ -1791,6 +1744,7 @@
 <xs:element ref="simgeom:SimPerfCurve_MinValY" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simgeom:SimPerfCurve_MaxValY" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simgeom:SimPerfCurve_Coef_3_X_2" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simgeom:SimPerfCurve_InputUnitTypeForY" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simgeom:SimPerfCurve_Coeff5_X_y" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simgeom:SimPerfCurve_Coeff6_X_2_Y" minOccurs="0" maxOccurs="1"/>
 </xs:sequence>
@@ -1821,6 +1775,7 @@
 <xs:element ref="simgeom:SimPerfCurve_MinValX" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simgeom:SimPerfCurve_MaxValX" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simgeom:SimPerfCurve_OutputUnitType" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simgeom:SimPerfCurve_InputUnitTypeForX" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simgeom:SimPerfCurve_Coeff1C1" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simgeom:SimPerfCurve_Coeff2C2" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simgeom:SimPerfCurve_Coeff3C3" minOccurs="0" maxOccurs="1"/>
@@ -1835,6 +1790,7 @@
 <xs:element ref="simgeom:SimPerfCurve_MinValX" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simgeom:SimPerfCurve_MaxValX" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simgeom:SimPerfCurve_OutputUnitType" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simgeom:SimPerfCurve_InputUnitTypeForX" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simgeom:SimPerfCurve_Coeff1C1" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simgeom:SimPerfCurve_Coeff2C2" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simgeom:SimPerfCurve_Coeff3C3" minOccurs="0" maxOccurs="1"/>
@@ -1849,6 +1805,7 @@
 <xs:element ref="simgeom:SimPerfCurve_MinValX" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simgeom:SimPerfCurve_MaxValX" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simgeom:SimPerfCurve_OutputUnitType" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simgeom:SimPerfCurve_InputUnitTypeForX" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simgeom:SimPerfCurve_Coeff1C1" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simgeom:SimPerfCurve_Coeff2C2" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simgeom:SimPerfCurve_Coeff3C3" minOccurs="0" maxOccurs="1"/>
@@ -1872,6 +1829,7 @@
 <xs:element ref="simgeom:SimPerfCurve_MaxValY" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simgeom:SimPerfCurve_MinValZ" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simgeom:SimPerfCurve_MaxValZ" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simgeom:SimPerfCurve_InputUnitTypeForY" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simgeom:SimPerfCurve_Coeff10_X_y_2" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simgeom:SimPerfCurve_Coef_2_X_2" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simgeom:SimPerfCurve_Coef_4_Y_2" minOccurs="0" maxOccurs="1"/>
@@ -1897,6 +1855,7 @@
 <xs:element ref="simgeom:SimPerfCurve_Coef_25_X_y_2_Z" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simgeom:SimPerfCurve_Coef_26_X_Y_Z_2" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simgeom:SimPerfCurve_Coef_27_X_Y_Z" minOccurs="0" maxOccurs="1"/>
+<xs:element ref="simgeom:SimPerfCurve_InputUnitTypeForZ" minOccurs="0" maxOccurs="1"/>
 </xs:sequence>
 </xs:extension>
 </xs:complexContent>
@@ -1991,7 +1950,7 @@
 	</xs:complexType>
 <xs:complexType name="SimPlacement">
 <xs:complexContent>
-<xs:extension base="simgeom:SimGeometricRepresentationItem">
+<xs:extension base="simcore:SimGeometricRepresentationItem">
 <xs:sequence>
 <xs:element ref="simgeom:Location" minOccurs="0" maxOccurs="1"/>
 </xs:sequence>
@@ -2044,51 +2003,9 @@
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
-<xs:complexType name="SimProfileDefinition">
+<xs:complexType name="SimProfileDefinition" abstract="true">
 <xs:complexContent>
-<xs:extension base="simgeom:SimRepresentationItem">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimProfileDefinition_ArbitraryProfile" abstract="true">
-<xs:complexContent>
-<xs:extension base="simgeom:SimProfileDefinition">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimProfileDefinition_ArbitraryProfile_Closed">
-<xs:complexContent>
-<xs:extension base="simgeom:SimProfileDefinition_ArbitraryProfile">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimProfileDefinition_ArbitraryProfile_ClosedWithVoids">
-<xs:complexContent>
-<xs:extension base="simgeom:SimProfileDefinition_ArbitraryProfile">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimProfileDefinition_ArbitraryProfile_Open">
-<xs:complexContent>
-<xs:extension base="simgeom:SimProfileDefinition_ArbitraryProfile">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimProfileDefinition_CompositeProfile" abstract="true">
-<xs:complexContent>
-<xs:extension base="simgeom:SimProfileDefinition">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimProfileDefinition_CompositeProfile_Default">
-<xs:complexContent>
-<xs:extension base="simgeom:SimProfileDefinition_CompositeProfile">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimProfileDefinition_Default" abstract="true">
-<xs:complexContent>
-<xs:extension base="simgeom:SimProfileDefinition">
+<xs:extension base="simcore:SimRepresentationItem">
 <xs:sequence>
 <xs:element ref="simgeom:ProfileType" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simgeom:ProfileName" minOccurs="0" maxOccurs="1"/>
@@ -2096,99 +2013,9 @@
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
-<xs:complexType name="SimProfileDefinition_Default_Default">
-<xs:complexContent>
-<xs:extension base="simgeom:SimProfileDefinition_Default">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimProfileDefinition_ParameterizedProfile" abstract="true">
-<xs:complexContent>
-<xs:extension base="simgeom:SimProfileDefinition">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimProfileDefinition_ParameterizedProfile_C_Shape">
-<xs:complexContent>
-<xs:extension base="simgeom:SimProfileDefinition_ParameterizedProfile">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimProfileDefinition_ParameterizedProfile_Circle">
-<xs:complexContent>
-<xs:extension base="simgeom:SimProfileDefinition_ParameterizedProfile">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimProfileDefinition_ParameterizedProfile_Ellipse">
-<xs:complexContent>
-<xs:extension base="simgeom:SimProfileDefinition_ParameterizedProfile">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimProfileDefinition_ParameterizedProfile_HollowRectangle">
-<xs:complexContent>
-<xs:extension base="simgeom:SimProfileDefinition_ParameterizedProfile">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimProfileDefinition_ParameterizedProfile_I_Shape">
-<xs:complexContent>
-<xs:extension base="simgeom:SimProfileDefinition_ParameterizedProfile">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimProfileDefinition_ParameterizedProfile_L_Shape">
-<xs:complexContent>
-<xs:extension base="simgeom:SimProfileDefinition_ParameterizedProfile">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimProfileDefinition_ParameterizedProfile_Rectangle">
-<xs:complexContent>
-<xs:extension base="simgeom:SimProfileDefinition_ParameterizedProfile">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimProfileDefinition_ParameterizedProfile_T_Shape">
-<xs:complexContent>
-<xs:extension base="simgeom:SimProfileDefinition_ParameterizedProfile">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimProfileDefinition_ParameterizedProfile_U_Shape">
-<xs:complexContent>
-<xs:extension base="simgeom:SimProfileDefinition_ParameterizedProfile">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimProfileDefinition_ParameterizedProfile_Z_Shape">
-<xs:complexContent>
-<xs:extension base="simgeom:SimProfileDefinition_ParameterizedProfile">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimRepresentation" abstract="true">
-<xs:complexContent>
-<xs:extension base="simres:SimResourceObject">
-<xs:sequence>
-<xs:element ref="simgeom:RepresentationContext" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simgeom:RepresentationIdentifier" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simgeom:RepresentationType" minOccurs="0" maxOccurs="1"/>
-<xs:element ref="simgeom:RepresentationItems" minOccurs="0" maxOccurs="1"/>
-</xs:sequence>
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
-<xs:complexType name="SimRepresentationItem" abstract="true">
-<xs:complexContent>
-<xs:extension base="simres:SimResourceObject">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
 <xs:complexType name="SimRepresentationMap">
 <xs:complexContent>
-<xs:extension base="simgeom:SimRepresentation">
+<xs:extension base="simcore:SimRepresentation">
 <xs:sequence>
 <xs:element ref="simgeom:MappingOrigin" minOccurs="0" maxOccurs="1"/>
 <xs:element ref="simgeom:MappedRepresentation" minOccurs="0" maxOccurs="1"/>
@@ -2210,7 +2037,7 @@
 	</xs:complexType>
 <xs:complexType name="SimShapeRepresentation">
 <xs:complexContent>
-<xs:extension base="simgeom:SimRepresentation">
+<xs:extension base="simcore:SimRepresentation">
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
@@ -2228,7 +2055,7 @@
 	</xs:complexType>
 <xs:complexType name="SimToplogicalRepresentation">
 <xs:complexContent>
-<xs:extension base="simgeom:SimRepresentation">
+<xs:extension base="simcore:SimRepresentation">
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
@@ -2244,15 +2071,9 @@
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
-<xs:complexType name="SimTopologicalRepresentationItem" abstract="true">
-<xs:complexContent>
-<xs:extension base="simgeom:SimRepresentationItem">
-</xs:extension>
-</xs:complexContent>
-	</xs:complexType>
 <xs:complexType name="SimVertex">
 <xs:complexContent>
-<xs:extension base="simgeom:SimTopologicalRepresentationItem">
+<xs:extension base="simcore:SimTopologicalRepresentationItem">
 </xs:extension>
 </xs:complexContent>
 	</xs:complexType>
@@ -2296,15 +2117,15 @@
 <xs:element name="FaceSurface"  type="xs:IDREF"/>
 <xs:element name="SameSense"  type="xs:boolean" nillable ="true"/>
 <xs:element name="Bound"  type="xs:IDREF"/>
+<xs:element name="ObjectType"  type="xs:string"/>
+<xs:element name="ObjectPlacement"  type="xs:IDREF"/>
+<xs:element name="Representation"  type="xs:IDREF"/>
+<xs:element name="Tag"  type="xs:string"/>
 <xs:element name="SimFeatureAirFlowNetwk_Name"  type="xs:string"/>
 <xs:element name="SimFeatureAirFlowNetwk_AirMassFlowExp"  type="xs:double" nillable ="true"/>
 <xs:element name="SimFeatureAirFlowNetwk_EffecLeakageArea"  type="xs:double" nillable ="true"/>
 <xs:element name="SimFeatureAirFlowNetwk_DischargeCoef"  type="xs:double" nillable ="true"/>
 <xs:element name="SimFeatureAirFlowNetwk_RefPressureDiff"  type="xs:double" nillable ="true"/>
-<xs:element name="SimFeatureAirFlowNetwk_RefCrackCond"  type="xs:IDREF"/>
-<xs:element name="SimFeatureAirFlowNetwk_FanName"  type="xs:IDREF"/>
-<xs:element name="SimFeatureAirFlowNetwk_AirMassFlowCoefWhenZoneExhFanfAtRefCond"  type="xs:double" nillable ="true"/>
-<xs:element name="SimFeatureAirFlowNetwk_AirMassFlowExptWhenZoneExhFanf"  type="xs:double" nillable ="true"/>
 <xs:element name="SimFeatureAirFlowNetwk_VentCntlMode"  type="xs:string"/>
 <xs:element name="SimFeatureAirFlowNetwk_VentCntlZoneTempSetpointSchedName"  type="xs:IDREF"/>
 <xs:element name="SimFeatureAirFlowNetwk_MinVentOpenFactor"  type="xs:double" nillable ="true"/>
@@ -2318,19 +2139,14 @@
 <xs:element name="SimFeatureAirFlowNetwk_ExternalNodeName"  type="xs:IDREF"/>
 <xs:element name="SimFeatureAirFlowNetwk_WndwDoorOpngFactorOrCrackFactor"  type="xs:double" nillable ="true"/>
 <xs:element name="SimFeatureAirFlowNetwk_AirMassFlowCoefAtRefCond"  type="xs:double" nillable ="true"/>
+<xs:element name="SimFeatureAirFlowNetwk_RefCrackCond"  type="xs:IDREF"/>
+<xs:element name="Airflow_MZone_RefCrackCond_Name"  type="xs:string"/>
 <xs:element name="Airflow_MZone_RefCrackCond_RefTemp"  type="xs:double" nillable ="true"/>
 <xs:element name="Airflow_MZone_RefCrackCond_RefBarometricPressure"  type="xs:double" nillable ="true"/>
 <xs:element name="Airflow_MZone_RefCrackCond_RefHumidRatio"  type="xs:double" nillable ="true"/>
 <xs:element name="SimFeatureAirFlowNetwk_ZoneName"  type="xs:IDREF"/>
-<xs:element name="GlobalId"  type="xs:string"/>
-<xs:element name="OwnerHistory"  type="xs:IDREF"/>
-<xs:element name="ObjectType"  type="xs:string"/>
-<xs:element name="ObjectPlacement"  type="xs:IDREF"/>
-<xs:element name="Representation"  type="xs:IDREF"/>
-<xs:element name="Tag"  type="xs:string"/>
 <xs:element name="Name"  type="xs:string"/>
-<xs:element name="IfcGlobalID"  type="xs:string"/>
-<xs:element name="ObjectOwnerHistory"  type="xs:IDREF"/>
+<xs:element name="FeatureLength"  type="xs:double" nillable ="true"/>
 <xs:element name="OpeningHeight"  type="xs:double" nillable ="true"/>
 <xs:element name="OpeningWidth"  type="xs:double" nillable ="true"/>
 <xs:element name="OpeningDepth"  type="xs:double" nillable ="true"/>
@@ -2341,7 +2157,6 @@
 <xs:element name="Placement"  type="xs:IDREF"/>
 <xs:element name="GeometricRepresentations"  type="xs:IDREFS"/>
 <xs:element name="VoidedBldgElement"  type="xs:IDREF"/>
-<xs:element name="FeatureLength"  type="xs:double" nillable ="true"/>
 <xs:element name="Operator"  type="xs:string"/>
 <xs:element name="FirstOperand"  type="xs:IDREF"/>
 <xs:element name="SecondOperand"  type="xs:IDREF"/>
@@ -2408,6 +2223,7 @@
 <xs:element name="AxisPosition"  type="xs:IDREF"/>
 <xs:element name="FbsmFaces"  type="xs:IDREFS"/>
 <xs:element name="SbsmBoundary"  type="xs:IDREFS"/>
+<xs:element name="Orientation.Reference"  type="xs:IDREF"/>
 <xs:element name="Magnitude"  type="xs:double" nillable ="true"/>
 <xs:element name="DirectionRatios"  type="simcore:doubleList"/>
 <xs:element name="PlacementLocation"  type="xs:IDREF"/>
@@ -2454,6 +2270,7 @@
 <xs:element name="SimPerfCurve_Coef_3_X_2"  type="xs:double" nillable ="true"/>
 <xs:element name="SimPerfCurve_Coeff5_Y_2"  type="xs:double" nillable ="true"/>
 <xs:element name="SimPerfCurve_Coeff6_X_y"  type="xs:double" nillable ="true"/>
+<xs:element name="SimPerfCurve_InputUnitTypeForY"  type="xs:string"/>
 <xs:element name="SimPerfCurve_Coeff7_X_3"  type="xs:double" nillable ="true"/>
 <xs:element name="SimPerfCurve_Coeff8_Y_3"  type="xs:double" nillable ="true"/>
 <xs:element name="SimPerfCurve_Coeff9_X_2_Y"  type="xs:double" nillable ="true"/>
@@ -2478,7 +2295,6 @@
 <xs:element name="SimPerfCurve_MinValZ"  type="xs:double" nillable ="true"/>
 <xs:element name="SimPerfCurve_MaxValZ"  type="xs:double" nillable ="true"/>
 <xs:element name="SimPerfCurve_InputUnitTypeforw"  type="xs:string"/>
-<xs:element name="SimPerfCurve_InputUnitTypeForY"  type="xs:string"/>
 <xs:element name="SimPerfCurve_InputUnitTypeForZ"  type="xs:string"/>
 <xs:element name="SimPerfCurve_Coeff5_X_y"  type="xs:double" nillable ="true"/>
 <xs:element name="SimPerfCurve_Coeff6_X_2_Y"  type="xs:double" nillable ="true"/>
@@ -2556,10 +2372,6 @@
 <xs:element name="Location"  type="xs:IDREF"/>
 <xs:element name="ProfileType"  type="xs:string"/>
 <xs:element name="ProfileName"  type="xs:string"/>
-<xs:element name="RepresentationContext"  type="xs:IDREF"/>
-<xs:element name="RepresentationIdentifier"  type="xs:string"/>
-<xs:element name="RepresentationType"  type="xs:string"/>
-<xs:element name="RepresentationItems"  type="xs:IDREFS"/>
 <xs:element name="MappingOrigin"  type="xs:IDREF"/>
 <xs:element name="MappedRepresentation"  type="xs:IDREF"/>
 
