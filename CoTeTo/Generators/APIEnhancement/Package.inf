@@ -1,0 +1,24 @@
+[GENERATOR]
+name = APIEnhancement
+version = 0.1
+description = Generator used for API Testing and Enhancement
+author = EnEff-BIM team
+
+[REQUIRES]
+modelicaLibs = [AIXLIB]
+
+[API]
+name = EnEffBIM
+minVer = 1.1
+maxVer = 1.2
+
+[MAPRULES]
+files = RuleSet01.xml
+
+[PYFILTER]
+module = Filter01
+function = filter01
+
+[TEMPLATES]
+topFile = Model.mot
+type = mako

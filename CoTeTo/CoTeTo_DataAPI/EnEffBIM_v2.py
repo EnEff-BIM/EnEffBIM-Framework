@@ -36,12 +36,8 @@ def fetchData(uriList, systemCfg, generatorCfg, logger):
     MapData.transformModel()
     simProject = MapData.simProject
     simSite = simProject.simSite;
-    
-    comDict = MapData.components
-   
+      
     dataDictionary=dict(
-        modelName=simSite,
-        location=simProject.weatherLocation,
-        comDict=comDict
+        MapData = MapData
     )
     return dataDictionary
