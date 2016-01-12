@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimAppObjNameDefault_SpatialZone_CeilingPlenumZone: public ::schema::simxml::ResourcesGeneral::SimAppObjNameDefault_SpatialZone
+      class __declspec(dllexport) SimAppObjNameDefault_SpatialZone_CeilingPlenumZone: public ::schema::simxml::ResourcesGeneral::SimAppObjNameDefault_SpatialZone
       {
         public:
         // Constructors.

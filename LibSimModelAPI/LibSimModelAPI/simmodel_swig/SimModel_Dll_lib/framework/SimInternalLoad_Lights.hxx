@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimInternalLoad_Lights: public ::schema::simxml::ResourcesGeneral::SimInternalLoad
+      class __declspec(dllexport) SimInternalLoad_Lights: public ::schema::simxml::ResourcesGeneral::SimInternalLoad
       {
         public:
         // SimInternalLoad_Name

@@ -268,7 +268,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimMaterialLayer: public ::schema::simxml::SimModelCore::SimResourceObject
+      class __declspec(dllexport) SimMaterialLayer: public ::schema::simxml::SimModelCore::SimResourceObject
       {
         public:
         // LayerMaterial

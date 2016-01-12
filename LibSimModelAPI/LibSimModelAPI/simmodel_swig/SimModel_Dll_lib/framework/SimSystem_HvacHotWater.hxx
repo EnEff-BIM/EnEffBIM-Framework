@@ -257,7 +257,7 @@ namespace schema
   {
     namespace BuildingModel
     {
-      class SimSystem_HvacHotWater: public ::schema::simxml::BuildingModel::SimSystem
+      class __declspec(dllexport) SimSystem_HvacHotWater: public ::schema::simxml::BuildingModel::SimSystem
       {
         public:
         // Constructors.

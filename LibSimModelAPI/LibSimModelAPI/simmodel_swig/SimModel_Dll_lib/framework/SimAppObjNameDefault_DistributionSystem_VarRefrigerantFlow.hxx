@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimAppObjNameDefault_DistributionSystem_VarRefrigerantFlow: public ::schema::simxml::ResourcesGeneral::SimAppObjNameDefault_DistributionSystem
+      class __declspec(dllexport) SimAppObjNameDefault_DistributionSystem_VarRefrigerantFlow: public ::schema::simxml::ResourcesGeneral::SimAppObjNameDefault_DistributionSystem
       {
         public:
         // Constructors.

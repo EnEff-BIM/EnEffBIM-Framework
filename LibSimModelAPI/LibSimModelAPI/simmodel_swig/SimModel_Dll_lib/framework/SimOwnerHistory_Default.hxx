@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimOwnerHistory_Default: public ::schema::simxml::ResourcesGeneral::SimOwnerHistory
+      class __declspec(dllexport) SimOwnerHistory_Default: public ::schema::simxml::ResourcesGeneral::SimOwnerHistory
       {
         public:
         // Constructors.

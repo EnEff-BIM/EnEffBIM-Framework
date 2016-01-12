@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimMaterialLayerSet_OpaqueLayerSet: public ::schema::simxml::ResourcesGeneral::SimMaterialLayerSet
+      class __declspec(dllexport) SimMaterialLayerSet_OpaqueLayerSet: public ::schema::simxml::ResourcesGeneral::SimMaterialLayerSet
       {
         public:
         // SimMatLayerSet_Name

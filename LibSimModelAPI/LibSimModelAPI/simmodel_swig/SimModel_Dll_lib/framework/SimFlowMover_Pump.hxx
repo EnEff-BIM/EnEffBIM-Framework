@@ -257,7 +257,7 @@ namespace schema
   {
     namespace MepModel
     {
-      class SimFlowMover_Pump: public ::schema::simxml::MepModel::SimFlowMover
+      class __declspec(dllexport) SimFlowMover_Pump: public ::schema::simxml::MepModel::SimFlowMover
       {
         public:
         // Constructors.

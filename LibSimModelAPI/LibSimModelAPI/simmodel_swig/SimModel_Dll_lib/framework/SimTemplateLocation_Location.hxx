@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimTemplateLocation_Location: public ::schema::simxml::ResourcesGeneral::SimTemplateLocation
+      class __declspec(dllexport) SimTemplateLocation_Location: public ::schema::simxml::ResourcesGeneral::SimTemplateLocation
       {
         public:
         // Constructors.

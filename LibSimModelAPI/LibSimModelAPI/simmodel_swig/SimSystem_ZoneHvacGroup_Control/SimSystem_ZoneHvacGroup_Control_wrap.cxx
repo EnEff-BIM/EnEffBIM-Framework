@@ -3644,96 +3644,96 @@ namespace Swig {
 #define SWIGTYPE_p_ptr swig_types[229]
 #define SWIGTYPE_p_reverse_iterator swig_types[230]
 #define SWIGTYPE_p_schema__simxml__BuildingModel__SimSystem swig_types[231]
-#define SWIGTYPE_p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup swig_types[232]
-#define SWIGTYPE_p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup_Control swig_types[233]
-#define SWIGTYPE_p_schema__simxml__MepModel__SimFlowEnergyConverter swig_types[234]
-#define SWIGTYPE_p_schema__simxml__Model__SimModel swig_types[235]
-#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimArrayParams swig_types[236]
-#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimNode swig_types[237]
-#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimPort swig_types[238]
-#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimUnitType swig_types[239]
-#define SWIGTYPE_p_schema__simxml__ResourcesGeometry__SimProfileDefinition swig_types[240]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SelectedPropertyGroups swig_types[241]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimActorDefinition swig_types[242]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimAppDefault swig_types[243]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimBldgModelParams swig_types[244]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimBuildingElement swig_types[245]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimDistributionControlElement swig_types[246]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimDistributionElement swig_types[247]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimDistributionFlowElement swig_types[248]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimElement swig_types[249]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimFeatureElement swig_types[250]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimGeometricRepresentationItem swig_types[251]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimGroup swig_types[252]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimObject swig_types[253]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimObjectDefinition swig_types[254]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimObjectPlacement swig_types[255]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimObjectTypeDefinition swig_types[256]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimPropertySetDefinition swig_types[257]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimRepresentation swig_types[258]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimRepresentationItem swig_types[259]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimResourceObject swig_types[260]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimRoot swig_types[261]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimSpatialStructureElement swig_types[262]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimTemplate swig_types[263]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimTopologicalRepresentationItem swig_types[264]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__integerList swig_types[265]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__logical swig_types[266]
-#define SWIGTYPE_p_short swig_types[267]
-#define SWIGTYPE_p_signed_char swig_types[268]
-#define SWIGTYPE_p_size_type swig_types[269]
-#define SWIGTYPE_p_std__auto_ptrT_T_t swig_types[270]
-#define SWIGTYPE_p_std__auto_ptrT_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup_Control_t swig_types[271]
-#define SWIGTYPE_p_std__auto_ptrT_xml_schema__idref_t swig_types[272]
-#define SWIGTYPE_p_std__auto_ptrT_xml_schema__idrefs_t swig_types[273]
-#define SWIGTYPE_p_std__vectorT_xsd__cxx__tree__sequence_common__ptr_std__allocatorT_xsd__cxx__tree__sequence_common__ptr_t_t__size_type swig_types[274]
-#define SWIGTYPE_p_unsigned_char swig_types[275]
-#define SWIGTYPE_p_unsigned_int swig_types[276]
-#define SWIGTYPE_p_unsigned_long_long swig_types[277]
-#define SWIGTYPE_p_unsigned_short swig_types[278]
-#define SWIGTYPE_p_value_type swig_types[279]
-#define SWIGTYPE_p_xercesc__DOMElement swig_types[280]
-#define SWIGTYPE_p_xsd__cxx__tree___type swig_types[281]
-#define SWIGTYPE_p_xsd__cxx__tree__base64_binaryT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[282]
-#define SWIGTYPE_p_xsd__cxx__tree__boundsT_char_t swig_types[283]
-#define SWIGTYPE_p_xsd__cxx__tree__bufferT_char_t swig_types[284]
-#define SWIGTYPE_p_xsd__cxx__tree__content_order swig_types[285]
-#define SWIGTYPE_p_xsd__cxx__tree__dateT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[286]
-#define SWIGTYPE_p_xsd__cxx__tree__date_timeT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[287]
-#define SWIGTYPE_p_xsd__cxx__tree__diagnosticsT_char_t swig_types[288]
-#define SWIGTYPE_p_xsd__cxx__tree__duplicate_idT_char_t swig_types[289]
-#define SWIGTYPE_p_xsd__cxx__tree__durationT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[290]
-#define SWIGTYPE_p_xsd__cxx__tree__entitiesT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__entityT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t_t swig_types[291]
-#define SWIGTYPE_p_xsd__cxx__tree__entityT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t swig_types[292]
-#define SWIGTYPE_p_xsd__cxx__tree__errorT_char_t swig_types[293]
-#define SWIGTYPE_p_xsd__cxx__tree__exceptionT_char_t swig_types[294]
-#define SWIGTYPE_p_xsd__cxx__tree__expected_attributeT_char_t swig_types[295]
-#define SWIGTYPE_p_xsd__cxx__tree__expected_elementT_char_t swig_types[296]
-#define SWIGTYPE_p_xsd__cxx__tree__expected_text_contentT_char_t swig_types[297]
-#define SWIGTYPE_p_xsd__cxx__tree__flags swig_types[298]
-#define SWIGTYPE_p_xsd__cxx__tree__gdayT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[299]
-#define SWIGTYPE_p_xsd__cxx__tree__gmonthT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[300]
-#define SWIGTYPE_p_xsd__cxx__tree__gmonth_dayT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[301]
-#define SWIGTYPE_p_xsd__cxx__tree__gyearT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[302]
-#define SWIGTYPE_p_xsd__cxx__tree__gyear_monthT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[303]
-#define SWIGTYPE_p_xsd__cxx__tree__hex_binaryT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[304]
-#define SWIGTYPE_p_xsd__cxx__tree__idT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t swig_types[305]
-#define SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t swig_types[306]
-#define SWIGTYPE_p_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t swig_types[307]
-#define SWIGTYPE_p_xsd__cxx__tree__languageT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t swig_types[308]
-#define SWIGTYPE_p_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t swig_types[309]
-#define SWIGTYPE_p_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t swig_types[310]
-#define SWIGTYPE_p_xsd__cxx__tree__nmtokenT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t swig_types[311]
-#define SWIGTYPE_p_xsd__cxx__tree__nmtokensT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__nmtokenT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t swig_types[312]
-#define SWIGTYPE_p_xsd__cxx__tree__no_prefix_mappingT_char_t swig_types[313]
-#define SWIGTYPE_p_xsd__cxx__tree__no_type_infoT_char_t swig_types[314]
-#define SWIGTYPE_p_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t swig_types[315]
-#define SWIGTYPE_p_xsd__cxx__tree__not_derivedT_char_t swig_types[316]
-#define SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t swig_types[317]
-#define SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_t__r_t swig_types[318]
-#define SWIGTYPE_p_xsd__cxx__tree__parsingT_char_t swig_types[319]
-#define SWIGTYPE_p_xsd__cxx__tree__propertiesT_char_t swig_types[320]
-#define SWIGTYPE_p_xsd__cxx__tree__qnameT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__uriT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t swig_types[321]
+#define SWIGTYPE_p_schema__simxml__BuildingModel__SimSystem_HvacHotWater swig_types[232]
+#define SWIGTYPE_p_schema__simxml__BuildingModel__SimSystem_HvacHotWater_Control swig_types[233]
+#define SWIGTYPE_p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup swig_types[234]
+#define SWIGTYPE_p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup_Control swig_types[235]
+#define SWIGTYPE_p_schema__simxml__MepModel__SimFlowEnergyConverter swig_types[236]
+#define SWIGTYPE_p_schema__simxml__Model__SimModel swig_types[237]
+#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimArrayParams swig_types[238]
+#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimNode swig_types[239]
+#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimPort swig_types[240]
+#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimUnitType swig_types[241]
+#define SWIGTYPE_p_schema__simxml__ResourcesGeometry__SimProfileDefinition swig_types[242]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SelectedPropertyGroups swig_types[243]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimActorDefinition swig_types[244]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimAppDefault swig_types[245]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimBldgModelParams swig_types[246]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimBuildingElement swig_types[247]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimDistributionControlElement swig_types[248]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimDistributionElement swig_types[249]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimDistributionFlowElement swig_types[250]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimElement swig_types[251]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimFeatureElement swig_types[252]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimGeometricRepresentationItem swig_types[253]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimGroup swig_types[254]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimObject swig_types[255]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimObjectDefinition swig_types[256]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimObjectPlacement swig_types[257]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimObjectTypeDefinition swig_types[258]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimPropertySetDefinition swig_types[259]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimRepresentation swig_types[260]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimRepresentationItem swig_types[261]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimResourceObject swig_types[262]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimRoot swig_types[263]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimSpatialStructureElement swig_types[264]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimTemplate swig_types[265]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimTopologicalRepresentationItem swig_types[266]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__doubleList swig_types[267]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__integerList swig_types[268]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__logical swig_types[269]
+#define SWIGTYPE_p_short swig_types[270]
+#define SWIGTYPE_p_signed_char swig_types[271]
+#define SWIGTYPE_p_size_type swig_types[272]
+#define SWIGTYPE_p_std__auto_ptrT_T_t swig_types[273]
+#define SWIGTYPE_p_std__auto_ptrT_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup_Control_t swig_types[274]
+#define SWIGTYPE_p_std__vectorT_xsd__cxx__tree__sequence_common__ptr_std__allocatorT_xsd__cxx__tree__sequence_common__ptr_t_t__size_type swig_types[275]
+#define SWIGTYPE_p_unsigned_char swig_types[276]
+#define SWIGTYPE_p_unsigned_int swig_types[277]
+#define SWIGTYPE_p_unsigned_long_long swig_types[278]
+#define SWIGTYPE_p_unsigned_short swig_types[279]
+#define SWIGTYPE_p_value_type swig_types[280]
+#define SWIGTYPE_p_xercesc__DOMElement swig_types[281]
+#define SWIGTYPE_p_xsd__cxx__tree___type swig_types[282]
+#define SWIGTYPE_p_xsd__cxx__tree__base64_binaryT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[283]
+#define SWIGTYPE_p_xsd__cxx__tree__boundsT_char_t swig_types[284]
+#define SWIGTYPE_p_xsd__cxx__tree__bufferT_char_t swig_types[285]
+#define SWIGTYPE_p_xsd__cxx__tree__content_order swig_types[286]
+#define SWIGTYPE_p_xsd__cxx__tree__dateT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[287]
+#define SWIGTYPE_p_xsd__cxx__tree__date_timeT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[288]
+#define SWIGTYPE_p_xsd__cxx__tree__diagnosticsT_char_t swig_types[289]
+#define SWIGTYPE_p_xsd__cxx__tree__duplicate_idT_char_t swig_types[290]
+#define SWIGTYPE_p_xsd__cxx__tree__durationT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[291]
+#define SWIGTYPE_p_xsd__cxx__tree__entitiesT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__entityT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t_t swig_types[292]
+#define SWIGTYPE_p_xsd__cxx__tree__entityT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t swig_types[293]
+#define SWIGTYPE_p_xsd__cxx__tree__errorT_char_t swig_types[294]
+#define SWIGTYPE_p_xsd__cxx__tree__exceptionT_char_t swig_types[295]
+#define SWIGTYPE_p_xsd__cxx__tree__expected_attributeT_char_t swig_types[296]
+#define SWIGTYPE_p_xsd__cxx__tree__expected_elementT_char_t swig_types[297]
+#define SWIGTYPE_p_xsd__cxx__tree__expected_text_contentT_char_t swig_types[298]
+#define SWIGTYPE_p_xsd__cxx__tree__flags swig_types[299]
+#define SWIGTYPE_p_xsd__cxx__tree__gdayT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[300]
+#define SWIGTYPE_p_xsd__cxx__tree__gmonthT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[301]
+#define SWIGTYPE_p_xsd__cxx__tree__gmonth_dayT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[302]
+#define SWIGTYPE_p_xsd__cxx__tree__gyearT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[303]
+#define SWIGTYPE_p_xsd__cxx__tree__gyear_monthT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[304]
+#define SWIGTYPE_p_xsd__cxx__tree__hex_binaryT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[305]
+#define SWIGTYPE_p_xsd__cxx__tree__idT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t swig_types[306]
+#define SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t swig_types[307]
+#define SWIGTYPE_p_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t swig_types[308]
+#define SWIGTYPE_p_xsd__cxx__tree__languageT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t swig_types[309]
+#define SWIGTYPE_p_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t swig_types[310]
+#define SWIGTYPE_p_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t swig_types[311]
+#define SWIGTYPE_p_xsd__cxx__tree__nmtokenT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t swig_types[312]
+#define SWIGTYPE_p_xsd__cxx__tree__nmtokensT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__nmtokenT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t swig_types[313]
+#define SWIGTYPE_p_xsd__cxx__tree__no_prefix_mappingT_char_t swig_types[314]
+#define SWIGTYPE_p_xsd__cxx__tree__no_type_infoT_char_t swig_types[315]
+#define SWIGTYPE_p_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t swig_types[316]
+#define SWIGTYPE_p_xsd__cxx__tree__not_derivedT_char_t swig_types[317]
+#define SWIGTYPE_p_xsd__cxx__tree__parsingT_char_t swig_types[318]
+#define SWIGTYPE_p_xsd__cxx__tree__propertiesT_char_t swig_types[319]
+#define SWIGTYPE_p_xsd__cxx__tree__qnameT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__uriT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t swig_types[320]
+#define SWIGTYPE_p_xsd__cxx__tree__sequenceT_schema__simxml__BuildingModel__SimSystem_HvacHotWater_Control_false_t swig_types[321]
 #define SWIGTYPE_p_xsd__cxx__tree__sequenceT_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup_Control_false_t swig_types[322]
 #define SWIGTYPE_p_xsd__cxx__tree__sequence_common swig_types[323]
 #define SWIGTYPE_p_xsd__cxx__tree__severity swig_types[324]
@@ -4163,1283 +4163,6 @@ SWIG_AsVal_bool (PyObject *obj, bool *val)
 #ifdef __cplusplus
 extern "C" {
 #endif
-SWIGINTERN PyObject *_wrap_SimSystem_ParentSystem__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  schema::simxml::BuildingModel::SimSystem *arg1 = (schema::simxml::BuildingModel::SimSystem *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  schema::simxml::BuildingModel::SimSystem::ParentSystem_optional *result = 0 ;
-  
-  if (!PyArg_ParseTuple(args,(char *)"O:SimSystem_ParentSystem",&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_schema__simxml__BuildingModel__SimSystem, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimSystem_ParentSystem" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimSystem const *""'"); 
-  }
-  arg1 = reinterpret_cast< schema::simxml::BuildingModel::SimSystem * >(argp1);
-  result = (schema::simxml::BuildingModel::SimSystem::ParentSystem_optional *) &((schema::simxml::BuildingModel::SimSystem const *)arg1)->ParentSystem();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t, 0 |  0 );
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_SimSystem_ParentSystem__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  schema::simxml::BuildingModel::SimSystem *arg1 = (schema::simxml::BuildingModel::SimSystem *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  schema::simxml::BuildingModel::SimSystem::ParentSystem_optional *result = 0 ;
-  
-  if (!PyArg_ParseTuple(args,(char *)"O:SimSystem_ParentSystem",&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_schema__simxml__BuildingModel__SimSystem, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimSystem_ParentSystem" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimSystem *""'"); 
-  }
-  arg1 = reinterpret_cast< schema::simxml::BuildingModel::SimSystem * >(argp1);
-  result = (schema::simxml::BuildingModel::SimSystem::ParentSystem_optional *) &(arg1)->ParentSystem();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t, 0 |  0 );
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_SimSystem_ParentSystem__SWIG_2(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  schema::simxml::BuildingModel::SimSystem *arg1 = (schema::simxml::BuildingModel::SimSystem *) 0 ;
-  schema::simxml::BuildingModel::SimSystem::ParentSystem_type *arg2 = 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp2 = 0 ;
-  int res2 = 0 ;
-  PyObject * obj0 = 0 ;
-  PyObject * obj1 = 0 ;
-  
-  if (!PyArg_ParseTuple(args,(char *)"OO:SimSystem_ParentSystem",&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_schema__simxml__BuildingModel__SimSystem, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimSystem_ParentSystem" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimSystem *""'"); 
-  }
-  arg1 = reinterpret_cast< schema::simxml::BuildingModel::SimSystem * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t,  0  | 0);
-  if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimSystem_ParentSystem" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimSystem::ParentSystem_type const &""'"); 
-  }
-  if (!argp2) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "SimSystem_ParentSystem" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimSystem::ParentSystem_type const &""'"); 
-  }
-  arg2 = reinterpret_cast< schema::simxml::BuildingModel::SimSystem::ParentSystem_type * >(argp2);
-  (arg1)->ParentSystem((schema::simxml::BuildingModel::SimSystem::ParentSystem_type const &)*arg2);
-  resultobj = SWIG_Py_Void();
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_SimSystem_ParentSystem__SWIG_3(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  schema::simxml::BuildingModel::SimSystem *arg1 = (schema::simxml::BuildingModel::SimSystem *) 0 ;
-  schema::simxml::BuildingModel::SimSystem::ParentSystem_optional *arg2 = 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp2 = 0 ;
-  int res2 = 0 ;
-  PyObject * obj0 = 0 ;
-  PyObject * obj1 = 0 ;
-  
-  if (!PyArg_ParseTuple(args,(char *)"OO:SimSystem_ParentSystem",&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_schema__simxml__BuildingModel__SimSystem, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimSystem_ParentSystem" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimSystem *""'"); 
-  }
-  arg1 = reinterpret_cast< schema::simxml::BuildingModel::SimSystem * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t,  0  | 0);
-  if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimSystem_ParentSystem" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimSystem::ParentSystem_optional const &""'"); 
-  }
-  if (!argp2) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "SimSystem_ParentSystem" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimSystem::ParentSystem_optional const &""'"); 
-  }
-  arg2 = reinterpret_cast< schema::simxml::BuildingModel::SimSystem::ParentSystem_optional * >(argp2);
-  (arg1)->ParentSystem((schema::simxml::BuildingModel::SimSystem::ParentSystem_optional const &)*arg2);
-  resultobj = SWIG_Py_Void();
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_SimSystem_ParentSystem__SWIG_4(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  schema::simxml::BuildingModel::SimSystem *arg1 = (schema::simxml::BuildingModel::SimSystem *) 0 ;
-  ::std::auto_ptr< schema::simxml::BuildingModel::SimSystem::ParentSystem_type > arg2 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp2 ;
-  int res2 = 0 ;
-  PyObject * obj0 = 0 ;
-  PyObject * obj1 = 0 ;
-  
-  if (!PyArg_ParseTuple(args,(char *)"OO:SimSystem_ParentSystem",&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_schema__simxml__BuildingModel__SimSystem, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimSystem_ParentSystem" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimSystem *""'"); 
-  }
-  arg1 = reinterpret_cast< schema::simxml::BuildingModel::SimSystem * >(argp1);
-  {
-    res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_std__auto_ptrT_xml_schema__idref_t,  0  | 0);
-    if (!SWIG_IsOK(res2)) {
-      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimSystem_ParentSystem" "', argument " "2"" of type '" "::std::auto_ptr< schema::simxml::BuildingModel::SimSystem::ParentSystem_type >""'"); 
-    }  
-    if (!argp2) {
-      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "SimSystem_ParentSystem" "', argument " "2"" of type '" "::std::auto_ptr< schema::simxml::BuildingModel::SimSystem::ParentSystem_type >""'");
-    } else {
-      ::std::auto_ptr< schema::simxml::BuildingModel::SimSystem::ParentSystem_type > * temp = reinterpret_cast< ::std::auto_ptr< schema::simxml::BuildingModel::SimSystem::ParentSystem_type > * >(argp2);
-      arg2 = *temp;
-      if (SWIG_IsNewObj(res2)) delete temp;
-    }
-  }
-  (arg1)->ParentSystem(arg2);
-  resultobj = SWIG_Py_Void();
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_SimSystem_ParentSystem(PyObject *self, PyObject *args) {
-  int argc;
-  PyObject *argv[3] = {
-    0
-  };
-  int ii;
-  
-  if (!PyTuple_Check(args)) SWIG_fail;
-  argc = args ? (int)PyObject_Length(args) : 0;
-  for (ii = 0; (ii < 2) && (ii < argc); ii++) {
-    argv[ii] = PyTuple_GET_ITEM(args,ii);
-  }
-  if (argc == 1) {
-    int _v;
-    void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__BuildingModel__SimSystem, 0);
-    _v = SWIG_CheckState(res);
-    if (_v) {
-      return _wrap_SimSystem_ParentSystem__SWIG_1(self, args);
-    }
-  }
-  if (argc == 1) {
-    int _v;
-    void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__BuildingModel__SimSystem, 0);
-    _v = SWIG_CheckState(res);
-    if (_v) {
-      return _wrap_SimSystem_ParentSystem__SWIG_0(self, args);
-    }
-  }
-  if (argc == 2) {
-    int _v;
-    void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__BuildingModel__SimSystem, 0);
-    _v = SWIG_CheckState(res);
-    if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t, 0);
-      _v = SWIG_CheckState(res);
-      if (_v) {
-        return _wrap_SimSystem_ParentSystem__SWIG_2(self, args);
-      }
-    }
-  }
-  if (argc == 2) {
-    int _v;
-    void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__BuildingModel__SimSystem, 0);
-    _v = SWIG_CheckState(res);
-    if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t, 0);
-      _v = SWIG_CheckState(res);
-      if (_v) {
-        return _wrap_SimSystem_ParentSystem__SWIG_3(self, args);
-      }
-    }
-  }
-  if (argc == 2) {
-    int _v;
-    void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__BuildingModel__SimSystem, 0);
-    _v = SWIG_CheckState(res);
-    if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_std__auto_ptrT_xml_schema__idref_t, 0);
-      _v = SWIG_CheckState(res);
-      if (_v) {
-        return _wrap_SimSystem_ParentSystem__SWIG_4(self, args);
-      }
-    }
-  }
-  
-fail:
-  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'SimSystem_ParentSystem'.\n"
-    "  Possible C/C++ prototypes are:\n"
-    "    schema::simxml::BuildingModel::SimSystem::ParentSystem() const\n"
-    "    schema::simxml::BuildingModel::SimSystem::ParentSystem()\n"
-    "    schema::simxml::BuildingModel::SimSystem::ParentSystem(schema::simxml::BuildingModel::SimSystem::ParentSystem_type const &)\n"
-    "    schema::simxml::BuildingModel::SimSystem::ParentSystem(schema::simxml::BuildingModel::SimSystem::ParentSystem_optional const &)\n"
-    "    schema::simxml::BuildingModel::SimSystem::ParentSystem(::std::auto_ptr< schema::simxml::BuildingModel::SimSystem::ParentSystem_type >)\n");
-  return 0;
-}
-
-
-SWIGINTERN PyObject *_wrap_SimSystem_SystemServicesSpatialElements__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  schema::simxml::BuildingModel::SimSystem *arg1 = (schema::simxml::BuildingModel::SimSystem *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  schema::simxml::BuildingModel::SimSystem::SystemServicesSpatialElements_optional *result = 0 ;
-  
-  if (!PyArg_ParseTuple(args,(char *)"O:SimSystem_SystemServicesSpatialElements",&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_schema__simxml__BuildingModel__SimSystem, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimSystem_SystemServicesSpatialElements" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimSystem const *""'"); 
-  }
-  arg1 = reinterpret_cast< schema::simxml::BuildingModel::SimSystem * >(argp1);
-  result = (schema::simxml::BuildingModel::SimSystem::SystemServicesSpatialElements_optional *) &((schema::simxml::BuildingModel::SimSystem const *)arg1)->SystemServicesSpatialElements();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_t__r_t, 0 |  0 );
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_SimSystem_SystemServicesSpatialElements__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  schema::simxml::BuildingModel::SimSystem *arg1 = (schema::simxml::BuildingModel::SimSystem *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  schema::simxml::BuildingModel::SimSystem::SystemServicesSpatialElements_optional *result = 0 ;
-  
-  if (!PyArg_ParseTuple(args,(char *)"O:SimSystem_SystemServicesSpatialElements",&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_schema__simxml__BuildingModel__SimSystem, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimSystem_SystemServicesSpatialElements" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimSystem *""'"); 
-  }
-  arg1 = reinterpret_cast< schema::simxml::BuildingModel::SimSystem * >(argp1);
-  result = (schema::simxml::BuildingModel::SimSystem::SystemServicesSpatialElements_optional *) &(arg1)->SystemServicesSpatialElements();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_t__r_t, 0 |  0 );
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_SimSystem_SystemServicesSpatialElements__SWIG_2(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  schema::simxml::BuildingModel::SimSystem *arg1 = (schema::simxml::BuildingModel::SimSystem *) 0 ;
-  schema::simxml::BuildingModel::SimSystem::SystemServicesSpatialElements_type *arg2 = 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp2 = 0 ;
-  int res2 = 0 ;
-  PyObject * obj0 = 0 ;
-  PyObject * obj1 = 0 ;
-  
-  if (!PyArg_ParseTuple(args,(char *)"OO:SimSystem_SystemServicesSpatialElements",&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_schema__simxml__BuildingModel__SimSystem, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimSystem_SystemServicesSpatialElements" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimSystem *""'"); 
-  }
-  arg1 = reinterpret_cast< schema::simxml::BuildingModel::SimSystem * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t,  0  | 0);
-  if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimSystem_SystemServicesSpatialElements" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimSystem::SystemServicesSpatialElements_type const &""'"); 
-  }
-  if (!argp2) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "SimSystem_SystemServicesSpatialElements" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimSystem::SystemServicesSpatialElements_type const &""'"); 
-  }
-  arg2 = reinterpret_cast< schema::simxml::BuildingModel::SimSystem::SystemServicesSpatialElements_type * >(argp2);
-  (arg1)->SystemServicesSpatialElements((schema::simxml::BuildingModel::SimSystem::SystemServicesSpatialElements_type const &)*arg2);
-  resultobj = SWIG_Py_Void();
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_SimSystem_SystemServicesSpatialElements__SWIG_3(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  schema::simxml::BuildingModel::SimSystem *arg1 = (schema::simxml::BuildingModel::SimSystem *) 0 ;
-  schema::simxml::BuildingModel::SimSystem::SystemServicesSpatialElements_optional *arg2 = 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp2 = 0 ;
-  int res2 = 0 ;
-  PyObject * obj0 = 0 ;
-  PyObject * obj1 = 0 ;
-  
-  if (!PyArg_ParseTuple(args,(char *)"OO:SimSystem_SystemServicesSpatialElements",&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_schema__simxml__BuildingModel__SimSystem, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimSystem_SystemServicesSpatialElements" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimSystem *""'"); 
-  }
-  arg1 = reinterpret_cast< schema::simxml::BuildingModel::SimSystem * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_t__r_t,  0  | 0);
-  if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimSystem_SystemServicesSpatialElements" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimSystem::SystemServicesSpatialElements_optional const &""'"); 
-  }
-  if (!argp2) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "SimSystem_SystemServicesSpatialElements" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimSystem::SystemServicesSpatialElements_optional const &""'"); 
-  }
-  arg2 = reinterpret_cast< schema::simxml::BuildingModel::SimSystem::SystemServicesSpatialElements_optional * >(argp2);
-  (arg1)->SystemServicesSpatialElements((schema::simxml::BuildingModel::SimSystem::SystemServicesSpatialElements_optional const &)*arg2);
-  resultobj = SWIG_Py_Void();
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_SimSystem_SystemServicesSpatialElements__SWIG_4(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  schema::simxml::BuildingModel::SimSystem *arg1 = (schema::simxml::BuildingModel::SimSystem *) 0 ;
-  ::std::auto_ptr< schema::simxml::BuildingModel::SimSystem::SystemServicesSpatialElements_type > arg2 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp2 ;
-  int res2 = 0 ;
-  PyObject * obj0 = 0 ;
-  PyObject * obj1 = 0 ;
-  
-  if (!PyArg_ParseTuple(args,(char *)"OO:SimSystem_SystemServicesSpatialElements",&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_schema__simxml__BuildingModel__SimSystem, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimSystem_SystemServicesSpatialElements" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimSystem *""'"); 
-  }
-  arg1 = reinterpret_cast< schema::simxml::BuildingModel::SimSystem * >(argp1);
-  {
-    res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_std__auto_ptrT_xml_schema__idrefs_t,  0  | 0);
-    if (!SWIG_IsOK(res2)) {
-      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimSystem_SystemServicesSpatialElements" "', argument " "2"" of type '" "::std::auto_ptr< schema::simxml::BuildingModel::SimSystem::SystemServicesSpatialElements_type >""'"); 
-    }  
-    if (!argp2) {
-      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "SimSystem_SystemServicesSpatialElements" "', argument " "2"" of type '" "::std::auto_ptr< schema::simxml::BuildingModel::SimSystem::SystemServicesSpatialElements_type >""'");
-    } else {
-      ::std::auto_ptr< schema::simxml::BuildingModel::SimSystem::SystemServicesSpatialElements_type > * temp = reinterpret_cast< ::std::auto_ptr< schema::simxml::BuildingModel::SimSystem::SystemServicesSpatialElements_type > * >(argp2);
-      arg2 = *temp;
-      if (SWIG_IsNewObj(res2)) delete temp;
-    }
-  }
-  (arg1)->SystemServicesSpatialElements(arg2);
-  resultobj = SWIG_Py_Void();
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_SimSystem_SystemServicesSpatialElements(PyObject *self, PyObject *args) {
-  int argc;
-  PyObject *argv[3] = {
-    0
-  };
-  int ii;
-  
-  if (!PyTuple_Check(args)) SWIG_fail;
-  argc = args ? (int)PyObject_Length(args) : 0;
-  for (ii = 0; (ii < 2) && (ii < argc); ii++) {
-    argv[ii] = PyTuple_GET_ITEM(args,ii);
-  }
-  if (argc == 1) {
-    int _v;
-    void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__BuildingModel__SimSystem, 0);
-    _v = SWIG_CheckState(res);
-    if (_v) {
-      return _wrap_SimSystem_SystemServicesSpatialElements__SWIG_1(self, args);
-    }
-  }
-  if (argc == 1) {
-    int _v;
-    void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__BuildingModel__SimSystem, 0);
-    _v = SWIG_CheckState(res);
-    if (_v) {
-      return _wrap_SimSystem_SystemServicesSpatialElements__SWIG_0(self, args);
-    }
-  }
-  if (argc == 2) {
-    int _v;
-    void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__BuildingModel__SimSystem, 0);
-    _v = SWIG_CheckState(res);
-    if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t, 0);
-      _v = SWIG_CheckState(res);
-      if (_v) {
-        return _wrap_SimSystem_SystemServicesSpatialElements__SWIG_2(self, args);
-      }
-    }
-  }
-  if (argc == 2) {
-    int _v;
-    void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__BuildingModel__SimSystem, 0);
-    _v = SWIG_CheckState(res);
-    if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_t__r_t, 0);
-      _v = SWIG_CheckState(res);
-      if (_v) {
-        return _wrap_SimSystem_SystemServicesSpatialElements__SWIG_3(self, args);
-      }
-    }
-  }
-  if (argc == 2) {
-    int _v;
-    void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__BuildingModel__SimSystem, 0);
-    _v = SWIG_CheckState(res);
-    if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_std__auto_ptrT_xml_schema__idrefs_t, 0);
-      _v = SWIG_CheckState(res);
-      if (_v) {
-        return _wrap_SimSystem_SystemServicesSpatialElements__SWIG_4(self, args);
-      }
-    }
-  }
-  
-fail:
-  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'SimSystem_SystemServicesSpatialElements'.\n"
-    "  Possible C/C++ prototypes are:\n"
-    "    schema::simxml::BuildingModel::SimSystem::SystemServicesSpatialElements() const\n"
-    "    schema::simxml::BuildingModel::SimSystem::SystemServicesSpatialElements()\n"
-    "    schema::simxml::BuildingModel::SimSystem::SystemServicesSpatialElements(schema::simxml::BuildingModel::SimSystem::SystemServicesSpatialElements_type const &)\n"
-    "    schema::simxml::BuildingModel::SimSystem::SystemServicesSpatialElements(schema::simxml::BuildingModel::SimSystem::SystemServicesSpatialElements_optional const &)\n"
-    "    schema::simxml::BuildingModel::SimSystem::SystemServicesSpatialElements(::std::auto_ptr< schema::simxml::BuildingModel::SimSystem::SystemServicesSpatialElements_type >)\n");
-  return 0;
-}
-
-
-SWIGINTERN PyObject *_wrap_SimSystem_HvacSystemSizingParams__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  schema::simxml::BuildingModel::SimSystem *arg1 = (schema::simxml::BuildingModel::SimSystem *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  schema::simxml::BuildingModel::SimSystem::HvacSystemSizingParams_optional *result = 0 ;
-  
-  if (!PyArg_ParseTuple(args,(char *)"O:SimSystem_HvacSystemSizingParams",&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_schema__simxml__BuildingModel__SimSystem, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimSystem_HvacSystemSizingParams" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimSystem const *""'"); 
-  }
-  arg1 = reinterpret_cast< schema::simxml::BuildingModel::SimSystem * >(argp1);
-  result = (schema::simxml::BuildingModel::SimSystem::HvacSystemSizingParams_optional *) &((schema::simxml::BuildingModel::SimSystem const *)arg1)->HvacSystemSizingParams();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t, 0 |  0 );
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_SimSystem_HvacSystemSizingParams__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  schema::simxml::BuildingModel::SimSystem *arg1 = (schema::simxml::BuildingModel::SimSystem *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  schema::simxml::BuildingModel::SimSystem::HvacSystemSizingParams_optional *result = 0 ;
-  
-  if (!PyArg_ParseTuple(args,(char *)"O:SimSystem_HvacSystemSizingParams",&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_schema__simxml__BuildingModel__SimSystem, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimSystem_HvacSystemSizingParams" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimSystem *""'"); 
-  }
-  arg1 = reinterpret_cast< schema::simxml::BuildingModel::SimSystem * >(argp1);
-  result = (schema::simxml::BuildingModel::SimSystem::HvacSystemSizingParams_optional *) &(arg1)->HvacSystemSizingParams();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t, 0 |  0 );
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_SimSystem_HvacSystemSizingParams__SWIG_2(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  schema::simxml::BuildingModel::SimSystem *arg1 = (schema::simxml::BuildingModel::SimSystem *) 0 ;
-  schema::simxml::BuildingModel::SimSystem::HvacSystemSizingParams_type *arg2 = 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp2 = 0 ;
-  int res2 = 0 ;
-  PyObject * obj0 = 0 ;
-  PyObject * obj1 = 0 ;
-  
-  if (!PyArg_ParseTuple(args,(char *)"OO:SimSystem_HvacSystemSizingParams",&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_schema__simxml__BuildingModel__SimSystem, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimSystem_HvacSystemSizingParams" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimSystem *""'"); 
-  }
-  arg1 = reinterpret_cast< schema::simxml::BuildingModel::SimSystem * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t,  0  | 0);
-  if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimSystem_HvacSystemSizingParams" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimSystem::HvacSystemSizingParams_type const &""'"); 
-  }
-  if (!argp2) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "SimSystem_HvacSystemSizingParams" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimSystem::HvacSystemSizingParams_type const &""'"); 
-  }
-  arg2 = reinterpret_cast< schema::simxml::BuildingModel::SimSystem::HvacSystemSizingParams_type * >(argp2);
-  (arg1)->HvacSystemSizingParams((schema::simxml::BuildingModel::SimSystem::HvacSystemSizingParams_type const &)*arg2);
-  resultobj = SWIG_Py_Void();
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_SimSystem_HvacSystemSizingParams__SWIG_3(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  schema::simxml::BuildingModel::SimSystem *arg1 = (schema::simxml::BuildingModel::SimSystem *) 0 ;
-  schema::simxml::BuildingModel::SimSystem::HvacSystemSizingParams_optional *arg2 = 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp2 = 0 ;
-  int res2 = 0 ;
-  PyObject * obj0 = 0 ;
-  PyObject * obj1 = 0 ;
-  
-  if (!PyArg_ParseTuple(args,(char *)"OO:SimSystem_HvacSystemSizingParams",&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_schema__simxml__BuildingModel__SimSystem, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimSystem_HvacSystemSizingParams" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimSystem *""'"); 
-  }
-  arg1 = reinterpret_cast< schema::simxml::BuildingModel::SimSystem * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t,  0  | 0);
-  if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimSystem_HvacSystemSizingParams" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimSystem::HvacSystemSizingParams_optional const &""'"); 
-  }
-  if (!argp2) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "SimSystem_HvacSystemSizingParams" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimSystem::HvacSystemSizingParams_optional const &""'"); 
-  }
-  arg2 = reinterpret_cast< schema::simxml::BuildingModel::SimSystem::HvacSystemSizingParams_optional * >(argp2);
-  (arg1)->HvacSystemSizingParams((schema::simxml::BuildingModel::SimSystem::HvacSystemSizingParams_optional const &)*arg2);
-  resultobj = SWIG_Py_Void();
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_SimSystem_HvacSystemSizingParams__SWIG_4(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  schema::simxml::BuildingModel::SimSystem *arg1 = (schema::simxml::BuildingModel::SimSystem *) 0 ;
-  ::std::auto_ptr< schema::simxml::BuildingModel::SimSystem::HvacSystemSizingParams_type > arg2 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp2 ;
-  int res2 = 0 ;
-  PyObject * obj0 = 0 ;
-  PyObject * obj1 = 0 ;
-  
-  if (!PyArg_ParseTuple(args,(char *)"OO:SimSystem_HvacSystemSizingParams",&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_schema__simxml__BuildingModel__SimSystem, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimSystem_HvacSystemSizingParams" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimSystem *""'"); 
-  }
-  arg1 = reinterpret_cast< schema::simxml::BuildingModel::SimSystem * >(argp1);
-  {
-    res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_std__auto_ptrT_xml_schema__idref_t,  0  | 0);
-    if (!SWIG_IsOK(res2)) {
-      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimSystem_HvacSystemSizingParams" "', argument " "2"" of type '" "::std::auto_ptr< schema::simxml::BuildingModel::SimSystem::HvacSystemSizingParams_type >""'"); 
-    }  
-    if (!argp2) {
-      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "SimSystem_HvacSystemSizingParams" "', argument " "2"" of type '" "::std::auto_ptr< schema::simxml::BuildingModel::SimSystem::HvacSystemSizingParams_type >""'");
-    } else {
-      ::std::auto_ptr< schema::simxml::BuildingModel::SimSystem::HvacSystemSizingParams_type > * temp = reinterpret_cast< ::std::auto_ptr< schema::simxml::BuildingModel::SimSystem::HvacSystemSizingParams_type > * >(argp2);
-      arg2 = *temp;
-      if (SWIG_IsNewObj(res2)) delete temp;
-    }
-  }
-  (arg1)->HvacSystemSizingParams(arg2);
-  resultobj = SWIG_Py_Void();
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_SimSystem_HvacSystemSizingParams(PyObject *self, PyObject *args) {
-  int argc;
-  PyObject *argv[3] = {
-    0
-  };
-  int ii;
-  
-  if (!PyTuple_Check(args)) SWIG_fail;
-  argc = args ? (int)PyObject_Length(args) : 0;
-  for (ii = 0; (ii < 2) && (ii < argc); ii++) {
-    argv[ii] = PyTuple_GET_ITEM(args,ii);
-  }
-  if (argc == 1) {
-    int _v;
-    void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__BuildingModel__SimSystem, 0);
-    _v = SWIG_CheckState(res);
-    if (_v) {
-      return _wrap_SimSystem_HvacSystemSizingParams__SWIG_1(self, args);
-    }
-  }
-  if (argc == 1) {
-    int _v;
-    void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__BuildingModel__SimSystem, 0);
-    _v = SWIG_CheckState(res);
-    if (_v) {
-      return _wrap_SimSystem_HvacSystemSizingParams__SWIG_0(self, args);
-    }
-  }
-  if (argc == 2) {
-    int _v;
-    void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__BuildingModel__SimSystem, 0);
-    _v = SWIG_CheckState(res);
-    if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t, 0);
-      _v = SWIG_CheckState(res);
-      if (_v) {
-        return _wrap_SimSystem_HvacSystemSizingParams__SWIG_2(self, args);
-      }
-    }
-  }
-  if (argc == 2) {
-    int _v;
-    void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__BuildingModel__SimSystem, 0);
-    _v = SWIG_CheckState(res);
-    if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t, 0);
-      _v = SWIG_CheckState(res);
-      if (_v) {
-        return _wrap_SimSystem_HvacSystemSizingParams__SWIG_3(self, args);
-      }
-    }
-  }
-  if (argc == 2) {
-    int _v;
-    void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__BuildingModel__SimSystem, 0);
-    _v = SWIG_CheckState(res);
-    if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_std__auto_ptrT_xml_schema__idref_t, 0);
-      _v = SWIG_CheckState(res);
-      if (_v) {
-        return _wrap_SimSystem_HvacSystemSizingParams__SWIG_4(self, args);
-      }
-    }
-  }
-  
-fail:
-  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'SimSystem_HvacSystemSizingParams'.\n"
-    "  Possible C/C++ prototypes are:\n"
-    "    schema::simxml::BuildingModel::SimSystem::HvacSystemSizingParams() const\n"
-    "    schema::simxml::BuildingModel::SimSystem::HvacSystemSizingParams()\n"
-    "    schema::simxml::BuildingModel::SimSystem::HvacSystemSizingParams(schema::simxml::BuildingModel::SimSystem::HvacSystemSizingParams_type const &)\n"
-    "    schema::simxml::BuildingModel::SimSystem::HvacSystemSizingParams(schema::simxml::BuildingModel::SimSystem::HvacSystemSizingParams_optional const &)\n"
-    "    schema::simxml::BuildingModel::SimSystem::HvacSystemSizingParams(::std::auto_ptr< schema::simxml::BuildingModel::SimSystem::HvacSystemSizingParams_type >)\n");
-  return 0;
-}
-
-
-SWIGINTERN PyObject *_wrap_new_SimSystem__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  schema::simxml::BuildingModel::SimSystem *result = 0 ;
-  
-  if (!PyArg_ParseTuple(args,(char *)":new_SimSystem")) SWIG_fail;
-  result = (schema::simxml::BuildingModel::SimSystem *)new schema::simxml::BuildingModel::SimSystem();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_schema__simxml__BuildingModel__SimSystem, SWIG_POINTER_NEW |  0 );
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_new_SimSystem__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  schema::simxml::SimModelCore::SimRoot::RefId_type *arg1 = 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  schema::simxml::BuildingModel::SimSystem *result = 0 ;
-  
-  if (!PyArg_ParseTuple(args,(char *)"O:new_SimSystem",&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1, SWIGTYPE_p_xsd__cxx__tree__idT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t,  0  | 0);
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "new_SimSystem" "', argument " "1"" of type '" "schema::simxml::SimModelCore::SimRoot::RefId_type const &""'"); 
-  }
-  if (!argp1) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "new_SimSystem" "', argument " "1"" of type '" "schema::simxml::SimModelCore::SimRoot::RefId_type const &""'"); 
-  }
-  arg1 = reinterpret_cast< schema::simxml::SimModelCore::SimRoot::RefId_type * >(argp1);
-  result = (schema::simxml::BuildingModel::SimSystem *)new schema::simxml::BuildingModel::SimSystem((schema::simxml::SimModelCore::SimRoot::RefId_type const &)*arg1);
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_schema__simxml__BuildingModel__SimSystem, SWIG_POINTER_NEW |  0 );
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_new_SimSystem__SWIG_2(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  ::xercesc::DOMElement *arg1 = 0 ;
-  ::xml_schema::flags arg2 ;
-  ::xml_schema::container *arg3 = (::xml_schema::container *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp2 ;
-  int res2 = 0 ;
-  void *argp3 = 0 ;
-  int res3 = 0 ;
-  PyObject * obj0 = 0 ;
-  PyObject * obj1 = 0 ;
-  PyObject * obj2 = 0 ;
-  schema::simxml::BuildingModel::SimSystem *result = 0 ;
-  
-  if (!PyArg_ParseTuple(args,(char *)"OOO:new_SimSystem",&obj0,&obj1,&obj2)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1, SWIGTYPE_p_xercesc__DOMElement,  0  | 0);
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "new_SimSystem" "', argument " "1"" of type '" "::xercesc::DOMElement const &""'"); 
-  }
-  if (!argp1) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "new_SimSystem" "', argument " "1"" of type '" "::xercesc::DOMElement const &""'"); 
-  }
-  arg1 = reinterpret_cast< ::xercesc::DOMElement * >(argp1);
-  {
-    res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__flags,  0  | 0);
-    if (!SWIG_IsOK(res2)) {
-      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "new_SimSystem" "', argument " "2"" of type '" "::xml_schema::flags""'"); 
-    }  
-    if (!argp2) {
-      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "new_SimSystem" "', argument " "2"" of type '" "::xml_schema::flags""'");
-    } else {
-      ::xml_schema::flags * temp = reinterpret_cast< ::xml_schema::flags * >(argp2);
-      arg2 = *temp;
-      if (SWIG_IsNewObj(res2)) delete temp;
-    }
-  }
-  res3 = SWIG_ConvertPtr(obj2, &argp3,SWIGTYPE_p_xsd__cxx__tree___type, 0 |  0 );
-  if (!SWIG_IsOK(res3)) {
-    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "new_SimSystem" "', argument " "3"" of type '" "::xml_schema::container *""'"); 
-  }
-  arg3 = reinterpret_cast< ::xml_schema::container * >(argp3);
-  result = (schema::simxml::BuildingModel::SimSystem *)new schema::simxml::BuildingModel::SimSystem((::xercesc::DOMElement const &)*arg1,arg2,arg3);
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_schema__simxml__BuildingModel__SimSystem, SWIG_POINTER_NEW |  0 );
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_new_SimSystem__SWIG_3(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  ::xercesc::DOMElement *arg1 = 0 ;
-  ::xml_schema::flags arg2 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp2 ;
-  int res2 = 0 ;
-  PyObject * obj0 = 0 ;
-  PyObject * obj1 = 0 ;
-  schema::simxml::BuildingModel::SimSystem *result = 0 ;
-  
-  if (!PyArg_ParseTuple(args,(char *)"OO:new_SimSystem",&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1, SWIGTYPE_p_xercesc__DOMElement,  0  | 0);
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "new_SimSystem" "', argument " "1"" of type '" "::xercesc::DOMElement const &""'"); 
-  }
-  if (!argp1) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "new_SimSystem" "', argument " "1"" of type '" "::xercesc::DOMElement const &""'"); 
-  }
-  arg1 = reinterpret_cast< ::xercesc::DOMElement * >(argp1);
-  {
-    res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__flags,  0  | 0);
-    if (!SWIG_IsOK(res2)) {
-      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "new_SimSystem" "', argument " "2"" of type '" "::xml_schema::flags""'"); 
-    }  
-    if (!argp2) {
-      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "new_SimSystem" "', argument " "2"" of type '" "::xml_schema::flags""'");
-    } else {
-      ::xml_schema::flags * temp = reinterpret_cast< ::xml_schema::flags * >(argp2);
-      arg2 = *temp;
-      if (SWIG_IsNewObj(res2)) delete temp;
-    }
-  }
-  result = (schema::simxml::BuildingModel::SimSystem *)new schema::simxml::BuildingModel::SimSystem((::xercesc::DOMElement const &)*arg1,arg2);
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_schema__simxml__BuildingModel__SimSystem, SWIG_POINTER_NEW |  0 );
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_new_SimSystem__SWIG_4(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  ::xercesc::DOMElement *arg1 = 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  schema::simxml::BuildingModel::SimSystem *result = 0 ;
-  
-  if (!PyArg_ParseTuple(args,(char *)"O:new_SimSystem",&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1, SWIGTYPE_p_xercesc__DOMElement,  0  | 0);
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "new_SimSystem" "', argument " "1"" of type '" "::xercesc::DOMElement const &""'"); 
-  }
-  if (!argp1) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "new_SimSystem" "', argument " "1"" of type '" "::xercesc::DOMElement const &""'"); 
-  }
-  arg1 = reinterpret_cast< ::xercesc::DOMElement * >(argp1);
-  result = (schema::simxml::BuildingModel::SimSystem *)new schema::simxml::BuildingModel::SimSystem((::xercesc::DOMElement const &)*arg1);
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_schema__simxml__BuildingModel__SimSystem, SWIG_POINTER_NEW |  0 );
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_new_SimSystem__SWIG_5(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  schema::simxml::BuildingModel::SimSystem *arg1 = 0 ;
-  ::xml_schema::flags arg2 ;
-  ::xml_schema::container *arg3 = (::xml_schema::container *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp2 ;
-  int res2 = 0 ;
-  void *argp3 = 0 ;
-  int res3 = 0 ;
-  PyObject * obj0 = 0 ;
-  PyObject * obj1 = 0 ;
-  PyObject * obj2 = 0 ;
-  schema::simxml::BuildingModel::SimSystem *result = 0 ;
-  
-  if (!PyArg_ParseTuple(args,(char *)"OOO:new_SimSystem",&obj0,&obj1,&obj2)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1, SWIGTYPE_p_schema__simxml__BuildingModel__SimSystem,  0  | 0);
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "new_SimSystem" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimSystem const &""'"); 
-  }
-  if (!argp1) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "new_SimSystem" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimSystem const &""'"); 
-  }
-  arg1 = reinterpret_cast< schema::simxml::BuildingModel::SimSystem * >(argp1);
-  {
-    res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__flags,  0  | 0);
-    if (!SWIG_IsOK(res2)) {
-      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "new_SimSystem" "', argument " "2"" of type '" "::xml_schema::flags""'"); 
-    }  
-    if (!argp2) {
-      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "new_SimSystem" "', argument " "2"" of type '" "::xml_schema::flags""'");
-    } else {
-      ::xml_schema::flags * temp = reinterpret_cast< ::xml_schema::flags * >(argp2);
-      arg2 = *temp;
-      if (SWIG_IsNewObj(res2)) delete temp;
-    }
-  }
-  res3 = SWIG_ConvertPtr(obj2, &argp3,SWIGTYPE_p_xsd__cxx__tree___type, 0 |  0 );
-  if (!SWIG_IsOK(res3)) {
-    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "new_SimSystem" "', argument " "3"" of type '" "::xml_schema::container *""'"); 
-  }
-  arg3 = reinterpret_cast< ::xml_schema::container * >(argp3);
-  result = (schema::simxml::BuildingModel::SimSystem *)new schema::simxml::BuildingModel::SimSystem((schema::simxml::BuildingModel::SimSystem const &)*arg1,arg2,arg3);
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_schema__simxml__BuildingModel__SimSystem, SWIG_POINTER_NEW |  0 );
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_new_SimSystem__SWIG_6(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  schema::simxml::BuildingModel::SimSystem *arg1 = 0 ;
-  ::xml_schema::flags arg2 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp2 ;
-  int res2 = 0 ;
-  PyObject * obj0 = 0 ;
-  PyObject * obj1 = 0 ;
-  schema::simxml::BuildingModel::SimSystem *result = 0 ;
-  
-  if (!PyArg_ParseTuple(args,(char *)"OO:new_SimSystem",&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1, SWIGTYPE_p_schema__simxml__BuildingModel__SimSystem,  0  | 0);
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "new_SimSystem" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimSystem const &""'"); 
-  }
-  if (!argp1) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "new_SimSystem" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimSystem const &""'"); 
-  }
-  arg1 = reinterpret_cast< schema::simxml::BuildingModel::SimSystem * >(argp1);
-  {
-    res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__flags,  0  | 0);
-    if (!SWIG_IsOK(res2)) {
-      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "new_SimSystem" "', argument " "2"" of type '" "::xml_schema::flags""'"); 
-    }  
-    if (!argp2) {
-      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "new_SimSystem" "', argument " "2"" of type '" "::xml_schema::flags""'");
-    } else {
-      ::xml_schema::flags * temp = reinterpret_cast< ::xml_schema::flags * >(argp2);
-      arg2 = *temp;
-      if (SWIG_IsNewObj(res2)) delete temp;
-    }
-  }
-  result = (schema::simxml::BuildingModel::SimSystem *)new schema::simxml::BuildingModel::SimSystem((schema::simxml::BuildingModel::SimSystem const &)*arg1,arg2);
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_schema__simxml__BuildingModel__SimSystem, SWIG_POINTER_NEW |  0 );
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_new_SimSystem__SWIG_7(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  schema::simxml::BuildingModel::SimSystem *arg1 = 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  schema::simxml::BuildingModel::SimSystem *result = 0 ;
-  
-  if (!PyArg_ParseTuple(args,(char *)"O:new_SimSystem",&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1, SWIGTYPE_p_schema__simxml__BuildingModel__SimSystem,  0  | 0);
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "new_SimSystem" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimSystem const &""'"); 
-  }
-  if (!argp1) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "new_SimSystem" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimSystem const &""'"); 
-  }
-  arg1 = reinterpret_cast< schema::simxml::BuildingModel::SimSystem * >(argp1);
-  result = (schema::simxml::BuildingModel::SimSystem *)new schema::simxml::BuildingModel::SimSystem((schema::simxml::BuildingModel::SimSystem const &)*arg1);
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_schema__simxml__BuildingModel__SimSystem, SWIG_POINTER_NEW |  0 );
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_new_SimSystem(PyObject *self, PyObject *args) {
-  int argc;
-  PyObject *argv[4] = {
-    0
-  };
-  int ii;
-  
-  if (!PyTuple_Check(args)) SWIG_fail;
-  argc = args ? (int)PyObject_Length(args) : 0;
-  for (ii = 0; (ii < 3) && (ii < argc); ii++) {
-    argv[ii] = PyTuple_GET_ITEM(args,ii);
-  }
-  if (argc == 0) {
-    return _wrap_new_SimSystem__SWIG_0(self, args);
-  }
-  if (argc == 1) {
-    int _v;
-    int res = SWIG_ConvertPtr(argv[0], 0, SWIGTYPE_p_xsd__cxx__tree__idT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t, 0);
-    _v = SWIG_CheckState(res);
-    if (_v) {
-      return _wrap_new_SimSystem__SWIG_1(self, args);
-    }
-  }
-  if (argc == 1) {
-    int _v;
-    int res = SWIG_ConvertPtr(argv[0], 0, SWIGTYPE_p_xercesc__DOMElement, 0);
-    _v = SWIG_CheckState(res);
-    if (_v) {
-      return _wrap_new_SimSystem__SWIG_4(self, args);
-    }
-  }
-  if (argc == 1) {
-    int _v;
-    int res = SWIG_ConvertPtr(argv[0], 0, SWIGTYPE_p_schema__simxml__BuildingModel__SimSystem, 0);
-    _v = SWIG_CheckState(res);
-    if (_v) {
-      return _wrap_new_SimSystem__SWIG_7(self, args);
-    }
-  }
-  if (argc == 2) {
-    int _v;
-    int res = SWIG_ConvertPtr(argv[0], 0, SWIGTYPE_p_schema__simxml__BuildingModel__SimSystem, 0);
-    _v = SWIG_CheckState(res);
-    if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__flags, 0);
-      _v = SWIG_CheckState(res);
-      if (_v) {
-        return _wrap_new_SimSystem__SWIG_6(self, args);
-      }
-    }
-  }
-  if (argc == 2) {
-    int _v;
-    int res = SWIG_ConvertPtr(argv[0], 0, SWIGTYPE_p_xercesc__DOMElement, 0);
-    _v = SWIG_CheckState(res);
-    if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__flags, 0);
-      _v = SWIG_CheckState(res);
-      if (_v) {
-        return _wrap_new_SimSystem__SWIG_3(self, args);
-      }
-    }
-  }
-  if (argc == 3) {
-    int _v;
-    int res = SWIG_ConvertPtr(argv[0], 0, SWIGTYPE_p_xercesc__DOMElement, 0);
-    _v = SWIG_CheckState(res);
-    if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__flags, 0);
-      _v = SWIG_CheckState(res);
-      if (_v) {
-        void *vptr = 0;
-        int res = SWIG_ConvertPtr(argv[2], &vptr, SWIGTYPE_p_xsd__cxx__tree___type, 0);
-        _v = SWIG_CheckState(res);
-        if (_v) {
-          return _wrap_new_SimSystem__SWIG_2(self, args);
-        }
-      }
-    }
-  }
-  if (argc == 3) {
-    int _v;
-    int res = SWIG_ConvertPtr(argv[0], 0, SWIGTYPE_p_schema__simxml__BuildingModel__SimSystem, 0);
-    _v = SWIG_CheckState(res);
-    if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__flags, 0);
-      _v = SWIG_CheckState(res);
-      if (_v) {
-        void *vptr = 0;
-        int res = SWIG_ConvertPtr(argv[2], &vptr, SWIGTYPE_p_xsd__cxx__tree___type, 0);
-        _v = SWIG_CheckState(res);
-        if (_v) {
-          return _wrap_new_SimSystem__SWIG_5(self, args);
-        }
-      }
-    }
-  }
-  
-fail:
-  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'new_SimSystem'.\n"
-    "  Possible C/C++ prototypes are:\n"
-    "    schema::simxml::BuildingModel::SimSystem::SimSystem()\n"
-    "    schema::simxml::BuildingModel::SimSystem::SimSystem(schema::simxml::SimModelCore::SimRoot::RefId_type const &)\n"
-    "    schema::simxml::BuildingModel::SimSystem::SimSystem(::xercesc::DOMElement const &,::xml_schema::flags,::xml_schema::container *)\n"
-    "    schema::simxml::BuildingModel::SimSystem::SimSystem(::xercesc::DOMElement const &,::xml_schema::flags)\n"
-    "    schema::simxml::BuildingModel::SimSystem::SimSystem(::xercesc::DOMElement const &)\n"
-    "    schema::simxml::BuildingModel::SimSystem::SimSystem(schema::simxml::BuildingModel::SimSystem const &,::xml_schema::flags,::xml_schema::container *)\n"
-    "    schema::simxml::BuildingModel::SimSystem::SimSystem(schema::simxml::BuildingModel::SimSystem const &,::xml_schema::flags)\n"
-    "    schema::simxml::BuildingModel::SimSystem::SimSystem(schema::simxml::BuildingModel::SimSystem const &)\n");
-  return 0;
-}
-
-
-SWIGINTERN PyObject *_wrap_SimSystem__clone__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  schema::simxml::BuildingModel::SimSystem *arg1 = (schema::simxml::BuildingModel::SimSystem *) 0 ;
-  ::xml_schema::flags arg2 ;
-  ::xml_schema::container *arg3 = (::xml_schema::container *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp2 ;
-  int res2 = 0 ;
-  void *argp3 = 0 ;
-  int res3 = 0 ;
-  PyObject * obj0 = 0 ;
-  PyObject * obj1 = 0 ;
-  PyObject * obj2 = 0 ;
-  schema::simxml::BuildingModel::SimSystem *result = 0 ;
-  
-  if (!PyArg_ParseTuple(args,(char *)"OOO:SimSystem__clone",&obj0,&obj1,&obj2)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_schema__simxml__BuildingModel__SimSystem, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimSystem__clone" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimSystem const *""'"); 
-  }
-  arg1 = reinterpret_cast< schema::simxml::BuildingModel::SimSystem * >(argp1);
-  {
-    res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__flags,  0  | 0);
-    if (!SWIG_IsOK(res2)) {
-      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimSystem__clone" "', argument " "2"" of type '" "::xml_schema::flags""'"); 
-    }  
-    if (!argp2) {
-      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "SimSystem__clone" "', argument " "2"" of type '" "::xml_schema::flags""'");
-    } else {
-      ::xml_schema::flags * temp = reinterpret_cast< ::xml_schema::flags * >(argp2);
-      arg2 = *temp;
-      if (SWIG_IsNewObj(res2)) delete temp;
-    }
-  }
-  res3 = SWIG_ConvertPtr(obj2, &argp3,SWIGTYPE_p_xsd__cxx__tree___type, 0 |  0 );
-  if (!SWIG_IsOK(res3)) {
-    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "SimSystem__clone" "', argument " "3"" of type '" "::xml_schema::container *""'"); 
-  }
-  arg3 = reinterpret_cast< ::xml_schema::container * >(argp3);
-  result = (schema::simxml::BuildingModel::SimSystem *)((schema::simxml::BuildingModel::SimSystem const *)arg1)->_clone(arg2,arg3);
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_schema__simxml__BuildingModel__SimSystem, 0 |  0 );
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_SimSystem__clone__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  schema::simxml::BuildingModel::SimSystem *arg1 = (schema::simxml::BuildingModel::SimSystem *) 0 ;
-  ::xml_schema::flags arg2 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp2 ;
-  int res2 = 0 ;
-  PyObject * obj0 = 0 ;
-  PyObject * obj1 = 0 ;
-  schema::simxml::BuildingModel::SimSystem *result = 0 ;
-  
-  if (!PyArg_ParseTuple(args,(char *)"OO:SimSystem__clone",&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_schema__simxml__BuildingModel__SimSystem, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimSystem__clone" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimSystem const *""'"); 
-  }
-  arg1 = reinterpret_cast< schema::simxml::BuildingModel::SimSystem * >(argp1);
-  {
-    res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__flags,  0  | 0);
-    if (!SWIG_IsOK(res2)) {
-      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimSystem__clone" "', argument " "2"" of type '" "::xml_schema::flags""'"); 
-    }  
-    if (!argp2) {
-      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "SimSystem__clone" "', argument " "2"" of type '" "::xml_schema::flags""'");
-    } else {
-      ::xml_schema::flags * temp = reinterpret_cast< ::xml_schema::flags * >(argp2);
-      arg2 = *temp;
-      if (SWIG_IsNewObj(res2)) delete temp;
-    }
-  }
-  result = (schema::simxml::BuildingModel::SimSystem *)((schema::simxml::BuildingModel::SimSystem const *)arg1)->_clone(arg2);
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_schema__simxml__BuildingModel__SimSystem, 0 |  0 );
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_SimSystem__clone__SWIG_2(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  schema::simxml::BuildingModel::SimSystem *arg1 = (schema::simxml::BuildingModel::SimSystem *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  schema::simxml::BuildingModel::SimSystem *result = 0 ;
-  
-  if (!PyArg_ParseTuple(args,(char *)"O:SimSystem__clone",&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_schema__simxml__BuildingModel__SimSystem, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimSystem__clone" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimSystem const *""'"); 
-  }
-  arg1 = reinterpret_cast< schema::simxml::BuildingModel::SimSystem * >(argp1);
-  result = (schema::simxml::BuildingModel::SimSystem *)((schema::simxml::BuildingModel::SimSystem const *)arg1)->_clone();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_schema__simxml__BuildingModel__SimSystem, 0 |  0 );
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_SimSystem__clone(PyObject *self, PyObject *args) {
-  int argc;
-  PyObject *argv[4] = {
-    0
-  };
-  int ii;
-  
-  if (!PyTuple_Check(args)) SWIG_fail;
-  argc = args ? (int)PyObject_Length(args) : 0;
-  for (ii = 0; (ii < 3) && (ii < argc); ii++) {
-    argv[ii] = PyTuple_GET_ITEM(args,ii);
-  }
-  if (argc == 1) {
-    int _v;
-    void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__BuildingModel__SimSystem, 0);
-    _v = SWIG_CheckState(res);
-    if (_v) {
-      return _wrap_SimSystem__clone__SWIG_2(self, args);
-    }
-  }
-  if (argc == 2) {
-    int _v;
-    void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__BuildingModel__SimSystem, 0);
-    _v = SWIG_CheckState(res);
-    if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__flags, 0);
-      _v = SWIG_CheckState(res);
-      if (_v) {
-        return _wrap_SimSystem__clone__SWIG_1(self, args);
-      }
-    }
-  }
-  if (argc == 3) {
-    int _v;
-    void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__BuildingModel__SimSystem, 0);
-    _v = SWIG_CheckState(res);
-    if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__flags, 0);
-      _v = SWIG_CheckState(res);
-      if (_v) {
-        void *vptr = 0;
-        int res = SWIG_ConvertPtr(argv[2], &vptr, SWIGTYPE_p_xsd__cxx__tree___type, 0);
-        _v = SWIG_CheckState(res);
-        if (_v) {
-          return _wrap_SimSystem__clone__SWIG_0(self, args);
-        }
-      }
-    }
-  }
-  
-fail:
-  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'SimSystem__clone'.\n"
-    "  Possible C/C++ prototypes are:\n"
-    "    schema::simxml::BuildingModel::SimSystem::_clone(::xml_schema::flags,::xml_schema::container *) const\n"
-    "    schema::simxml::BuildingModel::SimSystem::_clone(::xml_schema::flags) const\n"
-    "    schema::simxml::BuildingModel::SimSystem::_clone() const\n");
-  return 0;
-}
-
-
-SWIGINTERN PyObject *_wrap_delete_SimSystem(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  schema::simxml::BuildingModel::SimSystem *arg1 = (schema::simxml::BuildingModel::SimSystem *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  
-  if (!PyArg_ParseTuple(args,(char *)"O:delete_SimSystem",&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_schema__simxml__BuildingModel__SimSystem, SWIG_POINTER_DISOWN |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_SimSystem" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimSystem *""'"); 
-  }
-  arg1 = reinterpret_cast< schema::simxml::BuildingModel::SimSystem * >(argp1);
-  delete arg1;
-  resultobj = SWIG_Py_Void();
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *SimSystem_swigregister(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *obj;
-  if (!PyArg_ParseTuple(args,(char*)"O:swigregister", &obj)) return NULL;
-  SWIG_TypeNewClientData(SWIGTYPE_p_schema__simxml__BuildingModel__SimSystem, SWIG_NewClientData(obj));
-  return SWIG_Py_Void();
-}
-
 SWIGINTERN PyObject *_wrap_new_SimSystem_ZoneHvacGroup__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::BuildingModel::SimSystem_ZoneHvacGroup *result = 0 ;
@@ -8572,13 +7295,6 @@ SWIGINTERN PyObject *SimSystem_ZoneHvacGroup_Control_sequence_swigregister(PyObj
 
 static PyMethodDef SwigMethods[] = {
 	 { (char *)"SWIG_PyInstanceMethod_New", (PyCFunction)SWIG_PyInstanceMethod_New, METH_O, NULL},
-	 { (char *)"SimSystem_ParentSystem", _wrap_SimSystem_ParentSystem, METH_VARARGS, NULL},
-	 { (char *)"SimSystem_SystemServicesSpatialElements", _wrap_SimSystem_SystemServicesSpatialElements, METH_VARARGS, NULL},
-	 { (char *)"SimSystem_HvacSystemSizingParams", _wrap_SimSystem_HvacSystemSizingParams, METH_VARARGS, NULL},
-	 { (char *)"new_SimSystem", _wrap_new_SimSystem, METH_VARARGS, NULL},
-	 { (char *)"SimSystem__clone", _wrap_SimSystem__clone, METH_VARARGS, NULL},
-	 { (char *)"delete_SimSystem", _wrap_delete_SimSystem, METH_VARARGS, NULL},
-	 { (char *)"SimSystem_swigregister", SimSystem_swigregister, METH_VARARGS, NULL},
 	 { (char *)"new_SimSystem_ZoneHvacGroup", _wrap_new_SimSystem_ZoneHvacGroup, METH_VARARGS, NULL},
 	 { (char *)"SimSystem_ZoneHvacGroup__clone", _wrap_SimSystem_ZoneHvacGroup__clone, METH_VARARGS, NULL},
 	 { (char *)"delete_SimSystem_ZoneHvacGroup", _wrap_delete_SimSystem_ZoneHvacGroup, METH_VARARGS, NULL},
@@ -8665,6 +7381,12 @@ static void *_p_schema__simxml__SimModelCore__SimDistributionElementTo_p_schema_
 static void *_p_schema__simxml__SimModelCore__SimGroupTo_p_schema__simxml__SimModelCore__SimRoot(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((schema::simxml::SimModelCore::SimRoot *) (schema::simxml::SimModelCore::SimObjectDefinition *)(schema::simxml::SimModelCore::SimObject *) ((schema::simxml::SimModelCore::SimGroup *) x));
 }
+static void *_p_schema__simxml__BuildingModel__SimSystem_HvacHotWaterTo_p_schema__simxml__SimModelCore__SimRoot(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((schema::simxml::SimModelCore::SimRoot *) (schema::simxml::SimModelCore::SimObjectDefinition *)(schema::simxml::SimModelCore::SimObject *)(schema::simxml::SimModelCore::SimGroup *)(schema::simxml::BuildingModel::SimSystem *) ((schema::simxml::BuildingModel::SimSystem_HvacHotWater *) x));
+}
+static void *_p_schema__simxml__BuildingModel__SimSystem_HvacHotWater_ControlTo_p_schema__simxml__SimModelCore__SimRoot(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((schema::simxml::SimModelCore::SimRoot *) (schema::simxml::SimModelCore::SimObjectDefinition *)(schema::simxml::SimModelCore::SimObject *)(schema::simxml::SimModelCore::SimGroup *)(schema::simxml::BuildingModel::SimSystem *)(schema::simxml::BuildingModel::SimSystem_HvacHotWater *) ((schema::simxml::BuildingModel::SimSystem_HvacHotWater_Control *) x));
+}
 static void *_p_schema__simxml__ResourcesGeneral__SimUnitTypeTo_p_schema__simxml__SimModelCore__SimRoot(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((schema::simxml::SimModelCore::SimRoot *) (schema::simxml::SimModelCore::SimResourceObject *) ((schema::simxml::ResourcesGeneral::SimUnitType *) x));
 }
@@ -8704,17 +7426,44 @@ static void *_p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroupTo_p_schem
 static void *_p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup_ControlTo_p_schema__simxml__SimModelCore__SimRoot(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((schema::simxml::SimModelCore::SimRoot *) (schema::simxml::SimModelCore::SimObjectDefinition *)(schema::simxml::SimModelCore::SimObject *)(schema::simxml::SimModelCore::SimGroup *)(schema::simxml::BuildingModel::SimSystem *)(schema::simxml::BuildingModel::SimSystem_ZoneHvacGroup *) ((schema::simxml::BuildingModel::SimSystem_ZoneHvacGroup_Control *) x));
 }
+static void *_p_schema__simxml__SimModelCore__SimObjectTypeDefinitionTo_p_schema__simxml__SimModelCore__SimObjectDefinition(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((schema::simxml::SimModelCore::SimObjectDefinition *)  ((schema::simxml::SimModelCore::SimObjectTypeDefinition *) x));
+}
+static void *_p_schema__simxml__SimModelCore__SimDistributionControlElementTo_p_schema__simxml__SimModelCore__SimObjectDefinition(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((schema::simxml::SimModelCore::SimObjectDefinition *) (schema::simxml::SimModelCore::SimObject *)(schema::simxml::SimModelCore::SimElement *)(schema::simxml::SimModelCore::SimDistributionElement *) ((schema::simxml::SimModelCore::SimDistributionControlElement *) x));
+}
 static void *_p_schema__simxml__SimModelCore__SimSpatialStructureElementTo_p_schema__simxml__SimModelCore__SimObjectDefinition(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((schema::simxml::SimModelCore::SimObjectDefinition *) (schema::simxml::SimModelCore::SimObject *) ((schema::simxml::SimModelCore::SimSpatialStructureElement *) x));
+}
+static void *_p_schema__simxml__BuildingModel__SimSystemTo_p_schema__simxml__SimModelCore__SimObjectDefinition(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((schema::simxml::SimModelCore::SimObjectDefinition *) (schema::simxml::SimModelCore::SimObject *)(schema::simxml::SimModelCore::SimGroup *) ((schema::simxml::BuildingModel::SimSystem *) x));
+}
+static void *_p_schema__simxml__BuildingModel__SimSystem_HvacHotWater_ControlTo_p_schema__simxml__SimModelCore__SimObjectDefinition(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((schema::simxml::SimModelCore::SimObjectDefinition *) (schema::simxml::SimModelCore::SimObject *)(schema::simxml::SimModelCore::SimGroup *)(schema::simxml::BuildingModel::SimSystem *)(schema::simxml::BuildingModel::SimSystem_HvacHotWater *) ((schema::simxml::BuildingModel::SimSystem_HvacHotWater_Control *) x));
+}
+static void *_p_schema__simxml__BuildingModel__SimSystem_HvacHotWaterTo_p_schema__simxml__SimModelCore__SimObjectDefinition(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((schema::simxml::SimModelCore::SimObjectDefinition *) (schema::simxml::SimModelCore::SimObject *)(schema::simxml::SimModelCore::SimGroup *)(schema::simxml::BuildingModel::SimSystem *) ((schema::simxml::BuildingModel::SimSystem_HvacHotWater *) x));
+}
+static void *_p_schema__simxml__SimModelCore__SimDistributionElementTo_p_schema__simxml__SimModelCore__SimObjectDefinition(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((schema::simxml::SimModelCore::SimObjectDefinition *) (schema::simxml::SimModelCore::SimObject *)(schema::simxml::SimModelCore::SimElement *) ((schema::simxml::SimModelCore::SimDistributionElement *) x));
+}
+static void *_p_schema__simxml__SimModelCore__SimGroupTo_p_schema__simxml__SimModelCore__SimObjectDefinition(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((schema::simxml::SimModelCore::SimObjectDefinition *) (schema::simxml::SimModelCore::SimObject *) ((schema::simxml::SimModelCore::SimGroup *) x));
+}
+static void *_p_schema__simxml__SimModelCore__SimObjectTo_p_schema__simxml__SimModelCore__SimObjectDefinition(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((schema::simxml::SimModelCore::SimObjectDefinition *)  ((schema::simxml::SimModelCore::SimObject *) x));
+}
+static void *_p_schema__simxml__SimModelCore__SimBuildingElementTo_p_schema__simxml__SimModelCore__SimObjectDefinition(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((schema::simxml::SimModelCore::SimObjectDefinition *) (schema::simxml::SimModelCore::SimObject *)(schema::simxml::SimModelCore::SimElement *) ((schema::simxml::SimModelCore::SimBuildingElement *) x));
 }
 static void *_p_schema__simxml__SimModelCore__SimElementTo_p_schema__simxml__SimModelCore__SimObjectDefinition(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((schema::simxml::SimModelCore::SimObjectDefinition *) (schema::simxml::SimModelCore::SimObject *) ((schema::simxml::SimModelCore::SimElement *) x));
 }
+static void *_p_schema__simxml__MepModel__SimFlowEnergyConverterTo_p_schema__simxml__SimModelCore__SimObjectDefinition(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((schema::simxml::SimModelCore::SimObjectDefinition *) (schema::simxml::SimModelCore::SimObject *)(schema::simxml::SimModelCore::SimElement *)(schema::simxml::SimModelCore::SimDistributionElement *)(schema::simxml::SimModelCore::SimDistributionFlowElement *) ((schema::simxml::MepModel::SimFlowEnergyConverter *) x));
+}
 static void *_p_schema__simxml__SimModelCore__SimDistributionFlowElementTo_p_schema__simxml__SimModelCore__SimObjectDefinition(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((schema::simxml::SimModelCore::SimObjectDefinition *) (schema::simxml::SimModelCore::SimObject *)(schema::simxml::SimModelCore::SimElement *)(schema::simxml::SimModelCore::SimDistributionElement *) ((schema::simxml::SimModelCore::SimDistributionFlowElement *) x));
-}
-static void *_p_schema__simxml__SimModelCore__SimBuildingElementTo_p_schema__simxml__SimModelCore__SimObjectDefinition(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((schema::simxml::SimModelCore::SimObjectDefinition *) (schema::simxml::SimModelCore::SimObject *)(schema::simxml::SimModelCore::SimElement *) ((schema::simxml::SimModelCore::SimBuildingElement *) x));
 }
 static void *_p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroupTo_p_schema__simxml__SimModelCore__SimObjectDefinition(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((schema::simxml::SimModelCore::SimObjectDefinition *) (schema::simxml::SimModelCore::SimObject *)(schema::simxml::SimModelCore::SimGroup *)(schema::simxml::BuildingModel::SimSystem *) ((schema::simxml::BuildingModel::SimSystem_ZoneHvacGroup *) x));
@@ -8722,122 +7471,107 @@ static void *_p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroupTo_p_schem
 static void *_p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup_ControlTo_p_schema__simxml__SimModelCore__SimObjectDefinition(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((schema::simxml::SimModelCore::SimObjectDefinition *) (schema::simxml::SimModelCore::SimObject *)(schema::simxml::SimModelCore::SimGroup *)(schema::simxml::BuildingModel::SimSystem *)(schema::simxml::BuildingModel::SimSystem_ZoneHvacGroup *) ((schema::simxml::BuildingModel::SimSystem_ZoneHvacGroup_Control *) x));
 }
-static void *_p_schema__simxml__SimModelCore__SimGroupTo_p_schema__simxml__SimModelCore__SimObjectDefinition(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((schema::simxml::SimModelCore::SimObjectDefinition *) (schema::simxml::SimModelCore::SimObject *) ((schema::simxml::SimModelCore::SimGroup *) x));
-}
-static void *_p_schema__simxml__SimModelCore__SimDistributionControlElementTo_p_schema__simxml__SimModelCore__SimObjectDefinition(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((schema::simxml::SimModelCore::SimObjectDefinition *) (schema::simxml::SimModelCore::SimObject *)(schema::simxml::SimModelCore::SimElement *)(schema::simxml::SimModelCore::SimDistributionElement *) ((schema::simxml::SimModelCore::SimDistributionControlElement *) x));
-}
-static void *_p_schema__simxml__SimModelCore__SimDistributionElementTo_p_schema__simxml__SimModelCore__SimObjectDefinition(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((schema::simxml::SimModelCore::SimObjectDefinition *) (schema::simxml::SimModelCore::SimObject *)(schema::simxml::SimModelCore::SimElement *) ((schema::simxml::SimModelCore::SimDistributionElement *) x));
-}
-static void *_p_schema__simxml__SimModelCore__SimObjectTo_p_schema__simxml__SimModelCore__SimObjectDefinition(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((schema::simxml::SimModelCore::SimObjectDefinition *)  ((schema::simxml::SimModelCore::SimObject *) x));
-}
-static void *_p_schema__simxml__MepModel__SimFlowEnergyConverterTo_p_schema__simxml__SimModelCore__SimObjectDefinition(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((schema::simxml::SimModelCore::SimObjectDefinition *) (schema::simxml::SimModelCore::SimObject *)(schema::simxml::SimModelCore::SimElement *)(schema::simxml::SimModelCore::SimDistributionElement *)(schema::simxml::SimModelCore::SimDistributionFlowElement *) ((schema::simxml::MepModel::SimFlowEnergyConverter *) x));
-}
-static void *_p_schema__simxml__BuildingModel__SimSystemTo_p_schema__simxml__SimModelCore__SimObjectDefinition(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((schema::simxml::SimModelCore::SimObjectDefinition *) (schema::simxml::SimModelCore::SimObject *)(schema::simxml::SimModelCore::SimGroup *) ((schema::simxml::BuildingModel::SimSystem *) x));
-}
-static void *_p_schema__simxml__SimModelCore__SimObjectTypeDefinitionTo_p_schema__simxml__SimModelCore__SimObjectDefinition(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((schema::simxml::SimModelCore::SimObjectDefinition *)  ((schema::simxml::SimModelCore::SimObjectTypeDefinition *) x));
-}
-static void *_p_schema__simxml__SimModelCore__SimObjectDefinitionTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *) ((schema::simxml::SimModelCore::SimObjectDefinition *) x));
-}
-static void *_p_schema__simxml__SimModelCore__SimRepresentationItemTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimResourceObject *) ((schema::simxml::SimModelCore::SimRepresentationItem *) x));
-}
-static void *_p_schema__simxml__SimModelCore__SimActorDefinitionTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimResourceObject *) ((schema::simxml::SimModelCore::SimActorDefinition *) x));
-}
-static void *_p_schema__simxml__ResourcesGeneral__SimArrayParamsTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimResourceObject *)(schema::simxml::SimModelCore::SimBldgModelParams *) ((schema::simxml::ResourcesGeneral::SimArrayParams *) x));
-}
-static void *_p_schema__simxml__SimModelCore__SimTopologicalRepresentationItemTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimResourceObject *)(schema::simxml::SimModelCore::SimRepresentationItem *) ((schema::simxml::SimModelCore::SimTopologicalRepresentationItem *) x));
-}
-static void *_p_schema__simxml__ResourcesGeneral__SimNodeTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimResourceObject *) ((schema::simxml::ResourcesGeneral::SimNode *) x));
-}
-static void *_p_schema__simxml__SimModelCore__SimTemplateTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimResourceObject *) ((schema::simxml::SimModelCore::SimTemplate *) x));
-}
-static void *_p_schema__simxml__SimModelCore__SimBldgModelParamsTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimResourceObject *) ((schema::simxml::SimModelCore::SimBldgModelParams *) x));
-}
-static void *_p_schema__simxml__SimModelCore__SimGeometricRepresentationItemTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimResourceObject *)(schema::simxml::SimModelCore::SimRepresentationItem *) ((schema::simxml::SimModelCore::SimGeometricRepresentationItem *) x));
-}
-static void *_p_schema__simxml__SimModelCore__SimObjectTypeDefinitionTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimObjectDefinition *) ((schema::simxml::SimModelCore::SimObjectTypeDefinition *) x));
-}
-static void *_p_schema__simxml__SimModelCore__SimAppDefaultTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimResourceObject *) ((schema::simxml::SimModelCore::SimAppDefault *) x));
+static void *_p_schema__simxml__SimModelCore__SimSpatialStructureElementTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimObjectDefinition *)(schema::simxml::SimModelCore::SimObject *) ((schema::simxml::SimModelCore::SimSpatialStructureElement *) x));
 }
 static void *_p_schema__simxml__SimModelCore__SimDistributionControlElementTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimObjectDefinition *)(schema::simxml::SimModelCore::SimObject *)(schema::simxml::SimModelCore::SimElement *)(schema::simxml::SimModelCore::SimDistributionElement *) ((schema::simxml::SimModelCore::SimDistributionControlElement *) x));
 }
-static void *_p_schema__simxml__SimModelCore__SimSpatialStructureElementTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimObjectDefinition *)(schema::simxml::SimModelCore::SimObject *) ((schema::simxml::SimModelCore::SimSpatialStructureElement *) x));
+static void *_p_schema__simxml__BuildingModel__SimSystem_HvacHotWater_ControlTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimObjectDefinition *)(schema::simxml::SimModelCore::SimObject *)(schema::simxml::SimModelCore::SimGroup *)(schema::simxml::BuildingModel::SimSystem *)(schema::simxml::BuildingModel::SimSystem_HvacHotWater *) ((schema::simxml::BuildingModel::SimSystem_HvacHotWater_Control *) x));
 }
-static void *_p_schema__simxml__SimModelCore__SimPropertySetDefinitionTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimResourceObject *) ((schema::simxml::SimModelCore::SimPropertySetDefinition *) x));
-}
-static void *_p_schema__simxml__ResourcesGeneral__SimPortTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimResourceObject *)(schema::simxml::ResourcesGeneral::SimNode *) ((schema::simxml::ResourcesGeneral::SimPort *) x));
-}
-static void *_p_schema__simxml__BuildingModel__SimSystemTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimObjectDefinition *)(schema::simxml::SimModelCore::SimObject *)(schema::simxml::SimModelCore::SimGroup *) ((schema::simxml::BuildingModel::SimSystem *) x));
-}
-static void *_p_schema__simxml__SimModelCore__SimDistributionElementTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimObjectDefinition *)(schema::simxml::SimModelCore::SimObject *)(schema::simxml::SimModelCore::SimElement *) ((schema::simxml::SimModelCore::SimDistributionElement *) x));
-}
-static void *_p_schema__simxml__SimModelCore__SimGroupTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimObjectDefinition *)(schema::simxml::SimModelCore::SimObject *) ((schema::simxml::SimModelCore::SimGroup *) x));
-}
-static void *_p_schema__simxml__ResourcesGeneral__SimUnitTypeTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimResourceObject *) ((schema::simxml::ResourcesGeneral::SimUnitType *) x));
-}
-static void *_p_schema__simxml__SimModelCore__SimObjectPlacementTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimResourceObject *) ((schema::simxml::SimModelCore::SimObjectPlacement *) x));
-}
-static void *_p_schema__simxml__SimModelCore__SimResourceObjectTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *) ((schema::simxml::SimModelCore::SimResourceObject *) x));
-}
-static void *_p_schema__simxml__SimModelCore__SimObjectTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimObjectDefinition *) ((schema::simxml::SimModelCore::SimObject *) x));
-}
-static void *_p_schema__simxml__SimModelCore__SimElementTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimObjectDefinition *)(schema::simxml::SimModelCore::SimObject *) ((schema::simxml::SimModelCore::SimElement *) x));
-}
-static void *_p_schema__simxml__SimModelCore__SimFeatureElementTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimResourceObject *) ((schema::simxml::SimModelCore::SimFeatureElement *) x));
-}
-static void *_p_schema__simxml__SimModelCore__SimBuildingElementTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimObjectDefinition *)(schema::simxml::SimModelCore::SimObject *)(schema::simxml::SimModelCore::SimElement *) ((schema::simxml::SimModelCore::SimBuildingElement *) x));
-}
-static void *_p_schema__simxml__SimModelCore__SimDistributionFlowElementTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimObjectDefinition *)(schema::simxml::SimModelCore::SimObject *)(schema::simxml::SimModelCore::SimElement *)(schema::simxml::SimModelCore::SimDistributionElement *) ((schema::simxml::SimModelCore::SimDistributionFlowElement *) x));
-}
-static void *_p_schema__simxml__MepModel__SimFlowEnergyConverterTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimObjectDefinition *)(schema::simxml::SimModelCore::SimObject *)(schema::simxml::SimModelCore::SimElement *)(schema::simxml::SimModelCore::SimDistributionElement *)(schema::simxml::SimModelCore::SimDistributionFlowElement *) ((schema::simxml::MepModel::SimFlowEnergyConverter *) x));
+static void *_p_schema__simxml__BuildingModel__SimSystem_HvacHotWaterTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimObjectDefinition *)(schema::simxml::SimModelCore::SimObject *)(schema::simxml::SimModelCore::SimGroup *)(schema::simxml::BuildingModel::SimSystem *) ((schema::simxml::BuildingModel::SimSystem_HvacHotWater *) x));
 }
 static void *_p_schema__simxml__ResourcesGeometry__SimProfileDefinitionTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimResourceObject *)(schema::simxml::SimModelCore::SimRepresentationItem *) ((schema::simxml::ResourcesGeometry::SimProfileDefinition *) x));
 }
+static void *_p_schema__simxml__SimModelCore__SimGeometricRepresentationItemTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimResourceObject *)(schema::simxml::SimModelCore::SimRepresentationItem *) ((schema::simxml::SimModelCore::SimGeometricRepresentationItem *) x));
+}
 static void *_p_schema__simxml__SimModelCore__SimRootTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((xsd::cxx::tree::_type *)  ((schema::simxml::SimModelCore::SimRoot *) x));
 }
-static void *_p_schema__simxml__SimModelCore__SimRepresentationTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimResourceObject *) ((schema::simxml::SimModelCore::SimRepresentation *) x));
+static void *_p_schema__simxml__ResourcesGeneral__SimUnitTypeTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimResourceObject *) ((schema::simxml::ResourcesGeneral::SimUnitType *) x));
+}
+static void *_p_schema__simxml__ResourcesGeneral__SimArrayParamsTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimResourceObject *)(schema::simxml::SimModelCore::SimBldgModelParams *) ((schema::simxml::ResourcesGeneral::SimArrayParams *) x));
+}
+static void *_p_schema__simxml__SimModelCore__SimActorDefinitionTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimResourceObject *) ((schema::simxml::SimModelCore::SimActorDefinition *) x));
+}
+static void *_p_schema__simxml__SimModelCore__SimObjectDefinitionTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *) ((schema::simxml::SimModelCore::SimObjectDefinition *) x));
+}
+static void *_p_schema__simxml__SimModelCore__SimGroupTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimObjectDefinition *)(schema::simxml::SimModelCore::SimObject *) ((schema::simxml::SimModelCore::SimGroup *) x));
+}
+static void *_p_schema__simxml__SimModelCore__SimDistributionElementTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimObjectDefinition *)(schema::simxml::SimModelCore::SimObject *)(schema::simxml::SimModelCore::SimElement *) ((schema::simxml::SimModelCore::SimDistributionElement *) x));
+}
+static void *_p_schema__simxml__SimModelCore__SimObjectTypeDefinitionTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimObjectDefinition *) ((schema::simxml::SimModelCore::SimObjectTypeDefinition *) x));
+}
+static void *_p_schema__simxml__ResourcesGeneral__SimPortTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimResourceObject *)(schema::simxml::ResourcesGeneral::SimNode *) ((schema::simxml::ResourcesGeneral::SimPort *) x));
+}
+static void *_p_schema__simxml__SimModelCore__SimPropertySetDefinitionTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimResourceObject *) ((schema::simxml::SimModelCore::SimPropertySetDefinition *) x));
+}
+static void *_p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup_ControlTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimObjectDefinition *)(schema::simxml::SimModelCore::SimObject *)(schema::simxml::SimModelCore::SimGroup *)(schema::simxml::BuildingModel::SimSystem *)(schema::simxml::BuildingModel::SimSystem_ZoneHvacGroup *) ((schema::simxml::BuildingModel::SimSystem_ZoneHvacGroup_Control *) x));
 }
 static void *_p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroupTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimObjectDefinition *)(schema::simxml::SimModelCore::SimObject *)(schema::simxml::SimModelCore::SimGroup *)(schema::simxml::BuildingModel::SimSystem *) ((schema::simxml::BuildingModel::SimSystem_ZoneHvacGroup *) x));
 }
-static void *_p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup_ControlTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimObjectDefinition *)(schema::simxml::SimModelCore::SimObject *)(schema::simxml::SimModelCore::SimGroup *)(schema::simxml::BuildingModel::SimSystem *)(schema::simxml::BuildingModel::SimSystem_ZoneHvacGroup *) ((schema::simxml::BuildingModel::SimSystem_ZoneHvacGroup_Control *) x));
+static void *_p_schema__simxml__SimModelCore__SimRepresentationTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimResourceObject *) ((schema::simxml::SimModelCore::SimRepresentation *) x));
+}
+static void *_p_schema__simxml__BuildingModel__SimSystemTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimObjectDefinition *)(schema::simxml::SimModelCore::SimObject *)(schema::simxml::SimModelCore::SimGroup *) ((schema::simxml::BuildingModel::SimSystem *) x));
+}
+static void *_p_schema__simxml__SimModelCore__SimTemplateTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimResourceObject *) ((schema::simxml::SimModelCore::SimTemplate *) x));
+}
+static void *_p_schema__simxml__SimModelCore__SimObjectTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimObjectDefinition *) ((schema::simxml::SimModelCore::SimObject *) x));
+}
+static void *_p_schema__simxml__SimModelCore__SimResourceObjectTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *) ((schema::simxml::SimModelCore::SimResourceObject *) x));
+}
+static void *_p_schema__simxml__ResourcesGeneral__SimNodeTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimResourceObject *) ((schema::simxml::ResourcesGeneral::SimNode *) x));
+}
+static void *_p_schema__simxml__SimModelCore__SimBuildingElementTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimObjectDefinition *)(schema::simxml::SimModelCore::SimObject *)(schema::simxml::SimModelCore::SimElement *) ((schema::simxml::SimModelCore::SimBuildingElement *) x));
+}
+static void *_p_schema__simxml__SimModelCore__SimFeatureElementTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimResourceObject *) ((schema::simxml::SimModelCore::SimFeatureElement *) x));
+}
+static void *_p_schema__simxml__SimModelCore__SimElementTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimObjectDefinition *)(schema::simxml::SimModelCore::SimObject *) ((schema::simxml::SimModelCore::SimElement *) x));
+}
+static void *_p_schema__simxml__SimModelCore__SimAppDefaultTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimResourceObject *) ((schema::simxml::SimModelCore::SimAppDefault *) x));
+}
+static void *_p_schema__simxml__SimModelCore__SimDistributionFlowElementTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimObjectDefinition *)(schema::simxml::SimModelCore::SimObject *)(schema::simxml::SimModelCore::SimElement *)(schema::simxml::SimModelCore::SimDistributionElement *) ((schema::simxml::SimModelCore::SimDistributionFlowElement *) x));
+}
+static void *_p_schema__simxml__SimModelCore__SimTopologicalRepresentationItemTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimResourceObject *)(schema::simxml::SimModelCore::SimRepresentationItem *) ((schema::simxml::SimModelCore::SimTopologicalRepresentationItem *) x));
+}
+static void *_p_schema__simxml__SimModelCore__SimRepresentationItemTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimResourceObject *) ((schema::simxml::SimModelCore::SimRepresentationItem *) x));
+}
+static void *_p_schema__simxml__MepModel__SimFlowEnergyConverterTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimObjectDefinition *)(schema::simxml::SimModelCore::SimObject *)(schema::simxml::SimModelCore::SimElement *)(schema::simxml::SimModelCore::SimDistributionElement *)(schema::simxml::SimModelCore::SimDistributionFlowElement *) ((schema::simxml::MepModel::SimFlowEnergyConverter *) x));
+}
+static void *_p_schema__simxml__SimModelCore__SimBldgModelParamsTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimResourceObject *) ((schema::simxml::SimModelCore::SimBldgModelParams *) x));
+}
+static void *_p_schema__simxml__SimModelCore__SimObjectPlacementTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimResourceObject *) ((schema::simxml::SimModelCore::SimObjectPlacement *) x));
 }
 static void *_p_schema__simxml__SimModelCore__SimSpatialStructureElementTo_p_schema__simxml__SimModelCore__SimObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((schema::simxml::SimModelCore::SimObject *)  ((schema::simxml::SimModelCore::SimSpatialStructureElement *) x));
@@ -8872,6 +7606,12 @@ static void *_p_schema__simxml__MepModel__SimFlowEnergyConverterTo_p_schema__sim
 static void *_p_schema__simxml__BuildingModel__SimSystemTo_p_schema__simxml__SimModelCore__SimObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((schema::simxml::SimModelCore::SimObject *) (schema::simxml::SimModelCore::SimGroup *) ((schema::simxml::BuildingModel::SimSystem *) x));
 }
+static void *_p_schema__simxml__BuildingModel__SimSystem_HvacHotWaterTo_p_schema__simxml__SimModelCore__SimObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((schema::simxml::SimModelCore::SimObject *) (schema::simxml::SimModelCore::SimGroup *)(schema::simxml::BuildingModel::SimSystem *) ((schema::simxml::BuildingModel::SimSystem_HvacHotWater *) x));
+}
+static void *_p_schema__simxml__BuildingModel__SimSystem_HvacHotWater_ControlTo_p_schema__simxml__SimModelCore__SimObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((schema::simxml::SimModelCore::SimObject *) (schema::simxml::SimModelCore::SimGroup *)(schema::simxml::BuildingModel::SimSystem *)(schema::simxml::BuildingModel::SimSystem_HvacHotWater *) ((schema::simxml::BuildingModel::SimSystem_HvacHotWater_Control *) x));
+}
 static void *_p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup_ControlTo_p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((schema::simxml::BuildingModel::SimSystem_ZoneHvacGroup *)  ((schema::simxml::BuildingModel::SimSystem_ZoneHvacGroup_Control *) x));
 }
@@ -8881,6 +7621,12 @@ static void *_p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroupTo_p_schem
 static void *_p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup_ControlTo_p_schema__simxml__BuildingModel__SimSystem(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((schema::simxml::BuildingModel::SimSystem *) (schema::simxml::BuildingModel::SimSystem_ZoneHvacGroup *) ((schema::simxml::BuildingModel::SimSystem_ZoneHvacGroup_Control *) x));
 }
+static void *_p_schema__simxml__BuildingModel__SimSystem_HvacHotWaterTo_p_schema__simxml__BuildingModel__SimSystem(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((schema::simxml::BuildingModel::SimSystem *)  ((schema::simxml::BuildingModel::SimSystem_HvacHotWater *) x));
+}
+static void *_p_schema__simxml__BuildingModel__SimSystem_HvacHotWater_ControlTo_p_schema__simxml__BuildingModel__SimSystem(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((schema::simxml::BuildingModel::SimSystem *) (schema::simxml::BuildingModel::SimSystem_HvacHotWater *) ((schema::simxml::BuildingModel::SimSystem_HvacHotWater_Control *) x));
+}
 static void *_p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroupTo_p_schema__simxml__SimModelCore__SimGroup(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((schema::simxml::SimModelCore::SimGroup *) (schema::simxml::BuildingModel::SimSystem *) ((schema::simxml::BuildingModel::SimSystem_ZoneHvacGroup *) x));
 }
@@ -8889,6 +7635,15 @@ static void *_p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup_ControlTo
 }
 static void *_p_schema__simxml__BuildingModel__SimSystemTo_p_schema__simxml__SimModelCore__SimGroup(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((schema::simxml::SimModelCore::SimGroup *)  ((schema::simxml::BuildingModel::SimSystem *) x));
+}
+static void *_p_schema__simxml__BuildingModel__SimSystem_HvacHotWaterTo_p_schema__simxml__SimModelCore__SimGroup(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((schema::simxml::SimModelCore::SimGroup *) (schema::simxml::BuildingModel::SimSystem *) ((schema::simxml::BuildingModel::SimSystem_HvacHotWater *) x));
+}
+static void *_p_schema__simxml__BuildingModel__SimSystem_HvacHotWater_ControlTo_p_schema__simxml__SimModelCore__SimGroup(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((schema::simxml::SimModelCore::SimGroup *) (schema::simxml::BuildingModel::SimSystem *)(schema::simxml::BuildingModel::SimSystem_HvacHotWater *) ((schema::simxml::BuildingModel::SimSystem_HvacHotWater_Control *) x));
+}
+static void *_p_xsd__cxx__tree__sequenceT_schema__simxml__BuildingModel__SimSystem_HvacHotWater_Control_false_tTo_p_xsd__cxx__tree__sequence_common(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((xsd::cxx::tree::sequence_common *)  ((xsd::cxx::tree::sequence< ::schema::simxml::BuildingModel::SimSystem_HvacHotWater_Control,false > *) x));
 }
 static void *_p_xsd__cxx__tree__sequenceT_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup_Control_false_tTo_p_xsd__cxx__tree__sequence_common(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((xsd::cxx::tree::sequence_common *)  ((xsd::cxx::tree::sequence< ::schema::simxml::BuildingModel::SimSystem_ZoneHvacGroup_Control,false > *) x));
@@ -9125,39 +7880,42 @@ static swig_type_info _swigt__p_long_long = {"_p_long_long", "long long *|xml_sc
 static swig_type_info _swigt__p_ptr = {"_p_ptr", "ptr *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_reverse_iterator = {"_p_reverse_iterator", "reverse_iterator *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_schema__simxml__BuildingModel__SimSystem = {"_p_schema__simxml__BuildingModel__SimSystem", "schema::simxml::BuildingModel::SimSystem *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_schema__simxml__BuildingModel__SimSystem_HvacHotWater = {"_p_schema__simxml__BuildingModel__SimSystem_HvacHotWater", 0, 0, 0, 0, 0};
+static swig_type_info _swigt__p_schema__simxml__BuildingModel__SimSystem_HvacHotWater_Control = {"_p_schema__simxml__BuildingModel__SimSystem_HvacHotWater_Control", "::schema::simxml::BuildingModel::SimSystem_HvacHotWater_Control *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup = {"_p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup", "schema::simxml::BuildingModel::SimSystem_ZoneHvacGroup *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup_Control = {"_p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup_Control", "schema::simxml::BuildingModel::SimSystem_ZoneHvacGroup_Control *|::schema::simxml::BuildingModel::SimSystem_ZoneHvacGroup_Control *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_schema__simxml__Model__SimModel = {"_p_schema__simxml__Model__SimModel", "::schema::simxml::Model::SimModel *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_schema__simxml__SimModelCore__SelectedPropertyGroups = {"_p_schema__simxml__SimModelCore__SelectedPropertyGroups", "::schema::simxml::SimModelCore::SelectedPropertyGroups *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_schema__simxml__SimModelCore__SimGroup = {"_p_schema__simxml__SimModelCore__SimGroup", "schema::simxml::SimModelCore::SimGroup *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_schema__simxml__SimModelCore__SimObject = {"_p_schema__simxml__SimModelCore__SimObject", "schema::simxml::SimModelCore::SimObject *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_schema__simxml__SimModelCore__SimElement = {"_p_schema__simxml__SimModelCore__SimElement", 0, 0, 0, 0, 0};
-static swig_type_info _swigt__p_schema__simxml__SimModelCore__SimDistributionControlElement = {"_p_schema__simxml__SimModelCore__SimDistributionControlElement", 0, 0, 0, 0, 0};
-static swig_type_info _swigt__p_schema__simxml__MepModel__SimFlowEnergyConverter = {"_p_schema__simxml__MepModel__SimFlowEnergyConverter", 0, 0, 0, 0, 0};
-static swig_type_info _swigt__p_schema__simxml__SimModelCore__SimBuildingElement = {"_p_schema__simxml__SimModelCore__SimBuildingElement", 0, 0, 0, 0, 0};
-static swig_type_info _swigt__p_schema__simxml__SimModelCore__SimDistributionFlowElement = {"_p_schema__simxml__SimModelCore__SimDistributionFlowElement", 0, 0, 0, 0, 0};
-static swig_type_info _swigt__p_schema__simxml__SimModelCore__SimSpatialStructureElement = {"_p_schema__simxml__SimModelCore__SimSpatialStructureElement", 0, 0, 0, 0, 0};
 static swig_type_info _swigt__p_schema__simxml__SimModelCore__SimDistributionElement = {"_p_schema__simxml__SimModelCore__SimDistributionElement", 0, 0, 0, 0, 0};
+static swig_type_info _swigt__p_schema__simxml__SimModelCore__SimSpatialStructureElement = {"_p_schema__simxml__SimModelCore__SimSpatialStructureElement", 0, 0, 0, 0, 0};
+static swig_type_info _swigt__p_schema__simxml__MepModel__SimFlowEnergyConverter = {"_p_schema__simxml__MepModel__SimFlowEnergyConverter", 0, 0, 0, 0, 0};
+static swig_type_info _swigt__p_schema__simxml__SimModelCore__SimDistributionControlElement = {"_p_schema__simxml__SimModelCore__SimDistributionControlElement", 0, 0, 0, 0, 0};
+static swig_type_info _swigt__p_schema__simxml__SimModelCore__SimBuildingElement = {"_p_schema__simxml__SimModelCore__SimBuildingElement", 0, 0, 0, 0, 0};
+static swig_type_info _swigt__p_schema__simxml__SimModelCore__SimElement = {"_p_schema__simxml__SimModelCore__SimElement", 0, 0, 0, 0, 0};
+static swig_type_info _swigt__p_schema__simxml__SimModelCore__SimDistributionFlowElement = {"_p_schema__simxml__SimModelCore__SimDistributionFlowElement", 0, 0, 0, 0, 0};
 static swig_type_info _swigt__p_schema__simxml__SimModelCore__SimObjectDefinition = {"_p_schema__simxml__SimModelCore__SimObjectDefinition", "schema::simxml::SimModelCore::SimObjectDefinition *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_schema__simxml__SimModelCore__SimObjectTypeDefinition = {"_p_schema__simxml__SimModelCore__SimObjectTypeDefinition", 0, 0, 0, 0, 0};
 static swig_type_info _swigt__p_schema__simxml__SimModelCore__SimRoot = {"_p_schema__simxml__SimModelCore__SimRoot", "schema::simxml::SimModelCore::SimRoot *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_schema__simxml__SimModelCore__SimTemplate = {"_p_schema__simxml__SimModelCore__SimTemplate", 0, 0, 0, 0, 0};
-static swig_type_info _swigt__p_schema__simxml__ResourcesGeneral__SimNode = {"_p_schema__simxml__ResourcesGeneral__SimNode", 0, 0, 0, 0, 0};
-static swig_type_info _swigt__p_schema__simxml__SimModelCore__SimAppDefault = {"_p_schema__simxml__SimModelCore__SimAppDefault", 0, 0, 0, 0, 0};
-static swig_type_info _swigt__p_schema__simxml__SimModelCore__SimActorDefinition = {"_p_schema__simxml__SimModelCore__SimActorDefinition", 0, 0, 0, 0, 0};
-static swig_type_info _swigt__p_schema__simxml__ResourcesGeneral__SimArrayParams = {"_p_schema__simxml__ResourcesGeneral__SimArrayParams", 0, 0, 0, 0, 0};
-static swig_type_info _swigt__p_schema__simxml__ResourcesGeometry__SimProfileDefinition = {"_p_schema__simxml__ResourcesGeometry__SimProfileDefinition", 0, 0, 0, 0, 0};
-static swig_type_info _swigt__p_schema__simxml__ResourcesGeneral__SimPort = {"_p_schema__simxml__ResourcesGeneral__SimPort", 0, 0, 0, 0, 0};
-static swig_type_info _swigt__p_schema__simxml__SimModelCore__SimPropertySetDefinition = {"_p_schema__simxml__SimModelCore__SimPropertySetDefinition", 0, 0, 0, 0, 0};
-static swig_type_info _swigt__p_schema__simxml__ResourcesGeneral__SimUnitType = {"_p_schema__simxml__ResourcesGeneral__SimUnitType", 0, 0, 0, 0, 0};
-static swig_type_info _swigt__p_schema__simxml__SimModelCore__SimObjectPlacement = {"_p_schema__simxml__SimModelCore__SimObjectPlacement", 0, 0, 0, 0, 0};
-static swig_type_info _swigt__p_schema__simxml__SimModelCore__SimTopologicalRepresentationItem = {"_p_schema__simxml__SimModelCore__SimTopologicalRepresentationItem", 0, 0, 0, 0, 0};
-static swig_type_info _swigt__p_schema__simxml__SimModelCore__SimResourceObject = {"_p_schema__simxml__SimModelCore__SimResourceObject", 0, 0, 0, 0, 0};
-static swig_type_info _swigt__p_schema__simxml__SimModelCore__SimFeatureElement = {"_p_schema__simxml__SimModelCore__SimFeatureElement", 0, 0, 0, 0, 0};
-static swig_type_info _swigt__p_schema__simxml__SimModelCore__SimGeometricRepresentationItem = {"_p_schema__simxml__SimModelCore__SimGeometricRepresentationItem", 0, 0, 0, 0, 0};
 static swig_type_info _swigt__p_schema__simxml__SimModelCore__SimBldgModelParams = {"_p_schema__simxml__SimModelCore__SimBldgModelParams", 0, 0, 0, 0, 0};
+static swig_type_info _swigt__p_schema__simxml__ResourcesGeneral__SimArrayParams = {"_p_schema__simxml__ResourcesGeneral__SimArrayParams", 0, 0, 0, 0, 0};
+static swig_type_info _swigt__p_schema__simxml__SimModelCore__SimTopologicalRepresentationItem = {"_p_schema__simxml__SimModelCore__SimTopologicalRepresentationItem", 0, 0, 0, 0, 0};
+static swig_type_info _swigt__p_schema__simxml__ResourcesGeneral__SimUnitType = {"_p_schema__simxml__ResourcesGeneral__SimUnitType", 0, 0, 0, 0, 0};
+static swig_type_info _swigt__p_schema__simxml__SimModelCore__SimGeometricRepresentationItem = {"_p_schema__simxml__SimModelCore__SimGeometricRepresentationItem", 0, 0, 0, 0, 0};
+static swig_type_info _swigt__p_schema__simxml__ResourcesGeneral__SimPort = {"_p_schema__simxml__ResourcesGeneral__SimPort", 0, 0, 0, 0, 0};
 static swig_type_info _swigt__p_schema__simxml__SimModelCore__SimRepresentationItem = {"_p_schema__simxml__SimModelCore__SimRepresentationItem", 0, 0, 0, 0, 0};
 static swig_type_info _swigt__p_schema__simxml__SimModelCore__SimRepresentation = {"_p_schema__simxml__SimModelCore__SimRepresentation", 0, 0, 0, 0, 0};
+static swig_type_info _swigt__p_schema__simxml__SimModelCore__SimTemplate = {"_p_schema__simxml__SimModelCore__SimTemplate", 0, 0, 0, 0, 0};
+static swig_type_info _swigt__p_schema__simxml__SimModelCore__SimResourceObject = {"_p_schema__simxml__SimModelCore__SimResourceObject", 0, 0, 0, 0, 0};
+static swig_type_info _swigt__p_schema__simxml__SimModelCore__SimActorDefinition = {"_p_schema__simxml__SimModelCore__SimActorDefinition", 0, 0, 0, 0, 0};
+static swig_type_info _swigt__p_schema__simxml__ResourcesGeneral__SimNode = {"_p_schema__simxml__ResourcesGeneral__SimNode", 0, 0, 0, 0, 0};
+static swig_type_info _swigt__p_schema__simxml__SimModelCore__SimPropertySetDefinition = {"_p_schema__simxml__SimModelCore__SimPropertySetDefinition", 0, 0, 0, 0, 0};
+static swig_type_info _swigt__p_schema__simxml__ResourcesGeometry__SimProfileDefinition = {"_p_schema__simxml__ResourcesGeometry__SimProfileDefinition", 0, 0, 0, 0, 0};
+static swig_type_info _swigt__p_schema__simxml__SimModelCore__SimFeatureElement = {"_p_schema__simxml__SimModelCore__SimFeatureElement", 0, 0, 0, 0, 0};
+static swig_type_info _swigt__p_schema__simxml__SimModelCore__SimAppDefault = {"_p_schema__simxml__SimModelCore__SimAppDefault", 0, 0, 0, 0, 0};
+static swig_type_info _swigt__p_schema__simxml__SimModelCore__SimObjectPlacement = {"_p_schema__simxml__SimModelCore__SimObjectPlacement", 0, 0, 0, 0, 0};
+static swig_type_info _swigt__p_schema__simxml__SimModelCore__doubleList = {"_p_schema__simxml__SimModelCore__doubleList", "::schema::simxml::SimModelCore::doubleList *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_schema__simxml__SimModelCore__integerList = {"_p_schema__simxml__SimModelCore__integerList", "::schema::simxml::SimModelCore::integerList *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_schema__simxml__SimModelCore__logical = {"_p_schema__simxml__SimModelCore__logical", "::schema::simxml::SimModelCore::logical *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_short = {"_p_short", "short *|xml_schema::short_ *", 0, 0, (void*)0, 0};
@@ -9165,8 +7923,6 @@ static swig_type_info _swigt__p_signed_char = {"_p_signed_char", "signed char *|
 static swig_type_info _swigt__p_size_type = {"_p_size_type", "size_type *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_std__auto_ptrT_T_t = {"_p_std__auto_ptrT_T_t", "std::auto_ptr< T > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_std__auto_ptrT_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup_Control_t = {"_p_std__auto_ptrT_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup_Control_t", "std::auto_ptr< ::schema::simxml::BuildingModel::SimSystem_ZoneHvacGroup_Control > *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_std__auto_ptrT_xml_schema__idref_t = {"_p_std__auto_ptrT_xml_schema__idref_t", "std::auto_ptr< ::xml_schema::idref > *|::std::auto_ptr< schema::simxml::BuildingModel::SimSystem::ParentSystem_type > *|::std::auto_ptr< schema::simxml::BuildingModel::SimSystem::HvacSystemSizingParams_type > *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_std__auto_ptrT_xml_schema__idrefs_t = {"_p_std__auto_ptrT_xml_schema__idrefs_t", "std::auto_ptr< ::xml_schema::idrefs > *|::std::auto_ptr< schema::simxml::BuildingModel::SimSystem::SystemServicesSpatialElements_type > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_std__vectorT_xsd__cxx__tree__sequence_common__ptr_std__allocatorT_xsd__cxx__tree__sequence_common__ptr_t_t__size_type = {"_p_std__vectorT_xsd__cxx__tree__sequence_common__ptr_std__allocatorT_xsd__cxx__tree__sequence_common__ptr_t_t__size_type", "std::vector< xsd::cxx::tree::sequence_common::ptr,std::allocator< xsd::cxx::tree::sequence_common::ptr > >::size_type *|xsd::cxx::tree::sequence< ::schema::simxml::BuildingModel::SimSystem_ZoneHvacGroup_Control,false >::size_type *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_unsigned_char = {"_p_unsigned_char", "unsigned char *|xml_schema::unsigned_byte *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_unsigned_int = {"_p_unsigned_int", "xml_schema::unsigned_int *|unsigned int *", 0, 0, (void*)0, 0};
@@ -9199,8 +7955,8 @@ static swig_type_info _swigt__p_xsd__cxx__tree__gyearT_char_xsd__cxx__tree__simp
 static swig_type_info _swigt__p_xsd__cxx__tree__gyear_monthT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t = {"_p_xsd__cxx__tree__gyear_monthT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t", "xsd::cxx::tree::gyear_month< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > > *|xml_schema::gyear_month *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__hex_binaryT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t = {"_p_xsd__cxx__tree__hex_binaryT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t", "xsd::cxx::tree::hex_binary< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > > *|xml_schema::hex_binary *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__idT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t = {"_p_xsd__cxx__tree__idT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t", "::xml_schema::id *|xml_schema::id *|xsd::cxx::tree::id< char,xsd::cxx::tree::ncname< char,xsd::cxx::tree::name< char,xsd::cxx::tree::token< char,xsd::cxx::tree::normalized_string< char,xsd::cxx::tree::string< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > > > > > > > *|schema::simxml::SimModelCore::SimRoot::RefId_type *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t = {"_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t", "::xml_schema::idref *|xml_schema::idref *|schema::simxml::BuildingModel::SimSystem::ParentSystem_type *|schema::simxml::BuildingModel::SimSystem::HvacSystemSizingParams_type *|xsd::cxx::tree::idref< char,xsd::cxx::tree::ncname< char,xsd::cxx::tree::name< char,xsd::cxx::tree::token< char,xsd::cxx::tree::normalized_string< char,xsd::cxx::tree::string< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > > > > > >,xsd::cxx::tree::_type > *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t = {"_p_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t", "schema::simxml::BuildingModel::SimSystem::SystemServicesSpatialElements_type *|::xml_schema::idrefs *|xml_schema::idrefs *|xsd::cxx::tree::idrefs< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type >,xsd::cxx::tree::idref< char,xsd::cxx::tree::ncname< char,xsd::cxx::tree::name< char,xsd::cxx::tree::token< char,xsd::cxx::tree::normalized_string< char,xsd::cxx::tree::string< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > > > > > >,xsd::cxx::tree::_type > > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t = {"_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t", "::xml_schema::idref *|xml_schema::idref *|xsd::cxx::tree::idref< char,xsd::cxx::tree::ncname< char,xsd::cxx::tree::name< char,xsd::cxx::tree::token< char,xsd::cxx::tree::normalized_string< char,xsd::cxx::tree::string< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > > > > > >,xsd::cxx::tree::_type > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t = {"_p_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t", "::xml_schema::idrefs *|xml_schema::idrefs *|xsd::cxx::tree::idrefs< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type >,xsd::cxx::tree::idref< char,xsd::cxx::tree::ncname< char,xsd::cxx::tree::name< char,xsd::cxx::tree::token< char,xsd::cxx::tree::normalized_string< char,xsd::cxx::tree::string< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > > > > > >,xsd::cxx::tree::_type > > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__languageT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t = {"_p_xsd__cxx__tree__languageT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t", "xml_schema::language *|xsd::cxx::tree::language< char,xsd::cxx::tree::token< char,xsd::cxx::tree::normalized_string< char,xsd::cxx::tree::string< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > > > > > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t = {"_p_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t", "xsd::cxx::tree::name< char,xsd::cxx::tree::token< char,xsd::cxx::tree::normalized_string< char,xsd::cxx::tree::string< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > > > > > *|xml_schema::name *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t = {"_p_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t", "xml_schema::ncname *|xsd::cxx::tree::ncname< char,xsd::cxx::tree::name< char,xsd::cxx::tree::token< char,xsd::cxx::tree::normalized_string< char,xsd::cxx::tree::string< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > > > > > > *", 0, 0, (void*)0, 0};
@@ -9210,13 +7966,12 @@ static swig_type_info _swigt__p_xsd__cxx__tree__no_prefix_mappingT_char_t = {"_p
 static swig_type_info _swigt__p_xsd__cxx__tree__no_type_infoT_char_t = {"_p_xsd__cxx__tree__no_type_infoT_char_t", "xml_schema::no_type_info *|::xsd::cxx::tree::no_type_info< char > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t = {"_p_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t", "xsd::cxx::tree::normalized_string< char,xsd::cxx::tree::string< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > > > *|xml_schema::normalized_string *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__not_derivedT_char_t = {"_p_xsd__cxx__tree__not_derivedT_char_t", "::xsd::cxx::tree::not_derived< char > *|xml_schema::not_derived *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t = {"_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t", "xsd::cxx::tree::optional< xsd::cxx::tree::idref< char,xsd::cxx::tree::ncname< char,xsd::cxx::tree::name< char,xsd::cxx::tree::token< char,xsd::cxx::tree::normalized_string< char,xsd::cxx::tree::string< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > > > > > >,xsd::cxx::tree::_type >,xsd::cxx::tree::fundamental_p< xsd::cxx::tree::idref< char,xsd::cxx::tree::ncname< char,xsd::cxx::tree::name< char,xsd::cxx::tree::token< char,xsd::cxx::tree::normalized_string< char,xsd::cxx::tree::string< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > > > > > >,xsd::cxx::tree::_type > >::r > *|schema::simxml::BuildingModel::SimSystem::ParentSystem_optional *|schema::simxml::BuildingModel::SimSystem::HvacSystemSizingParams_optional *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_t__r_t = {"_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_t__r_t", "schema::simxml::BuildingModel::SimSystem::SystemServicesSpatialElements_optional *|xsd::cxx::tree::optional< xsd::cxx::tree::idrefs< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type >,xsd::cxx::tree::idref< char,xsd::cxx::tree::ncname< char,xsd::cxx::tree::name< char,xsd::cxx::tree::token< char,xsd::cxx::tree::normalized_string< char,xsd::cxx::tree::string< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > > > > > >,xsd::cxx::tree::_type > >,xsd::cxx::tree::fundamental_p< xsd::cxx::tree::idrefs< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type >,xsd::cxx::tree::idref< char,xsd::cxx::tree::ncname< char,xsd::cxx::tree::name< char,xsd::cxx::tree::token< char,xsd::cxx::tree::normalized_string< char,xsd::cxx::tree::string< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > > > > > >,xsd::cxx::tree::_type > > >::r > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__parsingT_char_t = {"_p_xsd__cxx__tree__parsingT_char_t", "xml_schema::parsing *|::xsd::cxx::tree::parsing< char > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__propertiesT_char_t = {"_p_xsd__cxx__tree__propertiesT_char_t", "::xsd::cxx::tree::properties< char > *|xml_schema::properties *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__qnameT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__uriT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t = {"_p_xsd__cxx__tree__qnameT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__uriT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t", "xml_schema::qname *|xsd::cxx::tree::qname< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type >,xsd::cxx::tree::uri< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > >,xsd::cxx::tree::ncname< char,xsd::cxx::tree::name< char,xsd::cxx::tree::token< char,xsd::cxx::tree::normalized_string< char,xsd::cxx::tree::string< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > > > > > > > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__sequenceT_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup_Control_false_t = {"_p_xsd__cxx__tree__sequenceT_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup_Control_false_t", "xsd::cxx::tree::sequence< ::schema::simxml::BuildingModel::SimSystem_ZoneHvacGroup_Control,false > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__sequence_common = {"_p_xsd__cxx__tree__sequence_common", "xsd::cxx::tree::sequence_common *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_xsd__cxx__tree__sequenceT_schema__simxml__BuildingModel__SimSystem_HvacHotWater_Control_false_t = {"_p_xsd__cxx__tree__sequenceT_schema__simxml__BuildingModel__SimSystem_HvacHotWater_Control_false_t", 0, 0, 0, 0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__severity = {"_p_xsd__cxx__tree__severity", "::xsd::cxx::tree::severity *|xml_schema::severity *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t = {"_p_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t", "xml_schema::simple_type *|xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t = {"_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t", "::xml_schema::string *|xml_schema::string *|xsd::cxx::tree::string< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > > *", 0, 0, (void*)0, 0};
@@ -9462,6 +8217,8 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_ptr,
   &_swigt__p_reverse_iterator,
   &_swigt__p_schema__simxml__BuildingModel__SimSystem,
+  &_swigt__p_schema__simxml__BuildingModel__SimSystem_HvacHotWater,
+  &_swigt__p_schema__simxml__BuildingModel__SimSystem_HvacHotWater_Control,
   &_swigt__p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup,
   &_swigt__p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup_Control,
   &_swigt__p_schema__simxml__MepModel__SimFlowEnergyConverter,
@@ -9495,6 +8252,7 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_schema__simxml__SimModelCore__SimSpatialStructureElement,
   &_swigt__p_schema__simxml__SimModelCore__SimTemplate,
   &_swigt__p_schema__simxml__SimModelCore__SimTopologicalRepresentationItem,
+  &_swigt__p_schema__simxml__SimModelCore__doubleList,
   &_swigt__p_schema__simxml__SimModelCore__integerList,
   &_swigt__p_schema__simxml__SimModelCore__logical,
   &_swigt__p_short,
@@ -9502,8 +8260,6 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_size_type,
   &_swigt__p_std__auto_ptrT_T_t,
   &_swigt__p_std__auto_ptrT_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup_Control_t,
-  &_swigt__p_std__auto_ptrT_xml_schema__idref_t,
-  &_swigt__p_std__auto_ptrT_xml_schema__idrefs_t,
   &_swigt__p_std__vectorT_xsd__cxx__tree__sequence_common__ptr_std__allocatorT_xsd__cxx__tree__sequence_common__ptr_t_t__size_type,
   &_swigt__p_unsigned_char,
   &_swigt__p_unsigned_int,
@@ -9547,11 +8303,10 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_xsd__cxx__tree__no_type_infoT_char_t,
   &_swigt__p_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t,
   &_swigt__p_xsd__cxx__tree__not_derivedT_char_t,
-  &_swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t,
-  &_swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_t__r_t,
   &_swigt__p_xsd__cxx__tree__parsingT_char_t,
   &_swigt__p_xsd__cxx__tree__propertiesT_char_t,
   &_swigt__p_xsd__cxx__tree__qnameT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__uriT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t,
+  &_swigt__p_xsd__cxx__tree__sequenceT_schema__simxml__BuildingModel__SimSystem_HvacHotWater_Control_false_t,
   &_swigt__p_xsd__cxx__tree__sequenceT_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup_Control_false_t,
   &_swigt__p_xsd__cxx__tree__sequence_common,
   &_swigt__p_xsd__cxx__tree__severity,
@@ -9798,40 +8553,43 @@ static swig_cast_info _swigc__p_iterator_adapterT_std__vectorT_xsd__cxx__tree__s
 static swig_cast_info _swigc__p_long_long[] = {  {&_swigt__p_long_long, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_ptr[] = {  {&_swigt__p_ptr, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_reverse_iterator[] = {  {&_swigt__p_reverse_iterator, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_schema__simxml__BuildingModel__SimSystem[] = {  {&_swigt__p_schema__simxml__BuildingModel__SimSystem, 0, 0, 0},  {&_swigt__p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup, _p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroupTo_p_schema__simxml__BuildingModel__SimSystem, 0, 0},  {&_swigt__p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup_Control, _p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup_ControlTo_p_schema__simxml__BuildingModel__SimSystem, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_schema__simxml__BuildingModel__SimSystem_HvacHotWater[] = {{&_swigt__p_schema__simxml__BuildingModel__SimSystem_HvacHotWater, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_schema__simxml__BuildingModel__SimSystem[] = {  {&_swigt__p_schema__simxml__BuildingModel__SimSystem_HvacHotWater, _p_schema__simxml__BuildingModel__SimSystem_HvacHotWaterTo_p_schema__simxml__BuildingModel__SimSystem, 0, 0},  {&_swigt__p_schema__simxml__BuildingModel__SimSystem_HvacHotWater_Control, _p_schema__simxml__BuildingModel__SimSystem_HvacHotWater_ControlTo_p_schema__simxml__BuildingModel__SimSystem, 0, 0},  {&_swigt__p_schema__simxml__BuildingModel__SimSystem, 0, 0, 0},  {&_swigt__p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup, _p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroupTo_p_schema__simxml__BuildingModel__SimSystem, 0, 0},  {&_swigt__p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup_Control, _p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup_ControlTo_p_schema__simxml__BuildingModel__SimSystem, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_schema__simxml__BuildingModel__SimSystem_HvacHotWater_Control[] = {  {&_swigt__p_schema__simxml__BuildingModel__SimSystem_HvacHotWater_Control, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup[] = {  {&_swigt__p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup, 0, 0, 0},  {&_swigt__p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup_Control, _p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup_ControlTo_p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup_Control[] = {  {&_swigt__p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup_Control, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_schema__simxml__Model__SimModel[] = {  {&_swigt__p_schema__simxml__Model__SimModel, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_schema__simxml__SimModelCore__SelectedPropertyGroups[] = {  {&_swigt__p_schema__simxml__SimModelCore__SelectedPropertyGroups, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_schema__simxml__SimModelCore__SimGroup[] = {  {&_swigt__p_schema__simxml__SimModelCore__SimGroup, 0, 0, 0},  {&_swigt__p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup, _p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroupTo_p_schema__simxml__SimModelCore__SimGroup, 0, 0},  {&_swigt__p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup_Control, _p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup_ControlTo_p_schema__simxml__SimModelCore__SimGroup, 0, 0},  {&_swigt__p_schema__simxml__BuildingModel__SimSystem, _p_schema__simxml__BuildingModel__SimSystemTo_p_schema__simxml__SimModelCore__SimGroup, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_schema__simxml__SimModelCore__SimElement[] = {{&_swigt__p_schema__simxml__SimModelCore__SimElement, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_schema__simxml__SimModelCore__SimDistributionControlElement[] = {{&_swigt__p_schema__simxml__SimModelCore__SimDistributionControlElement, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_schema__simxml__MepModel__SimFlowEnergyConverter[] = {{&_swigt__p_schema__simxml__MepModel__SimFlowEnergyConverter, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_schema__simxml__SimModelCore__SimBuildingElement[] = {{&_swigt__p_schema__simxml__SimModelCore__SimBuildingElement, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_schema__simxml__SimModelCore__SimDistributionFlowElement[] = {{&_swigt__p_schema__simxml__SimModelCore__SimDistributionFlowElement, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_schema__simxml__SimModelCore__SimSpatialStructureElement[] = {{&_swigt__p_schema__simxml__SimModelCore__SimSpatialStructureElement, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_schema__simxml__SimModelCore__SimGroup[] = {  {&_swigt__p_schema__simxml__BuildingModel__SimSystem_HvacHotWater, _p_schema__simxml__BuildingModel__SimSystem_HvacHotWaterTo_p_schema__simxml__SimModelCore__SimGroup, 0, 0},  {&_swigt__p_schema__simxml__BuildingModel__SimSystem_HvacHotWater_Control, _p_schema__simxml__BuildingModel__SimSystem_HvacHotWater_ControlTo_p_schema__simxml__SimModelCore__SimGroup, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimGroup, 0, 0, 0},  {&_swigt__p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup, _p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroupTo_p_schema__simxml__SimModelCore__SimGroup, 0, 0},  {&_swigt__p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup_Control, _p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup_ControlTo_p_schema__simxml__SimModelCore__SimGroup, 0, 0},  {&_swigt__p_schema__simxml__BuildingModel__SimSystem, _p_schema__simxml__BuildingModel__SimSystemTo_p_schema__simxml__SimModelCore__SimGroup, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_schema__simxml__SimModelCore__SimDistributionElement[] = {{&_swigt__p_schema__simxml__SimModelCore__SimDistributionElement, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_schema__simxml__SimModelCore__SimObject[] = {  {&_swigt__p_schema__simxml__SimModelCore__SimElement, _p_schema__simxml__SimModelCore__SimElementTo_p_schema__simxml__SimModelCore__SimObject, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimGroup, _p_schema__simxml__SimModelCore__SimGroupTo_p_schema__simxml__SimModelCore__SimObject, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimDistributionControlElement, _p_schema__simxml__SimModelCore__SimDistributionControlElementTo_p_schema__simxml__SimModelCore__SimObject, 0, 0},  {&_swigt__p_schema__simxml__MepModel__SimFlowEnergyConverter, _p_schema__simxml__MepModel__SimFlowEnergyConverterTo_p_schema__simxml__SimModelCore__SimObject, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimBuildingElement, _p_schema__simxml__SimModelCore__SimBuildingElementTo_p_schema__simxml__SimModelCore__SimObject, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimDistributionFlowElement, _p_schema__simxml__SimModelCore__SimDistributionFlowElementTo_p_schema__simxml__SimModelCore__SimObject, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimObject, 0, 0, 0},  {&_swigt__p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup, _p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroupTo_p_schema__simxml__SimModelCore__SimObject, 0, 0},  {&_swigt__p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup_Control, _p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup_ControlTo_p_schema__simxml__SimModelCore__SimObject, 0, 0},  {&_swigt__p_schema__simxml__BuildingModel__SimSystem, _p_schema__simxml__BuildingModel__SimSystemTo_p_schema__simxml__SimModelCore__SimObject, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimSpatialStructureElement, _p_schema__simxml__SimModelCore__SimSpatialStructureElementTo_p_schema__simxml__SimModelCore__SimObject, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimDistributionElement, _p_schema__simxml__SimModelCore__SimDistributionElementTo_p_schema__simxml__SimModelCore__SimObject, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_schema__simxml__SimModelCore__SimSpatialStructureElement[] = {{&_swigt__p_schema__simxml__SimModelCore__SimSpatialStructureElement, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_schema__simxml__MepModel__SimFlowEnergyConverter[] = {{&_swigt__p_schema__simxml__MepModel__SimFlowEnergyConverter, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_schema__simxml__SimModelCore__SimDistributionControlElement[] = {{&_swigt__p_schema__simxml__SimModelCore__SimDistributionControlElement, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_schema__simxml__SimModelCore__SimBuildingElement[] = {{&_swigt__p_schema__simxml__SimModelCore__SimBuildingElement, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_schema__simxml__SimModelCore__SimElement[] = {{&_swigt__p_schema__simxml__SimModelCore__SimElement, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_schema__simxml__SimModelCore__SimDistributionFlowElement[] = {{&_swigt__p_schema__simxml__SimModelCore__SimDistributionFlowElement, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_schema__simxml__SimModelCore__SimObject[] = {  {&_swigt__p_schema__simxml__SimModelCore__SimDistributionElement, _p_schema__simxml__SimModelCore__SimDistributionElementTo_p_schema__simxml__SimModelCore__SimObject, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimSpatialStructureElement, _p_schema__simxml__SimModelCore__SimSpatialStructureElementTo_p_schema__simxml__SimModelCore__SimObject, 0, 0},  {&_swigt__p_schema__simxml__MepModel__SimFlowEnergyConverter, _p_schema__simxml__MepModel__SimFlowEnergyConverterTo_p_schema__simxml__SimModelCore__SimObject, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimDistributionControlElement, _p_schema__simxml__SimModelCore__SimDistributionControlElementTo_p_schema__simxml__SimModelCore__SimObject, 0, 0},  {&_swigt__p_schema__simxml__BuildingModel__SimSystem_HvacHotWater, _p_schema__simxml__BuildingModel__SimSystem_HvacHotWaterTo_p_schema__simxml__SimModelCore__SimObject, 0, 0},  {&_swigt__p_schema__simxml__BuildingModel__SimSystem_HvacHotWater_Control, _p_schema__simxml__BuildingModel__SimSystem_HvacHotWater_ControlTo_p_schema__simxml__SimModelCore__SimObject, 0, 0},  {&_swigt__p_schema__simxml__BuildingModel__SimSystem, _p_schema__simxml__BuildingModel__SimSystemTo_p_schema__simxml__SimModelCore__SimObject, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimGroup, _p_schema__simxml__SimModelCore__SimGroupTo_p_schema__simxml__SimModelCore__SimObject, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimBuildingElement, _p_schema__simxml__SimModelCore__SimBuildingElementTo_p_schema__simxml__SimModelCore__SimObject, 0, 0},  {&_swigt__p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup_Control, _p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup_ControlTo_p_schema__simxml__SimModelCore__SimObject, 0, 0},  {&_swigt__p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup, _p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroupTo_p_schema__simxml__SimModelCore__SimObject, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimObject, 0, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimElement, _p_schema__simxml__SimModelCore__SimElementTo_p_schema__simxml__SimModelCore__SimObject, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimDistributionFlowElement, _p_schema__simxml__SimModelCore__SimDistributionFlowElementTo_p_schema__simxml__SimModelCore__SimObject, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_schema__simxml__SimModelCore__SimObjectTypeDefinition[] = {{&_swigt__p_schema__simxml__SimModelCore__SimObjectTypeDefinition, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_schema__simxml__SimModelCore__SimObjectDefinition[] = {  {&_swigt__p_schema__simxml__SimModelCore__SimObjectDefinition, 0, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimDistributionElement, _p_schema__simxml__SimModelCore__SimDistributionElementTo_p_schema__simxml__SimModelCore__SimObjectDefinition, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimSpatialStructureElement, _p_schema__simxml__SimModelCore__SimSpatialStructureElementTo_p_schema__simxml__SimModelCore__SimObjectDefinition, 0, 0},  {&_swigt__p_schema__simxml__MepModel__SimFlowEnergyConverter, _p_schema__simxml__MepModel__SimFlowEnergyConverterTo_p_schema__simxml__SimModelCore__SimObjectDefinition, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimDistributionControlElement, _p_schema__simxml__SimModelCore__SimDistributionControlElementTo_p_schema__simxml__SimModelCore__SimObjectDefinition, 0, 0},  {&_swigt__p_schema__simxml__BuildingModel__SimSystem, _p_schema__simxml__BuildingModel__SimSystemTo_p_schema__simxml__SimModelCore__SimObjectDefinition, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimGroup, _p_schema__simxml__SimModelCore__SimGroupTo_p_schema__simxml__SimModelCore__SimObjectDefinition, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimBuildingElement, _p_schema__simxml__SimModelCore__SimBuildingElementTo_p_schema__simxml__SimModelCore__SimObjectDefinition, 0, 0},  {&_swigt__p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup_Control, _p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup_ControlTo_p_schema__simxml__SimModelCore__SimObjectDefinition, 0, 0},  {&_swigt__p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup, _p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroupTo_p_schema__simxml__SimModelCore__SimObjectDefinition, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimObject, _p_schema__simxml__SimModelCore__SimObjectTo_p_schema__simxml__SimModelCore__SimObjectDefinition, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimElement, _p_schema__simxml__SimModelCore__SimElementTo_p_schema__simxml__SimModelCore__SimObjectDefinition, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimObjectTypeDefinition, _p_schema__simxml__SimModelCore__SimObjectTypeDefinitionTo_p_schema__simxml__SimModelCore__SimObjectDefinition, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimDistributionFlowElement, _p_schema__simxml__SimModelCore__SimDistributionFlowElementTo_p_schema__simxml__SimModelCore__SimObjectDefinition, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_schema__simxml__SimModelCore__SimTemplate[] = {{&_swigt__p_schema__simxml__SimModelCore__SimTemplate, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_schema__simxml__ResourcesGeneral__SimNode[] = {{&_swigt__p_schema__simxml__ResourcesGeneral__SimNode, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_schema__simxml__SimModelCore__SimAppDefault[] = {{&_swigt__p_schema__simxml__SimModelCore__SimAppDefault, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_schema__simxml__SimModelCore__SimActorDefinition[] = {{&_swigt__p_schema__simxml__SimModelCore__SimActorDefinition, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_schema__simxml__ResourcesGeneral__SimArrayParams[] = {{&_swigt__p_schema__simxml__ResourcesGeneral__SimArrayParams, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_schema__simxml__ResourcesGeometry__SimProfileDefinition[] = {{&_swigt__p_schema__simxml__ResourcesGeometry__SimProfileDefinition, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_schema__simxml__ResourcesGeneral__SimPort[] = {{&_swigt__p_schema__simxml__ResourcesGeneral__SimPort, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_schema__simxml__SimModelCore__SimPropertySetDefinition[] = {{&_swigt__p_schema__simxml__SimModelCore__SimPropertySetDefinition, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_schema__simxml__ResourcesGeneral__SimUnitType[] = {{&_swigt__p_schema__simxml__ResourcesGeneral__SimUnitType, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_schema__simxml__SimModelCore__SimObjectPlacement[] = {{&_swigt__p_schema__simxml__SimModelCore__SimObjectPlacement, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_schema__simxml__SimModelCore__SimTopologicalRepresentationItem[] = {{&_swigt__p_schema__simxml__SimModelCore__SimTopologicalRepresentationItem, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_schema__simxml__SimModelCore__SimResourceObject[] = {{&_swigt__p_schema__simxml__SimModelCore__SimResourceObject, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_schema__simxml__SimModelCore__SimFeatureElement[] = {{&_swigt__p_schema__simxml__SimModelCore__SimFeatureElement, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_schema__simxml__SimModelCore__SimGeometricRepresentationItem[] = {{&_swigt__p_schema__simxml__SimModelCore__SimGeometricRepresentationItem, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_schema__simxml__SimModelCore__SimObjectDefinition[] = {  {&_swigt__p_schema__simxml__SimModelCore__SimObjectDefinition, 0, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimDistributionElement, _p_schema__simxml__SimModelCore__SimDistributionElementTo_p_schema__simxml__SimModelCore__SimObjectDefinition, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimSpatialStructureElement, _p_schema__simxml__SimModelCore__SimSpatialStructureElementTo_p_schema__simxml__SimModelCore__SimObjectDefinition, 0, 0},  {&_swigt__p_schema__simxml__MepModel__SimFlowEnergyConverter, _p_schema__simxml__MepModel__SimFlowEnergyConverterTo_p_schema__simxml__SimModelCore__SimObjectDefinition, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimDistributionControlElement, _p_schema__simxml__SimModelCore__SimDistributionControlElementTo_p_schema__simxml__SimModelCore__SimObjectDefinition, 0, 0},  {&_swigt__p_schema__simxml__BuildingModel__SimSystem_HvacHotWater_Control, _p_schema__simxml__BuildingModel__SimSystem_HvacHotWater_ControlTo_p_schema__simxml__SimModelCore__SimObjectDefinition, 0, 0},  {&_swigt__p_schema__simxml__BuildingModel__SimSystem_HvacHotWater, _p_schema__simxml__BuildingModel__SimSystem_HvacHotWaterTo_p_schema__simxml__SimModelCore__SimObjectDefinition, 0, 0},  {&_swigt__p_schema__simxml__BuildingModel__SimSystem, _p_schema__simxml__BuildingModel__SimSystemTo_p_schema__simxml__SimModelCore__SimObjectDefinition, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimGroup, _p_schema__simxml__SimModelCore__SimGroupTo_p_schema__simxml__SimModelCore__SimObjectDefinition, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimBuildingElement, _p_schema__simxml__SimModelCore__SimBuildingElementTo_p_schema__simxml__SimModelCore__SimObjectDefinition, 0, 0},  {&_swigt__p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup_Control, _p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup_ControlTo_p_schema__simxml__SimModelCore__SimObjectDefinition, 0, 0},  {&_swigt__p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup, _p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroupTo_p_schema__simxml__SimModelCore__SimObjectDefinition, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimObject, _p_schema__simxml__SimModelCore__SimObjectTo_p_schema__simxml__SimModelCore__SimObjectDefinition, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimElement, _p_schema__simxml__SimModelCore__SimElementTo_p_schema__simxml__SimModelCore__SimObjectDefinition, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimObjectTypeDefinition, _p_schema__simxml__SimModelCore__SimObjectTypeDefinitionTo_p_schema__simxml__SimModelCore__SimObjectDefinition, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimDistributionFlowElement, _p_schema__simxml__SimModelCore__SimDistributionFlowElementTo_p_schema__simxml__SimModelCore__SimObjectDefinition, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_schema__simxml__SimModelCore__SimBldgModelParams[] = {{&_swigt__p_schema__simxml__SimModelCore__SimBldgModelParams, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_schema__simxml__ResourcesGeneral__SimArrayParams[] = {{&_swigt__p_schema__simxml__ResourcesGeneral__SimArrayParams, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_schema__simxml__SimModelCore__SimTopologicalRepresentationItem[] = {{&_swigt__p_schema__simxml__SimModelCore__SimTopologicalRepresentationItem, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_schema__simxml__ResourcesGeneral__SimUnitType[] = {{&_swigt__p_schema__simxml__ResourcesGeneral__SimUnitType, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_schema__simxml__SimModelCore__SimGeometricRepresentationItem[] = {{&_swigt__p_schema__simxml__SimModelCore__SimGeometricRepresentationItem, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_schema__simxml__ResourcesGeneral__SimPort[] = {{&_swigt__p_schema__simxml__ResourcesGeneral__SimPort, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_schema__simxml__SimModelCore__SimRepresentationItem[] = {{&_swigt__p_schema__simxml__SimModelCore__SimRepresentationItem, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_schema__simxml__SimModelCore__SimRepresentation[] = {{&_swigt__p_schema__simxml__SimModelCore__SimRepresentation, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_schema__simxml__SimModelCore__SimRoot[] = {  {&_swigt__p_schema__simxml__SimModelCore__SimObjectDefinition, _p_schema__simxml__SimModelCore__SimObjectDefinitionTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimDistributionElement, _p_schema__simxml__SimModelCore__SimDistributionElementTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimSpatialStructureElement, _p_schema__simxml__SimModelCore__SimSpatialStructureElementTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimTemplate, _p_schema__simxml__SimModelCore__SimTemplateTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeneral__SimNode, _p_schema__simxml__ResourcesGeneral__SimNodeTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__MepModel__SimFlowEnergyConverter, _p_schema__simxml__MepModel__SimFlowEnergyConverterTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimAppDefault, _p_schema__simxml__SimModelCore__SimAppDefaultTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimActorDefinition, _p_schema__simxml__SimModelCore__SimActorDefinitionTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeneral__SimArrayParams, _p_schema__simxml__ResourcesGeneral__SimArrayParamsTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeometry__SimProfileDefinition, _p_schema__simxml__ResourcesGeometry__SimProfileDefinitionTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimDistributionControlElement, _p_schema__simxml__SimModelCore__SimDistributionControlElementTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeneral__SimPort, _p_schema__simxml__ResourcesGeneral__SimPortTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__BuildingModel__SimSystem, _p_schema__simxml__BuildingModel__SimSystemTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimPropertySetDefinition, _p_schema__simxml__SimModelCore__SimPropertySetDefinitionTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimGroup, _p_schema__simxml__SimModelCore__SimGroupTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimBuildingElement, _p_schema__simxml__SimModelCore__SimBuildingElementTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeneral__SimUnitType, _p_schema__simxml__ResourcesGeneral__SimUnitTypeTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup_Control, _p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup_ControlTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup, _p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroupTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimObjectPlacement, _p_schema__simxml__SimModelCore__SimObjectPlacementTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimObject, _p_schema__simxml__SimModelCore__SimObjectTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimElement, _p_schema__simxml__SimModelCore__SimElementTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimTopologicalRepresentationItem, _p_schema__simxml__SimModelCore__SimTopologicalRepresentationItemTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimResourceObject, _p_schema__simxml__SimModelCore__SimResourceObjectTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimFeatureElement, _p_schema__simxml__SimModelCore__SimFeatureElementTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimObjectTypeDefinition, _p_schema__simxml__SimModelCore__SimObjectTypeDefinitionTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimGeometricRepresentationItem, _p_schema__simxml__SimModelCore__SimGeometricRepresentationItemTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimBldgModelParams, _p_schema__simxml__SimModelCore__SimBldgModelParamsTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimDistributionFlowElement, _p_schema__simxml__SimModelCore__SimDistributionFlowElementTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimRoot, 0, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimRepresentationItem, _p_schema__simxml__SimModelCore__SimRepresentationItemTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimRepresentation, _p_schema__simxml__SimModelCore__SimRepresentationTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_schema__simxml__SimModelCore__SimTemplate[] = {{&_swigt__p_schema__simxml__SimModelCore__SimTemplate, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_schema__simxml__SimModelCore__SimResourceObject[] = {{&_swigt__p_schema__simxml__SimModelCore__SimResourceObject, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_schema__simxml__SimModelCore__SimActorDefinition[] = {{&_swigt__p_schema__simxml__SimModelCore__SimActorDefinition, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_schema__simxml__ResourcesGeneral__SimNode[] = {{&_swigt__p_schema__simxml__ResourcesGeneral__SimNode, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_schema__simxml__SimModelCore__SimPropertySetDefinition[] = {{&_swigt__p_schema__simxml__SimModelCore__SimPropertySetDefinition, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_schema__simxml__ResourcesGeometry__SimProfileDefinition[] = {{&_swigt__p_schema__simxml__ResourcesGeometry__SimProfileDefinition, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_schema__simxml__SimModelCore__SimFeatureElement[] = {{&_swigt__p_schema__simxml__SimModelCore__SimFeatureElement, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_schema__simxml__SimModelCore__SimAppDefault[] = {{&_swigt__p_schema__simxml__SimModelCore__SimAppDefault, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_schema__simxml__SimModelCore__SimObjectPlacement[] = {{&_swigt__p_schema__simxml__SimModelCore__SimObjectPlacement, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_schema__simxml__SimModelCore__SimRoot[] = {  {&_swigt__p_schema__simxml__SimModelCore__SimBldgModelParams, _p_schema__simxml__SimModelCore__SimBldgModelParamsTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeneral__SimArrayParams, _p_schema__simxml__ResourcesGeneral__SimArrayParamsTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimTopologicalRepresentationItem, _p_schema__simxml__SimModelCore__SimTopologicalRepresentationItemTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimBuildingElement, _p_schema__simxml__SimModelCore__SimBuildingElementTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimRoot, 0, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeneral__SimUnitType, _p_schema__simxml__ResourcesGeneral__SimUnitTypeTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimDistributionFlowElement, _p_schema__simxml__SimModelCore__SimDistributionFlowElementTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimObjectTypeDefinition, _p_schema__simxml__SimModelCore__SimObjectTypeDefinitionTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__BuildingModel__SimSystem_HvacHotWater_Control, _p_schema__simxml__BuildingModel__SimSystem_HvacHotWater_ControlTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__BuildingModel__SimSystem_HvacHotWater, _p_schema__simxml__BuildingModel__SimSystem_HvacHotWaterTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimDistributionElement, _p_schema__simxml__SimModelCore__SimDistributionElementTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimObjectDefinition, _p_schema__simxml__SimModelCore__SimObjectDefinitionTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup_Control, _p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup_ControlTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup, _p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroupTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimGroup, _p_schema__simxml__SimModelCore__SimGroupTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimGeometricRepresentationItem, _p_schema__simxml__SimModelCore__SimGeometricRepresentationItemTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeneral__SimPort, _p_schema__simxml__ResourcesGeneral__SimPortTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimSpatialStructureElement, _p_schema__simxml__SimModelCore__SimSpatialStructureElementTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimRepresentationItem, _p_schema__simxml__SimModelCore__SimRepresentationItemTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimRepresentation, _p_schema__simxml__SimModelCore__SimRepresentationTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__BuildingModel__SimSystem, _p_schema__simxml__BuildingModel__SimSystemTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimTemplate, _p_schema__simxml__SimModelCore__SimTemplateTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__MepModel__SimFlowEnergyConverter, _p_schema__simxml__MepModel__SimFlowEnergyConverterTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimResourceObject, _p_schema__simxml__SimModelCore__SimResourceObjectTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimObject, _p_schema__simxml__SimModelCore__SimObjectTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimDistributionControlElement, _p_schema__simxml__SimModelCore__SimDistributionControlElementTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimActorDefinition, _p_schema__simxml__SimModelCore__SimActorDefinitionTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeneral__SimNode, _p_schema__simxml__ResourcesGeneral__SimNodeTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimPropertySetDefinition, _p_schema__simxml__SimModelCore__SimPropertySetDefinitionTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeometry__SimProfileDefinition, _p_schema__simxml__ResourcesGeometry__SimProfileDefinitionTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimFeatureElement, _p_schema__simxml__SimModelCore__SimFeatureElementTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimElement, _p_schema__simxml__SimModelCore__SimElementTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimAppDefault, _p_schema__simxml__SimModelCore__SimAppDefaultTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimObjectPlacement, _p_schema__simxml__SimModelCore__SimObjectPlacementTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_schema__simxml__SimModelCore__doubleList[] = {  {&_swigt__p_schema__simxml__SimModelCore__doubleList, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_schema__simxml__SimModelCore__integerList[] = {  {&_swigt__p_schema__simxml__SimModelCore__integerList, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_schema__simxml__SimModelCore__logical[] = {  {&_swigt__p_schema__simxml__SimModelCore__logical, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_short[] = {  {&_swigt__p_short, 0, 0, 0},{0, 0, 0, 0}};
@@ -9839,8 +8597,6 @@ static swig_cast_info _swigc__p_signed_char[] = {  {&_swigt__p_signed_char, 0, 0
 static swig_cast_info _swigc__p_size_type[] = {  {&_swigt__p_size_type, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_std__auto_ptrT_T_t[] = {  {&_swigt__p_std__auto_ptrT_T_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_std__auto_ptrT_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup_Control_t[] = {  {&_swigt__p_std__auto_ptrT_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup_Control_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_std__auto_ptrT_xml_schema__idref_t[] = {  {&_swigt__p_std__auto_ptrT_xml_schema__idref_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_std__auto_ptrT_xml_schema__idrefs_t[] = {  {&_swigt__p_std__auto_ptrT_xml_schema__idrefs_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_std__vectorT_xsd__cxx__tree__sequence_common__ptr_std__allocatorT_xsd__cxx__tree__sequence_common__ptr_t_t__size_type[] = {  {&_swigt__p_std__vectorT_xsd__cxx__tree__sequence_common__ptr_std__allocatorT_xsd__cxx__tree__sequence_common__ptr_t_t__size_type, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_unsigned_char[] = {  {&_swigt__p_unsigned_char, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_unsigned_int[] = {  {&_swigt__p_unsigned_int, 0, 0, 0},{0, 0, 0, 0}};
@@ -9848,7 +8604,7 @@ static swig_cast_info _swigc__p_unsigned_long_long[] = {  {&_swigt__p_unsigned_l
 static swig_cast_info _swigc__p_unsigned_short[] = {  {&_swigt__p_unsigned_short, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_value_type[] = {  {&_swigt__p_value_type, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xercesc__DOMElement[] = {  {&_swigt__p_xercesc__DOMElement, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_xsd__cxx__tree___type[] = {  {&_swigt__p_schema__simxml__SimModelCore__SimObjectDefinition, _p_schema__simxml__SimModelCore__SimObjectDefinitionTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimDistributionElement, _p_schema__simxml__SimModelCore__SimDistributionElementTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimSpatialStructureElement, _p_schema__simxml__SimModelCore__SimSpatialStructureElementTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimTemplate, _p_schema__simxml__SimModelCore__SimTemplateTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeneral__SimNode, _p_schema__simxml__ResourcesGeneral__SimNodeTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__MepModel__SimFlowEnergyConverter, _p_schema__simxml__MepModel__SimFlowEnergyConverterTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimAppDefault, _p_schema__simxml__SimModelCore__SimAppDefaultTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimActorDefinition, _p_schema__simxml__SimModelCore__SimActorDefinitionTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeneral__SimArrayParams, _p_schema__simxml__ResourcesGeneral__SimArrayParamsTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeometry__SimProfileDefinition, _p_schema__simxml__ResourcesGeometry__SimProfileDefinitionTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimDistributionControlElement, _p_schema__simxml__SimModelCore__SimDistributionControlElementTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeneral__SimPort, _p_schema__simxml__ResourcesGeneral__SimPortTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__BuildingModel__SimSystem, _p_schema__simxml__BuildingModel__SimSystemTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimPropertySetDefinition, _p_schema__simxml__SimModelCore__SimPropertySetDefinitionTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimGroup, _p_schema__simxml__SimModelCore__SimGroupTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimBuildingElement, _p_schema__simxml__SimModelCore__SimBuildingElementTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeneral__SimUnitType, _p_schema__simxml__ResourcesGeneral__SimUnitTypeTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup_Control, _p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup_ControlTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup, _p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroupTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimObjectPlacement, _p_schema__simxml__SimModelCore__SimObjectPlacementTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimObject, _p_schema__simxml__SimModelCore__SimObjectTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimElement, _p_schema__simxml__SimModelCore__SimElementTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimTopologicalRepresentationItem, _p_schema__simxml__SimModelCore__SimTopologicalRepresentationItemTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimResourceObject, _p_schema__simxml__SimModelCore__SimResourceObjectTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimFeatureElement, _p_schema__simxml__SimModelCore__SimFeatureElementTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimObjectTypeDefinition, _p_schema__simxml__SimModelCore__SimObjectTypeDefinitionTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimGeometricRepresentationItem, _p_schema__simxml__SimModelCore__SimGeometricRepresentationItemTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimBldgModelParams, _p_schema__simxml__SimModelCore__SimBldgModelParamsTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_xsd__cxx__tree___type, 0, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimDistributionFlowElement, _p_schema__simxml__SimModelCore__SimDistributionFlowElementTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimRepresentationItem, _p_schema__simxml__SimModelCore__SimRepresentationItemTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimRoot, _p_schema__simxml__SimModelCore__SimRootTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimRepresentation, _p_schema__simxml__SimModelCore__SimRepresentationTo_p_xsd__cxx__tree___type, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_xsd__cxx__tree___type[] = {  {&_swigt__p_schema__simxml__SimModelCore__SimBldgModelParams, _p_schema__simxml__SimModelCore__SimBldgModelParamsTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeneral__SimArrayParams, _p_schema__simxml__ResourcesGeneral__SimArrayParamsTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimTopologicalRepresentationItem, _p_schema__simxml__SimModelCore__SimTopologicalRepresentationItemTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimBuildingElement, _p_schema__simxml__SimModelCore__SimBuildingElementTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimRoot, _p_schema__simxml__SimModelCore__SimRootTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeneral__SimUnitType, _p_schema__simxml__ResourcesGeneral__SimUnitTypeTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimDistributionFlowElement, _p_schema__simxml__SimModelCore__SimDistributionFlowElementTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimObjectTypeDefinition, _p_schema__simxml__SimModelCore__SimObjectTypeDefinitionTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__BuildingModel__SimSystem_HvacHotWater_Control, _p_schema__simxml__BuildingModel__SimSystem_HvacHotWater_ControlTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__BuildingModel__SimSystem_HvacHotWater, _p_schema__simxml__BuildingModel__SimSystem_HvacHotWaterTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimDistributionElement, _p_schema__simxml__SimModelCore__SimDistributionElementTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimObjectDefinition, _p_schema__simxml__SimModelCore__SimObjectDefinitionTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup_Control, _p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup_ControlTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup, _p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroupTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimGroup, _p_schema__simxml__SimModelCore__SimGroupTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimGeometricRepresentationItem, _p_schema__simxml__SimModelCore__SimGeometricRepresentationItemTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeneral__SimPort, _p_schema__simxml__ResourcesGeneral__SimPortTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimSpatialStructureElement, _p_schema__simxml__SimModelCore__SimSpatialStructureElementTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimRepresentationItem, _p_schema__simxml__SimModelCore__SimRepresentationItemTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimRepresentation, _p_schema__simxml__SimModelCore__SimRepresentationTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_xsd__cxx__tree___type, 0, 0, 0},  {&_swigt__p_schema__simxml__BuildingModel__SimSystem, _p_schema__simxml__BuildingModel__SimSystemTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimTemplate, _p_schema__simxml__SimModelCore__SimTemplateTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__MepModel__SimFlowEnergyConverter, _p_schema__simxml__MepModel__SimFlowEnergyConverterTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimResourceObject, _p_schema__simxml__SimModelCore__SimResourceObjectTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimObject, _p_schema__simxml__SimModelCore__SimObjectTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimDistributionControlElement, _p_schema__simxml__SimModelCore__SimDistributionControlElementTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimActorDefinition, _p_schema__simxml__SimModelCore__SimActorDefinitionTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeneral__SimNode, _p_schema__simxml__ResourcesGeneral__SimNodeTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimPropertySetDefinition, _p_schema__simxml__SimModelCore__SimPropertySetDefinitionTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeometry__SimProfileDefinition, _p_schema__simxml__ResourcesGeometry__SimProfileDefinitionTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimFeatureElement, _p_schema__simxml__SimModelCore__SimFeatureElementTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimElement, _p_schema__simxml__SimModelCore__SimElementTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimAppDefault, _p_schema__simxml__SimModelCore__SimAppDefaultTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimObjectPlacement, _p_schema__simxml__SimModelCore__SimObjectPlacementTo_p_xsd__cxx__tree___type, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__base64_binaryT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t[] = {  {&_swigt__p_xsd__cxx__tree__base64_binaryT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__boundsT_char_t[] = {  {&_swigt__p_xsd__cxx__tree__boundsT_char_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__bufferT_char_t[] = {  {&_swigt__p_xsd__cxx__tree__bufferT_char_t, 0, 0, 0},{0, 0, 0, 0}};
@@ -9884,13 +8640,12 @@ static swig_cast_info _swigc__p_xsd__cxx__tree__no_prefix_mappingT_char_t[] = { 
 static swig_cast_info _swigc__p_xsd__cxx__tree__no_type_infoT_char_t[] = {  {&_swigt__p_xsd__cxx__tree__no_type_infoT_char_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t[] = {  {&_swigt__p_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__not_derivedT_char_t[] = {  {&_swigt__p_xsd__cxx__tree__not_derivedT_char_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t[] = {  {&_swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_t__r_t[] = {  {&_swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_t__r_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__parsingT_char_t[] = {  {&_swigt__p_xsd__cxx__tree__parsingT_char_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__propertiesT_char_t[] = {  {&_swigt__p_xsd__cxx__tree__propertiesT_char_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__qnameT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__uriT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t[] = {  {&_swigt__p_xsd__cxx__tree__qnameT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__uriT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__sequenceT_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup_Control_false_t[] = {  {&_swigt__p_xsd__cxx__tree__sequenceT_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup_Control_false_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_xsd__cxx__tree__sequence_common[] = {  {&_swigt__p_xsd__cxx__tree__sequence_common, 0, 0, 0},  {&_swigt__p_xsd__cxx__tree__sequenceT_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup_Control_false_t, _p_xsd__cxx__tree__sequenceT_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup_Control_false_tTo_p_xsd__cxx__tree__sequence_common, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_xsd__cxx__tree__sequenceT_schema__simxml__BuildingModel__SimSystem_HvacHotWater_Control_false_t[] = {{&_swigt__p_xsd__cxx__tree__sequenceT_schema__simxml__BuildingModel__SimSystem_HvacHotWater_Control_false_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_xsd__cxx__tree__sequence_common[] = {  {&_swigt__p_xsd__cxx__tree__sequence_common, 0, 0, 0},  {&_swigt__p_xsd__cxx__tree__sequenceT_schema__simxml__BuildingModel__SimSystem_HvacHotWater_Control_false_t, _p_xsd__cxx__tree__sequenceT_schema__simxml__BuildingModel__SimSystem_HvacHotWater_Control_false_tTo_p_xsd__cxx__tree__sequence_common, 0, 0},  {&_swigt__p_xsd__cxx__tree__sequenceT_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup_Control_false_t, _p_xsd__cxx__tree__sequenceT_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup_Control_false_tTo_p_xsd__cxx__tree__sequence_common, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__severity[] = {  {&_swigt__p_xsd__cxx__tree__severity, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t[] = {  {&_swigt__p_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t[] = {  {&_swigt__p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t, 0, 0, 0},{0, 0, 0, 0}};
@@ -10136,6 +8891,8 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_ptr,
   _swigc__p_reverse_iterator,
   _swigc__p_schema__simxml__BuildingModel__SimSystem,
+  _swigc__p_schema__simxml__BuildingModel__SimSystem_HvacHotWater,
+  _swigc__p_schema__simxml__BuildingModel__SimSystem_HvacHotWater_Control,
   _swigc__p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup,
   _swigc__p_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup_Control,
   _swigc__p_schema__simxml__MepModel__SimFlowEnergyConverter,
@@ -10169,6 +8926,7 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_schema__simxml__SimModelCore__SimSpatialStructureElement,
   _swigc__p_schema__simxml__SimModelCore__SimTemplate,
   _swigc__p_schema__simxml__SimModelCore__SimTopologicalRepresentationItem,
+  _swigc__p_schema__simxml__SimModelCore__doubleList,
   _swigc__p_schema__simxml__SimModelCore__integerList,
   _swigc__p_schema__simxml__SimModelCore__logical,
   _swigc__p_short,
@@ -10176,8 +8934,6 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_size_type,
   _swigc__p_std__auto_ptrT_T_t,
   _swigc__p_std__auto_ptrT_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup_Control_t,
-  _swigc__p_std__auto_ptrT_xml_schema__idref_t,
-  _swigc__p_std__auto_ptrT_xml_schema__idrefs_t,
   _swigc__p_std__vectorT_xsd__cxx__tree__sequence_common__ptr_std__allocatorT_xsd__cxx__tree__sequence_common__ptr_t_t__size_type,
   _swigc__p_unsigned_char,
   _swigc__p_unsigned_int,
@@ -10221,11 +8977,10 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_xsd__cxx__tree__no_type_infoT_char_t,
   _swigc__p_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t,
   _swigc__p_xsd__cxx__tree__not_derivedT_char_t,
-  _swigc__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t,
-  _swigc__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_t__r_t,
   _swigc__p_xsd__cxx__tree__parsingT_char_t,
   _swigc__p_xsd__cxx__tree__propertiesT_char_t,
   _swigc__p_xsd__cxx__tree__qnameT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__uriT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t,
+  _swigc__p_xsd__cxx__tree__sequenceT_schema__simxml__BuildingModel__SimSystem_HvacHotWater_Control_false_t,
   _swigc__p_xsd__cxx__tree__sequenceT_schema__simxml__BuildingModel__SimSystem_ZoneHvacGroup_Control_false_t,
   _swigc__p_xsd__cxx__tree__sequence_common,
   _swigc__p_xsd__cxx__tree__severity,

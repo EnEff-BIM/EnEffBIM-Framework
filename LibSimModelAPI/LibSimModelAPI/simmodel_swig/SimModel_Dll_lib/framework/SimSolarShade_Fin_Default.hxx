@@ -257,7 +257,7 @@ namespace schema
   {
     namespace BuildingModel
     {
-      class SimSolarShade_Fin_Default: public ::schema::simxml::BuildingModel::SimSolarShade_Fin
+      class __declspec(dllexport) SimSolarShade_Fin_Default: public ::schema::simxml::BuildingModel::SimSolarShade_Fin
       {
         public:
         // SimSolarShade_LeftDepth

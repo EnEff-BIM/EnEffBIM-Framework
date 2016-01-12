@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimDistributionPort_AirFlowPort_Air_Out: public ::schema::simxml::ResourcesGeneral::SimDistributionPort_AirFlowPort
+      class __declspec(dllexport) SimDistributionPort_AirFlowPort_Air_Out: public ::schema::simxml::ResourcesGeneral::SimDistributionPort_AirFlowPort
       {
         public:
         // Constructors.

@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimSpaceBoundary: public ::schema::simxml::SimModelCore::SimResourceObject
+      class __declspec(dllexport) SimSpaceBoundary: public ::schema::simxml::SimModelCore::SimResourceObject
       {
         public:
         // RelatingSpace

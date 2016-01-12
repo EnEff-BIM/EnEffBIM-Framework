@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimInternalLoad_Equipment_Electric: public ::schema::simxml::ResourcesGeneral::SimInternalLoad_Equipment
+      class __declspec(dllexport) SimInternalLoad_Equipment_Electric: public ::schema::simxml::ResourcesGeneral::SimInternalLoad_Equipment
       {
         public:
         // SimInternalLoad_ZoneOrZoneListName

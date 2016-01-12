@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimPerson_Person_Default: public ::schema::simxml::ResourcesGeneral::SimPerson_Person
+      class __declspec(dllexport) SimPerson_Person_Default: public ::schema::simxml::ResourcesGeneral::SimPerson_Person
       {
         public:
         // Constructors.

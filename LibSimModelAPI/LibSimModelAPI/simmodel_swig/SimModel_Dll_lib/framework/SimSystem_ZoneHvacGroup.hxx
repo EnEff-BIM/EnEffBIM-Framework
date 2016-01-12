@@ -257,7 +257,7 @@ namespace schema
   {
     namespace BuildingModel
     {
-      class SimSystem_ZoneHvacGroup: public ::schema::simxml::BuildingModel::SimSystem
+      class __declspec(dllexport) SimSystem_ZoneHvacGroup: public ::schema::simxml::BuildingModel::SimSystem
       {
         public:
         // Constructors.

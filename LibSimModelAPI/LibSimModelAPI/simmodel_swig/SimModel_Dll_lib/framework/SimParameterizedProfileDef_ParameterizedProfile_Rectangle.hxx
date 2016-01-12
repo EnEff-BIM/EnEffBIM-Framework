@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeometry
     {
-      class SimParameterizedProfileDef_ParameterizedProfile_Rectangle: public ::schema::simxml::ResourcesGeometry::SimParameterizedProfileDef_ParameterizedProfile
+      class __declspec(dllexport) SimParameterizedProfileDef_ParameterizedProfile_Rectangle: public ::schema::simxml::ResourcesGeometry::SimParameterizedProfileDef_ParameterizedProfile
       {
         public:
         // XDim

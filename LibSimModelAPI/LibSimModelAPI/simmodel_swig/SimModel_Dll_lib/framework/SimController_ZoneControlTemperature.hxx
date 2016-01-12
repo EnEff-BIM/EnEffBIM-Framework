@@ -257,7 +257,7 @@ namespace schema
   {
     namespace MepModel
     {
-      class SimController_ZoneControlTemperature: public ::schema::simxml::MepModel::SimController
+      class __declspec(dllexport) SimController_ZoneControlTemperature: public ::schema::simxml::MepModel::SimController
       {
         public:
         // SimCntrl_Name

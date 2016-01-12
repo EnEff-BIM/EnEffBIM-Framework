@@ -257,7 +257,7 @@ namespace schema
   {
     namespace BuildingModel
     {
-      class SimWindowType_Window_Default: public ::schema::simxml::BuildingModel::SimWindowType_Window
+      class __declspec(dllexport) SimWindowType_Window_Default: public ::schema::simxml::BuildingModel::SimWindowType_Window
       {
         public:
         // Constructors.

@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimWallParams: public ::schema::simxml::SimModelCore::SimBldgModelParams
+      class __declspec(dllexport) SimWallParams: public ::schema::simxml::SimModelCore::SimBldgModelParams
       {
         public:
         // Thickness

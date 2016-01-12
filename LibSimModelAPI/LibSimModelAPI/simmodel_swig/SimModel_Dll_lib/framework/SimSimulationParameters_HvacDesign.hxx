@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimSimulationParameters_HvacDesign: public ::schema::simxml::ResourcesGeneral::SimSimulationParameters
+      class __declspec(dllexport) SimSimulationParameters_HvacDesign: public ::schema::simxml::ResourcesGeneral::SimSimulationParameters
       {
         public:
         // Constructors.

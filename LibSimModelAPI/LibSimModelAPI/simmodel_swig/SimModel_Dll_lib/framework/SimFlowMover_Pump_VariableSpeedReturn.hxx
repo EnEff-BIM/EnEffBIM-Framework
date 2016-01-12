@@ -257,7 +257,7 @@ namespace schema
   {
     namespace MepModel
     {
-      class SimFlowMover_Pump_VariableSpeedReturn: public ::schema::simxml::MepModel::SimFlowMover_Pump
+      class __declspec(dllexport) SimFlowMover_Pump_VariableSpeedReturn: public ::schema::simxml::MepModel::SimFlowMover_Pump
       {
         public:
         // SimFlowMover_Name

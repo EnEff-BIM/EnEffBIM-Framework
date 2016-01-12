@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimSIUnitType_SiUnit: public ::schema::simxml::ResourcesGeneral::SimSIUnitType
+      class __declspec(dllexport) SimSIUnitType_SiUnit: public ::schema::simxml::ResourcesGeneral::SimSIUnitType
       {
         public:
         // Constructors.

@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeometry
     {
-      class SimGeomSurfaceModel_FaceBasedSurfaceModel_Default: public ::schema::simxml::ResourcesGeometry::SimGeomSurfaceModel_FaceBasedSurfaceModel
+      class __declspec(dllexport) SimGeomSurfaceModel_FaceBasedSurfaceModel_Default: public ::schema::simxml::ResourcesGeometry::SimGeomSurfaceModel_FaceBasedSurfaceModel
       {
         public:
         // Constructors.

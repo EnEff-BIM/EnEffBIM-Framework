@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimWindowLiningProps: public ::schema::simxml::SimModelCore::SimPropertySetDefinition
+      class __declspec(dllexport) SimWindowLiningProps: public ::schema::simxml::SimModelCore::SimPropertySetDefinition
       {
         public:
         // LiningDepth

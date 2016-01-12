@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeometry
     {
-      class SimCartesianTransformOperator: public ::schema::simxml::SimModelCore::SimRepresentationItem
+      class __declspec(dllexport) SimCartesianTransformOperator: public ::schema::simxml::SimModelCore::SimRepresentationItem
       {
         public:
         // Axis1

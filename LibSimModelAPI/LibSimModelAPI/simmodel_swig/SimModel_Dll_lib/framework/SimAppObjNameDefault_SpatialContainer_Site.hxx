@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimAppObjNameDefault_SpatialContainer_Site: public ::schema::simxml::ResourcesGeneral::SimAppObjNameDefault_SpatialContainer
+      class __declspec(dllexport) SimAppObjNameDefault_SpatialContainer_Site: public ::schema::simxml::ResourcesGeneral::SimAppObjNameDefault_SpatialContainer
       {
         public:
         // Constructors.

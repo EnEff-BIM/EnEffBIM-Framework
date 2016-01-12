@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimSpaceBoundary_SecondLevel: public ::schema::simxml::ResourcesGeneral::SimSpaceBoundary
+      class __declspec(dllexport) SimSpaceBoundary_SecondLevel: public ::schema::simxml::ResourcesGeneral::SimSpaceBoundary
       {
         public:
         // Constructors.

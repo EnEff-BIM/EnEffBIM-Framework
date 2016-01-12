@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimModelRepresentationContext_GeometricRepresentationSubContext_Default: public ::schema::simxml::ResourcesGeneral::SimModelRepresentationContext_GeometricRepresentationSubContext
+      class __declspec(dllexport) SimModelRepresentationContext_GeometricRepresentationSubContext_Default: public ::schema::simxml::ResourcesGeneral::SimModelRepresentationContext_GeometricRepresentationSubContext
       {
         public:
         // Constructors.

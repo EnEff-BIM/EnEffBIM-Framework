@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimTimeSeriesSchedule_Limits_Default: public ::schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Limits
+      class __declspec(dllexport) SimTimeSeriesSchedule_Limits_Default: public ::schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Limits
       {
         public:
         // Constructors.

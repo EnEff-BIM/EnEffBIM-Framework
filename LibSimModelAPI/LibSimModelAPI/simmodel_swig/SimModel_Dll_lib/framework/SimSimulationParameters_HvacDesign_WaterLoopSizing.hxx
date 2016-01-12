@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimSimulationParameters_HvacDesign_WaterLoopSizing: public ::schema::simxml::ResourcesGeneral::SimSimulationParameters_HvacDesign
+      class __declspec(dllexport) SimSimulationParameters_HvacDesign_WaterLoopSizing: public ::schema::simxml::ResourcesGeneral::SimSimulationParameters_HvacDesign
       {
         public:
         // SimSimParams_PlantOrCondenserLoopName

@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeometry
     {
-      class SimGeomBooleanResult_BooleanClippingResult: public ::schema::simxml::ResourcesGeometry::SimGeomBooleanResult
+      class __declspec(dllexport) SimGeomBooleanResult_BooleanClippingResult: public ::schema::simxml::ResourcesGeometry::SimGeomBooleanResult
       {
         public:
         // Constructors.

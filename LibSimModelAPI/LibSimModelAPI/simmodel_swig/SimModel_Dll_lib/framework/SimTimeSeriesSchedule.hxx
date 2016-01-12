@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimTimeSeriesSchedule: public ::schema::simxml::SimModelCore::SimResourceObject
+      class __declspec(dllexport) SimTimeSeriesSchedule: public ::schema::simxml::SimModelCore::SimResourceObject
       {
         public:
         // ObjectType

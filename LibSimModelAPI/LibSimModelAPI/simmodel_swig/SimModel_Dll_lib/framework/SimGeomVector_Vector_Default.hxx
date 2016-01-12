@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeometry
     {
-      class SimGeomVector_Vector_Default: public ::schema::simxml::ResourcesGeometry::SimGeomVector_Vector
+      class __declspec(dllexport) SimGeomVector_Vector_Default: public ::schema::simxml::ResourcesGeometry::SimGeomVector_Vector
       {
         public:
         // Orientation.Reference

@@ -257,7 +257,7 @@ namespace schema
   {
     namespace MepModel
     {
-      class SimController_SupplyWater: public ::schema::simxml::MepModel::SimController
+      class __declspec(dllexport) SimController_SupplyWater: public ::schema::simxml::MepModel::SimController
       {
         public:
         // SimCntrl_Name

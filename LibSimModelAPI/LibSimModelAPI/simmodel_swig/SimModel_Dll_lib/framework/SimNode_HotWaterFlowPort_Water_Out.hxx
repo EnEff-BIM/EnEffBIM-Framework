@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimNode_HotWaterFlowPort_Water_Out: public ::schema::simxml::ResourcesGeneral::SimNode_HotWaterFlowPort
+      class __declspec(dllexport) SimNode_HotWaterFlowPort_Water_Out: public ::schema::simxml::ResourcesGeneral::SimNode_HotWaterFlowPort
       {
         public:
         // Constructors.

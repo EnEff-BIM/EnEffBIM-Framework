@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimAppPreferences: public ::schema::simxml::SimModelCore::SimAppDefault
+      class __declspec(dllexport) SimAppPreferences: public ::schema::simxml::SimModelCore::SimAppDefault
       {
         public:
         // CurrentUserInterfaceUnits

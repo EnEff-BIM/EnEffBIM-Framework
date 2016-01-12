@@ -279,7 +279,7 @@ namespace schema
   {
     namespace BuildingModel
     {
-      class SimList_EquipmentList_ZoneHvac: public ::schema::simxml::BuildingModel::SimList_EquipmentList
+      class __declspec(dllexport) SimList_EquipmentList_ZoneHvac: public ::schema::simxml::BuildingModel::SimList_EquipmentList
       {
         public:
         // SimList_ZoneEqmt_1_18_ObjectType

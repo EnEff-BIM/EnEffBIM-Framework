@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimAppUnitDefault: public ::schema::simxml::SimModelCore::SimAppDefault
+      class __declspec(dllexport) SimAppUnitDefault: public ::schema::simxml::SimModelCore::SimAppDefault
       {
         public:
         // DefaultForMeasureType

@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeometry
     {
-      class SimGeomSolidModel_FacetedBrep: public ::schema::simxml::ResourcesGeometry::SimGeomSolidModel
+      class __declspec(dllexport) SimGeomSolidModel_FacetedBrep: public ::schema::simxml::ResourcesGeometry::SimGeomSolidModel
       {
         public:
         // Outer

@@ -257,7 +257,7 @@ namespace schema
   {
     namespace BuildingModel
     {
-      class SimProject_Project_DesignAlternative: public ::schema::simxml::BuildingModel::SimProject_Project
+      class __declspec(dllexport) SimProject_Project_DesignAlternative: public ::schema::simxml::BuildingModel::SimProject_Project
       {
         public:
         // ProjectPhase

@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimPresentationLayerAssignment_Default: public ::schema::simxml::ResourcesGeneral::SimPresentationLayerAssignment
+      class __declspec(dllexport) SimPresentationLayerAssignment_Default: public ::schema::simxml::ResourcesGeneral::SimPresentationLayerAssignment
       {
         public:
         // Constructors.

@@ -268,7 +268,7 @@ namespace schema
   {
     namespace ResourcesGeometry
     {
-      class SimGeomPoint_Point_CartesianPoint: public ::schema::simxml::ResourcesGeometry::SimGeomPoint_Point
+      class __declspec(dllexport) SimGeomPoint_Point_CartesianPoint: public ::schema::simxml::ResourcesGeometry::SimGeomPoint_Point
       {
         public:
         // Coordinates

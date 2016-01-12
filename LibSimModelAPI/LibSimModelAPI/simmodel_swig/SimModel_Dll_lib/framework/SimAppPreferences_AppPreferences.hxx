@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimAppPreferences_AppPreferences: public ::schema::simxml::ResourcesGeneral::SimAppPreferences
+      class __declspec(dllexport) SimAppPreferences_AppPreferences: public ::schema::simxml::ResourcesGeneral::SimAppPreferences
       {
         public:
         // Constructors.

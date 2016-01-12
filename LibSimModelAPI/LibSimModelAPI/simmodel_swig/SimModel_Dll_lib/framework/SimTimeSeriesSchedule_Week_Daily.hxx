@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimTimeSeriesSchedule_Week_Daily: public ::schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Week
+      class __declspec(dllexport) SimTimeSeriesSchedule_Week_Daily: public ::schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Week
       {
         public:
         // SimTimeSeriesSched_SundaySched_DayName

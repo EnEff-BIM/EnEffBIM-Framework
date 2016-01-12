@@ -257,7 +257,7 @@ namespace schema
   {
     namespace BuildingModel
     {
-      class SimSystem_HvacHotWater_FullSystem: public ::schema::simxml::BuildingModel::SimSystem_HvacHotWater
+      class __declspec(dllexport) SimSystem_HvacHotWater_FullSystem: public ::schema::simxml::BuildingModel::SimSystem_HvacHotWater
       {
         public:
         // SimSys_AvailMngrListName

@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimDerivedUnitType_DerivedUnit: public ::schema::simxml::ResourcesGeneral::SimDerivedUnitType
+      class __declspec(dllexport) SimDerivedUnitType_DerivedUnit: public ::schema::simxml::ResourcesGeneral::SimDerivedUnitType
       {
         public:
         // Constructors.

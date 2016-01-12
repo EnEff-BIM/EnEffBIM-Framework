@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeometry
     {
-      class SimGeomPoint_Point: public ::schema::simxml::ResourcesGeometry::SimGeomPoint
+      class __declspec(dllexport) SimGeomPoint_Point: public ::schema::simxml::ResourcesGeometry::SimGeomPoint
       {
         public:
         // Constructors.

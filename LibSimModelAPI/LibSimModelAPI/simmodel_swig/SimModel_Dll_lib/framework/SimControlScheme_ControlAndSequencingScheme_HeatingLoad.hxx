@@ -268,7 +268,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimControlScheme_ControlAndSequencingScheme_HeatingLoad: public ::schema::simxml::ResourcesGeneral::SimControlScheme_ControlAndSequencingScheme
+      class __declspec(dllexport) SimControlScheme_ControlAndSequencingScheme_HeatingLoad: public ::schema::simxml::ResourcesGeneral::SimControlScheme_ControlAndSequencingScheme
       {
         public:
         // SimCntrlSchm_LoadRangeLowLimit_1_10

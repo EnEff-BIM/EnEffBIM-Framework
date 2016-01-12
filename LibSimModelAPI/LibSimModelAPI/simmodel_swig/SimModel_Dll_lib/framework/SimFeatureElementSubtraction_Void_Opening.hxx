@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeometry
     {
-      class SimFeatureElementSubtraction_Void_Opening: public ::schema::simxml::ResourcesGeometry::SimFeatureElementSubtraction_Void
+      class __declspec(dllexport) SimFeatureElementSubtraction_Void_Opening: public ::schema::simxml::ResourcesGeometry::SimFeatureElementSubtraction_Void
       {
         public:
         // Constructors.

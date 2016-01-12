@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimConnection_HotWaterFlow: public ::schema::simxml::ResourcesGeneral::SimConnection
+      class __declspec(dllexport) SimConnection_HotWaterFlow: public ::schema::simxml::ResourcesGeneral::SimConnection
       {
         public:
         // Constructors.

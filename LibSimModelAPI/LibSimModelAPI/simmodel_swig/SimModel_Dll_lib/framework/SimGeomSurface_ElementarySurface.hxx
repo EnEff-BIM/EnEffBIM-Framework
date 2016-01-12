@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeometry
     {
-      class SimGeomSurface_ElementarySurface: public ::schema::simxml::ResourcesGeometry::SimGeomSurface
+      class __declspec(dllexport) SimGeomSurface_ElementarySurface: public ::schema::simxml::ResourcesGeometry::SimGeomSurface
       {
         public:
         // Position

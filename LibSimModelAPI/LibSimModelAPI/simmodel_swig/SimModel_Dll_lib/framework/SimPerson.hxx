@@ -290,7 +290,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimPerson: public ::schema::simxml::SimModelCore::SimActorDefinition
+      class __declspec(dllexport) SimPerson: public ::schema::simxml::SimModelCore::SimActorDefinition
       {
         public:
         // Id

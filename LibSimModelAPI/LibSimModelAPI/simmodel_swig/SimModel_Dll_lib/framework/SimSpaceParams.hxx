@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimSpaceParams: public ::schema::simxml::SimModelCore::SimBldgModelParams
+      class __declspec(dllexport) SimSpaceParams: public ::schema::simxml::SimModelCore::SimBldgModelParams
       {
         public:
         // SpaceNumber

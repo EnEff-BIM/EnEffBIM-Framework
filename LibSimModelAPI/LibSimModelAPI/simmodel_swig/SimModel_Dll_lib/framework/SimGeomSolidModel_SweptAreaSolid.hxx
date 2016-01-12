@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeometry
     {
-      class SimGeomSolidModel_SweptAreaSolid: public ::schema::simxml::ResourcesGeometry::SimGeomSolidModel
+      class __declspec(dllexport) SimGeomSolidModel_SweptAreaSolid: public ::schema::simxml::ResourcesGeometry::SimGeomSolidModel
       {
         public:
         // SweptArea

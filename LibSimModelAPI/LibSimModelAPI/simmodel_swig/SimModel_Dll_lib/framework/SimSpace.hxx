@@ -257,7 +257,7 @@ namespace schema
   {
     namespace BuildingModel
     {
-      class SimSpace: public ::schema::simxml::SimModelCore::SimSpatialStructureElement
+      class __declspec(dllexport) SimSpace: public ::schema::simxml::SimModelCore::SimSpatialStructureElement
       {
         public:
         // SpaceZoneAssignments

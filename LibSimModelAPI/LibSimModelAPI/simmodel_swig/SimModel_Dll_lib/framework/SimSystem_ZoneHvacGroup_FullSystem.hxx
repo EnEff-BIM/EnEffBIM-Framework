@@ -257,7 +257,7 @@ namespace schema
   {
     namespace BuildingModel
     {
-      class SimSystem_ZoneHvacGroup_FullSystem: public ::schema::simxml::BuildingModel::SimSystem_ZoneHvacGroup
+      class __declspec(dllexport) SimSystem_ZoneHvacGroup_FullSystem: public ::schema::simxml::BuildingModel::SimSystem_ZoneHvacGroup
       {
         public:
         // T24AcceptTestReq

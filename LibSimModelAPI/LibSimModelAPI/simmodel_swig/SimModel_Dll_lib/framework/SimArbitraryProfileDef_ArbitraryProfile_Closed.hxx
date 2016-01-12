@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeometry
     {
-      class SimArbitraryProfileDef_ArbitraryProfile_Closed: public ::schema::simxml::ResourcesGeometry::SimArbitraryProfileDef_ArbitraryProfile
+      class __declspec(dllexport) SimArbitraryProfileDef_ArbitraryProfile_Closed: public ::schema::simxml::ResourcesGeometry::SimArbitraryProfileDef_ArbitraryProfile
       {
         public:
         // OuterCurve

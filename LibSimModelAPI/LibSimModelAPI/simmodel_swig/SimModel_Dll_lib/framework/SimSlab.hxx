@@ -257,7 +257,7 @@ namespace schema
   {
     namespace BuildingModel
     {
-      class SimSlab: public ::schema::simxml::SimModelCore::SimBuildingElement
+      class __declspec(dllexport) SimSlab: public ::schema::simxml::SimModelCore::SimBuildingElement
       {
         public:
         // SurfProp_HeatTransAlg_SurfName

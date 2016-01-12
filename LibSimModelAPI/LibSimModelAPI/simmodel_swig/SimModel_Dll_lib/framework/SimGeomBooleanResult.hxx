@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeometry
     {
-      class SimGeomBooleanResult: public ::schema::simxml::SimModelCore::SimGeometricRepresentationItem
+      class __declspec(dllexport) SimGeomBooleanResult: public ::schema::simxml::SimModelCore::SimGeometricRepresentationItem
       {
         public:
         // Operator

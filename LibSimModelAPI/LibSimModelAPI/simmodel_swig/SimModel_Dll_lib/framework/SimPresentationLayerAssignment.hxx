@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimPresentationLayerAssignment: public ::schema::simxml::SimModelCore::SimResourceObject
+      class __declspec(dllexport) SimPresentationLayerAssignment: public ::schema::simxml::SimModelCore::SimResourceObject
       {
         public:
         // Name

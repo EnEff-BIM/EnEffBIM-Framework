@@ -268,7 +268,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimMaterial_OpaqueMaterial: public ::schema::simxml::ResourcesGeneral::SimMaterial
+      class __declspec(dllexport) SimMaterial_OpaqueMaterial: public ::schema::simxml::ResourcesGeneral::SimMaterial
       {
         public:
         // MatProp_MoistPeneDepth_Settings_Name

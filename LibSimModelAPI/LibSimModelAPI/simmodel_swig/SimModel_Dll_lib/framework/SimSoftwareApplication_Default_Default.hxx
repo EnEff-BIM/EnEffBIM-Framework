@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimSoftwareApplication_Default_Default: public ::schema::simxml::ResourcesGeneral::SimSoftwareApplication_Default
+      class __declspec(dllexport) SimSoftwareApplication_Default_Default: public ::schema::simxml::ResourcesGeneral::SimSoftwareApplication_Default
       {
         public:
         // Constructors.

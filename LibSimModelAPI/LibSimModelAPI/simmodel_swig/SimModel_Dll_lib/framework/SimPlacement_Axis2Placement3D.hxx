@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeometry
     {
-      class SimPlacement_Axis2Placement3D: public ::schema::simxml::ResourcesGeometry::SimPlacement
+      class __declspec(dllexport) SimPlacement_Axis2Placement3D: public ::schema::simxml::ResourcesGeometry::SimPlacement
       {
         public:
         // Axis

@@ -268,7 +268,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimInternalLoad_People: public ::schema::simxml::ResourcesGeneral::SimInternalLoad
+      class __declspec(dllexport) SimInternalLoad_People: public ::schema::simxml::ResourcesGeneral::SimInternalLoad
       {
         public:
         // SimInternalLoad_Name

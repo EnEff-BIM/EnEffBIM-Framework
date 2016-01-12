@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimControlScheme_AvailabilityManagerScheme: public ::schema::simxml::ResourcesGeneral::SimControlScheme
+      class __declspec(dllexport) SimControlScheme_AvailabilityManagerScheme: public ::schema::simxml::ResourcesGeneral::SimControlScheme
       {
         public:
         // Constructors.

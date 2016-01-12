@@ -378,7 +378,7 @@ namespace schema
   {
     namespace BuildingModel
     {
-      class SimSpace_Occupied: public ::schema::simxml::BuildingModel::SimSpace
+      class __declspec(dllexport) SimSpace_Occupied: public ::schema::simxml::BuildingModel::SimSpace
       {
         public:
         // T24BaselineCommercialRefrigerationEPD

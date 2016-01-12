@@ -257,7 +257,7 @@ namespace schema
   {
     namespace MepModel
     {
-      class SimSensor_TemperatureSensor_DryBulb: public ::schema::simxml::MepModel::SimSensor_TemperatureSensor
+      class __declspec(dllexport) SimSensor_TemperatureSensor_DryBulb: public ::schema::simxml::MepModel::SimSensor_TemperatureSensor
       {
         public:
         // SimSensor_Name

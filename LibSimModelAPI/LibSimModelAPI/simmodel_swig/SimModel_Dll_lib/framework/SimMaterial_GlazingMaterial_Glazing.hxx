@@ -268,7 +268,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimMaterial_GlazingMaterial_Glazing: public ::schema::simxml::ResourcesGeneral::SimMaterial_GlazingMaterial
+      class __declspec(dllexport) SimMaterial_GlazingMaterial_Glazing: public ::schema::simxml::ResourcesGeneral::SimMaterial_GlazingMaterial
       {
         public:
         // SimMaterial_Thick

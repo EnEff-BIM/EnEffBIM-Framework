@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimSlabParams_Slab: public ::schema::simxml::ResourcesGeneral::SimSlabParams
+      class __declspec(dllexport) SimSlabParams_Slab: public ::schema::simxml::ResourcesGeneral::SimSlabParams
       {
         public:
         // Constructors.

@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimModelRepresentationContext: public ::schema::simxml::SimModelCore::SimResourceObject
+      class __declspec(dllexport) SimModelRepresentationContext: public ::schema::simxml::SimModelCore::SimResourceObject
       {
         public:
         // ContextIdentifier

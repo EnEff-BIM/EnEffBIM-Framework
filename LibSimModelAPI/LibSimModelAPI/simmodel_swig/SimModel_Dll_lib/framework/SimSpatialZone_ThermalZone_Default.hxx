@@ -268,7 +268,7 @@ namespace schema
   {
     namespace BuildingModel
     {
-      class SimSpatialZone_ThermalZone_Default: public ::schema::simxml::BuildingModel::SimSpatialZone_ThermalZone
+      class __declspec(dllexport) SimSpatialZone_ThermalZone_Default: public ::schema::simxml::BuildingModel::SimSpatialZone_ThermalZone
       {
         public:
         // ZoneConditioningRequirement

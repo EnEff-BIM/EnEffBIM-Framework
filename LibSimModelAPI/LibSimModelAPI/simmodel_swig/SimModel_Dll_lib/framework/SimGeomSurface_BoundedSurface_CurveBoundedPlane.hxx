@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeometry
     {
-      class SimGeomSurface_BoundedSurface_CurveBoundedPlane: public ::schema::simxml::ResourcesGeometry::SimGeomSurface_BoundedSurface
+      class __declspec(dllexport) SimGeomSurface_BoundedSurface_CurveBoundedPlane: public ::schema::simxml::ResourcesGeometry::SimGeomSurface_BoundedSurface
       {
         public:
         // BasisSurface

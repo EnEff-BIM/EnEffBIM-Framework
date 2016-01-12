@@ -257,7 +257,7 @@ namespace schema
   {
     namespace SimModelCore
     {
-      class SimGroup_SpatialZoneGroup_ZoneGroup: public ::schema::simxml::SimModelCore::SimGroup_SpatialZoneGroup
+      class __declspec(dllexport) SimGroup_SpatialZoneGroup_ZoneGroup: public ::schema::simxml::SimModelCore::SimGroup_SpatialZoneGroup
       {
         public:
         // SimGroup_ZoneListName

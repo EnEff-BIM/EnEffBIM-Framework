@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimControlScheme: public ::schema::simxml::SimModelCore::SimResourceObject
+      class __declspec(dllexport) SimControlScheme: public ::schema::simxml::SimModelCore::SimResourceObject
       {
         public:
         // Constructors.

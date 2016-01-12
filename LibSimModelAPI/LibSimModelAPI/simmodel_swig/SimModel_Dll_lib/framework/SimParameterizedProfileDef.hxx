@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeometry
     {
-      class SimParameterizedProfileDef: public ::schema::simxml::ResourcesGeometry::SimProfileDefinition
+      class __declspec(dllexport) SimParameterizedProfileDef: public ::schema::simxml::ResourcesGeometry::SimProfileDefinition
       {
         public:
         // Position

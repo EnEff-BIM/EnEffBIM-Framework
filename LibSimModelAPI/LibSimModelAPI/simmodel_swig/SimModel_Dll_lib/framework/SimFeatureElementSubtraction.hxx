@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeometry
     {
-      class SimFeatureElementSubtraction: public ::schema::simxml::SimModelCore::SimFeatureElement
+      class __declspec(dllexport) SimFeatureElementSubtraction: public ::schema::simxml::SimModelCore::SimFeatureElement
       {
         public:
         // Name

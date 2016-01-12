@@ -98,47 +98,14 @@ except:
 
 
 import base
-class SimSystem(base.SimGroup):
+import SimSystem_HvacHotWater_Control
+class SimSystem_ZoneHvacGroup(SimSystem_HvacHotWater_Control.SimSystem):
     __swig_setmethods__ = {}
-    for _s in [base.SimGroup]:
-        __swig_setmethods__.update(getattr(_s, '__swig_setmethods__', {}))
-    __setattr__ = lambda self, name, value: _swig_setattr(self, SimSystem, name, value)
-    __swig_getmethods__ = {}
-    for _s in [base.SimGroup]:
-        __swig_getmethods__.update(getattr(_s, '__swig_getmethods__', {}))
-    __getattr__ = lambda self, name: _swig_getattr(self, SimSystem, name)
-    __repr__ = _swig_repr
-
-    def ParentSystem(self, *args):
-        return _SimSystem_ZoneHvacGroup_Control.SimSystem_ParentSystem(self, *args)
-
-    def SystemServicesSpatialElements(self, *args):
-        return _SimSystem_ZoneHvacGroup_Control.SimSystem_SystemServicesSpatialElements(self, *args)
-
-    def HvacSystemSizingParams(self, *args):
-        return _SimSystem_ZoneHvacGroup_Control.SimSystem_HvacSystemSizingParams(self, *args)
-
-    def __init__(self, *args):
-        this = _SimSystem_ZoneHvacGroup_Control.new_SimSystem(*args)
-        try:
-            self.this.append(this)
-        except:
-            self.this = this
-
-    def _clone(self, f=0, c=None):
-        return _SimSystem_ZoneHvacGroup_Control.SimSystem__clone(self, f, c)
-    __swig_destroy__ = _SimSystem_ZoneHvacGroup_Control.delete_SimSystem
-    __del__ = lambda self: None
-SimSystem_swigregister = _SimSystem_ZoneHvacGroup_Control.SimSystem_swigregister
-SimSystem_swigregister(SimSystem)
-
-class SimSystem_ZoneHvacGroup(SimSystem):
-    __swig_setmethods__ = {}
-    for _s in [SimSystem]:
+    for _s in [SimSystem_HvacHotWater_Control.SimSystem]:
         __swig_setmethods__.update(getattr(_s, '__swig_setmethods__', {}))
     __setattr__ = lambda self, name, value: _swig_setattr(self, SimSystem_ZoneHvacGroup, name, value)
     __swig_getmethods__ = {}
-    for _s in [SimSystem]:
+    for _s in [SimSystem_HvacHotWater_Control.SimSystem]:
         __swig_getmethods__.update(getattr(_s, '__swig_getmethods__', {}))
     __getattr__ = lambda self, name: _swig_getattr(self, SimSystem_ZoneHvacGroup, name)
     __repr__ = _swig_repr

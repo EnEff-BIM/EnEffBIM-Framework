@@ -257,7 +257,7 @@ namespace schema
   {
     namespace BuildingModel
     {
-      class SimSpatialZone_ThermalZone: public ::schema::simxml::BuildingModel::SimSpatialZone
+      class __declspec(dllexport) SimSpatialZone_ThermalZone: public ::schema::simxml::BuildingModel::SimSpatialZone
       {
         public:
         // Constructors.

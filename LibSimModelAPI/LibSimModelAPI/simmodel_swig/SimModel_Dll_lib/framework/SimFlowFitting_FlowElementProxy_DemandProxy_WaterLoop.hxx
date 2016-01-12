@@ -257,7 +257,7 @@ namespace schema
   {
     namespace MepModel
     {
-      class SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop: public ::schema::simxml::MepModel::SimFlowFitting_FlowElementProxy
+      class __declspec(dllexport) SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop: public ::schema::simxml::MepModel::SimFlowFitting_FlowElementProxy
       {
         public:
         // SimFlowFitting_Name

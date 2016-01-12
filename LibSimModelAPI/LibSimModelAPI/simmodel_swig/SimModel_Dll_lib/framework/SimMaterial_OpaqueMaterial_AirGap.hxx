@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimMaterial_OpaqueMaterial_AirGap: public ::schema::simxml::ResourcesGeneral::SimMaterial_OpaqueMaterial
+      class __declspec(dllexport) SimMaterial_OpaqueMaterial_AirGap: public ::schema::simxml::ResourcesGeneral::SimMaterial_OpaqueMaterial
       {
         public:
         // SimMaterial_Name

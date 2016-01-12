@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeometry
     {
-      class SimLocalPlacement_LocalPlacement_RelativePlacement: public ::schema::simxml::ResourcesGeometry::SimLocalPlacement_LocalPlacement
+      class __declspec(dllexport) SimLocalPlacement_LocalPlacement_RelativePlacement: public ::schema::simxml::ResourcesGeometry::SimLocalPlacement_LocalPlacement
       {
         public:
         // Constructors.

@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimAppObjNameDefault_Space_Space: public ::schema::simxml::ResourcesGeneral::SimAppObjNameDefault_Space
+      class __declspec(dllexport) SimAppObjNameDefault_Space_Space: public ::schema::simxml::ResourcesGeneral::SimAppObjNameDefault_Space
       {
         public:
         // Constructors.

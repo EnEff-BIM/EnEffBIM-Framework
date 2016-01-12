@@ -257,7 +257,7 @@ namespace schema
   {
     namespace BuildingModel
     {
-      class SimSolarShade: public ::schema::simxml::SimModelCore::SimBuildingElement
+      class __declspec(dllexport) SimSolarShade: public ::schema::simxml::SimModelCore::SimBuildingElement
       {
         public:
         // Name
