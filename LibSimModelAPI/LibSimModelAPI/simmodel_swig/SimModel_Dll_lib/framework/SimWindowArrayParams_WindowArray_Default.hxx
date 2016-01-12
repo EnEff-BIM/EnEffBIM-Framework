@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimWindowArrayParams_WindowArray_Default: public ::schema::simxml::ResourcesGeneral::SimWindowArrayParams_WindowArray
+      class __declspec(dllexport) SimWindowArrayParams_WindowArray_Default: public ::schema::simxml::ResourcesGeneral::SimWindowArrayParams_WindowArray
       {
         public:
         // Constructors.

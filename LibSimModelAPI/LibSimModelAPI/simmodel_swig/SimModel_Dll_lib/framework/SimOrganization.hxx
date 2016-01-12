@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimOrganization: public ::schema::simxml::SimModelCore::SimActorDefinition
+      class __declspec(dllexport) SimOrganization: public ::schema::simxml::SimModelCore::SimActorDefinition
       {
         public:
         // Id

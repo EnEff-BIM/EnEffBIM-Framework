@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimDistributionPort: public ::schema::simxml::ResourcesGeneral::SimPort
+      class __declspec(dllexport) SimDistributionPort: public ::schema::simxml::ResourcesGeneral::SimPort
       {
         public:
         // FlowDirection

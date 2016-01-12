@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimMaterialLayerSet_GlazingLayerSet_Window: public ::schema::simxml::ResourcesGeneral::SimMaterialLayerSet_GlazingLayerSet
+      class __declspec(dllexport) SimMaterialLayerSet_GlazingLayerSet_Window: public ::schema::simxml::ResourcesGeneral::SimMaterialLayerSet_GlazingLayerSet
       {
         public:
         // SimMatLayerSet_Name

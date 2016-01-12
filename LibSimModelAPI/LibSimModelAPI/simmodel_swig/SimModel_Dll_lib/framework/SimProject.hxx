@@ -257,7 +257,7 @@ namespace schema
   {
     namespace BuildingModel
     {
-      class SimProject: public ::schema::simxml::SimModelCore::SimSpatialStructureElement
+      class __declspec(dllexport) SimProject: public ::schema::simxml::SimModelCore::SimSpatialStructureElement
       {
         public:
         // Name

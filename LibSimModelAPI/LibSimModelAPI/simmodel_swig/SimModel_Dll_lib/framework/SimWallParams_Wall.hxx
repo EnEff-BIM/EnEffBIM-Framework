@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimWallParams_Wall: public ::schema::simxml::ResourcesGeneral::SimWallParams
+      class __declspec(dllexport) SimWallParams_Wall: public ::schema::simxml::ResourcesGeneral::SimWallParams
       {
         public:
         // Constructors.

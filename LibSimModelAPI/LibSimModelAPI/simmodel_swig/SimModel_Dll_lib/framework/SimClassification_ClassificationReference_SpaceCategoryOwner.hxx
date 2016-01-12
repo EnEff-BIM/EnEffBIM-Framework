@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimClassification_ClassificationReference_SpaceCategoryOwner: public ::schema::simxml::ResourcesGeneral::SimClassification_ClassificationReference
+      class __declspec(dllexport) SimClassification_ClassificationReference_SpaceCategoryOwner: public ::schema::simxml::ResourcesGeneral::SimClassification_ClassificationReference
       {
         public:
         // Constructors.

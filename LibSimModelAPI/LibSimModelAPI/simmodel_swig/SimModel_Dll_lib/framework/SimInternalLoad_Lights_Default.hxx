@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimInternalLoad_Lights_Default: public ::schema::simxml::ResourcesGeneral::SimInternalLoad_Lights
+      class __declspec(dllexport) SimInternalLoad_Lights_Default: public ::schema::simxml::ResourcesGeneral::SimInternalLoad_Lights
       {
         public:
         // Constructors.

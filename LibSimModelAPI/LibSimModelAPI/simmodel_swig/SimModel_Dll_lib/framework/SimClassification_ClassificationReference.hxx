@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimClassification_ClassificationReference: public ::schema::simxml::ResourcesGeneral::SimClassification
+      class __declspec(dllexport) SimClassification_ClassificationReference: public ::schema::simxml::ResourcesGeneral::SimClassification
       {
         public:
         // Location

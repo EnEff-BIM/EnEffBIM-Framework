@@ -257,7 +257,7 @@ namespace schema
   {
     namespace MepModel
     {
-      class SimFlowEnergyTransfer_ConvectiveHeater_Water: public ::schema::simxml::MepModel::SimFlowEnergyTransfer_ConvectiveHeater
+      class __declspec(dllexport) SimFlowEnergyTransfer_ConvectiveHeater_Water: public ::schema::simxml::MepModel::SimFlowEnergyTransfer_ConvectiveHeater
       {
         public:
         // SimFlowEnergyTrans_InNodeName

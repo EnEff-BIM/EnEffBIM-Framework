@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeometry
     {
-      class SimConnectedFaceSet_ConnectedFaceSet_ClosedShell: public ::schema::simxml::ResourcesGeometry::SimConnectedFaceSet_ConnectedFaceSet
+      class __declspec(dllexport) SimConnectedFaceSet_ConnectedFaceSet_ClosedShell: public ::schema::simxml::ResourcesGeometry::SimConnectedFaceSet_ConnectedFaceSet
       {
         public:
         // Constructors.

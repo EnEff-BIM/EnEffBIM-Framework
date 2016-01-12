@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeometry
     {
-      class SimArbitraryProfileDef: public ::schema::simxml::ResourcesGeometry::SimProfileDefinition
+      class __declspec(dllexport) SimArbitraryProfileDef: public ::schema::simxml::ResourcesGeometry::SimProfileDefinition
       {
         public:
         // Constructors.

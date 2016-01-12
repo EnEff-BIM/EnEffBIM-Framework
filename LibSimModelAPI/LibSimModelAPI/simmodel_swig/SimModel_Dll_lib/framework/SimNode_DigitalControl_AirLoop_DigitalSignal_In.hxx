@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimNode_DigitalControl_AirLoop_DigitalSignal_In: public ::schema::simxml::ResourcesGeneral::SimNode_DigitalControl_AirLoop
+      class __declspec(dllexport) SimNode_DigitalControl_AirLoop_DigitalSignal_In: public ::schema::simxml::ResourcesGeneral::SimNode_DigitalControl_AirLoop
       {
         public:
         // Constructors.

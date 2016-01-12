@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimClassification_ClassificationSystem_OmniClass: public ::schema::simxml::ResourcesGeneral::SimClassification_ClassificationSystem
+      class __declspec(dllexport) SimClassification_ClassificationSystem_OmniClass: public ::schema::simxml::ResourcesGeneral::SimClassification_ClassificationSystem
       {
         public:
         // Constructors.

@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeometry
     {
-      class SimFaceBound_FaceBound: public ::schema::simxml::ResourcesGeometry::SimFaceBound
+      class __declspec(dllexport) SimFaceBound_FaceBound: public ::schema::simxml::ResourcesGeometry::SimFaceBound
       {
         public:
         // Constructors.

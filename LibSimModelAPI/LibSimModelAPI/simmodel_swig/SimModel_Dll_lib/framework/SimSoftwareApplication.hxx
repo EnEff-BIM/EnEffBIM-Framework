@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimSoftwareApplication: public ::schema::simxml::SimModelCore::SimResourceObject
+      class __declspec(dllexport) SimSoftwareApplication: public ::schema::simxml::SimModelCore::SimResourceObject
       {
         public:
         // ApplicationDeveloper

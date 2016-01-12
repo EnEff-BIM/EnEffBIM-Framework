@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeometry
     {
-      class SimGeomHalfSpaceSolid_HalfSpaceSolid: public ::schema::simxml::ResourcesGeometry::SimGeomHalfSpaceSolid
+      class __declspec(dllexport) SimGeomHalfSpaceSolid_HalfSpaceSolid: public ::schema::simxml::ResourcesGeometry::SimGeomHalfSpaceSolid
       {
         public:
         // Constructors.

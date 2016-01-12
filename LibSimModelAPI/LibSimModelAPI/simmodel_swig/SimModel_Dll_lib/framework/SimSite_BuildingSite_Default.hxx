@@ -257,7 +257,7 @@ namespace schema
   {
     namespace BuildingModel
     {
-      class SimSite_BuildingSite_Default: public ::schema::simxml::BuildingModel::SimSite_BuildingSite
+      class __declspec(dllexport) SimSite_BuildingSite_Default: public ::schema::simxml::BuildingModel::SimSite_BuildingSite
       {
         public:
         // Constructors.

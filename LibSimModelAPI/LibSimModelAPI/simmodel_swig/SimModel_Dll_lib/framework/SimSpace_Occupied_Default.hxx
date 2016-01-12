@@ -257,7 +257,7 @@ namespace schema
   {
     namespace BuildingModel
     {
-      class SimSpace_Occupied_Default: public ::schema::simxml::BuildingModel::SimSpace_Occupied
+      class __declspec(dllexport) SimSpace_Occupied_Default: public ::schema::simxml::BuildingModel::SimSpace_Occupied
       {
         public:
         // Constructors.

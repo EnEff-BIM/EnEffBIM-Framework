@@ -257,7 +257,7 @@ namespace schema
   {
     namespace MepModel
     {
-      class SimFlowPlant_Boiler_BoilerHotWater: public ::schema::simxml::MepModel::SimFlowPlant_Boiler
+      class __declspec(dllexport) SimFlowPlant_Boiler_BoilerHotWater: public ::schema::simxml::MepModel::SimFlowPlant_Boiler
       {
         public:
         // SimFlowPlant_Name

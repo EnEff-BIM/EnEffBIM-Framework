@@ -257,7 +257,7 @@ namespace schema
   {
     namespace BuildingModel
     {
-      class SimWindowType: public ::schema::simxml::SimModelCore::SimObjectTypeDefinition
+      class __declspec(dllexport) SimWindowType: public ::schema::simxml::SimModelCore::SimObjectTypeDefinition
       {
         public:
         // Name

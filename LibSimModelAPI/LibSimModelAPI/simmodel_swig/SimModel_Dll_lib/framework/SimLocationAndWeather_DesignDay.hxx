@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimLocationAndWeather_DesignDay: public ::schema::simxml::ResourcesGeneral::SimLocationAndWeather
+      class __declspec(dllexport) SimLocationAndWeather_DesignDay: public ::schema::simxml::ResourcesGeneral::SimLocationAndWeather
       {
         public:
         // SimLocationAndWeather_Name

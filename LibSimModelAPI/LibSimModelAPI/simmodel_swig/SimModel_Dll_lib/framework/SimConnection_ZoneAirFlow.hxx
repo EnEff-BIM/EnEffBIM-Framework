@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimConnection_ZoneAirFlow: public ::schema::simxml::ResourcesGeneral::SimConnection
+      class __declspec(dllexport) SimConnection_ZoneAirFlow: public ::schema::simxml::ResourcesGeneral::SimConnection
       {
         public:
         // Constructors.

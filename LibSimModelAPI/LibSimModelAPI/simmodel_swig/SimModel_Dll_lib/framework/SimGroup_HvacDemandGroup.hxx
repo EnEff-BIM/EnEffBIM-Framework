@@ -257,7 +257,7 @@ namespace schema
   {
     namespace SimModelCore
     {
-      class SimGroup_HvacDemandGroup: public ::schema::simxml::SimModelCore::SimGroup
+      class __declspec(dllexport) SimGroup_HvacDemandGroup: public ::schema::simxml::SimModelCore::SimGroup
       {
         public:
         // Constructors.

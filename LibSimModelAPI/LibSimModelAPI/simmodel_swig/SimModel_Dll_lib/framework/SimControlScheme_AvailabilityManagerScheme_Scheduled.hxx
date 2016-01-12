@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimControlScheme_AvailabilityManagerScheme_Scheduled: public ::schema::simxml::ResourcesGeneral::SimControlScheme_AvailabilityManagerScheme
+      class __declspec(dllexport) SimControlScheme_AvailabilityManagerScheme_Scheduled: public ::schema::simxml::ResourcesGeneral::SimControlScheme_AvailabilityManagerScheme
       {
         public:
         // SimCntrlSchm_Name

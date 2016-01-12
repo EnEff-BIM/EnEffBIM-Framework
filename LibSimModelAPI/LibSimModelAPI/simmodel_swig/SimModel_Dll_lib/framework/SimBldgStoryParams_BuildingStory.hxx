@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimBldgStoryParams_BuildingStory: public ::schema::simxml::ResourcesGeneral::SimBldgStoryParams
+      class __declspec(dllexport) SimBldgStoryParams_BuildingStory: public ::schema::simxml::ResourcesGeneral::SimBldgStoryParams
       {
         public:
         // Constructors.

@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimTemplateZoneConditions: public ::schema::simxml::SimModelCore::SimTemplate
+      class __declspec(dllexport) SimTemplateZoneConditions: public ::schema::simxml::SimModelCore::SimTemplate
       {
         public:
         // TemplateInfiltration

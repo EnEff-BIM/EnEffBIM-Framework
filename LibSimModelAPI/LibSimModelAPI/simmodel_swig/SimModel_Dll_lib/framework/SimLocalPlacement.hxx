@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeometry
     {
-      class SimLocalPlacement: public ::schema::simxml::SimModelCore::SimObjectPlacement
+      class __declspec(dllexport) SimLocalPlacement: public ::schema::simxml::SimModelCore::SimObjectPlacement
       {
         public:
         // PlacementRelTo

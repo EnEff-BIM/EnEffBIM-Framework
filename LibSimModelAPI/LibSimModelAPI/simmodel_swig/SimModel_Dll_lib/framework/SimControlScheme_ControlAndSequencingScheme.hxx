@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimControlScheme_ControlAndSequencingScheme: public ::schema::simxml::ResourcesGeneral::SimControlScheme
+      class __declspec(dllexport) SimControlScheme_ControlAndSequencingScheme: public ::schema::simxml::ResourcesGeneral::SimControlScheme
       {
         public:
         // SimCntrlSchm_Name

@@ -12,8 +12,8 @@ using namespace xsd::cxx::tree;
 %auto_ptr(::schema::simxml::BuildingModel::SimSystem_ZoneHvacGroup_Control)
 
 %import  "..\base\base.i"
+%import  "..\SimSystem_HvacHotWater_Control\SimSystem_HvacHotWater_Control.i"
 /* Let's just grab the original header file here */
-%include "..\SimModel\framework\SimSystem.hxx"
 %include "..\SimModel\framework\SimSystem_ZoneHvacGroup.hxx"
 %include "..\SimModel\framework\SimSystem_ZoneHvacGroup_Control.hxx"
 

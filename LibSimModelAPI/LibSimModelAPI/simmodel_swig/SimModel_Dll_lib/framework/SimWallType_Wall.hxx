@@ -257,7 +257,7 @@ namespace schema
   {
     namespace BuildingModel
     {
-      class SimWallType_Wall: public ::schema::simxml::BuildingModel::SimWallType
+      class __declspec(dllexport) SimWallType_Wall: public ::schema::simxml::BuildingModel::SimWallType
       {
         public:
         // Constructors.

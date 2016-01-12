@@ -268,7 +268,7 @@ namespace schema
   {
     namespace BuildingModel
     {
-      class SimList_SchemeList_DemandManagerScheme: public ::schema::simxml::BuildingModel::SimList_SchemeList
+      class __declspec(dllexport) SimList_SchemeList_DemandManagerScheme: public ::schema::simxml::BuildingModel::SimList_SchemeList
       {
         public:
         // SimList_MeterName

@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeometry
     {
-      class SimPlacement: public ::schema::simxml::SimModelCore::SimGeometricRepresentationItem
+      class __declspec(dllexport) SimPlacement: public ::schema::simxml::SimModelCore::SimGeometricRepresentationItem
       {
         public:
         // Location

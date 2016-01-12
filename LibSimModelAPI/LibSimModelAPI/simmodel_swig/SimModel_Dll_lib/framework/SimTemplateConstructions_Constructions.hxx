@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimTemplateConstructions_Constructions: public ::schema::simxml::ResourcesGeneral::SimTemplateConstructions
+      class __declspec(dllexport) SimTemplateConstructions_Constructions: public ::schema::simxml::ResourcesGeneral::SimTemplateConstructions
       {
         public:
         // Constructors.

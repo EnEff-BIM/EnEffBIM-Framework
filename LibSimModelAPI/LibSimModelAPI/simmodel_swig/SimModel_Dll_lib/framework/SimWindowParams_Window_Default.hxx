@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimWindowParams_Window_Default: public ::schema::simxml::ResourcesGeneral::SimWindowParams_Window
+      class __declspec(dllexport) SimWindowParams_Window_Default: public ::schema::simxml::ResourcesGeneral::SimWindowParams_Window
       {
         public:
         // Constructors.

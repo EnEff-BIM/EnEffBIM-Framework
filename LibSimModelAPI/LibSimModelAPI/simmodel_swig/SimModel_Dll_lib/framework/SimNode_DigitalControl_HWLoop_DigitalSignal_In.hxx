@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimNode_DigitalControl_HWLoop_DigitalSignal_In: public ::schema::simxml::ResourcesGeneral::SimNode_DigitalControl_HWLoop
+      class __declspec(dllexport) SimNode_DigitalControl_HWLoop_DigitalSignal_In: public ::schema::simxml::ResourcesGeneral::SimNode_DigitalControl_HWLoop
       {
         public:
         // Constructors.

@@ -14,7 +14,6 @@ using namespace xsd::cxx::tree;
 %import  "..\base\base.i"
 %import  "..\SimGeomVector_Vector_Default\SimGeomVector_Vector_Default.i"
 /* Let's just grab the original header file here */
-%include "..\SimModel\framework\SimGeomVector_Vector.hxx"
 %include "..\SimModel\framework\SimGeomVector_Vector_Direction.hxx"
 
 namespace xsd

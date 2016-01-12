@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimWindowLiningProps_WindowLiningProps: public ::schema::simxml::ResourcesGeneral::SimWindowLiningProps
+      class __declspec(dllexport) SimWindowLiningProps_WindowLiningProps: public ::schema::simxml::ResourcesGeneral::SimWindowLiningProps
       {
         public:
         // Constructors.

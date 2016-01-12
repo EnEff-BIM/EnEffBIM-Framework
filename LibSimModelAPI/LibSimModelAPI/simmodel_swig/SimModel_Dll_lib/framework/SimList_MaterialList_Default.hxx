@@ -257,7 +257,7 @@ namespace schema
   {
     namespace BuildingModel
     {
-      class SimList_MaterialList_Default: public ::schema::simxml::BuildingModel::SimList_MaterialList
+      class __declspec(dllexport) SimList_MaterialList_Default: public ::schema::simxml::BuildingModel::SimList_MaterialList
       {
         public:
         // Constructors.

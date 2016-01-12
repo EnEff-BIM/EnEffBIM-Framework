@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimSlabParams: public ::schema::simxml::SimModelCore::SimBldgModelParams
+      class __declspec(dllexport) SimSlabParams: public ::schema::simxml::SimModelCore::SimBldgModelParams
       {
         public:
         // DimensionX

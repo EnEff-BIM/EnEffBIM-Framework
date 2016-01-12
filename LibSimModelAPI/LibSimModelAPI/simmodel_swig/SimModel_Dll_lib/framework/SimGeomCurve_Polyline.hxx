@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeometry
     {
-      class SimGeomCurve_Polyline: public ::schema::simxml::ResourcesGeometry::SimGeomCurve
+      class __declspec(dllexport) SimGeomCurve_Polyline: public ::schema::simxml::ResourcesGeometry::SimGeomCurve
       {
         public:
         // Points

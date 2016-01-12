@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeometry
     {
-      class SimLoop_Loop_PolyLoop: public ::schema::simxml::ResourcesGeometry::SimLoop_Loop
+      class __declspec(dllexport) SimLoop_Loop_PolyLoop: public ::schema::simxml::ResourcesGeometry::SimLoop_Loop
       {
         public:
         // Polygon

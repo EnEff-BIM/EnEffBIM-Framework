@@ -13,7 +13,6 @@ using namespace xsd::cxx::tree;
 
 %import  "..\base\base.i"
 /* Let's just grab the original header file here */
-%include "..\SimModel\framework\SimNode.hxx"
 %include "..\SimModel\framework\SimNode_AirFlowPort.hxx"
 %include "..\SimModel\framework\SimNode_AirFlowPort_Air_In.hxx"
 

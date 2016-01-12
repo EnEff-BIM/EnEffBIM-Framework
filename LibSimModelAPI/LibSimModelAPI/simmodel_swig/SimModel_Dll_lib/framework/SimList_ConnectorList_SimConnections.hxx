@@ -257,7 +257,7 @@ namespace schema
   {
     namespace BuildingModel
     {
-      class SimList_ConnectorList_SimConnections: public ::schema::simxml::BuildingModel::SimList_ConnectorList
+      class __declspec(dllexport) SimList_ConnectorList_SimConnections: public ::schema::simxml::BuildingModel::SimList_ConnectorList
       {
         public:
         // Constructors.

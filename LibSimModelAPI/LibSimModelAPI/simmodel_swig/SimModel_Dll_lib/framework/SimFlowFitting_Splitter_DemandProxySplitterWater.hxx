@@ -257,7 +257,7 @@ namespace schema
   {
     namespace MepModel
     {
-      class SimFlowFitting_Splitter_DemandProxySplitterWater: public ::schema::simxml::MepModel::SimFlowFitting_Splitter
+      class __declspec(dllexport) SimFlowFitting_Splitter_DemandProxySplitterWater: public ::schema::simxml::MepModel::SimFlowFitting_Splitter
       {
         public:
         // SimFlowFitting_Name

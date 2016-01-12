@@ -257,7 +257,7 @@ namespace schema
   {
     namespace BuildingModel
     {
-      class SimWallType: public ::schema::simxml::SimModelCore::SimObjectTypeDefinition
+      class __declspec(dllexport) SimWallType: public ::schema::simxml::SimModelCore::SimObjectTypeDefinition
       {
         public:
         // RepresentationMaps

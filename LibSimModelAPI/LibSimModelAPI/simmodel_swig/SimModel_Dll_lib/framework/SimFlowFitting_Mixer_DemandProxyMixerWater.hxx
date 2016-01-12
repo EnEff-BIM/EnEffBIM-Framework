@@ -257,7 +257,7 @@ namespace schema
   {
     namespace MepModel
     {
-      class SimFlowFitting_Mixer_DemandProxyMixerWater: public ::schema::simxml::MepModel::SimFlowFitting_Mixer
+      class __declspec(dllexport) SimFlowFitting_Mixer_DemandProxyMixerWater: public ::schema::simxml::MepModel::SimFlowFitting_Mixer
       {
         public:
         // SimFlowFitting_Name

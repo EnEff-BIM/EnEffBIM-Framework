@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimAppObjNameDefault_ZoneGroup: public ::schema::simxml::ResourcesGeneral::SimAppObjNameDefault
+      class __declspec(dllexport) SimAppObjNameDefault_ZoneGroup: public ::schema::simxml::ResourcesGeneral::SimAppObjNameDefault
       {
         public:
         // Constructors.

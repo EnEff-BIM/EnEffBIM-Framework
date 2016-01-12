@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimLocationAndWeather_Location_Default: public ::schema::simxml::ResourcesGeneral::SimLocationAndWeather_Location
+      class __declspec(dllexport) SimLocationAndWeather_Location_Default: public ::schema::simxml::ResourcesGeneral::SimLocationAndWeather_Location
       {
         public:
         // Constructors.

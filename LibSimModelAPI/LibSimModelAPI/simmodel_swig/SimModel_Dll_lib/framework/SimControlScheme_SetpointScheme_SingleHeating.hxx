@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimControlScheme_SetpointScheme_SingleHeating: public ::schema::simxml::ResourcesGeneral::SimControlScheme_SetpointScheme
+      class __declspec(dllexport) SimControlScheme_SetpointScheme_SingleHeating: public ::schema::simxml::ResourcesGeneral::SimControlScheme_SetpointScheme
       {
         public:
         // SimCntrlSchm_SetpointTempSchedName

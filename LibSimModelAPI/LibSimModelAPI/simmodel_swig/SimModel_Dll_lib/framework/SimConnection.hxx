@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimConnection: public ::schema::simxml::SimModelCore::SimResourceObject
+      class __declspec(dllexport) SimConnection: public ::schema::simxml::SimModelCore::SimResourceObject
       {
         public:
         // RelatingPort

@@ -4277,7 +4277,7 @@ fail:
 SWIGINTERN PyObject *_wrap_SimGeomVector_Vector_Direction_DirectionRatios__SWIG_4(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::ResourcesGeometry::SimGeomVector_Vector_Direction *arg1 = (schema::simxml::ResourcesGeometry::SimGeomVector_Vector_Direction *) 0 ;
-  SwigValueWrapper< std::auto_ptr< ::schema::simxml::SimModelCore::doubleList > > arg2 ;
+  ::std::auto_ptr< schema::simxml::ResourcesGeometry::SimGeomVector_Vector_Direction::DirectionRatios_type > arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 ;

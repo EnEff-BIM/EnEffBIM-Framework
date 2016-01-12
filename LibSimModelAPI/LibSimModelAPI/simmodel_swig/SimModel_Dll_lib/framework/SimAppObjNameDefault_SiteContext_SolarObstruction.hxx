@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimAppObjNameDefault_SiteContext_SolarObstruction: public ::schema::simxml::ResourcesGeneral::SimAppObjNameDefault_SiteContext
+      class __declspec(dllexport) SimAppObjNameDefault_SiteContext_SolarObstruction: public ::schema::simxml::ResourcesGeneral::SimAppObjNameDefault_SiteContext
       {
         public:
         // Constructors.

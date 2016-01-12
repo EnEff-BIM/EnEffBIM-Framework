@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeometry
     {
-      class SimMappedRepresentationItem_Default_Default: public ::schema::simxml::ResourcesGeometry::SimMappedRepresentationItem_Default
+      class __declspec(dllexport) SimMappedRepresentationItem_Default_Default: public ::schema::simxml::ResourcesGeometry::SimMappedRepresentationItem_Default
       {
         public:
         // Constructors.

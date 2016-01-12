@@ -268,7 +268,7 @@ namespace schema
   {
     namespace ResourcesGeometry
     {
-      class SimGeomVector_Vector_Direction: public ::schema::simxml::ResourcesGeometry::SimGeomVector_Vector
+      class __declspec(dllexport) SimGeomVector_Vector_Direction: public ::schema::simxml::ResourcesGeometry::SimGeomVector_Vector
       {
         public:
         // DirectionRatios

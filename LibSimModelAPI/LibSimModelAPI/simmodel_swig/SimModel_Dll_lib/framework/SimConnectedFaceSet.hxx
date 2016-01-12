@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeometry
     {
-      class SimConnectedFaceSet: public ::schema::simxml::SimModelCore::SimTopologicalRepresentationItem
+      class __declspec(dllexport) SimConnectedFaceSet: public ::schema::simxml::SimModelCore::SimTopologicalRepresentationItem
       {
         public:
         // CfsFaces

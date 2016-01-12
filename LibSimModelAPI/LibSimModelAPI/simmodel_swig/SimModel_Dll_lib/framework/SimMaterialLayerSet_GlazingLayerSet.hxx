@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimMaterialLayerSet_GlazingLayerSet: public ::schema::simxml::ResourcesGeneral::SimMaterialLayerSet
+      class __declspec(dllexport) SimMaterialLayerSet_GlazingLayerSet: public ::schema::simxml::ResourcesGeneral::SimMaterialLayerSet
       {
         public:
         // Constructors.

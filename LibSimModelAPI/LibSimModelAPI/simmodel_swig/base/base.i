@@ -15,6 +15,7 @@ using namespace xsd::cxx::tree;
 %auto_ptr(::xml_schema::id)
 %auto_ptr(::xml_schema::idref)
 %auto_ptr(::xml_schema::idrefs)
+%auto_ptr(::schema::simxml::SimModelCore::doubleList)
 %auto_ptr(::schema::simxml::SimModelCore::integerList)
 %auto_ptr(::schema::simxml::SimModelCore::logical)
 %auto_ptr(::schema::simxml::SimModelCore::SelectedPropertyGroups)

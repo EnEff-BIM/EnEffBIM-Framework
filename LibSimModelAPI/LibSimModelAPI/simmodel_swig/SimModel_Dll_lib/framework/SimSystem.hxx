@@ -257,7 +257,7 @@ namespace schema
   {
     namespace BuildingModel
     {
-      class SimSystem: public ::schema::simxml::SimModelCore::SimGroup
+      class __declspec(dllexport) SimSystem: public ::schema::simxml::SimModelCore::SimGroup
       {
         public:
         // ParentSystem

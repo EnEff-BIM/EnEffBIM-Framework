@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimControlScheme_SetpointManagerScheme_ScheduledSetpoint: public ::schema::simxml::ResourcesGeneral::SimControlScheme_SetpointManagerScheme
+      class __declspec(dllexport) SimControlScheme_SetpointManagerScheme_ScheduledSetpoint: public ::schema::simxml::ResourcesGeneral::SimControlScheme_SetpointManagerScheme
       {
         public:
         // SimCntrlSchm_Name

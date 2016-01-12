@@ -257,7 +257,7 @@ namespace schema
   {
     namespace MepModel
     {
-      class SimFlowEnergyTransfer: public ::schema::simxml::MepModel::SimFlowEnergyConverter
+      class __declspec(dllexport) SimFlowEnergyTransfer: public ::schema::simxml::MepModel::SimFlowEnergyConverter
       {
         public:
         // Representation

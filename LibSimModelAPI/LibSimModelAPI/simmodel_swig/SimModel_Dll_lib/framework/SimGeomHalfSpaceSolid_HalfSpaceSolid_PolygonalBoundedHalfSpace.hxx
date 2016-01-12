@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeometry
     {
-      class SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace: public ::schema::simxml::ResourcesGeometry::SimGeomHalfSpaceSolid_HalfSpaceSolid
+      class __declspec(dllexport) SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace: public ::schema::simxml::ResourcesGeometry::SimGeomHalfSpaceSolid_HalfSpaceSolid
       {
         public:
         // Position

@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimDerivedUnitType: public ::schema::simxml::ResourcesGeneral::SimUnitType
+      class __declspec(dllexport) SimDerivedUnitType: public ::schema::simxml::ResourcesGeneral::SimUnitType
       {
         public:
         // MajorUnitSymbol

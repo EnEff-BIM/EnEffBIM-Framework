@@ -257,7 +257,7 @@ namespace schema
   {
     namespace BuildingModel
     {
-      class SimSpatialZone: public ::schema::simxml::SimModelCore::SimGroup
+      class __declspec(dllexport) SimSpatialZone: public ::schema::simxml::SimModelCore::SimGroup
       {
         public:
         // ZoneColorIndex

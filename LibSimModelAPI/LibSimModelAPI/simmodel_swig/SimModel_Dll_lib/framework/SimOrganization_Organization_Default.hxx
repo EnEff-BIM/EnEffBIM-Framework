@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimOrganization_Organization_Default: public ::schema::simxml::ResourcesGeneral::SimOrganization_Organization
+      class __declspec(dllexport) SimOrganization_Organization_Default: public ::schema::simxml::ResourcesGeneral::SimOrganization_Organization
       {
         public:
         // Constructors.

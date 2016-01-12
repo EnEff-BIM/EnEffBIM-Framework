@@ -257,7 +257,7 @@ namespace schema
   {
     namespace BuildingModel
     {
-      class SimSlab_Default: public ::schema::simxml::BuildingModel::SimSlab
+      class __declspec(dllexport) SimSlab_Default: public ::schema::simxml::BuildingModel::SimSlab
       {
         public:
         // Name

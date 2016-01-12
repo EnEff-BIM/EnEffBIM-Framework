@@ -257,7 +257,7 @@ namespace schema
   {
     namespace SimModelCore
     {
-      class SimGroup_BldgCompGroup_ZoneEquipment: public ::schema::simxml::SimModelCore::SimGroup_BldgCompGroup
+      class __declspec(dllexport) SimGroup_BldgCompGroup_ZoneEquipment: public ::schema::simxml::SimModelCore::SimGroup_BldgCompGroup
       {
         public:
         // Constructors.

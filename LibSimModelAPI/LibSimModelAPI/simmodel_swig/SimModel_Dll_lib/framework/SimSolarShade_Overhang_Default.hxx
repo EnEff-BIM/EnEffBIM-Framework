@@ -257,7 +257,7 @@ namespace schema
   {
     namespace BuildingModel
     {
-      class SimSolarShade_Overhang_Default: public ::schema::simxml::BuildingModel::SimSolarShade_Overhang
+      class __declspec(dllexport) SimSolarShade_Overhang_Default: public ::schema::simxml::BuildingModel::SimSolarShade_Overhang
       {
         public:
         // SimSolarShade_WindOrDoorName

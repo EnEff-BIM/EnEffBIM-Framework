@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimAppPreferences_AppPreferences_MinMonthlyChargeType: public ::schema::simxml::ResourcesGeneral::SimAppPreferences_AppPreferences
+      class __declspec(dllexport) SimAppPreferences_AppPreferences_MinMonthlyChargeType: public ::schema::simxml::ResourcesGeneral::SimAppPreferences_AppPreferences
       {
         public:
         // Constructors.

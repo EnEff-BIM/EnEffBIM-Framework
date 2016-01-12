@@ -279,7 +279,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimTimeSeriesSchedule_Day_Interval: public ::schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Day
+      class __declspec(dllexport) SimTimeSeriesSchedule_Day_Interval: public ::schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Day
       {
         public:
         // SimTimeSeriesSched_terpolateToTimestep

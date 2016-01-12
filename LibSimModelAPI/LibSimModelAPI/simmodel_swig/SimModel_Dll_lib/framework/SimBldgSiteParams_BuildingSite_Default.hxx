@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimBldgSiteParams_BuildingSite_Default: public ::schema::simxml::ResourcesGeneral::SimBldgSiteParams_BuildingSite
+      class __declspec(dllexport) SimBldgSiteParams_BuildingSite_Default: public ::schema::simxml::ResourcesGeneral::SimBldgSiteParams_BuildingSite
       {
         public:
         // Constructors.

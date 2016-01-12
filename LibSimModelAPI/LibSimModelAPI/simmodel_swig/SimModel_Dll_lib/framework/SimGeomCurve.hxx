@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeometry
     {
-      class SimGeomCurve: public ::schema::simxml::SimModelCore::SimGeometricRepresentationItem
+      class __declspec(dllexport) SimGeomCurve: public ::schema::simxml::SimModelCore::SimGeometricRepresentationItem
       {
         public:
         // Constructors.

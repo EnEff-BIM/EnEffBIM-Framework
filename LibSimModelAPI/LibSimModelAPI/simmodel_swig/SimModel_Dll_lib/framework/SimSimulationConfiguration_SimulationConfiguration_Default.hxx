@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimSimulationConfiguration_SimulationConfiguration_Default: public ::schema::simxml::ResourcesGeneral::SimSimulationConfiguration_SimulationConfiguration
+      class __declspec(dllexport) SimSimulationConfiguration_SimulationConfiguration_Default: public ::schema::simxml::ResourcesGeneral::SimSimulationConfiguration_SimulationConfiguration
       {
         public:
         // Constructors.

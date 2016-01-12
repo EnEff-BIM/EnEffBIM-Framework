@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeometry
     {
-      class SimFace: public ::schema::simxml::SimModelCore::SimTopologicalRepresentationItem
+      class __declspec(dllexport) SimFace: public ::schema::simxml::SimModelCore::SimTopologicalRepresentationItem
       {
         public:
         // Bounds

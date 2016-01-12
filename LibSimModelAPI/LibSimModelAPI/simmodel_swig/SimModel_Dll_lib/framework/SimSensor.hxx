@@ -257,7 +257,7 @@ namespace schema
   {
     namespace MepModel
     {
-      class SimSensor: public ::schema::simxml::SimModelCore::SimDistributionControlElement
+      class __declspec(dllexport) SimSensor: public ::schema::simxml::SimModelCore::SimDistributionControlElement
       {
         public:
         // Representation

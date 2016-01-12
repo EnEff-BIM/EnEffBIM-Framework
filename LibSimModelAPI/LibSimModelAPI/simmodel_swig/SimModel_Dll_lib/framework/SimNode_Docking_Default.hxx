@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimNode_Docking_Default: public ::schema::simxml::ResourcesGeneral::SimNode_Docking
+      class __declspec(dllexport) SimNode_Docking_Default: public ::schema::simxml::ResourcesGeneral::SimNode_Docking
       {
         public:
         // Constructors.

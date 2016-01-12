@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeometry
     {
-      class SimLoop_Loop: public ::schema::simxml::ResourcesGeometry::SimLoop
+      class __declspec(dllexport) SimLoop_Loop: public ::schema::simxml::ResourcesGeometry::SimLoop
       {
         public:
         // Constructors.

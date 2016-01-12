@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimTimeSeriesSchedule_Year_Default: public ::schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Year
+      class __declspec(dllexport) SimTimeSeriesSchedule_Year_Default: public ::schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Year
       {
         public:
         // Constructors.

@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimSimulationParameters: public ::schema::simxml::SimModelCore::SimResourceObject
+      class __declspec(dllexport) SimSimulationParameters: public ::schema::simxml::SimModelCore::SimResourceObject
       {
         public:
         // Constructors.

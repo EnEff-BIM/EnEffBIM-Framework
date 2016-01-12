@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimTemplateZoneLoads_ZoneLoads_Default: public ::schema::simxml::ResourcesGeneral::SimTemplateZoneLoads_ZoneLoads
+      class __declspec(dllexport) SimTemplateZoneLoads_ZoneLoads_Default: public ::schema::simxml::ResourcesGeneral::SimTemplateZoneLoads_ZoneLoads
       {
         public:
         // Constructors.

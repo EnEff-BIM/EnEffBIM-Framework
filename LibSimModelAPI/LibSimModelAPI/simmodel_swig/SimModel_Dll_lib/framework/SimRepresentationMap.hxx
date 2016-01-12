@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeometry
     {
-      class SimRepresentationMap: public ::schema::simxml::SimModelCore::SimRepresentation
+      class __declspec(dllexport) SimRepresentationMap: public ::schema::simxml::SimModelCore::SimRepresentation
       {
         public:
         // MappingOrigin
