@@ -11767,7 +11767,7 @@ fail:
 SWIGINTERN PyObject *_wrap_SimSpatialZone_ThermalZone_Default_ZoneProp_UserViewFactors_bySurfName_ViewFactor_1_121__SWIG_4(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::BuildingModel::SimSpatialZone_ThermalZone_Default *arg1 = (schema::simxml::BuildingModel::SimSpatialZone_ThermalZone_Default *) 0 ;
-  SwigValueWrapper< std::auto_ptr< ::schema::simxml::SimModelCore::doubleList > > arg2 ;
+  ::std::auto_ptr< schema::simxml::BuildingModel::SimSpatialZone_ThermalZone_Default::ZoneProp_UserViewFactors_bySurfName_ViewFactor_1_121_type > arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 ;

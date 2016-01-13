@@ -17501,7 +17501,7 @@ fail:
 SWIGINTERN PyObject *_wrap_SimSpace_Occupied_T24KitchExhHoodDutyList__SWIG_4(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::BuildingModel::SimSpace_Occupied *arg1 = (schema::simxml::BuildingModel::SimSpace_Occupied *) 0 ;
-  SwigValueWrapper< std::auto_ptr< ::schema::simxml::BuildingModel::T24KitchExhHoodDutyList > > arg2 ;
+  ::std::auto_ptr< schema::simxml::BuildingModel::SimSpace_Occupied::T24KitchExhHoodDutyList_type > arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 ;
@@ -17731,7 +17731,7 @@ fail:
 SWIGINTERN PyObject *_wrap_SimSpace_Occupied_T24KitchExhHoodFlow__SWIG_4(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::BuildingModel::SimSpace_Occupied *arg1 = (schema::simxml::BuildingModel::SimSpace_Occupied *) 0 ;
-  SwigValueWrapper< std::auto_ptr< ::schema::simxml::SimModelCore::doubleList > > arg2 ;
+  ::std::auto_ptr< schema::simxml::BuildingModel::SimSpace_Occupied::T24KitchExhHoodFlow_type > arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 ;
@@ -17961,7 +17961,7 @@ fail:
 SWIGINTERN PyObject *_wrap_SimSpace_Occupied_T24KitchExhHoodLength__SWIG_4(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::BuildingModel::SimSpace_Occupied *arg1 = (schema::simxml::BuildingModel::SimSpace_Occupied *) 0 ;
-  SwigValueWrapper< std::auto_ptr< ::schema::simxml::SimModelCore::doubleList > > arg2 ;
+  ::std::auto_ptr< schema::simxml::BuildingModel::SimSpace_Occupied::T24KitchExhHoodLength_type > arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 ;
@@ -18191,7 +18191,7 @@ fail:
 SWIGINTERN PyObject *_wrap_SimSpace_Occupied_T24KitchExhHoodStyleList__SWIG_4(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::BuildingModel::SimSpace_Occupied *arg1 = (schema::simxml::BuildingModel::SimSpace_Occupied *) 0 ;
-  SwigValueWrapper< std::auto_ptr< ::schema::simxml::BuildingModel::T24KitchExhHoodStyleList > > arg2 ;
+  ::std::auto_ptr< schema::simxml::BuildingModel::SimSpace_Occupied::T24KitchExhHoodStyleList_type > arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 ;
@@ -19111,7 +19111,7 @@ fail:
 SWIGINTERN PyObject *_wrap_SimSpace_Occupied_T24MandLightCntrlDescRpt__SWIG_4(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::BuildingModel::SimSpace_Occupied *arg1 = (schema::simxml::BuildingModel::SimSpace_Occupied *) 0 ;
-  SwigValueWrapper< std::auto_ptr< ::schema::simxml::BuildingModel::T24MandLightCntrlDescRpt > > arg2 ;
+  ::std::auto_ptr< schema::simxml::BuildingModel::SimSpace_Occupied::T24MandLightCntrlDescRpt_type > arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 ;
@@ -19341,7 +19341,7 @@ fail:
 SWIGINTERN PyObject *_wrap_SimSpace_Occupied_T24MandLightCntrlRpt__SWIG_4(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::BuildingModel::SimSpace_Occupied *arg1 = (schema::simxml::BuildingModel::SimSpace_Occupied *) 0 ;
-  SwigValueWrapper< std::auto_ptr< ::schema::simxml::BuildingModel::T24MandLightCntrlRpt > > arg2 ;
+  ::std::auto_ptr< schema::simxml::BuildingModel::SimSpace_Occupied::T24MandLightCntrlRpt_type > arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 ;
@@ -19571,7 +19571,7 @@ fail:
 SWIGINTERN PyObject *_wrap_SimSpace_Occupied_T24MandLightCntrlAccepReqRpt__SWIG_4(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::BuildingModel::SimSpace_Occupied *arg1 = (schema::simxml::BuildingModel::SimSpace_Occupied *) 0 ;
-  SwigValueWrapper< std::auto_ptr< ::schema::simxml::BuildingModel::T24MandLightCntrlAccepReqRpt > > arg2 ;
+  ::std::auto_ptr< schema::simxml::BuildingModel::SimSpace_Occupied::T24MandLightCntrlAccepReqRpt_type > arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 ;
@@ -19801,7 +19801,7 @@ fail:
 SWIGINTERN PyObject *_wrap_SimSpace_Occupied_T24MandLightCntrlIsAutoShOffCntrlRpt__SWIG_4(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::BuildingModel::SimSpace_Occupied *arg1 = (schema::simxml::BuildingModel::SimSpace_Occupied *) 0 ;
-  SwigValueWrapper< std::auto_ptr< ::schema::simxml::BuildingModel::T24MandLightCntrlIsAutoShOffCntrlRpt > > arg2 ;
+  ::std::auto_ptr< schema::simxml::BuildingModel::SimSpace_Occupied::T24MandLightCntrlIsAutoShOffCntrlRpt_type > arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 ;
@@ -20031,7 +20031,7 @@ fail:
 SWIGINTERN PyObject *_wrap_SimSpace_Occupied_T24MandLightCntrlIsDayltngCntrlRpt__SWIG_4(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::BuildingModel::SimSpace_Occupied *arg1 = (schema::simxml::BuildingModel::SimSpace_Occupied *) 0 ;
-  SwigValueWrapper< std::auto_ptr< ::schema::simxml::BuildingModel::T24MandLightCntrlIsDayltngCntrlRpt > > arg2 ;
+  ::std::auto_ptr< schema::simxml::BuildingModel::SimSpace_Occupied::T24MandLightCntrlIsDayltngCntrlRpt_type > arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 ;
@@ -20261,7 +20261,7 @@ fail:
 SWIGINTERN PyObject *_wrap_SimSpace_Occupied_T24MandLightCntrlIsDmndRespCntrlRpt__SWIG_4(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::BuildingModel::SimSpace_Occupied *arg1 = (schema::simxml::BuildingModel::SimSpace_Occupied *) 0 ;
-  SwigValueWrapper< std::auto_ptr< ::schema::simxml::BuildingModel::T24MandLightCntrlIsDmndRespCntrlRpt > > arg2 ;
+  ::std::auto_ptr< schema::simxml::BuildingModel::SimSpace_Occupied::T24MandLightCntrlIsDmndRespCntrlRpt_type > arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 ;
@@ -20491,7 +20491,7 @@ fail:
 SWIGINTERN PyObject *_wrap_SimSpace_Occupied_T24MandLightCntrlIsManAreaCntrlRpt__SWIG_4(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::BuildingModel::SimSpace_Occupied *arg1 = (schema::simxml::BuildingModel::SimSpace_Occupied *) 0 ;
-  SwigValueWrapper< std::auto_ptr< ::schema::simxml::BuildingModel::T24MandLightCntrlIsManAreaCntrlRpt > > arg2 ;
+  ::std::auto_ptr< schema::simxml::BuildingModel::SimSpace_Occupied::T24MandLightCntrlIsManAreaCntrlRpt_type > arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 ;

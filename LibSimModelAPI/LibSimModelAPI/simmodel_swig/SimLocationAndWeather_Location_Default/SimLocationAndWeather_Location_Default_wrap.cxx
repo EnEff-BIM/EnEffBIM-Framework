@@ -20204,7 +20204,7 @@ fail:
 SWIGINTERN PyObject *_wrap_SimLocationAndWeather_Location_Site_SpectrumData_Value_1_107_Wavelength__SWIG_4(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::ResourcesGeneral::SimLocationAndWeather_Location *arg1 = (schema::simxml::ResourcesGeneral::SimLocationAndWeather_Location *) 0 ;
-  SwigValueWrapper< std::auto_ptr< ::schema::simxml::SimModelCore::doubleList > > arg2 ;
+  ::std::auto_ptr< schema::simxml::ResourcesGeneral::SimLocationAndWeather_Location::Site_SpectrumData_Value_1_107_Wavelength_type > arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 ;
@@ -20434,7 +20434,7 @@ fail:
 SWIGINTERN PyObject *_wrap_SimLocationAndWeather_Location_Site_SpectrumData_Value_1_107_Spectrum__SWIG_4(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::ResourcesGeneral::SimLocationAndWeather_Location *arg1 = (schema::simxml::ResourcesGeneral::SimLocationAndWeather_Location *) 0 ;
-  SwigValueWrapper< std::auto_ptr< ::schema::simxml::SimModelCore::doubleList > > arg2 ;
+  ::std::auto_ptr< schema::simxml::ResourcesGeneral::SimLocationAndWeather_Location::Site_SpectrumData_Value_1_107_Spectrum_type > arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 ;

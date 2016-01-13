@@ -5831,7 +5831,7 @@ fail:
 SWIGINTERN PyObject *_wrap_SimTimeSeriesSchedule_Day_Interval_SimTimeSeriesSched_Time_1_144__SWIG_4(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Day_Interval *arg1 = (schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Day_Interval *) 0 ;
-  SwigValueWrapper< std::auto_ptr< ::schema::simxml::ResourcesGeneral::SimTimeSeriesSched_Time_1_144 > > arg2 ;
+  ::std::auto_ptr< schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Day_Interval::SimTimeSeriesSched_Time_1_144_type > arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 ;
@@ -6061,7 +6061,7 @@ fail:
 SWIGINTERN PyObject *_wrap_SimTimeSeriesSchedule_Day_Interval_SimTimeSeriesSched_ValUntilTime_1_144__SWIG_4(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Day_Interval *arg1 = (schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Day_Interval *) 0 ;
-  SwigValueWrapper< std::auto_ptr< ::schema::simxml::SimModelCore::doubleList > > arg2 ;
+  ::std::auto_ptr< schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Day_Interval::SimTimeSeriesSched_ValUntilTime_1_144_type > arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 ;

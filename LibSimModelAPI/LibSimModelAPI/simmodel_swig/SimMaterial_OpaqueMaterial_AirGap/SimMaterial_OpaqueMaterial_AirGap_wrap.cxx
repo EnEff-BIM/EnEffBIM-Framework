@@ -5923,7 +5923,7 @@ fail:
 SWIGINTERN PyObject *_wrap_SimMaterial_OpaqueMaterial_MatProp_PhaseChange_Temp_1_16__SWIG_4(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::ResourcesGeneral::SimMaterial_OpaqueMaterial *arg1 = (schema::simxml::ResourcesGeneral::SimMaterial_OpaqueMaterial *) 0 ;
-  SwigValueWrapper< std::auto_ptr< ::schema::simxml::SimModelCore::doubleList > > arg2 ;
+  ::std::auto_ptr< schema::simxml::ResourcesGeneral::SimMaterial_OpaqueMaterial::MatProp_PhaseChange_Temp_1_16_type > arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 ;
@@ -6153,7 +6153,7 @@ fail:
 SWIGINTERN PyObject *_wrap_SimMaterial_OpaqueMaterial_MatProp_PhaseChange_Enthalpy_1_16__SWIG_4(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::ResourcesGeneral::SimMaterial_OpaqueMaterial *arg1 = (schema::simxml::ResourcesGeneral::SimMaterial_OpaqueMaterial *) 0 ;
-  SwigValueWrapper< std::auto_ptr< ::schema::simxml::SimModelCore::doubleList > > arg2 ;
+  ::std::auto_ptr< schema::simxml::ResourcesGeneral::SimMaterial_OpaqueMaterial::MatProp_PhaseChange_Enthalpy_1_16_type > arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 ;
@@ -6613,7 +6613,7 @@ fail:
 SWIGINTERN PyObject *_wrap_SimMaterial_OpaqueMaterial_MatProp_VarThermCond_Temp_1_10__SWIG_4(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::ResourcesGeneral::SimMaterial_OpaqueMaterial *arg1 = (schema::simxml::ResourcesGeneral::SimMaterial_OpaqueMaterial *) 0 ;
-  SwigValueWrapper< std::auto_ptr< ::schema::simxml::SimModelCore::doubleList > > arg2 ;
+  ::std::auto_ptr< schema::simxml::ResourcesGeneral::SimMaterial_OpaqueMaterial::MatProp_VarThermCond_Temp_1_10_type > arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 ;
@@ -6843,7 +6843,7 @@ fail:
 SWIGINTERN PyObject *_wrap_SimMaterial_OpaqueMaterial_MatProp_VarThermCond_ThermalCond_1_10__SWIG_4(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::ResourcesGeneral::SimMaterial_OpaqueMaterial *arg1 = (schema::simxml::ResourcesGeneral::SimMaterial_OpaqueMaterial *) 0 ;
-  SwigValueWrapper< std::auto_ptr< ::schema::simxml::SimModelCore::doubleList > > arg2 ;
+  ::std::auto_ptr< schema::simxml::ResourcesGeneral::SimMaterial_OpaqueMaterial::MatProp_VarThermCond_ThermalCond_1_10_type > arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 ;
@@ -8070,7 +8070,7 @@ fail:
 SWIGINTERN PyObject *_wrap_SimMaterial_OpaqueMaterial_MatProp_Heat_MoistTrans_SorpIsothm_RelHumidFract_1_25__SWIG_4(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::ResourcesGeneral::SimMaterial_OpaqueMaterial *arg1 = (schema::simxml::ResourcesGeneral::SimMaterial_OpaqueMaterial *) 0 ;
-  SwigValueWrapper< std::auto_ptr< ::schema::simxml::SimModelCore::doubleList > > arg2 ;
+  ::std::auto_ptr< schema::simxml::ResourcesGeneral::SimMaterial_OpaqueMaterial::MatProp_Heat_MoistTrans_SorpIsothm_RelHumidFract_1_25_type > arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 ;
@@ -8300,7 +8300,7 @@ fail:
 SWIGINTERN PyObject *_wrap_SimMaterial_OpaqueMaterial_MatProp_Heat_MoistTrans_SorpIsothm_MoistCont_1_25__SWIG_4(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::ResourcesGeneral::SimMaterial_OpaqueMaterial *arg1 = (schema::simxml::ResourcesGeneral::SimMaterial_OpaqueMaterial *) 0 ;
-  SwigValueWrapper< std::auto_ptr< ::schema::simxml::SimModelCore::doubleList > > arg2 ;
+  ::std::auto_ptr< schema::simxml::ResourcesGeneral::SimMaterial_OpaqueMaterial::MatProp_Heat_MoistTrans_SorpIsothm_MoistCont_1_25_type > arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 ;
@@ -8939,7 +8939,7 @@ fail:
 SWIGINTERN PyObject *_wrap_SimMaterial_OpaqueMaterial_MatProp_Heat_MoistTrans_Suction_MoistCont_1_25__SWIG_4(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::ResourcesGeneral::SimMaterial_OpaqueMaterial *arg1 = (schema::simxml::ResourcesGeneral::SimMaterial_OpaqueMaterial *) 0 ;
-  SwigValueWrapper< std::auto_ptr< ::schema::simxml::SimModelCore::doubleList > > arg2 ;
+  ::std::auto_ptr< schema::simxml::ResourcesGeneral::SimMaterial_OpaqueMaterial::MatProp_Heat_MoistTrans_Suction_MoistCont_1_25_type > arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 ;
@@ -9169,7 +9169,7 @@ fail:
 SWIGINTERN PyObject *_wrap_SimMaterial_OpaqueMaterial_MatProp_Heat_MoistTrans_Suction_LiqTransportCoef_1_25__SWIG_4(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::ResourcesGeneral::SimMaterial_OpaqueMaterial *arg1 = (schema::simxml::ResourcesGeneral::SimMaterial_OpaqueMaterial *) 0 ;
-  SwigValueWrapper< std::auto_ptr< ::schema::simxml::SimModelCore::doubleList > > arg2 ;
+  ::std::auto_ptr< schema::simxml::ResourcesGeneral::SimMaterial_OpaqueMaterial::MatProp_Heat_MoistTrans_Suction_LiqTransportCoef_1_25_type > arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 ;
@@ -9808,7 +9808,7 @@ fail:
 SWIGINTERN PyObject *_wrap_SimMaterial_OpaqueMaterial_MatProp_Heat_MoistTrans_ReDistrib_MoistCont_1_25__SWIG_4(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::ResourcesGeneral::SimMaterial_OpaqueMaterial *arg1 = (schema::simxml::ResourcesGeneral::SimMaterial_OpaqueMaterial *) 0 ;
-  SwigValueWrapper< std::auto_ptr< ::schema::simxml::SimModelCore::doubleList > > arg2 ;
+  ::std::auto_ptr< schema::simxml::ResourcesGeneral::SimMaterial_OpaqueMaterial::MatProp_Heat_MoistTrans_ReDistrib_MoistCont_1_25_type > arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 ;
@@ -10038,7 +10038,7 @@ fail:
 SWIGINTERN PyObject *_wrap_SimMaterial_OpaqueMaterial_MatProp_Heat_MoistTrans_ReDistrib_LiqTransportCoef_1_25__SWIG_4(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::ResourcesGeneral::SimMaterial_OpaqueMaterial *arg1 = (schema::simxml::ResourcesGeneral::SimMaterial_OpaqueMaterial *) 0 ;
-  SwigValueWrapper< std::auto_ptr< ::schema::simxml::SimModelCore::doubleList > > arg2 ;
+  ::std::auto_ptr< schema::simxml::ResourcesGeneral::SimMaterial_OpaqueMaterial::MatProp_Heat_MoistTrans_ReDistrib_LiqTransportCoef_1_25_type > arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 ;
@@ -10677,7 +10677,7 @@ fail:
 SWIGINTERN PyObject *_wrap_SimMaterial_OpaqueMaterial_MatProp_Heat_MoistTrans_Diffusion_RelHumidFract_1_25__SWIG_4(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::ResourcesGeneral::SimMaterial_OpaqueMaterial *arg1 = (schema::simxml::ResourcesGeneral::SimMaterial_OpaqueMaterial *) 0 ;
-  SwigValueWrapper< std::auto_ptr< ::schema::simxml::SimModelCore::doubleList > > arg2 ;
+  ::std::auto_ptr< schema::simxml::ResourcesGeneral::SimMaterial_OpaqueMaterial::MatProp_Heat_MoistTrans_Diffusion_RelHumidFract_1_25_type > arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 ;
@@ -10907,7 +10907,7 @@ fail:
 SWIGINTERN PyObject *_wrap_SimMaterial_OpaqueMaterial_MatProp_Heat_MoistTrans_Diffusion_WaterVaporDiffusResistFactor_1_25__SWIG_4(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::ResourcesGeneral::SimMaterial_OpaqueMaterial *arg1 = (schema::simxml::ResourcesGeneral::SimMaterial_OpaqueMaterial *) 0 ;
-  SwigValueWrapper< std::auto_ptr< ::schema::simxml::SimModelCore::doubleList > > arg2 ;
+  ::std::auto_ptr< schema::simxml::ResourcesGeneral::SimMaterial_OpaqueMaterial::MatProp_Heat_MoistTrans_Diffusion_WaterVaporDiffusResistFactor_1_25_type > arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 ;
@@ -11546,7 +11546,7 @@ fail:
 SWIGINTERN PyObject *_wrap_SimMaterial_OpaqueMaterial_MatProp_Heat_MoistTrans_ThermCond_MoistCont_1_25__SWIG_4(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::ResourcesGeneral::SimMaterial_OpaqueMaterial *arg1 = (schema::simxml::ResourcesGeneral::SimMaterial_OpaqueMaterial *) 0 ;
-  SwigValueWrapper< std::auto_ptr< ::schema::simxml::SimModelCore::doubleList > > arg2 ;
+  ::std::auto_ptr< schema::simxml::ResourcesGeneral::SimMaterial_OpaqueMaterial::MatProp_Heat_MoistTrans_ThermCond_MoistCont_1_25_type > arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 ;
@@ -11776,7 +11776,7 @@ fail:
 SWIGINTERN PyObject *_wrap_SimMaterial_OpaqueMaterial_MatProp_Heat_MoistTrans_ThermCond_ThermalCond_1_25__SWIG_4(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::ResourcesGeneral::SimMaterial_OpaqueMaterial *arg1 = (schema::simxml::ResourcesGeneral::SimMaterial_OpaqueMaterial *) 0 ;
-  SwigValueWrapper< std::auto_ptr< ::schema::simxml::SimModelCore::doubleList > > arg2 ;
+  ::std::auto_ptr< schema::simxml::ResourcesGeneral::SimMaterial_OpaqueMaterial::MatProp_Heat_MoistTrans_ThermCond_ThermalCond_1_25_type > arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 ;

@@ -5443,7 +5443,7 @@ fail:
 SWIGINTERN PyObject *_wrap_SimGeomPoint_Point_CartesianPoint_Coordinates__SWIG_4(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::ResourcesGeometry::SimGeomPoint_Point_CartesianPoint *arg1 = (schema::simxml::ResourcesGeometry::SimGeomPoint_Point_CartesianPoint *) 0 ;
-  SwigValueWrapper< std::auto_ptr< ::schema::simxml::SimModelCore::doubleList > > arg2 ;
+  ::std::auto_ptr< schema::simxml::ResourcesGeometry::SimGeomPoint_Point_CartesianPoint::Coordinates_type > arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 ;

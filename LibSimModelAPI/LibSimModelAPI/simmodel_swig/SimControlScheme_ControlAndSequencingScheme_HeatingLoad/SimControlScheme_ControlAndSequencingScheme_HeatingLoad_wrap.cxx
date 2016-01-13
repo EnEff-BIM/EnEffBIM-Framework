@@ -5105,7 +5105,7 @@ fail:
 SWIGINTERN PyObject *_wrap_SimControlScheme_ControlAndSequencingScheme_HeatingLoad_SimCntrlSchm_LoadRangeLowLimit_1_10__SWIG_4(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::ResourcesGeneral::SimControlScheme_ControlAndSequencingScheme_HeatingLoad *arg1 = (schema::simxml::ResourcesGeneral::SimControlScheme_ControlAndSequencingScheme_HeatingLoad *) 0 ;
-  SwigValueWrapper< std::auto_ptr< ::schema::simxml::SimModelCore::doubleList > > arg2 ;
+  ::std::auto_ptr< schema::simxml::ResourcesGeneral::SimControlScheme_ControlAndSequencingScheme_HeatingLoad::SimCntrlSchm_LoadRangeLowLimit_1_10_type > arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 ;
@@ -5335,7 +5335,7 @@ fail:
 SWIGINTERN PyObject *_wrap_SimControlScheme_ControlAndSequencingScheme_HeatingLoad_SimCntrlSchm_LoadRangeUpLimit_1_10__SWIG_4(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::ResourcesGeneral::SimControlScheme_ControlAndSequencingScheme_HeatingLoad *arg1 = (schema::simxml::ResourcesGeneral::SimControlScheme_ControlAndSequencingScheme_HeatingLoad *) 0 ;
-  SwigValueWrapper< std::auto_ptr< ::schema::simxml::SimModelCore::doubleList > > arg2 ;
+  ::std::auto_ptr< schema::simxml::ResourcesGeneral::SimControlScheme_ControlAndSequencingScheme_HeatingLoad::SimCntrlSchm_LoadRangeUpLimit_1_10_type > arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 ;
