@@ -5,33 +5,32 @@ Created on Tue Nov 24 09:33:28 2015
 @author: pre
 """
 
-import os
-import sys
-import tools.utilities as ut
+import genericapi.MapAPI.MapHierarchy as MapHierarchy
 
-modulePath = ut.get_full_path("Generic_API/MapAPI/MapHierarchy")
-
-os.environ['PATH'] = ';'.join([modulePath, os.environ['PATH']])
-# add modulePath to Python Path
-sys.path.append(modulePath)
-
-
-import MapHierarchy 
-
+def instantiate_pump(parent, project, sim_instance):
+    import SimFlowMover_Pump_VariableSpeedReturn
+    test=[]
+    for id in range(sim_instance.SimFlowMover_Pump_VariableSpeedReturn().sizeInt()):
+        test.append(Pump(parent, 
+                         project, 
+                         sim_instance.SimFlowMover_Pump_VariableSpeedReturn().at(id)))
+    return test
+    
 class Pump(MapHierarchy.MapComponent):
     """Representation of AixLib.Fluid.Movers.Pump
     """
     
-    def __init__(self, parent, project):
+    def __init__(self, project, parent, sim_instance):
         
-        super(Pump, self).__init__(parent, project)
+        super(Pump, self).__init__(project, parent)
 
+        self.sim_ref_id = [sim_instance.RefId()]
         self.port_a = self.add_connector("port_a", "FluidPort")
         self.port_b = self.add_connector("port_b", "FluidPort")
         self.IsNight = self.add_connector("IsNight", "BooleanInput")
         
         """automatically instantiate an expansion vessel to pump"""
-        self.con_expansion_vessel("project", 0.01)
+        self.con_expansion_vessel(0.01)
         
     def ctrl_switching_night(self, width, period, startTime):
         """adds a boolean pulse to the boiler for switching the night mode"""
@@ -51,14 +50,13 @@ class Pump(MapHierarchy.MapComponent):
         self.add_connection(self.project, y, self.IsNight)
 
     def con_expansion_vessel(self, V_start):
-        import Generators.AixLib.MappingRules.Fluid.Storage.ExpansionVessel \
+        import genericapi.AixLib.Fluid.Storage.ExpansionVessel \
                                                 as ExpansionVessel
-        self.project.systems.append(ExpansionVessel.ExpansionVessel(self,
-                                                                    self.project))
-        self.project.systems[-1].target_location = ("AixLib.Fluid.Storage" +
-                                                            ".ExpansionVessel")
-        self.project.systems[-1].target_name = "expansionVessel"
-        self.project.systems[-1].add_property = ("V_start", V_start)
-        port_a = self.map_control.control_objects[-1].add_connector("port_a",
-                                                                    "Fluid")
-        self.add_connection(self.project, port_a, self.port_a)
+        self.parent.hvac_component_group.append(ExpansionVessel.ExpansionVessel(
+                                                self.project, self))
+        self.parent.hvac_component_group[-1].target_location = ("AixLib.Fluid."
+                                                            "Storage.ExpansionVessel")
+        self.parent.hvac_component_group[-1].target_name = "expansionVessel"
+        self.parent.hvac_component_group[-1].add_property = ("V_start", V_start)
+        port_a = self.parent.hvac_component_group[-1].add_connector("port_a","FluidPort")
+        self.add_connection(port_a, self.port_a)

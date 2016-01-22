@@ -8,12 +8,13 @@ class MoObject(object):
     Parameters
     ----------
     
-    parent : instance of a Map class
-        MapComponent receives any mapped class (MapBuilding etc.)
-        
     project : instance of MapProject()
         MapProject as a "root" parent to have control over the connections in 
         the overall model
+
+    parent : instance of a Map class
+        MapComponent receives any mapped class (MapBuilding etc.)
+
         
     Attributes
     ----------
@@ -40,8 +41,8 @@ class MoObject(object):
         Pointer to an optional control element, instance of MapContorl()
 
     """
-    
-    def __init__(self, parent=None, project=None):
+
+    def __init__(self, project=None, parent=None):
         
         self.parent = parent
         self.project = project
@@ -50,6 +51,7 @@ class MoObject(object):
         self.parameters = []
         self.connectors = []
         self.sim_ref_id = []
+        self.map_control = []
      
     def apply_component_mapping(self,
                                 target_location,
@@ -62,7 +64,10 @@ class MoObject(object):
         self.target_name = target_name
         self.sim_ref_id.append(sim_ref_id)
         
-    def add_connector(self, name, type, dimension = 1):
+    def add_connector(self,
+                      name,
+                      type,
+                      dimension = 1):
         """This adds a MapConnector to the MoObject"""
         connector = MapConnector(self)
         connector.name = name
@@ -84,11 +89,10 @@ class MoObject(object):
                        output_connector):
         """This connects the MoObject to another connector, maybe this would
         fit better in MapProject, but function call could get strange"""
-        
 
         if input_connector.type == output_connector.type and \
             input_connector.dimension == output_connector.dimension:
-
+    
             mapped_con = MapConnection(input_connector, output_connector)
             mapped_con.type = input_connector.type
             self.project.connections.append(mapped_con)
@@ -132,7 +136,7 @@ class MapProject(object):
     """
     
     def __init__(self):
-        
+
         self.buildings = []
         self.used_library = ""
         self.library_version = ""
@@ -181,7 +185,7 @@ class MapBuilding(MoObject):
                 
         self.building_name = ""
         self.thermal_zones = []
-        self.hvac_component_group = {}
+        self.hvac_component_group = []
              
 class MapThermalZone(MoObject):
     """Representation of a mapped thermal zone
@@ -231,9 +235,9 @@ class MapComponent(MoObject):
         This is an instance of MapControl()
     """
     
-    def __init__(self, parent=None, project=None):
+    def __init__(self, project=None, parent=None):
         
-        super(MapComponent, self).__init__(parent, project)
+        super(MapComponent, self).__init__(project, parent)
 
         self.map_control = None
 		

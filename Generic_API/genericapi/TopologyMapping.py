@@ -17,12 +17,22 @@ sys.path.append(modulePath)
 import base
 ## load SimXML I/O functions
 import SimModel
-#
-## load the SimModel classes you wanna access, e.g.,
-## if you need to access a class named A, then import A like following code
-import SimBuilding_Building_Default
-import SimBuildingStory_BuildingStory_Default
+
 #
 ## load the use case SimXML, and validate the synatx
 unmapped_data = SimModel.SimModel_(modulePath + "/Boiler_Gas_VDI6020_V10.xml")
 
+
+
+import genericapi.AixLib.Fluid.HeatExchangers.Boiler as Boiler
+import genericapi.AixLib.Fluid.HeatExchangers.Radiators.Radiator as Radiator
+import genericapi.AixLib.Fluid.Movers.Pump as Pump
+import genericapi.MapAPI.MapHierarchy as MapHierarchy
+
+asd = MapHierarchy.MapProject()
+test = MapHierarchy.MapBuilding(asd)
+ttt = Pump.instantiate_pump(asd, test, unmapped_data)
+print(ttt)
+for g in ttt:
+    print(g.sim_ref_id)
+print("ASD")
