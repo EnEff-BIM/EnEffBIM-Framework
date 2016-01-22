@@ -285,7 +285,7 @@ namespace schema
         // SimTimeSeriesSched_terpolateToTimestep
         //
         typedef ::xml_schema::string SimTimeSeriesSched_terpolateToTimestep_type;
-        typedef ::xsd::cxx::tree::optional< SimTimeSeriesSched_terpolateToTimestep_type > SimTimeSeriesSched_terpolateToTimestep_optional;
+        typedef ::xsd::cxx::tree::optional< SimTimeSeriesSched_terpolateToTimestep_type, false > SimTimeSeriesSched_terpolateToTimestep_optional;
         typedef ::xsd::cxx::tree::traits< SimTimeSeriesSched_terpolateToTimestep_type, char > SimTimeSeriesSched_terpolateToTimestep_traits;
 
         const SimTimeSeriesSched_terpolateToTimestep_optional&

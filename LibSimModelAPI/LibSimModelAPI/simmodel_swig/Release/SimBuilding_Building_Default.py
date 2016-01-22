@@ -390,48 +390,6 @@ class SimBuilding_Building_Default_sequence(base.sequence_common):
 SimBuilding_Building_Default_sequence_swigregister = _SimBuilding_Building_Default.SimBuilding_Building_Default_sequence_swigregister
 SimBuilding_Building_Default_sequence_swigregister(SimBuilding_Building_Default_sequence)
 
-class BuildingHeight_optional(_object):
-    __swig_setmethods__ = {}
-    __setattr__ = lambda self, name, value: _swig_setattr(self, BuildingHeight_optional, name, value)
-    __swig_getmethods__ = {}
-    __getattr__ = lambda self, name: _swig_getattr(self, BuildingHeight_optional, name)
-    __repr__ = _swig_repr
-
-    def __init__(self, *args):
-        this = _SimBuilding_Building_Default.new_BuildingHeight_optional(*args)
-        try:
-            self.this.append(this)
-        except:
-            self.this = this
-
-    def __deref__(self, *args):
-        return _SimBuilding_Building_Default.BuildingHeight_optional___deref__(self, *args)
-
-    def __ref__(self, *args):
-        return _SimBuilding_Building_Default.BuildingHeight_optional___ref__(self, *args)
-
-    def present(self):
-        return _SimBuilding_Building_Default.BuildingHeight_optional_present(self)
-
-    def get(self, *args):
-        return _SimBuilding_Building_Default.BuildingHeight_optional_get(self, *args)
-
-    def getV(self):
-        return _SimBuilding_Building_Default.BuildingHeight_optional_getV(self)
-
-    def getValue(self):
-        return _SimBuilding_Building_Default.BuildingHeight_optional_getValue(self)
-
-    def set(self, y):
-        return _SimBuilding_Building_Default.BuildingHeight_optional_set(self, y)
-
-    def reset(self):
-        return _SimBuilding_Building_Default.BuildingHeight_optional_reset(self)
-    __swig_destroy__ = _SimBuilding_Building_Default.delete_BuildingHeight_optional
-    __del__ = lambda self: None
-BuildingHeight_optional_swigregister = _SimBuilding_Building_Default.BuildingHeight_optional_swigregister
-BuildingHeight_optional_swigregister(BuildingHeight_optional)
-
 # This file is compatible with both classic and new-style classes.
 
 

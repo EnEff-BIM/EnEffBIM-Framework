@@ -263,7 +263,7 @@ namespace schema
         // ParentSystem
         //
         typedef ::xml_schema::idref ParentSystem_type;
-        typedef ::xsd::cxx::tree::optional< ParentSystem_type > ParentSystem_optional;
+        typedef ::xsd::cxx::tree::optional< ParentSystem_type, false > ParentSystem_optional;
         typedef ::xsd::cxx::tree::traits< ParentSystem_type, char > ParentSystem_traits;
 
         const ParentSystem_optional&
@@ -305,7 +305,7 @@ namespace schema
         // HvacSystemSizingParams
         //
         typedef ::xml_schema::idref HvacSystemSizingParams_type;
-        typedef ::xsd::cxx::tree::optional< HvacSystemSizingParams_type > HvacSystemSizingParams_optional;
+        typedef ::xsd::cxx::tree::optional< HvacSystemSizingParams_type, false > HvacSystemSizingParams_optional;
         typedef ::xsd::cxx::tree::traits< HvacSystemSizingParams_type, char > HvacSystemSizingParams_traits;
 
         const HvacSystemSizingParams_optional&

@@ -263,7 +263,7 @@ namespace schema
         // SimFlowFitting_Name
         //
         typedef ::xml_schema::string SimFlowFitting_Name_type;
-        typedef ::xsd::cxx::tree::optional< SimFlowFitting_Name_type > SimFlowFitting_Name_optional;
+        typedef ::xsd::cxx::tree::optional< SimFlowFitting_Name_type, false > SimFlowFitting_Name_optional;
         typedef ::xsd::cxx::tree::traits< SimFlowFitting_Name_type, char > SimFlowFitting_Name_traits;
 
         const SimFlowFitting_Name_optional&
@@ -284,7 +284,7 @@ namespace schema
         // SimFlowFitting_LoopType
         //
         typedef ::xml_schema::string SimFlowFitting_LoopType_type;
-        typedef ::xsd::cxx::tree::optional< SimFlowFitting_LoopType_type > SimFlowFitting_LoopType_optional;
+        typedef ::xsd::cxx::tree::optional< SimFlowFitting_LoopType_type, false > SimFlowFitting_LoopType_optional;
         typedef ::xsd::cxx::tree::traits< SimFlowFitting_LoopType_type, char > SimFlowFitting_LoopType_traits;
 
         const SimFlowFitting_LoopType_optional&
@@ -305,7 +305,7 @@ namespace schema
         // SimFlowFitting_InletCount
         //
         typedef ::xml_schema::int_ SimFlowFitting_InletCount_type;
-        typedef ::xsd::cxx::tree::optional< SimFlowFitting_InletCount_type > SimFlowFitting_InletCount_optional;
+        typedef ::xsd::cxx::tree::optional< SimFlowFitting_InletCount_type, true > SimFlowFitting_InletCount_optional;
         typedef ::xsd::cxx::tree::traits< SimFlowFitting_InletCount_type, char > SimFlowFitting_InletCount_traits;
 
         const SimFlowFitting_InletCount_optional&
@@ -323,7 +323,7 @@ namespace schema
         // SimFlowFitting_OutletCount
         //
         typedef ::xml_schema::int_ SimFlowFitting_OutletCount_type;
-        typedef ::xsd::cxx::tree::optional< SimFlowFitting_OutletCount_type > SimFlowFitting_OutletCount_optional;
+        typedef ::xsd::cxx::tree::optional< SimFlowFitting_OutletCount_type, true > SimFlowFitting_OutletCount_optional;
         typedef ::xsd::cxx::tree::traits< SimFlowFitting_OutletCount_type, char > SimFlowFitting_OutletCount_traits;
 
         const SimFlowFitting_OutletCount_optional&

@@ -263,7 +263,7 @@ namespace schema
         // DimensionX
         //
         typedef ::xml_schema::double_ DimensionX_type;
-        typedef ::xsd::cxx::tree::optional< DimensionX_type > DimensionX_optional;
+        typedef ::xsd::cxx::tree::optional< DimensionX_type, true > DimensionX_optional;
         typedef ::xsd::cxx::tree::traits< DimensionX_type, char, ::xsd::cxx::tree::schema_type::double_ > DimensionX_traits;
 
         const DimensionX_optional&
@@ -281,7 +281,7 @@ namespace schema
         // DimensionY
         //
         typedef ::xml_schema::double_ DimensionY_type;
-        typedef ::xsd::cxx::tree::optional< DimensionY_type > DimensionY_optional;
+        typedef ::xsd::cxx::tree::optional< DimensionY_type, true > DimensionY_optional;
         typedef ::xsd::cxx::tree::traits< DimensionY_type, char, ::xsd::cxx::tree::schema_type::double_ > DimensionY_traits;
 
         const DimensionY_optional&
@@ -299,7 +299,7 @@ namespace schema
         // DimensionZ
         //
         typedef ::xml_schema::double_ DimensionZ_type;
-        typedef ::xsd::cxx::tree::optional< DimensionZ_type > DimensionZ_optional;
+        typedef ::xsd::cxx::tree::optional< DimensionZ_type, true > DimensionZ_optional;
         typedef ::xsd::cxx::tree::traits< DimensionZ_type, char, ::xsd::cxx::tree::schema_type::double_ > DimensionZ_traits;
 
         const DimensionZ_optional&
@@ -317,7 +317,7 @@ namespace schema
         // SlabElevation
         //
         typedef ::xml_schema::double_ SlabElevation_type;
-        typedef ::xsd::cxx::tree::optional< SlabElevation_type > SlabElevation_optional;
+        typedef ::xsd::cxx::tree::optional< SlabElevation_type, true > SlabElevation_optional;
         typedef ::xsd::cxx::tree::traits< SlabElevation_type, char, ::xsd::cxx::tree::schema_type::double_ > SlabElevation_traits;
 
         const SlabElevation_optional&
@@ -335,7 +335,7 @@ namespace schema
         // SlabThickness
         //
         typedef ::xml_schema::double_ SlabThickness_type;
-        typedef ::xsd::cxx::tree::optional< SlabThickness_type > SlabThickness_optional;
+        typedef ::xsd::cxx::tree::optional< SlabThickness_type, true > SlabThickness_optional;
         typedef ::xsd::cxx::tree::traits< SlabThickness_type, char, ::xsd::cxx::tree::schema_type::double_ > SlabThickness_traits;
 
         const SlabThickness_optional&
@@ -353,7 +353,7 @@ namespace schema
         // ProfilePath
         //
         typedef ::xml_schema::idref ProfilePath_type;
-        typedef ::xsd::cxx::tree::optional< ProfilePath_type > ProfilePath_optional;
+        typedef ::xsd::cxx::tree::optional< ProfilePath_type, false > ProfilePath_optional;
         typedef ::xsd::cxx::tree::traits< ProfilePath_type, char > ProfilePath_traits;
 
         const ProfilePath_optional&

@@ -263,7 +263,7 @@ namespace schema
         // SimSimParams_PlantOrCondenserLoopName
         //
         typedef ::xml_schema::idref SimSimParams_PlantOrCondenserLoopName_type;
-        typedef ::xsd::cxx::tree::optional< SimSimParams_PlantOrCondenserLoopName_type > SimSimParams_PlantOrCondenserLoopName_optional;
+        typedef ::xsd::cxx::tree::optional< SimSimParams_PlantOrCondenserLoopName_type, false > SimSimParams_PlantOrCondenserLoopName_optional;
         typedef ::xsd::cxx::tree::traits< SimSimParams_PlantOrCondenserLoopName_type, char > SimSimParams_PlantOrCondenserLoopName_traits;
 
         const SimSimParams_PlantOrCondenserLoopName_optional&
@@ -284,7 +284,7 @@ namespace schema
         // SimSimParams_LoopType
         //
         typedef ::xml_schema::string SimSimParams_LoopType_type;
-        typedef ::xsd::cxx::tree::optional< SimSimParams_LoopType_type > SimSimParams_LoopType_optional;
+        typedef ::xsd::cxx::tree::optional< SimSimParams_LoopType_type, false > SimSimParams_LoopType_optional;
         typedef ::xsd::cxx::tree::traits< SimSimParams_LoopType_type, char > SimSimParams_LoopType_traits;
 
         const SimSimParams_LoopType_optional&
@@ -305,7 +305,7 @@ namespace schema
         // SimSimParams_DesignLoopExitTemp
         //
         typedef ::xml_schema::double_ SimSimParams_DesignLoopExitTemp_type;
-        typedef ::xsd::cxx::tree::optional< SimSimParams_DesignLoopExitTemp_type > SimSimParams_DesignLoopExitTemp_optional;
+        typedef ::xsd::cxx::tree::optional< SimSimParams_DesignLoopExitTemp_type, true > SimSimParams_DesignLoopExitTemp_optional;
         typedef ::xsd::cxx::tree::traits< SimSimParams_DesignLoopExitTemp_type, char, ::xsd::cxx::tree::schema_type::double_ > SimSimParams_DesignLoopExitTemp_traits;
 
         const SimSimParams_DesignLoopExitTemp_optional&
@@ -323,7 +323,7 @@ namespace schema
         // SimSimParams_LoopDesignTempDifference
         //
         typedef ::xml_schema::double_ SimSimParams_LoopDesignTempDifference_type;
-        typedef ::xsd::cxx::tree::optional< SimSimParams_LoopDesignTempDifference_type > SimSimParams_LoopDesignTempDifference_optional;
+        typedef ::xsd::cxx::tree::optional< SimSimParams_LoopDesignTempDifference_type, true > SimSimParams_LoopDesignTempDifference_optional;
         typedef ::xsd::cxx::tree::traits< SimSimParams_LoopDesignTempDifference_type, char, ::xsd::cxx::tree::schema_type::double_ > SimSimParams_LoopDesignTempDifference_traits;
 
         const SimSimParams_LoopDesignTempDifference_optional&

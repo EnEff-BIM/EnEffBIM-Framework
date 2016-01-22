@@ -263,7 +263,7 @@ namespace schema
         // SimMaterial_Thick
         //
         typedef ::xml_schema::double_ SimMaterial_Thick_type;
-        typedef ::xsd::cxx::tree::optional< SimMaterial_Thick_type > SimMaterial_Thick_optional;
+        typedef ::xsd::cxx::tree::optional< SimMaterial_Thick_type, true > SimMaterial_Thick_optional;
         typedef ::xsd::cxx::tree::traits< SimMaterial_Thick_type, char, ::xsd::cxx::tree::schema_type::double_ > SimMaterial_Thick_traits;
 
         const SimMaterial_Thick_optional&
@@ -281,7 +281,7 @@ namespace schema
         // SimMaterial_GasType
         //
         typedef ::xml_schema::string SimMaterial_GasType_type;
-        typedef ::xsd::cxx::tree::optional< SimMaterial_GasType_type > SimMaterial_GasType_optional;
+        typedef ::xsd::cxx::tree::optional< SimMaterial_GasType_type, false > SimMaterial_GasType_optional;
         typedef ::xsd::cxx::tree::traits< SimMaterial_GasType_type, char > SimMaterial_GasType_traits;
 
         const SimMaterial_GasType_optional&
@@ -302,7 +302,7 @@ namespace schema
         // SimMaterial_CondCoefA
         //
         typedef ::xml_schema::double_ SimMaterial_CondCoefA_type;
-        typedef ::xsd::cxx::tree::optional< SimMaterial_CondCoefA_type > SimMaterial_CondCoefA_optional;
+        typedef ::xsd::cxx::tree::optional< SimMaterial_CondCoefA_type, true > SimMaterial_CondCoefA_optional;
         typedef ::xsd::cxx::tree::traits< SimMaterial_CondCoefA_type, char, ::xsd::cxx::tree::schema_type::double_ > SimMaterial_CondCoefA_traits;
 
         const SimMaterial_CondCoefA_optional&
@@ -320,7 +320,7 @@ namespace schema
         // SimMaterial_CondCoefB
         //
         typedef ::xml_schema::double_ SimMaterial_CondCoefB_type;
-        typedef ::xsd::cxx::tree::optional< SimMaterial_CondCoefB_type > SimMaterial_CondCoefB_optional;
+        typedef ::xsd::cxx::tree::optional< SimMaterial_CondCoefB_type, true > SimMaterial_CondCoefB_optional;
         typedef ::xsd::cxx::tree::traits< SimMaterial_CondCoefB_type, char, ::xsd::cxx::tree::schema_type::double_ > SimMaterial_CondCoefB_traits;
 
         const SimMaterial_CondCoefB_optional&
@@ -338,7 +338,7 @@ namespace schema
         // SimMaterial_ConductivityCoeffC
         //
         typedef ::xml_schema::double_ SimMaterial_ConductivityCoeffC_type;
-        typedef ::xsd::cxx::tree::optional< SimMaterial_ConductivityCoeffC_type > SimMaterial_ConductivityCoeffC_optional;
+        typedef ::xsd::cxx::tree::optional< SimMaterial_ConductivityCoeffC_type, true > SimMaterial_ConductivityCoeffC_optional;
         typedef ::xsd::cxx::tree::traits< SimMaterial_ConductivityCoeffC_type, char, ::xsd::cxx::tree::schema_type::double_ > SimMaterial_ConductivityCoeffC_traits;
 
         const SimMaterial_ConductivityCoeffC_optional&
@@ -356,7 +356,7 @@ namespace schema
         // SimMaterial_ViscosityCoefA
         //
         typedef ::xml_schema::double_ SimMaterial_ViscosityCoefA_type;
-        typedef ::xsd::cxx::tree::optional< SimMaterial_ViscosityCoefA_type > SimMaterial_ViscosityCoefA_optional;
+        typedef ::xsd::cxx::tree::optional< SimMaterial_ViscosityCoefA_type, true > SimMaterial_ViscosityCoefA_optional;
         typedef ::xsd::cxx::tree::traits< SimMaterial_ViscosityCoefA_type, char, ::xsd::cxx::tree::schema_type::double_ > SimMaterial_ViscosityCoefA_traits;
 
         const SimMaterial_ViscosityCoefA_optional&
@@ -374,7 +374,7 @@ namespace schema
         // SimMaterial_ViscosityCoefB
         //
         typedef ::xml_schema::double_ SimMaterial_ViscosityCoefB_type;
-        typedef ::xsd::cxx::tree::optional< SimMaterial_ViscosityCoefB_type > SimMaterial_ViscosityCoefB_optional;
+        typedef ::xsd::cxx::tree::optional< SimMaterial_ViscosityCoefB_type, true > SimMaterial_ViscosityCoefB_optional;
         typedef ::xsd::cxx::tree::traits< SimMaterial_ViscosityCoefB_type, char, ::xsd::cxx::tree::schema_type::double_ > SimMaterial_ViscosityCoefB_traits;
 
         const SimMaterial_ViscosityCoefB_optional&
@@ -392,7 +392,7 @@ namespace schema
         // SimMaterial_ViscosityCoeffC
         //
         typedef ::xml_schema::double_ SimMaterial_ViscosityCoeffC_type;
-        typedef ::xsd::cxx::tree::optional< SimMaterial_ViscosityCoeffC_type > SimMaterial_ViscosityCoeffC_optional;
+        typedef ::xsd::cxx::tree::optional< SimMaterial_ViscosityCoeffC_type, true > SimMaterial_ViscosityCoeffC_optional;
         typedef ::xsd::cxx::tree::traits< SimMaterial_ViscosityCoeffC_type, char, ::xsd::cxx::tree::schema_type::double_ > SimMaterial_ViscosityCoeffC_traits;
 
         const SimMaterial_ViscosityCoeffC_optional&
@@ -410,7 +410,7 @@ namespace schema
         // SimMaterial_SpecificHeatCoefA
         //
         typedef ::xml_schema::double_ SimMaterial_SpecificHeatCoefA_type;
-        typedef ::xsd::cxx::tree::optional< SimMaterial_SpecificHeatCoefA_type > SimMaterial_SpecificHeatCoefA_optional;
+        typedef ::xsd::cxx::tree::optional< SimMaterial_SpecificHeatCoefA_type, true > SimMaterial_SpecificHeatCoefA_optional;
         typedef ::xsd::cxx::tree::traits< SimMaterial_SpecificHeatCoefA_type, char, ::xsd::cxx::tree::schema_type::double_ > SimMaterial_SpecificHeatCoefA_traits;
 
         const SimMaterial_SpecificHeatCoefA_optional&
@@ -428,7 +428,7 @@ namespace schema
         // SimMaterial_SpecificHeatCoefB
         //
         typedef ::xml_schema::double_ SimMaterial_SpecificHeatCoefB_type;
-        typedef ::xsd::cxx::tree::optional< SimMaterial_SpecificHeatCoefB_type > SimMaterial_SpecificHeatCoefB_optional;
+        typedef ::xsd::cxx::tree::optional< SimMaterial_SpecificHeatCoefB_type, true > SimMaterial_SpecificHeatCoefB_optional;
         typedef ::xsd::cxx::tree::traits< SimMaterial_SpecificHeatCoefB_type, char, ::xsd::cxx::tree::schema_type::double_ > SimMaterial_SpecificHeatCoefB_traits;
 
         const SimMaterial_SpecificHeatCoefB_optional&
@@ -446,7 +446,7 @@ namespace schema
         // SimMaterial_SpecificHeatCoeffC
         //
         typedef ::xml_schema::double_ SimMaterial_SpecificHeatCoeffC_type;
-        typedef ::xsd::cxx::tree::optional< SimMaterial_SpecificHeatCoeffC_type > SimMaterial_SpecificHeatCoeffC_optional;
+        typedef ::xsd::cxx::tree::optional< SimMaterial_SpecificHeatCoeffC_type, true > SimMaterial_SpecificHeatCoeffC_optional;
         typedef ::xsd::cxx::tree::traits< SimMaterial_SpecificHeatCoeffC_type, char, ::xsd::cxx::tree::schema_type::double_ > SimMaterial_SpecificHeatCoeffC_traits;
 
         const SimMaterial_SpecificHeatCoeffC_optional&
@@ -464,7 +464,7 @@ namespace schema
         // SimMaterial_MolecularWeight
         //
         typedef ::xml_schema::double_ SimMaterial_MolecularWeight_type;
-        typedef ::xsd::cxx::tree::optional< SimMaterial_MolecularWeight_type > SimMaterial_MolecularWeight_optional;
+        typedef ::xsd::cxx::tree::optional< SimMaterial_MolecularWeight_type, true > SimMaterial_MolecularWeight_optional;
         typedef ::xsd::cxx::tree::traits< SimMaterial_MolecularWeight_type, char, ::xsd::cxx::tree::schema_type::double_ > SimMaterial_MolecularWeight_traits;
 
         const SimMaterial_MolecularWeight_optional&
@@ -482,7 +482,7 @@ namespace schema
         // SimMaterial_SpecificHeatRatio
         //
         typedef ::xml_schema::double_ SimMaterial_SpecificHeatRatio_type;
-        typedef ::xsd::cxx::tree::optional< SimMaterial_SpecificHeatRatio_type > SimMaterial_SpecificHeatRatio_optional;
+        typedef ::xsd::cxx::tree::optional< SimMaterial_SpecificHeatRatio_type, true > SimMaterial_SpecificHeatRatio_optional;
         typedef ::xsd::cxx::tree::traits< SimMaterial_SpecificHeatRatio_type, char, ::xsd::cxx::tree::schema_type::double_ > SimMaterial_SpecificHeatRatio_traits;
 
         const SimMaterial_SpecificHeatRatio_optional&

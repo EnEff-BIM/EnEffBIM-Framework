@@ -274,7 +274,7 @@ namespace schema
         // InternalLocation
         //
         typedef ::xml_schema::string InternalLocation_type;
-        typedef ::xsd::cxx::tree::optional< InternalLocation_type > InternalLocation_optional;
+        typedef ::xsd::cxx::tree::optional< InternalLocation_type, false > InternalLocation_optional;
         typedef ::xsd::cxx::tree::traits< InternalLocation_type, char > InternalLocation_traits;
 
         const InternalLocation_optional&
@@ -316,7 +316,7 @@ namespace schema
         // PostalBox
         //
         typedef ::xml_schema::string PostalBox_type;
-        typedef ::xsd::cxx::tree::optional< PostalBox_type > PostalBox_optional;
+        typedef ::xsd::cxx::tree::optional< PostalBox_type, false > PostalBox_optional;
         typedef ::xsd::cxx::tree::traits< PostalBox_type, char > PostalBox_traits;
 
         const PostalBox_optional&
@@ -337,7 +337,7 @@ namespace schema
         // Town
         //
         typedef ::xml_schema::string Town_type;
-        typedef ::xsd::cxx::tree::optional< Town_type > Town_optional;
+        typedef ::xsd::cxx::tree::optional< Town_type, false > Town_optional;
         typedef ::xsd::cxx::tree::traits< Town_type, char > Town_traits;
 
         const Town_optional&
@@ -358,7 +358,7 @@ namespace schema
         // Region
         //
         typedef ::xml_schema::string Region_type;
-        typedef ::xsd::cxx::tree::optional< Region_type > Region_optional;
+        typedef ::xsd::cxx::tree::optional< Region_type, false > Region_optional;
         typedef ::xsd::cxx::tree::traits< Region_type, char > Region_traits;
 
         const Region_optional&
@@ -379,7 +379,7 @@ namespace schema
         // PostalCode
         //
         typedef ::xml_schema::string PostalCode_type;
-        typedef ::xsd::cxx::tree::optional< PostalCode_type > PostalCode_optional;
+        typedef ::xsd::cxx::tree::optional< PostalCode_type, false > PostalCode_optional;
         typedef ::xsd::cxx::tree::traits< PostalCode_type, char > PostalCode_traits;
 
         const PostalCode_optional&
@@ -400,7 +400,7 @@ namespace schema
         // Country
         //
         typedef ::xml_schema::string Country_type;
-        typedef ::xsd::cxx::tree::optional< Country_type > Country_optional;
+        typedef ::xsd::cxx::tree::optional< Country_type, false > Country_optional;
         typedef ::xsd::cxx::tree::traits< Country_type, char > Country_traits;
 
         const Country_optional&

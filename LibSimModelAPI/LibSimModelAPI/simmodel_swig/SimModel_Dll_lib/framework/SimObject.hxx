@@ -263,7 +263,7 @@ namespace schema
         // TypeDefinition
         //
         typedef ::xml_schema::idref TypeDefinition_type;
-        typedef ::xsd::cxx::tree::optional< TypeDefinition_type > TypeDefinition_optional;
+        typedef ::xsd::cxx::tree::optional< TypeDefinition_type, false > TypeDefinition_optional;
         typedef ::xsd::cxx::tree::traits< TypeDefinition_type, char > TypeDefinition_traits;
 
         const TypeDefinition_optional&
@@ -284,7 +284,7 @@ namespace schema
         // ObjectType
         //
         typedef ::xml_schema::string ObjectType_type;
-        typedef ::xsd::cxx::tree::optional< ObjectType_type > ObjectType_optional;
+        typedef ::xsd::cxx::tree::optional< ObjectType_type, false > ObjectType_optional;
         typedef ::xsd::cxx::tree::traits< ObjectType_type, char > ObjectType_traits;
 
         const ObjectType_optional&
@@ -305,7 +305,7 @@ namespace schema
         // ObjectCreationParams
         //
         typedef ::xml_schema::idref ObjectCreationParams_type;
-        typedef ::xsd::cxx::tree::optional< ObjectCreationParams_type > ObjectCreationParams_optional;
+        typedef ::xsd::cxx::tree::optional< ObjectCreationParams_type, false > ObjectCreationParams_optional;
         typedef ::xsd::cxx::tree::traits< ObjectCreationParams_type, char > ObjectCreationParams_traits;
 
         const ObjectCreationParams_optional&

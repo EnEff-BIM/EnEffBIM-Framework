@@ -263,7 +263,7 @@ namespace schema
         // BldgStoryName
         //
         typedef ::xml_schema::string BldgStoryName_type;
-        typedef ::xsd::cxx::tree::optional< BldgStoryName_type > BldgStoryName_optional;
+        typedef ::xsd::cxx::tree::optional< BldgStoryName_type, false > BldgStoryName_optional;
         typedef ::xsd::cxx::tree::traits< BldgStoryName_type, char > BldgStoryName_traits;
 
         const BldgStoryName_optional&
@@ -284,7 +284,7 @@ namespace schema
         // BldgStoryShape
         //
         typedef ::xml_schema::string BldgStoryShape_type;
-        typedef ::xsd::cxx::tree::optional< BldgStoryShape_type > BldgStoryShape_optional;
+        typedef ::xsd::cxx::tree::optional< BldgStoryShape_type, false > BldgStoryShape_optional;
         typedef ::xsd::cxx::tree::traits< BldgStoryShape_type, char > BldgStoryShape_traits;
 
         const BldgStoryShape_optional&
@@ -305,7 +305,7 @@ namespace schema
         // X1Dim
         //
         typedef ::xml_schema::double_ X1Dim_type;
-        typedef ::xsd::cxx::tree::optional< X1Dim_type > X1Dim_optional;
+        typedef ::xsd::cxx::tree::optional< X1Dim_type, true > X1Dim_optional;
         typedef ::xsd::cxx::tree::traits< X1Dim_type, char, ::xsd::cxx::tree::schema_type::double_ > X1Dim_traits;
 
         const X1Dim_optional&
@@ -323,7 +323,7 @@ namespace schema
         // X2Dim
         //
         typedef ::xml_schema::double_ X2Dim_type;
-        typedef ::xsd::cxx::tree::optional< X2Dim_type > X2Dim_optional;
+        typedef ::xsd::cxx::tree::optional< X2Dim_type, true > X2Dim_optional;
         typedef ::xsd::cxx::tree::traits< X2Dim_type, char, ::xsd::cxx::tree::schema_type::double_ > X2Dim_traits;
 
         const X2Dim_optional&
@@ -341,7 +341,7 @@ namespace schema
         // X3Dim
         //
         typedef ::xml_schema::double_ X3Dim_type;
-        typedef ::xsd::cxx::tree::optional< X3Dim_type > X3Dim_optional;
+        typedef ::xsd::cxx::tree::optional< X3Dim_type, true > X3Dim_optional;
         typedef ::xsd::cxx::tree::traits< X3Dim_type, char, ::xsd::cxx::tree::schema_type::double_ > X3Dim_traits;
 
         const X3Dim_optional&
@@ -359,7 +359,7 @@ namespace schema
         // Y1Dim
         //
         typedef ::xml_schema::double_ Y1Dim_type;
-        typedef ::xsd::cxx::tree::optional< Y1Dim_type > Y1Dim_optional;
+        typedef ::xsd::cxx::tree::optional< Y1Dim_type, true > Y1Dim_optional;
         typedef ::xsd::cxx::tree::traits< Y1Dim_type, char, ::xsd::cxx::tree::schema_type::double_ > Y1Dim_traits;
 
         const Y1Dim_optional&
@@ -377,7 +377,7 @@ namespace schema
         // Y2Dim
         //
         typedef ::xml_schema::double_ Y2Dim_type;
-        typedef ::xsd::cxx::tree::optional< Y2Dim_type > Y2Dim_optional;
+        typedef ::xsd::cxx::tree::optional< Y2Dim_type, true > Y2Dim_optional;
         typedef ::xsd::cxx::tree::traits< Y2Dim_type, char, ::xsd::cxx::tree::schema_type::double_ > Y2Dim_traits;
 
         const Y2Dim_optional&
@@ -395,7 +395,7 @@ namespace schema
         // Y3Dim
         //
         typedef ::xml_schema::double_ Y3Dim_type;
-        typedef ::xsd::cxx::tree::optional< Y3Dim_type > Y3Dim_optional;
+        typedef ::xsd::cxx::tree::optional< Y3Dim_type, true > Y3Dim_optional;
         typedef ::xsd::cxx::tree::traits< Y3Dim_type, char, ::xsd::cxx::tree::schema_type::double_ > Y3Dim_traits;
 
         const Y3Dim_optional&
@@ -413,7 +413,7 @@ namespace schema
         // FloorToFloorHeight
         //
         typedef ::xml_schema::double_ FloorToFloorHeight_type;
-        typedef ::xsd::cxx::tree::optional< FloorToFloorHeight_type > FloorToFloorHeight_optional;
+        typedef ::xsd::cxx::tree::optional< FloorToFloorHeight_type, true > FloorToFloorHeight_optional;
         typedef ::xsd::cxx::tree::traits< FloorToFloorHeight_type, char, ::xsd::cxx::tree::schema_type::double_ > FloorToFloorHeight_traits;
 
         const FloorToFloorHeight_optional&
@@ -431,7 +431,7 @@ namespace schema
         // CeilingBottomElevation
         //
         typedef ::xml_schema::double_ CeilingBottomElevation_type;
-        typedef ::xsd::cxx::tree::optional< CeilingBottomElevation_type > CeilingBottomElevation_optional;
+        typedef ::xsd::cxx::tree::optional< CeilingBottomElevation_type, true > CeilingBottomElevation_optional;
         typedef ::xsd::cxx::tree::traits< CeilingBottomElevation_type, char, ::xsd::cxx::tree::schema_type::double_ > CeilingBottomElevation_traits;
 
         const CeilingBottomElevation_optional&
@@ -449,7 +449,7 @@ namespace schema
         // FinishFloorTopElevation
         //
         typedef ::xml_schema::double_ FinishFloorTopElevation_type;
-        typedef ::xsd::cxx::tree::optional< FinishFloorTopElevation_type > FinishFloorTopElevation_optional;
+        typedef ::xsd::cxx::tree::optional< FinishFloorTopElevation_type, true > FinishFloorTopElevation_optional;
         typedef ::xsd::cxx::tree::traits< FinishFloorTopElevation_type, char, ::xsd::cxx::tree::schema_type::double_ > FinishFloorTopElevation_traits;
 
         const FinishFloorTopElevation_optional&
@@ -467,7 +467,7 @@ namespace schema
         // SpaceConfigOccupied
         //
         typedef ::xml_schema::string SpaceConfigOccupied_type;
-        typedef ::xsd::cxx::tree::optional< SpaceConfigOccupied_type > SpaceConfigOccupied_optional;
+        typedef ::xsd::cxx::tree::optional< SpaceConfigOccupied_type, false > SpaceConfigOccupied_optional;
         typedef ::xsd::cxx::tree::traits< SpaceConfigOccupied_type, char > SpaceConfigOccupied_traits;
 
         const SpaceConfigOccupied_optional&
@@ -488,7 +488,7 @@ namespace schema
         // PlenumConfiguration
         //
         typedef ::xml_schema::string PlenumConfiguration_type;
-        typedef ::xsd::cxx::tree::optional< PlenumConfiguration_type > PlenumConfiguration_optional;
+        typedef ::xsd::cxx::tree::optional< PlenumConfiguration_type, false > PlenumConfiguration_optional;
         typedef ::xsd::cxx::tree::traits< PlenumConfiguration_type, char > PlenumConfiguration_traits;
 
         const PlenumConfiguration_optional&
@@ -509,7 +509,7 @@ namespace schema
         // SpaceConfigAboveCeiling
         //
         typedef ::xml_schema::string SpaceConfigAboveCeiling_type;
-        typedef ::xsd::cxx::tree::optional< SpaceConfigAboveCeiling_type > SpaceConfigAboveCeiling_optional;
+        typedef ::xsd::cxx::tree::optional< SpaceConfigAboveCeiling_type, false > SpaceConfigAboveCeiling_optional;
         typedef ::xsd::cxx::tree::traits< SpaceConfigAboveCeiling_type, char > SpaceConfigAboveCeiling_traits;
 
         const SpaceConfigAboveCeiling_optional&
@@ -530,7 +530,7 @@ namespace schema
         // SpaceConfigBelowFloor
         //
         typedef ::xml_schema::string SpaceConfigBelowFloor_type;
-        typedef ::xsd::cxx::tree::optional< SpaceConfigBelowFloor_type > SpaceConfigBelowFloor_optional;
+        typedef ::xsd::cxx::tree::optional< SpaceConfigBelowFloor_type, false > SpaceConfigBelowFloor_optional;
         typedef ::xsd::cxx::tree::traits< SpaceConfigBelowFloor_type, char > SpaceConfigBelowFloor_traits;
 
         const SpaceConfigBelowFloor_optional&
@@ -551,7 +551,7 @@ namespace schema
         // PerimeterZoneDepth
         //
         typedef ::xml_schema::double_ PerimeterZoneDepth_type;
-        typedef ::xsd::cxx::tree::optional< PerimeterZoneDepth_type > PerimeterZoneDepth_optional;
+        typedef ::xsd::cxx::tree::optional< PerimeterZoneDepth_type, true > PerimeterZoneDepth_optional;
         typedef ::xsd::cxx::tree::traits< PerimeterZoneDepth_type, char, ::xsd::cxx::tree::schema_type::double_ > PerimeterZoneDepth_traits;
 
         const PerimeterZoneDepth_optional&
@@ -569,7 +569,7 @@ namespace schema
         // WallProfilePathType
         //
         typedef ::xml_schema::string WallProfilePathType_type;
-        typedef ::xsd::cxx::tree::optional< WallProfilePathType_type > WallProfilePathType_optional;
+        typedef ::xsd::cxx::tree::optional< WallProfilePathType_type, false > WallProfilePathType_optional;
         typedef ::xsd::cxx::tree::traits< WallProfilePathType_type, char > WallProfilePathType_traits;
 
         const WallProfilePathType_optional&
@@ -590,7 +590,7 @@ namespace schema
         // BldgStoryProfilePath
         //
         typedef ::xml_schema::idref BldgStoryProfilePath_type;
-        typedef ::xsd::cxx::tree::optional< BldgStoryProfilePath_type > BldgStoryProfilePath_optional;
+        typedef ::xsd::cxx::tree::optional< BldgStoryProfilePath_type, false > BldgStoryProfilePath_optional;
         typedef ::xsd::cxx::tree::traits< BldgStoryProfilePath_type, char > BldgStoryProfilePath_traits;
 
         const BldgStoryProfilePath_optional&
@@ -611,7 +611,7 @@ namespace schema
         // PerimeterZoneOutsidePath
         //
         typedef ::xml_schema::idref PerimeterZoneOutsidePath_type;
-        typedef ::xsd::cxx::tree::optional< PerimeterZoneOutsidePath_type > PerimeterZoneOutsidePath_optional;
+        typedef ::xsd::cxx::tree::optional< PerimeterZoneOutsidePath_type, false > PerimeterZoneOutsidePath_optional;
         typedef ::xsd::cxx::tree::traits< PerimeterZoneOutsidePath_type, char > PerimeterZoneOutsidePath_traits;
 
         const PerimeterZoneOutsidePath_optional&
@@ -695,7 +695,7 @@ namespace schema
         // BldgConstructionsTemplate
         //
         typedef ::xml_schema::idref BldgConstructionsTemplate_type;
-        typedef ::xsd::cxx::tree::optional< BldgConstructionsTemplate_type > BldgConstructionsTemplate_optional;
+        typedef ::xsd::cxx::tree::optional< BldgConstructionsTemplate_type, false > BldgConstructionsTemplate_optional;
         typedef ::xsd::cxx::tree::traits< BldgConstructionsTemplate_type, char > BldgConstructionsTemplate_traits;
 
         const BldgConstructionsTemplate_optional&
@@ -800,7 +800,7 @@ namespace schema
         // DefaultLibraryType
         //
         typedef ::xml_schema::string DefaultLibraryType_type;
-        typedef ::xsd::cxx::tree::optional< DefaultLibraryType_type > DefaultLibraryType_optional;
+        typedef ::xsd::cxx::tree::optional< DefaultLibraryType_type, false > DefaultLibraryType_optional;
         typedef ::xsd::cxx::tree::traits< DefaultLibraryType_type, char > DefaultLibraryType_traits;
 
         const DefaultLibraryType_optional&
@@ -821,7 +821,7 @@ namespace schema
         // DefaultLibEntryRef
         //
         typedef ::xml_schema::idref DefaultLibEntryRef_type;
-        typedef ::xsd::cxx::tree::optional< DefaultLibEntryRef_type > DefaultLibEntryRef_optional;
+        typedef ::xsd::cxx::tree::optional< DefaultLibEntryRef_type, false > DefaultLibEntryRef_optional;
         typedef ::xsd::cxx::tree::traits< DefaultLibEntryRef_type, char > DefaultLibEntryRef_traits;
 
         const DefaultLibEntryRef_optional&
@@ -842,7 +842,7 @@ namespace schema
         // DefaultOhangEntryRef
         //
         typedef ::xml_schema::idref DefaultOhangEntryRef_type;
-        typedef ::xsd::cxx::tree::optional< DefaultOhangEntryRef_type > DefaultOhangEntryRef_optional;
+        typedef ::xsd::cxx::tree::optional< DefaultOhangEntryRef_type, false > DefaultOhangEntryRef_optional;
         typedef ::xsd::cxx::tree::traits< DefaultOhangEntryRef_type, char > DefaultOhangEntryRef_traits;
 
         const DefaultOhangEntryRef_optional&
@@ -863,7 +863,7 @@ namespace schema
         // DefaultFinEntryRef
         //
         typedef ::xml_schema::idref DefaultFinEntryRef_type;
-        typedef ::xsd::cxx::tree::optional< DefaultFinEntryRef_type > DefaultFinEntryRef_optional;
+        typedef ::xsd::cxx::tree::optional< DefaultFinEntryRef_type, false > DefaultFinEntryRef_optional;
         typedef ::xsd::cxx::tree::traits< DefaultFinEntryRef_type, char > DefaultFinEntryRef_traits;
 
         const DefaultFinEntryRef_optional&
@@ -884,7 +884,7 @@ namespace schema
         // InsertedDWG
         //
         typedef ::xml_schema::idref InsertedDWG_type;
-        typedef ::xsd::cxx::tree::optional< InsertedDWG_type > InsertedDWG_optional;
+        typedef ::xsd::cxx::tree::optional< InsertedDWG_type, false > InsertedDWG_optional;
         typedef ::xsd::cxx::tree::traits< InsertedDWG_type, char > InsertedDWG_traits;
 
         const InsertedDWG_optional&

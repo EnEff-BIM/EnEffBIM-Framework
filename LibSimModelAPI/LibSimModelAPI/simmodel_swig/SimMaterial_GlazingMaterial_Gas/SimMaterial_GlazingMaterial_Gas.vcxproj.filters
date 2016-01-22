@@ -25,6 +25,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="SimMaterial_GlazingMaterial_Gas.i" />
+    <CustomBuild Include="SimMaterial_GlazingMaterial_Gas.i" />
   </ItemGroup>
 </Project>

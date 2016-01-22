@@ -263,7 +263,8 @@ namespace schema
         // SiteShape
         //
         typedef ::xml_schema::string SiteShape_type;
-        typedef ::xsd::cxx::tree::optional< SiteShape_type > SiteShape_optional;
+        typedef ::xsd::cxx::tree::optional< SiteShape_type, false > SiteShape_optional;
+		//typedef ::xsd::cxx::tree::optional< SiteShape_type, false > SiteShape_optional;
         typedef ::xsd::cxx::tree::traits< SiteShape_type, char > SiteShape_traits;
 
         const SiteShape_optional&
@@ -284,7 +285,7 @@ namespace schema
         // X1Dim
         //
         typedef ::xml_schema::double_ X1Dim_type;
-        typedef ::xsd::cxx::tree::optional< X1Dim_type > X1Dim_optional;
+        typedef ::xsd::cxx::tree::optional< X1Dim_type, true > X1Dim_optional;
         typedef ::xsd::cxx::tree::traits< X1Dim_type, char, ::xsd::cxx::tree::schema_type::double_ > X1Dim_traits;
 
         const X1Dim_optional&
@@ -302,7 +303,7 @@ namespace schema
         // X2Dim
         //
         typedef ::xml_schema::double_ X2Dim_type;
-        typedef ::xsd::cxx::tree::optional< X2Dim_type > X2Dim_optional;
+        typedef ::xsd::cxx::tree::optional< X2Dim_type, true > X2Dim_optional;
         typedef ::xsd::cxx::tree::traits< X2Dim_type, char, ::xsd::cxx::tree::schema_type::double_ > X2Dim_traits;
 
         const X2Dim_optional&
@@ -320,7 +321,7 @@ namespace schema
         // X3Dim
         //
         typedef ::xml_schema::double_ X3Dim_type;
-        typedef ::xsd::cxx::tree::optional< X3Dim_type > X3Dim_optional;
+        typedef ::xsd::cxx::tree::optional< X3Dim_type, true > X3Dim_optional;
         typedef ::xsd::cxx::tree::traits< X3Dim_type, char, ::xsd::cxx::tree::schema_type::double_ > X3Dim_traits;
 
         const X3Dim_optional&
@@ -338,7 +339,7 @@ namespace schema
         // Y1Dim
         //
         typedef ::xml_schema::double_ Y1Dim_type;
-        typedef ::xsd::cxx::tree::optional< Y1Dim_type > Y1Dim_optional;
+        typedef ::xsd::cxx::tree::optional< Y1Dim_type, true > Y1Dim_optional;
         typedef ::xsd::cxx::tree::traits< Y1Dim_type, char, ::xsd::cxx::tree::schema_type::double_ > Y1Dim_traits;
 
         const Y1Dim_optional&
@@ -356,7 +357,7 @@ namespace schema
         // Y2Dim
         //
         typedef ::xml_schema::double_ Y2Dim_type;
-        typedef ::xsd::cxx::tree::optional< Y2Dim_type > Y2Dim_optional;
+        typedef ::xsd::cxx::tree::optional< Y2Dim_type, true > Y2Dim_optional;
         typedef ::xsd::cxx::tree::traits< Y2Dim_type, char, ::xsd::cxx::tree::schema_type::double_ > Y2Dim_traits;
 
         const Y2Dim_optional&
@@ -374,7 +375,7 @@ namespace schema
         // Y3Dim
         //
         typedef ::xml_schema::double_ Y3Dim_type;
-        typedef ::xsd::cxx::tree::optional< Y3Dim_type > Y3Dim_optional;
+        typedef ::xsd::cxx::tree::optional< Y3Dim_type, true > Y3Dim_optional;
         typedef ::xsd::cxx::tree::traits< Y3Dim_type, char, ::xsd::cxx::tree::schema_type::double_ > Y3Dim_traits;
 
         const Y3Dim_optional&
@@ -392,7 +393,7 @@ namespace schema
         // SiteElevation
         //
         typedef ::xml_schema::double_ SiteElevation_type;
-        typedef ::xsd::cxx::tree::optional< SiteElevation_type > SiteElevation_optional;
+        typedef ::xsd::cxx::tree::optional< SiteElevation_type, true > SiteElevation_optional;
         typedef ::xsd::cxx::tree::traits< SiteElevation_type, char, ::xsd::cxx::tree::schema_type::double_ > SiteElevation_traits;
 
         const SiteElevation_optional&
@@ -410,7 +411,7 @@ namespace schema
         // ProfilePath
         //
         typedef ::xml_schema::idref ProfilePath_type;
-        typedef ::xsd::cxx::tree::optional< ProfilePath_type > ProfilePath_optional;
+        typedef ::xsd::cxx::tree::optional< ProfilePath_type, false > ProfilePath_optional;
         typedef ::xsd::cxx::tree::traits< ProfilePath_type, char > ProfilePath_traits;
 
         const ProfilePath_optional&
@@ -431,7 +432,7 @@ namespace schema
         // GroundPlaneElevation
         //
         typedef ::xml_schema::double_ GroundPlaneElevation_type;
-        typedef ::xsd::cxx::tree::optional< GroundPlaneElevation_type > GroundPlaneElevation_optional;
+        typedef ::xsd::cxx::tree::optional< GroundPlaneElevation_type, true > GroundPlaneElevation_optional;
         typedef ::xsd::cxx::tree::traits< GroundPlaneElevation_type, char, ::xsd::cxx::tree::schema_type::double_ > GroundPlaneElevation_traits;
 
         const GroundPlaneElevation_optional&
@@ -491,7 +492,7 @@ namespace schema
         // InsertedDWG
         //
         typedef ::xml_schema::idref InsertedDWG_type;
-        typedef ::xsd::cxx::tree::optional< InsertedDWG_type > InsertedDWG_optional;
+        typedef ::xsd::cxx::tree::optional< InsertedDWG_type, false > InsertedDWG_optional;
         typedef ::xsd::cxx::tree::traits< InsertedDWG_type, char > InsertedDWG_traits;
 
         const InsertedDWG_optional&

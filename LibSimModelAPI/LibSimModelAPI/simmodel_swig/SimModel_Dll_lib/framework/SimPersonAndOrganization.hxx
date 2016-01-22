@@ -263,7 +263,7 @@ namespace schema
         // ThePerson
         //
         typedef ::xml_schema::idref ThePerson_type;
-        typedef ::xsd::cxx::tree::optional< ThePerson_type > ThePerson_optional;
+        typedef ::xsd::cxx::tree::optional< ThePerson_type, false > ThePerson_optional;
         typedef ::xsd::cxx::tree::traits< ThePerson_type, char > ThePerson_traits;
 
         const ThePerson_optional&
@@ -284,7 +284,7 @@ namespace schema
         // TheOrganization
         //
         typedef ::xml_schema::idref TheOrganization_type;
-        typedef ::xsd::cxx::tree::optional< TheOrganization_type > TheOrganization_optional;
+        typedef ::xsd::cxx::tree::optional< TheOrganization_type, false > TheOrganization_optional;
         typedef ::xsd::cxx::tree::traits< TheOrganization_type, char > TheOrganization_traits;
 
         const TheOrganization_optional&

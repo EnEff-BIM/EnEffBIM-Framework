@@ -263,7 +263,7 @@ namespace schema
         // MajorUnitSymbol
         //
         typedef ::xml_schema::string MajorUnitSymbol_type;
-        typedef ::xsd::cxx::tree::optional< MajorUnitSymbol_type > MajorUnitSymbol_optional;
+        typedef ::xsd::cxx::tree::optional< MajorUnitSymbol_type, false > MajorUnitSymbol_optional;
         typedef ::xsd::cxx::tree::traits< MajorUnitSymbol_type, char > MajorUnitSymbol_traits;
 
         const MajorUnitSymbol_optional&
@@ -284,7 +284,7 @@ namespace schema
         // MinorUnitSymbol
         //
         typedef ::xml_schema::string MinorUnitSymbol_type;
-        typedef ::xsd::cxx::tree::optional< MinorUnitSymbol_type > MinorUnitSymbol_optional;
+        typedef ::xsd::cxx::tree::optional< MinorUnitSymbol_type, false > MinorUnitSymbol_optional;
         typedef ::xsd::cxx::tree::traits< MinorUnitSymbol_type, char > MinorUnitSymbol_traits;
 
         const MinorUnitSymbol_optional&
@@ -305,7 +305,7 @@ namespace schema
         // MajorFractionalPrecision
         //
         typedef ::xml_schema::int_ MajorFractionalPrecision_type;
-        typedef ::xsd::cxx::tree::optional< MajorFractionalPrecision_type > MajorFractionalPrecision_optional;
+        typedef ::xsd::cxx::tree::optional< MajorFractionalPrecision_type, true > MajorFractionalPrecision_optional;
         typedef ::xsd::cxx::tree::traits< MajorFractionalPrecision_type, char > MajorFractionalPrecision_traits;
 
         const MajorFractionalPrecision_optional&
@@ -323,7 +323,7 @@ namespace schema
         // MinorFractionalPrecision
         //
         typedef ::xml_schema::int_ MinorFractionalPrecision_type;
-        typedef ::xsd::cxx::tree::optional< MinorFractionalPrecision_type > MinorFractionalPrecision_optional;
+        typedef ::xsd::cxx::tree::optional< MinorFractionalPrecision_type, true > MinorFractionalPrecision_optional;
         typedef ::xsd::cxx::tree::traits< MinorFractionalPrecision_type, char > MinorFractionalPrecision_traits;
 
         const MinorFractionalPrecision_optional&

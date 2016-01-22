@@ -263,7 +263,7 @@ namespace schema
         // ContextIdentifier
         //
         typedef ::xml_schema::string ContextIdentifier_type;
-        typedef ::xsd::cxx::tree::optional< ContextIdentifier_type > ContextIdentifier_optional;
+        typedef ::xsd::cxx::tree::optional< ContextIdentifier_type, false > ContextIdentifier_optional;
         typedef ::xsd::cxx::tree::traits< ContextIdentifier_type, char > ContextIdentifier_traits;
 
         const ContextIdentifier_optional&
@@ -284,7 +284,7 @@ namespace schema
         // ContextType
         //
         typedef ::xml_schema::string ContextType_type;
-        typedef ::xsd::cxx::tree::optional< ContextType_type > ContextType_optional;
+        typedef ::xsd::cxx::tree::optional< ContextType_type, false > ContextType_optional;
         typedef ::xsd::cxx::tree::traits< ContextType_type, char > ContextType_traits;
 
         const ContextType_optional&

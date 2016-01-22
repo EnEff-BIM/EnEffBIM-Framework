@@ -263,7 +263,7 @@ namespace schema
         // FlowDirection
         //
         typedef ::xml_schema::string FlowDirection_type;
-        typedef ::xsd::cxx::tree::optional< FlowDirection_type > FlowDirection_optional;
+        typedef ::xsd::cxx::tree::optional< FlowDirection_type, false > FlowDirection_optional;
         typedef ::xsd::cxx::tree::traits< FlowDirection_type, char > FlowDirection_traits;
 
         const FlowDirection_optional&

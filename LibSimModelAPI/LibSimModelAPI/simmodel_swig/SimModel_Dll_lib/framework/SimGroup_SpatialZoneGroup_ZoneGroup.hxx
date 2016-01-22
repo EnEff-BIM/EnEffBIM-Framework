@@ -263,7 +263,7 @@ namespace schema
         // SimGroup_ZoneListName
         //
         typedef ::xml_schema::string SimGroup_ZoneListName_type;
-        typedef ::xsd::cxx::tree::optional< SimGroup_ZoneListName_type > SimGroup_ZoneListName_optional;
+        typedef ::xsd::cxx::tree::optional< SimGroup_ZoneListName_type, false > SimGroup_ZoneListName_optional;
         typedef ::xsd::cxx::tree::traits< SimGroup_ZoneListName_type, char > SimGroup_ZoneListName_traits;
 
         const SimGroup_ZoneListName_optional&
@@ -305,7 +305,7 @@ namespace schema
         // ZoneGroup_ZoneGrpName
         //
         typedef ::xml_schema::string ZoneGroup_ZoneGrpName_type;
-        typedef ::xsd::cxx::tree::optional< ZoneGroup_ZoneGrpName_type > ZoneGroup_ZoneGrpName_optional;
+        typedef ::xsd::cxx::tree::optional< ZoneGroup_ZoneGrpName_type, false > ZoneGroup_ZoneGrpName_optional;
         typedef ::xsd::cxx::tree::traits< ZoneGroup_ZoneGrpName_type, char > ZoneGroup_ZoneGrpName_traits;
 
         const ZoneGroup_ZoneGrpName_optional&
@@ -326,7 +326,7 @@ namespace schema
         // ZoneGroup_ZoneListName
         //
         typedef ::xml_schema::idref ZoneGroup_ZoneListName_type;
-        typedef ::xsd::cxx::tree::optional< ZoneGroup_ZoneListName_type > ZoneGroup_ZoneListName_optional;
+        typedef ::xsd::cxx::tree::optional< ZoneGroup_ZoneListName_type, false > ZoneGroup_ZoneListName_optional;
         typedef ::xsd::cxx::tree::traits< ZoneGroup_ZoneListName_type, char > ZoneGroup_ZoneListName_traits;
 
         const ZoneGroup_ZoneListName_optional&
@@ -347,7 +347,7 @@ namespace schema
         // ZoneGroup_ZoneListMult
         //
         typedef ::xml_schema::int_ ZoneGroup_ZoneListMult_type;
-        typedef ::xsd::cxx::tree::optional< ZoneGroup_ZoneListMult_type > ZoneGroup_ZoneListMult_optional;
+        typedef ::xsd::cxx::tree::optional< ZoneGroup_ZoneListMult_type, true > ZoneGroup_ZoneListMult_optional;
         typedef ::xsd::cxx::tree::traits< ZoneGroup_ZoneListMult_type, char > ZoneGroup_ZoneListMult_traits;
 
         const ZoneGroup_ZoneListMult_optional&

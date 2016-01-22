@@ -25,6 +25,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="SimSpatialZone_ThermalZone_Default.i" />
+    <CustomBuild Include="SimSpatialZone_ThermalZone_Default.i" />
   </ItemGroup>
 </Project>

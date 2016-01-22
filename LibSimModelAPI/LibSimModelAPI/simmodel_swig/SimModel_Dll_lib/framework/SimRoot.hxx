@@ -261,7 +261,7 @@ namespace schema
         // Description
         //
         typedef ::xml_schema::string Description_type;
-        typedef ::xsd::cxx::tree::optional< Description_type > Description_optional;
+        typedef ::xsd::cxx::tree::optional< Description_type, false > Description_optional;
         typedef ::xsd::cxx::tree::traits< Description_type, char > Description_traits;
 
         const Description_optional&
@@ -282,7 +282,7 @@ namespace schema
         // ObjectOwnerHistory
         //
         typedef ::xml_schema::idref ObjectOwnerHistory_type;
-        typedef ::xsd::cxx::tree::optional< ObjectOwnerHistory_type > ObjectOwnerHistory_optional;
+        typedef ::xsd::cxx::tree::optional< ObjectOwnerHistory_type, false > ObjectOwnerHistory_optional;
         typedef ::xsd::cxx::tree::traits< ObjectOwnerHistory_type, char > ObjectOwnerHistory_traits;
 
         const ObjectOwnerHistory_optional&
@@ -303,7 +303,7 @@ namespace schema
         // IfcGlobalID
         //
         typedef ::xml_schema::string IfcGlobalID_type;
-        typedef ::xsd::cxx::tree::optional< IfcGlobalID_type > IfcGlobalID_optional;
+        typedef ::xsd::cxx::tree::optional< IfcGlobalID_type, false > IfcGlobalID_optional;
         typedef ::xsd::cxx::tree::traits< IfcGlobalID_type, char > IfcGlobalID_traits;
 
         const IfcGlobalID_optional&
@@ -324,7 +324,7 @@ namespace schema
         // IfcName
         //
         typedef ::xml_schema::string IfcName_type;
-        typedef ::xsd::cxx::tree::optional< IfcName_type > IfcName_optional;
+        typedef ::xsd::cxx::tree::optional< IfcName_type, false > IfcName_optional;
         typedef ::xsd::cxx::tree::traits< IfcName_type, char > IfcName_traits;
 
         const IfcName_optional&
@@ -345,7 +345,7 @@ namespace schema
         // SimUniqueID
         //
         typedef ::xml_schema::string SimUniqueID_type;
-        typedef ::xsd::cxx::tree::optional< SimUniqueID_type > SimUniqueID_optional;
+        typedef ::xsd::cxx::tree::optional< SimUniqueID_type, false > SimUniqueID_optional;
         typedef ::xsd::cxx::tree::traits< SimUniqueID_type, char > SimUniqueID_traits;
 
         const SimUniqueID_optional&
@@ -366,7 +366,7 @@ namespace schema
         // SimModelType
         //
         typedef ::xml_schema::string SimModelType_type;
-        typedef ::xsd::cxx::tree::optional< SimModelType_type > SimModelType_optional;
+        typedef ::xsd::cxx::tree::optional< SimModelType_type, false > SimModelType_optional;
         typedef ::xsd::cxx::tree::traits< SimModelType_type, char > SimModelType_traits;
 
         const SimModelType_optional&
@@ -387,7 +387,7 @@ namespace schema
         // SimModelSubtype
         //
         typedef ::xml_schema::string SimModelSubtype_type;
-        typedef ::xsd::cxx::tree::optional< SimModelSubtype_type > SimModelSubtype_optional;
+        typedef ::xsd::cxx::tree::optional< SimModelSubtype_type, false > SimModelSubtype_optional;
         typedef ::xsd::cxx::tree::traits< SimModelSubtype_type, char > SimModelSubtype_traits;
 
         const SimModelSubtype_optional&
@@ -408,7 +408,7 @@ namespace schema
         // SimModelName
         //
         typedef ::xml_schema::string SimModelName_type;
-        typedef ::xsd::cxx::tree::optional< SimModelName_type > SimModelName_optional;
+        typedef ::xsd::cxx::tree::optional< SimModelName_type, false > SimModelName_optional;
         typedef ::xsd::cxx::tree::traits< SimModelName_type, char > SimModelName_traits;
 
         const SimModelName_optional&
@@ -429,7 +429,7 @@ namespace schema
         // SourceModelSchema
         //
         typedef ::xml_schema::string SourceModelSchema_type;
-        typedef ::xsd::cxx::tree::optional< SourceModelSchema_type > SourceModelSchema_optional;
+        typedef ::xsd::cxx::tree::optional< SourceModelSchema_type, false > SourceModelSchema_optional;
         typedef ::xsd::cxx::tree::traits< SourceModelSchema_type, char > SourceModelSchema_traits;
 
         const SourceModelSchema_optional&
@@ -450,7 +450,7 @@ namespace schema
         // SourceModelObjectType
         //
         typedef ::xml_schema::string SourceModelObjectType_type;
-        typedef ::xsd::cxx::tree::optional< SourceModelObjectType_type > SourceModelObjectType_optional;
+        typedef ::xsd::cxx::tree::optional< SourceModelObjectType_type, false > SourceModelObjectType_optional;
         typedef ::xsd::cxx::tree::traits< SourceModelObjectType_type, char > SourceModelObjectType_traits;
 
         const SourceModelObjectType_optional&
@@ -471,7 +471,7 @@ namespace schema
         // SourceLibraryEntryID
         //
         typedef ::xml_schema::string SourceLibraryEntryID_type;
-        typedef ::xsd::cxx::tree::optional< SourceLibraryEntryID_type > SourceLibraryEntryID_optional;
+        typedef ::xsd::cxx::tree::optional< SourceLibraryEntryID_type, false > SourceLibraryEntryID_optional;
         typedef ::xsd::cxx::tree::traits< SourceLibraryEntryID_type, char > SourceLibraryEntryID_traits;
 
         const SourceLibraryEntryID_optional&
@@ -492,7 +492,7 @@ namespace schema
         // SourceLibraryEntryRef
         //
         typedef ::xml_schema::idref SourceLibraryEntryRef_type;
-        typedef ::xsd::cxx::tree::optional< SourceLibraryEntryRef_type > SourceLibraryEntryRef_optional;
+        typedef ::xsd::cxx::tree::optional< SourceLibraryEntryRef_type, false > SourceLibraryEntryRef_optional;
         typedef ::xsd::cxx::tree::traits< SourceLibraryEntryRef_type, char > SourceLibraryEntryRef_traits;
 
         const SourceLibraryEntryRef_optional&
@@ -515,10 +515,12 @@ namespace schema
         typedef ::xml_schema::id RefId_type;
         typedef ::xsd::cxx::tree::traits< RefId_type, char > RefId_traits;
 
-        const RefId_type&
+        //const RefId_type&
+		const std::string
         RefId () const;
 
-        RefId_type&
+        //RefId_type&
+		std::string
         RefId ();
 
         void

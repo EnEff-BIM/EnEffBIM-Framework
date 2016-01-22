@@ -384,7 +384,7 @@ namespace schema
         // T24BaselineCommercialRefrigerationEPD
         //
         typedef ::xml_schema::double_ T24BaselineCommercialRefrigerationEPD_type;
-        typedef ::xsd::cxx::tree::optional< T24BaselineCommercialRefrigerationEPD_type > T24BaselineCommercialRefrigerationEPD_optional;
+        typedef ::xsd::cxx::tree::optional< T24BaselineCommercialRefrigerationEPD_type, true > T24BaselineCommercialRefrigerationEPD_optional;
         typedef ::xsd::cxx::tree::traits< T24BaselineCommercialRefrigerationEPD_type, char, ::xsd::cxx::tree::schema_type::double_ > T24BaselineCommercialRefrigerationEPD_traits;
 
         const T24BaselineCommercialRefrigerationEPD_optional&
@@ -402,7 +402,7 @@ namespace schema
         // T24BaselineCommercialRefrigerationEquipmentScheduleReference
         //
         typedef ::xml_schema::idref T24BaselineCommercialRefrigerationEquipmentScheduleReference_type;
-        typedef ::xsd::cxx::tree::optional< T24BaselineCommercialRefrigerationEquipmentScheduleReference_type > T24BaselineCommercialRefrigerationEquipmentScheduleReference_optional;
+        typedef ::xsd::cxx::tree::optional< T24BaselineCommercialRefrigerationEquipmentScheduleReference_type, false > T24BaselineCommercialRefrigerationEquipmentScheduleReference_optional;
         typedef ::xsd::cxx::tree::traits< T24BaselineCommercialRefrigerationEquipmentScheduleReference_type, char > T24BaselineCommercialRefrigerationEquipmentScheduleReference_traits;
 
         const T24BaselineCommercialRefrigerationEquipmentScheduleReference_optional&
@@ -423,7 +423,7 @@ namespace schema
         // T24BaselineGasEquipmentPowerDensity
         //
         typedef ::xml_schema::double_ T24BaselineGasEquipmentPowerDensity_type;
-        typedef ::xsd::cxx::tree::optional< T24BaselineGasEquipmentPowerDensity_type > T24BaselineGasEquipmentPowerDensity_optional;
+        typedef ::xsd::cxx::tree::optional< T24BaselineGasEquipmentPowerDensity_type, true > T24BaselineGasEquipmentPowerDensity_optional;
         typedef ::xsd::cxx::tree::traits< T24BaselineGasEquipmentPowerDensity_type, char, ::xsd::cxx::tree::schema_type::double_ > T24BaselineGasEquipmentPowerDensity_traits;
 
         const T24BaselineGasEquipmentPowerDensity_optional&
@@ -441,7 +441,7 @@ namespace schema
         // T24BaselineGasEquipmentScheduleReference
         //
         typedef ::xml_schema::idref T24BaselineGasEquipmentScheduleReference_type;
-        typedef ::xsd::cxx::tree::optional< T24BaselineGasEquipmentScheduleReference_type > T24BaselineGasEquipmentScheduleReference_optional;
+        typedef ::xsd::cxx::tree::optional< T24BaselineGasEquipmentScheduleReference_type, false > T24BaselineGasEquipmentScheduleReference_optional;
         typedef ::xsd::cxx::tree::traits< T24BaselineGasEquipmentScheduleReference_type, char > T24BaselineGasEquipmentScheduleReference_traits;
 
         const T24BaselineGasEquipmentScheduleReference_optional&
@@ -462,7 +462,7 @@ namespace schema
         // T24BaselineReceptaclePowerDensity
         //
         typedef ::xml_schema::double_ T24BaselineReceptaclePowerDensity_type;
-        typedef ::xsd::cxx::tree::optional< T24BaselineReceptaclePowerDensity_type > T24BaselineReceptaclePowerDensity_optional;
+        typedef ::xsd::cxx::tree::optional< T24BaselineReceptaclePowerDensity_type, true > T24BaselineReceptaclePowerDensity_optional;
         typedef ::xsd::cxx::tree::traits< T24BaselineReceptaclePowerDensity_type, char, ::xsd::cxx::tree::schema_type::double_ > T24BaselineReceptaclePowerDensity_traits;
 
         const T24BaselineReceptaclePowerDensity_optional&
@@ -480,7 +480,7 @@ namespace schema
         // T24BaselineReceptacleScheduleReference
         //
         typedef ::xml_schema::idref T24BaselineReceptacleScheduleReference_type;
-        typedef ::xsd::cxx::tree::optional< T24BaselineReceptacleScheduleReference_type > T24BaselineReceptacleScheduleReference_optional;
+        typedef ::xsd::cxx::tree::optional< T24BaselineReceptacleScheduleReference_type, false > T24BaselineReceptacleScheduleReference_optional;
         typedef ::xsd::cxx::tree::traits< T24BaselineReceptacleScheduleReference_type, char > T24BaselineReceptacleScheduleReference_traits;
 
         const T24BaselineReceptacleScheduleReference_optional&
@@ -501,7 +501,7 @@ namespace schema
         // T24CommRefrigEPD
         //
         typedef ::xml_schema::double_ T24CommRefrigEPD_type;
-        typedef ::xsd::cxx::tree::optional< T24CommRefrigEPD_type > T24CommRefrigEPD_optional;
+        typedef ::xsd::cxx::tree::optional< T24CommRefrigEPD_type, true > T24CommRefrigEPD_optional;
         typedef ::xsd::cxx::tree::traits< T24CommRefrigEPD_type, char, ::xsd::cxx::tree::schema_type::double_ > T24CommRefrigEPD_traits;
 
         const T24CommRefrigEPD_optional&
@@ -519,7 +519,7 @@ namespace schema
         // T24CommercialRefrigerationEPDExceptionalCondition
         //
         typedef ::xml_schema::int_ T24CommercialRefrigerationEPDExceptionalCondition_type;
-        typedef ::xsd::cxx::tree::optional< T24CommercialRefrigerationEPDExceptionalCondition_type > T24CommercialRefrigerationEPDExceptionalCondition_optional;
+        typedef ::xsd::cxx::tree::optional< T24CommercialRefrigerationEPDExceptionalCondition_type, true > T24CommercialRefrigerationEPDExceptionalCondition_optional;
         typedef ::xsd::cxx::tree::traits< T24CommercialRefrigerationEPDExceptionalCondition_type, char > T24CommercialRefrigerationEPDExceptionalCondition_traits;
 
         const T24CommercialRefrigerationEPDExceptionalCondition_optional&
@@ -537,7 +537,7 @@ namespace schema
         // T24CommRefrigEqmtSchedRef
         //
         typedef ::xml_schema::idref T24CommRefrigEqmtSchedRef_type;
-        typedef ::xsd::cxx::tree::optional< T24CommRefrigEqmtSchedRef_type > T24CommRefrigEqmtSchedRef_optional;
+        typedef ::xsd::cxx::tree::optional< T24CommRefrigEqmtSchedRef_type, false > T24CommRefrigEqmtSchedRef_optional;
         typedef ::xsd::cxx::tree::traits< T24CommRefrigEqmtSchedRef_type, char > T24CommRefrigEqmtSchedRef_traits;
 
         const T24CommRefrigEqmtSchedRef_optional&
@@ -558,7 +558,7 @@ namespace schema
         // T24CommRefrigLatentFraction
         //
         typedef ::xml_schema::double_ T24CommRefrigLatentFraction_type;
-        typedef ::xsd::cxx::tree::optional< T24CommRefrigLatentFraction_type > T24CommRefrigLatentFraction_optional;
+        typedef ::xsd::cxx::tree::optional< T24CommRefrigLatentFraction_type, true > T24CommRefrigLatentFraction_optional;
         typedef ::xsd::cxx::tree::traits< T24CommRefrigLatentFraction_type, char, ::xsd::cxx::tree::schema_type::double_ > T24CommRefrigLatentFraction_traits;
 
         const T24CommRefrigLatentFraction_optional&
@@ -576,7 +576,7 @@ namespace schema
         // T24CommRefrigLostFraction
         //
         typedef ::xml_schema::double_ T24CommRefrigLostFraction_type;
-        typedef ::xsd::cxx::tree::optional< T24CommRefrigLostFraction_type > T24CommRefrigLostFraction_optional;
+        typedef ::xsd::cxx::tree::optional< T24CommRefrigLostFraction_type, true > T24CommRefrigLostFraction_optional;
         typedef ::xsd::cxx::tree::traits< T24CommRefrigLostFraction_type, char, ::xsd::cxx::tree::schema_type::double_ > T24CommRefrigLostFraction_traits;
 
         const T24CommRefrigLostFraction_optional&
@@ -594,7 +594,7 @@ namespace schema
         // T24CommRefrigRadFraction
         //
         typedef ::xml_schema::double_ T24CommRefrigRadFraction_type;
-        typedef ::xsd::cxx::tree::optional< T24CommRefrigRadFraction_type > T24CommRefrigRadFraction_optional;
+        typedef ::xsd::cxx::tree::optional< T24CommRefrigRadFraction_type, true > T24CommRefrigRadFraction_optional;
         typedef ::xsd::cxx::tree::traits< T24CommRefrigRadFraction_type, char, ::xsd::cxx::tree::schema_type::double_ > T24CommRefrigRadFraction_traits;
 
         const T24CommRefrigRadFraction_optional&
@@ -612,7 +612,7 @@ namespace schema
         // T24EnvelopeStatus
         //
         typedef ::xml_schema::string T24EnvelopeStatus_type;
-        typedef ::xsd::cxx::tree::optional< T24EnvelopeStatus_type > T24EnvelopeStatus_optional;
+        typedef ::xsd::cxx::tree::optional< T24EnvelopeStatus_type, false > T24EnvelopeStatus_optional;
         typedef ::xsd::cxx::tree::traits< T24EnvelopeStatus_type, char > T24EnvelopeStatus_traits;
 
         const T24EnvelopeStatus_optional&
@@ -633,7 +633,7 @@ namespace schema
         // T24ExhaustAirChangesPerHour
         //
         typedef ::xml_schema::double_ T24ExhaustAirChangesPerHour_type;
-        typedef ::xsd::cxx::tree::optional< T24ExhaustAirChangesPerHour_type > T24ExhaustAirChangesPerHour_optional;
+        typedef ::xsd::cxx::tree::optional< T24ExhaustAirChangesPerHour_type, true > T24ExhaustAirChangesPerHour_optional;
         typedef ::xsd::cxx::tree::traits< T24ExhaustAirChangesPerHour_type, char, ::xsd::cxx::tree::schema_type::double_ > T24ExhaustAirChangesPerHour_traits;
 
         const T24ExhaustAirChangesPerHour_optional&
@@ -651,7 +651,7 @@ namespace schema
         // T24ExhaustPerArea
         //
         typedef ::xml_schema::double_ T24ExhaustPerArea_type;
-        typedef ::xsd::cxx::tree::optional< T24ExhaustPerArea_type > T24ExhaustPerArea_optional;
+        typedef ::xsd::cxx::tree::optional< T24ExhaustPerArea_type, true > T24ExhaustPerArea_optional;
         typedef ::xsd::cxx::tree::traits< T24ExhaustPerArea_type, char, ::xsd::cxx::tree::schema_type::double_ > T24ExhaustPerArea_traits;
 
         const T24ExhaustPerArea_optional&
@@ -669,7 +669,7 @@ namespace schema
         // T24ExhaustPerSpace
         //
         typedef ::xml_schema::double_ T24ExhaustPerSpace_type;
-        typedef ::xsd::cxx::tree::optional< T24ExhaustPerSpace_type > T24ExhaustPerSpace_optional;
+        typedef ::xsd::cxx::tree::optional< T24ExhaustPerSpace_type, true > T24ExhaustPerSpace_optional;
         typedef ::xsd::cxx::tree::traits< T24ExhaustPerSpace_type, char, ::xsd::cxx::tree::schema_type::double_ > T24ExhaustPerSpace_traits;
 
         const T24ExhaustPerSpace_optional&
@@ -687,7 +687,7 @@ namespace schema
         // T24IntLightingSpecMethod
         //
         typedef ::xml_schema::string T24IntLightingSpecMethod_type;
-        typedef ::xsd::cxx::tree::optional< T24IntLightingSpecMethod_type > T24IntLightingSpecMethod_optional;
+        typedef ::xsd::cxx::tree::optional< T24IntLightingSpecMethod_type, false > T24IntLightingSpecMethod_optional;
         typedef ::xsd::cxx::tree::traits< T24IntLightingSpecMethod_type, char > T24IntLightingSpecMethod_traits;
 
         const T24IntLightingSpecMethod_optional&
@@ -792,7 +792,7 @@ namespace schema
         // T24LabExhRateType
         //
         typedef ::xml_schema::string T24LabExhRateType_type;
-        typedef ::xsd::cxx::tree::optional< T24LabExhRateType_type > T24LabExhRateType_optional;
+        typedef ::xsd::cxx::tree::optional< T24LabExhRateType_type, false > T24LabExhRateType_optional;
         typedef ::xsd::cxx::tree::traits< T24LabExhRateType_type, char > T24LabExhRateType_traits;
 
         const T24LabExhRateType_optional&
@@ -813,7 +813,7 @@ namespace schema
         // T24LightingStatus
         //
         typedef ::xml_schema::string T24LightingStatus_type;
-        typedef ::xsd::cxx::tree::optional< T24LightingStatus_type > T24LightingStatus_optional;
+        typedef ::xsd::cxx::tree::optional< T24LightingStatus_type, false > T24LightingStatus_optional;
         typedef ::xsd::cxx::tree::traits< T24LightingStatus_type, char > T24LightingStatus_traits;
 
         const T24LightingStatus_optional&
@@ -1023,7 +1023,7 @@ namespace schema
         // T24SkylightRqmtExcep
         //
         typedef ::xml_schema::string T24SkylightRqmtExcep_type;
-        typedef ::xsd::cxx::tree::optional< T24SkylightRqmtExcep_type > T24SkylightRqmtExcep_optional;
+        typedef ::xsd::cxx::tree::optional< T24SkylightRqmtExcep_type, false > T24SkylightRqmtExcep_optional;
         typedef ::xsd::cxx::tree::traits< T24SkylightRqmtExcep_type, char > T24SkylightRqmtExcep_traits;
 
         const T24SkylightRqmtExcep_optional&
@@ -1044,7 +1044,7 @@ namespace schema
         // T24SpaceFunction
         //
         typedef ::xml_schema::string T24SpaceFunction_type;
-        typedef ::xsd::cxx::tree::optional< T24SpaceFunction_type > T24SpaceFunction_optional;
+        typedef ::xsd::cxx::tree::optional< T24SpaceFunction_type, false > T24SpaceFunction_optional;
         typedef ::xsd::cxx::tree::traits< T24SpaceFunction_type, char > T24SpaceFunction_traits;
 
         const T24SpaceFunction_optional&
@@ -1065,7 +1065,7 @@ namespace schema
         // T24ConstructStatus3
         //
         typedef ::xml_schema::string T24ConstructStatus3_type;
-        typedef ::xsd::cxx::tree::optional< T24ConstructStatus3_type > T24ConstructStatus3_optional;
+        typedef ::xsd::cxx::tree::optional< T24ConstructStatus3_type, false > T24ConstructStatus3_optional;
         typedef ::xsd::cxx::tree::traits< T24ConstructStatus3_type, char > T24ConstructStatus3_traits;
 
         const T24ConstructStatus3_optional&

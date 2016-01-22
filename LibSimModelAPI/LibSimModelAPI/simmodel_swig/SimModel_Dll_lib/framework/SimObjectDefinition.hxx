@@ -263,7 +263,7 @@ namespace schema
         // Decomposes
         //
         typedef ::xml_schema::idref Decomposes_type;
-        typedef ::xsd::cxx::tree::optional< Decomposes_type > Decomposes_optional;
+        typedef ::xsd::cxx::tree::optional< Decomposes_type, false > Decomposes_optional;
         typedef ::xsd::cxx::tree::traits< Decomposes_type, char > Decomposes_traits;
 
         const Decomposes_optional&

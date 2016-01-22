@@ -263,7 +263,7 @@ namespace schema
         // Name
         //
         typedef ::xml_schema::string Name_type;
-        typedef ::xsd::cxx::tree::optional< Name_type > Name_optional;
+        typedef ::xsd::cxx::tree::optional< Name_type, false > Name_optional;
         typedef ::xsd::cxx::tree::traits< Name_type, char > Name_traits;
 
         const Name_optional&
@@ -305,7 +305,7 @@ namespace schema
         // Identifier
         //
         typedef ::xml_schema::string Identifier_type;
-        typedef ::xsd::cxx::tree::optional< Identifier_type > Identifier_optional;
+        typedef ::xsd::cxx::tree::optional< Identifier_type, false > Identifier_optional;
         typedef ::xsd::cxx::tree::traits< Identifier_type, char > Identifier_traits;
 
         const Identifier_optional&

@@ -263,7 +263,7 @@ namespace schema
         // Outer
         //
         typedef ::xml_schema::idref Outer_type;
-        typedef ::xsd::cxx::tree::optional< Outer_type > Outer_optional;
+        typedef ::xsd::cxx::tree::optional< Outer_type, false > Outer_optional;
         typedef ::xsd::cxx::tree::traits< Outer_type, char > Outer_traits;
 
         const Outer_optional&

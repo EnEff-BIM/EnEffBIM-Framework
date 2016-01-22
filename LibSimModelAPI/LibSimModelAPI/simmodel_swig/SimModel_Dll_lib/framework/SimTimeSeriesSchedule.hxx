@@ -263,7 +263,7 @@ namespace schema
         // ObjectType
         //
         typedef ::xml_schema::string ObjectType_type;
-        typedef ::xsd::cxx::tree::optional< ObjectType_type > ObjectType_optional;
+        typedef ::xsd::cxx::tree::optional< ObjectType_type, false > ObjectType_optional;
         typedef ::xsd::cxx::tree::traits< ObjectType_type, char > ObjectType_traits;
 
         const ObjectType_optional&
@@ -305,7 +305,7 @@ namespace schema
         // TimeSeriesScheduleType
         //
         typedef ::xml_schema::string TimeSeriesScheduleType_type;
-        typedef ::xsd::cxx::tree::optional< TimeSeriesScheduleType_type > TimeSeriesScheduleType_optional;
+        typedef ::xsd::cxx::tree::optional< TimeSeriesScheduleType_type, false > TimeSeriesScheduleType_optional;
         typedef ::xsd::cxx::tree::traits< TimeSeriesScheduleType_type, char > TimeSeriesScheduleType_traits;
 
         const TimeSeriesScheduleType_optional&
@@ -326,7 +326,7 @@ namespace schema
         // TimeSeries
         //
         typedef ::xml_schema::idref TimeSeries_type;
-        typedef ::xsd::cxx::tree::optional< TimeSeries_type > TimeSeries_optional;
+        typedef ::xsd::cxx::tree::optional< TimeSeries_type, false > TimeSeries_optional;
         typedef ::xsd::cxx::tree::traits< TimeSeries_type, char > TimeSeries_traits;
 
         const TimeSeries_optional&
@@ -347,7 +347,7 @@ namespace schema
         // CalendarYear
         //
         typedef ::xml_schema::int_ CalendarYear_type;
-        typedef ::xsd::cxx::tree::optional< CalendarYear_type > CalendarYear_optional;
+        typedef ::xsd::cxx::tree::optional< CalendarYear_type, true > CalendarYear_optional;
         typedef ::xsd::cxx::tree::traits< CalendarYear_type, char > CalendarYear_traits;
 
         const CalendarYear_optional&
@@ -386,7 +386,7 @@ namespace schema
         // ValueInterval
         //
         typedef ::xml_schema::double_ ValueInterval_type;
-        typedef ::xsd::cxx::tree::optional< ValueInterval_type > ValueInterval_optional;
+        typedef ::xsd::cxx::tree::optional< ValueInterval_type, true > ValueInterval_optional;
         typedef ::xsd::cxx::tree::traits< ValueInterval_type, char, ::xsd::cxx::tree::schema_type::double_ > ValueInterval_traits;
 
         const ValueInterval_optional&

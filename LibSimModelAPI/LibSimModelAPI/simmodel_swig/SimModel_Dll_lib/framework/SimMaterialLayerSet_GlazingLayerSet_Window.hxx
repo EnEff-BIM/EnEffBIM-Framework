@@ -263,7 +263,7 @@ namespace schema
         // SimMatLayerSet_Name
         //
         typedef ::xml_schema::string SimMatLayerSet_Name_type;
-        typedef ::xsd::cxx::tree::optional< SimMatLayerSet_Name_type > SimMatLayerSet_Name_optional;
+        typedef ::xsd::cxx::tree::optional< SimMatLayerSet_Name_type, false > SimMatLayerSet_Name_optional;
         typedef ::xsd::cxx::tree::traits< SimMatLayerSet_Name_type, char > SimMatLayerSet_Name_traits;
 
         const SimMatLayerSet_Name_optional&
@@ -284,7 +284,7 @@ namespace schema
         // SimMatLayerSet_OutsideLayer
         //
         typedef ::xml_schema::idref SimMatLayerSet_OutsideLayer_type;
-        typedef ::xsd::cxx::tree::optional< SimMatLayerSet_OutsideLayer_type > SimMatLayerSet_OutsideLayer_optional;
+        typedef ::xsd::cxx::tree::optional< SimMatLayerSet_OutsideLayer_type, false > SimMatLayerSet_OutsideLayer_optional;
         typedef ::xsd::cxx::tree::traits< SimMatLayerSet_OutsideLayer_type, char > SimMatLayerSet_OutsideLayer_traits;
 
         const SimMatLayerSet_OutsideLayer_optional&
@@ -326,7 +326,7 @@ namespace schema
         // T24AssmContext
         //
         typedef ::xml_schema::string T24AssmContext_type;
-        typedef ::xsd::cxx::tree::optional< T24AssmContext_type > T24AssmContext_optional;
+        typedef ::xsd::cxx::tree::optional< T24AssmContext_type, false > T24AssmContext_optional;
         typedef ::xsd::cxx::tree::traits< T24AssmContext_type, char > T24AssmContext_traits;
 
         const T24AssmContext_optional&
@@ -347,7 +347,7 @@ namespace schema
         // T24FenestraCertMethod
         //
         typedef ::xml_schema::string T24FenestraCertMethod_type;
-        typedef ::xsd::cxx::tree::optional< T24FenestraCertMethod_type > T24FenestraCertMethod_optional;
+        typedef ::xsd::cxx::tree::optional< T24FenestraCertMethod_type, false > T24FenestraCertMethod_optional;
         typedef ::xsd::cxx::tree::traits< T24FenestraCertMethod_type, char > T24FenestraCertMethod_traits;
 
         const T24FenestraCertMethod_optional&
@@ -368,7 +368,7 @@ namespace schema
         // T24Diffusing
         //
         typedef ::xml_schema::int_ T24Diffusing_type;
-        typedef ::xsd::cxx::tree::optional< T24Diffusing_type > T24Diffusing_optional;
+        typedef ::xsd::cxx::tree::optional< T24Diffusing_type, true > T24Diffusing_optional;
         typedef ::xsd::cxx::tree::traits< T24Diffusing_type, char > T24Diffusing_traits;
 
         const T24Diffusing_optional&
@@ -386,7 +386,7 @@ namespace schema
         // T24FenestraFrame
         //
         typedef ::xml_schema::string T24FenestraFrame_type;
-        typedef ::xsd::cxx::tree::optional< T24FenestraFrame_type > T24FenestraFrame_optional;
+        typedef ::xsd::cxx::tree::optional< T24FenestraFrame_type, false > T24FenestraFrame_optional;
         typedef ::xsd::cxx::tree::traits< T24FenestraFrame_type, char > T24FenestraFrame_traits;
 
         const T24FenestraFrame_optional&
@@ -407,7 +407,7 @@ namespace schema
         // T24FenestraPanes
         //
         typedef ::xml_schema::string T24FenestraPanes_type;
-        typedef ::xsd::cxx::tree::optional< T24FenestraPanes_type > T24FenestraPanes_optional;
+        typedef ::xsd::cxx::tree::optional< T24FenestraPanes_type, false > T24FenestraPanes_optional;
         typedef ::xsd::cxx::tree::traits< T24FenestraPanes_type, char > T24FenestraPanes_traits;
 
         const T24FenestraPanes_optional&
@@ -428,7 +428,7 @@ namespace schema
         // T24FenestraProdType
         //
         typedef ::xml_schema::string T24FenestraProdType_type;
-        typedef ::xsd::cxx::tree::optional< T24FenestraProdType_type > T24FenestraProdType_optional;
+        typedef ::xsd::cxx::tree::optional< T24FenestraProdType_type, false > T24FenestraProdType_optional;
         typedef ::xsd::cxx::tree::traits< T24FenestraProdType_type, char > T24FenestraProdType_traits;
 
         const T24FenestraProdType_optional&
@@ -449,7 +449,7 @@ namespace schema
         // T24FenestraTint
         //
         typedef ::xml_schema::string T24FenestraTint_type;
-        typedef ::xsd::cxx::tree::optional< T24FenestraTint_type > T24FenestraTint_optional;
+        typedef ::xsd::cxx::tree::optional< T24FenestraTint_type, false > T24FenestraTint_optional;
         typedef ::xsd::cxx::tree::traits< T24FenestraTint_type, char > T24FenestraTint_traits;
 
         const T24FenestraTint_optional&
@@ -470,7 +470,7 @@ namespace schema
         // GreenhouseGardenWindow
         //
         typedef ::xml_schema::int_ GreenhouseGardenWindow_type;
-        typedef ::xsd::cxx::tree::optional< GreenhouseGardenWindow_type > GreenhouseGardenWindow_optional;
+        typedef ::xsd::cxx::tree::optional< GreenhouseGardenWindow_type, true > GreenhouseGardenWindow_optional;
         typedef ::xsd::cxx::tree::traits< GreenhouseGardenWindow_type, char > GreenhouseGardenWindow_traits;
 
         const GreenhouseGardenWindow_optional&
@@ -488,7 +488,7 @@ namespace schema
         // T24SHGC
         //
         typedef ::xml_schema::double_ T24SHGC_type;
-        typedef ::xsd::cxx::tree::optional< T24SHGC_type > T24SHGC_optional;
+        typedef ::xsd::cxx::tree::optional< T24SHGC_type, true > T24SHGC_optional;
         typedef ::xsd::cxx::tree::traits< T24SHGC_type, char, ::xsd::cxx::tree::schema_type::double_ > T24SHGC_traits;
 
         const T24SHGC_optional&
@@ -506,7 +506,7 @@ namespace schema
         // T24SHGCCenterOfGlass
         //
         typedef ::xml_schema::double_ T24SHGCCenterOfGlass_type;
-        typedef ::xsd::cxx::tree::optional< T24SHGCCenterOfGlass_type > T24SHGCCenterOfGlass_optional;
+        typedef ::xsd::cxx::tree::optional< T24SHGCCenterOfGlass_type, true > T24SHGCCenterOfGlass_optional;
         typedef ::xsd::cxx::tree::traits< T24SHGCCenterOfGlass_type, char, ::xsd::cxx::tree::schema_type::double_ > T24SHGCCenterOfGlass_traits;
 
         const T24SHGCCenterOfGlass_optional&
@@ -524,7 +524,7 @@ namespace schema
         // T24FenestraSkyltCurb
         //
         typedef ::xml_schema::string T24FenestraSkyltCurb_type;
-        typedef ::xsd::cxx::tree::optional< T24FenestraSkyltCurb_type > T24FenestraSkyltCurb_optional;
+        typedef ::xsd::cxx::tree::optional< T24FenestraSkyltCurb_type, false > T24FenestraSkyltCurb_optional;
         typedef ::xsd::cxx::tree::traits< T24FenestraSkyltCurb_type, char > T24FenestraSkyltCurb_traits;
 
         const T24FenestraSkyltCurb_optional&
@@ -545,7 +545,7 @@ namespace schema
         // T24FenestraSkyltGlaze
         //
         typedef ::xml_schema::string T24FenestraSkyltGlaze_type;
-        typedef ::xsd::cxx::tree::optional< T24FenestraSkyltGlaze_type > T24FenestraSkyltGlaze_optional;
+        typedef ::xsd::cxx::tree::optional< T24FenestraSkyltGlaze_type, false > T24FenestraSkyltGlaze_optional;
         typedef ::xsd::cxx::tree::traits< T24FenestraSkyltGlaze_type, char > T24FenestraSkyltGlaze_traits;
 
         const T24FenestraSkyltGlaze_optional&

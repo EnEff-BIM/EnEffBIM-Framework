@@ -409,13 +409,15 @@ namespace schema
         this->SourceLibraryEntryRef_.set (x);
       }
 
-      const SimRoot::RefId_type& SimRoot::
+      //const SimRoot::RefId_type& SimRoot::
+	  const std::string SimRoot::
       RefId () const
       {
         return this->RefId_.get ();
       }
 
-      SimRoot::RefId_type& SimRoot::
+      //SimRoot::RefId_type& SimRoot::
+	  std::string SimRoot::
       RefId ()
       {
         return this->RefId_.get ();

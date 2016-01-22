@@ -25,6 +25,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="SimClassification_ClassificationSystem_Default.i" />
+    <CustomBuild Include="SimClassification_ClassificationSystem_Default.i" />
   </ItemGroup>
 </Project>

@@ -263,7 +263,7 @@ namespace schema
         // RepresentationContext
         //
         typedef ::xml_schema::idref RepresentationContext_type;
-        typedef ::xsd::cxx::tree::optional< RepresentationContext_type > RepresentationContext_optional;
+        typedef ::xsd::cxx::tree::optional< RepresentationContext_type, false > RepresentationContext_optional;
         typedef ::xsd::cxx::tree::traits< RepresentationContext_type, char > RepresentationContext_traits;
 
         const RepresentationContext_optional&
@@ -284,7 +284,7 @@ namespace schema
         // RepresentationIdentifier
         //
         typedef ::xml_schema::string RepresentationIdentifier_type;
-        typedef ::xsd::cxx::tree::optional< RepresentationIdentifier_type > RepresentationIdentifier_optional;
+        typedef ::xsd::cxx::tree::optional< RepresentationIdentifier_type, false > RepresentationIdentifier_optional;
         typedef ::xsd::cxx::tree::traits< RepresentationIdentifier_type, char > RepresentationIdentifier_traits;
 
         const RepresentationIdentifier_optional&
@@ -305,7 +305,7 @@ namespace schema
         // RepresentationType
         //
         typedef ::xml_schema::string RepresentationType_type;
-        typedef ::xsd::cxx::tree::optional< RepresentationType_type > RepresentationType_optional;
+        typedef ::xsd::cxx::tree::optional< RepresentationType_type, false > RepresentationType_optional;
         typedef ::xsd::cxx::tree::traits< RepresentationType_type, char > RepresentationType_traits;
 
         const RepresentationType_optional&

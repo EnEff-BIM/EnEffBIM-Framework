@@ -263,7 +263,7 @@ namespace schema
         // Purpose
         //
         typedef ::xml_schema::string Purpose_type;
-        typedef ::xsd::cxx::tree::optional< Purpose_type > Purpose_optional;
+        typedef ::xsd::cxx::tree::optional< Purpose_type, false > Purpose_optional;
         typedef ::xsd::cxx::tree::traits< Purpose_type, char > Purpose_traits;
 
         const Purpose_optional&
@@ -284,7 +284,7 @@ namespace schema
         // UserDefinedPurpose
         //
         typedef ::xml_schema::string UserDefinedPurpose_type;
-        typedef ::xsd::cxx::tree::optional< UserDefinedPurpose_type > UserDefinedPurpose_optional;
+        typedef ::xsd::cxx::tree::optional< UserDefinedPurpose_type, false > UserDefinedPurpose_optional;
         typedef ::xsd::cxx::tree::traits< UserDefinedPurpose_type, char > UserDefinedPurpose_traits;
 
         const UserDefinedPurpose_optional&

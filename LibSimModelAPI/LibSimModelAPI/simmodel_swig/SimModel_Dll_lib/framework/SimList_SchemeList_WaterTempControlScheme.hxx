@@ -263,7 +263,7 @@ namespace schema
         // SimList_ControllerSchemeListName
         //
         typedef ::xml_schema::string SimList_ControllerSchemeListName_type;
-        typedef ::xsd::cxx::tree::optional< SimList_ControllerSchemeListName_type > SimList_ControllerSchemeListName_optional;
+        typedef ::xsd::cxx::tree::optional< SimList_ControllerSchemeListName_type, false > SimList_ControllerSchemeListName_optional;
         typedef ::xsd::cxx::tree::traits< SimList_ControllerSchemeListName_type, char > SimList_ControllerSchemeListName_traits;
 
         const SimList_ControllerSchemeListName_optional&

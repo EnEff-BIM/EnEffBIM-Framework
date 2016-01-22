@@ -25,8 +25,6 @@ namespace xsd
     {
 		//5. class method				
 		%template(SimBldgSiteParams_BuildingSite_Default_sequence) sequence<::schema::simxml::ResourcesGeneral::SimBldgSiteParams_BuildingSite_Default, false>;
-		
-		// property method
 	}
   }
 }

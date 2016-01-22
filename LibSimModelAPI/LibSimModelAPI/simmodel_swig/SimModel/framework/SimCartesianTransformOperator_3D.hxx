@@ -263,7 +263,7 @@ namespace schema
         // Axis3
         //
         typedef ::xml_schema::idref Axis3_type;
-        typedef ::xsd::cxx::tree::optional< Axis3_type > Axis3_optional;
+        typedef ::xsd::cxx::tree::optional< Axis3_type, false > Axis3_optional;
         typedef ::xsd::cxx::tree::traits< Axis3_type, char > Axis3_traits;
 
         const Axis3_optional&

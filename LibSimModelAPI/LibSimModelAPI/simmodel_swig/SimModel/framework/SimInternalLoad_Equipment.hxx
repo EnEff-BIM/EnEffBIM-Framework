@@ -263,7 +263,7 @@ namespace schema
         // SimInternalLoad_Name
         //
         typedef ::xml_schema::string SimInternalLoad_Name_type;
-        typedef ::xsd::cxx::tree::optional< SimInternalLoad_Name_type > SimInternalLoad_Name_optional;
+        typedef ::xsd::cxx::tree::optional< SimInternalLoad_Name_type, false > SimInternalLoad_Name_optional;
         typedef ::xsd::cxx::tree::traits< SimInternalLoad_Name_type, char > SimInternalLoad_Name_traits;
 
         const SimInternalLoad_Name_optional&
@@ -284,7 +284,7 @@ namespace schema
         // SimInternalLoad_FracRadiant
         //
         typedef ::xml_schema::double_ SimInternalLoad_FracRadiant_type;
-        typedef ::xsd::cxx::tree::optional< SimInternalLoad_FracRadiant_type > SimInternalLoad_FracRadiant_optional;
+        typedef ::xsd::cxx::tree::optional< SimInternalLoad_FracRadiant_type, true > SimInternalLoad_FracRadiant_optional;
         typedef ::xsd::cxx::tree::traits< SimInternalLoad_FracRadiant_type, char, ::xsd::cxx::tree::schema_type::double_ > SimInternalLoad_FracRadiant_traits;
 
         const SimInternalLoad_FracRadiant_optional&
@@ -302,7 +302,7 @@ namespace schema
         // SimInternalLoad_SchedName
         //
         typedef ::xml_schema::idref SimInternalLoad_SchedName_type;
-        typedef ::xsd::cxx::tree::optional< SimInternalLoad_SchedName_type > SimInternalLoad_SchedName_optional;
+        typedef ::xsd::cxx::tree::optional< SimInternalLoad_SchedName_type, false > SimInternalLoad_SchedName_optional;
         typedef ::xsd::cxx::tree::traits< SimInternalLoad_SchedName_type, char > SimInternalLoad_SchedName_traits;
 
         const SimInternalLoad_SchedName_optional&

@@ -25,6 +25,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="SimNode_HotWaterFlowPort_Water_In.i" />
+    <CustomBuild Include="SimNode_HotWaterFlowPort_Water_In.i" />
   </ItemGroup>
 </Project>

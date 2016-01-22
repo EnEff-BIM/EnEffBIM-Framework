@@ -263,7 +263,7 @@ namespace schema
         // SimSolarShade_Name
         //
         typedef ::xml_schema::string SimSolarShade_Name_type;
-        typedef ::xsd::cxx::tree::optional< SimSolarShade_Name_type > SimSolarShade_Name_optional;
+        typedef ::xsd::cxx::tree::optional< SimSolarShade_Name_type, false > SimSolarShade_Name_optional;
         typedef ::xsd::cxx::tree::traits< SimSolarShade_Name_type, char > SimSolarShade_Name_traits;
 
         const SimSolarShade_Name_optional&

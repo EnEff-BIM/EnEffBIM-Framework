@@ -263,7 +263,7 @@ namespace schema
         // DefaultforLibraryType
         //
         typedef ::xml_schema::string DefaultforLibraryType_type;
-        typedef ::xsd::cxx::tree::optional< DefaultforLibraryType_type > DefaultforLibraryType_optional;
+        typedef ::xsd::cxx::tree::optional< DefaultforLibraryType_type, false > DefaultforLibraryType_optional;
         typedef ::xsd::cxx::tree::traits< DefaultforLibraryType_type, char > DefaultforLibraryType_traits;
 
         const DefaultforLibraryType_optional&
@@ -284,7 +284,7 @@ namespace schema
         // DefaultPreferenceIndex
         //
         typedef ::xml_schema::int_ DefaultPreferenceIndex_type;
-        typedef ::xsd::cxx::tree::optional< DefaultPreferenceIndex_type > DefaultPreferenceIndex_optional;
+        typedef ::xsd::cxx::tree::optional< DefaultPreferenceIndex_type, true > DefaultPreferenceIndex_optional;
         typedef ::xsd::cxx::tree::traits< DefaultPreferenceIndex_type, char > DefaultPreferenceIndex_traits;
 
         const DefaultPreferenceIndex_optional&
@@ -302,7 +302,7 @@ namespace schema
         // LibraryLocation
         //
         typedef ::xml_schema::string LibraryLocation_type;
-        typedef ::xsd::cxx::tree::optional< LibraryLocation_type > LibraryLocation_optional;
+        typedef ::xsd::cxx::tree::optional< LibraryLocation_type, false > LibraryLocation_optional;
         typedef ::xsd::cxx::tree::traits< LibraryLocation_type, char > LibraryLocation_traits;
 
         const LibraryLocation_optional&
@@ -323,7 +323,7 @@ namespace schema
         // LibraryName
         //
         typedef ::xml_schema::string LibraryName_type;
-        typedef ::xsd::cxx::tree::optional< LibraryName_type > LibraryName_optional;
+        typedef ::xsd::cxx::tree::optional< LibraryName_type, false > LibraryName_optional;
         typedef ::xsd::cxx::tree::traits< LibraryName_type, char > LibraryName_traits;
 
         const LibraryName_optional&

@@ -284,7 +284,7 @@ namespace schema
         // _3dLength
         //
         typedef ::xml_schema::double_ _3dLength_type;
-        typedef ::xsd::cxx::tree::optional< _3dLength_type > _3dLength_optional;
+        typedef ::xsd::cxx::tree::optional< _3dLength_type, true > _3dLength_optional;
         typedef ::xsd::cxx::tree::traits< _3dLength_type, char, ::xsd::cxx::tree::schema_type::double_ > _3dLength_traits;
 
         const _3dLength_optional&
@@ -302,7 +302,7 @@ namespace schema
         // _3dWidth
         //
         typedef ::xml_schema::double_ _3dWidth_type;
-        typedef ::xsd::cxx::tree::optional< _3dWidth_type > _3dWidth_optional;
+        typedef ::xsd::cxx::tree::optional< _3dWidth_type, true > _3dWidth_optional;
         typedef ::xsd::cxx::tree::traits< _3dWidth_type, char, ::xsd::cxx::tree::schema_type::double_ > _3dWidth_traits;
 
         const _3dWidth_optional&
@@ -320,7 +320,7 @@ namespace schema
         // _3dHeight
         //
         typedef ::xml_schema::double_ _3dHeight_type;
-        typedef ::xsd::cxx::tree::optional< _3dHeight_type > _3dHeight_optional;
+        typedef ::xsd::cxx::tree::optional< _3dHeight_type, true > _3dHeight_optional;
         typedef ::xsd::cxx::tree::traits< _3dHeight_type, char, ::xsd::cxx::tree::schema_type::double_ > _3dHeight_traits;
 
         const _3dHeight_optional&

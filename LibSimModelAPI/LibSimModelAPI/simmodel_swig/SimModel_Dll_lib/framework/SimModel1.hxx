@@ -51927,7 +51927,7 @@ namespace schema
         // SimModelVersion
         //
         typedef ::xml_schema::string SimModelVersion_type;
-        typedef ::xsd::cxx::tree::optional< SimModelVersion_type > SimModelVersion_optional;
+        typedef ::xsd::cxx::tree::optional< SimModelVersion_type, false > SimModelVersion_optional;
         typedef ::xsd::cxx::tree::traits< SimModelVersion_type, char > SimModelVersion_traits;
 
         const SimModelVersion_optional&
@@ -51948,7 +51948,7 @@ namespace schema
         // SimModelSchemaVersion
         //
         typedef ::xml_schema::string SimModelSchemaVersion_type;
-        typedef ::xsd::cxx::tree::optional< SimModelSchemaVersion_type > SimModelSchemaVersion_optional;
+        typedef ::xsd::cxx::tree::optional< SimModelSchemaVersion_type, false > SimModelSchemaVersion_optional;
         typedef ::xsd::cxx::tree::traits< SimModelSchemaVersion_type, char > SimModelSchemaVersion_traits;
 
         const SimModelSchemaVersion_optional&
@@ -51969,7 +51969,7 @@ namespace schema
         // SimModelUnitsVersion
         //
         typedef ::xml_schema::string SimModelUnitsVersion_type;
-        typedef ::xsd::cxx::tree::optional< SimModelUnitsVersion_type > SimModelUnitsVersion_optional;
+        typedef ::xsd::cxx::tree::optional< SimModelUnitsVersion_type, false > SimModelUnitsVersion_optional;
         typedef ::xsd::cxx::tree::traits< SimModelUnitsVersion_type, char > SimModelUnitsVersion_traits;
 
         const SimModelUnitsVersion_optional&
@@ -51990,7 +51990,7 @@ namespace schema
         // SimModelUnitDefaultsVersion
         //
         typedef ::xml_schema::string SimModelUnitDefaultsVersion_type;
-        typedef ::xsd::cxx::tree::optional< SimModelUnitDefaultsVersion_type > SimModelUnitDefaultsVersion_optional;
+        typedef ::xsd::cxx::tree::optional< SimModelUnitDefaultsVersion_type, false > SimModelUnitDefaultsVersion_optional;
         typedef ::xsd::cxx::tree::traits< SimModelUnitDefaultsVersion_type, char > SimModelUnitDefaultsVersion_traits;
 
         const SimModelUnitDefaultsVersion_optional&
@@ -52011,7 +52011,7 @@ namespace schema
         // SimModelSchemaIDKey
         //
         typedef ::xml_schema::string SimModelSchemaIDKey_type;
-        typedef ::xsd::cxx::tree::optional< SimModelSchemaIDKey_type > SimModelSchemaIDKey_optional;
+        typedef ::xsd::cxx::tree::optional< SimModelSchemaIDKey_type, false > SimModelSchemaIDKey_optional;
         typedef ::xsd::cxx::tree::traits< SimModelSchemaIDKey_type, char > SimModelSchemaIDKey_traits;
 
         const SimModelSchemaIDKey_optional&

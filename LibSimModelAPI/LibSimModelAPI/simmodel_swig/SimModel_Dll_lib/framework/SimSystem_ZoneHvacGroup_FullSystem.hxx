@@ -263,7 +263,7 @@ namespace schema
         // T24AcceptTestReq
         //
         typedef ::xml_schema::int_ T24AcceptTestReq_type;
-        typedef ::xsd::cxx::tree::optional< T24AcceptTestReq_type > T24AcceptTestReq_optional;
+        typedef ::xsd::cxx::tree::optional< T24AcceptTestReq_type, true > T24AcceptTestReq_optional;
         typedef ::xsd::cxx::tree::traits< T24AcceptTestReq_type, char > T24AcceptTestReq_traits;
 
         const T24AcceptTestReq_optional&
@@ -281,7 +281,7 @@ namespace schema
         // T24ExhCntrlMeth
         //
         typedef ::xml_schema::string T24ExhCntrlMeth_type;
-        typedef ::xsd::cxx::tree::optional< T24ExhCntrlMeth_type > T24ExhCntrlMeth_optional;
+        typedef ::xsd::cxx::tree::optional< T24ExhCntrlMeth_type, false > T24ExhCntrlMeth_optional;
         typedef ::xsd::cxx::tree::traits< T24ExhCntrlMeth_type, char > T24ExhCntrlMeth_traits;
 
         const T24ExhCntrlMeth_optional&
@@ -302,7 +302,7 @@ namespace schema
         // T24ExhSysType
         //
         typedef ::xml_schema::string T24ExhSysType_type;
-        typedef ::xsd::cxx::tree::optional< T24ExhSysType_type > T24ExhSysType_optional;
+        typedef ::xsd::cxx::tree::optional< T24ExhSysType_type, false > T24ExhSysType_optional;
         typedef ::xsd::cxx::tree::traits< T24ExhSysType_type, char > T24ExhSysType_traits;
 
         const T24ExhSysType_optional&
@@ -323,7 +323,7 @@ namespace schema
         // T24Mch03A
         //
         typedef ::xml_schema::int_ T24Mch03A_type;
-        typedef ::xsd::cxx::tree::optional< T24Mch03A_type > T24Mch03A_optional;
+        typedef ::xsd::cxx::tree::optional< T24Mch03A_type, true > T24Mch03A_optional;
         typedef ::xsd::cxx::tree::traits< T24Mch03A_type, char > T24Mch03A_traits;
 
         const T24Mch03A_optional&
@@ -341,7 +341,7 @@ namespace schema
         // T24Mch04A
         //
         typedef ::xml_schema::int_ T24Mch04A_type;
-        typedef ::xsd::cxx::tree::optional< T24Mch04A_type > T24Mch04A_optional;
+        typedef ::xsd::cxx::tree::optional< T24Mch04A_type, true > T24Mch04A_optional;
         typedef ::xsd::cxx::tree::traits< T24Mch04A_type, char > T24Mch04A_traits;
 
         const T24Mch04A_optional&
@@ -359,7 +359,7 @@ namespace schema
         // T24Mch02A
         //
         typedef ::xml_schema::int_ T24Mch02A_type;
-        typedef ::xsd::cxx::tree::optional< T24Mch02A_type > T24Mch02A_optional;
+        typedef ::xsd::cxx::tree::optional< T24Mch02A_type, true > T24Mch02A_optional;
         typedef ::xsd::cxx::tree::traits< T24Mch02A_type, char > T24Mch02A_traits;
 
         const T24Mch02A_optional&
@@ -377,7 +377,7 @@ namespace schema
         // T24Mch09A
         //
         typedef ::xml_schema::int_ T24Mch09A_type;
-        typedef ::xsd::cxx::tree::optional< T24Mch09A_type > T24Mch09A_optional;
+        typedef ::xsd::cxx::tree::optional< T24Mch09A_type, true > T24Mch09A_optional;
         typedef ::xsd::cxx::tree::traits< T24Mch09A_type, char > T24Mch09A_traits;
 
         const T24Mch09A_optional&
@@ -395,7 +395,7 @@ namespace schema
         // T24Mch15A
         //
         typedef ::xml_schema::int_ T24Mch15A_type;
-        typedef ::xsd::cxx::tree::optional< T24Mch15A_type > T24Mch15A_optional;
+        typedef ::xsd::cxx::tree::optional< T24Mch15A_type, true > T24Mch15A_optional;
         typedef ::xsd::cxx::tree::traits< T24Mch15A_type, char > T24Mch15A_traits;
 
         const T24Mch15A_optional&
@@ -413,7 +413,7 @@ namespace schema
         // T24Mch17A
         //
         typedef ::xml_schema::int_ T24Mch17A_type;
-        typedef ::xsd::cxx::tree::optional< T24Mch17A_type > T24Mch17A_optional;
+        typedef ::xsd::cxx::tree::optional< T24Mch17A_type, true > T24Mch17A_optional;
         typedef ::xsd::cxx::tree::traits< T24Mch17A_type, char > T24Mch17A_traits;
 
         const T24Mch17A_optional&
@@ -431,7 +431,7 @@ namespace schema
         // T24ConstructStatus3
         //
         typedef ::xml_schema::string T24ConstructStatus3_type;
-        typedef ::xsd::cxx::tree::optional< T24ConstructStatus3_type > T24ConstructStatus3_optional;
+        typedef ::xsd::cxx::tree::optional< T24ConstructStatus3_type, false > T24ConstructStatus3_optional;
         typedef ::xsd::cxx::tree::traits< T24ConstructStatus3_type, char > T24ConstructStatus3_traits;
 
         const T24ConstructStatus3_optional&

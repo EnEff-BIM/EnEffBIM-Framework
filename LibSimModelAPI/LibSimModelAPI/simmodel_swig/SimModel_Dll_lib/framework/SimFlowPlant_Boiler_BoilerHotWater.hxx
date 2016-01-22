@@ -263,7 +263,7 @@ namespace schema
         // SimFlowPlant_Name
         //
         typedef ::xml_schema::string SimFlowPlant_Name_type;
-        typedef ::xsd::cxx::tree::optional< SimFlowPlant_Name_type > SimFlowPlant_Name_optional;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_Name_type, false > SimFlowPlant_Name_optional;
         typedef ::xsd::cxx::tree::traits< SimFlowPlant_Name_type, char > SimFlowPlant_Name_traits;
 
         const SimFlowPlant_Name_optional&
@@ -284,7 +284,7 @@ namespace schema
         // SimFlowPlant_FuelType
         //
         typedef ::xml_schema::string SimFlowPlant_FuelType_type;
-        typedef ::xsd::cxx::tree::optional< SimFlowPlant_FuelType_type > SimFlowPlant_FuelType_optional;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_FuelType_type, false > SimFlowPlant_FuelType_optional;
         typedef ::xsd::cxx::tree::traits< SimFlowPlant_FuelType_type, char > SimFlowPlant_FuelType_traits;
 
         const SimFlowPlant_FuelType_optional&
@@ -305,7 +305,7 @@ namespace schema
         // SimFlowPlant_NomCap
         //
         typedef ::xml_schema::double_ SimFlowPlant_NomCap_type;
-        typedef ::xsd::cxx::tree::optional< SimFlowPlant_NomCap_type > SimFlowPlant_NomCap_optional;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_NomCap_type, true > SimFlowPlant_NomCap_optional;
         typedef ::xsd::cxx::tree::traits< SimFlowPlant_NomCap_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_NomCap_traits;
 
         const SimFlowPlant_NomCap_optional&
@@ -323,7 +323,7 @@ namespace schema
         // SimFlowPlant_NomThermalEff
         //
         typedef ::xml_schema::double_ SimFlowPlant_NomThermalEff_type;
-        typedef ::xsd::cxx::tree::optional< SimFlowPlant_NomThermalEff_type > SimFlowPlant_NomThermalEff_optional;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_NomThermalEff_type, true > SimFlowPlant_NomThermalEff_optional;
         typedef ::xsd::cxx::tree::traits< SimFlowPlant_NomThermalEff_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_NomThermalEff_traits;
 
         const SimFlowPlant_NomThermalEff_optional&
@@ -341,7 +341,7 @@ namespace schema
         // SimFlowPlant_EfficiencyCurveTempEvaluationVar
         //
         typedef ::xml_schema::string SimFlowPlant_EfficiencyCurveTempEvaluationVar_type;
-        typedef ::xsd::cxx::tree::optional< SimFlowPlant_EfficiencyCurveTempEvaluationVar_type > SimFlowPlant_EfficiencyCurveTempEvaluationVar_optional;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_EfficiencyCurveTempEvaluationVar_type, false > SimFlowPlant_EfficiencyCurveTempEvaluationVar_optional;
         typedef ::xsd::cxx::tree::traits< SimFlowPlant_EfficiencyCurveTempEvaluationVar_type, char > SimFlowPlant_EfficiencyCurveTempEvaluationVar_traits;
 
         const SimFlowPlant_EfficiencyCurveTempEvaluationVar_optional&
@@ -362,7 +362,7 @@ namespace schema
         // SimFlowPlant_NrmlizedBoilerEffCurveName
         //
         typedef ::xml_schema::idref SimFlowPlant_NrmlizedBoilerEffCurveName_type;
-        typedef ::xsd::cxx::tree::optional< SimFlowPlant_NrmlizedBoilerEffCurveName_type > SimFlowPlant_NrmlizedBoilerEffCurveName_optional;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_NrmlizedBoilerEffCurveName_type, false > SimFlowPlant_NrmlizedBoilerEffCurveName_optional;
         typedef ::xsd::cxx::tree::traits< SimFlowPlant_NrmlizedBoilerEffCurveName_type, char > SimFlowPlant_NrmlizedBoilerEffCurveName_traits;
 
         const SimFlowPlant_NrmlizedBoilerEffCurveName_optional&
@@ -383,7 +383,7 @@ namespace schema
         // SimFlowPlant_DesignWaterOutletTemp
         //
         typedef ::xml_schema::double_ SimFlowPlant_DesignWaterOutletTemp_type;
-        typedef ::xsd::cxx::tree::optional< SimFlowPlant_DesignWaterOutletTemp_type > SimFlowPlant_DesignWaterOutletTemp_optional;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_DesignWaterOutletTemp_type, true > SimFlowPlant_DesignWaterOutletTemp_optional;
         typedef ::xsd::cxx::tree::traits< SimFlowPlant_DesignWaterOutletTemp_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_DesignWaterOutletTemp_traits;
 
         const SimFlowPlant_DesignWaterOutletTemp_optional&
@@ -401,7 +401,7 @@ namespace schema
         // SimFlowPlant_DesignWaterFlowRate
         //
         typedef ::xml_schema::double_ SimFlowPlant_DesignWaterFlowRate_type;
-        typedef ::xsd::cxx::tree::optional< SimFlowPlant_DesignWaterFlowRate_type > SimFlowPlant_DesignWaterFlowRate_optional;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_DesignWaterFlowRate_type, true > SimFlowPlant_DesignWaterFlowRate_optional;
         typedef ::xsd::cxx::tree::traits< SimFlowPlant_DesignWaterFlowRate_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_DesignWaterFlowRate_traits;
 
         const SimFlowPlant_DesignWaterFlowRate_optional&
@@ -419,7 +419,7 @@ namespace schema
         // SimFlowPlant_MinPartLoadRatio
         //
         typedef ::xml_schema::double_ SimFlowPlant_MinPartLoadRatio_type;
-        typedef ::xsd::cxx::tree::optional< SimFlowPlant_MinPartLoadRatio_type > SimFlowPlant_MinPartLoadRatio_optional;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_MinPartLoadRatio_type, true > SimFlowPlant_MinPartLoadRatio_optional;
         typedef ::xsd::cxx::tree::traits< SimFlowPlant_MinPartLoadRatio_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_MinPartLoadRatio_traits;
 
         const SimFlowPlant_MinPartLoadRatio_optional&
@@ -437,7 +437,7 @@ namespace schema
         // SimFlowPlant_MaxPartLoadRatio
         //
         typedef ::xml_schema::double_ SimFlowPlant_MaxPartLoadRatio_type;
-        typedef ::xsd::cxx::tree::optional< SimFlowPlant_MaxPartLoadRatio_type > SimFlowPlant_MaxPartLoadRatio_optional;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_MaxPartLoadRatio_type, true > SimFlowPlant_MaxPartLoadRatio_optional;
         typedef ::xsd::cxx::tree::traits< SimFlowPlant_MaxPartLoadRatio_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_MaxPartLoadRatio_traits;
 
         const SimFlowPlant_MaxPartLoadRatio_optional&
@@ -455,7 +455,7 @@ namespace schema
         // SimFlowPlant_OptimumPartLoadRatio
         //
         typedef ::xml_schema::double_ SimFlowPlant_OptimumPartLoadRatio_type;
-        typedef ::xsd::cxx::tree::optional< SimFlowPlant_OptimumPartLoadRatio_type > SimFlowPlant_OptimumPartLoadRatio_optional;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_OptimumPartLoadRatio_type, true > SimFlowPlant_OptimumPartLoadRatio_optional;
         typedef ::xsd::cxx::tree::traits< SimFlowPlant_OptimumPartLoadRatio_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_OptimumPartLoadRatio_traits;
 
         const SimFlowPlant_OptimumPartLoadRatio_optional&
@@ -473,7 +473,7 @@ namespace schema
         // SimFlowPlant_BoilerWaterInletNodeName
         //
         typedef ::xml_schema::string SimFlowPlant_BoilerWaterInletNodeName_type;
-        typedef ::xsd::cxx::tree::optional< SimFlowPlant_BoilerWaterInletNodeName_type > SimFlowPlant_BoilerWaterInletNodeName_optional;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_BoilerWaterInletNodeName_type, false > SimFlowPlant_BoilerWaterInletNodeName_optional;
         typedef ::xsd::cxx::tree::traits< SimFlowPlant_BoilerWaterInletNodeName_type, char > SimFlowPlant_BoilerWaterInletNodeName_traits;
 
         const SimFlowPlant_BoilerWaterInletNodeName_optional&
@@ -494,7 +494,7 @@ namespace schema
         // SimFlowPlant_BoilerWaterOutletNodeName
         //
         typedef ::xml_schema::string SimFlowPlant_BoilerWaterOutletNodeName_type;
-        typedef ::xsd::cxx::tree::optional< SimFlowPlant_BoilerWaterOutletNodeName_type > SimFlowPlant_BoilerWaterOutletNodeName_optional;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_BoilerWaterOutletNodeName_type, false > SimFlowPlant_BoilerWaterOutletNodeName_optional;
         typedef ::xsd::cxx::tree::traits< SimFlowPlant_BoilerWaterOutletNodeName_type, char > SimFlowPlant_BoilerWaterOutletNodeName_traits;
 
         const SimFlowPlant_BoilerWaterOutletNodeName_optional&
@@ -515,7 +515,7 @@ namespace schema
         // SimFlowPlant_WaterOutletUpTempLimit
         //
         typedef ::xml_schema::double_ SimFlowPlant_WaterOutletUpTempLimit_type;
-        typedef ::xsd::cxx::tree::optional< SimFlowPlant_WaterOutletUpTempLimit_type > SimFlowPlant_WaterOutletUpTempLimit_optional;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_WaterOutletUpTempLimit_type, true > SimFlowPlant_WaterOutletUpTempLimit_optional;
         typedef ::xsd::cxx::tree::traits< SimFlowPlant_WaterOutletUpTempLimit_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_WaterOutletUpTempLimit_traits;
 
         const SimFlowPlant_WaterOutletUpTempLimit_optional&
@@ -533,7 +533,7 @@ namespace schema
         // SimFlowPlant_BoilerFlowMode
         //
         typedef ::xml_schema::string SimFlowPlant_BoilerFlowMode_type;
-        typedef ::xsd::cxx::tree::optional< SimFlowPlant_BoilerFlowMode_type > SimFlowPlant_BoilerFlowMode_optional;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_BoilerFlowMode_type, false > SimFlowPlant_BoilerFlowMode_optional;
         typedef ::xsd::cxx::tree::traits< SimFlowPlant_BoilerFlowMode_type, char > SimFlowPlant_BoilerFlowMode_traits;
 
         const SimFlowPlant_BoilerFlowMode_optional&
@@ -554,7 +554,7 @@ namespace schema
         // SimFlowPlant_ParasiticElecLoad
         //
         typedef ::xml_schema::double_ SimFlowPlant_ParasiticElecLoad_type;
-        typedef ::xsd::cxx::tree::optional< SimFlowPlant_ParasiticElecLoad_type > SimFlowPlant_ParasiticElecLoad_optional;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_ParasiticElecLoad_type, true > SimFlowPlant_ParasiticElecLoad_optional;
         typedef ::xsd::cxx::tree::traits< SimFlowPlant_ParasiticElecLoad_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_ParasiticElecLoad_traits;
 
         const SimFlowPlant_ParasiticElecLoad_optional&
@@ -572,7 +572,7 @@ namespace schema
         // SimFlowPlant_SizingFactor
         //
         typedef ::xml_schema::double_ SimFlowPlant_SizingFactor_type;
-        typedef ::xsd::cxx::tree::optional< SimFlowPlant_SizingFactor_type > SimFlowPlant_SizingFactor_optional;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_SizingFactor_type, true > SimFlowPlant_SizingFactor_optional;
         typedef ::xsd::cxx::tree::traits< SimFlowPlant_SizingFactor_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_SizingFactor_traits;
 
         const SimFlowPlant_SizingFactor_optional&

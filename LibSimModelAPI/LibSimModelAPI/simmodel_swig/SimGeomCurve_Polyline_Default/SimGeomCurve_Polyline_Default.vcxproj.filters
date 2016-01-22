@@ -25,6 +25,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="SimGeomCurve_Polyline_Default.i" />
+    <CustomBuild Include="SimGeomCurve_Polyline_Default.i" />
   </ItemGroup>
 </Project>

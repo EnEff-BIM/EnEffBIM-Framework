@@ -263,7 +263,7 @@ namespace schema
         // SimSolarShade_LeftDepth
         //
         typedef ::xml_schema::double_ SimSolarShade_LeftDepth_type;
-        typedef ::xsd::cxx::tree::optional< SimSolarShade_LeftDepth_type > SimSolarShade_LeftDepth_optional;
+        typedef ::xsd::cxx::tree::optional< SimSolarShade_LeftDepth_type, true > SimSolarShade_LeftDepth_optional;
         typedef ::xsd::cxx::tree::traits< SimSolarShade_LeftDepth_type, char, ::xsd::cxx::tree::schema_type::double_ > SimSolarShade_LeftDepth_traits;
 
         const SimSolarShade_LeftDepth_optional&
@@ -281,7 +281,7 @@ namespace schema
         // SimSolarShade_RightDepth
         //
         typedef ::xml_schema::double_ SimSolarShade_RightDepth_type;
-        typedef ::xsd::cxx::tree::optional< SimSolarShade_RightDepth_type > SimSolarShade_RightDepth_optional;
+        typedef ::xsd::cxx::tree::optional< SimSolarShade_RightDepth_type, true > SimSolarShade_RightDepth_optional;
         typedef ::xsd::cxx::tree::traits< SimSolarShade_RightDepth_type, char, ::xsd::cxx::tree::schema_type::double_ > SimSolarShade_RightDepth_traits;
 
         const SimSolarShade_RightDepth_optional&
@@ -299,7 +299,7 @@ namespace schema
         // T24ConstructStatus2
         //
         typedef ::xml_schema::string T24ConstructStatus2_type;
-        typedef ::xsd::cxx::tree::optional< T24ConstructStatus2_type > T24ConstructStatus2_optional;
+        typedef ::xsd::cxx::tree::optional< T24ConstructStatus2_type, false > T24ConstructStatus2_optional;
         typedef ::xsd::cxx::tree::traits< T24ConstructStatus2_type, char > T24ConstructStatus2_traits;
 
         const T24ConstructStatus2_optional&

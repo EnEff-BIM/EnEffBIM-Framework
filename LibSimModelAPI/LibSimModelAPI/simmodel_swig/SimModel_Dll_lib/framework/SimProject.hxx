@@ -263,7 +263,7 @@ namespace schema
         // Name
         //
         typedef ::xml_schema::string Name_type;
-        typedef ::xsd::cxx::tree::optional< Name_type > Name_optional;
+        typedef ::xsd::cxx::tree::optional< Name_type, false > Name_optional;
         typedef ::xsd::cxx::tree::traits< Name_type, char > Name_traits;
 
         const Name_optional&
@@ -284,7 +284,7 @@ namespace schema
         // Representation
         //
         typedef ::xml_schema::idref Representation_type;
-        typedef ::xsd::cxx::tree::optional< Representation_type > Representation_optional;
+        typedef ::xsd::cxx::tree::optional< Representation_type, false > Representation_optional;
         typedef ::xsd::cxx::tree::traits< Representation_type, char > Representation_traits;
 
         const Representation_optional&
@@ -305,7 +305,7 @@ namespace schema
         // UnitsInContext
         //
         typedef ::xml_schema::idref UnitsInContext_type;
-        typedef ::xsd::cxx::tree::optional< UnitsInContext_type > UnitsInContext_optional;
+        typedef ::xsd::cxx::tree::optional< UnitsInContext_type, false > UnitsInContext_optional;
         typedef ::xsd::cxx::tree::traits< UnitsInContext_type, char > UnitsInContext_traits;
 
         const UnitsInContext_optional&
@@ -347,7 +347,7 @@ namespace schema
         // ParentDesignAltForViews
         //
         typedef ::xml_schema::idref ParentDesignAltForViews_type;
-        typedef ::xsd::cxx::tree::optional< ParentDesignAltForViews_type > ParentDesignAltForViews_optional;
+        typedef ::xsd::cxx::tree::optional< ParentDesignAltForViews_type, false > ParentDesignAltForViews_optional;
         typedef ::xsd::cxx::tree::traits< ParentDesignAltForViews_type, char > ParentDesignAltForViews_traits;
 
         const ParentDesignAltForViews_optional&
@@ -368,7 +368,7 @@ namespace schema
         // DesAltViewDateTime
         //
         typedef ::xml_schema::int_ DesAltViewDateTime_type;
-        typedef ::xsd::cxx::tree::optional< DesAltViewDateTime_type > DesAltViewDateTime_optional;
+        typedef ::xsd::cxx::tree::optional< DesAltViewDateTime_type, true > DesAltViewDateTime_optional;
         typedef ::xsd::cxx::tree::traits< DesAltViewDateTime_type, char > DesAltViewDateTime_traits;
 
         const DesAltViewDateTime_optional&

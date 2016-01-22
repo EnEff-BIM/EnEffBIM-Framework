@@ -263,7 +263,7 @@ namespace schema
         // Name
         //
         typedef ::xml_schema::string Name_type;
-        typedef ::xsd::cxx::tree::optional< Name_type > Name_optional;
+        typedef ::xsd::cxx::tree::optional< Name_type, false > Name_optional;
         typedef ::xsd::cxx::tree::traits< Name_type, char > Name_traits;
 
         const Name_optional&
@@ -284,7 +284,7 @@ namespace schema
         // SolarShadeObjectType
         //
         typedef ::xml_schema::string SolarShadeObjectType_type;
-        typedef ::xsd::cxx::tree::optional< SolarShadeObjectType_type > SolarShadeObjectType_optional;
+        typedef ::xsd::cxx::tree::optional< SolarShadeObjectType_type, false > SolarShadeObjectType_optional;
         typedef ::xsd::cxx::tree::traits< SolarShadeObjectType_type, char > SolarShadeObjectType_traits;
 
         const SolarShadeObjectType_optional&
@@ -305,7 +305,7 @@ namespace schema
         // ShadingDeviceType
         //
         typedef ::xml_schema::string ShadingDeviceType_type;
-        typedef ::xsd::cxx::tree::optional< ShadingDeviceType_type > ShadingDeviceType_optional;
+        typedef ::xsd::cxx::tree::optional< ShadingDeviceType_type, false > ShadingDeviceType_optional;
         typedef ::xsd::cxx::tree::traits< ShadingDeviceType_type, char > ShadingDeviceType_traits;
 
         const ShadingDeviceType_optional&
@@ -326,7 +326,7 @@ namespace schema
         // Azimuth
         //
         typedef ::xml_schema::double_ Azimuth_type;
-        typedef ::xsd::cxx::tree::optional< Azimuth_type > Azimuth_optional;
+        typedef ::xsd::cxx::tree::optional< Azimuth_type, true > Azimuth_optional;
         typedef ::xsd::cxx::tree::traits< Azimuth_type, char, ::xsd::cxx::tree::schema_type::double_ > Azimuth_traits;
 
         const Azimuth_optional&
@@ -344,7 +344,7 @@ namespace schema
         // Inclination.MeasureValue
         //
         typedef ::xml_schema::double_ Inclination_MeasureValue_type;
-        typedef ::xsd::cxx::tree::optional< Inclination_MeasureValue_type > Inclination_MeasureValue_optional;
+        typedef ::xsd::cxx::tree::optional< Inclination_MeasureValue_type, true > Inclination_MeasureValue_optional;
         typedef ::xsd::cxx::tree::traits< Inclination_MeasureValue_type, char, ::xsd::cxx::tree::schema_type::double_ > Inclination_MeasureValue_traits;
 
         const Inclination_MeasureValue_optional&
@@ -362,7 +362,7 @@ namespace schema
         // TiltRange.MeasureValue
         //
         typedef ::xml_schema::double_ TiltRange_MeasureValue_type;
-        typedef ::xsd::cxx::tree::optional< TiltRange_MeasureValue_type > TiltRange_MeasureValue_optional;
+        typedef ::xsd::cxx::tree::optional< TiltRange_MeasureValue_type, true > TiltRange_MeasureValue_optional;
         typedef ::xsd::cxx::tree::traits< TiltRange_MeasureValue_type, char, ::xsd::cxx::tree::schema_type::double_ > TiltRange_MeasureValue_traits;
 
         const TiltRange_MeasureValue_optional&
@@ -380,7 +380,7 @@ namespace schema
         // AverageSolarTransmittance
         //
         typedef ::xml_schema::double_ AverageSolarTransmittance_type;
-        typedef ::xsd::cxx::tree::optional< AverageSolarTransmittance_type > AverageSolarTransmittance_optional;
+        typedef ::xsd::cxx::tree::optional< AverageSolarTransmittance_type, true > AverageSolarTransmittance_optional;
         typedef ::xsd::cxx::tree::traits< AverageSolarTransmittance_type, char, ::xsd::cxx::tree::schema_type::double_ > AverageSolarTransmittance_traits;
 
         const AverageSolarTransmittance_optional&
@@ -398,7 +398,7 @@ namespace schema
         // AverageVisibleTransmittance
         //
         typedef ::xml_schema::double_ AverageVisibleTransmittance_type;
-        typedef ::xsd::cxx::tree::optional< AverageVisibleTransmittance_type > AverageVisibleTransmittance_optional;
+        typedef ::xsd::cxx::tree::optional< AverageVisibleTransmittance_type, true > AverageVisibleTransmittance_optional;
         typedef ::xsd::cxx::tree::traits< AverageVisibleTransmittance_type, char, ::xsd::cxx::tree::schema_type::double_ > AverageVisibleTransmittance_traits;
 
         const AverageVisibleTransmittance_optional&
@@ -416,7 +416,7 @@ namespace schema
         // Reflectance
         //
         typedef ::xml_schema::double_ Reflectance_type;
-        typedef ::xsd::cxx::tree::optional< Reflectance_type > Reflectance_optional;
+        typedef ::xsd::cxx::tree::optional< Reflectance_type, true > Reflectance_optional;
         typedef ::xsd::cxx::tree::traits< Reflectance_type, char, ::xsd::cxx::tree::schema_type::double_ > Reflectance_traits;
 
         const Reflectance_optional&
@@ -434,7 +434,7 @@ namespace schema
         // Roughness.MeasureValue
         //
         typedef ::xml_schema::double_ Roughness_MeasureValue_type;
-        typedef ::xsd::cxx::tree::optional< Roughness_MeasureValue_type > Roughness_MeasureValue_optional;
+        typedef ::xsd::cxx::tree::optional< Roughness_MeasureValue_type, true > Roughness_MeasureValue_optional;
         typedef ::xsd::cxx::tree::traits< Roughness_MeasureValue_type, char, ::xsd::cxx::tree::schema_type::double_ > Roughness_MeasureValue_traits;
 
         const Roughness_MeasureValue_optional&
@@ -452,7 +452,7 @@ namespace schema
         // Color
         //
         typedef ::xml_schema::string Color_type;
-        typedef ::xsd::cxx::tree::optional< Color_type > Color_optional;
+        typedef ::xsd::cxx::tree::optional< Color_type, false > Color_optional;
         typedef ::xsd::cxx::tree::traits< Color_type, char > Color_traits;
 
         const Color_optional&
@@ -473,7 +473,7 @@ namespace schema
         // ClassRef_UniFormat
         //
         typedef ::xml_schema::idref ClassRef_UniFormat_type;
-        typedef ::xsd::cxx::tree::optional< ClassRef_UniFormat_type > ClassRef_UniFormat_optional;
+        typedef ::xsd::cxx::tree::optional< ClassRef_UniFormat_type, false > ClassRef_UniFormat_optional;
         typedef ::xsd::cxx::tree::traits< ClassRef_UniFormat_type, char > ClassRef_UniFormat_traits;
 
         const ClassRef_UniFormat_optional&
@@ -494,7 +494,7 @@ namespace schema
         // MaterialList
         //
         typedef ::xml_schema::idref MaterialList_type;
-        typedef ::xsd::cxx::tree::optional< MaterialList_type > MaterialList_optional;
+        typedef ::xsd::cxx::tree::optional< MaterialList_type, false > MaterialList_optional;
         typedef ::xsd::cxx::tree::traits< MaterialList_type, char > MaterialList_traits;
 
         const MaterialList_optional&
@@ -515,7 +515,7 @@ namespace schema
         // Representation
         //
         typedef ::xml_schema::idref Representation_type;
-        typedef ::xsd::cxx::tree::optional< Representation_type > Representation_optional;
+        typedef ::xsd::cxx::tree::optional< Representation_type, false > Representation_optional;
         typedef ::xsd::cxx::tree::traits< Representation_type, char > Representation_traits;
 
         const Representation_optional&
@@ -536,7 +536,7 @@ namespace schema
         // CompositionType
         //
         typedef ::xml_schema::string CompositionType_type;
-        typedef ::xsd::cxx::tree::optional< CompositionType_type > CompositionType_optional;
+        typedef ::xsd::cxx::tree::optional< CompositionType_type, false > CompositionType_optional;
         typedef ::xsd::cxx::tree::traits< CompositionType_type, char > CompositionType_traits;
 
         const CompositionType_optional&
@@ -557,7 +557,7 @@ namespace schema
         // ShadedElement
         //
         typedef ::xml_schema::idref ShadedElement_type;
-        typedef ::xsd::cxx::tree::optional< ShadedElement_type > ShadedElement_optional;
+        typedef ::xsd::cxx::tree::optional< ShadedElement_type, false > ShadedElement_optional;
         typedef ::xsd::cxx::tree::traits< ShadedElement_type, char > ShadedElement_traits;
 
         const ShadedElement_optional&

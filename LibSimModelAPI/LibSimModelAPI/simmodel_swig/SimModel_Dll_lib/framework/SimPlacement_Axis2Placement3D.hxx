@@ -263,7 +263,7 @@ namespace schema
         // Axis
         //
         typedef ::xml_schema::idref Axis_type;
-        typedef ::xsd::cxx::tree::optional< Axis_type > Axis_optional;
+        typedef ::xsd::cxx::tree::optional< Axis_type, false > Axis_optional;
         typedef ::xsd::cxx::tree::traits< Axis_type, char > Axis_traits;
 
         const Axis_optional&
@@ -284,7 +284,7 @@ namespace schema
         // RefDirection
         //
         typedef ::xml_schema::idref RefDirection_type;
-        typedef ::xsd::cxx::tree::optional< RefDirection_type > RefDirection_optional;
+        typedef ::xsd::cxx::tree::optional< RefDirection_type, false > RefDirection_optional;
         typedef ::xsd::cxx::tree::traits< RefDirection_type, char > RefDirection_traits;
 
         const RefDirection_optional&

@@ -263,7 +263,7 @@ namespace schema
         // TemplateExteriorWallConstruction
         //
         typedef ::xml_schema::idref TemplateExteriorWallConstruction_type;
-        typedef ::xsd::cxx::tree::optional< TemplateExteriorWallConstruction_type > TemplateExteriorWallConstruction_optional;
+        typedef ::xsd::cxx::tree::optional< TemplateExteriorWallConstruction_type, false > TemplateExteriorWallConstruction_optional;
         typedef ::xsd::cxx::tree::traits< TemplateExteriorWallConstruction_type, char > TemplateExteriorWallConstruction_traits;
 
         const TemplateExteriorWallConstruction_optional&
@@ -284,7 +284,7 @@ namespace schema
         // TemplateExteriorFloorConstruction
         //
         typedef ::xml_schema::idref TemplateExteriorFloorConstruction_type;
-        typedef ::xsd::cxx::tree::optional< TemplateExteriorFloorConstruction_type > TemplateExteriorFloorConstruction_optional;
+        typedef ::xsd::cxx::tree::optional< TemplateExteriorFloorConstruction_type, false > TemplateExteriorFloorConstruction_optional;
         typedef ::xsd::cxx::tree::traits< TemplateExteriorFloorConstruction_type, char > TemplateExteriorFloorConstruction_traits;
 
         const TemplateExteriorFloorConstruction_optional&
@@ -305,7 +305,7 @@ namespace schema
         // TemplateInterZoneFloorConstruction
         //
         typedef ::xml_schema::idref TemplateInterZoneFloorConstruction_type;
-        typedef ::xsd::cxx::tree::optional< TemplateInterZoneFloorConstruction_type > TemplateInterZoneFloorConstruction_optional;
+        typedef ::xsd::cxx::tree::optional< TemplateInterZoneFloorConstruction_type, false > TemplateInterZoneFloorConstruction_optional;
         typedef ::xsd::cxx::tree::traits< TemplateInterZoneFloorConstruction_type, char > TemplateInterZoneFloorConstruction_traits;
 
         const TemplateInterZoneFloorConstruction_optional&
@@ -326,7 +326,7 @@ namespace schema
         // TemplateRoofConstruction
         //
         typedef ::xml_schema::idref TemplateRoofConstruction_type;
-        typedef ::xsd::cxx::tree::optional< TemplateRoofConstruction_type > TemplateRoofConstruction_optional;
+        typedef ::xsd::cxx::tree::optional< TemplateRoofConstruction_type, false > TemplateRoofConstruction_optional;
         typedef ::xsd::cxx::tree::traits< TemplateRoofConstruction_type, char > TemplateRoofConstruction_traits;
 
         const TemplateRoofConstruction_optional&
@@ -347,7 +347,7 @@ namespace schema
         // TemplateSlabOnGradeConstruction
         //
         typedef ::xml_schema::idref TemplateSlabOnGradeConstruction_type;
-        typedef ::xsd::cxx::tree::optional< TemplateSlabOnGradeConstruction_type > TemplateSlabOnGradeConstruction_optional;
+        typedef ::xsd::cxx::tree::optional< TemplateSlabOnGradeConstruction_type, false > TemplateSlabOnGradeConstruction_optional;
         typedef ::xsd::cxx::tree::traits< TemplateSlabOnGradeConstruction_type, char > TemplateSlabOnGradeConstruction_traits;
 
         const TemplateSlabOnGradeConstruction_optional&
@@ -368,7 +368,7 @@ namespace schema
         // TemplateUndergroundWallConstruction
         //
         typedef ::xml_schema::idref TemplateUndergroundWallConstruction_type;
-        typedef ::xsd::cxx::tree::optional< TemplateUndergroundWallConstruction_type > TemplateUndergroundWallConstruction_optional;
+        typedef ::xsd::cxx::tree::optional< TemplateUndergroundWallConstruction_type, false > TemplateUndergroundWallConstruction_optional;
         typedef ::xsd::cxx::tree::traits< TemplateUndergroundWallConstruction_type, char > TemplateUndergroundWallConstruction_traits;
 
         const TemplateUndergroundWallConstruction_optional&
@@ -389,7 +389,7 @@ namespace schema
         // TemplateUndergroundFloorConstruction
         //
         typedef ::xml_schema::idref TemplateUndergroundFloorConstruction_type;
-        typedef ::xsd::cxx::tree::optional< TemplateUndergroundFloorConstruction_type > TemplateUndergroundFloorConstruction_optional;
+        typedef ::xsd::cxx::tree::optional< TemplateUndergroundFloorConstruction_type, false > TemplateUndergroundFloorConstruction_optional;
         typedef ::xsd::cxx::tree::traits< TemplateUndergroundFloorConstruction_type, char > TemplateUndergroundFloorConstruction_traits;
 
         const TemplateUndergroundFloorConstruction_optional&
@@ -410,7 +410,7 @@ namespace schema
         // TemplateCeilingConstruction
         //
         typedef ::xml_schema::idref TemplateCeilingConstruction_type;
-        typedef ::xsd::cxx::tree::optional< TemplateCeilingConstruction_type > TemplateCeilingConstruction_optional;
+        typedef ::xsd::cxx::tree::optional< TemplateCeilingConstruction_type, false > TemplateCeilingConstruction_optional;
         typedef ::xsd::cxx::tree::traits< TemplateCeilingConstruction_type, char > TemplateCeilingConstruction_traits;
 
         const TemplateCeilingConstruction_optional&
@@ -431,7 +431,7 @@ namespace schema
         // TemplateInteriorPartitionWallConstruction
         //
         typedef ::xml_schema::idref TemplateInteriorPartitionWallConstruction_type;
-        typedef ::xsd::cxx::tree::optional< TemplateInteriorPartitionWallConstruction_type > TemplateInteriorPartitionWallConstruction_optional;
+        typedef ::xsd::cxx::tree::optional< TemplateInteriorPartitionWallConstruction_type, false > TemplateInteriorPartitionWallConstruction_optional;
         typedef ::xsd::cxx::tree::traits< TemplateInteriorPartitionWallConstruction_type, char > TemplateInteriorPartitionWallConstruction_traits;
 
         const TemplateInteriorPartitionWallConstruction_optional&
@@ -452,7 +452,7 @@ namespace schema
         // TemplateRaisedFloorConstruction
         //
         typedef ::xml_schema::idref TemplateRaisedFloorConstruction_type;
-        typedef ::xsd::cxx::tree::optional< TemplateRaisedFloorConstruction_type > TemplateRaisedFloorConstruction_optional;
+        typedef ::xsd::cxx::tree::optional< TemplateRaisedFloorConstruction_type, false > TemplateRaisedFloorConstruction_optional;
         typedef ::xsd::cxx::tree::traits< TemplateRaisedFloorConstruction_type, char > TemplateRaisedFloorConstruction_traits;
 
         const TemplateRaisedFloorConstruction_optional&
@@ -473,7 +473,7 @@ namespace schema
         // TemplateOpaqueDoors
         //
         typedef ::xml_schema::idref TemplateOpaqueDoors_type;
-        typedef ::xsd::cxx::tree::optional< TemplateOpaqueDoors_type > TemplateOpaqueDoors_optional;
+        typedef ::xsd::cxx::tree::optional< TemplateOpaqueDoors_type, false > TemplateOpaqueDoors_optional;
         typedef ::xsd::cxx::tree::traits< TemplateOpaqueDoors_type, char > TemplateOpaqueDoors_traits;
 
         const TemplateOpaqueDoors_optional&
@@ -494,7 +494,7 @@ namespace schema
         // TemplateWindowsNorth
         //
         typedef ::xml_schema::idref TemplateWindowsNorth_type;
-        typedef ::xsd::cxx::tree::optional< TemplateWindowsNorth_type > TemplateWindowsNorth_optional;
+        typedef ::xsd::cxx::tree::optional< TemplateWindowsNorth_type, false > TemplateWindowsNorth_optional;
         typedef ::xsd::cxx::tree::traits< TemplateWindowsNorth_type, char > TemplateWindowsNorth_traits;
 
         const TemplateWindowsNorth_optional&
@@ -515,7 +515,7 @@ namespace schema
         // TemplateWindowsSouth
         //
         typedef ::xml_schema::idref TemplateWindowsSouth_type;
-        typedef ::xsd::cxx::tree::optional< TemplateWindowsSouth_type > TemplateWindowsSouth_optional;
+        typedef ::xsd::cxx::tree::optional< TemplateWindowsSouth_type, false > TemplateWindowsSouth_optional;
         typedef ::xsd::cxx::tree::traits< TemplateWindowsSouth_type, char > TemplateWindowsSouth_traits;
 
         const TemplateWindowsSouth_optional&
@@ -536,7 +536,7 @@ namespace schema
         // TemplateWindowsEast
         //
         typedef ::xml_schema::idref TemplateWindowsEast_type;
-        typedef ::xsd::cxx::tree::optional< TemplateWindowsEast_type > TemplateWindowsEast_optional;
+        typedef ::xsd::cxx::tree::optional< TemplateWindowsEast_type, false > TemplateWindowsEast_optional;
         typedef ::xsd::cxx::tree::traits< TemplateWindowsEast_type, char > TemplateWindowsEast_traits;
 
         const TemplateWindowsEast_optional&
@@ -557,7 +557,7 @@ namespace schema
         // TemplateWindowsWest
         //
         typedef ::xml_schema::idref TemplateWindowsWest_type;
-        typedef ::xsd::cxx::tree::optional< TemplateWindowsWest_type > TemplateWindowsWest_optional;
+        typedef ::xsd::cxx::tree::optional< TemplateWindowsWest_type, false > TemplateWindowsWest_optional;
         typedef ::xsd::cxx::tree::traits< TemplateWindowsWest_type, char > TemplateWindowsWest_traits;
 
         const TemplateWindowsWest_optional&
@@ -578,7 +578,7 @@ namespace schema
         // TemplateExteriorGlassDoors
         //
         typedef ::xml_schema::idref TemplateExteriorGlassDoors_type;
-        typedef ::xsd::cxx::tree::optional< TemplateExteriorGlassDoors_type > TemplateExteriorGlassDoors_optional;
+        typedef ::xsd::cxx::tree::optional< TemplateExteriorGlassDoors_type, false > TemplateExteriorGlassDoors_optional;
         typedef ::xsd::cxx::tree::traits< TemplateExteriorGlassDoors_type, char > TemplateExteriorGlassDoors_traits;
 
         const TemplateExteriorGlassDoors_optional&
@@ -599,7 +599,7 @@ namespace schema
         // TemplateSkylights
         //
         typedef ::xml_schema::idref TemplateSkylights_type;
-        typedef ::xsd::cxx::tree::optional< TemplateSkylights_type > TemplateSkylights_optional;
+        typedef ::xsd::cxx::tree::optional< TemplateSkylights_type, false > TemplateSkylights_optional;
         typedef ::xsd::cxx::tree::traits< TemplateSkylights_type, char > TemplateSkylights_traits;
 
         const TemplateSkylights_optional&
@@ -620,7 +620,7 @@ namespace schema
         // TemplateInteriorWindows
         //
         typedef ::xml_schema::idref TemplateInteriorWindows_type;
-        typedef ::xsd::cxx::tree::optional< TemplateInteriorWindows_type > TemplateInteriorWindows_optional;
+        typedef ::xsd::cxx::tree::optional< TemplateInteriorWindows_type, false > TemplateInteriorWindows_optional;
         typedef ::xsd::cxx::tree::traits< TemplateInteriorWindows_type, char > TemplateInteriorWindows_traits;
 
         const TemplateInteriorWindows_optional&
@@ -641,7 +641,7 @@ namespace schema
         // TemplateInteriorGlassDoors
         //
         typedef ::xml_schema::idref TemplateInteriorGlassDoors_type;
-        typedef ::xsd::cxx::tree::optional< TemplateInteriorGlassDoors_type > TemplateInteriorGlassDoors_optional;
+        typedef ::xsd::cxx::tree::optional< TemplateInteriorGlassDoors_type, false > TemplateInteriorGlassDoors_optional;
         typedef ::xsd::cxx::tree::traits< TemplateInteriorGlassDoors_type, char > TemplateInteriorGlassDoors_traits;
 
         const TemplateInteriorGlassDoors_optional&
@@ -662,7 +662,7 @@ namespace schema
         // TemplateRadiantSlabConstruction
         //
         typedef ::xml_schema::idref TemplateRadiantSlabConstruction_type;
-        typedef ::xsd::cxx::tree::optional< TemplateRadiantSlabConstruction_type > TemplateRadiantSlabConstruction_optional;
+        typedef ::xsd::cxx::tree::optional< TemplateRadiantSlabConstruction_type, false > TemplateRadiantSlabConstruction_optional;
         typedef ::xsd::cxx::tree::traits< TemplateRadiantSlabConstruction_type, char > TemplateRadiantSlabConstruction_traits;
 
         const TemplateRadiantSlabConstruction_optional&
@@ -683,7 +683,7 @@ namespace schema
         // TemplateRadiantWallConstruction
         //
         typedef ::xml_schema::idref TemplateRadiantWallConstruction_type;
-        typedef ::xsd::cxx::tree::optional< TemplateRadiantWallConstruction_type > TemplateRadiantWallConstruction_optional;
+        typedef ::xsd::cxx::tree::optional< TemplateRadiantWallConstruction_type, false > TemplateRadiantWallConstruction_optional;
         typedef ::xsd::cxx::tree::traits< TemplateRadiantWallConstruction_type, char > TemplateRadiantWallConstruction_traits;
 
         const TemplateRadiantWallConstruction_optional&

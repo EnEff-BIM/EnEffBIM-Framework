@@ -284,7 +284,7 @@ namespace schema
         // SpaceNumber
         //
         typedef ::xml_schema::string SpaceNumber_type;
-        typedef ::xsd::cxx::tree::optional< SpaceNumber_type > SpaceNumber_optional;
+        typedef ::xsd::cxx::tree::optional< SpaceNumber_type, false > SpaceNumber_optional;
         typedef ::xsd::cxx::tree::traits< SpaceNumber_type, char > SpaceNumber_traits;
 
         const SpaceNumber_optional&
@@ -305,7 +305,7 @@ namespace schema
         // SpaceName
         //
         typedef ::xml_schema::string SpaceName_type;
-        typedef ::xsd::cxx::tree::optional< SpaceName_type > SpaceName_optional;
+        typedef ::xsd::cxx::tree::optional< SpaceName_type, false > SpaceName_optional;
         typedef ::xsd::cxx::tree::traits< SpaceName_type, char > SpaceName_traits;
 
         const SpaceName_optional&
@@ -326,7 +326,7 @@ namespace schema
         // SpaceInteriorOrExterior
         //
         typedef ::xml_schema::string SpaceInteriorOrExterior_type;
-        typedef ::xsd::cxx::tree::optional< SpaceInteriorOrExterior_type > SpaceInteriorOrExterior_optional;
+        typedef ::xsd::cxx::tree::optional< SpaceInteriorOrExterior_type, false > SpaceInteriorOrExterior_optional;
         typedef ::xsd::cxx::tree::traits< SpaceInteriorOrExterior_type, char > SpaceInteriorOrExterior_traits;
 
         const SpaceInteriorOrExterior_optional&
@@ -347,7 +347,7 @@ namespace schema
         // SpaceDatumElevation
         //
         typedef ::xml_schema::double_ SpaceDatumElevation_type;
-        typedef ::xsd::cxx::tree::optional< SpaceDatumElevation_type > SpaceDatumElevation_optional;
+        typedef ::xsd::cxx::tree::optional< SpaceDatumElevation_type, true > SpaceDatumElevation_optional;
         typedef ::xsd::cxx::tree::traits< SpaceDatumElevation_type, char, ::xsd::cxx::tree::schema_type::double_ > SpaceDatumElevation_traits;
 
         const SpaceDatumElevation_optional&
@@ -365,7 +365,7 @@ namespace schema
         // SpaceThermalSimulationType
         //
         typedef ::xml_schema::string SpaceThermalSimulationType_type;
-        typedef ::xsd::cxx::tree::optional< SpaceThermalSimulationType_type > SpaceThermalSimulationType_optional;
+        typedef ::xsd::cxx::tree::optional< SpaceThermalSimulationType_type, false > SpaceThermalSimulationType_optional;
         typedef ::xsd::cxx::tree::traits< SpaceThermalSimulationType_type, char > SpaceThermalSimulationType_traits;
 
         const SpaceThermalSimulationType_optional&
@@ -386,7 +386,7 @@ namespace schema
         // SpaceConditioningRequirement
         //
         typedef ::xml_schema::string SpaceConditioningRequirement_type;
-        typedef ::xsd::cxx::tree::optional< SpaceConditioningRequirement_type > SpaceConditioningRequirement_optional;
+        typedef ::xsd::cxx::tree::optional< SpaceConditioningRequirement_type, false > SpaceConditioningRequirement_optional;
         typedef ::xsd::cxx::tree::traits< SpaceConditioningRequirement_type, char > SpaceConditioningRequirement_traits;
 
         const SpaceConditioningRequirement_optional&
@@ -407,7 +407,7 @@ namespace schema
         // SpaceOccupantDensity
         //
         typedef ::xml_schema::double_ SpaceOccupantDensity_type;
-        typedef ::xsd::cxx::tree::optional< SpaceOccupantDensity_type > SpaceOccupantDensity_optional;
+        typedef ::xsd::cxx::tree::optional< SpaceOccupantDensity_type, true > SpaceOccupantDensity_optional;
         typedef ::xsd::cxx::tree::traits< SpaceOccupantDensity_type, char, ::xsd::cxx::tree::schema_type::double_ > SpaceOccupantDensity_traits;
 
         const SpaceOccupantDensity_optional&
@@ -425,7 +425,7 @@ namespace schema
         // SpaceOccupantHeatRateLatent
         //
         typedef ::xml_schema::double_ SpaceOccupantHeatRateLatent_type;
-        typedef ::xsd::cxx::tree::optional< SpaceOccupantHeatRateLatent_type > SpaceOccupantHeatRateLatent_optional;
+        typedef ::xsd::cxx::tree::optional< SpaceOccupantHeatRateLatent_type, true > SpaceOccupantHeatRateLatent_optional;
         typedef ::xsd::cxx::tree::traits< SpaceOccupantHeatRateLatent_type, char, ::xsd::cxx::tree::schema_type::double_ > SpaceOccupantHeatRateLatent_traits;
 
         const SpaceOccupantHeatRateLatent_optional&
@@ -443,7 +443,7 @@ namespace schema
         // SpaceOccupantHeatRateSensible
         //
         typedef ::xml_schema::double_ SpaceOccupantHeatRateSensible_type;
-        typedef ::xsd::cxx::tree::optional< SpaceOccupantHeatRateSensible_type > SpaceOccupantHeatRateSensible_optional;
+        typedef ::xsd::cxx::tree::optional< SpaceOccupantHeatRateSensible_type, true > SpaceOccupantHeatRateSensible_optional;
         typedef ::xsd::cxx::tree::traits< SpaceOccupantHeatRateSensible_type, char, ::xsd::cxx::tree::schema_type::double_ > SpaceOccupantHeatRateSensible_traits;
 
         const SpaceOccupantHeatRateSensible_optional&
@@ -461,7 +461,7 @@ namespace schema
         // SpaceOccupantLoad
         //
         typedef ::xml_schema::double_ SpaceOccupantLoad_type;
-        typedef ::xsd::cxx::tree::optional< SpaceOccupantLoad_type > SpaceOccupantLoad_optional;
+        typedef ::xsd::cxx::tree::optional< SpaceOccupantLoad_type, true > SpaceOccupantLoad_optional;
         typedef ::xsd::cxx::tree::traits< SpaceOccupantLoad_type, char, ::xsd::cxx::tree::schema_type::double_ > SpaceOccupantLoad_traits;
 
         const SpaceOccupantLoad_optional&
@@ -479,7 +479,7 @@ namespace schema
         // SpaceEquipmentLoad
         //
         typedef ::xml_schema::double_ SpaceEquipmentLoad_type;
-        typedef ::xsd::cxx::tree::optional< SpaceEquipmentLoad_type > SpaceEquipmentLoad_optional;
+        typedef ::xsd::cxx::tree::optional< SpaceEquipmentLoad_type, true > SpaceEquipmentLoad_optional;
         typedef ::xsd::cxx::tree::traits< SpaceEquipmentLoad_type, char, ::xsd::cxx::tree::schema_type::double_ > SpaceEquipmentLoad_traits;
 
         const SpaceEquipmentLoad_optional&
@@ -497,7 +497,7 @@ namespace schema
         // SpaceLightingLoad
         //
         typedef ::xml_schema::double_ SpaceLightingLoad_type;
-        typedef ::xsd::cxx::tree::optional< SpaceLightingLoad_type > SpaceLightingLoad_optional;
+        typedef ::xsd::cxx::tree::optional< SpaceLightingLoad_type, true > SpaceLightingLoad_optional;
         typedef ::xsd::cxx::tree::traits< SpaceLightingLoad_type, char, ::xsd::cxx::tree::schema_type::double_ > SpaceLightingLoad_traits;
 
         const SpaceLightingLoad_optional&
@@ -515,7 +515,7 @@ namespace schema
         // InsideDryBulbTempHeating
         //
         typedef ::xml_schema::double_ InsideDryBulbTempHeating_type;
-        typedef ::xsd::cxx::tree::optional< InsideDryBulbTempHeating_type > InsideDryBulbTempHeating_optional;
+        typedef ::xsd::cxx::tree::optional< InsideDryBulbTempHeating_type, true > InsideDryBulbTempHeating_optional;
         typedef ::xsd::cxx::tree::traits< InsideDryBulbTempHeating_type, char, ::xsd::cxx::tree::schema_type::double_ > InsideDryBulbTempHeating_traits;
 
         const InsideDryBulbTempHeating_optional&
@@ -533,7 +533,7 @@ namespace schema
         // InsideRelHumidityHeating
         //
         typedef ::xml_schema::double_ InsideRelHumidityHeating_type;
-        typedef ::xsd::cxx::tree::optional< InsideRelHumidityHeating_type > InsideRelHumidityHeating_optional;
+        typedef ::xsd::cxx::tree::optional< InsideRelHumidityHeating_type, true > InsideRelHumidityHeating_optional;
         typedef ::xsd::cxx::tree::traits< InsideRelHumidityHeating_type, char, ::xsd::cxx::tree::schema_type::double_ > InsideRelHumidityHeating_traits;
 
         const InsideRelHumidityHeating_optional&
@@ -551,7 +551,7 @@ namespace schema
         // InsideDryBulbTempCooling
         //
         typedef ::xml_schema::double_ InsideDryBulbTempCooling_type;
-        typedef ::xsd::cxx::tree::optional< InsideDryBulbTempCooling_type > InsideDryBulbTempCooling_optional;
+        typedef ::xsd::cxx::tree::optional< InsideDryBulbTempCooling_type, true > InsideDryBulbTempCooling_optional;
         typedef ::xsd::cxx::tree::traits< InsideDryBulbTempCooling_type, char, ::xsd::cxx::tree::schema_type::double_ > InsideDryBulbTempCooling_traits;
 
         const InsideDryBulbTempCooling_optional&
@@ -569,7 +569,7 @@ namespace schema
         // InsideRelHumidityCooling
         //
         typedef ::xml_schema::double_ InsideRelHumidityCooling_type;
-        typedef ::xsd::cxx::tree::optional< InsideRelHumidityCooling_type > InsideRelHumidityCooling_optional;
+        typedef ::xsd::cxx::tree::optional< InsideRelHumidityCooling_type, true > InsideRelHumidityCooling_optional;
         typedef ::xsd::cxx::tree::traits< InsideRelHumidityCooling_type, char, ::xsd::cxx::tree::schema_type::double_ > InsideRelHumidityCooling_traits;
 
         const InsideRelHumidityCooling_optional&
@@ -605,7 +605,7 @@ namespace schema
         // PeakAirFlowCooling
         //
         typedef ::xml_schema::double_ PeakAirFlowCooling_type;
-        typedef ::xsd::cxx::tree::optional< PeakAirFlowCooling_type > PeakAirFlowCooling_optional;
+        typedef ::xsd::cxx::tree::optional< PeakAirFlowCooling_type, true > PeakAirFlowCooling_optional;
         typedef ::xsd::cxx::tree::traits< PeakAirFlowCooling_type, char, ::xsd::cxx::tree::schema_type::double_ > PeakAirFlowCooling_traits;
 
         const PeakAirFlowCooling_optional&
@@ -623,7 +623,7 @@ namespace schema
         // PeakAirFlowHeating
         //
         typedef ::xml_schema::double_ PeakAirFlowHeating_type;
-        typedef ::xsd::cxx::tree::optional< PeakAirFlowHeating_type > PeakAirFlowHeating_optional;
+        typedef ::xsd::cxx::tree::optional< PeakAirFlowHeating_type, true > PeakAirFlowHeating_optional;
         typedef ::xsd::cxx::tree::traits< PeakAirFlowHeating_type, char, ::xsd::cxx::tree::schema_type::double_ > PeakAirFlowHeating_traits;
 
         const PeakAirFlowHeating_optional&
@@ -641,7 +641,7 @@ namespace schema
         // ExhaustAirFlowRate
         //
         typedef ::xml_schema::double_ ExhaustAirFlowRate_type;
-        typedef ::xsd::cxx::tree::optional< ExhaustAirFlowRate_type > ExhaustAirFlowRate_optional;
+        typedef ::xsd::cxx::tree::optional< ExhaustAirFlowRate_type, true > ExhaustAirFlowRate_optional;
         typedef ::xsd::cxx::tree::traits< ExhaustAirFlowRate_type, char, ::xsd::cxx::tree::schema_type::double_ > ExhaustAirFlowRate_traits;
 
         const ExhaustAirFlowRate_optional&
@@ -659,7 +659,7 @@ namespace schema
         // NaturalAirChangeRate
         //
         typedef ::xml_schema::double_ NaturalAirChangeRate_type;
-        typedef ::xsd::cxx::tree::optional< NaturalAirChangeRate_type > NaturalAirChangeRate_optional;
+        typedef ::xsd::cxx::tree::optional< NaturalAirChangeRate_type, true > NaturalAirChangeRate_optional;
         typedef ::xsd::cxx::tree::traits< NaturalAirChangeRate_type, char, ::xsd::cxx::tree::schema_type::double_ > NaturalAirChangeRate_traits;
 
         const NaturalAirChangeRate_optional&
@@ -677,7 +677,7 @@ namespace schema
         // MechanicalAirChangeRate
         //
         typedef ::xml_schema::double_ MechanicalAirChangeRate_type;
-        typedef ::xsd::cxx::tree::optional< MechanicalAirChangeRate_type > MechanicalAirChangeRate_optional;
+        typedef ::xsd::cxx::tree::optional< MechanicalAirChangeRate_type, true > MechanicalAirChangeRate_optional;
         typedef ::xsd::cxx::tree::traits< MechanicalAirChangeRate_type, char, ::xsd::cxx::tree::schema_type::double_ > MechanicalAirChangeRate_traits;
 
         const MechanicalAirChangeRate_optional&
@@ -695,7 +695,7 @@ namespace schema
         // VentilationType
         //
         typedef ::xml_schema::string VentilationType_type;
-        typedef ::xsd::cxx::tree::optional< VentilationType_type > VentilationType_optional;
+        typedef ::xsd::cxx::tree::optional< VentilationType_type, false > VentilationType_optional;
         typedef ::xsd::cxx::tree::traits< VentilationType_type, char > VentilationType_traits;
 
         const VentilationType_optional&
@@ -716,7 +716,7 @@ namespace schema
         // OutsideAirPerPerson
         //
         typedef ::xml_schema::double_ OutsideAirPerPerson_type;
-        typedef ::xsd::cxx::tree::optional< OutsideAirPerPerson_type > OutsideAirPerPerson_optional;
+        typedef ::xsd::cxx::tree::optional< OutsideAirPerPerson_type, true > OutsideAirPerPerson_optional;
         typedef ::xsd::cxx::tree::traits< OutsideAirPerPerson_type, char, ::xsd::cxx::tree::schema_type::double_ > OutsideAirPerPerson_traits;
 
         const OutsideAirPerPerson_optional&
@@ -734,7 +734,7 @@ namespace schema
         // SpaceHeight
         //
         typedef ::xml_schema::double_ SpaceHeight_type;
-        typedef ::xsd::cxx::tree::optional< SpaceHeight_type > SpaceHeight_optional;
+        typedef ::xsd::cxx::tree::optional< SpaceHeight_type, true > SpaceHeight_optional;
         typedef ::xsd::cxx::tree::traits< SpaceHeight_type, char, ::xsd::cxx::tree::schema_type::double_ > SpaceHeight_traits;
 
         const SpaceHeight_optional&
@@ -752,7 +752,7 @@ namespace schema
         // SpaceGrossPerimeter
         //
         typedef ::xml_schema::double_ SpaceGrossPerimeter_type;
-        typedef ::xsd::cxx::tree::optional< SpaceGrossPerimeter_type > SpaceGrossPerimeter_optional;
+        typedef ::xsd::cxx::tree::optional< SpaceGrossPerimeter_type, true > SpaceGrossPerimeter_optional;
         typedef ::xsd::cxx::tree::traits< SpaceGrossPerimeter_type, char, ::xsd::cxx::tree::schema_type::double_ > SpaceGrossPerimeter_traits;
 
         const SpaceGrossPerimeter_optional&
@@ -770,7 +770,7 @@ namespace schema
         // SpaceGrossFloorArea
         //
         typedef ::xml_schema::double_ SpaceGrossFloorArea_type;
-        typedef ::xsd::cxx::tree::optional< SpaceGrossFloorArea_type > SpaceGrossFloorArea_optional;
+        typedef ::xsd::cxx::tree::optional< SpaceGrossFloorArea_type, true > SpaceGrossFloorArea_optional;
         typedef ::xsd::cxx::tree::traits< SpaceGrossFloorArea_type, char, ::xsd::cxx::tree::schema_type::double_ > SpaceGrossFloorArea_traits;
 
         const SpaceGrossFloorArea_optional&
@@ -788,7 +788,7 @@ namespace schema
         // SpaceNetFloorArea
         //
         typedef ::xml_schema::double_ SpaceNetFloorArea_type;
-        typedef ::xsd::cxx::tree::optional< SpaceNetFloorArea_type > SpaceNetFloorArea_optional;
+        typedef ::xsd::cxx::tree::optional< SpaceNetFloorArea_type, true > SpaceNetFloorArea_optional;
         typedef ::xsd::cxx::tree::traits< SpaceNetFloorArea_type, char, ::xsd::cxx::tree::schema_type::double_ > SpaceNetFloorArea_traits;
 
         const SpaceNetFloorArea_optional&
@@ -806,7 +806,7 @@ namespace schema
         // SpaceGrossVolume
         //
         typedef ::xml_schema::double_ SpaceGrossVolume_type;
-        typedef ::xsd::cxx::tree::optional< SpaceGrossVolume_type > SpaceGrossVolume_optional;
+        typedef ::xsd::cxx::tree::optional< SpaceGrossVolume_type, true > SpaceGrossVolume_optional;
         typedef ::xsd::cxx::tree::traits< SpaceGrossVolume_type, char, ::xsd::cxx::tree::schema_type::double_ > SpaceGrossVolume_traits;
 
         const SpaceGrossVolume_optional&
@@ -824,7 +824,7 @@ namespace schema
         // SpaceNetVolume
         //
         typedef ::xml_schema::double_ SpaceNetVolume_type;
-        typedef ::xsd::cxx::tree::optional< SpaceNetVolume_type > SpaceNetVolume_optional;
+        typedef ::xsd::cxx::tree::optional< SpaceNetVolume_type, true > SpaceNetVolume_optional;
         typedef ::xsd::cxx::tree::traits< SpaceNetVolume_type, char, ::xsd::cxx::tree::schema_type::double_ > SpaceNetVolume_traits;
 
         const SpaceNetVolume_optional&
@@ -842,7 +842,7 @@ namespace schema
         // SpaceNetFloorAreaBOMA
         //
         typedef ::xml_schema::double_ SpaceNetFloorAreaBOMA_type;
-        typedef ::xsd::cxx::tree::optional< SpaceNetFloorAreaBOMA_type > SpaceNetFloorAreaBOMA_optional;
+        typedef ::xsd::cxx::tree::optional< SpaceNetFloorAreaBOMA_type, true > SpaceNetFloorAreaBOMA_optional;
         typedef ::xsd::cxx::tree::traits< SpaceNetFloorAreaBOMA_type, char, ::xsd::cxx::tree::schema_type::double_ > SpaceNetFloorAreaBOMA_traits;
 
         const SpaceNetFloorAreaBOMA_optional&
@@ -860,7 +860,7 @@ namespace schema
         // SpaceUsableFloorAreaBOMA
         //
         typedef ::xml_schema::double_ SpaceUsableFloorAreaBOMA_type;
-        typedef ::xsd::cxx::tree::optional< SpaceUsableFloorAreaBOMA_type > SpaceUsableFloorAreaBOMA_optional;
+        typedef ::xsd::cxx::tree::optional< SpaceUsableFloorAreaBOMA_type, true > SpaceUsableFloorAreaBOMA_optional;
         typedef ::xsd::cxx::tree::traits< SpaceUsableFloorAreaBOMA_type, char, ::xsd::cxx::tree::schema_type::double_ > SpaceUsableFloorAreaBOMA_traits;
 
         const SpaceUsableFloorAreaBOMA_optional&
@@ -878,7 +878,7 @@ namespace schema
         // ClassRef_SpaceByFunction
         //
         typedef ::xml_schema::idref ClassRef_SpaceByFunction_type;
-        typedef ::xsd::cxx::tree::optional< ClassRef_SpaceByFunction_type > ClassRef_SpaceByFunction_optional;
+        typedef ::xsd::cxx::tree::optional< ClassRef_SpaceByFunction_type, false > ClassRef_SpaceByFunction_optional;
         typedef ::xsd::cxx::tree::traits< ClassRef_SpaceByFunction_type, char > ClassRef_SpaceByFunction_traits;
 
         const ClassRef_SpaceByFunction_optional&
@@ -899,7 +899,7 @@ namespace schema
         // ClassRef_SpaceTypeOwner
         //
         typedef ::xml_schema::idref ClassRef_SpaceTypeOwner_type;
-        typedef ::xsd::cxx::tree::optional< ClassRef_SpaceTypeOwner_type > ClassRef_SpaceTypeOwner_optional;
+        typedef ::xsd::cxx::tree::optional< ClassRef_SpaceTypeOwner_type, false > ClassRef_SpaceTypeOwner_optional;
         typedef ::xsd::cxx::tree::traits< ClassRef_SpaceTypeOwner_type, char > ClassRef_SpaceTypeOwner_traits;
 
         const ClassRef_SpaceTypeOwner_optional&
@@ -920,7 +920,7 @@ namespace schema
         // ClassRef_SpaceCategoryOwner
         //
         typedef ::xml_schema::idref ClassRef_SpaceCategoryOwner_type;
-        typedef ::xsd::cxx::tree::optional< ClassRef_SpaceCategoryOwner_type > ClassRef_SpaceCategoryOwner_optional;
+        typedef ::xsd::cxx::tree::optional< ClassRef_SpaceCategoryOwner_type, false > ClassRef_SpaceCategoryOwner_optional;
         typedef ::xsd::cxx::tree::traits< ClassRef_SpaceCategoryOwner_type, char > ClassRef_SpaceCategoryOwner_traits;
 
         const ClassRef_SpaceCategoryOwner_optional&
@@ -941,7 +941,7 @@ namespace schema
         // ClassRef_SpaceCategoryBOMA
         //
         typedef ::xml_schema::idref ClassRef_SpaceCategoryBOMA_type;
-        typedef ::xsd::cxx::tree::optional< ClassRef_SpaceCategoryBOMA_type > ClassRef_SpaceCategoryBOMA_optional;
+        typedef ::xsd::cxx::tree::optional< ClassRef_SpaceCategoryBOMA_type, false > ClassRef_SpaceCategoryBOMA_optional;
         typedef ::xsd::cxx::tree::traits< ClassRef_SpaceCategoryBOMA_type, char > ClassRef_SpaceCategoryBOMA_traits;
 
         const ClassRef_SpaceCategoryBOMA_optional&
@@ -983,7 +983,7 @@ namespace schema
         // OccupancyScheduleAssignment
         //
         typedef ::xml_schema::idref OccupancyScheduleAssignment_type;
-        typedef ::xsd::cxx::tree::optional< OccupancyScheduleAssignment_type > OccupancyScheduleAssignment_optional;
+        typedef ::xsd::cxx::tree::optional< OccupancyScheduleAssignment_type, false > OccupancyScheduleAssignment_optional;
         typedef ::xsd::cxx::tree::traits< OccupancyScheduleAssignment_type, char > OccupancyScheduleAssignment_traits;
 
         const OccupancyScheduleAssignment_optional&
@@ -1004,7 +1004,7 @@ namespace schema
         // LightingScheduleAssignment
         //
         typedef ::xml_schema::idref LightingScheduleAssignment_type;
-        typedef ::xsd::cxx::tree::optional< LightingScheduleAssignment_type > LightingScheduleAssignment_optional;
+        typedef ::xsd::cxx::tree::optional< LightingScheduleAssignment_type, false > LightingScheduleAssignment_optional;
         typedef ::xsd::cxx::tree::traits< LightingScheduleAssignment_type, char > LightingScheduleAssignment_traits;
 
         const LightingScheduleAssignment_optional&
@@ -1025,7 +1025,7 @@ namespace schema
         // EquipmentScheduleAssignment
         //
         typedef ::xml_schema::idref EquipmentScheduleAssignment_type;
-        typedef ::xsd::cxx::tree::optional< EquipmentScheduleAssignment_type > EquipmentScheduleAssignment_optional;
+        typedef ::xsd::cxx::tree::optional< EquipmentScheduleAssignment_type, false > EquipmentScheduleAssignment_optional;
         typedef ::xsd::cxx::tree::traits< EquipmentScheduleAssignment_type, char > EquipmentScheduleAssignment_traits;
 
         const EquipmentScheduleAssignment_optional&
@@ -1067,7 +1067,7 @@ namespace schema
         // SpaceInSpatialContainer
         //
         typedef ::xml_schema::idref SpaceInSpatialContainer_type;
-        typedef ::xsd::cxx::tree::optional< SpaceInSpatialContainer_type > SpaceInSpatialContainer_optional;
+        typedef ::xsd::cxx::tree::optional< SpaceInSpatialContainer_type, false > SpaceInSpatialContainer_optional;
         typedef ::xsd::cxx::tree::traits< SpaceInSpatialContainer_type, char > SpaceInSpatialContainer_traits;
 
         const SpaceInSpatialContainer_optional&

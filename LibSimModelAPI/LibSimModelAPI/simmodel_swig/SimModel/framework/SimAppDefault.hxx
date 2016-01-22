@@ -263,7 +263,7 @@ namespace schema
         // DefaultForProject
         //
         typedef ::xml_schema::idref DefaultForProject_type;
-        typedef ::xsd::cxx::tree::optional< DefaultForProject_type > DefaultForProject_optional;
+        typedef ::xsd::cxx::tree::optional< DefaultForProject_type, false > DefaultForProject_optional;
         typedef ::xsd::cxx::tree::traits< DefaultForProject_type, char > DefaultForProject_traits;
 
         const DefaultForProject_optional&
@@ -284,7 +284,7 @@ namespace schema
         // DefaultForPerson
         //
         typedef ::xml_schema::idref DefaultForPerson_type;
-        typedef ::xsd::cxx::tree::optional< DefaultForPerson_type > DefaultForPerson_optional;
+        typedef ::xsd::cxx::tree::optional< DefaultForPerson_type, false > DefaultForPerson_optional;
         typedef ::xsd::cxx::tree::traits< DefaultForPerson_type, char > DefaultForPerson_traits;
 
         const DefaultForPerson_optional&
@@ -305,7 +305,7 @@ namespace schema
         // DefaultForUnitSystem
         //
         typedef ::xml_schema::string DefaultForUnitSystem_type;
-        typedef ::xsd::cxx::tree::optional< DefaultForUnitSystem_type > DefaultForUnitSystem_optional;
+        typedef ::xsd::cxx::tree::optional< DefaultForUnitSystem_type, false > DefaultForUnitSystem_optional;
         typedef ::xsd::cxx::tree::traits< DefaultForUnitSystem_type, char > DefaultForUnitSystem_traits;
 
         const DefaultForUnitSystem_optional&

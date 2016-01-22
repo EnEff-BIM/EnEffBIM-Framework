@@ -274,7 +274,7 @@ namespace schema
         // SimMaterial_Thick
         //
         typedef ::xml_schema::double_ SimMaterial_Thick_type;
-        typedef ::xsd::cxx::tree::optional< SimMaterial_Thick_type > SimMaterial_Thick_optional;
+        typedef ::xsd::cxx::tree::optional< SimMaterial_Thick_type, true > SimMaterial_Thick_optional;
         typedef ::xsd::cxx::tree::traits< SimMaterial_Thick_type, char, ::xsd::cxx::tree::schema_type::double_ > SimMaterial_Thick_traits;
 
         const SimMaterial_Thick_optional&
@@ -292,7 +292,7 @@ namespace schema
         // SimMaterial_Cond
         //
         typedef ::xml_schema::double_ SimMaterial_Cond_type;
-        typedef ::xsd::cxx::tree::optional< SimMaterial_Cond_type > SimMaterial_Cond_optional;
+        typedef ::xsd::cxx::tree::optional< SimMaterial_Cond_type, true > SimMaterial_Cond_optional;
         typedef ::xsd::cxx::tree::traits< SimMaterial_Cond_type, char, ::xsd::cxx::tree::schema_type::double_ > SimMaterial_Cond_traits;
 
         const SimMaterial_Cond_optional&
@@ -310,7 +310,7 @@ namespace schema
         // SimMaterial_OpticalDataType
         //
         typedef ::xml_schema::string SimMaterial_OpticalDataType_type;
-        typedef ::xsd::cxx::tree::optional< SimMaterial_OpticalDataType_type > SimMaterial_OpticalDataType_optional;
+        typedef ::xsd::cxx::tree::optional< SimMaterial_OpticalDataType_type, false > SimMaterial_OpticalDataType_optional;
         typedef ::xsd::cxx::tree::traits< SimMaterial_OpticalDataType_type, char > SimMaterial_OpticalDataType_traits;
 
         const SimMaterial_OpticalDataType_optional&
@@ -331,7 +331,7 @@ namespace schema
         // SimMaterial_WndwGlassSpectralDataSetName
         //
         typedef ::xml_schema::idref SimMaterial_WndwGlassSpectralDataSetName_type;
-        typedef ::xsd::cxx::tree::optional< SimMaterial_WndwGlassSpectralDataSetName_type > SimMaterial_WndwGlassSpectralDataSetName_optional;
+        typedef ::xsd::cxx::tree::optional< SimMaterial_WndwGlassSpectralDataSetName_type, false > SimMaterial_WndwGlassSpectralDataSetName_optional;
         typedef ::xsd::cxx::tree::traits< SimMaterial_WndwGlassSpectralDataSetName_type, char > SimMaterial_WndwGlassSpectralDataSetName_traits;
 
         const SimMaterial_WndwGlassSpectralDataSetName_optional&
@@ -352,7 +352,7 @@ namespace schema
         // SimMaterial_SolarTransAtNrmlIncent
         //
         typedef ::xml_schema::double_ SimMaterial_SolarTransAtNrmlIncent_type;
-        typedef ::xsd::cxx::tree::optional< SimMaterial_SolarTransAtNrmlIncent_type > SimMaterial_SolarTransAtNrmlIncent_optional;
+        typedef ::xsd::cxx::tree::optional< SimMaterial_SolarTransAtNrmlIncent_type, true > SimMaterial_SolarTransAtNrmlIncent_optional;
         typedef ::xsd::cxx::tree::traits< SimMaterial_SolarTransAtNrmlIncent_type, char, ::xsd::cxx::tree::schema_type::double_ > SimMaterial_SolarTransAtNrmlIncent_traits;
 
         const SimMaterial_SolarTransAtNrmlIncent_optional&
@@ -370,7 +370,7 @@ namespace schema
         // SimMaterial_FrontSideSolarReflectAtNrmlIncent
         //
         typedef ::xml_schema::double_ SimMaterial_FrontSideSolarReflectAtNrmlIncent_type;
-        typedef ::xsd::cxx::tree::optional< SimMaterial_FrontSideSolarReflectAtNrmlIncent_type > SimMaterial_FrontSideSolarReflectAtNrmlIncent_optional;
+        typedef ::xsd::cxx::tree::optional< SimMaterial_FrontSideSolarReflectAtNrmlIncent_type, true > SimMaterial_FrontSideSolarReflectAtNrmlIncent_optional;
         typedef ::xsd::cxx::tree::traits< SimMaterial_FrontSideSolarReflectAtNrmlIncent_type, char, ::xsd::cxx::tree::schema_type::double_ > SimMaterial_FrontSideSolarReflectAtNrmlIncent_traits;
 
         const SimMaterial_FrontSideSolarReflectAtNrmlIncent_optional&
@@ -388,7 +388,7 @@ namespace schema
         // SimMaterial_BackSideSolarReflectAtNrmlIncent
         //
         typedef ::xml_schema::double_ SimMaterial_BackSideSolarReflectAtNrmlIncent_type;
-        typedef ::xsd::cxx::tree::optional< SimMaterial_BackSideSolarReflectAtNrmlIncent_type > SimMaterial_BackSideSolarReflectAtNrmlIncent_optional;
+        typedef ::xsd::cxx::tree::optional< SimMaterial_BackSideSolarReflectAtNrmlIncent_type, true > SimMaterial_BackSideSolarReflectAtNrmlIncent_optional;
         typedef ::xsd::cxx::tree::traits< SimMaterial_BackSideSolarReflectAtNrmlIncent_type, char, ::xsd::cxx::tree::schema_type::double_ > SimMaterial_BackSideSolarReflectAtNrmlIncent_traits;
 
         const SimMaterial_BackSideSolarReflectAtNrmlIncent_optional&
@@ -406,7 +406,7 @@ namespace schema
         // SimMaterial_VisTransAtNrmlIncent
         //
         typedef ::xml_schema::double_ SimMaterial_VisTransAtNrmlIncent_type;
-        typedef ::xsd::cxx::tree::optional< SimMaterial_VisTransAtNrmlIncent_type > SimMaterial_VisTransAtNrmlIncent_optional;
+        typedef ::xsd::cxx::tree::optional< SimMaterial_VisTransAtNrmlIncent_type, true > SimMaterial_VisTransAtNrmlIncent_optional;
         typedef ::xsd::cxx::tree::traits< SimMaterial_VisTransAtNrmlIncent_type, char, ::xsd::cxx::tree::schema_type::double_ > SimMaterial_VisTransAtNrmlIncent_traits;
 
         const SimMaterial_VisTransAtNrmlIncent_optional&
@@ -424,7 +424,7 @@ namespace schema
         // SimMaterial_FrontSideVisReflectAtNrmlIncent
         //
         typedef ::xml_schema::double_ SimMaterial_FrontSideVisReflectAtNrmlIncent_type;
-        typedef ::xsd::cxx::tree::optional< SimMaterial_FrontSideVisReflectAtNrmlIncent_type > SimMaterial_FrontSideVisReflectAtNrmlIncent_optional;
+        typedef ::xsd::cxx::tree::optional< SimMaterial_FrontSideVisReflectAtNrmlIncent_type, true > SimMaterial_FrontSideVisReflectAtNrmlIncent_optional;
         typedef ::xsd::cxx::tree::traits< SimMaterial_FrontSideVisReflectAtNrmlIncent_type, char, ::xsd::cxx::tree::schema_type::double_ > SimMaterial_FrontSideVisReflectAtNrmlIncent_traits;
 
         const SimMaterial_FrontSideVisReflectAtNrmlIncent_optional&
@@ -442,7 +442,7 @@ namespace schema
         // SimMaterial_BackSideVisReflectAtNrmlIncent
         //
         typedef ::xml_schema::double_ SimMaterial_BackSideVisReflectAtNrmlIncent_type;
-        typedef ::xsd::cxx::tree::optional< SimMaterial_BackSideVisReflectAtNrmlIncent_type > SimMaterial_BackSideVisReflectAtNrmlIncent_optional;
+        typedef ::xsd::cxx::tree::optional< SimMaterial_BackSideVisReflectAtNrmlIncent_type, true > SimMaterial_BackSideVisReflectAtNrmlIncent_optional;
         typedef ::xsd::cxx::tree::traits< SimMaterial_BackSideVisReflectAtNrmlIncent_type, char, ::xsd::cxx::tree::schema_type::double_ > SimMaterial_BackSideVisReflectAtNrmlIncent_traits;
 
         const SimMaterial_BackSideVisReflectAtNrmlIncent_optional&
@@ -460,7 +460,7 @@ namespace schema
         // SimMaterial_InfraredTransAtNrmlIncent
         //
         typedef ::xml_schema::double_ SimMaterial_InfraredTransAtNrmlIncent_type;
-        typedef ::xsd::cxx::tree::optional< SimMaterial_InfraredTransAtNrmlIncent_type > SimMaterial_InfraredTransAtNrmlIncent_optional;
+        typedef ::xsd::cxx::tree::optional< SimMaterial_InfraredTransAtNrmlIncent_type, true > SimMaterial_InfraredTransAtNrmlIncent_optional;
         typedef ::xsd::cxx::tree::traits< SimMaterial_InfraredTransAtNrmlIncent_type, char, ::xsd::cxx::tree::schema_type::double_ > SimMaterial_InfraredTransAtNrmlIncent_traits;
 
         const SimMaterial_InfraredTransAtNrmlIncent_optional&
@@ -478,7 +478,7 @@ namespace schema
         // SimMaterial_FrontSideInfraredHemisphEmis
         //
         typedef ::xml_schema::double_ SimMaterial_FrontSideInfraredHemisphEmis_type;
-        typedef ::xsd::cxx::tree::optional< SimMaterial_FrontSideInfraredHemisphEmis_type > SimMaterial_FrontSideInfraredHemisphEmis_optional;
+        typedef ::xsd::cxx::tree::optional< SimMaterial_FrontSideInfraredHemisphEmis_type, true > SimMaterial_FrontSideInfraredHemisphEmis_optional;
         typedef ::xsd::cxx::tree::traits< SimMaterial_FrontSideInfraredHemisphEmis_type, char, ::xsd::cxx::tree::schema_type::double_ > SimMaterial_FrontSideInfraredHemisphEmis_traits;
 
         const SimMaterial_FrontSideInfraredHemisphEmis_optional&
@@ -496,7 +496,7 @@ namespace schema
         // SimMaterial_BackSideInfraredHemisphEmis
         //
         typedef ::xml_schema::double_ SimMaterial_BackSideInfraredHemisphEmis_type;
-        typedef ::xsd::cxx::tree::optional< SimMaterial_BackSideInfraredHemisphEmis_type > SimMaterial_BackSideInfraredHemisphEmis_optional;
+        typedef ::xsd::cxx::tree::optional< SimMaterial_BackSideInfraredHemisphEmis_type, true > SimMaterial_BackSideInfraredHemisphEmis_optional;
         typedef ::xsd::cxx::tree::traits< SimMaterial_BackSideInfraredHemisphEmis_type, char, ::xsd::cxx::tree::schema_type::double_ > SimMaterial_BackSideInfraredHemisphEmis_traits;
 
         const SimMaterial_BackSideInfraredHemisphEmis_optional&
@@ -514,7 +514,7 @@ namespace schema
         // SimMaterial_DirtCorrectFactorForSolar_VisTrans
         //
         typedef ::xml_schema::double_ SimMaterial_DirtCorrectFactorForSolar_VisTrans_type;
-        typedef ::xsd::cxx::tree::optional< SimMaterial_DirtCorrectFactorForSolar_VisTrans_type > SimMaterial_DirtCorrectFactorForSolar_VisTrans_optional;
+        typedef ::xsd::cxx::tree::optional< SimMaterial_DirtCorrectFactorForSolar_VisTrans_type, true > SimMaterial_DirtCorrectFactorForSolar_VisTrans_optional;
         typedef ::xsd::cxx::tree::traits< SimMaterial_DirtCorrectFactorForSolar_VisTrans_type, char, ::xsd::cxx::tree::schema_type::double_ > SimMaterial_DirtCorrectFactorForSolar_VisTrans_traits;
 
         const SimMaterial_DirtCorrectFactorForSolar_VisTrans_optional&
@@ -532,7 +532,7 @@ namespace schema
         // SimMaterial_SolarDiffusing
         //
         typedef ::xml_schema::string SimMaterial_SolarDiffusing_type;
-        typedef ::xsd::cxx::tree::optional< SimMaterial_SolarDiffusing_type > SimMaterial_SolarDiffusing_optional;
+        typedef ::xsd::cxx::tree::optional< SimMaterial_SolarDiffusing_type, false > SimMaterial_SolarDiffusing_optional;
         typedef ::xsd::cxx::tree::traits< SimMaterial_SolarDiffusing_type, char > SimMaterial_SolarDiffusing_traits;
 
         const SimMaterial_SolarDiffusing_optional&
@@ -553,7 +553,7 @@ namespace schema
         // SimMaterial_YoungsModulus
         //
         typedef ::xml_schema::double_ SimMaterial_YoungsModulus_type;
-        typedef ::xsd::cxx::tree::optional< SimMaterial_YoungsModulus_type > SimMaterial_YoungsModulus_optional;
+        typedef ::xsd::cxx::tree::optional< SimMaterial_YoungsModulus_type, true > SimMaterial_YoungsModulus_optional;
         typedef ::xsd::cxx::tree::traits< SimMaterial_YoungsModulus_type, char, ::xsd::cxx::tree::schema_type::double_ > SimMaterial_YoungsModulus_traits;
 
         const SimMaterial_YoungsModulus_optional&
@@ -571,7 +571,7 @@ namespace schema
         // SimMaterial_PoissonsRatio
         //
         typedef ::xml_schema::double_ SimMaterial_PoissonsRatio_type;
-        typedef ::xsd::cxx::tree::optional< SimMaterial_PoissonsRatio_type > SimMaterial_PoissonsRatio_optional;
+        typedef ::xsd::cxx::tree::optional< SimMaterial_PoissonsRatio_type, true > SimMaterial_PoissonsRatio_optional;
         typedef ::xsd::cxx::tree::traits< SimMaterial_PoissonsRatio_type, char, ::xsd::cxx::tree::schema_type::double_ > SimMaterial_PoissonsRatio_traits;
 
         const SimMaterial_PoissonsRatio_optional&
@@ -589,7 +589,7 @@ namespace schema
         // MatProp_GlazingSpectralData_Name
         //
         typedef ::xml_schema::string MatProp_GlazingSpectralData_Name_type;
-        typedef ::xsd::cxx::tree::optional< MatProp_GlazingSpectralData_Name_type > MatProp_GlazingSpectralData_Name_optional;
+        typedef ::xsd::cxx::tree::optional< MatProp_GlazingSpectralData_Name_type, false > MatProp_GlazingSpectralData_Name_optional;
         typedef ::xsd::cxx::tree::traits< MatProp_GlazingSpectralData_Name_type, char > MatProp_GlazingSpectralData_Name_traits;
 
         const MatProp_GlazingSpectralData_Name_optional&

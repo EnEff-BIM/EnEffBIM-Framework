@@ -263,7 +263,8 @@ namespace schema
         // ExtrudedDirection
         //
         typedef ::xml_schema::idref ExtrudedDirection_type;
-        typedef ::xsd::cxx::tree::optional< ExtrudedDirection_type > ExtrudedDirection_optional;
+        typedef ::xsd::cxx::tree::optional< ExtrudedDirection_type
+, false > ExtrudedDirection_optional;
         typedef ::xsd::cxx::tree::traits< ExtrudedDirection_type, char > ExtrudedDirection_traits;
 
         const ExtrudedDirection_optional&
@@ -284,7 +285,7 @@ namespace schema
         // Depth
         //
         typedef ::xml_schema::double_ Depth_type;
-        typedef ::xsd::cxx::tree::optional< Depth_type > Depth_optional;
+        typedef ::xsd::cxx::tree::optional< Depth_type, true > Depth_optional;
         typedef ::xsd::cxx::tree::traits< Depth_type, char, ::xsd::cxx::tree::schema_type::double_ > Depth_traits;
 
         const Depth_optional&

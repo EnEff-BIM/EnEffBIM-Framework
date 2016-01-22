@@ -263,7 +263,7 @@ namespace schema
         // Name
         //
         typedef ::xml_schema::string Name_type;
-        typedef ::xsd::cxx::tree::optional< Name_type > Name_optional;
+        typedef ::xsd::cxx::tree::optional< Name_type, false > Name_optional;
         typedef ::xsd::cxx::tree::traits< Name_type, char > Name_traits;
 
         const Name_optional&
@@ -284,7 +284,7 @@ namespace schema
         // Representation
         //
         typedef ::xml_schema::idref Representation_type;
-        typedef ::xsd::cxx::tree::optional< Representation_type > Representation_optional;
+        typedef ::xsd::cxx::tree::optional< Representation_type, false > Representation_optional;
         typedef ::xsd::cxx::tree::traits< Representation_type, char > Representation_traits;
 
         const Representation_optional&
@@ -305,7 +305,7 @@ namespace schema
         // PredefinedSlabType
         //
         typedef ::xml_schema::string PredefinedSlabType_type;
-        typedef ::xsd::cxx::tree::optional< PredefinedSlabType_type > PredefinedSlabType_optional;
+        typedef ::xsd::cxx::tree::optional< PredefinedSlabType_type, false > PredefinedSlabType_optional;
         typedef ::xsd::cxx::tree::traits< PredefinedSlabType_type, char > PredefinedSlabType_traits;
 
         const PredefinedSlabType_optional&
@@ -326,7 +326,7 @@ namespace schema
         // ConstructionType
         //
         typedef ::xml_schema::string ConstructionType_type;
-        typedef ::xsd::cxx::tree::optional< ConstructionType_type > ConstructionType_optional;
+        typedef ::xsd::cxx::tree::optional< ConstructionType_type, false > ConstructionType_optional;
         typedef ::xsd::cxx::tree::traits< ConstructionType_type, char > ConstructionType_traits;
 
         const ConstructionType_optional&
@@ -365,7 +365,7 @@ namespace schema
         // CompositeThermalTrans
         //
         typedef ::xml_schema::double_ CompositeThermalTrans_type;
-        typedef ::xsd::cxx::tree::optional< CompositeThermalTrans_type > CompositeThermalTrans_optional;
+        typedef ::xsd::cxx::tree::optional< CompositeThermalTrans_type, true > CompositeThermalTrans_optional;
         typedef ::xsd::cxx::tree::traits< CompositeThermalTrans_type, char, ::xsd::cxx::tree::schema_type::double_ > CompositeThermalTrans_traits;
 
         const CompositeThermalTrans_optional&
@@ -383,7 +383,7 @@ namespace schema
         // PhotoVotaicArrayOnElement
         //
         typedef ::xml_schema::idref PhotoVotaicArrayOnElement_type;
-        typedef ::xsd::cxx::tree::optional< PhotoVotaicArrayOnElement_type > PhotoVotaicArrayOnElement_optional;
+        typedef ::xsd::cxx::tree::optional< PhotoVotaicArrayOnElement_type, false > PhotoVotaicArrayOnElement_optional;
         typedef ::xsd::cxx::tree::traits< PhotoVotaicArrayOnElement_type, char > PhotoVotaicArrayOnElement_traits;
 
         const PhotoVotaicArrayOnElement_optional&
@@ -404,7 +404,7 @@ namespace schema
         // SlabThickness
         //
         typedef ::xml_schema::double_ SlabThickness_type;
-        typedef ::xsd::cxx::tree::optional< SlabThickness_type > SlabThickness_optional;
+        typedef ::xsd::cxx::tree::optional< SlabThickness_type, true > SlabThickness_optional;
         typedef ::xsd::cxx::tree::traits< SlabThickness_type, char, ::xsd::cxx::tree::schema_type::double_ > SlabThickness_traits;
 
         const SlabThickness_optional&
@@ -422,7 +422,7 @@ namespace schema
         // SlabPerimeter
         //
         typedef ::xml_schema::double_ SlabPerimeter_type;
-        typedef ::xsd::cxx::tree::optional< SlabPerimeter_type > SlabPerimeter_optional;
+        typedef ::xsd::cxx::tree::optional< SlabPerimeter_type, true > SlabPerimeter_optional;
         typedef ::xsd::cxx::tree::traits< SlabPerimeter_type, char, ::xsd::cxx::tree::schema_type::double_ > SlabPerimeter_traits;
 
         const SlabPerimeter_optional&
@@ -440,7 +440,7 @@ namespace schema
         // SlabGrossArea
         //
         typedef ::xml_schema::double_ SlabGrossArea_type;
-        typedef ::xsd::cxx::tree::optional< SlabGrossArea_type > SlabGrossArea_optional;
+        typedef ::xsd::cxx::tree::optional< SlabGrossArea_type, true > SlabGrossArea_optional;
         typedef ::xsd::cxx::tree::traits< SlabGrossArea_type, char, ::xsd::cxx::tree::schema_type::double_ > SlabGrossArea_traits;
 
         const SlabGrossArea_optional&
@@ -458,7 +458,7 @@ namespace schema
         // SlabNetArea
         //
         typedef ::xml_schema::double_ SlabNetArea_type;
-        typedef ::xsd::cxx::tree::optional< SlabNetArea_type > SlabNetArea_optional;
+        typedef ::xsd::cxx::tree::optional< SlabNetArea_type, true > SlabNetArea_optional;
         typedef ::xsd::cxx::tree::traits< SlabNetArea_type, char, ::xsd::cxx::tree::schema_type::double_ > SlabNetArea_traits;
 
         const SlabNetArea_optional&
@@ -476,7 +476,7 @@ namespace schema
         // SlabGrossVolume
         //
         typedef ::xml_schema::double_ SlabGrossVolume_type;
-        typedef ::xsd::cxx::tree::optional< SlabGrossVolume_type > SlabGrossVolume_optional;
+        typedef ::xsd::cxx::tree::optional< SlabGrossVolume_type, true > SlabGrossVolume_optional;
         typedef ::xsd::cxx::tree::traits< SlabGrossVolume_type, char, ::xsd::cxx::tree::schema_type::double_ > SlabGrossVolume_traits;
 
         const SlabGrossVolume_optional&
@@ -494,7 +494,7 @@ namespace schema
         // SlabNetVolume
         //
         typedef ::xml_schema::double_ SlabNetVolume_type;
-        typedef ::xsd::cxx::tree::optional< SlabNetVolume_type > SlabNetVolume_optional;
+        typedef ::xsd::cxx::tree::optional< SlabNetVolume_type, true > SlabNetVolume_optional;
         typedef ::xsd::cxx::tree::traits< SlabNetVolume_type, char, ::xsd::cxx::tree::schema_type::double_ > SlabNetVolume_traits;
 
         const SlabNetVolume_optional&
@@ -512,7 +512,7 @@ namespace schema
         // ClassRef_UniFormat
         //
         typedef ::xml_schema::idref ClassRef_UniFormat_type;
-        typedef ::xsd::cxx::tree::optional< ClassRef_UniFormat_type > ClassRef_UniFormat_optional;
+        typedef ::xsd::cxx::tree::optional< ClassRef_UniFormat_type, false > ClassRef_UniFormat_optional;
         typedef ::xsd::cxx::tree::traits< ClassRef_UniFormat_type, char > ClassRef_UniFormat_traits;
 
         const ClassRef_UniFormat_optional&
@@ -533,7 +533,7 @@ namespace schema
         // MaterialLayerSet
         //
         typedef ::xml_schema::idref MaterialLayerSet_type;
-        typedef ::xsd::cxx::tree::optional< MaterialLayerSet_type > MaterialLayerSet_optional;
+        typedef ::xsd::cxx::tree::optional< MaterialLayerSet_type, false > MaterialLayerSet_optional;
         typedef ::xsd::cxx::tree::traits< MaterialLayerSet_type, char > MaterialLayerSet_traits;
 
         const MaterialLayerSet_optional&
@@ -638,7 +638,7 @@ namespace schema
         // ContainingRamp
         //
         typedef ::xml_schema::idref ContainingRamp_type;
-        typedef ::xsd::cxx::tree::optional< ContainingRamp_type > ContainingRamp_optional;
+        typedef ::xsd::cxx::tree::optional< ContainingRamp_type, false > ContainingRamp_optional;
         typedef ::xsd::cxx::tree::traits< ContainingRamp_type, char > ContainingRamp_traits;
 
         const ContainingRamp_optional&
@@ -659,7 +659,7 @@ namespace schema
         // ContainingStair
         //
         typedef ::xml_schema::idref ContainingStair_type;
-        typedef ::xsd::cxx::tree::optional< ContainingStair_type > ContainingStair_optional;
+        typedef ::xsd::cxx::tree::optional< ContainingStair_type, false > ContainingStair_optional;
         typedef ::xsd::cxx::tree::traits< ContainingStair_type, char > ContainingStair_traits;
 
         const ContainingStair_optional&

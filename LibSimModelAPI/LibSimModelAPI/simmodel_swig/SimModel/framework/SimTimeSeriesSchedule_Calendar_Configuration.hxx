@@ -263,7 +263,7 @@ namespace schema
         // SimTimeSeriesSched_CalendarConfigurationName
         //
         typedef ::xml_schema::string SimTimeSeriesSched_CalendarConfigurationName_type;
-        typedef ::xsd::cxx::tree::optional< SimTimeSeriesSched_CalendarConfigurationName_type > SimTimeSeriesSched_CalendarConfigurationName_optional;
+        typedef ::xsd::cxx::tree::optional< SimTimeSeriesSched_CalendarConfigurationName_type, false > SimTimeSeriesSched_CalendarConfigurationName_optional;
         typedef ::xsd::cxx::tree::traits< SimTimeSeriesSched_CalendarConfigurationName_type, char > SimTimeSeriesSched_CalendarConfigurationName_traits;
 
         const SimTimeSeriesSched_CalendarConfigurationName_optional&
@@ -284,7 +284,7 @@ namespace schema
         // SimTimeSeriesSched_CalendarYear
         //
         typedef ::xml_schema::int_ SimTimeSeriesSched_CalendarYear_type;
-        typedef ::xsd::cxx::tree::optional< SimTimeSeriesSched_CalendarYear_type > SimTimeSeriesSched_CalendarYear_optional;
+        typedef ::xsd::cxx::tree::optional< SimTimeSeriesSched_CalendarYear_type, true > SimTimeSeriesSched_CalendarYear_optional;
         typedef ::xsd::cxx::tree::traits< SimTimeSeriesSched_CalendarYear_type, char > SimTimeSeriesSched_CalendarYear_traits;
 
         const SimTimeSeriesSched_CalendarYear_optional&
@@ -302,7 +302,7 @@ namespace schema
         // SimTimeSeriesSched_SpecialDaysCalendarName
         //
         typedef ::xml_schema::idref SimTimeSeriesSched_SpecialDaysCalendarName_type;
-        typedef ::xsd::cxx::tree::optional< SimTimeSeriesSched_SpecialDaysCalendarName_type > SimTimeSeriesSched_SpecialDaysCalendarName_optional;
+        typedef ::xsd::cxx::tree::optional< SimTimeSeriesSched_SpecialDaysCalendarName_type, false > SimTimeSeriesSched_SpecialDaysCalendarName_optional;
         typedef ::xsd::cxx::tree::traits< SimTimeSeriesSched_SpecialDaysCalendarName_type, char > SimTimeSeriesSched_SpecialDaysCalendarName_traits;
 
         const SimTimeSeriesSched_SpecialDaysCalendarName_optional&
@@ -323,7 +323,7 @@ namespace schema
         // SimTimeSeriesSched_ScheduleforCalendarYear
         //
         typedef ::xml_schema::idref SimTimeSeriesSched_ScheduleforCalendarYear_type;
-        typedef ::xsd::cxx::tree::optional< SimTimeSeriesSched_ScheduleforCalendarYear_type > SimTimeSeriesSched_ScheduleforCalendarYear_optional;
+        typedef ::xsd::cxx::tree::optional< SimTimeSeriesSched_ScheduleforCalendarYear_type, false > SimTimeSeriesSched_ScheduleforCalendarYear_optional;
         typedef ::xsd::cxx::tree::traits< SimTimeSeriesSched_ScheduleforCalendarYear_type, char > SimTimeSeriesSched_ScheduleforCalendarYear_traits;
 
         const SimTimeSeriesSched_ScheduleforCalendarYear_optional&

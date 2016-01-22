@@ -274,7 +274,7 @@ namespace schema
         // ZoneConditioningRequirement
         //
         typedef ::xml_schema::string ZoneConditioningRequirement_type;
-        typedef ::xsd::cxx::tree::optional< ZoneConditioningRequirement_type > ZoneConditioningRequirement_optional;
+        typedef ::xsd::cxx::tree::optional< ZoneConditioningRequirement_type, false > ZoneConditioningRequirement_optional;
         typedef ::xsd::cxx::tree::traits< ZoneConditioningRequirement_type, char > ZoneConditioningRequirement_traits;
 
         const ZoneConditioningRequirement_optional&
@@ -295,7 +295,7 @@ namespace schema
         // HVACSystemType
         //
         typedef ::xml_schema::string HVACSystemType_type;
-        typedef ::xsd::cxx::tree::optional< HVACSystemType_type > HVACSystemType_optional;
+        typedef ::xsd::cxx::tree::optional< HVACSystemType_type, false > HVACSystemType_optional;
         typedef ::xsd::cxx::tree::traits< HVACSystemType_type, char > HVACSystemType_traits;
 
         const HVACSystemType_optional&
@@ -316,7 +316,7 @@ namespace schema
         // UserDefinedHVACSystemType
         //
         typedef ::xml_schema::string UserDefinedHVACSystemType_type;
-        typedef ::xsd::cxx::tree::optional< UserDefinedHVACSystemType_type > UserDefinedHVACSystemType_optional;
+        typedef ::xsd::cxx::tree::optional< UserDefinedHVACSystemType_type, false > UserDefinedHVACSystemType_optional;
         typedef ::xsd::cxx::tree::traits< UserDefinedHVACSystemType_type, char > UserDefinedHVACSystemType_traits;
 
         const UserDefinedHVACSystemType_optional&
@@ -337,7 +337,7 @@ namespace schema
         // InfiltrationRate
         //
         typedef ::xml_schema::double_ InfiltrationRate_type;
-        typedef ::xsd::cxx::tree::optional< InfiltrationRate_type > InfiltrationRate_optional;
+        typedef ::xsd::cxx::tree::optional< InfiltrationRate_type, true > InfiltrationRate_optional;
         typedef ::xsd::cxx::tree::traits< InfiltrationRate_type, char, ::xsd::cxx::tree::schema_type::double_ > InfiltrationRate_traits;
 
         const InfiltrationRate_optional&
@@ -373,7 +373,7 @@ namespace schema
         // NumberOfDaylightingSensors
         //
         typedef ::xml_schema::double_ NumberOfDaylightingSensors_type;
-        typedef ::xsd::cxx::tree::optional< NumberOfDaylightingSensors_type > NumberOfDaylightingSensors_optional;
+        typedef ::xsd::cxx::tree::optional< NumberOfDaylightingSensors_type, true > NumberOfDaylightingSensors_optional;
         typedef ::xsd::cxx::tree::traits< NumberOfDaylightingSensors_type, char, ::xsd::cxx::tree::schema_type::double_ > NumberOfDaylightingSensors_traits;
 
         const NumberOfDaylightingSensors_optional&
@@ -391,7 +391,7 @@ namespace schema
         // DesignIlluminance
         //
         typedef ::xml_schema::double_ DesignIlluminance_type;
-        typedef ::xsd::cxx::tree::optional< DesignIlluminance_type > DesignIlluminance_optional;
+        typedef ::xsd::cxx::tree::optional< DesignIlluminance_type, true > DesignIlluminance_optional;
         typedef ::xsd::cxx::tree::traits< DesignIlluminance_type, char, ::xsd::cxx::tree::schema_type::double_ > DesignIlluminance_traits;
 
         const DesignIlluminance_optional&
@@ -409,7 +409,7 @@ namespace schema
         // LightingControlsType
         //
         typedef ::xml_schema::string LightingControlsType_type;
-        typedef ::xsd::cxx::tree::optional< LightingControlsType_type > LightingControlsType_optional;
+        typedef ::xsd::cxx::tree::optional< LightingControlsType_type, false > LightingControlsType_optional;
         typedef ::xsd::cxx::tree::traits< LightingControlsType_type, char > LightingControlsType_traits;
 
         const LightingControlsType_optional&
@@ -430,7 +430,7 @@ namespace schema
         // ClassRef_ZoneTypeEnergy
         //
         typedef ::xml_schema::idref ClassRef_ZoneTypeEnergy_type;
-        typedef ::xsd::cxx::tree::optional< ClassRef_ZoneTypeEnergy_type > ClassRef_ZoneTypeEnergy_optional;
+        typedef ::xsd::cxx::tree::optional< ClassRef_ZoneTypeEnergy_type, false > ClassRef_ZoneTypeEnergy_optional;
         typedef ::xsd::cxx::tree::traits< ClassRef_ZoneTypeEnergy_type, char > ClassRef_ZoneTypeEnergy_traits;
 
         const ClassRef_ZoneTypeEnergy_optional&
@@ -451,7 +451,7 @@ namespace schema
         // AssignedSchedule
         //
         typedef ::xml_schema::idref AssignedSchedule_type;
-        typedef ::xsd::cxx::tree::optional< AssignedSchedule_type > AssignedSchedule_optional;
+        typedef ::xsd::cxx::tree::optional< AssignedSchedule_type, false > AssignedSchedule_optional;
         typedef ::xsd::cxx::tree::traits< AssignedSchedule_type, char > AssignedSchedule_traits;
 
         const AssignedSchedule_optional&
@@ -472,7 +472,7 @@ namespace schema
         // SimSpatialZone_DirRelNorth
         //
         typedef ::xml_schema::double_ SimSpatialZone_DirRelNorth_type;
-        typedef ::xsd::cxx::tree::optional< SimSpatialZone_DirRelNorth_type > SimSpatialZone_DirRelNorth_optional;
+        typedef ::xsd::cxx::tree::optional< SimSpatialZone_DirRelNorth_type, true > SimSpatialZone_DirRelNorth_optional;
         typedef ::xsd::cxx::tree::traits< SimSpatialZone_DirRelNorth_type, char, ::xsd::cxx::tree::schema_type::double_ > SimSpatialZone_DirRelNorth_traits;
 
         const SimSpatialZone_DirRelNorth_optional&
@@ -490,7 +490,7 @@ namespace schema
         // SimSpatialZone_XOrigin
         //
         typedef ::xml_schema::double_ SimSpatialZone_XOrigin_type;
-        typedef ::xsd::cxx::tree::optional< SimSpatialZone_XOrigin_type > SimSpatialZone_XOrigin_optional;
+        typedef ::xsd::cxx::tree::optional< SimSpatialZone_XOrigin_type, true > SimSpatialZone_XOrigin_optional;
         typedef ::xsd::cxx::tree::traits< SimSpatialZone_XOrigin_type, char, ::xsd::cxx::tree::schema_type::double_ > SimSpatialZone_XOrigin_traits;
 
         const SimSpatialZone_XOrigin_optional&
@@ -508,7 +508,7 @@ namespace schema
         // SimSpatialZone_YOrigin
         //
         typedef ::xml_schema::double_ SimSpatialZone_YOrigin_type;
-        typedef ::xsd::cxx::tree::optional< SimSpatialZone_YOrigin_type > SimSpatialZone_YOrigin_optional;
+        typedef ::xsd::cxx::tree::optional< SimSpatialZone_YOrigin_type, true > SimSpatialZone_YOrigin_optional;
         typedef ::xsd::cxx::tree::traits< SimSpatialZone_YOrigin_type, char, ::xsd::cxx::tree::schema_type::double_ > SimSpatialZone_YOrigin_traits;
 
         const SimSpatialZone_YOrigin_optional&
@@ -526,7 +526,7 @@ namespace schema
         // SimSpatialZone_ZOrigin
         //
         typedef ::xml_schema::double_ SimSpatialZone_ZOrigin_type;
-        typedef ::xsd::cxx::tree::optional< SimSpatialZone_ZOrigin_type > SimSpatialZone_ZOrigin_optional;
+        typedef ::xsd::cxx::tree::optional< SimSpatialZone_ZOrigin_type, true > SimSpatialZone_ZOrigin_optional;
         typedef ::xsd::cxx::tree::traits< SimSpatialZone_ZOrigin_type, char, ::xsd::cxx::tree::schema_type::double_ > SimSpatialZone_ZOrigin_traits;
 
         const SimSpatialZone_ZOrigin_optional&
@@ -544,7 +544,7 @@ namespace schema
         // SimSpatialZone_Type
         //
         typedef ::xml_schema::int_ SimSpatialZone_Type_type;
-        typedef ::xsd::cxx::tree::optional< SimSpatialZone_Type_type > SimSpatialZone_Type_optional;
+        typedef ::xsd::cxx::tree::optional< SimSpatialZone_Type_type, true > SimSpatialZone_Type_optional;
         typedef ::xsd::cxx::tree::traits< SimSpatialZone_Type_type, char > SimSpatialZone_Type_traits;
 
         const SimSpatialZone_Type_optional&
@@ -562,7 +562,7 @@ namespace schema
         // SimSpatialZone_Mult
         //
         typedef ::xml_schema::int_ SimSpatialZone_Mult_type;
-        typedef ::xsd::cxx::tree::optional< SimSpatialZone_Mult_type > SimSpatialZone_Mult_optional;
+        typedef ::xsd::cxx::tree::optional< SimSpatialZone_Mult_type, true > SimSpatialZone_Mult_optional;
         typedef ::xsd::cxx::tree::traits< SimSpatialZone_Mult_type, char > SimSpatialZone_Mult_traits;
 
         const SimSpatialZone_Mult_optional&
@@ -580,7 +580,7 @@ namespace schema
         // SimSpatialZone_CeilingHt
         //
         typedef ::xml_schema::double_ SimSpatialZone_CeilingHt_type;
-        typedef ::xsd::cxx::tree::optional< SimSpatialZone_CeilingHt_type > SimSpatialZone_CeilingHt_optional;
+        typedef ::xsd::cxx::tree::optional< SimSpatialZone_CeilingHt_type, true > SimSpatialZone_CeilingHt_optional;
         typedef ::xsd::cxx::tree::traits< SimSpatialZone_CeilingHt_type, char, ::xsd::cxx::tree::schema_type::double_ > SimSpatialZone_CeilingHt_traits;
 
         const SimSpatialZone_CeilingHt_optional&
@@ -598,7 +598,7 @@ namespace schema
         // SimSpatialZone_Volume
         //
         typedef ::xml_schema::double_ SimSpatialZone_Volume_type;
-        typedef ::xsd::cxx::tree::optional< SimSpatialZone_Volume_type > SimSpatialZone_Volume_optional;
+        typedef ::xsd::cxx::tree::optional< SimSpatialZone_Volume_type, true > SimSpatialZone_Volume_optional;
         typedef ::xsd::cxx::tree::traits< SimSpatialZone_Volume_type, char, ::xsd::cxx::tree::schema_type::double_ > SimSpatialZone_Volume_traits;
 
         const SimSpatialZone_Volume_optional&
@@ -616,7 +616,7 @@ namespace schema
         // SimSpatialZone_FloorArea
         //
         typedef ::xml_schema::double_ SimSpatialZone_FloorArea_type;
-        typedef ::xsd::cxx::tree::optional< SimSpatialZone_FloorArea_type > SimSpatialZone_FloorArea_optional;
+        typedef ::xsd::cxx::tree::optional< SimSpatialZone_FloorArea_type, true > SimSpatialZone_FloorArea_optional;
         typedef ::xsd::cxx::tree::traits< SimSpatialZone_FloorArea_type, char, ::xsd::cxx::tree::schema_type::double_ > SimSpatialZone_FloorArea_traits;
 
         const SimSpatialZone_FloorArea_optional&
@@ -634,7 +634,7 @@ namespace schema
         // SimSpatialZone_ZoneInsideConvAlgo
         //
         typedef ::xml_schema::string SimSpatialZone_ZoneInsideConvAlgo_type;
-        typedef ::xsd::cxx::tree::optional< SimSpatialZone_ZoneInsideConvAlgo_type > SimSpatialZone_ZoneInsideConvAlgo_optional;
+        typedef ::xsd::cxx::tree::optional< SimSpatialZone_ZoneInsideConvAlgo_type, false > SimSpatialZone_ZoneInsideConvAlgo_optional;
         typedef ::xsd::cxx::tree::traits< SimSpatialZone_ZoneInsideConvAlgo_type, char > SimSpatialZone_ZoneInsideConvAlgo_traits;
 
         const SimSpatialZone_ZoneInsideConvAlgo_optional&
@@ -655,7 +655,7 @@ namespace schema
         // SimSpatialZone_ZoneOutsdConvAlgo
         //
         typedef ::xml_schema::string SimSpatialZone_ZoneOutsdConvAlgo_type;
-        typedef ::xsd::cxx::tree::optional< SimSpatialZone_ZoneOutsdConvAlgo_type > SimSpatialZone_ZoneOutsdConvAlgo_optional;
+        typedef ::xsd::cxx::tree::optional< SimSpatialZone_ZoneOutsdConvAlgo_type, false > SimSpatialZone_ZoneOutsdConvAlgo_optional;
         typedef ::xsd::cxx::tree::traits< SimSpatialZone_ZoneOutsdConvAlgo_type, char > SimSpatialZone_ZoneOutsdConvAlgo_traits;
 
         const SimSpatialZone_ZoneOutsdConvAlgo_optional&
@@ -676,7 +676,7 @@ namespace schema
         // SimSpatialZone_PartTotalFlrArea
         //
         typedef ::xml_schema::string SimSpatialZone_PartTotalFlrArea_type;
-        typedef ::xsd::cxx::tree::optional< SimSpatialZone_PartTotalFlrArea_type > SimSpatialZone_PartTotalFlrArea_optional;
+        typedef ::xsd::cxx::tree::optional< SimSpatialZone_PartTotalFlrArea_type, false > SimSpatialZone_PartTotalFlrArea_optional;
         typedef ::xsd::cxx::tree::traits< SimSpatialZone_PartTotalFlrArea_type, char > SimSpatialZone_PartTotalFlrArea_traits;
 
         const SimSpatialZone_PartTotalFlrArea_optional&
@@ -697,7 +697,7 @@ namespace schema
         // ZoneProp_UserViewFactors_bySurfName_ZoneName
         //
         typedef ::xml_schema::idref ZoneProp_UserViewFactors_bySurfName_ZoneName_type;
-        typedef ::xsd::cxx::tree::optional< ZoneProp_UserViewFactors_bySurfName_ZoneName_type > ZoneProp_UserViewFactors_bySurfName_ZoneName_optional;
+        typedef ::xsd::cxx::tree::optional< ZoneProp_UserViewFactors_bySurfName_ZoneName_type, false > ZoneProp_UserViewFactors_bySurfName_ZoneName_optional;
         typedef ::xsd::cxx::tree::traits< ZoneProp_UserViewFactors_bySurfName_ZoneName_type, char > ZoneProp_UserViewFactors_bySurfName_ZoneName_traits;
 
         const ZoneProp_UserViewFactors_bySurfName_ZoneName_optional&
@@ -781,7 +781,7 @@ namespace schema
         // RmAirModelType_ZoneName
         //
         typedef ::xml_schema::idref RmAirModelType_ZoneName_type;
-        typedef ::xsd::cxx::tree::optional< RmAirModelType_ZoneName_type > RmAirModelType_ZoneName_optional;
+        typedef ::xsd::cxx::tree::optional< RmAirModelType_ZoneName_type, false > RmAirModelType_ZoneName_optional;
         typedef ::xsd::cxx::tree::traits< RmAirModelType_ZoneName_type, char > RmAirModelType_ZoneName_traits;
 
         const RmAirModelType_ZoneName_optional&
@@ -802,7 +802,7 @@ namespace schema
         // RmAirModelType_RoomAirModType
         //
         typedef ::xml_schema::string RmAirModelType_RoomAirModType_type;
-        typedef ::xsd::cxx::tree::optional< RmAirModelType_RoomAirModType_type > RmAirModelType_RoomAirModType_optional;
+        typedef ::xsd::cxx::tree::optional< RmAirModelType_RoomAirModType_type, false > RmAirModelType_RoomAirModType_optional;
         typedef ::xsd::cxx::tree::traits< RmAirModelType_RoomAirModType_type, char > RmAirModelType_RoomAirModType_traits;
 
         const RmAirModelType_RoomAirModType_optional&
@@ -823,7 +823,7 @@ namespace schema
         // RmAirModelType_AirTempCplngStrat
         //
         typedef ::xml_schema::string RmAirModelType_AirTempCplngStrat_type;
-        typedef ::xsd::cxx::tree::optional< RmAirModelType_AirTempCplngStrat_type > RmAirModelType_AirTempCplngStrat_optional;
+        typedef ::xsd::cxx::tree::optional< RmAirModelType_AirTempCplngStrat_type, false > RmAirModelType_AirTempCplngStrat_optional;
         typedef ::xsd::cxx::tree::traits< RmAirModelType_AirTempCplngStrat_type, char > RmAirModelType_AirTempCplngStrat_traits;
 
         const RmAirModelType_AirTempCplngStrat_optional&
@@ -844,7 +844,7 @@ namespace schema
         // ZoneAirBalance_OutdoorAir_ZoneName
         //
         typedef ::xml_schema::idref ZoneAirBalance_OutdoorAir_ZoneName_type;
-        typedef ::xsd::cxx::tree::optional< ZoneAirBalance_OutdoorAir_ZoneName_type > ZoneAirBalance_OutdoorAir_ZoneName_optional;
+        typedef ::xsd::cxx::tree::optional< ZoneAirBalance_OutdoorAir_ZoneName_type, false > ZoneAirBalance_OutdoorAir_ZoneName_optional;
         typedef ::xsd::cxx::tree::traits< ZoneAirBalance_OutdoorAir_ZoneName_type, char > ZoneAirBalance_OutdoorAir_ZoneName_traits;
 
         const ZoneAirBalance_OutdoorAir_ZoneName_optional&
@@ -865,7 +865,7 @@ namespace schema
         // ZoneAirBalance_OutdoorAir_AirBalanceMethod
         //
         typedef ::xml_schema::string ZoneAirBalance_OutdoorAir_AirBalanceMethod_type;
-        typedef ::xsd::cxx::tree::optional< ZoneAirBalance_OutdoorAir_AirBalanceMethod_type > ZoneAirBalance_OutdoorAir_AirBalanceMethod_optional;
+        typedef ::xsd::cxx::tree::optional< ZoneAirBalance_OutdoorAir_AirBalanceMethod_type, false > ZoneAirBalance_OutdoorAir_AirBalanceMethod_optional;
         typedef ::xsd::cxx::tree::traits< ZoneAirBalance_OutdoorAir_AirBalanceMethod_type, char > ZoneAirBalance_OutdoorAir_AirBalanceMethod_traits;
 
         const ZoneAirBalance_OutdoorAir_AirBalanceMethod_optional&
@@ -886,7 +886,7 @@ namespace schema
         // ZoneAirBalance_OutdoorAir_InducedOutdrAirDueToUnbalDuctLeak
         //
         typedef ::xml_schema::double_ ZoneAirBalance_OutdoorAir_InducedOutdrAirDueToUnbalDuctLeak_type;
-        typedef ::xsd::cxx::tree::optional< ZoneAirBalance_OutdoorAir_InducedOutdrAirDueToUnbalDuctLeak_type > ZoneAirBalance_OutdoorAir_InducedOutdrAirDueToUnbalDuctLeak_optional;
+        typedef ::xsd::cxx::tree::optional< ZoneAirBalance_OutdoorAir_InducedOutdrAirDueToUnbalDuctLeak_type, true > ZoneAirBalance_OutdoorAir_InducedOutdrAirDueToUnbalDuctLeak_optional;
         typedef ::xsd::cxx::tree::traits< ZoneAirBalance_OutdoorAir_InducedOutdrAirDueToUnbalDuctLeak_type, char, ::xsd::cxx::tree::schema_type::double_ > ZoneAirBalance_OutdoorAir_InducedOutdrAirDueToUnbalDuctLeak_traits;
 
         const ZoneAirBalance_OutdoorAir_InducedOutdrAirDueToUnbalDuctLeak_optional&
@@ -904,7 +904,7 @@ namespace schema
         // ZoneAirBalance_OutdoorAir_InducedOutdrAirScheduleName
         //
         typedef ::xml_schema::idref ZoneAirBalance_OutdoorAir_InducedOutdrAirScheduleName_type;
-        typedef ::xsd::cxx::tree::optional< ZoneAirBalance_OutdoorAir_InducedOutdrAirScheduleName_type > ZoneAirBalance_OutdoorAir_InducedOutdrAirScheduleName_optional;
+        typedef ::xsd::cxx::tree::optional< ZoneAirBalance_OutdoorAir_InducedOutdrAirScheduleName_type, false > ZoneAirBalance_OutdoorAir_InducedOutdrAirScheduleName_optional;
         typedef ::xsd::cxx::tree::traits< ZoneAirBalance_OutdoorAir_InducedOutdrAirScheduleName_type, char > ZoneAirBalance_OutdoorAir_InducedOutdrAirScheduleName_traits;
 
         const ZoneAirBalance_OutdoorAir_InducedOutdrAirScheduleName_optional&
@@ -925,7 +925,7 @@ namespace schema
         // ZoneHVAC_EquipConnections_ZoneName
         //
         typedef ::xml_schema::idref ZoneHVAC_EquipConnections_ZoneName_type;
-        typedef ::xsd::cxx::tree::optional< ZoneHVAC_EquipConnections_ZoneName_type > ZoneHVAC_EquipConnections_ZoneName_optional;
+        typedef ::xsd::cxx::tree::optional< ZoneHVAC_EquipConnections_ZoneName_type, false > ZoneHVAC_EquipConnections_ZoneName_optional;
         typedef ::xsd::cxx::tree::traits< ZoneHVAC_EquipConnections_ZoneName_type, char > ZoneHVAC_EquipConnections_ZoneName_traits;
 
         const ZoneHVAC_EquipConnections_ZoneName_optional&
@@ -946,7 +946,7 @@ namespace schema
         // ZoneHVAC_EquipConnections_ZoneCondEqmtListName
         //
         typedef ::xml_schema::idref ZoneHVAC_EquipConnections_ZoneCondEqmtListName_type;
-        typedef ::xsd::cxx::tree::optional< ZoneHVAC_EquipConnections_ZoneCondEqmtListName_type > ZoneHVAC_EquipConnections_ZoneCondEqmtListName_optional;
+        typedef ::xsd::cxx::tree::optional< ZoneHVAC_EquipConnections_ZoneCondEqmtListName_type, false > ZoneHVAC_EquipConnections_ZoneCondEqmtListName_optional;
         typedef ::xsd::cxx::tree::traits< ZoneHVAC_EquipConnections_ZoneCondEqmtListName_type, char > ZoneHVAC_EquipConnections_ZoneCondEqmtListName_traits;
 
         const ZoneHVAC_EquipConnections_ZoneCondEqmtListName_optional&
@@ -967,7 +967,7 @@ namespace schema
         // ZoneHVAC_EquipConnections_ZoneAirInletNodeOrNodeListName
         //
         typedef ::xml_schema::string ZoneHVAC_EquipConnections_ZoneAirInletNodeOrNodeListName_type;
-        typedef ::xsd::cxx::tree::optional< ZoneHVAC_EquipConnections_ZoneAirInletNodeOrNodeListName_type > ZoneHVAC_EquipConnections_ZoneAirInletNodeOrNodeListName_optional;
+        typedef ::xsd::cxx::tree::optional< ZoneHVAC_EquipConnections_ZoneAirInletNodeOrNodeListName_type, false > ZoneHVAC_EquipConnections_ZoneAirInletNodeOrNodeListName_optional;
         typedef ::xsd::cxx::tree::traits< ZoneHVAC_EquipConnections_ZoneAirInletNodeOrNodeListName_type, char > ZoneHVAC_EquipConnections_ZoneAirInletNodeOrNodeListName_traits;
 
         const ZoneHVAC_EquipConnections_ZoneAirInletNodeOrNodeListName_optional&
@@ -988,7 +988,7 @@ namespace schema
         // ZoneHVAC_EquipConnections_ZoneAirExhaustNodeOrNodeListName
         //
         typedef ::xml_schema::string ZoneHVAC_EquipConnections_ZoneAirExhaustNodeOrNodeListName_type;
-        typedef ::xsd::cxx::tree::optional< ZoneHVAC_EquipConnections_ZoneAirExhaustNodeOrNodeListName_type > ZoneHVAC_EquipConnections_ZoneAirExhaustNodeOrNodeListName_optional;
+        typedef ::xsd::cxx::tree::optional< ZoneHVAC_EquipConnections_ZoneAirExhaustNodeOrNodeListName_type, false > ZoneHVAC_EquipConnections_ZoneAirExhaustNodeOrNodeListName_optional;
         typedef ::xsd::cxx::tree::traits< ZoneHVAC_EquipConnections_ZoneAirExhaustNodeOrNodeListName_type, char > ZoneHVAC_EquipConnections_ZoneAirExhaustNodeOrNodeListName_traits;
 
         const ZoneHVAC_EquipConnections_ZoneAirExhaustNodeOrNodeListName_optional&
@@ -1009,7 +1009,7 @@ namespace schema
         // ZoneHVAC_EquipConnections_ZoneAirNodeName
         //
         typedef ::xml_schema::string ZoneHVAC_EquipConnections_ZoneAirNodeName_type;
-        typedef ::xsd::cxx::tree::optional< ZoneHVAC_EquipConnections_ZoneAirNodeName_type > ZoneHVAC_EquipConnections_ZoneAirNodeName_optional;
+        typedef ::xsd::cxx::tree::optional< ZoneHVAC_EquipConnections_ZoneAirNodeName_type, false > ZoneHVAC_EquipConnections_ZoneAirNodeName_optional;
         typedef ::xsd::cxx::tree::traits< ZoneHVAC_EquipConnections_ZoneAirNodeName_type, char > ZoneHVAC_EquipConnections_ZoneAirNodeName_traits;
 
         const ZoneHVAC_EquipConnections_ZoneAirNodeName_optional&
@@ -1030,7 +1030,7 @@ namespace schema
         // ZoneHVAC_EquipConnections_ZoneReturnAirNodeName
         //
         typedef ::xml_schema::string ZoneHVAC_EquipConnections_ZoneReturnAirNodeName_type;
-        typedef ::xsd::cxx::tree::optional< ZoneHVAC_EquipConnections_ZoneReturnAirNodeName_type > ZoneHVAC_EquipConnections_ZoneReturnAirNodeName_optional;
+        typedef ::xsd::cxx::tree::optional< ZoneHVAC_EquipConnections_ZoneReturnAirNodeName_type, false > ZoneHVAC_EquipConnections_ZoneReturnAirNodeName_optional;
         typedef ::xsd::cxx::tree::traits< ZoneHVAC_EquipConnections_ZoneReturnAirNodeName_type, char > ZoneHVAC_EquipConnections_ZoneReturnAirNodeName_traits;
 
         const ZoneHVAC_EquipConnections_ZoneReturnAirNodeName_optional&

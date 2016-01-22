@@ -263,7 +263,7 @@ namespace schema
         // SimCntrl_Name
         //
         typedef ::xml_schema::string SimCntrl_Name_type;
-        typedef ::xsd::cxx::tree::optional< SimCntrl_Name_type > SimCntrl_Name_optional;
+        typedef ::xsd::cxx::tree::optional< SimCntrl_Name_type, false > SimCntrl_Name_optional;
         typedef ::xsd::cxx::tree::traits< SimCntrl_Name_type, char > SimCntrl_Name_traits;
 
         const SimCntrl_Name_optional&
@@ -284,7 +284,7 @@ namespace schema
         // SimCntrl_ZoneOrZoneListName
         //
         typedef ::xml_schema::idref SimCntrl_ZoneOrZoneListName_type;
-        typedef ::xsd::cxx::tree::optional< SimCntrl_ZoneOrZoneListName_type > SimCntrl_ZoneOrZoneListName_optional;
+        typedef ::xsd::cxx::tree::optional< SimCntrl_ZoneOrZoneListName_type, false > SimCntrl_ZoneOrZoneListName_optional;
         typedef ::xsd::cxx::tree::traits< SimCntrl_ZoneOrZoneListName_type, char > SimCntrl_ZoneOrZoneListName_traits;
 
         const SimCntrl_ZoneOrZoneListName_optional&

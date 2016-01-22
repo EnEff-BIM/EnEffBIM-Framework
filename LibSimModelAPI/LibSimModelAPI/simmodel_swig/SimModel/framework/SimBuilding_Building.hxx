@@ -50,7 +50,7 @@
 #include <xsd/cxx/config.hxx>
 
 #if (XSD_INT_VERSION != 4000000L)
-//#error XSD runtime version mismatch
+////#error XSD runtime version mismatch
 #endif
 
 #include <xsd/cxx/pre.hxx>
@@ -263,7 +263,7 @@ namespace schema
         // SimBuilding_Name
         //
         typedef ::xml_schema::string SimBuilding_Name_type;
-        typedef ::xsd::cxx::tree::optional< SimBuilding_Name_type > SimBuilding_Name_optional;
+        typedef ::xsd::cxx::tree::optional< SimBuilding_Name_type, false > SimBuilding_Name_optional;
         typedef ::xsd::cxx::tree::traits< SimBuilding_Name_type, char > SimBuilding_Name_traits;
 
         const SimBuilding_Name_optional&
@@ -284,7 +284,7 @@ namespace schema
         // SimBuilding_NorthAxis
         //
         typedef ::xml_schema::double_ SimBuilding_NorthAxis_type;
-        typedef ::xsd::cxx::tree::optional< SimBuilding_NorthAxis_type > SimBuilding_NorthAxis_optional;
+        typedef ::xsd::cxx::tree::optional< SimBuilding_NorthAxis_type, true > SimBuilding_NorthAxis_optional;
         typedef ::xsd::cxx::tree::traits< SimBuilding_NorthAxis_type, char, ::xsd::cxx::tree::schema_type::double_ > SimBuilding_NorthAxis_traits;
 
         const SimBuilding_NorthAxis_optional&
@@ -302,7 +302,7 @@ namespace schema
         // SimBuilding_Terrain
         //
         typedef ::xml_schema::string SimBuilding_Terrain_type;
-        typedef ::xsd::cxx::tree::optional< SimBuilding_Terrain_type > SimBuilding_Terrain_optional;
+        typedef ::xsd::cxx::tree::optional< SimBuilding_Terrain_type, false > SimBuilding_Terrain_optional;
         typedef ::xsd::cxx::tree::traits< SimBuilding_Terrain_type, char > SimBuilding_Terrain_traits;
 
         const SimBuilding_Terrain_optional&
@@ -323,7 +323,7 @@ namespace schema
         // SimBuilding_LoadsConvergTolVal
         //
         typedef ::xml_schema::double_ SimBuilding_LoadsConvergTolVal_type;
-        typedef ::xsd::cxx::tree::optional< SimBuilding_LoadsConvergTolVal_type > SimBuilding_LoadsConvergTolVal_optional;
+        typedef ::xsd::cxx::tree::optional< SimBuilding_LoadsConvergTolVal_type, true > SimBuilding_LoadsConvergTolVal_optional;
         typedef ::xsd::cxx::tree::traits< SimBuilding_LoadsConvergTolVal_type, char, ::xsd::cxx::tree::schema_type::double_ > SimBuilding_LoadsConvergTolVal_traits;
 
         const SimBuilding_LoadsConvergTolVal_optional&
@@ -341,7 +341,7 @@ namespace schema
         // SimBuilding_TempConvergTolVal
         //
         typedef ::xml_schema::double_ SimBuilding_TempConvergTolVal_type;
-        typedef ::xsd::cxx::tree::optional< SimBuilding_TempConvergTolVal_type > SimBuilding_TempConvergTolVal_optional;
+        typedef ::xsd::cxx::tree::optional< SimBuilding_TempConvergTolVal_type, true > SimBuilding_TempConvergTolVal_optional;
         typedef ::xsd::cxx::tree::traits< SimBuilding_TempConvergTolVal_type, char, ::xsd::cxx::tree::schema_type::double_ > SimBuilding_TempConvergTolVal_traits;
 
         const SimBuilding_TempConvergTolVal_optional&
@@ -359,7 +359,7 @@ namespace schema
         // SimBuilding_SolarDist
         //
         typedef ::xml_schema::string SimBuilding_SolarDist_type;
-        typedef ::xsd::cxx::tree::optional< SimBuilding_SolarDist_type > SimBuilding_SolarDist_optional;
+        typedef ::xsd::cxx::tree::optional< SimBuilding_SolarDist_type, false > SimBuilding_SolarDist_optional;
         typedef ::xsd::cxx::tree::traits< SimBuilding_SolarDist_type, char > SimBuilding_SolarDist_traits;
 
         const SimBuilding_SolarDist_optional&
@@ -380,7 +380,7 @@ namespace schema
         // SimBuilding_MaxNumWarmupDays
         //
         typedef ::xml_schema::int_ SimBuilding_MaxNumWarmupDays_type;
-        typedef ::xsd::cxx::tree::optional< SimBuilding_MaxNumWarmupDays_type > SimBuilding_MaxNumWarmupDays_optional;
+        typedef ::xsd::cxx::tree::optional< SimBuilding_MaxNumWarmupDays_type, true > SimBuilding_MaxNumWarmupDays_optional;
         typedef ::xsd::cxx::tree::traits< SimBuilding_MaxNumWarmupDays_type, char > SimBuilding_MaxNumWarmupDays_traits;
 
         const SimBuilding_MaxNumWarmupDays_optional&
@@ -398,7 +398,7 @@ namespace schema
         // SimBuilding_MinNumberWarmupDays
         //
         typedef ::xml_schema::int_ SimBuilding_MinNumberWarmupDays_type;
-        typedef ::xsd::cxx::tree::optional< SimBuilding_MinNumberWarmupDays_type > SimBuilding_MinNumberWarmupDays_optional;
+        typedef ::xsd::cxx::tree::optional< SimBuilding_MinNumberWarmupDays_type, true > SimBuilding_MinNumberWarmupDays_optional;
         typedef ::xsd::cxx::tree::traits< SimBuilding_MinNumberWarmupDays_type, char > SimBuilding_MinNumberWarmupDays_traits;
 
         const SimBuilding_MinNumberWarmupDays_optional&
@@ -416,7 +416,7 @@ namespace schema
         // RoofIrrigation_IrrigationModelType
         //
         typedef ::xml_schema::string RoofIrrigation_IrrigationModelType_type;
-        typedef ::xsd::cxx::tree::optional< RoofIrrigation_IrrigationModelType_type > RoofIrrigation_IrrigationModelType_optional;
+        typedef ::xsd::cxx::tree::optional< RoofIrrigation_IrrigationModelType_type, false > RoofIrrigation_IrrigationModelType_optional;
         typedef ::xsd::cxx::tree::traits< RoofIrrigation_IrrigationModelType_type, char > RoofIrrigation_IrrigationModelType_traits;
 
         const RoofIrrigation_IrrigationModelType_optional&
@@ -437,7 +437,7 @@ namespace schema
         // RoofIrrigation_IrrigationRateSchedName
         //
         typedef ::xml_schema::idref RoofIrrigation_IrrigationRateSchedName_type;
-        typedef ::xsd::cxx::tree::optional< RoofIrrigation_IrrigationRateSchedName_type > RoofIrrigation_IrrigationRateSchedName_optional;
+        typedef ::xsd::cxx::tree::optional< RoofIrrigation_IrrigationRateSchedName_type, false > RoofIrrigation_IrrigationRateSchedName_optional;
         typedef ::xsd::cxx::tree::traits< RoofIrrigation_IrrigationRateSchedName_type, char > RoofIrrigation_IrrigationRateSchedName_traits;
 
         const RoofIrrigation_IrrigationRateSchedName_optional&
@@ -458,7 +458,7 @@ namespace schema
         // RoofIrrigation_IrrigationMaxSaturatThreshold
         //
         typedef ::xml_schema::double_ RoofIrrigation_IrrigationMaxSaturatThreshold_type;
-        typedef ::xsd::cxx::tree::optional< RoofIrrigation_IrrigationMaxSaturatThreshold_type > RoofIrrigation_IrrigationMaxSaturatThreshold_optional;
+        typedef ::xsd::cxx::tree::optional< RoofIrrigation_IrrigationMaxSaturatThreshold_type, true > RoofIrrigation_IrrigationMaxSaturatThreshold_optional;
         typedef ::xsd::cxx::tree::traits< RoofIrrigation_IrrigationMaxSaturatThreshold_type, char, ::xsd::cxx::tree::schema_type::double_ > RoofIrrigation_IrrigationMaxSaturatThreshold_traits;
 
         const RoofIrrigation_IrrigationMaxSaturatThreshold_optional&
@@ -476,7 +476,7 @@ namespace schema
         // AboveGradeStoryCountAltered
         //
         typedef ::xml_schema::int_ AboveGradeStoryCountAltered_type;
-        typedef ::xsd::cxx::tree::optional< AboveGradeStoryCountAltered_type > AboveGradeStoryCountAltered_optional;
+        typedef ::xsd::cxx::tree::optional< AboveGradeStoryCountAltered_type, true > AboveGradeStoryCountAltered_optional;
         typedef ::xsd::cxx::tree::traits< AboveGradeStoryCountAltered_type, char > AboveGradeStoryCountAltered_traits;
 
         const AboveGradeStoryCountAltered_optional&
@@ -494,7 +494,7 @@ namespace schema
         // AboveGradeStoryCountExists
         //
         typedef ::xml_schema::int_ AboveGradeStoryCountExists_type;
-        typedef ::xsd::cxx::tree::optional< AboveGradeStoryCountExists_type > AboveGradeStoryCountExists_optional;
+        typedef ::xsd::cxx::tree::optional< AboveGradeStoryCountExists_type, true > AboveGradeStoryCountExists_optional;
         typedef ::xsd::cxx::tree::traits< AboveGradeStoryCountExists_type, char > AboveGradeStoryCountExists_traits;
 
         const AboveGradeStoryCountExists_optional&
@@ -512,7 +512,7 @@ namespace schema
         // AboveGradeStoryCountNew
         //
         typedef ::xml_schema::int_ AboveGradeStoryCountNew_type;
-        typedef ::xsd::cxx::tree::optional< AboveGradeStoryCountNew_type > AboveGradeStoryCountNew_optional;
+        typedef ::xsd::cxx::tree::optional< AboveGradeStoryCountNew_type, true > AboveGradeStoryCountNew_optional;
         typedef ::xsd::cxx::tree::traits< AboveGradeStoryCountNew_type, char > AboveGradeStoryCountNew_traits;
 
         const AboveGradeStoryCountNew_optional&
@@ -530,7 +530,7 @@ namespace schema
         // T24CoilCoolingCapacity
         //
         typedef ::xml_schema::double_ T24CoilCoolingCapacity_type;
-        typedef ::xsd::cxx::tree::optional< T24CoilCoolingCapacity_type > T24CoilCoolingCapacity_optional;
+        typedef ::xsd::cxx::tree::optional< T24CoilCoolingCapacity_type, true > T24CoilCoolingCapacity_optional;
         typedef ::xsd::cxx::tree::traits< T24CoilCoolingCapacity_type, char, ::xsd::cxx::tree::schema_type::double_ > T24CoilCoolingCapacity_traits;
 
         const T24CoilCoolingCapacity_optional&
@@ -548,7 +548,7 @@ namespace schema
         // T24CoilHeatingCapacity
         //
         typedef ::xml_schema::double_ T24CoilHeatingCapacity_type;
-        typedef ::xsd::cxx::tree::optional< T24CoilHeatingCapacity_type > T24CoilHeatingCapacity_optional;
+        typedef ::xsd::cxx::tree::optional< T24CoilHeatingCapacity_type, true > T24CoilHeatingCapacity_optional;
         typedef ::xsd::cxx::tree::traits< T24CoilHeatingCapacity_type, char, ::xsd::cxx::tree::schema_type::double_ > T24CoilHeatingCapacity_traits;
 
         const T24CoilHeatingCapacity_optional&
@@ -566,7 +566,7 @@ namespace schema
         // T24FunctionClassificationMethod
         //
         typedef ::xml_schema::string T24FunctionClassificationMethod_type;
-        typedef ::xsd::cxx::tree::optional< T24FunctionClassificationMethod_type > T24FunctionClassificationMethod_optional;
+        typedef ::xsd::cxx::tree::optional< T24FunctionClassificationMethod_type, false > T24FunctionClassificationMethod_optional;
         typedef ::xsd::cxx::tree::traits< T24FunctionClassificationMethod_type, char > T24FunctionClassificationMethod_traits;
 
         const T24FunctionClassificationMethod_optional&
@@ -587,7 +587,7 @@ namespace schema
         // HighRiseResidentialLivingUnitCount
         //
         typedef ::xml_schema::int_ HighRiseResidentialLivingUnitCount_type;
-        typedef ::xsd::cxx::tree::optional< HighRiseResidentialLivingUnitCount_type > HighRiseResidentialLivingUnitCount_optional;
+        typedef ::xsd::cxx::tree::optional< HighRiseResidentialLivingUnitCount_type, true > HighRiseResidentialLivingUnitCount_optional;
         typedef ::xsd::cxx::tree::traits< HighRiseResidentialLivingUnitCount_type, char > HighRiseResidentialLivingUnitCount_traits;
 
         const HighRiseResidentialLivingUnitCount_optional&
@@ -605,7 +605,7 @@ namespace schema
         // LivingUnitCountAltered
         //
         typedef ::xml_schema::int_ LivingUnitCountAltered_type;
-        typedef ::xsd::cxx::tree::optional< LivingUnitCountAltered_type > LivingUnitCountAltered_optional;
+        typedef ::xsd::cxx::tree::optional< LivingUnitCountAltered_type, true > LivingUnitCountAltered_optional;
         typedef ::xsd::cxx::tree::traits< LivingUnitCountAltered_type, char > LivingUnitCountAltered_traits;
 
         const LivingUnitCountAltered_optional&
@@ -623,7 +623,7 @@ namespace schema
         // LivingUnitCountExisting
         //
         typedef ::xml_schema::int_ LivingUnitCountExisting_type;
-        typedef ::xsd::cxx::tree::optional< LivingUnitCountExisting_type > LivingUnitCountExisting_optional;
+        typedef ::xsd::cxx::tree::optional< LivingUnitCountExisting_type, true > LivingUnitCountExisting_optional;
         typedef ::xsd::cxx::tree::traits< LivingUnitCountExisting_type, char > LivingUnitCountExisting_traits;
 
         const LivingUnitCountExisting_optional&
@@ -641,7 +641,7 @@ namespace schema
         // LivingUnitCountNew
         //
         typedef ::xml_schema::int_ LivingUnitCountNew_type;
-        typedef ::xsd::cxx::tree::optional< LivingUnitCountNew_type > LivingUnitCountNew_optional;
+        typedef ::xsd::cxx::tree::optional< LivingUnitCountNew_type, true > LivingUnitCountNew_optional;
         typedef ::xsd::cxx::tree::traits< LivingUnitCountNew_type, char > LivingUnitCountNew_traits;
 
         const LivingUnitCountNew_optional&
@@ -659,7 +659,7 @@ namespace schema
         // T24PlantCoolingCapacity
         //
         typedef ::xml_schema::double_ T24PlantCoolingCapacity_type;
-        typedef ::xsd::cxx::tree::optional< T24PlantCoolingCapacity_type > T24PlantCoolingCapacity_optional;
+        typedef ::xsd::cxx::tree::optional< T24PlantCoolingCapacity_type, true > T24PlantCoolingCapacity_optional;
         typedef ::xsd::cxx::tree::traits< T24PlantCoolingCapacity_type, char, ::xsd::cxx::tree::schema_type::double_ > T24PlantCoolingCapacity_traits;
 
         const T24PlantCoolingCapacity_optional&
@@ -677,7 +677,7 @@ namespace schema
         // T24PlantHeatingCapacity
         //
         typedef ::xml_schema::double_ T24PlantHeatingCapacity_type;
-        typedef ::xsd::cxx::tree::optional< T24PlantHeatingCapacity_type > T24PlantHeatingCapacity_optional;
+        typedef ::xsd::cxx::tree::optional< T24PlantHeatingCapacity_type, true > T24PlantHeatingCapacity_optional;
         typedef ::xsd::cxx::tree::traits< T24PlantHeatingCapacity_type, char, ::xsd::cxx::tree::schema_type::double_ > T24PlantHeatingCapacity_traits;
 
         const T24PlantHeatingCapacity_optional&
@@ -695,7 +695,7 @@ namespace schema
         // RelocatablePublicSchoolBuilding
         //
         typedef ::xml_schema::int_ RelocatablePublicSchoolBuilding_type;
-        typedef ::xsd::cxx::tree::optional< RelocatablePublicSchoolBuilding_type > RelocatablePublicSchoolBuilding_optional;
+        typedef ::xsd::cxx::tree::optional< RelocatablePublicSchoolBuilding_type, true > RelocatablePublicSchoolBuilding_optional;
         typedef ::xsd::cxx::tree::traits< RelocatablePublicSchoolBuilding_type, char > RelocatablePublicSchoolBuilding_traits;
 
         const RelocatablePublicSchoolBuilding_optional&
@@ -713,7 +713,7 @@ namespace schema
         // TotalStoryCountAltered
         //
         typedef ::xml_schema::int_ TotalStoryCountAltered_type;
-        typedef ::xsd::cxx::tree::optional< TotalStoryCountAltered_type > TotalStoryCountAltered_optional;
+        typedef ::xsd::cxx::tree::optional< TotalStoryCountAltered_type, true > TotalStoryCountAltered_optional;
         typedef ::xsd::cxx::tree::traits< TotalStoryCountAltered_type, char > TotalStoryCountAltered_traits;
 
         const TotalStoryCountAltered_optional&
@@ -731,7 +731,7 @@ namespace schema
         // TotalStoryCountExisting
         //
         typedef ::xml_schema::int_ TotalStoryCountExisting_type;
-        typedef ::xsd::cxx::tree::optional< TotalStoryCountExisting_type > TotalStoryCountExisting_optional;
+        typedef ::xsd::cxx::tree::optional< TotalStoryCountExisting_type, true > TotalStoryCountExisting_optional;
         typedef ::xsd::cxx::tree::traits< TotalStoryCountExisting_type, char > TotalStoryCountExisting_traits;
 
         const TotalStoryCountExisting_optional&
@@ -749,7 +749,7 @@ namespace schema
         // TotalStoryCountNew
         //
         typedef ::xml_schema::int_ TotalStoryCountNew_type;
-        typedef ::xsd::cxx::tree::optional< TotalStoryCountNew_type > TotalStoryCountNew_optional;
+        typedef ::xsd::cxx::tree::optional< TotalStoryCountNew_type, true > TotalStoryCountNew_optional;
         typedef ::xsd::cxx::tree::traits< TotalStoryCountNew_type, char > TotalStoryCountNew_traits;
 
         const TotalStoryCountNew_optional&

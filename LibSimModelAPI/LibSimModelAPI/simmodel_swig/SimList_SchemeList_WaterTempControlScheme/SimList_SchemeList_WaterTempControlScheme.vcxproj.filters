@@ -25,6 +25,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="SimList_SchemeList_WaterTempControlScheme.i" />
+    <CustomBuild Include="SimList_SchemeList_WaterTempControlScheme.i" />
   </ItemGroup>
 </Project>

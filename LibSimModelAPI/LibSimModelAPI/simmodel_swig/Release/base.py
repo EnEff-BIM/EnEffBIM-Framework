@@ -1469,6 +1469,178 @@ class SimPropertySetDefinition(SimResourceObject):
 SimPropertySetDefinition_swigregister = _base.SimPropertySetDefinition_swigregister
 SimPropertySetDefinition_swigregister(SimPropertySetDefinition)
 
+class decimal_optional(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, decimal_optional, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, decimal_optional, name)
+    __repr__ = _swig_repr
+
+    def __init__(self, *args):
+        this = _base.new_decimal_optional(*args)
+        try:
+            self.this.append(this)
+        except:
+            self.this = this
+
+    def __deref__(self, *args):
+        return _base.decimal_optional___deref__(self, *args)
+
+    def __ref__(self, *args):
+        return _base.decimal_optional___ref__(self, *args)
+
+    def present(self):
+        return _base.decimal_optional_present(self)
+
+    def get(self, *args):
+        return _base.decimal_optional_get(self, *args)
+
+    def getValue(self):
+        return _base.decimal_optional_getValue(self)
+
+    def set(self, y):
+        return _base.decimal_optional_set(self, y)
+
+    def reset(self):
+        return _base.decimal_optional_reset(self)
+    __swig_destroy__ = _base.delete_decimal_optional
+    __del__ = lambda self: None
+decimal_optional_swigregister = _base.decimal_optional_swigregister
+decimal_optional_swigregister(decimal_optional)
+
+class int_optional(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, int_optional, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, int_optional, name)
+    __repr__ = _swig_repr
+
+    def __init__(self, *args):
+        this = _base.new_int_optional(*args)
+        try:
+            self.this.append(this)
+        except:
+            self.this = this
+
+    def __deref__(self, *args):
+        return _base.int_optional___deref__(self, *args)
+
+    def __ref__(self, *args):
+        return _base.int_optional___ref__(self, *args)
+
+    def present(self):
+        return _base.int_optional_present(self)
+
+    def get(self, *args):
+        return _base.int_optional_get(self, *args)
+
+    def getValue(self):
+        return _base.int_optional_getValue(self)
+
+    def set(self, y):
+        return _base.int_optional_set(self, y)
+
+    def reset(self):
+        return _base.int_optional_reset(self)
+    __swig_destroy__ = _base.delete_int_optional
+    __del__ = lambda self: None
+int_optional_swigregister = _base.int_optional_swigregister
+int_optional_swigregister(int_optional)
+
+class string_optional(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, string_optional, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, string_optional, name)
+    __repr__ = _swig_repr
+    __swig_destroy__ = _base.delete_string_optional
+    __del__ = lambda self: None
+
+    def __init__(self, *args):
+        this = _base.new_string_optional(*args)
+        try:
+            self.this.append(this)
+        except:
+            self.this = this
+
+    def __deref__(self, *args):
+        return _base.string_optional___deref__(self, *args)
+
+    def __ref__(self, *args):
+        return _base.string_optional___ref__(self, *args)
+
+    def present(self):
+        return _base.string_optional_present(self)
+
+    def get(self, *args):
+        return _base.string_optional_get(self, *args)
+
+    def getValue(self):
+        return _base.string_optional_getValue(self)
+
+    def set(self, x):
+        return _base.string_optional_set(self, x)
+
+    def reset(self):
+        return _base.string_optional_reset(self)
+    __swig_setmethods__["x_"] = _base.string_optional_x__set
+    __swig_getmethods__["x_"] = _base.string_optional_x__get
+    if _newclass:
+        x_ = _swig_property(_base.string_optional_x__get, _base.string_optional_x__set)
+    __swig_setmethods__["container_"] = _base.string_optional_container__set
+    __swig_getmethods__["container_"] = _base.string_optional_container__get
+    if _newclass:
+        container_ = _swig_property(_base.string_optional_container__get, _base.string_optional_container__set)
+string_optional_swigregister = _base.string_optional_swigregister
+string_optional_swigregister(string_optional)
+
+class idref_optional(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, idref_optional, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, idref_optional, name)
+    __repr__ = _swig_repr
+    __swig_destroy__ = _base.delete_idref_optional
+    __del__ = lambda self: None
+
+    def __init__(self, *args):
+        this = _base.new_idref_optional(*args)
+        try:
+            self.this.append(this)
+        except:
+            self.this = this
+
+    def __deref__(self, *args):
+        return _base.idref_optional___deref__(self, *args)
+
+    def __ref__(self, *args):
+        return _base.idref_optional___ref__(self, *args)
+
+    def present(self):
+        return _base.idref_optional_present(self)
+
+    def get(self, *args):
+        return _base.idref_optional_get(self, *args)
+
+    def getValue(self):
+        return _base.idref_optional_getValue(self)
+
+    def set(self, x):
+        return _base.idref_optional_set(self, x)
+
+    def reset(self):
+        return _base.idref_optional_reset(self)
+    __swig_setmethods__["x_"] = _base.idref_optional_x__set
+    __swig_getmethods__["x_"] = _base.idref_optional_x__get
+    if _newclass:
+        x_ = _swig_property(_base.idref_optional_x__get, _base.idref_optional_x__set)
+    __swig_setmethods__["container_"] = _base.idref_optional_container__set
+    __swig_getmethods__["container_"] = _base.idref_optional_container__get
+    if _newclass:
+        container_ = _swig_property(_base.idref_optional_container__get, _base.idref_optional_container__set)
+idref_optional_swigregister = _base.idref_optional_swigregister
+idref_optional_swigregister(idref_optional)
+
 # This file is compatible with both classic and new-style classes.
 
 

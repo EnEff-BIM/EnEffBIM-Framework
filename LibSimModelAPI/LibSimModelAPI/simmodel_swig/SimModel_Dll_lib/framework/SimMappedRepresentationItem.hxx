@@ -263,7 +263,7 @@ namespace schema
         // MappingSource
         //
         typedef ::xml_schema::idref MappingSource_type;
-        typedef ::xsd::cxx::tree::optional< MappingSource_type > MappingSource_optional;
+        typedef ::xsd::cxx::tree::optional< MappingSource_type, false > MappingSource_optional;
         typedef ::xsd::cxx::tree::traits< MappingSource_type, char > MappingSource_traits;
 
         const MappingSource_optional&
@@ -284,7 +284,7 @@ namespace schema
         // MappingTarget
         //
         typedef ::xml_schema::idref MappingTarget_type;
-        typedef ::xsd::cxx::tree::optional< MappingTarget_type > MappingTarget_optional;
+        typedef ::xsd::cxx::tree::optional< MappingTarget_type, false > MappingTarget_optional;
         typedef ::xsd::cxx::tree::traits< MappingTarget_type, char > MappingTarget_traits;
 
         const MappingTarget_optional&

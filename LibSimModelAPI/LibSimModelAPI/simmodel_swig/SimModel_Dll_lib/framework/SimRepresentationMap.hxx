@@ -263,7 +263,7 @@ namespace schema
         // MappingOrigin
         //
         typedef ::xml_schema::idref MappingOrigin_type;
-        typedef ::xsd::cxx::tree::optional< MappingOrigin_type > MappingOrigin_optional;
+        typedef ::xsd::cxx::tree::optional< MappingOrigin_type, false > MappingOrigin_optional;
         typedef ::xsd::cxx::tree::traits< MappingOrigin_type, char > MappingOrigin_traits;
 
         const MappingOrigin_optional&
@@ -284,7 +284,7 @@ namespace schema
         // MappedRepresentation
         //
         typedef ::xml_schema::idref MappedRepresentation_type;
-        typedef ::xsd::cxx::tree::optional< MappedRepresentation_type > MappedRepresentation_optional;
+        typedef ::xsd::cxx::tree::optional< MappedRepresentation_type, false > MappedRepresentation_optional;
         typedef ::xsd::cxx::tree::traits< MappedRepresentation_type, char > MappedRepresentation_traits;
 
         const MappedRepresentation_optional&

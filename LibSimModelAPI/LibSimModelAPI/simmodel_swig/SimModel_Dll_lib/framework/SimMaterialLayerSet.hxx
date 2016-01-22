@@ -295,7 +295,7 @@ namespace schema
         // LayerSetName
         //
         typedef ::xml_schema::string LayerSetName_type;
-        typedef ::xsd::cxx::tree::optional< LayerSetName_type > LayerSetName_optional;
+        typedef ::xsd::cxx::tree::optional< LayerSetName_type, false > LayerSetName_optional;
         typedef ::xsd::cxx::tree::traits< LayerSetName_type, char > LayerSetName_traits;
 
         const LayerSetName_optional&
@@ -337,7 +337,7 @@ namespace schema
         // CompositeThermalTrans
         //
         typedef ::xml_schema::double_ CompositeThermalTrans_type;
-        typedef ::xsd::cxx::tree::optional< CompositeThermalTrans_type > CompositeThermalTrans_optional;
+        typedef ::xsd::cxx::tree::optional< CompositeThermalTrans_type, true > CompositeThermalTrans_optional;
         typedef ::xsd::cxx::tree::traits< CompositeThermalTrans_type, char, ::xsd::cxx::tree::schema_type::double_ > CompositeThermalTrans_traits;
 
         const CompositeThermalTrans_optional&

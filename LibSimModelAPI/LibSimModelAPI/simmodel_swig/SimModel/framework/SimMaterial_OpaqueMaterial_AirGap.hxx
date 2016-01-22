@@ -263,7 +263,7 @@ namespace schema
         // SimMaterial_Name
         //
         typedef ::xml_schema::string SimMaterial_Name_type;
-        typedef ::xsd::cxx::tree::optional< SimMaterial_Name_type > SimMaterial_Name_optional;
+        typedef ::xsd::cxx::tree::optional< SimMaterial_Name_type, false > SimMaterial_Name_optional;
         typedef ::xsd::cxx::tree::traits< SimMaterial_Name_type, char > SimMaterial_Name_traits;
 
         const SimMaterial_Name_optional&
@@ -284,7 +284,7 @@ namespace schema
         // SimMaterial_ThermalResist
         //
         typedef ::xml_schema::double_ SimMaterial_ThermalResist_type;
-        typedef ::xsd::cxx::tree::optional< SimMaterial_ThermalResist_type > SimMaterial_ThermalResist_optional;
+        typedef ::xsd::cxx::tree::optional< SimMaterial_ThermalResist_type, true > SimMaterial_ThermalResist_optional;
         typedef ::xsd::cxx::tree::traits< SimMaterial_ThermalResist_type, char, ::xsd::cxx::tree::schema_type::double_ > SimMaterial_ThermalResist_traits;
 
         const SimMaterial_ThermalResist_optional&

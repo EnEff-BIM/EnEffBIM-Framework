@@ -263,7 +263,7 @@ namespace schema
         // Name
         //
         typedef ::xml_schema::string Name_type;
-        typedef ::xsd::cxx::tree::optional< Name_type > Name_optional;
+        typedef ::xsd::cxx::tree::optional< Name_type, false > Name_optional;
         typedef ::xsd::cxx::tree::traits< Name_type, char > Name_traits;
 
         const Name_optional&
@@ -284,7 +284,7 @@ namespace schema
         // Representation
         //
         typedef ::xml_schema::idref Representation_type;
-        typedef ::xsd::cxx::tree::optional< Representation_type > Representation_optional;
+        typedef ::xsd::cxx::tree::optional< Representation_type, false > Representation_optional;
         typedef ::xsd::cxx::tree::traits< Representation_type, char > Representation_traits;
 
         const Representation_optional&
@@ -305,7 +305,7 @@ namespace schema
         // OverallHeight
         //
         typedef ::xml_schema::double_ OverallHeight_type;
-        typedef ::xsd::cxx::tree::optional< OverallHeight_type > OverallHeight_optional;
+        typedef ::xsd::cxx::tree::optional< OverallHeight_type, true > OverallHeight_optional;
         typedef ::xsd::cxx::tree::traits< OverallHeight_type, char, ::xsd::cxx::tree::schema_type::double_ > OverallHeight_traits;
 
         const OverallHeight_optional&
@@ -323,7 +323,7 @@ namespace schema
         // OverallWidth
         //
         typedef ::xml_schema::double_ OverallWidth_type;
-        typedef ::xsd::cxx::tree::optional< OverallWidth_type > OverallWidth_optional;
+        typedef ::xsd::cxx::tree::optional< OverallWidth_type, true > OverallWidth_optional;
         typedef ::xsd::cxx::tree::traits< OverallWidth_type, char, ::xsd::cxx::tree::schema_type::double_ > OverallWidth_traits;
 
         const OverallWidth_optional&

@@ -263,7 +263,7 @@ namespace schema
         // Representation
         //
         typedef ::xml_schema::idref Representation_type;
-        typedef ::xsd::cxx::tree::optional< Representation_type > Representation_optional;
+        typedef ::xsd::cxx::tree::optional< Representation_type, false > Representation_optional;
         typedef ::xsd::cxx::tree::traits< Representation_type, char > Representation_traits;
 
         const Representation_optional&
@@ -284,7 +284,7 @@ namespace schema
         // ApplicableOccurrence
         //
         typedef ::xml_schema::string ApplicableOccurrence_type;
-        typedef ::xsd::cxx::tree::optional< ApplicableOccurrence_type > ApplicableOccurrence_optional;
+        typedef ::xsd::cxx::tree::optional< ApplicableOccurrence_type, false > ApplicableOccurrence_optional;
         typedef ::xsd::cxx::tree::traits< ApplicableOccurrence_type, char > ApplicableOccurrence_traits;
 
         const ApplicableOccurrence_optional&
@@ -347,7 +347,7 @@ namespace schema
         // ElementType
         //
         typedef ::xml_schema::string ElementType_type;
-        typedef ::xsd::cxx::tree::optional< ElementType_type > ElementType_optional;
+        typedef ::xsd::cxx::tree::optional< ElementType_type, false > ElementType_optional;
         typedef ::xsd::cxx::tree::traits< ElementType_type, char > ElementType_traits;
 
         const ElementType_optional&
@@ -368,7 +368,7 @@ namespace schema
         // PredefinedType
         //
         typedef ::xml_schema::string PredefinedType_type;
-        typedef ::xsd::cxx::tree::optional< PredefinedType_type > PredefinedType_optional;
+        typedef ::xsd::cxx::tree::optional< PredefinedType_type, false > PredefinedType_optional;
         typedef ::xsd::cxx::tree::traits< PredefinedType_type, char > PredefinedType_traits;
 
         const PredefinedType_optional&
@@ -389,7 +389,7 @@ namespace schema
         // ControllerSchemeList
         //
         typedef ::xml_schema::idref ControllerSchemeList_type;
-        typedef ::xsd::cxx::tree::optional< ControllerSchemeList_type > ControllerSchemeList_optional;
+        typedef ::xsd::cxx::tree::optional< ControllerSchemeList_type, false > ControllerSchemeList_optional;
         typedef ::xsd::cxx::tree::traits< ControllerSchemeList_type, char > ControllerSchemeList_traits;
 
         const ControllerSchemeList_optional&

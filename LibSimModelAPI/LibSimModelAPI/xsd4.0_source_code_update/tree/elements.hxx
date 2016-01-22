@@ -1211,7 +1211,8 @@ namespace xsd
 
       private:
         container* container_;
-      };
+      }; //end
+
 
       /**
        * @brief Class corresponding to the XML Schema anySimpleType built-in
@@ -1397,7 +1398,7 @@ namespace xsd
         };
 
         //@endcond
-      };
+      }; //end
 
 
       /**

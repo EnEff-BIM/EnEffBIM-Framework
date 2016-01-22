@@ -263,7 +263,7 @@ namespace schema
         // ObjectIndex
         //
         typedef ::xml_schema::int_ ObjectIndex_type;
-        typedef ::xsd::cxx::tree::optional< ObjectIndex_type > ObjectIndex_optional;
+        typedef ::xsd::cxx::tree::optional< ObjectIndex_type, true > ObjectIndex_optional;
         typedef ::xsd::cxx::tree::traits< ObjectIndex_type, char > ObjectIndex_traits;
 
         const ObjectIndex_optional&
@@ -281,7 +281,7 @@ namespace schema
         // ObjectName
         //
         typedef ::xml_schema::string ObjectName_type;
-        typedef ::xsd::cxx::tree::optional< ObjectName_type > ObjectName_optional;
+        typedef ::xsd::cxx::tree::optional< ObjectName_type, false > ObjectName_optional;
         typedef ::xsd::cxx::tree::traits< ObjectName_type, char > ObjectName_traits;
 
         const ObjectName_optional&
@@ -320,7 +320,7 @@ namespace schema
         // LocalPlacementX
         //
         typedef ::xml_schema::double_ LocalPlacementX_type;
-        typedef ::xsd::cxx::tree::optional< LocalPlacementX_type > LocalPlacementX_optional;
+        typedef ::xsd::cxx::tree::optional< LocalPlacementX_type, true > LocalPlacementX_optional;
         typedef ::xsd::cxx::tree::traits< LocalPlacementX_type, char, ::xsd::cxx::tree::schema_type::double_ > LocalPlacementX_traits;
 
         const LocalPlacementX_optional&
@@ -338,7 +338,7 @@ namespace schema
         // LocalPlacementY
         //
         typedef ::xml_schema::double_ LocalPlacementY_type;
-        typedef ::xsd::cxx::tree::optional< LocalPlacementY_type > LocalPlacementY_optional;
+        typedef ::xsd::cxx::tree::optional< LocalPlacementY_type, true > LocalPlacementY_optional;
         typedef ::xsd::cxx::tree::traits< LocalPlacementY_type, char, ::xsd::cxx::tree::schema_type::double_ > LocalPlacementY_traits;
 
         const LocalPlacementY_optional&
@@ -356,7 +356,7 @@ namespace schema
         // LocalPlacementZ
         //
         typedef ::xml_schema::double_ LocalPlacementZ_type;
-        typedef ::xsd::cxx::tree::optional< LocalPlacementZ_type > LocalPlacementZ_optional;
+        typedef ::xsd::cxx::tree::optional< LocalPlacementZ_type, true > LocalPlacementZ_optional;
         typedef ::xsd::cxx::tree::traits< LocalPlacementZ_type, char, ::xsd::cxx::tree::schema_type::double_ > LocalPlacementZ_traits;
 
         const LocalPlacementZ_optional&
@@ -374,7 +374,7 @@ namespace schema
         // LocalPlacementRotation
         //
         typedef ::xml_schema::double_ LocalPlacementRotation_type;
-        typedef ::xsd::cxx::tree::optional< LocalPlacementRotation_type > LocalPlacementRotation_optional;
+        typedef ::xsd::cxx::tree::optional< LocalPlacementRotation_type, true > LocalPlacementRotation_optional;
         typedef ::xsd::cxx::tree::traits< LocalPlacementRotation_type, char, ::xsd::cxx::tree::schema_type::double_ > LocalPlacementRotation_traits;
 
         const LocalPlacementRotation_optional&
@@ -392,7 +392,7 @@ namespace schema
         // XDirectionX
         //
         typedef ::xml_schema::double_ XDirectionX_type;
-        typedef ::xsd::cxx::tree::optional< XDirectionX_type > XDirectionX_optional;
+        typedef ::xsd::cxx::tree::optional< XDirectionX_type, true > XDirectionX_optional;
         typedef ::xsd::cxx::tree::traits< XDirectionX_type, char, ::xsd::cxx::tree::schema_type::double_ > XDirectionX_traits;
 
         const XDirectionX_optional&
@@ -410,7 +410,7 @@ namespace schema
         // XDirectionY
         //
         typedef ::xml_schema::double_ XDirectionY_type;
-        typedef ::xsd::cxx::tree::optional< XDirectionY_type > XDirectionY_optional;
+        typedef ::xsd::cxx::tree::optional< XDirectionY_type, true > XDirectionY_optional;
         typedef ::xsd::cxx::tree::traits< XDirectionY_type, char, ::xsd::cxx::tree::schema_type::double_ > XDirectionY_traits;
 
         const XDirectionY_optional&
@@ -428,7 +428,7 @@ namespace schema
         // XDirectionZ
         //
         typedef ::xml_schema::double_ XDirectionZ_type;
-        typedef ::xsd::cxx::tree::optional< XDirectionZ_type > XDirectionZ_optional;
+        typedef ::xsd::cxx::tree::optional< XDirectionZ_type, true > XDirectionZ_optional;
         typedef ::xsd::cxx::tree::traits< XDirectionZ_type, char, ::xsd::cxx::tree::schema_type::double_ > XDirectionZ_traits;
 
         const XDirectionZ_optional&

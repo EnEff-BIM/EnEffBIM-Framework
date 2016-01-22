@@ -263,7 +263,7 @@ namespace schema
         // SimTimeSeriesSched_Name
         //
         typedef ::xml_schema::string SimTimeSeriesSched_Name_type;
-        typedef ::xsd::cxx::tree::optional< SimTimeSeriesSched_Name_type > SimTimeSeriesSched_Name_optional;
+        typedef ::xsd::cxx::tree::optional< SimTimeSeriesSched_Name_type, false > SimTimeSeriesSched_Name_optional;
         typedef ::xsd::cxx::tree::traits< SimTimeSeriesSched_Name_type, char > SimTimeSeriesSched_Name_traits;
 
         const SimTimeSeriesSched_Name_optional&
@@ -284,7 +284,7 @@ namespace schema
         // SimTimeSeriesSched_LowLimitVal
         //
         typedef ::xml_schema::double_ SimTimeSeriesSched_LowLimitVal_type;
-        typedef ::xsd::cxx::tree::optional< SimTimeSeriesSched_LowLimitVal_type > SimTimeSeriesSched_LowLimitVal_optional;
+        typedef ::xsd::cxx::tree::optional< SimTimeSeriesSched_LowLimitVal_type, true > SimTimeSeriesSched_LowLimitVal_optional;
         typedef ::xsd::cxx::tree::traits< SimTimeSeriesSched_LowLimitVal_type, char, ::xsd::cxx::tree::schema_type::double_ > SimTimeSeriesSched_LowLimitVal_traits;
 
         const SimTimeSeriesSched_LowLimitVal_optional&
@@ -302,7 +302,7 @@ namespace schema
         // SimTimeSeriesSched_UpLimitVal
         //
         typedef ::xml_schema::double_ SimTimeSeriesSched_UpLimitVal_type;
-        typedef ::xsd::cxx::tree::optional< SimTimeSeriesSched_UpLimitVal_type > SimTimeSeriesSched_UpLimitVal_optional;
+        typedef ::xsd::cxx::tree::optional< SimTimeSeriesSched_UpLimitVal_type, true > SimTimeSeriesSched_UpLimitVal_optional;
         typedef ::xsd::cxx::tree::traits< SimTimeSeriesSched_UpLimitVal_type, char, ::xsd::cxx::tree::schema_type::double_ > SimTimeSeriesSched_UpLimitVal_traits;
 
         const SimTimeSeriesSched_UpLimitVal_optional&
@@ -320,7 +320,7 @@ namespace schema
         // SimTimeSeriesSched_NumericType
         //
         typedef ::xml_schema::string SimTimeSeriesSched_NumericType_type;
-        typedef ::xsd::cxx::tree::optional< SimTimeSeriesSched_NumericType_type > SimTimeSeriesSched_NumericType_optional;
+        typedef ::xsd::cxx::tree::optional< SimTimeSeriesSched_NumericType_type, false > SimTimeSeriesSched_NumericType_optional;
         typedef ::xsd::cxx::tree::traits< SimTimeSeriesSched_NumericType_type, char > SimTimeSeriesSched_NumericType_traits;
 
         const SimTimeSeriesSched_NumericType_optional&
@@ -341,7 +341,7 @@ namespace schema
         // SimTimeSeriesSched_UnitType
         //
         typedef ::xml_schema::string SimTimeSeriesSched_UnitType_type;
-        typedef ::xsd::cxx::tree::optional< SimTimeSeriesSched_UnitType_type > SimTimeSeriesSched_UnitType_optional;
+        typedef ::xsd::cxx::tree::optional< SimTimeSeriesSched_UnitType_type, false > SimTimeSeriesSched_UnitType_optional;
         typedef ::xsd::cxx::tree::traits< SimTimeSeriesSched_UnitType_type, char > SimTimeSeriesSched_UnitType_traits;
 
         const SimTimeSeriesSched_UnitType_optional&
@@ -362,7 +362,7 @@ namespace schema
         // SimTimeSeriesSched_ValueInterval
         //
         typedef ::xml_schema::double_ SimTimeSeriesSched_ValueInterval_type;
-        typedef ::xsd::cxx::tree::optional< SimTimeSeriesSched_ValueInterval_type > SimTimeSeriesSched_ValueInterval_optional;
+        typedef ::xsd::cxx::tree::optional< SimTimeSeriesSched_ValueInterval_type, true > SimTimeSeriesSched_ValueInterval_optional;
         typedef ::xsd::cxx::tree::traits< SimTimeSeriesSched_ValueInterval_type, char, ::xsd::cxx::tree::schema_type::double_ > SimTimeSeriesSched_ValueInterval_traits;
 
         const SimTimeSeriesSched_ValueInterval_optional&

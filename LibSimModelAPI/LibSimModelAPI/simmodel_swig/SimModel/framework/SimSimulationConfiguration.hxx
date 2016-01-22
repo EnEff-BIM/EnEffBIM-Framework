@@ -263,7 +263,7 @@ namespace schema
         // DesignAlternative
         //
         typedef ::xml_schema::idref DesignAlternative_type;
-        typedef ::xsd::cxx::tree::optional< DesignAlternative_type > DesignAlternative_optional;
+        typedef ::xsd::cxx::tree::optional< DesignAlternative_type, false > DesignAlternative_optional;
         typedef ::xsd::cxx::tree::traits< DesignAlternative_type, char > DesignAlternative_traits;
 
         const DesignAlternative_optional&
@@ -284,7 +284,7 @@ namespace schema
         // TemplateSimulationParameters
         //
         typedef ::xml_schema::idref TemplateSimulationParameters_type;
-        typedef ::xsd::cxx::tree::optional< TemplateSimulationParameters_type > TemplateSimulationParameters_optional;
+        typedef ::xsd::cxx::tree::optional< TemplateSimulationParameters_type, false > TemplateSimulationParameters_optional;
         typedef ::xsd::cxx::tree::traits< TemplateSimulationParameters_type, char > TemplateSimulationParameters_traits;
 
         const TemplateSimulationParameters_optional&
@@ -305,7 +305,7 @@ namespace schema
         // TemplateReportSet
         //
         typedef ::xml_schema::idref TemplateReportSet_type;
-        typedef ::xsd::cxx::tree::optional< TemplateReportSet_type > TemplateReportSet_optional;
+        typedef ::xsd::cxx::tree::optional< TemplateReportSet_type, false > TemplateReportSet_optional;
         typedef ::xsd::cxx::tree::traits< TemplateReportSet_type, char > TemplateReportSet_traits;
 
         const TemplateReportSet_optional&
@@ -326,7 +326,7 @@ namespace schema
         // TemplateOutputRequestSet
         //
         typedef ::xml_schema::idref TemplateOutputRequestSet_type;
-        typedef ::xsd::cxx::tree::optional< TemplateOutputRequestSet_type > TemplateOutputRequestSet_optional;
+        typedef ::xsd::cxx::tree::optional< TemplateOutputRequestSet_type, false > TemplateOutputRequestSet_optional;
         typedef ::xsd::cxx::tree::traits< TemplateOutputRequestSet_type, char > TemplateOutputRequestSet_traits;
 
         const TemplateOutputRequestSet_optional&
@@ -347,7 +347,7 @@ namespace schema
         // TemplateOutputFormatSet
         //
         typedef ::xml_schema::idref TemplateOutputFormatSet_type;
-        typedef ::xsd::cxx::tree::optional< TemplateOutputFormatSet_type > TemplateOutputFormatSet_optional;
+        typedef ::xsd::cxx::tree::optional< TemplateOutputFormatSet_type, false > TemplateOutputFormatSet_optional;
         typedef ::xsd::cxx::tree::traits< TemplateOutputFormatSet_type, char > TemplateOutputFormatSet_traits;
 
         const TemplateOutputFormatSet_optional&
@@ -368,7 +368,7 @@ namespace schema
         // CreationDate
         //
         typedef ::xml_schema::int_ CreationDate_type;
-        typedef ::xsd::cxx::tree::optional< CreationDate_type > CreationDate_optional;
+        typedef ::xsd::cxx::tree::optional< CreationDate_type, true > CreationDate_optional;
         typedef ::xsd::cxx::tree::traits< CreationDate_type, char > CreationDate_traits;
 
         const CreationDate_optional&
@@ -386,7 +386,7 @@ namespace schema
         // CreatedBy
         //
         typedef ::xml_schema::idref CreatedBy_type;
-        typedef ::xsd::cxx::tree::optional< CreatedBy_type > CreatedBy_optional;
+        typedef ::xsd::cxx::tree::optional< CreatedBy_type, false > CreatedBy_optional;
         typedef ::xsd::cxx::tree::traits< CreatedBy_type, char > CreatedBy_traits;
 
         const CreatedBy_optional&
@@ -407,7 +407,7 @@ namespace schema
         // ReviewedBy
         //
         typedef ::xml_schema::idref ReviewedBy_type;
-        typedef ::xsd::cxx::tree::optional< ReviewedBy_type > ReviewedBy_optional;
+        typedef ::xsd::cxx::tree::optional< ReviewedBy_type, false > ReviewedBy_optional;
         typedef ::xsd::cxx::tree::traits< ReviewedBy_type, char > ReviewedBy_traits;
 
         const ReviewedBy_optional&

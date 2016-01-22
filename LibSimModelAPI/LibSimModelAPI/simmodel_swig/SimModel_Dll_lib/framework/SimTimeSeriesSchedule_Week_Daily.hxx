@@ -263,7 +263,7 @@ namespace schema
         // SimTimeSeriesSched_SundaySched_DayName
         //
         typedef ::xml_schema::idref SimTimeSeriesSched_SundaySched_DayName_type;
-        typedef ::xsd::cxx::tree::optional< SimTimeSeriesSched_SundaySched_DayName_type > SimTimeSeriesSched_SundaySched_DayName_optional;
+        typedef ::xsd::cxx::tree::optional< SimTimeSeriesSched_SundaySched_DayName_type, false > SimTimeSeriesSched_SundaySched_DayName_optional;
         typedef ::xsd::cxx::tree::traits< SimTimeSeriesSched_SundaySched_DayName_type, char > SimTimeSeriesSched_SundaySched_DayName_traits;
 
         const SimTimeSeriesSched_SundaySched_DayName_optional&
@@ -284,7 +284,7 @@ namespace schema
         // SimTimeSeriesSched_MondaySched_DayName
         //
         typedef ::xml_schema::idref SimTimeSeriesSched_MondaySched_DayName_type;
-        typedef ::xsd::cxx::tree::optional< SimTimeSeriesSched_MondaySched_DayName_type > SimTimeSeriesSched_MondaySched_DayName_optional;
+        typedef ::xsd::cxx::tree::optional< SimTimeSeriesSched_MondaySched_DayName_type, false > SimTimeSeriesSched_MondaySched_DayName_optional;
         typedef ::xsd::cxx::tree::traits< SimTimeSeriesSched_MondaySched_DayName_type, char > SimTimeSeriesSched_MondaySched_DayName_traits;
 
         const SimTimeSeriesSched_MondaySched_DayName_optional&
@@ -305,7 +305,7 @@ namespace schema
         // SimTimeSeriesSched_TuesdaySched_DayName
         //
         typedef ::xml_schema::idref SimTimeSeriesSched_TuesdaySched_DayName_type;
-        typedef ::xsd::cxx::tree::optional< SimTimeSeriesSched_TuesdaySched_DayName_type > SimTimeSeriesSched_TuesdaySched_DayName_optional;
+        typedef ::xsd::cxx::tree::optional< SimTimeSeriesSched_TuesdaySched_DayName_type, false > SimTimeSeriesSched_TuesdaySched_DayName_optional;
         typedef ::xsd::cxx::tree::traits< SimTimeSeriesSched_TuesdaySched_DayName_type, char > SimTimeSeriesSched_TuesdaySched_DayName_traits;
 
         const SimTimeSeriesSched_TuesdaySched_DayName_optional&
@@ -326,7 +326,7 @@ namespace schema
         // SimTimeSeriesSched_WedSched_DayName
         //
         typedef ::xml_schema::idref SimTimeSeriesSched_WedSched_DayName_type;
-        typedef ::xsd::cxx::tree::optional< SimTimeSeriesSched_WedSched_DayName_type > SimTimeSeriesSched_WedSched_DayName_optional;
+        typedef ::xsd::cxx::tree::optional< SimTimeSeriesSched_WedSched_DayName_type, false > SimTimeSeriesSched_WedSched_DayName_optional;
         typedef ::xsd::cxx::tree::traits< SimTimeSeriesSched_WedSched_DayName_type, char > SimTimeSeriesSched_WedSched_DayName_traits;
 
         const SimTimeSeriesSched_WedSched_DayName_optional&
@@ -347,7 +347,7 @@ namespace schema
         // SimTimeSeriesSched_ThursdaySched_DayName
         //
         typedef ::xml_schema::idref SimTimeSeriesSched_ThursdaySched_DayName_type;
-        typedef ::xsd::cxx::tree::optional< SimTimeSeriesSched_ThursdaySched_DayName_type > SimTimeSeriesSched_ThursdaySched_DayName_optional;
+        typedef ::xsd::cxx::tree::optional< SimTimeSeriesSched_ThursdaySched_DayName_type, false > SimTimeSeriesSched_ThursdaySched_DayName_optional;
         typedef ::xsd::cxx::tree::traits< SimTimeSeriesSched_ThursdaySched_DayName_type, char > SimTimeSeriesSched_ThursdaySched_DayName_traits;
 
         const SimTimeSeriesSched_ThursdaySched_DayName_optional&
@@ -368,7 +368,7 @@ namespace schema
         // SimTimeSeriesSched_FridaySched_DayName
         //
         typedef ::xml_schema::idref SimTimeSeriesSched_FridaySched_DayName_type;
-        typedef ::xsd::cxx::tree::optional< SimTimeSeriesSched_FridaySched_DayName_type > SimTimeSeriesSched_FridaySched_DayName_optional;
+        typedef ::xsd::cxx::tree::optional< SimTimeSeriesSched_FridaySched_DayName_type, false > SimTimeSeriesSched_FridaySched_DayName_optional;
         typedef ::xsd::cxx::tree::traits< SimTimeSeriesSched_FridaySched_DayName_type, char > SimTimeSeriesSched_FridaySched_DayName_traits;
 
         const SimTimeSeriesSched_FridaySched_DayName_optional&
@@ -389,7 +389,7 @@ namespace schema
         // SimTimeSeriesSched_SaturdaySched_DayName
         //
         typedef ::xml_schema::idref SimTimeSeriesSched_SaturdaySched_DayName_type;
-        typedef ::xsd::cxx::tree::optional< SimTimeSeriesSched_SaturdaySched_DayName_type > SimTimeSeriesSched_SaturdaySched_DayName_optional;
+        typedef ::xsd::cxx::tree::optional< SimTimeSeriesSched_SaturdaySched_DayName_type, false > SimTimeSeriesSched_SaturdaySched_DayName_optional;
         typedef ::xsd::cxx::tree::traits< SimTimeSeriesSched_SaturdaySched_DayName_type, char > SimTimeSeriesSched_SaturdaySched_DayName_traits;
 
         const SimTimeSeriesSched_SaturdaySched_DayName_optional&
@@ -410,7 +410,7 @@ namespace schema
         // SimTimeSeriesSched_HolidaySched_DayName
         //
         typedef ::xml_schema::idref SimTimeSeriesSched_HolidaySched_DayName_type;
-        typedef ::xsd::cxx::tree::optional< SimTimeSeriesSched_HolidaySched_DayName_type > SimTimeSeriesSched_HolidaySched_DayName_optional;
+        typedef ::xsd::cxx::tree::optional< SimTimeSeriesSched_HolidaySched_DayName_type, false > SimTimeSeriesSched_HolidaySched_DayName_optional;
         typedef ::xsd::cxx::tree::traits< SimTimeSeriesSched_HolidaySched_DayName_type, char > SimTimeSeriesSched_HolidaySched_DayName_traits;
 
         const SimTimeSeriesSched_HolidaySched_DayName_optional&
@@ -431,7 +431,7 @@ namespace schema
         // SimTimeSeriesSched_SummerDesignDaySched_DayName
         //
         typedef ::xml_schema::idref SimTimeSeriesSched_SummerDesignDaySched_DayName_type;
-        typedef ::xsd::cxx::tree::optional< SimTimeSeriesSched_SummerDesignDaySched_DayName_type > SimTimeSeriesSched_SummerDesignDaySched_DayName_optional;
+        typedef ::xsd::cxx::tree::optional< SimTimeSeriesSched_SummerDesignDaySched_DayName_type, false > SimTimeSeriesSched_SummerDesignDaySched_DayName_optional;
         typedef ::xsd::cxx::tree::traits< SimTimeSeriesSched_SummerDesignDaySched_DayName_type, char > SimTimeSeriesSched_SummerDesignDaySched_DayName_traits;
 
         const SimTimeSeriesSched_SummerDesignDaySched_DayName_optional&
@@ -452,7 +452,7 @@ namespace schema
         // SimTimeSeriesSched_WinterDesignDaySched_DayName
         //
         typedef ::xml_schema::idref SimTimeSeriesSched_WinterDesignDaySched_DayName_type;
-        typedef ::xsd::cxx::tree::optional< SimTimeSeriesSched_WinterDesignDaySched_DayName_type > SimTimeSeriesSched_WinterDesignDaySched_DayName_optional;
+        typedef ::xsd::cxx::tree::optional< SimTimeSeriesSched_WinterDesignDaySched_DayName_type, false > SimTimeSeriesSched_WinterDesignDaySched_DayName_optional;
         typedef ::xsd::cxx::tree::traits< SimTimeSeriesSched_WinterDesignDaySched_DayName_type, char > SimTimeSeriesSched_WinterDesignDaySched_DayName_traits;
 
         const SimTimeSeriesSched_WinterDesignDaySched_DayName_optional&

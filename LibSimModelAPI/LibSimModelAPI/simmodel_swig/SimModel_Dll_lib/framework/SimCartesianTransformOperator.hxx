@@ -263,7 +263,7 @@ namespace schema
         // Axis1
         //
         typedef ::xml_schema::idref Axis1_type;
-        typedef ::xsd::cxx::tree::optional< Axis1_type > Axis1_optional;
+        typedef ::xsd::cxx::tree::optional< Axis1_type, false > Axis1_optional;
         typedef ::xsd::cxx::tree::traits< Axis1_type, char > Axis1_traits;
 
         const Axis1_optional&
@@ -284,7 +284,7 @@ namespace schema
         // Axis2
         //
         typedef ::xml_schema::idref Axis2_type;
-        typedef ::xsd::cxx::tree::optional< Axis2_type > Axis2_optional;
+        typedef ::xsd::cxx::tree::optional< Axis2_type, false > Axis2_optional;
         typedef ::xsd::cxx::tree::traits< Axis2_type, char > Axis2_traits;
 
         const Axis2_optional&
@@ -305,7 +305,7 @@ namespace schema
         // LocalOrigin
         //
         typedef ::xml_schema::idref LocalOrigin_type;
-        typedef ::xsd::cxx::tree::optional< LocalOrigin_type > LocalOrigin_optional;
+        typedef ::xsd::cxx::tree::optional< LocalOrigin_type, false > LocalOrigin_optional;
         typedef ::xsd::cxx::tree::traits< LocalOrigin_type, char > LocalOrigin_traits;
 
         const LocalOrigin_optional&
@@ -326,7 +326,7 @@ namespace schema
         // Scale
         //
         typedef ::xml_schema::double_ Scale_type;
-        typedef ::xsd::cxx::tree::optional< Scale_type > Scale_optional;
+        typedef ::xsd::cxx::tree::optional< Scale_type, true > Scale_optional;
         typedef ::xsd::cxx::tree::traits< Scale_type, char, ::xsd::cxx::tree::schema_type::double_ > Scale_traits;
 
         const Scale_optional&

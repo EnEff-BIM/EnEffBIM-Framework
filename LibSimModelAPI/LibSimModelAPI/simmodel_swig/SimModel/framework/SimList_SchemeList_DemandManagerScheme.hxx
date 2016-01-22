@@ -274,7 +274,7 @@ namespace schema
         // SimList_MeterName
         //
         typedef ::xml_schema::string SimList_MeterName_type;
-        typedef ::xsd::cxx::tree::optional< SimList_MeterName_type > SimList_MeterName_optional;
+        typedef ::xsd::cxx::tree::optional< SimList_MeterName_type, false > SimList_MeterName_optional;
         typedef ::xsd::cxx::tree::traits< SimList_MeterName_type, char > SimList_MeterName_traits;
 
         const SimList_MeterName_optional&
@@ -295,7 +295,7 @@ namespace schema
         // SimList_DemandLimitSchedName
         //
         typedef ::xml_schema::idref SimList_DemandLimitSchedName_type;
-        typedef ::xsd::cxx::tree::optional< SimList_DemandLimitSchedName_type > SimList_DemandLimitSchedName_optional;
+        typedef ::xsd::cxx::tree::optional< SimList_DemandLimitSchedName_type, false > SimList_DemandLimitSchedName_optional;
         typedef ::xsd::cxx::tree::traits< SimList_DemandLimitSchedName_type, char > SimList_DemandLimitSchedName_traits;
 
         const SimList_DemandLimitSchedName_optional&
@@ -316,7 +316,7 @@ namespace schema
         // SimList_DemandLimitSafetyFrac
         //
         typedef ::xml_schema::double_ SimList_DemandLimitSafetyFrac_type;
-        typedef ::xsd::cxx::tree::optional< SimList_DemandLimitSafetyFrac_type > SimList_DemandLimitSafetyFrac_optional;
+        typedef ::xsd::cxx::tree::optional< SimList_DemandLimitSafetyFrac_type, true > SimList_DemandLimitSafetyFrac_optional;
         typedef ::xsd::cxx::tree::traits< SimList_DemandLimitSafetyFrac_type, char, ::xsd::cxx::tree::schema_type::double_ > SimList_DemandLimitSafetyFrac_traits;
 
         const SimList_DemandLimitSafetyFrac_optional&
@@ -334,7 +334,7 @@ namespace schema
         // SimList_BillingPerSchedName
         //
         typedef ::xml_schema::idref SimList_BillingPerSchedName_type;
-        typedef ::xsd::cxx::tree::optional< SimList_BillingPerSchedName_type > SimList_BillingPerSchedName_optional;
+        typedef ::xsd::cxx::tree::optional< SimList_BillingPerSchedName_type, false > SimList_BillingPerSchedName_optional;
         typedef ::xsd::cxx::tree::traits< SimList_BillingPerSchedName_type, char > SimList_BillingPerSchedName_traits;
 
         const SimList_BillingPerSchedName_optional&
@@ -355,7 +355,7 @@ namespace schema
         // SimList_PeakPerSchedName
         //
         typedef ::xml_schema::idref SimList_PeakPerSchedName_type;
-        typedef ::xsd::cxx::tree::optional< SimList_PeakPerSchedName_type > SimList_PeakPerSchedName_optional;
+        typedef ::xsd::cxx::tree::optional< SimList_PeakPerSchedName_type, false > SimList_PeakPerSchedName_optional;
         typedef ::xsd::cxx::tree::traits< SimList_PeakPerSchedName_type, char > SimList_PeakPerSchedName_traits;
 
         const SimList_PeakPerSchedName_optional&
@@ -376,7 +376,7 @@ namespace schema
         // SimList_DemandWindLength
         //
         typedef ::xml_schema::double_ SimList_DemandWindLength_type;
-        typedef ::xsd::cxx::tree::optional< SimList_DemandWindLength_type > SimList_DemandWindLength_optional;
+        typedef ::xsd::cxx::tree::optional< SimList_DemandWindLength_type, true > SimList_DemandWindLength_optional;
         typedef ::xsd::cxx::tree::traits< SimList_DemandWindLength_type, char, ::xsd::cxx::tree::schema_type::double_ > SimList_DemandWindLength_traits;
 
         const SimList_DemandWindLength_optional&
@@ -394,7 +394,7 @@ namespace schema
         // SimList_DemandMngrPrio
         //
         typedef ::xml_schema::string SimList_DemandMngrPrio_type;
-        typedef ::xsd::cxx::tree::optional< SimList_DemandMngrPrio_type > SimList_DemandMngrPrio_optional;
+        typedef ::xsd::cxx::tree::optional< SimList_DemandMngrPrio_type, false > SimList_DemandMngrPrio_optional;
         typedef ::xsd::cxx::tree::traits< SimList_DemandMngrPrio_type, char > SimList_DemandMngrPrio_traits;
 
         const SimList_DemandMngrPrio_optional&

@@ -263,7 +263,7 @@ namespace schema
         // SimMatLayerSet_OutsideLayer
         //
         typedef ::xml_schema::idref SimMatLayerSet_OutsideLayer_type;
-        typedef ::xsd::cxx::tree::optional< SimMatLayerSet_OutsideLayer_type > SimMatLayerSet_OutsideLayer_optional;
+        typedef ::xsd::cxx::tree::optional< SimMatLayerSet_OutsideLayer_type, false > SimMatLayerSet_OutsideLayer_optional;
         typedef ::xsd::cxx::tree::traits< SimMatLayerSet_OutsideLayer_type, char > SimMatLayerSet_OutsideLayer_traits;
 
         const SimMatLayerSet_OutsideLayer_optional&
@@ -305,7 +305,7 @@ namespace schema
         // T24ConsAssmNotes
         //
         typedef ::xml_schema::string T24ConsAssmNotes_type;
-        typedef ::xsd::cxx::tree::optional< T24ConsAssmNotes_type > T24ConsAssmNotes_optional;
+        typedef ::xsd::cxx::tree::optional< T24ConsAssmNotes_type, false > T24ConsAssmNotes_optional;
         typedef ::xsd::cxx::tree::traits< T24ConsAssmNotes_type, char > T24ConsAssmNotes_traits;
 
         const T24ConsAssmNotes_optional&
@@ -326,7 +326,7 @@ namespace schema
         // T24CrrcAgedEmittance
         //
         typedef ::xml_schema::double_ T24CrrcAgedEmittance_type;
-        typedef ::xsd::cxx::tree::optional< T24CrrcAgedEmittance_type > T24CrrcAgedEmittance_optional;
+        typedef ::xsd::cxx::tree::optional< T24CrrcAgedEmittance_type, true > T24CrrcAgedEmittance_optional;
         typedef ::xsd::cxx::tree::traits< T24CrrcAgedEmittance_type, char, ::xsd::cxx::tree::schema_type::double_ > T24CrrcAgedEmittance_traits;
 
         const T24CrrcAgedEmittance_optional&
@@ -344,7 +344,7 @@ namespace schema
         // T24CrrcAgedReflectance
         //
         typedef ::xml_schema::double_ T24CrrcAgedReflectance_type;
-        typedef ::xsd::cxx::tree::optional< T24CrrcAgedReflectance_type > T24CrrcAgedReflectance_optional;
+        typedef ::xsd::cxx::tree::optional< T24CrrcAgedReflectance_type, true > T24CrrcAgedReflectance_optional;
         typedef ::xsd::cxx::tree::traits< T24CrrcAgedReflectance_type, char, ::xsd::cxx::tree::schema_type::double_ > T24CrrcAgedReflectance_traits;
 
         const T24CrrcAgedReflectance_optional&
@@ -362,7 +362,7 @@ namespace schema
         // T24CrrcAgedSRI
         //
         typedef ::xml_schema::int_ T24CrrcAgedSRI_type;
-        typedef ::xsd::cxx::tree::optional< T24CrrcAgedSRI_type > T24CrrcAgedSRI_optional;
+        typedef ::xsd::cxx::tree::optional< T24CrrcAgedSRI_type, true > T24CrrcAgedSRI_optional;
         typedef ::xsd::cxx::tree::traits< T24CrrcAgedSRI_type, char > T24CrrcAgedSRI_traits;
 
         const T24CrrcAgedSRI_optional&
@@ -380,7 +380,7 @@ namespace schema
         // T24CrrcInitialEmitance
         //
         typedef ::xml_schema::double_ T24CrrcInitialEmitance_type;
-        typedef ::xsd::cxx::tree::optional< T24CrrcInitialEmitance_type > T24CrrcInitialEmitance_optional;
+        typedef ::xsd::cxx::tree::optional< T24CrrcInitialEmitance_type, true > T24CrrcInitialEmitance_optional;
         typedef ::xsd::cxx::tree::traits< T24CrrcInitialEmitance_type, char, ::xsd::cxx::tree::schema_type::double_ > T24CrrcInitialEmitance_traits;
 
         const T24CrrcInitialEmitance_optional&
@@ -398,7 +398,7 @@ namespace schema
         // T24CrrcInitialReflectance
         //
         typedef ::xml_schema::double_ T24CrrcInitialReflectance_type;
-        typedef ::xsd::cxx::tree::optional< T24CrrcInitialReflectance_type > T24CrrcInitialReflectance_optional;
+        typedef ::xsd::cxx::tree::optional< T24CrrcInitialReflectance_type, true > T24CrrcInitialReflectance_optional;
         typedef ::xsd::cxx::tree::traits< T24CrrcInitialReflectance_type, char, ::xsd::cxx::tree::schema_type::double_ > T24CrrcInitialReflectance_traits;
 
         const T24CrrcInitialReflectance_optional&
@@ -416,7 +416,7 @@ namespace schema
         // T24CrrcInitialSRI
         //
         typedef ::xml_schema::int_ T24CrrcInitialSRI_type;
-        typedef ::xsd::cxx::tree::optional< T24CrrcInitialSRI_type > T24CrrcInitialSRI_optional;
+        typedef ::xsd::cxx::tree::optional< T24CrrcInitialSRI_type, true > T24CrrcInitialSRI_optional;
         typedef ::xsd::cxx::tree::traits< T24CrrcInitialSRI_type, char > T24CrrcInitialSRI_traits;
 
         const T24CrrcInitialSRI_optional&
@@ -434,7 +434,7 @@ namespace schema
         // T24CrrcProductID
         //
         typedef ::xml_schema::string T24CrrcProductID_type;
-        typedef ::xsd::cxx::tree::optional< T24CrrcProductID_type > T24CrrcProductID_optional;
+        typedef ::xsd::cxx::tree::optional< T24CrrcProductID_type, false > T24CrrcProductID_optional;
         typedef ::xsd::cxx::tree::traits< T24CrrcProductID_type, char > T24CrrcProductID_traits;
 
         const T24CrrcProductID_optional&
@@ -455,7 +455,7 @@ namespace schema
         // T24FieldAppliedCoating
         //
         typedef ::xml_schema::int_ T24FieldAppliedCoating_type;
-        typedef ::xsd::cxx::tree::optional< T24FieldAppliedCoating_type > T24FieldAppliedCoating_optional;
+        typedef ::xsd::cxx::tree::optional< T24FieldAppliedCoating_type, true > T24FieldAppliedCoating_optional;
         typedef ::xsd::cxx::tree::traits< T24FieldAppliedCoating_type, char > T24FieldAppliedCoating_traits;
 
         const T24FieldAppliedCoating_optional&
@@ -473,7 +473,7 @@ namespace schema
         // T24RoofDensity
         //
         typedef ::xml_schema::int_ T24RoofDensity_type;
-        typedef ::xsd::cxx::tree::optional< T24RoofDensity_type > T24RoofDensity_optional;
+        typedef ::xsd::cxx::tree::optional< T24RoofDensity_type, true > T24RoofDensity_optional;
         typedef ::xsd::cxx::tree::traits< T24RoofDensity_type, char > T24RoofDensity_traits;
 
         const T24RoofDensity_optional&
@@ -491,7 +491,7 @@ namespace schema
         // T24ConstructInsulOrient
         //
         typedef ::xml_schema::string T24ConstructInsulOrient_type;
-        typedef ::xsd::cxx::tree::optional< T24ConstructInsulOrient_type > T24ConstructInsulOrient_optional;
+        typedef ::xsd::cxx::tree::optional< T24ConstructInsulOrient_type, false > T24ConstructInsulOrient_optional;
         typedef ::xsd::cxx::tree::traits< T24ConstructInsulOrient_type, char > T24ConstructInsulOrient_traits;
 
         const T24ConstructInsulOrient_optional&
@@ -512,7 +512,7 @@ namespace schema
         // T24SlabInsulThermResist
         //
         typedef ::xml_schema::string T24SlabInsulThermResist_type;
-        typedef ::xsd::cxx::tree::optional< T24SlabInsulThermResist_type > T24SlabInsulThermResist_optional;
+        typedef ::xsd::cxx::tree::optional< T24SlabInsulThermResist_type, false > T24SlabInsulThermResist_optional;
         typedef ::xsd::cxx::tree::traits< T24SlabInsulThermResist_type, char > T24SlabInsulThermResist_traits;
 
         const T24SlabInsulThermResist_optional&
@@ -533,7 +533,7 @@ namespace schema
         // T24SlabType
         //
         typedef ::xml_schema::string T24SlabType_type;
-        typedef ::xsd::cxx::tree::optional< T24SlabType_type > T24SlabType_optional;
+        typedef ::xsd::cxx::tree::optional< T24SlabType_type, false > T24SlabType_optional;
         typedef ::xsd::cxx::tree::traits< T24SlabType_type, char > T24SlabType_traits;
 
         const T24SlabType_optional&
@@ -554,7 +554,7 @@ namespace schema
         // T24SolarReflectanceASTMCertification
         //
         typedef ::xml_schema::int_ T24SolarReflectanceASTMCertification_type;
-        typedef ::xsd::cxx::tree::optional< T24SolarReflectanceASTMCertification_type > T24SolarReflectanceASTMCertification_optional;
+        typedef ::xsd::cxx::tree::optional< T24SolarReflectanceASTMCertification_type, true > T24SolarReflectanceASTMCertification_optional;
         typedef ::xsd::cxx::tree::traits< T24SolarReflectanceASTMCertification_type, char > T24SolarReflectanceASTMCertification_traits;
 
         const T24SolarReflectanceASTMCertification_optional&
@@ -572,7 +572,7 @@ namespace schema
         // T24ThermalEmittanceASTMCertification
         //
         typedef ::xml_schema::int_ T24ThermalEmittanceASTMCertification_type;
-        typedef ::xsd::cxx::tree::optional< T24ThermalEmittanceASTMCertification_type > T24ThermalEmittanceASTMCertification_optional;
+        typedef ::xsd::cxx::tree::optional< T24ThermalEmittanceASTMCertification_type, true > T24ThermalEmittanceASTMCertification_optional;
         typedef ::xsd::cxx::tree::traits< T24ThermalEmittanceASTMCertification_type, char > T24ThermalEmittanceASTMCertification_traits;
 
         const T24ThermalEmittanceASTMCertification_optional&

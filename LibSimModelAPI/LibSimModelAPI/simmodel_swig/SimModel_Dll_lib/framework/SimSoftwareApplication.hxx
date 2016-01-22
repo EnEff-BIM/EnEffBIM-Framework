@@ -263,7 +263,7 @@ namespace schema
         // ApplicationDeveloper
         //
         typedef ::xml_schema::idref ApplicationDeveloper_type;
-        typedef ::xsd::cxx::tree::optional< ApplicationDeveloper_type > ApplicationDeveloper_optional;
+        typedef ::xsd::cxx::tree::optional< ApplicationDeveloper_type, false > ApplicationDeveloper_optional;
         typedef ::xsd::cxx::tree::traits< ApplicationDeveloper_type, char > ApplicationDeveloper_traits;
 
         const ApplicationDeveloper_optional&
@@ -284,7 +284,7 @@ namespace schema
         // Version
         //
         typedef ::xml_schema::string Version_type;
-        typedef ::xsd::cxx::tree::optional< Version_type > Version_optional;
+        typedef ::xsd::cxx::tree::optional< Version_type, false > Version_optional;
         typedef ::xsd::cxx::tree::traits< Version_type, char > Version_traits;
 
         const Version_optional&
@@ -305,7 +305,7 @@ namespace schema
         // ApplicationFullName
         //
         typedef ::xml_schema::string ApplicationFullName_type;
-        typedef ::xsd::cxx::tree::optional< ApplicationFullName_type > ApplicationFullName_optional;
+        typedef ::xsd::cxx::tree::optional< ApplicationFullName_type, false > ApplicationFullName_optional;
         typedef ::xsd::cxx::tree::traits< ApplicationFullName_type, char > ApplicationFullName_traits;
 
         const ApplicationFullName_optional&
@@ -326,7 +326,7 @@ namespace schema
         // ApplicationIdentifier
         //
         typedef ::xml_schema::string ApplicationIdentifier_type;
-        typedef ::xsd::cxx::tree::optional< ApplicationIdentifier_type > ApplicationIdentifier_optional;
+        typedef ::xsd::cxx::tree::optional< ApplicationIdentifier_type, false > ApplicationIdentifier_optional;
         typedef ::xsd::cxx::tree::traits< ApplicationIdentifier_type, char > ApplicationIdentifier_traits;
 
         const ApplicationIdentifier_optional&

@@ -25,7 +25,8 @@ using namespace xsd::cxx::tree;
 %include "C:\xsd\xsd4.0\include\xsd\cxx\config.hxx"
 %include "C:\xsd\xsd4.0\include\xsd\cxx\tree\containers-wildcard.hxx"
 %include "C:\xsd\xsd4.0\include\xsd\cxx\tree\elements.hxx"
-%include "C:\xsd\xsd4.0\include\xsd\cxx\tree\containers.hxx"
+%include "..\SimModel\xsd\containers.hxx"
+%include "C:\xsd\xsd4.0\include\xsd\cxx\tree\types.hxx"
 
 //4.
 %include "..\SimModel\framework\SimRoot.hxx"
@@ -72,3 +73,18 @@ using namespace MepModel;
 //using namespace BuildingModel;
 using namespace ResourcesGeneral;
 using namespace ResourcesGeometry;
+
+namespace xsd
+{
+  namespace cxx
+  {
+    namespace tree
+    {		
+		// property method
+		%template(decimal_optional) optional<::xml_schema::decimal, true>;
+		%template(int_optional) optional<::xml_schema::int_, true>;
+		%template(string_optional) optional<::xml_schema::string, false>;
+		%template(idref_optional) optional<::xml_schema::idref, false >;
+	}
+  }
+}

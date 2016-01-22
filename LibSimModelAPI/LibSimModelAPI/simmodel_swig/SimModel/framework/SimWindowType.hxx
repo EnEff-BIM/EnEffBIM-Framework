@@ -263,7 +263,7 @@ namespace schema
         // Name
         //
         typedef ::xml_schema::string Name_type;
-        typedef ::xsd::cxx::tree::optional< Name_type > Name_optional;
+        typedef ::xsd::cxx::tree::optional< Name_type, false > Name_optional;
         typedef ::xsd::cxx::tree::traits< Name_type, char > Name_traits;
 
         const Name_optional&
@@ -284,7 +284,7 @@ namespace schema
         // TypeDefinedObjectsType
         //
         typedef ::xml_schema::string TypeDefinedObjectsType_type;
-        typedef ::xsd::cxx::tree::optional< TypeDefinedObjectsType_type > TypeDefinedObjectsType_optional;
+        typedef ::xsd::cxx::tree::optional< TypeDefinedObjectsType_type, false > TypeDefinedObjectsType_optional;
         typedef ::xsd::cxx::tree::traits< TypeDefinedObjectsType_type, char > TypeDefinedObjectsType_traits;
 
         const TypeDefinedObjectsType_optional&
@@ -305,7 +305,7 @@ namespace schema
         // WindowTypeTag
         //
         typedef ::xml_schema::string WindowTypeTag_type;
-        typedef ::xsd::cxx::tree::optional< WindowTypeTag_type > WindowTypeTag_optional;
+        typedef ::xsd::cxx::tree::optional< WindowTypeTag_type, false > WindowTypeTag_optional;
         typedef ::xsd::cxx::tree::traits< WindowTypeTag_type, char > WindowTypeTag_traits;
 
         const WindowTypeTag_optional&
@@ -326,7 +326,7 @@ namespace schema
         // WindowTypeOperationType
         //
         typedef ::xml_schema::string WindowTypeOperationType_type;
-        typedef ::xsd::cxx::tree::optional< WindowTypeOperationType_type > WindowTypeOperationType_optional;
+        typedef ::xsd::cxx::tree::optional< WindowTypeOperationType_type, false > WindowTypeOperationType_optional;
         typedef ::xsd::cxx::tree::traits< WindowTypeOperationType_type, char > WindowTypeOperationType_traits;
 
         const WindowTypeOperationType_optional&
@@ -347,7 +347,7 @@ namespace schema
         // WindowTypeConstructionType
         //
         typedef ::xml_schema::string WindowTypeConstructionType_type;
-        typedef ::xsd::cxx::tree::optional< WindowTypeConstructionType_type > WindowTypeConstructionType_optional;
+        typedef ::xsd::cxx::tree::optional< WindowTypeConstructionType_type, false > WindowTypeConstructionType_optional;
         typedef ::xsd::cxx::tree::traits< WindowTypeConstructionType_type, char > WindowTypeConstructionType_traits;
 
         const WindowTypeConstructionType_optional&
@@ -446,7 +446,7 @@ namespace schema
         // ClassRef_UniFormat
         //
         typedef ::xml_schema::idref ClassRef_UniFormat_type;
-        typedef ::xsd::cxx::tree::optional< ClassRef_UniFormat_type > ClassRef_UniFormat_optional;
+        typedef ::xsd::cxx::tree::optional< ClassRef_UniFormat_type, false > ClassRef_UniFormat_optional;
         typedef ::xsd::cxx::tree::traits< ClassRef_UniFormat_type, char > ClassRef_UniFormat_traits;
 
         const ClassRef_UniFormat_optional&
@@ -467,7 +467,7 @@ namespace schema
         // MaterialList
         //
         typedef ::xml_schema::idref MaterialList_type;
-        typedef ::xsd::cxx::tree::optional< MaterialList_type > MaterialList_optional;
+        typedef ::xsd::cxx::tree::optional< MaterialList_type, false > MaterialList_optional;
         typedef ::xsd::cxx::tree::traits< MaterialList_type, char > MaterialList_traits;
 
         const MaterialList_optional&
@@ -551,7 +551,7 @@ namespace schema
         // ContainingOpeningTypeDef
         //
         typedef ::xml_schema::idref ContainingOpeningTypeDef_type;
-        typedef ::xsd::cxx::tree::optional< ContainingOpeningTypeDef_type > ContainingOpeningTypeDef_optional;
+        typedef ::xsd::cxx::tree::optional< ContainingOpeningTypeDef_type, false > ContainingOpeningTypeDef_optional;
         typedef ::xsd::cxx::tree::traits< ContainingOpeningTypeDef_type, char > ContainingOpeningTypeDef_traits;
 
         const ContainingOpeningTypeDef_optional&

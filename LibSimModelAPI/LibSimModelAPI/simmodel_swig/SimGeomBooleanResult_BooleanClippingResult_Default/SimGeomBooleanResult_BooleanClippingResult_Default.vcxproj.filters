@@ -25,6 +25,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="SimGeomBooleanResult_BooleanClippingResult_Default.i" />
+    <CustomBuild Include="SimGeomBooleanResult_BooleanClippingResult_Default.i" />
   </ItemGroup>
 </Project>

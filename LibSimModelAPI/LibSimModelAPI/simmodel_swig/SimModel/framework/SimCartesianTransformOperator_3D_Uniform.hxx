@@ -263,7 +263,7 @@ namespace schema
         // SimCartesianTransformOperator_PlaneTransform
         //
         typedef ::xml_schema::string SimCartesianTransformOperator_PlaneTransform_type;
-        typedef ::xsd::cxx::tree::optional< SimCartesianTransformOperator_PlaneTransform_type > SimCartesianTransformOperator_PlaneTransform_optional;
+        typedef ::xsd::cxx::tree::optional< SimCartesianTransformOperator_PlaneTransform_type, false > SimCartesianTransformOperator_PlaneTransform_optional;
         typedef ::xsd::cxx::tree::traits< SimCartesianTransformOperator_PlaneTransform_type, char > SimCartesianTransformOperator_PlaneTransform_traits;
 
         const SimCartesianTransformOperator_PlaneTransform_optional&
@@ -284,7 +284,7 @@ namespace schema
         // SimCartesianTransformOperator_CurrentAspectRatio
         //
         typedef ::xml_schema::double_ SimCartesianTransformOperator_CurrentAspectRatio_type;
-        typedef ::xsd::cxx::tree::optional< SimCartesianTransformOperator_CurrentAspectRatio_type > SimCartesianTransformOperator_CurrentAspectRatio_optional;
+        typedef ::xsd::cxx::tree::optional< SimCartesianTransformOperator_CurrentAspectRatio_type, true > SimCartesianTransformOperator_CurrentAspectRatio_optional;
         typedef ::xsd::cxx::tree::traits< SimCartesianTransformOperator_CurrentAspectRatio_type, char, ::xsd::cxx::tree::schema_type::double_ > SimCartesianTransformOperator_CurrentAspectRatio_traits;
 
         const SimCartesianTransformOperator_CurrentAspectRatio_optional&
@@ -302,7 +302,7 @@ namespace schema
         // SimCartesianTransformOperator_NewAspectRatio
         //
         typedef ::xml_schema::double_ SimCartesianTransformOperator_NewAspectRatio_type;
-        typedef ::xsd::cxx::tree::optional< SimCartesianTransformOperator_NewAspectRatio_type > SimCartesianTransformOperator_NewAspectRatio_optional;
+        typedef ::xsd::cxx::tree::optional< SimCartesianTransformOperator_NewAspectRatio_type, true > SimCartesianTransformOperator_NewAspectRatio_optional;
         typedef ::xsd::cxx::tree::traits< SimCartesianTransformOperator_NewAspectRatio_type, char, ::xsd::cxx::tree::schema_type::double_ > SimCartesianTransformOperator_NewAspectRatio_traits;
 
         const SimCartesianTransformOperator_NewAspectRatio_optional&

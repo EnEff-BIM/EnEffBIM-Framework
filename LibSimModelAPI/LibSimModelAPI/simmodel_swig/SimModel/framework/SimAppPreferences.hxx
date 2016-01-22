@@ -263,7 +263,7 @@ namespace schema
         // CurrentUserInterfaceUnits
         //
         typedef ::xml_schema::string CurrentUserInterfaceUnits_type;
-        typedef ::xsd::cxx::tree::optional< CurrentUserInterfaceUnits_type > CurrentUserInterfaceUnits_optional;
+        typedef ::xsd::cxx::tree::optional< CurrentUserInterfaceUnits_type, false > CurrentUserInterfaceUnits_optional;
         typedef ::xsd::cxx::tree::traits< CurrentUserInterfaceUnits_type, char > CurrentUserInterfaceUnits_traits;
 
         const CurrentUserInterfaceUnits_optional&
@@ -302,7 +302,7 @@ namespace schema
         // AutoSaveInterval
         //
         typedef ::xml_schema::int_ AutoSaveInterval_type;
-        typedef ::xsd::cxx::tree::optional< AutoSaveInterval_type > AutoSaveInterval_optional;
+        typedef ::xsd::cxx::tree::optional< AutoSaveInterval_type, true > AutoSaveInterval_optional;
         typedef ::xsd::cxx::tree::traits< AutoSaveInterval_type, char > AutoSaveInterval_traits;
 
         const AutoSaveInterval_optional&
@@ -320,7 +320,7 @@ namespace schema
         // MaxAutoSaveFiles
         //
         typedef ::xml_schema::int_ MaxAutoSaveFiles_type;
-        typedef ::xsd::cxx::tree::optional< MaxAutoSaveFiles_type > MaxAutoSaveFiles_optional;
+        typedef ::xsd::cxx::tree::optional< MaxAutoSaveFiles_type, true > MaxAutoSaveFiles_optional;
         typedef ::xsd::cxx::tree::traits< MaxAutoSaveFiles_type, char > MaxAutoSaveFiles_traits;
 
         const MaxAutoSaveFiles_optional&
@@ -374,7 +374,7 @@ namespace schema
         // EPlusInstalVersion
         //
         typedef ::xml_schema::string EPlusInstalVersion_type;
-        typedef ::xsd::cxx::tree::optional< EPlusInstalVersion_type > EPlusInstalVersion_optional;
+        typedef ::xsd::cxx::tree::optional< EPlusInstalVersion_type, false > EPlusInstalVersion_optional;
         typedef ::xsd::cxx::tree::traits< EPlusInstalVersion_type, char > EPlusInstalVersion_traits;
 
         const EPlusInstalVersion_optional&
@@ -395,7 +395,7 @@ namespace schema
         // EPlusInstalPath
         //
         typedef ::xml_schema::string EPlusInstalPath_type;
-        typedef ::xsd::cxx::tree::optional< EPlusInstalPath_type > EPlusInstalPath_optional;
+        typedef ::xsd::cxx::tree::optional< EPlusInstalPath_type, false > EPlusInstalPath_optional;
         typedef ::xsd::cxx::tree::traits< EPlusInstalPath_type, char > EPlusInstalPath_traits;
 
         const EPlusInstalPath_optional&
