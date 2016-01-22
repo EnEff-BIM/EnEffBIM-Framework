@@ -5,9 +5,7 @@ Created on Mon Nov 23 12:00:26 2015
 @author: pre
 """
 
-import os
-import sys
-import MapHierarchy 
+import genericapi.MapAPI.MapHierarchy as MapHierarchy
 
 class Boiler(MapHierarchy.MapComponent):
     """Representation of AixLib.Fluid.HeatExchangers.Boiler
@@ -16,6 +14,7 @@ class Boiler(MapHierarchy.MapComponent):
     def __init__(self, parent, project):
 
         super(Boiler, self).__init__(parent, project)
+        
 
         self.port_a = self.add_connector("port_a", "FluidPort")
         self.port_b = self.add_connector("port_b", "FluidPort")
