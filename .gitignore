@@ -2,6 +2,8 @@
 *.bak-mo
 *.mat
 *.mof
+*.pyd
+*.dll
 buildlog.txt
 dsfinal.txt
 dsin.txt
