@@ -263,7 +263,7 @@ namespace schema
         // DefaultForMeasureType
         //
         typedef ::xml_schema::string DefaultForMeasureType_type;
-        typedef ::xsd::cxx::tree::optional< DefaultForMeasureType_type > DefaultForMeasureType_optional;
+        typedef ::xsd::cxx::tree::optional< DefaultForMeasureType_type, false > DefaultForMeasureType_optional;
         typedef ::xsd::cxx::tree::traits< DefaultForMeasureType_type, char > DefaultForMeasureType_traits;
 
         const DefaultForMeasureType_optional&
@@ -284,7 +284,7 @@ namespace schema
         // UnitType
         //
         typedef ::xml_schema::idref UnitType_type;
-        typedef ::xsd::cxx::tree::optional< UnitType_type > UnitType_optional;
+        typedef ::xsd::cxx::tree::optional< UnitType_type, false > UnitType_optional;
         typedef ::xsd::cxx::tree::traits< UnitType_type, char > UnitType_traits;
 
         const UnitType_optional&
@@ -305,7 +305,7 @@ namespace schema
         // DecimalPrecision
         //
         typedef ::xml_schema::int_ DecimalPrecision_type;
-        typedef ::xsd::cxx::tree::optional< DecimalPrecision_type > DecimalPrecision_optional;
+        typedef ::xsd::cxx::tree::optional< DecimalPrecision_type, true > DecimalPrecision_optional;
         typedef ::xsd::cxx::tree::traits< DecimalPrecision_type, char > DecimalPrecision_traits;
 
         const DecimalPrecision_optional&

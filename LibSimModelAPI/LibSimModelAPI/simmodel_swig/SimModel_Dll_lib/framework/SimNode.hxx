@@ -263,7 +263,7 @@ namespace schema
         // HostElement
         //
         typedef ::xml_schema::idref HostElement_type;
-        typedef ::xsd::cxx::tree::optional< HostElement_type > HostElement_optional;
+        typedef ::xsd::cxx::tree::optional< HostElement_type, false > HostElement_optional;
         typedef ::xsd::cxx::tree::traits< HostElement_type, char > HostElement_traits;
 
         const HostElement_optional&

@@ -274,7 +274,7 @@ namespace schema
         // LayerMaterial
         //
         typedef ::xml_schema::idref LayerMaterial_type;
-        typedef ::xsd::cxx::tree::optional< LayerMaterial_type > LayerMaterial_optional;
+        typedef ::xsd::cxx::tree::optional< LayerMaterial_type, false > LayerMaterial_optional;
         typedef ::xsd::cxx::tree::traits< LayerMaterial_type, char > LayerMaterial_traits;
 
         const LayerMaterial_optional&
@@ -295,7 +295,7 @@ namespace schema
         // LayerThickness
         //
         typedef ::xml_schema::double_ LayerThickness_type;
-        typedef ::xsd::cxx::tree::optional< LayerThickness_type > LayerThickness_optional;
+        typedef ::xsd::cxx::tree::optional< LayerThickness_type, true > LayerThickness_optional;
         typedef ::xsd::cxx::tree::traits< LayerThickness_type, char, ::xsd::cxx::tree::schema_type::double_ > LayerThickness_traits;
 
         const LayerThickness_optional&
@@ -334,7 +334,7 @@ namespace schema
         // MaterialLayerName
         //
         typedef ::xml_schema::string MaterialLayerName_type;
-        typedef ::xsd::cxx::tree::optional< MaterialLayerName_type > MaterialLayerName_optional;
+        typedef ::xsd::cxx::tree::optional< MaterialLayerName_type, false > MaterialLayerName_optional;
         typedef ::xsd::cxx::tree::traits< MaterialLayerName_type, char > MaterialLayerName_traits;
 
         const MaterialLayerName_optional&

@@ -263,7 +263,7 @@ namespace schema
         // ProjectPhase
         //
         typedef ::xml_schema::string ProjectPhase_type;
-        typedef ::xsd::cxx::tree::optional< ProjectPhase_type > ProjectPhase_optional;
+        typedef ::xsd::cxx::tree::optional< ProjectPhase_type, false > ProjectPhase_optional;
         typedef ::xsd::cxx::tree::traits< ProjectPhase_type, char > ProjectPhase_traits;
 
         const ProjectPhase_optional&
@@ -284,7 +284,7 @@ namespace schema
         // ProjectClientOwner
         //
         typedef ::xml_schema::idref ProjectClientOwner_type;
-        typedef ::xsd::cxx::tree::optional< ProjectClientOwner_type > ProjectClientOwner_optional;
+        typedef ::xsd::cxx::tree::optional< ProjectClientOwner_type, false > ProjectClientOwner_optional;
         typedef ::xsd::cxx::tree::traits< ProjectClientOwner_type, char > ProjectClientOwner_traits;
 
         const ProjectClientOwner_optional&
@@ -305,7 +305,7 @@ namespace schema
         // ProjectArchitect
         //
         typedef ::xml_schema::idref ProjectArchitect_type;
-        typedef ::xsd::cxx::tree::optional< ProjectArchitect_type > ProjectArchitect_optional;
+        typedef ::xsd::cxx::tree::optional< ProjectArchitect_type, false > ProjectArchitect_optional;
         typedef ::xsd::cxx::tree::traits< ProjectArchitect_type, char > ProjectArchitect_traits;
 
         const ProjectArchitect_optional&

@@ -263,7 +263,7 @@ namespace schema
         // SimCntrlSchm_Name
         //
         typedef ::xml_schema::string SimCntrlSchm_Name_type;
-        typedef ::xsd::cxx::tree::optional< SimCntrlSchm_Name_type > SimCntrlSchm_Name_optional;
+        typedef ::xsd::cxx::tree::optional< SimCntrlSchm_Name_type, false > SimCntrlSchm_Name_optional;
         typedef ::xsd::cxx::tree::traits< SimCntrlSchm_Name_type, char > SimCntrlSchm_Name_traits;
 
         const SimCntrlSchm_Name_optional&
@@ -284,7 +284,7 @@ namespace schema
         // SimCntrlSchm_SchedName
         //
         typedef ::xml_schema::idref SimCntrlSchm_SchedName_type;
-        typedef ::xsd::cxx::tree::optional< SimCntrlSchm_SchedName_type > SimCntrlSchm_SchedName_optional;
+        typedef ::xsd::cxx::tree::optional< SimCntrlSchm_SchedName_type, false > SimCntrlSchm_SchedName_optional;
         typedef ::xsd::cxx::tree::traits< SimCntrlSchm_SchedName_type, char > SimCntrlSchm_SchedName_traits;
 
         const SimCntrlSchm_SchedName_optional&

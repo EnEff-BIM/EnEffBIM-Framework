@@ -25,6 +25,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="SimDerivedUnitType_DerivedUnit_Default.i" />
+    <CustomBuild Include="SimDerivedUnitType_DerivedUnit_Default.i" />
   </ItemGroup>
 </Project>

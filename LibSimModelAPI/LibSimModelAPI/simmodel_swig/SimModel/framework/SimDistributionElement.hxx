@@ -263,7 +263,7 @@ namespace schema
         // DockedToPort
         //
         typedef ::xml_schema::idref DockedToPort_type;
-        typedef ::xsd::cxx::tree::optional< DockedToPort_type > DockedToPort_optional;
+        typedef ::xsd::cxx::tree::optional< DockedToPort_type, false > DockedToPort_optional;
         typedef ::xsd::cxx::tree::traits< DockedToPort_type, char > DockedToPort_traits;
 
         const DockedToPort_optional&

@@ -263,7 +263,7 @@ namespace schema
         // ZoneColorIndex
         //
         typedef ::xml_schema::int_ ZoneColorIndex_type;
-        typedef ::xsd::cxx::tree::optional< ZoneColorIndex_type > ZoneColorIndex_optional;
+        typedef ::xsd::cxx::tree::optional< ZoneColorIndex_type, true > ZoneColorIndex_optional;
         typedef ::xsd::cxx::tree::traits< ZoneColorIndex_type, char > ZoneColorIndex_traits;
 
         const ZoneColorIndex_optional&
@@ -302,7 +302,7 @@ namespace schema
         // ContainingBuilding
         //
         typedef ::xml_schema::idref ContainingBuilding_type;
-        typedef ::xsd::cxx::tree::optional< ContainingBuilding_type > ContainingBuilding_optional;
+        typedef ::xsd::cxx::tree::optional< ContainingBuilding_type, false > ContainingBuilding_optional;
         typedef ::xsd::cxx::tree::traits< ContainingBuilding_type, char > ContainingBuilding_traits;
 
         const ContainingBuilding_optional&

@@ -263,7 +263,7 @@ namespace schema
         // SimMatLayerSet_OutsideLayer
         //
         typedef ::xml_schema::idref SimMatLayerSet_OutsideLayer_type;
-        typedef ::xsd::cxx::tree::optional< SimMatLayerSet_OutsideLayer_type > SimMatLayerSet_OutsideLayer_optional;
+        typedef ::xsd::cxx::tree::optional< SimMatLayerSet_OutsideLayer_type, false > SimMatLayerSet_OutsideLayer_optional;
         typedef ::xsd::cxx::tree::traits< SimMatLayerSet_OutsideLayer_type, char > SimMatLayerSet_OutsideLayer_traits;
 
         const SimMatLayerSet_OutsideLayer_optional&
@@ -284,7 +284,7 @@ namespace schema
         // SimMatLayerSet_SrcPresentAfterLayerNum
         //
         typedef ::xml_schema::int_ SimMatLayerSet_SrcPresentAfterLayerNum_type;
-        typedef ::xsd::cxx::tree::optional< SimMatLayerSet_SrcPresentAfterLayerNum_type > SimMatLayerSet_SrcPresentAfterLayerNum_optional;
+        typedef ::xsd::cxx::tree::optional< SimMatLayerSet_SrcPresentAfterLayerNum_type, true > SimMatLayerSet_SrcPresentAfterLayerNum_optional;
         typedef ::xsd::cxx::tree::traits< SimMatLayerSet_SrcPresentAfterLayerNum_type, char > SimMatLayerSet_SrcPresentAfterLayerNum_traits;
 
         const SimMatLayerSet_SrcPresentAfterLayerNum_optional&
@@ -302,7 +302,7 @@ namespace schema
         // SimMatLayerSet_TempCalcRequestedAfterLayerNum
         //
         typedef ::xml_schema::int_ SimMatLayerSet_TempCalcRequestedAfterLayerNum_type;
-        typedef ::xsd::cxx::tree::optional< SimMatLayerSet_TempCalcRequestedAfterLayerNum_type > SimMatLayerSet_TempCalcRequestedAfterLayerNum_optional;
+        typedef ::xsd::cxx::tree::optional< SimMatLayerSet_TempCalcRequestedAfterLayerNum_type, true > SimMatLayerSet_TempCalcRequestedAfterLayerNum_optional;
         typedef ::xsd::cxx::tree::traits< SimMatLayerSet_TempCalcRequestedAfterLayerNum_type, char > SimMatLayerSet_TempCalcRequestedAfterLayerNum_traits;
 
         const SimMatLayerSet_TempCalcRequestedAfterLayerNum_optional&
@@ -320,7 +320,7 @@ namespace schema
         // SimMatLayerSet_DimensionsForTheCTFCalc
         //
         typedef ::xml_schema::int_ SimMatLayerSet_DimensionsForTheCTFCalc_type;
-        typedef ::xsd::cxx::tree::optional< SimMatLayerSet_DimensionsForTheCTFCalc_type > SimMatLayerSet_DimensionsForTheCTFCalc_optional;
+        typedef ::xsd::cxx::tree::optional< SimMatLayerSet_DimensionsForTheCTFCalc_type, true > SimMatLayerSet_DimensionsForTheCTFCalc_optional;
         typedef ::xsd::cxx::tree::traits< SimMatLayerSet_DimensionsForTheCTFCalc_type, char > SimMatLayerSet_DimensionsForTheCTFCalc_traits;
 
         const SimMatLayerSet_DimensionsForTheCTFCalc_optional&
@@ -338,7 +338,7 @@ namespace schema
         // SimMatLayerSet_TubeSpacing
         //
         typedef ::xml_schema::double_ SimMatLayerSet_TubeSpacing_type;
-        typedef ::xsd::cxx::tree::optional< SimMatLayerSet_TubeSpacing_type > SimMatLayerSet_TubeSpacing_optional;
+        typedef ::xsd::cxx::tree::optional< SimMatLayerSet_TubeSpacing_type, true > SimMatLayerSet_TubeSpacing_optional;
         typedef ::xsd::cxx::tree::traits< SimMatLayerSet_TubeSpacing_type, char, ::xsd::cxx::tree::schema_type::double_ > SimMatLayerSet_TubeSpacing_traits;
 
         const SimMatLayerSet_TubeSpacing_optional&

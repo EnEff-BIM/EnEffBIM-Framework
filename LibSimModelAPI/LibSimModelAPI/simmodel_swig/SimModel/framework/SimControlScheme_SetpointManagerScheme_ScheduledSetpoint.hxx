@@ -263,7 +263,7 @@ namespace schema
         // SimCntrlSchm_Name
         //
         typedef ::xml_schema::string SimCntrlSchm_Name_type;
-        typedef ::xsd::cxx::tree::optional< SimCntrlSchm_Name_type > SimCntrlSchm_Name_optional;
+        typedef ::xsd::cxx::tree::optional< SimCntrlSchm_Name_type, false > SimCntrlSchm_Name_optional;
         typedef ::xsd::cxx::tree::traits< SimCntrlSchm_Name_type, char > SimCntrlSchm_Name_traits;
 
         const SimCntrlSchm_Name_optional&
@@ -284,7 +284,7 @@ namespace schema
         // SimCntrlSchm_SchedName
         //
         typedef ::xml_schema::idref SimCntrlSchm_SchedName_type;
-        typedef ::xsd::cxx::tree::optional< SimCntrlSchm_SchedName_type > SimCntrlSchm_SchedName_optional;
+        typedef ::xsd::cxx::tree::optional< SimCntrlSchm_SchedName_type, false > SimCntrlSchm_SchedName_optional;
         typedef ::xsd::cxx::tree::traits< SimCntrlSchm_SchedName_type, char > SimCntrlSchm_SchedName_traits;
 
         const SimCntrlSchm_SchedName_optional&
@@ -305,7 +305,7 @@ namespace schema
         // SimCntrlSchm_CntlVar
         //
         typedef ::xml_schema::string SimCntrlSchm_CntlVar_type;
-        typedef ::xsd::cxx::tree::optional< SimCntrlSchm_CntlVar_type > SimCntrlSchm_CntlVar_optional;
+        typedef ::xsd::cxx::tree::optional< SimCntrlSchm_CntlVar_type, false > SimCntrlSchm_CntlVar_optional;
         typedef ::xsd::cxx::tree::traits< SimCntrlSchm_CntlVar_type, char > SimCntrlSchm_CntlVar_traits;
 
         const SimCntrlSchm_CntlVar_optional&
@@ -326,7 +326,7 @@ namespace schema
         // SimCntrlSchm_SetpointNodeOrNodeListName
         //
         typedef ::xml_schema::string SimCntrlSchm_SetpointNodeOrNodeListName_type;
-        typedef ::xsd::cxx::tree::optional< SimCntrlSchm_SetpointNodeOrNodeListName_type > SimCntrlSchm_SetpointNodeOrNodeListName_optional;
+        typedef ::xsd::cxx::tree::optional< SimCntrlSchm_SetpointNodeOrNodeListName_type, false > SimCntrlSchm_SetpointNodeOrNodeListName_optional;
         typedef ::xsd::cxx::tree::traits< SimCntrlSchm_SetpointNodeOrNodeListName_type, char > SimCntrlSchm_SetpointNodeOrNodeListName_traits;
 
         const SimCntrlSchm_SetpointNodeOrNodeListName_optional&

@@ -25,6 +25,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="SimAppObjNameDefault_DistributionSystem_MixedWaterLoop.i" />
+    <CustomBuild Include="SimAppObjNameDefault_DistributionSystem_MixedWaterLoop.i" />
   </ItemGroup>
 </Project>

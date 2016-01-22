@@ -296,7 +296,7 @@ namespace schema
         // Id
         //
         typedef ::xml_schema::string Id_type;
-        typedef ::xsd::cxx::tree::optional< Id_type > Id_optional;
+        typedef ::xsd::cxx::tree::optional< Id_type, false > Id_optional;
         typedef ::xsd::cxx::tree::traits< Id_type, char > Id_traits;
 
         const Id_optional&
@@ -317,7 +317,7 @@ namespace schema
         // FamilyName
         //
         typedef ::xml_schema::string FamilyName_type;
-        typedef ::xsd::cxx::tree::optional< FamilyName_type > FamilyName_optional;
+        typedef ::xsd::cxx::tree::optional< FamilyName_type, false > FamilyName_optional;
         typedef ::xsd::cxx::tree::traits< FamilyName_type, char > FamilyName_traits;
 
         const FamilyName_optional&
@@ -338,7 +338,7 @@ namespace schema
         // GivenName
         //
         typedef ::xml_schema::string GivenName_type;
-        typedef ::xsd::cxx::tree::optional< GivenName_type > GivenName_optional;
+        typedef ::xsd::cxx::tree::optional< GivenName_type, false > GivenName_optional;
         typedef ::xsd::cxx::tree::traits< GivenName_type, char > GivenName_traits;
 
         const GivenName_optional&

@@ -10,6 +10,7 @@ using namespace xsd::cxx::tree;
 
 //3. class auto ptr
 %auto_ptr(::schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Day_Interval)
+%auto_ptr(::schema::simxml::ResourcesGeneral::SimTimeSeriesSched_Time_1_144)
 
 %import  "..\base\base.i"
 %import  "..\SimTimeSeriesSchedule_Calendar_Configuration\SimTimeSeriesSchedule_Calendar_Configuration.i"

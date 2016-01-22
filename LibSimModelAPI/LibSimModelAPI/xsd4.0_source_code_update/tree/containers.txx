@@ -134,7 +134,7 @@ namespace xsd
         set (x);
       }
 
-      template <typename T>
+      /*template <typename T>
       optional<T, false>::
       optional (XSD_AUTO_PTR<T> x, container* c)
           : x_ (0), container_ (c)
@@ -144,7 +144,7 @@ namespace xsd
 #else
         set (x);
 #endif
-      }
+      }*/
 
       template <typename T>
       optional<T, false>::

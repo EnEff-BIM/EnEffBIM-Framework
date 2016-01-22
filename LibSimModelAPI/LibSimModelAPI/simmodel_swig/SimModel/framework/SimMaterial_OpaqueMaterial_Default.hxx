@@ -263,7 +263,7 @@ namespace schema
         // SimMaterial_Name
         //
         typedef ::xml_schema::string SimMaterial_Name_type;
-        typedef ::xsd::cxx::tree::optional< SimMaterial_Name_type > SimMaterial_Name_optional;
+        typedef ::xsd::cxx::tree::optional< SimMaterial_Name_type, false > SimMaterial_Name_optional;
         typedef ::xsd::cxx::tree::traits< SimMaterial_Name_type, char > SimMaterial_Name_traits;
 
         const SimMaterial_Name_optional&
@@ -284,7 +284,7 @@ namespace schema
         // SimMaterial_Rough
         //
         typedef ::xml_schema::string SimMaterial_Rough_type;
-        typedef ::xsd::cxx::tree::optional< SimMaterial_Rough_type > SimMaterial_Rough_optional;
+        typedef ::xsd::cxx::tree::optional< SimMaterial_Rough_type, false > SimMaterial_Rough_optional;
         typedef ::xsd::cxx::tree::traits< SimMaterial_Rough_type, char > SimMaterial_Rough_traits;
 
         const SimMaterial_Rough_optional&
@@ -305,7 +305,7 @@ namespace schema
         // SimMaterial_Thick
         //
         typedef ::xml_schema::double_ SimMaterial_Thick_type;
-        typedef ::xsd::cxx::tree::optional< SimMaterial_Thick_type > SimMaterial_Thick_optional;
+        typedef ::xsd::cxx::tree::optional< SimMaterial_Thick_type, true > SimMaterial_Thick_optional;
         typedef ::xsd::cxx::tree::traits< SimMaterial_Thick_type, char, ::xsd::cxx::tree::schema_type::double_ > SimMaterial_Thick_traits;
 
         const SimMaterial_Thick_optional&
@@ -323,7 +323,7 @@ namespace schema
         // SimMaterial_Cond
         //
         typedef ::xml_schema::double_ SimMaterial_Cond_type;
-        typedef ::xsd::cxx::tree::optional< SimMaterial_Cond_type > SimMaterial_Cond_optional;
+        typedef ::xsd::cxx::tree::optional< SimMaterial_Cond_type, true > SimMaterial_Cond_optional;
         typedef ::xsd::cxx::tree::traits< SimMaterial_Cond_type, char, ::xsd::cxx::tree::schema_type::double_ > SimMaterial_Cond_traits;
 
         const SimMaterial_Cond_optional&
@@ -341,7 +341,7 @@ namespace schema
         // SimMaterial_Density
         //
         typedef ::xml_schema::double_ SimMaterial_Density_type;
-        typedef ::xsd::cxx::tree::optional< SimMaterial_Density_type > SimMaterial_Density_optional;
+        typedef ::xsd::cxx::tree::optional< SimMaterial_Density_type, true > SimMaterial_Density_optional;
         typedef ::xsd::cxx::tree::traits< SimMaterial_Density_type, char, ::xsd::cxx::tree::schema_type::double_ > SimMaterial_Density_traits;
 
         const SimMaterial_Density_optional&
@@ -359,7 +359,7 @@ namespace schema
         // SimMaterial_SpecificHeat
         //
         typedef ::xml_schema::double_ SimMaterial_SpecificHeat_type;
-        typedef ::xsd::cxx::tree::optional< SimMaterial_SpecificHeat_type > SimMaterial_SpecificHeat_optional;
+        typedef ::xsd::cxx::tree::optional< SimMaterial_SpecificHeat_type, true > SimMaterial_SpecificHeat_optional;
         typedef ::xsd::cxx::tree::traits< SimMaterial_SpecificHeat_type, char, ::xsd::cxx::tree::schema_type::double_ > SimMaterial_SpecificHeat_traits;
 
         const SimMaterial_SpecificHeat_optional&
@@ -377,7 +377,7 @@ namespace schema
         // SimMaterial_ThermalAbsorptance
         //
         typedef ::xml_schema::double_ SimMaterial_ThermalAbsorptance_type;
-        typedef ::xsd::cxx::tree::optional< SimMaterial_ThermalAbsorptance_type > SimMaterial_ThermalAbsorptance_optional;
+        typedef ::xsd::cxx::tree::optional< SimMaterial_ThermalAbsorptance_type, true > SimMaterial_ThermalAbsorptance_optional;
         typedef ::xsd::cxx::tree::traits< SimMaterial_ThermalAbsorptance_type, char, ::xsd::cxx::tree::schema_type::double_ > SimMaterial_ThermalAbsorptance_traits;
 
         const SimMaterial_ThermalAbsorptance_optional&
@@ -395,7 +395,7 @@ namespace schema
         // SimMaterial_SolarAbsorptance
         //
         typedef ::xml_schema::double_ SimMaterial_SolarAbsorptance_type;
-        typedef ::xsd::cxx::tree::optional< SimMaterial_SolarAbsorptance_type > SimMaterial_SolarAbsorptance_optional;
+        typedef ::xsd::cxx::tree::optional< SimMaterial_SolarAbsorptance_type, true > SimMaterial_SolarAbsorptance_optional;
         typedef ::xsd::cxx::tree::traits< SimMaterial_SolarAbsorptance_type, char, ::xsd::cxx::tree::schema_type::double_ > SimMaterial_SolarAbsorptance_traits;
 
         const SimMaterial_SolarAbsorptance_optional&
@@ -413,7 +413,7 @@ namespace schema
         // SimMaterial_VisAbsorptance
         //
         typedef ::xml_schema::double_ SimMaterial_VisAbsorptance_type;
-        typedef ::xsd::cxx::tree::optional< SimMaterial_VisAbsorptance_type > SimMaterial_VisAbsorptance_optional;
+        typedef ::xsd::cxx::tree::optional< SimMaterial_VisAbsorptance_type, true > SimMaterial_VisAbsorptance_optional;
         typedef ::xsd::cxx::tree::traits< SimMaterial_VisAbsorptance_type, char, ::xsd::cxx::tree::schema_type::double_ > SimMaterial_VisAbsorptance_traits;
 
         const SimMaterial_VisAbsorptance_optional&

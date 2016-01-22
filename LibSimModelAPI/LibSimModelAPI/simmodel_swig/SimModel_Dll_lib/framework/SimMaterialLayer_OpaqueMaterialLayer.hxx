@@ -263,7 +263,7 @@ namespace schema
         // SimMatLayer_MaterialLayerName
         //
         typedef ::xml_schema::string SimMatLayer_MaterialLayerName_type;
-        typedef ::xsd::cxx::tree::optional< SimMatLayer_MaterialLayerName_type > SimMatLayer_MaterialLayerName_optional;
+        typedef ::xsd::cxx::tree::optional< SimMatLayer_MaterialLayerName_type, false > SimMatLayer_MaterialLayerName_optional;
         typedef ::xsd::cxx::tree::traits< SimMatLayer_MaterialLayerName_type, char > SimMatLayer_MaterialLayerName_traits;
 
         const SimMatLayer_MaterialLayerName_optional&
@@ -284,7 +284,7 @@ namespace schema
         // SimMatLayer_MaterialName
         //
         typedef ::xml_schema::idref SimMatLayer_MaterialName_type;
-        typedef ::xsd::cxx::tree::optional< SimMatLayer_MaterialName_type > SimMatLayer_MaterialName_optional;
+        typedef ::xsd::cxx::tree::optional< SimMatLayer_MaterialName_type, false > SimMatLayer_MaterialName_optional;
         typedef ::xsd::cxx::tree::traits< SimMatLayer_MaterialName_type, char > SimMatLayer_MaterialName_traits;
 
         const SimMatLayer_MaterialName_optional&
@@ -305,7 +305,7 @@ namespace schema
         // SimMatLayer_LayerThickness
         //
         typedef ::xml_schema::double_ SimMatLayer_LayerThickness_type;
-        typedef ::xsd::cxx::tree::optional< SimMatLayer_LayerThickness_type > SimMatLayer_LayerThickness_optional;
+        typedef ::xsd::cxx::tree::optional< SimMatLayer_LayerThickness_type, true > SimMatLayer_LayerThickness_optional;
         typedef ::xsd::cxx::tree::traits< SimMatLayer_LayerThickness_type, char, ::xsd::cxx::tree::schema_type::double_ > SimMatLayer_LayerThickness_traits;
 
         const SimMatLayer_LayerThickness_optional&

@@ -50,7 +50,7 @@
 #include <xsd/cxx/config.hxx>
 
 #if (XSD_INT_VERSION != 4000000L)
-//#error XSD runtime version mismatch
+////#error XSD runtime version mismatch
 #endif
 
 #include <xsd/cxx/pre.hxx>
@@ -263,7 +263,7 @@ namespace schema
         // Decomposes
         //
         typedef ::xml_schema::idref Decomposes_type;
-        typedef ::xsd::cxx::tree::optional< Decomposes_type > Decomposes_optional;
+        typedef ::xsd::cxx::tree::optional< Decomposes_type, false > Decomposes_optional;
         typedef ::xsd::cxx::tree::traits< Decomposes_type, char > Decomposes_traits;
 
         const Decomposes_optional&

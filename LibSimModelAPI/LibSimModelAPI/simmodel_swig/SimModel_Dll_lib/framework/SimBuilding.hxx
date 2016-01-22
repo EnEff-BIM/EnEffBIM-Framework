@@ -274,7 +274,7 @@ namespace schema
         // Name
         //
         typedef ::xml_schema::string Name_type;
-        typedef ::xsd::cxx::tree::optional< Name_type > Name_optional;
+        typedef ::xsd::cxx::tree::optional< Name_type, false > Name_optional;
         typedef ::xsd::cxx::tree::traits< Name_type, char > Name_traits;
 
         const Name_optional&
@@ -295,7 +295,7 @@ namespace schema
         // BuildingAddress
         //
         typedef ::xml_schema::idref BuildingAddress_type;
-        typedef ::xsd::cxx::tree::optional< BuildingAddress_type > BuildingAddress_optional;
+        typedef ::xsd::cxx::tree::optional< BuildingAddress_type, false > BuildingAddress_optional;
         typedef ::xsd::cxx::tree::traits< BuildingAddress_type, char > BuildingAddress_traits;
 
         const BuildingAddress_optional&
@@ -316,7 +316,7 @@ namespace schema
         // BuildingDatumElevation
         //
         typedef ::xml_schema::double_ BuildingDatumElevation_type;
-        typedef ::xsd::cxx::tree::optional< BuildingDatumElevation_type > BuildingDatumElevation_optional;
+        typedef ::xsd::cxx::tree::optional< BuildingDatumElevation_type, true > BuildingDatumElevation_optional;
         typedef ::xsd::cxx::tree::traits< BuildingDatumElevation_type, char, ::xsd::cxx::tree::schema_type::double_ > BuildingDatumElevation_traits;
 
         const BuildingDatumElevation_optional&
@@ -334,7 +334,7 @@ namespace schema
         // BuildingOccupancyType
         //
         typedef ::xml_schema::string BuildingOccupancyType_type;
-        typedef ::xsd::cxx::tree::optional< BuildingOccupancyType_type > BuildingOccupancyType_optional;
+        typedef ::xsd::cxx::tree::optional< BuildingOccupancyType_type, false > BuildingOccupancyType_optional;
         typedef ::xsd::cxx::tree::traits< BuildingOccupancyType_type, char > BuildingOccupancyType_traits;
 
         const BuildingOccupancyType_optional&
@@ -355,7 +355,7 @@ namespace schema
         // BuildingGrossPlannedArea
         //
         typedef ::xml_schema::double_ BuildingGrossPlannedArea_type;
-        typedef ::xsd::cxx::tree::optional< BuildingGrossPlannedArea_type > BuildingGrossPlannedArea_optional;
+        typedef ::xsd::cxx::tree::optional< BuildingGrossPlannedArea_type, true > BuildingGrossPlannedArea_optional;
         typedef ::xsd::cxx::tree::traits< BuildingGrossPlannedArea_type, char, ::xsd::cxx::tree::schema_type::double_ > BuildingGrossPlannedArea_traits;
 
         const BuildingGrossPlannedArea_optional&
@@ -373,7 +373,7 @@ namespace schema
         // BuildingNumberofStoreys
         //
         typedef ::xml_schema::double_ BuildingNumberofStoreys_type;
-        typedef ::xsd::cxx::tree::optional< BuildingNumberofStoreys_type > BuildingNumberofStoreys_optional;
+        typedef ::xsd::cxx::tree::optional< BuildingNumberofStoreys_type, true > BuildingNumberofStoreys_optional;
         typedef ::xsd::cxx::tree::traits< BuildingNumberofStoreys_type, char, ::xsd::cxx::tree::schema_type::double_ > BuildingNumberofStoreys_traits;
 
         const BuildingNumberofStoreys_optional&
@@ -391,7 +391,7 @@ namespace schema
         // BuildingYearOfConstruction
         //
         typedef ::xml_schema::string BuildingYearOfConstruction_type;
-        typedef ::xsd::cxx::tree::optional< BuildingYearOfConstruction_type > BuildingYearOfConstruction_optional;
+        typedef ::xsd::cxx::tree::optional< BuildingYearOfConstruction_type, false > BuildingYearOfConstruction_optional;
         typedef ::xsd::cxx::tree::traits< BuildingYearOfConstruction_type, char > BuildingYearOfConstruction_traits;
 
         const BuildingYearOfConstruction_optional&
@@ -433,7 +433,7 @@ namespace schema
         // BuildingEnergyTargetUnits
         //
         typedef ::xml_schema::string BuildingEnergyTargetUnits_type;
-        typedef ::xsd::cxx::tree::optional< BuildingEnergyTargetUnits_type > BuildingEnergyTargetUnits_optional;
+        typedef ::xsd::cxx::tree::optional< BuildingEnergyTargetUnits_type, false > BuildingEnergyTargetUnits_optional;
         typedef ::xsd::cxx::tree::traits< BuildingEnergyTargetUnits_type, char > BuildingEnergyTargetUnits_traits;
 
         const BuildingEnergyTargetUnits_optional&
@@ -454,7 +454,7 @@ namespace schema
         // BuildingEnergyTargetValue
         //
         typedef ::xml_schema::double_ BuildingEnergyTargetValue_type;
-        typedef ::xsd::cxx::tree::optional< BuildingEnergyTargetValue_type > BuildingEnergyTargetValue_optional;
+        typedef ::xsd::cxx::tree::optional< BuildingEnergyTargetValue_type, true > BuildingEnergyTargetValue_optional;
         typedef ::xsd::cxx::tree::traits< BuildingEnergyTargetValue_type, char, ::xsd::cxx::tree::schema_type::double_ > BuildingEnergyTargetValue_traits;
 
         const BuildingEnergyTargetValue_optional&
@@ -491,7 +491,7 @@ namespace schema
         // BuildingGrossFloorArea
         //
         typedef ::xml_schema::double_ BuildingGrossFloorArea_type;
-        typedef ::xsd::cxx::tree::optional< BuildingGrossFloorArea_type > BuildingGrossFloorArea_optional;
+        typedef ::xsd::cxx::tree::optional< BuildingGrossFloorArea_type, true > BuildingGrossFloorArea_optional;
         typedef ::xsd::cxx::tree::traits< BuildingGrossFloorArea_type, char, ::xsd::cxx::tree::schema_type::double_ > BuildingGrossFloorArea_traits;
 
         const BuildingGrossFloorArea_optional&
@@ -509,7 +509,7 @@ namespace schema
         // ClassRef_ConstEntByFunction
         //
         typedef ::xml_schema::idref ClassRef_ConstEntByFunction_type;
-        typedef ::xsd::cxx::tree::optional< ClassRef_ConstEntByFunction_type > ClassRef_ConstEntByFunction_optional;
+        typedef ::xsd::cxx::tree::optional< ClassRef_ConstEntByFunction_type, false > ClassRef_ConstEntByFunction_optional;
         typedef ::xsd::cxx::tree::traits< ClassRef_ConstEntByFunction_type, char > ClassRef_ConstEntByFunction_traits;
 
         const ClassRef_ConstEntByFunction_optional&
@@ -530,7 +530,7 @@ namespace schema
         // BuildingInSpatialContainer
         //
         typedef ::xml_schema::idref BuildingInSpatialContainer_type;
-        typedef ::xsd::cxx::tree::optional< BuildingInSpatialContainer_type > BuildingInSpatialContainer_optional;
+        typedef ::xsd::cxx::tree::optional< BuildingInSpatialContainer_type, false > BuildingInSpatialContainer_optional;
         typedef ::xsd::cxx::tree::traits< BuildingInSpatialContainer_type, char > BuildingInSpatialContainer_traits;
 
         const BuildingInSpatialContainer_optional&
@@ -551,7 +551,7 @@ namespace schema
         // Representation
         //
         typedef ::xml_schema::idref Representation_type;
-        typedef ::xsd::cxx::tree::optional< Representation_type > Representation_optional;
+        typedef ::xsd::cxx::tree::optional< Representation_type, false > Representation_optional;
         typedef ::xsd::cxx::tree::traits< Representation_type, char > Representation_traits;
 
         const Representation_optional&
@@ -572,7 +572,7 @@ namespace schema
         // ElevationOfTerrain
         //
         typedef ::xml_schema::double_ ElevationOfTerrain_type;
-        typedef ::xsd::cxx::tree::optional< ElevationOfTerrain_type > ElevationOfTerrain_optional;
+        typedef ::xsd::cxx::tree::optional< ElevationOfTerrain_type, true > ElevationOfTerrain_optional;
         typedef ::xsd::cxx::tree::traits< ElevationOfTerrain_type, char, ::xsd::cxx::tree::schema_type::double_ > ElevationOfTerrain_traits;
 
         const ElevationOfTerrain_optional&
@@ -590,7 +590,7 @@ namespace schema
         // BuildingConstructionsTemplate
         //
         typedef ::xml_schema::idref BuildingConstructionsTemplate_type;
-        typedef ::xsd::cxx::tree::optional< BuildingConstructionsTemplate_type > BuildingConstructionsTemplate_optional;
+        typedef ::xsd::cxx::tree::optional< BuildingConstructionsTemplate_type, false > BuildingConstructionsTemplate_optional;
         typedef ::xsd::cxx::tree::traits< BuildingConstructionsTemplate_type, char > BuildingConstructionsTemplate_traits;
 
         const BuildingConstructionsTemplate_optional&
@@ -629,7 +629,7 @@ namespace schema
         // DaylightControlsDefault
         //
         typedef ::xml_schema::idref DaylightControlsDefault_type;
-        typedef ::xsd::cxx::tree::optional< DaylightControlsDefault_type > DaylightControlsDefault_optional;
+        typedef ::xsd::cxx::tree::optional< DaylightControlsDefault_type, false > DaylightControlsDefault_optional;
         typedef ::xsd::cxx::tree::traits< DaylightControlsDefault_type, char > DaylightControlsDefault_traits;
 
         const DaylightControlsDefault_optional&
@@ -650,7 +650,7 @@ namespace schema
         // NatVentilationDefault
         //
         typedef ::xml_schema::idref NatVentilationDefault_type;
-        typedef ::xsd::cxx::tree::optional< NatVentilationDefault_type > NatVentilationDefault_optional;
+        typedef ::xsd::cxx::tree::optional< NatVentilationDefault_type, false > NatVentilationDefault_optional;
         typedef ::xsd::cxx::tree::traits< NatVentilationDefault_type, char > NatVentilationDefault_traits;
 
         const NatVentilationDefault_optional&
@@ -671,7 +671,7 @@ namespace schema
         // BuildingInfiltrationType
         //
         typedef ::xml_schema::string BuildingInfiltrationType_type;
-        typedef ::xsd::cxx::tree::optional< BuildingInfiltrationType_type > BuildingInfiltrationType_optional;
+        typedef ::xsd::cxx::tree::optional< BuildingInfiltrationType_type, false > BuildingInfiltrationType_optional;
         typedef ::xsd::cxx::tree::traits< BuildingInfiltrationType_type, char > BuildingInfiltrationType_traits;
 
         const BuildingInfiltrationType_optional&
@@ -692,7 +692,7 @@ namespace schema
         // BuildingInfiltrationValue
         //
         typedef ::xml_schema::double_ BuildingInfiltrationValue_type;
-        typedef ::xsd::cxx::tree::optional< BuildingInfiltrationValue_type > BuildingInfiltrationValue_optional;
+        typedef ::xsd::cxx::tree::optional< BuildingInfiltrationValue_type, true > BuildingInfiltrationValue_optional;
         typedef ::xsd::cxx::tree::traits< BuildingInfiltrationValue_type, char, ::xsd::cxx::tree::schema_type::double_ > BuildingInfiltrationValue_traits;
 
         const BuildingInfiltrationValue_optional&
@@ -710,7 +710,7 @@ namespace schema
         // TemplateOverrideValues
         //
         typedef ::xml_schema::idref TemplateOverrideValues_type;
-        typedef ::xsd::cxx::tree::optional< TemplateOverrideValues_type > TemplateOverrideValues_optional;
+        typedef ::xsd::cxx::tree::optional< TemplateOverrideValues_type, false > TemplateOverrideValues_optional;
         typedef ::xsd::cxx::tree::traits< TemplateOverrideValues_type, char > TemplateOverrideValues_traits;
 
         const TemplateOverrideValues_optional&

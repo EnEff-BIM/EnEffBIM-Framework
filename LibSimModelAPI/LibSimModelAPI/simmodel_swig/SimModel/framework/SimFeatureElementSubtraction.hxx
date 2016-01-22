@@ -263,7 +263,7 @@ namespace schema
         // Name
         //
         typedef ::xml_schema::string Name_type;
-        typedef ::xsd::cxx::tree::optional< Name_type > Name_optional;
+        typedef ::xsd::cxx::tree::optional< Name_type, false > Name_optional;
         typedef ::xsd::cxx::tree::traits< Name_type, char > Name_traits;
 
         const Name_optional&
@@ -284,7 +284,7 @@ namespace schema
         // ObjectType
         //
         typedef ::xml_schema::string ObjectType_type;
-        typedef ::xsd::cxx::tree::optional< ObjectType_type > ObjectType_optional;
+        typedef ::xsd::cxx::tree::optional< ObjectType_type, false > ObjectType_optional;
         typedef ::xsd::cxx::tree::traits< ObjectType_type, char > ObjectType_traits;
 
         const ObjectType_optional&
@@ -305,7 +305,7 @@ namespace schema
         // Representation
         //
         typedef ::xml_schema::idref Representation_type;
-        typedef ::xsd::cxx::tree::optional< Representation_type > Representation_optional;
+        typedef ::xsd::cxx::tree::optional< Representation_type, false > Representation_optional;
         typedef ::xsd::cxx::tree::traits< Representation_type, char > Representation_traits;
 
         const Representation_optional&
@@ -326,7 +326,7 @@ namespace schema
         // Tag
         //
         typedef ::xml_schema::string Tag_type;
-        typedef ::xsd::cxx::tree::optional< Tag_type > Tag_optional;
+        typedef ::xsd::cxx::tree::optional< Tag_type, false > Tag_optional;
         typedef ::xsd::cxx::tree::traits< Tag_type, char > Tag_traits;
 
         const Tag_optional&

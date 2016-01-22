@@ -263,7 +263,7 @@ namespace schema
         // SimFlowEnergyTrans_Name
         //
         typedef ::xml_schema::string SimFlowEnergyTrans_Name_type;
-        typedef ::xsd::cxx::tree::optional< SimFlowEnergyTrans_Name_type > SimFlowEnergyTrans_Name_optional;
+        typedef ::xsd::cxx::tree::optional< SimFlowEnergyTrans_Name_type, false > SimFlowEnergyTrans_Name_optional;
         typedef ::xsd::cxx::tree::traits< SimFlowEnergyTrans_Name_type, char > SimFlowEnergyTrans_Name_traits;
 
         const SimFlowEnergyTrans_Name_optional&
@@ -284,7 +284,7 @@ namespace schema
         // SimFlowEnergyTrans_AvailSchedName
         //
         typedef ::xml_schema::idref SimFlowEnergyTrans_AvailSchedName_type;
-        typedef ::xsd::cxx::tree::optional< SimFlowEnergyTrans_AvailSchedName_type > SimFlowEnergyTrans_AvailSchedName_optional;
+        typedef ::xsd::cxx::tree::optional< SimFlowEnergyTrans_AvailSchedName_type, false > SimFlowEnergyTrans_AvailSchedName_optional;
         typedef ::xsd::cxx::tree::traits< SimFlowEnergyTrans_AvailSchedName_type, char > SimFlowEnergyTrans_AvailSchedName_traits;
 
         const SimFlowEnergyTrans_AvailSchedName_optional&

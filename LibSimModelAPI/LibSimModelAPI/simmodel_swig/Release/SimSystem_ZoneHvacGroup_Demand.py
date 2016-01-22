@@ -99,6 +99,7 @@ except:
 
 import base
 import SimSystem_ZoneHvacGroup_Control
+import SimSystem_HvacHotWater_Control
 class SimSystem_ZoneHvacGroup_Demand(SimSystem_ZoneHvacGroup_Control.SimSystem_ZoneHvacGroup):
     __swig_setmethods__ = {}
     for _s in [SimSystem_ZoneHvacGroup_Control.SimSystem_ZoneHvacGroup]:

@@ -263,7 +263,7 @@ namespace schema
         // DefaultForObjectType
         //
         typedef ::xml_schema::string DefaultForObjectType_type;
-        typedef ::xsd::cxx::tree::optional< DefaultForObjectType_type > DefaultForObjectType_optional;
+        typedef ::xsd::cxx::tree::optional< DefaultForObjectType_type, false > DefaultForObjectType_optional;
         typedef ::xsd::cxx::tree::traits< DefaultForObjectType_type, char > DefaultForObjectType_traits;
 
         const DefaultForObjectType_optional&
@@ -284,7 +284,7 @@ namespace schema
         // NameString1
         //
         typedef ::xml_schema::string NameString1_type;
-        typedef ::xsd::cxx::tree::optional< NameString1_type > NameString1_optional;
+        typedef ::xsd::cxx::tree::optional< NameString1_type, false > NameString1_optional;
         typedef ::xsd::cxx::tree::traits< NameString1_type, char > NameString1_traits;
 
         const NameString1_optional&
@@ -305,7 +305,7 @@ namespace schema
         // NameString2
         //
         typedef ::xml_schema::string NameString2_type;
-        typedef ::xsd::cxx::tree::optional< NameString2_type > NameString2_optional;
+        typedef ::xsd::cxx::tree::optional< NameString2_type, false > NameString2_optional;
         typedef ::xsd::cxx::tree::traits< NameString2_type, char > NameString2_traits;
 
         const NameString2_optional&
@@ -326,7 +326,7 @@ namespace schema
         // IndexType1
         //
         typedef ::xml_schema::string IndexType1_type;
-        typedef ::xsd::cxx::tree::optional< IndexType1_type > IndexType1_optional;
+        typedef ::xsd::cxx::tree::optional< IndexType1_type, false > IndexType1_optional;
         typedef ::xsd::cxx::tree::traits< IndexType1_type, char > IndexType1_traits;
 
         const IndexType1_optional&
@@ -347,7 +347,7 @@ namespace schema
         // IndexType2
         //
         typedef ::xml_schema::string IndexType2_type;
-        typedef ::xsd::cxx::tree::optional< IndexType2_type > IndexType2_optional;
+        typedef ::xsd::cxx::tree::optional< IndexType2_type, false > IndexType2_optional;
         typedef ::xsd::cxx::tree::traits< IndexType2_type, char > IndexType2_traits;
 
         const IndexType2_optional&
@@ -368,7 +368,7 @@ namespace schema
         // LastUsedIndex1
         //
         typedef ::xml_schema::string LastUsedIndex1_type;
-        typedef ::xsd::cxx::tree::optional< LastUsedIndex1_type > LastUsedIndex1_optional;
+        typedef ::xsd::cxx::tree::optional< LastUsedIndex1_type, false > LastUsedIndex1_optional;
         typedef ::xsd::cxx::tree::traits< LastUsedIndex1_type, char > LastUsedIndex1_traits;
 
         const LastUsedIndex1_optional&
@@ -389,7 +389,7 @@ namespace schema
         // LastUsedIndex2
         //
         typedef ::xml_schema::string LastUsedIndex2_type;
-        typedef ::xsd::cxx::tree::optional< LastUsedIndex2_type > LastUsedIndex2_optional;
+        typedef ::xsd::cxx::tree::optional< LastUsedIndex2_type, false > LastUsedIndex2_optional;
         typedef ::xsd::cxx::tree::traits< LastUsedIndex2_type, char > LastUsedIndex2_traits;
 
         const LastUsedIndex2_optional&

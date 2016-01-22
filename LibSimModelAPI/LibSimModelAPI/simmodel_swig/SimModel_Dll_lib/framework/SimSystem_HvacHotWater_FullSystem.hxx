@@ -263,7 +263,7 @@ namespace schema
         // SimSys_AvailMngrListName
         //
         typedef ::xml_schema::idref SimSys_AvailMngrListName_type;
-        typedef ::xsd::cxx::tree::optional< SimSys_AvailMngrListName_type > SimSys_AvailMngrListName_optional;
+        typedef ::xsd::cxx::tree::optional< SimSys_AvailMngrListName_type, false > SimSys_AvailMngrListName_optional;
         typedef ::xsd::cxx::tree::traits< SimSys_AvailMngrListName_type, char > SimSys_AvailMngrListName_traits;
 
         const SimSys_AvailMngrListName_optional&
@@ -284,7 +284,7 @@ namespace schema
         // SimSys_DemandSideOutNodeName
         //
         typedef ::xml_schema::string SimSys_DemandSideOutNodeName_type;
-        typedef ::xsd::cxx::tree::optional< SimSys_DemandSideOutNodeName_type > SimSys_DemandSideOutNodeName_optional;
+        typedef ::xsd::cxx::tree::optional< SimSys_DemandSideOutNodeName_type, false > SimSys_DemandSideOutNodeName_optional;
         typedef ::xsd::cxx::tree::traits< SimSys_DemandSideOutNodeName_type, char > SimSys_DemandSideOutNodeName_traits;
 
         const SimSys_DemandSideOutNodeName_optional&
@@ -305,7 +305,7 @@ namespace schema
         // SimSys_FluidType
         //
         typedef ::xml_schema::string SimSys_FluidType_type;
-        typedef ::xsd::cxx::tree::optional< SimSys_FluidType_type > SimSys_FluidType_optional;
+        typedef ::xsd::cxx::tree::optional< SimSys_FluidType_type, false > SimSys_FluidType_optional;
         typedef ::xsd::cxx::tree::traits< SimSys_FluidType_type, char > SimSys_FluidType_traits;
 
         const SimSys_FluidType_optional&
@@ -326,7 +326,7 @@ namespace schema
         // SimSys_UserDefFluidType
         //
         typedef ::xml_schema::idref SimSys_UserDefFluidType_type;
-        typedef ::xsd::cxx::tree::optional< SimSys_UserDefFluidType_type > SimSys_UserDefFluidType_optional;
+        typedef ::xsd::cxx::tree::optional< SimSys_UserDefFluidType_type, false > SimSys_UserDefFluidType_optional;
         typedef ::xsd::cxx::tree::traits< SimSys_UserDefFluidType_type, char > SimSys_UserDefFluidType_traits;
 
         const SimSys_UserDefFluidType_optional&
@@ -347,7 +347,7 @@ namespace schema
         // SimSys_PlantEqmtOpSchemeName
         //
         typedef ::xml_schema::idref SimSys_PlantEqmtOpSchemeName_type;
-        typedef ::xsd::cxx::tree::optional< SimSys_PlantEqmtOpSchemeName_type > SimSys_PlantEqmtOpSchemeName_optional;
+        typedef ::xsd::cxx::tree::optional< SimSys_PlantEqmtOpSchemeName_type, false > SimSys_PlantEqmtOpSchemeName_optional;
         typedef ::xsd::cxx::tree::traits< SimSys_PlantEqmtOpSchemeName_type, char > SimSys_PlantEqmtOpSchemeName_traits;
 
         const SimSys_PlantEqmtOpSchemeName_optional&
@@ -368,7 +368,7 @@ namespace schema
         // SimSys_LoopTempSetpntNodeName
         //
         typedef ::xml_schema::string SimSys_LoopTempSetpntNodeName_type;
-        typedef ::xsd::cxx::tree::optional< SimSys_LoopTempSetpntNodeName_type > SimSys_LoopTempSetpntNodeName_optional;
+        typedef ::xsd::cxx::tree::optional< SimSys_LoopTempSetpntNodeName_type, false > SimSys_LoopTempSetpntNodeName_optional;
         typedef ::xsd::cxx::tree::traits< SimSys_LoopTempSetpntNodeName_type, char > SimSys_LoopTempSetpntNodeName_traits;
 
         const SimSys_LoopTempSetpntNodeName_optional&
@@ -389,7 +389,7 @@ namespace schema
         // SimSys_MaxLoopTemp
         //
         typedef ::xml_schema::double_ SimSys_MaxLoopTemp_type;
-        typedef ::xsd::cxx::tree::optional< SimSys_MaxLoopTemp_type > SimSys_MaxLoopTemp_optional;
+        typedef ::xsd::cxx::tree::optional< SimSys_MaxLoopTemp_type, true > SimSys_MaxLoopTemp_optional;
         typedef ::xsd::cxx::tree::traits< SimSys_MaxLoopTemp_type, char, ::xsd::cxx::tree::schema_type::double_ > SimSys_MaxLoopTemp_traits;
 
         const SimSys_MaxLoopTemp_optional&
@@ -407,7 +407,7 @@ namespace schema
         // SimSys_MinLoopTemp
         //
         typedef ::xml_schema::double_ SimSys_MinLoopTemp_type;
-        typedef ::xsd::cxx::tree::optional< SimSys_MinLoopTemp_type > SimSys_MinLoopTemp_optional;
+        typedef ::xsd::cxx::tree::optional< SimSys_MinLoopTemp_type, true > SimSys_MinLoopTemp_optional;
         typedef ::xsd::cxx::tree::traits< SimSys_MinLoopTemp_type, char, ::xsd::cxx::tree::schema_type::double_ > SimSys_MinLoopTemp_traits;
 
         const SimSys_MinLoopTemp_optional&
@@ -425,7 +425,7 @@ namespace schema
         // SimSys_MaxLoopFlowRate
         //
         typedef ::xml_schema::double_ SimSys_MaxLoopFlowRate_type;
-        typedef ::xsd::cxx::tree::optional< SimSys_MaxLoopFlowRate_type > SimSys_MaxLoopFlowRate_optional;
+        typedef ::xsd::cxx::tree::optional< SimSys_MaxLoopFlowRate_type, true > SimSys_MaxLoopFlowRate_optional;
         typedef ::xsd::cxx::tree::traits< SimSys_MaxLoopFlowRate_type, char, ::xsd::cxx::tree::schema_type::double_ > SimSys_MaxLoopFlowRate_traits;
 
         const SimSys_MaxLoopFlowRate_optional&
@@ -443,7 +443,7 @@ namespace schema
         // SimSys_MinLoopFlowRate
         //
         typedef ::xml_schema::double_ SimSys_MinLoopFlowRate_type;
-        typedef ::xsd::cxx::tree::optional< SimSys_MinLoopFlowRate_type > SimSys_MinLoopFlowRate_optional;
+        typedef ::xsd::cxx::tree::optional< SimSys_MinLoopFlowRate_type, true > SimSys_MinLoopFlowRate_optional;
         typedef ::xsd::cxx::tree::traits< SimSys_MinLoopFlowRate_type, char, ::xsd::cxx::tree::schema_type::double_ > SimSys_MinLoopFlowRate_traits;
 
         const SimSys_MinLoopFlowRate_optional&
@@ -461,7 +461,7 @@ namespace schema
         // SimSys_PlantLoopVolume
         //
         typedef ::xml_schema::double_ SimSys_PlantLoopVolume_type;
-        typedef ::xsd::cxx::tree::optional< SimSys_PlantLoopVolume_type > SimSys_PlantLoopVolume_optional;
+        typedef ::xsd::cxx::tree::optional< SimSys_PlantLoopVolume_type, true > SimSys_PlantLoopVolume_optional;
         typedef ::xsd::cxx::tree::traits< SimSys_PlantLoopVolume_type, char, ::xsd::cxx::tree::schema_type::double_ > SimSys_PlantLoopVolume_traits;
 
         const SimSys_PlantLoopVolume_optional&
@@ -479,7 +479,7 @@ namespace schema
         // SimSys_PlantSideInNodeName
         //
         typedef ::xml_schema::string SimSys_PlantSideInNodeName_type;
-        typedef ::xsd::cxx::tree::optional< SimSys_PlantSideInNodeName_type > SimSys_PlantSideInNodeName_optional;
+        typedef ::xsd::cxx::tree::optional< SimSys_PlantSideInNodeName_type, false > SimSys_PlantSideInNodeName_optional;
         typedef ::xsd::cxx::tree::traits< SimSys_PlantSideInNodeName_type, char > SimSys_PlantSideInNodeName_traits;
 
         const SimSys_PlantSideInNodeName_optional&
@@ -500,7 +500,7 @@ namespace schema
         // SimSys_PlantSideOutNodeName
         //
         typedef ::xml_schema::string SimSys_PlantSideOutNodeName_type;
-        typedef ::xsd::cxx::tree::optional< SimSys_PlantSideOutNodeName_type > SimSys_PlantSideOutNodeName_optional;
+        typedef ::xsd::cxx::tree::optional< SimSys_PlantSideOutNodeName_type, false > SimSys_PlantSideOutNodeName_optional;
         typedef ::xsd::cxx::tree::traits< SimSys_PlantSideOutNodeName_type, char > SimSys_PlantSideOutNodeName_traits;
 
         const SimSys_PlantSideOutNodeName_optional&
@@ -521,7 +521,7 @@ namespace schema
         // SimSys_PlantSideBranchListName
         //
         typedef ::xml_schema::idref SimSys_PlantSideBranchListName_type;
-        typedef ::xsd::cxx::tree::optional< SimSys_PlantSideBranchListName_type > SimSys_PlantSideBranchListName_optional;
+        typedef ::xsd::cxx::tree::optional< SimSys_PlantSideBranchListName_type, false > SimSys_PlantSideBranchListName_optional;
         typedef ::xsd::cxx::tree::traits< SimSys_PlantSideBranchListName_type, char > SimSys_PlantSideBranchListName_traits;
 
         const SimSys_PlantSideBranchListName_optional&
@@ -542,7 +542,7 @@ namespace schema
         // SimSys_PlantSideConnListName
         //
         typedef ::xml_schema::idref SimSys_PlantSideConnListName_type;
-        typedef ::xsd::cxx::tree::optional< SimSys_PlantSideConnListName_type > SimSys_PlantSideConnListName_optional;
+        typedef ::xsd::cxx::tree::optional< SimSys_PlantSideConnListName_type, false > SimSys_PlantSideConnListName_optional;
         typedef ::xsd::cxx::tree::traits< SimSys_PlantSideConnListName_type, char > SimSys_PlantSideConnListName_traits;
 
         const SimSys_PlantSideConnListName_optional&
@@ -563,7 +563,7 @@ namespace schema
         // SimSys_DemandSideInNodeName
         //
         typedef ::xml_schema::string SimSys_DemandSideInNodeName_type;
-        typedef ::xsd::cxx::tree::optional< SimSys_DemandSideInNodeName_type > SimSys_DemandSideInNodeName_optional;
+        typedef ::xsd::cxx::tree::optional< SimSys_DemandSideInNodeName_type, false > SimSys_DemandSideInNodeName_optional;
         typedef ::xsd::cxx::tree::traits< SimSys_DemandSideInNodeName_type, char > SimSys_DemandSideInNodeName_traits;
 
         const SimSys_DemandSideInNodeName_optional&
@@ -584,7 +584,7 @@ namespace schema
         // SimSys_DemandSideBranchListName
         //
         typedef ::xml_schema::idref SimSys_DemandSideBranchListName_type;
-        typedef ::xsd::cxx::tree::optional< SimSys_DemandSideBranchListName_type > SimSys_DemandSideBranchListName_optional;
+        typedef ::xsd::cxx::tree::optional< SimSys_DemandSideBranchListName_type, false > SimSys_DemandSideBranchListName_optional;
         typedef ::xsd::cxx::tree::traits< SimSys_DemandSideBranchListName_type, char > SimSys_DemandSideBranchListName_traits;
 
         const SimSys_DemandSideBranchListName_optional&
@@ -605,7 +605,7 @@ namespace schema
         // SimSys_DemandSideConnListName
         //
         typedef ::xml_schema::idref SimSys_DemandSideConnListName_type;
-        typedef ::xsd::cxx::tree::optional< SimSys_DemandSideConnListName_type > SimSys_DemandSideConnListName_optional;
+        typedef ::xsd::cxx::tree::optional< SimSys_DemandSideConnListName_type, false > SimSys_DemandSideConnListName_optional;
         typedef ::xsd::cxx::tree::traits< SimSys_DemandSideConnListName_type, char > SimSys_DemandSideConnListName_traits;
 
         const SimSys_DemandSideConnListName_optional&
@@ -626,7 +626,7 @@ namespace schema
         // SimSys_LoadDistScheme
         //
         typedef ::xml_schema::string SimSys_LoadDistScheme_type;
-        typedef ::xsd::cxx::tree::optional< SimSys_LoadDistScheme_type > SimSys_LoadDistScheme_optional;
+        typedef ::xsd::cxx::tree::optional< SimSys_LoadDistScheme_type, false > SimSys_LoadDistScheme_optional;
         typedef ::xsd::cxx::tree::traits< SimSys_LoadDistScheme_type, char > SimSys_LoadDistScheme_traits;
 
         const SimSys_LoadDistScheme_optional&
@@ -647,7 +647,7 @@ namespace schema
         // SimSys_PlantLoopDemandCalcScheme
         //
         typedef ::xml_schema::string SimSys_PlantLoopDemandCalcScheme_type;
-        typedef ::xsd::cxx::tree::optional< SimSys_PlantLoopDemandCalcScheme_type > SimSys_PlantLoopDemandCalcScheme_optional;
+        typedef ::xsd::cxx::tree::optional< SimSys_PlantLoopDemandCalcScheme_type, false > SimSys_PlantLoopDemandCalcScheme_optional;
         typedef ::xsd::cxx::tree::traits< SimSys_PlantLoopDemandCalcScheme_type, char > SimSys_PlantLoopDemandCalcScheme_traits;
 
         const SimSys_PlantLoopDemandCalcScheme_optional&
@@ -668,7 +668,7 @@ namespace schema
         // SimSys_CommonPipeSim
         //
         typedef ::xml_schema::string SimSys_CommonPipeSim_type;
-        typedef ::xsd::cxx::tree::optional< SimSys_CommonPipeSim_type > SimSys_CommonPipeSim_optional;
+        typedef ::xsd::cxx::tree::optional< SimSys_CommonPipeSim_type, false > SimSys_CommonPipeSim_optional;
         typedef ::xsd::cxx::tree::traits< SimSys_CommonPipeSim_type, char > SimSys_CommonPipeSim_traits;
 
         const SimSys_CommonPipeSim_optional&
@@ -689,7 +689,7 @@ namespace schema
         // SimSys_PresSimType
         //
         typedef ::xml_schema::string SimSys_PresSimType_type;
-        typedef ::xsd::cxx::tree::optional< SimSys_PresSimType_type > SimSys_PresSimType_optional;
+        typedef ::xsd::cxx::tree::optional< SimSys_PresSimType_type, false > SimSys_PresSimType_optional;
         typedef ::xsd::cxx::tree::traits< SimSys_PresSimType_type, char > SimSys_PresSimType_traits;
 
         const SimSys_PresSimType_optional&
@@ -710,7 +710,7 @@ namespace schema
         // T24Brand
         //
         typedef ::xml_schema::string T24Brand_type;
-        typedef ::xsd::cxx::tree::optional< T24Brand_type > T24Brand_optional;
+        typedef ::xsd::cxx::tree::optional< T24Brand_type, false > T24Brand_optional;
         typedef ::xsd::cxx::tree::traits< T24Brand_type, char > T24Brand_traits;
 
         const T24Brand_optional&
@@ -731,7 +731,7 @@ namespace schema
         // T24CollectorType
         //
         typedef ::xml_schema::string T24CollectorType_type;
-        typedef ::xsd::cxx::tree::optional< T24CollectorType_type > T24CollectorType_optional;
+        typedef ::xsd::cxx::tree::optional< T24CollectorType_type, false > T24CollectorType_optional;
         typedef ::xsd::cxx::tree::traits< T24CollectorType_type, char > T24CollectorType_traits;
 
         const T24CollectorType_optional&
@@ -752,7 +752,7 @@ namespace schema
         // T24FluidSysCntrlType
         //
         typedef ::xml_schema::string T24FluidSysCntrlType_type;
-        typedef ::xsd::cxx::tree::optional< T24FluidSysCntrlType_type > T24FluidSysCntrlType_optional;
+        typedef ::xsd::cxx::tree::optional< T24FluidSysCntrlType_type, false > T24FluidSysCntrlType_optional;
         typedef ::xsd::cxx::tree::traits< T24FluidSysCntrlType_type, char > T24FluidSysCntrlType_traits;
 
         const T24FluidSysCntrlType_optional&
@@ -773,7 +773,7 @@ namespace schema
         // T24Manufacturer
         //
         typedef ::xml_schema::string T24Manufacturer_type;
-        typedef ::xsd::cxx::tree::optional< T24Manufacturer_type > T24Manufacturer_optional;
+        typedef ::xsd::cxx::tree::optional< T24Manufacturer_type, false > T24Manufacturer_optional;
         typedef ::xsd::cxx::tree::traits< T24Manufacturer_type, char > T24Manufacturer_traits;
 
         const T24Manufacturer_optional&
@@ -794,7 +794,7 @@ namespace schema
         // T24Mch08A
         //
         typedef ::xml_schema::int_ T24Mch08A_type;
-        typedef ::xsd::cxx::tree::optional< T24Mch08A_type > T24Mch08A_optional;
+        typedef ::xsd::cxx::tree::optional< T24Mch08A_type, true > T24Mch08A_optional;
         typedef ::xsd::cxx::tree::traits< T24Mch08A_type, char > T24Mch08A_traits;
 
         const T24Mch08A_optional&
@@ -812,7 +812,7 @@ namespace schema
         // T24Mch09A
         //
         typedef ::xml_schema::int_ T24Mch09A_type;
-        typedef ::xsd::cxx::tree::optional< T24Mch09A_type > T24Mch09A_optional;
+        typedef ::xsd::cxx::tree::optional< T24Mch09A_type, true > T24Mch09A_optional;
         typedef ::xsd::cxx::tree::traits< T24Mch09A_type, char > T24Mch09A_traits;
 
         const T24Mch09A_optional&
@@ -830,7 +830,7 @@ namespace schema
         // T24Mch10A
         //
         typedef ::xml_schema::int_ T24Mch10A_type;
-        typedef ::xsd::cxx::tree::optional< T24Mch10A_type > T24Mch10A_optional;
+        typedef ::xsd::cxx::tree::optional< T24Mch10A_type, true > T24Mch10A_optional;
         typedef ::xsd::cxx::tree::traits< T24Mch10A_type, char > T24Mch10A_traits;
 
         const T24Mch10A_optional&
@@ -848,7 +848,7 @@ namespace schema
         // T24Mch11A
         //
         typedef ::xml_schema::int_ T24Mch11A_type;
-        typedef ::xsd::cxx::tree::optional< T24Mch11A_type > T24Mch11A_optional;
+        typedef ::xsd::cxx::tree::optional< T24Mch11A_type, true > T24Mch11A_optional;
         typedef ::xsd::cxx::tree::traits< T24Mch11A_type, char > T24Mch11A_traits;
 
         const T24Mch11A_optional&
@@ -866,7 +866,7 @@ namespace schema
         // T24Mch15A
         //
         typedef ::xml_schema::int_ T24Mch15A_type;
-        typedef ::xsd::cxx::tree::optional< T24Mch15A_type > T24Mch15A_optional;
+        typedef ::xsd::cxx::tree::optional< T24Mch15A_type, true > T24Mch15A_optional;
         typedef ::xsd::cxx::tree::traits< T24Mch15A_type, char > T24Mch15A_traits;
 
         const T24Mch15A_optional&
@@ -884,7 +884,7 @@ namespace schema
         // T24Mch17A
         //
         typedef ::xml_schema::int_ T24Mch17A_type;
-        typedef ::xsd::cxx::tree::optional< T24Mch17A_type > T24Mch17A_optional;
+        typedef ::xsd::cxx::tree::optional< T24Mch17A_type, true > T24Mch17A_optional;
         typedef ::xsd::cxx::tree::traits< T24Mch17A_type, char > T24Mch17A_traits;
 
         const T24Mch17A_optional&
@@ -902,7 +902,7 @@ namespace schema
         // T24Mch18A
         //
         typedef ::xml_schema::int_ T24Mch18A_type;
-        typedef ::xsd::cxx::tree::optional< T24Mch18A_type > T24Mch18A_optional;
+        typedef ::xsd::cxx::tree::optional< T24Mch18A_type, true > T24Mch18A_optional;
         typedef ::xsd::cxx::tree::traits< T24Mch18A_type, char > T24Mch18A_traits;
 
         const T24Mch18A_optional&
@@ -920,7 +920,7 @@ namespace schema
         // T24ModelNo
         //
         typedef ::xml_schema::string T24ModelNo_type;
-        typedef ::xsd::cxx::tree::optional< T24ModelNo_type > T24ModelNo_optional;
+        typedef ::xsd::cxx::tree::optional< T24ModelNo_type, false > T24ModelNo_optional;
         typedef ::xsd::cxx::tree::traits< T24ModelNo_type, char > T24ModelNo_traits;
 
         const T24ModelNo_optional&
@@ -941,7 +941,7 @@ namespace schema
         // T24ConstructStatus3
         //
         typedef ::xml_schema::string T24ConstructStatus3_type;
-        typedef ::xsd::cxx::tree::optional< T24ConstructStatus3_type > T24ConstructStatus3_optional;
+        typedef ::xsd::cxx::tree::optional< T24ConstructStatus3_type, false > T24ConstructStatus3_optional;
         typedef ::xsd::cxx::tree::traits< T24ConstructStatus3_type, char > T24ConstructStatus3_traits;
 
         const T24ConstructStatus3_optional&

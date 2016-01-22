@@ -263,7 +263,7 @@ namespace schema
         // OwningUser
         //
         typedef ::xml_schema::idref OwningUser_type;
-        typedef ::xsd::cxx::tree::optional< OwningUser_type > OwningUser_optional;
+        typedef ::xsd::cxx::tree::optional< OwningUser_type, false > OwningUser_optional;
         typedef ::xsd::cxx::tree::traits< OwningUser_type, char > OwningUser_traits;
 
         const OwningUser_optional&
@@ -284,7 +284,7 @@ namespace schema
         // OwningApplication
         //
         typedef ::xml_schema::idref OwningApplication_type;
-        typedef ::xsd::cxx::tree::optional< OwningApplication_type > OwningApplication_optional;
+        typedef ::xsd::cxx::tree::optional< OwningApplication_type, false > OwningApplication_optional;
         typedef ::xsd::cxx::tree::traits< OwningApplication_type, char > OwningApplication_traits;
 
         const OwningApplication_optional&
@@ -305,7 +305,7 @@ namespace schema
         // State
         //
         typedef ::xml_schema::string State_type;
-        typedef ::xsd::cxx::tree::optional< State_type > State_optional;
+        typedef ::xsd::cxx::tree::optional< State_type, false > State_optional;
         typedef ::xsd::cxx::tree::traits< State_type, char > State_traits;
 
         const State_optional&
@@ -326,7 +326,7 @@ namespace schema
         // ChangeAction
         //
         typedef ::xml_schema::string ChangeAction_type;
-        typedef ::xsd::cxx::tree::optional< ChangeAction_type > ChangeAction_optional;
+        typedef ::xsd::cxx::tree::optional< ChangeAction_type, false > ChangeAction_optional;
         typedef ::xsd::cxx::tree::traits< ChangeAction_type, char > ChangeAction_traits;
 
         const ChangeAction_optional&
@@ -347,7 +347,7 @@ namespace schema
         // LastModifiedDate
         //
         typedef ::xml_schema::int_ LastModifiedDate_type;
-        typedef ::xsd::cxx::tree::optional< LastModifiedDate_type > LastModifiedDate_optional;
+        typedef ::xsd::cxx::tree::optional< LastModifiedDate_type, true > LastModifiedDate_optional;
         typedef ::xsd::cxx::tree::traits< LastModifiedDate_type, char > LastModifiedDate_traits;
 
         const LastModifiedDate_optional&
@@ -365,7 +365,7 @@ namespace schema
         // LastModifyingUser
         //
         typedef ::xml_schema::idref LastModifyingUser_type;
-        typedef ::xsd::cxx::tree::optional< LastModifyingUser_type > LastModifyingUser_optional;
+        typedef ::xsd::cxx::tree::optional< LastModifyingUser_type, false > LastModifyingUser_optional;
         typedef ::xsd::cxx::tree::traits< LastModifyingUser_type, char > LastModifyingUser_traits;
 
         const LastModifyingUser_optional&
@@ -386,7 +386,7 @@ namespace schema
         // LastModifyingApplication
         //
         typedef ::xml_schema::idref LastModifyingApplication_type;
-        typedef ::xsd::cxx::tree::optional< LastModifyingApplication_type > LastModifyingApplication_optional;
+        typedef ::xsd::cxx::tree::optional< LastModifyingApplication_type, false > LastModifyingApplication_optional;
         typedef ::xsd::cxx::tree::traits< LastModifyingApplication_type, char > LastModifyingApplication_traits;
 
         const LastModifyingApplication_optional&
@@ -407,7 +407,7 @@ namespace schema
         // CreationDate
         //
         typedef ::xml_schema::int_ CreationDate_type;
-        typedef ::xsd::cxx::tree::optional< CreationDate_type > CreationDate_optional;
+        typedef ::xsd::cxx::tree::optional< CreationDate_type, true > CreationDate_optional;
         typedef ::xsd::cxx::tree::traits< CreationDate_type, char > CreationDate_traits;
 
         const CreationDate_optional&

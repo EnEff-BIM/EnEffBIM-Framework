@@ -274,7 +274,7 @@ namespace schema
         // SimLocationAndWeather_Name
         //
         typedef ::xml_schema::string SimLocationAndWeather_Name_type;
-        typedef ::xsd::cxx::tree::optional< SimLocationAndWeather_Name_type > SimLocationAndWeather_Name_optional;
+        typedef ::xsd::cxx::tree::optional< SimLocationAndWeather_Name_type, false > SimLocationAndWeather_Name_optional;
         typedef ::xsd::cxx::tree::traits< SimLocationAndWeather_Name_type, char > SimLocationAndWeather_Name_traits;
 
         const SimLocationAndWeather_Name_optional&
@@ -295,7 +295,7 @@ namespace schema
         // SimLocationAndWeather_Latitude
         //
         typedef ::xml_schema::double_ SimLocationAndWeather_Latitude_type;
-        typedef ::xsd::cxx::tree::optional< SimLocationAndWeather_Latitude_type > SimLocationAndWeather_Latitude_optional;
+        typedef ::xsd::cxx::tree::optional< SimLocationAndWeather_Latitude_type, true > SimLocationAndWeather_Latitude_optional;
         typedef ::xsd::cxx::tree::traits< SimLocationAndWeather_Latitude_type, char, ::xsd::cxx::tree::schema_type::double_ > SimLocationAndWeather_Latitude_traits;
 
         const SimLocationAndWeather_Latitude_optional&
@@ -313,7 +313,7 @@ namespace schema
         // SimLocationAndWeather_Longitude
         //
         typedef ::xml_schema::double_ SimLocationAndWeather_Longitude_type;
-        typedef ::xsd::cxx::tree::optional< SimLocationAndWeather_Longitude_type > SimLocationAndWeather_Longitude_optional;
+        typedef ::xsd::cxx::tree::optional< SimLocationAndWeather_Longitude_type, true > SimLocationAndWeather_Longitude_optional;
         typedef ::xsd::cxx::tree::traits< SimLocationAndWeather_Longitude_type, char, ::xsd::cxx::tree::schema_type::double_ > SimLocationAndWeather_Longitude_traits;
 
         const SimLocationAndWeather_Longitude_optional&
@@ -331,7 +331,7 @@ namespace schema
         // SimLocationAndWeather_TimeZone
         //
         typedef ::xml_schema::double_ SimLocationAndWeather_TimeZone_type;
-        typedef ::xsd::cxx::tree::optional< SimLocationAndWeather_TimeZone_type > SimLocationAndWeather_TimeZone_optional;
+        typedef ::xsd::cxx::tree::optional< SimLocationAndWeather_TimeZone_type, true > SimLocationAndWeather_TimeZone_optional;
         typedef ::xsd::cxx::tree::traits< SimLocationAndWeather_TimeZone_type, char, ::xsd::cxx::tree::schema_type::double_ > SimLocationAndWeather_TimeZone_traits;
 
         const SimLocationAndWeather_TimeZone_optional&
@@ -349,7 +349,7 @@ namespace schema
         // SimLocationAndWeather_Elevation
         //
         typedef ::xml_schema::double_ SimLocationAndWeather_Elevation_type;
-        typedef ::xsd::cxx::tree::optional< SimLocationAndWeather_Elevation_type > SimLocationAndWeather_Elevation_optional;
+        typedef ::xsd::cxx::tree::optional< SimLocationAndWeather_Elevation_type, true > SimLocationAndWeather_Elevation_optional;
         typedef ::xsd::cxx::tree::traits< SimLocationAndWeather_Elevation_type, char, ::xsd::cxx::tree::schema_type::double_ > SimLocationAndWeather_Elevation_traits;
 
         const SimLocationAndWeather_Elevation_optional&
@@ -367,7 +367,7 @@ namespace schema
         // Site_HeightVariation_WindSpdProfExp
         //
         typedef ::xml_schema::double_ Site_HeightVariation_WindSpdProfExp_type;
-        typedef ::xsd::cxx::tree::optional< Site_HeightVariation_WindSpdProfExp_type > Site_HeightVariation_WindSpdProfExp_optional;
+        typedef ::xsd::cxx::tree::optional< Site_HeightVariation_WindSpdProfExp_type, true > Site_HeightVariation_WindSpdProfExp_optional;
         typedef ::xsd::cxx::tree::traits< Site_HeightVariation_WindSpdProfExp_type, char, ::xsd::cxx::tree::schema_type::double_ > Site_HeightVariation_WindSpdProfExp_traits;
 
         const Site_HeightVariation_WindSpdProfExp_optional&
@@ -385,7 +385,7 @@ namespace schema
         // Site_HeightVariation_WindSpdProfBndLayerThick
         //
         typedef ::xml_schema::double_ Site_HeightVariation_WindSpdProfBndLayerThick_type;
-        typedef ::xsd::cxx::tree::optional< Site_HeightVariation_WindSpdProfBndLayerThick_type > Site_HeightVariation_WindSpdProfBndLayerThick_optional;
+        typedef ::xsd::cxx::tree::optional< Site_HeightVariation_WindSpdProfBndLayerThick_type, true > Site_HeightVariation_WindSpdProfBndLayerThick_optional;
         typedef ::xsd::cxx::tree::traits< Site_HeightVariation_WindSpdProfBndLayerThick_type, char, ::xsd::cxx::tree::schema_type::double_ > Site_HeightVariation_WindSpdProfBndLayerThick_traits;
 
         const Site_HeightVariation_WindSpdProfBndLayerThick_optional&
@@ -403,7 +403,7 @@ namespace schema
         // Site_HeightVariation_AirTempGradCoeff
         //
         typedef ::xml_schema::double_ Site_HeightVariation_AirTempGradCoeff_type;
-        typedef ::xsd::cxx::tree::optional< Site_HeightVariation_AirTempGradCoeff_type > Site_HeightVariation_AirTempGradCoeff_optional;
+        typedef ::xsd::cxx::tree::optional< Site_HeightVariation_AirTempGradCoeff_type, true > Site_HeightVariation_AirTempGradCoeff_optional;
         typedef ::xsd::cxx::tree::traits< Site_HeightVariation_AirTempGradCoeff_type, char, ::xsd::cxx::tree::schema_type::double_ > Site_HeightVariation_AirTempGradCoeff_traits;
 
         const Site_HeightVariation_AirTempGradCoeff_optional&
@@ -421,7 +421,7 @@ namespace schema
         // Site_GndTemp_BldgSurface_JanGndTemp
         //
         typedef ::xml_schema::double_ Site_GndTemp_BldgSurface_JanGndTemp_type;
-        typedef ::xsd::cxx::tree::optional< Site_GndTemp_BldgSurface_JanGndTemp_type > Site_GndTemp_BldgSurface_JanGndTemp_optional;
+        typedef ::xsd::cxx::tree::optional< Site_GndTemp_BldgSurface_JanGndTemp_type, true > Site_GndTemp_BldgSurface_JanGndTemp_optional;
         typedef ::xsd::cxx::tree::traits< Site_GndTemp_BldgSurface_JanGndTemp_type, char, ::xsd::cxx::tree::schema_type::double_ > Site_GndTemp_BldgSurface_JanGndTemp_traits;
 
         const Site_GndTemp_BldgSurface_JanGndTemp_optional&
@@ -439,7 +439,7 @@ namespace schema
         // Site_GndTemp_BldgSurface_FebGndTemp
         //
         typedef ::xml_schema::double_ Site_GndTemp_BldgSurface_FebGndTemp_type;
-        typedef ::xsd::cxx::tree::optional< Site_GndTemp_BldgSurface_FebGndTemp_type > Site_GndTemp_BldgSurface_FebGndTemp_optional;
+        typedef ::xsd::cxx::tree::optional< Site_GndTemp_BldgSurface_FebGndTemp_type, true > Site_GndTemp_BldgSurface_FebGndTemp_optional;
         typedef ::xsd::cxx::tree::traits< Site_GndTemp_BldgSurface_FebGndTemp_type, char, ::xsd::cxx::tree::schema_type::double_ > Site_GndTemp_BldgSurface_FebGndTemp_traits;
 
         const Site_GndTemp_BldgSurface_FebGndTemp_optional&
@@ -457,7 +457,7 @@ namespace schema
         // Site_GndTemp_BldgSurface_MarchGndTemp
         //
         typedef ::xml_schema::double_ Site_GndTemp_BldgSurface_MarchGndTemp_type;
-        typedef ::xsd::cxx::tree::optional< Site_GndTemp_BldgSurface_MarchGndTemp_type > Site_GndTemp_BldgSurface_MarchGndTemp_optional;
+        typedef ::xsd::cxx::tree::optional< Site_GndTemp_BldgSurface_MarchGndTemp_type, true > Site_GndTemp_BldgSurface_MarchGndTemp_optional;
         typedef ::xsd::cxx::tree::traits< Site_GndTemp_BldgSurface_MarchGndTemp_type, char, ::xsd::cxx::tree::schema_type::double_ > Site_GndTemp_BldgSurface_MarchGndTemp_traits;
 
         const Site_GndTemp_BldgSurface_MarchGndTemp_optional&
@@ -475,7 +475,7 @@ namespace schema
         // Site_GndTemp_BldgSurface_AprilGndTemp
         //
         typedef ::xml_schema::double_ Site_GndTemp_BldgSurface_AprilGndTemp_type;
-        typedef ::xsd::cxx::tree::optional< Site_GndTemp_BldgSurface_AprilGndTemp_type > Site_GndTemp_BldgSurface_AprilGndTemp_optional;
+        typedef ::xsd::cxx::tree::optional< Site_GndTemp_BldgSurface_AprilGndTemp_type, true > Site_GndTemp_BldgSurface_AprilGndTemp_optional;
         typedef ::xsd::cxx::tree::traits< Site_GndTemp_BldgSurface_AprilGndTemp_type, char, ::xsd::cxx::tree::schema_type::double_ > Site_GndTemp_BldgSurface_AprilGndTemp_traits;
 
         const Site_GndTemp_BldgSurface_AprilGndTemp_optional&
@@ -493,7 +493,7 @@ namespace schema
         // Site_GndTemp_BldgSurface_MayGndTemp
         //
         typedef ::xml_schema::double_ Site_GndTemp_BldgSurface_MayGndTemp_type;
-        typedef ::xsd::cxx::tree::optional< Site_GndTemp_BldgSurface_MayGndTemp_type > Site_GndTemp_BldgSurface_MayGndTemp_optional;
+        typedef ::xsd::cxx::tree::optional< Site_GndTemp_BldgSurface_MayGndTemp_type, true > Site_GndTemp_BldgSurface_MayGndTemp_optional;
         typedef ::xsd::cxx::tree::traits< Site_GndTemp_BldgSurface_MayGndTemp_type, char, ::xsd::cxx::tree::schema_type::double_ > Site_GndTemp_BldgSurface_MayGndTemp_traits;
 
         const Site_GndTemp_BldgSurface_MayGndTemp_optional&
@@ -511,7 +511,7 @@ namespace schema
         // Site_GndTemp_BldgSurface_JuneGndTemp
         //
         typedef ::xml_schema::double_ Site_GndTemp_BldgSurface_JuneGndTemp_type;
-        typedef ::xsd::cxx::tree::optional< Site_GndTemp_BldgSurface_JuneGndTemp_type > Site_GndTemp_BldgSurface_JuneGndTemp_optional;
+        typedef ::xsd::cxx::tree::optional< Site_GndTemp_BldgSurface_JuneGndTemp_type, true > Site_GndTemp_BldgSurface_JuneGndTemp_optional;
         typedef ::xsd::cxx::tree::traits< Site_GndTemp_BldgSurface_JuneGndTemp_type, char, ::xsd::cxx::tree::schema_type::double_ > Site_GndTemp_BldgSurface_JuneGndTemp_traits;
 
         const Site_GndTemp_BldgSurface_JuneGndTemp_optional&
@@ -529,7 +529,7 @@ namespace schema
         // Site_GndTemp_BldgSurface_JulyGndTemp
         //
         typedef ::xml_schema::double_ Site_GndTemp_BldgSurface_JulyGndTemp_type;
-        typedef ::xsd::cxx::tree::optional< Site_GndTemp_BldgSurface_JulyGndTemp_type > Site_GndTemp_BldgSurface_JulyGndTemp_optional;
+        typedef ::xsd::cxx::tree::optional< Site_GndTemp_BldgSurface_JulyGndTemp_type, true > Site_GndTemp_BldgSurface_JulyGndTemp_optional;
         typedef ::xsd::cxx::tree::traits< Site_GndTemp_BldgSurface_JulyGndTemp_type, char, ::xsd::cxx::tree::schema_type::double_ > Site_GndTemp_BldgSurface_JulyGndTemp_traits;
 
         const Site_GndTemp_BldgSurface_JulyGndTemp_optional&
@@ -547,7 +547,7 @@ namespace schema
         // Site_GndTemp_BldgSurface_AugGndTemp
         //
         typedef ::xml_schema::double_ Site_GndTemp_BldgSurface_AugGndTemp_type;
-        typedef ::xsd::cxx::tree::optional< Site_GndTemp_BldgSurface_AugGndTemp_type > Site_GndTemp_BldgSurface_AugGndTemp_optional;
+        typedef ::xsd::cxx::tree::optional< Site_GndTemp_BldgSurface_AugGndTemp_type, true > Site_GndTemp_BldgSurface_AugGndTemp_optional;
         typedef ::xsd::cxx::tree::traits< Site_GndTemp_BldgSurface_AugGndTemp_type, char, ::xsd::cxx::tree::schema_type::double_ > Site_GndTemp_BldgSurface_AugGndTemp_traits;
 
         const Site_GndTemp_BldgSurface_AugGndTemp_optional&
@@ -565,7 +565,7 @@ namespace schema
         // Site_GndTemp_BldgSurface_SepGndTemp
         //
         typedef ::xml_schema::double_ Site_GndTemp_BldgSurface_SepGndTemp_type;
-        typedef ::xsd::cxx::tree::optional< Site_GndTemp_BldgSurface_SepGndTemp_type > Site_GndTemp_BldgSurface_SepGndTemp_optional;
+        typedef ::xsd::cxx::tree::optional< Site_GndTemp_BldgSurface_SepGndTemp_type, true > Site_GndTemp_BldgSurface_SepGndTemp_optional;
         typedef ::xsd::cxx::tree::traits< Site_GndTemp_BldgSurface_SepGndTemp_type, char, ::xsd::cxx::tree::schema_type::double_ > Site_GndTemp_BldgSurface_SepGndTemp_traits;
 
         const Site_GndTemp_BldgSurface_SepGndTemp_optional&
@@ -583,7 +583,7 @@ namespace schema
         // Site_GndTemp_BldgSurface_OctGndTemp
         //
         typedef ::xml_schema::double_ Site_GndTemp_BldgSurface_OctGndTemp_type;
-        typedef ::xsd::cxx::tree::optional< Site_GndTemp_BldgSurface_OctGndTemp_type > Site_GndTemp_BldgSurface_OctGndTemp_optional;
+        typedef ::xsd::cxx::tree::optional< Site_GndTemp_BldgSurface_OctGndTemp_type, true > Site_GndTemp_BldgSurface_OctGndTemp_optional;
         typedef ::xsd::cxx::tree::traits< Site_GndTemp_BldgSurface_OctGndTemp_type, char, ::xsd::cxx::tree::schema_type::double_ > Site_GndTemp_BldgSurface_OctGndTemp_traits;
 
         const Site_GndTemp_BldgSurface_OctGndTemp_optional&
@@ -601,7 +601,7 @@ namespace schema
         // Site_GndTemp_BldgSurface_NovGndTemp
         //
         typedef ::xml_schema::double_ Site_GndTemp_BldgSurface_NovGndTemp_type;
-        typedef ::xsd::cxx::tree::optional< Site_GndTemp_BldgSurface_NovGndTemp_type > Site_GndTemp_BldgSurface_NovGndTemp_optional;
+        typedef ::xsd::cxx::tree::optional< Site_GndTemp_BldgSurface_NovGndTemp_type, true > Site_GndTemp_BldgSurface_NovGndTemp_optional;
         typedef ::xsd::cxx::tree::traits< Site_GndTemp_BldgSurface_NovGndTemp_type, char, ::xsd::cxx::tree::schema_type::double_ > Site_GndTemp_BldgSurface_NovGndTemp_traits;
 
         const Site_GndTemp_BldgSurface_NovGndTemp_optional&
@@ -619,7 +619,7 @@ namespace schema
         // Site_GndTemp_BldgSurface_DecGndTemp
         //
         typedef ::xml_schema::double_ Site_GndTemp_BldgSurface_DecGndTemp_type;
-        typedef ::xsd::cxx::tree::optional< Site_GndTemp_BldgSurface_DecGndTemp_type > Site_GndTemp_BldgSurface_DecGndTemp_optional;
+        typedef ::xsd::cxx::tree::optional< Site_GndTemp_BldgSurface_DecGndTemp_type, true > Site_GndTemp_BldgSurface_DecGndTemp_optional;
         typedef ::xsd::cxx::tree::traits< Site_GndTemp_BldgSurface_DecGndTemp_type, char, ::xsd::cxx::tree::schema_type::double_ > Site_GndTemp_BldgSurface_DecGndTemp_traits;
 
         const Site_GndTemp_BldgSurface_DecGndTemp_optional&
@@ -637,7 +637,7 @@ namespace schema
         // Site_GndTemp_FCfactorMthd_JanGndTemp
         //
         typedef ::xml_schema::double_ Site_GndTemp_FCfactorMthd_JanGndTemp_type;
-        typedef ::xsd::cxx::tree::optional< Site_GndTemp_FCfactorMthd_JanGndTemp_type > Site_GndTemp_FCfactorMthd_JanGndTemp_optional;
+        typedef ::xsd::cxx::tree::optional< Site_GndTemp_FCfactorMthd_JanGndTemp_type, true > Site_GndTemp_FCfactorMthd_JanGndTemp_optional;
         typedef ::xsd::cxx::tree::traits< Site_GndTemp_FCfactorMthd_JanGndTemp_type, char, ::xsd::cxx::tree::schema_type::double_ > Site_GndTemp_FCfactorMthd_JanGndTemp_traits;
 
         const Site_GndTemp_FCfactorMthd_JanGndTemp_optional&
@@ -655,7 +655,7 @@ namespace schema
         // Site_GndTemp_FCfactorMthd_FebGndTemp
         //
         typedef ::xml_schema::double_ Site_GndTemp_FCfactorMthd_FebGndTemp_type;
-        typedef ::xsd::cxx::tree::optional< Site_GndTemp_FCfactorMthd_FebGndTemp_type > Site_GndTemp_FCfactorMthd_FebGndTemp_optional;
+        typedef ::xsd::cxx::tree::optional< Site_GndTemp_FCfactorMthd_FebGndTemp_type, true > Site_GndTemp_FCfactorMthd_FebGndTemp_optional;
         typedef ::xsd::cxx::tree::traits< Site_GndTemp_FCfactorMthd_FebGndTemp_type, char, ::xsd::cxx::tree::schema_type::double_ > Site_GndTemp_FCfactorMthd_FebGndTemp_traits;
 
         const Site_GndTemp_FCfactorMthd_FebGndTemp_optional&
@@ -673,7 +673,7 @@ namespace schema
         // Site_GndTemp_FCfactorMthd_MarchGndTemp
         //
         typedef ::xml_schema::double_ Site_GndTemp_FCfactorMthd_MarchGndTemp_type;
-        typedef ::xsd::cxx::tree::optional< Site_GndTemp_FCfactorMthd_MarchGndTemp_type > Site_GndTemp_FCfactorMthd_MarchGndTemp_optional;
+        typedef ::xsd::cxx::tree::optional< Site_GndTemp_FCfactorMthd_MarchGndTemp_type, true > Site_GndTemp_FCfactorMthd_MarchGndTemp_optional;
         typedef ::xsd::cxx::tree::traits< Site_GndTemp_FCfactorMthd_MarchGndTemp_type, char, ::xsd::cxx::tree::schema_type::double_ > Site_GndTemp_FCfactorMthd_MarchGndTemp_traits;
 
         const Site_GndTemp_FCfactorMthd_MarchGndTemp_optional&
@@ -691,7 +691,7 @@ namespace schema
         // Site_GndTemp_FCfactorMthd_AprilGndTemp
         //
         typedef ::xml_schema::double_ Site_GndTemp_FCfactorMthd_AprilGndTemp_type;
-        typedef ::xsd::cxx::tree::optional< Site_GndTemp_FCfactorMthd_AprilGndTemp_type > Site_GndTemp_FCfactorMthd_AprilGndTemp_optional;
+        typedef ::xsd::cxx::tree::optional< Site_GndTemp_FCfactorMthd_AprilGndTemp_type, true > Site_GndTemp_FCfactorMthd_AprilGndTemp_optional;
         typedef ::xsd::cxx::tree::traits< Site_GndTemp_FCfactorMthd_AprilGndTemp_type, char, ::xsd::cxx::tree::schema_type::double_ > Site_GndTemp_FCfactorMthd_AprilGndTemp_traits;
 
         const Site_GndTemp_FCfactorMthd_AprilGndTemp_optional&
@@ -709,7 +709,7 @@ namespace schema
         // Site_GndTemp_FCfactorMthd_MayGndTemp
         //
         typedef ::xml_schema::double_ Site_GndTemp_FCfactorMthd_MayGndTemp_type;
-        typedef ::xsd::cxx::tree::optional< Site_GndTemp_FCfactorMthd_MayGndTemp_type > Site_GndTemp_FCfactorMthd_MayGndTemp_optional;
+        typedef ::xsd::cxx::tree::optional< Site_GndTemp_FCfactorMthd_MayGndTemp_type, true > Site_GndTemp_FCfactorMthd_MayGndTemp_optional;
         typedef ::xsd::cxx::tree::traits< Site_GndTemp_FCfactorMthd_MayGndTemp_type, char, ::xsd::cxx::tree::schema_type::double_ > Site_GndTemp_FCfactorMthd_MayGndTemp_traits;
 
         const Site_GndTemp_FCfactorMthd_MayGndTemp_optional&
@@ -727,7 +727,7 @@ namespace schema
         // Site_GndTemp_FCfactorMthd_JuneGndTemp
         //
         typedef ::xml_schema::double_ Site_GndTemp_FCfactorMthd_JuneGndTemp_type;
-        typedef ::xsd::cxx::tree::optional< Site_GndTemp_FCfactorMthd_JuneGndTemp_type > Site_GndTemp_FCfactorMthd_JuneGndTemp_optional;
+        typedef ::xsd::cxx::tree::optional< Site_GndTemp_FCfactorMthd_JuneGndTemp_type, true > Site_GndTemp_FCfactorMthd_JuneGndTemp_optional;
         typedef ::xsd::cxx::tree::traits< Site_GndTemp_FCfactorMthd_JuneGndTemp_type, char, ::xsd::cxx::tree::schema_type::double_ > Site_GndTemp_FCfactorMthd_JuneGndTemp_traits;
 
         const Site_GndTemp_FCfactorMthd_JuneGndTemp_optional&
@@ -745,7 +745,7 @@ namespace schema
         // Site_GndTemp_FCfactorMthd_JulyGndTemp
         //
         typedef ::xml_schema::double_ Site_GndTemp_FCfactorMthd_JulyGndTemp_type;
-        typedef ::xsd::cxx::tree::optional< Site_GndTemp_FCfactorMthd_JulyGndTemp_type > Site_GndTemp_FCfactorMthd_JulyGndTemp_optional;
+        typedef ::xsd::cxx::tree::optional< Site_GndTemp_FCfactorMthd_JulyGndTemp_type, true > Site_GndTemp_FCfactorMthd_JulyGndTemp_optional;
         typedef ::xsd::cxx::tree::traits< Site_GndTemp_FCfactorMthd_JulyGndTemp_type, char, ::xsd::cxx::tree::schema_type::double_ > Site_GndTemp_FCfactorMthd_JulyGndTemp_traits;
 
         const Site_GndTemp_FCfactorMthd_JulyGndTemp_optional&
@@ -763,7 +763,7 @@ namespace schema
         // Site_GndTemp_FCfactorMthd_AugGndTemp
         //
         typedef ::xml_schema::double_ Site_GndTemp_FCfactorMthd_AugGndTemp_type;
-        typedef ::xsd::cxx::tree::optional< Site_GndTemp_FCfactorMthd_AugGndTemp_type > Site_GndTemp_FCfactorMthd_AugGndTemp_optional;
+        typedef ::xsd::cxx::tree::optional< Site_GndTemp_FCfactorMthd_AugGndTemp_type, true > Site_GndTemp_FCfactorMthd_AugGndTemp_optional;
         typedef ::xsd::cxx::tree::traits< Site_GndTemp_FCfactorMthd_AugGndTemp_type, char, ::xsd::cxx::tree::schema_type::double_ > Site_GndTemp_FCfactorMthd_AugGndTemp_traits;
 
         const Site_GndTemp_FCfactorMthd_AugGndTemp_optional&
@@ -781,7 +781,7 @@ namespace schema
         // Site_GndTemp_FCfactorMthd_SepGndTemp
         //
         typedef ::xml_schema::double_ Site_GndTemp_FCfactorMthd_SepGndTemp_type;
-        typedef ::xsd::cxx::tree::optional< Site_GndTemp_FCfactorMthd_SepGndTemp_type > Site_GndTemp_FCfactorMthd_SepGndTemp_optional;
+        typedef ::xsd::cxx::tree::optional< Site_GndTemp_FCfactorMthd_SepGndTemp_type, true > Site_GndTemp_FCfactorMthd_SepGndTemp_optional;
         typedef ::xsd::cxx::tree::traits< Site_GndTemp_FCfactorMthd_SepGndTemp_type, char, ::xsd::cxx::tree::schema_type::double_ > Site_GndTemp_FCfactorMthd_SepGndTemp_traits;
 
         const Site_GndTemp_FCfactorMthd_SepGndTemp_optional&
@@ -799,7 +799,7 @@ namespace schema
         // Site_GndTemp_FCfactorMthd_OctGndTemp
         //
         typedef ::xml_schema::double_ Site_GndTemp_FCfactorMthd_OctGndTemp_type;
-        typedef ::xsd::cxx::tree::optional< Site_GndTemp_FCfactorMthd_OctGndTemp_type > Site_GndTemp_FCfactorMthd_OctGndTemp_optional;
+        typedef ::xsd::cxx::tree::optional< Site_GndTemp_FCfactorMthd_OctGndTemp_type, true > Site_GndTemp_FCfactorMthd_OctGndTemp_optional;
         typedef ::xsd::cxx::tree::traits< Site_GndTemp_FCfactorMthd_OctGndTemp_type, char, ::xsd::cxx::tree::schema_type::double_ > Site_GndTemp_FCfactorMthd_OctGndTemp_traits;
 
         const Site_GndTemp_FCfactorMthd_OctGndTemp_optional&
@@ -817,7 +817,7 @@ namespace schema
         // Site_GndTemp_FCfactorMthd_NovGndTemp
         //
         typedef ::xml_schema::double_ Site_GndTemp_FCfactorMthd_NovGndTemp_type;
-        typedef ::xsd::cxx::tree::optional< Site_GndTemp_FCfactorMthd_NovGndTemp_type > Site_GndTemp_FCfactorMthd_NovGndTemp_optional;
+        typedef ::xsd::cxx::tree::optional< Site_GndTemp_FCfactorMthd_NovGndTemp_type, true > Site_GndTemp_FCfactorMthd_NovGndTemp_optional;
         typedef ::xsd::cxx::tree::traits< Site_GndTemp_FCfactorMthd_NovGndTemp_type, char, ::xsd::cxx::tree::schema_type::double_ > Site_GndTemp_FCfactorMthd_NovGndTemp_traits;
 
         const Site_GndTemp_FCfactorMthd_NovGndTemp_optional&
@@ -835,7 +835,7 @@ namespace schema
         // Site_GndTemp_FCfactorMthd_DecGndTemp
         //
         typedef ::xml_schema::double_ Site_GndTemp_FCfactorMthd_DecGndTemp_type;
-        typedef ::xsd::cxx::tree::optional< Site_GndTemp_FCfactorMthd_DecGndTemp_type > Site_GndTemp_FCfactorMthd_DecGndTemp_optional;
+        typedef ::xsd::cxx::tree::optional< Site_GndTemp_FCfactorMthd_DecGndTemp_type, true > Site_GndTemp_FCfactorMthd_DecGndTemp_optional;
         typedef ::xsd::cxx::tree::traits< Site_GndTemp_FCfactorMthd_DecGndTemp_type, char, ::xsd::cxx::tree::schema_type::double_ > Site_GndTemp_FCfactorMthd_DecGndTemp_traits;
 
         const Site_GndTemp_FCfactorMthd_DecGndTemp_optional&
@@ -853,7 +853,7 @@ namespace schema
         // Site_GndTemp_Shallow_JanSurfGndTemp
         //
         typedef ::xml_schema::double_ Site_GndTemp_Shallow_JanSurfGndTemp_type;
-        typedef ::xsd::cxx::tree::optional< Site_GndTemp_Shallow_JanSurfGndTemp_type > Site_GndTemp_Shallow_JanSurfGndTemp_optional;
+        typedef ::xsd::cxx::tree::optional< Site_GndTemp_Shallow_JanSurfGndTemp_type, true > Site_GndTemp_Shallow_JanSurfGndTemp_optional;
         typedef ::xsd::cxx::tree::traits< Site_GndTemp_Shallow_JanSurfGndTemp_type, char, ::xsd::cxx::tree::schema_type::double_ > Site_GndTemp_Shallow_JanSurfGndTemp_traits;
 
         const Site_GndTemp_Shallow_JanSurfGndTemp_optional&
@@ -871,7 +871,7 @@ namespace schema
         // Site_GndTemp_Shallow_FebSurfGndTemp
         //
         typedef ::xml_schema::double_ Site_GndTemp_Shallow_FebSurfGndTemp_type;
-        typedef ::xsd::cxx::tree::optional< Site_GndTemp_Shallow_FebSurfGndTemp_type > Site_GndTemp_Shallow_FebSurfGndTemp_optional;
+        typedef ::xsd::cxx::tree::optional< Site_GndTemp_Shallow_FebSurfGndTemp_type, true > Site_GndTemp_Shallow_FebSurfGndTemp_optional;
         typedef ::xsd::cxx::tree::traits< Site_GndTemp_Shallow_FebSurfGndTemp_type, char, ::xsd::cxx::tree::schema_type::double_ > Site_GndTemp_Shallow_FebSurfGndTemp_traits;
 
         const Site_GndTemp_Shallow_FebSurfGndTemp_optional&
@@ -889,7 +889,7 @@ namespace schema
         // Site_GndTemp_Shallow_MarchSurfGndTemp
         //
         typedef ::xml_schema::double_ Site_GndTemp_Shallow_MarchSurfGndTemp_type;
-        typedef ::xsd::cxx::tree::optional< Site_GndTemp_Shallow_MarchSurfGndTemp_type > Site_GndTemp_Shallow_MarchSurfGndTemp_optional;
+        typedef ::xsd::cxx::tree::optional< Site_GndTemp_Shallow_MarchSurfGndTemp_type, true > Site_GndTemp_Shallow_MarchSurfGndTemp_optional;
         typedef ::xsd::cxx::tree::traits< Site_GndTemp_Shallow_MarchSurfGndTemp_type, char, ::xsd::cxx::tree::schema_type::double_ > Site_GndTemp_Shallow_MarchSurfGndTemp_traits;
 
         const Site_GndTemp_Shallow_MarchSurfGndTemp_optional&
@@ -907,7 +907,7 @@ namespace schema
         // Site_GndTemp_Shallow_AprilSurfGndTemp
         //
         typedef ::xml_schema::double_ Site_GndTemp_Shallow_AprilSurfGndTemp_type;
-        typedef ::xsd::cxx::tree::optional< Site_GndTemp_Shallow_AprilSurfGndTemp_type > Site_GndTemp_Shallow_AprilSurfGndTemp_optional;
+        typedef ::xsd::cxx::tree::optional< Site_GndTemp_Shallow_AprilSurfGndTemp_type, true > Site_GndTemp_Shallow_AprilSurfGndTemp_optional;
         typedef ::xsd::cxx::tree::traits< Site_GndTemp_Shallow_AprilSurfGndTemp_type, char, ::xsd::cxx::tree::schema_type::double_ > Site_GndTemp_Shallow_AprilSurfGndTemp_traits;
 
         const Site_GndTemp_Shallow_AprilSurfGndTemp_optional&
@@ -925,7 +925,7 @@ namespace schema
         // Site_GndTemp_Shallow_MaySurfGndTemp
         //
         typedef ::xml_schema::double_ Site_GndTemp_Shallow_MaySurfGndTemp_type;
-        typedef ::xsd::cxx::tree::optional< Site_GndTemp_Shallow_MaySurfGndTemp_type > Site_GndTemp_Shallow_MaySurfGndTemp_optional;
+        typedef ::xsd::cxx::tree::optional< Site_GndTemp_Shallow_MaySurfGndTemp_type, true > Site_GndTemp_Shallow_MaySurfGndTemp_optional;
         typedef ::xsd::cxx::tree::traits< Site_GndTemp_Shallow_MaySurfGndTemp_type, char, ::xsd::cxx::tree::schema_type::double_ > Site_GndTemp_Shallow_MaySurfGndTemp_traits;
 
         const Site_GndTemp_Shallow_MaySurfGndTemp_optional&
@@ -943,7 +943,7 @@ namespace schema
         // Site_GndTemp_Shallow_JuneSurfGndTemp
         //
         typedef ::xml_schema::double_ Site_GndTemp_Shallow_JuneSurfGndTemp_type;
-        typedef ::xsd::cxx::tree::optional< Site_GndTemp_Shallow_JuneSurfGndTemp_type > Site_GndTemp_Shallow_JuneSurfGndTemp_optional;
+        typedef ::xsd::cxx::tree::optional< Site_GndTemp_Shallow_JuneSurfGndTemp_type, true > Site_GndTemp_Shallow_JuneSurfGndTemp_optional;
         typedef ::xsd::cxx::tree::traits< Site_GndTemp_Shallow_JuneSurfGndTemp_type, char, ::xsd::cxx::tree::schema_type::double_ > Site_GndTemp_Shallow_JuneSurfGndTemp_traits;
 
         const Site_GndTemp_Shallow_JuneSurfGndTemp_optional&
@@ -961,7 +961,7 @@ namespace schema
         // Site_GndTemp_Shallow_JulySurfGndTemp
         //
         typedef ::xml_schema::double_ Site_GndTemp_Shallow_JulySurfGndTemp_type;
-        typedef ::xsd::cxx::tree::optional< Site_GndTemp_Shallow_JulySurfGndTemp_type > Site_GndTemp_Shallow_JulySurfGndTemp_optional;
+        typedef ::xsd::cxx::tree::optional< Site_GndTemp_Shallow_JulySurfGndTemp_type, true > Site_GndTemp_Shallow_JulySurfGndTemp_optional;
         typedef ::xsd::cxx::tree::traits< Site_GndTemp_Shallow_JulySurfGndTemp_type, char, ::xsd::cxx::tree::schema_type::double_ > Site_GndTemp_Shallow_JulySurfGndTemp_traits;
 
         const Site_GndTemp_Shallow_JulySurfGndTemp_optional&
@@ -979,7 +979,7 @@ namespace schema
         // Site_GndTemp_Shallow_AugSurfGndTemp
         //
         typedef ::xml_schema::double_ Site_GndTemp_Shallow_AugSurfGndTemp_type;
-        typedef ::xsd::cxx::tree::optional< Site_GndTemp_Shallow_AugSurfGndTemp_type > Site_GndTemp_Shallow_AugSurfGndTemp_optional;
+        typedef ::xsd::cxx::tree::optional< Site_GndTemp_Shallow_AugSurfGndTemp_type, true > Site_GndTemp_Shallow_AugSurfGndTemp_optional;
         typedef ::xsd::cxx::tree::traits< Site_GndTemp_Shallow_AugSurfGndTemp_type, char, ::xsd::cxx::tree::schema_type::double_ > Site_GndTemp_Shallow_AugSurfGndTemp_traits;
 
         const Site_GndTemp_Shallow_AugSurfGndTemp_optional&
@@ -997,7 +997,7 @@ namespace schema
         // Site_GndTemp_Shallow_SepSurfGndTemp
         //
         typedef ::xml_schema::double_ Site_GndTemp_Shallow_SepSurfGndTemp_type;
-        typedef ::xsd::cxx::tree::optional< Site_GndTemp_Shallow_SepSurfGndTemp_type > Site_GndTemp_Shallow_SepSurfGndTemp_optional;
+        typedef ::xsd::cxx::tree::optional< Site_GndTemp_Shallow_SepSurfGndTemp_type, true > Site_GndTemp_Shallow_SepSurfGndTemp_optional;
         typedef ::xsd::cxx::tree::traits< Site_GndTemp_Shallow_SepSurfGndTemp_type, char, ::xsd::cxx::tree::schema_type::double_ > Site_GndTemp_Shallow_SepSurfGndTemp_traits;
 
         const Site_GndTemp_Shallow_SepSurfGndTemp_optional&
@@ -1015,7 +1015,7 @@ namespace schema
         // Site_GndTemp_Shallow_OctSurfGndTemp
         //
         typedef ::xml_schema::double_ Site_GndTemp_Shallow_OctSurfGndTemp_type;
-        typedef ::xsd::cxx::tree::optional< Site_GndTemp_Shallow_OctSurfGndTemp_type > Site_GndTemp_Shallow_OctSurfGndTemp_optional;
+        typedef ::xsd::cxx::tree::optional< Site_GndTemp_Shallow_OctSurfGndTemp_type, true > Site_GndTemp_Shallow_OctSurfGndTemp_optional;
         typedef ::xsd::cxx::tree::traits< Site_GndTemp_Shallow_OctSurfGndTemp_type, char, ::xsd::cxx::tree::schema_type::double_ > Site_GndTemp_Shallow_OctSurfGndTemp_traits;
 
         const Site_GndTemp_Shallow_OctSurfGndTemp_optional&
@@ -1033,7 +1033,7 @@ namespace schema
         // Site_GndTemp_Shallow_NovSurfGndTemp
         //
         typedef ::xml_schema::double_ Site_GndTemp_Shallow_NovSurfGndTemp_type;
-        typedef ::xsd::cxx::tree::optional< Site_GndTemp_Shallow_NovSurfGndTemp_type > Site_GndTemp_Shallow_NovSurfGndTemp_optional;
+        typedef ::xsd::cxx::tree::optional< Site_GndTemp_Shallow_NovSurfGndTemp_type, true > Site_GndTemp_Shallow_NovSurfGndTemp_optional;
         typedef ::xsd::cxx::tree::traits< Site_GndTemp_Shallow_NovSurfGndTemp_type, char, ::xsd::cxx::tree::schema_type::double_ > Site_GndTemp_Shallow_NovSurfGndTemp_traits;
 
         const Site_GndTemp_Shallow_NovSurfGndTemp_optional&
@@ -1051,7 +1051,7 @@ namespace schema
         // Site_GndTemp_Shallow_DecSurfGndTemp
         //
         typedef ::xml_schema::double_ Site_GndTemp_Shallow_DecSurfGndTemp_type;
-        typedef ::xsd::cxx::tree::optional< Site_GndTemp_Shallow_DecSurfGndTemp_type > Site_GndTemp_Shallow_DecSurfGndTemp_optional;
+        typedef ::xsd::cxx::tree::optional< Site_GndTemp_Shallow_DecSurfGndTemp_type, true > Site_GndTemp_Shallow_DecSurfGndTemp_optional;
         typedef ::xsd::cxx::tree::traits< Site_GndTemp_Shallow_DecSurfGndTemp_type, char, ::xsd::cxx::tree::schema_type::double_ > Site_GndTemp_Shallow_DecSurfGndTemp_traits;
 
         const Site_GndTemp_Shallow_DecSurfGndTemp_optional&
@@ -1069,7 +1069,7 @@ namespace schema
         // Site_GndTemp_Deep_JanDeepGndTemp
         //
         typedef ::xml_schema::double_ Site_GndTemp_Deep_JanDeepGndTemp_type;
-        typedef ::xsd::cxx::tree::optional< Site_GndTemp_Deep_JanDeepGndTemp_type > Site_GndTemp_Deep_JanDeepGndTemp_optional;
+        typedef ::xsd::cxx::tree::optional< Site_GndTemp_Deep_JanDeepGndTemp_type, true > Site_GndTemp_Deep_JanDeepGndTemp_optional;
         typedef ::xsd::cxx::tree::traits< Site_GndTemp_Deep_JanDeepGndTemp_type, char, ::xsd::cxx::tree::schema_type::double_ > Site_GndTemp_Deep_JanDeepGndTemp_traits;
 
         const Site_GndTemp_Deep_JanDeepGndTemp_optional&
@@ -1087,7 +1087,7 @@ namespace schema
         // Site_GndTemp_Deep_FebDeepGndTemp
         //
         typedef ::xml_schema::double_ Site_GndTemp_Deep_FebDeepGndTemp_type;
-        typedef ::xsd::cxx::tree::optional< Site_GndTemp_Deep_FebDeepGndTemp_type > Site_GndTemp_Deep_FebDeepGndTemp_optional;
+        typedef ::xsd::cxx::tree::optional< Site_GndTemp_Deep_FebDeepGndTemp_type, true > Site_GndTemp_Deep_FebDeepGndTemp_optional;
         typedef ::xsd::cxx::tree::traits< Site_GndTemp_Deep_FebDeepGndTemp_type, char, ::xsd::cxx::tree::schema_type::double_ > Site_GndTemp_Deep_FebDeepGndTemp_traits;
 
         const Site_GndTemp_Deep_FebDeepGndTemp_optional&
@@ -1105,7 +1105,7 @@ namespace schema
         // Site_GndTemp_Deep_MarchDeepGndTemp
         //
         typedef ::xml_schema::double_ Site_GndTemp_Deep_MarchDeepGndTemp_type;
-        typedef ::xsd::cxx::tree::optional< Site_GndTemp_Deep_MarchDeepGndTemp_type > Site_GndTemp_Deep_MarchDeepGndTemp_optional;
+        typedef ::xsd::cxx::tree::optional< Site_GndTemp_Deep_MarchDeepGndTemp_type, true > Site_GndTemp_Deep_MarchDeepGndTemp_optional;
         typedef ::xsd::cxx::tree::traits< Site_GndTemp_Deep_MarchDeepGndTemp_type, char, ::xsd::cxx::tree::schema_type::double_ > Site_GndTemp_Deep_MarchDeepGndTemp_traits;
 
         const Site_GndTemp_Deep_MarchDeepGndTemp_optional&
@@ -1123,7 +1123,7 @@ namespace schema
         // Site_GndTemp_Deep_AprilDeepGndTemp
         //
         typedef ::xml_schema::double_ Site_GndTemp_Deep_AprilDeepGndTemp_type;
-        typedef ::xsd::cxx::tree::optional< Site_GndTemp_Deep_AprilDeepGndTemp_type > Site_GndTemp_Deep_AprilDeepGndTemp_optional;
+        typedef ::xsd::cxx::tree::optional< Site_GndTemp_Deep_AprilDeepGndTemp_type, true > Site_GndTemp_Deep_AprilDeepGndTemp_optional;
         typedef ::xsd::cxx::tree::traits< Site_GndTemp_Deep_AprilDeepGndTemp_type, char, ::xsd::cxx::tree::schema_type::double_ > Site_GndTemp_Deep_AprilDeepGndTemp_traits;
 
         const Site_GndTemp_Deep_AprilDeepGndTemp_optional&
@@ -1141,7 +1141,7 @@ namespace schema
         // Site_GndTemp_Deep_MayDeepGndTemp
         //
         typedef ::xml_schema::double_ Site_GndTemp_Deep_MayDeepGndTemp_type;
-        typedef ::xsd::cxx::tree::optional< Site_GndTemp_Deep_MayDeepGndTemp_type > Site_GndTemp_Deep_MayDeepGndTemp_optional;
+        typedef ::xsd::cxx::tree::optional< Site_GndTemp_Deep_MayDeepGndTemp_type, true > Site_GndTemp_Deep_MayDeepGndTemp_optional;
         typedef ::xsd::cxx::tree::traits< Site_GndTemp_Deep_MayDeepGndTemp_type, char, ::xsd::cxx::tree::schema_type::double_ > Site_GndTemp_Deep_MayDeepGndTemp_traits;
 
         const Site_GndTemp_Deep_MayDeepGndTemp_optional&
@@ -1159,7 +1159,7 @@ namespace schema
         // Site_GndTemp_Deep_JuneDeepGndTemp
         //
         typedef ::xml_schema::double_ Site_GndTemp_Deep_JuneDeepGndTemp_type;
-        typedef ::xsd::cxx::tree::optional< Site_GndTemp_Deep_JuneDeepGndTemp_type > Site_GndTemp_Deep_JuneDeepGndTemp_optional;
+        typedef ::xsd::cxx::tree::optional< Site_GndTemp_Deep_JuneDeepGndTemp_type, true > Site_GndTemp_Deep_JuneDeepGndTemp_optional;
         typedef ::xsd::cxx::tree::traits< Site_GndTemp_Deep_JuneDeepGndTemp_type, char, ::xsd::cxx::tree::schema_type::double_ > Site_GndTemp_Deep_JuneDeepGndTemp_traits;
 
         const Site_GndTemp_Deep_JuneDeepGndTemp_optional&
@@ -1177,7 +1177,7 @@ namespace schema
         // Site_GndTemp_Deep_JulyDeepGndTemp
         //
         typedef ::xml_schema::double_ Site_GndTemp_Deep_JulyDeepGndTemp_type;
-        typedef ::xsd::cxx::tree::optional< Site_GndTemp_Deep_JulyDeepGndTemp_type > Site_GndTemp_Deep_JulyDeepGndTemp_optional;
+        typedef ::xsd::cxx::tree::optional< Site_GndTemp_Deep_JulyDeepGndTemp_type, true > Site_GndTemp_Deep_JulyDeepGndTemp_optional;
         typedef ::xsd::cxx::tree::traits< Site_GndTemp_Deep_JulyDeepGndTemp_type, char, ::xsd::cxx::tree::schema_type::double_ > Site_GndTemp_Deep_JulyDeepGndTemp_traits;
 
         const Site_GndTemp_Deep_JulyDeepGndTemp_optional&
@@ -1195,7 +1195,7 @@ namespace schema
         // Site_GndTemp_Deep_AugDeepGndTemp
         //
         typedef ::xml_schema::double_ Site_GndTemp_Deep_AugDeepGndTemp_type;
-        typedef ::xsd::cxx::tree::optional< Site_GndTemp_Deep_AugDeepGndTemp_type > Site_GndTemp_Deep_AugDeepGndTemp_optional;
+        typedef ::xsd::cxx::tree::optional< Site_GndTemp_Deep_AugDeepGndTemp_type, true > Site_GndTemp_Deep_AugDeepGndTemp_optional;
         typedef ::xsd::cxx::tree::traits< Site_GndTemp_Deep_AugDeepGndTemp_type, char, ::xsd::cxx::tree::schema_type::double_ > Site_GndTemp_Deep_AugDeepGndTemp_traits;
 
         const Site_GndTemp_Deep_AugDeepGndTemp_optional&
@@ -1213,7 +1213,7 @@ namespace schema
         // Site_GndTemp_Deep_SepDeepGndTemp
         //
         typedef ::xml_schema::double_ Site_GndTemp_Deep_SepDeepGndTemp_type;
-        typedef ::xsd::cxx::tree::optional< Site_GndTemp_Deep_SepDeepGndTemp_type > Site_GndTemp_Deep_SepDeepGndTemp_optional;
+        typedef ::xsd::cxx::tree::optional< Site_GndTemp_Deep_SepDeepGndTemp_type, true > Site_GndTemp_Deep_SepDeepGndTemp_optional;
         typedef ::xsd::cxx::tree::traits< Site_GndTemp_Deep_SepDeepGndTemp_type, char, ::xsd::cxx::tree::schema_type::double_ > Site_GndTemp_Deep_SepDeepGndTemp_traits;
 
         const Site_GndTemp_Deep_SepDeepGndTemp_optional&
@@ -1231,7 +1231,7 @@ namespace schema
         // Site_GndTemp_Deep_OctDeepGndTemp
         //
         typedef ::xml_schema::double_ Site_GndTemp_Deep_OctDeepGndTemp_type;
-        typedef ::xsd::cxx::tree::optional< Site_GndTemp_Deep_OctDeepGndTemp_type > Site_GndTemp_Deep_OctDeepGndTemp_optional;
+        typedef ::xsd::cxx::tree::optional< Site_GndTemp_Deep_OctDeepGndTemp_type, true > Site_GndTemp_Deep_OctDeepGndTemp_optional;
         typedef ::xsd::cxx::tree::traits< Site_GndTemp_Deep_OctDeepGndTemp_type, char, ::xsd::cxx::tree::schema_type::double_ > Site_GndTemp_Deep_OctDeepGndTemp_traits;
 
         const Site_GndTemp_Deep_OctDeepGndTemp_optional&
@@ -1249,7 +1249,7 @@ namespace schema
         // Site_GndTemp_Deep_NovDeepGndTemp
         //
         typedef ::xml_schema::double_ Site_GndTemp_Deep_NovDeepGndTemp_type;
-        typedef ::xsd::cxx::tree::optional< Site_GndTemp_Deep_NovDeepGndTemp_type > Site_GndTemp_Deep_NovDeepGndTemp_optional;
+        typedef ::xsd::cxx::tree::optional< Site_GndTemp_Deep_NovDeepGndTemp_type, true > Site_GndTemp_Deep_NovDeepGndTemp_optional;
         typedef ::xsd::cxx::tree::traits< Site_GndTemp_Deep_NovDeepGndTemp_type, char, ::xsd::cxx::tree::schema_type::double_ > Site_GndTemp_Deep_NovDeepGndTemp_traits;
 
         const Site_GndTemp_Deep_NovDeepGndTemp_optional&
@@ -1267,7 +1267,7 @@ namespace schema
         // Site_GndTemp_Deep_DecDeepGndTemp
         //
         typedef ::xml_schema::double_ Site_GndTemp_Deep_DecDeepGndTemp_type;
-        typedef ::xsd::cxx::tree::optional< Site_GndTemp_Deep_DecDeepGndTemp_type > Site_GndTemp_Deep_DecDeepGndTemp_optional;
+        typedef ::xsd::cxx::tree::optional< Site_GndTemp_Deep_DecDeepGndTemp_type, true > Site_GndTemp_Deep_DecDeepGndTemp_optional;
         typedef ::xsd::cxx::tree::traits< Site_GndTemp_Deep_DecDeepGndTemp_type, char, ::xsd::cxx::tree::schema_type::double_ > Site_GndTemp_Deep_DecDeepGndTemp_traits;
 
         const Site_GndTemp_Deep_DecDeepGndTemp_optional&
@@ -1285,7 +1285,7 @@ namespace schema
         // Site_GndReflect_JanGndReflect
         //
         typedef ::xml_schema::double_ Site_GndReflect_JanGndReflect_type;
-        typedef ::xsd::cxx::tree::optional< Site_GndReflect_JanGndReflect_type > Site_GndReflect_JanGndReflect_optional;
+        typedef ::xsd::cxx::tree::optional< Site_GndReflect_JanGndReflect_type, true > Site_GndReflect_JanGndReflect_optional;
         typedef ::xsd::cxx::tree::traits< Site_GndReflect_JanGndReflect_type, char, ::xsd::cxx::tree::schema_type::double_ > Site_GndReflect_JanGndReflect_traits;
 
         const Site_GndReflect_JanGndReflect_optional&
@@ -1303,7 +1303,7 @@ namespace schema
         // Site_GndReflect_FebGndReflect
         //
         typedef ::xml_schema::double_ Site_GndReflect_FebGndReflect_type;
-        typedef ::xsd::cxx::tree::optional< Site_GndReflect_FebGndReflect_type > Site_GndReflect_FebGndReflect_optional;
+        typedef ::xsd::cxx::tree::optional< Site_GndReflect_FebGndReflect_type, true > Site_GndReflect_FebGndReflect_optional;
         typedef ::xsd::cxx::tree::traits< Site_GndReflect_FebGndReflect_type, char, ::xsd::cxx::tree::schema_type::double_ > Site_GndReflect_FebGndReflect_traits;
 
         const Site_GndReflect_FebGndReflect_optional&
@@ -1321,7 +1321,7 @@ namespace schema
         // Site_GndReflect_MarchGndReflect
         //
         typedef ::xml_schema::double_ Site_GndReflect_MarchGndReflect_type;
-        typedef ::xsd::cxx::tree::optional< Site_GndReflect_MarchGndReflect_type > Site_GndReflect_MarchGndReflect_optional;
+        typedef ::xsd::cxx::tree::optional< Site_GndReflect_MarchGndReflect_type, true > Site_GndReflect_MarchGndReflect_optional;
         typedef ::xsd::cxx::tree::traits< Site_GndReflect_MarchGndReflect_type, char, ::xsd::cxx::tree::schema_type::double_ > Site_GndReflect_MarchGndReflect_traits;
 
         const Site_GndReflect_MarchGndReflect_optional&
@@ -1339,7 +1339,7 @@ namespace schema
         // Site_GndReflect_AprilGndReflect
         //
         typedef ::xml_schema::double_ Site_GndReflect_AprilGndReflect_type;
-        typedef ::xsd::cxx::tree::optional< Site_GndReflect_AprilGndReflect_type > Site_GndReflect_AprilGndReflect_optional;
+        typedef ::xsd::cxx::tree::optional< Site_GndReflect_AprilGndReflect_type, true > Site_GndReflect_AprilGndReflect_optional;
         typedef ::xsd::cxx::tree::traits< Site_GndReflect_AprilGndReflect_type, char, ::xsd::cxx::tree::schema_type::double_ > Site_GndReflect_AprilGndReflect_traits;
 
         const Site_GndReflect_AprilGndReflect_optional&
@@ -1357,7 +1357,7 @@ namespace schema
         // Site_GndReflect_MayGndReflect
         //
         typedef ::xml_schema::double_ Site_GndReflect_MayGndReflect_type;
-        typedef ::xsd::cxx::tree::optional< Site_GndReflect_MayGndReflect_type > Site_GndReflect_MayGndReflect_optional;
+        typedef ::xsd::cxx::tree::optional< Site_GndReflect_MayGndReflect_type, true > Site_GndReflect_MayGndReflect_optional;
         typedef ::xsd::cxx::tree::traits< Site_GndReflect_MayGndReflect_type, char, ::xsd::cxx::tree::schema_type::double_ > Site_GndReflect_MayGndReflect_traits;
 
         const Site_GndReflect_MayGndReflect_optional&
@@ -1375,7 +1375,7 @@ namespace schema
         // Site_GndReflect_JuneGndReflect
         //
         typedef ::xml_schema::double_ Site_GndReflect_JuneGndReflect_type;
-        typedef ::xsd::cxx::tree::optional< Site_GndReflect_JuneGndReflect_type > Site_GndReflect_JuneGndReflect_optional;
+        typedef ::xsd::cxx::tree::optional< Site_GndReflect_JuneGndReflect_type, true > Site_GndReflect_JuneGndReflect_optional;
         typedef ::xsd::cxx::tree::traits< Site_GndReflect_JuneGndReflect_type, char, ::xsd::cxx::tree::schema_type::double_ > Site_GndReflect_JuneGndReflect_traits;
 
         const Site_GndReflect_JuneGndReflect_optional&
@@ -1393,7 +1393,7 @@ namespace schema
         // Site_GndReflect_JulyGndReflect
         //
         typedef ::xml_schema::double_ Site_GndReflect_JulyGndReflect_type;
-        typedef ::xsd::cxx::tree::optional< Site_GndReflect_JulyGndReflect_type > Site_GndReflect_JulyGndReflect_optional;
+        typedef ::xsd::cxx::tree::optional< Site_GndReflect_JulyGndReflect_type, true > Site_GndReflect_JulyGndReflect_optional;
         typedef ::xsd::cxx::tree::traits< Site_GndReflect_JulyGndReflect_type, char, ::xsd::cxx::tree::schema_type::double_ > Site_GndReflect_JulyGndReflect_traits;
 
         const Site_GndReflect_JulyGndReflect_optional&
@@ -1411,7 +1411,7 @@ namespace schema
         // Site_GndReflect_AugGndReflect
         //
         typedef ::xml_schema::double_ Site_GndReflect_AugGndReflect_type;
-        typedef ::xsd::cxx::tree::optional< Site_GndReflect_AugGndReflect_type > Site_GndReflect_AugGndReflect_optional;
+        typedef ::xsd::cxx::tree::optional< Site_GndReflect_AugGndReflect_type, true > Site_GndReflect_AugGndReflect_optional;
         typedef ::xsd::cxx::tree::traits< Site_GndReflect_AugGndReflect_type, char, ::xsd::cxx::tree::schema_type::double_ > Site_GndReflect_AugGndReflect_traits;
 
         const Site_GndReflect_AugGndReflect_optional&
@@ -1429,7 +1429,7 @@ namespace schema
         // Site_GndReflect_SepGndReflect
         //
         typedef ::xml_schema::double_ Site_GndReflect_SepGndReflect_type;
-        typedef ::xsd::cxx::tree::optional< Site_GndReflect_SepGndReflect_type > Site_GndReflect_SepGndReflect_optional;
+        typedef ::xsd::cxx::tree::optional< Site_GndReflect_SepGndReflect_type, true > Site_GndReflect_SepGndReflect_optional;
         typedef ::xsd::cxx::tree::traits< Site_GndReflect_SepGndReflect_type, char, ::xsd::cxx::tree::schema_type::double_ > Site_GndReflect_SepGndReflect_traits;
 
         const Site_GndReflect_SepGndReflect_optional&
@@ -1447,7 +1447,7 @@ namespace schema
         // Site_GndReflect_OctGndReflect
         //
         typedef ::xml_schema::double_ Site_GndReflect_OctGndReflect_type;
-        typedef ::xsd::cxx::tree::optional< Site_GndReflect_OctGndReflect_type > Site_GndReflect_OctGndReflect_optional;
+        typedef ::xsd::cxx::tree::optional< Site_GndReflect_OctGndReflect_type, true > Site_GndReflect_OctGndReflect_optional;
         typedef ::xsd::cxx::tree::traits< Site_GndReflect_OctGndReflect_type, char, ::xsd::cxx::tree::schema_type::double_ > Site_GndReflect_OctGndReflect_traits;
 
         const Site_GndReflect_OctGndReflect_optional&
@@ -1465,7 +1465,7 @@ namespace schema
         // Site_GndReflect_NovGndReflect
         //
         typedef ::xml_schema::double_ Site_GndReflect_NovGndReflect_type;
-        typedef ::xsd::cxx::tree::optional< Site_GndReflect_NovGndReflect_type > Site_GndReflect_NovGndReflect_optional;
+        typedef ::xsd::cxx::tree::optional< Site_GndReflect_NovGndReflect_type, true > Site_GndReflect_NovGndReflect_optional;
         typedef ::xsd::cxx::tree::traits< Site_GndReflect_NovGndReflect_type, char, ::xsd::cxx::tree::schema_type::double_ > Site_GndReflect_NovGndReflect_traits;
 
         const Site_GndReflect_NovGndReflect_optional&
@@ -1483,7 +1483,7 @@ namespace schema
         // Site_GndReflect_DecGndReflect
         //
         typedef ::xml_schema::double_ Site_GndReflect_DecGndReflect_type;
-        typedef ::xsd::cxx::tree::optional< Site_GndReflect_DecGndReflect_type > Site_GndReflect_DecGndReflect_optional;
+        typedef ::xsd::cxx::tree::optional< Site_GndReflect_DecGndReflect_type, true > Site_GndReflect_DecGndReflect_optional;
         typedef ::xsd::cxx::tree::traits< Site_GndReflect_DecGndReflect_type, char, ::xsd::cxx::tree::schema_type::double_ > Site_GndReflect_DecGndReflect_traits;
 
         const Site_GndReflect_DecGndReflect_optional&
@@ -1501,7 +1501,7 @@ namespace schema
         // Site_GndReflect_SnowMod_GndReflectedSolaThermdifier
         //
         typedef ::xml_schema::double_ Site_GndReflect_SnowMod_GndReflectedSolaThermdifier_type;
-        typedef ::xsd::cxx::tree::optional< Site_GndReflect_SnowMod_GndReflectedSolaThermdifier_type > Site_GndReflect_SnowMod_GndReflectedSolaThermdifier_optional;
+        typedef ::xsd::cxx::tree::optional< Site_GndReflect_SnowMod_GndReflectedSolaThermdifier_type, true > Site_GndReflect_SnowMod_GndReflectedSolaThermdifier_optional;
         typedef ::xsd::cxx::tree::traits< Site_GndReflect_SnowMod_GndReflectedSolaThermdifier_type, char, ::xsd::cxx::tree::schema_type::double_ > Site_GndReflect_SnowMod_GndReflectedSolaThermdifier_traits;
 
         const Site_GndReflect_SnowMod_GndReflectedSolaThermdifier_optional&
@@ -1519,7 +1519,7 @@ namespace schema
         // Site_GndReflect_SnowMod_DylghtGndReflectSolarMod
         //
         typedef ::xml_schema::double_ Site_GndReflect_SnowMod_DylghtGndReflectSolarMod_type;
-        typedef ::xsd::cxx::tree::optional< Site_GndReflect_SnowMod_DylghtGndReflectSolarMod_type > Site_GndReflect_SnowMod_DylghtGndReflectSolarMod_optional;
+        typedef ::xsd::cxx::tree::optional< Site_GndReflect_SnowMod_DylghtGndReflectSolarMod_type, true > Site_GndReflect_SnowMod_DylghtGndReflectSolarMod_optional;
         typedef ::xsd::cxx::tree::traits< Site_GndReflect_SnowMod_DylghtGndReflectSolarMod_type, char, ::xsd::cxx::tree::schema_type::double_ > Site_GndReflect_SnowMod_DylghtGndReflectSolarMod_traits;
 
         const Site_GndReflect_SnowMod_DylghtGndReflectSolarMod_optional&
@@ -1537,7 +1537,7 @@ namespace schema
         // Site_WaterMainsTemp_CalcMeth
         //
         typedef ::xml_schema::string Site_WaterMainsTemp_CalcMeth_type;
-        typedef ::xsd::cxx::tree::optional< Site_WaterMainsTemp_CalcMeth_type > Site_WaterMainsTemp_CalcMeth_optional;
+        typedef ::xsd::cxx::tree::optional< Site_WaterMainsTemp_CalcMeth_type, false > Site_WaterMainsTemp_CalcMeth_optional;
         typedef ::xsd::cxx::tree::traits< Site_WaterMainsTemp_CalcMeth_type, char > Site_WaterMainsTemp_CalcMeth_traits;
 
         const Site_WaterMainsTemp_CalcMeth_optional&
@@ -1558,7 +1558,7 @@ namespace schema
         // Site_WaterMainsTemp_TempSchedName
         //
         typedef ::xml_schema::idref Site_WaterMainsTemp_TempSchedName_type;
-        typedef ::xsd::cxx::tree::optional< Site_WaterMainsTemp_TempSchedName_type > Site_WaterMainsTemp_TempSchedName_optional;
+        typedef ::xsd::cxx::tree::optional< Site_WaterMainsTemp_TempSchedName_type, false > Site_WaterMainsTemp_TempSchedName_optional;
         typedef ::xsd::cxx::tree::traits< Site_WaterMainsTemp_TempSchedName_type, char > Site_WaterMainsTemp_TempSchedName_traits;
 
         const Site_WaterMainsTemp_TempSchedName_optional&
@@ -1579,7 +1579,7 @@ namespace schema
         // Site_WaterMainsTemp_AnnualAvgOutdrAirTemp
         //
         typedef ::xml_schema::double_ Site_WaterMainsTemp_AnnualAvgOutdrAirTemp_type;
-        typedef ::xsd::cxx::tree::optional< Site_WaterMainsTemp_AnnualAvgOutdrAirTemp_type > Site_WaterMainsTemp_AnnualAvgOutdrAirTemp_optional;
+        typedef ::xsd::cxx::tree::optional< Site_WaterMainsTemp_AnnualAvgOutdrAirTemp_type, true > Site_WaterMainsTemp_AnnualAvgOutdrAirTemp_optional;
         typedef ::xsd::cxx::tree::traits< Site_WaterMainsTemp_AnnualAvgOutdrAirTemp_type, char, ::xsd::cxx::tree::schema_type::double_ > Site_WaterMainsTemp_AnnualAvgOutdrAirTemp_traits;
 
         const Site_WaterMainsTemp_AnnualAvgOutdrAirTemp_optional&
@@ -1597,7 +1597,7 @@ namespace schema
         // Site_WaterMainsTemp_MaxDiffInMonthlyAvgOutdrAirTemps
         //
         typedef ::xml_schema::double_ Site_WaterMainsTemp_MaxDiffInMonthlyAvgOutdrAirTemps_type;
-        typedef ::xsd::cxx::tree::optional< Site_WaterMainsTemp_MaxDiffInMonthlyAvgOutdrAirTemps_type > Site_WaterMainsTemp_MaxDiffInMonthlyAvgOutdrAirTemps_optional;
+        typedef ::xsd::cxx::tree::optional< Site_WaterMainsTemp_MaxDiffInMonthlyAvgOutdrAirTemps_type, true > Site_WaterMainsTemp_MaxDiffInMonthlyAvgOutdrAirTemps_optional;
         typedef ::xsd::cxx::tree::traits< Site_WaterMainsTemp_MaxDiffInMonthlyAvgOutdrAirTemps_type, char, ::xsd::cxx::tree::schema_type::double_ > Site_WaterMainsTemp_MaxDiffInMonthlyAvgOutdrAirTemps_traits;
 
         const Site_WaterMainsTemp_MaxDiffInMonthlyAvgOutdrAirTemps_optional&
@@ -1615,7 +1615,7 @@ namespace schema
         // Site_Precipitation_PrecipModelType
         //
         typedef ::xml_schema::string Site_Precipitation_PrecipModelType_type;
-        typedef ::xsd::cxx::tree::optional< Site_Precipitation_PrecipModelType_type > Site_Precipitation_PrecipModelType_optional;
+        typedef ::xsd::cxx::tree::optional< Site_Precipitation_PrecipModelType_type, false > Site_Precipitation_PrecipModelType_optional;
         typedef ::xsd::cxx::tree::traits< Site_Precipitation_PrecipModelType_type, char > Site_Precipitation_PrecipModelType_traits;
 
         const Site_Precipitation_PrecipModelType_optional&
@@ -1636,7 +1636,7 @@ namespace schema
         // Site_Precipitation_DesignLevelTotalAnnualPrecip
         //
         typedef ::xml_schema::double_ Site_Precipitation_DesignLevelTotalAnnualPrecip_type;
-        typedef ::xsd::cxx::tree::optional< Site_Precipitation_DesignLevelTotalAnnualPrecip_type > Site_Precipitation_DesignLevelTotalAnnualPrecip_optional;
+        typedef ::xsd::cxx::tree::optional< Site_Precipitation_DesignLevelTotalAnnualPrecip_type, true > Site_Precipitation_DesignLevelTotalAnnualPrecip_optional;
         typedef ::xsd::cxx::tree::traits< Site_Precipitation_DesignLevelTotalAnnualPrecip_type, char, ::xsd::cxx::tree::schema_type::double_ > Site_Precipitation_DesignLevelTotalAnnualPrecip_traits;
 
         const Site_Precipitation_DesignLevelTotalAnnualPrecip_optional&
@@ -1654,7 +1654,7 @@ namespace schema
         // Site_Precipitation_PrecipRatesSchedName
         //
         typedef ::xml_schema::idref Site_Precipitation_PrecipRatesSchedName_type;
-        typedef ::xsd::cxx::tree::optional< Site_Precipitation_PrecipRatesSchedName_type > Site_Precipitation_PrecipRatesSchedName_optional;
+        typedef ::xsd::cxx::tree::optional< Site_Precipitation_PrecipRatesSchedName_type, false > Site_Precipitation_PrecipRatesSchedName_optional;
         typedef ::xsd::cxx::tree::traits< Site_Precipitation_PrecipRatesSchedName_type, char > Site_Precipitation_PrecipRatesSchedName_traits;
 
         const Site_Precipitation_PrecipRatesSchedName_optional&
@@ -1675,7 +1675,7 @@ namespace schema
         // Site_Precipitation_AvgTotalAnnualPrecip
         //
         typedef ::xml_schema::double_ Site_Precipitation_AvgTotalAnnualPrecip_type;
-        typedef ::xsd::cxx::tree::optional< Site_Precipitation_AvgTotalAnnualPrecip_type > Site_Precipitation_AvgTotalAnnualPrecip_optional;
+        typedef ::xsd::cxx::tree::optional< Site_Precipitation_AvgTotalAnnualPrecip_type, true > Site_Precipitation_AvgTotalAnnualPrecip_optional;
         typedef ::xsd::cxx::tree::traits< Site_Precipitation_AvgTotalAnnualPrecip_type, char, ::xsd::cxx::tree::schema_type::double_ > Site_Precipitation_AvgTotalAnnualPrecip_traits;
 
         const Site_Precipitation_AvgTotalAnnualPrecip_optional&
@@ -1693,7 +1693,7 @@ namespace schema
         // Site_SolarAndVisibleSpectrum_Name
         //
         typedef ::xml_schema::string Site_SolarAndVisibleSpectrum_Name_type;
-        typedef ::xsd::cxx::tree::optional< Site_SolarAndVisibleSpectrum_Name_type > Site_SolarAndVisibleSpectrum_Name_optional;
+        typedef ::xsd::cxx::tree::optional< Site_SolarAndVisibleSpectrum_Name_type, false > Site_SolarAndVisibleSpectrum_Name_optional;
         typedef ::xsd::cxx::tree::traits< Site_SolarAndVisibleSpectrum_Name_type, char > Site_SolarAndVisibleSpectrum_Name_traits;
 
         const Site_SolarAndVisibleSpectrum_Name_optional&
@@ -1714,7 +1714,7 @@ namespace schema
         // Site_SolarAndVisibleSpectrum_SpectrumDataMethod
         //
         typedef ::xml_schema::string Site_SolarAndVisibleSpectrum_SpectrumDataMethod_type;
-        typedef ::xsd::cxx::tree::optional< Site_SolarAndVisibleSpectrum_SpectrumDataMethod_type > Site_SolarAndVisibleSpectrum_SpectrumDataMethod_optional;
+        typedef ::xsd::cxx::tree::optional< Site_SolarAndVisibleSpectrum_SpectrumDataMethod_type, false > Site_SolarAndVisibleSpectrum_SpectrumDataMethod_optional;
         typedef ::xsd::cxx::tree::traits< Site_SolarAndVisibleSpectrum_SpectrumDataMethod_type, char > Site_SolarAndVisibleSpectrum_SpectrumDataMethod_traits;
 
         const Site_SolarAndVisibleSpectrum_SpectrumDataMethod_optional&
@@ -1735,7 +1735,7 @@ namespace schema
         // Site_SolarAndVisibleSpectrum_SolarSpectrumDataObjectName
         //
         typedef ::xml_schema::string Site_SolarAndVisibleSpectrum_SolarSpectrumDataObjectName_type;
-        typedef ::xsd::cxx::tree::optional< Site_SolarAndVisibleSpectrum_SolarSpectrumDataObjectName_type > Site_SolarAndVisibleSpectrum_SolarSpectrumDataObjectName_optional;
+        typedef ::xsd::cxx::tree::optional< Site_SolarAndVisibleSpectrum_SolarSpectrumDataObjectName_type, false > Site_SolarAndVisibleSpectrum_SolarSpectrumDataObjectName_optional;
         typedef ::xsd::cxx::tree::traits< Site_SolarAndVisibleSpectrum_SolarSpectrumDataObjectName_type, char > Site_SolarAndVisibleSpectrum_SolarSpectrumDataObjectName_traits;
 
         const Site_SolarAndVisibleSpectrum_SolarSpectrumDataObjectName_optional&
@@ -1756,7 +1756,7 @@ namespace schema
         // Site_SolarAndVisibleSpectrum_VisibleSpectrumDataObjectName
         //
         typedef ::xml_schema::string Site_SolarAndVisibleSpectrum_VisibleSpectrumDataObjectName_type;
-        typedef ::xsd::cxx::tree::optional< Site_SolarAndVisibleSpectrum_VisibleSpectrumDataObjectName_type > Site_SolarAndVisibleSpectrum_VisibleSpectrumDataObjectName_optional;
+        typedef ::xsd::cxx::tree::optional< Site_SolarAndVisibleSpectrum_VisibleSpectrumDataObjectName_type, false > Site_SolarAndVisibleSpectrum_VisibleSpectrumDataObjectName_optional;
         typedef ::xsd::cxx::tree::traits< Site_SolarAndVisibleSpectrum_VisibleSpectrumDataObjectName_type, char > Site_SolarAndVisibleSpectrum_VisibleSpectrumDataObjectName_traits;
 
         const Site_SolarAndVisibleSpectrum_VisibleSpectrumDataObjectName_optional&
@@ -1777,7 +1777,7 @@ namespace schema
         // Site_SpectrumData_Name
         //
         typedef ::xml_schema::string Site_SpectrumData_Name_type;
-        typedef ::xsd::cxx::tree::optional< Site_SpectrumData_Name_type > Site_SpectrumData_Name_optional;
+        typedef ::xsd::cxx::tree::optional< Site_SpectrumData_Name_type, false > Site_SpectrumData_Name_optional;
         typedef ::xsd::cxx::tree::traits< Site_SpectrumData_Name_type, char > Site_SpectrumData_Name_traits;
 
         const Site_SpectrumData_Name_optional&
@@ -1798,7 +1798,7 @@ namespace schema
         // Site_SpectrumData_SpectrumDataType
         //
         typedef ::xml_schema::string Site_SpectrumData_SpectrumDataType_type;
-        typedef ::xsd::cxx::tree::optional< Site_SpectrumData_SpectrumDataType_type > Site_SpectrumData_SpectrumDataType_optional;
+        typedef ::xsd::cxx::tree::optional< Site_SpectrumData_SpectrumDataType_type, false > Site_SpectrumData_SpectrumDataType_optional;
         typedef ::xsd::cxx::tree::traits< Site_SpectrumData_SpectrumDataType_type, char > Site_SpectrumData_SpectrumDataType_traits;
 
         const Site_SpectrumData_SpectrumDataType_optional&

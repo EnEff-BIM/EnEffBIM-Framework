@@ -25,6 +25,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="SimWindow_Window_Default.i" />
+    <CustomBuild Include="SimWindow_Window_Default.i" />
   </ItemGroup>
 </Project>

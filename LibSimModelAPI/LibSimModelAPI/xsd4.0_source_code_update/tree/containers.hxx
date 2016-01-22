@@ -260,14 +260,14 @@ namespace xsd
       public:
         ~optional ();
 
-        explicit
+        //explicit
         optional (container* = 0);
 
-        explicit
+        //explicit
         optional (const T&, container* = 0);
 
-        explicit
-        optional (XSD_AUTO_PTR<T>, container* = 0);
+        //explicit
+        //optional (XSD_AUTO_PTR<T>, container* = 0);
 
         optional (const optional&, flags = 0, container* = 0);
 
@@ -333,35 +333,90 @@ namespace xsd
           return *x_;
         }
 
+		/*T
+        getV1 ()
+		{  
+			return "stringV1";
+		}*/
+
+		std::string
+        getV2 ()
+		{
+			return "stringV2";
+		}
+
+		/*T
+        getV3 ()
+		{  
+			return x_->base();
+		}*/
+
+		std::string
+        getV4 ()
+		{  
+			return (std::string)*x_;
+		}
+
+		/*std::string
+        getV5 ()
+		{  
+			return x_->base();
+		}*/
+
+		/*T
+        getV6 ()
+		{  
+			return (std::string)*x_;
+		}*/
+
+		std::string
+        getV7 ()
+		{  
+			return *x_;
+		}
+
+		std::string
+        getValue ()
+        {
+          return *x_;
+        }
+
+
         void
         set (const T& x)
         {
           set (x, 0);
         }
 
-        void
+        ///*
+		void
         set (XSD_AUTO_PTR<T>);
+		//*/
 
         void
         reset ();
 
-        XSD_AUTO_PTR<T>
+        /*XSD_AUTO_PTR<T>
         detach ()
         {
           T* x (x_);
           x->_container (0);
           x_ = 0;
           return XSD_AUTO_PTR<T> (x);
-        }
+        }*/
 
-      public:
-        void
+      //public:
+	  protected:		
+        ///*
+		void
         set (const T&, flags);
+		//*/
 
         void
         true_ ();
 
       public:
+	  //private:
         T* x_;
         container* container_;
       };
@@ -501,9 +556,9 @@ namespace xsd
 			  //return 3;
 			  return (double)x_;
 		  }
-		  else if(std::is_same<T, xml_schema::idref>::value)
+		  else if(std::is_same<T, xml_schema::int_>::value)
 		  {
-			  return x_;
+			  return (double)x_;
 		  }
 
 		  return x_;

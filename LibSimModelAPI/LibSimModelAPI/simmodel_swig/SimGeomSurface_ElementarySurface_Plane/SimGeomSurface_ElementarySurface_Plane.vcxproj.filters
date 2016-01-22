@@ -25,6 +25,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="SimGeomSurface_ElementarySurface_Plane.i" />
+    <CustomBuild Include="SimGeomSurface_ElementarySurface_Plane.i" />
   </ItemGroup>
 </Project>

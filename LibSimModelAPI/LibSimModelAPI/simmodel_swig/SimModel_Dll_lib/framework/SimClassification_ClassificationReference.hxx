@@ -263,7 +263,7 @@ namespace schema
         // Location
         //
         typedef ::xml_schema::string Location_type;
-        typedef ::xsd::cxx::tree::optional< Location_type > Location_optional;
+        typedef ::xsd::cxx::tree::optional< Location_type, false > Location_optional;
         typedef ::xsd::cxx::tree::traits< Location_type, char > Location_traits;
 
         const Location_optional&
@@ -284,7 +284,7 @@ namespace schema
         // ItemReference
         //
         typedef ::xml_schema::string ItemReference_type;
-        typedef ::xsd::cxx::tree::optional< ItemReference_type > ItemReference_optional;
+        typedef ::xsd::cxx::tree::optional< ItemReference_type, false > ItemReference_optional;
         typedef ::xsd::cxx::tree::traits< ItemReference_type, char > ItemReference_traits;
 
         const ItemReference_optional&
@@ -305,7 +305,7 @@ namespace schema
         // ReferencedSource
         //
         typedef ::xml_schema::idref ReferencedSource_type;
-        typedef ::xsd::cxx::tree::optional< ReferencedSource_type > ReferencedSource_optional;
+        typedef ::xsd::cxx::tree::optional< ReferencedSource_type, false > ReferencedSource_optional;
         typedef ::xsd::cxx::tree::traits< ReferencedSource_type, char > ReferencedSource_traits;
 
         const ReferencedSource_optional&

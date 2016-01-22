@@ -263,7 +263,7 @@ namespace schema
         // Bound
         //
         typedef ::xml_schema::idref Bound_type;
-        typedef ::xsd::cxx::tree::optional< Bound_type > Bound_optional;
+        typedef ::xsd::cxx::tree::optional< Bound_type, false > Bound_optional;
         typedef ::xsd::cxx::tree::traits< Bound_type, char > Bound_traits;
 
         const Bound_optional&

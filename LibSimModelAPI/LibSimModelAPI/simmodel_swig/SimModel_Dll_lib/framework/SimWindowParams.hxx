@@ -263,7 +263,7 @@ namespace schema
         // WindowType
         //
         typedef ::xml_schema::idref WindowType_type;
-        typedef ::xsd::cxx::tree::optional< WindowType_type > WindowType_optional;
+        typedef ::xsd::cxx::tree::optional< WindowType_type, false > WindowType_optional;
         typedef ::xsd::cxx::tree::traits< WindowType_type, char > WindowType_traits;
 
         const WindowType_optional&
@@ -284,7 +284,7 @@ namespace schema
         // TemplateLibEntryOrMLS
         //
         typedef ::xml_schema::idref TemplateLibEntryOrMLS_type;
-        typedef ::xsd::cxx::tree::optional< TemplateLibEntryOrMLS_type > TemplateLibEntryOrMLS_optional;
+        typedef ::xsd::cxx::tree::optional< TemplateLibEntryOrMLS_type, false > TemplateLibEntryOrMLS_optional;
         typedef ::xsd::cxx::tree::traits< TemplateLibEntryOrMLS_type, char > TemplateLibEntryOrMLS_traits;
 
         const TemplateLibEntryOrMLS_optional&
@@ -305,7 +305,7 @@ namespace schema
         // WinTopElevation
         //
         typedef ::xml_schema::double_ WinTopElevation_type;
-        typedef ::xsd::cxx::tree::optional< WinTopElevation_type > WinTopElevation_optional;
+        typedef ::xsd::cxx::tree::optional< WinTopElevation_type, true > WinTopElevation_optional;
         typedef ::xsd::cxx::tree::traits< WinTopElevation_type, char, ::xsd::cxx::tree::schema_type::double_ > WinTopElevation_traits;
 
         const WinTopElevation_optional&
@@ -323,7 +323,7 @@ namespace schema
         // WinHeight
         //
         typedef ::xml_schema::double_ WinHeight_type;
-        typedef ::xsd::cxx::tree::optional< WinHeight_type > WinHeight_optional;
+        typedef ::xsd::cxx::tree::optional< WinHeight_type, true > WinHeight_optional;
         typedef ::xsd::cxx::tree::traits< WinHeight_type, char, ::xsd::cxx::tree::schema_type::double_ > WinHeight_traits;
 
         const WinHeight_optional&
@@ -341,7 +341,7 @@ namespace schema
         // WinWidth
         //
         typedef ::xml_schema::double_ WinWidth_type;
-        typedef ::xsd::cxx::tree::optional< WinWidth_type > WinWidth_optional;
+        typedef ::xsd::cxx::tree::optional< WinWidth_type, true > WinWidth_optional;
         typedef ::xsd::cxx::tree::traits< WinWidth_type, char, ::xsd::cxx::tree::schema_type::double_ > WinWidth_traits;
 
         const WinWidth_optional&
@@ -359,7 +359,7 @@ namespace schema
         // GlassThickness
         //
         typedef ::xml_schema::double_ GlassThickness_type;
-        typedef ::xsd::cxx::tree::optional< GlassThickness_type > GlassThickness_optional;
+        typedef ::xsd::cxx::tree::optional< GlassThickness_type, true > GlassThickness_optional;
         typedef ::xsd::cxx::tree::traits< GlassThickness_type, char, ::xsd::cxx::tree::schema_type::double_ > GlassThickness_traits;
 
         const GlassThickness_optional&
@@ -377,7 +377,7 @@ namespace schema
         // FrameThickness
         //
         typedef ::xml_schema::double_ FrameThickness_type;
-        typedef ::xsd::cxx::tree::optional< FrameThickness_type > FrameThickness_optional;
+        typedef ::xsd::cxx::tree::optional< FrameThickness_type, true > FrameThickness_optional;
         typedef ::xsd::cxx::tree::traits< FrameThickness_type, char, ::xsd::cxx::tree::schema_type::double_ > FrameThickness_traits;
 
         const FrameThickness_optional&
@@ -395,7 +395,7 @@ namespace schema
         // FrameDepth
         //
         typedef ::xml_schema::double_ FrameDepth_type;
-        typedef ::xsd::cxx::tree::optional< FrameDepth_type > FrameDepth_optional;
+        typedef ::xsd::cxx::tree::optional< FrameDepth_type, true > FrameDepth_optional;
         typedef ::xsd::cxx::tree::traits< FrameDepth_type, char, ::xsd::cxx::tree::schema_type::double_ > FrameDepth_traits;
 
         const FrameDepth_optional&
@@ -455,7 +455,7 @@ namespace schema
         // OpeningProfilePath
         //
         typedef ::xml_schema::idref OpeningProfilePath_type;
-        typedef ::xsd::cxx::tree::optional< OpeningProfilePath_type > OpeningProfilePath_optional;
+        typedef ::xsd::cxx::tree::optional< OpeningProfilePath_type, false > OpeningProfilePath_optional;
         typedef ::xsd::cxx::tree::traits< OpeningProfilePath_type, char > OpeningProfilePath_traits;
 
         const OpeningProfilePath_optional&

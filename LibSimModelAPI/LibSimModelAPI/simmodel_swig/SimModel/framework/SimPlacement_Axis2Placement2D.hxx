@@ -263,7 +263,7 @@ namespace schema
         // RefDirection
         //
         typedef ::xml_schema::idref RefDirection_type;
-        typedef ::xsd::cxx::tree::optional< RefDirection_type > RefDirection_optional;
+        typedef ::xsd::cxx::tree::optional< RefDirection_type, false > RefDirection_optional;
         typedef ::xsd::cxx::tree::traits< RefDirection_type, char > RefDirection_traits;
 
         const RefDirection_optional&

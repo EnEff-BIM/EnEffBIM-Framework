@@ -284,7 +284,7 @@ namespace schema
         // Tag
         //
         typedef ::xml_schema::string Tag_type;
-        typedef ::xsd::cxx::tree::optional< Tag_type > Tag_optional;
+        typedef ::xsd::cxx::tree::optional< Tag_type, false > Tag_optional;
         typedef ::xsd::cxx::tree::traits< Tag_type, char > Tag_traits;
 
         const Tag_optional&
@@ -305,7 +305,7 @@ namespace schema
         // ElementType
         //
         typedef ::xml_schema::string ElementType_type;
-        typedef ::xsd::cxx::tree::optional< ElementType_type > ElementType_optional;
+        typedef ::xsd::cxx::tree::optional< ElementType_type, false > ElementType_optional;
         typedef ::xsd::cxx::tree::traits< ElementType_type, char > ElementType_traits;
 
         const ElementType_optional&
@@ -326,7 +326,7 @@ namespace schema
         // PredefinedType
         //
         typedef ::xml_schema::string PredefinedType_type;
-        typedef ::xsd::cxx::tree::optional< PredefinedType_type > PredefinedType_optional;
+        typedef ::xsd::cxx::tree::optional< PredefinedType_type, false > PredefinedType_optional;
         typedef ::xsd::cxx::tree::traits< PredefinedType_type, char > PredefinedType_traits;
 
         const PredefinedType_optional&

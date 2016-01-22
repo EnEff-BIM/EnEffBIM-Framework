@@ -263,7 +263,7 @@ namespace schema
         // WindowTypeDef
         //
         typedef ::xml_schema::idref WindowTypeDef_type;
-        typedef ::xsd::cxx::tree::optional< WindowTypeDef_type > WindowTypeDef_optional;
+        typedef ::xsd::cxx::tree::optional< WindowTypeDef_type, false > WindowTypeDef_optional;
         typedef ::xsd::cxx::tree::traits< WindowTypeDef_type, char > WindowTypeDef_traits;
 
         const WindowTypeDef_optional&
@@ -284,7 +284,7 @@ namespace schema
         // GlazingLayerSet
         //
         typedef ::xml_schema::idref GlazingLayerSet_type;
-        typedef ::xsd::cxx::tree::optional< GlazingLayerSet_type > GlazingLayerSet_optional;
+        typedef ::xsd::cxx::tree::optional< GlazingLayerSet_type, false > GlazingLayerSet_optional;
         typedef ::xsd::cxx::tree::traits< GlazingLayerSet_type, char > GlazingLayerSet_traits;
 
         const GlazingLayerSet_optional&
@@ -305,7 +305,7 @@ namespace schema
         // WindowOpeningProfilePath
         //
         typedef ::xml_schema::idref WindowOpeningProfilePath_type;
-        typedef ::xsd::cxx::tree::optional< WindowOpeningProfilePath_type > WindowOpeningProfilePath_optional;
+        typedef ::xsd::cxx::tree::optional< WindowOpeningProfilePath_type, false > WindowOpeningProfilePath_optional;
         typedef ::xsd::cxx::tree::traits< WindowOpeningProfilePath_type, char > WindowOpeningProfilePath_traits;
 
         const WindowOpeningProfilePath_optional&
@@ -326,7 +326,7 @@ namespace schema
         // ArrayLeftOffset
         //
         typedef ::xml_schema::double_ ArrayLeftOffset_type;
-        typedef ::xsd::cxx::tree::optional< ArrayLeftOffset_type > ArrayLeftOffset_optional;
+        typedef ::xsd::cxx::tree::optional< ArrayLeftOffset_type, true > ArrayLeftOffset_optional;
         typedef ::xsd::cxx::tree::traits< ArrayLeftOffset_type, char, ::xsd::cxx::tree::schema_type::double_ > ArrayLeftOffset_traits;
 
         const ArrayLeftOffset_optional&
@@ -344,7 +344,7 @@ namespace schema
         // ArrayRightOffset
         //
         typedef ::xml_schema::double_ ArrayRightOffset_type;
-        typedef ::xsd::cxx::tree::optional< ArrayRightOffset_type > ArrayRightOffset_optional;
+        typedef ::xsd::cxx::tree::optional< ArrayRightOffset_type, true > ArrayRightOffset_optional;
         typedef ::xsd::cxx::tree::traits< ArrayRightOffset_type, char, ::xsd::cxx::tree::schema_type::double_ > ArrayRightOffset_traits;
 
         const ArrayRightOffset_optional&
@@ -362,7 +362,7 @@ namespace schema
         // ArrayWinWallRatio
         //
         typedef ::xml_schema::double_ ArrayWinWallRatio_type;
-        typedef ::xsd::cxx::tree::optional< ArrayWinWallRatio_type > ArrayWinWallRatio_optional;
+        typedef ::xsd::cxx::tree::optional< ArrayWinWallRatio_type, true > ArrayWinWallRatio_optional;
         typedef ::xsd::cxx::tree::traits< ArrayWinWallRatio_type, char, ::xsd::cxx::tree::schema_type::double_ > ArrayWinWallRatio_traits;
 
         const ArrayWinWallRatio_optional&

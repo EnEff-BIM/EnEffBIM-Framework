@@ -25,6 +25,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="SimGeomHalfSpaceSolidHalfSpaceSolidPolygonalBoundedHalfSpa.i" />
+    <CustomBuild Include="SimGeomHalfSpaceSolidHalfSpaceSolidPolygonalBoundedHalfSpa.i" />
   </ItemGroup>
 </Project>

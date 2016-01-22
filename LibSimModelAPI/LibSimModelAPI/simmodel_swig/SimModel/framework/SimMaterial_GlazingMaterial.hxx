@@ -274,7 +274,7 @@ namespace schema
         // SimMaterial_Name
         //
         typedef ::xml_schema::string SimMaterial_Name_type;
-        typedef ::xsd::cxx::tree::optional< SimMaterial_Name_type > SimMaterial_Name_optional;
+        typedef ::xsd::cxx::tree::optional< SimMaterial_Name_type, false > SimMaterial_Name_optional;
         typedef ::xsd::cxx::tree::traits< SimMaterial_Name_type, char > SimMaterial_Name_traits;
 
         const SimMaterial_Name_optional&
@@ -295,7 +295,7 @@ namespace schema
         // MatProp_MoistPeneDepth_Settings_Name
         //
         typedef ::xml_schema::idref MatProp_MoistPeneDepth_Settings_Name_type;
-        typedef ::xsd::cxx::tree::optional< MatProp_MoistPeneDepth_Settings_Name_type > MatProp_MoistPeneDepth_Settings_Name_optional;
+        typedef ::xsd::cxx::tree::optional< MatProp_MoistPeneDepth_Settings_Name_type, false > MatProp_MoistPeneDepth_Settings_Name_optional;
         typedef ::xsd::cxx::tree::traits< MatProp_MoistPeneDepth_Settings_Name_type, char > MatProp_MoistPeneDepth_Settings_Name_traits;
 
         const MatProp_MoistPeneDepth_Settings_Name_optional&
@@ -316,7 +316,7 @@ namespace schema
         // MatProp_MoistPeneDepth_Settings_MoistPenetrationDepth
         //
         typedef ::xml_schema::double_ MatProp_MoistPeneDepth_Settings_MoistPenetrationDepth_type;
-        typedef ::xsd::cxx::tree::optional< MatProp_MoistPeneDepth_Settings_MoistPenetrationDepth_type > MatProp_MoistPeneDepth_Settings_MoistPenetrationDepth_optional;
+        typedef ::xsd::cxx::tree::optional< MatProp_MoistPeneDepth_Settings_MoistPenetrationDepth_type, true > MatProp_MoistPeneDepth_Settings_MoistPenetrationDepth_optional;
         typedef ::xsd::cxx::tree::traits< MatProp_MoistPeneDepth_Settings_MoistPenetrationDepth_type, char, ::xsd::cxx::tree::schema_type::double_ > MatProp_MoistPeneDepth_Settings_MoistPenetrationDepth_traits;
 
         const MatProp_MoistPeneDepth_Settings_MoistPenetrationDepth_optional&
@@ -334,7 +334,7 @@ namespace schema
         // MatProp_MoistPeneDepth_Settings_MoistEquaCoefA
         //
         typedef ::xml_schema::double_ MatProp_MoistPeneDepth_Settings_MoistEquaCoefA_type;
-        typedef ::xsd::cxx::tree::optional< MatProp_MoistPeneDepth_Settings_MoistEquaCoefA_type > MatProp_MoistPeneDepth_Settings_MoistEquaCoefA_optional;
+        typedef ::xsd::cxx::tree::optional< MatProp_MoistPeneDepth_Settings_MoistEquaCoefA_type, true > MatProp_MoistPeneDepth_Settings_MoistEquaCoefA_optional;
         typedef ::xsd::cxx::tree::traits< MatProp_MoistPeneDepth_Settings_MoistEquaCoefA_type, char, ::xsd::cxx::tree::schema_type::double_ > MatProp_MoistPeneDepth_Settings_MoistEquaCoefA_traits;
 
         const MatProp_MoistPeneDepth_Settings_MoistEquaCoefA_optional&
@@ -352,7 +352,7 @@ namespace schema
         // MatProp_MoistPeneDepth_Settings_MoistEquaCoefB
         //
         typedef ::xml_schema::double_ MatProp_MoistPeneDepth_Settings_MoistEquaCoefB_type;
-        typedef ::xsd::cxx::tree::optional< MatProp_MoistPeneDepth_Settings_MoistEquaCoefB_type > MatProp_MoistPeneDepth_Settings_MoistEquaCoefB_optional;
+        typedef ::xsd::cxx::tree::optional< MatProp_MoistPeneDepth_Settings_MoistEquaCoefB_type, true > MatProp_MoistPeneDepth_Settings_MoistEquaCoefB_optional;
         typedef ::xsd::cxx::tree::traits< MatProp_MoistPeneDepth_Settings_MoistEquaCoefB_type, char, ::xsd::cxx::tree::schema_type::double_ > MatProp_MoistPeneDepth_Settings_MoistEquaCoefB_traits;
 
         const MatProp_MoistPeneDepth_Settings_MoistEquaCoefB_optional&
@@ -370,7 +370,7 @@ namespace schema
         // MatProp_MoistPeneDepth_Settings_MoistEquaCoefC
         //
         typedef ::xml_schema::double_ MatProp_MoistPeneDepth_Settings_MoistEquaCoefC_type;
-        typedef ::xsd::cxx::tree::optional< MatProp_MoistPeneDepth_Settings_MoistEquaCoefC_type > MatProp_MoistPeneDepth_Settings_MoistEquaCoefC_optional;
+        typedef ::xsd::cxx::tree::optional< MatProp_MoistPeneDepth_Settings_MoistEquaCoefC_type, true > MatProp_MoistPeneDepth_Settings_MoistEquaCoefC_optional;
         typedef ::xsd::cxx::tree::traits< MatProp_MoistPeneDepth_Settings_MoistEquaCoefC_type, char, ::xsd::cxx::tree::schema_type::double_ > MatProp_MoistPeneDepth_Settings_MoistEquaCoefC_traits;
 
         const MatProp_MoistPeneDepth_Settings_MoistEquaCoefC_optional&
@@ -388,7 +388,7 @@ namespace schema
         // MatProp_MoistPeneDepth_Settings_MoistEquaCoefD
         //
         typedef ::xml_schema::double_ MatProp_MoistPeneDepth_Settings_MoistEquaCoefD_type;
-        typedef ::xsd::cxx::tree::optional< MatProp_MoistPeneDepth_Settings_MoistEquaCoefD_type > MatProp_MoistPeneDepth_Settings_MoistEquaCoefD_optional;
+        typedef ::xsd::cxx::tree::optional< MatProp_MoistPeneDepth_Settings_MoistEquaCoefD_type, true > MatProp_MoistPeneDepth_Settings_MoistEquaCoefD_optional;
         typedef ::xsd::cxx::tree::traits< MatProp_MoistPeneDepth_Settings_MoistEquaCoefD_type, char, ::xsd::cxx::tree::schema_type::double_ > MatProp_MoistPeneDepth_Settings_MoistEquaCoefD_traits;
 
         const MatProp_MoistPeneDepth_Settings_MoistEquaCoefD_optional&
@@ -406,7 +406,7 @@ namespace schema
         // MatProp_PhaseChange_Name
         //
         typedef ::xml_schema::idref MatProp_PhaseChange_Name_type;
-        typedef ::xsd::cxx::tree::optional< MatProp_PhaseChange_Name_type > MatProp_PhaseChange_Name_optional;
+        typedef ::xsd::cxx::tree::optional< MatProp_PhaseChange_Name_type, false > MatProp_PhaseChange_Name_optional;
         typedef ::xsd::cxx::tree::traits< MatProp_PhaseChange_Name_type, char > MatProp_PhaseChange_Name_traits;
 
         const MatProp_PhaseChange_Name_optional&
@@ -427,7 +427,7 @@ namespace schema
         // MatProp_PhaseChange_TempCoefForThermalCond
         //
         typedef ::xml_schema::double_ MatProp_PhaseChange_TempCoefForThermalCond_type;
-        typedef ::xsd::cxx::tree::optional< MatProp_PhaseChange_TempCoefForThermalCond_type > MatProp_PhaseChange_TempCoefForThermalCond_optional;
+        typedef ::xsd::cxx::tree::optional< MatProp_PhaseChange_TempCoefForThermalCond_type, true > MatProp_PhaseChange_TempCoefForThermalCond_optional;
         typedef ::xsd::cxx::tree::traits< MatProp_PhaseChange_TempCoefForThermalCond_type, char, ::xsd::cxx::tree::schema_type::double_ > MatProp_PhaseChange_TempCoefForThermalCond_traits;
 
         const MatProp_PhaseChange_TempCoefForThermalCond_optional&
@@ -487,7 +487,7 @@ namespace schema
         // MatProp_VarThermCond_Name
         //
         typedef ::xml_schema::idref MatProp_VarThermCond_Name_type;
-        typedef ::xsd::cxx::tree::optional< MatProp_VarThermCond_Name_type > MatProp_VarThermCond_Name_optional;
+        typedef ::xsd::cxx::tree::optional< MatProp_VarThermCond_Name_type, false > MatProp_VarThermCond_Name_optional;
         typedef ::xsd::cxx::tree::traits< MatProp_VarThermCond_Name_type, char > MatProp_VarThermCond_Name_traits;
 
         const MatProp_VarThermCond_Name_optional&
@@ -550,7 +550,7 @@ namespace schema
         // MatProp_Heat_MoistTrans_Settings_MaterialName
         //
         typedef ::xml_schema::idref MatProp_Heat_MoistTrans_Settings_MaterialName_type;
-        typedef ::xsd::cxx::tree::optional< MatProp_Heat_MoistTrans_Settings_MaterialName_type > MatProp_Heat_MoistTrans_Settings_MaterialName_optional;
+        typedef ::xsd::cxx::tree::optional< MatProp_Heat_MoistTrans_Settings_MaterialName_type, false > MatProp_Heat_MoistTrans_Settings_MaterialName_optional;
         typedef ::xsd::cxx::tree::traits< MatProp_Heat_MoistTrans_Settings_MaterialName_type, char > MatProp_Heat_MoistTrans_Settings_MaterialName_traits;
 
         const MatProp_Heat_MoistTrans_Settings_MaterialName_optional&
@@ -571,7 +571,7 @@ namespace schema
         // MatProp_Heat_MoistTrans_Settings_Porosity
         //
         typedef ::xml_schema::double_ MatProp_Heat_MoistTrans_Settings_Porosity_type;
-        typedef ::xsd::cxx::tree::optional< MatProp_Heat_MoistTrans_Settings_Porosity_type > MatProp_Heat_MoistTrans_Settings_Porosity_optional;
+        typedef ::xsd::cxx::tree::optional< MatProp_Heat_MoistTrans_Settings_Porosity_type, true > MatProp_Heat_MoistTrans_Settings_Porosity_optional;
         typedef ::xsd::cxx::tree::traits< MatProp_Heat_MoistTrans_Settings_Porosity_type, char, ::xsd::cxx::tree::schema_type::double_ > MatProp_Heat_MoistTrans_Settings_Porosity_traits;
 
         const MatProp_Heat_MoistTrans_Settings_Porosity_optional&
@@ -589,7 +589,7 @@ namespace schema
         // MatProp_Heat_MoistTrans_Settings_InitWaterContRatio
         //
         typedef ::xml_schema::double_ MatProp_Heat_MoistTrans_Settings_InitWaterContRatio_type;
-        typedef ::xsd::cxx::tree::optional< MatProp_Heat_MoistTrans_Settings_InitWaterContRatio_type > MatProp_Heat_MoistTrans_Settings_InitWaterContRatio_optional;
+        typedef ::xsd::cxx::tree::optional< MatProp_Heat_MoistTrans_Settings_InitWaterContRatio_type, true > MatProp_Heat_MoistTrans_Settings_InitWaterContRatio_optional;
         typedef ::xsd::cxx::tree::traits< MatProp_Heat_MoistTrans_Settings_InitWaterContRatio_type, char, ::xsd::cxx::tree::schema_type::double_ > MatProp_Heat_MoistTrans_Settings_InitWaterContRatio_traits;
 
         const MatProp_Heat_MoistTrans_Settings_InitWaterContRatio_optional&
@@ -607,7 +607,7 @@ namespace schema
         // MatProp_Heat_MoistTrans_SorpIsothm_MaterialName
         //
         typedef ::xml_schema::idref MatProp_Heat_MoistTrans_SorpIsothm_MaterialName_type;
-        typedef ::xsd::cxx::tree::optional< MatProp_Heat_MoistTrans_SorpIsothm_MaterialName_type > MatProp_Heat_MoistTrans_SorpIsothm_MaterialName_optional;
+        typedef ::xsd::cxx::tree::optional< MatProp_Heat_MoistTrans_SorpIsothm_MaterialName_type, false > MatProp_Heat_MoistTrans_SorpIsothm_MaterialName_optional;
         typedef ::xsd::cxx::tree::traits< MatProp_Heat_MoistTrans_SorpIsothm_MaterialName_type, char > MatProp_Heat_MoistTrans_SorpIsothm_MaterialName_traits;
 
         const MatProp_Heat_MoistTrans_SorpIsothm_MaterialName_optional&
@@ -628,7 +628,7 @@ namespace schema
         // MatProp_Heat_MoistTrans_SorpIsothm_NumothermCoords
         //
         typedef ::xml_schema::int_ MatProp_Heat_MoistTrans_SorpIsothm_NumothermCoords_type;
-        typedef ::xsd::cxx::tree::optional< MatProp_Heat_MoistTrans_SorpIsothm_NumothermCoords_type > MatProp_Heat_MoistTrans_SorpIsothm_NumothermCoords_optional;
+        typedef ::xsd::cxx::tree::optional< MatProp_Heat_MoistTrans_SorpIsothm_NumothermCoords_type, true > MatProp_Heat_MoistTrans_SorpIsothm_NumothermCoords_optional;
         typedef ::xsd::cxx::tree::traits< MatProp_Heat_MoistTrans_SorpIsothm_NumothermCoords_type, char > MatProp_Heat_MoistTrans_SorpIsothm_NumothermCoords_traits;
 
         const MatProp_Heat_MoistTrans_SorpIsothm_NumothermCoords_optional&
@@ -688,7 +688,7 @@ namespace schema
         // MatProp_Heat_MoistTrans_Suction_MaterialName
         //
         typedef ::xml_schema::idref MatProp_Heat_MoistTrans_Suction_MaterialName_type;
-        typedef ::xsd::cxx::tree::optional< MatProp_Heat_MoistTrans_Suction_MaterialName_type > MatProp_Heat_MoistTrans_Suction_MaterialName_optional;
+        typedef ::xsd::cxx::tree::optional< MatProp_Heat_MoistTrans_Suction_MaterialName_type, false > MatProp_Heat_MoistTrans_Suction_MaterialName_optional;
         typedef ::xsd::cxx::tree::traits< MatProp_Heat_MoistTrans_Suction_MaterialName_type, char > MatProp_Heat_MoistTrans_Suction_MaterialName_traits;
 
         const MatProp_Heat_MoistTrans_Suction_MaterialName_optional&
@@ -709,7 +709,7 @@ namespace schema
         // MatProp_Heat_MoistTrans_Suction_NumSuctionPoints
         //
         typedef ::xml_schema::int_ MatProp_Heat_MoistTrans_Suction_NumSuctionPoints_type;
-        typedef ::xsd::cxx::tree::optional< MatProp_Heat_MoistTrans_Suction_NumSuctionPoints_type > MatProp_Heat_MoistTrans_Suction_NumSuctionPoints_optional;
+        typedef ::xsd::cxx::tree::optional< MatProp_Heat_MoistTrans_Suction_NumSuctionPoints_type, true > MatProp_Heat_MoistTrans_Suction_NumSuctionPoints_optional;
         typedef ::xsd::cxx::tree::traits< MatProp_Heat_MoistTrans_Suction_NumSuctionPoints_type, char > MatProp_Heat_MoistTrans_Suction_NumSuctionPoints_traits;
 
         const MatProp_Heat_MoistTrans_Suction_NumSuctionPoints_optional&
@@ -769,7 +769,7 @@ namespace schema
         // MatProp_Heat_MoistTrans_ReDistrib_MaterialName
         //
         typedef ::xml_schema::idref MatProp_Heat_MoistTrans_ReDistrib_MaterialName_type;
-        typedef ::xsd::cxx::tree::optional< MatProp_Heat_MoistTrans_ReDistrib_MaterialName_type > MatProp_Heat_MoistTrans_ReDistrib_MaterialName_optional;
+        typedef ::xsd::cxx::tree::optional< MatProp_Heat_MoistTrans_ReDistrib_MaterialName_type, false > MatProp_Heat_MoistTrans_ReDistrib_MaterialName_optional;
         typedef ::xsd::cxx::tree::traits< MatProp_Heat_MoistTrans_ReDistrib_MaterialName_type, char > MatProp_Heat_MoistTrans_ReDistrib_MaterialName_traits;
 
         const MatProp_Heat_MoistTrans_ReDistrib_MaterialName_optional&
@@ -790,7 +790,7 @@ namespace schema
         // MatProp_Heat_MoistTrans_ReDistrib_NumReDistPoints
         //
         typedef ::xml_schema::int_ MatProp_Heat_MoistTrans_ReDistrib_NumReDistPoints_type;
-        typedef ::xsd::cxx::tree::optional< MatProp_Heat_MoistTrans_ReDistrib_NumReDistPoints_type > MatProp_Heat_MoistTrans_ReDistrib_NumReDistPoints_optional;
+        typedef ::xsd::cxx::tree::optional< MatProp_Heat_MoistTrans_ReDistrib_NumReDistPoints_type, true > MatProp_Heat_MoistTrans_ReDistrib_NumReDistPoints_optional;
         typedef ::xsd::cxx::tree::traits< MatProp_Heat_MoistTrans_ReDistrib_NumReDistPoints_type, char > MatProp_Heat_MoistTrans_ReDistrib_NumReDistPoints_traits;
 
         const MatProp_Heat_MoistTrans_ReDistrib_NumReDistPoints_optional&
@@ -850,7 +850,7 @@ namespace schema
         // MatProp_Heat_MoistTrans_Diffusion_MaterialName
         //
         typedef ::xml_schema::idref MatProp_Heat_MoistTrans_Diffusion_MaterialName_type;
-        typedef ::xsd::cxx::tree::optional< MatProp_Heat_MoistTrans_Diffusion_MaterialName_type > MatProp_Heat_MoistTrans_Diffusion_MaterialName_optional;
+        typedef ::xsd::cxx::tree::optional< MatProp_Heat_MoistTrans_Diffusion_MaterialName_type, false > MatProp_Heat_MoistTrans_Diffusion_MaterialName_optional;
         typedef ::xsd::cxx::tree::traits< MatProp_Heat_MoistTrans_Diffusion_MaterialName_type, char > MatProp_Heat_MoistTrans_Diffusion_MaterialName_traits;
 
         const MatProp_Heat_MoistTrans_Diffusion_MaterialName_optional&
@@ -871,7 +871,7 @@ namespace schema
         // MatProp_Heat_MoistTrans_Diffusion_NumDataPairs
         //
         typedef ::xml_schema::int_ MatProp_Heat_MoistTrans_Diffusion_NumDataPairs_type;
-        typedef ::xsd::cxx::tree::optional< MatProp_Heat_MoistTrans_Diffusion_NumDataPairs_type > MatProp_Heat_MoistTrans_Diffusion_NumDataPairs_optional;
+        typedef ::xsd::cxx::tree::optional< MatProp_Heat_MoistTrans_Diffusion_NumDataPairs_type, true > MatProp_Heat_MoistTrans_Diffusion_NumDataPairs_optional;
         typedef ::xsd::cxx::tree::traits< MatProp_Heat_MoistTrans_Diffusion_NumDataPairs_type, char > MatProp_Heat_MoistTrans_Diffusion_NumDataPairs_traits;
 
         const MatProp_Heat_MoistTrans_Diffusion_NumDataPairs_optional&
@@ -931,7 +931,7 @@ namespace schema
         // MatProp_Heat_MoistTrans_ThermCond_MaterialName
         //
         typedef ::xml_schema::idref MatProp_Heat_MoistTrans_ThermCond_MaterialName_type;
-        typedef ::xsd::cxx::tree::optional< MatProp_Heat_MoistTrans_ThermCond_MaterialName_type > MatProp_Heat_MoistTrans_ThermCond_MaterialName_optional;
+        typedef ::xsd::cxx::tree::optional< MatProp_Heat_MoistTrans_ThermCond_MaterialName_type, false > MatProp_Heat_MoistTrans_ThermCond_MaterialName_optional;
         typedef ::xsd::cxx::tree::traits< MatProp_Heat_MoistTrans_ThermCond_MaterialName_type, char > MatProp_Heat_MoistTrans_ThermCond_MaterialName_traits;
 
         const MatProp_Heat_MoistTrans_ThermCond_MaterialName_optional&
@@ -952,7 +952,7 @@ namespace schema
         // MatProp_Heat_MoistTrans_ThermCond_NumThermalCoords
         //
         typedef ::xml_schema::int_ MatProp_Heat_MoistTrans_ThermCond_NumThermalCoords_type;
-        typedef ::xsd::cxx::tree::optional< MatProp_Heat_MoistTrans_ThermCond_NumThermalCoords_type > MatProp_Heat_MoistTrans_ThermCond_NumThermalCoords_optional;
+        typedef ::xsd::cxx::tree::optional< MatProp_Heat_MoistTrans_ThermCond_NumThermalCoords_type, true > MatProp_Heat_MoistTrans_ThermCond_NumThermalCoords_optional;
         typedef ::xsd::cxx::tree::traits< MatProp_Heat_MoistTrans_ThermCond_NumThermalCoords_type, char > MatProp_Heat_MoistTrans_ThermCond_NumThermalCoords_traits;
 
         const MatProp_Heat_MoistTrans_ThermCond_NumThermalCoords_optional&

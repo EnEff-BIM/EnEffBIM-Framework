@@ -263,7 +263,7 @@ namespace schema
         // ApplicableOccurrence
         //
         typedef ::xml_schema::string ApplicableOccurrence_type;
-        typedef ::xsd::cxx::tree::optional< ApplicableOccurrence_type > ApplicableOccurrence_optional;
+        typedef ::xsd::cxx::tree::optional< ApplicableOccurrence_type, false > ApplicableOccurrence_optional;
         typedef ::xsd::cxx::tree::traits< ApplicableOccurrence_type, char > ApplicableOccurrence_traits;
 
         const ApplicableOccurrence_optional&
@@ -305,7 +305,7 @@ namespace schema
         // TypeDefCreationParams
         //
         typedef ::xml_schema::idref TypeDefCreationParams_type;
-        typedef ::xsd::cxx::tree::optional< TypeDefCreationParams_type > TypeDefCreationParams_optional;
+        typedef ::xsd::cxx::tree::optional< TypeDefCreationParams_type, false > TypeDefCreationParams_optional;
         typedef ::xsd::cxx::tree::traits< TypeDefCreationParams_type, char > TypeDefCreationParams_traits;
 
         const TypeDefCreationParams_optional&
@@ -326,7 +326,7 @@ namespace schema
         // PlacementRelToContainingTypeDef
         //
         typedef ::xml_schema::idref PlacementRelToContainingTypeDef_type;
-        typedef ::xsd::cxx::tree::optional< PlacementRelToContainingTypeDef_type > PlacementRelToContainingTypeDef_optional;
+        typedef ::xsd::cxx::tree::optional< PlacementRelToContainingTypeDef_type, false > PlacementRelToContainingTypeDef_optional;
         typedef ::xsd::cxx::tree::traits< PlacementRelToContainingTypeDef_type, char > PlacementRelToContainingTypeDef_traits;
 
         const PlacementRelToContainingTypeDef_optional&

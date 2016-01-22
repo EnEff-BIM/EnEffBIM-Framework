@@ -3764,81 +3764,83 @@ namespace Swig {
 #define SWIGTYPE_p_schema__simxml__SimModelCore__SimSpatialStructureElement swig_types[349]
 #define SWIGTYPE_p_schema__simxml__SimModelCore__SimTemplate swig_types[350]
 #define SWIGTYPE_p_schema__simxml__SimModelCore__SimTopologicalRepresentationItem swig_types[351]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__integerList swig_types[352]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__logical swig_types[353]
-#define SWIGTYPE_p_short swig_types[354]
-#define SWIGTYPE_p_signed_char swig_types[355]
-#define SWIGTYPE_p_size_type swig_types[356]
-#define SWIGTYPE_p_std__auto_ptrT_T_t swig_types[357]
-#define SWIGTYPE_p_std__auto_ptrT_schema__simxml__ResourcesGeneral__SimBldgStoryParams_BuildingStory_Default_t swig_types[358]
-#define SWIGTYPE_p_std__auto_ptrT_xml_schema__idref_t swig_types[359]
-#define SWIGTYPE_p_std__auto_ptrT_xml_schema__idrefs_t swig_types[360]
-#define SWIGTYPE_p_std__auto_ptrT_xml_schema__string_t swig_types[361]
-#define SWIGTYPE_p_std__vectorT_xsd__cxx__tree__sequence_common__ptr_std__allocatorT_xsd__cxx__tree__sequence_common__ptr_t_t__size_type swig_types[362]
-#define SWIGTYPE_p_unsigned_char swig_types[363]
-#define SWIGTYPE_p_unsigned_int swig_types[364]
-#define SWIGTYPE_p_unsigned_long_long swig_types[365]
-#define SWIGTYPE_p_unsigned_short swig_types[366]
-#define SWIGTYPE_p_value_type swig_types[367]
-#define SWIGTYPE_p_xercesc__DOMElement swig_types[368]
-#define SWIGTYPE_p_xsd__cxx__tree___type swig_types[369]
-#define SWIGTYPE_p_xsd__cxx__tree__base64_binaryT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[370]
-#define SWIGTYPE_p_xsd__cxx__tree__boundsT_char_t swig_types[371]
-#define SWIGTYPE_p_xsd__cxx__tree__bufferT_char_t swig_types[372]
-#define SWIGTYPE_p_xsd__cxx__tree__content_order swig_types[373]
-#define SWIGTYPE_p_xsd__cxx__tree__dateT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[374]
-#define SWIGTYPE_p_xsd__cxx__tree__date_timeT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[375]
-#define SWIGTYPE_p_xsd__cxx__tree__diagnosticsT_char_t swig_types[376]
-#define SWIGTYPE_p_xsd__cxx__tree__duplicate_idT_char_t swig_types[377]
-#define SWIGTYPE_p_xsd__cxx__tree__durationT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[378]
-#define SWIGTYPE_p_xsd__cxx__tree__entitiesT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__entityT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t_t swig_types[379]
-#define SWIGTYPE_p_xsd__cxx__tree__entityT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t swig_types[380]
-#define SWIGTYPE_p_xsd__cxx__tree__errorT_char_t swig_types[381]
-#define SWIGTYPE_p_xsd__cxx__tree__exceptionT_char_t swig_types[382]
-#define SWIGTYPE_p_xsd__cxx__tree__expected_attributeT_char_t swig_types[383]
-#define SWIGTYPE_p_xsd__cxx__tree__expected_elementT_char_t swig_types[384]
-#define SWIGTYPE_p_xsd__cxx__tree__expected_text_contentT_char_t swig_types[385]
-#define SWIGTYPE_p_xsd__cxx__tree__flags swig_types[386]
-#define SWIGTYPE_p_xsd__cxx__tree__gdayT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[387]
-#define SWIGTYPE_p_xsd__cxx__tree__gmonthT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[388]
-#define SWIGTYPE_p_xsd__cxx__tree__gmonth_dayT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[389]
-#define SWIGTYPE_p_xsd__cxx__tree__gyearT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[390]
-#define SWIGTYPE_p_xsd__cxx__tree__gyear_monthT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[391]
-#define SWIGTYPE_p_xsd__cxx__tree__hex_binaryT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[392]
-#define SWIGTYPE_p_xsd__cxx__tree__idT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t swig_types[393]
-#define SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t swig_types[394]
-#define SWIGTYPE_p_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t swig_types[395]
-#define SWIGTYPE_p_xsd__cxx__tree__languageT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t swig_types[396]
-#define SWIGTYPE_p_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t swig_types[397]
-#define SWIGTYPE_p_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t swig_types[398]
-#define SWIGTYPE_p_xsd__cxx__tree__nmtokenT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t swig_types[399]
-#define SWIGTYPE_p_xsd__cxx__tree__nmtokensT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__nmtokenT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t swig_types[400]
-#define SWIGTYPE_p_xsd__cxx__tree__no_prefix_mappingT_char_t swig_types[401]
-#define SWIGTYPE_p_xsd__cxx__tree__no_type_infoT_char_t swig_types[402]
-#define SWIGTYPE_p_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t swig_types[403]
-#define SWIGTYPE_p_xsd__cxx__tree__not_derivedT_char_t swig_types[404]
-#define SWIGTYPE_p_xsd__cxx__tree__optionalT_double_true_t swig_types[405]
-#define SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t swig_types[406]
-#define SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_t__r_t swig_types[407]
-#define SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t__r_t swig_types[408]
-#define SWIGTYPE_p_xsd__cxx__tree__parsingT_char_t swig_types[409]
-#define SWIGTYPE_p_xsd__cxx__tree__propertiesT_char_t swig_types[410]
-#define SWIGTYPE_p_xsd__cxx__tree__qnameT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__uriT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t swig_types[411]
-#define SWIGTYPE_p_xsd__cxx__tree__sequenceT_schema__simxml__ResourcesGeneral__SimBldgStoryParams_BuildingStory_Default_false_t swig_types[412]
-#define SWIGTYPE_p_xsd__cxx__tree__sequence_common swig_types[413]
-#define SWIGTYPE_p_xsd__cxx__tree__severity swig_types[414]
-#define SWIGTYPE_p_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t swig_types[415]
-#define SWIGTYPE_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[416]
-#define SWIGTYPE_p_xsd__cxx__tree__timeT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[417]
-#define SWIGTYPE_p_xsd__cxx__tree__time_zone swig_types[418]
-#define SWIGTYPE_p_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t swig_types[419]
-#define SWIGTYPE_p_xsd__cxx__tree__unexpected_elementT_char_t swig_types[420]
-#define SWIGTYPE_p_xsd__cxx__tree__unexpected_enumeratorT_char_t swig_types[421]
-#define SWIGTYPE_p_xsd__cxx__tree__uriT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[422]
-#define SWIGTYPE_p_xsd__cxx__tree__user_data_keys_templateT_0_t swig_types[423]
-#define SWIGTYPE_p_xsd__cxx__xml__error_handlerT_char_t swig_types[424]
-static swig_type_info *swig_types[426];
-static swig_module_info swig_module = {swig_types, 425, 0, 0, 0, 0};
+#define SWIGTYPE_p_schema__simxml__SimModelCore__doubleList swig_types[352]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__integerList swig_types[353]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__logical swig_types[354]
+#define SWIGTYPE_p_self_ swig_types[355]
+#define SWIGTYPE_p_short swig_types[356]
+#define SWIGTYPE_p_signed_char swig_types[357]
+#define SWIGTYPE_p_size_type swig_types[358]
+#define SWIGTYPE_p_std__auto_ptrT_T_t swig_types[359]
+#define SWIGTYPE_p_std__auto_ptrT_schema__simxml__ResourcesGeneral__SimBldgStoryParams_BuildingStory_Default_t swig_types[360]
+#define SWIGTYPE_p_std__auto_ptrT_xml_schema__idref_t swig_types[361]
+#define SWIGTYPE_p_std__auto_ptrT_xml_schema__idrefs_t swig_types[362]
+#define SWIGTYPE_p_std__auto_ptrT_xml_schema__string_t swig_types[363]
+#define SWIGTYPE_p_std__vectorT_xsd__cxx__tree__sequence_common__ptr_std__allocatorT_xsd__cxx__tree__sequence_common__ptr_t_t__size_type swig_types[364]
+#define SWIGTYPE_p_unsigned_char swig_types[365]
+#define SWIGTYPE_p_unsigned_int swig_types[366]
+#define SWIGTYPE_p_unsigned_long_long swig_types[367]
+#define SWIGTYPE_p_unsigned_short swig_types[368]
+#define SWIGTYPE_p_value_type swig_types[369]
+#define SWIGTYPE_p_xercesc__DOMElement swig_types[370]
+#define SWIGTYPE_p_xsd__cxx__tree___type swig_types[371]
+#define SWIGTYPE_p_xsd__cxx__tree__base64_binaryT_char_xsd__cxx__tree__simple_type_t swig_types[372]
+#define SWIGTYPE_p_xsd__cxx__tree__boundsT_char_t swig_types[373]
+#define SWIGTYPE_p_xsd__cxx__tree__bufferT_char_t swig_types[374]
+#define SWIGTYPE_p_xsd__cxx__tree__content_order swig_types[375]
+#define SWIGTYPE_p_xsd__cxx__tree__dateT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[376]
+#define SWIGTYPE_p_xsd__cxx__tree__date_timeT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[377]
+#define SWIGTYPE_p_xsd__cxx__tree__diagnosticsT_char_t swig_types[378]
+#define SWIGTYPE_p_xsd__cxx__tree__duplicate_idT_char_t swig_types[379]
+#define SWIGTYPE_p_xsd__cxx__tree__durationT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[380]
+#define SWIGTYPE_p_xsd__cxx__tree__entitiesT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__entity_t swig_types[381]
+#define SWIGTYPE_p_xsd__cxx__tree__entityT_char_xsd__cxx__tree__ncname_t swig_types[382]
+#define SWIGTYPE_p_xsd__cxx__tree__errorT_char_t swig_types[383]
+#define SWIGTYPE_p_xsd__cxx__tree__exceptionT_char_t swig_types[384]
+#define SWIGTYPE_p_xsd__cxx__tree__expected_attributeT_char_t swig_types[385]
+#define SWIGTYPE_p_xsd__cxx__tree__expected_elementT_char_t swig_types[386]
+#define SWIGTYPE_p_xsd__cxx__tree__expected_text_contentT_char_t swig_types[387]
+#define SWIGTYPE_p_xsd__cxx__tree__flags swig_types[388]
+#define SWIGTYPE_p_xsd__cxx__tree__gdayT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[389]
+#define SWIGTYPE_p_xsd__cxx__tree__gmonthT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[390]
+#define SWIGTYPE_p_xsd__cxx__tree__gmonth_dayT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[391]
+#define SWIGTYPE_p_xsd__cxx__tree__gyearT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[392]
+#define SWIGTYPE_p_xsd__cxx__tree__gyear_monthT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[393]
+#define SWIGTYPE_p_xsd__cxx__tree__hex_binaryT_char_xsd__cxx__tree__simple_type_t swig_types[394]
+#define SWIGTYPE_p_xsd__cxx__tree__idT_char_xsd__cxx__tree__ncname_t swig_types[395]
+#define SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t swig_types[396]
+#define SWIGTYPE_p_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t swig_types[397]
+#define SWIGTYPE_p_xsd__cxx__tree__languageT_char_xsd__cxx__tree__token_t swig_types[398]
+#define SWIGTYPE_p_xsd__cxx__tree__nameT_char_xsd__cxx__tree__token_t swig_types[399]
+#define SWIGTYPE_p_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__name_t swig_types[400]
+#define SWIGTYPE_p_xsd__cxx__tree__nmtokenT_char_xsd__cxx__tree__token_t swig_types[401]
+#define SWIGTYPE_p_xsd__cxx__tree__nmtokensT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__nmtoken_t swig_types[402]
+#define SWIGTYPE_p_xsd__cxx__tree__no_prefix_mappingT_char_t swig_types[403]
+#define SWIGTYPE_p_xsd__cxx__tree__no_type_infoT_char_t swig_types[404]
+#define SWIGTYPE_p_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__string_t swig_types[405]
+#define SWIGTYPE_p_xsd__cxx__tree__not_derivedT_char_t swig_types[406]
+#define SWIGTYPE_p_xsd__cxx__tree__optionalT_double_true_t swig_types[407]
+#define SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t swig_types[408]
+#define SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_t__r_t swig_types[409]
+#define SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_false_t swig_types[410]
+#define SWIGTYPE_p_xsd__cxx__tree__parsingT_char_t swig_types[411]
+#define SWIGTYPE_p_xsd__cxx__tree__propertiesT_char_t swig_types[412]
+#define SWIGTYPE_p_xsd__cxx__tree__qnameT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__uri_xsd__cxx__tree__ncname_t swig_types[413]
+#define SWIGTYPE_p_xsd__cxx__tree__sequenceT_schema__simxml__ResourcesGeneral__SimBldgStoryParams_BuildingStory_Default_false_t swig_types[414]
+#define SWIGTYPE_p_xsd__cxx__tree__sequence_common swig_types[415]
+#define SWIGTYPE_p_xsd__cxx__tree__severity swig_types[416]
+#define SWIGTYPE_p_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t swig_types[417]
+#define SWIGTYPE_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t swig_types[418]
+#define SWIGTYPE_p_xsd__cxx__tree__timeT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[419]
+#define SWIGTYPE_p_xsd__cxx__tree__time_zone swig_types[420]
+#define SWIGTYPE_p_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_string_t swig_types[421]
+#define SWIGTYPE_p_xsd__cxx__tree__unexpected_elementT_char_t swig_types[422]
+#define SWIGTYPE_p_xsd__cxx__tree__unexpected_enumeratorT_char_t swig_types[423]
+#define SWIGTYPE_p_xsd__cxx__tree__uriT_char_xsd__cxx__tree__simple_type_t swig_types[424]
+#define SWIGTYPE_p_xsd__cxx__tree__user_data_keys_templateT_0_t swig_types[425]
+#define SWIGTYPE_p_xsd__cxx__xml__error_handlerT_char_t swig_types[426]
+static swig_type_info *swig_types[428];
+static swig_module_info swig_module = {swig_types, 427, 0, 0, 0, 0};
 #define SWIG_TypeQuery(name) SWIG_TypeQueryModule(&swig_module, &swig_module, name)
 #define SWIG_MangledTypeQuery(name) SWIG_MangledTypeQueryModule(&swig_module, &swig_module, name)
 
@@ -4268,7 +4270,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_BldgStoryName__SWIG_0(PyObject *SW
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimBldgStoryParams::BldgStoryName_optional *) &((schema::simxml::ResourcesGeneral::SimBldgStoryParams const *)arg1)->BldgStoryName();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_false_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -4290,7 +4292,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_BldgStoryName__SWIG_1(PyObject *SW
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimBldgStoryParams::BldgStoryName_optional *) &(arg1)->BldgStoryName();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_false_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -4314,7 +4316,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_BldgStoryName__SWIG_2(PyObject *SW
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBldgStoryParams_BldgStoryName" "', argument " "1"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimBldgStoryParams_BldgStoryName" "', argument " "2"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams::BldgStoryName_type const &""'"); 
   }
@@ -4347,7 +4349,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_BldgStoryName__SWIG_3(PyObject *SW
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBldgStoryParams_BldgStoryName" "', argument " "1"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t__r_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_false_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimBldgStoryParams_BldgStoryName" "', argument " "2"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams::BldgStoryName_optional const &""'"); 
   }
@@ -4437,7 +4439,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_BldgStoryName(PyObject *self, PyOb
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimBldgStoryParams, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimBldgStoryParams_BldgStoryName__SWIG_2(self, args);
@@ -4450,7 +4452,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_BldgStoryName(PyObject *self, PyOb
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimBldgStoryParams, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t__r_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_false_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimBldgStoryParams_BldgStoryName__SWIG_3(self, args);
@@ -4498,7 +4500,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_BldgStoryShape__SWIG_0(PyObject *S
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimBldgStoryParams::BldgStoryShape_optional *) &((schema::simxml::ResourcesGeneral::SimBldgStoryParams const *)arg1)->BldgStoryShape();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_false_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -4520,7 +4522,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_BldgStoryShape__SWIG_1(PyObject *S
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimBldgStoryParams::BldgStoryShape_optional *) &(arg1)->BldgStoryShape();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_false_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -4544,7 +4546,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_BldgStoryShape__SWIG_2(PyObject *S
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBldgStoryParams_BldgStoryShape" "', argument " "1"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimBldgStoryParams_BldgStoryShape" "', argument " "2"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams::BldgStoryShape_type const &""'"); 
   }
@@ -4577,7 +4579,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_BldgStoryShape__SWIG_3(PyObject *S
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBldgStoryParams_BldgStoryShape" "', argument " "1"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t__r_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_false_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimBldgStoryParams_BldgStoryShape" "', argument " "2"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams::BldgStoryShape_optional const &""'"); 
   }
@@ -4667,7 +4669,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_BldgStoryShape(PyObject *self, PyO
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimBldgStoryParams, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimBldgStoryParams_BldgStoryShape__SWIG_2(self, args);
@@ -4680,7 +4682,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_BldgStoryShape(PyObject *self, PyO
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimBldgStoryParams, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t__r_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_false_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimBldgStoryParams_BldgStoryShape__SWIG_3(self, args);
@@ -6339,7 +6341,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_SpaceConfigOccupied__SWIG_0(PyObje
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimBldgStoryParams::SpaceConfigOccupied_optional *) &((schema::simxml::ResourcesGeneral::SimBldgStoryParams const *)arg1)->SpaceConfigOccupied();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_false_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -6361,7 +6363,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_SpaceConfigOccupied__SWIG_1(PyObje
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimBldgStoryParams::SpaceConfigOccupied_optional *) &(arg1)->SpaceConfigOccupied();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_false_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -6385,7 +6387,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_SpaceConfigOccupied__SWIG_2(PyObje
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBldgStoryParams_SpaceConfigOccupied" "', argument " "1"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimBldgStoryParams_SpaceConfigOccupied" "', argument " "2"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams::SpaceConfigOccupied_type const &""'"); 
   }
@@ -6418,7 +6420,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_SpaceConfigOccupied__SWIG_3(PyObje
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBldgStoryParams_SpaceConfigOccupied" "', argument " "1"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t__r_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_false_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimBldgStoryParams_SpaceConfigOccupied" "', argument " "2"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams::SpaceConfigOccupied_optional const &""'"); 
   }
@@ -6508,7 +6510,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_SpaceConfigOccupied(PyObject *self
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimBldgStoryParams, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimBldgStoryParams_SpaceConfigOccupied__SWIG_2(self, args);
@@ -6521,7 +6523,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_SpaceConfigOccupied(PyObject *self
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimBldgStoryParams, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t__r_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_false_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimBldgStoryParams_SpaceConfigOccupied__SWIG_3(self, args);
@@ -6569,7 +6571,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_PlenumConfiguration__SWIG_0(PyObje
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimBldgStoryParams::PlenumConfiguration_optional *) &((schema::simxml::ResourcesGeneral::SimBldgStoryParams const *)arg1)->PlenumConfiguration();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_false_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -6591,7 +6593,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_PlenumConfiguration__SWIG_1(PyObje
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimBldgStoryParams::PlenumConfiguration_optional *) &(arg1)->PlenumConfiguration();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_false_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -6615,7 +6617,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_PlenumConfiguration__SWIG_2(PyObje
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBldgStoryParams_PlenumConfiguration" "', argument " "1"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimBldgStoryParams_PlenumConfiguration" "', argument " "2"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams::PlenumConfiguration_type const &""'"); 
   }
@@ -6648,7 +6650,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_PlenumConfiguration__SWIG_3(PyObje
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBldgStoryParams_PlenumConfiguration" "', argument " "1"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t__r_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_false_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimBldgStoryParams_PlenumConfiguration" "', argument " "2"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams::PlenumConfiguration_optional const &""'"); 
   }
@@ -6738,7 +6740,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_PlenumConfiguration(PyObject *self
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimBldgStoryParams, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimBldgStoryParams_PlenumConfiguration__SWIG_2(self, args);
@@ -6751,7 +6753,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_PlenumConfiguration(PyObject *self
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimBldgStoryParams, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t__r_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_false_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimBldgStoryParams_PlenumConfiguration__SWIG_3(self, args);
@@ -6799,7 +6801,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_SpaceConfigAboveCeiling__SWIG_0(Py
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimBldgStoryParams::SpaceConfigAboveCeiling_optional *) &((schema::simxml::ResourcesGeneral::SimBldgStoryParams const *)arg1)->SpaceConfigAboveCeiling();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_false_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -6821,7 +6823,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_SpaceConfigAboveCeiling__SWIG_1(Py
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimBldgStoryParams::SpaceConfigAboveCeiling_optional *) &(arg1)->SpaceConfigAboveCeiling();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_false_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -6845,7 +6847,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_SpaceConfigAboveCeiling__SWIG_2(Py
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBldgStoryParams_SpaceConfigAboveCeiling" "', argument " "1"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimBldgStoryParams_SpaceConfigAboveCeiling" "', argument " "2"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams::SpaceConfigAboveCeiling_type const &""'"); 
   }
@@ -6878,7 +6880,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_SpaceConfigAboveCeiling__SWIG_3(Py
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBldgStoryParams_SpaceConfigAboveCeiling" "', argument " "1"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t__r_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_false_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimBldgStoryParams_SpaceConfigAboveCeiling" "', argument " "2"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams::SpaceConfigAboveCeiling_optional const &""'"); 
   }
@@ -6968,7 +6970,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_SpaceConfigAboveCeiling(PyObject *
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimBldgStoryParams, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimBldgStoryParams_SpaceConfigAboveCeiling__SWIG_2(self, args);
@@ -6981,7 +6983,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_SpaceConfigAboveCeiling(PyObject *
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimBldgStoryParams, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t__r_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_false_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimBldgStoryParams_SpaceConfigAboveCeiling__SWIG_3(self, args);
@@ -7029,7 +7031,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_SpaceConfigBelowFloor__SWIG_0(PyOb
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimBldgStoryParams::SpaceConfigBelowFloor_optional *) &((schema::simxml::ResourcesGeneral::SimBldgStoryParams const *)arg1)->SpaceConfigBelowFloor();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_false_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -7051,7 +7053,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_SpaceConfigBelowFloor__SWIG_1(PyOb
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimBldgStoryParams::SpaceConfigBelowFloor_optional *) &(arg1)->SpaceConfigBelowFloor();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_false_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -7075,7 +7077,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_SpaceConfigBelowFloor__SWIG_2(PyOb
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBldgStoryParams_SpaceConfigBelowFloor" "', argument " "1"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimBldgStoryParams_SpaceConfigBelowFloor" "', argument " "2"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams::SpaceConfigBelowFloor_type const &""'"); 
   }
@@ -7108,7 +7110,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_SpaceConfigBelowFloor__SWIG_3(PyOb
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBldgStoryParams_SpaceConfigBelowFloor" "', argument " "1"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t__r_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_false_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimBldgStoryParams_SpaceConfigBelowFloor" "', argument " "2"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams::SpaceConfigBelowFloor_optional const &""'"); 
   }
@@ -7198,7 +7200,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_SpaceConfigBelowFloor(PyObject *se
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimBldgStoryParams, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimBldgStoryParams_SpaceConfigBelowFloor__SWIG_2(self, args);
@@ -7211,7 +7213,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_SpaceConfigBelowFloor(PyObject *se
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimBldgStoryParams, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t__r_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_false_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimBldgStoryParams_SpaceConfigBelowFloor__SWIG_3(self, args);
@@ -7438,7 +7440,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_WallProfilePathType__SWIG_0(PyObje
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimBldgStoryParams::WallProfilePathType_optional *) &((schema::simxml::ResourcesGeneral::SimBldgStoryParams const *)arg1)->WallProfilePathType();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_false_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -7460,7 +7462,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_WallProfilePathType__SWIG_1(PyObje
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimBldgStoryParams::WallProfilePathType_optional *) &(arg1)->WallProfilePathType();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_false_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -7484,7 +7486,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_WallProfilePathType__SWIG_2(PyObje
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBldgStoryParams_WallProfilePathType" "', argument " "1"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimBldgStoryParams_WallProfilePathType" "', argument " "2"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams::WallProfilePathType_type const &""'"); 
   }
@@ -7517,7 +7519,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_WallProfilePathType__SWIG_3(PyObje
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBldgStoryParams_WallProfilePathType" "', argument " "1"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t__r_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_false_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimBldgStoryParams_WallProfilePathType" "', argument " "2"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams::WallProfilePathType_optional const &""'"); 
   }
@@ -7607,7 +7609,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_WallProfilePathType(PyObject *self
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimBldgStoryParams, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimBldgStoryParams_WallProfilePathType__SWIG_2(self, args);
@@ -7620,7 +7622,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_WallProfilePathType(PyObject *self
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimBldgStoryParams, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t__r_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_false_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimBldgStoryParams_WallProfilePathType__SWIG_3(self, args);
@@ -7668,7 +7670,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_BldgStoryProfilePath__SWIG_0(PyObj
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimBldgStoryParams::BldgStoryProfilePath_optional *) &((schema::simxml::ResourcesGeneral::SimBldgStoryParams const *)arg1)->BldgStoryProfilePath();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -7690,7 +7692,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_BldgStoryProfilePath__SWIG_1(PyObj
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimBldgStoryParams::BldgStoryProfilePath_optional *) &(arg1)->BldgStoryProfilePath();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -7714,7 +7716,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_BldgStoryProfilePath__SWIG_2(PyObj
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBldgStoryParams_BldgStoryProfilePath" "', argument " "1"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimBldgStoryParams_BldgStoryProfilePath" "', argument " "2"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams::BldgStoryProfilePath_type const &""'"); 
   }
@@ -7747,7 +7749,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_BldgStoryProfilePath__SWIG_3(PyObj
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBldgStoryParams_BldgStoryProfilePath" "', argument " "1"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimBldgStoryParams_BldgStoryProfilePath" "', argument " "2"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams::BldgStoryProfilePath_optional const &""'"); 
   }
@@ -7837,7 +7839,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_BldgStoryProfilePath(PyObject *sel
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimBldgStoryParams, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimBldgStoryParams_BldgStoryProfilePath__SWIG_2(self, args);
@@ -7850,7 +7852,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_BldgStoryProfilePath(PyObject *sel
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimBldgStoryParams, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimBldgStoryParams_BldgStoryProfilePath__SWIG_3(self, args);
@@ -7898,7 +7900,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_PerimeterZoneOutsidePath__SWIG_0(P
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimBldgStoryParams::PerimeterZoneOutsidePath_optional *) &((schema::simxml::ResourcesGeneral::SimBldgStoryParams const *)arg1)->PerimeterZoneOutsidePath();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -7920,7 +7922,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_PerimeterZoneOutsidePath__SWIG_1(P
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimBldgStoryParams::PerimeterZoneOutsidePath_optional *) &(arg1)->PerimeterZoneOutsidePath();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -7944,7 +7946,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_PerimeterZoneOutsidePath__SWIG_2(P
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBldgStoryParams_PerimeterZoneOutsidePath" "', argument " "1"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimBldgStoryParams_PerimeterZoneOutsidePath" "', argument " "2"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams::PerimeterZoneOutsidePath_type const &""'"); 
   }
@@ -7977,7 +7979,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_PerimeterZoneOutsidePath__SWIG_3(P
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBldgStoryParams_PerimeterZoneOutsidePath" "', argument " "1"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimBldgStoryParams_PerimeterZoneOutsidePath" "', argument " "2"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams::PerimeterZoneOutsidePath_optional const &""'"); 
   }
@@ -8067,7 +8069,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_PerimeterZoneOutsidePath(PyObject 
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimBldgStoryParams, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimBldgStoryParams_PerimeterZoneOutsidePath__SWIG_2(self, args);
@@ -8080,7 +8082,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_PerimeterZoneOutsidePath(PyObject 
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimBldgStoryParams, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimBldgStoryParams_PerimeterZoneOutsidePath__SWIG_3(self, args);
@@ -8128,7 +8130,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_CoreZoneOutsidePaths__SWIG_0(PyObj
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimBldgStoryParams::CoreZoneOutsidePaths_optional *) &((schema::simxml::ResourcesGeneral::SimBldgStoryParams const *)arg1)->CoreZoneOutsidePaths();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_t__r_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -8150,7 +8152,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_CoreZoneOutsidePaths__SWIG_1(PyObj
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimBldgStoryParams::CoreZoneOutsidePaths_optional *) &(arg1)->CoreZoneOutsidePaths();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_t__r_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -8174,7 +8176,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_CoreZoneOutsidePaths__SWIG_2(PyObj
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBldgStoryParams_CoreZoneOutsidePaths" "', argument " "1"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimBldgStoryParams_CoreZoneOutsidePaths" "', argument " "2"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams::CoreZoneOutsidePaths_type const &""'"); 
   }
@@ -8207,7 +8209,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_CoreZoneOutsidePaths__SWIG_3(PyObj
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBldgStoryParams_CoreZoneOutsidePaths" "', argument " "1"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_t__r_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_t__r_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimBldgStoryParams_CoreZoneOutsidePaths" "', argument " "2"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams::CoreZoneOutsidePaths_optional const &""'"); 
   }
@@ -8297,7 +8299,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_CoreZoneOutsidePaths(PyObject *sel
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimBldgStoryParams, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimBldgStoryParams_CoreZoneOutsidePaths__SWIG_2(self, args);
@@ -8310,7 +8312,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_CoreZoneOutsidePaths(PyObject *sel
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimBldgStoryParams, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_t__r_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_t__r_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimBldgStoryParams_CoreZoneOutsidePaths__SWIG_3(self, args);
@@ -8358,7 +8360,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_CoreZoneInsidePaths__SWIG_0(PyObje
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimBldgStoryParams::CoreZoneInsidePaths_optional *) &((schema::simxml::ResourcesGeneral::SimBldgStoryParams const *)arg1)->CoreZoneInsidePaths();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_t__r_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -8380,7 +8382,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_CoreZoneInsidePaths__SWIG_1(PyObje
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimBldgStoryParams::CoreZoneInsidePaths_optional *) &(arg1)->CoreZoneInsidePaths();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_t__r_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -8404,7 +8406,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_CoreZoneInsidePaths__SWIG_2(PyObje
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBldgStoryParams_CoreZoneInsidePaths" "', argument " "1"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimBldgStoryParams_CoreZoneInsidePaths" "', argument " "2"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams::CoreZoneInsidePaths_type const &""'"); 
   }
@@ -8437,7 +8439,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_CoreZoneInsidePaths__SWIG_3(PyObje
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBldgStoryParams_CoreZoneInsidePaths" "', argument " "1"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_t__r_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_t__r_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimBldgStoryParams_CoreZoneInsidePaths" "', argument " "2"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams::CoreZoneInsidePaths_optional const &""'"); 
   }
@@ -8527,7 +8529,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_CoreZoneInsidePaths(PyObject *self
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimBldgStoryParams, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimBldgStoryParams_CoreZoneInsidePaths__SWIG_2(self, args);
@@ -8540,7 +8542,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_CoreZoneInsidePaths(PyObject *self
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimBldgStoryParams, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_t__r_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_t__r_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimBldgStoryParams_CoreZoneInsidePaths__SWIG_3(self, args);
@@ -8588,7 +8590,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_VoidProfilePaths__SWIG_0(PyObject 
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimBldgStoryParams::VoidProfilePaths_optional *) &((schema::simxml::ResourcesGeneral::SimBldgStoryParams const *)arg1)->VoidProfilePaths();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_t__r_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -8610,7 +8612,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_VoidProfilePaths__SWIG_1(PyObject 
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimBldgStoryParams::VoidProfilePaths_optional *) &(arg1)->VoidProfilePaths();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_t__r_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -8634,7 +8636,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_VoidProfilePaths__SWIG_2(PyObject 
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBldgStoryParams_VoidProfilePaths" "', argument " "1"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimBldgStoryParams_VoidProfilePaths" "', argument " "2"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams::VoidProfilePaths_type const &""'"); 
   }
@@ -8667,7 +8669,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_VoidProfilePaths__SWIG_3(PyObject 
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBldgStoryParams_VoidProfilePaths" "', argument " "1"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_t__r_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_t__r_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimBldgStoryParams_VoidProfilePaths" "', argument " "2"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams::VoidProfilePaths_optional const &""'"); 
   }
@@ -8757,7 +8759,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_VoidProfilePaths(PyObject *self, P
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimBldgStoryParams, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimBldgStoryParams_VoidProfilePaths__SWIG_2(self, args);
@@ -8770,7 +8772,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_VoidProfilePaths(PyObject *self, P
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimBldgStoryParams, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_t__r_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_t__r_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimBldgStoryParams_VoidProfilePaths__SWIG_3(self, args);
@@ -8818,7 +8820,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_BldgConstructionsTemplate__SWIG_0(
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimBldgStoryParams::BldgConstructionsTemplate_optional *) &((schema::simxml::ResourcesGeneral::SimBldgStoryParams const *)arg1)->BldgConstructionsTemplate();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -8840,7 +8842,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_BldgConstructionsTemplate__SWIG_1(
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimBldgStoryParams::BldgConstructionsTemplate_optional *) &(arg1)->BldgConstructionsTemplate();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -8864,7 +8866,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_BldgConstructionsTemplate__SWIG_2(
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBldgStoryParams_BldgConstructionsTemplate" "', argument " "1"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimBldgStoryParams_BldgConstructionsTemplate" "', argument " "2"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams::BldgConstructionsTemplate_type const &""'"); 
   }
@@ -8897,7 +8899,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_BldgConstructionsTemplate__SWIG_3(
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBldgStoryParams_BldgConstructionsTemplate" "', argument " "1"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimBldgStoryParams_BldgConstructionsTemplate" "', argument " "2"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams::BldgConstructionsTemplate_optional const &""'"); 
   }
@@ -8987,7 +8989,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_BldgConstructionsTemplate(PyObject
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimBldgStoryParams, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimBldgStoryParams_BldgConstructionsTemplate__SWIG_2(self, args);
@@ -9000,7 +9002,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_BldgConstructionsTemplate(PyObject
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimBldgStoryParams, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimBldgStoryParams_BldgConstructionsTemplate__SWIG_3(self, args);
@@ -9048,7 +9050,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_TargetNorthWinArrayParams__SWIG_0(
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimBldgStoryParams::TargetNorthWinArrayParams_optional *) &((schema::simxml::ResourcesGeneral::SimBldgStoryParams const *)arg1)->TargetNorthWinArrayParams();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_t__r_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -9070,7 +9072,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_TargetNorthWinArrayParams__SWIG_1(
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimBldgStoryParams::TargetNorthWinArrayParams_optional *) &(arg1)->TargetNorthWinArrayParams();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_t__r_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -9094,7 +9096,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_TargetNorthWinArrayParams__SWIG_2(
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBldgStoryParams_TargetNorthWinArrayParams" "', argument " "1"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimBldgStoryParams_TargetNorthWinArrayParams" "', argument " "2"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams::TargetNorthWinArrayParams_type const &""'"); 
   }
@@ -9127,7 +9129,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_TargetNorthWinArrayParams__SWIG_3(
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBldgStoryParams_TargetNorthWinArrayParams" "', argument " "1"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_t__r_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_t__r_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimBldgStoryParams_TargetNorthWinArrayParams" "', argument " "2"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams::TargetNorthWinArrayParams_optional const &""'"); 
   }
@@ -9217,7 +9219,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_TargetNorthWinArrayParams(PyObject
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimBldgStoryParams, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimBldgStoryParams_TargetNorthWinArrayParams__SWIG_2(self, args);
@@ -9230,7 +9232,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_TargetNorthWinArrayParams(PyObject
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimBldgStoryParams, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_t__r_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_t__r_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimBldgStoryParams_TargetNorthWinArrayParams__SWIG_3(self, args);
@@ -9278,7 +9280,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_TargetSouthWinArrayParams__SWIG_0(
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimBldgStoryParams::TargetSouthWinArrayParams_optional *) &((schema::simxml::ResourcesGeneral::SimBldgStoryParams const *)arg1)->TargetSouthWinArrayParams();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_t__r_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -9300,7 +9302,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_TargetSouthWinArrayParams__SWIG_1(
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimBldgStoryParams::TargetSouthWinArrayParams_optional *) &(arg1)->TargetSouthWinArrayParams();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_t__r_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -9324,7 +9326,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_TargetSouthWinArrayParams__SWIG_2(
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBldgStoryParams_TargetSouthWinArrayParams" "', argument " "1"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimBldgStoryParams_TargetSouthWinArrayParams" "', argument " "2"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams::TargetSouthWinArrayParams_type const &""'"); 
   }
@@ -9357,7 +9359,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_TargetSouthWinArrayParams__SWIG_3(
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBldgStoryParams_TargetSouthWinArrayParams" "', argument " "1"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_t__r_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_t__r_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimBldgStoryParams_TargetSouthWinArrayParams" "', argument " "2"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams::TargetSouthWinArrayParams_optional const &""'"); 
   }
@@ -9447,7 +9449,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_TargetSouthWinArrayParams(PyObject
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimBldgStoryParams, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimBldgStoryParams_TargetSouthWinArrayParams__SWIG_2(self, args);
@@ -9460,7 +9462,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_TargetSouthWinArrayParams(PyObject
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimBldgStoryParams, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_t__r_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_t__r_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimBldgStoryParams_TargetSouthWinArrayParams__SWIG_3(self, args);
@@ -9508,7 +9510,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_TargetEastWinArrayParams__SWIG_0(P
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimBldgStoryParams::TargetEastWinArrayParams_optional *) &((schema::simxml::ResourcesGeneral::SimBldgStoryParams const *)arg1)->TargetEastWinArrayParams();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_t__r_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -9530,7 +9532,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_TargetEastWinArrayParams__SWIG_1(P
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimBldgStoryParams::TargetEastWinArrayParams_optional *) &(arg1)->TargetEastWinArrayParams();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_t__r_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -9554,7 +9556,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_TargetEastWinArrayParams__SWIG_2(P
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBldgStoryParams_TargetEastWinArrayParams" "', argument " "1"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimBldgStoryParams_TargetEastWinArrayParams" "', argument " "2"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams::TargetEastWinArrayParams_type const &""'"); 
   }
@@ -9587,7 +9589,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_TargetEastWinArrayParams__SWIG_3(P
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBldgStoryParams_TargetEastWinArrayParams" "', argument " "1"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_t__r_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_t__r_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimBldgStoryParams_TargetEastWinArrayParams" "', argument " "2"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams::TargetEastWinArrayParams_optional const &""'"); 
   }
@@ -9677,7 +9679,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_TargetEastWinArrayParams(PyObject 
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimBldgStoryParams, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimBldgStoryParams_TargetEastWinArrayParams__SWIG_2(self, args);
@@ -9690,7 +9692,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_TargetEastWinArrayParams(PyObject 
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimBldgStoryParams, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_t__r_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_t__r_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimBldgStoryParams_TargetEastWinArrayParams__SWIG_3(self, args);
@@ -9738,7 +9740,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_TargetWestWinArrayParams__SWIG_0(P
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimBldgStoryParams::TargetWestWinArrayParams_optional *) &((schema::simxml::ResourcesGeneral::SimBldgStoryParams const *)arg1)->TargetWestWinArrayParams();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_t__r_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -9760,7 +9762,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_TargetWestWinArrayParams__SWIG_1(P
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimBldgStoryParams::TargetWestWinArrayParams_optional *) &(arg1)->TargetWestWinArrayParams();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_t__r_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -9784,7 +9786,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_TargetWestWinArrayParams__SWIG_2(P
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBldgStoryParams_TargetWestWinArrayParams" "', argument " "1"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimBldgStoryParams_TargetWestWinArrayParams" "', argument " "2"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams::TargetWestWinArrayParams_type const &""'"); 
   }
@@ -9817,7 +9819,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_TargetWestWinArrayParams__SWIG_3(P
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBldgStoryParams_TargetWestWinArrayParams" "', argument " "1"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_t__r_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_t__r_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimBldgStoryParams_TargetWestWinArrayParams" "', argument " "2"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams::TargetWestWinArrayParams_optional const &""'"); 
   }
@@ -9907,7 +9909,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_TargetWestWinArrayParams(PyObject 
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimBldgStoryParams, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimBldgStoryParams_TargetWestWinArrayParams__SWIG_2(self, args);
@@ -9920,7 +9922,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_TargetWestWinArrayParams(PyObject 
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimBldgStoryParams, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_t__r_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_t__r_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimBldgStoryParams_TargetWestWinArrayParams__SWIG_3(self, args);
@@ -9968,7 +9970,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_DefaultLibraryType__SWIG_0(PyObjec
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimBldgStoryParams::DefaultLibraryType_optional *) &((schema::simxml::ResourcesGeneral::SimBldgStoryParams const *)arg1)->DefaultLibraryType();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_false_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -9990,7 +9992,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_DefaultLibraryType__SWIG_1(PyObjec
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimBldgStoryParams::DefaultLibraryType_optional *) &(arg1)->DefaultLibraryType();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_false_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -10014,7 +10016,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_DefaultLibraryType__SWIG_2(PyObjec
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBldgStoryParams_DefaultLibraryType" "', argument " "1"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimBldgStoryParams_DefaultLibraryType" "', argument " "2"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams::DefaultLibraryType_type const &""'"); 
   }
@@ -10047,7 +10049,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_DefaultLibraryType__SWIG_3(PyObjec
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBldgStoryParams_DefaultLibraryType" "', argument " "1"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t__r_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_false_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimBldgStoryParams_DefaultLibraryType" "', argument " "2"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams::DefaultLibraryType_optional const &""'"); 
   }
@@ -10137,7 +10139,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_DefaultLibraryType(PyObject *self,
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimBldgStoryParams, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimBldgStoryParams_DefaultLibraryType__SWIG_2(self, args);
@@ -10150,7 +10152,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_DefaultLibraryType(PyObject *self,
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimBldgStoryParams, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t__r_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_false_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimBldgStoryParams_DefaultLibraryType__SWIG_3(self, args);
@@ -10198,7 +10200,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_DefaultLibEntryRef__SWIG_0(PyObjec
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimBldgStoryParams::DefaultLibEntryRef_optional *) &((schema::simxml::ResourcesGeneral::SimBldgStoryParams const *)arg1)->DefaultLibEntryRef();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -10220,7 +10222,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_DefaultLibEntryRef__SWIG_1(PyObjec
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimBldgStoryParams::DefaultLibEntryRef_optional *) &(arg1)->DefaultLibEntryRef();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -10244,7 +10246,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_DefaultLibEntryRef__SWIG_2(PyObjec
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBldgStoryParams_DefaultLibEntryRef" "', argument " "1"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimBldgStoryParams_DefaultLibEntryRef" "', argument " "2"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams::DefaultLibEntryRef_type const &""'"); 
   }
@@ -10277,7 +10279,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_DefaultLibEntryRef__SWIG_3(PyObjec
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBldgStoryParams_DefaultLibEntryRef" "', argument " "1"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimBldgStoryParams_DefaultLibEntryRef" "', argument " "2"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams::DefaultLibEntryRef_optional const &""'"); 
   }
@@ -10367,7 +10369,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_DefaultLibEntryRef(PyObject *self,
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimBldgStoryParams, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimBldgStoryParams_DefaultLibEntryRef__SWIG_2(self, args);
@@ -10380,7 +10382,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_DefaultLibEntryRef(PyObject *self,
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimBldgStoryParams, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimBldgStoryParams_DefaultLibEntryRef__SWIG_3(self, args);
@@ -10428,7 +10430,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_DefaultOhangEntryRef__SWIG_0(PyObj
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimBldgStoryParams::DefaultOhangEntryRef_optional *) &((schema::simxml::ResourcesGeneral::SimBldgStoryParams const *)arg1)->DefaultOhangEntryRef();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -10450,7 +10452,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_DefaultOhangEntryRef__SWIG_1(PyObj
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimBldgStoryParams::DefaultOhangEntryRef_optional *) &(arg1)->DefaultOhangEntryRef();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -10474,7 +10476,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_DefaultOhangEntryRef__SWIG_2(PyObj
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBldgStoryParams_DefaultOhangEntryRef" "', argument " "1"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimBldgStoryParams_DefaultOhangEntryRef" "', argument " "2"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams::DefaultOhangEntryRef_type const &""'"); 
   }
@@ -10507,7 +10509,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_DefaultOhangEntryRef__SWIG_3(PyObj
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBldgStoryParams_DefaultOhangEntryRef" "', argument " "1"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimBldgStoryParams_DefaultOhangEntryRef" "', argument " "2"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams::DefaultOhangEntryRef_optional const &""'"); 
   }
@@ -10597,7 +10599,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_DefaultOhangEntryRef(PyObject *sel
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimBldgStoryParams, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimBldgStoryParams_DefaultOhangEntryRef__SWIG_2(self, args);
@@ -10610,7 +10612,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_DefaultOhangEntryRef(PyObject *sel
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimBldgStoryParams, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimBldgStoryParams_DefaultOhangEntryRef__SWIG_3(self, args);
@@ -10658,7 +10660,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_DefaultFinEntryRef__SWIG_0(PyObjec
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimBldgStoryParams::DefaultFinEntryRef_optional *) &((schema::simxml::ResourcesGeneral::SimBldgStoryParams const *)arg1)->DefaultFinEntryRef();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -10680,7 +10682,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_DefaultFinEntryRef__SWIG_1(PyObjec
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimBldgStoryParams::DefaultFinEntryRef_optional *) &(arg1)->DefaultFinEntryRef();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -10704,7 +10706,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_DefaultFinEntryRef__SWIG_2(PyObjec
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBldgStoryParams_DefaultFinEntryRef" "', argument " "1"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimBldgStoryParams_DefaultFinEntryRef" "', argument " "2"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams::DefaultFinEntryRef_type const &""'"); 
   }
@@ -10737,7 +10739,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_DefaultFinEntryRef__SWIG_3(PyObjec
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBldgStoryParams_DefaultFinEntryRef" "', argument " "1"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimBldgStoryParams_DefaultFinEntryRef" "', argument " "2"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams::DefaultFinEntryRef_optional const &""'"); 
   }
@@ -10827,7 +10829,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_DefaultFinEntryRef(PyObject *self,
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimBldgStoryParams, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimBldgStoryParams_DefaultFinEntryRef__SWIG_2(self, args);
@@ -10840,7 +10842,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_DefaultFinEntryRef(PyObject *self,
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimBldgStoryParams, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimBldgStoryParams_DefaultFinEntryRef__SWIG_3(self, args);
@@ -10888,7 +10890,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_InsertedDWG__SWIG_0(PyObject *SWIG
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimBldgStoryParams::InsertedDWG_optional *) &((schema::simxml::ResourcesGeneral::SimBldgStoryParams const *)arg1)->InsertedDWG();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -10910,7 +10912,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_InsertedDWG__SWIG_1(PyObject *SWIG
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimBldgStoryParams::InsertedDWG_optional *) &(arg1)->InsertedDWG();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -10934,7 +10936,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_InsertedDWG__SWIG_2(PyObject *SWIG
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBldgStoryParams_InsertedDWG" "', argument " "1"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimBldgStoryParams_InsertedDWG" "', argument " "2"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams::InsertedDWG_type const &""'"); 
   }
@@ -10967,7 +10969,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_InsertedDWG__SWIG_3(PyObject *SWIG
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBldgStoryParams_InsertedDWG" "', argument " "1"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimBldgStoryParams * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimBldgStoryParams_InsertedDWG" "', argument " "2"" of type '" "schema::simxml::ResourcesGeneral::SimBldgStoryParams::InsertedDWG_optional const &""'"); 
   }
@@ -11057,7 +11059,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_InsertedDWG(PyObject *self, PyObje
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimBldgStoryParams, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimBldgStoryParams_InsertedDWG__SWIG_2(self, args);
@@ -11070,7 +11072,7 @@ SWIGINTERN PyObject *_wrap_SimBldgStoryParams_InsertedDWG(PyObject *self, PyObje
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimBldgStoryParams, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimBldgStoryParams_InsertedDWG__SWIG_3(self, args);
@@ -11125,7 +11127,7 @@ SWIGINTERN PyObject *_wrap_new_SimBldgStoryParams__SWIG_1(PyObject *SWIGUNUSEDPA
   schema::simxml::ResourcesGeneral::SimBldgStoryParams *result = 0 ;
   
   if (!PyArg_ParseTuple(args,(char *)"O:new_SimBldgStoryParams",&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1, SWIGTYPE_p_xsd__cxx__tree__idT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t,  0  | 0);
+  res1 = SWIG_ConvertPtr(obj0, &argp1, SWIGTYPE_p_xsd__cxx__tree__idT_char_xsd__cxx__tree__ncname_t,  0  | 0);
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "new_SimBldgStoryParams" "', argument " "1"" of type '" "schema::simxml::SimModelCore::SimRoot::RefId_type const &""'"); 
   }
@@ -11394,7 +11396,7 @@ SWIGINTERN PyObject *_wrap_new_SimBldgStoryParams(PyObject *self, PyObject *args
   }
   if (argc == 1) {
     int _v;
-    int res = SWIG_ConvertPtr(argv[0], 0, SWIGTYPE_p_xsd__cxx__tree__idT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t, 0);
+    int res = SWIG_ConvertPtr(argv[0], 0, SWIGTYPE_p_xsd__cxx__tree__idT_char_xsd__cxx__tree__ncname_t, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
       return _wrap_new_SimBldgStoryParams__SWIG_1(self, args);
@@ -11712,7 +11714,7 @@ SWIGINTERN PyObject *_wrap_new_SimBldgStoryParams_BuildingStory__SWIG_1(PyObject
   schema::simxml::ResourcesGeneral::SimBldgStoryParams_BuildingStory *result = 0 ;
   
   if (!PyArg_ParseTuple(args,(char *)"O:new_SimBldgStoryParams_BuildingStory",&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1, SWIGTYPE_p_xsd__cxx__tree__idT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t,  0  | 0);
+  res1 = SWIG_ConvertPtr(obj0, &argp1, SWIGTYPE_p_xsd__cxx__tree__idT_char_xsd__cxx__tree__ncname_t,  0  | 0);
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "new_SimBldgStoryParams_BuildingStory" "', argument " "1"" of type '" "schema::simxml::SimModelCore::SimRoot::RefId_type const &""'"); 
   }
@@ -11981,7 +11983,7 @@ SWIGINTERN PyObject *_wrap_new_SimBldgStoryParams_BuildingStory(PyObject *self, 
   }
   if (argc == 1) {
     int _v;
-    int res = SWIG_ConvertPtr(argv[0], 0, SWIGTYPE_p_xsd__cxx__tree__idT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t, 0);
+    int res = SWIG_ConvertPtr(argv[0], 0, SWIGTYPE_p_xsd__cxx__tree__idT_char_xsd__cxx__tree__ncname_t, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
       return _wrap_new_SimBldgStoryParams_BuildingStory__SWIG_1(self, args);
@@ -12299,7 +12301,7 @@ SWIGINTERN PyObject *_wrap_new_SimBldgStoryParams_BuildingStory_Default__SWIG_1(
   schema::simxml::ResourcesGeneral::SimBldgStoryParams_BuildingStory_Default *result = 0 ;
   
   if (!PyArg_ParseTuple(args,(char *)"O:new_SimBldgStoryParams_BuildingStory_Default",&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1, SWIGTYPE_p_xsd__cxx__tree__idT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t,  0  | 0);
+  res1 = SWIG_ConvertPtr(obj0, &argp1, SWIGTYPE_p_xsd__cxx__tree__idT_char_xsd__cxx__tree__ncname_t,  0  | 0);
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "new_SimBldgStoryParams_BuildingStory_Default" "', argument " "1"" of type '" "schema::simxml::SimModelCore::SimRoot::RefId_type const &""'"); 
   }
@@ -12568,7 +12570,7 @@ SWIGINTERN PyObject *_wrap_new_SimBldgStoryParams_BuildingStory_Default(PyObject
   }
   if (argc == 1) {
     int _v;
-    int res = SWIG_ConvertPtr(argv[0], 0, SWIGTYPE_p_xsd__cxx__tree__idT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t, 0);
+    int res = SWIG_ConvertPtr(argv[0], 0, SWIGTYPE_p_xsd__cxx__tree__idT_char_xsd__cxx__tree__ncname_t, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
       return _wrap_new_SimBldgStoryParams_BuildingStory_Default__SWIG_1(self, args);
@@ -15512,8 +15514,10 @@ static swig_type_info _swigt__p_schema__simxml__SimModelCore__SimObject = {"_p_s
 static swig_type_info _swigt__p_schema__simxml__SimModelCore__SimElement = {"_p_schema__simxml__SimModelCore__SimElement", 0, 0, 0, 0, 0};
 static swig_type_info _swigt__p_schema__simxml__SimModelCore__SimObjectTypeDefinition = {"_p_schema__simxml__SimModelCore__SimObjectTypeDefinition", 0, 0, 0, 0, 0};
 static swig_type_info _swigt__p_schema__simxml__SimModelCore__SimDistributionFlowElement = {"_p_schema__simxml__SimModelCore__SimDistributionFlowElement", 0, 0, 0, 0, 0};
+static swig_type_info _swigt__p_schema__simxml__SimModelCore__doubleList = {"_p_schema__simxml__SimModelCore__doubleList", "::schema::simxml::SimModelCore::doubleList *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_schema__simxml__SimModelCore__integerList = {"_p_schema__simxml__SimModelCore__integerList", "::schema::simxml::SimModelCore::integerList *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_schema__simxml__SimModelCore__logical = {"_p_schema__simxml__SimModelCore__logical", "::schema::simxml::SimModelCore::logical *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_self_ = {"_p_self_", "self_ *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_short = {"_p_short", "short *|xml_schema::short_ *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_signed_char = {"_p_signed_char", "signed char *|xml_schema::byte *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_size_type = {"_p_size_type", "size_type *", 0, 0, (void*)0, 0};
@@ -15530,7 +15534,7 @@ static swig_type_info _swigt__p_unsigned_short = {"_p_unsigned_short", "unsigned
 static swig_type_info _swigt__p_value_type = {"_p_value_type", "value_type *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xercesc__DOMElement = {"_p_xercesc__DOMElement", "::xercesc::DOMElement *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree___type = {"_p_xsd__cxx__tree___type", "xsd::cxx::tree::_type *|xsd::cxx::tree::type *|xml_schema::type *|xsd::cxx::tree::container *|xml_schema::container *|::xml_schema::container *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_xsd__cxx__tree__base64_binaryT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t = {"_p_xsd__cxx__tree__base64_binaryT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t", "xsd::cxx::tree::base64_binary< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > > *|xml_schema::base64_binary *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_xsd__cxx__tree__base64_binaryT_char_xsd__cxx__tree__simple_type_t = {"_p_xsd__cxx__tree__base64_binaryT_char_xsd__cxx__tree__simple_type_t", "xml_schema::base64_binary *|::xsd::cxx::tree::base64_binary< char,xsd::cxx::tree::simple_type > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__boundsT_char_t = {"_p_xsd__cxx__tree__boundsT_char_t", "::xsd::cxx::tree::bounds< char > *|xml_schema::bounds *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__bufferT_char_t = {"_p_xsd__cxx__tree__bufferT_char_t", "::xsd::cxx::tree::buffer< char > *|xml_schema::buffer *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__content_order = {"_p_xsd__cxx__tree__content_order", "::xsd::cxx::tree::content_order *|xml_schema::content_order *", 0, 0, (void*)0, 0};
@@ -15539,8 +15543,8 @@ static swig_type_info _swigt__p_xsd__cxx__tree__date_timeT_char_xsd__cxx__tree__
 static swig_type_info _swigt__p_xsd__cxx__tree__diagnosticsT_char_t = {"_p_xsd__cxx__tree__diagnosticsT_char_t", "xml_schema::diagnostics *|::xsd::cxx::tree::diagnostics< char > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__duplicate_idT_char_t = {"_p_xsd__cxx__tree__duplicate_idT_char_t", "::xsd::cxx::tree::duplicate_id< char > *|xml_schema::duplicate_id *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__durationT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t = {"_p_xsd__cxx__tree__durationT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t", "xsd::cxx::tree::duration< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > > *|xml_schema::duration *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_xsd__cxx__tree__entitiesT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__entityT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t_t = {"_p_xsd__cxx__tree__entitiesT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__entityT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t_t", "xsd::cxx::tree::entities< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type >,xsd::cxx::tree::entity< char,xsd::cxx::tree::ncname< char,xsd::cxx::tree::name< char,xsd::cxx::tree::token< char,xsd::cxx::tree::normalized_string< char,xsd::cxx::tree::string< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > > > > > > > > *|xml_schema::entities *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_xsd__cxx__tree__entityT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t = {"_p_xsd__cxx__tree__entityT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t", "xsd::cxx::tree::entity< char,xsd::cxx::tree::ncname< char,xsd::cxx::tree::name< char,xsd::cxx::tree::token< char,xsd::cxx::tree::normalized_string< char,xsd::cxx::tree::string< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > > > > > > > *|xml_schema::entity *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_xsd__cxx__tree__entitiesT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__entity_t = {"_p_xsd__cxx__tree__entitiesT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__entity_t", "xml_schema::entities *|::xsd::cxx::tree::entities< char,xsd::cxx::tree::simple_type,xsd::cxx::tree::entity > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_xsd__cxx__tree__entityT_char_xsd__cxx__tree__ncname_t = {"_p_xsd__cxx__tree__entityT_char_xsd__cxx__tree__ncname_t", "xml_schema::entity *|::xsd::cxx::tree::entity< char,xsd::cxx::tree::ncname > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__errorT_char_t = {"_p_xsd__cxx__tree__errorT_char_t", "xml_schema::error *|::xsd::cxx::tree::error< char > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__exceptionT_char_t = {"_p_xsd__cxx__tree__exceptionT_char_t", "::xsd::cxx::tree::exception< char > *|xml_schema::exception *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__expected_attributeT_char_t = {"_p_xsd__cxx__tree__expected_attributeT_char_t", "::xsd::cxx::tree::expected_attribute< char > *|xml_schema::expected_attribute *", 0, 0, (void*)0, 0};
@@ -15552,37 +15556,37 @@ static swig_type_info _swigt__p_xsd__cxx__tree__gmonthT_char_xsd__cxx__tree__sim
 static swig_type_info _swigt__p_xsd__cxx__tree__gmonth_dayT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t = {"_p_xsd__cxx__tree__gmonth_dayT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t", "xsd::cxx::tree::gmonth_day< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > > *|xml_schema::gmonth_day *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__gyearT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t = {"_p_xsd__cxx__tree__gyearT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t", "xsd::cxx::tree::gyear< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > > *|xml_schema::gyear *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__gyear_monthT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t = {"_p_xsd__cxx__tree__gyear_monthT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t", "xsd::cxx::tree::gyear_month< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > > *|xml_schema::gyear_month *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_xsd__cxx__tree__hex_binaryT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t = {"_p_xsd__cxx__tree__hex_binaryT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t", "xsd::cxx::tree::hex_binary< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > > *|xml_schema::hex_binary *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_xsd__cxx__tree__idT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t = {"_p_xsd__cxx__tree__idT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t", "::xml_schema::id *|xml_schema::id *|xsd::cxx::tree::id< char,xsd::cxx::tree::ncname< char,xsd::cxx::tree::name< char,xsd::cxx::tree::token< char,xsd::cxx::tree::normalized_string< char,xsd::cxx::tree::string< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > > > > > > > *|schema::simxml::SimModelCore::SimRoot::RefId_type *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t = {"_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t", "xml_schema::idref *|::xml_schema::idref *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::DefaultFinEntryRef_type *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::DefaultOhangEntryRef_type *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::DefaultLibEntryRef_type *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::BldgConstructionsTemplate_type *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::PerimeterZoneOutsidePath_type *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::BldgStoryProfilePath_type *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::InsertedDWG_type *|xsd::cxx::tree::idref< char,xsd::cxx::tree::ncname< char,xsd::cxx::tree::name< char,xsd::cxx::tree::token< char,xsd::cxx::tree::normalized_string< char,xsd::cxx::tree::string< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > > > > > >,xsd::cxx::tree::_type > *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t = {"_p_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t", "schema::simxml::ResourcesGeneral::SimBldgStoryParams::TargetEastWinArrayParams_type *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::TargetSouthWinArrayParams_type *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::TargetNorthWinArrayParams_type *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::VoidProfilePaths_type *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::CoreZoneInsidePaths_type *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::CoreZoneOutsidePaths_type *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::TargetWestWinArrayParams_type *|xml_schema::idrefs *|::xml_schema::idrefs *|xsd::cxx::tree::idrefs< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type >,xsd::cxx::tree::idref< char,xsd::cxx::tree::ncname< char,xsd::cxx::tree::name< char,xsd::cxx::tree::token< char,xsd::cxx::tree::normalized_string< char,xsd::cxx::tree::string< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > > > > > >,xsd::cxx::tree::_type > > *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_xsd__cxx__tree__languageT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t = {"_p_xsd__cxx__tree__languageT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t", "xml_schema::language *|xsd::cxx::tree::language< char,xsd::cxx::tree::token< char,xsd::cxx::tree::normalized_string< char,xsd::cxx::tree::string< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > > > > > *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t = {"_p_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t", "xsd::cxx::tree::name< char,xsd::cxx::tree::token< char,xsd::cxx::tree::normalized_string< char,xsd::cxx::tree::string< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > > > > > *|xml_schema::name *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t = {"_p_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t", "xml_schema::ncname *|xsd::cxx::tree::ncname< char,xsd::cxx::tree::name< char,xsd::cxx::tree::token< char,xsd::cxx::tree::normalized_string< char,xsd::cxx::tree::string< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > > > > > > *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_xsd__cxx__tree__nmtokenT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t = {"_p_xsd__cxx__tree__nmtokenT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t", "xsd::cxx::tree::nmtoken< char,xsd::cxx::tree::token< char,xsd::cxx::tree::normalized_string< char,xsd::cxx::tree::string< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > > > > > *|xml_schema::nmtoken *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_xsd__cxx__tree__nmtokensT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__nmtokenT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t = {"_p_xsd__cxx__tree__nmtokensT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__nmtokenT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t", "xsd::cxx::tree::nmtokens< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type >,xsd::cxx::tree::nmtoken< char,xsd::cxx::tree::token< char,xsd::cxx::tree::normalized_string< char,xsd::cxx::tree::string< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > > > > > > *|xml_schema::nmtokens *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_xsd__cxx__tree__hex_binaryT_char_xsd__cxx__tree__simple_type_t = {"_p_xsd__cxx__tree__hex_binaryT_char_xsd__cxx__tree__simple_type_t", "::xsd::cxx::tree::hex_binary< char,xsd::cxx::tree::simple_type > *|xml_schema::hex_binary *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_xsd__cxx__tree__idT_char_xsd__cxx__tree__ncname_t = {"_p_xsd__cxx__tree__idT_char_xsd__cxx__tree__ncname_t", "::xsd::cxx::tree::id< char,xsd::cxx::tree::ncname > *|::xml_schema::id *|xml_schema::id *|schema::simxml::SimModelCore::SimRoot::RefId_type *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t = {"_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t", "xml_schema::idref *|::xml_schema::idref *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::DefaultFinEntryRef_type *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::DefaultOhangEntryRef_type *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::DefaultLibEntryRef_type *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::BldgConstructionsTemplate_type *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::PerimeterZoneOutsidePath_type *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::BldgStoryProfilePath_type *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::InsertedDWG_type *|xsd::cxx::tree::idref< char,xsd::cxx::tree::ncname,xsd::cxx::tree::_type > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t = {"_p_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t", "::xsd::cxx::tree::idrefs< char,xsd::cxx::tree::simple_type,xsd::cxx::tree::idref > *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::TargetEastWinArrayParams_type *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::TargetSouthWinArrayParams_type *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::TargetNorthWinArrayParams_type *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::VoidProfilePaths_type *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::CoreZoneInsidePaths_type *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::CoreZoneOutsidePaths_type *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::TargetWestWinArrayParams_type *|xml_schema::idrefs *|::xml_schema::idrefs *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_xsd__cxx__tree__languageT_char_xsd__cxx__tree__token_t = {"_p_xsd__cxx__tree__languageT_char_xsd__cxx__tree__token_t", "xml_schema::language *|::xsd::cxx::tree::language< char,xsd::cxx::tree::token > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_xsd__cxx__tree__nameT_char_xsd__cxx__tree__token_t = {"_p_xsd__cxx__tree__nameT_char_xsd__cxx__tree__token_t", "xml_schema::name *|::xsd::cxx::tree::name< char,xsd::cxx::tree::token > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__name_t = {"_p_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__name_t", "xml_schema::ncname *|::xsd::cxx::tree::ncname< char,xsd::cxx::tree::name > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_xsd__cxx__tree__nmtokenT_char_xsd__cxx__tree__token_t = {"_p_xsd__cxx__tree__nmtokenT_char_xsd__cxx__tree__token_t", "::xsd::cxx::tree::nmtoken< char,xsd::cxx::tree::token > *|xml_schema::nmtoken *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_xsd__cxx__tree__nmtokensT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__nmtoken_t = {"_p_xsd__cxx__tree__nmtokensT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__nmtoken_t", "::xsd::cxx::tree::nmtokens< char,xsd::cxx::tree::simple_type,xsd::cxx::tree::nmtoken > *|xml_schema::nmtokens *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__no_prefix_mappingT_char_t = {"_p_xsd__cxx__tree__no_prefix_mappingT_char_t", "::xsd::cxx::tree::no_prefix_mapping< char > *|xml_schema::no_prefix_mapping *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__no_type_infoT_char_t = {"_p_xsd__cxx__tree__no_type_infoT_char_t", "xml_schema::no_type_info *|::xsd::cxx::tree::no_type_info< char > *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t = {"_p_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t", "xsd::cxx::tree::normalized_string< char,xsd::cxx::tree::string< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > > > *|xml_schema::normalized_string *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__string_t = {"_p_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__string_t", "::xsd::cxx::tree::normalized_string< char,xsd::cxx::tree::string > *|xml_schema::normalized_string *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__not_derivedT_char_t = {"_p_xsd__cxx__tree__not_derivedT_char_t", "::xsd::cxx::tree::not_derived< char > *|xml_schema::not_derived *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_xsd__cxx__tree__optionalT_double_true_t = {"_p_xsd__cxx__tree__optionalT_double_true_t", "schema::simxml::ResourcesGeneral::SimBldgStoryParams::CeilingBottomElevation_optional *|xsd::cxx::tree::optional< double,true > *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::FloorToFloorHeight_optional *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::Y3Dim_optional *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::Y2Dim_optional *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::Y1Dim_optional *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::X1Dim_optional *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::X2Dim_optional *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::X3Dim_optional *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::FinishFloorTopElevation_optional *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::PerimeterZoneDepth_optional *|xsd::cxx::tree::optional< double,xsd::cxx::tree::fundamental_p< double >::r > *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t = {"_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t", "xsd::cxx::tree::optional< xsd::cxx::tree::idref< char,xsd::cxx::tree::ncname< char,xsd::cxx::tree::name< char,xsd::cxx::tree::token< char,xsd::cxx::tree::normalized_string< char,xsd::cxx::tree::string< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > > > > > >,xsd::cxx::tree::_type >,xsd::cxx::tree::fundamental_p< xsd::cxx::tree::idref< char,xsd::cxx::tree::ncname< char,xsd::cxx::tree::name< char,xsd::cxx::tree::token< char,xsd::cxx::tree::normalized_string< char,xsd::cxx::tree::string< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > > > > > >,xsd::cxx::tree::_type > >::r > *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::DefaultLibEntryRef_optional *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::BldgConstructionsTemplate_optional *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::PerimeterZoneOutsidePath_optional *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::BldgStoryProfilePath_optional *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::DefaultOhangEntryRef_optional *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::DefaultFinEntryRef_optional *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::InsertedDWG_optional *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_t__r_t = {"_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_t__r_t", "xsd::cxx::tree::optional< xsd::cxx::tree::idrefs< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type >,xsd::cxx::tree::idref< char,xsd::cxx::tree::ncname< char,xsd::cxx::tree::name< char,xsd::cxx::tree::token< char,xsd::cxx::tree::normalized_string< char,xsd::cxx::tree::string< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > > > > > >,xsd::cxx::tree::_type > >,xsd::cxx::tree::fundamental_p< xsd::cxx::tree::idrefs< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type >,xsd::cxx::tree::idref< char,xsd::cxx::tree::ncname< char,xsd::cxx::tree::name< char,xsd::cxx::tree::token< char,xsd::cxx::tree::normalized_string< char,xsd::cxx::tree::string< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > > > > > >,xsd::cxx::tree::_type > > >::r > *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::TargetNorthWinArrayParams_optional *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::VoidProfilePaths_optional *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::CoreZoneInsidePaths_optional *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::CoreZoneOutsidePaths_optional *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::TargetSouthWinArrayParams_optional *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::TargetEastWinArrayParams_optional *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::TargetWestWinArrayParams_optional *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t__r_t = {"_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t__r_t", "xsd::cxx::tree::optional< xsd::cxx::tree::string< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > >,xsd::cxx::tree::fundamental_p< xsd::cxx::tree::string< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > > >::r > *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::PlenumConfiguration_optional *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::SpaceConfigOccupied_optional *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::BldgStoryShape_optional *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::BldgStoryName_optional *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::SpaceConfigAboveCeiling_optional *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::SpaceConfigBelowFloor_optional *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::WallProfilePathType_optional *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::DefaultLibraryType_optional *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_xsd__cxx__tree__optionalT_double_true_t = {"_p_xsd__cxx__tree__optionalT_double_true_t", "xsd::cxx::tree::optional< double,true > *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::CeilingBottomElevation_optional *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::FloorToFloorHeight_optional *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::Y3Dim_optional *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::Y2Dim_optional *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::Y1Dim_optional *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::X1Dim_optional *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::X2Dim_optional *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::X3Dim_optional *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::FinishFloorTopElevation_optional *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::PerimeterZoneDepth_optional *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t = {"_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t", "xsd::cxx::tree::optional< xsd::cxx::tree::idref< char,xsd::cxx::tree::ncname,xsd::cxx::tree::_type >,false > *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::DefaultLibEntryRef_optional *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::BldgConstructionsTemplate_optional *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::PerimeterZoneOutsidePath_optional *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::BldgStoryProfilePath_optional *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::DefaultOhangEntryRef_optional *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::DefaultFinEntryRef_optional *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::InsertedDWG_optional *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_t__r_t = {"_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_t__r_t", "schema::simxml::ResourcesGeneral::SimBldgStoryParams::TargetNorthWinArrayParams_optional *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::VoidProfilePaths_optional *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::CoreZoneInsidePaths_optional *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::CoreZoneOutsidePaths_optional *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::TargetSouthWinArrayParams_optional *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::TargetEastWinArrayParams_optional *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::TargetWestWinArrayParams_optional *|xsd::cxx::tree::optional< ::xsd::cxx::tree::idrefs< char,xsd::cxx::tree::simple_type,xsd::cxx::tree::idref >,xsd::cxx::tree::fundamental_p< ::xsd::cxx::tree::idrefs< char,xsd::cxx::tree::simple_type,xsd::cxx::tree::idref > >::r > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_false_t = {"_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_false_t", "schema::simxml::ResourcesGeneral::SimBldgStoryParams::PlenumConfiguration_optional *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::SpaceConfigOccupied_optional *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::BldgStoryShape_optional *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::BldgStoryName_optional *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::SpaceConfigAboveCeiling_optional *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::SpaceConfigBelowFloor_optional *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::WallProfilePathType_optional *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::DefaultLibraryType_optional *|xsd::cxx::tree::optional< ::xsd::cxx::tree::string< char,xsd::cxx::tree::simple_type >,false > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__parsingT_char_t = {"_p_xsd__cxx__tree__parsingT_char_t", "xml_schema::parsing *|::xsd::cxx::tree::parsing< char > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__propertiesT_char_t = {"_p_xsd__cxx__tree__propertiesT_char_t", "::xsd::cxx::tree::properties< char > *|xml_schema::properties *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_xsd__cxx__tree__qnameT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__uriT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t = {"_p_xsd__cxx__tree__qnameT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__uriT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t", "xml_schema::qname *|xsd::cxx::tree::qname< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type >,xsd::cxx::tree::uri< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > >,xsd::cxx::tree::ncname< char,xsd::cxx::tree::name< char,xsd::cxx::tree::token< char,xsd::cxx::tree::normalized_string< char,xsd::cxx::tree::string< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > > > > > > > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_xsd__cxx__tree__qnameT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__uri_xsd__cxx__tree__ncname_t = {"_p_xsd__cxx__tree__qnameT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__uri_xsd__cxx__tree__ncname_t", "xml_schema::qname *|::xsd::cxx::tree::qname< char,xsd::cxx::tree::simple_type,xsd::cxx::tree::uri,xsd::cxx::tree::ncname > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__sequenceT_schema__simxml__ResourcesGeneral__SimBldgStoryParams_BuildingStory_Default_false_t = {"_p_xsd__cxx__tree__sequenceT_schema__simxml__ResourcesGeneral__SimBldgStoryParams_BuildingStory_Default_false_t", "xsd::cxx::tree::sequence< ::schema::simxml::ResourcesGeneral::SimBldgStoryParams_BuildingStory_Default,false > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__sequence_common = {"_p_xsd__cxx__tree__sequence_common", "xsd::cxx::tree::sequence_common *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__severity = {"_p_xsd__cxx__tree__severity", "::xsd::cxx::tree::severity *|xml_schema::severity *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t = {"_p_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t", "xml_schema::simple_type *|xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t = {"_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t", "schema::simxml::ResourcesGeneral::SimBldgStoryParams::SpaceConfigBelowFloor_type *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::SpaceConfigAboveCeiling_type *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::PlenumConfiguration_type *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::SpaceConfigOccupied_type *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::BldgStoryShape_type *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::BldgStoryName_type *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::WallProfilePathType_type *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::DefaultLibraryType_type *|xml_schema::string *|::xml_schema::string *|xsd::cxx::tree::string< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t = {"_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t", "::xsd::cxx::tree::string< char,xsd::cxx::tree::simple_type > *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::SpaceConfigBelowFloor_type *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::SpaceConfigAboveCeiling_type *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::PlenumConfiguration_type *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::SpaceConfigOccupied_type *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::BldgStoryShape_type *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::BldgStoryName_type *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::WallProfilePathType_type *|schema::simxml::ResourcesGeneral::SimBldgStoryParams::DefaultLibraryType_type *|xml_schema::string *|::xml_schema::string *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__timeT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t = {"_p_xsd__cxx__tree__timeT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t", "xsd::cxx::tree::time< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > > *|xml_schema::time *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__time_zone = {"_p_xsd__cxx__tree__time_zone", "::xsd::cxx::tree::time_zone *|xml_schema::time_zone *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t = {"_p_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t", "xml_schema::token *|xsd::cxx::tree::token< char,xsd::cxx::tree::normalized_string< char,xsd::cxx::tree::string< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > > > > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_string_t = {"_p_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_string_t", "::xsd::cxx::tree::token< char,xsd::cxx::tree::normalized_string > *|xml_schema::token *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__unexpected_elementT_char_t = {"_p_xsd__cxx__tree__unexpected_elementT_char_t", "::xsd::cxx::tree::unexpected_element< char > *|xml_schema::unexpected_element *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__unexpected_enumeratorT_char_t = {"_p_xsd__cxx__tree__unexpected_enumeratorT_char_t", "::xsd::cxx::tree::unexpected_enumerator< char > *|xml_schema::unexpected_enumerator *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_xsd__cxx__tree__uriT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t = {"_p_xsd__cxx__tree__uriT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t", "xml_schema::uri *|xsd::cxx::tree::uri< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_xsd__cxx__tree__uriT_char_xsd__cxx__tree__simple_type_t = {"_p_xsd__cxx__tree__uriT_char_xsd__cxx__tree__simple_type_t", "xml_schema::uri *|::xsd::cxx::tree::uri< char,xsd::cxx::tree::simple_type > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__user_data_keys_templateT_0_t = {"_p_xsd__cxx__tree__user_data_keys_templateT_0_t", "xsd::cxx::tree::user_data_keys_template< 0 > *|xsd::cxx::tree::user_data_keys *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__xml__error_handlerT_char_t = {"_p_xsd__cxx__xml__error_handlerT_char_t", "::xsd::cxx::xml::error_handler< char > *|xml_schema::error_handler *", 0, 0, (void*)0, 0};
 
@@ -15939,8 +15943,10 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_schema__simxml__SimModelCore__SimSpatialStructureElement,
   &_swigt__p_schema__simxml__SimModelCore__SimTemplate,
   &_swigt__p_schema__simxml__SimModelCore__SimTopologicalRepresentationItem,
+  &_swigt__p_schema__simxml__SimModelCore__doubleList,
   &_swigt__p_schema__simxml__SimModelCore__integerList,
   &_swigt__p_schema__simxml__SimModelCore__logical,
+  &_swigt__p_self_,
   &_swigt__p_short,
   &_swigt__p_signed_char,
   &_swigt__p_size_type,
@@ -15957,7 +15963,7 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_value_type,
   &_swigt__p_xercesc__DOMElement,
   &_swigt__p_xsd__cxx__tree___type,
-  &_swigt__p_xsd__cxx__tree__base64_binaryT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t,
+  &_swigt__p_xsd__cxx__tree__base64_binaryT_char_xsd__cxx__tree__simple_type_t,
   &_swigt__p_xsd__cxx__tree__boundsT_char_t,
   &_swigt__p_xsd__cxx__tree__bufferT_char_t,
   &_swigt__p_xsd__cxx__tree__content_order,
@@ -15966,8 +15972,8 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_xsd__cxx__tree__diagnosticsT_char_t,
   &_swigt__p_xsd__cxx__tree__duplicate_idT_char_t,
   &_swigt__p_xsd__cxx__tree__durationT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t,
-  &_swigt__p_xsd__cxx__tree__entitiesT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__entityT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t_t,
-  &_swigt__p_xsd__cxx__tree__entityT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t,
+  &_swigt__p_xsd__cxx__tree__entitiesT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__entity_t,
+  &_swigt__p_xsd__cxx__tree__entityT_char_xsd__cxx__tree__ncname_t,
   &_swigt__p_xsd__cxx__tree__errorT_char_t,
   &_swigt__p_xsd__cxx__tree__exceptionT_char_t,
   &_swigt__p_xsd__cxx__tree__expected_attributeT_char_t,
@@ -15979,37 +15985,37 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_xsd__cxx__tree__gmonth_dayT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t,
   &_swigt__p_xsd__cxx__tree__gyearT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t,
   &_swigt__p_xsd__cxx__tree__gyear_monthT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t,
-  &_swigt__p_xsd__cxx__tree__hex_binaryT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t,
-  &_swigt__p_xsd__cxx__tree__idT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t,
-  &_swigt__p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t,
-  &_swigt__p_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t,
-  &_swigt__p_xsd__cxx__tree__languageT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t,
-  &_swigt__p_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t,
-  &_swigt__p_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t,
-  &_swigt__p_xsd__cxx__tree__nmtokenT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t,
-  &_swigt__p_xsd__cxx__tree__nmtokensT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__nmtokenT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t,
+  &_swigt__p_xsd__cxx__tree__hex_binaryT_char_xsd__cxx__tree__simple_type_t,
+  &_swigt__p_xsd__cxx__tree__idT_char_xsd__cxx__tree__ncname_t,
+  &_swigt__p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t,
+  &_swigt__p_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t,
+  &_swigt__p_xsd__cxx__tree__languageT_char_xsd__cxx__tree__token_t,
+  &_swigt__p_xsd__cxx__tree__nameT_char_xsd__cxx__tree__token_t,
+  &_swigt__p_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__name_t,
+  &_swigt__p_xsd__cxx__tree__nmtokenT_char_xsd__cxx__tree__token_t,
+  &_swigt__p_xsd__cxx__tree__nmtokensT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__nmtoken_t,
   &_swigt__p_xsd__cxx__tree__no_prefix_mappingT_char_t,
   &_swigt__p_xsd__cxx__tree__no_type_infoT_char_t,
-  &_swigt__p_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t,
+  &_swigt__p_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__string_t,
   &_swigt__p_xsd__cxx__tree__not_derivedT_char_t,
   &_swigt__p_xsd__cxx__tree__optionalT_double_true_t,
-  &_swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t,
-  &_swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_t__r_t,
-  &_swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t__r_t,
+  &_swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t,
+  &_swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_t__r_t,
+  &_swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_false_t,
   &_swigt__p_xsd__cxx__tree__parsingT_char_t,
   &_swigt__p_xsd__cxx__tree__propertiesT_char_t,
-  &_swigt__p_xsd__cxx__tree__qnameT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__uriT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t,
+  &_swigt__p_xsd__cxx__tree__qnameT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__uri_xsd__cxx__tree__ncname_t,
   &_swigt__p_xsd__cxx__tree__sequenceT_schema__simxml__ResourcesGeneral__SimBldgStoryParams_BuildingStory_Default_false_t,
   &_swigt__p_xsd__cxx__tree__sequence_common,
   &_swigt__p_xsd__cxx__tree__severity,
   &_swigt__p_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t,
-  &_swigt__p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t,
+  &_swigt__p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t,
   &_swigt__p_xsd__cxx__tree__timeT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t,
   &_swigt__p_xsd__cxx__tree__time_zone,
-  &_swigt__p_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t,
+  &_swigt__p_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_string_t,
   &_swigt__p_xsd__cxx__tree__unexpected_elementT_char_t,
   &_swigt__p_xsd__cxx__tree__unexpected_enumeratorT_char_t,
-  &_swigt__p_xsd__cxx__tree__uriT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t,
+  &_swigt__p_xsd__cxx__tree__uriT_char_xsd__cxx__tree__simple_type_t,
   &_swigt__p_xsd__cxx__tree__user_data_keys_templateT_0_t,
   &_swigt__p_xsd__cxx__xml__error_handlerT_char_t,
 };
@@ -16366,8 +16372,10 @@ static swig_cast_info _swigc__p_schema__simxml__SimModelCore__SimElement[] = {{&
 static swig_cast_info _swigc__p_schema__simxml__SimModelCore__SimObjectTypeDefinition[] = {{&_swigt__p_schema__simxml__SimModelCore__SimObjectTypeDefinition, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_schema__simxml__SimModelCore__SimDistributionFlowElement[] = {{&_swigt__p_schema__simxml__SimModelCore__SimDistributionFlowElement, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_schema__simxml__SimModelCore__SimRoot[] = {  {&_swigt__p_schema__simxml__SimModelCore__SimObjectDefinition, _p_schema__simxml__SimModelCore__SimObjectDefinitionTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimDistributionElement, _p_schema__simxml__SimModelCore__SimDistributionElementTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimSpatialStructureElement, _p_schema__simxml__SimModelCore__SimSpatialStructureElementTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeneral__SimBldgStoryParams_BuildingStory_Default, _p_schema__simxml__ResourcesGeneral__SimBldgStoryParams_BuildingStory_DefaultTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeneral__SimBldgStoryParams_BuildingStory, _p_schema__simxml__ResourcesGeneral__SimBldgStoryParams_BuildingStoryTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeneral__SimBldgStoryParams, _p_schema__simxml__ResourcesGeneral__SimBldgStoryParamsTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimTemplate, _p_schema__simxml__SimModelCore__SimTemplateTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeneral__SimNode, _p_schema__simxml__ResourcesGeneral__SimNodeTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__MepModel__SimFlowEnergyConverter, _p_schema__simxml__MepModel__SimFlowEnergyConverterTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimAppDefault, _p_schema__simxml__SimModelCore__SimAppDefaultTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimActorDefinition, _p_schema__simxml__SimModelCore__SimActorDefinitionTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeometry__SimProfileDefinition, _p_schema__simxml__ResourcesGeometry__SimProfileDefinitionTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeneral__SimArrayParams, _p_schema__simxml__ResourcesGeneral__SimArrayParamsTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimDistributionControlElement, _p_schema__simxml__SimModelCore__SimDistributionControlElementTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeneral__SimPort, _p_schema__simxml__ResourcesGeneral__SimPortTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimPropertySetDefinition, _p_schema__simxml__SimModelCore__SimPropertySetDefinitionTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimGroup, _p_schema__simxml__SimModelCore__SimGroupTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeneral__SimUnitType, _p_schema__simxml__ResourcesGeneral__SimUnitTypeTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimBuildingElement, _p_schema__simxml__SimModelCore__SimBuildingElementTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimObjectPlacement, _p_schema__simxml__SimModelCore__SimObjectPlacementTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimTopologicalRepresentationItem, _p_schema__simxml__SimModelCore__SimTopologicalRepresentationItemTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimResourceObject, _p_schema__simxml__SimModelCore__SimResourceObjectTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimFeatureElement, _p_schema__simxml__SimModelCore__SimFeatureElementTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimObject, _p_schema__simxml__SimModelCore__SimObjectTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimElement, _p_schema__simxml__SimModelCore__SimElementTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimGeometricRepresentationItem, _p_schema__simxml__SimModelCore__SimGeometricRepresentationItemTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimBldgModelParams, _p_schema__simxml__SimModelCore__SimBldgModelParamsTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimObjectTypeDefinition, _p_schema__simxml__SimModelCore__SimObjectTypeDefinitionTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimRoot, 0, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimRepresentationItem, _p_schema__simxml__SimModelCore__SimRepresentationItemTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimRepresentation, _p_schema__simxml__SimModelCore__SimRepresentationTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimDistributionFlowElement, _p_schema__simxml__SimModelCore__SimDistributionFlowElementTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_schema__simxml__SimModelCore__doubleList[] = {  {&_swigt__p_schema__simxml__SimModelCore__doubleList, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_schema__simxml__SimModelCore__integerList[] = {  {&_swigt__p_schema__simxml__SimModelCore__integerList, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_schema__simxml__SimModelCore__logical[] = {  {&_swigt__p_schema__simxml__SimModelCore__logical, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_self_[] = {  {&_swigt__p_self_, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_short[] = {  {&_swigt__p_short, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_signed_char[] = {  {&_swigt__p_signed_char, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_size_type[] = {  {&_swigt__p_size_type, 0, 0, 0},{0, 0, 0, 0}};
@@ -16384,7 +16392,7 @@ static swig_cast_info _swigc__p_unsigned_short[] = {  {&_swigt__p_unsigned_short
 static swig_cast_info _swigc__p_value_type[] = {  {&_swigt__p_value_type, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xercesc__DOMElement[] = {  {&_swigt__p_xercesc__DOMElement, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree___type[] = {  {&_swigt__p_schema__simxml__SimModelCore__SimObjectDefinition, _p_schema__simxml__SimModelCore__SimObjectDefinitionTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimDistributionElement, _p_schema__simxml__SimModelCore__SimDistributionElementTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimSpatialStructureElement, _p_schema__simxml__SimModelCore__SimSpatialStructureElementTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeneral__SimBldgStoryParams_BuildingStory_Default, _p_schema__simxml__ResourcesGeneral__SimBldgStoryParams_BuildingStory_DefaultTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeneral__SimBldgStoryParams_BuildingStory, _p_schema__simxml__ResourcesGeneral__SimBldgStoryParams_BuildingStoryTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeneral__SimBldgStoryParams, _p_schema__simxml__ResourcesGeneral__SimBldgStoryParamsTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimTemplate, _p_schema__simxml__SimModelCore__SimTemplateTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeneral__SimNode, _p_schema__simxml__ResourcesGeneral__SimNodeTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__MepModel__SimFlowEnergyConverter, _p_schema__simxml__MepModel__SimFlowEnergyConverterTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimAppDefault, _p_schema__simxml__SimModelCore__SimAppDefaultTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimActorDefinition, _p_schema__simxml__SimModelCore__SimActorDefinitionTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeometry__SimProfileDefinition, _p_schema__simxml__ResourcesGeometry__SimProfileDefinitionTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeneral__SimArrayParams, _p_schema__simxml__ResourcesGeneral__SimArrayParamsTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimDistributionControlElement, _p_schema__simxml__SimModelCore__SimDistributionControlElementTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeneral__SimPort, _p_schema__simxml__ResourcesGeneral__SimPortTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimPropertySetDefinition, _p_schema__simxml__SimModelCore__SimPropertySetDefinitionTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimGroup, _p_schema__simxml__SimModelCore__SimGroupTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeneral__SimUnitType, _p_schema__simxml__ResourcesGeneral__SimUnitTypeTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimBuildingElement, _p_schema__simxml__SimModelCore__SimBuildingElementTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimObjectPlacement, _p_schema__simxml__SimModelCore__SimObjectPlacementTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimTopologicalRepresentationItem, _p_schema__simxml__SimModelCore__SimTopologicalRepresentationItemTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimResourceObject, _p_schema__simxml__SimModelCore__SimResourceObjectTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimFeatureElement, _p_schema__simxml__SimModelCore__SimFeatureElementTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimObject, _p_schema__simxml__SimModelCore__SimObjectTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimElement, _p_schema__simxml__SimModelCore__SimElementTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimGeometricRepresentationItem, _p_schema__simxml__SimModelCore__SimGeometricRepresentationItemTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimBldgModelParams, _p_schema__simxml__SimModelCore__SimBldgModelParamsTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimObjectTypeDefinition, _p_schema__simxml__SimModelCore__SimObjectTypeDefinitionTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_xsd__cxx__tree___type, 0, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimRepresentationItem, _p_schema__simxml__SimModelCore__SimRepresentationItemTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimRepresentation, _p_schema__simxml__SimModelCore__SimRepresentationTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimDistributionFlowElement, _p_schema__simxml__SimModelCore__SimDistributionFlowElementTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimRoot, _p_schema__simxml__SimModelCore__SimRootTo_p_xsd__cxx__tree___type, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_xsd__cxx__tree__base64_binaryT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t[] = {  {&_swigt__p_xsd__cxx__tree__base64_binaryT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_xsd__cxx__tree__base64_binaryT_char_xsd__cxx__tree__simple_type_t[] = {  {&_swigt__p_xsd__cxx__tree__base64_binaryT_char_xsd__cxx__tree__simple_type_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__boundsT_char_t[] = {  {&_swigt__p_xsd__cxx__tree__boundsT_char_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__bufferT_char_t[] = {  {&_swigt__p_xsd__cxx__tree__bufferT_char_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__content_order[] = {  {&_swigt__p_xsd__cxx__tree__content_order, 0, 0, 0},{0, 0, 0, 0}};
@@ -16393,8 +16401,8 @@ static swig_cast_info _swigc__p_xsd__cxx__tree__date_timeT_char_xsd__cxx__tree__
 static swig_cast_info _swigc__p_xsd__cxx__tree__diagnosticsT_char_t[] = {  {&_swigt__p_xsd__cxx__tree__diagnosticsT_char_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__duplicate_idT_char_t[] = {  {&_swigt__p_xsd__cxx__tree__duplicate_idT_char_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__durationT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t[] = {  {&_swigt__p_xsd__cxx__tree__durationT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_xsd__cxx__tree__entitiesT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__entityT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t_t[] = {  {&_swigt__p_xsd__cxx__tree__entitiesT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__entityT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_xsd__cxx__tree__entityT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t[] = {  {&_swigt__p_xsd__cxx__tree__entityT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_xsd__cxx__tree__entitiesT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__entity_t[] = {  {&_swigt__p_xsd__cxx__tree__entitiesT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__entity_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_xsd__cxx__tree__entityT_char_xsd__cxx__tree__ncname_t[] = {  {&_swigt__p_xsd__cxx__tree__entityT_char_xsd__cxx__tree__ncname_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__errorT_char_t[] = {  {&_swigt__p_xsd__cxx__tree__errorT_char_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__exceptionT_char_t[] = {  {&_swigt__p_xsd__cxx__tree__exceptionT_char_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__expected_attributeT_char_t[] = {  {&_swigt__p_xsd__cxx__tree__expected_attributeT_char_t, 0, 0, 0},{0, 0, 0, 0}};
@@ -16406,37 +16414,37 @@ static swig_cast_info _swigc__p_xsd__cxx__tree__gmonthT_char_xsd__cxx__tree__sim
 static swig_cast_info _swigc__p_xsd__cxx__tree__gmonth_dayT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t[] = {  {&_swigt__p_xsd__cxx__tree__gmonth_dayT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__gyearT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t[] = {  {&_swigt__p_xsd__cxx__tree__gyearT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__gyear_monthT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t[] = {  {&_swigt__p_xsd__cxx__tree__gyear_monthT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_xsd__cxx__tree__hex_binaryT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t[] = {  {&_swigt__p_xsd__cxx__tree__hex_binaryT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_xsd__cxx__tree__idT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t[] = {  {&_swigt__p_xsd__cxx__tree__idT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t[] = {  {&_swigt__p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t[] = {  {&_swigt__p_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_xsd__cxx__tree__languageT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t[] = {  {&_swigt__p_xsd__cxx__tree__languageT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t[] = {  {&_swigt__p_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t[] = {  {&_swigt__p_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_xsd__cxx__tree__nmtokenT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t[] = {  {&_swigt__p_xsd__cxx__tree__nmtokenT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_xsd__cxx__tree__nmtokensT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__nmtokenT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t[] = {  {&_swigt__p_xsd__cxx__tree__nmtokensT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__nmtokenT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_xsd__cxx__tree__hex_binaryT_char_xsd__cxx__tree__simple_type_t[] = {  {&_swigt__p_xsd__cxx__tree__hex_binaryT_char_xsd__cxx__tree__simple_type_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_xsd__cxx__tree__idT_char_xsd__cxx__tree__ncname_t[] = {  {&_swigt__p_xsd__cxx__tree__idT_char_xsd__cxx__tree__ncname_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t[] = {  {&_swigt__p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t[] = {  {&_swigt__p_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_xsd__cxx__tree__languageT_char_xsd__cxx__tree__token_t[] = {  {&_swigt__p_xsd__cxx__tree__languageT_char_xsd__cxx__tree__token_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_xsd__cxx__tree__nameT_char_xsd__cxx__tree__token_t[] = {  {&_swigt__p_xsd__cxx__tree__nameT_char_xsd__cxx__tree__token_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__name_t[] = {  {&_swigt__p_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__name_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_xsd__cxx__tree__nmtokenT_char_xsd__cxx__tree__token_t[] = {  {&_swigt__p_xsd__cxx__tree__nmtokenT_char_xsd__cxx__tree__token_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_xsd__cxx__tree__nmtokensT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__nmtoken_t[] = {  {&_swigt__p_xsd__cxx__tree__nmtokensT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__nmtoken_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__no_prefix_mappingT_char_t[] = {  {&_swigt__p_xsd__cxx__tree__no_prefix_mappingT_char_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__no_type_infoT_char_t[] = {  {&_swigt__p_xsd__cxx__tree__no_type_infoT_char_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t[] = {  {&_swigt__p_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__string_t[] = {  {&_swigt__p_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__string_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__not_derivedT_char_t[] = {  {&_swigt__p_xsd__cxx__tree__not_derivedT_char_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__optionalT_double_true_t[] = {  {&_swigt__p_xsd__cxx__tree__optionalT_double_true_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t[] = {  {&_swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_t__r_t[] = {  {&_swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_t__r_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t__r_t[] = {  {&_swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t__r_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t[] = {  {&_swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_t__r_t[] = {  {&_swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_t__r_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_false_t[] = {  {&_swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_false_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__parsingT_char_t[] = {  {&_swigt__p_xsd__cxx__tree__parsingT_char_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__propertiesT_char_t[] = {  {&_swigt__p_xsd__cxx__tree__propertiesT_char_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_xsd__cxx__tree__qnameT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__uriT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t[] = {  {&_swigt__p_xsd__cxx__tree__qnameT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__uriT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_xsd__cxx__tree__qnameT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__uri_xsd__cxx__tree__ncname_t[] = {  {&_swigt__p_xsd__cxx__tree__qnameT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__uri_xsd__cxx__tree__ncname_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__sequenceT_schema__simxml__ResourcesGeneral__SimBldgStoryParams_BuildingStory_Default_false_t[] = {  {&_swigt__p_xsd__cxx__tree__sequenceT_schema__simxml__ResourcesGeneral__SimBldgStoryParams_BuildingStory_Default_false_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__sequence_common[] = {  {&_swigt__p_xsd__cxx__tree__sequenceT_schema__simxml__ResourcesGeneral__SimBldgStoryParams_BuildingStory_Default_false_t, _p_xsd__cxx__tree__sequenceT_schema__simxml__ResourcesGeneral__SimBldgStoryParams_BuildingStory_Default_false_tTo_p_xsd__cxx__tree__sequence_common, 0, 0},  {&_swigt__p_xsd__cxx__tree__sequence_common, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__severity[] = {  {&_swigt__p_xsd__cxx__tree__severity, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t[] = {  {&_swigt__p_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t[] = {  {&_swigt__p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t[] = {  {&_swigt__p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__timeT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t[] = {  {&_swigt__p_xsd__cxx__tree__timeT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__time_zone[] = {  {&_swigt__p_xsd__cxx__tree__time_zone, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t[] = {  {&_swigt__p_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_string_t[] = {  {&_swigt__p_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_string_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__unexpected_elementT_char_t[] = {  {&_swigt__p_xsd__cxx__tree__unexpected_elementT_char_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__unexpected_enumeratorT_char_t[] = {  {&_swigt__p_xsd__cxx__tree__unexpected_enumeratorT_char_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_xsd__cxx__tree__uriT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t[] = {  {&_swigt__p_xsd__cxx__tree__uriT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_xsd__cxx__tree__uriT_char_xsd__cxx__tree__simple_type_t[] = {  {&_swigt__p_xsd__cxx__tree__uriT_char_xsd__cxx__tree__simple_type_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__user_data_keys_templateT_0_t[] = {  {&_swigt__p_xsd__cxx__tree__user_data_keys_templateT_0_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__xml__error_handlerT_char_t[] = {  {&_swigt__p_xsd__cxx__xml__error_handlerT_char_t, 0, 0, 0},{0, 0, 0, 0}};
 
@@ -16793,8 +16801,10 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_schema__simxml__SimModelCore__SimSpatialStructureElement,
   _swigc__p_schema__simxml__SimModelCore__SimTemplate,
   _swigc__p_schema__simxml__SimModelCore__SimTopologicalRepresentationItem,
+  _swigc__p_schema__simxml__SimModelCore__doubleList,
   _swigc__p_schema__simxml__SimModelCore__integerList,
   _swigc__p_schema__simxml__SimModelCore__logical,
+  _swigc__p_self_,
   _swigc__p_short,
   _swigc__p_signed_char,
   _swigc__p_size_type,
@@ -16811,7 +16821,7 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_value_type,
   _swigc__p_xercesc__DOMElement,
   _swigc__p_xsd__cxx__tree___type,
-  _swigc__p_xsd__cxx__tree__base64_binaryT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t,
+  _swigc__p_xsd__cxx__tree__base64_binaryT_char_xsd__cxx__tree__simple_type_t,
   _swigc__p_xsd__cxx__tree__boundsT_char_t,
   _swigc__p_xsd__cxx__tree__bufferT_char_t,
   _swigc__p_xsd__cxx__tree__content_order,
@@ -16820,8 +16830,8 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_xsd__cxx__tree__diagnosticsT_char_t,
   _swigc__p_xsd__cxx__tree__duplicate_idT_char_t,
   _swigc__p_xsd__cxx__tree__durationT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t,
-  _swigc__p_xsd__cxx__tree__entitiesT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__entityT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t_t,
-  _swigc__p_xsd__cxx__tree__entityT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t,
+  _swigc__p_xsd__cxx__tree__entitiesT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__entity_t,
+  _swigc__p_xsd__cxx__tree__entityT_char_xsd__cxx__tree__ncname_t,
   _swigc__p_xsd__cxx__tree__errorT_char_t,
   _swigc__p_xsd__cxx__tree__exceptionT_char_t,
   _swigc__p_xsd__cxx__tree__expected_attributeT_char_t,
@@ -16833,37 +16843,37 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_xsd__cxx__tree__gmonth_dayT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t,
   _swigc__p_xsd__cxx__tree__gyearT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t,
   _swigc__p_xsd__cxx__tree__gyear_monthT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t,
-  _swigc__p_xsd__cxx__tree__hex_binaryT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t,
-  _swigc__p_xsd__cxx__tree__idT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t,
-  _swigc__p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t,
-  _swigc__p_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t,
-  _swigc__p_xsd__cxx__tree__languageT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t,
-  _swigc__p_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t,
-  _swigc__p_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t,
-  _swigc__p_xsd__cxx__tree__nmtokenT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t,
-  _swigc__p_xsd__cxx__tree__nmtokensT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__nmtokenT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t,
+  _swigc__p_xsd__cxx__tree__hex_binaryT_char_xsd__cxx__tree__simple_type_t,
+  _swigc__p_xsd__cxx__tree__idT_char_xsd__cxx__tree__ncname_t,
+  _swigc__p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t,
+  _swigc__p_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t,
+  _swigc__p_xsd__cxx__tree__languageT_char_xsd__cxx__tree__token_t,
+  _swigc__p_xsd__cxx__tree__nameT_char_xsd__cxx__tree__token_t,
+  _swigc__p_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__name_t,
+  _swigc__p_xsd__cxx__tree__nmtokenT_char_xsd__cxx__tree__token_t,
+  _swigc__p_xsd__cxx__tree__nmtokensT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__nmtoken_t,
   _swigc__p_xsd__cxx__tree__no_prefix_mappingT_char_t,
   _swigc__p_xsd__cxx__tree__no_type_infoT_char_t,
-  _swigc__p_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t,
+  _swigc__p_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__string_t,
   _swigc__p_xsd__cxx__tree__not_derivedT_char_t,
   _swigc__p_xsd__cxx__tree__optionalT_double_true_t,
-  _swigc__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t,
-  _swigc__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t_t__r_t,
-  _swigc__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t__r_t,
+  _swigc__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t,
+  _swigc__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_t__r_t,
+  _swigc__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_false_t,
   _swigc__p_xsd__cxx__tree__parsingT_char_t,
   _swigc__p_xsd__cxx__tree__propertiesT_char_t,
-  _swigc__p_xsd__cxx__tree__qnameT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__uriT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t,
+  _swigc__p_xsd__cxx__tree__qnameT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__uri_xsd__cxx__tree__ncname_t,
   _swigc__p_xsd__cxx__tree__sequenceT_schema__simxml__ResourcesGeneral__SimBldgStoryParams_BuildingStory_Default_false_t,
   _swigc__p_xsd__cxx__tree__sequence_common,
   _swigc__p_xsd__cxx__tree__severity,
   _swigc__p_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t,
-  _swigc__p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t,
+  _swigc__p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t,
   _swigc__p_xsd__cxx__tree__timeT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t,
   _swigc__p_xsd__cxx__tree__time_zone,
-  _swigc__p_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t,
+  _swigc__p_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_string_t,
   _swigc__p_xsd__cxx__tree__unexpected_elementT_char_t,
   _swigc__p_xsd__cxx__tree__unexpected_enumeratorT_char_t,
-  _swigc__p_xsd__cxx__tree__uriT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t,
+  _swigc__p_xsd__cxx__tree__uriT_char_xsd__cxx__tree__simple_type_t,
   _swigc__p_xsd__cxx__tree__user_data_keys_templateT_0_t,
   _swigc__p_xsd__cxx__xml__error_handlerT_char_t,
 };

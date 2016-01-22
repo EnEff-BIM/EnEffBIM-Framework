@@ -274,7 +274,7 @@ namespace schema
         // SimCntrl_ControlTypeScheduleName
         //
         typedef ::xml_schema::idref SimCntrl_ControlTypeScheduleName_type;
-        typedef ::xsd::cxx::tree::optional< SimCntrl_ControlTypeScheduleName_type > SimCntrl_ControlTypeScheduleName_optional;
+        typedef ::xsd::cxx::tree::optional< SimCntrl_ControlTypeScheduleName_type, false > SimCntrl_ControlTypeScheduleName_optional;
         typedef ::xsd::cxx::tree::traits< SimCntrl_ControlTypeScheduleName_type, char > SimCntrl_ControlTypeScheduleName_traits;
 
         const SimCntrl_ControlTypeScheduleName_optional&
@@ -337,7 +337,7 @@ namespace schema
         // ZoneCont_Tstat_OperativeTemp_ThermostatName
         //
         typedef ::xml_schema::idref ZoneCont_Tstat_OperativeTemp_ThermostatName_type;
-        typedef ::xsd::cxx::tree::optional< ZoneCont_Tstat_OperativeTemp_ThermostatName_type > ZoneCont_Tstat_OperativeTemp_ThermostatName_optional;
+        typedef ::xsd::cxx::tree::optional< ZoneCont_Tstat_OperativeTemp_ThermostatName_type, false > ZoneCont_Tstat_OperativeTemp_ThermostatName_optional;
         typedef ::xsd::cxx::tree::traits< ZoneCont_Tstat_OperativeTemp_ThermostatName_type, char > ZoneCont_Tstat_OperativeTemp_ThermostatName_traits;
 
         const ZoneCont_Tstat_OperativeTemp_ThermostatName_optional&
@@ -358,7 +358,7 @@ namespace schema
         // ZoneCont_Tstat_OperativeTemp_RadiativeFractionInputMode
         //
         typedef ::xml_schema::string ZoneCont_Tstat_OperativeTemp_RadiativeFractionInputMode_type;
-        typedef ::xsd::cxx::tree::optional< ZoneCont_Tstat_OperativeTemp_RadiativeFractionInputMode_type > ZoneCont_Tstat_OperativeTemp_RadiativeFractionInputMode_optional;
+        typedef ::xsd::cxx::tree::optional< ZoneCont_Tstat_OperativeTemp_RadiativeFractionInputMode_type, false > ZoneCont_Tstat_OperativeTemp_RadiativeFractionInputMode_optional;
         typedef ::xsd::cxx::tree::traits< ZoneCont_Tstat_OperativeTemp_RadiativeFractionInputMode_type, char > ZoneCont_Tstat_OperativeTemp_RadiativeFractionInputMode_traits;
 
         const ZoneCont_Tstat_OperativeTemp_RadiativeFractionInputMode_optional&
@@ -379,7 +379,7 @@ namespace schema
         // ZoneCont_Tstat_OperativeTemp_FixedRadiativeFraction
         //
         typedef ::xml_schema::double_ ZoneCont_Tstat_OperativeTemp_FixedRadiativeFraction_type;
-        typedef ::xsd::cxx::tree::optional< ZoneCont_Tstat_OperativeTemp_FixedRadiativeFraction_type > ZoneCont_Tstat_OperativeTemp_FixedRadiativeFraction_optional;
+        typedef ::xsd::cxx::tree::optional< ZoneCont_Tstat_OperativeTemp_FixedRadiativeFraction_type, true > ZoneCont_Tstat_OperativeTemp_FixedRadiativeFraction_optional;
         typedef ::xsd::cxx::tree::traits< ZoneCont_Tstat_OperativeTemp_FixedRadiativeFraction_type, char, ::xsd::cxx::tree::schema_type::double_ > ZoneCont_Tstat_OperativeTemp_FixedRadiativeFraction_traits;
 
         const ZoneCont_Tstat_OperativeTemp_FixedRadiativeFraction_optional&
@@ -397,7 +397,7 @@ namespace schema
         // ZoneCont_Tstat_OperativeTemp_RadiativeFractionScheduleName
         //
         typedef ::xml_schema::idref ZoneCont_Tstat_OperativeTemp_RadiativeFractionScheduleName_type;
-        typedef ::xsd::cxx::tree::optional< ZoneCont_Tstat_OperativeTemp_RadiativeFractionScheduleName_type > ZoneCont_Tstat_OperativeTemp_RadiativeFractionScheduleName_optional;
+        typedef ::xsd::cxx::tree::optional< ZoneCont_Tstat_OperativeTemp_RadiativeFractionScheduleName_type, false > ZoneCont_Tstat_OperativeTemp_RadiativeFractionScheduleName_optional;
         typedef ::xsd::cxx::tree::traits< ZoneCont_Tstat_OperativeTemp_RadiativeFractionScheduleName_type, char > ZoneCont_Tstat_OperativeTemp_RadiativeFractionScheduleName_traits;
 
         const ZoneCont_Tstat_OperativeTemp_RadiativeFractionScheduleName_optional&
@@ -418,7 +418,7 @@ namespace schema
         // ZoneCont_Tstat_TempAndHumid_ThermostatName
         //
         typedef ::xml_schema::idref ZoneCont_Tstat_TempAndHumid_ThermostatName_type;
-        typedef ::xsd::cxx::tree::optional< ZoneCont_Tstat_TempAndHumid_ThermostatName_type > ZoneCont_Tstat_TempAndHumid_ThermostatName_optional;
+        typedef ::xsd::cxx::tree::optional< ZoneCont_Tstat_TempAndHumid_ThermostatName_type, false > ZoneCont_Tstat_TempAndHumid_ThermostatName_optional;
         typedef ::xsd::cxx::tree::traits< ZoneCont_Tstat_TempAndHumid_ThermostatName_type, char > ZoneCont_Tstat_TempAndHumid_ThermostatName_traits;
 
         const ZoneCont_Tstat_TempAndHumid_ThermostatName_optional&
@@ -439,7 +439,7 @@ namespace schema
         // ZoneCont_Tstat_TempAndHumid_DehumidifyingRelativeHumiditySetpointScheduleName
         //
         typedef ::xml_schema::idref ZoneCont_Tstat_TempAndHumid_DehumidifyingRelativeHumiditySetpointScheduleName_type;
-        typedef ::xsd::cxx::tree::optional< ZoneCont_Tstat_TempAndHumid_DehumidifyingRelativeHumiditySetpointScheduleName_type > ZoneCont_Tstat_TempAndHumid_DehumidifyingRelativeHumiditySetpointScheduleName_optional;
+        typedef ::xsd::cxx::tree::optional< ZoneCont_Tstat_TempAndHumid_DehumidifyingRelativeHumiditySetpointScheduleName_type, false > ZoneCont_Tstat_TempAndHumid_DehumidifyingRelativeHumiditySetpointScheduleName_optional;
         typedef ::xsd::cxx::tree::traits< ZoneCont_Tstat_TempAndHumid_DehumidifyingRelativeHumiditySetpointScheduleName_type, char > ZoneCont_Tstat_TempAndHumid_DehumidifyingRelativeHumiditySetpointScheduleName_traits;
 
         const ZoneCont_Tstat_TempAndHumid_DehumidifyingRelativeHumiditySetpointScheduleName_optional&
@@ -460,7 +460,7 @@ namespace schema
         // ZoneCont_Tstat_TempAndHumid_DehumidCntlType
         //
         typedef ::xml_schema::string ZoneCont_Tstat_TempAndHumid_DehumidCntlType_type;
-        typedef ::xsd::cxx::tree::optional< ZoneCont_Tstat_TempAndHumid_DehumidCntlType_type > ZoneCont_Tstat_TempAndHumid_DehumidCntlType_optional;
+        typedef ::xsd::cxx::tree::optional< ZoneCont_Tstat_TempAndHumid_DehumidCntlType_type, false > ZoneCont_Tstat_TempAndHumid_DehumidCntlType_optional;
         typedef ::xsd::cxx::tree::traits< ZoneCont_Tstat_TempAndHumid_DehumidCntlType_type, char > ZoneCont_Tstat_TempAndHumid_DehumidCntlType_traits;
 
         const ZoneCont_Tstat_TempAndHumid_DehumidCntlType_optional&
@@ -481,7 +481,7 @@ namespace schema
         // ZoneCont_Tstat_TempAndHumid_OvercoolRangeInputMethod
         //
         typedef ::xml_schema::string ZoneCont_Tstat_TempAndHumid_OvercoolRangeInputMethod_type;
-        typedef ::xsd::cxx::tree::optional< ZoneCont_Tstat_TempAndHumid_OvercoolRangeInputMethod_type > ZoneCont_Tstat_TempAndHumid_OvercoolRangeInputMethod_optional;
+        typedef ::xsd::cxx::tree::optional< ZoneCont_Tstat_TempAndHumid_OvercoolRangeInputMethod_type, false > ZoneCont_Tstat_TempAndHumid_OvercoolRangeInputMethod_optional;
         typedef ::xsd::cxx::tree::traits< ZoneCont_Tstat_TempAndHumid_OvercoolRangeInputMethod_type, char > ZoneCont_Tstat_TempAndHumid_OvercoolRangeInputMethod_traits;
 
         const ZoneCont_Tstat_TempAndHumid_OvercoolRangeInputMethod_optional&
@@ -502,7 +502,7 @@ namespace schema
         // ZoneCont_Tstat_TempAndHumid_OvercoolConstantRange
         //
         typedef ::xml_schema::double_ ZoneCont_Tstat_TempAndHumid_OvercoolConstantRange_type;
-        typedef ::xsd::cxx::tree::optional< ZoneCont_Tstat_TempAndHumid_OvercoolConstantRange_type > ZoneCont_Tstat_TempAndHumid_OvercoolConstantRange_optional;
+        typedef ::xsd::cxx::tree::optional< ZoneCont_Tstat_TempAndHumid_OvercoolConstantRange_type, true > ZoneCont_Tstat_TempAndHumid_OvercoolConstantRange_optional;
         typedef ::xsd::cxx::tree::traits< ZoneCont_Tstat_TempAndHumid_OvercoolConstantRange_type, char, ::xsd::cxx::tree::schema_type::double_ > ZoneCont_Tstat_TempAndHumid_OvercoolConstantRange_traits;
 
         const ZoneCont_Tstat_TempAndHumid_OvercoolConstantRange_optional&
@@ -520,7 +520,7 @@ namespace schema
         // ZoneCont_Tstat_TempAndHumid_OvercoolRangeSchedName
         //
         typedef ::xml_schema::idref ZoneCont_Tstat_TempAndHumid_OvercoolRangeSchedName_type;
-        typedef ::xsd::cxx::tree::optional< ZoneCont_Tstat_TempAndHumid_OvercoolRangeSchedName_type > ZoneCont_Tstat_TempAndHumid_OvercoolRangeSchedName_optional;
+        typedef ::xsd::cxx::tree::optional< ZoneCont_Tstat_TempAndHumid_OvercoolRangeSchedName_type, false > ZoneCont_Tstat_TempAndHumid_OvercoolRangeSchedName_optional;
         typedef ::xsd::cxx::tree::traits< ZoneCont_Tstat_TempAndHumid_OvercoolRangeSchedName_type, char > ZoneCont_Tstat_TempAndHumid_OvercoolRangeSchedName_traits;
 
         const ZoneCont_Tstat_TempAndHumid_OvercoolRangeSchedName_optional&
@@ -541,7 +541,7 @@ namespace schema
         // ZoneCont_Tstat_TempAndHumid_OvercoolCtrlRatio
         //
         typedef ::xml_schema::double_ ZoneCont_Tstat_TempAndHumid_OvercoolCtrlRatio_type;
-        typedef ::xsd::cxx::tree::optional< ZoneCont_Tstat_TempAndHumid_OvercoolCtrlRatio_type > ZoneCont_Tstat_TempAndHumid_OvercoolCtrlRatio_optional;
+        typedef ::xsd::cxx::tree::optional< ZoneCont_Tstat_TempAndHumid_OvercoolCtrlRatio_type, true > ZoneCont_Tstat_TempAndHumid_OvercoolCtrlRatio_optional;
         typedef ::xsd::cxx::tree::traits< ZoneCont_Tstat_TempAndHumid_OvercoolCtrlRatio_type, char, ::xsd::cxx::tree::schema_type::double_ > ZoneCont_Tstat_TempAndHumid_OvercoolCtrlRatio_traits;
 
         const ZoneCont_Tstat_TempAndHumid_OvercoolCtrlRatio_optional&

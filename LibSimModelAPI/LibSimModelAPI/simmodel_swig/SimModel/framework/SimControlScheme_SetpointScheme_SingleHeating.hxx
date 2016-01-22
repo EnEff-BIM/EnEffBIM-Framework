@@ -263,7 +263,7 @@ namespace schema
         // SimCntrlSchm_SetpointTempSchedName
         //
         typedef ::xml_schema::idref SimCntrlSchm_SetpointTempSchedName_type;
-        typedef ::xsd::cxx::tree::optional< SimCntrlSchm_SetpointTempSchedName_type > SimCntrlSchm_SetpointTempSchedName_optional;
+        typedef ::xsd::cxx::tree::optional< SimCntrlSchm_SetpointTempSchedName_type, false > SimCntrlSchm_SetpointTempSchedName_optional;
         typedef ::xsd::cxx::tree::traits< SimCntrlSchm_SetpointTempSchedName_type, char > SimCntrlSchm_SetpointTempSchedName_traits;
 
         const SimCntrlSchm_SetpointTempSchedName_optional&

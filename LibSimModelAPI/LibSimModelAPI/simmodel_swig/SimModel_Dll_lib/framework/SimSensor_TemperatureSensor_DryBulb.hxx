@@ -263,7 +263,7 @@ namespace schema
         // SimSensor_Name
         //
         typedef ::xml_schema::string SimSensor_Name_type;
-        typedef ::xsd::cxx::tree::optional< SimSensor_Name_type > SimSensor_Name_optional;
+        typedef ::xsd::cxx::tree::optional< SimSensor_Name_type, false > SimSensor_Name_optional;
         typedef ::xsd::cxx::tree::traits< SimSensor_Name_type, char > SimSensor_Name_traits;
 
         const SimSensor_Name_optional&
@@ -284,7 +284,7 @@ namespace schema
         // SimSensor_Controller
         //
         typedef ::xml_schema::idref SimSensor_Controller_type;
-        typedef ::xsd::cxx::tree::optional< SimSensor_Controller_type > SimSensor_Controller_optional;
+        typedef ::xsd::cxx::tree::optional< SimSensor_Controller_type, false > SimSensor_Controller_optional;
         typedef ::xsd::cxx::tree::traits< SimSensor_Controller_type, char > SimSensor_Controller_traits;
 
         const SimSensor_Controller_optional&
@@ -305,7 +305,7 @@ namespace schema
         // SimSensor_Accuracy
         //
         typedef ::xml_schema::double_ SimSensor_Accuracy_type;
-        typedef ::xsd::cxx::tree::optional< SimSensor_Accuracy_type > SimSensor_Accuracy_optional;
+        typedef ::xsd::cxx::tree::optional< SimSensor_Accuracy_type, true > SimSensor_Accuracy_optional;
         typedef ::xsd::cxx::tree::traits< SimSensor_Accuracy_type, char, ::xsd::cxx::tree::schema_type::double_ > SimSensor_Accuracy_traits;
 
         const SimSensor_Accuracy_optional&
@@ -323,7 +323,7 @@ namespace schema
         // SimSensor_MinSensedValue
         //
         typedef ::xml_schema::double_ SimSensor_MinSensedValue_type;
-        typedef ::xsd::cxx::tree::optional< SimSensor_MinSensedValue_type > SimSensor_MinSensedValue_optional;
+        typedef ::xsd::cxx::tree::optional< SimSensor_MinSensedValue_type, true > SimSensor_MinSensedValue_optional;
         typedef ::xsd::cxx::tree::traits< SimSensor_MinSensedValue_type, char, ::xsd::cxx::tree::schema_type::double_ > SimSensor_MinSensedValue_traits;
 
         const SimSensor_MinSensedValue_optional&
@@ -341,7 +341,7 @@ namespace schema
         // SimSensor_MaxSensedValue
         //
         typedef ::xml_schema::double_ SimSensor_MaxSensedValue_type;
-        typedef ::xsd::cxx::tree::optional< SimSensor_MaxSensedValue_type > SimSensor_MaxSensedValue_optional;
+        typedef ::xsd::cxx::tree::optional< SimSensor_MaxSensedValue_type, true > SimSensor_MaxSensedValue_optional;
         typedef ::xsd::cxx::tree::traits< SimSensor_MaxSensedValue_type, char, ::xsd::cxx::tree::schema_type::double_ > SimSensor_MaxSensedValue_traits;
 
         const SimSensor_MaxSensedValue_optional&

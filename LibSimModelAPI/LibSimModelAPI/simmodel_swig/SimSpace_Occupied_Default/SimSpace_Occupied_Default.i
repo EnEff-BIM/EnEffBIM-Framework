@@ -10,6 +10,15 @@ using namespace xsd::cxx::tree;
 
 //3. class auto ptr
 %auto_ptr(::schema::simxml::BuildingModel::SimSpace_Occupied_Default)
+%auto_ptr(::schema::simxml::BuildingModel::T24KitchExhHoodDutyList)
+%auto_ptr(::schema::simxml::BuildingModel::T24KitchExhHoodStyleList)
+%auto_ptr(::schema::simxml::BuildingModel::T24MandLightCntrlDescRpt)
+%auto_ptr(::schema::simxml::BuildingModel::T24MandLightCntrlRpt)
+%auto_ptr(::schema::simxml::BuildingModel::T24MandLightCntrlAccepReqRpt)
+%auto_ptr(::schema::simxml::BuildingModel::T24MandLightCntrlIsAutoShOffCntrlRpt)
+%auto_ptr(::schema::simxml::BuildingModel::T24MandLightCntrlIsDayltngCntrlRpt)
+%auto_ptr(::schema::simxml::BuildingModel::T24MandLightCntrlIsDmndRespCntrlRpt)
+%auto_ptr(::schema::simxml::BuildingModel::T24MandLightCntrlIsManAreaCntrlRpt)
 
 %import  "..\base\base.i"
 /* Let's just grab the original header file here */

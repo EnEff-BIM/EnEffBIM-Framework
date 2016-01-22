@@ -263,7 +263,7 @@ namespace schema
         // SimLocationAndWeather_Name
         //
         typedef ::xml_schema::string SimLocationAndWeather_Name_type;
-        typedef ::xsd::cxx::tree::optional< SimLocationAndWeather_Name_type > SimLocationAndWeather_Name_optional;
+        typedef ::xsd::cxx::tree::optional< SimLocationAndWeather_Name_type, false > SimLocationAndWeather_Name_optional;
         typedef ::xsd::cxx::tree::traits< SimLocationAndWeather_Name_type, char > SimLocationAndWeather_Name_traits;
 
         const SimLocationAndWeather_Name_optional&
@@ -284,7 +284,7 @@ namespace schema
         // SimLocationAndWeather_Month
         //
         typedef ::xml_schema::int_ SimLocationAndWeather_Month_type;
-        typedef ::xsd::cxx::tree::optional< SimLocationAndWeather_Month_type > SimLocationAndWeather_Month_optional;
+        typedef ::xsd::cxx::tree::optional< SimLocationAndWeather_Month_type, true > SimLocationAndWeather_Month_optional;
         typedef ::xsd::cxx::tree::traits< SimLocationAndWeather_Month_type, char > SimLocationAndWeather_Month_traits;
 
         const SimLocationAndWeather_Month_optional&
@@ -302,7 +302,7 @@ namespace schema
         // SimLocationAndWeather_DayOfMonth
         //
         typedef ::xml_schema::int_ SimLocationAndWeather_DayOfMonth_type;
-        typedef ::xsd::cxx::tree::optional< SimLocationAndWeather_DayOfMonth_type > SimLocationAndWeather_DayOfMonth_optional;
+        typedef ::xsd::cxx::tree::optional< SimLocationAndWeather_DayOfMonth_type, true > SimLocationAndWeather_DayOfMonth_optional;
         typedef ::xsd::cxx::tree::traits< SimLocationAndWeather_DayOfMonth_type, char > SimLocationAndWeather_DayOfMonth_traits;
 
         const SimLocationAndWeather_DayOfMonth_optional&
@@ -320,7 +320,7 @@ namespace schema
         // SimLocationAndWeather_DayType
         //
         typedef ::xml_schema::string SimLocationAndWeather_DayType_type;
-        typedef ::xsd::cxx::tree::optional< SimLocationAndWeather_DayType_type > SimLocationAndWeather_DayType_optional;
+        typedef ::xsd::cxx::tree::optional< SimLocationAndWeather_DayType_type, false > SimLocationAndWeather_DayType_optional;
         typedef ::xsd::cxx::tree::traits< SimLocationAndWeather_DayType_type, char > SimLocationAndWeather_DayType_traits;
 
         const SimLocationAndWeather_DayType_optional&
@@ -341,7 +341,7 @@ namespace schema
         // SimLocationAndWeather_MaxDryBulbTemp
         //
         typedef ::xml_schema::double_ SimLocationAndWeather_MaxDryBulbTemp_type;
-        typedef ::xsd::cxx::tree::optional< SimLocationAndWeather_MaxDryBulbTemp_type > SimLocationAndWeather_MaxDryBulbTemp_optional;
+        typedef ::xsd::cxx::tree::optional< SimLocationAndWeather_MaxDryBulbTemp_type, true > SimLocationAndWeather_MaxDryBulbTemp_optional;
         typedef ::xsd::cxx::tree::traits< SimLocationAndWeather_MaxDryBulbTemp_type, char, ::xsd::cxx::tree::schema_type::double_ > SimLocationAndWeather_MaxDryBulbTemp_traits;
 
         const SimLocationAndWeather_MaxDryBulbTemp_optional&
@@ -359,7 +359,7 @@ namespace schema
         // SimLocationAndWeather_DailyDry_BulbTempRange
         //
         typedef ::xml_schema::double_ SimLocationAndWeather_DailyDry_BulbTempRange_type;
-        typedef ::xsd::cxx::tree::optional< SimLocationAndWeather_DailyDry_BulbTempRange_type > SimLocationAndWeather_DailyDry_BulbTempRange_optional;
+        typedef ::xsd::cxx::tree::optional< SimLocationAndWeather_DailyDry_BulbTempRange_type, true > SimLocationAndWeather_DailyDry_BulbTempRange_optional;
         typedef ::xsd::cxx::tree::traits< SimLocationAndWeather_DailyDry_BulbTempRange_type, char, ::xsd::cxx::tree::schema_type::double_ > SimLocationAndWeather_DailyDry_BulbTempRange_traits;
 
         const SimLocationAndWeather_DailyDry_BulbTempRange_optional&
@@ -377,7 +377,7 @@ namespace schema
         // SimLocationAndWeather_DryBulbTempRangeModType
         //
         typedef ::xml_schema::string SimLocationAndWeather_DryBulbTempRangeModType_type;
-        typedef ::xsd::cxx::tree::optional< SimLocationAndWeather_DryBulbTempRangeModType_type > SimLocationAndWeather_DryBulbTempRangeModType_optional;
+        typedef ::xsd::cxx::tree::optional< SimLocationAndWeather_DryBulbTempRangeModType_type, false > SimLocationAndWeather_DryBulbTempRangeModType_optional;
         typedef ::xsd::cxx::tree::traits< SimLocationAndWeather_DryBulbTempRangeModType_type, char > SimLocationAndWeather_DryBulbTempRangeModType_traits;
 
         const SimLocationAndWeather_DryBulbTempRangeModType_optional&
@@ -398,7 +398,7 @@ namespace schema
         // SimLocationAndWeather_DryBulbTempRangeModDaySchedName
         //
         typedef ::xml_schema::idref SimLocationAndWeather_DryBulbTempRangeModDaySchedName_type;
-        typedef ::xsd::cxx::tree::optional< SimLocationAndWeather_DryBulbTempRangeModDaySchedName_type > SimLocationAndWeather_DryBulbTempRangeModDaySchedName_optional;
+        typedef ::xsd::cxx::tree::optional< SimLocationAndWeather_DryBulbTempRangeModDaySchedName_type, false > SimLocationAndWeather_DryBulbTempRangeModDaySchedName_optional;
         typedef ::xsd::cxx::tree::traits< SimLocationAndWeather_DryBulbTempRangeModDaySchedName_type, char > SimLocationAndWeather_DryBulbTempRangeModDaySchedName_traits;
 
         const SimLocationAndWeather_DryBulbTempRangeModDaySchedName_optional&
@@ -419,7 +419,7 @@ namespace schema
         // SimLocationAndWeather_HumidityCondType
         //
         typedef ::xml_schema::string SimLocationAndWeather_HumidityCondType_type;
-        typedef ::xsd::cxx::tree::optional< SimLocationAndWeather_HumidityCondType_type > SimLocationAndWeather_HumidityCondType_optional;
+        typedef ::xsd::cxx::tree::optional< SimLocationAndWeather_HumidityCondType_type, false > SimLocationAndWeather_HumidityCondType_optional;
         typedef ::xsd::cxx::tree::traits< SimLocationAndWeather_HumidityCondType_type, char > SimLocationAndWeather_HumidityCondType_traits;
 
         const SimLocationAndWeather_HumidityCondType_optional&
@@ -440,7 +440,7 @@ namespace schema
         // SimLocationAndWeather_WetbulborDewPointatMaxDry_Bulb
         //
         typedef ::xml_schema::double_ SimLocationAndWeather_WetbulborDewPointatMaxDry_Bulb_type;
-        typedef ::xsd::cxx::tree::optional< SimLocationAndWeather_WetbulborDewPointatMaxDry_Bulb_type > SimLocationAndWeather_WetbulborDewPointatMaxDry_Bulb_optional;
+        typedef ::xsd::cxx::tree::optional< SimLocationAndWeather_WetbulborDewPointatMaxDry_Bulb_type, true > SimLocationAndWeather_WetbulborDewPointatMaxDry_Bulb_optional;
         typedef ::xsd::cxx::tree::traits< SimLocationAndWeather_WetbulborDewPointatMaxDry_Bulb_type, char, ::xsd::cxx::tree::schema_type::double_ > SimLocationAndWeather_WetbulborDewPointatMaxDry_Bulb_traits;
 
         const SimLocationAndWeather_WetbulborDewPointatMaxDry_Bulb_optional&
@@ -458,7 +458,7 @@ namespace schema
         // SimLocationAndWeather_HumidityCondDaySchedName
         //
         typedef ::xml_schema::idref SimLocationAndWeather_HumidityCondDaySchedName_type;
-        typedef ::xsd::cxx::tree::optional< SimLocationAndWeather_HumidityCondDaySchedName_type > SimLocationAndWeather_HumidityCondDaySchedName_optional;
+        typedef ::xsd::cxx::tree::optional< SimLocationAndWeather_HumidityCondDaySchedName_type, false > SimLocationAndWeather_HumidityCondDaySchedName_optional;
         typedef ::xsd::cxx::tree::traits< SimLocationAndWeather_HumidityCondDaySchedName_type, char > SimLocationAndWeather_HumidityCondDaySchedName_traits;
 
         const SimLocationAndWeather_HumidityCondDaySchedName_optional&
@@ -479,7 +479,7 @@ namespace schema
         // SimLocationAndWeather_HumidityRatioatMaxDry_Bulb
         //
         typedef ::xml_schema::double_ SimLocationAndWeather_HumidityRatioatMaxDry_Bulb_type;
-        typedef ::xsd::cxx::tree::optional< SimLocationAndWeather_HumidityRatioatMaxDry_Bulb_type > SimLocationAndWeather_HumidityRatioatMaxDry_Bulb_optional;
+        typedef ::xsd::cxx::tree::optional< SimLocationAndWeather_HumidityRatioatMaxDry_Bulb_type, true > SimLocationAndWeather_HumidityRatioatMaxDry_Bulb_optional;
         typedef ::xsd::cxx::tree::traits< SimLocationAndWeather_HumidityRatioatMaxDry_Bulb_type, char, ::xsd::cxx::tree::schema_type::double_ > SimLocationAndWeather_HumidityRatioatMaxDry_Bulb_traits;
 
         const SimLocationAndWeather_HumidityRatioatMaxDry_Bulb_optional&
@@ -497,7 +497,7 @@ namespace schema
         // SimLocationAndWeather_EnthalpyatMaxDry_Bulb
         //
         typedef ::xml_schema::double_ SimLocationAndWeather_EnthalpyatMaxDry_Bulb_type;
-        typedef ::xsd::cxx::tree::optional< SimLocationAndWeather_EnthalpyatMaxDry_Bulb_type > SimLocationAndWeather_EnthalpyatMaxDry_Bulb_optional;
+        typedef ::xsd::cxx::tree::optional< SimLocationAndWeather_EnthalpyatMaxDry_Bulb_type, true > SimLocationAndWeather_EnthalpyatMaxDry_Bulb_optional;
         typedef ::xsd::cxx::tree::traits< SimLocationAndWeather_EnthalpyatMaxDry_Bulb_type, char, ::xsd::cxx::tree::schema_type::double_ > SimLocationAndWeather_EnthalpyatMaxDry_Bulb_traits;
 
         const SimLocationAndWeather_EnthalpyatMaxDry_Bulb_optional&
@@ -515,7 +515,7 @@ namespace schema
         // SimLocationAndWeather_DailyWet_BulbTempRange
         //
         typedef ::xml_schema::double_ SimLocationAndWeather_DailyWet_BulbTempRange_type;
-        typedef ::xsd::cxx::tree::optional< SimLocationAndWeather_DailyWet_BulbTempRange_type > SimLocationAndWeather_DailyWet_BulbTempRange_optional;
+        typedef ::xsd::cxx::tree::optional< SimLocationAndWeather_DailyWet_BulbTempRange_type, true > SimLocationAndWeather_DailyWet_BulbTempRange_optional;
         typedef ::xsd::cxx::tree::traits< SimLocationAndWeather_DailyWet_BulbTempRange_type, char, ::xsd::cxx::tree::schema_type::double_ > SimLocationAndWeather_DailyWet_BulbTempRange_traits;
 
         const SimLocationAndWeather_DailyWet_BulbTempRange_optional&
@@ -533,7 +533,7 @@ namespace schema
         // SimLocationAndWeather_BaromPres
         //
         typedef ::xml_schema::double_ SimLocationAndWeather_BaromPres_type;
-        typedef ::xsd::cxx::tree::optional< SimLocationAndWeather_BaromPres_type > SimLocationAndWeather_BaromPres_optional;
+        typedef ::xsd::cxx::tree::optional< SimLocationAndWeather_BaromPres_type, true > SimLocationAndWeather_BaromPres_optional;
         typedef ::xsd::cxx::tree::traits< SimLocationAndWeather_BaromPres_type, char, ::xsd::cxx::tree::schema_type::double_ > SimLocationAndWeather_BaromPres_traits;
 
         const SimLocationAndWeather_BaromPres_optional&
@@ -551,7 +551,7 @@ namespace schema
         // SimLocationAndWeather_WindSpd
         //
         typedef ::xml_schema::double_ SimLocationAndWeather_WindSpd_type;
-        typedef ::xsd::cxx::tree::optional< SimLocationAndWeather_WindSpd_type > SimLocationAndWeather_WindSpd_optional;
+        typedef ::xsd::cxx::tree::optional< SimLocationAndWeather_WindSpd_type, true > SimLocationAndWeather_WindSpd_optional;
         typedef ::xsd::cxx::tree::traits< SimLocationAndWeather_WindSpd_type, char, ::xsd::cxx::tree::schema_type::double_ > SimLocationAndWeather_WindSpd_traits;
 
         const SimLocationAndWeather_WindSpd_optional&
@@ -569,7 +569,7 @@ namespace schema
         // SimLocationAndWeather_WindDir
         //
         typedef ::xml_schema::double_ SimLocationAndWeather_WindDir_type;
-        typedef ::xsd::cxx::tree::optional< SimLocationAndWeather_WindDir_type > SimLocationAndWeather_WindDir_optional;
+        typedef ::xsd::cxx::tree::optional< SimLocationAndWeather_WindDir_type, true > SimLocationAndWeather_WindDir_optional;
         typedef ::xsd::cxx::tree::traits< SimLocationAndWeather_WindDir_type, char, ::xsd::cxx::tree::schema_type::double_ > SimLocationAndWeather_WindDir_traits;
 
         const SimLocationAndWeather_WindDir_optional&
@@ -587,7 +587,7 @@ namespace schema
         // SimLocationAndWeather_RainInd
         //
         typedef ::xml_schema::string SimLocationAndWeather_RainInd_type;
-        typedef ::xsd::cxx::tree::optional< SimLocationAndWeather_RainInd_type > SimLocationAndWeather_RainInd_optional;
+        typedef ::xsd::cxx::tree::optional< SimLocationAndWeather_RainInd_type, false > SimLocationAndWeather_RainInd_optional;
         typedef ::xsd::cxx::tree::traits< SimLocationAndWeather_RainInd_type, char > SimLocationAndWeather_RainInd_traits;
 
         const SimLocationAndWeather_RainInd_optional&
@@ -608,7 +608,7 @@ namespace schema
         // SimLocationAndWeather_SnowInd
         //
         typedef ::xml_schema::string SimLocationAndWeather_SnowInd_type;
-        typedef ::xsd::cxx::tree::optional< SimLocationAndWeather_SnowInd_type > SimLocationAndWeather_SnowInd_optional;
+        typedef ::xsd::cxx::tree::optional< SimLocationAndWeather_SnowInd_type, false > SimLocationAndWeather_SnowInd_optional;
         typedef ::xsd::cxx::tree::traits< SimLocationAndWeather_SnowInd_type, char > SimLocationAndWeather_SnowInd_traits;
 
         const SimLocationAndWeather_SnowInd_optional&
@@ -629,7 +629,7 @@ namespace schema
         // SimLocationAndWeather_DylghtSavingTimeInd
         //
         typedef ::xml_schema::string SimLocationAndWeather_DylghtSavingTimeInd_type;
-        typedef ::xsd::cxx::tree::optional< SimLocationAndWeather_DylghtSavingTimeInd_type > SimLocationAndWeather_DylghtSavingTimeInd_optional;
+        typedef ::xsd::cxx::tree::optional< SimLocationAndWeather_DylghtSavingTimeInd_type, false > SimLocationAndWeather_DylghtSavingTimeInd_optional;
         typedef ::xsd::cxx::tree::traits< SimLocationAndWeather_DylghtSavingTimeInd_type, char > SimLocationAndWeather_DylghtSavingTimeInd_traits;
 
         const SimLocationAndWeather_DylghtSavingTimeInd_optional&
@@ -650,7 +650,7 @@ namespace schema
         // SimLocationAndWeather_SolaThermdelInd
         //
         typedef ::xml_schema::string SimLocationAndWeather_SolaThermdelInd_type;
-        typedef ::xsd::cxx::tree::optional< SimLocationAndWeather_SolaThermdelInd_type > SimLocationAndWeather_SolaThermdelInd_optional;
+        typedef ::xsd::cxx::tree::optional< SimLocationAndWeather_SolaThermdelInd_type, false > SimLocationAndWeather_SolaThermdelInd_optional;
         typedef ::xsd::cxx::tree::traits< SimLocationAndWeather_SolaThermdelInd_type, char > SimLocationAndWeather_SolaThermdelInd_traits;
 
         const SimLocationAndWeather_SolaThermdelInd_optional&
@@ -671,7 +671,7 @@ namespace schema
         // SimLocationAndWeather_BeamSolarDaySchedName
         //
         typedef ::xml_schema::idref SimLocationAndWeather_BeamSolarDaySchedName_type;
-        typedef ::xsd::cxx::tree::optional< SimLocationAndWeather_BeamSolarDaySchedName_type > SimLocationAndWeather_BeamSolarDaySchedName_optional;
+        typedef ::xsd::cxx::tree::optional< SimLocationAndWeather_BeamSolarDaySchedName_type, false > SimLocationAndWeather_BeamSolarDaySchedName_optional;
         typedef ::xsd::cxx::tree::traits< SimLocationAndWeather_BeamSolarDaySchedName_type, char > SimLocationAndWeather_BeamSolarDaySchedName_traits;
 
         const SimLocationAndWeather_BeamSolarDaySchedName_optional&
@@ -692,7 +692,7 @@ namespace schema
         // SimLocationAndWeather_DiffuseSolarDaySchedName
         //
         typedef ::xml_schema::idref SimLocationAndWeather_DiffuseSolarDaySchedName_type;
-        typedef ::xsd::cxx::tree::optional< SimLocationAndWeather_DiffuseSolarDaySchedName_type > SimLocationAndWeather_DiffuseSolarDaySchedName_optional;
+        typedef ::xsd::cxx::tree::optional< SimLocationAndWeather_DiffuseSolarDaySchedName_type, false > SimLocationAndWeather_DiffuseSolarDaySchedName_optional;
         typedef ::xsd::cxx::tree::traits< SimLocationAndWeather_DiffuseSolarDaySchedName_type, char > SimLocationAndWeather_DiffuseSolarDaySchedName_traits;
 
         const SimLocationAndWeather_DiffuseSolarDaySchedName_optional&
@@ -713,7 +713,7 @@ namespace schema
         // SimLocationAndWeather_ASHRAEClearSkyOpticalDepthforBeamIrradiance_taub
         //
         typedef ::xml_schema::double_ SimLocationAndWeather_ASHRAEClearSkyOpticalDepthforBeamIrradiance_taub_type;
-        typedef ::xsd::cxx::tree::optional< SimLocationAndWeather_ASHRAEClearSkyOpticalDepthforBeamIrradiance_taub_type > SimLocationAndWeather_ASHRAEClearSkyOpticalDepthforBeamIrradiance_taub_optional;
+        typedef ::xsd::cxx::tree::optional< SimLocationAndWeather_ASHRAEClearSkyOpticalDepthforBeamIrradiance_taub_type, true > SimLocationAndWeather_ASHRAEClearSkyOpticalDepthforBeamIrradiance_taub_optional;
         typedef ::xsd::cxx::tree::traits< SimLocationAndWeather_ASHRAEClearSkyOpticalDepthforBeamIrradiance_taub_type, char, ::xsd::cxx::tree::schema_type::double_ > SimLocationAndWeather_ASHRAEClearSkyOpticalDepthforBeamIrradiance_taub_traits;
 
         const SimLocationAndWeather_ASHRAEClearSkyOpticalDepthforBeamIrradiance_taub_optional&
@@ -731,7 +731,7 @@ namespace schema
         // SimLocationAndWeather_ASHRAEClearSkyOpticalDepthforDiffuseIrradiance_taud
         //
         typedef ::xml_schema::double_ SimLocationAndWeather_ASHRAEClearSkyOpticalDepthforDiffuseIrradiance_taud_type;
-        typedef ::xsd::cxx::tree::optional< SimLocationAndWeather_ASHRAEClearSkyOpticalDepthforDiffuseIrradiance_taud_type > SimLocationAndWeather_ASHRAEClearSkyOpticalDepthforDiffuseIrradiance_taud_optional;
+        typedef ::xsd::cxx::tree::optional< SimLocationAndWeather_ASHRAEClearSkyOpticalDepthforDiffuseIrradiance_taud_type, true > SimLocationAndWeather_ASHRAEClearSkyOpticalDepthforDiffuseIrradiance_taud_optional;
         typedef ::xsd::cxx::tree::traits< SimLocationAndWeather_ASHRAEClearSkyOpticalDepthforDiffuseIrradiance_taud_type, char, ::xsd::cxx::tree::schema_type::double_ > SimLocationAndWeather_ASHRAEClearSkyOpticalDepthforDiffuseIrradiance_taud_traits;
 
         const SimLocationAndWeather_ASHRAEClearSkyOpticalDepthforDiffuseIrradiance_taud_optional&
@@ -749,7 +749,7 @@ namespace schema
         // SimLocationAndWeather_SkyClearness
         //
         typedef ::xml_schema::double_ SimLocationAndWeather_SkyClearness_type;
-        typedef ::xsd::cxx::tree::optional< SimLocationAndWeather_SkyClearness_type > SimLocationAndWeather_SkyClearness_optional;
+        typedef ::xsd::cxx::tree::optional< SimLocationAndWeather_SkyClearness_type, true > SimLocationAndWeather_SkyClearness_optional;
         typedef ::xsd::cxx::tree::traits< SimLocationAndWeather_SkyClearness_type, char, ::xsd::cxx::tree::schema_type::double_ > SimLocationAndWeather_SkyClearness_traits;
 
         const SimLocationAndWeather_SkyClearness_optional&

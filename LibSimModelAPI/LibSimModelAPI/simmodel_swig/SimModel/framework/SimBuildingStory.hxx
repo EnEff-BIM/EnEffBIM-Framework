@@ -50,7 +50,7 @@
 #include <xsd/cxx/config.hxx>
 
 #if (XSD_INT_VERSION != 4000000L)
-//#error XSD runtime version mismatch
+////#error XSD runtime version mismatch
 #endif
 
 #include <xsd/cxx/pre.hxx>
@@ -274,7 +274,7 @@ namespace schema
         // Name
         //
         typedef ::xml_schema::string Name_type;
-        typedef ::xsd::cxx::tree::optional< Name_type > Name_optional;
+        typedef ::xsd::cxx::tree::optional< Name_type, false > Name_optional;
         typedef ::xsd::cxx::tree::traits< Name_type, char > Name_traits;
 
         const Name_optional&
@@ -295,7 +295,7 @@ namespace schema
         // BuildingStoryElevation
         //
         typedef ::xml_schema::double_ BuildingStoryElevation_type;
-        typedef ::xsd::cxx::tree::optional< BuildingStoryElevation_type > BuildingStoryElevation_optional;
+        typedef ::xsd::cxx::tree::optional< BuildingStoryElevation_type, true > BuildingStoryElevation_optional;
         typedef ::xsd::cxx::tree::traits< BuildingStoryElevation_type, char, ::xsd::cxx::tree::schema_type::double_ > BuildingStoryElevation_traits;
 
         const BuildingStoryElevation_optional&
@@ -352,7 +352,7 @@ namespace schema
         // BuildingStoryGrossFloorAreaPlanned
         //
         typedef ::xml_schema::double_ BuildingStoryGrossFloorAreaPlanned_type;
-        typedef ::xsd::cxx::tree::optional< BuildingStoryGrossFloorAreaPlanned_type > BuildingStoryGrossFloorAreaPlanned_optional;
+        typedef ::xsd::cxx::tree::optional< BuildingStoryGrossFloorAreaPlanned_type, true > BuildingStoryGrossFloorAreaPlanned_optional;
         typedef ::xsd::cxx::tree::traits< BuildingStoryGrossFloorAreaPlanned_type, char, ::xsd::cxx::tree::schema_type::double_ > BuildingStoryGrossFloorAreaPlanned_traits;
 
         const BuildingStoryGrossFloorAreaPlanned_optional&
@@ -389,7 +389,7 @@ namespace schema
         // BuildingStoryPerimeter
         //
         typedef ::xml_schema::double_ BuildingStoryPerimeter_type;
-        typedef ::xsd::cxx::tree::optional< BuildingStoryPerimeter_type > BuildingStoryPerimeter_optional;
+        typedef ::xsd::cxx::tree::optional< BuildingStoryPerimeter_type, true > BuildingStoryPerimeter_optional;
         typedef ::xsd::cxx::tree::traits< BuildingStoryPerimeter_type, char, ::xsd::cxx::tree::schema_type::double_ > BuildingStoryPerimeter_traits;
 
         const BuildingStoryPerimeter_optional&
@@ -407,7 +407,7 @@ namespace schema
         // BuildingStoryGrossFloorArea
         //
         typedef ::xml_schema::double_ BuildingStoryGrossFloorArea_type;
-        typedef ::xsd::cxx::tree::optional< BuildingStoryGrossFloorArea_type > BuildingStoryGrossFloorArea_optional;
+        typedef ::xsd::cxx::tree::optional< BuildingStoryGrossFloorArea_type, true > BuildingStoryGrossFloorArea_optional;
         typedef ::xsd::cxx::tree::traits< BuildingStoryGrossFloorArea_type, char, ::xsd::cxx::tree::schema_type::double_ > BuildingStoryGrossFloorArea_traits;
 
         const BuildingStoryGrossFloorArea_optional&
@@ -425,7 +425,7 @@ namespace schema
         // BuildingStoryGrossVolume
         //
         typedef ::xml_schema::double_ BuildingStoryGrossVolume_type;
-        typedef ::xsd::cxx::tree::optional< BuildingStoryGrossVolume_type > BuildingStoryGrossVolume_optional;
+        typedef ::xsd::cxx::tree::optional< BuildingStoryGrossVolume_type, true > BuildingStoryGrossVolume_optional;
         typedef ::xsd::cxx::tree::traits< BuildingStoryGrossVolume_type, char, ::xsd::cxx::tree::schema_type::double_ > BuildingStoryGrossVolume_traits;
 
         const BuildingStoryGrossVolume_optional&
@@ -443,7 +443,7 @@ namespace schema
         // ClassRef_ConstEntByFunction
         //
         typedef ::xml_schema::idref ClassRef_ConstEntByFunction_type;
-        typedef ::xsd::cxx::tree::optional< ClassRef_ConstEntByFunction_type > ClassRef_ConstEntByFunction_optional;
+        typedef ::xsd::cxx::tree::optional< ClassRef_ConstEntByFunction_type, false > ClassRef_ConstEntByFunction_optional;
         typedef ::xsd::cxx::tree::traits< ClassRef_ConstEntByFunction_type, char > ClassRef_ConstEntByFunction_traits;
 
         const ClassRef_ConstEntByFunction_optional&
@@ -464,7 +464,7 @@ namespace schema
         // BldgStoryInSpatialContainer
         //
         typedef ::xml_schema::idref BldgStoryInSpatialContainer_type;
-        typedef ::xsd::cxx::tree::optional< BldgStoryInSpatialContainer_type > BldgStoryInSpatialContainer_optional;
+        typedef ::xsd::cxx::tree::optional< BldgStoryInSpatialContainer_type, false > BldgStoryInSpatialContainer_optional;
         typedef ::xsd::cxx::tree::traits< BldgStoryInSpatialContainer_type, char > BldgStoryInSpatialContainer_traits;
 
         const BldgStoryInSpatialContainer_optional&
@@ -485,7 +485,7 @@ namespace schema
         // Representation
         //
         typedef ::xml_schema::idref Representation_type;
-        typedef ::xsd::cxx::tree::optional< Representation_type > Representation_optional;
+        typedef ::xsd::cxx::tree::optional< Representation_type, false > Representation_optional;
         typedef ::xsd::cxx::tree::traits< Representation_type, char > Representation_traits;
 
         const Representation_optional&
@@ -506,7 +506,7 @@ namespace schema
         // BuildingStoryNumber
         //
         typedef ::xml_schema::int_ BuildingStoryNumber_type;
-        typedef ::xsd::cxx::tree::optional< BuildingStoryNumber_type > BuildingStoryNumber_optional;
+        typedef ::xsd::cxx::tree::optional< BuildingStoryNumber_type, true > BuildingStoryNumber_optional;
         typedef ::xsd::cxx::tree::traits< BuildingStoryNumber_type, char > BuildingStoryNumber_traits;
 
         const BuildingStoryNumber_optional&

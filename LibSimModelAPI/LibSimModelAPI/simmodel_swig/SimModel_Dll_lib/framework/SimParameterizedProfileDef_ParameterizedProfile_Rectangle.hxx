@@ -263,7 +263,7 @@ namespace schema
         // XDim
         //
         typedef ::xml_schema::double_ XDim_type;
-        typedef ::xsd::cxx::tree::optional< XDim_type > XDim_optional;
+        typedef ::xsd::cxx::tree::optional< XDim_type, true > XDim_optional;
         typedef ::xsd::cxx::tree::traits< XDim_type, char, ::xsd::cxx::tree::schema_type::double_ > XDim_traits;
 
         const XDim_optional&
@@ -281,7 +281,7 @@ namespace schema
         // YDim
         //
         typedef ::xml_schema::double_ YDim_type;
-        typedef ::xsd::cxx::tree::optional< YDim_type > YDim_optional;
+        typedef ::xsd::cxx::tree::optional< YDim_type, true > YDim_optional;
         typedef ::xsd::cxx::tree::traits< YDim_type, char, ::xsd::cxx::tree::schema_type::double_ > YDim_traits;
 
         const YDim_optional&

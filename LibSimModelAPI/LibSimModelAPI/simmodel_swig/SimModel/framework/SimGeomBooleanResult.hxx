@@ -263,7 +263,7 @@ namespace schema
         // Operator
         //
         typedef ::xml_schema::string Operator_type;
-        typedef ::xsd::cxx::tree::optional< Operator_type > Operator_optional;
+        typedef ::xsd::cxx::tree::optional< Operator_type, false > Operator_optional;
         typedef ::xsd::cxx::tree::traits< Operator_type, char > Operator_traits;
 
         const Operator_optional&
@@ -284,7 +284,7 @@ namespace schema
         // FirstOperand
         //
         typedef ::xml_schema::idref FirstOperand_type;
-        typedef ::xsd::cxx::tree::optional< FirstOperand_type > FirstOperand_optional;
+        typedef ::xsd::cxx::tree::optional< FirstOperand_type, false > FirstOperand_optional;
         typedef ::xsd::cxx::tree::traits< FirstOperand_type, char > FirstOperand_traits;
 
         const FirstOperand_optional&
@@ -305,7 +305,7 @@ namespace schema
         // SecondOperand
         //
         typedef ::xml_schema::idref SecondOperand_type;
-        typedef ::xsd::cxx::tree::optional< SecondOperand_type > SecondOperand_optional;
+        typedef ::xsd::cxx::tree::optional< SecondOperand_type, false > SecondOperand_optional;
         typedef ::xsd::cxx::tree::traits< SecondOperand_type, char > SecondOperand_traits;
 
         const SecondOperand_optional&

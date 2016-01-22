@@ -263,7 +263,7 @@ namespace schema
         // SimTimeSeriesSched_Name
         //
         typedef ::xml_schema::string SimTimeSeriesSched_Name_type;
-        typedef ::xsd::cxx::tree::optional< SimTimeSeriesSched_Name_type > SimTimeSeriesSched_Name_optional;
+        typedef ::xsd::cxx::tree::optional< SimTimeSeriesSched_Name_type, false > SimTimeSeriesSched_Name_optional;
         typedef ::xsd::cxx::tree::traits< SimTimeSeriesSched_Name_type, char > SimTimeSeriesSched_Name_traits;
 
         const SimTimeSeriesSched_Name_optional&
@@ -284,7 +284,7 @@ namespace schema
         // SimTimeSeriesSched_SchedTypeLimitsName
         //
         typedef ::xml_schema::idref SimTimeSeriesSched_SchedTypeLimitsName_type;
-        typedef ::xsd::cxx::tree::optional< SimTimeSeriesSched_SchedTypeLimitsName_type > SimTimeSeriesSched_SchedTypeLimitsName_optional;
+        typedef ::xsd::cxx::tree::optional< SimTimeSeriesSched_SchedTypeLimitsName_type, false > SimTimeSeriesSched_SchedTypeLimitsName_optional;
         typedef ::xsd::cxx::tree::traits< SimTimeSeriesSched_SchedTypeLimitsName_type, char > SimTimeSeriesSched_SchedTypeLimitsName_traits;
 
         const SimTimeSeriesSched_SchedTypeLimitsName_optional&
@@ -305,7 +305,7 @@ namespace schema
         // SimTimeSeriesSched_TimeSeriesSchedType
         //
         typedef ::xml_schema::string SimTimeSeriesSched_TimeSeriesSchedType_type;
-        typedef ::xsd::cxx::tree::optional< SimTimeSeriesSched_TimeSeriesSchedType_type > SimTimeSeriesSched_TimeSeriesSchedType_optional;
+        typedef ::xsd::cxx::tree::optional< SimTimeSeriesSched_TimeSeriesSchedType_type, false > SimTimeSeriesSched_TimeSeriesSchedType_optional;
         typedef ::xsd::cxx::tree::traits< SimTimeSeriesSched_TimeSeriesSchedType_type, char > SimTimeSeriesSched_TimeSeriesSchedType_traits;
 
         const SimTimeSeriesSched_TimeSeriesSchedType_optional&

@@ -274,7 +274,7 @@ namespace schema
         // SimInternalLoad_Name
         //
         typedef ::xml_schema::string SimInternalLoad_Name_type;
-        typedef ::xsd::cxx::tree::optional< SimInternalLoad_Name_type > SimInternalLoad_Name_optional;
+        typedef ::xsd::cxx::tree::optional< SimInternalLoad_Name_type, false > SimInternalLoad_Name_optional;
         typedef ::xsd::cxx::tree::traits< SimInternalLoad_Name_type, char > SimInternalLoad_Name_traits;
 
         const SimInternalLoad_Name_optional&
@@ -295,7 +295,7 @@ namespace schema
         // SimInternalLoad_ZoneOrZoneListName
         //
         typedef ::xml_schema::idref SimInternalLoad_ZoneOrZoneListName_type;
-        typedef ::xsd::cxx::tree::optional< SimInternalLoad_ZoneOrZoneListName_type > SimInternalLoad_ZoneOrZoneListName_optional;
+        typedef ::xsd::cxx::tree::optional< SimInternalLoad_ZoneOrZoneListName_type, false > SimInternalLoad_ZoneOrZoneListName_optional;
         typedef ::xsd::cxx::tree::traits< SimInternalLoad_ZoneOrZoneListName_type, char > SimInternalLoad_ZoneOrZoneListName_traits;
 
         const SimInternalLoad_ZoneOrZoneListName_optional&
@@ -316,7 +316,7 @@ namespace schema
         // SimInternalLoad_NumbPeopleSchedName
         //
         typedef ::xml_schema::idref SimInternalLoad_NumbPeopleSchedName_type;
-        typedef ::xsd::cxx::tree::optional< SimInternalLoad_NumbPeopleSchedName_type > SimInternalLoad_NumbPeopleSchedName_optional;
+        typedef ::xsd::cxx::tree::optional< SimInternalLoad_NumbPeopleSchedName_type, false > SimInternalLoad_NumbPeopleSchedName_optional;
         typedef ::xsd::cxx::tree::traits< SimInternalLoad_NumbPeopleSchedName_type, char > SimInternalLoad_NumbPeopleSchedName_traits;
 
         const SimInternalLoad_NumbPeopleSchedName_optional&
@@ -337,7 +337,7 @@ namespace schema
         // SimInternalLoad_NumbPeopleCalcMeth
         //
         typedef ::xml_schema::string SimInternalLoad_NumbPeopleCalcMeth_type;
-        typedef ::xsd::cxx::tree::optional< SimInternalLoad_NumbPeopleCalcMeth_type > SimInternalLoad_NumbPeopleCalcMeth_optional;
+        typedef ::xsd::cxx::tree::optional< SimInternalLoad_NumbPeopleCalcMeth_type, false > SimInternalLoad_NumbPeopleCalcMeth_optional;
         typedef ::xsd::cxx::tree::traits< SimInternalLoad_NumbPeopleCalcMeth_type, char > SimInternalLoad_NumbPeopleCalcMeth_traits;
 
         const SimInternalLoad_NumbPeopleCalcMeth_optional&
@@ -358,7 +358,7 @@ namespace schema
         // SimInternalLoad_NumbPeople
         //
         typedef ::xml_schema::double_ SimInternalLoad_NumbPeople_type;
-        typedef ::xsd::cxx::tree::optional< SimInternalLoad_NumbPeople_type > SimInternalLoad_NumbPeople_optional;
+        typedef ::xsd::cxx::tree::optional< SimInternalLoad_NumbPeople_type, true > SimInternalLoad_NumbPeople_optional;
         typedef ::xsd::cxx::tree::traits< SimInternalLoad_NumbPeople_type, char, ::xsd::cxx::tree::schema_type::double_ > SimInternalLoad_NumbPeople_traits;
 
         const SimInternalLoad_NumbPeople_optional&
@@ -376,7 +376,7 @@ namespace schema
         // SimInternalLoad_PeoplePerZoneFlrArea
         //
         typedef ::xml_schema::double_ SimInternalLoad_PeoplePerZoneFlrArea_type;
-        typedef ::xsd::cxx::tree::optional< SimInternalLoad_PeoplePerZoneFlrArea_type > SimInternalLoad_PeoplePerZoneFlrArea_optional;
+        typedef ::xsd::cxx::tree::optional< SimInternalLoad_PeoplePerZoneFlrArea_type, true > SimInternalLoad_PeoplePerZoneFlrArea_optional;
         typedef ::xsd::cxx::tree::traits< SimInternalLoad_PeoplePerZoneFlrArea_type, char, ::xsd::cxx::tree::schema_type::double_ > SimInternalLoad_PeoplePerZoneFlrArea_traits;
 
         const SimInternalLoad_PeoplePerZoneFlrArea_optional&
@@ -394,7 +394,7 @@ namespace schema
         // SimInternalLoad_ZoneFlrAreaPerPerson
         //
         typedef ::xml_schema::double_ SimInternalLoad_ZoneFlrAreaPerPerson_type;
-        typedef ::xsd::cxx::tree::optional< SimInternalLoad_ZoneFlrAreaPerPerson_type > SimInternalLoad_ZoneFlrAreaPerPerson_optional;
+        typedef ::xsd::cxx::tree::optional< SimInternalLoad_ZoneFlrAreaPerPerson_type, true > SimInternalLoad_ZoneFlrAreaPerPerson_optional;
         typedef ::xsd::cxx::tree::traits< SimInternalLoad_ZoneFlrAreaPerPerson_type, char, ::xsd::cxx::tree::schema_type::double_ > SimInternalLoad_ZoneFlrAreaPerPerson_traits;
 
         const SimInternalLoad_ZoneFlrAreaPerPerson_optional&
@@ -412,7 +412,7 @@ namespace schema
         // SimInternalLoad_FracRadiant
         //
         typedef ::xml_schema::double_ SimInternalLoad_FracRadiant_type;
-        typedef ::xsd::cxx::tree::optional< SimInternalLoad_FracRadiant_type > SimInternalLoad_FracRadiant_optional;
+        typedef ::xsd::cxx::tree::optional< SimInternalLoad_FracRadiant_type, true > SimInternalLoad_FracRadiant_optional;
         typedef ::xsd::cxx::tree::traits< SimInternalLoad_FracRadiant_type, char, ::xsd::cxx::tree::schema_type::double_ > SimInternalLoad_FracRadiant_traits;
 
         const SimInternalLoad_FracRadiant_optional&
@@ -430,7 +430,7 @@ namespace schema
         // SimInternalLoad_SensibleHeatFrac
         //
         typedef ::xml_schema::double_ SimInternalLoad_SensibleHeatFrac_type;
-        typedef ::xsd::cxx::tree::optional< SimInternalLoad_SensibleHeatFrac_type > SimInternalLoad_SensibleHeatFrac_optional;
+        typedef ::xsd::cxx::tree::optional< SimInternalLoad_SensibleHeatFrac_type, true > SimInternalLoad_SensibleHeatFrac_optional;
         typedef ::xsd::cxx::tree::traits< SimInternalLoad_SensibleHeatFrac_type, char, ::xsd::cxx::tree::schema_type::double_ > SimInternalLoad_SensibleHeatFrac_traits;
 
         const SimInternalLoad_SensibleHeatFrac_optional&
@@ -448,7 +448,7 @@ namespace schema
         // SimInternalLoad_ActLvlSchedName
         //
         typedef ::xml_schema::idref SimInternalLoad_ActLvlSchedName_type;
-        typedef ::xsd::cxx::tree::optional< SimInternalLoad_ActLvlSchedName_type > SimInternalLoad_ActLvlSchedName_optional;
+        typedef ::xsd::cxx::tree::optional< SimInternalLoad_ActLvlSchedName_type, false > SimInternalLoad_ActLvlSchedName_optional;
         typedef ::xsd::cxx::tree::traits< SimInternalLoad_ActLvlSchedName_type, char > SimInternalLoad_ActLvlSchedName_traits;
 
         const SimInternalLoad_ActLvlSchedName_optional&
@@ -469,7 +469,7 @@ namespace schema
         // SimInternalLoad_CO2GenerationRate
         //
         typedef ::xml_schema::double_ SimInternalLoad_CO2GenerationRate_type;
-        typedef ::xsd::cxx::tree::optional< SimInternalLoad_CO2GenerationRate_type > SimInternalLoad_CO2GenerationRate_optional;
+        typedef ::xsd::cxx::tree::optional< SimInternalLoad_CO2GenerationRate_type, true > SimInternalLoad_CO2GenerationRate_optional;
         typedef ::xsd::cxx::tree::traits< SimInternalLoad_CO2GenerationRate_type, char, ::xsd::cxx::tree::schema_type::double_ > SimInternalLoad_CO2GenerationRate_traits;
 
         const SimInternalLoad_CO2GenerationRate_optional&
@@ -487,7 +487,7 @@ namespace schema
         // SimInternalLoad_EnableASHRAE55ComfWarn
         //
         typedef ::xml_schema::string SimInternalLoad_EnableASHRAE55ComfWarn_type;
-        typedef ::xsd::cxx::tree::optional< SimInternalLoad_EnableASHRAE55ComfWarn_type > SimInternalLoad_EnableASHRAE55ComfWarn_optional;
+        typedef ::xsd::cxx::tree::optional< SimInternalLoad_EnableASHRAE55ComfWarn_type, false > SimInternalLoad_EnableASHRAE55ComfWarn_optional;
         typedef ::xsd::cxx::tree::traits< SimInternalLoad_EnableASHRAE55ComfWarn_type, char > SimInternalLoad_EnableASHRAE55ComfWarn_traits;
 
         const SimInternalLoad_EnableASHRAE55ComfWarn_optional&
@@ -508,7 +508,7 @@ namespace schema
         // SimInternalLoad_MeanRadiantTempCalcType
         //
         typedef ::xml_schema::string SimInternalLoad_MeanRadiantTempCalcType_type;
-        typedef ::xsd::cxx::tree::optional< SimInternalLoad_MeanRadiantTempCalcType_type > SimInternalLoad_MeanRadiantTempCalcType_optional;
+        typedef ::xsd::cxx::tree::optional< SimInternalLoad_MeanRadiantTempCalcType_type, false > SimInternalLoad_MeanRadiantTempCalcType_optional;
         typedef ::xsd::cxx::tree::traits< SimInternalLoad_MeanRadiantTempCalcType_type, char > SimInternalLoad_MeanRadiantTempCalcType_traits;
 
         const SimInternalLoad_MeanRadiantTempCalcType_optional&
@@ -529,7 +529,7 @@ namespace schema
         // SimInternalLoad_SurfName_AngFactListName
         //
         typedef ::xml_schema::idref SimInternalLoad_SurfName_AngFactListName_type;
-        typedef ::xsd::cxx::tree::optional< SimInternalLoad_SurfName_AngFactListName_type > SimInternalLoad_SurfName_AngFactListName_optional;
+        typedef ::xsd::cxx::tree::optional< SimInternalLoad_SurfName_AngFactListName_type, false > SimInternalLoad_SurfName_AngFactListName_optional;
         typedef ::xsd::cxx::tree::traits< SimInternalLoad_SurfName_AngFactListName_type, char > SimInternalLoad_SurfName_AngFactListName_traits;
 
         const SimInternalLoad_SurfName_AngFactListName_optional&
@@ -550,7 +550,7 @@ namespace schema
         // SimInternalLoad_WorkEffSchedName
         //
         typedef ::xml_schema::idref SimInternalLoad_WorkEffSchedName_type;
-        typedef ::xsd::cxx::tree::optional< SimInternalLoad_WorkEffSchedName_type > SimInternalLoad_WorkEffSchedName_optional;
+        typedef ::xsd::cxx::tree::optional< SimInternalLoad_WorkEffSchedName_type, false > SimInternalLoad_WorkEffSchedName_optional;
         typedef ::xsd::cxx::tree::traits< SimInternalLoad_WorkEffSchedName_type, char > SimInternalLoad_WorkEffSchedName_traits;
 
         const SimInternalLoad_WorkEffSchedName_optional&
@@ -571,7 +571,7 @@ namespace schema
         // SimInternalLoad_ClothingInsulationCalculationMethod
         //
         typedef ::xml_schema::string SimInternalLoad_ClothingInsulationCalculationMethod_type;
-        typedef ::xsd::cxx::tree::optional< SimInternalLoad_ClothingInsulationCalculationMethod_type > SimInternalLoad_ClothingInsulationCalculationMethod_optional;
+        typedef ::xsd::cxx::tree::optional< SimInternalLoad_ClothingInsulationCalculationMethod_type, false > SimInternalLoad_ClothingInsulationCalculationMethod_optional;
         typedef ::xsd::cxx::tree::traits< SimInternalLoad_ClothingInsulationCalculationMethod_type, char > SimInternalLoad_ClothingInsulationCalculationMethod_traits;
 
         const SimInternalLoad_ClothingInsulationCalculationMethod_optional&
@@ -592,7 +592,7 @@ namespace schema
         // SimInternalLoad_ClothingInsulationCalculationMethodSchedName
         //
         typedef ::xml_schema::idref SimInternalLoad_ClothingInsulationCalculationMethodSchedName_type;
-        typedef ::xsd::cxx::tree::optional< SimInternalLoad_ClothingInsulationCalculationMethodSchedName_type > SimInternalLoad_ClothingInsulationCalculationMethodSchedName_optional;
+        typedef ::xsd::cxx::tree::optional< SimInternalLoad_ClothingInsulationCalculationMethodSchedName_type, false > SimInternalLoad_ClothingInsulationCalculationMethodSchedName_optional;
         typedef ::xsd::cxx::tree::traits< SimInternalLoad_ClothingInsulationCalculationMethodSchedName_type, char > SimInternalLoad_ClothingInsulationCalculationMethodSchedName_traits;
 
         const SimInternalLoad_ClothingInsulationCalculationMethodSchedName_optional&
@@ -613,7 +613,7 @@ namespace schema
         // SimInternalLoad_ClothingInsulSchedName
         //
         typedef ::xml_schema::idref SimInternalLoad_ClothingInsulSchedName_type;
-        typedef ::xsd::cxx::tree::optional< SimInternalLoad_ClothingInsulSchedName_type > SimInternalLoad_ClothingInsulSchedName_optional;
+        typedef ::xsd::cxx::tree::optional< SimInternalLoad_ClothingInsulSchedName_type, false > SimInternalLoad_ClothingInsulSchedName_optional;
         typedef ::xsd::cxx::tree::traits< SimInternalLoad_ClothingInsulSchedName_type, char > SimInternalLoad_ClothingInsulSchedName_traits;
 
         const SimInternalLoad_ClothingInsulSchedName_optional&
@@ -634,7 +634,7 @@ namespace schema
         // SimInternalLoad_AirVelSchedName
         //
         typedef ::xml_schema::idref SimInternalLoad_AirVelSchedName_type;
-        typedef ::xsd::cxx::tree::optional< SimInternalLoad_AirVelSchedName_type > SimInternalLoad_AirVelSchedName_optional;
+        typedef ::xsd::cxx::tree::optional< SimInternalLoad_AirVelSchedName_type, false > SimInternalLoad_AirVelSchedName_optional;
         typedef ::xsd::cxx::tree::traits< SimInternalLoad_AirVelSchedName_type, char > SimInternalLoad_AirVelSchedName_traits;
 
         const SimInternalLoad_AirVelSchedName_optional&

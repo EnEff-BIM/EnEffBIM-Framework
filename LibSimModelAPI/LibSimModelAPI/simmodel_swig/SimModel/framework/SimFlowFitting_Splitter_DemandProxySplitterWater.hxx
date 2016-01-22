@@ -263,7 +263,7 @@ namespace schema
         // SimFlowFitting_Name
         //
         typedef ::xml_schema::string SimFlowFitting_Name_type;
-        typedef ::xsd::cxx::tree::optional< SimFlowFitting_Name_type > SimFlowFitting_Name_optional;
+        typedef ::xsd::cxx::tree::optional< SimFlowFitting_Name_type, false > SimFlowFitting_Name_optional;
         typedef ::xsd::cxx::tree::traits< SimFlowFitting_Name_type, char > SimFlowFitting_Name_traits;
 
         const SimFlowFitting_Name_optional&
@@ -284,7 +284,7 @@ namespace schema
         // SimFlowFitting_InletBranchName
         //
         typedef ::xml_schema::idref SimFlowFitting_InletBranchName_type;
-        typedef ::xsd::cxx::tree::optional< SimFlowFitting_InletBranchName_type > SimFlowFitting_InletBranchName_optional;
+        typedef ::xsd::cxx::tree::optional< SimFlowFitting_InletBranchName_type, false > SimFlowFitting_InletBranchName_optional;
         typedef ::xsd::cxx::tree::traits< SimFlowFitting_InletBranchName_type, char > SimFlowFitting_InletBranchName_traits;
 
         const SimFlowFitting_InletBranchName_optional&

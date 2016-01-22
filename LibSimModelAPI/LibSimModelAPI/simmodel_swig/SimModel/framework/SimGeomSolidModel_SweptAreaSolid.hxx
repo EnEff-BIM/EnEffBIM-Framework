@@ -263,7 +263,7 @@ namespace schema
         // SweptArea
         //
         typedef ::xml_schema::idref SweptArea_type;
-        typedef ::xsd::cxx::tree::optional< SweptArea_type > SweptArea_optional;
+        typedef ::xsd::cxx::tree::optional< SweptArea_type, false > SweptArea_optional;
         typedef ::xsd::cxx::tree::traits< SweptArea_type, char > SweptArea_traits;
 
         const SweptArea_optional&
@@ -284,7 +284,7 @@ namespace schema
         // Position
         //
         typedef ::xml_schema::idref Position_type;
-        typedef ::xsd::cxx::tree::optional< Position_type > Position_optional;
+        typedef ::xsd::cxx::tree::optional< Position_type, false > Position_optional;
         typedef ::xsd::cxx::tree::traits< Position_type, char > Position_traits;
 
         const Position_optional&

@@ -25,9 +25,6 @@ namespace xsd
     {
 		//5. class method				
 		%template(SimBuildingStory_BuildingStory_Default_sequence) sequence<::schema::simxml::BuildingModel::SimBuildingStory_BuildingStory_Default, false>;
-		
-		// property method
-		//%template(BuildingStoryHeight_optional) optional<BuildingStoryHeight_type, true>;
 	}
   }
 }

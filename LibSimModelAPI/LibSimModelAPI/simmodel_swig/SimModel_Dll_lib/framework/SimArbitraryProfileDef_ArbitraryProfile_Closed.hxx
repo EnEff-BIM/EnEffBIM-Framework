@@ -263,7 +263,7 @@ namespace schema
         // OuterCurve
         //
         typedef ::xml_schema::idref OuterCurve_type;
-        typedef ::xsd::cxx::tree::optional< OuterCurve_type > OuterCurve_optional;
+        typedef ::xsd::cxx::tree::optional< OuterCurve_type, false > OuterCurve_optional;
         typedef ::xsd::cxx::tree::traits< OuterCurve_type, char > OuterCurve_traits;
 
         const OuterCurve_optional&

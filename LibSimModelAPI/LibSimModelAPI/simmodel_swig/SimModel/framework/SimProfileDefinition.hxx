@@ -263,7 +263,7 @@ namespace schema
         // ProfileType
         //
         typedef ::xml_schema::string ProfileType_type;
-        typedef ::xsd::cxx::tree::optional< ProfileType_type > ProfileType_optional;
+        typedef ::xsd::cxx::tree::optional< ProfileType_type, false > ProfileType_optional;
         typedef ::xsd::cxx::tree::traits< ProfileType_type, char > ProfileType_traits;
 
         const ProfileType_optional&
@@ -284,7 +284,7 @@ namespace schema
         // ProfileName
         //
         typedef ::xml_schema::string ProfileName_type;
-        typedef ::xsd::cxx::tree::optional< ProfileName_type > ProfileName_optional;
+        typedef ::xsd::cxx::tree::optional< ProfileName_type, false > ProfileName_optional;
         typedef ::xsd::cxx::tree::traits< ProfileName_type, char > ProfileName_traits;
 
         const ProfileName_optional&

@@ -10,6 +10,7 @@ using namespace xsd::cxx::tree;
 
 //3. class auto ptr
 %auto_ptr(::schema::simxml::ResourcesGeneral::SimInternalLoad_People_Default)
+%auto_ptr(::schema::simxml::ResourcesGeneral::SimInternalLoad_ThermalComfortModel_1_5_Type)
 
 %import  "..\base\base.i"
 %import  "..\SimInternalLoad_Equipment_Electric\SimInternalLoad_Equipment_Electric.i"

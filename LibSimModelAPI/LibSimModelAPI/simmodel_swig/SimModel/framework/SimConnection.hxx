@@ -263,7 +263,7 @@ namespace schema
         // RelatingPort
         //
         typedef ::xml_schema::idref RelatingPort_type;
-        typedef ::xsd::cxx::tree::optional< RelatingPort_type > RelatingPort_optional;
+        typedef ::xsd::cxx::tree::optional< RelatingPort_type, false > RelatingPort_optional;
         typedef ::xsd::cxx::tree::traits< RelatingPort_type, char > RelatingPort_traits;
 
         const RelatingPort_optional&
@@ -284,7 +284,7 @@ namespace schema
         // RelatedPort
         //
         typedef ::xml_schema::idref RelatedPort_type;
-        typedef ::xsd::cxx::tree::optional< RelatedPort_type > RelatedPort_optional;
+        typedef ::xsd::cxx::tree::optional< RelatedPort_type, false > RelatedPort_optional;
         typedef ::xsd::cxx::tree::traits< RelatedPort_type, char > RelatedPort_traits;
 
         const RelatedPort_optional&
@@ -305,7 +305,7 @@ namespace schema
         // RealizingElement
         //
         typedef ::xml_schema::idref RealizingElement_type;
-        typedef ::xsd::cxx::tree::optional< RealizingElement_type > RealizingElement_optional;
+        typedef ::xsd::cxx::tree::optional< RealizingElement_type, false > RealizingElement_optional;
         typedef ::xsd::cxx::tree::traits< RealizingElement_type, char > RealizingElement_traits;
 
         const RealizingElement_optional&
@@ -326,7 +326,7 @@ namespace schema
         // SourcePort
         //
         typedef ::xml_schema::idref SourcePort_type;
-        typedef ::xsd::cxx::tree::optional< SourcePort_type > SourcePort_optional;
+        typedef ::xsd::cxx::tree::optional< SourcePort_type, false > SourcePort_optional;
         typedef ::xsd::cxx::tree::traits< SourcePort_type, char > SourcePort_traits;
 
         const SourcePort_optional&
@@ -347,7 +347,7 @@ namespace schema
         // TargetPort
         //
         typedef ::xml_schema::idref TargetPort_type;
-        typedef ::xsd::cxx::tree::optional< TargetPort_type > TargetPort_optional;
+        typedef ::xsd::cxx::tree::optional< TargetPort_type, false > TargetPort_optional;
         typedef ::xsd::cxx::tree::traits< TargetPort_type, char > TargetPort_traits;
 
         const TargetPort_optional&

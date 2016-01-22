@@ -25,6 +25,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="SimDistributionPort_AirFlowPort_Air_Out.i" />
+    <CustomBuild Include="SimDistributionPort_AirFlowPort_Air_Out.i" />
   </ItemGroup>
 </Project>

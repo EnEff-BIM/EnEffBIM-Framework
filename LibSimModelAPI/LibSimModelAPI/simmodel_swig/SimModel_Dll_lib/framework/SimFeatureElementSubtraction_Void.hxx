@@ -263,7 +263,7 @@ namespace schema
         // OpeningHeight
         //
         typedef ::xml_schema::double_ OpeningHeight_type;
-        typedef ::xsd::cxx::tree::optional< OpeningHeight_type > OpeningHeight_optional;
+        typedef ::xsd::cxx::tree::optional< OpeningHeight_type, true > OpeningHeight_optional;
         typedef ::xsd::cxx::tree::traits< OpeningHeight_type, char, ::xsd::cxx::tree::schema_type::double_ > OpeningHeight_traits;
 
         const OpeningHeight_optional&
@@ -281,7 +281,7 @@ namespace schema
         // OpeningWidth
         //
         typedef ::xml_schema::double_ OpeningWidth_type;
-        typedef ::xsd::cxx::tree::optional< OpeningWidth_type > OpeningWidth_optional;
+        typedef ::xsd::cxx::tree::optional< OpeningWidth_type, true > OpeningWidth_optional;
         typedef ::xsd::cxx::tree::traits< OpeningWidth_type, char, ::xsd::cxx::tree::schema_type::double_ > OpeningWidth_traits;
 
         const OpeningWidth_optional&
@@ -299,7 +299,7 @@ namespace schema
         // OpeningDepth
         //
         typedef ::xml_schema::double_ OpeningDepth_type;
-        typedef ::xsd::cxx::tree::optional< OpeningDepth_type > OpeningDepth_optional;
+        typedef ::xsd::cxx::tree::optional< OpeningDepth_type, true > OpeningDepth_optional;
         typedef ::xsd::cxx::tree::traits< OpeningDepth_type, char, ::xsd::cxx::tree::schema_type::double_ > OpeningDepth_traits;
 
         const OpeningDepth_optional&
@@ -317,7 +317,7 @@ namespace schema
         // OpeningPerimeter
         //
         typedef ::xml_schema::double_ OpeningPerimeter_type;
-        typedef ::xsd::cxx::tree::optional< OpeningPerimeter_type > OpeningPerimeter_optional;
+        typedef ::xsd::cxx::tree::optional< OpeningPerimeter_type, true > OpeningPerimeter_optional;
         typedef ::xsd::cxx::tree::traits< OpeningPerimeter_type, char, ::xsd::cxx::tree::schema_type::double_ > OpeningPerimeter_traits;
 
         const OpeningPerimeter_optional&
@@ -335,7 +335,7 @@ namespace schema
         // OpeningArea
         //
         typedef ::xml_schema::double_ OpeningArea_type;
-        typedef ::xsd::cxx::tree::optional< OpeningArea_type > OpeningArea_optional;
+        typedef ::xsd::cxx::tree::optional< OpeningArea_type, true > OpeningArea_optional;
         typedef ::xsd::cxx::tree::traits< OpeningArea_type, char, ::xsd::cxx::tree::schema_type::double_ > OpeningArea_traits;
 
         const OpeningArea_optional&
@@ -353,7 +353,7 @@ namespace schema
         // OpeningVolume
         //
         typedef ::xml_schema::double_ OpeningVolume_type;
-        typedef ::xsd::cxx::tree::optional< OpeningVolume_type > OpeningVolume_optional;
+        typedef ::xsd::cxx::tree::optional< OpeningVolume_type, true > OpeningVolume_optional;
         typedef ::xsd::cxx::tree::traits< OpeningVolume_type, char, ::xsd::cxx::tree::schema_type::double_ > OpeningVolume_traits;
 
         const OpeningVolume_optional&
@@ -371,7 +371,7 @@ namespace schema
         // TypeDefinition
         //
         typedef ::xml_schema::idref TypeDefinition_type;
-        typedef ::xsd::cxx::tree::optional< TypeDefinition_type > TypeDefinition_optional;
+        typedef ::xsd::cxx::tree::optional< TypeDefinition_type, false > TypeDefinition_optional;
         typedef ::xsd::cxx::tree::traits< TypeDefinition_type, char > TypeDefinition_traits;
 
         const TypeDefinition_optional&
@@ -392,7 +392,7 @@ namespace schema
         // Placement
         //
         typedef ::xml_schema::idref Placement_type;
-        typedef ::xsd::cxx::tree::optional< Placement_type > Placement_optional;
+        typedef ::xsd::cxx::tree::optional< Placement_type, false > Placement_optional;
         typedef ::xsd::cxx::tree::traits< Placement_type, char > Placement_traits;
 
         const Placement_optional&
@@ -434,7 +434,7 @@ namespace schema
         // VoidedBldgElement
         //
         typedef ::xml_schema::idref VoidedBldgElement_type;
-        typedef ::xsd::cxx::tree::optional< VoidedBldgElement_type > VoidedBldgElement_optional;
+        typedef ::xsd::cxx::tree::optional< VoidedBldgElement_type, false > VoidedBldgElement_optional;
         typedef ::xsd::cxx::tree::traits< VoidedBldgElement_type, char > VoidedBldgElement_traits;
 
         const VoidedBldgElement_optional&

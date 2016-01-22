@@ -263,7 +263,7 @@ namespace schema
         // SimTimeSeriesSched_Name
         //
         typedef ::xml_schema::string SimTimeSeriesSched_Name_type;
-        typedef ::xsd::cxx::tree::optional< SimTimeSeriesSched_Name_type > SimTimeSeriesSched_Name_optional;
+        typedef ::xsd::cxx::tree::optional< SimTimeSeriesSched_Name_type, false > SimTimeSeriesSched_Name_optional;
         typedef ::xsd::cxx::tree::traits< SimTimeSeriesSched_Name_type, char > SimTimeSeriesSched_Name_traits;
 
         const SimTimeSeriesSched_Name_optional&
@@ -284,7 +284,7 @@ namespace schema
         // SimTimeSeriesSched_TimeSeriesSchedType
         //
         typedef ::xml_schema::string SimTimeSeriesSched_TimeSeriesSchedType_type;
-        typedef ::xsd::cxx::tree::optional< SimTimeSeriesSched_TimeSeriesSchedType_type > SimTimeSeriesSched_TimeSeriesSchedType_optional;
+        typedef ::xsd::cxx::tree::optional< SimTimeSeriesSched_TimeSeriesSchedType_type, false > SimTimeSeriesSched_TimeSeriesSchedType_optional;
         typedef ::xsd::cxx::tree::traits< SimTimeSeriesSched_TimeSeriesSchedType_type, char > SimTimeSeriesSched_TimeSeriesSchedType_traits;
 
         const SimTimeSeriesSched_TimeSeriesSchedType_optional&
@@ -305,7 +305,7 @@ namespace schema
         // T24SchedDayAllDayRef
         //
         typedef ::xml_schema::idref T24SchedDayAllDayRef_type;
-        typedef ::xsd::cxx::tree::optional< T24SchedDayAllDayRef_type > T24SchedDayAllDayRef_optional;
+        typedef ::xsd::cxx::tree::optional< T24SchedDayAllDayRef_type, false > T24SchedDayAllDayRef_optional;
         typedef ::xsd::cxx::tree::traits< T24SchedDayAllDayRef_type, char > T24SchedDayAllDayRef_traits;
 
         const T24SchedDayAllDayRef_optional&
@@ -326,7 +326,7 @@ namespace schema
         // T24SchedDayWkdaysRef
         //
         typedef ::xml_schema::idref T24SchedDayWkdaysRef_type;
-        typedef ::xsd::cxx::tree::optional< T24SchedDayWkdaysRef_type > T24SchedDayWkdaysRef_optional;
+        typedef ::xsd::cxx::tree::optional< T24SchedDayWkdaysRef_type, false > T24SchedDayWkdaysRef_optional;
         typedef ::xsd::cxx::tree::traits< T24SchedDayWkdaysRef_type, char > T24SchedDayWkdaysRef_traits;
 
         const T24SchedDayWkdaysRef_optional&
@@ -347,7 +347,7 @@ namespace schema
         // T24SchedDayWkEndsRef
         //
         typedef ::xml_schema::idref T24SchedDayWkEndsRef_type;
-        typedef ::xsd::cxx::tree::optional< T24SchedDayWkEndsRef_type > T24SchedDayWkEndsRef_optional;
+        typedef ::xsd::cxx::tree::optional< T24SchedDayWkEndsRef_type, false > T24SchedDayWkEndsRef_optional;
         typedef ::xsd::cxx::tree::traits< T24SchedDayWkEndsRef_type, char > T24SchedDayWkEndsRef_traits;
 
         const T24SchedDayWkEndsRef_optional&

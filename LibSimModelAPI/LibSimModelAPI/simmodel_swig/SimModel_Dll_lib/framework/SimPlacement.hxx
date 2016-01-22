@@ -263,7 +263,7 @@ namespace schema
         // Location
         //
         typedef ::xml_schema::idref Location_type;
-        typedef ::xsd::cxx::tree::optional< Location_type > Location_optional;
+        typedef ::xsd::cxx::tree::optional< Location_type, false > Location_optional;
         typedef ::xsd::cxx::tree::traits< Location_type, char > Location_traits;
 
         const Location_optional&

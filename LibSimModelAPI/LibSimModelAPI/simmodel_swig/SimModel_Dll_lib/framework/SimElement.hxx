@@ -295,7 +295,7 @@ namespace schema
         // ContainingSpatialStructure
         //
         typedef ::xml_schema::idref ContainingSpatialStructure_type;
-        typedef ::xsd::cxx::tree::optional< ContainingSpatialStructure_type > ContainingSpatialStructure_optional;
+        typedef ::xsd::cxx::tree::optional< ContainingSpatialStructure_type, false > ContainingSpatialStructure_optional;
         typedef ::xsd::cxx::tree::traits< ContainingSpatialStructure_type, char > ContainingSpatialStructure_traits;
 
         const ContainingSpatialStructure_optional&
@@ -337,7 +337,7 @@ namespace schema
         // Placement
         //
         typedef ::xml_schema::idref Placement_type;
-        typedef ::xsd::cxx::tree::optional< Placement_type > Placement_optional;
+        typedef ::xsd::cxx::tree::optional< Placement_type, false > Placement_optional;
         typedef ::xsd::cxx::tree::traits< Placement_type, char > Placement_traits;
 
         const Placement_optional&
@@ -358,7 +358,7 @@ namespace schema
         // Tag
         //
         typedef ::xml_schema::string Tag_type;
-        typedef ::xsd::cxx::tree::optional< Tag_type > Tag_optional;
+        typedef ::xsd::cxx::tree::optional< Tag_type, false > Tag_optional;
         typedef ::xsd::cxx::tree::traits< Tag_type, char > Tag_traits;
 
         const Tag_optional&

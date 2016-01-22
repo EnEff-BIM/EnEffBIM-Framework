@@ -263,7 +263,7 @@ namespace schema
         // Thickness
         //
         typedef ::xml_schema::double_ Thickness_type;
-        typedef ::xsd::cxx::tree::optional< Thickness_type > Thickness_optional;
+        typedef ::xsd::cxx::tree::optional< Thickness_type, true > Thickness_optional;
         typedef ::xsd::cxx::tree::traits< Thickness_type, char, ::xsd::cxx::tree::schema_type::double_ > Thickness_traits;
 
         const Thickness_optional&
@@ -281,7 +281,7 @@ namespace schema
         // Length
         //
         typedef ::xml_schema::double_ Length_type;
-        typedef ::xsd::cxx::tree::optional< Length_type > Length_optional;
+        typedef ::xsd::cxx::tree::optional< Length_type, true > Length_optional;
         typedef ::xsd::cxx::tree::traits< Length_type, char, ::xsd::cxx::tree::schema_type::double_ > Length_traits;
 
         const Length_optional&
@@ -299,7 +299,7 @@ namespace schema
         // Height
         //
         typedef ::xml_schema::double_ Height_type;
-        typedef ::xsd::cxx::tree::optional< Height_type > Height_optional;
+        typedef ::xsd::cxx::tree::optional< Height_type, true > Height_optional;
         typedef ::xsd::cxx::tree::traits< Height_type, char, ::xsd::cxx::tree::schema_type::double_ > Height_traits;
 
         const Height_optional&
@@ -317,7 +317,7 @@ namespace schema
         // BaseElevation
         //
         typedef ::xml_schema::double_ BaseElevation_type;
-        typedef ::xsd::cxx::tree::optional< BaseElevation_type > BaseElevation_optional;
+        typedef ::xsd::cxx::tree::optional< BaseElevation_type, true > BaseElevation_optional;
         typedef ::xsd::cxx::tree::traits< BaseElevation_type, char, ::xsd::cxx::tree::schema_type::double_ > BaseElevation_traits;
 
         const BaseElevation_optional&
@@ -335,7 +335,7 @@ namespace schema
         // RefLinePosition
         //
         typedef ::xml_schema::string RefLinePosition_type;
-        typedef ::xsd::cxx::tree::optional< RefLinePosition_type > RefLinePosition_optional;
+        typedef ::xsd::cxx::tree::optional< RefLinePosition_type, false > RefLinePosition_optional;
         typedef ::xsd::cxx::tree::traits< RefLinePosition_type, char > RefLinePosition_traits;
 
         const RefLinePosition_optional&
@@ -356,7 +356,7 @@ namespace schema
         // RefLinePath
         //
         typedef ::xml_schema::idref RefLinePath_type;
-        typedef ::xsd::cxx::tree::optional< RefLinePath_type > RefLinePath_optional;
+        typedef ::xsd::cxx::tree::optional< RefLinePath_type, false > RefLinePath_optional;
         typedef ::xsd::cxx::tree::traits< RefLinePath_type, char > RefLinePath_traits;
 
         const RefLinePath_optional&
@@ -377,7 +377,7 @@ namespace schema
         // DegreeOfNormal
         //
         typedef ::xml_schema::double_ DegreeOfNormal_type;
-        typedef ::xsd::cxx::tree::optional< DegreeOfNormal_type > DegreeOfNormal_optional;
+        typedef ::xsd::cxx::tree::optional< DegreeOfNormal_type, true > DegreeOfNormal_optional;
         typedef ::xsd::cxx::tree::traits< DegreeOfNormal_type, char, ::xsd::cxx::tree::schema_type::double_ > DegreeOfNormal_traits;
 
         const DegreeOfNormal_optional&
@@ -395,7 +395,7 @@ namespace schema
         // CompassNsewDirection
         //
         typedef ::xml_schema::string CompassNsewDirection_type;
-        typedef ::xsd::cxx::tree::optional< CompassNsewDirection_type > CompassNsewDirection_optional;
+        typedef ::xsd::cxx::tree::optional< CompassNsewDirection_type, false > CompassNsewDirection_optional;
         typedef ::xsd::cxx::tree::traits< CompassNsewDirection_type, char > CompassNsewDirection_traits;
 
         const CompassNsewDirection_optional&
@@ -434,7 +434,7 @@ namespace schema
         // Justify
         //
         typedef ::xml_schema::int_ Justify_type;
-        typedef ::xsd::cxx::tree::optional< Justify_type > Justify_optional;
+        typedef ::xsd::cxx::tree::optional< Justify_type, true > Justify_optional;
         typedef ::xsd::cxx::tree::traits< Justify_type, char > Justify_traits;
 
         const Justify_optional&
@@ -536,7 +536,7 @@ namespace schema
         // ProfilePath
         //
         typedef ::xml_schema::idref ProfilePath_type;
-        typedef ::xsd::cxx::tree::optional< ProfilePath_type > ProfilePath_optional;
+        typedef ::xsd::cxx::tree::optional< ProfilePath_type, false > ProfilePath_optional;
         typedef ::xsd::cxx::tree::traits< ProfilePath_type, char > ProfilePath_traits;
 
         const ProfilePath_optional&

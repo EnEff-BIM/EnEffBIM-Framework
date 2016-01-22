@@ -305,7 +305,7 @@ namespace schema
         // NevronSchematicLayout
         //
         typedef ::xml_schema::string NevronSchematicLayout_type;
-        typedef ::xsd::cxx::tree::optional< NevronSchematicLayout_type > NevronSchematicLayout_optional;
+        typedef ::xsd::cxx::tree::optional< NevronSchematicLayout_type, false > NevronSchematicLayout_optional;
         typedef ::xsd::cxx::tree::traits< NevronSchematicLayout_type, char > NevronSchematicLayout_traits;
 
         const NevronSchematicLayout_optional&
@@ -365,7 +365,7 @@ namespace schema
         // ChangeFromTemplate
         //
         typedef ::xml_schema::string ChangeFromTemplate_type;
-        typedef ::xsd::cxx::tree::optional< ChangeFromTemplate_type > ChangeFromTemplate_optional;
+        typedef ::xsd::cxx::tree::optional< ChangeFromTemplate_type, false > ChangeFromTemplate_optional;
         typedef ::xsd::cxx::tree::traits< ChangeFromTemplate_type, char > ChangeFromTemplate_traits;
 
         const ChangeFromTemplate_optional&
@@ -386,7 +386,7 @@ namespace schema
         // MemberUsedForDiagrams
         //
         typedef ::xml_schema::idref MemberUsedForDiagrams_type;
-        typedef ::xsd::cxx::tree::optional< MemberUsedForDiagrams_type > MemberUsedForDiagrams_optional;
+        typedef ::xsd::cxx::tree::optional< MemberUsedForDiagrams_type, false > MemberUsedForDiagrams_optional;
         typedef ::xsd::cxx::tree::traits< MemberUsedForDiagrams_type, char > MemberUsedForDiagrams_traits;
 
         const MemberUsedForDiagrams_optional&

@@ -263,7 +263,7 @@ namespace schema
         // SurfProp_HeatTransAlg_SurfName
         //
         typedef ::xml_schema::idref SurfProp_HeatTransAlg_SurfName_type;
-        typedef ::xsd::cxx::tree::optional< SurfProp_HeatTransAlg_SurfName_type > SurfProp_HeatTransAlg_SurfName_optional;
+        typedef ::xsd::cxx::tree::optional< SurfProp_HeatTransAlg_SurfName_type, false > SurfProp_HeatTransAlg_SurfName_optional;
         typedef ::xsd::cxx::tree::traits< SurfProp_HeatTransAlg_SurfName_type, char > SurfProp_HeatTransAlg_SurfName_traits;
 
         const SurfProp_HeatTransAlg_SurfName_optional&
@@ -284,7 +284,7 @@ namespace schema
         // SurfProp_HeatTransAlg_Algorithm
         //
         typedef ::xml_schema::string SurfProp_HeatTransAlg_Algorithm_type;
-        typedef ::xsd::cxx::tree::optional< SurfProp_HeatTransAlg_Algorithm_type > SurfProp_HeatTransAlg_Algorithm_optional;
+        typedef ::xsd::cxx::tree::optional< SurfProp_HeatTransAlg_Algorithm_type, false > SurfProp_HeatTransAlg_Algorithm_optional;
         typedef ::xsd::cxx::tree::traits< SurfProp_HeatTransAlg_Algorithm_type, char > SurfProp_HeatTransAlg_Algorithm_traits;
 
         const SurfProp_HeatTransAlg_Algorithm_optional&
@@ -305,7 +305,7 @@ namespace schema
         // SurfProp_HeatTransAlg_SurfList_Name
         //
         typedef ::xml_schema::string SurfProp_HeatTransAlg_SurfList_Name_type;
-        typedef ::xsd::cxx::tree::optional< SurfProp_HeatTransAlg_SurfList_Name_type > SurfProp_HeatTransAlg_SurfList_Name_optional;
+        typedef ::xsd::cxx::tree::optional< SurfProp_HeatTransAlg_SurfList_Name_type, false > SurfProp_HeatTransAlg_SurfList_Name_optional;
         typedef ::xsd::cxx::tree::traits< SurfProp_HeatTransAlg_SurfList_Name_type, char > SurfProp_HeatTransAlg_SurfList_Name_traits;
 
         const SurfProp_HeatTransAlg_SurfList_Name_optional&
@@ -326,7 +326,7 @@ namespace schema
         // SurfProp_HeatTransAlg_SurfList_Algorithm
         //
         typedef ::xml_schema::string SurfProp_HeatTransAlg_SurfList_Algorithm_type;
-        typedef ::xsd::cxx::tree::optional< SurfProp_HeatTransAlg_SurfList_Algorithm_type > SurfProp_HeatTransAlg_SurfList_Algorithm_optional;
+        typedef ::xsd::cxx::tree::optional< SurfProp_HeatTransAlg_SurfList_Algorithm_type, false > SurfProp_HeatTransAlg_SurfList_Algorithm_optional;
         typedef ::xsd::cxx::tree::traits< SurfProp_HeatTransAlg_SurfList_Algorithm_type, char > SurfProp_HeatTransAlg_SurfList_Algorithm_traits;
 
         const SurfProp_HeatTransAlg_SurfList_Algorithm_optional&
@@ -368,7 +368,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_Name
         //
         typedef ::xml_schema::string SurfConvectAlg_Inside_AdaptModelSelects_Name_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_Name_type > SurfConvectAlg_Inside_AdaptModelSelects_Name_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_Name_type, false > SurfConvectAlg_Inside_AdaptModelSelects_Name_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_Name_type, char > SurfConvectAlg_Inside_AdaptModelSelects_Name_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_Name_optional&
@@ -389,7 +389,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyVertWallEqtnSrc
         //
         typedef ::xml_schema::string SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyVertWallEqtnSrc_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyVertWallEqtnSrc_type > SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyVertWallEqtnSrc_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyVertWallEqtnSrc_type, false > SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyVertWallEqtnSrc_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyVertWallEqtnSrc_type, char > SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyVertWallEqtnSrc_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyVertWallEqtnSrc_optional&
@@ -410,7 +410,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyVertWallUserCurveName
         //
         typedef ::xml_schema::idref SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyVertWallUserCurveName_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyVertWallUserCurveName_type > SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyVertWallUserCurveName_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyVertWallUserCurveName_type, false > SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyVertWallUserCurveName_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyVertWallUserCurveName_type, char > SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyVertWallUserCurveName_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyVertWallUserCurveName_optional&
@@ -431,7 +431,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyStableHorzEqtnSrc
         //
         typedef ::xml_schema::string SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyStableHorzEqtnSrc_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyStableHorzEqtnSrc_type > SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyStableHorzEqtnSrc_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyStableHorzEqtnSrc_type, false > SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyStableHorzEqtnSrc_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyStableHorzEqtnSrc_type, char > SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyStableHorzEqtnSrc_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyStableHorzEqtnSrc_optional&
@@ -452,7 +452,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyStableHorzEqtnUserCurveName
         //
         typedef ::xml_schema::idref SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyStableHorzEqtnUserCurveName_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyStableHorzEqtnUserCurveName_type > SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyStableHorzEqtnUserCurveName_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyStableHorzEqtnUserCurveName_type, false > SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyStableHorzEqtnUserCurveName_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyStableHorzEqtnUserCurveName_type, char > SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyStableHorzEqtnUserCurveName_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyStableHorzEqtnUserCurveName_optional&
@@ -473,7 +473,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyUnstableHorzEqtnSrc
         //
         typedef ::xml_schema::string SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyUnstableHorzEqtnSrc_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyUnstableHorzEqtnSrc_type > SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyUnstableHorzEqtnSrc_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyUnstableHorzEqtnSrc_type, false > SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyUnstableHorzEqtnSrc_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyUnstableHorzEqtnSrc_type, char > SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyUnstableHorzEqtnSrc_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyUnstableHorzEqtnSrc_optional&
@@ -494,7 +494,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyUnstableHorzEqtnUserCurveName
         //
         typedef ::xml_schema::idref SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyUnstableHorzEqtnUserCurveName_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyUnstableHorzEqtnUserCurveName_type > SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyUnstableHorzEqtnUserCurveName_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyUnstableHorzEqtnUserCurveName_type, false > SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyUnstableHorzEqtnUserCurveName_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyUnstableHorzEqtnUserCurveName_type, char > SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyUnstableHorzEqtnUserCurveName_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyUnstableHorzEqtnUserCurveName_optional&
@@ -515,7 +515,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyStableTiltedEqtnSrc
         //
         typedef ::xml_schema::string SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyStableTiltedEqtnSrc_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyStableTiltedEqtnSrc_type > SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyStableTiltedEqtnSrc_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyStableTiltedEqtnSrc_type, false > SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyStableTiltedEqtnSrc_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyStableTiltedEqtnSrc_type, char > SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyStableTiltedEqtnSrc_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyStableTiltedEqtnSrc_optional&
@@ -536,7 +536,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyStableTiltedEqtnUserCurveName
         //
         typedef ::xml_schema::idref SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyStableTiltedEqtnUserCurveName_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyStableTiltedEqtnUserCurveName_type > SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyStableTiltedEqtnUserCurveName_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyStableTiltedEqtnUserCurveName_type, false > SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyStableTiltedEqtnUserCurveName_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyStableTiltedEqtnUserCurveName_type, char > SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyStableTiltedEqtnUserCurveName_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyStableTiltedEqtnUserCurveName_optional&
@@ -557,7 +557,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyUnstableTiltedEqtnSrc
         //
         typedef ::xml_schema::string SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyUnstableTiltedEqtnSrc_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyUnstableTiltedEqtnSrc_type > SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyUnstableTiltedEqtnSrc_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyUnstableTiltedEqtnSrc_type, false > SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyUnstableTiltedEqtnSrc_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyUnstableTiltedEqtnSrc_type, char > SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyUnstableTiltedEqtnSrc_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyUnstableTiltedEqtnSrc_optional&
@@ -578,7 +578,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyUnstableTiltedEqtnUserCurveName
         //
         typedef ::xml_schema::idref SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyUnstableTiltedEqtnUserCurveName_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyUnstableTiltedEqtnUserCurveName_type > SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyUnstableTiltedEqtnUserCurveName_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyUnstableTiltedEqtnUserCurveName_type, false > SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyUnstableTiltedEqtnUserCurveName_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyUnstableTiltedEqtnUserCurveName_type, char > SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyUnstableTiltedEqtnUserCurveName_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyUnstableTiltedEqtnUserCurveName_optional&
@@ -599,7 +599,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyWindowsEqtnSrc
         //
         typedef ::xml_schema::string SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyWindowsEqtnSrc_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyWindowsEqtnSrc_type > SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyWindowsEqtnSrc_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyWindowsEqtnSrc_type, false > SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyWindowsEqtnSrc_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyWindowsEqtnSrc_type, char > SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyWindowsEqtnSrc_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyWindowsEqtnSrc_optional&
@@ -620,7 +620,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyWindowsEqtnUserCurveName
         //
         typedef ::xml_schema::idref SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyWindowsEqtnUserCurveName_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyWindowsEqtnUserCurveName_type > SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyWindowsEqtnUserCurveName_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyWindowsEqtnUserCurveName_type, false > SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyWindowsEqtnUserCurveName_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyWindowsEqtnUserCurveName_type, char > SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyWindowsEqtnUserCurveName_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_SimpleBouyancyWindowsEqtnUserCurveName_optional&
@@ -641,7 +641,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolVertWallEqtnSrc
         //
         typedef ::xml_schema::string SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolVertWallEqtnSrc_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolVertWallEqtnSrc_type > SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolVertWallEqtnSrc_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolVertWallEqtnSrc_type, false > SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolVertWallEqtnSrc_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolVertWallEqtnSrc_type, char > SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolVertWallEqtnSrc_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolVertWallEqtnSrc_optional&
@@ -662,7 +662,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolVertWallEqtnUserCurveName
         //
         typedef ::xml_schema::idref SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolVertWallEqtnUserCurveName_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolVertWallEqtnUserCurveName_type > SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolVertWallEqtnUserCurveName_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolVertWallEqtnUserCurveName_type, false > SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolVertWallEqtnUserCurveName_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolVertWallEqtnUserCurveName_type, char > SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolVertWallEqtnUserCurveName_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolVertWallEqtnUserCurveName_optional&
@@ -683,7 +683,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolStableHorzEqtnSrc
         //
         typedef ::xml_schema::string SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolStableHorzEqtnSrc_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolStableHorzEqtnSrc_type > SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolStableHorzEqtnSrc_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolStableHorzEqtnSrc_type, false > SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolStableHorzEqtnSrc_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolStableHorzEqtnSrc_type, char > SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolStableHorzEqtnSrc_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolStableHorzEqtnSrc_optional&
@@ -704,7 +704,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolStableHorzEqtnUserCurveName
         //
         typedef ::xml_schema::idref SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolStableHorzEqtnUserCurveName_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolStableHorzEqtnUserCurveName_type > SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolStableHorzEqtnUserCurveName_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolStableHorzEqtnUserCurveName_type, false > SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolStableHorzEqtnUserCurveName_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolStableHorzEqtnUserCurveName_type, char > SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolStableHorzEqtnUserCurveName_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolStableHorzEqtnUserCurveName_optional&
@@ -725,7 +725,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolUnstableHorzEqtnSrc
         //
         typedef ::xml_schema::string SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolUnstableHorzEqtnSrc_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolUnstableHorzEqtnSrc_type > SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolUnstableHorzEqtnSrc_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolUnstableHorzEqtnSrc_type, false > SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolUnstableHorzEqtnSrc_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolUnstableHorzEqtnSrc_type, char > SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolUnstableHorzEqtnSrc_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolUnstableHorzEqtnSrc_optional&
@@ -746,7 +746,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolUnstableHorzEqtnUserCurveName
         //
         typedef ::xml_schema::idref SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolUnstableHorzEqtnUserCurveName_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolUnstableHorzEqtnUserCurveName_type > SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolUnstableHorzEqtnUserCurveName_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolUnstableHorzEqtnUserCurveName_type, false > SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolUnstableHorzEqtnUserCurveName_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolUnstableHorzEqtnUserCurveName_type, char > SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolUnstableHorzEqtnUserCurveName_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolUnstableHorzEqtnUserCurveName_optional&
@@ -767,7 +767,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolHeatedFloorEqtnSrc
         //
         typedef ::xml_schema::string SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolHeatedFloorEqtnSrc_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolHeatedFloorEqtnSrc_type > SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolHeatedFloorEqtnSrc_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolHeatedFloorEqtnSrc_type, false > SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolHeatedFloorEqtnSrc_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolHeatedFloorEqtnSrc_type, char > SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolHeatedFloorEqtnSrc_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolHeatedFloorEqtnSrc_optional&
@@ -788,7 +788,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolHeatedFloorEqtnUserCurveName
         //
         typedef ::xml_schema::idref SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolHeatedFloorEqtnUserCurveName_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolHeatedFloorEqtnUserCurveName_type > SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolHeatedFloorEqtnUserCurveName_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolHeatedFloorEqtnUserCurveName_type, false > SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolHeatedFloorEqtnUserCurveName_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolHeatedFloorEqtnUserCurveName_type, char > SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolHeatedFloorEqtnUserCurveName_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolHeatedFloorEqtnUserCurveName_optional&
@@ -809,7 +809,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolChilledClngEqtnSrc
         //
         typedef ::xml_schema::string SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolChilledClngEqtnSrc_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolChilledClngEqtnSrc_type > SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolChilledClngEqtnSrc_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolChilledClngEqtnSrc_type, false > SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolChilledClngEqtnSrc_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolChilledClngEqtnSrc_type, char > SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolChilledClngEqtnSrc_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolChilledClngEqtnSrc_optional&
@@ -830,7 +830,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolChilledClngEqtnUserCurveName
         //
         typedef ::xml_schema::idref SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolChilledClngEqtnUserCurveName_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolChilledClngEqtnUserCurveName_type > SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolChilledClngEqtnUserCurveName_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolChilledClngEqtnUserCurveName_type, false > SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolChilledClngEqtnUserCurveName_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolChilledClngEqtnUserCurveName_type, char > SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolChilledClngEqtnUserCurveName_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolChilledClngEqtnUserCurveName_optional&
@@ -851,7 +851,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolStableTiltedEqtnSrc
         //
         typedef ::xml_schema::string SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolStableTiltedEqtnSrc_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolStableTiltedEqtnSrc_type > SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolStableTiltedEqtnSrc_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolStableTiltedEqtnSrc_type, false > SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolStableTiltedEqtnSrc_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolStableTiltedEqtnSrc_type, char > SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolStableTiltedEqtnSrc_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolStableTiltedEqtnSrc_optional&
@@ -872,7 +872,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolStableTiltedEqtnUserCurveName
         //
         typedef ::xml_schema::idref SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolStableTiltedEqtnUserCurveName_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolStableTiltedEqtnUserCurveName_type > SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolStableTiltedEqtnUserCurveName_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolStableTiltedEqtnUserCurveName_type, false > SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolStableTiltedEqtnUserCurveName_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolStableTiltedEqtnUserCurveName_type, char > SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolStableTiltedEqtnUserCurveName_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolStableTiltedEqtnUserCurveName_optional&
@@ -893,7 +893,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolUnstableTiltedEqtnSrc
         //
         typedef ::xml_schema::string SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolUnstableTiltedEqtnSrc_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolUnstableTiltedEqtnSrc_type > SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolUnstableTiltedEqtnSrc_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolUnstableTiltedEqtnSrc_type, false > SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolUnstableTiltedEqtnSrc_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolUnstableTiltedEqtnSrc_type, char > SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolUnstableTiltedEqtnSrc_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolUnstableTiltedEqtnSrc_optional&
@@ -914,7 +914,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolUnstableTiltedEqtnUserCurveName
         //
         typedef ::xml_schema::idref SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolUnstableTiltedEqtnUserCurveName_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolUnstableTiltedEqtnUserCurveName_type > SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolUnstableTiltedEqtnUserCurveName_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolUnstableTiltedEqtnUserCurveName_type, false > SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolUnstableTiltedEqtnUserCurveName_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolUnstableTiltedEqtnUserCurveName_type, char > SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolUnstableTiltedEqtnUserCurveName_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolUnstableTiltedEqtnUserCurveName_optional&
@@ -935,7 +935,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolWindowEqtnSrc
         //
         typedef ::xml_schema::string SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolWindowEqtnSrc_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolWindowEqtnSrc_type > SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolWindowEqtnSrc_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolWindowEqtnSrc_type, false > SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolWindowEqtnSrc_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolWindowEqtnSrc_type, char > SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolWindowEqtnSrc_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolWindowEqtnSrc_optional&
@@ -956,7 +956,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolWindowEqtnUserCurveName
         //
         typedef ::xml_schema::idref SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolWindowEqtnUserCurveName_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolWindowEqtnUserCurveName_type > SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolWindowEqtnUserCurveName_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolWindowEqtnUserCurveName_type, false > SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolWindowEqtnUserCurveName_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolWindowEqtnUserCurveName_type, char > SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolWindowEqtnUserCurveName_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_FloorHeatClngCoolWindowEqtnUserCurveName_optional&
@@ -977,7 +977,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingVertWallEqtnSrc
         //
         typedef ::xml_schema::string SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingVertWallEqtnSrc_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingVertWallEqtnSrc_type > SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingVertWallEqtnSrc_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingVertWallEqtnSrc_type, false > SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingVertWallEqtnSrc_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingVertWallEqtnSrc_type, char > SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingVertWallEqtnSrc_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingVertWallEqtnSrc_optional&
@@ -998,7 +998,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingVertWallEqtnUserCurveName
         //
         typedef ::xml_schema::idref SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingVertWallEqtnUserCurveName_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingVertWallEqtnUserCurveName_type > SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingVertWallEqtnUserCurveName_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingVertWallEqtnUserCurveName_type, false > SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingVertWallEqtnUserCurveName_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingVertWallEqtnUserCurveName_type, char > SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingVertWallEqtnUserCurveName_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingVertWallEqtnUserCurveName_optional&
@@ -1019,7 +1019,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingHeatedWallEqtnSrc
         //
         typedef ::xml_schema::string SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingHeatedWallEqtnSrc_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingHeatedWallEqtnSrc_type > SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingHeatedWallEqtnSrc_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingHeatedWallEqtnSrc_type, false > SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingHeatedWallEqtnSrc_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingHeatedWallEqtnSrc_type, char > SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingHeatedWallEqtnSrc_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingHeatedWallEqtnSrc_optional&
@@ -1040,7 +1040,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingHeatedWallEqtnUserCurveName
         //
         typedef ::xml_schema::idref SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingHeatedWallEqtnUserCurveName_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingHeatedWallEqtnUserCurveName_type > SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingHeatedWallEqtnUserCurveName_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingHeatedWallEqtnUserCurveName_type, false > SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingHeatedWallEqtnUserCurveName_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingHeatedWallEqtnUserCurveName_type, char > SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingHeatedWallEqtnUserCurveName_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingHeatedWallEqtnUserCurveName_optional&
@@ -1061,7 +1061,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingStableHorzEqtnSrc
         //
         typedef ::xml_schema::string SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingStableHorzEqtnSrc_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingStableHorzEqtnSrc_type > SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingStableHorzEqtnSrc_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingStableHorzEqtnSrc_type, false > SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingStableHorzEqtnSrc_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingStableHorzEqtnSrc_type, char > SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingStableHorzEqtnSrc_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingStableHorzEqtnSrc_optional&
@@ -1082,7 +1082,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingStableHorzEqtnUserCurveName
         //
         typedef ::xml_schema::idref SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingStableHorzEqtnUserCurveName_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingStableHorzEqtnUserCurveName_type > SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingStableHorzEqtnUserCurveName_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingStableHorzEqtnUserCurveName_type, false > SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingStableHorzEqtnUserCurveName_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingStableHorzEqtnUserCurveName_type, char > SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingStableHorzEqtnUserCurveName_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingStableHorzEqtnUserCurveName_optional&
@@ -1103,7 +1103,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingUnstableHorzEqtnSrc
         //
         typedef ::xml_schema::string SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingUnstableHorzEqtnSrc_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingUnstableHorzEqtnSrc_type > SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingUnstableHorzEqtnSrc_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingUnstableHorzEqtnSrc_type, false > SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingUnstableHorzEqtnSrc_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingUnstableHorzEqtnSrc_type, char > SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingUnstableHorzEqtnSrc_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingUnstableHorzEqtnSrc_optional&
@@ -1124,7 +1124,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingUnstableHorzEqtnUserCurveName
         //
         typedef ::xml_schema::idref SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingUnstableHorzEqtnUserCurveName_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingUnstableHorzEqtnUserCurveName_type > SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingUnstableHorzEqtnUserCurveName_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingUnstableHorzEqtnUserCurveName_type, false > SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingUnstableHorzEqtnUserCurveName_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingUnstableHorzEqtnUserCurveName_type, char > SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingUnstableHorzEqtnUserCurveName_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingUnstableHorzEqtnUserCurveName_optional&
@@ -1145,7 +1145,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingStableTiltedEqtnSrc
         //
         typedef ::xml_schema::string SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingStableTiltedEqtnSrc_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingStableTiltedEqtnSrc_type > SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingStableTiltedEqtnSrc_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingStableTiltedEqtnSrc_type, false > SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingStableTiltedEqtnSrc_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingStableTiltedEqtnSrc_type, char > SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingStableTiltedEqtnSrc_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingStableTiltedEqtnSrc_optional&
@@ -1166,7 +1166,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingStableTiltedEqtnUserCurveName
         //
         typedef ::xml_schema::idref SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingStableTiltedEqtnUserCurveName_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingStableTiltedEqtnUserCurveName_type > SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingStableTiltedEqtnUserCurveName_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingStableTiltedEqtnUserCurveName_type, false > SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingStableTiltedEqtnUserCurveName_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingStableTiltedEqtnUserCurveName_type, char > SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingStableTiltedEqtnUserCurveName_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingStableTiltedEqtnUserCurveName_optional&
@@ -1187,7 +1187,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingUnstableTiltedEqtnSrc
         //
         typedef ::xml_schema::string SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingUnstableTiltedEqtnSrc_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingUnstableTiltedEqtnSrc_type > SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingUnstableTiltedEqtnSrc_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingUnstableTiltedEqtnSrc_type, false > SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingUnstableTiltedEqtnSrc_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingUnstableTiltedEqtnSrc_type, char > SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingUnstableTiltedEqtnSrc_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingUnstableTiltedEqtnSrc_optional&
@@ -1208,7 +1208,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingUnstableTiltedEqtnUserCurveName
         //
         typedef ::xml_schema::idref SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingUnstableTiltedEqtnUserCurveName_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingUnstableTiltedEqtnUserCurveName_type > SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingUnstableTiltedEqtnUserCurveName_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingUnstableTiltedEqtnUserCurveName_type, false > SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingUnstableTiltedEqtnUserCurveName_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingUnstableTiltedEqtnUserCurveName_type, char > SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingUnstableTiltedEqtnUserCurveName_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingUnstableTiltedEqtnUserCurveName_optional&
@@ -1229,7 +1229,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingWindowEqtnSrc
         //
         typedef ::xml_schema::string SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingWindowEqtnSrc_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingWindowEqtnSrc_type > SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingWindowEqtnSrc_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingWindowEqtnSrc_type, false > SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingWindowEqtnSrc_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingWindowEqtnSrc_type, char > SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingWindowEqtnSrc_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingWindowEqtnSrc_optional&
@@ -1250,7 +1250,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingWindowEqtnUserCurveName
         //
         typedef ::xml_schema::idref SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingWindowEqtnUserCurveName_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingWindowEqtnUserCurveName_type > SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingWindowEqtnUserCurveName_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingWindowEqtnUserCurveName_type, false > SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingWindowEqtnUserCurveName_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingWindowEqtnUserCurveName_type, char > SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingWindowEqtnUserCurveName_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_WallPanelHeatingWindowEqtnUserCurveName_optional&
@@ -1271,7 +1271,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterVertWallEqtnSrc
         //
         typedef ::xml_schema::string SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterVertWallEqtnSrc_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterVertWallEqtnSrc_type > SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterVertWallEqtnSrc_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterVertWallEqtnSrc_type, false > SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterVertWallEqtnSrc_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterVertWallEqtnSrc_type, char > SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterVertWallEqtnSrc_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterVertWallEqtnSrc_optional&
@@ -1292,7 +1292,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterVertWallEqtnUserCurveName
         //
         typedef ::xml_schema::idref SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterVertWallEqtnUserCurveName_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterVertWallEqtnUserCurveName_type > SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterVertWallEqtnUserCurveName_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterVertWallEqtnUserCurveName_type, false > SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterVertWallEqtnUserCurveName_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterVertWallEqtnUserCurveName_type, char > SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterVertWallEqtnUserCurveName_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterVertWallEqtnUserCurveName_optional&
@@ -1313,7 +1313,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterVertWallsNearHeaterEqtnSrc
         //
         typedef ::xml_schema::string SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterVertWallsNearHeaterEqtnSrc_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterVertWallsNearHeaterEqtnSrc_type > SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterVertWallsNearHeaterEqtnSrc_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterVertWallsNearHeaterEqtnSrc_type, false > SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterVertWallsNearHeaterEqtnSrc_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterVertWallsNearHeaterEqtnSrc_type, char > SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterVertWallsNearHeaterEqtnSrc_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterVertWallsNearHeaterEqtnSrc_optional&
@@ -1334,7 +1334,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterVertWallsNearHeaterEqtnUserCurveName
         //
         typedef ::xml_schema::idref SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterVertWallsNearHeaterEqtnUserCurveName_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterVertWallsNearHeaterEqtnUserCurveName_type > SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterVertWallsNearHeaterEqtnUserCurveName_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterVertWallsNearHeaterEqtnUserCurveName_type, false > SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterVertWallsNearHeaterEqtnUserCurveName_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterVertWallsNearHeaterEqtnUserCurveName_type, char > SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterVertWallsNearHeaterEqtnUserCurveName_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterVertWallsNearHeaterEqtnUserCurveName_optional&
@@ -1355,7 +1355,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterStableHorzEqtnSrc
         //
         typedef ::xml_schema::string SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterStableHorzEqtnSrc_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterStableHorzEqtnSrc_type > SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterStableHorzEqtnSrc_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterStableHorzEqtnSrc_type, false > SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterStableHorzEqtnSrc_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterStableHorzEqtnSrc_type, char > SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterStableHorzEqtnSrc_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterStableHorzEqtnSrc_optional&
@@ -1376,7 +1376,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterStableHorzEqtnUserCurveName
         //
         typedef ::xml_schema::idref SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterStableHorzEqtnUserCurveName_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterStableHorzEqtnUserCurveName_type > SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterStableHorzEqtnUserCurveName_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterStableHorzEqtnUserCurveName_type, false > SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterStableHorzEqtnUserCurveName_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterStableHorzEqtnUserCurveName_type, char > SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterStableHorzEqtnUserCurveName_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterStableHorzEqtnUserCurveName_optional&
@@ -1397,7 +1397,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterUnstableHorzEqtnSrc
         //
         typedef ::xml_schema::string SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterUnstableHorzEqtnSrc_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterUnstableHorzEqtnSrc_type > SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterUnstableHorzEqtnSrc_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterUnstableHorzEqtnSrc_type, false > SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterUnstableHorzEqtnSrc_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterUnstableHorzEqtnSrc_type, char > SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterUnstableHorzEqtnSrc_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterUnstableHorzEqtnSrc_optional&
@@ -1418,7 +1418,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterUnstableHorzEqtnUserCurveName
         //
         typedef ::xml_schema::idref SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterUnstableHorzEqtnUserCurveName_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterUnstableHorzEqtnUserCurveName_type > SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterUnstableHorzEqtnUserCurveName_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterUnstableHorzEqtnUserCurveName_type, false > SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterUnstableHorzEqtnUserCurveName_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterUnstableHorzEqtnUserCurveName_type, char > SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterUnstableHorzEqtnUserCurveName_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterUnstableHorzEqtnUserCurveName_optional&
@@ -1439,7 +1439,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterStableTiltedEqtnSrc
         //
         typedef ::xml_schema::string SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterStableTiltedEqtnSrc_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterStableTiltedEqtnSrc_type > SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterStableTiltedEqtnSrc_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterStableTiltedEqtnSrc_type, false > SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterStableTiltedEqtnSrc_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterStableTiltedEqtnSrc_type, char > SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterStableTiltedEqtnSrc_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterStableTiltedEqtnSrc_optional&
@@ -1460,7 +1460,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterStableTiltedEqtnUserCurveName
         //
         typedef ::xml_schema::idref SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterStableTiltedEqtnUserCurveName_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterStableTiltedEqtnUserCurveName_type > SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterStableTiltedEqtnUserCurveName_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterStableTiltedEqtnUserCurveName_type, false > SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterStableTiltedEqtnUserCurveName_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterStableTiltedEqtnUserCurveName_type, char > SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterStableTiltedEqtnUserCurveName_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterStableTiltedEqtnUserCurveName_optional&
@@ -1481,7 +1481,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterUnstableTiltedEqtnSrc
         //
         typedef ::xml_schema::string SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterUnstableTiltedEqtnSrc_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterUnstableTiltedEqtnSrc_type > SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterUnstableTiltedEqtnSrc_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterUnstableTiltedEqtnSrc_type, false > SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterUnstableTiltedEqtnSrc_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterUnstableTiltedEqtnSrc_type, char > SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterUnstableTiltedEqtnSrc_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterUnstableTiltedEqtnSrc_optional&
@@ -1502,7 +1502,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterUnstableTiltedEqtnUserCurveName
         //
         typedef ::xml_schema::idref SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterUnstableTiltedEqtnUserCurveName_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterUnstableTiltedEqtnUserCurveName_type > SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterUnstableTiltedEqtnUserCurveName_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterUnstableTiltedEqtnUserCurveName_type, false > SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterUnstableTiltedEqtnUserCurveName_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterUnstableTiltedEqtnUserCurveName_type, char > SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterUnstableTiltedEqtnUserCurveName_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterUnstableTiltedEqtnUserCurveName_optional&
@@ -1523,7 +1523,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterWindowsEqtnSrc
         //
         typedef ::xml_schema::string SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterWindowsEqtnSrc_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterWindowsEqtnSrc_type > SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterWindowsEqtnSrc_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterWindowsEqtnSrc_type, false > SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterWindowsEqtnSrc_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterWindowsEqtnSrc_type, char > SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterWindowsEqtnSrc_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterWindowsEqtnSrc_optional&
@@ -1544,7 +1544,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterWindowsEqtnUserCurveName
         //
         typedef ::xml_schema::idref SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterWindowsEqtnUserCurveName_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterWindowsEqtnUserCurveName_type > SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterWindowsEqtnUserCurveName_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterWindowsEqtnUserCurveName_type, false > SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterWindowsEqtnUserCurveName_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterWindowsEqtnUserCurveName_type, char > SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterWindowsEqtnUserCurveName_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_ConvectZoneHeaterWindowsEqtnUserCurveName_optional&
@@ -1565,7 +1565,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserWallEqtnSrc
         //
         typedef ::xml_schema::string SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserWallEqtnSrc_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserWallEqtnSrc_type > SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserWallEqtnSrc_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserWallEqtnSrc_type, false > SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserWallEqtnSrc_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserWallEqtnSrc_type, char > SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserWallEqtnSrc_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserWallEqtnSrc_optional&
@@ -1586,7 +1586,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserWallEqtnUserCurveName
         //
         typedef ::xml_schema::idref SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserWallEqtnUserCurveName_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserWallEqtnUserCurveName_type > SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserWallEqtnUserCurveName_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserWallEqtnUserCurveName_type, false > SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserWallEqtnUserCurveName_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserWallEqtnUserCurveName_type, char > SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserWallEqtnUserCurveName_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserWallEqtnUserCurveName_optional&
@@ -1607,7 +1607,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserClngEqtnSrc
         //
         typedef ::xml_schema::string SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserClngEqtnSrc_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserClngEqtnSrc_type > SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserClngEqtnSrc_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserClngEqtnSrc_type, false > SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserClngEqtnSrc_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserClngEqtnSrc_type, char > SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserClngEqtnSrc_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserClngEqtnSrc_optional&
@@ -1628,7 +1628,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserClngEqtnUserCurveName
         //
         typedef ::xml_schema::idref SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserClngEqtnUserCurveName_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserClngEqtnUserCurveName_type > SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserClngEqtnUserCurveName_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserClngEqtnUserCurveName_type, false > SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserClngEqtnUserCurveName_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserClngEqtnUserCurveName_type, char > SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserClngEqtnUserCurveName_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserClngEqtnUserCurveName_optional&
@@ -1649,7 +1649,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserFloorEqtnSrc
         //
         typedef ::xml_schema::string SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserFloorEqtnSrc_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserFloorEqtnSrc_type > SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserFloorEqtnSrc_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserFloorEqtnSrc_type, false > SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserFloorEqtnSrc_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserFloorEqtnSrc_type, char > SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserFloorEqtnSrc_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserFloorEqtnSrc_optional&
@@ -1670,7 +1670,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserFloorEqtnUserCurveName
         //
         typedef ::xml_schema::idref SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserFloorEqtnUserCurveName_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserFloorEqtnUserCurveName_type > SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserFloorEqtnUserCurveName_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserFloorEqtnUserCurveName_type, false > SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserFloorEqtnUserCurveName_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserFloorEqtnUserCurveName_type, char > SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserFloorEqtnUserCurveName_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserFloorEqtnUserCurveName_optional&
@@ -1691,7 +1691,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserWindowEqtnSrc
         //
         typedef ::xml_schema::string SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserWindowEqtnSrc_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserWindowEqtnSrc_type > SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserWindowEqtnSrc_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserWindowEqtnSrc_type, false > SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserWindowEqtnSrc_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserWindowEqtnSrc_type, char > SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserWindowEqtnSrc_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserWindowEqtnSrc_optional&
@@ -1712,7 +1712,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserWindowEqtnUserCurveName
         //
         typedef ::xml_schema::idref SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserWindowEqtnUserCurveName_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserWindowEqtnUserCurveName_type > SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserWindowEqtnUserCurveName_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserWindowEqtnUserCurveName_type, false > SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserWindowEqtnUserCurveName_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserWindowEqtnUserCurveName_type, char > SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserWindowEqtnUserCurveName_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_CentralAirDiffuserWindowEqtnUserCurveName_optional&
@@ -1733,7 +1733,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircVertWallEqtnSrc
         //
         typedef ::xml_schema::string SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircVertWallEqtnSrc_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircVertWallEqtnSrc_type > SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircVertWallEqtnSrc_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircVertWallEqtnSrc_type, false > SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircVertWallEqtnSrc_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircVertWallEqtnSrc_type, char > SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircVertWallEqtnSrc_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircVertWallEqtnSrc_optional&
@@ -1754,7 +1754,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircVertWallEqtnUserCurveName
         //
         typedef ::xml_schema::idref SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircVertWallEqtnUserCurveName_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircVertWallEqtnUserCurveName_type > SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircVertWallEqtnUserCurveName_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircVertWallEqtnUserCurveName_type, false > SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircVertWallEqtnUserCurveName_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircVertWallEqtnUserCurveName_type, char > SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircVertWallEqtnUserCurveName_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircVertWallEqtnUserCurveName_optional&
@@ -1775,7 +1775,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircStableHorzEqtnSrc
         //
         typedef ::xml_schema::string SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircStableHorzEqtnSrc_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircStableHorzEqtnSrc_type > SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircStableHorzEqtnSrc_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircStableHorzEqtnSrc_type, false > SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircStableHorzEqtnSrc_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircStableHorzEqtnSrc_type, char > SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircStableHorzEqtnSrc_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircStableHorzEqtnSrc_optional&
@@ -1796,7 +1796,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircStableHorzEqtnUserCurveName
         //
         typedef ::xml_schema::idref SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircStableHorzEqtnUserCurveName_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircStableHorzEqtnUserCurveName_type > SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircStableHorzEqtnUserCurveName_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircStableHorzEqtnUserCurveName_type, false > SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircStableHorzEqtnUserCurveName_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircStableHorzEqtnUserCurveName_type, char > SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircStableHorzEqtnUserCurveName_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircStableHorzEqtnUserCurveName_optional&
@@ -1817,7 +1817,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircUnstableHorzEqtnSrc
         //
         typedef ::xml_schema::string SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircUnstableHorzEqtnSrc_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircUnstableHorzEqtnSrc_type > SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircUnstableHorzEqtnSrc_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircUnstableHorzEqtnSrc_type, false > SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircUnstableHorzEqtnSrc_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircUnstableHorzEqtnSrc_type, char > SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircUnstableHorzEqtnSrc_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircUnstableHorzEqtnSrc_optional&
@@ -1838,7 +1838,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircUnstableHorzEqtnUserCurveName
         //
         typedef ::xml_schema::idref SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircUnstableHorzEqtnUserCurveName_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircUnstableHorzEqtnUserCurveName_type > SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircUnstableHorzEqtnUserCurveName_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircUnstableHorzEqtnUserCurveName_type, false > SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircUnstableHorzEqtnUserCurveName_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircUnstableHorzEqtnUserCurveName_type, char > SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircUnstableHorzEqtnUserCurveName_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircUnstableHorzEqtnUserCurveName_optional&
@@ -1859,7 +1859,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircStableTiltedEqtnSrc
         //
         typedef ::xml_schema::string SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircStableTiltedEqtnSrc_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircStableTiltedEqtnSrc_type > SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircStableTiltedEqtnSrc_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircStableTiltedEqtnSrc_type, false > SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircStableTiltedEqtnSrc_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircStableTiltedEqtnSrc_type, char > SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircStableTiltedEqtnSrc_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircStableTiltedEqtnSrc_optional&
@@ -1880,7 +1880,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircStableTiltedEqtnUserCurveName
         //
         typedef ::xml_schema::idref SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircStableTiltedEqtnUserCurveName_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircStableTiltedEqtnUserCurveName_type > SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircStableTiltedEqtnUserCurveName_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircStableTiltedEqtnUserCurveName_type, false > SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircStableTiltedEqtnUserCurveName_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircStableTiltedEqtnUserCurveName_type, char > SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircStableTiltedEqtnUserCurveName_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircStableTiltedEqtnUserCurveName_optional&
@@ -1901,7 +1901,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircUnstableTiltedEqtnSrc
         //
         typedef ::xml_schema::string SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircUnstableTiltedEqtnSrc_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircUnstableTiltedEqtnSrc_type > SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircUnstableTiltedEqtnSrc_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircUnstableTiltedEqtnSrc_type, false > SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircUnstableTiltedEqtnSrc_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircUnstableTiltedEqtnSrc_type, char > SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircUnstableTiltedEqtnSrc_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircUnstableTiltedEqtnSrc_optional&
@@ -1922,7 +1922,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircUnstableTiltedEqtnUserCurveName
         //
         typedef ::xml_schema::idref SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircUnstableTiltedEqtnUserCurveName_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircUnstableTiltedEqtnUserCurveName_type > SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircUnstableTiltedEqtnUserCurveName_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircUnstableTiltedEqtnUserCurveName_type, false > SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircUnstableTiltedEqtnUserCurveName_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircUnstableTiltedEqtnUserCurveName_type, char > SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircUnstableTiltedEqtnUserCurveName_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircUnstableTiltedEqtnUserCurveName_optional&
@@ -1943,7 +1943,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircWindowEqtnSrc
         //
         typedef ::xml_schema::string SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircWindowEqtnSrc_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircWindowEqtnSrc_type > SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircWindowEqtnSrc_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircWindowEqtnSrc_type, false > SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircWindowEqtnSrc_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircWindowEqtnSrc_type, char > SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircWindowEqtnSrc_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircWindowEqtnSrc_optional&
@@ -1964,7 +1964,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircWindowEqtnUserCurveName
         //
         typedef ::xml_schema::idref SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircWindowEqtnUserCurveName_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircWindowEqtnUserCurveName_type > SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircWindowEqtnUserCurveName_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircWindowEqtnUserCurveName_type, false > SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircWindowEqtnUserCurveName_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircWindowEqtnUserCurveName_type, char > SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircWindowEqtnUserCurveName_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_MechZoneFanCircWindowEqtnUserCurveName_optional&
@@ -1985,7 +1985,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeBouyancyAssistingFlowonWallsEqtnSrc
         //
         typedef ::xml_schema::string SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeBouyancyAssistingFlowonWallsEqtnSrc_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeBouyancyAssistingFlowonWallsEqtnSrc_type > SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeBouyancyAssistingFlowonWallsEqtnSrc_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeBouyancyAssistingFlowonWallsEqtnSrc_type, false > SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeBouyancyAssistingFlowonWallsEqtnSrc_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeBouyancyAssistingFlowonWallsEqtnSrc_type, char > SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeBouyancyAssistingFlowonWallsEqtnSrc_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeBouyancyAssistingFlowonWallsEqtnSrc_optional&
@@ -2006,7 +2006,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeBouyancyAssistingFlowonWallsEqtnUserCurveName
         //
         typedef ::xml_schema::idref SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeBouyancyAssistingFlowonWallsEqtnUserCurveName_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeBouyancyAssistingFlowonWallsEqtnUserCurveName_type > SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeBouyancyAssistingFlowonWallsEqtnUserCurveName_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeBouyancyAssistingFlowonWallsEqtnUserCurveName_type, false > SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeBouyancyAssistingFlowonWallsEqtnUserCurveName_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeBouyancyAssistingFlowonWallsEqtnUserCurveName_type, char > SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeBouyancyAssistingFlowonWallsEqtnUserCurveName_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeBouyancyAssistingFlowonWallsEqtnUserCurveName_optional&
@@ -2027,7 +2027,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeBouyancyOppossingFlowonWallsEqtnSrc
         //
         typedef ::xml_schema::string SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeBouyancyOppossingFlowonWallsEqtnSrc_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeBouyancyOppossingFlowonWallsEqtnSrc_type > SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeBouyancyOppossingFlowonWallsEqtnSrc_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeBouyancyOppossingFlowonWallsEqtnSrc_type, false > SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeBouyancyOppossingFlowonWallsEqtnSrc_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeBouyancyOppossingFlowonWallsEqtnSrc_type, char > SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeBouyancyOppossingFlowonWallsEqtnSrc_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeBouyancyOppossingFlowonWallsEqtnSrc_optional&
@@ -2048,7 +2048,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeBouyancyOppossingFlowonWallsEqtnUserCurveName
         //
         typedef ::xml_schema::idref SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeBouyancyOppossingFlowonWallsEqtnUserCurveName_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeBouyancyOppossingFlowonWallsEqtnUserCurveName_type > SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeBouyancyOppossingFlowonWallsEqtnUserCurveName_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeBouyancyOppossingFlowonWallsEqtnUserCurveName_type, false > SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeBouyancyOppossingFlowonWallsEqtnUserCurveName_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeBouyancyOppossingFlowonWallsEqtnUserCurveName_type, char > SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeBouyancyOppossingFlowonWallsEqtnUserCurveName_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeBouyancyOppossingFlowonWallsEqtnUserCurveName_optional&
@@ -2069,7 +2069,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeStableFloorEqtnSrc
         //
         typedef ::xml_schema::string SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeStableFloorEqtnSrc_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeStableFloorEqtnSrc_type > SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeStableFloorEqtnSrc_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeStableFloorEqtnSrc_type, false > SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeStableFloorEqtnSrc_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeStableFloorEqtnSrc_type, char > SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeStableFloorEqtnSrc_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeStableFloorEqtnSrc_optional&
@@ -2090,7 +2090,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeStableFloorEqtnUserCurveName
         //
         typedef ::xml_schema::idref SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeStableFloorEqtnUserCurveName_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeStableFloorEqtnUserCurveName_type > SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeStableFloorEqtnUserCurveName_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeStableFloorEqtnUserCurveName_type, false > SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeStableFloorEqtnUserCurveName_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeStableFloorEqtnUserCurveName_type, char > SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeStableFloorEqtnUserCurveName_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeStableFloorEqtnUserCurveName_optional&
@@ -2111,7 +2111,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeUnstableFloorEqtnSrc
         //
         typedef ::xml_schema::string SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeUnstableFloorEqtnSrc_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeUnstableFloorEqtnSrc_type > SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeUnstableFloorEqtnSrc_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeUnstableFloorEqtnSrc_type, false > SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeUnstableFloorEqtnSrc_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeUnstableFloorEqtnSrc_type, char > SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeUnstableFloorEqtnSrc_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeUnstableFloorEqtnSrc_optional&
@@ -2132,7 +2132,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeUnstableFloorEqtnUserCurveName
         //
         typedef ::xml_schema::idref SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeUnstableFloorEqtnUserCurveName_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeUnstableFloorEqtnUserCurveName_type > SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeUnstableFloorEqtnUserCurveName_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeUnstableFloorEqtnUserCurveName_type, false > SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeUnstableFloorEqtnUserCurveName_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeUnstableFloorEqtnUserCurveName_type, char > SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeUnstableFloorEqtnUserCurveName_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeUnstableFloorEqtnUserCurveName_optional&
@@ -2153,7 +2153,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeStableClngEqtnSrc
         //
         typedef ::xml_schema::string SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeStableClngEqtnSrc_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeStableClngEqtnSrc_type > SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeStableClngEqtnSrc_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeStableClngEqtnSrc_type, false > SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeStableClngEqtnSrc_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeStableClngEqtnSrc_type, char > SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeStableClngEqtnSrc_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeStableClngEqtnSrc_optional&
@@ -2174,7 +2174,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeStableClngEqtnUserCurveName
         //
         typedef ::xml_schema::idref SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeStableClngEqtnUserCurveName_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeStableClngEqtnUserCurveName_type > SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeStableClngEqtnUserCurveName_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeStableClngEqtnUserCurveName_type, false > SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeStableClngEqtnUserCurveName_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeStableClngEqtnUserCurveName_type, char > SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeStableClngEqtnUserCurveName_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeStableClngEqtnUserCurveName_optional&
@@ -2195,7 +2195,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeUnstableClngEqtnSrc
         //
         typedef ::xml_schema::string SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeUnstableClngEqtnSrc_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeUnstableClngEqtnSrc_type > SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeUnstableClngEqtnSrc_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeUnstableClngEqtnSrc_type, false > SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeUnstableClngEqtnSrc_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeUnstableClngEqtnSrc_type, char > SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeUnstableClngEqtnSrc_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeUnstableClngEqtnSrc_optional&
@@ -2216,7 +2216,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeUnstableClngEqtnUserCurveName
         //
         typedef ::xml_schema::idref SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeUnstableClngEqtnUserCurveName_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeUnstableClngEqtnUserCurveName_type > SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeUnstableClngEqtnUserCurveName_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeUnstableClngEqtnUserCurveName_type, false > SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeUnstableClngEqtnUserCurveName_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeUnstableClngEqtnUserCurveName_type, char > SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeUnstableClngEqtnUserCurveName_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeUnstableClngEqtnUserCurveName_optional&
@@ -2237,7 +2237,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeWindowEqtnSrc
         //
         typedef ::xml_schema::string SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeWindowEqtnSrc_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeWindowEqtnSrc_type > SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeWindowEqtnSrc_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeWindowEqtnSrc_type, false > SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeWindowEqtnSrc_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeWindowEqtnSrc_type, char > SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeWindowEqtnSrc_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeWindowEqtnSrc_optional&
@@ -2258,7 +2258,7 @@ namespace schema
         // SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeWindowEqtnUserCurveName
         //
         typedef ::xml_schema::idref SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeWindowEqtnUserCurveName_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeWindowEqtnUserCurveName_type > SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeWindowEqtnUserCurveName_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeWindowEqtnUserCurveName_type, false > SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeWindowEqtnUserCurveName_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeWindowEqtnUserCurveName_type, char > SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeWindowEqtnUserCurveName_traits;
 
         const SurfConvectAlg_Inside_AdaptModelSelects_MixedRegimeWindowEqtnUserCurveName_optional&
@@ -2279,7 +2279,7 @@ namespace schema
         // SurfConvectAlg_Outside_AdaptModelSelects_Name
         //
         typedef ::xml_schema::string SurfConvectAlg_Outside_AdaptModelSelects_Name_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Outside_AdaptModelSelects_Name_type > SurfConvectAlg_Outside_AdaptModelSelects_Name_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Outside_AdaptModelSelects_Name_type, false > SurfConvectAlg_Outside_AdaptModelSelects_Name_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Outside_AdaptModelSelects_Name_type, char > SurfConvectAlg_Outside_AdaptModelSelects_Name_traits;
 
         const SurfConvectAlg_Outside_AdaptModelSelects_Name_optional&
@@ -2300,7 +2300,7 @@ namespace schema
         // SurfConvectAlg_Outside_AdaptModelSelects_WindConvectWindwardVertWallEqtnSrc
         //
         typedef ::xml_schema::string SurfConvectAlg_Outside_AdaptModelSelects_WindConvectWindwardVertWallEqtnSrc_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Outside_AdaptModelSelects_WindConvectWindwardVertWallEqtnSrc_type > SurfConvectAlg_Outside_AdaptModelSelects_WindConvectWindwardVertWallEqtnSrc_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Outside_AdaptModelSelects_WindConvectWindwardVertWallEqtnSrc_type, false > SurfConvectAlg_Outside_AdaptModelSelects_WindConvectWindwardVertWallEqtnSrc_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Outside_AdaptModelSelects_WindConvectWindwardVertWallEqtnSrc_type, char > SurfConvectAlg_Outside_AdaptModelSelects_WindConvectWindwardVertWallEqtnSrc_traits;
 
         const SurfConvectAlg_Outside_AdaptModelSelects_WindConvectWindwardVertWallEqtnSrc_optional&
@@ -2321,7 +2321,7 @@ namespace schema
         // SurfConvectAlg_Outside_AdaptModelSelects_WindConvectWindwardEqtnVertWallUserCurveName
         //
         typedef ::xml_schema::idref SurfConvectAlg_Outside_AdaptModelSelects_WindConvectWindwardEqtnVertWallUserCurveName_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Outside_AdaptModelSelects_WindConvectWindwardEqtnVertWallUserCurveName_type > SurfConvectAlg_Outside_AdaptModelSelects_WindConvectWindwardEqtnVertWallUserCurveName_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Outside_AdaptModelSelects_WindConvectWindwardEqtnVertWallUserCurveName_type, false > SurfConvectAlg_Outside_AdaptModelSelects_WindConvectWindwardEqtnVertWallUserCurveName_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Outside_AdaptModelSelects_WindConvectWindwardEqtnVertWallUserCurveName_type, char > SurfConvectAlg_Outside_AdaptModelSelects_WindConvectWindwardEqtnVertWallUserCurveName_traits;
 
         const SurfConvectAlg_Outside_AdaptModelSelects_WindConvectWindwardEqtnVertWallUserCurveName_optional&
@@ -2342,7 +2342,7 @@ namespace schema
         // SurfConvectAlg_Outside_AdaptModelSelects_WindConvectLeewardVertWallEqtnSrc
         //
         typedef ::xml_schema::string SurfConvectAlg_Outside_AdaptModelSelects_WindConvectLeewardVertWallEqtnSrc_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Outside_AdaptModelSelects_WindConvectLeewardVertWallEqtnSrc_type > SurfConvectAlg_Outside_AdaptModelSelects_WindConvectLeewardVertWallEqtnSrc_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Outside_AdaptModelSelects_WindConvectLeewardVertWallEqtnSrc_type, false > SurfConvectAlg_Outside_AdaptModelSelects_WindConvectLeewardVertWallEqtnSrc_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Outside_AdaptModelSelects_WindConvectLeewardVertWallEqtnSrc_type, char > SurfConvectAlg_Outside_AdaptModelSelects_WindConvectLeewardVertWallEqtnSrc_traits;
 
         const SurfConvectAlg_Outside_AdaptModelSelects_WindConvectLeewardVertWallEqtnSrc_optional&
@@ -2363,7 +2363,7 @@ namespace schema
         // SurfConvectAlg_Outside_AdaptModelSelects_WindConvectLeewardVertWallEqtnUserCurveName
         //
         typedef ::xml_schema::idref SurfConvectAlg_Outside_AdaptModelSelects_WindConvectLeewardVertWallEqtnUserCurveName_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Outside_AdaptModelSelects_WindConvectLeewardVertWallEqtnUserCurveName_type > SurfConvectAlg_Outside_AdaptModelSelects_WindConvectLeewardVertWallEqtnUserCurveName_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Outside_AdaptModelSelects_WindConvectLeewardVertWallEqtnUserCurveName_type, false > SurfConvectAlg_Outside_AdaptModelSelects_WindConvectLeewardVertWallEqtnUserCurveName_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Outside_AdaptModelSelects_WindConvectLeewardVertWallEqtnUserCurveName_type, char > SurfConvectAlg_Outside_AdaptModelSelects_WindConvectLeewardVertWallEqtnUserCurveName_traits;
 
         const SurfConvectAlg_Outside_AdaptModelSelects_WindConvectLeewardVertWallEqtnUserCurveName_optional&
@@ -2384,7 +2384,7 @@ namespace schema
         // SurfConvectAlg_Outside_AdaptModelSelects_WindConvectHorzRoOfEqtnSrc
         //
         typedef ::xml_schema::string SurfConvectAlg_Outside_AdaptModelSelects_WindConvectHorzRoOfEqtnSrc_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Outside_AdaptModelSelects_WindConvectHorzRoOfEqtnSrc_type > SurfConvectAlg_Outside_AdaptModelSelects_WindConvectHorzRoOfEqtnSrc_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Outside_AdaptModelSelects_WindConvectHorzRoOfEqtnSrc_type, false > SurfConvectAlg_Outside_AdaptModelSelects_WindConvectHorzRoOfEqtnSrc_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Outside_AdaptModelSelects_WindConvectHorzRoOfEqtnSrc_type, char > SurfConvectAlg_Outside_AdaptModelSelects_WindConvectHorzRoOfEqtnSrc_traits;
 
         const SurfConvectAlg_Outside_AdaptModelSelects_WindConvectHorzRoOfEqtnSrc_optional&
@@ -2405,7 +2405,7 @@ namespace schema
         // SurfConvectAlg_Outside_AdaptModelSelects_WindConvectHorzRoOfUserCurveName
         //
         typedef ::xml_schema::idref SurfConvectAlg_Outside_AdaptModelSelects_WindConvectHorzRoOfUserCurveName_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Outside_AdaptModelSelects_WindConvectHorzRoOfUserCurveName_type > SurfConvectAlg_Outside_AdaptModelSelects_WindConvectHorzRoOfUserCurveName_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Outside_AdaptModelSelects_WindConvectHorzRoOfUserCurveName_type, false > SurfConvectAlg_Outside_AdaptModelSelects_WindConvectHorzRoOfUserCurveName_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Outside_AdaptModelSelects_WindConvectHorzRoOfUserCurveName_type, char > SurfConvectAlg_Outside_AdaptModelSelects_WindConvectHorzRoOfUserCurveName_traits;
 
         const SurfConvectAlg_Outside_AdaptModelSelects_WindConvectHorzRoOfUserCurveName_optional&
@@ -2426,7 +2426,7 @@ namespace schema
         // SurfConvectAlg_Outside_AdaptModelSelects_NaturalConvectVertWallEqtnSrc
         //
         typedef ::xml_schema::string SurfConvectAlg_Outside_AdaptModelSelects_NaturalConvectVertWallEqtnSrc_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Outside_AdaptModelSelects_NaturalConvectVertWallEqtnSrc_type > SurfConvectAlg_Outside_AdaptModelSelects_NaturalConvectVertWallEqtnSrc_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Outside_AdaptModelSelects_NaturalConvectVertWallEqtnSrc_type, false > SurfConvectAlg_Outside_AdaptModelSelects_NaturalConvectVertWallEqtnSrc_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Outside_AdaptModelSelects_NaturalConvectVertWallEqtnSrc_type, char > SurfConvectAlg_Outside_AdaptModelSelects_NaturalConvectVertWallEqtnSrc_traits;
 
         const SurfConvectAlg_Outside_AdaptModelSelects_NaturalConvectVertWallEqtnSrc_optional&
@@ -2447,7 +2447,7 @@ namespace schema
         // SurfConvectAlg_Outside_AdaptModelSelects_NaturalConvectVertWallEqtnUserCurveName
         //
         typedef ::xml_schema::idref SurfConvectAlg_Outside_AdaptModelSelects_NaturalConvectVertWallEqtnUserCurveName_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Outside_AdaptModelSelects_NaturalConvectVertWallEqtnUserCurveName_type > SurfConvectAlg_Outside_AdaptModelSelects_NaturalConvectVertWallEqtnUserCurveName_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Outside_AdaptModelSelects_NaturalConvectVertWallEqtnUserCurveName_type, false > SurfConvectAlg_Outside_AdaptModelSelects_NaturalConvectVertWallEqtnUserCurveName_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Outside_AdaptModelSelects_NaturalConvectVertWallEqtnUserCurveName_type, char > SurfConvectAlg_Outside_AdaptModelSelects_NaturalConvectVertWallEqtnUserCurveName_traits;
 
         const SurfConvectAlg_Outside_AdaptModelSelects_NaturalConvectVertWallEqtnUserCurveName_optional&
@@ -2468,7 +2468,7 @@ namespace schema
         // SurfConvectAlg_Outside_AdaptModelSelects_NaturalConvectStableHorzEqtnSrc
         //
         typedef ::xml_schema::string SurfConvectAlg_Outside_AdaptModelSelects_NaturalConvectStableHorzEqtnSrc_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Outside_AdaptModelSelects_NaturalConvectStableHorzEqtnSrc_type > SurfConvectAlg_Outside_AdaptModelSelects_NaturalConvectStableHorzEqtnSrc_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Outside_AdaptModelSelects_NaturalConvectStableHorzEqtnSrc_type, false > SurfConvectAlg_Outside_AdaptModelSelects_NaturalConvectStableHorzEqtnSrc_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Outside_AdaptModelSelects_NaturalConvectStableHorzEqtnSrc_type, char > SurfConvectAlg_Outside_AdaptModelSelects_NaturalConvectStableHorzEqtnSrc_traits;
 
         const SurfConvectAlg_Outside_AdaptModelSelects_NaturalConvectStableHorzEqtnSrc_optional&
@@ -2489,7 +2489,7 @@ namespace schema
         // SurfConvectAlg_Outside_AdaptModelSelects_NaturalConvectStableHorzEqtnUserCurveName
         //
         typedef ::xml_schema::idref SurfConvectAlg_Outside_AdaptModelSelects_NaturalConvectStableHorzEqtnUserCurveName_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Outside_AdaptModelSelects_NaturalConvectStableHorzEqtnUserCurveName_type > SurfConvectAlg_Outside_AdaptModelSelects_NaturalConvectStableHorzEqtnUserCurveName_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Outside_AdaptModelSelects_NaturalConvectStableHorzEqtnUserCurveName_type, false > SurfConvectAlg_Outside_AdaptModelSelects_NaturalConvectStableHorzEqtnUserCurveName_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Outside_AdaptModelSelects_NaturalConvectStableHorzEqtnUserCurveName_type, char > SurfConvectAlg_Outside_AdaptModelSelects_NaturalConvectStableHorzEqtnUserCurveName_traits;
 
         const SurfConvectAlg_Outside_AdaptModelSelects_NaturalConvectStableHorzEqtnUserCurveName_optional&
@@ -2510,7 +2510,7 @@ namespace schema
         // SurfConvectAlg_Outside_AdaptModelSelects_NaturalConvectUnstableHorzEqtnSrc
         //
         typedef ::xml_schema::string SurfConvectAlg_Outside_AdaptModelSelects_NaturalConvectUnstableHorzEqtnSrc_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Outside_AdaptModelSelects_NaturalConvectUnstableHorzEqtnSrc_type > SurfConvectAlg_Outside_AdaptModelSelects_NaturalConvectUnstableHorzEqtnSrc_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Outside_AdaptModelSelects_NaturalConvectUnstableHorzEqtnSrc_type, false > SurfConvectAlg_Outside_AdaptModelSelects_NaturalConvectUnstableHorzEqtnSrc_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Outside_AdaptModelSelects_NaturalConvectUnstableHorzEqtnSrc_type, char > SurfConvectAlg_Outside_AdaptModelSelects_NaturalConvectUnstableHorzEqtnSrc_traits;
 
         const SurfConvectAlg_Outside_AdaptModelSelects_NaturalConvectUnstableHorzEqtnSrc_optional&
@@ -2531,7 +2531,7 @@ namespace schema
         // SurfConvectAlg_Outside_AdaptModelSelects_NaturalConvectUnstableHorzEqtnUserCurveName
         //
         typedef ::xml_schema::idref SurfConvectAlg_Outside_AdaptModelSelects_NaturalConvectUnstableHorzEqtnUserCurveName_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Outside_AdaptModelSelects_NaturalConvectUnstableHorzEqtnUserCurveName_type > SurfConvectAlg_Outside_AdaptModelSelects_NaturalConvectUnstableHorzEqtnUserCurveName_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Outside_AdaptModelSelects_NaturalConvectUnstableHorzEqtnUserCurveName_type, false > SurfConvectAlg_Outside_AdaptModelSelects_NaturalConvectUnstableHorzEqtnUserCurveName_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Outside_AdaptModelSelects_NaturalConvectUnstableHorzEqtnUserCurveName_type, char > SurfConvectAlg_Outside_AdaptModelSelects_NaturalConvectUnstableHorzEqtnUserCurveName_traits;
 
         const SurfConvectAlg_Outside_AdaptModelSelects_NaturalConvectUnstableHorzEqtnUserCurveName_optional&
@@ -2552,7 +2552,7 @@ namespace schema
         // SurfConvectAlg_Inside_UserCurve_Name
         //
         typedef ::xml_schema::string SurfConvectAlg_Inside_UserCurve_Name_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_UserCurve_Name_type > SurfConvectAlg_Inside_UserCurve_Name_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_UserCurve_Name_type, false > SurfConvectAlg_Inside_UserCurve_Name_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_UserCurve_Name_type, char > SurfConvectAlg_Inside_UserCurve_Name_traits;
 
         const SurfConvectAlg_Inside_UserCurve_Name_optional&
@@ -2573,7 +2573,7 @@ namespace schema
         // SurfConvectAlg_Inside_UserCurve_ReferenceTempforConvectHeatTransfer
         //
         typedef ::xml_schema::string SurfConvectAlg_Inside_UserCurve_ReferenceTempforConvectHeatTransfer_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_UserCurve_ReferenceTempforConvectHeatTransfer_type > SurfConvectAlg_Inside_UserCurve_ReferenceTempforConvectHeatTransfer_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_UserCurve_ReferenceTempforConvectHeatTransfer_type, false > SurfConvectAlg_Inside_UserCurve_ReferenceTempforConvectHeatTransfer_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_UserCurve_ReferenceTempforConvectHeatTransfer_type, char > SurfConvectAlg_Inside_UserCurve_ReferenceTempforConvectHeatTransfer_traits;
 
         const SurfConvectAlg_Inside_UserCurve_ReferenceTempforConvectHeatTransfer_optional&
@@ -2594,7 +2594,7 @@ namespace schema
         // SurfConvectAlg_Inside_UserCurve_HcFuncOfTempDiffCurveName
         //
         typedef ::xml_schema::idref SurfConvectAlg_Inside_UserCurve_HcFuncOfTempDiffCurveName_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_UserCurve_HcFuncOfTempDiffCurveName_type > SurfConvectAlg_Inside_UserCurve_HcFuncOfTempDiffCurveName_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_UserCurve_HcFuncOfTempDiffCurveName_type, false > SurfConvectAlg_Inside_UserCurve_HcFuncOfTempDiffCurveName_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_UserCurve_HcFuncOfTempDiffCurveName_type, char > SurfConvectAlg_Inside_UserCurve_HcFuncOfTempDiffCurveName_traits;
 
         const SurfConvectAlg_Inside_UserCurve_HcFuncOfTempDiffCurveName_optional&
@@ -2615,7 +2615,7 @@ namespace schema
         // SurfConvectAlg_Inside_UserCurve_HcFuncOfTempDiffDivbyHeightCurveName
         //
         typedef ::xml_schema::idref SurfConvectAlg_Inside_UserCurve_HcFuncOfTempDiffDivbyHeightCurveName_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_UserCurve_HcFuncOfTempDiffDivbyHeightCurveName_type > SurfConvectAlg_Inside_UserCurve_HcFuncOfTempDiffDivbyHeightCurveName_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_UserCurve_HcFuncOfTempDiffDivbyHeightCurveName_type, false > SurfConvectAlg_Inside_UserCurve_HcFuncOfTempDiffDivbyHeightCurveName_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_UserCurve_HcFuncOfTempDiffDivbyHeightCurveName_type, char > SurfConvectAlg_Inside_UserCurve_HcFuncOfTempDiffDivbyHeightCurveName_traits;
 
         const SurfConvectAlg_Inside_UserCurve_HcFuncOfTempDiffDivbyHeightCurveName_optional&
@@ -2636,7 +2636,7 @@ namespace schema
         // SurfConvectAlg_Inside_UserCurve_HcFuncOfAirChangeRateCurveName
         //
         typedef ::xml_schema::idref SurfConvectAlg_Inside_UserCurve_HcFuncOfAirChangeRateCurveName_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_UserCurve_HcFuncOfAirChangeRateCurveName_type > SurfConvectAlg_Inside_UserCurve_HcFuncOfAirChangeRateCurveName_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_UserCurve_HcFuncOfAirChangeRateCurveName_type, false > SurfConvectAlg_Inside_UserCurve_HcFuncOfAirChangeRateCurveName_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_UserCurve_HcFuncOfAirChangeRateCurveName_type, char > SurfConvectAlg_Inside_UserCurve_HcFuncOfAirChangeRateCurveName_traits;
 
         const SurfConvectAlg_Inside_UserCurve_HcFuncOfAirChangeRateCurveName_optional&
@@ -2657,7 +2657,7 @@ namespace schema
         // SurfConvectAlg_Inside_UserCurve_HcFuncOfAirSystemVolFlowRateDivbyZonePerimLengthCurveName
         //
         typedef ::xml_schema::idref SurfConvectAlg_Inside_UserCurve_HcFuncOfAirSystemVolFlowRateDivbyZonePerimLengthCurveName_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_UserCurve_HcFuncOfAirSystemVolFlowRateDivbyZonePerimLengthCurveName_type > SurfConvectAlg_Inside_UserCurve_HcFuncOfAirSystemVolFlowRateDivbyZonePerimLengthCurveName_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Inside_UserCurve_HcFuncOfAirSystemVolFlowRateDivbyZonePerimLengthCurveName_type, false > SurfConvectAlg_Inside_UserCurve_HcFuncOfAirSystemVolFlowRateDivbyZonePerimLengthCurveName_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Inside_UserCurve_HcFuncOfAirSystemVolFlowRateDivbyZonePerimLengthCurveName_type, char > SurfConvectAlg_Inside_UserCurve_HcFuncOfAirSystemVolFlowRateDivbyZonePerimLengthCurveName_traits;
 
         const SurfConvectAlg_Inside_UserCurve_HcFuncOfAirSystemVolFlowRateDivbyZonePerimLengthCurveName_optional&
@@ -2678,7 +2678,7 @@ namespace schema
         // SurfConvectAlg_Outside_UserCurve_Name
         //
         typedef ::xml_schema::string SurfConvectAlg_Outside_UserCurve_Name_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Outside_UserCurve_Name_type > SurfConvectAlg_Outside_UserCurve_Name_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Outside_UserCurve_Name_type, false > SurfConvectAlg_Outside_UserCurve_Name_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Outside_UserCurve_Name_type, char > SurfConvectAlg_Outside_UserCurve_Name_traits;
 
         const SurfConvectAlg_Outside_UserCurve_Name_optional&
@@ -2699,7 +2699,7 @@ namespace schema
         // SurfConvectAlg_Outside_UserCurve_WindSpeedTypeforCurve
         //
         typedef ::xml_schema::string SurfConvectAlg_Outside_UserCurve_WindSpeedTypeforCurve_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Outside_UserCurve_WindSpeedTypeforCurve_type > SurfConvectAlg_Outside_UserCurve_WindSpeedTypeforCurve_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Outside_UserCurve_WindSpeedTypeforCurve_type, false > SurfConvectAlg_Outside_UserCurve_WindSpeedTypeforCurve_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Outside_UserCurve_WindSpeedTypeforCurve_type, char > SurfConvectAlg_Outside_UserCurve_WindSpeedTypeforCurve_traits;
 
         const SurfConvectAlg_Outside_UserCurve_WindSpeedTypeforCurve_optional&
@@ -2720,7 +2720,7 @@ namespace schema
         // SurfConvectAlg_Outside_UserCurve_HfFuncOfWindSpeedCurveName
         //
         typedef ::xml_schema::idref SurfConvectAlg_Outside_UserCurve_HfFuncOfWindSpeedCurveName_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Outside_UserCurve_HfFuncOfWindSpeedCurveName_type > SurfConvectAlg_Outside_UserCurve_HfFuncOfWindSpeedCurveName_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Outside_UserCurve_HfFuncOfWindSpeedCurveName_type, false > SurfConvectAlg_Outside_UserCurve_HfFuncOfWindSpeedCurveName_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Outside_UserCurve_HfFuncOfWindSpeedCurveName_type, char > SurfConvectAlg_Outside_UserCurve_HfFuncOfWindSpeedCurveName_traits;
 
         const SurfConvectAlg_Outside_UserCurve_HfFuncOfWindSpeedCurveName_optional&
@@ -2741,7 +2741,7 @@ namespace schema
         // SurfConvectAlg_Outside_UserCurve_HnFuncOfTempDiffCurveName
         //
         typedef ::xml_schema::idref SurfConvectAlg_Outside_UserCurve_HnFuncOfTempDiffCurveName_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Outside_UserCurve_HnFuncOfTempDiffCurveName_type > SurfConvectAlg_Outside_UserCurve_HnFuncOfTempDiffCurveName_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Outside_UserCurve_HnFuncOfTempDiffCurveName_type, false > SurfConvectAlg_Outside_UserCurve_HnFuncOfTempDiffCurveName_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Outside_UserCurve_HnFuncOfTempDiffCurveName_type, char > SurfConvectAlg_Outside_UserCurve_HnFuncOfTempDiffCurveName_traits;
 
         const SurfConvectAlg_Outside_UserCurve_HnFuncOfTempDiffCurveName_optional&
@@ -2762,7 +2762,7 @@ namespace schema
         // SurfConvectAlg_Outside_UserCurve_HnFuncOfTempDiffDivbyHeightCurveName
         //
         typedef ::xml_schema::idref SurfConvectAlg_Outside_UserCurve_HnFuncOfTempDiffDivbyHeightCurveName_type;
-        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Outside_UserCurve_HnFuncOfTempDiffDivbyHeightCurveName_type > SurfConvectAlg_Outside_UserCurve_HnFuncOfTempDiffDivbyHeightCurveName_optional;
+        typedef ::xsd::cxx::tree::optional< SurfConvectAlg_Outside_UserCurve_HnFuncOfTempDiffDivbyHeightCurveName_type, false > SurfConvectAlg_Outside_UserCurve_HnFuncOfTempDiffDivbyHeightCurveName_optional;
         typedef ::xsd::cxx::tree::traits< SurfConvectAlg_Outside_UserCurve_HnFuncOfTempDiffDivbyHeightCurveName_type, char > SurfConvectAlg_Outside_UserCurve_HnFuncOfTempDiffDivbyHeightCurveName_traits;
 
         const SurfConvectAlg_Outside_UserCurve_HnFuncOfTempDiffDivbyHeightCurveName_optional&

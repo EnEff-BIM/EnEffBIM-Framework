@@ -10,6 +10,7 @@ using namespace xsd::cxx::tree;
 
 //3. class auto ptr
 %auto_ptr(::schema::simxml::BuildingModel::SimList_EquipmentList_ZoneHvac)
+%auto_ptr(::schema::simxml::BuildingModel::SimList_ZoneEqmt_1_18_ObjectType)
 
 %import  "..\base\base.i"
 %import  "..\SimList_ConnectorList_SimConnections\SimList_ConnectorList_SimConnections.i"

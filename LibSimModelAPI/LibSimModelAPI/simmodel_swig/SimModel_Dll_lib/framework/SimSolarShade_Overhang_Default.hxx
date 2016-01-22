@@ -263,7 +263,7 @@ namespace schema
         // SimSolarShade_WindOrDoorName
         //
         typedef ::xml_schema::idref SimSolarShade_WindOrDoorName_type;
-        typedef ::xsd::cxx::tree::optional< SimSolarShade_WindOrDoorName_type > SimSolarShade_WindOrDoorName_optional;
+        typedef ::xsd::cxx::tree::optional< SimSolarShade_WindOrDoorName_type, false > SimSolarShade_WindOrDoorName_optional;
         typedef ::xsd::cxx::tree::traits< SimSolarShade_WindOrDoorName_type, char > SimSolarShade_WindOrDoorName_traits;
 
         const SimSolarShade_WindOrDoorName_optional&
@@ -284,7 +284,7 @@ namespace schema
         // SimSolarShade_HtAbvWindOrDoor
         //
         typedef ::xml_schema::double_ SimSolarShade_HtAbvWindOrDoor_type;
-        typedef ::xsd::cxx::tree::optional< SimSolarShade_HtAbvWindOrDoor_type > SimSolarShade_HtAbvWindOrDoor_optional;
+        typedef ::xsd::cxx::tree::optional< SimSolarShade_HtAbvWindOrDoor_type, true > SimSolarShade_HtAbvWindOrDoor_optional;
         typedef ::xsd::cxx::tree::traits< SimSolarShade_HtAbvWindOrDoor_type, char, ::xsd::cxx::tree::schema_type::double_ > SimSolarShade_HtAbvWindOrDoor_traits;
 
         const SimSolarShade_HtAbvWindOrDoor_optional&
@@ -302,7 +302,7 @@ namespace schema
         // SimSolarShade_TiltAngFromWind_Door
         //
         typedef ::xml_schema::double_ SimSolarShade_TiltAngFromWind_Door_type;
-        typedef ::xsd::cxx::tree::optional< SimSolarShade_TiltAngFromWind_Door_type > SimSolarShade_TiltAngFromWind_Door_optional;
+        typedef ::xsd::cxx::tree::optional< SimSolarShade_TiltAngFromWind_Door_type, true > SimSolarShade_TiltAngFromWind_Door_optional;
         typedef ::xsd::cxx::tree::traits< SimSolarShade_TiltAngFromWind_Door_type, char, ::xsd::cxx::tree::schema_type::double_ > SimSolarShade_TiltAngFromWind_Door_traits;
 
         const SimSolarShade_TiltAngFromWind_Door_optional&
@@ -320,7 +320,7 @@ namespace schema
         // SimSolarShade_LeftExtFromWind_DoorWidth
         //
         typedef ::xml_schema::double_ SimSolarShade_LeftExtFromWind_DoorWidth_type;
-        typedef ::xsd::cxx::tree::optional< SimSolarShade_LeftExtFromWind_DoorWidth_type > SimSolarShade_LeftExtFromWind_DoorWidth_optional;
+        typedef ::xsd::cxx::tree::optional< SimSolarShade_LeftExtFromWind_DoorWidth_type, true > SimSolarShade_LeftExtFromWind_DoorWidth_optional;
         typedef ::xsd::cxx::tree::traits< SimSolarShade_LeftExtFromWind_DoorWidth_type, char, ::xsd::cxx::tree::schema_type::double_ > SimSolarShade_LeftExtFromWind_DoorWidth_traits;
 
         const SimSolarShade_LeftExtFromWind_DoorWidth_optional&
@@ -338,7 +338,7 @@ namespace schema
         // SimSolarShade_RightExtFromWind_DoorWidth
         //
         typedef ::xml_schema::double_ SimSolarShade_RightExtFromWind_DoorWidth_type;
-        typedef ::xsd::cxx::tree::optional< SimSolarShade_RightExtFromWind_DoorWidth_type > SimSolarShade_RightExtFromWind_DoorWidth_optional;
+        typedef ::xsd::cxx::tree::optional< SimSolarShade_RightExtFromWind_DoorWidth_type, true > SimSolarShade_RightExtFromWind_DoorWidth_optional;
         typedef ::xsd::cxx::tree::traits< SimSolarShade_RightExtFromWind_DoorWidth_type, char, ::xsd::cxx::tree::schema_type::double_ > SimSolarShade_RightExtFromWind_DoorWidth_traits;
 
         const SimSolarShade_RightExtFromWind_DoorWidth_optional&
@@ -356,7 +356,7 @@ namespace schema
         // SimSolarShade_Depth
         //
         typedef ::xml_schema::double_ SimSolarShade_Depth_type;
-        typedef ::xsd::cxx::tree::optional< SimSolarShade_Depth_type > SimSolarShade_Depth_optional;
+        typedef ::xsd::cxx::tree::optional< SimSolarShade_Depth_type, true > SimSolarShade_Depth_optional;
         typedef ::xsd::cxx::tree::traits< SimSolarShade_Depth_type, char, ::xsd::cxx::tree::schema_type::double_ > SimSolarShade_Depth_traits;
 
         const SimSolarShade_Depth_optional&
@@ -374,7 +374,7 @@ namespace schema
         // ShadingProp_Reflectance_ShadingSurfName
         //
         typedef ::xml_schema::idref ShadingProp_Reflectance_ShadingSurfName_type;
-        typedef ::xsd::cxx::tree::optional< ShadingProp_Reflectance_ShadingSurfName_type > ShadingProp_Reflectance_ShadingSurfName_optional;
+        typedef ::xsd::cxx::tree::optional< ShadingProp_Reflectance_ShadingSurfName_type, false > ShadingProp_Reflectance_ShadingSurfName_optional;
         typedef ::xsd::cxx::tree::traits< ShadingProp_Reflectance_ShadingSurfName_type, char > ShadingProp_Reflectance_ShadingSurfName_traits;
 
         const ShadingProp_Reflectance_ShadingSurfName_optional&
@@ -395,7 +395,7 @@ namespace schema
         // ShadingProp_Reflectance_DiffuseSolarReflectanceOfUnglazedPartOfShadingSurf
         //
         typedef ::xml_schema::double_ ShadingProp_Reflectance_DiffuseSolarReflectanceOfUnglazedPartOfShadingSurf_type;
-        typedef ::xsd::cxx::tree::optional< ShadingProp_Reflectance_DiffuseSolarReflectanceOfUnglazedPartOfShadingSurf_type > ShadingProp_Reflectance_DiffuseSolarReflectanceOfUnglazedPartOfShadingSurf_optional;
+        typedef ::xsd::cxx::tree::optional< ShadingProp_Reflectance_DiffuseSolarReflectanceOfUnglazedPartOfShadingSurf_type, true > ShadingProp_Reflectance_DiffuseSolarReflectanceOfUnglazedPartOfShadingSurf_optional;
         typedef ::xsd::cxx::tree::traits< ShadingProp_Reflectance_DiffuseSolarReflectanceOfUnglazedPartOfShadingSurf_type, char, ::xsd::cxx::tree::schema_type::double_ > ShadingProp_Reflectance_DiffuseSolarReflectanceOfUnglazedPartOfShadingSurf_traits;
 
         const ShadingProp_Reflectance_DiffuseSolarReflectanceOfUnglazedPartOfShadingSurf_optional&
@@ -413,7 +413,7 @@ namespace schema
         // ShadingProp_Reflectance_DiffuseVisibleReflectanceOfUnglazedPartOfShadingSurf
         //
         typedef ::xml_schema::double_ ShadingProp_Reflectance_DiffuseVisibleReflectanceOfUnglazedPartOfShadingSurf_type;
-        typedef ::xsd::cxx::tree::optional< ShadingProp_Reflectance_DiffuseVisibleReflectanceOfUnglazedPartOfShadingSurf_type > ShadingProp_Reflectance_DiffuseVisibleReflectanceOfUnglazedPartOfShadingSurf_optional;
+        typedef ::xsd::cxx::tree::optional< ShadingProp_Reflectance_DiffuseVisibleReflectanceOfUnglazedPartOfShadingSurf_type, true > ShadingProp_Reflectance_DiffuseVisibleReflectanceOfUnglazedPartOfShadingSurf_optional;
         typedef ::xsd::cxx::tree::traits< ShadingProp_Reflectance_DiffuseVisibleReflectanceOfUnglazedPartOfShadingSurf_type, char, ::xsd::cxx::tree::schema_type::double_ > ShadingProp_Reflectance_DiffuseVisibleReflectanceOfUnglazedPartOfShadingSurf_traits;
 
         const ShadingProp_Reflectance_DiffuseVisibleReflectanceOfUnglazedPartOfShadingSurf_optional&
@@ -431,7 +431,7 @@ namespace schema
         // ShadingProp_Reflectance_FractionOfShadingSurfThatIsGlazed
         //
         typedef ::xml_schema::double_ ShadingProp_Reflectance_FractionOfShadingSurfThatIsGlazed_type;
-        typedef ::xsd::cxx::tree::optional< ShadingProp_Reflectance_FractionOfShadingSurfThatIsGlazed_type > ShadingProp_Reflectance_FractionOfShadingSurfThatIsGlazed_optional;
+        typedef ::xsd::cxx::tree::optional< ShadingProp_Reflectance_FractionOfShadingSurfThatIsGlazed_type, true > ShadingProp_Reflectance_FractionOfShadingSurfThatIsGlazed_optional;
         typedef ::xsd::cxx::tree::traits< ShadingProp_Reflectance_FractionOfShadingSurfThatIsGlazed_type, char, ::xsd::cxx::tree::schema_type::double_ > ShadingProp_Reflectance_FractionOfShadingSurfThatIsGlazed_traits;
 
         const ShadingProp_Reflectance_FractionOfShadingSurfThatIsGlazed_optional&
@@ -449,7 +449,7 @@ namespace schema
         // ShadingProp_Reflectance_GlazingConstructionName
         //
         typedef ::xml_schema::idref ShadingProp_Reflectance_GlazingConstructionName_type;
-        typedef ::xsd::cxx::tree::optional< ShadingProp_Reflectance_GlazingConstructionName_type > ShadingProp_Reflectance_GlazingConstructionName_optional;
+        typedef ::xsd::cxx::tree::optional< ShadingProp_Reflectance_GlazingConstructionName_type, false > ShadingProp_Reflectance_GlazingConstructionName_optional;
         typedef ::xsd::cxx::tree::traits< ShadingProp_Reflectance_GlazingConstructionName_type, char > ShadingProp_Reflectance_GlazingConstructionName_traits;
 
         const ShadingProp_Reflectance_GlazingConstructionName_optional&
@@ -470,7 +470,7 @@ namespace schema
         // T24ConstructStatus2
         //
         typedef ::xml_schema::string T24ConstructStatus2_type;
-        typedef ::xsd::cxx::tree::optional< T24ConstructStatus2_type > T24ConstructStatus2_optional;
+        typedef ::xsd::cxx::tree::optional< T24ConstructStatus2_type, false > T24ConstructStatus2_optional;
         typedef ::xsd::cxx::tree::traits< T24ConstructStatus2_type, char > T24ConstructStatus2_traits;
 
         const T24ConstructStatus2_optional&

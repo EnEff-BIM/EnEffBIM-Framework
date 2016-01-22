@@ -10,6 +10,9 @@ using namespace xsd::cxx::tree;
 
 //3. class auto ptr
 %auto_ptr(::schema::simxml::ResourcesGeneral::SimPerson_Person_Default)
+%auto_ptr(::schema::simxml::ResourcesGeneral::MiddleNames)
+%auto_ptr(::schema::simxml::ResourcesGeneral::PrefixTitles)
+%auto_ptr(::schema::simxml::ResourcesGeneral::SuffixTitles)
 
 %import  "..\base\base.i"
 /* Let's just grab the original header file here */

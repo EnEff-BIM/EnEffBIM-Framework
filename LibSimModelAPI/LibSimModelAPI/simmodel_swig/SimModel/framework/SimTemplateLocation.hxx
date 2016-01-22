@@ -263,7 +263,7 @@ namespace schema
         // TemplateLocationProperties
         //
         typedef ::xml_schema::idref TemplateLocationProperties_type;
-        typedef ::xsd::cxx::tree::optional< TemplateLocationProperties_type > TemplateLocationProperties_optional;
+        typedef ::xsd::cxx::tree::optional< TemplateLocationProperties_type, false > TemplateLocationProperties_optional;
         typedef ::xsd::cxx::tree::traits< TemplateLocationProperties_type, char > TemplateLocationProperties_traits;
 
         const TemplateLocationProperties_optional&
@@ -284,7 +284,7 @@ namespace schema
         // Terrain
         //
         typedef ::xml_schema::string Terrain_type;
-        typedef ::xsd::cxx::tree::optional< Terrain_type > Terrain_optional;
+        typedef ::xsd::cxx::tree::optional< Terrain_type, false > Terrain_optional;
         typedef ::xsd::cxx::tree::traits< Terrain_type, char > Terrain_traits;
 
         const Terrain_optional&
@@ -305,7 +305,7 @@ namespace schema
         // SolarDistribution
         //
         typedef ::xml_schema::string SolarDistribution_type;
-        typedef ::xsd::cxx::tree::optional< SolarDistribution_type > SolarDistribution_optional;
+        typedef ::xsd::cxx::tree::optional< SolarDistribution_type, false > SolarDistribution_optional;
         typedef ::xsd::cxx::tree::traits< SolarDistribution_type, char > SolarDistribution_traits;
 
         const SolarDistribution_optional&
@@ -326,7 +326,7 @@ namespace schema
         // TemplateSkyTemperature
         //
         typedef ::xml_schema::idref TemplateSkyTemperature_type;
-        typedef ::xsd::cxx::tree::optional< TemplateSkyTemperature_type > TemplateSkyTemperature_optional;
+        typedef ::xsd::cxx::tree::optional< TemplateSkyTemperature_type, false > TemplateSkyTemperature_optional;
         typedef ::xsd::cxx::tree::traits< TemplateSkyTemperature_type, char > TemplateSkyTemperature_traits;
 
         const TemplateSkyTemperature_optional&
@@ -347,7 +347,7 @@ namespace schema
         // TemplateIDDWeatherStation
         //
         typedef ::xml_schema::idref TemplateIDDWeatherStation_type;
-        typedef ::xsd::cxx::tree::optional< TemplateIDDWeatherStation_type > TemplateIDDWeatherStation_optional;
+        typedef ::xsd::cxx::tree::optional< TemplateIDDWeatherStation_type, false > TemplateIDDWeatherStation_optional;
         typedef ::xsd::cxx::tree::traits< TemplateIDDWeatherStation_type, char > TemplateIDDWeatherStation_traits;
 
         const TemplateIDDWeatherStation_optional&
@@ -368,7 +368,7 @@ namespace schema
         // WeatherFilename
         //
         typedef ::xml_schema::string WeatherFilename_type;
-        typedef ::xsd::cxx::tree::optional< WeatherFilename_type > WeatherFilename_optional;
+        typedef ::xsd::cxx::tree::optional< WeatherFilename_type, false > WeatherFilename_optional;
         typedef ::xsd::cxx::tree::traits< WeatherFilename_type, char > WeatherFilename_traits;
 
         const WeatherFilename_optional&

@@ -10,6 +10,7 @@ using namespace xsd::cxx::tree;
 
 //3. class auto ptr
 %auto_ptr(::schema::simxml::ResourcesGeneral::SimMaterialLayerSet_Default_Default)
+%auto_ptr(::schema::simxml::ResourcesGeneral::IntendedBldgElemTypes)
 
 %import  "..\base\base.i"
 /* Let's just grab the original header file here */

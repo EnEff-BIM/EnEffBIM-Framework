@@ -263,7 +263,7 @@ namespace schema
         // RelatingSpace
         //
         typedef ::xml_schema::idref RelatingSpace_type;
-        typedef ::xsd::cxx::tree::optional< RelatingSpace_type > RelatingSpace_optional;
+        typedef ::xsd::cxx::tree::optional< RelatingSpace_type, false > RelatingSpace_optional;
         typedef ::xsd::cxx::tree::traits< RelatingSpace_type, char > RelatingSpace_traits;
 
         const RelatingSpace_optional&
@@ -284,7 +284,7 @@ namespace schema
         // RelatedBuildingElement
         //
         typedef ::xml_schema::idref RelatedBuildingElement_type;
-        typedef ::xsd::cxx::tree::optional< RelatedBuildingElement_type > RelatedBuildingElement_optional;
+        typedef ::xsd::cxx::tree::optional< RelatedBuildingElement_type, false > RelatedBuildingElement_optional;
         typedef ::xsd::cxx::tree::traits< RelatedBuildingElement_type, char > RelatedBuildingElement_traits;
 
         const RelatedBuildingElement_optional&
@@ -305,7 +305,7 @@ namespace schema
         // ConnectionGeometry
         //
         typedef ::xml_schema::idref ConnectionGeometry_type;
-        typedef ::xsd::cxx::tree::optional< ConnectionGeometry_type > ConnectionGeometry_optional;
+        typedef ::xsd::cxx::tree::optional< ConnectionGeometry_type, false > ConnectionGeometry_optional;
         typedef ::xsd::cxx::tree::traits< ConnectionGeometry_type, char > ConnectionGeometry_traits;
 
         const ConnectionGeometry_optional&
@@ -326,7 +326,7 @@ namespace schema
         // PhysicalOrVirtualBoundary
         //
         typedef ::xml_schema::string PhysicalOrVirtualBoundary_type;
-        typedef ::xsd::cxx::tree::optional< PhysicalOrVirtualBoundary_type > PhysicalOrVirtualBoundary_optional;
+        typedef ::xsd::cxx::tree::optional< PhysicalOrVirtualBoundary_type, false > PhysicalOrVirtualBoundary_optional;
         typedef ::xsd::cxx::tree::traits< PhysicalOrVirtualBoundary_type, char > PhysicalOrVirtualBoundary_traits;
 
         const PhysicalOrVirtualBoundary_optional&
@@ -347,7 +347,7 @@ namespace schema
         // InternalOrExternalBoundary
         //
         typedef ::xml_schema::string InternalOrExternalBoundary_type;
-        typedef ::xsd::cxx::tree::optional< InternalOrExternalBoundary_type > InternalOrExternalBoundary_optional;
+        typedef ::xsd::cxx::tree::optional< InternalOrExternalBoundary_type, false > InternalOrExternalBoundary_optional;
         typedef ::xsd::cxx::tree::traits< InternalOrExternalBoundary_type, char > InternalOrExternalBoundary_traits;
 
         const InternalOrExternalBoundary_optional&
@@ -368,7 +368,7 @@ namespace schema
         // OthersideSpaceBoundary
         //
         typedef ::xml_schema::idref OthersideSpaceBoundary_type;
-        typedef ::xsd::cxx::tree::optional< OthersideSpaceBoundary_type > OthersideSpaceBoundary_optional;
+        typedef ::xsd::cxx::tree::optional< OthersideSpaceBoundary_type, false > OthersideSpaceBoundary_optional;
         typedef ::xsd::cxx::tree::traits< OthersideSpaceBoundary_type, char > OthersideSpaceBoundary_traits;
 
         const OthersideSpaceBoundary_optional&

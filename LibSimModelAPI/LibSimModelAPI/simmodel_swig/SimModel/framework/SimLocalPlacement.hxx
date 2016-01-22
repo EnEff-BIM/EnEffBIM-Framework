@@ -263,7 +263,7 @@ namespace schema
         // PlacementRelTo
         //
         typedef ::xml_schema::idref PlacementRelTo_type;
-        typedef ::xsd::cxx::tree::optional< PlacementRelTo_type > PlacementRelTo_optional;
+        typedef ::xsd::cxx::tree::optional< PlacementRelTo_type, false > PlacementRelTo_optional;
         typedef ::xsd::cxx::tree::traits< PlacementRelTo_type, char > PlacementRelTo_traits;
 
         const PlacementRelTo_optional&
@@ -284,7 +284,7 @@ namespace schema
         // RelativePlacement
         //
         typedef ::xml_schema::idref RelativePlacement_type;
-        typedef ::xsd::cxx::tree::optional< RelativePlacement_type > RelativePlacement_optional;
+        typedef ::xsd::cxx::tree::optional< RelativePlacement_type, false > RelativePlacement_optional;
         typedef ::xsd::cxx::tree::traits< RelativePlacement_type, char > RelativePlacement_traits;
 
         const RelativePlacement_optional&

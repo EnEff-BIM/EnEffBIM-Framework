@@ -263,7 +263,7 @@ namespace schema
         // Prefix
         //
         typedef ::xml_schema::string Prefix_type;
-        typedef ::xsd::cxx::tree::optional< Prefix_type > Prefix_optional;
+        typedef ::xsd::cxx::tree::optional< Prefix_type, false > Prefix_optional;
         typedef ::xsd::cxx::tree::traits< Prefix_type, char > Prefix_traits;
 
         const Prefix_optional&
@@ -284,7 +284,7 @@ namespace schema
         // UnitSymbol
         //
         typedef ::xml_schema::string UnitSymbol_type;
-        typedef ::xsd::cxx::tree::optional< UnitSymbol_type > UnitSymbol_optional;
+        typedef ::xsd::cxx::tree::optional< UnitSymbol_type, false > UnitSymbol_optional;
         typedef ::xsd::cxx::tree::traits< UnitSymbol_type, char > UnitSymbol_traits;
 
         const UnitSymbol_optional&

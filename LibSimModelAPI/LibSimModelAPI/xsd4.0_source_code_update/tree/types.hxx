@@ -56,6 +56,7 @@ namespace xsd
       template <typename C, typename B>
       class string: public B, public std::basic_string<C>
       {
+	  public:
         typedef std::basic_string<C> base_type;
 
         base_type&

@@ -263,7 +263,7 @@ namespace schema
         // SimMatLayerSet_Name
         //
         typedef ::xml_schema::string SimMatLayerSet_Name_type;
-        typedef ::xsd::cxx::tree::optional< SimMatLayerSet_Name_type > SimMatLayerSet_Name_optional;
+        typedef ::xsd::cxx::tree::optional< SimMatLayerSet_Name_type, false > SimMatLayerSet_Name_optional;
         typedef ::xsd::cxx::tree::traits< SimMatLayerSet_Name_type, char > SimMatLayerSet_Name_traits;
 
         const SimMatLayerSet_Name_optional&
@@ -284,7 +284,7 @@ namespace schema
         // SurfProp_HeatTransAlg_Construct_Name
         //
         typedef ::xml_schema::string SurfProp_HeatTransAlg_Construct_Name_type;
-        typedef ::xsd::cxx::tree::optional< SurfProp_HeatTransAlg_Construct_Name_type > SurfProp_HeatTransAlg_Construct_Name_optional;
+        typedef ::xsd::cxx::tree::optional< SurfProp_HeatTransAlg_Construct_Name_type, false > SurfProp_HeatTransAlg_Construct_Name_optional;
         typedef ::xsd::cxx::tree::traits< SurfProp_HeatTransAlg_Construct_Name_type, char > SurfProp_HeatTransAlg_Construct_Name_traits;
 
         const SurfProp_HeatTransAlg_Construct_Name_optional&
@@ -305,7 +305,7 @@ namespace schema
         // SurfProp_HeatTransAlg_Construct_Algorithm
         //
         typedef ::xml_schema::string SurfProp_HeatTransAlg_Construct_Algorithm_type;
-        typedef ::xsd::cxx::tree::optional< SurfProp_HeatTransAlg_Construct_Algorithm_type > SurfProp_HeatTransAlg_Construct_Algorithm_optional;
+        typedef ::xsd::cxx::tree::optional< SurfProp_HeatTransAlg_Construct_Algorithm_type, false > SurfProp_HeatTransAlg_Construct_Algorithm_optional;
         typedef ::xsd::cxx::tree::traits< SurfProp_HeatTransAlg_Construct_Algorithm_type, char > SurfProp_HeatTransAlg_Construct_Algorithm_traits;
 
         const SurfProp_HeatTransAlg_Construct_Algorithm_optional&
@@ -326,7 +326,7 @@ namespace schema
         // SurfProp_HeatTransAlg_Construct_ConstructionName
         //
         typedef ::xml_schema::idref SurfProp_HeatTransAlg_Construct_ConstructionName_type;
-        typedef ::xsd::cxx::tree::optional< SurfProp_HeatTransAlg_Construct_ConstructionName_type > SurfProp_HeatTransAlg_Construct_ConstructionName_optional;
+        typedef ::xsd::cxx::tree::optional< SurfProp_HeatTransAlg_Construct_ConstructionName_type, false > SurfProp_HeatTransAlg_Construct_ConstructionName_optional;
         typedef ::xsd::cxx::tree::traits< SurfProp_HeatTransAlg_Construct_ConstructionName_type, char > SurfProp_HeatTransAlg_Construct_ConstructionName_traits;
 
         const SurfProp_HeatTransAlg_Construct_ConstructionName_optional&

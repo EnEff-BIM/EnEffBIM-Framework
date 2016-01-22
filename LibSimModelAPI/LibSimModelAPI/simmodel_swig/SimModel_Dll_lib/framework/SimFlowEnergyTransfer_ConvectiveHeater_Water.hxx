@@ -263,7 +263,7 @@ namespace schema
         // SimFlowEnergyTrans_InNodeName
         //
         typedef ::xml_schema::string SimFlowEnergyTrans_InNodeName_type;
-        typedef ::xsd::cxx::tree::optional< SimFlowEnergyTrans_InNodeName_type > SimFlowEnergyTrans_InNodeName_optional;
+        typedef ::xsd::cxx::tree::optional< SimFlowEnergyTrans_InNodeName_type, false > SimFlowEnergyTrans_InNodeName_optional;
         typedef ::xsd::cxx::tree::traits< SimFlowEnergyTrans_InNodeName_type, char > SimFlowEnergyTrans_InNodeName_traits;
 
         const SimFlowEnergyTrans_InNodeName_optional&
@@ -284,7 +284,7 @@ namespace schema
         // SimFlowEnergyTrans_OutNodeName
         //
         typedef ::xml_schema::string SimFlowEnergyTrans_OutNodeName_type;
-        typedef ::xsd::cxx::tree::optional< SimFlowEnergyTrans_OutNodeName_type > SimFlowEnergyTrans_OutNodeName_optional;
+        typedef ::xsd::cxx::tree::optional< SimFlowEnergyTrans_OutNodeName_type, false > SimFlowEnergyTrans_OutNodeName_optional;
         typedef ::xsd::cxx::tree::traits< SimFlowEnergyTrans_OutNodeName_type, char > SimFlowEnergyTrans_OutNodeName_traits;
 
         const SimFlowEnergyTrans_OutNodeName_optional&
@@ -305,7 +305,7 @@ namespace schema
         // SimFlowEnergyTrans_MaxWaterFlowRate
         //
         typedef ::xml_schema::double_ SimFlowEnergyTrans_MaxWaterFlowRate_type;
-        typedef ::xsd::cxx::tree::optional< SimFlowEnergyTrans_MaxWaterFlowRate_type > SimFlowEnergyTrans_MaxWaterFlowRate_optional;
+        typedef ::xsd::cxx::tree::optional< SimFlowEnergyTrans_MaxWaterFlowRate_type, true > SimFlowEnergyTrans_MaxWaterFlowRate_optional;
         typedef ::xsd::cxx::tree::traits< SimFlowEnergyTrans_MaxWaterFlowRate_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowEnergyTrans_MaxWaterFlowRate_traits;
 
         const SimFlowEnergyTrans_MaxWaterFlowRate_optional&
@@ -323,7 +323,7 @@ namespace schema
         // SimFlowEnergyTrans_ConvergTol
         //
         typedef ::xml_schema::double_ SimFlowEnergyTrans_ConvergTol_type;
-        typedef ::xsd::cxx::tree::optional< SimFlowEnergyTrans_ConvergTol_type > SimFlowEnergyTrans_ConvergTol_optional;
+        typedef ::xsd::cxx::tree::optional< SimFlowEnergyTrans_ConvergTol_type, true > SimFlowEnergyTrans_ConvergTol_optional;
         typedef ::xsd::cxx::tree::traits< SimFlowEnergyTrans_ConvergTol_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowEnergyTrans_ConvergTol_traits;
 
         const SimFlowEnergyTrans_ConvergTol_optional&
@@ -341,7 +341,7 @@ namespace schema
         // SimFlowEnergyTrans_UFactorTimesAreaVal
         //
         typedef ::xml_schema::double_ SimFlowEnergyTrans_UFactorTimesAreaVal_type;
-        typedef ::xsd::cxx::tree::optional< SimFlowEnergyTrans_UFactorTimesAreaVal_type > SimFlowEnergyTrans_UFactorTimesAreaVal_optional;
+        typedef ::xsd::cxx::tree::optional< SimFlowEnergyTrans_UFactorTimesAreaVal_type, true > SimFlowEnergyTrans_UFactorTimesAreaVal_optional;
         typedef ::xsd::cxx::tree::traits< SimFlowEnergyTrans_UFactorTimesAreaVal_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowEnergyTrans_UFactorTimesAreaVal_traits;
 
         const SimFlowEnergyTrans_UFactorTimesAreaVal_optional&

@@ -263,7 +263,7 @@ namespace schema
         // SpaceNumber
         //
         typedef ::xml_schema::string SpaceNumber_type;
-        typedef ::xsd::cxx::tree::optional< SpaceNumber_type > SpaceNumber_optional;
+        typedef ::xsd::cxx::tree::optional< SpaceNumber_type, false > SpaceNumber_optional;
         typedef ::xsd::cxx::tree::traits< SpaceNumber_type, char > SpaceNumber_traits;
 
         const SpaceNumber_optional&
@@ -284,7 +284,7 @@ namespace schema
         // SpaceName
         //
         typedef ::xml_schema::string SpaceName_type;
-        typedef ::xsd::cxx::tree::optional< SpaceName_type > SpaceName_optional;
+        typedef ::xsd::cxx::tree::optional< SpaceName_type, false > SpaceName_optional;
         typedef ::xsd::cxx::tree::traits< SpaceName_type, char > SpaceName_traits;
 
         const SpaceName_optional&
@@ -341,7 +341,7 @@ namespace schema
         // DimensionX
         //
         typedef ::xml_schema::double_ DimensionX_type;
-        typedef ::xsd::cxx::tree::optional< DimensionX_type > DimensionX_optional;
+        typedef ::xsd::cxx::tree::optional< DimensionX_type, true > DimensionX_optional;
         typedef ::xsd::cxx::tree::traits< DimensionX_type, char, ::xsd::cxx::tree::schema_type::double_ > DimensionX_traits;
 
         const DimensionX_optional&
@@ -359,7 +359,7 @@ namespace schema
         // DimensionY
         //
         typedef ::xml_schema::double_ DimensionY_type;
-        typedef ::xsd::cxx::tree::optional< DimensionY_type > DimensionY_optional;
+        typedef ::xsd::cxx::tree::optional< DimensionY_type, true > DimensionY_optional;
         typedef ::xsd::cxx::tree::traits< DimensionY_type, char, ::xsd::cxx::tree::schema_type::double_ > DimensionY_traits;
 
         const DimensionY_optional&
@@ -377,7 +377,7 @@ namespace schema
         // DimensionZ
         //
         typedef ::xml_schema::double_ DimensionZ_type;
-        typedef ::xsd::cxx::tree::optional< DimensionZ_type > DimensionZ_optional;
+        typedef ::xsd::cxx::tree::optional< DimensionZ_type, true > DimensionZ_optional;
         typedef ::xsd::cxx::tree::traits< DimensionZ_type, char, ::xsd::cxx::tree::schema_type::double_ > DimensionZ_traits;
 
         const DimensionZ_optional&
@@ -395,7 +395,7 @@ namespace schema
         // Height
         //
         typedef ::xml_schema::double_ Height_type;
-        typedef ::xsd::cxx::tree::optional< Height_type > Height_optional;
+        typedef ::xsd::cxx::tree::optional< Height_type, true > Height_optional;
         typedef ::xsd::cxx::tree::traits< Height_type, char, ::xsd::cxx::tree::schema_type::double_ > Height_traits;
 
         const Height_optional&
@@ -413,7 +413,7 @@ namespace schema
         // BaseElevation
         //
         typedef ::xml_schema::double_ BaseElevation_type;
-        typedef ::xsd::cxx::tree::optional< BaseElevation_type > BaseElevation_optional;
+        typedef ::xsd::cxx::tree::optional< BaseElevation_type, true > BaseElevation_optional;
         typedef ::xsd::cxx::tree::traits< BaseElevation_type, char, ::xsd::cxx::tree::schema_type::double_ > BaseElevation_traits;
 
         const BaseElevation_optional&
@@ -431,7 +431,7 @@ namespace schema
         // DegreeOfNormal
         //
         typedef ::xml_schema::double_ DegreeOfNormal_type;
-        typedef ::xsd::cxx::tree::optional< DegreeOfNormal_type > DegreeOfNormal_optional;
+        typedef ::xsd::cxx::tree::optional< DegreeOfNormal_type, true > DegreeOfNormal_optional;
         typedef ::xsd::cxx::tree::traits< DegreeOfNormal_type, char, ::xsd::cxx::tree::schema_type::double_ > DegreeOfNormal_traits;
 
         const DegreeOfNormal_optional&
@@ -467,7 +467,7 @@ namespace schema
         // SpaceType
         //
         typedef ::xml_schema::string SpaceType_type;
-        typedef ::xsd::cxx::tree::optional< SpaceType_type > SpaceType_optional;
+        typedef ::xsd::cxx::tree::optional< SpaceType_type, false > SpaceType_optional;
         typedef ::xsd::cxx::tree::traits< SpaceType_type, char > SpaceType_traits;
 
         const SpaceType_optional&
@@ -488,7 +488,7 @@ namespace schema
         // ProfilePath
         //
         typedef ::xml_schema::idref ProfilePath_type;
-        typedef ::xsd::cxx::tree::optional< ProfilePath_type > ProfilePath_optional;
+        typedef ::xsd::cxx::tree::optional< ProfilePath_type, false > ProfilePath_optional;
         typedef ::xsd::cxx::tree::traits< ProfilePath_type, char > ProfilePath_traits;
 
         const ProfilePath_optional&

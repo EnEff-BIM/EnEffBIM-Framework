@@ -263,7 +263,7 @@ namespace schema
         // LongName
         //
         typedef ::xml_schema::string LongName_type;
-        typedef ::xsd::cxx::tree::optional< LongName_type > LongName_optional;
+        typedef ::xsd::cxx::tree::optional< LongName_type, false > LongName_optional;
         typedef ::xsd::cxx::tree::traits< LongName_type, char > LongName_traits;
 
         const LongName_optional&
@@ -284,7 +284,7 @@ namespace schema
         // CompositionType
         //
         typedef ::xml_schema::string CompositionType_type;
-        typedef ::xsd::cxx::tree::optional< CompositionType_type > CompositionType_optional;
+        typedef ::xsd::cxx::tree::optional< CompositionType_type, false > CompositionType_optional;
         typedef ::xsd::cxx::tree::traits< CompositionType_type, char > CompositionType_traits;
 
         const CompositionType_optional&
@@ -305,7 +305,7 @@ namespace schema
         // Placement
         //
         typedef ::xml_schema::idref Placement_type;
-        typedef ::xsd::cxx::tree::optional< Placement_type > Placement_optional;
+        typedef ::xsd::cxx::tree::optional< Placement_type, false > Placement_optional;
         typedef ::xsd::cxx::tree::traits< Placement_type, char > Placement_traits;
 
         const Placement_optional&

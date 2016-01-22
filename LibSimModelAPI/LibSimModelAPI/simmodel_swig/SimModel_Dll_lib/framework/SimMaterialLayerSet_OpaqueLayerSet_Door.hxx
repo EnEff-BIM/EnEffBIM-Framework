@@ -263,7 +263,7 @@ namespace schema
         // SimMatLayerSet_OutsideLayer
         //
         typedef ::xml_schema::idref SimMatLayerSet_OutsideLayer_type;
-        typedef ::xsd::cxx::tree::optional< SimMatLayerSet_OutsideLayer_type > SimMatLayerSet_OutsideLayer_optional;
+        typedef ::xsd::cxx::tree::optional< SimMatLayerSet_OutsideLayer_type, false > SimMatLayerSet_OutsideLayer_optional;
         typedef ::xsd::cxx::tree::traits< SimMatLayerSet_OutsideLayer_type, char > SimMatLayerSet_OutsideLayer_traits;
 
         const SimMatLayerSet_OutsideLayer_optional&
@@ -305,7 +305,7 @@ namespace schema
         // T24DoorCertMethod
         //
         typedef ::xml_schema::string T24DoorCertMethod_type;
-        typedef ::xsd::cxx::tree::optional< T24DoorCertMethod_type > T24DoorCertMethod_optional;
+        typedef ::xsd::cxx::tree::optional< T24DoorCertMethod_type, false > T24DoorCertMethod_optional;
         typedef ::xsd::cxx::tree::traits< T24DoorCertMethod_type, char > T24DoorCertMethod_traits;
 
         const T24DoorCertMethod_optional&
@@ -326,7 +326,7 @@ namespace schema
         // T24DoorOpenType
         //
         typedef ::xml_schema::string T24DoorOpenType_type;
-        typedef ::xsd::cxx::tree::optional< T24DoorOpenType_type > T24DoorOpenType_optional;
+        typedef ::xsd::cxx::tree::optional< T24DoorOpenType_type, false > T24DoorOpenType_optional;
         typedef ::xsd::cxx::tree::traits< T24DoorOpenType_type, char > T24DoorOpenType_traits;
 
         const T24DoorOpenType_optional&
@@ -347,7 +347,7 @@ namespace schema
         // T24DoorType
         //
         typedef ::xml_schema::string T24DoorType_type;
-        typedef ::xsd::cxx::tree::optional< T24DoorType_type > T24DoorType_optional;
+        typedef ::xsd::cxx::tree::optional< T24DoorType_type, false > T24DoorType_optional;
         typedef ::xsd::cxx::tree::traits< T24DoorType_type, char > T24DoorType_traits;
 
         const T24DoorType_optional&

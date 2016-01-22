@@ -274,7 +274,7 @@ namespace schema
         // Name
         //
         typedef ::xml_schema::string Name_type;
-        typedef ::xsd::cxx::tree::optional< Name_type > Name_optional;
+        typedef ::xsd::cxx::tree::optional< Name_type, false > Name_optional;
         typedef ::xsd::cxx::tree::traits< Name_type, char > Name_traits;
 
         const Name_optional&
@@ -337,7 +337,7 @@ namespace schema
         // SiteReferenceElevation
         //
         typedef ::xml_schema::double_ SiteReferenceElevation_type;
-        typedef ::xsd::cxx::tree::optional< SiteReferenceElevation_type > SiteReferenceElevation_optional;
+        typedef ::xsd::cxx::tree::optional< SiteReferenceElevation_type, true > SiteReferenceElevation_optional;
         typedef ::xsd::cxx::tree::traits< SiteReferenceElevation_type, char, ::xsd::cxx::tree::schema_type::double_ > SiteReferenceElevation_traits;
 
         const SiteReferenceElevation_optional&
@@ -355,7 +355,7 @@ namespace schema
         // BuildableArea
         //
         typedef ::xml_schema::double_ BuildableArea_type;
-        typedef ::xsd::cxx::tree::optional< BuildableArea_type > BuildableArea_optional;
+        typedef ::xsd::cxx::tree::optional< BuildableArea_type, true > BuildableArea_optional;
         typedef ::xsd::cxx::tree::traits< BuildableArea_type, char, ::xsd::cxx::tree::schema_type::double_ > BuildableArea_traits;
 
         const BuildableArea_optional&
@@ -373,7 +373,7 @@ namespace schema
         // BuildingHeightLimit
         //
         typedef ::xml_schema::double_ BuildingHeightLimit_type;
-        typedef ::xsd::cxx::tree::optional< BuildingHeightLimit_type > BuildingHeightLimit_optional;
+        typedef ::xsd::cxx::tree::optional< BuildingHeightLimit_type, true > BuildingHeightLimit_optional;
         typedef ::xsd::cxx::tree::traits< BuildingHeightLimit_type, char, ::xsd::cxx::tree::schema_type::double_ > BuildingHeightLimit_traits;
 
         const BuildingHeightLimit_optional&
@@ -391,7 +391,7 @@ namespace schema
         // SitePerimeter
         //
         typedef ::xml_schema::double_ SitePerimeter_type;
-        typedef ::xsd::cxx::tree::optional< SitePerimeter_type > SitePerimeter_optional;
+        typedef ::xsd::cxx::tree::optional< SitePerimeter_type, true > SitePerimeter_optional;
         typedef ::xsd::cxx::tree::traits< SitePerimeter_type, char, ::xsd::cxx::tree::schema_type::double_ > SitePerimeter_traits;
 
         const SitePerimeter_optional&
@@ -409,7 +409,7 @@ namespace schema
         // SiteGrossLandArea
         //
         typedef ::xml_schema::double_ SiteGrossLandArea_type;
-        typedef ::xsd::cxx::tree::optional< SiteGrossLandArea_type > SiteGrossLandArea_optional;
+        typedef ::xsd::cxx::tree::optional< SiteGrossLandArea_type, true > SiteGrossLandArea_optional;
         typedef ::xsd::cxx::tree::traits< SiteGrossLandArea_type, char, ::xsd::cxx::tree::schema_type::double_ > SiteGrossLandArea_traits;
 
         const SiteGrossLandArea_optional&
@@ -427,7 +427,7 @@ namespace schema
         // SiteExcavationCutVolume
         //
         typedef ::xml_schema::double_ SiteExcavationCutVolume_type;
-        typedef ::xsd::cxx::tree::optional< SiteExcavationCutVolume_type > SiteExcavationCutVolume_optional;
+        typedef ::xsd::cxx::tree::optional< SiteExcavationCutVolume_type, true > SiteExcavationCutVolume_optional;
         typedef ::xsd::cxx::tree::traits< SiteExcavationCutVolume_type, char, ::xsd::cxx::tree::schema_type::double_ > SiteExcavationCutVolume_traits;
 
         const SiteExcavationCutVolume_optional&
@@ -445,7 +445,7 @@ namespace schema
         // SiteExcavationBackfillVolume
         //
         typedef ::xml_schema::double_ SiteExcavationBackfillVolume_type;
-        typedef ::xsd::cxx::tree::optional< SiteExcavationBackfillVolume_type > SiteExcavationBackfillVolume_optional;
+        typedef ::xsd::cxx::tree::optional< SiteExcavationBackfillVolume_type, true > SiteExcavationBackfillVolume_optional;
         typedef ::xsd::cxx::tree::traits< SiteExcavationBackfillVolume_type, char, ::xsd::cxx::tree::schema_type::double_ > SiteExcavationBackfillVolume_traits;
 
         const SiteExcavationBackfillVolume_optional&
@@ -484,7 +484,7 @@ namespace schema
         // SiteInSpatialContainer
         //
         typedef ::xml_schema::idref SiteInSpatialContainer_type;
-        typedef ::xsd::cxx::tree::optional< SiteInSpatialContainer_type > SiteInSpatialContainer_optional;
+        typedef ::xsd::cxx::tree::optional< SiteInSpatialContainer_type, false > SiteInSpatialContainer_optional;
         typedef ::xsd::cxx::tree::traits< SiteInSpatialContainer_type, char > SiteInSpatialContainer_traits;
 
         const SiteInSpatialContainer_optional&
@@ -505,7 +505,7 @@ namespace schema
         // LandTitleNumber
         //
         typedef ::xml_schema::string LandTitleNumber_type;
-        typedef ::xsd::cxx::tree::optional< LandTitleNumber_type > LandTitleNumber_optional;
+        typedef ::xsd::cxx::tree::optional< LandTitleNumber_type, false > LandTitleNumber_optional;
         typedef ::xsd::cxx::tree::traits< LandTitleNumber_type, char > LandTitleNumber_traits;
 
         const LandTitleNumber_optional&
@@ -526,7 +526,7 @@ namespace schema
         // SiteAddress
         //
         typedef ::xml_schema::idref SiteAddress_type;
-        typedef ::xsd::cxx::tree::optional< SiteAddress_type > SiteAddress_optional;
+        typedef ::xsd::cxx::tree::optional< SiteAddress_type, false > SiteAddress_optional;
         typedef ::xsd::cxx::tree::traits< SiteAddress_type, char > SiteAddress_traits;
 
         const SiteAddress_optional&
@@ -547,7 +547,7 @@ namespace schema
         // WeatherLocationRegion
         //
         typedef ::xml_schema::string WeatherLocationRegion_type;
-        typedef ::xsd::cxx::tree::optional< WeatherLocationRegion_type > WeatherLocationRegion_optional;
+        typedef ::xsd::cxx::tree::optional< WeatherLocationRegion_type, false > WeatherLocationRegion_optional;
         typedef ::xsd::cxx::tree::traits< WeatherLocationRegion_type, char > WeatherLocationRegion_traits;
 
         const WeatherLocationRegion_optional&
@@ -568,7 +568,7 @@ namespace schema
         // WeatherLocationCity
         //
         typedef ::xml_schema::string WeatherLocationCity_type;
-        typedef ::xsd::cxx::tree::optional< WeatherLocationCity_type > WeatherLocationCity_optional;
+        typedef ::xsd::cxx::tree::optional< WeatherLocationCity_type, false > WeatherLocationCity_optional;
         typedef ::xsd::cxx::tree::traits< WeatherLocationCity_type, char > WeatherLocationCity_traits;
 
         const WeatherLocationCity_optional&
@@ -589,7 +589,7 @@ namespace schema
         // WeatherLocationID
         //
         typedef ::xml_schema::string WeatherLocationID_type;
-        typedef ::xsd::cxx::tree::optional< WeatherLocationID_type > WeatherLocationID_optional;
+        typedef ::xsd::cxx::tree::optional< WeatherLocationID_type, false > WeatherLocationID_optional;
         typedef ::xsd::cxx::tree::traits< WeatherLocationID_type, char > WeatherLocationID_traits;
 
         const WeatherLocationID_optional&
@@ -610,7 +610,7 @@ namespace schema
         // WeatherLocationIDType
         //
         typedef ::xml_schema::string WeatherLocationIDType_type;
-        typedef ::xsd::cxx::tree::optional< WeatherLocationIDType_type > WeatherLocationIDType_optional;
+        typedef ::xsd::cxx::tree::optional< WeatherLocationIDType_type, false > WeatherLocationIDType_optional;
         typedef ::xsd::cxx::tree::traits< WeatherLocationIDType_type, char > WeatherLocationIDType_traits;
 
         const WeatherLocationIDType_optional&
@@ -652,7 +652,7 @@ namespace schema
         // TimeZone
         //
         typedef ::xml_schema::double_ TimeZone_type;
-        typedef ::xsd::cxx::tree::optional< TimeZone_type > TimeZone_optional;
+        typedef ::xsd::cxx::tree::optional< TimeZone_type, true > TimeZone_optional;
         typedef ::xsd::cxx::tree::traits< TimeZone_type, char, ::xsd::cxx::tree::schema_type::double_ > TimeZone_traits;
 
         const TimeZone_optional&
@@ -670,7 +670,7 @@ namespace schema
         // LocationsTemplate
         //
         typedef ::xml_schema::idref LocationsTemplate_type;
-        typedef ::xsd::cxx::tree::optional< LocationsTemplate_type > LocationsTemplate_optional;
+        typedef ::xsd::cxx::tree::optional< LocationsTemplate_type, false > LocationsTemplate_optional;
         typedef ::xsd::cxx::tree::traits< LocationsTemplate_type, char > LocationsTemplate_traits;
 
         const LocationsTemplate_optional&
@@ -691,7 +691,7 @@ namespace schema
         // TemplateOverrideValues
         //
         typedef ::xml_schema::idref TemplateOverrideValues_type;
-        typedef ::xsd::cxx::tree::optional< TemplateOverrideValues_type > TemplateOverrideValues_optional;
+        typedef ::xsd::cxx::tree::optional< TemplateOverrideValues_type, false > TemplateOverrideValues_optional;
         typedef ::xsd::cxx::tree::traits< TemplateOverrideValues_type, char > TemplateOverrideValues_traits;
 
         const TemplateOverrideValues_optional&

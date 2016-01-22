@@ -10,6 +10,7 @@ using namespace xsd::cxx::tree;
 
 //3. class auto ptr
 %auto_ptr(::schema::simxml::BuildingModel::SimList_SchemeList_AirLoopAvailabilityMgrScheme)
+%auto_ptr(::schema::simxml::BuildingModel::SimList_AvailMngrObjectType_1_6)
 
 %import  "..\base\base.i"
 %import  "..\SimList_ConnectorList_SimConnections\SimList_ConnectorList_SimConnections.i"

@@ -284,7 +284,7 @@ namespace schema
         // ControlElementID
         //
         typedef ::xml_schema::string ControlElementID_type;
-        typedef ::xsd::cxx::tree::optional< ControlElementID_type > ControlElementID_optional;
+        typedef ::xsd::cxx::tree::optional< ControlElementID_type, false > ControlElementID_optional;
         typedef ::xsd::cxx::tree::traits< ControlElementID_type, char > ControlElementID_traits;
 
         const ControlElementID_optional&

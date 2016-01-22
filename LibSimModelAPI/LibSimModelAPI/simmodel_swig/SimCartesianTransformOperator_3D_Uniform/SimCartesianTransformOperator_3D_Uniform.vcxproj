@@ -80,11 +80,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <None Include="SimCartesianTransformOperator_3D_Uniform.i">
+    <CustomBuild Include="SimCartesianTransformOperator_3D_Uniform.i">
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Research\EnEff-BIM\Python\SWIG\swigwin-3.0.7\swig.exe -c++ -python -outdir $(Outdir) %(Identity)</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename)_wrap.cxx;$(Outdir)%(Filename).py</Outputs>
       <FileType>Document</FileType>
-    </None>
+    </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="SimCartesianTransformOperator_3D_Uniform_wrap.cxx" />

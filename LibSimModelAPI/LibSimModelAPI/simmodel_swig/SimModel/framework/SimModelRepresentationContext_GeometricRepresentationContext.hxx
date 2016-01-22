@@ -263,7 +263,7 @@ namespace schema
         // CoordinateSpaceDimension
         //
         typedef ::xml_schema::int_ CoordinateSpaceDimension_type;
-        typedef ::xsd::cxx::tree::optional< CoordinateSpaceDimension_type > CoordinateSpaceDimension_optional;
+        typedef ::xsd::cxx::tree::optional< CoordinateSpaceDimension_type, true > CoordinateSpaceDimension_optional;
         typedef ::xsd::cxx::tree::traits< CoordinateSpaceDimension_type, char > CoordinateSpaceDimension_traits;
 
         const CoordinateSpaceDimension_optional&
@@ -281,7 +281,7 @@ namespace schema
         // Precision
         //
         typedef ::xml_schema::double_ Precision_type;
-        typedef ::xsd::cxx::tree::optional< Precision_type > Precision_optional;
+        typedef ::xsd::cxx::tree::optional< Precision_type, true > Precision_optional;
         typedef ::xsd::cxx::tree::traits< Precision_type, char, ::xsd::cxx::tree::schema_type::double_ > Precision_traits;
 
         const Precision_optional&
@@ -299,7 +299,7 @@ namespace schema
         // WorldCoordinateSystem
         //
         typedef ::xml_schema::idref WorldCoordinateSystem_type;
-        typedef ::xsd::cxx::tree::optional< WorldCoordinateSystem_type > WorldCoordinateSystem_optional;
+        typedef ::xsd::cxx::tree::optional< WorldCoordinateSystem_type, false > WorldCoordinateSystem_optional;
         typedef ::xsd::cxx::tree::traits< WorldCoordinateSystem_type, char > WorldCoordinateSystem_traits;
 
         const WorldCoordinateSystem_optional&
@@ -320,7 +320,7 @@ namespace schema
         // TrueNorth
         //
         typedef ::xml_schema::idref TrueNorth_type;
-        typedef ::xsd::cxx::tree::optional< TrueNorth_type > TrueNorth_optional;
+        typedef ::xsd::cxx::tree::optional< TrueNorth_type, false > TrueNorth_optional;
         typedef ::xsd::cxx::tree::traits< TrueNorth_type, char > TrueNorth_traits;
 
         const TrueNorth_optional&
@@ -341,7 +341,7 @@ namespace schema
         // SimModelRepresentationContext_StartVertexPosition
         //
         typedef ::xml_schema::string SimModelRepresentationContext_StartVertexPosition_type;
-        typedef ::xsd::cxx::tree::optional< SimModelRepresentationContext_StartVertexPosition_type > SimModelRepresentationContext_StartVertexPosition_optional;
+        typedef ::xsd::cxx::tree::optional< SimModelRepresentationContext_StartVertexPosition_type, false > SimModelRepresentationContext_StartVertexPosition_optional;
         typedef ::xsd::cxx::tree::traits< SimModelRepresentationContext_StartVertexPosition_type, char > SimModelRepresentationContext_StartVertexPosition_traits;
 
         const SimModelRepresentationContext_StartVertexPosition_optional&
@@ -362,7 +362,7 @@ namespace schema
         // SimModelRepresentationContext_VertexEntryDir
         //
         typedef ::xml_schema::string SimModelRepresentationContext_VertexEntryDir_type;
-        typedef ::xsd::cxx::tree::optional< SimModelRepresentationContext_VertexEntryDir_type > SimModelRepresentationContext_VertexEntryDir_optional;
+        typedef ::xsd::cxx::tree::optional< SimModelRepresentationContext_VertexEntryDir_type, false > SimModelRepresentationContext_VertexEntryDir_optional;
         typedef ::xsd::cxx::tree::traits< SimModelRepresentationContext_VertexEntryDir_type, char > SimModelRepresentationContext_VertexEntryDir_traits;
 
         const SimModelRepresentationContext_VertexEntryDir_optional&
@@ -383,7 +383,7 @@ namespace schema
         // SimModelRepresentationContext_CoordSys
         //
         typedef ::xml_schema::string SimModelRepresentationContext_CoordSys_type;
-        typedef ::xsd::cxx::tree::optional< SimModelRepresentationContext_CoordSys_type > SimModelRepresentationContext_CoordSys_optional;
+        typedef ::xsd::cxx::tree::optional< SimModelRepresentationContext_CoordSys_type, false > SimModelRepresentationContext_CoordSys_optional;
         typedef ::xsd::cxx::tree::traits< SimModelRepresentationContext_CoordSys_type, char > SimModelRepresentationContext_CoordSys_traits;
 
         const SimModelRepresentationContext_CoordSys_optional&
@@ -404,7 +404,7 @@ namespace schema
         // SimModelRepresentationContext_DylghtRefPointCoordSys
         //
         typedef ::xml_schema::string SimModelRepresentationContext_DylghtRefPointCoordSys_type;
-        typedef ::xsd::cxx::tree::optional< SimModelRepresentationContext_DylghtRefPointCoordSys_type > SimModelRepresentationContext_DylghtRefPointCoordSys_optional;
+        typedef ::xsd::cxx::tree::optional< SimModelRepresentationContext_DylghtRefPointCoordSys_type, false > SimModelRepresentationContext_DylghtRefPointCoordSys_optional;
         typedef ::xsd::cxx::tree::traits< SimModelRepresentationContext_DylghtRefPointCoordSys_type, char > SimModelRepresentationContext_DylghtRefPointCoordSys_traits;
 
         const SimModelRepresentationContext_DylghtRefPointCoordSys_optional&
@@ -425,7 +425,7 @@ namespace schema
         // SimModelRepresentationContext_RectSurfCoordSys
         //
         typedef ::xml_schema::string SimModelRepresentationContext_RectSurfCoordSys_type;
-        typedef ::xsd::cxx::tree::optional< SimModelRepresentationContext_RectSurfCoordSys_type > SimModelRepresentationContext_RectSurfCoordSys_optional;
+        typedef ::xsd::cxx::tree::optional< SimModelRepresentationContext_RectSurfCoordSys_type, false > SimModelRepresentationContext_RectSurfCoordSys_optional;
         typedef ::xsd::cxx::tree::traits< SimModelRepresentationContext_RectSurfCoordSys_type, char > SimModelRepresentationContext_RectSurfCoordSys_traits;
 
         const SimModelRepresentationContext_RectSurfCoordSys_optional&

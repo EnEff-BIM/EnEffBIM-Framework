@@ -25,6 +25,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="SimNode_Docking_Default.i" />
+    <CustomBuild Include="SimNode_Docking_Default.i" />
   </ItemGroup>
 </Project>

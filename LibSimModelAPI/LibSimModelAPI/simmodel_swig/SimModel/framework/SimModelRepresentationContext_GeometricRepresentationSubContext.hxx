@@ -263,7 +263,7 @@ namespace schema
         // ParentContext
         //
         typedef ::xml_schema::idref ParentContext_type;
-        typedef ::xsd::cxx::tree::optional< ParentContext_type > ParentContext_optional;
+        typedef ::xsd::cxx::tree::optional< ParentContext_type, false > ParentContext_optional;
         typedef ::xsd::cxx::tree::traits< ParentContext_type, char > ParentContext_traits;
 
         const ParentContext_optional&
@@ -284,7 +284,7 @@ namespace schema
         // TargetScale
         //
         typedef ::xml_schema::double_ TargetScale_type;
-        typedef ::xsd::cxx::tree::optional< TargetScale_type > TargetScale_optional;
+        typedef ::xsd::cxx::tree::optional< TargetScale_type, true > TargetScale_optional;
         typedef ::xsd::cxx::tree::traits< TargetScale_type, char, ::xsd::cxx::tree::schema_type::double_ > TargetScale_traits;
 
         const TargetScale_optional&
@@ -302,7 +302,7 @@ namespace schema
         // TargetView
         //
         typedef ::xml_schema::string TargetView_type;
-        typedef ::xsd::cxx::tree::optional< TargetView_type > TargetView_optional;
+        typedef ::xsd::cxx::tree::optional< TargetView_type, false > TargetView_optional;
         typedef ::xsd::cxx::tree::traits< TargetView_type, char > TargetView_traits;
 
         const TargetView_optional&
@@ -323,7 +323,7 @@ namespace schema
         // UserDefinedTargetView
         //
         typedef ::xml_schema::string UserDefinedTargetView_type;
-        typedef ::xsd::cxx::tree::optional< UserDefinedTargetView_type > UserDefinedTargetView_optional;
+        typedef ::xsd::cxx::tree::optional< UserDefinedTargetView_type, false > UserDefinedTargetView_optional;
         typedef ::xsd::cxx::tree::traits< UserDefinedTargetView_type, char > UserDefinedTargetView_traits;
 
         const UserDefinedTargetView_optional&

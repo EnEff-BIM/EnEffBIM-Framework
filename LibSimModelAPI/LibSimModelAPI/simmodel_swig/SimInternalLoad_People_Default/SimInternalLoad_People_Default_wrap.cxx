@@ -3755,82 +3755,84 @@ namespace Swig {
 #define SWIGTYPE_p_schema__simxml__SimModelCore__SimSpatialStructureElement swig_types[340]
 #define SWIGTYPE_p_schema__simxml__SimModelCore__SimTemplate swig_types[341]
 #define SWIGTYPE_p_schema__simxml__SimModelCore__SimTopologicalRepresentationItem swig_types[342]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__integerList swig_types[343]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__logical swig_types[344]
-#define SWIGTYPE_p_short swig_types[345]
-#define SWIGTYPE_p_signed_char swig_types[346]
-#define SWIGTYPE_p_size_type swig_types[347]
-#define SWIGTYPE_p_std__auto_ptrT_T_t swig_types[348]
-#define SWIGTYPE_p_std__auto_ptrT_schema__simxml__ResourcesGeneral__SimInternalLoad_People_Default_t swig_types[349]
-#define SWIGTYPE_p_std__auto_ptrT_schema__simxml__ResourcesGeneral__SimInternalLoad_ThermalComfortModel_1_5_Type_t swig_types[350]
-#define SWIGTYPE_p_std__auto_ptrT_xml_schema__idref_t swig_types[351]
-#define SWIGTYPE_p_std__auto_ptrT_xml_schema__string_t swig_types[352]
-#define SWIGTYPE_p_std__vectorT_xsd__cxx__tree__sequence_common__ptr_std__allocatorT_xsd__cxx__tree__sequence_common__ptr_t_t__size_type swig_types[353]
-#define SWIGTYPE_p_unsigned_char swig_types[354]
-#define SWIGTYPE_p_unsigned_int swig_types[355]
-#define SWIGTYPE_p_unsigned_long_long swig_types[356]
-#define SWIGTYPE_p_unsigned_short swig_types[357]
-#define SWIGTYPE_p_value_type swig_types[358]
-#define SWIGTYPE_p_xercesc__DOMElement swig_types[359]
-#define SWIGTYPE_p_xsd__cxx__tree___type swig_types[360]
-#define SWIGTYPE_p_xsd__cxx__tree__base64_binaryT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[361]
-#define SWIGTYPE_p_xsd__cxx__tree__boundsT_char_t swig_types[362]
-#define SWIGTYPE_p_xsd__cxx__tree__bufferT_char_t swig_types[363]
-#define SWIGTYPE_p_xsd__cxx__tree__content_order swig_types[364]
-#define SWIGTYPE_p_xsd__cxx__tree__dateT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[365]
-#define SWIGTYPE_p_xsd__cxx__tree__date_timeT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[366]
-#define SWIGTYPE_p_xsd__cxx__tree__diagnosticsT_char_t swig_types[367]
-#define SWIGTYPE_p_xsd__cxx__tree__duplicate_idT_char_t swig_types[368]
-#define SWIGTYPE_p_xsd__cxx__tree__durationT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[369]
-#define SWIGTYPE_p_xsd__cxx__tree__entitiesT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__entityT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t_t swig_types[370]
-#define SWIGTYPE_p_xsd__cxx__tree__entityT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t swig_types[371]
-#define SWIGTYPE_p_xsd__cxx__tree__errorT_char_t swig_types[372]
-#define SWIGTYPE_p_xsd__cxx__tree__exceptionT_char_t swig_types[373]
-#define SWIGTYPE_p_xsd__cxx__tree__expected_attributeT_char_t swig_types[374]
-#define SWIGTYPE_p_xsd__cxx__tree__expected_elementT_char_t swig_types[375]
-#define SWIGTYPE_p_xsd__cxx__tree__expected_text_contentT_char_t swig_types[376]
-#define SWIGTYPE_p_xsd__cxx__tree__flags swig_types[377]
-#define SWIGTYPE_p_xsd__cxx__tree__gdayT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[378]
-#define SWIGTYPE_p_xsd__cxx__tree__gmonthT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[379]
-#define SWIGTYPE_p_xsd__cxx__tree__gmonth_dayT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[380]
-#define SWIGTYPE_p_xsd__cxx__tree__gyearT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[381]
-#define SWIGTYPE_p_xsd__cxx__tree__gyear_monthT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[382]
-#define SWIGTYPE_p_xsd__cxx__tree__hex_binaryT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[383]
-#define SWIGTYPE_p_xsd__cxx__tree__idT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t swig_types[384]
-#define SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t swig_types[385]
-#define SWIGTYPE_p_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t swig_types[386]
-#define SWIGTYPE_p_xsd__cxx__tree__languageT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t swig_types[387]
-#define SWIGTYPE_p_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t swig_types[388]
-#define SWIGTYPE_p_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t swig_types[389]
-#define SWIGTYPE_p_xsd__cxx__tree__nmtokenT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t swig_types[390]
-#define SWIGTYPE_p_xsd__cxx__tree__nmtokensT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__nmtokenT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t swig_types[391]
-#define SWIGTYPE_p_xsd__cxx__tree__no_prefix_mappingT_char_t swig_types[392]
-#define SWIGTYPE_p_xsd__cxx__tree__no_type_infoT_char_t swig_types[393]
-#define SWIGTYPE_p_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t swig_types[394]
-#define SWIGTYPE_p_xsd__cxx__tree__not_derivedT_char_t swig_types[395]
-#define SWIGTYPE_p_xsd__cxx__tree__optionalT_double_true_t swig_types[396]
-#define SWIGTYPE_p_xsd__cxx__tree__optionalT_schema__simxml__ResourcesGeneral__SimInternalLoad_ThermalComfortModel_1_5_Type_xsd__cxx__tree__fundamental_pT_schema__simxml__ResourcesGeneral__SimInternalLoad_ThermalComfortModel_1_5_Type_t__r_t swig_types[397]
-#define SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t swig_types[398]
-#define SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t__r_t swig_types[399]
-#define SWIGTYPE_p_xsd__cxx__tree__parsingT_char_t swig_types[400]
-#define SWIGTYPE_p_xsd__cxx__tree__propertiesT_char_t swig_types[401]
-#define SWIGTYPE_p_xsd__cxx__tree__qnameT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__uriT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t swig_types[402]
-#define SWIGTYPE_p_xsd__cxx__tree__sequenceT_schema__simxml__ResourcesGeneral__SimInternalLoad_Equipment_Electric_false_t swig_types[403]
-#define SWIGTYPE_p_xsd__cxx__tree__sequenceT_schema__simxml__ResourcesGeneral__SimInternalLoad_People_Default_false_t swig_types[404]
-#define SWIGTYPE_p_xsd__cxx__tree__sequence_common swig_types[405]
-#define SWIGTYPE_p_xsd__cxx__tree__severity swig_types[406]
-#define SWIGTYPE_p_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t swig_types[407]
-#define SWIGTYPE_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[408]
-#define SWIGTYPE_p_xsd__cxx__tree__timeT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[409]
-#define SWIGTYPE_p_xsd__cxx__tree__time_zone swig_types[410]
-#define SWIGTYPE_p_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t swig_types[411]
-#define SWIGTYPE_p_xsd__cxx__tree__unexpected_elementT_char_t swig_types[412]
-#define SWIGTYPE_p_xsd__cxx__tree__unexpected_enumeratorT_char_t swig_types[413]
-#define SWIGTYPE_p_xsd__cxx__tree__uriT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[414]
-#define SWIGTYPE_p_xsd__cxx__tree__user_data_keys_templateT_0_t swig_types[415]
-#define SWIGTYPE_p_xsd__cxx__xml__error_handlerT_char_t swig_types[416]
-static swig_type_info *swig_types[418];
-static swig_module_info swig_module = {swig_types, 417, 0, 0, 0, 0};
+#define SWIGTYPE_p_schema__simxml__SimModelCore__doubleList swig_types[343]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__integerList swig_types[344]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__logical swig_types[345]
+#define SWIGTYPE_p_self_ swig_types[346]
+#define SWIGTYPE_p_short swig_types[347]
+#define SWIGTYPE_p_signed_char swig_types[348]
+#define SWIGTYPE_p_size_type swig_types[349]
+#define SWIGTYPE_p_std__auto_ptrT_T_t swig_types[350]
+#define SWIGTYPE_p_std__auto_ptrT_schema__simxml__ResourcesGeneral__SimInternalLoad_People_Default_t swig_types[351]
+#define SWIGTYPE_p_std__auto_ptrT_schema__simxml__ResourcesGeneral__SimInternalLoad_ThermalComfortModel_1_5_Type_t swig_types[352]
+#define SWIGTYPE_p_std__auto_ptrT_xml_schema__idref_t swig_types[353]
+#define SWIGTYPE_p_std__auto_ptrT_xml_schema__string_t swig_types[354]
+#define SWIGTYPE_p_std__vectorT_xsd__cxx__tree__sequence_common__ptr_std__allocatorT_xsd__cxx__tree__sequence_common__ptr_t_t__size_type swig_types[355]
+#define SWIGTYPE_p_unsigned_char swig_types[356]
+#define SWIGTYPE_p_unsigned_int swig_types[357]
+#define SWIGTYPE_p_unsigned_long_long swig_types[358]
+#define SWIGTYPE_p_unsigned_short swig_types[359]
+#define SWIGTYPE_p_value_type swig_types[360]
+#define SWIGTYPE_p_xercesc__DOMElement swig_types[361]
+#define SWIGTYPE_p_xsd__cxx__tree___type swig_types[362]
+#define SWIGTYPE_p_xsd__cxx__tree__base64_binaryT_char_xsd__cxx__tree__simple_type_t swig_types[363]
+#define SWIGTYPE_p_xsd__cxx__tree__boundsT_char_t swig_types[364]
+#define SWIGTYPE_p_xsd__cxx__tree__bufferT_char_t swig_types[365]
+#define SWIGTYPE_p_xsd__cxx__tree__content_order swig_types[366]
+#define SWIGTYPE_p_xsd__cxx__tree__dateT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[367]
+#define SWIGTYPE_p_xsd__cxx__tree__date_timeT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[368]
+#define SWIGTYPE_p_xsd__cxx__tree__diagnosticsT_char_t swig_types[369]
+#define SWIGTYPE_p_xsd__cxx__tree__duplicate_idT_char_t swig_types[370]
+#define SWIGTYPE_p_xsd__cxx__tree__durationT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[371]
+#define SWIGTYPE_p_xsd__cxx__tree__entitiesT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__entity_t swig_types[372]
+#define SWIGTYPE_p_xsd__cxx__tree__entityT_char_xsd__cxx__tree__ncname_t swig_types[373]
+#define SWIGTYPE_p_xsd__cxx__tree__errorT_char_t swig_types[374]
+#define SWIGTYPE_p_xsd__cxx__tree__exceptionT_char_t swig_types[375]
+#define SWIGTYPE_p_xsd__cxx__tree__expected_attributeT_char_t swig_types[376]
+#define SWIGTYPE_p_xsd__cxx__tree__expected_elementT_char_t swig_types[377]
+#define SWIGTYPE_p_xsd__cxx__tree__expected_text_contentT_char_t swig_types[378]
+#define SWIGTYPE_p_xsd__cxx__tree__flags swig_types[379]
+#define SWIGTYPE_p_xsd__cxx__tree__gdayT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[380]
+#define SWIGTYPE_p_xsd__cxx__tree__gmonthT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[381]
+#define SWIGTYPE_p_xsd__cxx__tree__gmonth_dayT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[382]
+#define SWIGTYPE_p_xsd__cxx__tree__gyearT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[383]
+#define SWIGTYPE_p_xsd__cxx__tree__gyear_monthT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[384]
+#define SWIGTYPE_p_xsd__cxx__tree__hex_binaryT_char_xsd__cxx__tree__simple_type_t swig_types[385]
+#define SWIGTYPE_p_xsd__cxx__tree__idT_char_xsd__cxx__tree__ncname_t swig_types[386]
+#define SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t swig_types[387]
+#define SWIGTYPE_p_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t swig_types[388]
+#define SWIGTYPE_p_xsd__cxx__tree__languageT_char_xsd__cxx__tree__token_t swig_types[389]
+#define SWIGTYPE_p_xsd__cxx__tree__nameT_char_xsd__cxx__tree__token_t swig_types[390]
+#define SWIGTYPE_p_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__name_t swig_types[391]
+#define SWIGTYPE_p_xsd__cxx__tree__nmtokenT_char_xsd__cxx__tree__token_t swig_types[392]
+#define SWIGTYPE_p_xsd__cxx__tree__nmtokensT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__nmtoken_t swig_types[393]
+#define SWIGTYPE_p_xsd__cxx__tree__no_prefix_mappingT_char_t swig_types[394]
+#define SWIGTYPE_p_xsd__cxx__tree__no_type_infoT_char_t swig_types[395]
+#define SWIGTYPE_p_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__string_t swig_types[396]
+#define SWIGTYPE_p_xsd__cxx__tree__not_derivedT_char_t swig_types[397]
+#define SWIGTYPE_p_xsd__cxx__tree__optionalT_double_true_t swig_types[398]
+#define SWIGTYPE_p_xsd__cxx__tree__optionalT_schema__simxml__ResourcesGeneral__SimInternalLoad_ThermalComfortModel_1_5_Type_xsd__cxx__tree__fundamental_pT_schema__simxml__ResourcesGeneral__SimInternalLoad_ThermalComfortModel_1_5_Type_t__r_t swig_types[399]
+#define SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t swig_types[400]
+#define SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_false_t swig_types[401]
+#define SWIGTYPE_p_xsd__cxx__tree__parsingT_char_t swig_types[402]
+#define SWIGTYPE_p_xsd__cxx__tree__propertiesT_char_t swig_types[403]
+#define SWIGTYPE_p_xsd__cxx__tree__qnameT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__uri_xsd__cxx__tree__ncname_t swig_types[404]
+#define SWIGTYPE_p_xsd__cxx__tree__sequenceT_schema__simxml__ResourcesGeneral__SimInternalLoad_Equipment_Electric_false_t swig_types[405]
+#define SWIGTYPE_p_xsd__cxx__tree__sequenceT_schema__simxml__ResourcesGeneral__SimInternalLoad_People_Default_false_t swig_types[406]
+#define SWIGTYPE_p_xsd__cxx__tree__sequence_common swig_types[407]
+#define SWIGTYPE_p_xsd__cxx__tree__severity swig_types[408]
+#define SWIGTYPE_p_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t swig_types[409]
+#define SWIGTYPE_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t swig_types[410]
+#define SWIGTYPE_p_xsd__cxx__tree__timeT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[411]
+#define SWIGTYPE_p_xsd__cxx__tree__time_zone swig_types[412]
+#define SWIGTYPE_p_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_string_t swig_types[413]
+#define SWIGTYPE_p_xsd__cxx__tree__unexpected_elementT_char_t swig_types[414]
+#define SWIGTYPE_p_xsd__cxx__tree__unexpected_enumeratorT_char_t swig_types[415]
+#define SWIGTYPE_p_xsd__cxx__tree__uriT_char_xsd__cxx__tree__simple_type_t swig_types[416]
+#define SWIGTYPE_p_xsd__cxx__tree__user_data_keys_templateT_0_t swig_types[417]
+#define SWIGTYPE_p_xsd__cxx__xml__error_handlerT_char_t swig_types[418]
+static swig_type_info *swig_types[420];
+static swig_module_info swig_module = {swig_types, 419, 0, 0, 0, 0};
 #define SWIG_TypeQuery(name) SWIG_TypeQueryModule(&swig_module, &swig_module, name)
 #define SWIG_MangledTypeQuery(name) SWIG_MangledTypeQueryModule(&swig_module, &swig_module, name)
 
@@ -4260,7 +4262,7 @@ SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_Name__SWIG_0(P
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimInternalLoad_People * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_Name_optional *) &((schema::simxml::ResourcesGeneral::SimInternalLoad_People const *)arg1)->SimInternalLoad_Name();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_false_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -4282,7 +4284,7 @@ SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_Name__SWIG_1(P
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimInternalLoad_People * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_Name_optional *) &(arg1)->SimInternalLoad_Name();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_false_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -4306,7 +4308,7 @@ SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_Name__SWIG_2(P
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimInternalLoad_People_SimInternalLoad_Name" "', argument " "1"" of type '" "schema::simxml::ResourcesGeneral::SimInternalLoad_People *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimInternalLoad_People * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimInternalLoad_People_SimInternalLoad_Name" "', argument " "2"" of type '" "schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_Name_type const &""'"); 
   }
@@ -4339,7 +4341,7 @@ SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_Name__SWIG_3(P
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimInternalLoad_People_SimInternalLoad_Name" "', argument " "1"" of type '" "schema::simxml::ResourcesGeneral::SimInternalLoad_People *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimInternalLoad_People * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t__r_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_false_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimInternalLoad_People_SimInternalLoad_Name" "', argument " "2"" of type '" "schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_Name_optional const &""'"); 
   }
@@ -4429,7 +4431,7 @@ SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_Name(PyObject 
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimInternalLoad_People, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimInternalLoad_People_SimInternalLoad_Name__SWIG_2(self, args);
@@ -4442,7 +4444,7 @@ SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_Name(PyObject 
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimInternalLoad_People, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t__r_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_false_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimInternalLoad_People_SimInternalLoad_Name__SWIG_3(self, args);
@@ -4490,7 +4492,7 @@ SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_ZoneOrZoneList
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimInternalLoad_People * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_ZoneOrZoneListName_optional *) &((schema::simxml::ResourcesGeneral::SimInternalLoad_People const *)arg1)->SimInternalLoad_ZoneOrZoneListName();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -4512,7 +4514,7 @@ SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_ZoneOrZoneList
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimInternalLoad_People * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_ZoneOrZoneListName_optional *) &(arg1)->SimInternalLoad_ZoneOrZoneListName();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -4536,7 +4538,7 @@ SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_ZoneOrZoneList
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimInternalLoad_People_SimInternalLoad_ZoneOrZoneListName" "', argument " "1"" of type '" "schema::simxml::ResourcesGeneral::SimInternalLoad_People *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimInternalLoad_People * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimInternalLoad_People_SimInternalLoad_ZoneOrZoneListName" "', argument " "2"" of type '" "schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_ZoneOrZoneListName_type const &""'"); 
   }
@@ -4569,7 +4571,7 @@ SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_ZoneOrZoneList
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimInternalLoad_People_SimInternalLoad_ZoneOrZoneListName" "', argument " "1"" of type '" "schema::simxml::ResourcesGeneral::SimInternalLoad_People *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimInternalLoad_People * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimInternalLoad_People_SimInternalLoad_ZoneOrZoneListName" "', argument " "2"" of type '" "schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_ZoneOrZoneListName_optional const &""'"); 
   }
@@ -4659,7 +4661,7 @@ SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_ZoneOrZoneList
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimInternalLoad_People, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimInternalLoad_People_SimInternalLoad_ZoneOrZoneListName__SWIG_2(self, args);
@@ -4672,7 +4674,7 @@ SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_ZoneOrZoneList
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimInternalLoad_People, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimInternalLoad_People_SimInternalLoad_ZoneOrZoneListName__SWIG_3(self, args);
@@ -4720,7 +4722,7 @@ SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_NumbPeopleSche
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimInternalLoad_People * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_NumbPeopleSchedName_optional *) &((schema::simxml::ResourcesGeneral::SimInternalLoad_People const *)arg1)->SimInternalLoad_NumbPeopleSchedName();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -4742,7 +4744,7 @@ SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_NumbPeopleSche
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimInternalLoad_People * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_NumbPeopleSchedName_optional *) &(arg1)->SimInternalLoad_NumbPeopleSchedName();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -4766,7 +4768,7 @@ SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_NumbPeopleSche
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimInternalLoad_People_SimInternalLoad_NumbPeopleSchedName" "', argument " "1"" of type '" "schema::simxml::ResourcesGeneral::SimInternalLoad_People *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimInternalLoad_People * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimInternalLoad_People_SimInternalLoad_NumbPeopleSchedName" "', argument " "2"" of type '" "schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_NumbPeopleSchedName_type const &""'"); 
   }
@@ -4799,7 +4801,7 @@ SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_NumbPeopleSche
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimInternalLoad_People_SimInternalLoad_NumbPeopleSchedName" "', argument " "1"" of type '" "schema::simxml::ResourcesGeneral::SimInternalLoad_People *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimInternalLoad_People * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimInternalLoad_People_SimInternalLoad_NumbPeopleSchedName" "', argument " "2"" of type '" "schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_NumbPeopleSchedName_optional const &""'"); 
   }
@@ -4889,7 +4891,7 @@ SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_NumbPeopleSche
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimInternalLoad_People, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimInternalLoad_People_SimInternalLoad_NumbPeopleSchedName__SWIG_2(self, args);
@@ -4902,7 +4904,7 @@ SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_NumbPeopleSche
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimInternalLoad_People, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimInternalLoad_People_SimInternalLoad_NumbPeopleSchedName__SWIG_3(self, args);
@@ -4950,7 +4952,7 @@ SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_NumbPeopleCalc
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimInternalLoad_People * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_NumbPeopleCalcMeth_optional *) &((schema::simxml::ResourcesGeneral::SimInternalLoad_People const *)arg1)->SimInternalLoad_NumbPeopleCalcMeth();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_false_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -4972,7 +4974,7 @@ SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_NumbPeopleCalc
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimInternalLoad_People * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_NumbPeopleCalcMeth_optional *) &(arg1)->SimInternalLoad_NumbPeopleCalcMeth();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_false_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -4996,7 +4998,7 @@ SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_NumbPeopleCalc
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimInternalLoad_People_SimInternalLoad_NumbPeopleCalcMeth" "', argument " "1"" of type '" "schema::simxml::ResourcesGeneral::SimInternalLoad_People *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimInternalLoad_People * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimInternalLoad_People_SimInternalLoad_NumbPeopleCalcMeth" "', argument " "2"" of type '" "schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_NumbPeopleCalcMeth_type const &""'"); 
   }
@@ -5029,7 +5031,7 @@ SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_NumbPeopleCalc
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimInternalLoad_People_SimInternalLoad_NumbPeopleCalcMeth" "', argument " "1"" of type '" "schema::simxml::ResourcesGeneral::SimInternalLoad_People *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimInternalLoad_People * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t__r_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_false_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimInternalLoad_People_SimInternalLoad_NumbPeopleCalcMeth" "', argument " "2"" of type '" "schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_NumbPeopleCalcMeth_optional const &""'"); 
   }
@@ -5119,7 +5121,7 @@ SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_NumbPeopleCalc
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimInternalLoad_People, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimInternalLoad_People_SimInternalLoad_NumbPeopleCalcMeth__SWIG_2(self, args);
@@ -5132,7 +5134,7 @@ SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_NumbPeopleCalc
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimInternalLoad_People, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t__r_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_false_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimInternalLoad_People_SimInternalLoad_NumbPeopleCalcMeth__SWIG_3(self, args);
@@ -6075,7 +6077,7 @@ SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_ActLvlSchedNam
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimInternalLoad_People * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_ActLvlSchedName_optional *) &((schema::simxml::ResourcesGeneral::SimInternalLoad_People const *)arg1)->SimInternalLoad_ActLvlSchedName();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -6097,7 +6099,7 @@ SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_ActLvlSchedNam
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimInternalLoad_People * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_ActLvlSchedName_optional *) &(arg1)->SimInternalLoad_ActLvlSchedName();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -6121,7 +6123,7 @@ SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_ActLvlSchedNam
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimInternalLoad_People_SimInternalLoad_ActLvlSchedName" "', argument " "1"" of type '" "schema::simxml::ResourcesGeneral::SimInternalLoad_People *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimInternalLoad_People * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimInternalLoad_People_SimInternalLoad_ActLvlSchedName" "', argument " "2"" of type '" "schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_ActLvlSchedName_type const &""'"); 
   }
@@ -6154,7 +6156,7 @@ SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_ActLvlSchedNam
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimInternalLoad_People_SimInternalLoad_ActLvlSchedName" "', argument " "1"" of type '" "schema::simxml::ResourcesGeneral::SimInternalLoad_People *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimInternalLoad_People * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimInternalLoad_People_SimInternalLoad_ActLvlSchedName" "', argument " "2"" of type '" "schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_ActLvlSchedName_optional const &""'"); 
   }
@@ -6244,7 +6246,7 @@ SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_ActLvlSchedNam
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimInternalLoad_People, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimInternalLoad_People_SimInternalLoad_ActLvlSchedName__SWIG_2(self, args);
@@ -6257,7 +6259,7 @@ SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_ActLvlSchedNam
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimInternalLoad_People, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimInternalLoad_People_SimInternalLoad_ActLvlSchedName__SWIG_3(self, args);
@@ -6484,7 +6486,7 @@ SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_EnableASHRAE55
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimInternalLoad_People * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_EnableASHRAE55ComfWarn_optional *) &((schema::simxml::ResourcesGeneral::SimInternalLoad_People const *)arg1)->SimInternalLoad_EnableASHRAE55ComfWarn();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_false_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -6506,7 +6508,7 @@ SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_EnableASHRAE55
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimInternalLoad_People * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_EnableASHRAE55ComfWarn_optional *) &(arg1)->SimInternalLoad_EnableASHRAE55ComfWarn();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_false_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -6530,7 +6532,7 @@ SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_EnableASHRAE55
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimInternalLoad_People_SimInternalLoad_EnableASHRAE55ComfWarn" "', argument " "1"" of type '" "schema::simxml::ResourcesGeneral::SimInternalLoad_People *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimInternalLoad_People * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimInternalLoad_People_SimInternalLoad_EnableASHRAE55ComfWarn" "', argument " "2"" of type '" "schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_EnableASHRAE55ComfWarn_type const &""'"); 
   }
@@ -6563,7 +6565,7 @@ SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_EnableASHRAE55
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimInternalLoad_People_SimInternalLoad_EnableASHRAE55ComfWarn" "', argument " "1"" of type '" "schema::simxml::ResourcesGeneral::SimInternalLoad_People *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimInternalLoad_People * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t__r_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_false_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimInternalLoad_People_SimInternalLoad_EnableASHRAE55ComfWarn" "', argument " "2"" of type '" "schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_EnableASHRAE55ComfWarn_optional const &""'"); 
   }
@@ -6653,7 +6655,7 @@ SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_EnableASHRAE55
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimInternalLoad_People, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimInternalLoad_People_SimInternalLoad_EnableASHRAE55ComfWarn__SWIG_2(self, args);
@@ -6666,7 +6668,7 @@ SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_EnableASHRAE55
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimInternalLoad_People, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t__r_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_false_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimInternalLoad_People_SimInternalLoad_EnableASHRAE55ComfWarn__SWIG_3(self, args);
@@ -6714,7 +6716,7 @@ SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_MeanRadiantTem
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimInternalLoad_People * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_MeanRadiantTempCalcType_optional *) &((schema::simxml::ResourcesGeneral::SimInternalLoad_People const *)arg1)->SimInternalLoad_MeanRadiantTempCalcType();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_false_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -6736,7 +6738,7 @@ SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_MeanRadiantTem
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimInternalLoad_People * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_MeanRadiantTempCalcType_optional *) &(arg1)->SimInternalLoad_MeanRadiantTempCalcType();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_false_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -6760,7 +6762,7 @@ SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_MeanRadiantTem
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimInternalLoad_People_SimInternalLoad_MeanRadiantTempCalcType" "', argument " "1"" of type '" "schema::simxml::ResourcesGeneral::SimInternalLoad_People *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimInternalLoad_People * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimInternalLoad_People_SimInternalLoad_MeanRadiantTempCalcType" "', argument " "2"" of type '" "schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_MeanRadiantTempCalcType_type const &""'"); 
   }
@@ -6793,7 +6795,7 @@ SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_MeanRadiantTem
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimInternalLoad_People_SimInternalLoad_MeanRadiantTempCalcType" "', argument " "1"" of type '" "schema::simxml::ResourcesGeneral::SimInternalLoad_People *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimInternalLoad_People * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t__r_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_false_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimInternalLoad_People_SimInternalLoad_MeanRadiantTempCalcType" "', argument " "2"" of type '" "schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_MeanRadiantTempCalcType_optional const &""'"); 
   }
@@ -6883,7 +6885,7 @@ SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_MeanRadiantTem
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimInternalLoad_People, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimInternalLoad_People_SimInternalLoad_MeanRadiantTempCalcType__SWIG_2(self, args);
@@ -6896,7 +6898,7 @@ SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_MeanRadiantTem
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimInternalLoad_People, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t__r_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_false_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimInternalLoad_People_SimInternalLoad_MeanRadiantTempCalcType__SWIG_3(self, args);
@@ -6944,7 +6946,7 @@ SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_SurfName_AngFa
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimInternalLoad_People * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_SurfName_AngFactListName_optional *) &((schema::simxml::ResourcesGeneral::SimInternalLoad_People const *)arg1)->SimInternalLoad_SurfName_AngFactListName();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -6966,7 +6968,7 @@ SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_SurfName_AngFa
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimInternalLoad_People * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_SurfName_AngFactListName_optional *) &(arg1)->SimInternalLoad_SurfName_AngFactListName();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -6990,7 +6992,7 @@ SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_SurfName_AngFa
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimInternalLoad_People_SimInternalLoad_SurfName_AngFactListName" "', argument " "1"" of type '" "schema::simxml::ResourcesGeneral::SimInternalLoad_People *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimInternalLoad_People * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimInternalLoad_People_SimInternalLoad_SurfName_AngFactListName" "', argument " "2"" of type '" "schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_SurfName_AngFactListName_type const &""'"); 
   }
@@ -7023,7 +7025,7 @@ SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_SurfName_AngFa
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimInternalLoad_People_SimInternalLoad_SurfName_AngFactListName" "', argument " "1"" of type '" "schema::simxml::ResourcesGeneral::SimInternalLoad_People *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimInternalLoad_People * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimInternalLoad_People_SimInternalLoad_SurfName_AngFactListName" "', argument " "2"" of type '" "schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_SurfName_AngFactListName_optional const &""'"); 
   }
@@ -7113,7 +7115,7 @@ SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_SurfName_AngFa
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimInternalLoad_People, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimInternalLoad_People_SimInternalLoad_SurfName_AngFactListName__SWIG_2(self, args);
@@ -7126,7 +7128,7 @@ SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_SurfName_AngFa
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimInternalLoad_People, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimInternalLoad_People_SimInternalLoad_SurfName_AngFactListName__SWIG_3(self, args);
@@ -7174,7 +7176,7 @@ SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_WorkEffSchedNa
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimInternalLoad_People * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_WorkEffSchedName_optional *) &((schema::simxml::ResourcesGeneral::SimInternalLoad_People const *)arg1)->SimInternalLoad_WorkEffSchedName();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -7196,7 +7198,7 @@ SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_WorkEffSchedNa
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimInternalLoad_People * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_WorkEffSchedName_optional *) &(arg1)->SimInternalLoad_WorkEffSchedName();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -7220,7 +7222,7 @@ SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_WorkEffSchedNa
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimInternalLoad_People_SimInternalLoad_WorkEffSchedName" "', argument " "1"" of type '" "schema::simxml::ResourcesGeneral::SimInternalLoad_People *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimInternalLoad_People * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimInternalLoad_People_SimInternalLoad_WorkEffSchedName" "', argument " "2"" of type '" "schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_WorkEffSchedName_type const &""'"); 
   }
@@ -7253,7 +7255,7 @@ SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_WorkEffSchedNa
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimInternalLoad_People_SimInternalLoad_WorkEffSchedName" "', argument " "1"" of type '" "schema::simxml::ResourcesGeneral::SimInternalLoad_People *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimInternalLoad_People * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimInternalLoad_People_SimInternalLoad_WorkEffSchedName" "', argument " "2"" of type '" "schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_WorkEffSchedName_optional const &""'"); 
   }
@@ -7343,7 +7345,7 @@ SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_WorkEffSchedNa
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimInternalLoad_People, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimInternalLoad_People_SimInternalLoad_WorkEffSchedName__SWIG_2(self, args);
@@ -7356,7 +7358,7 @@ SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_WorkEffSchedNa
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimInternalLoad_People, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimInternalLoad_People_SimInternalLoad_WorkEffSchedName__SWIG_3(self, args);
@@ -7404,7 +7406,7 @@ SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_ClothingInsula
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimInternalLoad_People * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_ClothingInsulationCalculationMethod_optional *) &((schema::simxml::ResourcesGeneral::SimInternalLoad_People const *)arg1)->SimInternalLoad_ClothingInsulationCalculationMethod();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_false_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -7426,7 +7428,7 @@ SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_ClothingInsula
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimInternalLoad_People * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_ClothingInsulationCalculationMethod_optional *) &(arg1)->SimInternalLoad_ClothingInsulationCalculationMethod();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_false_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -7450,7 +7452,7 @@ SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_ClothingInsula
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimInternalLoad_People_SimInternalLoad_ClothingInsulationCalculationMethod" "', argument " "1"" of type '" "schema::simxml::ResourcesGeneral::SimInternalLoad_People *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimInternalLoad_People * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimInternalLoad_People_SimInternalLoad_ClothingInsulationCalculationMethod" "', argument " "2"" of type '" "schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_ClothingInsulationCalculationMethod_type const &""'"); 
   }
@@ -7483,7 +7485,7 @@ SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_ClothingInsula
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimInternalLoad_People_SimInternalLoad_ClothingInsulationCalculationMethod" "', argument " "1"" of type '" "schema::simxml::ResourcesGeneral::SimInternalLoad_People *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimInternalLoad_People * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t__r_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_false_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimInternalLoad_People_SimInternalLoad_ClothingInsulationCalculationMethod" "', argument " "2"" of type '" "schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_ClothingInsulationCalculationMethod_optional const &""'"); 
   }
@@ -7573,7 +7575,7 @@ SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_ClothingInsula
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimInternalLoad_People, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimInternalLoad_People_SimInternalLoad_ClothingInsulationCalculationMethod__SWIG_2(self, args);
@@ -7586,7 +7588,7 @@ SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_ClothingInsula
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimInternalLoad_People, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t__r_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_false_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimInternalLoad_People_SimInternalLoad_ClothingInsulationCalculationMethod__SWIG_3(self, args);
@@ -7634,7 +7636,7 @@ SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_ClothingInsula
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimInternalLoad_People * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_ClothingInsulationCalculationMethodSchedName_optional *) &((schema::simxml::ResourcesGeneral::SimInternalLoad_People const *)arg1)->SimInternalLoad_ClothingInsulationCalculationMethodSchedName();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -7656,7 +7658,7 @@ SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_ClothingInsula
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimInternalLoad_People * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_ClothingInsulationCalculationMethodSchedName_optional *) &(arg1)->SimInternalLoad_ClothingInsulationCalculationMethodSchedName();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -7680,7 +7682,7 @@ SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_ClothingInsula
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimInternalLoad_People_SimInternalLoad_ClothingInsulationCalculationMethodSchedName" "', argument " "1"" of type '" "schema::simxml::ResourcesGeneral::SimInternalLoad_People *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimInternalLoad_People * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimInternalLoad_People_SimInternalLoad_ClothingInsulationCalculationMethodSchedName" "', argument " "2"" of type '" "schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_ClothingInsulationCalculationMethodSchedName_type const &""'"); 
   }
@@ -7713,7 +7715,7 @@ SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_ClothingInsula
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimInternalLoad_People_SimInternalLoad_ClothingInsulationCalculationMethodSchedName" "', argument " "1"" of type '" "schema::simxml::ResourcesGeneral::SimInternalLoad_People *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimInternalLoad_People * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimInternalLoad_People_SimInternalLoad_ClothingInsulationCalculationMethodSchedName" "', argument " "2"" of type '" "schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_ClothingInsulationCalculationMethodSchedName_optional const &""'"); 
   }
@@ -7803,7 +7805,7 @@ SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_ClothingInsula
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimInternalLoad_People, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimInternalLoad_People_SimInternalLoad_ClothingInsulationCalculationMethodSchedName__SWIG_2(self, args);
@@ -7816,7 +7818,7 @@ SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_ClothingInsula
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimInternalLoad_People, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimInternalLoad_People_SimInternalLoad_ClothingInsulationCalculationMethodSchedName__SWIG_3(self, args);
@@ -7864,7 +7866,7 @@ SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_ClothingInsulS
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimInternalLoad_People * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_ClothingInsulSchedName_optional *) &((schema::simxml::ResourcesGeneral::SimInternalLoad_People const *)arg1)->SimInternalLoad_ClothingInsulSchedName();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -7886,7 +7888,7 @@ SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_ClothingInsulS
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimInternalLoad_People * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_ClothingInsulSchedName_optional *) &(arg1)->SimInternalLoad_ClothingInsulSchedName();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -7910,7 +7912,7 @@ SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_ClothingInsulS
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimInternalLoad_People_SimInternalLoad_ClothingInsulSchedName" "', argument " "1"" of type '" "schema::simxml::ResourcesGeneral::SimInternalLoad_People *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimInternalLoad_People * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimInternalLoad_People_SimInternalLoad_ClothingInsulSchedName" "', argument " "2"" of type '" "schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_ClothingInsulSchedName_type const &""'"); 
   }
@@ -7943,7 +7945,7 @@ SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_ClothingInsulS
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimInternalLoad_People_SimInternalLoad_ClothingInsulSchedName" "', argument " "1"" of type '" "schema::simxml::ResourcesGeneral::SimInternalLoad_People *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimInternalLoad_People * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimInternalLoad_People_SimInternalLoad_ClothingInsulSchedName" "', argument " "2"" of type '" "schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_ClothingInsulSchedName_optional const &""'"); 
   }
@@ -8033,7 +8035,7 @@ SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_ClothingInsulS
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimInternalLoad_People, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimInternalLoad_People_SimInternalLoad_ClothingInsulSchedName__SWIG_2(self, args);
@@ -8046,7 +8048,7 @@ SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_ClothingInsulS
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimInternalLoad_People, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimInternalLoad_People_SimInternalLoad_ClothingInsulSchedName__SWIG_3(self, args);
@@ -8094,7 +8096,7 @@ SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_AirVelSchedNam
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimInternalLoad_People * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_AirVelSchedName_optional *) &((schema::simxml::ResourcesGeneral::SimInternalLoad_People const *)arg1)->SimInternalLoad_AirVelSchedName();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -8116,7 +8118,7 @@ SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_AirVelSchedNam
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimInternalLoad_People * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_AirVelSchedName_optional *) &(arg1)->SimInternalLoad_AirVelSchedName();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -8140,7 +8142,7 @@ SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_AirVelSchedNam
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimInternalLoad_People_SimInternalLoad_AirVelSchedName" "', argument " "1"" of type '" "schema::simxml::ResourcesGeneral::SimInternalLoad_People *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimInternalLoad_People * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimInternalLoad_People_SimInternalLoad_AirVelSchedName" "', argument " "2"" of type '" "schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_AirVelSchedName_type const &""'"); 
   }
@@ -8173,7 +8175,7 @@ SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_AirVelSchedNam
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimInternalLoad_People_SimInternalLoad_AirVelSchedName" "', argument " "1"" of type '" "schema::simxml::ResourcesGeneral::SimInternalLoad_People *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimInternalLoad_People * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimInternalLoad_People_SimInternalLoad_AirVelSchedName" "', argument " "2"" of type '" "schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_AirVelSchedName_optional const &""'"); 
   }
@@ -8263,7 +8265,7 @@ SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_AirVelSchedNam
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimInternalLoad_People, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimInternalLoad_People_SimInternalLoad_AirVelSchedName__SWIG_2(self, args);
@@ -8276,7 +8278,7 @@ SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_AirVelSchedNam
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimInternalLoad_People, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimInternalLoad_People_SimInternalLoad_AirVelSchedName__SWIG_3(self, args);
@@ -8422,7 +8424,7 @@ fail:
 SWIGINTERN PyObject *_wrap_SimInternalLoad_People_SimInternalLoad_ThermalComfortModel_1_5_Type__SWIG_4(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::ResourcesGeneral::SimInternalLoad_People *arg1 = (schema::simxml::ResourcesGeneral::SimInternalLoad_People *) 0 ;
-  SwigValueWrapper< std::auto_ptr< ::schema::simxml::ResourcesGeneral::SimInternalLoad_ThermalComfortModel_1_5_Type > > arg2 ;
+  ::std::auto_ptr< schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_ThermalComfortModel_1_5_Type_type > arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 ;
@@ -8561,7 +8563,7 @@ SWIGINTERN PyObject *_wrap_new_SimInternalLoad_People__SWIG_1(PyObject *SWIGUNUS
   schema::simxml::ResourcesGeneral::SimInternalLoad_People *result = 0 ;
   
   if (!PyArg_ParseTuple(args,(char *)"O:new_SimInternalLoad_People",&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1, SWIGTYPE_p_xsd__cxx__tree__idT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t,  0  | 0);
+  res1 = SWIG_ConvertPtr(obj0, &argp1, SWIGTYPE_p_xsd__cxx__tree__idT_char_xsd__cxx__tree__ncname_t,  0  | 0);
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "new_SimInternalLoad_People" "', argument " "1"" of type '" "schema::simxml::SimModelCore::SimRoot::RefId_type const &""'"); 
   }
@@ -8830,7 +8832,7 @@ SWIGINTERN PyObject *_wrap_new_SimInternalLoad_People(PyObject *self, PyObject *
   }
   if (argc == 1) {
     int _v;
-    int res = SWIG_ConvertPtr(argv[0], 0, SWIGTYPE_p_xsd__cxx__tree__idT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t, 0);
+    int res = SWIG_ConvertPtr(argv[0], 0, SWIGTYPE_p_xsd__cxx__tree__idT_char_xsd__cxx__tree__ncname_t, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
       return _wrap_new_SimInternalLoad_People__SWIG_1(self, args);
@@ -9148,7 +9150,7 @@ SWIGINTERN PyObject *_wrap_new_SimInternalLoad_People_Default__SWIG_1(PyObject *
   schema::simxml::ResourcesGeneral::SimInternalLoad_People_Default *result = 0 ;
   
   if (!PyArg_ParseTuple(args,(char *)"O:new_SimInternalLoad_People_Default",&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1, SWIGTYPE_p_xsd__cxx__tree__idT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t,  0  | 0);
+  res1 = SWIG_ConvertPtr(obj0, &argp1, SWIGTYPE_p_xsd__cxx__tree__idT_char_xsd__cxx__tree__ncname_t,  0  | 0);
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "new_SimInternalLoad_People_Default" "', argument " "1"" of type '" "schema::simxml::SimModelCore::SimRoot::RefId_type const &""'"); 
   }
@@ -9417,7 +9419,7 @@ SWIGINTERN PyObject *_wrap_new_SimInternalLoad_People_Default(PyObject *self, Py
   }
   if (argc == 1) {
     int _v;
-    int res = SWIG_ConvertPtr(argv[0], 0, SWIGTYPE_p_xsd__cxx__tree__idT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t, 0);
+    int res = SWIG_ConvertPtr(argv[0], 0, SWIGTYPE_p_xsd__cxx__tree__idT_char_xsd__cxx__tree__ncname_t, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
       return _wrap_new_SimInternalLoad_People_Default__SWIG_1(self, args);
@@ -12351,8 +12353,10 @@ static swig_type_info _swigt__p_schema__simxml__MepModel__SimFlowEnergyConverter
 static swig_type_info _swigt__p_schema__simxml__SimModelCore__SimObject = {"_p_schema__simxml__SimModelCore__SimObject", 0, 0, 0, 0, 0};
 static swig_type_info _swigt__p_schema__simxml__SimModelCore__SimDistributionControlElement = {"_p_schema__simxml__SimModelCore__SimDistributionControlElement", 0, 0, 0, 0, 0};
 static swig_type_info _swigt__p_schema__simxml__SimModelCore__SimElement = {"_p_schema__simxml__SimModelCore__SimElement", 0, 0, 0, 0, 0};
+static swig_type_info _swigt__p_schema__simxml__SimModelCore__doubleList = {"_p_schema__simxml__SimModelCore__doubleList", "::schema::simxml::SimModelCore::doubleList *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_schema__simxml__SimModelCore__integerList = {"_p_schema__simxml__SimModelCore__integerList", "::schema::simxml::SimModelCore::integerList *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_schema__simxml__SimModelCore__logical = {"_p_schema__simxml__SimModelCore__logical", "::schema::simxml::SimModelCore::logical *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_self_ = {"_p_self_", "self_ *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_short = {"_p_short", "short *|xml_schema::short_ *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_signed_char = {"_p_signed_char", "signed char *|xml_schema::byte *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_size_type = {"_p_size_type", "size_type *", 0, 0, (void*)0, 0};
@@ -12369,7 +12373,7 @@ static swig_type_info _swigt__p_unsigned_short = {"_p_unsigned_short", "unsigned
 static swig_type_info _swigt__p_value_type = {"_p_value_type", "value_type *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xercesc__DOMElement = {"_p_xercesc__DOMElement", "::xercesc::DOMElement *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree___type = {"_p_xsd__cxx__tree___type", "xsd::cxx::tree::_type *|xsd::cxx::tree::type *|xml_schema::type *|xsd::cxx::tree::container *|xml_schema::container *|::xml_schema::container *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_xsd__cxx__tree__base64_binaryT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t = {"_p_xsd__cxx__tree__base64_binaryT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t", "xsd::cxx::tree::base64_binary< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > > *|xml_schema::base64_binary *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_xsd__cxx__tree__base64_binaryT_char_xsd__cxx__tree__simple_type_t = {"_p_xsd__cxx__tree__base64_binaryT_char_xsd__cxx__tree__simple_type_t", "xml_schema::base64_binary *|::xsd::cxx::tree::base64_binary< char,xsd::cxx::tree::simple_type > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__boundsT_char_t = {"_p_xsd__cxx__tree__boundsT_char_t", "::xsd::cxx::tree::bounds< char > *|xml_schema::bounds *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__bufferT_char_t = {"_p_xsd__cxx__tree__bufferT_char_t", "::xsd::cxx::tree::buffer< char > *|xml_schema::buffer *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__content_order = {"_p_xsd__cxx__tree__content_order", "::xsd::cxx::tree::content_order *|xml_schema::content_order *", 0, 0, (void*)0, 0};
@@ -12378,8 +12382,8 @@ static swig_type_info _swigt__p_xsd__cxx__tree__date_timeT_char_xsd__cxx__tree__
 static swig_type_info _swigt__p_xsd__cxx__tree__diagnosticsT_char_t = {"_p_xsd__cxx__tree__diagnosticsT_char_t", "xml_schema::diagnostics *|::xsd::cxx::tree::diagnostics< char > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__duplicate_idT_char_t = {"_p_xsd__cxx__tree__duplicate_idT_char_t", "::xsd::cxx::tree::duplicate_id< char > *|xml_schema::duplicate_id *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__durationT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t = {"_p_xsd__cxx__tree__durationT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t", "xsd::cxx::tree::duration< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > > *|xml_schema::duration *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_xsd__cxx__tree__entitiesT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__entityT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t_t = {"_p_xsd__cxx__tree__entitiesT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__entityT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t_t", "xsd::cxx::tree::entities< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type >,xsd::cxx::tree::entity< char,xsd::cxx::tree::ncname< char,xsd::cxx::tree::name< char,xsd::cxx::tree::token< char,xsd::cxx::tree::normalized_string< char,xsd::cxx::tree::string< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > > > > > > > > *|xml_schema::entities *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_xsd__cxx__tree__entityT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t = {"_p_xsd__cxx__tree__entityT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t", "xsd::cxx::tree::entity< char,xsd::cxx::tree::ncname< char,xsd::cxx::tree::name< char,xsd::cxx::tree::token< char,xsd::cxx::tree::normalized_string< char,xsd::cxx::tree::string< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > > > > > > > *|xml_schema::entity *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_xsd__cxx__tree__entitiesT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__entity_t = {"_p_xsd__cxx__tree__entitiesT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__entity_t", "xml_schema::entities *|::xsd::cxx::tree::entities< char,xsd::cxx::tree::simple_type,xsd::cxx::tree::entity > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_xsd__cxx__tree__entityT_char_xsd__cxx__tree__ncname_t = {"_p_xsd__cxx__tree__entityT_char_xsd__cxx__tree__ncname_t", "xml_schema::entity *|::xsd::cxx::tree::entity< char,xsd::cxx::tree::ncname > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__errorT_char_t = {"_p_xsd__cxx__tree__errorT_char_t", "xml_schema::error *|::xsd::cxx::tree::error< char > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__exceptionT_char_t = {"_p_xsd__cxx__tree__exceptionT_char_t", "::xsd::cxx::tree::exception< char > *|xml_schema::exception *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__expected_attributeT_char_t = {"_p_xsd__cxx__tree__expected_attributeT_char_t", "::xsd::cxx::tree::expected_attribute< char > *|xml_schema::expected_attribute *", 0, 0, (void*)0, 0};
@@ -12391,38 +12395,38 @@ static swig_type_info _swigt__p_xsd__cxx__tree__gmonthT_char_xsd__cxx__tree__sim
 static swig_type_info _swigt__p_xsd__cxx__tree__gmonth_dayT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t = {"_p_xsd__cxx__tree__gmonth_dayT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t", "xsd::cxx::tree::gmonth_day< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > > *|xml_schema::gmonth_day *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__gyearT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t = {"_p_xsd__cxx__tree__gyearT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t", "xsd::cxx::tree::gyear< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > > *|xml_schema::gyear *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__gyear_monthT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t = {"_p_xsd__cxx__tree__gyear_monthT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t", "xsd::cxx::tree::gyear_month< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > > *|xml_schema::gyear_month *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_xsd__cxx__tree__hex_binaryT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t = {"_p_xsd__cxx__tree__hex_binaryT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t", "xsd::cxx::tree::hex_binary< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > > *|xml_schema::hex_binary *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_xsd__cxx__tree__idT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t = {"_p_xsd__cxx__tree__idT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t", "::xml_schema::id *|xml_schema::id *|xsd::cxx::tree::id< char,xsd::cxx::tree::ncname< char,xsd::cxx::tree::name< char,xsd::cxx::tree::token< char,xsd::cxx::tree::normalized_string< char,xsd::cxx::tree::string< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > > > > > > > *|schema::simxml::SimModelCore::SimRoot::RefId_type *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t = {"_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t", "schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_ClothingInsulationCalculationMethodSchedName_type *|schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_WorkEffSchedName_type *|schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_SurfName_AngFactListName_type *|schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_ActLvlSchedName_type *|schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_NumbPeopleSchedName_type *|schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_ZoneOrZoneListName_type *|schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_ClothingInsulSchedName_type *|schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_AirVelSchedName_type *|xml_schema::idref *|::xml_schema::idref *|xsd::cxx::tree::idref< char,xsd::cxx::tree::ncname< char,xsd::cxx::tree::name< char,xsd::cxx::tree::token< char,xsd::cxx::tree::normalized_string< char,xsd::cxx::tree::string< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > > > > > >,xsd::cxx::tree::_type > *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t = {"_p_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t", "::xml_schema::idrefs *|xml_schema::idrefs *|xsd::cxx::tree::idrefs< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type >,xsd::cxx::tree::idref< char,xsd::cxx::tree::ncname< char,xsd::cxx::tree::name< char,xsd::cxx::tree::token< char,xsd::cxx::tree::normalized_string< char,xsd::cxx::tree::string< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > > > > > >,xsd::cxx::tree::_type > > *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_xsd__cxx__tree__languageT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t = {"_p_xsd__cxx__tree__languageT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t", "xml_schema::language *|xsd::cxx::tree::language< char,xsd::cxx::tree::token< char,xsd::cxx::tree::normalized_string< char,xsd::cxx::tree::string< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > > > > > *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t = {"_p_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t", "xsd::cxx::tree::name< char,xsd::cxx::tree::token< char,xsd::cxx::tree::normalized_string< char,xsd::cxx::tree::string< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > > > > > *|xml_schema::name *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t = {"_p_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t", "xml_schema::ncname *|xsd::cxx::tree::ncname< char,xsd::cxx::tree::name< char,xsd::cxx::tree::token< char,xsd::cxx::tree::normalized_string< char,xsd::cxx::tree::string< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > > > > > > *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_xsd__cxx__tree__nmtokenT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t = {"_p_xsd__cxx__tree__nmtokenT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t", "xsd::cxx::tree::nmtoken< char,xsd::cxx::tree::token< char,xsd::cxx::tree::normalized_string< char,xsd::cxx::tree::string< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > > > > > *|xml_schema::nmtoken *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_xsd__cxx__tree__nmtokensT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__nmtokenT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t = {"_p_xsd__cxx__tree__nmtokensT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__nmtokenT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t", "xsd::cxx::tree::nmtokens< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type >,xsd::cxx::tree::nmtoken< char,xsd::cxx::tree::token< char,xsd::cxx::tree::normalized_string< char,xsd::cxx::tree::string< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > > > > > > *|xml_schema::nmtokens *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_xsd__cxx__tree__hex_binaryT_char_xsd__cxx__tree__simple_type_t = {"_p_xsd__cxx__tree__hex_binaryT_char_xsd__cxx__tree__simple_type_t", "::xsd::cxx::tree::hex_binary< char,xsd::cxx::tree::simple_type > *|xml_schema::hex_binary *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_xsd__cxx__tree__idT_char_xsd__cxx__tree__ncname_t = {"_p_xsd__cxx__tree__idT_char_xsd__cxx__tree__ncname_t", "::xsd::cxx::tree::id< char,xsd::cxx::tree::ncname > *|::xml_schema::id *|xml_schema::id *|schema::simxml::SimModelCore::SimRoot::RefId_type *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t = {"_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t", "schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_ClothingInsulationCalculationMethodSchedName_type *|schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_WorkEffSchedName_type *|schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_SurfName_AngFactListName_type *|schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_ActLvlSchedName_type *|schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_NumbPeopleSchedName_type *|schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_ZoneOrZoneListName_type *|schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_ClothingInsulSchedName_type *|schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_AirVelSchedName_type *|xml_schema::idref *|::xml_schema::idref *|xsd::cxx::tree::idref< char,xsd::cxx::tree::ncname,xsd::cxx::tree::_type > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t = {"_p_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t", "::xsd::cxx::tree::idrefs< char,xsd::cxx::tree::simple_type,xsd::cxx::tree::idref > *|::xml_schema::idrefs *|xml_schema::idrefs *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_xsd__cxx__tree__languageT_char_xsd__cxx__tree__token_t = {"_p_xsd__cxx__tree__languageT_char_xsd__cxx__tree__token_t", "xml_schema::language *|::xsd::cxx::tree::language< char,xsd::cxx::tree::token > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_xsd__cxx__tree__nameT_char_xsd__cxx__tree__token_t = {"_p_xsd__cxx__tree__nameT_char_xsd__cxx__tree__token_t", "xml_schema::name *|::xsd::cxx::tree::name< char,xsd::cxx::tree::token > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__name_t = {"_p_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__name_t", "xml_schema::ncname *|::xsd::cxx::tree::ncname< char,xsd::cxx::tree::name > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_xsd__cxx__tree__nmtokenT_char_xsd__cxx__tree__token_t = {"_p_xsd__cxx__tree__nmtokenT_char_xsd__cxx__tree__token_t", "::xsd::cxx::tree::nmtoken< char,xsd::cxx::tree::token > *|xml_schema::nmtoken *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_xsd__cxx__tree__nmtokensT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__nmtoken_t = {"_p_xsd__cxx__tree__nmtokensT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__nmtoken_t", "::xsd::cxx::tree::nmtokens< char,xsd::cxx::tree::simple_type,xsd::cxx::tree::nmtoken > *|xml_schema::nmtokens *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__no_prefix_mappingT_char_t = {"_p_xsd__cxx__tree__no_prefix_mappingT_char_t", "::xsd::cxx::tree::no_prefix_mapping< char > *|xml_schema::no_prefix_mapping *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__no_type_infoT_char_t = {"_p_xsd__cxx__tree__no_type_infoT_char_t", "xml_schema::no_type_info *|::xsd::cxx::tree::no_type_info< char > *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t = {"_p_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t", "xsd::cxx::tree::normalized_string< char,xsd::cxx::tree::string< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > > > *|xml_schema::normalized_string *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__string_t = {"_p_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__string_t", "::xsd::cxx::tree::normalized_string< char,xsd::cxx::tree::string > *|xml_schema::normalized_string *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__not_derivedT_char_t = {"_p_xsd__cxx__tree__not_derivedT_char_t", "::xsd::cxx::tree::not_derived< char > *|xml_schema::not_derived *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_xsd__cxx__tree__optionalT_double_true_t = {"_p_xsd__cxx__tree__optionalT_double_true_t", "schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_FracRadiant_optional *|schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_ZoneFlrAreaPerPerson_optional *|schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_PeoplePerZoneFlrArea_optional *|schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_NumbPeople_optional *|schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_SensibleHeatFrac_optional *|schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_CO2GenerationRate_optional *|xsd::cxx::tree::optional< double,true > *|xsd::cxx::tree::optional< double,xsd::cxx::tree::fundamental_p< double >::r > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_xsd__cxx__tree__optionalT_double_true_t = {"_p_xsd__cxx__tree__optionalT_double_true_t", "schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_FracRadiant_optional *|schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_ZoneFlrAreaPerPerson_optional *|schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_PeoplePerZoneFlrArea_optional *|schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_NumbPeople_optional *|schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_SensibleHeatFrac_optional *|schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_CO2GenerationRate_optional *|xsd::cxx::tree::optional< double,true > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__optionalT_schema__simxml__ResourcesGeneral__SimInternalLoad_ThermalComfortModel_1_5_Type_xsd__cxx__tree__fundamental_pT_schema__simxml__ResourcesGeneral__SimInternalLoad_ThermalComfortModel_1_5_Type_t__r_t = {"_p_xsd__cxx__tree__optionalT_schema__simxml__ResourcesGeneral__SimInternalLoad_ThermalComfortModel_1_5_Type_xsd__cxx__tree__fundamental_pT_schema__simxml__ResourcesGeneral__SimInternalLoad_ThermalComfortModel_1_5_Type_t__r_t", "xsd::cxx::tree::optional< ::schema::simxml::ResourcesGeneral::SimInternalLoad_ThermalComfortModel_1_5_Type,xsd::cxx::tree::fundamental_p< ::schema::simxml::ResourcesGeneral::SimInternalLoad_ThermalComfortModel_1_5_Type >::r > *|schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_ThermalComfortModel_1_5_Type_optional *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t = {"_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t", "xsd::cxx::tree::optional< xsd::cxx::tree::idref< char,xsd::cxx::tree::ncname< char,xsd::cxx::tree::name< char,xsd::cxx::tree::token< char,xsd::cxx::tree::normalized_string< char,xsd::cxx::tree::string< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > > > > > >,xsd::cxx::tree::_type >,xsd::cxx::tree::fundamental_p< xsd::cxx::tree::idref< char,xsd::cxx::tree::ncname< char,xsd::cxx::tree::name< char,xsd::cxx::tree::token< char,xsd::cxx::tree::normalized_string< char,xsd::cxx::tree::string< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > > > > > >,xsd::cxx::tree::_type > >::r > *|schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_SurfName_AngFactListName_optional *|schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_ActLvlSchedName_optional *|schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_NumbPeopleSchedName_optional *|schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_ZoneOrZoneListName_optional *|schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_WorkEffSchedName_optional *|schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_ClothingInsulationCalculationMethodSchedName_optional *|schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_ClothingInsulSchedName_optional *|schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_AirVelSchedName_optional *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t__r_t = {"_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t__r_t", "schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_MeanRadiantTempCalcType_optional *|schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_EnableASHRAE55ComfWarn_optional *|schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_NumbPeopleCalcMeth_optional *|schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_Name_optional *|schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_ClothingInsulationCalculationMethod_optional *|xsd::cxx::tree::optional< xsd::cxx::tree::string< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > >,xsd::cxx::tree::fundamental_p< xsd::cxx::tree::string< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > > >::r > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t = {"_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t", "xsd::cxx::tree::optional< xsd::cxx::tree::idref< char,xsd::cxx::tree::ncname,xsd::cxx::tree::_type >,false > *|schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_SurfName_AngFactListName_optional *|schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_ActLvlSchedName_optional *|schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_NumbPeopleSchedName_optional *|schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_ZoneOrZoneListName_optional *|schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_WorkEffSchedName_optional *|schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_ClothingInsulationCalculationMethodSchedName_optional *|schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_ClothingInsulSchedName_optional *|schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_AirVelSchedName_optional *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_false_t = {"_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_false_t", "schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_MeanRadiantTempCalcType_optional *|schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_EnableASHRAE55ComfWarn_optional *|schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_NumbPeopleCalcMeth_optional *|schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_Name_optional *|schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_ClothingInsulationCalculationMethod_optional *|xsd::cxx::tree::optional< ::xsd::cxx::tree::string< char,xsd::cxx::tree::simple_type >,false > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__parsingT_char_t = {"_p_xsd__cxx__tree__parsingT_char_t", "xml_schema::parsing *|::xsd::cxx::tree::parsing< char > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__propertiesT_char_t = {"_p_xsd__cxx__tree__propertiesT_char_t", "::xsd::cxx::tree::properties< char > *|xml_schema::properties *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_xsd__cxx__tree__qnameT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__uriT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t = {"_p_xsd__cxx__tree__qnameT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__uriT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t", "xml_schema::qname *|xsd::cxx::tree::qname< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type >,xsd::cxx::tree::uri< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > >,xsd::cxx::tree::ncname< char,xsd::cxx::tree::name< char,xsd::cxx::tree::token< char,xsd::cxx::tree::normalized_string< char,xsd::cxx::tree::string< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > > > > > > > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_xsd__cxx__tree__qnameT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__uri_xsd__cxx__tree__ncname_t = {"_p_xsd__cxx__tree__qnameT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__uri_xsd__cxx__tree__ncname_t", "xml_schema::qname *|::xsd::cxx::tree::qname< char,xsd::cxx::tree::simple_type,xsd::cxx::tree::uri,xsd::cxx::tree::ncname > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__sequenceT_schema__simxml__ResourcesGeneral__SimInternalLoad_People_Default_false_t = {"_p_xsd__cxx__tree__sequenceT_schema__simxml__ResourcesGeneral__SimInternalLoad_People_Default_false_t", "xsd::cxx::tree::sequence< ::schema::simxml::ResourcesGeneral::SimInternalLoad_People_Default,false > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__sequence_common = {"_p_xsd__cxx__tree__sequence_common", "xsd::cxx::tree::sequence_common *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__sequenceT_schema__simxml__ResourcesGeneral__SimInternalLoad_Equipment_Electric_false_t = {"_p_xsd__cxx__tree__sequenceT_schema__simxml__ResourcesGeneral__SimInternalLoad_Equipment_Electric_false_t", 0, 0, 0, 0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__severity = {"_p_xsd__cxx__tree__severity", "::xsd::cxx::tree::severity *|xml_schema::severity *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t = {"_p_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t", "xml_schema::simple_type *|xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t = {"_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t", "schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_Name_type *|schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_NumbPeopleCalcMeth_type *|schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_EnableASHRAE55ComfWarn_type *|schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_MeanRadiantTempCalcType_type *|schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_ClothingInsulationCalculationMethod_type *|::xml_schema::string *|xml_schema::string *|xsd::cxx::tree::string< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t = {"_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t", "schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_Name_type *|schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_NumbPeopleCalcMeth_type *|schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_EnableASHRAE55ComfWarn_type *|schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_MeanRadiantTempCalcType_type *|schema::simxml::ResourcesGeneral::SimInternalLoad_People::SimInternalLoad_ClothingInsulationCalculationMethod_type *|::xsd::cxx::tree::string< char,xsd::cxx::tree::simple_type > *|::xml_schema::string *|xml_schema::string *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__timeT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t = {"_p_xsd__cxx__tree__timeT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t", "xsd::cxx::tree::time< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > > *|xml_schema::time *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__time_zone = {"_p_xsd__cxx__tree__time_zone", "::xsd::cxx::tree::time_zone *|xml_schema::time_zone *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t = {"_p_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t", "xml_schema::token *|xsd::cxx::tree::token< char,xsd::cxx::tree::normalized_string< char,xsd::cxx::tree::string< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > > > > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_string_t = {"_p_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_string_t", "::xsd::cxx::tree::token< char,xsd::cxx::tree::normalized_string > *|xml_schema::token *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__unexpected_elementT_char_t = {"_p_xsd__cxx__tree__unexpected_elementT_char_t", "::xsd::cxx::tree::unexpected_element< char > *|xml_schema::unexpected_element *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__unexpected_enumeratorT_char_t = {"_p_xsd__cxx__tree__unexpected_enumeratorT_char_t", "::xsd::cxx::tree::unexpected_enumerator< char > *|xml_schema::unexpected_enumerator *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_xsd__cxx__tree__uriT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t = {"_p_xsd__cxx__tree__uriT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t", "xml_schema::uri *|xsd::cxx::tree::uri< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_xsd__cxx__tree__uriT_char_xsd__cxx__tree__simple_type_t = {"_p_xsd__cxx__tree__uriT_char_xsd__cxx__tree__simple_type_t", "xml_schema::uri *|::xsd::cxx::tree::uri< char,xsd::cxx::tree::simple_type > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__user_data_keys_templateT_0_t = {"_p_xsd__cxx__tree__user_data_keys_templateT_0_t", "xsd::cxx::tree::user_data_keys_template< 0 > *|xsd::cxx::tree::user_data_keys *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__xml__error_handlerT_char_t = {"_p_xsd__cxx__xml__error_handlerT_char_t", "::xsd::cxx::xml::error_handler< char > *|xml_schema::error_handler *", 0, 0, (void*)0, 0};
 
@@ -12770,8 +12774,10 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_schema__simxml__SimModelCore__SimSpatialStructureElement,
   &_swigt__p_schema__simxml__SimModelCore__SimTemplate,
   &_swigt__p_schema__simxml__SimModelCore__SimTopologicalRepresentationItem,
+  &_swigt__p_schema__simxml__SimModelCore__doubleList,
   &_swigt__p_schema__simxml__SimModelCore__integerList,
   &_swigt__p_schema__simxml__SimModelCore__logical,
+  &_swigt__p_self_,
   &_swigt__p_short,
   &_swigt__p_signed_char,
   &_swigt__p_size_type,
@@ -12788,7 +12794,7 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_value_type,
   &_swigt__p_xercesc__DOMElement,
   &_swigt__p_xsd__cxx__tree___type,
-  &_swigt__p_xsd__cxx__tree__base64_binaryT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t,
+  &_swigt__p_xsd__cxx__tree__base64_binaryT_char_xsd__cxx__tree__simple_type_t,
   &_swigt__p_xsd__cxx__tree__boundsT_char_t,
   &_swigt__p_xsd__cxx__tree__bufferT_char_t,
   &_swigt__p_xsd__cxx__tree__content_order,
@@ -12797,8 +12803,8 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_xsd__cxx__tree__diagnosticsT_char_t,
   &_swigt__p_xsd__cxx__tree__duplicate_idT_char_t,
   &_swigt__p_xsd__cxx__tree__durationT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t,
-  &_swigt__p_xsd__cxx__tree__entitiesT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__entityT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t_t,
-  &_swigt__p_xsd__cxx__tree__entityT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t,
+  &_swigt__p_xsd__cxx__tree__entitiesT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__entity_t,
+  &_swigt__p_xsd__cxx__tree__entityT_char_xsd__cxx__tree__ncname_t,
   &_swigt__p_xsd__cxx__tree__errorT_char_t,
   &_swigt__p_xsd__cxx__tree__exceptionT_char_t,
   &_swigt__p_xsd__cxx__tree__expected_attributeT_char_t,
@@ -12810,38 +12816,38 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_xsd__cxx__tree__gmonth_dayT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t,
   &_swigt__p_xsd__cxx__tree__gyearT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t,
   &_swigt__p_xsd__cxx__tree__gyear_monthT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t,
-  &_swigt__p_xsd__cxx__tree__hex_binaryT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t,
-  &_swigt__p_xsd__cxx__tree__idT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t,
-  &_swigt__p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t,
-  &_swigt__p_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t,
-  &_swigt__p_xsd__cxx__tree__languageT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t,
-  &_swigt__p_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t,
-  &_swigt__p_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t,
-  &_swigt__p_xsd__cxx__tree__nmtokenT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t,
-  &_swigt__p_xsd__cxx__tree__nmtokensT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__nmtokenT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t,
+  &_swigt__p_xsd__cxx__tree__hex_binaryT_char_xsd__cxx__tree__simple_type_t,
+  &_swigt__p_xsd__cxx__tree__idT_char_xsd__cxx__tree__ncname_t,
+  &_swigt__p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t,
+  &_swigt__p_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t,
+  &_swigt__p_xsd__cxx__tree__languageT_char_xsd__cxx__tree__token_t,
+  &_swigt__p_xsd__cxx__tree__nameT_char_xsd__cxx__tree__token_t,
+  &_swigt__p_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__name_t,
+  &_swigt__p_xsd__cxx__tree__nmtokenT_char_xsd__cxx__tree__token_t,
+  &_swigt__p_xsd__cxx__tree__nmtokensT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__nmtoken_t,
   &_swigt__p_xsd__cxx__tree__no_prefix_mappingT_char_t,
   &_swigt__p_xsd__cxx__tree__no_type_infoT_char_t,
-  &_swigt__p_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t,
+  &_swigt__p_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__string_t,
   &_swigt__p_xsd__cxx__tree__not_derivedT_char_t,
   &_swigt__p_xsd__cxx__tree__optionalT_double_true_t,
   &_swigt__p_xsd__cxx__tree__optionalT_schema__simxml__ResourcesGeneral__SimInternalLoad_ThermalComfortModel_1_5_Type_xsd__cxx__tree__fundamental_pT_schema__simxml__ResourcesGeneral__SimInternalLoad_ThermalComfortModel_1_5_Type_t__r_t,
-  &_swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t,
-  &_swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t__r_t,
+  &_swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t,
+  &_swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_false_t,
   &_swigt__p_xsd__cxx__tree__parsingT_char_t,
   &_swigt__p_xsd__cxx__tree__propertiesT_char_t,
-  &_swigt__p_xsd__cxx__tree__qnameT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__uriT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t,
+  &_swigt__p_xsd__cxx__tree__qnameT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__uri_xsd__cxx__tree__ncname_t,
   &_swigt__p_xsd__cxx__tree__sequenceT_schema__simxml__ResourcesGeneral__SimInternalLoad_Equipment_Electric_false_t,
   &_swigt__p_xsd__cxx__tree__sequenceT_schema__simxml__ResourcesGeneral__SimInternalLoad_People_Default_false_t,
   &_swigt__p_xsd__cxx__tree__sequence_common,
   &_swigt__p_xsd__cxx__tree__severity,
   &_swigt__p_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t,
-  &_swigt__p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t,
+  &_swigt__p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t,
   &_swigt__p_xsd__cxx__tree__timeT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t,
   &_swigt__p_xsd__cxx__tree__time_zone,
-  &_swigt__p_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t,
+  &_swigt__p_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_string_t,
   &_swigt__p_xsd__cxx__tree__unexpected_elementT_char_t,
   &_swigt__p_xsd__cxx__tree__unexpected_enumeratorT_char_t,
-  &_swigt__p_xsd__cxx__tree__uriT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t,
+  &_swigt__p_xsd__cxx__tree__uriT_char_xsd__cxx__tree__simple_type_t,
   &_swigt__p_xsd__cxx__tree__user_data_keys_templateT_0_t,
   &_swigt__p_xsd__cxx__xml__error_handlerT_char_t,
 };
@@ -13189,8 +13195,10 @@ static swig_cast_info _swigc__p_schema__simxml__SimModelCore__SimObject[] = {{&_
 static swig_cast_info _swigc__p_schema__simxml__SimModelCore__SimDistributionControlElement[] = {{&_swigt__p_schema__simxml__SimModelCore__SimDistributionControlElement, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_schema__simxml__SimModelCore__SimElement[] = {{&_swigt__p_schema__simxml__SimModelCore__SimElement, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_schema__simxml__SimModelCore__SimRoot[] = {  {&_swigt__p_schema__simxml__SimModelCore__SimBldgModelParams, _p_schema__simxml__SimModelCore__SimBldgModelParamsTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeneral__SimArrayParams, _p_schema__simxml__ResourcesGeneral__SimArrayParamsTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimTopologicalRepresentationItem, _p_schema__simxml__SimModelCore__SimTopologicalRepresentationItemTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimBuildingElement, _p_schema__simxml__SimModelCore__SimBuildingElementTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimRoot, 0, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeneral__SimUnitType, _p_schema__simxml__ResourcesGeneral__SimUnitTypeTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimDistributionFlowElement, _p_schema__simxml__SimModelCore__SimDistributionFlowElementTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimObjectTypeDefinition, _p_schema__simxml__SimModelCore__SimObjectTypeDefinitionTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimDistributionElement, _p_schema__simxml__SimModelCore__SimDistributionElementTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimObjectDefinition, _p_schema__simxml__SimModelCore__SimObjectDefinitionTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimGroup, _p_schema__simxml__SimModelCore__SimGroupTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimGeometricRepresentationItem, _p_schema__simxml__SimModelCore__SimGeometricRepresentationItemTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeneral__SimPort, _p_schema__simxml__ResourcesGeneral__SimPortTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimSpatialStructureElement, _p_schema__simxml__SimModelCore__SimSpatialStructureElementTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimRepresentationItem, _p_schema__simxml__SimModelCore__SimRepresentationItemTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimRepresentation, _p_schema__simxml__SimModelCore__SimRepresentationTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimTemplate, _p_schema__simxml__SimModelCore__SimTemplateTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__MepModel__SimFlowEnergyConverter, _p_schema__simxml__MepModel__SimFlowEnergyConverterTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimResourceObject, _p_schema__simxml__SimModelCore__SimResourceObjectTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimObject, _p_schema__simxml__SimModelCore__SimObjectTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimDistributionControlElement, _p_schema__simxml__SimModelCore__SimDistributionControlElementTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimActorDefinition, _p_schema__simxml__SimModelCore__SimActorDefinitionTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeneral__SimNode, _p_schema__simxml__ResourcesGeneral__SimNodeTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimPropertySetDefinition, _p_schema__simxml__SimModelCore__SimPropertySetDefinitionTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeometry__SimProfileDefinition, _p_schema__simxml__ResourcesGeometry__SimProfileDefinitionTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimElement, _p_schema__simxml__SimModelCore__SimElementTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimFeatureElement, _p_schema__simxml__SimModelCore__SimFeatureElementTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeneral__SimInternalLoad, _p_schema__simxml__ResourcesGeneral__SimInternalLoadTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeneral__SimInternalLoad_Equipment, _p_schema__simxml__ResourcesGeneral__SimInternalLoad_EquipmentTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeneral__SimInternalLoad_Equipment_Electric, _p_schema__simxml__ResourcesGeneral__SimInternalLoad_Equipment_ElectricTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeneral__SimInternalLoad_People_Default, _p_schema__simxml__ResourcesGeneral__SimInternalLoad_People_DefaultTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeneral__SimInternalLoad_People, _p_schema__simxml__ResourcesGeneral__SimInternalLoad_PeopleTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimAppDefault, _p_schema__simxml__SimModelCore__SimAppDefaultTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimObjectPlacement, _p_schema__simxml__SimModelCore__SimObjectPlacementTo_p_schema__simxml__SimModelCore__SimRoot, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_schema__simxml__SimModelCore__doubleList[] = {  {&_swigt__p_schema__simxml__SimModelCore__doubleList, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_schema__simxml__SimModelCore__integerList[] = {  {&_swigt__p_schema__simxml__SimModelCore__integerList, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_schema__simxml__SimModelCore__logical[] = {  {&_swigt__p_schema__simxml__SimModelCore__logical, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_self_[] = {  {&_swigt__p_self_, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_short[] = {  {&_swigt__p_short, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_signed_char[] = {  {&_swigt__p_signed_char, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_size_type[] = {  {&_swigt__p_size_type, 0, 0, 0},{0, 0, 0, 0}};
@@ -13207,7 +13215,7 @@ static swig_cast_info _swigc__p_unsigned_short[] = {  {&_swigt__p_unsigned_short
 static swig_cast_info _swigc__p_value_type[] = {  {&_swigt__p_value_type, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xercesc__DOMElement[] = {  {&_swigt__p_xercesc__DOMElement, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree___type[] = {  {&_swigt__p_schema__simxml__SimModelCore__SimBldgModelParams, _p_schema__simxml__SimModelCore__SimBldgModelParamsTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeneral__SimArrayParams, _p_schema__simxml__ResourcesGeneral__SimArrayParamsTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimTopologicalRepresentationItem, _p_schema__simxml__SimModelCore__SimTopologicalRepresentationItemTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimBuildingElement, _p_schema__simxml__SimModelCore__SimBuildingElementTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimRoot, _p_schema__simxml__SimModelCore__SimRootTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeneral__SimUnitType, _p_schema__simxml__ResourcesGeneral__SimUnitTypeTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimDistributionFlowElement, _p_schema__simxml__SimModelCore__SimDistributionFlowElementTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimObjectTypeDefinition, _p_schema__simxml__SimModelCore__SimObjectTypeDefinitionTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimDistributionElement, _p_schema__simxml__SimModelCore__SimDistributionElementTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimObjectDefinition, _p_schema__simxml__SimModelCore__SimObjectDefinitionTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimGroup, _p_schema__simxml__SimModelCore__SimGroupTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimGeometricRepresentationItem, _p_schema__simxml__SimModelCore__SimGeometricRepresentationItemTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeneral__SimPort, _p_schema__simxml__ResourcesGeneral__SimPortTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimSpatialStructureElement, _p_schema__simxml__SimModelCore__SimSpatialStructureElementTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimRepresentationItem, _p_schema__simxml__SimModelCore__SimRepresentationItemTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimRepresentation, _p_schema__simxml__SimModelCore__SimRepresentationTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_xsd__cxx__tree___type, 0, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimTemplate, _p_schema__simxml__SimModelCore__SimTemplateTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__MepModel__SimFlowEnergyConverter, _p_schema__simxml__MepModel__SimFlowEnergyConverterTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimResourceObject, _p_schema__simxml__SimModelCore__SimResourceObjectTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimObject, _p_schema__simxml__SimModelCore__SimObjectTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimDistributionControlElement, _p_schema__simxml__SimModelCore__SimDistributionControlElementTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimActorDefinition, _p_schema__simxml__SimModelCore__SimActorDefinitionTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeneral__SimNode, _p_schema__simxml__ResourcesGeneral__SimNodeTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimPropertySetDefinition, _p_schema__simxml__SimModelCore__SimPropertySetDefinitionTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeometry__SimProfileDefinition, _p_schema__simxml__ResourcesGeometry__SimProfileDefinitionTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimFeatureElement, _p_schema__simxml__SimModelCore__SimFeatureElementTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeneral__SimInternalLoad, _p_schema__simxml__ResourcesGeneral__SimInternalLoadTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeneral__SimInternalLoad_Equipment, _p_schema__simxml__ResourcesGeneral__SimInternalLoad_EquipmentTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeneral__SimInternalLoad_Equipment_Electric, _p_schema__simxml__ResourcesGeneral__SimInternalLoad_Equipment_ElectricTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeneral__SimInternalLoad_People_Default, _p_schema__simxml__ResourcesGeneral__SimInternalLoad_People_DefaultTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeneral__SimInternalLoad_People, _p_schema__simxml__ResourcesGeneral__SimInternalLoad_PeopleTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimElement, _p_schema__simxml__SimModelCore__SimElementTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimAppDefault, _p_schema__simxml__SimModelCore__SimAppDefaultTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimObjectPlacement, _p_schema__simxml__SimModelCore__SimObjectPlacementTo_p_xsd__cxx__tree___type, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_xsd__cxx__tree__base64_binaryT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t[] = {  {&_swigt__p_xsd__cxx__tree__base64_binaryT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_xsd__cxx__tree__base64_binaryT_char_xsd__cxx__tree__simple_type_t[] = {  {&_swigt__p_xsd__cxx__tree__base64_binaryT_char_xsd__cxx__tree__simple_type_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__boundsT_char_t[] = {  {&_swigt__p_xsd__cxx__tree__boundsT_char_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__bufferT_char_t[] = {  {&_swigt__p_xsd__cxx__tree__bufferT_char_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__content_order[] = {  {&_swigt__p_xsd__cxx__tree__content_order, 0, 0, 0},{0, 0, 0, 0}};
@@ -13216,8 +13224,8 @@ static swig_cast_info _swigc__p_xsd__cxx__tree__date_timeT_char_xsd__cxx__tree__
 static swig_cast_info _swigc__p_xsd__cxx__tree__diagnosticsT_char_t[] = {  {&_swigt__p_xsd__cxx__tree__diagnosticsT_char_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__duplicate_idT_char_t[] = {  {&_swigt__p_xsd__cxx__tree__duplicate_idT_char_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__durationT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t[] = {  {&_swigt__p_xsd__cxx__tree__durationT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_xsd__cxx__tree__entitiesT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__entityT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t_t[] = {  {&_swigt__p_xsd__cxx__tree__entitiesT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__entityT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_xsd__cxx__tree__entityT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t[] = {  {&_swigt__p_xsd__cxx__tree__entityT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_xsd__cxx__tree__entitiesT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__entity_t[] = {  {&_swigt__p_xsd__cxx__tree__entitiesT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__entity_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_xsd__cxx__tree__entityT_char_xsd__cxx__tree__ncname_t[] = {  {&_swigt__p_xsd__cxx__tree__entityT_char_xsd__cxx__tree__ncname_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__errorT_char_t[] = {  {&_swigt__p_xsd__cxx__tree__errorT_char_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__exceptionT_char_t[] = {  {&_swigt__p_xsd__cxx__tree__exceptionT_char_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__expected_attributeT_char_t[] = {  {&_swigt__p_xsd__cxx__tree__expected_attributeT_char_t, 0, 0, 0},{0, 0, 0, 0}};
@@ -13229,38 +13237,38 @@ static swig_cast_info _swigc__p_xsd__cxx__tree__gmonthT_char_xsd__cxx__tree__sim
 static swig_cast_info _swigc__p_xsd__cxx__tree__gmonth_dayT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t[] = {  {&_swigt__p_xsd__cxx__tree__gmonth_dayT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__gyearT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t[] = {  {&_swigt__p_xsd__cxx__tree__gyearT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__gyear_monthT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t[] = {  {&_swigt__p_xsd__cxx__tree__gyear_monthT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_xsd__cxx__tree__hex_binaryT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t[] = {  {&_swigt__p_xsd__cxx__tree__hex_binaryT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_xsd__cxx__tree__idT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t[] = {  {&_swigt__p_xsd__cxx__tree__idT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t[] = {  {&_swigt__p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t[] = {  {&_swigt__p_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_xsd__cxx__tree__languageT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t[] = {  {&_swigt__p_xsd__cxx__tree__languageT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t[] = {  {&_swigt__p_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t[] = {  {&_swigt__p_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_xsd__cxx__tree__nmtokenT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t[] = {  {&_swigt__p_xsd__cxx__tree__nmtokenT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_xsd__cxx__tree__nmtokensT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__nmtokenT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t[] = {  {&_swigt__p_xsd__cxx__tree__nmtokensT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__nmtokenT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_xsd__cxx__tree__hex_binaryT_char_xsd__cxx__tree__simple_type_t[] = {  {&_swigt__p_xsd__cxx__tree__hex_binaryT_char_xsd__cxx__tree__simple_type_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_xsd__cxx__tree__idT_char_xsd__cxx__tree__ncname_t[] = {  {&_swigt__p_xsd__cxx__tree__idT_char_xsd__cxx__tree__ncname_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t[] = {  {&_swigt__p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t[] = {  {&_swigt__p_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_xsd__cxx__tree__languageT_char_xsd__cxx__tree__token_t[] = {  {&_swigt__p_xsd__cxx__tree__languageT_char_xsd__cxx__tree__token_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_xsd__cxx__tree__nameT_char_xsd__cxx__tree__token_t[] = {  {&_swigt__p_xsd__cxx__tree__nameT_char_xsd__cxx__tree__token_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__name_t[] = {  {&_swigt__p_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__name_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_xsd__cxx__tree__nmtokenT_char_xsd__cxx__tree__token_t[] = {  {&_swigt__p_xsd__cxx__tree__nmtokenT_char_xsd__cxx__tree__token_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_xsd__cxx__tree__nmtokensT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__nmtoken_t[] = {  {&_swigt__p_xsd__cxx__tree__nmtokensT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__nmtoken_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__no_prefix_mappingT_char_t[] = {  {&_swigt__p_xsd__cxx__tree__no_prefix_mappingT_char_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__no_type_infoT_char_t[] = {  {&_swigt__p_xsd__cxx__tree__no_type_infoT_char_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t[] = {  {&_swigt__p_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__string_t[] = {  {&_swigt__p_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__string_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__not_derivedT_char_t[] = {  {&_swigt__p_xsd__cxx__tree__not_derivedT_char_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__optionalT_double_true_t[] = {  {&_swigt__p_xsd__cxx__tree__optionalT_double_true_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__optionalT_schema__simxml__ResourcesGeneral__SimInternalLoad_ThermalComfortModel_1_5_Type_xsd__cxx__tree__fundamental_pT_schema__simxml__ResourcesGeneral__SimInternalLoad_ThermalComfortModel_1_5_Type_t__r_t[] = {  {&_swigt__p_xsd__cxx__tree__optionalT_schema__simxml__ResourcesGeneral__SimInternalLoad_ThermalComfortModel_1_5_Type_xsd__cxx__tree__fundamental_pT_schema__simxml__ResourcesGeneral__SimInternalLoad_ThermalComfortModel_1_5_Type_t__r_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t[] = {  {&_swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t__r_t[] = {  {&_swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t__r_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t[] = {  {&_swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_false_t[] = {  {&_swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_false_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__parsingT_char_t[] = {  {&_swigt__p_xsd__cxx__tree__parsingT_char_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__propertiesT_char_t[] = {  {&_swigt__p_xsd__cxx__tree__propertiesT_char_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_xsd__cxx__tree__qnameT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__uriT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t[] = {  {&_swigt__p_xsd__cxx__tree__qnameT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__uriT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_xsd__cxx__tree__qnameT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__uri_xsd__cxx__tree__ncname_t[] = {  {&_swigt__p_xsd__cxx__tree__qnameT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__uri_xsd__cxx__tree__ncname_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__sequenceT_schema__simxml__ResourcesGeneral__SimInternalLoad_People_Default_false_t[] = {  {&_swigt__p_xsd__cxx__tree__sequenceT_schema__simxml__ResourcesGeneral__SimInternalLoad_People_Default_false_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__sequenceT_schema__simxml__ResourcesGeneral__SimInternalLoad_Equipment_Electric_false_t[] = {{&_swigt__p_xsd__cxx__tree__sequenceT_schema__simxml__ResourcesGeneral__SimInternalLoad_Equipment_Electric_false_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__sequence_common[] = {  {&_swigt__p_xsd__cxx__tree__sequenceT_schema__simxml__ResourcesGeneral__SimInternalLoad_Equipment_Electric_false_t, _p_xsd__cxx__tree__sequenceT_schema__simxml__ResourcesGeneral__SimInternalLoad_Equipment_Electric_false_tTo_p_xsd__cxx__tree__sequence_common, 0, 0},  {&_swigt__p_xsd__cxx__tree__sequenceT_schema__simxml__ResourcesGeneral__SimInternalLoad_People_Default_false_t, _p_xsd__cxx__tree__sequenceT_schema__simxml__ResourcesGeneral__SimInternalLoad_People_Default_false_tTo_p_xsd__cxx__tree__sequence_common, 0, 0},  {&_swigt__p_xsd__cxx__tree__sequence_common, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__severity[] = {  {&_swigt__p_xsd__cxx__tree__severity, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t[] = {  {&_swigt__p_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t[] = {  {&_swigt__p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t[] = {  {&_swigt__p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__timeT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t[] = {  {&_swigt__p_xsd__cxx__tree__timeT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__time_zone[] = {  {&_swigt__p_xsd__cxx__tree__time_zone, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t[] = {  {&_swigt__p_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_string_t[] = {  {&_swigt__p_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_string_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__unexpected_elementT_char_t[] = {  {&_swigt__p_xsd__cxx__tree__unexpected_elementT_char_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__unexpected_enumeratorT_char_t[] = {  {&_swigt__p_xsd__cxx__tree__unexpected_enumeratorT_char_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_xsd__cxx__tree__uriT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t[] = {  {&_swigt__p_xsd__cxx__tree__uriT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_xsd__cxx__tree__uriT_char_xsd__cxx__tree__simple_type_t[] = {  {&_swigt__p_xsd__cxx__tree__uriT_char_xsd__cxx__tree__simple_type_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__user_data_keys_templateT_0_t[] = {  {&_swigt__p_xsd__cxx__tree__user_data_keys_templateT_0_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__xml__error_handlerT_char_t[] = {  {&_swigt__p_xsd__cxx__xml__error_handlerT_char_t, 0, 0, 0},{0, 0, 0, 0}};
 
@@ -13608,8 +13616,10 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_schema__simxml__SimModelCore__SimSpatialStructureElement,
   _swigc__p_schema__simxml__SimModelCore__SimTemplate,
   _swigc__p_schema__simxml__SimModelCore__SimTopologicalRepresentationItem,
+  _swigc__p_schema__simxml__SimModelCore__doubleList,
   _swigc__p_schema__simxml__SimModelCore__integerList,
   _swigc__p_schema__simxml__SimModelCore__logical,
+  _swigc__p_self_,
   _swigc__p_short,
   _swigc__p_signed_char,
   _swigc__p_size_type,
@@ -13626,7 +13636,7 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_value_type,
   _swigc__p_xercesc__DOMElement,
   _swigc__p_xsd__cxx__tree___type,
-  _swigc__p_xsd__cxx__tree__base64_binaryT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t,
+  _swigc__p_xsd__cxx__tree__base64_binaryT_char_xsd__cxx__tree__simple_type_t,
   _swigc__p_xsd__cxx__tree__boundsT_char_t,
   _swigc__p_xsd__cxx__tree__bufferT_char_t,
   _swigc__p_xsd__cxx__tree__content_order,
@@ -13635,8 +13645,8 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_xsd__cxx__tree__diagnosticsT_char_t,
   _swigc__p_xsd__cxx__tree__duplicate_idT_char_t,
   _swigc__p_xsd__cxx__tree__durationT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t,
-  _swigc__p_xsd__cxx__tree__entitiesT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__entityT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t_t,
-  _swigc__p_xsd__cxx__tree__entityT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t,
+  _swigc__p_xsd__cxx__tree__entitiesT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__entity_t,
+  _swigc__p_xsd__cxx__tree__entityT_char_xsd__cxx__tree__ncname_t,
   _swigc__p_xsd__cxx__tree__errorT_char_t,
   _swigc__p_xsd__cxx__tree__exceptionT_char_t,
   _swigc__p_xsd__cxx__tree__expected_attributeT_char_t,
@@ -13648,38 +13658,38 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_xsd__cxx__tree__gmonth_dayT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t,
   _swigc__p_xsd__cxx__tree__gyearT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t,
   _swigc__p_xsd__cxx__tree__gyear_monthT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t,
-  _swigc__p_xsd__cxx__tree__hex_binaryT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t,
-  _swigc__p_xsd__cxx__tree__idT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t,
-  _swigc__p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t,
-  _swigc__p_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t,
-  _swigc__p_xsd__cxx__tree__languageT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t,
-  _swigc__p_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t,
-  _swigc__p_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t,
-  _swigc__p_xsd__cxx__tree__nmtokenT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t,
-  _swigc__p_xsd__cxx__tree__nmtokensT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__nmtokenT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t,
+  _swigc__p_xsd__cxx__tree__hex_binaryT_char_xsd__cxx__tree__simple_type_t,
+  _swigc__p_xsd__cxx__tree__idT_char_xsd__cxx__tree__ncname_t,
+  _swigc__p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t,
+  _swigc__p_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t,
+  _swigc__p_xsd__cxx__tree__languageT_char_xsd__cxx__tree__token_t,
+  _swigc__p_xsd__cxx__tree__nameT_char_xsd__cxx__tree__token_t,
+  _swigc__p_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__name_t,
+  _swigc__p_xsd__cxx__tree__nmtokenT_char_xsd__cxx__tree__token_t,
+  _swigc__p_xsd__cxx__tree__nmtokensT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__nmtoken_t,
   _swigc__p_xsd__cxx__tree__no_prefix_mappingT_char_t,
   _swigc__p_xsd__cxx__tree__no_type_infoT_char_t,
-  _swigc__p_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t,
+  _swigc__p_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__string_t,
   _swigc__p_xsd__cxx__tree__not_derivedT_char_t,
   _swigc__p_xsd__cxx__tree__optionalT_double_true_t,
   _swigc__p_xsd__cxx__tree__optionalT_schema__simxml__ResourcesGeneral__SimInternalLoad_ThermalComfortModel_1_5_Type_xsd__cxx__tree__fundamental_pT_schema__simxml__ResourcesGeneral__SimInternalLoad_ThermalComfortModel_1_5_Type_t__r_t,
-  _swigc__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_xsd__cxx__tree___type_t_t__r_t,
-  _swigc__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t__r_t,
+  _swigc__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t,
+  _swigc__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_false_t,
   _swigc__p_xsd__cxx__tree__parsingT_char_t,
   _swigc__p_xsd__cxx__tree__propertiesT_char_t,
-  _swigc__p_xsd__cxx__tree__qnameT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_xsd__cxx__tree__uriT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__nameT_char_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t_t_t_t,
+  _swigc__p_xsd__cxx__tree__qnameT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__uri_xsd__cxx__tree__ncname_t,
   _swigc__p_xsd__cxx__tree__sequenceT_schema__simxml__ResourcesGeneral__SimInternalLoad_Equipment_Electric_false_t,
   _swigc__p_xsd__cxx__tree__sequenceT_schema__simxml__ResourcesGeneral__SimInternalLoad_People_Default_false_t,
   _swigc__p_xsd__cxx__tree__sequence_common,
   _swigc__p_xsd__cxx__tree__severity,
   _swigc__p_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t,
-  _swigc__p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t,
+  _swigc__p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t,
   _swigc__p_xsd__cxx__tree__timeT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t,
   _swigc__p_xsd__cxx__tree__time_zone,
-  _swigc__p_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t_t_t,
+  _swigc__p_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_string_t,
   _swigc__p_xsd__cxx__tree__unexpected_elementT_char_t,
   _swigc__p_xsd__cxx__tree__unexpected_enumeratorT_char_t,
-  _swigc__p_xsd__cxx__tree__uriT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t,
+  _swigc__p_xsd__cxx__tree__uriT_char_xsd__cxx__tree__simple_type_t,
   _swigc__p_xsd__cxx__tree__user_data_keys_templateT_0_t,
   _swigc__p_xsd__cxx__xml__error_handlerT_char_t,
 };

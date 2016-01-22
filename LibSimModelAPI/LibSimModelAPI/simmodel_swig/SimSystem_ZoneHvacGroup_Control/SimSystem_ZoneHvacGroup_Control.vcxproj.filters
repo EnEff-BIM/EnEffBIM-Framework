@@ -25,6 +25,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="SimSystem_ZoneHvacGroup_Control.i" />
+    <CustomBuild Include="SimSystem_ZoneHvacGroup_Control.i" />
   </ItemGroup>
 </Project>

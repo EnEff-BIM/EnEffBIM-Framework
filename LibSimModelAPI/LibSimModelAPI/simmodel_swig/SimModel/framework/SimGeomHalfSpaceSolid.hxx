@@ -263,7 +263,7 @@ namespace schema
         // BaseSurface
         //
         typedef ::xml_schema::idref BaseSurface_type;
-        typedef ::xsd::cxx::tree::optional< BaseSurface_type > BaseSurface_optional;
+        typedef ::xsd::cxx::tree::optional< BaseSurface_type, false > BaseSurface_optional;
         typedef ::xsd::cxx::tree::traits< BaseSurface_type, char > BaseSurface_traits;
 
         const BaseSurface_optional&

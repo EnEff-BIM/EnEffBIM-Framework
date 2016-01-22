@@ -263,7 +263,7 @@ namespace schema
         // LiningDepth
         //
         typedef ::xml_schema::double_ LiningDepth_type;
-        typedef ::xsd::cxx::tree::optional< LiningDepth_type > LiningDepth_optional;
+        typedef ::xsd::cxx::tree::optional< LiningDepth_type, true > LiningDepth_optional;
         typedef ::xsd::cxx::tree::traits< LiningDepth_type, char, ::xsd::cxx::tree::schema_type::double_ > LiningDepth_traits;
 
         const LiningDepth_optional&
@@ -281,7 +281,7 @@ namespace schema
         // LiningThickness
         //
         typedef ::xml_schema::double_ LiningThickness_type;
-        typedef ::xsd::cxx::tree::optional< LiningThickness_type > LiningThickness_optional;
+        typedef ::xsd::cxx::tree::optional< LiningThickness_type, true > LiningThickness_optional;
         typedef ::xsd::cxx::tree::traits< LiningThickness_type, char, ::xsd::cxx::tree::schema_type::double_ > LiningThickness_traits;
 
         const LiningThickness_optional&
@@ -299,7 +299,7 @@ namespace schema
         // TransomThickness
         //
         typedef ::xml_schema::double_ TransomThickness_type;
-        typedef ::xsd::cxx::tree::optional< TransomThickness_type > TransomThickness_optional;
+        typedef ::xsd::cxx::tree::optional< TransomThickness_type, true > TransomThickness_optional;
         typedef ::xsd::cxx::tree::traits< TransomThickness_type, char, ::xsd::cxx::tree::schema_type::double_ > TransomThickness_traits;
 
         const TransomThickness_optional&
@@ -317,7 +317,7 @@ namespace schema
         // MullionThickness
         //
         typedef ::xml_schema::double_ MullionThickness_type;
-        typedef ::xsd::cxx::tree::optional< MullionThickness_type > MullionThickness_optional;
+        typedef ::xsd::cxx::tree::optional< MullionThickness_type, true > MullionThickness_optional;
         typedef ::xsd::cxx::tree::traits< MullionThickness_type, char, ::xsd::cxx::tree::schema_type::double_ > MullionThickness_traits;
 
         const MullionThickness_optional&
@@ -335,7 +335,7 @@ namespace schema
         // FirstTransomOffset
         //
         typedef ::xml_schema::double_ FirstTransomOffset_type;
-        typedef ::xsd::cxx::tree::optional< FirstTransomOffset_type > FirstTransomOffset_optional;
+        typedef ::xsd::cxx::tree::optional< FirstTransomOffset_type, true > FirstTransomOffset_optional;
         typedef ::xsd::cxx::tree::traits< FirstTransomOffset_type, char, ::xsd::cxx::tree::schema_type::double_ > FirstTransomOffset_traits;
 
         const FirstTransomOffset_optional&
@@ -353,7 +353,7 @@ namespace schema
         // SecondTransomOffset
         //
         typedef ::xml_schema::double_ SecondTransomOffset_type;
-        typedef ::xsd::cxx::tree::optional< SecondTransomOffset_type > SecondTransomOffset_optional;
+        typedef ::xsd::cxx::tree::optional< SecondTransomOffset_type, true > SecondTransomOffset_optional;
         typedef ::xsd::cxx::tree::traits< SecondTransomOffset_type, char, ::xsd::cxx::tree::schema_type::double_ > SecondTransomOffset_traits;
 
         const SecondTransomOffset_optional&
@@ -371,7 +371,7 @@ namespace schema
         // FirstMullionOffset
         //
         typedef ::xml_schema::double_ FirstMullionOffset_type;
-        typedef ::xsd::cxx::tree::optional< FirstMullionOffset_type > FirstMullionOffset_optional;
+        typedef ::xsd::cxx::tree::optional< FirstMullionOffset_type, true > FirstMullionOffset_optional;
         typedef ::xsd::cxx::tree::traits< FirstMullionOffset_type, char, ::xsd::cxx::tree::schema_type::double_ > FirstMullionOffset_traits;
 
         const FirstMullionOffset_optional&
@@ -389,7 +389,7 @@ namespace schema
         // SecondMullionOffset
         //
         typedef ::xml_schema::double_ SecondMullionOffset_type;
-        typedef ::xsd::cxx::tree::optional< SecondMullionOffset_type > SecondMullionOffset_optional;
+        typedef ::xsd::cxx::tree::optional< SecondMullionOffset_type, true > SecondMullionOffset_optional;
         typedef ::xsd::cxx::tree::traits< SecondMullionOffset_type, char, ::xsd::cxx::tree::schema_type::double_ > SecondMullionOffset_traits;
 
         const SecondMullionOffset_optional&
@@ -407,7 +407,7 @@ namespace schema
         // ShapeAspectStyle
         //
         typedef ::xml_schema::idref ShapeAspectStyle_type;
-        typedef ::xsd::cxx::tree::optional< ShapeAspectStyle_type > ShapeAspectStyle_optional;
+        typedef ::xsd::cxx::tree::optional< ShapeAspectStyle_type, false > ShapeAspectStyle_optional;
         typedef ::xsd::cxx::tree::traits< ShapeAspectStyle_type, char > ShapeAspectStyle_traits;
 
         const ShapeAspectStyle_optional&

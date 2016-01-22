@@ -25,6 +25,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="SimAppObjNameDefault_SiteContext_AdjacentSite.i" />
+    <CustomBuild Include="SimAppObjNameDefault_SiteContext_AdjacentSite.i" />
   </ItemGroup>
 </Project>

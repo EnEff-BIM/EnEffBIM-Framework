@@ -263,7 +263,7 @@ namespace schema
         // Source
         //
         typedef ::xml_schema::string Source_type;
-        typedef ::xsd::cxx::tree::optional< Source_type > Source_optional;
+        typedef ::xsd::cxx::tree::optional< Source_type, false > Source_optional;
         typedef ::xsd::cxx::tree::traits< Source_type, char > Source_traits;
 
         const Source_optional&
@@ -284,7 +284,7 @@ namespace schema
         // Edition
         //
         typedef ::xml_schema::string Edition_type;
-        typedef ::xsd::cxx::tree::optional< Edition_type > Edition_optional;
+        typedef ::xsd::cxx::tree::optional< Edition_type, false > Edition_optional;
         typedef ::xsd::cxx::tree::traits< Edition_type, char > Edition_traits;
 
         const Edition_optional&
@@ -305,7 +305,7 @@ namespace schema
         // EditionDate
         //
         typedef ::xml_schema::idref EditionDate_type;
-        typedef ::xsd::cxx::tree::optional< EditionDate_type > EditionDate_optional;
+        typedef ::xsd::cxx::tree::optional< EditionDate_type, false > EditionDate_optional;
         typedef ::xsd::cxx::tree::traits< EditionDate_type, char > EditionDate_traits;
 
         const EditionDate_optional&

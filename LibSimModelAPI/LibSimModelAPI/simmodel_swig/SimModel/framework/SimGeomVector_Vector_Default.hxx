@@ -263,7 +263,7 @@ namespace schema
         // Orientation.Reference
         //
         typedef ::xml_schema::idref Orientation_Reference_type;
-        typedef ::xsd::cxx::tree::optional< Orientation_Reference_type > Orientation_Reference_optional;
+        typedef ::xsd::cxx::tree::optional< Orientation_Reference_type, false > Orientation_Reference_optional;
         typedef ::xsd::cxx::tree::traits< Orientation_Reference_type, char > Orientation_Reference_traits;
 
         const Orientation_Reference_optional&
@@ -284,7 +284,7 @@ namespace schema
         // Magnitude
         //
         typedef ::xml_schema::double_ Magnitude_type;
-        typedef ::xsd::cxx::tree::optional< Magnitude_type > Magnitude_optional;
+        typedef ::xsd::cxx::tree::optional< Magnitude_type, true > Magnitude_optional;
         typedef ::xsd::cxx::tree::traits< Magnitude_type, char, ::xsd::cxx::tree::schema_type::double_ > Magnitude_traits;
 
         const Magnitude_optional&

@@ -263,7 +263,7 @@ namespace schema
         // TemplateInfiltration
         //
         typedef ::xml_schema::idref TemplateInfiltration_type;
-        typedef ::xsd::cxx::tree::optional< TemplateInfiltration_type > TemplateInfiltration_optional;
+        typedef ::xsd::cxx::tree::optional< TemplateInfiltration_type, false > TemplateInfiltration_optional;
         typedef ::xsd::cxx::tree::traits< TemplateInfiltration_type, char > TemplateInfiltration_traits;
 
         const TemplateInfiltration_optional&
@@ -284,7 +284,7 @@ namespace schema
         // PeakMinimumVentilationMethod
         //
         typedef ::xml_schema::string PeakMinimumVentilationMethod_type;
-        typedef ::xsd::cxx::tree::optional< PeakMinimumVentilationMethod_type > PeakMinimumVentilationMethod_optional;
+        typedef ::xsd::cxx::tree::optional< PeakMinimumVentilationMethod_type, false > PeakMinimumVentilationMethod_optional;
         typedef ::xsd::cxx::tree::traits< PeakMinimumVentilationMethod_type, char > PeakMinimumVentilationMethod_traits;
 
         const PeakMinimumVentilationMethod_optional&
@@ -305,7 +305,7 @@ namespace schema
         // TemplateSimParamsZoneSizing
         //
         typedef ::xml_schema::idref TemplateSimParamsZoneSizing_type;
-        typedef ::xsd::cxx::tree::optional< TemplateSimParamsZoneSizing_type > TemplateSimParamsZoneSizing_optional;
+        typedef ::xsd::cxx::tree::optional< TemplateSimParamsZoneSizing_type, false > TemplateSimParamsZoneSizing_optional;
         typedef ::xsd::cxx::tree::traits< TemplateSimParamsZoneSizing_type, char > TemplateSimParamsZoneSizing_traits;
 
         const TemplateSimParamsZoneSizing_optional&
@@ -326,7 +326,7 @@ namespace schema
         // ZoneThermostatType
         //
         typedef ::xml_schema::string ZoneThermostatType_type;
-        typedef ::xsd::cxx::tree::optional< ZoneThermostatType_type > ZoneThermostatType_optional;
+        typedef ::xsd::cxx::tree::optional< ZoneThermostatType_type, false > ZoneThermostatType_optional;
         typedef ::xsd::cxx::tree::traits< ZoneThermostatType_type, char > ZoneThermostatType_traits;
 
         const ZoneThermostatType_optional&
@@ -347,7 +347,7 @@ namespace schema
         // TemplateZoneTempController
         //
         typedef ::xml_schema::idref TemplateZoneTempController_type;
-        typedef ::xsd::cxx::tree::optional< TemplateZoneTempController_type > TemplateZoneTempController_optional;
+        typedef ::xsd::cxx::tree::optional< TemplateZoneTempController_type, false > TemplateZoneTempController_optional;
         typedef ::xsd::cxx::tree::traits< TemplateZoneTempController_type, char > TemplateZoneTempController_traits;
 
         const TemplateZoneTempController_optional&
@@ -386,7 +386,7 @@ namespace schema
         // TemplateZoneHumidistat
         //
         typedef ::xml_schema::idref TemplateZoneHumidistat_type;
-        typedef ::xsd::cxx::tree::optional< TemplateZoneHumidistat_type > TemplateZoneHumidistat_optional;
+        typedef ::xsd::cxx::tree::optional< TemplateZoneHumidistat_type, false > TemplateZoneHumidistat_optional;
         typedef ::xsd::cxx::tree::traits< TemplateZoneHumidistat_type, char > TemplateZoneHumidistat_traits;
 
         const TemplateZoneHumidistat_optional&
@@ -425,7 +425,7 @@ namespace schema
         // TemplateZoneVentController
         //
         typedef ::xml_schema::idref TemplateZoneVentController_type;
-        typedef ::xsd::cxx::tree::optional< TemplateZoneVentController_type > TemplateZoneVentController_optional;
+        typedef ::xsd::cxx::tree::optional< TemplateZoneVentController_type, false > TemplateZoneVentController_optional;
         typedef ::xsd::cxx::tree::traits< TemplateZoneVentController_type, char > TemplateZoneVentController_traits;
 
         const TemplateZoneVentController_optional&
@@ -446,7 +446,7 @@ namespace schema
         // RoomAirModelType
         //
         typedef ::xml_schema::string RoomAirModelType_type;
-        typedef ::xsd::cxx::tree::optional< RoomAirModelType_type > RoomAirModelType_optional;
+        typedef ::xsd::cxx::tree::optional< RoomAirModelType_type, false > RoomAirModelType_optional;
         typedef ::xsd::cxx::tree::traits< RoomAirModelType_type, char > RoomAirModelType_traits;
 
         const RoomAirModelType_optional&
@@ -467,7 +467,7 @@ namespace schema
         // TemplateInfilVentOneNode
         //
         typedef ::xml_schema::idref TemplateInfilVentOneNode_type;
-        typedef ::xsd::cxx::tree::optional< TemplateInfilVentOneNode_type > TemplateInfilVentOneNode_optional;
+        typedef ::xsd::cxx::tree::optional< TemplateInfilVentOneNode_type, false > TemplateInfilVentOneNode_optional;
         typedef ::xsd::cxx::tree::traits< TemplateInfilVentOneNode_type, char > TemplateInfilVentOneNode_traits;
 
         const TemplateInfilVentOneNode_optional&
@@ -488,7 +488,7 @@ namespace schema
         // TemplateInfilVentThreeNode
         //
         typedef ::xml_schema::idref TemplateInfilVentThreeNode_type;
-        typedef ::xsd::cxx::tree::optional< TemplateInfilVentThreeNode_type > TemplateInfilVentThreeNode_optional;
+        typedef ::xsd::cxx::tree::optional< TemplateInfilVentThreeNode_type, false > TemplateInfilVentThreeNode_optional;
         typedef ::xsd::cxx::tree::traits< TemplateInfilVentThreeNode_type, char > TemplateInfilVentThreeNode_traits;
 
         const TemplateInfilVentThreeNode_optional&
@@ -509,7 +509,7 @@ namespace schema
         // TemplateInfilVentCrossVent
         //
         typedef ::xml_schema::idref TemplateInfilVentCrossVent_type;
-        typedef ::xsd::cxx::tree::optional< TemplateInfilVentCrossVent_type > TemplateInfilVentCrossVent_optional;
+        typedef ::xsd::cxx::tree::optional< TemplateInfilVentCrossVent_type, false > TemplateInfilVentCrossVent_optional;
         typedef ::xsd::cxx::tree::traits< TemplateInfilVentCrossVent_type, char > TemplateInfilVentCrossVent_traits;
 
         const TemplateInfilVentCrossVent_optional&
@@ -530,7 +530,7 @@ namespace schema
         // InteriorOrExteriorZone
         //
         typedef ::xml_schema::string InteriorOrExteriorZone_type;
-        typedef ::xsd::cxx::tree::optional< InteriorOrExteriorZone_type > InteriorOrExteriorZone_optional;
+        typedef ::xsd::cxx::tree::optional< InteriorOrExteriorZone_type, false > InteriorOrExteriorZone_optional;
         typedef ::xsd::cxx::tree::traits< InteriorOrExteriorZone_type, char > InteriorOrExteriorZone_traits;
 
         const InteriorOrExteriorZone_optional&
@@ -551,7 +551,7 @@ namespace schema
         // TemplateInfilVentFloorInt
         //
         typedef ::xml_schema::idref TemplateInfilVentFloorInt_type;
-        typedef ::xsd::cxx::tree::optional< TemplateInfilVentFloorInt_type > TemplateInfilVentFloorInt_optional;
+        typedef ::xsd::cxx::tree::optional< TemplateInfilVentFloorInt_type, false > TemplateInfilVentFloorInt_optional;
         typedef ::xsd::cxx::tree::traits< TemplateInfilVentFloorInt_type, char > TemplateInfilVentFloorInt_traits;
 
         const TemplateInfilVentFloorInt_optional&
@@ -572,7 +572,7 @@ namespace schema
         // TemplateInfilVentFloorExt
         //
         typedef ::xml_schema::idref TemplateInfilVentFloorExt_type;
-        typedef ::xsd::cxx::tree::optional< TemplateInfilVentFloorExt_type > TemplateInfilVentFloorExt_optional;
+        typedef ::xsd::cxx::tree::optional< TemplateInfilVentFloorExt_type, false > TemplateInfilVentFloorExt_optional;
         typedef ::xsd::cxx::tree::traits< TemplateInfilVentFloorExt_type, char > TemplateInfilVentFloorExt_traits;
 
         const TemplateInfilVentFloorExt_optional&

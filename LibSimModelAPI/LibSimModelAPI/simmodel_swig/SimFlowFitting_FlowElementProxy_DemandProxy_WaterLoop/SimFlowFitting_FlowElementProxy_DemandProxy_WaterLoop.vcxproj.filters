@@ -25,6 +25,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop.i" />
+    <CustomBuild Include="SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop.i" />
   </ItemGroup>
 </Project>
