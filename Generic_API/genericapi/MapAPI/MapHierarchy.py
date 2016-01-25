@@ -25,8 +25,8 @@ class MoObject(object):
     target_name : str (optional)
         name of the Modelica object (if not set: this could be SimModel name)
         
-    properties : list of MapProperty or MapRecord 
-        This is an *iterable* list containing all records and properties of
+    parameters : list of MapParameter or MapRecord 
+        This is an *iterable* list containing all records and parameters of
         the MoObject
         
     connectors : list of MapConnector()
@@ -49,7 +49,7 @@ class MoObject(object):
         
         self.target_location = None
         self.target_name = None
-        self.properties = []
+        self.parameters = []
         self.connectors = []
         self.sim_ref_id = []
         self.map_control = []
@@ -93,12 +93,12 @@ class MoObject(object):
 
         return connector
         
-    def add_property(self, name, value):
-        """This adds a Property to the MoObject
+    def add_parameter(self, name, value):
+        """This adds a Parameter to the MoObject
 
         For topology mapping it might be necessary to add additional propertys, 
         besides the mapped once to some MoObjects. This creates an instance
-        of MapProperty and adds it to MoObject property list.
+        of MapParameter and adds it to MoObject property list.
 
 
         Parameters
@@ -113,13 +113,13 @@ class MoObject(object):
         Returns
         ----------
 
-        mapped_prop : MapProperty
-            returns the MapProperty instance
+        mapped_prop : MapParameter
+            returns the MapParameter instance
 
         """
-        mapped_prop = MapProperty(self, name, value)
+        mapped_prop = MapParameter(self, name, value)
         
-        self.properties.append(mapped_prop)
+        self.parameters.append(mapped_prop)
         
         return mapped_prop
         
@@ -379,7 +379,7 @@ class MapConnector(object):
     ----------
     
     parent : instance of a MapComponent()
-        MapProperty receives an instance of MapComponent. 
+        MapParameter receives an instance of MapComponent. 
         
     Attributes
     ----------
@@ -423,7 +423,7 @@ class MapControl(object):
     ----------
 
     parent : instance of a MapComponent()
-        MapProperty receives an instance of MapComponent. 
+        MapParameter receives an instance of MapComponent. 
         
     Attributes
     ----------
@@ -448,23 +448,23 @@ class MapControl(object):
         self.control_objects = None
         self.control_connector = None
 
-class MapProperty(object):
+class MapParameter(object):
     """Representation of a mapped property
         
-    The MapProperty class is a representation of any Modelica property. 
+    The MapParameter class is a representation of any Modelica property. 
     
     
     Parameters
     ----------
     
     parent : instance of a MapComponent()
-        MapProperty receives an instance of MapComponent. 
+        MapParameter receives an instance of MapComponent. 
         
     name : str
         Modelica name of the Parameter (e.g. Q_flow_max)
         
     value : float/int/bool/str/list/array
-        Value of the Property, can be float, int, boolean, string, list or array
+        Value of the Parameter, can be float, int, boolean, string, list or array
         with corresponding data type.
 
     """
@@ -495,8 +495,8 @@ class MapRecord(object):
     Attributes
     ----------
 
-    properties : list of MappedProperties or MapRecords
-        This is an *iterable* list containing all records and properties of
+    parameters : list of MappedParameter or MapRecords
+        This is an *iterable* list containing all records and parameters of
         the MapRecord
 
     """
@@ -506,7 +506,7 @@ class MapRecord(object):
         self.parent = parent
         self.name = name
         self.record_location = record_location
-        self.properties = []
+        self.parameters = []
 		
 class MapSpaceBoundary(object):
     """Representation of a mapped space boundary
