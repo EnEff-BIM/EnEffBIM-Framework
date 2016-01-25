@@ -193,13 +193,9 @@ class MapProject(object):
         
     project_name : str
         name of the project
-        
-    connections_hard : list of list of strings
-        This is a hardcoded list, how the connections list should look like
-        at the end
 
     """
-    
+
     def __init__(self):
 
         self.buildings = []
@@ -207,8 +203,8 @@ class MapProject(object):
         self.library_version = ""
         self.project_name = ""
         self.connections = []
-        	
-    	
+
+
 class MapBuilding(MoObject):
     """Representation of a mapped building
         
@@ -221,11 +217,11 @@ class MapBuilding(MoObject):
     Parameters
     ----------
     
-    parent : instance of MapProject()
+    project : instance of MapProject()
         MapBuilding receives an instance of MapProject, in order to know
         to what Project it belongs to. Might be trivial in the case of the 
         project, more because of consistency.
-        
+
     Attributes
     ----------
     
@@ -237,20 +233,20 @@ class MapBuilding(MoObject):
         building. The items of the list have to be an instance of
         the class "MapThermalZone".
         
-    supply_components : dict
+    hvac_component_group : dict
         This is an dict with all HVAC groups. The Key is the HVAC Group name 
         (e.g. HVAC_Hot_Water), the value is a list with *all* components in this
         group. These are instances of "MapComponent".
     
     """
     
-    def __init__(self, parent):
+    def __init__(self, project, parent):
         
-        super(MapBuilding, self).__init__(parent)
-                
+        super(MapBuilding, self).__init__(project, parent)
+
         self.building_name = ""
         self.thermal_zones = []
-        self.hvac_component_group = []
+        self.hvac_component_group = {}
              
 class MapThermalZone(MoObject):
     """Representation of a mapped thermal zone
@@ -263,11 +259,16 @@ class MapThermalZone(MoObject):
     
     Parameters
     ----------
+
+    project: MapProject()
+        MapThermalZone recieves instance of MapProject to assign connections
+        to the project.
+            
     
     parent : instance of MapBuilding()
-        MapThermalZone receives an instance of MapProject, in order to 
+        MapThermalZone receives an instance of MapBuilding, in order to 
         know to what building it belongs to.
-        
+
     Attributes
     ----------
     
@@ -276,17 +277,23 @@ class MapThermalZone(MoObject):
 
     space_boundaries : MapSpaceBoundaries()
         This is a instance of MapSpaceBoundaries.
+        
+    hvac_component_group : dict
+        This is an dict with all HVAC groups. The Key is the HVAC Group name 
+        (e.g. HVAC_Hot_Water), the value is a list with *all* components in this
+        group. These are instances of "MapComponent".
 
     """
     
-    def __init__(self, parent):
+    def __init__(self, project, parent):
         
-        super(MapThermalZone, self).__init__(parent)
+        super(MapThermalZone, self).__init__(project, parent)
         
         
         self.zone_name = ""
         self.space_boundaries = []
-        
+        self.hvac_component_group = {}
+
 class MapComponent(MoObject):
     """Representation of a mapped component
         
@@ -295,17 +302,19 @@ class MapComponent(MoObject):
 
     Attributes
     ----------
-    
+
     mapped_control : MapControl()
-        This is an instance of MapControl()
+        This is an instance of MapControl(), Map Control is a flag for used
+        control stratagies
     """
-    
+
     def __init__(self, project=None, parent=None):
-        
+
         super(MapComponent, self).__init__(project, parent)
 
         self.map_control = None
-		
+
+
 class MapConnection(object):
     """Representation of a mapped connector
         
@@ -346,7 +355,8 @@ class MapConnection(object):
 
     """
     
-    def __init__(self, connector_a,
+    def __init__(self,
+                 connector_a,
                  connector_b,
                  index_a = None,
                  index_b = None):
@@ -407,11 +417,11 @@ class MapControl(object):
     The MapControl class is a representation of a mapped control system.
     It is used to store control parameters and more important the control 
     strategy/system itself
-    
-    
+
+
     Parameters
     ----------
-    
+
     parent : instance of a MapComponent()
         MapProperty receives an instance of MapComponent. 
         
@@ -430,14 +440,14 @@ class MapControl(object):
         control variable
 
     """
-    
+
     def __init__(self, parent):
-        
+
         self.parent = parent
         self.control_strategy = ""
         self.control_objects = None
         self.control_connector = None
-        
+
 class MapProperty(object):
     """Representation of a mapped property
         
@@ -450,9 +460,6 @@ class MapProperty(object):
     parent : instance of a MapComponent()
         MapProperty receives an instance of MapComponent. 
         
-    Attributes
-    ----------
-    
     name : str
         Modelica name of the Parameter (e.g. Q_flow_max)
         
@@ -473,34 +480,33 @@ class MapRecord(object):
         
     The MapRecord class is a representation of any Modelica Record class. 
     
-    
     Parameters
     ----------
     
     parent : instance of a MapComponent()
         MapRecords receives an instance of MapComponent. 
         
-    Attributes
-    ----------
-    
     name : str
         Modelica name of the Record (e.g. boilerEfficiencyB)
         
     record_location : str
         location in the library of the base record
         
-    parameters : list of MappedProperties or MapRecords
+    Attributes
+    ----------
+
+    properties : list of MappedProperties or MapRecords
         This is an *iterable* list containing all records and properties of
         the MapRecord
 
     """
     
-    def __init__(self, parent):
+    def __init__(self, parent, record_location, name):
         
         self.parent = parent
-        self.name = ""
-        self.record_location = ""
-        self.parameters = []
+        self.name = name
+        self.record_location = record_location
+        self.properties = []
 		
 class MapSpaceBoundary(object):
     """Representation of a mapped space boundary
