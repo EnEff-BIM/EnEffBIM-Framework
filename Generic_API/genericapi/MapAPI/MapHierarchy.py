@@ -25,7 +25,7 @@ class MoObject(object):
     target_name : str (optional)
         name of the Modelica object (if not set: this could be SimModel name)
         
-    parameters : list of MapProperty or MapRecord 
+    properties : list of MapProperty or MapRecord 
         This is an *iterable* list containing all records and properties of
         the MoObject
         
@@ -46,49 +46,112 @@ class MoObject(object):
         
         self.parent = parent
         self.project = project
+        
         self.target_location = None
         self.target_name = None
-        self.parameters = []
+        self.properties = []
         self.connectors = []
         self.sim_ref_id = []
         self.map_control = []
      
-    def apply_component_mapping(self,
-                                target_location,
-                                target_name,
-                                sim_ref_id):
-        """once libSimModel API is finished, with this function we can add the
-        information we get from the MappingRules to MapHierarchy for components
-        """
-        self.target_location = target_location
-        self.target_name = target_name
-        self.sim_ref_id.append(sim_ref_id)
-        
+       
     def add_connector(self,
                       name,
                       type,
                       dimension = 1):
-        """This adds a MapConnector to the MoObject"""
+        """This adds a MapConnector to the MoObject
+
+        For topology mapping it is necessary to add Modelica connectors to
+        the MoObject. An instance of MapConnector is added to the 
+        MoObject.connectors list. The function sets the attributes of the
+        MapConnector
+
+        Parameters
+        ----------
+
+        name : str
+            name of the Connector in the Modelica model
+
+        type : str
+            type of the Connector (e.g. Real)
+
+        dimension : int
+            dimension of the connector if it is a vector
+
+        Returns
+        ----------
+
+        connector : MapConnector
+            return the instantiated MapConnector class 
+
+        """
         connector = MapConnector(self)
         connector.name = name
         connector.type = type
         connector.dimension = dimension
         self.connectors.append(connector)
-        
+
         return connector
         
     def add_property(self, name, value):
-        """This adds a Property to the MoObject, this can be done by applying
-        the mapping"""
+        """This adds a Property to the MoObject
+
+        For topology mapping it might be necessary to add additional propertys, 
+        besides the mapped once to some MoObjects. This creates an instance
+        of MapProperty and adds it to MoObject property list.
+
+
+        Parameters
+        ----------
+
+        name : str
+            name of the property in Modelica
+
+        value : int/float/str/bool
+            value of the property
+
+        Returns
+        ----------
+
+        mapped_prop : MapProperty
+            returns the MapProperty instance
+
+        """
         mapped_prop = MapProperty(self, name, value)
         
-        self.parameters.append(mapped_prop)
+        self.properties.append(mapped_prop)
+        
+        return mapped_prop
         
     def add_connection(self,
                        input_connector,
                        output_connector):
-        """This connects the MoObject to another connector, maybe this would
-        fit better in MapProject, but function call could get strange"""
+        """This connects the MoObject to another Object
+        
+        For topology mapping it might be necessary to connect two MoObjects.
+        With the given Connectors of each Object a MapConnection is instantiated
+        and the attributes are set.
+
+        Parameters
+        ----------
+
+        input_connector : MapConnector
+            Own connector that should be connected (must be in connectors list)
+
+        output_connector : MapConnector
+            Connector of the MoObject that is connected
+
+        Returns
+        ----------
+
+        mapped_con : MapConnector
+            returns the MapConnector instance
+        """
+        if input_connector in self.connectors:
+            pass
+        else:
+            raise ValueError("input_connector is not assigned to MoObject")
+
 
         if input_connector.type == output_connector.type and \
             input_connector.dimension == output_connector.dimension:
@@ -96,6 +159,8 @@ class MoObject(object):
             mapped_con = MapConnection(input_connector, output_connector)
             mapped_con.type = input_connector.type
             self.project.connections.append(mapped_con)
+
+            return mapped_con
             
         else:
              raise TypeError("Input/Ouput connector type or dimension" +

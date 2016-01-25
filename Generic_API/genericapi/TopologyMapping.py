@@ -20,7 +20,10 @@ import SimModel
 
 #
 ## load the use case SimXML, and validate the synatx
-unmapped_data = SimModel.SimModel_(modulePath + "/Boiler_Gas_VDI6020_V10.xml")
+try:
+    unmapped_data = SimModel.SimModel_(modulePath + "/Boiler_Gas_VDI6020_V10.xml")
+except:
+    print("file not readable")
 
 
 
@@ -35,4 +38,4 @@ ttt = Pump.instantiate_pump(asd, test, unmapped_data)
 print(ttt)
 for g in ttt:
     print(g.sim_ref_id)
-print("ASD")
+print(asd.connections)

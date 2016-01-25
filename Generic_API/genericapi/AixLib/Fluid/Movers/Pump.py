@@ -55,8 +55,9 @@ class Pump(MapHierarchy.MapComponent):
         self.parent.hvac_component_group.append(ExpansionVessel.ExpansionVessel(
                                                 self.project, self))
         self.parent.hvac_component_group[-1].target_location = ("AixLib.Fluid."
-                                                            "Storage.ExpansionVessel")
+                                                    "Storage.ExpansionVessel")
         self.parent.hvac_component_group[-1].target_name = "expansionVessel"
         self.parent.hvac_component_group[-1].add_property = ("V_start", V_start)
-        port_a = self.parent.hvac_component_group[-1].add_connector("port_a","FluidPort")
+        port_a = self.parent.hvac_component_group[-1].add_connector("port_a",
+                                                                    "FluidPort")
         self.add_connection(port_a, self.port_a)
