@@ -14,17 +14,8 @@ print(modulePath)
 
 sys.path.append(modulePath)
 # load SimModel basic classes
-import base
-## load SimXML I/O functions
 import SimModel
-
-#
-## load the use case SimXML, and validate the synatx
-try:
-    unmapped_data = SimModel.SimModel_(modulePath + "/Boiler_Gas_VDI6020_V10.xml")
-except:
-    print("file not readable")
-
+sim_instance = SimModel.SimModel_(modulePath + "/Boiler_Gas_VDI6020_V10.xml")
 
 
 import genericapi.AixLib.Fluid.HeatExchangers.Boiler as Boiler
@@ -33,9 +24,10 @@ import genericapi.AixLib.Fluid.Movers.Pump as Pump
 import genericapi.MapAPI.MapHierarchy as MapHierarchy
 
 asd = MapHierarchy.MapProject()
-test = MapHierarchy.MapBuilding(asd)
-ttt = Pump.instantiate_pump(asd, test, unmapped_data)
+test = MapHierarchy.MapBuilding(asd, asd)
+ttt = Pump.instantiate_pump(asd, test, sim_instance)
 print(ttt)
 for g in ttt:
     print(g.sim_ref_id)
+    print(g.target_name)
 print(asd.connections)
