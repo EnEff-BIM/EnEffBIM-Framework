@@ -11,12 +11,14 @@ import genericapi.MapAPI.MapHierarchy as MapHierarchy
 def instantiate_pump(parent, project, sim_instance):
     """creates a instance of the Pump for each pump instance in SimModel"""
     import SimFlowMover_Pump_VariableSpeedReturn
+    
     map_pump = []
     for id in range(sim_instance.SimFlowMover_Pump_VariableSpeedReturn().sizeInt()):
+         if sim_instance.SimFlowMover_Pump_VariableSpeedReturn().at(id).IsTemplateObject().getValue() is True:
 
-        map_pump.append(Pump(parent, 
-                         project, 
-                         sim_instance.SimFlowMover_Pump_VariableSpeedReturn().at(id)))
+            map_pump.append(Pump(parent, 
+                             project, 
+                             sim_instance.SimFlowMover_Pump_VariableSpeedReturn().at(id)))
     return map_pump
     
 class Pump(MapHierarchy.MapComponent):
