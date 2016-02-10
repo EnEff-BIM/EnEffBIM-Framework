@@ -25,6 +25,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="SimAppObjNameDefault_SpatialContainer_Building.i" />
+    <None Include="SimAppObjNameDefault_SpatialContainer_Building.i" />
   </ItemGroup>
 </Project>

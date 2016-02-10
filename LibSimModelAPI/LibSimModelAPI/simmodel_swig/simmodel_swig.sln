@@ -353,6 +353,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimWindowParams_Window_Defa
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimWindowType_Window_Default", "SimWindowType_Window_Default\SimWindowType_Window_Default.vcxproj", "{EC8894C9-E245-47C4-913F-CE5437256913}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimModel_Hierachy", "SimModel_Hierachy\SimModel_Hierachy.vcxproj", "{3125069A-D183-4E23-BEC7-18CD8BAC0E80}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -1063,6 +1065,10 @@ Global
 		{EC8894C9-E245-47C4-913F-CE5437256913}.Debug|Win32.Build.0 = Debug|Win32
 		{EC8894C9-E245-47C4-913F-CE5437256913}.Release|Win32.ActiveCfg = Release|Win32
 		{EC8894C9-E245-47C4-913F-CE5437256913}.Release|Win32.Build.0 = Release|Win32
+		{3125069A-D183-4E23-BEC7-18CD8BAC0E80}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3125069A-D183-4E23-BEC7-18CD8BAC0E80}.Debug|Win32.Build.0 = Debug|Win32
+		{3125069A-D183-4E23-BEC7-18CD8BAC0E80}.Release|Win32.ActiveCfg = Release|Win32
+		{3125069A-D183-4E23-BEC7-18CD8BAC0E80}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

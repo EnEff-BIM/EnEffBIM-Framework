@@ -25,6 +25,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="SimShapeRepresentation_ShapeRepresentation_Default.i" />
+    <None Include="SimShapeRepresentation_ShapeRepresentation_Default.i" />
   </ItemGroup>
 </Project>

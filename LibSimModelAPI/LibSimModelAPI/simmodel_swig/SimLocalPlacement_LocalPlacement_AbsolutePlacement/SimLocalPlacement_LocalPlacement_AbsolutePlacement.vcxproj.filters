@@ -25,6 +25,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="SimLocalPlacement_LocalPlacement_AbsolutePlacement.i" />
+    <None Include="SimLocalPlacement_LocalPlacement_AbsolutePlacement.i" />
   </ItemGroup>
 </Project>

@@ -45036,6 +45036,691 @@ SWIGINTERN PyObject *int_optional_swigregister(PyObject *SWIGUNUSEDPARM(self), P
   return SWIG_Py_Void();
 }
 
+SWIGINTERN PyObject *_wrap_new_bool_optional__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  xsd::cxx::tree::container *arg1 = (xsd::cxx::tree::container *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  xsd::cxx::tree::optional< ::xml_schema::boolean,true > *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:new_bool_optional",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_xsd__cxx__tree___type, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "new_bool_optional" "', argument " "1"" of type '" "xsd::cxx::tree::container *""'"); 
+  }
+  arg1 = reinterpret_cast< xsd::cxx::tree::container * >(argp1);
+  result = (xsd::cxx::tree::optional< ::xml_schema::boolean,true > *)new xsd::cxx::tree::optional< ::xml_schema::boolean,true >(arg1);
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_bool_true_t, SWIG_POINTER_NEW |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_new_bool_optional__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  xsd::cxx::tree::optional< ::xml_schema::boolean,true > *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)":new_bool_optional")) SWIG_fail;
+  result = (xsd::cxx::tree::optional< ::xml_schema::boolean,true > *)new xsd::cxx::tree::optional< ::xml_schema::boolean,true >();
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_bool_true_t, SWIG_POINTER_NEW |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_new_bool_optional__SWIG_2(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  bool *arg1 = 0 ;
+  xsd::cxx::tree::container *arg2 = (xsd::cxx::tree::container *) 0 ;
+  bool temp1 ;
+  bool val1 ;
+  int ecode1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  xsd::cxx::tree::optional< ::xml_schema::boolean,true > *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:new_bool_optional",&obj0,&obj1)) SWIG_fail;
+  ecode1 = SWIG_AsVal_bool(obj0, &val1);
+  if (!SWIG_IsOK(ecode1)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode1), "in method '" "new_bool_optional" "', argument " "1"" of type '" "bool""'");
+  } 
+  temp1 = static_cast< bool >(val1);
+  arg1 = &temp1;
+  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_xsd__cxx__tree___type, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "new_bool_optional" "', argument " "2"" of type '" "xsd::cxx::tree::container *""'"); 
+  }
+  arg2 = reinterpret_cast< xsd::cxx::tree::container * >(argp2);
+  result = (xsd::cxx::tree::optional< ::xml_schema::boolean,true > *)new xsd::cxx::tree::optional< ::xml_schema::boolean,true >((bool const &)*arg1,arg2);
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_bool_true_t, SWIG_POINTER_NEW |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_new_bool_optional__SWIG_3(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  bool *arg1 = 0 ;
+  bool temp1 ;
+  bool val1 ;
+  int ecode1 = 0 ;
+  PyObject * obj0 = 0 ;
+  xsd::cxx::tree::optional< ::xml_schema::boolean,true > *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:new_bool_optional",&obj0)) SWIG_fail;
+  ecode1 = SWIG_AsVal_bool(obj0, &val1);
+  if (!SWIG_IsOK(ecode1)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode1), "in method '" "new_bool_optional" "', argument " "1"" of type '" "bool""'");
+  } 
+  temp1 = static_cast< bool >(val1);
+  arg1 = &temp1;
+  result = (xsd::cxx::tree::optional< ::xml_schema::boolean,true > *)new xsd::cxx::tree::optional< ::xml_schema::boolean,true >((bool const &)*arg1);
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_bool_true_t, SWIG_POINTER_NEW |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_new_bool_optional__SWIG_4(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  xsd::cxx::tree::optional< ::xml_schema::boolean,true > *arg1 = 0 ;
+  xsd::cxx::tree::flags arg2 ;
+  xsd::cxx::tree::container *arg3 = (xsd::cxx::tree::container *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 ;
+  int res2 = 0 ;
+  void *argp3 = 0 ;
+  int res3 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  xsd::cxx::tree::optional< ::xml_schema::boolean,true > *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OOO:new_bool_optional",&obj0,&obj1,&obj2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1, SWIGTYPE_p_xsd__cxx__tree__optionalT_bool_true_t,  0  | 0);
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "new_bool_optional" "', argument " "1"" of type '" "xsd::cxx::tree::optional< ::xml_schema::boolean,true > const &""'"); 
+  }
+  if (!argp1) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "new_bool_optional" "', argument " "1"" of type '" "xsd::cxx::tree::optional< ::xml_schema::boolean,true > const &""'"); 
+  }
+  arg1 = reinterpret_cast< xsd::cxx::tree::optional< ::xml_schema::boolean,true > * >(argp1);
+  {
+    res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__flags,  0  | 0);
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "new_bool_optional" "', argument " "2"" of type '" "xsd::cxx::tree::flags""'"); 
+    }  
+    if (!argp2) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "new_bool_optional" "', argument " "2"" of type '" "xsd::cxx::tree::flags""'");
+    } else {
+      xsd::cxx::tree::flags * temp = reinterpret_cast< xsd::cxx::tree::flags * >(argp2);
+      arg2 = *temp;
+      if (SWIG_IsNewObj(res2)) delete temp;
+    }
+  }
+  res3 = SWIG_ConvertPtr(obj2, &argp3,SWIGTYPE_p_xsd__cxx__tree___type, 0 |  0 );
+  if (!SWIG_IsOK(res3)) {
+    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "new_bool_optional" "', argument " "3"" of type '" "xsd::cxx::tree::container *""'"); 
+  }
+  arg3 = reinterpret_cast< xsd::cxx::tree::container * >(argp3);
+  result = (xsd::cxx::tree::optional< ::xml_schema::boolean,true > *)new xsd::cxx::tree::optional< ::xml_schema::boolean,true >((xsd::cxx::tree::optional< ::xml_schema::boolean,true > const &)*arg1,arg2,arg3);
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_bool_true_t, SWIG_POINTER_NEW |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_new_bool_optional__SWIG_5(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  xsd::cxx::tree::optional< ::xml_schema::boolean,true > *arg1 = 0 ;
+  xsd::cxx::tree::flags arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  xsd::cxx::tree::optional< ::xml_schema::boolean,true > *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:new_bool_optional",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1, SWIGTYPE_p_xsd__cxx__tree__optionalT_bool_true_t,  0  | 0);
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "new_bool_optional" "', argument " "1"" of type '" "xsd::cxx::tree::optional< ::xml_schema::boolean,true > const &""'"); 
+  }
+  if (!argp1) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "new_bool_optional" "', argument " "1"" of type '" "xsd::cxx::tree::optional< ::xml_schema::boolean,true > const &""'"); 
+  }
+  arg1 = reinterpret_cast< xsd::cxx::tree::optional< ::xml_schema::boolean,true > * >(argp1);
+  {
+    res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__flags,  0  | 0);
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "new_bool_optional" "', argument " "2"" of type '" "xsd::cxx::tree::flags""'"); 
+    }  
+    if (!argp2) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "new_bool_optional" "', argument " "2"" of type '" "xsd::cxx::tree::flags""'");
+    } else {
+      xsd::cxx::tree::flags * temp = reinterpret_cast< xsd::cxx::tree::flags * >(argp2);
+      arg2 = *temp;
+      if (SWIG_IsNewObj(res2)) delete temp;
+    }
+  }
+  result = (xsd::cxx::tree::optional< ::xml_schema::boolean,true > *)new xsd::cxx::tree::optional< ::xml_schema::boolean,true >((xsd::cxx::tree::optional< ::xml_schema::boolean,true > const &)*arg1,arg2);
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_bool_true_t, SWIG_POINTER_NEW |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_new_bool_optional__SWIG_6(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  xsd::cxx::tree::optional< ::xml_schema::boolean,true > *arg1 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  xsd::cxx::tree::optional< ::xml_schema::boolean,true > *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:new_bool_optional",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1, SWIGTYPE_p_xsd__cxx__tree__optionalT_bool_true_t,  0  | 0);
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "new_bool_optional" "', argument " "1"" of type '" "xsd::cxx::tree::optional< ::xml_schema::boolean,true > const &""'"); 
+  }
+  if (!argp1) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "new_bool_optional" "', argument " "1"" of type '" "xsd::cxx::tree::optional< ::xml_schema::boolean,true > const &""'"); 
+  }
+  arg1 = reinterpret_cast< xsd::cxx::tree::optional< ::xml_schema::boolean,true > * >(argp1);
+  result = (xsd::cxx::tree::optional< ::xml_schema::boolean,true > *)new xsd::cxx::tree::optional< ::xml_schema::boolean,true >((xsd::cxx::tree::optional< ::xml_schema::boolean,true > const &)*arg1);
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_bool_true_t, SWIG_POINTER_NEW |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_new_bool_optional(PyObject *self, PyObject *args) {
+  int argc;
+  PyObject *argv[4] = {
+    0
+  };
+  int ii;
+  
+  if (!PyTuple_Check(args)) SWIG_fail;
+  argc = args ? (int)PyObject_Length(args) : 0;
+  for (ii = 0; (ii < 3) && (ii < argc); ii++) {
+    argv[ii] = PyTuple_GET_ITEM(args,ii);
+  }
+  if (argc == 0) {
+    return _wrap_new_bool_optional__SWIG_1(self, args);
+  }
+  if (argc == 1) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_xsd__cxx__tree___type, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      return _wrap_new_bool_optional__SWIG_0(self, args);
+    }
+  }
+  if (argc == 1) {
+    int _v;
+    int res = SWIG_ConvertPtr(argv[0], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_bool_true_t, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      return _wrap_new_bool_optional__SWIG_6(self, args);
+    }
+  }
+  if (argc == 1) {
+    int _v;
+    {
+      int res = SWIG_AsVal_bool(argv[0], NULL);
+      _v = SWIG_CheckState(res);
+    }
+    if (_v) {
+      return _wrap_new_bool_optional__SWIG_3(self, args);
+    }
+  }
+  if (argc == 2) {
+    int _v;
+    int res = SWIG_ConvertPtr(argv[0], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_bool_true_t, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__flags, 0);
+      _v = SWIG_CheckState(res);
+      if (_v) {
+        return _wrap_new_bool_optional__SWIG_5(self, args);
+      }
+    }
+  }
+  if (argc == 2) {
+    int _v;
+    {
+      int res = SWIG_AsVal_bool(argv[0], NULL);
+      _v = SWIG_CheckState(res);
+    }
+    if (_v) {
+      void *vptr = 0;
+      int res = SWIG_ConvertPtr(argv[1], &vptr, SWIGTYPE_p_xsd__cxx__tree___type, 0);
+      _v = SWIG_CheckState(res);
+      if (_v) {
+        return _wrap_new_bool_optional__SWIG_2(self, args);
+      }
+    }
+  }
+  if (argc == 3) {
+    int _v;
+    int res = SWIG_ConvertPtr(argv[0], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_bool_true_t, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__flags, 0);
+      _v = SWIG_CheckState(res);
+      if (_v) {
+        void *vptr = 0;
+        int res = SWIG_ConvertPtr(argv[2], &vptr, SWIGTYPE_p_xsd__cxx__tree___type, 0);
+        _v = SWIG_CheckState(res);
+        if (_v) {
+          return _wrap_new_bool_optional__SWIG_4(self, args);
+        }
+      }
+    }
+  }
+  
+fail:
+  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'new_bool_optional'.\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    xsd::cxx::tree::optional< ::xml_schema::boolean,true >::optional(xsd::cxx::tree::container *)\n"
+    "    xsd::cxx::tree::optional< ::xml_schema::boolean,true >::optional()\n"
+    "    xsd::cxx::tree::optional< ::xml_schema::boolean,true >::optional(bool const &,xsd::cxx::tree::container *)\n"
+    "    xsd::cxx::tree::optional< ::xml_schema::boolean,true >::optional(bool const &)\n"
+    "    xsd::cxx::tree::optional< ::xml_schema::boolean,true >::optional(xsd::cxx::tree::optional< ::xml_schema::boolean,true > const &,xsd::cxx::tree::flags,xsd::cxx::tree::container *)\n"
+    "    xsd::cxx::tree::optional< ::xml_schema::boolean,true >::optional(xsd::cxx::tree::optional< ::xml_schema::boolean,true > const &,xsd::cxx::tree::flags)\n"
+    "    xsd::cxx::tree::optional< ::xml_schema::boolean,true >::optional(xsd::cxx::tree::optional< ::xml_schema::boolean,true > const &)\n");
+  return 0;
+}
+
+
+SWIGINTERN PyObject *_wrap_bool_optional___deref____SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  xsd::cxx::tree::optional< ::xml_schema::boolean,true > *arg1 = (xsd::cxx::tree::optional< ::xml_schema::boolean,true > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  bool *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:bool_optional___deref__",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_xsd__cxx__tree__optionalT_bool_true_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "bool_optional___deref__" "', argument " "1"" of type '" "xsd::cxx::tree::optional< ::xml_schema::boolean,true > const *""'"); 
+  }
+  arg1 = reinterpret_cast< xsd::cxx::tree::optional< ::xml_schema::boolean,true > * >(argp1);
+  result = (bool *)((xsd::cxx::tree::optional< ::xml_schema::boolean,true > const *)arg1)->operator ->();
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_bool, 0 |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_bool_optional___deref____SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  xsd::cxx::tree::optional< ::xml_schema::boolean,true > *arg1 = (xsd::cxx::tree::optional< ::xml_schema::boolean,true > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  bool *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:bool_optional___deref__",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_xsd__cxx__tree__optionalT_bool_true_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "bool_optional___deref__" "', argument " "1"" of type '" "xsd::cxx::tree::optional< ::xml_schema::boolean,true > *""'"); 
+  }
+  arg1 = reinterpret_cast< xsd::cxx::tree::optional< ::xml_schema::boolean,true > * >(argp1);
+  result = (bool *)(arg1)->operator ->();
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_bool, 0 |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_bool_optional___deref__(PyObject *self, PyObject *args) {
+  int argc;
+  PyObject *argv[2] = {
+    0
+  };
+  int ii;
+  
+  if (!PyTuple_Check(args)) SWIG_fail;
+  argc = args ? (int)PyObject_Length(args) : 0;
+  for (ii = 0; (ii < 1) && (ii < argc); ii++) {
+    argv[ii] = PyTuple_GET_ITEM(args,ii);
+  }
+  if (argc == 1) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_xsd__cxx__tree__optionalT_bool_true_t, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      return _wrap_bool_optional___deref____SWIG_1(self, args);
+    }
+  }
+  if (argc == 1) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_xsd__cxx__tree__optionalT_bool_true_t, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      return _wrap_bool_optional___deref____SWIG_0(self, args);
+    }
+  }
+  
+fail:
+  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'bool_optional___deref__'.\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    xsd::cxx::tree::optional< ::xml_schema::boolean,true >::operator ->() const\n"
+    "    xsd::cxx::tree::optional< ::xml_schema::boolean,true >::operator ->()\n");
+  return 0;
+}
+
+
+SWIGINTERN PyObject *_wrap_bool_optional___ref____SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  xsd::cxx::tree::optional< ::xml_schema::boolean,true > *arg1 = (xsd::cxx::tree::optional< ::xml_schema::boolean,true > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  bool *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:bool_optional___ref__",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_xsd__cxx__tree__optionalT_bool_true_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "bool_optional___ref__" "', argument " "1"" of type '" "xsd::cxx::tree::optional< ::xml_schema::boolean,true > const *""'"); 
+  }
+  arg1 = reinterpret_cast< xsd::cxx::tree::optional< ::xml_schema::boolean,true > * >(argp1);
+  result = (bool *) &((xsd::cxx::tree::optional< ::xml_schema::boolean,true > const *)arg1)->operator *();
+  resultobj = SWIG_From_bool(static_cast< bool >(*result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_bool_optional___ref____SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  xsd::cxx::tree::optional< ::xml_schema::boolean,true > *arg1 = (xsd::cxx::tree::optional< ::xml_schema::boolean,true > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  bool *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:bool_optional___ref__",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_xsd__cxx__tree__optionalT_bool_true_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "bool_optional___ref__" "', argument " "1"" of type '" "xsd::cxx::tree::optional< ::xml_schema::boolean,true > *""'"); 
+  }
+  arg1 = reinterpret_cast< xsd::cxx::tree::optional< ::xml_schema::boolean,true > * >(argp1);
+  result = (bool *) &(arg1)->operator *();
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_bool, 0 |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_bool_optional___ref__(PyObject *self, PyObject *args) {
+  int argc;
+  PyObject *argv[2] = {
+    0
+  };
+  int ii;
+  
+  if (!PyTuple_Check(args)) SWIG_fail;
+  argc = args ? (int)PyObject_Length(args) : 0;
+  for (ii = 0; (ii < 1) && (ii < argc); ii++) {
+    argv[ii] = PyTuple_GET_ITEM(args,ii);
+  }
+  if (argc == 1) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_xsd__cxx__tree__optionalT_bool_true_t, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      return _wrap_bool_optional___ref____SWIG_1(self, args);
+    }
+  }
+  if (argc == 1) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_xsd__cxx__tree__optionalT_bool_true_t, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      return _wrap_bool_optional___ref____SWIG_0(self, args);
+    }
+  }
+  
+fail:
+  Py_INCREF(Py_NotImplemented);
+  return Py_NotImplemented;
+}
+
+
+SWIGINTERN PyObject *_wrap_bool_optional_present(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  xsd::cxx::tree::optional< ::xml_schema::boolean,true > *arg1 = (xsd::cxx::tree::optional< ::xml_schema::boolean,true > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  bool result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:bool_optional_present",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_xsd__cxx__tree__optionalT_bool_true_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "bool_optional_present" "', argument " "1"" of type '" "xsd::cxx::tree::optional< ::xml_schema::boolean,true > const *""'"); 
+  }
+  arg1 = reinterpret_cast< xsd::cxx::tree::optional< ::xml_schema::boolean,true > * >(argp1);
+  result = (bool)((xsd::cxx::tree::optional< ::xml_schema::boolean,true > const *)arg1)->present();
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_bool_optional_get__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  xsd::cxx::tree::optional< ::xml_schema::boolean,true > *arg1 = (xsd::cxx::tree::optional< ::xml_schema::boolean,true > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  bool *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:bool_optional_get",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_xsd__cxx__tree__optionalT_bool_true_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "bool_optional_get" "', argument " "1"" of type '" "xsd::cxx::tree::optional< ::xml_schema::boolean,true > const *""'"); 
+  }
+  arg1 = reinterpret_cast< xsd::cxx::tree::optional< ::xml_schema::boolean,true > * >(argp1);
+  result = (bool *) &((xsd::cxx::tree::optional< ::xml_schema::boolean,true > const *)arg1)->get();
+  resultobj = SWIG_From_bool(static_cast< bool >(*result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_bool_optional_get__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  xsd::cxx::tree::optional< ::xml_schema::boolean,true > *arg1 = (xsd::cxx::tree::optional< ::xml_schema::boolean,true > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  bool *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:bool_optional_get",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_xsd__cxx__tree__optionalT_bool_true_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "bool_optional_get" "', argument " "1"" of type '" "xsd::cxx::tree::optional< ::xml_schema::boolean,true > *""'"); 
+  }
+  arg1 = reinterpret_cast< xsd::cxx::tree::optional< ::xml_schema::boolean,true > * >(argp1);
+  result = (bool *) &(arg1)->get();
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_bool, 0 |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_bool_optional_get(PyObject *self, PyObject *args) {
+  int argc;
+  PyObject *argv[2] = {
+    0
+  };
+  int ii;
+  
+  if (!PyTuple_Check(args)) SWIG_fail;
+  argc = args ? (int)PyObject_Length(args) : 0;
+  for (ii = 0; (ii < 1) && (ii < argc); ii++) {
+    argv[ii] = PyTuple_GET_ITEM(args,ii);
+  }
+  if (argc == 1) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_xsd__cxx__tree__optionalT_bool_true_t, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      return _wrap_bool_optional_get__SWIG_1(self, args);
+    }
+  }
+  if (argc == 1) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_xsd__cxx__tree__optionalT_bool_true_t, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      return _wrap_bool_optional_get__SWIG_0(self, args);
+    }
+  }
+  
+fail:
+  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'bool_optional_get'.\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    xsd::cxx::tree::optional< ::xml_schema::boolean,true >::get() const\n"
+    "    xsd::cxx::tree::optional< ::xml_schema::boolean,true >::get()\n");
+  return 0;
+}
+
+
+SWIGINTERN PyObject *_wrap_bool_optional_getValue(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  xsd::cxx::tree::optional< ::xml_schema::boolean,true > *arg1 = (xsd::cxx::tree::optional< ::xml_schema::boolean,true > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  bool result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:bool_optional_getValue",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_xsd__cxx__tree__optionalT_bool_true_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "bool_optional_getValue" "', argument " "1"" of type '" "xsd::cxx::tree::optional< ::xml_schema::boolean,true > *""'"); 
+  }
+  arg1 = reinterpret_cast< xsd::cxx::tree::optional< ::xml_schema::boolean,true > * >(argp1);
+  result = (bool)(arg1)->getValue();
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_bool_optional_set(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  xsd::cxx::tree::optional< ::xml_schema::boolean,true > *arg1 = (xsd::cxx::tree::optional< ::xml_schema::boolean,true > *) 0 ;
+  bool *arg2 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  bool temp2 ;
+  bool val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:bool_optional_set",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_xsd__cxx__tree__optionalT_bool_true_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "bool_optional_set" "', argument " "1"" of type '" "xsd::cxx::tree::optional< ::xml_schema::boolean,true > *""'"); 
+  }
+  arg1 = reinterpret_cast< xsd::cxx::tree::optional< ::xml_schema::boolean,true > * >(argp1);
+  ecode2 = SWIG_AsVal_bool(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "bool_optional_set" "', argument " "2"" of type '" "bool""'");
+  } 
+  temp2 = static_cast< bool >(val2);
+  arg2 = &temp2;
+  (arg1)->set((bool const &)*arg2);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_bool_optional_reset(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  xsd::cxx::tree::optional< ::xml_schema::boolean,true > *arg1 = (xsd::cxx::tree::optional< ::xml_schema::boolean,true > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:bool_optional_reset",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_xsd__cxx__tree__optionalT_bool_true_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "bool_optional_reset" "', argument " "1"" of type '" "xsd::cxx::tree::optional< ::xml_schema::boolean,true > *""'"); 
+  }
+  arg1 = reinterpret_cast< xsd::cxx::tree::optional< ::xml_schema::boolean,true > * >(argp1);
+  (arg1)->reset();
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_delete_bool_optional(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  xsd::cxx::tree::optional< ::xml_schema::boolean,true > *arg1 = (xsd::cxx::tree::optional< ::xml_schema::boolean,true > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:delete_bool_optional",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_xsd__cxx__tree__optionalT_bool_true_t, SWIG_POINTER_DISOWN |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_bool_optional" "', argument " "1"" of type '" "xsd::cxx::tree::optional< ::xml_schema::boolean,true > *""'"); 
+  }
+  arg1 = reinterpret_cast< xsd::cxx::tree::optional< ::xml_schema::boolean,true > * >(argp1);
+  delete arg1;
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *bool_optional_swigregister(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *obj;
+  if (!PyArg_ParseTuple(args,(char*)"O:swigregister", &obj)) return NULL;
+  SWIG_TypeNewClientData(SWIGTYPE_p_xsd__cxx__tree__optionalT_bool_true_t, SWIG_NewClientData(obj));
+  return SWIG_Py_Void();
+}
+
 SWIGINTERN PyObject *_wrap_delete_string_optional(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   xsd::cxx::tree::optional< ::xml_schema::string,false > *arg1 = (xsd::cxx::tree::optional< ::xml_schema::string,false > *) 0 ;
@@ -46930,6 +47615,16 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"int_optional_reset", _wrap_int_optional_reset, METH_VARARGS, NULL},
 	 { (char *)"delete_int_optional", _wrap_delete_int_optional, METH_VARARGS, NULL},
 	 { (char *)"int_optional_swigregister", int_optional_swigregister, METH_VARARGS, NULL},
+	 { (char *)"new_bool_optional", _wrap_new_bool_optional, METH_VARARGS, NULL},
+	 { (char *)"bool_optional___deref__", _wrap_bool_optional___deref__, METH_VARARGS, NULL},
+	 { (char *)"bool_optional___ref__", _wrap_bool_optional___ref__, METH_VARARGS, NULL},
+	 { (char *)"bool_optional_present", _wrap_bool_optional_present, METH_VARARGS, NULL},
+	 { (char *)"bool_optional_get", _wrap_bool_optional_get, METH_VARARGS, NULL},
+	 { (char *)"bool_optional_getValue", _wrap_bool_optional_getValue, METH_VARARGS, NULL},
+	 { (char *)"bool_optional_set", _wrap_bool_optional_set, METH_VARARGS, NULL},
+	 { (char *)"bool_optional_reset", _wrap_bool_optional_reset, METH_VARARGS, NULL},
+	 { (char *)"delete_bool_optional", _wrap_delete_bool_optional, METH_VARARGS, NULL},
+	 { (char *)"bool_optional_swigregister", bool_optional_swigregister, METH_VARARGS, NULL},
 	 { (char *)"delete_string_optional", _wrap_delete_string_optional, METH_VARARGS, NULL},
 	 { (char *)"new_string_optional", _wrap_new_string_optional, METH_VARARGS, NULL},
 	 { (char *)"string_optional___deref__", _wrap_string_optional___deref__, METH_VARARGS, NULL},
@@ -47601,7 +48296,7 @@ static swig_type_info _swigt__p_xsd__cxx__tree__no_prefix_mappingT_char_t = {"_p
 static swig_type_info _swigt__p_xsd__cxx__tree__no_type_infoT_char_t = {"_p_xsd__cxx__tree__no_type_infoT_char_t", "xml_schema::no_type_info *|::xsd::cxx::tree::no_type_info< char > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__string_t = {"_p_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__string_t", "::xsd::cxx::tree::normalized_string< char,xsd::cxx::tree::string > *|xml_schema::normalized_string *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__not_derivedT_char_t = {"_p_xsd__cxx__tree__not_derivedT_char_t", "::xsd::cxx::tree::not_derived< char > *|xml_schema::not_derived *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_xsd__cxx__tree__optionalT_bool_true_t = {"_p_xsd__cxx__tree__optionalT_bool_true_t", "schema::simxml::SimModelCore::SimBldgModelParams::IsAutoGenerated_optional *|xsd::cxx::tree::optional< bool,true > *|xsd::cxx::tree::optional< bool,xsd::cxx::tree::fundamental_p< bool >::r > *|schema::simxml::SimModelCore::SimGroup::HasTemplateChanged_optional *|schema::simxml::SimModelCore::SimObject::IsTemplateObject_optional *|schema::simxml::SimModelCore::SimResourceObject::IsTemplateObject_optional *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_xsd__cxx__tree__optionalT_bool_true_t = {"_p_xsd__cxx__tree__optionalT_bool_true_t", "schema::simxml::SimModelCore::SimBldgModelParams::IsAutoGenerated_optional *|xsd::cxx::tree::optional< bool,true > *|xsd::cxx::tree::optional< bool,xsd::cxx::tree::fundamental_p< bool >::r > *|schema::simxml::SimModelCore::SimGroup::HasTemplateChanged_optional *|schema::simxml::SimModelCore::SimObject::IsTemplateObject_optional *|xsd::cxx::tree::optional< ::xml_schema::boolean,true > *|schema::simxml::SimModelCore::SimResourceObject::IsTemplateObject_optional *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__optionalT_double_true_t = {"_p_xsd__cxx__tree__optionalT_double_true_t", "schema::simxml::SimModelCore::SimDistributionFlowElement::_3dLength_optional *|schema::simxml::SimModelCore::SimDistributionFlowElement::_3dWidth_optional *|schema::simxml::SimModelCore::SimDistributionFlowElement::_3dHeight_optional *|xsd::cxx::tree::optional< double,true > *|schema::simxml::SimModelCore::SimBldgModelParams::XDirectionZ_optional *|schema::simxml::SimModelCore::SimBldgModelParams::XDirectionY_optional *|schema::simxml::SimModelCore::SimBldgModelParams::XDirectionX_optional *|schema::simxml::SimModelCore::SimBldgModelParams::LocalPlacementX_optional *|schema::simxml::SimModelCore::SimBldgModelParams::LocalPlacementY_optional *|schema::simxml::SimModelCore::SimBldgModelParams::LocalPlacementZ_optional *|schema::simxml::SimModelCore::SimBldgModelParams::LocalPlacementRotation_optional *|xsd::cxx::tree::optional< ::xml_schema::decimal,true > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__optionalT_int_true_t = {"_p_xsd__cxx__tree__optionalT_int_true_t", "schema::simxml::ResourcesGeneral::SimUnitType::DecimalPrecision_optional *|xsd::cxx::tree::optional< int,true > *|schema::simxml::SimModelCore::SimBldgModelParams::ObjectIndex_optional *|xsd::cxx::tree::optional< ::xml_schema::int_,true > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__SelectedPropertyGroups_xsd__cxx__tree__fundamental_pT_schema__simxml__SimModelCore__SelectedPropertyGroups_t__r_t = {"_p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__SelectedPropertyGroups_xsd__cxx__tree__fundamental_pT_schema__simxml__SimModelCore__SelectedPropertyGroups_t__r_t", "schema::simxml::SimModelCore::SimResourceObject::SelectedPropertyGroups_optional *|schema::simxml::SimModelCore::SimElement::SelectedPropertyGroups_optional *|xsd::cxx::tree::optional< ::schema::simxml::SimModelCore::SelectedPropertyGroups,xsd::cxx::tree::fundamental_p< ::schema::simxml::SimModelCore::SelectedPropertyGroups >::r > *", 0, 0, (void*)0, 0};

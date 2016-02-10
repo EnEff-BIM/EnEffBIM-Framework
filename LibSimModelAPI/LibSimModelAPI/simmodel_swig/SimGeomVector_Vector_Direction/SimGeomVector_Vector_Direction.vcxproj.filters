@@ -25,6 +25,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="SimGeomVector_Vector_Direction.i" />
+    <None Include="SimGeomVector_Vector_Direction.i" />
   </ItemGroup>
 </Project>

@@ -25,6 +25,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="SimGeomSurface_BoundedSurface_CurveBoundedPlane.i" />
+    <None Include="SimGeomSurface_BoundedSurface_CurveBoundedPlane.i" />
   </ItemGroup>
 </Project>

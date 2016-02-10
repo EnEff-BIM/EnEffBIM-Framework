@@ -25,6 +25,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="SimClassification_ClassificationReference_SpaceTypeOwner.i" />
+    <None Include="SimClassification_ClassificationReference_SpaceTypeOwner.i" />
   </ItemGroup>
 </Project>

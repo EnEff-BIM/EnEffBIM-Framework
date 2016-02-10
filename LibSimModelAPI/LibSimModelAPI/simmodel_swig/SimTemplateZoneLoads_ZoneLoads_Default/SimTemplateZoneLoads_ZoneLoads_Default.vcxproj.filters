@@ -25,6 +25,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="SimTemplateZoneLoads_ZoneLoads_Default.i" />
+    <None Include="SimTemplateZoneLoads_ZoneLoads_Default.i" />
   </ItemGroup>
 </Project>

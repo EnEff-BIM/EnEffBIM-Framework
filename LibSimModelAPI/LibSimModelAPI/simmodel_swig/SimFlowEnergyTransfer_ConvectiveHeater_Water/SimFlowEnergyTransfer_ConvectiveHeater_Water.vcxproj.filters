@@ -25,6 +25,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="SimFlowEnergyTransfer_ConvectiveHeater_Water.i" />
+    <None Include="SimFlowEnergyTransfer_ConvectiveHeater_Water.i" />
   </ItemGroup>
 </Project>

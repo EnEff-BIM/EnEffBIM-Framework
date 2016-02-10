@@ -25,6 +25,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="SimPresentationLayerAssignment_Default_Default.i" />
+    <None Include="SimPresentationLayerAssignment_Default_Default.i" />
   </ItemGroup>
 </Project>

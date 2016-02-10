@@ -8,8 +8,8 @@
  * interface file instead.
  * ----------------------------------------------------------------------------- */
 
-#ifndef SWIG_SimGeomHalfSpaceSolidHalfSpaceSolidPolygonalBoundedHalfSpa_WRAP_H_
-#define SWIG_SimGeomHalfSpaceSolidHalfSpaceSolidPolygonalBoundedHalfSpa_WRAP_H_
+#ifndef SWIG_SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace_WRAP_H_
+#define SWIG_SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace_WRAP_H_
 
 #include <map>
 #include <string>

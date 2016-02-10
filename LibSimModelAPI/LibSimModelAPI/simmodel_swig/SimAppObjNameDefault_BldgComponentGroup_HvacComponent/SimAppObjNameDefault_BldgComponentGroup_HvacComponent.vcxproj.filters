@@ -25,6 +25,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="SimAppObjNameDefault_BldgComponentGroup_HvacComponent.i" />
+    <None Include="SimAppObjNameDefault_BldgComponentGroup_HvacComponent.i" />
   </ItemGroup>
 </Project>

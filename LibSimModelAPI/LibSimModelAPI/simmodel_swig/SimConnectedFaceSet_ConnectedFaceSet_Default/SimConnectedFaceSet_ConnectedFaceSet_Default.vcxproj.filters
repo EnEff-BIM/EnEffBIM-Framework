@@ -25,6 +25,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="SimConnectedFaceSet_ConnectedFaceSet_Default.i" />
+    <None Include="SimConnectedFaceSet_ConnectedFaceSet_Default.i" />
   </ItemGroup>
 </Project>

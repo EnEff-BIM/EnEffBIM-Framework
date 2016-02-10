@@ -42,7 +42,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <TargetName>_$(ProjectName)</TargetName>
+    <TargetName>_SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace</TargetName>
     <TargetExt>.pyd</TargetExt>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -80,11 +80,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="SimGeomHalfSpaceSolidHalfSpaceSolidPolygonalBoundedHalfSpa.i">
+    <None Include="SimGeomHalfSpaceSolidHalfSpaceSolidPolygonalBoundedHalfSpa.i">
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Research\EnEff-BIM\Python\SWIG\swigwin-3.0.7\swig.exe -c++ -python -outdir $(Outdir) %(Identity)</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename)_wrap.cxx;$(Outdir)%(Filename).py</Outputs>
       <FileType>Document</FileType>
-    </CustomBuild>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="SimGeomHalfSpaceSolidHalfSpaceSolidPolygonalBoundedHalfSpa_wrap.cxx" />

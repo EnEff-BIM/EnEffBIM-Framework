@@ -25,6 +25,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="SimList_SchemeList_PlantOperatingScheme.i" />
+    <None Include="SimList_SchemeList_PlantOperatingScheme.i" />
   </ItemGroup>
 </Project>

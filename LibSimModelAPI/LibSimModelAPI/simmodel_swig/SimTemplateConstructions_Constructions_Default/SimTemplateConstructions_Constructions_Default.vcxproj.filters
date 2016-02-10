@@ -25,6 +25,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="SimTemplateConstructions_Constructions_Default.i" />
+    <None Include="SimTemplateConstructions_Constructions_Default.i" />
   </ItemGroup>
 </Project>

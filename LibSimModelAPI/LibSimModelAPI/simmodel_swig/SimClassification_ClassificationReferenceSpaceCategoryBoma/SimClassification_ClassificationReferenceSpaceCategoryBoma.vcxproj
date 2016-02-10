@@ -80,11 +80,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="SimClassification_ClassificationReferenceSpaceCategoryBoma.i">
+    <None Include="SimClassification_ClassificationReferenceSpaceCategoryBoma.i">
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Research\EnEff-BIM\Python\SWIG\swigwin-3.0.7\swig.exe -c++ -python -outdir $(Outdir) %(Identity)</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename)_wrap.cxx;$(Outdir)%(Filename).py</Outputs>
       <FileType>Document</FileType>
-    </CustomBuild>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="SimClassification_ClassificationReferenceSpaceCategoryBoma_wrap.cxx" />

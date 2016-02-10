@@ -1547,6 +1547,45 @@ class int_optional(_object):
 int_optional_swigregister = _base.int_optional_swigregister
 int_optional_swigregister(int_optional)
 
+class bool_optional(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, bool_optional, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, bool_optional, name)
+    __repr__ = _swig_repr
+
+    def __init__(self, *args):
+        this = _base.new_bool_optional(*args)
+        try:
+            self.this.append(this)
+        except:
+            self.this = this
+
+    def __deref__(self, *args):
+        return _base.bool_optional___deref__(self, *args)
+
+    def __ref__(self, *args):
+        return _base.bool_optional___ref__(self, *args)
+
+    def present(self):
+        return _base.bool_optional_present(self)
+
+    def get(self, *args):
+        return _base.bool_optional_get(self, *args)
+
+    def getValue(self):
+        return _base.bool_optional_getValue(self)
+
+    def set(self, y):
+        return _base.bool_optional_set(self, y)
+
+    def reset(self):
+        return _base.bool_optional_reset(self)
+    __swig_destroy__ = _base.delete_bool_optional
+    __del__ = lambda self: None
+bool_optional_swigregister = _base.bool_optional_swigregister
+bool_optional_swigregister(bool_optional)
+
 class string_optional(_object):
     __swig_setmethods__ = {}
     __setattr__ = lambda self, name, value: _swig_setattr(self, string_optional, name, value)

@@ -25,6 +25,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="SimFlowFitting_Splitter_DemandProxySplitterWater.i" />
+    <None Include="SimFlowFitting_Splitter_DemandProxySplitterWater.i" />
   </ItemGroup>
 </Project>

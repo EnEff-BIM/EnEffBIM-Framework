@@ -25,6 +25,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="SimWindowLiningProps_WindowLiningProps_Default.i" />
+    <None Include="SimWindowLiningProps_WindowLiningProps_Default.i" />
   </ItemGroup>
 </Project>

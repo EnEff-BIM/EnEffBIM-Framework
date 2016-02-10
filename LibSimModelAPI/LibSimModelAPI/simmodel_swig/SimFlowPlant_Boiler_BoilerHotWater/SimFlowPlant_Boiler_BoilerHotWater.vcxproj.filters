@@ -25,6 +25,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="SimFlowPlant_Boiler_BoilerHotWater.i" />
+    <None Include="SimFlowPlant_Boiler_BoilerHotWater.i" />
   </ItemGroup>
 </Project>

@@ -561,6 +561,10 @@ namespace xsd
 		  {
 			  return (double)x_;
 		  }
+		  else if(std::is_same<T, xml_schema::boolean>::value)
+		  {
+			  return (bool)x_;
+		  }
 
 		  return x_;
 		}

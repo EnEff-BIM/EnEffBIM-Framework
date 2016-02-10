@@ -25,6 +25,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="SimGeomPoint_Point_CartesianPoint.i" />
+    <None Include="SimGeomPoint_Point_CartesianPoint.i" />
   </ItemGroup>
 </Project>

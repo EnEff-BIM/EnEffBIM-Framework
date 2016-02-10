@@ -25,6 +25,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="SimSolarShade_Overhang_Default.i" />
+    <None Include="SimSolarShade_Overhang_Default.i" />
   </ItemGroup>
 </Project>

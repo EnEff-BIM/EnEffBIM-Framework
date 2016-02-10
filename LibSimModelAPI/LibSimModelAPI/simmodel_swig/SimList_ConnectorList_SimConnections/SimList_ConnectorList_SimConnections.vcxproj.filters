@@ -25,6 +25,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="SimList_ConnectorList_SimConnections.i" />
+    <None Include="SimList_ConnectorList_SimConnections.i" />
   </ItemGroup>
 </Project>
