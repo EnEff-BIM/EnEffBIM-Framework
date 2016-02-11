@@ -24,7 +24,7 @@ import genericapi.AixLib.Fluid.HeatExchangers.Radiators.Radiator as Radiator
 import genericapi.AixLib.Fluid.Movers.Pump as Pump
 import genericapi.MapAPI.MapHierarchy as MapHierarchy
 
-
+if "asd"
 print(sim_instance.SimConnection_HotWaterFlow_Default().front().SourcePort().getValue())
 asd = MapHierarchy.MapProject()
 test = MapHierarchy.MapBuilding(asd, asd)

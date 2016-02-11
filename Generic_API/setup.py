@@ -15,5 +15,5 @@ setup(name='Generic_API',
       author_email='',
       license='MIT',
       packages=['genericapi'],
-      setup_requires = [],
-      install_requires = [])
+      setup_requires=[],
+      install_requires=[])
