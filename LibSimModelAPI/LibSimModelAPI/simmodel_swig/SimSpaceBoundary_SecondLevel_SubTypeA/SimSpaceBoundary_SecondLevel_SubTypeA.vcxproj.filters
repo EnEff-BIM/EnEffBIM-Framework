@@ -25,6 +25,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="SimSpaceBoundary_SecondLevel_SubTypeA.i" />
+    <None Include="SimSpaceBoundary_SecondLevel_SubTypeA.i" />
   </ItemGroup>
 </Project>

@@ -25,6 +25,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="SimController_SupplyWater_Temperature.i" />
+    <None Include="SimController_SupplyWater_Temperature.i" />
   </ItemGroup>
 </Project>

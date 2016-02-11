@@ -15,20 +15,20 @@ if version_info >= (2, 6, 0):
         import imp
         fp = None
         try:
-            fp, pathname, description = imp.find_module('_SimGeomHalfSpaceSolidHalfSpaceSolidPolygonalBoundedHalfSpa', [dirname(__file__)])
+            fp, pathname, description = imp.find_module('_SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace', [dirname(__file__)])
         except ImportError:
-            import _SimGeomHalfSpaceSolidHalfSpaceSolidPolygonalBoundedHalfSpa
-            return _SimGeomHalfSpaceSolidHalfSpaceSolidPolygonalBoundedHalfSpa
+            import _SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace
+            return _SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace
         if fp is not None:
             try:
-                _mod = imp.load_module('_SimGeomHalfSpaceSolidHalfSpaceSolidPolygonalBoundedHalfSpa', fp, pathname, description)
+                _mod = imp.load_module('_SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace', fp, pathname, description)
             finally:
                 fp.close()
             return _mod
-    _SimGeomHalfSpaceSolidHalfSpaceSolidPolygonalBoundedHalfSpa = swig_import_helper()
+    _SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace = swig_import_helper()
     del swig_import_helper
 else:
-    import _SimGeomHalfSpaceSolidHalfSpaceSolidPolygonalBoundedHalfSpa
+    import _SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace
 del version_info
 try:
     _swig_property = property
@@ -110,23 +110,23 @@ class SimGeomHalfSpaceSolid(base.SimGeometricRepresentationItem):
     __repr__ = _swig_repr
 
     def BaseSurface(self, *args):
-        return _SimGeomHalfSpaceSolidHalfSpaceSolidPolygonalBoundedHalfSpa.SimGeomHalfSpaceSolid_BaseSurface(self, *args)
+        return _SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace.SimGeomHalfSpaceSolid_BaseSurface(self, *args)
 
     def AgreementFlag(self, *args):
-        return _SimGeomHalfSpaceSolidHalfSpaceSolidPolygonalBoundedHalfSpa.SimGeomHalfSpaceSolid_AgreementFlag(self, *args)
+        return _SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace.SimGeomHalfSpaceSolid_AgreementFlag(self, *args)
 
     def __init__(self, *args):
-        this = _SimGeomHalfSpaceSolidHalfSpaceSolidPolygonalBoundedHalfSpa.new_SimGeomHalfSpaceSolid(*args)
+        this = _SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace.new_SimGeomHalfSpaceSolid(*args)
         try:
             self.this.append(this)
         except:
             self.this = this
 
     def _clone(self, f=0, c=None):
-        return _SimGeomHalfSpaceSolidHalfSpaceSolidPolygonalBoundedHalfSpa.SimGeomHalfSpaceSolid__clone(self, f, c)
-    __swig_destroy__ = _SimGeomHalfSpaceSolidHalfSpaceSolidPolygonalBoundedHalfSpa.delete_SimGeomHalfSpaceSolid
+        return _SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace.SimGeomHalfSpaceSolid__clone(self, f, c)
+    __swig_destroy__ = _SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace.delete_SimGeomHalfSpaceSolid
     __del__ = lambda self: None
-SimGeomHalfSpaceSolid_swigregister = _SimGeomHalfSpaceSolidHalfSpaceSolidPolygonalBoundedHalfSpa.SimGeomHalfSpaceSolid_swigregister
+SimGeomHalfSpaceSolid_swigregister = _SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace.SimGeomHalfSpaceSolid_swigregister
 SimGeomHalfSpaceSolid_swigregister(SimGeomHalfSpaceSolid)
 
 class SimGeomHalfSpaceSolid_HalfSpaceSolid(SimGeomHalfSpaceSolid):
@@ -141,17 +141,17 @@ class SimGeomHalfSpaceSolid_HalfSpaceSolid(SimGeomHalfSpaceSolid):
     __repr__ = _swig_repr
 
     def __init__(self, *args):
-        this = _SimGeomHalfSpaceSolidHalfSpaceSolidPolygonalBoundedHalfSpa.new_SimGeomHalfSpaceSolid_HalfSpaceSolid(*args)
+        this = _SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace.new_SimGeomHalfSpaceSolid_HalfSpaceSolid(*args)
         try:
             self.this.append(this)
         except:
             self.this = this
 
     def _clone(self, f=0, c=None):
-        return _SimGeomHalfSpaceSolidHalfSpaceSolidPolygonalBoundedHalfSpa.SimGeomHalfSpaceSolid_HalfSpaceSolid__clone(self, f, c)
-    __swig_destroy__ = _SimGeomHalfSpaceSolidHalfSpaceSolidPolygonalBoundedHalfSpa.delete_SimGeomHalfSpaceSolid_HalfSpaceSolid
+        return _SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace.SimGeomHalfSpaceSolid_HalfSpaceSolid__clone(self, f, c)
+    __swig_destroy__ = _SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace.delete_SimGeomHalfSpaceSolid_HalfSpaceSolid
     __del__ = lambda self: None
-SimGeomHalfSpaceSolid_HalfSpaceSolid_swigregister = _SimGeomHalfSpaceSolidHalfSpaceSolidPolygonalBoundedHalfSpa.SimGeomHalfSpaceSolid_HalfSpaceSolid_swigregister
+SimGeomHalfSpaceSolid_HalfSpaceSolid_swigregister = _SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace.SimGeomHalfSpaceSolid_HalfSpaceSolid_swigregister
 SimGeomHalfSpaceSolid_HalfSpaceSolid_swigregister(SimGeomHalfSpaceSolid_HalfSpaceSolid)
 
 class SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace(SimGeomHalfSpaceSolid_HalfSpaceSolid):
@@ -166,23 +166,23 @@ class SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace(SimGeomHalf
     __repr__ = _swig_repr
 
     def Position(self, *args):
-        return _SimGeomHalfSpaceSolidHalfSpaceSolidPolygonalBoundedHalfSpa.SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace_Position(self, *args)
+        return _SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace.SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace_Position(self, *args)
 
     def PolygonalBoundary(self, *args):
-        return _SimGeomHalfSpaceSolidHalfSpaceSolidPolygonalBoundedHalfSpa.SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace_PolygonalBoundary(self, *args)
+        return _SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace.SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace_PolygonalBoundary(self, *args)
 
     def __init__(self, *args):
-        this = _SimGeomHalfSpaceSolidHalfSpaceSolidPolygonalBoundedHalfSpa.new_SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace(*args)
+        this = _SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace.new_SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace(*args)
         try:
             self.this.append(this)
         except:
             self.this = this
 
     def _clone(self, f=0, c=None):
-        return _SimGeomHalfSpaceSolidHalfSpaceSolidPolygonalBoundedHalfSpa.SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace__clone(self, f, c)
-    __swig_destroy__ = _SimGeomHalfSpaceSolidHalfSpaceSolidPolygonalBoundedHalfSpa.delete_SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace
+        return _SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace.SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace__clone(self, f, c)
+    __swig_destroy__ = _SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace.delete_SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace
     __del__ = lambda self: None
-SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace_swigregister = _SimGeomHalfSpaceSolidHalfSpaceSolidPolygonalBoundedHalfSpa.SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace_swigregister
+SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace_swigregister = _SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace.SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace_swigregister
 SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace_swigregister(SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace)
 
 class SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace_sequence(base.sequence_common):
@@ -197,59 +197,59 @@ class SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace_sequence(ba
     __repr__ = _swig_repr
 
     def __init__(self, *args):
-        this = _SimGeomHalfSpaceSolidHalfSpaceSolidPolygonalBoundedHalfSpa.new_SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace_sequence(*args)
+        this = _SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace.new_SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace_sequence(*args)
         try:
             self.this.append(this)
         except:
             self.this = this
 
     def assign(self, n, x):
-        return _SimGeomHalfSpaceSolidHalfSpaceSolidPolygonalBoundedHalfSpa.SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace_sequence_assign(self, n, x)
+        return _SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace.SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace_sequence_assign(self, n, x)
 
     def begin(self, *args):
-        return _SimGeomHalfSpaceSolidHalfSpaceSolidPolygonalBoundedHalfSpa.SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace_sequence_begin(self, *args)
+        return _SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace.SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace_sequence_begin(self, *args)
 
     def end(self, *args):
-        return _SimGeomHalfSpaceSolidHalfSpaceSolidPolygonalBoundedHalfSpa.SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace_sequence_end(self, *args)
+        return _SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace.SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace_sequence_end(self, *args)
 
     def rbegin(self, *args):
-        return _SimGeomHalfSpaceSolidHalfSpaceSolidPolygonalBoundedHalfSpa.SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace_sequence_rbegin(self, *args)
+        return _SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace.SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace_sequence_rbegin(self, *args)
 
     def rend(self, *args):
-        return _SimGeomHalfSpaceSolidHalfSpaceSolidPolygonalBoundedHalfSpa.SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace_sequence_rend(self, *args)
+        return _SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace.SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace_sequence_rend(self, *args)
 
     def at(self, *args):
-        return _SimGeomHalfSpaceSolidHalfSpaceSolidPolygonalBoundedHalfSpa.SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace_sequence_at(self, *args)
+        return _SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace.SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace_sequence_at(self, *args)
 
     def front(self, *args):
-        return _SimGeomHalfSpaceSolidHalfSpaceSolidPolygonalBoundedHalfSpa.SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace_sequence_front(self, *args)
+        return _SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace.SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace_sequence_front(self, *args)
 
     def back(self, *args):
-        return _SimGeomHalfSpaceSolidHalfSpaceSolidPolygonalBoundedHalfSpa.SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace_sequence_back(self, *args)
+        return _SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace.SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace_sequence_back(self, *args)
 
     def push_back(self, *args):
-        return _SimGeomHalfSpaceSolidHalfSpaceSolidPolygonalBoundedHalfSpa.SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace_sequence_push_back(self, *args)
+        return _SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace.SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace_sequence_push_back(self, *args)
 
     def pop_back(self):
-        return _SimGeomHalfSpaceSolidHalfSpaceSolidPolygonalBoundedHalfSpa.SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace_sequence_pop_back(self)
+        return _SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace.SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace_sequence_pop_back(self)
 
     def detach_back(self, pop=True):
-        return _SimGeomHalfSpaceSolidHalfSpaceSolidPolygonalBoundedHalfSpa.SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace_sequence_detach_back(self, pop)
+        return _SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace.SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace_sequence_detach_back(self, pop)
 
     def insert(self, *args):
-        return _SimGeomHalfSpaceSolidHalfSpaceSolidPolygonalBoundedHalfSpa.SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace_sequence_insert(self, *args)
+        return _SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace.SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace_sequence_insert(self, *args)
 
     def erase(self, *args):
-        return _SimGeomHalfSpaceSolidHalfSpaceSolidPolygonalBoundedHalfSpa.SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace_sequence_erase(self, *args)
+        return _SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace.SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace_sequence_erase(self, *args)
 
     def detach(self, position, r, erase=True):
-        return _SimGeomHalfSpaceSolidHalfSpaceSolidPolygonalBoundedHalfSpa.SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace_sequence_detach(self, position, r, erase)
+        return _SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace.SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace_sequence_detach(self, position, r, erase)
 
     def swap(self, x):
-        return _SimGeomHalfSpaceSolidHalfSpaceSolidPolygonalBoundedHalfSpa.SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace_sequence_swap(self, x)
-    __swig_destroy__ = _SimGeomHalfSpaceSolidHalfSpaceSolidPolygonalBoundedHalfSpa.delete_SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace_sequence
+        return _SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace.SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace_sequence_swap(self, x)
+    __swig_destroy__ = _SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace.delete_SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace_sequence
     __del__ = lambda self: None
-SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace_sequence_swigregister = _SimGeomHalfSpaceSolidHalfSpaceSolidPolygonalBoundedHalfSpa.SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace_sequence_swigregister
+SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace_sequence_swigregister = _SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace.SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace_sequence_swigregister
 SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace_sequence_swigregister(SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace_sequence)
 
 # This file is compatible with both classic and new-style classes.

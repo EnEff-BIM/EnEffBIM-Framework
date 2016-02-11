@@ -25,6 +25,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="SimControlScheme_AvailabilityManagerScheme_Scheduled.i" />
+    <None Include="SimControlScheme_AvailabilityManagerScheme_Scheduled.i" />
   </ItemGroup>
 </Project>

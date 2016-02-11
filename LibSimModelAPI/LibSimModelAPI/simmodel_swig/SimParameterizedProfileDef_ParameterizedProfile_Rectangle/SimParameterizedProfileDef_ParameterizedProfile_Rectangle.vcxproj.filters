@@ -25,6 +25,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="SimParameterizedProfileDef_ParameterizedProfile_Rectangle.i" />
+    <None Include="SimParameterizedProfileDef_ParameterizedProfile_Rectangle.i" />
   </ItemGroup>
 </Project>

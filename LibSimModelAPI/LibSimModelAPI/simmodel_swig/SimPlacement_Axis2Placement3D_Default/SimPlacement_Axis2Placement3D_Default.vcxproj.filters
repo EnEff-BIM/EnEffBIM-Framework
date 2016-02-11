@@ -25,6 +25,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="SimPlacement_Axis2Placement3D_Default.i" />
+    <None Include="SimPlacement_Axis2Placement3D_Default.i" />
   </ItemGroup>
 </Project>

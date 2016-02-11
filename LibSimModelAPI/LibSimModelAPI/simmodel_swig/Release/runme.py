@@ -9,6 +9,13 @@ import SimModel
 # if you need to access a class named A, then import A like following code
 import SimBuilding_Building_Default
 import SimBuildingStory_BuildingStory_Default
+import SimSIUnitType_SiUnit_Default
+import SimFlowMover_Pump_VariableSpeedReturn
+import SimFlowPlant_Boiler_BoilerHotWater
+import SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace
+import SimGroup_SpatialZoneGroup_ZoneHvacGroup
+import SimProject_Project_DesignAlternative
+import SimModel_Hierachy
 
 # load the use case SimXML, and validate the synatx
 unmapped_data = SimModel.SimModel_("Boiler_Gas_VDI6020_V10.xml")
@@ -38,3 +45,19 @@ for id in range(0, sim_build_seq.sizeInt()):
         print(" Building story height: ", ht.getValue(), "\n")
     print("\n")
     
+print(unmapped_data.SimSIUnitType_SiUnit_Default().front().DecimalPrecision().getValue(), "\n")
+print(unmapped_data.SimFlowMover_Pump_VariableSpeedReturn().at(1).IsTemplateObject().getValue(), "\n")
+print(unmapped_data.SimFlowPlant_Boiler_BoilerHotWater().front().IsTemplateObject().getValue(), "\n")
+
+print(unmapped_data.SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace().front().AgreementFlag().getValue(), "\n")
+print(unmapped_data.SimGroup_SpatialZoneGroup_ZoneHvacGroup().front().HasTemplateChanged().getValue(), "\n")
+
+#hiearchy
+sim_hierarchy = SimModel_Hierachy.SimHierarchy()
+sim_hierarchy.loadSimModel("Boiler_Gas_VDI6020_V10.xml")
+nodeList = sim_hierarchy.getHierarchyNodeList()
+print(nodeList.size())
+for id in range(0, nodeList.size()):
+    print(nodeList[id].getCurrentObjectPtr().SimModelName().getValue())
+
+print("\n")

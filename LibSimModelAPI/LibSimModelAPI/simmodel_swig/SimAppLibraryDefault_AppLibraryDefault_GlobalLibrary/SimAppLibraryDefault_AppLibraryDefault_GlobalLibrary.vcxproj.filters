@@ -25,6 +25,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="SimAppLibraryDefault_AppLibraryDefault_GlobalLibrary.i" />
+    <None Include="SimAppLibraryDefault_AppLibraryDefault_GlobalLibrary.i" />
   </ItemGroup>
 </Project>

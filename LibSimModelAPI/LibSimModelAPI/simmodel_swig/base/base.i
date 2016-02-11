@@ -83,6 +83,7 @@ namespace xsd
 		// property method
 		%template(decimal_optional) optional<::xml_schema::decimal, true>;
 		%template(int_optional) optional<::xml_schema::int_, true>;
+		%template(bool_optional) optional<::xml_schema::boolean, true>;
 		%template(string_optional) optional<::xml_schema::string, false>;
 		%template(idref_optional) optional<::xml_schema::idref, false >;
 	}

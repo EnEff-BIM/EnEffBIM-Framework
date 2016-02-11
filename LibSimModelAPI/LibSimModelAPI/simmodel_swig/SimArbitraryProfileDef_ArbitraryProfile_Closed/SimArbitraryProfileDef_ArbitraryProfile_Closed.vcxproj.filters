@@ -25,6 +25,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="SimArbitraryProfileDef_ArbitraryProfile_Closed.i" />
+    <None Include="SimArbitraryProfileDef_ArbitraryProfile_Closed.i" />
   </ItemGroup>
 </Project>

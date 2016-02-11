@@ -25,6 +25,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="SimClassification_ClassificationReferenceSpaceCategoryBoma.i" />
+    <None Include="SimClassification_ClassificationReferenceSpaceCategoryBoma.i" />
   </ItemGroup>
 </Project>

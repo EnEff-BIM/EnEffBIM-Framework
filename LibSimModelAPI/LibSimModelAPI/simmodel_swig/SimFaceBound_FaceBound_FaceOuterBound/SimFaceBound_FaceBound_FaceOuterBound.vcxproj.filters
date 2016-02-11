@@ -25,6 +25,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="SimFaceBound_FaceBound_FaceOuterBound.i" />
+    <None Include="SimFaceBound_FaceBound_FaceOuterBound.i" />
   </ItemGroup>
 </Project>

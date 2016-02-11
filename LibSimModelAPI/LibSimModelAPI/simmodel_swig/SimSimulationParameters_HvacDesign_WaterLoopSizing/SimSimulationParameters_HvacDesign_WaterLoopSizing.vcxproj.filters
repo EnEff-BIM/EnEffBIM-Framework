@@ -25,6 +25,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="SimSimulationParameters_HvacDesign_WaterLoopSizing.i" />
+    <None Include="SimSimulationParameters_HvacDesign_WaterLoopSizing.i" />
   </ItemGroup>
 </Project>

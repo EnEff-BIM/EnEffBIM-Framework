@@ -25,6 +25,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="SimAppObjNameDefault_Space_Space.i" />
+    <None Include="SimAppObjNameDefault_Space_Space.i" />
   </ItemGroup>
 </Project>

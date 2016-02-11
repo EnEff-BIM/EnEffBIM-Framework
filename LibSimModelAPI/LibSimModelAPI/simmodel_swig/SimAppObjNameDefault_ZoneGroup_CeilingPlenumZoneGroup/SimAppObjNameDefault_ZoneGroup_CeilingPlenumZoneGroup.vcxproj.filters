@@ -25,6 +25,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="SimAppObjNameDefault_ZoneGroup_CeilingPlenumZoneGroup.i" />
+    <None Include="SimAppObjNameDefault_ZoneGroup_CeilingPlenumZoneGroup.i" />
   </ItemGroup>
 </Project>

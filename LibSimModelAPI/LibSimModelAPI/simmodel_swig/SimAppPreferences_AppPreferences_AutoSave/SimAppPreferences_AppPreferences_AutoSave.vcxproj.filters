@@ -25,6 +25,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="SimAppPreferences_AppPreferences_AutoSave.i" />
+    <None Include="SimAppPreferences_AppPreferences_AutoSave.i" />
   </ItemGroup>
 </Project>

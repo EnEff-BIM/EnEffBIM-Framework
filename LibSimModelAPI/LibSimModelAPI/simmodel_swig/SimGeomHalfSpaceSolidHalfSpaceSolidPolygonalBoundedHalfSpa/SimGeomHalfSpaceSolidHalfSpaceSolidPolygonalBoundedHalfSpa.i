@@ -1,5 +1,5 @@
 /* File : SimGeomHalfSpaceSolidHalfSpaceSolidPolygonalBoundedHalfSpa.i */
-%module(directors="1") SimGeomHalfSpaceSolidHalfSpaceSolidPolygonalBoundedHalfSpa
+%module(directors="1") SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace
 %include <std_auto_ptr.i>
 
 %{

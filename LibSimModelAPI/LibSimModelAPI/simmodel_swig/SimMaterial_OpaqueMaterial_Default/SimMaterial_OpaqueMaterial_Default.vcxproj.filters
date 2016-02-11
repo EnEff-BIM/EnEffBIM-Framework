@@ -25,6 +25,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="SimMaterial_OpaqueMaterial_Default.i" />
+    <None Include="SimMaterial_OpaqueMaterial_Default.i" />
   </ItemGroup>
 </Project>

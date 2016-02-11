@@ -3765,16 +3765,16 @@ static swig_module_info swig_module = {swig_types, 339, 0, 0, 0, 0};
 #endif
 
 /*-----------------------------------------------
-              @(target):= _SimGeomHalfSpaceSolidHalfSpaceSolidPolygonalBoundedHalfSpa.so
+              @(target):= _SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace.so
   ------------------------------------------------*/
 #if PY_VERSION_HEX >= 0x03000000
-#  define SWIG_init    PyInit__SimGeomHalfSpaceSolidHalfSpaceSolidPolygonalBoundedHalfSpa
+#  define SWIG_init    PyInit__SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace
 
 #else
-#  define SWIG_init    init_SimGeomHalfSpaceSolidHalfSpaceSolidPolygonalBoundedHalfSpa
+#  define SWIG_init    init_SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace
 
 #endif
-#define SWIG_name    "_SimGeomHalfSpaceSolidHalfSpaceSolidPolygonalBoundedHalfSpa"
+#define SWIG_name    "_SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace"
 
 #define SWIGVERSION 0x030007 
 #define SWIG_VERSION SWIGVERSION

@@ -25,6 +25,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="SimAppObjNameDefault_DistributionSystem_HvacAirLoop.i" />
+    <None Include="SimAppObjNameDefault_DistributionSystem_HvacAirLoop.i" />
   </ItemGroup>
 </Project>

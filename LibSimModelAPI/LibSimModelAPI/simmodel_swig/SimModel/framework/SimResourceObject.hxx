@@ -316,7 +316,7 @@ namespace schema
         // IsTemplateObject
         //
         typedef ::xml_schema::boolean IsTemplateObject_type;
-        typedef ::xsd::cxx::tree::optional< IsTemplateObject_type > IsTemplateObject_optional;
+        typedef ::xsd::cxx::tree::optional< IsTemplateObject_type, true > IsTemplateObject_optional;
         typedef ::xsd::cxx::tree::traits< IsTemplateObject_type, char > IsTemplateObject_traits;
 
         const IsTemplateObject_optional&

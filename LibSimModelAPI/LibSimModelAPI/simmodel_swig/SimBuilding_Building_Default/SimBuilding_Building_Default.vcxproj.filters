@@ -25,6 +25,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="SimBuilding_Building_Default.i" />
+    <None Include="SimBuilding_Building_Default.i" />
   </ItemGroup>
 </Project>
