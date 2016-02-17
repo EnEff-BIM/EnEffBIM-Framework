@@ -257,7 +257,7 @@ namespace schema
   {
     namespace BuildingModel
     {
-      class SimWall_Wall_Default: public ::schema::simxml::BuildingModel::SimWall_Wall
+      class __declspec(dllexport) SimWall_Wall_Default: public ::schema::simxml::BuildingModel::SimWall_Wall
       {
         public:
         // ContainedBldgElementArrays

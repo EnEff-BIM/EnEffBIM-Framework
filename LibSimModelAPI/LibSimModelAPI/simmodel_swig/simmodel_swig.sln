@@ -355,6 +355,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimWindowType_Window_Defaul
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimModel_Hierachy", "SimModel_Hierachy\SimModel_Hierachy.vcxproj", "{3125069A-D183-4E23-BEC7-18CD8BAC0E80}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimWall_Wall_Default", "SimWall_Wall_Default\SimWall_Wall_Default.vcxproj", "{5592CCF7-4887-4A5B-80DF-ECEC92113B56}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -1069,6 +1071,10 @@ Global
 		{3125069A-D183-4E23-BEC7-18CD8BAC0E80}.Debug|Win32.Build.0 = Debug|Win32
 		{3125069A-D183-4E23-BEC7-18CD8BAC0E80}.Release|Win32.ActiveCfg = Release|Win32
 		{3125069A-D183-4E23-BEC7-18CD8BAC0E80}.Release|Win32.Build.0 = Release|Win32
+		{5592CCF7-4887-4A5B-80DF-ECEC92113B56}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5592CCF7-4887-4A5B-80DF-ECEC92113B56}.Debug|Win32.Build.0 = Debug|Win32
+		{5592CCF7-4887-4A5B-80DF-ECEC92113B56}.Release|Win32.ActiveCfg = Release|Win32
+		{5592CCF7-4887-4A5B-80DF-ECEC92113B56}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
