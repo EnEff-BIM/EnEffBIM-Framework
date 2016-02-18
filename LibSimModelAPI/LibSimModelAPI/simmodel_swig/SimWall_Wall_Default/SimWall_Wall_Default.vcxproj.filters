@@ -15,9 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="SimWall_Wall_Default.i" />
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="SimWall_Wall_Default_wrap.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -26,5 +23,8 @@
     <ClInclude Include="SimWall_Wall_Default_wrap.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SimWall_Wall_Default.i" />
   </ItemGroup>
 </Project>

@@ -16289,6 +16289,9 @@
 		<simres:SimMatLayer_MaterialName>ID1312</simres:SimMatLayer_MaterialName>
 		<simres:SimMatLayer_LayerThickness>240</simres:SimMatLayer_LayerThickness>
 	</SimMaterialLayer_OpaqueMaterialLayer_Default>
+	<!-- Missing IDs -->
+	<SimMaterialLayerSet_Default_Default RefId="ID1362"/>
+	<SimMaterialLayerSet_Default_Default RefId="ID1363"/>
 	<SimMaterialLayerSet_Default_Default RefId="ID1364">
 		<simcore:SimUniqueID>6740bdd7-820f-4266-aae5-d9342467af58</simcore:SimUniqueID>
 		<simcore:SimModelType>Default</simcore:SimModelType>
@@ -33993,8 +33996,6 @@
 		<simbldg:RepresentationMaps>ID1506 ID1528</simbldg:RepresentationMaps>
 	</SimWindowType_Window_Default>
   <!-- Missing IDs -->
-  <SimWindowType_Window_Default RefId="ID1362"/>
-  <SimWindowType_Window_Default RefId="ID1363"/>
   <SimWindowType_Window_Default RefId="ID1365"/>
   <SimWindowType_Window_Default RefId="ID1429"/>
   <SimWindowType_Window_Default RefId="ID2529"/>

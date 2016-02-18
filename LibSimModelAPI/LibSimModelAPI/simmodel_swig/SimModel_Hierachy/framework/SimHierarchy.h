@@ -1,6 +1,7 @@
 #ifndef SIM_HIERARCHY_H
 #define SIM_HIERARCHY_H
 
+#include <iostream>
 #include <vector>
 #include <string>
 #include <typeinfo>
@@ -9,12 +10,22 @@
 using namespace schema::simxml::Model;
 using namespace schema::simxml::SimModelCore;
 
-class SimHierarchyNode
+class SimHierarchyNodeBase
+{
+public:
+	// current object
+	SimRoot* _SimRootObject;
+	// data type conversion
+	template<class T>
+	T* dataType()
+	{
+		return static_cast<T*>(_SimRootObject);
+	}
+};
+
+class SimHierarchyNode : public SimHierarchyNodeBase
 {
 private:
-	// current object
-	SimRoot _SimRootObject;
-	SimRoot* _SimRootObjectPtr;
 	// parent objects
 	std::vector<SimHierarchyNode*> ParentList;
 	// children objects
@@ -26,17 +37,20 @@ private:
 
 	// set SimModel object
 	friend void setCurrentObject(SimHierarchyNode& _simNode, SimRoot& _simObj);
-	friend void setCurrentObjectPtr(SimHierarchyNode& _simNode, SimRoot* _simObj);
 	// add parent object
 	friend void addParent(SimHierarchyNode& _simNode, SimHierarchyNode& _simParentNode);
 	// add child object
 	friend void addChild(SimHierarchyNode& _simNode, SimHierarchyNode& _simChildNode);
+	// add parent child relationship
+	friend void addNodesRelationship(SimHierarchyNode& _simParentNode, SimHierarchyNode&_simChildNode);
 
 public:
-	SimHierarchyNode() {}
-	// get SimModel object
-	SimRoot& getCurrentObject();
-	SimRoot* getCurrentObjectPtr();
+	SimHierarchyNode() 
+	{ 
+		_SimRootObject = NULL; 
+		ParentList.resize(0);
+		ChildList.resize(0);
+	}
 	// get its parent objects
 	std::vector<SimHierarchyNode*> getParentList();
 	// get its child objects
@@ -61,21 +75,25 @@ private:
 	// SimModel object Id index
 	std::map<std::string, SimHierarchyNode*> SimHierarchyNode_IdMapList;
 	// add SimModel Hiearachial Node
-	friend void addHierarchyNode(SimHierarchy& _simHierarchy, SimHierarchyNode& _simNode);
+	void addHierarchyNode(SimHierarchyNode& _simNode);
 	// unmapped SimModel data
 	std::auto_ptr<SimModel> SimModel_Data;
 public:
-	SimHierarchy() {}
+	SimHierarchy() { SimHierarchyNodeList.resize(0); }
+	// get SimModel Hierarchical Root Node
+	SimHierarchyNode* getHierarchyRootNode();
 	// get SimModel Hierarchical Nodes
 	std::vector<SimHierarchyNode> getHierarchyNodeList();
 	// get SimModel Hierarchical Node by retrieve object Id
 	SimHierarchyNode* getHierarchyNode(std::string _Id);
 	// check SimModel object class type
 	bool isClassType(SimRoot& _simObj, std::string _type);
+	bool isClassType(SimRoot* _simObj, std::string _type);
 	// get SimModel object class type
 	std::string ClassType(SimRoot& _simObj);
+	std::string ClassType(SimRoot* _simObj);
 	// load SimModel data
-	void loadSimModel(std::string _name);
+	::std::auto_ptr< ::schema::simxml::Model::SimModel > loadSimModel(std::string _name);
 };
 
 #endif // SIM_HIERARCHY_H
