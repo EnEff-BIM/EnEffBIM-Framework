@@ -6,24 +6,21 @@ Created on Mon Nov 23 12:00:26 2015
 """
 import genericapi.MapAPI.MapHierarchy as MapHierarchy
 
-def instantiate_radiator(parent, project, sim_instance):
-    import SimFlowEnergyTransfer_ConvectiveHeater_Water
-    test=[]
-    for id in range(sim_instance.SimFlowEnergyTransfer_ConvectiveHeater_Water().sizeInt()):
-        test.append(Radiator(parent, 
-                             project, 
-                             sim_instance.SimFlowEnergyTransfer_ConvectiveHeater_Water().at(id)))
-    return test
+def instantiate_radiator(project, sim_object, parent, loop):
+
+    return Radiator(project, sim_object, parent, loop)
 
 
 class Radiator(MapHierarchy.MapComponent):
     """Representation of AixLib.Fluid.HeatExchangers.Radiators.Radiator
     """
     
-    def __init__(self, parent, project, sim_instance):
+    def __init__(self, project, sim_object, parent, loop):
         
-        super(Radiator, self).__init__(parent, project)
-        self.sim_ref_id = [sim_instance.RefId()]
+        super(Radiator, self).__init__(project, sim_object, parent)
+        self.sim_ref_id = [sim_object.getSimModelObject().RefId()]
+        print(sim_object.getSimModelObject())
+        self.parent.hvac_component_group[loop].append(self)
         self.port_a = self.add_connector("port_a", "FluidPort")
         self.port_b = self.add_connector("port_b", "FluidPort")
         self.convPort = self.add_connector("convPort", "HeatPort")

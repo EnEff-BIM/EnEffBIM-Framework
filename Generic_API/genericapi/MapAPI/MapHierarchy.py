@@ -42,16 +42,16 @@ class MoObject(object):
 
     """
 
-    def __init__(self, project=None, parent=None):
+    def __init__(self, project=None, sim_object=None):
         
-        self.parent = parent
+        self.parent = None
         self.project = project
+        self.sim_object = sim_object
         
         self.target_location = None
         self.target_name = None
         self.parameters = []
         self.connectors = []
-        self.sim_ref_id = []
         self.map_control = []
      
        
@@ -196,8 +196,9 @@ class MapProject(object):
 
     """
 
-    def __init__(self):
+    def __init__(self, sim_object=None):
 
+        self.sim_object=sim_object
         self.buildings = []
         self.used_library = ""
         self.library_version = ""
@@ -240,9 +241,9 @@ class MapBuilding(MoObject):
     
     """
     
-    def __init__(self, project, parent):
+    def __init__(self, project, sim_object):
         
-        super(MapBuilding, self).__init__(project, parent)
+        super(MapBuilding, self).__init__(project, sim_object)
 
         self.building_name = ""
         self.thermal_zones = []
@@ -285,11 +286,11 @@ class MapThermalZone(MoObject):
 
     """
     
-    def __init__(self, project, parent):
+    def __init__(self,project=None, sim_object=None, parent=None):
         
-        super(MapThermalZone, self).__init__(project, parent)
+        super(MapThermalZone, self).__init__(project, sim_object)
         
-        
+        self.parent = parent
         self.zone_name = ""
         self.space_boundaries = []
         self.hvac_component_group = {}
@@ -308,11 +309,13 @@ class MapComponent(MoObject):
         control stratagies
     """
 
-    def __init__(self, project=None, parent=None):
+    def __init__(self, project=None, sim_object=None, parent=None):
 
-        super(MapComponent, self).__init__(project, parent)
-
+        super(MapComponent, self).__init__(project, sim_object)
+        self.parent = parent
         self.map_control = None
+
+
 
 
 class MapConnection(object):
