@@ -19,8 +19,13 @@ class Radiator(MapHierarchy.MapComponent):
         
         super(Radiator, self).__init__(project, sim_object, parent)
         self.sim_ref_id = [sim_object.getSimModelObject().RefId()]
-        print(sim_object.getSimModelObject())
-        self.parent.hvac_component_group[loop].append(self)
+        radiator_parent = sim_object.getParentList()
+        for d in range(radiator_parent.size()):
+
+            if radiator_parent[d].ClassType() == "SimGroup_SpatialZoneGroup_ZoneHvacGroup": #iterate thermal_zone hvac on bldg level
+                loop1 = radiator_parent[d].getSimModelObject().SimModelName().getValue()
+
+        self.parent.hvac_component_group[loop1].append(self)
         self.port_a = self.add_connector("port_a", "FluidPort")
         self.port_b = self.add_connector("port_b", "FluidPort")
         self.convPort = self.add_connector("convPort", "HeatPort")

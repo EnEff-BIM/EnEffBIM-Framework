@@ -70,12 +70,12 @@ if (root_node.getSimModelObject(), SimProject_Project_DesignAlternative):
                                     prj.buildings[-1].thermal_zones[-1].hvac_component_group[bldg_child[c].getSimModelObject().SimModelName().getValue()]=[]
                                 if isinstance(hvac_tz_child[f].getSimModelObject(), SimFlowEnergyTransfer_ConvectiveHeater_Water) and  hvac_tz_child[f].getSimModelObject().IsTemplateObject().getValue() is False:
                                     import genericapi.AixLib.Fluid.HeatExchangers.Radiators.Radiator as Radiator
-                                    Radiator.instantiate_radiator(prj, hvac_tz_child[f], prj.buildings[-1].thermal_zones[-1], bldg_child[c].getSimModelObject().SimModelName().getValue())
+                                    Radiator.instantiate_radiator(prj, hvac_tz_child[f], prj.buildings[-1].thermal_zones[-1], "asd")
 
 
 
 print(prj.buildings[-1].hvac_component_group)
-print(prj.buildings[-1].thermal_zones[-1].hvac_component_group["Zone HVAC Group 1"][0].sim_ref_id)
+print(prj.buildings[-1].thermal_zones[-1].hvac_component_group)
 
 print("aosidjaoisdjaoisd")
 
