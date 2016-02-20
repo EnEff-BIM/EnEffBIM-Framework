@@ -6,26 +6,23 @@ Created on Mon Nov 23 12:00:26 2015
 """
 import genericapi.MapAPI.MapHierarchy as MapHierarchy
 
-def instantiate_radiator(project, sim_object, parent, loop):
-
-    return Radiator(project, sim_object, parent, loop)
-
-
 class Radiator(MapHierarchy.MapComponent):
     """Representation of AixLib.Fluid.HeatExchangers.Radiators.Radiator
     """
     
-    def __init__(self, project, sim_object, parent, loop):
+    def __init__(self, project, sim_object, parent):
         
         super(Radiator, self).__init__(project, sim_object, parent)
         self.sim_ref_id = [sim_object.getSimModelObject().RefId()]
-        radiator_parent = sim_object.getParentList()
-        for d in range(radiator_parent.size()):
+        boiler_parent = sim_object.getParentList()
+        for a in range(boiler_parent.size()):
+            if boiler_parent[a].ClassType() == "SimGroup_SpatialZoneGroup_ZoneHvacGroup" and \
+               boiler_parent[a].getSimModelObject().IsTemplateObject().getValue() == False:
+                hvac_loop = boiler_parent[a].getSimModelObject().SimModelName().getValue()
+                print(hvac_loop,"zbd", self.parent.hvac_component_group)
+                self.parent.hvac_component_group[hvac_loop].append(self)
 
-            if radiator_parent[d].ClassType() == "SimGroup_SpatialZoneGroup_ZoneHvacGroup": #iterate thermal_zone hvac on bldg level
-                loop1 = radiator_parent[d].getSimModelObject().SimModelName().getValue()
 
-        self.parent.hvac_component_group[loop1].append(self)
         self.port_a = self.add_connector("port_a", "FluidPort")
         self.port_b = self.add_connector("port_b", "FluidPort")
         self.convPort = self.add_connector("convPort", "HeatPort")

@@ -46,31 +46,8 @@ if (root_node.getSimModelObject(), SimProject_Project_DesignAlternative):
             for b in range(site_child.size()):  #iterate the SimSite
                 if isinstance(site_child[b].getSimModelObject(), SimBuilding_Building_Default):
                     bldg_child = site_child[b].getChildList()
-                    prj.buildings.append(MapHierarchy.MapBuilding(prj, site_child[b].getSimModelObject())) # add to MapProject
-                    for c in range(bldg_child.size()): #iterate the SimBuilding
-                        if isinstance(bldg_child[c].getSimModelObject(),SimSystem_HvacHotWater_FullSystem):
-                            bldg_hvac_child = bldg_child[c].getChildList()
-                            prj.buildings[-1].hvac_component_group[bldg_child[c].getSimModelObject().SimModelName().getValue()] = None
-                            for d in range(bldg_hvac_child.size()): # iterare SimSystem on bldg level
-                                if isinstance(bldg_hvac_child[d].getSimModelObject(), SimSystem_HvacHotWater_Supply):
-                                    supply_child = bldg_hvac_child[d].getChildList()
-                                    prj.buildings[-1].hvac_component_group[bldg_child[c].getSimModelObject().SimModelName().getValue()]=[]
-                                    for e in range(supply_child.size()): # iterate SimSystem_Supply on bldg leven
-                                        if isinstance(supply_child[e].getSimModelObject(), SimFlowMover_Pump_VariableSpeedReturn) and  supply_child[e].getSimModelObject().IsTemplateObject().getValue() is False:
-                                            import genericapi.AixLib.Fluid.Movers.Pump as Pump
-                                            prj.buildings[-1].hvac_component_group[bldg_child[c].getSimModelObject().SimModelName().getValue()].append(Pump.instantiate_pump(prj,supply_child[e].getSimModelObject(),prj.buildings[-1],bldg_child[c].getSimModelObject().SimModelName().getValue()))
-                                        if isinstance(supply_child[e].getSimModelObject(), SimFlowPlant_Boiler_BoilerHotWater) and  supply_child[e].getSimModelObject().IsTemplateObject().getValue() is False:
-                                            import genericapi.AixLib.Fluid.HeatExchangers.Boiler as Boiler
-                                            Boiler.instantiate_boiler(prj, supply_child[e].getSimModelObject(), prj.buildings[-1], bldg_child[c].getSimModelObject().SimModelName().getValue())
-                        if isinstance(bldg_child[c].getSimModelObject(), SimGroup_SpatialZoneGroup_ZoneHvacGroup): #iterate thermal_zone hvac on bldg level
-                            hvac_tz_child = bldg_child[c].getChildList()
-                            for f in range(hvac_tz_child.size()):
-                                if isinstance(hvac_tz_child[f].getSimModelObject(), SimSpatialZone_ThermalZone_Default):
-                                    prj.buildings[-1].thermal_zones.append(MapHierarchy.MapThermalZone(prj,hvac_tz_child[f].getSimModelObject(), prj.buildings[-1]))
-                                    prj.buildings[-1].thermal_zones[-1].hvac_component_group[bldg_child[c].getSimModelObject().SimModelName().getValue()]=[]
-                                if isinstance(hvac_tz_child[f].getSimModelObject(), SimFlowEnergyTransfer_ConvectiveHeater_Water) and  hvac_tz_child[f].getSimModelObject().IsTemplateObject().getValue() is False:
-                                    import genericapi.AixLib.Fluid.HeatExchangers.Radiators.Radiator as Radiator
-                                    Radiator.instantiate_radiator(prj, hvac_tz_child[f], prj.buildings[-1].thermal_zones[-1], "asd")
+                    prj.buildings.append(MapHierarchy.MapBuilding(prj, site_child[b]))
+
 
 
 
@@ -107,26 +84,3 @@ print("aosidjaoisdjaoisd")
 
 
 
-
-"""
-sim_instance = SimModel.SimModel_
-
-
-import genericapi.AixLib.Fluid.HeatExchangers.Boiler as Boiler
-import genericapi.AixLib.Fluid.HeatExchangers.Radiators.Radiator as Radiator
-import genericapi.AixLib.Fluid.Movers.Pump as Pump
-
-
-if "asd"
-print(sim_instance.SimConnection_HotWaterFlow_Default().front().SourcePort().getValue())
-asd = MapHierarchy.MapProject()
-test = MapHierarchy.MapBuilding(asd, asd)
-ttt = Pump.instantiate_pump(asd, test, sim_instance)
-
-
-print(ttt)
-for g in ttt:
-    print(g.sim_ref_id)
-    print(g.target_name)
-print(asd.connections)
-"""

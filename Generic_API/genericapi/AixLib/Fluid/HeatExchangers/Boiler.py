@@ -7,22 +7,21 @@ Created on Mon Nov 23 12:00:26 2015
 
 import genericapi.MapAPI.MapHierarchy as MapHierarchy
 
-def instantiate_boiler(project, sim_object, parent, loop):
-
-    asd = Boiler(project, sim_object, parent, loop)
-    return asd
-        
-
 class Boiler(MapHierarchy.MapComponent):
     """Representation of AixLib.Fluid.HeatExchangers.Boiler
     """
 
-    def __init__(self, project, sim_object, parent, loop):
+    def __init__(self, project, sim_object, parent):
 
         super(Boiler, self).__init__(project, sim_object, parent)
         
-        self.sim_ref_id = [sim_object.RefId()]
-        self.parent.hvac_component_group[loop].append(self)
+        self.sim_ref_id = [sim_object.getSimModelObject().RefId()]
+        boiler_parent = sim_object.getParentList()
+        for a in range(boiler_parent.size()):
+            if boiler_parent[a].ClassType() == "SimSystem_HvacHotWater_Supply" and \
+               boiler_parent[a].getSimModelObject().IsTemplateObject().getValue() == False:
+                hvac_loop = boiler_parent[a].getParentList()[0].getSimModelObject().SimModelName().getValue()
+                self.parent.hvac_component_group[hvac_loop].append(self)
 
         self.port_a = self.add_connector("port_a", "FluidPort")
         self.port_b = self.add_connector("port_b", "FluidPort")

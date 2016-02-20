@@ -8,22 +8,14 @@ from the corresponding SimModel instances.
 
 import genericapi.MapAPI.MapHierarchy as MapHierarchy
 
-def instantiate_pump(project, sim_object, parent, loop):
-    """creates a instance of the Pump for each pump instance in SimModel"""
-    #import SimFlowMover_Pump_VariableSpeedReturn
-
-    asd = Pump(project, sim_object, parent, loop)
-    return asd
-
-    
 class Pump(MapHierarchy.MapComponent):
     """Representation of AixLib.Fluid.Movers.Pump
     """
     
-    def __init__(self, project, sim_object, parent, loop):
+    def __init__(self, project, sim_object, parent):
         
         super(Pump, self).__init__(project, sim_object, parent)
-
+        """
         self.sim_ref_id = [sim_object.RefId()] #by default
         self.target_name = sim_object.SimModelName().getValue() #by default
 
@@ -36,7 +28,13 @@ class Pump(MapHierarchy.MapComponent):
         self.V_flow_max = self.add_parameter(name = "V_flow_max",
                                              value = \
                         sim_object.SimFlowMover_RatedFlowRate().getValue())
-
+        """
+        pump_parent = sim_object.getParentList()
+        for a in range(pump_parent.size()):
+            if pump_parent[a].ClassType() == "SimSystem_HvacHotWater_Supply" and \
+               pump_parent[a].getSimModelObject().IsTemplateObject().getValue() == False:
+                hvac_loop = pump_parent[a].getParentList()[0].getSimModelObject().SimModelName().getValue()
+                self.parent.hvac_component_group["HW Loop 1"].append(self)
         #connector
 
         self.port_a = self.add_connector("port_a", "FluidPort")
@@ -44,7 +42,7 @@ class Pump(MapHierarchy.MapComponent):
         self.IsNight = self.add_connector("IsNight", "BooleanInput")
 
         """automatically instantiate an expansion vessel to pump"""
-        self.con_expansion_vessel(0.01, loop)
+        self.con_expansion_vessel(0.01, hvac_loop)
         
     def ctrl_switching_night(self, width, period, startTime):
         """adds a boolean pulse to the boiler for switching the night mode"""

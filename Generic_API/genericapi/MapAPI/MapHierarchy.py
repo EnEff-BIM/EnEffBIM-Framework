@@ -248,6 +248,32 @@ class MapBuilding(MoObject):
         self.building_name = ""
         self.thermal_zones = []
         self.hvac_component_group = {}
+        bldg_child = sim_object.getChildList()
+        for a in range(bldg_child.size()): #iterate the SimBuilding
+            if bldg_child[a].ClassType() == "SimSystem_HvacHotWater_FullSystem":
+                self.hvac_component_group[bldg_child[a].getSimModelObject().SimModelName().getValue()] = []
+                bldg_hvac_child = bldg_child[a].getChildList()
+                for d in range(bldg_hvac_child.size()): # iterare SimSystem on bldg level
+                    if bldg_hvac_child[d].ClassType() == "SimSystem_HvacHotWater_Supply":
+                        supply_child = bldg_hvac_child[d].getChildList()
+                        for e in range(supply_child.size()): # iterate SimSystem_Supply on bldg leven
+                            if supply_child[e].ClassType() == "SimFlowMover_Pump_VariableSpeedReturn" and  \
+                               supply_child[e].getSimModelObject().IsTemplateObject().getValue() is False:
+                                from genericapi.AixLib.Fluid.Movers.Pump import Pump
+                                Pump(self.project, supply_child[e], self)
+                            if supply_child[e].ClassType() == "SimFlowPlant_Boiler_BoilerHotWater" and  \
+                                    supply_child[e].getSimModelObject().IsTemplateObject().getValue() is False:
+                                from genericapi.AixLib.Fluid.HeatExchangers.Boiler import Boiler
+                                Boiler(self.project, supply_child[e], self)
+            if bldg_child[a].ClassType() == "SimSpatialZone_ThermalZone_Default":
+                self.thermal_zones.append(MapThermalZone(project=project,
+                                                         sim_object=bldg_child[a],
+                                                         parent=self))
+
+
+
+
+
              
 class MapThermalZone(MoObject):
     """Representation of a mapped thermal zone
@@ -294,6 +320,20 @@ class MapThermalZone(MoObject):
         self.zone_name = ""
         self.space_boundaries = []
         self.hvac_component_group = {}
+        tz_child = sim_object.getParentList()
+        for a in range(tz_child.size()): #iterate the SimBuilding
+            if tz_child[a].ClassType() == "SimGroup_SpatialZoneGroup_ZoneHvacGroup":
+                self.hvac_component_group[tz_child[a].getSimModelObject().SimModelName().getValue()] = []
+                tz_hvac = tz_child[a].getChildList()
+                for b in range(tz_hvac.size()):
+                    if tz_hvac[b].ClassType() == "SimFlowEnergyTransfer_ConvectiveHeater_Water" and \
+                       tz_hvac[b].getSimModelObject().IsTemplateObject().getValue() is False:
+                        from genericapi.AixLib.Fluid.HeatExchangers.Radiators.Radiator import Radiator
+                        Radiator(self.project, tz_hvac[b], self)
+
+
+
+
 
 class MapComponent(MoObject):
     """Representation of a mapped component
