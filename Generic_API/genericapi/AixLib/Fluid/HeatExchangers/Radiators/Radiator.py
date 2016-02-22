@@ -16,12 +16,13 @@ class Radiator(MapHierarchy.MapComponent):
 
         self.sim_ref_id = [sim_object.getSimModelObject().RefId()]
 
-        boiler_parent = sim_object.getParentList()
-        for a in range(boiler_parent.size()):
-            if boiler_parent[a].ClassType() == "SimGroup_SpatialZoneGroup_ZoneHvacGroup" and \
-               boiler_parent[a].getSimModelObject().IsTemplateObject().getValue() == False:
-                hvac_loop = boiler_parent[a].getSimModelObject().SimModelName().getValue()
-                self.parent.hvac_component_group[hvac_loop].append(self)
+        radiator_parent = sim_object.getParentList()
+        for a in range(radiator_parent.size()):
+            if radiator_parent[a].ClassType() == "SimGroup_SpatialZoneGroup_ZoneHvacGroup" and \
+               radiator_parent[a].getSimModelObject().IsTemplateObject().getValue() == False:
+                self.hvac_loop = radiator_parent[a].getSimModelObject(
+                    ).SimModelName().getValue()
+                self.parent.hvac_component_group[self.hvac_loop].append(self)
 
         self.target_location = "AixLib.Fluid.HeatExchangers.Radiators.Radiator"
         self.target_name = sim_object.getSimModelObject().SimModelName().getValue()
@@ -55,23 +56,14 @@ class Radiator(MapHierarchy.MapComponent):
         self.port_b = self.add_connector("port_b", "FluidPort")
         self.convPort = self.add_connector("convPort", "HeatPort")
         self.radPort = self.add_connector("radPort", "HeatPort")
+
+        from genericapi.AixLib.Fluid.Actuators.Valves.SimpleValve import \
+            SimpleValve
+
+        SimpleValve(project=self.project,
+                    sim_object=self.sim_object,
+                    parent=self)
         
         
-    def connect_tz_AixLib(self, thermal_zone):
-        """connect AixLib Radiator to AixLib ThermalZone"""
-        self.add_connection(self.project,
-                            self.convPort,
-                            thermal_zone.internalGainsConv)
-        self.add_connection(self.project,
-                            self.radPort,
-                            thermal_zone.internalGainsRad)
-                            
-    def connect_tz_Buildings(self, thermal_zone):
-        """just a code example, will not work"""
-        
-        self.add_connection(self.project,
-                            self.convPort,
-                            thermal_zone.heaPorAir)
-        self.add_connection(self.project,
-                            self.radPort,
-                            thermal_zone.heaPorRad)
+
+

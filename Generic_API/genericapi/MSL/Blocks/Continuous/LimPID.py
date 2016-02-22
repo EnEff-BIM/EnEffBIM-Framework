@@ -4,29 +4,24 @@ Created on Wed Nov 25 12:26:16 2015
 
 @author: pre
 """
-import os
-import sys
-import tools.utilities as ut
+import genericapi.MapAPI.MapHierarchy as MapHierarchy
 import random
-modulePath = ut.get_full_path("Generic_API/MapAPI/MapHierarchy")
-
-os.environ['PATH'] = ';'.join([modulePath, os.environ['PATH']])
-# add modulePath to Python Path
-sys.path.append(modulePath)
-
-
-import MapHierarchy 
-
-class Constant(MapHierarchy.MapComponent):
+class LimPID(MapHierarchy.MapComponent):
     """Representation of AixLib.Fluid.Movers.Pump
     """
     
-    def __init__(self, parent, project):
+    def __init__(self, project, sim_object, parent):
         
-        super(Constant, self).__init__(parent, project)
+        super(LimPID, self).__init__(project, sim_object, parent)
         
         self.target_location = "Modelica.Blocks.Continuous.LimPID"
         self.target_name = "pidCtrl"+str(random.randint(1, 100))
-        self.y = self.add_connector("y", "RealOutput")
-        self.u_s = self.add_connector("u_s", "RealInput")
-        self.u_m = self.add_connector("u_m", "RealInput")
+
+        self.k = self.add_parameter(name="k", value=0.5)
+        self.yMax = self.add_parameter(name="yMax", value=1)
+        self.yMin = self.add_parameter(name="yMin", value=0)
+
+        self.y = self.add_connector("y", "Real")
+        self.u_s = self.add_connector("u_s", "Real")
+        self.u_m = self.add_connector("u_m", "Real")
+

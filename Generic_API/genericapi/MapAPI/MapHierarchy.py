@@ -361,8 +361,10 @@ class MapThermalZone(MoObject):
                 self.hvac_component_group[tz_child[a].getSimModelObject().SimModelName().getValue()] = []
                 tz_hvac = tz_child[a].getChildList()
                 for b in range(tz_hvac.size()):
+
                     if tz_hvac[b].ClassType() == "SimFlowEnergyTransfer_ConvectiveHeater_Water" and \
                        tz_hvac[b].getSimModelObject().IsTemplateObject().getValue() is False:
+                        print(b)
                         from genericapi.AixLib.Fluid.HeatExchangers.Radiators.Radiator import Radiator
                         Radiator(self.project, tz_hvac[b], self)
 

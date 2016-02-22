@@ -4,33 +4,40 @@ Created on Mon Nov 23 17:36:54 2015
 
 @author: pre
 """
-
-import os
-import sys
-import tools.utilities as ut
-
-modulePath = ut.get_full_path("Generic_API/MapAPI/MapHierarchy")
-
-os.environ['PATH'] = ';'.join([modulePath, os.environ['PATH']])
-# add modulePath to Python Path
-sys.path.append(modulePath)
-
-
-import MapHierarchy 
+import genericapi.MapAPI.MapHierarchy as MapHierarchy
 
 class SimpleValve(MapHierarchy.MapComponent):
     """Representation of AixLib.Fluid.Actuators.Valves.SimpleValve
     """
 
-    def __init__(self, parent, project):
+    def __init__(self, project, sim_object, parent):
 
-        super(SimpleValve, self).__init__(parent, project)
+        super(SimpleValve, self).__init__(project, sim_object, parent)
+
+        valve_parent = sim_object.getParentList()
+        for a in range(valve_parent.size()):
+            if valve_parent[a].ClassType() == \
+                    "SimGroup_SpatialZoneGroup_ZoneHvacGroup" or \
+                            valve_parent[a].ClassType() == \
+                            "SimSystem_HvacHotWater_Supply" and \
+               valve_parent[a].getSimModelObject().IsTemplateObject(
+                    ).getValue() == False:
+                self.hvac_loop = valve_parent[a].getSimModelObject(
+                    ).SimModelName().getValue()
+                self.parent.parent.hvac_component_group[self.hvac_loop].append(
+                    self)
 
         self.port_a = self.add_connector("port_a", "FluidPort")
         self.port_b = self.add_connector("port_b", "FluidPort")
-        self.opening = self.add_connector("opening", "RealInput")
+        self.opening = self.add_connector("opening", "Real")
 
-    def ctrl_P_room(self, thermal_zone, t, k, yMax=1, yMin=0):
+        self.ctrl_p_room()
+
+    def ctrl_p_room(self,
+                    set_temp=293.15,
+                    gain=0.5,
+                    min=0,
+                    max=1):
         """adds a Pcontroller to valve, works with AixLib components
         room temperature is control variable
         t is set temperature
@@ -40,37 +47,33 @@ class SimpleValve(MapHierarchy.MapComponent):
         """
 
         self.map_control = MapHierarchy.MapControl(self)
-        """constant, define Template for often used components"""
-        from tools.MSL.Blocks.Sources.Constant import Constant
-        const = Constant(self, self.project)
-        self.map_control = MapHierarchy.MapControl(self)
+
+        from genericapi.MSL.Blocks.Sources.Constant import Constant
+        const = Constant(self.project, None, self)
+        const.target_name = "setTemp"
+        const.k.value = set_temp
         self.map_control.control_objects.append(const)
-        const.add_property("k", t)
+        self.parent.parent.hvac_component_group[self.hvac_loop].append(const)
 
-        self.project.systems.append(const)
-
-
-        """sensor, define Template for often used components"""
-        from tools.MSL.Thermal.HeatTransfer.Sensors.TemperatureSensor \
-                                import TemperatureSensor
-        sensT = TemperatureSensor(self, self.project)
-        self.map_control.control_objects.append(sensT)
-        
-        self.project.systems.append(sensT)
+        """sensor"""
+        from genericapi.MSL.Thermal.HeatTransfer.Sensors.TemperatureSensor \
+            import TemperatureSensor
+        sens_t = TemperatureSensor(project=self.project,
+                                   sim_object=None,
+                                   parent=self)
+        self.map_control.control_objects.append(sens_t)
+        self.parent.parent.hvac_component_group[self.hvac_loop].append(sens_t)
         
         """P controller"""
-        from tools.MSL.Blocks.Continuous.LimPID import LimPID
-        p_ctrl = LimPID(self, self.project)
+        from genericapi.MSL.Blocks.Continuous.LimPID import LimPID
+        p_ctrl = LimPID(project=self.project,
+                        sim_object=None,
+                        parent=self)
+        p_ctrl.k = gain
+        p_ctrl.yMax = min
+        p_ctrl.yMin = max
+        p_ctrl.add_connection(p_ctrl.u_s, const.y)
+        p_ctrl.add_connection(p_ctrl.u_m, sens_t.T)
+        p_ctrl.add_connection(p_ctrl.y, self.opening)
         self.map_control.control_objects.append(p_ctrl)
-        p_ctrl.target_name = "PIDController"
-        p_ctrl.add_property("k", k)
-        p_ctrl.add_property("yMax", yMax)
-        p_ctrl.add_property("yMin", yMin)
-
-        self.project.systems.append(p_ctrl)                       
-
-        self.add_connection(const.y, p_ctrl.u_s)
-        self.add_connection(sensT.port, thermal_zone.internalGainsConv)
-        self.add_connection(sensT.T, p_ctrl.u_m)
-        self.add_connection(p_ctrl.y, self.opening)
-        
+        self.parent.parent.hvac_component_group[self.hvac_loop].append(p_ctrl)
