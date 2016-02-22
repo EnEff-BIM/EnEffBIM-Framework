@@ -15,61 +15,64 @@ class Pump(MapHierarchy.MapComponent):
     def __init__(self, project, sim_object, parent):
         
         super(Pump, self).__init__(project, sim_object, parent)
-        """
-        self.sim_ref_id = [sim_object.RefId()] #by default
-        self.target_name = sim_object.SimModelName().getValue() #by default
 
-        self.target_location = "AixLib.Fluid.Movers.Pump" #from MR?
-        self.ControlStrategy = self.add_parameter(name = "ControlStrategy",
-                                                  value = 1.0) #from MR?
-        self.Head_max = self.add_parameter(name = "Head_max",
-                                           value = \
-                        sim_object.SimFlowMover_RatedPumpHead().getValue())
-        self.V_flow_max = self.add_parameter(name = "V_flow_max",
-                                             value = \
-                        sim_object.SimFlowMover_RatedFlowRate().getValue())
-        """
+        self.sim_ref_id = [sim_object.getSimModelObject().RefId()] #by default
+
         pump_parent = sim_object.getParentList()
         for a in range(pump_parent.size()):
             if pump_parent[a].ClassType() == "SimSystem_HvacHotWater_Supply" and \
                pump_parent[a].getSimModelObject().IsTemplateObject().getValue() == False:
-                hvac_loop = pump_parent[a].getParentList()[0].getSimModelObject().SimModelName().getValue()
-                self.parent.hvac_component_group["HW Loop 1"].append(self)
-        #connector
+                self.hvac_loop = pump_parent[a].getParentList()[0].getSimModelObject().SimModelName().getValue()
+                self.parent.hvac_component_group[self.hvac_loop].append(self)
 
+
+        self.target_location = "AixLib.Fluid.Movers.Pump"
+        self.target_name = sim_object.getSimModelObject().SimModelName(
+        ).getValue() #by default
+
+        self.ControlStrategy = self.add_parameter(name="ControlStrategy",
+                                                  value=1.0)
+        self.V_flow_max = self.add_parameter(name="V_flow_max",
+                                             value=sim_object.getSimModelObject().SimFlowMover_RatedFlowRate().getValue())
+        self.Head_max = self.add_parameter(name="Head_max",
+                                           value=sim_object.getSimModelObject().SimFlowMover_RatedPumpHead().getValue() * 0.0001019716)
+
+        #connector
         self.port_a = self.add_connector("port_a", "FluidPort")
         self.port_b = self.add_connector("port_b", "FluidPort")
-        self.IsNight = self.add_connector("IsNight", "BooleanInput")
+        self.IsNight = self.add_connector("IsNight", "Boolean")
 
         """automatically instantiate an expansion vessel to pump"""
-        self.con_expansion_vessel(0.01, hvac_loop)
+        self.con_expansion_vessel(0.01)
+
+        self.ctrl_switching_night(width=45.8,
+                                  period=86400,
+                                  startTime=64800)
         
     def ctrl_switching_night(self, width, period, startTime):
         """adds a boolean pulse to the boiler for switching the night mode"""
+        from genericapi.MSL.Blocks.Sources.BooleanPulse import BooleanPulse
+        bool_pulse = BooleanPulse(project=self.project,
+                                  sim_object=None,
+                                  parent=self)
 
         self.map_control = MapHierarchy.MapControl(self)
-        self.map_control.control_objects.append(MapHierarchy.MoObject(self))
-        self.map_control.control_objects[-1].target_location = \
-                                        "Modelica.Blocks.Sources.BooleanPulse"
-        self.map_control.control_objects[-1].target_name = "nightSignal"
-        self.map_control.control_objects[-1].add_parameter("width", width)
-        self.map_control.control_objects[-1].add_parameter("period", period)
-        self.map_control.control_objects[-1].add_parameter("startTime",
-                                                          startTime)
-        y = self.map_control.control_objects[-1].add_connector("y",
-                                                               "BooleanOutput")
-        self.project.systems.append(self.map_control.control_objects[-1])
-        self.add_connection(self.project, y, self.IsNight)
+        self.map_control.control_objects.append(bool_pulse)
+        bool_pulse.target_name = "nightSignal"
+        bool_pulse.width.value = width
+        bool_pulse.period.value = period
+        bool_pulse.startTime.value = startTime
+        self.parent.hvac_component_group[self.hvac_loop].append(bool_pulse)
+        self.add_connection(self.IsNight, bool_pulse.y)
 
-    def con_expansion_vessel(self, V_start,loop):
-        import genericapi.AixLib.Fluid.Storage.ExpansionVessel \
-                                                as ExpansionVessel
-        self.parent.hvac_component_group[loop].append(ExpansionVessel.ExpansionVessel(
-                                                self.project, self))
-        self.parent.hvac_component_group[loop][-1].target_location = ("AixLib.Fluid."
+
+    def con_expansion_vessel(self, V_start):
+        from genericapi.AixLib.Fluid.Storage.ExpansionVessel import ExpansionVessel
+        self.parent.hvac_component_group[self.hvac_loop].append(ExpansionVessel(self.project, self))
+        self.parent.hvac_component_group[self.hvac_loop][-1].target_location = ("AixLib.Fluid."
                                                     "Storage.ExpansionVessel")
-        self.parent.hvac_component_group[loop][-1].target_name = "expansionVessel"
-        self.parent.hvac_component_group[loop][-1].add_parameter = ("V_start", V_start)
-        port_a = self.parent.hvac_component_group[loop][-1].add_connector("port_a",
-                                                                    "FluidPort")
+        self.parent.hvac_component_group[self.hvac_loop][-1].target_name = "expansionVessel"
+        self.parent.hvac_component_group[self.hvac_loop][-1].add_parameter = ("V_start", V_start)
+        port_a = self.parent.hvac_component_group[self.hvac_loop][-1].add_connector("port_a",
+                                                                          "FluidPort")
         self.add_connection(self.port_a, port_a)

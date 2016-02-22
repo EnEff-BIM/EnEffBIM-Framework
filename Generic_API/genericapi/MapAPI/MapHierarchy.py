@@ -248,15 +248,18 @@ class MapBuilding(MoObject):
         self.building_name = ""
         self.thermal_zones = []
         self.hvac_component_group = {}
+
+        #Add the HVAC Components, attached to the building to MapBuilding
+        #First Use Case supports Boiler and Pump (no more components are supported in libSimModel
         bldg_child = sim_object.getChildList()
-        for a in range(bldg_child.size()): #iterate the SimBuilding
-            if bldg_child[a].ClassType() == "SimSystem_HvacHotWater_FullSystem":
+        for a in range(bldg_child.size()):
+            if bldg_child[a].ClassType() == "SimSystem_HvacHotWater_FullSystem": #this must be a child of SimBldg
                 self.hvac_component_group[bldg_child[a].getSimModelObject().SimModelName().getValue()] = []
                 bldg_hvac_child = bldg_child[a].getChildList()
-                for d in range(bldg_hvac_child.size()): # iterare SimSystem on bldg level
+                for d in range(bldg_hvac_child.size()):
                     if bldg_hvac_child[d].ClassType() == "SimSystem_HvacHotWater_Supply":
                         supply_child = bldg_hvac_child[d].getChildList()
-                        for e in range(supply_child.size()): # iterate SimSystem_Supply on bldg leven
+                        for e in range(supply_child.size()):
                             if supply_child[e].ClassType() == "SimFlowMover_Pump_VariableSpeedReturn" and  \
                                supply_child[e].getSimModelObject().IsTemplateObject().getValue() is False:
                                 from genericapi.AixLib.Fluid.Movers.Pump import Pump
@@ -271,10 +274,6 @@ class MapBuilding(MoObject):
                                                          parent=self))
 
 
-
-
-
-             
 class MapThermalZone(MoObject):
     """Representation of a mapped thermal zone
         
@@ -330,9 +329,6 @@ class MapThermalZone(MoObject):
                        tz_hvac[b].getSimModelObject().IsTemplateObject().getValue() is False:
                         from genericapi.AixLib.Fluid.HeatExchangers.Radiators.Radiator import Radiator
                         Radiator(self.project, tz_hvac[b], self)
-
-
-
 
 
 class MapComponent(MoObject):
@@ -488,7 +484,7 @@ class MapControl(object):
 
         self.parent = parent
         self.control_strategy = ""
-        self.control_objects = None
+        self.control_objects = []
         self.control_connector = None
 
 class MapParameter(object):
@@ -550,6 +546,36 @@ class MapRecord(object):
         self.name = name
         self.record_location = record_location
         self.parameters = []
+
+    def add_parameter(self, name, value):
+        """This adds a Parameter to the MapRecord
+
+        For topology mapping it might be necessary to add additional propertys,
+        besides the mapped once to some MoObjects. This creates an instance
+        of MapParameter and adds it to MoObject property list.
+
+
+        Parameters
+        ----------
+
+        name : str
+            name of the property in Modelica
+
+        value : int/float/str/bool
+            value of the property
+
+        Returns
+        ----------
+
+        mapped_prop : MapParameter
+            returns the MapParameter instance
+
+        """
+        mapped_prop = MapParameter(self, name, value)
+
+        self.parameters.append(mapped_prop)
+
+        return mapped_prop
 		
 class MapSpaceBoundary(object):
     """Representation of a mapped space boundary

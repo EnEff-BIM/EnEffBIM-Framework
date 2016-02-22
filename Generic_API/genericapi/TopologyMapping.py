@@ -52,6 +52,7 @@ if (root_node.getSimModelObject(), SimProject_Project_DesignAlternative):
 
 
 print(prj.buildings[-1].hvac_component_group)
+print(prj.connections)
 print(prj.buildings[-1].thermal_zones[-1].hvac_component_group)
 
 print("aosidjaoisdjaoisd")
