@@ -16,21 +16,21 @@ class Radiator(MapHierarchy.MapComponent):
 
         self.sim_ref_id = [sim_object.getSimModelObject().RefId()]
 
+        check_zone_hvac = ["SimGroup_SpatialZoneGroup_ZoneHvacGroup"]
         radiator_parent = sim_object.getParentList()
-        for a in range(radiator_parent.size()):
-            if radiator_parent[a].ClassType() == "SimGroup_SpatialZoneGroup_ZoneHvacGroup" and \
-               radiator_parent[a].getSimModelObject().IsTemplateObject().getValue() == False:
-                self.hvac_loop = radiator_parent[a].getSimModelObject(
-                    ).SimModelName().getValue()
-                self.parent.hvac_component_group[self.hvac_loop].append(self)
+        self.add_to_loop(parent_list=radiator_parent,
+                         check_list=check_zone_hvac)
 
         self.target_location = "AixLib.Fluid.HeatExchangers.Radiators.Radiator"
         self.target_name = sim_object.getSimModelObject().SimModelName().getValue()
 
         #mapp the Record Parameters:
-        self.radiator_type = MapHierarchy.MapRecord(self,
-                                                    "AixLib.DataBase.Radiators.RadiatiorBaseDataDefinition",
-                                                    "RadiatorType")
+        record_location = \
+            "AixLib.DataBase.Radiators.RadiatiorBaseDataDefinition"
+        self.radiator_type = MapHierarchy.MapRecord(parent=self,
+                                                    record_location=record_location,
+                                                    name="RadiatorType")
+
         self.radiator_type.add_parameter(name="NominalPower",
                                          value=979.0)
         self.radiator_type.add_parameter(name="T_flow_nom",

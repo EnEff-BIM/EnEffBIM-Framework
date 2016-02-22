@@ -73,6 +73,7 @@ class MoObject(object):
         self.parameters = []
         self.connectors = []
         self.map_control = []
+        self.hvac_loop=""
      
        
     def add_connector(self,
@@ -186,6 +187,21 @@ class MoObject(object):
              raise TypeError("Input/Ouput connector type or dimension" +
                              "do not match")
 
+    def add_to_loop(self,
+                    parent_list,
+                    check_list):
+
+        for a in range(parent_list.size()):
+            if parent_list[a].ClassType() in check_list and \
+               parent_list[a].getSimModelObject().IsTemplateObject().getValue() == False:
+                self.hvac_loop = parent_list[a].getSimModelObject().SimModelName().getValue()
+                try:
+                    self.parent.hvac_component_group[self.hvac_loop].append(self)
+                except:
+                    self.parent.parent.hvac_component_group[
+                        self.hvac_loop].append(self)
+
+
         
 class MapProject(object):
     """Root Class for each mapped data information
@@ -290,10 +306,11 @@ class MapBuilding(MoObject):
         bldg_child = sim_object.getChildList()
         for a in range(bldg_child.size()):
             if bldg_child[a].ClassType() == "SimSystem_HvacHotWater_FullSystem": #this must be a child of SimBldg
-                self.hvac_component_group[bldg_child[a].getSimModelObject().SimModelName().getValue()] = []
+
                 bldg_hvac_child = bldg_child[a].getChildList()
                 for d in range(bldg_hvac_child.size()):
                     if bldg_hvac_child[d].ClassType() == "SimSystem_HvacHotWater_Supply":
+                        self.hvac_component_group[bldg_hvac_child[d].getSimModelObject().SimModelName().getValue()] = []
                         supply_child = bldg_hvac_child[d].getChildList()
                         for e in range(supply_child.size()):
                             if supply_child[e].ClassType() == "SimFlowMover_Pump_VariableSpeedReturn" and  \
@@ -364,7 +381,6 @@ class MapThermalZone(MoObject):
 
                     if tz_hvac[b].ClassType() == "SimFlowEnergyTransfer_ConvectiveHeater_Water" and \
                        tz_hvac[b].getSimModelObject().IsTemplateObject().getValue() is False:
-                        print(b)
                         from genericapi.AixLib.Fluid.HeatExchangers.Radiators.Radiator import Radiator
                         Radiator(self.project, tz_hvac[b], self)
 

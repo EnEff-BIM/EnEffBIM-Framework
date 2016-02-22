@@ -6,6 +6,7 @@ Created on Mon Nov 23 17:36:54 2015
 """
 import genericapi.MapAPI.MapHierarchy as MapHierarchy
 
+
 class SimpleValve(MapHierarchy.MapComponent):
     """Representation of AixLib.Fluid.Actuators.Valves.SimpleValve
     """
@@ -15,17 +16,10 @@ class SimpleValve(MapHierarchy.MapComponent):
         super(SimpleValve, self).__init__(project, sim_object, parent)
 
         valve_parent = sim_object.getParentList()
-        for a in range(valve_parent.size()):
-            if valve_parent[a].ClassType() == \
-                    "SimGroup_SpatialZoneGroup_ZoneHvacGroup" or \
-                            valve_parent[a].ClassType() == \
-                            "SimSystem_HvacHotWater_Supply" and \
-               valve_parent[a].getSimModelObject().IsTemplateObject(
-                    ).getValue() == False:
-                self.hvac_loop = valve_parent[a].getSimModelObject(
-                    ).SimModelName().getValue()
-                self.parent.parent.hvac_component_group[self.hvac_loop].append(
-                    self)
+        check_valve = ["SimGroup_SpatialZoneGroup_ZoneHvacGroup",
+                       "SimSystem_HvacHotWater_Supply"]
+        self.add_to_loop(parent_list=valve_parent,
+                         check_list=check_valve)
 
         self.port_a = self.add_connector("port_a", "FluidPort")
         self.port_b = self.add_connector("port_b", "FluidPort")
@@ -36,14 +30,20 @@ class SimpleValve(MapHierarchy.MapComponent):
     def ctrl_p_room(self,
                     set_temp=293.15,
                     gain=0.5,
-                    min=0,
-                    max=1):
+                    y_min=0,
+                    y_max=1):
         """adds a Pcontroller to valve, works with AixLib components
         room temperature is control variable
-        t is set temperature
-        k is gain of controller
-        yMax maximum output 
-        yMin minimum output
+        Parameters:
+
+            set_temp
+                is set temperature
+            gain
+                is gain of controller
+            y_min
+                maximum output
+            y_max
+                minimum output
         """
 
         self.map_control = MapHierarchy.MapControl(self)
@@ -53,7 +53,8 @@ class SimpleValve(MapHierarchy.MapComponent):
         const.target_name = "setTemp"
         const.k.value = set_temp
         self.map_control.control_objects.append(const)
-        self.parent.parent.hvac_component_group[self.hvac_loop].append(const)
+        self.parent.parent.hvac_component_group[self.hvac_loop].append(
+            const)
 
         """sensor"""
         from genericapi.MSL.Thermal.HeatTransfer.Sensors.TemperatureSensor \
@@ -63,15 +64,15 @@ class SimpleValve(MapHierarchy.MapComponent):
                                    parent=self)
         self.map_control.control_objects.append(sens_t)
         self.parent.parent.hvac_component_group[self.hvac_loop].append(sens_t)
-        
+
         """P controller"""
         from genericapi.MSL.Blocks.Continuous.LimPID import LimPID
         p_ctrl = LimPID(project=self.project,
                         sim_object=None,
                         parent=self)
         p_ctrl.k = gain
-        p_ctrl.yMax = min
-        p_ctrl.yMin = max
+        p_ctrl.yMax = y_max
+        p_ctrl.yMin = y_min
         p_ctrl.add_connection(p_ctrl.u_s, const.y)
         p_ctrl.add_connection(p_ctrl.u_m, sens_t.T)
         p_ctrl.add_connection(p_ctrl.y, self.opening)
