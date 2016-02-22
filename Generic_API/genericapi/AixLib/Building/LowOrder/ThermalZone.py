@@ -14,6 +14,8 @@ class ThermalZone(MapHierarchy.MapThermalZone):
     def __init__(self, project, sim_object, parent):
 
         super(ThermalZone, self).__init__(project, sim_object)
+        print(sim_object)
+
 
         self.internalGainsConv = self.add_connector(name="internalGainsConv",
                                                     type="HeatPort")
@@ -35,4 +37,4 @@ class ThermalZone(MapHierarchy.MapThermalZone):
         self.add_connection(self.internalGainsConv, radiator.convPort)
         self.add_connection(self.internalGainsRad, radiator.radPort)
         self.add_connection(self.internalGainsConv,
-                            radiator.valve.map_control.control_connector)
+                            radiator.map_control.control_connector)

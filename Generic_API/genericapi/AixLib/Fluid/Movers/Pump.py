@@ -17,16 +17,12 @@ class Pump(MapHierarchy.MapComponent):
         
         super(Pump, self).__init__(project, sim_object, parent)
 
-        self.sim_ref_id = [sim_object.getSimModelObject().RefId()] #by default
-
         pump_parent = sim_object.getParentList()
         check_bldg_hvac = ["SimSystem_HvacHotWater_Supply"]
         self.add_to_loop(parent_list=pump_parent,
                          check_list=check_bldg_hvac)
 
         self.target_location = "AixLib.Fluid.Movers.Pump"
-        self.target_name = sim_object.getSimModelObject().SimModelName(
-        ).getValue() #by default
 
         self.ControlStrategy = self.add_parameter(name="ControlStrategy",
                                                   value=1.0)

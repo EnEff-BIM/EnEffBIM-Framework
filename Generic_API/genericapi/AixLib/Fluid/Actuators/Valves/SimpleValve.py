@@ -18,14 +18,16 @@ class SimpleValve(MapHierarchy.MapComponent):
         valve_parent = sim_object.getParentList()
         check_valve = ["SimGroup_SpatialZoneGroup_ZoneHvacGroup",
                        "SimSystem_HvacHotWater_Supply"]
+
+        self.target_location = "AixLib.Fluid.Actuators.Valves.SimpleValve"
+        self.target_name = self.parent.target_name+"_valve"
+
         self.add_to_loop(parent_list=valve_parent,
                          check_list=check_valve)
 
         self.port_a = self.add_connector("port_a", "FluidPort")
         self.port_b = self.add_connector("port_b", "FluidPort")
         self.opening = self.add_connector("opening", "Real")
-
-        self.ctrl_p_room()
 
     def ctrl_p_room(self,
                     set_temp=293.15,

@@ -22,6 +22,7 @@ class Boiler(MapHierarchy.MapComponent):
         check_bldg_hvac = ["SimSystem_HvacHotWater_Supply"]
         self.add_to_loop(parent_list=boiler_parent,
                          check_list=check_bldg_hvac)
+        self.target_location = "AixLib.Fluid.Movers.Pump"
 
         q_value = self.sim_object.getSimModelObject().SimFlowPlant_NomCap(
             ).getValue()
