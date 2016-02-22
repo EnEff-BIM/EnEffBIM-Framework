@@ -8,6 +8,7 @@ from the corresponding SimModel instances.
 
 import genericapi.MapAPI.MapHierarchy as MapHierarchy
 
+
 class Pump(MapHierarchy.MapComponent):
     """Representation of AixLib.Fluid.Movers.Pump
     """
@@ -63,13 +64,12 @@ class Pump(MapHierarchy.MapComponent):
         self.add_connection(self.IsNight, bool_pulse.y)
 
 
-    def con_expansion_vessel(self, V_start):
+    def con_expansion_vessel(self, v_start):
         from genericapi.AixLib.Fluid.Storage.ExpansionVessel import ExpansionVessel
-        self.parent.hvac_component_group[self.hvac_loop].append(ExpansionVessel(self.project, self))
-        self.parent.hvac_component_group[self.hvac_loop][-1].target_location = ("AixLib.Fluid."
-                                                    "Storage.ExpansionVessel")
-        self.parent.hvac_component_group[self.hvac_loop][-1].target_name = "expansionVessel"
-        self.parent.hvac_component_group[self.hvac_loop][-1].add_parameter = ("V_start", V_start)
-        port_a = self.parent.hvac_component_group[self.hvac_loop][-1].add_connector("port_a",
-                                                                          "FluidPort")
-        self.add_connection(self.port_a, port_a)
+
+        exp_ves = ExpansionVessel(project=self.project,
+                                  sim_object=None,
+                                  parent=self)
+        exp_ves.V_start.value = v_start
+
+        self.add_connection(self.port_a, exp_ves.port_a)

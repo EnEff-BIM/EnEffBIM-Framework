@@ -74,8 +74,8 @@ class MoObject(object):
         self.connectors = []
         self.map_control = []
         self.hvac_loop=""
-     
-       
+
+
     def add_connector(self,
                       name,
                       type,
@@ -201,7 +201,6 @@ class MoObject(object):
                     self.parent.parent.hvac_component_group[
                         self.hvac_loop].append(self)
 
-
         
 class MapProject(object):
     """Root Class for each mapped data information
@@ -256,6 +255,13 @@ class MapProject(object):
                             self.buildings.append(MapBuilding(self,site_child[
                                 b]))
 
+    def connect_topology(self):
+        for bldg in self.buildings:
+            for zone in bldg.thermal_zones:
+                for key, value in zone.hvac_component_group.items():
+                    for item in value:
+                        if type(item).__name__ == "Radiator":
+                            zone.connect_to_radiator_aixlib(item)
 
 
 class MapBuilding(MoObject):
@@ -305,8 +311,13 @@ class MapBuilding(MoObject):
         #First Use Case supports Boiler and Pump (no more components are supported in libSimModel
         bldg_child = sim_object.getChildList()
         for a in range(bldg_child.size()):
+            if bldg_child[a].ClassType() == "SimSpatialZone_ThermalZone_Default":
+                    from genericapi.AixLib.Building.LowOrder.ThermalZone import ThermalZone
+                    self.thermal_zones.append(ThermalZone(project=project,
+                                                          sim_object=bldg_child[a],
+                                                          parent=self))
+        for a in range(bldg_child.size()):
             if bldg_child[a].ClassType() == "SimSystem_HvacHotWater_FullSystem": #this must be a child of SimBldg
-
                 bldg_hvac_child = bldg_child[a].getChildList()
                 for d in range(bldg_hvac_child.size()):
                     if bldg_hvac_child[d].ClassType() == "SimSystem_HvacHotWater_Supply":
@@ -321,10 +332,9 @@ class MapBuilding(MoObject):
                                     supply_child[e].getSimModelObject().IsTemplateObject().getValue() is False:
                                 from genericapi.AixLib.Fluid.HeatExchangers.Boiler import Boiler
                                 Boiler(self.project, supply_child[e], self)
-            if bldg_child[a].ClassType() == "SimSpatialZone_ThermalZone_Default":
-                self.thermal_zones.append(MapThermalZone(project=project,
-                                                         sim_object=bldg_child[a],
-                                                         parent=self))
+
+
+
 
 
 class MapThermalZone(MoObject):
@@ -378,7 +388,6 @@ class MapThermalZone(MoObject):
                 self.hvac_component_group[tz_child[a].getSimModelObject().SimModelName().getValue()] = []
                 tz_hvac = tz_child[a].getChildList()
                 for b in range(tz_hvac.size()):
-
                     if tz_hvac[b].ClassType() == "SimFlowEnergyTransfer_ConvectiveHeater_Water" and \
                        tz_hvac[b].getSimModelObject().IsTemplateObject().getValue() is False:
                         from genericapi.AixLib.Fluid.HeatExchangers.Radiators.Radiator import Radiator

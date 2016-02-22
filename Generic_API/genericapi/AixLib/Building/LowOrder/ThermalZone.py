@@ -4,37 +4,35 @@ Created on Mon Nov 23 12:00:26 2015
 
 @author: pre
 """
+import genericapi.MapAPI.MapHierarchy as MapHierarchy
 
-import os
-import sys
 
-import tools.utilities as ut
-
-modulePath = ut.get_full_path("Generic_API/MapAPI/MapHierarchy")
-
-os.environ['PATH'] = ';'.join([modulePath, os.environ['PATH']])
-# add modulePath to Python Path
-sys.path.append(modulePath)
-
-import MapHierarchy 
-
-class ThermalZone(MapHierarchy.MoObject):
+class ThermalZone(MapHierarchy.MapThermalZone):
     """Representation of AixLib.Building.LowOrder.ThermalZone
     """
 
-    def __init__(self, parent=None):
+    def __init__(self, project, sim_object, parent):
 
-        super(ThermalZone, self).__init__(parent)
+        super(ThermalZone, self).__init__(project, sim_object)
 
-        self.internalGainsConv = self.add_connector("internalGainsConv", 
-                                                    "HeatPort")
-        self.internalGainsRad = self.add_connector("internalGainsRad", 
-                                                    "HeatPort")
+        self.internalGainsConv = self.add_connector(name="internalGainsConv",
+                                                    type="HeatPort")
+        self.internalGainsRad = self.add_connector(name="internalGainsRad",
+                                                   type="HeatPort")
         self.infiltrationTemperature = self.add_connector(
-                                        "infiltrationTemperature",
-                                        "RealInput")
-        self.infiltrationRate = self.add_connector("infiltrationRate",
-                                                   "RealInput")
-        self.internalGains = self.add_connector("internalGains",
-                                                "RealInput", dimension = 3)
-        self.solarRad_in = self.add_connector("solarRad_in", "SolarRad_in ")
+                                        name="infiltrationTemperature",
+                                        type="RealInput")
+        self.infiltrationRate = self.add_connector(name="infiltrationRate",
+                                                   type="RealInput")
+        self.internalGains = self.add_connector(name="internalGains",
+                                                type="RealInput",
+                                                dimension=3)
+        self.solarRad_in = self.add_connector(name="solarRad_in",
+                                              type="SolarRad ")
+
+    def connect_to_radiator_aixlib(self, radiator):
+
+        self.add_connection(self.internalGainsConv, radiator.convPort)
+        self.add_connection(self.internalGainsRad, radiator.radPort)
+        self.add_connection(self.internalGainsConv,
+                            radiator.valve.map_control.control_connector)

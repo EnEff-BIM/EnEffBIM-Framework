@@ -63,6 +63,7 @@ class SimpleValve(MapHierarchy.MapComponent):
                                    sim_object=None,
                                    parent=self)
         self.map_control.control_objects.append(sens_t)
+        self.map_control.control_connector = sens_t.port
         self.parent.parent.hvac_component_group[self.hvac_loop].append(sens_t)
 
         """P controller"""

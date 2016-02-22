@@ -15,7 +15,7 @@ class Radiator(MapHierarchy.MapComponent):
         super(Radiator, self).__init__(project, sim_object, parent)
 
         self.sim_ref_id = [sim_object.getSimModelObject().RefId()]
-
+        print("init radiaot")
         check_zone_hvac = ["SimGroup_SpatialZoneGroup_ZoneHvacGroup"]
         radiator_parent = sim_object.getParentList()
         self.add_to_loop(parent_list=radiator_parent,
@@ -60,10 +60,12 @@ class Radiator(MapHierarchy.MapComponent):
         from genericapi.AixLib.Fluid.Actuators.Valves.SimpleValve import \
             SimpleValve
 
-        SimpleValve(project=self.project,
+        self.valve = SimpleValve(project=self.project,
                     sim_object=self.sim_object,
                     parent=self)
-        
+
+        #print(self.parent)
+        #self.parent.connect_to_radiator_aixlib(self)
         
 
 

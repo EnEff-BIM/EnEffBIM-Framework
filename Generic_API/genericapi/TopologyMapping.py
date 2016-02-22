@@ -15,6 +15,7 @@ prj = MapProject(path="D:/GIT/EnEffBIM-Framework/LibSimModelAPI/LibSimModelAPI"
 
 print(prj.buildings[-1].hvac_component_group)
 print(prj.buildings[-1].thermal_zones[-1].hvac_component_group)
+prj.connect_topology()
 print("finish")
 
 
