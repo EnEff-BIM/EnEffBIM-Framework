@@ -1,3 +1,23 @@
+import os
+import sys
+modulePath = ("D:/GIT/EnEffBIM-Framework/LibSimModelAPI/LibSimModelAPI/simmodel_swig/Release")
+os.environ['PATH'] = ';'.join([modulePath, os.environ['PATH']])
+sys.path.append(modulePath)
+import SimModel
+import SimModel_Hierachy
+from SimProject_Project_DesignAlternative import SimProject_Project_DesignAlternative
+from SimSite_BuildingSite_Default import SimSite_BuildingSite_Default
+from SimSystem_HvacHotWater_FullSystem import SimSystem_HvacHotWater_FullSystem
+from SimBuilding_Building_Default import SimBuilding_Building_Default
+from SimSystem_HvacHotWater_Demand import SimSystem_HvacHotWater_Demand
+from SimSystem_HvacHotWater_Supply import SimSystem_HvacHotWater_Supply
+from SimFlowEnergyTransfer_ConvectiveHeater_Water import SimFlowEnergyTransfer_ConvectiveHeater_Water
+from SimFlowMover_Pump_VariableSpeedReturn import SimFlowMover_Pump_VariableSpeedReturn
+from SimFlowPlant_Boiler_BoilerHotWater import SimFlowPlant_Boiler_BoilerHotWater
+from SimSpatialZone_ThermalZone_Default import SimSpatialZone_ThermalZone_Default
+from SimGroup_SpatialZoneGroup_ZoneHvacGroup import SimGroup_SpatialZoneGroup_ZoneHvacGroup
+from SimSpace_Occupied_Default import SimSpace_Occupied_Default
+
 class MoObject(object):
     """Base class for all mapped objects
         
@@ -196,14 +216,30 @@ class MapProject(object):
 
     """
 
-    def __init__(self, sim_object=None):
+    def __init__(self, path=None):
 
-        self.sim_object=sim_object
+        self.path = path
         self.buildings = []
         self.used_library = ""
         self.library_version = ""
         self.project_name = ""
         self.connections = []
+
+        self.sim_hierarchy = SimModel_Hierachy.SimHierarchy()
+        xml_data = self.sim_hierarchy.loadSimModel(path)
+        root_node = self.sim_hierarchy.getHierarchyRootNode()
+        prj_child = root_node.getChildList()
+        if isinstance(root_node.getSimModelObject(),
+         SimProject_Project_DesignAlternative):
+            for a in range(prj_child.size()): #iterate the SimProject
+                if isinstance(prj_child[a].getSimModelObject(), SimSite_BuildingSite_Default):
+                    site_child = prj_child[a].getChildList()
+                    for b in range(site_child.size()):  #iterate the SimSite
+                        if isinstance(site_child[b].getSimModelObject(), SimBuilding_Building_Default):
+                            bldg_child = site_child[b].getChildList()
+                            self.buildings.append(MapBuilding(self,site_child[
+                                b]))
+
 
 
 class MapBuilding(MoObject):
