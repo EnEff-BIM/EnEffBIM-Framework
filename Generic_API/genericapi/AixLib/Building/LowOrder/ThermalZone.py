@@ -14,8 +14,6 @@ class ThermalZone(MapHierarchy.MapThermalZone):
     def __init__(self, project, sim_object, parent):
 
         super(ThermalZone, self).__init__(project, sim_object)
-        print(sim_object)
-
 
         self.internalGainsConv = self.add_connector(name="internalGainsConv",
                                                     type="HeatPort")
@@ -31,6 +29,13 @@ class ThermalZone(MapHierarchy.MapThermalZone):
                                                 dimension=3)
         self.solarRad_in = self.add_connector(name="solarRad_in",
                                               type="SolarRad ")
+
+        for key, value in self.hvac_component_group.items():
+            for item in value:
+                if type(item).__name__ == "Radiator":
+                    self.connect_to_radiator_aixlib(item)
+                else:
+                    pass
 
     def connect_to_radiator_aixlib(self, radiator):
 

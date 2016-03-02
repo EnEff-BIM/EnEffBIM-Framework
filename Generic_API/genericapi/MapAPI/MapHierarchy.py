@@ -17,7 +17,8 @@ from SimFlowPlant_Boiler_BoilerHotWater import SimFlowPlant_Boiler_BoilerHotWate
 from SimSpatialZone_ThermalZone_Default import SimSpatialZone_ThermalZone_Default
 from SimGroup_SpatialZoneGroup_ZoneHvacGroup import SimGroup_SpatialZoneGroup_ZoneHvacGroup
 from SimSpace_Occupied_Default import SimSpace_Occupied_Default
-
+from SimMaterial_OpaqueMaterial_Default import SimMaterial_OpaqueMaterial_Default
+from SimConnection_HotWaterFlow_Default import SimConnection_HotWaterFlow_Default
 class MoObject(object):
     """Base class for all mapped objects
         
@@ -70,7 +71,8 @@ class MoObject(object):
         self.target_location = None
         if self.sim_object is not None:
             self.target_name = sim_object.getSimModelObject().SimModelName(
-                ).getValue().replace(" ", "").replace("(", "").replace(")", "")
+                ).getValue().replace(" ", "").replace("(", "").replace(")",
+                                                        "").replace("-","_")
         else:
             self.target_name = None
 
@@ -221,6 +223,12 @@ class MapProject(object):
     project_name : str
         name of the project
 
+    sim_hierarchy : instance of SimHierarchy
+        SImHierarchy object, generic class
+
+    sim_data : instance of SimModel
+        SoimModel obejct, generic class
+
     """
 
     def __init__(self, simxml_file):
@@ -237,8 +245,7 @@ class MapProject(object):
         """Instantiate the SimModel Hierarchy and load the simxml file through
         libSimModelAPI"""
         self.sim_hierarchy = SimModel_Hierachy.SimHierarchy()
-        xml_data = self.sim_hierarchy.loadSimModel(simxml_file)
-
+        self.sim_data = self.sim_hierarchy.loadSimModel(simxml_file)
         """Search the libSimModel Hierarchy for the root and for Buildings,
         for each Building: instantiate a MapBuilding"""
         root_node = self.sim_hierarchy.getHierarchyRootNode()
@@ -255,15 +262,6 @@ class MapProject(object):
                             bldg_child = site_child[b].getChildList()
                             self.buildings.append(MapBuilding(self, site_child[
                                 b]))
-
-    def connect_topology(self):
-        """This is only for AixLib and testing"""
-        for bldg in self.buildings:
-            for zone in bldg.thermal_zones:
-                for key, value in zone.hvac_component_group.items():
-                    for item in value:
-                        if type(item).__name__ == "Radiator":
-                            zone.connect_to_radiator_aixlib(item)
 
 
 class MapBuilding(MoObject):
@@ -289,7 +287,7 @@ class MapBuilding(MoObject):
         group. These are most likely instances of "MapComponent".
     
     """
-    
+
     def __init__(self, project, sim_object):
         
         super(MapBuilding, self).__init__(project, sim_object)
@@ -362,7 +360,7 @@ class MapThermalZone(MoObject):
         needs to be figured out
 
     hvac_component_group : dict
-        This is an dict with all HVAC groups. The Key is the HVAC Group name 
+        This is a dict with all HVAC groups. The Key is the HVAC Group name
         (e.g. HVAC_Hot_Water), the value is a list with *all* components in this
         group. These are instances of "MapComponent".
 
@@ -545,8 +543,8 @@ class MapConnector(object):
         self.type = ""
         self.dimension = 1
         self.sim_ref_id = None
-		
-        
+
+
 class MapControl(object):
     """Representation of a mapped control strategy
         
@@ -671,10 +669,11 @@ class MapRecord(object):
         self.parameters.append(mapped_prop)
 
         return mapped_prop
-		
+
+
 class MapSpaceBoundary(object):
     """Representation of a mapped space boundary
-        
+
     The MapSpaceBoundary class is a representation of a space boundary 
     filled with geometric information.
     
@@ -783,6 +782,7 @@ class MapMaterialLayer(object):
         self.material = None
         self.thickness = None
 
+
 class MapMaterial(object):
     """Representation of a mapped material
         
@@ -795,7 +795,7 @@ class MapMaterial(object):
         MapMaterialLayer receives an instance of MapMaterialLayer, 
         in order to know to what layer it belongs to.
         
-    Attributes:
+    Attributes
     ----------
     
     name : str
@@ -833,4 +833,3 @@ class MapMaterial(object):
         self.solar_absorp = 0.0
         self.ir_emissivity = 0.0
         self.transmittance = 0.0
-        

@@ -133,11 +133,11 @@ if(root_node):
 print("\n")
 
 # 3. search a node by giving a reference id
-sim_object_id = "ID876"
+sim_object_id = "ID2391"
 
 # search this id in the hiearchy list
 hierarchy_node = sim_hierarchy.getHierarchyNode(sim_object_id)
-
+print(hierarchy_node)
 # if the return value is not none
 # a node with the given id is found
 if(hierarchy_node):

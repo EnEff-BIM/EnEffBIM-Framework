@@ -11,12 +11,15 @@ with help of libSimModel
 from genericapi.MapAPI.MapHierarchy import MapProject
 
 prj = MapProject("D:/GIT/EnEffBIM-Framework/LibSimModelAPI/LibSimModelAPI"
-                     "/simmodel_swig/Release/Boiler_Gas_VDI6020_V10.xml")
+                 "/simmodel_swig/Release/Boiler_Gas_VDI6020_V10.xml")
+
 """
 print(prj.buildings[-1].hvac_component_group)
 print(prj.buildings[-1].thermal_zones[-1].hvac_component_group)
 """
-prj.connect_topology()
+
+
+
 
 for bldg in prj.buildings:
     for key, value in bldg.hvac_component_group.items():

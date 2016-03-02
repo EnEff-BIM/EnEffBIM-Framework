@@ -52,7 +52,7 @@ class SimpleValve(MapHierarchy.MapComponent):
 
         from genericapi.MSL.Blocks.Sources.Constant import Constant
         const = Constant(self.project, None, self)
-        const.target_name = "setTemp"
+        const.target_name = "setTemp"+"_"+self.parent.target_name
         const.k.value = set_temp
         self.map_control.control_objects.append(const)
         self.parent.parent.hvac_component_group[self.hvac_loop].append(

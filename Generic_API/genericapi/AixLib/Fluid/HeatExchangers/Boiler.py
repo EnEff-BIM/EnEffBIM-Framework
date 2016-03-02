@@ -22,13 +22,12 @@ class Boiler(MapHierarchy.MapComponent):
         check_bldg_hvac = ["SimSystem_HvacHotWater_Supply"]
         self.add_to_loop(parent_list=boiler_parent,
                          check_list=check_bldg_hvac)
-        self.target_location = "AixLib.Fluid.Movers.Pump"
+        self.target_location = "AixLib.Fluid.HeatExchangers.Boiler"
 
         q_value = self.sim_object.getSimModelObject().SimFlowPlant_NomCap(
             ).getValue()
         self.Q_flow_max = self.add_parameter(name="Q_flow_max",
                                              value=q_value)
-
         self.Volume = self.add_parameter(name="Volume",
                                          value=0.00999999977648)
 
@@ -50,7 +49,7 @@ class Boiler(MapHierarchy.MapComponent):
         const = Constant(self.project, None, self)
         self.map_control = MapHierarchy.MapControl(self)
         self.map_control.control_objects.append(const)
-        const.target_name = "setTemp"
+        const.target_name = "setTemp"+"_"+self.target_name
         const.k.value = set_temp
         self.parent.hvac_component_group[self.hvac_loop].append(const)
         self.add_connection(self.T_set, const.y)
