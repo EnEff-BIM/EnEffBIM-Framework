@@ -14,8 +14,9 @@ Trying to use the API
 def fetchData(uriList, systemCfg, generatorCfg, logger):
     from genericapi.MapAPI.MapHierarchy import MapProject
 
-    prj = MapProject("D:/GIT/EnEffBIM-Framework/LibSimModelAPI/LibSimModelAPI"
-                 "/simmodel_swig/Release/Boiler_Gas_VDI6020_V10.xml")
+    prj = MapProject("D:\\GIT\\EnEffBIM-Framework\\SimModel_Python_API"
+                 "\\simmodel_swig"
+                 "\\Release\\Boiler_Gas_VDI6020_V12.simxml")
       
     dataDictionary=dict(
         MapData = prj

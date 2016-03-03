@@ -10,14 +10,14 @@ with help of libSimModel
 
 from genericapi.MapAPI.MapHierarchy import MapProject
 
-prj = MapProject("D:/GIT/EnEffBIM-Framework/LibSimModelAPI/LibSimModelAPI"
-                 "/simmodel_swig/Release/Boiler_Gas_VDI6020_V10.xml")
+prj = MapProject("D:\\GIT\\EnEffBIM-Framework\\SimModel_Python_API"
+                 "\\simmodel_swig"
+                 "\\Release\\Boiler_Gas_VDI6020_V12.simxml")
 
 """
 print(prj.buildings[-1].hvac_component_group)
 print(prj.buildings[-1].thermal_zones[-1].hvac_component_group)
 """
-
 
 
 

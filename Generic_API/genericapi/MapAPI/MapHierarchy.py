@@ -1,9 +1,13 @@
 import os
 import sys
-modulePath = ("D:/GIT/EnEffBIM-Framework/LibSimModelAPI/LibSimModelAPI/simmodel_swig/Release")
+modulePath = ("D:\\GIT\EnEffBIM-Framework\\SimModel_Python_API\\simmodel_swig"
+                 "\\Release")
 os.environ['PATH'] = ';'.join([modulePath, os.environ['PATH']])
 sys.path.append(modulePath)
+print(modulePath)
+
 import SimModel
+print("sim")
 import SimModel_Hierachy
 from SimProject_Project_DesignAlternative import SimProject_Project_DesignAlternative
 from SimSite_BuildingSite_Default import SimSite_BuildingSite_Default
@@ -232,7 +236,6 @@ class MapProject(object):
     """
 
     def __init__(self, simxml_file):
-
         self.simxml_file = simxml_file
 
         self.used_library = ""
@@ -245,6 +248,8 @@ class MapProject(object):
         """Instantiate the SimModel Hierarchy and load the simxml file through
         libSimModelAPI"""
         self.sim_hierarchy = SimModel_Hierachy.SimHierarchy()
+        print("instantiate")
+        print(simxml_file)
         self.sim_data = self.sim_hierarchy.loadSimModel(simxml_file)
         """Search the libSimModel Hierarchy for the root and for Buildings,
         for each Building: instantiate a MapBuilding"""
