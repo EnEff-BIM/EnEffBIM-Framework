@@ -2,43 +2,42 @@
 CoTeTo - Code Templating Tool
 =============================
 
-This software is work-in-progress. Documentation will be incomplete or missing
-and the software may not run properly.
-
-General Purpose
----------------
-CoTeTo is a tool for the generation of (Modelica) source  code. 
+CoTeTo is a tool for the generation of (Modelica) source  code.
 It is part of the research project EnEff-BIM.
 
+This software is work-in-progress.
+Documentation will be incomplete or missing and the software may not run properly.
 
 Concept
 -------
-CoTeTo manages a list of generators and data APIs. An generator is a package
-(contained in folder or a zip file) that contains output specific elements:
+CoTeTo manages a list of generators and data APIs.
+A generator is a package (contained in folder or a zip file) that contains output specific elements:
 
 - general information in file `Package.inf` (Windows ini-file syntax)
 - mapping rule files in folder `MappingRules`
 - preprocessor / filter function in folder `Filter`
 - template files (mako) in file `Templates`
 
-Generators are loaded from a list of folders. Each generator (defined by a name
-and a version number in Package.inf) depends on a specific data API. Data APIs
-are python modules loaded from the module package `CoTeTo_DataAPI`.
+Generators are loaded from a list of folders.
+Each generator (defined by a name and a version number in Package.inf) depends on a specific data API.
+Data APIs are python modules loaded from the module package `CoTeTo_DataAPI`.
 
 Dependencies
 ------------
-1. Python >=3.3 or >=2.7.10 - WinPython is recommended (includes a lot of packages). `libSimModel` is compiled to 64bit, and only 64bit Python will be tested.
-2. PyQt for the GUI (included in WinPython)
-3. Mako template Engine:
-   install on a python-enabled command line with `pip install mako`
-4. Jinja2 template Engine:
-   install on a python-enabled command line with `pip install jinja2`
-   (included in WinPython)
-5. configparser for python 2.7:
-   install on a python-enabled command line with `pip install configparser`
+1. CoTeTo works with vanilla Python 32 or 64 bit version >=3.3 or >=2.7.10 plus some packages listed below,
+but the `libSimModel` API is currently only compatible to Python 3.4 in 32bit.  
+[WinPython](http://winpython.github.io/) (v3.4, 32bit) is recommended,
+because it includes most packages.
+3. WinPython does not include the Mako templating engine,
+install it by running `pip install -U mako` on a Python-enabled command prompt
+4. If you are not using WinPython, you also need to install the Jinja2 templating engine by running `pip install -U jinja2` on a Python-enabled command prompt
+5. If you are using Python 2.7 you will also have to install configparser by running `pip install -U configparser` on a Python-enabled command prompt
 
 You can check these dependencies by running the script
 `tools/dependency_check.py` if you already have a python interpreter installed.
+
+Once all dependencies are installed,
+you should be able to launch the GUI by running `python CoTeTo\scripts\CoTeTo-gui.py`
 
 Installation
 ------------
