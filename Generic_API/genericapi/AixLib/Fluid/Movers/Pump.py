@@ -32,8 +32,19 @@ class Pump(MapHierarchy.MapComponent):
                                            value=sim_object.getSimModelObject().SimFlowMover_RatedPumpHead().getValue() * 0.0001019716)
 
         #connector
-        self.port_a = self.add_connector("port_a", "FluidPort")
-        self.port_b = self.add_connector("port_b", "FluidPort")
+        boiler_child = sim_object.getChildList()
+        for id in range(boiler_child.size()):
+            if boiler_child[id].ClassType() == \
+                    "SimNode_HotWaterFlowPort_Water_In":
+                sim_port_in = boiler_child[id]
+            if boiler_child[id].ClassType () == \
+                    "SimNode_HotWaterFlowPort_Water_Out":
+                sim_port_out = boiler_child[id]
+        self.port_a = self.add_connector(name="port_a", type="FluidPort",
+         dimension= 1, sim_object=sim_port_in)
+        self.port_b = self.add_connector(name="port_b", type="FluidPort",
+         dimension= 1, sim_object=sim_port_out)
+
         self.IsNight = self.add_connector("IsNight", "Boolean")
 
         """automatically instantiate an expansion vessel to pump"""

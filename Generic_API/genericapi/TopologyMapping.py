@@ -18,9 +18,7 @@ prj = MapProject("D:\\GIT\\EnEffBIM-Framework\\SimModel_Python_API"
 print(prj.buildings[-1].hvac_component_group)
 print(prj.buildings[-1].thermal_zones[-1].hvac_component_group)
 """
-
-
-
+"""
 for bldg in prj.buildings:
     for key, value in bldg.hvac_component_group.items():
         for item in value:
@@ -38,7 +36,7 @@ for bldg in prj.buildings:
 for connect in prj.connections:
     print(connect.connector_a.parent.target_name+"."+connect.connector_a.name,
           connect.connector_b.parent.target_name+"."+connect.connector_b.name)
-
+"""
 print("finish")
 
 
