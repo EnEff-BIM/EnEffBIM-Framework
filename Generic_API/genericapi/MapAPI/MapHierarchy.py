@@ -23,6 +23,8 @@ from SimGroup_SpatialZoneGroup_ZoneHvacGroup import SimGroup_SpatialZoneGroup_Zo
 from SimSpace_Occupied_Default import SimSpace_Occupied_Default
 from SimMaterial_OpaqueMaterial_Default import SimMaterial_OpaqueMaterial_Default
 from SimConnection_HotWaterFlow_Default import SimConnection_HotWaterFlow_Default
+from SimConnection_HotWaterFlow_Default import \
+            SimConnection_HotWaterFlow_Default
 class MoObject(object):
     """Base class for all mapped objects
         
@@ -71,6 +73,10 @@ class MoObject(object):
         self.parent = None
         self.project = project
         self.sim_object = sim_object
+        if self.sim_object is not None:
+            self.sim_instance = self.sim_object.getSimModelObject()
+        #else:
+         #   pass
         
         self.target_location = None
         if self.sim_object is not None:
@@ -88,7 +94,7 @@ class MoObject(object):
         self.parameters = []
         self.connectors = []
 
-    def add_connector(self, name, type, dimension = 1):
+    def add_connector(self, name, type, dimension = 1, sim_object=None):
         """This adds a MapConnector to the MoObject
 
         For topology mapping it is necessary to add Modelica connectors to
@@ -115,11 +121,12 @@ class MoObject(object):
             returns the instantiated MapConnector class
 
         """
-        connector = MapConnector(self)
+        connector = MapConnector(self, sim_object)
         connector.name = name
         connector.type = type
         connector.dimension = dimension
         self.connectors.append(connector)
+        self.project.connectors_help.append(connector)
 
         return connector
         
@@ -237,7 +244,7 @@ class MapProject(object):
 
     def __init__(self, simxml_file):
         self.simxml_file = simxml_file
-
+        self.connectors_help = []
         self.used_library = ""
         self.library_version = ""
 
@@ -254,6 +261,7 @@ class MapProject(object):
         """Search the libSimModel Hierarchy for the root and for Buildings,
         for each Building: instantiate a MapBuilding"""
         root_node = self.sim_hierarchy.getHierarchyRootNode()
+        all_node = self.sim_hierarchy.getHierarchyNodeList()
         prj_child = root_node.getChildList()
         if isinstance(root_node.getSimModelObject(),
                       SimProject_Project_DesignAlternative):
@@ -267,6 +275,9 @@ class MapProject(object):
                             bldg_child = site_child[b].getChildList()
                             self.buildings.append(MapBuilding(self, site_child[
                                 b]))
+        for test in self.connectors_help:
+            if test.sim_object is not None:
+                print(test.parent)
 
 
 class MapBuilding(MoObject):
@@ -541,9 +552,10 @@ class MapConnector(object):
         
     """
     
-    def __init__(self, parent):
+    def __init__(self, parent, sim_object=None):
         
         self.parent = parent
+        self.sim_object = sim_object
         self.name = ""
         self.type = ""
         self.dimension = 1

@@ -43,7 +43,8 @@ import SimFlowFitting_Splitter_DemandProxySplitterWater
 import SimSystem_HvacHotWater_Supply
 import SimFlowMover_Pump_VariableSpeedReturn
 import SimFlowPlant_Boiler_BoilerHotWater
-import SimConnection_HotWaterFlow_Default
+from SimConnection_HotWaterFlow_Default import \
+    SimConnection_HotWaterFlow_Default
 import SimNode_HotWaterFlowPort_Water_Out
 import SimNode_HotWaterFlowPort_Water_In
 import SimNode_DigitalControl_HWLoop_DigitalSignal_In
@@ -51,28 +52,47 @@ import SimNode_DigitalControl_HWLoop_DigitalSignal_In
 # create SimModel hierarchy object
 sim_hierarchy = SimModel_Hierachy.SimHierarchy()
 
-# load and parse SimXML
+#load and parse SimXML
 #simxml_data = sim_hierarchy.loadSimModel("Boiler_Gas_VDI6020_V10.xml")
 simxml_data = sim_hierarchy.loadSimModel("Boiler_Gas_VDI6020_V12.simxml")
 
-# simxml_data is the unmapped SimXML data without hierarchy structure
-# like our former demo, you can access the SimXML data via calling a SimModel class name
-# e.g. retrieve the property 'SimModelName' of 1st instance of class SimProject_Project_DesignAlternative
-print("access SimXML data: ", simxml_data.SimProject_Project_DesignAlternative().at(0).SimModelName().getValue(), "\n")
-
-# we provide two different ways for accessing the hierarchy
-
-# 1. the 1st way for accessing each hierarchy node
-#
-# retrieve a list saving SimModel hierarchy nodes
-# each node represents a SimModel class object
 nodeList = sim_hierarchy.getHierarchyNodeList()
 
+for id in range(nodeList.size()):
+    if nodeList[id].ClassType () == \
+                    "SimFlowEnergyTransfer_ConvectiveHeater_Water":
+        test = nodeList[id].getChildList()
+        for i in range(test.size()):
+            out = test[0].getChildList()
+            connection = out[0].getParentList()
+            inn = connection[1].getParentList()
+            print(inn[0].getSimModelObject())
+            #[0].getChildList()[0].getSimModelObject()
+            #print(out[0].getSimModelObject())
+            #print(test[i].getSimModelObject())
+            """
+        print(test.size())
+        print(test[0].getSimModelObject())
+        test1 = nodeList[id].getParentList()
+        print(test1[0].getSimModelObject())
+            """
+"""
 # number of SimModel classes saved in the hierarchy list
 print("hierarchy node/class number: ", nodeList.size(), "\n")
-hierarchy_node = sim_hierarchy.getHierarchyNode("ID1263")
-print(hierarchy_node.getParentList()[0].getParentList()[0].getSimModelObject())
+hierarchy_node = sim_hierarchy.getHierarchyNode("ID879")
+boiler_child = hierarchy_node.getChildList()
 
+for id2 in range(boiler_child.size()):
+    print(boiler_child[id2].ClassType())
+
+connector_out = boiler_child[1].getChildList()
+connector_in = boiler_child[0].getChildList()
+for id3 in range(connector_out.size()):
+    print(connector_out[id3].getSimModelObject())
+print("break")
+for id4 in range(connector_in.size()):
+    print(connector_in[id4].getSimModelObject())
+"""
 """
 # iterate each hiearchy node saved in the list
 for id in range(0, nodeList.size()):
