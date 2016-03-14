@@ -38,10 +38,11 @@ from genericapi.MapAPI.MapHierarchy import MapProject
 prj = MapProject("D:\\GIT\\EnEffBIM-Framework\\SimModel_Python_API"
                  "\\simmodel_swig"
                  "\\Release\\Boiler_Gas_VDI6020_V12.simxml")
-
+"""
 print(prj.buildings[0].hvac_components)
 for test in prj.buildings[0].hvac_components:
     print(test.sim_instance)
+"""
 """
 print(prj.buildings[-1].hvac_component_group)
 print(prj.buildings[-1].thermal_zones[-1].hvac_component_group)

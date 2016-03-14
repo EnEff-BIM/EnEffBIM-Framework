@@ -21,7 +21,7 @@ from SimConnection_HotWaterFlow_Default import SimConnection_HotWaterFlow_Defaul
 from SimConnection_HotWaterFlow_Default import SimConnection_HotWaterFlow_Default
 from SimFlowFitting_Splitter_DemandProxySplitterWater import SimFlowFitting_Splitter_DemandProxySplitterWater
 from SimFlowFitting_Mixer_DemandProxyMixerWater import SimFlowFitting_Mixer_DemandProxyMixerWater
-
+"""
 def find_connection(hierarchy_node, starting_point, liste):
     '''
 
@@ -58,14 +58,9 @@ def find_connection(hierarchy_node, starting_point, liste):
 
 
 
-"""Instantiate the SimModel Hierarchy and load the simxml file through
-libSimModelAPI"""
-sim_hierarchy = SimModel_Hierachy.SimHierarchy()
 
-sim_data = sim_hierarchy.loadSimModel("D:\\GIT\\EnEffBIM-Framework\\SimModel_Python_API\\simmodel_swig"
-                 "\\Release\\Boiler_Gas_VDI6020_V12.simxml")
-"""Search the libSimModel Hierarchy for the root and for Buildings,
-for each Building: instantiate a MapBuilding"""
+
+
 root_node = sim_hierarchy.getHierarchyRootNode()
 all_node = sim_hierarchy.getHierarchyNodeList()
 prj_child = root_node.getChildList()
@@ -90,10 +85,16 @@ if isinstance(root_node.getSimModelObject(),SimProject_Project_DesignAlternative
 print(new_list)
 
 """
+sim_hierarchy = SimModel_Hierachy.SimHierarchy()
+
+sim_data = sim_hierarchy.loadSimModel("D:\\GIT\\EnEffBIM-Framework\\SimModel_Python_API\\simmodel_swig"
+                 "\\Release\\Boiler_Gas_VDI6020_V12.simxml")
 #Access the pump directly
 pump_direct = sim_hierarchy.getHierarchyNode("ID882")
 #Access the pump over the Parent List of the Water_In distribution port
-pump_indirect = sim_hierarchy.getHierarchyNode("ID879")
+pump_indirect = sim_hierarchy.getHierarchyNode("ID1399")
+
+print(pump_direct.isParent(pump_indirect))
 
 if pump_direct is pump_indirect:
     print(type(pump_direct))
@@ -107,4 +108,3 @@ else:
     print(pump_direct.getSimModelObject(), pump_direct.getSimModelObject().RefId())
     print(pump_indirect.getSimModelObject(), pump_indirect.getSimModelObject().RefId())
     print("These two are different")
-"""

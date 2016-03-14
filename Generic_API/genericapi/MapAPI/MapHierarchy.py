@@ -305,9 +305,9 @@ class MapBuilding(MoObject):
 
         self.thermal_zones = []
         self.hvac_components = []
-
-        self.instantiate_thermal_zones()
         self.instantiate_components()
+        self.instantiate_thermal_zones()
+
 
     def instantiate_thermal_zones(self):
         '''Instantiates for each SimSpatialZone_ThermalZone_Default a
@@ -336,21 +336,22 @@ class MapBuilding(MoObject):
         bldg_child = self.hierarchy_node.getChildList()
 
         for a in range(bldg_child.size()):
-            if bldg_child[a].ClassType() == "SimSystem_HvacHotWater_FullSystem":
+            if isinstance(bldg_child[a].getSimModelObject(),
+                          SimSystem_HvacHotWater_FullSystem):
                 bldg_hvac_child = bldg_child[a].getChildList()
                 for d in range(bldg_hvac_child.size()):
-                    if bldg_hvac_child[d].ClassType() == \
-                        "SimSystem_HvacHotWater_Supply":
+                    if isinstance(bldg_hvac_child[d].getSimModelObject(),
+                                  SimSystem_HvacHotWater_Supply):
                         supply_child = bldg_hvac_child[d].getChildList()
                         for e in range(supply_child.size()):
                             MapComponent(self.project, supply_child[e])
                             self.hvac_components.append(MapComponent(self.project, supply_child[e]))
-                    elif bldg_hvac_child[d].ClassType() == \
-                        "SimSystem_HvacHotWater_Demand":
-                        supply_child = bldg_hvac_child[d].getChildList()
-                        for e in range(supply_child.size()):
-                            MapComponent(self.project, supply_child[e])
-                            self.hvac_components.append(MapComponent(self.project, supply_child[e]))
+                    elif isinstance(bldg_hvac_child[d].getSimModelObject(),
+                                     SimSystem_HvacHotWater_Demand):
+                        demand_child = bldg_hvac_child[d].getChildList()
+                        for e in range(demand_child.size()):
+                            MapComponent(self.project, demand_child[e])
+                            self.hvac_components.append(MapComponent(self.project, demand_child[e]))
 
 class MapThermalZone(MoObject):
     """Representation of a mapped thermal zone
@@ -380,6 +381,18 @@ class MapThermalZone(MoObject):
         
         self.parent = parent
         self.space_boundaries = []
+
+        #self.check_hierarchy()
+    """
+    def check_hierarchy(self):
+        tz_parent = self.hierarchy_node.getParentList()
+        for a in range(tz_parent.size()):
+            if tz_parent[a].ClassType() == \
+                    "SimGroup_SpatialZoneGroup_ZoneHvacGroup":
+                for comp in self.parent.hvac_components:
+                    if comp.hierarchy_node.isParent(tz_parent[a]) is True:
+                        print(comp.sim_instance)
+    """
 
 
 class MapComponent(MoObject):
