@@ -307,6 +307,8 @@ class MapBuilding(MoObject):
         self.hvac_components = []
         self.instantiate_components()
         self.instantiate_thermal_zones()
+        self.project.connections.append(self.hvac_components[0])
+        self.hvac_components[0].find_loop_connection()
 
 
     def instantiate_thermal_zones(self):
@@ -420,41 +422,8 @@ class MapComponent(MoObject):
 
         self.parent = parent
         self.map_control = None
-        self.hvac_loop = ""
 
-    def add_to_loop(self, parent_list, check_list):
-        """Adds the MapComponent to the hvac_loop it belongs to in MapHierarchy
-
-        Adds the MapComponent to the right hvac_component_group (Building or
-        Zone) in the MapHierarchy. Usually Supply is added to the
-        MapBuilding, where demand is added to the MapThermalZone (try and
-        except)
-
-        Parameters
-        ----------
-        parent_list : SimHierarchyNodeRefList()
-            Instance of SimHierarchyNodeRefList with all parent nodes of the
-            MapComponent
-
-        check_list : [str]
-            list of SimModel Class types(str) to check if the right parent is
-            chosen to add the MapComponent to the hvac_component_group
-
-        """
-
-        for a in range(parent_list.size()):
-            if parent_list[a].ClassType() in check_list and \
-               parent_list[a].getSimModelObject().IsTemplateObject().getValue() == False:
-                self.hvac_loop = parent_list[a].getSimModelObject().SimModelName().getValue()
-                try:
-                    self.parent.hvac_component_group[self.hvac_loop].append(self)
-                except:
-                    self.parent.parent.hvac_component_group[
-                        self.hvac_loop].append(self)
-
-   # def find_connection(self,):
-
-    def find_loop_connection(self, hierarchy_node):
+    def find_loop_connection(self, hierarchy_node=None):
         '''
 
         recursive function, to find all connected items in SimXML
@@ -467,7 +436,10 @@ class MapComponent(MoObject):
         -------
 
         '''
-        comp_child = hierarchy_node.getChildList()
+        if hierarchy_node is not None:
+            comp_child = hierarchy_node.getChildList()
+        else:
+            comp_child = self.hierarchy_node.getChildList()
         for i in range(comp_child.size()):
             if comp_child[i].ClassType() == "SimNode_HotWaterFlowPort_Water_Out":
                 outlet_child = comp_child[i].getChildList()
@@ -479,8 +451,9 @@ class MapComponent(MoObject):
                                 inlet_parent = connection_parent[k].getParentList()
                                 for h in range(inlet_parent.size()):
                                     if inlet_parent[h].ClassType != "SimConnection_HotWaterFlow_Default":
-                                        if inlet_parent[h].getSimModelObject().RefId() != self.sim_object.getSimModelObject().RefId():
-                                            self.project.hvac_components.append(inlet_parent[h].getSimModelObject())
+                                        if inlet_parent[h].getSimModelObject().RefId() != \
+                                                self.sim_instance.RefId():
+                                            self.project.connections.append(inlet_parent[h].getSimModelObject())
                                             self.find_loop_connection(inlet_parent[h])
                                             break
                                         else:
@@ -572,10 +545,10 @@ class MapConnector(object):
         
     """
     
-    def __init__(self, parent, sim_object=None):
+    def __init__(self, parent, hierarchy_node=None):
         
         self.parent = parent
-        self.sim_object = sim_object
+        self.hierarchy_node = hierarchy_node
         self.name = ""
         self.type = ""
         self.dimension = 1
@@ -812,8 +785,7 @@ class MapMaterialLayer(object):
     """
     
     def __init__(self, parent):
-        
-              
+                      
         self.parent = parent
         
         self.material = None
@@ -861,8 +833,7 @@ class MapMaterial(object):
 
     def __init__(self, parent):
 
-        
-        self.parent_class = parent
+        self.parent = parent
         self.name = ""
         self.density = 0.0  
         self.thermal_conduc = 0.0
