@@ -78,15 +78,14 @@ class MoObject(object):
         else:
             self.sim_instance = None
 
-        if self.hierarchy_node is not None:
-            self.target_name = self.hierarchy_node.getSimModelObject(
-                ).SimModelName( ).getValue().replace(" ", "").replace("(",
-                        "").replace(")","").replace("-","_")
+        if self.sim_instance is not None:
+            self.target_name = self.sim_instance.SimModelName().getValue(
+                ).replace(" ", "").replace("(","").replace(")","").replace("-","_")
         else:
             self.target_name = None
 
         if self.sim_instance is not None:
-            self.sim_ref_id = self.sim_instance.getSimModelObject().RefId()
+            self.sim_ref_id = self.sim_instance.RefId()
         else:
             self.sim_ref_id = None
 
@@ -214,7 +213,9 @@ class MapProject(object):
         
     Attributes
     ----------
-    
+    project_name : str
+        name of the project
+
     used_library : str
         Name of used library
         
@@ -228,35 +229,28 @@ class MapProject(object):
 
     connections : list of MapConnection()
         This is an *iterable* list containing all connections.
-        
-    project_name : str
-        name of the project
+
+    hvac_components : list of MapComponents()
+        This is an iterable list containing all MapComponents.
 
     sim_hierarchy : instance of SimHierarchy
         SImHierarchy object, generic class
-
-    sim_data : instance of SimModel
-        SoimModel obejct, generic class
-
     """
 
     def __init__(self, simxml_file):
         self.simxml_file = simxml_file
-        self.connectors_help = []
-        self.hvac_components = []
+        self.project_name = ""
         self.used_library = ""
         self.library_version = ""
 
         self.buildings = []
         self.connections = []
-        self.project_name = ""
+        self.hvac_components = []
 
-        """Instantiate the SimModel Hierarchy and load the simxml file through
+        """Instantiate the SimModel Hierarchy and load the SimXML file through
         libSimModelAPI"""
         self.sim_hierarchy = SimModel_Hierachy.SimHierarchy()
-        print("instantiate")
-        print(simxml_file)
-        self.sim_data = self.sim_hierarchy.loadSimModel(simxml_file)
+        test = self.sim_hierarchy.loadSimModel(simxml_file)
         """Search the libSimModel Hierarchy for the root and for Buildings,
         for each Building: instantiate a MapBuilding"""
         root_node = self.sim_hierarchy.getHierarchyRootNode()
