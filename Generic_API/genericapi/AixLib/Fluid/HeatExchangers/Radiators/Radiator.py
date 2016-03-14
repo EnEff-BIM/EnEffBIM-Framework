@@ -56,7 +56,7 @@ class Radiator(MapHierarchy.MapComponent):
         self.convPort = self.add_connector("convPort", "HeatPort")
         self.radPort = self.add_connector("radPort", "HeatPort")
 
-        self.ctrl_valve()
+        #self.ctrl_valve()
 
     def ctrl_valve(self):
 

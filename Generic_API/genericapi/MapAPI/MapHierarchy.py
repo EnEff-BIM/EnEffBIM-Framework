@@ -4,10 +4,8 @@ modulePath = ("D:\\GIT\EnEffBIM-Framework\\SimModel_Python_API\\simmodel_swig"
                  "\\Release")
 os.environ['PATH'] = ';'.join([modulePath, os.environ['PATH']])
 sys.path.append(modulePath)
-print(modulePath)
 
 import SimModel
-print("sim")
 import SimModel_Hierachy
 from SimProject_Project_DesignAlternative import SimProject_Project_DesignAlternative
 from SimSite_BuildingSite_Default import SimSite_BuildingSite_Default
@@ -23,8 +21,10 @@ from SimGroup_SpatialZoneGroup_ZoneHvacGroup import SimGroup_SpatialZoneGroup_Zo
 from SimSpace_Occupied_Default import SimSpace_Occupied_Default
 from SimMaterial_OpaqueMaterial_Default import SimMaterial_OpaqueMaterial_Default
 from SimConnection_HotWaterFlow_Default import SimConnection_HotWaterFlow_Default
-from SimConnection_HotWaterFlow_Default import \
-            SimConnection_HotWaterFlow_Default
+from SimConnection_HotWaterFlow_Default import SimConnection_HotWaterFlow_Default
+from SimFlowFitting_Splitter_DemandProxySplitterWater import SimFlowFitting_Splitter_DemandProxySplitterWater
+from SimFlowFitting_Mixer_DemandProxyMixerWater import SimFlowFitting_Mixer_DemandProxyMixerWater
+
 class MoObject(object):
     """Base class for all mapped objects
         
@@ -245,6 +245,7 @@ class MapProject(object):
     def __init__(self, simxml_file):
         self.simxml_file = simxml_file
         self.connectors_help = []
+        self.hvac_components = []
         self.used_library = ""
         self.library_version = ""
 
@@ -337,8 +338,7 @@ class MapBuilding(MoObject):
                     if bldg_hvac_child[d].ClassType() == \
                             "SimSystem_HvacHotWater_Supply":
                         self.hvac_component_group[bldg_hvac_child[
-                            d].getSimModelObject().SimModelName().getValue()]\
-                            = []
+                            d].getSimModelObject().SimModelName().getValue()]= []
                         supply_child = bldg_hvac_child[d].getChildList()
                         for e in range(supply_child.size()):
                             if supply_child[e].ClassType() == \
@@ -346,12 +346,15 @@ class MapBuilding(MoObject):
                                         supply_child[e].getSimModelObject().IsTemplateObject().getValue() is False:
                                 from genericapi.AixLib.Fluid.Movers.Pump \
                                     import Pump
-                                Pump(self.project, supply_child[e], self)
+
+                                aa = Pump(self.project, supply_child[e], self)
+                                aa.find_loop_connection(supply_child[e])
                             if supply_child[e].ClassType() == \
                                     "SimFlowPlant_Boiler_BoilerHotWater" and\
                                         supply_child[e].getSimModelObject().IsTemplateObject().getValue() is False:
                                 from genericapi.AixLib.Fluid.HeatExchangers.Boiler import Boiler
                                 Boiler(self.project, supply_child[e], self)
+
 
 
 class MapThermalZone(MoObject):
@@ -401,6 +404,7 @@ class MapThermalZone(MoObject):
                     "SimGroup_SpatialZoneGroup_ZoneHvacGroup":
                 self.hvac_component_group[tz_child[a].getSimModelObject(
                     ).SimModelName().getValue()] = []
+                print(self.hvac_component_group)
                 tz_hvac = tz_child[a].getChildList()
                 for b in range(tz_hvac.size()):
                     if tz_hvac[b].ClassType() == \
@@ -466,6 +470,41 @@ class MapComponent(MoObject):
                 except:
                     self.parent.parent.hvac_component_group[
                         self.hvac_loop].append(self)
+
+   # def find_connection(self,):
+
+    def find_loop_connection(self, hierarchy_node):
+        '''
+
+        recursive function, to find all connected items in SimXML
+
+        Parameters
+        ----------
+        hierarchy_node : current hierarchy node
+
+        Returns
+        -------
+
+        '''
+        comp_child = hierarchy_node.getChildList()
+        for i in range(comp_child.size()):
+            if comp_child[i].ClassType() == "SimNode_HotWaterFlowPort_Water_Out":
+                outlet_child = comp_child[i].getChildList()
+                for j in range(outlet_child.size()):
+                    if outlet_child[j].ClassType() == "SimConnection_HotWaterFlow_Default":
+                        connection_parent = outlet_child[j].getParentList()
+                        for k in range(connection_parent.size()):
+                            if connection_parent[k].ClassType() == "SimNode_HotWaterFlowPort_Water_In":
+                                inlet_parent = connection_parent[k].getParentList()
+                                for h in range(inlet_parent.size()):
+                                    if inlet_parent[h].ClassType != "SimConnection_HotWaterFlow_Default":
+                                        if inlet_parent[h].getSimModelObject().RefId() != self.sim_object.getSimModelObject().RefId():
+                                            self.project.hvac_components.append(inlet_parent[h].getSimModelObject())
+                                            self.find_loop_connection(inlet_parent[h])
+                                            break
+                                        else:
+                                            return
+
 
 class MapConnection(object):
     """Representation of a mapped connector
