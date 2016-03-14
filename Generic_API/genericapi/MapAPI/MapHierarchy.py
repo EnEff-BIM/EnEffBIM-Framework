@@ -77,13 +77,13 @@ class MoObject(object):
             self.sim_instance = self.hierarchy_node.getSimModelObject()
         else:
             self.sim_instance = None
-        """
+
         if self.sim_instance is not None:
             self.target_name = self.sim_instance.SimModelName().getValue(
                 ).replace(" ", "").replace("(","").replace(")","").replace("-","_")
         else:
             self.target_name = None
-        """
+
         if self.sim_instance is not None:
             self.sim_ref_id = self.sim_instance.RefId()
         else:
@@ -347,6 +347,7 @@ class MapBuilding(MoObject):
                             sup_comp = MapComponent(self.project,
                                                    supply_child[e])
                             sup_comp.find_loop_connection()
+                            sup_comp.create_connection()
                             self.hvac_components.append(sup_comp)
                     elif isinstance(bldg_hvac_child[d].getSimModelObject(),
                                      SimSystem_HvacHotWater_Demand):
@@ -355,6 +356,7 @@ class MapBuilding(MoObject):
                             dem_comp = MapComponent(self.project,
                                                     demand_child[e])
                             dem_comp.find_loop_connection()
+                            dem_comp.create_connection()
                             self.hvac_components.append(dem_comp)
 
 class MapThermalZone(MoObject):
@@ -455,8 +457,7 @@ class MapComponent(MoObject):
                                 inlet_parent = connection_parent[k].getParentList()
                                 for h in range(inlet_parent.size()):
                                     if inlet_parent[h].ClassType != "SimConnection_HotWaterFlow_Default":
-                                        self.connected_out.append(
-                                            inlet_parent[h])
+                                        self.connected_out.append(inlet_parent[h])
             elif comp_child[i].ClassType() == \
                 "SimNode_HotWaterFlowPort_Water_In":
                 outlet_child = comp_child[i].getChildList()
@@ -469,11 +470,12 @@ class MapComponent(MoObject):
                                 inlet_parent = connection_parent[k].getParentList()
                                 for h in range(inlet_parent.size()):
                                     if inlet_parent[h].ClassType != "SimConnection_HotWaterFlow_Default":
-                                        self.connected_in.append(
-                                            inlet_parent[h])
+                                        self.connected_in.append(inlet_parent[h])
 
-
-
+    def create_connection(self):
+        for test in self.connected_out:
+            self.project.connections.append(MapConnection(self.sim_instance,
+                                                          test.getSimModelObject()))
 class MapConnection(object):
     """Representation of a mapped connector
         
