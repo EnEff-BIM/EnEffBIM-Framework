@@ -250,11 +250,18 @@ class MapProject(object):
         """Instantiate the SimModel Hierarchy and load the SimXML file through
         libSimModelAPI"""
         self.sim_hierarchy = SimModel_Hierachy.SimHierarchy()
-        test = self.sim_hierarchy.loadSimModel(simxml_file)
-        """Search the libSimModel Hierarchy for the root and for Buildings,
-        for each Building: instantiate a MapBuilding"""
+        load_sim = self.sim_hierarchy.loadSimModel(simxml_file)
+
+        self.instantiate_buildings()
+
+    def instantiate_buildings(self):
+        '''Instantiates for each SimBuilding_Building_Default a MapBuilding.
+
+        Search the libSimModel Hierarchy for the root and for Buildings,
+        for each Building: instantiate a MapBuilding and appends it to the
+        buildings list.
+        '''
         root_node = self.sim_hierarchy.getHierarchyRootNode()
-        all_node = self.sim_hierarchy.getHierarchyNodeList()
         prj_child = root_node.getChildList()
         if isinstance(root_node.getSimModelObject(),
                       SimProject_Project_DesignAlternative):
@@ -265,13 +272,8 @@ class MapProject(object):
                     for b in range(site_child.size()):
                         if isinstance(site_child[b].getSimModelObject(),
                                       SimBuilding_Building_Default):
-                            bldg_child = site_child[b].getChildList()
                             self.buildings.append(MapBuilding(self, site_child[
                                 b]))
-        for test in self.connectors_help:
-            if test.sim_object is not None:
-                print(test.parent)
-
 
 class MapBuilding(MoObject):
     """Representation of a mapped building
