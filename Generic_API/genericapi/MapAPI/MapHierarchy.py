@@ -77,13 +77,13 @@ class MoObject(object):
             self.sim_instance = self.hierarchy_node.getSimModelObject()
         else:
             self.sim_instance = None
-
+        """
         if self.sim_instance is not None:
             self.target_name = self.sim_instance.SimModelName().getValue(
                 ).replace(" ", "").replace("(","").replace(")","").replace("-","_")
         else:
             self.target_name = None
-
+        """
         if self.sim_instance is not None:
             self.sim_ref_id = self.sim_instance.RefId()
         else:
@@ -299,57 +299,58 @@ class MapBuilding(MoObject):
     
     """
 
-    def __init__(self, project, sim_object):
+    def __init__(self, project, hierarchy_node):
         
-        super(MapBuilding, self).__init__(project, sim_object)
+        super(MapBuilding, self).__init__(project, hierarchy_node)
 
         self.thermal_zones = []
-        self.hvac_component_group = {}
+        self.hvac_components = []
 
+        self.instantiate_thermal_zones()
+        self.instantiate_components()
 
-        bldg_child = sim_object.getChildList()
+    def instantiate_thermal_zones(self):
+        '''Instantiates for each SimSpatialZone_ThermalZone_Default a
+        MapThermalZone.
 
-        """Seach for SimSpatialZone_ThermalZone in SimModel, for each found:
-        instantiate AixLib ThermalZone, this needs to be changed for other
-        libraries, a good approach would be a Template of this whole file"""
+        Search the libSimModel Hierarchy for thermalZones, for each thermal
+        zone: instantiate a MapThermalZone and append it to the thermal zone
+        list.
+        '''
+
+        bldg_child = self.hierarchy_node.getChildList()
+
         for a in range(bldg_child.size()):
-            if bldg_child[a].ClassType() == \
-                    "SimSpatialZone_ThermalZone_Default":
-                from genericapi.AixLib.Building.LowOrder.ThermalZone \
-                    import ThermalZone
-                self.thermal_zones.append(ThermalZone(project=project,
-                                                      sim_object=bldg_child[a],
-                                                      parent=self))
+            if isinstance(bldg_child[a].getSimModelObject(),
+                          SimSpatialZone_ThermalZone_Default):
+                self.thermal_zones.append(MapThermalZone(project=self.project,
+                                                         hierarchy_node=bldg_child[a],
+                                                         parent=self))
 
-        """Seach for Items attached to SimSystem_HvacHotWater_Supply in
-        SimModel, for each found: check what kind it is and instantiate the
-        corresponding AixLib model. This needs to be changed for other
-        libraries, a good approach would be a Template of this whole file"""
+    def instantiate_components(self):
+        '''Seach for Items attached to SimSystem_HvacHotWater_Supply and
+        SimSystemHvacHotWater_Demand in SimModel, for each found: create
+        MapComponent and add to hvac_component list
+        '''
+
+        bldg_child = self.hierarchy_node.getChildList()
+
         for a in range(bldg_child.size()):
             if bldg_child[a].ClassType() == "SimSystem_HvacHotWater_FullSystem":
                 bldg_hvac_child = bldg_child[a].getChildList()
                 for d in range(bldg_hvac_child.size()):
                     if bldg_hvac_child[d].ClassType() == \
-                            "SimSystem_HvacHotWater_Supply":
-                        self.hvac_component_group[bldg_hvac_child[
-                            d].getSimModelObject().SimModelName().getValue()]= []
+                        "SimSystem_HvacHotWater_Supply":
                         supply_child = bldg_hvac_child[d].getChildList()
                         for e in range(supply_child.size()):
-                            if supply_child[e].ClassType() == \
-                                    "SimFlowMover_Pump_VariableSpeedReturn" and\
-                                        supply_child[e].getSimModelObject().IsTemplateObject().getValue() is False:
-                                from genericapi.AixLib.Fluid.Movers.Pump \
-                                    import Pump
-
-                                aa = Pump(self.project, supply_child[e], self)
-                                aa.find_loop_connection(supply_child[e])
-                            if supply_child[e].ClassType() == \
-                                    "SimFlowPlant_Boiler_BoilerHotWater" and\
-                                        supply_child[e].getSimModelObject().IsTemplateObject().getValue() is False:
-                                from genericapi.AixLib.Fluid.HeatExchangers.Boiler import Boiler
-                                Boiler(self.project, supply_child[e], self)
-
-
+                            MapComponent(self.project, supply_child[e])
+                            self.hvac_components.append(MapComponent(self.project, supply_child[e]))
+                    elif bldg_hvac_child[d].ClassType() == \
+                        "SimSystem_HvacHotWater_Demand":
+                        supply_child = bldg_hvac_child[d].getChildList()
+                        for e in range(supply_child.size()):
+                            MapComponent(self.project, supply_child[e])
+                            self.hvac_components.append(MapComponent(self.project, supply_child[e]))
 
 class MapThermalZone(MoObject):
     """Representation of a mapped thermal zone
@@ -371,41 +372,14 @@ class MapThermalZone(MoObject):
 
     space_boundaries : MapSpaceBoundaries()
         needs to be figured out
-
-    hvac_component_group : dict
-        This is a dict with all HVAC groups. The Key is the HVAC Group name
-        (e.g. HVAC_Hot_Water), the value is a list with *all* components in this
-        group. These are instances of "MapComponent".
-
     """
     
-    def __init__(self,project, sim_object, parent=None):
+    def __init__(self, project, hierarchy_node, parent):
         
-        super(MapThermalZone, self).__init__(project, sim_object)
+        super(MapThermalZone, self).__init__(project, hierarchy_node)
         
         self.parent = parent
-
         self.space_boundaries = []
-        self.hvac_component_group = {}
-
-        """Search for Items attached to SimGroup_SpatialZoneGroup_ZoneHvacGroup
-        in SimModel, for each found: check what kind it is and instantiate the
-        corresponding AixLib model. This needs to be changed for other
-        libraries, a good approach would be a Template of this whole file"""
-        tz_child = sim_object.getParentList()
-        for a in range(tz_child.size()):
-            if tz_child[a].ClassType() == \
-                    "SimGroup_SpatialZoneGroup_ZoneHvacGroup":
-                self.hvac_component_group[tz_child[a].getSimModelObject(
-                    ).SimModelName().getValue()] = []
-                print(self.hvac_component_group)
-                tz_hvac = tz_child[a].getChildList()
-                for b in range(tz_hvac.size()):
-                    if tz_hvac[b].ClassType() == \
-                            "SimFlowEnergyTransfer_ConvectiveHeater_Water" and \
-                       tz_hvac[b].getSimModelObject().IsTemplateObject().getValue() is False:
-                        from genericapi.AixLib.Fluid.HeatExchangers.Radiators.Radiator import Radiator
-                        Radiator(self.project, tz_hvac[b], self)
 
 
 class MapComponent(MoObject):
@@ -427,9 +401,9 @@ class MapComponent(MoObject):
         dictionary with the name of the loops as the key
     """
 
-    def __init__(self, project, sim_object, parent):
+    def __init__(self, project, hierarchy_node, parent=None):
 
-        super(MapComponent, self).__init__(project, sim_object)
+        super(MapComponent, self).__init__(project, hierarchy_node)
 
         self.parent = parent
         self.map_control = None
