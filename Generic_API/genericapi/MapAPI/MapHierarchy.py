@@ -24,6 +24,12 @@ from SimConnection_HotWaterFlow_Default import SimConnection_HotWaterFlow_Defaul
 from SimConnection_HotWaterFlow_Default import SimConnection_HotWaterFlow_Default
 from SimFlowFitting_Splitter_DemandProxySplitterWater import SimFlowFitting_Splitter_DemandProxySplitterWater
 from SimFlowFitting_Mixer_DemandProxyMixerWater import SimFlowFitting_Mixer_DemandProxyMixerWater
+from SimSpaceBoundary_SecondLevel_SubTypeA import SimSpaceBoundary_SecondLevel_SubTypeA
+from SimSlab_RoofSlab_RoofUnderAir import SimSlab_RoofSlab_RoofUnderAir
+from SimSlab_Floor_FloorOverEarth import SimSlab_Floor_FloorOverEarth
+from SimWall_Wall_ExteriorAboveGrade import SimWall_Wall_ExteriorAboveGrade
+from SimWindow_Window_Exterior import SimWindow_Window_Exterior
+from SimMaterialLayerSet_OpaqueLayerSet_Wall import SimMaterialLayerSet_OpaqueLayerSet_Wall
 
 class MoObject(object):
     """Base class for all mapped objects
@@ -383,7 +389,7 @@ class MapThermalZone(MoObject):
         
         self.parent = parent
         self.space_boundaries = []
-
+        self.instantiate_space_boundaries()
         #self.check_hierarchy()
     """
     def check_hierarchy(self):
@@ -395,6 +401,18 @@ class MapThermalZone(MoObject):
                     if comp.hierarchy_node.isParent(tz_parent[a]) is True:
                         print(comp.sim_instance)
     """
+
+    def instantiate_space_boundaries(self):
+        tz_child = self.hierarchy_node.getChildList()
+        for a in range(tz_child.size()):
+            if tz_child[a].ClassType() == "SimSpace_Occupied_Default":
+                occ_child = tz_child[a].getChildList()
+                for b in range(occ_child.size()):
+                    if occ_child[b].ClassType() == \
+                            "SimSpaceBoundary_SecondLevel_SubTypeA":
+                        space_bound = MapSpaceBoundary(self, occ_child[b])
+                        space_bound.instantiate_element()
+
 
 
 class MapComponent(MoObject):
@@ -458,7 +476,6 @@ class MapComponent(MoObject):
                                             break
                                         else:
                                             return
-
 
 class MapConnection(object):
     """Representation of a mapped connector
@@ -741,12 +758,25 @@ class MapSpaceBoundary(object):
             
     """
     
-    def __init__(self, parent):
+    def __init__(self, parent, hierarchy_node=None):
         
               
         self.parent = parent
-        self.sim_ref_id = None
-        self.type = None
+        self.hierarchy_node = hierarchy_node
+        if self.hierarchy_node is not None:
+            self.sim_instance = self.hierarchy_node.getSimModelObject()
+            self.internal_external = \
+                self.sim_instance.InternalOrExternalBoundary().getValue()
+        else:
+            self.sim_instance = None
+
+        self.possible_types = ['SimSlab_RoofSlab_RoofUnderAir',
+                               'SimSlab_Floor_FloorOverEarth',
+                               'SimWall_Wall_ExteriorAboveGrade',
+                               'SimWindow_Window_Exterior',
+                               'SimSlab_Default_Default',
+                               'SimWall_Wall_Default']
+        self.possible_types = ['SimWall_Wall_ExteriorAboveGrade']
         self.internal_external = None
         self.area = None
         self.tilt = None
@@ -757,10 +787,25 @@ class MapSpaceBoundary(object):
         self.outer_radiation = None
         self.simmodel_coordinates = None
         self.simmodel_normal_vector = None
-
+        self.building_element = None
         self.mapped_layer = []
 
-        
+    def instantiate_element(self):
+        bound_child = self.hierarchy_node.getChildList()
+        for a in range(bound_child.size()):
+            if bound_child[a].ClassType() in self.possible_types:
+                building_element = bound_child[a].getSimModelObject()
+                self.area = building_element.WallGrossSideArea().getValue()
+                element_child = bound_child[a].getChildList()
+                for b in range(element_child.size()):
+                    print(element_child[b].getSimModelObject())
+                    if element_child[b].ClassType() == "SimMaterialLayerSet_OpaqueLayerSet_Wall":
+                        layer_child = element_child[b].getChildList()
+                        for c in range(layer_child.size()):
+                            print(layer_child[c].getSimModelObject())
+
+
+
 class MapMaterialLayer(object):
     """Representation of a mapped building element layer
         
