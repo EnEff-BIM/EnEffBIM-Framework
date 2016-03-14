@@ -30,6 +30,7 @@ from SimSlab_Floor_FloorOverEarth import SimSlab_Floor_FloorOverEarth
 from SimWall_Wall_ExteriorAboveGrade import SimWall_Wall_ExteriorAboveGrade
 from SimWindow_Window_Exterior import SimWindow_Window_Exterior
 from SimMaterialLayerSet_OpaqueLayerSet_Wall import SimMaterialLayerSet_OpaqueLayerSet_Wall
+from SimMaterialLayer_OpaqueMaterialLayer_Default import SimMaterialLayer_OpaqueMaterialLayer_Default
 
 class MoObject(object):
     """Base class for all mapped objects
@@ -770,12 +771,12 @@ class MapSpaceBoundary(object):
         else:
             self.sim_instance = None
 
-        self.possible_types = ['SimSlab_RoofSlab_RoofUnderAir',
-                               'SimSlab_Floor_FloorOverEarth',
-                               'SimWall_Wall_ExteriorAboveGrade',
-                               'SimWindow_Window_Exterior',
-                               'SimSlab_Default_Default',
-                               'SimWall_Wall_Default']
+        #self.possible_types = ['SimSlab_RoofSlab_RoofUnderAir',
+        #                       'SimSlab_Floor_FloorOverEarth',
+        #                       'SimWall_Wall_ExteriorAboveGrade',
+        #                       'SimWindow_Window_Exterior',
+        #                       'SimSlab_Default_Default',
+        #                       'SimWall_Wall_Default']
         self.possible_types = ['SimWall_Wall_ExteriorAboveGrade']
         self.internal_external = None
         self.area = None
@@ -794,15 +795,15 @@ class MapSpaceBoundary(object):
         bound_child = self.hierarchy_node.getChildList()
         for a in range(bound_child.size()):
             if bound_child[a].ClassType() in self.possible_types:
-                building_element = bound_child[a].getSimModelObject()
-                self.area = building_element.WallGrossSideArea().getValue()
+                print(bound_child[a].getSimModelObject())
                 element_child = bound_child[a].getChildList()
                 for b in range(element_child.size()):
-                    print(element_child[b].getSimModelObject())
                     if element_child[b].ClassType() == "SimMaterialLayerSet_OpaqueLayerSet_Wall":
+                        print(element_child[b].getSimModelObject().RefId())
                         layer_child = element_child[b].getChildList()
                         for c in range(layer_child.size()):
-                            print(layer_child[c].getSimModelObject())
+                            print(layer_child[c].getSimModelObject().RefId())
+        print("Finsih")
 
 
 
