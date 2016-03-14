@@ -27,25 +27,25 @@ from SimFlowFitting_Mixer_DemandProxyMixerWater import SimFlowFitting_Mixer_Dema
 
 class MoObject(object):
     """Base class for all mapped objects
-        
+
     The MoObject class is the base class for all mapped objects in the
     StaticAPI. It contains some library specific data and ist always referenced
     directly or indirectly (MapGap) to a SimModel Object.
-    
-    
+
+
     Parameters
     ----------
-    
+
     project : instance of MapProject()
-        MapProject as a "root" parent to have control over the connections in 
+        MapProject as a "root" parent to have control over the connections in
         the overall model
 
-    sim_object : instance of libSimModelAPI.SimHierarchyNode()
+    hierarchy_node : instance of libSimModelAPI.SimHierarchyNode()
         SimHierarchyNode() of the mapped or referenced MoObject
 
     Attributes
     ----------
-    
+
     target_location : str
         location within the library - part of Parameter/Object Mapping
 
@@ -57,44 +57,43 @@ class MoObject(object):
     sim_ref_id : str
         for some application it might be useful to store the SimModel
         Reference ID of the mapped Object
-        
-    parameters : list of MapParameter or MapRecord 
+
+    parameters : list of MapParameter or MapRecord
         This is an *iterable* list containing all records and parameters of
         the MoObject
-        
+
     connectors : list of MapConnector
         This is an *iterable* list containing all  Modelica connectors of the
-        MoObject (e.g. Real, Heatport, Fluid)        
+        MoObject (e.g. Real, Heatport, Fluid)
 
     """
 
-    def __init__(self, project, sim_object):
-        
+    def __init__(self, project, hierarchy_node):
+
         self.parent = None
         self.project = project
-        self.sim_object = sim_object
-        if self.sim_object is not None:
-            self.sim_instance = self.sim_object.getSimModelObject()
-        #else:
-         #   pass
-        
-        self.target_location = None
-        if self.sim_object is not None:
-            self.target_name = sim_object.getSimModelObject().SimModelName(
-                ).getValue().replace(" ", "").replace("(", "").replace(")",
-                                                        "").replace("-","_")
+        self.hierarchy_node = hierarchy_node
+        if self.hierarchy_node is not None:
+            self.sim_instance = self.hierarchy_node.getSimModelObject()
+        else:
+            self.sim_instance = None
+
+        if self.hierarchy_node is not None:
+            self.target_name = self.hierarchy_node.getSimModelObject(
+                ).SimModelName( ).getValue().replace(" ", "").replace("(",
+                        "").replace(")","").replace("-","_")
         else:
             self.target_name = None
 
-        if self.sim_object is not None:
-            self.sim_ref_id = sim_object.getSimModelObject().RefId()
+        if self.sim_instance is not None:
+            self.sim_ref_id = self.sim_instance.getSimModelObject().RefId()
         else:
             self.sim_ref_id = None
 
         self.parameters = []
         self.connectors = []
 
-    def add_connector(self, name, type, dimension = 1, sim_object=None):
+    def add_connector(self, name, type, dimension = 1):
         """This adds a MapConnector to the MoObject
 
         For topology mapping it is necessary to add Modelica connectors to
@@ -121,12 +120,11 @@ class MoObject(object):
             returns the instantiated MapConnector class
 
         """
-        connector = MapConnector(self, sim_object)
+        connector = MapConnector(self, self.hierarchy_node)
         connector.name = name
         connector.type = type
         connector.dimension = dimension
         self.connectors.append(connector)
-        self.project.connectors_help.append(connector)
 
         return connector
         
