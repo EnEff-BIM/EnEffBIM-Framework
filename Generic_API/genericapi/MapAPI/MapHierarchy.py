@@ -4,10 +4,8 @@ modulePath = ("D:\\GIT\EnEffBIM-Framework\\SimModel_Python_API\\simmodel_swig"
                  "\\Release")
 os.environ['PATH'] = ';'.join([modulePath, os.environ['PATH']])
 sys.path.append(modulePath)
-print(modulePath)
 
 import SimModel
-print("sim")
 import SimModel_Hierachy
 from SimProject_Project_DesignAlternative import SimProject_Project_DesignAlternative
 from SimSite_BuildingSite_Default import SimSite_BuildingSite_Default
@@ -23,29 +21,31 @@ from SimGroup_SpatialZoneGroup_ZoneHvacGroup import SimGroup_SpatialZoneGroup_Zo
 from SimSpace_Occupied_Default import SimSpace_Occupied_Default
 from SimMaterial_OpaqueMaterial_Default import SimMaterial_OpaqueMaterial_Default
 from SimConnection_HotWaterFlow_Default import SimConnection_HotWaterFlow_Default
-from SimConnection_HotWaterFlow_Default import \
-            SimConnection_HotWaterFlow_Default
+from SimConnection_HotWaterFlow_Default import SimConnection_HotWaterFlow_Default
+from SimFlowFitting_Splitter_DemandProxySplitterWater import SimFlowFitting_Splitter_DemandProxySplitterWater
+from SimFlowFitting_Mixer_DemandProxyMixerWater import SimFlowFitting_Mixer_DemandProxyMixerWater
+
 class MoObject(object):
     """Base class for all mapped objects
-        
+
     The MoObject class is the base class for all mapped objects in the
     StaticAPI. It contains some library specific data and ist always referenced
     directly or indirectly (MapGap) to a SimModel Object.
-    
-    
+
+
     Parameters
     ----------
-    
+
     project : instance of MapProject()
-        MapProject as a "root" parent to have control over the connections in 
+        MapProject as a "root" parent to have control over the connections in
         the overall model
 
-    sim_object : instance of libSimModelAPI.SimHierarchyNode()
+    hierarchy_node : instance of libSimModelAPI.SimHierarchyNode()
         SimHierarchyNode() of the mapped or referenced MoObject
 
     Attributes
     ----------
-    
+
     target_location : str
         location within the library - part of Parameter/Object Mapping
 
@@ -57,44 +57,42 @@ class MoObject(object):
     sim_ref_id : str
         for some application it might be useful to store the SimModel
         Reference ID of the mapped Object
-        
-    parameters : list of MapParameter or MapRecord 
+
+    parameters : list of MapParameter or MapRecord
         This is an *iterable* list containing all records and parameters of
         the MoObject
-        
+
     connectors : list of MapConnector
         This is an *iterable* list containing all  Modelica connectors of the
-        MoObject (e.g. Real, Heatport, Fluid)        
+        MoObject (e.g. Real, Heatport, Fluid)
 
     """
 
-    def __init__(self, project, sim_object):
-        
+    def __init__(self, project, hierarchy_node):
+
         self.parent = None
         self.project = project
-        self.sim_object = sim_object
-        if self.sim_object is not None:
-            self.sim_instance = self.sim_object.getSimModelObject()
-        #else:
-         #   pass
-        
-        self.target_location = None
-        if self.sim_object is not None:
-            self.target_name = sim_object.getSimModelObject().SimModelName(
-                ).getValue().replace(" ", "").replace("(", "").replace(")",
-                                                        "").replace("-","_")
+        self.hierarchy_node = hierarchy_node
+        if self.hierarchy_node is not None:
+            self.sim_instance = self.hierarchy_node.getSimModelObject()
+        else:
+            self.sim_instance = None
+        """
+        if self.sim_instance is not None:
+            self.target_name = self.sim_instance.SimModelName().getValue(
+                ).replace(" ", "").replace("(","").replace(")","").replace("-","_")
         else:
             self.target_name = None
-
-        if self.sim_object is not None:
-            self.sim_ref_id = sim_object.getSimModelObject().RefId()
+        """
+        if self.sim_instance is not None:
+            self.sim_ref_id = self.sim_instance.RefId()
         else:
             self.sim_ref_id = None
 
         self.parameters = []
         self.connectors = []
 
-    def add_connector(self, name, type, dimension = 1, sim_object=None):
+    def add_connector(self, name, type, dimension = 1):
         """This adds a MapConnector to the MoObject
 
         For topology mapping it is necessary to add Modelica connectors to
@@ -121,12 +119,11 @@ class MoObject(object):
             returns the instantiated MapConnector class
 
         """
-        connector = MapConnector(self, sim_object)
+        connector = MapConnector(self, self.hierarchy_node)
         connector.name = name
         connector.type = type
         connector.dimension = dimension
         self.connectors.append(connector)
-        self.project.connectors_help.append(connector)
 
         return connector
         
@@ -216,7 +213,9 @@ class MapProject(object):
         
     Attributes
     ----------
-    
+    project_name : str
+        name of the project
+
     used_library : str
         Name of used library
         
@@ -230,38 +229,39 @@ class MapProject(object):
 
     connections : list of MapConnection()
         This is an *iterable* list containing all connections.
-        
-    project_name : str
-        name of the project
+
+    hvac_components : list of MapComponents()
+        This is an iterable list containing all MapComponents.
 
     sim_hierarchy : instance of SimHierarchy
         SImHierarchy object, generic class
-
-    sim_data : instance of SimModel
-        SoimModel obejct, generic class
-
     """
 
     def __init__(self, simxml_file):
         self.simxml_file = simxml_file
-        self.connectors_help = []
+        self.project_name = ""
         self.used_library = ""
         self.library_version = ""
 
         self.buildings = []
         self.connections = []
-        self.project_name = ""
+        self.hvac_components = []
 
-        """Instantiate the SimModel Hierarchy and load the simxml file through
+        """Instantiate the SimModel Hierarchy and load the SimXML file through
         libSimModelAPI"""
         self.sim_hierarchy = SimModel_Hierachy.SimHierarchy()
-        print("instantiate")
-        print(simxml_file)
-        self.sim_data = self.sim_hierarchy.loadSimModel(simxml_file)
-        """Search the libSimModel Hierarchy for the root and for Buildings,
-        for each Building: instantiate a MapBuilding"""
+        load_sim = self.sim_hierarchy.loadSimModel(simxml_file)
+
+        self.instantiate_buildings()
+
+    def instantiate_buildings(self):
+        '''Instantiates for each SimBuilding_Building_Default a MapBuilding.
+
+        Search the libSimModel Hierarchy for the root and for Buildings,
+        for each Building: instantiate a MapBuilding and appends it to the
+        buildings list.
+        '''
         root_node = self.sim_hierarchy.getHierarchyRootNode()
-        all_node = self.sim_hierarchy.getHierarchyNodeList()
         prj_child = root_node.getChildList()
         if isinstance(root_node.getSimModelObject(),
                       SimProject_Project_DesignAlternative):
@@ -272,13 +272,8 @@ class MapProject(object):
                     for b in range(site_child.size()):
                         if isinstance(site_child[b].getSimModelObject(),
                                       SimBuilding_Building_Default):
-                            bldg_child = site_child[b].getChildList()
                             self.buildings.append(MapBuilding(self, site_child[
                                 b]))
-        for test in self.connectors_help:
-            if test.sim_object is not None:
-                print(test.parent)
-
 
 class MapBuilding(MoObject):
     """Representation of a mapped building
@@ -304,55 +299,61 @@ class MapBuilding(MoObject):
     
     """
 
-    def __init__(self, project, sim_object):
+    def __init__(self, project, hierarchy_node):
         
-        super(MapBuilding, self).__init__(project, sim_object)
+        super(MapBuilding, self).__init__(project, hierarchy_node)
 
         self.thermal_zones = []
-        self.hvac_component_group = {}
+        self.hvac_components = []
+        self.instantiate_components()
+        self.instantiate_thermal_zones()
+        self.project.connections.append(self.hvac_components[0])
+        self.hvac_components[0].find_loop_connection()
 
 
-        bldg_child = sim_object.getChildList()
+    def instantiate_thermal_zones(self):
+        '''Instantiates for each SimSpatialZone_ThermalZone_Default a
+        MapThermalZone.
 
-        """Seach for SimSpatialZone_ThermalZone in SimModel, for each found:
-        instantiate AixLib ThermalZone, this needs to be changed for other
-        libraries, a good approach would be a Template of this whole file"""
+        Search the libSimModel Hierarchy for thermalZones, for each thermal
+        zone: instantiate a MapThermalZone and append it to the thermal zone
+        list.
+        '''
+
+        bldg_child = self.hierarchy_node.getChildList()
+
         for a in range(bldg_child.size()):
-            if bldg_child[a].ClassType() == \
-                    "SimSpatialZone_ThermalZone_Default":
-                from genericapi.AixLib.Building.LowOrder.ThermalZone \
-                    import ThermalZone
-                self.thermal_zones.append(ThermalZone(project=project,
-                                                      sim_object=bldg_child[a],
-                                                      parent=self))
+            if isinstance(bldg_child[a].getSimModelObject(),
+                          SimSpatialZone_ThermalZone_Default):
+                self.thermal_zones.append(MapThermalZone(project=self.project,
+                                                         hierarchy_node=bldg_child[a],
+                                                         parent=self))
 
-        """Seach for Items attached to SimSystem_HvacHotWater_Supply in
-        SimModel, for each found: check what kind it is and instantiate the
-        corresponding AixLib model. This needs to be changed for other
-        libraries, a good approach would be a Template of this whole file"""
+    def instantiate_components(self):
+        '''Seach for Items attached to SimSystem_HvacHotWater_Supply and
+        SimSystemHvacHotWater_Demand in SimModel, for each found: create
+        MapComponent and add to hvac_component list
+        '''
+
+        bldg_child = self.hierarchy_node.getChildList()
+
         for a in range(bldg_child.size()):
-            if bldg_child[a].ClassType() == "SimSystem_HvacHotWater_FullSystem":
+            if isinstance(bldg_child[a].getSimModelObject(),
+                          SimSystem_HvacHotWater_FullSystem):
                 bldg_hvac_child = bldg_child[a].getChildList()
                 for d in range(bldg_hvac_child.size()):
-                    if bldg_hvac_child[d].ClassType() == \
-                            "SimSystem_HvacHotWater_Supply":
-                        self.hvac_component_group[bldg_hvac_child[
-                            d].getSimModelObject().SimModelName().getValue()]\
-                            = []
+                    if isinstance(bldg_hvac_child[d].getSimModelObject(),
+                                  SimSystem_HvacHotWater_Supply):
                         supply_child = bldg_hvac_child[d].getChildList()
                         for e in range(supply_child.size()):
-                            if supply_child[e].ClassType() == \
-                                    "SimFlowMover_Pump_VariableSpeedReturn" and\
-                                        supply_child[e].getSimModelObject().IsTemplateObject().getValue() is False:
-                                from genericapi.AixLib.Fluid.Movers.Pump \
-                                    import Pump
-                                Pump(self.project, supply_child[e], self)
-                            if supply_child[e].ClassType() == \
-                                    "SimFlowPlant_Boiler_BoilerHotWater" and\
-                                        supply_child[e].getSimModelObject().IsTemplateObject().getValue() is False:
-                                from genericapi.AixLib.Fluid.HeatExchangers.Boiler import Boiler
-                                Boiler(self.project, supply_child[e], self)
-
+                            MapComponent(self.project, supply_child[e])
+                            self.hvac_components.append(MapComponent(self.project, supply_child[e]))
+                    elif isinstance(bldg_hvac_child[d].getSimModelObject(),
+                                     SimSystem_HvacHotWater_Demand):
+                        demand_child = bldg_hvac_child[d].getChildList()
+                        for e in range(demand_child.size()):
+                            MapComponent(self.project, demand_child[e])
+                            self.hvac_components.append(MapComponent(self.project, demand_child[e]))
 
 class MapThermalZone(MoObject):
     """Representation of a mapped thermal zone
@@ -374,40 +375,26 @@ class MapThermalZone(MoObject):
 
     space_boundaries : MapSpaceBoundaries()
         needs to be figured out
-
-    hvac_component_group : dict
-        This is a dict with all HVAC groups. The Key is the HVAC Group name
-        (e.g. HVAC_Hot_Water), the value is a list with *all* components in this
-        group. These are instances of "MapComponent".
-
     """
     
-    def __init__(self,project, sim_object, parent=None):
+    def __init__(self, project, hierarchy_node, parent):
         
-        super(MapThermalZone, self).__init__(project, sim_object)
+        super(MapThermalZone, self).__init__(project, hierarchy_node)
         
         self.parent = parent
-
         self.space_boundaries = []
-        self.hvac_component_group = {}
 
-        """Search for Items attached to SimGroup_SpatialZoneGroup_ZoneHvacGroup
-        in SimModel, for each found: check what kind it is and instantiate the
-        corresponding AixLib model. This needs to be changed for other
-        libraries, a good approach would be a Template of this whole file"""
-        tz_child = sim_object.getParentList()
-        for a in range(tz_child.size()):
-            if tz_child[a].ClassType() == \
+        #self.check_hierarchy()
+    """
+    def check_hierarchy(self):
+        tz_parent = self.hierarchy_node.getParentList()
+        for a in range(tz_parent.size()):
+            if tz_parent[a].ClassType() == \
                     "SimGroup_SpatialZoneGroup_ZoneHvacGroup":
-                self.hvac_component_group[tz_child[a].getSimModelObject(
-                    ).SimModelName().getValue()] = []
-                tz_hvac = tz_child[a].getChildList()
-                for b in range(tz_hvac.size()):
-                    if tz_hvac[b].ClassType() == \
-                            "SimFlowEnergyTransfer_ConvectiveHeater_Water" and \
-                       tz_hvac[b].getSimModelObject().IsTemplateObject().getValue() is False:
-                        from genericapi.AixLib.Fluid.HeatExchangers.Radiators.Radiator import Radiator
-                        Radiator(self.project, tz_hvac[b], self)
+                for comp in self.parent.hvac_components:
+                    if comp.hierarchy_node.isParent(tz_parent[a]) is True:
+                        print(comp.sim_instance)
+    """
 
 
 class MapComponent(MoObject):
@@ -429,43 +416,49 @@ class MapComponent(MoObject):
         dictionary with the name of the loops as the key
     """
 
-    def __init__(self, project, sim_object, parent):
+    def __init__(self, project, hierarchy_node, parent=None):
 
-        super(MapComponent, self).__init__(project, sim_object)
+        super(MapComponent, self).__init__(project, hierarchy_node)
 
         self.parent = parent
         self.map_control = None
-        self.hvac_loop = ""
 
-    def add_to_loop(self, parent_list, check_list):
-        """Adds the MapComponent to the hvac_loop it belongs to in MapHierarchy
+    def find_loop_connection(self, hierarchy_node=None):
+        '''
 
-        Adds the MapComponent to the right hvac_component_group (Building or
-        Zone) in the MapHierarchy. Usually Supply is added to the
-        MapBuilding, where demand is added to the MapThermalZone (try and
-        except)
+        recursive function, to find all connected items in SimXML
 
         Parameters
         ----------
-        parent_list : SimHierarchyNodeRefList()
-            Instance of SimHierarchyNodeRefList with all parent nodes of the
-            MapComponent
+        hierarchy_node : current hierarchy node
 
-        check_list : [str]
-            list of SimModel Class types(str) to check if the right parent is
-            chosen to add the MapComponent to the hvac_component_group
+        Returns
+        -------
 
-        """
+        '''
+        if hierarchy_node is not None:
+            comp_child = hierarchy_node.getChildList()
+        else:
+            comp_child = self.hierarchy_node.getChildList()
+        for i in range(comp_child.size()):
+            if comp_child[i].ClassType() == "SimNode_HotWaterFlowPort_Water_Out":
+                outlet_child = comp_child[i].getChildList()
+                for j in range(outlet_child.size()):
+                    if outlet_child[j].ClassType() == "SimConnection_HotWaterFlow_Default":
+                        connection_parent = outlet_child[j].getParentList()
+                        for k in range(connection_parent.size()):
+                            if connection_parent[k].ClassType() == "SimNode_HotWaterFlowPort_Water_In":
+                                inlet_parent = connection_parent[k].getParentList()
+                                for h in range(inlet_parent.size()):
+                                    if inlet_parent[h].ClassType != "SimConnection_HotWaterFlow_Default":
+                                        if inlet_parent[h].getSimModelObject().RefId() != \
+                                                self.sim_instance.RefId():
+                                            self.project.connections.append(inlet_parent[h].getSimModelObject())
+                                            self.find_loop_connection(inlet_parent[h])
+                                            break
+                                        else:
+                                            return
 
-        for a in range(parent_list.size()):
-            if parent_list[a].ClassType() in check_list and \
-               parent_list[a].getSimModelObject().IsTemplateObject().getValue() == False:
-                self.hvac_loop = parent_list[a].getSimModelObject().SimModelName().getValue()
-                try:
-                    self.parent.hvac_component_group[self.hvac_loop].append(self)
-                except:
-                    self.parent.parent.hvac_component_group[
-                        self.hvac_loop].append(self)
 
 class MapConnection(object):
     """Representation of a mapped connector
@@ -552,10 +545,10 @@ class MapConnector(object):
         
     """
     
-    def __init__(self, parent, sim_object=None):
+    def __init__(self, parent, hierarchy_node=None):
         
         self.parent = parent
-        self.sim_object = sim_object
+        self.hierarchy_node = hierarchy_node
         self.name = ""
         self.type = ""
         self.dimension = 1
@@ -792,8 +785,7 @@ class MapMaterialLayer(object):
     """
     
     def __init__(self, parent):
-        
-              
+                      
         self.parent = parent
         
         self.material = None
@@ -841,8 +833,7 @@ class MapMaterial(object):
 
     def __init__(self, parent):
 
-        
-        self.parent_class = parent
+        self.parent = parent
         self.name = ""
         self.density = 0.0  
         self.thermal_conduc = 0.0
