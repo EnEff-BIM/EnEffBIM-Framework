@@ -9,8 +9,9 @@ with help of libSimModel
 """
 import os
 import sys
-modulePath = ("D:\\GIT\EnEffBIM-Framework\\SimModel_Python_API\\simmodel_swig"
-                 "\\Release")
+rootPath = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
+modulePath = os.path.join(rootPath, "SimModel_Python_API\\simmodel_swig\\Release")
+print(modulePath)
 os.environ['PATH'] = ';'.join([modulePath, os.environ['PATH']])
 sys.path.append(modulePath)
 
@@ -35,9 +36,12 @@ from SimFlowFitting_Splitter_DemandProxySplitterWater import SimFlowFitting_Spli
 from SimFlowFitting_Mixer_DemandProxyMixerWater import SimFlowFitting_Mixer_DemandProxyMixerWater
 from genericapi.MapAPI.MapHierarchy import MapProject
 
-prj = MapProject("D:\\GIT\\EnEffBIM-Framework\\SimModel_Python_API"
-                 "\\simmodel_swig"
-                 "\\Release\\Boiler_Gas_VDI6020_V12.simxml")
+file_path = os.path.join(rootPath,
+            "SimModel_Python_API\\simmodel_swig\\Release"
+            "\\Boiler_Gas_VDI6020_V12.simxml")
+
+prj = MapProject(file_path)
+
 print(prj.connections)
 """
 print(prj.buildings[0].hvac_components)
