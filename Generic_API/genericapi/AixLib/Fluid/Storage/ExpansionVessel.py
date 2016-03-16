@@ -12,14 +12,11 @@ class ExpansionVessel(MapHierarchy.MapComponent):
     """Representation of AixLib.Fluid.Movers.Pump
     """
     
-    def __init__(self, project, sim_object, parent):
-        
-        super(ExpansionVessel, self).__init__(project, sim_object, parent)
-
-        self.target_location = ("AixLib.Fluid.Storage.ExpansionVessel")
-        self.target_name = self.parent.target_name+"_expansionVessel"
-        self.V_start = self.add_parameter(name="V_start",
-                                          value=0.01)
-        self.port_a = self.add_connector("port_a", "FluidPort")
+    def init_me(self):
+        self.supe = 1+1
+        print("HALLO")
+        self.Q_flow_max = self.add_parameter(name="Q_flow_max",
+                                             value=123)
+        return self.hierarchy_node
         
    

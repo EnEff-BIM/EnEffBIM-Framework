@@ -11,7 +11,6 @@ import os
 import sys
 rootPath = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
 modulePath = os.path.join(rootPath, "SimModel_Python_API\\simmodel_swig\\Release")
-print(modulePath)
 os.environ['PATH'] = ';'.join([modulePath, os.environ['PATH']])
 sys.path.append(modulePath)
 
@@ -41,8 +40,16 @@ file_path = os.path.join(rootPath,
             "\\Boiler_Gas_VDI6020_V12.simxml")
 
 prj = MapProject(file_path)
+"""
+from genericapi.AixLib.Fluid.HeatExchangers.Boiler import Boiler
+map_comp = prj.buildings[0].hvac_components[0]
+map_comp.__class__ = Boiler
 
-print(prj.connections)
+print(map_comp.test123())
+"""
+
+#print(map_comp)
+
 """
 print(prj.buildings[0].hvac_components)
 for test in prj.buildings[0].hvac_components:
