@@ -2,7 +2,6 @@ import os
 import sys
 rootPath = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
 modulePath = os.path.join(rootPath, "SimModel_Python_API\\simmodel_swig\\Release")
-print(modulePath)
 os.environ['PATH'] = ';'.join([modulePath, os.environ['PATH']])
 sys.path.append(modulePath)
 
@@ -70,7 +69,6 @@ class MoObject(object):
     """
 
     def __init__(self, project, hierarchy_node):
-
         self.parent = None
         self.project = project
         self.hierarchy_node = hierarchy_node
@@ -349,6 +347,7 @@ class MapBuilding(MoObject):
                                                    supply_child[e])
                             sup_comp.find_loop_connection()
                             sup_comp.create_connection()
+                            sup_comp.convert_me()
                             self.hvac_components.append(sup_comp)
                     elif isinstance(bldg_hvac_child[d].getSimModelObject(),
                                      SimSystem_HvacHotWater_Demand):
@@ -358,6 +357,7 @@ class MapBuilding(MoObject):
                                                     demand_child[e])
                             dem_comp.find_loop_connection()
                             dem_comp.create_connection()
+                            dem_comp.convert_me()
                             self.hvac_components.append(dem_comp)
 
 class MapThermalZone(MoObject):
@@ -419,16 +419,29 @@ class MapComponent(MoObject):
         MapThermalZone.hvac_component_group) the name of this loop can be
         stored here. This is a string because hvac_component_group is a
         dictionary with the name of the loops as the key
+
+    connected_in : list of HierarchyNodes
+        list of hierarchy nodes that are connected TO this MapComponent
+
+    connected_out : list of HierarchyNodes
+        list of hierarchy nodes that are connected FROM this MapComponent
+
     """
 
     def __init__(self, project, hierarchy_node, parent=None):
 
         super(MapComponent, self).__init__(project, hierarchy_node)
-
         self.parent = parent
         self.map_control = None
+        self.hvac_loop = None
         self.connected_in = []
         self.connected_out = []
+        from genericapi.AixLib.Fluid.HeatExchangers.Boiler import Boiler
+        from genericapi.AixLib.Fluid.Movers.Pump import Pump
+        from genericapi.AixLib.Fluid.HeatExchangers.Radiators.Radiator import Radiator
+        self.aix_lib = {"SimFlowPlant_Boiler_BoilerHotWater" : Boiler,
+                        "SimFlowMover_Pump_VariableSpeedReturn" : Pump,
+                        "SimFlowEnergyTransfer_ConvectiveHeater_Water" : Radiator}
 
     def find_loop_connection(self, hierarchy_node=None):
         '''
@@ -477,6 +490,14 @@ class MapComponent(MoObject):
         for test in self.connected_out:
             self.project.connections.append(MapConnection(self.sim_instance,
                                                           test.getSimModelObject()))
+
+    def convert_me(self):
+        for key, value in self.aix_lib.items():
+            if self.hierarchy_node.ClassType() == key:
+                self.__class__ = value
+                self.init_me()
+        else:
+            pass
 class MapConnection(object):
     """Representation of a mapped connector
         
