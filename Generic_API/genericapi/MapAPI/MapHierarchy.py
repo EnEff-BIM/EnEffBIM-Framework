@@ -306,7 +306,18 @@ class MapBuilding(MoObject):
         self.hvac_components = []
         self.instantiate_components()
         self.instantiate_thermal_zones()
+        self.convert_compontents()
+        self.check_connections()
+    def convert_compontents(self):
+        for i in self.hvac_components:
+            i.convert_me()
 
+    def check_connections(self):
+        for a in self.hvac_components:
+            for b in a.connected_in:
+                for c in self.hvac_components:
+                    if c.sim_ref_id == b.getSimModelObject().RefId():
+                        a.create_connection(c)
 
     def instantiate_thermal_zones(self):
         '''Instantiates for each SimSpatialZone_ThermalZone_Default a
@@ -346,8 +357,8 @@ class MapBuilding(MoObject):
                             sup_comp = MapComponent(self.project,
                                                    supply_child[e])
                             sup_comp.find_loop_connection()
-                            sup_comp.create_connection()
-                            sup_comp.convert_me()
+                            #sup_comp.create_connection()
+                            #sup_comp.convert_me()
                             self.hvac_components.append(sup_comp)
                     elif isinstance(bldg_hvac_child[d].getSimModelObject(),
                                      SimSystem_HvacHotWater_Demand):
@@ -356,8 +367,8 @@ class MapBuilding(MoObject):
                             dem_comp = MapComponent(self.project,
                                                     demand_child[e])
                             dem_comp.find_loop_connection()
-                            dem_comp.create_connection()
-                            dem_comp.convert_me()
+                            #dem_comp.create_connection()
+                            #dem_comp.convert_me()
                             self.hvac_components.append(dem_comp)
 
 class MapThermalZone(MoObject):
@@ -486,10 +497,8 @@ class MapComponent(MoObject):
                                     if inlet_parent[h].ClassType != "SimConnection_HotWaterFlow_Default":
                                         self.connected_in.append(inlet_parent[h])
 
-    def create_connection(self):
-        for test in self.connected_out:
-            self.project.connections.append(MapConnection(self.sim_instance,
-                                                          test.getSimModelObject()))
+    def create_connection(self, test):
+        self.project.connections.append(MapConnection(self,test))
 
     def convert_me(self):
         for key, value in self.aix_lib.items():
