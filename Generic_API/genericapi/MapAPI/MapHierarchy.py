@@ -91,7 +91,7 @@ class MoObject(object):
         self.parameters = []
         self.connectors = []
 
-    def add_connector(self, name, type, dimension = 1):
+    def add_connector(self, name, type, hierarchy_node=None, dimension = 1):
         """This adds a MapConnector to the MoObject
 
         For topology mapping it is necessary to add Modelica connectors to
@@ -118,7 +118,7 @@ class MoObject(object):
             returns the instantiated MapConnector class
 
         """
-        connector = MapConnector(self, self.hierarchy_node)
+        connector = MapConnector(self, hierarchy_node)
         connector.name = name
         connector.type = type
         connector.dimension = dimension
@@ -178,23 +178,23 @@ class MoObject(object):
             returns the MapConnector instance
         """
 
-        if connector_a in self.connectors:
-            pass
-        else:
-            raise ValueError("input_connector is not assigned to MoObject")
+        # connector_a in self.connectors:
+        #    pass
+        #else:
+        #    raise ValueError("input_connector is not assigned to MoObject")
 
-        if connector_a.type == connector_b.type and \
-                connector_a.dimension == connector_b.dimension:
+        #if connector_a.type == connector_b.type and \
+        #        connector_a.dimension == connector_b.dimension:
     
-            mapped_con = MapConnection(connector_a, connector_b)
-            mapped_con.type = connector_a.type
-            self.project.connections.append(mapped_con)
+        mapped_con = MapConnection(connector_a, connector_b)
+        #mapped_con.type = connector_a.type
+        self.project.connections.append(mapped_con)
 
-            return mapped_con
+        return mapped_con
             
-        else:
-            raise TypeError("Input/Ouput connector type or dimension"
-                            "do not match")
+        #else:
+        #    raise TypeError("Input/Ouput connector type or dimension"
+        #                    "do not match")
 
 
 class MapProject(object):
@@ -306,9 +306,10 @@ class MapBuilding(MoObject):
         self.hvac_components = []
         self.instantiate_components()
         self.instantiate_thermal_zones()
-        self.convert_compontents()
+        self.convert_components()
         self.check_connections()
-    def convert_compontents(self):
+
+    def convert_components(self):
         for i in self.hvac_components:
             i.convert_me()
 
@@ -317,7 +318,8 @@ class MapBuilding(MoObject):
             for b in a.connected_in:
                 for c in self.hvac_components:
                     if c.sim_ref_id == b.getSimModelObject().RefId():
-                        a.create_connection(c)
+                        a.add_connection(a.port_b, c.port_a)
+
 
     def instantiate_thermal_zones(self):
         '''Instantiates for each SimSpatialZone_ThermalZone_Default a
@@ -449,10 +451,16 @@ class MapComponent(MoObject):
         self.connected_out = []
         from genericapi.AixLib.Fluid.HeatExchangers.Boiler import Boiler
         from genericapi.AixLib.Fluid.Movers.Pump import Pump
+        from genericapi.AixLib.Fluid.Movers.SplitterMixer import Mixer
         from genericapi.AixLib.Fluid.HeatExchangers.Radiators.Radiator import Radiator
         self.aix_lib = {"SimFlowPlant_Boiler_BoilerHotWater" : Boiler,
                         "SimFlowMover_Pump_VariableSpeedReturn" : Pump,
-                        "SimFlowEnergyTransfer_ConvectiveHeater_Water" : Radiator}
+                        "SimFlowEnergyTransfer_ConvectiveHeater_Water" :
+                            Radiator,
+                        "SimFlowFitting_Mixer_DemandProxyMixerWater" : Mixer,
+                        "SimFlowFitting_Splitter_DemandProxySplitterWater" :
+                            Mixer}
+
 
     def find_loop_connection(self, hierarchy_node=None):
         '''
