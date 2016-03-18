@@ -13,6 +13,7 @@ class Boiler(MapHierarchy.MapComponent):
     """
 
     def init_me(self):
+        self.target_location = "AixLib.Fluid.HeatExchangers.Boiler"
         pump_child = self.hierarchy_node.getChildList()
         for id in range(pump_child.size()):
             if pump_child[id].ClassType() == \
@@ -27,3 +28,6 @@ class Boiler(MapHierarchy.MapComponent):
          dimension= 1, hierarchy_node=sim_port_out)
 
         return True
+
+    def mapp_me(self):
+        print("map boiler")

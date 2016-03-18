@@ -11,6 +11,7 @@ class Radiator(MapHierarchy.MapComponent):
     """
     
     def init_me(self):
+        self.target_location = "AixLib.Fluid.HeatExchangers.Radiators.Radiator"
         pump_child = self.hierarchy_node.getChildList()
         for id in range(pump_child.size()):
             if pump_child[id].ClassType() == \
@@ -26,3 +27,13 @@ class Radiator(MapHierarchy.MapComponent):
         
 
 
+    def mapp_me(self):
+        print("map rad")
+
+        from genericapi.AixLib.Fluid.FixedResitances.StaticPipe import Pipe
+        #pipe.convert_it(name=Pipe)
+        pipe = Pipe(self.project,self.hierarchy_node,self)
+        pipe.init_me()
+        self.project.buildings[0].hvac_components_mod.append(pipe)
+        self.add_connection(self.port_a, pipe.port_b)
+        self.port_a = pipe.port_a
