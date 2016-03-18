@@ -5,6 +5,13 @@ model UseCase
 
 ${item.target_location} ${item.target_name} annotation (Placement
 (transformation(extent={{-40,-48},{-20,-28}})));;
+%for para in item.parameters:
+%if type(para).__name__ == "MapRecord":
+pass
+%else:
+${para.name} = ${para.value}
+%endif
+%endfor
 
 %endfor
 
@@ -12,7 +19,13 @@ ${item.target_location} ${item.target_name} annotation (Placement
 
 ${item.target_location} ${item.target_name} annotation (Placement
 (transformation(extent={{-40,-48},{-20,-28}})));;
-
+%for para in item.parameters:
+%if type(para).__name__ == "MapRecord":
+pass
+%else:
+${para.name} = ${para.value}
+%endif
+%endfor
 %endfor
 
 equation

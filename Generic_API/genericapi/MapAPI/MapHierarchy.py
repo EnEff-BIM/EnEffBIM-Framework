@@ -4,7 +4,7 @@ rootPath = os.path.dirname(os.path.dirname(os.path.dirname((
     __file__))))
 root_path_coteto = os.path.dirname(os.path.dirname(os.path.dirname((
     os.path.dirname(( __file__))))))
-modulePath = os.path.join(rootPath, "SimModel_Python_API\\simmodel_swig\\Release")
+modulePath = os.path.join(root_path_coteto, "SimModel_Python_API\\simmodel_swig\\Release")
 os.environ['PATH'] = ';'.join([modulePath, os.environ['PATH']])
 sys.path.append(modulePath)
 print(modulePath)

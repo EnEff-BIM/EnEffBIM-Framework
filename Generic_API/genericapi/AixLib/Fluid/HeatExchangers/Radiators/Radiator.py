@@ -55,6 +55,7 @@ class Radiator(MapHierarchy.MapComponent):
 
         pipe = Pipe(self.project, self.hierarchy_node, self)
         pipe.init_me()
+        pipe.mapp_me()
         self.project.buildings[0].hvac_components_mod.append(pipe)
         self.add_connection(self.port_a, pipe.port_b)
         self.port_a = pipe.port_a
