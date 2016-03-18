@@ -1,12 +1,21 @@
 import os
 import sys
-rootPath = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
-modulePath = os.path.join(rootPath, "SimModel_Python_API\\simmodel_swig\\Release")
-print(modulePath)
-os.environ['PATH'] = ';'.join([modulePath, os.environ['PATH']])
-sys.path.append(modulePath)
+rootPath = os.path.dirname(__file__)
+try:
+    default_path = rootPath[:rootPath.rfind("EnEffBIM-Framework")]
+    modulePath = os.path.join(default_path, "EnEffBIM-Framework\\SimModel_Python_API"
+                              "\\simmodel_swig\\Release")
+    os.environ['PATH'] = ';'.join([modulePath, os.environ['PATH']])
+    sys.path.append(modulePath)
+    import SimModel
+except:
+    default_path = rootPath[:rootPath.rfind("eneffbim-framework")]
+    modulePath = os.path.join(default_path, "EnEffBIM-Framework\\SimModel_Python_API"
+                              "\\simmodel_swig\\Release")
+    os.environ['PATH'] = ';'.join([modulePath, os.environ['PATH']])
+    sys.path.append(modulePath)
+    import SimModel
 
-import SimModel
 import SimModel_Hierachy
 from SimProject_Project_DesignAlternative import SimProject_Project_DesignAlternative
 from SimSite_BuildingSite_Default import SimSite_BuildingSite_Default
