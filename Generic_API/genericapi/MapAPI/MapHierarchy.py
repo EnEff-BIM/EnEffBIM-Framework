@@ -299,10 +299,12 @@ class MapBuilding(MoObject):
         building. The items of the list have to be an instance of
         the class MapThermalZone or inherit from MapThermalZone.
         
-    hvac_component_group : dict
-        This is an dict with all HVAC groups. The Key is the HVAC Group name 
-        (e.g. HVAC_Hot_Water), the value is a list with *all* components in this
-        group. These are most likely instances of "MapComponent".
+    hvac_components_sim : list
+        This is a list with all (converted) hvac components from SimModel
+
+    hvac_components_mod : list
+        This is a list with all added hvac components because of MapGap,
+        one to Many Mappings or Topology mapping
     
     """
 
@@ -322,7 +324,8 @@ class MapBuilding(MoObject):
 
 
     def instantiate_connections(self):
-        ''''''
+        '''instantiates the SimModel topology connections
+        '''
         for a in self.hvac_components_sim:
             for b in a.connected_in:
                 for c in self.hvac_components_sim:
@@ -423,17 +426,6 @@ class MapThermalZone(MoObject):
         self.parent = parent
         self.space_boundaries = []
 
-        #self.check_hierarchy()
-    """
-    def check_hierarchy(self):
-        tz_parent = self.hierarchy_node.getParentList()
-        for a in range(tz_parent.size()):
-            if tz_parent[a].ClassType() == \
-                    "SimGroup_SpatialZoneGroup_ZoneHvacGroup":
-                for comp in self.parent.hvac_components_sim:
-                    if comp.hierarchy_node.isParent(tz_parent[a]) is True:
-                        print(comp.sim_instance)
-    """
 
 class MapComponent(MoObject):
     """Representation of a mapped component
@@ -530,7 +522,7 @@ class MapComponent(MoObject):
         self.project.connections.append(MapConnection(self,test))
 
     def convert_me(self):
-
+        """Converts the MapComponent to a library specific component"""
         for key, value in self.aix_lib.items():
             if self.hierarchy_node.ClassType() == key:
                 self.__class__ = value
