@@ -1,17 +1,33 @@
 within AixLib;
 model UseCase
 
-% for key, value in MapData.buildings[-1].hvac_component_group.items():
-%for i, item in enumerate(value):
-${item.target_location} ${item.target_name};
+% for item in MapData.buildings[-1].hvac_components_sim:
+
+${item.target_location} ${item.target_name} annotation (Placement
+(transformation(extent={{-40,-48},{-20,-28}})));;
+%for para in item.parameters:
+%if type(para).__name__ == "MapRecord":
+pass
+%else:
+${para.name} = ${para.value}
+%endif
+%endfor
+
+%endfor
+
+% for item in MapData.buildings[-1].hvac_components_mod:
+
+${item.target_location} ${item.target_name} annotation (Placement
+(transformation(extent={{-40,-48},{-20,-28}})));;
+%for para in item.parameters:
+%if type(para).__name__ == "MapRecord":
+pass
+%else:
+${para.name} = ${para.value}
+%endif
 %endfor
 %endfor
 
-% for key, value in MapData.buildings[-1].thermal_zones[-1].hvac_component_group.items():
-%for i, item in enumerate(value):
-${item.target_location} ${item.target_name};
-%endfor
-%endfor
 equation
 % for item in MapData.connections:
 connect(${item.connector_a.parent.target_name}.${item.connector_a.name}, ${item.connector_b.parent.target_name}.${item.connector_b.name});

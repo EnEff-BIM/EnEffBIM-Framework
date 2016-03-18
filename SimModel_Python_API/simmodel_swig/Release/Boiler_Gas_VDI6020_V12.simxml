@@ -6736,7 +6736,7 @@
 		<simcore:SimUniqueID>4180b1e0-89c4-42a8-90f9-1f820f988653</simcore:SimUniqueID>
 		<simcore:SimModelType>ConvectiveHeater</simcore:SimModelType>
 		<simcore:SimModelSubtype>Water</simcore:SimModelSubtype>
-		<simcore:SimModelName>FTR-1</simcore:SimModelName>
+		<simcore:SimModelName>FTR-2</simcore:SimModelName>
 		<simcore:SourceModelSchema>Simergy v1.9.0.20090</simcore:SourceModelSchema>
 		<simcore:SourceModelObjectType>SIM:SimFlowEnergyTransfer</simcore:SourceModelObjectType>
 		<simcore:IsTemplateObject>false</simcore:IsTemplateObject>

@@ -10,69 +10,66 @@ class Radiator(MapHierarchy.MapComponent):
     """Representation of AixLib.Fluid.HeatExchangers.Radiators.Radiator
     """
     
-    def __init__(self, project, sim_object, parent):
-        
-        super(Radiator, self).__init__(project, sim_object, parent)
-
-
-        self.sim_ref_id = [sim_object.getSimModelObject().RefId()]
-
-        check_zone_hvac = ["SimGroup_SpatialZoneGroup_ZoneHvacGroup"]
-        radiator_parent = sim_object.getParentList()
-        self.add_to_loop(parent_list=radiator_parent,
-                         check_list=check_zone_hvac)
-
+    def init_me(self):
         self.target_location = "AixLib.Fluid.HeatExchangers.Radiators.Radiator"
-        #mapp the Record Parameters:
+        pump_child = self.hierarchy_node.getChildList()
+        for id in range(pump_child.size()):
+            if pump_child[id].ClassType() == \
+                    "SimNode_HotWaterFlowPort_Water_In":
+                sim_port_in = pump_child[id]
+            if pump_child[id].ClassType () == \
+                    "SimNode_HotWaterFlowPort_Water_Out":
+                sim_port_out = pump_child[id]
+        self.port_a = self.add_connector(name="port_a", type="FluidPort",
+         dimension= 1, hierarchy_node=sim_port_in)
+        self.port_b = self.add_connector(name="port_b", type="FluidPort",
+         dimension= 1, hierarchy_node=sim_port_out)
+        self.convPort = self.add_connector("convPort", "HeatPort")
+        self.radPort = self.add_connector("radPort", "HeatPort")
+
+
+    def mapp_me(self):
         record_location = \
             "AixLib.DataBase.Radiators.RadiatiorBaseDataDefinition"
         self.parameters.append(MapHierarchy.MapRecord(parent=self,
                                                       record_location=record_location,
                                                       name="RadiatorType"))
 
-        self.parameters[-1].add_parameter(name="NominalPower",
-                                          value=979.0)
-        self.parameters[-1].add_parameter(name="T_flow_nom",
-                                          value=75.0)
-        self.parameters[-1].add_parameter(name="T_return_nom",
-                                          value=65.0)
-        self.parameters[-1].add_parameter(name="T_room_nom",
-                                          value=20.0)
-        self.parameters[-1].add_parameter(name="Exponent",
-                                          value=1.2721)
-        self.parameters[-1].add_parameter(name="VolumeWater",
-                                          value=3.15)
-        self.parameters[-1].add_parameter(name="MassSteel",
-                                          value=19.58)
-        self.parameters[-1].add_parameter(name="RadPercent",
-                                          value=0.35)
-        self.parameters[-1].add_parameter(name="length",
-                                          value=1.0)
-        self.parameters[-1].add_parameter(name="height",
-                                          value=0.6)
+        self.parameters[-1].add_parameter(name="NominalPower", value=979.0)
+        self.parameters[-1].add_parameter(name="T_flow_nom", value=75.0)
+        self.parameters[-1].add_parameter(name="T_return_nom", value=65.0)
+        self.parameters[-1].add_parameter(name="T_room_nom", value=20.0)
+        self.parameters[-1].add_parameter(name="Exponent", value=1.2721)
+        self.parameters[-1].add_parameter(name="VolumeWater", value=3.15)
+        self.parameters[-1].add_parameter(name="MassSteel", value=19.58)
+        self.parameters[-1].add_parameter(name="RadPercent", value=0.35)
+        self.parameters[-1].add_parameter(name="length",  value=1.0)
+        self.parameters[-1].add_parameter(name="height", value=0.6)
+        self.m_flow_small = self.add_parameter(name="m_flow_small", value=0.01)
 
-        self.port_a = self.add_connector("port_a", "FluidPort")
-        self.port_b = self.add_connector("port_b", "FluidPort")
-        self.convPort = self.add_connector("convPort", "HeatPort")
-        self.radPort = self.add_connector("radPort", "HeatPort")
+        self.ctrl_valve()
+        self.add_pipe()
 
-        #self.ctrl_valve()
+    def add_pipe(self):
+        from genericapi.AixLib.Fluid.FixedResitances.StaticPipe import Pipe
+
+        pipe = Pipe(self.project, self.hierarchy_node, self)
+        pipe.init_me()
+        pipe.mapp_me()
+        self.project.buildings[0].hvac_components_mod.append(pipe)
+        self.add_connection(self.port_a, pipe.port_b)
+        self.port_a = pipe.port_a
+        self.connectors.append(pipe.port_a)
 
     def ctrl_valve(self):
-
         from genericapi.AixLib.Fluid.Actuators.Valves.SimpleValve import \
             SimpleValve
-        self.map_control = MapHierarchy.MapControl(parent=self)
-        self.valve = SimpleValve(project=self.project,
-                                 sim_object=self.sim_object,
-                                 parent=self)
 
-        self.valve.ctrl_p_room()
-        self.map_control.control_connector = self.valve.map_control.control_connector
-
-
-        #print(self.parent)
-        #self.parent.connect_to_radiator_aixlib(self)
-        
+        valve = SimpleValve(self.project, self.hierarchy_node, self)
+        valve.init_me()
+        self.project.buildings[0].hvac_components_mod.append(valve)
+        self.add_connection(self.port_a, valve.port_b)
+        self.port_a = valve.port_a
+        self.connectors.append(valve.port_a)
 
 
