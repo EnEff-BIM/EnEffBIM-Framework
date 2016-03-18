@@ -463,7 +463,6 @@ class MapComponent(MoObject):
         self.connected_out = []
         from genericapi.AixLib.Fluid.HeatExchangers.Boiler import Boiler
         from genericapi.AixLib.Fluid.Movers.Pump import Pump
-        from genericapi.AixLib.Fluid.Movers.SplitterMixer import Mixer
         from genericapi.AixLib.Fluid.FixedResitances.StaticPipe import Pipe
         from genericapi.AixLib.Fluid.HeatExchangers.Radiators.Radiator import Radiator
         self.aix_lib = {"SimFlowPlant_Boiler_BoilerHotWater" : Boiler,
