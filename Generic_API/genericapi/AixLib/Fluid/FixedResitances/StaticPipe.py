@@ -23,5 +23,12 @@ class Pipe(MapHierarchy.MapComponent):
         return True
 
     def mapp_me(self):
-        print("map pipe")
+        self.D = self.add_parameter(name="D",
+                                    value=0.05)
+        self.l = self.add_parameter(name="l",
+                                    value=1)
+        self.e = self.add_parameter(name="e",
+                                    value=0.000025)
+        self.m_flow_small = self.add_parameter(name="m_flow_small",
+                                               value=0.01)
         return True
