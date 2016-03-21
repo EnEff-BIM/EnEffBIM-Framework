@@ -13,10 +13,8 @@ class LimPID(MapHierarchy.MapComponent):
     """Representation of AixLib.Fluid.Movers.Pump
     """
     
-    def __init__(self, project, sim_object, parent):
-        
-        super(LimPID, self).__init__(project, sim_object, parent)
-        
+    def init_me(self):
+
         self.target_location = "Modelica.Blocks.Continuous.LimPID"
         self.target_name = "pidCtrl"+str(random.randint(1, 100))
 

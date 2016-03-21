@@ -51,7 +51,7 @@ class Radiator(MapHierarchy.MapComponent):
         self.add_pipe()
 
     def add_pipe(self):
-        from molibs.AixLib.Fluid.FixedResitances.StaticPipe import Pipe
+        from mapapi.molibs.AixLib.Fluid.FixedResitances.StaticPipe import Pipe
 
         pipe = Pipe(self.project, self.hierarchy_node, self)
         pipe.init_me()
@@ -62,11 +62,12 @@ class Radiator(MapHierarchy.MapComponent):
         self.connectors.append(pipe.port_a)
 
     def ctrl_valve(self):
-        from molibs.AixLib.Fluid.Actuators.Valves.SimpleValve import \
+        from mapapi.molibs.AixLib.Fluid.Actuators.Valves.SimpleValve import \
             SimpleValve
 
         valve = SimpleValve(self.project, self.hierarchy_node, self)
         valve.init_me()
+        valve.pid_controller(thermal_zone=self.parent)
         self.project.buildings[0].hvac_components_mod.append(valve)
         self.add_connection(self.port_a, valve.port_b)
         self.port_a = valve.port_a

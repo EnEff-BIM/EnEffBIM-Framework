@@ -468,10 +468,10 @@ class MapComponent(MoObject):
         self.hvac_loop = None
         self.connected_in = []
         self.connected_out = []
-        from molibs.AixLib.Fluid.HeatExchangers.Boiler import Boiler
-        from molibs.AixLib.Fluid.Movers.Pump import Pump
-        from molibs.AixLib.Fluid.FixedResitances.StaticPipe import Pipe
-        from molibs.AixLib.Fluid.HeatExchangers.Radiators.Radiator import Radiator
+        from mapapi.molibs.AixLib.Fluid.HeatExchangers.Boiler import Boiler
+        from mapapi.molibs.AixLib.Fluid.Movers.Pump import Pump
+        from mapapi.molibs.AixLib.Fluid.FixedResitances.StaticPipe import Pipe
+        from mapapi.molibs.AixLib.Fluid.HeatExchangers.Radiators.Radiator import Radiator
         self.aix_lib = {"SimFlowPlant_Boiler_BoilerHotWater" : Boiler,
                         "SimFlowMover_Pump_VariableSpeedReturn" : Pump,
                         "SimFlowEnergyTransfer_ConvectiveHeater_Water" :

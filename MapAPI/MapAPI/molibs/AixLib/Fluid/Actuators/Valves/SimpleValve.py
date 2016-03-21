@@ -21,3 +21,7 @@ class SimpleValve(MapHierarchy.MapComponent):
         self.m_flow_small = self.add_parameter(name="m_flow_small",
                                                value=0.01)
 
+    def pid_controller(self):
+
+        from mapapi.molibs.
+        self.add_connection(self.port_a, )

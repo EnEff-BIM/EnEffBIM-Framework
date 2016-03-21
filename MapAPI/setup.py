@@ -14,6 +14,6 @@ setup(name='mapapi',
       author='EnEff:BIM',
       author_email='',
       license='MIT',
-      packages=['molibs'],
+      packages=['mapapi'],
       setup_requires=[],
       install_requires=[])
