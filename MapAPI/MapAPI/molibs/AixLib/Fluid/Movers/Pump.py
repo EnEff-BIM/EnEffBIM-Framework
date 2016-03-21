@@ -43,7 +43,8 @@ class Pump(MapHierarchy.MapComponent):
 
 
     def con_expansion_vessel(self, v_start):
-        from molibs.AixLib.Fluid.Storage.ExpansionVessel import ExpansionVessel
+        from mapapi.molibs.AixLib.Fluid.Storage.ExpansionVessel import \
+            ExpansionVessel
 
         exp_ves = ExpansionVessel(self.project, self.hierarchy_node, self)
         exp_ves.init_me()

@@ -11,7 +11,7 @@ import mapapi.MapClasses as MapHierarchy
 
 
 class Pipe(MapHierarchy.MapComponent):
-    """Representation of AixLib.Fluid.Movers.Pump
+    """Representation of AixLib.Fluid.FixedResistances.Pipe
     """
 
     def init_me(self):
