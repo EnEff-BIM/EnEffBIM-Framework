@@ -201,13 +201,13 @@ class MoObject(object):
             raise ValueError("input_connector is not assigned to MoObject")
         if connector_a.type == connector_b.type and \
                 connector_a.dimension == connector_b.dimension:
-    
+
             mapped_con = MapConnection(connector_b,connector_a)
             mapped_con.type = connector_a.type
             self.project.connections.append(mapped_con)
 
             return mapped_con
-            
+
         else:
             raise TypeError("Input/Ouput connector type or dimension"
                             "do not match")
@@ -323,6 +323,8 @@ class MapBuilding(MoObject):
         self.thermal_zones = []
         self.hvac_components_sim = []
         self.hvac_components_mod = []
+        self.internalGainsConv = self.add_connector(name="internalGainsConv",
+                                                    type="HeatPort")
 
         self.instantiate_components()
         self.instantiate_thermal_zones()
