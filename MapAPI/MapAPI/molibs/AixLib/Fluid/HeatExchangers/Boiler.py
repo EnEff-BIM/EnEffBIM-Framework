@@ -46,7 +46,7 @@ class Boiler(MapHierarchy.MapComponent):
     def add_constant_flow(self, set_temp):
         '''adds a constants flow Temperature for the hot water loop'''
 
-        from molibs.MSL.Blocks.Sources.Constant import Constant
+        from mapapi.molibs.MSL.Blocks.Sources.Constant import Constant
         const = Constant(self.project, self.hierarchy_node, self)
         const.init_me()
         const.target_name = "setTemp"+"_"+self.target_name
