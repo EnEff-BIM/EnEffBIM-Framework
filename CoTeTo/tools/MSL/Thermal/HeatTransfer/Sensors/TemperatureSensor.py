@@ -10,7 +10,7 @@ import sys
 import tools.utilities as ut
 import random
 
-modulePath = ut.get_full_path("Generic_API/MapAPI/MapHierarchy")
+modulePath = ut.get_full_path("Generic_API/mapapi/MapHierarchy")
 
 os.environ['PATH'] = ';'.join([modulePath, os.environ['PATH']])
 # add modulePath to Python Path
