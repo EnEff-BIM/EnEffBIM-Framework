@@ -1,21 +1,21 @@
 # -*- coding: utf-8 -*-
 """
-Created on Mon Nov 23 15:41:25 2015
+Created on Wed Nov 25 12:26:16 2015
 
 @author: pre
 """
+
 import random
 
 import mapapi.MapClasses as MapHierarchy
 
 
 class TemperatureSensor(MapHierarchy.MapComponent):
-    """Representation of AixLib.Fluid.Movers.Pump
+    """Representation of MSL Sensor
     """
-    
-    def __init__(self, project, sim_object, parent):
-        
-        super(TemperatureSensor, self).__init__(project, sim_object, parent)
+
+    def init_me(self):
+
         self.target_location = ("Modelica.Thermal.HeatTransfer.Sensors."
                                 "TemperatureSensor")
         self.target_name = "sensT"+str(random.randint(1, 100))

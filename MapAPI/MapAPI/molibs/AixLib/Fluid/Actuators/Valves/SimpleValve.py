@@ -23,4 +23,14 @@ class SimpleValve(MapHierarchy.MapComponent):
 
     def pid_controller(self,thermal_zone=None):
 
+        from mapapi.molibs.MSL.Blocks.Continuous.LimPID import LimPID
+
+        ctrl = LimPID(self.project, self.hierarchy_node, self)
+        ctrl.init_me()
+        self.project.buildings[0].hvac_components_mod.append(ctrl)
+        ctrl.measure_temperature(thermal_zone.internalGainsConv)
+        ctrl.input_constant(setpoint=293.15)
+
+        self.add_connection(self.opening, ctrl.y)
+
         pass

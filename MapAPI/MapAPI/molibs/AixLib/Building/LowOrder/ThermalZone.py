@@ -10,7 +10,7 @@ import mapapi.MapClasses as MapHierarchy
 class ThermalZone(MapHierarchy.MapThermalZone):
     """Representation of AixLib.Building.LowOrder.ThermalZone
     """
-
+"""
     def __init__(self, project, sim_object, parent):
 
         super(ThermalZone, self).__init__(project, sim_object)
@@ -43,3 +43,5 @@ class ThermalZone(MapHierarchy.MapThermalZone):
         self.add_connection(self.internalGainsRad, radiator.radPort)
         self.add_connection(self.internalGainsConv,
                             radiator.map_control.control_connector)
+
+"""
