@@ -29,7 +29,6 @@ class SimpleValve(MapHierarchy.MapComponent):
         ctrl.init_me()
         self.project.buildings[0].hvac_components_mod.append(ctrl)
         ctrl.measure_temperature(thermal_zone.internalGainsConv)
-        #ctrl.measure_temperature(thermal_zone)
         ctrl.input_constant(setpoint=293.15)
 
         self.add_connection(self.opening, ctrl.y)
