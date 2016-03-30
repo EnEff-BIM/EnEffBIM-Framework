@@ -332,6 +332,9 @@ class SimHierarchyNode(SimHierarchyNodeBase):
     def getChildList(self):
         return _SimModel_Hierachy.SimHierarchyNode_getChildList(self)
 
+    def getMappedComponents(self):
+        return _SimModel_Hierachy.SimHierarchyNode_getMappedComponents(self)
+
     def isClassType(self, _type):
         return _SimModel_Hierachy.SimHierarchyNode_isClassType(self, _type)
 
@@ -364,6 +367,10 @@ def addNodesRelationship(_simParentNode, _simChildNode):
     return _SimModel_Hierachy.addNodesRelationship(_simParentNode, _simChildNode)
 addNodesRelationship = _SimModel_Hierachy.addNodesRelationship
 
+def addMappedComponent(_simNode, _mapObj):
+    return _SimModel_Hierachy.addMappedComponent(_simNode, _mapObj)
+addMappedComponent = _SimModel_Hierachy.addMappedComponent
+
 class SimHierarchy(_object):
     __swig_setmethods__ = {}
     __setattr__ = lambda self, name, value: _swig_setattr(self, SimHierarchy, name, value)
@@ -393,8 +400,8 @@ class SimHierarchy(_object):
     def ClassType(self, *args):
         return _SimModel_Hierachy.SimHierarchy_ClassType(self, *args)
 
-    def loadSimModel(self, _name):
-        return _SimModel_Hierachy.SimHierarchy_loadSimModel(self, _name)
+    def parser(self, SimModel_Data):
+        return _SimModel_Hierachy.SimHierarchy_parser(self, SimModel_Data)
     __swig_destroy__ = _SimModel_Hierachy.delete_SimHierarchy
     __del__ = lambda self: None
 SimHierarchy_swigregister = _SimModel_Hierachy.SimHierarchy_swigregister

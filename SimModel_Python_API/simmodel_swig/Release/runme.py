@@ -2,6 +2,10 @@ import os
 
 # load SimModel hierarchy
 import SimModel_Hierachy
+# load SimModel mapped data
+import SimModel_Mapping
+# load SimModel translation engine
+import SimModel_Translator
 
 # load the SimModel classes you wanna access their properties,
 # e.g., if you need to access a class named A, then import A
@@ -48,17 +52,24 @@ import SimNode_HotWaterFlowPort_Water_Out
 import SimNode_HotWaterFlowPort_Water_In
 import SimNode_DigitalControl_HWLoop_DigitalSignal_In
 
-# create SimModel hierarchy object
-sim_hierarchy = SimModel_Hierachy.SimHierarchy()
+
+
+from SimModel_Translator import SimTranslator
+
+# load SimModel data translation engine
+tran = SimTranslator()
 
 # load and parse SimXML
-#simxml_data = sim_hierarchy.loadSimModel("Boiler_Gas_VDI6020_V10.xml")
-simxml_data = sim_hierarchy.loadSimModel("Boiler_Gas_VDI6020_V12.simxml")
+simxml_data = tran.loadSimModel("Boiler_Gas_VDI6020_V12.simxml")
 
 # simxml_data is the unmapped SimXML data without hierarchy structure
 # like our former demo, you can access the SimXML data via calling a SimModel class name
 # e.g. retrieve the property 'SimModelName' of 1st instance of class SimProject_Project_DesignAlternative
 print("access SimXML data: ", simxml_data.SimProject_Project_DesignAlternative().at(0).SimModelName().getValue(), "\n")
+
+# create SimModel hierarchy object
+sim_hierarchy = tran.getSimHierarchy()
+
 
 # we provide two different ways for accessing the hierarchy
 
@@ -77,6 +88,9 @@ for id in range(0, nodeList.size()):
     
     # retrieve a node
     hierarchy_node = nodeList[id]
+
+    # test
+    #print("Mapping No.: ", hierarchy_node.getMappedComponents().size())
     
     # check the class type of the hiearchy node
     print("node class type: ", hierarchy_node.ClassType())
@@ -195,5 +209,39 @@ if(hierarchy_node0.isParent(hierarchy_node1)):
 # whether the given node1 is the child of node0
 if(hierarchy_node0.isChild(hierarchy_node1)):
     print(hierarchy_node1.ClassType(), " is the child of ", hierarchy_node0.ClassType())
+
+print("\n")
+print("testing")
+#Access the pump directly
+pump_direct = sim_hierarchy.getHierarchyNode("ID882")
+#Access the pump over the Parent List of the Water_In distribution port
+pump_indirect = sim_hierarchy.getHierarchyNode("ID1399").getParentList()[0]
+
+if pump_direct is pump_indirect:
+    print(pump_direct.getSimModelObject(), pump_direct.getSimModelObject().RefId())
+    print(pump_indirect.getSimModelObject(), pump_indirect.getSimModelObject().RefId())
+    print("These two are the same")
+else:
+    print(pump_direct.getSimModelObject(), pump_direct.getSimModelObject().RefId())
+    print(pump_indirect.getSimModelObject(), pump_indirect.getSimModelObject().RefId())
+    print("These two are different")
+
+
+print(pump_direct)
+print(pump_indirect)
+
+
+print("\n")
+#Access the pump directly
+pump_direct1 = sim_hierarchy.getHierarchyNode("ID882")
+pump_direct2 = sim_hierarchy.getHierarchyNode("ID882")
+
+print(pump_direct1)
+print(pump_direct2)
+
+if pump_direct1 is pump_direct2:
+    print(pump_direct1.getSimModelObject(), pump_direct1.getSimModelObject().RefId())
+    print(pump_direct2.getSimModelObject(), pump_direct2.getSimModelObject().RefId())
+    print("These two are the same")
 
 

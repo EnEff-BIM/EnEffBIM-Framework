@@ -9,6 +9,7 @@
 %}
 
 %import  "..\SimModel\SimModel.i"
+
 /* Let's just grab the original header file here */
 %include ".\framework\SimHierarchy.h"
 
@@ -21,6 +22,7 @@ SimHierarchyNode.getSimModelObject = getSimModelObject
 
 %template(SimHierarchyNodeList) std::vector<SimHierarchyNode>;
 %template(SimHierarchyNodeRefList) std::vector<SimHierarchyNode*>;
+
 // SimModel hierarchy classes
 %template(dataType_SimProject_Project_DesignAlternative) SimHierarchyNodeBase::dataType<SimProject_Project_DesignAlternative>;
 %template(dataType_SimSite_BuildingSite_Default) SimHierarchyNodeBase::dataType<SimSite_BuildingSite_Default>;
