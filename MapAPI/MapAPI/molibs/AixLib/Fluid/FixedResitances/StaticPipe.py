@@ -15,12 +15,7 @@ class Pipe(MapHierarchy.MapComponent):
     """
 
     def init_me(self):
-        self.target_location = \
-            "AixLib.Fluid.FixedResistances.StaticPipe"
-        self.port_a = self.add_connector(name="port_a", type="FluidPort",
-         dimension= 1)
-        self.port_b = self.add_connector(name="port_b", type="FluidPort",
-         dimension= 1)
+        self.fluid_two_port()
         self.target_name = "Pipe"+str(random.randint(0,10))
         return True
 

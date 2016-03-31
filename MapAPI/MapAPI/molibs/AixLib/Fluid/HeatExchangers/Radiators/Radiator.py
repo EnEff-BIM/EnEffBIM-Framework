@@ -12,18 +12,7 @@ class Radiator(MapHierarchy.MapComponent):
     
     def init_me(self):
         self.target_location = "AixLib.Fluid.HeatExchangers.Radiators.Radiator"
-        pump_child = self.hierarchy_node.getChildList()
-        for id in range(pump_child.size()):
-            if pump_child[id].ClassType() == \
-                    "SimNode_HotWaterFlowPort_Water_In":
-                sim_port_in = pump_child[id]
-            if pump_child[id].ClassType () == \
-                    "SimNode_HotWaterFlowPort_Water_Out":
-                sim_port_out = pump_child[id]
-        self.port_a = self.add_connector(name="port_a", type="FluidPort",
-         dimension= 1, hierarchy_node=sim_port_in)
-        self.port_b = self.add_connector(name="port_b", type="FluidPort",
-         dimension= 1, hierarchy_node=sim_port_out)
+        self.fluid_two_port()
         self.convPort = self.add_connector("convPort", "HeatPort")
         self.radPort = self.add_connector("radPort", "HeatPort")
 
