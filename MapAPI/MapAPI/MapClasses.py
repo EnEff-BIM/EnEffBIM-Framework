@@ -341,7 +341,6 @@ class MapBuilding(MoObject):
                     if c.sim_ref_id == b.getSimModelObject().RefId():
                         a.add_connection(a.port_b, c.port_a)
 
-
     def instantiate_thermal_zones(self):
         '''Instantiates for each SimSpatialZone_ThermalZone_Default a
         MapThermalZone.
@@ -359,6 +358,7 @@ class MapBuilding(MoObject):
                 self.thermal_zones.append(MapThermalZone(project=self.project,
                                                          hierarchy_node=bldg_child[a],
                                                          parent=self))
+                self.thermal_zones[-1].convert_me()
 
     def instantiate_components(self):
         '''Seach for Items attached to SimSystem_HvacHotWater_Supply and
@@ -434,7 +434,19 @@ class MapThermalZone(MoObject):
         
         self.parent = parent
         self.space_boundaries = []
+        from mapapi.molibs.AixLib.Building.LowOrder.ThermalZone import \
+            ThermalZone
+        self.aix_lib = {"SimSpatialZone_ThermalZone_Default" : ThermalZone}
 
+    def convert_me(self):
+        """Converts the MapComponent to a library specific component"""
+        for key, value in self.aix_lib.items():
+            if self.hierarchy_node.ClassType() == key:
+                self.__class__ = value
+                self.init_me()
+                return
+        else:
+            pass
 
 class MapComponent(MoObject):
     """Representation of a mapped component
