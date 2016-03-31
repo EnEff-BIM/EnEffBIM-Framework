@@ -341,7 +341,6 @@ class MapBuilding(MoObject):
                     if c.sim_ref_id == b.getSimModelObject().RefId():
                         a.add_connection(a.port_b, c.port_a)
 
-
     def instantiate_thermal_zones(self):
         '''Instantiates for each SimSpatialZone_ThermalZone_Default a
         MapThermalZone.
