@@ -14,19 +14,7 @@ class Boiler(MapHierarchy.MapComponent):
 
     def init_me(self):
         self.target_location = "AixLib.Fluid.HeatExchangers.Boiler"
-        boiler_child = self.hierarchy_node.getChildList()
-        for id in range(boiler_child.size()):
-            if boiler_child[id].ClassType() == \
-                    "SimNode_HotWaterFlowPort_Water_In":
-                sim_port_in = boiler_child[id]
-            if boiler_child[id].ClassType () == \
-                    "SimNode_HotWaterFlowPort_Water_Out":
-                sim_port_out = boiler_child[id]
-
-        self.port_a = self.add_connector(name="port_a", type="FluidPort",
-         dimension=1, hierarchy_node=sim_port_in)
-        self.port_b = self.add_connector(name="port_b", type="FluidPort",
-         dimension=1, hierarchy_node=sim_port_out)
+        self.fluid_two_port()
         self.T_set = self.add_connector(name="T_set", type="Real", \
                                                             dimension=1)
         return True
