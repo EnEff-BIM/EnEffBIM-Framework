@@ -22,7 +22,7 @@ class Pump(MapHierarchy.MapComponent):
 
     def mapp_me(self):
         self.con_expansion_vessel(0.1)
-
+        self.add_night_set_back()
         self.ControlStrategy = self.add_parameter(name="ControlStrategy",
                                                   value=1.0)
         self.V_flow_max = self.add_parameter(name="V_flow_max",
@@ -40,3 +40,16 @@ class Pump(MapHierarchy.MapComponent):
         exp_ves.V_start.value = v_start
 
         self.add_connection(self.port_a, exp_ves.port_a)
+
+    def add_night_set_back(self, width=86400, period=43200, startTime=0):
+        '''adds a constants Boolean pulse for night setback'''
+
+        from mapapi.molibs.MSL.Blocks.Sources.BooleanPulse import BooleanPulse
+        pulse = BooleanPulse(self.project, self.hierarchy_node, self)
+        pulse.init_me()
+        pulse.target_name = "nightSetBack"+"_"+self.target_name
+        pulse.width.value = width
+        pulse.period.value = period
+        pulse.startTime.value = startTime
+        self.add_connection(self.IsNight, pulse.y)
+        self.project.buildings[0].hvac_components_mod.append(pulse)
