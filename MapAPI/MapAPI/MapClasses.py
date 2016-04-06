@@ -445,12 +445,12 @@ class MapThermalZone(MoObject):
         
         self.parent = parent
         self.space_boundaries = []
-		from mapapi.molibs.AixLib.Building.LowOrder.ThermalZone import \
+        from mapapi.molibs.AixLib.Building.LowOrder.ThermalZone import \
             ThermalZone
         self.aix_lib = {"SimSpatialZone_ThermalZone_Default" : ThermalZone}
-		self.instantiate_space_boundaries()
+        self.instantiate_space_boundaries()
 
-		def convert_me(self):
+    def convert_me(self):
         """Converts the MapComponent to a library specific component"""
         for key, value in self.aix_lib.items():
             if self.hierarchy_node.ClassType() == key:
@@ -460,7 +460,7 @@ class MapThermalZone(MoObject):
         else:
             pass
 
-		def instantiate_space_boundaries(self):
+    def instantiate_space_boundaries(self):
         tz_child = self.hierarchy_node.getChildList()
         for a in range(tz_child.size()):
             if tz_child[a].ClassType() == "SimSpace_Occupied_Default":
@@ -861,6 +861,7 @@ class MapSpaceBoundary(object):
               
         self.parent = parent
         self.hierarchy_node = hierarchy_node
+        self.type = None
         if self.hierarchy_node is not None:
             self.sim_instance = self.hierarchy_node.getSimModelObject()
             self.sim_ref_id = self.sim_instance.RefId()
@@ -897,6 +898,7 @@ class MapSpaceBoundary(object):
         bound_child = self.hierarchy_node.getChildList()
         for a in range(bound_child.size()):
             if bound_child[a].ClassType() in self.possible_types:
+                self.type = bound_child[a].ClassType()
                 self.building_element = bound_child[a].getSimModelObject()
                 element_child = bound_child[a].getChildList()
                 for b in range(element_child.size()):
@@ -952,8 +954,7 @@ class MapMaterialLayer(object):
     def instantiate_layer(self):
         layer_child = self.hierarchy_node.getChildList()
         for a in range(layer_child.size()):
-            print(layer_child[a].ClassType())
-            #self.material = MapMaterial(self, layer_child[a])
+            self.material = MapMaterial(self, layer_child[a])
 
 class MapMaterial(object):
     """Representation of a mapped material
@@ -1001,7 +1002,7 @@ class MapMaterial(object):
             self.sim_instance = self.hierarchy_node.getSimModelObject()
             if hierarchy_node.ClassType() == \
                     "SimMaterial_OpaqueMaterial_Default":
-                self.name = self.sim_instance.SimMaterial_Name().getValue()
+                self.name = self.sim_instance.SimModelName().getValue()
                 self.density = self.sim_instance.SimMaterial_Density().getValue()
                 self.thermal_conduc = self.sim_instance.SimMaterial_Cond().getValue()
                 self.heat_capac = self.sim_instance.SimMaterial_SpecificHeat().getValue()
@@ -1011,7 +1012,7 @@ class MapMaterial(object):
                     self.sim_instance.SimMaterial_VisAbsorptance().getValue())
             elif hierarchy_node.ClassType() == \
                     "SimMaterial_GlazingMaterial_SimpleGlazingSystem":
-                self.name = self.sim_instance.SimMaterial_Name().getValue()
+                self.name = self.sim_instance.SimModelName().getValue()
                 self.u_factor = self.sim_instance.SimMaterial_UFactor().getValue()
                 self.u_gvalue = self.sim_instance.SimMaterial_SolarHeatGainCoef().getValue()
                 self.transmittance = self.sim_instance.SimMaterial_VisTrans().getValue()
