@@ -174,6 +174,30 @@ class MappedProperty(_object):
             self.this.append(this)
         except:
             self.this = this
+
+    def getPropertyName(self):
+        return _SimModel_Mapping.MappedProperty_getPropertyName(self)
+
+    def getPropertyLocation(self):
+        return _SimModel_Mapping.MappedProperty_getPropertyLocation(self)
+
+    def getValueType(self):
+        return _SimModel_Mapping.MappedProperty_getValueType(self)
+
+    def getValueNumber(self):
+        return _SimModel_Mapping.MappedProperty_getValueNumber(self)
+
+    def getValueString(self):
+        return _SimModel_Mapping.MappedProperty_getValueString(self)
+
+    def getValueMatrix(self):
+        return _SimModel_Mapping.MappedProperty_getValueMatrix(self)
+
+    def getRecordInstance(self):
+        return _SimModel_Mapping.MappedProperty_getRecordInstance(self)
+
+    def getRecordLocation(self):
+        return _SimModel_Mapping.MappedProperty_getRecordLocation(self)
     __swig_destroy__ = _SimModel_Mapping.delete_MappedProperty
     __del__ = lambda self: None
 MappedProperty_swigregister = _SimModel_Mapping.MappedProperty_swigregister
@@ -212,18 +236,6 @@ class MappedComponent(_object):
 MappedComponent_swigregister = _SimModel_Mapping.MappedComponent_swigregister
 MappedComponent_swigregister(MappedComponent)
 
-def setMappingRuleName(_mapCom, _mapName):
-    return _SimModel_Mapping.setMappingRuleName(_mapCom, _mapName)
-setMappingRuleName = _SimModel_Mapping.setMappingRuleName
-
-def setTargetComponentName(_mapCom, _targetName):
-    return _SimModel_Mapping.setTargetComponentName(_mapCom, _targetName)
-setTargetComponentName = _SimModel_Mapping.setTargetComponentName
-
-def setTargetLocation(_mapCom, _targetLocation):
-    return _SimModel_Mapping.setTargetLocation(_mapCom, _targetLocation)
-setTargetLocation = _SimModel_Mapping.setTargetLocation
-
 class SimMappedData(_object):
     __swig_setmethods__ = {}
     __setattr__ = lambda self, name, value: _swig_setattr(self, SimMappedData, name, value)
@@ -240,10 +252,19 @@ class SimMappedData(_object):
 
     def getMappedComponentList(self):
         return _SimModel_Mapping.SimMappedData_getMappedComponentList(self)
+
+    def translator(self, _simHierarchy):
+        return _SimModel_Mapping.SimMappedData_translator(self, _simHierarchy)
     __swig_destroy__ = _SimModel_Mapping.delete_SimMappedData
     __del__ = lambda self: None
 SimMappedData_swigregister = _SimModel_Mapping.SimMappedData_swigregister
 SimMappedData_swigregister(SimMappedData)
+
+
+def getValue(self):
+        return getattr(self, "getValue"+self.getValueType())()
+
+MappedProperty.getPropertyValue = getValue
 
 class MappedComponentList(_object):
     __swig_setmethods__ = {}
@@ -583,6 +604,232 @@ class MappedPropertyList(_object):
     __del__ = lambda self: None
 MappedPropertyList_swigregister = _SimModel_Mapping.MappedPropertyList_swigregister
 MappedPropertyList_swigregister(MappedPropertyList)
+
+class VectorDouble(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, VectorDouble, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, VectorDouble, name)
+    __repr__ = _swig_repr
+
+    def iterator(self):
+        return _SimModel_Mapping.VectorDouble_iterator(self)
+    def __iter__(self):
+        return self.iterator()
+
+    def __nonzero__(self):
+        return _SimModel_Mapping.VectorDouble___nonzero__(self)
+
+    def __bool__(self):
+        return _SimModel_Mapping.VectorDouble___bool__(self)
+
+    def __len__(self):
+        return _SimModel_Mapping.VectorDouble___len__(self)
+
+    def pop(self):
+        return _SimModel_Mapping.VectorDouble_pop(self)
+
+    def __getslice__(self, i, j):
+        return _SimModel_Mapping.VectorDouble___getslice__(self, i, j)
+
+    def __setslice__(self, *args):
+        return _SimModel_Mapping.VectorDouble___setslice__(self, *args)
+
+    def __delslice__(self, i, j):
+        return _SimModel_Mapping.VectorDouble___delslice__(self, i, j)
+
+    def __delitem__(self, *args):
+        return _SimModel_Mapping.VectorDouble___delitem__(self, *args)
+
+    def __getitem__(self, *args):
+        return _SimModel_Mapping.VectorDouble___getitem__(self, *args)
+
+    def __setitem__(self, *args):
+        return _SimModel_Mapping.VectorDouble___setitem__(self, *args)
+
+    def append(self, x):
+        return _SimModel_Mapping.VectorDouble_append(self, x)
+
+    def empty(self):
+        return _SimModel_Mapping.VectorDouble_empty(self)
+
+    def size(self):
+        return _SimModel_Mapping.VectorDouble_size(self)
+
+    def clear(self):
+        return _SimModel_Mapping.VectorDouble_clear(self)
+
+    def swap(self, v):
+        return _SimModel_Mapping.VectorDouble_swap(self, v)
+
+    def get_allocator(self):
+        return _SimModel_Mapping.VectorDouble_get_allocator(self)
+
+    def begin(self):
+        return _SimModel_Mapping.VectorDouble_begin(self)
+
+    def end(self):
+        return _SimModel_Mapping.VectorDouble_end(self)
+
+    def rbegin(self):
+        return _SimModel_Mapping.VectorDouble_rbegin(self)
+
+    def rend(self):
+        return _SimModel_Mapping.VectorDouble_rend(self)
+
+    def pop_back(self):
+        return _SimModel_Mapping.VectorDouble_pop_back(self)
+
+    def erase(self, *args):
+        return _SimModel_Mapping.VectorDouble_erase(self, *args)
+
+    def __init__(self, *args):
+        this = _SimModel_Mapping.new_VectorDouble(*args)
+        try:
+            self.this.append(this)
+        except:
+            self.this = this
+
+    def push_back(self, x):
+        return _SimModel_Mapping.VectorDouble_push_back(self, x)
+
+    def front(self):
+        return _SimModel_Mapping.VectorDouble_front(self)
+
+    def back(self):
+        return _SimModel_Mapping.VectorDouble_back(self)
+
+    def assign(self, n, x):
+        return _SimModel_Mapping.VectorDouble_assign(self, n, x)
+
+    def resize(self, *args):
+        return _SimModel_Mapping.VectorDouble_resize(self, *args)
+
+    def insert(self, *args):
+        return _SimModel_Mapping.VectorDouble_insert(self, *args)
+
+    def reserve(self, n):
+        return _SimModel_Mapping.VectorDouble_reserve(self, n)
+
+    def capacity(self):
+        return _SimModel_Mapping.VectorDouble_capacity(self)
+    __swig_destroy__ = _SimModel_Mapping.delete_VectorDouble
+    __del__ = lambda self: None
+VectorDouble_swigregister = _SimModel_Mapping.VectorDouble_swigregister
+VectorDouble_swigregister(VectorDouble)
+
+class VectorOfVectorDouble(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, VectorOfVectorDouble, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, VectorOfVectorDouble, name)
+    __repr__ = _swig_repr
+
+    def iterator(self):
+        return _SimModel_Mapping.VectorOfVectorDouble_iterator(self)
+    def __iter__(self):
+        return self.iterator()
+
+    def __nonzero__(self):
+        return _SimModel_Mapping.VectorOfVectorDouble___nonzero__(self)
+
+    def __bool__(self):
+        return _SimModel_Mapping.VectorOfVectorDouble___bool__(self)
+
+    def __len__(self):
+        return _SimModel_Mapping.VectorOfVectorDouble___len__(self)
+
+    def pop(self):
+        return _SimModel_Mapping.VectorOfVectorDouble_pop(self)
+
+    def __getslice__(self, i, j):
+        return _SimModel_Mapping.VectorOfVectorDouble___getslice__(self, i, j)
+
+    def __setslice__(self, *args):
+        return _SimModel_Mapping.VectorOfVectorDouble___setslice__(self, *args)
+
+    def __delslice__(self, i, j):
+        return _SimModel_Mapping.VectorOfVectorDouble___delslice__(self, i, j)
+
+    def __delitem__(self, *args):
+        return _SimModel_Mapping.VectorOfVectorDouble___delitem__(self, *args)
+
+    def __getitem__(self, *args):
+        return _SimModel_Mapping.VectorOfVectorDouble___getitem__(self, *args)
+
+    def __setitem__(self, *args):
+        return _SimModel_Mapping.VectorOfVectorDouble___setitem__(self, *args)
+
+    def append(self, x):
+        return _SimModel_Mapping.VectorOfVectorDouble_append(self, x)
+
+    def empty(self):
+        return _SimModel_Mapping.VectorOfVectorDouble_empty(self)
+
+    def size(self):
+        return _SimModel_Mapping.VectorOfVectorDouble_size(self)
+
+    def clear(self):
+        return _SimModel_Mapping.VectorOfVectorDouble_clear(self)
+
+    def swap(self, v):
+        return _SimModel_Mapping.VectorOfVectorDouble_swap(self, v)
+
+    def get_allocator(self):
+        return _SimModel_Mapping.VectorOfVectorDouble_get_allocator(self)
+
+    def begin(self):
+        return _SimModel_Mapping.VectorOfVectorDouble_begin(self)
+
+    def end(self):
+        return _SimModel_Mapping.VectorOfVectorDouble_end(self)
+
+    def rbegin(self):
+        return _SimModel_Mapping.VectorOfVectorDouble_rbegin(self)
+
+    def rend(self):
+        return _SimModel_Mapping.VectorOfVectorDouble_rend(self)
+
+    def pop_back(self):
+        return _SimModel_Mapping.VectorOfVectorDouble_pop_back(self)
+
+    def erase(self, *args):
+        return _SimModel_Mapping.VectorOfVectorDouble_erase(self, *args)
+
+    def __init__(self, *args):
+        this = _SimModel_Mapping.new_VectorOfVectorDouble(*args)
+        try:
+            self.this.append(this)
+        except:
+            self.this = this
+
+    def push_back(self, x):
+        return _SimModel_Mapping.VectorOfVectorDouble_push_back(self, x)
+
+    def front(self):
+        return _SimModel_Mapping.VectorOfVectorDouble_front(self)
+
+    def back(self):
+        return _SimModel_Mapping.VectorOfVectorDouble_back(self)
+
+    def assign(self, n, x):
+        return _SimModel_Mapping.VectorOfVectorDouble_assign(self, n, x)
+
+    def resize(self, *args):
+        return _SimModel_Mapping.VectorOfVectorDouble_resize(self, *args)
+
+    def insert(self, *args):
+        return _SimModel_Mapping.VectorOfVectorDouble_insert(self, *args)
+
+    def reserve(self, n):
+        return _SimModel_Mapping.VectorOfVectorDouble_reserve(self, n)
+
+    def capacity(self):
+        return _SimModel_Mapping.VectorOfVectorDouble_capacity(self)
+    __swig_destroy__ = _SimModel_Mapping.delete_VectorOfVectorDouble
+    __del__ = lambda self: None
+VectorOfVectorDouble_swigregister = _SimModel_Mapping.VectorOfVectorDouble_swigregister
+VectorOfVectorDouble_swigregister(VectorOfVectorDouble)
 
 # This file is compatible with both classic and new-style classes.
 

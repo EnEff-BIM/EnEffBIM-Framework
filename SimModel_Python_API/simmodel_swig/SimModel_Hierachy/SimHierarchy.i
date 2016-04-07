@@ -10,6 +10,9 @@
 
 %import  "..\SimModel\SimModel.i"
 
+%ignore SimHierarchyNode::addMappedComponent(MappedComponent& _mapObj);
+%ignore SimHierarchy::parser(::std::auto_ptr< ::schema::simxml::Model::SimModel >& SimModel_Data);
+
 /* Let's just grab the original header file here */
 %include ".\framework\SimHierarchy.h"
 

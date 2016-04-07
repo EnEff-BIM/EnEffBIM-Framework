@@ -99,6 +99,9 @@
     <ProjectReference Include="..\SimModel_Hierachy\SimModel_Hierachy.vcxproj">
       <Project>{3125069a-d183-4e23-bec7-18cd8bac0e80}</Project>
     </ProjectReference>
+    <ProjectReference Include="..\SimModel_Mapping\SimModel_Mapping.vcxproj">
+      <Project>{b67ba44a-8c35-4d9c-bbe6-d0303a15027c}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

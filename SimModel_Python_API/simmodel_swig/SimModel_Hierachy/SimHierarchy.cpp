@@ -70,6 +70,12 @@ bool SimHierarchyNode::isChild(SimHierarchyNode* _simNode)
 		return false;
 }
 
+// add mapped component object
+void SimHierarchyNode::addMappedComponent(MappedComponent& _mapObj)
+{
+	LocalMappedComponentList.push_back(&_mapObj);
+}
+
 // set SimModel object
 void setCurrentObject(SimHierarchyNode& _simNode, SimRoot& _simObj)
 {
@@ -98,12 +104,6 @@ void addNodesRelationship(SimHierarchyNode& _simParentNode, SimHierarchyNode&_si
 	addParent(_simChildNode, _simParentNode);
 	// add child nodes of the given parent node
 	addChild(_simParentNode, _simChildNode);
-}
-
-// add mapped component object
-void addMappedComponent(SimHierarchyNode& _simNode, MappedComponent& _mapObj)
-{
-	_simNode.LocalMappedComponentList.push_back(&_mapObj);
 }
 
 /**********************************************************************/

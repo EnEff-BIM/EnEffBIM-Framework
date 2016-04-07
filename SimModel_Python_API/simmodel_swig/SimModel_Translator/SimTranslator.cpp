@@ -9,6 +9,9 @@
 	// parse SimModel hierarchy data
 	_simHierarchyObj.parser(SimModel_Data);
 
+	// translate SimModel data based on mapping rules
+	_simMappedDataObj.translator(_simHierarchyObj);
+
 	// return SimXML data
 	return SimModel_Data;
 }

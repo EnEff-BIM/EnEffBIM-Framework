@@ -48,8 +48,6 @@ private:
 	friend void addChild(SimHierarchyNode& _simNode, SimHierarchyNode& _simChildNode);
 	// add parent child relationship
 	friend void addNodesRelationship(SimHierarchyNode& _simParentNode, SimHierarchyNode&_simChildNode);
-	// add mapped component object
-	friend void addMappedComponent(SimHierarchyNode& _simNode, MappedComponent& _mapObj);
 
 public:
 	SimHierarchyNode() 
@@ -75,6 +73,10 @@ public:
 	// check child object
 	bool isChild(SimHierarchyNode& _simNode);
 	bool isChild(SimHierarchyNode* _simNode);
+
+	// ignored in Python
+	// add mapped component object
+	void addMappedComponent(MappedComponent& _mapObj);
 };
 
 class SimHierarchy

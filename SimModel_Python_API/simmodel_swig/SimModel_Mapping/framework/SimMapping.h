@@ -9,8 +9,73 @@ class SimHierarchy;
 
 class MappedProperty
 {
+private:
+	// mapped property name at the target library
+	std::string propertyName;
+	// mapped property location at the target library
+	std::string propertyLocation;
+	// property value type: Number, String, Matrix
+	std::string propertyValueType;
+	// different data types for the property values
+	// int, float, double
+	double propertyValueNumber;
+	// string type
+	std::string propertyValueString;
+	// matrix
+	std::vector<std::vector<double> > propertyValueMatrix;
+	
+	// the name of a record instance declared in the target data model
+	std::string recordInstance;
+	// a record location in the target data model
+	std::string recordLocation;
+
 public:
-	MappedProperty() {}
+	MappedProperty() 
+	{
+		propertyName = "";
+		propertyLocation = "";
+		recordInstance = "";
+		recordLocation = "";
+
+		propertyValueType = "";
+		propertyValueString = "";
+		propertyValueNumber = 0;
+		propertyValueMatrix.resize(0);
+	}
+	// set property name
+	void setPropertyName(std::string _name);
+	// set property location
+	void setPropertyLocation(std::string _location);
+	// set property value type
+	void setValueType(std::string _type);
+	// set int, float double value
+	void setValueNumber(double _number);
+	// set string value
+	void setValueString(std::string _string);
+	// set matrix value
+	void setValueMatrix(std::vector<std::vector<double> >& _matrix);
+	// set record instance
+	void setRecordInstance(std::string _recordInstance);
+	// set record location
+	void setRecordLocation(std::string _recordLocation);
+
+
+	// get property name
+	std::string getPropertyName();
+	// get property location
+	std::string getPropertyLocation();
+	// get property value type
+	std::string getValueType();
+	// get int, float double value
+	double getValueNumber();
+	// get string value
+	std::string getValueString();
+	// get matrix value
+	std::vector<std::vector<double> >& getValueMatrix();
+	// get record instance
+	std::string getRecordInstance();
+	// get record location
+	std::string getRecordLocation();
 };
 
 class MappedComponent
@@ -29,7 +94,7 @@ private:
 	std::vector<MappedProperty> MappedPropertyList;
 
 	// save mapping rule name
-	friend void setMappingRuleName(MappedComponent& _mapCom, std::string& _mapName);
+	friend void setMappingRuleName(MappedComponent& _mapCom, std::string _mapName);
 	// save mapped component name
 	friend void setTargetComponentName(MappedComponent& _mapCom, std::string _targetName);
 	// save mapped component location
@@ -39,6 +104,7 @@ public:
 	MappedComponent() 
 	{
 		UnmappedSimHierarchyNodeList.resize(0);
+		MappedPropertyList.resize(0);
 	}
 	// get SimModel hierarchy nodes
 	std::vector<SimHierarchyNode*>& getUnmappedSimHierarchyNodes();
@@ -50,6 +116,12 @@ public:
 	std::string getTargetComponentName();
 	// get mapped component location
 	std::string getTargetLocation();
+
+	// ignored in Python
+	// add unmapped SimModel hierarchy node
+	void addUnmappedSimHierarchyNode(SimHierarchyNode& _simNode);
+	// add mapped property
+	void addMappedProperty(MappedProperty& _mapPro);
 };
 
 class SimMappedData
@@ -69,7 +141,7 @@ public:
 	// get mapped components
 	std::vector<MappedComponent>& getMappedComponentList();
 	// translate the SimModel data based on mapping rules
-	//void translator(SimHierarchy& _simHierarchy);
+	void translator(SimHierarchy& _simHierarchy);
 };
 
 #endif // SIM_MAPPING_H
