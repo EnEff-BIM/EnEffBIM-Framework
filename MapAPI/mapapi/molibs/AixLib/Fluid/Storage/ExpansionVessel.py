@@ -18,5 +18,3 @@ class ExpansionVessel(MapHierarchy.MapComponent):
         self.V_start = self.add_parameter(name="V_start",
                                           value=0.01)
         self.port_a = self.add_connector("port_a", "FluidPort")
-        
-   
