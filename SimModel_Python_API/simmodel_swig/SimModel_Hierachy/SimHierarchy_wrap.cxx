@@ -4635,66 +4635,67 @@ namespace Swig {
 #define SWIGTYPE_p_std__allocatorT_SimHierarchyNode_p_t swig_types[1217]
 #define SWIGTYPE_p_std__allocatorT_SimHierarchyNode_t swig_types[1218]
 #define SWIGTYPE_p_std__invalid_argument swig_types[1219]
-#define SWIGTYPE_p_std__vectorT_SimHierarchyNode_p_std__allocatorT_SimHierarchyNode_p_t_t swig_types[1220]
-#define SWIGTYPE_p_std__vectorT_SimHierarchyNode_std__allocatorT_SimHierarchyNode_t_t swig_types[1221]
-#define SWIGTYPE_p_swig__SwigPyIterator swig_types[1222]
-#define SWIGTYPE_p_unsigned_char swig_types[1223]
-#define SWIGTYPE_p_unsigned_int swig_types[1224]
-#define SWIGTYPE_p_unsigned_long_long swig_types[1225]
-#define SWIGTYPE_p_unsigned_short swig_types[1226]
-#define SWIGTYPE_p_value_type swig_types[1227]
-#define SWIGTYPE_p_xsd__cxx__tree___type swig_types[1228]
-#define SWIGTYPE_p_xsd__cxx__tree__base64_binaryT_char_xsd__cxx__tree__simple_type_t swig_types[1229]
-#define SWIGTYPE_p_xsd__cxx__tree__boundsT_char_t swig_types[1230]
-#define SWIGTYPE_p_xsd__cxx__tree__bufferT_char_t swig_types[1231]
-#define SWIGTYPE_p_xsd__cxx__tree__content_order swig_types[1232]
-#define SWIGTYPE_p_xsd__cxx__tree__dateT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[1233]
-#define SWIGTYPE_p_xsd__cxx__tree__date_timeT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[1234]
-#define SWIGTYPE_p_xsd__cxx__tree__diagnosticsT_char_t swig_types[1235]
-#define SWIGTYPE_p_xsd__cxx__tree__duplicate_idT_char_t swig_types[1236]
-#define SWIGTYPE_p_xsd__cxx__tree__durationT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[1237]
-#define SWIGTYPE_p_xsd__cxx__tree__entitiesT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__entity_t swig_types[1238]
-#define SWIGTYPE_p_xsd__cxx__tree__entityT_char_xsd__cxx__tree__ncname_t swig_types[1239]
-#define SWIGTYPE_p_xsd__cxx__tree__errorT_char_t swig_types[1240]
-#define SWIGTYPE_p_xsd__cxx__tree__exceptionT_char_t swig_types[1241]
-#define SWIGTYPE_p_xsd__cxx__tree__expected_attributeT_char_t swig_types[1242]
-#define SWIGTYPE_p_xsd__cxx__tree__expected_elementT_char_t swig_types[1243]
-#define SWIGTYPE_p_xsd__cxx__tree__expected_text_contentT_char_t swig_types[1244]
-#define SWIGTYPE_p_xsd__cxx__tree__flags swig_types[1245]
-#define SWIGTYPE_p_xsd__cxx__tree__gdayT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[1246]
-#define SWIGTYPE_p_xsd__cxx__tree__gmonthT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[1247]
-#define SWIGTYPE_p_xsd__cxx__tree__gmonth_dayT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[1248]
-#define SWIGTYPE_p_xsd__cxx__tree__gyearT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[1249]
-#define SWIGTYPE_p_xsd__cxx__tree__gyear_monthT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[1250]
-#define SWIGTYPE_p_xsd__cxx__tree__hex_binaryT_char_xsd__cxx__tree__simple_type_t swig_types[1251]
-#define SWIGTYPE_p_xsd__cxx__tree__idT_char_xsd__cxx__tree__ncname_t swig_types[1252]
-#define SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t swig_types[1253]
-#define SWIGTYPE_p_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t swig_types[1254]
-#define SWIGTYPE_p_xsd__cxx__tree__languageT_char_xsd__cxx__tree__token_t swig_types[1255]
-#define SWIGTYPE_p_xsd__cxx__tree__nameT_char_xsd__cxx__tree__token_t swig_types[1256]
-#define SWIGTYPE_p_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__name_t swig_types[1257]
-#define SWIGTYPE_p_xsd__cxx__tree__nmtokenT_char_xsd__cxx__tree__token_t swig_types[1258]
-#define SWIGTYPE_p_xsd__cxx__tree__nmtokensT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__nmtoken_t swig_types[1259]
-#define SWIGTYPE_p_xsd__cxx__tree__no_prefix_mappingT_char_t swig_types[1260]
-#define SWIGTYPE_p_xsd__cxx__tree__no_type_infoT_char_t swig_types[1261]
-#define SWIGTYPE_p_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__string_t swig_types[1262]
-#define SWIGTYPE_p_xsd__cxx__tree__not_derivedT_char_t swig_types[1263]
-#define SWIGTYPE_p_xsd__cxx__tree__parsingT_char_t swig_types[1264]
-#define SWIGTYPE_p_xsd__cxx__tree__propertiesT_char_t swig_types[1265]
-#define SWIGTYPE_p_xsd__cxx__tree__qnameT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__uri_xsd__cxx__tree__ncname_t swig_types[1266]
-#define SWIGTYPE_p_xsd__cxx__tree__severity swig_types[1267]
-#define SWIGTYPE_p_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t swig_types[1268]
-#define SWIGTYPE_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t swig_types[1269]
-#define SWIGTYPE_p_xsd__cxx__tree__timeT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[1270]
-#define SWIGTYPE_p_xsd__cxx__tree__time_zone swig_types[1271]
-#define SWIGTYPE_p_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_string_t swig_types[1272]
-#define SWIGTYPE_p_xsd__cxx__tree__unexpected_elementT_char_t swig_types[1273]
-#define SWIGTYPE_p_xsd__cxx__tree__unexpected_enumeratorT_char_t swig_types[1274]
-#define SWIGTYPE_p_xsd__cxx__tree__uriT_char_xsd__cxx__tree__simple_type_t swig_types[1275]
-#define SWIGTYPE_p_xsd__cxx__tree__user_data_keys_templateT_0_t swig_types[1276]
-#define SWIGTYPE_p_xsd__cxx__xml__error_handlerT_char_t swig_types[1277]
-static swig_type_info *swig_types[1279];
-static swig_module_info swig_module = {swig_types, 1278, 0, 0, 0, 0};
+#define SWIGTYPE_p_std__vectorT_MappedComponent_p_std__allocatorT_MappedComponent_p_t_t swig_types[1220]
+#define SWIGTYPE_p_std__vectorT_SimHierarchyNode_p_std__allocatorT_SimHierarchyNode_p_t_t swig_types[1221]
+#define SWIGTYPE_p_std__vectorT_SimHierarchyNode_std__allocatorT_SimHierarchyNode_t_t swig_types[1222]
+#define SWIGTYPE_p_swig__SwigPyIterator swig_types[1223]
+#define SWIGTYPE_p_unsigned_char swig_types[1224]
+#define SWIGTYPE_p_unsigned_int swig_types[1225]
+#define SWIGTYPE_p_unsigned_long_long swig_types[1226]
+#define SWIGTYPE_p_unsigned_short swig_types[1227]
+#define SWIGTYPE_p_value_type swig_types[1228]
+#define SWIGTYPE_p_xsd__cxx__tree___type swig_types[1229]
+#define SWIGTYPE_p_xsd__cxx__tree__base64_binaryT_char_xsd__cxx__tree__simple_type_t swig_types[1230]
+#define SWIGTYPE_p_xsd__cxx__tree__boundsT_char_t swig_types[1231]
+#define SWIGTYPE_p_xsd__cxx__tree__bufferT_char_t swig_types[1232]
+#define SWIGTYPE_p_xsd__cxx__tree__content_order swig_types[1233]
+#define SWIGTYPE_p_xsd__cxx__tree__dateT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[1234]
+#define SWIGTYPE_p_xsd__cxx__tree__date_timeT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[1235]
+#define SWIGTYPE_p_xsd__cxx__tree__diagnosticsT_char_t swig_types[1236]
+#define SWIGTYPE_p_xsd__cxx__tree__duplicate_idT_char_t swig_types[1237]
+#define SWIGTYPE_p_xsd__cxx__tree__durationT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[1238]
+#define SWIGTYPE_p_xsd__cxx__tree__entitiesT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__entity_t swig_types[1239]
+#define SWIGTYPE_p_xsd__cxx__tree__entityT_char_xsd__cxx__tree__ncname_t swig_types[1240]
+#define SWIGTYPE_p_xsd__cxx__tree__errorT_char_t swig_types[1241]
+#define SWIGTYPE_p_xsd__cxx__tree__exceptionT_char_t swig_types[1242]
+#define SWIGTYPE_p_xsd__cxx__tree__expected_attributeT_char_t swig_types[1243]
+#define SWIGTYPE_p_xsd__cxx__tree__expected_elementT_char_t swig_types[1244]
+#define SWIGTYPE_p_xsd__cxx__tree__expected_text_contentT_char_t swig_types[1245]
+#define SWIGTYPE_p_xsd__cxx__tree__flags swig_types[1246]
+#define SWIGTYPE_p_xsd__cxx__tree__gdayT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[1247]
+#define SWIGTYPE_p_xsd__cxx__tree__gmonthT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[1248]
+#define SWIGTYPE_p_xsd__cxx__tree__gmonth_dayT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[1249]
+#define SWIGTYPE_p_xsd__cxx__tree__gyearT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[1250]
+#define SWIGTYPE_p_xsd__cxx__tree__gyear_monthT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[1251]
+#define SWIGTYPE_p_xsd__cxx__tree__hex_binaryT_char_xsd__cxx__tree__simple_type_t swig_types[1252]
+#define SWIGTYPE_p_xsd__cxx__tree__idT_char_xsd__cxx__tree__ncname_t swig_types[1253]
+#define SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t swig_types[1254]
+#define SWIGTYPE_p_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t swig_types[1255]
+#define SWIGTYPE_p_xsd__cxx__tree__languageT_char_xsd__cxx__tree__token_t swig_types[1256]
+#define SWIGTYPE_p_xsd__cxx__tree__nameT_char_xsd__cxx__tree__token_t swig_types[1257]
+#define SWIGTYPE_p_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__name_t swig_types[1258]
+#define SWIGTYPE_p_xsd__cxx__tree__nmtokenT_char_xsd__cxx__tree__token_t swig_types[1259]
+#define SWIGTYPE_p_xsd__cxx__tree__nmtokensT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__nmtoken_t swig_types[1260]
+#define SWIGTYPE_p_xsd__cxx__tree__no_prefix_mappingT_char_t swig_types[1261]
+#define SWIGTYPE_p_xsd__cxx__tree__no_type_infoT_char_t swig_types[1262]
+#define SWIGTYPE_p_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__string_t swig_types[1263]
+#define SWIGTYPE_p_xsd__cxx__tree__not_derivedT_char_t swig_types[1264]
+#define SWIGTYPE_p_xsd__cxx__tree__parsingT_char_t swig_types[1265]
+#define SWIGTYPE_p_xsd__cxx__tree__propertiesT_char_t swig_types[1266]
+#define SWIGTYPE_p_xsd__cxx__tree__qnameT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__uri_xsd__cxx__tree__ncname_t swig_types[1267]
+#define SWIGTYPE_p_xsd__cxx__tree__severity swig_types[1268]
+#define SWIGTYPE_p_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t swig_types[1269]
+#define SWIGTYPE_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t swig_types[1270]
+#define SWIGTYPE_p_xsd__cxx__tree__timeT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[1271]
+#define SWIGTYPE_p_xsd__cxx__tree__time_zone swig_types[1272]
+#define SWIGTYPE_p_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_string_t swig_types[1273]
+#define SWIGTYPE_p_xsd__cxx__tree__unexpected_elementT_char_t swig_types[1274]
+#define SWIGTYPE_p_xsd__cxx__tree__unexpected_enumeratorT_char_t swig_types[1275]
+#define SWIGTYPE_p_xsd__cxx__tree__uriT_char_xsd__cxx__tree__simple_type_t swig_types[1276]
+#define SWIGTYPE_p_xsd__cxx__tree__user_data_keys_templateT_0_t swig_types[1277]
+#define SWIGTYPE_p_xsd__cxx__xml__error_handlerT_char_t swig_types[1278]
+static swig_type_info *swig_types[1280];
+static swig_module_info swig_module = {swig_types, 1279, 0, 0, 0, 0};
 #define SWIG_TypeQuery(name) SWIG_TypeQueryModule(&swig_module, &swig_module, name)
 #define SWIG_MangledTypeQuery(name) SWIG_MangledTypeQueryModule(&swig_module, &swig_module, name)
 
@@ -8681,7 +8682,7 @@ SWIGINTERN PyObject *_wrap_SimHierarchyNode_getParentList(PyObject *SWIGUNUSEDPA
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
-  std::vector< SimHierarchyNode *,std::allocator< SimHierarchyNode * > > result;
+  std::vector< SimHierarchyNode *,std::allocator< SimHierarchyNode * > > *result = 0 ;
   
   if (!PyArg_ParseTuple(args,(char *)"O:SimHierarchyNode_getParentList",&obj0)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_SimHierarchyNode, 0 |  0 );
@@ -8689,8 +8690,8 @@ SWIGINTERN PyObject *_wrap_SimHierarchyNode_getParentList(PyObject *SWIGUNUSEDPA
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimHierarchyNode_getParentList" "', argument " "1"" of type '" "SimHierarchyNode *""'"); 
   }
   arg1 = reinterpret_cast< SimHierarchyNode * >(argp1);
-  result = (arg1)->getParentList();
-  resultobj = SWIG_NewPointerObj((new std::vector< SimHierarchyNode *,std::allocator< SimHierarchyNode * > >(static_cast< const std::vector< SimHierarchyNode *,std::allocator< SimHierarchyNode * > >& >(result))), SWIGTYPE_p_std__vectorT_SimHierarchyNode_p_std__allocatorT_SimHierarchyNode_p_t_t, SWIG_POINTER_OWN |  0 );
+  result = (std::vector< SimHierarchyNode *,std::allocator< SimHierarchyNode * > > *) &(arg1)->getParentList();
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_std__vectorT_SimHierarchyNode_p_std__allocatorT_SimHierarchyNode_p_t_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -8703,7 +8704,7 @@ SWIGINTERN PyObject *_wrap_SimHierarchyNode_getChildList(PyObject *SWIGUNUSEDPAR
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
-  std::vector< SimHierarchyNode *,std::allocator< SimHierarchyNode * > > result;
+  std::vector< SimHierarchyNode *,std::allocator< SimHierarchyNode * > > *result = 0 ;
   
   if (!PyArg_ParseTuple(args,(char *)"O:SimHierarchyNode_getChildList",&obj0)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_SimHierarchyNode, 0 |  0 );
@@ -8711,8 +8712,30 @@ SWIGINTERN PyObject *_wrap_SimHierarchyNode_getChildList(PyObject *SWIGUNUSEDPAR
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimHierarchyNode_getChildList" "', argument " "1"" of type '" "SimHierarchyNode *""'"); 
   }
   arg1 = reinterpret_cast< SimHierarchyNode * >(argp1);
-  result = (arg1)->getChildList();
-  resultobj = SWIG_NewPointerObj((new std::vector< SimHierarchyNode *,std::allocator< SimHierarchyNode * > >(static_cast< const std::vector< SimHierarchyNode *,std::allocator< SimHierarchyNode * > >& >(result))), SWIGTYPE_p_std__vectorT_SimHierarchyNode_p_std__allocatorT_SimHierarchyNode_p_t_t, SWIG_POINTER_OWN |  0 );
+  result = (std::vector< SimHierarchyNode *,std::allocator< SimHierarchyNode * > > *) &(arg1)->getChildList();
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_std__vectorT_SimHierarchyNode_p_std__allocatorT_SimHierarchyNode_p_t_t, 0 |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_SimHierarchyNode_getMappedComponents(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  SimHierarchyNode *arg1 = (SimHierarchyNode *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  std::vector< MappedComponent *,std::allocator< MappedComponent * > > *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:SimHierarchyNode_getMappedComponents",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_SimHierarchyNode, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimHierarchyNode_getMappedComponents" "', argument " "1"" of type '" "SimHierarchyNode *""'"); 
+  }
+  arg1 = reinterpret_cast< SimHierarchyNode * >(argp1);
+  result = (std::vector< MappedComponent *,std::allocator< MappedComponent * > > *) &(arg1)->getMappedComponents();
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_std__vectorT_MappedComponent_p_std__allocatorT_MappedComponent_p_t_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -9073,7 +9096,7 @@ SWIGINTERN PyObject *_wrap_SimHierarchy_getHierarchyNodeList(PyObject *SWIGUNUSE
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
-  std::vector< SimHierarchyNode,std::allocator< SimHierarchyNode > > result;
+  std::vector< SimHierarchyNode,std::allocator< SimHierarchyNode > > *result = 0 ;
   
   if (!PyArg_ParseTuple(args,(char *)"O:SimHierarchy_getHierarchyNodeList",&obj0)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_SimHierarchy, 0 |  0 );
@@ -9081,8 +9104,8 @@ SWIGINTERN PyObject *_wrap_SimHierarchy_getHierarchyNodeList(PyObject *SWIGUNUSE
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimHierarchy_getHierarchyNodeList" "', argument " "1"" of type '" "SimHierarchy *""'"); 
   }
   arg1 = reinterpret_cast< SimHierarchy * >(argp1);
-  result = (arg1)->getHierarchyNodeList();
-  resultobj = SWIG_NewPointerObj((new std::vector< SimHierarchyNode,std::allocator< SimHierarchyNode > >(static_cast< const std::vector< SimHierarchyNode,std::allocator< SimHierarchyNode > >& >(result))), SWIGTYPE_p_std__vectorT_SimHierarchyNode_std__allocatorT_SimHierarchyNode_t_t, SWIG_POINTER_OWN |  0 );
+  result = (std::vector< SimHierarchyNode,std::allocator< SimHierarchyNode > > *) &(arg1)->getHierarchyNodeList();
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_std__vectorT_SimHierarchyNode_std__allocatorT_SimHierarchyNode_t_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -9379,41 +9402,6 @@ fail:
     "    SimHierarchy::ClassType(schema::simxml::SimModelCore::SimRoot &)\n"
     "    SimHierarchy::ClassType(schema::simxml::SimModelCore::SimRoot *)\n");
   return 0;
-}
-
-
-SWIGINTERN PyObject *_wrap_SimHierarchy_loadSimModel(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  SimHierarchy *arg1 = (SimHierarchy *) 0 ;
-  std::string arg2 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  PyObject * obj1 = 0 ;
-  ::std::auto_ptr< ::schema::simxml::Model::SimModel > result;
-  
-  if (!PyArg_ParseTuple(args,(char *)"OO:SimHierarchy_loadSimModel",&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_SimHierarchy, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimHierarchy_loadSimModel" "', argument " "1"" of type '" "SimHierarchy *""'"); 
-  }
-  arg1 = reinterpret_cast< SimHierarchy * >(argp1);
-  {
-    std::string *ptr = (std::string *)0;
-    int res = SWIG_AsPtr_std_string(obj1, &ptr);
-    if (!SWIG_IsOK(res) || !ptr) {
-      SWIG_exception_fail(SWIG_ArgError((ptr ? res : SWIG_TypeError)), "in method '" "SimHierarchy_loadSimModel" "', argument " "2"" of type '" "std::string""'"); 
-    }
-    arg2 = *ptr;
-    if (SWIG_IsNewObj(res)) delete ptr;
-  }
-  result = (arg1)->loadSimModel(arg2);
-  
-  resultobj = SWIG_NewPointerObj((&result)->release(), SWIGTYPE_p_schema__simxml__Model__SimModel, SWIG_POINTER_OWN |  0 );
-  
-  return resultobj;
-fail:
-  return NULL;
 }
 
 
@@ -13325,6 +13313,7 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"new_SimHierarchyNode", _wrap_new_SimHierarchyNode, METH_VARARGS, NULL},
 	 { (char *)"SimHierarchyNode_getParentList", _wrap_SimHierarchyNode_getParentList, METH_VARARGS, NULL},
 	 { (char *)"SimHierarchyNode_getChildList", _wrap_SimHierarchyNode_getChildList, METH_VARARGS, NULL},
+	 { (char *)"SimHierarchyNode_getMappedComponents", _wrap_SimHierarchyNode_getMappedComponents, METH_VARARGS, NULL},
 	 { (char *)"SimHierarchyNode_isClassType", _wrap_SimHierarchyNode_isClassType, METH_VARARGS, NULL},
 	 { (char *)"SimHierarchyNode_ClassType", _wrap_SimHierarchyNode_ClassType, METH_VARARGS, NULL},
 	 { (char *)"SimHierarchyNode_isParent", _wrap_SimHierarchyNode_isParent, METH_VARARGS, NULL},
@@ -13337,7 +13326,6 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"SimHierarchy_getHierarchyNode", _wrap_SimHierarchy_getHierarchyNode, METH_VARARGS, NULL},
 	 { (char *)"SimHierarchy_isClassType", _wrap_SimHierarchy_isClassType, METH_VARARGS, NULL},
 	 { (char *)"SimHierarchy_ClassType", _wrap_SimHierarchy_ClassType, METH_VARARGS, NULL},
-	 { (char *)"SimHierarchy_loadSimModel", _wrap_SimHierarchy_loadSimModel, METH_VARARGS, NULL},
 	 { (char *)"delete_SimHierarchy", _wrap_delete_SimHierarchy, METH_VARARGS, NULL},
 	 { (char *)"SimHierarchy_swigregister", SimHierarchy_swigregister, METH_VARARGS, NULL},
 	 { (char *)"SimHierarchyNodeList_iterator", _wrap_SimHierarchyNodeList_iterator, METH_VARARGS, NULL},
@@ -14811,6 +14799,7 @@ static swig_type_info _swigt__p_size_type = {"_p_size_type", "size_type *", 0, 0
 static swig_type_info _swigt__p_std__allocatorT_SimHierarchyNode_p_t = {"_p_std__allocatorT_SimHierarchyNode_p_t", "std::allocator< SimHierarchyNode * > *|std::vector< SimHierarchyNode * >::allocator_type *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_std__allocatorT_SimHierarchyNode_t = {"_p_std__allocatorT_SimHierarchyNode_t", "std::vector< SimHierarchyNode >::allocator_type *|std::allocator< SimHierarchyNode > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_std__invalid_argument = {"_p_std__invalid_argument", "std::invalid_argument *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_std__vectorT_MappedComponent_p_std__allocatorT_MappedComponent_p_t_t = {"_p_std__vectorT_MappedComponent_p_std__allocatorT_MappedComponent_p_t_t", "std::vector< MappedComponent *,std::allocator< MappedComponent * > > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_std__vectorT_SimHierarchyNode_p_std__allocatorT_SimHierarchyNode_p_t_t = {"_p_std__vectorT_SimHierarchyNode_p_std__allocatorT_SimHierarchyNode_p_t_t", "std::vector< SimHierarchyNode * > *|std::vector< SimHierarchyNode *,std::allocator< SimHierarchyNode * > > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_std__vectorT_SimHierarchyNode_std__allocatorT_SimHierarchyNode_t_t = {"_p_std__vectorT_SimHierarchyNode_std__allocatorT_SimHierarchyNode_t_t", "std::vector< SimHierarchyNode > *|std::vector< SimHierarchyNode,std::allocator< SimHierarchyNode > > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_swig__SwigPyIterator = {"_p_swig__SwigPyIterator", "swig::SwigPyIterator *", 0, 0, (void*)0, 0};
@@ -16091,6 +16080,7 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_std__allocatorT_SimHierarchyNode_p_t,
   &_swigt__p_std__allocatorT_SimHierarchyNode_t,
   &_swigt__p_std__invalid_argument,
+  &_swigt__p_std__vectorT_MappedComponent_p_std__allocatorT_MappedComponent_p_t_t,
   &_swigt__p_std__vectorT_SimHierarchyNode_p_std__allocatorT_SimHierarchyNode_p_t_t,
   &_swigt__p_std__vectorT_SimHierarchyNode_std__allocatorT_SimHierarchyNode_t_t,
   &_swigt__p_swig__SwigPyIterator,
@@ -17371,6 +17361,7 @@ static swig_cast_info _swigc__p_size_type[] = {  {&_swigt__p_size_type, 0, 0, 0}
 static swig_cast_info _swigc__p_std__allocatorT_SimHierarchyNode_p_t[] = {  {&_swigt__p_std__allocatorT_SimHierarchyNode_p_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_std__allocatorT_SimHierarchyNode_t[] = {  {&_swigt__p_std__allocatorT_SimHierarchyNode_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_std__invalid_argument[] = {  {&_swigt__p_std__invalid_argument, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_std__vectorT_MappedComponent_p_std__allocatorT_MappedComponent_p_t_t[] = {  {&_swigt__p_std__vectorT_MappedComponent_p_std__allocatorT_MappedComponent_p_t_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_std__vectorT_SimHierarchyNode_p_std__allocatorT_SimHierarchyNode_p_t_t[] = {  {&_swigt__p_std__vectorT_SimHierarchyNode_p_std__allocatorT_SimHierarchyNode_p_t_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_std__vectorT_SimHierarchyNode_std__allocatorT_SimHierarchyNode_t_t[] = {  {&_swigt__p_std__vectorT_SimHierarchyNode_std__allocatorT_SimHierarchyNode_t_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_swig__SwigPyIterator[] = {  {&_swigt__p_swig__SwigPyIterator, 0, 0, 0},{0, 0, 0, 0}};
@@ -18651,6 +18642,7 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_std__allocatorT_SimHierarchyNode_p_t,
   _swigc__p_std__allocatorT_SimHierarchyNode_t,
   _swigc__p_std__invalid_argument,
+  _swigc__p_std__vectorT_MappedComponent_p_std__allocatorT_MappedComponent_p_t_t,
   _swigc__p_std__vectorT_SimHierarchyNode_p_std__allocatorT_SimHierarchyNode_p_t_t,
   _swigc__p_std__vectorT_SimHierarchyNode_std__allocatorT_SimHierarchyNode_t_t,
   _swigc__p_swig__SwigPyIterator,

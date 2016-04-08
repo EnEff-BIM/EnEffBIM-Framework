@@ -31,6 +31,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="SimHierarchy.i" />
+    <CustomBuild Include="SimHierarchy.i" />
   </ItemGroup>
 </Project>

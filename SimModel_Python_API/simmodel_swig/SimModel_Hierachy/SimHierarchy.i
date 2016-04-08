@@ -9,6 +9,10 @@
 %}
 
 %import  "..\SimModel\SimModel.i"
+
+%ignore SimHierarchyNode::addMappedComponent(MappedComponent& _mapObj);
+%ignore SimHierarchy::parser(::std::auto_ptr< ::schema::simxml::Model::SimModel >& SimModel_Data);
+
 /* Let's just grab the original header file here */
 %include ".\framework\SimHierarchy.h"
 
@@ -21,6 +25,7 @@ SimHierarchyNode.getSimModelObject = getSimModelObject
 
 %template(SimHierarchyNodeList) std::vector<SimHierarchyNode>;
 %template(SimHierarchyNodeRefList) std::vector<SimHierarchyNode*>;
+
 // SimModel hierarchy classes
 %template(dataType_SimProject_Project_DesignAlternative) SimHierarchyNodeBase::dataType<SimProject_Project_DesignAlternative>;
 %template(dataType_SimSite_BuildingSite_Default) SimHierarchyNodeBase::dataType<SimSite_BuildingSite_Default>;

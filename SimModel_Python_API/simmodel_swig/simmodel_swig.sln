@@ -369,6 +369,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimMaterialLayer_GlazingMat
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimMaterial_GlazingMaterial_SimpleGlazingSystem", "SimMaterial_GlazingMaterial_SimpleGlazingSystem\SimMaterial_GlazingMaterial_SimpleGlazingSystem.vcxproj", "{D7B2503F-37F6-4253-89DB-799FD83BA785}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimModel_Mapping", "SimModel_Mapping\SimModel_Mapping.vcxproj", "{B67BA44A-8C35-4D9C-BBE6-D0303A15027C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimModel_Translator", "SimModel_Translator\SimModel_Translator.vcxproj", "{E5E9259B-6E34-49DA-8899-BE3A0D6676C2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -1111,6 +1115,14 @@ Global
 		{D7B2503F-37F6-4253-89DB-799FD83BA785}.Debug|Win32.Build.0 = Debug|Win32
 		{D7B2503F-37F6-4253-89DB-799FD83BA785}.Release|Win32.ActiveCfg = Release|Win32
 		{D7B2503F-37F6-4253-89DB-799FD83BA785}.Release|Win32.Build.0 = Release|Win32
+		{B67BA44A-8C35-4D9C-BBE6-D0303A15027C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B67BA44A-8C35-4D9C-BBE6-D0303A15027C}.Debug|Win32.Build.0 = Debug|Win32
+		{B67BA44A-8C35-4D9C-BBE6-D0303A15027C}.Release|Win32.ActiveCfg = Release|Win32
+		{B67BA44A-8C35-4D9C-BBE6-D0303A15027C}.Release|Win32.Build.0 = Release|Win32
+		{E5E9259B-6E34-49DA-8899-BE3A0D6676C2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E5E9259B-6E34-49DA-8899-BE3A0D6676C2}.Debug|Win32.Build.0 = Debug|Win32
+		{E5E9259B-6E34-49DA-8899-BE3A0D6676C2}.Release|Win32.ActiveCfg = Release|Win32
+		{E5E9259B-6E34-49DA-8899-BE3A0D6676C2}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
