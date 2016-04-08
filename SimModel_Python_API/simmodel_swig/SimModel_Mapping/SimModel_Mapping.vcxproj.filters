@@ -15,22 +15,22 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="SimHierarchy.h">
+    <ClInclude Include="SimMapping.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="SimHierarchy_wrap.h">
+    <ClInclude Include="SimMapping_wrap.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="SimHierarchy.cpp">
+    <ClCompile Include="SimMapping.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="SimHierarchy_wrap.cxx">
+    <ClCompile Include="SimMapping_wrap.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="SimHierarchy.i" />
+    <CustomBuild Include="SimMapping.i" />
   </ItemGroup>
 </Project>

@@ -15,7 +15,6 @@ except:
     os.environ['PATH'] = ';'.join([modulePath, os.environ['PATH']])
     sys.path.append(modulePath)
     import SimModel
-print(modulePath)
 import SimModel_Hierachy
 from SimProject_Project_DesignAlternative import SimProject_Project_DesignAlternative
 from SimSite_BuildingSite_Default import SimSite_BuildingSite_Default
@@ -34,7 +33,19 @@ from SimConnection_HotWaterFlow_Default import SimConnection_HotWaterFlow_Defaul
 from SimConnection_HotWaterFlow_Default import SimConnection_HotWaterFlow_Default
 from SimFlowFitting_Splitter_DemandProxySplitterWater import SimFlowFitting_Splitter_DemandProxySplitterWater
 from SimFlowFitting_Mixer_DemandProxyMixerWater import SimFlowFitting_Mixer_DemandProxyMixerWater
-
+from SimSpaceBoundary_SecondLevel_SubTypeA import SimSpaceBoundary_SecondLevel_SubTypeA
+from SimSlab_RoofSlab_RoofUnderAir import SimSlab_RoofSlab_RoofUnderAir
+from SimSlab_Floor_FloorOverEarth import SimSlab_Floor_FloorOverEarth
+from SimWall_Wall_ExteriorAboveGrade import SimWall_Wall_ExteriorAboveGrade
+from SimWindow_Window_Exterior import SimWindow_Window_Exterior
+from SimMaterialLayerSet_OpaqueLayerSet_Wall import SimMaterialLayerSet_OpaqueLayerSet_Wall
+from SimMaterialLayer_OpaqueMaterialLayer_Default import SimMaterialLayer_OpaqueMaterialLayer_Default
+from SimMaterialLayerSet_OpaqueLayerSet_Roof import SimMaterialLayerSet_OpaqueLayerSet_Roof
+from SimMaterialLayerSet_OpaqueLayerSet_Floor import SimMaterialLayerSet_OpaqueLayerSet_Floor
+from SimMaterialLayerSet_GlazingLayerSet_Window import SimMaterialLayerSet_GlazingLayerSet_Window
+from SimMaterial_OpaqueMaterial_Default import SimMaterial_OpaqueMaterial_Default
+from SimMaterialLayer_GlazingMaterialLayer_Default import SimMaterialLayer_GlazingMaterialLayer_Default
+from SimMaterial_GlazingMaterial_SimpleGlazingSystem import SimMaterial_GlazingMaterial_SimpleGlazingSystem
 class MoObject(object):
     """Base class for all mapped objects
 
@@ -437,6 +448,7 @@ class MapThermalZone(MoObject):
         from mapapi.molibs.AixLib.Building.LowOrder.ThermalZone import \
             ThermalZone
         self.aix_lib = {"SimSpatialZone_ThermalZone_Default" : ThermalZone}
+        self.instantiate_space_boundaries()
 
     def convert_me(self):
         """Converts the MapComponent to a library specific component"""
@@ -447,6 +459,19 @@ class MapThermalZone(MoObject):
                 return
         else:
             pass
+
+    def instantiate_space_boundaries(self):
+        tz_child = self.hierarchy_node.getChildList()
+        for a in range(tz_child.size()):
+            if tz_child[a].ClassType() == "SimSpace_Occupied_Default":
+                occ_child = tz_child[a].getChildList()
+                for b in range(occ_child.size()):
+                    if occ_child[b].ClassType() == \
+                            "SimSpaceBoundary_SecondLevel_SubTypeA":
+                        space_bound = MapSpaceBoundary(self, occ_child[b])
+                        space_bound.instantiate_element()
+                        self.space_boundaries.append(space_bound)
+
 
 class MapComponent(MoObject):
     """Representation of a mapped component
@@ -661,7 +686,6 @@ class MapConnector(object):
         self.dimension = 1
         self.sim_ref_id = None
 
-
 class MapControl(object):
     """Representation of a mapped control strategy
         
@@ -787,7 +811,6 @@ class MapRecord(object):
 
         return mapped_prop
 
-
 class MapSpaceBoundary(object):
     """Representation of a mapped space boundary
 
@@ -848,12 +871,30 @@ class MapSpaceBoundary(object):
             
     """
     
-    def __init__(self, parent):
+    def __init__(self, parent, hierarchy_node=None):
         
               
         self.parent = parent
-        self.sim_ref_id = None
+        self.hierarchy_node = hierarchy_node
         self.type = None
+        if self.hierarchy_node is not None:
+            self.sim_instance = self.hierarchy_node.getSimModelObject()
+            self.sim_ref_id = self.sim_instance.RefId()
+            self.internal_external = \
+                self.sim_instance.InternalOrExternalBoundary().getValue()
+        else:
+            self.sim_instance = None
+
+        self.possible_types = ['SimSlab_RoofSlab_RoofUnderAir',
+                               'SimSlab_Floor_FloorOverEarth',
+                               'SimWall_Wall_ExteriorAboveGrade',
+                               'SimWindow_Window_Exterior',
+                               'SimSlab_Default_Default',
+                               'SimWall_Wall_Default']
+        self.possible_layers = ["SimMaterialLayerSet_OpaqueLayerSet_Wall",
+                               "SimMaterialLayerSet_OpaqueLayerSet_Roof",
+                               "SimMaterialLayerSet_OpaqueLayerSet_Floor",
+                               "SimMaterialLayerSet_GlazingLayerSet_Window"]
         self.internal_external = None
         self.area = None
         self.tilt = None
@@ -864,10 +905,28 @@ class MapSpaceBoundary(object):
         self.outer_radiation = None
         self.simmodel_coordinates = None
         self.simmodel_normal_vector = None
-
+        self.building_element = None
+        self.layer_set = None
         self.mapped_layer = []
 
-        
+    def instantiate_element(self):
+        bound_child = self.hierarchy_node.getChildList()
+        for a in range(bound_child.size()):
+            if bound_child[a].ClassType() in self.possible_types:
+                self.type = bound_child[a].ClassType()
+                self.building_element = bound_child[a].getSimModelObject()
+                element_child = bound_child[a].getChildList()
+                for b in range(element_child.size()):
+                    if element_child[b].ClassType() in self.possible_layers:
+                        self.layer_set = element_child[b].getSimModelObject()
+                        layer_child = element_child[b].getChildList()
+                        for c in range(layer_child.size()):
+                            self.mapped_layer.append(MapMaterialLayer(self,
+                                                               layer_child[c]))
+
+
+
+
 class MapMaterialLayer(object):
     """Representation of a mapped building element layer
         
@@ -891,13 +950,26 @@ class MapMaterialLayer(object):
             
     """
     
-    def __init__(self, parent):
+    def __init__(self, parent, hierarchy_node=None):
                       
         self.parent = parent
         
         self.material = None
-        self.thickness = None
 
+
+
+        self.hierarchy_node = hierarchy_node
+        if self.hierarchy_node is not None:
+            self.sim_instance = self.hierarchy_node.getSimModelObject()
+            self.thickness = self.sim_instance.SimMatLayer_LayerThickness().getValue()
+        else:
+            self.sim_instance = None
+        self.instantiate_layer()
+
+    def instantiate_layer(self):
+        layer_child = self.hierarchy_node.getChildList()
+        for a in range(layer_child.size()):
+            self.material = MapMaterial(self, layer_child[a])
 
 class MapMaterial(object):
     """Representation of a mapped material
@@ -937,14 +1009,26 @@ class MapMaterial(object):
 
     """
 
-
-    def __init__(self, parent):
+    def __init__(self, parent, hierarchy_node=None):
 
         self.parent = parent
-        self.name = ""
-        self.density = 0.0  
-        self.thermal_conduc = 0.0
-        self.heat_capac = 0.0
-        self.solar_absorp = 0.0
-        self.ir_emissivity = 0.0
-        self.transmittance = 0.0
+        self.hierarchy_node = hierarchy_node
+        if self.hierarchy_node is not None:
+            self.sim_instance = self.hierarchy_node.getSimModelObject()
+            if hierarchy_node.ClassType() == \
+                    "SimMaterial_OpaqueMaterial_Default":
+                self.name = self.sim_instance.SimModelName().getValue()
+                self.density = self.sim_instance.SimMaterial_Density().getValue()
+                self.thermal_conduc = self.sim_instance.SimMaterial_Cond().getValue()
+                self.heat_capac = self.sim_instance.SimMaterial_SpecificHeat().getValue()
+                self.solar_absorp = self.sim_instance.SimMaterial_SolarAbsorptance().getValue()
+                self.ir_emissivity = self.sim_instance.SimMaterial_ThermalAbsorptance().getValue()
+                self.transmittance =(1-
+                    self.sim_instance.SimMaterial_VisAbsorptance().getValue())
+            elif hierarchy_node.ClassType() == \
+                    "SimMaterial_GlazingMaterial_SimpleGlazingSystem":
+                self.name = self.sim_instance.SimModelName().getValue()
+                self.u_factor = self.sim_instance.SimMaterial_UFactor().getValue()
+                self.u_gvalue = self.sim_instance.SimMaterial_SolarHeatGainCoef().getValue()
+                self.transmittance = self.sim_instance.SimMaterial_VisTrans().getValue()
+

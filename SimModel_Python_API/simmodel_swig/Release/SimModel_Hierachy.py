@@ -332,6 +332,9 @@ class SimHierarchyNode(SimHierarchyNodeBase):
     def getChildList(self):
         return _SimModel_Hierachy.SimHierarchyNode_getChildList(self)
 
+    def getMappedComponents(self):
+        return _SimModel_Hierachy.SimHierarchyNode_getMappedComponents(self)
+
     def isClassType(self, _type):
         return _SimModel_Hierachy.SimHierarchyNode_isClassType(self, _type)
 
@@ -392,9 +395,6 @@ class SimHierarchy(_object):
 
     def ClassType(self, *args):
         return _SimModel_Hierachy.SimHierarchy_ClassType(self, *args)
-
-    def loadSimModel(self, _name):
-        return _SimModel_Hierachy.SimHierarchy_loadSimModel(self, _name)
     __swig_destroy__ = _SimModel_Hierachy.delete_SimHierarchy
     __del__ = lambda self: None
 SimHierarchy_swigregister = _SimModel_Hierachy.SimHierarchy_swigregister

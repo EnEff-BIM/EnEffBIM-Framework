@@ -11,9 +11,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{3125069A-D183-4E23-BEC7-18CD8BAC0E80}</ProjectGuid>
+    <ProjectGuid>{E5E9259B-6E34-49DA-8899-BE3A0D6676C2}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>SimModel_Hierachy</RootNamespace>
+    <RootNamespace>SimModel_Translator</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -51,7 +51,7 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;SIMMODEL_HIERACHY_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;SIMMODEL_TRANSLATOR_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -66,9 +66,8 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;SIMMODEL_HIERACHY_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;SIMMODEL_TRANSLATOR_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>C:\Python34_4\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -76,27 +75,32 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <AdditionalLibraryDirectories>C:\Python34_4\libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>xerces-c_3.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="SimHierarchy.h" />
-    <ClInclude Include="SimHierarchy_wrap.h" />
+    <ClInclude Include="SimTranslator.h" />
+    <ClInclude Include="SimTranslator_wrap.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="SimHierarchy.cpp" />
-    <ClCompile Include="SimHierarchy_wrap.cxx" />
+    <ClCompile Include="SimTranslator.cpp" />
+    <ClCompile Include="SimTranslator_wrap.cxx" />
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="SimHierarchy.i">
+    <CustomBuild Include="SimTranslator.i">
+      <FileType>Document</FileType>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Research\EnEff-BIM\Python\SWIG\swigwin-3.0.7\swig.exe -c++ -python -outdir $(Outdir) %(Identity)</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename)_wrap.cxx;$(Outdir)%(Filename).py</Outputs>
-      <FileType>Document</FileType>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SimModel_Dll_lib\SimModel_Dll_lib.vcxproj">
       <Project>{89e708e9-0bb0-4caa-8026-77d0eb1102ce}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\SimModel_Hierachy\SimModel_Hierachy.vcxproj">
+      <Project>{3125069a-d183-4e23-bec7-18cd8bac0e80}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\SimModel_Mapping\SimModel_Mapping.vcxproj">
+      <Project>{b67ba44a-8c35-4d9c-bbe6-d0303a15027c}</Project>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
