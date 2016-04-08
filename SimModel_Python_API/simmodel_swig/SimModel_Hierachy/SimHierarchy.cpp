@@ -1,15 +1,22 @@
 #include "SimHierarchy.h"
+#include "../SimModel_Mapping/SimMapping.h"
 
 // get its parent objects
-std::vector<SimHierarchyNode*> SimHierarchyNode::getParentList()
+std::vector<SimHierarchyNode*>& SimHierarchyNode::getParentList()
 {
 	return ParentList;
 }
 
 // get its child objects
-std::vector<SimHierarchyNode*> SimHierarchyNode::getChildList()
+std::vector<SimHierarchyNode*>& SimHierarchyNode::getChildList()
 {
 	return ChildList;
+}
+
+// get its mapped objects
+std::vector<MappedComponent*>& SimHierarchyNode::getMappedComponents()
+{
+	return LocalMappedComponentList;
 }
 
 // check SimModel object class type
@@ -63,6 +70,12 @@ bool SimHierarchyNode::isChild(SimHierarchyNode* _simNode)
 		return false;
 }
 
+// add mapped component object
+void SimHierarchyNode::addMappedComponent(MappedComponent& _mapObj)
+{
+	LocalMappedComponentList.push_back(&_mapObj);
+}
+
 // set SimModel object
 void setCurrentObject(SimHierarchyNode& _simNode, SimRoot& _simObj)
 {
@@ -105,7 +118,12 @@ SimHierarchyNode* SimHierarchy::getHierarchyRootNode()
 }
 
 // get SimModel Hierarchical Nodes
-std::vector<SimHierarchyNode> SimHierarchy::getHierarchyNodeList()
+/*std::vector<SimHierarchyNode> SimHierarchy::getHierarchyNodeList()
+{
+	return SimHierarchyNodeList;
+}*/
+
+std::vector<SimHierarchyNode>& SimHierarchy::getHierarchyNodeList()
 {
 	return SimHierarchyNodeList;
 }
@@ -152,11 +170,12 @@ std::string SimHierarchy::ClassType(SimRoot* _simObj)
 	return _type.substr(_type.find_last_of(":")+1);
 }
 
-// load SimModel data
-::std::auto_ptr< ::schema::simxml::Model::SimModel > SimHierarchy::loadSimModel(std::string _name)
+//::std::auto_ptr< ::schema::simxml::Model::SimModel > SimHierarchy::loadSimModel(std::string _name)
+// parse SimModel hierarchy data
+void SimHierarchy::parser(::std::auto_ptr< ::schema::simxml::Model::SimModel >& SimModel_Data)
 {
 	// load SimXML file
-	SimModel_Data = SimModel_(_name);
+	//SimModel_Data = SimModel_(_name);
 
 	// parsing SimXML hierarchy
 	// dummy data for testing
@@ -991,7 +1010,7 @@ std::string SimHierarchy::ClassType(SimRoot* _simObj)
 
 
 	// return SimXML data
-	return SimModel_Data;
+	//return SimModel_Data;
 }
 
 // add SimModel Hiearachial Node
