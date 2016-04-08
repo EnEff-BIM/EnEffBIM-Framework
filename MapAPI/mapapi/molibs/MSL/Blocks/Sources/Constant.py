@@ -20,4 +20,3 @@ class Constant(MapHierarchy.MapComponent):
         self.k = self.add_parameter(name="k", value=1.0)
         self.y = self.add_connector("y","Real")
         return True
-

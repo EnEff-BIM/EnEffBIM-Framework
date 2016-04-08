@@ -67,8 +67,3 @@ class Radiator(MapHierarchy.MapComponent):
         self.add_connection(self.convPort, thermal_zone.internalGainsConv)
         self.add_connection(self.radPort, thermal_zone.internalGainsRad)
         self.ctrl_valve(thermal_zone=thermal_zone)
-
-
-
-
-

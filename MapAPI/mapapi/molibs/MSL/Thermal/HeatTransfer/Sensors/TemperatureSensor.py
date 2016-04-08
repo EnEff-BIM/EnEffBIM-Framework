@@ -21,4 +21,3 @@ class TemperatureSensor(MapHierarchy.MapComponent):
         self.target_name = "sensT"+str(random.randint(1, 100))
         self.port = self.add_connector("port", "HeatPort")
         self.T = self.add_connector("T", "Real")
-

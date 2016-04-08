@@ -21,15 +21,3 @@ file_path = os.path.join(modulePath+"\\Boiler_Gas_VDI6020_V12.simxml")
 
 prj = MapProject(file_path)
 print("finish")
-
-
-
-
-
-
-
-
-
-
-
-
