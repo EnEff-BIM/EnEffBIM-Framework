@@ -46,7 +46,3 @@ class LimPID(MapHierarchy.MapComponent):
         self.project.buildings[0].hvac_components_mod.append(const)
         const.k.value = setpoint
         self.add_connection(self.u_s, const.y)
-
-
-
-

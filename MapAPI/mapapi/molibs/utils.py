@@ -13,6 +13,5 @@ def object_in_list(hierarchy_node, list_of_hierarchy_nodes):
     '''
     for node in list_of_hierarchy_nodes:
         print(node.RefId(), hierarchy_node.getSimModelObject().RefId())
-        if node.RefId() == hierarchy_node.getSimModelObject().RefId():
-            return True
+        return node.RefId() == hierarchy_node.getSimModelObject().RefId()
     return False
