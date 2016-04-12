@@ -28,5 +28,5 @@ class ThermalZone(MapHierarchy.MapThermalZone):
         self.solarRad_in = self.add_connector(name="solarRad_in",
                                               type="SolarRad ")
 
-        import teaser.Data.Input.simxml_input as teaser
-        self.teaser_parameters = teaser.api_to_teaser(self)
+        # import teaser.Data.Input.simxml_input as teaser
+        # self.teaser_parameters = teaser.api_to_teaser(self)

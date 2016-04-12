@@ -15,6 +15,9 @@ except:
     os.environ['PATH'] = ';'.join([modulePath, os.environ['PATH']])
     sys.path.append(modulePath)
     import SimModel
+
+import SimModel_Translator
+from SimModel_Translator import SimTranslator
 import SimModel_Hierachy
 from SimProject_Project_DesignAlternative import SimProject_Project_DesignAlternative
 from SimSite_BuildingSite_Default import SimSite_BuildingSite_Default
@@ -275,8 +278,9 @@ class MapProject(object):
 
         """Instantiate the SimModel Hierarchy and load the SimXML file through
         libSimModelAPI"""
-        self.sim_hierarchy = SimModel_Hierachy.SimHierarchy()
-        load_sim = self.sim_hierarchy.loadSimModel(simxml_file)
+        self.translator = SimTranslator()
+        self.sim_hierarchy = self.translator.getSimHierarchy()
+        load_sim = self.translator.loadSimModel(simxml_file)
 
         self.instantiate_buildings()
 
