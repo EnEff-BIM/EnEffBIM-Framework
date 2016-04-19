@@ -1,30 +1,27 @@
 #-*- coding:utf-8 -*-
 #
-# This file is part of CoTeTo - a code generation tool
-# 20141114 Joerg Raedler jraedler@udk-berlin.de
+# This file is part of CoTeTo - code templating tool
 #
 
-name = 'JSONReader'
-description = 'JSON file reader, return deserialized objects from JSON files'
+name = 'libSimModel'
+description = 'SimXML file reader, return objects from SimXML files'
 version = '0.1'
 author = 'EnEff-BIM team'
 helptxt = """
-All files in uriList will be read a and decoded. The return value is a
-dictionary with one entry called json_data: the filenames are the keys and
-the objects are the values."""
+Help yourself"""
 
 def fetchData(uriList, systemCfg, generatorCfg, logger):
     from os.path import isfile
     from json import load
     jf = {}
     if not uriList:
-        logger.critical('JSONReader - no files specified!')
+        logger.critical('libSimModel - no files specified!')
         raise Exception('No files specified!')
     for f in uriList:
         if isfile(f):
-            logger.info('JSONReader - loading %s', f)
+            logger.info('libSimModel - loading %s', f)
             jf[f] = load(open(f, 'r'))
         else:
             jf[f] = None
-            logger.error('JSONReader - file not readable %s', f)
+            logger.error('libSimModel - file not readable %s', f)
     return {'json_files': jf}
