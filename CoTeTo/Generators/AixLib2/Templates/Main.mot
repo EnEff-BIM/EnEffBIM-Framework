@@ -1,5 +1,5 @@
 within AixLib;
-used xml file was ${MapProject.simxml_file}
+model Test "just testing"
 
 ${MapProject.buildings[0].hvac_components_mod[0].target_location}
 ${MapProject.buildings[0].hvac_components_mod[3].target_location}
@@ -7,3 +7,19 @@ ${MapProject.buildings[0].hvac_components_mod[3].target_location}
 % for hvac_component in MapProject.buildings[0].hvac_components_mod:
 ${hvac_component.target_location}
 % endfor
+
+equation
+% for conny in MapProject.connections:
+  connect(${conny.connector_a.name}, ${conny.connector_b.name});
+% endfor
+
+annotation(
+  Documentation(
+    info="
+      <html>
+        used xml file was ${MapProject.simxml_file}
+      </html>
+    )
+);
+
+end Test;
