@@ -49,6 +49,7 @@ from SimMaterialLayerSet_GlazingLayerSet_Window import SimMaterialLayerSet_Glazi
 from SimMaterial_OpaqueMaterial_Default import SimMaterial_OpaqueMaterial_Default
 from SimMaterialLayer_GlazingMaterialLayer_Default import SimMaterialLayer_GlazingMaterialLayer_Default
 from SimMaterial_GlazingMaterial_SimpleGlazingSystem import SimMaterial_GlazingMaterial_SimpleGlazingSystem
+
 class MoObject(object):
     """Base class for all mapped objects
 

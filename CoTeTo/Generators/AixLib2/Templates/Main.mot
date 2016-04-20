@@ -1,11 +1,22 @@
+<%
+ punCom = ','
+ punSem = ';'
+ punQuo = '"'
+ punSpa = ' '
+ punLin = '\n'
+ parOpe = '('
+ parClo = ')'
+ braOpe = '['
+ braClo = ']'
+%>
 within AixLib;
 model Test "just testing"
 
-${MapProject.buildings[0].hvac_components_mod[0].target_location}
-${MapProject.buildings[0].hvac_components_mod[3].target_location}
-
 % for hvac_component in MapProject.buildings[0].hvac_components_mod:
-${hvac_component.target_location}
+  ${hvac_component.target_location} ${hvac_component.target_name}(
+  % for param in hvac_component.parameters:
+    ${param.name} = ${param.value}${punCom if not loop.last else parClo+punSpa+punQuo+hvac_component.sim_ref_id+punQuo+punSem+punLin}
+  % endfor
 % endfor
 
 equation
@@ -15,11 +26,9 @@ equation
 
 annotation(
   Documentation(
-    info="
-      <html>
+    info="<html>
         used xml file was ${MapProject.simxml_file}
-      </html>
-    )
+      </html>")
 );
 
 end Test;
