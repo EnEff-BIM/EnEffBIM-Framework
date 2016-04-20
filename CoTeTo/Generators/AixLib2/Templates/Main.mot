@@ -1,3 +1,9 @@
 within AixLib;
 used xml file was ${MapProject.simxml_file}
 
+${MapProject.buildings[0].hvac_components_mod[0].target_location}
+${MapProject.buildings[0].hvac_components_mod[3].target_location}
+
+% for hvac_component in MapProject.buildings[0].hvac_components_mod:
+${hvac_component.target_location}
+% endfor
