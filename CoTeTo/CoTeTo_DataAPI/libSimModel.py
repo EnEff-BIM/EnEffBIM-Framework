@@ -11,17 +11,8 @@ helptxt = """
 Help yourself"""
 
 def fetchData(uriList, systemCfg, generatorCfg, logger):
-    from os.path import isfile
-    from json import load
-    jf = {}
+    from mapapi.MapClasses import MapProject    
     if not uriList:
         logger.critical('libSimModel - no files specified!')
         raise Exception('No files specified!')
-    for f in uriList:
-        if isfile(f):
-            logger.info('libSimModel - loading %s', f)
-            jf[f] = load(open(f, 'r'))
-        else:
-            jf[f] = None
-            logger.error('libSimModel - file not readable %s', f)
-    return {'json_files': jf}
+    return {'MapProject': MapProject(uriList[0])}
