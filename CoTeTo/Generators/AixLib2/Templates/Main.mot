@@ -23,7 +23,8 @@ model Test "just testing"
 
 equation
 % for conny in MapProject.connections:
-  connect(${conny.connector_a.parent.target_name}.${conny.connector_a.name}, ${conny.connector_b.parent.target_name}.${conny.connector_b.name});
+  connect(${conny.connector_a.parent.target_name}.${conny.connector_a.name}, ${conny.connector_b.parent.target_name}.${conny.connector_b.name})
+    annotation (Line());
 % endfor
 
 annotation(
