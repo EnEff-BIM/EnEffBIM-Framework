@@ -82,21 +82,21 @@ for id in range(0, mappedComonentList.size()):
     print("mapped component", id, ": ", mappedComonentList[id].getTargetComponentName())
     print("mapped component location in the target library: ", mappedComonentList[id].getTargetLocation())
     print("mapping rule used for mapping this component: ", mappedComonentList[id].getMappingRuleName())
-    
+
     # access the unmapped SimModel objects linking to the mapped component
-    # retrieve a SimHierarchyNode list saving the unmapped objects 
+    # retrieve a SimHierarchyNode list saving the unmapped objects
     unmappedSimHierarchyNodeList = mappedComonentList[id].getUnmappedSimHierarchyNodes()
-    
+
     # iterate the list to access the unmapped SimModel objects
     for _id in range(0, unmappedSimHierarchyNodeList.size()):
         # unmappedSimHierarchyNodeList[_id] is a SimHierarchyNode object
         # you can access the unmapped data like:
         print("unmapped SimModel object class: ", unmappedSimHierarchyNodeList[_id].ClassType())
         print("unmapped SimModel object id: ", unmappedSimHierarchyNodeList[_id].getSimModelObject().RefId())
-        
+
     # retrieve a list saving mapped properties of the mapped component
     mappedPropertyList = mappedComonentList[id].getMappedPropertyList()
-    
+
     # iterate each mapped properties of the mapped component
     for _id in range(0, mappedPropertyList.size()):
         print(" mapped property name: ", mappedPropertyList[_id].getPropertyName())
@@ -105,7 +105,7 @@ for id in range(0, mappedComonentList.size()):
         # 1st step: you should check the value type, i.e., String, Number (int, float, double), or Matrix
         if(mappedPropertyList[_id].getValueType() =="String" or mappedPropertyList[_id].getValueType() =="Number"):
             print(" mapped property value: ", mappedPropertyList[_id].getPropertyValue())
-            
+
         elif(mappedPropertyList[_id].getValueType()=="Matrix"):
             # get the matrix array
             matrix_data = mappedPropertyList[_id].getPropertyValue()
@@ -126,15 +126,16 @@ for id in range(0, mappedComonentList.size()):
 
         if(mappedPropertyList[_id].getRecordLocation()!=""):
             print(" mapped property record location: ", mappedPropertyList[_id].getRecordLocation())
-             
+
         print("\n")
 
-    
+
     print("\n")
 
 # 2. the second method for accessing the mapped data: go through their unmapped SimHierarchyNode
 # the second method can not access the mapped components generted by the mapping rule: 'Gap'
-# as these components do not have the corresponding unmapped object in the SimModel side, e.g., the baseParameters defined in the Modelica use case
+# as these components do not have the corresponding unmapped object in the SimModel side, e.g.,
+# the baseParameters defined in the Modelica use case
 # you can still access these Gap components via the first method shown above
 #
 # get SimModel hierarchy object
@@ -144,24 +145,24 @@ sim_hierarchy = translator.getSimHierarchy()
 # retrieve a list saving SimModel hierarchy nodes
 # each node represents a SimModel class object
 nodeList = sim_hierarchy.getHierarchyNodeList()
-   
+
 # iterate each hiearchy node saved in the list
 for id in range(0, nodeList.size()):
     print("node ", id, ":")
-    
+
     # retrieve a node
     hierarchy_node = nodeList[id]
-    
+
     # check the class type of the hiearchy node
     print("node class type: ", hierarchy_node.ClassType())
 
     # retrieve the SimModel class object saved in curren node
     sim_object = hierarchy_node.getSimModelObject()
-        
+
     # retrieve the reference id of current SimModel object
     sim_object_id = sim_object.RefId()
     print("current SimModel object id: ", sim_object_id)
-        
+
     #!!! access the mapped data linking to this hiearchy node
     # retrieve a list saving the mapped components
     mappedComponentList = hierarchy_node.getMappedComponents()
@@ -172,11 +173,11 @@ for id in range(0, nodeList.size()):
         # e.g.
         print(" mapped component name: ", mappedComponentList[_id].getTargetComponentName())
         print(" mapped component location: ", mappedComponentList[_id].getTargetLocation())
-        
 
-    ##########################################the following is the demo code for SimModel hierarchy access##########################################
-    
-    
+
+    #########################the following is the demo code for SimModel hierarchy access##############################
+
+
     # compare the class type with a given class name, e.g., 'SimProject_Project_DesignAlternative'
     class_name = "SimProject_Project_DesignAlternative"
     if(hierarchy_node.isClassType(class_name)):
@@ -206,7 +207,7 @@ for id in range(0, nodeList.size()):
         # you can re-do everything above agian for each parent node
         # such as
         print("child node ", _id, ": ", child_node.ClassType(), " ", child_node.getSimModelObject().RefId())
-        
+
     print("\n")
 
 # 3. the 2nd way for accessing each hierarchy node saved in a tree structure
@@ -215,15 +216,15 @@ def IterateSimModelHierarchy(_SimHierarchyNode, _level):
     # print current hierarchy node
     print("current hierarchy level: ", _level)
     print("current hierarchy node: ", _SimHierarchyNode.ClassType(), " ", _SimHierarchyNode.getSimModelObject().RefId())
-    
+
     # access internal child nodes
     child_node_list = _SimHierarchyNode.getChildList()
     for _id in range(0, child_node_list.size()):
         child_node = child_node_list[_id]
-        
+
         # print child node
         print(" child node ", _id, ": ", child_node.ClassType(), " ", child_node.getSimModelObject().RefId())
-        
+
         # recursively iterating next hierarchy level
         IterateSimModelHierarchy(child_node, _level+1)
 
@@ -250,7 +251,7 @@ hierarchy_node = sim_hierarchy.getHierarchyNode(sim_object_id)
 # a node with the given id is found
 if(hierarchy_node):
     print("found a node: ", hierarchy_node.ClassType(), " with id =", sim_object_id)
-    
+
     # the return value 'hierarchy_node' is a also a hierarchy node
     # you can re-do everything as shown in above example
     # e.g. retrieve the SimModel class object saved in curren node
@@ -268,7 +269,7 @@ if(hierarchy_node):
         print("current class type is not the same as: ", class_name)
 
     print("\n")
-    
+
 # 5. compare the parent-child relationship between two hierarchy nodes
 # retrieve a node
 hierarchy_node0 = nodeList[0]
