@@ -15,8 +15,10 @@ model Test "just testing"
 % for hvac_component in MapProject.buildings[0].hvac_components_mod:
   ${hvac_component.target_location} ${hvac_component.target_name}(
   % for param in hvac_component.parameters:
-    ${param.name} = ${param.value}${punCom if not loop.last else parClo+punSpa+punQuo+hvac_component.sim_ref_id+punQuo+punSem+punLin}
+    ${param.name}=${param.value}${punCom if not loop.last else parClo+punSpa+punQuo+hvac_component.sim_ref_id+punQuo}
   % endfor
+    annotation (Placement(transformation(extent={{-10,-10},{10,10}},origin={0,0})));
+
 % endfor
 
 equation
