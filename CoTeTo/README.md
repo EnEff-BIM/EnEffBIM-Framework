@@ -24,9 +24,9 @@ Data APIs are python modules loaded from the module package `CoTeTo_DataAPI`.
 
 Dependencies
 ------------
-1. CoTeTo works with vanilla Python 32 or 64 bit version >=3.3 or >=2.7.10 plus some packages listed below,
+1. CoTeTo works with vanilla Python 32bit or 64bit version >=3.3 or >=2.7.10 plus some packages listed below,
 but the `libSimModel` API is currently only compatible to Python 3.4 in 32bit.  
-[WinPython](http://winpython.github.io/) (v3.4, 32bit) is recommended,
+[WinPython](http://winpython.github.io/) (v3.4, 32bit, pyQT4) is recommended,
 because it includes most packages.
 3. WinPython does not include the Mako templating engine,
 install it by running `pip install -U mako` on a Python-enabled command prompt
