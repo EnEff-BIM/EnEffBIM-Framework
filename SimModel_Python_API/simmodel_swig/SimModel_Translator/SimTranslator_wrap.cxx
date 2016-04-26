@@ -7188,18 +7188,29 @@ fail:
 SWIGINTERN PyObject *_wrap_SimTranslator_getSimMappedData(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   SimTranslator *arg1 = (SimTranslator *) 0 ;
+  std::string arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
   SimMappedData *result = 0 ;
   
-  if (!PyArg_ParseTuple(args,(char *)"O:SimTranslator_getSimMappedData",&obj0)) SWIG_fail;
+  if (!PyArg_ParseTuple(args,(char *)"OO:SimTranslator_getSimMappedData",&obj0,&obj1)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_SimTranslator, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimTranslator_getSimMappedData" "', argument " "1"" of type '" "SimTranslator *""'"); 
   }
   arg1 = reinterpret_cast< SimTranslator * >(argp1);
-  result = (SimMappedData *) &(arg1)->getSimMappedData();
+  {
+    std::string *ptr = (std::string *)0;
+    int res = SWIG_AsPtr_std_string(obj1, &ptr);
+    if (!SWIG_IsOK(res) || !ptr) {
+      SWIG_exception_fail(SWIG_ArgError((ptr ? res : SWIG_TypeError)), "in method '" "SimTranslator_getSimMappedData" "', argument " "2"" of type '" "std::string""'"); 
+    }
+    arg2 = *ptr;
+    if (SWIG_IsNewObj(res)) delete ptr;
+  }
+  result = (SimMappedData *) &(arg1)->getSimMappedData(arg2);
   resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_SimMappedData, 0 |  0 );
   return resultobj;
 fail:

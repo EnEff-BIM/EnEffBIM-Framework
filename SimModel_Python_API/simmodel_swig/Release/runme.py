@@ -67,9 +67,8 @@ simxml_data = translator.loadSimModel("Boiler_Gas_VDI6020_V12.simxml")
 print("access SimXML data: ", simxml_data.SimProject_Project_DesignAlternative().at(0).SimModelName().getValue(), "\n")
 
 # get SimModel mapped data
-# we will add a new function here for specifying the mapping rule xml file name in next version
-# e.g. getSimMappedData('AixLib_mapping_rule.xml')
-simxml_mapped_data = translator.getSimMappedData()
+# here we need to specify the mapping rule xml file location before translating the data
+simxml_mapped_data = translator.getSimMappedData(".\\mapping_rule\\mapping_rule_xml\\AixLib.xml")
 
 # we provide two different methods for accessing the mapped data
 #

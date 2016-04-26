@@ -3,6 +3,9 @@
 
 #include <vector>
 #include <string>
+// mapping rules
+#include ".\mapping_rule_lib\mapping_rule_schema.hxx"
+//using namespace namespaces::Sim::DataMap;
 // forward declaration
 class SimHierarchyNode;
 class SimHierarchy;
