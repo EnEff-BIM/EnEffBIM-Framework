@@ -13,20 +13,41 @@
 within ;
 model Test "just testing"
 
-% for hvac_component in MapProject.buildings[0].hvac_components_mod:
-  ${hvac_component.target_location} ${hvac_component.target_name}(
-  % for param in hvac_component.parameters:
+// Print hvac_components attribute of MapProject
+% for myComp in MapProject.hvac_components:
+  ${myComp.target_location} ${myComp.target_name}(
+  % for param in myComp.parameters:
     ${param.name}=${param.value}${punCom if not loop.last else strEmp}
   % endfor
-    ) "${hvac_component.sim_ref_id}"
-    annotation (Placement(transformation(extent={{-10,-10},{10,10}})));
+    ) "${myComp.sim_ref_id}"
+    annotation (Placement(transformation(extent={{-10,-10},{10,10}})));${punLin}
+% endfor
 
+// Print thermal_zones attribute of buildings[0]
+% for myZone in MapProject.buildings[0].thermal_zones:
+  ${myZone.target_location} ${myZone.target_name}(
+  % for param in myZone.parameters:
+    ${param.name}=${param.value}${punCom if not loop.last else strEmp}
+  % endfor
+    ) "${myZone.sim_ref_id}"
+    annotation (Placement(transformation(extent={{-10,-10},{10,10}})));${punLin}
+% endfor
+
+// Print hvac_components attribute of buildings[0]
+% for myComp in MapProject.buildings[0].hvac_components_mod:
+  ${myComp.target_location} ${myComp.target_name}(
+  % for param in myComp.parameters:
+    ${param.name}=${param.value}${punCom if not loop.last else strEmp}
+  % endfor
+    ) "${myComp.sim_ref_id}"
+    annotation (Placement(transformation(extent={{-10,-10},{10,10}})));${punLin}
 % endfor
 
 equation
+// Found ${sum(1 for _ in MapProject.connections)} connect equations
 % for conny in MapProject.connections:
   connect(${conny.connector_a.parent.target_name}.${conny.connector_a.name}, ${conny.connector_b.parent.target_name}.${conny.connector_b.name})
-    annotation (Line());
+    annotation (Line(points={{0,0},{1,1}}));${punLin}
 % endfor
 
 annotation(
