@@ -173,11 +173,28 @@ std::vector<MappedComponent>& SimMappedData::getMappedComponentList()
 // translate the SimModel data based on mapping rules
 void SimMappedData::translator(SimHierarchy& _simHierarchy)
 {
+	::std::auto_ptr<Data_Model_Map> _mapping = Data_Model_Map_(".\\mapping_rule\\mapping_rule_xml\\AixLib.xml");
+		/*for(Library_Mapping_Rule::Component_Map_One2Many_Name_iterator _it = _mapping->Library_Mapping_Rule().Component_Map_One2Many_Name().begin();
+			_it!=_mapping->Library_Mapping_Rule().Component_Map_One2Many_Name().end(); ++_it)
+			cout << "rule: " << *_it << endl;*/
+
 	std::multimap<int, int> _idList;
 	for(unsigned int i=0; i<_simHierarchy.getHierarchyNodeList().size(); ++i)
 	{
-		// testing
 		//_simHierarchy.getHierarchyNodeList()[i]._SimRootObject->RefId();
+		// 1. load mapping rule: component mapping list multimap<component_name, rule_ref1,2,3>:1one2one, 2one2many, 3gap
+		// finite type casting
+
+		// 2. search the class type in the component mapping list
+
+		// 3. if found, then load data of component level: one by one from the list
+
+		// 4. In each instance of the list, load data of the property level: 
+		// python callback(SimHierarchyNode:getSimObject, property_name):simobject
+		// multiple jump?
+		// return value: string, double,
+		// array: not resolved?
+
 		if(_simHierarchy.getHierarchyNodeList()[i].ClassType() == "SimFlowPlant_Boiler_BoilerHotWater")
 		{
 			MappedComponent _mapCom;

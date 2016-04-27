@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- edited with XMLSpy v2016 rel. 2 (x64) (http://www.altova.com) by RW (RWTH) -->
-<xs:schema xmlns:datamap="http://www.e3d.rwth-aachen.de/namespaces/Sim/DataMap" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.e3d.rwth-aachen.de/namespaces/Sim/DataMap" elementFormDefault="qualified" attributeFormDefault="unqualified">
+<xs:schema targetNamespace="http://www.e3d.rwth-aachen.de/namespaces/Sim/DataMap" xmlns:datamap="http://www.e3d.rwth-aachen.de/namespaces/Sim/DataMap" xmlns:xs="http://www.w3.org/2001/XMLSchema"  elementFormDefault="qualified" attributeFormDefault="unqualified">
 	<!-- Copyright (C) 2012-2015 Institute of Energy Efficient Building E3D, -->
 	<!-- RWTH Aachen University, Germany. -->
 	<!-- This program was developed for the EnEff-BIM project. In EnEff-BIM, -->
@@ -144,17 +143,17 @@
 		<xs:sequence>
 			<xs:element ref="datamap:Description" minOccurs="0" maxOccurs="1"/>
 			<xs:element ref="datamap:ParameterName" minOccurs="1" maxOccurs="1"/>
-			<xs:element ref="datamap:ValueType" minOccurs="0" maxOccurs="1"/>
 			<!-- for range value, we need to set the interpolation step -->
-			<xs:element ref="datamap:IsReferenced" minOccurs="0" maxOccurs="1"/>
+			<xs:element ref="datamap:ValueType" minOccurs="0" maxOccurs="1"/>
 			<!-- if set, then the value is defined in a referenced element (outside current scope) -->
+			<xs:element ref="datamap:IsReferenced" minOccurs="0" maxOccurs="1"/>
 			<xs:choice minOccurs="1" maxOccurs="1">
-				<xs:element ref="datamap:RefValue"/>
 				<!-- a single referenced value -->
-				<xs:element ref="datamap:ValueList"/>
+				<xs:element ref="datamap:RefValue"/>
 				<!-- a list of discreted values -->
-				<xs:group ref="datamap:ValueBounds"/>
+				<xs:element ref="datamap:ValueList"/>
 				<!-- a range type saving lower and upper bounds -->
+				<xs:group ref="datamap:ValueBounds"/>
 			</xs:choice>
 		</xs:sequence>
 		<xs:attribute name="RefId" type="xs:ID" use="required"/>
@@ -164,8 +163,8 @@
 		<xs:sequence>
 			<xs:element ref="datamap:Description" minOccurs="0" maxOccurs="1"/>
 			<xs:element ref="datamap:CoefficientName" minOccurs="1" maxOccurs="1"/>
-			<xs:element ref="datamap:IsReferenced" minOccurs="0" maxOccurs="1"/>
 			<!-- if set, then the value is defined in a referenced element (outside current scope) -->
+			<xs:element ref="datamap:IsReferenced" minOccurs="0" maxOccurs="1"/>
 			<xs:choice minOccurs="1" maxOccurs="1">
 				<xs:element ref="datamap:Value"/>
 				<xs:element ref="datamap:RefValue"/>
@@ -188,18 +187,17 @@
 	<!-- propetry mapping relationship: value transformation process -->
 	<!-- this process represents two different kinds of transformations: -->
 	<!-- one2one transformation/map: convert single property into an output property by the transformation function -->
-	<!-- many2many transformation/map: covert multiple properties into multiple output properties. This can be divided into a set of one2one transformations-->
+	<!-- many2one transformation/map: covert multiple properties into an output property -->
+    <!-- one2many transformation/map: convert one property into multiple output properties. This can be divided into -->
+    <!-- a set of one2one conversions -->
 	<xs:complexType name="Property_Map_Transformation">
 		<xs:sequence>
 			<xs:element ref="datamap:Description" minOccurs="0" maxOccurs="1"/>
-			<xs:element ref="datamap:InputParameterName" minOccurs="1" maxOccurs="unbounded"/>
-			<!-- xs:IDREF -->
-			<xs:element ref="datamap:InputCoefficientName" minOccurs="0" maxOccurs="unbounded"/>
-			<!-- xs:IDREF -->
+			<xs:element ref="datamap:InputParameterName" minOccurs="1" maxOccurs="unbounded"/> <!-- xs:IDREF -->
+			<xs:element ref="datamap:InputCoefficientName" minOccurs="0" maxOccurs="unbounded"/> <!-- xs:IDREF -->
 			<xs:element ref="datamap:Function" minOccurs="1" maxOccurs="1"/>
-			<xs:element ref="datamap:OutputParameterName" minOccurs="1" maxOccurs="unbounded"/>
-			<!-- xs:IDREF -->
-			<xs:element ref="datamap:TargetLocation" minOccurs="1" maxOccurs="unbounded"/>
+			<xs:element ref="datamap:OutputParameterName" minOccurs="1" maxOccurs="unbounded"/> <!-- xs:IDREF -->
+			<xs:element ref="datamap:TargetLocation" minOccurs="0" maxOccurs="unbounded"/>
 			<!-- map properties from SimModel into a record structure declared in Modelica -->
 			<xs:element ref="datamap:RecordInstance" minOccurs="0" maxOccurs="1"/>
 			<xs:element ref="datamap:RecordInstanceLocation" minOccurs="0" maxOccurs="1"/>
@@ -207,8 +205,9 @@
 		</xs:sequence>
 		<xs:attribute name="RefId" type="xs:ID" use="required"/>
 	</xs:complexType>
+
 	<!-- propetry mapping relationship: one to one mapping -->
-	<xs:complexType name="Property_Map_One2one">
+	<xs:complexType name="Property_Map_One2One">
 		<xs:sequence>
 			<xs:element ref="datamap:Description" minOccurs="0" maxOccurs="1"/>
 			<xs:element ref="datamap:RefValue" minOccurs="1" maxOccurs="1"/>
@@ -235,45 +234,21 @@
 		</xs:sequence>
 		<xs:attribute name="RefId" type="xs:ID" use="required"/>
 	</xs:complexType>
-	<!-- propetry mapping relationship: combination -->
-	<!-- a mapping combination of different property rules: One2one, Gap, Many2Many and Transformation -->
-	<!-- as the sub-properties will compose a parent property based on the combination of different mapping rules -->
-	<!-- used to define a combined high-level property -->
-	<xs:complexType name="Property_Map_Combination">
-		<xs:sequence>
-			<xs:element ref="datamap:Description" minOccurs="0" maxOccurs="1"/>
-			<xs:element ref="datamap:TargetPropertyNameList" minOccurs="1" maxOccurs="1"/>
-			<xs:element ref="datamap:TargetLocation" minOccurs="0" maxOccurs="1"/>
-			<xs:element ref="datamap:RefValue" minOccurs="0" maxOccurs="unbounded"/>
-			<!-- represent a property value processed by the Property_Map_One2one -->
-			<xs:element ref="datamap:DefaultValueList" minOccurs="0" maxOccurs="1"/>
-			<!-- represent a list of property values processed by the Property_Map_Gap -->
-			<xs:element ref="datamap:PropertyIdList" minOccurs="0" maxOccurs="1"/>
-			<!-- refer to a list property values generated by the property_map_transformation -->
-			<!-- map properties from SimModel into a record structure declared in Modelica -->
-			<xs:element ref="datamap:RecordInstance" minOccurs="0" maxOccurs="1"/>
-			<xs:element ref="datamap:RecordInstanceLocation" minOccurs="0" maxOccurs="1"/>
-			<xs:element ref="datamap:RecordLocation" minOccurs="0" maxOccurs="1"/>
-		</xs:sequence>
-		<xs:attribute name="RefId" type="xs:ID" use="required"/>
-	</xs:complexType>
-	<!-- a group of different property mapping rules: one2one, gap, many2many, transformation and combination -->
+	<!-- a group of different property mapping rules: one2one, gap, transformation -->
 	<!-- used to define internal properties of components -->
 	<xs:group name="Property_Map_Rules">
 		<xs:sequence>
-			<xs:element ref="datamap:Property_Map_One2one_Name" minOccurs="0" maxOccurs="unbounded"/>
+			<!-- xs:IDREF -->
+			<xs:element ref="datamap:Property_Map_One2One_Name" minOccurs="0" maxOccurs="unbounded"/>
 			<!-- xs:IDREF -->
 			<xs:element ref="datamap:Property_Map_Gap_Name" minOccurs="0" maxOccurs="unbounded"/>
 			<!-- xs:IDREF -->
 			<xs:element ref="datamap:Property_Map_Transformation_Name" minOccurs="0" maxOccurs="unbounded"/>
-			<!-- xs:IDREF -->
-			<xs:element ref="datamap:Property_Map_Combination_Name" minOccurs="0" maxOccurs="unbounded"/>
-			<!-- xs:IDREF -->
 		</xs:sequence>
 	</xs:group>
 	<!-- component mapping rule 1: one to one mapping -->
 	<!-- map one component to another one -->
-	<xs:complexType name="Component_Map_One2one">
+	<xs:complexType name="Component_Map_One2One">
 		<xs:sequence>
 			<xs:element ref="datamap:Description" minOccurs="0"/>
 			<xs:element ref="datamap:SourceComponentName"/>
@@ -290,14 +265,14 @@
 			<xs:element ref="datamap:Description" minOccurs="0" maxOccurs="1"/>
 			<xs:element ref="datamap:TargetComponentName" minOccurs="1" maxOccurs="1"/>
 			<xs:element ref="datamap:TargetLocation" minOccurs="0" maxOccurs="1"/>
+			<!-- if not declared in XML, use default property values of the target library -->
 			<xs:group ref="datamap:Property_Map_Rules" minOccurs="0" maxOccurs="1"/>
-			<!-- when not declared in XML, use default property values of the target library -->
 		</xs:sequence>
 		<xs:attribute name="RefId" type="xs:ID" use="required"/>
 	</xs:complexType>
-	<!-- component mapping rule 3: one to many mapping -->
+	<!-- component mapping rule 2: one to many mapping -->
 	<!-- map one component to multiple components -->
-	<xs:complexType name="Component_Map_Many2Many">
+	<xs:complexType name="Component_Map_One2Many">
 		<xs:sequence>
 			<xs:element ref="datamap:Description" minOccurs="0" maxOccurs="1"/>
 			<xs:element ref="datamap:SourceComponentName" minOccurs="1" maxOccurs="1"/>
@@ -306,7 +281,7 @@
 		</xs:sequence>
 		<xs:attribute name="RefId" type="xs:ID" use="required"/>
 	</xs:complexType>
-	<!-- component mapping rule 4: Gap (add missing components) -->
+	<!-- component mapping rule 3: Gap (add missing components) -->
 	<!-- add a new component in target model: e.g., Modelica -->
 	<xs:complexType name="Component_Map_Gap">
 		<xs:sequence>
@@ -323,18 +298,17 @@
 	<!-- by a sequcence of mapping process stages -->
 	<xs:group name="Component_Map_Rules">
 		<xs:sequence>
-			<xs:element ref="datamap:Component_Map_One2one_Name" minOccurs="0" maxOccurs="unbounded"/>
 			<!-- xs:IDREF -->
-			<xs:element ref="datamap:Component_Map_Many2Many_Name" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="datamap:Component_Map_One2One_Name" minOccurs="0" maxOccurs="unbounded"/>
 			<!-- xs:IDREF -->
+			<xs:element ref="datamap:Component_Map_One2Many_Name" minOccurs="0" maxOccurs="unbounded"/>
 			<!-- xs:IDREF -->
 			<xs:element ref="datamap:Component_Map_Gap_Name" minOccurs="0" maxOccurs="unbounded"/>
-			<!-- xs:IDREF -->
 		</xs:sequence>
 	</xs:group>
 	<!-- data translation/mapping process defintion for different target Modelica libraries -->
 	<!-- contains: the target library name and its data mapping process -->
-	<xs:complexType name="Multiple_Library_Map">
+	<xs:complexType name="Library_Mapping_Rule">
 		<xs:sequence>
 			<xs:element ref="datamap:Description" minOccurs="0" maxOccurs="1"/>
 			<xs:element ref="datamap:TargetLibraryName" minOccurs="1" maxOccurs="1"/>
@@ -358,38 +332,34 @@
 	<!-- Id refers to the Property_Map_Transformation -->
 	<xs:element name="Property_Map_Transformation_Name" type="xs:IDREF"/>
 	<!-- an element of propetry mapping -->
-	<xs:element name="Property_Map_One2one" type="datamap:Property_Map_One2one"/>
-	<!-- Id refers to the Property_Map_One2one -->
-	<xs:element name="Property_Map_One2one_Name" type="xs:IDREF"/>
+	<xs:element name="Property_Map_One2One" type="datamap:Property_Map_One2One"/>
+	<!-- Id refers to the Property_Map_One2One -->
+	<xs:element name="Property_Map_One2One_Name" type="xs:IDREF"/>
 	<!-- an element of propetry mapping -->
 	<xs:element name="Property_Map_Gap" type="datamap:Property_Map_Gap"/>
 	<!-- Id refers to the Property_Map_Gap -->
 	<xs:element name="Property_Map_Gap_Name" type="xs:IDREF"/>
-	<!-- an element of propetry mapping -->
-	<xs:element name="Property_Map_Combination" type="datamap:Property_Map_Combination"/>
-	<!-- Id refers to the Property_Map_Combination -->
-	<xs:element name="Property_Map_Combination_Name" type="xs:IDREF"/>
 	<!-- an element of component mapping -->
-	<xs:element name="Component_Map_One2one" type="datamap:Component_Map_One2one"/>
-	<!-- Id refers to the Component_Map_One2one -->
-	<xs:element name="Component_Map_One2one_Name" type="xs:IDREF"/>
+	<xs:element name="Component_Map_One2One" type="datamap:Component_Map_One2One"/>
+	<!-- Id refers to the Component_Map_One2One -->
+	<xs:element name="Component_Map_One2One_Name" type="xs:IDREF"/>
 	<!-- an element of component mapping -->
 	<xs:element name="ComponentMappingGroup" type="datamap:ComponentMappingGroup"/>
 	<!-- Id refers to the ComponentMappingGroup -->
-	<xs:element name="ComponentMappingGroupName" type="datamap:RefString"/>
+	<xs:element name="ComponentMappingGroupName" type="xs:IDREF"/>
 	<!-- an element of component mapping -->
-	<xs:element name="Component_Map_Many2Many" type="datamap:Component_Map_Many2Many"/>
+	<xs:element name="Component_Map_One2Many" type="datamap:Component_Map_One2Many"/>
 	<!-- Id refers to the Component_Map_Many2Many -->
-	<xs:element name="Component_Map_Many2Many_Name" type="xs:IDREF"/>
+	<xs:element name="Component_Map_One2Many_Name" type="xs:IDREF"/>
 	<!-- an element of component mapping -->
 	<xs:element name="Component_Map_Gap" type="datamap:Component_Map_Gap"/>
 	<!-- Id refers to the Component_Map_Gap -->
 	<xs:element name="Component_Map_Gap_Name" type="xs:IDREF"/>
 	<!-- an element of data translation/mapping process defintion for different target Modelica libraries -->
-	<xs:element name="Multiple_Library_Map" type="datamap:Multiple_Library_Map"/>
+	<xs:element name="Library_Mapping_Rule" type="datamap:Library_Mapping_Rule"/>
 	<xs:element name="Data_Model_Map">
 		<xs:annotation>
-			<xs:documentation>XML representation of mapping rules between SimModel and differnt Modelica libraries. Divided in two different levels: First: Component, Second: Property</xs:documentation>
+			<xs:documentation>XML representation of mapping rules between SimModel and differnt Modelica libraries. Two different levels: First: Component mapping, Second: Property mapping</xs:documentation>
 		</xs:annotation>
 		<xs:complexType>
 			<xs:sequence>
@@ -398,18 +368,18 @@
 				<xs:element ref="datamap:InputCoefficient" minOccurs="0" maxOccurs="unbounded"/>
 				<xs:element ref="datamap:OutputParameter" minOccurs="0" maxOccurs="unbounded"/>
 				<!-- property mapping -->
-				<xs:element ref="datamap:Property_Map_One2one" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="datamap:Property_Map_One2One" minOccurs="0" maxOccurs="unbounded"/>
 				<xs:element ref="datamap:Property_Map_Gap" minOccurs="0" maxOccurs="unbounded"/>
-				<xs:element ref="datamap:Property_Map_Combination" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="datamap:Property_Map_Transformation" minOccurs="0" maxOccurs="unbounded"/>
 				<!-- component mapping -->
-				<xs:element ref="datamap:Component_Map_One2one" minOccurs="0" maxOccurs="unbounded"/>
-				<xs:element ref="datamap:Component_Map_Many2Many" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="datamap:Component_Map_One2One" minOccurs="0" maxOccurs="unbounded"/>
 				<xs:element ref="datamap:ComponentMappingGroup" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="datamap:Component_Map_One2Many" minOccurs="0" maxOccurs="unbounded"/>
 				<xs:element ref="datamap:Component_Map_Gap" minOccurs="0" maxOccurs="unbounded"/>
 				<!-- library mapping -->
-				<xs:element ref="datamap:Multiple_Library_Map" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="datamap:Library_Mapping_Rule"/>
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
-	<!--===================================ending=====================================-->
+	<!--===================================end=====================================-->
 </xs:schema>

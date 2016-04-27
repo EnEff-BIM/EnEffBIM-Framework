@@ -177,8 +177,8 @@ class SimTranslator(_object):
     def getSimHierarchy(self):
         return _SimModel_Translator.SimTranslator_getSimHierarchy(self)
 
-    def getSimMappedData(self):
-        return _SimModel_Translator.SimTranslator_getSimMappedData(self)
+    def getSimMappedData(self, _name):
+        return _SimModel_Translator.SimTranslator_getSimMappedData(self, _name)
 
     def __init__(self):
         this = _SimModel_Translator.new_SimTranslator()
