@@ -1,5 +1,5 @@
 # EnEff-BIM Framework
-Two sentences describing the aim of the Framework
+Mapping data from SimModel to Modelica
 
 ## Framework description
 Some more technical details
