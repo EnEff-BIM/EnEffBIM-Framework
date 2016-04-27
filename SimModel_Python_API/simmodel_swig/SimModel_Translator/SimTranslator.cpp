@@ -10,7 +10,7 @@
 	_simHierarchyObj.parser(SimModel_Data);
 
 	// translate SimModel data based on mapping rules
-	_simMappedDataObj.translator(_simHierarchyObj);
+	//_simMappedDataObj.translator(_simHierarchyObj);
 
 	// return SimXML data
 	return SimModel_Data;
@@ -23,7 +23,10 @@ SimHierarchy& SimTranslator::getSimHierarchy()
 }
 
 // get SimModel mapped data object
-SimMappedData& SimTranslator::getSimMappedData()
+SimMappedData& SimTranslator::getSimMappedData(std::string _name)
 {
+	// translate SimModel data based on mapping rules
+	_simMappedDataObj.translator(_simHierarchyObj);
+
 	return _simMappedDataObj;
 }

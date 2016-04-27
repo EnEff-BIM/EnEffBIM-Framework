@@ -20,7 +20,7 @@ public:
 	// get SimModel hierarchy object
 	SimHierarchy& getSimHierarchy();
 	// get SimModel mapped data object
-	SimMappedData& getSimMappedData();
+	SimMappedData& getSimMappedData(std::string _name);
 };
 
 #endif // SIM_TRANSLATOR_H

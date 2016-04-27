@@ -75,13 +75,52 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <AdditionalLibraryDirectories>C:\Python34_4\libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>xerces-c_3.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="mapping_rule_lib\ComponentMappingGroup.hxx" />
+    <ClInclude Include="mapping_rule_lib\Component_Map_Gap.hxx" />
+    <ClInclude Include="mapping_rule_lib\Component_Map_One2Many.hxx" />
+    <ClInclude Include="mapping_rule_lib\Component_Map_One2One.hxx" />
+    <ClInclude Include="mapping_rule_lib\Data_Model_Map.hxx" />
+    <ClInclude Include="mapping_rule_lib\IdList.hxx" />
+    <ClInclude Include="mapping_rule_lib\InputCoefficient.hxx" />
+    <ClInclude Include="mapping_rule_lib\InputParameter.hxx" />
+    <ClInclude Include="mapping_rule_lib\Library_Mapping_Rule.hxx" />
+    <ClInclude Include="mapping_rule_lib\mapping_rule_schema.hxx" />
+    <ClInclude Include="mapping_rule_lib\Map_DoubleList.hxx" />
+    <ClInclude Include="mapping_rule_lib\OutputParameter.hxx" />
+    <ClInclude Include="mapping_rule_lib\Property_Map_Gap.hxx" />
+    <ClInclude Include="mapping_rule_lib\Property_Map_One2One.hxx" />
+    <ClInclude Include="mapping_rule_lib\Property_Map_Transformation.hxx" />
+    <ClInclude Include="mapping_rule_lib\RefString.hxx" />
+    <ClInclude Include="mapping_rule_lib\RefStringList.hxx" />
+    <ClInclude Include="mapping_rule_lib\StringList.hxx" />
+    <ClInclude Include="mapping_rule_lib\ValueType.hxx" />
     <ClInclude Include="SimMapping.h" />
     <ClInclude Include="SimMapping_wrap.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="mapping_rule_lib\ComponentMappingGroup.cxx" />
+    <ClCompile Include="mapping_rule_lib\Component_Map_Gap.cxx" />
+    <ClCompile Include="mapping_rule_lib\Component_Map_One2Many.cxx" />
+    <ClCompile Include="mapping_rule_lib\Component_Map_One2One.cxx" />
+    <ClCompile Include="mapping_rule_lib\Data_Model_Map.cxx" />
+    <ClCompile Include="mapping_rule_lib\IdList.cxx" />
+    <ClCompile Include="mapping_rule_lib\InputCoefficient.cxx" />
+    <ClCompile Include="mapping_rule_lib\InputParameter.cxx" />
+    <ClCompile Include="mapping_rule_lib\Library_Mapping_Rule.cxx" />
+    <ClCompile Include="mapping_rule_lib\mapping_rule_schema.cxx" />
+    <ClCompile Include="mapping_rule_lib\Map_DoubleList.cxx" />
+    <ClCompile Include="mapping_rule_lib\OutputParameter.cxx" />
+    <ClCompile Include="mapping_rule_lib\Property_Map_Gap.cxx" />
+    <ClCompile Include="mapping_rule_lib\Property_Map_One2One.cxx" />
+    <ClCompile Include="mapping_rule_lib\Property_Map_Transformation.cxx" />
+    <ClCompile Include="mapping_rule_lib\RefString.cxx" />
+    <ClCompile Include="mapping_rule_lib\RefStringList.cxx" />
+    <ClCompile Include="mapping_rule_lib\StringList.cxx" />
+    <ClCompile Include="mapping_rule_lib\ValueType.cxx" />
     <ClCompile Include="SimMapping.cpp" />
     <ClCompile Include="SimMapping_wrap.cxx" />
   </ItemGroup>

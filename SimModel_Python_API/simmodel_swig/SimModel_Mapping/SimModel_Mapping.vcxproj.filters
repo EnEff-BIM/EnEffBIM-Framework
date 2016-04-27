@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="mapping_rule_lib">
+      <UniqueIdentifier>{ecbffd3e-92de-4f57-8983-19262dce693c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SimMapping.h">
@@ -21,6 +24,63 @@
     <ClInclude Include="SimMapping_wrap.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="mapping_rule_lib\Component_Map_Gap.hxx">
+      <Filter>mapping_rule_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="mapping_rule_lib\Component_Map_One2Many.hxx">
+      <Filter>mapping_rule_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="mapping_rule_lib\Component_Map_One2One.hxx">
+      <Filter>mapping_rule_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="mapping_rule_lib\ComponentMappingGroup.hxx">
+      <Filter>mapping_rule_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="mapping_rule_lib\Data_Model_Map.hxx">
+      <Filter>mapping_rule_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="mapping_rule_lib\IdList.hxx">
+      <Filter>mapping_rule_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="mapping_rule_lib\InputCoefficient.hxx">
+      <Filter>mapping_rule_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="mapping_rule_lib\InputParameter.hxx">
+      <Filter>mapping_rule_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="mapping_rule_lib\Library_Mapping_Rule.hxx">
+      <Filter>mapping_rule_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="mapping_rule_lib\Map_DoubleList.hxx">
+      <Filter>mapping_rule_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="mapping_rule_lib\mapping_rule_schema.hxx">
+      <Filter>mapping_rule_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="mapping_rule_lib\OutputParameter.hxx">
+      <Filter>mapping_rule_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="mapping_rule_lib\Property_Map_Gap.hxx">
+      <Filter>mapping_rule_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="mapping_rule_lib\Property_Map_One2One.hxx">
+      <Filter>mapping_rule_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="mapping_rule_lib\Property_Map_Transformation.hxx">
+      <Filter>mapping_rule_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="mapping_rule_lib\RefString.hxx">
+      <Filter>mapping_rule_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="mapping_rule_lib\RefStringList.hxx">
+      <Filter>mapping_rule_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="mapping_rule_lib\StringList.hxx">
+      <Filter>mapping_rule_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="mapping_rule_lib\ValueType.hxx">
+      <Filter>mapping_rule_lib</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="SimMapping.cpp">
@@ -28,6 +88,63 @@
     </ClCompile>
     <ClCompile Include="SimMapping_wrap.cxx">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mapping_rule_lib\Component_Map_Gap.cxx">
+      <Filter>mapping_rule_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="mapping_rule_lib\Component_Map_One2Many.cxx">
+      <Filter>mapping_rule_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="mapping_rule_lib\Component_Map_One2One.cxx">
+      <Filter>mapping_rule_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="mapping_rule_lib\ComponentMappingGroup.cxx">
+      <Filter>mapping_rule_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="mapping_rule_lib\Data_Model_Map.cxx">
+      <Filter>mapping_rule_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="mapping_rule_lib\IdList.cxx">
+      <Filter>mapping_rule_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="mapping_rule_lib\InputCoefficient.cxx">
+      <Filter>mapping_rule_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="mapping_rule_lib\InputParameter.cxx">
+      <Filter>mapping_rule_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="mapping_rule_lib\Library_Mapping_Rule.cxx">
+      <Filter>mapping_rule_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="mapping_rule_lib\Map_DoubleList.cxx">
+      <Filter>mapping_rule_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="mapping_rule_lib\mapping_rule_schema.cxx">
+      <Filter>mapping_rule_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="mapping_rule_lib\OutputParameter.cxx">
+      <Filter>mapping_rule_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="mapping_rule_lib\Property_Map_Gap.cxx">
+      <Filter>mapping_rule_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="mapping_rule_lib\Property_Map_One2One.cxx">
+      <Filter>mapping_rule_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="mapping_rule_lib\Property_Map_Transformation.cxx">
+      <Filter>mapping_rule_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="mapping_rule_lib\RefString.cxx">
+      <Filter>mapping_rule_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="mapping_rule_lib\RefStringList.cxx">
+      <Filter>mapping_rule_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="mapping_rule_lib\StringList.cxx">
+      <Filter>mapping_rule_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="mapping_rule_lib\ValueType.cxx">
+      <Filter>mapping_rule_lib</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
