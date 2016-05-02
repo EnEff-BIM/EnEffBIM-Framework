@@ -335,18 +335,18 @@ namespace namespaces
       // Parse a URI or a local file.
       //
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       Description (const ::std::string& uri,
                    ::xml_schema::flags f = 0,
                    const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       Description (const ::std::string& uri,
                    ::xml_schema::error_handler& eh,
                    ::xml_schema::flags f = 0,
                    const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       Description (const ::std::string& uri,
                    ::xercesc::DOMErrorHandler& eh,
                    ::xml_schema::flags f = 0,
@@ -355,37 +355,37 @@ namespace namespaces
       // Parse std::istream.
       //
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       Description (::std::istream& is,
                    ::xml_schema::flags f = 0,
                    const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       Description (::std::istream& is,
                    ::xml_schema::error_handler& eh,
                    ::xml_schema::flags f = 0,
                    const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       Description (::std::istream& is,
                    ::xercesc::DOMErrorHandler& eh,
                    ::xml_schema::flags f = 0,
                    const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       Description (::std::istream& is,
                    const ::std::string& id,
                    ::xml_schema::flags f = 0,
                    const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       Description (::std::istream& is,
                    const ::std::string& id,
                    ::xml_schema::error_handler& eh,
                    ::xml_schema::flags f = 0,
                    const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       Description (::std::istream& is,
                    const ::std::string& id,
                    ::xercesc::DOMErrorHandler& eh,
@@ -395,18 +395,18 @@ namespace namespaces
       // Parse xercesc::InputSource.
       //
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       Description (::xercesc::InputSource& is,
                    ::xml_schema::flags f = 0,
                    const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       Description (::xercesc::InputSource& is,
                    ::xml_schema::error_handler& eh,
                    ::xml_schema::flags f = 0,
                    const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       Description (::xercesc::InputSource& is,
                    ::xercesc::DOMErrorHandler& eh,
                    ::xml_schema::flags f = 0,
@@ -415,12 +415,12 @@ namespace namespaces
       // Parse xercesc::DOMDocument.
       //
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       Description (const ::xercesc::DOMDocument& d,
                    ::xml_schema::flags f = 0,
                    const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       Description (::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d,
                    ::xml_schema::flags f = 0,
                    const ::xml_schema::properties& p = ::xml_schema::properties ());
@@ -428,18 +428,18 @@ namespace namespaces
       // Parse a URI or a local file.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
       ParameterName (const ::std::string& uri,
                      ::xml_schema::flags f = 0,
                      const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
       ParameterName (const ::std::string& uri,
                      ::xml_schema::error_handler& eh,
                      ::xml_schema::flags f = 0,
                      const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
       ParameterName (const ::std::string& uri,
                      ::xercesc::DOMErrorHandler& eh,
                      ::xml_schema::flags f = 0,
@@ -448,37 +448,37 @@ namespace namespaces
       // Parse std::istream.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
       ParameterName (::std::istream& is,
                      ::xml_schema::flags f = 0,
                      const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
       ParameterName (::std::istream& is,
                      ::xml_schema::error_handler& eh,
                      ::xml_schema::flags f = 0,
                      const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
       ParameterName (::std::istream& is,
                      ::xercesc::DOMErrorHandler& eh,
                      ::xml_schema::flags f = 0,
                      const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
       ParameterName (::std::istream& is,
                      const ::std::string& id,
                      ::xml_schema::flags f = 0,
                      const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
       ParameterName (::std::istream& is,
                      const ::std::string& id,
                      ::xml_schema::error_handler& eh,
                      ::xml_schema::flags f = 0,
                      const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
       ParameterName (::std::istream& is,
                      const ::std::string& id,
                      ::xercesc::DOMErrorHandler& eh,
@@ -488,18 +488,18 @@ namespace namespaces
       // Parse xercesc::InputSource.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
       ParameterName (::xercesc::InputSource& is,
                      ::xml_schema::flags f = 0,
                      const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
       ParameterName (::xercesc::InputSource& is,
                      ::xml_schema::error_handler& eh,
                      ::xml_schema::flags f = 0,
                      const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
       ParameterName (::xercesc::InputSource& is,
                      ::xercesc::DOMErrorHandler& eh,
                      ::xml_schema::flags f = 0,
@@ -508,12 +508,12 @@ namespace namespaces
       // Parse xercesc::DOMDocument.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
       ParameterName (const ::xercesc::DOMDocument& d,
                      ::xml_schema::flags f = 0,
                      const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
       ParameterName (::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d,
                      ::xml_schema::flags f = 0,
                      const ::xml_schema::properties& p = ::xml_schema::properties ());
@@ -521,18 +521,18 @@ namespace namespaces
       // Parse a URI or a local file.
       //
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       CoefficientName (const ::std::string& uri,
                        ::xml_schema::flags f = 0,
                        const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       CoefficientName (const ::std::string& uri,
                        ::xml_schema::error_handler& eh,
                        ::xml_schema::flags f = 0,
                        const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       CoefficientName (const ::std::string& uri,
                        ::xercesc::DOMErrorHandler& eh,
                        ::xml_schema::flags f = 0,
@@ -541,37 +541,37 @@ namespace namespaces
       // Parse std::istream.
       //
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       CoefficientName (::std::istream& is,
                        ::xml_schema::flags f = 0,
                        const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       CoefficientName (::std::istream& is,
                        ::xml_schema::error_handler& eh,
                        ::xml_schema::flags f = 0,
                        const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       CoefficientName (::std::istream& is,
                        ::xercesc::DOMErrorHandler& eh,
                        ::xml_schema::flags f = 0,
                        const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       CoefficientName (::std::istream& is,
                        const ::std::string& id,
                        ::xml_schema::flags f = 0,
                        const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       CoefficientName (::std::istream& is,
                        const ::std::string& id,
                        ::xml_schema::error_handler& eh,
                        ::xml_schema::flags f = 0,
                        const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       CoefficientName (::std::istream& is,
                        const ::std::string& id,
                        ::xercesc::DOMErrorHandler& eh,
@@ -581,18 +581,18 @@ namespace namespaces
       // Parse xercesc::InputSource.
       //
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       CoefficientName (::xercesc::InputSource& is,
                        ::xml_schema::flags f = 0,
                        const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       CoefficientName (::xercesc::InputSource& is,
                        ::xml_schema::error_handler& eh,
                        ::xml_schema::flags f = 0,
                        const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       CoefficientName (::xercesc::InputSource& is,
                        ::xercesc::DOMErrorHandler& eh,
                        ::xml_schema::flags f = 0,
@@ -601,12 +601,12 @@ namespace namespaces
       // Parse xercesc::DOMDocument.
       //
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       CoefficientName (const ::xercesc::DOMDocument& d,
                        ::xml_schema::flags f = 0,
                        const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       CoefficientName (::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d,
                        ::xml_schema::flags f = 0,
                        const ::xml_schema::properties& p = ::xml_schema::properties ());
@@ -614,18 +614,18 @@ namespace namespaces
       // Parse a URI or a local file.
       //
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       TargetPropertyName (const ::std::string& uri,
                           ::xml_schema::flags f = 0,
                           const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       TargetPropertyName (const ::std::string& uri,
                           ::xml_schema::error_handler& eh,
                           ::xml_schema::flags f = 0,
                           const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       TargetPropertyName (const ::std::string& uri,
                           ::xercesc::DOMErrorHandler& eh,
                           ::xml_schema::flags f = 0,
@@ -634,37 +634,37 @@ namespace namespaces
       // Parse std::istream.
       //
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       TargetPropertyName (::std::istream& is,
                           ::xml_schema::flags f = 0,
                           const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       TargetPropertyName (::std::istream& is,
                           ::xml_schema::error_handler& eh,
                           ::xml_schema::flags f = 0,
                           const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       TargetPropertyName (::std::istream& is,
                           ::xercesc::DOMErrorHandler& eh,
                           ::xml_schema::flags f = 0,
                           const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       TargetPropertyName (::std::istream& is,
                           const ::std::string& id,
                           ::xml_schema::flags f = 0,
                           const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       TargetPropertyName (::std::istream& is,
                           const ::std::string& id,
                           ::xml_schema::error_handler& eh,
                           ::xml_schema::flags f = 0,
                           const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       TargetPropertyName (::std::istream& is,
                           const ::std::string& id,
                           ::xercesc::DOMErrorHandler& eh,
@@ -674,18 +674,18 @@ namespace namespaces
       // Parse xercesc::InputSource.
       //
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       TargetPropertyName (::xercesc::InputSource& is,
                           ::xml_schema::flags f = 0,
                           const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       TargetPropertyName (::xercesc::InputSource& is,
                           ::xml_schema::error_handler& eh,
                           ::xml_schema::flags f = 0,
                           const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       TargetPropertyName (::xercesc::InputSource& is,
                           ::xercesc::DOMErrorHandler& eh,
                           ::xml_schema::flags f = 0,
@@ -694,12 +694,12 @@ namespace namespaces
       // Parse xercesc::DOMDocument.
       //
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       TargetPropertyName (const ::xercesc::DOMDocument& d,
                           ::xml_schema::flags f = 0,
                           const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       TargetPropertyName (::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d,
                           ::xml_schema::flags f = 0,
                           const ::xml_schema::properties& p = ::xml_schema::properties ());
@@ -707,18 +707,18 @@ namespace namespaces
       // Parse a URI or a local file.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::RefStringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::RefStringList >
       TargetPropertyNameList (const ::std::string& uri,
                               ::xml_schema::flags f = 0,
                               const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::RefStringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::RefStringList >
       TargetPropertyNameList (const ::std::string& uri,
                               ::xml_schema::error_handler& eh,
                               ::xml_schema::flags f = 0,
                               const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::RefStringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::RefStringList >
       TargetPropertyNameList (const ::std::string& uri,
                               ::xercesc::DOMErrorHandler& eh,
                               ::xml_schema::flags f = 0,
@@ -727,37 +727,37 @@ namespace namespaces
       // Parse std::istream.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::RefStringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::RefStringList >
       TargetPropertyNameList (::std::istream& is,
                               ::xml_schema::flags f = 0,
                               const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::RefStringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::RefStringList >
       TargetPropertyNameList (::std::istream& is,
                               ::xml_schema::error_handler& eh,
                               ::xml_schema::flags f = 0,
                               const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::RefStringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::RefStringList >
       TargetPropertyNameList (::std::istream& is,
                               ::xercesc::DOMErrorHandler& eh,
                               ::xml_schema::flags f = 0,
                               const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::RefStringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::RefStringList >
       TargetPropertyNameList (::std::istream& is,
                               const ::std::string& id,
                               ::xml_schema::flags f = 0,
                               const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::RefStringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::RefStringList >
       TargetPropertyNameList (::std::istream& is,
                               const ::std::string& id,
                               ::xml_schema::error_handler& eh,
                               ::xml_schema::flags f = 0,
                               const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::RefStringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::RefStringList >
       TargetPropertyNameList (::std::istream& is,
                               const ::std::string& id,
                               ::xercesc::DOMErrorHandler& eh,
@@ -767,18 +767,18 @@ namespace namespaces
       // Parse xercesc::InputSource.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::RefStringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::RefStringList >
       TargetPropertyNameList (::xercesc::InputSource& is,
                               ::xml_schema::flags f = 0,
                               const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::RefStringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::RefStringList >
       TargetPropertyNameList (::xercesc::InputSource& is,
                               ::xml_schema::error_handler& eh,
                               ::xml_schema::flags f = 0,
                               const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::RefStringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::RefStringList >
       TargetPropertyNameList (::xercesc::InputSource& is,
                               ::xercesc::DOMErrorHandler& eh,
                               ::xml_schema::flags f = 0,
@@ -787,12 +787,12 @@ namespace namespaces
       // Parse xercesc::DOMDocument.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::RefStringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::RefStringList >
       TargetPropertyNameList (const ::xercesc::DOMDocument& d,
                               ::xml_schema::flags f = 0,
                               const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::RefStringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::RefStringList >
       TargetPropertyNameList (::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d,
                               ::xml_schema::flags f = 0,
                               const ::xml_schema::properties& p = ::xml_schema::properties ());
@@ -800,18 +800,18 @@ namespace namespaces
       // Parse a URI or a local file.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::RefString >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::RefString >
       SourceComponentName (const ::std::string& uri,
                            ::xml_schema::flags f = 0,
                            const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::RefString >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::RefString >
       SourceComponentName (const ::std::string& uri,
                            ::xml_schema::error_handler& eh,
                            ::xml_schema::flags f = 0,
                            const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::RefString >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::RefString >
       SourceComponentName (const ::std::string& uri,
                            ::xercesc::DOMErrorHandler& eh,
                            ::xml_schema::flags f = 0,
@@ -820,37 +820,37 @@ namespace namespaces
       // Parse std::istream.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::RefString >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::RefString >
       SourceComponentName (::std::istream& is,
                            ::xml_schema::flags f = 0,
                            const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::RefString >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::RefString >
       SourceComponentName (::std::istream& is,
                            ::xml_schema::error_handler& eh,
                            ::xml_schema::flags f = 0,
                            const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::RefString >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::RefString >
       SourceComponentName (::std::istream& is,
                            ::xercesc::DOMErrorHandler& eh,
                            ::xml_schema::flags f = 0,
                            const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::RefString >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::RefString >
       SourceComponentName (::std::istream& is,
                            const ::std::string& id,
                            ::xml_schema::flags f = 0,
                            const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::RefString >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::RefString >
       SourceComponentName (::std::istream& is,
                            const ::std::string& id,
                            ::xml_schema::error_handler& eh,
                            ::xml_schema::flags f = 0,
                            const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::RefString >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::RefString >
       SourceComponentName (::std::istream& is,
                            const ::std::string& id,
                            ::xercesc::DOMErrorHandler& eh,
@@ -860,18 +860,18 @@ namespace namespaces
       // Parse xercesc::InputSource.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::RefString >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::RefString >
       SourceComponentName (::xercesc::InputSource& is,
                            ::xml_schema::flags f = 0,
                            const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::RefString >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::RefString >
       SourceComponentName (::xercesc::InputSource& is,
                            ::xml_schema::error_handler& eh,
                            ::xml_schema::flags f = 0,
                            const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::RefString >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::RefString >
       SourceComponentName (::xercesc::InputSource& is,
                            ::xercesc::DOMErrorHandler& eh,
                            ::xml_schema::flags f = 0,
@@ -880,12 +880,12 @@ namespace namespaces
       // Parse xercesc::DOMDocument.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::RefString >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::RefString >
       SourceComponentName (const ::xercesc::DOMDocument& d,
                            ::xml_schema::flags f = 0,
                            const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::RefString >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::RefString >
       SourceComponentName (::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d,
                            ::xml_schema::flags f = 0,
                            const ::xml_schema::properties& p = ::xml_schema::properties ());
@@ -893,18 +893,18 @@ namespace namespaces
       // Parse a URI or a local file.
       //
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       TargetComponentName (const ::std::string& uri,
                            ::xml_schema::flags f = 0,
                            const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       TargetComponentName (const ::std::string& uri,
                            ::xml_schema::error_handler& eh,
                            ::xml_schema::flags f = 0,
                            const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       TargetComponentName (const ::std::string& uri,
                            ::xercesc::DOMErrorHandler& eh,
                            ::xml_schema::flags f = 0,
@@ -913,37 +913,37 @@ namespace namespaces
       // Parse std::istream.
       //
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       TargetComponentName (::std::istream& is,
                            ::xml_schema::flags f = 0,
                            const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       TargetComponentName (::std::istream& is,
                            ::xml_schema::error_handler& eh,
                            ::xml_schema::flags f = 0,
                            const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       TargetComponentName (::std::istream& is,
                            ::xercesc::DOMErrorHandler& eh,
                            ::xml_schema::flags f = 0,
                            const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       TargetComponentName (::std::istream& is,
                            const ::std::string& id,
                            ::xml_schema::flags f = 0,
                            const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       TargetComponentName (::std::istream& is,
                            const ::std::string& id,
                            ::xml_schema::error_handler& eh,
                            ::xml_schema::flags f = 0,
                            const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       TargetComponentName (::std::istream& is,
                            const ::std::string& id,
                            ::xercesc::DOMErrorHandler& eh,
@@ -953,18 +953,18 @@ namespace namespaces
       // Parse xercesc::InputSource.
       //
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       TargetComponentName (::xercesc::InputSource& is,
                            ::xml_schema::flags f = 0,
                            const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       TargetComponentName (::xercesc::InputSource& is,
                            ::xml_schema::error_handler& eh,
                            ::xml_schema::flags f = 0,
                            const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       TargetComponentName (::xercesc::InputSource& is,
                            ::xercesc::DOMErrorHandler& eh,
                            ::xml_schema::flags f = 0,
@@ -973,12 +973,12 @@ namespace namespaces
       // Parse xercesc::DOMDocument.
       //
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       TargetComponentName (const ::xercesc::DOMDocument& d,
                            ::xml_schema::flags f = 0,
                            const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       TargetComponentName (::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d,
                            ::xml_schema::flags f = 0,
                            const ::xml_schema::properties& p = ::xml_schema::properties ());
@@ -986,18 +986,18 @@ namespace namespaces
       // Parse a URI or a local file.
       //
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       TargetLibraryName (const ::std::string& uri,
                          ::xml_schema::flags f = 0,
                          const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       TargetLibraryName (const ::std::string& uri,
                          ::xml_schema::error_handler& eh,
                          ::xml_schema::flags f = 0,
                          const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       TargetLibraryName (const ::std::string& uri,
                          ::xercesc::DOMErrorHandler& eh,
                          ::xml_schema::flags f = 0,
@@ -1006,37 +1006,37 @@ namespace namespaces
       // Parse std::istream.
       //
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       TargetLibraryName (::std::istream& is,
                          ::xml_schema::flags f = 0,
                          const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       TargetLibraryName (::std::istream& is,
                          ::xml_schema::error_handler& eh,
                          ::xml_schema::flags f = 0,
                          const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       TargetLibraryName (::std::istream& is,
                          ::xercesc::DOMErrorHandler& eh,
                          ::xml_schema::flags f = 0,
                          const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       TargetLibraryName (::std::istream& is,
                          const ::std::string& id,
                          ::xml_schema::flags f = 0,
                          const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       TargetLibraryName (::std::istream& is,
                          const ::std::string& id,
                          ::xml_schema::error_handler& eh,
                          ::xml_schema::flags f = 0,
                          const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       TargetLibraryName (::std::istream& is,
                          const ::std::string& id,
                          ::xercesc::DOMErrorHandler& eh,
@@ -1046,18 +1046,18 @@ namespace namespaces
       // Parse xercesc::InputSource.
       //
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       TargetLibraryName (::xercesc::InputSource& is,
                          ::xml_schema::flags f = 0,
                          const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       TargetLibraryName (::xercesc::InputSource& is,
                          ::xml_schema::error_handler& eh,
                          ::xml_schema::flags f = 0,
                          const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       TargetLibraryName (::xercesc::InputSource& is,
                          ::xercesc::DOMErrorHandler& eh,
                          ::xml_schema::flags f = 0,
@@ -1066,12 +1066,12 @@ namespace namespaces
       // Parse xercesc::DOMDocument.
       //
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       TargetLibraryName (const ::xercesc::DOMDocument& d,
                          ::xml_schema::flags f = 0,
                          const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       TargetLibraryName (::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d,
                          ::xml_schema::flags f = 0,
                          const ::xml_schema::properties& p = ::xml_schema::properties ());
@@ -1079,18 +1079,18 @@ namespace namespaces
       // Parse a URI or a local file.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
       TargetLocation (const ::std::string& uri,
                       ::xml_schema::flags f = 0,
                       const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
       TargetLocation (const ::std::string& uri,
                       ::xml_schema::error_handler& eh,
                       ::xml_schema::flags f = 0,
                       const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
       TargetLocation (const ::std::string& uri,
                       ::xercesc::DOMErrorHandler& eh,
                       ::xml_schema::flags f = 0,
@@ -1099,37 +1099,37 @@ namespace namespaces
       // Parse std::istream.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
       TargetLocation (::std::istream& is,
                       ::xml_schema::flags f = 0,
                       const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
       TargetLocation (::std::istream& is,
                       ::xml_schema::error_handler& eh,
                       ::xml_schema::flags f = 0,
                       const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
       TargetLocation (::std::istream& is,
                       ::xercesc::DOMErrorHandler& eh,
                       ::xml_schema::flags f = 0,
                       const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
       TargetLocation (::std::istream& is,
                       const ::std::string& id,
                       ::xml_schema::flags f = 0,
                       const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
       TargetLocation (::std::istream& is,
                       const ::std::string& id,
                       ::xml_schema::error_handler& eh,
                       ::xml_schema::flags f = 0,
                       const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
       TargetLocation (::std::istream& is,
                       const ::std::string& id,
                       ::xercesc::DOMErrorHandler& eh,
@@ -1139,18 +1139,18 @@ namespace namespaces
       // Parse xercesc::InputSource.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
       TargetLocation (::xercesc::InputSource& is,
                       ::xml_schema::flags f = 0,
                       const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
       TargetLocation (::xercesc::InputSource& is,
                       ::xml_schema::error_handler& eh,
                       ::xml_schema::flags f = 0,
                       const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
       TargetLocation (::xercesc::InputSource& is,
                       ::xercesc::DOMErrorHandler& eh,
                       ::xml_schema::flags f = 0,
@@ -1159,12 +1159,12 @@ namespace namespaces
       // Parse xercesc::DOMDocument.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
       TargetLocation (const ::xercesc::DOMDocument& d,
                       ::xml_schema::flags f = 0,
                       const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
       TargetLocation (::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d,
                       ::xml_schema::flags f = 0,
                       const ::xml_schema::properties& p = ::xml_schema::properties ());
@@ -1172,18 +1172,18 @@ namespace namespaces
       // Parse a URI or a local file.
       //
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       RecordInstance (const ::std::string& uri,
                       ::xml_schema::flags f = 0,
                       const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       RecordInstance (const ::std::string& uri,
                       ::xml_schema::error_handler& eh,
                       ::xml_schema::flags f = 0,
                       const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       RecordInstance (const ::std::string& uri,
                       ::xercesc::DOMErrorHandler& eh,
                       ::xml_schema::flags f = 0,
@@ -1192,37 +1192,37 @@ namespace namespaces
       // Parse std::istream.
       //
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       RecordInstance (::std::istream& is,
                       ::xml_schema::flags f = 0,
                       const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       RecordInstance (::std::istream& is,
                       ::xml_schema::error_handler& eh,
                       ::xml_schema::flags f = 0,
                       const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       RecordInstance (::std::istream& is,
                       ::xercesc::DOMErrorHandler& eh,
                       ::xml_schema::flags f = 0,
                       const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       RecordInstance (::std::istream& is,
                       const ::std::string& id,
                       ::xml_schema::flags f = 0,
                       const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       RecordInstance (::std::istream& is,
                       const ::std::string& id,
                       ::xml_schema::error_handler& eh,
                       ::xml_schema::flags f = 0,
                       const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       RecordInstance (::std::istream& is,
                       const ::std::string& id,
                       ::xercesc::DOMErrorHandler& eh,
@@ -1232,18 +1232,18 @@ namespace namespaces
       // Parse xercesc::InputSource.
       //
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       RecordInstance (::xercesc::InputSource& is,
                       ::xml_schema::flags f = 0,
                       const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       RecordInstance (::xercesc::InputSource& is,
                       ::xml_schema::error_handler& eh,
                       ::xml_schema::flags f = 0,
                       const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       RecordInstance (::xercesc::InputSource& is,
                       ::xercesc::DOMErrorHandler& eh,
                       ::xml_schema::flags f = 0,
@@ -1252,12 +1252,12 @@ namespace namespaces
       // Parse xercesc::DOMDocument.
       //
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       RecordInstance (const ::xercesc::DOMDocument& d,
                       ::xml_schema::flags f = 0,
                       const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       RecordInstance (::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d,
                       ::xml_schema::flags f = 0,
                       const ::xml_schema::properties& p = ::xml_schema::properties ());
@@ -1265,18 +1265,18 @@ namespace namespaces
       // Parse a URI or a local file.
       //
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       RecordInstanceLocation (const ::std::string& uri,
                               ::xml_schema::flags f = 0,
                               const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       RecordInstanceLocation (const ::std::string& uri,
                               ::xml_schema::error_handler& eh,
                               ::xml_schema::flags f = 0,
                               const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       RecordInstanceLocation (const ::std::string& uri,
                               ::xercesc::DOMErrorHandler& eh,
                               ::xml_schema::flags f = 0,
@@ -1285,37 +1285,37 @@ namespace namespaces
       // Parse std::istream.
       //
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       RecordInstanceLocation (::std::istream& is,
                               ::xml_schema::flags f = 0,
                               const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       RecordInstanceLocation (::std::istream& is,
                               ::xml_schema::error_handler& eh,
                               ::xml_schema::flags f = 0,
                               const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       RecordInstanceLocation (::std::istream& is,
                               ::xercesc::DOMErrorHandler& eh,
                               ::xml_schema::flags f = 0,
                               const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       RecordInstanceLocation (::std::istream& is,
                               const ::std::string& id,
                               ::xml_schema::flags f = 0,
                               const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       RecordInstanceLocation (::std::istream& is,
                               const ::std::string& id,
                               ::xml_schema::error_handler& eh,
                               ::xml_schema::flags f = 0,
                               const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       RecordInstanceLocation (::std::istream& is,
                               const ::std::string& id,
                               ::xercesc::DOMErrorHandler& eh,
@@ -1325,18 +1325,18 @@ namespace namespaces
       // Parse xercesc::InputSource.
       //
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       RecordInstanceLocation (::xercesc::InputSource& is,
                               ::xml_schema::flags f = 0,
                               const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       RecordInstanceLocation (::xercesc::InputSource& is,
                               ::xml_schema::error_handler& eh,
                               ::xml_schema::flags f = 0,
                               const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       RecordInstanceLocation (::xercesc::InputSource& is,
                               ::xercesc::DOMErrorHandler& eh,
                               ::xml_schema::flags f = 0,
@@ -1345,12 +1345,12 @@ namespace namespaces
       // Parse xercesc::DOMDocument.
       //
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       RecordInstanceLocation (const ::xercesc::DOMDocument& d,
                               ::xml_schema::flags f = 0,
                               const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       RecordInstanceLocation (::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d,
                               ::xml_schema::flags f = 0,
                               const ::xml_schema::properties& p = ::xml_schema::properties ());
@@ -1358,18 +1358,18 @@ namespace namespaces
       // Parse a URI or a local file.
       //
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       RecordLocation (const ::std::string& uri,
                       ::xml_schema::flags f = 0,
                       const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       RecordLocation (const ::std::string& uri,
                       ::xml_schema::error_handler& eh,
                       ::xml_schema::flags f = 0,
                       const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       RecordLocation (const ::std::string& uri,
                       ::xercesc::DOMErrorHandler& eh,
                       ::xml_schema::flags f = 0,
@@ -1378,37 +1378,37 @@ namespace namespaces
       // Parse std::istream.
       //
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       RecordLocation (::std::istream& is,
                       ::xml_schema::flags f = 0,
                       const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       RecordLocation (::std::istream& is,
                       ::xml_schema::error_handler& eh,
                       ::xml_schema::flags f = 0,
                       const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       RecordLocation (::std::istream& is,
                       ::xercesc::DOMErrorHandler& eh,
                       ::xml_schema::flags f = 0,
                       const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       RecordLocation (::std::istream& is,
                       const ::std::string& id,
                       ::xml_schema::flags f = 0,
                       const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       RecordLocation (::std::istream& is,
                       const ::std::string& id,
                       ::xml_schema::error_handler& eh,
                       ::xml_schema::flags f = 0,
                       const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       RecordLocation (::std::istream& is,
                       const ::std::string& id,
                       ::xercesc::DOMErrorHandler& eh,
@@ -1418,18 +1418,18 @@ namespace namespaces
       // Parse xercesc::InputSource.
       //
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       RecordLocation (::xercesc::InputSource& is,
                       ::xml_schema::flags f = 0,
                       const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       RecordLocation (::xercesc::InputSource& is,
                       ::xml_schema::error_handler& eh,
                       ::xml_schema::flags f = 0,
                       const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       RecordLocation (::xercesc::InputSource& is,
                       ::xercesc::DOMErrorHandler& eh,
                       ::xml_schema::flags f = 0,
@@ -1438,12 +1438,12 @@ namespace namespaces
       // Parse xercesc::DOMDocument.
       //
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       RecordLocation (const ::xercesc::DOMDocument& d,
                       ::xml_schema::flags f = 0,
                       const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::string >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
       RecordLocation (::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d,
                       ::xml_schema::flags f = 0,
                       const ::xml_schema::properties& p = ::xml_schema::properties ());
@@ -1451,204 +1451,111 @@ namespace namespaces
       // Parse a URI or a local file.
       //
 
-      ::std::auto_ptr< ::xml_schema::double_ >
-      DefaultValueNumber (const ::std::string& uri,
-                          ::xml_schema::flags f = 0,
-                          const ::xml_schema::properties& p = ::xml_schema::properties ());
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
+      DefaultValue (const ::std::string& uri,
+                    ::xml_schema::flags f = 0,
+                    const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::double_ >
-      DefaultValueNumber (const ::std::string& uri,
-                          ::xml_schema::error_handler& eh,
-                          ::xml_schema::flags f = 0,
-                          const ::xml_schema::properties& p = ::xml_schema::properties ());
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
+      DefaultValue (const ::std::string& uri,
+                    ::xml_schema::error_handler& eh,
+                    ::xml_schema::flags f = 0,
+                    const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::double_ >
-      DefaultValueNumber (const ::std::string& uri,
-                          ::xercesc::DOMErrorHandler& eh,
-                          ::xml_schema::flags f = 0,
-                          const ::xml_schema::properties& p = ::xml_schema::properties ());
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
+      DefaultValue (const ::std::string& uri,
+                    ::xercesc::DOMErrorHandler& eh,
+                    ::xml_schema::flags f = 0,
+                    const ::xml_schema::properties& p = ::xml_schema::properties ());
 
       // Parse std::istream.
       //
 
-      ::std::auto_ptr< ::xml_schema::double_ >
-      DefaultValueNumber (::std::istream& is,
-                          ::xml_schema::flags f = 0,
-                          const ::xml_schema::properties& p = ::xml_schema::properties ());
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
+      DefaultValue (::std::istream& is,
+                    ::xml_schema::flags f = 0,
+                    const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::double_ >
-      DefaultValueNumber (::std::istream& is,
-                          ::xml_schema::error_handler& eh,
-                          ::xml_schema::flags f = 0,
-                          const ::xml_schema::properties& p = ::xml_schema::properties ());
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
+      DefaultValue (::std::istream& is,
+                    ::xml_schema::error_handler& eh,
+                    ::xml_schema::flags f = 0,
+                    const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::double_ >
-      DefaultValueNumber (::std::istream& is,
-                          ::xercesc::DOMErrorHandler& eh,
-                          ::xml_schema::flags f = 0,
-                          const ::xml_schema::properties& p = ::xml_schema::properties ());
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
+      DefaultValue (::std::istream& is,
+                    ::xercesc::DOMErrorHandler& eh,
+                    ::xml_schema::flags f = 0,
+                    const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::double_ >
-      DefaultValueNumber (::std::istream& is,
-                          const ::std::string& id,
-                          ::xml_schema::flags f = 0,
-                          const ::xml_schema::properties& p = ::xml_schema::properties ());
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
+      DefaultValue (::std::istream& is,
+                    const ::std::string& id,
+                    ::xml_schema::flags f = 0,
+                    const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::double_ >
-      DefaultValueNumber (::std::istream& is,
-                          const ::std::string& id,
-                          ::xml_schema::error_handler& eh,
-                          ::xml_schema::flags f = 0,
-                          const ::xml_schema::properties& p = ::xml_schema::properties ());
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
+      DefaultValue (::std::istream& is,
+                    const ::std::string& id,
+                    ::xml_schema::error_handler& eh,
+                    ::xml_schema::flags f = 0,
+                    const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::double_ >
-      DefaultValueNumber (::std::istream& is,
-                          const ::std::string& id,
-                          ::xercesc::DOMErrorHandler& eh,
-                          ::xml_schema::flags f = 0,
-                          const ::xml_schema::properties& p = ::xml_schema::properties ());
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
+      DefaultValue (::std::istream& is,
+                    const ::std::string& id,
+                    ::xercesc::DOMErrorHandler& eh,
+                    ::xml_schema::flags f = 0,
+                    const ::xml_schema::properties& p = ::xml_schema::properties ());
 
       // Parse xercesc::InputSource.
       //
 
-      ::std::auto_ptr< ::xml_schema::double_ >
-      DefaultValueNumber (::xercesc::InputSource& is,
-                          ::xml_schema::flags f = 0,
-                          const ::xml_schema::properties& p = ::xml_schema::properties ());
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
+      DefaultValue (::xercesc::InputSource& is,
+                    ::xml_schema::flags f = 0,
+                    const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::double_ >
-      DefaultValueNumber (::xercesc::InputSource& is,
-                          ::xml_schema::error_handler& eh,
-                          ::xml_schema::flags f = 0,
-                          const ::xml_schema::properties& p = ::xml_schema::properties ());
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
+      DefaultValue (::xercesc::InputSource& is,
+                    ::xml_schema::error_handler& eh,
+                    ::xml_schema::flags f = 0,
+                    const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::double_ >
-      DefaultValueNumber (::xercesc::InputSource& is,
-                          ::xercesc::DOMErrorHandler& eh,
-                          ::xml_schema::flags f = 0,
-                          const ::xml_schema::properties& p = ::xml_schema::properties ());
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
+      DefaultValue (::xercesc::InputSource& is,
+                    ::xercesc::DOMErrorHandler& eh,
+                    ::xml_schema::flags f = 0,
+                    const ::xml_schema::properties& p = ::xml_schema::properties ());
 
       // Parse xercesc::DOMDocument.
       //
 
-      ::std::auto_ptr< ::xml_schema::double_ >
-      DefaultValueNumber (const ::xercesc::DOMDocument& d,
-                          ::xml_schema::flags f = 0,
-                          const ::xml_schema::properties& p = ::xml_schema::properties ());
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
+      DefaultValue (const ::xercesc::DOMDocument& d,
+                    ::xml_schema::flags f = 0,
+                    const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::double_ >
-      DefaultValueNumber (::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d,
-                          ::xml_schema::flags f = 0,
-                          const ::xml_schema::properties& p = ::xml_schema::properties ());
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::string >
+      DefaultValue (::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d,
+                    ::xml_schema::flags f = 0,
+                    const ::xml_schema::properties& p = ::xml_schema::properties ());
 
       // Parse a URI or a local file.
       //
 
-      ::std::auto_ptr< ::xml_schema::string >
-      DefaultValueString (const ::std::string& uri,
-                          ::xml_schema::flags f = 0,
-                          const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      ::std::auto_ptr< ::xml_schema::string >
-      DefaultValueString (const ::std::string& uri,
-                          ::xml_schema::error_handler& eh,
-                          ::xml_schema::flags f = 0,
-                          const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      ::std::auto_ptr< ::xml_schema::string >
-      DefaultValueString (const ::std::string& uri,
-                          ::xercesc::DOMErrorHandler& eh,
-                          ::xml_schema::flags f = 0,
-                          const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      // Parse std::istream.
-      //
-
-      ::std::auto_ptr< ::xml_schema::string >
-      DefaultValueString (::std::istream& is,
-                          ::xml_schema::flags f = 0,
-                          const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      ::std::auto_ptr< ::xml_schema::string >
-      DefaultValueString (::std::istream& is,
-                          ::xml_schema::error_handler& eh,
-                          ::xml_schema::flags f = 0,
-                          const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      ::std::auto_ptr< ::xml_schema::string >
-      DefaultValueString (::std::istream& is,
-                          ::xercesc::DOMErrorHandler& eh,
-                          ::xml_schema::flags f = 0,
-                          const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      ::std::auto_ptr< ::xml_schema::string >
-      DefaultValueString (::std::istream& is,
-                          const ::std::string& id,
-                          ::xml_schema::flags f = 0,
-                          const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      ::std::auto_ptr< ::xml_schema::string >
-      DefaultValueString (::std::istream& is,
-                          const ::std::string& id,
-                          ::xml_schema::error_handler& eh,
-                          ::xml_schema::flags f = 0,
-                          const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      ::std::auto_ptr< ::xml_schema::string >
-      DefaultValueString (::std::istream& is,
-                          const ::std::string& id,
-                          ::xercesc::DOMErrorHandler& eh,
-                          ::xml_schema::flags f = 0,
-                          const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      // Parse xercesc::InputSource.
-      //
-
-      ::std::auto_ptr< ::xml_schema::string >
-      DefaultValueString (::xercesc::InputSource& is,
-                          ::xml_schema::flags f = 0,
-                          const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      ::std::auto_ptr< ::xml_schema::string >
-      DefaultValueString (::xercesc::InputSource& is,
-                          ::xml_schema::error_handler& eh,
-                          ::xml_schema::flags f = 0,
-                          const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      ::std::auto_ptr< ::xml_schema::string >
-      DefaultValueString (::xercesc::InputSource& is,
-                          ::xercesc::DOMErrorHandler& eh,
-                          ::xml_schema::flags f = 0,
-                          const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      // Parse xercesc::DOMDocument.
-      //
-
-      ::std::auto_ptr< ::xml_schema::string >
-      DefaultValueString (const ::xercesc::DOMDocument& d,
-                          ::xml_schema::flags f = 0,
-                          const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      ::std::auto_ptr< ::xml_schema::string >
-      DefaultValueString (::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d,
-                          ::xml_schema::flags f = 0,
-                          const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      // Parse a URI or a local file.
-      //
-
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
       DefaultValueList (const ::std::string& uri,
                         ::xml_schema::flags f = 0,
                         const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
       DefaultValueList (const ::std::string& uri,
                         ::xml_schema::error_handler& eh,
                         ::xml_schema::flags f = 0,
                         const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
       DefaultValueList (const ::std::string& uri,
                         ::xercesc::DOMErrorHandler& eh,
                         ::xml_schema::flags f = 0,
@@ -1657,37 +1564,37 @@ namespace namespaces
       // Parse std::istream.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
       DefaultValueList (::std::istream& is,
                         ::xml_schema::flags f = 0,
                         const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
       DefaultValueList (::std::istream& is,
                         ::xml_schema::error_handler& eh,
                         ::xml_schema::flags f = 0,
                         const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
       DefaultValueList (::std::istream& is,
                         ::xercesc::DOMErrorHandler& eh,
                         ::xml_schema::flags f = 0,
                         const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
       DefaultValueList (::std::istream& is,
                         const ::std::string& id,
                         ::xml_schema::flags f = 0,
                         const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
       DefaultValueList (::std::istream& is,
                         const ::std::string& id,
                         ::xml_schema::error_handler& eh,
                         ::xml_schema::flags f = 0,
                         const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
       DefaultValueList (::std::istream& is,
                         const ::std::string& id,
                         ::xercesc::DOMErrorHandler& eh,
@@ -1697,18 +1604,18 @@ namespace namespaces
       // Parse xercesc::InputSource.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
       DefaultValueList (::xercesc::InputSource& is,
                         ::xml_schema::flags f = 0,
                         const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
       DefaultValueList (::xercesc::InputSource& is,
                         ::xml_schema::error_handler& eh,
                         ::xml_schema::flags f = 0,
                         const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
       DefaultValueList (::xercesc::InputSource& is,
                         ::xercesc::DOMErrorHandler& eh,
                         ::xml_schema::flags f = 0,
@@ -1717,12 +1624,12 @@ namespace namespaces
       // Parse xercesc::DOMDocument.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
       DefaultValueList (const ::xercesc::DOMDocument& d,
                         ::xml_schema::flags f = 0,
                         const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
       DefaultValueList (::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d,
                         ::xml_schema::flags f = 0,
                         const ::xml_schema::properties& p = ::xml_schema::properties ());
@@ -1730,18 +1637,18 @@ namespace namespaces
       // Parse a URI or a local file.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::RefStringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::RefStringList >
       RefValue (const ::std::string& uri,
                 ::xml_schema::flags f = 0,
                 const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::RefStringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::RefStringList >
       RefValue (const ::std::string& uri,
                 ::xml_schema::error_handler& eh,
                 ::xml_schema::flags f = 0,
                 const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::RefStringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::RefStringList >
       RefValue (const ::std::string& uri,
                 ::xercesc::DOMErrorHandler& eh,
                 ::xml_schema::flags f = 0,
@@ -1750,37 +1657,37 @@ namespace namespaces
       // Parse std::istream.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::RefStringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::RefStringList >
       RefValue (::std::istream& is,
                 ::xml_schema::flags f = 0,
                 const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::RefStringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::RefStringList >
       RefValue (::std::istream& is,
                 ::xml_schema::error_handler& eh,
                 ::xml_schema::flags f = 0,
                 const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::RefStringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::RefStringList >
       RefValue (::std::istream& is,
                 ::xercesc::DOMErrorHandler& eh,
                 ::xml_schema::flags f = 0,
                 const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::RefStringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::RefStringList >
       RefValue (::std::istream& is,
                 const ::std::string& id,
                 ::xml_schema::flags f = 0,
                 const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::RefStringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::RefStringList >
       RefValue (::std::istream& is,
                 const ::std::string& id,
                 ::xml_schema::error_handler& eh,
                 ::xml_schema::flags f = 0,
                 const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::RefStringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::RefStringList >
       RefValue (::std::istream& is,
                 const ::std::string& id,
                 ::xercesc::DOMErrorHandler& eh,
@@ -1790,18 +1697,18 @@ namespace namespaces
       // Parse xercesc::InputSource.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::RefStringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::RefStringList >
       RefValue (::xercesc::InputSource& is,
                 ::xml_schema::flags f = 0,
                 const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::RefStringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::RefStringList >
       RefValue (::xercesc::InputSource& is,
                 ::xml_schema::error_handler& eh,
                 ::xml_schema::flags f = 0,
                 const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::RefStringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::RefStringList >
       RefValue (::xercesc::InputSource& is,
                 ::xercesc::DOMErrorHandler& eh,
                 ::xml_schema::flags f = 0,
@@ -1810,12 +1717,12 @@ namespace namespaces
       // Parse xercesc::DOMDocument.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::RefStringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::RefStringList >
       RefValue (const ::xercesc::DOMDocument& d,
                 ::xml_schema::flags f = 0,
                 const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::RefStringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::RefStringList >
       RefValue (::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d,
                 ::xml_schema::flags f = 0,
                 const ::xml_schema::properties& p = ::xml_schema::properties ());
@@ -1823,18 +1730,18 @@ namespace namespaces
       // Parse a URI or a local file.
       //
 
-      ::std::auto_ptr< ::xml_schema::id >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::id >
       PropertyId (const ::std::string& uri,
                   ::xml_schema::flags f = 0,
                   const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::id >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::id >
       PropertyId (const ::std::string& uri,
                   ::xml_schema::error_handler& eh,
                   ::xml_schema::flags f = 0,
                   const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::id >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::id >
       PropertyId (const ::std::string& uri,
                   ::xercesc::DOMErrorHandler& eh,
                   ::xml_schema::flags f = 0,
@@ -1843,37 +1750,37 @@ namespace namespaces
       // Parse std::istream.
       //
 
-      ::std::auto_ptr< ::xml_schema::id >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::id >
       PropertyId (::std::istream& is,
                   ::xml_schema::flags f = 0,
                   const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::id >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::id >
       PropertyId (::std::istream& is,
                   ::xml_schema::error_handler& eh,
                   ::xml_schema::flags f = 0,
                   const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::id >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::id >
       PropertyId (::std::istream& is,
                   ::xercesc::DOMErrorHandler& eh,
                   ::xml_schema::flags f = 0,
                   const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::id >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::id >
       PropertyId (::std::istream& is,
                   const ::std::string& id,
                   ::xml_schema::flags f = 0,
                   const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::id >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::id >
       PropertyId (::std::istream& is,
                   const ::std::string& id,
                   ::xml_schema::error_handler& eh,
                   ::xml_schema::flags f = 0,
                   const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::id >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::id >
       PropertyId (::std::istream& is,
                   const ::std::string& id,
                   ::xercesc::DOMErrorHandler& eh,
@@ -1883,18 +1790,18 @@ namespace namespaces
       // Parse xercesc::InputSource.
       //
 
-      ::std::auto_ptr< ::xml_schema::id >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::id >
       PropertyId (::xercesc::InputSource& is,
                   ::xml_schema::flags f = 0,
                   const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::id >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::id >
       PropertyId (::xercesc::InputSource& is,
                   ::xml_schema::error_handler& eh,
                   ::xml_schema::flags f = 0,
                   const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::id >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::id >
       PropertyId (::xercesc::InputSource& is,
                   ::xercesc::DOMErrorHandler& eh,
                   ::xml_schema::flags f = 0,
@@ -1903,12 +1810,12 @@ namespace namespaces
       // Parse xercesc::DOMDocument.
       //
 
-      ::std::auto_ptr< ::xml_schema::id >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::id >
       PropertyId (const ::xercesc::DOMDocument& d,
                   ::xml_schema::flags f = 0,
                   const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::id >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::id >
       PropertyId (::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d,
                   ::xml_schema::flags f = 0,
                   const ::xml_schema::properties& p = ::xml_schema::properties ());
@@ -1916,18 +1823,18 @@ namespace namespaces
       // Parse a URI or a local file.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::IdList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::IdList >
       PropertyIdList (const ::std::string& uri,
                       ::xml_schema::flags f = 0,
                       const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::IdList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::IdList >
       PropertyIdList (const ::std::string& uri,
                       ::xml_schema::error_handler& eh,
                       ::xml_schema::flags f = 0,
                       const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::IdList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::IdList >
       PropertyIdList (const ::std::string& uri,
                       ::xercesc::DOMErrorHandler& eh,
                       ::xml_schema::flags f = 0,
@@ -1936,37 +1843,37 @@ namespace namespaces
       // Parse std::istream.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::IdList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::IdList >
       PropertyIdList (::std::istream& is,
                       ::xml_schema::flags f = 0,
                       const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::IdList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::IdList >
       PropertyIdList (::std::istream& is,
                       ::xml_schema::error_handler& eh,
                       ::xml_schema::flags f = 0,
                       const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::IdList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::IdList >
       PropertyIdList (::std::istream& is,
                       ::xercesc::DOMErrorHandler& eh,
                       ::xml_schema::flags f = 0,
                       const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::IdList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::IdList >
       PropertyIdList (::std::istream& is,
                       const ::std::string& id,
                       ::xml_schema::flags f = 0,
                       const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::IdList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::IdList >
       PropertyIdList (::std::istream& is,
                       const ::std::string& id,
                       ::xml_schema::error_handler& eh,
                       ::xml_schema::flags f = 0,
                       const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::IdList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::IdList >
       PropertyIdList (::std::istream& is,
                       const ::std::string& id,
                       ::xercesc::DOMErrorHandler& eh,
@@ -1976,18 +1883,18 @@ namespace namespaces
       // Parse xercesc::InputSource.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::IdList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::IdList >
       PropertyIdList (::xercesc::InputSource& is,
                       ::xml_schema::flags f = 0,
                       const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::IdList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::IdList >
       PropertyIdList (::xercesc::InputSource& is,
                       ::xml_schema::error_handler& eh,
                       ::xml_schema::flags f = 0,
                       const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::IdList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::IdList >
       PropertyIdList (::xercesc::InputSource& is,
                       ::xercesc::DOMErrorHandler& eh,
                       ::xml_schema::flags f = 0,
@@ -1996,12 +1903,12 @@ namespace namespaces
       // Parse xercesc::DOMDocument.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::IdList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::IdList >
       PropertyIdList (const ::xercesc::DOMDocument& d,
                       ::xml_schema::flags f = 0,
                       const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::IdList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::IdList >
       PropertyIdList (::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d,
                       ::xml_schema::flags f = 0,
                       const ::xml_schema::properties& p = ::xml_schema::properties ());
@@ -2009,18 +1916,18 @@ namespace namespaces
       // Parse a URI or a local file.
       //
 
-      ::std::auto_ptr< ::xml_schema::double_ >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::double_ >
       Value (const ::std::string& uri,
              ::xml_schema::flags f = 0,
              const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::double_ >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::double_ >
       Value (const ::std::string& uri,
              ::xml_schema::error_handler& eh,
              ::xml_schema::flags f = 0,
              const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::double_ >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::double_ >
       Value (const ::std::string& uri,
              ::xercesc::DOMErrorHandler& eh,
              ::xml_schema::flags f = 0,
@@ -2029,37 +1936,37 @@ namespace namespaces
       // Parse std::istream.
       //
 
-      ::std::auto_ptr< ::xml_schema::double_ >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::double_ >
       Value (::std::istream& is,
              ::xml_schema::flags f = 0,
              const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::double_ >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::double_ >
       Value (::std::istream& is,
              ::xml_schema::error_handler& eh,
              ::xml_schema::flags f = 0,
              const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::double_ >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::double_ >
       Value (::std::istream& is,
              ::xercesc::DOMErrorHandler& eh,
              ::xml_schema::flags f = 0,
              const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::double_ >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::double_ >
       Value (::std::istream& is,
              const ::std::string& id,
              ::xml_schema::flags f = 0,
              const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::double_ >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::double_ >
       Value (::std::istream& is,
              const ::std::string& id,
              ::xml_schema::error_handler& eh,
              ::xml_schema::flags f = 0,
              const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::double_ >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::double_ >
       Value (::std::istream& is,
              const ::std::string& id,
              ::xercesc::DOMErrorHandler& eh,
@@ -2069,18 +1976,18 @@ namespace namespaces
       // Parse xercesc::InputSource.
       //
 
-      ::std::auto_ptr< ::xml_schema::double_ >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::double_ >
       Value (::xercesc::InputSource& is,
              ::xml_schema::flags f = 0,
              const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::double_ >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::double_ >
       Value (::xercesc::InputSource& is,
              ::xml_schema::error_handler& eh,
              ::xml_schema::flags f = 0,
              const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::double_ >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::double_ >
       Value (::xercesc::InputSource& is,
              ::xercesc::DOMErrorHandler& eh,
              ::xml_schema::flags f = 0,
@@ -2089,12 +1996,12 @@ namespace namespaces
       // Parse xercesc::DOMDocument.
       //
 
-      ::std::auto_ptr< ::xml_schema::double_ >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::double_ >
       Value (const ::xercesc::DOMDocument& d,
              ::xml_schema::flags f = 0,
              const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::double_ >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::double_ >
       Value (::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d,
              ::xml_schema::flags f = 0,
              const ::xml_schema::properties& p = ::xml_schema::properties ());
@@ -2102,18 +2009,18 @@ namespace namespaces
       // Parse a URI or a local file.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Map_DoubleList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Map_DoubleList >
       ValueList (const ::std::string& uri,
                  ::xml_schema::flags f = 0,
                  const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Map_DoubleList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Map_DoubleList >
       ValueList (const ::std::string& uri,
                  ::xml_schema::error_handler& eh,
                  ::xml_schema::flags f = 0,
                  const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Map_DoubleList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Map_DoubleList >
       ValueList (const ::std::string& uri,
                  ::xercesc::DOMErrorHandler& eh,
                  ::xml_schema::flags f = 0,
@@ -2122,37 +2029,37 @@ namespace namespaces
       // Parse std::istream.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Map_DoubleList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Map_DoubleList >
       ValueList (::std::istream& is,
                  ::xml_schema::flags f = 0,
                  const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Map_DoubleList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Map_DoubleList >
       ValueList (::std::istream& is,
                  ::xml_schema::error_handler& eh,
                  ::xml_schema::flags f = 0,
                  const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Map_DoubleList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Map_DoubleList >
       ValueList (::std::istream& is,
                  ::xercesc::DOMErrorHandler& eh,
                  ::xml_schema::flags f = 0,
                  const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Map_DoubleList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Map_DoubleList >
       ValueList (::std::istream& is,
                  const ::std::string& id,
                  ::xml_schema::flags f = 0,
                  const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Map_DoubleList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Map_DoubleList >
       ValueList (::std::istream& is,
                  const ::std::string& id,
                  ::xml_schema::error_handler& eh,
                  ::xml_schema::flags f = 0,
                  const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Map_DoubleList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Map_DoubleList >
       ValueList (::std::istream& is,
                  const ::std::string& id,
                  ::xercesc::DOMErrorHandler& eh,
@@ -2162,18 +2069,18 @@ namespace namespaces
       // Parse xercesc::InputSource.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Map_DoubleList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Map_DoubleList >
       ValueList (::xercesc::InputSource& is,
                  ::xml_schema::flags f = 0,
                  const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Map_DoubleList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Map_DoubleList >
       ValueList (::xercesc::InputSource& is,
                  ::xml_schema::error_handler& eh,
                  ::xml_schema::flags f = 0,
                  const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Map_DoubleList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Map_DoubleList >
       ValueList (::xercesc::InputSource& is,
                  ::xercesc::DOMErrorHandler& eh,
                  ::xml_schema::flags f = 0,
@@ -2182,12 +2089,12 @@ namespace namespaces
       // Parse xercesc::DOMDocument.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Map_DoubleList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Map_DoubleList >
       ValueList (const ::xercesc::DOMDocument& d,
                  ::xml_schema::flags f = 0,
                  const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Map_DoubleList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Map_DoubleList >
       ValueList (::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d,
                  ::xml_schema::flags f = 0,
                  const ::xml_schema::properties& p = ::xml_schema::properties ());
@@ -2195,18 +2102,18 @@ namespace namespaces
       // Parse a URI or a local file.
       //
 
-      ::std::auto_ptr< ::xml_schema::boolean >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::boolean >
       IsReferenced (const ::std::string& uri,
                     ::xml_schema::flags f = 0,
                     const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::boolean >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::boolean >
       IsReferenced (const ::std::string& uri,
                     ::xml_schema::error_handler& eh,
                     ::xml_schema::flags f = 0,
                     const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::boolean >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::boolean >
       IsReferenced (const ::std::string& uri,
                     ::xercesc::DOMErrorHandler& eh,
                     ::xml_schema::flags f = 0,
@@ -2215,37 +2122,37 @@ namespace namespaces
       // Parse std::istream.
       //
 
-      ::std::auto_ptr< ::xml_schema::boolean >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::boolean >
       IsReferenced (::std::istream& is,
                     ::xml_schema::flags f = 0,
                     const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::boolean >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::boolean >
       IsReferenced (::std::istream& is,
                     ::xml_schema::error_handler& eh,
                     ::xml_schema::flags f = 0,
                     const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::boolean >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::boolean >
       IsReferenced (::std::istream& is,
                     ::xercesc::DOMErrorHandler& eh,
                     ::xml_schema::flags f = 0,
                     const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::boolean >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::boolean >
       IsReferenced (::std::istream& is,
                     const ::std::string& id,
                     ::xml_schema::flags f = 0,
                     const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::boolean >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::boolean >
       IsReferenced (::std::istream& is,
                     const ::std::string& id,
                     ::xml_schema::error_handler& eh,
                     ::xml_schema::flags f = 0,
                     const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::boolean >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::boolean >
       IsReferenced (::std::istream& is,
                     const ::std::string& id,
                     ::xercesc::DOMErrorHandler& eh,
@@ -2255,18 +2162,18 @@ namespace namespaces
       // Parse xercesc::InputSource.
       //
 
-      ::std::auto_ptr< ::xml_schema::boolean >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::boolean >
       IsReferenced (::xercesc::InputSource& is,
                     ::xml_schema::flags f = 0,
                     const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::boolean >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::boolean >
       IsReferenced (::xercesc::InputSource& is,
                     ::xml_schema::error_handler& eh,
                     ::xml_schema::flags f = 0,
                     const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::boolean >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::boolean >
       IsReferenced (::xercesc::InputSource& is,
                     ::xercesc::DOMErrorHandler& eh,
                     ::xml_schema::flags f = 0,
@@ -2275,12 +2182,12 @@ namespace namespaces
       // Parse xercesc::DOMDocument.
       //
 
-      ::std::auto_ptr< ::xml_schema::boolean >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::boolean >
       IsReferenced (const ::xercesc::DOMDocument& d,
                     ::xml_schema::flags f = 0,
                     const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::boolean >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::boolean >
       IsReferenced (::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d,
                     ::xml_schema::flags f = 0,
                     const ::xml_schema::properties& p = ::xml_schema::properties ());
@@ -2288,18 +2195,18 @@ namespace namespaces
       // Parse a URI or a local file.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::ValueType >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::ValueType >
       ValueType_ (const ::std::string& uri,
                   ::xml_schema::flags f = 0,
                   const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::ValueType >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::ValueType >
       ValueType_ (const ::std::string& uri,
                   ::xml_schema::error_handler& eh,
                   ::xml_schema::flags f = 0,
                   const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::ValueType >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::ValueType >
       ValueType_ (const ::std::string& uri,
                   ::xercesc::DOMErrorHandler& eh,
                   ::xml_schema::flags f = 0,
@@ -2308,37 +2215,37 @@ namespace namespaces
       // Parse std::istream.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::ValueType >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::ValueType >
       ValueType_ (::std::istream& is,
                   ::xml_schema::flags f = 0,
                   const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::ValueType >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::ValueType >
       ValueType_ (::std::istream& is,
                   ::xml_schema::error_handler& eh,
                   ::xml_schema::flags f = 0,
                   const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::ValueType >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::ValueType >
       ValueType_ (::std::istream& is,
                   ::xercesc::DOMErrorHandler& eh,
                   ::xml_schema::flags f = 0,
                   const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::ValueType >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::ValueType >
       ValueType_ (::std::istream& is,
                   const ::std::string& id,
                   ::xml_schema::flags f = 0,
                   const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::ValueType >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::ValueType >
       ValueType_ (::std::istream& is,
                   const ::std::string& id,
                   ::xml_schema::error_handler& eh,
                   ::xml_schema::flags f = 0,
                   const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::ValueType >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::ValueType >
       ValueType_ (::std::istream& is,
                   const ::std::string& id,
                   ::xercesc::DOMErrorHandler& eh,
@@ -2348,18 +2255,18 @@ namespace namespaces
       // Parse xercesc::InputSource.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::ValueType >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::ValueType >
       ValueType_ (::xercesc::InputSource& is,
                   ::xml_schema::flags f = 0,
                   const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::ValueType >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::ValueType >
       ValueType_ (::xercesc::InputSource& is,
                   ::xml_schema::error_handler& eh,
                   ::xml_schema::flags f = 0,
                   const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::ValueType >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::ValueType >
       ValueType_ (::xercesc::InputSource& is,
                   ::xercesc::DOMErrorHandler& eh,
                   ::xml_schema::flags f = 0,
@@ -2368,12 +2275,12 @@ namespace namespaces
       // Parse xercesc::DOMDocument.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::ValueType >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::ValueType >
       ValueType_ (const ::xercesc::DOMDocument& d,
                   ::xml_schema::flags f = 0,
                   const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::ValueType >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::ValueType >
       ValueType_ (::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d,
                   ::xml_schema::flags f = 0,
                   const ::xml_schema::properties& p = ::xml_schema::properties ());
@@ -2381,18 +2288,18 @@ namespace namespaces
       // Parse a URI or a local file.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
       ValueFormat (const ::std::string& uri,
                    ::xml_schema::flags f = 0,
                    const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
       ValueFormat (const ::std::string& uri,
                    ::xml_schema::error_handler& eh,
                    ::xml_schema::flags f = 0,
                    const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
       ValueFormat (const ::std::string& uri,
                    ::xercesc::DOMErrorHandler& eh,
                    ::xml_schema::flags f = 0,
@@ -2401,37 +2308,37 @@ namespace namespaces
       // Parse std::istream.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
       ValueFormat (::std::istream& is,
                    ::xml_schema::flags f = 0,
                    const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
       ValueFormat (::std::istream& is,
                    ::xml_schema::error_handler& eh,
                    ::xml_schema::flags f = 0,
                    const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
       ValueFormat (::std::istream& is,
                    ::xercesc::DOMErrorHandler& eh,
                    ::xml_schema::flags f = 0,
                    const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
       ValueFormat (::std::istream& is,
                    const ::std::string& id,
                    ::xml_schema::flags f = 0,
                    const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
       ValueFormat (::std::istream& is,
                    const ::std::string& id,
                    ::xml_schema::error_handler& eh,
                    ::xml_schema::flags f = 0,
                    const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
       ValueFormat (::std::istream& is,
                    const ::std::string& id,
                    ::xercesc::DOMErrorHandler& eh,
@@ -2441,18 +2348,18 @@ namespace namespaces
       // Parse xercesc::InputSource.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
       ValueFormat (::xercesc::InputSource& is,
                    ::xml_schema::flags f = 0,
                    const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
       ValueFormat (::xercesc::InputSource& is,
                    ::xml_schema::error_handler& eh,
                    ::xml_schema::flags f = 0,
                    const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
       ValueFormat (::xercesc::InputSource& is,
                    ::xercesc::DOMErrorHandler& eh,
                    ::xml_schema::flags f = 0,
@@ -2461,12 +2368,12 @@ namespace namespaces
       // Parse xercesc::DOMDocument.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
       ValueFormat (const ::xercesc::DOMDocument& d,
                    ::xml_schema::flags f = 0,
                    const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
       ValueFormat (::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d,
                    ::xml_schema::flags f = 0,
                    const ::xml_schema::properties& p = ::xml_schema::properties ());
@@ -2474,18 +2381,18 @@ namespace namespaces
       // Parse a URI or a local file.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
       Function (const ::std::string& uri,
                 ::xml_schema::flags f = 0,
                 const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
       Function (const ::std::string& uri,
                 ::xml_schema::error_handler& eh,
                 ::xml_schema::flags f = 0,
                 const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
       Function (const ::std::string& uri,
                 ::xercesc::DOMErrorHandler& eh,
                 ::xml_schema::flags f = 0,
@@ -2494,37 +2401,37 @@ namespace namespaces
       // Parse std::istream.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
       Function (::std::istream& is,
                 ::xml_schema::flags f = 0,
                 const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
       Function (::std::istream& is,
                 ::xml_schema::error_handler& eh,
                 ::xml_schema::flags f = 0,
                 const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
       Function (::std::istream& is,
                 ::xercesc::DOMErrorHandler& eh,
                 ::xml_schema::flags f = 0,
                 const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
       Function (::std::istream& is,
                 const ::std::string& id,
                 ::xml_schema::flags f = 0,
                 const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
       Function (::std::istream& is,
                 const ::std::string& id,
                 ::xml_schema::error_handler& eh,
                 ::xml_schema::flags f = 0,
                 const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
       Function (::std::istream& is,
                 const ::std::string& id,
                 ::xercesc::DOMErrorHandler& eh,
@@ -2534,18 +2441,18 @@ namespace namespaces
       // Parse xercesc::InputSource.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
       Function (::xercesc::InputSource& is,
                 ::xml_schema::flags f = 0,
                 const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
       Function (::xercesc::InputSource& is,
                 ::xml_schema::error_handler& eh,
                 ::xml_schema::flags f = 0,
                 const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
       Function (::xercesc::InputSource& is,
                 ::xercesc::DOMErrorHandler& eh,
                 ::xml_schema::flags f = 0,
@@ -2554,12 +2461,12 @@ namespace namespaces
       // Parse xercesc::DOMDocument.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
       Function (const ::xercesc::DOMDocument& d,
                 ::xml_schema::flags f = 0,
                 const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::StringList >
       Function (::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d,
                 ::xml_schema::flags f = 0,
                 const ::xml_schema::properties& p = ::xml_schema::properties ());
@@ -2567,18 +2474,18 @@ namespace namespaces
       // Parse a URI or a local file.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::InputParameter >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::InputParameter >
       InputParameter_ (const ::std::string& uri,
                        ::xml_schema::flags f = 0,
                        const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::InputParameter >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::InputParameter >
       InputParameter_ (const ::std::string& uri,
                        ::xml_schema::error_handler& eh,
                        ::xml_schema::flags f = 0,
                        const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::InputParameter >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::InputParameter >
       InputParameter_ (const ::std::string& uri,
                        ::xercesc::DOMErrorHandler& eh,
                        ::xml_schema::flags f = 0,
@@ -2587,37 +2494,37 @@ namespace namespaces
       // Parse std::istream.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::InputParameter >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::InputParameter >
       InputParameter_ (::std::istream& is,
                        ::xml_schema::flags f = 0,
                        const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::InputParameter >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::InputParameter >
       InputParameter_ (::std::istream& is,
                        ::xml_schema::error_handler& eh,
                        ::xml_schema::flags f = 0,
                        const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::InputParameter >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::InputParameter >
       InputParameter_ (::std::istream& is,
                        ::xercesc::DOMErrorHandler& eh,
                        ::xml_schema::flags f = 0,
                        const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::InputParameter >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::InputParameter >
       InputParameter_ (::std::istream& is,
                        const ::std::string& id,
                        ::xml_schema::flags f = 0,
                        const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::InputParameter >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::InputParameter >
       InputParameter_ (::std::istream& is,
                        const ::std::string& id,
                        ::xml_schema::error_handler& eh,
                        ::xml_schema::flags f = 0,
                        const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::InputParameter >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::InputParameter >
       InputParameter_ (::std::istream& is,
                        const ::std::string& id,
                        ::xercesc::DOMErrorHandler& eh,
@@ -2627,18 +2534,18 @@ namespace namespaces
       // Parse xercesc::InputSource.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::InputParameter >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::InputParameter >
       InputParameter_ (::xercesc::InputSource& is,
                        ::xml_schema::flags f = 0,
                        const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::InputParameter >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::InputParameter >
       InputParameter_ (::xercesc::InputSource& is,
                        ::xml_schema::error_handler& eh,
                        ::xml_schema::flags f = 0,
                        const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::InputParameter >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::InputParameter >
       InputParameter_ (::xercesc::InputSource& is,
                        ::xercesc::DOMErrorHandler& eh,
                        ::xml_schema::flags f = 0,
@@ -2647,12 +2554,12 @@ namespace namespaces
       // Parse xercesc::DOMDocument.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::InputParameter >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::InputParameter >
       InputParameter_ (const ::xercesc::DOMDocument& d,
                        ::xml_schema::flags f = 0,
                        const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::InputParameter >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::InputParameter >
       InputParameter_ (::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d,
                        ::xml_schema::flags f = 0,
                        const ::xml_schema::properties& p = ::xml_schema::properties ());
@@ -2660,18 +2567,18 @@ namespace namespaces
       // Parse a URI or a local file.
       //
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       InputParameterName (const ::std::string& uri,
                           ::xml_schema::flags f = 0,
                           const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       InputParameterName (const ::std::string& uri,
                           ::xml_schema::error_handler& eh,
                           ::xml_schema::flags f = 0,
                           const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       InputParameterName (const ::std::string& uri,
                           ::xercesc::DOMErrorHandler& eh,
                           ::xml_schema::flags f = 0,
@@ -2680,37 +2587,37 @@ namespace namespaces
       // Parse std::istream.
       //
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       InputParameterName (::std::istream& is,
                           ::xml_schema::flags f = 0,
                           const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       InputParameterName (::std::istream& is,
                           ::xml_schema::error_handler& eh,
                           ::xml_schema::flags f = 0,
                           const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       InputParameterName (::std::istream& is,
                           ::xercesc::DOMErrorHandler& eh,
                           ::xml_schema::flags f = 0,
                           const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       InputParameterName (::std::istream& is,
                           const ::std::string& id,
                           ::xml_schema::flags f = 0,
                           const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       InputParameterName (::std::istream& is,
                           const ::std::string& id,
                           ::xml_schema::error_handler& eh,
                           ::xml_schema::flags f = 0,
                           const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       InputParameterName (::std::istream& is,
                           const ::std::string& id,
                           ::xercesc::DOMErrorHandler& eh,
@@ -2720,18 +2627,18 @@ namespace namespaces
       // Parse xercesc::InputSource.
       //
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       InputParameterName (::xercesc::InputSource& is,
                           ::xml_schema::flags f = 0,
                           const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       InputParameterName (::xercesc::InputSource& is,
                           ::xml_schema::error_handler& eh,
                           ::xml_schema::flags f = 0,
                           const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       InputParameterName (::xercesc::InputSource& is,
                           ::xercesc::DOMErrorHandler& eh,
                           ::xml_schema::flags f = 0,
@@ -2740,12 +2647,12 @@ namespace namespaces
       // Parse xercesc::DOMDocument.
       //
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       InputParameterName (const ::xercesc::DOMDocument& d,
                           ::xml_schema::flags f = 0,
                           const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       InputParameterName (::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d,
                           ::xml_schema::flags f = 0,
                           const ::xml_schema::properties& p = ::xml_schema::properties ());
@@ -2753,18 +2660,18 @@ namespace namespaces
       // Parse a URI or a local file.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::InputCoefficient >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::InputCoefficient >
       InputCoefficient_ (const ::std::string& uri,
                          ::xml_schema::flags f = 0,
                          const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::InputCoefficient >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::InputCoefficient >
       InputCoefficient_ (const ::std::string& uri,
                          ::xml_schema::error_handler& eh,
                          ::xml_schema::flags f = 0,
                          const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::InputCoefficient >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::InputCoefficient >
       InputCoefficient_ (const ::std::string& uri,
                          ::xercesc::DOMErrorHandler& eh,
                          ::xml_schema::flags f = 0,
@@ -2773,37 +2680,37 @@ namespace namespaces
       // Parse std::istream.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::InputCoefficient >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::InputCoefficient >
       InputCoefficient_ (::std::istream& is,
                          ::xml_schema::flags f = 0,
                          const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::InputCoefficient >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::InputCoefficient >
       InputCoefficient_ (::std::istream& is,
                          ::xml_schema::error_handler& eh,
                          ::xml_schema::flags f = 0,
                          const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::InputCoefficient >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::InputCoefficient >
       InputCoefficient_ (::std::istream& is,
                          ::xercesc::DOMErrorHandler& eh,
                          ::xml_schema::flags f = 0,
                          const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::InputCoefficient >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::InputCoefficient >
       InputCoefficient_ (::std::istream& is,
                          const ::std::string& id,
                          ::xml_schema::flags f = 0,
                          const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::InputCoefficient >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::InputCoefficient >
       InputCoefficient_ (::std::istream& is,
                          const ::std::string& id,
                          ::xml_schema::error_handler& eh,
                          ::xml_schema::flags f = 0,
                          const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::InputCoefficient >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::InputCoefficient >
       InputCoefficient_ (::std::istream& is,
                          const ::std::string& id,
                          ::xercesc::DOMErrorHandler& eh,
@@ -2813,18 +2720,18 @@ namespace namespaces
       // Parse xercesc::InputSource.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::InputCoefficient >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::InputCoefficient >
       InputCoefficient_ (::xercesc::InputSource& is,
                          ::xml_schema::flags f = 0,
                          const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::InputCoefficient >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::InputCoefficient >
       InputCoefficient_ (::xercesc::InputSource& is,
                          ::xml_schema::error_handler& eh,
                          ::xml_schema::flags f = 0,
                          const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::InputCoefficient >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::InputCoefficient >
       InputCoefficient_ (::xercesc::InputSource& is,
                          ::xercesc::DOMErrorHandler& eh,
                          ::xml_schema::flags f = 0,
@@ -2833,12 +2740,12 @@ namespace namespaces
       // Parse xercesc::DOMDocument.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::InputCoefficient >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::InputCoefficient >
       InputCoefficient_ (const ::xercesc::DOMDocument& d,
                          ::xml_schema::flags f = 0,
                          const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::InputCoefficient >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::InputCoefficient >
       InputCoefficient_ (::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d,
                          ::xml_schema::flags f = 0,
                          const ::xml_schema::properties& p = ::xml_schema::properties ());
@@ -2846,18 +2753,18 @@ namespace namespaces
       // Parse a URI or a local file.
       //
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       InputCoefficientName (const ::std::string& uri,
                             ::xml_schema::flags f = 0,
                             const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       InputCoefficientName (const ::std::string& uri,
                             ::xml_schema::error_handler& eh,
                             ::xml_schema::flags f = 0,
                             const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       InputCoefficientName (const ::std::string& uri,
                             ::xercesc::DOMErrorHandler& eh,
                             ::xml_schema::flags f = 0,
@@ -2866,37 +2773,37 @@ namespace namespaces
       // Parse std::istream.
       //
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       InputCoefficientName (::std::istream& is,
                             ::xml_schema::flags f = 0,
                             const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       InputCoefficientName (::std::istream& is,
                             ::xml_schema::error_handler& eh,
                             ::xml_schema::flags f = 0,
                             const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       InputCoefficientName (::std::istream& is,
                             ::xercesc::DOMErrorHandler& eh,
                             ::xml_schema::flags f = 0,
                             const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       InputCoefficientName (::std::istream& is,
                             const ::std::string& id,
                             ::xml_schema::flags f = 0,
                             const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       InputCoefficientName (::std::istream& is,
                             const ::std::string& id,
                             ::xml_schema::error_handler& eh,
                             ::xml_schema::flags f = 0,
                             const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       InputCoefficientName (::std::istream& is,
                             const ::std::string& id,
                             ::xercesc::DOMErrorHandler& eh,
@@ -2906,18 +2813,18 @@ namespace namespaces
       // Parse xercesc::InputSource.
       //
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       InputCoefficientName (::xercesc::InputSource& is,
                             ::xml_schema::flags f = 0,
                             const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       InputCoefficientName (::xercesc::InputSource& is,
                             ::xml_schema::error_handler& eh,
                             ::xml_schema::flags f = 0,
                             const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       InputCoefficientName (::xercesc::InputSource& is,
                             ::xercesc::DOMErrorHandler& eh,
                             ::xml_schema::flags f = 0,
@@ -2926,12 +2833,12 @@ namespace namespaces
       // Parse xercesc::DOMDocument.
       //
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       InputCoefficientName (const ::xercesc::DOMDocument& d,
                             ::xml_schema::flags f = 0,
                             const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       InputCoefficientName (::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d,
                             ::xml_schema::flags f = 0,
                             const ::xml_schema::properties& p = ::xml_schema::properties ());
@@ -2939,18 +2846,18 @@ namespace namespaces
       // Parse a URI or a local file.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::OutputParameter >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::OutputParameter >
       OutputParameter_ (const ::std::string& uri,
                         ::xml_schema::flags f = 0,
                         const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::OutputParameter >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::OutputParameter >
       OutputParameter_ (const ::std::string& uri,
                         ::xml_schema::error_handler& eh,
                         ::xml_schema::flags f = 0,
                         const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::OutputParameter >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::OutputParameter >
       OutputParameter_ (const ::std::string& uri,
                         ::xercesc::DOMErrorHandler& eh,
                         ::xml_schema::flags f = 0,
@@ -2959,37 +2866,37 @@ namespace namespaces
       // Parse std::istream.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::OutputParameter >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::OutputParameter >
       OutputParameter_ (::std::istream& is,
                         ::xml_schema::flags f = 0,
                         const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::OutputParameter >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::OutputParameter >
       OutputParameter_ (::std::istream& is,
                         ::xml_schema::error_handler& eh,
                         ::xml_schema::flags f = 0,
                         const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::OutputParameter >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::OutputParameter >
       OutputParameter_ (::std::istream& is,
                         ::xercesc::DOMErrorHandler& eh,
                         ::xml_schema::flags f = 0,
                         const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::OutputParameter >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::OutputParameter >
       OutputParameter_ (::std::istream& is,
                         const ::std::string& id,
                         ::xml_schema::flags f = 0,
                         const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::OutputParameter >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::OutputParameter >
       OutputParameter_ (::std::istream& is,
                         const ::std::string& id,
                         ::xml_schema::error_handler& eh,
                         ::xml_schema::flags f = 0,
                         const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::OutputParameter >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::OutputParameter >
       OutputParameter_ (::std::istream& is,
                         const ::std::string& id,
                         ::xercesc::DOMErrorHandler& eh,
@@ -2999,18 +2906,18 @@ namespace namespaces
       // Parse xercesc::InputSource.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::OutputParameter >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::OutputParameter >
       OutputParameter_ (::xercesc::InputSource& is,
                         ::xml_schema::flags f = 0,
                         const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::OutputParameter >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::OutputParameter >
       OutputParameter_ (::xercesc::InputSource& is,
                         ::xml_schema::error_handler& eh,
                         ::xml_schema::flags f = 0,
                         const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::OutputParameter >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::OutputParameter >
       OutputParameter_ (::xercesc::InputSource& is,
                         ::xercesc::DOMErrorHandler& eh,
                         ::xml_schema::flags f = 0,
@@ -3019,12 +2926,12 @@ namespace namespaces
       // Parse xercesc::DOMDocument.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::OutputParameter >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::OutputParameter >
       OutputParameter_ (const ::xercesc::DOMDocument& d,
                         ::xml_schema::flags f = 0,
                         const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::OutputParameter >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::OutputParameter >
       OutputParameter_ (::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d,
                         ::xml_schema::flags f = 0,
                         const ::xml_schema::properties& p = ::xml_schema::properties ());
@@ -3032,18 +2939,18 @@ namespace namespaces
       // Parse a URI or a local file.
       //
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       OutputParameterName (const ::std::string& uri,
                            ::xml_schema::flags f = 0,
                            const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       OutputParameterName (const ::std::string& uri,
                            ::xml_schema::error_handler& eh,
                            ::xml_schema::flags f = 0,
                            const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       OutputParameterName (const ::std::string& uri,
                            ::xercesc::DOMErrorHandler& eh,
                            ::xml_schema::flags f = 0,
@@ -3052,37 +2959,37 @@ namespace namespaces
       // Parse std::istream.
       //
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       OutputParameterName (::std::istream& is,
                            ::xml_schema::flags f = 0,
                            const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       OutputParameterName (::std::istream& is,
                            ::xml_schema::error_handler& eh,
                            ::xml_schema::flags f = 0,
                            const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       OutputParameterName (::std::istream& is,
                            ::xercesc::DOMErrorHandler& eh,
                            ::xml_schema::flags f = 0,
                            const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       OutputParameterName (::std::istream& is,
                            const ::std::string& id,
                            ::xml_schema::flags f = 0,
                            const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       OutputParameterName (::std::istream& is,
                            const ::std::string& id,
                            ::xml_schema::error_handler& eh,
                            ::xml_schema::flags f = 0,
                            const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       OutputParameterName (::std::istream& is,
                            const ::std::string& id,
                            ::xercesc::DOMErrorHandler& eh,
@@ -3092,18 +2999,18 @@ namespace namespaces
       // Parse xercesc::InputSource.
       //
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       OutputParameterName (::xercesc::InputSource& is,
                            ::xml_schema::flags f = 0,
                            const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       OutputParameterName (::xercesc::InputSource& is,
                            ::xml_schema::error_handler& eh,
                            ::xml_schema::flags f = 0,
                            const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       OutputParameterName (::xercesc::InputSource& is,
                            ::xercesc::DOMErrorHandler& eh,
                            ::xml_schema::flags f = 0,
@@ -3112,12 +3019,12 @@ namespace namespaces
       // Parse xercesc::DOMDocument.
       //
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       OutputParameterName (const ::xercesc::DOMDocument& d,
                            ::xml_schema::flags f = 0,
                            const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       OutputParameterName (::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d,
                            ::xml_schema::flags f = 0,
                            const ::xml_schema::properties& p = ::xml_schema::properties ());
@@ -3125,18 +3032,18 @@ namespace namespaces
       // Parse a URI or a local file.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_Transformation >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_Transformation >
       Property_Map_Transformation_ (const ::std::string& uri,
                                     ::xml_schema::flags f = 0,
                                     const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_Transformation >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_Transformation >
       Property_Map_Transformation_ (const ::std::string& uri,
                                     ::xml_schema::error_handler& eh,
                                     ::xml_schema::flags f = 0,
                                     const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_Transformation >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_Transformation >
       Property_Map_Transformation_ (const ::std::string& uri,
                                     ::xercesc::DOMErrorHandler& eh,
                                     ::xml_schema::flags f = 0,
@@ -3145,37 +3052,37 @@ namespace namespaces
       // Parse std::istream.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_Transformation >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_Transformation >
       Property_Map_Transformation_ (::std::istream& is,
                                     ::xml_schema::flags f = 0,
                                     const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_Transformation >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_Transformation >
       Property_Map_Transformation_ (::std::istream& is,
                                     ::xml_schema::error_handler& eh,
                                     ::xml_schema::flags f = 0,
                                     const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_Transformation >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_Transformation >
       Property_Map_Transformation_ (::std::istream& is,
                                     ::xercesc::DOMErrorHandler& eh,
                                     ::xml_schema::flags f = 0,
                                     const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_Transformation >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_Transformation >
       Property_Map_Transformation_ (::std::istream& is,
                                     const ::std::string& id,
                                     ::xml_schema::flags f = 0,
                                     const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_Transformation >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_Transformation >
       Property_Map_Transformation_ (::std::istream& is,
                                     const ::std::string& id,
                                     ::xml_schema::error_handler& eh,
                                     ::xml_schema::flags f = 0,
                                     const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_Transformation >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_Transformation >
       Property_Map_Transformation_ (::std::istream& is,
                                     const ::std::string& id,
                                     ::xercesc::DOMErrorHandler& eh,
@@ -3185,18 +3092,18 @@ namespace namespaces
       // Parse xercesc::InputSource.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_Transformation >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_Transformation >
       Property_Map_Transformation_ (::xercesc::InputSource& is,
                                     ::xml_schema::flags f = 0,
                                     const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_Transformation >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_Transformation >
       Property_Map_Transformation_ (::xercesc::InputSource& is,
                                     ::xml_schema::error_handler& eh,
                                     ::xml_schema::flags f = 0,
                                     const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_Transformation >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_Transformation >
       Property_Map_Transformation_ (::xercesc::InputSource& is,
                                     ::xercesc::DOMErrorHandler& eh,
                                     ::xml_schema::flags f = 0,
@@ -3205,12 +3112,12 @@ namespace namespaces
       // Parse xercesc::DOMDocument.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_Transformation >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_Transformation >
       Property_Map_Transformation_ (const ::xercesc::DOMDocument& d,
                                     ::xml_schema::flags f = 0,
                                     const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_Transformation >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_Transformation >
       Property_Map_Transformation_ (::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d,
                                     ::xml_schema::flags f = 0,
                                     const ::xml_schema::properties& p = ::xml_schema::properties ());
@@ -3218,18 +3125,18 @@ namespace namespaces
       // Parse a URI or a local file.
       //
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Property_Map_Transformation_Name (const ::std::string& uri,
                                         ::xml_schema::flags f = 0,
                                         const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Property_Map_Transformation_Name (const ::std::string& uri,
                                         ::xml_schema::error_handler& eh,
                                         ::xml_schema::flags f = 0,
                                         const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Property_Map_Transformation_Name (const ::std::string& uri,
                                         ::xercesc::DOMErrorHandler& eh,
                                         ::xml_schema::flags f = 0,
@@ -3238,37 +3145,37 @@ namespace namespaces
       // Parse std::istream.
       //
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Property_Map_Transformation_Name (::std::istream& is,
                                         ::xml_schema::flags f = 0,
                                         const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Property_Map_Transformation_Name (::std::istream& is,
                                         ::xml_schema::error_handler& eh,
                                         ::xml_schema::flags f = 0,
                                         const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Property_Map_Transformation_Name (::std::istream& is,
                                         ::xercesc::DOMErrorHandler& eh,
                                         ::xml_schema::flags f = 0,
                                         const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Property_Map_Transformation_Name (::std::istream& is,
                                         const ::std::string& id,
                                         ::xml_schema::flags f = 0,
                                         const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Property_Map_Transformation_Name (::std::istream& is,
                                         const ::std::string& id,
                                         ::xml_schema::error_handler& eh,
                                         ::xml_schema::flags f = 0,
                                         const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Property_Map_Transformation_Name (::std::istream& is,
                                         const ::std::string& id,
                                         ::xercesc::DOMErrorHandler& eh,
@@ -3278,18 +3185,18 @@ namespace namespaces
       // Parse xercesc::InputSource.
       //
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Property_Map_Transformation_Name (::xercesc::InputSource& is,
                                         ::xml_schema::flags f = 0,
                                         const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Property_Map_Transformation_Name (::xercesc::InputSource& is,
                                         ::xml_schema::error_handler& eh,
                                         ::xml_schema::flags f = 0,
                                         const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Property_Map_Transformation_Name (::xercesc::InputSource& is,
                                         ::xercesc::DOMErrorHandler& eh,
                                         ::xml_schema::flags f = 0,
@@ -3298,12 +3205,12 @@ namespace namespaces
       // Parse xercesc::DOMDocument.
       //
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Property_Map_Transformation_Name (const ::xercesc::DOMDocument& d,
                                         ::xml_schema::flags f = 0,
                                         const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Property_Map_Transformation_Name (::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d,
                                         ::xml_schema::flags f = 0,
                                         const ::xml_schema::properties& p = ::xml_schema::properties ());
@@ -3311,18 +3218,18 @@ namespace namespaces
       // Parse a URI or a local file.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_One2One >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_One2One >
       Property_Map_One2One_ (const ::std::string& uri,
                              ::xml_schema::flags f = 0,
                              const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_One2One >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_One2One >
       Property_Map_One2One_ (const ::std::string& uri,
                              ::xml_schema::error_handler& eh,
                              ::xml_schema::flags f = 0,
                              const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_One2One >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_One2One >
       Property_Map_One2One_ (const ::std::string& uri,
                              ::xercesc::DOMErrorHandler& eh,
                              ::xml_schema::flags f = 0,
@@ -3331,37 +3238,37 @@ namespace namespaces
       // Parse std::istream.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_One2One >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_One2One >
       Property_Map_One2One_ (::std::istream& is,
                              ::xml_schema::flags f = 0,
                              const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_One2One >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_One2One >
       Property_Map_One2One_ (::std::istream& is,
                              ::xml_schema::error_handler& eh,
                              ::xml_schema::flags f = 0,
                              const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_One2One >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_One2One >
       Property_Map_One2One_ (::std::istream& is,
                              ::xercesc::DOMErrorHandler& eh,
                              ::xml_schema::flags f = 0,
                              const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_One2One >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_One2One >
       Property_Map_One2One_ (::std::istream& is,
                              const ::std::string& id,
                              ::xml_schema::flags f = 0,
                              const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_One2One >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_One2One >
       Property_Map_One2One_ (::std::istream& is,
                              const ::std::string& id,
                              ::xml_schema::error_handler& eh,
                              ::xml_schema::flags f = 0,
                              const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_One2One >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_One2One >
       Property_Map_One2One_ (::std::istream& is,
                              const ::std::string& id,
                              ::xercesc::DOMErrorHandler& eh,
@@ -3371,18 +3278,18 @@ namespace namespaces
       // Parse xercesc::InputSource.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_One2One >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_One2One >
       Property_Map_One2One_ (::xercesc::InputSource& is,
                              ::xml_schema::flags f = 0,
                              const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_One2One >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_One2One >
       Property_Map_One2One_ (::xercesc::InputSource& is,
                              ::xml_schema::error_handler& eh,
                              ::xml_schema::flags f = 0,
                              const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_One2One >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_One2One >
       Property_Map_One2One_ (::xercesc::InputSource& is,
                              ::xercesc::DOMErrorHandler& eh,
                              ::xml_schema::flags f = 0,
@@ -3391,12 +3298,12 @@ namespace namespaces
       // Parse xercesc::DOMDocument.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_One2One >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_One2One >
       Property_Map_One2One_ (const ::xercesc::DOMDocument& d,
                              ::xml_schema::flags f = 0,
                              const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_One2One >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_One2One >
       Property_Map_One2One_ (::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d,
                              ::xml_schema::flags f = 0,
                              const ::xml_schema::properties& p = ::xml_schema::properties ());
@@ -3404,18 +3311,18 @@ namespace namespaces
       // Parse a URI or a local file.
       //
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Property_Map_One2One_Name (const ::std::string& uri,
                                  ::xml_schema::flags f = 0,
                                  const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Property_Map_One2One_Name (const ::std::string& uri,
                                  ::xml_schema::error_handler& eh,
                                  ::xml_schema::flags f = 0,
                                  const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Property_Map_One2One_Name (const ::std::string& uri,
                                  ::xercesc::DOMErrorHandler& eh,
                                  ::xml_schema::flags f = 0,
@@ -3424,37 +3331,37 @@ namespace namespaces
       // Parse std::istream.
       //
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Property_Map_One2One_Name (::std::istream& is,
                                  ::xml_schema::flags f = 0,
                                  const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Property_Map_One2One_Name (::std::istream& is,
                                  ::xml_schema::error_handler& eh,
                                  ::xml_schema::flags f = 0,
                                  const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Property_Map_One2One_Name (::std::istream& is,
                                  ::xercesc::DOMErrorHandler& eh,
                                  ::xml_schema::flags f = 0,
                                  const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Property_Map_One2One_Name (::std::istream& is,
                                  const ::std::string& id,
                                  ::xml_schema::flags f = 0,
                                  const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Property_Map_One2One_Name (::std::istream& is,
                                  const ::std::string& id,
                                  ::xml_schema::error_handler& eh,
                                  ::xml_schema::flags f = 0,
                                  const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Property_Map_One2One_Name (::std::istream& is,
                                  const ::std::string& id,
                                  ::xercesc::DOMErrorHandler& eh,
@@ -3464,18 +3371,18 @@ namespace namespaces
       // Parse xercesc::InputSource.
       //
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Property_Map_One2One_Name (::xercesc::InputSource& is,
                                  ::xml_schema::flags f = 0,
                                  const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Property_Map_One2One_Name (::xercesc::InputSource& is,
                                  ::xml_schema::error_handler& eh,
                                  ::xml_schema::flags f = 0,
                                  const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Property_Map_One2One_Name (::xercesc::InputSource& is,
                                  ::xercesc::DOMErrorHandler& eh,
                                  ::xml_schema::flags f = 0,
@@ -3484,12 +3391,12 @@ namespace namespaces
       // Parse xercesc::DOMDocument.
       //
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Property_Map_One2One_Name (const ::xercesc::DOMDocument& d,
                                  ::xml_schema::flags f = 0,
                                  const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Property_Map_One2One_Name (::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d,
                                  ::xml_schema::flags f = 0,
                                  const ::xml_schema::properties& p = ::xml_schema::properties ());
@@ -3497,18 +3404,18 @@ namespace namespaces
       // Parse a URI or a local file.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_Gap >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_Gap >
       Property_Map_Gap_ (const ::std::string& uri,
                          ::xml_schema::flags f = 0,
                          const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_Gap >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_Gap >
       Property_Map_Gap_ (const ::std::string& uri,
                          ::xml_schema::error_handler& eh,
                          ::xml_schema::flags f = 0,
                          const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_Gap >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_Gap >
       Property_Map_Gap_ (const ::std::string& uri,
                          ::xercesc::DOMErrorHandler& eh,
                          ::xml_schema::flags f = 0,
@@ -3517,37 +3424,37 @@ namespace namespaces
       // Parse std::istream.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_Gap >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_Gap >
       Property_Map_Gap_ (::std::istream& is,
                          ::xml_schema::flags f = 0,
                          const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_Gap >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_Gap >
       Property_Map_Gap_ (::std::istream& is,
                          ::xml_schema::error_handler& eh,
                          ::xml_schema::flags f = 0,
                          const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_Gap >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_Gap >
       Property_Map_Gap_ (::std::istream& is,
                          ::xercesc::DOMErrorHandler& eh,
                          ::xml_schema::flags f = 0,
                          const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_Gap >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_Gap >
       Property_Map_Gap_ (::std::istream& is,
                          const ::std::string& id,
                          ::xml_schema::flags f = 0,
                          const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_Gap >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_Gap >
       Property_Map_Gap_ (::std::istream& is,
                          const ::std::string& id,
                          ::xml_schema::error_handler& eh,
                          ::xml_schema::flags f = 0,
                          const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_Gap >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_Gap >
       Property_Map_Gap_ (::std::istream& is,
                          const ::std::string& id,
                          ::xercesc::DOMErrorHandler& eh,
@@ -3557,18 +3464,18 @@ namespace namespaces
       // Parse xercesc::InputSource.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_Gap >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_Gap >
       Property_Map_Gap_ (::xercesc::InputSource& is,
                          ::xml_schema::flags f = 0,
                          const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_Gap >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_Gap >
       Property_Map_Gap_ (::xercesc::InputSource& is,
                          ::xml_schema::error_handler& eh,
                          ::xml_schema::flags f = 0,
                          const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_Gap >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_Gap >
       Property_Map_Gap_ (::xercesc::InputSource& is,
                          ::xercesc::DOMErrorHandler& eh,
                          ::xml_schema::flags f = 0,
@@ -3577,12 +3484,12 @@ namespace namespaces
       // Parse xercesc::DOMDocument.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_Gap >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_Gap >
       Property_Map_Gap_ (const ::xercesc::DOMDocument& d,
                          ::xml_schema::flags f = 0,
                          const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_Gap >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Property_Map_Gap >
       Property_Map_Gap_ (::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d,
                          ::xml_schema::flags f = 0,
                          const ::xml_schema::properties& p = ::xml_schema::properties ());
@@ -3590,18 +3497,18 @@ namespace namespaces
       // Parse a URI or a local file.
       //
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Property_Map_Gap_Name (const ::std::string& uri,
                              ::xml_schema::flags f = 0,
                              const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Property_Map_Gap_Name (const ::std::string& uri,
                              ::xml_schema::error_handler& eh,
                              ::xml_schema::flags f = 0,
                              const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Property_Map_Gap_Name (const ::std::string& uri,
                              ::xercesc::DOMErrorHandler& eh,
                              ::xml_schema::flags f = 0,
@@ -3610,37 +3517,37 @@ namespace namespaces
       // Parse std::istream.
       //
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Property_Map_Gap_Name (::std::istream& is,
                              ::xml_schema::flags f = 0,
                              const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Property_Map_Gap_Name (::std::istream& is,
                              ::xml_schema::error_handler& eh,
                              ::xml_schema::flags f = 0,
                              const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Property_Map_Gap_Name (::std::istream& is,
                              ::xercesc::DOMErrorHandler& eh,
                              ::xml_schema::flags f = 0,
                              const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Property_Map_Gap_Name (::std::istream& is,
                              const ::std::string& id,
                              ::xml_schema::flags f = 0,
                              const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Property_Map_Gap_Name (::std::istream& is,
                              const ::std::string& id,
                              ::xml_schema::error_handler& eh,
                              ::xml_schema::flags f = 0,
                              const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Property_Map_Gap_Name (::std::istream& is,
                              const ::std::string& id,
                              ::xercesc::DOMErrorHandler& eh,
@@ -3650,18 +3557,18 @@ namespace namespaces
       // Parse xercesc::InputSource.
       //
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Property_Map_Gap_Name (::xercesc::InputSource& is,
                              ::xml_schema::flags f = 0,
                              const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Property_Map_Gap_Name (::xercesc::InputSource& is,
                              ::xml_schema::error_handler& eh,
                              ::xml_schema::flags f = 0,
                              const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Property_Map_Gap_Name (::xercesc::InputSource& is,
                              ::xercesc::DOMErrorHandler& eh,
                              ::xml_schema::flags f = 0,
@@ -3670,12 +3577,12 @@ namespace namespaces
       // Parse xercesc::DOMDocument.
       //
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Property_Map_Gap_Name (const ::xercesc::DOMDocument& d,
                              ::xml_schema::flags f = 0,
                              const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Property_Map_Gap_Name (::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d,
                              ::xml_schema::flags f = 0,
                              const ::xml_schema::properties& p = ::xml_schema::properties ());
@@ -3683,18 +3590,18 @@ namespace namespaces
       // Parse a URI or a local file.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_One2One >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_One2One >
       Component_Map_One2One_ (const ::std::string& uri,
                               ::xml_schema::flags f = 0,
                               const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_One2One >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_One2One >
       Component_Map_One2One_ (const ::std::string& uri,
                               ::xml_schema::error_handler& eh,
                               ::xml_schema::flags f = 0,
                               const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_One2One >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_One2One >
       Component_Map_One2One_ (const ::std::string& uri,
                               ::xercesc::DOMErrorHandler& eh,
                               ::xml_schema::flags f = 0,
@@ -3703,37 +3610,37 @@ namespace namespaces
       // Parse std::istream.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_One2One >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_One2One >
       Component_Map_One2One_ (::std::istream& is,
                               ::xml_schema::flags f = 0,
                               const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_One2One >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_One2One >
       Component_Map_One2One_ (::std::istream& is,
                               ::xml_schema::error_handler& eh,
                               ::xml_schema::flags f = 0,
                               const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_One2One >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_One2One >
       Component_Map_One2One_ (::std::istream& is,
                               ::xercesc::DOMErrorHandler& eh,
                               ::xml_schema::flags f = 0,
                               const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_One2One >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_One2One >
       Component_Map_One2One_ (::std::istream& is,
                               const ::std::string& id,
                               ::xml_schema::flags f = 0,
                               const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_One2One >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_One2One >
       Component_Map_One2One_ (::std::istream& is,
                               const ::std::string& id,
                               ::xml_schema::error_handler& eh,
                               ::xml_schema::flags f = 0,
                               const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_One2One >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_One2One >
       Component_Map_One2One_ (::std::istream& is,
                               const ::std::string& id,
                               ::xercesc::DOMErrorHandler& eh,
@@ -3743,18 +3650,18 @@ namespace namespaces
       // Parse xercesc::InputSource.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_One2One >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_One2One >
       Component_Map_One2One_ (::xercesc::InputSource& is,
                               ::xml_schema::flags f = 0,
                               const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_One2One >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_One2One >
       Component_Map_One2One_ (::xercesc::InputSource& is,
                               ::xml_schema::error_handler& eh,
                               ::xml_schema::flags f = 0,
                               const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_One2One >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_One2One >
       Component_Map_One2One_ (::xercesc::InputSource& is,
                               ::xercesc::DOMErrorHandler& eh,
                               ::xml_schema::flags f = 0,
@@ -3763,12 +3670,12 @@ namespace namespaces
       // Parse xercesc::DOMDocument.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_One2One >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_One2One >
       Component_Map_One2One_ (const ::xercesc::DOMDocument& d,
                               ::xml_schema::flags f = 0,
                               const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_One2One >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_One2One >
       Component_Map_One2One_ (::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d,
                               ::xml_schema::flags f = 0,
                               const ::xml_schema::properties& p = ::xml_schema::properties ());
@@ -3776,18 +3683,18 @@ namespace namespaces
       // Parse a URI or a local file.
       //
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Component_Map_One2One_Name (const ::std::string& uri,
                                   ::xml_schema::flags f = 0,
                                   const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Component_Map_One2One_Name (const ::std::string& uri,
                                   ::xml_schema::error_handler& eh,
                                   ::xml_schema::flags f = 0,
                                   const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Component_Map_One2One_Name (const ::std::string& uri,
                                   ::xercesc::DOMErrorHandler& eh,
                                   ::xml_schema::flags f = 0,
@@ -3796,37 +3703,37 @@ namespace namespaces
       // Parse std::istream.
       //
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Component_Map_One2One_Name (::std::istream& is,
                                   ::xml_schema::flags f = 0,
                                   const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Component_Map_One2One_Name (::std::istream& is,
                                   ::xml_schema::error_handler& eh,
                                   ::xml_schema::flags f = 0,
                                   const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Component_Map_One2One_Name (::std::istream& is,
                                   ::xercesc::DOMErrorHandler& eh,
                                   ::xml_schema::flags f = 0,
                                   const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Component_Map_One2One_Name (::std::istream& is,
                                   const ::std::string& id,
                                   ::xml_schema::flags f = 0,
                                   const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Component_Map_One2One_Name (::std::istream& is,
                                   const ::std::string& id,
                                   ::xml_schema::error_handler& eh,
                                   ::xml_schema::flags f = 0,
                                   const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Component_Map_One2One_Name (::std::istream& is,
                                   const ::std::string& id,
                                   ::xercesc::DOMErrorHandler& eh,
@@ -3836,18 +3743,18 @@ namespace namespaces
       // Parse xercesc::InputSource.
       //
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Component_Map_One2One_Name (::xercesc::InputSource& is,
                                   ::xml_schema::flags f = 0,
                                   const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Component_Map_One2One_Name (::xercesc::InputSource& is,
                                   ::xml_schema::error_handler& eh,
                                   ::xml_schema::flags f = 0,
                                   const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Component_Map_One2One_Name (::xercesc::InputSource& is,
                                   ::xercesc::DOMErrorHandler& eh,
                                   ::xml_schema::flags f = 0,
@@ -3856,12 +3763,12 @@ namespace namespaces
       // Parse xercesc::DOMDocument.
       //
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Component_Map_One2One_Name (const ::xercesc::DOMDocument& d,
                                   ::xml_schema::flags f = 0,
                                   const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Component_Map_One2One_Name (::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d,
                                   ::xml_schema::flags f = 0,
                                   const ::xml_schema::properties& p = ::xml_schema::properties ());
@@ -3869,18 +3776,18 @@ namespace namespaces
       // Parse a URI or a local file.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::ComponentMappingGroup >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::ComponentMappingGroup >
       ComponentMappingGroup_ (const ::std::string& uri,
                               ::xml_schema::flags f = 0,
                               const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::ComponentMappingGroup >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::ComponentMappingGroup >
       ComponentMappingGroup_ (const ::std::string& uri,
                               ::xml_schema::error_handler& eh,
                               ::xml_schema::flags f = 0,
                               const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::ComponentMappingGroup >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::ComponentMappingGroup >
       ComponentMappingGroup_ (const ::std::string& uri,
                               ::xercesc::DOMErrorHandler& eh,
                               ::xml_schema::flags f = 0,
@@ -3889,37 +3796,37 @@ namespace namespaces
       // Parse std::istream.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::ComponentMappingGroup >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::ComponentMappingGroup >
       ComponentMappingGroup_ (::std::istream& is,
                               ::xml_schema::flags f = 0,
                               const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::ComponentMappingGroup >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::ComponentMappingGroup >
       ComponentMappingGroup_ (::std::istream& is,
                               ::xml_schema::error_handler& eh,
                               ::xml_schema::flags f = 0,
                               const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::ComponentMappingGroup >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::ComponentMappingGroup >
       ComponentMappingGroup_ (::std::istream& is,
                               ::xercesc::DOMErrorHandler& eh,
                               ::xml_schema::flags f = 0,
                               const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::ComponentMappingGroup >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::ComponentMappingGroup >
       ComponentMappingGroup_ (::std::istream& is,
                               const ::std::string& id,
                               ::xml_schema::flags f = 0,
                               const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::ComponentMappingGroup >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::ComponentMappingGroup >
       ComponentMappingGroup_ (::std::istream& is,
                               const ::std::string& id,
                               ::xml_schema::error_handler& eh,
                               ::xml_schema::flags f = 0,
                               const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::ComponentMappingGroup >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::ComponentMappingGroup >
       ComponentMappingGroup_ (::std::istream& is,
                               const ::std::string& id,
                               ::xercesc::DOMErrorHandler& eh,
@@ -3929,18 +3836,18 @@ namespace namespaces
       // Parse xercesc::InputSource.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::ComponentMappingGroup >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::ComponentMappingGroup >
       ComponentMappingGroup_ (::xercesc::InputSource& is,
                               ::xml_schema::flags f = 0,
                               const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::ComponentMappingGroup >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::ComponentMappingGroup >
       ComponentMappingGroup_ (::xercesc::InputSource& is,
                               ::xml_schema::error_handler& eh,
                               ::xml_schema::flags f = 0,
                               const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::ComponentMappingGroup >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::ComponentMappingGroup >
       ComponentMappingGroup_ (::xercesc::InputSource& is,
                               ::xercesc::DOMErrorHandler& eh,
                               ::xml_schema::flags f = 0,
@@ -3949,12 +3856,12 @@ namespace namespaces
       // Parse xercesc::DOMDocument.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::ComponentMappingGroup >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::ComponentMappingGroup >
       ComponentMappingGroup_ (const ::xercesc::DOMDocument& d,
                               ::xml_schema::flags f = 0,
                               const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::ComponentMappingGroup >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::ComponentMappingGroup >
       ComponentMappingGroup_ (::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d,
                               ::xml_schema::flags f = 0,
                               const ::xml_schema::properties& p = ::xml_schema::properties ());
@@ -3962,18 +3869,18 @@ namespace namespaces
       // Parse a URI or a local file.
       //
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       ComponentMappingGroupName (const ::std::string& uri,
                                  ::xml_schema::flags f = 0,
                                  const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       ComponentMappingGroupName (const ::std::string& uri,
                                  ::xml_schema::error_handler& eh,
                                  ::xml_schema::flags f = 0,
                                  const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       ComponentMappingGroupName (const ::std::string& uri,
                                  ::xercesc::DOMErrorHandler& eh,
                                  ::xml_schema::flags f = 0,
@@ -3982,37 +3889,37 @@ namespace namespaces
       // Parse std::istream.
       //
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       ComponentMappingGroupName (::std::istream& is,
                                  ::xml_schema::flags f = 0,
                                  const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       ComponentMappingGroupName (::std::istream& is,
                                  ::xml_schema::error_handler& eh,
                                  ::xml_schema::flags f = 0,
                                  const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       ComponentMappingGroupName (::std::istream& is,
                                  ::xercesc::DOMErrorHandler& eh,
                                  ::xml_schema::flags f = 0,
                                  const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       ComponentMappingGroupName (::std::istream& is,
                                  const ::std::string& id,
                                  ::xml_schema::flags f = 0,
                                  const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       ComponentMappingGroupName (::std::istream& is,
                                  const ::std::string& id,
                                  ::xml_schema::error_handler& eh,
                                  ::xml_schema::flags f = 0,
                                  const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       ComponentMappingGroupName (::std::istream& is,
                                  const ::std::string& id,
                                  ::xercesc::DOMErrorHandler& eh,
@@ -4022,18 +3929,18 @@ namespace namespaces
       // Parse xercesc::InputSource.
       //
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       ComponentMappingGroupName (::xercesc::InputSource& is,
                                  ::xml_schema::flags f = 0,
                                  const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       ComponentMappingGroupName (::xercesc::InputSource& is,
                                  ::xml_schema::error_handler& eh,
                                  ::xml_schema::flags f = 0,
                                  const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       ComponentMappingGroupName (::xercesc::InputSource& is,
                                  ::xercesc::DOMErrorHandler& eh,
                                  ::xml_schema::flags f = 0,
@@ -4042,12 +3949,12 @@ namespace namespaces
       // Parse xercesc::DOMDocument.
       //
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       ComponentMappingGroupName (const ::xercesc::DOMDocument& d,
                                  ::xml_schema::flags f = 0,
                                  const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       ComponentMappingGroupName (::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d,
                                  ::xml_schema::flags f = 0,
                                  const ::xml_schema::properties& p = ::xml_schema::properties ());
@@ -4055,18 +3962,18 @@ namespace namespaces
       // Parse a URI or a local file.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_One2Many >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_One2Many >
       Component_Map_One2Many_ (const ::std::string& uri,
                                ::xml_schema::flags f = 0,
                                const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_One2Many >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_One2Many >
       Component_Map_One2Many_ (const ::std::string& uri,
                                ::xml_schema::error_handler& eh,
                                ::xml_schema::flags f = 0,
                                const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_One2Many >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_One2Many >
       Component_Map_One2Many_ (const ::std::string& uri,
                                ::xercesc::DOMErrorHandler& eh,
                                ::xml_schema::flags f = 0,
@@ -4075,37 +3982,37 @@ namespace namespaces
       // Parse std::istream.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_One2Many >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_One2Many >
       Component_Map_One2Many_ (::std::istream& is,
                                ::xml_schema::flags f = 0,
                                const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_One2Many >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_One2Many >
       Component_Map_One2Many_ (::std::istream& is,
                                ::xml_schema::error_handler& eh,
                                ::xml_schema::flags f = 0,
                                const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_One2Many >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_One2Many >
       Component_Map_One2Many_ (::std::istream& is,
                                ::xercesc::DOMErrorHandler& eh,
                                ::xml_schema::flags f = 0,
                                const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_One2Many >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_One2Many >
       Component_Map_One2Many_ (::std::istream& is,
                                const ::std::string& id,
                                ::xml_schema::flags f = 0,
                                const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_One2Many >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_One2Many >
       Component_Map_One2Many_ (::std::istream& is,
                                const ::std::string& id,
                                ::xml_schema::error_handler& eh,
                                ::xml_schema::flags f = 0,
                                const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_One2Many >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_One2Many >
       Component_Map_One2Many_ (::std::istream& is,
                                const ::std::string& id,
                                ::xercesc::DOMErrorHandler& eh,
@@ -4115,18 +4022,18 @@ namespace namespaces
       // Parse xercesc::InputSource.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_One2Many >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_One2Many >
       Component_Map_One2Many_ (::xercesc::InputSource& is,
                                ::xml_schema::flags f = 0,
                                const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_One2Many >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_One2Many >
       Component_Map_One2Many_ (::xercesc::InputSource& is,
                                ::xml_schema::error_handler& eh,
                                ::xml_schema::flags f = 0,
                                const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_One2Many >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_One2Many >
       Component_Map_One2Many_ (::xercesc::InputSource& is,
                                ::xercesc::DOMErrorHandler& eh,
                                ::xml_schema::flags f = 0,
@@ -4135,12 +4042,12 @@ namespace namespaces
       // Parse xercesc::DOMDocument.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_One2Many >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_One2Many >
       Component_Map_One2Many_ (const ::xercesc::DOMDocument& d,
                                ::xml_schema::flags f = 0,
                                const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_One2Many >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_One2Many >
       Component_Map_One2Many_ (::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d,
                                ::xml_schema::flags f = 0,
                                const ::xml_schema::properties& p = ::xml_schema::properties ());
@@ -4148,18 +4055,18 @@ namespace namespaces
       // Parse a URI or a local file.
       //
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Component_Map_One2Many_Name (const ::std::string& uri,
                                    ::xml_schema::flags f = 0,
                                    const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Component_Map_One2Many_Name (const ::std::string& uri,
                                    ::xml_schema::error_handler& eh,
                                    ::xml_schema::flags f = 0,
                                    const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Component_Map_One2Many_Name (const ::std::string& uri,
                                    ::xercesc::DOMErrorHandler& eh,
                                    ::xml_schema::flags f = 0,
@@ -4168,37 +4075,37 @@ namespace namespaces
       // Parse std::istream.
       //
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Component_Map_One2Many_Name (::std::istream& is,
                                    ::xml_schema::flags f = 0,
                                    const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Component_Map_One2Many_Name (::std::istream& is,
                                    ::xml_schema::error_handler& eh,
                                    ::xml_schema::flags f = 0,
                                    const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Component_Map_One2Many_Name (::std::istream& is,
                                    ::xercesc::DOMErrorHandler& eh,
                                    ::xml_schema::flags f = 0,
                                    const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Component_Map_One2Many_Name (::std::istream& is,
                                    const ::std::string& id,
                                    ::xml_schema::flags f = 0,
                                    const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Component_Map_One2Many_Name (::std::istream& is,
                                    const ::std::string& id,
                                    ::xml_schema::error_handler& eh,
                                    ::xml_schema::flags f = 0,
                                    const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Component_Map_One2Many_Name (::std::istream& is,
                                    const ::std::string& id,
                                    ::xercesc::DOMErrorHandler& eh,
@@ -4208,18 +4115,18 @@ namespace namespaces
       // Parse xercesc::InputSource.
       //
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Component_Map_One2Many_Name (::xercesc::InputSource& is,
                                    ::xml_schema::flags f = 0,
                                    const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Component_Map_One2Many_Name (::xercesc::InputSource& is,
                                    ::xml_schema::error_handler& eh,
                                    ::xml_schema::flags f = 0,
                                    const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Component_Map_One2Many_Name (::xercesc::InputSource& is,
                                    ::xercesc::DOMErrorHandler& eh,
                                    ::xml_schema::flags f = 0,
@@ -4228,12 +4135,12 @@ namespace namespaces
       // Parse xercesc::DOMDocument.
       //
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Component_Map_One2Many_Name (const ::xercesc::DOMDocument& d,
                                    ::xml_schema::flags f = 0,
                                    const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Component_Map_One2Many_Name (::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d,
                                    ::xml_schema::flags f = 0,
                                    const ::xml_schema::properties& p = ::xml_schema::properties ());
@@ -4241,18 +4148,18 @@ namespace namespaces
       // Parse a URI or a local file.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_Gap >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_Gap >
       Component_Map_Gap_ (const ::std::string& uri,
                           ::xml_schema::flags f = 0,
                           const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_Gap >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_Gap >
       Component_Map_Gap_ (const ::std::string& uri,
                           ::xml_schema::error_handler& eh,
                           ::xml_schema::flags f = 0,
                           const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_Gap >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_Gap >
       Component_Map_Gap_ (const ::std::string& uri,
                           ::xercesc::DOMErrorHandler& eh,
                           ::xml_schema::flags f = 0,
@@ -4261,37 +4168,37 @@ namespace namespaces
       // Parse std::istream.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_Gap >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_Gap >
       Component_Map_Gap_ (::std::istream& is,
                           ::xml_schema::flags f = 0,
                           const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_Gap >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_Gap >
       Component_Map_Gap_ (::std::istream& is,
                           ::xml_schema::error_handler& eh,
                           ::xml_schema::flags f = 0,
                           const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_Gap >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_Gap >
       Component_Map_Gap_ (::std::istream& is,
                           ::xercesc::DOMErrorHandler& eh,
                           ::xml_schema::flags f = 0,
                           const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_Gap >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_Gap >
       Component_Map_Gap_ (::std::istream& is,
                           const ::std::string& id,
                           ::xml_schema::flags f = 0,
                           const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_Gap >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_Gap >
       Component_Map_Gap_ (::std::istream& is,
                           const ::std::string& id,
                           ::xml_schema::error_handler& eh,
                           ::xml_schema::flags f = 0,
                           const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_Gap >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_Gap >
       Component_Map_Gap_ (::std::istream& is,
                           const ::std::string& id,
                           ::xercesc::DOMErrorHandler& eh,
@@ -4301,18 +4208,18 @@ namespace namespaces
       // Parse xercesc::InputSource.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_Gap >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_Gap >
       Component_Map_Gap_ (::xercesc::InputSource& is,
                           ::xml_schema::flags f = 0,
                           const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_Gap >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_Gap >
       Component_Map_Gap_ (::xercesc::InputSource& is,
                           ::xml_schema::error_handler& eh,
                           ::xml_schema::flags f = 0,
                           const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_Gap >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_Gap >
       Component_Map_Gap_ (::xercesc::InputSource& is,
                           ::xercesc::DOMErrorHandler& eh,
                           ::xml_schema::flags f = 0,
@@ -4321,12 +4228,12 @@ namespace namespaces
       // Parse xercesc::DOMDocument.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_Gap >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_Gap >
       Component_Map_Gap_ (const ::xercesc::DOMDocument& d,
                           ::xml_schema::flags f = 0,
                           const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_Gap >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Component_Map_Gap >
       Component_Map_Gap_ (::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d,
                           ::xml_schema::flags f = 0,
                           const ::xml_schema::properties& p = ::xml_schema::properties ());
@@ -4334,18 +4241,18 @@ namespace namespaces
       // Parse a URI or a local file.
       //
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Component_Map_Gap_Name (const ::std::string& uri,
                               ::xml_schema::flags f = 0,
                               const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Component_Map_Gap_Name (const ::std::string& uri,
                               ::xml_schema::error_handler& eh,
                               ::xml_schema::flags f = 0,
                               const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Component_Map_Gap_Name (const ::std::string& uri,
                               ::xercesc::DOMErrorHandler& eh,
                               ::xml_schema::flags f = 0,
@@ -4354,37 +4261,37 @@ namespace namespaces
       // Parse std::istream.
       //
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Component_Map_Gap_Name (::std::istream& is,
                               ::xml_schema::flags f = 0,
                               const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Component_Map_Gap_Name (::std::istream& is,
                               ::xml_schema::error_handler& eh,
                               ::xml_schema::flags f = 0,
                               const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Component_Map_Gap_Name (::std::istream& is,
                               ::xercesc::DOMErrorHandler& eh,
                               ::xml_schema::flags f = 0,
                               const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Component_Map_Gap_Name (::std::istream& is,
                               const ::std::string& id,
                               ::xml_schema::flags f = 0,
                               const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Component_Map_Gap_Name (::std::istream& is,
                               const ::std::string& id,
                               ::xml_schema::error_handler& eh,
                               ::xml_schema::flags f = 0,
                               const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Component_Map_Gap_Name (::std::istream& is,
                               const ::std::string& id,
                               ::xercesc::DOMErrorHandler& eh,
@@ -4394,18 +4301,18 @@ namespace namespaces
       // Parse xercesc::InputSource.
       //
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Component_Map_Gap_Name (::xercesc::InputSource& is,
                               ::xml_schema::flags f = 0,
                               const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Component_Map_Gap_Name (::xercesc::InputSource& is,
                               ::xml_schema::error_handler& eh,
                               ::xml_schema::flags f = 0,
                               const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Component_Map_Gap_Name (::xercesc::InputSource& is,
                               ::xercesc::DOMErrorHandler& eh,
                               ::xml_schema::flags f = 0,
@@ -4414,12 +4321,12 @@ namespace namespaces
       // Parse xercesc::DOMDocument.
       //
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Component_Map_Gap_Name (const ::xercesc::DOMDocument& d,
                               ::xml_schema::flags f = 0,
                               const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::xml_schema::idref >
+      __declspec(dllexport) ::std::auto_ptr< ::xml_schema::idref >
       Component_Map_Gap_Name (::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d,
                               ::xml_schema::flags f = 0,
                               const ::xml_schema::properties& p = ::xml_schema::properties ());
@@ -4427,18 +4334,18 @@ namespace namespaces
       // Parse a URI or a local file.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Library_Mapping_Rule >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Library_Mapping_Rule >
       Library_Mapping_Rule_ (const ::std::string& uri,
                              ::xml_schema::flags f = 0,
                              const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Library_Mapping_Rule >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Library_Mapping_Rule >
       Library_Mapping_Rule_ (const ::std::string& uri,
                              ::xml_schema::error_handler& eh,
                              ::xml_schema::flags f = 0,
                              const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Library_Mapping_Rule >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Library_Mapping_Rule >
       Library_Mapping_Rule_ (const ::std::string& uri,
                              ::xercesc::DOMErrorHandler& eh,
                              ::xml_schema::flags f = 0,
@@ -4447,37 +4354,37 @@ namespace namespaces
       // Parse std::istream.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Library_Mapping_Rule >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Library_Mapping_Rule >
       Library_Mapping_Rule_ (::std::istream& is,
                              ::xml_schema::flags f = 0,
                              const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Library_Mapping_Rule >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Library_Mapping_Rule >
       Library_Mapping_Rule_ (::std::istream& is,
                              ::xml_schema::error_handler& eh,
                              ::xml_schema::flags f = 0,
                              const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Library_Mapping_Rule >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Library_Mapping_Rule >
       Library_Mapping_Rule_ (::std::istream& is,
                              ::xercesc::DOMErrorHandler& eh,
                              ::xml_schema::flags f = 0,
                              const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Library_Mapping_Rule >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Library_Mapping_Rule >
       Library_Mapping_Rule_ (::std::istream& is,
                              const ::std::string& id,
                              ::xml_schema::flags f = 0,
                              const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Library_Mapping_Rule >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Library_Mapping_Rule >
       Library_Mapping_Rule_ (::std::istream& is,
                              const ::std::string& id,
                              ::xml_schema::error_handler& eh,
                              ::xml_schema::flags f = 0,
                              const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Library_Mapping_Rule >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Library_Mapping_Rule >
       Library_Mapping_Rule_ (::std::istream& is,
                              const ::std::string& id,
                              ::xercesc::DOMErrorHandler& eh,
@@ -4487,18 +4394,18 @@ namespace namespaces
       // Parse xercesc::InputSource.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Library_Mapping_Rule >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Library_Mapping_Rule >
       Library_Mapping_Rule_ (::xercesc::InputSource& is,
                              ::xml_schema::flags f = 0,
                              const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Library_Mapping_Rule >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Library_Mapping_Rule >
       Library_Mapping_Rule_ (::xercesc::InputSource& is,
                              ::xml_schema::error_handler& eh,
                              ::xml_schema::flags f = 0,
                              const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Library_Mapping_Rule >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Library_Mapping_Rule >
       Library_Mapping_Rule_ (::xercesc::InputSource& is,
                              ::xercesc::DOMErrorHandler& eh,
                              ::xml_schema::flags f = 0,
@@ -4507,12 +4414,12 @@ namespace namespaces
       // Parse xercesc::DOMDocument.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Library_Mapping_Rule >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Library_Mapping_Rule >
       Library_Mapping_Rule_ (const ::xercesc::DOMDocument& d,
                              ::xml_schema::flags f = 0,
                              const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Library_Mapping_Rule >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Library_Mapping_Rule >
       Library_Mapping_Rule_ (::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d,
                              ::xml_schema::flags f = 0,
                              const ::xml_schema::properties& p = ::xml_schema::properties ());
@@ -4520,18 +4427,18 @@ namespace namespaces
       // Parse a URI or a local file.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Data_Model_Map >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Data_Model_Map >
       Data_Model_Map_ (const ::std::string& uri,
                        ::xml_schema::flags f = 0,
                        const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Data_Model_Map >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Data_Model_Map >
       Data_Model_Map_ (const ::std::string& uri,
                        ::xml_schema::error_handler& eh,
                        ::xml_schema::flags f = 0,
                        const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Data_Model_Map >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Data_Model_Map >
       Data_Model_Map_ (const ::std::string& uri,
                        ::xercesc::DOMErrorHandler& eh,
                        ::xml_schema::flags f = 0,
@@ -4540,37 +4447,37 @@ namespace namespaces
       // Parse std::istream.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Data_Model_Map >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Data_Model_Map >
       Data_Model_Map_ (::std::istream& is,
                        ::xml_schema::flags f = 0,
                        const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Data_Model_Map >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Data_Model_Map >
       Data_Model_Map_ (::std::istream& is,
                        ::xml_schema::error_handler& eh,
                        ::xml_schema::flags f = 0,
                        const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Data_Model_Map >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Data_Model_Map >
       Data_Model_Map_ (::std::istream& is,
                        ::xercesc::DOMErrorHandler& eh,
                        ::xml_schema::flags f = 0,
                        const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Data_Model_Map >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Data_Model_Map >
       Data_Model_Map_ (::std::istream& is,
                        const ::std::string& id,
                        ::xml_schema::flags f = 0,
                        const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Data_Model_Map >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Data_Model_Map >
       Data_Model_Map_ (::std::istream& is,
                        const ::std::string& id,
                        ::xml_schema::error_handler& eh,
                        ::xml_schema::flags f = 0,
                        const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Data_Model_Map >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Data_Model_Map >
       Data_Model_Map_ (::std::istream& is,
                        const ::std::string& id,
                        ::xercesc::DOMErrorHandler& eh,
@@ -4580,18 +4487,18 @@ namespace namespaces
       // Parse xercesc::InputSource.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Data_Model_Map >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Data_Model_Map >
       Data_Model_Map_ (::xercesc::InputSource& is,
                        ::xml_schema::flags f = 0,
                        const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Data_Model_Map >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Data_Model_Map >
       Data_Model_Map_ (::xercesc::InputSource& is,
                        ::xml_schema::error_handler& eh,
                        ::xml_schema::flags f = 0,
                        const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Data_Model_Map >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Data_Model_Map >
       Data_Model_Map_ (::xercesc::InputSource& is,
                        ::xercesc::DOMErrorHandler& eh,
                        ::xml_schema::flags f = 0,
@@ -4600,12 +4507,12 @@ namespace namespaces
       // Parse xercesc::DOMDocument.
       //
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Data_Model_Map >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Data_Model_Map >
       Data_Model_Map_ (const ::xercesc::DOMDocument& d,
                        ::xml_schema::flags f = 0,
                        const ::xml_schema::properties& p = ::xml_schema::properties ());
 
-      ::std::auto_ptr< ::namespaces::Sim::DataMap::Data_Model_Map >
+      __declspec(dllexport) ::std::auto_ptr< ::namespaces::Sim::DataMap::Data_Model_Map >
       Data_Model_Map_ (::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d,
                        ::xml_schema::flags f = 0,
                        const ::xml_schema::properties& p = ::xml_schema::properties ());
@@ -4630,14 +4537,14 @@ namespace namespaces
       // Serialize to std::ostream.
       //
 
-      void
+      __declspec(dllexport) void
       Description (::std::ostream& os,
                    const ::xml_schema::string& x, 
                    const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                    const ::std::string& e = "UTF-8",
                    ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       Description (::std::ostream& os,
                    const ::xml_schema::string& x, 
                    ::xml_schema::error_handler& eh,
@@ -4645,7 +4552,7 @@ namespace namespaces
                    const ::std::string& e = "UTF-8",
                    ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       Description (::std::ostream& os,
                    const ::xml_schema::string& x, 
                    ::xercesc::DOMErrorHandler& eh,
@@ -4656,14 +4563,14 @@ namespace namespaces
       // Serialize to xercesc::XMLFormatTarget.
       //
 
-      void
+      __declspec(dllexport) void
       Description (::xercesc::XMLFormatTarget& ft,
                    const ::xml_schema::string& x, 
                    const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                    const ::std::string& e = "UTF-8",
                    ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       Description (::xercesc::XMLFormatTarget& ft,
                    const ::xml_schema::string& x, 
                    ::xml_schema::error_handler& eh,
@@ -4671,7 +4578,7 @@ namespace namespaces
                    const ::std::string& e = "UTF-8",
                    ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       Description (::xercesc::XMLFormatTarget& ft,
                    const ::xml_schema::string& x, 
                    ::xercesc::DOMErrorHandler& eh,
@@ -4682,7 +4589,7 @@ namespace namespaces
       // Serialize to an existing xercesc::DOMDocument.
       //
 
-      void
+      __declspec(dllexport) void
       Description (::xercesc::DOMDocument& d,
                    const ::xml_schema::string& x,
                    ::xml_schema::flags f = 0);
@@ -4690,7 +4597,7 @@ namespace namespaces
       // Serialize to a new xercesc::DOMDocument.
       //
 
-      ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
+      __declspec(dllexport) ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
       Description (const ::xml_schema::string& x, 
                    const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                    ::xml_schema::flags f = 0);
@@ -4698,14 +4605,14 @@ namespace namespaces
       // Serialize to std::ostream.
       //
 
-      void
+      __declspec(dllexport) void
       ParameterName (::std::ostream& os,
                      const ::namespaces::Sim::DataMap::StringList& x, 
                      const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                      const ::std::string& e = "UTF-8",
                      ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       ParameterName (::std::ostream& os,
                      const ::namespaces::Sim::DataMap::StringList& x, 
                      ::xml_schema::error_handler& eh,
@@ -4713,7 +4620,7 @@ namespace namespaces
                      const ::std::string& e = "UTF-8",
                      ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       ParameterName (::std::ostream& os,
                      const ::namespaces::Sim::DataMap::StringList& x, 
                      ::xercesc::DOMErrorHandler& eh,
@@ -4724,14 +4631,14 @@ namespace namespaces
       // Serialize to xercesc::XMLFormatTarget.
       //
 
-      void
+      __declspec(dllexport) void
       ParameterName (::xercesc::XMLFormatTarget& ft,
                      const ::namespaces::Sim::DataMap::StringList& x, 
                      const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                      const ::std::string& e = "UTF-8",
                      ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       ParameterName (::xercesc::XMLFormatTarget& ft,
                      const ::namespaces::Sim::DataMap::StringList& x, 
                      ::xml_schema::error_handler& eh,
@@ -4739,7 +4646,7 @@ namespace namespaces
                      const ::std::string& e = "UTF-8",
                      ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       ParameterName (::xercesc::XMLFormatTarget& ft,
                      const ::namespaces::Sim::DataMap::StringList& x, 
                      ::xercesc::DOMErrorHandler& eh,
@@ -4750,7 +4657,7 @@ namespace namespaces
       // Serialize to an existing xercesc::DOMDocument.
       //
 
-      void
+      __declspec(dllexport) void
       ParameterName (::xercesc::DOMDocument& d,
                      const ::namespaces::Sim::DataMap::StringList& x,
                      ::xml_schema::flags f = 0);
@@ -4758,7 +4665,7 @@ namespace namespaces
       // Serialize to a new xercesc::DOMDocument.
       //
 
-      ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
+      __declspec(dllexport) ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
       ParameterName (const ::namespaces::Sim::DataMap::StringList& x, 
                      const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                      ::xml_schema::flags f = 0);
@@ -4766,14 +4673,14 @@ namespace namespaces
       // Serialize to std::ostream.
       //
 
-      void
+      __declspec(dllexport) void
       CoefficientName (::std::ostream& os,
                        const ::xml_schema::string& x, 
                        const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                        const ::std::string& e = "UTF-8",
                        ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       CoefficientName (::std::ostream& os,
                        const ::xml_schema::string& x, 
                        ::xml_schema::error_handler& eh,
@@ -4781,7 +4688,7 @@ namespace namespaces
                        const ::std::string& e = "UTF-8",
                        ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       CoefficientName (::std::ostream& os,
                        const ::xml_schema::string& x, 
                        ::xercesc::DOMErrorHandler& eh,
@@ -4792,14 +4699,14 @@ namespace namespaces
       // Serialize to xercesc::XMLFormatTarget.
       //
 
-      void
+      __declspec(dllexport) void
       CoefficientName (::xercesc::XMLFormatTarget& ft,
                        const ::xml_schema::string& x, 
                        const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                        const ::std::string& e = "UTF-8",
                        ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       CoefficientName (::xercesc::XMLFormatTarget& ft,
                        const ::xml_schema::string& x, 
                        ::xml_schema::error_handler& eh,
@@ -4807,7 +4714,7 @@ namespace namespaces
                        const ::std::string& e = "UTF-8",
                        ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       CoefficientName (::xercesc::XMLFormatTarget& ft,
                        const ::xml_schema::string& x, 
                        ::xercesc::DOMErrorHandler& eh,
@@ -4818,7 +4725,7 @@ namespace namespaces
       // Serialize to an existing xercesc::DOMDocument.
       //
 
-      void
+      __declspec(dllexport) void
       CoefficientName (::xercesc::DOMDocument& d,
                        const ::xml_schema::string& x,
                        ::xml_schema::flags f = 0);
@@ -4826,7 +4733,7 @@ namespace namespaces
       // Serialize to a new xercesc::DOMDocument.
       //
 
-      ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
+      __declspec(dllexport) ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
       CoefficientName (const ::xml_schema::string& x, 
                        const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                        ::xml_schema::flags f = 0);
@@ -4834,14 +4741,14 @@ namespace namespaces
       // Serialize to std::ostream.
       //
 
-      void
+      __declspec(dllexport) void
       TargetPropertyName (::std::ostream& os,
                           const ::xml_schema::string& x, 
                           const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                           const ::std::string& e = "UTF-8",
                           ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       TargetPropertyName (::std::ostream& os,
                           const ::xml_schema::string& x, 
                           ::xml_schema::error_handler& eh,
@@ -4849,7 +4756,7 @@ namespace namespaces
                           const ::std::string& e = "UTF-8",
                           ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       TargetPropertyName (::std::ostream& os,
                           const ::xml_schema::string& x, 
                           ::xercesc::DOMErrorHandler& eh,
@@ -4860,14 +4767,14 @@ namespace namespaces
       // Serialize to xercesc::XMLFormatTarget.
       //
 
-      void
+      __declspec(dllexport) void
       TargetPropertyName (::xercesc::XMLFormatTarget& ft,
                           const ::xml_schema::string& x, 
                           const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                           const ::std::string& e = "UTF-8",
                           ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       TargetPropertyName (::xercesc::XMLFormatTarget& ft,
                           const ::xml_schema::string& x, 
                           ::xml_schema::error_handler& eh,
@@ -4875,7 +4782,7 @@ namespace namespaces
                           const ::std::string& e = "UTF-8",
                           ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       TargetPropertyName (::xercesc::XMLFormatTarget& ft,
                           const ::xml_schema::string& x, 
                           ::xercesc::DOMErrorHandler& eh,
@@ -4886,7 +4793,7 @@ namespace namespaces
       // Serialize to an existing xercesc::DOMDocument.
       //
 
-      void
+      __declspec(dllexport) void
       TargetPropertyName (::xercesc::DOMDocument& d,
                           const ::xml_schema::string& x,
                           ::xml_schema::flags f = 0);
@@ -4894,7 +4801,7 @@ namespace namespaces
       // Serialize to a new xercesc::DOMDocument.
       //
 
-      ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
+      __declspec(dllexport) ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
       TargetPropertyName (const ::xml_schema::string& x, 
                           const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                           ::xml_schema::flags f = 0);
@@ -4902,14 +4809,14 @@ namespace namespaces
       // Serialize to std::ostream.
       //
 
-      void
+      __declspec(dllexport) void
       TargetPropertyNameList (::std::ostream& os,
                               const ::namespaces::Sim::DataMap::RefStringList& x, 
                               const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                               const ::std::string& e = "UTF-8",
                               ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       TargetPropertyNameList (::std::ostream& os,
                               const ::namespaces::Sim::DataMap::RefStringList& x, 
                               ::xml_schema::error_handler& eh,
@@ -4917,7 +4824,7 @@ namespace namespaces
                               const ::std::string& e = "UTF-8",
                               ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       TargetPropertyNameList (::std::ostream& os,
                               const ::namespaces::Sim::DataMap::RefStringList& x, 
                               ::xercesc::DOMErrorHandler& eh,
@@ -4928,14 +4835,14 @@ namespace namespaces
       // Serialize to xercesc::XMLFormatTarget.
       //
 
-      void
+      __declspec(dllexport) void
       TargetPropertyNameList (::xercesc::XMLFormatTarget& ft,
                               const ::namespaces::Sim::DataMap::RefStringList& x, 
                               const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                               const ::std::string& e = "UTF-8",
                               ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       TargetPropertyNameList (::xercesc::XMLFormatTarget& ft,
                               const ::namespaces::Sim::DataMap::RefStringList& x, 
                               ::xml_schema::error_handler& eh,
@@ -4943,7 +4850,7 @@ namespace namespaces
                               const ::std::string& e = "UTF-8",
                               ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       TargetPropertyNameList (::xercesc::XMLFormatTarget& ft,
                               const ::namespaces::Sim::DataMap::RefStringList& x, 
                               ::xercesc::DOMErrorHandler& eh,
@@ -4954,7 +4861,7 @@ namespace namespaces
       // Serialize to an existing xercesc::DOMDocument.
       //
 
-      void
+      __declspec(dllexport) void
       TargetPropertyNameList (::xercesc::DOMDocument& d,
                               const ::namespaces::Sim::DataMap::RefStringList& x,
                               ::xml_schema::flags f = 0);
@@ -4962,7 +4869,7 @@ namespace namespaces
       // Serialize to a new xercesc::DOMDocument.
       //
 
-      ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
+      __declspec(dllexport) ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
       TargetPropertyNameList (const ::namespaces::Sim::DataMap::RefStringList& x, 
                               const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                               ::xml_schema::flags f = 0);
@@ -4970,14 +4877,14 @@ namespace namespaces
       // Serialize to std::ostream.
       //
 
-      void
+      __declspec(dllexport) void
       SourceComponentName (::std::ostream& os,
                            const ::namespaces::Sim::DataMap::RefString& x, 
                            const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                            const ::std::string& e = "UTF-8",
                            ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       SourceComponentName (::std::ostream& os,
                            const ::namespaces::Sim::DataMap::RefString& x, 
                            ::xml_schema::error_handler& eh,
@@ -4985,7 +4892,7 @@ namespace namespaces
                            const ::std::string& e = "UTF-8",
                            ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       SourceComponentName (::std::ostream& os,
                            const ::namespaces::Sim::DataMap::RefString& x, 
                            ::xercesc::DOMErrorHandler& eh,
@@ -4996,14 +4903,14 @@ namespace namespaces
       // Serialize to xercesc::XMLFormatTarget.
       //
 
-      void
+      __declspec(dllexport) void
       SourceComponentName (::xercesc::XMLFormatTarget& ft,
                            const ::namespaces::Sim::DataMap::RefString& x, 
                            const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                            const ::std::string& e = "UTF-8",
                            ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       SourceComponentName (::xercesc::XMLFormatTarget& ft,
                            const ::namespaces::Sim::DataMap::RefString& x, 
                            ::xml_schema::error_handler& eh,
@@ -5011,7 +4918,7 @@ namespace namespaces
                            const ::std::string& e = "UTF-8",
                            ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       SourceComponentName (::xercesc::XMLFormatTarget& ft,
                            const ::namespaces::Sim::DataMap::RefString& x, 
                            ::xercesc::DOMErrorHandler& eh,
@@ -5022,7 +4929,7 @@ namespace namespaces
       // Serialize to an existing xercesc::DOMDocument.
       //
 
-      void
+      __declspec(dllexport) void
       SourceComponentName (::xercesc::DOMDocument& d,
                            const ::namespaces::Sim::DataMap::RefString& x,
                            ::xml_schema::flags f = 0);
@@ -5030,7 +4937,7 @@ namespace namespaces
       // Serialize to a new xercesc::DOMDocument.
       //
 
-      ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
+      __declspec(dllexport) ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
       SourceComponentName (const ::namespaces::Sim::DataMap::RefString& x, 
                            const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                            ::xml_schema::flags f = 0);
@@ -5038,14 +4945,14 @@ namespace namespaces
       // Serialize to std::ostream.
       //
 
-      void
+      __declspec(dllexport) void
       TargetComponentName (::std::ostream& os,
                            const ::xml_schema::string& x, 
                            const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                            const ::std::string& e = "UTF-8",
                            ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       TargetComponentName (::std::ostream& os,
                            const ::xml_schema::string& x, 
                            ::xml_schema::error_handler& eh,
@@ -5053,7 +4960,7 @@ namespace namespaces
                            const ::std::string& e = "UTF-8",
                            ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       TargetComponentName (::std::ostream& os,
                            const ::xml_schema::string& x, 
                            ::xercesc::DOMErrorHandler& eh,
@@ -5064,14 +4971,14 @@ namespace namespaces
       // Serialize to xercesc::XMLFormatTarget.
       //
 
-      void
+      __declspec(dllexport) void
       TargetComponentName (::xercesc::XMLFormatTarget& ft,
                            const ::xml_schema::string& x, 
                            const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                            const ::std::string& e = "UTF-8",
                            ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       TargetComponentName (::xercesc::XMLFormatTarget& ft,
                            const ::xml_schema::string& x, 
                            ::xml_schema::error_handler& eh,
@@ -5079,7 +4986,7 @@ namespace namespaces
                            const ::std::string& e = "UTF-8",
                            ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       TargetComponentName (::xercesc::XMLFormatTarget& ft,
                            const ::xml_schema::string& x, 
                            ::xercesc::DOMErrorHandler& eh,
@@ -5090,7 +4997,7 @@ namespace namespaces
       // Serialize to an existing xercesc::DOMDocument.
       //
 
-      void
+      __declspec(dllexport) void
       TargetComponentName (::xercesc::DOMDocument& d,
                            const ::xml_schema::string& x,
                            ::xml_schema::flags f = 0);
@@ -5098,7 +5005,7 @@ namespace namespaces
       // Serialize to a new xercesc::DOMDocument.
       //
 
-      ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
+      __declspec(dllexport) ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
       TargetComponentName (const ::xml_schema::string& x, 
                            const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                            ::xml_schema::flags f = 0);
@@ -5106,14 +5013,14 @@ namespace namespaces
       // Serialize to std::ostream.
       //
 
-      void
+      __declspec(dllexport) void
       TargetLibraryName (::std::ostream& os,
                          const ::xml_schema::string& x, 
                          const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                          const ::std::string& e = "UTF-8",
                          ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       TargetLibraryName (::std::ostream& os,
                          const ::xml_schema::string& x, 
                          ::xml_schema::error_handler& eh,
@@ -5121,7 +5028,7 @@ namespace namespaces
                          const ::std::string& e = "UTF-8",
                          ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       TargetLibraryName (::std::ostream& os,
                          const ::xml_schema::string& x, 
                          ::xercesc::DOMErrorHandler& eh,
@@ -5132,14 +5039,14 @@ namespace namespaces
       // Serialize to xercesc::XMLFormatTarget.
       //
 
-      void
+      __declspec(dllexport) void
       TargetLibraryName (::xercesc::XMLFormatTarget& ft,
                          const ::xml_schema::string& x, 
                          const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                          const ::std::string& e = "UTF-8",
                          ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       TargetLibraryName (::xercesc::XMLFormatTarget& ft,
                          const ::xml_schema::string& x, 
                          ::xml_schema::error_handler& eh,
@@ -5147,7 +5054,7 @@ namespace namespaces
                          const ::std::string& e = "UTF-8",
                          ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       TargetLibraryName (::xercesc::XMLFormatTarget& ft,
                          const ::xml_schema::string& x, 
                          ::xercesc::DOMErrorHandler& eh,
@@ -5158,7 +5065,7 @@ namespace namespaces
       // Serialize to an existing xercesc::DOMDocument.
       //
 
-      void
+      __declspec(dllexport) void
       TargetLibraryName (::xercesc::DOMDocument& d,
                          const ::xml_schema::string& x,
                          ::xml_schema::flags f = 0);
@@ -5166,7 +5073,7 @@ namespace namespaces
       // Serialize to a new xercesc::DOMDocument.
       //
 
-      ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
+      __declspec(dllexport) ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
       TargetLibraryName (const ::xml_schema::string& x, 
                          const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                          ::xml_schema::flags f = 0);
@@ -5174,14 +5081,14 @@ namespace namespaces
       // Serialize to std::ostream.
       //
 
-      void
+      __declspec(dllexport) void
       TargetLocation (::std::ostream& os,
                       const ::namespaces::Sim::DataMap::StringList& x, 
                       const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                       const ::std::string& e = "UTF-8",
                       ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       TargetLocation (::std::ostream& os,
                       const ::namespaces::Sim::DataMap::StringList& x, 
                       ::xml_schema::error_handler& eh,
@@ -5189,7 +5096,7 @@ namespace namespaces
                       const ::std::string& e = "UTF-8",
                       ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       TargetLocation (::std::ostream& os,
                       const ::namespaces::Sim::DataMap::StringList& x, 
                       ::xercesc::DOMErrorHandler& eh,
@@ -5200,14 +5107,14 @@ namespace namespaces
       // Serialize to xercesc::XMLFormatTarget.
       //
 
-      void
+      __declspec(dllexport) void
       TargetLocation (::xercesc::XMLFormatTarget& ft,
                       const ::namespaces::Sim::DataMap::StringList& x, 
                       const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                       const ::std::string& e = "UTF-8",
                       ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       TargetLocation (::xercesc::XMLFormatTarget& ft,
                       const ::namespaces::Sim::DataMap::StringList& x, 
                       ::xml_schema::error_handler& eh,
@@ -5215,7 +5122,7 @@ namespace namespaces
                       const ::std::string& e = "UTF-8",
                       ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       TargetLocation (::xercesc::XMLFormatTarget& ft,
                       const ::namespaces::Sim::DataMap::StringList& x, 
                       ::xercesc::DOMErrorHandler& eh,
@@ -5226,7 +5133,7 @@ namespace namespaces
       // Serialize to an existing xercesc::DOMDocument.
       //
 
-      void
+      __declspec(dllexport) void
       TargetLocation (::xercesc::DOMDocument& d,
                       const ::namespaces::Sim::DataMap::StringList& x,
                       ::xml_schema::flags f = 0);
@@ -5234,7 +5141,7 @@ namespace namespaces
       // Serialize to a new xercesc::DOMDocument.
       //
 
-      ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
+      __declspec(dllexport) ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
       TargetLocation (const ::namespaces::Sim::DataMap::StringList& x, 
                       const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                       ::xml_schema::flags f = 0);
@@ -5242,14 +5149,14 @@ namespace namespaces
       // Serialize to std::ostream.
       //
 
-      void
+      __declspec(dllexport) void
       RecordInstance (::std::ostream& os,
                       const ::xml_schema::string& x, 
                       const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                       const ::std::string& e = "UTF-8",
                       ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       RecordInstance (::std::ostream& os,
                       const ::xml_schema::string& x, 
                       ::xml_schema::error_handler& eh,
@@ -5257,7 +5164,7 @@ namespace namespaces
                       const ::std::string& e = "UTF-8",
                       ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       RecordInstance (::std::ostream& os,
                       const ::xml_schema::string& x, 
                       ::xercesc::DOMErrorHandler& eh,
@@ -5268,14 +5175,14 @@ namespace namespaces
       // Serialize to xercesc::XMLFormatTarget.
       //
 
-      void
+      __declspec(dllexport) void
       RecordInstance (::xercesc::XMLFormatTarget& ft,
                       const ::xml_schema::string& x, 
                       const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                       const ::std::string& e = "UTF-8",
                       ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       RecordInstance (::xercesc::XMLFormatTarget& ft,
                       const ::xml_schema::string& x, 
                       ::xml_schema::error_handler& eh,
@@ -5283,7 +5190,7 @@ namespace namespaces
                       const ::std::string& e = "UTF-8",
                       ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       RecordInstance (::xercesc::XMLFormatTarget& ft,
                       const ::xml_schema::string& x, 
                       ::xercesc::DOMErrorHandler& eh,
@@ -5294,7 +5201,7 @@ namespace namespaces
       // Serialize to an existing xercesc::DOMDocument.
       //
 
-      void
+      __declspec(dllexport) void
       RecordInstance (::xercesc::DOMDocument& d,
                       const ::xml_schema::string& x,
                       ::xml_schema::flags f = 0);
@@ -5302,7 +5209,7 @@ namespace namespaces
       // Serialize to a new xercesc::DOMDocument.
       //
 
-      ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
+      __declspec(dllexport) ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
       RecordInstance (const ::xml_schema::string& x, 
                       const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                       ::xml_schema::flags f = 0);
@@ -5310,14 +5217,14 @@ namespace namespaces
       // Serialize to std::ostream.
       //
 
-      void
+      __declspec(dllexport) void
       RecordInstanceLocation (::std::ostream& os,
                               const ::xml_schema::string& x, 
                               const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                               const ::std::string& e = "UTF-8",
                               ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       RecordInstanceLocation (::std::ostream& os,
                               const ::xml_schema::string& x, 
                               ::xml_schema::error_handler& eh,
@@ -5325,7 +5232,7 @@ namespace namespaces
                               const ::std::string& e = "UTF-8",
                               ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       RecordInstanceLocation (::std::ostream& os,
                               const ::xml_schema::string& x, 
                               ::xercesc::DOMErrorHandler& eh,
@@ -5336,14 +5243,14 @@ namespace namespaces
       // Serialize to xercesc::XMLFormatTarget.
       //
 
-      void
+      __declspec(dllexport) void
       RecordInstanceLocation (::xercesc::XMLFormatTarget& ft,
                               const ::xml_schema::string& x, 
                               const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                               const ::std::string& e = "UTF-8",
                               ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       RecordInstanceLocation (::xercesc::XMLFormatTarget& ft,
                               const ::xml_schema::string& x, 
                               ::xml_schema::error_handler& eh,
@@ -5351,7 +5258,7 @@ namespace namespaces
                               const ::std::string& e = "UTF-8",
                               ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       RecordInstanceLocation (::xercesc::XMLFormatTarget& ft,
                               const ::xml_schema::string& x, 
                               ::xercesc::DOMErrorHandler& eh,
@@ -5362,7 +5269,7 @@ namespace namespaces
       // Serialize to an existing xercesc::DOMDocument.
       //
 
-      void
+      __declspec(dllexport) void
       RecordInstanceLocation (::xercesc::DOMDocument& d,
                               const ::xml_schema::string& x,
                               ::xml_schema::flags f = 0);
@@ -5370,7 +5277,7 @@ namespace namespaces
       // Serialize to a new xercesc::DOMDocument.
       //
 
-      ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
+      __declspec(dllexport) ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
       RecordInstanceLocation (const ::xml_schema::string& x, 
                               const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                               ::xml_schema::flags f = 0);
@@ -5378,14 +5285,14 @@ namespace namespaces
       // Serialize to std::ostream.
       //
 
-      void
+      __declspec(dllexport) void
       RecordLocation (::std::ostream& os,
                       const ::xml_schema::string& x, 
                       const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                       const ::std::string& e = "UTF-8",
                       ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       RecordLocation (::std::ostream& os,
                       const ::xml_schema::string& x, 
                       ::xml_schema::error_handler& eh,
@@ -5393,7 +5300,7 @@ namespace namespaces
                       const ::std::string& e = "UTF-8",
                       ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       RecordLocation (::std::ostream& os,
                       const ::xml_schema::string& x, 
                       ::xercesc::DOMErrorHandler& eh,
@@ -5404,14 +5311,14 @@ namespace namespaces
       // Serialize to xercesc::XMLFormatTarget.
       //
 
-      void
+      __declspec(dllexport) void
       RecordLocation (::xercesc::XMLFormatTarget& ft,
                       const ::xml_schema::string& x, 
                       const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                       const ::std::string& e = "UTF-8",
                       ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       RecordLocation (::xercesc::XMLFormatTarget& ft,
                       const ::xml_schema::string& x, 
                       ::xml_schema::error_handler& eh,
@@ -5419,7 +5326,7 @@ namespace namespaces
                       const ::std::string& e = "UTF-8",
                       ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       RecordLocation (::xercesc::XMLFormatTarget& ft,
                       const ::xml_schema::string& x, 
                       ::xercesc::DOMErrorHandler& eh,
@@ -5430,7 +5337,7 @@ namespace namespaces
       // Serialize to an existing xercesc::DOMDocument.
       //
 
-      void
+      __declspec(dllexport) void
       RecordLocation (::xercesc::DOMDocument& d,
                       const ::xml_schema::string& x,
                       ::xml_schema::flags f = 0);
@@ -5438,7 +5345,7 @@ namespace namespaces
       // Serialize to a new xercesc::DOMDocument.
       //
 
-      ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
+      __declspec(dllexport) ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
       RecordLocation (const ::xml_schema::string& x, 
                       const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                       ::xml_schema::flags f = 0);
@@ -5446,150 +5353,82 @@ namespace namespaces
       // Serialize to std::ostream.
       //
 
-      void
-      DefaultValueNumber (::std::ostream& os,
-                          const ::xml_schema::double_& x, 
-                          const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
-                          const ::std::string& e = "UTF-8",
-                          ::xml_schema::flags f = 0);
+      __declspec(dllexport) void
+      DefaultValue (::std::ostream& os,
+                    const ::xml_schema::string& x, 
+                    const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
+                    const ::std::string& e = "UTF-8",
+                    ::xml_schema::flags f = 0);
 
-      void
-      DefaultValueNumber (::std::ostream& os,
-                          const ::xml_schema::double_& x, 
-                          ::xml_schema::error_handler& eh,
-                          const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
-                          const ::std::string& e = "UTF-8",
-                          ::xml_schema::flags f = 0);
+      __declspec(dllexport) void
+      DefaultValue (::std::ostream& os,
+                    const ::xml_schema::string& x, 
+                    ::xml_schema::error_handler& eh,
+                    const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
+                    const ::std::string& e = "UTF-8",
+                    ::xml_schema::flags f = 0);
 
-      void
-      DefaultValueNumber (::std::ostream& os,
-                          const ::xml_schema::double_& x, 
-                          ::xercesc::DOMErrorHandler& eh,
-                          const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
-                          const ::std::string& e = "UTF-8",
-                          ::xml_schema::flags f = 0);
-
-      // Serialize to xercesc::XMLFormatTarget.
-      //
-
-      void
-      DefaultValueNumber (::xercesc::XMLFormatTarget& ft,
-                          const ::xml_schema::double_& x, 
-                          const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
-                          const ::std::string& e = "UTF-8",
-                          ::xml_schema::flags f = 0);
-
-      void
-      DefaultValueNumber (::xercesc::XMLFormatTarget& ft,
-                          const ::xml_schema::double_& x, 
-                          ::xml_schema::error_handler& eh,
-                          const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
-                          const ::std::string& e = "UTF-8",
-                          ::xml_schema::flags f = 0);
-
-      void
-      DefaultValueNumber (::xercesc::XMLFormatTarget& ft,
-                          const ::xml_schema::double_& x, 
-                          ::xercesc::DOMErrorHandler& eh,
-                          const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
-                          const ::std::string& e = "UTF-8",
-                          ::xml_schema::flags f = 0);
-
-      // Serialize to an existing xercesc::DOMDocument.
-      //
-
-      void
-      DefaultValueNumber (::xercesc::DOMDocument& d,
-                          const ::xml_schema::double_& x,
-                          ::xml_schema::flags f = 0);
-
-      // Serialize to a new xercesc::DOMDocument.
-      //
-
-      ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
-      DefaultValueNumber (const ::xml_schema::double_& x, 
-                          const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
-                          ::xml_schema::flags f = 0);
-
-      // Serialize to std::ostream.
-      //
-
-      void
-      DefaultValueString (::std::ostream& os,
-                          const ::xml_schema::string& x, 
-                          const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
-                          const ::std::string& e = "UTF-8",
-                          ::xml_schema::flags f = 0);
-
-      void
-      DefaultValueString (::std::ostream& os,
-                          const ::xml_schema::string& x, 
-                          ::xml_schema::error_handler& eh,
-                          const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
-                          const ::std::string& e = "UTF-8",
-                          ::xml_schema::flags f = 0);
-
-      void
-      DefaultValueString (::std::ostream& os,
-                          const ::xml_schema::string& x, 
-                          ::xercesc::DOMErrorHandler& eh,
-                          const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
-                          const ::std::string& e = "UTF-8",
-                          ::xml_schema::flags f = 0);
+      __declspec(dllexport) void
+      DefaultValue (::std::ostream& os,
+                    const ::xml_schema::string& x, 
+                    ::xercesc::DOMErrorHandler& eh,
+                    const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
+                    const ::std::string& e = "UTF-8",
+                    ::xml_schema::flags f = 0);
 
       // Serialize to xercesc::XMLFormatTarget.
       //
 
-      void
-      DefaultValueString (::xercesc::XMLFormatTarget& ft,
-                          const ::xml_schema::string& x, 
-                          const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
-                          const ::std::string& e = "UTF-8",
-                          ::xml_schema::flags f = 0);
+      __declspec(dllexport) void
+      DefaultValue (::xercesc::XMLFormatTarget& ft,
+                    const ::xml_schema::string& x, 
+                    const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
+                    const ::std::string& e = "UTF-8",
+                    ::xml_schema::flags f = 0);
 
-      void
-      DefaultValueString (::xercesc::XMLFormatTarget& ft,
-                          const ::xml_schema::string& x, 
-                          ::xml_schema::error_handler& eh,
-                          const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
-                          const ::std::string& e = "UTF-8",
-                          ::xml_schema::flags f = 0);
+      __declspec(dllexport) void
+      DefaultValue (::xercesc::XMLFormatTarget& ft,
+                    const ::xml_schema::string& x, 
+                    ::xml_schema::error_handler& eh,
+                    const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
+                    const ::std::string& e = "UTF-8",
+                    ::xml_schema::flags f = 0);
 
-      void
-      DefaultValueString (::xercesc::XMLFormatTarget& ft,
-                          const ::xml_schema::string& x, 
-                          ::xercesc::DOMErrorHandler& eh,
-                          const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
-                          const ::std::string& e = "UTF-8",
-                          ::xml_schema::flags f = 0);
+      __declspec(dllexport) void
+      DefaultValue (::xercesc::XMLFormatTarget& ft,
+                    const ::xml_schema::string& x, 
+                    ::xercesc::DOMErrorHandler& eh,
+                    const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
+                    const ::std::string& e = "UTF-8",
+                    ::xml_schema::flags f = 0);
 
       // Serialize to an existing xercesc::DOMDocument.
       //
 
-      void
-      DefaultValueString (::xercesc::DOMDocument& d,
-                          const ::xml_schema::string& x,
-                          ::xml_schema::flags f = 0);
+      __declspec(dllexport) void
+      DefaultValue (::xercesc::DOMDocument& d,
+                    const ::xml_schema::string& x,
+                    ::xml_schema::flags f = 0);
 
       // Serialize to a new xercesc::DOMDocument.
       //
 
-      ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
-      DefaultValueString (const ::xml_schema::string& x, 
-                          const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
-                          ::xml_schema::flags f = 0);
+      __declspec(dllexport) ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
+      DefaultValue (const ::xml_schema::string& x, 
+                    const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
+                    ::xml_schema::flags f = 0);
 
       // Serialize to std::ostream.
       //
 
-      void
+      __declspec(dllexport) void
       DefaultValueList (::std::ostream& os,
                         const ::namespaces::Sim::DataMap::StringList& x, 
                         const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                         const ::std::string& e = "UTF-8",
                         ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       DefaultValueList (::std::ostream& os,
                         const ::namespaces::Sim::DataMap::StringList& x, 
                         ::xml_schema::error_handler& eh,
@@ -5597,7 +5436,7 @@ namespace namespaces
                         const ::std::string& e = "UTF-8",
                         ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       DefaultValueList (::std::ostream& os,
                         const ::namespaces::Sim::DataMap::StringList& x, 
                         ::xercesc::DOMErrorHandler& eh,
@@ -5608,14 +5447,14 @@ namespace namespaces
       // Serialize to xercesc::XMLFormatTarget.
       //
 
-      void
+      __declspec(dllexport) void
       DefaultValueList (::xercesc::XMLFormatTarget& ft,
                         const ::namespaces::Sim::DataMap::StringList& x, 
                         const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                         const ::std::string& e = "UTF-8",
                         ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       DefaultValueList (::xercesc::XMLFormatTarget& ft,
                         const ::namespaces::Sim::DataMap::StringList& x, 
                         ::xml_schema::error_handler& eh,
@@ -5623,7 +5462,7 @@ namespace namespaces
                         const ::std::string& e = "UTF-8",
                         ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       DefaultValueList (::xercesc::XMLFormatTarget& ft,
                         const ::namespaces::Sim::DataMap::StringList& x, 
                         ::xercesc::DOMErrorHandler& eh,
@@ -5634,7 +5473,7 @@ namespace namespaces
       // Serialize to an existing xercesc::DOMDocument.
       //
 
-      void
+      __declspec(dllexport) void
       DefaultValueList (::xercesc::DOMDocument& d,
                         const ::namespaces::Sim::DataMap::StringList& x,
                         ::xml_schema::flags f = 0);
@@ -5642,7 +5481,7 @@ namespace namespaces
       // Serialize to a new xercesc::DOMDocument.
       //
 
-      ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
+      __declspec(dllexport) ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
       DefaultValueList (const ::namespaces::Sim::DataMap::StringList& x, 
                         const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                         ::xml_schema::flags f = 0);
@@ -5650,14 +5489,14 @@ namespace namespaces
       // Serialize to std::ostream.
       //
 
-      void
+      __declspec(dllexport) void
       RefValue (::std::ostream& os,
                 const ::namespaces::Sim::DataMap::RefStringList& x, 
                 const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                 const ::std::string& e = "UTF-8",
                 ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       RefValue (::std::ostream& os,
                 const ::namespaces::Sim::DataMap::RefStringList& x, 
                 ::xml_schema::error_handler& eh,
@@ -5665,7 +5504,7 @@ namespace namespaces
                 const ::std::string& e = "UTF-8",
                 ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       RefValue (::std::ostream& os,
                 const ::namespaces::Sim::DataMap::RefStringList& x, 
                 ::xercesc::DOMErrorHandler& eh,
@@ -5676,14 +5515,14 @@ namespace namespaces
       // Serialize to xercesc::XMLFormatTarget.
       //
 
-      void
+      __declspec(dllexport) void
       RefValue (::xercesc::XMLFormatTarget& ft,
                 const ::namespaces::Sim::DataMap::RefStringList& x, 
                 const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                 const ::std::string& e = "UTF-8",
                 ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       RefValue (::xercesc::XMLFormatTarget& ft,
                 const ::namespaces::Sim::DataMap::RefStringList& x, 
                 ::xml_schema::error_handler& eh,
@@ -5691,7 +5530,7 @@ namespace namespaces
                 const ::std::string& e = "UTF-8",
                 ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       RefValue (::xercesc::XMLFormatTarget& ft,
                 const ::namespaces::Sim::DataMap::RefStringList& x, 
                 ::xercesc::DOMErrorHandler& eh,
@@ -5702,7 +5541,7 @@ namespace namespaces
       // Serialize to an existing xercesc::DOMDocument.
       //
 
-      void
+      __declspec(dllexport) void
       RefValue (::xercesc::DOMDocument& d,
                 const ::namespaces::Sim::DataMap::RefStringList& x,
                 ::xml_schema::flags f = 0);
@@ -5710,7 +5549,7 @@ namespace namespaces
       // Serialize to a new xercesc::DOMDocument.
       //
 
-      ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
+      __declspec(dllexport) ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
       RefValue (const ::namespaces::Sim::DataMap::RefStringList& x, 
                 const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                 ::xml_schema::flags f = 0);
@@ -5718,14 +5557,14 @@ namespace namespaces
       // Serialize to std::ostream.
       //
 
-      void
+      __declspec(dllexport) void
       PropertyId (::std::ostream& os,
                   const ::xml_schema::id& x, 
                   const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                   const ::std::string& e = "UTF-8",
                   ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       PropertyId (::std::ostream& os,
                   const ::xml_schema::id& x, 
                   ::xml_schema::error_handler& eh,
@@ -5733,7 +5572,7 @@ namespace namespaces
                   const ::std::string& e = "UTF-8",
                   ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       PropertyId (::std::ostream& os,
                   const ::xml_schema::id& x, 
                   ::xercesc::DOMErrorHandler& eh,
@@ -5744,14 +5583,14 @@ namespace namespaces
       // Serialize to xercesc::XMLFormatTarget.
       //
 
-      void
+      __declspec(dllexport) void
       PropertyId (::xercesc::XMLFormatTarget& ft,
                   const ::xml_schema::id& x, 
                   const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                   const ::std::string& e = "UTF-8",
                   ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       PropertyId (::xercesc::XMLFormatTarget& ft,
                   const ::xml_schema::id& x, 
                   ::xml_schema::error_handler& eh,
@@ -5759,7 +5598,7 @@ namespace namespaces
                   const ::std::string& e = "UTF-8",
                   ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       PropertyId (::xercesc::XMLFormatTarget& ft,
                   const ::xml_schema::id& x, 
                   ::xercesc::DOMErrorHandler& eh,
@@ -5770,7 +5609,7 @@ namespace namespaces
       // Serialize to an existing xercesc::DOMDocument.
       //
 
-      void
+      __declspec(dllexport) void
       PropertyId (::xercesc::DOMDocument& d,
                   const ::xml_schema::id& x,
                   ::xml_schema::flags f = 0);
@@ -5778,7 +5617,7 @@ namespace namespaces
       // Serialize to a new xercesc::DOMDocument.
       //
 
-      ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
+      __declspec(dllexport) ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
       PropertyId (const ::xml_schema::id& x, 
                   const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                   ::xml_schema::flags f = 0);
@@ -5786,14 +5625,14 @@ namespace namespaces
       // Serialize to std::ostream.
       //
 
-      void
+      __declspec(dllexport) void
       PropertyIdList (::std::ostream& os,
                       const ::namespaces::Sim::DataMap::IdList& x, 
                       const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                       const ::std::string& e = "UTF-8",
                       ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       PropertyIdList (::std::ostream& os,
                       const ::namespaces::Sim::DataMap::IdList& x, 
                       ::xml_schema::error_handler& eh,
@@ -5801,7 +5640,7 @@ namespace namespaces
                       const ::std::string& e = "UTF-8",
                       ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       PropertyIdList (::std::ostream& os,
                       const ::namespaces::Sim::DataMap::IdList& x, 
                       ::xercesc::DOMErrorHandler& eh,
@@ -5812,14 +5651,14 @@ namespace namespaces
       // Serialize to xercesc::XMLFormatTarget.
       //
 
-      void
+      __declspec(dllexport) void
       PropertyIdList (::xercesc::XMLFormatTarget& ft,
                       const ::namespaces::Sim::DataMap::IdList& x, 
                       const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                       const ::std::string& e = "UTF-8",
                       ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       PropertyIdList (::xercesc::XMLFormatTarget& ft,
                       const ::namespaces::Sim::DataMap::IdList& x, 
                       ::xml_schema::error_handler& eh,
@@ -5827,7 +5666,7 @@ namespace namespaces
                       const ::std::string& e = "UTF-8",
                       ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       PropertyIdList (::xercesc::XMLFormatTarget& ft,
                       const ::namespaces::Sim::DataMap::IdList& x, 
                       ::xercesc::DOMErrorHandler& eh,
@@ -5838,7 +5677,7 @@ namespace namespaces
       // Serialize to an existing xercesc::DOMDocument.
       //
 
-      void
+      __declspec(dllexport) void
       PropertyIdList (::xercesc::DOMDocument& d,
                       const ::namespaces::Sim::DataMap::IdList& x,
                       ::xml_schema::flags f = 0);
@@ -5846,7 +5685,7 @@ namespace namespaces
       // Serialize to a new xercesc::DOMDocument.
       //
 
-      ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
+      __declspec(dllexport) ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
       PropertyIdList (const ::namespaces::Sim::DataMap::IdList& x, 
                       const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                       ::xml_schema::flags f = 0);
@@ -5854,14 +5693,14 @@ namespace namespaces
       // Serialize to std::ostream.
       //
 
-      void
+      __declspec(dllexport) void
       Value (::std::ostream& os,
              const ::xml_schema::double_& x, 
              const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
              const ::std::string& e = "UTF-8",
              ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       Value (::std::ostream& os,
              const ::xml_schema::double_& x, 
              ::xml_schema::error_handler& eh,
@@ -5869,7 +5708,7 @@ namespace namespaces
              const ::std::string& e = "UTF-8",
              ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       Value (::std::ostream& os,
              const ::xml_schema::double_& x, 
              ::xercesc::DOMErrorHandler& eh,
@@ -5880,14 +5719,14 @@ namespace namespaces
       // Serialize to xercesc::XMLFormatTarget.
       //
 
-      void
+      __declspec(dllexport) void
       Value (::xercesc::XMLFormatTarget& ft,
              const ::xml_schema::double_& x, 
              const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
              const ::std::string& e = "UTF-8",
              ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       Value (::xercesc::XMLFormatTarget& ft,
              const ::xml_schema::double_& x, 
              ::xml_schema::error_handler& eh,
@@ -5895,7 +5734,7 @@ namespace namespaces
              const ::std::string& e = "UTF-8",
              ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       Value (::xercesc::XMLFormatTarget& ft,
              const ::xml_schema::double_& x, 
              ::xercesc::DOMErrorHandler& eh,
@@ -5906,7 +5745,7 @@ namespace namespaces
       // Serialize to an existing xercesc::DOMDocument.
       //
 
-      void
+      __declspec(dllexport) void
       Value (::xercesc::DOMDocument& d,
              const ::xml_schema::double_& x,
              ::xml_schema::flags f = 0);
@@ -5914,7 +5753,7 @@ namespace namespaces
       // Serialize to a new xercesc::DOMDocument.
       //
 
-      ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
+      __declspec(dllexport) ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
       Value (const ::xml_schema::double_& x, 
              const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
              ::xml_schema::flags f = 0);
@@ -5922,14 +5761,14 @@ namespace namespaces
       // Serialize to std::ostream.
       //
 
-      void
+      __declspec(dllexport) void
       ValueList (::std::ostream& os,
                  const ::namespaces::Sim::DataMap::Map_DoubleList& x, 
                  const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                  const ::std::string& e = "UTF-8",
                  ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       ValueList (::std::ostream& os,
                  const ::namespaces::Sim::DataMap::Map_DoubleList& x, 
                  ::xml_schema::error_handler& eh,
@@ -5937,7 +5776,7 @@ namespace namespaces
                  const ::std::string& e = "UTF-8",
                  ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       ValueList (::std::ostream& os,
                  const ::namespaces::Sim::DataMap::Map_DoubleList& x, 
                  ::xercesc::DOMErrorHandler& eh,
@@ -5948,14 +5787,14 @@ namespace namespaces
       // Serialize to xercesc::XMLFormatTarget.
       //
 
-      void
+      __declspec(dllexport) void
       ValueList (::xercesc::XMLFormatTarget& ft,
                  const ::namespaces::Sim::DataMap::Map_DoubleList& x, 
                  const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                  const ::std::string& e = "UTF-8",
                  ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       ValueList (::xercesc::XMLFormatTarget& ft,
                  const ::namespaces::Sim::DataMap::Map_DoubleList& x, 
                  ::xml_schema::error_handler& eh,
@@ -5963,7 +5802,7 @@ namespace namespaces
                  const ::std::string& e = "UTF-8",
                  ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       ValueList (::xercesc::XMLFormatTarget& ft,
                  const ::namespaces::Sim::DataMap::Map_DoubleList& x, 
                  ::xercesc::DOMErrorHandler& eh,
@@ -5974,7 +5813,7 @@ namespace namespaces
       // Serialize to an existing xercesc::DOMDocument.
       //
 
-      void
+      __declspec(dllexport) void
       ValueList (::xercesc::DOMDocument& d,
                  const ::namespaces::Sim::DataMap::Map_DoubleList& x,
                  ::xml_schema::flags f = 0);
@@ -5982,7 +5821,7 @@ namespace namespaces
       // Serialize to a new xercesc::DOMDocument.
       //
 
-      ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
+      __declspec(dllexport) ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
       ValueList (const ::namespaces::Sim::DataMap::Map_DoubleList& x, 
                  const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                  ::xml_schema::flags f = 0);
@@ -5990,14 +5829,14 @@ namespace namespaces
       // Serialize to std::ostream.
       //
 
-      void
+      __declspec(dllexport) void
       IsReferenced (::std::ostream& os,
                     const ::xml_schema::boolean& x, 
                     const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                     const ::std::string& e = "UTF-8",
                     ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       IsReferenced (::std::ostream& os,
                     const ::xml_schema::boolean& x, 
                     ::xml_schema::error_handler& eh,
@@ -6005,7 +5844,7 @@ namespace namespaces
                     const ::std::string& e = "UTF-8",
                     ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       IsReferenced (::std::ostream& os,
                     const ::xml_schema::boolean& x, 
                     ::xercesc::DOMErrorHandler& eh,
@@ -6016,14 +5855,14 @@ namespace namespaces
       // Serialize to xercesc::XMLFormatTarget.
       //
 
-      void
+      __declspec(dllexport) void
       IsReferenced (::xercesc::XMLFormatTarget& ft,
                     const ::xml_schema::boolean& x, 
                     const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                     const ::std::string& e = "UTF-8",
                     ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       IsReferenced (::xercesc::XMLFormatTarget& ft,
                     const ::xml_schema::boolean& x, 
                     ::xml_schema::error_handler& eh,
@@ -6031,7 +5870,7 @@ namespace namespaces
                     const ::std::string& e = "UTF-8",
                     ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       IsReferenced (::xercesc::XMLFormatTarget& ft,
                     const ::xml_schema::boolean& x, 
                     ::xercesc::DOMErrorHandler& eh,
@@ -6042,7 +5881,7 @@ namespace namespaces
       // Serialize to an existing xercesc::DOMDocument.
       //
 
-      void
+      __declspec(dllexport) void
       IsReferenced (::xercesc::DOMDocument& d,
                     const ::xml_schema::boolean& x,
                     ::xml_schema::flags f = 0);
@@ -6050,7 +5889,7 @@ namespace namespaces
       // Serialize to a new xercesc::DOMDocument.
       //
 
-      ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
+      __declspec(dllexport) ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
       IsReferenced (const ::xml_schema::boolean& x, 
                     const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                     ::xml_schema::flags f = 0);
@@ -6058,14 +5897,14 @@ namespace namespaces
       // Serialize to std::ostream.
       //
 
-      void
+      __declspec(dllexport) void
       ValueType_ (::std::ostream& os,
                   const ::namespaces::Sim::DataMap::ValueType& x, 
                   const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                   const ::std::string& e = "UTF-8",
                   ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       ValueType_ (::std::ostream& os,
                   const ::namespaces::Sim::DataMap::ValueType& x, 
                   ::xml_schema::error_handler& eh,
@@ -6073,7 +5912,7 @@ namespace namespaces
                   const ::std::string& e = "UTF-8",
                   ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       ValueType_ (::std::ostream& os,
                   const ::namespaces::Sim::DataMap::ValueType& x, 
                   ::xercesc::DOMErrorHandler& eh,
@@ -6084,14 +5923,14 @@ namespace namespaces
       // Serialize to xercesc::XMLFormatTarget.
       //
 
-      void
+      __declspec(dllexport) void
       ValueType_ (::xercesc::XMLFormatTarget& ft,
                   const ::namespaces::Sim::DataMap::ValueType& x, 
                   const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                   const ::std::string& e = "UTF-8",
                   ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       ValueType_ (::xercesc::XMLFormatTarget& ft,
                   const ::namespaces::Sim::DataMap::ValueType& x, 
                   ::xml_schema::error_handler& eh,
@@ -6099,7 +5938,7 @@ namespace namespaces
                   const ::std::string& e = "UTF-8",
                   ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       ValueType_ (::xercesc::XMLFormatTarget& ft,
                   const ::namespaces::Sim::DataMap::ValueType& x, 
                   ::xercesc::DOMErrorHandler& eh,
@@ -6110,7 +5949,7 @@ namespace namespaces
       // Serialize to an existing xercesc::DOMDocument.
       //
 
-      void
+      __declspec(dllexport) void
       ValueType_ (::xercesc::DOMDocument& d,
                   const ::namespaces::Sim::DataMap::ValueType& x,
                   ::xml_schema::flags f = 0);
@@ -6118,7 +5957,7 @@ namespace namespaces
       // Serialize to a new xercesc::DOMDocument.
       //
 
-      ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
+      __declspec(dllexport) ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
       ValueType_ (const ::namespaces::Sim::DataMap::ValueType& x, 
                   const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                   ::xml_schema::flags f = 0);
@@ -6126,14 +5965,14 @@ namespace namespaces
       // Serialize to std::ostream.
       //
 
-      void
+      __declspec(dllexport) void
       ValueFormat (::std::ostream& os,
                    const ::namespaces::Sim::DataMap::StringList& x, 
                    const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                    const ::std::string& e = "UTF-8",
                    ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       ValueFormat (::std::ostream& os,
                    const ::namespaces::Sim::DataMap::StringList& x, 
                    ::xml_schema::error_handler& eh,
@@ -6141,7 +5980,7 @@ namespace namespaces
                    const ::std::string& e = "UTF-8",
                    ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       ValueFormat (::std::ostream& os,
                    const ::namespaces::Sim::DataMap::StringList& x, 
                    ::xercesc::DOMErrorHandler& eh,
@@ -6152,14 +5991,14 @@ namespace namespaces
       // Serialize to xercesc::XMLFormatTarget.
       //
 
-      void
+      __declspec(dllexport) void
       ValueFormat (::xercesc::XMLFormatTarget& ft,
                    const ::namespaces::Sim::DataMap::StringList& x, 
                    const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                    const ::std::string& e = "UTF-8",
                    ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       ValueFormat (::xercesc::XMLFormatTarget& ft,
                    const ::namespaces::Sim::DataMap::StringList& x, 
                    ::xml_schema::error_handler& eh,
@@ -6167,7 +6006,7 @@ namespace namespaces
                    const ::std::string& e = "UTF-8",
                    ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       ValueFormat (::xercesc::XMLFormatTarget& ft,
                    const ::namespaces::Sim::DataMap::StringList& x, 
                    ::xercesc::DOMErrorHandler& eh,
@@ -6178,7 +6017,7 @@ namespace namespaces
       // Serialize to an existing xercesc::DOMDocument.
       //
 
-      void
+      __declspec(dllexport) void
       ValueFormat (::xercesc::DOMDocument& d,
                    const ::namespaces::Sim::DataMap::StringList& x,
                    ::xml_schema::flags f = 0);
@@ -6186,7 +6025,7 @@ namespace namespaces
       // Serialize to a new xercesc::DOMDocument.
       //
 
-      ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
+      __declspec(dllexport) ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
       ValueFormat (const ::namespaces::Sim::DataMap::StringList& x, 
                    const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                    ::xml_schema::flags f = 0);
@@ -6194,14 +6033,14 @@ namespace namespaces
       // Serialize to std::ostream.
       //
 
-      void
+      __declspec(dllexport) void
       Function (::std::ostream& os,
                 const ::namespaces::Sim::DataMap::StringList& x, 
                 const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                 const ::std::string& e = "UTF-8",
                 ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       Function (::std::ostream& os,
                 const ::namespaces::Sim::DataMap::StringList& x, 
                 ::xml_schema::error_handler& eh,
@@ -6209,7 +6048,7 @@ namespace namespaces
                 const ::std::string& e = "UTF-8",
                 ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       Function (::std::ostream& os,
                 const ::namespaces::Sim::DataMap::StringList& x, 
                 ::xercesc::DOMErrorHandler& eh,
@@ -6220,14 +6059,14 @@ namespace namespaces
       // Serialize to xercesc::XMLFormatTarget.
       //
 
-      void
+      __declspec(dllexport) void
       Function (::xercesc::XMLFormatTarget& ft,
                 const ::namespaces::Sim::DataMap::StringList& x, 
                 const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                 const ::std::string& e = "UTF-8",
                 ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       Function (::xercesc::XMLFormatTarget& ft,
                 const ::namespaces::Sim::DataMap::StringList& x, 
                 ::xml_schema::error_handler& eh,
@@ -6235,7 +6074,7 @@ namespace namespaces
                 const ::std::string& e = "UTF-8",
                 ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       Function (::xercesc::XMLFormatTarget& ft,
                 const ::namespaces::Sim::DataMap::StringList& x, 
                 ::xercesc::DOMErrorHandler& eh,
@@ -6246,7 +6085,7 @@ namespace namespaces
       // Serialize to an existing xercesc::DOMDocument.
       //
 
-      void
+      __declspec(dllexport) void
       Function (::xercesc::DOMDocument& d,
                 const ::namespaces::Sim::DataMap::StringList& x,
                 ::xml_schema::flags f = 0);
@@ -6254,7 +6093,7 @@ namespace namespaces
       // Serialize to a new xercesc::DOMDocument.
       //
 
-      ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
+      __declspec(dllexport) ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
       Function (const ::namespaces::Sim::DataMap::StringList& x, 
                 const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                 ::xml_schema::flags f = 0);
@@ -6262,14 +6101,14 @@ namespace namespaces
       // Serialize to std::ostream.
       //
 
-      void
+      __declspec(dllexport) void
       InputParameter_ (::std::ostream& os,
                        const ::namespaces::Sim::DataMap::InputParameter& x, 
                        const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                        const ::std::string& e = "UTF-8",
                        ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       InputParameter_ (::std::ostream& os,
                        const ::namespaces::Sim::DataMap::InputParameter& x, 
                        ::xml_schema::error_handler& eh,
@@ -6277,7 +6116,7 @@ namespace namespaces
                        const ::std::string& e = "UTF-8",
                        ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       InputParameter_ (::std::ostream& os,
                        const ::namespaces::Sim::DataMap::InputParameter& x, 
                        ::xercesc::DOMErrorHandler& eh,
@@ -6288,14 +6127,14 @@ namespace namespaces
       // Serialize to xercesc::XMLFormatTarget.
       //
 
-      void
+      __declspec(dllexport) void
       InputParameter_ (::xercesc::XMLFormatTarget& ft,
                        const ::namespaces::Sim::DataMap::InputParameter& x, 
                        const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                        const ::std::string& e = "UTF-8",
                        ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       InputParameter_ (::xercesc::XMLFormatTarget& ft,
                        const ::namespaces::Sim::DataMap::InputParameter& x, 
                        ::xml_schema::error_handler& eh,
@@ -6303,7 +6142,7 @@ namespace namespaces
                        const ::std::string& e = "UTF-8",
                        ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       InputParameter_ (::xercesc::XMLFormatTarget& ft,
                        const ::namespaces::Sim::DataMap::InputParameter& x, 
                        ::xercesc::DOMErrorHandler& eh,
@@ -6314,7 +6153,7 @@ namespace namespaces
       // Serialize to an existing xercesc::DOMDocument.
       //
 
-      void
+      __declspec(dllexport) void
       InputParameter_ (::xercesc::DOMDocument& d,
                        const ::namespaces::Sim::DataMap::InputParameter& x,
                        ::xml_schema::flags f = 0);
@@ -6322,7 +6161,7 @@ namespace namespaces
       // Serialize to a new xercesc::DOMDocument.
       //
 
-      ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
+      __declspec(dllexport) ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
       InputParameter_ (const ::namespaces::Sim::DataMap::InputParameter& x, 
                        const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                        ::xml_schema::flags f = 0);
@@ -6330,14 +6169,14 @@ namespace namespaces
       // Serialize to std::ostream.
       //
 
-      void
+      __declspec(dllexport) void
       InputParameterName (::std::ostream& os,
                           const ::xml_schema::idref& x, 
                           const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                           const ::std::string& e = "UTF-8",
                           ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       InputParameterName (::std::ostream& os,
                           const ::xml_schema::idref& x, 
                           ::xml_schema::error_handler& eh,
@@ -6345,7 +6184,7 @@ namespace namespaces
                           const ::std::string& e = "UTF-8",
                           ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       InputParameterName (::std::ostream& os,
                           const ::xml_schema::idref& x, 
                           ::xercesc::DOMErrorHandler& eh,
@@ -6356,14 +6195,14 @@ namespace namespaces
       // Serialize to xercesc::XMLFormatTarget.
       //
 
-      void
+      __declspec(dllexport) void
       InputParameterName (::xercesc::XMLFormatTarget& ft,
                           const ::xml_schema::idref& x, 
                           const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                           const ::std::string& e = "UTF-8",
                           ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       InputParameterName (::xercesc::XMLFormatTarget& ft,
                           const ::xml_schema::idref& x, 
                           ::xml_schema::error_handler& eh,
@@ -6371,7 +6210,7 @@ namespace namespaces
                           const ::std::string& e = "UTF-8",
                           ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       InputParameterName (::xercesc::XMLFormatTarget& ft,
                           const ::xml_schema::idref& x, 
                           ::xercesc::DOMErrorHandler& eh,
@@ -6382,7 +6221,7 @@ namespace namespaces
       // Serialize to an existing xercesc::DOMDocument.
       //
 
-      void
+      __declspec(dllexport) void
       InputParameterName (::xercesc::DOMDocument& d,
                           const ::xml_schema::idref& x,
                           ::xml_schema::flags f = 0);
@@ -6390,7 +6229,7 @@ namespace namespaces
       // Serialize to a new xercesc::DOMDocument.
       //
 
-      ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
+      __declspec(dllexport) ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
       InputParameterName (const ::xml_schema::idref& x, 
                           const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                           ::xml_schema::flags f = 0);
@@ -6398,14 +6237,14 @@ namespace namespaces
       // Serialize to std::ostream.
       //
 
-      void
+      __declspec(dllexport) void
       InputCoefficient_ (::std::ostream& os,
                          const ::namespaces::Sim::DataMap::InputCoefficient& x, 
                          const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                          const ::std::string& e = "UTF-8",
                          ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       InputCoefficient_ (::std::ostream& os,
                          const ::namespaces::Sim::DataMap::InputCoefficient& x, 
                          ::xml_schema::error_handler& eh,
@@ -6413,7 +6252,7 @@ namespace namespaces
                          const ::std::string& e = "UTF-8",
                          ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       InputCoefficient_ (::std::ostream& os,
                          const ::namespaces::Sim::DataMap::InputCoefficient& x, 
                          ::xercesc::DOMErrorHandler& eh,
@@ -6424,14 +6263,14 @@ namespace namespaces
       // Serialize to xercesc::XMLFormatTarget.
       //
 
-      void
+      __declspec(dllexport) void
       InputCoefficient_ (::xercesc::XMLFormatTarget& ft,
                          const ::namespaces::Sim::DataMap::InputCoefficient& x, 
                          const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                          const ::std::string& e = "UTF-8",
                          ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       InputCoefficient_ (::xercesc::XMLFormatTarget& ft,
                          const ::namespaces::Sim::DataMap::InputCoefficient& x, 
                          ::xml_schema::error_handler& eh,
@@ -6439,7 +6278,7 @@ namespace namespaces
                          const ::std::string& e = "UTF-8",
                          ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       InputCoefficient_ (::xercesc::XMLFormatTarget& ft,
                          const ::namespaces::Sim::DataMap::InputCoefficient& x, 
                          ::xercesc::DOMErrorHandler& eh,
@@ -6450,7 +6289,7 @@ namespace namespaces
       // Serialize to an existing xercesc::DOMDocument.
       //
 
-      void
+      __declspec(dllexport) void
       InputCoefficient_ (::xercesc::DOMDocument& d,
                          const ::namespaces::Sim::DataMap::InputCoefficient& x,
                          ::xml_schema::flags f = 0);
@@ -6458,7 +6297,7 @@ namespace namespaces
       // Serialize to a new xercesc::DOMDocument.
       //
 
-      ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
+      __declspec(dllexport) ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
       InputCoefficient_ (const ::namespaces::Sim::DataMap::InputCoefficient& x, 
                          const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                          ::xml_schema::flags f = 0);
@@ -6466,14 +6305,14 @@ namespace namespaces
       // Serialize to std::ostream.
       //
 
-      void
+      __declspec(dllexport) void
       InputCoefficientName (::std::ostream& os,
                             const ::xml_schema::idref& x, 
                             const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                             const ::std::string& e = "UTF-8",
                             ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       InputCoefficientName (::std::ostream& os,
                             const ::xml_schema::idref& x, 
                             ::xml_schema::error_handler& eh,
@@ -6481,7 +6320,7 @@ namespace namespaces
                             const ::std::string& e = "UTF-8",
                             ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       InputCoefficientName (::std::ostream& os,
                             const ::xml_schema::idref& x, 
                             ::xercesc::DOMErrorHandler& eh,
@@ -6492,14 +6331,14 @@ namespace namespaces
       // Serialize to xercesc::XMLFormatTarget.
       //
 
-      void
+      __declspec(dllexport) void
       InputCoefficientName (::xercesc::XMLFormatTarget& ft,
                             const ::xml_schema::idref& x, 
                             const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                             const ::std::string& e = "UTF-8",
                             ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       InputCoefficientName (::xercesc::XMLFormatTarget& ft,
                             const ::xml_schema::idref& x, 
                             ::xml_schema::error_handler& eh,
@@ -6507,7 +6346,7 @@ namespace namespaces
                             const ::std::string& e = "UTF-8",
                             ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       InputCoefficientName (::xercesc::XMLFormatTarget& ft,
                             const ::xml_schema::idref& x, 
                             ::xercesc::DOMErrorHandler& eh,
@@ -6518,7 +6357,7 @@ namespace namespaces
       // Serialize to an existing xercesc::DOMDocument.
       //
 
-      void
+      __declspec(dllexport) void
       InputCoefficientName (::xercesc::DOMDocument& d,
                             const ::xml_schema::idref& x,
                             ::xml_schema::flags f = 0);
@@ -6526,7 +6365,7 @@ namespace namespaces
       // Serialize to a new xercesc::DOMDocument.
       //
 
-      ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
+      __declspec(dllexport) ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
       InputCoefficientName (const ::xml_schema::idref& x, 
                             const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                             ::xml_schema::flags f = 0);
@@ -6534,14 +6373,14 @@ namespace namespaces
       // Serialize to std::ostream.
       //
 
-      void
+      __declspec(dllexport) void
       OutputParameter_ (::std::ostream& os,
                         const ::namespaces::Sim::DataMap::OutputParameter& x, 
                         const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                         const ::std::string& e = "UTF-8",
                         ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       OutputParameter_ (::std::ostream& os,
                         const ::namespaces::Sim::DataMap::OutputParameter& x, 
                         ::xml_schema::error_handler& eh,
@@ -6549,7 +6388,7 @@ namespace namespaces
                         const ::std::string& e = "UTF-8",
                         ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       OutputParameter_ (::std::ostream& os,
                         const ::namespaces::Sim::DataMap::OutputParameter& x, 
                         ::xercesc::DOMErrorHandler& eh,
@@ -6560,14 +6399,14 @@ namespace namespaces
       // Serialize to xercesc::XMLFormatTarget.
       //
 
-      void
+      __declspec(dllexport) void
       OutputParameter_ (::xercesc::XMLFormatTarget& ft,
                         const ::namespaces::Sim::DataMap::OutputParameter& x, 
                         const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                         const ::std::string& e = "UTF-8",
                         ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       OutputParameter_ (::xercesc::XMLFormatTarget& ft,
                         const ::namespaces::Sim::DataMap::OutputParameter& x, 
                         ::xml_schema::error_handler& eh,
@@ -6575,7 +6414,7 @@ namespace namespaces
                         const ::std::string& e = "UTF-8",
                         ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       OutputParameter_ (::xercesc::XMLFormatTarget& ft,
                         const ::namespaces::Sim::DataMap::OutputParameter& x, 
                         ::xercesc::DOMErrorHandler& eh,
@@ -6586,7 +6425,7 @@ namespace namespaces
       // Serialize to an existing xercesc::DOMDocument.
       //
 
-      void
+      __declspec(dllexport) void
       OutputParameter_ (::xercesc::DOMDocument& d,
                         const ::namespaces::Sim::DataMap::OutputParameter& x,
                         ::xml_schema::flags f = 0);
@@ -6594,7 +6433,7 @@ namespace namespaces
       // Serialize to a new xercesc::DOMDocument.
       //
 
-      ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
+      __declspec(dllexport) ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
       OutputParameter_ (const ::namespaces::Sim::DataMap::OutputParameter& x, 
                         const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                         ::xml_schema::flags f = 0);
@@ -6602,14 +6441,14 @@ namespace namespaces
       // Serialize to std::ostream.
       //
 
-      void
+      __declspec(dllexport) void
       OutputParameterName (::std::ostream& os,
                            const ::xml_schema::idref& x, 
                            const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                            const ::std::string& e = "UTF-8",
                            ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       OutputParameterName (::std::ostream& os,
                            const ::xml_schema::idref& x, 
                            ::xml_schema::error_handler& eh,
@@ -6617,7 +6456,7 @@ namespace namespaces
                            const ::std::string& e = "UTF-8",
                            ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       OutputParameterName (::std::ostream& os,
                            const ::xml_schema::idref& x, 
                            ::xercesc::DOMErrorHandler& eh,
@@ -6628,14 +6467,14 @@ namespace namespaces
       // Serialize to xercesc::XMLFormatTarget.
       //
 
-      void
+      __declspec(dllexport) void
       OutputParameterName (::xercesc::XMLFormatTarget& ft,
                            const ::xml_schema::idref& x, 
                            const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                            const ::std::string& e = "UTF-8",
                            ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       OutputParameterName (::xercesc::XMLFormatTarget& ft,
                            const ::xml_schema::idref& x, 
                            ::xml_schema::error_handler& eh,
@@ -6643,7 +6482,7 @@ namespace namespaces
                            const ::std::string& e = "UTF-8",
                            ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       OutputParameterName (::xercesc::XMLFormatTarget& ft,
                            const ::xml_schema::idref& x, 
                            ::xercesc::DOMErrorHandler& eh,
@@ -6654,7 +6493,7 @@ namespace namespaces
       // Serialize to an existing xercesc::DOMDocument.
       //
 
-      void
+      __declspec(dllexport) void
       OutputParameterName (::xercesc::DOMDocument& d,
                            const ::xml_schema::idref& x,
                            ::xml_schema::flags f = 0);
@@ -6662,7 +6501,7 @@ namespace namespaces
       // Serialize to a new xercesc::DOMDocument.
       //
 
-      ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
+      __declspec(dllexport) ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
       OutputParameterName (const ::xml_schema::idref& x, 
                            const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                            ::xml_schema::flags f = 0);
@@ -6670,14 +6509,14 @@ namespace namespaces
       // Serialize to std::ostream.
       //
 
-      void
+      __declspec(dllexport) void
       Property_Map_Transformation_ (::std::ostream& os,
                                     const ::namespaces::Sim::DataMap::Property_Map_Transformation& x, 
                                     const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                                     const ::std::string& e = "UTF-8",
                                     ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       Property_Map_Transformation_ (::std::ostream& os,
                                     const ::namespaces::Sim::DataMap::Property_Map_Transformation& x, 
                                     ::xml_schema::error_handler& eh,
@@ -6685,7 +6524,7 @@ namespace namespaces
                                     const ::std::string& e = "UTF-8",
                                     ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       Property_Map_Transformation_ (::std::ostream& os,
                                     const ::namespaces::Sim::DataMap::Property_Map_Transformation& x, 
                                     ::xercesc::DOMErrorHandler& eh,
@@ -6696,14 +6535,14 @@ namespace namespaces
       // Serialize to xercesc::XMLFormatTarget.
       //
 
-      void
+      __declspec(dllexport) void
       Property_Map_Transformation_ (::xercesc::XMLFormatTarget& ft,
                                     const ::namespaces::Sim::DataMap::Property_Map_Transformation& x, 
                                     const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                                     const ::std::string& e = "UTF-8",
                                     ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       Property_Map_Transformation_ (::xercesc::XMLFormatTarget& ft,
                                     const ::namespaces::Sim::DataMap::Property_Map_Transformation& x, 
                                     ::xml_schema::error_handler& eh,
@@ -6711,7 +6550,7 @@ namespace namespaces
                                     const ::std::string& e = "UTF-8",
                                     ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       Property_Map_Transformation_ (::xercesc::XMLFormatTarget& ft,
                                     const ::namespaces::Sim::DataMap::Property_Map_Transformation& x, 
                                     ::xercesc::DOMErrorHandler& eh,
@@ -6722,7 +6561,7 @@ namespace namespaces
       // Serialize to an existing xercesc::DOMDocument.
       //
 
-      void
+      __declspec(dllexport) void
       Property_Map_Transformation_ (::xercesc::DOMDocument& d,
                                     const ::namespaces::Sim::DataMap::Property_Map_Transformation& x,
                                     ::xml_schema::flags f = 0);
@@ -6730,7 +6569,7 @@ namespace namespaces
       // Serialize to a new xercesc::DOMDocument.
       //
 
-      ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
+      __declspec(dllexport) ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
       Property_Map_Transformation_ (const ::namespaces::Sim::DataMap::Property_Map_Transformation& x, 
                                     const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                                     ::xml_schema::flags f = 0);
@@ -6738,14 +6577,14 @@ namespace namespaces
       // Serialize to std::ostream.
       //
 
-      void
+      __declspec(dllexport) void
       Property_Map_Transformation_Name (::std::ostream& os,
                                         const ::xml_schema::idref& x, 
                                         const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                                         const ::std::string& e = "UTF-8",
                                         ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       Property_Map_Transformation_Name (::std::ostream& os,
                                         const ::xml_schema::idref& x, 
                                         ::xml_schema::error_handler& eh,
@@ -6753,7 +6592,7 @@ namespace namespaces
                                         const ::std::string& e = "UTF-8",
                                         ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       Property_Map_Transformation_Name (::std::ostream& os,
                                         const ::xml_schema::idref& x, 
                                         ::xercesc::DOMErrorHandler& eh,
@@ -6764,14 +6603,14 @@ namespace namespaces
       // Serialize to xercesc::XMLFormatTarget.
       //
 
-      void
+      __declspec(dllexport) void
       Property_Map_Transformation_Name (::xercesc::XMLFormatTarget& ft,
                                         const ::xml_schema::idref& x, 
                                         const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                                         const ::std::string& e = "UTF-8",
                                         ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       Property_Map_Transformation_Name (::xercesc::XMLFormatTarget& ft,
                                         const ::xml_schema::idref& x, 
                                         ::xml_schema::error_handler& eh,
@@ -6779,7 +6618,7 @@ namespace namespaces
                                         const ::std::string& e = "UTF-8",
                                         ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       Property_Map_Transformation_Name (::xercesc::XMLFormatTarget& ft,
                                         const ::xml_schema::idref& x, 
                                         ::xercesc::DOMErrorHandler& eh,
@@ -6790,7 +6629,7 @@ namespace namespaces
       // Serialize to an existing xercesc::DOMDocument.
       //
 
-      void
+      __declspec(dllexport) void
       Property_Map_Transformation_Name (::xercesc::DOMDocument& d,
                                         const ::xml_schema::idref& x,
                                         ::xml_schema::flags f = 0);
@@ -6798,7 +6637,7 @@ namespace namespaces
       // Serialize to a new xercesc::DOMDocument.
       //
 
-      ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
+      __declspec(dllexport) ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
       Property_Map_Transformation_Name (const ::xml_schema::idref& x, 
                                         const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                                         ::xml_schema::flags f = 0);
@@ -6806,14 +6645,14 @@ namespace namespaces
       // Serialize to std::ostream.
       //
 
-      void
+      __declspec(dllexport) void
       Property_Map_One2One_ (::std::ostream& os,
                              const ::namespaces::Sim::DataMap::Property_Map_One2One& x, 
                              const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                              const ::std::string& e = "UTF-8",
                              ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       Property_Map_One2One_ (::std::ostream& os,
                              const ::namespaces::Sim::DataMap::Property_Map_One2One& x, 
                              ::xml_schema::error_handler& eh,
@@ -6821,7 +6660,7 @@ namespace namespaces
                              const ::std::string& e = "UTF-8",
                              ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       Property_Map_One2One_ (::std::ostream& os,
                              const ::namespaces::Sim::DataMap::Property_Map_One2One& x, 
                              ::xercesc::DOMErrorHandler& eh,
@@ -6832,14 +6671,14 @@ namespace namespaces
       // Serialize to xercesc::XMLFormatTarget.
       //
 
-      void
+      __declspec(dllexport) void
       Property_Map_One2One_ (::xercesc::XMLFormatTarget& ft,
                              const ::namespaces::Sim::DataMap::Property_Map_One2One& x, 
                              const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                              const ::std::string& e = "UTF-8",
                              ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       Property_Map_One2One_ (::xercesc::XMLFormatTarget& ft,
                              const ::namespaces::Sim::DataMap::Property_Map_One2One& x, 
                              ::xml_schema::error_handler& eh,
@@ -6847,7 +6686,7 @@ namespace namespaces
                              const ::std::string& e = "UTF-8",
                              ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       Property_Map_One2One_ (::xercesc::XMLFormatTarget& ft,
                              const ::namespaces::Sim::DataMap::Property_Map_One2One& x, 
                              ::xercesc::DOMErrorHandler& eh,
@@ -6858,7 +6697,7 @@ namespace namespaces
       // Serialize to an existing xercesc::DOMDocument.
       //
 
-      void
+      __declspec(dllexport) void
       Property_Map_One2One_ (::xercesc::DOMDocument& d,
                              const ::namespaces::Sim::DataMap::Property_Map_One2One& x,
                              ::xml_schema::flags f = 0);
@@ -6866,7 +6705,7 @@ namespace namespaces
       // Serialize to a new xercesc::DOMDocument.
       //
 
-      ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
+      __declspec(dllexport) ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
       Property_Map_One2One_ (const ::namespaces::Sim::DataMap::Property_Map_One2One& x, 
                              const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                              ::xml_schema::flags f = 0);
@@ -6874,14 +6713,14 @@ namespace namespaces
       // Serialize to std::ostream.
       //
 
-      void
+      __declspec(dllexport) void
       Property_Map_One2One_Name (::std::ostream& os,
                                  const ::xml_schema::idref& x, 
                                  const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                                  const ::std::string& e = "UTF-8",
                                  ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       Property_Map_One2One_Name (::std::ostream& os,
                                  const ::xml_schema::idref& x, 
                                  ::xml_schema::error_handler& eh,
@@ -6889,7 +6728,7 @@ namespace namespaces
                                  const ::std::string& e = "UTF-8",
                                  ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       Property_Map_One2One_Name (::std::ostream& os,
                                  const ::xml_schema::idref& x, 
                                  ::xercesc::DOMErrorHandler& eh,
@@ -6900,14 +6739,14 @@ namespace namespaces
       // Serialize to xercesc::XMLFormatTarget.
       //
 
-      void
+      __declspec(dllexport) void
       Property_Map_One2One_Name (::xercesc::XMLFormatTarget& ft,
                                  const ::xml_schema::idref& x, 
                                  const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                                  const ::std::string& e = "UTF-8",
                                  ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       Property_Map_One2One_Name (::xercesc::XMLFormatTarget& ft,
                                  const ::xml_schema::idref& x, 
                                  ::xml_schema::error_handler& eh,
@@ -6915,7 +6754,7 @@ namespace namespaces
                                  const ::std::string& e = "UTF-8",
                                  ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       Property_Map_One2One_Name (::xercesc::XMLFormatTarget& ft,
                                  const ::xml_schema::idref& x, 
                                  ::xercesc::DOMErrorHandler& eh,
@@ -6926,7 +6765,7 @@ namespace namespaces
       // Serialize to an existing xercesc::DOMDocument.
       //
 
-      void
+      __declspec(dllexport) void
       Property_Map_One2One_Name (::xercesc::DOMDocument& d,
                                  const ::xml_schema::idref& x,
                                  ::xml_schema::flags f = 0);
@@ -6934,7 +6773,7 @@ namespace namespaces
       // Serialize to a new xercesc::DOMDocument.
       //
 
-      ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
+      __declspec(dllexport) ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
       Property_Map_One2One_Name (const ::xml_schema::idref& x, 
                                  const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                                  ::xml_schema::flags f = 0);
@@ -6942,14 +6781,14 @@ namespace namespaces
       // Serialize to std::ostream.
       //
 
-      void
+      __declspec(dllexport) void
       Property_Map_Gap_ (::std::ostream& os,
                          const ::namespaces::Sim::DataMap::Property_Map_Gap& x, 
                          const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                          const ::std::string& e = "UTF-8",
                          ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       Property_Map_Gap_ (::std::ostream& os,
                          const ::namespaces::Sim::DataMap::Property_Map_Gap& x, 
                          ::xml_schema::error_handler& eh,
@@ -6957,7 +6796,7 @@ namespace namespaces
                          const ::std::string& e = "UTF-8",
                          ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       Property_Map_Gap_ (::std::ostream& os,
                          const ::namespaces::Sim::DataMap::Property_Map_Gap& x, 
                          ::xercesc::DOMErrorHandler& eh,
@@ -6968,14 +6807,14 @@ namespace namespaces
       // Serialize to xercesc::XMLFormatTarget.
       //
 
-      void
+      __declspec(dllexport) void
       Property_Map_Gap_ (::xercesc::XMLFormatTarget& ft,
                          const ::namespaces::Sim::DataMap::Property_Map_Gap& x, 
                          const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                          const ::std::string& e = "UTF-8",
                          ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       Property_Map_Gap_ (::xercesc::XMLFormatTarget& ft,
                          const ::namespaces::Sim::DataMap::Property_Map_Gap& x, 
                          ::xml_schema::error_handler& eh,
@@ -6983,7 +6822,7 @@ namespace namespaces
                          const ::std::string& e = "UTF-8",
                          ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       Property_Map_Gap_ (::xercesc::XMLFormatTarget& ft,
                          const ::namespaces::Sim::DataMap::Property_Map_Gap& x, 
                          ::xercesc::DOMErrorHandler& eh,
@@ -6994,7 +6833,7 @@ namespace namespaces
       // Serialize to an existing xercesc::DOMDocument.
       //
 
-      void
+      __declspec(dllexport) void
       Property_Map_Gap_ (::xercesc::DOMDocument& d,
                          const ::namespaces::Sim::DataMap::Property_Map_Gap& x,
                          ::xml_schema::flags f = 0);
@@ -7002,7 +6841,7 @@ namespace namespaces
       // Serialize to a new xercesc::DOMDocument.
       //
 
-      ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
+      __declspec(dllexport) ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
       Property_Map_Gap_ (const ::namespaces::Sim::DataMap::Property_Map_Gap& x, 
                          const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                          ::xml_schema::flags f = 0);
@@ -7010,14 +6849,14 @@ namespace namespaces
       // Serialize to std::ostream.
       //
 
-      void
+      __declspec(dllexport) void
       Property_Map_Gap_Name (::std::ostream& os,
                              const ::xml_schema::idref& x, 
                              const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                              const ::std::string& e = "UTF-8",
                              ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       Property_Map_Gap_Name (::std::ostream& os,
                              const ::xml_schema::idref& x, 
                              ::xml_schema::error_handler& eh,
@@ -7025,7 +6864,7 @@ namespace namespaces
                              const ::std::string& e = "UTF-8",
                              ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       Property_Map_Gap_Name (::std::ostream& os,
                              const ::xml_schema::idref& x, 
                              ::xercesc::DOMErrorHandler& eh,
@@ -7036,14 +6875,14 @@ namespace namespaces
       // Serialize to xercesc::XMLFormatTarget.
       //
 
-      void
+      __declspec(dllexport) void
       Property_Map_Gap_Name (::xercesc::XMLFormatTarget& ft,
                              const ::xml_schema::idref& x, 
                              const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                              const ::std::string& e = "UTF-8",
                              ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       Property_Map_Gap_Name (::xercesc::XMLFormatTarget& ft,
                              const ::xml_schema::idref& x, 
                              ::xml_schema::error_handler& eh,
@@ -7051,7 +6890,7 @@ namespace namespaces
                              const ::std::string& e = "UTF-8",
                              ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       Property_Map_Gap_Name (::xercesc::XMLFormatTarget& ft,
                              const ::xml_schema::idref& x, 
                              ::xercesc::DOMErrorHandler& eh,
@@ -7062,7 +6901,7 @@ namespace namespaces
       // Serialize to an existing xercesc::DOMDocument.
       //
 
-      void
+      __declspec(dllexport) void
       Property_Map_Gap_Name (::xercesc::DOMDocument& d,
                              const ::xml_schema::idref& x,
                              ::xml_schema::flags f = 0);
@@ -7070,7 +6909,7 @@ namespace namespaces
       // Serialize to a new xercesc::DOMDocument.
       //
 
-      ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
+      __declspec(dllexport) ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
       Property_Map_Gap_Name (const ::xml_schema::idref& x, 
                              const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                              ::xml_schema::flags f = 0);
@@ -7078,14 +6917,14 @@ namespace namespaces
       // Serialize to std::ostream.
       //
 
-      void
+      __declspec(dllexport) void
       Component_Map_One2One_ (::std::ostream& os,
                               const ::namespaces::Sim::DataMap::Component_Map_One2One& x, 
                               const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                               const ::std::string& e = "UTF-8",
                               ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       Component_Map_One2One_ (::std::ostream& os,
                               const ::namespaces::Sim::DataMap::Component_Map_One2One& x, 
                               ::xml_schema::error_handler& eh,
@@ -7093,7 +6932,7 @@ namespace namespaces
                               const ::std::string& e = "UTF-8",
                               ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       Component_Map_One2One_ (::std::ostream& os,
                               const ::namespaces::Sim::DataMap::Component_Map_One2One& x, 
                               ::xercesc::DOMErrorHandler& eh,
@@ -7104,14 +6943,14 @@ namespace namespaces
       // Serialize to xercesc::XMLFormatTarget.
       //
 
-      void
+      __declspec(dllexport) void
       Component_Map_One2One_ (::xercesc::XMLFormatTarget& ft,
                               const ::namespaces::Sim::DataMap::Component_Map_One2One& x, 
                               const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                               const ::std::string& e = "UTF-8",
                               ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       Component_Map_One2One_ (::xercesc::XMLFormatTarget& ft,
                               const ::namespaces::Sim::DataMap::Component_Map_One2One& x, 
                               ::xml_schema::error_handler& eh,
@@ -7119,7 +6958,7 @@ namespace namespaces
                               const ::std::string& e = "UTF-8",
                               ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       Component_Map_One2One_ (::xercesc::XMLFormatTarget& ft,
                               const ::namespaces::Sim::DataMap::Component_Map_One2One& x, 
                               ::xercesc::DOMErrorHandler& eh,
@@ -7130,7 +6969,7 @@ namespace namespaces
       // Serialize to an existing xercesc::DOMDocument.
       //
 
-      void
+      __declspec(dllexport) void
       Component_Map_One2One_ (::xercesc::DOMDocument& d,
                               const ::namespaces::Sim::DataMap::Component_Map_One2One& x,
                               ::xml_schema::flags f = 0);
@@ -7138,7 +6977,7 @@ namespace namespaces
       // Serialize to a new xercesc::DOMDocument.
       //
 
-      ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
+      __declspec(dllexport) ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
       Component_Map_One2One_ (const ::namespaces::Sim::DataMap::Component_Map_One2One& x, 
                               const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                               ::xml_schema::flags f = 0);
@@ -7146,14 +6985,14 @@ namespace namespaces
       // Serialize to std::ostream.
       //
 
-      void
+      __declspec(dllexport) void
       Component_Map_One2One_Name (::std::ostream& os,
                                   const ::xml_schema::idref& x, 
                                   const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                                   const ::std::string& e = "UTF-8",
                                   ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       Component_Map_One2One_Name (::std::ostream& os,
                                   const ::xml_schema::idref& x, 
                                   ::xml_schema::error_handler& eh,
@@ -7161,7 +7000,7 @@ namespace namespaces
                                   const ::std::string& e = "UTF-8",
                                   ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       Component_Map_One2One_Name (::std::ostream& os,
                                   const ::xml_schema::idref& x, 
                                   ::xercesc::DOMErrorHandler& eh,
@@ -7172,14 +7011,14 @@ namespace namespaces
       // Serialize to xercesc::XMLFormatTarget.
       //
 
-      void
+      __declspec(dllexport) void
       Component_Map_One2One_Name (::xercesc::XMLFormatTarget& ft,
                                   const ::xml_schema::idref& x, 
                                   const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                                   const ::std::string& e = "UTF-8",
                                   ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       Component_Map_One2One_Name (::xercesc::XMLFormatTarget& ft,
                                   const ::xml_schema::idref& x, 
                                   ::xml_schema::error_handler& eh,
@@ -7187,7 +7026,7 @@ namespace namespaces
                                   const ::std::string& e = "UTF-8",
                                   ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       Component_Map_One2One_Name (::xercesc::XMLFormatTarget& ft,
                                   const ::xml_schema::idref& x, 
                                   ::xercesc::DOMErrorHandler& eh,
@@ -7198,7 +7037,7 @@ namespace namespaces
       // Serialize to an existing xercesc::DOMDocument.
       //
 
-      void
+      __declspec(dllexport) void
       Component_Map_One2One_Name (::xercesc::DOMDocument& d,
                                   const ::xml_schema::idref& x,
                                   ::xml_schema::flags f = 0);
@@ -7206,7 +7045,7 @@ namespace namespaces
       // Serialize to a new xercesc::DOMDocument.
       //
 
-      ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
+      __declspec(dllexport) ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
       Component_Map_One2One_Name (const ::xml_schema::idref& x, 
                                   const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                                   ::xml_schema::flags f = 0);
@@ -7214,14 +7053,14 @@ namespace namespaces
       // Serialize to std::ostream.
       //
 
-      void
+      __declspec(dllexport) void
       ComponentMappingGroup_ (::std::ostream& os,
                               const ::namespaces::Sim::DataMap::ComponentMappingGroup& x, 
                               const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                               const ::std::string& e = "UTF-8",
                               ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       ComponentMappingGroup_ (::std::ostream& os,
                               const ::namespaces::Sim::DataMap::ComponentMappingGroup& x, 
                               ::xml_schema::error_handler& eh,
@@ -7229,7 +7068,7 @@ namespace namespaces
                               const ::std::string& e = "UTF-8",
                               ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       ComponentMappingGroup_ (::std::ostream& os,
                               const ::namespaces::Sim::DataMap::ComponentMappingGroup& x, 
                               ::xercesc::DOMErrorHandler& eh,
@@ -7240,14 +7079,14 @@ namespace namespaces
       // Serialize to xercesc::XMLFormatTarget.
       //
 
-      void
+      __declspec(dllexport) void
       ComponentMappingGroup_ (::xercesc::XMLFormatTarget& ft,
                               const ::namespaces::Sim::DataMap::ComponentMappingGroup& x, 
                               const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                               const ::std::string& e = "UTF-8",
                               ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       ComponentMappingGroup_ (::xercesc::XMLFormatTarget& ft,
                               const ::namespaces::Sim::DataMap::ComponentMappingGroup& x, 
                               ::xml_schema::error_handler& eh,
@@ -7255,7 +7094,7 @@ namespace namespaces
                               const ::std::string& e = "UTF-8",
                               ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       ComponentMappingGroup_ (::xercesc::XMLFormatTarget& ft,
                               const ::namespaces::Sim::DataMap::ComponentMappingGroup& x, 
                               ::xercesc::DOMErrorHandler& eh,
@@ -7266,7 +7105,7 @@ namespace namespaces
       // Serialize to an existing xercesc::DOMDocument.
       //
 
-      void
+      __declspec(dllexport) void
       ComponentMappingGroup_ (::xercesc::DOMDocument& d,
                               const ::namespaces::Sim::DataMap::ComponentMappingGroup& x,
                               ::xml_schema::flags f = 0);
@@ -7274,7 +7113,7 @@ namespace namespaces
       // Serialize to a new xercesc::DOMDocument.
       //
 
-      ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
+      __declspec(dllexport) ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
       ComponentMappingGroup_ (const ::namespaces::Sim::DataMap::ComponentMappingGroup& x, 
                               const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                               ::xml_schema::flags f = 0);
@@ -7282,14 +7121,14 @@ namespace namespaces
       // Serialize to std::ostream.
       //
 
-      void
+      __declspec(dllexport) void
       ComponentMappingGroupName (::std::ostream& os,
                                  const ::xml_schema::idref& x, 
                                  const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                                  const ::std::string& e = "UTF-8",
                                  ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       ComponentMappingGroupName (::std::ostream& os,
                                  const ::xml_schema::idref& x, 
                                  ::xml_schema::error_handler& eh,
@@ -7297,7 +7136,7 @@ namespace namespaces
                                  const ::std::string& e = "UTF-8",
                                  ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       ComponentMappingGroupName (::std::ostream& os,
                                  const ::xml_schema::idref& x, 
                                  ::xercesc::DOMErrorHandler& eh,
@@ -7308,14 +7147,14 @@ namespace namespaces
       // Serialize to xercesc::XMLFormatTarget.
       //
 
-      void
+      __declspec(dllexport) void
       ComponentMappingGroupName (::xercesc::XMLFormatTarget& ft,
                                  const ::xml_schema::idref& x, 
                                  const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                                  const ::std::string& e = "UTF-8",
                                  ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       ComponentMappingGroupName (::xercesc::XMLFormatTarget& ft,
                                  const ::xml_schema::idref& x, 
                                  ::xml_schema::error_handler& eh,
@@ -7323,7 +7162,7 @@ namespace namespaces
                                  const ::std::string& e = "UTF-8",
                                  ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       ComponentMappingGroupName (::xercesc::XMLFormatTarget& ft,
                                  const ::xml_schema::idref& x, 
                                  ::xercesc::DOMErrorHandler& eh,
@@ -7334,7 +7173,7 @@ namespace namespaces
       // Serialize to an existing xercesc::DOMDocument.
       //
 
-      void
+      __declspec(dllexport) void
       ComponentMappingGroupName (::xercesc::DOMDocument& d,
                                  const ::xml_schema::idref& x,
                                  ::xml_schema::flags f = 0);
@@ -7342,7 +7181,7 @@ namespace namespaces
       // Serialize to a new xercesc::DOMDocument.
       //
 
-      ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
+      __declspec(dllexport) ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
       ComponentMappingGroupName (const ::xml_schema::idref& x, 
                                  const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                                  ::xml_schema::flags f = 0);
@@ -7350,14 +7189,14 @@ namespace namespaces
       // Serialize to std::ostream.
       //
 
-      void
+      __declspec(dllexport) void
       Component_Map_One2Many_ (::std::ostream& os,
                                const ::namespaces::Sim::DataMap::Component_Map_One2Many& x, 
                                const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                                const ::std::string& e = "UTF-8",
                                ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       Component_Map_One2Many_ (::std::ostream& os,
                                const ::namespaces::Sim::DataMap::Component_Map_One2Many& x, 
                                ::xml_schema::error_handler& eh,
@@ -7365,7 +7204,7 @@ namespace namespaces
                                const ::std::string& e = "UTF-8",
                                ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       Component_Map_One2Many_ (::std::ostream& os,
                                const ::namespaces::Sim::DataMap::Component_Map_One2Many& x, 
                                ::xercesc::DOMErrorHandler& eh,
@@ -7376,14 +7215,14 @@ namespace namespaces
       // Serialize to xercesc::XMLFormatTarget.
       //
 
-      void
+      __declspec(dllexport) void
       Component_Map_One2Many_ (::xercesc::XMLFormatTarget& ft,
                                const ::namespaces::Sim::DataMap::Component_Map_One2Many& x, 
                                const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                                const ::std::string& e = "UTF-8",
                                ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       Component_Map_One2Many_ (::xercesc::XMLFormatTarget& ft,
                                const ::namespaces::Sim::DataMap::Component_Map_One2Many& x, 
                                ::xml_schema::error_handler& eh,
@@ -7391,7 +7230,7 @@ namespace namespaces
                                const ::std::string& e = "UTF-8",
                                ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       Component_Map_One2Many_ (::xercesc::XMLFormatTarget& ft,
                                const ::namespaces::Sim::DataMap::Component_Map_One2Many& x, 
                                ::xercesc::DOMErrorHandler& eh,
@@ -7402,7 +7241,7 @@ namespace namespaces
       // Serialize to an existing xercesc::DOMDocument.
       //
 
-      void
+      __declspec(dllexport) void
       Component_Map_One2Many_ (::xercesc::DOMDocument& d,
                                const ::namespaces::Sim::DataMap::Component_Map_One2Many& x,
                                ::xml_schema::flags f = 0);
@@ -7410,7 +7249,7 @@ namespace namespaces
       // Serialize to a new xercesc::DOMDocument.
       //
 
-      ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
+      __declspec(dllexport) ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
       Component_Map_One2Many_ (const ::namespaces::Sim::DataMap::Component_Map_One2Many& x, 
                                const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                                ::xml_schema::flags f = 0);
@@ -7418,14 +7257,14 @@ namespace namespaces
       // Serialize to std::ostream.
       //
 
-      void
+      __declspec(dllexport) void
       Component_Map_One2Many_Name (::std::ostream& os,
                                    const ::xml_schema::idref& x, 
                                    const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                                    const ::std::string& e = "UTF-8",
                                    ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       Component_Map_One2Many_Name (::std::ostream& os,
                                    const ::xml_schema::idref& x, 
                                    ::xml_schema::error_handler& eh,
@@ -7433,7 +7272,7 @@ namespace namespaces
                                    const ::std::string& e = "UTF-8",
                                    ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       Component_Map_One2Many_Name (::std::ostream& os,
                                    const ::xml_schema::idref& x, 
                                    ::xercesc::DOMErrorHandler& eh,
@@ -7444,14 +7283,14 @@ namespace namespaces
       // Serialize to xercesc::XMLFormatTarget.
       //
 
-      void
+      __declspec(dllexport) void
       Component_Map_One2Many_Name (::xercesc::XMLFormatTarget& ft,
                                    const ::xml_schema::idref& x, 
                                    const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                                    const ::std::string& e = "UTF-8",
                                    ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       Component_Map_One2Many_Name (::xercesc::XMLFormatTarget& ft,
                                    const ::xml_schema::idref& x, 
                                    ::xml_schema::error_handler& eh,
@@ -7459,7 +7298,7 @@ namespace namespaces
                                    const ::std::string& e = "UTF-8",
                                    ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       Component_Map_One2Many_Name (::xercesc::XMLFormatTarget& ft,
                                    const ::xml_schema::idref& x, 
                                    ::xercesc::DOMErrorHandler& eh,
@@ -7470,7 +7309,7 @@ namespace namespaces
       // Serialize to an existing xercesc::DOMDocument.
       //
 
-      void
+      __declspec(dllexport) void
       Component_Map_One2Many_Name (::xercesc::DOMDocument& d,
                                    const ::xml_schema::idref& x,
                                    ::xml_schema::flags f = 0);
@@ -7478,7 +7317,7 @@ namespace namespaces
       // Serialize to a new xercesc::DOMDocument.
       //
 
-      ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
+      __declspec(dllexport) ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
       Component_Map_One2Many_Name (const ::xml_schema::idref& x, 
                                    const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                                    ::xml_schema::flags f = 0);
@@ -7486,14 +7325,14 @@ namespace namespaces
       // Serialize to std::ostream.
       //
 
-      void
+      __declspec(dllexport) void
       Component_Map_Gap_ (::std::ostream& os,
                           const ::namespaces::Sim::DataMap::Component_Map_Gap& x, 
                           const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                           const ::std::string& e = "UTF-8",
                           ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       Component_Map_Gap_ (::std::ostream& os,
                           const ::namespaces::Sim::DataMap::Component_Map_Gap& x, 
                           ::xml_schema::error_handler& eh,
@@ -7501,7 +7340,7 @@ namespace namespaces
                           const ::std::string& e = "UTF-8",
                           ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       Component_Map_Gap_ (::std::ostream& os,
                           const ::namespaces::Sim::DataMap::Component_Map_Gap& x, 
                           ::xercesc::DOMErrorHandler& eh,
@@ -7512,14 +7351,14 @@ namespace namespaces
       // Serialize to xercesc::XMLFormatTarget.
       //
 
-      void
+      __declspec(dllexport) void
       Component_Map_Gap_ (::xercesc::XMLFormatTarget& ft,
                           const ::namespaces::Sim::DataMap::Component_Map_Gap& x, 
                           const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                           const ::std::string& e = "UTF-8",
                           ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       Component_Map_Gap_ (::xercesc::XMLFormatTarget& ft,
                           const ::namespaces::Sim::DataMap::Component_Map_Gap& x, 
                           ::xml_schema::error_handler& eh,
@@ -7527,7 +7366,7 @@ namespace namespaces
                           const ::std::string& e = "UTF-8",
                           ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       Component_Map_Gap_ (::xercesc::XMLFormatTarget& ft,
                           const ::namespaces::Sim::DataMap::Component_Map_Gap& x, 
                           ::xercesc::DOMErrorHandler& eh,
@@ -7538,7 +7377,7 @@ namespace namespaces
       // Serialize to an existing xercesc::DOMDocument.
       //
 
-      void
+      __declspec(dllexport) void
       Component_Map_Gap_ (::xercesc::DOMDocument& d,
                           const ::namespaces::Sim::DataMap::Component_Map_Gap& x,
                           ::xml_schema::flags f = 0);
@@ -7546,7 +7385,7 @@ namespace namespaces
       // Serialize to a new xercesc::DOMDocument.
       //
 
-      ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
+      __declspec(dllexport) ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
       Component_Map_Gap_ (const ::namespaces::Sim::DataMap::Component_Map_Gap& x, 
                           const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                           ::xml_schema::flags f = 0);
@@ -7554,14 +7393,14 @@ namespace namespaces
       // Serialize to std::ostream.
       //
 
-      void
+      __declspec(dllexport) void
       Component_Map_Gap_Name (::std::ostream& os,
                               const ::xml_schema::idref& x, 
                               const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                               const ::std::string& e = "UTF-8",
                               ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       Component_Map_Gap_Name (::std::ostream& os,
                               const ::xml_schema::idref& x, 
                               ::xml_schema::error_handler& eh,
@@ -7569,7 +7408,7 @@ namespace namespaces
                               const ::std::string& e = "UTF-8",
                               ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       Component_Map_Gap_Name (::std::ostream& os,
                               const ::xml_schema::idref& x, 
                               ::xercesc::DOMErrorHandler& eh,
@@ -7580,14 +7419,14 @@ namespace namespaces
       // Serialize to xercesc::XMLFormatTarget.
       //
 
-      void
+      __declspec(dllexport) void
       Component_Map_Gap_Name (::xercesc::XMLFormatTarget& ft,
                               const ::xml_schema::idref& x, 
                               const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                               const ::std::string& e = "UTF-8",
                               ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       Component_Map_Gap_Name (::xercesc::XMLFormatTarget& ft,
                               const ::xml_schema::idref& x, 
                               ::xml_schema::error_handler& eh,
@@ -7595,7 +7434,7 @@ namespace namespaces
                               const ::std::string& e = "UTF-8",
                               ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       Component_Map_Gap_Name (::xercesc::XMLFormatTarget& ft,
                               const ::xml_schema::idref& x, 
                               ::xercesc::DOMErrorHandler& eh,
@@ -7606,7 +7445,7 @@ namespace namespaces
       // Serialize to an existing xercesc::DOMDocument.
       //
 
-      void
+      __declspec(dllexport) void
       Component_Map_Gap_Name (::xercesc::DOMDocument& d,
                               const ::xml_schema::idref& x,
                               ::xml_schema::flags f = 0);
@@ -7614,7 +7453,7 @@ namespace namespaces
       // Serialize to a new xercesc::DOMDocument.
       //
 
-      ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
+      __declspec(dllexport) ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
       Component_Map_Gap_Name (const ::xml_schema::idref& x, 
                               const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                               ::xml_schema::flags f = 0);
@@ -7622,14 +7461,14 @@ namespace namespaces
       // Serialize to std::ostream.
       //
 
-      void
+      __declspec(dllexport) void
       Library_Mapping_Rule_ (::std::ostream& os,
                              const ::namespaces::Sim::DataMap::Library_Mapping_Rule& x, 
                              const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                              const ::std::string& e = "UTF-8",
                              ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       Library_Mapping_Rule_ (::std::ostream& os,
                              const ::namespaces::Sim::DataMap::Library_Mapping_Rule& x, 
                              ::xml_schema::error_handler& eh,
@@ -7637,7 +7476,7 @@ namespace namespaces
                              const ::std::string& e = "UTF-8",
                              ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       Library_Mapping_Rule_ (::std::ostream& os,
                              const ::namespaces::Sim::DataMap::Library_Mapping_Rule& x, 
                              ::xercesc::DOMErrorHandler& eh,
@@ -7648,14 +7487,14 @@ namespace namespaces
       // Serialize to xercesc::XMLFormatTarget.
       //
 
-      void
+      __declspec(dllexport) void
       Library_Mapping_Rule_ (::xercesc::XMLFormatTarget& ft,
                              const ::namespaces::Sim::DataMap::Library_Mapping_Rule& x, 
                              const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                              const ::std::string& e = "UTF-8",
                              ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       Library_Mapping_Rule_ (::xercesc::XMLFormatTarget& ft,
                              const ::namespaces::Sim::DataMap::Library_Mapping_Rule& x, 
                              ::xml_schema::error_handler& eh,
@@ -7663,7 +7502,7 @@ namespace namespaces
                              const ::std::string& e = "UTF-8",
                              ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       Library_Mapping_Rule_ (::xercesc::XMLFormatTarget& ft,
                              const ::namespaces::Sim::DataMap::Library_Mapping_Rule& x, 
                              ::xercesc::DOMErrorHandler& eh,
@@ -7674,7 +7513,7 @@ namespace namespaces
       // Serialize to an existing xercesc::DOMDocument.
       //
 
-      void
+      __declspec(dllexport) void
       Library_Mapping_Rule_ (::xercesc::DOMDocument& d,
                              const ::namespaces::Sim::DataMap::Library_Mapping_Rule& x,
                              ::xml_schema::flags f = 0);
@@ -7682,7 +7521,7 @@ namespace namespaces
       // Serialize to a new xercesc::DOMDocument.
       //
 
-      ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
+      __declspec(dllexport) ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
       Library_Mapping_Rule_ (const ::namespaces::Sim::DataMap::Library_Mapping_Rule& x, 
                              const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                              ::xml_schema::flags f = 0);
@@ -7690,14 +7529,14 @@ namespace namespaces
       // Serialize to std::ostream.
       //
 
-      void
+      __declspec(dllexport) void
       Data_Model_Map_ (::std::ostream& os,
                        const ::namespaces::Sim::DataMap::Data_Model_Map& x, 
                        const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                        const ::std::string& e = "UTF-8",
                        ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       Data_Model_Map_ (::std::ostream& os,
                        const ::namespaces::Sim::DataMap::Data_Model_Map& x, 
                        ::xml_schema::error_handler& eh,
@@ -7705,7 +7544,7 @@ namespace namespaces
                        const ::std::string& e = "UTF-8",
                        ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       Data_Model_Map_ (::std::ostream& os,
                        const ::namespaces::Sim::DataMap::Data_Model_Map& x, 
                        ::xercesc::DOMErrorHandler& eh,
@@ -7716,14 +7555,14 @@ namespace namespaces
       // Serialize to xercesc::XMLFormatTarget.
       //
 
-      void
+      __declspec(dllexport) void
       Data_Model_Map_ (::xercesc::XMLFormatTarget& ft,
                        const ::namespaces::Sim::DataMap::Data_Model_Map& x, 
                        const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                        const ::std::string& e = "UTF-8",
                        ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       Data_Model_Map_ (::xercesc::XMLFormatTarget& ft,
                        const ::namespaces::Sim::DataMap::Data_Model_Map& x, 
                        ::xml_schema::error_handler& eh,
@@ -7731,7 +7570,7 @@ namespace namespaces
                        const ::std::string& e = "UTF-8",
                        ::xml_schema::flags f = 0);
 
-      void
+      __declspec(dllexport) void
       Data_Model_Map_ (::xercesc::XMLFormatTarget& ft,
                        const ::namespaces::Sim::DataMap::Data_Model_Map& x, 
                        ::xercesc::DOMErrorHandler& eh,
@@ -7742,7 +7581,7 @@ namespace namespaces
       // Serialize to an existing xercesc::DOMDocument.
       //
 
-      void
+      __declspec(dllexport) void
       Data_Model_Map_ (::xercesc::DOMDocument& d,
                        const ::namespaces::Sim::DataMap::Data_Model_Map& x,
                        ::xml_schema::flags f = 0);
@@ -7750,7 +7589,7 @@ namespace namespaces
       // Serialize to a new xercesc::DOMDocument.
       //
 
-      ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
+      __declspec(dllexport) ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
       Data_Model_Map_ (const ::namespaces::Sim::DataMap::Data_Model_Map& x, 
                        const ::xml_schema::namespace_infomap& m = ::xml_schema::namespace_infomap (),
                        ::xml_schema::flags f = 0);

@@ -31,8 +31,8 @@
 // in the accompanying FLOSSE file.
 //
 
-#ifndef PROPERTY_MAP_GAP_HXX
-#define PROPERTY_MAP_GAP_HXX
+#ifndef VALUE_TYPE_HXX
+#define VALUE_TYPE_HXX
 
 #ifndef XSD_USE_CHAR
 #define XSD_USE_CHAR
@@ -256,7 +256,7 @@ namespace namespaces
   {
     namespace DataMap
     {
-      class Property_Map_Gap;
+      class ValueType;
     }
   }
 }
@@ -281,240 +281,64 @@ namespace namespaces
   {
     namespace DataMap
     {
-      class StringList;
-    }
-  }
-}
-
-namespace namespaces
-{
-  namespace Sim
-  {
-    namespace DataMap
-    {
-      class Property_Map_Gap: public ::xml_schema::type
+      class __declspec(dllexport) ValueType: public ::xml_schema::string
       {
         public:
-        // Description
-        //
-        typedef ::xml_schema::string Description_type;
-        typedef ::xsd::cxx::tree::optional< Description_type > Description_optional;
-        typedef ::xsd::cxx::tree::traits< Description_type, char > Description_traits;
+        enum value
+        {
+          single,
+          range,
+          array,
+          matrix
+        };
 
-        const Description_optional&
-        Description () const;
+        ValueType ();
 
-        Description_optional&
-        Description ();
+        ValueType (value v);
 
-        void
-        Description (const Description_type& x);
+        ValueType (const char* v);
 
-        void
-        Description (const Description_optional& x);
+        ValueType (const ::std::string& v);
 
-        void
-        Description (::std::auto_ptr< Description_type > p);
+        ValueType (const ::xml_schema::string& v);
 
-        // TargetPropertyName
-        //
-        typedef ::xml_schema::string TargetPropertyName_type;
-        typedef ::xsd::cxx::tree::traits< TargetPropertyName_type, char > TargetPropertyName_traits;
+        ValueType (const ::xercesc::DOMElement& e,
+                   ::xml_schema::flags f = 0,
+                   ::xml_schema::container* c = 0);
 
-        const TargetPropertyName_type&
-        TargetPropertyName () const;
+        ValueType (const ::xercesc::DOMAttr& a,
+                   ::xml_schema::flags f = 0,
+                   ::xml_schema::container* c = 0);
 
-        TargetPropertyName_type&
-        TargetPropertyName ();
+        ValueType (const ::std::string& s,
+                   const ::xercesc::DOMElement* e,
+                   ::xml_schema::flags f = 0,
+                   ::xml_schema::container* c = 0);
 
-        void
-        TargetPropertyName (const TargetPropertyName_type& x);
+        ValueType (const ValueType& x,
+                   ::xml_schema::flags f = 0,
+                   ::xml_schema::container* c = 0);
 
-        void
-        TargetPropertyName (::std::auto_ptr< TargetPropertyName_type > p);
-
-        // TargetLocation
-        //
-        typedef ::namespaces::Sim::DataMap::StringList TargetLocation_type;
-        typedef ::xsd::cxx::tree::optional< TargetLocation_type > TargetLocation_optional;
-        typedef ::xsd::cxx::tree::traits< TargetLocation_type, char > TargetLocation_traits;
-
-        const TargetLocation_optional&
-        TargetLocation () const;
-
-        TargetLocation_optional&
-        TargetLocation ();
-
-        void
-        TargetLocation (const TargetLocation_type& x);
-
-        void
-        TargetLocation (const TargetLocation_optional& x);
-
-        void
-        TargetLocation (::std::auto_ptr< TargetLocation_type > p);
-
-        // DefaultValueNumber
-        //
-        typedef ::xml_schema::double_ DefaultValueNumber_type;
-        typedef ::xsd::cxx::tree::optional< DefaultValueNumber_type > DefaultValueNumber_optional;
-        typedef ::xsd::cxx::tree::traits< DefaultValueNumber_type, char, ::xsd::cxx::tree::schema_type::double_ > DefaultValueNumber_traits;
-
-        const DefaultValueNumber_optional&
-        DefaultValueNumber () const;
-
-        DefaultValueNumber_optional&
-        DefaultValueNumber ();
-
-        void
-        DefaultValueNumber (const DefaultValueNumber_type& x);
-
-        void
-        DefaultValueNumber (const DefaultValueNumber_optional& x);
-
-        // DefaultValueString
-        //
-        typedef ::xml_schema::string DefaultValueString_type;
-        typedef ::xsd::cxx::tree::optional< DefaultValueString_type > DefaultValueString_optional;
-        typedef ::xsd::cxx::tree::traits< DefaultValueString_type, char > DefaultValueString_traits;
-
-        const DefaultValueString_optional&
-        DefaultValueString () const;
-
-        DefaultValueString_optional&
-        DefaultValueString ();
-
-        void
-        DefaultValueString (const DefaultValueString_type& x);
-
-        void
-        DefaultValueString (const DefaultValueString_optional& x);
-
-        void
-        DefaultValueString (::std::auto_ptr< DefaultValueString_type > p);
-
-        // RecordInstance
-        //
-        typedef ::xml_schema::string RecordInstance_type;
-        typedef ::xsd::cxx::tree::optional< RecordInstance_type > RecordInstance_optional;
-        typedef ::xsd::cxx::tree::traits< RecordInstance_type, char > RecordInstance_traits;
-
-        const RecordInstance_optional&
-        RecordInstance () const;
-
-        RecordInstance_optional&
-        RecordInstance ();
-
-        void
-        RecordInstance (const RecordInstance_type& x);
-
-        void
-        RecordInstance (const RecordInstance_optional& x);
-
-        void
-        RecordInstance (::std::auto_ptr< RecordInstance_type > p);
-
-        // RecordInstanceLocation
-        //
-        typedef ::xml_schema::string RecordInstanceLocation_type;
-        typedef ::xsd::cxx::tree::optional< RecordInstanceLocation_type > RecordInstanceLocation_optional;
-        typedef ::xsd::cxx::tree::traits< RecordInstanceLocation_type, char > RecordInstanceLocation_traits;
-
-        const RecordInstanceLocation_optional&
-        RecordInstanceLocation () const;
-
-        RecordInstanceLocation_optional&
-        RecordInstanceLocation ();
-
-        void
-        RecordInstanceLocation (const RecordInstanceLocation_type& x);
-
-        void
-        RecordInstanceLocation (const RecordInstanceLocation_optional& x);
-
-        void
-        RecordInstanceLocation (::std::auto_ptr< RecordInstanceLocation_type > p);
-
-        // RecordLocation
-        //
-        typedef ::xml_schema::string RecordLocation_type;
-        typedef ::xsd::cxx::tree::optional< RecordLocation_type > RecordLocation_optional;
-        typedef ::xsd::cxx::tree::traits< RecordLocation_type, char > RecordLocation_traits;
-
-        const RecordLocation_optional&
-        RecordLocation () const;
-
-        RecordLocation_optional&
-        RecordLocation ();
-
-        void
-        RecordLocation (const RecordLocation_type& x);
-
-        void
-        RecordLocation (const RecordLocation_optional& x);
-
-        void
-        RecordLocation (::std::auto_ptr< RecordLocation_type > p);
-
-        // RefId
-        //
-        typedef ::xml_schema::id RefId_type;
-        typedef ::xsd::cxx::tree::traits< RefId_type, char > RefId_traits;
-
-        const RefId_type&
-        RefId () const;
-
-        RefId_type&
-        RefId ();
-
-        void
-        RefId (const RefId_type& x);
-
-        void
-        RefId (::std::auto_ptr< RefId_type > p);
-
-        // Constructors.
-        //
-        Property_Map_Gap ();
-
-        Property_Map_Gap (const TargetPropertyName_type&,
-                          const RefId_type&);
-
-        Property_Map_Gap (const ::xercesc::DOMElement& e,
-                          ::xml_schema::flags f = 0,
-                          ::xml_schema::container* c = 0);
-
-        Property_Map_Gap (const Property_Map_Gap& x,
-                          ::xml_schema::flags f = 0,
-                          ::xml_schema::container* c = 0);
-
-        virtual Property_Map_Gap*
+        virtual ValueType*
         _clone (::xml_schema::flags f = 0,
                 ::xml_schema::container* c = 0) const;
 
-        Property_Map_Gap&
-        operator= (const Property_Map_Gap& x);
+        ValueType&
+        operator= (value v);
 
-        virtual 
-        ~Property_Map_Gap ();
-
-        // Implementation.
-        //
-        protected:
-        void
-        parse (::xsd::cxx::xml::dom::parser< char >&,
-               ::xml_schema::flags);
+        virtual
+        operator value () const
+        {
+          return _xsd_ValueType_convert ();
+        }
 
         protected:
-        Description_optional Description_;
-        ::xsd::cxx::tree::one< TargetPropertyName_type > TargetPropertyName_;
-        TargetLocation_optional TargetLocation_;
-        DefaultValueNumber_optional DefaultValueNumber_;
-        DefaultValueString_optional DefaultValueString_;
-        RecordInstance_optional RecordInstance_;
-        RecordInstanceLocation_optional RecordInstanceLocation_;
-        RecordLocation_optional RecordLocation_;
-        ::xsd::cxx::tree::one< RefId_type > RefId_;
+        value
+        _xsd_ValueType_convert () const;
+
+        public:
+        static const char* const _xsd_ValueType_literals_[4];
+        static const value _xsd_ValueType_indexes_[4];
       };
     }
   }
@@ -551,7 +375,14 @@ namespace namespaces
     namespace DataMap
     {
       void
-      operator<< (::xercesc::DOMElement&, const Property_Map_Gap&);
+      operator<< (::xercesc::DOMElement&, const ValueType&);
+
+      void
+      operator<< (::xercesc::DOMAttr&, const ValueType&);
+
+      void
+      operator<< (::xml_schema::list_stream&,
+                  const ValueType&);
     }
   }
 }
@@ -563,4 +394,4 @@ namespace namespaces
 //
 // End epilogue.
 
-#endif // PROPERTY_MAP_GAP_HXX
+#endif // VALUE_TYPE_HXX

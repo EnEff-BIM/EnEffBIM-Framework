@@ -31,8 +31,8 @@
 // in the accompanying FLOSSE file.
 //
 
-#ifndef PROPERTY_MAP_GAP_HXX
-#define PROPERTY_MAP_GAP_HXX
+#ifndef PROPERTY_MAP_TRANSFORMATION_HXX
+#define PROPERTY_MAP_TRANSFORMATION_HXX
 
 #ifndef XSD_USE_CHAR
 #define XSD_USE_CHAR
@@ -256,7 +256,7 @@ namespace namespaces
   {
     namespace DataMap
     {
-      class Property_Map_Gap;
+      class Property_Map_Transformation;
     }
   }
 }
@@ -292,7 +292,7 @@ namespace namespaces
   {
     namespace DataMap
     {
-      class Property_Map_Gap: public ::xml_schema::type
+      class __declspec(dllexport) Property_Map_Transformation: public ::xml_schema::type
       {
         public:
         // Description
@@ -316,82 +316,90 @@ namespace namespaces
         void
         Description (::std::auto_ptr< Description_type > p);
 
-        // TargetPropertyName
+        // InputParameterName
         //
-        typedef ::xml_schema::string TargetPropertyName_type;
-        typedef ::xsd::cxx::tree::traits< TargetPropertyName_type, char > TargetPropertyName_traits;
+        typedef ::xml_schema::idref InputParameterName_type;
+        typedef ::xsd::cxx::tree::sequence< InputParameterName_type > InputParameterName_sequence;
+        typedef InputParameterName_sequence::iterator InputParameterName_iterator;
+        typedef InputParameterName_sequence::const_iterator InputParameterName_const_iterator;
+        typedef ::xsd::cxx::tree::traits< InputParameterName_type, char > InputParameterName_traits;
 
-        const TargetPropertyName_type&
-        TargetPropertyName () const;
+        const InputParameterName_sequence&
+        InputParameterName () const;
 
-        TargetPropertyName_type&
-        TargetPropertyName ();
+        InputParameterName_sequence&
+        InputParameterName ();
 
         void
-        TargetPropertyName (const TargetPropertyName_type& x);
+        InputParameterName (const InputParameterName_sequence& s);
+
+        // InputCoefficientName
+        //
+        typedef ::xml_schema::idref InputCoefficientName_type;
+        typedef ::xsd::cxx::tree::sequence< InputCoefficientName_type > InputCoefficientName_sequence;
+        typedef InputCoefficientName_sequence::iterator InputCoefficientName_iterator;
+        typedef InputCoefficientName_sequence::const_iterator InputCoefficientName_const_iterator;
+        typedef ::xsd::cxx::tree::traits< InputCoefficientName_type, char > InputCoefficientName_traits;
+
+        const InputCoefficientName_sequence&
+        InputCoefficientName () const;
+
+        InputCoefficientName_sequence&
+        InputCoefficientName ();
 
         void
-        TargetPropertyName (::std::auto_ptr< TargetPropertyName_type > p);
+        InputCoefficientName (const InputCoefficientName_sequence& s);
+
+        // Function
+        //
+        typedef ::namespaces::Sim::DataMap::StringList Function_type;
+        typedef ::xsd::cxx::tree::traits< Function_type, char > Function_traits;
+
+        const Function_type&
+        Function () const;
+
+        Function_type&
+        Function ();
+
+        void
+        Function (const Function_type& x);
+
+        void
+        Function (::std::auto_ptr< Function_type > p);
+
+        // OutputParameterName
+        //
+        typedef ::xml_schema::idref OutputParameterName_type;
+        typedef ::xsd::cxx::tree::sequence< OutputParameterName_type > OutputParameterName_sequence;
+        typedef OutputParameterName_sequence::iterator OutputParameterName_iterator;
+        typedef OutputParameterName_sequence::const_iterator OutputParameterName_const_iterator;
+        typedef ::xsd::cxx::tree::traits< OutputParameterName_type, char > OutputParameterName_traits;
+
+        const OutputParameterName_sequence&
+        OutputParameterName () const;
+
+        OutputParameterName_sequence&
+        OutputParameterName ();
+
+        void
+        OutputParameterName (const OutputParameterName_sequence& s);
 
         // TargetLocation
         //
         typedef ::namespaces::Sim::DataMap::StringList TargetLocation_type;
-        typedef ::xsd::cxx::tree::optional< TargetLocation_type > TargetLocation_optional;
+        typedef ::xsd::cxx::tree::sequence< TargetLocation_type > TargetLocation_sequence;
+        typedef TargetLocation_sequence::iterator TargetLocation_iterator;
+        typedef TargetLocation_sequence::const_iterator TargetLocation_const_iterator;
         typedef ::xsd::cxx::tree::traits< TargetLocation_type, char > TargetLocation_traits;
 
-        const TargetLocation_optional&
+        const TargetLocation_sequence&
         TargetLocation () const;
 
-        TargetLocation_optional&
+        TargetLocation_sequence&
         TargetLocation ();
 
         void
-        TargetLocation (const TargetLocation_type& x);
-
-        void
-        TargetLocation (const TargetLocation_optional& x);
-
-        void
-        TargetLocation (::std::auto_ptr< TargetLocation_type > p);
-
-        // DefaultValueNumber
-        //
-        typedef ::xml_schema::double_ DefaultValueNumber_type;
-        typedef ::xsd::cxx::tree::optional< DefaultValueNumber_type > DefaultValueNumber_optional;
-        typedef ::xsd::cxx::tree::traits< DefaultValueNumber_type, char, ::xsd::cxx::tree::schema_type::double_ > DefaultValueNumber_traits;
-
-        const DefaultValueNumber_optional&
-        DefaultValueNumber () const;
-
-        DefaultValueNumber_optional&
-        DefaultValueNumber ();
-
-        void
-        DefaultValueNumber (const DefaultValueNumber_type& x);
-
-        void
-        DefaultValueNumber (const DefaultValueNumber_optional& x);
-
-        // DefaultValueString
-        //
-        typedef ::xml_schema::string DefaultValueString_type;
-        typedef ::xsd::cxx::tree::optional< DefaultValueString_type > DefaultValueString_optional;
-        typedef ::xsd::cxx::tree::traits< DefaultValueString_type, char > DefaultValueString_traits;
-
-        const DefaultValueString_optional&
-        DefaultValueString () const;
-
-        DefaultValueString_optional&
-        DefaultValueString ();
-
-        void
-        DefaultValueString (const DefaultValueString_type& x);
-
-        void
-        DefaultValueString (const DefaultValueString_optional& x);
-
-        void
-        DefaultValueString (::std::auto_ptr< DefaultValueString_type > p);
+        TargetLocation (const TargetLocation_sequence& s);
 
         // RecordInstance
         //
@@ -475,28 +483,28 @@ namespace namespaces
 
         // Constructors.
         //
-        Property_Map_Gap ();
+        Property_Map_Transformation ();
 
-        Property_Map_Gap (const TargetPropertyName_type&,
-                          const RefId_type&);
+        Property_Map_Transformation (const Function_type&,
+                                     const RefId_type&);
 
-        Property_Map_Gap (const ::xercesc::DOMElement& e,
-                          ::xml_schema::flags f = 0,
-                          ::xml_schema::container* c = 0);
+        Property_Map_Transformation (const ::xercesc::DOMElement& e,
+                                     ::xml_schema::flags f = 0,
+                                     ::xml_schema::container* c = 0);
 
-        Property_Map_Gap (const Property_Map_Gap& x,
-                          ::xml_schema::flags f = 0,
-                          ::xml_schema::container* c = 0);
+        Property_Map_Transformation (const Property_Map_Transformation& x,
+                                     ::xml_schema::flags f = 0,
+                                     ::xml_schema::container* c = 0);
 
-        virtual Property_Map_Gap*
+        virtual Property_Map_Transformation*
         _clone (::xml_schema::flags f = 0,
                 ::xml_schema::container* c = 0) const;
 
-        Property_Map_Gap&
-        operator= (const Property_Map_Gap& x);
+        Property_Map_Transformation&
+        operator= (const Property_Map_Transformation& x);
 
         virtual 
-        ~Property_Map_Gap ();
+        ~Property_Map_Transformation ();
 
         // Implementation.
         //
@@ -507,10 +515,11 @@ namespace namespaces
 
         protected:
         Description_optional Description_;
-        ::xsd::cxx::tree::one< TargetPropertyName_type > TargetPropertyName_;
-        TargetLocation_optional TargetLocation_;
-        DefaultValueNumber_optional DefaultValueNumber_;
-        DefaultValueString_optional DefaultValueString_;
+        InputParameterName_sequence InputParameterName_;
+        InputCoefficientName_sequence InputCoefficientName_;
+        ::xsd::cxx::tree::one< Function_type > Function_;
+        OutputParameterName_sequence OutputParameterName_;
+        TargetLocation_sequence TargetLocation_;
         RecordInstance_optional RecordInstance_;
         RecordInstanceLocation_optional RecordInstanceLocation_;
         RecordLocation_optional RecordLocation_;
@@ -551,7 +560,7 @@ namespace namespaces
     namespace DataMap
     {
       void
-      operator<< (::xercesc::DOMElement&, const Property_Map_Gap&);
+      operator<< (::xercesc::DOMElement&, const Property_Map_Transformation&);
     }
   }
 }
@@ -563,4 +572,4 @@ namespace namespaces
 //
 // End epilogue.
 
-#endif // PROPERTY_MAP_GAP_HXX
+#endif // PROPERTY_MAP_TRANSFORMATION_HXX

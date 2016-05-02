@@ -101,7 +101,8 @@
 	<!-- a record location in the target data model: Modelica -->
 	<xs:element name="RecordLocation" type="xs:string"/>
 	<!-- default value assigned to the newly added property -->
-	<xs:element name="DefaultValue" type="xs:string"/>
+	<xs:element name="DefaultValueNumber" type="xs:double"/>
+	<xs:element name="DefaultValueString" type="xs:string"/>
 	<!-- a list of default value assigned to the newly added properties -->
 	<xs:element name="DefaultValueList" type="datamap:StringList"/>
 	<!-- a single value stored as the referenced string type -->
@@ -226,7 +227,10 @@
 			<xs:element ref="datamap:Description" minOccurs="0" maxOccurs="1"/>
 			<xs:element ref="datamap:TargetPropertyName" minOccurs="1" maxOccurs="1"/>
 			<xs:element ref="datamap:TargetLocation" minOccurs="0" maxOccurs="1"/>
-			<xs:element ref="datamap:DefaultValue" minOccurs="1" maxOccurs="1"/>
+			<xs:choice>
+				<xs:element ref="datamap:DefaultValueNumber"/>
+				<xs:element ref="datamap:DefaultValueString"/>
+			</xs:choice>
 			<!-- map properties from SimModel into a record structure declared in Modelica -->
 			<xs:element ref="datamap:RecordInstance" minOccurs="0" maxOccurs="1"/>
 			<xs:element ref="datamap:RecordInstanceLocation" minOccurs="0" maxOccurs="1"/>

@@ -38,7 +38,9 @@
 
 #include <xsd/cxx/pre.hxx>
 
-#include "Property_Map_Gap.hxx"
+#include "Property_Map_One2One.hxx"
+
+#include "refstringlist.hxx"
 
 #include "stringlist.hxx"
 
@@ -48,256 +50,226 @@ namespace namespaces
   {
     namespace DataMap
     {
-      // Property_Map_Gap
+      // Property_Map_One2One
       // 
 
-      const Property_Map_Gap::Description_optional& Property_Map_Gap::
+      const Property_Map_One2One::Description_optional& Property_Map_One2One::
       Description () const
       {
         return this->Description_;
       }
 
-      Property_Map_Gap::Description_optional& Property_Map_Gap::
+      Property_Map_One2One::Description_optional& Property_Map_One2One::
       Description ()
       {
         return this->Description_;
       }
 
-      void Property_Map_Gap::
+      void Property_Map_One2One::
       Description (const Description_type& x)
       {
         this->Description_.set (x);
       }
 
-      void Property_Map_Gap::
+      void Property_Map_One2One::
       Description (const Description_optional& x)
       {
         this->Description_ = x;
       }
 
-      void Property_Map_Gap::
+      void Property_Map_One2One::
       Description (::std::auto_ptr< Description_type > x)
       {
         this->Description_.set (x);
       }
 
-      const Property_Map_Gap::TargetPropertyName_type& Property_Map_Gap::
+      const Property_Map_One2One::RefValue_type& Property_Map_One2One::
+      RefValue () const
+      {
+        return this->RefValue_.get ();
+      }
+
+      Property_Map_One2One::RefValue_type& Property_Map_One2One::
+      RefValue ()
+      {
+        return this->RefValue_.get ();
+      }
+
+      void Property_Map_One2One::
+      RefValue (const RefValue_type& x)
+      {
+        this->RefValue_.set (x);
+      }
+
+      void Property_Map_One2One::
+      RefValue (::std::auto_ptr< RefValue_type > x)
+      {
+        this->RefValue_.set (x);
+      }
+
+      const Property_Map_One2One::TargetPropertyName_type& Property_Map_One2One::
       TargetPropertyName () const
       {
         return this->TargetPropertyName_.get ();
       }
 
-      Property_Map_Gap::TargetPropertyName_type& Property_Map_Gap::
+      Property_Map_One2One::TargetPropertyName_type& Property_Map_One2One::
       TargetPropertyName ()
       {
         return this->TargetPropertyName_.get ();
       }
 
-      void Property_Map_Gap::
+      void Property_Map_One2One::
       TargetPropertyName (const TargetPropertyName_type& x)
       {
         this->TargetPropertyName_.set (x);
       }
 
-      void Property_Map_Gap::
+      void Property_Map_One2One::
       TargetPropertyName (::std::auto_ptr< TargetPropertyName_type > x)
       {
         this->TargetPropertyName_.set (x);
       }
 
-      const Property_Map_Gap::TargetLocation_optional& Property_Map_Gap::
+      const Property_Map_One2One::TargetLocation_optional& Property_Map_One2One::
       TargetLocation () const
       {
         return this->TargetLocation_;
       }
 
-      Property_Map_Gap::TargetLocation_optional& Property_Map_Gap::
+      Property_Map_One2One::TargetLocation_optional& Property_Map_One2One::
       TargetLocation ()
       {
         return this->TargetLocation_;
       }
 
-      void Property_Map_Gap::
+      void Property_Map_One2One::
       TargetLocation (const TargetLocation_type& x)
       {
         this->TargetLocation_.set (x);
       }
 
-      void Property_Map_Gap::
+      void Property_Map_One2One::
       TargetLocation (const TargetLocation_optional& x)
       {
         this->TargetLocation_ = x;
       }
 
-      void Property_Map_Gap::
+      void Property_Map_One2One::
       TargetLocation (::std::auto_ptr< TargetLocation_type > x)
       {
         this->TargetLocation_.set (x);
       }
 
-      const Property_Map_Gap::DefaultValueNumber_optional& Property_Map_Gap::
-      DefaultValueNumber () const
-      {
-        return this->DefaultValueNumber_;
-      }
-
-      Property_Map_Gap::DefaultValueNumber_optional& Property_Map_Gap::
-      DefaultValueNumber ()
-      {
-        return this->DefaultValueNumber_;
-      }
-
-      void Property_Map_Gap::
-      DefaultValueNumber (const DefaultValueNumber_type& x)
-      {
-        this->DefaultValueNumber_.set (x);
-      }
-
-      void Property_Map_Gap::
-      DefaultValueNumber (const DefaultValueNumber_optional& x)
-      {
-        this->DefaultValueNumber_ = x;
-      }
-
-      const Property_Map_Gap::DefaultValueString_optional& Property_Map_Gap::
-      DefaultValueString () const
-      {
-        return this->DefaultValueString_;
-      }
-
-      Property_Map_Gap::DefaultValueString_optional& Property_Map_Gap::
-      DefaultValueString ()
-      {
-        return this->DefaultValueString_;
-      }
-
-      void Property_Map_Gap::
-      DefaultValueString (const DefaultValueString_type& x)
-      {
-        this->DefaultValueString_.set (x);
-      }
-
-      void Property_Map_Gap::
-      DefaultValueString (const DefaultValueString_optional& x)
-      {
-        this->DefaultValueString_ = x;
-      }
-
-      void Property_Map_Gap::
-      DefaultValueString (::std::auto_ptr< DefaultValueString_type > x)
-      {
-        this->DefaultValueString_.set (x);
-      }
-
-      const Property_Map_Gap::RecordInstance_optional& Property_Map_Gap::
+      const Property_Map_One2One::RecordInstance_optional& Property_Map_One2One::
       RecordInstance () const
       {
         return this->RecordInstance_;
       }
 
-      Property_Map_Gap::RecordInstance_optional& Property_Map_Gap::
+      Property_Map_One2One::RecordInstance_optional& Property_Map_One2One::
       RecordInstance ()
       {
         return this->RecordInstance_;
       }
 
-      void Property_Map_Gap::
+      void Property_Map_One2One::
       RecordInstance (const RecordInstance_type& x)
       {
         this->RecordInstance_.set (x);
       }
 
-      void Property_Map_Gap::
+      void Property_Map_One2One::
       RecordInstance (const RecordInstance_optional& x)
       {
         this->RecordInstance_ = x;
       }
 
-      void Property_Map_Gap::
+      void Property_Map_One2One::
       RecordInstance (::std::auto_ptr< RecordInstance_type > x)
       {
         this->RecordInstance_.set (x);
       }
 
-      const Property_Map_Gap::RecordInstanceLocation_optional& Property_Map_Gap::
+      const Property_Map_One2One::RecordInstanceLocation_optional& Property_Map_One2One::
       RecordInstanceLocation () const
       {
         return this->RecordInstanceLocation_;
       }
 
-      Property_Map_Gap::RecordInstanceLocation_optional& Property_Map_Gap::
+      Property_Map_One2One::RecordInstanceLocation_optional& Property_Map_One2One::
       RecordInstanceLocation ()
       {
         return this->RecordInstanceLocation_;
       }
 
-      void Property_Map_Gap::
+      void Property_Map_One2One::
       RecordInstanceLocation (const RecordInstanceLocation_type& x)
       {
         this->RecordInstanceLocation_.set (x);
       }
 
-      void Property_Map_Gap::
+      void Property_Map_One2One::
       RecordInstanceLocation (const RecordInstanceLocation_optional& x)
       {
         this->RecordInstanceLocation_ = x;
       }
 
-      void Property_Map_Gap::
+      void Property_Map_One2One::
       RecordInstanceLocation (::std::auto_ptr< RecordInstanceLocation_type > x)
       {
         this->RecordInstanceLocation_.set (x);
       }
 
-      const Property_Map_Gap::RecordLocation_optional& Property_Map_Gap::
+      const Property_Map_One2One::RecordLocation_optional& Property_Map_One2One::
       RecordLocation () const
       {
         return this->RecordLocation_;
       }
 
-      Property_Map_Gap::RecordLocation_optional& Property_Map_Gap::
+      Property_Map_One2One::RecordLocation_optional& Property_Map_One2One::
       RecordLocation ()
       {
         return this->RecordLocation_;
       }
 
-      void Property_Map_Gap::
+      void Property_Map_One2One::
       RecordLocation (const RecordLocation_type& x)
       {
         this->RecordLocation_.set (x);
       }
 
-      void Property_Map_Gap::
+      void Property_Map_One2One::
       RecordLocation (const RecordLocation_optional& x)
       {
         this->RecordLocation_ = x;
       }
 
-      void Property_Map_Gap::
+      void Property_Map_One2One::
       RecordLocation (::std::auto_ptr< RecordLocation_type > x)
       {
         this->RecordLocation_.set (x);
       }
 
-      const Property_Map_Gap::RefId_type& Property_Map_Gap::
+      const Property_Map_One2One::RefId_type& Property_Map_One2One::
       RefId () const
       {
         return this->RefId_.get ();
       }
 
-      Property_Map_Gap::RefId_type& Property_Map_Gap::
+      Property_Map_One2One::RefId_type& Property_Map_One2One::
       RefId ()
       {
         return this->RefId_.get ();
       }
 
-      void Property_Map_Gap::
+      void Property_Map_One2One::
       RefId (const RefId_type& x)
       {
         this->RefId_.set (x);
       }
 
-      void Property_Map_Gap::
+      void Property_Map_One2One::
       RefId (::std::auto_ptr< RefId_type > x)
       {
         this->RefId_.set (x);
@@ -323,17 +295,16 @@ namespace namespaces
   {
     namespace DataMap
     {
-      // Property_Map_Gap
+      // Property_Map_One2One
       //
 
-      Property_Map_Gap::
-      Property_Map_Gap ()
+      Property_Map_One2One::
+      Property_Map_One2One ()
       : ::xml_schema::type (),
         Description_ (this),
+        RefValue_ (this),
         TargetPropertyName_ (this),
         TargetLocation_ (this),
-        DefaultValueNumber_ (this),
-        DefaultValueString_ (this),
         RecordInstance_ (this),
         RecordInstanceLocation_ (this),
         RecordLocation_ (this),
@@ -341,15 +312,15 @@ namespace namespaces
       {
       }
 
-      Property_Map_Gap::
-      Property_Map_Gap (const TargetPropertyName_type& TargetPropertyName,
-                        const RefId_type& RefId)
+      Property_Map_One2One::
+      Property_Map_One2One (const RefValue_type& RefValue,
+                            const TargetPropertyName_type& TargetPropertyName,
+                            const RefId_type& RefId)
       : ::xml_schema::type (),
         Description_ (this),
+        RefValue_ (RefValue, this),
         TargetPropertyName_ (TargetPropertyName, this),
         TargetLocation_ (this),
-        DefaultValueNumber_ (this),
-        DefaultValueString_ (this),
         RecordInstance_ (this),
         RecordInstanceLocation_ (this),
         RecordLocation_ (this),
@@ -357,16 +328,31 @@ namespace namespaces
       {
       }
 
-      Property_Map_Gap::
-      Property_Map_Gap (const Property_Map_Gap& x,
-                        ::xml_schema::flags f,
-                        ::xml_schema::container* c)
+      Property_Map_One2One::
+      Property_Map_One2One (::std::auto_ptr< RefValue_type > RefValue,
+                            const TargetPropertyName_type& TargetPropertyName,
+                            const RefId_type& RefId)
+      : ::xml_schema::type (),
+        Description_ (this),
+        RefValue_ (RefValue, this),
+        TargetPropertyName_ (TargetPropertyName, this),
+        TargetLocation_ (this),
+        RecordInstance_ (this),
+        RecordInstanceLocation_ (this),
+        RecordLocation_ (this),
+        RefId_ (RefId, this)
+      {
+      }
+
+      Property_Map_One2One::
+      Property_Map_One2One (const Property_Map_One2One& x,
+                            ::xml_schema::flags f,
+                            ::xml_schema::container* c)
       : ::xml_schema::type (x, f, c),
         Description_ (x.Description_, f, this),
+        RefValue_ (x.RefValue_, f, this),
         TargetPropertyName_ (x.TargetPropertyName_, f, this),
         TargetLocation_ (x.TargetLocation_, f, this),
-        DefaultValueNumber_ (x.DefaultValueNumber_, f, this),
-        DefaultValueString_ (x.DefaultValueString_, f, this),
         RecordInstance_ (x.RecordInstance_, f, this),
         RecordInstanceLocation_ (x.RecordInstanceLocation_, f, this),
         RecordLocation_ (x.RecordLocation_, f, this),
@@ -374,16 +360,15 @@ namespace namespaces
       {
       }
 
-      Property_Map_Gap::
-      Property_Map_Gap (const ::xercesc::DOMElement& e,
-                        ::xml_schema::flags f,
-                        ::xml_schema::container* c)
+      Property_Map_One2One::
+      Property_Map_One2One (const ::xercesc::DOMElement& e,
+                            ::xml_schema::flags f,
+                            ::xml_schema::container* c)
       : ::xml_schema::type (e, f | ::xml_schema::flags::base, c),
         Description_ (this),
+        RefValue_ (this),
         TargetPropertyName_ (this),
         TargetLocation_ (this),
-        DefaultValueNumber_ (this),
-        DefaultValueString_ (this),
         RecordInstance_ (this),
         RecordInstanceLocation_ (this),
         RecordLocation_ (this),
@@ -396,7 +381,7 @@ namespace namespaces
         }
       }
 
-      void Property_Map_Gap::
+      void Property_Map_One2One::
       parse (::xsd::cxx::xml::dom::parser< char >& p,
              ::xml_schema::flags f)
       {
@@ -416,6 +401,20 @@ namespace namespaces
             if (!this->Description_)
             {
               this->Description_.set (r);
+              continue;
+            }
+          }
+
+          // RefValue
+          //
+          if (n.name () == "RefValue" && n.namespace_ () == "http://www.e3d.rwth-aachen.de/namespaces/Sim/DataMap")
+          {
+            ::std::auto_ptr< RefValue_type > r (
+              RefValue_traits::create (i, f, this));
+
+            if (!RefValue_.present ())
+            {
+              this->RefValue_.set (r);
               continue;
             }
           }
@@ -444,31 +443,6 @@ namespace namespaces
             if (!this->TargetLocation_)
             {
               this->TargetLocation_.set (r);
-              continue;
-            }
-          }
-
-          // DefaultValueNumber
-          //
-          if (n.name () == "DefaultValueNumber" && n.namespace_ () == "http://www.e3d.rwth-aachen.de/namespaces/Sim/DataMap")
-          {
-            if (!this->DefaultValueNumber_)
-            {
-              this->DefaultValueNumber_.set (DefaultValueNumber_traits::create (i, f, this));
-              continue;
-            }
-          }
-
-          // DefaultValueString
-          //
-          if (n.name () == "DefaultValueString" && n.namespace_ () == "http://www.e3d.rwth-aachen.de/namespaces/Sim/DataMap")
-          {
-            ::std::auto_ptr< DefaultValueString_type > r (
-              DefaultValueString_traits::create (i, f, this));
-
-            if (!this->DefaultValueString_)
-            {
-              this->DefaultValueString_.set (r);
               continue;
             }
           }
@@ -518,6 +492,13 @@ namespace namespaces
           break;
         }
 
+        if (!RefValue_.present ())
+        {
+          throw ::xsd::cxx::tree::expected_element< char > (
+            "RefValue",
+            "http://www.e3d.rwth-aachen.de/namespaces/Sim/DataMap");
+        }
+
         if (!TargetPropertyName_.present ())
         {
           throw ::xsd::cxx::tree::expected_element< char > (
@@ -546,24 +527,23 @@ namespace namespaces
         }
       }
 
-      Property_Map_Gap* Property_Map_Gap::
+      Property_Map_One2One* Property_Map_One2One::
       _clone (::xml_schema::flags f,
               ::xml_schema::container* c) const
       {
-        return new class Property_Map_Gap (*this, f, c);
+        return new class Property_Map_One2One (*this, f, c);
       }
 
-      Property_Map_Gap& Property_Map_Gap::
-      operator= (const Property_Map_Gap& x)
+      Property_Map_One2One& Property_Map_One2One::
+      operator= (const Property_Map_One2One& x)
       {
         if (this != &x)
         {
           static_cast< ::xml_schema::type& > (*this) = x;
           this->Description_ = x.Description_;
+          this->RefValue_ = x.RefValue_;
           this->TargetPropertyName_ = x.TargetPropertyName_;
           this->TargetLocation_ = x.TargetLocation_;
-          this->DefaultValueNumber_ = x.DefaultValueNumber_;
-          this->DefaultValueString_ = x.DefaultValueString_;
           this->RecordInstance_ = x.RecordInstance_;
           this->RecordInstanceLocation_ = x.RecordInstanceLocation_;
           this->RecordLocation_ = x.RecordLocation_;
@@ -573,8 +553,8 @@ namespace namespaces
         return *this;
       }
 
-      Property_Map_Gap::
-      ~Property_Map_Gap ()
+      Property_Map_One2One::
+      ~Property_Map_One2One ()
       {
       }
     }
@@ -615,7 +595,7 @@ namespace namespaces
     namespace DataMap
     {
       void
-      operator<< (::xercesc::DOMElement& e, const Property_Map_Gap& i)
+      operator<< (::xercesc::DOMElement& e, const Property_Map_One2One& i)
       {
         e << static_cast< const ::xml_schema::type& > (i);
 
@@ -630,6 +610,18 @@ namespace namespaces
               e));
 
           s << *i.Description ();
+        }
+
+        // RefValue
+        //
+        {
+          ::xercesc::DOMElement& s (
+            ::xsd::cxx::xml::dom::create_element (
+              "RefValue",
+              "http://www.e3d.rwth-aachen.de/namespaces/Sim/DataMap",
+              e));
+
+          s << i.RefValue ();
         }
 
         // TargetPropertyName
@@ -655,32 +647,6 @@ namespace namespaces
               e));
 
           s << *i.TargetLocation ();
-        }
-
-        // DefaultValueNumber
-        //
-        if (i.DefaultValueNumber ())
-        {
-          ::xercesc::DOMElement& s (
-            ::xsd::cxx::xml::dom::create_element (
-              "DefaultValueNumber",
-              "http://www.e3d.rwth-aachen.de/namespaces/Sim/DataMap",
-              e));
-
-          s << ::xml_schema::as_double(*i.DefaultValueNumber ());
-        }
-
-        // DefaultValueString
-        //
-        if (i.DefaultValueString ())
-        {
-          ::xercesc::DOMElement& s (
-            ::xsd::cxx::xml::dom::create_element (
-              "DefaultValueString",
-              "http://www.e3d.rwth-aachen.de/namespaces/Sim/DataMap",
-              e));
-
-          s << *i.DefaultValueString ();
         }
 
         // RecordInstance

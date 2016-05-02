@@ -26,7 +26,7 @@ SimHierarchy& SimTranslator::getSimHierarchy()
 SimMappedData& SimTranslator::getSimMappedData(std::string _name)
 {
 	// translate SimModel data based on mapping rules
-	_simMappedDataObj.translator(_simHierarchyObj);
+	_simMappedDataObj.translator(_simHierarchyObj, _name);
 
 	return _simMappedDataObj;
 }

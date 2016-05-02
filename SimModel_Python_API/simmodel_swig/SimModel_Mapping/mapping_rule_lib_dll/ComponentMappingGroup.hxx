@@ -31,8 +31,8 @@
 // in the accompanying FLOSSE file.
 //
 
-#ifndef PROPERTY_MAP_GAP_HXX
-#define PROPERTY_MAP_GAP_HXX
+#ifndef COMPONENT_MAPPING_GROUP_HXX
+#define COMPONENT_MAPPING_GROUP_HXX
 
 #ifndef XSD_USE_CHAR
 #define XSD_USE_CHAR
@@ -256,7 +256,7 @@ namespace namespaces
   {
     namespace DataMap
     {
-      class Property_Map_Gap;
+      class ComponentMappingGroup;
     }
   }
 }
@@ -292,7 +292,7 @@ namespace namespaces
   {
     namespace DataMap
     {
-      class Property_Map_Gap: public ::xml_schema::type
+      class __declspec(dllexport) ComponentMappingGroup: public ::xml_schema::type
       {
         public:
         // Description
@@ -316,22 +316,22 @@ namespace namespaces
         void
         Description (::std::auto_ptr< Description_type > p);
 
-        // TargetPropertyName
+        // TargetComponentName
         //
-        typedef ::xml_schema::string TargetPropertyName_type;
-        typedef ::xsd::cxx::tree::traits< TargetPropertyName_type, char > TargetPropertyName_traits;
+        typedef ::xml_schema::string TargetComponentName_type;
+        typedef ::xsd::cxx::tree::traits< TargetComponentName_type, char > TargetComponentName_traits;
 
-        const TargetPropertyName_type&
-        TargetPropertyName () const;
+        const TargetComponentName_type&
+        TargetComponentName () const;
 
-        TargetPropertyName_type&
-        TargetPropertyName ();
-
-        void
-        TargetPropertyName (const TargetPropertyName_type& x);
+        TargetComponentName_type&
+        TargetComponentName ();
 
         void
-        TargetPropertyName (::std::auto_ptr< TargetPropertyName_type > p);
+        TargetComponentName (const TargetComponentName_type& x);
+
+        void
+        TargetComponentName (::std::auto_ptr< TargetComponentName_type > p);
 
         // TargetLocation
         //
@@ -354,107 +354,56 @@ namespace namespaces
         void
         TargetLocation (::std::auto_ptr< TargetLocation_type > p);
 
-        // DefaultValueNumber
+        // Property_Map_One2One_Name
         //
-        typedef ::xml_schema::double_ DefaultValueNumber_type;
-        typedef ::xsd::cxx::tree::optional< DefaultValueNumber_type > DefaultValueNumber_optional;
-        typedef ::xsd::cxx::tree::traits< DefaultValueNumber_type, char, ::xsd::cxx::tree::schema_type::double_ > DefaultValueNumber_traits;
+        typedef ::xml_schema::idref Property_Map_One2One_Name_type;
+        typedef ::xsd::cxx::tree::sequence< Property_Map_One2One_Name_type > Property_Map_One2One_Name_sequence;
+        typedef Property_Map_One2One_Name_sequence::iterator Property_Map_One2One_Name_iterator;
+        typedef Property_Map_One2One_Name_sequence::const_iterator Property_Map_One2One_Name_const_iterator;
+        typedef ::xsd::cxx::tree::traits< Property_Map_One2One_Name_type, char > Property_Map_One2One_Name_traits;
 
-        const DefaultValueNumber_optional&
-        DefaultValueNumber () const;
+        const Property_Map_One2One_Name_sequence&
+        Property_Map_One2One_Name () const;
 
-        DefaultValueNumber_optional&
-        DefaultValueNumber ();
+        Property_Map_One2One_Name_sequence&
+        Property_Map_One2One_Name ();
 
         void
-        DefaultValueNumber (const DefaultValueNumber_type& x);
+        Property_Map_One2One_Name (const Property_Map_One2One_Name_sequence& s);
 
-        void
-        DefaultValueNumber (const DefaultValueNumber_optional& x);
-
-        // DefaultValueString
+        // Property_Map_Gap_Name
         //
-        typedef ::xml_schema::string DefaultValueString_type;
-        typedef ::xsd::cxx::tree::optional< DefaultValueString_type > DefaultValueString_optional;
-        typedef ::xsd::cxx::tree::traits< DefaultValueString_type, char > DefaultValueString_traits;
+        typedef ::xml_schema::idref Property_Map_Gap_Name_type;
+        typedef ::xsd::cxx::tree::sequence< Property_Map_Gap_Name_type > Property_Map_Gap_Name_sequence;
+        typedef Property_Map_Gap_Name_sequence::iterator Property_Map_Gap_Name_iterator;
+        typedef Property_Map_Gap_Name_sequence::const_iterator Property_Map_Gap_Name_const_iterator;
+        typedef ::xsd::cxx::tree::traits< Property_Map_Gap_Name_type, char > Property_Map_Gap_Name_traits;
 
-        const DefaultValueString_optional&
-        DefaultValueString () const;
+        const Property_Map_Gap_Name_sequence&
+        Property_Map_Gap_Name () const;
 
-        DefaultValueString_optional&
-        DefaultValueString ();
-
-        void
-        DefaultValueString (const DefaultValueString_type& x);
-
-        void
-        DefaultValueString (const DefaultValueString_optional& x);
+        Property_Map_Gap_Name_sequence&
+        Property_Map_Gap_Name ();
 
         void
-        DefaultValueString (::std::auto_ptr< DefaultValueString_type > p);
+        Property_Map_Gap_Name (const Property_Map_Gap_Name_sequence& s);
 
-        // RecordInstance
+        // Property_Map_Transformation_Name
         //
-        typedef ::xml_schema::string RecordInstance_type;
-        typedef ::xsd::cxx::tree::optional< RecordInstance_type > RecordInstance_optional;
-        typedef ::xsd::cxx::tree::traits< RecordInstance_type, char > RecordInstance_traits;
+        typedef ::xml_schema::idref Property_Map_Transformation_Name_type;
+        typedef ::xsd::cxx::tree::sequence< Property_Map_Transformation_Name_type > Property_Map_Transformation_Name_sequence;
+        typedef Property_Map_Transformation_Name_sequence::iterator Property_Map_Transformation_Name_iterator;
+        typedef Property_Map_Transformation_Name_sequence::const_iterator Property_Map_Transformation_Name_const_iterator;
+        typedef ::xsd::cxx::tree::traits< Property_Map_Transformation_Name_type, char > Property_Map_Transformation_Name_traits;
 
-        const RecordInstance_optional&
-        RecordInstance () const;
+        const Property_Map_Transformation_Name_sequence&
+        Property_Map_Transformation_Name () const;
 
-        RecordInstance_optional&
-        RecordInstance ();
-
-        void
-        RecordInstance (const RecordInstance_type& x);
-
-        void
-        RecordInstance (const RecordInstance_optional& x);
+        Property_Map_Transformation_Name_sequence&
+        Property_Map_Transformation_Name ();
 
         void
-        RecordInstance (::std::auto_ptr< RecordInstance_type > p);
-
-        // RecordInstanceLocation
-        //
-        typedef ::xml_schema::string RecordInstanceLocation_type;
-        typedef ::xsd::cxx::tree::optional< RecordInstanceLocation_type > RecordInstanceLocation_optional;
-        typedef ::xsd::cxx::tree::traits< RecordInstanceLocation_type, char > RecordInstanceLocation_traits;
-
-        const RecordInstanceLocation_optional&
-        RecordInstanceLocation () const;
-
-        RecordInstanceLocation_optional&
-        RecordInstanceLocation ();
-
-        void
-        RecordInstanceLocation (const RecordInstanceLocation_type& x);
-
-        void
-        RecordInstanceLocation (const RecordInstanceLocation_optional& x);
-
-        void
-        RecordInstanceLocation (::std::auto_ptr< RecordInstanceLocation_type > p);
-
-        // RecordLocation
-        //
-        typedef ::xml_schema::string RecordLocation_type;
-        typedef ::xsd::cxx::tree::optional< RecordLocation_type > RecordLocation_optional;
-        typedef ::xsd::cxx::tree::traits< RecordLocation_type, char > RecordLocation_traits;
-
-        const RecordLocation_optional&
-        RecordLocation () const;
-
-        RecordLocation_optional&
-        RecordLocation ();
-
-        void
-        RecordLocation (const RecordLocation_type& x);
-
-        void
-        RecordLocation (const RecordLocation_optional& x);
-
-        void
-        RecordLocation (::std::auto_ptr< RecordLocation_type > p);
+        Property_Map_Transformation_Name (const Property_Map_Transformation_Name_sequence& s);
 
         // RefId
         //
@@ -475,28 +424,28 @@ namespace namespaces
 
         // Constructors.
         //
-        Property_Map_Gap ();
+        ComponentMappingGroup ();
 
-        Property_Map_Gap (const TargetPropertyName_type&,
-                          const RefId_type&);
+        ComponentMappingGroup (const TargetComponentName_type&,
+                               const RefId_type&);
 
-        Property_Map_Gap (const ::xercesc::DOMElement& e,
-                          ::xml_schema::flags f = 0,
-                          ::xml_schema::container* c = 0);
+        ComponentMappingGroup (const ::xercesc::DOMElement& e,
+                               ::xml_schema::flags f = 0,
+                               ::xml_schema::container* c = 0);
 
-        Property_Map_Gap (const Property_Map_Gap& x,
-                          ::xml_schema::flags f = 0,
-                          ::xml_schema::container* c = 0);
+        ComponentMappingGroup (const ComponentMappingGroup& x,
+                               ::xml_schema::flags f = 0,
+                               ::xml_schema::container* c = 0);
 
-        virtual Property_Map_Gap*
+        virtual ComponentMappingGroup*
         _clone (::xml_schema::flags f = 0,
                 ::xml_schema::container* c = 0) const;
 
-        Property_Map_Gap&
-        operator= (const Property_Map_Gap& x);
+        ComponentMappingGroup&
+        operator= (const ComponentMappingGroup& x);
 
         virtual 
-        ~Property_Map_Gap ();
+        ~ComponentMappingGroup ();
 
         // Implementation.
         //
@@ -507,13 +456,11 @@ namespace namespaces
 
         protected:
         Description_optional Description_;
-        ::xsd::cxx::tree::one< TargetPropertyName_type > TargetPropertyName_;
+        ::xsd::cxx::tree::one< TargetComponentName_type > TargetComponentName_;
         TargetLocation_optional TargetLocation_;
-        DefaultValueNumber_optional DefaultValueNumber_;
-        DefaultValueString_optional DefaultValueString_;
-        RecordInstance_optional RecordInstance_;
-        RecordInstanceLocation_optional RecordInstanceLocation_;
-        RecordLocation_optional RecordLocation_;
+        Property_Map_One2One_Name_sequence Property_Map_One2One_Name_;
+        Property_Map_Gap_Name_sequence Property_Map_Gap_Name_;
+        Property_Map_Transformation_Name_sequence Property_Map_Transformation_Name_;
         ::xsd::cxx::tree::one< RefId_type > RefId_;
       };
     }
@@ -551,7 +498,7 @@ namespace namespaces
     namespace DataMap
     {
       void
-      operator<< (::xercesc::DOMElement&, const Property_Map_Gap&);
+      operator<< (::xercesc::DOMElement&, const ComponentMappingGroup&);
     }
   }
 }
@@ -563,4 +510,4 @@ namespace namespaces
 //
 // End epilogue.
 
-#endif // PROPERTY_MAP_GAP_HXX
+#endif // COMPONENT_MAPPING_GROUP_HXX

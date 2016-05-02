@@ -135,58 +135,28 @@ namespace namespaces
         this->TargetLocation_.set (x);
       }
 
-      const Property_Map_Gap::DefaultValueNumber_optional& Property_Map_Gap::
-      DefaultValueNumber () const
+      const Property_Map_Gap::DefaultValue_type& Property_Map_Gap::
+      DefaultValue () const
       {
-        return this->DefaultValueNumber_;
+        return this->DefaultValue_.get ();
       }
 
-      Property_Map_Gap::DefaultValueNumber_optional& Property_Map_Gap::
-      DefaultValueNumber ()
+      Property_Map_Gap::DefaultValue_type& Property_Map_Gap::
+      DefaultValue ()
       {
-        return this->DefaultValueNumber_;
-      }
-
-      void Property_Map_Gap::
-      DefaultValueNumber (const DefaultValueNumber_type& x)
-      {
-        this->DefaultValueNumber_.set (x);
+        return this->DefaultValue_.get ();
       }
 
       void Property_Map_Gap::
-      DefaultValueNumber (const DefaultValueNumber_optional& x)
+      DefaultValue (const DefaultValue_type& x)
       {
-        this->DefaultValueNumber_ = x;
-      }
-
-      const Property_Map_Gap::DefaultValueString_optional& Property_Map_Gap::
-      DefaultValueString () const
-      {
-        return this->DefaultValueString_;
-      }
-
-      Property_Map_Gap::DefaultValueString_optional& Property_Map_Gap::
-      DefaultValueString ()
-      {
-        return this->DefaultValueString_;
+        this->DefaultValue_.set (x);
       }
 
       void Property_Map_Gap::
-      DefaultValueString (const DefaultValueString_type& x)
+      DefaultValue (::std::auto_ptr< DefaultValue_type > x)
       {
-        this->DefaultValueString_.set (x);
-      }
-
-      void Property_Map_Gap::
-      DefaultValueString (const DefaultValueString_optional& x)
-      {
-        this->DefaultValueString_ = x;
-      }
-
-      void Property_Map_Gap::
-      DefaultValueString (::std::auto_ptr< DefaultValueString_type > x)
-      {
-        this->DefaultValueString_.set (x);
+        this->DefaultValue_.set (x);
       }
 
       const Property_Map_Gap::RecordInstance_optional& Property_Map_Gap::
@@ -332,8 +302,7 @@ namespace namespaces
         Description_ (this),
         TargetPropertyName_ (this),
         TargetLocation_ (this),
-        DefaultValueNumber_ (this),
-        DefaultValueString_ (this),
+        DefaultValue_ (this),
         RecordInstance_ (this),
         RecordInstanceLocation_ (this),
         RecordLocation_ (this),
@@ -343,13 +312,13 @@ namespace namespaces
 
       Property_Map_Gap::
       Property_Map_Gap (const TargetPropertyName_type& TargetPropertyName,
+                        const DefaultValue_type& DefaultValue,
                         const RefId_type& RefId)
       : ::xml_schema::type (),
         Description_ (this),
         TargetPropertyName_ (TargetPropertyName, this),
         TargetLocation_ (this),
-        DefaultValueNumber_ (this),
-        DefaultValueString_ (this),
+        DefaultValue_ (DefaultValue, this),
         RecordInstance_ (this),
         RecordInstanceLocation_ (this),
         RecordLocation_ (this),
@@ -365,8 +334,7 @@ namespace namespaces
         Description_ (x.Description_, f, this),
         TargetPropertyName_ (x.TargetPropertyName_, f, this),
         TargetLocation_ (x.TargetLocation_, f, this),
-        DefaultValueNumber_ (x.DefaultValueNumber_, f, this),
-        DefaultValueString_ (x.DefaultValueString_, f, this),
+        DefaultValue_ (x.DefaultValue_, f, this),
         RecordInstance_ (x.RecordInstance_, f, this),
         RecordInstanceLocation_ (x.RecordInstanceLocation_, f, this),
         RecordLocation_ (x.RecordLocation_, f, this),
@@ -382,8 +350,7 @@ namespace namespaces
         Description_ (this),
         TargetPropertyName_ (this),
         TargetLocation_ (this),
-        DefaultValueNumber_ (this),
-        DefaultValueString_ (this),
+        DefaultValue_ (this),
         RecordInstance_ (this),
         RecordInstanceLocation_ (this),
         RecordLocation_ (this),
@@ -448,27 +415,16 @@ namespace namespaces
             }
           }
 
-          // DefaultValueNumber
+          // DefaultValue
           //
-          if (n.name () == "DefaultValueNumber" && n.namespace_ () == "http://www.e3d.rwth-aachen.de/namespaces/Sim/DataMap")
+          if (n.name () == "DefaultValue" && n.namespace_ () == "http://www.e3d.rwth-aachen.de/namespaces/Sim/DataMap")
           {
-            if (!this->DefaultValueNumber_)
-            {
-              this->DefaultValueNumber_.set (DefaultValueNumber_traits::create (i, f, this));
-              continue;
-            }
-          }
+            ::std::auto_ptr< DefaultValue_type > r (
+              DefaultValue_traits::create (i, f, this));
 
-          // DefaultValueString
-          //
-          if (n.name () == "DefaultValueString" && n.namespace_ () == "http://www.e3d.rwth-aachen.de/namespaces/Sim/DataMap")
-          {
-            ::std::auto_ptr< DefaultValueString_type > r (
-              DefaultValueString_traits::create (i, f, this));
-
-            if (!this->DefaultValueString_)
+            if (!DefaultValue_.present ())
             {
-              this->DefaultValueString_.set (r);
+              this->DefaultValue_.set (r);
               continue;
             }
           }
@@ -525,6 +481,13 @@ namespace namespaces
             "http://www.e3d.rwth-aachen.de/namespaces/Sim/DataMap");
         }
 
+        if (!DefaultValue_.present ())
+        {
+          throw ::xsd::cxx::tree::expected_element< char > (
+            "DefaultValue",
+            "http://www.e3d.rwth-aachen.de/namespaces/Sim/DataMap");
+        }
+
         while (p.more_attributes ())
         {
           const ::xercesc::DOMAttr& i (p.next_attribute ());
@@ -562,8 +525,7 @@ namespace namespaces
           this->Description_ = x.Description_;
           this->TargetPropertyName_ = x.TargetPropertyName_;
           this->TargetLocation_ = x.TargetLocation_;
-          this->DefaultValueNumber_ = x.DefaultValueNumber_;
-          this->DefaultValueString_ = x.DefaultValueString_;
+          this->DefaultValue_ = x.DefaultValue_;
           this->RecordInstance_ = x.RecordInstance_;
           this->RecordInstanceLocation_ = x.RecordInstanceLocation_;
           this->RecordLocation_ = x.RecordLocation_;
@@ -657,30 +619,16 @@ namespace namespaces
           s << *i.TargetLocation ();
         }
 
-        // DefaultValueNumber
+        // DefaultValue
         //
-        if (i.DefaultValueNumber ())
         {
           ::xercesc::DOMElement& s (
             ::xsd::cxx::xml::dom::create_element (
-              "DefaultValueNumber",
+              "DefaultValue",
               "http://www.e3d.rwth-aachen.de/namespaces/Sim/DataMap",
               e));
 
-          s << ::xml_schema::as_double(*i.DefaultValueNumber ());
-        }
-
-        // DefaultValueString
-        //
-        if (i.DefaultValueString ())
-        {
-          ::xercesc::DOMElement& s (
-            ::xsd::cxx::xml::dom::create_element (
-              "DefaultValueString",
-              "http://www.e3d.rwth-aachen.de/namespaces/Sim/DataMap",
-              e));
-
-          s << *i.DefaultValueString ();
+          s << i.DefaultValue ();
         }
 
         // RecordInstance

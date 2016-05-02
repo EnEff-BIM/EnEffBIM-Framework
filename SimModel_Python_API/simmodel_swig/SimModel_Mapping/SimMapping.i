@@ -24,6 +24,8 @@
 %ignore MappedComponent::addUnmappedSimHierarchyNode(SimHierarchyNode& _simNode);
 %ignore MappedComponent::addMappedProperty(MappedProperty& _mapPro);
 
+%ignore SimMappedData::translator(SimHierarchy& _simHierarchy, std::string _name);
+
 /* Let's just grab the original header file here */
 %include ".\framework\SimMapping.h"
 

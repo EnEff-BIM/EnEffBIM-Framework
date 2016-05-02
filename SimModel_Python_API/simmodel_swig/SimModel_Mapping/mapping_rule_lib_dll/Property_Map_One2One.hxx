@@ -31,8 +31,8 @@
 // in the accompanying FLOSSE file.
 //
 
-#ifndef PROPERTY_MAP_GAP_HXX
-#define PROPERTY_MAP_GAP_HXX
+#ifndef PROPERTY_MAP_ONE2ONE_HXX
+#define PROPERTY_MAP_ONE2ONE_HXX
 
 #ifndef XSD_USE_CHAR
 #define XSD_USE_CHAR
@@ -256,7 +256,7 @@ namespace namespaces
   {
     namespace DataMap
     {
-      class Property_Map_Gap;
+      class Property_Map_One2One;
     }
   }
 }
@@ -281,6 +281,17 @@ namespace namespaces
   {
     namespace DataMap
     {
+      class RefStringList;
+    }
+  }
+}
+
+namespace namespaces
+{
+  namespace Sim
+  {
+    namespace DataMap
+    {
       class StringList;
     }
   }
@@ -292,7 +303,7 @@ namespace namespaces
   {
     namespace DataMap
     {
-      class Property_Map_Gap: public ::xml_schema::type
+      class __declspec(dllexport) Property_Map_One2One: public ::xml_schema::type
       {
         public:
         // Description
@@ -315,6 +326,23 @@ namespace namespaces
 
         void
         Description (::std::auto_ptr< Description_type > p);
+
+        // RefValue
+        //
+        typedef ::namespaces::Sim::DataMap::RefStringList RefValue_type;
+        typedef ::xsd::cxx::tree::traits< RefValue_type, char > RefValue_traits;
+
+        const RefValue_type&
+        RefValue () const;
+
+        RefValue_type&
+        RefValue ();
+
+        void
+        RefValue (const RefValue_type& x);
+
+        void
+        RefValue (::std::auto_ptr< RefValue_type > p);
 
         // TargetPropertyName
         //
@@ -353,45 +381,6 @@ namespace namespaces
 
         void
         TargetLocation (::std::auto_ptr< TargetLocation_type > p);
-
-        // DefaultValueNumber
-        //
-        typedef ::xml_schema::double_ DefaultValueNumber_type;
-        typedef ::xsd::cxx::tree::optional< DefaultValueNumber_type > DefaultValueNumber_optional;
-        typedef ::xsd::cxx::tree::traits< DefaultValueNumber_type, char, ::xsd::cxx::tree::schema_type::double_ > DefaultValueNumber_traits;
-
-        const DefaultValueNumber_optional&
-        DefaultValueNumber () const;
-
-        DefaultValueNumber_optional&
-        DefaultValueNumber ();
-
-        void
-        DefaultValueNumber (const DefaultValueNumber_type& x);
-
-        void
-        DefaultValueNumber (const DefaultValueNumber_optional& x);
-
-        // DefaultValueString
-        //
-        typedef ::xml_schema::string DefaultValueString_type;
-        typedef ::xsd::cxx::tree::optional< DefaultValueString_type > DefaultValueString_optional;
-        typedef ::xsd::cxx::tree::traits< DefaultValueString_type, char > DefaultValueString_traits;
-
-        const DefaultValueString_optional&
-        DefaultValueString () const;
-
-        DefaultValueString_optional&
-        DefaultValueString ();
-
-        void
-        DefaultValueString (const DefaultValueString_type& x);
-
-        void
-        DefaultValueString (const DefaultValueString_optional& x);
-
-        void
-        DefaultValueString (::std::auto_ptr< DefaultValueString_type > p);
 
         // RecordInstance
         //
@@ -475,28 +464,33 @@ namespace namespaces
 
         // Constructors.
         //
-        Property_Map_Gap ();
+        Property_Map_One2One ();
 
-        Property_Map_Gap (const TargetPropertyName_type&,
-                          const RefId_type&);
+        Property_Map_One2One (const RefValue_type&,
+                              const TargetPropertyName_type&,
+                              const RefId_type&);
 
-        Property_Map_Gap (const ::xercesc::DOMElement& e,
-                          ::xml_schema::flags f = 0,
-                          ::xml_schema::container* c = 0);
+        Property_Map_One2One (::std::auto_ptr< RefValue_type >,
+                              const TargetPropertyName_type&,
+                              const RefId_type&);
 
-        Property_Map_Gap (const Property_Map_Gap& x,
-                          ::xml_schema::flags f = 0,
-                          ::xml_schema::container* c = 0);
+        Property_Map_One2One (const ::xercesc::DOMElement& e,
+                              ::xml_schema::flags f = 0,
+                              ::xml_schema::container* c = 0);
 
-        virtual Property_Map_Gap*
+        Property_Map_One2One (const Property_Map_One2One& x,
+                              ::xml_schema::flags f = 0,
+                              ::xml_schema::container* c = 0);
+
+        virtual Property_Map_One2One*
         _clone (::xml_schema::flags f = 0,
                 ::xml_schema::container* c = 0) const;
 
-        Property_Map_Gap&
-        operator= (const Property_Map_Gap& x);
+        Property_Map_One2One&
+        operator= (const Property_Map_One2One& x);
 
         virtual 
-        ~Property_Map_Gap ();
+        ~Property_Map_One2One ();
 
         // Implementation.
         //
@@ -507,10 +501,9 @@ namespace namespaces
 
         protected:
         Description_optional Description_;
+        ::xsd::cxx::tree::one< RefValue_type > RefValue_;
         ::xsd::cxx::tree::one< TargetPropertyName_type > TargetPropertyName_;
         TargetLocation_optional TargetLocation_;
-        DefaultValueNumber_optional DefaultValueNumber_;
-        DefaultValueString_optional DefaultValueString_;
         RecordInstance_optional RecordInstance_;
         RecordInstanceLocation_optional RecordInstanceLocation_;
         RecordLocation_optional RecordLocation_;
@@ -551,7 +544,7 @@ namespace namespaces
     namespace DataMap
     {
       void
-      operator<< (::xercesc::DOMElement&, const Property_Map_Gap&);
+      operator<< (::xercesc::DOMElement&, const Property_Map_One2One&);
     }
   }
 }
@@ -563,4 +556,4 @@ namespace namespaces
 //
 // End epilogue.
 
-#endif // PROPERTY_MAP_GAP_HXX
+#endif // PROPERTY_MAP_ONE2ONE_HXX

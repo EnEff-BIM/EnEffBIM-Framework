@@ -216,7 +216,7 @@
   <Property_Map_Gap RefId="ID063">
     <Description>Pipe length</Description>
     <TargetPropertyName>l</TargetPropertyName>
-	<DefaultValue>2</DefaultValue>
+	  <DefaultValueNumber>2</DefaultValueNumber>
   </Property_Map_Gap>
 
   <!-- property mapping for the water pipe -->
@@ -224,7 +224,7 @@
   <Property_Map_Gap RefId="ID061">
     <Description>Pipe inside diameter [m]</Description>
     <TargetPropertyName>D</TargetPropertyName>
-	<DefaultValue>0.006</DefaultValue>    
+	  <DefaultValueNumber>0.006</DefaultValueNumber>    
   </Property_Map_Gap>
 
   <!-- property mapping for the water type radiator -->
@@ -232,8 +232,8 @@
   <Property_Map_Gap RefId="ID021">
     <Description>Volume in m3</Description>
     <TargetPropertyName>V</TargetPropertyName>
-	<TargetLocation>volume</TargetLocation>
-    <DefaultValue>0.00467999977991</DefaultValue>
+	  <TargetLocation>volume</TargetLocation>
+    <DefaultValueNumber>0.00467999977991</DefaultValueNumber>
   </Property_Map_Gap>
 
   <!-- property mapping for the water type radiator -->
@@ -242,81 +242,81 @@
   <Property_Map_Gap RefId="ID022">
     <Description>Initialize properties declared in the base data record</Description>
     <TargetPropertyName>NominalPower</TargetPropertyName>
-    <DefaultValue>644</DefaultValue>
-	<RecordInstance>RadiatorType</RecordInstance>
-	<RecordLocation>AixLib.DataBase.Radiators.RadiatiorBaseDataDefinition</RecordLocation>
+    <DefaultValueNumber>644</DefaultValueNumber>
+	  <RecordInstance>RadiatorType</RecordInstance>
+	  <RecordLocation>AixLib.DataBase.Radiators.RadiatiorBaseDataDefinition</RecordLocation>
   </Property_Map_Gap>
 
   <Property_Map_Gap RefId="ID0221">
     <Description>Initialize properties declared in the base data record</Description>
     <TargetPropertyName>T_flow_nom</TargetPropertyName>
-    <DefaultValue>55</DefaultValue>
-	<RecordInstance>RadiatorType</RecordInstance>
-	<RecordLocation>AixLib.DataBase.Radiators.RadiatiorBaseDataDefinition</RecordLocation>
+    <DefaultValueNumber>55</DefaultValueNumber>
+	  <RecordInstance>RadiatorType</RecordInstance>
+	  <RecordLocation>AixLib.DataBase.Radiators.RadiatiorBaseDataDefinition</RecordLocation>
   </Property_Map_Gap>
 
   <Property_Map_Gap RefId="ID0222">
     <Description>Initialize properties declared in the base data record</Description>
     <TargetPropertyName>T_return_nom</TargetPropertyName>
-    <DefaultValue>45</DefaultValue>
-	<RecordInstance>RadiatorType</RecordInstance>
-	<RecordLocation>AixLib.DataBase.Radiators.RadiatiorBaseDataDefinition</RecordLocation>
+    <DefaultValueNumber>45</DefaultValueNumber>
+	  <RecordInstance>RadiatorType</RecordInstance>
+	  <RecordLocation>AixLib.DataBase.Radiators.RadiatiorBaseDataDefinition</RecordLocation>
   </Property_Map_Gap>
 
   <Property_Map_Gap RefId="ID0223">
     <Description>Initialize properties declared in the base data record</Description>
     <TargetPropertyName>T_room_nom</TargetPropertyName>
-    <DefaultValue>20</DefaultValue>
-	<RecordInstance>RadiatorType</RecordInstance>
-	<RecordLocation>AixLib.DataBase.Radiators.RadiatiorBaseDataDefinition</RecordLocation>
+    <DefaultValueNumber>20</DefaultValueNumber>
+	  <RecordInstance>RadiatorType</RecordInstance>
+	  <RecordLocation>AixLib.DataBase.Radiators.RadiatiorBaseDataDefinition</RecordLocation>
   </Property_Map_Gap>
 
   <Property_Map_Gap RefId="ID0224">
     <Description>Initialize properties declared in the base data record</Description>
     <TargetPropertyName>Exponent</TargetPropertyName>
-    <DefaultValue>1.2776</DefaultValue>
-	<RecordInstance>RadiatorType</RecordInstance>
-	<RecordLocation>AixLib.DataBase.Radiators.RadiatiorBaseDataDefinition</RecordLocation>
+    <DefaultValueNumber>1.2776</DefaultValueNumber>
+	  <RecordInstance>RadiatorType</RecordInstance>
+	  <RecordLocation>AixLib.DataBase.Radiators.RadiatiorBaseDataDefinition</RecordLocation>
   </Property_Map_Gap>
 
   <Property_Map_Gap RefId="ID0225">
     <Description>Initialize properties declared in the base data record</Description>
     <TargetPropertyName>VolumeWater</TargetPropertyName>
-    <DefaultValue>4.68</DefaultValue>
-	<RecordInstance>RadiatorType</RecordInstance>
-	<RecordLocation>AixLib.DataBase.Radiators.RadiatiorBaseDataDefinition</RecordLocation>
+    <DefaultValueNumber>4.68</DefaultValueNumber>
+	  <RecordInstance>RadiatorType</RecordInstance>
+	  <RecordLocation>AixLib.DataBase.Radiators.RadiatiorBaseDataDefinition</RecordLocation>
   </Property_Map_Gap>
 
   <Property_Map_Gap RefId="ID0226">
     <Description>Initialize properties declared in the base data record</Description>
     <TargetPropertyName>MassSteel</TargetPropertyName>
-    <DefaultValue>22.11</DefaultValue>
-	<RecordInstance>RadiatorType</RecordInstance>
-	<RecordLocation>AixLib.DataBase.Radiators.RadiatiorBaseDataDefinition</RecordLocation>
+    <DefaultValueNumber>22.11</DefaultValueNumber>
+	  <RecordInstance>RadiatorType</RecordInstance>
+	  <RecordLocation>AixLib.DataBase.Radiators.RadiatiorBaseDataDefinition</RecordLocation>
   </Property_Map_Gap>
 
   <Property_Map_Gap RefId="ID0227">
     <Description>Initialize properties declared in the base data record</Description>
     <TargetPropertyName>RadPercent</TargetPropertyName>
-    <DefaultValue>0.3</DefaultValue>
-	<RecordInstance>RadiatorType</RecordInstance>
-	<RecordLocation>AixLib.DataBase.Radiators.RadiatiorBaseDataDefinition</RecordLocation>
+    <DefaultValueNumber>0.3</DefaultValueNumber>
+	  <RecordInstance>RadiatorType</RecordInstance>
+	  <RecordLocation>AixLib.DataBase.Radiators.RadiatiorBaseDataDefinition</RecordLocation>
   </Property_Map_Gap>
 
   <Property_Map_Gap RefId="ID0228">
     <Description>Initialize properties declared in the base data record</Description>
     <TargetPropertyName>length</TargetPropertyName>
-    <DefaultValue>1.3</DefaultValue>
-	<RecordInstance>RadiatorType</RecordInstance>
-	<RecordLocation>AixLib.DataBase.Radiators.RadiatiorBaseDataDefinition</RecordLocation>
+    <DefaultValueNumber>1.3</DefaultValueNumber>
+	  <RecordInstance>RadiatorType</RecordInstance>
+	  <RecordLocation>AixLib.DataBase.Radiators.RadiatiorBaseDataDefinition</RecordLocation>
   </Property_Map_Gap>
 
   <Property_Map_Gap RefId="ID0229">
     <Description>Initialize properties declared in the base data record</Description>
     <TargetPropertyName>height</TargetPropertyName>
-    <DefaultValue>0.3</DefaultValue>
-	<RecordInstance>RadiatorType</RecordInstance>
-	<RecordLocation>AixLib.DataBase.Radiators.RadiatiorBaseDataDefinition</RecordLocation>
+    <DefaultValueNumber>0.3</DefaultValueNumber>
+	  <RecordInstance>RadiatorType</RecordInstance>
+	  <RecordLocation>AixLib.DataBase.Radiators.RadiatiorBaseDataDefinition</RecordLocation>
   </Property_Map_Gap>
 
   <!-- property mapping for the water type radiator -->
@@ -324,8 +324,8 @@
   <Property_Map_Gap RefId="ID0211">
     <Description>Temperature inside the CV in K</Description>
     <TargetPropertyName>T</TargetPropertyName>
-	<TargetLocation>volume</TargetLocation>
-    <DefaultValue>303.1499938965</DefaultValue>
+	  <TargetLocation>volume</TargetLocation>
+    <DefaultValueNumber>303.1499938965</DefaultValueNumber>
   </Property_Map_Gap>
 
   <!-- property mapping for the hot water boiler -->
@@ -333,8 +333,8 @@
   <Property_Map_Gap RefId="ID0112">
     <Description>Initialization: temperature inside the CV in K</Description>
     <TargetPropertyName>T</TargetPropertyName>
-	<TargetLocation>volume</TargetLocation>
-    <DefaultValue>328.15</DefaultValue>
+	  <TargetLocation>volume</TargetLocation>
+    <DefaultValueNumber>328.15</DefaultValueNumber>
   </Property_Map_Gap>
 
   <!-- property mapping for the hot water boiler -->
@@ -342,7 +342,7 @@
   <Property_Map_Gap RefId="ID0113">
     <Description>Fluid volume inside the heat generation unit [m3]</Description>
     <TargetPropertyName>Volume</TargetPropertyName>
-    <DefaultValue>0.00999999977648</DefaultValue>
+    <DefaultValueNumber>0.00999999977648</DefaultValueNumber>
   </Property_Map_Gap>
 
   <!-- property mapping for the water pump of variable speed return -->
@@ -351,7 +351,7 @@
     <Description>Volume flow rate through the pump [m3/s]</Description>
     <TargetPropertyName>start</TargetPropertyName>
     <TargetLocation>V_flow</TargetLocation>
-    <DefaultValue>0.0000112961579362</DefaultValue>
+    <DefaultValueNumber>0.0000112961579362</DefaultValueNumber>
   </Property_Map_Gap>
 
   <!-- property mapping for the water pump of variable speed return -->
@@ -360,7 +360,7 @@
     <Description>Pumping head [m]</Description>
     <TargetPropertyName>start</TargetPropertyName>
     <TargetLocation>Head</TargetLocation>
-    <DefaultValue>1</DefaultValue>
+    <DefaultValueNumber>1</DefaultValueNumber>
   </Property_Map_Gap>
 
   <!-- property mapping for the night signal controller -->
@@ -368,7 +368,7 @@
   <Property_Map_Gap RefId="ID0321">
     <Description>Time for one period [s]</Description>
     <TargetPropertyName>period</TargetPropertyName>
-    <DefaultValue>86400</DefaultValue>
+    <DefaultValueNumber>86400</DefaultValueNumber>
   </Property_Map_Gap>
 
   <!-- property mapping for the expansion vessel -->
@@ -376,7 +376,7 @@
   <Property_Map_Gap RefId="ID041">
     <Description>Fixed value of pressure [bar]</Description>
     <TargetPropertyName>p</TargetPropertyName>
-    <DefaultValue>1e5</DefaultValue>
+    <DefaultValueNumber>100000</DefaultValueNumber>
   </Property_Map_Gap>
 
   <!-- property mapping for the base paramters -->
@@ -384,7 +384,7 @@
   <Property_Map_Gap RefId="ID051">
     <Description>Default ambient pressure [bar]</Description>
     <TargetPropertyName>p_ambient</TargetPropertyName>
-    <DefaultValue>101325</DefaultValue>
+    <DefaultValueNumber>101325</DefaultValueNumber>
   </Property_Map_Gap>
 
   <!-- property mapping for the base paramters -->
@@ -392,7 +392,7 @@
   <Property_Map_Gap RefId="ID052">
     <Description>Default ambient temperature [degC]</Description>
     <TargetPropertyName>T_ambient</TargetPropertyName>
-    <DefaultValue>19.9999938965</DefaultValue>
+    <DefaultValueNumber>19.9999938965</DefaultValueNumber>
   </Property_Map_Gap>
 
   <!-- property mapping for the base paramters -->
@@ -400,7 +400,7 @@
   <Property_Map_Gap RefId="ID053">
     <Description>Gravity [m/s2]</Description>
     <TargetPropertyName>g</TargetPropertyName>
-    <DefaultValue>9.81000041962</DefaultValue>
+    <DefaultValueNumber>9.81000041962</DefaultValueNumber>
   </Property_Map_Gap>
 
   <!-- property mapping for the base paramters -->
@@ -408,7 +408,7 @@
   <Property_Map_Gap RefId="ID054">
     <Description>Dynamic viscosity [Pa.s]</Description>
     <TargetPropertyName>mu_Water</TargetPropertyName>
-    <DefaultValue>0.0010000000475</DefaultValue>
+    <DefaultValueNumber>0.0010000000475</DefaultValueNumber>
   </Property_Map_Gap>
 
   <!-- property mapping for the base paramters -->
@@ -416,7 +416,7 @@
   <Property_Map_Gap RefId="ID055">
     <Description>Density of the fluid [g/cm3]</Description>
     <TargetPropertyName>rho_Water</TargetPropertyName>
-    <DefaultValue>995.585998535</DefaultValue>
+    <DefaultValueNumber>995.585998535</DefaultValueNumber>
   </Property_Map_Gap>
 
   <!-- property mapping for the base paramters -->
@@ -424,7 +424,7 @@
   <Property_Map_Gap RefId="ID056">
     <Description>Specific heat capacity of fluid [J/(kg.K)]</Description>
     <TargetPropertyName>cp_Water</TargetPropertyName>
-    <DefaultValue>4184</DefaultValue>
+    <DefaultValueNumber>4184</DefaultValueNumber>
   </Property_Map_Gap>
 
   <!-- property mapping for the base paramters -->
@@ -432,7 +432,7 @@
   <Property_Map_Gap RefId="ID057">
     <Description>Thermal conductivity of fluid [W/(m.K)]</Description>
     <TargetPropertyName>lambda_Water</TargetPropertyName>
-    <DefaultValue>0.600000023842</DefaultValue>
+    <DefaultValueNumber>0.600000023842</DefaultValueNumber>
   </Property_Map_Gap>
 
   <!-- property mapping for the base paramters -->
@@ -440,7 +440,7 @@
   <Property_Map_Gap RefId="ID058">
     <Description>Reference temperature by zero enthalpy [K]</Description>
     <TargetPropertyName>T_ref</TargetPropertyName>
-    <DefaultValue>273.1499938964844</DefaultValue>
+    <DefaultValueNumber>273.1499938964844</DefaultValueNumber>
   </Property_Map_Gap>
 
   <!-- property mapping for the base paramters -->
@@ -448,7 +448,7 @@
   <Property_Map_Gap RefId="ID059">
     <Description>Initial temperature [K]</Description>
     <TargetPropertyName>T0</TargetPropertyName>
-    <DefaultValue>303.1499938965</DefaultValue>
+    <DefaultValueNumber>303.1499938965</DefaultValueNumber>
   </Property_Map_Gap>
 
   <!-- property mapping for the base paramters -->
@@ -456,7 +456,7 @@
   <Property_Map_Gap RefId="ID060">
     <Description>Calculate m_flow from p</Description>
     <TargetPropertyName>calcMFlow</TargetPropertyName>
-    <DefaultValue>true</DefaultValue>
+    <DefaultValueString>true</DefaultValueString>
   </Property_Map_Gap>
 
   <!-- property mapping for the water pipe -->
@@ -465,7 +465,7 @@
     <Description>Pressure drop between the two ports [bar]</Description>
     <TargetPropertyName>start</TargetPropertyName>
     <TargetLocation>p</TargetLocation>
-    <DefaultValue>100</DefaultValue>
+    <DefaultValueNumber>100</DefaultValueNumber>
   </Property_Map_Gap>
 
   <!-- property mapping for the water pipe -->
@@ -473,42 +473,42 @@
   <Property_Map_Gap RefId="ID064">
     <Description>Roughness [m]</Description>
     <TargetPropertyName>e</TargetPropertyName>
-    <DefaultValue>0.0000249999993684</DefaultValue>
+    <DefaultValueNumber>0.0000249999993684</DefaultValueNumber>
   </Property_Map_Gap>
 
   <!-- a temporary rule instance for boiler outlet water temperature setting -->
   <Property_Map_Gap RefId="ID0121T">
     <Description>boiler outlet water temperature defintion</Description>
     <TargetPropertyName>k</TargetPropertyName>
-    <DefaultValue>328.15</DefaultValue>
+    <DefaultValueNumber>328.15</DefaultValueNumber>
   </Property_Map_Gap>
 
   <!-- a temporary rule instance for the pump head for the control strategy [m] -->
   <Property_Map_Gap RefId="ID0312T">
     <Description>Pump head for the control strategy [m]</Description>
     <TargetPropertyName>Head_max</TargetPropertyName>
-    <DefaultValue>1</DefaultValue>
+    <DefaultValueNumber>1</DefaultValueNumber>
   </Property_Map_Gap>
 
   <!-- a temporary rule instance for the control strategy -->
   <Property_Map_Gap RefId="ID0313T">
     <Description>control strategy: 2 or 1</Description>
     <TargetPropertyName>ControlStrategy</TargetPropertyName>
-    <DefaultValue>1</DefaultValue>
+    <DefaultValueNumber>1</DefaultValueNumber>
   </Property_Map_Gap>
 
   <!-- a temporary rule instance for the width of pulse -->
   <Property_Map_Gap RefId="ID0322T">
     <Description>Width of pulse in % of period</Description>
     <TargetPropertyName>width</TargetPropertyName>
-    <DefaultValue>45.8</DefaultValue>
+    <DefaultValueNumber>45.8</DefaultValueNumber>
   </Property_Map_Gap>
 
    <!-- a temporary rule instance for the time instant of first pulse [s] -->
   <Property_Map_Gap RefId="ID0323T">
     <Description>time instant of first pulse [s]</Description>
     <TargetPropertyName>startTime</TargetPropertyName>
-    <DefaultValue>64800</DefaultValue>
+    <DefaultValueNumber>64800</DefaultValueNumber>
   </Property_Map_Gap>
 
   <!-- property mapping for the hot water boiler -->
@@ -721,8 +721,8 @@
   <Library_Mapping_Rule>
     <Description>The XML mapping rule instance between SimModel and AixLib</Description>
     <TargetLibraryName>AixLib version 1.0</TargetLibraryName>
-	  <Component_Map_One2Many_Name>ID01</Component_Map_One2Many_Name>
-	  <Component_Map_One2Many_Name>ID02</Component_Map_One2Many_Name>
+	<Component_Map_One2Many_Name>ID01</Component_Map_One2Many_Name>
+	<Component_Map_One2Many_Name>ID02</Component_Map_One2Many_Name>
     <Component_Map_One2Many_Name>ID03</Component_Map_One2Many_Name>
 	<Component_Map_Gap_Name>ID05</Component_Map_Gap_Name>
   </Library_Mapping_Rule>

@@ -31,8 +31,8 @@
 // in the accompanying FLOSSE file.
 //
 
-#ifndef PROPERTY_MAP_GAP_HXX
-#define PROPERTY_MAP_GAP_HXX
+#ifndef LIBRARY_MAPPING_RULE_HXX
+#define LIBRARY_MAPPING_RULE_HXX
 
 #ifndef XSD_USE_CHAR
 #define XSD_USE_CHAR
@@ -256,7 +256,7 @@ namespace namespaces
   {
     namespace DataMap
     {
-      class Property_Map_Gap;
+      class Library_Mapping_Rule;
     }
   }
 }
@@ -281,18 +281,7 @@ namespace namespaces
   {
     namespace DataMap
     {
-      class StringList;
-    }
-  }
-}
-
-namespace namespaces
-{
-  namespace Sim
-  {
-    namespace DataMap
-    {
-      class Property_Map_Gap: public ::xml_schema::type
+      class __declspec(dllexport) Library_Mapping_Rule: public ::xml_schema::type
       {
         public:
         // Description
@@ -316,187 +305,97 @@ namespace namespaces
         void
         Description (::std::auto_ptr< Description_type > p);
 
-        // TargetPropertyName
+        // TargetLibraryName
         //
-        typedef ::xml_schema::string TargetPropertyName_type;
-        typedef ::xsd::cxx::tree::traits< TargetPropertyName_type, char > TargetPropertyName_traits;
+        typedef ::xml_schema::string TargetLibraryName_type;
+        typedef ::xsd::cxx::tree::traits< TargetLibraryName_type, char > TargetLibraryName_traits;
 
-        const TargetPropertyName_type&
-        TargetPropertyName () const;
+        const TargetLibraryName_type&
+        TargetLibraryName () const;
 
-        TargetPropertyName_type&
-        TargetPropertyName ();
-
-        void
-        TargetPropertyName (const TargetPropertyName_type& x);
+        TargetLibraryName_type&
+        TargetLibraryName ();
 
         void
-        TargetPropertyName (::std::auto_ptr< TargetPropertyName_type > p);
+        TargetLibraryName (const TargetLibraryName_type& x);
 
-        // TargetLocation
+        void
+        TargetLibraryName (::std::auto_ptr< TargetLibraryName_type > p);
+
+        // Component_Map_One2One_Name
         //
-        typedef ::namespaces::Sim::DataMap::StringList TargetLocation_type;
-        typedef ::xsd::cxx::tree::optional< TargetLocation_type > TargetLocation_optional;
-        typedef ::xsd::cxx::tree::traits< TargetLocation_type, char > TargetLocation_traits;
+        typedef ::xml_schema::idref Component_Map_One2One_Name_type;
+        typedef ::xsd::cxx::tree::sequence< Component_Map_One2One_Name_type > Component_Map_One2One_Name_sequence;
+        typedef Component_Map_One2One_Name_sequence::iterator Component_Map_One2One_Name_iterator;
+        typedef Component_Map_One2One_Name_sequence::const_iterator Component_Map_One2One_Name_const_iterator;
+        typedef ::xsd::cxx::tree::traits< Component_Map_One2One_Name_type, char > Component_Map_One2One_Name_traits;
 
-        const TargetLocation_optional&
-        TargetLocation () const;
+        const Component_Map_One2One_Name_sequence&
+        Component_Map_One2One_Name () const;
 
-        TargetLocation_optional&
-        TargetLocation ();
-
-        void
-        TargetLocation (const TargetLocation_type& x);
-
-        void
-        TargetLocation (const TargetLocation_optional& x);
+        Component_Map_One2One_Name_sequence&
+        Component_Map_One2One_Name ();
 
         void
-        TargetLocation (::std::auto_ptr< TargetLocation_type > p);
+        Component_Map_One2One_Name (const Component_Map_One2One_Name_sequence& s);
 
-        // DefaultValueNumber
+        // Component_Map_One2Many_Name
         //
-        typedef ::xml_schema::double_ DefaultValueNumber_type;
-        typedef ::xsd::cxx::tree::optional< DefaultValueNumber_type > DefaultValueNumber_optional;
-        typedef ::xsd::cxx::tree::traits< DefaultValueNumber_type, char, ::xsd::cxx::tree::schema_type::double_ > DefaultValueNumber_traits;
+        typedef ::xml_schema::idref Component_Map_One2Many_Name_type;
+        typedef ::xsd::cxx::tree::sequence< Component_Map_One2Many_Name_type > Component_Map_One2Many_Name_sequence;
+        typedef Component_Map_One2Many_Name_sequence::iterator Component_Map_One2Many_Name_iterator;
+        typedef Component_Map_One2Many_Name_sequence::const_iterator Component_Map_One2Many_Name_const_iterator;
+        typedef ::xsd::cxx::tree::traits< Component_Map_One2Many_Name_type, char > Component_Map_One2Many_Name_traits;
 
-        const DefaultValueNumber_optional&
-        DefaultValueNumber () const;
+        const Component_Map_One2Many_Name_sequence&
+        Component_Map_One2Many_Name () const;
 
-        DefaultValueNumber_optional&
-        DefaultValueNumber ();
+        Component_Map_One2Many_Name_sequence&
+        Component_Map_One2Many_Name ();
 
         void
-        DefaultValueNumber (const DefaultValueNumber_type& x);
+        Component_Map_One2Many_Name (const Component_Map_One2Many_Name_sequence& s);
 
-        void
-        DefaultValueNumber (const DefaultValueNumber_optional& x);
-
-        // DefaultValueString
+        // Component_Map_Gap_Name
         //
-        typedef ::xml_schema::string DefaultValueString_type;
-        typedef ::xsd::cxx::tree::optional< DefaultValueString_type > DefaultValueString_optional;
-        typedef ::xsd::cxx::tree::traits< DefaultValueString_type, char > DefaultValueString_traits;
+        typedef ::xml_schema::idref Component_Map_Gap_Name_type;
+        typedef ::xsd::cxx::tree::sequence< Component_Map_Gap_Name_type > Component_Map_Gap_Name_sequence;
+        typedef Component_Map_Gap_Name_sequence::iterator Component_Map_Gap_Name_iterator;
+        typedef Component_Map_Gap_Name_sequence::const_iterator Component_Map_Gap_Name_const_iterator;
+        typedef ::xsd::cxx::tree::traits< Component_Map_Gap_Name_type, char > Component_Map_Gap_Name_traits;
 
-        const DefaultValueString_optional&
-        DefaultValueString () const;
+        const Component_Map_Gap_Name_sequence&
+        Component_Map_Gap_Name () const;
 
-        DefaultValueString_optional&
-        DefaultValueString ();
-
-        void
-        DefaultValueString (const DefaultValueString_type& x);
-
-        void
-        DefaultValueString (const DefaultValueString_optional& x);
+        Component_Map_Gap_Name_sequence&
+        Component_Map_Gap_Name ();
 
         void
-        DefaultValueString (::std::auto_ptr< DefaultValueString_type > p);
-
-        // RecordInstance
-        //
-        typedef ::xml_schema::string RecordInstance_type;
-        typedef ::xsd::cxx::tree::optional< RecordInstance_type > RecordInstance_optional;
-        typedef ::xsd::cxx::tree::traits< RecordInstance_type, char > RecordInstance_traits;
-
-        const RecordInstance_optional&
-        RecordInstance () const;
-
-        RecordInstance_optional&
-        RecordInstance ();
-
-        void
-        RecordInstance (const RecordInstance_type& x);
-
-        void
-        RecordInstance (const RecordInstance_optional& x);
-
-        void
-        RecordInstance (::std::auto_ptr< RecordInstance_type > p);
-
-        // RecordInstanceLocation
-        //
-        typedef ::xml_schema::string RecordInstanceLocation_type;
-        typedef ::xsd::cxx::tree::optional< RecordInstanceLocation_type > RecordInstanceLocation_optional;
-        typedef ::xsd::cxx::tree::traits< RecordInstanceLocation_type, char > RecordInstanceLocation_traits;
-
-        const RecordInstanceLocation_optional&
-        RecordInstanceLocation () const;
-
-        RecordInstanceLocation_optional&
-        RecordInstanceLocation ();
-
-        void
-        RecordInstanceLocation (const RecordInstanceLocation_type& x);
-
-        void
-        RecordInstanceLocation (const RecordInstanceLocation_optional& x);
-
-        void
-        RecordInstanceLocation (::std::auto_ptr< RecordInstanceLocation_type > p);
-
-        // RecordLocation
-        //
-        typedef ::xml_schema::string RecordLocation_type;
-        typedef ::xsd::cxx::tree::optional< RecordLocation_type > RecordLocation_optional;
-        typedef ::xsd::cxx::tree::traits< RecordLocation_type, char > RecordLocation_traits;
-
-        const RecordLocation_optional&
-        RecordLocation () const;
-
-        RecordLocation_optional&
-        RecordLocation ();
-
-        void
-        RecordLocation (const RecordLocation_type& x);
-
-        void
-        RecordLocation (const RecordLocation_optional& x);
-
-        void
-        RecordLocation (::std::auto_ptr< RecordLocation_type > p);
-
-        // RefId
-        //
-        typedef ::xml_schema::id RefId_type;
-        typedef ::xsd::cxx::tree::traits< RefId_type, char > RefId_traits;
-
-        const RefId_type&
-        RefId () const;
-
-        RefId_type&
-        RefId ();
-
-        void
-        RefId (const RefId_type& x);
-
-        void
-        RefId (::std::auto_ptr< RefId_type > p);
+        Component_Map_Gap_Name (const Component_Map_Gap_Name_sequence& s);
 
         // Constructors.
         //
-        Property_Map_Gap ();
+        Library_Mapping_Rule ();
 
-        Property_Map_Gap (const TargetPropertyName_type&,
-                          const RefId_type&);
+        Library_Mapping_Rule (const TargetLibraryName_type&);
 
-        Property_Map_Gap (const ::xercesc::DOMElement& e,
-                          ::xml_schema::flags f = 0,
-                          ::xml_schema::container* c = 0);
+        Library_Mapping_Rule (const ::xercesc::DOMElement& e,
+                              ::xml_schema::flags f = 0,
+                              ::xml_schema::container* c = 0);
 
-        Property_Map_Gap (const Property_Map_Gap& x,
-                          ::xml_schema::flags f = 0,
-                          ::xml_schema::container* c = 0);
+        Library_Mapping_Rule (const Library_Mapping_Rule& x,
+                              ::xml_schema::flags f = 0,
+                              ::xml_schema::container* c = 0);
 
-        virtual Property_Map_Gap*
+        virtual Library_Mapping_Rule*
         _clone (::xml_schema::flags f = 0,
                 ::xml_schema::container* c = 0) const;
 
-        Property_Map_Gap&
-        operator= (const Property_Map_Gap& x);
+        Library_Mapping_Rule&
+        operator= (const Library_Mapping_Rule& x);
 
         virtual 
-        ~Property_Map_Gap ();
+        ~Library_Mapping_Rule ();
 
         // Implementation.
         //
@@ -507,14 +406,10 @@ namespace namespaces
 
         protected:
         Description_optional Description_;
-        ::xsd::cxx::tree::one< TargetPropertyName_type > TargetPropertyName_;
-        TargetLocation_optional TargetLocation_;
-        DefaultValueNumber_optional DefaultValueNumber_;
-        DefaultValueString_optional DefaultValueString_;
-        RecordInstance_optional RecordInstance_;
-        RecordInstanceLocation_optional RecordInstanceLocation_;
-        RecordLocation_optional RecordLocation_;
-        ::xsd::cxx::tree::one< RefId_type > RefId_;
+        ::xsd::cxx::tree::one< TargetLibraryName_type > TargetLibraryName_;
+        Component_Map_One2One_Name_sequence Component_Map_One2One_Name_;
+        Component_Map_One2Many_Name_sequence Component_Map_One2Many_Name_;
+        Component_Map_Gap_Name_sequence Component_Map_Gap_Name_;
       };
     }
   }
@@ -551,7 +446,7 @@ namespace namespaces
     namespace DataMap
     {
       void
-      operator<< (::xercesc::DOMElement&, const Property_Map_Gap&);
+      operator<< (::xercesc::DOMElement&, const Library_Mapping_Rule&);
     }
   }
 }
@@ -563,4 +458,4 @@ namespace namespaces
 //
 // End epilogue.
 
-#endif // PROPERTY_MAP_GAP_HXX
+#endif // LIBRARY_MAPPING_RULE_HXX

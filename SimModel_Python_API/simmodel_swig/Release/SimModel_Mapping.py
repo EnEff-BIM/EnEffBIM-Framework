@@ -252,9 +252,6 @@ class SimMappedData(_object):
 
     def getMappedComponentList(self):
         return _SimModel_Mapping.SimMappedData_getMappedComponentList(self)
-
-    def translator(self, _simHierarchy):
-        return _SimModel_Mapping.SimMappedData_translator(self, _simHierarchy)
     __swig_destroy__ = _SimModel_Mapping.delete_SimMappedData
     __del__ = lambda self: None
 SimMappedData_swigregister = _SimModel_Mapping.SimMappedData_swigregister

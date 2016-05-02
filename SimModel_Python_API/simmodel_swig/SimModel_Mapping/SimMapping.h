@@ -4,7 +4,7 @@
 #include <vector>
 #include <string>
 // mapping rules
-#include ".\mapping_rule_lib\mapping_rule_schema.hxx"
+#include "./mapping_rule_lib/mapping_rule_schema.hxx"
 using namespace namespaces::Sim::DataMap;
 // forward declaration
 class SimHierarchyNode;
@@ -29,6 +29,8 @@ private:
 	
 	// the name of a record instance declared in the target data model
 	std::string recordInstance;
+	// the location of the record instance
+	std::string recordInstanceLocation;
 	// a record location in the target data model
 	std::string recordLocation;
 
@@ -38,6 +40,7 @@ public:
 		propertyName = "";
 		propertyLocation = "";
 		recordInstance = "";
+		recordInstanceLocation = "";
 		recordLocation = "";
 
 		propertyValueType = "";
@@ -136,6 +139,8 @@ private:
 	// add mapped component
 	void addMappedComponent(MappedComponent& _mapCom);
 
+
+
 public:
 	SimMappedData() 
 	{
@@ -144,7 +149,7 @@ public:
 	// get mapped components
 	std::vector<MappedComponent>& getMappedComponentList();
 	// translate the SimModel data based on mapping rules
-	void translator(SimHierarchy& _simHierarchy);
+	void translator(SimHierarchy& _simHierarchy, std::string _name);
 };
 
 #endif // SIM_MAPPING_H

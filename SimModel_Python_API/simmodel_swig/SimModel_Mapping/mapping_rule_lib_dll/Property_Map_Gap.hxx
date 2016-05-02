@@ -292,7 +292,7 @@ namespace namespaces
   {
     namespace DataMap
     {
-      class Property_Map_Gap: public ::xml_schema::type
+      class __declspec(dllexport) Property_Map_Gap: public ::xml_schema::type
       {
         public:
         // Description
@@ -354,44 +354,22 @@ namespace namespaces
         void
         TargetLocation (::std::auto_ptr< TargetLocation_type > p);
 
-        // DefaultValueNumber
+        // DefaultValue
         //
-        typedef ::xml_schema::double_ DefaultValueNumber_type;
-        typedef ::xsd::cxx::tree::optional< DefaultValueNumber_type > DefaultValueNumber_optional;
-        typedef ::xsd::cxx::tree::traits< DefaultValueNumber_type, char, ::xsd::cxx::tree::schema_type::double_ > DefaultValueNumber_traits;
+        typedef ::xml_schema::string DefaultValue_type;
+        typedef ::xsd::cxx::tree::traits< DefaultValue_type, char > DefaultValue_traits;
 
-        const DefaultValueNumber_optional&
-        DefaultValueNumber () const;
+        const DefaultValue_type&
+        DefaultValue () const;
 
-        DefaultValueNumber_optional&
-        DefaultValueNumber ();
-
-        void
-        DefaultValueNumber (const DefaultValueNumber_type& x);
+        DefaultValue_type&
+        DefaultValue ();
 
         void
-        DefaultValueNumber (const DefaultValueNumber_optional& x);
-
-        // DefaultValueString
-        //
-        typedef ::xml_schema::string DefaultValueString_type;
-        typedef ::xsd::cxx::tree::optional< DefaultValueString_type > DefaultValueString_optional;
-        typedef ::xsd::cxx::tree::traits< DefaultValueString_type, char > DefaultValueString_traits;
-
-        const DefaultValueString_optional&
-        DefaultValueString () const;
-
-        DefaultValueString_optional&
-        DefaultValueString ();
+        DefaultValue (const DefaultValue_type& x);
 
         void
-        DefaultValueString (const DefaultValueString_type& x);
-
-        void
-        DefaultValueString (const DefaultValueString_optional& x);
-
-        void
-        DefaultValueString (::std::auto_ptr< DefaultValueString_type > p);
+        DefaultValue (::std::auto_ptr< DefaultValue_type > p);
 
         // RecordInstance
         //
@@ -478,6 +456,7 @@ namespace namespaces
         Property_Map_Gap ();
 
         Property_Map_Gap (const TargetPropertyName_type&,
+                          const DefaultValue_type&,
                           const RefId_type&);
 
         Property_Map_Gap (const ::xercesc::DOMElement& e,
@@ -509,8 +488,7 @@ namespace namespaces
         Description_optional Description_;
         ::xsd::cxx::tree::one< TargetPropertyName_type > TargetPropertyName_;
         TargetLocation_optional TargetLocation_;
-        DefaultValueNumber_optional DefaultValueNumber_;
-        DefaultValueString_optional DefaultValueString_;
+        ::xsd::cxx::tree::one< DefaultValue_type > DefaultValue_;
         RecordInstance_optional RecordInstance_;
         RecordInstanceLocation_optional RecordInstanceLocation_;
         RecordLocation_optional RecordLocation_;

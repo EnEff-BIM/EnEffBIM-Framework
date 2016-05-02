@@ -3273,278 +3273,10 @@ namespace namespaces
           "http://www.e3d.rwth-aachen.de/namespaces/Sim/DataMap");
       }
 
-      ::std::auto_ptr< ::xml_schema::double_ >
-      DefaultValueNumber (const ::std::string& u,
-                          ::xml_schema::flags f,
-                          const ::xml_schema::properties& p)
-      {
-        ::xsd::cxx::xml::auto_initializer i (
-          (f & ::xml_schema::flags::dont_initialize) == 0,
-          (f & ::xml_schema::flags::keep_dom) == 0);
-
-        ::xsd::cxx::tree::error_handler< char > h;
-
-        ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
-          ::xsd::cxx::xml::dom::parse< char > (
-            u, h, p, f));
-
-        h.throw_if_failed< ::xsd::cxx::tree::parsing< char > > ();
-
-        return ::std::auto_ptr< ::xml_schema::double_ > (
-          ::namespaces::Sim::DataMap::DefaultValueNumber (
-            d, f | ::xml_schema::flags::own_dom, p));
-      }
-
-      ::std::auto_ptr< ::xml_schema::double_ >
-      DefaultValueNumber (const ::std::string& u,
-                          ::xml_schema::error_handler& h,
-                          ::xml_schema::flags f,
-                          const ::xml_schema::properties& p)
-      {
-        ::xsd::cxx::xml::auto_initializer i (
-          (f & ::xml_schema::flags::dont_initialize) == 0,
-          (f & ::xml_schema::flags::keep_dom) == 0);
-
-        ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
-          ::xsd::cxx::xml::dom::parse< char > (
-            u, h, p, f));
-
-        if (!d.get ())
-          throw ::xsd::cxx::tree::parsing< char > ();
-
-        return ::std::auto_ptr< ::xml_schema::double_ > (
-          ::namespaces::Sim::DataMap::DefaultValueNumber (
-            d, f | ::xml_schema::flags::own_dom, p));
-      }
-
-      ::std::auto_ptr< ::xml_schema::double_ >
-      DefaultValueNumber (const ::std::string& u,
-                          ::xercesc::DOMErrorHandler& h,
-                          ::xml_schema::flags f,
-                          const ::xml_schema::properties& p)
-      {
-        ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
-          ::xsd::cxx::xml::dom::parse< char > (
-            u, h, p, f));
-
-        if (!d.get ())
-          throw ::xsd::cxx::tree::parsing< char > ();
-
-        return ::std::auto_ptr< ::xml_schema::double_ > (
-          ::namespaces::Sim::DataMap::DefaultValueNumber (
-            d, f | ::xml_schema::flags::own_dom, p));
-      }
-
-      ::std::auto_ptr< ::xml_schema::double_ >
-      DefaultValueNumber (::std::istream& is,
-                          ::xml_schema::flags f,
-                          const ::xml_schema::properties& p)
-      {
-        ::xsd::cxx::xml::auto_initializer i (
-          (f & ::xml_schema::flags::dont_initialize) == 0,
-          (f & ::xml_schema::flags::keep_dom) == 0);
-
-        ::xsd::cxx::xml::sax::std_input_source isrc (is);
-        return ::namespaces::Sim::DataMap::DefaultValueNumber (isrc, f, p);
-      }
-
-      ::std::auto_ptr< ::xml_schema::double_ >
-      DefaultValueNumber (::std::istream& is,
-                          ::xml_schema::error_handler& h,
-                          ::xml_schema::flags f,
-                          const ::xml_schema::properties& p)
-      {
-        ::xsd::cxx::xml::auto_initializer i (
-          (f & ::xml_schema::flags::dont_initialize) == 0,
-          (f & ::xml_schema::flags::keep_dom) == 0);
-
-        ::xsd::cxx::xml::sax::std_input_source isrc (is);
-        return ::namespaces::Sim::DataMap::DefaultValueNumber (isrc, h, f, p);
-      }
-
-      ::std::auto_ptr< ::xml_schema::double_ >
-      DefaultValueNumber (::std::istream& is,
-                          ::xercesc::DOMErrorHandler& h,
-                          ::xml_schema::flags f,
-                          const ::xml_schema::properties& p)
-      {
-        ::xsd::cxx::xml::sax::std_input_source isrc (is);
-        return ::namespaces::Sim::DataMap::DefaultValueNumber (isrc, h, f, p);
-      }
-
-      ::std::auto_ptr< ::xml_schema::double_ >
-      DefaultValueNumber (::std::istream& is,
-                          const ::std::string& sid,
-                          ::xml_schema::flags f,
-                          const ::xml_schema::properties& p)
-      {
-        ::xsd::cxx::xml::auto_initializer i (
-          (f & ::xml_schema::flags::dont_initialize) == 0,
-          (f & ::xml_schema::flags::keep_dom) == 0);
-
-        ::xsd::cxx::xml::sax::std_input_source isrc (is, sid);
-        return ::namespaces::Sim::DataMap::DefaultValueNumber (isrc, f, p);
-      }
-
-      ::std::auto_ptr< ::xml_schema::double_ >
-      DefaultValueNumber (::std::istream& is,
-                          const ::std::string& sid,
-                          ::xml_schema::error_handler& h,
-                          ::xml_schema::flags f,
-                          const ::xml_schema::properties& p)
-      {
-        ::xsd::cxx::xml::auto_initializer i (
-          (f & ::xml_schema::flags::dont_initialize) == 0,
-          (f & ::xml_schema::flags::keep_dom) == 0);
-
-        ::xsd::cxx::xml::sax::std_input_source isrc (is, sid);
-        return ::namespaces::Sim::DataMap::DefaultValueNumber (isrc, h, f, p);
-      }
-
-      ::std::auto_ptr< ::xml_schema::double_ >
-      DefaultValueNumber (::std::istream& is,
-                          const ::std::string& sid,
-                          ::xercesc::DOMErrorHandler& h,
-                          ::xml_schema::flags f,
-                          const ::xml_schema::properties& p)
-      {
-        ::xsd::cxx::xml::sax::std_input_source isrc (is, sid);
-        return ::namespaces::Sim::DataMap::DefaultValueNumber (isrc, h, f, p);
-      }
-
-      ::std::auto_ptr< ::xml_schema::double_ >
-      DefaultValueNumber (::xercesc::InputSource& i,
-                          ::xml_schema::flags f,
-                          const ::xml_schema::properties& p)
-      {
-        ::xsd::cxx::tree::error_handler< char > h;
-
-        ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
-          ::xsd::cxx::xml::dom::parse< char > (
-            i, h, p, f));
-
-        h.throw_if_failed< ::xsd::cxx::tree::parsing< char > > ();
-
-        return ::std::auto_ptr< ::xml_schema::double_ > (
-          ::namespaces::Sim::DataMap::DefaultValueNumber (
-            d, f | ::xml_schema::flags::own_dom, p));
-      }
-
-      ::std::auto_ptr< ::xml_schema::double_ >
-      DefaultValueNumber (::xercesc::InputSource& i,
-                          ::xml_schema::error_handler& h,
-                          ::xml_schema::flags f,
-                          const ::xml_schema::properties& p)
-      {
-        ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
-          ::xsd::cxx::xml::dom::parse< char > (
-            i, h, p, f));
-
-        if (!d.get ())
-          throw ::xsd::cxx::tree::parsing< char > ();
-
-        return ::std::auto_ptr< ::xml_schema::double_ > (
-          ::namespaces::Sim::DataMap::DefaultValueNumber (
-            d, f | ::xml_schema::flags::own_dom, p));
-      }
-
-      ::std::auto_ptr< ::xml_schema::double_ >
-      DefaultValueNumber (::xercesc::InputSource& i,
-                          ::xercesc::DOMErrorHandler& h,
-                          ::xml_schema::flags f,
-                          const ::xml_schema::properties& p)
-      {
-        ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
-          ::xsd::cxx::xml::dom::parse< char > (
-            i, h, p, f));
-
-        if (!d.get ())
-          throw ::xsd::cxx::tree::parsing< char > ();
-
-        return ::std::auto_ptr< ::xml_schema::double_ > (
-          ::namespaces::Sim::DataMap::DefaultValueNumber (
-            d, f | ::xml_schema::flags::own_dom, p));
-      }
-
-      ::std::auto_ptr< ::xml_schema::double_ >
-      DefaultValueNumber (const ::xercesc::DOMDocument& doc,
-                          ::xml_schema::flags f,
-                          const ::xml_schema::properties& p)
-      {
-        if (f & ::xml_schema::flags::keep_dom)
-        {
-          ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
-            static_cast< ::xercesc::DOMDocument* > (doc.cloneNode (true)));
-
-          return ::std::auto_ptr< ::xml_schema::double_ > (
-            ::namespaces::Sim::DataMap::DefaultValueNumber (
-              d, f | ::xml_schema::flags::own_dom, p));
-        }
-
-        const ::xercesc::DOMElement& e (*doc.getDocumentElement ());
-        const ::xsd::cxx::xml::qualified_name< char > n (
-          ::xsd::cxx::xml::dom::name< char > (e));
-
-        if (n.name () == "DefaultValueNumber" &&
-            n.namespace_ () == "http://www.e3d.rwth-aachen.de/namespaces/Sim/DataMap")
-        {
-          ::std::auto_ptr< ::xml_schema::double_ > r (
-            new ::xml_schema::double_ (
-              ::xsd::cxx::tree::traits< ::xml_schema::double_, char, ::xsd::cxx::tree::schema_type::double_ >::create (
-                e, f, 0)));
-          return r;
-        }
-
-        throw ::xsd::cxx::tree::unexpected_element < char > (
-          n.name (),
-          n.namespace_ (),
-          "DefaultValueNumber",
-          "http://www.e3d.rwth-aachen.de/namespaces/Sim/DataMap");
-      }
-
-      ::std::auto_ptr< ::xml_schema::double_ >
-      DefaultValueNumber (::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d,
-                          ::xml_schema::flags f,
-                          const ::xml_schema::properties&)
-      {
-        ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > c (
-          ((f & ::xml_schema::flags::keep_dom) &&
-           !(f & ::xml_schema::flags::own_dom))
-          ? static_cast< ::xercesc::DOMDocument* > (d->cloneNode (true))
-          : 0);
-
-        ::xercesc::DOMDocument& doc (c.get () ? *c : *d);
-        const ::xercesc::DOMElement& e (*doc.getDocumentElement ());
-
-        const ::xsd::cxx::xml::qualified_name< char > n (
-          ::xsd::cxx::xml::dom::name< char > (e));
-
-        if (f & ::xml_schema::flags::keep_dom)
-          doc.setUserData (::xml_schema::dom::tree_node_key,
-                           (c.get () ? &c : &d),
-                           0);
-
-        if (n.name () == "DefaultValueNumber" &&
-            n.namespace_ () == "http://www.e3d.rwth-aachen.de/namespaces/Sim/DataMap")
-        {
-          ::std::auto_ptr< ::xml_schema::double_ > r (
-            new ::xml_schema::double_ (
-              ::xsd::cxx::tree::traits< ::xml_schema::double_, char, ::xsd::cxx::tree::schema_type::double_ >::create (
-                e, f, 0)));
-          return r;
-        }
-
-        throw ::xsd::cxx::tree::unexpected_element < char > (
-          n.name (),
-          n.namespace_ (),
-          "DefaultValueNumber",
-          "http://www.e3d.rwth-aachen.de/namespaces/Sim/DataMap");
-      }
-
       ::std::auto_ptr< ::xml_schema::string >
-      DefaultValueString (const ::std::string& u,
-                          ::xml_schema::flags f,
-                          const ::xml_schema::properties& p)
+      DefaultValue (const ::std::string& u,
+                    ::xml_schema::flags f,
+                    const ::xml_schema::properties& p)
       {
         ::xsd::cxx::xml::auto_initializer i (
           (f & ::xml_schema::flags::dont_initialize) == 0,
@@ -3559,15 +3291,15 @@ namespace namespaces
         h.throw_if_failed< ::xsd::cxx::tree::parsing< char > > ();
 
         return ::std::auto_ptr< ::xml_schema::string > (
-          ::namespaces::Sim::DataMap::DefaultValueString (
+          ::namespaces::Sim::DataMap::DefaultValue (
             d, f | ::xml_schema::flags::own_dom, p));
       }
 
       ::std::auto_ptr< ::xml_schema::string >
-      DefaultValueString (const ::std::string& u,
-                          ::xml_schema::error_handler& h,
-                          ::xml_schema::flags f,
-                          const ::xml_schema::properties& p)
+      DefaultValue (const ::std::string& u,
+                    ::xml_schema::error_handler& h,
+                    ::xml_schema::flags f,
+                    const ::xml_schema::properties& p)
       {
         ::xsd::cxx::xml::auto_initializer i (
           (f & ::xml_schema::flags::dont_initialize) == 0,
@@ -3581,15 +3313,15 @@ namespace namespaces
           throw ::xsd::cxx::tree::parsing< char > ();
 
         return ::std::auto_ptr< ::xml_schema::string > (
-          ::namespaces::Sim::DataMap::DefaultValueString (
+          ::namespaces::Sim::DataMap::DefaultValue (
             d, f | ::xml_schema::flags::own_dom, p));
       }
 
       ::std::auto_ptr< ::xml_schema::string >
-      DefaultValueString (const ::std::string& u,
-                          ::xercesc::DOMErrorHandler& h,
-                          ::xml_schema::flags f,
-                          const ::xml_schema::properties& p)
+      DefaultValue (const ::std::string& u,
+                    ::xercesc::DOMErrorHandler& h,
+                    ::xml_schema::flags f,
+                    const ::xml_schema::properties& p)
       {
         ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
           ::xsd::cxx::xml::dom::parse< char > (
@@ -3599,91 +3331,91 @@ namespace namespaces
           throw ::xsd::cxx::tree::parsing< char > ();
 
         return ::std::auto_ptr< ::xml_schema::string > (
-          ::namespaces::Sim::DataMap::DefaultValueString (
+          ::namespaces::Sim::DataMap::DefaultValue (
             d, f | ::xml_schema::flags::own_dom, p));
       }
 
       ::std::auto_ptr< ::xml_schema::string >
-      DefaultValueString (::std::istream& is,
-                          ::xml_schema::flags f,
-                          const ::xml_schema::properties& p)
+      DefaultValue (::std::istream& is,
+                    ::xml_schema::flags f,
+                    const ::xml_schema::properties& p)
       {
         ::xsd::cxx::xml::auto_initializer i (
           (f & ::xml_schema::flags::dont_initialize) == 0,
           (f & ::xml_schema::flags::keep_dom) == 0);
 
         ::xsd::cxx::xml::sax::std_input_source isrc (is);
-        return ::namespaces::Sim::DataMap::DefaultValueString (isrc, f, p);
+        return ::namespaces::Sim::DataMap::DefaultValue (isrc, f, p);
       }
 
       ::std::auto_ptr< ::xml_schema::string >
-      DefaultValueString (::std::istream& is,
-                          ::xml_schema::error_handler& h,
-                          ::xml_schema::flags f,
-                          const ::xml_schema::properties& p)
+      DefaultValue (::std::istream& is,
+                    ::xml_schema::error_handler& h,
+                    ::xml_schema::flags f,
+                    const ::xml_schema::properties& p)
       {
         ::xsd::cxx::xml::auto_initializer i (
           (f & ::xml_schema::flags::dont_initialize) == 0,
           (f & ::xml_schema::flags::keep_dom) == 0);
 
         ::xsd::cxx::xml::sax::std_input_source isrc (is);
-        return ::namespaces::Sim::DataMap::DefaultValueString (isrc, h, f, p);
+        return ::namespaces::Sim::DataMap::DefaultValue (isrc, h, f, p);
       }
 
       ::std::auto_ptr< ::xml_schema::string >
-      DefaultValueString (::std::istream& is,
-                          ::xercesc::DOMErrorHandler& h,
-                          ::xml_schema::flags f,
-                          const ::xml_schema::properties& p)
+      DefaultValue (::std::istream& is,
+                    ::xercesc::DOMErrorHandler& h,
+                    ::xml_schema::flags f,
+                    const ::xml_schema::properties& p)
       {
         ::xsd::cxx::xml::sax::std_input_source isrc (is);
-        return ::namespaces::Sim::DataMap::DefaultValueString (isrc, h, f, p);
+        return ::namespaces::Sim::DataMap::DefaultValue (isrc, h, f, p);
       }
 
       ::std::auto_ptr< ::xml_schema::string >
-      DefaultValueString (::std::istream& is,
-                          const ::std::string& sid,
-                          ::xml_schema::flags f,
-                          const ::xml_schema::properties& p)
+      DefaultValue (::std::istream& is,
+                    const ::std::string& sid,
+                    ::xml_schema::flags f,
+                    const ::xml_schema::properties& p)
       {
         ::xsd::cxx::xml::auto_initializer i (
           (f & ::xml_schema::flags::dont_initialize) == 0,
           (f & ::xml_schema::flags::keep_dom) == 0);
 
         ::xsd::cxx::xml::sax::std_input_source isrc (is, sid);
-        return ::namespaces::Sim::DataMap::DefaultValueString (isrc, f, p);
+        return ::namespaces::Sim::DataMap::DefaultValue (isrc, f, p);
       }
 
       ::std::auto_ptr< ::xml_schema::string >
-      DefaultValueString (::std::istream& is,
-                          const ::std::string& sid,
-                          ::xml_schema::error_handler& h,
-                          ::xml_schema::flags f,
-                          const ::xml_schema::properties& p)
+      DefaultValue (::std::istream& is,
+                    const ::std::string& sid,
+                    ::xml_schema::error_handler& h,
+                    ::xml_schema::flags f,
+                    const ::xml_schema::properties& p)
       {
         ::xsd::cxx::xml::auto_initializer i (
           (f & ::xml_schema::flags::dont_initialize) == 0,
           (f & ::xml_schema::flags::keep_dom) == 0);
 
         ::xsd::cxx::xml::sax::std_input_source isrc (is, sid);
-        return ::namespaces::Sim::DataMap::DefaultValueString (isrc, h, f, p);
+        return ::namespaces::Sim::DataMap::DefaultValue (isrc, h, f, p);
       }
 
       ::std::auto_ptr< ::xml_schema::string >
-      DefaultValueString (::std::istream& is,
-                          const ::std::string& sid,
-                          ::xercesc::DOMErrorHandler& h,
-                          ::xml_schema::flags f,
-                          const ::xml_schema::properties& p)
+      DefaultValue (::std::istream& is,
+                    const ::std::string& sid,
+                    ::xercesc::DOMErrorHandler& h,
+                    ::xml_schema::flags f,
+                    const ::xml_schema::properties& p)
       {
         ::xsd::cxx::xml::sax::std_input_source isrc (is, sid);
-        return ::namespaces::Sim::DataMap::DefaultValueString (isrc, h, f, p);
+        return ::namespaces::Sim::DataMap::DefaultValue (isrc, h, f, p);
       }
 
       ::std::auto_ptr< ::xml_schema::string >
-      DefaultValueString (::xercesc::InputSource& i,
-                          ::xml_schema::flags f,
-                          const ::xml_schema::properties& p)
+      DefaultValue (::xercesc::InputSource& i,
+                    ::xml_schema::flags f,
+                    const ::xml_schema::properties& p)
       {
         ::xsd::cxx::tree::error_handler< char > h;
 
@@ -3694,15 +3426,15 @@ namespace namespaces
         h.throw_if_failed< ::xsd::cxx::tree::parsing< char > > ();
 
         return ::std::auto_ptr< ::xml_schema::string > (
-          ::namespaces::Sim::DataMap::DefaultValueString (
+          ::namespaces::Sim::DataMap::DefaultValue (
             d, f | ::xml_schema::flags::own_dom, p));
       }
 
       ::std::auto_ptr< ::xml_schema::string >
-      DefaultValueString (::xercesc::InputSource& i,
-                          ::xml_schema::error_handler& h,
-                          ::xml_schema::flags f,
-                          const ::xml_schema::properties& p)
+      DefaultValue (::xercesc::InputSource& i,
+                    ::xml_schema::error_handler& h,
+                    ::xml_schema::flags f,
+                    const ::xml_schema::properties& p)
       {
         ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
           ::xsd::cxx::xml::dom::parse< char > (
@@ -3712,15 +3444,15 @@ namespace namespaces
           throw ::xsd::cxx::tree::parsing< char > ();
 
         return ::std::auto_ptr< ::xml_schema::string > (
-          ::namespaces::Sim::DataMap::DefaultValueString (
+          ::namespaces::Sim::DataMap::DefaultValue (
             d, f | ::xml_schema::flags::own_dom, p));
       }
 
       ::std::auto_ptr< ::xml_schema::string >
-      DefaultValueString (::xercesc::InputSource& i,
-                          ::xercesc::DOMErrorHandler& h,
-                          ::xml_schema::flags f,
-                          const ::xml_schema::properties& p)
+      DefaultValue (::xercesc::InputSource& i,
+                    ::xercesc::DOMErrorHandler& h,
+                    ::xml_schema::flags f,
+                    const ::xml_schema::properties& p)
       {
         ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
           ::xsd::cxx::xml::dom::parse< char > (
@@ -3730,14 +3462,14 @@ namespace namespaces
           throw ::xsd::cxx::tree::parsing< char > ();
 
         return ::std::auto_ptr< ::xml_schema::string > (
-          ::namespaces::Sim::DataMap::DefaultValueString (
+          ::namespaces::Sim::DataMap::DefaultValue (
             d, f | ::xml_schema::flags::own_dom, p));
       }
 
       ::std::auto_ptr< ::xml_schema::string >
-      DefaultValueString (const ::xercesc::DOMDocument& doc,
-                          ::xml_schema::flags f,
-                          const ::xml_schema::properties& p)
+      DefaultValue (const ::xercesc::DOMDocument& doc,
+                    ::xml_schema::flags f,
+                    const ::xml_schema::properties& p)
       {
         if (f & ::xml_schema::flags::keep_dom)
         {
@@ -3745,7 +3477,7 @@ namespace namespaces
             static_cast< ::xercesc::DOMDocument* > (doc.cloneNode (true)));
 
           return ::std::auto_ptr< ::xml_schema::string > (
-            ::namespaces::Sim::DataMap::DefaultValueString (
+            ::namespaces::Sim::DataMap::DefaultValue (
               d, f | ::xml_schema::flags::own_dom, p));
         }
 
@@ -3753,7 +3485,7 @@ namespace namespaces
         const ::xsd::cxx::xml::qualified_name< char > n (
           ::xsd::cxx::xml::dom::name< char > (e));
 
-        if (n.name () == "DefaultValueString" &&
+        if (n.name () == "DefaultValue" &&
             n.namespace_ () == "http://www.e3d.rwth-aachen.de/namespaces/Sim/DataMap")
         {
           ::std::auto_ptr< ::xml_schema::string > r (
@@ -3765,14 +3497,14 @@ namespace namespaces
         throw ::xsd::cxx::tree::unexpected_element < char > (
           n.name (),
           n.namespace_ (),
-          "DefaultValueString",
+          "DefaultValue",
           "http://www.e3d.rwth-aachen.de/namespaces/Sim/DataMap");
       }
 
       ::std::auto_ptr< ::xml_schema::string >
-      DefaultValueString (::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d,
-                          ::xml_schema::flags f,
-                          const ::xml_schema::properties&)
+      DefaultValue (::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d,
+                    ::xml_schema::flags f,
+                    const ::xml_schema::properties&)
       {
         ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > c (
           ((f & ::xml_schema::flags::keep_dom) &&
@@ -3791,7 +3523,7 @@ namespace namespaces
                            (c.get () ? &c : &d),
                            0);
 
-        if (n.name () == "DefaultValueString" &&
+        if (n.name () == "DefaultValue" &&
             n.namespace_ () == "http://www.e3d.rwth-aachen.de/namespaces/Sim/DataMap")
         {
           ::std::auto_ptr< ::xml_schema::string > r (
@@ -3803,7 +3535,7 @@ namespace namespaces
         throw ::xsd::cxx::tree::unexpected_element < char > (
           n.name (),
           n.namespace_ (),
-          "DefaultValueString",
+          "DefaultValue",
           "http://www.e3d.rwth-aachen.de/namespaces/Sim/DataMap");
       }
 
@@ -14122,17 +13854,17 @@ namespace namespaces
       }
 
       void
-      DefaultValueNumber (::std::ostream& o,
-                          const ::xml_schema::double_& s,
-                          const ::xml_schema::namespace_infomap& m,
-                          const ::std::string& e,
-                          ::xml_schema::flags f)
+      DefaultValue (::std::ostream& o,
+                    const ::xml_schema::string& s,
+                    const ::xml_schema::namespace_infomap& m,
+                    const ::std::string& e,
+                    ::xml_schema::flags f)
       {
         ::xsd::cxx::xml::auto_initializer i (
           (f & ::xml_schema::flags::dont_initialize) == 0);
 
         ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
-          ::namespaces::Sim::DataMap::DefaultValueNumber (s, m, f));
+          ::namespaces::Sim::DataMap::DefaultValue (s, m, f));
 
         ::xsd::cxx::tree::error_handler< char > h;
 
@@ -14144,18 +13876,18 @@ namespace namespaces
       }
 
       void
-      DefaultValueNumber (::std::ostream& o,
-                          const ::xml_schema::double_& s,
-                          ::xml_schema::error_handler& h,
-                          const ::xml_schema::namespace_infomap& m,
-                          const ::std::string& e,
-                          ::xml_schema::flags f)
+      DefaultValue (::std::ostream& o,
+                    const ::xml_schema::string& s,
+                    ::xml_schema::error_handler& h,
+                    const ::xml_schema::namespace_infomap& m,
+                    const ::std::string& e,
+                    ::xml_schema::flags f)
       {
         ::xsd::cxx::xml::auto_initializer i (
           (f & ::xml_schema::flags::dont_initialize) == 0);
 
         ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
-          ::namespaces::Sim::DataMap::DefaultValueNumber (s, m, f));
+          ::namespaces::Sim::DataMap::DefaultValue (s, m, f));
         ::xsd::cxx::xml::dom::ostream_format_target t (o);
         if (!::xsd::cxx::xml::dom::serialize (t, *d, e, h, f))
         {
@@ -14164,15 +13896,15 @@ namespace namespaces
       }
 
       void
-      DefaultValueNumber (::std::ostream& o,
-                          const ::xml_schema::double_& s,
-                          ::xercesc::DOMErrorHandler& h,
-                          const ::xml_schema::namespace_infomap& m,
-                          const ::std::string& e,
-                          ::xml_schema::flags f)
+      DefaultValue (::std::ostream& o,
+                    const ::xml_schema::string& s,
+                    ::xercesc::DOMErrorHandler& h,
+                    const ::xml_schema::namespace_infomap& m,
+                    const ::std::string& e,
+                    ::xml_schema::flags f)
       {
         ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
-          ::namespaces::Sim::DataMap::DefaultValueNumber (s, m, f));
+          ::namespaces::Sim::DataMap::DefaultValue (s, m, f));
         ::xsd::cxx::xml::dom::ostream_format_target t (o);
         if (!::xsd::cxx::xml::dom::serialize (t, *d, e, h, f))
         {
@@ -14181,14 +13913,14 @@ namespace namespaces
       }
 
       void
-      DefaultValueNumber (::xercesc::XMLFormatTarget& t,
-                          const ::xml_schema::double_& s,
-                          const ::xml_schema::namespace_infomap& m,
-                          const ::std::string& e,
-                          ::xml_schema::flags f)
+      DefaultValue (::xercesc::XMLFormatTarget& t,
+                    const ::xml_schema::string& s,
+                    const ::xml_schema::namespace_infomap& m,
+                    const ::std::string& e,
+                    ::xml_schema::flags f)
       {
         ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
-          ::namespaces::Sim::DataMap::DefaultValueNumber (s, m, f));
+          ::namespaces::Sim::DataMap::DefaultValue (s, m, f));
 
         ::xsd::cxx::tree::error_handler< char > h;
 
@@ -14199,15 +13931,15 @@ namespace namespaces
       }
 
       void
-      DefaultValueNumber (::xercesc::XMLFormatTarget& t,
-                          const ::xml_schema::double_& s,
-                          ::xml_schema::error_handler& h,
-                          const ::xml_schema::namespace_infomap& m,
-                          const ::std::string& e,
-                          ::xml_schema::flags f)
+      DefaultValue (::xercesc::XMLFormatTarget& t,
+                    const ::xml_schema::string& s,
+                    ::xml_schema::error_handler& h,
+                    const ::xml_schema::namespace_infomap& m,
+                    const ::std::string& e,
+                    ::xml_schema::flags f)
       {
         ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
-          ::namespaces::Sim::DataMap::DefaultValueNumber (s, m, f));
+          ::namespaces::Sim::DataMap::DefaultValue (s, m, f));
         if (!::xsd::cxx::xml::dom::serialize (t, *d, e, h, f))
         {
           throw ::xsd::cxx::tree::serialization< char > ();
@@ -14215,15 +13947,15 @@ namespace namespaces
       }
 
       void
-      DefaultValueNumber (::xercesc::XMLFormatTarget& t,
-                          const ::xml_schema::double_& s,
-                          ::xercesc::DOMErrorHandler& h,
-                          const ::xml_schema::namespace_infomap& m,
-                          const ::std::string& e,
-                          ::xml_schema::flags f)
+      DefaultValue (::xercesc::XMLFormatTarget& t,
+                    const ::xml_schema::string& s,
+                    ::xercesc::DOMErrorHandler& h,
+                    const ::xml_schema::namespace_infomap& m,
+                    const ::std::string& e,
+                    ::xml_schema::flags f)
       {
         ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
-          ::namespaces::Sim::DataMap::DefaultValueNumber (s, m, f));
+          ::namespaces::Sim::DataMap::DefaultValue (s, m, f));
         if (!::xsd::cxx::xml::dom::serialize (t, *d, e, h, f))
         {
           throw ::xsd::cxx::tree::serialization< char > ();
@@ -14231,163 +13963,15 @@ namespace namespaces
       }
 
       void
-      DefaultValueNumber (::xercesc::DOMDocument& d,
-                          const ::xml_schema::double_& s,
-                          ::xml_schema::flags)
+      DefaultValue (::xercesc::DOMDocument& d,
+                    const ::xml_schema::string& s,
+                    ::xml_schema::flags)
       {
         ::xercesc::DOMElement& e (*d.getDocumentElement ());
         const ::xsd::cxx::xml::qualified_name< char > n (
           ::xsd::cxx::xml::dom::name< char > (e));
 
-        if (n.name () == "DefaultValueNumber" &&
-            n.namespace_ () == "http://www.e3d.rwth-aachen.de/namespaces/Sim/DataMap")
-        {
-          e << ::xml_schema::as_double(s);
-        }
-        else
-        {
-          throw ::xsd::cxx::tree::unexpected_element < char > (
-            n.name (),
-            n.namespace_ (),
-            "DefaultValueNumber",
-            "http://www.e3d.rwth-aachen.de/namespaces/Sim/DataMap");
-        }
-      }
-
-      ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
-      DefaultValueNumber (const ::xml_schema::double_& s,
-                          const ::xml_schema::namespace_infomap& m,
-                          ::xml_schema::flags f)
-      {
-        ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
-          ::xsd::cxx::xml::dom::serialize< char > (
-            "DefaultValueNumber",
-            "http://www.e3d.rwth-aachen.de/namespaces/Sim/DataMap",
-            m, f));
-
-        ::namespaces::Sim::DataMap::DefaultValueNumber (*d, s, f);
-        return d;
-      }
-
-      void
-      DefaultValueString (::std::ostream& o,
-                          const ::xml_schema::string& s,
-                          const ::xml_schema::namespace_infomap& m,
-                          const ::std::string& e,
-                          ::xml_schema::flags f)
-      {
-        ::xsd::cxx::xml::auto_initializer i (
-          (f & ::xml_schema::flags::dont_initialize) == 0);
-
-        ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
-          ::namespaces::Sim::DataMap::DefaultValueString (s, m, f));
-
-        ::xsd::cxx::tree::error_handler< char > h;
-
-        ::xsd::cxx::xml::dom::ostream_format_target t (o);
-        if (!::xsd::cxx::xml::dom::serialize (t, *d, e, h, f))
-        {
-          h.throw_if_failed< ::xsd::cxx::tree::serialization< char > > ();
-        }
-      }
-
-      void
-      DefaultValueString (::std::ostream& o,
-                          const ::xml_schema::string& s,
-                          ::xml_schema::error_handler& h,
-                          const ::xml_schema::namespace_infomap& m,
-                          const ::std::string& e,
-                          ::xml_schema::flags f)
-      {
-        ::xsd::cxx::xml::auto_initializer i (
-          (f & ::xml_schema::flags::dont_initialize) == 0);
-
-        ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
-          ::namespaces::Sim::DataMap::DefaultValueString (s, m, f));
-        ::xsd::cxx::xml::dom::ostream_format_target t (o);
-        if (!::xsd::cxx::xml::dom::serialize (t, *d, e, h, f))
-        {
-          throw ::xsd::cxx::tree::serialization< char > ();
-        }
-      }
-
-      void
-      DefaultValueString (::std::ostream& o,
-                          const ::xml_schema::string& s,
-                          ::xercesc::DOMErrorHandler& h,
-                          const ::xml_schema::namespace_infomap& m,
-                          const ::std::string& e,
-                          ::xml_schema::flags f)
-      {
-        ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
-          ::namespaces::Sim::DataMap::DefaultValueString (s, m, f));
-        ::xsd::cxx::xml::dom::ostream_format_target t (o);
-        if (!::xsd::cxx::xml::dom::serialize (t, *d, e, h, f))
-        {
-          throw ::xsd::cxx::tree::serialization< char > ();
-        }
-      }
-
-      void
-      DefaultValueString (::xercesc::XMLFormatTarget& t,
-                          const ::xml_schema::string& s,
-                          const ::xml_schema::namespace_infomap& m,
-                          const ::std::string& e,
-                          ::xml_schema::flags f)
-      {
-        ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
-          ::namespaces::Sim::DataMap::DefaultValueString (s, m, f));
-
-        ::xsd::cxx::tree::error_handler< char > h;
-
-        if (!::xsd::cxx::xml::dom::serialize (t, *d, e, h, f))
-        {
-          h.throw_if_failed< ::xsd::cxx::tree::serialization< char > > ();
-        }
-      }
-
-      void
-      DefaultValueString (::xercesc::XMLFormatTarget& t,
-                          const ::xml_schema::string& s,
-                          ::xml_schema::error_handler& h,
-                          const ::xml_schema::namespace_infomap& m,
-                          const ::std::string& e,
-                          ::xml_schema::flags f)
-      {
-        ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
-          ::namespaces::Sim::DataMap::DefaultValueString (s, m, f));
-        if (!::xsd::cxx::xml::dom::serialize (t, *d, e, h, f))
-        {
-          throw ::xsd::cxx::tree::serialization< char > ();
-        }
-      }
-
-      void
-      DefaultValueString (::xercesc::XMLFormatTarget& t,
-                          const ::xml_schema::string& s,
-                          ::xercesc::DOMErrorHandler& h,
-                          const ::xml_schema::namespace_infomap& m,
-                          const ::std::string& e,
-                          ::xml_schema::flags f)
-      {
-        ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
-          ::namespaces::Sim::DataMap::DefaultValueString (s, m, f));
-        if (!::xsd::cxx::xml::dom::serialize (t, *d, e, h, f))
-        {
-          throw ::xsd::cxx::tree::serialization< char > ();
-        }
-      }
-
-      void
-      DefaultValueString (::xercesc::DOMDocument& d,
-                          const ::xml_schema::string& s,
-                          ::xml_schema::flags)
-      {
-        ::xercesc::DOMElement& e (*d.getDocumentElement ());
-        const ::xsd::cxx::xml::qualified_name< char > n (
-          ::xsd::cxx::xml::dom::name< char > (e));
-
-        if (n.name () == "DefaultValueString" &&
+        if (n.name () == "DefaultValue" &&
             n.namespace_ () == "http://www.e3d.rwth-aachen.de/namespaces/Sim/DataMap")
         {
           e << s;
@@ -14397,23 +13981,23 @@ namespace namespaces
           throw ::xsd::cxx::tree::unexpected_element < char > (
             n.name (),
             n.namespace_ (),
-            "DefaultValueString",
+            "DefaultValue",
             "http://www.e3d.rwth-aachen.de/namespaces/Sim/DataMap");
         }
       }
 
       ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument >
-      DefaultValueString (const ::xml_schema::string& s,
-                          const ::xml_schema::namespace_infomap& m,
-                          ::xml_schema::flags f)
+      DefaultValue (const ::xml_schema::string& s,
+                    const ::xml_schema::namespace_infomap& m,
+                    ::xml_schema::flags f)
       {
         ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
           ::xsd::cxx::xml::dom::serialize< char > (
-            "DefaultValueString",
+            "DefaultValue",
             "http://www.e3d.rwth-aachen.de/namespaces/Sim/DataMap",
             m, f));
 
-        ::namespaces::Sim::DataMap::DefaultValueString (*d, s, f);
+        ::namespaces::Sim::DataMap::DefaultValue (*d, s, f);
         return d;
       }
 

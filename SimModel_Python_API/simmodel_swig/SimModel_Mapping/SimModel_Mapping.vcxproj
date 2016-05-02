@@ -79,6 +79,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Filters.h" />
     <ClInclude Include="mapping_rule_lib\ComponentMappingGroup.hxx" />
     <ClInclude Include="mapping_rule_lib\Component_Map_Gap.hxx" />
     <ClInclude Include="mapping_rule_lib\Component_Map_One2Many.hxx" />
@@ -102,6 +103,7 @@
     <ClInclude Include="SimMapping_wrap.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Filters.cpp" />
     <ClCompile Include="mapping_rule_lib\ComponentMappingGroup.cxx" />
     <ClCompile Include="mapping_rule_lib\Component_Map_Gap.cxx" />
     <ClCompile Include="mapping_rule_lib\Component_Map_One2Many.cxx" />
@@ -126,9 +128,9 @@
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="SimMapping.i">
-      <FileType>Document</FileType>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Research\EnEff-BIM\Python\SWIG\swigwin-3.0.7\swig.exe -c++ -python -outdir $(Outdir) %(Identity)</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename)_wrap.cxx;$(Outdir)%(Filename).py</Outputs>
+      <FileType>Document</FileType>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
