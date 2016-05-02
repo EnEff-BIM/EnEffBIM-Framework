@@ -2,6 +2,9 @@
 *.bak-mo
 *.mat
 *.mof
+*.pyd
+*.dll
+*.egg-info
 buildlog.txt
 dsfinal.txt
 dsin.txt
@@ -26,7 +29,7 @@ unitTests.log
 #
 # Ignore some Python files
 __pycache__/
-*.py[cod]
+*.py[co]
 #
 # Ignore Eclipse files
 .settings/

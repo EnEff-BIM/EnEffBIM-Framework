@@ -1,0 +1,24 @@
+[GENERATOR]
+name = libSim_Aix
+version = 1.2
+description = Generates Modelica code for AixLib from EnEFF-BIM data
+author = EnEff-BIM team
+
+[REQUIRES]
+modelicaLibs = [AIXLIB]
+
+[API]
+name = libSimModel
+minVer = 0.0
+maxVer = 9.9
+
+[MAPRULES]
+files = RuleSet01.xml
+
+[PYFILTER]
+module = Filter01
+function = filter01
+
+[TEMPLATES]
+topFile = Main.mot
+type = mako
