@@ -1,10 +1,10 @@
+# Ignore some binary files
+*.dll
+
 # Ignore Dymola output, log and temporary files (in alphabetical order)
 *.bak-mo
 *.mat
 *.mof
-*.pyd
-*.dll
-*.egg-info
 buildlog.txt
 dsfinal.txt
 dsin.txt
@@ -17,25 +17,23 @@ dymosim.exe
 dymosim.exp
 dymosim.lib
 empty.txt
+modelDescription.xml
 request
 stat
 status
 stop
 success
-#
-# Ignore files created by the unit tests.
-simulator.log
-unitTests.log
-#
+
 # Ignore some Python files
 __pycache__/
-*.py[co]
-#
+*.py[cod]
+*.egg-info
+
 # Ignore Eclipse files
 .settings/
 .project
 .pydevproject
-#
+
 # Ignore PyCharm files
 .idea/
 #Ignore Spyder files
