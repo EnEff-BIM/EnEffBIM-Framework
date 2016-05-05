@@ -591,7 +591,6 @@
     <TargetComponentName>boiler</TargetComponentName>
     <TargetLocation>AixLib.HVAC.HeatGeneration.Boiler</TargetLocation>
     <Property_Map_One2One_Name>ID0111</Property_Map_One2One_Name>
-	<Property_Map_Gap_Name>ID0112</Property_Map_Gap_Name>
     <Property_Map_Gap_Name>ID0113</Property_Map_Gap_Name>
     <Property_Map_Transformation_Name>ID0114</Property_Map_Transformation_Name>
   </ComponentMappingGroup>
