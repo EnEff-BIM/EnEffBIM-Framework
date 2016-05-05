@@ -18,8 +18,11 @@ def fetchData(uriList, systemCfg, generatorCfg, logger):
     modulePath = os.path.join(default_path, "EnEffBIM-Framework\\SimModel_Python_API"
                               "\\simmodel_swig\\Release")
     print(modulePath)
+    mapping_file = os.path.join(modulePath,
+                                "mapping_rule\\mapping_rule_xml\\AixLib.xml")
     from mapapi.MapClasses import MapProject
-    prj = MapProject(modulePath+"\\Boiler_Gas_VDI6020_V12.simxml")
+    prj = MapProject(modulePath+"\\Boiler_Gas_VDI6020_V12.simxml",
+                     mapping_file)
       
     dataDictionary=dict(
         MapData = prj

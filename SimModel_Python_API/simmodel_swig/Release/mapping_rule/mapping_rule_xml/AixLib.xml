@@ -621,8 +621,6 @@
     <TargetComponentName>pump</TargetComponentName>
     <TargetLocation>AixLib.HVAC.Pumps.Pump</TargetLocation>
     <Property_Map_One2One_Name>ID0314</Property_Map_One2One_Name>
-    <Property_Map_Gap_Name>ID0315</Property_Map_Gap_Name>
-    <Property_Map_Gap_Name>ID0316</Property_Map_Gap_Name>
 	<Property_Map_Gap_Name>ID0312T</Property_Map_Gap_Name>
 	<Property_Map_Gap_Name>ID0313T</Property_Map_Gap_Name>
     <Property_Map_Transformation_Name>ID0311</Property_Map_Transformation_Name>
@@ -648,8 +646,6 @@
     <Description>map a water type radiator into AixLib</Description>
     <TargetComponentName>radiator</TargetComponentName>
     <TargetLocation>AixLib.HVAC.Radiators.Radiator</TargetLocation>
-	<Property_Map_Gap_Name>ID021</Property_Map_Gap_Name>
-	<Property_Map_Gap_Name>ID0211</Property_Map_Gap_Name>
 	<Property_Map_Gap_Name>ID022</Property_Map_Gap_Name>
 	<Property_Map_Gap_Name>ID0221</Property_Map_Gap_Name>
 	<Property_Map_Gap_Name>ID0222</Property_Map_Gap_Name>
