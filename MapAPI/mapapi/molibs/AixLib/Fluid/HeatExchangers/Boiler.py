@@ -20,16 +20,14 @@ class Boiler(MapHierarchy.MapComponent):
         return True
 
     def mapp_me(self):
+
+        map_sim = self.hierarchy_node.getMappedComponents()
+        self.target_location = map_sim[0].getTargetLocation()
+        prop_list = map_sim[0].getMappedPropertyList()
+        self.arrange_parameters(prop_list)
+        for a in range(map_sim.size()):
+            print(map_sim[a].getTargetLocation())
         self.add_constant_flow(set_temp=320.0)
-        self.Volume = self.add_parameter(name="Volume",
-                                         value=0.0045469)
-        q_value = self.sim_instance.SimFlowPlant_NomCap().getValue()
-        self.Q_flow_max = self.add_parameter(name="Q_flow_max",
-                                             value=q_value)
-        self.m_flow_nominal = self.add_parameter(name="m_flow_nominal",
-                                                 value=0.01)
-        self.T_ref = self.add_parameter(name="T_ref",
-                                        value=20.0)
 
     def add_constant_flow(self, set_temp):
         '''adds a constants flow Temperature for the hot water loop'''

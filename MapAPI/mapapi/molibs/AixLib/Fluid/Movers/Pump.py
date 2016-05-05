@@ -21,14 +21,12 @@ class Pump(MapHierarchy.MapComponent):
         return True
 
     def mapp_me(self):
+        map_sim = self.hierarchy_node.getMappedComponents()
+        self.target_location = map_sim[0].getTargetLocation()
+        prop_list = map_sim[0].getMappedPropertyList()
+        self.arrange_parameters(prop_list)
         self.con_expansion_vessel(0.1)
         self.add_night_set_back()
-        self.ControlStrategy = self.add_parameter(name="ControlStrategy",
-                                                  value=1.0)
-        self.V_flow_max = self.add_parameter(name="V_flow_max",
-                                             value=self.sim_instance.SimFlowMover_RatedFlowRate().getValue())
-        self.Head_max = self.add_parameter(name="Head_max",
-                                           value=self.sim_instance.SimFlowMover_RatedPumpHead().getValue() * 0.0001019716)
 
 
     def con_expansion_vessel(self, v_start):

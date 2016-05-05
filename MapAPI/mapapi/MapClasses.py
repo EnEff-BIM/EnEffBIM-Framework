@@ -116,6 +116,7 @@ class MoObject(object):
             self.sim_ref_id = None
 
         self.parameters = []
+        self.records = []
         self.connectors = []
 
     def add_connector(self,
@@ -579,6 +580,7 @@ class MapComponent(MoObject):
             pass
 
     def fluid_two_port(self):
+        """Adds connection for Modelica Fluid Two port to component"""
 
         child = self.hierarchy_node.getChildList()
         for id in range(child.size()):
@@ -593,6 +595,38 @@ class MapComponent(MoObject):
          dimension=1, hierarchy_node=sim_port_in)
         self.port_b = self.add_connector(name="port_b", type="FluidPort",
          dimension=1, hierarchy_node=sim_port_out)
+
+    def arrange_parameters(self, map_prop_list):
+        """arranges parameters in such a way that it distinguishes between
+        records and parameters"""
+        for a in range(map_prop_list.size()):
+            if map_prop_list[a].getRecordInstance() != "":
+                if len(self.records) == 0:
+                    self.records.append(MapRecord(parent=self,
+                                                  record_location=map_prop_list[a].getRecordLocation(),
+                                                  name=map_prop_list[a].getRecordInstance()))
+                else:
+                    for rec in self.records:
+                        if map_prop_list[a].getRecordInstance() == rec.name:
+                            pass
+                        else:
+                            self.records.append(MapRecord(parent=self,
+                                                          record_location=map_prop_list[a].getRecordLocation(),
+                                                          name=map_prop_list[a].getRecordInstance()))
+
+        for b in range(map_prop_list.size()):
+            if map_prop_list[b].getRecordInstance() != "":
+                for rec in self.records:
+                    if map_prop_list[b].getRecordInstance() == rec.name:
+                        rec.add_parameter(name=map_prop_list[b].getPropertyName(),
+                                          value=map_prop_list[b].getPropertyValue())
+                    else:
+                        print("warning: parameter seems to be aligned with "
+                              "empty record")
+
+            else:
+                self.add_parameter(name=map_prop_list[b].getPropertyName(),
+                                   value=map_prop_list[b].getPropertyValue())
 
 class MapConnection(object):
     """Representation of a mapped connector
