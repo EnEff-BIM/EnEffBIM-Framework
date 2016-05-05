@@ -11,6 +11,8 @@ class Radiator(MapHierarchy.MapComponent):
     """
     
     def init_me(self):
+        test = self.hierarchy_node.getMappedComponents()
+        print(test[0].getTargetLocation())
         self.target_location = "AixLib.Fluid.HeatExchangers.Radiators.Radiator"
         self.fluid_two_port()
         self.convPort = self.add_connector("convPort", "HeatPort")

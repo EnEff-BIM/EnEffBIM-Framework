@@ -19,6 +19,7 @@ except:
 import SimModel_Translator
 from SimModel_Translator import SimTranslator
 import SimModel_Hierachy
+import SimModel_Mapping
 from SimProject_Project_DesignAlternative import SimProject_Project_DesignAlternative
 from SimSite_BuildingSite_Default import SimSite_BuildingSite_Default
 from SimSystem_HvacHotWater_FullSystem import SimSystem_HvacHotWater_FullSystem
@@ -266,7 +267,7 @@ class MapProject(object):
         SImHierarchy object, generic class
     """
 
-    def __init__(self, simxml_file):
+    def __init__(self, simxml_file, mapping_file):
         self.simxml_file = simxml_file
         self.project_name = ""
         self.used_library = ""
@@ -281,6 +282,7 @@ class MapProject(object):
         self.translator = SimTranslator()
         self.sim_hierarchy = self.translator.getSimHierarchy()
         load_sim = self.translator.loadSimModel(simxml_file)
+        self.sim_mapping = self.translator.getSimMappedData(mapping_file)
 
         self.instantiate_buildings()
 
@@ -394,7 +396,6 @@ class MapBuilding(MoObject):
                         for e in range(supply_child.size()):
                             sup_comp = MapComponent(self.project,
                                                    supply_child[e])
-                            sup_comp.convert_me()
                             sup_comp.find_loop_connection()
                             self.hvac_components_sim.append(sup_comp)
                     elif isinstance(bldg_hvac_child[d].getSimModelObject(),
@@ -403,7 +404,6 @@ class MapBuilding(MoObject):
                         for e in range(demand_child.size()):
                             dem_comp = MapComponent(self.project,
                                                     demand_child[e])
-                            dem_comp.convert_me()
                             dem_comp.find_loop_connection()
                             self.hvac_components_sim.append(dem_comp)
 
@@ -415,10 +415,8 @@ class MapBuilding(MoObject):
         function'''
         for a in self.hvac_components_sim:
             a.convert_me()
-            print("after conversion",a)
         for a in self.hvac_components_sim:
             a.mapp_me()
-            print(a)
 
 
 class MapThermalZone(MoObject):
