@@ -599,6 +599,7 @@ class MapComponent(MoObject):
     def arrange_parameters(self, map_prop_list):
         """arranges parameters in such a way that it distinguishes between
         records and parameters"""
+
         for a in range(map_prop_list.size()):
             if map_prop_list[a].getRecordInstance() != "":
                 if len(self.records) == 0:
@@ -615,18 +616,26 @@ class MapComponent(MoObject):
                                                           name=map_prop_list[a].getRecordInstance()))
 
         for b in range(map_prop_list.size()):
-            if map_prop_list[b].getRecordInstance() != "":
-                for rec in self.records:
-                    if map_prop_list[b].getRecordInstance() == rec.name:
-                        rec.add_parameter(name=map_prop_list[b].getPropertyName(),
-                                          value=map_prop_list[b].getPropertyValue())
-                    else:
-                        print("warning: parameter seems to be aligned with "
-                              "empty record")
+            if map_prop_list[b].getValueType() =="String" or map_prop_list[b].getValueType() =="Number":
+                if map_prop_list[b].getRecordInstance() != "":
+                    for rec in self.records:
+                        if map_prop_list[b].getRecordInstance() == rec.name:
+                            rec.add_parameter(name=map_prop_list[b].getPropertyName(),
+                                              value=map_prop_list[b].getPropertyValue())
+                        else:
+                            print("warning: parameter seems to be aligned with "
+                                  "empty record")
 
-            else:
+                else:
+                    self.add_parameter(name=map_prop_list[b].getPropertyName(),
+                                       value=map_prop_list[b].getPropertyValue())
+            elif map_prop_list[b].getValueType() =="Matrix":
+                matrix_data = map_prop_list[b].getPropertyValue()
                 self.add_parameter(name=map_prop_list[b].getPropertyName(),
-                                   value=map_prop_list[b].getPropertyValue())
+                                   value=[])
+                for row in range(matrix_data.size()):
+                    self.parameters[-1].value.append(matrix_data[row])
+
 
 class MapConnection(object):
     """Representation of a mapped connector

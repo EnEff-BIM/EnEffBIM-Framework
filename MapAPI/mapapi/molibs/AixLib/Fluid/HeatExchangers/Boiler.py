@@ -25,8 +25,6 @@ class Boiler(MapHierarchy.MapComponent):
         self.target_location = map_sim[0].getTargetLocation()
         prop_list = map_sim[0].getMappedPropertyList()
         self.arrange_parameters(prop_list)
-        for a in range(map_sim.size()):
-            print(map_sim[a].getTargetLocation())
         self.add_constant_flow(set_temp=320.0)
 
     def add_constant_flow(self, set_temp):

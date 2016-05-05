@@ -23,9 +23,6 @@ class Radiator(MapHierarchy.MapComponent):
         prop_list = map_sim[0].getMappedPropertyList()
         self.arrange_parameters(prop_list)
 
-        for test in self.records[-1].parameters:
-            print(test.name)
-
         #needs to be changed if thermalZone is implemented
         self.connect_zone(self.project.buildings[0].thermal_zones[0])
         self.add_pipe()
