@@ -595,6 +595,8 @@ class MapComponent(MoObject):
          dimension=1, hierarchy_node=sim_port_in)
         self.port_b = self.add_connector(name="port_b", type="FluidPort",
          dimension=1, hierarchy_node=sim_port_out)
+        self.add_parameter(name="m_flow_small",
+                           value=0.01)
 
     def arrange_parameters(self, map_prop_list):
         """arranges parameters in such a way that it distinguishes between

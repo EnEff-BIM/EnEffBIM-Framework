@@ -16,16 +16,16 @@ class Pipe(MapHierarchy.MapComponent):
 
     def init_me(self):
         self.fluid_two_port()
-        self.target_name = "Pipe"+str(random.randint(0,10))
+
         return True
 
     def mapp_me(self):
+        self.target_name = "Pipe"+str(random.randint(0,10))
+        self.target_location = "AixLib.HVAC.Pipes.StaticPipe"
         self.D = self.add_parameter(name="D",
                                     value=0.05)
         self.l = self.add_parameter(name="l",
                                     value=1)
         self.e = self.add_parameter(name="e",
                                     value=0.000025)
-        self.m_flow_small = self.add_parameter(name="m_flow_small",
-                                               value=0.01)
         return True
