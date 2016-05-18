@@ -11,4 +11,4 @@ Mapping data from SimModel to Modelica
 You may report any issues by using the [Issues](https://github.com/EnEff-BIM/EnEffBIM-Framework/issues) button.
 
 ## License
-This repository is licensed under the [MIT license](https://github.com/EnEff-BIM/EnEffBIM-Framework/License.md)
+This repository is licensed under the [MIT license](https://github.com/EnEff-BIM/EnEffBIM-Framework/blob/master/License.md)
