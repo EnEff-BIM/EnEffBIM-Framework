@@ -579,7 +579,7 @@ class MapComponent(MoObject):
         else:
             pass
 
-    def fluid_two_port(self):
+    def fluid_two_port(self, medium="Water"):
         """Adds connection for Modelica Fluid Two port to component"""
 
         child = self.hierarchy_node.getChildList()
@@ -597,6 +597,11 @@ class MapComponent(MoObject):
          dimension=1, hierarchy_node=sim_port_out)
         self.add_parameter(name="m_flow_small",
                            value=0.01)
+        if medium == "Water":
+            self.add_parameter(name="medium",
+                               value="asd")
+        else:
+            pass
 
     def arrange_parameters(self, map_prop_list):
         """arranges parameters in such a way that it distinguishes between

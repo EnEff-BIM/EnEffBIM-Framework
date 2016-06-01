@@ -13,10 +13,8 @@ class Boiler(MapHierarchy.MapComponent):
     """
 
     def init_me(self):
-        self.target_location = "AixLib.Fluid.HeatExchangers.Boiler"
         self.fluid_two_port()
-        self.T_set = self.add_connector(name="T_set", type="Real", \
-                                                            dimension=1)
+
         return True
 
     def mapp_me(self):
@@ -25,6 +23,8 @@ class Boiler(MapHierarchy.MapComponent):
         self.target_location = map_sim[0].getTargetLocation()
         prop_list = map_sim[0].getMappedPropertyList()
         self.arrange_parameters(prop_list)
+        self.T_set = self.add_connector(name="T_set", type="Real", \
+                                                            dimension=1)
         self.add_constant_flow(set_temp=320.0)
 
     def add_constant_flow(self, set_temp):

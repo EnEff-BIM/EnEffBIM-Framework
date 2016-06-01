@@ -14,9 +14,8 @@ class Pump(MapHierarchy.MapComponent):
     """
 
     def init_me(self):
-        self.target_location = "AixLib.Fluid.Movers.Pump"
         self.fluid_two_port()
-        self.IsNight = self.add_connector("IsNight", "Boolean")
+
 
         return True
 
@@ -25,9 +24,9 @@ class Pump(MapHierarchy.MapComponent):
         self.target_location = map_sim[0].getTargetLocation()
         prop_list = map_sim[0].getMappedPropertyList()
         self.arrange_parameters(prop_list)
+        self.IsNight = self.add_connector("IsNight", "Boolean")
         self.con_expansion_vessel(0.1)
         self.add_night_set_back()
-
 
     def con_expansion_vessel(self, v_start):
         from mapapi.molibs.AixLib.Fluid.Storage.ExpansionVessel import \

@@ -13,15 +13,18 @@ class Radiator(MapHierarchy.MapComponent):
     def init_me(self):
 
         self.fluid_two_port()
-        self.convPort = self.add_connector("convPort", "HeatPort")
-        self.radPort = self.add_connector("radPort", "HeatPort")
+
 
 
     def mapp_me(self):
+        self.convPort = self.add_connector("convPort", "HeatPort")
+        self.radPort = self.add_connector("radPort", "HeatPort")
         map_sim = self.hierarchy_node.getMappedComponents()
         self.target_location = map_sim[0].getTargetLocation()
         prop_list = map_sim[0].getMappedPropertyList()
         self.arrange_parameters(prop_list)
+        self.convPort = self.add_connector("convPort", "HeatPort")
+        self.radPort = self.add_connector("radPort", "HeatPort")
 
         #needs to be changed if thermalZone is implemented
         self.connect_zone(self.project.buildings[0].thermal_zones[0])
