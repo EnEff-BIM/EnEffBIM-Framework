@@ -27515,7 +27515,7 @@ namespace schema
 
         void
         SimDistributionPort_HotWaterFlowPort_EvaporativeWaterIn (const SimDistributionPort_HotWaterFlowPort_EvaporativeWaterIn_sequence& s);
-
+		*/
         // SimDistributionPort_HotWaterFlowPort_Water_In
         //
         typedef ::schema::simxml::ResourcesGeneral::SimDistributionPort_HotWaterFlowPort_Water_In SimDistributionPort_HotWaterFlowPort_Water_In_type;
@@ -27532,7 +27532,7 @@ namespace schema
 
         void
         SimDistributionPort_HotWaterFlowPort_Water_In (const SimDistributionPort_HotWaterFlowPort_Water_In_sequence& s);
-
+		/*
         // SimDistributionPort_HotWaterFlowPort_Water_InOrOut
         //
         typedef ::schema::simxml::ResourcesGeneral::SimDistributionPort_HotWaterFlowPort_Water_InOrOut SimDistributionPort_HotWaterFlowPort_Water_InOrOut_type;
@@ -27549,7 +27549,7 @@ namespace schema
 
         void
         SimDistributionPort_HotWaterFlowPort_Water_InOrOut (const SimDistributionPort_HotWaterFlowPort_Water_InOrOut_sequence& s);
-
+		*/
         // SimDistributionPort_HotWaterFlowPort_Water_Out
         //
         typedef ::schema::simxml::ResourcesGeneral::SimDistributionPort_HotWaterFlowPort_Water_Out SimDistributionPort_HotWaterFlowPort_Water_Out_type;
@@ -27566,7 +27566,7 @@ namespace schema
 
         void
         SimDistributionPort_HotWaterFlowPort_Water_Out (const SimDistributionPort_HotWaterFlowPort_Water_Out_sequence& s);
-
+		/*
         // SimDistributionPort_MixedWaterFlowPort_CondensedWaterOut
         //
         typedef ::schema::simxml::ResourcesGeneral::SimDistributionPort_MixedWaterFlowPort_CondensedWaterOut SimDistributionPort_MixedWaterFlowPort_CondensedWaterOut_type;
@@ -29572,7 +29572,7 @@ namespace schema
 
         void
         SimFlowController_ElectricalSwitch_Variable (const SimFlowController_ElectricalSwitch_Variable_sequence& s);
-
+		*/
         // SimFlowController_Valve_Default
         //
         typedef ::schema::simxml::MepModel::SimFlowController_Valve_Default SimFlowController_Valve_Default_type;
@@ -29589,7 +29589,7 @@ namespace schema
 
         void
         SimFlowController_Valve_Default (const SimFlowController_Valve_Default_sequence& s);
-
+		/*
         // SimFlowController_Valve_EMSValve
         //
         typedef ::schema::simxml::MepModel::SimFlowController_Valve_EMSValve SimFlowController_Valve_EMSValve_type;
@@ -29691,7 +29691,7 @@ namespace schema
 
         void
         SimFlowEnergyTransfer_ConvectiveHeater_Radiant_Steam (const SimFlowEnergyTransfer_ConvectiveHeater_Radiant_Steam_sequence& s);
-
+		*/
         // SimFlowEnergyTransfer_ConvectiveHeater_Radiant_Water
         //
         typedef ::schema::simxml::MepModel::SimFlowEnergyTransfer_ConvectiveHeater_Radiant_Water SimFlowEnergyTransfer_ConvectiveHeater_Radiant_Water_type;
@@ -29708,7 +29708,7 @@ namespace schema
 
         void
         SimFlowEnergyTransfer_ConvectiveHeater_Radiant_Water (const SimFlowEnergyTransfer_ConvectiveHeater_Radiant_Water_sequence& s);
-		*/
+		/**/
         // SimFlowEnergyTransfer_ConvectiveHeater_Water
         //
         typedef ::schema::simxml::MepModel::SimFlowEnergyTransfer_ConvectiveHeater_Water SimFlowEnergyTransfer_ConvectiveHeater_Water_type;
@@ -31255,7 +31255,7 @@ namespace schema
 
         void
         SimFlowEnergyTransferStorage_HotWaterTank_HeatPump (const SimFlowEnergyTransferStorage_HotWaterTank_HeatPump_sequence& s);
-
+		*/
         // SimFlowEnergyTransferStorage_HotWaterTank_Mixed
         //
         typedef ::schema::simxml::MepModel::SimFlowEnergyTransferStorage_HotWaterTank_Mixed SimFlowEnergyTransferStorage_HotWaterTank_Mixed_type;
@@ -31272,7 +31272,7 @@ namespace schema
 
         void
         SimFlowEnergyTransferStorage_HotWaterTank_Mixed (const SimFlowEnergyTransferStorage_HotWaterTank_Mixed_sequence& s);
-
+		/*
         // SimFlowEnergyTransferStorage_HotWaterTank_MixedTank
         //
         typedef ::schema::simxml::MepModel::SimFlowEnergyTransferStorage_HotWaterTank_MixedTank SimFlowEnergyTransferStorage_HotWaterTank_MixedTank_type;
@@ -31323,7 +31323,7 @@ namespace schema
 
         void
         SimFlowEnergyTransferStorage_HotWaterTank_StratifiedTank (const SimFlowEnergyTransferStorage_HotWaterTank_StratifiedTank_sequence& s);
-
+		*/
         // SimFlowFitting_Default_Default
         //
         typedef ::schema::simxml::MepModel::SimFlowFitting_Default_Default SimFlowFitting_Default_Default_type;
@@ -31340,7 +31340,7 @@ namespace schema
 
         void
         SimFlowFitting_Default_Default (const SimFlowFitting_Default_Default_sequence& s);
-
+		/*
         // SimFlowFitting_Difusser_Default
         //
         typedef ::schema::simxml::MepModel::SimFlowFitting_Difusser_Default SimFlowFitting_Difusser_Default_type;
@@ -33380,7 +33380,7 @@ namespace schema
 
         void
         SimFlowSegment_Pipe_Adiabatic_Steam (const SimFlowSegment_Pipe_Adiabatic_Steam_sequence& s);
-
+		*/
         // SimFlowSegment_Pipe_Indoor
         //
         typedef ::schema::simxml::MepModel::SimFlowSegment_Pipe_Indoor SimFlowSegment_Pipe_Indoor_type;
@@ -33397,7 +33397,7 @@ namespace schema
 
         void
         SimFlowSegment_Pipe_Indoor (const SimFlowSegment_Pipe_Indoor_sequence& s);
-
+		/*
         // SimFlowSegment_Pipe_Outdoor
         //
         typedef ::schema::simxml::MepModel::SimFlowSegment_Pipe_Outdoor SimFlowSegment_Pipe_Outdoor_type;

@@ -163,6 +163,55 @@ SwigPyIterator_swigregister(SwigPyIterator)
 
 import SimModel
 import base
+
+import SimModel_PyCallBack
+__cb_init__ = SimModel_PyCallBack.CallBack()
+
+class SimModelBase(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, SimModelBase, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, SimModelBase, name)
+    __repr__ = _swig_repr
+
+    def present(self):
+        return _SimModel_Hierachy.SimModelBase_present(self)
+
+    def getValue(self):
+        return _SimModel_Hierachy.SimModelBase_getValue(self)
+
+    def __init__(self):
+        this = _SimModel_Hierachy.new_SimModelBase()
+        try:
+            self.this.append(this)
+        except:
+            self.this = this
+    __swig_destroy__ = _SimModel_Hierachy.delete_SimModelBase
+    __del__ = lambda self: None
+SimModelBase_swigregister = _SimModel_Hierachy.SimModelBase_swigregister
+SimModelBase_swigregister(SimModelBase)
+
+class SimMaterialLayer2_10(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, SimMaterialLayer2_10, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, SimMaterialLayer2_10, name)
+    __repr__ = _swig_repr
+
+    def SimModelName(self):
+        return _SimModel_Hierachy.SimMaterialLayer2_10_SimModelName(self)
+
+    def __init__(self):
+        this = _SimModel_Hierachy.new_SimMaterialLayer2_10()
+        try:
+            self.this.append(this)
+        except:
+            self.this = this
+    __swig_destroy__ = _SimModel_Hierachy.delete_SimMaterialLayer2_10
+    __del__ = lambda self: None
+SimMaterialLayer2_10_swigregister = _SimModel_Hierachy.SimMaterialLayer2_10_swigregister
+SimMaterialLayer2_10_swigregister(SimMaterialLayer2_10)
+
 class SimHierarchyNodeBase(_object):
     __swig_setmethods__ = {}
     __setattr__ = lambda self, name, value: _swig_setattr(self, SimHierarchyNodeBase, name, value)
@@ -225,6 +274,9 @@ class SimHierarchyNodeBase(_object):
     def dataType_SimMaterialLayerSet_GlazingLayerSet_Window(self):
         return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimMaterialLayerSet_GlazingLayerSet_Window(self)
 
+    def dataType_SimMaterialLayer2_10(self):
+        return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimMaterialLayer2_10(self)
+
     def dataType_SimFeatureElementSubtraction_Void_Opening(self):
         return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimFeatureElementSubtraction_Void_Opening(self)
 
@@ -237,8 +289,17 @@ class SimHierarchyNodeBase(_object):
     def dataType_SimMaterial_OpaqueMaterial_Default(self):
         return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimMaterial_OpaqueMaterial_Default(self)
 
+    def dataType_SimMaterial_OpaqueMaterial_AirGap(self):
+        return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimMaterial_OpaqueMaterial_AirGap(self)
+
+    def dataType_SimMaterial_GlazingMaterial_Gas(self):
+        return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimMaterial_GlazingMaterial_Gas(self)
+
     def dataType_SimMaterial_GlazingMaterial_SimpleGlazingSystem(self):
         return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimMaterial_GlazingMaterial_SimpleGlazingSystem(self)
+
+    def dataType_SimMaterial_GlazingMaterial_Glazing(self):
+        return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimMaterial_GlazingMaterial_Glazing(self)
 
     def dataType_SimSlab_Default_Default(self):
         return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimSlab_Default_Default(self)
@@ -267,8 +328,17 @@ class SimHierarchyNodeBase(_object):
     def dataType_SimFlowEnergyTransfer_ConvectiveHeater_Water(self):
         return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimFlowEnergyTransfer_ConvectiveHeater_Water(self)
 
+    def dataType_SimFlowEnergyTransfer_ConvectiveHeater_Radiant_Water(self):
+        return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimFlowEnergyTransfer_ConvectiveHeater_Radiant_Water(self)
+
+    def dataType_SimFlowEnergyTransferStorage_HotWaterTank_Mixed(self):
+        return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimFlowEnergyTransferStorage_HotWaterTank_Mixed(self)
+
     def dataType_SimFlowFitting_Mixer_DemandProxyMixerWater(self):
         return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimFlowFitting_Mixer_DemandProxyMixerWater(self)
+
+    def dataType_SimFlowFitting_Default_Default(self):
+        return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimFlowFitting_Default_Default(self)
 
     def dataType_SimFlowFitting_Splitter_DemandProxySplitterWater(self):
         return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimFlowFitting_Splitter_DemandProxySplitterWater(self)
@@ -276,11 +346,17 @@ class SimHierarchyNodeBase(_object):
     def dataType_SimSystem_HvacHotWater_Supply(self):
         return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimSystem_HvacHotWater_Supply(self)
 
+    def dataType_SimFlowController_Valve_Default(self):
+        return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimFlowController_Valve_Default(self)
+
     def dataType_SimFlowMover_Pump_VariableSpeedReturn(self):
         return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimFlowMover_Pump_VariableSpeedReturn(self)
 
     def dataType_SimFlowPlant_Boiler_BoilerHotWater(self):
         return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimFlowPlant_Boiler_BoilerHotWater(self)
+
+    def dataType_SimFlowSegment_Pipe_Indoor(self):
+        return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimFlowSegment_Pipe_Indoor(self)
 
     def dataType_SimBuildingStory_BuildingStory_Default(self):
         return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimBuildingStory_BuildingStory_Default(self)
@@ -296,6 +372,12 @@ class SimHierarchyNodeBase(_object):
 
     def dataType_SimNode_DigitalControl_HWLoop_DigitalSignal_In(self):
         return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimNode_DigitalControl_HWLoop_DigitalSignal_In(self)
+
+    def dataType_SimDistributionPort_HotWaterFlowPort_Water_Out(self):
+        return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimDistributionPort_HotWaterFlowPort_Water_Out(self)
+
+    def dataType_SimDistributionPort_HotWaterFlowPort_Water_In(self):
+        return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimDistributionPort_HotWaterFlowPort_Water_In(self)
 
     def __init__(self):
         this = _SimModel_Hierachy.new_SimHierarchyNodeBase()
@@ -395,6 +477,9 @@ class SimHierarchy(_object):
 
     def ClassType(self, *args):
         return _SimModel_Hierachy.SimHierarchy_ClassType(self, *args)
+
+    def setCallBack(self, callback):
+        return _SimModel_Hierachy.SimHierarchy_setCallBack(self, callback)
     __swig_destroy__ = _SimModel_Hierachy.delete_SimHierarchy
     __del__ = lambda self: None
 SimHierarchy_swigregister = _SimModel_Hierachy.SimHierarchy_swigregister
@@ -405,6 +490,15 @@ def getSimModelObject(self):
         return getattr(self, "dataType_"+self.ClassType())()
 
 SimHierarchyNode.getSimModelObject = getSimModelObject
+
+
+def __re_init__(self):
+        self.__orig_init__()
+        self.setCallBack(__cb_init__)
+
+SimHierarchy.__orig_init__ = SimHierarchy.__init__
+SimHierarchy.__init__ = __re_init__
+del __re_init__
 
 class SimHierarchyNodeList(_object):
     __swig_setmethods__ = {}

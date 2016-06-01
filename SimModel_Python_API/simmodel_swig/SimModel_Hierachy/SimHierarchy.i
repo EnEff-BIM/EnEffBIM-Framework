@@ -10,8 +10,16 @@
 
 %import  "..\SimModel\SimModel.i"
 
+%feature("nodirector") SimHierarchy;
+
 %ignore SimHierarchyNode::addMappedComponent(MappedComponent& _mapObj);
 %ignore SimHierarchy::parser(::std::auto_ptr< ::schema::simxml::Model::SimModel >& SimModel_Data);
+%ignore SimHierarchy::parser(::std::auto_ptr< ::schema::simxml::Model::SimModel >& simGeometryData, ::std::auto_ptr< ::schema::simxml::Model::SimModel >& simSysData, std::string _geoName, std::string _sysName);
+
+%pythoncode %{
+import SimModel_PyCallBack
+__cb_init__ = SimModel_PyCallBack.CallBack()
+%}
 
 /* Let's just grab the original header file here */
 %include ".\framework\SimHierarchy.h"
@@ -21,6 +29,16 @@ def getSimModelObject(self):
         return getattr(self, "dataType_"+self.ClassType())()
 
 SimHierarchyNode.getSimModelObject = getSimModelObject
+%}
+
+%pythoncode %{
+def __re_init__(self):
+        self.__orig_init__()
+        self.setCallBack(__cb_init__)
+
+SimHierarchy.__orig_init__ = SimHierarchy.__init__
+SimHierarchy.__init__ = __re_init__
+del __re_init__
 %}
 
 %template(SimHierarchyNodeList) std::vector<SimHierarchyNode>;
@@ -46,13 +64,18 @@ SimHierarchyNode.getSimModelObject = getSimModelObject
 %template(dataType_SimMaterialLayerSet_OpaqueLayerSet_Floor) SimHierarchyNodeBase::dataType<SimMaterialLayerSet_OpaqueLayerSet_Floor>;
 %template(dataType_SimMaterialLayerSet_OpaqueLayerSet_Wall) SimHierarchyNodeBase::dataType<SimMaterialLayerSet_OpaqueLayerSet_Wall>;
 %template(dataType_SimMaterialLayerSet_GlazingLayerSet_Window) SimHierarchyNodeBase::dataType<SimMaterialLayerSet_GlazingLayerSet_Window>;
+%template(dataType_SimMaterialLayer2_10) SimHierarchyNodeBase::dataType<SimMaterialLayer2_10>;
+
 %template(dataType_SimFeatureElementSubtraction_Void_Opening) SimHierarchyNodeBase::dataType<SimFeatureElementSubtraction_Void_Opening>;
+
 %template(dataType_SimMaterialLayer_OpaqueMaterialLayer_Default) SimHierarchyNodeBase::dataType<SimMaterialLayer_OpaqueMaterialLayer_Default>;
 %template(dataType_SimMaterialLayer_GlazingMaterialLayer_Default) SimHierarchyNodeBase::dataType<SimMaterialLayer_GlazingMaterialLayer_Default>;
 
 %template(dataType_SimMaterial_OpaqueMaterial_Default) SimHierarchyNodeBase::dataType<SimMaterial_OpaqueMaterial_Default>;
-
+%template(dataType_SimMaterial_OpaqueMaterial_AirGap) SimHierarchyNodeBase::dataType<SimMaterial_OpaqueMaterial_AirGap>;
+%template(dataType_SimMaterial_GlazingMaterial_Gas) SimHierarchyNodeBase::dataType<SimMaterial_GlazingMaterial_Gas>;
 %template(dataType_SimMaterial_GlazingMaterial_SimpleGlazingSystem) SimHierarchyNodeBase::dataType<SimMaterial_GlazingMaterial_SimpleGlazingSystem>;
+%template(dataType_SimMaterial_GlazingMaterial_Glazing) SimHierarchyNodeBase::dataType<SimMaterial_GlazingMaterial_Glazing>;
 
 %template(dataType_SimSlab_Default_Default) SimHierarchyNodeBase::dataType<SimSlab_Default_Default>;
 %template(dataType_SimWall_Wall_Default) SimHierarchyNodeBase::dataType<SimWall_Wall_Default>;
@@ -63,14 +86,21 @@ SimHierarchyNode.getSimModelObject = getSimModelObject
 %template(dataType_SimSensor_TemperatureSensor_DryBulb) SimHierarchyNodeBase::dataType<SimSensor_TemperatureSensor_DryBulb>;
 %template(dataType_SimSystem_HvacHotWater_Demand) SimHierarchyNodeBase::dataType<SimSystem_HvacHotWater_Demand>;
 %template(dataType_SimFlowEnergyTransfer_ConvectiveHeater_Water) SimHierarchyNodeBase::dataType<SimFlowEnergyTransfer_ConvectiveHeater_Water>;
+%template(dataType_SimFlowEnergyTransfer_ConvectiveHeater_Radiant_Water) SimHierarchyNodeBase::dataType<SimFlowEnergyTransfer_ConvectiveHeater_Radiant_Water>;
+%template(dataType_SimFlowEnergyTransferStorage_HotWaterTank_Mixed) SimHierarchyNodeBase::dataType<SimFlowEnergyTransferStorage_HotWaterTank_Mixed>;
 %template(dataType_SimFlowFitting_Mixer_DemandProxyMixerWater) SimHierarchyNodeBase::dataType<SimFlowFitting_Mixer_DemandProxyMixerWater>;
+%template(dataType_SimFlowFitting_Default_Default) SimHierarchyNodeBase::dataType<SimFlowFitting_Default_Default>;
 %template(dataType_SimFlowFitting_Splitter_DemandProxySplitterWater) SimHierarchyNodeBase::dataType<SimFlowFitting_Splitter_DemandProxySplitterWater>;
 %template(dataType_SimSystem_HvacHotWater_Supply) SimHierarchyNodeBase::dataType<SimSystem_HvacHotWater_Supply>;
+%template(dataType_SimFlowController_Valve_Default) SimHierarchyNodeBase::dataType<SimFlowController_Valve_Default>;
 %template(dataType_SimFlowMover_Pump_VariableSpeedReturn) SimHierarchyNodeBase::dataType<SimFlowMover_Pump_VariableSpeedReturn>;
 %template(dataType_SimFlowPlant_Boiler_BoilerHotWater) SimHierarchyNodeBase::dataType<SimFlowPlant_Boiler_BoilerHotWater>;
+%template(dataType_SimFlowSegment_Pipe_Indoor) SimHierarchyNodeBase::dataType<SimFlowSegment_Pipe_Indoor>;
 %template(dataType_SimBuildingStory_BuildingStory_Default) SimHierarchyNodeBase::dataType<SimBuildingStory_BuildingStory_Default>;
 
 %template(dataType_SimConnection_HotWaterFlow_Default) SimHierarchyNodeBase::dataType<SimConnection_HotWaterFlow_Default>;
 %template(dataType_SimNode_HotWaterFlowPort_Water_Out) SimHierarchyNodeBase::dataType<SimNode_HotWaterFlowPort_Water_Out>;
 %template(dataType_SimNode_HotWaterFlowPort_Water_In) SimHierarchyNodeBase::dataType<SimNode_HotWaterFlowPort_Water_In>;
 %template(dataType_SimNode_DigitalControl_HWLoop_DigitalSignal_In) SimHierarchyNodeBase::dataType<SimNode_DigitalControl_HWLoop_DigitalSignal_In>;
+%template(dataType_SimDistributionPort_HotWaterFlowPort_Water_Out) SimHierarchyNodeBase::dataType<SimDistributionPort_HotWaterFlowPort_Water_Out>;
+%template(dataType_SimDistributionPort_HotWaterFlowPort_Water_In) SimHierarchyNodeBase::dataType<SimDistributionPort_HotWaterFlowPort_Water_In>;

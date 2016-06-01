@@ -164,6 +164,9 @@ SwigPyIterator_swigregister(SwigPyIterator)
 import SimModel_Hierachy
 import SimModel
 import base
+
+__sim__hierarchy__ = SimModel_Hierachy.SimHierarchy()
+
 class SimTranslator(_object):
     __swig_setmethods__ = {}
     __setattr__ = lambda self, name, value: _swig_setattr(self, SimTranslator, name, value)
@@ -171,25 +174,37 @@ class SimTranslator(_object):
     __getattr__ = lambda self, name: _swig_getattr(self, SimTranslator, name)
     __repr__ = _swig_repr
 
-    def loadSimModel(self, _name):
-        return _SimModel_Translator.SimTranslator_loadSimModel(self, _name)
-
-    def getSimHierarchy(self):
-        return _SimModel_Translator.SimTranslator_getSimHierarchy(self)
-
-    def getSimMappedData(self, _name):
-        return _SimModel_Translator.SimTranslator_getSimMappedData(self, _name)
-
     def __init__(self):
         this = _SimModel_Translator.new_SimTranslator()
         try:
             self.this.append(this)
         except:
             self.this = this
+
+    def setTranslator(self, _simHierarchyObj):
+        return _SimModel_Translator.SimTranslator_setTranslator(self, _simHierarchyObj)
+
+    def loadSimModel(self, *args):
+        return _SimModel_Translator.SimTranslator_loadSimModel(self, *args)
+
+    def getSimHierarchy(self):
+        return _SimModel_Translator.SimTranslator_getSimHierarchy(self)
+
+    def getSimMappedData(self, _name):
+        return _SimModel_Translator.SimTranslator_getSimMappedData(self, _name)
     __swig_destroy__ = _SimModel_Translator.delete_SimTranslator
     __del__ = lambda self: None
 SimTranslator_swigregister = _SimModel_Translator.SimTranslator_swigregister
 SimTranslator_swigregister(SimTranslator)
+
+
+def __re_init__(self):
+        self.__orig_init__()
+        self.setTranslator(__sim__hierarchy__)
+
+SimTranslator.__orig_init__ = SimTranslator.__init__
+SimTranslator.__init__ = __re_init__
+del __re_init__
 
 # This file is compatible with both classic and new-style classes.
 

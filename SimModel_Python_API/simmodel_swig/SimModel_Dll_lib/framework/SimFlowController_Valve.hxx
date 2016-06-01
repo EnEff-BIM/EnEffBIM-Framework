@@ -257,7 +257,7 @@ namespace schema
   {
     namespace MepModel
     {
-      class SimFlowController_Valve: public ::schema::simxml::MepModel::SimFlowController
+      class __declspec(dllexport) SimFlowController_Valve: public ::schema::simxml::MepModel::SimFlowController
       {
         public:
         // Constructors.

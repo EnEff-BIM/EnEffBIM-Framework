@@ -4190,28 +4190,29 @@ namespace Swig {
 #define SWIGTYPE_p_xsd__cxx__tree__optionalT_bool_true_t swig_types[775]
 #define SWIGTYPE_p_xsd__cxx__tree__optionalT_double_true_t swig_types[776]
 #define SWIGTYPE_p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__doubleList_xsd__cxx__tree__fundamental_pT_schema__simxml__SimModelCore__doubleList_t__r_t swig_types[777]
-#define SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_t__r_t swig_types[778]
-#define SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_t__r_t swig_types[779]
-#define SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_t__r_t swig_types[780]
-#define SWIGTYPE_p_xsd__cxx__tree__parsingT_char_t swig_types[781]
-#define SWIGTYPE_p_xsd__cxx__tree__propertiesT_char_t swig_types[782]
-#define SWIGTYPE_p_xsd__cxx__tree__qnameT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__uri_xsd__cxx__tree__ncname_t swig_types[783]
-#define SWIGTYPE_p_xsd__cxx__tree__sequenceT_schema__simxml__BuildingModel__SimWall_Wall_Default_false_t swig_types[784]
-#define SWIGTYPE_p_xsd__cxx__tree__sequenceT_schema__simxml__BuildingModel__SimWall_Wall_ExteriorAboveGrade_false_t swig_types[785]
-#define SWIGTYPE_p_xsd__cxx__tree__sequence_common swig_types[786]
-#define SWIGTYPE_p_xsd__cxx__tree__severity swig_types[787]
-#define SWIGTYPE_p_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t swig_types[788]
-#define SWIGTYPE_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t swig_types[789]
-#define SWIGTYPE_p_xsd__cxx__tree__timeT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[790]
-#define SWIGTYPE_p_xsd__cxx__tree__time_zone swig_types[791]
-#define SWIGTYPE_p_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_string_t swig_types[792]
-#define SWIGTYPE_p_xsd__cxx__tree__unexpected_elementT_char_t swig_types[793]
-#define SWIGTYPE_p_xsd__cxx__tree__unexpected_enumeratorT_char_t swig_types[794]
-#define SWIGTYPE_p_xsd__cxx__tree__uriT_char_xsd__cxx__tree__simple_type_t swig_types[795]
-#define SWIGTYPE_p_xsd__cxx__tree__user_data_keys_templateT_0_t swig_types[796]
-#define SWIGTYPE_p_xsd__cxx__xml__error_handlerT_char_t swig_types[797]
-static swig_type_info *swig_types[799];
-static swig_module_info swig_module = {swig_types, 798, 0, 0, 0, 0};
+#define SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t swig_types[778]
+#define SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_t__r_t swig_types[779]
+#define SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_t__r_t swig_types[780]
+#define SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_t__r_t swig_types[781]
+#define SWIGTYPE_p_xsd__cxx__tree__parsingT_char_t swig_types[782]
+#define SWIGTYPE_p_xsd__cxx__tree__propertiesT_char_t swig_types[783]
+#define SWIGTYPE_p_xsd__cxx__tree__qnameT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__uri_xsd__cxx__tree__ncname_t swig_types[784]
+#define SWIGTYPE_p_xsd__cxx__tree__sequenceT_schema__simxml__BuildingModel__SimWall_Wall_Default_false_t swig_types[785]
+#define SWIGTYPE_p_xsd__cxx__tree__sequenceT_schema__simxml__BuildingModel__SimWall_Wall_ExteriorAboveGrade_false_t swig_types[786]
+#define SWIGTYPE_p_xsd__cxx__tree__sequence_common swig_types[787]
+#define SWIGTYPE_p_xsd__cxx__tree__severity swig_types[788]
+#define SWIGTYPE_p_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t swig_types[789]
+#define SWIGTYPE_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t swig_types[790]
+#define SWIGTYPE_p_xsd__cxx__tree__timeT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[791]
+#define SWIGTYPE_p_xsd__cxx__tree__time_zone swig_types[792]
+#define SWIGTYPE_p_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_string_t swig_types[793]
+#define SWIGTYPE_p_xsd__cxx__tree__unexpected_elementT_char_t swig_types[794]
+#define SWIGTYPE_p_xsd__cxx__tree__unexpected_enumeratorT_char_t swig_types[795]
+#define SWIGTYPE_p_xsd__cxx__tree__uriT_char_xsd__cxx__tree__simple_type_t swig_types[796]
+#define SWIGTYPE_p_xsd__cxx__tree__user_data_keys_templateT_0_t swig_types[797]
+#define SWIGTYPE_p_xsd__cxx__xml__error_handlerT_char_t swig_types[798]
+static swig_type_info *swig_types[800];
+static swig_module_info swig_module = {swig_types, 799, 0, 0, 0, 0};
 #define SWIG_TypeQuery(name) SWIG_TypeQueryModule(&swig_module, &swig_module, name)
 #define SWIG_MangledTypeQuery(name) SWIG_MangledTypeQueryModule(&swig_module, &swig_module, name)
 
@@ -7632,7 +7633,7 @@ SWIGINTERN PyObject *_wrap_SimWall_Wall_ExteriorAboveGrade_MaterialLayerSet__SWI
   }
   arg1 = reinterpret_cast< schema::simxml::BuildingModel::SimWall_Wall_ExteriorAboveGrade * >(argp1);
   result = (schema::simxml::BuildingModel::SimWall_Wall_ExteriorAboveGrade::MaterialLayerSet_optional *) &((schema::simxml::BuildingModel::SimWall_Wall_ExteriorAboveGrade const *)arg1)->MaterialLayerSet();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -7654,7 +7655,7 @@ SWIGINTERN PyObject *_wrap_SimWall_Wall_ExteriorAboveGrade_MaterialLayerSet__SWI
   }
   arg1 = reinterpret_cast< schema::simxml::BuildingModel::SimWall_Wall_ExteriorAboveGrade * >(argp1);
   result = (schema::simxml::BuildingModel::SimWall_Wall_ExteriorAboveGrade::MaterialLayerSet_optional *) &(arg1)->MaterialLayerSet();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -7711,7 +7712,7 @@ SWIGINTERN PyObject *_wrap_SimWall_Wall_ExteriorAboveGrade_MaterialLayerSet__SWI
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimWall_Wall_ExteriorAboveGrade_MaterialLayerSet" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimWall_Wall_ExteriorAboveGrade *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::BuildingModel::SimWall_Wall_ExteriorAboveGrade * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_t__r_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimWall_Wall_ExteriorAboveGrade_MaterialLayerSet" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimWall_Wall_ExteriorAboveGrade::MaterialLayerSet_optional const &""'"); 
   }
@@ -7814,7 +7815,7 @@ SWIGINTERN PyObject *_wrap_SimWall_Wall_ExteriorAboveGrade_MaterialLayerSet(PyOb
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__BuildingModel__SimWall_Wall_ExteriorAboveGrade, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_t__r_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimWall_Wall_ExteriorAboveGrade_MaterialLayerSet__SWIG_3(self, args);
@@ -15834,7 +15835,8 @@ static swig_type_info _swigt__p_xsd__cxx__tree__not_derivedT_char_t = {"_p_xsd__
 static swig_type_info _swigt__p_xsd__cxx__tree__optionalT_bool_true_t = {"_p_xsd__cxx__tree__optionalT_bool_true_t", "xsd::cxx::tree::optional< bool,true > *|xsd::cxx::tree::optional< bool,xsd::cxx::tree::fundamental_p< bool >::r > *|schema::simxml::BuildingModel::SimWall_Wall_ExteriorAboveGrade::WallIsExternal_optional *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__optionalT_double_true_t = {"_p_xsd__cxx__tree__optionalT_double_true_t", "xsd::cxx::tree::optional< double,true > *|xsd::cxx::tree::optional< double,xsd::cxx::tree::fundamental_p< double >::r > *|schema::simxml::BuildingModel::SimWall_Wall_ExteriorAboveGrade::WallNetVolume_optional *|schema::simxml::BuildingModel::SimWall_Wall_ExteriorAboveGrade::WallGrossVolume_optional *|schema::simxml::BuildingModel::SimWall_Wall_ExteriorAboveGrade::WallNetSideArea_optional *|schema::simxml::BuildingModel::SimWall_Wall_ExteriorAboveGrade::WallGrossSideArea_optional *|schema::simxml::BuildingModel::SimWall_Wall_ExteriorAboveGrade::WallThickness_optional *|schema::simxml::BuildingModel::SimWall_Wall_ExteriorAboveGrade::CompositeThermalTrans_optional *|schema::simxml::BuildingModel::SimWall_Wall_ExteriorAboveGrade::WallHeight_optional *|schema::simxml::BuildingModel::SimWall_Wall_ExteriorAboveGrade::WallLength_optional *|schema::simxml::BuildingModel::SimWall_Wall_ExteriorAboveGrade::SimWall_ViewFactToGnd_optional *|schema::simxml::BuildingModel::SimWall_Wall_ExteriorAboveGrade::SimWall_NumbVerts_optional *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__doubleList_xsd__cxx__tree__fundamental_pT_schema__simxml__SimModelCore__doubleList_t__r_t = {"_p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__doubleList_xsd__cxx__tree__fundamental_pT_schema__simxml__SimModelCore__doubleList_t__r_t", "xsd::cxx::tree::optional< ::schema::simxml::SimModelCore::doubleList,xsd::cxx::tree::fundamental_p< ::schema::simxml::SimModelCore::doubleList >::r > *|schema::simxml::BuildingModel::SimWall_Wall_ExteriorAboveGrade::SimWall_Vertex_1_120_X_Coord_optional *|schema::simxml::BuildingModel::SimWall_Wall_ExteriorAboveGrade::SimWall_Vertex_1_120_Y_Coord_optional *|schema::simxml::BuildingModel::SimWall_Wall_ExteriorAboveGrade::SimWall_Vertex_1_120_Z_Coord_optional *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_t__r_t = {"_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_t__r_t", "xsd::cxx::tree::optional< xsd::cxx::tree::idref< char,xsd::cxx::tree::ncname,xsd::cxx::tree::_type >,xsd::cxx::tree::fundamental_p< xsd::cxx::tree::idref< char,xsd::cxx::tree::ncname,xsd::cxx::tree::_type > >::r > *|schema::simxml::BuildingModel::SimWall_Wall_ExteriorAboveGrade::MaterialLayerSet_optional *|schema::simxml::BuildingModel::SimWall_Wall_ExteriorAboveGrade::ClassRef_UniFormat_optional *|schema::simxml::BuildingModel::SimWall_Wall_ExteriorAboveGrade::PhotoVotaicArrayOnElement_optional *|schema::simxml::BuildingModel::SimWall_Wall_ExteriorAboveGrade::Representation_optional *|schema::simxml::BuildingModel::SimWall_Wall_ExteriorAboveGrade::SimWall_ConstructionName_optional *|schema::simxml::BuildingModel::SimWall_Wall_ExteriorAboveGrade::SimWall_ZoneName_optional *|schema::simxml::BuildingModel::SimWall_Wall_ExteriorAboveGrade::SimWall_OutsdBndCondObject_optional *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t = {"_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t", "xsd::cxx::tree::optional< xsd::cxx::tree::idref< char,xsd::cxx::tree::ncname,xsd::cxx::tree::_type >,false > *|schema::simxml::BuildingModel::SimWall_Wall_ExteriorAboveGrade::MaterialLayerSet_optional *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_t__r_t = {"_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_t__r_t", "xsd::cxx::tree::optional< xsd::cxx::tree::idref< char,xsd::cxx::tree::ncname,xsd::cxx::tree::_type >,xsd::cxx::tree::fundamental_p< xsd::cxx::tree::idref< char,xsd::cxx::tree::ncname,xsd::cxx::tree::_type > >::r > *|schema::simxml::BuildingModel::SimWall_Wall_ExteriorAboveGrade::SimWall_ConstructionName_optional *|schema::simxml::BuildingModel::SimWall_Wall_ExteriorAboveGrade::ClassRef_UniFormat_optional *|schema::simxml::BuildingModel::SimWall_Wall_ExteriorAboveGrade::PhotoVotaicArrayOnElement_optional *|schema::simxml::BuildingModel::SimWall_Wall_ExteriorAboveGrade::Representation_optional *|schema::simxml::BuildingModel::SimWall_Wall_ExteriorAboveGrade::SimWall_ZoneName_optional *|schema::simxml::BuildingModel::SimWall_Wall_ExteriorAboveGrade::SimWall_OutsdBndCondObject_optional *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_t__r_t = {"_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_t__r_t", "xsd::cxx::tree::optional< ::xsd::cxx::tree::idrefs< char,xsd::cxx::tree::simple_type,xsd::cxx::tree::idref >,xsd::cxx::tree::fundamental_p< ::xsd::cxx::tree::idrefs< char,xsd::cxx::tree::simple_type,xsd::cxx::tree::idref > >::r > *|schema::simxml::BuildingModel::SimWall_Wall_ExteriorAboveGrade::ContainedBldgElementArrays_optional *|schema::simxml::BuildingModel::SimWall_Wall_ExteriorAboveGrade::ConnectedSlabs_optional *|schema::simxml::BuildingModel::SimWall_Wall_ExteriorAboveGrade::ConnectedWalls_optional *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_t__r_t = {"_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_t__r_t", "xsd::cxx::tree::optional< ::xsd::cxx::tree::string< char,xsd::cxx::tree::simple_type >,xsd::cxx::tree::fundamental_p< ::xsd::cxx::tree::string< char,xsd::cxx::tree::simple_type > >::r > *|schema::simxml::BuildingModel::SimWall_Wall_ExteriorAboveGrade::SurfProp_HeatTransAlg_MultSurf_Name_optional *|schema::simxml::BuildingModel::SimWall_Wall_ExteriorAboveGrade::SimWall_WindExposure_optional *|schema::simxml::BuildingModel::SimWall_Wall_ExteriorAboveGrade::SimWall_SunExposure_optional *|schema::simxml::BuildingModel::SimWall_Wall_ExteriorAboveGrade::SimWall_OutsdBndCond_optional *|schema::simxml::BuildingModel::SimWall_Wall_ExteriorAboveGrade::SimWall_SurfType_optional *|schema::simxml::BuildingModel::SimWall_Wall_ExteriorAboveGrade::Name_optional *|schema::simxml::BuildingModel::SimWall_Wall_ExteriorAboveGrade::ConstructionType_optional *|schema::simxml::BuildingModel::SimWall_Wall_ExteriorAboveGrade::SimWall_Name_optional *|schema::simxml::BuildingModel::SimWall_Wall_ExteriorAboveGrade::SurfProp_HeatTransAlg_MultSurf_SurfType_optional *|schema::simxml::BuildingModel::SimWall_Wall_ExteriorAboveGrade::SurfProp_HeatTransAlg_MultSurf_Algorithm_optional *|schema::simxml::BuildingModel::SimWall_Wall_ExteriorAboveGrade::T24ConstructStatus3_optional *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__parsingT_char_t = {"_p_xsd__cxx__tree__parsingT_char_t", "xml_schema::parsing *|::xsd::cxx::tree::parsing< char > *", 0, 0, (void*)0, 0};
@@ -16634,6 +16636,7 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_xsd__cxx__tree__optionalT_bool_true_t,
   &_swigt__p_xsd__cxx__tree__optionalT_double_true_t,
   &_swigt__p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__doubleList_xsd__cxx__tree__fundamental_pT_schema__simxml__SimModelCore__doubleList_t__r_t,
+  &_swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t,
   &_swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_t__r_t,
   &_swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_t__r_t,
   &_swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_t__r_t,
@@ -17434,6 +17437,7 @@ static swig_cast_info _swigc__p_xsd__cxx__tree__not_derivedT_char_t[] = {  {&_sw
 static swig_cast_info _swigc__p_xsd__cxx__tree__optionalT_bool_true_t[] = {  {&_swigt__p_xsd__cxx__tree__optionalT_bool_true_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__optionalT_double_true_t[] = {  {&_swigt__p_xsd__cxx__tree__optionalT_double_true_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__doubleList_xsd__cxx__tree__fundamental_pT_schema__simxml__SimModelCore__doubleList_t__r_t[] = {  {&_swigt__p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__doubleList_xsd__cxx__tree__fundamental_pT_schema__simxml__SimModelCore__doubleList_t__r_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t[] = {  {&_swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_t__r_t[] = {  {&_swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_t__r_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_t__r_t[] = {  {&_swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_t__r_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_t__r_t[] = {  {&_swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_t__r_t, 0, 0, 0},{0, 0, 0, 0}};
@@ -18234,6 +18238,7 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_xsd__cxx__tree__optionalT_bool_true_t,
   _swigc__p_xsd__cxx__tree__optionalT_double_true_t,
   _swigc__p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__doubleList_xsd__cxx__tree__fundamental_pT_schema__simxml__SimModelCore__doubleList_t__r_t,
+  _swigc__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t,
   _swigc__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_t__r_t,
   _swigc__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_t__r_t,
   _swigc__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_t__r_t,

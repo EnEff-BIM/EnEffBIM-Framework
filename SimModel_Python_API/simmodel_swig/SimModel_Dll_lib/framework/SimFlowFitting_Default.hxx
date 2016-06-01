@@ -257,7 +257,7 @@ namespace schema
   {
     namespace MepModel
     {
-      class SimFlowFitting_Default: public ::schema::simxml::MepModel::SimFlowFitting
+      class __declspec(dllexport) SimFlowFitting_Default: public ::schema::simxml::MepModel::SimFlowFitting
       {
         public:
         // Constructors.

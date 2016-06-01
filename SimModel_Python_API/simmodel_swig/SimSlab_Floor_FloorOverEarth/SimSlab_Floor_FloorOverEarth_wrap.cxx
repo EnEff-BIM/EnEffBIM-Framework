@@ -4221,28 +4221,29 @@ namespace Swig {
 #define SWIGTYPE_p_xsd__cxx__tree__optionalT_bool_true_t swig_types[806]
 #define SWIGTYPE_p_xsd__cxx__tree__optionalT_double_true_t swig_types[807]
 #define SWIGTYPE_p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__doubleList_xsd__cxx__tree__fundamental_pT_schema__simxml__SimModelCore__doubleList_t__r_t swig_types[808]
-#define SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_t__r_t swig_types[809]
-#define SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_t__r_t swig_types[810]
-#define SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_t__r_t swig_types[811]
-#define SWIGTYPE_p_xsd__cxx__tree__parsingT_char_t swig_types[812]
-#define SWIGTYPE_p_xsd__cxx__tree__propertiesT_char_t swig_types[813]
-#define SWIGTYPE_p_xsd__cxx__tree__qnameT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__uri_xsd__cxx__tree__ncname_t swig_types[814]
-#define SWIGTYPE_p_xsd__cxx__tree__sequenceT_schema__simxml__BuildingModel__SimSlab_Default_Default_false_t swig_types[815]
-#define SWIGTYPE_p_xsd__cxx__tree__sequenceT_schema__simxml__BuildingModel__SimSlab_Floor_FloorOverEarth_false_t swig_types[816]
-#define SWIGTYPE_p_xsd__cxx__tree__sequence_common swig_types[817]
-#define SWIGTYPE_p_xsd__cxx__tree__severity swig_types[818]
-#define SWIGTYPE_p_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t swig_types[819]
-#define SWIGTYPE_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t swig_types[820]
-#define SWIGTYPE_p_xsd__cxx__tree__timeT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[821]
-#define SWIGTYPE_p_xsd__cxx__tree__time_zone swig_types[822]
-#define SWIGTYPE_p_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_string_t swig_types[823]
-#define SWIGTYPE_p_xsd__cxx__tree__unexpected_elementT_char_t swig_types[824]
-#define SWIGTYPE_p_xsd__cxx__tree__unexpected_enumeratorT_char_t swig_types[825]
-#define SWIGTYPE_p_xsd__cxx__tree__uriT_char_xsd__cxx__tree__simple_type_t swig_types[826]
-#define SWIGTYPE_p_xsd__cxx__tree__user_data_keys_templateT_0_t swig_types[827]
-#define SWIGTYPE_p_xsd__cxx__xml__error_handlerT_char_t swig_types[828]
-static swig_type_info *swig_types[830];
-static swig_module_info swig_module = {swig_types, 829, 0, 0, 0, 0};
+#define SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t swig_types[809]
+#define SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_t__r_t swig_types[810]
+#define SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_t__r_t swig_types[811]
+#define SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_t__r_t swig_types[812]
+#define SWIGTYPE_p_xsd__cxx__tree__parsingT_char_t swig_types[813]
+#define SWIGTYPE_p_xsd__cxx__tree__propertiesT_char_t swig_types[814]
+#define SWIGTYPE_p_xsd__cxx__tree__qnameT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__uri_xsd__cxx__tree__ncname_t swig_types[815]
+#define SWIGTYPE_p_xsd__cxx__tree__sequenceT_schema__simxml__BuildingModel__SimSlab_Default_Default_false_t swig_types[816]
+#define SWIGTYPE_p_xsd__cxx__tree__sequenceT_schema__simxml__BuildingModel__SimSlab_Floor_FloorOverEarth_false_t swig_types[817]
+#define SWIGTYPE_p_xsd__cxx__tree__sequence_common swig_types[818]
+#define SWIGTYPE_p_xsd__cxx__tree__severity swig_types[819]
+#define SWIGTYPE_p_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t swig_types[820]
+#define SWIGTYPE_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t swig_types[821]
+#define SWIGTYPE_p_xsd__cxx__tree__timeT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[822]
+#define SWIGTYPE_p_xsd__cxx__tree__time_zone swig_types[823]
+#define SWIGTYPE_p_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_string_t swig_types[824]
+#define SWIGTYPE_p_xsd__cxx__tree__unexpected_elementT_char_t swig_types[825]
+#define SWIGTYPE_p_xsd__cxx__tree__unexpected_enumeratorT_char_t swig_types[826]
+#define SWIGTYPE_p_xsd__cxx__tree__uriT_char_xsd__cxx__tree__simple_type_t swig_types[827]
+#define SWIGTYPE_p_xsd__cxx__tree__user_data_keys_templateT_0_t swig_types[828]
+#define SWIGTYPE_p_xsd__cxx__xml__error_handlerT_char_t swig_types[829]
+static swig_type_info *swig_types[831];
+static swig_module_info swig_module = {swig_types, 830, 0, 0, 0, 0};
 #define SWIG_TypeQuery(name) SWIG_TypeQueryModule(&swig_module, &swig_module, name)
 #define SWIG_MangledTypeQuery(name) SWIG_MangledTypeQueryModule(&swig_module, &swig_module, name)
 
@@ -7484,7 +7485,7 @@ SWIGINTERN PyObject *_wrap_SimSlab_Floor_MaterialLayerSet__SWIG_0(PyObject *SWIG
   }
   arg1 = reinterpret_cast< schema::simxml::BuildingModel::SimSlab_Floor * >(argp1);
   result = (schema::simxml::BuildingModel::SimSlab_Floor::MaterialLayerSet_optional *) &((schema::simxml::BuildingModel::SimSlab_Floor const *)arg1)->MaterialLayerSet();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -7506,7 +7507,7 @@ SWIGINTERN PyObject *_wrap_SimSlab_Floor_MaterialLayerSet__SWIG_1(PyObject *SWIG
   }
   arg1 = reinterpret_cast< schema::simxml::BuildingModel::SimSlab_Floor * >(argp1);
   result = (schema::simxml::BuildingModel::SimSlab_Floor::MaterialLayerSet_optional *) &(arg1)->MaterialLayerSet();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -7563,7 +7564,7 @@ SWIGINTERN PyObject *_wrap_SimSlab_Floor_MaterialLayerSet__SWIG_3(PyObject *SWIG
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimSlab_Floor_MaterialLayerSet" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimSlab_Floor *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::BuildingModel::SimSlab_Floor * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_t__r_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimSlab_Floor_MaterialLayerSet" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimSlab_Floor::MaterialLayerSet_optional const &""'"); 
   }
@@ -7666,7 +7667,7 @@ SWIGINTERN PyObject *_wrap_SimSlab_Floor_MaterialLayerSet(PyObject *self, PyObje
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__BuildingModel__SimSlab_Floor, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_t__r_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimSlab_Floor_MaterialLayerSet__SWIG_3(self, args);
@@ -18509,7 +18510,8 @@ static swig_type_info _swigt__p_xsd__cxx__tree__not_derivedT_char_t = {"_p_xsd__
 static swig_type_info _swigt__p_xsd__cxx__tree__optionalT_bool_true_t = {"_p_xsd__cxx__tree__optionalT_bool_true_t", "xsd::cxx::tree::optional< bool,true > *|xsd::cxx::tree::optional< bool,xsd::cxx::tree::fundamental_p< bool >::r > *|schema::simxml::BuildingModel::SimSlab_Floor::SlabIsExternal_optional *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__optionalT_double_true_t = {"_p_xsd__cxx__tree__optionalT_double_true_t", "schema::simxml::BuildingModel::SimSlab_Floor::SlabGrossArea_optional *|schema::simxml::BuildingModel::SimSlab_Floor::SlabPerimeter_optional *|schema::simxml::BuildingModel::SimSlab_Floor::SlabThickness_optional *|schema::simxml::BuildingModel::SimSlab_Floor::SlabNetArea_optional *|schema::simxml::BuildingModel::SimSlab_Floor::SlabGrossVolume_optional *|schema::simxml::BuildingModel::SimSlab_Floor::SlabNetVolume_optional *|xsd::cxx::tree::optional< double,xsd::cxx::tree::fundamental_p< double >::r > *|schema::simxml::BuildingModel::SimSlab_Floor_FloorOverEarth::SimSlab_StartXCoord_optional *|schema::simxml::BuildingModel::SimSlab_Floor_FloorOverEarth::SimSlab_TiltAng_optional *|schema::simxml::BuildingModel::SimSlab_Floor_FloorOverEarth::SimSlab_AzimuthAng_optional *|schema::simxml::BuildingModel::SimSlab_Floor_FloorOverEarth::SimSlab_ViewFactToGnd_optional *|schema::simxml::BuildingModel::SimSlab_Floor_FloorOverEarth::SimSlab_NumbVerts_optional *|schema::simxml::BuildingModel::SimSlab_Floor_FloorOverEarth::SimSlab_StartYCoord_optional *|schema::simxml::BuildingModel::SimSlab_Floor_FloorOverEarth::SimSlab_StartZCoord_optional *|schema::simxml::BuildingModel::SimSlab_Floor_FloorOverEarth::SimSlab_Length_optional *|schema::simxml::BuildingModel::SimSlab_Floor_FloorOverEarth::SimSlab_Width_optional *|xsd::cxx::tree::optional< double,true > *|schema::simxml::BuildingModel::SimSlab_Floor::CompositeThermalTrans_optional *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__doubleList_xsd__cxx__tree__fundamental_pT_schema__simxml__SimModelCore__doubleList_t__r_t = {"_p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__doubleList_xsd__cxx__tree__fundamental_pT_schema__simxml__SimModelCore__doubleList_t__r_t", "xsd::cxx::tree::optional< ::schema::simxml::SimModelCore::doubleList,xsd::cxx::tree::fundamental_p< ::schema::simxml::SimModelCore::doubleList >::r > *|schema::simxml::BuildingModel::SimSlab_Floor_FloorOverEarth::SimSlab_Vertex_1_120_X_Coord_optional *|schema::simxml::BuildingModel::SimSlab_Floor_FloorOverEarth::SimSlab_Vertex_1_120_Y_Coord_optional *|schema::simxml::BuildingModel::SimSlab_Floor_FloorOverEarth::SimSlab_Vertex_1_120_Z_Coord_optional *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_t__r_t = {"_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_t__r_t", "schema::simxml::BuildingModel::SimSlab_Floor::ClassRef_UniFormat_optional *|xsd::cxx::tree::optional< xsd::cxx::tree::idref< char,xsd::cxx::tree::ncname,xsd::cxx::tree::_type >,xsd::cxx::tree::fundamental_p< xsd::cxx::tree::idref< char,xsd::cxx::tree::ncname,xsd::cxx::tree::_type > >::r > *|schema::simxml::BuildingModel::SimSlab_Floor::MaterialLayerSet_optional *|schema::simxml::BuildingModel::SimSlab_Floor::ContainingStair_optional *|schema::simxml::BuildingModel::SimSlab_Floor::ContainingRamp_optional *|schema::simxml::BuildingModel::SimSlab_Floor::Representation_optional *|schema::simxml::BuildingModel::SimSlab_Floor_FloorOverEarth::SimSlab_OutsdBndCondObject_optional *|schema::simxml::BuildingModel::SimSlab_Floor::SimSlab_ZoneName_optional *|schema::simxml::BuildingModel::SimSlab_Floor::SimSlab_ConstructionName_optional *|schema::simxml::BuildingModel::SimSlab_Floor::PhotoVotaicArrayOnElement_optional *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t = {"_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t", "xsd::cxx::tree::optional< xsd::cxx::tree::idref< char,xsd::cxx::tree::ncname,xsd::cxx::tree::_type >,false > *|schema::simxml::BuildingModel::SimSlab_Floor::MaterialLayerSet_optional *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_t__r_t = {"_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_t__r_t", "schema::simxml::BuildingModel::SimSlab_Floor::ClassRef_UniFormat_optional *|xsd::cxx::tree::optional< xsd::cxx::tree::idref< char,xsd::cxx::tree::ncname,xsd::cxx::tree::_type >,xsd::cxx::tree::fundamental_p< xsd::cxx::tree::idref< char,xsd::cxx::tree::ncname,xsd::cxx::tree::_type > >::r > *|schema::simxml::BuildingModel::SimSlab_Floor::ContainingRamp_optional *|schema::simxml::BuildingModel::SimSlab_Floor::ContainingStair_optional *|schema::simxml::BuildingModel::SimSlab_Floor::Representation_optional *|schema::simxml::BuildingModel::SimSlab_Floor_FloorOverEarth::SimSlab_OutsdBndCondObject_optional *|schema::simxml::BuildingModel::SimSlab_Floor::SimSlab_ConstructionName_optional *|schema::simxml::BuildingModel::SimSlab_Floor::SimSlab_ZoneName_optional *|schema::simxml::BuildingModel::SimSlab_Floor::PhotoVotaicArrayOnElement_optional *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_t__r_t = {"_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_t__r_t", "schema::simxml::BuildingModel::SimSlab_Floor::ConnectedBeams_optional *|schema::simxml::BuildingModel::SimSlab_Floor::ConnectedWalls_optional *|schema::simxml::BuildingModel::SimSlab_Floor::ConnectedSlabs_optional *|schema::simxml::BuildingModel::SimSlab_Floor::ConnectedColumns_optional *|xsd::cxx::tree::optional< ::xsd::cxx::tree::idrefs< char,xsd::cxx::tree::simple_type,xsd::cxx::tree::idref >,xsd::cxx::tree::fundamental_p< ::xsd::cxx::tree::idrefs< char,xsd::cxx::tree::simple_type,xsd::cxx::tree::idref > >::r > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_t__r_t = {"_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_t__r_t", "schema::simxml::BuildingModel::SimSlab_Floor::Name_optional *|schema::simxml::BuildingModel::SimSlab_Floor::ConstructionType_optional *|xsd::cxx::tree::optional< ::xsd::cxx::tree::string< char,xsd::cxx::tree::simple_type >,xsd::cxx::tree::fundamental_p< ::xsd::cxx::tree::string< char,xsd::cxx::tree::simple_type > >::r > *|schema::simxml::BuildingModel::SimSlab_Floor_FloorOverEarth::SurfProp_HeatTransAlg_MultSurf_Name_optional *|schema::simxml::BuildingModel::SimSlab_Floor_FloorOverEarth::SimSlab_WindExposure_optional *|schema::simxml::BuildingModel::SimSlab_Floor_FloorOverEarth::SimSlab_SunExposure_optional *|schema::simxml::BuildingModel::SimSlab_Floor_FloorOverEarth::SimSlab_OutsdBndCond_optional *|schema::simxml::BuildingModel::SimSlab_Floor_FloorOverEarth::SimSlab_SurfType_optional *|schema::simxml::BuildingModel::SimSlab_Floor::PredefinedSlabType_optional *|schema::simxml::BuildingModel::SimSlab_Floor::SimSlab_Name_optional *|schema::simxml::BuildingModel::SimSlab_Floor_FloorOverEarth::SurfProp_HeatTransAlg_MultSurf_SurfType_optional *|schema::simxml::BuildingModel::SimSlab_Floor_FloorOverEarth::SurfProp_HeatTransAlg_MultSurf_Algorithm_optional *|schema::simxml::BuildingModel::SimSlab_Floor_FloorOverEarth::T24ConstructStatus3_optional *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__parsingT_char_t = {"_p_xsd__cxx__tree__parsingT_char_t", "xml_schema::parsing *|::xsd::cxx::tree::parsing< char > *", 0, 0, (void*)0, 0};
@@ -19340,6 +19342,7 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_xsd__cxx__tree__optionalT_bool_true_t,
   &_swigt__p_xsd__cxx__tree__optionalT_double_true_t,
   &_swigt__p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__doubleList_xsd__cxx__tree__fundamental_pT_schema__simxml__SimModelCore__doubleList_t__r_t,
+  &_swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t,
   &_swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_t__r_t,
   &_swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_t__r_t,
   &_swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_t__r_t,
@@ -20171,6 +20174,7 @@ static swig_cast_info _swigc__p_xsd__cxx__tree__not_derivedT_char_t[] = {  {&_sw
 static swig_cast_info _swigc__p_xsd__cxx__tree__optionalT_bool_true_t[] = {  {&_swigt__p_xsd__cxx__tree__optionalT_bool_true_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__optionalT_double_true_t[] = {  {&_swigt__p_xsd__cxx__tree__optionalT_double_true_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__doubleList_xsd__cxx__tree__fundamental_pT_schema__simxml__SimModelCore__doubleList_t__r_t[] = {  {&_swigt__p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__doubleList_xsd__cxx__tree__fundamental_pT_schema__simxml__SimModelCore__doubleList_t__r_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t[] = {  {&_swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_t__r_t[] = {  {&_swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_t__r_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_t__r_t[] = {  {&_swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_t__r_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_t__r_t[] = {  {&_swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_t__r_t, 0, 0, 0},{0, 0, 0, 0}};
@@ -21002,6 +21006,7 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_xsd__cxx__tree__optionalT_bool_true_t,
   _swigc__p_xsd__cxx__tree__optionalT_double_true_t,
   _swigc__p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__doubleList_xsd__cxx__tree__fundamental_pT_schema__simxml__SimModelCore__doubleList_t__r_t,
+  _swigc__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t,
   _swigc__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_t__r_t,
   _swigc__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_t__r_t,
   _swigc__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_t__r_t,

@@ -4252,28 +4252,29 @@ namespace Swig {
 #define SWIGTYPE_p_xsd__cxx__tree__optionalT_double_true_t swig_types[837]
 #define SWIGTYPE_p_xsd__cxx__tree__optionalT_int_true_t swig_types[838]
 #define SWIGTYPE_p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__doubleList_xsd__cxx__tree__fundamental_pT_schema__simxml__SimModelCore__doubleList_t__r_t swig_types[839]
-#define SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_t__r_t swig_types[840]
-#define SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_t__r_t swig_types[841]
-#define SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_t__r_t swig_types[842]
-#define SWIGTYPE_p_xsd__cxx__tree__parsingT_char_t swig_types[843]
-#define SWIGTYPE_p_xsd__cxx__tree__propertiesT_char_t swig_types[844]
-#define SWIGTYPE_p_xsd__cxx__tree__qnameT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__uri_xsd__cxx__tree__ncname_t swig_types[845]
-#define SWIGTYPE_p_xsd__cxx__tree__sequenceT_schema__simxml__BuildingModel__SimSlab_Default_Default_false_t swig_types[846]
-#define SWIGTYPE_p_xsd__cxx__tree__sequenceT_schema__simxml__BuildingModel__SimSlab_RoofSlab_RoofUnderAir_false_t swig_types[847]
-#define SWIGTYPE_p_xsd__cxx__tree__sequence_common swig_types[848]
-#define SWIGTYPE_p_xsd__cxx__tree__severity swig_types[849]
-#define SWIGTYPE_p_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t swig_types[850]
-#define SWIGTYPE_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t swig_types[851]
-#define SWIGTYPE_p_xsd__cxx__tree__timeT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[852]
-#define SWIGTYPE_p_xsd__cxx__tree__time_zone swig_types[853]
-#define SWIGTYPE_p_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_string_t swig_types[854]
-#define SWIGTYPE_p_xsd__cxx__tree__unexpected_elementT_char_t swig_types[855]
-#define SWIGTYPE_p_xsd__cxx__tree__unexpected_enumeratorT_char_t swig_types[856]
-#define SWIGTYPE_p_xsd__cxx__tree__uriT_char_xsd__cxx__tree__simple_type_t swig_types[857]
-#define SWIGTYPE_p_xsd__cxx__tree__user_data_keys_templateT_0_t swig_types[858]
-#define SWIGTYPE_p_xsd__cxx__xml__error_handlerT_char_t swig_types[859]
-static swig_type_info *swig_types[861];
-static swig_module_info swig_module = {swig_types, 860, 0, 0, 0, 0};
+#define SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t swig_types[840]
+#define SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_t__r_t swig_types[841]
+#define SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_t__r_t swig_types[842]
+#define SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_t__r_t swig_types[843]
+#define SWIGTYPE_p_xsd__cxx__tree__parsingT_char_t swig_types[844]
+#define SWIGTYPE_p_xsd__cxx__tree__propertiesT_char_t swig_types[845]
+#define SWIGTYPE_p_xsd__cxx__tree__qnameT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__uri_xsd__cxx__tree__ncname_t swig_types[846]
+#define SWIGTYPE_p_xsd__cxx__tree__sequenceT_schema__simxml__BuildingModel__SimSlab_Default_Default_false_t swig_types[847]
+#define SWIGTYPE_p_xsd__cxx__tree__sequenceT_schema__simxml__BuildingModel__SimSlab_RoofSlab_RoofUnderAir_false_t swig_types[848]
+#define SWIGTYPE_p_xsd__cxx__tree__sequence_common swig_types[849]
+#define SWIGTYPE_p_xsd__cxx__tree__severity swig_types[850]
+#define SWIGTYPE_p_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t swig_types[851]
+#define SWIGTYPE_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t swig_types[852]
+#define SWIGTYPE_p_xsd__cxx__tree__timeT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[853]
+#define SWIGTYPE_p_xsd__cxx__tree__time_zone swig_types[854]
+#define SWIGTYPE_p_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_string_t swig_types[855]
+#define SWIGTYPE_p_xsd__cxx__tree__unexpected_elementT_char_t swig_types[856]
+#define SWIGTYPE_p_xsd__cxx__tree__unexpected_enumeratorT_char_t swig_types[857]
+#define SWIGTYPE_p_xsd__cxx__tree__uriT_char_xsd__cxx__tree__simple_type_t swig_types[858]
+#define SWIGTYPE_p_xsd__cxx__tree__user_data_keys_templateT_0_t swig_types[859]
+#define SWIGTYPE_p_xsd__cxx__xml__error_handlerT_char_t swig_types[860]
+static swig_type_info *swig_types[862];
+static swig_module_info swig_module = {swig_types, 861, 0, 0, 0, 0};
 #define SWIG_TypeQuery(name) SWIG_TypeQueryModule(&swig_module, &swig_module, name)
 #define SWIG_MangledTypeQuery(name) SWIG_MangledTypeQueryModule(&swig_module, &swig_module, name)
 
@@ -7515,7 +7516,7 @@ SWIGINTERN PyObject *_wrap_SimSlab_RoofSlab_MaterialLayerSet__SWIG_0(PyObject *S
   }
   arg1 = reinterpret_cast< schema::simxml::BuildingModel::SimSlab_RoofSlab * >(argp1);
   result = (schema::simxml::BuildingModel::SimSlab_RoofSlab::MaterialLayerSet_optional *) &((schema::simxml::BuildingModel::SimSlab_RoofSlab const *)arg1)->MaterialLayerSet();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -7537,7 +7538,7 @@ SWIGINTERN PyObject *_wrap_SimSlab_RoofSlab_MaterialLayerSet__SWIG_1(PyObject *S
   }
   arg1 = reinterpret_cast< schema::simxml::BuildingModel::SimSlab_RoofSlab * >(argp1);
   result = (schema::simxml::BuildingModel::SimSlab_RoofSlab::MaterialLayerSet_optional *) &(arg1)->MaterialLayerSet();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -7594,7 +7595,7 @@ SWIGINTERN PyObject *_wrap_SimSlab_RoofSlab_MaterialLayerSet__SWIG_3(PyObject *S
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimSlab_RoofSlab_MaterialLayerSet" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimSlab_RoofSlab *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::BuildingModel::SimSlab_RoofSlab * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_t__r_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimSlab_RoofSlab_MaterialLayerSet" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimSlab_RoofSlab::MaterialLayerSet_optional const &""'"); 
   }
@@ -7697,7 +7698,7 @@ SWIGINTERN PyObject *_wrap_SimSlab_RoofSlab_MaterialLayerSet(PyObject *self, PyO
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__BuildingModel__SimSlab_RoofSlab, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_t__r_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimSlab_RoofSlab_MaterialLayerSet__SWIG_3(self, args);
@@ -20422,7 +20423,8 @@ static swig_type_info _swigt__p_xsd__cxx__tree__optionalT_bool_true_t = {"_p_xsd
 static swig_type_info _swigt__p_xsd__cxx__tree__optionalT_double_true_t = {"_p_xsd__cxx__tree__optionalT_double_true_t", "xsd::cxx::tree::optional< double,xsd::cxx::tree::fundamental_p< double >::r > *|schema::simxml::BuildingModel::SimSlab_RoofSlab::SlabGrossArea_optional *|schema::simxml::BuildingModel::SimSlab_RoofSlab::SlabPerimeter_optional *|schema::simxml::BuildingModel::SimSlab_RoofSlab::SlabThickness_optional *|schema::simxml::BuildingModel::SimSlab_RoofSlab::SlabNetArea_optional *|schema::simxml::BuildingModel::SimSlab_RoofSlab::SlabGrossVolume_optional *|schema::simxml::BuildingModel::SimSlab_RoofSlab::SlabNetVolume_optional *|schema::simxml::BuildingModel::SimSlab_RoofSlab::SimSlab_ViewFactToGnd_optional *|schema::simxml::BuildingModel::SimSlab_RoofSlab::SimSlab_NumbVerts_optional *|schema::simxml::BuildingModel::SimSlab_RoofSlab::CompositeThermalTrans_optional *|xsd::cxx::tree::optional< double,true > *|schema::simxml::BuildingModel::SimSlab_RoofSlab_RoofUnderAir::T24RoofAgedSolarReflectance_optional *|schema::simxml::BuildingModel::SimSlab_RoofSlab_RoofUnderAir::T24CRRCInitialReflectance_optional *|schema::simxml::BuildingModel::SimSlab_RoofSlab_RoofUnderAir::T24CRRCInitialEmittance_optional *|schema::simxml::BuildingModel::SimSlab_RoofSlab_RoofUnderAir::SimSlab_AzimuthAng_optional *|schema::simxml::BuildingModel::SimSlab_RoofSlab_RoofUnderAir::SimSlab_TiltAng_optional *|schema::simxml::BuildingModel::SimSlab_RoofSlab_RoofUnderAir::SimSlab_StartXCoord_optional *|schema::simxml::BuildingModel::SimSlab_RoofSlab_RoofUnderAir::SimSlab_StartYCoord_optional *|schema::simxml::BuildingModel::SimSlab_RoofSlab_RoofUnderAir::SimSlab_StartZCoord_optional *|schema::simxml::BuildingModel::SimSlab_RoofSlab_RoofUnderAir::SimSlab_Length_optional *|schema::simxml::BuildingModel::SimSlab_RoofSlab_RoofUnderAir::SimSlab_Width_optional *|schema::simxml::BuildingModel::SimSlab_RoofSlab_RoofUnderAir::T24CRRCAgedEmittance_optional *|schema::simxml::BuildingModel::SimSlab_RoofSlab_RoofUnderAir::T24CRRCAgedReflectance_optional *|schema::simxml::BuildingModel::SimSlab_RoofSlab_RoofUnderAir::T24RoofAgedThermalEmittance_optional *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__optionalT_int_true_t = {"_p_xsd__cxx__tree__optionalT_int_true_t", "xsd::cxx::tree::optional< int,true > *|xsd::cxx::tree::optional< int,xsd::cxx::tree::fundamental_p< int >::r > *|schema::simxml::BuildingModel::SimSlab_RoofSlab_RoofUnderAir::T24CRRCAgedSRI_optional *|schema::simxml::BuildingModel::SimSlab_RoofSlab_RoofUnderAir::T24CRRCInitialSRI_optional *|schema::simxml::BuildingModel::SimSlab_RoofSlab_RoofUnderAir::T24FieldAppliedCoating_optional *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__doubleList_xsd__cxx__tree__fundamental_pT_schema__simxml__SimModelCore__doubleList_t__r_t = {"_p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__doubleList_xsd__cxx__tree__fundamental_pT_schema__simxml__SimModelCore__doubleList_t__r_t", "xsd::cxx::tree::optional< ::schema::simxml::SimModelCore::doubleList,xsd::cxx::tree::fundamental_p< ::schema::simxml::SimModelCore::doubleList >::r > *|schema::simxml::BuildingModel::SimSlab_RoofSlab_RoofUnderAir::SimSlab_Vertex_1_120_X_Coord_optional *|schema::simxml::BuildingModel::SimSlab_RoofSlab_RoofUnderAir::SimSlab_Vertex_1_120_Y_Coord_optional *|schema::simxml::BuildingModel::SimSlab_RoofSlab_RoofUnderAir::SimSlab_Vertex_1_120_Z_Coord_optional *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_t__r_t = {"_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_t__r_t", "schema::simxml::BuildingModel::SimSlab_RoofSlab::PhotoVotaicArrayOnElement_optional *|xsd::cxx::tree::optional< xsd::cxx::tree::idref< char,xsd::cxx::tree::ncname,xsd::cxx::tree::_type >,xsd::cxx::tree::fundamental_p< xsd::cxx::tree::idref< char,xsd::cxx::tree::ncname,xsd::cxx::tree::_type > >::r > *|schema::simxml::BuildingModel::SimSlab_RoofSlab::ContainingStair_optional *|schema::simxml::BuildingModel::SimSlab_RoofSlab::ContainingRamp_optional *|schema::simxml::BuildingModel::SimSlab_RoofSlab::ClassRef_UniFormat_optional *|schema::simxml::BuildingModel::SimSlab_RoofSlab::Representation_optional *|schema::simxml::BuildingModel::SimSlab_RoofSlab::SimSlab_OutsdBndCondObject_optional *|schema::simxml::BuildingModel::SimSlab_RoofSlab::SimSlab_ZoneName_optional *|schema::simxml::BuildingModel::SimSlab_RoofSlab::SimSlab_ConstructionName_optional *|schema::simxml::BuildingModel::SimSlab_RoofSlab::MaterialLayerSet_optional *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t = {"_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t", "xsd::cxx::tree::optional< xsd::cxx::tree::idref< char,xsd::cxx::tree::ncname,xsd::cxx::tree::_type >,false > *|schema::simxml::BuildingModel::SimSlab_RoofSlab::MaterialLayerSet_optional *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_t__r_t = {"_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_t__r_t", "schema::simxml::BuildingModel::SimSlab_RoofSlab::PhotoVotaicArrayOnElement_optional *|xsd::cxx::tree::optional< xsd::cxx::tree::idref< char,xsd::cxx::tree::ncname,xsd::cxx::tree::_type >,xsd::cxx::tree::fundamental_p< xsd::cxx::tree::idref< char,xsd::cxx::tree::ncname,xsd::cxx::tree::_type > >::r > *|schema::simxml::BuildingModel::SimSlab_RoofSlab::ContainingRamp_optional *|schema::simxml::BuildingModel::SimSlab_RoofSlab::ClassRef_UniFormat_optional *|schema::simxml::BuildingModel::SimSlab_RoofSlab::ContainingStair_optional *|schema::simxml::BuildingModel::SimSlab_RoofSlab::Representation_optional *|schema::simxml::BuildingModel::SimSlab_RoofSlab::SimSlab_ConstructionName_optional *|schema::simxml::BuildingModel::SimSlab_RoofSlab::SimSlab_ZoneName_optional *|schema::simxml::BuildingModel::SimSlab_RoofSlab::SimSlab_OutsdBndCondObject_optional *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_t__r_t = {"_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_t__r_t", "schema::simxml::BuildingModel::SimSlab_RoofSlab::ConnectedColumns_optional *|schema::simxml::BuildingModel::SimSlab_RoofSlab::ConnectedBeams_optional *|schema::simxml::BuildingModel::SimSlab_RoofSlab::ConnectedWalls_optional *|schema::simxml::BuildingModel::SimSlab_RoofSlab::ConnectedSlabs_optional *|xsd::cxx::tree::optional< ::xsd::cxx::tree::idrefs< char,xsd::cxx::tree::simple_type,xsd::cxx::tree::idref >,xsd::cxx::tree::fundamental_p< ::xsd::cxx::tree::idrefs< char,xsd::cxx::tree::simple_type,xsd::cxx::tree::idref > >::r > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_t__r_t = {"_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_t__r_t", "schema::simxml::BuildingModel::SimSlab_RoofSlab::Name_optional *|schema::simxml::BuildingModel::SimSlab_RoofSlab::PredefinedSlabType_optional *|schema::simxml::BuildingModel::SimSlab_RoofSlab::SurfProp_HeatTransAlg_MultSurf_Algorithm_optional *|schema::simxml::BuildingModel::SimSlab_RoofSlab::SimSlab_Name_optional *|schema::simxml::BuildingModel::SimSlab_RoofSlab::SimSlab_OutsdBndCond_optional *|schema::simxml::BuildingModel::SimSlab_RoofSlab::SimSlab_SunExposure_optional *|schema::simxml::BuildingModel::SimSlab_RoofSlab::SimSlab_WindExposure_optional *|schema::simxml::BuildingModel::SimSlab_RoofSlab::SurfProp_HeatTransAlg_MultSurf_Name_optional *|schema::simxml::BuildingModel::SimSlab_RoofSlab::SurfProp_HeatTransAlg_MultSurf_SurfType_optional *|xsd::cxx::tree::optional< ::xsd::cxx::tree::string< char,xsd::cxx::tree::simple_type >,xsd::cxx::tree::fundamental_p< ::xsd::cxx::tree::string< char,xsd::cxx::tree::simple_type > >::r > *|schema::simxml::BuildingModel::SimSlab_RoofSlab::ConstructionType_optional *|schema::simxml::BuildingModel::SimSlab_RoofSlab_RoofUnderAir::T24ConstructStatus3_optional *|schema::simxml::BuildingModel::SimSlab_RoofSlab_RoofUnderAir::T24CRRCProductID_optional *|schema::simxml::BuildingModel::SimSlab_RoofSlab_RoofUnderAir::SimSlab_SurfType_optional *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__parsingT_char_t = {"_p_xsd__cxx__tree__parsingT_char_t", "xml_schema::parsing *|::xsd::cxx::tree::parsing< char > *", 0, 0, (void*)0, 0};
@@ -21284,6 +21286,7 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_xsd__cxx__tree__optionalT_double_true_t,
   &_swigt__p_xsd__cxx__tree__optionalT_int_true_t,
   &_swigt__p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__doubleList_xsd__cxx__tree__fundamental_pT_schema__simxml__SimModelCore__doubleList_t__r_t,
+  &_swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t,
   &_swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_t__r_t,
   &_swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_t__r_t,
   &_swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_t__r_t,
@@ -22146,6 +22149,7 @@ static swig_cast_info _swigc__p_xsd__cxx__tree__optionalT_bool_true_t[] = {  {&_
 static swig_cast_info _swigc__p_xsd__cxx__tree__optionalT_double_true_t[] = {  {&_swigt__p_xsd__cxx__tree__optionalT_double_true_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__optionalT_int_true_t[] = {  {&_swigt__p_xsd__cxx__tree__optionalT_int_true_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__doubleList_xsd__cxx__tree__fundamental_pT_schema__simxml__SimModelCore__doubleList_t__r_t[] = {  {&_swigt__p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__doubleList_xsd__cxx__tree__fundamental_pT_schema__simxml__SimModelCore__doubleList_t__r_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t[] = {  {&_swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_t__r_t[] = {  {&_swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_t__r_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_t__r_t[] = {  {&_swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_t__r_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_t__r_t[] = {  {&_swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_t__r_t, 0, 0, 0},{0, 0, 0, 0}};
@@ -23008,6 +23012,7 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_xsd__cxx__tree__optionalT_double_true_t,
   _swigc__p_xsd__cxx__tree__optionalT_int_true_t,
   _swigc__p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__doubleList_xsd__cxx__tree__fundamental_pT_schema__simxml__SimModelCore__doubleList_t__r_t,
+  _swigc__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t,
   _swigc__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_t__r_t,
   _swigc__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_t__r_t,
   _swigc__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_t__r_t,

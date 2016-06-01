@@ -353,6 +353,12 @@ class SimModel(base._type):
     def SimDistributionPort_AirFlowPort_Air_Out(self, *args):
         return _SimModel.SimModel_SimDistributionPort_AirFlowPort_Air_Out(self, *args)
 
+    def SimDistributionPort_HotWaterFlowPort_Water_In(self, *args):
+        return _SimModel.SimModel_SimDistributionPort_HotWaterFlowPort_Water_In(self, *args)
+
+    def SimDistributionPort_HotWaterFlowPort_Water_Out(self, *args):
+        return _SimModel.SimModel_SimDistributionPort_HotWaterFlowPort_Water_Out(self, *args)
+
     def SimFace_Face_Default(self, *args):
         return _SimModel.SimModel_SimFace_Face_Default(self, *args)
 
@@ -365,8 +371,20 @@ class SimModel(base._type):
     def SimFeatureElementSubtraction_Void_Opening(self, *args):
         return _SimModel.SimModel_SimFeatureElementSubtraction_Void_Opening(self, *args)
 
+    def SimFlowController_Valve_Default(self, *args):
+        return _SimModel.SimModel_SimFlowController_Valve_Default(self, *args)
+
+    def SimFlowEnergyTransfer_ConvectiveHeater_Radiant_Water(self, *args):
+        return _SimModel.SimModel_SimFlowEnergyTransfer_ConvectiveHeater_Radiant_Water(self, *args)
+
     def SimFlowEnergyTransfer_ConvectiveHeater_Water(self, *args):
         return _SimModel.SimModel_SimFlowEnergyTransfer_ConvectiveHeater_Water(self, *args)
+
+    def SimFlowEnergyTransferStorage_HotWaterTank_Mixed(self, *args):
+        return _SimModel.SimModel_SimFlowEnergyTransferStorage_HotWaterTank_Mixed(self, *args)
+
+    def SimFlowFitting_Default_Default(self, *args):
+        return _SimModel.SimModel_SimFlowFitting_Default_Default(self, *args)
 
     def SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop(self, *args):
         return _SimModel.SimModel_SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop(self, *args)
@@ -385,6 +403,9 @@ class SimModel(base._type):
 
     def SimFlowPlant_Boiler_BoilerHotWater(self, *args):
         return _SimModel.SimModel_SimFlowPlant_Boiler_BoilerHotWater(self, *args)
+
+    def SimFlowSegment_Pipe_Indoor(self, *args):
+        return _SimModel.SimModel_SimFlowSegment_Pipe_Indoor(self, *args)
 
     def SimGeomBooleanResult_BooleanClippingResult_Default(self, *args):
         return _SimModel.SimModel_SimGeomBooleanResult_BooleanClippingResult_Default(self, *args)
