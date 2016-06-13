@@ -67,7 +67,7 @@ from SimModel_Translator import SimTranslator
 # create SimModel translator object
 translator = SimTranslator()
 
-# load and parse SimXML
+# load and parse multiple SimXML files
 translator.loadSimModel("SingleZoneWithInternalLoads.simxml", "1.1BoilerGasRadiator.simxml")
 
 # old API for single SimXML file parsing
