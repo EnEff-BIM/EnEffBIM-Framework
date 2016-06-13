@@ -295,3 +295,5 @@ if(hierarchy_node0.isParent(hierarchy_node1)):
 # whether the given node1 is the child of node0
 if(hierarchy_node0.isChild(hierarchy_node1)):
     print(hierarchy_node1.ClassType(), " is the child of ", hierarchy_node0.ClassType())
+
+print("finish")
