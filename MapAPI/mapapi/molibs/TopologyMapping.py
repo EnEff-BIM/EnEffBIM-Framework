@@ -11,13 +11,15 @@ import os
 
 rootPath = os.path.dirname(__file__)
 default_path = rootPath[:rootPath.rfind("EnEffBIM-Framework")]
-modulePath = os.path.join(default_path, "EnEffBIM-Framework\\SimModel_Python_API"
-                          "\\simmodel_swig\\Release")
+modulePath = os.path.join(default_path, "EnEffBIM-Framework\\SimModel_Python_API\\simmodel_swig\\Release")
 
 
 from mapapi.MapClasses import MapProject
 
-file_path = os.path.join(modulePath+"\\Boiler_Gas_VDI6020_V12.simxml")
+zoneFile_path = os.path.join(modulePath+"\\SingleZoneWithInternalLoads.simxml")
+hvacFile_path = os.path.join(modulePath+"\\1.1BoilerGasRadiator.simxml")
+fullFile_path = os.path.join(modulePath+"\\Boiler_Gas_VDI6020_V12.simxml")
+pathList = (zoneFile_path, hvacFile_path)
 
-prj = MapProject(file_path)
+prj = MapProject(fullFile_path)
 print("finish")
