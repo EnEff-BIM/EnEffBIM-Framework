@@ -257,7 +257,7 @@ namespace schema
   {
     namespace MepModel
     {
-      class SimFlowSegment_Pipe: public ::schema::simxml::MepModel::SimFlowSegment
+      class __declspec(dllexport) SimFlowSegment_Pipe: public ::schema::simxml::MepModel::SimFlowSegment
       {
         public:
         // SimFlowSeg_Name

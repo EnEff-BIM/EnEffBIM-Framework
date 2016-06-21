@@ -257,7 +257,7 @@ namespace schema
   {
     namespace MepModel
     {
-      class SimFlowEnergyTransferStorage_HotWaterTank_Mixed: public ::schema::simxml::MepModel::SimFlowEnergyTransferStorage_HotWaterTank
+      class __declspec(dllexport) SimFlowEnergyTransferStorage_HotWaterTank_Mixed: public ::schema::simxml::MepModel::SimFlowEnergyTransferStorage_HotWaterTank
       {
         public:
         // SimFlowEnergyTransSto_Name

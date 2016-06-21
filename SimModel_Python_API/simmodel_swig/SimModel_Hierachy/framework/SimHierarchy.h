@@ -5,13 +5,32 @@
 #include <vector>
 #include <string>
 #include <typeinfo>
+#include <map>
 //using namespace std;
 #include "../SimModel_Dll_lib/framework/simmodel.hxx"
 using namespace schema::simxml::Model;
 using namespace schema::simxml::SimModelCore;
+using namespace schema::simxml::ResourcesGeneral;
 
 // forward declaration
 class MappedComponent;
+class SimPyCallBack;
+
+class SimModelBase
+{
+public:
+	bool present() { return true; }
+	std::string getValue() { return "SimMatLayerSet_Layer_2_10 metrial layers"; }
+};
+
+class SimMaterialLayer2_10 : SimRoot
+{
+private:
+	SimModelBase _modelObj;
+
+public:
+	SimModelBase& SimModelName() { return _modelObj; }
+};
 
 class SimHierarchyNodeBase
 {
@@ -91,8 +110,19 @@ private:
 	// unmapped SimModel data
 	//std::auto_ptr<SimModel> SimModel_Data;
 
+	// parse SimSpace
+	void parseSimSpaceTree(::std::auto_ptr< ::schema::simxml::Model::SimModel >& simGeometryData, std::vector<std::pair<int, int> >& _nodeIndexPairList, std::map<std::string, int>& _nodeIndexList, SimModel::SimSpatialZone_ThermalZone_Default_iterator& _simThermalZoneIt);
+
+	// Python callback
+	SimPyCallBack* _callback;
+	// load specified geometry class objects
+	void loadSimGeomClassObj(std::string _geoName);
+	// get a list of SimModel hierarchy class names need to be parsed
+	//std::vector<std::string> getSimClassNameList(std::string _name);
+	
+
 public:
-	SimHierarchy() { SimHierarchyNodeList.resize(0); }
+	SimHierarchy() : _callback(NULL) { SimHierarchyNodeList.resize(0); }
 	// get SimModel Hierarchical Root Node
 	SimHierarchyNode* getHierarchyRootNode();
 	// get SimModel Hierarchical Nodes
@@ -110,6 +140,9 @@ public:
 	//::std::auto_ptr< ::schema::simxml::Model::SimModel > loadSimModel(std::string _name);
 	// hierarchy parser
 	void parser(::std::auto_ptr< ::schema::simxml::Model::SimModel >& SimModel_Data);
+	void parser(::std::auto_ptr< ::schema::simxml::Model::SimModel >& simGeometryData, ::std::auto_ptr< ::schema::simxml::Model::SimModel >& simSysData, std::string _geoName, std::string _sysName);
+	// set Python callback function
+	void setCallBack(SimPyCallBack& callback);
 };
 
 #endif // SIM_HIERARCHY_H

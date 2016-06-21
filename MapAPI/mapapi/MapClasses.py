@@ -1003,9 +1003,9 @@ class MapMaterialLayer(object):
     """
     
     def __init__(self, parent, hierarchy_node=None):
-                      
+
         self.parent = parent
-        
+
         self.material = None
 
 

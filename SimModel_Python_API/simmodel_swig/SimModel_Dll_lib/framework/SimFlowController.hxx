@@ -257,7 +257,7 @@ namespace schema
   {
     namespace MepModel
     {
-      class SimFlowController: public ::schema::simxml::SimModelCore::SimDistributionFlowElement
+      class __declspec(dllexport) SimFlowController: public ::schema::simxml::SimModelCore::SimDistributionFlowElement
       {
         public:
         // Representation

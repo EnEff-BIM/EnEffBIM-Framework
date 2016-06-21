@@ -562,7 +562,7 @@ namespace schema
         // MaterialLayerSet
         //
         typedef ::xml_schema::idref MaterialLayerSet_type;
-        typedef ::xsd::cxx::tree::optional< MaterialLayerSet_type > MaterialLayerSet_optional;
+        typedef ::xsd::cxx::tree::optional< MaterialLayerSet_type, false > MaterialLayerSet_optional;
         typedef ::xsd::cxx::tree::traits< MaterialLayerSet_type, char > MaterialLayerSet_traits;
 
         const MaterialLayerSet_optional&

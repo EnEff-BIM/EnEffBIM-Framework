@@ -35,36 +35,53 @@ import SimFeatureElementSubtraction_Void_Opening
 import SimMaterialLayer_OpaqueMaterialLayer_Default
 import SimMaterialLayer_GlazingMaterialLayer_Default
 import SimMaterial_OpaqueMaterial_Default
+import SimMaterial_OpaqueMaterial_AirGap
+import SimMaterial_GlazingMaterial_Gas
 import SimMaterial_GlazingMaterial_SimpleGlazingSystem
+import SimMaterial_GlazingMaterial_Glazing
 import SimSystem_HvacHotWater_FullSystem
 import SimSystem_HvacHotWater_Control
 import SimController_SupplyWater_Temperature
 import SimSensor_TemperatureSensor_DryBulb
 import SimSystem_HvacHotWater_Demand
+import SimFlowController_Valve_Default
 import SimFlowEnergyTransfer_ConvectiveHeater_Water
+import SimFlowEnergyTransfer_ConvectiveHeater_Radiant_Water
+import SimFlowEnergyTransferStorage_HotWaterTank_Mixed
+import SimFlowFitting_Default_Default
 import SimFlowFitting_Mixer_DemandProxyMixerWater
 import SimFlowFitting_Splitter_DemandProxySplitterWater
+import SimFlowSegment_Pipe_Indoor
 import SimSystem_HvacHotWater_Supply
 import SimFlowMover_Pump_VariableSpeedReturn
 import SimFlowPlant_Boiler_BoilerHotWater
 import SimConnection_HotWaterFlow_Default
 import SimNode_HotWaterFlowPort_Water_Out
 import SimNode_HotWaterFlowPort_Water_In
+import SimDistributionPort_HotWaterFlowPort_Water_Out
+import SimDistributionPort_HotWaterFlowPort_Water_In
 import SimNode_DigitalControl_HWLoop_DigitalSignal_In
-
 
 from SimModel_Translator import SimTranslator
 
 # create SimModel translator object
 translator = SimTranslator()
 
-# load and parse SimXML
-simxml_data = translator.loadSimModel("Boiler_Gas_VDI6020_V12.simxml")
+# load and parse multiple SimXML files
+zoneFile_path = ("SingleZoneWithInternalLoads.simxml")
+hvacFile_path = ("1.1BoilerGasRadiator.simxml")
+fullFile_path= ("Boiler_Gas_VDI6020_V12.simxml")
+pathList = [zoneFile_path, hvacFile_path]
+
+simxml_data = translator.loadSimModel(zoneFile_path, hvacFile_path)
+
+# old API for single SimXML file parsing
+# simxml_data = translator.loadSimModel(fullFile_path)
 
 # simxml_data is the unmapped SimXML data without hierarchy structure
 # like our former demo, you can access the SimXML data via calling a SimModel class name
 # e.g. retrieve the property 'SimModelName' of 1st instance of class SimProject_Project_DesignAlternative
-print("access SimXML data: ", simxml_data.SimProject_Project_DesignAlternative().at(0).SimModelName().getValue(), "\n")
+#print("access SimXML data: ", simxml_data.SimProject_Project_DesignAlternative().at(0).SimModelName().getValue(), "\n")
 
 # get SimModel mapped data
 # here we need to specify the mapping rule xml file location before translating the data

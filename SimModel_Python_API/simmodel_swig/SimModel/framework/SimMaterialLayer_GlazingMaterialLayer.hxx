@@ -284,7 +284,7 @@ namespace schema
         // SimMatLayer_MaterialName
         //
         typedef ::xml_schema::idref SimMatLayer_MaterialName_type;
-        typedef ::xsd::cxx::tree::optional< SimMatLayer_MaterialName_type > SimMatLayer_MaterialName_optional;
+        typedef ::xsd::cxx::tree::optional< SimMatLayer_MaterialName_type, false > SimMatLayer_MaterialName_optional;
         typedef ::xsd::cxx::tree::traits< SimMatLayer_MaterialName_type, char > SimMatLayer_MaterialName_traits;
 
         const SimMatLayer_MaterialName_optional&
