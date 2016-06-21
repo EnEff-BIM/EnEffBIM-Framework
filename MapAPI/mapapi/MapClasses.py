@@ -599,7 +599,7 @@ class MapComponent(MoObject):
                            value=0.01)
         if medium == "Water":
             self.add_parameter(name="medium",
-                               value="asd")
+                               value="SimpleWater")
         else:
             pass
 
