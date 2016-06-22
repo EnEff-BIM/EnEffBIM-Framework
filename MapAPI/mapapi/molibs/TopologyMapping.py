@@ -22,5 +22,5 @@ fullFile_path = os.path.join(modulePath+"\\Boiler_Gas_VDI6020_V12.simxml")
 pathList = (zoneFile_path, hvacFile_path)
 mappingFile_path = os.path.join(modulePath+"\\mapping_rule\\mapping_rule_xml\\AixLib.xml")
 
-prj = MapProject(fullFile_path, mappingFile_path)
+prj = MapProject(pathList, mappingFile_path)
 print("finish")

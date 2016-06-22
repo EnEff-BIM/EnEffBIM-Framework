@@ -16,7 +16,7 @@ except:
     sys.path.append(modulePath)
     import SimModel
 
-import SimModel_Translator
+
 from SimModel_Translator import SimTranslator
 import SimModel_Hierachy
 import SimModel_Mapping
@@ -49,6 +49,16 @@ from SimMaterialLayerSet_GlazingLayerSet_Window import SimMaterialLayerSet_Glazi
 from SimMaterial_OpaqueMaterial_Default import SimMaterial_OpaqueMaterial_Default
 from SimMaterialLayer_GlazingMaterialLayer_Default import SimMaterialLayer_GlazingMaterialLayer_Default
 from SimMaterial_GlazingMaterial_SimpleGlazingSystem import SimMaterial_GlazingMaterial_SimpleGlazingSystem
+import SimMaterial_OpaqueMaterial_AirGap
+import SimMaterial_GlazingMaterial_Gas
+import SimMaterial_GlazingMaterial_Glazing
+import SimFlowEnergyTransfer_ConvectiveHeater_Radiant_Water
+import SimFlowEnergyTransferStorage_HotWaterTank_Mixed
+import SimFlowFitting_Default_Default
+import SimFlowController_Valve_Default
+import SimFlowSegment_Pipe_Indoor
+import SimDistributionPort_HotWaterFlowPort_Water_Out
+import SimDistributionPort_HotWaterFlowPort_Water_In
 
 class MoObject(object):
     """Base class for all mapped objects
@@ -239,8 +249,12 @@ class MapProject(object):
     Parameters
     ----------
 
-    simxml_file : str
-        absolute path to the SimModel XML file
+    simxml_file : list of length 2
+        absolute path to the SimModel XML file, first entry geometry, second
+        entry HVAC
+
+    mapping_file : srt
+        absolute path to the MappingRule XML file
         
     Attributes
     ----------
@@ -282,7 +296,7 @@ class MapProject(object):
         libSimModelAPI"""
         self.translator = SimTranslator()
         self.sim_hierarchy = self.translator.getSimHierarchy()
-        load_sim = self.translator.loadSimModel(simxml_file)
+        load_sim = self.translator.loadSimModel(simxml_file[0], simxml_file[1])
         self.sim_mapping = self.translator.getSimMappedData(mapping_file)
 
         self.instantiate_buildings()
