@@ -20,7 +20,10 @@ class Pipe(MapHierarchy.MapComponent):
         return True
 
     def mapp_me(self):
-        self.target_name = "Pipe"+str(random.randint(0,10))
+        if self.target_name is None:
+            self.target_name = "Pipe"+str(random.randint(0,10))
+        else:
+            pass
         self.target_location = "AixLib.HVAC.Pipes.StaticPipe"
         self.D = self.add_parameter(name="D",
                                     value=0.05)

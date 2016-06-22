@@ -114,7 +114,7 @@ class MoObject(object):
             self.sim_instance = None
 
         if self.sim_instance is not None:
-            self.target_name = "some_name"
+            self.target_name = "Random" + self.sim_instance.RefId()[-5:]
             #self.target_name = self.sim_instance.SimModelName().getValue(
             #    ).replace(" ", "").replace("(","").replace(")","").replace(
             #    "-","_")
@@ -139,7 +139,7 @@ class MoObject(object):
         """This adds a MapConnector to the MoObject
 
         For topology mapping it is necessary to add Modelica connectors to
-        the MoObject. An instance of MapConnector is added to the 
+        the MoObject. An instance of MapConnector is added to the
         MoObject.connectors list. The function sets the attributes of the
         MapConnector
 
@@ -169,7 +169,7 @@ class MoObject(object):
         self.connectors.append(connector)
 
         return connector
-        
+
     def add_parameter(self, name, value):
         """This adds a MapParameter to the MoObject
 
@@ -194,14 +194,14 @@ class MoObject(object):
 
         """
         mapped_prop = MapParameter(self, name, value)
-        
+
         self.parameters.append(mapped_prop)
-        
+
         return mapped_prop
-        
+
     def add_connection(self, connector_a, connector_b):
         """This connects the MoObject to another Object
-        
+
         For topology mapping it might be necessary to connect two MoObjects.
         With the given Connectors of each Object a MapConnection is instantiated
         and the attributes are set.
@@ -242,9 +242,9 @@ class MoObject(object):
 
 class MapProject(object):
     """Root Class for each mapped data information
-        
+
     The MapProject class is the root class for all mapped information
-    and thus the head of the hierarchy tree. Further more it contains meta 
+    and thus the head of the hierarchy tree. Further more it contains meta
     information about the used library.
 
     Parameters
@@ -256,7 +256,7 @@ class MapProject(object):
 
     mapping_file : srt
         absolute path to the MappingRule XML file
-        
+
     Attributes
     ----------
     project_name : str
@@ -264,12 +264,12 @@ class MapProject(object):
 
     used_library : str
         Name of used library
-        
+
     library_version : str
         Version of used library
-    
+
     buildings : list of MapBuilding()
-        This is an *iterable* list containing all buildings of the 
+        This is an *iterable* list containing all buildings of the
         project. The items of the list have to be an instance of
         the class "MapBuilding".
 
@@ -326,10 +326,10 @@ class MapProject(object):
 
 class MapBuilding(MoObject):
     """Representation of a mapped building
-        
+
     The MapBuilding class is a representation of a building mapped with
     Modelica information. It contains HVAC and geometric information.
-    
+
     Note: As MapBuilding inherits from MoObject it is possible to
     implement connectors, parameters and whole models target names.
 
@@ -337,21 +337,21 @@ class MapBuilding(MoObject):
     ----------
 
     thermal_zones : list of MapThermalZone()
-        This is an *iterable* list containing all thermal zones of the 
+        This is an *iterable* list containing all thermal zones of the
         building. The items of the list have to be an instance of
         the class MapThermalZone or inherit from MapThermalZone.
-        
+
     hvac_components_sim : list
         This is a list with all (converted) hvac components from SimModel
 
     hvac_components_mod : list
         This is a list with all added hvac components because of MapGap,
         one to Many Mappings or Topology mapping
-    
+
     """
 
     def __init__(self, project, hierarchy_node):
-        
+
         super(MapBuilding, self).__init__(project, hierarchy_node)
 
         self.project.buildings.append(self)
@@ -446,10 +446,10 @@ class MapBuilding(MoObject):
 
 class MapThermalZone(MoObject):
     """Representation of a mapped thermal zone
-        
-    The MapThermalZone class is a representation of a thermal zone mapped 
+
+    The MapThermalZone class is a representation of a thermal zone mapped
     with Modelica information. It contains HVAC and geometric information.
-    
+
     Note: As MapThermalZone inherits from MoObject it is possible to
     implement connectors, parameters and whole models target names.
 
@@ -465,11 +465,11 @@ class MapThermalZone(MoObject):
     space_boundaries : MapSpaceBoundaries()
         needs to be figured out
     """
-    
+
     def __init__(self, project, hierarchy_node, parent):
-        
+
         super(MapThermalZone, self).__init__(project, hierarchy_node)
-        
+
         self.parent = parent
         self.space_boundaries = []
         from mapapi.molibs.AixLib.Building.LowOrder.ThermalZone import \
@@ -502,9 +502,9 @@ class MapThermalZone(MoObject):
 
 class MapComponent(MoObject):
     """Representation of a mapped component
-        
+
     The MapComponent class is a representation of any HVAC component mapped
-    with Modelica information. It contains library specific information. 
+    with Modelica information. It contains library specific information.
 
     Attributes
     ----------
@@ -611,20 +611,21 @@ class MapComponent(MoObject):
 
     def fluid_two_port(self, medium="Water"):
         """Adds connection for Modelica Fluid Two port to component"""
-
+        sim_port_out = None
+        sim_port_in = None
         child = self.hierarchy_node.getChildList()
-        #for id in range(child.size()):
-        #    if child[id].ClassType() == \
-        #            "SimNode_HotWaterFlowPort_Water_In":
-        #        sim_port_in = child[id]
-        #    if child[id].ClassType () == \
-        #            "SimNode_HotWaterFlowPort_Water_Out":
-        #        sim_port_out = child[id]
+        for id in range(child.size()):
+            if child[id].ClassType() == \
+                    "SimDistributionPort_HotWaterFlowPort_Water_In":
+                sim_port_in = child[id]
+            if child[id].ClassType () == \
+                    "SimDistributionPort_HotWaterFlowPort_Water_Out":
+                sim_port_out = child[id]
 
         self.port_a = self.add_connector(name="port_a", type="FluidPort",
-         dimension=1, hierarchy_node=None)
+         dimension=1, hierarchy_node=sim_port_in)
         self.port_b = self.add_connector(name="port_b", type="FluidPort",
-         dimension=1, hierarchy_node=None)
+         dimension=1, hierarchy_node=sim_port_out)
         self.add_parameter(name="m_flow_small",
                            value=0.01)
         if medium == "Water":
@@ -676,30 +677,30 @@ class MapComponent(MoObject):
 
 class MapConnection(object):
     """Representation of a mapped connector
-        
+
     The MapConnection class is a representation of a connection in Modelica.
     It contains two MapConnectors and the Modelica Type of the connection.
 
     Parameters
     ----------
-    
+
     connector_a : instance of a MapConnector()
         The input connector, with the parent/child relationshsip we can access
         the component
-        
+
     connector_b : instance of a MapConnector()
         The output component, with the parent/child relationshsip we can access
         the component
 
     index_a : index of connector_a
         default is None, only appicable if MapConnector has an index
-        
+
     index_b : index of connector_b
         default is None, only appicable if MapConnector has an index
 
     Attributes
     ----------
-       
+
     type : str
         Modelica Type of the connection.
         - Fluid
@@ -707,43 +708,43 @@ class MapConnection(object):
         - Boolean
         - Heat
         - ...
-        
+
     sim_ref_id : str
         refID of SimModel for the corresponding SimConnection
     """
-    
+
     def __init__(self,
                  connector_a,
                  connector_b,
                  index_a = None,
                  index_b = None):
-        
+
         self.connector_a = connector_a
         self.connector_b = connector_b
         self.index_a = index_a
         self.index_b = index_b
         self.type = ""
         self.sim_ref_id = None
-		
+
 class MapConnector(object):
     """Representation of a mapped connector
-        
+
     The MapConnector class is a representation of any connector in Modelica.
     It contains connector information like name and type.
-    
-    
+
+
     Parameters
     ----------
-    
+
     parent : instance of a MapComponent()
-        MapParameter receives an instance of MapComponent. 
-        
+        MapParameter receives an instance of MapComponent.
+
     Attributes
     ----------
-    
+
     name : str
         Name of the connector in the model.
-    
+
     type : str
         - FluidPort
         - Real
@@ -752,15 +753,15 @@ class MapConnector(object):
         - ...
 
     dimension : int
-        dimension of the Modelica connector (default = 1)     
-        
+        dimension of the Modelica connector (default = 1)
+
     sim_ref_id : str
         refID of SimModel for the corresponding distributionPort
-        
+
     """
-    
+
     def __init__(self, parent, hierarchy_node=None):
-        
+
         self.parent = parent
         self.hierarchy_node = hierarchy_node
         self.name = ""
@@ -770,27 +771,27 @@ class MapConnector(object):
 
 class MapControl(object):
     """Representation of a mapped control strategy
-        
+
     The MapControl class is a representation of a mapped control system.
-    It is used to store control parameters and more important the control 
+    It is used to store control parameters and more important the control
     strategy/system itself
 
     Parameters
     ----------
 
     parent : instance of a MapComponent()
-        MapParameter receives an instance of MapComponent. 
-        
+        MapParameter receives an instance of MapComponent.
+
     Attributes
     ----------
-    
+
     control_strategy : str (library specific codelist)
         Probably a code list of possible control strategies
-        
+
     control_objects : list of MoObject
-        This is an *iterable* list containing all MoObjects of the control 
+        This is an *iterable* list containing all MoObjects of the control
         strategy
-        
+
     control_connector : instance of a MapConnector()
         MapConnector of one of the control_objects that provides the output
         control variable
@@ -806,47 +807,47 @@ class MapControl(object):
 
 class MapParameter(object):
     """Representation of a mapped property
-        
+
     The MapParameter class is a representation of any Modelica parameter.
 
     Parameters
     ----------
-    
+
     parent : instance of a MapComponent() or MapRecord()
         MapParameter receives an instance of MapComponent or MapRecord()
-        
+
     name : str
         Modelica name of the Parameter (e.g. Q_flow_max)
-        
+
     value : float/int/bool/str/list/array
         Value of the Parameter, can be float, int, boolean, string, list or array
         with corresponding data type.
 
     """
-    
+
     def __init__(self, parent, name, value):
-        
+
         self.parent = parent
         self.name = name
         self.value = value
-        
+
 class MapRecord(object):
     """Representation of a mapped record
-        
-    The MapRecord class is a representation of any Modelica Record class. 
-    
+
+    The MapRecord class is a representation of any Modelica Record class.
+
     Parameters
     ----------
-    
+
     parent : instance of a MapComponent()
-        MapRecords receives an instance of MapComponent. 
-        
+        MapRecords receives an instance of MapComponent.
+
     name : str
         Modelica name of the Record (e.g. boilerEfficiencyB)
-        
+
     record_location : str
         location in the library of the base record
-        
+
     Attributes
     ----------
 
@@ -855,9 +856,9 @@ class MapRecord(object):
         the MapRecord
 
     """
-    
+
     def __init__(self, parent, record_location, name):
-        
+
         self.parent = parent
         self.name = name
         self.record_location = record_location
@@ -896,28 +897,28 @@ class MapRecord(object):
 class MapSpaceBoundary(object):
     """Representation of a mapped space boundary
 
-    The MapSpaceBoundary class is a representation of a space boundary 
+    The MapSpaceBoundary class is a representation of a space boundary
     filled with geometric information.
-    
+
     Parameters
     ----------
-    
+
     parent : instance of MappedZone()
-        MapSpaceBoundary receives an instance of MappedZone, in order to 
+        MapSpaceBoundary receives an instance of MappedZone, in order to
         know to what zone it belongs to.
-        
+
     Attributes
     ----------
-    
-    sim_ref_id : str 
+
+    sim_ref_id : str
         SimModel ref id
-        
+
     type: str(?)
         OuterWall, InnerWall, Roof, Floor, Ceiling, Door, etc.
-        
+
     internal_external: str(?)
         internal or external space boundary (is sun exposed?)
-    
+
     area : float
         area of building element
 
@@ -925,7 +926,7 @@ class MapSpaceBoundary(object):
         tilt against horizontal
 
     orientation : float
-        compass direction of building element (e.g. 0 : north, 90: east, 
+        compass direction of building element (e.g. 0 : north, 90: east,
         180: south, 270: west)
 
     inner_convection : float
@@ -944,18 +945,18 @@ class MapSpaceBoundary(object):
 
     simmodel_coordinates: array
         coordinates given in SimModel if needed for 3D-modelling
-        
+
     simmodel_normal_vector: array
         normal vector from SimModel
-    
+
     mapped_layer : list of MapMaterialLayer
-        list of all layers of a building element 
-            
+        list of all layers of a building element
+
     """
-    
+
     def __init__(self, parent, hierarchy_node=None):
-        
-              
+
+
         self.parent = parent
         self.hierarchy_node = hierarchy_node
         self.type = None
@@ -1011,27 +1012,27 @@ class MapSpaceBoundary(object):
 
 class MapMaterialLayer(object):
     """Representation of a mapped building element layer
-        
+
     The MapMaterialLayer class is the representation of a material layer
-    
+
     Parameters
     ----------
-    
+
     parent : instance of MapBuildingElement()
-        MapMaterialLayer receives an instance of MapBuildingElement, 
+        MapMaterialLayer receives an instance of MapBuildingElement,
         in order to know to what element it belongs to.
-        
+
     Attributes
     ----------
 
     material : MapMaterialLayer()
         material of the layer
-        
+
     thickness : float
         thickness of the layer
-            
+
     """
-    
+
     def __init__(self, parent, hierarchy_node=None):
 
         self.parent = parent
@@ -1055,37 +1056,37 @@ class MapMaterialLayer(object):
 
 class MapMaterial(object):
     """Representation of a mapped material
-        
+
     The MapMaterialLayer class is the representation of a material
-    
+
     Parameters
     ----------
-    
+
     parent : instance of MapMaterialLayer()
-        MapMaterialLayer receives an instance of MapMaterialLayer, 
+        MapMaterialLayer receives an instance of MapMaterialLayer,
         in order to know to what layer it belongs to.
-        
+
     Attributes
     ----------
-    
+
     name : str
         individual name
-    
+
     density : float
         density of material in kg/m^3
-        
+
     thermal_conduc : float
         thermal conductivity of material in W/(m*K)
-        
+
     heat_capac : float
         specific heat capacity of material in kJ/(kg*K)
-        
+
     solar_absorp : float
-        coefficient of absorption of solar short wave 
-        
+        coefficient of absorption of solar short wave
+
     ir_emissivity : float
         coefficient of longwave emissivity of material
-        
+
     transmittance : float
         coefficient of transmittanve of material
 
@@ -1113,4 +1114,3 @@ class MapMaterial(object):
                 self.u_factor = self.sim_instance.SimMaterial_UFactor().getValue()
                 self.u_gvalue = self.sim_instance.SimMaterial_SolarHeatGainCoef().getValue()
                 self.transmittance = self.sim_instance.SimMaterial_VisTrans().getValue()
-
