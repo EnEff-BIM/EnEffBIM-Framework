@@ -680,7 +680,7 @@
   <!-- component mapping for the convective radiator -->
   <Component_Map_One2Many RefId="ID02">
 	<Description>Map a convective radiator into one raditor and one controller</Description>
-	<SourceComponentName>SimFlowEnergyTransfer_ConvectiveHeater_Water</SourceComponentName>
+	<SourceComponentName>SimFlowEnergyTransfer_ConvectiveHeater_Radiant_Water</SourceComponentName>
 	<ComponentMappingGroupName>ID02T1</ComponentMappingGroupName>
 	<ComponentMappingGroupName>ID04</ComponentMappingGroupName>
 	<ComponentMappingGroupName>ID013</ComponentMappingGroupName>

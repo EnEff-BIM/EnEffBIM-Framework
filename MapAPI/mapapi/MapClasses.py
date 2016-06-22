@@ -114,9 +114,10 @@ class MoObject(object):
             self.sim_instance = None
 
         if self.sim_instance is not None:
-            self.target_name = self.sim_instance.SimModelName().getValue(
-                ).replace(" ", "").replace("(","").replace(")","").replace(
-                "-","_")
+            self.target_name = "some_name"
+            #self.target_name = self.sim_instance.SimModelName().getValue(
+            #    ).replace(" ", "").replace("(","").replace(")","").replace(
+            #    "-","_")
         else:
             self.target_name = None
 
@@ -312,6 +313,7 @@ class MapProject(object):
         prj_child = root_node.getChildList()
         if isinstance(root_node.getSimModelObject(),
                       SimProject_Project_DesignAlternative):
+
             for a in range(prj_child.size()):
                 if isinstance(prj_child[a].getSimModelObject(),
                               SimSite_BuildingSite_Default):
@@ -320,6 +322,7 @@ class MapProject(object):
                         if isinstance(site_child[b].getSimModelObject(),
                                       SimBuilding_Building_Default):
                             MapBuilding(self, site_child[b])
+
 
 class MapBuilding(MoObject):
     """Representation of a mapped building
@@ -405,14 +408,20 @@ class MapBuilding(MoObject):
                           SimSystem_HvacHotWater_FullSystem):
                 bldg_hvac_child = bldg_child[a].getChildList()
                 for d in range(bldg_hvac_child.size()):
+                    sup_comp = MapComponent(self.project, bldg_hvac_child[d])
+                    sup_comp.find_loop_connection()
+                    self.hvac_components_sim.append(sup_comp)
+                    """
                     if isinstance(bldg_hvac_child[d].getSimModelObject(),
                                   SimSystem_HvacHotWater_Supply):
                         supply_child = bldg_hvac_child[d].getChildList()
+                        print("das")
                         for e in range(supply_child.size()):
                             sup_comp = MapComponent(self.project,
                                                    supply_child[e])
                             sup_comp.find_loop_connection()
                             self.hvac_components_sim.append(sup_comp)
+
                     elif isinstance(bldg_hvac_child[d].getSimModelObject(),
                                      SimSystem_HvacHotWater_Demand):
                         demand_child = bldg_hvac_child[d].getChildList()
@@ -421,6 +430,7 @@ class MapBuilding(MoObject):
                                                     demand_child[e])
                             dem_comp.find_loop_connection()
                             self.hvac_components_sim.append(dem_comp)
+                    """
 
     def convert_components(self):
         '''Once all hvac components in the SimXML are identified and
@@ -530,11 +540,16 @@ class MapComponent(MoObject):
         from mapapi.molibs.AixLib.Fluid.HeatExchangers.Radiators.Radiator import Radiator
         self.aix_lib = {"SimFlowPlant_Boiler_BoilerHotWater" : Boiler,
                         "SimFlowMover_Pump_VariableSpeedReturn" : Pump,
-                        "SimFlowEnergyTransfer_ConvectiveHeater_Water" :
+                        "SimFlowEnergyTransfer_ConvectiveHeater_Radiant_Water" :
                             Radiator,
                         "SimFlowFitting_Mixer_DemandProxyMixerWater" : Pipe,
                         "SimFlowFitting_Splitter_DemandProxySplitterWater" :
-                            Pipe}
+                            Pipe,
+                        "SimFlowSegment_Pipe_Indoor" : Pipe,
+                        "SimFlowFitting_Default_Default" : Pipe,
+                        "SimFlowEnergyTransferStorage_HotWaterTank_Mixed" :
+                            Pipe,
+                        "SimFlowController_Valve_Default" : Pipe}
 
 
     def find_loop_connection(self, hierarchy_node=None):
@@ -555,26 +570,27 @@ class MapComponent(MoObject):
         else:
             comp_child = self.hierarchy_node.getChildList()
         for i in range(comp_child.size()):
-            if comp_child[i].ClassType() == "SimNode_HotWaterFlowPort_Water_Out":
-                outlet_child = comp_child[i].getChildList()
-                for j in range(outlet_child.size()):
-                    if outlet_child[j].ClassType() == "SimConnection_HotWaterFlow_Default":
-                        connection_parent = outlet_child[j].getParentList()
-                        for k in range(connection_parent.size()):
-                            if connection_parent[k].ClassType() == "SimNode_HotWaterFlowPort_Water_In":
-                                inlet_parent = connection_parent[k].getParentList()
-                                for h in range(inlet_parent.size()):
-                                    if inlet_parent[h].ClassType != "SimConnection_HotWaterFlow_Default":
-                                        self.connected_out.append(inlet_parent[h])
-            elif comp_child[i].ClassType() == \
-                "SimNode_HotWaterFlowPort_Water_In":
+            if comp_child[i].ClassType() == "SimDistributionPort_HotWaterFlowPort_Water_Out":
                 outlet_child = comp_child[i].getChildList()
                 for j in range(outlet_child.size()):
                     if outlet_child[j].ClassType() == "SimConnection_HotWaterFlow_Default":
                         connection_parent = outlet_child[j].getParentList()
                         for k in range(connection_parent.size()):
                             if connection_parent[k].ClassType() == \
-                                    "SimNode_HotWaterFlowPort_Water_Out":
+                                    "SimDistributionPort_HotWaterFlowPort_Water_In":
+                                inlet_parent = connection_parent[k].getParentList()
+                                for h in range(inlet_parent.size()):
+                                    if inlet_parent[h].ClassType != "SimConnection_HotWaterFlow_Default":
+                                        self.connected_out.append(inlet_parent[h])
+            elif comp_child[i].ClassType() == \
+                "SimDistributionPort_HotWaterFlowPort_Water_In":
+                outlet_child = comp_child[i].getChildList()
+                for j in range(outlet_child.size()):
+                    if outlet_child[j].ClassType() == "SimConnection_HotWaterFlow_Default":
+                        connection_parent = outlet_child[j].getParentList()
+                        for k in range(connection_parent.size()):
+                            if connection_parent[k].ClassType() == \
+                                    "SimDistributionPort_HotWaterFlowPort_Water_Out":
                                 inlet_parent = connection_parent[k].getParentList()
                                 for h in range(inlet_parent.size()):
                                     if inlet_parent[h].ClassType != "SimConnection_HotWaterFlow_Default":
@@ -597,18 +613,18 @@ class MapComponent(MoObject):
         """Adds connection for Modelica Fluid Two port to component"""
 
         child = self.hierarchy_node.getChildList()
-        for id in range(child.size()):
-            if child[id].ClassType() == \
-                    "SimNode_HotWaterFlowPort_Water_In":
-                sim_port_in = child[id]
-            if child[id].ClassType () == \
-                    "SimNode_HotWaterFlowPort_Water_Out":
-                sim_port_out = child[id]
+        #for id in range(child.size()):
+        #    if child[id].ClassType() == \
+        #            "SimNode_HotWaterFlowPort_Water_In":
+        #        sim_port_in = child[id]
+        #    if child[id].ClassType () == \
+        #            "SimNode_HotWaterFlowPort_Water_Out":
+        #        sim_port_out = child[id]
 
         self.port_a = self.add_connector(name="port_a", type="FluidPort",
-         dimension=1, hierarchy_node=sim_port_in)
+         dimension=1, hierarchy_node=None)
         self.port_b = self.add_connector(name="port_b", type="FluidPort",
-         dimension=1, hierarchy_node=sim_port_out)
+         dimension=1, hierarchy_node=None)
         self.add_parameter(name="m_flow_small",
                            value=0.01)
         if medium == "Water":
