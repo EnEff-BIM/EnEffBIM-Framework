@@ -67,11 +67,16 @@ from SimModel_Translator import SimTranslator
 # create SimModel translator object
 translator = SimTranslator()
 
-# load and parse SimXML
-translator.loadSimModel("SingleZoneWithInternalLoads.simxml", "1.1BoilerGasRadiator.simxml")
+# load and parse multiple SimXML files
+zoneFile_path = ("SingleZoneWithInternalLoads.simxml")
+hvacFile_path = ("1.1BoilerGasRadiator.simxml")
+fullFile_path= ("Boiler_Gas_VDI6020_V12.simxml")
+pathList = [zoneFile_path, hvacFile_path]
+
+simxml_data = translator.loadSimModel(zoneFile_path, hvacFile_path)
 
 # old API for single SimXML file parsing
-#simxml_data = translator.loadSimModel("Boiler_Gas_VDI6020_V12.simxml")
+# simxml_data = translator.loadSimModel(fullFile_path)
 
 # simxml_data is the unmapped SimXML data without hierarchy structure
 # like our former demo, you can access the SimXML data via calling a SimModel class name
@@ -295,3 +300,5 @@ if(hierarchy_node0.isParent(hierarchy_node1)):
 # whether the given node1 is the child of node0
 if(hierarchy_node0.isChild(hierarchy_node1)):
     print(hierarchy_node1.ClassType(), " is the child of ", hierarchy_node0.ClassType())
+
+print("finish")
