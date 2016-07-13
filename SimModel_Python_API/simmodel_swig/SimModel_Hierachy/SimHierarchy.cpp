@@ -624,6 +624,8 @@ void SimHierarchy::parseSimSystem(::std::auto_ptr< ::schema::simxml::Model::SimM
 					}
 
 					// zone Hvac group id
+					//_simSystemElementIt->AssignedToGroups().get().size();
+					//_simSystemElementIt->AssignedToGroups().get().back();
 
 					break;
 				}
@@ -813,6 +815,34 @@ void SimHierarchy::parseSimSystem(::std::auto_ptr< ::schema::simxml::Model::SimM
 		}
 
 		for(SimModel::SimDistributionPort_HotWaterFlowPort_Water_In_iterator _simPortElementIt=simSysData->SimDistributionPort_HotWaterFlowPort_Water_In().begin(); _simPortElementIt!=simSysData->SimDistributionPort_HotWaterFlowPort_Water_In().end(); ++_simPortElementIt)
+		{
+			if(_simPortElementIt->HostElement().present())
+			{
+				// search parent element
+				if(_nodeIndexList.find(_simPortElementIt->HostElement().get())!=_nodeIndexList.end())
+				{
+					if(_nodeIndexList.find(_simPortElementIt->RefId())==_nodeIndexList.end())
+					{
+						SimHierarchyNode SimSystemElement_Node;
+						setCurrentObject(SimSystemElement_Node, *_simPortElementIt);
+						addHierarchyNode(SimSystemElement_Node);
+						int _id_SimSystemElement = SimHierarchyNodeList.size() - 1;
+						// save current object index position: <ref_id, index_pos>
+						_nodeIndexList.insert(std::pair<std::string, int>(_simPortElementIt->RefId(), _id_SimSystemElement));
+						// save index pair for parent-child relationships
+						_nodeIndexPairList.push_back(std::pair<int, int>(_nodeIndexList.find(_simPortElementIt->HostElement().get())->second, _id_SimSystemElement));
+					}
+					else
+					{
+						// save index pair for parent-child relationships
+						_nodeIndexPairList.push_back(std::pair<int, int>(_nodeIndexList.find(_simPortElementIt->HostElement().get())->second, _nodeIndexList.find(_simPortElementIt->RefId())->second));
+					}
+				}
+			}
+		}
+
+		// InOrOut port
+		for(SimModel::SimDistributionPort_HotWaterFlowPort_Water_InOrOut_iterator _simPortElementIt=simSysData->SimDistributionPort_HotWaterFlowPort_Water_InOrOut().begin(); _simPortElementIt!=simSysData->SimDistributionPort_HotWaterFlowPort_Water_InOrOut().end(); ++_simPortElementIt)
 		{
 			if(_simPortElementIt->HostElement().present())
 			{
