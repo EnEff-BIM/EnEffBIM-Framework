@@ -401,28 +401,36 @@ class MapBuilding(MoObject):
         SimSystemHvacHotWater_Demand in SimModel, for each found: create
         MapComponent and add to hvac_component list
         '''
-        comp_help = []
+        comp_help = {}
         bldg_child = self.hierarchy_node.getChildList()
         for a in range(bldg_child.size()):
             if isinstance(bldg_child[a].getSimModelObject(),
                           SimSystem_HvacHotWater_Supply):
                 supply_child = bldg_child[a].getChildList()
                 for e in range(supply_child.size()):
-                    comp_help.append(supply_child[e])
+                    comp_help[supply_child[e].getSimModelObject().RefId()] = \
+                        supply_child[e]
+
         for a in range(bldg_child.size()):
             if isinstance(bldg_child[a].getSimModelObject(),
                              SimSystem_HvacHotWater_Demand):
                 demand_child = bldg_child[a].getChildList()
                 for e in range(demand_child.size()):
-                    comp_help.append(demand_child[e])
-
+                    comp_help[demand_child[e].getSimModelObject().RefId()] = demand_child[e]
+        #print(comp_help)
+        for key, value in comp_help.items():
+            component = MapComponent(self.project, value)
+            self.hvac_components_sim.append(component)
+        self.project.hvac_components = self.hvac_components_sim
+        """
         for duplicate in comp_help:
-            if duplicate not in self.hvac_components_dem:
+            if duplicate not in self.hvac_components_node:
                 self.hvac_components_node.append(duplicate)
         for comp in self.hvac_components_node:
             component = MapComponent(self.project, comp)
             self.hvac_components_sim.append(component)
 
+        """
 
 
     def convert_components(self):

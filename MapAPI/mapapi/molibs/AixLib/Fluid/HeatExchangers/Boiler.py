@@ -19,8 +19,6 @@ class Boiler(MapHierarchy.MapComponent):
 
     def mapp_me(self):
         map_sim = self.hierarchy_node.getMappedComponents()
-        for a in range(map_sim.size()):
-            print(map_sim[a].getTargetLocation())
         self.target_location = map_sim[0].getTargetLocation()
         prop_list = map_sim[0].getMappedPropertyList()
         self.arrange_parameters(prop_list)

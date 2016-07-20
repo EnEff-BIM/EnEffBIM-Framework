@@ -11,7 +11,7 @@ class Radiator(MapHierarchy.MapComponent):
     """
     
     def init_me(self):
-
+        print(Radiator)
         self.fluid_two_port()
 
 
@@ -19,7 +19,6 @@ class Radiator(MapHierarchy.MapComponent):
     def mapp_me(self):
 
         map_sim = self.hierarchy_node.getMappedComponents()
-        print(map_sim.size())
         self.target_location = map_sim[0].getTargetLocation()
         prop_list = map_sim[0].getMappedPropertyList()
         self.arrange_parameters(prop_list)

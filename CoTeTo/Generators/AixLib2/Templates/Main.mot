@@ -33,16 +33,6 @@ model Test "just testing"
     annotation (Placement(transformation(extent={{-10,-10},{10,10}})));${punLin}
 % endfor
 
-// Print hvac_components attribute of buildings[0]
-% for myComp in MapData.buildings[0].hvac_components_mod:
-  ${myComp.target_location} ${myComp.target_name}(
-  % for param in myComp.parameters:
-    ${param.name}=${param.value}${punCom if not loop.last else strEmp}
-  % endfor
-    ) "${myComp.sim_ref_id}"
-    annotation (Placement(transformation(extent={{-10,-10},{10,10}})));${punLin}
-% endfor
-
 equation
 // Found ${sum(1 for _ in MapData.connections)} connect equations
 % for conny in MapData.connections:
