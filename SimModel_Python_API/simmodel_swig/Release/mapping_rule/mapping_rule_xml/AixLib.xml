@@ -608,7 +608,7 @@
   <ComponentMappingGroup RefId="ID013">
     <Description>map a water pipe into AixLib</Description>
     <TargetComponentName>pipe_HeatTransfer</TargetComponentName>
-    <TargetLocation>AixLib.HVAC.Pipes.Pipe</TargetLocation>
+    <TargetLocation>AixLib.Fluid.FixedResistances.Pipe</TargetLocation>
     <Property_Map_Gap_Name>ID061</Property_Map_Gap_Name>
     <Property_Map_Gap_Name>ID063</Property_Map_Gap_Name>
     <Property_Map_Gap_Name>ID062</Property_Map_Gap_Name>
@@ -619,7 +619,7 @@
   <ComponentMappingGroup RefId="ID031">
     <Description>Water pump of variable speed return mapping</Description>
     <TargetComponentName>pump</TargetComponentName>
-    <TargetLocation>AixLib.HVAC.Pumps.Pump</TargetLocation>
+    <TargetLocation>AixLib.Fluid.Movers.Pump</TargetLocation>
     <Property_Map_One2One_Name>ID0314</Property_Map_One2One_Name>
 	<Property_Map_Gap_Name>ID0312T</Property_Map_Gap_Name>
 	<Property_Map_Gap_Name>ID0313T</Property_Map_Gap_Name>
