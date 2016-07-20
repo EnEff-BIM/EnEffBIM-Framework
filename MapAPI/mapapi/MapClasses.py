@@ -356,6 +356,7 @@ class MapBuilding(MoObject):
 
         self.project.buildings.append(self)
         self.thermal_zones = []
+        self.hvac_components_node = []
         self.hvac_components_sim = []
         self.hvac_components_mod = []
         self.internalGainsConv = self.add_connector(name="internalGainsConv",
@@ -400,41 +401,28 @@ class MapBuilding(MoObject):
         SimSystemHvacHotWater_Demand in SimModel, for each found: create
         MapComponent and add to hvac_component list
         '''
-
+        comp_help = []
         bldg_child = self.hierarchy_node.getChildList()
-        print(bldg_child[0].getChildList())
         for a in range(bldg_child.size()):
-            print(bldg_child[a].getSimModelObject())
-            """
-            if isinstance(bldg_child[a].getSimModelObject(),
-                          SimSystem_HvacHotWater_FullSystem):
-                bldg_hvac_child = bldg_child[a].getChildList()
-                for d in range(bldg_hvac_child.size()):
-
-                    sup_comp = MapComponent(self.project, bldg_hvac_child[d])
-                    sup_comp.find_loop_connection()
-                    self.hvac_components_sim.append(sup_comp)
-            """
             if isinstance(bldg_child[a].getSimModelObject(),
                           SimSystem_HvacHotWater_Supply):
                 supply_child = bldg_child[a].getChildList()
-                print("das")
                 for e in range(supply_child.size()):
-                    sup_comp = MapComponent(self.project,
-                                           supply_child[e])
-                    sup_comp.find_loop_connection()
-                    self.hvac_components_sim.append(sup_comp)
-                    self.project.hvac_components.append(sup_comp)
-
-            elif isinstance(bldg_child[a].getSimModelObject(),
+                    comp_help.append(supply_child[e])
+        for a in range(bldg_child.size()):
+            if isinstance(bldg_child[a].getSimModelObject(),
                              SimSystem_HvacHotWater_Demand):
                 demand_child = bldg_child[a].getChildList()
                 for e in range(demand_child.size()):
-                    dem_comp = MapComponent(self.project,
-                                            demand_child[e])
-                    dem_comp.find_loop_connection()
-                    self.hvac_components_sim.append(dem_comp)
-                    self.project.hvac_components.append(dem_comp)
+                    comp_help.append(demand_child[e])
+
+        for duplicate in comp_help:
+            if duplicate not in self.hvac_components_dem:
+                self.hvac_components_node.append(duplicate)
+        for comp in self.hvac_components_node:
+            component = MapComponent(self.project, comp)
+            self.hvac_components_sim.append(component)
+
 
 
     def convert_components(self):
