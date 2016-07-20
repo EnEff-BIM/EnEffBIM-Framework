@@ -370,6 +370,9 @@ class SimHierarchyNodeBase(_object):
     def dataType_SimNode_HotWaterFlowPort_Water_In(self):
         return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimNode_HotWaterFlowPort_Water_In(self)
 
+    def dataType_SimDistributionPort_HotWaterFlowPort_Water_InOrOut(self):
+        return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimDistributionPort_HotWaterFlowPort_Water_InOrOut(self)
+
     def dataType_SimNode_DigitalControl_HWLoop_DigitalSignal_In(self):
         return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimNode_DigitalControl_HWLoop_DigitalSignal_In(self)
 

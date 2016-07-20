@@ -60,6 +60,7 @@ import SimNode_HotWaterFlowPort_Water_Out
 import SimNode_HotWaterFlowPort_Water_In
 import SimDistributionPort_HotWaterFlowPort_Water_Out
 import SimDistributionPort_HotWaterFlowPort_Water_In
+import SimDistributionPort_HotWaterFlowPort_Water_InOrOut
 import SimNode_DigitalControl_HWLoop_DigitalSignal_In
 
 from SimModel_Translator import SimTranslator
@@ -69,7 +70,7 @@ translator = SimTranslator()
 
 # load and parse multiple SimXML files
 zoneFile_path = ("SingleZoneWithInternalLoads.simxml")
-hvacFile_path = ("1.1BoilerGasRadiator.simxml")
+hvacFile_path = ("1.1_Architecture+HVAC+Zone_Curve+Schedule_korr_ZumTesten.simxml")
 fullFile_path= ("Boiler_Gas_VDI6020_V12.simxml")
 pathList = [zoneFile_path, hvacFile_path]
 

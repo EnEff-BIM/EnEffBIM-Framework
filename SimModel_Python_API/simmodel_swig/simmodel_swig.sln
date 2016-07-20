@@ -389,6 +389,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimDistributionPort_HotWate
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimDistributionPort_HotWaterFlowPort_Water_In", "SimDistributionPort_HotWaterFlowPort_Water_In\SimDistributionPort_HotWaterFlowPort_Water_In.vcxproj", "{9BE6D0A9-6831-4CFA-8B08-D837C8349991}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimDistributionPort_HotWaterFlowPort_Water_InOrOut", "SimDistributionPort_HotWaterFlowPort_Water_InOrOut\SimDistributionPort_HotWaterFlowPort_Water_InOrOut.vcxproj", "{66414386-BAEE-4F00-B9B0-C1C70882648B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -1171,6 +1173,10 @@ Global
 		{9BE6D0A9-6831-4CFA-8B08-D837C8349991}.Debug|Win32.Build.0 = Debug|Win32
 		{9BE6D0A9-6831-4CFA-8B08-D837C8349991}.Release|Win32.ActiveCfg = Release|Win32
 		{9BE6D0A9-6831-4CFA-8B08-D837C8349991}.Release|Win32.Build.0 = Release|Win32
+		{66414386-BAEE-4F00-B9B0-C1C70882648B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{66414386-BAEE-4F00-B9B0-C1C70882648B}.Debug|Win32.Build.0 = Debug|Win32
+		{66414386-BAEE-4F00-B9B0-C1C70882648B}.Release|Win32.ActiveCfg = Release|Win32
+		{66414386-BAEE-4F00-B9B0-C1C70882648B}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
