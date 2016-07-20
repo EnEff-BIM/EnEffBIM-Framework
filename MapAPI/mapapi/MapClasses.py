@@ -291,7 +291,7 @@ class MapProject(object):
 
         self.buildings = []
         self.connections = []
-        self.hvac_components = ["test"]
+        self.hvac_components = []
 
         """Instantiate the SimModel Hierarchy and load the SimXML file through
         libSimModelAPI"""

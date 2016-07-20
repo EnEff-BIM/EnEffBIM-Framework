@@ -8,7 +8,7 @@ author = EnEff-BIM team
 modelicaLibs = [AIXLIB]
 
 [API]
-name = libSimModel
+name = EnEffBIM
 minVer = 0.0
 maxVer = 9.9
 
