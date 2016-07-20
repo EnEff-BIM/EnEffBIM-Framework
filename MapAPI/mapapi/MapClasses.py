@@ -420,6 +420,7 @@ class MapBuilding(MoObject):
         #print(comp_help)
         for key, value in comp_help.items():
             component = MapComponent(self.project, value)
+            component.find_loop_connection()
             self.hvac_components_sim.append(component)
         self.project.hvac_components = self.hvac_components_sim
         """
