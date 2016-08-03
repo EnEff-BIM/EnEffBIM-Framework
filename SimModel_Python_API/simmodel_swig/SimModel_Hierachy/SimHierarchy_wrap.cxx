@@ -4645,106 +4645,109 @@ namespace Swig {
 #define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimNode_HotWaterFlowPort_Water_Out swig_types[1227]
 #define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimPort swig_types[1228]
 #define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimSpaceBoundary_SecondLevel_SubTypeA swig_types[1229]
-#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimUnitType swig_types[1230]
-#define SWIGTYPE_p_schema__simxml__ResourcesGeometry__SimFeatureElementSubtraction_Void_Opening swig_types[1231]
-#define SWIGTYPE_p_schema__simxml__ResourcesGeometry__SimProfileDefinition swig_types[1232]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SelectedPropertyGroups swig_types[1233]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimActorDefinition swig_types[1234]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimAppDefault swig_types[1235]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimBldgModelParams swig_types[1236]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimBuildingElement swig_types[1237]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimDistributionControlElement swig_types[1238]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimDistributionElement swig_types[1239]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimDistributionFlowElement swig_types[1240]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimElement swig_types[1241]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimFeatureElement swig_types[1242]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimGeometricRepresentationItem swig_types[1243]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimGroup swig_types[1244]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimGroup_SpatialZoneGroup_ZoneGroup swig_types[1245]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimGroup_SpatialZoneGroup_ZoneHvacGroup swig_types[1246]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimObject swig_types[1247]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimObjectDefinition swig_types[1248]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimObjectPlacement swig_types[1249]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimObjectTypeDefinition swig_types[1250]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimPropertySetDefinition swig_types[1251]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimRepresentation swig_types[1252]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimRepresentationItem swig_types[1253]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimResourceObject swig_types[1254]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimRoot swig_types[1255]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimSpatialStructureElement swig_types[1256]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimTemplate swig_types[1257]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimTopologicalRepresentationItem swig_types[1258]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__doubleList swig_types[1259]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__integerList swig_types[1260]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__logical swig_types[1261]
-#define SWIGTYPE_p_self_ swig_types[1262]
-#define SWIGTYPE_p_short swig_types[1263]
-#define SWIGTYPE_p_signed_char swig_types[1264]
-#define SWIGTYPE_p_size_type swig_types[1265]
-#define SWIGTYPE_p_std__allocatorT_SimHierarchyNode_p_t swig_types[1266]
-#define SWIGTYPE_p_std__allocatorT_SimHierarchyNode_t swig_types[1267]
-#define SWIGTYPE_p_std__invalid_argument swig_types[1268]
-#define SWIGTYPE_p_std__vectorT_MappedComponent_p_std__allocatorT_MappedComponent_p_t_t swig_types[1269]
-#define SWIGTYPE_p_std__vectorT_SimHierarchyNode_p_std__allocatorT_SimHierarchyNode_p_t_t swig_types[1270]
-#define SWIGTYPE_p_std__vectorT_SimHierarchyNode_std__allocatorT_SimHierarchyNode_t_t swig_types[1271]
-#define SWIGTYPE_p_swig__SwigPyIterator swig_types[1272]
-#define SWIGTYPE_p_unsigned_char swig_types[1273]
-#define SWIGTYPE_p_unsigned_int swig_types[1274]
-#define SWIGTYPE_p_unsigned_long_long swig_types[1275]
-#define SWIGTYPE_p_unsigned_short swig_types[1276]
-#define SWIGTYPE_p_value_type swig_types[1277]
-#define SWIGTYPE_p_xsd__cxx__tree___type swig_types[1278]
-#define SWIGTYPE_p_xsd__cxx__tree__base64_binaryT_char_xsd__cxx__tree__simple_type_t swig_types[1279]
-#define SWIGTYPE_p_xsd__cxx__tree__boundsT_char_t swig_types[1280]
-#define SWIGTYPE_p_xsd__cxx__tree__bufferT_char_t swig_types[1281]
-#define SWIGTYPE_p_xsd__cxx__tree__content_order swig_types[1282]
-#define SWIGTYPE_p_xsd__cxx__tree__dateT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[1283]
-#define SWIGTYPE_p_xsd__cxx__tree__date_timeT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[1284]
-#define SWIGTYPE_p_xsd__cxx__tree__diagnosticsT_char_t swig_types[1285]
-#define SWIGTYPE_p_xsd__cxx__tree__duplicate_idT_char_t swig_types[1286]
-#define SWIGTYPE_p_xsd__cxx__tree__durationT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[1287]
-#define SWIGTYPE_p_xsd__cxx__tree__entitiesT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__entity_t swig_types[1288]
-#define SWIGTYPE_p_xsd__cxx__tree__entityT_char_xsd__cxx__tree__ncname_t swig_types[1289]
-#define SWIGTYPE_p_xsd__cxx__tree__errorT_char_t swig_types[1290]
-#define SWIGTYPE_p_xsd__cxx__tree__exceptionT_char_t swig_types[1291]
-#define SWIGTYPE_p_xsd__cxx__tree__expected_attributeT_char_t swig_types[1292]
-#define SWIGTYPE_p_xsd__cxx__tree__expected_elementT_char_t swig_types[1293]
-#define SWIGTYPE_p_xsd__cxx__tree__expected_text_contentT_char_t swig_types[1294]
-#define SWIGTYPE_p_xsd__cxx__tree__flags swig_types[1295]
-#define SWIGTYPE_p_xsd__cxx__tree__gdayT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[1296]
-#define SWIGTYPE_p_xsd__cxx__tree__gmonthT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[1297]
-#define SWIGTYPE_p_xsd__cxx__tree__gmonth_dayT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[1298]
-#define SWIGTYPE_p_xsd__cxx__tree__gyearT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[1299]
-#define SWIGTYPE_p_xsd__cxx__tree__gyear_monthT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[1300]
-#define SWIGTYPE_p_xsd__cxx__tree__hex_binaryT_char_xsd__cxx__tree__simple_type_t swig_types[1301]
-#define SWIGTYPE_p_xsd__cxx__tree__idT_char_xsd__cxx__tree__ncname_t swig_types[1302]
-#define SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t swig_types[1303]
-#define SWIGTYPE_p_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t swig_types[1304]
-#define SWIGTYPE_p_xsd__cxx__tree__languageT_char_xsd__cxx__tree__token_t swig_types[1305]
-#define SWIGTYPE_p_xsd__cxx__tree__nameT_char_xsd__cxx__tree__token_t swig_types[1306]
-#define SWIGTYPE_p_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__name_t swig_types[1307]
-#define SWIGTYPE_p_xsd__cxx__tree__nmtokenT_char_xsd__cxx__tree__token_t swig_types[1308]
-#define SWIGTYPE_p_xsd__cxx__tree__nmtokensT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__nmtoken_t swig_types[1309]
-#define SWIGTYPE_p_xsd__cxx__tree__no_prefix_mappingT_char_t swig_types[1310]
-#define SWIGTYPE_p_xsd__cxx__tree__no_type_infoT_char_t swig_types[1311]
-#define SWIGTYPE_p_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__string_t swig_types[1312]
-#define SWIGTYPE_p_xsd__cxx__tree__not_derivedT_char_t swig_types[1313]
-#define SWIGTYPE_p_xsd__cxx__tree__parsingT_char_t swig_types[1314]
-#define SWIGTYPE_p_xsd__cxx__tree__propertiesT_char_t swig_types[1315]
-#define SWIGTYPE_p_xsd__cxx__tree__qnameT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__uri_xsd__cxx__tree__ncname_t swig_types[1316]
-#define SWIGTYPE_p_xsd__cxx__tree__severity swig_types[1317]
-#define SWIGTYPE_p_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t swig_types[1318]
-#define SWIGTYPE_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t swig_types[1319]
-#define SWIGTYPE_p_xsd__cxx__tree__timeT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[1320]
-#define SWIGTYPE_p_xsd__cxx__tree__time_zone swig_types[1321]
-#define SWIGTYPE_p_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_string_t swig_types[1322]
-#define SWIGTYPE_p_xsd__cxx__tree__unexpected_elementT_char_t swig_types[1323]
-#define SWIGTYPE_p_xsd__cxx__tree__unexpected_enumeratorT_char_t swig_types[1324]
-#define SWIGTYPE_p_xsd__cxx__tree__uriT_char_xsd__cxx__tree__simple_type_t swig_types[1325]
-#define SWIGTYPE_p_xsd__cxx__tree__user_data_keys_templateT_0_t swig_types[1326]
-#define SWIGTYPE_p_xsd__cxx__xml__error_handlerT_char_t swig_types[1327]
-static swig_type_info *swig_types[1329];
-static swig_module_info swig_module = {swig_types, 1328, 0, 0, 0, 0};
+#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Day_Interval swig_types[1230]
+#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Week_Daily swig_types[1231]
+#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Year_Default swig_types[1232]
+#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimUnitType swig_types[1233]
+#define SWIGTYPE_p_schema__simxml__ResourcesGeometry__SimFeatureElementSubtraction_Void_Opening swig_types[1234]
+#define SWIGTYPE_p_schema__simxml__ResourcesGeometry__SimProfileDefinition swig_types[1235]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SelectedPropertyGroups swig_types[1236]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimActorDefinition swig_types[1237]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimAppDefault swig_types[1238]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimBldgModelParams swig_types[1239]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimBuildingElement swig_types[1240]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimDistributionControlElement swig_types[1241]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimDistributionElement swig_types[1242]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimDistributionFlowElement swig_types[1243]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimElement swig_types[1244]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimFeatureElement swig_types[1245]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimGeometricRepresentationItem swig_types[1246]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimGroup swig_types[1247]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimGroup_SpatialZoneGroup_ZoneGroup swig_types[1248]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimGroup_SpatialZoneGroup_ZoneHvacGroup swig_types[1249]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimObject swig_types[1250]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimObjectDefinition swig_types[1251]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimObjectPlacement swig_types[1252]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimObjectTypeDefinition swig_types[1253]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimPropertySetDefinition swig_types[1254]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimRepresentation swig_types[1255]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimRepresentationItem swig_types[1256]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimResourceObject swig_types[1257]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimRoot swig_types[1258]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimSpatialStructureElement swig_types[1259]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimTemplate swig_types[1260]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimTopologicalRepresentationItem swig_types[1261]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__doubleList swig_types[1262]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__integerList swig_types[1263]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__logical swig_types[1264]
+#define SWIGTYPE_p_self_ swig_types[1265]
+#define SWIGTYPE_p_short swig_types[1266]
+#define SWIGTYPE_p_signed_char swig_types[1267]
+#define SWIGTYPE_p_size_type swig_types[1268]
+#define SWIGTYPE_p_std__allocatorT_SimHierarchyNode_p_t swig_types[1269]
+#define SWIGTYPE_p_std__allocatorT_SimHierarchyNode_t swig_types[1270]
+#define SWIGTYPE_p_std__invalid_argument swig_types[1271]
+#define SWIGTYPE_p_std__vectorT_MappedComponent_p_std__allocatorT_MappedComponent_p_t_t swig_types[1272]
+#define SWIGTYPE_p_std__vectorT_SimHierarchyNode_p_std__allocatorT_SimHierarchyNode_p_t_t swig_types[1273]
+#define SWIGTYPE_p_std__vectorT_SimHierarchyNode_std__allocatorT_SimHierarchyNode_t_t swig_types[1274]
+#define SWIGTYPE_p_swig__SwigPyIterator swig_types[1275]
+#define SWIGTYPE_p_unsigned_char swig_types[1276]
+#define SWIGTYPE_p_unsigned_int swig_types[1277]
+#define SWIGTYPE_p_unsigned_long_long swig_types[1278]
+#define SWIGTYPE_p_unsigned_short swig_types[1279]
+#define SWIGTYPE_p_value_type swig_types[1280]
+#define SWIGTYPE_p_xsd__cxx__tree___type swig_types[1281]
+#define SWIGTYPE_p_xsd__cxx__tree__base64_binaryT_char_xsd__cxx__tree__simple_type_t swig_types[1282]
+#define SWIGTYPE_p_xsd__cxx__tree__boundsT_char_t swig_types[1283]
+#define SWIGTYPE_p_xsd__cxx__tree__bufferT_char_t swig_types[1284]
+#define SWIGTYPE_p_xsd__cxx__tree__content_order swig_types[1285]
+#define SWIGTYPE_p_xsd__cxx__tree__dateT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[1286]
+#define SWIGTYPE_p_xsd__cxx__tree__date_timeT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[1287]
+#define SWIGTYPE_p_xsd__cxx__tree__diagnosticsT_char_t swig_types[1288]
+#define SWIGTYPE_p_xsd__cxx__tree__duplicate_idT_char_t swig_types[1289]
+#define SWIGTYPE_p_xsd__cxx__tree__durationT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[1290]
+#define SWIGTYPE_p_xsd__cxx__tree__entitiesT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__entity_t swig_types[1291]
+#define SWIGTYPE_p_xsd__cxx__tree__entityT_char_xsd__cxx__tree__ncname_t swig_types[1292]
+#define SWIGTYPE_p_xsd__cxx__tree__errorT_char_t swig_types[1293]
+#define SWIGTYPE_p_xsd__cxx__tree__exceptionT_char_t swig_types[1294]
+#define SWIGTYPE_p_xsd__cxx__tree__expected_attributeT_char_t swig_types[1295]
+#define SWIGTYPE_p_xsd__cxx__tree__expected_elementT_char_t swig_types[1296]
+#define SWIGTYPE_p_xsd__cxx__tree__expected_text_contentT_char_t swig_types[1297]
+#define SWIGTYPE_p_xsd__cxx__tree__flags swig_types[1298]
+#define SWIGTYPE_p_xsd__cxx__tree__gdayT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[1299]
+#define SWIGTYPE_p_xsd__cxx__tree__gmonthT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[1300]
+#define SWIGTYPE_p_xsd__cxx__tree__gmonth_dayT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[1301]
+#define SWIGTYPE_p_xsd__cxx__tree__gyearT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[1302]
+#define SWIGTYPE_p_xsd__cxx__tree__gyear_monthT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[1303]
+#define SWIGTYPE_p_xsd__cxx__tree__hex_binaryT_char_xsd__cxx__tree__simple_type_t swig_types[1304]
+#define SWIGTYPE_p_xsd__cxx__tree__idT_char_xsd__cxx__tree__ncname_t swig_types[1305]
+#define SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t swig_types[1306]
+#define SWIGTYPE_p_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t swig_types[1307]
+#define SWIGTYPE_p_xsd__cxx__tree__languageT_char_xsd__cxx__tree__token_t swig_types[1308]
+#define SWIGTYPE_p_xsd__cxx__tree__nameT_char_xsd__cxx__tree__token_t swig_types[1309]
+#define SWIGTYPE_p_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__name_t swig_types[1310]
+#define SWIGTYPE_p_xsd__cxx__tree__nmtokenT_char_xsd__cxx__tree__token_t swig_types[1311]
+#define SWIGTYPE_p_xsd__cxx__tree__nmtokensT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__nmtoken_t swig_types[1312]
+#define SWIGTYPE_p_xsd__cxx__tree__no_prefix_mappingT_char_t swig_types[1313]
+#define SWIGTYPE_p_xsd__cxx__tree__no_type_infoT_char_t swig_types[1314]
+#define SWIGTYPE_p_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__string_t swig_types[1315]
+#define SWIGTYPE_p_xsd__cxx__tree__not_derivedT_char_t swig_types[1316]
+#define SWIGTYPE_p_xsd__cxx__tree__parsingT_char_t swig_types[1317]
+#define SWIGTYPE_p_xsd__cxx__tree__propertiesT_char_t swig_types[1318]
+#define SWIGTYPE_p_xsd__cxx__tree__qnameT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__uri_xsd__cxx__tree__ncname_t swig_types[1319]
+#define SWIGTYPE_p_xsd__cxx__tree__severity swig_types[1320]
+#define SWIGTYPE_p_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t swig_types[1321]
+#define SWIGTYPE_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t swig_types[1322]
+#define SWIGTYPE_p_xsd__cxx__tree__timeT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[1323]
+#define SWIGTYPE_p_xsd__cxx__tree__time_zone swig_types[1324]
+#define SWIGTYPE_p_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_string_t swig_types[1325]
+#define SWIGTYPE_p_xsd__cxx__tree__unexpected_elementT_char_t swig_types[1326]
+#define SWIGTYPE_p_xsd__cxx__tree__unexpected_enumeratorT_char_t swig_types[1327]
+#define SWIGTYPE_p_xsd__cxx__tree__uriT_char_xsd__cxx__tree__simple_type_t swig_types[1328]
+#define SWIGTYPE_p_xsd__cxx__tree__user_data_keys_templateT_0_t swig_types[1329]
+#define SWIGTYPE_p_xsd__cxx__xml__error_handlerT_char_t swig_types[1330]
+static swig_type_info *swig_types[1332];
+static swig_module_info swig_module = {swig_types, 1331, 0, 0, 0, 0};
 #define SWIG_TypeQuery(name) SWIG_TypeQueryModule(&swig_module, &swig_module, name)
 #define SWIG_MangledTypeQuery(name) SWIG_MangledTypeQueryModule(&swig_module, &swig_module, name)
 
@@ -8933,6 +8936,72 @@ SWIGINTERN PyObject *_wrap_SimHierarchyNodeBase_dataType_SimDistributionPort_Hot
   arg1 = reinterpret_cast< SimHierarchyNodeBase * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimDistributionPort_HotWaterFlowPort_Water_In *)(arg1)->SWIGTEMPLATEDISAMBIGUATOR dataType< schema::simxml::ResourcesGeneral::SimDistributionPort_HotWaterFlowPort_Water_In >();
   resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimDistributionPort_HotWaterFlowPort_Water_In, 0 |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_SimHierarchyNodeBase_dataType_SimTimeSeriesSchedule_Year_Default(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  SimHierarchyNodeBase *arg1 = (SimHierarchyNodeBase *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Year_Default *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:SimHierarchyNodeBase_dataType_SimTimeSeriesSchedule_Year_Default",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_SimHierarchyNodeBase, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimHierarchyNodeBase_dataType_SimTimeSeriesSchedule_Year_Default" "', argument " "1"" of type '" "SimHierarchyNodeBase *""'"); 
+  }
+  arg1 = reinterpret_cast< SimHierarchyNodeBase * >(argp1);
+  result = (schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Year_Default *)(arg1)->SWIGTEMPLATEDISAMBIGUATOR dataType< schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Year_Default >();
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Year_Default, 0 |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_SimHierarchyNodeBase_dataType_SimTimeSeriesSchedule_Week_Daily(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  SimHierarchyNodeBase *arg1 = (SimHierarchyNodeBase *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Week_Daily *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:SimHierarchyNodeBase_dataType_SimTimeSeriesSchedule_Week_Daily",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_SimHierarchyNodeBase, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimHierarchyNodeBase_dataType_SimTimeSeriesSchedule_Week_Daily" "', argument " "1"" of type '" "SimHierarchyNodeBase *""'"); 
+  }
+  arg1 = reinterpret_cast< SimHierarchyNodeBase * >(argp1);
+  result = (schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Week_Daily *)(arg1)->SWIGTEMPLATEDISAMBIGUATOR dataType< schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Week_Daily >();
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Week_Daily, 0 |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_SimHierarchyNodeBase_dataType_SimTimeSeriesSchedule_Day_Interval(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  SimHierarchyNodeBase *arg1 = (SimHierarchyNodeBase *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Day_Interval *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:SimHierarchyNodeBase_dataType_SimTimeSeriesSchedule_Day_Interval",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_SimHierarchyNodeBase, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimHierarchyNodeBase_dataType_SimTimeSeriesSchedule_Day_Interval" "', argument " "1"" of type '" "SimHierarchyNodeBase *""'"); 
+  }
+  arg1 = reinterpret_cast< SimHierarchyNodeBase * >(argp1);
+  result = (schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Day_Interval *)(arg1)->SWIGTEMPLATEDISAMBIGUATOR dataType< schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Day_Interval >();
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Day_Interval, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -13818,6 +13887,9 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"SimHierarchyNodeBase_dataType_SimNode_DigitalControl_HWLoop_DigitalSignal_In", _wrap_SimHierarchyNodeBase_dataType_SimNode_DigitalControl_HWLoop_DigitalSignal_In, METH_VARARGS, NULL},
 	 { (char *)"SimHierarchyNodeBase_dataType_SimDistributionPort_HotWaterFlowPort_Water_Out", _wrap_SimHierarchyNodeBase_dataType_SimDistributionPort_HotWaterFlowPort_Water_Out, METH_VARARGS, NULL},
 	 { (char *)"SimHierarchyNodeBase_dataType_SimDistributionPort_HotWaterFlowPort_Water_In", _wrap_SimHierarchyNodeBase_dataType_SimDistributionPort_HotWaterFlowPort_Water_In, METH_VARARGS, NULL},
+	 { (char *)"SimHierarchyNodeBase_dataType_SimTimeSeriesSchedule_Year_Default", _wrap_SimHierarchyNodeBase_dataType_SimTimeSeriesSchedule_Year_Default, METH_VARARGS, NULL},
+	 { (char *)"SimHierarchyNodeBase_dataType_SimTimeSeriesSchedule_Week_Daily", _wrap_SimHierarchyNodeBase_dataType_SimTimeSeriesSchedule_Week_Daily, METH_VARARGS, NULL},
+	 { (char *)"SimHierarchyNodeBase_dataType_SimTimeSeriesSchedule_Day_Interval", _wrap_SimHierarchyNodeBase_dataType_SimTimeSeriesSchedule_Day_Interval, METH_VARARGS, NULL},
 	 { (char *)"new_SimHierarchyNodeBase", _wrap_new_SimHierarchyNodeBase, METH_VARARGS, NULL},
 	 { (char *)"delete_SimHierarchyNodeBase", _wrap_delete_SimHierarchyNodeBase, METH_VARARGS, NULL},
 	 { (char *)"SimHierarchyNodeBase_swigregister", SimHierarchyNodeBase_swigregister, METH_VARARGS, NULL},
@@ -15324,6 +15396,9 @@ static swig_type_info _swigt__p_schema__simxml__ResourcesGeneral__SimNode_Digita
 static swig_type_info _swigt__p_schema__simxml__ResourcesGeneral__SimNode_HotWaterFlowPort_Water_In = {"_p_schema__simxml__ResourcesGeneral__SimNode_HotWaterFlowPort_Water_In", "schema::simxml::ResourcesGeneral::SimNode_HotWaterFlowPort_Water_In *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_schema__simxml__ResourcesGeneral__SimNode_HotWaterFlowPort_Water_Out = {"_p_schema__simxml__ResourcesGeneral__SimNode_HotWaterFlowPort_Water_Out", "schema::simxml::ResourcesGeneral::SimNode_HotWaterFlowPort_Water_Out *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_schema__simxml__ResourcesGeneral__SimSpaceBoundary_SecondLevel_SubTypeA = {"_p_schema__simxml__ResourcesGeneral__SimSpaceBoundary_SecondLevel_SubTypeA", "schema::simxml::ResourcesGeneral::SimSpaceBoundary_SecondLevel_SubTypeA *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Day_Interval = {"_p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Day_Interval", "schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Day_Interval *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Week_Daily = {"_p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Week_Daily", "schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Week_Daily *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Year_Default = {"_p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Year_Default", "schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Year_Default *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_schema__simxml__ResourcesGeometry__SimFeatureElementSubtraction_Void_Opening = {"_p_schema__simxml__ResourcesGeometry__SimFeatureElementSubtraction_Void_Opening", "schema::simxml::ResourcesGeometry::SimFeatureElementSubtraction_Void_Opening *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_schema__simxml__SimModelCore__SelectedPropertyGroups = {"_p_schema__simxml__SimModelCore__SelectedPropertyGroups", "::schema::simxml::SimModelCore::SelectedPropertyGroups *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_schema__simxml__SimModelCore__SimGroup_SpatialZoneGroup_ZoneGroup = {"_p_schema__simxml__SimModelCore__SimGroup_SpatialZoneGroup_ZoneGroup", "schema::simxml::SimModelCore::SimGroup_SpatialZoneGroup_ZoneGroup *", 0, 0, (void*)0, 0};
@@ -16658,6 +16733,9 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_schema__simxml__ResourcesGeneral__SimNode_HotWaterFlowPort_Water_Out,
   &_swigt__p_schema__simxml__ResourcesGeneral__SimPort,
   &_swigt__p_schema__simxml__ResourcesGeneral__SimSpaceBoundary_SecondLevel_SubTypeA,
+  &_swigt__p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Day_Interval,
+  &_swigt__p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Week_Daily,
+  &_swigt__p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Year_Default,
   &_swigt__p_schema__simxml__ResourcesGeneral__SimUnitType,
   &_swigt__p_schema__simxml__ResourcesGeometry__SimFeatureElementSubtraction_Void_Opening,
   &_swigt__p_schema__simxml__ResourcesGeometry__SimProfileDefinition,
@@ -17984,6 +18062,9 @@ static swig_cast_info _swigc__p_schema__simxml__ResourcesGeneral__SimNode_Digita
 static swig_cast_info _swigc__p_schema__simxml__ResourcesGeneral__SimNode_HotWaterFlowPort_Water_In[] = {  {&_swigt__p_schema__simxml__ResourcesGeneral__SimNode_HotWaterFlowPort_Water_In, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_schema__simxml__ResourcesGeneral__SimNode_HotWaterFlowPort_Water_Out[] = {  {&_swigt__p_schema__simxml__ResourcesGeneral__SimNode_HotWaterFlowPort_Water_Out, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_schema__simxml__ResourcesGeneral__SimSpaceBoundary_SecondLevel_SubTypeA[] = {  {&_swigt__p_schema__simxml__ResourcesGeneral__SimSpaceBoundary_SecondLevel_SubTypeA, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Day_Interval[] = {  {&_swigt__p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Day_Interval, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Week_Daily[] = {  {&_swigt__p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Week_Daily, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Year_Default[] = {  {&_swigt__p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Year_Default, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_schema__simxml__ResourcesGeometry__SimFeatureElementSubtraction_Void_Opening[] = {  {&_swigt__p_schema__simxml__ResourcesGeometry__SimFeatureElementSubtraction_Void_Opening, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_schema__simxml__SimModelCore__SelectedPropertyGroups[] = {  {&_swigt__p_schema__simxml__SimModelCore__SelectedPropertyGroups, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_schema__simxml__SimModelCore__SimGroup_SpatialZoneGroup_ZoneGroup[] = {  {&_swigt__p_schema__simxml__SimModelCore__SimGroup_SpatialZoneGroup_ZoneGroup, 0, 0, 0},{0, 0, 0, 0}};
@@ -19318,6 +19399,9 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_schema__simxml__ResourcesGeneral__SimNode_HotWaterFlowPort_Water_Out,
   _swigc__p_schema__simxml__ResourcesGeneral__SimPort,
   _swigc__p_schema__simxml__ResourcesGeneral__SimSpaceBoundary_SecondLevel_SubTypeA,
+  _swigc__p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Day_Interval,
+  _swigc__p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Week_Daily,
+  _swigc__p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Year_Default,
   _swigc__p_schema__simxml__ResourcesGeneral__SimUnitType,
   _swigc__p_schema__simxml__ResourcesGeometry__SimFeatureElementSubtraction_Void_Opening,
   _swigc__p_schema__simxml__ResourcesGeometry__SimProfileDefinition,

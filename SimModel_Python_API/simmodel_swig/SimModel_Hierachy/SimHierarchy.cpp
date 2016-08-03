@@ -543,6 +543,150 @@ void SimHierarchy::loadSimSysClassObj(std::string _sysName)
 	}
 }
 
+// parse day time series
+bool SimHierarchy::parseDayTimeSeries(::std::auto_ptr< ::schema::simxml::Model::SimModel >& simSysData, int _id_ParentNode, std::string _timeSeriesId, std::vector<std::pair<int, int> >& _nodeIndexPairList, std::map<std::string, int>& _nodeIndexList)
+{
+	// day series
+	for(SimModel::SimTimeSeriesSchedule_Day_Interval_iterator _daySeriesIt=simSysData->SimTimeSeriesSchedule_Day_Interval().begin(); _daySeriesIt!=simSysData->SimTimeSeriesSchedule_Day_Interval().end(); ++_daySeriesIt)
+	{
+		if(_daySeriesIt->RefId()==_timeSeriesId)
+		{
+			// add day series
+			if(_nodeIndexList.find(_daySeriesIt->RefId())==_nodeIndexList.end())
+			{
+				SimHierarchyNode SimTimeSeries_Node;
+				setCurrentObject(SimTimeSeries_Node, *_daySeriesIt);
+				addHierarchyNode(SimTimeSeries_Node);
+				int _id_SimTimeSeries = SimHierarchyNodeList.size() - 1;
+				// save current object index position: <ref_id, index_pos>
+				_nodeIndexList.insert(std::pair<std::string, int>(_daySeriesIt->RefId(), _id_SimTimeSeries));
+				// save index pair for parent-child relationships
+				_nodeIndexPairList.push_back(std::pair<int, int>(_id_ParentNode, _id_SimTimeSeries));
+			}
+			else
+			{
+				// save index pair for parent-child relationships
+				_nodeIndexPairList.push_back(std::pair<int, int>(_id_ParentNode, _nodeIndexList.find(_daySeriesIt->RefId())->second));
+			}
+
+			// ending
+			return true;
+		}
+	}
+
+	// ending: not found
+	return false;
+}
+
+// parse week time series
+bool SimHierarchy::parseWeekTimeSeries(::std::auto_ptr< ::schema::simxml::Model::SimModel >& simSysData, int _id_ParentNode, std::string _timeSeriesId, std::vector<std::pair<int, int> >& _nodeIndexPairList, std::map<std::string, int>& _nodeIndexList)
+{
+	// week series
+	for(SimModel::SimTimeSeriesSchedule_Week_Daily_iterator _weekSeriesIt=simSysData->SimTimeSeriesSchedule_Week_Daily().begin(); _weekSeriesIt!=simSysData->SimTimeSeriesSchedule_Week_Daily().end(); ++_weekSeriesIt)
+	{
+		if(_weekSeriesIt->RefId()==_timeSeriesId)
+		{
+			// add week series
+			if(_nodeIndexList.find(_weekSeriesIt->RefId())==_nodeIndexList.end())
+			{
+				SimHierarchyNode SimTimeSeries_Node;
+				setCurrentObject(SimTimeSeries_Node, *_weekSeriesIt);
+				addHierarchyNode(SimTimeSeries_Node);
+				int _id_SimTimeSeries = SimHierarchyNodeList.size() - 1;
+				// save current object index position: <ref_id, index_pos>
+				_nodeIndexList.insert(std::pair<std::string, int>(_weekSeriesIt->RefId(), _id_SimTimeSeries));
+				// save index pair for parent-child relationships
+				_nodeIndexPairList.push_back(std::pair<int, int>(_id_ParentNode, _id_SimTimeSeries));
+
+				// parse sub-series: day
+				if(_weekSeriesIt->SimTimeSeriesSched_CustomDay_1_2_SchedDayName().present())
+				{
+					for(::xml_schema::idrefs::iterator _subWeekSeriesIt=_weekSeriesIt->SimTimeSeriesSched_CustomDay_1_2_SchedDayName().get().begin(); _subWeekSeriesIt!=_weekSeriesIt->SimTimeSeriesSched_CustomDay_1_2_SchedDayName().get().end(); ++_subWeekSeriesIt)
+					{
+						// day series
+						parseDayTimeSeries(simSysData, _id_SimTimeSeries, *_subWeekSeriesIt, _nodeIndexPairList, _nodeIndexList);
+					}
+				}
+			}
+			else
+			{
+				// save index pair for parent-child relationships
+				_nodeIndexPairList.push_back(std::pair<int, int>(_id_ParentNode, _nodeIndexList.find(_weekSeriesIt->RefId())->second));
+			}
+
+			// ending
+			return true;
+		}
+	}
+
+	// ending: not found
+	return false;
+}
+
+// parse year time series
+bool SimHierarchy::parseYearTimeSeries(::std::auto_ptr< ::schema::simxml::Model::SimModel >& simSysData, int _id_ParentNode, std::string _timeSeriesId, std::vector<std::pair<int, int> >& _nodeIndexPairList, std::map<std::string, int>& _nodeIndexList)
+{
+	// year series
+	for(SimModel::SimTimeSeriesSchedule_Year_Default_iterator _yearSeriesIt=simSysData->SimTimeSeriesSchedule_Year_Default().begin(); _yearSeriesIt!=simSysData->SimTimeSeriesSchedule_Year_Default().end(); ++_yearSeriesIt)
+	{
+		if(_yearSeriesIt->RefId()==_timeSeriesId)
+		{
+			// add year series
+			if(_nodeIndexList.find(_yearSeriesIt->RefId())==_nodeIndexList.end())
+			{
+				SimHierarchyNode SimTimeSeries_Node;
+				setCurrentObject(SimTimeSeries_Node, *_yearSeriesIt);
+				addHierarchyNode(SimTimeSeries_Node);
+				int _id_SimTimeSeries = SimHierarchyNodeList.size() - 1;
+				// save current object index position: <ref_id, index_pos>
+				_nodeIndexList.insert(std::pair<std::string, int>(_yearSeriesIt->RefId(), _id_SimTimeSeries));
+				// save index pair for parent-child relationships
+				_nodeIndexPairList.push_back(std::pair<int, int>(_id_ParentNode, _id_SimTimeSeries));
+
+				// parse sub-series: multiple series
+				if(_yearSeriesIt->SimTimeSeriesSched_Sched_WeekName_1_53().present())
+				{
+					for(::xml_schema::idrefs::iterator _subYearSeriesIt=_yearSeriesIt->SimTimeSeriesSched_Sched_WeekName_1_53().get().begin(); _subYearSeriesIt!=_yearSeriesIt->SimTimeSeriesSched_Sched_WeekName_1_53().get().end(); ++_subYearSeriesIt)
+					{
+						// week series
+						if(!parseWeekTimeSeries(simSysData, _id_SimTimeSeries, *_subYearSeriesIt, _nodeIndexPairList, _nodeIndexList))
+						{
+							// day series
+							parseDayTimeSeries(simSysData, _id_SimTimeSeries, *_subYearSeriesIt, _nodeIndexPairList, _nodeIndexList);
+						}
+					}
+				}
+			}
+			else
+			{
+				// save index pair for parent-child relationships
+				_nodeIndexPairList.push_back(std::pair<int, int>(_id_ParentNode, _nodeIndexList.find(_yearSeriesIt->RefId())->second));
+			}
+
+			// ending
+			return true;
+		}
+	}
+
+	// ending: not found
+	return false;
+}
+
+// parse time series
+void SimHierarchy::parseTimeSeries(::std::auto_ptr< ::schema::simxml::Model::SimModel >& simSysData, int _id_SimSystemElement, std::string _timeSeriesId, std::vector<std::pair<int, int> >& _nodeIndexPairList, std::map<std::string, int>& _nodeIndexList)
+{
+	// year series
+	if(!parseYearTimeSeries(simSysData, _id_SimSystemElement, _timeSeriesId, _nodeIndexPairList, _nodeIndexList))
+	{
+		// week series
+		if(!parseWeekTimeSeries(simSysData, _id_SimSystemElement, _timeSeriesId, _nodeIndexPairList, _nodeIndexList))
+		{
+			// day series
+			parseDayTimeSeries(simSysData, _id_SimSystemElement, _timeSeriesId, _nodeIndexPairList, _nodeIndexList);
+		}
+	}
+}
+
 // for new feature testing
 void SimHierarchy::parseSimSystemTmp(::std::auto_ptr< ::schema::simxml::Model::SimModel >& simSysData, int _id_SimBuilding, std::vector<std::pair<int, int> >& _nodeIndexPairList, std::map<std::string, int>& _nodeIndexList)
 {
@@ -747,6 +891,15 @@ void SimHierarchy::parseSimSystemTmp(::std::auto_ptr< ::schema::simxml::Model::S
 								// save index pair for parent-child relationships
 								_nodeIndexPairList.push_back(std::pair<int, int>(_nodeIndexList.find(*_simSystemElementSubIt)->second, _nodeIndexList.find(_simSystemElementIt->RefId())->second));
 							}
+						}
+					}
+					
+					// parse attached time series
+					if(_nodeIndexList.find(_simSystemElementIt->RefId())!=_nodeIndexList.end())
+					{
+						if(_simSystemElementIt->SimFlowMover_PumprpmSchedName().present())
+						{
+							parseTimeSeries(simSysData, _nodeIndexList.find(_simSystemElementIt->RefId())->second, _simSystemElementIt->SimFlowMover_PumprpmSchedName().get(), _nodeIndexPairList, _nodeIndexList);
 						}
 					}
 				}
