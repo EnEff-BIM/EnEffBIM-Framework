@@ -360,12 +360,12 @@
 
   <!-- property mapping for the hot water boiler -->
   <!-- Initialize properties: T.start, T.fixed -->
-  <Property_Map_Gap RefId="ID0112">
+  <!--Property_Map_Gap RefId="ID0112">
     <Description>Initialization: temperature inside the CV in K</Description>
     <TargetPropertyName>T</TargetPropertyName>
 	<TargetLocation>volume</TargetLocation>
     <DefaultValue>328.15</DefaultValue>
-  </Property_Map_Gap>
+  </Property_Map_Gap -->
 
   <!-- property mapping for the hot water boiler -->
   <!-- volume inside the heat generation unit [m3] -->
@@ -719,7 +719,7 @@
     <TargetComponentName>boiler</TargetComponentName>
     <TargetLocation>AixLib.HVAC.HeatGeneration.Boiler</TargetLocation>
     <Property_Map_One2one_Name>ID0111</Property_Map_One2one_Name>
-	<Property_Map_Gap_Name>ID0112</Property_Map_Gap_Name>
+	<!--Property_Map_Gap_Name>ID0112</Property_Map_Gap_Name -->
     <Property_Map_Gap_Name>ID0113</Property_Map_Gap_Name>
 	<Property_Map_Gap_Name>ID0114T</Property_Map_Gap_Name>
     <Property_Map_Conversion_Name>ID0114</Property_Map_Conversion_Name>
