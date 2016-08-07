@@ -15,6 +15,7 @@ using namespace xsd::cxx::tree;
 %import  "..\base\base.i"
 %import  "..\SimTimeSeriesSchedule_Calendar_Configuration\SimTimeSeriesSchedule_Calendar_Configuration.i"
 /* Let's just grab the original header file here */
+%include "..\SimModel\framework\SimTimeSeriesSched_Time_1_144.hxx"
 %include "..\SimModel\framework\SimTimeSeriesSchedule_Day.hxx"
 %include "..\SimModel\framework\SimTimeSeriesSchedule_Day_Interval.hxx"
 
@@ -28,6 +29,7 @@ namespace xsd
 		%template(SimTimeSeriesSchedule_Day_Interval_sequence) sequence<::schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Day_Interval, false>;
 		
 		// property method
+		%template(Time_1_144_list) optional<::schema::simxml::ResourcesGeneral::SimTimeSeriesSched_Time_1_144, false>;
 	}
   }
 }

@@ -306,7 +306,7 @@ namespace schema
         // SimTimeSeriesSched_Time_1_144
         //
         typedef ::schema::simxml::ResourcesGeneral::SimTimeSeriesSched_Time_1_144 SimTimeSeriesSched_Time_1_144_type;
-        typedef ::xsd::cxx::tree::optional< SimTimeSeriesSched_Time_1_144_type > SimTimeSeriesSched_Time_1_144_optional;
+        typedef ::xsd::cxx::tree::optional< SimTimeSeriesSched_Time_1_144_type, false > SimTimeSeriesSched_Time_1_144_optional;
         typedef ::xsd::cxx::tree::traits< SimTimeSeriesSched_Time_1_144_type, char > SimTimeSeriesSched_Time_1_144_traits;
 
         const SimTimeSeriesSched_Time_1_144_optional&
@@ -327,7 +327,7 @@ namespace schema
         // SimTimeSeriesSched_ValUntilTime_1_144
         //
         typedef ::schema::simxml::SimModelCore::doubleList SimTimeSeriesSched_ValUntilTime_1_144_type;
-        typedef ::xsd::cxx::tree::optional< SimTimeSeriesSched_ValUntilTime_1_144_type > SimTimeSeriesSched_ValUntilTime_1_144_optional;
+        typedef ::xsd::cxx::tree::optional< SimTimeSeriesSched_ValUntilTime_1_144_type, false > SimTimeSeriesSched_ValUntilTime_1_144_optional;
         typedef ::xsd::cxx::tree::traits< SimTimeSeriesSched_ValUntilTime_1_144_type, char > SimTimeSeriesSched_ValUntilTime_1_144_traits;
 
         const SimTimeSeriesSched_ValUntilTime_1_144_optional&

@@ -99,6 +99,34 @@ except:
 
 import base
 import SimTimeSeriesSchedule_Calendar_Configuration
+class SimTimeSeriesSched_Time_1_144(base._type):
+    __swig_setmethods__ = {}
+    for _s in [base._type]:
+        __swig_setmethods__.update(getattr(_s, '__swig_setmethods__', {}))
+    __setattr__ = lambda self, name, value: _swig_setattr(self, SimTimeSeriesSched_Time_1_144, name, value)
+    __swig_getmethods__ = {}
+    for _s in [base._type]:
+        __swig_getmethods__.update(getattr(_s, '__swig_getmethods__', {}))
+    __getattr__ = lambda self, name: _swig_getattr(self, SimTimeSeriesSched_Time_1_144, name)
+    __repr__ = _swig_repr
+
+    def stringItem(self, *args):
+        return _SimTimeSeriesSchedule_Day_Interval.SimTimeSeriesSched_Time_1_144_stringItem(self, *args)
+
+    def __init__(self, *args):
+        this = _SimTimeSeriesSchedule_Day_Interval.new_SimTimeSeriesSched_Time_1_144(*args)
+        try:
+            self.this.append(this)
+        except:
+            self.this = this
+
+    def _clone(self, f=0, c=None):
+        return _SimTimeSeriesSchedule_Day_Interval.SimTimeSeriesSched_Time_1_144__clone(self, f, c)
+    __swig_destroy__ = _SimTimeSeriesSchedule_Day_Interval.delete_SimTimeSeriesSched_Time_1_144
+    __del__ = lambda self: None
+SimTimeSeriesSched_Time_1_144_swigregister = _SimTimeSeriesSchedule_Day_Interval.SimTimeSeriesSched_Time_1_144_swigregister
+SimTimeSeriesSched_Time_1_144_swigregister(SimTimeSeriesSched_Time_1_144)
+
 class SimTimeSeriesSchedule_Day(SimTimeSeriesSchedule_Calendar_Configuration.SimTimeSeriesSchedule):
     __swig_setmethods__ = {}
     for _s in [SimTimeSeriesSchedule_Calendar_Configuration.SimTimeSeriesSchedule]:
@@ -200,6 +228,9 @@ class SimTimeSeriesSchedule_Day_Interval_sequence(base.sequence_common):
     def rend(self, *args):
         return _SimTimeSeriesSchedule_Day_Interval.SimTimeSeriesSchedule_Day_Interval_sequence_rend(self, *args)
 
+    def getValue(self, n):
+        return _SimTimeSeriesSchedule_Day_Interval.SimTimeSeriesSchedule_Day_Interval_sequence_getValue(self, n)
+
     def at(self, *args):
         return _SimTimeSeriesSchedule_Day_Interval.SimTimeSeriesSchedule_Day_Interval_sequence_at(self, *args)
 
@@ -233,6 +264,92 @@ class SimTimeSeriesSchedule_Day_Interval_sequence(base.sequence_common):
     __del__ = lambda self: None
 SimTimeSeriesSchedule_Day_Interval_sequence_swigregister = _SimTimeSeriesSchedule_Day_Interval.SimTimeSeriesSchedule_Day_Interval_sequence_swigregister
 SimTimeSeriesSchedule_Day_Interval_sequence_swigregister(SimTimeSeriesSchedule_Day_Interval_sequence)
+
+class Time_1_144_list(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, Time_1_144_list, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, Time_1_144_list, name)
+    __repr__ = _swig_repr
+    __swig_destroy__ = _SimTimeSeriesSchedule_Day_Interval.delete_Time_1_144_list
+    __del__ = lambda self: None
+
+    def __init__(self, *args):
+        this = _SimTimeSeriesSchedule_Day_Interval.new_Time_1_144_list(*args)
+        try:
+            self.this.append(this)
+        except:
+            self.this = this
+
+    def __deref__(self, *args):
+        return _SimTimeSeriesSchedule_Day_Interval.Time_1_144_list___deref__(self, *args)
+
+    def __ref__(self, *args):
+        return _SimTimeSeriesSchedule_Day_Interval.Time_1_144_list___ref__(self, *args)
+
+    def present(self):
+        return _SimTimeSeriesSchedule_Day_Interval.Time_1_144_list_present(self)
+
+    def get(self, *args):
+        return _SimTimeSeriesSchedule_Day_Interval.Time_1_144_list_get(self, *args)
+
+    def getValue(self):
+        return _SimTimeSeriesSchedule_Day_Interval.Time_1_144_list_getValue(self)
+
+    def getIdRefList(self):
+        return _SimTimeSeriesSchedule_Day_Interval.Time_1_144_list_getIdRefList(self)
+
+    def getNumberList(self):
+        return _SimTimeSeriesSchedule_Day_Interval.Time_1_144_list_getNumberList(self)
+
+    def set(self, x):
+        return _SimTimeSeriesSchedule_Day_Interval.Time_1_144_list_set(self, x)
+
+    def reset(self):
+        return _SimTimeSeriesSchedule_Day_Interval.Time_1_144_list_reset(self)
+    __swig_setmethods__["x_"] = _SimTimeSeriesSchedule_Day_Interval.Time_1_144_list_x__set
+    __swig_getmethods__["x_"] = _SimTimeSeriesSchedule_Day_Interval.Time_1_144_list_x__get
+    if _newclass:
+        x_ = _swig_property(_SimTimeSeriesSchedule_Day_Interval.Time_1_144_list_x__get, _SimTimeSeriesSchedule_Day_Interval.Time_1_144_list_x__set)
+    __swig_setmethods__["container_"] = _SimTimeSeriesSchedule_Day_Interval.Time_1_144_list_container__set
+    __swig_getmethods__["container_"] = _SimTimeSeriesSchedule_Day_Interval.Time_1_144_list_container__get
+    if _newclass:
+        container_ = _swig_property(_SimTimeSeriesSchedule_Day_Interval.Time_1_144_list_container__get, _SimTimeSeriesSchedule_Day_Interval.Time_1_144_list_container__set)
+
+    def stringItem(self, *args):
+        return _SimTimeSeriesSchedule_Day_Interval.Time_1_144_list_stringItem(self, *args)
+
+    def _clone(self, f=0, c=None):
+        return _SimTimeSeriesSchedule_Day_Interval.Time_1_144_list__clone(self, f, c)
+
+    def dom_content(self, *args):
+        return _SimTimeSeriesSchedule_Day_Interval.Time_1_144_list_dom_content(self, *args)
+
+    def dom_content_document(self, *args):
+        return _SimTimeSeriesSchedule_Day_Interval.Time_1_144_list_dom_content_document(self, *args)
+
+    def null_content(self):
+        return _SimTimeSeriesSchedule_Day_Interval.Time_1_144_list_null_content(self)
+
+    def _container(self, *args):
+        return _SimTimeSeriesSchedule_Day_Interval.Time_1_144_list__container(self, *args)
+
+    def _root(self, *args):
+        return _SimTimeSeriesSchedule_Day_Interval.Time_1_144_list__root(self, *args)
+
+    def _node(self, *args):
+        return _SimTimeSeriesSchedule_Day_Interval.Time_1_144_list__node(self, *args)
+
+    def _register_id(self, i, t):
+        return _SimTimeSeriesSchedule_Day_Interval.Time_1_144_list__register_id(self, i, t)
+
+    def _unregister_id(self, id):
+        return _SimTimeSeriesSchedule_Day_Interval.Time_1_144_list__unregister_id(self, id)
+
+    def _lookup_id(self, id):
+        return _SimTimeSeriesSchedule_Day_Interval.Time_1_144_list__lookup_id(self, id)
+Time_1_144_list_swigregister = _SimTimeSeriesSchedule_Day_Interval.Time_1_144_list_swigregister
+Time_1_144_list_swigregister(Time_1_144_list)
 
 # This file is compatible with both classic and new-style classes.
 

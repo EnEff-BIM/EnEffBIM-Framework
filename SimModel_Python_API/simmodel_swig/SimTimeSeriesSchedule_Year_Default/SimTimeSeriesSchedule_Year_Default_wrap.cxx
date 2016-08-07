@@ -3670,139 +3670,142 @@ namespace Swig {
 #define SWIGTYPE_p_base_const_iterator swig_types[255]
 #define SWIGTYPE_p_base_iterator swig_types[256]
 #define SWIGTYPE_p_base_sequence swig_types[257]
-#define SWIGTYPE_p_bool swig_types[258]
-#define SWIGTYPE_p_bool_convertible swig_types[259]
-#define SWIGTYPE_p_char swig_types[260]
-#define SWIGTYPE_p_const_iterator swig_types[261]
-#define SWIGTYPE_p_const_reverse_iterator swig_types[262]
-#define SWIGTYPE_p_difference_type swig_types[263]
-#define SWIGTYPE_p_dom_content_optional swig_types[264]
-#define SWIGTYPE_p_double swig_types[265]
-#define SWIGTYPE_p_float swig_types[266]
-#define SWIGTYPE_p_int swig_types[267]
-#define SWIGTYPE_p_iterator swig_types[268]
-#define SWIGTYPE_p_iterator_adapterT_std__vectorT_xsd__cxx__tree__sequence_common__ptr_std__allocatorT_xsd__cxx__tree__sequence_common__ptr_t_t__const_iterator_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Year_Default_const_t swig_types[269]
-#define SWIGTYPE_p_iterator_adapterT_std__vectorT_xsd__cxx__tree__sequence_common__ptr_std__allocatorT_xsd__cxx__tree__sequence_common__ptr_t_t__const_reverse_iterator_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Year_Default_const_t swig_types[270]
-#define SWIGTYPE_p_iterator_adapterT_std__vectorT_xsd__cxx__tree__sequence_common__ptr_std__allocatorT_xsd__cxx__tree__sequence_common__ptr_t_t__iterator___schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Year_Default_t swig_types[271]
-#define SWIGTYPE_p_iterator_adapterT_std__vectorT_xsd__cxx__tree__sequence_common__ptr_std__allocatorT_xsd__cxx__tree__sequence_common__ptr_t_t__reverse_iterator___schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Year_Default_t swig_types[272]
-#define SWIGTYPE_p_long_long swig_types[273]
-#define SWIGTYPE_p_ptr swig_types[274]
-#define SWIGTYPE_p_reverse_iterator swig_types[275]
-#define SWIGTYPE_p_schema__simxml__MepModel__SimFlowEnergyConverter swig_types[276]
-#define SWIGTYPE_p_schema__simxml__Model__SimModel swig_types[277]
-#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimArrayParams swig_types[278]
-#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimNode swig_types[279]
-#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimPort swig_types[280]
-#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule swig_types[281]
-#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Calendar swig_types[282]
-#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Calendar_Configuration swig_types[283]
-#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Year swig_types[284]
-#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Year_Default swig_types[285]
-#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimUnitType swig_types[286]
-#define SWIGTYPE_p_schema__simxml__ResourcesGeometry__SimProfileDefinition swig_types[287]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SelectedPropertyGroups swig_types[288]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimActorDefinition swig_types[289]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimAppDefault swig_types[290]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimBldgModelParams swig_types[291]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimBuildingElement swig_types[292]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimDistributionControlElement swig_types[293]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimDistributionElement swig_types[294]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimDistributionFlowElement swig_types[295]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimElement swig_types[296]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimFeatureElement swig_types[297]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimGeometricRepresentationItem swig_types[298]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimGroup swig_types[299]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimObject swig_types[300]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimObjectDefinition swig_types[301]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimObjectPlacement swig_types[302]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimObjectTypeDefinition swig_types[303]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimPropertySetDefinition swig_types[304]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimRepresentation swig_types[305]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimRepresentationItem swig_types[306]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimResourceObject swig_types[307]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimRoot swig_types[308]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimSpatialStructureElement swig_types[309]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimTemplate swig_types[310]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimTopologicalRepresentationItem swig_types[311]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__doubleList swig_types[312]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__integerList swig_types[313]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__logical swig_types[314]
-#define SWIGTYPE_p_self_ swig_types[315]
-#define SWIGTYPE_p_short swig_types[316]
-#define SWIGTYPE_p_signed_char swig_types[317]
-#define SWIGTYPE_p_size_type swig_types[318]
-#define SWIGTYPE_p_std__auto_ptrT_T_t swig_types[319]
-#define SWIGTYPE_p_std__auto_ptrT_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Year_Default_t swig_types[320]
-#define SWIGTYPE_p_std__auto_ptrT_schema__simxml__SimModelCore__integerList_t swig_types[321]
-#define SWIGTYPE_p_std__auto_ptrT_xml_schema__idref_t swig_types[322]
-#define SWIGTYPE_p_std__auto_ptrT_xml_schema__idrefs_t swig_types[323]
-#define SWIGTYPE_p_std__auto_ptrT_xml_schema__string_t swig_types[324]
-#define SWIGTYPE_p_std__vectorT_xsd__cxx__tree__sequence_common__ptr_std__allocatorT_xsd__cxx__tree__sequence_common__ptr_t_t__size_type swig_types[325]
-#define SWIGTYPE_p_unsigned_char swig_types[326]
-#define SWIGTYPE_p_unsigned_int swig_types[327]
-#define SWIGTYPE_p_unsigned_long_long swig_types[328]
-#define SWIGTYPE_p_unsigned_short swig_types[329]
-#define SWIGTYPE_p_value_type swig_types[330]
-#define SWIGTYPE_p_xercesc__DOMElement swig_types[331]
-#define SWIGTYPE_p_xsd__cxx__tree___type swig_types[332]
-#define SWIGTYPE_p_xsd__cxx__tree__base64_binaryT_char_xsd__cxx__tree__simple_type_t swig_types[333]
-#define SWIGTYPE_p_xsd__cxx__tree__boundsT_char_t swig_types[334]
-#define SWIGTYPE_p_xsd__cxx__tree__bufferT_char_t swig_types[335]
-#define SWIGTYPE_p_xsd__cxx__tree__content_order swig_types[336]
-#define SWIGTYPE_p_xsd__cxx__tree__dateT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[337]
-#define SWIGTYPE_p_xsd__cxx__tree__date_timeT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[338]
-#define SWIGTYPE_p_xsd__cxx__tree__diagnosticsT_char_t swig_types[339]
-#define SWIGTYPE_p_xsd__cxx__tree__duplicate_idT_char_t swig_types[340]
-#define SWIGTYPE_p_xsd__cxx__tree__durationT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[341]
-#define SWIGTYPE_p_xsd__cxx__tree__entitiesT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__entity_t swig_types[342]
-#define SWIGTYPE_p_xsd__cxx__tree__entityT_char_xsd__cxx__tree__ncname_t swig_types[343]
-#define SWIGTYPE_p_xsd__cxx__tree__errorT_char_t swig_types[344]
-#define SWIGTYPE_p_xsd__cxx__tree__exceptionT_char_t swig_types[345]
-#define SWIGTYPE_p_xsd__cxx__tree__expected_attributeT_char_t swig_types[346]
-#define SWIGTYPE_p_xsd__cxx__tree__expected_elementT_char_t swig_types[347]
-#define SWIGTYPE_p_xsd__cxx__tree__expected_text_contentT_char_t swig_types[348]
-#define SWIGTYPE_p_xsd__cxx__tree__flags swig_types[349]
-#define SWIGTYPE_p_xsd__cxx__tree__gdayT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[350]
-#define SWIGTYPE_p_xsd__cxx__tree__gmonthT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[351]
-#define SWIGTYPE_p_xsd__cxx__tree__gmonth_dayT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[352]
-#define SWIGTYPE_p_xsd__cxx__tree__gyearT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[353]
-#define SWIGTYPE_p_xsd__cxx__tree__gyear_monthT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[354]
-#define SWIGTYPE_p_xsd__cxx__tree__hex_binaryT_char_xsd__cxx__tree__simple_type_t swig_types[355]
-#define SWIGTYPE_p_xsd__cxx__tree__idT_char_xsd__cxx__tree__ncname_t swig_types[356]
-#define SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t swig_types[357]
-#define SWIGTYPE_p_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t swig_types[358]
-#define SWIGTYPE_p_xsd__cxx__tree__languageT_char_xsd__cxx__tree__token_t swig_types[359]
-#define SWIGTYPE_p_xsd__cxx__tree__nameT_char_xsd__cxx__tree__token_t swig_types[360]
-#define SWIGTYPE_p_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__name_t swig_types[361]
-#define SWIGTYPE_p_xsd__cxx__tree__nmtokenT_char_xsd__cxx__tree__token_t swig_types[362]
-#define SWIGTYPE_p_xsd__cxx__tree__nmtokensT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__nmtoken_t swig_types[363]
-#define SWIGTYPE_p_xsd__cxx__tree__no_prefix_mappingT_char_t swig_types[364]
-#define SWIGTYPE_p_xsd__cxx__tree__no_type_infoT_char_t swig_types[365]
-#define SWIGTYPE_p_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__string_t swig_types[366]
-#define SWIGTYPE_p_xsd__cxx__tree__not_derivedT_char_t swig_types[367]
-#define SWIGTYPE_p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__integerList_xsd__cxx__tree__fundamental_pT_schema__simxml__SimModelCore__integerList_t__r_t swig_types[368]
-#define SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t swig_types[369]
-#define SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_t__r_t swig_types[370]
-#define SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_false_t swig_types[371]
-#define SWIGTYPE_p_xsd__cxx__tree__parsingT_char_t swig_types[372]
-#define SWIGTYPE_p_xsd__cxx__tree__propertiesT_char_t swig_types[373]
-#define SWIGTYPE_p_xsd__cxx__tree__qnameT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__uri_xsd__cxx__tree__ncname_t swig_types[374]
-#define SWIGTYPE_p_xsd__cxx__tree__sequenceT_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Calendar_Configuration_false_t swig_types[375]
-#define SWIGTYPE_p_xsd__cxx__tree__sequenceT_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Year_Default_false_t swig_types[376]
-#define SWIGTYPE_p_xsd__cxx__tree__sequence_common swig_types[377]
-#define SWIGTYPE_p_xsd__cxx__tree__severity swig_types[378]
-#define SWIGTYPE_p_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t swig_types[379]
-#define SWIGTYPE_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t swig_types[380]
-#define SWIGTYPE_p_xsd__cxx__tree__timeT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[381]
-#define SWIGTYPE_p_xsd__cxx__tree__time_zone swig_types[382]
-#define SWIGTYPE_p_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_string_t swig_types[383]
-#define SWIGTYPE_p_xsd__cxx__tree__unexpected_elementT_char_t swig_types[384]
-#define SWIGTYPE_p_xsd__cxx__tree__unexpected_enumeratorT_char_t swig_types[385]
-#define SWIGTYPE_p_xsd__cxx__tree__uriT_char_xsd__cxx__tree__simple_type_t swig_types[386]
-#define SWIGTYPE_p_xsd__cxx__tree__user_data_keys_templateT_0_t swig_types[387]
-#define SWIGTYPE_p_xsd__cxx__xml__error_handlerT_char_t swig_types[388]
-static swig_type_info *swig_types[390];
-static swig_module_info swig_module = {swig_types, 389, 0, 0, 0, 0};
+#define SWIGTYPE_p_base_type swig_types[258]
+#define SWIGTYPE_p_bool swig_types[259]
+#define SWIGTYPE_p_bool_convertible swig_types[260]
+#define SWIGTYPE_p_char swig_types[261]
+#define SWIGTYPE_p_const_iterator swig_types[262]
+#define SWIGTYPE_p_const_reverse_iterator swig_types[263]
+#define SWIGTYPE_p_difference_type swig_types[264]
+#define SWIGTYPE_p_dom_content_optional swig_types[265]
+#define SWIGTYPE_p_double swig_types[266]
+#define SWIGTYPE_p_float swig_types[267]
+#define SWIGTYPE_p_int swig_types[268]
+#define SWIGTYPE_p_iterator swig_types[269]
+#define SWIGTYPE_p_iterator_adapterT_std__vectorT_xsd__cxx__tree__sequence_common__ptr_std__allocatorT_xsd__cxx__tree__sequence_common__ptr_t_t__const_iterator_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Year_Default_const_t swig_types[270]
+#define SWIGTYPE_p_iterator_adapterT_std__vectorT_xsd__cxx__tree__sequence_common__ptr_std__allocatorT_xsd__cxx__tree__sequence_common__ptr_t_t__const_reverse_iterator_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Year_Default_const_t swig_types[271]
+#define SWIGTYPE_p_iterator_adapterT_std__vectorT_xsd__cxx__tree__sequence_common__ptr_std__allocatorT_xsd__cxx__tree__sequence_common__ptr_t_t__iterator___schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Year_Default_t swig_types[272]
+#define SWIGTYPE_p_iterator_adapterT_std__vectorT_xsd__cxx__tree__sequence_common__ptr_std__allocatorT_xsd__cxx__tree__sequence_common__ptr_t_t__reverse_iterator___schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Year_Default_t swig_types[273]
+#define SWIGTYPE_p_long_long swig_types[274]
+#define SWIGTYPE_p_ptr swig_types[275]
+#define SWIGTYPE_p_reverse_iterator swig_types[276]
+#define SWIGTYPE_p_schema__simxml__MepModel__SimFlowEnergyConverter swig_types[277]
+#define SWIGTYPE_p_schema__simxml__Model__SimModel swig_types[278]
+#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimArrayParams swig_types[279]
+#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimNode swig_types[280]
+#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimPort swig_types[281]
+#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule swig_types[282]
+#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Calendar swig_types[283]
+#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Calendar_Configuration swig_types[284]
+#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Year swig_types[285]
+#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Year_Default swig_types[286]
+#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimUnitType swig_types[287]
+#define SWIGTYPE_p_schema__simxml__ResourcesGeometry__SimProfileDefinition swig_types[288]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SelectedPropertyGroups swig_types[289]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimActorDefinition swig_types[290]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimAppDefault swig_types[291]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimBldgModelParams swig_types[292]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimBuildingElement swig_types[293]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimDistributionControlElement swig_types[294]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimDistributionElement swig_types[295]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimDistributionFlowElement swig_types[296]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimElement swig_types[297]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimFeatureElement swig_types[298]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimGeometricRepresentationItem swig_types[299]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimGroup swig_types[300]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimObject swig_types[301]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimObjectDefinition swig_types[302]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimObjectPlacement swig_types[303]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimObjectTypeDefinition swig_types[304]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimPropertySetDefinition swig_types[305]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimRepresentation swig_types[306]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimRepresentationItem swig_types[307]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimResourceObject swig_types[308]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimRoot swig_types[309]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimSpatialStructureElement swig_types[310]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimTemplate swig_types[311]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimTopologicalRepresentationItem swig_types[312]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__doubleList swig_types[313]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__integerList swig_types[314]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__logical swig_types[315]
+#define SWIGTYPE_p_self_ swig_types[316]
+#define SWIGTYPE_p_short swig_types[317]
+#define SWIGTYPE_p_signed_char swig_types[318]
+#define SWIGTYPE_p_size_type swig_types[319]
+#define SWIGTYPE_p_std__auto_ptrT_T_t swig_types[320]
+#define SWIGTYPE_p_std__auto_ptrT_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Year_Default_t swig_types[321]
+#define SWIGTYPE_p_std__auto_ptrT_schema__simxml__SimModelCore__integerList_t swig_types[322]
+#define SWIGTYPE_p_std__auto_ptrT_xml_schema__idref_t swig_types[323]
+#define SWIGTYPE_p_std__auto_ptrT_xml_schema__idrefs_t swig_types[324]
+#define SWIGTYPE_p_std__auto_ptrT_xml_schema__string_t swig_types[325]
+#define SWIGTYPE_p_std__vectorT_xsd__cxx__tree__sequence_common__ptr_std__allocatorT_xsd__cxx__tree__sequence_common__ptr_t_t__size_type swig_types[326]
+#define SWIGTYPE_p_unsigned_char swig_types[327]
+#define SWIGTYPE_p_unsigned_int swig_types[328]
+#define SWIGTYPE_p_unsigned_long_long swig_types[329]
+#define SWIGTYPE_p_unsigned_short swig_types[330]
+#define SWIGTYPE_p_value_type swig_types[331]
+#define SWIGTYPE_p_xercesc__DOMElement swig_types[332]
+#define SWIGTYPE_p_xsd__cxx__tree___type swig_types[333]
+#define SWIGTYPE_p_xsd__cxx__tree__base64_binaryT_char_xsd__cxx__tree__simple_type_t swig_types[334]
+#define SWIGTYPE_p_xsd__cxx__tree__boundsT_char_t swig_types[335]
+#define SWIGTYPE_p_xsd__cxx__tree__bufferT_char_t swig_types[336]
+#define SWIGTYPE_p_xsd__cxx__tree__content_order swig_types[337]
+#define SWIGTYPE_p_xsd__cxx__tree__dateT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[338]
+#define SWIGTYPE_p_xsd__cxx__tree__date_timeT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[339]
+#define SWIGTYPE_p_xsd__cxx__tree__diagnosticsT_char_t swig_types[340]
+#define SWIGTYPE_p_xsd__cxx__tree__duplicate_idT_char_t swig_types[341]
+#define SWIGTYPE_p_xsd__cxx__tree__durationT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[342]
+#define SWIGTYPE_p_xsd__cxx__tree__entitiesT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__entity_t swig_types[343]
+#define SWIGTYPE_p_xsd__cxx__tree__entityT_char_xsd__cxx__tree__ncname_t swig_types[344]
+#define SWIGTYPE_p_xsd__cxx__tree__errorT_char_t swig_types[345]
+#define SWIGTYPE_p_xsd__cxx__tree__exceptionT_char_t swig_types[346]
+#define SWIGTYPE_p_xsd__cxx__tree__expected_attributeT_char_t swig_types[347]
+#define SWIGTYPE_p_xsd__cxx__tree__expected_elementT_char_t swig_types[348]
+#define SWIGTYPE_p_xsd__cxx__tree__expected_text_contentT_char_t swig_types[349]
+#define SWIGTYPE_p_xsd__cxx__tree__flags swig_types[350]
+#define SWIGTYPE_p_xsd__cxx__tree__gdayT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[351]
+#define SWIGTYPE_p_xsd__cxx__tree__gmonthT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[352]
+#define SWIGTYPE_p_xsd__cxx__tree__gmonth_dayT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[353]
+#define SWIGTYPE_p_xsd__cxx__tree__gyearT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[354]
+#define SWIGTYPE_p_xsd__cxx__tree__gyear_monthT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[355]
+#define SWIGTYPE_p_xsd__cxx__tree__hex_binaryT_char_xsd__cxx__tree__simple_type_t swig_types[356]
+#define SWIGTYPE_p_xsd__cxx__tree__idT_char_xsd__cxx__tree__ncname_t swig_types[357]
+#define SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t swig_types[358]
+#define SWIGTYPE_p_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t swig_types[359]
+#define SWIGTYPE_p_xsd__cxx__tree__languageT_char_xsd__cxx__tree__token_t swig_types[360]
+#define SWIGTYPE_p_xsd__cxx__tree__nameT_char_xsd__cxx__tree__token_t swig_types[361]
+#define SWIGTYPE_p_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__name_t swig_types[362]
+#define SWIGTYPE_p_xsd__cxx__tree__nmtokenT_char_xsd__cxx__tree__token_t swig_types[363]
+#define SWIGTYPE_p_xsd__cxx__tree__nmtokensT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__nmtoken_t swig_types[364]
+#define SWIGTYPE_p_xsd__cxx__tree__no_prefix_mappingT_char_t swig_types[365]
+#define SWIGTYPE_p_xsd__cxx__tree__no_type_infoT_char_t swig_types[366]
+#define SWIGTYPE_p_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__string_t swig_types[367]
+#define SWIGTYPE_p_xsd__cxx__tree__not_derivedT_char_t swig_types[368]
+#define SWIGTYPE_p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__integerList_false_t swig_types[369]
+#define SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t swig_types[370]
+#define SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_false_t swig_types[371]
+#define SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_false_t swig_types[372]
+#define SWIGTYPE_p_xsd__cxx__tree__parsingT_char_t swig_types[373]
+#define SWIGTYPE_p_xsd__cxx__tree__propertiesT_char_t swig_types[374]
+#define SWIGTYPE_p_xsd__cxx__tree__qnameT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__uri_xsd__cxx__tree__ncname_t swig_types[375]
+#define SWIGTYPE_p_xsd__cxx__tree__sequenceT_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Calendar_Configuration_false_t swig_types[376]
+#define SWIGTYPE_p_xsd__cxx__tree__sequenceT_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Year_Default_false_t swig_types[377]
+#define SWIGTYPE_p_xsd__cxx__tree__sequenceT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree__type_t_t_false_t swig_types[378]
+#define SWIGTYPE_p_xsd__cxx__tree__sequence_common swig_types[379]
+#define SWIGTYPE_p_xsd__cxx__tree__severity swig_types[380]
+#define SWIGTYPE_p_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t swig_types[381]
+#define SWIGTYPE_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree__type_t_t swig_types[382]
+#define SWIGTYPE_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t swig_types[383]
+#define SWIGTYPE_p_xsd__cxx__tree__timeT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[384]
+#define SWIGTYPE_p_xsd__cxx__tree__time_zone swig_types[385]
+#define SWIGTYPE_p_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_string_t swig_types[386]
+#define SWIGTYPE_p_xsd__cxx__tree__unexpected_elementT_char_t swig_types[387]
+#define SWIGTYPE_p_xsd__cxx__tree__unexpected_enumeratorT_char_t swig_types[388]
+#define SWIGTYPE_p_xsd__cxx__tree__uriT_char_xsd__cxx__tree__simple_type_t swig_types[389]
+#define SWIGTYPE_p_xsd__cxx__tree__user_data_keys_templateT_0_t swig_types[390]
+#define SWIGTYPE_p_xsd__cxx__xml__error_handlerT_char_t swig_types[391]
+static swig_type_info *swig_types[393];
+static swig_module_info swig_module = {swig_types, 392, 0, 0, 0, 0};
 #define SWIG_TypeQuery(name) SWIG_TypeQueryModule(&swig_module, &swig_module, name)
 #define SWIG_MangledTypeQuery(name) SWIG_MangledTypeQueryModule(&swig_module, &swig_module, name)
 
@@ -4048,6 +4051,1015 @@ namespace swig {
 #include <algorithm>
 
 
+namespace swig {  
+  template <class Type>
+  struct noconst_traits {
+    typedef Type noconst_type;
+  };
+
+  template <class Type>
+  struct noconst_traits<const Type> {
+    typedef Type noconst_type;
+  };
+
+  /*
+    type categories
+  */
+  struct pointer_category { };  
+  struct value_category { };
+
+  /*
+    General traits that provides type_name and type_info
+  */
+  template <class Type> struct traits { };
+
+  template <class Type>
+  inline const char* type_name() {
+    return traits<typename noconst_traits<Type >::noconst_type >::type_name();
+  }
+
+  template <class Type> 
+  struct traits_info {
+    static swig_type_info *type_query(std::string name) {
+      name += " *";
+      return SWIG_TypeQuery(name.c_str());
+    }    
+    static swig_type_info *type_info() {
+      static swig_type_info *info = type_query(type_name<Type>());
+      return info;
+    }
+  };
+
+  template <class Type>
+  inline swig_type_info *type_info() {
+    return traits_info<Type>::type_info();
+  }
+
+  /*
+    Partial specialization for pointers
+  */
+  template <class Type> struct traits <Type *> {
+    typedef pointer_category category;
+    static std::string make_ptr_name(const char* name) {
+      std::string ptrname = name;
+      ptrname += " *";
+      return ptrname;
+    }    
+    static const char* type_name() {
+      static std::string name = make_ptr_name(swig::type_name<Type>());
+      return name.c_str();
+    }
+  };
+
+  template <class Type, class Category> 
+  struct traits_as { };
+ 
+  template <class Type, class Category> 
+  struct traits_check { };
+
+}
+
+
+namespace swig {  
+  /*
+    Traits that provides the from method
+  */
+  template <class Type> struct traits_from_ptr {
+    static PyObject *from(Type *val, int owner = 0) {
+      return SWIG_InternalNewPointerObj(val, type_info<Type>(), owner);
+    }
+  };
+
+  template <class Type> struct traits_from {
+    static PyObject *from(const Type& val) {
+      return traits_from_ptr<Type>::from(new Type(val), 1);
+    }
+  };
+
+  template <class Type> struct traits_from<Type *> {
+    static PyObject *from(Type* val) {
+      return traits_from_ptr<Type>::from(val, 0);
+    }
+  };
+
+  template <class Type> struct traits_from<const Type *> {
+    static PyObject *from(const Type* val) {
+      return traits_from_ptr<Type>::from(const_cast<Type*>(val), 0);
+    }
+  };
+
+
+  template <class Type>
+  inline PyObject *from(const Type& val) {
+    return traits_from<Type>::from(val);
+  }
+
+  template <class Type>
+  inline PyObject *from_ptr(Type* val, int owner) {
+    return traits_from_ptr<Type>::from(val, owner);
+  }
+
+  /*
+    Traits that provides the asval/as/check method
+  */
+  template <class Type>
+  struct traits_asptr {   
+    static int asptr(PyObject *obj, Type **val) {
+      Type *p;
+      int res = SWIG_ConvertPtr(obj, (void**)&p, type_info<Type>(), 0);
+      if (SWIG_IsOK(res)) {
+	if (val) *val = p;
+      }
+      return res;
+    }
+  }; 
+
+  template <class Type>
+  inline int asptr(PyObject *obj, Type **vptr) {
+    return traits_asptr<Type>::asptr(obj, vptr);
+  }
+
+  template <class Type> 
+  struct traits_asval {
+    static int asval(PyObject *obj, Type *val) {
+      if (val) {
+	Type *p = 0;
+	int res = traits_asptr<Type>::asptr(obj, &p);
+	if (!SWIG_IsOK(res)) return res;	
+	if (p) {
+	  typedef typename noconst_traits<Type>::noconst_type noconst_type;
+	  *(const_cast<noconst_type*>(val)) = *p;
+	  if (SWIG_IsNewObj(res)){
+	    delete p;
+	    res = SWIG_DelNewMask(res);
+	  }
+	  return res;
+	} else {
+	  return SWIG_ERROR;
+	}
+      } else {
+	return traits_asptr<Type>::asptr(obj, (Type **)(0));
+      }
+    }
+  };
+
+  template <class Type> struct traits_asval<Type*> {
+    static int asval(PyObject *obj, Type **val) {
+      if (val) {
+        typedef typename noconst_traits<Type>::noconst_type noconst_type;
+        noconst_type *p = 0;
+        int res = traits_asptr<noconst_type>::asptr(obj,  &p);
+        if (SWIG_IsOK(res)) {
+          *(const_cast<noconst_type**>(val)) = p;
+	}
+	return res;
+      } else {
+	return traits_asptr<Type>::asptr(obj, (Type **)(0));
+      }
+    }
+  };
+  
+  template <class Type>
+  inline int asval(PyObject *obj, Type *val) {
+    return traits_asval<Type>::asval(obj, val);
+  }
+
+  template <class Type> 
+  struct traits_as<Type, value_category> {
+    static Type as(PyObject *obj, bool throw_error) {
+      Type v;
+      int res = asval(obj, &v);
+      if (!obj || !SWIG_IsOK(res)) {
+	if (!PyErr_Occurred()) {
+	  ::SWIG_Error(SWIG_TypeError,  swig::type_name<Type>());
+	}
+	if (throw_error) throw std::invalid_argument("bad type");
+      }
+      return v;
+    }
+  };
+
+  template <class Type> 
+  struct traits_as<Type, pointer_category> {
+    static Type as(PyObject *obj, bool throw_error) {
+      Type *v = 0;      
+      int res = (obj ? traits_asptr<Type>::asptr(obj, &v) : SWIG_ERROR);
+      if (SWIG_IsOK(res) && v) {
+	if (SWIG_IsNewObj(res)) {
+	  Type r(*v);
+	  delete v;
+	  return r;
+	} else {
+	  return *v;
+	}
+      } else {
+	// Uninitialized return value, no Type() constructor required.
+	static Type *v_def = (Type*) malloc(sizeof(Type));
+	if (!PyErr_Occurred()) {
+	  SWIG_Error(SWIG_TypeError,  swig::type_name<Type>());
+	}
+	if (throw_error) throw std::invalid_argument("bad type");
+	memset(v_def,0,sizeof(Type));
+	return *v_def;
+      }
+    }
+  };
+
+  template <class Type> 
+  struct traits_as<Type*, pointer_category> {
+    static Type* as(PyObject *obj, bool throw_error) {
+      Type *v = 0;      
+      int res = (obj ? traits_asptr<Type>::asptr(obj, &v) : SWIG_ERROR);
+      if (SWIG_IsOK(res)) {
+	return v;
+      } else {
+	if (!PyErr_Occurred()) {
+	  SWIG_Error(SWIG_TypeError,  swig::type_name<Type>());
+	}
+	if (throw_error) throw std::invalid_argument("bad type");
+	return 0;
+      }
+    }
+  };
+    
+  template <class Type>
+  inline Type as(PyObject *obj, bool te = false) {
+    return traits_as<Type, typename traits<Type>::category>::as(obj, te);
+  }
+
+  template <class Type> 
+  struct traits_check<Type, value_category> {
+    static bool check(PyObject *obj) {
+      int res = obj ? asval(obj, (Type *)(0)) : SWIG_ERROR;
+      return SWIG_IsOK(res) ? true : false;
+    }
+  };
+
+  template <class Type> 
+  struct traits_check<Type, pointer_category> {
+    static bool check(PyObject *obj) {
+      int res = obj ? asptr(obj, (Type **)(0)) : SWIG_ERROR;
+      return SWIG_IsOK(res) ? true : false;
+    }
+  };
+
+  template <class Type>
+  inline bool check(PyObject *obj) {
+    return traits_check<Type, typename traits<Type>::category>::check(obj);
+  }
+}
+
+
+#include <functional>
+
+namespace std {
+  template <>
+  struct less <PyObject *>: public binary_function<PyObject *, PyObject *, bool>
+  {
+    bool
+    operator()(PyObject * v, PyObject *w) const
+    { 
+      bool res;
+      SWIG_PYTHON_THREAD_BEGIN_BLOCK;
+      res = PyObject_RichCompareBool(v, w, Py_LT) ? true : false;
+      /* This may fall into a case of inconsistent
+               eg. ObjA > ObjX > ObjB
+               but ObjA < ObjB
+      */
+      if( PyErr_Occurred() && PyErr_ExceptionMatches(PyExc_TypeError) )
+      {
+        /* Objects can't be compared, this mostly occurred in Python 3.0 */
+        /* Compare their ptr directly for a workaround */
+        res = (v < w);
+        PyErr_Clear();
+      }
+      SWIG_PYTHON_THREAD_END_BLOCK;
+      return res;
+    }
+  };
+
+  template <>
+  struct less <swig::SwigPtr_PyObject>: public binary_function<swig::SwigPtr_PyObject, swig::SwigPtr_PyObject, bool>
+  {
+    bool
+    operator()(const swig::SwigPtr_PyObject& v, const swig::SwigPtr_PyObject& w) const
+    {
+      return std::less<PyObject *>()(v, w);
+    }
+  };
+
+  template <>
+  struct less <swig::SwigVar_PyObject>: public binary_function<swig::SwigVar_PyObject, swig::SwigVar_PyObject, bool>
+  {
+    bool
+    operator()(const swig::SwigVar_PyObject& v, const swig::SwigVar_PyObject& w) const
+    {
+      return std::less<PyObject *>()(v, w);
+    }
+  };
+
+}
+
+namespace swig {
+  template <> struct traits<PyObject *> {
+    typedef value_category category;
+    static const char* type_name() { return "PyObject *"; }
+  };  
+
+  template <>  struct traits_asval<PyObject * > {   
+    typedef PyObject * value_type;
+    static int asval(PyObject *obj, value_type *val) {
+      if (val) *val = obj;
+      return SWIG_OK;
+    }
+  };
+
+  template <> 
+  struct traits_check<PyObject *, value_category> {
+    static bool check(PyObject *) {
+      return true;
+    }
+  };
+
+  template <>  struct traits_from<PyObject *> {
+    typedef PyObject * value_type;
+    static PyObject *from(const value_type& val) {
+      Py_XINCREF(val);
+      return val;
+    }
+  };
+  
+}
+
+namespace swig {
+  template <class Difference>
+  inline size_t
+  check_index(Difference i, size_t size, bool insert = false) {
+    if ( i < 0 ) {
+      if ((size_t) (-i) <= size)
+	return (size_t) (i + size);
+    } else if ( (size_t) i < size ) {
+      return (size_t) i;
+    } else if (insert && ((size_t) i == size)) {
+      return size;
+    }
+    throw std::out_of_range("index out of range");
+  }
+
+  template <class Difference>
+  void
+  slice_adjust(Difference i, Difference j, Py_ssize_t step, size_t size, Difference &ii, Difference &jj, bool insert = false) {
+    if (step == 0) {
+      throw std::invalid_argument("slice step cannot be zero");
+    } else if (step > 0) {
+      // Required range: 0 <= i < size, 0 <= j < size
+      if (i < 0) {
+        ii = 0;
+      } else if (i < (Difference)size) {
+        ii = i;
+      } else if (insert && (i >= (Difference)size)) {
+        ii = (Difference)size;
+      }
+      if ( j < 0 ) {
+        jj = 0;
+      } else {
+        jj = (j < (Difference)size) ? j : (Difference)size;
+      }
+    } else {
+      // Required range: -1 <= i < size-1, -1 <= j < size-1
+      if (i < -1) {
+        ii = -1;
+      } else if (i < (Difference) size) {
+        ii = i;
+      } else if (i >= (Difference)(size-1)) {
+        ii = (Difference)(size-1);
+      }
+      if (j < -1) {
+        jj = -1;
+      } else {
+        jj = (j < (Difference)size ) ? j : (Difference)(size-1);
+      }
+    }
+  }
+
+  template <class Sequence, class Difference>
+  inline typename Sequence::iterator
+  getpos(Sequence* self, Difference i)  {
+    typename Sequence::iterator pos = self->begin();
+    std::advance(pos, check_index(i,self->size()));
+    return pos;
+  }
+
+  template <class Sequence, class Difference>
+  inline typename Sequence::const_iterator
+  cgetpos(const Sequence* self, Difference i)  {
+    typename Sequence::const_iterator pos = self->begin();
+    std::advance(pos, check_index(i,self->size()));
+    return pos;
+  }
+
+  template <class Sequence, class Difference>
+  inline Sequence*
+  getslice(const Sequence* self, Difference i, Difference j, Py_ssize_t step) {
+    typename Sequence::size_type size = self->size();
+    Difference ii = 0;
+    Difference jj = 0;
+    swig::slice_adjust(i, j, step, size, ii, jj);
+
+    if (step > 0) {
+      typename Sequence::const_iterator sb = self->begin();
+      typename Sequence::const_iterator se = self->begin();
+      std::advance(sb,ii);
+      std::advance(se,jj);
+      if (step == 1) {
+        return new Sequence(sb, se);
+      } else {
+        Sequence *sequence = new Sequence();
+        typename Sequence::const_iterator it = sb;
+        while (it!=se) {
+          sequence->push_back(*it);
+          for (Py_ssize_t c=0; c<step && it!=se; ++c)
+            it++;
+        }
+        return sequence;
+      } 
+    } else {
+      Sequence *sequence = new Sequence();
+      if (ii > jj) {
+        typename Sequence::const_reverse_iterator sb = self->rbegin();
+        typename Sequence::const_reverse_iterator se = self->rbegin();
+        std::advance(sb,size-ii-1);
+        std::advance(se,size-jj-1);
+        typename Sequence::const_reverse_iterator it = sb;
+        while (it!=se) {
+          sequence->push_back(*it);
+          for (Py_ssize_t c=0; c<-step && it!=se; ++c)
+            it++;
+        }
+      }
+      return sequence;
+    }
+  }
+
+  template <class Sequence, class Difference, class InputSeq>
+  inline void
+  setslice(Sequence* self, Difference i, Difference j, Py_ssize_t step, const InputSeq& is = InputSeq()) {
+    typename Sequence::size_type size = self->size();
+    Difference ii = 0;
+    Difference jj = 0;
+    swig::slice_adjust(i, j, step, size, ii, jj, true);
+    if (step > 0) {
+      if (jj < ii)
+        jj = ii;
+      if (step == 1) {
+        size_t ssize = jj - ii;
+        if (ssize <= is.size()) {
+          // expanding/staying the same size
+          typename Sequence::iterator sb = self->begin();
+          typename InputSeq::const_iterator isit = is.begin();
+          std::advance(sb,ii);
+          std::advance(isit, jj - ii);
+          self->insert(std::copy(is.begin(), isit, sb), isit, is.end());
+        } else {
+          // shrinking
+          typename Sequence::iterator sb = self->begin();
+          typename Sequence::iterator se = self->begin();
+          std::advance(sb,ii);
+          std::advance(se,jj);
+          self->erase(sb,se);
+          sb = self->begin();
+          std::advance(sb,ii);
+          self->insert(sb, is.begin(), is.end());
+        }
+      } else {
+        size_t replacecount = (jj - ii + step - 1) / step;
+        if (is.size() != replacecount) {
+          char msg[1024];
+          sprintf(msg, "attempt to assign sequence of size %lu to extended slice of size %lu", (unsigned long)is.size(), (unsigned long)replacecount);
+          throw std::invalid_argument(msg);
+        }
+        typename Sequence::const_iterator isit = is.begin();
+        typename Sequence::iterator it = self->begin();
+        std::advance(it,ii);
+        for (size_t rc=0; rc<replacecount; ++rc) {
+          *it++ = *isit++;
+          for (Py_ssize_t c=0; c<(step-1) && it != self->end(); ++c)
+            it++;
+        }
+      }
+    } else {
+      if (jj > ii)
+        jj = ii;
+      size_t replacecount = (ii - jj - step - 1) / -step;
+      if (is.size() != replacecount) {
+        char msg[1024];
+        sprintf(msg, "attempt to assign sequence of size %lu to extended slice of size %lu", (unsigned long)is.size(), (unsigned long)replacecount);
+        throw std::invalid_argument(msg);
+      }
+      typename Sequence::const_iterator isit = is.begin();
+      typename Sequence::reverse_iterator it = self->rbegin();
+      std::advance(it,size-ii-1);
+      for (size_t rc=0; rc<replacecount; ++rc) {
+        *it++ = *isit++;
+        for (Py_ssize_t c=0; c<(-step-1) && it != self->rend(); ++c)
+          it++;
+      }
+    }
+  }
+
+  template <class Sequence, class Difference>
+  inline void
+  delslice(Sequence* self, Difference i, Difference j, Py_ssize_t step) {
+    typename Sequence::size_type size = self->size();
+    Difference ii = 0;
+    Difference jj = 0;
+    swig::slice_adjust(i, j, step, size, ii, jj, true);
+    if (step > 0) {
+      if (jj > ii) {
+        typename Sequence::iterator sb = self->begin();
+        std::advance(sb,ii);
+        if (step == 1) {
+          typename Sequence::iterator se = self->begin();
+          std::advance(se,jj);
+          self->erase(sb,se);
+        } else {
+          typename Sequence::iterator it = sb;
+          size_t delcount = (jj - ii + step - 1) / step;
+          while (delcount) {
+            it = self->erase(it);
+            for (Py_ssize_t c=0; c<(step-1) && it != self->end(); ++c)
+              it++;
+            delcount--;
+          }
+        }
+      }
+    } else {
+      if (ii > jj) {
+        typename Sequence::reverse_iterator sb = self->rbegin();
+        std::advance(sb,size-ii-1);
+        typename Sequence::reverse_iterator it = sb;
+        size_t delcount = (ii - jj - step - 1) / -step;
+        while (delcount) {
+          it = typename Sequence::reverse_iterator(self->erase((++it).base()));
+          for (Py_ssize_t c=0; c<(-step-1) && it != self->rend(); ++c)
+            it++;
+          delcount--;
+        }
+      }
+    }
+  }
+}
+
+
+#if defined(__SUNPRO_CC) && defined(_RWSTD_VER)
+#  if !defined(SWIG_NO_STD_NOITERATOR_TRAITS_STL)
+#    define SWIG_STD_NOITERATOR_TRAITS_STL
+#  endif
+#endif
+
+#if !defined(SWIG_STD_NOITERATOR_TRAITS_STL)
+#include <iterator>
+#else
+namespace std {
+  template <class Iterator>
+  struct iterator_traits {
+    typedef ptrdiff_t difference_type;
+    typedef typename Iterator::value_type value_type;
+  };
+
+  template <class Iterator, class Category,class T, class Reference, class Pointer, class Distance>
+  struct iterator_traits<__reverse_bi_iterator<Iterator,Category,T,Reference,Pointer,Distance> > {
+    typedef Distance difference_type;
+    typedef T value_type;
+  };
+
+  template <class T>
+  struct iterator_traits<T*> {
+    typedef T value_type;
+    typedef ptrdiff_t difference_type;
+  };
+
+  template<typename _InputIterator>
+  inline typename iterator_traits<_InputIterator>::difference_type
+  distance(_InputIterator __first, _InputIterator __last)
+  {
+    typename iterator_traits<_InputIterator>::difference_type __n = 0;
+    while (__first != __last) {
+      ++__first; ++__n;
+    }
+    return __n;
+  }
+}
+#endif
+
+
+namespace swig {
+  template<typename OutIterator>
+  class SwigPyIterator_T :  public SwigPyIterator
+  {
+  public:
+    typedef OutIterator out_iterator;
+    typedef typename std::iterator_traits<out_iterator>::value_type value_type;    
+    typedef SwigPyIterator_T<out_iterator> self_type;
+
+    SwigPyIterator_T(out_iterator curr, PyObject *seq)
+      : SwigPyIterator(seq), current(curr)
+    {
+    }
+
+    const out_iterator& get_current() const
+    {
+      return current;
+    }
+
+    
+    bool equal (const SwigPyIterator &iter) const
+    {
+      const self_type *iters = dynamic_cast<const self_type *>(&iter);
+      if (iters) {
+	return (current == iters->get_current());
+      } else {
+	throw std::invalid_argument("bad iterator type");
+      }
+    }
+    
+    ptrdiff_t distance(const SwigPyIterator &iter) const
+    {
+      const self_type *iters = dynamic_cast<const self_type *>(&iter);
+      if (iters) {
+	return std::distance(current, iters->get_current());
+      } else {
+	throw std::invalid_argument("bad iterator type");
+      }
+    }    
+    
+  protected:
+    out_iterator current;
+  };
+  
+  template <class ValueType>
+  struct from_oper 
+  {
+    typedef const ValueType& argument_type;
+    typedef PyObject *result_type;
+    result_type operator()(argument_type v) const
+    {
+      return swig::from(v);
+    }
+  };
+
+  template<typename OutIterator, 
+	   typename ValueType = typename std::iterator_traits<OutIterator>::value_type,
+	   typename FromOper = from_oper<ValueType> >
+  class SwigPyIteratorOpen_T :  public SwigPyIterator_T<OutIterator>
+  {
+  public:
+    FromOper from;
+    typedef OutIterator out_iterator;
+    typedef ValueType value_type;
+    typedef SwigPyIterator_T<out_iterator>  base;
+    typedef SwigPyIteratorOpen_T<OutIterator, ValueType, FromOper> self_type;
+    
+    SwigPyIteratorOpen_T(out_iterator curr, PyObject *seq)
+      : SwigPyIterator_T<OutIterator>(curr, seq)
+    {
+    }
+    
+    PyObject *value() const {
+      return from(static_cast<const value_type&>(*(base::current)));
+    }
+    
+    SwigPyIterator *copy() const
+    {
+      return new self_type(*this);
+    }
+
+    SwigPyIterator *incr(size_t n = 1)
+    {
+      while (n--) {
+	++base::current;
+      }
+      return this;
+    }
+
+    SwigPyIterator *decr(size_t n = 1)
+    {
+      while (n--) {
+	--base::current;
+      }
+      return this;
+    }
+  };
+
+  template<typename OutIterator, 
+	   typename ValueType = typename std::iterator_traits<OutIterator>::value_type,
+	   typename FromOper = from_oper<ValueType> >
+  class SwigPyIteratorClosed_T :  public SwigPyIterator_T<OutIterator>
+  {
+  public:
+    FromOper from;
+    typedef OutIterator out_iterator;
+    typedef ValueType value_type;
+    typedef SwigPyIterator_T<out_iterator>  base;    
+    typedef SwigPyIteratorClosed_T<OutIterator, ValueType, FromOper> self_type;
+    
+    SwigPyIteratorClosed_T(out_iterator curr, out_iterator first, out_iterator last, PyObject *seq)
+      : SwigPyIterator_T<OutIterator>(curr, seq), begin(first), end(last)
+    {
+    }
+    
+    PyObject *value() const {
+      if (base::current == end) {
+	throw stop_iteration();
+      } else {
+	return from(static_cast<const value_type&>(*(base::current)));
+      }
+    }
+    
+    SwigPyIterator *copy() const
+    {
+      return new self_type(*this);
+    }
+
+    SwigPyIterator *incr(size_t n = 1)
+    {
+      while (n--) {
+	if (base::current == end) {
+	  throw stop_iteration();
+	} else {
+	  ++base::current;
+	}
+      }
+      return this;
+    }
+
+    SwigPyIterator *decr(size_t n = 1)
+    {
+      while (n--) {
+	if (base::current == begin) {
+	  throw stop_iteration();
+	} else {
+	  --base::current;
+	}
+      }
+      return this;
+    }
+
+  private:
+    out_iterator begin;
+    out_iterator end;
+  };
+
+  template<typename OutIter>
+  inline SwigPyIterator*
+  make_output_iterator(const OutIter& current, const OutIter& begin,const OutIter& end, PyObject *seq = 0)
+  {
+    return new SwigPyIteratorClosed_T<OutIter>(current, begin, end, seq);
+  }
+
+  template<typename OutIter>
+  inline SwigPyIterator*
+  make_output_iterator(const OutIter& current, PyObject *seq = 0)
+  {
+    return new SwigPyIteratorOpen_T<OutIter>(current, seq);
+  }
+
+}
+
+
+namespace swig
+{
+  template <class T>
+  struct SwigPySequence_Ref
+  {
+    SwigPySequence_Ref(PyObject* seq, int index)
+      : _seq(seq), _index(index)
+    {
+    }
+    
+    operator T () const
+    {
+      swig::SwigVar_PyObject item = PySequence_GetItem(_seq, _index);
+      try {
+	return swig::as<T>(item, true);
+      } catch (std::exception& e) {
+	char msg[1024];
+	sprintf(msg, "in sequence element %d ", _index);
+	if (!PyErr_Occurred()) {
+	  ::SWIG_Error(SWIG_TypeError,  swig::type_name<T>());
+	}
+	SWIG_Python_AddErrorMsg(msg);
+	SWIG_Python_AddErrorMsg(e.what());
+	throw;
+      }
+    }
+
+    SwigPySequence_Ref& operator=(const T& v)
+    {
+      PySequence_SetItem(_seq, _index, swig::from<T>(v));
+      return *this;
+    }
+
+  private:
+    PyObject* _seq;
+    int _index;
+  };
+
+  template <class T>
+  struct SwigPySequence_ArrowProxy
+  {
+    SwigPySequence_ArrowProxy(const T& x): m_value(x) {}
+    const T* operator->() const { return &m_value; }
+    operator const T*() const { return &m_value; }
+    T m_value;
+  };
+
+  template <class T, class Reference >
+  struct SwigPySequence_InputIterator
+  {
+    typedef SwigPySequence_InputIterator<T, Reference > self;
+
+    typedef std::random_access_iterator_tag iterator_category;
+    typedef Reference reference;
+    typedef T value_type;
+    typedef T* pointer;
+    typedef int difference_type;
+
+    SwigPySequence_InputIterator()
+    {
+    }
+
+    SwigPySequence_InputIterator(PyObject* seq, int index)
+      : _seq(seq), _index(index)
+    {
+    }
+
+    reference operator*() const
+    {
+      return reference(_seq, _index);
+    }
+
+    SwigPySequence_ArrowProxy<T>
+    operator->() const {
+      return SwigPySequence_ArrowProxy<T>(operator*());
+    }
+
+    bool operator==(const self& ri) const
+    {
+      return (_index == ri._index) && (_seq == ri._seq);
+    }
+
+    bool operator!=(const self& ri) const
+    {
+      return !(operator==(ri));
+    }
+
+    self& operator ++ ()
+    {
+      ++_index;
+      return *this;
+    }
+
+    self& operator -- ()
+    {
+      --_index;
+      return *this;
+    }
+
+    self& operator += (difference_type n)
+    {
+      _index += n;
+      return *this;
+    }
+
+    self operator +(difference_type n) const
+    {
+      return self(_seq, _index + n);
+    }
+
+    self& operator -= (difference_type n)
+    {
+      _index -= n;
+      return *this;
+    }
+
+    self operator -(difference_type n) const
+    {
+      return self(_seq, _index - n);
+    }
+
+    difference_type operator - (const self& ri) const
+    {
+      return _index - ri._index;
+    }
+
+    bool operator < (const self& ri) const
+    {
+      return _index < ri._index;
+    }
+
+    reference
+    operator[](difference_type n) const
+    {
+      return reference(_seq, _index + n);
+    }
+
+  private:
+    PyObject* _seq;
+    difference_type _index;
+  };
+
+  template <class T>
+  struct SwigPySequence_Cont
+  {
+    typedef SwigPySequence_Ref<T> reference;
+    typedef const SwigPySequence_Ref<T> const_reference;
+    typedef T value_type;
+    typedef T* pointer;
+    typedef int difference_type;
+    typedef int size_type;
+    typedef const pointer const_pointer;
+    typedef SwigPySequence_InputIterator<T, reference> iterator;
+    typedef SwigPySequence_InputIterator<T, const_reference> const_iterator;
+
+    SwigPySequence_Cont(PyObject* seq) : _seq(0)
+    {
+      if (!PySequence_Check(seq)) {
+	throw std::invalid_argument("a sequence is expected");
+      }
+      _seq = seq;
+      Py_INCREF(_seq);
+    }
+
+    ~SwigPySequence_Cont()
+    {
+      Py_XDECREF(_seq);
+    }
+
+    size_type size() const
+    {
+      return static_cast<size_type>(PySequence_Size(_seq));
+    }
+
+    bool empty() const
+    {
+      return size() == 0;
+    }
+
+    iterator begin()
+    {
+      return iterator(_seq, 0);
+    }
+
+    const_iterator begin() const
+    {
+      return const_iterator(_seq, 0);
+    }
+
+    iterator end()
+    {
+      return iterator(_seq, size());
+    }
+
+    const_iterator end() const
+    {
+      return const_iterator(_seq, size());
+    }
+
+    reference operator[](difference_type n)
+    {
+      return reference(_seq, n);
+    }
+
+    const_reference operator[](difference_type n)  const
+    {
+      return const_reference(_seq, n);
+    }
+
+    bool check(bool set_err = true) const
+    {
+      int s = size();
+      for (int i = 0; i < s; ++i) {
+	swig::SwigVar_PyObject item = PySequence_GetItem(_seq, i);
+	if (!swig::check<value_type>(item)) {
+	  if (set_err) {
+	    char msg[1024];
+	    sprintf(msg, "in sequence element %d", i);
+	    SWIG_Error(SWIG_RuntimeError, msg);
+	  }
+	  return false;
+	}
+      }
+      return true;
+    }
+
+  private:
+    PyObject* _seq;
+  };
+
+}
+
+
 #include <limits.h>
 #if !defined(SWIG_NO_LLONG_MAX)
 # if !defined(LLONG_MAX) && defined(__GNUC__) && defined (__LONG_LONG_MAX__)
@@ -4190,6 +5202,51 @@ SWIG_AsVal_int (PyObject * obj, int *val)
     }
   }  
   return res;
+}
+
+
+SWIGINTERN swig_type_info*
+SWIG_pchar_descriptor(void)
+{
+  static int init = 0;
+  static swig_type_info* info = 0;
+  if (!init) {
+    info = SWIG_TypeQuery("_p_char");
+    init = 1;
+  }
+  return info;
+}
+
+
+SWIGINTERNINLINE PyObject *
+SWIG_FromCharPtrAndSize(const char* carray, size_t size)
+{
+  if (carray) {
+    if (size > INT_MAX) {
+      swig_type_info* pchar_descriptor = SWIG_pchar_descriptor();
+      return pchar_descriptor ? 
+	SWIG_InternalNewPointerObj(const_cast< char * >(carray), pchar_descriptor, 0) : SWIG_Py_Void();
+    } else {
+#if PY_VERSION_HEX >= 0x03000000
+#if PY_VERSION_HEX >= 0x03010000
+      return PyUnicode_DecodeUTF8(carray, static_cast< int >(size), "surrogateescape");
+#else
+      return PyUnicode_FromStringAndSize(carray, static_cast< int >(size));
+#endif
+#else
+      return PyString_FromStringAndSize(carray, static_cast< int >(size));
+#endif
+    }
+  } else {
+    return SWIG_Py_Void();
+  }
+}
+
+
+SWIGINTERNINLINE PyObject *
+SWIG_From_std_string  (const std::string& s)
+{
+  return SWIG_FromCharPtrAndSize(s.data(), s.size());
 }
 
 
@@ -4922,7 +5979,7 @@ SWIGINTERN PyObject *_wrap_SimTimeSeriesSchedule_Year_SimTimeSeriesSched_Sched_W
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Year * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Year::SimTimeSeriesSched_Sched_WeekName_1_53_optional *) &((schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Year const *)arg1)->SimTimeSeriesSched_Sched_WeekName_1_53();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_false_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -4944,7 +6001,7 @@ SWIGINTERN PyObject *_wrap_SimTimeSeriesSchedule_Year_SimTimeSeriesSched_Sched_W
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Year * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Year::SimTimeSeriesSched_Sched_WeekName_1_53_optional *) &(arg1)->SimTimeSeriesSched_Sched_WeekName_1_53();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_false_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -5001,7 +6058,7 @@ SWIGINTERN PyObject *_wrap_SimTimeSeriesSchedule_Year_SimTimeSeriesSched_Sched_W
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimTimeSeriesSchedule_Year_SimTimeSeriesSched_Sched_WeekName_1_53" "', argument " "1"" of type '" "schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Year *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Year * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_t__r_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_false_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimTimeSeriesSchedule_Year_SimTimeSeriesSched_Sched_WeekName_1_53" "', argument " "2"" of type '" "schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Year::SimTimeSeriesSched_Sched_WeekName_1_53_optional const &""'"); 
   }
@@ -5104,7 +6161,7 @@ SWIGINTERN PyObject *_wrap_SimTimeSeriesSchedule_Year_SimTimeSeriesSched_Sched_W
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Year, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_t__r_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_false_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimTimeSeriesSchedule_Year_SimTimeSeriesSched_Sched_WeekName_1_53__SWIG_3(self, args);
@@ -5152,7 +6209,7 @@ SWIGINTERN PyObject *_wrap_SimTimeSeriesSchedule_Year_SimTimeSeriesSched_StartMo
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Year * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Year::SimTimeSeriesSched_StartMonth_1_53_optional *) &((schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Year const *)arg1)->SimTimeSeriesSched_StartMonth_1_53();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__integerList_xsd__cxx__tree__fundamental_pT_schema__simxml__SimModelCore__integerList_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__integerList_false_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -5174,7 +6231,7 @@ SWIGINTERN PyObject *_wrap_SimTimeSeriesSchedule_Year_SimTimeSeriesSched_StartMo
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Year * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Year::SimTimeSeriesSched_StartMonth_1_53_optional *) &(arg1)->SimTimeSeriesSched_StartMonth_1_53();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__integerList_xsd__cxx__tree__fundamental_pT_schema__simxml__SimModelCore__integerList_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__integerList_false_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -5231,7 +6288,7 @@ SWIGINTERN PyObject *_wrap_SimTimeSeriesSchedule_Year_SimTimeSeriesSched_StartMo
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimTimeSeriesSchedule_Year_SimTimeSeriesSched_StartMonth_1_53" "', argument " "1"" of type '" "schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Year *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Year * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__integerList_xsd__cxx__tree__fundamental_pT_schema__simxml__SimModelCore__integerList_t__r_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__integerList_false_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimTimeSeriesSchedule_Year_SimTimeSeriesSched_StartMonth_1_53" "', argument " "2"" of type '" "schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Year::SimTimeSeriesSched_StartMonth_1_53_optional const &""'"); 
   }
@@ -5334,7 +6391,7 @@ SWIGINTERN PyObject *_wrap_SimTimeSeriesSchedule_Year_SimTimeSeriesSched_StartMo
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Year, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__integerList_xsd__cxx__tree__fundamental_pT_schema__simxml__SimModelCore__integerList_t__r_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__integerList_false_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimTimeSeriesSchedule_Year_SimTimeSeriesSched_StartMonth_1_53__SWIG_3(self, args);
@@ -5382,7 +6439,7 @@ SWIGINTERN PyObject *_wrap_SimTimeSeriesSchedule_Year_SimTimeSeriesSched_StartDa
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Year * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Year::SimTimeSeriesSched_StartDay_1_53_optional *) &((schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Year const *)arg1)->SimTimeSeriesSched_StartDay_1_53();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__integerList_xsd__cxx__tree__fundamental_pT_schema__simxml__SimModelCore__integerList_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__integerList_false_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -5404,7 +6461,7 @@ SWIGINTERN PyObject *_wrap_SimTimeSeriesSchedule_Year_SimTimeSeriesSched_StartDa
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Year * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Year::SimTimeSeriesSched_StartDay_1_53_optional *) &(arg1)->SimTimeSeriesSched_StartDay_1_53();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__integerList_xsd__cxx__tree__fundamental_pT_schema__simxml__SimModelCore__integerList_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__integerList_false_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -5461,7 +6518,7 @@ SWIGINTERN PyObject *_wrap_SimTimeSeriesSchedule_Year_SimTimeSeriesSched_StartDa
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimTimeSeriesSchedule_Year_SimTimeSeriesSched_StartDay_1_53" "', argument " "1"" of type '" "schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Year *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Year * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__integerList_xsd__cxx__tree__fundamental_pT_schema__simxml__SimModelCore__integerList_t__r_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__integerList_false_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimTimeSeriesSchedule_Year_SimTimeSeriesSched_StartDay_1_53" "', argument " "2"" of type '" "schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Year::SimTimeSeriesSched_StartDay_1_53_optional const &""'"); 
   }
@@ -5564,7 +6621,7 @@ SWIGINTERN PyObject *_wrap_SimTimeSeriesSchedule_Year_SimTimeSeriesSched_StartDa
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Year, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__integerList_xsd__cxx__tree__fundamental_pT_schema__simxml__SimModelCore__integerList_t__r_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__integerList_false_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimTimeSeriesSchedule_Year_SimTimeSeriesSched_StartDay_1_53__SWIG_3(self, args);
@@ -5612,7 +6669,7 @@ SWIGINTERN PyObject *_wrap_SimTimeSeriesSchedule_Year_SimTimeSeriesSched_EndMont
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Year * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Year::SimTimeSeriesSched_EndMonth_1_53_optional *) &((schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Year const *)arg1)->SimTimeSeriesSched_EndMonth_1_53();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__integerList_xsd__cxx__tree__fundamental_pT_schema__simxml__SimModelCore__integerList_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__integerList_false_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -5634,7 +6691,7 @@ SWIGINTERN PyObject *_wrap_SimTimeSeriesSchedule_Year_SimTimeSeriesSched_EndMont
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Year * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Year::SimTimeSeriesSched_EndMonth_1_53_optional *) &(arg1)->SimTimeSeriesSched_EndMonth_1_53();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__integerList_xsd__cxx__tree__fundamental_pT_schema__simxml__SimModelCore__integerList_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__integerList_false_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -5691,7 +6748,7 @@ SWIGINTERN PyObject *_wrap_SimTimeSeriesSchedule_Year_SimTimeSeriesSched_EndMont
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimTimeSeriesSchedule_Year_SimTimeSeriesSched_EndMonth_1_53" "', argument " "1"" of type '" "schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Year *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Year * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__integerList_xsd__cxx__tree__fundamental_pT_schema__simxml__SimModelCore__integerList_t__r_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__integerList_false_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimTimeSeriesSchedule_Year_SimTimeSeriesSched_EndMonth_1_53" "', argument " "2"" of type '" "schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Year::SimTimeSeriesSched_EndMonth_1_53_optional const &""'"); 
   }
@@ -5794,7 +6851,7 @@ SWIGINTERN PyObject *_wrap_SimTimeSeriesSchedule_Year_SimTimeSeriesSched_EndMont
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Year, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__integerList_xsd__cxx__tree__fundamental_pT_schema__simxml__SimModelCore__integerList_t__r_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__integerList_false_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimTimeSeriesSchedule_Year_SimTimeSeriesSched_EndMonth_1_53__SWIG_3(self, args);
@@ -5842,7 +6899,7 @@ SWIGINTERN PyObject *_wrap_SimTimeSeriesSchedule_Year_SimTimeSeriesSched_EndDay_
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Year * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Year::SimTimeSeriesSched_EndDay_1_53_optional *) &((schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Year const *)arg1)->SimTimeSeriesSched_EndDay_1_53();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__integerList_xsd__cxx__tree__fundamental_pT_schema__simxml__SimModelCore__integerList_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__integerList_false_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -5864,7 +6921,7 @@ SWIGINTERN PyObject *_wrap_SimTimeSeriesSchedule_Year_SimTimeSeriesSched_EndDay_
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Year * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Year::SimTimeSeriesSched_EndDay_1_53_optional *) &(arg1)->SimTimeSeriesSched_EndDay_1_53();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__integerList_xsd__cxx__tree__fundamental_pT_schema__simxml__SimModelCore__integerList_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__integerList_false_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -5921,7 +6978,7 @@ SWIGINTERN PyObject *_wrap_SimTimeSeriesSchedule_Year_SimTimeSeriesSched_EndDay_
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimTimeSeriesSchedule_Year_SimTimeSeriesSched_EndDay_1_53" "', argument " "1"" of type '" "schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Year *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Year * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__integerList_xsd__cxx__tree__fundamental_pT_schema__simxml__SimModelCore__integerList_t__r_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__integerList_false_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimTimeSeriesSchedule_Year_SimTimeSeriesSched_EndDay_1_53" "', argument " "2"" of type '" "schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Year::SimTimeSeriesSched_EndDay_1_53_optional const &""'"); 
   }
@@ -6024,7 +7081,7 @@ SWIGINTERN PyObject *_wrap_SimTimeSeriesSchedule_Year_SimTimeSeriesSched_EndDay_
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Year, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__integerList_xsd__cxx__tree__fundamental_pT_schema__simxml__SimModelCore__integerList_t__r_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__integerList_false_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimTimeSeriesSchedule_Year_SimTimeSeriesSched_EndDay_1_53__SWIG_3(self, args);
@@ -8038,6 +9095,37 @@ fail:
 }
 
 
+SWIGINTERN PyObject *_wrap_SimTimeSeriesSchedule_Year_Default_sequence_getValue(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  /*PyObject *resultobj = 0;
+  xsd::cxx::tree::sequence< ::schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Year_Default,false > *arg1 = (xsd::cxx::tree::sequence< ::schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Year_Default,false > *) 0 ;
+  int arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  std::string result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:SimTimeSeriesSchedule_Year_Default_sequence_getValue",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_xsd__cxx__tree__sequenceT_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Year_Default_false_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimTimeSeriesSchedule_Year_Default_sequence_getValue" "', argument " "1"" of type '" "xsd::cxx::tree::sequence< ::schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Year_Default,false > *""'"); 
+  }
+  arg1 = reinterpret_cast< xsd::cxx::tree::sequence< ::schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Year_Default,false > * >(argp1);
+  ecode2 = SWIG_AsVal_int(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "SimTimeSeriesSchedule_Year_Default_sequence_getValue" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = static_cast< int >(val2);
+  result = (arg1)->getValue(arg2);
+  resultobj = SWIG_From_std_string(static_cast< std::string >(result));
+  return resultobj;
+fail:*/
+  return NULL;
+}
+
+
 SWIGINTERN PyObject *_wrap_SimTimeSeriesSchedule_Year_Default_sequence_at__SWIG_2(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   xsd::cxx::tree::sequence< ::schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Year_Default,false > *arg1 = (xsd::cxx::tree::sequence< ::schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Year_Default,false > *) 0 ;
@@ -9211,6 +10299,7 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"SimTimeSeriesSchedule_Year_Default_sequence_end", _wrap_SimTimeSeriesSchedule_Year_Default_sequence_end, METH_VARARGS, NULL},
 	 { (char *)"SimTimeSeriesSchedule_Year_Default_sequence_rbegin", _wrap_SimTimeSeriesSchedule_Year_Default_sequence_rbegin, METH_VARARGS, NULL},
 	 { (char *)"SimTimeSeriesSchedule_Year_Default_sequence_rend", _wrap_SimTimeSeriesSchedule_Year_Default_sequence_rend, METH_VARARGS, NULL},
+	 { (char *)"SimTimeSeriesSchedule_Year_Default_sequence_getValue", _wrap_SimTimeSeriesSchedule_Year_Default_sequence_getValue, METH_VARARGS, NULL},
 	 { (char *)"SimTimeSeriesSchedule_Year_Default_sequence_at", _wrap_SimTimeSeriesSchedule_Year_Default_sequence_at, METH_VARARGS, NULL},
 	 { (char *)"SimTimeSeriesSchedule_Year_Default_sequence_front", _wrap_SimTimeSeriesSchedule_Year_Default_sequence_front, METH_VARARGS, NULL},
 	 { (char *)"SimTimeSeriesSchedule_Year_Default_sequence_back", _wrap_SimTimeSeriesSchedule_Year_Default_sequence_back, METH_VARARGS, NULL},
@@ -9307,6 +10396,9 @@ static void *_p_schema__simxml__ResourcesGeometry__SimProfileDefinitionTo_p_sche
 static void *_p_schema__simxml__SimModelCore__SimRepresentationTo_p_schema__simxml__SimModelCore__SimResourceObject(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((schema::simxml::SimModelCore::SimResourceObject *)  ((schema::simxml::SimModelCore::SimRepresentation *) x));
 }
+static void *_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree__type_t_tTo_p_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > *)  ((xsd::cxx::tree::string< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::type > > *) x));
+}
 static void *_p_schema__simxml__SimModelCore__SimSpatialStructureElementTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimObjectDefinition *)(schema::simxml::SimModelCore::SimObject *) ((schema::simxml::SimModelCore::SimSpatialStructureElement *) x));
 }
@@ -9324,12 +10416,6 @@ static void *_p_schema__simxml__SimModelCore__SimRootTo_p_xsd__cxx__tree___type(
 }
 static void *_p_schema__simxml__ResourcesGeneral__SimUnitTypeTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimResourceObject *) ((schema::simxml::ResourcesGeneral::SimUnitType *) x));
-}
-static void *_p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Year_DefaultTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimResourceObject *)(schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule *)(schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Year *) ((schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Year_Default *) x));
-}
-static void *_p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_YearTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimResourceObject *)(schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule *) ((schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Year *) x));
 }
 static void *_p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Calendar_ConfigurationTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimResourceObject *)(schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule *)(schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Calendar *) ((schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Calendar_Configuration *) x));
@@ -9349,6 +10435,12 @@ static void *_p_schema__simxml__SimModelCore__SimActorDefinitionTo_p_xsd__cxx__t
 static void *_p_schema__simxml__SimModelCore__SimObjectDefinitionTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *) ((schema::simxml::SimModelCore::SimObjectDefinition *) x));
 }
+static void *_p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_YearTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimResourceObject *)(schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule *) ((schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Year *) x));
+}
+static void *_p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Year_DefaultTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimResourceObject *)(schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule *)(schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Year *) ((schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Year_Default *) x));
+}
 static void *_p_schema__simxml__SimModelCore__SimGroupTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimObjectDefinition *)(schema::simxml::SimModelCore::SimObject *) ((schema::simxml::SimModelCore::SimGroup *) x));
 }
@@ -9361,8 +10453,14 @@ static void *_p_schema__simxml__SimModelCore__SimObjectTypeDefinitionTo_p_xsd__c
 static void *_p_schema__simxml__ResourcesGeneral__SimPortTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimResourceObject *)(schema::simxml::ResourcesGeneral::SimNode *) ((schema::simxml::ResourcesGeneral::SimPort *) x));
 }
+static void *_p_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_tTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((xsd::cxx::tree::_type *)  ((xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > *) x));
+}
 static void *_p_schema__simxml__SimModelCore__SimPropertySetDefinitionTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimResourceObject *) ((schema::simxml::SimModelCore::SimPropertySetDefinition *) x));
+}
+static void *_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree__type_t_tTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((xsd::cxx::tree::_type *) (xsd::cxx::tree::simple_type< char,xsd::cxx::tree::type > *) ((xsd::cxx::tree::string< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::type > > *) x));
 }
 static void *_p_schema__simxml__SimModelCore__SimRepresentationTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimResourceObject *) ((schema::simxml::SimModelCore::SimRepresentation *) x));
@@ -9513,6 +10611,9 @@ static void *_p_xsd__cxx__tree__sequenceT_schema__simxml__ResourcesGeneral__SimT
 }
 static void *_p_xsd__cxx__tree__sequenceT_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Year_Default_false_tTo_p_xsd__cxx__tree__sequence_common(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((xsd::cxx::tree::sequence_common *)  ((xsd::cxx::tree::sequence< ::schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Year_Default,false > *) x));
+}
+static void *_p_xsd__cxx__tree__sequenceT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree__type_t_t_false_tTo_p_xsd__cxx__tree__sequence_common(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((xsd::cxx::tree::sequence_common *)  ((xsd::cxx::tree::sequence< xsd::cxx::tree::string< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::type > >,false > *) x));
 }
 static swig_type_info _swigt__p_ApplicableDates_optional = {"_p_ApplicableDates_optional", "ApplicableDates_optional *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_ApplicableDates_traits = {"_p_ApplicableDates_traits", "ApplicableDates_traits *", 0, 0, (void*)0, 0};
@@ -9772,6 +10873,7 @@ static swig_type_info _swigt__p_allocator_type = {"_p_allocator_type", "allocato
 static swig_type_info _swigt__p_base_const_iterator = {"_p_base_const_iterator", "base_const_iterator *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_base_iterator = {"_p_base_iterator", "base_iterator *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_base_sequence = {"_p_base_sequence", "base_sequence *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_base_type = {"_p_base_type", "base_type *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_bool = {"_p_bool", "bool *|xml_schema::boolean *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_bool_convertible = {"_p_bool_convertible", "bool_convertible *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_char = {"_p_char", "char *", 0, 0, (void*)0, 0};
@@ -9847,6 +10949,7 @@ static swig_type_info _swigt__p_unsigned_short = {"_p_unsigned_short", "unsigned
 static swig_type_info _swigt__p_value_type = {"_p_value_type", "value_type *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xercesc__DOMElement = {"_p_xercesc__DOMElement", "::xercesc::DOMElement *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree___type = {"_p_xsd__cxx__tree___type", "xsd::cxx::tree::_type *|xsd::cxx::tree::type *|xml_schema::type *|xsd::cxx::tree::container *|xml_schema::container *|::xml_schema::container *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree__type_t_t = {"_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree__type_t_t", 0, 0, 0, 0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__base64_binaryT_char_xsd__cxx__tree__simple_type_t = {"_p_xsd__cxx__tree__base64_binaryT_char_xsd__cxx__tree__simple_type_t", "xml_schema::base64_binary *|::xsd::cxx::tree::base64_binary< char,xsd::cxx::tree::simple_type > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__boundsT_char_t = {"_p_xsd__cxx__tree__boundsT_char_t", "::xsd::cxx::tree::bounds< char > *|xml_schema::bounds *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__bufferT_char_t = {"_p_xsd__cxx__tree__bufferT_char_t", "::xsd::cxx::tree::buffer< char > *|xml_schema::buffer *", 0, 0, (void*)0, 0};
@@ -9882,9 +10985,9 @@ static swig_type_info _swigt__p_xsd__cxx__tree__no_prefix_mappingT_char_t = {"_p
 static swig_type_info _swigt__p_xsd__cxx__tree__no_type_infoT_char_t = {"_p_xsd__cxx__tree__no_type_infoT_char_t", "xml_schema::no_type_info *|::xsd::cxx::tree::no_type_info< char > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__string_t = {"_p_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__string_t", "::xsd::cxx::tree::normalized_string< char,xsd::cxx::tree::string > *|xml_schema::normalized_string *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__not_derivedT_char_t = {"_p_xsd__cxx__tree__not_derivedT_char_t", "::xsd::cxx::tree::not_derived< char > *|xml_schema::not_derived *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__integerList_xsd__cxx__tree__fundamental_pT_schema__simxml__SimModelCore__integerList_t__r_t = {"_p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__integerList_xsd__cxx__tree__fundamental_pT_schema__simxml__SimModelCore__integerList_t__r_t", "schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Year::SimTimeSeriesSched_EndDay_1_53_optional *|schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Year::SimTimeSeriesSched_EndMonth_1_53_optional *|schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Year::SimTimeSeriesSched_StartDay_1_53_optional *|schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Year::SimTimeSeriesSched_StartMonth_1_53_optional *|xsd::cxx::tree::optional< ::schema::simxml::SimModelCore::integerList,xsd::cxx::tree::fundamental_p< ::schema::simxml::SimModelCore::integerList >::r > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__integerList_false_t = {"_p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__integerList_false_t", "schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Year::SimTimeSeriesSched_EndDay_1_53_optional *|schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Year::SimTimeSeriesSched_EndMonth_1_53_optional *|schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Year::SimTimeSeriesSched_StartDay_1_53_optional *|schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Year::SimTimeSeriesSched_StartMonth_1_53_optional *|xsd::cxx::tree::optional< ::schema::simxml::SimModelCore::integerList,false > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t = {"_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t", "schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Year::SimTimeSeriesSched_SchedTypeLimitsName_optional *|xsd::cxx::tree::optional< xsd::cxx::tree::idref< char,xsd::cxx::tree::ncname,xsd::cxx::tree::_type >,false > *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_t__r_t = {"_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_t__r_t", "schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Year::SimTimeSeriesSched_Sched_WeekName_1_53_optional *|xsd::cxx::tree::optional< ::xsd::cxx::tree::idrefs< char,xsd::cxx::tree::simple_type,xsd::cxx::tree::idref >,xsd::cxx::tree::fundamental_p< ::xsd::cxx::tree::idrefs< char,xsd::cxx::tree::simple_type,xsd::cxx::tree::idref > >::r > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_false_t = {"_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_false_t", "schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Year::SimTimeSeriesSched_Sched_WeekName_1_53_optional *|xsd::cxx::tree::optional< ::xsd::cxx::tree::idrefs< char,xsd::cxx::tree::simple_type,xsd::cxx::tree::idref >,false > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_false_t = {"_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_false_t", "schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Year::SimTimeSeriesSched_Name_optional *|schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Year::SimTimeSeriesSched_TimeSeriesSchedType_optional *|xsd::cxx::tree::optional< ::xsd::cxx::tree::string< char,xsd::cxx::tree::simple_type >,false > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__parsingT_char_t = {"_p_xsd__cxx__tree__parsingT_char_t", "xml_schema::parsing *|::xsd::cxx::tree::parsing< char > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__propertiesT_char_t = {"_p_xsd__cxx__tree__propertiesT_char_t", "::xsd::cxx::tree::properties< char > *|xml_schema::properties *", 0, 0, (void*)0, 0};
@@ -9892,6 +10995,7 @@ static swig_type_info _swigt__p_xsd__cxx__tree__qnameT_char_xsd__cxx__tree__simp
 static swig_type_info _swigt__p_xsd__cxx__tree__sequenceT_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Year_Default_false_t = {"_p_xsd__cxx__tree__sequenceT_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Year_Default_false_t", "xsd::cxx::tree::sequence< ::schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Year_Default,false > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__sequence_common = {"_p_xsd__cxx__tree__sequence_common", "xsd::cxx::tree::sequence_common *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__sequenceT_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Calendar_Configuration_false_t = {"_p_xsd__cxx__tree__sequenceT_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Calendar_Configuration_false_t", 0, 0, 0, 0, 0};
+static swig_type_info _swigt__p_xsd__cxx__tree__sequenceT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree__type_t_t_false_t = {"_p_xsd__cxx__tree__sequenceT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree__type_t_t_false_t", 0, 0, 0, 0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__severity = {"_p_xsd__cxx__tree__severity", "::xsd::cxx::tree::severity *|xml_schema::severity *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t = {"_p_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t", "xml_schema::simple_type *|xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t = {"_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t", "schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Year::SimTimeSeriesSched_Name_type *|schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Year::SimTimeSeriesSched_TimeSeriesSchedType_type *|::xsd::cxx::tree::string< char,xsd::cxx::tree::simple_type > *|::xml_schema::string *|xml_schema::string *", 0, 0, (void*)0, 0};
@@ -10163,6 +11267,7 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_base_const_iterator,
   &_swigt__p_base_iterator,
   &_swigt__p_base_sequence,
+  &_swigt__p_base_type,
   &_swigt__p_bool,
   &_swigt__p_bool_convertible,
   &_swigt__p_char,
@@ -10273,18 +11378,20 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_xsd__cxx__tree__no_type_infoT_char_t,
   &_swigt__p_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__string_t,
   &_swigt__p_xsd__cxx__tree__not_derivedT_char_t,
-  &_swigt__p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__integerList_xsd__cxx__tree__fundamental_pT_schema__simxml__SimModelCore__integerList_t__r_t,
+  &_swigt__p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__integerList_false_t,
   &_swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t,
-  &_swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_t__r_t,
+  &_swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_false_t,
   &_swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_false_t,
   &_swigt__p_xsd__cxx__tree__parsingT_char_t,
   &_swigt__p_xsd__cxx__tree__propertiesT_char_t,
   &_swigt__p_xsd__cxx__tree__qnameT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__uri_xsd__cxx__tree__ncname_t,
   &_swigt__p_xsd__cxx__tree__sequenceT_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Calendar_Configuration_false_t,
   &_swigt__p_xsd__cxx__tree__sequenceT_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Year_Default_false_t,
+  &_swigt__p_xsd__cxx__tree__sequenceT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree__type_t_t_false_t,
   &_swigt__p_xsd__cxx__tree__sequence_common,
   &_swigt__p_xsd__cxx__tree__severity,
   &_swigt__p_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t,
+  &_swigt__p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree__type_t_t,
   &_swigt__p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t,
   &_swigt__p_xsd__cxx__tree__timeT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t,
   &_swigt__p_xsd__cxx__tree__time_zone,
@@ -10554,6 +11661,7 @@ static swig_cast_info _swigc__p_allocator_type[] = {  {&_swigt__p_allocator_type
 static swig_cast_info _swigc__p_base_const_iterator[] = {  {&_swigt__p_base_const_iterator, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_base_iterator[] = {  {&_swigt__p_base_iterator, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_base_sequence[] = {  {&_swigt__p_base_sequence, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_base_type[] = {  {&_swigt__p_base_type, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_bool[] = {  {&_swigt__p_bool, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_bool_convertible[] = {  {&_swigt__p_bool_convertible, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_char[] = {  {&_swigt__p_char, 0, 0, 0},{0, 0, 0, 0}};
@@ -10628,7 +11736,8 @@ static swig_cast_info _swigc__p_unsigned_long_long[] = {  {&_swigt__p_unsigned_l
 static swig_cast_info _swigc__p_unsigned_short[] = {  {&_swigt__p_unsigned_short, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_value_type[] = {  {&_swigt__p_value_type, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xercesc__DOMElement[] = {  {&_swigt__p_xercesc__DOMElement, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_xsd__cxx__tree___type[] = {  {&_swigt__p_schema__simxml__SimModelCore__SimBldgModelParams, _p_schema__simxml__SimModelCore__SimBldgModelParamsTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeneral__SimArrayParams, _p_schema__simxml__ResourcesGeneral__SimArrayParamsTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimTopologicalRepresentationItem, _p_schema__simxml__SimModelCore__SimTopologicalRepresentationItemTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimBuildingElement, _p_schema__simxml__SimModelCore__SimBuildingElementTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimRoot, _p_schema__simxml__SimModelCore__SimRootTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeneral__SimUnitType, _p_schema__simxml__ResourcesGeneral__SimUnitTypeTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimDistributionFlowElement, _p_schema__simxml__SimModelCore__SimDistributionFlowElementTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimObjectTypeDefinition, _p_schema__simxml__SimModelCore__SimObjectTypeDefinitionTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimDistributionElement, _p_schema__simxml__SimModelCore__SimDistributionElementTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimObjectDefinition, _p_schema__simxml__SimModelCore__SimObjectDefinitionTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimGroup, _p_schema__simxml__SimModelCore__SimGroupTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimGeometricRepresentationItem, _p_schema__simxml__SimModelCore__SimGeometricRepresentationItemTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeneral__SimPort, _p_schema__simxml__ResourcesGeneral__SimPortTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimSpatialStructureElement, _p_schema__simxml__SimModelCore__SimSpatialStructureElementTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimRepresentationItem, _p_schema__simxml__SimModelCore__SimRepresentationItemTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimRepresentation, _p_schema__simxml__SimModelCore__SimRepresentationTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_xsd__cxx__tree___type, 0, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimTemplate, _p_schema__simxml__SimModelCore__SimTemplateTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__MepModel__SimFlowEnergyConverter, _p_schema__simxml__MepModel__SimFlowEnergyConverterTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimResourceObject, _p_schema__simxml__SimModelCore__SimResourceObjectTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimObject, _p_schema__simxml__SimModelCore__SimObjectTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimDistributionControlElement, _p_schema__simxml__SimModelCore__SimDistributionControlElementTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimActorDefinition, _p_schema__simxml__SimModelCore__SimActorDefinitionTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeneral__SimNode, _p_schema__simxml__ResourcesGeneral__SimNodeTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimPropertySetDefinition, _p_schema__simxml__SimModelCore__SimPropertySetDefinitionTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeometry__SimProfileDefinition, _p_schema__simxml__ResourcesGeometry__SimProfileDefinitionTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimFeatureElement, _p_schema__simxml__SimModelCore__SimFeatureElementTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimElement, _p_schema__simxml__SimModelCore__SimElementTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimAppDefault, _p_schema__simxml__SimModelCore__SimAppDefaultTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimObjectPlacement, _p_schema__simxml__SimModelCore__SimObjectPlacementTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Year_Default, _p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Year_DefaultTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Year, _p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_YearTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Calendar_Configuration, _p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Calendar_ConfigurationTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Calendar, _p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_CalendarTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule, _p_schema__simxml__ResourcesGeneral__SimTimeSeriesScheduleTo_p_xsd__cxx__tree___type, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree__type_t_t[] = {{&_swigt__p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree__type_t_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_xsd__cxx__tree___type[] = {  {&_swigt__p_schema__simxml__SimModelCore__SimBldgModelParams, _p_schema__simxml__SimModelCore__SimBldgModelParamsTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeneral__SimArrayParams, _p_schema__simxml__ResourcesGeneral__SimArrayParamsTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimTopologicalRepresentationItem, _p_schema__simxml__SimModelCore__SimTopologicalRepresentationItemTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimBuildingElement, _p_schema__simxml__SimModelCore__SimBuildingElementTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimRoot, _p_schema__simxml__SimModelCore__SimRootTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeneral__SimUnitType, _p_schema__simxml__ResourcesGeneral__SimUnitTypeTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimDistributionFlowElement, _p_schema__simxml__SimModelCore__SimDistributionFlowElementTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimObjectTypeDefinition, _p_schema__simxml__SimModelCore__SimObjectTypeDefinitionTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimDistributionElement, _p_schema__simxml__SimModelCore__SimDistributionElementTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimObjectDefinition, _p_schema__simxml__SimModelCore__SimObjectDefinitionTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimGroup, _p_schema__simxml__SimModelCore__SimGroupTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimGeometricRepresentationItem, _p_schema__simxml__SimModelCore__SimGeometricRepresentationItemTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeneral__SimPort, _p_schema__simxml__ResourcesGeneral__SimPortTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimSpatialStructureElement, _p_schema__simxml__SimModelCore__SimSpatialStructureElementTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree__type_t_t, _p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree__type_t_tTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimRepresentationItem, _p_schema__simxml__SimModelCore__SimRepresentationItemTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimRepresentation, _p_schema__simxml__SimModelCore__SimRepresentationTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_xsd__cxx__tree___type, 0, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimTemplate, _p_schema__simxml__SimModelCore__SimTemplateTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__MepModel__SimFlowEnergyConverter, _p_schema__simxml__MepModel__SimFlowEnergyConverterTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimResourceObject, _p_schema__simxml__SimModelCore__SimResourceObjectTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimObject, _p_schema__simxml__SimModelCore__SimObjectTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimDistributionControlElement, _p_schema__simxml__SimModelCore__SimDistributionControlElementTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimActorDefinition, _p_schema__simxml__SimModelCore__SimActorDefinitionTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t, _p_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_tTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeneral__SimNode, _p_schema__simxml__ResourcesGeneral__SimNodeTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimPropertySetDefinition, _p_schema__simxml__SimModelCore__SimPropertySetDefinitionTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeometry__SimProfileDefinition, _p_schema__simxml__ResourcesGeometry__SimProfileDefinitionTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimFeatureElement, _p_schema__simxml__SimModelCore__SimFeatureElementTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimElement, _p_schema__simxml__SimModelCore__SimElementTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimAppDefault, _p_schema__simxml__SimModelCore__SimAppDefaultTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimObjectPlacement, _p_schema__simxml__SimModelCore__SimObjectPlacementTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Year_Default, _p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Year_DefaultTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Year, _p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_YearTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Calendar_Configuration, _p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Calendar_ConfigurationTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Calendar, _p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_CalendarTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule, _p_schema__simxml__ResourcesGeneral__SimTimeSeriesScheduleTo_p_xsd__cxx__tree___type, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__base64_binaryT_char_xsd__cxx__tree__simple_type_t[] = {  {&_swigt__p_xsd__cxx__tree__base64_binaryT_char_xsd__cxx__tree__simple_type_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__boundsT_char_t[] = {  {&_swigt__p_xsd__cxx__tree__boundsT_char_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__bufferT_char_t[] = {  {&_swigt__p_xsd__cxx__tree__bufferT_char_t, 0, 0, 0},{0, 0, 0, 0}};
@@ -10664,18 +11773,19 @@ static swig_cast_info _swigc__p_xsd__cxx__tree__no_prefix_mappingT_char_t[] = { 
 static swig_cast_info _swigc__p_xsd__cxx__tree__no_type_infoT_char_t[] = {  {&_swigt__p_xsd__cxx__tree__no_type_infoT_char_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__string_t[] = {  {&_swigt__p_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__string_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__not_derivedT_char_t[] = {  {&_swigt__p_xsd__cxx__tree__not_derivedT_char_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__integerList_xsd__cxx__tree__fundamental_pT_schema__simxml__SimModelCore__integerList_t__r_t[] = {  {&_swigt__p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__integerList_xsd__cxx__tree__fundamental_pT_schema__simxml__SimModelCore__integerList_t__r_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__integerList_false_t[] = {  {&_swigt__p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__integerList_false_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t[] = {  {&_swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_t__r_t[] = {  {&_swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_t__r_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_false_t[] = {  {&_swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_false_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_false_t[] = {  {&_swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_false_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__parsingT_char_t[] = {  {&_swigt__p_xsd__cxx__tree__parsingT_char_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__propertiesT_char_t[] = {  {&_swigt__p_xsd__cxx__tree__propertiesT_char_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__qnameT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__uri_xsd__cxx__tree__ncname_t[] = {  {&_swigt__p_xsd__cxx__tree__qnameT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__uri_xsd__cxx__tree__ncname_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__sequenceT_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Year_Default_false_t[] = {  {&_swigt__p_xsd__cxx__tree__sequenceT_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Year_Default_false_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__sequenceT_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Calendar_Configuration_false_t[] = {{&_swigt__p_xsd__cxx__tree__sequenceT_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Calendar_Configuration_false_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_xsd__cxx__tree__sequence_common[] = {  {&_swigt__p_xsd__cxx__tree__sequenceT_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Calendar_Configuration_false_t, _p_xsd__cxx__tree__sequenceT_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Calendar_Configuration_false_tTo_p_xsd__cxx__tree__sequence_common, 0, 0},  {&_swigt__p_xsd__cxx__tree__sequenceT_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Year_Default_false_t, _p_xsd__cxx__tree__sequenceT_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Year_Default_false_tTo_p_xsd__cxx__tree__sequence_common, 0, 0},  {&_swigt__p_xsd__cxx__tree__sequence_common, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_xsd__cxx__tree__sequenceT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree__type_t_t_false_t[] = {{&_swigt__p_xsd__cxx__tree__sequenceT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree__type_t_t_false_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_xsd__cxx__tree__sequence_common[] = {  {&_swigt__p_xsd__cxx__tree__sequenceT_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Calendar_Configuration_false_t, _p_xsd__cxx__tree__sequenceT_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Calendar_Configuration_false_tTo_p_xsd__cxx__tree__sequence_common, 0, 0},  {&_swigt__p_xsd__cxx__tree__sequenceT_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Year_Default_false_t, _p_xsd__cxx__tree__sequenceT_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Year_Default_false_tTo_p_xsd__cxx__tree__sequence_common, 0, 0},  {&_swigt__p_xsd__cxx__tree__sequence_common, 0, 0, 0},  {&_swigt__p_xsd__cxx__tree__sequenceT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree__type_t_t_false_t, _p_xsd__cxx__tree__sequenceT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree__type_t_t_false_tTo_p_xsd__cxx__tree__sequence_common, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__severity[] = {  {&_swigt__p_xsd__cxx__tree__severity, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t[] = {  {&_swigt__p_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t[] = {  {&_swigt__p_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t, 0, 0, 0},  {&_swigt__p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree__type_t_t, _p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree__type_t_tTo_p_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t[] = {  {&_swigt__p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__timeT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t[] = {  {&_swigt__p_xsd__cxx__tree__timeT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__time_zone[] = {  {&_swigt__p_xsd__cxx__tree__time_zone, 0, 0, 0},{0, 0, 0, 0}};
@@ -10945,6 +12055,7 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_base_const_iterator,
   _swigc__p_base_iterator,
   _swigc__p_base_sequence,
+  _swigc__p_base_type,
   _swigc__p_bool,
   _swigc__p_bool_convertible,
   _swigc__p_char,
@@ -11055,18 +12166,20 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_xsd__cxx__tree__no_type_infoT_char_t,
   _swigc__p_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__string_t,
   _swigc__p_xsd__cxx__tree__not_derivedT_char_t,
-  _swigc__p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__integerList_xsd__cxx__tree__fundamental_pT_schema__simxml__SimModelCore__integerList_t__r_t,
+  _swigc__p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__integerList_false_t,
   _swigc__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t,
-  _swigc__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_xsd__cxx__tree__fundamental_pT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_t__r_t,
+  _swigc__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t_false_t,
   _swigc__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_false_t,
   _swigc__p_xsd__cxx__tree__parsingT_char_t,
   _swigc__p_xsd__cxx__tree__propertiesT_char_t,
   _swigc__p_xsd__cxx__tree__qnameT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__uri_xsd__cxx__tree__ncname_t,
   _swigc__p_xsd__cxx__tree__sequenceT_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Calendar_Configuration_false_t,
   _swigc__p_xsd__cxx__tree__sequenceT_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Year_Default_false_t,
+  _swigc__p_xsd__cxx__tree__sequenceT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree__type_t_t_false_t,
   _swigc__p_xsd__cxx__tree__sequence_common,
   _swigc__p_xsd__cxx__tree__severity,
   _swigc__p_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t,
+  _swigc__p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree__type_t_t,
   _swigc__p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t,
   _swigc__p_xsd__cxx__tree__timeT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t,
   _swigc__p_xsd__cxx__tree__time_zone,

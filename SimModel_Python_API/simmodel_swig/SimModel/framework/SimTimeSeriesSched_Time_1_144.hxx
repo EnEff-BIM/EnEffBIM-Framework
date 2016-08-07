@@ -50,7 +50,7 @@
 #include <xsd/cxx/config.hxx>
 
 #if (XSD_INT_VERSION != 4000000L)
-#error XSD runtime version mismatch
+//#error XSD runtime version mismatch
 #endif
 
 #include <xsd/cxx/pre.hxx>
@@ -260,8 +260,9 @@ namespace schema
         public:
         // stringItem
         //
-        typedef ::xml_schema::string stringItem_type;
-        typedef ::xsd::cxx::tree::sequence< stringItem_type > stringItem_sequence;
+        //typedef ::xml_schema::string stringItem_type;
+		typedef ::xsd::cxx::tree::string< char, ::xml_schema::simple_type > stringItem_type;
+        typedef ::xsd::cxx::tree::sequence< stringItem_type, false > stringItem_sequence;
         typedef stringItem_sequence::iterator stringItem_iterator;
         typedef stringItem_sequence::const_iterator stringItem_const_iterator;
         typedef ::xsd::cxx::tree::traits< stringItem_type, char > stringItem_traits;

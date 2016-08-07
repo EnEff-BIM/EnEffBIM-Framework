@@ -339,11 +339,11 @@ namespace xsd
 			return "stringV1";
 		}*/
 
-		std::string
+		/*std::string
         getV2 ()
 		{
 			return "stringV2";
-		}
+		}*/
 
 		/*T
         getV3 ()
@@ -351,11 +351,11 @@ namespace xsd
 			return x_->base();
 		}*/
 
-		std::string
+		/*std::string
         getV4 ()
 		{  
 			return (std::string)*x_;
-		}
+		}*/
 
 		/*std::string
         getV5 ()
@@ -369,18 +369,69 @@ namespace xsd
 			return (std::string)*x_;
 		}*/
 
-		std::string
+		/*std::string
         getV7 ()
 		{  
 			return *x_;
-		}
+		}*/
 
+		/*std::string
+        getValue ()
+        {
+          return *x_;
+        }*/
+
+//#if std::is_same<T, ::xml_schema::string>::value == true
 		std::string
         getValue ()
         {
           return *x_;
         }
+//#else
+		std::vector<std::string>
+        getIdRefList ()
+        {
+			std::vector<std::string> _xsd_idref_list;
+			if(std::is_same<T, ::xml_schema::idrefs>::value)
+			{
+				//(::xsd::cxx::tree::idrefs< char, ::xsd::cxx::tree::simple_type< char, ::xsd::cxx::tree::type >, ::xsd::cxx::tree::idref< char, ::xsd::cxx::tree::ncname< char, ::xsd::cxx::tree::name< char, ::xsd::cxx::tree::token< char, ::xsd::cxx::tree::normalized_string< char, ::xsd::cxx::tree::string< char, ::xsd::cxx::tree::simple_type< char, ::xsd::cxx::tree::type > > > > > >, ::xsd::cxx::tree::type > >) x_;
+	
+				::xml_schema::idrefs* xsd_idrefs = (::xml_schema::idrefs*)x_;
+				for(::xml_schema::idrefs::iterator _it=xsd_idrefs->begin(); _it!=xsd_idrefs->end(); ++_it)
+				{
+					_xsd_idref_list.push_back(*_it);
+				}
+			}
 
+			return _xsd_idref_list;
+          //return *x_;
+        }
+
+		std::vector<double> 
+		getNumberList ()
+		{
+			std::vector<double> _xsd_number_list;
+			if(std::is_same<T, ::schema::simxml::SimModelCore::integerList>::value)
+			{
+				::schema::simxml::SimModelCore::integerList* xsd_ints = (::schema::simxml::SimModelCore::integerList*)x_;
+				for(::schema::simxml::SimModelCore::integerList::iterator _it=xsd_ints->begin(); _it!=xsd_ints->end(); ++_it)
+				{
+					_xsd_number_list.push_back(*_it);
+				}
+			}
+			else if(std::is_same<T, ::schema::simxml::SimModelCore::doubleList>::value)
+			{
+				::schema::simxml::SimModelCore::doubleList* xsd_ints = (::schema::simxml::SimModelCore::doubleList*)x_;
+				for(::schema::simxml::SimModelCore::doubleList::iterator _it=xsd_ints->begin(); _it!=xsd_ints->end(); ++_it)
+				{
+					_xsd_number_list.push_back(*_it);
+				}
+			}
+
+			return _xsd_number_list;
+		}
+
+//#endif
 
         void
         set (const T& x)
@@ -559,6 +610,10 @@ namespace xsd
 		  else if(std::is_same<T, xml_schema::int_>::value)
 		  {
 			  return (double)x_;
+		  }
+		  else if(std::is_same<T, xml_schema::boolean>::value)
+		  {
+			  return (bool)x_;
 		  }
 
 		  return x_;
@@ -1116,6 +1171,14 @@ namespace xsd
         {
           return static_cast<T&> (*(v_.at (n)));
         }
+
+		// adding
+		std::string
+		getValue(int n)
+		{
+			if(std::is_same<T, ::xml_schema::string>::value)
+				return static_cast<T&> (*(v_.at (n)));
+		}
 
         const T&
         at (size_type n) const

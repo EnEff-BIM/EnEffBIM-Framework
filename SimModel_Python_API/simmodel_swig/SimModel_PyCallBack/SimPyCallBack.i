@@ -17,4 +17,4 @@
 
 %pythoncode "filter.py"
 
-%template(VectorString) std::vector<std::string>;
+//%template(VectorString) std::vector<std::string>;
