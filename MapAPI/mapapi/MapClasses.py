@@ -59,6 +59,7 @@ import SimFlowController_Valve_Default
 import SimFlowSegment_Pipe_Indoor
 import SimDistributionPort_HotWaterFlowPort_Water_Out
 import SimDistributionPort_HotWaterFlowPort_Water_In
+import SimDistributionPort_HotWaterFlowPort_Water_InOrOut
 
 class MoObject(object):
     """Base class for all mapped objects
@@ -443,7 +444,8 @@ class MapBuilding(MoObject):
         for a in self.hvac_components_sim:
             a.convert_me()
         for a in self.hvac_components_sim:
-            a.mapp_me()
+            #a.mapp_me()
+            pass
 
 
 class MapThermalZone(MoObject):
@@ -536,6 +538,7 @@ class MapComponent(MoObject):
         self.hvac_loop = None
         self.connected_in = []
         self.connected_out = []
+        self.connected_out_ref_id = []
         from mapapi.molibs.AixLib.Fluid.HeatExchangers.Boiler import Boiler
         from mapapi.molibs.AixLib.Fluid.Movers.Pump import Pump
         from mapapi.molibs.AixLib.Fluid.FixedResitances.StaticPipe import Pipe
@@ -572,18 +575,23 @@ class MapComponent(MoObject):
         else:
             comp_child = self.hierarchy_node.getChildList()
         for i in range(comp_child.size()):
-            if comp_child[i].ClassType() == "SimDistributionPort_HotWaterFlowPort_Water_Out":
+
+            if comp_child[i].ClassType() == \
+                    "SimDistributionPort_HotWaterFlowPort_Water_Out":
                 outlet_child = comp_child[i].getChildList()
                 for j in range(outlet_child.size()):
                     if outlet_child[j].ClassType() == "SimConnection_HotWaterFlow_Default":
                         connection_parent = outlet_child[j].getParentList()
                         for k in range(connection_parent.size()):
+
                             if connection_parent[k].ClassType() == \
                                     "SimDistributionPort_HotWaterFlowPort_Water_In":
                                 inlet_parent = connection_parent[k].getParentList()
                                 for h in range(inlet_parent.size()):
-                                    if inlet_parent[h].ClassType != "SimConnection_HotWaterFlow_Default":
+                                    if inlet_parent[h].ClassType() != \
+                                            "SimConnection_HotWaterFlow_Default":
                                         self.connected_out.append(inlet_parent[h])
+
             elif comp_child[i].ClassType() == \
                 "SimDistributionPort_HotWaterFlowPort_Water_In":
                 outlet_child = comp_child[i].getChildList()
@@ -593,10 +601,31 @@ class MapComponent(MoObject):
                         for k in range(connection_parent.size()):
                             if connection_parent[k].ClassType() == \
                                     "SimDistributionPort_HotWaterFlowPort_Water_Out":
+                                outlet_parent = connection_parent[k].getParentList()
+                                for h in range(outlet_parent.size()):
+                                    if outlet_parent[h].ClassType != "SimConnection_HotWaterFlow_Default":
+                                        self.connected_in.append(outlet_parent[h])
+
+            elif comp_child[i].ClassType() == \
+                    "SimDistributionPort_HotWaterFlowPort_Water_InOrOut":
+                outlet_child = comp_child[i].getChildList()
+                for j in range(outlet_child.size()):
+                    if outlet_child[j].ClassType() == "SimConnection_HotWaterFlow_Default":
+                        connection_parent = outlet_child[j].getParentList()
+                        for k in range(connection_parent.size()):
+                            if connection_parent[k].ClassType() == \
+                                    "SimDistributionPort_HotWaterFlowPort_Water_InOrOut":
                                 inlet_parent = connection_parent[k].getParentList()
                                 for h in range(inlet_parent.size()):
-                                    if inlet_parent[h].ClassType != "SimConnection_HotWaterFlow_Default":
-                                        self.connected_in.append(inlet_parent[h])
+                                    if inlet_parent[h].ClassType != \
+                                            "SimConnection_HotWaterFlow_Default":
+                                        if inlet_parent[h].getSimModelObject().RefId() in self.connected_out_ref_id:
+                                            self.connected_in.append(inlet_parent[h])
+                                        else:
+                                            self.connected_out.append(inlet_parent[h])
+                                            self.connected_out_ref_id.append(
+                                                inlet_parent[h].getSimModelObject().RefId())
+
 
     def create_connection(self, test):
         self.project.connections.append(MapConnection(self,test))
