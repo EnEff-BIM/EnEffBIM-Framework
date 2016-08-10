@@ -23,14 +23,12 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="SimPyCallBack.i" />
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="SimPyCallBack_wrap.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="filter.py" />
+    <None Include="SimPyCallBack.i" />
   </ItemGroup>
 </Project>

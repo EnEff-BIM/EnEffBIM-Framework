@@ -381,6 +381,17 @@ namespace xsd
           return *x_;
         }
 
+		// add for id ref list
+		std::vector<std::string>
+		getIdRefList ()
+        {
+        }
+		
+		// add for number list
+		std::vector<double> 
+		getNumberList ()
+		{
+		}
 
         void
         set (const T& x)
@@ -1121,6 +1132,12 @@ namespace xsd
         {
           return static_cast<T&> (*(v_.at (n)));
         }
+
+		// adding for stringItem
+		std::string
+		getValue(int n)
+		{
+		}
 
         const T&
         at (size_type n) const

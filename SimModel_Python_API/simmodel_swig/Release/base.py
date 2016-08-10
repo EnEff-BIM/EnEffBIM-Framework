@@ -1469,6 +1469,232 @@ class SimPropertySetDefinition(SimResourceObject):
 SimPropertySetDefinition_swigregister = _base.SimPropertySetDefinition_swigregister
 SimPropertySetDefinition_swigregister(SimPropertySetDefinition)
 
+class VectorDouble(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, VectorDouble, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, VectorDouble, name)
+    __repr__ = _swig_repr
+
+    def iterator(self):
+        return _base.VectorDouble_iterator(self)
+    def __iter__(self):
+        return self.iterator()
+
+    def __nonzero__(self):
+        return _base.VectorDouble___nonzero__(self)
+
+    def __bool__(self):
+        return _base.VectorDouble___bool__(self)
+
+    def __len__(self):
+        return _base.VectorDouble___len__(self)
+
+    def pop(self):
+        return _base.VectorDouble_pop(self)
+
+    def __getslice__(self, i, j):
+        return _base.VectorDouble___getslice__(self, i, j)
+
+    def __setslice__(self, *args):
+        return _base.VectorDouble___setslice__(self, *args)
+
+    def __delslice__(self, i, j):
+        return _base.VectorDouble___delslice__(self, i, j)
+
+    def __delitem__(self, *args):
+        return _base.VectorDouble___delitem__(self, *args)
+
+    def __getitem__(self, *args):
+        return _base.VectorDouble___getitem__(self, *args)
+
+    def __setitem__(self, *args):
+        return _base.VectorDouble___setitem__(self, *args)
+
+    def append(self, x):
+        return _base.VectorDouble_append(self, x)
+
+    def empty(self):
+        return _base.VectorDouble_empty(self)
+
+    def size(self):
+        return _base.VectorDouble_size(self)
+
+    def clear(self):
+        return _base.VectorDouble_clear(self)
+
+    def swap(self, v):
+        return _base.VectorDouble_swap(self, v)
+
+    def get_allocator(self):
+        return _base.VectorDouble_get_allocator(self)
+
+    def begin(self):
+        return _base.VectorDouble_begin(self)
+
+    def end(self):
+        return _base.VectorDouble_end(self)
+
+    def rbegin(self):
+        return _base.VectorDouble_rbegin(self)
+
+    def rend(self):
+        return _base.VectorDouble_rend(self)
+
+    def pop_back(self):
+        return _base.VectorDouble_pop_back(self)
+
+    def erase(self, *args):
+        return _base.VectorDouble_erase(self, *args)
+
+    def __init__(self, *args):
+        this = _base.new_VectorDouble(*args)
+        try:
+            self.this.append(this)
+        except:
+            self.this = this
+
+    def push_back(self, x):
+        return _base.VectorDouble_push_back(self, x)
+
+    def front(self):
+        return _base.VectorDouble_front(self)
+
+    def back(self):
+        return _base.VectorDouble_back(self)
+
+    def assign(self, n, x):
+        return _base.VectorDouble_assign(self, n, x)
+
+    def resize(self, *args):
+        return _base.VectorDouble_resize(self, *args)
+
+    def insert(self, *args):
+        return _base.VectorDouble_insert(self, *args)
+
+    def reserve(self, n):
+        return _base.VectorDouble_reserve(self, n)
+
+    def capacity(self):
+        return _base.VectorDouble_capacity(self)
+    __swig_destroy__ = _base.delete_VectorDouble
+    __del__ = lambda self: None
+VectorDouble_swigregister = _base.VectorDouble_swigregister
+VectorDouble_swigregister(VectorDouble)
+
+class VectorString(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, VectorString, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, VectorString, name)
+    __repr__ = _swig_repr
+
+    def iterator(self):
+        return _base.VectorString_iterator(self)
+    def __iter__(self):
+        return self.iterator()
+
+    def __nonzero__(self):
+        return _base.VectorString___nonzero__(self)
+
+    def __bool__(self):
+        return _base.VectorString___bool__(self)
+
+    def __len__(self):
+        return _base.VectorString___len__(self)
+
+    def pop(self):
+        return _base.VectorString_pop(self)
+
+    def __getslice__(self, i, j):
+        return _base.VectorString___getslice__(self, i, j)
+
+    def __setslice__(self, *args):
+        return _base.VectorString___setslice__(self, *args)
+
+    def __delslice__(self, i, j):
+        return _base.VectorString___delslice__(self, i, j)
+
+    def __delitem__(self, *args):
+        return _base.VectorString___delitem__(self, *args)
+
+    def __getitem__(self, *args):
+        return _base.VectorString___getitem__(self, *args)
+
+    def __setitem__(self, *args):
+        return _base.VectorString___setitem__(self, *args)
+
+    def append(self, x):
+        return _base.VectorString_append(self, x)
+
+    def empty(self):
+        return _base.VectorString_empty(self)
+
+    def size(self):
+        return _base.VectorString_size(self)
+
+    def clear(self):
+        return _base.VectorString_clear(self)
+
+    def swap(self, v):
+        return _base.VectorString_swap(self, v)
+
+    def get_allocator(self):
+        return _base.VectorString_get_allocator(self)
+
+    def begin(self):
+        return _base.VectorString_begin(self)
+
+    def end(self):
+        return _base.VectorString_end(self)
+
+    def rbegin(self):
+        return _base.VectorString_rbegin(self)
+
+    def rend(self):
+        return _base.VectorString_rend(self)
+
+    def pop_back(self):
+        return _base.VectorString_pop_back(self)
+
+    def erase(self, *args):
+        return _base.VectorString_erase(self, *args)
+
+    def __init__(self, *args):
+        this = _base.new_VectorString(*args)
+        try:
+            self.this.append(this)
+        except:
+            self.this = this
+
+    def push_back(self, x):
+        return _base.VectorString_push_back(self, x)
+
+    def front(self):
+        return _base.VectorString_front(self)
+
+    def back(self):
+        return _base.VectorString_back(self)
+
+    def assign(self, n, x):
+        return _base.VectorString_assign(self, n, x)
+
+    def resize(self, *args):
+        return _base.VectorString_resize(self, *args)
+
+    def insert(self, *args):
+        return _base.VectorString_insert(self, *args)
+
+    def reserve(self, n):
+        return _base.VectorString_reserve(self, n)
+
+    def capacity(self):
+        return _base.VectorString_capacity(self)
+    __swig_destroy__ = _base.delete_VectorString
+    __del__ = lambda self: None
+VectorString_swigregister = _base.VectorString_swigregister
+VectorString_swigregister(VectorString)
+
 class decimal_optional(_object):
     __swig_setmethods__ = {}
     __setattr__ = lambda self, name, value: _swig_setattr(self, decimal_optional, name, value)
@@ -1617,6 +1843,12 @@ class string_optional(_object):
     def getValue(self):
         return _base.string_optional_getValue(self)
 
+    def getIdRefList(self):
+        return _base.string_optional_getIdRefList(self)
+
+    def getNumberList(self):
+        return _base.string_optional_getNumberList(self)
+
     def set(self, x):
         return _base.string_optional_set(self, x)
 
@@ -1664,6 +1896,12 @@ class idref_optional(_object):
     def getValue(self):
         return _base.idref_optional_getValue(self)
 
+    def getIdRefList(self):
+        return _base.idref_optional_getIdRefList(self)
+
+    def getNumberList(self):
+        return _base.idref_optional_getNumberList(self)
+
     def set(self, x):
         return _base.idref_optional_set(self, x)
 
@@ -1679,6 +1917,291 @@ class idref_optional(_object):
         container_ = _swig_property(_base.idref_optional_container__get, _base.idref_optional_container__set)
 idref_optional_swigregister = _base.idref_optional_swigregister
 idref_optional_swigregister(idref_optional)
+
+class xml_simple_type(_type):
+    __swig_setmethods__ = {}
+    for _s in [_type]:
+        __swig_setmethods__.update(getattr(_s, '__swig_setmethods__', {}))
+    __setattr__ = lambda self, name, value: _swig_setattr(self, xml_simple_type, name, value)
+    __swig_getmethods__ = {}
+    for _s in [_type]:
+        __swig_getmethods__.update(getattr(_s, '__swig_getmethods__', {}))
+    __getattr__ = lambda self, name: _swig_getattr(self, xml_simple_type, name)
+    __repr__ = _swig_repr
+
+    def _clone(self, f=0, c=None):
+        return _base.xml_simple_type__clone(self, f, c)
+
+    def __init__(self, *args):
+        this = _base.new_xml_simple_type(*args)
+        try:
+            self.this.append(this)
+        except:
+            self.this = this
+
+    def text_content(self, *args):
+        return _base.xml_simple_type_text_content(self, *args)
+    __swig_destroy__ = _base.delete_xml_simple_type
+    __del__ = lambda self: None
+xml_simple_type_swigregister = _base.xml_simple_type_swigregister
+xml_simple_type_swigregister(xml_simple_type)
+
+class xml_string(xml_simple_type):
+    __swig_setmethods__ = {}
+    for _s in [xml_simple_type]:
+        __swig_setmethods__.update(getattr(_s, '__swig_setmethods__', {}))
+    __setattr__ = lambda self, name, value: _swig_setattr(self, xml_string, name, value)
+    __swig_getmethods__ = {}
+    for _s in [xml_simple_type]:
+        __swig_getmethods__.update(getattr(_s, '__swig_getmethods__', {}))
+    __getattr__ = lambda self, name: _swig_getattr(self, xml_string, name)
+    __repr__ = _swig_repr
+
+    def base(self):
+        return _base.xml_string_base(self)
+
+    def _clone(self, f=0, c=None):
+        return _base.xml_string__clone(self, f, c)
+
+    def __init__(self, *args):
+        this = _base.new_xml_string(*args)
+        try:
+            self.this.append(this)
+        except:
+            self.this = this
+    __swig_destroy__ = _base.delete_xml_string
+    __del__ = lambda self: None
+xml_string_swigregister = _base.xml_string_swigregister
+xml_string_swigregister(xml_string)
+
+class string_sequence(sequence_common):
+    __swig_setmethods__ = {}
+    for _s in [sequence_common]:
+        __swig_setmethods__.update(getattr(_s, '__swig_setmethods__', {}))
+    __setattr__ = lambda self, name, value: _swig_setattr(self, string_sequence, name, value)
+    __swig_getmethods__ = {}
+    for _s in [sequence_common]:
+        __swig_getmethods__.update(getattr(_s, '__swig_getmethods__', {}))
+    __getattr__ = lambda self, name: _swig_getattr(self, string_sequence, name)
+    __repr__ = _swig_repr
+
+    def __init__(self, *args):
+        this = _base.new_string_sequence(*args)
+        try:
+            self.this.append(this)
+        except:
+            self.this = this
+
+    def assign(self, n, x):
+        return _base.string_sequence_assign(self, n, x)
+
+    def begin(self, *args):
+        return _base.string_sequence_begin(self, *args)
+
+    def end(self, *args):
+        return _base.string_sequence_end(self, *args)
+
+    def rbegin(self, *args):
+        return _base.string_sequence_rbegin(self, *args)
+
+    def rend(self, *args):
+        return _base.string_sequence_rend(self, *args)
+
+    def getValue(self, n):
+        return _base.string_sequence_getValue(self, n)
+
+    def at(self, *args):
+        return _base.string_sequence_at(self, *args)
+
+    def front(self, *args):
+        return _base.string_sequence_front(self, *args)
+
+    def back(self, *args):
+        return _base.string_sequence_back(self, *args)
+
+    def push_back(self, *args):
+        return _base.string_sequence_push_back(self, *args)
+
+    def pop_back(self):
+        return _base.string_sequence_pop_back(self)
+
+    def detach_back(self, pop=True):
+        return _base.string_sequence_detach_back(self, pop)
+
+    def insert(self, *args):
+        return _base.string_sequence_insert(self, *args)
+
+    def erase(self, *args):
+        return _base.string_sequence_erase(self, *args)
+
+    def detach(self, position, r, erase=True):
+        return _base.string_sequence_detach(self, position, r, erase)
+
+    def swap(self, x):
+        return _base.string_sequence_swap(self, x)
+    __swig_destroy__ = _base.delete_string_sequence
+    __del__ = lambda self: None
+string_sequence_swigregister = _base.string_sequence_swigregister
+string_sequence_swigregister(string_sequence)
+
+class idrefs_optional(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, idrefs_optional, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, idrefs_optional, name)
+    __repr__ = _swig_repr
+    __swig_destroy__ = _base.delete_idrefs_optional
+    __del__ = lambda self: None
+
+    def __init__(self, *args):
+        this = _base.new_idrefs_optional(*args)
+        try:
+            self.this.append(this)
+        except:
+            self.this = this
+
+    def __deref__(self, *args):
+        return _base.idrefs_optional___deref__(self, *args)
+
+    def __ref__(self, *args):
+        return _base.idrefs_optional___ref__(self, *args)
+
+    def present(self):
+        return _base.idrefs_optional_present(self)
+
+    def get(self, *args):
+        return _base.idrefs_optional_get(self, *args)
+
+    def getValue(self):
+        return _base.idrefs_optional_getValue(self)
+
+    def getIdRefList(self):
+        return _base.idrefs_optional_getIdRefList(self)
+
+    def getNumberList(self):
+        return _base.idrefs_optional_getNumberList(self)
+
+    def set(self, x):
+        return _base.idrefs_optional_set(self, x)
+
+    def reset(self):
+        return _base.idrefs_optional_reset(self)
+    __swig_setmethods__["x_"] = _base.idrefs_optional_x__set
+    __swig_getmethods__["x_"] = _base.idrefs_optional_x__get
+    if _newclass:
+        x_ = _swig_property(_base.idrefs_optional_x__get, _base.idrefs_optional_x__set)
+    __swig_setmethods__["container_"] = _base.idrefs_optional_container__set
+    __swig_getmethods__["container_"] = _base.idrefs_optional_container__get
+    if _newclass:
+        container_ = _swig_property(_base.idrefs_optional_container__get, _base.idrefs_optional_container__set)
+idrefs_optional_swigregister = _base.idrefs_optional_swigregister
+idrefs_optional_swigregister(idrefs_optional)
+
+class xsd_integer_list(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, xsd_integer_list, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, xsd_integer_list, name)
+    __repr__ = _swig_repr
+    __swig_destroy__ = _base.delete_xsd_integer_list
+    __del__ = lambda self: None
+
+    def __init__(self, *args):
+        this = _base.new_xsd_integer_list(*args)
+        try:
+            self.this.append(this)
+        except:
+            self.this = this
+
+    def __deref__(self, *args):
+        return _base.xsd_integer_list___deref__(self, *args)
+
+    def __ref__(self, *args):
+        return _base.xsd_integer_list___ref__(self, *args)
+
+    def present(self):
+        return _base.xsd_integer_list_present(self)
+
+    def get(self, *args):
+        return _base.xsd_integer_list_get(self, *args)
+
+    def getValue(self):
+        return _base.xsd_integer_list_getValue(self)
+
+    def getIdRefList(self):
+        return _base.xsd_integer_list_getIdRefList(self)
+
+    def getNumberList(self):
+        return _base.xsd_integer_list_getNumberList(self)
+
+    def set(self, x):
+        return _base.xsd_integer_list_set(self, x)
+
+    def reset(self):
+        return _base.xsd_integer_list_reset(self)
+    __swig_setmethods__["x_"] = _base.xsd_integer_list_x__set
+    __swig_getmethods__["x_"] = _base.xsd_integer_list_x__get
+    if _newclass:
+        x_ = _swig_property(_base.xsd_integer_list_x__get, _base.xsd_integer_list_x__set)
+    __swig_setmethods__["container_"] = _base.xsd_integer_list_container__set
+    __swig_getmethods__["container_"] = _base.xsd_integer_list_container__get
+    if _newclass:
+        container_ = _swig_property(_base.xsd_integer_list_container__get, _base.xsd_integer_list_container__set)
+xsd_integer_list_swigregister = _base.xsd_integer_list_swigregister
+xsd_integer_list_swigregister(xsd_integer_list)
+
+class xsd_double_list(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, xsd_double_list, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, xsd_double_list, name)
+    __repr__ = _swig_repr
+    __swig_destroy__ = _base.delete_xsd_double_list
+    __del__ = lambda self: None
+
+    def __init__(self, *args):
+        this = _base.new_xsd_double_list(*args)
+        try:
+            self.this.append(this)
+        except:
+            self.this = this
+
+    def __deref__(self, *args):
+        return _base.xsd_double_list___deref__(self, *args)
+
+    def __ref__(self, *args):
+        return _base.xsd_double_list___ref__(self, *args)
+
+    def present(self):
+        return _base.xsd_double_list_present(self)
+
+    def get(self, *args):
+        return _base.xsd_double_list_get(self, *args)
+
+    def getValue(self):
+        return _base.xsd_double_list_getValue(self)
+
+    def getIdRefList(self):
+        return _base.xsd_double_list_getIdRefList(self)
+
+    def getNumberList(self):
+        return _base.xsd_double_list_getNumberList(self)
+
+    def set(self, x):
+        return _base.xsd_double_list_set(self, x)
+
+    def reset(self):
+        return _base.xsd_double_list_reset(self)
+    __swig_setmethods__["x_"] = _base.xsd_double_list_x__set
+    __swig_getmethods__["x_"] = _base.xsd_double_list_x__get
+    if _newclass:
+        x_ = _swig_property(_base.xsd_double_list_x__get, _base.xsd_double_list_x__set)
+    __swig_setmethods__["container_"] = _base.xsd_double_list_container__set
+    __swig_getmethods__["container_"] = _base.xsd_double_list_container__get
+    if _newclass:
+        container_ = _swig_property(_base.xsd_double_list_container__get, _base.xsd_double_list_container__set)
+xsd_double_list_swigregister = _base.xsd_double_list_swigregister
+xsd_double_list_swigregister(xsd_double_list)
 
 # This file is compatible with both classic and new-style classes.
 

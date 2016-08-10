@@ -382,6 +382,15 @@ class SimHierarchyNodeBase(_object):
     def dataType_SimDistributionPort_HotWaterFlowPort_Water_In(self):
         return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimDistributionPort_HotWaterFlowPort_Water_In(self)
 
+    def dataType_SimTimeSeriesSchedule_Year_Default(self):
+        return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimTimeSeriesSchedule_Year_Default(self)
+
+    def dataType_SimTimeSeriesSchedule_Week_Daily(self):
+        return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimTimeSeriesSchedule_Week_Daily(self)
+
+    def dataType_SimTimeSeriesSchedule_Day_Interval(self):
+        return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimTimeSeriesSchedule_Day_Interval(self)
+
     def __init__(self):
         this = _SimModel_Hierachy.new_SimHierarchyNodeBase()
         try:

@@ -206,6 +206,9 @@ class SimTimeSeriesSchedule_Year_Default_sequence(base.sequence_common):
     def rend(self, *args):
         return _SimTimeSeriesSchedule_Year_Default.SimTimeSeriesSchedule_Year_Default_sequence_rend(self, *args)
 
+    def getValue(self, n):
+        return _SimTimeSeriesSchedule_Year_Default.SimTimeSeriesSchedule_Year_Default_sequence_getValue(self, n)
+
     def at(self, *args):
         return _SimTimeSeriesSchedule_Year_Default.SimTimeSeriesSchedule_Year_Default_sequence_at(self, *args)
 
