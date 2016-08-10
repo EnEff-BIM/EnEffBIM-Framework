@@ -24,7 +24,7 @@ class Boiler(MapHierarchy.MapComponent):
         self.arrange_parameters(prop_list)
         self.T_set = self.add_connector(name="T_set", type="Real", \
                                                             dimension=1)
-        self.add_constant_flow(set_temp=320.0)
+        #self.add_constant_flow(set_temp=320.0)
 
     def add_constant_flow(self, set_temp):
         '''adds a constants flow Temperature for the hot water loop'''

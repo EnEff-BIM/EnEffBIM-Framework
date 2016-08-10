@@ -11,10 +11,8 @@ class Radiator(MapHierarchy.MapComponent):
     """
     
     def init_me(self):
-        print(Radiator)
+
         self.fluid_two_port()
-
-
 
     def mapp_me(self):
 
@@ -23,7 +21,6 @@ class Radiator(MapHierarchy.MapComponent):
         prop_list = map_sim[0].getMappedPropertyList()
         self.arrange_parameters(prop_list)
 
-
         self.convPort = self.add_connector(name="convPort", type="HeatPort",
                                            dimension=1, hierarchy_node=None)
         self.radPort = self.add_connector(name="radPort", type="HeatPort",
@@ -31,7 +28,7 @@ class Radiator(MapHierarchy.MapComponent):
         #needs to be changed if thermalZone is implemented
         self.connect_zone(self.project.buildings[0].thermal_zones[0])
 
-        self.add_pipe()
+        #self.add_pipe()
 
     def add_pipe(self):
         from mapapi.molibs.AixLib.Fluid.FixedResitances.StaticPipe import Pipe
@@ -48,16 +45,10 @@ class Radiator(MapHierarchy.MapComponent):
         from mapapi.molibs.AixLib.Fluid.Actuators.Valves.SimpleValve import \
             SimpleValve
 
-        valve = SimpleValve(self.project, self.hierarchy_node, self)
-        valve.init_me()
-        valve.pid_controller(thermal_zone=thermal_zone)
-        self.project.buildings[0].hvac_components_mod.append(valve)
-        self.add_connection(self.port_a, valve.port_b)
-        self.port_a = valve.port_a
-        self.connectors.append(valve.port_a)
+
 
     def connect_zone(self, thermal_zone):
 
         self.add_connection(self.convPort, thermal_zone.internalGainsConv)
         self.add_connection(self.radPort, thermal_zone.internalGainsRad)
-        self.ctrl_valve(thermal_zone=thermal_zone)
+        #self.ctrl_valve(thermal_zone=thermal_zone)

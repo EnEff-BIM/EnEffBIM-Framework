@@ -449,7 +449,7 @@ class MapBuilding(MoObject):
         for a in self.hvac_components_sim:
             a.convert_me()
         for a in self.hvac_components_sim:
-            #a.mapp_me()
+            a.mapp_me()
             pass
 
 
@@ -549,6 +549,8 @@ class MapComponent(MoObject):
         from mapapi.molibs.AixLib.Fluid.FixedResitances.StaticPipe import Pipe
         from mapapi.molibs.AixLib.Fluid.HeatExchangers.Radiators.Radiator import Radiator
         from mapapi.molibs.AixLib.Fluid.Storage.ExpansionVessel import ExpansionVessel
+        from mapapi.molibs.AixLib.Fluid.Actuators.Valves.SimpleValve import SimpleValve
+
         self.aix_lib = {"SimFlowPlant_Boiler_BoilerHotWater" : Boiler,
                         "SimFlowMover_Pump_VariableSpeedReturn" : Pump,
                         "SimFlowEnergyTransfer_ConvectiveHeater_Radiant_Water" :
@@ -560,7 +562,7 @@ class MapComponent(MoObject):
                         "SimFlowFitting_Default_Default" : Pipe,
                         "SimFlowEnergyTransferStorage_HotWaterTank_Mixed" :
                             ExpansionVessel,
-                        "SimFlowController_Valve_Default" : Pipe}
+                        "SimFlowController_Valve_Default" : SimpleValve}
 
 
     def find_loop_connection(self, hierarchy_node=None):
@@ -645,8 +647,6 @@ class MapComponent(MoObject):
                                                                         return
                                             else:
                                                 return
-
-
 
     def create_connection(self, test):
         self.project.connections.append(MapConnection(self,test))
