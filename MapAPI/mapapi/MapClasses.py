@@ -654,6 +654,7 @@ class MapComponent(MoObject):
     def convert_me(self):
         """Converts the MapComponent to a library specific component"""
         for key, value in self.aix_lib.items():
+
             if self.hierarchy_node.ClassType() == key:
                 self.__class__ = value
                 self.init_me()
