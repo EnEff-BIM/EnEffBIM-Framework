@@ -21,8 +21,10 @@ class Pipe(MapHierarchy.MapComponent):
 
 
     def mapp_me(self):
-
+        pass
+        """
         map_sim = self.hierarchy_node.getMappedComponents()
         self.target_location = map_sim.getTargetLocation()
         prop_list = map_sim[0].getMappedPropertyList()
         self.arrange_parameters(prop_list)
+        """
