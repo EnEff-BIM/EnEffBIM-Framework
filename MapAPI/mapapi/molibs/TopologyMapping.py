@@ -19,7 +19,8 @@ zoneFile_path = os.path.join(modulePath+"\\SingleZoneWithInternalLoads.simxml")
 hvacFile_path = os.path.join(modulePath+"\\1.1_Architecture+HVAC+Zone_Curve+Schedule_korr_ZumTesten.simxml")
 fullFile_path = os.path.join(modulePath+"\\Boiler_Gas_VDI6020_V12.simxml")
 pathList = (zoneFile_path, hvacFile_path)
-mappingFile_path = os.path.join(modulePath+"\\mapping_rule\\mapping_rule_xml\\AixLib.xml")
+mappingFile_path = os.path.join(
+    modulePath+"\\mapping_rule\\mapping_rule_xml\\AixLib_v2.0.xml")
 
 prj = MapProject(pathList, mappingFile_path)
 print("finish")

@@ -21,10 +21,11 @@ class Pipe(MapHierarchy.MapComponent):
 
 
     def mapp_me(self):
-        pass
-        """
         map_sim = self.hierarchy_node.getMappedComponents()
-        self.target_location = map_sim.getTargetLocation()
-        prop_list = map_sim[0].getMappedPropertyList()
-        self.arrange_parameters(prop_list)
-        """
+        #print(self.sim_instance)
+        #print(map_sim[0])
+        if self.hierarchy_node.isClassType("SimFlowSegment_Pipe_Indoor"):
+
+            self.target_location = map_sim[0].getTargetLocation()
+            prop_list = map_sim[0].getMappedPropertyList()
+            self.arrange_parameters(prop_list)
