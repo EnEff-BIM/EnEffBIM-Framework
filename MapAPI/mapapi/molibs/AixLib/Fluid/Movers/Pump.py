@@ -17,8 +17,6 @@ class Pump(MapHierarchy.MapComponent):
 
     def init_me(self):
         self.fluid_two_port()
-
-
         return True
 
     def mapp_me(self):

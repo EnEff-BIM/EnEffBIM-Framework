@@ -13,7 +13,6 @@ rootPath = os.path.dirname(__file__)
 default_path = rootPath[:rootPath.rfind("EnEffBIM-Framework")]
 modulePath = os.path.join(default_path, "EnEffBIM-Framework\\SimModel_Python_API\\simmodel_swig\\Release")
 
-print(modulePath)
 from mapapi.MapClasses import MapProject
 
 zoneFile_path = os.path.join(modulePath+"\\SingleZoneWithInternalLoads.simxml")
