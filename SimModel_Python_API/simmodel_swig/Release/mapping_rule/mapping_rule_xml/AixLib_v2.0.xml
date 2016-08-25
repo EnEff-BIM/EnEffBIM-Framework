@@ -15,21 +15,23 @@
 
   <!-- property mapping for the hot water boiler controller -->
   <!-- the constant temperature value of the boiler outlet water -->
-  <InputParameter RefId="ID01211">
+    <!--<InputParameter RefId="ID01211">
     <Description>Constant output value [degC]</Description>
     <ParameterName>const_c</ParameterName>
     <ValueType>single</ValueType>
     <IsReferenced>false</IsReferenced>
     <RefValue>SimFlowPlant_DesignWaterOutletTemp</RefValue>
-  </InputParameter>
-  
-  <!-- <InputParameter RefId="ID01211">
+  </InputParameter> -->
+
+  <!-- property mapping for the hot water boiler controller -->
+  <!-- the constant temperature value of the boiler outlet water, defined by the control-->
+  <InputParameter RefId="ID01211">
     <Description>Constant output value [degC]</Description>
     <ParameterName>const_c</ParameterName>
     <ValueType>single</ValueType>
     <IsReferenced>false</IsReferenced>
     <RefValue>ConstantSetpointValue</RefValue>
-  </InputParameter> -->
+  </InputParameter> 
 
   <!-- property mapping for the water pump of variable speed return -->
   <!-- Volume flow rate through the pump [m3/s] -->
@@ -211,6 +213,13 @@
     <TargetPropertyName>Q_flow_max</TargetPropertyName>
   </Property_Map_One2One>
 
+<!-- property mapping for the pipe fitting -->  
+  <Property_Map_One2One RefId="ID99x">
+    <Description>Interiour roughness coefficient for the pipe fitting</Description>
+    <RefValue>InteriorRoughnessCoeff</RefValue>
+    <TargetPropertyName>e</TargetPropertyName>
+  </Property_Map_One2One>  
+  
   <!-- property mapping for the water pump of variable speed return -->
   <!-- vmax in m3/h for the control strategy -->
   <Property_Map_One2One RefId="ID0314">
@@ -231,7 +240,7 @@
   <!-- fixed value of pressure [bar] -->
   <Property_Map_One2One RefId="ID041x">
     <Description>Fixed value of pressure [bar]</Description>
-    <RefValue>SimFlowEnergyTransSto_TankVol</RefValue>
+    <RefValue>SimFlowEnergyTransferStorage_EffectiveCapacity</RefValue>
     <TargetPropertyName>p</TargetPropertyName>
   </Property_Map_One2One>
 
@@ -610,13 +619,14 @@
     <OutputParameterName>ID03231</OutputParameterName>
   </Property_Map_Transformation>
 
-    <!--Empty component without propeties. It does not exist in the official SimModel schema and is not defined on the Modelica side. Using a pipe as a temporary replacement, to allow a representation of this component coming form the IFC side!-->  
-  <!-- <Component_Map_One2One RefId="ID99">
-    <Description>Map an empty fitting into a pipe as a place holder.</Description>
+    <!--Using a pipe as a temporary replacement, to allow a representation of this component coming form the IFC side!-->  
+  <Component_Map_One2One RefId="ID99">
+    <Description>Map a pipe fitting into a pipe as a place holder.</Description>
 	<SourceComponentName>SimFlowFitting_Default_Default</SourceComponentName>
 	<TargetComponentName>pipe_HeatTransfer</TargetComponentName>
-    <TargetLocation>AixLib.HVAC.Pipes.Pipe</TargetLocation>
-  </Component_Map_One2One> -->
+	<TargetLocation>AixLib.HVAC.Pipes.Pipe</TargetLocation>
+	<Property_Map_One2One_Name>ID99x</Property_Map_One2One_Name>
+  </Component_Map_One2One>
   
   <!-- component mapping for the water pipe -->
   <Component_Map_One2One RefId="ID013">
@@ -710,20 +720,20 @@
   </ComponentMappingGroup>
 
   <!-- component mapping for the expansion vessel -->
-  <ComponentMappingGroup RefId="ID04">
+  <!-- <ComponentMappingGroup RefId="ID04">
     <Description> Add an expansion vessel connecting to the radiator</Description>
     <TargetComponentName>boundary_p</TargetComponentName>
     <TargetLocation>AixLib.HVAC.Sources.Boundary_p</TargetLocation>
     <Property_Map_Gap_Name>ID041</Property_Map_Gap_Name>
-  </ComponentMappingGroup>
+  </ComponentMappingGroup> -->
   
-  <!-- waiting for the new class SimFlowEnergyTransferStorage_HotWaterTank_Expansion from simxml -->
-  <!-- <ComponentMappingGroup RefId="ID04x">
-    <Description> Add an expansion vessel connecting to the radiator</Description>
+  <!-- waiting for the new class SimFlowEnergyTransferStorage_HotWaterTank_Expansion from simxml using Mixed so far.-->
+  <ComponentMappingGroup RefId="ID04x">
+    <Description> Expansion vessel connecting to the radiator</Description>
     <TargetComponentName>boundary_p</TargetComponentName>
     <TargetLocation>AixLib.HVAC.Sources.Boundary_p</TargetLocation>
     <Property_Map_One2One_Name>ID041x</Property_Map_One2One_Name>
-  </ComponentMappingGroup> -->
+  </ComponentMappingGroup>
 
   <!-- component mapping for the hot water boiler -->
   <!-- a hot water boiler maps into: a boiler, a water temperature controller, -->
