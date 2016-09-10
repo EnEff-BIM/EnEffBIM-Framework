@@ -3,15 +3,15 @@ import sys
 rootPath = os.path.dirname(__file__)
 try:
     default_path = rootPath[:rootPath.rfind("EnEffBIM-Framework")]
-    modulePath = os.path.join(default_path, "EnEffBIM-Framework\\SimModel_Python_API"
-                              "\\simmodel_swig\\Release")
+    modulePath = os.path.join(default_path, "EnEffBIM-Framework\\SimModel_Python_API\\v2.2"
+                          "\\simmodel_swig\\Release")
     os.environ['PATH'] = ';'.join([modulePath, os.environ['PATH']])
     sys.path.append(modulePath)
     import SimModel
 except:
     default_path = rootPath[:rootPath.rfind("eneffbim-framework")]
-    modulePath = os.path.join(default_path, "EnEffBIM-Framework\\SimModel_Python_API"
-                              "\\simmodel_swig\\Release")
+    modulePath = os.path.join(default_path, "EnEffBIM-Framework\\SimModel_Python_API\\v2.2"
+                          "\\simmodel_swig\\Release")
     os.environ['PATH'] = ';'.join([modulePath, os.environ['PATH']])
     sys.path.append(modulePath)
     import SimModel
