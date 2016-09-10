@@ -74,13 +74,14 @@ translator = SimTranslator()
 # load and parse multiple SimXML files
 zoneFile_path = ("SingleZoneWithInternalLoads.simxml")
 hvacFile_path = ("1.1_Architecture+HVAC+Zone_Curve+Schedule_korr_ZumTesten.simxml")
-fullFile_path= ("Boiler_Gas_VDI6020_V12.simxml")
+fullFile_path = ("1.1_Architecture+HVAC+Zone_Curve+Schedule_korr.simxml")
+#fullFile_path= ("Boiler_Gas_VDI6020_V12.simxml")
 pathList = [zoneFile_path, hvacFile_path]
 
-simxml_data = translator.loadSimModel(zoneFile_path, hvacFile_path)
+#simxml_data = translator.loadSimModel(zoneFile_path, hvacFile_path)
 
 # old API for single SimXML file parsing
-# simxml_data = translator.loadSimModel(fullFile_path)
+simxml_data = translator.loadSimModel(fullFile_path)
 
 # simxml_data is the unmapped SimXML data without hierarchy structure
 # like our former demo, you can access the SimXML data via calling a SimModel class name
