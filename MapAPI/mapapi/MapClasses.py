@@ -298,8 +298,8 @@ class MapProject(object):
         libSimModelAPI"""
         self.translator = SimTranslator()
         self.sim_hierarchy = self.translator.getSimHierarchy()
-        load_sim = self.translator.loadSimModel(simxml_file)
-        #load_sim = self.translator.loadSimModel(simxml_file[0], simxml_file[1])
+        #load_sim = self.translator.loadSimModel(simxml_file)
+        load_sim = self.translator.loadSimModel(simxml_file[0], simxml_file[1])
         self.sim_mapping = self.translator.getSimMappedData(mapping_file)
 
         self.instantiate_buildings()
