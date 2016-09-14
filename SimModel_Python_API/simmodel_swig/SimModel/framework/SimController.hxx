@@ -407,6 +407,108 @@ namespace schema
         void
         ControllerSchemeList (::std::auto_ptr< ControllerSchemeList_type > p);
 
+        // ConstantSetpointValue
+        //
+        typedef ::xml_schema::double_ ConstantSetpointValue_type;
+        typedef ::xsd::cxx::tree::optional< ConstantSetpointValue_type, true > ConstantSetpointValue_optional;
+        typedef ::xsd::cxx::tree::traits< ConstantSetpointValue_type, char, ::xsd::cxx::tree::schema_type::double_ > ConstantSetpointValue_traits;
+
+        const ConstantSetpointValue_optional&
+        ConstantSetpointValue () const;
+
+        ConstantSetpointValue_optional&
+        ConstantSetpointValue ();
+
+        void
+        ConstantSetpointValue (const ConstantSetpointValue_type& x);
+
+        void
+        ConstantSetpointValue (const ConstantSetpointValue_optional& x);
+
+        // ControllerType
+        //
+        typedef ::xml_schema::string ControllerType_type;
+        typedef ::xsd::cxx::tree::optional< ControllerType_type, false > ControllerType_optional;
+        typedef ::xsd::cxx::tree::traits< ControllerType_type, char > ControllerType_traits;
+
+        const ControllerType_optional&
+        ControllerType () const;
+
+        ControllerType_optional&
+        ControllerType ();
+
+        void
+        ControllerType (const ControllerType_type& x);
+
+        void
+        ControllerType (const ControllerType_optional& x);
+
+        void
+        ControllerType (::std::auto_ptr< ControllerType_type > p);
+
+        // ControllerVariable
+        //
+        typedef ::xml_schema::string ControllerVariable_type;
+        typedef ::xsd::cxx::tree::optional< ControllerVariable_type, false > ControllerVariable_optional;
+        typedef ::xsd::cxx::tree::traits< ControllerVariable_type, char > ControllerVariable_traits;
+
+        const ControllerVariable_optional&
+        ControllerVariable () const;
+
+        ControllerVariable_optional&
+        ControllerVariable ();
+
+        void
+        ControllerVariable (const ControllerVariable_type& x);
+
+        void
+        ControllerVariable (const ControllerVariable_optional& x);
+
+        void
+        ControllerVariable (::std::auto_ptr< ControllerVariable_type > p);
+
+        // MeasuredVariable
+        //
+        typedef ::xml_schema::string MeasuredVariable_type;
+        typedef ::xsd::cxx::tree::optional< MeasuredVariable_type, false > MeasuredVariable_optional;
+        typedef ::xsd::cxx::tree::traits< MeasuredVariable_type, char > MeasuredVariable_traits;
+
+        const MeasuredVariable_optional&
+        MeasuredVariable () const;
+
+        MeasuredVariable_optional&
+        MeasuredVariable ();
+
+        void
+        MeasuredVariable (const MeasuredVariable_type& x);
+
+        void
+        MeasuredVariable (const MeasuredVariable_optional& x);
+
+        void
+        MeasuredVariable (::std::auto_ptr< MeasuredVariable_type > p);
+
+        // ScheduledSetpointValue
+        //
+        typedef ::xml_schema::idref ScheduledSetpointValue_type;
+        typedef ::xsd::cxx::tree::optional< ScheduledSetpointValue_type, false > ScheduledSetpointValue_optional;
+        typedef ::xsd::cxx::tree::traits< ScheduledSetpointValue_type, char > ScheduledSetpointValue_traits;
+
+        const ScheduledSetpointValue_optional&
+        ScheduledSetpointValue () const;
+
+        ScheduledSetpointValue_optional&
+        ScheduledSetpointValue ();
+
+        void
+        ScheduledSetpointValue (const ScheduledSetpointValue_type& x);
+
+        void
+        ScheduledSetpointValue (const ScheduledSetpointValue_optional& x);
+
+        void
+        ScheduledSetpointValue (::std::auto_ptr< ScheduledSetpointValue_type > p);
+
         // Constructors.
         //
         SimController ();
@@ -446,6 +548,11 @@ namespace schema
         ElementType_optional ElementType_;
         PredefinedType_optional PredefinedType_;
         ControllerSchemeList_optional ControllerSchemeList_;
+        ConstantSetpointValue_optional ConstantSetpointValue_;
+        ControllerType_optional ControllerType_;
+        ControllerVariable_optional ControllerVariable_;
+        MeasuredVariable_optional MeasuredVariable_;
+        ScheduledSetpointValue_optional ScheduledSetpointValue_;
       };
     }
   }

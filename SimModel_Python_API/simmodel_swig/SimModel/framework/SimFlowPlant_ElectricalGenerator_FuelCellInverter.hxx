@@ -260,6 +260,87 @@ namespace schema
       class SimFlowPlant_ElectricalGenerator_FuelCellInverter: public ::schema::simxml::MepModel::SimFlowPlant_ElectricalGenerator
       {
         public:
+        // SimFlowPlant_Name
+        //
+        typedef ::xml_schema::string SimFlowPlant_Name_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_Name_type > SimFlowPlant_Name_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_Name_type, char > SimFlowPlant_Name_traits;
+
+        const SimFlowPlant_Name_optional&
+        SimFlowPlant_Name () const;
+
+        SimFlowPlant_Name_optional&
+        SimFlowPlant_Name ();
+
+        void
+        SimFlowPlant_Name (const SimFlowPlant_Name_type& x);
+
+        void
+        SimFlowPlant_Name (const SimFlowPlant_Name_optional& x);
+
+        void
+        SimFlowPlant_Name (::std::auto_ptr< SimFlowPlant_Name_type > p);
+
+        // SimFlowPlant_verterEffCalcMode
+        //
+        typedef ::xml_schema::string SimFlowPlant_verterEffCalcMode_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_verterEffCalcMode_type > SimFlowPlant_verterEffCalcMode_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_verterEffCalcMode_type, char > SimFlowPlant_verterEffCalcMode_traits;
+
+        const SimFlowPlant_verterEffCalcMode_optional&
+        SimFlowPlant_verterEffCalcMode () const;
+
+        SimFlowPlant_verterEffCalcMode_optional&
+        SimFlowPlant_verterEffCalcMode ();
+
+        void
+        SimFlowPlant_verterEffCalcMode (const SimFlowPlant_verterEffCalcMode_type& x);
+
+        void
+        SimFlowPlant_verterEffCalcMode (const SimFlowPlant_verterEffCalcMode_optional& x);
+
+        void
+        SimFlowPlant_verterEffCalcMode (::std::auto_ptr< SimFlowPlant_verterEffCalcMode_type > p);
+
+        // SimFlowPlant_verterEff
+        //
+        typedef ::xml_schema::double_ SimFlowPlant_verterEff_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_verterEff_type > SimFlowPlant_verterEff_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_verterEff_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_verterEff_traits;
+
+        const SimFlowPlant_verterEff_optional&
+        SimFlowPlant_verterEff () const;
+
+        SimFlowPlant_verterEff_optional&
+        SimFlowPlant_verterEff ();
+
+        void
+        SimFlowPlant_verterEff (const SimFlowPlant_verterEff_type& x);
+
+        void
+        SimFlowPlant_verterEff (const SimFlowPlant_verterEff_optional& x);
+
+        // SimFlowPlant_EffFuncDCPwrCurveName
+        //
+        typedef ::xml_schema::idref SimFlowPlant_EffFuncDCPwrCurveName_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_EffFuncDCPwrCurveName_type > SimFlowPlant_EffFuncDCPwrCurveName_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_EffFuncDCPwrCurveName_type, char > SimFlowPlant_EffFuncDCPwrCurveName_traits;
+
+        const SimFlowPlant_EffFuncDCPwrCurveName_optional&
+        SimFlowPlant_EffFuncDCPwrCurveName () const;
+
+        SimFlowPlant_EffFuncDCPwrCurveName_optional&
+        SimFlowPlant_EffFuncDCPwrCurveName ();
+
+        void
+        SimFlowPlant_EffFuncDCPwrCurveName (const SimFlowPlant_EffFuncDCPwrCurveName_type& x);
+
+        void
+        SimFlowPlant_EffFuncDCPwrCurveName (const SimFlowPlant_EffFuncDCPwrCurveName_optional& x);
+
+        void
+        SimFlowPlant_EffFuncDCPwrCurveName (::std::auto_ptr< SimFlowPlant_EffFuncDCPwrCurveName_type > p);
+
         // Constructors.
         //
         SimFlowPlant_ElectricalGenerator_FuelCellInverter ();
@@ -278,8 +359,24 @@ namespace schema
         _clone (::xml_schema::flags f = 0,
                 ::xml_schema::container* c = 0) const;
 
+        SimFlowPlant_ElectricalGenerator_FuelCellInverter&
+        operator= (const SimFlowPlant_ElectricalGenerator_FuelCellInverter& x);
+
         virtual 
         ~SimFlowPlant_ElectricalGenerator_FuelCellInverter ();
+
+        // Implementation.
+        //
+        protected:
+        void
+        parse (::xsd::cxx::xml::dom::parser< char >&,
+               ::xml_schema::flags);
+
+        protected:
+        SimFlowPlant_Name_optional SimFlowPlant_Name_;
+        SimFlowPlant_verterEffCalcMode_optional SimFlowPlant_verterEffCalcMode_;
+        SimFlowPlant_verterEff_optional SimFlowPlant_verterEff_;
+        SimFlowPlant_EffFuncDCPwrCurveName_optional SimFlowPlant_EffFuncDCPwrCurveName_;
       };
     }
   }

@@ -25,6 +25,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="SimFeatureElementSubtraction_Void_Opening.i" />
+    <CustomBuild Include="SimFeatureElementSubtraction_Void_Opening.i" />
   </ItemGroup>
 </Project>

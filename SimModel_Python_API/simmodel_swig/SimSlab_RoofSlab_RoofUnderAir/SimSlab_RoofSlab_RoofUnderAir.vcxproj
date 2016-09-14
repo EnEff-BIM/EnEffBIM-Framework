@@ -85,11 +85,11 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="SimSlab_RoofSlab_RoofUnderAir.i">
+    <CustomBuild Include="SimSlab_RoofSlab_RoofUnderAir.i">
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Research\EnEff-BIM\Python\SWIG\swigwin-3.0.7\swig.exe -c++ -python -outdir $(Outdir) %(Identity)</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename)_wrap.cxx;$(Outdir)%(Filename).py</Outputs>
       <FileType>Document</FileType>
-    </None>
+    </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="SimSlab_RoofSlab_RoofUnderAir_wrap.cxx" />

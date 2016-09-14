@@ -260,7 +260,7 @@ namespace schema
       class SimUnitType: public ::schema::simxml::SimModelCore::SimResourceObject
       {
         public:
-        // UnitType.String
+        // UnitType_String
         //
         typedef ::xml_schema::string UnitType_String_type;
         typedef ::xsd::cxx::tree::optional< UnitType_String_type, false > UnitType_String_optional;

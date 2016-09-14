@@ -260,6 +260,156 @@ namespace schema
       class SimFlowPlant_ElectricalGenerator_FuelCellElectricalStorage: public ::schema::simxml::MepModel::SimFlowPlant_ElectricalGenerator
       {
         public:
+        // SimFlowPlant_Name
+        //
+        typedef ::xml_schema::string SimFlowPlant_Name_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_Name_type > SimFlowPlant_Name_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_Name_type, char > SimFlowPlant_Name_traits;
+
+        const SimFlowPlant_Name_optional&
+        SimFlowPlant_Name () const;
+
+        SimFlowPlant_Name_optional&
+        SimFlowPlant_Name ();
+
+        void
+        SimFlowPlant_Name (const SimFlowPlant_Name_type& x);
+
+        void
+        SimFlowPlant_Name (const SimFlowPlant_Name_optional& x);
+
+        void
+        SimFlowPlant_Name (::std::auto_ptr< SimFlowPlant_Name_type > p);
+
+        // SimFlowPlant_ChoiceModel
+        //
+        typedef ::xml_schema::string SimFlowPlant_ChoiceModel_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_ChoiceModel_type > SimFlowPlant_ChoiceModel_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_ChoiceModel_type, char > SimFlowPlant_ChoiceModel_traits;
+
+        const SimFlowPlant_ChoiceModel_optional&
+        SimFlowPlant_ChoiceModel () const;
+
+        SimFlowPlant_ChoiceModel_optional&
+        SimFlowPlant_ChoiceModel ();
+
+        void
+        SimFlowPlant_ChoiceModel (const SimFlowPlant_ChoiceModel_type& x);
+
+        void
+        SimFlowPlant_ChoiceModel (const SimFlowPlant_ChoiceModel_optional& x);
+
+        void
+        SimFlowPlant_ChoiceModel (::std::auto_ptr< SimFlowPlant_ChoiceModel_type > p);
+
+        // SimFlowPlant_NomChargingEnergeticEff
+        //
+        typedef ::xml_schema::double_ SimFlowPlant_NomChargingEnergeticEff_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_NomChargingEnergeticEff_type > SimFlowPlant_NomChargingEnergeticEff_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_NomChargingEnergeticEff_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_NomChargingEnergeticEff_traits;
+
+        const SimFlowPlant_NomChargingEnergeticEff_optional&
+        SimFlowPlant_NomChargingEnergeticEff () const;
+
+        SimFlowPlant_NomChargingEnergeticEff_optional&
+        SimFlowPlant_NomChargingEnergeticEff ();
+
+        void
+        SimFlowPlant_NomChargingEnergeticEff (const SimFlowPlant_NomChargingEnergeticEff_type& x);
+
+        void
+        SimFlowPlant_NomChargingEnergeticEff (const SimFlowPlant_NomChargingEnergeticEff_optional& x);
+
+        // SimFlowPlant_NomDischargEnergeticEff
+        //
+        typedef ::xml_schema::double_ SimFlowPlant_NomDischargEnergeticEff_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_NomDischargEnergeticEff_type > SimFlowPlant_NomDischargEnergeticEff_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_NomDischargEnergeticEff_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_NomDischargEnergeticEff_traits;
+
+        const SimFlowPlant_NomDischargEnergeticEff_optional&
+        SimFlowPlant_NomDischargEnergeticEff () const;
+
+        SimFlowPlant_NomDischargEnergeticEff_optional&
+        SimFlowPlant_NomDischargEnergeticEff ();
+
+        void
+        SimFlowPlant_NomDischargEnergeticEff (const SimFlowPlant_NomDischargEnergeticEff_type& x);
+
+        void
+        SimFlowPlant_NomDischargEnergeticEff (const SimFlowPlant_NomDischargEnergeticEff_optional& x);
+
+        // SimFlowPlant_SimpleMaxCap
+        //
+        typedef ::xml_schema::double_ SimFlowPlant_SimpleMaxCap_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_SimpleMaxCap_type > SimFlowPlant_SimpleMaxCap_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_SimpleMaxCap_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_SimpleMaxCap_traits;
+
+        const SimFlowPlant_SimpleMaxCap_optional&
+        SimFlowPlant_SimpleMaxCap () const;
+
+        SimFlowPlant_SimpleMaxCap_optional&
+        SimFlowPlant_SimpleMaxCap ();
+
+        void
+        SimFlowPlant_SimpleMaxCap (const SimFlowPlant_SimpleMaxCap_type& x);
+
+        void
+        SimFlowPlant_SimpleMaxCap (const SimFlowPlant_SimpleMaxCap_optional& x);
+
+        // SimFlowPlant_SimpleMaxPwrDraw
+        //
+        typedef ::xml_schema::double_ SimFlowPlant_SimpleMaxPwrDraw_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_SimpleMaxPwrDraw_type > SimFlowPlant_SimpleMaxPwrDraw_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_SimpleMaxPwrDraw_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_SimpleMaxPwrDraw_traits;
+
+        const SimFlowPlant_SimpleMaxPwrDraw_optional&
+        SimFlowPlant_SimpleMaxPwrDraw () const;
+
+        SimFlowPlant_SimpleMaxPwrDraw_optional&
+        SimFlowPlant_SimpleMaxPwrDraw ();
+
+        void
+        SimFlowPlant_SimpleMaxPwrDraw (const SimFlowPlant_SimpleMaxPwrDraw_type& x);
+
+        void
+        SimFlowPlant_SimpleMaxPwrDraw (const SimFlowPlant_SimpleMaxPwrDraw_optional& x);
+
+        // SimFlowPlant_SimpleMaxPwrStore
+        //
+        typedef ::xml_schema::double_ SimFlowPlant_SimpleMaxPwrStore_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_SimpleMaxPwrStore_type > SimFlowPlant_SimpleMaxPwrStore_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_SimpleMaxPwrStore_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_SimpleMaxPwrStore_traits;
+
+        const SimFlowPlant_SimpleMaxPwrStore_optional&
+        SimFlowPlant_SimpleMaxPwrStore () const;
+
+        SimFlowPlant_SimpleMaxPwrStore_optional&
+        SimFlowPlant_SimpleMaxPwrStore ();
+
+        void
+        SimFlowPlant_SimpleMaxPwrStore (const SimFlowPlant_SimpleMaxPwrStore_type& x);
+
+        void
+        SimFlowPlant_SimpleMaxPwrStore (const SimFlowPlant_SimpleMaxPwrStore_optional& x);
+
+        // SimFlowPlant_InitChargeState
+        //
+        typedef ::xml_schema::double_ SimFlowPlant_InitChargeState_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_InitChargeState_type > SimFlowPlant_InitChargeState_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_InitChargeState_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_InitChargeState_traits;
+
+        const SimFlowPlant_InitChargeState_optional&
+        SimFlowPlant_InitChargeState () const;
+
+        SimFlowPlant_InitChargeState_optional&
+        SimFlowPlant_InitChargeState ();
+
+        void
+        SimFlowPlant_InitChargeState (const SimFlowPlant_InitChargeState_type& x);
+
+        void
+        SimFlowPlant_InitChargeState (const SimFlowPlant_InitChargeState_optional& x);
+
         // Constructors.
         //
         SimFlowPlant_ElectricalGenerator_FuelCellElectricalStorage ();
@@ -278,8 +428,28 @@ namespace schema
         _clone (::xml_schema::flags f = 0,
                 ::xml_schema::container* c = 0) const;
 
+        SimFlowPlant_ElectricalGenerator_FuelCellElectricalStorage&
+        operator= (const SimFlowPlant_ElectricalGenerator_FuelCellElectricalStorage& x);
+
         virtual 
         ~SimFlowPlant_ElectricalGenerator_FuelCellElectricalStorage ();
+
+        // Implementation.
+        //
+        protected:
+        void
+        parse (::xsd::cxx::xml::dom::parser< char >&,
+               ::xml_schema::flags);
+
+        protected:
+        SimFlowPlant_Name_optional SimFlowPlant_Name_;
+        SimFlowPlant_ChoiceModel_optional SimFlowPlant_ChoiceModel_;
+        SimFlowPlant_NomChargingEnergeticEff_optional SimFlowPlant_NomChargingEnergeticEff_;
+        SimFlowPlant_NomDischargEnergeticEff_optional SimFlowPlant_NomDischargEnergeticEff_;
+        SimFlowPlant_SimpleMaxCap_optional SimFlowPlant_SimpleMaxCap_;
+        SimFlowPlant_SimpleMaxPwrDraw_optional SimFlowPlant_SimpleMaxPwrDraw_;
+        SimFlowPlant_SimpleMaxPwrStore_optional SimFlowPlant_SimpleMaxPwrStore_;
+        SimFlowPlant_InitChargeState_optional SimFlowPlant_InitChargeState_;
       };
     }
   }

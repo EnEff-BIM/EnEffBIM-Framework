@@ -104,14 +104,14 @@ namespace schema
 
       SimDaylightingAssembly::
       SimDaylightingAssembly ()
-      : ::schema::simxml::BuildingModel::SimBuildingElementAssembly (),
+      : ::schema::simxml::SimModelCore::SimBuildingElementAssembly (),
         Representation_ (this)
       {
       }
 
       SimDaylightingAssembly::
       SimDaylightingAssembly (const RefId_type& RefId)
-      : ::schema::simxml::BuildingModel::SimBuildingElementAssembly (RefId),
+      : ::schema::simxml::SimModelCore::SimBuildingElementAssembly (RefId),
         Representation_ (this)
       {
       }
@@ -120,7 +120,7 @@ namespace schema
       SimDaylightingAssembly (const SimDaylightingAssembly& x,
                               ::xml_schema::flags f,
                               ::xml_schema::container* c)
-      : ::schema::simxml::BuildingModel::SimBuildingElementAssembly (x, f, c),
+      : ::schema::simxml::SimModelCore::SimBuildingElementAssembly (x, f, c),
         Representation_ (x.Representation_, f, this)
       {
       }
@@ -129,7 +129,7 @@ namespace schema
       SimDaylightingAssembly (const ::xercesc::DOMElement& e,
                               ::xml_schema::flags f,
                               ::xml_schema::container* c)
-      : ::schema::simxml::BuildingModel::SimBuildingElementAssembly (e, f | ::xml_schema::flags::base, c),
+      : ::schema::simxml::SimModelCore::SimBuildingElementAssembly (e, f | ::xml_schema::flags::base, c),
         Representation_ (this)
       {
         if ((f & ::xml_schema::flags::base) == 0)
@@ -143,7 +143,7 @@ namespace schema
       parse (::xsd::cxx::xml::dom::parser< char >& p,
              ::xml_schema::flags f)
       {
-        this->::schema::simxml::BuildingModel::SimBuildingElementAssembly::parse (p, f);
+        this->::schema::simxml::SimModelCore::SimBuildingElementAssembly::parse (p, f);
 
         for (; p.more_content (); p.next_content (false))
         {
@@ -181,7 +181,7 @@ namespace schema
       {
         if (this != &x)
         {
-          static_cast< ::schema::simxml::BuildingModel::SimBuildingElementAssembly& > (*this) = x;
+          static_cast< ::schema::simxml::SimModelCore::SimBuildingElementAssembly& > (*this) = x;
           this->Representation_ = x.Representation_;
         }
 

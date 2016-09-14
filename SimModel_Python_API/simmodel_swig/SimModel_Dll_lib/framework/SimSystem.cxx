@@ -138,6 +138,54 @@ namespace schema
       {
         this->HvacSystemSizingParams_.set (x);
       }
+
+      const SimSystem::IsSingleZone_optional& SimSystem::
+      IsSingleZone () const
+      {
+        return this->IsSingleZone_;
+      }
+
+      SimSystem::IsSingleZone_optional& SimSystem::
+      IsSingleZone ()
+      {
+        return this->IsSingleZone_;
+      }
+
+      void SimSystem::
+      IsSingleZone (const IsSingleZone_type& x)
+      {
+        this->IsSingleZone_.set (x);
+      }
+
+      void SimSystem::
+      IsSingleZone (const IsSingleZone_optional& x)
+      {
+        this->IsSingleZone_ = x;
+      }
+
+      const SimSystem::Is3Phase_optional& SimSystem::
+      Is3Phase () const
+      {
+        return this->Is3Phase_;
+      }
+
+      SimSystem::Is3Phase_optional& SimSystem::
+      Is3Phase ()
+      {
+        return this->Is3Phase_;
+      }
+
+      void SimSystem::
+      Is3Phase (const Is3Phase_type& x)
+      {
+        this->Is3Phase_.set (x);
+      }
+
+      void SimSystem::
+      Is3Phase (const Is3Phase_optional& x)
+      {
+        this->Is3Phase_ = x;
+      }
     }
   }
 }
@@ -167,7 +215,9 @@ namespace schema
       : ::schema::simxml::SimModelCore::SimGroup (),
         ParentSystem_ (this),
         SystemServicesSpatialElements_ (this),
-        HvacSystemSizingParams_ (this)
+        HvacSystemSizingParams_ (this),
+        IsSingleZone_ (this),
+        Is3Phase_ (this)
       {
       }
 
@@ -176,7 +226,9 @@ namespace schema
       : ::schema::simxml::SimModelCore::SimGroup (RefId),
         ParentSystem_ (this),
         SystemServicesSpatialElements_ (this),
-        HvacSystemSizingParams_ (this)
+        HvacSystemSizingParams_ (this),
+        IsSingleZone_ (this),
+        Is3Phase_ (this)
       {
       }
 
@@ -187,7 +239,9 @@ namespace schema
       : ::schema::simxml::SimModelCore::SimGroup (x, f, c),
         ParentSystem_ (x.ParentSystem_, f, this),
         SystemServicesSpatialElements_ (x.SystemServicesSpatialElements_, f, this),
-        HvacSystemSizingParams_ (x.HvacSystemSizingParams_, f, this)
+        HvacSystemSizingParams_ (x.HvacSystemSizingParams_, f, this),
+        IsSingleZone_ (x.IsSingleZone_, f, this),
+        Is3Phase_ (x.Is3Phase_, f, this)
       {
       }
 
@@ -198,7 +252,9 @@ namespace schema
       : ::schema::simxml::SimModelCore::SimGroup (e, f | ::xml_schema::flags::base, c),
         ParentSystem_ (this),
         SystemServicesSpatialElements_ (this),
-        HvacSystemSizingParams_ (this)
+        HvacSystemSizingParams_ (this),
+        IsSingleZone_ (this),
+        Is3Phase_ (this)
       {
         if ((f & ::xml_schema::flags::base) == 0)
         {
@@ -261,6 +317,28 @@ namespace schema
             }
           }
 
+          // IsSingleZone
+          //
+          if (n.name () == "IsSingleZone" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          {
+            if (!this->IsSingleZone_)
+            {
+              this->IsSingleZone_.set (IsSingleZone_traits::create (i, f, this));
+              continue;
+            }
+          }
+
+          // Is3Phase
+          //
+          if (n.name () == "Is3Phase" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          {
+            if (!this->Is3Phase_)
+            {
+              this->Is3Phase_.set (Is3Phase_traits::create (i, f, this));
+              continue;
+            }
+          }
+
           break;
         }
       }
@@ -281,6 +359,8 @@ namespace schema
           this->ParentSystem_ = x.ParentSystem_;
           this->SystemServicesSpatialElements_ = x.SystemServicesSpatialElements_;
           this->HvacSystemSizingParams_ = x.HvacSystemSizingParams_;
+          this->IsSingleZone_ = x.IsSingleZone_;
+          this->Is3Phase_ = x.Is3Phase_;
         }
 
         return *this;

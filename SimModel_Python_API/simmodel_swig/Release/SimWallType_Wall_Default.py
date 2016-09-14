@@ -121,6 +121,9 @@ class SimWallType(base.SimObjectTypeDefinition):
     def PredefinedType(self, *args):
         return _SimWallType_Wall_Default.SimWallType_PredefinedType(self, *args)
 
+    def MaterialLayerSet(self, *args):
+        return _SimWallType_Wall_Default.SimWallType_MaterialLayerSet(self, *args)
+
     def __init__(self, *args):
         this = _SimWallType_Wall_Default.new_SimWallType(*args)
         try:

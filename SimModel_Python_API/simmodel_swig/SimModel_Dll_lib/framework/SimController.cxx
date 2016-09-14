@@ -258,6 +258,150 @@ namespace schema
       {
         this->ControllerSchemeList_.set (x);
       }
+
+      const SimController::ConstantSetpointValue_optional& SimController::
+      ConstantSetpointValue () const
+      {
+        return this->ConstantSetpointValue_;
+      }
+
+      SimController::ConstantSetpointValue_optional& SimController::
+      ConstantSetpointValue ()
+      {
+        return this->ConstantSetpointValue_;
+      }
+
+      void SimController::
+      ConstantSetpointValue (const ConstantSetpointValue_type& x)
+      {
+        this->ConstantSetpointValue_.set (x);
+      }
+
+      void SimController::
+      ConstantSetpointValue (const ConstantSetpointValue_optional& x)
+      {
+        this->ConstantSetpointValue_ = x;
+      }
+
+      const SimController::ControllerType_optional& SimController::
+      ControllerType () const
+      {
+        return this->ControllerType_;
+      }
+
+      SimController::ControllerType_optional& SimController::
+      ControllerType ()
+      {
+        return this->ControllerType_;
+      }
+
+      void SimController::
+      ControllerType (const ControllerType_type& x)
+      {
+        this->ControllerType_.set (x);
+      }
+
+      void SimController::
+      ControllerType (const ControllerType_optional& x)
+      {
+        this->ControllerType_ = x;
+      }
+
+      void SimController::
+      ControllerType (::std::auto_ptr< ControllerType_type > x)
+      {
+        this->ControllerType_.set (x);
+      }
+
+      const SimController::ControllerVariable_optional& SimController::
+      ControllerVariable () const
+      {
+        return this->ControllerVariable_;
+      }
+
+      SimController::ControllerVariable_optional& SimController::
+      ControllerVariable ()
+      {
+        return this->ControllerVariable_;
+      }
+
+      void SimController::
+      ControllerVariable (const ControllerVariable_type& x)
+      {
+        this->ControllerVariable_.set (x);
+      }
+
+      void SimController::
+      ControllerVariable (const ControllerVariable_optional& x)
+      {
+        this->ControllerVariable_ = x;
+      }
+
+      void SimController::
+      ControllerVariable (::std::auto_ptr< ControllerVariable_type > x)
+      {
+        this->ControllerVariable_.set (x);
+      }
+
+      const SimController::MeasuredVariable_optional& SimController::
+      MeasuredVariable () const
+      {
+        return this->MeasuredVariable_;
+      }
+
+      SimController::MeasuredVariable_optional& SimController::
+      MeasuredVariable ()
+      {
+        return this->MeasuredVariable_;
+      }
+
+      void SimController::
+      MeasuredVariable (const MeasuredVariable_type& x)
+      {
+        this->MeasuredVariable_.set (x);
+      }
+
+      void SimController::
+      MeasuredVariable (const MeasuredVariable_optional& x)
+      {
+        this->MeasuredVariable_ = x;
+      }
+
+      void SimController::
+      MeasuredVariable (::std::auto_ptr< MeasuredVariable_type > x)
+      {
+        this->MeasuredVariable_.set (x);
+      }
+
+      const SimController::ScheduledSetpointValue_optional& SimController::
+      ScheduledSetpointValue () const
+      {
+        return this->ScheduledSetpointValue_;
+      }
+
+      SimController::ScheduledSetpointValue_optional& SimController::
+      ScheduledSetpointValue ()
+      {
+        return this->ScheduledSetpointValue_;
+      }
+
+      void SimController::
+      ScheduledSetpointValue (const ScheduledSetpointValue_type& x)
+      {
+        this->ScheduledSetpointValue_.set (x);
+      }
+
+      void SimController::
+      ScheduledSetpointValue (const ScheduledSetpointValue_optional& x)
+      {
+        this->ScheduledSetpointValue_ = x;
+      }
+
+      void SimController::
+      ScheduledSetpointValue (::std::auto_ptr< ScheduledSetpointValue_type > x)
+      {
+        this->ScheduledSetpointValue_.set (x);
+      }
     }
   }
 }
@@ -291,7 +435,12 @@ namespace schema
         RepresentationMaps_ (this),
         ElementType_ (this),
         PredefinedType_ (this),
-        ControllerSchemeList_ (this)
+        ControllerSchemeList_ (this),
+        ConstantSetpointValue_ (this),
+        ControllerType_ (this),
+        ControllerVariable_ (this),
+        MeasuredVariable_ (this),
+        ScheduledSetpointValue_ (this)
       {
       }
 
@@ -304,7 +453,12 @@ namespace schema
         RepresentationMaps_ (this),
         ElementType_ (this),
         PredefinedType_ (this),
-        ControllerSchemeList_ (this)
+        ControllerSchemeList_ (this),
+        ConstantSetpointValue_ (this),
+        ControllerType_ (this),
+        ControllerVariable_ (this),
+        MeasuredVariable_ (this),
+        ScheduledSetpointValue_ (this)
       {
       }
 
@@ -319,7 +473,12 @@ namespace schema
         RepresentationMaps_ (x.RepresentationMaps_, f, this),
         ElementType_ (x.ElementType_, f, this),
         PredefinedType_ (x.PredefinedType_, f, this),
-        ControllerSchemeList_ (x.ControllerSchemeList_, f, this)
+        ControllerSchemeList_ (x.ControllerSchemeList_, f, this),
+        ConstantSetpointValue_ (x.ConstantSetpointValue_, f, this),
+        ControllerType_ (x.ControllerType_, f, this),
+        ControllerVariable_ (x.ControllerVariable_, f, this),
+        MeasuredVariable_ (x.MeasuredVariable_, f, this),
+        ScheduledSetpointValue_ (x.ScheduledSetpointValue_, f, this)
       {
       }
 
@@ -334,7 +493,12 @@ namespace schema
         RepresentationMaps_ (this),
         ElementType_ (this),
         PredefinedType_ (this),
-        ControllerSchemeList_ (this)
+        ControllerSchemeList_ (this),
+        ConstantSetpointValue_ (this),
+        ControllerType_ (this),
+        ControllerVariable_ (this),
+        MeasuredVariable_ (this),
+        ScheduledSetpointValue_ (this)
       {
         if ((f & ::xml_schema::flags::base) == 0)
         {
@@ -453,6 +617,73 @@ namespace schema
             }
           }
 
+          // ConstantSetpointValue
+          //
+          if (n.name () == "ConstantSetpointValue" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            if (!this->ConstantSetpointValue_)
+            {
+              this->ConstantSetpointValue_.set (ConstantSetpointValue_traits::create (i, f, this));
+              continue;
+            }
+          }
+
+          // ControllerType
+          //
+          if (n.name () == "ControllerType" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            ::std::auto_ptr< ControllerType_type > r (
+              ControllerType_traits::create (i, f, this));
+
+            if (!this->ControllerType_)
+            {
+              this->ControllerType_.set (r);
+              continue;
+            }
+          }
+
+          // ControllerVariable
+          //
+          if (n.name () == "ControllerVariable" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            ::std::auto_ptr< ControllerVariable_type > r (
+              ControllerVariable_traits::create (i, f, this));
+
+            if (!this->ControllerVariable_)
+            {
+              this->ControllerVariable_.set (r);
+              continue;
+            }
+          }
+
+          // MeasuredVariable
+          //
+          if (n.name () == "MeasuredVariable" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            ::std::auto_ptr< MeasuredVariable_type > r (
+              MeasuredVariable_traits::create (i, f, this));
+
+            if (!this->MeasuredVariable_)
+            {
+              this->MeasuredVariable_.set (r);
+              continue;
+            }
+          }
+
+          // ScheduledSetpointValue
+          //
+          if (n.name () == "ScheduledSetpointValue" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            ::std::auto_ptr< ScheduledSetpointValue_type > r (
+              ScheduledSetpointValue_traits::create (i, f, this));
+
+            if (!this->ScheduledSetpointValue_)
+            {
+              this->ScheduledSetpointValue_.set (r);
+              continue;
+            }
+          }
+
           break;
         }
       }
@@ -477,6 +708,11 @@ namespace schema
           this->ElementType_ = x.ElementType_;
           this->PredefinedType_ = x.PredefinedType_;
           this->ControllerSchemeList_ = x.ControllerSchemeList_;
+          this->ConstantSetpointValue_ = x.ConstantSetpointValue_;
+          this->ControllerType_ = x.ControllerType_;
+          this->ControllerVariable_ = x.ControllerVariable_;
+          this->MeasuredVariable_ = x.MeasuredVariable_;
+          this->ScheduledSetpointValue_ = x.ScheduledSetpointValue_;
         }
 
         return *this;

@@ -213,9 +213,9 @@ namespace schema
           const ::xsd::cxx::xml::qualified_name< char > n (
             ::xsd::cxx::xml::dom::name< char > (i));
 
-          // UnitType.String
+          // UnitType_String
           //
-          if (n.name () == "UnitType.String" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/ResourcesGeneral")
+          if (n.name () == "UnitType_String" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/ResourcesGeneral")
           {
             ::std::auto_ptr< UnitType_String_type > r (
               UnitType_String_traits::create (i, f, this));

@@ -672,9 +672,9 @@ namespace schema
             }
           }
 
-          // Inclination.MeasureValue
+          // Inclination_MeasureValue
           //
-          if (n.name () == "Inclination.MeasureValue" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          if (n.name () == "Inclination_MeasureValue" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
           {
             if (!this->Inclination_MeasureValue_)
             {
@@ -683,9 +683,9 @@ namespace schema
             }
           }
 
-          // TiltRange.MeasureValue
+          // TiltRange_MeasureValue
           //
-          if (n.name () == "TiltRange.MeasureValue" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          if (n.name () == "TiltRange_MeasureValue" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
           {
             if (!this->TiltRange_MeasureValue_)
             {
@@ -727,9 +727,9 @@ namespace schema
             }
           }
 
-          // Roughness.MeasureValue
+          // Roughness_MeasureValue
           //
-          if (n.name () == "Roughness.MeasureValue" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          if (n.name () == "Roughness_MeasureValue" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
           {
             if (!this->Roughness_MeasureValue_)
             {

@@ -257,6 +257,17 @@ namespace schema
   {
     namespace SimModelCore
     {
+      class doubleList;
+    }
+  }
+}
+
+namespace schema
+{
+  namespace simxml
+  {
+    namespace SimModelCore
+    {
       class SimBldgModelParams: public ::schema::simxml::SimModelCore::SimResourceObject
       {
         public:
@@ -371,6 +382,27 @@ namespace schema
         void
         LocalPlacementZ (const LocalPlacementZ_optional& x);
 
+        // LocalPlacementCoordinates
+        //
+        typedef ::schema::simxml::SimModelCore::doubleList LocalPlacementCoordinates_type;
+        typedef ::xsd::cxx::tree::optional< LocalPlacementCoordinates_type, false > LocalPlacementCoordinates_optional;
+        typedef ::xsd::cxx::tree::traits< LocalPlacementCoordinates_type, char > LocalPlacementCoordinates_traits;
+
+        const LocalPlacementCoordinates_optional&
+        LocalPlacementCoordinates () const;
+
+        LocalPlacementCoordinates_optional&
+        LocalPlacementCoordinates ();
+
+        void
+        LocalPlacementCoordinates (const LocalPlacementCoordinates_type& x);
+
+        void
+        LocalPlacementCoordinates (const LocalPlacementCoordinates_optional& x);
+
+        void
+        LocalPlacementCoordinates (::std::auto_ptr< LocalPlacementCoordinates_type > p);
+
         // LocalPlacementRotation
         //
         typedef ::xml_schema::double_ LocalPlacementRotation_type;
@@ -481,6 +513,7 @@ namespace schema
         LocalPlacementX_optional LocalPlacementX_;
         LocalPlacementY_optional LocalPlacementY_;
         LocalPlacementZ_optional LocalPlacementZ_;
+        LocalPlacementCoordinates_optional LocalPlacementCoordinates_;
         LocalPlacementRotation_optional LocalPlacementRotation_;
         XDirectionX_optional XDirectionX_;
         XDirectionY_optional XDirectionY_;

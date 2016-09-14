@@ -260,27 +260,6 @@ namespace schema
       class SimFlowEnergyTransfer_HeatingCoilWater_CoilAirHeatingWaterToAirHeatPumpParameterEstimation: public ::schema::simxml::MepModel::SimFlowEnergyTransfer_HeatingCoilWater
       {
         public:
-        // SimFlowEnergyTrans_Name
-        //
-        typedef ::xml_schema::string SimFlowEnergyTrans_Name_type;
-        typedef ::xsd::cxx::tree::optional< SimFlowEnergyTrans_Name_type > SimFlowEnergyTrans_Name_optional;
-        typedef ::xsd::cxx::tree::traits< SimFlowEnergyTrans_Name_type, char > SimFlowEnergyTrans_Name_traits;
-
-        const SimFlowEnergyTrans_Name_optional&
-        SimFlowEnergyTrans_Name () const;
-
-        SimFlowEnergyTrans_Name_optional&
-        SimFlowEnergyTrans_Name ();
-
-        void
-        SimFlowEnergyTrans_Name (const SimFlowEnergyTrans_Name_type& x);
-
-        void
-        SimFlowEnergyTrans_Name (const SimFlowEnergyTrans_Name_optional& x);
-
-        void
-        SimFlowEnergyTrans_Name (::std::auto_ptr< SimFlowEnergyTrans_Name_type > p);
-
         // SimFlowEnergyTrans_WaterInletNodeName
         //
         typedef ::xml_schema::string SimFlowEnergyTrans_WaterInletNodeName_type;
@@ -745,7 +724,6 @@ namespace schema
                ::xml_schema::flags);
 
         protected:
-        SimFlowEnergyTrans_Name_optional SimFlowEnergyTrans_Name_;
         SimFlowEnergyTrans_WaterInletNodeName_optional SimFlowEnergyTrans_WaterInletNodeName_;
         SimFlowEnergyTrans_WaterOutletNodeName_optional SimFlowEnergyTrans_WaterOutletNodeName_;
         SimFlowEnergyTrans_AirInNodeName_optional SimFlowEnergyTrans_AirInNodeName_;

@@ -255,6 +255,17 @@ namespace schema
 {
   namespace simxml
   {
+    namespace SimModelCore
+    {
+      class doubleList;
+    }
+  }
+}
+
+namespace schema
+{
+  namespace simxml
+  {
     namespace ResourcesGeometry
     {
       class SimPlacement: public ::schema::simxml::SimModelCore::SimGeometricRepresentationItem
@@ -280,6 +291,27 @@ namespace schema
 
         void
         Location (::std::auto_ptr< Location_type > p);
+
+        // Coordinates
+        //
+        typedef ::schema::simxml::SimModelCore::doubleList Coordinates_type;
+        typedef ::xsd::cxx::tree::optional< Coordinates_type, false > Coordinates_optional;
+        typedef ::xsd::cxx::tree::traits< Coordinates_type, char > Coordinates_traits;
+
+        const Coordinates_optional&
+        Coordinates () const;
+
+        Coordinates_optional&
+        Coordinates ();
+
+        void
+        Coordinates (const Coordinates_type& x);
+
+        void
+        Coordinates (const Coordinates_optional& x);
+
+        void
+        Coordinates (::std::auto_ptr< Coordinates_type > p);
 
         // Constructors.
         //
@@ -314,6 +346,7 @@ namespace schema
 
         protected:
         Location_optional Location_;
+        Coordinates_optional Coordinates_;
       };
     }
   }

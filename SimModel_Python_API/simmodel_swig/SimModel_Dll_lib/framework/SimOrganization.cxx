@@ -109,36 +109,6 @@ namespace schema
         this->Name_.set (x);
       }
 
-      const SimOrganization::Roles_optional& SimOrganization::
-      Roles () const
-      {
-        return this->Roles_;
-      }
-
-      SimOrganization::Roles_optional& SimOrganization::
-      Roles ()
-      {
-        return this->Roles_;
-      }
-
-      void SimOrganization::
-      Roles (const Roles_type& x)
-      {
-        this->Roles_.set (x);
-      }
-
-      void SimOrganization::
-      Roles (const Roles_optional& x)
-      {
-        this->Roles_ = x;
-      }
-
-      void SimOrganization::
-      Roles (::std::auto_ptr< Roles_type > x)
-      {
-        this->Roles_.set (x);
-      }
-
       const SimOrganization::Addresses_optional& SimOrganization::
       Addresses () const
       {
@@ -167,6 +137,36 @@ namespace schema
       Addresses (::std::auto_ptr< Addresses_type > x)
       {
         this->Addresses_.set (x);
+      }
+
+      const SimOrganization::ActorPersonAndOrganization_optional& SimOrganization::
+      ActorPersonAndOrganization () const
+      {
+        return this->ActorPersonAndOrganization_;
+      }
+
+      SimOrganization::ActorPersonAndOrganization_optional& SimOrganization::
+      ActorPersonAndOrganization ()
+      {
+        return this->ActorPersonAndOrganization_;
+      }
+
+      void SimOrganization::
+      ActorPersonAndOrganization (const ActorPersonAndOrganization_type& x)
+      {
+        this->ActorPersonAndOrganization_.set (x);
+      }
+
+      void SimOrganization::
+      ActorPersonAndOrganization (const ActorPersonAndOrganization_optional& x)
+      {
+        this->ActorPersonAndOrganization_ = x;
+      }
+
+      void SimOrganization::
+      ActorPersonAndOrganization (::std::auto_ptr< ActorPersonAndOrganization_type > x)
+      {
+        this->ActorPersonAndOrganization_.set (x);
       }
     }
   }
@@ -197,8 +197,8 @@ namespace schema
       : ::schema::simxml::SimModelCore::SimActorDefinition (),
         Id_ (this),
         Name_ (this),
-        Roles_ (this),
-        Addresses_ (this)
+        Addresses_ (this),
+        ActorPersonAndOrganization_ (this)
       {
       }
 
@@ -207,8 +207,8 @@ namespace schema
       : ::schema::simxml::SimModelCore::SimActorDefinition (RefId),
         Id_ (this),
         Name_ (this),
-        Roles_ (this),
-        Addresses_ (this)
+        Addresses_ (this),
+        ActorPersonAndOrganization_ (this)
       {
       }
 
@@ -219,8 +219,8 @@ namespace schema
       : ::schema::simxml::SimModelCore::SimActorDefinition (x, f, c),
         Id_ (x.Id_, f, this),
         Name_ (x.Name_, f, this),
-        Roles_ (x.Roles_, f, this),
-        Addresses_ (x.Addresses_, f, this)
+        Addresses_ (x.Addresses_, f, this),
+        ActorPersonAndOrganization_ (x.ActorPersonAndOrganization_, f, this)
       {
       }
 
@@ -231,8 +231,8 @@ namespace schema
       : ::schema::simxml::SimModelCore::SimActorDefinition (e, f | ::xml_schema::flags::base, c),
         Id_ (this),
         Name_ (this),
-        Roles_ (this),
-        Addresses_ (this)
+        Addresses_ (this),
+        ActorPersonAndOrganization_ (this)
       {
         if ((f & ::xml_schema::flags::base) == 0)
         {
@@ -281,20 +281,6 @@ namespace schema
             }
           }
 
-          // Roles
-          //
-          if (n.name () == "Roles" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/ResourcesGeneral")
-          {
-            ::std::auto_ptr< Roles_type > r (
-              Roles_traits::create (i, f, this));
-
-            if (!this->Roles_)
-            {
-              this->Roles_.set (r);
-              continue;
-            }
-          }
-
           // Addresses
           //
           if (n.name () == "Addresses" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/ResourcesGeneral")
@@ -305,6 +291,20 @@ namespace schema
             if (!this->Addresses_)
             {
               this->Addresses_.set (r);
+              continue;
+            }
+          }
+
+          // ActorPersonAndOrganization
+          //
+          if (n.name () == "ActorPersonAndOrganization" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/ResourcesGeneral")
+          {
+            ::std::auto_ptr< ActorPersonAndOrganization_type > r (
+              ActorPersonAndOrganization_traits::create (i, f, this));
+
+            if (!this->ActorPersonAndOrganization_)
+            {
+              this->ActorPersonAndOrganization_.set (r);
               continue;
             }
           }
@@ -328,8 +328,8 @@ namespace schema
           static_cast< ::schema::simxml::SimModelCore::SimActorDefinition& > (*this) = x;
           this->Id_ = x.Id_;
           this->Name_ = x.Name_;
-          this->Roles_ = x.Roles_;
           this->Addresses_ = x.Addresses_;
+          this->ActorPersonAndOrganization_ = x.ActorPersonAndOrganization_;
         }
 
         return *this;

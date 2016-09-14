@@ -260,6 +260,150 @@ namespace schema
       class SimFlowPlant_ElectricalGenerator_FuelCellWaterSupply: public ::schema::simxml::MepModel::SimFlowPlant_ElectricalGenerator
       {
         public:
+        // SimFlowPlant_Name
+        //
+        typedef ::xml_schema::string SimFlowPlant_Name_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_Name_type > SimFlowPlant_Name_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_Name_type, char > SimFlowPlant_Name_traits;
+
+        const SimFlowPlant_Name_optional&
+        SimFlowPlant_Name () const;
+
+        SimFlowPlant_Name_optional&
+        SimFlowPlant_Name ();
+
+        void
+        SimFlowPlant_Name (const SimFlowPlant_Name_type& x);
+
+        void
+        SimFlowPlant_Name (const SimFlowPlant_Name_optional& x);
+
+        void
+        SimFlowPlant_Name (::std::auto_ptr< SimFlowPlant_Name_type > p);
+
+        // SimFlowPlant_ReformWaterFlowRateFuncFuelRateCurveName
+        //
+        typedef ::xml_schema::idref SimFlowPlant_ReformWaterFlowRateFuncFuelRateCurveName_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_ReformWaterFlowRateFuncFuelRateCurveName_type > SimFlowPlant_ReformWaterFlowRateFuncFuelRateCurveName_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_ReformWaterFlowRateFuncFuelRateCurveName_type, char > SimFlowPlant_ReformWaterFlowRateFuncFuelRateCurveName_traits;
+
+        const SimFlowPlant_ReformWaterFlowRateFuncFuelRateCurveName_optional&
+        SimFlowPlant_ReformWaterFlowRateFuncFuelRateCurveName () const;
+
+        SimFlowPlant_ReformWaterFlowRateFuncFuelRateCurveName_optional&
+        SimFlowPlant_ReformWaterFlowRateFuncFuelRateCurveName ();
+
+        void
+        SimFlowPlant_ReformWaterFlowRateFuncFuelRateCurveName (const SimFlowPlant_ReformWaterFlowRateFuncFuelRateCurveName_type& x);
+
+        void
+        SimFlowPlant_ReformWaterFlowRateFuncFuelRateCurveName (const SimFlowPlant_ReformWaterFlowRateFuncFuelRateCurveName_optional& x);
+
+        void
+        SimFlowPlant_ReformWaterFlowRateFuncFuelRateCurveName (::std::auto_ptr< SimFlowPlant_ReformWaterFlowRateFuncFuelRateCurveName_type > p);
+
+        // SimFlowPlant_ReformWaterPumpPwrFuncFuelRateCurveName
+        //
+        typedef ::xml_schema::idref SimFlowPlant_ReformWaterPumpPwrFuncFuelRateCurveName_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_ReformWaterPumpPwrFuncFuelRateCurveName_type > SimFlowPlant_ReformWaterPumpPwrFuncFuelRateCurveName_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_ReformWaterPumpPwrFuncFuelRateCurveName_type, char > SimFlowPlant_ReformWaterPumpPwrFuncFuelRateCurveName_traits;
+
+        const SimFlowPlant_ReformWaterPumpPwrFuncFuelRateCurveName_optional&
+        SimFlowPlant_ReformWaterPumpPwrFuncFuelRateCurveName () const;
+
+        SimFlowPlant_ReformWaterPumpPwrFuncFuelRateCurveName_optional&
+        SimFlowPlant_ReformWaterPumpPwrFuncFuelRateCurveName ();
+
+        void
+        SimFlowPlant_ReformWaterPumpPwrFuncFuelRateCurveName (const SimFlowPlant_ReformWaterPumpPwrFuncFuelRateCurveName_type& x);
+
+        void
+        SimFlowPlant_ReformWaterPumpPwrFuncFuelRateCurveName (const SimFlowPlant_ReformWaterPumpPwrFuncFuelRateCurveName_optional& x);
+
+        void
+        SimFlowPlant_ReformWaterPumpPwrFuncFuelRateCurveName (::std::auto_ptr< SimFlowPlant_ReformWaterPumpPwrFuncFuelRateCurveName_type > p);
+
+        // SimFlowPlant_PumpHeatLossFactor
+        //
+        typedef ::xml_schema::double_ SimFlowPlant_PumpHeatLossFactor_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_PumpHeatLossFactor_type > SimFlowPlant_PumpHeatLossFactor_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_PumpHeatLossFactor_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_PumpHeatLossFactor_traits;
+
+        const SimFlowPlant_PumpHeatLossFactor_optional&
+        SimFlowPlant_PumpHeatLossFactor () const;
+
+        SimFlowPlant_PumpHeatLossFactor_optional&
+        SimFlowPlant_PumpHeatLossFactor ();
+
+        void
+        SimFlowPlant_PumpHeatLossFactor (const SimFlowPlant_PumpHeatLossFactor_type& x);
+
+        void
+        SimFlowPlant_PumpHeatLossFactor (const SimFlowPlant_PumpHeatLossFactor_optional& x);
+
+        // SimFlowPlant_WaterTempModelingMode
+        //
+        typedef ::xml_schema::string SimFlowPlant_WaterTempModelingMode_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_WaterTempModelingMode_type > SimFlowPlant_WaterTempModelingMode_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_WaterTempModelingMode_type, char > SimFlowPlant_WaterTempModelingMode_traits;
+
+        const SimFlowPlant_WaterTempModelingMode_optional&
+        SimFlowPlant_WaterTempModelingMode () const;
+
+        SimFlowPlant_WaterTempModelingMode_optional&
+        SimFlowPlant_WaterTempModelingMode ();
+
+        void
+        SimFlowPlant_WaterTempModelingMode (const SimFlowPlant_WaterTempModelingMode_type& x);
+
+        void
+        SimFlowPlant_WaterTempModelingMode (const SimFlowPlant_WaterTempModelingMode_optional& x);
+
+        void
+        SimFlowPlant_WaterTempModelingMode (::std::auto_ptr< SimFlowPlant_WaterTempModelingMode_type > p);
+
+        // SimFlowPlant_WaterTempRefNodeName
+        //
+        typedef ::xml_schema::string SimFlowPlant_WaterTempRefNodeName_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_WaterTempRefNodeName_type > SimFlowPlant_WaterTempRefNodeName_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_WaterTempRefNodeName_type, char > SimFlowPlant_WaterTempRefNodeName_traits;
+
+        const SimFlowPlant_WaterTempRefNodeName_optional&
+        SimFlowPlant_WaterTempRefNodeName () const;
+
+        SimFlowPlant_WaterTempRefNodeName_optional&
+        SimFlowPlant_WaterTempRefNodeName ();
+
+        void
+        SimFlowPlant_WaterTempRefNodeName (const SimFlowPlant_WaterTempRefNodeName_type& x);
+
+        void
+        SimFlowPlant_WaterTempRefNodeName (const SimFlowPlant_WaterTempRefNodeName_optional& x);
+
+        void
+        SimFlowPlant_WaterTempRefNodeName (::std::auto_ptr< SimFlowPlant_WaterTempRefNodeName_type > p);
+
+        // SimFlowPlant_WaterTempSchedName
+        //
+        typedef ::xml_schema::idref SimFlowPlant_WaterTempSchedName_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_WaterTempSchedName_type > SimFlowPlant_WaterTempSchedName_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_WaterTempSchedName_type, char > SimFlowPlant_WaterTempSchedName_traits;
+
+        const SimFlowPlant_WaterTempSchedName_optional&
+        SimFlowPlant_WaterTempSchedName () const;
+
+        SimFlowPlant_WaterTempSchedName_optional&
+        SimFlowPlant_WaterTempSchedName ();
+
+        void
+        SimFlowPlant_WaterTempSchedName (const SimFlowPlant_WaterTempSchedName_type& x);
+
+        void
+        SimFlowPlant_WaterTempSchedName (const SimFlowPlant_WaterTempSchedName_optional& x);
+
+        void
+        SimFlowPlant_WaterTempSchedName (::std::auto_ptr< SimFlowPlant_WaterTempSchedName_type > p);
+
         // Constructors.
         //
         SimFlowPlant_ElectricalGenerator_FuelCellWaterSupply ();
@@ -278,8 +422,27 @@ namespace schema
         _clone (::xml_schema::flags f = 0,
                 ::xml_schema::container* c = 0) const;
 
+        SimFlowPlant_ElectricalGenerator_FuelCellWaterSupply&
+        operator= (const SimFlowPlant_ElectricalGenerator_FuelCellWaterSupply& x);
+
         virtual 
         ~SimFlowPlant_ElectricalGenerator_FuelCellWaterSupply ();
+
+        // Implementation.
+        //
+        protected:
+        void
+        parse (::xsd::cxx::xml::dom::parser< char >&,
+               ::xml_schema::flags);
+
+        protected:
+        SimFlowPlant_Name_optional SimFlowPlant_Name_;
+        SimFlowPlant_ReformWaterFlowRateFuncFuelRateCurveName_optional SimFlowPlant_ReformWaterFlowRateFuncFuelRateCurveName_;
+        SimFlowPlant_ReformWaterPumpPwrFuncFuelRateCurveName_optional SimFlowPlant_ReformWaterPumpPwrFuncFuelRateCurveName_;
+        SimFlowPlant_PumpHeatLossFactor_optional SimFlowPlant_PumpHeatLossFactor_;
+        SimFlowPlant_WaterTempModelingMode_optional SimFlowPlant_WaterTempModelingMode_;
+        SimFlowPlant_WaterTempRefNodeName_optional SimFlowPlant_WaterTempRefNodeName_;
+        SimFlowPlant_WaterTempSchedName_optional SimFlowPlant_WaterTempSchedName_;
       };
     }
   }

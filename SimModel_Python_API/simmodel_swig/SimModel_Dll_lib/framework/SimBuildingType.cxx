@@ -138,6 +138,624 @@ namespace schema
       {
         this->ContainedBldgStoryTypeDefs_.set (x);
       }
+
+      const SimBuildingType::BuildingOccupancyType_optional& SimBuildingType::
+      BuildingOccupancyType () const
+      {
+        return this->BuildingOccupancyType_;
+      }
+
+      SimBuildingType::BuildingOccupancyType_optional& SimBuildingType::
+      BuildingOccupancyType ()
+      {
+        return this->BuildingOccupancyType_;
+      }
+
+      void SimBuildingType::
+      BuildingOccupancyType (const BuildingOccupancyType_type& x)
+      {
+        this->BuildingOccupancyType_.set (x);
+      }
+
+      void SimBuildingType::
+      BuildingOccupancyType (const BuildingOccupancyType_optional& x)
+      {
+        this->BuildingOccupancyType_ = x;
+      }
+
+      void SimBuildingType::
+      BuildingOccupancyType (::std::auto_ptr< BuildingOccupancyType_type > x)
+      {
+        this->BuildingOccupancyType_.set (x);
+      }
+
+      const SimBuildingType::BuildingEnergyTargetUnits_optional& SimBuildingType::
+      BuildingEnergyTargetUnits () const
+      {
+        return this->BuildingEnergyTargetUnits_;
+      }
+
+      SimBuildingType::BuildingEnergyTargetUnits_optional& SimBuildingType::
+      BuildingEnergyTargetUnits ()
+      {
+        return this->BuildingEnergyTargetUnits_;
+      }
+
+      void SimBuildingType::
+      BuildingEnergyTargetUnits (const BuildingEnergyTargetUnits_type& x)
+      {
+        this->BuildingEnergyTargetUnits_.set (x);
+      }
+
+      void SimBuildingType::
+      BuildingEnergyTargetUnits (const BuildingEnergyTargetUnits_optional& x)
+      {
+        this->BuildingEnergyTargetUnits_ = x;
+      }
+
+      void SimBuildingType::
+      BuildingEnergyTargetUnits (::std::auto_ptr< BuildingEnergyTargetUnits_type > x)
+      {
+        this->BuildingEnergyTargetUnits_.set (x);
+      }
+
+      const SimBuildingType::BuildingEnergyTargetValue_optional& SimBuildingType::
+      BuildingEnergyTargetValue () const
+      {
+        return this->BuildingEnergyTargetValue_;
+      }
+
+      SimBuildingType::BuildingEnergyTargetValue_optional& SimBuildingType::
+      BuildingEnergyTargetValue ()
+      {
+        return this->BuildingEnergyTargetValue_;
+      }
+
+      void SimBuildingType::
+      BuildingEnergyTargetValue (const BuildingEnergyTargetValue_type& x)
+      {
+        this->BuildingEnergyTargetValue_.set (x);
+      }
+
+      void SimBuildingType::
+      BuildingEnergyTargetValue (const BuildingEnergyTargetValue_optional& x)
+      {
+        this->BuildingEnergyTargetValue_ = x;
+      }
+
+      const SimBuildingType::ClassRef_ConstEntByFunction_optional& SimBuildingType::
+      ClassRef_ConstEntByFunction () const
+      {
+        return this->ClassRef_ConstEntByFunction_;
+      }
+
+      SimBuildingType::ClassRef_ConstEntByFunction_optional& SimBuildingType::
+      ClassRef_ConstEntByFunction ()
+      {
+        return this->ClassRef_ConstEntByFunction_;
+      }
+
+      void SimBuildingType::
+      ClassRef_ConstEntByFunction (const ClassRef_ConstEntByFunction_type& x)
+      {
+        this->ClassRef_ConstEntByFunction_.set (x);
+      }
+
+      void SimBuildingType::
+      ClassRef_ConstEntByFunction (const ClassRef_ConstEntByFunction_optional& x)
+      {
+        this->ClassRef_ConstEntByFunction_ = x;
+      }
+
+      void SimBuildingType::
+      ClassRef_ConstEntByFunction (::std::auto_ptr< ClassRef_ConstEntByFunction_type > x)
+      {
+        this->ClassRef_ConstEntByFunction_.set (x);
+      }
+
+      const SimBuildingType::BuildingConstructionsTemplate_optional& SimBuildingType::
+      BuildingConstructionsTemplate () const
+      {
+        return this->BuildingConstructionsTemplate_;
+      }
+
+      SimBuildingType::BuildingConstructionsTemplate_optional& SimBuildingType::
+      BuildingConstructionsTemplate ()
+      {
+        return this->BuildingConstructionsTemplate_;
+      }
+
+      void SimBuildingType::
+      BuildingConstructionsTemplate (const BuildingConstructionsTemplate_type& x)
+      {
+        this->BuildingConstructionsTemplate_.set (x);
+      }
+
+      void SimBuildingType::
+      BuildingConstructionsTemplate (const BuildingConstructionsTemplate_optional& x)
+      {
+        this->BuildingConstructionsTemplate_ = x;
+      }
+
+      void SimBuildingType::
+      BuildingConstructionsTemplate (::std::auto_ptr< BuildingConstructionsTemplate_type > x)
+      {
+        this->BuildingConstructionsTemplate_.set (x);
+      }
+
+      const SimBuildingType::DaylightControlsDefault_optional& SimBuildingType::
+      DaylightControlsDefault () const
+      {
+        return this->DaylightControlsDefault_;
+      }
+
+      SimBuildingType::DaylightControlsDefault_optional& SimBuildingType::
+      DaylightControlsDefault ()
+      {
+        return this->DaylightControlsDefault_;
+      }
+
+      void SimBuildingType::
+      DaylightControlsDefault (const DaylightControlsDefault_type& x)
+      {
+        this->DaylightControlsDefault_.set (x);
+      }
+
+      void SimBuildingType::
+      DaylightControlsDefault (const DaylightControlsDefault_optional& x)
+      {
+        this->DaylightControlsDefault_ = x;
+      }
+
+      void SimBuildingType::
+      DaylightControlsDefault (::std::auto_ptr< DaylightControlsDefault_type > x)
+      {
+        this->DaylightControlsDefault_.set (x);
+      }
+
+      const SimBuildingType::SkylightControlsDefault_optional& SimBuildingType::
+      SkylightControlsDefault () const
+      {
+        return this->SkylightControlsDefault_;
+      }
+
+      SimBuildingType::SkylightControlsDefault_optional& SimBuildingType::
+      SkylightControlsDefault ()
+      {
+        return this->SkylightControlsDefault_;
+      }
+
+      void SimBuildingType::
+      SkylightControlsDefault (const SkylightControlsDefault_type& x)
+      {
+        this->SkylightControlsDefault_.set (x);
+      }
+
+      void SimBuildingType::
+      SkylightControlsDefault (const SkylightControlsDefault_optional& x)
+      {
+        this->SkylightControlsDefault_ = x;
+      }
+
+      void SimBuildingType::
+      SkylightControlsDefault (::std::auto_ptr< SkylightControlsDefault_type > x)
+      {
+        this->SkylightControlsDefault_.set (x);
+      }
+
+      const SimBuildingType::NatVentilationDefault_optional& SimBuildingType::
+      NatVentilationDefault () const
+      {
+        return this->NatVentilationDefault_;
+      }
+
+      SimBuildingType::NatVentilationDefault_optional& SimBuildingType::
+      NatVentilationDefault ()
+      {
+        return this->NatVentilationDefault_;
+      }
+
+      void SimBuildingType::
+      NatVentilationDefault (const NatVentilationDefault_type& x)
+      {
+        this->NatVentilationDefault_.set (x);
+      }
+
+      void SimBuildingType::
+      NatVentilationDefault (const NatVentilationDefault_optional& x)
+      {
+        this->NatVentilationDefault_ = x;
+      }
+
+      void SimBuildingType::
+      NatVentilationDefault (::std::auto_ptr< NatVentilationDefault_type > x)
+      {
+        this->NatVentilationDefault_.set (x);
+      }
+
+      const SimBuildingType::BuildingInfiltrationType_optional& SimBuildingType::
+      BuildingInfiltrationType () const
+      {
+        return this->BuildingInfiltrationType_;
+      }
+
+      SimBuildingType::BuildingInfiltrationType_optional& SimBuildingType::
+      BuildingInfiltrationType ()
+      {
+        return this->BuildingInfiltrationType_;
+      }
+
+      void SimBuildingType::
+      BuildingInfiltrationType (const BuildingInfiltrationType_type& x)
+      {
+        this->BuildingInfiltrationType_.set (x);
+      }
+
+      void SimBuildingType::
+      BuildingInfiltrationType (const BuildingInfiltrationType_optional& x)
+      {
+        this->BuildingInfiltrationType_ = x;
+      }
+
+      void SimBuildingType::
+      BuildingInfiltrationType (::std::auto_ptr< BuildingInfiltrationType_type > x)
+      {
+        this->BuildingInfiltrationType_.set (x);
+      }
+
+      const SimBuildingType::BuildingInfiltrationValue_optional& SimBuildingType::
+      BuildingInfiltrationValue () const
+      {
+        return this->BuildingInfiltrationValue_;
+      }
+
+      SimBuildingType::BuildingInfiltrationValue_optional& SimBuildingType::
+      BuildingInfiltrationValue ()
+      {
+        return this->BuildingInfiltrationValue_;
+      }
+
+      void SimBuildingType::
+      BuildingInfiltrationValue (const BuildingInfiltrationValue_type& x)
+      {
+        this->BuildingInfiltrationValue_.set (x);
+      }
+
+      void SimBuildingType::
+      BuildingInfiltrationValue (const BuildingInfiltrationValue_optional& x)
+      {
+        this->BuildingInfiltrationValue_ = x;
+      }
+
+      const SimBuildingType::SimBuilding_LoadsConvergTolVal_optional& SimBuildingType::
+      SimBuilding_LoadsConvergTolVal () const
+      {
+        return this->SimBuilding_LoadsConvergTolVal_;
+      }
+
+      SimBuildingType::SimBuilding_LoadsConvergTolVal_optional& SimBuildingType::
+      SimBuilding_LoadsConvergTolVal ()
+      {
+        return this->SimBuilding_LoadsConvergTolVal_;
+      }
+
+      void SimBuildingType::
+      SimBuilding_LoadsConvergTolVal (const SimBuilding_LoadsConvergTolVal_type& x)
+      {
+        this->SimBuilding_LoadsConvergTolVal_.set (x);
+      }
+
+      void SimBuildingType::
+      SimBuilding_LoadsConvergTolVal (const SimBuilding_LoadsConvergTolVal_optional& x)
+      {
+        this->SimBuilding_LoadsConvergTolVal_ = x;
+      }
+
+      const SimBuildingType::SimBuilding_TempConvergTolVal_Double_optional& SimBuildingType::
+      SimBuilding_TempConvergTolVal_Double () const
+      {
+        return this->SimBuilding_TempConvergTolVal_Double_;
+      }
+
+      SimBuildingType::SimBuilding_TempConvergTolVal_Double_optional& SimBuildingType::
+      SimBuilding_TempConvergTolVal_Double ()
+      {
+        return this->SimBuilding_TempConvergTolVal_Double_;
+      }
+
+      void SimBuildingType::
+      SimBuilding_TempConvergTolVal_Double (const SimBuilding_TempConvergTolVal_Double_type& x)
+      {
+        this->SimBuilding_TempConvergTolVal_Double_.set (x);
+      }
+
+      void SimBuildingType::
+      SimBuilding_TempConvergTolVal_Double (const SimBuilding_TempConvergTolVal_Double_optional& x)
+      {
+        this->SimBuilding_TempConvergTolVal_Double_ = x;
+      }
+
+      const SimBuildingType::SimBuilding_MaxNumWarmupDays_optional& SimBuildingType::
+      SimBuilding_MaxNumWarmupDays () const
+      {
+        return this->SimBuilding_MaxNumWarmupDays_;
+      }
+
+      SimBuildingType::SimBuilding_MaxNumWarmupDays_optional& SimBuildingType::
+      SimBuilding_MaxNumWarmupDays ()
+      {
+        return this->SimBuilding_MaxNumWarmupDays_;
+      }
+
+      void SimBuildingType::
+      SimBuilding_MaxNumWarmupDays (const SimBuilding_MaxNumWarmupDays_type& x)
+      {
+        this->SimBuilding_MaxNumWarmupDays_.set (x);
+      }
+
+      void SimBuildingType::
+      SimBuilding_MaxNumWarmupDays (const SimBuilding_MaxNumWarmupDays_optional& x)
+      {
+        this->SimBuilding_MaxNumWarmupDays_ = x;
+      }
+
+      const SimBuildingType::SimBuilding_MinNumberWarmupDays_optional& SimBuildingType::
+      SimBuilding_MinNumberWarmupDays () const
+      {
+        return this->SimBuilding_MinNumberWarmupDays_;
+      }
+
+      SimBuildingType::SimBuilding_MinNumberWarmupDays_optional& SimBuildingType::
+      SimBuilding_MinNumberWarmupDays ()
+      {
+        return this->SimBuilding_MinNumberWarmupDays_;
+      }
+
+      void SimBuildingType::
+      SimBuilding_MinNumberWarmupDays (const SimBuilding_MinNumberWarmupDays_type& x)
+      {
+        this->SimBuilding_MinNumberWarmupDays_.set (x);
+      }
+
+      void SimBuildingType::
+      SimBuilding_MinNumberWarmupDays (const SimBuilding_MinNumberWarmupDays_optional& x)
+      {
+        this->SimBuilding_MinNumberWarmupDays_ = x;
+      }
+
+      const SimBuildingType::RoofIrrigation_IrrigationModelType_optional& SimBuildingType::
+      RoofIrrigation_IrrigationModelType () const
+      {
+        return this->RoofIrrigation_IrrigationModelType_;
+      }
+
+      SimBuildingType::RoofIrrigation_IrrigationModelType_optional& SimBuildingType::
+      RoofIrrigation_IrrigationModelType ()
+      {
+        return this->RoofIrrigation_IrrigationModelType_;
+      }
+
+      void SimBuildingType::
+      RoofIrrigation_IrrigationModelType (const RoofIrrigation_IrrigationModelType_type& x)
+      {
+        this->RoofIrrigation_IrrigationModelType_.set (x);
+      }
+
+      void SimBuildingType::
+      RoofIrrigation_IrrigationModelType (const RoofIrrigation_IrrigationModelType_optional& x)
+      {
+        this->RoofIrrigation_IrrigationModelType_ = x;
+      }
+
+      void SimBuildingType::
+      RoofIrrigation_IrrigationModelType (::std::auto_ptr< RoofIrrigation_IrrigationModelType_type > x)
+      {
+        this->RoofIrrigation_IrrigationModelType_.set (x);
+      }
+
+      const SimBuildingType::RoofIrrigation_IrrigationRateSchedName_optional& SimBuildingType::
+      RoofIrrigation_IrrigationRateSchedName () const
+      {
+        return this->RoofIrrigation_IrrigationRateSchedName_;
+      }
+
+      SimBuildingType::RoofIrrigation_IrrigationRateSchedName_optional& SimBuildingType::
+      RoofIrrigation_IrrigationRateSchedName ()
+      {
+        return this->RoofIrrigation_IrrigationRateSchedName_;
+      }
+
+      void SimBuildingType::
+      RoofIrrigation_IrrigationRateSchedName (const RoofIrrigation_IrrigationRateSchedName_type& x)
+      {
+        this->RoofIrrigation_IrrigationRateSchedName_.set (x);
+      }
+
+      void SimBuildingType::
+      RoofIrrigation_IrrigationRateSchedName (const RoofIrrigation_IrrigationRateSchedName_optional& x)
+      {
+        this->RoofIrrigation_IrrigationRateSchedName_ = x;
+      }
+
+      void SimBuildingType::
+      RoofIrrigation_IrrigationRateSchedName (::std::auto_ptr< RoofIrrigation_IrrigationRateSchedName_type > x)
+      {
+        this->RoofIrrigation_IrrigationRateSchedName_.set (x);
+      }
+
+      const SimBuildingType::RoofIrrigation_IrrigationMaxSaturatThreshold_Double_optional& SimBuildingType::
+      RoofIrrigation_IrrigationMaxSaturatThreshold_Double () const
+      {
+        return this->RoofIrrigation_IrrigationMaxSaturatThreshold_Double_;
+      }
+
+      SimBuildingType::RoofIrrigation_IrrigationMaxSaturatThreshold_Double_optional& SimBuildingType::
+      RoofIrrigation_IrrigationMaxSaturatThreshold_Double ()
+      {
+        return this->RoofIrrigation_IrrigationMaxSaturatThreshold_Double_;
+      }
+
+      void SimBuildingType::
+      RoofIrrigation_IrrigationMaxSaturatThreshold_Double (const RoofIrrigation_IrrigationMaxSaturatThreshold_Double_type& x)
+      {
+        this->RoofIrrigation_IrrigationMaxSaturatThreshold_Double_.set (x);
+      }
+
+      void SimBuildingType::
+      RoofIrrigation_IrrigationMaxSaturatThreshold_Double (const RoofIrrigation_IrrigationMaxSaturatThreshold_Double_optional& x)
+      {
+        this->RoofIrrigation_IrrigationMaxSaturatThreshold_Double_ = x;
+      }
+
+      const SimBuildingType::T24CoilCoolingCapacity_Double_optional& SimBuildingType::
+      T24CoilCoolingCapacity_Double () const
+      {
+        return this->T24CoilCoolingCapacity_Double_;
+      }
+
+      SimBuildingType::T24CoilCoolingCapacity_Double_optional& SimBuildingType::
+      T24CoilCoolingCapacity_Double ()
+      {
+        return this->T24CoilCoolingCapacity_Double_;
+      }
+
+      void SimBuildingType::
+      T24CoilCoolingCapacity_Double (const T24CoilCoolingCapacity_Double_type& x)
+      {
+        this->T24CoilCoolingCapacity_Double_.set (x);
+      }
+
+      void SimBuildingType::
+      T24CoilCoolingCapacity_Double (const T24CoilCoolingCapacity_Double_optional& x)
+      {
+        this->T24CoilCoolingCapacity_Double_ = x;
+      }
+
+      const SimBuildingType::T24CoilHeatingCapacity_Double_optional& SimBuildingType::
+      T24CoilHeatingCapacity_Double () const
+      {
+        return this->T24CoilHeatingCapacity_Double_;
+      }
+
+      SimBuildingType::T24CoilHeatingCapacity_Double_optional& SimBuildingType::
+      T24CoilHeatingCapacity_Double ()
+      {
+        return this->T24CoilHeatingCapacity_Double_;
+      }
+
+      void SimBuildingType::
+      T24CoilHeatingCapacity_Double (const T24CoilHeatingCapacity_Double_type& x)
+      {
+        this->T24CoilHeatingCapacity_Double_.set (x);
+      }
+
+      void SimBuildingType::
+      T24CoilHeatingCapacity_Double (const T24CoilHeatingCapacity_Double_optional& x)
+      {
+        this->T24CoilHeatingCapacity_Double_ = x;
+      }
+
+      const SimBuildingType::T24FunctionClassificationMethod_optional& SimBuildingType::
+      T24FunctionClassificationMethod () const
+      {
+        return this->T24FunctionClassificationMethod_;
+      }
+
+      SimBuildingType::T24FunctionClassificationMethod_optional& SimBuildingType::
+      T24FunctionClassificationMethod ()
+      {
+        return this->T24FunctionClassificationMethod_;
+      }
+
+      void SimBuildingType::
+      T24FunctionClassificationMethod (const T24FunctionClassificationMethod_type& x)
+      {
+        this->T24FunctionClassificationMethod_.set (x);
+      }
+
+      void SimBuildingType::
+      T24FunctionClassificationMethod (const T24FunctionClassificationMethod_optional& x)
+      {
+        this->T24FunctionClassificationMethod_ = x;
+      }
+
+      void SimBuildingType::
+      T24FunctionClassificationMethod (::std::auto_ptr< T24FunctionClassificationMethod_type > x)
+      {
+        this->T24FunctionClassificationMethod_.set (x);
+      }
+
+      const SimBuildingType::T24PlantCoolingCapacity_Double_optional& SimBuildingType::
+      T24PlantCoolingCapacity_Double () const
+      {
+        return this->T24PlantCoolingCapacity_Double_;
+      }
+
+      SimBuildingType::T24PlantCoolingCapacity_Double_optional& SimBuildingType::
+      T24PlantCoolingCapacity_Double ()
+      {
+        return this->T24PlantCoolingCapacity_Double_;
+      }
+
+      void SimBuildingType::
+      T24PlantCoolingCapacity_Double (const T24PlantCoolingCapacity_Double_type& x)
+      {
+        this->T24PlantCoolingCapacity_Double_.set (x);
+      }
+
+      void SimBuildingType::
+      T24PlantCoolingCapacity_Double (const T24PlantCoolingCapacity_Double_optional& x)
+      {
+        this->T24PlantCoolingCapacity_Double_ = x;
+      }
+
+      const SimBuildingType::T24PlantHeatingCapacity_Double_optional& SimBuildingType::
+      T24PlantHeatingCapacity_Double () const
+      {
+        return this->T24PlantHeatingCapacity_Double_;
+      }
+
+      SimBuildingType::T24PlantHeatingCapacity_Double_optional& SimBuildingType::
+      T24PlantHeatingCapacity_Double ()
+      {
+        return this->T24PlantHeatingCapacity_Double_;
+      }
+
+      void SimBuildingType::
+      T24PlantHeatingCapacity_Double (const T24PlantHeatingCapacity_Double_type& x)
+      {
+        this->T24PlantHeatingCapacity_Double_.set (x);
+      }
+
+      void SimBuildingType::
+      T24PlantHeatingCapacity_Double (const T24PlantHeatingCapacity_Double_optional& x)
+      {
+        this->T24PlantHeatingCapacity_Double_ = x;
+      }
+
+      const SimBuildingType::RelocatablePublicSchoolBuilding_optional& SimBuildingType::
+      RelocatablePublicSchoolBuilding () const
+      {
+        return this->RelocatablePublicSchoolBuilding_;
+      }
+
+      SimBuildingType::RelocatablePublicSchoolBuilding_optional& SimBuildingType::
+      RelocatablePublicSchoolBuilding ()
+      {
+        return this->RelocatablePublicSchoolBuilding_;
+      }
+
+      void SimBuildingType::
+      RelocatablePublicSchoolBuilding (const RelocatablePublicSchoolBuilding_type& x)
+      {
+        this->RelocatablePublicSchoolBuilding_.set (x);
+      }
+
+      void SimBuildingType::
+      RelocatablePublicSchoolBuilding (const RelocatablePublicSchoolBuilding_optional& x)
+      {
+        this->RelocatablePublicSchoolBuilding_ = x;
+      }
     }
   }
 }
@@ -167,7 +785,30 @@ namespace schema
       : ::schema::simxml::SimModelCore::SimObjectTypeDefinition (),
         RepresentationMaps_ (this),
         Tag_ (this),
-        ContainedBldgStoryTypeDefs_ (this)
+        ContainedBldgStoryTypeDefs_ (this),
+        BuildingOccupancyType_ (this),
+        BuildingEnergyTargetUnits_ (this),
+        BuildingEnergyTargetValue_ (this),
+        ClassRef_ConstEntByFunction_ (this),
+        BuildingConstructionsTemplate_ (this),
+        DaylightControlsDefault_ (this),
+        SkylightControlsDefault_ (this),
+        NatVentilationDefault_ (this),
+        BuildingInfiltrationType_ (this),
+        BuildingInfiltrationValue_ (this),
+        SimBuilding_LoadsConvergTolVal_ (this),
+        SimBuilding_TempConvergTolVal_Double_ (this),
+        SimBuilding_MaxNumWarmupDays_ (this),
+        SimBuilding_MinNumberWarmupDays_ (this),
+        RoofIrrigation_IrrigationModelType_ (this),
+        RoofIrrigation_IrrigationRateSchedName_ (this),
+        RoofIrrigation_IrrigationMaxSaturatThreshold_Double_ (this),
+        T24CoilCoolingCapacity_Double_ (this),
+        T24CoilHeatingCapacity_Double_ (this),
+        T24FunctionClassificationMethod_ (this),
+        T24PlantCoolingCapacity_Double_ (this),
+        T24PlantHeatingCapacity_Double_ (this),
+        RelocatablePublicSchoolBuilding_ (this)
       {
       }
 
@@ -176,7 +817,30 @@ namespace schema
       : ::schema::simxml::SimModelCore::SimObjectTypeDefinition (RefId),
         RepresentationMaps_ (this),
         Tag_ (this),
-        ContainedBldgStoryTypeDefs_ (this)
+        ContainedBldgStoryTypeDefs_ (this),
+        BuildingOccupancyType_ (this),
+        BuildingEnergyTargetUnits_ (this),
+        BuildingEnergyTargetValue_ (this),
+        ClassRef_ConstEntByFunction_ (this),
+        BuildingConstructionsTemplate_ (this),
+        DaylightControlsDefault_ (this),
+        SkylightControlsDefault_ (this),
+        NatVentilationDefault_ (this),
+        BuildingInfiltrationType_ (this),
+        BuildingInfiltrationValue_ (this),
+        SimBuilding_LoadsConvergTolVal_ (this),
+        SimBuilding_TempConvergTolVal_Double_ (this),
+        SimBuilding_MaxNumWarmupDays_ (this),
+        SimBuilding_MinNumberWarmupDays_ (this),
+        RoofIrrigation_IrrigationModelType_ (this),
+        RoofIrrigation_IrrigationRateSchedName_ (this),
+        RoofIrrigation_IrrigationMaxSaturatThreshold_Double_ (this),
+        T24CoilCoolingCapacity_Double_ (this),
+        T24CoilHeatingCapacity_Double_ (this),
+        T24FunctionClassificationMethod_ (this),
+        T24PlantCoolingCapacity_Double_ (this),
+        T24PlantHeatingCapacity_Double_ (this),
+        RelocatablePublicSchoolBuilding_ (this)
       {
       }
 
@@ -187,7 +851,30 @@ namespace schema
       : ::schema::simxml::SimModelCore::SimObjectTypeDefinition (x, f, c),
         RepresentationMaps_ (x.RepresentationMaps_, f, this),
         Tag_ (x.Tag_, f, this),
-        ContainedBldgStoryTypeDefs_ (x.ContainedBldgStoryTypeDefs_, f, this)
+        ContainedBldgStoryTypeDefs_ (x.ContainedBldgStoryTypeDefs_, f, this),
+        BuildingOccupancyType_ (x.BuildingOccupancyType_, f, this),
+        BuildingEnergyTargetUnits_ (x.BuildingEnergyTargetUnits_, f, this),
+        BuildingEnergyTargetValue_ (x.BuildingEnergyTargetValue_, f, this),
+        ClassRef_ConstEntByFunction_ (x.ClassRef_ConstEntByFunction_, f, this),
+        BuildingConstructionsTemplate_ (x.BuildingConstructionsTemplate_, f, this),
+        DaylightControlsDefault_ (x.DaylightControlsDefault_, f, this),
+        SkylightControlsDefault_ (x.SkylightControlsDefault_, f, this),
+        NatVentilationDefault_ (x.NatVentilationDefault_, f, this),
+        BuildingInfiltrationType_ (x.BuildingInfiltrationType_, f, this),
+        BuildingInfiltrationValue_ (x.BuildingInfiltrationValue_, f, this),
+        SimBuilding_LoadsConvergTolVal_ (x.SimBuilding_LoadsConvergTolVal_, f, this),
+        SimBuilding_TempConvergTolVal_Double_ (x.SimBuilding_TempConvergTolVal_Double_, f, this),
+        SimBuilding_MaxNumWarmupDays_ (x.SimBuilding_MaxNumWarmupDays_, f, this),
+        SimBuilding_MinNumberWarmupDays_ (x.SimBuilding_MinNumberWarmupDays_, f, this),
+        RoofIrrigation_IrrigationModelType_ (x.RoofIrrigation_IrrigationModelType_, f, this),
+        RoofIrrigation_IrrigationRateSchedName_ (x.RoofIrrigation_IrrigationRateSchedName_, f, this),
+        RoofIrrigation_IrrigationMaxSaturatThreshold_Double_ (x.RoofIrrigation_IrrigationMaxSaturatThreshold_Double_, f, this),
+        T24CoilCoolingCapacity_Double_ (x.T24CoilCoolingCapacity_Double_, f, this),
+        T24CoilHeatingCapacity_Double_ (x.T24CoilHeatingCapacity_Double_, f, this),
+        T24FunctionClassificationMethod_ (x.T24FunctionClassificationMethod_, f, this),
+        T24PlantCoolingCapacity_Double_ (x.T24PlantCoolingCapacity_Double_, f, this),
+        T24PlantHeatingCapacity_Double_ (x.T24PlantHeatingCapacity_Double_, f, this),
+        RelocatablePublicSchoolBuilding_ (x.RelocatablePublicSchoolBuilding_, f, this)
       {
       }
 
@@ -198,7 +885,30 @@ namespace schema
       : ::schema::simxml::SimModelCore::SimObjectTypeDefinition (e, f | ::xml_schema::flags::base, c),
         RepresentationMaps_ (this),
         Tag_ (this),
-        ContainedBldgStoryTypeDefs_ (this)
+        ContainedBldgStoryTypeDefs_ (this),
+        BuildingOccupancyType_ (this),
+        BuildingEnergyTargetUnits_ (this),
+        BuildingEnergyTargetValue_ (this),
+        ClassRef_ConstEntByFunction_ (this),
+        BuildingConstructionsTemplate_ (this),
+        DaylightControlsDefault_ (this),
+        SkylightControlsDefault_ (this),
+        NatVentilationDefault_ (this),
+        BuildingInfiltrationType_ (this),
+        BuildingInfiltrationValue_ (this),
+        SimBuilding_LoadsConvergTolVal_ (this),
+        SimBuilding_TempConvergTolVal_Double_ (this),
+        SimBuilding_MaxNumWarmupDays_ (this),
+        SimBuilding_MinNumberWarmupDays_ (this),
+        RoofIrrigation_IrrigationModelType_ (this),
+        RoofIrrigation_IrrigationRateSchedName_ (this),
+        RoofIrrigation_IrrigationMaxSaturatThreshold_Double_ (this),
+        T24CoilCoolingCapacity_Double_ (this),
+        T24CoilHeatingCapacity_Double_ (this),
+        T24FunctionClassificationMethod_ (this),
+        T24PlantCoolingCapacity_Double_ (this),
+        T24PlantHeatingCapacity_Double_ (this),
+        RelocatablePublicSchoolBuilding_ (this)
       {
         if ((f & ::xml_schema::flags::base) == 0)
         {
@@ -261,6 +971,292 @@ namespace schema
             }
           }
 
+          // BuildingOccupancyType
+          //
+          if (n.name () == "BuildingOccupancyType" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          {
+            ::std::auto_ptr< BuildingOccupancyType_type > r (
+              BuildingOccupancyType_traits::create (i, f, this));
+
+            if (!this->BuildingOccupancyType_)
+            {
+              this->BuildingOccupancyType_.set (r);
+              continue;
+            }
+          }
+
+          // BuildingEnergyTargetUnits
+          //
+          if (n.name () == "BuildingEnergyTargetUnits" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          {
+            ::std::auto_ptr< BuildingEnergyTargetUnits_type > r (
+              BuildingEnergyTargetUnits_traits::create (i, f, this));
+
+            if (!this->BuildingEnergyTargetUnits_)
+            {
+              this->BuildingEnergyTargetUnits_.set (r);
+              continue;
+            }
+          }
+
+          // BuildingEnergyTargetValue
+          //
+          if (n.name () == "BuildingEnergyTargetValue" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          {
+            if (!this->BuildingEnergyTargetValue_)
+            {
+              this->BuildingEnergyTargetValue_.set (BuildingEnergyTargetValue_traits::create (i, f, this));
+              continue;
+            }
+          }
+
+          // ClassRef_ConstEntByFunction
+          //
+          if (n.name () == "ClassRef_ConstEntByFunction" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          {
+            ::std::auto_ptr< ClassRef_ConstEntByFunction_type > r (
+              ClassRef_ConstEntByFunction_traits::create (i, f, this));
+
+            if (!this->ClassRef_ConstEntByFunction_)
+            {
+              this->ClassRef_ConstEntByFunction_.set (r);
+              continue;
+            }
+          }
+
+          // BuildingConstructionsTemplate
+          //
+          if (n.name () == "BuildingConstructionsTemplate" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          {
+            ::std::auto_ptr< BuildingConstructionsTemplate_type > r (
+              BuildingConstructionsTemplate_traits::create (i, f, this));
+
+            if (!this->BuildingConstructionsTemplate_)
+            {
+              this->BuildingConstructionsTemplate_.set (r);
+              continue;
+            }
+          }
+
+          // DaylightControlsDefault
+          //
+          if (n.name () == "DaylightControlsDefault" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          {
+            ::std::auto_ptr< DaylightControlsDefault_type > r (
+              DaylightControlsDefault_traits::create (i, f, this));
+
+            if (!this->DaylightControlsDefault_)
+            {
+              this->DaylightControlsDefault_.set (r);
+              continue;
+            }
+          }
+
+          // SkylightControlsDefault
+          //
+          if (n.name () == "SkylightControlsDefault" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          {
+            ::std::auto_ptr< SkylightControlsDefault_type > r (
+              SkylightControlsDefault_traits::create (i, f, this));
+
+            if (!this->SkylightControlsDefault_)
+            {
+              this->SkylightControlsDefault_.set (r);
+              continue;
+            }
+          }
+
+          // NatVentilationDefault
+          //
+          if (n.name () == "NatVentilationDefault" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          {
+            ::std::auto_ptr< NatVentilationDefault_type > r (
+              NatVentilationDefault_traits::create (i, f, this));
+
+            if (!this->NatVentilationDefault_)
+            {
+              this->NatVentilationDefault_.set (r);
+              continue;
+            }
+          }
+
+          // BuildingInfiltrationType
+          //
+          if (n.name () == "BuildingInfiltrationType" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          {
+            ::std::auto_ptr< BuildingInfiltrationType_type > r (
+              BuildingInfiltrationType_traits::create (i, f, this));
+
+            if (!this->BuildingInfiltrationType_)
+            {
+              this->BuildingInfiltrationType_.set (r);
+              continue;
+            }
+          }
+
+          // BuildingInfiltrationValue
+          //
+          if (n.name () == "BuildingInfiltrationValue" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          {
+            if (!this->BuildingInfiltrationValue_)
+            {
+              this->BuildingInfiltrationValue_.set (BuildingInfiltrationValue_traits::create (i, f, this));
+              continue;
+            }
+          }
+
+          // SimBuilding_LoadsConvergTolVal
+          //
+          if (n.name () == "SimBuilding_LoadsConvergTolVal" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          {
+            if (!this->SimBuilding_LoadsConvergTolVal_)
+            {
+              this->SimBuilding_LoadsConvergTolVal_.set (SimBuilding_LoadsConvergTolVal_traits::create (i, f, this));
+              continue;
+            }
+          }
+
+          // SimBuilding_TempConvergTolVal_Double
+          //
+          if (n.name () == "SimBuilding_TempConvergTolVal_Double" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          {
+            if (!this->SimBuilding_TempConvergTolVal_Double_)
+            {
+              this->SimBuilding_TempConvergTolVal_Double_.set (SimBuilding_TempConvergTolVal_Double_traits::create (i, f, this));
+              continue;
+            }
+          }
+
+          // SimBuilding_MaxNumWarmupDays
+          //
+          if (n.name () == "SimBuilding_MaxNumWarmupDays" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          {
+            if (!this->SimBuilding_MaxNumWarmupDays_)
+            {
+              this->SimBuilding_MaxNumWarmupDays_.set (SimBuilding_MaxNumWarmupDays_traits::create (i, f, this));
+              continue;
+            }
+          }
+
+          // SimBuilding_MinNumberWarmupDays
+          //
+          if (n.name () == "SimBuilding_MinNumberWarmupDays" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          {
+            if (!this->SimBuilding_MinNumberWarmupDays_)
+            {
+              this->SimBuilding_MinNumberWarmupDays_.set (SimBuilding_MinNumberWarmupDays_traits::create (i, f, this));
+              continue;
+            }
+          }
+
+          // RoofIrrigation_IrrigationModelType
+          //
+          if (n.name () == "RoofIrrigation_IrrigationModelType" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          {
+            ::std::auto_ptr< RoofIrrigation_IrrigationModelType_type > r (
+              RoofIrrigation_IrrigationModelType_traits::create (i, f, this));
+
+            if (!this->RoofIrrigation_IrrigationModelType_)
+            {
+              this->RoofIrrigation_IrrigationModelType_.set (r);
+              continue;
+            }
+          }
+
+          // RoofIrrigation_IrrigationRateSchedName
+          //
+          if (n.name () == "RoofIrrigation_IrrigationRateSchedName" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          {
+            ::std::auto_ptr< RoofIrrigation_IrrigationRateSchedName_type > r (
+              RoofIrrigation_IrrigationRateSchedName_traits::create (i, f, this));
+
+            if (!this->RoofIrrigation_IrrigationRateSchedName_)
+            {
+              this->RoofIrrigation_IrrigationRateSchedName_.set (r);
+              continue;
+            }
+          }
+
+          // RoofIrrigation_IrrigationMaxSaturatThreshold_Double
+          //
+          if (n.name () == "RoofIrrigation_IrrigationMaxSaturatThreshold_Double" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          {
+            if (!this->RoofIrrigation_IrrigationMaxSaturatThreshold_Double_)
+            {
+              this->RoofIrrigation_IrrigationMaxSaturatThreshold_Double_.set (RoofIrrigation_IrrigationMaxSaturatThreshold_Double_traits::create (i, f, this));
+              continue;
+            }
+          }
+
+          // T24CoilCoolingCapacity_Double
+          //
+          if (n.name () == "T24CoilCoolingCapacity_Double" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          {
+            if (!this->T24CoilCoolingCapacity_Double_)
+            {
+              this->T24CoilCoolingCapacity_Double_.set (T24CoilCoolingCapacity_Double_traits::create (i, f, this));
+              continue;
+            }
+          }
+
+          // T24CoilHeatingCapacity_Double
+          //
+          if (n.name () == "T24CoilHeatingCapacity_Double" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          {
+            if (!this->T24CoilHeatingCapacity_Double_)
+            {
+              this->T24CoilHeatingCapacity_Double_.set (T24CoilHeatingCapacity_Double_traits::create (i, f, this));
+              continue;
+            }
+          }
+
+          // T24FunctionClassificationMethod
+          //
+          if (n.name () == "T24FunctionClassificationMethod" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          {
+            ::std::auto_ptr< T24FunctionClassificationMethod_type > r (
+              T24FunctionClassificationMethod_traits::create (i, f, this));
+
+            if (!this->T24FunctionClassificationMethod_)
+            {
+              this->T24FunctionClassificationMethod_.set (r);
+              continue;
+            }
+          }
+
+          // T24PlantCoolingCapacity_Double
+          //
+          if (n.name () == "T24PlantCoolingCapacity_Double" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          {
+            if (!this->T24PlantCoolingCapacity_Double_)
+            {
+              this->T24PlantCoolingCapacity_Double_.set (T24PlantCoolingCapacity_Double_traits::create (i, f, this));
+              continue;
+            }
+          }
+
+          // T24PlantHeatingCapacity_Double
+          //
+          if (n.name () == "T24PlantHeatingCapacity_Double" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          {
+            if (!this->T24PlantHeatingCapacity_Double_)
+            {
+              this->T24PlantHeatingCapacity_Double_.set (T24PlantHeatingCapacity_Double_traits::create (i, f, this));
+              continue;
+            }
+          }
+
+          // RelocatablePublicSchoolBuilding
+          //
+          if (n.name () == "RelocatablePublicSchoolBuilding" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          {
+            if (!this->RelocatablePublicSchoolBuilding_)
+            {
+              this->RelocatablePublicSchoolBuilding_.set (RelocatablePublicSchoolBuilding_traits::create (i, f, this));
+              continue;
+            }
+          }
+
           break;
         }
       }
@@ -281,6 +1277,29 @@ namespace schema
           this->RepresentationMaps_ = x.RepresentationMaps_;
           this->Tag_ = x.Tag_;
           this->ContainedBldgStoryTypeDefs_ = x.ContainedBldgStoryTypeDefs_;
+          this->BuildingOccupancyType_ = x.BuildingOccupancyType_;
+          this->BuildingEnergyTargetUnits_ = x.BuildingEnergyTargetUnits_;
+          this->BuildingEnergyTargetValue_ = x.BuildingEnergyTargetValue_;
+          this->ClassRef_ConstEntByFunction_ = x.ClassRef_ConstEntByFunction_;
+          this->BuildingConstructionsTemplate_ = x.BuildingConstructionsTemplate_;
+          this->DaylightControlsDefault_ = x.DaylightControlsDefault_;
+          this->SkylightControlsDefault_ = x.SkylightControlsDefault_;
+          this->NatVentilationDefault_ = x.NatVentilationDefault_;
+          this->BuildingInfiltrationType_ = x.BuildingInfiltrationType_;
+          this->BuildingInfiltrationValue_ = x.BuildingInfiltrationValue_;
+          this->SimBuilding_LoadsConvergTolVal_ = x.SimBuilding_LoadsConvergTolVal_;
+          this->SimBuilding_TempConvergTolVal_Double_ = x.SimBuilding_TempConvergTolVal_Double_;
+          this->SimBuilding_MaxNumWarmupDays_ = x.SimBuilding_MaxNumWarmupDays_;
+          this->SimBuilding_MinNumberWarmupDays_ = x.SimBuilding_MinNumberWarmupDays_;
+          this->RoofIrrigation_IrrigationModelType_ = x.RoofIrrigation_IrrigationModelType_;
+          this->RoofIrrigation_IrrigationRateSchedName_ = x.RoofIrrigation_IrrigationRateSchedName_;
+          this->RoofIrrigation_IrrigationMaxSaturatThreshold_Double_ = x.RoofIrrigation_IrrigationMaxSaturatThreshold_Double_;
+          this->T24CoilCoolingCapacity_Double_ = x.T24CoilCoolingCapacity_Double_;
+          this->T24CoilHeatingCapacity_Double_ = x.T24CoilHeatingCapacity_Double_;
+          this->T24FunctionClassificationMethod_ = x.T24FunctionClassificationMethod_;
+          this->T24PlantCoolingCapacity_Double_ = x.T24PlantCoolingCapacity_Double_;
+          this->T24PlantHeatingCapacity_Double_ = x.T24PlantHeatingCapacity_Double_;
+          this->RelocatablePublicSchoolBuilding_ = x.RelocatablePublicSchoolBuilding_;
         }
 
         return *this;

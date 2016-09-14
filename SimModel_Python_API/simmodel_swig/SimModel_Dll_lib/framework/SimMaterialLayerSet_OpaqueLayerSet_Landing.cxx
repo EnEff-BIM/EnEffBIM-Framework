@@ -139,178 +139,178 @@ namespace schema
         this->T24ConsAssmNotes_.set (x);
       }
 
-      const SimMaterialLayerSet_OpaqueLayerSet_Landing::T24CrrcAgedEmittance_optional& SimMaterialLayerSet_OpaqueLayerSet_Landing::
-      T24CrrcAgedEmittance () const
+      const SimMaterialLayerSet_OpaqueLayerSet_Landing::T24CRRCAgedEmittance_optional& SimMaterialLayerSet_OpaqueLayerSet_Landing::
+      T24CRRCAgedEmittance () const
       {
-        return this->T24CrrcAgedEmittance_;
+        return this->T24CRRCAgedEmittance_;
       }
 
-      SimMaterialLayerSet_OpaqueLayerSet_Landing::T24CrrcAgedEmittance_optional& SimMaterialLayerSet_OpaqueLayerSet_Landing::
-      T24CrrcAgedEmittance ()
+      SimMaterialLayerSet_OpaqueLayerSet_Landing::T24CRRCAgedEmittance_optional& SimMaterialLayerSet_OpaqueLayerSet_Landing::
+      T24CRRCAgedEmittance ()
       {
-        return this->T24CrrcAgedEmittance_;
-      }
-
-      void SimMaterialLayerSet_OpaqueLayerSet_Landing::
-      T24CrrcAgedEmittance (const T24CrrcAgedEmittance_type& x)
-      {
-        this->T24CrrcAgedEmittance_.set (x);
+        return this->T24CRRCAgedEmittance_;
       }
 
       void SimMaterialLayerSet_OpaqueLayerSet_Landing::
-      T24CrrcAgedEmittance (const T24CrrcAgedEmittance_optional& x)
+      T24CRRCAgedEmittance (const T24CRRCAgedEmittance_type& x)
       {
-        this->T24CrrcAgedEmittance_ = x;
-      }
-
-      const SimMaterialLayerSet_OpaqueLayerSet_Landing::T24CrrcAgedReflectance_optional& SimMaterialLayerSet_OpaqueLayerSet_Landing::
-      T24CrrcAgedReflectance () const
-      {
-        return this->T24CrrcAgedReflectance_;
-      }
-
-      SimMaterialLayerSet_OpaqueLayerSet_Landing::T24CrrcAgedReflectance_optional& SimMaterialLayerSet_OpaqueLayerSet_Landing::
-      T24CrrcAgedReflectance ()
-      {
-        return this->T24CrrcAgedReflectance_;
+        this->T24CRRCAgedEmittance_.set (x);
       }
 
       void SimMaterialLayerSet_OpaqueLayerSet_Landing::
-      T24CrrcAgedReflectance (const T24CrrcAgedReflectance_type& x)
+      T24CRRCAgedEmittance (const T24CRRCAgedEmittance_optional& x)
       {
-        this->T24CrrcAgedReflectance_.set (x);
+        this->T24CRRCAgedEmittance_ = x;
+      }
+
+      const SimMaterialLayerSet_OpaqueLayerSet_Landing::T24CRRCAgedReflectance_optional& SimMaterialLayerSet_OpaqueLayerSet_Landing::
+      T24CRRCAgedReflectance () const
+      {
+        return this->T24CRRCAgedReflectance_;
+      }
+
+      SimMaterialLayerSet_OpaqueLayerSet_Landing::T24CRRCAgedReflectance_optional& SimMaterialLayerSet_OpaqueLayerSet_Landing::
+      T24CRRCAgedReflectance ()
+      {
+        return this->T24CRRCAgedReflectance_;
       }
 
       void SimMaterialLayerSet_OpaqueLayerSet_Landing::
-      T24CrrcAgedReflectance (const T24CrrcAgedReflectance_optional& x)
+      T24CRRCAgedReflectance (const T24CRRCAgedReflectance_type& x)
       {
-        this->T24CrrcAgedReflectance_ = x;
-      }
-
-      const SimMaterialLayerSet_OpaqueLayerSet_Landing::T24CrrcAgedSRI_optional& SimMaterialLayerSet_OpaqueLayerSet_Landing::
-      T24CrrcAgedSRI () const
-      {
-        return this->T24CrrcAgedSRI_;
-      }
-
-      SimMaterialLayerSet_OpaqueLayerSet_Landing::T24CrrcAgedSRI_optional& SimMaterialLayerSet_OpaqueLayerSet_Landing::
-      T24CrrcAgedSRI ()
-      {
-        return this->T24CrrcAgedSRI_;
+        this->T24CRRCAgedReflectance_.set (x);
       }
 
       void SimMaterialLayerSet_OpaqueLayerSet_Landing::
-      T24CrrcAgedSRI (const T24CrrcAgedSRI_type& x)
+      T24CRRCAgedReflectance (const T24CRRCAgedReflectance_optional& x)
       {
-        this->T24CrrcAgedSRI_.set (x);
+        this->T24CRRCAgedReflectance_ = x;
+      }
+
+      const SimMaterialLayerSet_OpaqueLayerSet_Landing::T24CRRCAgedSRI_optional& SimMaterialLayerSet_OpaqueLayerSet_Landing::
+      T24CRRCAgedSRI () const
+      {
+        return this->T24CRRCAgedSRI_;
+      }
+
+      SimMaterialLayerSet_OpaqueLayerSet_Landing::T24CRRCAgedSRI_optional& SimMaterialLayerSet_OpaqueLayerSet_Landing::
+      T24CRRCAgedSRI ()
+      {
+        return this->T24CRRCAgedSRI_;
       }
 
       void SimMaterialLayerSet_OpaqueLayerSet_Landing::
-      T24CrrcAgedSRI (const T24CrrcAgedSRI_optional& x)
+      T24CRRCAgedSRI (const T24CRRCAgedSRI_type& x)
       {
-        this->T24CrrcAgedSRI_ = x;
-      }
-
-      const SimMaterialLayerSet_OpaqueLayerSet_Landing::T24CrrcInitialEmitance_optional& SimMaterialLayerSet_OpaqueLayerSet_Landing::
-      T24CrrcInitialEmitance () const
-      {
-        return this->T24CrrcInitialEmitance_;
-      }
-
-      SimMaterialLayerSet_OpaqueLayerSet_Landing::T24CrrcInitialEmitance_optional& SimMaterialLayerSet_OpaqueLayerSet_Landing::
-      T24CrrcInitialEmitance ()
-      {
-        return this->T24CrrcInitialEmitance_;
+        this->T24CRRCAgedSRI_.set (x);
       }
 
       void SimMaterialLayerSet_OpaqueLayerSet_Landing::
-      T24CrrcInitialEmitance (const T24CrrcInitialEmitance_type& x)
+      T24CRRCAgedSRI (const T24CRRCAgedSRI_optional& x)
       {
-        this->T24CrrcInitialEmitance_.set (x);
+        this->T24CRRCAgedSRI_ = x;
+      }
+
+      const SimMaterialLayerSet_OpaqueLayerSet_Landing::T24CRRCInitialEmitance_optional& SimMaterialLayerSet_OpaqueLayerSet_Landing::
+      T24CRRCInitialEmitance () const
+      {
+        return this->T24CRRCInitialEmitance_;
+      }
+
+      SimMaterialLayerSet_OpaqueLayerSet_Landing::T24CRRCInitialEmitance_optional& SimMaterialLayerSet_OpaqueLayerSet_Landing::
+      T24CRRCInitialEmitance ()
+      {
+        return this->T24CRRCInitialEmitance_;
       }
 
       void SimMaterialLayerSet_OpaqueLayerSet_Landing::
-      T24CrrcInitialEmitance (const T24CrrcInitialEmitance_optional& x)
+      T24CRRCInitialEmitance (const T24CRRCInitialEmitance_type& x)
       {
-        this->T24CrrcInitialEmitance_ = x;
-      }
-
-      const SimMaterialLayerSet_OpaqueLayerSet_Landing::T24CrrcInitialReflectance_optional& SimMaterialLayerSet_OpaqueLayerSet_Landing::
-      T24CrrcInitialReflectance () const
-      {
-        return this->T24CrrcInitialReflectance_;
-      }
-
-      SimMaterialLayerSet_OpaqueLayerSet_Landing::T24CrrcInitialReflectance_optional& SimMaterialLayerSet_OpaqueLayerSet_Landing::
-      T24CrrcInitialReflectance ()
-      {
-        return this->T24CrrcInitialReflectance_;
+        this->T24CRRCInitialEmitance_.set (x);
       }
 
       void SimMaterialLayerSet_OpaqueLayerSet_Landing::
-      T24CrrcInitialReflectance (const T24CrrcInitialReflectance_type& x)
+      T24CRRCInitialEmitance (const T24CRRCInitialEmitance_optional& x)
       {
-        this->T24CrrcInitialReflectance_.set (x);
+        this->T24CRRCInitialEmitance_ = x;
+      }
+
+      const SimMaterialLayerSet_OpaqueLayerSet_Landing::T24CRRCInitialReflectance_optional& SimMaterialLayerSet_OpaqueLayerSet_Landing::
+      T24CRRCInitialReflectance () const
+      {
+        return this->T24CRRCInitialReflectance_;
+      }
+
+      SimMaterialLayerSet_OpaqueLayerSet_Landing::T24CRRCInitialReflectance_optional& SimMaterialLayerSet_OpaqueLayerSet_Landing::
+      T24CRRCInitialReflectance ()
+      {
+        return this->T24CRRCInitialReflectance_;
       }
 
       void SimMaterialLayerSet_OpaqueLayerSet_Landing::
-      T24CrrcInitialReflectance (const T24CrrcInitialReflectance_optional& x)
+      T24CRRCInitialReflectance (const T24CRRCInitialReflectance_type& x)
       {
-        this->T24CrrcInitialReflectance_ = x;
-      }
-
-      const SimMaterialLayerSet_OpaqueLayerSet_Landing::T24CrrcInitialSRI_optional& SimMaterialLayerSet_OpaqueLayerSet_Landing::
-      T24CrrcInitialSRI () const
-      {
-        return this->T24CrrcInitialSRI_;
-      }
-
-      SimMaterialLayerSet_OpaqueLayerSet_Landing::T24CrrcInitialSRI_optional& SimMaterialLayerSet_OpaqueLayerSet_Landing::
-      T24CrrcInitialSRI ()
-      {
-        return this->T24CrrcInitialSRI_;
+        this->T24CRRCInitialReflectance_.set (x);
       }
 
       void SimMaterialLayerSet_OpaqueLayerSet_Landing::
-      T24CrrcInitialSRI (const T24CrrcInitialSRI_type& x)
+      T24CRRCInitialReflectance (const T24CRRCInitialReflectance_optional& x)
       {
-        this->T24CrrcInitialSRI_.set (x);
+        this->T24CRRCInitialReflectance_ = x;
+      }
+
+      const SimMaterialLayerSet_OpaqueLayerSet_Landing::T24CRRCInitialSRI_optional& SimMaterialLayerSet_OpaqueLayerSet_Landing::
+      T24CRRCInitialSRI () const
+      {
+        return this->T24CRRCInitialSRI_;
+      }
+
+      SimMaterialLayerSet_OpaqueLayerSet_Landing::T24CRRCInitialSRI_optional& SimMaterialLayerSet_OpaqueLayerSet_Landing::
+      T24CRRCInitialSRI ()
+      {
+        return this->T24CRRCInitialSRI_;
       }
 
       void SimMaterialLayerSet_OpaqueLayerSet_Landing::
-      T24CrrcInitialSRI (const T24CrrcInitialSRI_optional& x)
+      T24CRRCInitialSRI (const T24CRRCInitialSRI_type& x)
       {
-        this->T24CrrcInitialSRI_ = x;
-      }
-
-      const SimMaterialLayerSet_OpaqueLayerSet_Landing::T24CrrcProductID_optional& SimMaterialLayerSet_OpaqueLayerSet_Landing::
-      T24CrrcProductID () const
-      {
-        return this->T24CrrcProductID_;
-      }
-
-      SimMaterialLayerSet_OpaqueLayerSet_Landing::T24CrrcProductID_optional& SimMaterialLayerSet_OpaqueLayerSet_Landing::
-      T24CrrcProductID ()
-      {
-        return this->T24CrrcProductID_;
+        this->T24CRRCInitialSRI_.set (x);
       }
 
       void SimMaterialLayerSet_OpaqueLayerSet_Landing::
-      T24CrrcProductID (const T24CrrcProductID_type& x)
+      T24CRRCInitialSRI (const T24CRRCInitialSRI_optional& x)
       {
-        this->T24CrrcProductID_.set (x);
+        this->T24CRRCInitialSRI_ = x;
+      }
+
+      const SimMaterialLayerSet_OpaqueLayerSet_Landing::T24CRRCProductID_optional& SimMaterialLayerSet_OpaqueLayerSet_Landing::
+      T24CRRCProductID () const
+      {
+        return this->T24CRRCProductID_;
+      }
+
+      SimMaterialLayerSet_OpaqueLayerSet_Landing::T24CRRCProductID_optional& SimMaterialLayerSet_OpaqueLayerSet_Landing::
+      T24CRRCProductID ()
+      {
+        return this->T24CRRCProductID_;
       }
 
       void SimMaterialLayerSet_OpaqueLayerSet_Landing::
-      T24CrrcProductID (const T24CrrcProductID_optional& x)
+      T24CRRCProductID (const T24CRRCProductID_type& x)
       {
-        this->T24CrrcProductID_ = x;
+        this->T24CRRCProductID_.set (x);
       }
 
       void SimMaterialLayerSet_OpaqueLayerSet_Landing::
-      T24CrrcProductID (::std::auto_ptr< T24CrrcProductID_type > x)
+      T24CRRCProductID (const T24CRRCProductID_optional& x)
       {
-        this->T24CrrcProductID_.set (x);
+        this->T24CRRCProductID_ = x;
+      }
+
+      void SimMaterialLayerSet_OpaqueLayerSet_Landing::
+      T24CRRCProductID (::std::auto_ptr< T24CRRCProductID_type > x)
+      {
+        this->T24CRRCProductID_.set (x);
       }
 
       const SimMaterialLayerSet_OpaqueLayerSet_Landing::T24FieldAppliedCoating_optional& SimMaterialLayerSet_OpaqueLayerSet_Landing::
@@ -450,54 +450,6 @@ namespace schema
       {
         this->T24SlabType_.set (x);
       }
-
-      const SimMaterialLayerSet_OpaqueLayerSet_Landing::T24SolarReflectanceASTMCertification_optional& SimMaterialLayerSet_OpaqueLayerSet_Landing::
-      T24SolarReflectanceASTMCertification () const
-      {
-        return this->T24SolarReflectanceASTMCertification_;
-      }
-
-      SimMaterialLayerSet_OpaqueLayerSet_Landing::T24SolarReflectanceASTMCertification_optional& SimMaterialLayerSet_OpaqueLayerSet_Landing::
-      T24SolarReflectanceASTMCertification ()
-      {
-        return this->T24SolarReflectanceASTMCertification_;
-      }
-
-      void SimMaterialLayerSet_OpaqueLayerSet_Landing::
-      T24SolarReflectanceASTMCertification (const T24SolarReflectanceASTMCertification_type& x)
-      {
-        this->T24SolarReflectanceASTMCertification_.set (x);
-      }
-
-      void SimMaterialLayerSet_OpaqueLayerSet_Landing::
-      T24SolarReflectanceASTMCertification (const T24SolarReflectanceASTMCertification_optional& x)
-      {
-        this->T24SolarReflectanceASTMCertification_ = x;
-      }
-
-      const SimMaterialLayerSet_OpaqueLayerSet_Landing::T24ThermalEmittanceASTMCertification_optional& SimMaterialLayerSet_OpaqueLayerSet_Landing::
-      T24ThermalEmittanceASTMCertification () const
-      {
-        return this->T24ThermalEmittanceASTMCertification_;
-      }
-
-      SimMaterialLayerSet_OpaqueLayerSet_Landing::T24ThermalEmittanceASTMCertification_optional& SimMaterialLayerSet_OpaqueLayerSet_Landing::
-      T24ThermalEmittanceASTMCertification ()
-      {
-        return this->T24ThermalEmittanceASTMCertification_;
-      }
-
-      void SimMaterialLayerSet_OpaqueLayerSet_Landing::
-      T24ThermalEmittanceASTMCertification (const T24ThermalEmittanceASTMCertification_type& x)
-      {
-        this->T24ThermalEmittanceASTMCertification_.set (x);
-      }
-
-      void SimMaterialLayerSet_OpaqueLayerSet_Landing::
-      T24ThermalEmittanceASTMCertification (const T24ThermalEmittanceASTMCertification_optional& x)
-      {
-        this->T24ThermalEmittanceASTMCertification_ = x;
-      }
     }
   }
 }
@@ -528,20 +480,18 @@ namespace schema
         SimMatLayerSet_OutsideLayer_ (this),
         SimMatLayerSet_Layer_2_10_ (this),
         T24ConsAssmNotes_ (this),
-        T24CrrcAgedEmittance_ (this),
-        T24CrrcAgedReflectance_ (this),
-        T24CrrcAgedSRI_ (this),
-        T24CrrcInitialEmitance_ (this),
-        T24CrrcInitialReflectance_ (this),
-        T24CrrcInitialSRI_ (this),
-        T24CrrcProductID_ (this),
+        T24CRRCAgedEmittance_ (this),
+        T24CRRCAgedReflectance_ (this),
+        T24CRRCAgedSRI_ (this),
+        T24CRRCInitialEmitance_ (this),
+        T24CRRCInitialReflectance_ (this),
+        T24CRRCInitialSRI_ (this),
+        T24CRRCProductID_ (this),
         T24FieldAppliedCoating_ (this),
         T24RoofDensity_ (this),
         T24ConstructInsulOrient_ (this),
         T24SlabInsulThermResist_ (this),
-        T24SlabType_ (this),
-        T24SolarReflectanceASTMCertification_ (this),
-        T24ThermalEmittanceASTMCertification_ (this)
+        T24SlabType_ (this)
       {
       }
 
@@ -551,20 +501,18 @@ namespace schema
         SimMatLayerSet_OutsideLayer_ (this),
         SimMatLayerSet_Layer_2_10_ (this),
         T24ConsAssmNotes_ (this),
-        T24CrrcAgedEmittance_ (this),
-        T24CrrcAgedReflectance_ (this),
-        T24CrrcAgedSRI_ (this),
-        T24CrrcInitialEmitance_ (this),
-        T24CrrcInitialReflectance_ (this),
-        T24CrrcInitialSRI_ (this),
-        T24CrrcProductID_ (this),
+        T24CRRCAgedEmittance_ (this),
+        T24CRRCAgedReflectance_ (this),
+        T24CRRCAgedSRI_ (this),
+        T24CRRCInitialEmitance_ (this),
+        T24CRRCInitialReflectance_ (this),
+        T24CRRCInitialSRI_ (this),
+        T24CRRCProductID_ (this),
         T24FieldAppliedCoating_ (this),
         T24RoofDensity_ (this),
         T24ConstructInsulOrient_ (this),
         T24SlabInsulThermResist_ (this),
-        T24SlabType_ (this),
-        T24SolarReflectanceASTMCertification_ (this),
-        T24ThermalEmittanceASTMCertification_ (this)
+        T24SlabType_ (this)
       {
       }
 
@@ -576,20 +524,18 @@ namespace schema
         SimMatLayerSet_OutsideLayer_ (x.SimMatLayerSet_OutsideLayer_, f, this),
         SimMatLayerSet_Layer_2_10_ (x.SimMatLayerSet_Layer_2_10_, f, this),
         T24ConsAssmNotes_ (x.T24ConsAssmNotes_, f, this),
-        T24CrrcAgedEmittance_ (x.T24CrrcAgedEmittance_, f, this),
-        T24CrrcAgedReflectance_ (x.T24CrrcAgedReflectance_, f, this),
-        T24CrrcAgedSRI_ (x.T24CrrcAgedSRI_, f, this),
-        T24CrrcInitialEmitance_ (x.T24CrrcInitialEmitance_, f, this),
-        T24CrrcInitialReflectance_ (x.T24CrrcInitialReflectance_, f, this),
-        T24CrrcInitialSRI_ (x.T24CrrcInitialSRI_, f, this),
-        T24CrrcProductID_ (x.T24CrrcProductID_, f, this),
+        T24CRRCAgedEmittance_ (x.T24CRRCAgedEmittance_, f, this),
+        T24CRRCAgedReflectance_ (x.T24CRRCAgedReflectance_, f, this),
+        T24CRRCAgedSRI_ (x.T24CRRCAgedSRI_, f, this),
+        T24CRRCInitialEmitance_ (x.T24CRRCInitialEmitance_, f, this),
+        T24CRRCInitialReflectance_ (x.T24CRRCInitialReflectance_, f, this),
+        T24CRRCInitialSRI_ (x.T24CRRCInitialSRI_, f, this),
+        T24CRRCProductID_ (x.T24CRRCProductID_, f, this),
         T24FieldAppliedCoating_ (x.T24FieldAppliedCoating_, f, this),
         T24RoofDensity_ (x.T24RoofDensity_, f, this),
         T24ConstructInsulOrient_ (x.T24ConstructInsulOrient_, f, this),
         T24SlabInsulThermResist_ (x.T24SlabInsulThermResist_, f, this),
-        T24SlabType_ (x.T24SlabType_, f, this),
-        T24SolarReflectanceASTMCertification_ (x.T24SolarReflectanceASTMCertification_, f, this),
-        T24ThermalEmittanceASTMCertification_ (x.T24ThermalEmittanceASTMCertification_, f, this)
+        T24SlabType_ (x.T24SlabType_, f, this)
       {
       }
 
@@ -601,20 +547,18 @@ namespace schema
         SimMatLayerSet_OutsideLayer_ (this),
         SimMatLayerSet_Layer_2_10_ (this),
         T24ConsAssmNotes_ (this),
-        T24CrrcAgedEmittance_ (this),
-        T24CrrcAgedReflectance_ (this),
-        T24CrrcAgedSRI_ (this),
-        T24CrrcInitialEmitance_ (this),
-        T24CrrcInitialReflectance_ (this),
-        T24CrrcInitialSRI_ (this),
-        T24CrrcProductID_ (this),
+        T24CRRCAgedEmittance_ (this),
+        T24CRRCAgedReflectance_ (this),
+        T24CRRCAgedSRI_ (this),
+        T24CRRCInitialEmitance_ (this),
+        T24CRRCInitialReflectance_ (this),
+        T24CRRCInitialSRI_ (this),
+        T24CRRCProductID_ (this),
         T24FieldAppliedCoating_ (this),
         T24RoofDensity_ (this),
         T24ConstructInsulOrient_ (this),
         T24SlabInsulThermResist_ (this),
-        T24SlabType_ (this),
-        T24SolarReflectanceASTMCertification_ (this),
-        T24ThermalEmittanceASTMCertification_ (this)
+        T24SlabType_ (this)
       {
         if ((f & ::xml_schema::flags::base) == 0)
         {
@@ -677,82 +621,82 @@ namespace schema
             }
           }
 
-          // T24CrrcAgedEmittance
+          // T24CRRCAgedEmittance
           //
-          if (n.name () == "T24CrrcAgedEmittance" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/ResourcesGeneral")
+          if (n.name () == "T24CRRCAgedEmittance" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/ResourcesGeneral")
           {
-            if (!this->T24CrrcAgedEmittance_)
+            if (!this->T24CRRCAgedEmittance_)
             {
-              this->T24CrrcAgedEmittance_.set (T24CrrcAgedEmittance_traits::create (i, f, this));
+              this->T24CRRCAgedEmittance_.set (T24CRRCAgedEmittance_traits::create (i, f, this));
               continue;
             }
           }
 
-          // T24CrrcAgedReflectance
+          // T24CRRCAgedReflectance
           //
-          if (n.name () == "T24CrrcAgedReflectance" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/ResourcesGeneral")
+          if (n.name () == "T24CRRCAgedReflectance" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/ResourcesGeneral")
           {
-            if (!this->T24CrrcAgedReflectance_)
+            if (!this->T24CRRCAgedReflectance_)
             {
-              this->T24CrrcAgedReflectance_.set (T24CrrcAgedReflectance_traits::create (i, f, this));
+              this->T24CRRCAgedReflectance_.set (T24CRRCAgedReflectance_traits::create (i, f, this));
               continue;
             }
           }
 
-          // T24CrrcAgedSRI
+          // T24CRRCAgedSRI
           //
-          if (n.name () == "T24CrrcAgedSRI" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/ResourcesGeneral")
+          if (n.name () == "T24CRRCAgedSRI" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/ResourcesGeneral")
           {
-            if (!this->T24CrrcAgedSRI_)
+            if (!this->T24CRRCAgedSRI_)
             {
-              this->T24CrrcAgedSRI_.set (T24CrrcAgedSRI_traits::create (i, f, this));
+              this->T24CRRCAgedSRI_.set (T24CRRCAgedSRI_traits::create (i, f, this));
               continue;
             }
           }
 
-          // T24CrrcInitialEmitance
+          // T24CRRCInitialEmitance
           //
-          if (n.name () == "T24CrrcInitialEmitance" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/ResourcesGeneral")
+          if (n.name () == "T24CRRCInitialEmitance" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/ResourcesGeneral")
           {
-            if (!this->T24CrrcInitialEmitance_)
+            if (!this->T24CRRCInitialEmitance_)
             {
-              this->T24CrrcInitialEmitance_.set (T24CrrcInitialEmitance_traits::create (i, f, this));
+              this->T24CRRCInitialEmitance_.set (T24CRRCInitialEmitance_traits::create (i, f, this));
               continue;
             }
           }
 
-          // T24CrrcInitialReflectance
+          // T24CRRCInitialReflectance
           //
-          if (n.name () == "T24CrrcInitialReflectance" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/ResourcesGeneral")
+          if (n.name () == "T24CRRCInitialReflectance" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/ResourcesGeneral")
           {
-            if (!this->T24CrrcInitialReflectance_)
+            if (!this->T24CRRCInitialReflectance_)
             {
-              this->T24CrrcInitialReflectance_.set (T24CrrcInitialReflectance_traits::create (i, f, this));
+              this->T24CRRCInitialReflectance_.set (T24CRRCInitialReflectance_traits::create (i, f, this));
               continue;
             }
           }
 
-          // T24CrrcInitialSRI
+          // T24CRRCInitialSRI
           //
-          if (n.name () == "T24CrrcInitialSRI" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/ResourcesGeneral")
+          if (n.name () == "T24CRRCInitialSRI" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/ResourcesGeneral")
           {
-            if (!this->T24CrrcInitialSRI_)
+            if (!this->T24CRRCInitialSRI_)
             {
-              this->T24CrrcInitialSRI_.set (T24CrrcInitialSRI_traits::create (i, f, this));
+              this->T24CRRCInitialSRI_.set (T24CRRCInitialSRI_traits::create (i, f, this));
               continue;
             }
           }
 
-          // T24CrrcProductID
+          // T24CRRCProductID
           //
-          if (n.name () == "T24CrrcProductID" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/ResourcesGeneral")
+          if (n.name () == "T24CRRCProductID" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/ResourcesGeneral")
           {
-            ::std::auto_ptr< T24CrrcProductID_type > r (
-              T24CrrcProductID_traits::create (i, f, this));
+            ::std::auto_ptr< T24CRRCProductID_type > r (
+              T24CRRCProductID_traits::create (i, f, this));
 
-            if (!this->T24CrrcProductID_)
+            if (!this->T24CRRCProductID_)
             {
-              this->T24CrrcProductID_.set (r);
+              this->T24CRRCProductID_.set (r);
               continue;
             }
           }
@@ -821,28 +765,6 @@ namespace schema
             }
           }
 
-          // T24SolarReflectanceASTMCertification
-          //
-          if (n.name () == "T24SolarReflectanceASTMCertification" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/ResourcesGeneral")
-          {
-            if (!this->T24SolarReflectanceASTMCertification_)
-            {
-              this->T24SolarReflectanceASTMCertification_.set (T24SolarReflectanceASTMCertification_traits::create (i, f, this));
-              continue;
-            }
-          }
-
-          // T24ThermalEmittanceASTMCertification
-          //
-          if (n.name () == "T24ThermalEmittanceASTMCertification" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/ResourcesGeneral")
-          {
-            if (!this->T24ThermalEmittanceASTMCertification_)
-            {
-              this->T24ThermalEmittanceASTMCertification_.set (T24ThermalEmittanceASTMCertification_traits::create (i, f, this));
-              continue;
-            }
-          }
-
           break;
         }
       }
@@ -863,20 +785,18 @@ namespace schema
           this->SimMatLayerSet_OutsideLayer_ = x.SimMatLayerSet_OutsideLayer_;
           this->SimMatLayerSet_Layer_2_10_ = x.SimMatLayerSet_Layer_2_10_;
           this->T24ConsAssmNotes_ = x.T24ConsAssmNotes_;
-          this->T24CrrcAgedEmittance_ = x.T24CrrcAgedEmittance_;
-          this->T24CrrcAgedReflectance_ = x.T24CrrcAgedReflectance_;
-          this->T24CrrcAgedSRI_ = x.T24CrrcAgedSRI_;
-          this->T24CrrcInitialEmitance_ = x.T24CrrcInitialEmitance_;
-          this->T24CrrcInitialReflectance_ = x.T24CrrcInitialReflectance_;
-          this->T24CrrcInitialSRI_ = x.T24CrrcInitialSRI_;
-          this->T24CrrcProductID_ = x.T24CrrcProductID_;
+          this->T24CRRCAgedEmittance_ = x.T24CRRCAgedEmittance_;
+          this->T24CRRCAgedReflectance_ = x.T24CRRCAgedReflectance_;
+          this->T24CRRCAgedSRI_ = x.T24CRRCAgedSRI_;
+          this->T24CRRCInitialEmitance_ = x.T24CRRCInitialEmitance_;
+          this->T24CRRCInitialReflectance_ = x.T24CRRCInitialReflectance_;
+          this->T24CRRCInitialSRI_ = x.T24CRRCInitialSRI_;
+          this->T24CRRCProductID_ = x.T24CRRCProductID_;
           this->T24FieldAppliedCoating_ = x.T24FieldAppliedCoating_;
           this->T24RoofDensity_ = x.T24RoofDensity_;
           this->T24ConstructInsulOrient_ = x.T24ConstructInsulOrient_;
           this->T24SlabInsulThermResist_ = x.T24SlabInsulThermResist_;
           this->T24SlabType_ = x.T24SlabType_;
-          this->T24SolarReflectanceASTMCertification_ = x.T24SolarReflectanceASTMCertification_;
-          this->T24ThermalEmittanceASTMCertification_ = x.T24ThermalEmittanceASTMCertification_;
         }
 
         return *this;

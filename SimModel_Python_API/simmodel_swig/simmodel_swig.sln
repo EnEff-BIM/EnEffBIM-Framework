@@ -133,10 +133,6 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimFeatureElementSubtractio
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimFlowEnergyTransfer_ConvectiveHeater_Water", "SimFlowEnergyTransfer_ConvectiveHeater_Water\SimFlowEnergyTransfer_ConvectiveHeater_Water.vcxproj", "{7D26F802-08E8-450A-BEBD-99FB07A12905}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop", "SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop\SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop.vcxproj", "{E8FC8881-4D59-4642-8B71-7C81F424E1EC}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimFlowFitting_FlowElementProxy_SupplyProxy_AirLoop", "SimFlowFitting_FlowElementProxy_SupplyProxy_AirLoop\SimFlowFitting_FlowElementProxy_SupplyProxy_AirLoop.vcxproj", "{61B6DB8C-36B6-4E2A-ACC7-B776C91CB3C1}"
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimFlowFitting_Mixer_DemandProxyMixerWater", "SimFlowFitting_Mixer_DemandProxyMixerWater\SimFlowFitting_Mixer_DemandProxyMixerWater.vcxproj", "{B9783351-B090-4A25-96F3-74F02DE7A8EE}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimFlowFitting_Splitter_DemandProxySplitterWater", "SimFlowFitting_Splitter_DemandProxySplitterWater\SimFlowFitting_Splitter_DemandProxySplitterWater.vcxproj", "{60A0CEAE-95C8-4D40-951A-78EA19902AF2}"
@@ -260,8 +256,6 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimParameterizedProfileDef_ParameterizedProfile_Rectangle", "SimParameterizedProfileDef_ParameterizedProfile_Rectangle\SimParameterizedProfileDef_ParameterizedProfile_Rectangle.vcxproj", "{B7FBF617-74DD-4709-BE0E-8ED70D1F3C22}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimPerson_Person_Default", "SimPerson_Person_Default\SimPerson_Person_Default.vcxproj", "{F16D0FCC-2A9C-4BA2-905E-04C121E40FB9}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimPersonAndOrganization_PersonAndOrganization_Default", "SimPersonAndOrganization_PersonAndOrganization_Default\SimPersonAndOrganization_PersonAndOrganization_Default.vcxproj", "{FF77B587-0462-4EFA-BCCD-A8434FBAFE87}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimPlacement_Axis2Placement2D_Default", "SimPlacement_Axis2Placement2D_Default\SimPlacement_Axis2Placement2D_Default.vcxproj", "{DB508C2E-622B-4DFB-96D4-FA141B4C72B5}"
 EndProject
@@ -388,6 +382,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimDistributionPort_HotWaterFlowPort_Water_Out", "SimDistributionPort_HotWaterFlowPort_Water_Out\SimDistributionPort_HotWaterFlowPort_Water_Out.vcxproj", "{15A9425D-7329-41B5-978D-6AF31F2AC48C}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimDistributionPort_HotWaterFlowPort_Water_In", "SimDistributionPort_HotWaterFlowPort_Water_In\SimDistributionPort_HotWaterFlowPort_Water_In.vcxproj", "{9BE6D0A9-6831-4CFA-8B08-D837C8349991}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimDistributionPort_HotWaterFlowPort_Water_InOrOut", "SimDistributionPort_HotWaterFlowPort_Water_InOrOut\SimDistributionPort_HotWaterFlowPort_Water_InOrOut.vcxproj", "{66414386-BAEE-4F00-B9B0-C1C70882648B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -659,14 +655,6 @@ Global
 		{7D26F802-08E8-450A-BEBD-99FB07A12905}.Debug|Win32.Build.0 = Debug|Win32
 		{7D26F802-08E8-450A-BEBD-99FB07A12905}.Release|Win32.ActiveCfg = Release|Win32
 		{7D26F802-08E8-450A-BEBD-99FB07A12905}.Release|Win32.Build.0 = Release|Win32
-		{E8FC8881-4D59-4642-8B71-7C81F424E1EC}.Debug|Win32.ActiveCfg = Debug|Win32
-		{E8FC8881-4D59-4642-8B71-7C81F424E1EC}.Debug|Win32.Build.0 = Debug|Win32
-		{E8FC8881-4D59-4642-8B71-7C81F424E1EC}.Release|Win32.ActiveCfg = Release|Win32
-		{E8FC8881-4D59-4642-8B71-7C81F424E1EC}.Release|Win32.Build.0 = Release|Win32
-		{61B6DB8C-36B6-4E2A-ACC7-B776C91CB3C1}.Debug|Win32.ActiveCfg = Debug|Win32
-		{61B6DB8C-36B6-4E2A-ACC7-B776C91CB3C1}.Debug|Win32.Build.0 = Debug|Win32
-		{61B6DB8C-36B6-4E2A-ACC7-B776C91CB3C1}.Release|Win32.ActiveCfg = Release|Win32
-		{61B6DB8C-36B6-4E2A-ACC7-B776C91CB3C1}.Release|Win32.Build.0 = Release|Win32
 		{B9783351-B090-4A25-96F3-74F02DE7A8EE}.Debug|Win32.ActiveCfg = Debug|Win32
 		{B9783351-B090-4A25-96F3-74F02DE7A8EE}.Debug|Win32.Build.0 = Debug|Win32
 		{B9783351-B090-4A25-96F3-74F02DE7A8EE}.Release|Win32.ActiveCfg = Release|Win32
@@ -915,10 +903,6 @@ Global
 		{F16D0FCC-2A9C-4BA2-905E-04C121E40FB9}.Debug|Win32.Build.0 = Debug|Win32
 		{F16D0FCC-2A9C-4BA2-905E-04C121E40FB9}.Release|Win32.ActiveCfg = Release|Win32
 		{F16D0FCC-2A9C-4BA2-905E-04C121E40FB9}.Release|Win32.Build.0 = Release|Win32
-		{FF77B587-0462-4EFA-BCCD-A8434FBAFE87}.Debug|Win32.ActiveCfg = Debug|Win32
-		{FF77B587-0462-4EFA-BCCD-A8434FBAFE87}.Debug|Win32.Build.0 = Debug|Win32
-		{FF77B587-0462-4EFA-BCCD-A8434FBAFE87}.Release|Win32.ActiveCfg = Release|Win32
-		{FF77B587-0462-4EFA-BCCD-A8434FBAFE87}.Release|Win32.Build.0 = Release|Win32
 		{DB508C2E-622B-4DFB-96D4-FA141B4C72B5}.Debug|Win32.ActiveCfg = Debug|Win32
 		{DB508C2E-622B-4DFB-96D4-FA141B4C72B5}.Debug|Win32.Build.0 = Debug|Win32
 		{DB508C2E-622B-4DFB-96D4-FA141B4C72B5}.Release|Win32.ActiveCfg = Release|Win32
@@ -1171,6 +1155,10 @@ Global
 		{9BE6D0A9-6831-4CFA-8B08-D837C8349991}.Debug|Win32.Build.0 = Debug|Win32
 		{9BE6D0A9-6831-4CFA-8B08-D837C8349991}.Release|Win32.ActiveCfg = Release|Win32
 		{9BE6D0A9-6831-4CFA-8B08-D837C8349991}.Release|Win32.Build.0 = Release|Win32
+		{66414386-BAEE-4F00-B9B0-C1C70882648B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{66414386-BAEE-4F00-B9B0-C1C70882648B}.Debug|Win32.Build.0 = Debug|Win32
+		{66414386-BAEE-4F00-B9B0-C1C70882648B}.Release|Win32.ActiveCfg = Release|Win32
+		{66414386-BAEE-4F00-B9B0-C1C70882648B}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

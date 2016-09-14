@@ -51,34 +51,34 @@ namespace schema
       // SimGeomPoint_Point_CartesianPoint
       // 
 
-      const SimGeomPoint_Point_CartesianPoint::Coordinates_optional& SimGeomPoint_Point_CartesianPoint::
-      Coordinates () const
+      const SimGeomPoint_Point_CartesianPoint::Coordinates_MeasureValue_optional& SimGeomPoint_Point_CartesianPoint::
+      Coordinates_MeasureValue () const
       {
-        return this->Coordinates_;
+        return this->Coordinates_MeasureValue_;
       }
 
-      SimGeomPoint_Point_CartesianPoint::Coordinates_optional& SimGeomPoint_Point_CartesianPoint::
-      Coordinates ()
+      SimGeomPoint_Point_CartesianPoint::Coordinates_MeasureValue_optional& SimGeomPoint_Point_CartesianPoint::
+      Coordinates_MeasureValue ()
       {
-        return this->Coordinates_;
-      }
-
-      void SimGeomPoint_Point_CartesianPoint::
-      Coordinates (const Coordinates_type& x)
-      {
-        this->Coordinates_.set (x);
+        return this->Coordinates_MeasureValue_;
       }
 
       void SimGeomPoint_Point_CartesianPoint::
-      Coordinates (const Coordinates_optional& x)
+      Coordinates_MeasureValue (const Coordinates_MeasureValue_type& x)
       {
-        this->Coordinates_ = x;
+        this->Coordinates_MeasureValue_.set (x);
       }
 
       void SimGeomPoint_Point_CartesianPoint::
-      Coordinates (::std::auto_ptr< Coordinates_type > x)
+      Coordinates_MeasureValue (const Coordinates_MeasureValue_optional& x)
       {
-        this->Coordinates_.set (x);
+        this->Coordinates_MeasureValue_ = x;
+      }
+
+      void SimGeomPoint_Point_CartesianPoint::
+      Coordinates_MeasureValue (::std::auto_ptr< Coordinates_MeasureValue_type > x)
+      {
+        this->Coordinates_MeasureValue_.set (x);
       }
     }
   }
@@ -107,14 +107,14 @@ namespace schema
       SimGeomPoint_Point_CartesianPoint::
       SimGeomPoint_Point_CartesianPoint ()
       : ::schema::simxml::ResourcesGeometry::SimGeomPoint_Point (),
-        Coordinates_ (this)
+        Coordinates_MeasureValue_ (this)
       {
       }
 
       SimGeomPoint_Point_CartesianPoint::
       SimGeomPoint_Point_CartesianPoint (const RefId_type& RefId)
       : ::schema::simxml::ResourcesGeometry::SimGeomPoint_Point (RefId),
-        Coordinates_ (this)
+        Coordinates_MeasureValue_ (this)
       {
       }
 
@@ -123,7 +123,7 @@ namespace schema
                                          ::xml_schema::flags f,
                                          ::xml_schema::container* c)
       : ::schema::simxml::ResourcesGeometry::SimGeomPoint_Point (x, f, c),
-        Coordinates_ (x.Coordinates_, f, this)
+        Coordinates_MeasureValue_ (x.Coordinates_MeasureValue_, f, this)
       {
       }
 
@@ -132,7 +132,7 @@ namespace schema
                                          ::xml_schema::flags f,
                                          ::xml_schema::container* c)
       : ::schema::simxml::ResourcesGeometry::SimGeomPoint_Point (e, f | ::xml_schema::flags::base, c),
-        Coordinates_ (this)
+        Coordinates_MeasureValue_ (this)
       {
         if ((f & ::xml_schema::flags::base) == 0)
         {
@@ -153,16 +153,16 @@ namespace schema
           const ::xsd::cxx::xml::qualified_name< char > n (
             ::xsd::cxx::xml::dom::name< char > (i));
 
-          // Coordinates
+          // Coordinates_MeasureValue
           //
-          if (n.name () == "Coordinates" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/ResourcesGeometry")
+          if (n.name () == "Coordinates_MeasureValue" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/ResourcesGeometry")
           {
-            ::std::auto_ptr< Coordinates_type > r (
-              Coordinates_traits::create (i, f, this));
+            ::std::auto_ptr< Coordinates_MeasureValue_type > r (
+              Coordinates_MeasureValue_traits::create (i, f, this));
 
-            if (!this->Coordinates_)
+            if (!this->Coordinates_MeasureValue_)
             {
-              this->Coordinates_.set (r);
+              this->Coordinates_MeasureValue_.set (r);
               continue;
             }
           }
@@ -184,7 +184,7 @@ namespace schema
         if (this != &x)
         {
           static_cast< ::schema::simxml::ResourcesGeometry::SimGeomPoint_Point& > (*this) = x;
-          this->Coordinates_ = x.Coordinates_;
+          this->Coordinates_MeasureValue_ = x.Coordinates_MeasureValue_;
         }
 
         return *this;

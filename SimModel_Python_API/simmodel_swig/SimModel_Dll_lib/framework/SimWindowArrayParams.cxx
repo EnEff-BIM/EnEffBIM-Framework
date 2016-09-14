@@ -139,6 +139,30 @@ namespace schema
         this->WindowOpeningProfilePath_.set (x);
       }
 
+      const SimWindowArrayParams::IsPunchedWindowArray_optional& SimWindowArrayParams::
+      IsPunchedWindowArray () const
+      {
+        return this->IsPunchedWindowArray_;
+      }
+
+      SimWindowArrayParams::IsPunchedWindowArray_optional& SimWindowArrayParams::
+      IsPunchedWindowArray ()
+      {
+        return this->IsPunchedWindowArray_;
+      }
+
+      void SimWindowArrayParams::
+      IsPunchedWindowArray (const IsPunchedWindowArray_type& x)
+      {
+        this->IsPunchedWindowArray_.set (x);
+      }
+
+      void SimWindowArrayParams::
+      IsPunchedWindowArray (const IsPunchedWindowArray_optional& x)
+      {
+        this->IsPunchedWindowArray_ = x;
+      }
+
       const SimWindowArrayParams::ArrayLeftOffset_optional& SimWindowArrayParams::
       ArrayLeftOffset () const
       {
@@ -240,6 +264,7 @@ namespace schema
         WindowTypeDef_ (this),
         GlazingLayerSet_ (this),
         WindowOpeningProfilePath_ (this),
+        IsPunchedWindowArray_ (this),
         ArrayLeftOffset_ (this),
         ArrayRightOffset_ (this),
         ArrayWinWallRatio_ (this)
@@ -252,6 +277,7 @@ namespace schema
         WindowTypeDef_ (this),
         GlazingLayerSet_ (this),
         WindowOpeningProfilePath_ (this),
+        IsPunchedWindowArray_ (this),
         ArrayLeftOffset_ (this),
         ArrayRightOffset_ (this),
         ArrayWinWallRatio_ (this)
@@ -266,6 +292,7 @@ namespace schema
         WindowTypeDef_ (x.WindowTypeDef_, f, this),
         GlazingLayerSet_ (x.GlazingLayerSet_, f, this),
         WindowOpeningProfilePath_ (x.WindowOpeningProfilePath_, f, this),
+        IsPunchedWindowArray_ (x.IsPunchedWindowArray_, f, this),
         ArrayLeftOffset_ (x.ArrayLeftOffset_, f, this),
         ArrayRightOffset_ (x.ArrayRightOffset_, f, this),
         ArrayWinWallRatio_ (x.ArrayWinWallRatio_, f, this)
@@ -280,6 +307,7 @@ namespace schema
         WindowTypeDef_ (this),
         GlazingLayerSet_ (this),
         WindowOpeningProfilePath_ (this),
+        IsPunchedWindowArray_ (this),
         ArrayLeftOffset_ (this),
         ArrayRightOffset_ (this),
         ArrayWinWallRatio_ (this)
@@ -345,6 +373,17 @@ namespace schema
             }
           }
 
+          // IsPunchedWindowArray
+          //
+          if (n.name () == "IsPunchedWindowArray" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/ResourcesGeneral")
+          {
+            if (!this->IsPunchedWindowArray_)
+            {
+              this->IsPunchedWindowArray_.set (IsPunchedWindowArray_traits::create (i, f, this));
+              continue;
+            }
+          }
+
           // ArrayLeftOffset
           //
           if (n.name () == "ArrayLeftOffset" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/ResourcesGeneral")
@@ -398,6 +437,7 @@ namespace schema
           this->WindowTypeDef_ = x.WindowTypeDef_;
           this->GlazingLayerSet_ = x.GlazingLayerSet_;
           this->WindowOpeningProfilePath_ = x.WindowOpeningProfilePath_;
+          this->IsPunchedWindowArray_ = x.IsPunchedWindowArray_;
           this->ArrayLeftOffset_ = x.ArrayLeftOffset_;
           this->ArrayRightOffset_ = x.ArrayRightOffset_;
           this->ArrayWinWallRatio_ = x.ArrayWinWallRatio_;

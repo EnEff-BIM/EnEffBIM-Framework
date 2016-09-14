@@ -25,6 +25,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="SimWall_Wall_ExteriorAboveGrade.i" />
+    <CustomBuild Include="SimWall_Wall_ExteriorAboveGrade.i" />
   </ItemGroup>
 </Project>

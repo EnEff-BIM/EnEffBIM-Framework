@@ -50,7 +50,7 @@
 #include <xsd/cxx/config.hxx>
 
 #if (XSD_INT_VERSION != 4000000L)
-#error XSD runtime version mismatch
+//#error XSD runtime version mismatch
 #endif
 
 #include <xsd/cxx/pre.hxx>
@@ -337,7 +337,7 @@ namespace schema
         // SimTimeSeriesSched_Sched_WeekName_1_53
         //
         typedef ::xml_schema::idrefs SimTimeSeriesSched_Sched_WeekName_1_53_type;
-        typedef ::xsd::cxx::tree::optional< SimTimeSeriesSched_Sched_WeekName_1_53_type > SimTimeSeriesSched_Sched_WeekName_1_53_optional;
+        typedef ::xsd::cxx::tree::optional< SimTimeSeriesSched_Sched_WeekName_1_53_type, false > SimTimeSeriesSched_Sched_WeekName_1_53_optional;
         typedef ::xsd::cxx::tree::traits< SimTimeSeriesSched_Sched_WeekName_1_53_type, char > SimTimeSeriesSched_Sched_WeekName_1_53_traits;
 
         const SimTimeSeriesSched_Sched_WeekName_1_53_optional&
@@ -358,7 +358,7 @@ namespace schema
         // SimTimeSeriesSched_StartMonth_1_53
         //
         typedef ::schema::simxml::SimModelCore::integerList SimTimeSeriesSched_StartMonth_1_53_type;
-        typedef ::xsd::cxx::tree::optional< SimTimeSeriesSched_StartMonth_1_53_type > SimTimeSeriesSched_StartMonth_1_53_optional;
+        typedef ::xsd::cxx::tree::optional< SimTimeSeriesSched_StartMonth_1_53_type, false > SimTimeSeriesSched_StartMonth_1_53_optional;
         typedef ::xsd::cxx::tree::traits< SimTimeSeriesSched_StartMonth_1_53_type, char > SimTimeSeriesSched_StartMonth_1_53_traits;
 
         const SimTimeSeriesSched_StartMonth_1_53_optional&
@@ -379,7 +379,7 @@ namespace schema
         // SimTimeSeriesSched_StartDay_1_53
         //
         typedef ::schema::simxml::SimModelCore::integerList SimTimeSeriesSched_StartDay_1_53_type;
-        typedef ::xsd::cxx::tree::optional< SimTimeSeriesSched_StartDay_1_53_type > SimTimeSeriesSched_StartDay_1_53_optional;
+        typedef ::xsd::cxx::tree::optional< SimTimeSeriesSched_StartDay_1_53_type, false > SimTimeSeriesSched_StartDay_1_53_optional;
         typedef ::xsd::cxx::tree::traits< SimTimeSeriesSched_StartDay_1_53_type, char > SimTimeSeriesSched_StartDay_1_53_traits;
 
         const SimTimeSeriesSched_StartDay_1_53_optional&
@@ -400,7 +400,7 @@ namespace schema
         // SimTimeSeriesSched_EndMonth_1_53
         //
         typedef ::schema::simxml::SimModelCore::integerList SimTimeSeriesSched_EndMonth_1_53_type;
-        typedef ::xsd::cxx::tree::optional< SimTimeSeriesSched_EndMonth_1_53_type > SimTimeSeriesSched_EndMonth_1_53_optional;
+        typedef ::xsd::cxx::tree::optional< SimTimeSeriesSched_EndMonth_1_53_type, false > SimTimeSeriesSched_EndMonth_1_53_optional;
         typedef ::xsd::cxx::tree::traits< SimTimeSeriesSched_EndMonth_1_53_type, char > SimTimeSeriesSched_EndMonth_1_53_traits;
 
         const SimTimeSeriesSched_EndMonth_1_53_optional&
@@ -421,7 +421,7 @@ namespace schema
         // SimTimeSeriesSched_EndDay_1_53
         //
         typedef ::schema::simxml::SimModelCore::integerList SimTimeSeriesSched_EndDay_1_53_type;
-        typedef ::xsd::cxx::tree::optional< SimTimeSeriesSched_EndDay_1_53_type > SimTimeSeriesSched_EndDay_1_53_optional;
+        typedef ::xsd::cxx::tree::optional< SimTimeSeriesSched_EndDay_1_53_type, false > SimTimeSeriesSched_EndDay_1_53_optional;
         typedef ::xsd::cxx::tree::traits< SimTimeSeriesSched_EndDay_1_53_type, char > SimTimeSeriesSched_EndDay_1_53_traits;
 
         const SimTimeSeriesSched_EndDay_1_53_optional&

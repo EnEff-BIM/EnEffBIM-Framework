@@ -25,6 +25,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="SimNode_DigitalControl_HWLoop_DigitalSignal_In.i" />
+    <CustomBuild Include="SimNode_DigitalControl_HWLoop_DigitalSignal_In.i" />
   </ItemGroup>
 </Project>

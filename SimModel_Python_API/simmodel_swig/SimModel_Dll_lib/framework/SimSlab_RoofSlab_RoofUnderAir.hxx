@@ -50,7 +50,7 @@
 #include <xsd/cxx/config.hxx>
 
 #if (XSD_INT_VERSION != 4000000L)
-#error XSD runtime version mismatch
+//#error XSD runtime version mismatch
 #endif
 
 #include <xsd/cxx/pre.hxx>
@@ -628,42 +628,6 @@ namespace schema
         void
         T24FieldAppliedCoating (const T24FieldAppliedCoating_optional& x);
 
-        // T24RoofAgedSolarReflectance
-        //
-        typedef ::xml_schema::double_ T24RoofAgedSolarReflectance_type;
-        typedef ::xsd::cxx::tree::optional< T24RoofAgedSolarReflectance_type > T24RoofAgedSolarReflectance_optional;
-        typedef ::xsd::cxx::tree::traits< T24RoofAgedSolarReflectance_type, char, ::xsd::cxx::tree::schema_type::double_ > T24RoofAgedSolarReflectance_traits;
-
-        const T24RoofAgedSolarReflectance_optional&
-        T24RoofAgedSolarReflectance () const;
-
-        T24RoofAgedSolarReflectance_optional&
-        T24RoofAgedSolarReflectance ();
-
-        void
-        T24RoofAgedSolarReflectance (const T24RoofAgedSolarReflectance_type& x);
-
-        void
-        T24RoofAgedSolarReflectance (const T24RoofAgedSolarReflectance_optional& x);
-
-        // T24RoofAgedThermalEmittance
-        //
-        typedef ::xml_schema::double_ T24RoofAgedThermalEmittance_type;
-        typedef ::xsd::cxx::tree::optional< T24RoofAgedThermalEmittance_type > T24RoofAgedThermalEmittance_optional;
-        typedef ::xsd::cxx::tree::traits< T24RoofAgedThermalEmittance_type, char, ::xsd::cxx::tree::schema_type::double_ > T24RoofAgedThermalEmittance_traits;
-
-        const T24RoofAgedThermalEmittance_optional&
-        T24RoofAgedThermalEmittance () const;
-
-        T24RoofAgedThermalEmittance_optional&
-        T24RoofAgedThermalEmittance ();
-
-        void
-        T24RoofAgedThermalEmittance (const T24RoofAgedThermalEmittance_type& x);
-
-        void
-        T24RoofAgedThermalEmittance (const T24RoofAgedThermalEmittance_optional& x);
-
         // T24ConstructStatus3
         //
         typedef ::xml_schema::string T24ConstructStatus3_type;
@@ -736,8 +700,6 @@ namespace schema
         T24CRRCInitialSRI_optional T24CRRCInitialSRI_;
         T24CRRCProductID_optional T24CRRCProductID_;
         T24FieldAppliedCoating_optional T24FieldAppliedCoating_;
-        T24RoofAgedSolarReflectance_optional T24RoofAgedSolarReflectance_;
-        T24RoofAgedThermalEmittance_optional T24RoofAgedThermalEmittance_;
         T24ConstructStatus3_optional T24ConstructStatus3_;
       };
     }

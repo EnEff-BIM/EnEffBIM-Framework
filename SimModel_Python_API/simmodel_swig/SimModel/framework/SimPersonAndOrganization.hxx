@@ -257,6 +257,17 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
+      class PersonsRolesInOrganization;
+    }
+  }
+}
+
+namespace schema
+{
+  namespace simxml
+  {
+    namespace ResourcesGeneral
+    {
       class SimPersonAndOrganization: public ::schema::simxml::SimModelCore::SimActorDefinition
       {
         public:
@@ -302,26 +313,47 @@ namespace schema
         void
         TheOrganization (::std::auto_ptr< TheOrganization_type > p);
 
-        // Roles
+        // ActorPersonAndOrganization
         //
-        typedef ::xml_schema::idrefs Roles_type;
-        typedef ::xsd::cxx::tree::optional< Roles_type > Roles_optional;
-        typedef ::xsd::cxx::tree::traits< Roles_type, char > Roles_traits;
+        typedef ::xml_schema::idref ActorPersonAndOrganization_type;
+        typedef ::xsd::cxx::tree::optional< ActorPersonAndOrganization_type, false > ActorPersonAndOrganization_optional;
+        typedef ::xsd::cxx::tree::traits< ActorPersonAndOrganization_type, char > ActorPersonAndOrganization_traits;
 
-        const Roles_optional&
-        Roles () const;
+        const ActorPersonAndOrganization_optional&
+        ActorPersonAndOrganization () const;
 
-        Roles_optional&
-        Roles ();
-
-        void
-        Roles (const Roles_type& x);
+        ActorPersonAndOrganization_optional&
+        ActorPersonAndOrganization ();
 
         void
-        Roles (const Roles_optional& x);
+        ActorPersonAndOrganization (const ActorPersonAndOrganization_type& x);
 
         void
-        Roles (::std::auto_ptr< Roles_type > p);
+        ActorPersonAndOrganization (const ActorPersonAndOrganization_optional& x);
+
+        void
+        ActorPersonAndOrganization (::std::auto_ptr< ActorPersonAndOrganization_type > p);
+
+        // PersonsRolesInOrganization
+        //
+        typedef ::schema::simxml::ResourcesGeneral::PersonsRolesInOrganization PersonsRolesInOrganization_type;
+        typedef ::xsd::cxx::tree::optional< PersonsRolesInOrganization_type > PersonsRolesInOrganization_optional;
+        typedef ::xsd::cxx::tree::traits< PersonsRolesInOrganization_type, char > PersonsRolesInOrganization_traits;
+
+        const PersonsRolesInOrganization_optional&
+        PersonsRolesInOrganization () const;
+
+        PersonsRolesInOrganization_optional&
+        PersonsRolesInOrganization ();
+
+        void
+        PersonsRolesInOrganization (const PersonsRolesInOrganization_type& x);
+
+        void
+        PersonsRolesInOrganization (const PersonsRolesInOrganization_optional& x);
+
+        void
+        PersonsRolesInOrganization (::std::auto_ptr< PersonsRolesInOrganization_type > p);
 
         // Constructors.
         //
@@ -357,7 +389,8 @@ namespace schema
         protected:
         ThePerson_optional ThePerson_;
         TheOrganization_optional TheOrganization_;
-        Roles_optional Roles_;
+        ActorPersonAndOrganization_optional ActorPersonAndOrganization_;
+        PersonsRolesInOrganization_optional PersonsRolesInOrganization_;
       };
     }
   }

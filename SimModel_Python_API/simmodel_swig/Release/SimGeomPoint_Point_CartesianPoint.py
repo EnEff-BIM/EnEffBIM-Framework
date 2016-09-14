@@ -159,8 +159,8 @@ class SimGeomPoint_Point_CartesianPoint(SimGeomPoint_Point):
     __getattr__ = lambda self, name: _swig_getattr(self, SimGeomPoint_Point_CartesianPoint, name)
     __repr__ = _swig_repr
 
-    def Coordinates(self, *args):
-        return _SimGeomPoint_Point_CartesianPoint.SimGeomPoint_Point_CartesianPoint_Coordinates(self, *args)
+    def Coordinates_MeasureValue(self, *args):
+        return _SimGeomPoint_Point_CartesianPoint.SimGeomPoint_Point_CartesianPoint_Coordinates_MeasureValue(self, *args)
 
     def __init__(self, *args):
         this = _SimGeomPoint_Point_CartesianPoint.new_SimGeomPoint_Point_CartesianPoint(*args)

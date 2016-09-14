@@ -258,6 +258,60 @@ namespace schema
       {
         this->ChildSpaceBoundaries_.set (x);
       }
+
+      const SimSpaceBoundary::GrossSurfaceArea_optional& SimSpaceBoundary::
+      GrossSurfaceArea () const
+      {
+        return this->GrossSurfaceArea_;
+      }
+
+      SimSpaceBoundary::GrossSurfaceArea_optional& SimSpaceBoundary::
+      GrossSurfaceArea ()
+      {
+        return this->GrossSurfaceArea_;
+      }
+
+      void SimSpaceBoundary::
+      GrossSurfaceArea (const GrossSurfaceArea_type& x)
+      {
+        this->GrossSurfaceArea_.set (x);
+      }
+
+      void SimSpaceBoundary::
+      GrossSurfaceArea (const GrossSurfaceArea_optional& x)
+      {
+        this->GrossSurfaceArea_ = x;
+      }
+
+      const SimSpaceBoundary::SurfaceNormal_optional& SimSpaceBoundary::
+      SurfaceNormal () const
+      {
+        return this->SurfaceNormal_;
+      }
+
+      SimSpaceBoundary::SurfaceNormal_optional& SimSpaceBoundary::
+      SurfaceNormal ()
+      {
+        return this->SurfaceNormal_;
+      }
+
+      void SimSpaceBoundary::
+      SurfaceNormal (const SurfaceNormal_type& x)
+      {
+        this->SurfaceNormal_.set (x);
+      }
+
+      void SimSpaceBoundary::
+      SurfaceNormal (const SurfaceNormal_optional& x)
+      {
+        this->SurfaceNormal_ = x;
+      }
+
+      void SimSpaceBoundary::
+      SurfaceNormal (::std::auto_ptr< SurfaceNormal_type > x)
+      {
+        this->SurfaceNormal_.set (x);
+      }
     }
   }
 }
@@ -291,7 +345,9 @@ namespace schema
         PhysicalOrVirtualBoundary_ (this),
         InternalOrExternalBoundary_ (this),
         OthersideSpaceBoundary_ (this),
-        ChildSpaceBoundaries_ (this)
+        ChildSpaceBoundaries_ (this),
+        GrossSurfaceArea_ (this),
+        SurfaceNormal_ (this)
       {
       }
 
@@ -304,7 +360,9 @@ namespace schema
         PhysicalOrVirtualBoundary_ (this),
         InternalOrExternalBoundary_ (this),
         OthersideSpaceBoundary_ (this),
-        ChildSpaceBoundaries_ (this)
+        ChildSpaceBoundaries_ (this),
+        GrossSurfaceArea_ (this),
+        SurfaceNormal_ (this)
       {
       }
 
@@ -319,7 +377,9 @@ namespace schema
         PhysicalOrVirtualBoundary_ (x.PhysicalOrVirtualBoundary_, f, this),
         InternalOrExternalBoundary_ (x.InternalOrExternalBoundary_, f, this),
         OthersideSpaceBoundary_ (x.OthersideSpaceBoundary_, f, this),
-        ChildSpaceBoundaries_ (x.ChildSpaceBoundaries_, f, this)
+        ChildSpaceBoundaries_ (x.ChildSpaceBoundaries_, f, this),
+        GrossSurfaceArea_ (x.GrossSurfaceArea_, f, this),
+        SurfaceNormal_ (x.SurfaceNormal_, f, this)
       {
       }
 
@@ -334,7 +394,9 @@ namespace schema
         PhysicalOrVirtualBoundary_ (this),
         InternalOrExternalBoundary_ (this),
         OthersideSpaceBoundary_ (this),
-        ChildSpaceBoundaries_ (this)
+        ChildSpaceBoundaries_ (this),
+        GrossSurfaceArea_ (this),
+        SurfaceNormal_ (this)
       {
         if ((f & ::xml_schema::flags::base) == 0)
         {
@@ -453,6 +515,31 @@ namespace schema
             }
           }
 
+          // GrossSurfaceArea
+          //
+          if (n.name () == "GrossSurfaceArea" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/ResourcesGeneral")
+          {
+            if (!this->GrossSurfaceArea_)
+            {
+              this->GrossSurfaceArea_.set (GrossSurfaceArea_traits::create (i, f, this));
+              continue;
+            }
+          }
+
+          // SurfaceNormal
+          //
+          if (n.name () == "SurfaceNormal" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/ResourcesGeneral")
+          {
+            ::std::auto_ptr< SurfaceNormal_type > r (
+              SurfaceNormal_traits::create (i, f, this));
+
+            if (!this->SurfaceNormal_)
+            {
+              this->SurfaceNormal_.set (r);
+              continue;
+            }
+          }
+
           break;
         }
       }
@@ -477,6 +564,8 @@ namespace schema
           this->InternalOrExternalBoundary_ = x.InternalOrExternalBoundary_;
           this->OthersideSpaceBoundary_ = x.OthersideSpaceBoundary_;
           this->ChildSpaceBoundaries_ = x.ChildSpaceBoundaries_;
+          this->GrossSurfaceArea_ = x.GrossSurfaceArea_;
+          this->SurfaceNormal_ = x.SurfaceNormal_;
         }
 
         return *this;

@@ -344,27 +344,6 @@ namespace schema
         void
         SimFlowPlant_AvailSchedName (::std::auto_ptr< SimFlowPlant_AvailSchedName_type > p);
 
-        // SimFlowPlant_PerfParamsName
-        //
-        typedef ::xml_schema::idref SimFlowPlant_PerfParamsName_type;
-        typedef ::xsd::cxx::tree::optional< SimFlowPlant_PerfParamsName_type > SimFlowPlant_PerfParamsName_optional;
-        typedef ::xsd::cxx::tree::traits< SimFlowPlant_PerfParamsName_type, char > SimFlowPlant_PerfParamsName_traits;
-
-        const SimFlowPlant_PerfParamsName_optional&
-        SimFlowPlant_PerfParamsName () const;
-
-        SimFlowPlant_PerfParamsName_optional&
-        SimFlowPlant_PerfParamsName ();
-
-        void
-        SimFlowPlant_PerfParamsName (const SimFlowPlant_PerfParamsName_type& x);
-
-        void
-        SimFlowPlant_PerfParamsName (const SimFlowPlant_PerfParamsName_optional& x);
-
-        void
-        SimFlowPlant_PerfParamsName (::std::auto_ptr< SimFlowPlant_PerfParamsName_type > p);
-
         // SimFlowPlant_ZoneName
         //
         typedef ::xml_schema::idref SimFlowPlant_ZoneName_type;
@@ -385,6 +364,27 @@ namespace schema
 
         void
         SimFlowPlant_ZoneName (::std::auto_ptr< SimFlowPlant_ZoneName_type > p);
+
+        // SimFlowPlant_PerfParamsName
+        //
+        typedef ::xml_schema::idref SimFlowPlant_PerfParamsName_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_PerfParamsName_type > SimFlowPlant_PerfParamsName_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_PerfParamsName_type, char > SimFlowPlant_PerfParamsName_traits;
+
+        const SimFlowPlant_PerfParamsName_optional&
+        SimFlowPlant_PerfParamsName () const;
+
+        SimFlowPlant_PerfParamsName_optional&
+        SimFlowPlant_PerfParamsName ();
+
+        void
+        SimFlowPlant_PerfParamsName (const SimFlowPlant_PerfParamsName_type& x);
+
+        void
+        SimFlowPlant_PerfParamsName (const SimFlowPlant_PerfParamsName_optional& x);
+
+        void
+        SimFlowPlant_PerfParamsName (::std::auto_ptr< SimFlowPlant_PerfParamsName_type > p);
 
         // SimFlowPlant_CoolingWaterInletNodeName
         //
@@ -995,8 +995,8 @@ namespace schema
         SimFlowPlant_AirInNodeName_optional SimFlowPlant_AirInNodeName_;
         SimFlowPlant_AirOutNodeName_optional SimFlowPlant_AirOutNodeName_;
         SimFlowPlant_AvailSchedName_optional SimFlowPlant_AvailSchedName_;
-        SimFlowPlant_PerfParamsName_optional SimFlowPlant_PerfParamsName_;
         SimFlowPlant_ZoneName_optional SimFlowPlant_ZoneName_;
+        SimFlowPlant_PerfParamsName_optional SimFlowPlant_PerfParamsName_;
         SimFlowPlant_CoolingWaterInletNodeName_optional SimFlowPlant_CoolingWaterInletNodeName_;
         SimFlowPlant_CoolingWaterOutletNodeName_optional SimFlowPlant_CoolingWaterOutletNodeName_;
         SimFlowPlant_GenFuelSupplyName_optional SimFlowPlant_GenFuelSupplyName_;

@@ -343,76 +343,76 @@ namespace schema
         this->RoofIrrigation_IrrigationMaxSaturatThreshold_ = x;
       }
 
-      const SimBuilding_Building::AboveGradeStoryCountAltered_optional& SimBuilding_Building::
-      AboveGradeStoryCountAltered () const
+      const SimBuilding_Building::T24AboveGradeStoryCountAltered_optional& SimBuilding_Building::
+      T24AboveGradeStoryCountAltered () const
       {
-        return this->AboveGradeStoryCountAltered_;
+        return this->T24AboveGradeStoryCountAltered_;
       }
 
-      SimBuilding_Building::AboveGradeStoryCountAltered_optional& SimBuilding_Building::
-      AboveGradeStoryCountAltered ()
+      SimBuilding_Building::T24AboveGradeStoryCountAltered_optional& SimBuilding_Building::
+      T24AboveGradeStoryCountAltered ()
       {
-        return this->AboveGradeStoryCountAltered_;
-      }
-
-      void SimBuilding_Building::
-      AboveGradeStoryCountAltered (const AboveGradeStoryCountAltered_type& x)
-      {
-        this->AboveGradeStoryCountAltered_.set (x);
+        return this->T24AboveGradeStoryCountAltered_;
       }
 
       void SimBuilding_Building::
-      AboveGradeStoryCountAltered (const AboveGradeStoryCountAltered_optional& x)
+      T24AboveGradeStoryCountAltered (const T24AboveGradeStoryCountAltered_type& x)
       {
-        this->AboveGradeStoryCountAltered_ = x;
-      }
-
-      const SimBuilding_Building::AboveGradeStoryCountExists_optional& SimBuilding_Building::
-      AboveGradeStoryCountExists () const
-      {
-        return this->AboveGradeStoryCountExists_;
-      }
-
-      SimBuilding_Building::AboveGradeStoryCountExists_optional& SimBuilding_Building::
-      AboveGradeStoryCountExists ()
-      {
-        return this->AboveGradeStoryCountExists_;
+        this->T24AboveGradeStoryCountAltered_.set (x);
       }
 
       void SimBuilding_Building::
-      AboveGradeStoryCountExists (const AboveGradeStoryCountExists_type& x)
+      T24AboveGradeStoryCountAltered (const T24AboveGradeStoryCountAltered_optional& x)
       {
-        this->AboveGradeStoryCountExists_.set (x);
+        this->T24AboveGradeStoryCountAltered_ = x;
+      }
+
+      const SimBuilding_Building::T24AboveGradeStoryCountExists_optional& SimBuilding_Building::
+      T24AboveGradeStoryCountExists () const
+      {
+        return this->T24AboveGradeStoryCountExists_;
+      }
+
+      SimBuilding_Building::T24AboveGradeStoryCountExists_optional& SimBuilding_Building::
+      T24AboveGradeStoryCountExists ()
+      {
+        return this->T24AboveGradeStoryCountExists_;
       }
 
       void SimBuilding_Building::
-      AboveGradeStoryCountExists (const AboveGradeStoryCountExists_optional& x)
+      T24AboveGradeStoryCountExists (const T24AboveGradeStoryCountExists_type& x)
       {
-        this->AboveGradeStoryCountExists_ = x;
-      }
-
-      const SimBuilding_Building::AboveGradeStoryCountNew_optional& SimBuilding_Building::
-      AboveGradeStoryCountNew () const
-      {
-        return this->AboveGradeStoryCountNew_;
-      }
-
-      SimBuilding_Building::AboveGradeStoryCountNew_optional& SimBuilding_Building::
-      AboveGradeStoryCountNew ()
-      {
-        return this->AboveGradeStoryCountNew_;
+        this->T24AboveGradeStoryCountExists_.set (x);
       }
 
       void SimBuilding_Building::
-      AboveGradeStoryCountNew (const AboveGradeStoryCountNew_type& x)
+      T24AboveGradeStoryCountExists (const T24AboveGradeStoryCountExists_optional& x)
       {
-        this->AboveGradeStoryCountNew_.set (x);
+        this->T24AboveGradeStoryCountExists_ = x;
+      }
+
+      const SimBuilding_Building::T24AboveGradeStoryCountNew_optional& SimBuilding_Building::
+      T24AboveGradeStoryCountNew () const
+      {
+        return this->T24AboveGradeStoryCountNew_;
+      }
+
+      SimBuilding_Building::T24AboveGradeStoryCountNew_optional& SimBuilding_Building::
+      T24AboveGradeStoryCountNew ()
+      {
+        return this->T24AboveGradeStoryCountNew_;
       }
 
       void SimBuilding_Building::
-      AboveGradeStoryCountNew (const AboveGradeStoryCountNew_optional& x)
+      T24AboveGradeStoryCountNew (const T24AboveGradeStoryCountNew_type& x)
       {
-        this->AboveGradeStoryCountNew_ = x;
+        this->T24AboveGradeStoryCountNew_.set (x);
+      }
+
+      void SimBuilding_Building::
+      T24AboveGradeStoryCountNew (const T24AboveGradeStoryCountNew_optional& x)
+      {
+        this->T24AboveGradeStoryCountNew_ = x;
       }
 
       const SimBuilding_Building::T24CoilCoolingCapacity_optional& SimBuilding_Building::
@@ -493,100 +493,100 @@ namespace schema
         this->T24FunctionClassificationMethod_.set (x);
       }
 
-      const SimBuilding_Building::HighRiseResidentialLivingUnitCount_optional& SimBuilding_Building::
-      HighRiseResidentialLivingUnitCount () const
+      const SimBuilding_Building::T24HighRiseResidentialLivingUnitCount_optional& SimBuilding_Building::
+      T24HighRiseResidentialLivingUnitCount () const
       {
-        return this->HighRiseResidentialLivingUnitCount_;
+        return this->T24HighRiseResidentialLivingUnitCount_;
       }
 
-      SimBuilding_Building::HighRiseResidentialLivingUnitCount_optional& SimBuilding_Building::
-      HighRiseResidentialLivingUnitCount ()
+      SimBuilding_Building::T24HighRiseResidentialLivingUnitCount_optional& SimBuilding_Building::
+      T24HighRiseResidentialLivingUnitCount ()
       {
-        return this->HighRiseResidentialLivingUnitCount_;
-      }
-
-      void SimBuilding_Building::
-      HighRiseResidentialLivingUnitCount (const HighRiseResidentialLivingUnitCount_type& x)
-      {
-        this->HighRiseResidentialLivingUnitCount_.set (x);
+        return this->T24HighRiseResidentialLivingUnitCount_;
       }
 
       void SimBuilding_Building::
-      HighRiseResidentialLivingUnitCount (const HighRiseResidentialLivingUnitCount_optional& x)
+      T24HighRiseResidentialLivingUnitCount (const T24HighRiseResidentialLivingUnitCount_type& x)
       {
-        this->HighRiseResidentialLivingUnitCount_ = x;
-      }
-
-      const SimBuilding_Building::LivingUnitCountAltered_optional& SimBuilding_Building::
-      LivingUnitCountAltered () const
-      {
-        return this->LivingUnitCountAltered_;
-      }
-
-      SimBuilding_Building::LivingUnitCountAltered_optional& SimBuilding_Building::
-      LivingUnitCountAltered ()
-      {
-        return this->LivingUnitCountAltered_;
+        this->T24HighRiseResidentialLivingUnitCount_.set (x);
       }
 
       void SimBuilding_Building::
-      LivingUnitCountAltered (const LivingUnitCountAltered_type& x)
+      T24HighRiseResidentialLivingUnitCount (const T24HighRiseResidentialLivingUnitCount_optional& x)
       {
-        this->LivingUnitCountAltered_.set (x);
+        this->T24HighRiseResidentialLivingUnitCount_ = x;
+      }
+
+      const SimBuilding_Building::T24LivingUnitCountAltered_optional& SimBuilding_Building::
+      T24LivingUnitCountAltered () const
+      {
+        return this->T24LivingUnitCountAltered_;
+      }
+
+      SimBuilding_Building::T24LivingUnitCountAltered_optional& SimBuilding_Building::
+      T24LivingUnitCountAltered ()
+      {
+        return this->T24LivingUnitCountAltered_;
       }
 
       void SimBuilding_Building::
-      LivingUnitCountAltered (const LivingUnitCountAltered_optional& x)
+      T24LivingUnitCountAltered (const T24LivingUnitCountAltered_type& x)
       {
-        this->LivingUnitCountAltered_ = x;
-      }
-
-      const SimBuilding_Building::LivingUnitCountExisting_optional& SimBuilding_Building::
-      LivingUnitCountExisting () const
-      {
-        return this->LivingUnitCountExisting_;
-      }
-
-      SimBuilding_Building::LivingUnitCountExisting_optional& SimBuilding_Building::
-      LivingUnitCountExisting ()
-      {
-        return this->LivingUnitCountExisting_;
+        this->T24LivingUnitCountAltered_.set (x);
       }
 
       void SimBuilding_Building::
-      LivingUnitCountExisting (const LivingUnitCountExisting_type& x)
+      T24LivingUnitCountAltered (const T24LivingUnitCountAltered_optional& x)
       {
-        this->LivingUnitCountExisting_.set (x);
+        this->T24LivingUnitCountAltered_ = x;
+      }
+
+      const SimBuilding_Building::T24LivingUnitCountExisting_optional& SimBuilding_Building::
+      T24LivingUnitCountExisting () const
+      {
+        return this->T24LivingUnitCountExisting_;
+      }
+
+      SimBuilding_Building::T24LivingUnitCountExisting_optional& SimBuilding_Building::
+      T24LivingUnitCountExisting ()
+      {
+        return this->T24LivingUnitCountExisting_;
       }
 
       void SimBuilding_Building::
-      LivingUnitCountExisting (const LivingUnitCountExisting_optional& x)
+      T24LivingUnitCountExisting (const T24LivingUnitCountExisting_type& x)
       {
-        this->LivingUnitCountExisting_ = x;
-      }
-
-      const SimBuilding_Building::LivingUnitCountNew_optional& SimBuilding_Building::
-      LivingUnitCountNew () const
-      {
-        return this->LivingUnitCountNew_;
-      }
-
-      SimBuilding_Building::LivingUnitCountNew_optional& SimBuilding_Building::
-      LivingUnitCountNew ()
-      {
-        return this->LivingUnitCountNew_;
+        this->T24LivingUnitCountExisting_.set (x);
       }
 
       void SimBuilding_Building::
-      LivingUnitCountNew (const LivingUnitCountNew_type& x)
+      T24LivingUnitCountExisting (const T24LivingUnitCountExisting_optional& x)
       {
-        this->LivingUnitCountNew_.set (x);
+        this->T24LivingUnitCountExisting_ = x;
+      }
+
+      const SimBuilding_Building::T24LivingUnitCountNew_optional& SimBuilding_Building::
+      T24LivingUnitCountNew () const
+      {
+        return this->T24LivingUnitCountNew_;
+      }
+
+      SimBuilding_Building::T24LivingUnitCountNew_optional& SimBuilding_Building::
+      T24LivingUnitCountNew ()
+      {
+        return this->T24LivingUnitCountNew_;
       }
 
       void SimBuilding_Building::
-      LivingUnitCountNew (const LivingUnitCountNew_optional& x)
+      T24LivingUnitCountNew (const T24LivingUnitCountNew_type& x)
       {
-        this->LivingUnitCountNew_ = x;
+        this->T24LivingUnitCountNew_.set (x);
+      }
+
+      void SimBuilding_Building::
+      T24LivingUnitCountNew (const T24LivingUnitCountNew_optional& x)
+      {
+        this->T24LivingUnitCountNew_ = x;
       }
 
       const SimBuilding_Building::T24PlantCoolingCapacity_optional& SimBuilding_Building::
@@ -637,100 +637,100 @@ namespace schema
         this->T24PlantHeatingCapacity_ = x;
       }
 
-      const SimBuilding_Building::RelocatablePublicSchoolBuilding_optional& SimBuilding_Building::
-      RelocatablePublicSchoolBuilding () const
+      const SimBuilding_Building::T24RelocatablePublicSchoolBuilding_optional& SimBuilding_Building::
+      T24RelocatablePublicSchoolBuilding () const
       {
-        return this->RelocatablePublicSchoolBuilding_;
+        return this->T24RelocatablePublicSchoolBuilding_;
       }
 
-      SimBuilding_Building::RelocatablePublicSchoolBuilding_optional& SimBuilding_Building::
-      RelocatablePublicSchoolBuilding ()
+      SimBuilding_Building::T24RelocatablePublicSchoolBuilding_optional& SimBuilding_Building::
+      T24RelocatablePublicSchoolBuilding ()
       {
-        return this->RelocatablePublicSchoolBuilding_;
-      }
-
-      void SimBuilding_Building::
-      RelocatablePublicSchoolBuilding (const RelocatablePublicSchoolBuilding_type& x)
-      {
-        this->RelocatablePublicSchoolBuilding_.set (x);
+        return this->T24RelocatablePublicSchoolBuilding_;
       }
 
       void SimBuilding_Building::
-      RelocatablePublicSchoolBuilding (const RelocatablePublicSchoolBuilding_optional& x)
+      T24RelocatablePublicSchoolBuilding (const T24RelocatablePublicSchoolBuilding_type& x)
       {
-        this->RelocatablePublicSchoolBuilding_ = x;
-      }
-
-      const SimBuilding_Building::TotalStoryCountAltered_optional& SimBuilding_Building::
-      TotalStoryCountAltered () const
-      {
-        return this->TotalStoryCountAltered_;
-      }
-
-      SimBuilding_Building::TotalStoryCountAltered_optional& SimBuilding_Building::
-      TotalStoryCountAltered ()
-      {
-        return this->TotalStoryCountAltered_;
+        this->T24RelocatablePublicSchoolBuilding_.set (x);
       }
 
       void SimBuilding_Building::
-      TotalStoryCountAltered (const TotalStoryCountAltered_type& x)
+      T24RelocatablePublicSchoolBuilding (const T24RelocatablePublicSchoolBuilding_optional& x)
       {
-        this->TotalStoryCountAltered_.set (x);
+        this->T24RelocatablePublicSchoolBuilding_ = x;
+      }
+
+      const SimBuilding_Building::T24TotalStoryCountAltered_optional& SimBuilding_Building::
+      T24TotalStoryCountAltered () const
+      {
+        return this->T24TotalStoryCountAltered_;
+      }
+
+      SimBuilding_Building::T24TotalStoryCountAltered_optional& SimBuilding_Building::
+      T24TotalStoryCountAltered ()
+      {
+        return this->T24TotalStoryCountAltered_;
       }
 
       void SimBuilding_Building::
-      TotalStoryCountAltered (const TotalStoryCountAltered_optional& x)
+      T24TotalStoryCountAltered (const T24TotalStoryCountAltered_type& x)
       {
-        this->TotalStoryCountAltered_ = x;
-      }
-
-      const SimBuilding_Building::TotalStoryCountExisting_optional& SimBuilding_Building::
-      TotalStoryCountExisting () const
-      {
-        return this->TotalStoryCountExisting_;
-      }
-
-      SimBuilding_Building::TotalStoryCountExisting_optional& SimBuilding_Building::
-      TotalStoryCountExisting ()
-      {
-        return this->TotalStoryCountExisting_;
+        this->T24TotalStoryCountAltered_.set (x);
       }
 
       void SimBuilding_Building::
-      TotalStoryCountExisting (const TotalStoryCountExisting_type& x)
+      T24TotalStoryCountAltered (const T24TotalStoryCountAltered_optional& x)
       {
-        this->TotalStoryCountExisting_.set (x);
+        this->T24TotalStoryCountAltered_ = x;
+      }
+
+      const SimBuilding_Building::T24TotalStoryCountExisting_optional& SimBuilding_Building::
+      T24TotalStoryCountExisting () const
+      {
+        return this->T24TotalStoryCountExisting_;
+      }
+
+      SimBuilding_Building::T24TotalStoryCountExisting_optional& SimBuilding_Building::
+      T24TotalStoryCountExisting ()
+      {
+        return this->T24TotalStoryCountExisting_;
       }
 
       void SimBuilding_Building::
-      TotalStoryCountExisting (const TotalStoryCountExisting_optional& x)
+      T24TotalStoryCountExisting (const T24TotalStoryCountExisting_type& x)
       {
-        this->TotalStoryCountExisting_ = x;
-      }
-
-      const SimBuilding_Building::TotalStoryCountNew_optional& SimBuilding_Building::
-      TotalStoryCountNew () const
-      {
-        return this->TotalStoryCountNew_;
-      }
-
-      SimBuilding_Building::TotalStoryCountNew_optional& SimBuilding_Building::
-      TotalStoryCountNew ()
-      {
-        return this->TotalStoryCountNew_;
+        this->T24TotalStoryCountExisting_.set (x);
       }
 
       void SimBuilding_Building::
-      TotalStoryCountNew (const TotalStoryCountNew_type& x)
+      T24TotalStoryCountExisting (const T24TotalStoryCountExisting_optional& x)
       {
-        this->TotalStoryCountNew_.set (x);
+        this->T24TotalStoryCountExisting_ = x;
+      }
+
+      const SimBuilding_Building::T24TotalStoryCountNew_optional& SimBuilding_Building::
+      T24TotalStoryCountNew () const
+      {
+        return this->T24TotalStoryCountNew_;
+      }
+
+      SimBuilding_Building::T24TotalStoryCountNew_optional& SimBuilding_Building::
+      T24TotalStoryCountNew ()
+      {
+        return this->T24TotalStoryCountNew_;
       }
 
       void SimBuilding_Building::
-      TotalStoryCountNew (const TotalStoryCountNew_optional& x)
+      T24TotalStoryCountNew (const T24TotalStoryCountNew_type& x)
       {
-        this->TotalStoryCountNew_ = x;
+        this->T24TotalStoryCountNew_.set (x);
+      }
+
+      void SimBuilding_Building::
+      T24TotalStoryCountNew (const T24TotalStoryCountNew_optional& x)
+      {
+        this->T24TotalStoryCountNew_ = x;
       }
     }
   }
@@ -770,22 +770,22 @@ namespace schema
         RoofIrrigation_IrrigationModelType_ (this),
         RoofIrrigation_IrrigationRateSchedName_ (this),
         RoofIrrigation_IrrigationMaxSaturatThreshold_ (this),
-        AboveGradeStoryCountAltered_ (this),
-        AboveGradeStoryCountExists_ (this),
-        AboveGradeStoryCountNew_ (this),
+        T24AboveGradeStoryCountAltered_ (this),
+        T24AboveGradeStoryCountExists_ (this),
+        T24AboveGradeStoryCountNew_ (this),
         T24CoilCoolingCapacity_ (this),
         T24CoilHeatingCapacity_ (this),
         T24FunctionClassificationMethod_ (this),
-        HighRiseResidentialLivingUnitCount_ (this),
-        LivingUnitCountAltered_ (this),
-        LivingUnitCountExisting_ (this),
-        LivingUnitCountNew_ (this),
+        T24HighRiseResidentialLivingUnitCount_ (this),
+        T24LivingUnitCountAltered_ (this),
+        T24LivingUnitCountExisting_ (this),
+        T24LivingUnitCountNew_ (this),
         T24PlantCoolingCapacity_ (this),
         T24PlantHeatingCapacity_ (this),
-        RelocatablePublicSchoolBuilding_ (this),
-        TotalStoryCountAltered_ (this),
-        TotalStoryCountExisting_ (this),
-        TotalStoryCountNew_ (this)
+        T24RelocatablePublicSchoolBuilding_ (this),
+        T24TotalStoryCountAltered_ (this),
+        T24TotalStoryCountExisting_ (this),
+        T24TotalStoryCountNew_ (this)
       {
       }
 
@@ -803,22 +803,22 @@ namespace schema
         RoofIrrigation_IrrigationModelType_ (this),
         RoofIrrigation_IrrigationRateSchedName_ (this),
         RoofIrrigation_IrrigationMaxSaturatThreshold_ (this),
-        AboveGradeStoryCountAltered_ (this),
-        AboveGradeStoryCountExists_ (this),
-        AboveGradeStoryCountNew_ (this),
+        T24AboveGradeStoryCountAltered_ (this),
+        T24AboveGradeStoryCountExists_ (this),
+        T24AboveGradeStoryCountNew_ (this),
         T24CoilCoolingCapacity_ (this),
         T24CoilHeatingCapacity_ (this),
         T24FunctionClassificationMethod_ (this),
-        HighRiseResidentialLivingUnitCount_ (this),
-        LivingUnitCountAltered_ (this),
-        LivingUnitCountExisting_ (this),
-        LivingUnitCountNew_ (this),
+        T24HighRiseResidentialLivingUnitCount_ (this),
+        T24LivingUnitCountAltered_ (this),
+        T24LivingUnitCountExisting_ (this),
+        T24LivingUnitCountNew_ (this),
         T24PlantCoolingCapacity_ (this),
         T24PlantHeatingCapacity_ (this),
-        RelocatablePublicSchoolBuilding_ (this),
-        TotalStoryCountAltered_ (this),
-        TotalStoryCountExisting_ (this),
-        TotalStoryCountNew_ (this)
+        T24RelocatablePublicSchoolBuilding_ (this),
+        T24TotalStoryCountAltered_ (this),
+        T24TotalStoryCountExisting_ (this),
+        T24TotalStoryCountNew_ (this)
       {
       }
 
@@ -838,22 +838,22 @@ namespace schema
         RoofIrrigation_IrrigationModelType_ (x.RoofIrrigation_IrrigationModelType_, f, this),
         RoofIrrigation_IrrigationRateSchedName_ (x.RoofIrrigation_IrrigationRateSchedName_, f, this),
         RoofIrrigation_IrrigationMaxSaturatThreshold_ (x.RoofIrrigation_IrrigationMaxSaturatThreshold_, f, this),
-        AboveGradeStoryCountAltered_ (x.AboveGradeStoryCountAltered_, f, this),
-        AboveGradeStoryCountExists_ (x.AboveGradeStoryCountExists_, f, this),
-        AboveGradeStoryCountNew_ (x.AboveGradeStoryCountNew_, f, this),
+        T24AboveGradeStoryCountAltered_ (x.T24AboveGradeStoryCountAltered_, f, this),
+        T24AboveGradeStoryCountExists_ (x.T24AboveGradeStoryCountExists_, f, this),
+        T24AboveGradeStoryCountNew_ (x.T24AboveGradeStoryCountNew_, f, this),
         T24CoilCoolingCapacity_ (x.T24CoilCoolingCapacity_, f, this),
         T24CoilHeatingCapacity_ (x.T24CoilHeatingCapacity_, f, this),
         T24FunctionClassificationMethod_ (x.T24FunctionClassificationMethod_, f, this),
-        HighRiseResidentialLivingUnitCount_ (x.HighRiseResidentialLivingUnitCount_, f, this),
-        LivingUnitCountAltered_ (x.LivingUnitCountAltered_, f, this),
-        LivingUnitCountExisting_ (x.LivingUnitCountExisting_, f, this),
-        LivingUnitCountNew_ (x.LivingUnitCountNew_, f, this),
+        T24HighRiseResidentialLivingUnitCount_ (x.T24HighRiseResidentialLivingUnitCount_, f, this),
+        T24LivingUnitCountAltered_ (x.T24LivingUnitCountAltered_, f, this),
+        T24LivingUnitCountExisting_ (x.T24LivingUnitCountExisting_, f, this),
+        T24LivingUnitCountNew_ (x.T24LivingUnitCountNew_, f, this),
         T24PlantCoolingCapacity_ (x.T24PlantCoolingCapacity_, f, this),
         T24PlantHeatingCapacity_ (x.T24PlantHeatingCapacity_, f, this),
-        RelocatablePublicSchoolBuilding_ (x.RelocatablePublicSchoolBuilding_, f, this),
-        TotalStoryCountAltered_ (x.TotalStoryCountAltered_, f, this),
-        TotalStoryCountExisting_ (x.TotalStoryCountExisting_, f, this),
-        TotalStoryCountNew_ (x.TotalStoryCountNew_, f, this)
+        T24RelocatablePublicSchoolBuilding_ (x.T24RelocatablePublicSchoolBuilding_, f, this),
+        T24TotalStoryCountAltered_ (x.T24TotalStoryCountAltered_, f, this),
+        T24TotalStoryCountExisting_ (x.T24TotalStoryCountExisting_, f, this),
+        T24TotalStoryCountNew_ (x.T24TotalStoryCountNew_, f, this)
       {
       }
 
@@ -873,22 +873,22 @@ namespace schema
         RoofIrrigation_IrrigationModelType_ (this),
         RoofIrrigation_IrrigationRateSchedName_ (this),
         RoofIrrigation_IrrigationMaxSaturatThreshold_ (this),
-        AboveGradeStoryCountAltered_ (this),
-        AboveGradeStoryCountExists_ (this),
-        AboveGradeStoryCountNew_ (this),
+        T24AboveGradeStoryCountAltered_ (this),
+        T24AboveGradeStoryCountExists_ (this),
+        T24AboveGradeStoryCountNew_ (this),
         T24CoilCoolingCapacity_ (this),
         T24CoilHeatingCapacity_ (this),
         T24FunctionClassificationMethod_ (this),
-        HighRiseResidentialLivingUnitCount_ (this),
-        LivingUnitCountAltered_ (this),
-        LivingUnitCountExisting_ (this),
-        LivingUnitCountNew_ (this),
+        T24HighRiseResidentialLivingUnitCount_ (this),
+        T24LivingUnitCountAltered_ (this),
+        T24LivingUnitCountExisting_ (this),
+        T24LivingUnitCountNew_ (this),
         T24PlantCoolingCapacity_ (this),
         T24PlantHeatingCapacity_ (this),
-        RelocatablePublicSchoolBuilding_ (this),
-        TotalStoryCountAltered_ (this),
-        TotalStoryCountExisting_ (this),
-        TotalStoryCountNew_ (this)
+        T24RelocatablePublicSchoolBuilding_ (this),
+        T24TotalStoryCountAltered_ (this),
+        T24TotalStoryCountExisting_ (this),
+        T24TotalStoryCountNew_ (this)
       {
         if ((f & ::xml_schema::flags::base) == 0)
         {
@@ -1045,35 +1045,35 @@ namespace schema
             }
           }
 
-          // AboveGradeStoryCountAltered
+          // T24AboveGradeStoryCountAltered
           //
-          if (n.name () == "AboveGradeStoryCountAltered" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          if (n.name () == "T24AboveGradeStoryCountAltered" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
           {
-            if (!this->AboveGradeStoryCountAltered_)
+            if (!this->T24AboveGradeStoryCountAltered_)
             {
-              this->AboveGradeStoryCountAltered_.set (AboveGradeStoryCountAltered_traits::create (i, f, this));
+              this->T24AboveGradeStoryCountAltered_.set (T24AboveGradeStoryCountAltered_traits::create (i, f, this));
               continue;
             }
           }
 
-          // AboveGradeStoryCountExists
+          // T24AboveGradeStoryCountExists
           //
-          if (n.name () == "AboveGradeStoryCountExists" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          if (n.name () == "T24AboveGradeStoryCountExists" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
           {
-            if (!this->AboveGradeStoryCountExists_)
+            if (!this->T24AboveGradeStoryCountExists_)
             {
-              this->AboveGradeStoryCountExists_.set (AboveGradeStoryCountExists_traits::create (i, f, this));
+              this->T24AboveGradeStoryCountExists_.set (T24AboveGradeStoryCountExists_traits::create (i, f, this));
               continue;
             }
           }
 
-          // AboveGradeStoryCountNew
+          // T24AboveGradeStoryCountNew
           //
-          if (n.name () == "AboveGradeStoryCountNew" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          if (n.name () == "T24AboveGradeStoryCountNew" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
           {
-            if (!this->AboveGradeStoryCountNew_)
+            if (!this->T24AboveGradeStoryCountNew_)
             {
-              this->AboveGradeStoryCountNew_.set (AboveGradeStoryCountNew_traits::create (i, f, this));
+              this->T24AboveGradeStoryCountNew_.set (T24AboveGradeStoryCountNew_traits::create (i, f, this));
               continue;
             }
           }
@@ -1114,46 +1114,46 @@ namespace schema
             }
           }
 
-          // HighRiseResidentialLivingUnitCount
+          // T24HighRiseResidentialLivingUnitCount
           //
-          if (n.name () == "HighRiseResidentialLivingUnitCount" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          if (n.name () == "T24HighRiseResidentialLivingUnitCount" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
           {
-            if (!this->HighRiseResidentialLivingUnitCount_)
+            if (!this->T24HighRiseResidentialLivingUnitCount_)
             {
-              this->HighRiseResidentialLivingUnitCount_.set (HighRiseResidentialLivingUnitCount_traits::create (i, f, this));
+              this->T24HighRiseResidentialLivingUnitCount_.set (T24HighRiseResidentialLivingUnitCount_traits::create (i, f, this));
               continue;
             }
           }
 
-          // LivingUnitCountAltered
+          // T24LivingUnitCountAltered
           //
-          if (n.name () == "LivingUnitCountAltered" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          if (n.name () == "T24LivingUnitCountAltered" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
           {
-            if (!this->LivingUnitCountAltered_)
+            if (!this->T24LivingUnitCountAltered_)
             {
-              this->LivingUnitCountAltered_.set (LivingUnitCountAltered_traits::create (i, f, this));
+              this->T24LivingUnitCountAltered_.set (T24LivingUnitCountAltered_traits::create (i, f, this));
               continue;
             }
           }
 
-          // LivingUnitCountExisting
+          // T24LivingUnitCountExisting
           //
-          if (n.name () == "LivingUnitCountExisting" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          if (n.name () == "T24LivingUnitCountExisting" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
           {
-            if (!this->LivingUnitCountExisting_)
+            if (!this->T24LivingUnitCountExisting_)
             {
-              this->LivingUnitCountExisting_.set (LivingUnitCountExisting_traits::create (i, f, this));
+              this->T24LivingUnitCountExisting_.set (T24LivingUnitCountExisting_traits::create (i, f, this));
               continue;
             }
           }
 
-          // LivingUnitCountNew
+          // T24LivingUnitCountNew
           //
-          if (n.name () == "LivingUnitCountNew" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          if (n.name () == "T24LivingUnitCountNew" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
           {
-            if (!this->LivingUnitCountNew_)
+            if (!this->T24LivingUnitCountNew_)
             {
-              this->LivingUnitCountNew_.set (LivingUnitCountNew_traits::create (i, f, this));
+              this->T24LivingUnitCountNew_.set (T24LivingUnitCountNew_traits::create (i, f, this));
               continue;
             }
           }
@@ -1180,46 +1180,46 @@ namespace schema
             }
           }
 
-          // RelocatablePublicSchoolBuilding
+          // T24RelocatablePublicSchoolBuilding
           //
-          if (n.name () == "RelocatablePublicSchoolBuilding" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          if (n.name () == "T24RelocatablePublicSchoolBuilding" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
           {
-            if (!this->RelocatablePublicSchoolBuilding_)
+            if (!this->T24RelocatablePublicSchoolBuilding_)
             {
-              this->RelocatablePublicSchoolBuilding_.set (RelocatablePublicSchoolBuilding_traits::create (i, f, this));
+              this->T24RelocatablePublicSchoolBuilding_.set (T24RelocatablePublicSchoolBuilding_traits::create (i, f, this));
               continue;
             }
           }
 
-          // TotalStoryCountAltered
+          // T24TotalStoryCountAltered
           //
-          if (n.name () == "TotalStoryCountAltered" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          if (n.name () == "T24TotalStoryCountAltered" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
           {
-            if (!this->TotalStoryCountAltered_)
+            if (!this->T24TotalStoryCountAltered_)
             {
-              this->TotalStoryCountAltered_.set (TotalStoryCountAltered_traits::create (i, f, this));
+              this->T24TotalStoryCountAltered_.set (T24TotalStoryCountAltered_traits::create (i, f, this));
               continue;
             }
           }
 
-          // TotalStoryCountExisting
+          // T24TotalStoryCountExisting
           //
-          if (n.name () == "TotalStoryCountExisting" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          if (n.name () == "T24TotalStoryCountExisting" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
           {
-            if (!this->TotalStoryCountExisting_)
+            if (!this->T24TotalStoryCountExisting_)
             {
-              this->TotalStoryCountExisting_.set (TotalStoryCountExisting_traits::create (i, f, this));
+              this->T24TotalStoryCountExisting_.set (T24TotalStoryCountExisting_traits::create (i, f, this));
               continue;
             }
           }
 
-          // TotalStoryCountNew
+          // T24TotalStoryCountNew
           //
-          if (n.name () == "TotalStoryCountNew" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          if (n.name () == "T24TotalStoryCountNew" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
           {
-            if (!this->TotalStoryCountNew_)
+            if (!this->T24TotalStoryCountNew_)
             {
-              this->TotalStoryCountNew_.set (TotalStoryCountNew_traits::create (i, f, this));
+              this->T24TotalStoryCountNew_.set (T24TotalStoryCountNew_traits::create (i, f, this));
               continue;
             }
           }
@@ -1252,22 +1252,22 @@ namespace schema
           this->RoofIrrigation_IrrigationModelType_ = x.RoofIrrigation_IrrigationModelType_;
           this->RoofIrrigation_IrrigationRateSchedName_ = x.RoofIrrigation_IrrigationRateSchedName_;
           this->RoofIrrigation_IrrigationMaxSaturatThreshold_ = x.RoofIrrigation_IrrigationMaxSaturatThreshold_;
-          this->AboveGradeStoryCountAltered_ = x.AboveGradeStoryCountAltered_;
-          this->AboveGradeStoryCountExists_ = x.AboveGradeStoryCountExists_;
-          this->AboveGradeStoryCountNew_ = x.AboveGradeStoryCountNew_;
+          this->T24AboveGradeStoryCountAltered_ = x.T24AboveGradeStoryCountAltered_;
+          this->T24AboveGradeStoryCountExists_ = x.T24AboveGradeStoryCountExists_;
+          this->T24AboveGradeStoryCountNew_ = x.T24AboveGradeStoryCountNew_;
           this->T24CoilCoolingCapacity_ = x.T24CoilCoolingCapacity_;
           this->T24CoilHeatingCapacity_ = x.T24CoilHeatingCapacity_;
           this->T24FunctionClassificationMethod_ = x.T24FunctionClassificationMethod_;
-          this->HighRiseResidentialLivingUnitCount_ = x.HighRiseResidentialLivingUnitCount_;
-          this->LivingUnitCountAltered_ = x.LivingUnitCountAltered_;
-          this->LivingUnitCountExisting_ = x.LivingUnitCountExisting_;
-          this->LivingUnitCountNew_ = x.LivingUnitCountNew_;
+          this->T24HighRiseResidentialLivingUnitCount_ = x.T24HighRiseResidentialLivingUnitCount_;
+          this->T24LivingUnitCountAltered_ = x.T24LivingUnitCountAltered_;
+          this->T24LivingUnitCountExisting_ = x.T24LivingUnitCountExisting_;
+          this->T24LivingUnitCountNew_ = x.T24LivingUnitCountNew_;
           this->T24PlantCoolingCapacity_ = x.T24PlantCoolingCapacity_;
           this->T24PlantHeatingCapacity_ = x.T24PlantHeatingCapacity_;
-          this->RelocatablePublicSchoolBuilding_ = x.RelocatablePublicSchoolBuilding_;
-          this->TotalStoryCountAltered_ = x.TotalStoryCountAltered_;
-          this->TotalStoryCountExisting_ = x.TotalStoryCountExisting_;
-          this->TotalStoryCountNew_ = x.TotalStoryCountNew_;
+          this->T24RelocatablePublicSchoolBuilding_ = x.T24RelocatablePublicSchoolBuilding_;
+          this->T24TotalStoryCountAltered_ = x.T24TotalStoryCountAltered_;
+          this->T24TotalStoryCountExisting_ = x.T24TotalStoryCountExisting_;
+          this->T24TotalStoryCountNew_ = x.T24TotalStoryCountNew_;
         }
 
         return *this;

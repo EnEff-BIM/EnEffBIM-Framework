@@ -50,8 +50,6 @@
 
 #include "t24mandlightcntrldescrpt.hxx"
 
-#include "t24mandlightcntrlrpt.hxx"
-
 #include "t24mandlightcntrlaccepreqrpt.hxx"
 
 #include "t24mandlightcntrlisautoshoffcntrlrpt.hxx"
@@ -70,168 +68,6 @@ namespace schema
     {
       // SimSpace_Occupied
       // 
-
-      const SimSpace_Occupied::T24BaselineCommercialRefrigerationEPD_optional& SimSpace_Occupied::
-      T24BaselineCommercialRefrigerationEPD () const
-      {
-        return this->T24BaselineCommercialRefrigerationEPD_;
-      }
-
-      SimSpace_Occupied::T24BaselineCommercialRefrigerationEPD_optional& SimSpace_Occupied::
-      T24BaselineCommercialRefrigerationEPD ()
-      {
-        return this->T24BaselineCommercialRefrigerationEPD_;
-      }
-
-      void SimSpace_Occupied::
-      T24BaselineCommercialRefrigerationEPD (const T24BaselineCommercialRefrigerationEPD_type& x)
-      {
-        this->T24BaselineCommercialRefrigerationEPD_.set (x);
-      }
-
-      void SimSpace_Occupied::
-      T24BaselineCommercialRefrigerationEPD (const T24BaselineCommercialRefrigerationEPD_optional& x)
-      {
-        this->T24BaselineCommercialRefrigerationEPD_ = x;
-      }
-
-      const SimSpace_Occupied::T24BaselineCommercialRefrigerationEquipmentScheduleReference_optional& SimSpace_Occupied::
-      T24BaselineCommercialRefrigerationEquipmentScheduleReference () const
-      {
-        return this->T24BaselineCommercialRefrigerationEquipmentScheduleReference_;
-      }
-
-      SimSpace_Occupied::T24BaselineCommercialRefrigerationEquipmentScheduleReference_optional& SimSpace_Occupied::
-      T24BaselineCommercialRefrigerationEquipmentScheduleReference ()
-      {
-        return this->T24BaselineCommercialRefrigerationEquipmentScheduleReference_;
-      }
-
-      void SimSpace_Occupied::
-      T24BaselineCommercialRefrigerationEquipmentScheduleReference (const T24BaselineCommercialRefrigerationEquipmentScheduleReference_type& x)
-      {
-        this->T24BaselineCommercialRefrigerationEquipmentScheduleReference_.set (x);
-      }
-
-      void SimSpace_Occupied::
-      T24BaselineCommercialRefrigerationEquipmentScheduleReference (const T24BaselineCommercialRefrigerationEquipmentScheduleReference_optional& x)
-      {
-        this->T24BaselineCommercialRefrigerationEquipmentScheduleReference_ = x;
-      }
-
-      void SimSpace_Occupied::
-      T24BaselineCommercialRefrigerationEquipmentScheduleReference (::std::auto_ptr< T24BaselineCommercialRefrigerationEquipmentScheduleReference_type > x)
-      {
-        this->T24BaselineCommercialRefrigerationEquipmentScheduleReference_.set (x);
-      }
-
-      const SimSpace_Occupied::T24BaselineGasEquipmentPowerDensity_optional& SimSpace_Occupied::
-      T24BaselineGasEquipmentPowerDensity () const
-      {
-        return this->T24BaselineGasEquipmentPowerDensity_;
-      }
-
-      SimSpace_Occupied::T24BaselineGasEquipmentPowerDensity_optional& SimSpace_Occupied::
-      T24BaselineGasEquipmentPowerDensity ()
-      {
-        return this->T24BaselineGasEquipmentPowerDensity_;
-      }
-
-      void SimSpace_Occupied::
-      T24BaselineGasEquipmentPowerDensity (const T24BaselineGasEquipmentPowerDensity_type& x)
-      {
-        this->T24BaselineGasEquipmentPowerDensity_.set (x);
-      }
-
-      void SimSpace_Occupied::
-      T24BaselineGasEquipmentPowerDensity (const T24BaselineGasEquipmentPowerDensity_optional& x)
-      {
-        this->T24BaselineGasEquipmentPowerDensity_ = x;
-      }
-
-      const SimSpace_Occupied::T24BaselineGasEquipmentScheduleReference_optional& SimSpace_Occupied::
-      T24BaselineGasEquipmentScheduleReference () const
-      {
-        return this->T24BaselineGasEquipmentScheduleReference_;
-      }
-
-      SimSpace_Occupied::T24BaselineGasEquipmentScheduleReference_optional& SimSpace_Occupied::
-      T24BaselineGasEquipmentScheduleReference ()
-      {
-        return this->T24BaselineGasEquipmentScheduleReference_;
-      }
-
-      void SimSpace_Occupied::
-      T24BaselineGasEquipmentScheduleReference (const T24BaselineGasEquipmentScheduleReference_type& x)
-      {
-        this->T24BaselineGasEquipmentScheduleReference_.set (x);
-      }
-
-      void SimSpace_Occupied::
-      T24BaselineGasEquipmentScheduleReference (const T24BaselineGasEquipmentScheduleReference_optional& x)
-      {
-        this->T24BaselineGasEquipmentScheduleReference_ = x;
-      }
-
-      void SimSpace_Occupied::
-      T24BaselineGasEquipmentScheduleReference (::std::auto_ptr< T24BaselineGasEquipmentScheduleReference_type > x)
-      {
-        this->T24BaselineGasEquipmentScheduleReference_.set (x);
-      }
-
-      const SimSpace_Occupied::T24BaselineReceptaclePowerDensity_optional& SimSpace_Occupied::
-      T24BaselineReceptaclePowerDensity () const
-      {
-        return this->T24BaselineReceptaclePowerDensity_;
-      }
-
-      SimSpace_Occupied::T24BaselineReceptaclePowerDensity_optional& SimSpace_Occupied::
-      T24BaselineReceptaclePowerDensity ()
-      {
-        return this->T24BaselineReceptaclePowerDensity_;
-      }
-
-      void SimSpace_Occupied::
-      T24BaselineReceptaclePowerDensity (const T24BaselineReceptaclePowerDensity_type& x)
-      {
-        this->T24BaselineReceptaclePowerDensity_.set (x);
-      }
-
-      void SimSpace_Occupied::
-      T24BaselineReceptaclePowerDensity (const T24BaselineReceptaclePowerDensity_optional& x)
-      {
-        this->T24BaselineReceptaclePowerDensity_ = x;
-      }
-
-      const SimSpace_Occupied::T24BaselineReceptacleScheduleReference_optional& SimSpace_Occupied::
-      T24BaselineReceptacleScheduleReference () const
-      {
-        return this->T24BaselineReceptacleScheduleReference_;
-      }
-
-      SimSpace_Occupied::T24BaselineReceptacleScheduleReference_optional& SimSpace_Occupied::
-      T24BaselineReceptacleScheduleReference ()
-      {
-        return this->T24BaselineReceptacleScheduleReference_;
-      }
-
-      void SimSpace_Occupied::
-      T24BaselineReceptacleScheduleReference (const T24BaselineReceptacleScheduleReference_type& x)
-      {
-        this->T24BaselineReceptacleScheduleReference_.set (x);
-      }
-
-      void SimSpace_Occupied::
-      T24BaselineReceptacleScheduleReference (const T24BaselineReceptacleScheduleReference_optional& x)
-      {
-        this->T24BaselineReceptacleScheduleReference_ = x;
-      }
-
-      void SimSpace_Occupied::
-      T24BaselineReceptacleScheduleReference (::std::auto_ptr< T24BaselineReceptacleScheduleReference_type > x)
-      {
-        this->T24BaselineReceptacleScheduleReference_.set (x);
-      }
 
       const SimSpace_Occupied::T24CommRefrigEPD_optional& SimSpace_Occupied::
       T24CommRefrigEPD () const
@@ -255,30 +91,6 @@ namespace schema
       T24CommRefrigEPD (const T24CommRefrigEPD_optional& x)
       {
         this->T24CommRefrigEPD_ = x;
-      }
-
-      const SimSpace_Occupied::T24CommercialRefrigerationEPDExceptionalCondition_optional& SimSpace_Occupied::
-      T24CommercialRefrigerationEPDExceptionalCondition () const
-      {
-        return this->T24CommercialRefrigerationEPDExceptionalCondition_;
-      }
-
-      SimSpace_Occupied::T24CommercialRefrigerationEPDExceptionalCondition_optional& SimSpace_Occupied::
-      T24CommercialRefrigerationEPDExceptionalCondition ()
-      {
-        return this->T24CommercialRefrigerationEPDExceptionalCondition_;
-      }
-
-      void SimSpace_Occupied::
-      T24CommercialRefrigerationEPDExceptionalCondition (const T24CommercialRefrigerationEPDExceptionalCondition_type& x)
-      {
-        this->T24CommercialRefrigerationEPDExceptionalCondition_.set (x);
-      }
-
-      void SimSpace_Occupied::
-      T24CommercialRefrigerationEPDExceptionalCondition (const T24CommercialRefrigerationEPDExceptionalCondition_optional& x)
-      {
-        this->T24CommercialRefrigerationEPDExceptionalCondition_ = x;
       }
 
       const SimSpace_Occupied::T24CommRefrigEqmtSchedRef_optional& SimSpace_Occupied::
@@ -485,6 +297,30 @@ namespace schema
         this->T24ExhaustPerSpace_ = x;
       }
 
+      const SimSpace_Occupied::T24HasProcessExhaust_optional& SimSpace_Occupied::
+      T24HasProcessExhaust () const
+      {
+        return this->T24HasProcessExhaust_;
+      }
+
+      SimSpace_Occupied::T24HasProcessExhaust_optional& SimSpace_Occupied::
+      T24HasProcessExhaust ()
+      {
+        return this->T24HasProcessExhaust_;
+      }
+
+      void SimSpace_Occupied::
+      T24HasProcessExhaust (const T24HasProcessExhaust_type& x)
+      {
+        this->T24HasProcessExhaust_.set (x);
+      }
+
+      void SimSpace_Occupied::
+      T24HasProcessExhaust (const T24HasProcessExhaust_optional& x)
+      {
+        this->T24HasProcessExhaust_ = x;
+      }
+
       const SimSpace_Occupied::T24IntLightingSpecMethod_optional& SimSpace_Occupied::
       T24IntLightingSpecMethod () const
       {
@@ -545,64 +381,64 @@ namespace schema
         this->T24KitchExhHoodDutyList_.set (x);
       }
 
-      const SimSpace_Occupied::T24KitchExhHoodFlow_optional& SimSpace_Occupied::
-      T24KitchExhHoodFlow () const
+      const SimSpace_Occupied::T24KitchExhHoodFlowList_optional& SimSpace_Occupied::
+      T24KitchExhHoodFlowList () const
       {
-        return this->T24KitchExhHoodFlow_;
+        return this->T24KitchExhHoodFlowList_;
       }
 
-      SimSpace_Occupied::T24KitchExhHoodFlow_optional& SimSpace_Occupied::
-      T24KitchExhHoodFlow ()
+      SimSpace_Occupied::T24KitchExhHoodFlowList_optional& SimSpace_Occupied::
+      T24KitchExhHoodFlowList ()
       {
-        return this->T24KitchExhHoodFlow_;
-      }
-
-      void SimSpace_Occupied::
-      T24KitchExhHoodFlow (const T24KitchExhHoodFlow_type& x)
-      {
-        this->T24KitchExhHoodFlow_.set (x);
+        return this->T24KitchExhHoodFlowList_;
       }
 
       void SimSpace_Occupied::
-      T24KitchExhHoodFlow (const T24KitchExhHoodFlow_optional& x)
+      T24KitchExhHoodFlowList (const T24KitchExhHoodFlowList_type& x)
       {
-        this->T24KitchExhHoodFlow_ = x;
+        this->T24KitchExhHoodFlowList_.set (x);
       }
 
       void SimSpace_Occupied::
-      T24KitchExhHoodFlow (::std::auto_ptr< T24KitchExhHoodFlow_type > x)
+      T24KitchExhHoodFlowList (const T24KitchExhHoodFlowList_optional& x)
       {
-        this->T24KitchExhHoodFlow_.set (x);
-      }
-
-      const SimSpace_Occupied::T24KitchExhHoodLength_optional& SimSpace_Occupied::
-      T24KitchExhHoodLength () const
-      {
-        return this->T24KitchExhHoodLength_;
-      }
-
-      SimSpace_Occupied::T24KitchExhHoodLength_optional& SimSpace_Occupied::
-      T24KitchExhHoodLength ()
-      {
-        return this->T24KitchExhHoodLength_;
+        this->T24KitchExhHoodFlowList_ = x;
       }
 
       void SimSpace_Occupied::
-      T24KitchExhHoodLength (const T24KitchExhHoodLength_type& x)
+      T24KitchExhHoodFlowList (::std::auto_ptr< T24KitchExhHoodFlowList_type > x)
       {
-        this->T24KitchExhHoodLength_.set (x);
+        this->T24KitchExhHoodFlowList_.set (x);
+      }
+
+      const SimSpace_Occupied::T24KitchExhHoodLengthList_optional& SimSpace_Occupied::
+      T24KitchExhHoodLengthList () const
+      {
+        return this->T24KitchExhHoodLengthList_;
+      }
+
+      SimSpace_Occupied::T24KitchExhHoodLengthList_optional& SimSpace_Occupied::
+      T24KitchExhHoodLengthList ()
+      {
+        return this->T24KitchExhHoodLengthList_;
       }
 
       void SimSpace_Occupied::
-      T24KitchExhHoodLength (const T24KitchExhHoodLength_optional& x)
+      T24KitchExhHoodLengthList (const T24KitchExhHoodLengthList_type& x)
       {
-        this->T24KitchExhHoodLength_ = x;
+        this->T24KitchExhHoodLengthList_.set (x);
       }
 
       void SimSpace_Occupied::
-      T24KitchExhHoodLength (::std::auto_ptr< T24KitchExhHoodLength_type > x)
+      T24KitchExhHoodLengthList (const T24KitchExhHoodLengthList_optional& x)
       {
-        this->T24KitchExhHoodLength_.set (x);
+        this->T24KitchExhHoodLengthList_ = x;
+      }
+
+      void SimSpace_Occupied::
+      T24KitchExhHoodLengthList (::std::auto_ptr< T24KitchExhHoodLengthList_type > x)
+      {
+        this->T24KitchExhHoodLengthList_.set (x);
       }
 
       const SimSpace_Occupied::T24KitchExhHoodStyleList_optional& SimSpace_Occupied::
@@ -753,36 +589,6 @@ namespace schema
       T24MandLightCntrlDescRpt (::std::auto_ptr< T24MandLightCntrlDescRpt_type > x)
       {
         this->T24MandLightCntrlDescRpt_.set (x);
-      }
-
-      const SimSpace_Occupied::T24MandLightCntrlRpt_optional& SimSpace_Occupied::
-      T24MandLightCntrlRpt () const
-      {
-        return this->T24MandLightCntrlRpt_;
-      }
-
-      SimSpace_Occupied::T24MandLightCntrlRpt_optional& SimSpace_Occupied::
-      T24MandLightCntrlRpt ()
-      {
-        return this->T24MandLightCntrlRpt_;
-      }
-
-      void SimSpace_Occupied::
-      T24MandLightCntrlRpt (const T24MandLightCntrlRpt_type& x)
-      {
-        this->T24MandLightCntrlRpt_.set (x);
-      }
-
-      void SimSpace_Occupied::
-      T24MandLightCntrlRpt (const T24MandLightCntrlRpt_optional& x)
-      {
-        this->T24MandLightCntrlRpt_ = x;
-      }
-
-      void SimSpace_Occupied::
-      T24MandLightCntrlRpt (::std::auto_ptr< T24MandLightCntrlRpt_type > x)
-      {
-        this->T24MandLightCntrlRpt_.set (x);
       }
 
       const SimSpace_Occupied::T24MandLightCntrlAccepReqRpt_optional& SimSpace_Occupied::
@@ -1081,14 +887,7 @@ namespace schema
       SimSpace_Occupied::
       SimSpace_Occupied ()
       : ::schema::simxml::BuildingModel::SimSpace (),
-        T24BaselineCommercialRefrigerationEPD_ (this),
-        T24BaselineCommercialRefrigerationEquipmentScheduleReference_ (this),
-        T24BaselineGasEquipmentPowerDensity_ (this),
-        T24BaselineGasEquipmentScheduleReference_ (this),
-        T24BaselineReceptaclePowerDensity_ (this),
-        T24BaselineReceptacleScheduleReference_ (this),
         T24CommRefrigEPD_ (this),
-        T24CommercialRefrigerationEPDExceptionalCondition_ (this),
         T24CommRefrigEqmtSchedRef_ (this),
         T24CommRefrigLatentFraction_ (this),
         T24CommRefrigLostFraction_ (this),
@@ -1097,16 +896,16 @@ namespace schema
         T24ExhaustAirChangesPerHour_ (this),
         T24ExhaustPerArea_ (this),
         T24ExhaustPerSpace_ (this),
+        T24HasProcessExhaust_ (this),
         T24IntLightingSpecMethod_ (this),
         T24KitchExhHoodDutyList_ (this),
-        T24KitchExhHoodFlow_ (this),
-        T24KitchExhHoodLength_ (this),
+        T24KitchExhHoodFlowList_ (this),
+        T24KitchExhHoodLengthList_ (this),
         T24KitchExhHoodStyleList_ (this),
         T24LabExhRateType_ (this),
         T24LightingStatus_ (this),
         T24MandLightCntrlCntRpt_ (this),
         T24MandLightCntrlDescRpt_ (this),
-        T24MandLightCntrlRpt_ (this),
         T24MandLightCntrlAccepReqRpt_ (this),
         T24MandLightCntrlIsAutoShOffCntrlRpt_ (this),
         T24MandLightCntrlIsDayltngCntrlRpt_ (this),
@@ -1122,14 +921,7 @@ namespace schema
       SimSpace_Occupied::
       SimSpace_Occupied (const RefId_type& RefId)
       : ::schema::simxml::BuildingModel::SimSpace (RefId),
-        T24BaselineCommercialRefrigerationEPD_ (this),
-        T24BaselineCommercialRefrigerationEquipmentScheduleReference_ (this),
-        T24BaselineGasEquipmentPowerDensity_ (this),
-        T24BaselineGasEquipmentScheduleReference_ (this),
-        T24BaselineReceptaclePowerDensity_ (this),
-        T24BaselineReceptacleScheduleReference_ (this),
         T24CommRefrigEPD_ (this),
-        T24CommercialRefrigerationEPDExceptionalCondition_ (this),
         T24CommRefrigEqmtSchedRef_ (this),
         T24CommRefrigLatentFraction_ (this),
         T24CommRefrigLostFraction_ (this),
@@ -1138,16 +930,16 @@ namespace schema
         T24ExhaustAirChangesPerHour_ (this),
         T24ExhaustPerArea_ (this),
         T24ExhaustPerSpace_ (this),
+        T24HasProcessExhaust_ (this),
         T24IntLightingSpecMethod_ (this),
         T24KitchExhHoodDutyList_ (this),
-        T24KitchExhHoodFlow_ (this),
-        T24KitchExhHoodLength_ (this),
+        T24KitchExhHoodFlowList_ (this),
+        T24KitchExhHoodLengthList_ (this),
         T24KitchExhHoodStyleList_ (this),
         T24LabExhRateType_ (this),
         T24LightingStatus_ (this),
         T24MandLightCntrlCntRpt_ (this),
         T24MandLightCntrlDescRpt_ (this),
-        T24MandLightCntrlRpt_ (this),
         T24MandLightCntrlAccepReqRpt_ (this),
         T24MandLightCntrlIsAutoShOffCntrlRpt_ (this),
         T24MandLightCntrlIsDayltngCntrlRpt_ (this),
@@ -1165,14 +957,7 @@ namespace schema
                          ::xml_schema::flags f,
                          ::xml_schema::container* c)
       : ::schema::simxml::BuildingModel::SimSpace (x, f, c),
-        T24BaselineCommercialRefrigerationEPD_ (x.T24BaselineCommercialRefrigerationEPD_, f, this),
-        T24BaselineCommercialRefrigerationEquipmentScheduleReference_ (x.T24BaselineCommercialRefrigerationEquipmentScheduleReference_, f, this),
-        T24BaselineGasEquipmentPowerDensity_ (x.T24BaselineGasEquipmentPowerDensity_, f, this),
-        T24BaselineGasEquipmentScheduleReference_ (x.T24BaselineGasEquipmentScheduleReference_, f, this),
-        T24BaselineReceptaclePowerDensity_ (x.T24BaselineReceptaclePowerDensity_, f, this),
-        T24BaselineReceptacleScheduleReference_ (x.T24BaselineReceptacleScheduleReference_, f, this),
         T24CommRefrigEPD_ (x.T24CommRefrigEPD_, f, this),
-        T24CommercialRefrigerationEPDExceptionalCondition_ (x.T24CommercialRefrigerationEPDExceptionalCondition_, f, this),
         T24CommRefrigEqmtSchedRef_ (x.T24CommRefrigEqmtSchedRef_, f, this),
         T24CommRefrigLatentFraction_ (x.T24CommRefrigLatentFraction_, f, this),
         T24CommRefrigLostFraction_ (x.T24CommRefrigLostFraction_, f, this),
@@ -1181,16 +966,16 @@ namespace schema
         T24ExhaustAirChangesPerHour_ (x.T24ExhaustAirChangesPerHour_, f, this),
         T24ExhaustPerArea_ (x.T24ExhaustPerArea_, f, this),
         T24ExhaustPerSpace_ (x.T24ExhaustPerSpace_, f, this),
+        T24HasProcessExhaust_ (x.T24HasProcessExhaust_, f, this),
         T24IntLightingSpecMethod_ (x.T24IntLightingSpecMethod_, f, this),
         T24KitchExhHoodDutyList_ (x.T24KitchExhHoodDutyList_, f, this),
-        T24KitchExhHoodFlow_ (x.T24KitchExhHoodFlow_, f, this),
-        T24KitchExhHoodLength_ (x.T24KitchExhHoodLength_, f, this),
+        T24KitchExhHoodFlowList_ (x.T24KitchExhHoodFlowList_, f, this),
+        T24KitchExhHoodLengthList_ (x.T24KitchExhHoodLengthList_, f, this),
         T24KitchExhHoodStyleList_ (x.T24KitchExhHoodStyleList_, f, this),
         T24LabExhRateType_ (x.T24LabExhRateType_, f, this),
         T24LightingStatus_ (x.T24LightingStatus_, f, this),
         T24MandLightCntrlCntRpt_ (x.T24MandLightCntrlCntRpt_, f, this),
         T24MandLightCntrlDescRpt_ (x.T24MandLightCntrlDescRpt_, f, this),
-        T24MandLightCntrlRpt_ (x.T24MandLightCntrlRpt_, f, this),
         T24MandLightCntrlAccepReqRpt_ (x.T24MandLightCntrlAccepReqRpt_, f, this),
         T24MandLightCntrlIsAutoShOffCntrlRpt_ (x.T24MandLightCntrlIsAutoShOffCntrlRpt_, f, this),
         T24MandLightCntrlIsDayltngCntrlRpt_ (x.T24MandLightCntrlIsDayltngCntrlRpt_, f, this),
@@ -1208,14 +993,7 @@ namespace schema
                          ::xml_schema::flags f,
                          ::xml_schema::container* c)
       : ::schema::simxml::BuildingModel::SimSpace (e, f | ::xml_schema::flags::base, c),
-        T24BaselineCommercialRefrigerationEPD_ (this),
-        T24BaselineCommercialRefrigerationEquipmentScheduleReference_ (this),
-        T24BaselineGasEquipmentPowerDensity_ (this),
-        T24BaselineGasEquipmentScheduleReference_ (this),
-        T24BaselineReceptaclePowerDensity_ (this),
-        T24BaselineReceptacleScheduleReference_ (this),
         T24CommRefrigEPD_ (this),
-        T24CommercialRefrigerationEPDExceptionalCondition_ (this),
         T24CommRefrigEqmtSchedRef_ (this),
         T24CommRefrigLatentFraction_ (this),
         T24CommRefrigLostFraction_ (this),
@@ -1224,16 +1002,16 @@ namespace schema
         T24ExhaustAirChangesPerHour_ (this),
         T24ExhaustPerArea_ (this),
         T24ExhaustPerSpace_ (this),
+        T24HasProcessExhaust_ (this),
         T24IntLightingSpecMethod_ (this),
         T24KitchExhHoodDutyList_ (this),
-        T24KitchExhHoodFlow_ (this),
-        T24KitchExhHoodLength_ (this),
+        T24KitchExhHoodFlowList_ (this),
+        T24KitchExhHoodLengthList_ (this),
         T24KitchExhHoodStyleList_ (this),
         T24LabExhRateType_ (this),
         T24LightingStatus_ (this),
         T24MandLightCntrlCntRpt_ (this),
         T24MandLightCntrlDescRpt_ (this),
-        T24MandLightCntrlRpt_ (this),
         T24MandLightCntrlAccepReqRpt_ (this),
         T24MandLightCntrlIsAutoShOffCntrlRpt_ (this),
         T24MandLightCntrlIsDayltngCntrlRpt_ (this),
@@ -1263,81 +1041,6 @@ namespace schema
           const ::xsd::cxx::xml::qualified_name< char > n (
             ::xsd::cxx::xml::dom::name< char > (i));
 
-          // T24BaselineCommercialRefrigerationEPD
-          //
-          if (n.name () == "T24BaselineCommercialRefrigerationEPD" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
-          {
-            if (!this->T24BaselineCommercialRefrigerationEPD_)
-            {
-              this->T24BaselineCommercialRefrigerationEPD_.set (T24BaselineCommercialRefrigerationEPD_traits::create (i, f, this));
-              continue;
-            }
-          }
-
-          // T24BaselineCommercialRefrigerationEquipmentScheduleReference
-          //
-          if (n.name () == "T24BaselineCommercialRefrigerationEquipmentScheduleReference" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
-          {
-            ::std::auto_ptr< T24BaselineCommercialRefrigerationEquipmentScheduleReference_type > r (
-              T24BaselineCommercialRefrigerationEquipmentScheduleReference_traits::create (i, f, this));
-
-            if (!this->T24BaselineCommercialRefrigerationEquipmentScheduleReference_)
-            {
-              this->T24BaselineCommercialRefrigerationEquipmentScheduleReference_.set (r);
-              continue;
-            }
-          }
-
-          // T24BaselineGasEquipmentPowerDensity
-          //
-          if (n.name () == "T24BaselineGasEquipmentPowerDensity" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
-          {
-            if (!this->T24BaselineGasEquipmentPowerDensity_)
-            {
-              this->T24BaselineGasEquipmentPowerDensity_.set (T24BaselineGasEquipmentPowerDensity_traits::create (i, f, this));
-              continue;
-            }
-          }
-
-          // T24BaselineGasEquipmentScheduleReference
-          //
-          if (n.name () == "T24BaselineGasEquipmentScheduleReference" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
-          {
-            ::std::auto_ptr< T24BaselineGasEquipmentScheduleReference_type > r (
-              T24BaselineGasEquipmentScheduleReference_traits::create (i, f, this));
-
-            if (!this->T24BaselineGasEquipmentScheduleReference_)
-            {
-              this->T24BaselineGasEquipmentScheduleReference_.set (r);
-              continue;
-            }
-          }
-
-          // T24BaselineReceptaclePowerDensity
-          //
-          if (n.name () == "T24BaselineReceptaclePowerDensity" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
-          {
-            if (!this->T24BaselineReceptaclePowerDensity_)
-            {
-              this->T24BaselineReceptaclePowerDensity_.set (T24BaselineReceptaclePowerDensity_traits::create (i, f, this));
-              continue;
-            }
-          }
-
-          // T24BaselineReceptacleScheduleReference
-          //
-          if (n.name () == "T24BaselineReceptacleScheduleReference" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
-          {
-            ::std::auto_ptr< T24BaselineReceptacleScheduleReference_type > r (
-              T24BaselineReceptacleScheduleReference_traits::create (i, f, this));
-
-            if (!this->T24BaselineReceptacleScheduleReference_)
-            {
-              this->T24BaselineReceptacleScheduleReference_.set (r);
-              continue;
-            }
-          }
-
           // T24CommRefrigEPD
           //
           if (n.name () == "T24CommRefrigEPD" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
@@ -1345,17 +1048,6 @@ namespace schema
             if (!this->T24CommRefrigEPD_)
             {
               this->T24CommRefrigEPD_.set (T24CommRefrigEPD_traits::create (i, f, this));
-              continue;
-            }
-          }
-
-          // T24CommercialRefrigerationEPDExceptionalCondition
-          //
-          if (n.name () == "T24CommercialRefrigerationEPDExceptionalCondition" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
-          {
-            if (!this->T24CommercialRefrigerationEPDExceptionalCondition_)
-            {
-              this->T24CommercialRefrigerationEPDExceptionalCondition_.set (T24CommercialRefrigerationEPDExceptionalCondition_traits::create (i, f, this));
               continue;
             }
           }
@@ -1454,6 +1146,17 @@ namespace schema
             }
           }
 
+          // T24HasProcessExhaust
+          //
+          if (n.name () == "T24HasProcessExhaust" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          {
+            if (!this->T24HasProcessExhaust_)
+            {
+              this->T24HasProcessExhaust_.set (T24HasProcessExhaust_traits::create (i, f, this));
+              continue;
+            }
+          }
+
           // T24IntLightingSpecMethod
           //
           if (n.name () == "T24IntLightingSpecMethod" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
@@ -1482,30 +1185,30 @@ namespace schema
             }
           }
 
-          // T24KitchExhHoodFlow
+          // T24KitchExhHoodFlowList
           //
-          if (n.name () == "T24KitchExhHoodFlow" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          if (n.name () == "T24KitchExhHoodFlowList" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
           {
-            ::std::auto_ptr< T24KitchExhHoodFlow_type > r (
-              T24KitchExhHoodFlow_traits::create (i, f, this));
+            ::std::auto_ptr< T24KitchExhHoodFlowList_type > r (
+              T24KitchExhHoodFlowList_traits::create (i, f, this));
 
-            if (!this->T24KitchExhHoodFlow_)
+            if (!this->T24KitchExhHoodFlowList_)
             {
-              this->T24KitchExhHoodFlow_.set (r);
+              this->T24KitchExhHoodFlowList_.set (r);
               continue;
             }
           }
 
-          // T24KitchExhHoodLength
+          // T24KitchExhHoodLengthList
           //
-          if (n.name () == "T24KitchExhHoodLength" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          if (n.name () == "T24KitchExhHoodLengthList" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
           {
-            ::std::auto_ptr< T24KitchExhHoodLength_type > r (
-              T24KitchExhHoodLength_traits::create (i, f, this));
+            ::std::auto_ptr< T24KitchExhHoodLengthList_type > r (
+              T24KitchExhHoodLengthList_traits::create (i, f, this));
 
-            if (!this->T24KitchExhHoodLength_)
+            if (!this->T24KitchExhHoodLengthList_)
             {
-              this->T24KitchExhHoodLength_.set (r);
+              this->T24KitchExhHoodLengthList_.set (r);
               continue;
             }
           }
@@ -1576,20 +1279,6 @@ namespace schema
             if (!this->T24MandLightCntrlDescRpt_)
             {
               this->T24MandLightCntrlDescRpt_.set (r);
-              continue;
-            }
-          }
-
-          // T24MandLightCntrlRpt
-          //
-          if (n.name () == "T24MandLightCntrlRpt" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
-          {
-            ::std::auto_ptr< T24MandLightCntrlRpt_type > r (
-              T24MandLightCntrlRpt_traits::create (i, f, this));
-
-            if (!this->T24MandLightCntrlRpt_)
-            {
-              this->T24MandLightCntrlRpt_.set (r);
               continue;
             }
           }
@@ -1737,14 +1426,7 @@ namespace schema
         if (this != &x)
         {
           static_cast< ::schema::simxml::BuildingModel::SimSpace& > (*this) = x;
-          this->T24BaselineCommercialRefrigerationEPD_ = x.T24BaselineCommercialRefrigerationEPD_;
-          this->T24BaselineCommercialRefrigerationEquipmentScheduleReference_ = x.T24BaselineCommercialRefrigerationEquipmentScheduleReference_;
-          this->T24BaselineGasEquipmentPowerDensity_ = x.T24BaselineGasEquipmentPowerDensity_;
-          this->T24BaselineGasEquipmentScheduleReference_ = x.T24BaselineGasEquipmentScheduleReference_;
-          this->T24BaselineReceptaclePowerDensity_ = x.T24BaselineReceptaclePowerDensity_;
-          this->T24BaselineReceptacleScheduleReference_ = x.T24BaselineReceptacleScheduleReference_;
           this->T24CommRefrigEPD_ = x.T24CommRefrigEPD_;
-          this->T24CommercialRefrigerationEPDExceptionalCondition_ = x.T24CommercialRefrigerationEPDExceptionalCondition_;
           this->T24CommRefrigEqmtSchedRef_ = x.T24CommRefrigEqmtSchedRef_;
           this->T24CommRefrigLatentFraction_ = x.T24CommRefrigLatentFraction_;
           this->T24CommRefrigLostFraction_ = x.T24CommRefrigLostFraction_;
@@ -1753,16 +1435,16 @@ namespace schema
           this->T24ExhaustAirChangesPerHour_ = x.T24ExhaustAirChangesPerHour_;
           this->T24ExhaustPerArea_ = x.T24ExhaustPerArea_;
           this->T24ExhaustPerSpace_ = x.T24ExhaustPerSpace_;
+          this->T24HasProcessExhaust_ = x.T24HasProcessExhaust_;
           this->T24IntLightingSpecMethod_ = x.T24IntLightingSpecMethod_;
           this->T24KitchExhHoodDutyList_ = x.T24KitchExhHoodDutyList_;
-          this->T24KitchExhHoodFlow_ = x.T24KitchExhHoodFlow_;
-          this->T24KitchExhHoodLength_ = x.T24KitchExhHoodLength_;
+          this->T24KitchExhHoodFlowList_ = x.T24KitchExhHoodFlowList_;
+          this->T24KitchExhHoodLengthList_ = x.T24KitchExhHoodLengthList_;
           this->T24KitchExhHoodStyleList_ = x.T24KitchExhHoodStyleList_;
           this->T24LabExhRateType_ = x.T24LabExhRateType_;
           this->T24LightingStatus_ = x.T24LightingStatus_;
           this->T24MandLightCntrlCntRpt_ = x.T24MandLightCntrlCntRpt_;
           this->T24MandLightCntrlDescRpt_ = x.T24MandLightCntrlDescRpt_;
-          this->T24MandLightCntrlRpt_ = x.T24MandLightCntrlRpt_;
           this->T24MandLightCntrlAccepReqRpt_ = x.T24MandLightCntrlAccepReqRpt_;
           this->T24MandLightCntrlIsAutoShOffCntrlRpt_ = x.T24MandLightCntrlIsAutoShOffCntrlRpt_;
           this->T24MandLightCntrlIsDayltngCntrlRpt_ = x.T24MandLightCntrlIsDayltngCntrlRpt_;

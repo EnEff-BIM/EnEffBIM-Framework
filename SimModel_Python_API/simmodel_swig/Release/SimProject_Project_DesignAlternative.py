@@ -121,6 +121,9 @@ class SimProject(base.SimSpatialStructureElement):
     def T24ProjectTeam(self, *args):
         return _SimProject_Project_DesignAlternative.SimProject_T24ProjectTeam(self, *args)
 
+    def ProjectTypeDefinitions(self, *args):
+        return _SimProject_Project_DesignAlternative.SimProject_ProjectTypeDefinitions(self, *args)
+
     def ParentDesignAltForViews(self, *args):
         return _SimProject_Project_DesignAlternative.SimProject_ParentDesignAltForViews(self, *args)
 

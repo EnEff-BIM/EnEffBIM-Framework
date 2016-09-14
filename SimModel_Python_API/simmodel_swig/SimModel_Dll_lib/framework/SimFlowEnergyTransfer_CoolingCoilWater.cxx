@@ -48,6 +48,36 @@ namespace schema
     {
       // SimFlowEnergyTransfer_CoolingCoilWater
       // 
+
+      const SimFlowEnergyTransfer_CoolingCoilWater::SimFlowEnergyTrans_Name_optional& SimFlowEnergyTransfer_CoolingCoilWater::
+      SimFlowEnergyTrans_Name () const
+      {
+        return this->SimFlowEnergyTrans_Name_;
+      }
+
+      SimFlowEnergyTransfer_CoolingCoilWater::SimFlowEnergyTrans_Name_optional& SimFlowEnergyTransfer_CoolingCoilWater::
+      SimFlowEnergyTrans_Name ()
+      {
+        return this->SimFlowEnergyTrans_Name_;
+      }
+
+      void SimFlowEnergyTransfer_CoolingCoilWater::
+      SimFlowEnergyTrans_Name (const SimFlowEnergyTrans_Name_type& x)
+      {
+        this->SimFlowEnergyTrans_Name_.set (x);
+      }
+
+      void SimFlowEnergyTransfer_CoolingCoilWater::
+      SimFlowEnergyTrans_Name (const SimFlowEnergyTrans_Name_optional& x)
+      {
+        this->SimFlowEnergyTrans_Name_ = x;
+      }
+
+      void SimFlowEnergyTransfer_CoolingCoilWater::
+      SimFlowEnergyTrans_Name (::std::auto_ptr< SimFlowEnergyTrans_Name_type > x)
+      {
+        this->SimFlowEnergyTrans_Name_.set (x);
+      }
     }
   }
 }
@@ -74,13 +104,15 @@ namespace schema
 
       SimFlowEnergyTransfer_CoolingCoilWater::
       SimFlowEnergyTransfer_CoolingCoilWater ()
-      : ::schema::simxml::MepModel::SimFlowEnergyTransfer ()
+      : ::schema::simxml::MepModel::SimFlowEnergyTransfer (),
+        SimFlowEnergyTrans_Name_ (this)
       {
       }
 
       SimFlowEnergyTransfer_CoolingCoilWater::
       SimFlowEnergyTransfer_CoolingCoilWater (const RefId_type& RefId)
-      : ::schema::simxml::MepModel::SimFlowEnergyTransfer (RefId)
+      : ::schema::simxml::MepModel::SimFlowEnergyTransfer (RefId),
+        SimFlowEnergyTrans_Name_ (this)
       {
       }
 
@@ -88,7 +120,8 @@ namespace schema
       SimFlowEnergyTransfer_CoolingCoilWater (const SimFlowEnergyTransfer_CoolingCoilWater& x,
                                               ::xml_schema::flags f,
                                               ::xml_schema::container* c)
-      : ::schema::simxml::MepModel::SimFlowEnergyTransfer (x, f, c)
+      : ::schema::simxml::MepModel::SimFlowEnergyTransfer (x, f, c),
+        SimFlowEnergyTrans_Name_ (x.SimFlowEnergyTrans_Name_, f, this)
       {
       }
 
@@ -96,8 +129,44 @@ namespace schema
       SimFlowEnergyTransfer_CoolingCoilWater (const ::xercesc::DOMElement& e,
                                               ::xml_schema::flags f,
                                               ::xml_schema::container* c)
-      : ::schema::simxml::MepModel::SimFlowEnergyTransfer (e, f, c)
+      : ::schema::simxml::MepModel::SimFlowEnergyTransfer (e, f | ::xml_schema::flags::base, c),
+        SimFlowEnergyTrans_Name_ (this)
       {
+        if ((f & ::xml_schema::flags::base) == 0)
+        {
+          ::xsd::cxx::xml::dom::parser< char > p (e, true, false, true);
+          this->parse (p, f);
+        }
+      }
+
+      void SimFlowEnergyTransfer_CoolingCoilWater::
+      parse (::xsd::cxx::xml::dom::parser< char >& p,
+             ::xml_schema::flags f)
+      {
+        this->::schema::simxml::MepModel::SimFlowEnergyTransfer::parse (p, f);
+
+        for (; p.more_content (); p.next_content (false))
+        {
+          const ::xercesc::DOMElement& i (p.cur_element ());
+          const ::xsd::cxx::xml::qualified_name< char > n (
+            ::xsd::cxx::xml::dom::name< char > (i));
+
+          // SimFlowEnergyTrans_Name
+          //
+          if (n.name () == "SimFlowEnergyTrans_Name" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            ::std::auto_ptr< SimFlowEnergyTrans_Name_type > r (
+              SimFlowEnergyTrans_Name_traits::create (i, f, this));
+
+            if (!this->SimFlowEnergyTrans_Name_)
+            {
+              this->SimFlowEnergyTrans_Name_.set (r);
+              continue;
+            }
+          }
+
+          break;
+        }
       }
 
       SimFlowEnergyTransfer_CoolingCoilWater* SimFlowEnergyTransfer_CoolingCoilWater::
@@ -105,6 +174,18 @@ namespace schema
               ::xml_schema::container* c) const
       {
         return new class SimFlowEnergyTransfer_CoolingCoilWater (*this, f, c);
+      }
+
+      SimFlowEnergyTransfer_CoolingCoilWater& SimFlowEnergyTransfer_CoolingCoilWater::
+      operator= (const SimFlowEnergyTransfer_CoolingCoilWater& x)
+      {
+        if (this != &x)
+        {
+          static_cast< ::schema::simxml::MepModel::SimFlowEnergyTransfer& > (*this) = x;
+          this->SimFlowEnergyTrans_Name_ = x.SimFlowEnergyTrans_Name_;
+        }
+
+        return *this;
       }
 
       SimFlowEnergyTransfer_CoolingCoilWater::

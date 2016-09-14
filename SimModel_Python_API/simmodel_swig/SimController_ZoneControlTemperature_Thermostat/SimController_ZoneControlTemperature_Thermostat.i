@@ -8,6 +8,8 @@
 using namespace xsd::cxx::tree;
 %}
 
+%ignore xsd::cxx::tree::sequence<::schema::simxml::MepModel::SimController_ZoneControlTemperature_Thermostat, false>::getValue(int n);
+
 //3. class auto ptr
 %auto_ptr(::schema::simxml::MepModel::SimController_ZoneControlTemperature_Thermostat)
 %auto_ptr(::schema::simxml::MepModel::SimCntrl_Control_1_4_ObjectType)

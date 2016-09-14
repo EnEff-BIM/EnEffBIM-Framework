@@ -121,6 +121,54 @@ namespace schema
         this->SimFlowEnergyTrans_ParasiticElecLoad_ = x;
       }
 
+      const SimFlowEnergyTransfer_HeatingCoilGas_CoilAirHeatingGas::T24BypassMinimumEfficiencyCheck_optional& SimFlowEnergyTransfer_HeatingCoilGas_CoilAirHeatingGas::
+      T24BypassMinimumEfficiencyCheck () const
+      {
+        return this->T24BypassMinimumEfficiencyCheck_;
+      }
+
+      SimFlowEnergyTransfer_HeatingCoilGas_CoilAirHeatingGas::T24BypassMinimumEfficiencyCheck_optional& SimFlowEnergyTransfer_HeatingCoilGas_CoilAirHeatingGas::
+      T24BypassMinimumEfficiencyCheck ()
+      {
+        return this->T24BypassMinimumEfficiencyCheck_;
+      }
+
+      void SimFlowEnergyTransfer_HeatingCoilGas_CoilAirHeatingGas::
+      T24BypassMinimumEfficiencyCheck (const T24BypassMinimumEfficiencyCheck_type& x)
+      {
+        this->T24BypassMinimumEfficiencyCheck_.set (x);
+      }
+
+      void SimFlowEnergyTransfer_HeatingCoilGas_CoilAirHeatingGas::
+      T24BypassMinimumEfficiencyCheck (const T24BypassMinimumEfficiencyCheck_optional& x)
+      {
+        this->T24BypassMinimumEfficiencyCheck_ = x;
+      }
+
+      const SimFlowEnergyTransfer_HeatingCoilGas_CoilAirHeatingGas::T24CoilPressureDrop_optional& SimFlowEnergyTransfer_HeatingCoilGas_CoilAirHeatingGas::
+      T24CoilPressureDrop () const
+      {
+        return this->T24CoilPressureDrop_;
+      }
+
+      SimFlowEnergyTransfer_HeatingCoilGas_CoilAirHeatingGas::T24CoilPressureDrop_optional& SimFlowEnergyTransfer_HeatingCoilGas_CoilAirHeatingGas::
+      T24CoilPressureDrop ()
+      {
+        return this->T24CoilPressureDrop_;
+      }
+
+      void SimFlowEnergyTransfer_HeatingCoilGas_CoilAirHeatingGas::
+      T24CoilPressureDrop (const T24CoilPressureDrop_type& x)
+      {
+        this->T24CoilPressureDrop_.set (x);
+      }
+
+      void SimFlowEnergyTransfer_HeatingCoilGas_CoilAirHeatingGas::
+      T24CoilPressureDrop (const T24CoilPressureDrop_optional& x)
+      {
+        this->T24CoilPressureDrop_ = x;
+      }
+
       const SimFlowEnergyTransfer_HeatingCoilGas_CoilAirHeatingGas::T24CoilHeatFurnIgnType_optional& SimFlowEnergyTransfer_HeatingCoilGas_CoilAirHeatingGas::
       T24CoilHeatFurnIgnType () const
       {
@@ -180,6 +228,8 @@ namespace schema
         SimFlowEnergyTrans_NomCap_ (this),
         SimFlowEnergyTrans_GasBurnerEff_ (this),
         SimFlowEnergyTrans_ParasiticElecLoad_ (this),
+        T24BypassMinimumEfficiencyCheck_ (this),
+        T24CoilPressureDrop_ (this),
         T24CoilHeatFurnIgnType_ (this)
       {
       }
@@ -190,6 +240,8 @@ namespace schema
         SimFlowEnergyTrans_NomCap_ (this),
         SimFlowEnergyTrans_GasBurnerEff_ (this),
         SimFlowEnergyTrans_ParasiticElecLoad_ (this),
+        T24BypassMinimumEfficiencyCheck_ (this),
+        T24CoilPressureDrop_ (this),
         T24CoilHeatFurnIgnType_ (this)
       {
       }
@@ -202,6 +254,8 @@ namespace schema
         SimFlowEnergyTrans_NomCap_ (x.SimFlowEnergyTrans_NomCap_, f, this),
         SimFlowEnergyTrans_GasBurnerEff_ (x.SimFlowEnergyTrans_GasBurnerEff_, f, this),
         SimFlowEnergyTrans_ParasiticElecLoad_ (x.SimFlowEnergyTrans_ParasiticElecLoad_, f, this),
+        T24BypassMinimumEfficiencyCheck_ (x.T24BypassMinimumEfficiencyCheck_, f, this),
+        T24CoilPressureDrop_ (x.T24CoilPressureDrop_, f, this),
         T24CoilHeatFurnIgnType_ (x.T24CoilHeatFurnIgnType_, f, this)
       {
       }
@@ -214,6 +268,8 @@ namespace schema
         SimFlowEnergyTrans_NomCap_ (this),
         SimFlowEnergyTrans_GasBurnerEff_ (this),
         SimFlowEnergyTrans_ParasiticElecLoad_ (this),
+        T24BypassMinimumEfficiencyCheck_ (this),
+        T24CoilPressureDrop_ (this),
         T24CoilHeatFurnIgnType_ (this)
       {
         if ((f & ::xml_schema::flags::base) == 0)
@@ -268,6 +324,28 @@ namespace schema
             }
           }
 
+          // T24BypassMinimumEfficiencyCheck
+          //
+          if (n.name () == "T24BypassMinimumEfficiencyCheck" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            if (!this->T24BypassMinimumEfficiencyCheck_)
+            {
+              this->T24BypassMinimumEfficiencyCheck_.set (T24BypassMinimumEfficiencyCheck_traits::create (i, f, this));
+              continue;
+            }
+          }
+
+          // T24CoilPressureDrop
+          //
+          if (n.name () == "T24CoilPressureDrop" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            if (!this->T24CoilPressureDrop_)
+            {
+              this->T24CoilPressureDrop_.set (T24CoilPressureDrop_traits::create (i, f, this));
+              continue;
+            }
+          }
+
           // T24CoilHeatFurnIgnType
           //
           if (n.name () == "T24CoilHeatFurnIgnType" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
@@ -302,6 +380,8 @@ namespace schema
           this->SimFlowEnergyTrans_NomCap_ = x.SimFlowEnergyTrans_NomCap_;
           this->SimFlowEnergyTrans_GasBurnerEff_ = x.SimFlowEnergyTrans_GasBurnerEff_;
           this->SimFlowEnergyTrans_ParasiticElecLoad_ = x.SimFlowEnergyTrans_ParasiticElecLoad_;
+          this->T24BypassMinimumEfficiencyCheck_ = x.T24BypassMinimumEfficiencyCheck_;
+          this->T24CoilPressureDrop_ = x.T24CoilPressureDrop_;
           this->T24CoilHeatFurnIgnType_ = x.T24CoilHeatFurnIgnType_;
         }
 

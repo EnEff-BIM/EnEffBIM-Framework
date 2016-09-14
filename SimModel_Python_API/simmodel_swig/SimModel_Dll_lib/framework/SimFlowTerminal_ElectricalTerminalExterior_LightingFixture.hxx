@@ -260,6 +260,108 @@ namespace schema
       class SimFlowTerminal_ElectricalTerminalExterior_LightingFixture: public ::schema::simxml::MepModel::SimFlowTerminal_ElectricalTerminalExterior
       {
         public:
+        // SimFlowTerm_Name
+        //
+        typedef ::xml_schema::string SimFlowTerm_Name_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowTerm_Name_type > SimFlowTerm_Name_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowTerm_Name_type, char > SimFlowTerm_Name_traits;
+
+        const SimFlowTerm_Name_optional&
+        SimFlowTerm_Name () const;
+
+        SimFlowTerm_Name_optional&
+        SimFlowTerm_Name ();
+
+        void
+        SimFlowTerm_Name (const SimFlowTerm_Name_type& x);
+
+        void
+        SimFlowTerm_Name (const SimFlowTerm_Name_optional& x);
+
+        void
+        SimFlowTerm_Name (::std::auto_ptr< SimFlowTerm_Name_type > p);
+
+        // SimFlowTerm_SchedName
+        //
+        typedef ::xml_schema::idref SimFlowTerm_SchedName_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowTerm_SchedName_type > SimFlowTerm_SchedName_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowTerm_SchedName_type, char > SimFlowTerm_SchedName_traits;
+
+        const SimFlowTerm_SchedName_optional&
+        SimFlowTerm_SchedName () const;
+
+        SimFlowTerm_SchedName_optional&
+        SimFlowTerm_SchedName ();
+
+        void
+        SimFlowTerm_SchedName (const SimFlowTerm_SchedName_type& x);
+
+        void
+        SimFlowTerm_SchedName (const SimFlowTerm_SchedName_optional& x);
+
+        void
+        SimFlowTerm_SchedName (::std::auto_ptr< SimFlowTerm_SchedName_type > p);
+
+        // SimFlowTerm_DesignLevel
+        //
+        typedef ::xml_schema::double_ SimFlowTerm_DesignLevel_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowTerm_DesignLevel_type > SimFlowTerm_DesignLevel_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowTerm_DesignLevel_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowTerm_DesignLevel_traits;
+
+        const SimFlowTerm_DesignLevel_optional&
+        SimFlowTerm_DesignLevel () const;
+
+        SimFlowTerm_DesignLevel_optional&
+        SimFlowTerm_DesignLevel ();
+
+        void
+        SimFlowTerm_DesignLevel (const SimFlowTerm_DesignLevel_type& x);
+
+        void
+        SimFlowTerm_DesignLevel (const SimFlowTerm_DesignLevel_optional& x);
+
+        // SimFlowTerm_ContOption
+        //
+        typedef ::xml_schema::string SimFlowTerm_ContOption_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowTerm_ContOption_type > SimFlowTerm_ContOption_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowTerm_ContOption_type, char > SimFlowTerm_ContOption_traits;
+
+        const SimFlowTerm_ContOption_optional&
+        SimFlowTerm_ContOption () const;
+
+        SimFlowTerm_ContOption_optional&
+        SimFlowTerm_ContOption ();
+
+        void
+        SimFlowTerm_ContOption (const SimFlowTerm_ContOption_type& x);
+
+        void
+        SimFlowTerm_ContOption (const SimFlowTerm_ContOption_optional& x);
+
+        void
+        SimFlowTerm_ContOption (::std::auto_ptr< SimFlowTerm_ContOption_type > p);
+
+        // SimFlowTerm_EndUseSubCat
+        //
+        typedef ::xml_schema::string SimFlowTerm_EndUseSubCat_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowTerm_EndUseSubCat_type > SimFlowTerm_EndUseSubCat_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowTerm_EndUseSubCat_type, char > SimFlowTerm_EndUseSubCat_traits;
+
+        const SimFlowTerm_EndUseSubCat_optional&
+        SimFlowTerm_EndUseSubCat () const;
+
+        SimFlowTerm_EndUseSubCat_optional&
+        SimFlowTerm_EndUseSubCat ();
+
+        void
+        SimFlowTerm_EndUseSubCat (const SimFlowTerm_EndUseSubCat_type& x);
+
+        void
+        SimFlowTerm_EndUseSubCat (const SimFlowTerm_EndUseSubCat_optional& x);
+
+        void
+        SimFlowTerm_EndUseSubCat (::std::auto_ptr< SimFlowTerm_EndUseSubCat_type > p);
+
         // Constructors.
         //
         SimFlowTerminal_ElectricalTerminalExterior_LightingFixture ();
@@ -278,8 +380,25 @@ namespace schema
         _clone (::xml_schema::flags f = 0,
                 ::xml_schema::container* c = 0) const;
 
+        SimFlowTerminal_ElectricalTerminalExterior_LightingFixture&
+        operator= (const SimFlowTerminal_ElectricalTerminalExterior_LightingFixture& x);
+
         virtual 
         ~SimFlowTerminal_ElectricalTerminalExterior_LightingFixture ();
+
+        // Implementation.
+        //
+        protected:
+        void
+        parse (::xsd::cxx::xml::dom::parser< char >&,
+               ::xml_schema::flags);
+
+        protected:
+        SimFlowTerm_Name_optional SimFlowTerm_Name_;
+        SimFlowTerm_SchedName_optional SimFlowTerm_SchedName_;
+        SimFlowTerm_DesignLevel_optional SimFlowTerm_DesignLevel_;
+        SimFlowTerm_ContOption_optional SimFlowTerm_ContOption_;
+        SimFlowTerm_EndUseSubCat_optional SimFlowTerm_EndUseSubCat_;
       };
     }
   }

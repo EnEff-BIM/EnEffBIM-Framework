@@ -139,28 +139,34 @@ namespace schema
         this->ChartOrTableType_.set (x);
       }
 
-      const SimResultsView::TimeStep_optional& SimResultsView::
-      TimeStep () const
+      const SimResultsView::TimeStep_String_optional& SimResultsView::
+      TimeStep_String () const
       {
-        return this->TimeStep_;
+        return this->TimeStep_String_;
       }
 
-      SimResultsView::TimeStep_optional& SimResultsView::
-      TimeStep ()
+      SimResultsView::TimeStep_String_optional& SimResultsView::
+      TimeStep_String ()
       {
-        return this->TimeStep_;
-      }
-
-      void SimResultsView::
-      TimeStep (const TimeStep_type& x)
-      {
-        this->TimeStep_.set (x);
+        return this->TimeStep_String_;
       }
 
       void SimResultsView::
-      TimeStep (const TimeStep_optional& x)
+      TimeStep_String (const TimeStep_String_type& x)
       {
-        this->TimeStep_ = x;
+        this->TimeStep_String_.set (x);
+      }
+
+      void SimResultsView::
+      TimeStep_String (const TimeStep_String_optional& x)
+      {
+        this->TimeStep_String_ = x;
+      }
+
+      void SimResultsView::
+      TimeStep_String (::std::auto_ptr< TimeStep_String_type > x)
+      {
+        this->TimeStep_String_.set (x);
       }
 
       const SimResultsView::Font_optional& SimResultsView::
@@ -1116,7 +1122,7 @@ namespace schema
         VariablesInView_ (this),
         ViewType_ (this),
         ChartOrTableType_ (this),
-        TimeStep_ (this),
+        TimeStep_String_ (this),
         Font_ (this),
         FontSize_ (this),
         X_AxisMeasure_ (this),
@@ -1160,7 +1166,7 @@ namespace schema
         VariablesInView_ (this),
         ViewType_ (this),
         ChartOrTableType_ (this),
-        TimeStep_ (this),
+        TimeStep_String_ (this),
         Font_ (this),
         FontSize_ (this),
         X_AxisMeasure_ (this),
@@ -1206,7 +1212,7 @@ namespace schema
         VariablesInView_ (x.VariablesInView_, f, this),
         ViewType_ (x.ViewType_, f, this),
         ChartOrTableType_ (x.ChartOrTableType_, f, this),
-        TimeStep_ (x.TimeStep_, f, this),
+        TimeStep_String_ (x.TimeStep_String_, f, this),
         Font_ (x.Font_, f, this),
         FontSize_ (x.FontSize_, f, this),
         X_AxisMeasure_ (x.X_AxisMeasure_, f, this),
@@ -1252,7 +1258,7 @@ namespace schema
         VariablesInView_ (this),
         ViewType_ (this),
         ChartOrTableType_ (this),
-        TimeStep_ (this),
+        TimeStep_String_ (this),
         Font_ (this),
         FontSize_ (this),
         X_AxisMeasure_ (this),
@@ -1349,13 +1355,16 @@ namespace schema
             }
           }
 
-          // TimeStep
+          // TimeStep_String
           //
-          if (n.name () == "TimeStep" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/ResourcesGeneral")
+          if (n.name () == "TimeStep_String" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/ResourcesGeneral")
           {
-            if (!this->TimeStep_)
+            ::std::auto_ptr< TimeStep_String_type > r (
+              TimeStep_String_traits::create (i, f, this));
+
+            if (!this->TimeStep_String_)
             {
-              this->TimeStep_.set (TimeStep_traits::create (i, f, this));
+              this->TimeStep_String_.set (r);
               continue;
             }
           }
@@ -1808,7 +1817,7 @@ namespace schema
           this->VariablesInView_ = x.VariablesInView_;
           this->ViewType_ = x.ViewType_;
           this->ChartOrTableType_ = x.ChartOrTableType_;
-          this->TimeStep_ = x.TimeStep_;
+          this->TimeStep_String_ = x.TimeStep_String_;
           this->Font_ = x.Font_;
           this->FontSize_ = x.FontSize_;
           this->X_AxisMeasure_ = x.X_AxisMeasure_;

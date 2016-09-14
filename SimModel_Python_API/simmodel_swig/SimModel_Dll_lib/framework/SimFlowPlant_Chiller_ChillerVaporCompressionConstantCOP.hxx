@@ -554,48 +554,6 @@ namespace schema
         void
         SimFlowPlant_DesignCondWaterFlowRate (const SimFlowPlant_DesignCondWaterFlowRate_optional& x);
 
-        // T24ConstructStatus2
-        //
-        typedef ::xml_schema::string T24ConstructStatus2_type;
-        typedef ::xsd::cxx::tree::optional< T24ConstructStatus2_type > T24ConstructStatus2_optional;
-        typedef ::xsd::cxx::tree::traits< T24ConstructStatus2_type, char > T24ConstructStatus2_traits;
-
-        const T24ConstructStatus2_optional&
-        T24ConstructStatus2 () const;
-
-        T24ConstructStatus2_optional&
-        T24ConstructStatus2 ();
-
-        void
-        T24ConstructStatus2 (const T24ConstructStatus2_type& x);
-
-        void
-        T24ConstructStatus2 (const T24ConstructStatus2_optional& x);
-
-        void
-        T24ConstructStatus2 (::std::auto_ptr< T24ConstructStatus2_type > p);
-
-        // T24ChllerType
-        //
-        typedef ::xml_schema::string T24ChllerType_type;
-        typedef ::xsd::cxx::tree::optional< T24ChllerType_type > T24ChllerType_optional;
-        typedef ::xsd::cxx::tree::traits< T24ChllerType_type, char > T24ChllerType_traits;
-
-        const T24ChllerType_optional&
-        T24ChllerType () const;
-
-        T24ChllerType_optional&
-        T24ChllerType ();
-
-        void
-        T24ChllerType (const T24ChllerType_type& x);
-
-        void
-        T24ChllerType (const T24ChllerType_optional& x);
-
-        void
-        T24ChllerType (::std::auto_ptr< T24ChllerType_type > p);
-
         // Constructors.
         //
         SimFlowPlant_Chiller_ChillerVaporCompressionConstantCOP ();
@@ -643,8 +601,6 @@ namespace schema
         SimFlowPlant_NomCOP_optional SimFlowPlant_NomCOP_;
         SimFlowPlant_DesignChilledWaterFlowRate_optional SimFlowPlant_DesignChilledWaterFlowRate_;
         SimFlowPlant_DesignCondWaterFlowRate_optional SimFlowPlant_DesignCondWaterFlowRate_;
-        T24ConstructStatus2_optional T24ConstructStatus2_;
-        T24ChllerType_optional T24ChllerType_;
       };
     }
   }

@@ -8,6 +8,8 @@
 using namespace xsd::cxx::tree;
 %}
 
+%ignore xsd::cxx::tree::sequence<::schema::simxml::ResourcesGeneral::SimAddress_Postal_Default, false>::getValue(int n);
+
 //3. class auto ptr
 %auto_ptr(::schema::simxml::ResourcesGeneral::AddressLines)
 %auto_ptr(::schema::simxml::ResourcesGeneral::SimAddress_Postal_Default)

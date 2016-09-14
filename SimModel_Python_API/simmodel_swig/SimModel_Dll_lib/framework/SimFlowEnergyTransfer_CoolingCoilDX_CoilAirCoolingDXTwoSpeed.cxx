@@ -1411,6 +1411,54 @@ namespace schema
         this->CoilSys_Cool_DX_OutdoorAirDXCoolCoilLeavingMinAirTemp_ = x;
       }
 
+      const SimFlowEnergyTransfer_CoolingCoilDX_CoilAirCoolingDXTwoSpeed::T24BypassMinimumEfficiencyCheck_optional& SimFlowEnergyTransfer_CoolingCoilDX_CoilAirCoolingDXTwoSpeed::
+      T24BypassMinimumEfficiencyCheck () const
+      {
+        return this->T24BypassMinimumEfficiencyCheck_;
+      }
+
+      SimFlowEnergyTransfer_CoolingCoilDX_CoilAirCoolingDXTwoSpeed::T24BypassMinimumEfficiencyCheck_optional& SimFlowEnergyTransfer_CoolingCoilDX_CoilAirCoolingDXTwoSpeed::
+      T24BypassMinimumEfficiencyCheck ()
+      {
+        return this->T24BypassMinimumEfficiencyCheck_;
+      }
+
+      void SimFlowEnergyTransfer_CoolingCoilDX_CoilAirCoolingDXTwoSpeed::
+      T24BypassMinimumEfficiencyCheck (const T24BypassMinimumEfficiencyCheck_type& x)
+      {
+        this->T24BypassMinimumEfficiencyCheck_.set (x);
+      }
+
+      void SimFlowEnergyTransfer_CoolingCoilDX_CoilAirCoolingDXTwoSpeed::
+      T24BypassMinimumEfficiencyCheck (const T24BypassMinimumEfficiencyCheck_optional& x)
+      {
+        this->T24BypassMinimumEfficiencyCheck_ = x;
+      }
+
+      const SimFlowEnergyTransfer_CoolingCoilDX_CoilAirCoolingDXTwoSpeed::T24CoilPressureDrop_optional& SimFlowEnergyTransfer_CoolingCoilDX_CoilAirCoolingDXTwoSpeed::
+      T24CoilPressureDrop () const
+      {
+        return this->T24CoilPressureDrop_;
+      }
+
+      SimFlowEnergyTransfer_CoolingCoilDX_CoilAirCoolingDXTwoSpeed::T24CoilPressureDrop_optional& SimFlowEnergyTransfer_CoolingCoilDX_CoilAirCoolingDXTwoSpeed::
+      T24CoilPressureDrop ()
+      {
+        return this->T24CoilPressureDrop_;
+      }
+
+      void SimFlowEnergyTransfer_CoolingCoilDX_CoilAirCoolingDXTwoSpeed::
+      T24CoilPressureDrop (const T24CoilPressureDrop_type& x)
+      {
+        this->T24CoilPressureDrop_.set (x);
+      }
+
+      void SimFlowEnergyTransfer_CoolingCoilDX_CoilAirCoolingDXTwoSpeed::
+      T24CoilPressureDrop (const T24CoilPressureDrop_optional& x)
+      {
+        this->T24CoilPressureDrop_ = x;
+      }
+
       const SimFlowEnergyTransfer_CoolingCoilDX_CoilAirCoolingDXTwoSpeed::T24FuelSrc_optional& SimFlowEnergyTransfer_CoolingCoilDX_CoilAirCoolingDXTwoSpeed::
       T24FuelSrc () const
       {
@@ -1516,6 +1564,8 @@ namespace schema
         CoilSys_Cool_DX_RunOnLatentLoad_ (this),
         CoilSys_Cool_DX_UseOutdoorAirDXCoolCoil_ (this),
         CoilSys_Cool_DX_OutdoorAirDXCoolCoilLeavingMinAirTemp_ (this),
+        T24BypassMinimumEfficiencyCheck_ (this),
+        T24CoilPressureDrop_ (this),
         T24FuelSrc_ (this)
       {
       }
@@ -1572,6 +1622,8 @@ namespace schema
         CoilSys_Cool_DX_RunOnLatentLoad_ (this),
         CoilSys_Cool_DX_UseOutdoorAirDXCoolCoil_ (this),
         CoilSys_Cool_DX_OutdoorAirDXCoolCoilLeavingMinAirTemp_ (this),
+        T24BypassMinimumEfficiencyCheck_ (this),
+        T24CoilPressureDrop_ (this),
         T24FuelSrc_ (this)
       {
       }
@@ -1630,6 +1682,8 @@ namespace schema
         CoilSys_Cool_DX_RunOnLatentLoad_ (x.CoilSys_Cool_DX_RunOnLatentLoad_, f, this),
         CoilSys_Cool_DX_UseOutdoorAirDXCoolCoil_ (x.CoilSys_Cool_DX_UseOutdoorAirDXCoolCoil_, f, this),
         CoilSys_Cool_DX_OutdoorAirDXCoolCoilLeavingMinAirTemp_ (x.CoilSys_Cool_DX_OutdoorAirDXCoolCoilLeavingMinAirTemp_, f, this),
+        T24BypassMinimumEfficiencyCheck_ (x.T24BypassMinimumEfficiencyCheck_, f, this),
+        T24CoilPressureDrop_ (x.T24CoilPressureDrop_, f, this),
         T24FuelSrc_ (x.T24FuelSrc_, f, this)
       {
       }
@@ -1688,6 +1742,8 @@ namespace schema
         CoilSys_Cool_DX_RunOnLatentLoad_ (this),
         CoilSys_Cool_DX_UseOutdoorAirDXCoolCoil_ (this),
         CoilSys_Cool_DX_OutdoorAirDXCoolCoilLeavingMinAirTemp_ (this),
+        T24BypassMinimumEfficiencyCheck_ (this),
+        T24CoilPressureDrop_ (this),
         T24FuelSrc_ (this)
       {
         if ((f & ::xml_schema::flags::base) == 0)
@@ -2341,6 +2397,28 @@ namespace schema
             }
           }
 
+          // T24BypassMinimumEfficiencyCheck
+          //
+          if (n.name () == "T24BypassMinimumEfficiencyCheck" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            if (!this->T24BypassMinimumEfficiencyCheck_)
+            {
+              this->T24BypassMinimumEfficiencyCheck_.set (T24BypassMinimumEfficiencyCheck_traits::create (i, f, this));
+              continue;
+            }
+          }
+
+          // T24CoilPressureDrop
+          //
+          if (n.name () == "T24CoilPressureDrop" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            if (!this->T24CoilPressureDrop_)
+            {
+              this->T24CoilPressureDrop_.set (T24CoilPressureDrop_traits::create (i, f, this));
+              continue;
+            }
+          }
+
           // T24FuelSrc
           //
           if (n.name () == "T24FuelSrc" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
@@ -2421,6 +2499,8 @@ namespace schema
           this->CoilSys_Cool_DX_RunOnLatentLoad_ = x.CoilSys_Cool_DX_RunOnLatentLoad_;
           this->CoilSys_Cool_DX_UseOutdoorAirDXCoolCoil_ = x.CoilSys_Cool_DX_UseOutdoorAirDXCoolCoil_;
           this->CoilSys_Cool_DX_OutdoorAirDXCoolCoilLeavingMinAirTemp_ = x.CoilSys_Cool_DX_OutdoorAirDXCoolCoilLeavingMinAirTemp_;
+          this->T24BypassMinimumEfficiencyCheck_ = x.T24BypassMinimumEfficiencyCheck_;
+          this->T24CoilPressureDrop_ = x.T24CoilPressureDrop_;
           this->T24FuelSrc_ = x.T24FuelSrc_;
         }
 

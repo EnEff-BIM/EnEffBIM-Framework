@@ -48,6 +48,30 @@ namespace schema
     {
       // SimFlowFitting_Default_Default
       // 
+
+      const SimFlowFitting_Default_Default::InteriorRoughnessCoeff_optional& SimFlowFitting_Default_Default::
+      InteriorRoughnessCoeff () const
+      {
+        return this->InteriorRoughnessCoeff_;
+      }
+
+      SimFlowFitting_Default_Default::InteriorRoughnessCoeff_optional& SimFlowFitting_Default_Default::
+      InteriorRoughnessCoeff ()
+      {
+        return this->InteriorRoughnessCoeff_;
+      }
+
+      void SimFlowFitting_Default_Default::
+      InteriorRoughnessCoeff (const InteriorRoughnessCoeff_type& x)
+      {
+        this->InteriorRoughnessCoeff_.set (x);
+      }
+
+      void SimFlowFitting_Default_Default::
+      InteriorRoughnessCoeff (const InteriorRoughnessCoeff_optional& x)
+      {
+        this->InteriorRoughnessCoeff_ = x;
+      }
     }
   }
 }
@@ -74,13 +98,15 @@ namespace schema
 
       SimFlowFitting_Default_Default::
       SimFlowFitting_Default_Default ()
-      : ::schema::simxml::MepModel::SimFlowFitting_Default ()
+      : ::schema::simxml::MepModel::SimFlowFitting_Default (),
+        InteriorRoughnessCoeff_ (this)
       {
       }
 
       SimFlowFitting_Default_Default::
       SimFlowFitting_Default_Default (const RefId_type& RefId)
-      : ::schema::simxml::MepModel::SimFlowFitting_Default (RefId)
+      : ::schema::simxml::MepModel::SimFlowFitting_Default (RefId),
+        InteriorRoughnessCoeff_ (this)
       {
       }
 
@@ -88,7 +114,8 @@ namespace schema
       SimFlowFitting_Default_Default (const SimFlowFitting_Default_Default& x,
                                       ::xml_schema::flags f,
                                       ::xml_schema::container* c)
-      : ::schema::simxml::MepModel::SimFlowFitting_Default (x, f, c)
+      : ::schema::simxml::MepModel::SimFlowFitting_Default (x, f, c),
+        InteriorRoughnessCoeff_ (x.InteriorRoughnessCoeff_, f, this)
       {
       }
 
@@ -96,8 +123,41 @@ namespace schema
       SimFlowFitting_Default_Default (const ::xercesc::DOMElement& e,
                                       ::xml_schema::flags f,
                                       ::xml_schema::container* c)
-      : ::schema::simxml::MepModel::SimFlowFitting_Default (e, f, c)
+      : ::schema::simxml::MepModel::SimFlowFitting_Default (e, f | ::xml_schema::flags::base, c),
+        InteriorRoughnessCoeff_ (this)
       {
+        if ((f & ::xml_schema::flags::base) == 0)
+        {
+          ::xsd::cxx::xml::dom::parser< char > p (e, true, false, true);
+          this->parse (p, f);
+        }
+      }
+
+      void SimFlowFitting_Default_Default::
+      parse (::xsd::cxx::xml::dom::parser< char >& p,
+             ::xml_schema::flags f)
+      {
+        this->::schema::simxml::MepModel::SimFlowFitting_Default::parse (p, f);
+
+        for (; p.more_content (); p.next_content (false))
+        {
+          const ::xercesc::DOMElement& i (p.cur_element ());
+          const ::xsd::cxx::xml::qualified_name< char > n (
+            ::xsd::cxx::xml::dom::name< char > (i));
+
+          // InteriorRoughnessCoeff
+          //
+          if (n.name () == "InteriorRoughnessCoeff" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            if (!this->InteriorRoughnessCoeff_)
+            {
+              this->InteriorRoughnessCoeff_.set (InteriorRoughnessCoeff_traits::create (i, f, this));
+              continue;
+            }
+          }
+
+          break;
+        }
       }
 
       SimFlowFitting_Default_Default* SimFlowFitting_Default_Default::
@@ -105,6 +165,18 @@ namespace schema
               ::xml_schema::container* c) const
       {
         return new class SimFlowFitting_Default_Default (*this, f, c);
+      }
+
+      SimFlowFitting_Default_Default& SimFlowFitting_Default_Default::
+      operator= (const SimFlowFitting_Default_Default& x)
+      {
+        if (this != &x)
+        {
+          static_cast< ::schema::simxml::MepModel::SimFlowFitting_Default& > (*this) = x;
+          this->InteriorRoughnessCoeff_ = x.InteriorRoughnessCoeff_;
+        }
+
+        return *this;
       }
 
       SimFlowFitting_Default_Default::

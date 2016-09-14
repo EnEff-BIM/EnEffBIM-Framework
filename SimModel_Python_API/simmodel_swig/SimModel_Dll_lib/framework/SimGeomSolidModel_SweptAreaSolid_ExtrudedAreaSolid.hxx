@@ -50,7 +50,7 @@
 #include <xsd/cxx/config.hxx>
 
 #if (XSD_INT_VERSION != 4000000L)
-#error XSD runtime version mismatch
+//#error XSD runtime version mismatch
 #endif
 
 #include <xsd/cxx/pre.hxx>
@@ -263,8 +263,7 @@ namespace schema
         // ExtrudedDirection
         //
         typedef ::xml_schema::idref ExtrudedDirection_type;
-        typedef ::xsd::cxx::tree::optional< ExtrudedDirection_type
-, false > ExtrudedDirection_optional;
+        typedef ::xsd::cxx::tree::optional< ExtrudedDirection_type, false > ExtrudedDirection_optional;
         typedef ::xsd::cxx::tree::traits< ExtrudedDirection_type, char > ExtrudedDirection_traits;
 
         const ExtrudedDirection_optional&

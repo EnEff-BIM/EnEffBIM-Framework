@@ -48,96 +48,6 @@ namespace schema
     {
       // SimAppDefault
       // 
-
-      const SimAppDefault::DefaultForProject_optional& SimAppDefault::
-      DefaultForProject () const
-      {
-        return this->DefaultForProject_;
-      }
-
-      SimAppDefault::DefaultForProject_optional& SimAppDefault::
-      DefaultForProject ()
-      {
-        return this->DefaultForProject_;
-      }
-
-      void SimAppDefault::
-      DefaultForProject (const DefaultForProject_type& x)
-      {
-        this->DefaultForProject_.set (x);
-      }
-
-      void SimAppDefault::
-      DefaultForProject (const DefaultForProject_optional& x)
-      {
-        this->DefaultForProject_ = x;
-      }
-
-      void SimAppDefault::
-      DefaultForProject (::std::auto_ptr< DefaultForProject_type > x)
-      {
-        this->DefaultForProject_.set (x);
-      }
-
-      const SimAppDefault::DefaultForPerson_optional& SimAppDefault::
-      DefaultForPerson () const
-      {
-        return this->DefaultForPerson_;
-      }
-
-      SimAppDefault::DefaultForPerson_optional& SimAppDefault::
-      DefaultForPerson ()
-      {
-        return this->DefaultForPerson_;
-      }
-
-      void SimAppDefault::
-      DefaultForPerson (const DefaultForPerson_type& x)
-      {
-        this->DefaultForPerson_.set (x);
-      }
-
-      void SimAppDefault::
-      DefaultForPerson (const DefaultForPerson_optional& x)
-      {
-        this->DefaultForPerson_ = x;
-      }
-
-      void SimAppDefault::
-      DefaultForPerson (::std::auto_ptr< DefaultForPerson_type > x)
-      {
-        this->DefaultForPerson_.set (x);
-      }
-
-      const SimAppDefault::DefaultForUnitSystem_optional& SimAppDefault::
-      DefaultForUnitSystem () const
-      {
-        return this->DefaultForUnitSystem_;
-      }
-
-      SimAppDefault::DefaultForUnitSystem_optional& SimAppDefault::
-      DefaultForUnitSystem ()
-      {
-        return this->DefaultForUnitSystem_;
-      }
-
-      void SimAppDefault::
-      DefaultForUnitSystem (const DefaultForUnitSystem_type& x)
-      {
-        this->DefaultForUnitSystem_.set (x);
-      }
-
-      void SimAppDefault::
-      DefaultForUnitSystem (const DefaultForUnitSystem_optional& x)
-      {
-        this->DefaultForUnitSystem_ = x;
-      }
-
-      void SimAppDefault::
-      DefaultForUnitSystem (::std::auto_ptr< DefaultForUnitSystem_type > x)
-      {
-        this->DefaultForUnitSystem_.set (x);
-      }
     }
   }
 }
@@ -164,19 +74,13 @@ namespace schema
 
       SimAppDefault::
       SimAppDefault ()
-      : ::schema::simxml::SimModelCore::SimResourceObject (),
-        DefaultForProject_ (this),
-        DefaultForPerson_ (this),
-        DefaultForUnitSystem_ (this)
+      : ::schema::simxml::SimModelCore::SimResourceObject ()
       {
       }
 
       SimAppDefault::
       SimAppDefault (const RefId_type& RefId)
-      : ::schema::simxml::SimModelCore::SimResourceObject (RefId),
-        DefaultForProject_ (this),
-        DefaultForPerson_ (this),
-        DefaultForUnitSystem_ (this)
+      : ::schema::simxml::SimModelCore::SimResourceObject (RefId)
       {
       }
 
@@ -184,10 +88,7 @@ namespace schema
       SimAppDefault (const SimAppDefault& x,
                      ::xml_schema::flags f,
                      ::xml_schema::container* c)
-      : ::schema::simxml::SimModelCore::SimResourceObject (x, f, c),
-        DefaultForProject_ (x.DefaultForProject_, f, this),
-        DefaultForPerson_ (x.DefaultForPerson_, f, this),
-        DefaultForUnitSystem_ (x.DefaultForUnitSystem_, f, this)
+      : ::schema::simxml::SimModelCore::SimResourceObject (x, f, c)
       {
       }
 
@@ -195,74 +96,8 @@ namespace schema
       SimAppDefault (const ::xercesc::DOMElement& e,
                      ::xml_schema::flags f,
                      ::xml_schema::container* c)
-      : ::schema::simxml::SimModelCore::SimResourceObject (e, f | ::xml_schema::flags::base, c),
-        DefaultForProject_ (this),
-        DefaultForPerson_ (this),
-        DefaultForUnitSystem_ (this)
+      : ::schema::simxml::SimModelCore::SimResourceObject (e, f, c)
       {
-        if ((f & ::xml_schema::flags::base) == 0)
-        {
-          ::xsd::cxx::xml::dom::parser< char > p (e, true, false, true);
-          this->parse (p, f);
-        }
-      }
-
-      void SimAppDefault::
-      parse (::xsd::cxx::xml::dom::parser< char >& p,
-             ::xml_schema::flags f)
-      {
-        this->::schema::simxml::SimModelCore::SimResourceObject::parse (p, f);
-
-        for (; p.more_content (); p.next_content (false))
-        {
-          const ::xercesc::DOMElement& i (p.cur_element ());
-          const ::xsd::cxx::xml::qualified_name< char > n (
-            ::xsd::cxx::xml::dom::name< char > (i));
-
-          // DefaultForProject
-          //
-          if (n.name () == "DefaultForProject" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/SimModelCore")
-          {
-            ::std::auto_ptr< DefaultForProject_type > r (
-              DefaultForProject_traits::create (i, f, this));
-
-            if (!this->DefaultForProject_)
-            {
-              this->DefaultForProject_.set (r);
-              continue;
-            }
-          }
-
-          // DefaultForPerson
-          //
-          if (n.name () == "DefaultForPerson" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/SimModelCore")
-          {
-            ::std::auto_ptr< DefaultForPerson_type > r (
-              DefaultForPerson_traits::create (i, f, this));
-
-            if (!this->DefaultForPerson_)
-            {
-              this->DefaultForPerson_.set (r);
-              continue;
-            }
-          }
-
-          // DefaultForUnitSystem
-          //
-          if (n.name () == "DefaultForUnitSystem" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/SimModelCore")
-          {
-            ::std::auto_ptr< DefaultForUnitSystem_type > r (
-              DefaultForUnitSystem_traits::create (i, f, this));
-
-            if (!this->DefaultForUnitSystem_)
-            {
-              this->DefaultForUnitSystem_.set (r);
-              continue;
-            }
-          }
-
-          break;
-        }
       }
 
       SimAppDefault* SimAppDefault::
@@ -270,20 +105,6 @@ namespace schema
               ::xml_schema::container* c) const
       {
         return new class SimAppDefault (*this, f, c);
-      }
-
-      SimAppDefault& SimAppDefault::
-      operator= (const SimAppDefault& x)
-      {
-        if (this != &x)
-        {
-          static_cast< ::schema::simxml::SimModelCore::SimResourceObject& > (*this) = x;
-          this->DefaultForProject_ = x.DefaultForProject_;
-          this->DefaultForPerson_ = x.DefaultForPerson_;
-          this->DefaultForUnitSystem_ = x.DefaultForUnitSystem_;
-        }
-
-        return *this;
       }
 
       SimAppDefault::

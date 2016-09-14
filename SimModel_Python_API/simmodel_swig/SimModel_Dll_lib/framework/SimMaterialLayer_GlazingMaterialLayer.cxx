@@ -48,90 +48,6 @@ namespace schema
     {
       // SimMaterialLayer_GlazingMaterialLayer
       // 
-
-      const SimMaterialLayer_GlazingMaterialLayer::SimMatLayer_MaterialLayerName_optional& SimMaterialLayer_GlazingMaterialLayer::
-      SimMatLayer_MaterialLayerName () const
-      {
-        return this->SimMatLayer_MaterialLayerName_;
-      }
-
-      SimMaterialLayer_GlazingMaterialLayer::SimMatLayer_MaterialLayerName_optional& SimMaterialLayer_GlazingMaterialLayer::
-      SimMatLayer_MaterialLayerName ()
-      {
-        return this->SimMatLayer_MaterialLayerName_;
-      }
-
-      void SimMaterialLayer_GlazingMaterialLayer::
-      SimMatLayer_MaterialLayerName (const SimMatLayer_MaterialLayerName_type& x)
-      {
-        this->SimMatLayer_MaterialLayerName_.set (x);
-      }
-
-      void SimMaterialLayer_GlazingMaterialLayer::
-      SimMatLayer_MaterialLayerName (const SimMatLayer_MaterialLayerName_optional& x)
-      {
-        this->SimMatLayer_MaterialLayerName_ = x;
-      }
-
-      void SimMaterialLayer_GlazingMaterialLayer::
-      SimMatLayer_MaterialLayerName (::std::auto_ptr< SimMatLayer_MaterialLayerName_type > x)
-      {
-        this->SimMatLayer_MaterialLayerName_.set (x);
-      }
-
-      const SimMaterialLayer_GlazingMaterialLayer::SimMatLayer_MaterialName_optional& SimMaterialLayer_GlazingMaterialLayer::
-      SimMatLayer_MaterialName () const
-      {
-        return this->SimMatLayer_MaterialName_;
-      }
-
-      SimMaterialLayer_GlazingMaterialLayer::SimMatLayer_MaterialName_optional& SimMaterialLayer_GlazingMaterialLayer::
-      SimMatLayer_MaterialName ()
-      {
-        return this->SimMatLayer_MaterialName_;
-      }
-
-      void SimMaterialLayer_GlazingMaterialLayer::
-      SimMatLayer_MaterialName (const SimMatLayer_MaterialName_type& x)
-      {
-        this->SimMatLayer_MaterialName_.set (x);
-      }
-
-      void SimMaterialLayer_GlazingMaterialLayer::
-      SimMatLayer_MaterialName (const SimMatLayer_MaterialName_optional& x)
-      {
-        this->SimMatLayer_MaterialName_ = x;
-      }
-
-      void SimMaterialLayer_GlazingMaterialLayer::
-      SimMatLayer_MaterialName (::std::auto_ptr< SimMatLayer_MaterialName_type > x)
-      {
-        this->SimMatLayer_MaterialName_.set (x);
-      }
-
-      const SimMaterialLayer_GlazingMaterialLayer::SimMatLayer_LayerThickness_optional& SimMaterialLayer_GlazingMaterialLayer::
-      SimMatLayer_LayerThickness () const
-      {
-        return this->SimMatLayer_LayerThickness_;
-      }
-
-      SimMaterialLayer_GlazingMaterialLayer::SimMatLayer_LayerThickness_optional& SimMaterialLayer_GlazingMaterialLayer::
-      SimMatLayer_LayerThickness ()
-      {
-        return this->SimMatLayer_LayerThickness_;
-      }
-
-      void SimMaterialLayer_GlazingMaterialLayer::
-      SimMatLayer_LayerThickness (const SimMatLayer_LayerThickness_type& x)
-      {
-        this->SimMatLayer_LayerThickness_.set (x);
-      }
-
-      void SimMaterialLayer_GlazingMaterialLayer::
-      SimMatLayer_LayerThickness (const SimMatLayer_LayerThickness_optional& x)
-      {
-        this->SimMatLayer_LayerThickness_ = x;
-      }
     }
   }
 }
@@ -158,19 +74,13 @@ namespace schema
 
       SimMaterialLayer_GlazingMaterialLayer::
       SimMaterialLayer_GlazingMaterialLayer ()
-      : ::schema::simxml::ResourcesGeneral::SimMaterialLayer (),
-        SimMatLayer_MaterialLayerName_ (this),
-        SimMatLayer_MaterialName_ (this),
-        SimMatLayer_LayerThickness_ (this)
+      : ::schema::simxml::ResourcesGeneral::SimMaterialLayer ()
       {
       }
 
       SimMaterialLayer_GlazingMaterialLayer::
       SimMaterialLayer_GlazingMaterialLayer (const RefId_type& RefId)
-      : ::schema::simxml::ResourcesGeneral::SimMaterialLayer (RefId),
-        SimMatLayer_MaterialLayerName_ (this),
-        SimMatLayer_MaterialName_ (this),
-        SimMatLayer_LayerThickness_ (this)
+      : ::schema::simxml::ResourcesGeneral::SimMaterialLayer (RefId)
       {
       }
 
@@ -178,10 +88,7 @@ namespace schema
       SimMaterialLayer_GlazingMaterialLayer (const SimMaterialLayer_GlazingMaterialLayer& x,
                                              ::xml_schema::flags f,
                                              ::xml_schema::container* c)
-      : ::schema::simxml::ResourcesGeneral::SimMaterialLayer (x, f, c),
-        SimMatLayer_MaterialLayerName_ (x.SimMatLayer_MaterialLayerName_, f, this),
-        SimMatLayer_MaterialName_ (x.SimMatLayer_MaterialName_, f, this),
-        SimMatLayer_LayerThickness_ (x.SimMatLayer_LayerThickness_, f, this)
+      : ::schema::simxml::ResourcesGeneral::SimMaterialLayer (x, f, c)
       {
       }
 
@@ -189,71 +96,8 @@ namespace schema
       SimMaterialLayer_GlazingMaterialLayer (const ::xercesc::DOMElement& e,
                                              ::xml_schema::flags f,
                                              ::xml_schema::container* c)
-      : ::schema::simxml::ResourcesGeneral::SimMaterialLayer (e, f | ::xml_schema::flags::base, c),
-        SimMatLayer_MaterialLayerName_ (this),
-        SimMatLayer_MaterialName_ (this),
-        SimMatLayer_LayerThickness_ (this)
+      : ::schema::simxml::ResourcesGeneral::SimMaterialLayer (e, f, c)
       {
-        if ((f & ::xml_schema::flags::base) == 0)
-        {
-          ::xsd::cxx::xml::dom::parser< char > p (e, true, false, true);
-          this->parse (p, f);
-        }
-      }
-
-      void SimMaterialLayer_GlazingMaterialLayer::
-      parse (::xsd::cxx::xml::dom::parser< char >& p,
-             ::xml_schema::flags f)
-      {
-        this->::schema::simxml::ResourcesGeneral::SimMaterialLayer::parse (p, f);
-
-        for (; p.more_content (); p.next_content (false))
-        {
-          const ::xercesc::DOMElement& i (p.cur_element ());
-          const ::xsd::cxx::xml::qualified_name< char > n (
-            ::xsd::cxx::xml::dom::name< char > (i));
-
-          // SimMatLayer_MaterialLayerName
-          //
-          if (n.name () == "SimMatLayer_MaterialLayerName" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/ResourcesGeneral")
-          {
-            ::std::auto_ptr< SimMatLayer_MaterialLayerName_type > r (
-              SimMatLayer_MaterialLayerName_traits::create (i, f, this));
-
-            if (!this->SimMatLayer_MaterialLayerName_)
-            {
-              this->SimMatLayer_MaterialLayerName_.set (r);
-              continue;
-            }
-          }
-
-          // SimMatLayer_MaterialName
-          //
-          if (n.name () == "SimMatLayer_MaterialName" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/ResourcesGeneral")
-          {
-            ::std::auto_ptr< SimMatLayer_MaterialName_type > r (
-              SimMatLayer_MaterialName_traits::create (i, f, this));
-
-            if (!this->SimMatLayer_MaterialName_)
-            {
-              this->SimMatLayer_MaterialName_.set (r);
-              continue;
-            }
-          }
-
-          // SimMatLayer_LayerThickness
-          //
-          if (n.name () == "SimMatLayer_LayerThickness" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/ResourcesGeneral")
-          {
-            if (!this->SimMatLayer_LayerThickness_)
-            {
-              this->SimMatLayer_LayerThickness_.set (SimMatLayer_LayerThickness_traits::create (i, f, this));
-              continue;
-            }
-          }
-
-          break;
-        }
       }
 
       SimMaterialLayer_GlazingMaterialLayer* SimMaterialLayer_GlazingMaterialLayer::
@@ -261,20 +105,6 @@ namespace schema
               ::xml_schema::container* c) const
       {
         return new class SimMaterialLayer_GlazingMaterialLayer (*this, f, c);
-      }
-
-      SimMaterialLayer_GlazingMaterialLayer& SimMaterialLayer_GlazingMaterialLayer::
-      operator= (const SimMaterialLayer_GlazingMaterialLayer& x)
-      {
-        if (this != &x)
-        {
-          static_cast< ::schema::simxml::ResourcesGeneral::SimMaterialLayer& > (*this) = x;
-          this->SimMatLayer_MaterialLayerName_ = x.SimMatLayer_MaterialLayerName_;
-          this->SimMatLayer_MaterialName_ = x.SimMatLayer_MaterialName_;
-          this->SimMatLayer_LayerThickness_ = x.SimMatLayer_LayerThickness_;
-        }
-
-        return *this;
       }
 
       SimMaterialLayer_GlazingMaterialLayer::

@@ -48,6 +48,306 @@ namespace schema
     {
       // SimFlowPlant_ElectricalGenerator_FuelCell
       // 
+
+      const SimFlowPlant_ElectricalGenerator_FuelCell::SimFlowPlant_Name_optional& SimFlowPlant_ElectricalGenerator_FuelCell::
+      SimFlowPlant_Name () const
+      {
+        return this->SimFlowPlant_Name_;
+      }
+
+      SimFlowPlant_ElectricalGenerator_FuelCell::SimFlowPlant_Name_optional& SimFlowPlant_ElectricalGenerator_FuelCell::
+      SimFlowPlant_Name ()
+      {
+        return this->SimFlowPlant_Name_;
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCell::
+      SimFlowPlant_Name (const SimFlowPlant_Name_type& x)
+      {
+        this->SimFlowPlant_Name_.set (x);
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCell::
+      SimFlowPlant_Name (const SimFlowPlant_Name_optional& x)
+      {
+        this->SimFlowPlant_Name_ = x;
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCell::
+      SimFlowPlant_Name (::std::auto_ptr< SimFlowPlant_Name_type > x)
+      {
+        this->SimFlowPlant_Name_.set (x);
+      }
+
+      const SimFlowPlant_ElectricalGenerator_FuelCell::SimFlowPlant_PwrModuleName_optional& SimFlowPlant_ElectricalGenerator_FuelCell::
+      SimFlowPlant_PwrModuleName () const
+      {
+        return this->SimFlowPlant_PwrModuleName_;
+      }
+
+      SimFlowPlant_ElectricalGenerator_FuelCell::SimFlowPlant_PwrModuleName_optional& SimFlowPlant_ElectricalGenerator_FuelCell::
+      SimFlowPlant_PwrModuleName ()
+      {
+        return this->SimFlowPlant_PwrModuleName_;
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCell::
+      SimFlowPlant_PwrModuleName (const SimFlowPlant_PwrModuleName_type& x)
+      {
+        this->SimFlowPlant_PwrModuleName_.set (x);
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCell::
+      SimFlowPlant_PwrModuleName (const SimFlowPlant_PwrModuleName_optional& x)
+      {
+        this->SimFlowPlant_PwrModuleName_ = x;
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCell::
+      SimFlowPlant_PwrModuleName (::std::auto_ptr< SimFlowPlant_PwrModuleName_type > x)
+      {
+        this->SimFlowPlant_PwrModuleName_.set (x);
+      }
+
+      const SimFlowPlant_ElectricalGenerator_FuelCell::SimFlowPlant_AirSupplyName_optional& SimFlowPlant_ElectricalGenerator_FuelCell::
+      SimFlowPlant_AirSupplyName () const
+      {
+        return this->SimFlowPlant_AirSupplyName_;
+      }
+
+      SimFlowPlant_ElectricalGenerator_FuelCell::SimFlowPlant_AirSupplyName_optional& SimFlowPlant_ElectricalGenerator_FuelCell::
+      SimFlowPlant_AirSupplyName ()
+      {
+        return this->SimFlowPlant_AirSupplyName_;
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCell::
+      SimFlowPlant_AirSupplyName (const SimFlowPlant_AirSupplyName_type& x)
+      {
+        this->SimFlowPlant_AirSupplyName_.set (x);
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCell::
+      SimFlowPlant_AirSupplyName (const SimFlowPlant_AirSupplyName_optional& x)
+      {
+        this->SimFlowPlant_AirSupplyName_ = x;
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCell::
+      SimFlowPlant_AirSupplyName (::std::auto_ptr< SimFlowPlant_AirSupplyName_type > x)
+      {
+        this->SimFlowPlant_AirSupplyName_.set (x);
+      }
+
+      const SimFlowPlant_ElectricalGenerator_FuelCell::SimFlowPlant_FuelSupplyName_optional& SimFlowPlant_ElectricalGenerator_FuelCell::
+      SimFlowPlant_FuelSupplyName () const
+      {
+        return this->SimFlowPlant_FuelSupplyName_;
+      }
+
+      SimFlowPlant_ElectricalGenerator_FuelCell::SimFlowPlant_FuelSupplyName_optional& SimFlowPlant_ElectricalGenerator_FuelCell::
+      SimFlowPlant_FuelSupplyName ()
+      {
+        return this->SimFlowPlant_FuelSupplyName_;
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCell::
+      SimFlowPlant_FuelSupplyName (const SimFlowPlant_FuelSupplyName_type& x)
+      {
+        this->SimFlowPlant_FuelSupplyName_.set (x);
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCell::
+      SimFlowPlant_FuelSupplyName (const SimFlowPlant_FuelSupplyName_optional& x)
+      {
+        this->SimFlowPlant_FuelSupplyName_ = x;
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCell::
+      SimFlowPlant_FuelSupplyName (::std::auto_ptr< SimFlowPlant_FuelSupplyName_type > x)
+      {
+        this->SimFlowPlant_FuelSupplyName_.set (x);
+      }
+
+      const SimFlowPlant_ElectricalGenerator_FuelCell::SimFlowPlant_WaterSupplyName_optional& SimFlowPlant_ElectricalGenerator_FuelCell::
+      SimFlowPlant_WaterSupplyName () const
+      {
+        return this->SimFlowPlant_WaterSupplyName_;
+      }
+
+      SimFlowPlant_ElectricalGenerator_FuelCell::SimFlowPlant_WaterSupplyName_optional& SimFlowPlant_ElectricalGenerator_FuelCell::
+      SimFlowPlant_WaterSupplyName ()
+      {
+        return this->SimFlowPlant_WaterSupplyName_;
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCell::
+      SimFlowPlant_WaterSupplyName (const SimFlowPlant_WaterSupplyName_type& x)
+      {
+        this->SimFlowPlant_WaterSupplyName_.set (x);
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCell::
+      SimFlowPlant_WaterSupplyName (const SimFlowPlant_WaterSupplyName_optional& x)
+      {
+        this->SimFlowPlant_WaterSupplyName_ = x;
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCell::
+      SimFlowPlant_WaterSupplyName (::std::auto_ptr< SimFlowPlant_WaterSupplyName_type > x)
+      {
+        this->SimFlowPlant_WaterSupplyName_.set (x);
+      }
+
+      const SimFlowPlant_ElectricalGenerator_FuelCell::SimFlowPlant_AuxHeatName_optional& SimFlowPlant_ElectricalGenerator_FuelCell::
+      SimFlowPlant_AuxHeatName () const
+      {
+        return this->SimFlowPlant_AuxHeatName_;
+      }
+
+      SimFlowPlant_ElectricalGenerator_FuelCell::SimFlowPlant_AuxHeatName_optional& SimFlowPlant_ElectricalGenerator_FuelCell::
+      SimFlowPlant_AuxHeatName ()
+      {
+        return this->SimFlowPlant_AuxHeatName_;
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCell::
+      SimFlowPlant_AuxHeatName (const SimFlowPlant_AuxHeatName_type& x)
+      {
+        this->SimFlowPlant_AuxHeatName_.set (x);
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCell::
+      SimFlowPlant_AuxHeatName (const SimFlowPlant_AuxHeatName_optional& x)
+      {
+        this->SimFlowPlant_AuxHeatName_ = x;
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCell::
+      SimFlowPlant_AuxHeatName (::std::auto_ptr< SimFlowPlant_AuxHeatName_type > x)
+      {
+        this->SimFlowPlant_AuxHeatName_.set (x);
+      }
+
+      const SimFlowPlant_ElectricalGenerator_FuelCell::SimFlowPlant_HeatExchngName_optional& SimFlowPlant_ElectricalGenerator_FuelCell::
+      SimFlowPlant_HeatExchngName () const
+      {
+        return this->SimFlowPlant_HeatExchngName_;
+      }
+
+      SimFlowPlant_ElectricalGenerator_FuelCell::SimFlowPlant_HeatExchngName_optional& SimFlowPlant_ElectricalGenerator_FuelCell::
+      SimFlowPlant_HeatExchngName ()
+      {
+        return this->SimFlowPlant_HeatExchngName_;
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCell::
+      SimFlowPlant_HeatExchngName (const SimFlowPlant_HeatExchngName_type& x)
+      {
+        this->SimFlowPlant_HeatExchngName_.set (x);
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCell::
+      SimFlowPlant_HeatExchngName (const SimFlowPlant_HeatExchngName_optional& x)
+      {
+        this->SimFlowPlant_HeatExchngName_ = x;
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCell::
+      SimFlowPlant_HeatExchngName (::std::auto_ptr< SimFlowPlant_HeatExchngName_type > x)
+      {
+        this->SimFlowPlant_HeatExchngName_.set (x);
+      }
+
+      const SimFlowPlant_ElectricalGenerator_FuelCell::SimFlowPlant_ElecStorageName_optional& SimFlowPlant_ElectricalGenerator_FuelCell::
+      SimFlowPlant_ElecStorageName () const
+      {
+        return this->SimFlowPlant_ElecStorageName_;
+      }
+
+      SimFlowPlant_ElectricalGenerator_FuelCell::SimFlowPlant_ElecStorageName_optional& SimFlowPlant_ElectricalGenerator_FuelCell::
+      SimFlowPlant_ElecStorageName ()
+      {
+        return this->SimFlowPlant_ElecStorageName_;
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCell::
+      SimFlowPlant_ElecStorageName (const SimFlowPlant_ElecStorageName_type& x)
+      {
+        this->SimFlowPlant_ElecStorageName_.set (x);
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCell::
+      SimFlowPlant_ElecStorageName (const SimFlowPlant_ElecStorageName_optional& x)
+      {
+        this->SimFlowPlant_ElecStorageName_ = x;
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCell::
+      SimFlowPlant_ElecStorageName (::std::auto_ptr< SimFlowPlant_ElecStorageName_type > x)
+      {
+        this->SimFlowPlant_ElecStorageName_.set (x);
+      }
+
+      const SimFlowPlant_ElectricalGenerator_FuelCell::SimFlowPlant_verterName_optional& SimFlowPlant_ElectricalGenerator_FuelCell::
+      SimFlowPlant_verterName () const
+      {
+        return this->SimFlowPlant_verterName_;
+      }
+
+      SimFlowPlant_ElectricalGenerator_FuelCell::SimFlowPlant_verterName_optional& SimFlowPlant_ElectricalGenerator_FuelCell::
+      SimFlowPlant_verterName ()
+      {
+        return this->SimFlowPlant_verterName_;
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCell::
+      SimFlowPlant_verterName (const SimFlowPlant_verterName_type& x)
+      {
+        this->SimFlowPlant_verterName_.set (x);
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCell::
+      SimFlowPlant_verterName (const SimFlowPlant_verterName_optional& x)
+      {
+        this->SimFlowPlant_verterName_ = x;
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCell::
+      SimFlowPlant_verterName (::std::auto_ptr< SimFlowPlant_verterName_type > x)
+      {
+        this->SimFlowPlant_verterName_.set (x);
+      }
+
+      const SimFlowPlant_ElectricalGenerator_FuelCell::SimFlowPlant_StackCoolerName_optional& SimFlowPlant_ElectricalGenerator_FuelCell::
+      SimFlowPlant_StackCoolerName () const
+      {
+        return this->SimFlowPlant_StackCoolerName_;
+      }
+
+      SimFlowPlant_ElectricalGenerator_FuelCell::SimFlowPlant_StackCoolerName_optional& SimFlowPlant_ElectricalGenerator_FuelCell::
+      SimFlowPlant_StackCoolerName ()
+      {
+        return this->SimFlowPlant_StackCoolerName_;
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCell::
+      SimFlowPlant_StackCoolerName (const SimFlowPlant_StackCoolerName_type& x)
+      {
+        this->SimFlowPlant_StackCoolerName_.set (x);
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCell::
+      SimFlowPlant_StackCoolerName (const SimFlowPlant_StackCoolerName_optional& x)
+      {
+        this->SimFlowPlant_StackCoolerName_ = x;
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCell::
+      SimFlowPlant_StackCoolerName (::std::auto_ptr< SimFlowPlant_StackCoolerName_type > x)
+      {
+        this->SimFlowPlant_StackCoolerName_.set (x);
+      }
     }
   }
 }
@@ -74,13 +374,33 @@ namespace schema
 
       SimFlowPlant_ElectricalGenerator_FuelCell::
       SimFlowPlant_ElectricalGenerator_FuelCell ()
-      : ::schema::simxml::MepModel::SimFlowPlant_ElectricalGenerator ()
+      : ::schema::simxml::MepModel::SimFlowPlant_ElectricalGenerator (),
+        SimFlowPlant_Name_ (this),
+        SimFlowPlant_PwrModuleName_ (this),
+        SimFlowPlant_AirSupplyName_ (this),
+        SimFlowPlant_FuelSupplyName_ (this),
+        SimFlowPlant_WaterSupplyName_ (this),
+        SimFlowPlant_AuxHeatName_ (this),
+        SimFlowPlant_HeatExchngName_ (this),
+        SimFlowPlant_ElecStorageName_ (this),
+        SimFlowPlant_verterName_ (this),
+        SimFlowPlant_StackCoolerName_ (this)
       {
       }
 
       SimFlowPlant_ElectricalGenerator_FuelCell::
       SimFlowPlant_ElectricalGenerator_FuelCell (const RefId_type& RefId)
-      : ::schema::simxml::MepModel::SimFlowPlant_ElectricalGenerator (RefId)
+      : ::schema::simxml::MepModel::SimFlowPlant_ElectricalGenerator (RefId),
+        SimFlowPlant_Name_ (this),
+        SimFlowPlant_PwrModuleName_ (this),
+        SimFlowPlant_AirSupplyName_ (this),
+        SimFlowPlant_FuelSupplyName_ (this),
+        SimFlowPlant_WaterSupplyName_ (this),
+        SimFlowPlant_AuxHeatName_ (this),
+        SimFlowPlant_HeatExchngName_ (this),
+        SimFlowPlant_ElecStorageName_ (this),
+        SimFlowPlant_verterName_ (this),
+        SimFlowPlant_StackCoolerName_ (this)
       {
       }
 
@@ -88,7 +408,17 @@ namespace schema
       SimFlowPlant_ElectricalGenerator_FuelCell (const SimFlowPlant_ElectricalGenerator_FuelCell& x,
                                                  ::xml_schema::flags f,
                                                  ::xml_schema::container* c)
-      : ::schema::simxml::MepModel::SimFlowPlant_ElectricalGenerator (x, f, c)
+      : ::schema::simxml::MepModel::SimFlowPlant_ElectricalGenerator (x, f, c),
+        SimFlowPlant_Name_ (x.SimFlowPlant_Name_, f, this),
+        SimFlowPlant_PwrModuleName_ (x.SimFlowPlant_PwrModuleName_, f, this),
+        SimFlowPlant_AirSupplyName_ (x.SimFlowPlant_AirSupplyName_, f, this),
+        SimFlowPlant_FuelSupplyName_ (x.SimFlowPlant_FuelSupplyName_, f, this),
+        SimFlowPlant_WaterSupplyName_ (x.SimFlowPlant_WaterSupplyName_, f, this),
+        SimFlowPlant_AuxHeatName_ (x.SimFlowPlant_AuxHeatName_, f, this),
+        SimFlowPlant_HeatExchngName_ (x.SimFlowPlant_HeatExchngName_, f, this),
+        SimFlowPlant_ElecStorageName_ (x.SimFlowPlant_ElecStorageName_, f, this),
+        SimFlowPlant_verterName_ (x.SimFlowPlant_verterName_, f, this),
+        SimFlowPlant_StackCoolerName_ (x.SimFlowPlant_StackCoolerName_, f, this)
       {
       }
 
@@ -96,8 +426,179 @@ namespace schema
       SimFlowPlant_ElectricalGenerator_FuelCell (const ::xercesc::DOMElement& e,
                                                  ::xml_schema::flags f,
                                                  ::xml_schema::container* c)
-      : ::schema::simxml::MepModel::SimFlowPlant_ElectricalGenerator (e, f, c)
+      : ::schema::simxml::MepModel::SimFlowPlant_ElectricalGenerator (e, f | ::xml_schema::flags::base, c),
+        SimFlowPlant_Name_ (this),
+        SimFlowPlant_PwrModuleName_ (this),
+        SimFlowPlant_AirSupplyName_ (this),
+        SimFlowPlant_FuelSupplyName_ (this),
+        SimFlowPlant_WaterSupplyName_ (this),
+        SimFlowPlant_AuxHeatName_ (this),
+        SimFlowPlant_HeatExchngName_ (this),
+        SimFlowPlant_ElecStorageName_ (this),
+        SimFlowPlant_verterName_ (this),
+        SimFlowPlant_StackCoolerName_ (this)
       {
+        if ((f & ::xml_schema::flags::base) == 0)
+        {
+          ::xsd::cxx::xml::dom::parser< char > p (e, true, false, true);
+          this->parse (p, f);
+        }
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCell::
+      parse (::xsd::cxx::xml::dom::parser< char >& p,
+             ::xml_schema::flags f)
+      {
+        this->::schema::simxml::MepModel::SimFlowPlant_ElectricalGenerator::parse (p, f);
+
+        for (; p.more_content (); p.next_content (false))
+        {
+          const ::xercesc::DOMElement& i (p.cur_element ());
+          const ::xsd::cxx::xml::qualified_name< char > n (
+            ::xsd::cxx::xml::dom::name< char > (i));
+
+          // SimFlowPlant_Name
+          //
+          if (n.name () == "SimFlowPlant_Name" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            ::std::auto_ptr< SimFlowPlant_Name_type > r (
+              SimFlowPlant_Name_traits::create (i, f, this));
+
+            if (!this->SimFlowPlant_Name_)
+            {
+              this->SimFlowPlant_Name_.set (r);
+              continue;
+            }
+          }
+
+          // SimFlowPlant_PwrModuleName
+          //
+          if (n.name () == "SimFlowPlant_PwrModuleName" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            ::std::auto_ptr< SimFlowPlant_PwrModuleName_type > r (
+              SimFlowPlant_PwrModuleName_traits::create (i, f, this));
+
+            if (!this->SimFlowPlant_PwrModuleName_)
+            {
+              this->SimFlowPlant_PwrModuleName_.set (r);
+              continue;
+            }
+          }
+
+          // SimFlowPlant_AirSupplyName
+          //
+          if (n.name () == "SimFlowPlant_AirSupplyName" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            ::std::auto_ptr< SimFlowPlant_AirSupplyName_type > r (
+              SimFlowPlant_AirSupplyName_traits::create (i, f, this));
+
+            if (!this->SimFlowPlant_AirSupplyName_)
+            {
+              this->SimFlowPlant_AirSupplyName_.set (r);
+              continue;
+            }
+          }
+
+          // SimFlowPlant_FuelSupplyName
+          //
+          if (n.name () == "SimFlowPlant_FuelSupplyName" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            ::std::auto_ptr< SimFlowPlant_FuelSupplyName_type > r (
+              SimFlowPlant_FuelSupplyName_traits::create (i, f, this));
+
+            if (!this->SimFlowPlant_FuelSupplyName_)
+            {
+              this->SimFlowPlant_FuelSupplyName_.set (r);
+              continue;
+            }
+          }
+
+          // SimFlowPlant_WaterSupplyName
+          //
+          if (n.name () == "SimFlowPlant_WaterSupplyName" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            ::std::auto_ptr< SimFlowPlant_WaterSupplyName_type > r (
+              SimFlowPlant_WaterSupplyName_traits::create (i, f, this));
+
+            if (!this->SimFlowPlant_WaterSupplyName_)
+            {
+              this->SimFlowPlant_WaterSupplyName_.set (r);
+              continue;
+            }
+          }
+
+          // SimFlowPlant_AuxHeatName
+          //
+          if (n.name () == "SimFlowPlant_AuxHeatName" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            ::std::auto_ptr< SimFlowPlant_AuxHeatName_type > r (
+              SimFlowPlant_AuxHeatName_traits::create (i, f, this));
+
+            if (!this->SimFlowPlant_AuxHeatName_)
+            {
+              this->SimFlowPlant_AuxHeatName_.set (r);
+              continue;
+            }
+          }
+
+          // SimFlowPlant_HeatExchngName
+          //
+          if (n.name () == "SimFlowPlant_HeatExchngName" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            ::std::auto_ptr< SimFlowPlant_HeatExchngName_type > r (
+              SimFlowPlant_HeatExchngName_traits::create (i, f, this));
+
+            if (!this->SimFlowPlant_HeatExchngName_)
+            {
+              this->SimFlowPlant_HeatExchngName_.set (r);
+              continue;
+            }
+          }
+
+          // SimFlowPlant_ElecStorageName
+          //
+          if (n.name () == "SimFlowPlant_ElecStorageName" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            ::std::auto_ptr< SimFlowPlant_ElecStorageName_type > r (
+              SimFlowPlant_ElecStorageName_traits::create (i, f, this));
+
+            if (!this->SimFlowPlant_ElecStorageName_)
+            {
+              this->SimFlowPlant_ElecStorageName_.set (r);
+              continue;
+            }
+          }
+
+          // SimFlowPlant_verterName
+          //
+          if (n.name () == "SimFlowPlant_verterName" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            ::std::auto_ptr< SimFlowPlant_verterName_type > r (
+              SimFlowPlant_verterName_traits::create (i, f, this));
+
+            if (!this->SimFlowPlant_verterName_)
+            {
+              this->SimFlowPlant_verterName_.set (r);
+              continue;
+            }
+          }
+
+          // SimFlowPlant_StackCoolerName
+          //
+          if (n.name () == "SimFlowPlant_StackCoolerName" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            ::std::auto_ptr< SimFlowPlant_StackCoolerName_type > r (
+              SimFlowPlant_StackCoolerName_traits::create (i, f, this));
+
+            if (!this->SimFlowPlant_StackCoolerName_)
+            {
+              this->SimFlowPlant_StackCoolerName_.set (r);
+              continue;
+            }
+          }
+
+          break;
+        }
       }
 
       SimFlowPlant_ElectricalGenerator_FuelCell* SimFlowPlant_ElectricalGenerator_FuelCell::
@@ -105,6 +606,27 @@ namespace schema
               ::xml_schema::container* c) const
       {
         return new class SimFlowPlant_ElectricalGenerator_FuelCell (*this, f, c);
+      }
+
+      SimFlowPlant_ElectricalGenerator_FuelCell& SimFlowPlant_ElectricalGenerator_FuelCell::
+      operator= (const SimFlowPlant_ElectricalGenerator_FuelCell& x)
+      {
+        if (this != &x)
+        {
+          static_cast< ::schema::simxml::MepModel::SimFlowPlant_ElectricalGenerator& > (*this) = x;
+          this->SimFlowPlant_Name_ = x.SimFlowPlant_Name_;
+          this->SimFlowPlant_PwrModuleName_ = x.SimFlowPlant_PwrModuleName_;
+          this->SimFlowPlant_AirSupplyName_ = x.SimFlowPlant_AirSupplyName_;
+          this->SimFlowPlant_FuelSupplyName_ = x.SimFlowPlant_FuelSupplyName_;
+          this->SimFlowPlant_WaterSupplyName_ = x.SimFlowPlant_WaterSupplyName_;
+          this->SimFlowPlant_AuxHeatName_ = x.SimFlowPlant_AuxHeatName_;
+          this->SimFlowPlant_HeatExchngName_ = x.SimFlowPlant_HeatExchngName_;
+          this->SimFlowPlant_ElecStorageName_ = x.SimFlowPlant_ElecStorageName_;
+          this->SimFlowPlant_verterName_ = x.SimFlowPlant_verterName_;
+          this->SimFlowPlant_StackCoolerName_ = x.SimFlowPlant_StackCoolerName_;
+        }
+
+        return *this;
       }
 
       SimFlowPlant_ElectricalGenerator_FuelCell::

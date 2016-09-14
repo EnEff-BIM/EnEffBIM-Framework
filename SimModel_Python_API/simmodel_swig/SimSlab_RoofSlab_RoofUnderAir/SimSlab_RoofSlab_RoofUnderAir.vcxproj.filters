@@ -25,6 +25,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="SimSlab_RoofSlab_RoofUnderAir.i" />
+    <CustomBuild Include="SimSlab_RoofSlab_RoofUnderAir.i" />
   </ItemGroup>
 </Project>

@@ -168,6 +168,36 @@ namespace schema
       {
         this->ContainedBldgElementTypeDefs_.set (x);
       }
+
+      const SimBldgStoryType::ClassRef_ConstEntByFunction_optional& SimBldgStoryType::
+      ClassRef_ConstEntByFunction () const
+      {
+        return this->ClassRef_ConstEntByFunction_;
+      }
+
+      SimBldgStoryType::ClassRef_ConstEntByFunction_optional& SimBldgStoryType::
+      ClassRef_ConstEntByFunction ()
+      {
+        return this->ClassRef_ConstEntByFunction_;
+      }
+
+      void SimBldgStoryType::
+      ClassRef_ConstEntByFunction (const ClassRef_ConstEntByFunction_type& x)
+      {
+        this->ClassRef_ConstEntByFunction_.set (x);
+      }
+
+      void SimBldgStoryType::
+      ClassRef_ConstEntByFunction (const ClassRef_ConstEntByFunction_optional& x)
+      {
+        this->ClassRef_ConstEntByFunction_ = x;
+      }
+
+      void SimBldgStoryType::
+      ClassRef_ConstEntByFunction (::std::auto_ptr< ClassRef_ConstEntByFunction_type > x)
+      {
+        this->ClassRef_ConstEntByFunction_.set (x);
+      }
     }
   }
 }
@@ -198,7 +228,8 @@ namespace schema
         RepresentationMaps_ (this),
         Tag_ (this),
         ContainedSpaceTypeDefs_ (this),
-        ContainedBldgElementTypeDefs_ (this)
+        ContainedBldgElementTypeDefs_ (this),
+        ClassRef_ConstEntByFunction_ (this)
       {
       }
 
@@ -208,7 +239,8 @@ namespace schema
         RepresentationMaps_ (this),
         Tag_ (this),
         ContainedSpaceTypeDefs_ (this),
-        ContainedBldgElementTypeDefs_ (this)
+        ContainedBldgElementTypeDefs_ (this),
+        ClassRef_ConstEntByFunction_ (this)
       {
       }
 
@@ -220,7 +252,8 @@ namespace schema
         RepresentationMaps_ (x.RepresentationMaps_, f, this),
         Tag_ (x.Tag_, f, this),
         ContainedSpaceTypeDefs_ (x.ContainedSpaceTypeDefs_, f, this),
-        ContainedBldgElementTypeDefs_ (x.ContainedBldgElementTypeDefs_, f, this)
+        ContainedBldgElementTypeDefs_ (x.ContainedBldgElementTypeDefs_, f, this),
+        ClassRef_ConstEntByFunction_ (x.ClassRef_ConstEntByFunction_, f, this)
       {
       }
 
@@ -232,7 +265,8 @@ namespace schema
         RepresentationMaps_ (this),
         Tag_ (this),
         ContainedSpaceTypeDefs_ (this),
-        ContainedBldgElementTypeDefs_ (this)
+        ContainedBldgElementTypeDefs_ (this),
+        ClassRef_ConstEntByFunction_ (this)
       {
         if ((f & ::xml_schema::flags::base) == 0)
         {
@@ -309,6 +343,20 @@ namespace schema
             }
           }
 
+          // ClassRef_ConstEntByFunction
+          //
+          if (n.name () == "ClassRef_ConstEntByFunction" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          {
+            ::std::auto_ptr< ClassRef_ConstEntByFunction_type > r (
+              ClassRef_ConstEntByFunction_traits::create (i, f, this));
+
+            if (!this->ClassRef_ConstEntByFunction_)
+            {
+              this->ClassRef_ConstEntByFunction_.set (r);
+              continue;
+            }
+          }
+
           break;
         }
       }
@@ -330,6 +378,7 @@ namespace schema
           this->Tag_ = x.Tag_;
           this->ContainedSpaceTypeDefs_ = x.ContainedSpaceTypeDefs_;
           this->ContainedBldgElementTypeDefs_ = x.ContainedBldgElementTypeDefs_;
+          this->ClassRef_ConstEntByFunction_ = x.ClassRef_ConstEntByFunction_;
         }
 
         return *this;

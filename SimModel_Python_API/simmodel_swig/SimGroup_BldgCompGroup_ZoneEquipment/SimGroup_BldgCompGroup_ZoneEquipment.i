@@ -8,6 +8,8 @@
 using namespace xsd::cxx::tree;
 %}
 
+%ignore xsd::cxx::tree::sequence<::schema::simxml::SimModelCore::SimGroup_BldgCompGroup_ZoneEquipment, false>::getValue(int n);
+
 //3. class auto ptr
 %auto_ptr(::schema::simxml::SimModelCore::SimGroup_BldgCompGroup_ZoneEquipment)
 

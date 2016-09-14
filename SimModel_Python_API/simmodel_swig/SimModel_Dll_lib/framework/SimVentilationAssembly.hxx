@@ -257,7 +257,7 @@ namespace schema
   {
     namespace BuildingModel
     {
-      class SimVentilationAssembly: public ::schema::simxml::BuildingModel::SimBuildingElementAssembly
+      class SimVentilationAssembly: public ::schema::simxml::SimModelCore::SimBuildingElementAssembly
       {
         public:
         // Representation

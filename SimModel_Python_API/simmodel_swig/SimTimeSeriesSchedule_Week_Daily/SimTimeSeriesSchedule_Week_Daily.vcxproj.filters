@@ -25,6 +25,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="SimTimeSeriesSchedule_Week_Daily.i" />
+    <CustomBuild Include="SimTimeSeriesSchedule_Week_Daily.i" />
   </ItemGroup>
 </Project>

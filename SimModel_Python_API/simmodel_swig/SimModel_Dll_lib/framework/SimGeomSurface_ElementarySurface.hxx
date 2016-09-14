@@ -50,7 +50,7 @@
 #include <xsd/cxx/config.hxx>
 
 #if (XSD_INT_VERSION != 4000000L)
-#error XSD runtime version mismatch
+//#error XSD runtime version mismatch
 #endif
 
 #include <xsd/cxx/pre.hxx>
@@ -263,8 +263,7 @@ namespace schema
         // Position
         //
         typedef ::xml_schema::idref Position_type;
-        typedef ::xsd::cxx::tree::optional< Position_type
-, false > Position_optional;
+        typedef ::xsd::cxx::tree::optional< Position_type, false > Position_optional;
         typedef ::xsd::cxx::tree::traits< Position_type, char > Position_traits;
 
         const Position_optional&

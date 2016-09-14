@@ -25,6 +25,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="SimWindow_Window_Exterior.i" />
+    <CustomBuild Include="SimWindow_Window_Exterior.i" />
   </ItemGroup>
 </Project>

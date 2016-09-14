@@ -50,7 +50,7 @@
 #include <xsd/cxx/config.hxx>
 
 #if (XSD_INT_VERSION != 4000000L)
-////#error XSD runtime version mismatch
+//#error XSD runtime version mismatch
 #endif
 
 #include <xsd/cxx/pre.hxx>
@@ -323,24 +323,6 @@ namespace schema
         void
         ObjectCreationParams (::std::auto_ptr< ObjectCreationParams_type > p);
 
-        // IsTemplateObject
-        //
-        typedef ::xml_schema::boolean IsTemplateObject_type;
-        typedef ::xsd::cxx::tree::optional< IsTemplateObject_type > IsTemplateObject_optional;
-        typedef ::xsd::cxx::tree::traits< IsTemplateObject_type, char > IsTemplateObject_traits;
-
-        const IsTemplateObject_optional&
-        IsTemplateObject () const;
-
-        IsTemplateObject_optional&
-        IsTemplateObject ();
-
-        void
-        IsTemplateObject (const IsTemplateObject_type& x);
-
-        void
-        IsTemplateObject (const IsTemplateObject_optional& x);
-
         // Constructors.
         //
         SimObject ();
@@ -376,7 +358,6 @@ namespace schema
         TypeDefinition_optional TypeDefinition_;
         ObjectType_optional ObjectType_;
         ObjectCreationParams_optional ObjectCreationParams_;
-        IsTemplateObject_optional IsTemplateObject_;
       };
     }
   }

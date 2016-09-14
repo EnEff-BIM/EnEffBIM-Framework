@@ -126,135 +126,6 @@ class SimFlowFitting(base.SimDistributionFlowElement):
 SimFlowFitting_swigregister = _SimFlowFitting_Default_Default.SimFlowFitting_swigregister
 SimFlowFitting_swigregister(SimFlowFitting)
 
-class SimFlowFitting_FlowElementProxy(SimFlowFitting):
-    __swig_setmethods__ = {}
-    for _s in [SimFlowFitting]:
-        __swig_setmethods__.update(getattr(_s, '__swig_setmethods__', {}))
-    __setattr__ = lambda self, name, value: _swig_setattr(self, SimFlowFitting_FlowElementProxy, name, value)
-    __swig_getmethods__ = {}
-    for _s in [SimFlowFitting]:
-        __swig_getmethods__.update(getattr(_s, '__swig_getmethods__', {}))
-    __getattr__ = lambda self, name: _swig_getattr(self, SimFlowFitting_FlowElementProxy, name)
-    __repr__ = _swig_repr
-
-    def __init__(self, *args):
-        this = _SimFlowFitting_Default_Default.new_SimFlowFitting_FlowElementProxy(*args)
-        try:
-            self.this.append(this)
-        except:
-            self.this = this
-
-    def _clone(self, f=0, c=None):
-        return _SimFlowFitting_Default_Default.SimFlowFitting_FlowElementProxy__clone(self, f, c)
-    __swig_destroy__ = _SimFlowFitting_Default_Default.delete_SimFlowFitting_FlowElementProxy
-    __del__ = lambda self: None
-SimFlowFitting_FlowElementProxy_swigregister = _SimFlowFitting_Default_Default.SimFlowFitting_FlowElementProxy_swigregister
-SimFlowFitting_FlowElementProxy_swigregister(SimFlowFitting_FlowElementProxy)
-
-class SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop(SimFlowFitting_FlowElementProxy):
-    __swig_setmethods__ = {}
-    for _s in [SimFlowFitting_FlowElementProxy]:
-        __swig_setmethods__.update(getattr(_s, '__swig_setmethods__', {}))
-    __setattr__ = lambda self, name, value: _swig_setattr(self, SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop, name, value)
-    __swig_getmethods__ = {}
-    for _s in [SimFlowFitting_FlowElementProxy]:
-        __swig_getmethods__.update(getattr(_s, '__swig_getmethods__', {}))
-    __getattr__ = lambda self, name: _swig_getattr(self, SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop, name)
-    __repr__ = _swig_repr
-
-    def SimFlowFitting_Name(self, *args):
-        return _SimFlowFitting_Default_Default.SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop_SimFlowFitting_Name(self, *args)
-
-    def SimFlowFitting_LoopType(self, *args):
-        return _SimFlowFitting_Default_Default.SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop_SimFlowFitting_LoopType(self, *args)
-
-    def SimFlowFitting_InletCount(self, *args):
-        return _SimFlowFitting_Default_Default.SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop_SimFlowFitting_InletCount(self, *args)
-
-    def SimFlowFitting_OutletCount(self, *args):
-        return _SimFlowFitting_Default_Default.SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop_SimFlowFitting_OutletCount(self, *args)
-
-    def __init__(self, *args):
-        this = _SimFlowFitting_Default_Default.new_SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop(*args)
-        try:
-            self.this.append(this)
-        except:
-            self.this = this
-
-    def _clone(self, f=0, c=None):
-        return _SimFlowFitting_Default_Default.SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop__clone(self, f, c)
-    __swig_destroy__ = _SimFlowFitting_Default_Default.delete_SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop
-    __del__ = lambda self: None
-SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop_swigregister = _SimFlowFitting_Default_Default.SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop_swigregister
-SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop_swigregister(SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop)
-
-class SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop_sequence(base.sequence_common):
-    __swig_setmethods__ = {}
-    for _s in [base.sequence_common]:
-        __swig_setmethods__.update(getattr(_s, '__swig_setmethods__', {}))
-    __setattr__ = lambda self, name, value: _swig_setattr(self, SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop_sequence, name, value)
-    __swig_getmethods__ = {}
-    for _s in [base.sequence_common]:
-        __swig_getmethods__.update(getattr(_s, '__swig_getmethods__', {}))
-    __getattr__ = lambda self, name: _swig_getattr(self, SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop_sequence, name)
-    __repr__ = _swig_repr
-
-    def __init__(self, *args):
-        this = _SimFlowFitting_Default_Default.new_SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop_sequence(*args)
-        try:
-            self.this.append(this)
-        except:
-            self.this = this
-
-    def assign(self, n, x):
-        return _SimFlowFitting_Default_Default.SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop_sequence_assign(self, n, x)
-
-    def begin(self, *args):
-        return _SimFlowFitting_Default_Default.SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop_sequence_begin(self, *args)
-
-    def end(self, *args):
-        return _SimFlowFitting_Default_Default.SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop_sequence_end(self, *args)
-
-    def rbegin(self, *args):
-        return _SimFlowFitting_Default_Default.SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop_sequence_rbegin(self, *args)
-
-    def rend(self, *args):
-        return _SimFlowFitting_Default_Default.SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop_sequence_rend(self, *args)
-
-    def at(self, *args):
-        return _SimFlowFitting_Default_Default.SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop_sequence_at(self, *args)
-
-    def front(self, *args):
-        return _SimFlowFitting_Default_Default.SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop_sequence_front(self, *args)
-
-    def back(self, *args):
-        return _SimFlowFitting_Default_Default.SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop_sequence_back(self, *args)
-
-    def push_back(self, *args):
-        return _SimFlowFitting_Default_Default.SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop_sequence_push_back(self, *args)
-
-    def pop_back(self):
-        return _SimFlowFitting_Default_Default.SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop_sequence_pop_back(self)
-
-    def detach_back(self, pop=True):
-        return _SimFlowFitting_Default_Default.SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop_sequence_detach_back(self, pop)
-
-    def insert(self, *args):
-        return _SimFlowFitting_Default_Default.SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop_sequence_insert(self, *args)
-
-    def erase(self, *args):
-        return _SimFlowFitting_Default_Default.SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop_sequence_erase(self, *args)
-
-    def detach(self, position, r, erase=True):
-        return _SimFlowFitting_Default_Default.SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop_sequence_detach(self, position, r, erase)
-
-    def swap(self, x):
-        return _SimFlowFitting_Default_Default.SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop_sequence_swap(self, x)
-    __swig_destroy__ = _SimFlowFitting_Default_Default.delete_SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop_sequence
-    __del__ = lambda self: None
-SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop_sequence_swigregister = _SimFlowFitting_Default_Default.SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop_sequence_swigregister
-SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop_sequence_swigregister(SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop_sequence)
-
 class SimFlowFitting_Default(SimFlowFitting):
     __swig_setmethods__ = {}
     for _s in [SimFlowFitting]:
@@ -290,6 +161,9 @@ class SimFlowFitting_Default_Default(SimFlowFitting_Default):
         __swig_getmethods__.update(getattr(_s, '__swig_getmethods__', {}))
     __getattr__ = lambda self, name: _swig_getattr(self, SimFlowFitting_Default_Default, name)
     __repr__ = _swig_repr
+
+    def InteriorRoughnessCoeff(self, *args):
+        return _SimFlowFitting_Default_Default.SimFlowFitting_Default_Default_InteriorRoughnessCoeff(self, *args)
 
     def __init__(self, *args):
         this = _SimFlowFitting_Default_Default.new_SimFlowFitting_Default_Default(*args)

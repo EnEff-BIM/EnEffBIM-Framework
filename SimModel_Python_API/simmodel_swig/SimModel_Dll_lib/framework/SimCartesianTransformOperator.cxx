@@ -40,6 +40,8 @@
 
 #include "SimCartesianTransformOperator.hxx"
 
+#include "doublelist.hxx"
+
 namespace schema
 {
   namespace simxml
@@ -162,6 +164,36 @@ namespace schema
       {
         this->Scale_ = x;
       }
+
+      const SimCartesianTransformOperator::Coordinates_optional& SimCartesianTransformOperator::
+      Coordinates () const
+      {
+        return this->Coordinates_;
+      }
+
+      SimCartesianTransformOperator::Coordinates_optional& SimCartesianTransformOperator::
+      Coordinates ()
+      {
+        return this->Coordinates_;
+      }
+
+      void SimCartesianTransformOperator::
+      Coordinates (const Coordinates_type& x)
+      {
+        this->Coordinates_.set (x);
+      }
+
+      void SimCartesianTransformOperator::
+      Coordinates (const Coordinates_optional& x)
+      {
+        this->Coordinates_ = x;
+      }
+
+      void SimCartesianTransformOperator::
+      Coordinates (::std::auto_ptr< Coordinates_type > x)
+      {
+        this->Coordinates_.set (x);
+      }
     }
   }
 }
@@ -192,7 +224,8 @@ namespace schema
         Axis1_ (this),
         Axis2_ (this),
         LocalOrigin_ (this),
-        Scale_ (this)
+        Scale_ (this),
+        Coordinates_ (this)
       {
       }
 
@@ -202,7 +235,8 @@ namespace schema
         Axis1_ (this),
         Axis2_ (this),
         LocalOrigin_ (this),
-        Scale_ (this)
+        Scale_ (this),
+        Coordinates_ (this)
       {
       }
 
@@ -214,7 +248,8 @@ namespace schema
         Axis1_ (x.Axis1_, f, this),
         Axis2_ (x.Axis2_, f, this),
         LocalOrigin_ (x.LocalOrigin_, f, this),
-        Scale_ (x.Scale_, f, this)
+        Scale_ (x.Scale_, f, this),
+        Coordinates_ (x.Coordinates_, f, this)
       {
       }
 
@@ -226,7 +261,8 @@ namespace schema
         Axis1_ (this),
         Axis2_ (this),
         LocalOrigin_ (this),
-        Scale_ (this)
+        Scale_ (this),
+        Coordinates_ (this)
       {
         if ((f & ::xml_schema::flags::base) == 0)
         {
@@ -300,6 +336,20 @@ namespace schema
             }
           }
 
+          // Coordinates
+          //
+          if (n.name () == "Coordinates" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/ResourcesGeometry")
+          {
+            ::std::auto_ptr< Coordinates_type > r (
+              Coordinates_traits::create (i, f, this));
+
+            if (!this->Coordinates_)
+            {
+              this->Coordinates_.set (r);
+              continue;
+            }
+          }
+
           break;
         }
       }
@@ -321,6 +371,7 @@ namespace schema
           this->Axis2_ = x.Axis2_;
           this->LocalOrigin_ = x.LocalOrigin_;
           this->Scale_ = x.Scale_;
+          this->Coordinates_ = x.Coordinates_;
         }
 
         return *this;

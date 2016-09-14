@@ -108,6 +108,36 @@ namespace schema
       {
         this->Tag_.set (x);
       }
+
+      const SimSlabType::MaterialLayerSet_optional& SimSlabType::
+      MaterialLayerSet () const
+      {
+        return this->MaterialLayerSet_;
+      }
+
+      SimSlabType::MaterialLayerSet_optional& SimSlabType::
+      MaterialLayerSet ()
+      {
+        return this->MaterialLayerSet_;
+      }
+
+      void SimSlabType::
+      MaterialLayerSet (const MaterialLayerSet_type& x)
+      {
+        this->MaterialLayerSet_.set (x);
+      }
+
+      void SimSlabType::
+      MaterialLayerSet (const MaterialLayerSet_optional& x)
+      {
+        this->MaterialLayerSet_ = x;
+      }
+
+      void SimSlabType::
+      MaterialLayerSet (::std::auto_ptr< MaterialLayerSet_type > x)
+      {
+        this->MaterialLayerSet_.set (x);
+      }
     }
   }
 }
@@ -136,7 +166,8 @@ namespace schema
       SimSlabType ()
       : ::schema::simxml::SimModelCore::SimObjectTypeDefinition (),
         RepresentationMaps_ (this),
-        Tag_ (this)
+        Tag_ (this),
+        MaterialLayerSet_ (this)
       {
       }
 
@@ -144,7 +175,8 @@ namespace schema
       SimSlabType (const RefId_type& RefId)
       : ::schema::simxml::SimModelCore::SimObjectTypeDefinition (RefId),
         RepresentationMaps_ (this),
-        Tag_ (this)
+        Tag_ (this),
+        MaterialLayerSet_ (this)
       {
       }
 
@@ -154,7 +186,8 @@ namespace schema
                    ::xml_schema::container* c)
       : ::schema::simxml::SimModelCore::SimObjectTypeDefinition (x, f, c),
         RepresentationMaps_ (x.RepresentationMaps_, f, this),
-        Tag_ (x.Tag_, f, this)
+        Tag_ (x.Tag_, f, this),
+        MaterialLayerSet_ (x.MaterialLayerSet_, f, this)
       {
       }
 
@@ -164,7 +197,8 @@ namespace schema
                    ::xml_schema::container* c)
       : ::schema::simxml::SimModelCore::SimObjectTypeDefinition (e, f | ::xml_schema::flags::base, c),
         RepresentationMaps_ (this),
-        Tag_ (this)
+        Tag_ (this),
+        MaterialLayerSet_ (this)
       {
         if ((f & ::xml_schema::flags::base) == 0)
         {
@@ -213,6 +247,20 @@ namespace schema
             }
           }
 
+          // MaterialLayerSet
+          //
+          if (n.name () == "MaterialLayerSet" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          {
+            ::std::auto_ptr< MaterialLayerSet_type > r (
+              MaterialLayerSet_traits::create (i, f, this));
+
+            if (!this->MaterialLayerSet_)
+            {
+              this->MaterialLayerSet_.set (r);
+              continue;
+            }
+          }
+
           break;
         }
       }
@@ -232,6 +280,7 @@ namespace schema
           static_cast< ::schema::simxml::SimModelCore::SimObjectTypeDefinition& > (*this) = x;
           this->RepresentationMaps_ = x.RepresentationMaps_;
           this->Tag_ = x.Tag_;
+          this->MaterialLayerSet_ = x.MaterialLayerSet_;
         }
 
         return *this;

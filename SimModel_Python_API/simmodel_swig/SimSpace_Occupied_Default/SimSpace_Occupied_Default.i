@@ -8,6 +8,8 @@
 using namespace xsd::cxx::tree;
 %}
 
+%ignore xsd::cxx::tree::sequence<::schema::simxml::BuildingModel::SimSpace_Occupied_Default, false>::getValue(int n);
+
 //3. class auto ptr
 %auto_ptr(::schema::simxml::BuildingModel::SimSpace_Occupied_Default)
 %auto_ptr(::schema::simxml::BuildingModel::T24KitchExhHoodDutyList)

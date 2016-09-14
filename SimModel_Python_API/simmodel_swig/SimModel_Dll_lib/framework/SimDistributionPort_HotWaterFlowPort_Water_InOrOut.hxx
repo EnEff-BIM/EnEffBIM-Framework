@@ -50,7 +50,7 @@
 #include <xsd/cxx/config.hxx>
 
 #if (XSD_INT_VERSION != 4000000L)
-#error XSD runtime version mismatch
+//#error XSD runtime version mismatch
 #endif
 
 #include <xsd/cxx/pre.hxx>
@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
-      class SimDistributionPort_HotWaterFlowPort_Water_InOrOut: public ::schema::simxml::ResourcesGeneral::SimDistributionPort_HotWaterFlowPort
+      class __declspec(dllexport) SimDistributionPort_HotWaterFlowPort_Water_InOrOut: public ::schema::simxml::ResourcesGeneral::SimDistributionPort_HotWaterFlowPort
       {
         public:
         // Constructors.

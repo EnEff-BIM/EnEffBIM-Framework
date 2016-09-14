@@ -40,6 +40,8 @@
 
 #include "SimLoop.hxx"
 
+#include "doublelist.hxx"
+
 namespace schema
 {
   namespace simxml
@@ -48,6 +50,36 @@ namespace schema
     {
       // SimLoop
       // 
+
+      const SimLoop::Coordinates_optional& SimLoop::
+      Coordinates () const
+      {
+        return this->Coordinates_;
+      }
+
+      SimLoop::Coordinates_optional& SimLoop::
+      Coordinates ()
+      {
+        return this->Coordinates_;
+      }
+
+      void SimLoop::
+      Coordinates (const Coordinates_type& x)
+      {
+        this->Coordinates_.set (x);
+      }
+
+      void SimLoop::
+      Coordinates (const Coordinates_optional& x)
+      {
+        this->Coordinates_ = x;
+      }
+
+      void SimLoop::
+      Coordinates (::std::auto_ptr< Coordinates_type > x)
+      {
+        this->Coordinates_.set (x);
+      }
     }
   }
 }
@@ -74,13 +106,15 @@ namespace schema
 
       SimLoop::
       SimLoop ()
-      : ::schema::simxml::SimModelCore::SimTopologicalRepresentationItem ()
+      : ::schema::simxml::SimModelCore::SimTopologicalRepresentationItem (),
+        Coordinates_ (this)
       {
       }
 
       SimLoop::
       SimLoop (const RefId_type& RefId)
-      : ::schema::simxml::SimModelCore::SimTopologicalRepresentationItem (RefId)
+      : ::schema::simxml::SimModelCore::SimTopologicalRepresentationItem (RefId),
+        Coordinates_ (this)
       {
       }
 
@@ -88,7 +122,8 @@ namespace schema
       SimLoop (const SimLoop& x,
                ::xml_schema::flags f,
                ::xml_schema::container* c)
-      : ::schema::simxml::SimModelCore::SimTopologicalRepresentationItem (x, f, c)
+      : ::schema::simxml::SimModelCore::SimTopologicalRepresentationItem (x, f, c),
+        Coordinates_ (x.Coordinates_, f, this)
       {
       }
 
@@ -96,8 +131,44 @@ namespace schema
       SimLoop (const ::xercesc::DOMElement& e,
                ::xml_schema::flags f,
                ::xml_schema::container* c)
-      : ::schema::simxml::SimModelCore::SimTopologicalRepresentationItem (e, f, c)
+      : ::schema::simxml::SimModelCore::SimTopologicalRepresentationItem (e, f | ::xml_schema::flags::base, c),
+        Coordinates_ (this)
       {
+        if ((f & ::xml_schema::flags::base) == 0)
+        {
+          ::xsd::cxx::xml::dom::parser< char > p (e, true, false, true);
+          this->parse (p, f);
+        }
+      }
+
+      void SimLoop::
+      parse (::xsd::cxx::xml::dom::parser< char >& p,
+             ::xml_schema::flags f)
+      {
+        this->::schema::simxml::SimModelCore::SimTopologicalRepresentationItem::parse (p, f);
+
+        for (; p.more_content (); p.next_content (false))
+        {
+          const ::xercesc::DOMElement& i (p.cur_element ());
+          const ::xsd::cxx::xml::qualified_name< char > n (
+            ::xsd::cxx::xml::dom::name< char > (i));
+
+          // Coordinates
+          //
+          if (n.name () == "Coordinates" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/ResourcesGeometry")
+          {
+            ::std::auto_ptr< Coordinates_type > r (
+              Coordinates_traits::create (i, f, this));
+
+            if (!this->Coordinates_)
+            {
+              this->Coordinates_.set (r);
+              continue;
+            }
+          }
+
+          break;
+        }
       }
 
       SimLoop* SimLoop::
@@ -105,6 +176,18 @@ namespace schema
               ::xml_schema::container* c) const
       {
         return new class SimLoop (*this, f, c);
+      }
+
+      SimLoop& SimLoop::
+      operator= (const SimLoop& x)
+      {
+        if (this != &x)
+        {
+          static_cast< ::schema::simxml::SimModelCore::SimTopologicalRepresentationItem& > (*this) = x;
+          this->Coordinates_ = x.Coordinates_;
+        }
+
+        return *this;
       }
 
       SimLoop::

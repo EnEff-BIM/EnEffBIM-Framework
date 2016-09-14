@@ -118,6 +118,9 @@ class SimWindowArrayParams(base.SimArrayParams):
     def WindowOpeningProfilePath(self, *args):
         return _SimWindowArrayParams_WindowArray_Default.SimWindowArrayParams_WindowOpeningProfilePath(self, *args)
 
+    def IsPunchedWindowArray(self, *args):
+        return _SimWindowArrayParams_WindowArray_Default.SimWindowArrayParams_IsPunchedWindowArray(self, *args)
+
     def ArrayLeftOffset(self, *args):
         return _SimWindowArrayParams_WindowArray_Default.SimWindowArrayParams_ArrayLeftOffset(self, *args)
 

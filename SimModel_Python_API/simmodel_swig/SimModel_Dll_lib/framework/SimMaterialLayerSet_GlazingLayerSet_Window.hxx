@@ -50,7 +50,7 @@
 #include <xsd/cxx/config.hxx>
 
 #if (XSD_INT_VERSION != 4000000L)
-#error XSD runtime version mismatch
+//#error XSD runtime version mismatch
 #endif
 
 #include <xsd/cxx/pre.hxx>
@@ -467,41 +467,23 @@ namespace schema
         void
         T24FenestraTint (::std::auto_ptr< T24FenestraTint_type > p);
 
-        // GreenhouseGardenWindow
+        // T24GreenhouseGardenWindow
         //
-        typedef ::xml_schema::int_ GreenhouseGardenWindow_type;
-        typedef ::xsd::cxx::tree::optional< GreenhouseGardenWindow_type, true > GreenhouseGardenWindow_optional;
-        typedef ::xsd::cxx::tree::traits< GreenhouseGardenWindow_type, char > GreenhouseGardenWindow_traits;
+        typedef ::xml_schema::int_ T24GreenhouseGardenWindow_type;
+        typedef ::xsd::cxx::tree::optional< T24GreenhouseGardenWindow_type, true > T24GreenhouseGardenWindow_optional;
+        typedef ::xsd::cxx::tree::traits< T24GreenhouseGardenWindow_type, char > T24GreenhouseGardenWindow_traits;
 
-        const GreenhouseGardenWindow_optional&
-        GreenhouseGardenWindow () const;
+        const T24GreenhouseGardenWindow_optional&
+        T24GreenhouseGardenWindow () const;
 
-        GreenhouseGardenWindow_optional&
-        GreenhouseGardenWindow ();
-
-        void
-        GreenhouseGardenWindow (const GreenhouseGardenWindow_type& x);
+        T24GreenhouseGardenWindow_optional&
+        T24GreenhouseGardenWindow ();
 
         void
-        GreenhouseGardenWindow (const GreenhouseGardenWindow_optional& x);
-
-        // T24SHGC
-        //
-        typedef ::xml_schema::double_ T24SHGC_type;
-        typedef ::xsd::cxx::tree::optional< T24SHGC_type, true > T24SHGC_optional;
-        typedef ::xsd::cxx::tree::traits< T24SHGC_type, char, ::xsd::cxx::tree::schema_type::double_ > T24SHGC_traits;
-
-        const T24SHGC_optional&
-        T24SHGC () const;
-
-        T24SHGC_optional&
-        T24SHGC ();
+        T24GreenhouseGardenWindow (const T24GreenhouseGardenWindow_type& x);
 
         void
-        T24SHGC (const T24SHGC_type& x);
-
-        void
-        T24SHGC (const T24SHGC_optional& x);
+        T24GreenhouseGardenWindow (const T24GreenhouseGardenWindow_optional& x);
 
         // T24SHGCCenterOfGlass
         //
@@ -605,8 +587,7 @@ namespace schema
         T24FenestraPanes_optional T24FenestraPanes_;
         T24FenestraProdType_optional T24FenestraProdType_;
         T24FenestraTint_optional T24FenestraTint_;
-        GreenhouseGardenWindow_optional GreenhouseGardenWindow_;
-        T24SHGC_optional T24SHGC_;
+        T24GreenhouseGardenWindow_optional T24GreenhouseGardenWindow_;
         T24SHGCCenterOfGlass_optional T24SHGCCenterOfGlass_;
         T24FenestraSkyltCurb_optional T24FenestraSkyltCurb_;
         T24FenestraSkyltGlaze_optional T24FenestraSkyltGlaze_;

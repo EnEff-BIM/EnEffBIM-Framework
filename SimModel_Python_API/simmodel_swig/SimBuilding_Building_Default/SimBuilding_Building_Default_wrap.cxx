@@ -3412,488 +3412,485 @@ namespace Swig {
 
 /* -------- TYPES TABLE (BEGIN) -------- */
 
-#define SWIGTYPE_p_AboveGradeStoryCountAltered_optional swig_types[0]
-#define SWIGTYPE_p_AboveGradeStoryCountAltered_traits swig_types[1]
-#define SWIGTYPE_p_AboveGradeStoryCountAltered_type swig_types[2]
-#define SWIGTYPE_p_AboveGradeStoryCountExists_optional swig_types[3]
-#define SWIGTYPE_p_AboveGradeStoryCountExists_traits swig_types[4]
-#define SWIGTYPE_p_AboveGradeStoryCountExists_type swig_types[5]
-#define SWIGTYPE_p_AboveGradeStoryCountNew_optional swig_types[6]
-#define SWIGTYPE_p_AboveGradeStoryCountNew_traits swig_types[7]
-#define SWIGTYPE_p_AboveGradeStoryCountNew_type swig_types[8]
-#define SWIGTYPE_p_ApplicableOccurrence_optional swig_types[9]
-#define SWIGTYPE_p_ApplicableOccurrence_traits swig_types[10]
-#define SWIGTYPE_p_ApplicableOccurrence_type swig_types[11]
-#define SWIGTYPE_p_AssignedToFlowElement_optional swig_types[12]
-#define SWIGTYPE_p_AssignedToFlowElement_traits swig_types[13]
-#define SWIGTYPE_p_AssignedToFlowElement_type swig_types[14]
-#define SWIGTYPE_p_AssignedToGroups_optional swig_types[15]
-#define SWIGTYPE_p_AssignedToGroups_traits swig_types[16]
-#define SWIGTYPE_p_AssignedToGroups_type swig_types[17]
-#define SWIGTYPE_p_BuildingAddress_optional swig_types[18]
-#define SWIGTYPE_p_BuildingAddress_traits swig_types[19]
-#define SWIGTYPE_p_BuildingAddress_type swig_types[20]
-#define SWIGTYPE_p_BuildingConstructionsTemplate_optional swig_types[21]
-#define SWIGTYPE_p_BuildingConstructionsTemplate_traits swig_types[22]
-#define SWIGTYPE_p_BuildingConstructionsTemplate_type swig_types[23]
-#define SWIGTYPE_p_BuildingDatumElevation_optional swig_types[24]
-#define SWIGTYPE_p_BuildingDatumElevation_traits swig_types[25]
-#define SWIGTYPE_p_BuildingDatumElevation_type swig_types[26]
-#define SWIGTYPE_p_BuildingEnergyTargetUnits_optional swig_types[27]
-#define SWIGTYPE_p_BuildingEnergyTargetUnits_traits swig_types[28]
-#define SWIGTYPE_p_BuildingEnergyTargetUnits_type swig_types[29]
-#define SWIGTYPE_p_BuildingEnergyTargetValue_optional swig_types[30]
-#define SWIGTYPE_p_BuildingEnergyTargetValue_traits swig_types[31]
-#define SWIGTYPE_p_BuildingEnergyTargetValue_type swig_types[32]
-#define SWIGTYPE_p_BuildingGrossFloorArea_optional swig_types[33]
-#define SWIGTYPE_p_BuildingGrossFloorArea_traits swig_types[34]
-#define SWIGTYPE_p_BuildingGrossFloorArea_type swig_types[35]
-#define SWIGTYPE_p_BuildingGrossPlannedArea_optional swig_types[36]
-#define SWIGTYPE_p_BuildingGrossPlannedArea_traits swig_types[37]
-#define SWIGTYPE_p_BuildingGrossPlannedArea_type swig_types[38]
-#define SWIGTYPE_p_BuildingHeight_optional swig_types[39]
-#define SWIGTYPE_p_BuildingHeight_traits swig_types[40]
-#define SWIGTYPE_p_BuildingHeight_type swig_types[41]
-#define SWIGTYPE_p_BuildingInSpatialContainer_optional swig_types[42]
-#define SWIGTYPE_p_BuildingInSpatialContainer_traits swig_types[43]
-#define SWIGTYPE_p_BuildingInSpatialContainer_type swig_types[44]
-#define SWIGTYPE_p_BuildingInfiltrationType_optional swig_types[45]
-#define SWIGTYPE_p_BuildingInfiltrationType_traits swig_types[46]
-#define SWIGTYPE_p_BuildingInfiltrationType_type swig_types[47]
-#define SWIGTYPE_p_BuildingInfiltrationValue_optional swig_types[48]
-#define SWIGTYPE_p_BuildingInfiltrationValue_traits swig_types[49]
-#define SWIGTYPE_p_BuildingInfiltrationValue_type swig_types[50]
-#define SWIGTYPE_p_BuildingNumberofStoreys_optional swig_types[51]
-#define SWIGTYPE_p_BuildingNumberofStoreys_traits swig_types[52]
-#define SWIGTYPE_p_BuildingNumberofStoreys_type swig_types[53]
-#define SWIGTYPE_p_BuildingOccupancyType_optional swig_types[54]
-#define SWIGTYPE_p_BuildingOccupancyType_traits swig_types[55]
-#define SWIGTYPE_p_BuildingOccupancyType_type swig_types[56]
-#define SWIGTYPE_p_BuildingYearOfConstruction_optional swig_types[57]
-#define SWIGTYPE_p_BuildingYearOfConstruction_traits swig_types[58]
-#define SWIGTYPE_p_BuildingYearOfConstruction_type swig_types[59]
-#define SWIGTYPE_p_BuildingisLandmarked_optional swig_types[60]
-#define SWIGTYPE_p_BuildingisLandmarked_traits swig_types[61]
-#define SWIGTYPE_p_BuildingisLandmarked_type swig_types[62]
-#define SWIGTYPE_p_ChangeFromTemplate_optional swig_types[63]
-#define SWIGTYPE_p_ChangeFromTemplate_traits swig_types[64]
-#define SWIGTYPE_p_ChangeFromTemplate_type swig_types[65]
-#define SWIGTYPE_p_ClassRef_ConstEntByFunction_optional swig_types[66]
-#define SWIGTYPE_p_ClassRef_ConstEntByFunction_traits swig_types[67]
-#define SWIGTYPE_p_ClassRef_ConstEntByFunction_type swig_types[68]
-#define SWIGTYPE_p_CompositionType_optional swig_types[69]
-#define SWIGTYPE_p_CompositionType_traits swig_types[70]
-#define SWIGTYPE_p_CompositionType_type swig_types[71]
-#define SWIGTYPE_p_ContainingBuildings_optional swig_types[72]
-#define SWIGTYPE_p_ContainingBuildings_traits swig_types[73]
-#define SWIGTYPE_p_ContainingBuildings_type swig_types[74]
-#define SWIGTYPE_p_ContainingSpatialStructure_optional swig_types[75]
-#define SWIGTYPE_p_ContainingSpatialStructure_traits swig_types[76]
-#define SWIGTYPE_p_ContainingSpatialStructure_type swig_types[77]
-#define SWIGTYPE_p_ControlElementID_optional swig_types[78]
-#define SWIGTYPE_p_ControlElementID_traits swig_types[79]
-#define SWIGTYPE_p_ControlElementID_type swig_types[80]
-#define SWIGTYPE_p_ControlledBy_optional swig_types[81]
-#define SWIGTYPE_p_ControlledBy_traits swig_types[82]
-#define SWIGTYPE_p_ControlledBy_type swig_types[83]
-#define SWIGTYPE_p_DaylightControlsDefault_optional swig_types[84]
-#define SWIGTYPE_p_DaylightControlsDefault_traits swig_types[85]
-#define SWIGTYPE_p_DaylightControlsDefault_type swig_types[86]
-#define SWIGTYPE_p_DecimalPrecision_optional swig_types[87]
-#define SWIGTYPE_p_DecimalPrecision_traits swig_types[88]
-#define SWIGTYPE_p_DecimalPrecision_type swig_types[89]
-#define SWIGTYPE_p_Decomposes_optional swig_types[90]
-#define SWIGTYPE_p_Decomposes_traits swig_types[91]
-#define SWIGTYPE_p_Decomposes_type swig_types[92]
-#define SWIGTYPE_p_DefaultForPerson_optional swig_types[93]
-#define SWIGTYPE_p_DefaultForPerson_traits swig_types[94]
-#define SWIGTYPE_p_DefaultForPerson_type swig_types[95]
-#define SWIGTYPE_p_DefaultForProject_optional swig_types[96]
-#define SWIGTYPE_p_DefaultForProject_traits swig_types[97]
-#define SWIGTYPE_p_DefaultForProject_type swig_types[98]
-#define SWIGTYPE_p_DefaultForUnitSystem_optional swig_types[99]
-#define SWIGTYPE_p_DefaultForUnitSystem_traits swig_types[100]
-#define SWIGTYPE_p_DefaultForUnitSystem_type swig_types[101]
-#define SWIGTYPE_p_Description_optional swig_types[102]
-#define SWIGTYPE_p_Description_traits swig_types[103]
-#define SWIGTYPE_p_Description_type swig_types[104]
-#define SWIGTYPE_p_DockedToPort_optional swig_types[105]
-#define SWIGTYPE_p_DockedToPort_traits swig_types[106]
-#define SWIGTYPE_p_DockedToPort_type swig_types[107]
-#define SWIGTYPE_p_ElevationOfTerrain_optional swig_types[108]
-#define SWIGTYPE_p_ElevationOfTerrain_traits swig_types[109]
-#define SWIGTYPE_p_ElevationOfTerrain_type swig_types[110]
-#define SWIGTYPE_p_GeometricRepresentations_optional swig_types[111]
-#define SWIGTYPE_p_GeometricRepresentations_traits swig_types[112]
-#define SWIGTYPE_p_GeometricRepresentations_type swig_types[113]
-#define SWIGTYPE_p_HasPropertySets_optional swig_types[114]
-#define SWIGTYPE_p_HasPropertySets_traits swig_types[115]
-#define SWIGTYPE_p_HasPropertySets_type swig_types[116]
-#define SWIGTYPE_p_HasTemplateChanged_optional swig_types[117]
-#define SWIGTYPE_p_HasTemplateChanged_traits swig_types[118]
-#define SWIGTYPE_p_HasTemplateChanged_type swig_types[119]
-#define SWIGTYPE_p_HighRiseResidentialLivingUnitCount_optional swig_types[120]
-#define SWIGTYPE_p_HighRiseResidentialLivingUnitCount_traits swig_types[121]
-#define SWIGTYPE_p_HighRiseResidentialLivingUnitCount_type swig_types[122]
-#define SWIGTYPE_p_HostElement_optional swig_types[123]
-#define SWIGTYPE_p_HostElement_traits swig_types[124]
-#define SWIGTYPE_p_HostElement_type swig_types[125]
-#define SWIGTYPE_p_IfcGlobalID_optional swig_types[126]
-#define SWIGTYPE_p_IfcGlobalID_traits swig_types[127]
-#define SWIGTYPE_p_IfcGlobalID_type swig_types[128]
-#define SWIGTYPE_p_IfcName_optional swig_types[129]
-#define SWIGTYPE_p_IfcName_traits swig_types[130]
-#define SWIGTYPE_p_IfcName_type swig_types[131]
-#define SWIGTYPE_p_IsAutoGenerated_optional swig_types[132]
-#define SWIGTYPE_p_IsAutoGenerated_traits swig_types[133]
-#define SWIGTYPE_p_IsAutoGenerated_type swig_types[134]
-#define SWIGTYPE_p_IsTemplateObject_optional swig_types[135]
-#define SWIGTYPE_p_IsTemplateObject_traits swig_types[136]
-#define SWIGTYPE_p_IsTemplateObject_type swig_types[137]
-#define SWIGTYPE_p_LivingUnitCountAltered_optional swig_types[138]
-#define SWIGTYPE_p_LivingUnitCountAltered_traits swig_types[139]
-#define SWIGTYPE_p_LivingUnitCountAltered_type swig_types[140]
-#define SWIGTYPE_p_LivingUnitCountExisting_optional swig_types[141]
-#define SWIGTYPE_p_LivingUnitCountExisting_traits swig_types[142]
-#define SWIGTYPE_p_LivingUnitCountExisting_type swig_types[143]
-#define SWIGTYPE_p_LivingUnitCountNew_optional swig_types[144]
-#define SWIGTYPE_p_LivingUnitCountNew_traits swig_types[145]
-#define SWIGTYPE_p_LivingUnitCountNew_type swig_types[146]
-#define SWIGTYPE_p_LocalPlacementRotation_optional swig_types[147]
-#define SWIGTYPE_p_LocalPlacementRotation_traits swig_types[148]
-#define SWIGTYPE_p_LocalPlacementRotation_type swig_types[149]
-#define SWIGTYPE_p_LocalPlacementX_optional swig_types[150]
-#define SWIGTYPE_p_LocalPlacementX_traits swig_types[151]
-#define SWIGTYPE_p_LocalPlacementX_type swig_types[152]
-#define SWIGTYPE_p_LocalPlacementY_optional swig_types[153]
-#define SWIGTYPE_p_LocalPlacementY_traits swig_types[154]
-#define SWIGTYPE_p_LocalPlacementY_type swig_types[155]
-#define SWIGTYPE_p_LocalPlacementZ_optional swig_types[156]
-#define SWIGTYPE_p_LocalPlacementZ_traits swig_types[157]
-#define SWIGTYPE_p_LocalPlacementZ_type swig_types[158]
-#define SWIGTYPE_p_LongName_optional swig_types[159]
-#define SWIGTYPE_p_LongName_traits swig_types[160]
-#define SWIGTYPE_p_LongName_type swig_types[161]
-#define SWIGTYPE_p_MemberUsedForDiagrams_optional swig_types[162]
-#define SWIGTYPE_p_MemberUsedForDiagrams_traits swig_types[163]
-#define SWIGTYPE_p_MemberUsedForDiagrams_type swig_types[164]
-#define SWIGTYPE_p_Name_optional swig_types[165]
-#define SWIGTYPE_p_Name_traits swig_types[166]
-#define SWIGTYPE_p_Name_type swig_types[167]
-#define SWIGTYPE_p_NatVentilationDefault_optional swig_types[168]
-#define SWIGTYPE_p_NatVentilationDefault_traits swig_types[169]
-#define SWIGTYPE_p_NatVentilationDefault_type swig_types[170]
-#define SWIGTYPE_p_NevronSchematicLayout_optional swig_types[171]
-#define SWIGTYPE_p_NevronSchematicLayout_traits swig_types[172]
-#define SWIGTYPE_p_NevronSchematicLayout_type swig_types[173]
-#define SWIGTYPE_p_ObjectCreationParams_optional swig_types[174]
-#define SWIGTYPE_p_ObjectCreationParams_traits swig_types[175]
-#define SWIGTYPE_p_ObjectCreationParams_type swig_types[176]
-#define SWIGTYPE_p_ObjectIndex_optional swig_types[177]
-#define SWIGTYPE_p_ObjectIndex_traits swig_types[178]
-#define SWIGTYPE_p_ObjectIndex_type swig_types[179]
-#define SWIGTYPE_p_ObjectName_optional swig_types[180]
-#define SWIGTYPE_p_ObjectName_traits swig_types[181]
-#define SWIGTYPE_p_ObjectName_type swig_types[182]
-#define SWIGTYPE_p_ObjectOwnerHistory_optional swig_types[183]
-#define SWIGTYPE_p_ObjectOwnerHistory_traits swig_types[184]
-#define SWIGTYPE_p_ObjectOwnerHistory_type swig_types[185]
-#define SWIGTYPE_p_ObjectType_optional swig_types[186]
-#define SWIGTYPE_p_ObjectType_traits swig_types[187]
-#define SWIGTYPE_p_ObjectType_type swig_types[188]
-#define SWIGTYPE_p_ParentGroups_optional swig_types[189]
-#define SWIGTYPE_p_ParentGroups_traits swig_types[190]
-#define SWIGTYPE_p_ParentGroups_type swig_types[191]
-#define SWIGTYPE_p_PlacementRelToContainingTypeDef_optional swig_types[192]
-#define SWIGTYPE_p_PlacementRelToContainingTypeDef_traits swig_types[193]
-#define SWIGTYPE_p_PlacementRelToContainingTypeDef_type swig_types[194]
-#define SWIGTYPE_p_Placement_optional swig_types[195]
-#define SWIGTYPE_p_Placement_traits swig_types[196]
-#define SWIGTYPE_p_Placement_type swig_types[197]
-#define SWIGTYPE_p_ProfileName_optional swig_types[198]
-#define SWIGTYPE_p_ProfileName_traits swig_types[199]
-#define SWIGTYPE_p_ProfileName_type swig_types[200]
-#define SWIGTYPE_p_ProfileType_optional swig_types[201]
-#define SWIGTYPE_p_ProfileType_traits swig_types[202]
-#define SWIGTYPE_p_ProfileType_type swig_types[203]
-#define SWIGTYPE_p_RefId_traits swig_types[204]
-#define SWIGTYPE_p_RefId_type swig_types[205]
-#define SWIGTYPE_p_RelocatablePublicSchoolBuilding_optional swig_types[206]
-#define SWIGTYPE_p_RelocatablePublicSchoolBuilding_traits swig_types[207]
-#define SWIGTYPE_p_RelocatablePublicSchoolBuilding_type swig_types[208]
-#define SWIGTYPE_p_RepresentationContext_optional swig_types[209]
-#define SWIGTYPE_p_RepresentationContext_traits swig_types[210]
-#define SWIGTYPE_p_RepresentationContext_type swig_types[211]
-#define SWIGTYPE_p_RepresentationIdentifier_optional swig_types[212]
-#define SWIGTYPE_p_RepresentationIdentifier_traits swig_types[213]
-#define SWIGTYPE_p_RepresentationIdentifier_type swig_types[214]
-#define SWIGTYPE_p_RepresentationItems_optional swig_types[215]
-#define SWIGTYPE_p_RepresentationItems_traits swig_types[216]
-#define SWIGTYPE_p_RepresentationItems_type swig_types[217]
-#define SWIGTYPE_p_RepresentationType_optional swig_types[218]
-#define SWIGTYPE_p_RepresentationType_traits swig_types[219]
-#define SWIGTYPE_p_RepresentationType_type swig_types[220]
-#define SWIGTYPE_p_Representation_optional swig_types[221]
-#define SWIGTYPE_p_Representation_traits swig_types[222]
-#define SWIGTYPE_p_Representation_type swig_types[223]
-#define SWIGTYPE_p_RoofIrrigation_IrrigationMaxSaturatThreshold_optional swig_types[224]
-#define SWIGTYPE_p_RoofIrrigation_IrrigationMaxSaturatThreshold_traits swig_types[225]
-#define SWIGTYPE_p_RoofIrrigation_IrrigationMaxSaturatThreshold_type swig_types[226]
-#define SWIGTYPE_p_RoofIrrigation_IrrigationModelType_optional swig_types[227]
-#define SWIGTYPE_p_RoofIrrigation_IrrigationModelType_traits swig_types[228]
-#define SWIGTYPE_p_RoofIrrigation_IrrigationModelType_type swig_types[229]
-#define SWIGTYPE_p_RoofIrrigation_IrrigationRateSchedName_optional swig_types[230]
-#define SWIGTYPE_p_RoofIrrigation_IrrigationRateSchedName_traits swig_types[231]
-#define SWIGTYPE_p_RoofIrrigation_IrrigationRateSchedName_type swig_types[232]
-#define SWIGTYPE_p_SelectedPropertyGroups_optional swig_types[233]
-#define SWIGTYPE_p_SelectedPropertyGroups_traits swig_types[234]
-#define SWIGTYPE_p_SelectedPropertyGroups_type swig_types[235]
-#define SWIGTYPE_p_SimBuilding_LoadsConvergTolVal_optional swig_types[236]
-#define SWIGTYPE_p_SimBuilding_LoadsConvergTolVal_traits swig_types[237]
-#define SWIGTYPE_p_SimBuilding_LoadsConvergTolVal_type swig_types[238]
-#define SWIGTYPE_p_SimBuilding_MaxNumWarmupDays_optional swig_types[239]
-#define SWIGTYPE_p_SimBuilding_MaxNumWarmupDays_traits swig_types[240]
-#define SWIGTYPE_p_SimBuilding_MaxNumWarmupDays_type swig_types[241]
-#define SWIGTYPE_p_SimBuilding_MinNumberWarmupDays_optional swig_types[242]
-#define SWIGTYPE_p_SimBuilding_MinNumberWarmupDays_traits swig_types[243]
-#define SWIGTYPE_p_SimBuilding_MinNumberWarmupDays_type swig_types[244]
-#define SWIGTYPE_p_SimBuilding_Name_optional swig_types[245]
-#define SWIGTYPE_p_SimBuilding_Name_traits swig_types[246]
-#define SWIGTYPE_p_SimBuilding_Name_type swig_types[247]
-#define SWIGTYPE_p_SimBuilding_NorthAxis_optional swig_types[248]
-#define SWIGTYPE_p_SimBuilding_NorthAxis_traits swig_types[249]
-#define SWIGTYPE_p_SimBuilding_NorthAxis_type swig_types[250]
-#define SWIGTYPE_p_SimBuilding_SolarDist_optional swig_types[251]
-#define SWIGTYPE_p_SimBuilding_SolarDist_traits swig_types[252]
-#define SWIGTYPE_p_SimBuilding_SolarDist_type swig_types[253]
-#define SWIGTYPE_p_SimBuilding_TempConvergTolVal_optional swig_types[254]
-#define SWIGTYPE_p_SimBuilding_TempConvergTolVal_traits swig_types[255]
-#define SWIGTYPE_p_SimBuilding_TempConvergTolVal_type swig_types[256]
-#define SWIGTYPE_p_SimBuilding_Terrain_optional swig_types[257]
-#define SWIGTYPE_p_SimBuilding_Terrain_traits swig_types[258]
-#define SWIGTYPE_p_SimBuilding_Terrain_type swig_types[259]
-#define SWIGTYPE_p_SimModelName_optional swig_types[260]
-#define SWIGTYPE_p_SimModelName_traits swig_types[261]
-#define SWIGTYPE_p_SimModelName_type swig_types[262]
-#define SWIGTYPE_p_SimModelSubtype_optional swig_types[263]
-#define SWIGTYPE_p_SimModelSubtype_traits swig_types[264]
-#define SWIGTYPE_p_SimModelSubtype_type swig_types[265]
-#define SWIGTYPE_p_SimModelType_optional swig_types[266]
-#define SWIGTYPE_p_SimModelType_traits swig_types[267]
-#define SWIGTYPE_p_SimModelType_type swig_types[268]
-#define SWIGTYPE_p_SimUniqueID_optional swig_types[269]
-#define SWIGTYPE_p_SimUniqueID_traits swig_types[270]
-#define SWIGTYPE_p_SimUniqueID_type swig_types[271]
-#define SWIGTYPE_p_SourceLibraryEntryID_optional swig_types[272]
-#define SWIGTYPE_p_SourceLibraryEntryID_traits swig_types[273]
-#define SWIGTYPE_p_SourceLibraryEntryID_type swig_types[274]
-#define SWIGTYPE_p_SourceLibraryEntryRef_optional swig_types[275]
-#define SWIGTYPE_p_SourceLibraryEntryRef_traits swig_types[276]
-#define SWIGTYPE_p_SourceLibraryEntryRef_type swig_types[277]
-#define SWIGTYPE_p_SourceModelObjectType_optional swig_types[278]
-#define SWIGTYPE_p_SourceModelObjectType_traits swig_types[279]
-#define SWIGTYPE_p_SourceModelObjectType_type swig_types[280]
-#define SWIGTYPE_p_SourceModelSchema_optional swig_types[281]
-#define SWIGTYPE_p_SourceModelSchema_traits swig_types[282]
-#define SWIGTYPE_p_SourceModelSchema_type swig_types[283]
-#define SWIGTYPE_p_SpaceBoundsNotCurrent_optional swig_types[284]
-#define SWIGTYPE_p_SpaceBoundsNotCurrent_traits swig_types[285]
-#define SWIGTYPE_p_SpaceBoundsNotCurrent_type swig_types[286]
-#define SWIGTYPE_p_T24CoilCoolingCapacity_optional swig_types[287]
-#define SWIGTYPE_p_T24CoilCoolingCapacity_traits swig_types[288]
-#define SWIGTYPE_p_T24CoilCoolingCapacity_type swig_types[289]
-#define SWIGTYPE_p_T24CoilHeatingCapacity_optional swig_types[290]
-#define SWIGTYPE_p_T24CoilHeatingCapacity_traits swig_types[291]
-#define SWIGTYPE_p_T24CoilHeatingCapacity_type swig_types[292]
-#define SWIGTYPE_p_T24FunctionClassificationMethod_optional swig_types[293]
-#define SWIGTYPE_p_T24FunctionClassificationMethod_traits swig_types[294]
-#define SWIGTYPE_p_T24FunctionClassificationMethod_type swig_types[295]
-#define SWIGTYPE_p_T24PlantCoolingCapacity_optional swig_types[296]
-#define SWIGTYPE_p_T24PlantCoolingCapacity_traits swig_types[297]
-#define SWIGTYPE_p_T24PlantCoolingCapacity_type swig_types[298]
-#define SWIGTYPE_p_T24PlantHeatingCapacity_optional swig_types[299]
-#define SWIGTYPE_p_T24PlantHeatingCapacity_traits swig_types[300]
-#define SWIGTYPE_p_T24PlantHeatingCapacity_type swig_types[301]
-#define SWIGTYPE_p_Tag_optional swig_types[302]
-#define SWIGTYPE_p_Tag_traits swig_types[303]
-#define SWIGTYPE_p_Tag_type swig_types[304]
-#define SWIGTYPE_p_TemplateOverrideValues_optional swig_types[305]
-#define SWIGTYPE_p_TemplateOverrideValues_traits swig_types[306]
-#define SWIGTYPE_p_TemplateOverrideValues_type swig_types[307]
-#define SWIGTYPE_p_TemplatesForMembers_optional swig_types[308]
-#define SWIGTYPE_p_TemplatesForMembers_traits swig_types[309]
-#define SWIGTYPE_p_TemplatesForMembers_type swig_types[310]
-#define SWIGTYPE_p_TotalStoryCountAltered_optional swig_types[311]
-#define SWIGTYPE_p_TotalStoryCountAltered_traits swig_types[312]
-#define SWIGTYPE_p_TotalStoryCountAltered_type swig_types[313]
-#define SWIGTYPE_p_TotalStoryCountExisting_optional swig_types[314]
-#define SWIGTYPE_p_TotalStoryCountExisting_traits swig_types[315]
-#define SWIGTYPE_p_TotalStoryCountExisting_type swig_types[316]
-#define SWIGTYPE_p_TotalStoryCountNew_optional swig_types[317]
-#define SWIGTYPE_p_TotalStoryCountNew_traits swig_types[318]
-#define SWIGTYPE_p_TotalStoryCountNew_type swig_types[319]
-#define SWIGTYPE_p_TypeDefCreationParams_optional swig_types[320]
-#define SWIGTYPE_p_TypeDefCreationParams_traits swig_types[321]
-#define SWIGTYPE_p_TypeDefCreationParams_type swig_types[322]
-#define SWIGTYPE_p_TypeDefinition_optional swig_types[323]
-#define SWIGTYPE_p_TypeDefinition_traits swig_types[324]
-#define SWIGTYPE_p_TypeDefinition_type swig_types[325]
-#define SWIGTYPE_p_UnitType_String_optional swig_types[326]
-#define SWIGTYPE_p_UnitType_String_traits swig_types[327]
-#define SWIGTYPE_p_UnitType_String_type swig_types[328]
-#define SWIGTYPE_p_XDirectionX_optional swig_types[329]
-#define SWIGTYPE_p_XDirectionX_traits swig_types[330]
-#define SWIGTYPE_p_XDirectionX_type swig_types[331]
-#define SWIGTYPE_p_XDirectionY_optional swig_types[332]
-#define SWIGTYPE_p_XDirectionY_traits swig_types[333]
-#define SWIGTYPE_p_XDirectionY_type swig_types[334]
-#define SWIGTYPE_p_XDirectionZ_optional swig_types[335]
-#define SWIGTYPE_p_XDirectionZ_traits swig_types[336]
-#define SWIGTYPE_p_XDirectionZ_type swig_types[337]
-#define SWIGTYPE_p__3dHeight_optional swig_types[338]
-#define SWIGTYPE_p__3dHeight_traits swig_types[339]
-#define SWIGTYPE_p__3dHeight_type swig_types[340]
-#define SWIGTYPE_p__3dLength_optional swig_types[341]
-#define SWIGTYPE_p__3dLength_traits swig_types[342]
-#define SWIGTYPE_p__3dLength_type swig_types[343]
-#define SWIGTYPE_p__3dWidth_optional swig_types[344]
-#define SWIGTYPE_p__3dWidth_traits swig_types[345]
-#define SWIGTYPE_p__3dWidth_type swig_types[346]
-#define SWIGTYPE_p_allocator_type swig_types[347]
-#define SWIGTYPE_p_base_const_iterator swig_types[348]
-#define SWIGTYPE_p_base_iterator swig_types[349]
-#define SWIGTYPE_p_base_sequence swig_types[350]
-#define SWIGTYPE_p_bool swig_types[351]
-#define SWIGTYPE_p_bool_convertible swig_types[352]
-#define SWIGTYPE_p_char swig_types[353]
-#define SWIGTYPE_p_const_iterator swig_types[354]
-#define SWIGTYPE_p_const_reverse_iterator swig_types[355]
-#define SWIGTYPE_p_difference_type swig_types[356]
-#define SWIGTYPE_p_dom_content_optional swig_types[357]
-#define SWIGTYPE_p_double swig_types[358]
-#define SWIGTYPE_p_float swig_types[359]
-#define SWIGTYPE_p_int swig_types[360]
-#define SWIGTYPE_p_iterator swig_types[361]
-#define SWIGTYPE_p_iterator_adapterT_std__vectorT_xsd__cxx__tree__sequence_common__ptr_std__allocatorT_xsd__cxx__tree__sequence_common__ptr_t_t__const_iterator_schema__simxml__BuildingModel__SimBuilding_Building_Default_const_t swig_types[362]
-#define SWIGTYPE_p_iterator_adapterT_std__vectorT_xsd__cxx__tree__sequence_common__ptr_std__allocatorT_xsd__cxx__tree__sequence_common__ptr_t_t__const_reverse_iterator_schema__simxml__BuildingModel__SimBuilding_Building_Default_const_t swig_types[363]
-#define SWIGTYPE_p_iterator_adapterT_std__vectorT_xsd__cxx__tree__sequence_common__ptr_std__allocatorT_xsd__cxx__tree__sequence_common__ptr_t_t__iterator___schema__simxml__BuildingModel__SimBuilding_Building_Default_t swig_types[364]
-#define SWIGTYPE_p_iterator_adapterT_std__vectorT_xsd__cxx__tree__sequence_common__ptr_std__allocatorT_xsd__cxx__tree__sequence_common__ptr_t_t__reverse_iterator___schema__simxml__BuildingModel__SimBuilding_Building_Default_t swig_types[365]
-#define SWIGTYPE_p_long_long swig_types[366]
-#define SWIGTYPE_p_ptr swig_types[367]
-#define SWIGTYPE_p_reverse_iterator swig_types[368]
-#define SWIGTYPE_p_schema__simxml__BuildingModel__SimBuilding swig_types[369]
-#define SWIGTYPE_p_schema__simxml__BuildingModel__SimBuilding_Building swig_types[370]
-#define SWIGTYPE_p_schema__simxml__BuildingModel__SimBuilding_Building_Default swig_types[371]
-#define SWIGTYPE_p_schema__simxml__MepModel__SimFlowEnergyConverter swig_types[372]
-#define SWIGTYPE_p_schema__simxml__Model__SimModel swig_types[373]
-#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimArrayParams swig_types[374]
-#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimNode swig_types[375]
-#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimPort swig_types[376]
-#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimUnitType swig_types[377]
-#define SWIGTYPE_p_schema__simxml__ResourcesGeometry__SimProfileDefinition swig_types[378]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SelectedPropertyGroups swig_types[379]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimActorDefinition swig_types[380]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimAppDefault swig_types[381]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimBldgModelParams swig_types[382]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimBuildingElement swig_types[383]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimDistributionControlElement swig_types[384]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimDistributionElement swig_types[385]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimDistributionFlowElement swig_types[386]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimElement swig_types[387]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimFeatureElement swig_types[388]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimGeometricRepresentationItem swig_types[389]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimGroup swig_types[390]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimObject swig_types[391]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimObjectDefinition swig_types[392]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimObjectPlacement swig_types[393]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimObjectTypeDefinition swig_types[394]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimPropertySetDefinition swig_types[395]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimRepresentation swig_types[396]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimRepresentationItem swig_types[397]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimResourceObject swig_types[398]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimRoot swig_types[399]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimSpatialStructureElement swig_types[400]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimTemplate swig_types[401]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimTopologicalRepresentationItem swig_types[402]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__doubleList swig_types[403]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__integerList swig_types[404]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__logical swig_types[405]
-#define SWIGTYPE_p_self_ swig_types[406]
-#define SWIGTYPE_p_short swig_types[407]
-#define SWIGTYPE_p_signed_char swig_types[408]
-#define SWIGTYPE_p_size_type swig_types[409]
-#define SWIGTYPE_p_std__auto_ptrT_T_t swig_types[410]
-#define SWIGTYPE_p_std__auto_ptrT_schema__simxml__BuildingModel__SimBuilding_Building_Default_t swig_types[411]
-#define SWIGTYPE_p_std__auto_ptrT_schema__simxml__SimModelCore__logical_t swig_types[412]
-#define SWIGTYPE_p_std__auto_ptrT_xml_schema__idref_t swig_types[413]
-#define SWIGTYPE_p_std__auto_ptrT_xml_schema__string_t swig_types[414]
-#define SWIGTYPE_p_std__vectorT_xsd__cxx__tree__sequence_common__ptr_std__allocatorT_xsd__cxx__tree__sequence_common__ptr_t_t__size_type swig_types[415]
-#define SWIGTYPE_p_unsigned_char swig_types[416]
-#define SWIGTYPE_p_unsigned_int swig_types[417]
-#define SWIGTYPE_p_unsigned_long_long swig_types[418]
-#define SWIGTYPE_p_unsigned_short swig_types[419]
-#define SWIGTYPE_p_value_type swig_types[420]
-#define SWIGTYPE_p_xercesc__DOMElement swig_types[421]
-#define SWIGTYPE_p_xsd__cxx__tree___type swig_types[422]
-#define SWIGTYPE_p_xsd__cxx__tree__base64_binaryT_char_xsd__cxx__tree__simple_type_t swig_types[423]
-#define SWIGTYPE_p_xsd__cxx__tree__boundsT_char_t swig_types[424]
-#define SWIGTYPE_p_xsd__cxx__tree__bufferT_char_t swig_types[425]
-#define SWIGTYPE_p_xsd__cxx__tree__content_order swig_types[426]
-#define SWIGTYPE_p_xsd__cxx__tree__dateT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[427]
-#define SWIGTYPE_p_xsd__cxx__tree__date_timeT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[428]
-#define SWIGTYPE_p_xsd__cxx__tree__diagnosticsT_char_t swig_types[429]
-#define SWIGTYPE_p_xsd__cxx__tree__duplicate_idT_char_t swig_types[430]
-#define SWIGTYPE_p_xsd__cxx__tree__durationT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[431]
-#define SWIGTYPE_p_xsd__cxx__tree__entitiesT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__entity_t swig_types[432]
-#define SWIGTYPE_p_xsd__cxx__tree__entityT_char_xsd__cxx__tree__ncname_t swig_types[433]
-#define SWIGTYPE_p_xsd__cxx__tree__errorT_char_t swig_types[434]
-#define SWIGTYPE_p_xsd__cxx__tree__exceptionT_char_t swig_types[435]
-#define SWIGTYPE_p_xsd__cxx__tree__expected_attributeT_char_t swig_types[436]
-#define SWIGTYPE_p_xsd__cxx__tree__expected_elementT_char_t swig_types[437]
-#define SWIGTYPE_p_xsd__cxx__tree__expected_text_contentT_char_t swig_types[438]
-#define SWIGTYPE_p_xsd__cxx__tree__flags swig_types[439]
-#define SWIGTYPE_p_xsd__cxx__tree__gdayT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[440]
-#define SWIGTYPE_p_xsd__cxx__tree__gmonthT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[441]
-#define SWIGTYPE_p_xsd__cxx__tree__gmonth_dayT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[442]
-#define SWIGTYPE_p_xsd__cxx__tree__gyearT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[443]
-#define SWIGTYPE_p_xsd__cxx__tree__gyear_monthT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[444]
-#define SWIGTYPE_p_xsd__cxx__tree__hex_binaryT_char_xsd__cxx__tree__simple_type_t swig_types[445]
-#define SWIGTYPE_p_xsd__cxx__tree__idT_char_xsd__cxx__tree__ncname_t swig_types[446]
-#define SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t swig_types[447]
-#define SWIGTYPE_p_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t swig_types[448]
-#define SWIGTYPE_p_xsd__cxx__tree__languageT_char_xsd__cxx__tree__token_t swig_types[449]
-#define SWIGTYPE_p_xsd__cxx__tree__nameT_char_xsd__cxx__tree__token_t swig_types[450]
-#define SWIGTYPE_p_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__name_t swig_types[451]
-#define SWIGTYPE_p_xsd__cxx__tree__nmtokenT_char_xsd__cxx__tree__token_t swig_types[452]
-#define SWIGTYPE_p_xsd__cxx__tree__nmtokensT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__nmtoken_t swig_types[453]
-#define SWIGTYPE_p_xsd__cxx__tree__no_prefix_mappingT_char_t swig_types[454]
-#define SWIGTYPE_p_xsd__cxx__tree__no_type_infoT_char_t swig_types[455]
-#define SWIGTYPE_p_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__string_t swig_types[456]
-#define SWIGTYPE_p_xsd__cxx__tree__not_derivedT_char_t swig_types[457]
-#define SWIGTYPE_p_xsd__cxx__tree__optionalT_bool_true_t swig_types[458]
-#define SWIGTYPE_p_xsd__cxx__tree__optionalT_double_true_t swig_types[459]
-#define SWIGTYPE_p_xsd__cxx__tree__optionalT_int_true_t swig_types[460]
-#define SWIGTYPE_p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__logical_xsd__cxx__tree__fundamental_pT_schema__simxml__SimModelCore__logical_t__r_t swig_types[461]
-#define SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t swig_types[462]
-#define SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_false_t swig_types[463]
-#define SWIGTYPE_p_xsd__cxx__tree__parsingT_char_t swig_types[464]
-#define SWIGTYPE_p_xsd__cxx__tree__propertiesT_char_t swig_types[465]
-#define SWIGTYPE_p_xsd__cxx__tree__qnameT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__uri_xsd__cxx__tree__ncname_t swig_types[466]
-#define SWIGTYPE_p_xsd__cxx__tree__sequenceT_schema__simxml__BuildingModel__SimBuilding_Building_Default_false_t swig_types[467]
-#define SWIGTYPE_p_xsd__cxx__tree__sequence_common swig_types[468]
-#define SWIGTYPE_p_xsd__cxx__tree__severity swig_types[469]
-#define SWIGTYPE_p_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t swig_types[470]
-#define SWIGTYPE_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t swig_types[471]
-#define SWIGTYPE_p_xsd__cxx__tree__timeT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[472]
-#define SWIGTYPE_p_xsd__cxx__tree__time_zone swig_types[473]
-#define SWIGTYPE_p_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_string_t swig_types[474]
-#define SWIGTYPE_p_xsd__cxx__tree__unexpected_elementT_char_t swig_types[475]
-#define SWIGTYPE_p_xsd__cxx__tree__unexpected_enumeratorT_char_t swig_types[476]
-#define SWIGTYPE_p_xsd__cxx__tree__uriT_char_xsd__cxx__tree__simple_type_t swig_types[477]
-#define SWIGTYPE_p_xsd__cxx__tree__user_data_keys_templateT_0_t swig_types[478]
-#define SWIGTYPE_p_xsd__cxx__xml__error_handlerT_char_t swig_types[479]
-static swig_type_info *swig_types[481];
-static swig_module_info swig_module = {swig_types, 480, 0, 0, 0, 0};
+#define SWIGTYPE_p_ApplicableOccurrence_optional swig_types[0]
+#define SWIGTYPE_p_ApplicableOccurrence_traits swig_types[1]
+#define SWIGTYPE_p_ApplicableOccurrence_type swig_types[2]
+#define SWIGTYPE_p_AssignedToFlowElement_optional swig_types[3]
+#define SWIGTYPE_p_AssignedToFlowElement_traits swig_types[4]
+#define SWIGTYPE_p_AssignedToFlowElement_type swig_types[5]
+#define SWIGTYPE_p_AssignedToGroups_optional swig_types[6]
+#define SWIGTYPE_p_AssignedToGroups_traits swig_types[7]
+#define SWIGTYPE_p_AssignedToGroups_type swig_types[8]
+#define SWIGTYPE_p_BuildingAddress_optional swig_types[9]
+#define SWIGTYPE_p_BuildingAddress_traits swig_types[10]
+#define SWIGTYPE_p_BuildingAddress_type swig_types[11]
+#define SWIGTYPE_p_BuildingConstructionsTemplate_optional swig_types[12]
+#define SWIGTYPE_p_BuildingConstructionsTemplate_traits swig_types[13]
+#define SWIGTYPE_p_BuildingConstructionsTemplate_type swig_types[14]
+#define SWIGTYPE_p_BuildingDatumElevation_optional swig_types[15]
+#define SWIGTYPE_p_BuildingDatumElevation_traits swig_types[16]
+#define SWIGTYPE_p_BuildingDatumElevation_type swig_types[17]
+#define SWIGTYPE_p_BuildingEnergyTargetUnits_optional swig_types[18]
+#define SWIGTYPE_p_BuildingEnergyTargetUnits_traits swig_types[19]
+#define SWIGTYPE_p_BuildingEnergyTargetUnits_type swig_types[20]
+#define SWIGTYPE_p_BuildingEnergyTargetValue_optional swig_types[21]
+#define SWIGTYPE_p_BuildingEnergyTargetValue_traits swig_types[22]
+#define SWIGTYPE_p_BuildingEnergyTargetValue_type swig_types[23]
+#define SWIGTYPE_p_BuildingGrossFloorArea_optional swig_types[24]
+#define SWIGTYPE_p_BuildingGrossFloorArea_traits swig_types[25]
+#define SWIGTYPE_p_BuildingGrossFloorArea_type swig_types[26]
+#define SWIGTYPE_p_BuildingGrossPlannedArea_optional swig_types[27]
+#define SWIGTYPE_p_BuildingGrossPlannedArea_traits swig_types[28]
+#define SWIGTYPE_p_BuildingGrossPlannedArea_type swig_types[29]
+#define SWIGTYPE_p_BuildingHeight_optional swig_types[30]
+#define SWIGTYPE_p_BuildingHeight_traits swig_types[31]
+#define SWIGTYPE_p_BuildingHeight_type swig_types[32]
+#define SWIGTYPE_p_BuildingInSpatialContainer_optional swig_types[33]
+#define SWIGTYPE_p_BuildingInSpatialContainer_traits swig_types[34]
+#define SWIGTYPE_p_BuildingInSpatialContainer_type swig_types[35]
+#define SWIGTYPE_p_BuildingInfiltrationType_optional swig_types[36]
+#define SWIGTYPE_p_BuildingInfiltrationType_traits swig_types[37]
+#define SWIGTYPE_p_BuildingInfiltrationType_type swig_types[38]
+#define SWIGTYPE_p_BuildingInfiltrationValue_optional swig_types[39]
+#define SWIGTYPE_p_BuildingInfiltrationValue_traits swig_types[40]
+#define SWIGTYPE_p_BuildingInfiltrationValue_type swig_types[41]
+#define SWIGTYPE_p_BuildingNumberofStoreys_optional swig_types[42]
+#define SWIGTYPE_p_BuildingNumberofStoreys_traits swig_types[43]
+#define SWIGTYPE_p_BuildingNumberofStoreys_type swig_types[44]
+#define SWIGTYPE_p_BuildingOccupancyType_optional swig_types[45]
+#define SWIGTYPE_p_BuildingOccupancyType_traits swig_types[46]
+#define SWIGTYPE_p_BuildingOccupancyType_type swig_types[47]
+#define SWIGTYPE_p_BuildingYearOfConstruction_optional swig_types[48]
+#define SWIGTYPE_p_BuildingYearOfConstruction_traits swig_types[49]
+#define SWIGTYPE_p_BuildingYearOfConstruction_type swig_types[50]
+#define SWIGTYPE_p_BuildingisLandmarked_optional swig_types[51]
+#define SWIGTYPE_p_BuildingisLandmarked_traits swig_types[52]
+#define SWIGTYPE_p_BuildingisLandmarked_type swig_types[53]
+#define SWIGTYPE_p_ChangeFromTemplate_optional swig_types[54]
+#define SWIGTYPE_p_ChangeFromTemplate_traits swig_types[55]
+#define SWIGTYPE_p_ChangeFromTemplate_type swig_types[56]
+#define SWIGTYPE_p_ClassRef_ConstEntByFunction_optional swig_types[57]
+#define SWIGTYPE_p_ClassRef_ConstEntByFunction_traits swig_types[58]
+#define SWIGTYPE_p_ClassRef_ConstEntByFunction_type swig_types[59]
+#define SWIGTYPE_p_CompositionType_optional swig_types[60]
+#define SWIGTYPE_p_CompositionType_traits swig_types[61]
+#define SWIGTYPE_p_CompositionType_type swig_types[62]
+#define SWIGTYPE_p_ContainingBuildings_optional swig_types[63]
+#define SWIGTYPE_p_ContainingBuildings_traits swig_types[64]
+#define SWIGTYPE_p_ContainingBuildings_type swig_types[65]
+#define SWIGTYPE_p_ContainingSpatialStructure_optional swig_types[66]
+#define SWIGTYPE_p_ContainingSpatialStructure_traits swig_types[67]
+#define SWIGTYPE_p_ContainingSpatialStructure_type swig_types[68]
+#define SWIGTYPE_p_ControlElementID_optional swig_types[69]
+#define SWIGTYPE_p_ControlElementID_traits swig_types[70]
+#define SWIGTYPE_p_ControlElementID_type swig_types[71]
+#define SWIGTYPE_p_ControlledBy_optional swig_types[72]
+#define SWIGTYPE_p_ControlledBy_traits swig_types[73]
+#define SWIGTYPE_p_ControlledBy_type swig_types[74]
+#define SWIGTYPE_p_DaylightControlsDefault_optional swig_types[75]
+#define SWIGTYPE_p_DaylightControlsDefault_traits swig_types[76]
+#define SWIGTYPE_p_DaylightControlsDefault_type swig_types[77]
+#define SWIGTYPE_p_DecimalPrecision_optional swig_types[78]
+#define SWIGTYPE_p_DecimalPrecision_traits swig_types[79]
+#define SWIGTYPE_p_DecimalPrecision_type swig_types[80]
+#define SWIGTYPE_p_Decomposes_optional swig_types[81]
+#define SWIGTYPE_p_Decomposes_traits swig_types[82]
+#define SWIGTYPE_p_Decomposes_type swig_types[83]
+#define SWIGTYPE_p_Description_optional swig_types[84]
+#define SWIGTYPE_p_Description_traits swig_types[85]
+#define SWIGTYPE_p_Description_type swig_types[86]
+#define SWIGTYPE_p_DockedToPort_optional swig_types[87]
+#define SWIGTYPE_p_DockedToPort_traits swig_types[88]
+#define SWIGTYPE_p_DockedToPort_type swig_types[89]
+#define SWIGTYPE_p_ElevationOfTerrain_optional swig_types[90]
+#define SWIGTYPE_p_ElevationOfTerrain_traits swig_types[91]
+#define SWIGTYPE_p_ElevationOfTerrain_type swig_types[92]
+#define SWIGTYPE_p_GeometricRepresentations_optional swig_types[93]
+#define SWIGTYPE_p_GeometricRepresentations_traits swig_types[94]
+#define SWIGTYPE_p_GeometricRepresentations_type swig_types[95]
+#define SWIGTYPE_p_HasPropertySets_optional swig_types[96]
+#define SWIGTYPE_p_HasPropertySets_traits swig_types[97]
+#define SWIGTYPE_p_HasPropertySets_type swig_types[98]
+#define SWIGTYPE_p_HasTemplateChanged_optional swig_types[99]
+#define SWIGTYPE_p_HasTemplateChanged_traits swig_types[100]
+#define SWIGTYPE_p_HasTemplateChanged_type swig_types[101]
+#define SWIGTYPE_p_HostElement_optional swig_types[102]
+#define SWIGTYPE_p_HostElement_traits swig_types[103]
+#define SWIGTYPE_p_HostElement_type swig_types[104]
+#define SWIGTYPE_p_IfcGlobalID_optional swig_types[105]
+#define SWIGTYPE_p_IfcGlobalID_traits swig_types[106]
+#define SWIGTYPE_p_IfcGlobalID_type swig_types[107]
+#define SWIGTYPE_p_IfcName_optional swig_types[108]
+#define SWIGTYPE_p_IfcName_traits swig_types[109]
+#define SWIGTYPE_p_IfcName_type swig_types[110]
+#define SWIGTYPE_p_IsAutoGenerated_optional swig_types[111]
+#define SWIGTYPE_p_IsAutoGenerated_traits swig_types[112]
+#define SWIGTYPE_p_IsAutoGenerated_type swig_types[113]
+#define SWIGTYPE_p_IsTemplateObject_optional swig_types[114]
+#define SWIGTYPE_p_IsTemplateObject_traits swig_types[115]
+#define SWIGTYPE_p_IsTemplateObject_type swig_types[116]
+#define SWIGTYPE_p_LocalPlacementCoordinates_optional swig_types[117]
+#define SWIGTYPE_p_LocalPlacementCoordinates_traits swig_types[118]
+#define SWIGTYPE_p_LocalPlacementCoordinates_type swig_types[119]
+#define SWIGTYPE_p_LocalPlacementRotation_optional swig_types[120]
+#define SWIGTYPE_p_LocalPlacementRotation_traits swig_types[121]
+#define SWIGTYPE_p_LocalPlacementRotation_type swig_types[122]
+#define SWIGTYPE_p_LocalPlacementX_optional swig_types[123]
+#define SWIGTYPE_p_LocalPlacementX_traits swig_types[124]
+#define SWIGTYPE_p_LocalPlacementX_type swig_types[125]
+#define SWIGTYPE_p_LocalPlacementY_optional swig_types[126]
+#define SWIGTYPE_p_LocalPlacementY_traits swig_types[127]
+#define SWIGTYPE_p_LocalPlacementY_type swig_types[128]
+#define SWIGTYPE_p_LocalPlacementZ_optional swig_types[129]
+#define SWIGTYPE_p_LocalPlacementZ_traits swig_types[130]
+#define SWIGTYPE_p_LocalPlacementZ_type swig_types[131]
+#define SWIGTYPE_p_LongName_optional swig_types[132]
+#define SWIGTYPE_p_LongName_traits swig_types[133]
+#define SWIGTYPE_p_LongName_type swig_types[134]
+#define SWIGTYPE_p_MemberUsedForDiagrams_optional swig_types[135]
+#define SWIGTYPE_p_MemberUsedForDiagrams_traits swig_types[136]
+#define SWIGTYPE_p_MemberUsedForDiagrams_type swig_types[137]
+#define SWIGTYPE_p_Name_optional swig_types[138]
+#define SWIGTYPE_p_Name_traits swig_types[139]
+#define SWIGTYPE_p_Name_type swig_types[140]
+#define SWIGTYPE_p_NatVentilationDefault_optional swig_types[141]
+#define SWIGTYPE_p_NatVentilationDefault_traits swig_types[142]
+#define SWIGTYPE_p_NatVentilationDefault_type swig_types[143]
+#define SWIGTYPE_p_NevronSchematicLayout_optional swig_types[144]
+#define SWIGTYPE_p_NevronSchematicLayout_traits swig_types[145]
+#define SWIGTYPE_p_NevronSchematicLayout_type swig_types[146]
+#define SWIGTYPE_p_ObjectCreationParams_optional swig_types[147]
+#define SWIGTYPE_p_ObjectCreationParams_traits swig_types[148]
+#define SWIGTYPE_p_ObjectCreationParams_type swig_types[149]
+#define SWIGTYPE_p_ObjectIndex_optional swig_types[150]
+#define SWIGTYPE_p_ObjectIndex_traits swig_types[151]
+#define SWIGTYPE_p_ObjectIndex_type swig_types[152]
+#define SWIGTYPE_p_ObjectName_optional swig_types[153]
+#define SWIGTYPE_p_ObjectName_traits swig_types[154]
+#define SWIGTYPE_p_ObjectName_type swig_types[155]
+#define SWIGTYPE_p_ObjectOwnerHistory_optional swig_types[156]
+#define SWIGTYPE_p_ObjectOwnerHistory_traits swig_types[157]
+#define SWIGTYPE_p_ObjectOwnerHistory_type swig_types[158]
+#define SWIGTYPE_p_ObjectType_optional swig_types[159]
+#define SWIGTYPE_p_ObjectType_traits swig_types[160]
+#define SWIGTYPE_p_ObjectType_type swig_types[161]
+#define SWIGTYPE_p_ParentGroups_optional swig_types[162]
+#define SWIGTYPE_p_ParentGroups_traits swig_types[163]
+#define SWIGTYPE_p_ParentGroups_type swig_types[164]
+#define SWIGTYPE_p_PlacementRelToContainingTypeDef_optional swig_types[165]
+#define SWIGTYPE_p_PlacementRelToContainingTypeDef_traits swig_types[166]
+#define SWIGTYPE_p_PlacementRelToContainingTypeDef_type swig_types[167]
+#define SWIGTYPE_p_Placement_optional swig_types[168]
+#define SWIGTYPE_p_Placement_traits swig_types[169]
+#define SWIGTYPE_p_Placement_type swig_types[170]
+#define SWIGTYPE_p_ProfileName_optional swig_types[171]
+#define SWIGTYPE_p_ProfileName_traits swig_types[172]
+#define SWIGTYPE_p_ProfileName_type swig_types[173]
+#define SWIGTYPE_p_ProfileType_optional swig_types[174]
+#define SWIGTYPE_p_ProfileType_traits swig_types[175]
+#define SWIGTYPE_p_ProfileType_type swig_types[176]
+#define SWIGTYPE_p_RefId_traits swig_types[177]
+#define SWIGTYPE_p_RefId_type swig_types[178]
+#define SWIGTYPE_p_RepresentationContext_optional swig_types[179]
+#define SWIGTYPE_p_RepresentationContext_traits swig_types[180]
+#define SWIGTYPE_p_RepresentationContext_type swig_types[181]
+#define SWIGTYPE_p_RepresentationIdentifier_optional swig_types[182]
+#define SWIGTYPE_p_RepresentationIdentifier_traits swig_types[183]
+#define SWIGTYPE_p_RepresentationIdentifier_type swig_types[184]
+#define SWIGTYPE_p_RepresentationItems_optional swig_types[185]
+#define SWIGTYPE_p_RepresentationItems_traits swig_types[186]
+#define SWIGTYPE_p_RepresentationItems_type swig_types[187]
+#define SWIGTYPE_p_RepresentationType_optional swig_types[188]
+#define SWIGTYPE_p_RepresentationType_traits swig_types[189]
+#define SWIGTYPE_p_RepresentationType_type swig_types[190]
+#define SWIGTYPE_p_Representation_optional swig_types[191]
+#define SWIGTYPE_p_Representation_traits swig_types[192]
+#define SWIGTYPE_p_Representation_type swig_types[193]
+#define SWIGTYPE_p_RoofIrrigation_IrrigationMaxSaturatThreshold_optional swig_types[194]
+#define SWIGTYPE_p_RoofIrrigation_IrrigationMaxSaturatThreshold_traits swig_types[195]
+#define SWIGTYPE_p_RoofIrrigation_IrrigationMaxSaturatThreshold_type swig_types[196]
+#define SWIGTYPE_p_RoofIrrigation_IrrigationModelType_optional swig_types[197]
+#define SWIGTYPE_p_RoofIrrigation_IrrigationModelType_traits swig_types[198]
+#define SWIGTYPE_p_RoofIrrigation_IrrigationModelType_type swig_types[199]
+#define SWIGTYPE_p_RoofIrrigation_IrrigationRateSchedName_optional swig_types[200]
+#define SWIGTYPE_p_RoofIrrigation_IrrigationRateSchedName_traits swig_types[201]
+#define SWIGTYPE_p_RoofIrrigation_IrrigationRateSchedName_type swig_types[202]
+#define SWIGTYPE_p_SelectedPropertyGroups_optional swig_types[203]
+#define SWIGTYPE_p_SelectedPropertyGroups_traits swig_types[204]
+#define SWIGTYPE_p_SelectedPropertyGroups_type swig_types[205]
+#define SWIGTYPE_p_SimBuilding_LoadsConvergTolVal_optional swig_types[206]
+#define SWIGTYPE_p_SimBuilding_LoadsConvergTolVal_traits swig_types[207]
+#define SWIGTYPE_p_SimBuilding_LoadsConvergTolVal_type swig_types[208]
+#define SWIGTYPE_p_SimBuilding_MaxNumWarmupDays_optional swig_types[209]
+#define SWIGTYPE_p_SimBuilding_MaxNumWarmupDays_traits swig_types[210]
+#define SWIGTYPE_p_SimBuilding_MaxNumWarmupDays_type swig_types[211]
+#define SWIGTYPE_p_SimBuilding_MinNumberWarmupDays_optional swig_types[212]
+#define SWIGTYPE_p_SimBuilding_MinNumberWarmupDays_traits swig_types[213]
+#define SWIGTYPE_p_SimBuilding_MinNumberWarmupDays_type swig_types[214]
+#define SWIGTYPE_p_SimBuilding_Name_optional swig_types[215]
+#define SWIGTYPE_p_SimBuilding_Name_traits swig_types[216]
+#define SWIGTYPE_p_SimBuilding_Name_type swig_types[217]
+#define SWIGTYPE_p_SimBuilding_NorthAxis_optional swig_types[218]
+#define SWIGTYPE_p_SimBuilding_NorthAxis_traits swig_types[219]
+#define SWIGTYPE_p_SimBuilding_NorthAxis_type swig_types[220]
+#define SWIGTYPE_p_SimBuilding_SolarDist_optional swig_types[221]
+#define SWIGTYPE_p_SimBuilding_SolarDist_traits swig_types[222]
+#define SWIGTYPE_p_SimBuilding_SolarDist_type swig_types[223]
+#define SWIGTYPE_p_SimBuilding_TempConvergTolVal_optional swig_types[224]
+#define SWIGTYPE_p_SimBuilding_TempConvergTolVal_traits swig_types[225]
+#define SWIGTYPE_p_SimBuilding_TempConvergTolVal_type swig_types[226]
+#define SWIGTYPE_p_SimBuilding_Terrain_optional swig_types[227]
+#define SWIGTYPE_p_SimBuilding_Terrain_traits swig_types[228]
+#define SWIGTYPE_p_SimBuilding_Terrain_type swig_types[229]
+#define SWIGTYPE_p_SimModelName_optional swig_types[230]
+#define SWIGTYPE_p_SimModelName_traits swig_types[231]
+#define SWIGTYPE_p_SimModelName_type swig_types[232]
+#define SWIGTYPE_p_SimModelSubtype_optional swig_types[233]
+#define SWIGTYPE_p_SimModelSubtype_traits swig_types[234]
+#define SWIGTYPE_p_SimModelSubtype_type swig_types[235]
+#define SWIGTYPE_p_SimModelType_optional swig_types[236]
+#define SWIGTYPE_p_SimModelType_traits swig_types[237]
+#define SWIGTYPE_p_SimModelType_type swig_types[238]
+#define SWIGTYPE_p_SimUniqueID_optional swig_types[239]
+#define SWIGTYPE_p_SimUniqueID_traits swig_types[240]
+#define SWIGTYPE_p_SimUniqueID_type swig_types[241]
+#define SWIGTYPE_p_SourceLibraryEntryID_optional swig_types[242]
+#define SWIGTYPE_p_SourceLibraryEntryID_traits swig_types[243]
+#define SWIGTYPE_p_SourceLibraryEntryID_type swig_types[244]
+#define SWIGTYPE_p_SourceLibraryEntryRef_optional swig_types[245]
+#define SWIGTYPE_p_SourceLibraryEntryRef_traits swig_types[246]
+#define SWIGTYPE_p_SourceLibraryEntryRef_type swig_types[247]
+#define SWIGTYPE_p_SourceModelObjectType_optional swig_types[248]
+#define SWIGTYPE_p_SourceModelObjectType_traits swig_types[249]
+#define SWIGTYPE_p_SourceModelObjectType_type swig_types[250]
+#define SWIGTYPE_p_SourceModelSchema_optional swig_types[251]
+#define SWIGTYPE_p_SourceModelSchema_traits swig_types[252]
+#define SWIGTYPE_p_SourceModelSchema_type swig_types[253]
+#define SWIGTYPE_p_SpaceBoundsNotCurrent_optional swig_types[254]
+#define SWIGTYPE_p_SpaceBoundsNotCurrent_traits swig_types[255]
+#define SWIGTYPE_p_SpaceBoundsNotCurrent_type swig_types[256]
+#define SWIGTYPE_p_T24AboveGradeStoryCountAltered_optional swig_types[257]
+#define SWIGTYPE_p_T24AboveGradeStoryCountAltered_traits swig_types[258]
+#define SWIGTYPE_p_T24AboveGradeStoryCountAltered_type swig_types[259]
+#define SWIGTYPE_p_T24AboveGradeStoryCountExists_optional swig_types[260]
+#define SWIGTYPE_p_T24AboveGradeStoryCountExists_traits swig_types[261]
+#define SWIGTYPE_p_T24AboveGradeStoryCountExists_type swig_types[262]
+#define SWIGTYPE_p_T24AboveGradeStoryCountNew_optional swig_types[263]
+#define SWIGTYPE_p_T24AboveGradeStoryCountNew_traits swig_types[264]
+#define SWIGTYPE_p_T24AboveGradeStoryCountNew_type swig_types[265]
+#define SWIGTYPE_p_T24CoilCoolingCapacity_optional swig_types[266]
+#define SWIGTYPE_p_T24CoilCoolingCapacity_traits swig_types[267]
+#define SWIGTYPE_p_T24CoilCoolingCapacity_type swig_types[268]
+#define SWIGTYPE_p_T24CoilHeatingCapacity_optional swig_types[269]
+#define SWIGTYPE_p_T24CoilHeatingCapacity_traits swig_types[270]
+#define SWIGTYPE_p_T24CoilHeatingCapacity_type swig_types[271]
+#define SWIGTYPE_p_T24FunctionClassificationMethod_optional swig_types[272]
+#define SWIGTYPE_p_T24FunctionClassificationMethod_traits swig_types[273]
+#define SWIGTYPE_p_T24FunctionClassificationMethod_type swig_types[274]
+#define SWIGTYPE_p_T24HighRiseResidentialLivingUnitCount_optional swig_types[275]
+#define SWIGTYPE_p_T24HighRiseResidentialLivingUnitCount_traits swig_types[276]
+#define SWIGTYPE_p_T24HighRiseResidentialLivingUnitCount_type swig_types[277]
+#define SWIGTYPE_p_T24LivingUnitCountAltered_optional swig_types[278]
+#define SWIGTYPE_p_T24LivingUnitCountAltered_traits swig_types[279]
+#define SWIGTYPE_p_T24LivingUnitCountAltered_type swig_types[280]
+#define SWIGTYPE_p_T24LivingUnitCountExisting_optional swig_types[281]
+#define SWIGTYPE_p_T24LivingUnitCountExisting_traits swig_types[282]
+#define SWIGTYPE_p_T24LivingUnitCountExisting_type swig_types[283]
+#define SWIGTYPE_p_T24LivingUnitCountNew_optional swig_types[284]
+#define SWIGTYPE_p_T24LivingUnitCountNew_traits swig_types[285]
+#define SWIGTYPE_p_T24LivingUnitCountNew_type swig_types[286]
+#define SWIGTYPE_p_T24PlantCoolingCapacity_optional swig_types[287]
+#define SWIGTYPE_p_T24PlantCoolingCapacity_traits swig_types[288]
+#define SWIGTYPE_p_T24PlantCoolingCapacity_type swig_types[289]
+#define SWIGTYPE_p_T24PlantHeatingCapacity_optional swig_types[290]
+#define SWIGTYPE_p_T24PlantHeatingCapacity_traits swig_types[291]
+#define SWIGTYPE_p_T24PlantHeatingCapacity_type swig_types[292]
+#define SWIGTYPE_p_T24RelocatablePublicSchoolBuilding_optional swig_types[293]
+#define SWIGTYPE_p_T24RelocatablePublicSchoolBuilding_traits swig_types[294]
+#define SWIGTYPE_p_T24RelocatablePublicSchoolBuilding_type swig_types[295]
+#define SWIGTYPE_p_T24TotalStoryCountAltered_optional swig_types[296]
+#define SWIGTYPE_p_T24TotalStoryCountAltered_traits swig_types[297]
+#define SWIGTYPE_p_T24TotalStoryCountAltered_type swig_types[298]
+#define SWIGTYPE_p_T24TotalStoryCountExisting_optional swig_types[299]
+#define SWIGTYPE_p_T24TotalStoryCountExisting_traits swig_types[300]
+#define SWIGTYPE_p_T24TotalStoryCountExisting_type swig_types[301]
+#define SWIGTYPE_p_T24TotalStoryCountNew_optional swig_types[302]
+#define SWIGTYPE_p_T24TotalStoryCountNew_traits swig_types[303]
+#define SWIGTYPE_p_T24TotalStoryCountNew_type swig_types[304]
+#define SWIGTYPE_p_Tag_optional swig_types[305]
+#define SWIGTYPE_p_Tag_traits swig_types[306]
+#define SWIGTYPE_p_Tag_type swig_types[307]
+#define SWIGTYPE_p_TemplateOverrideValues_optional swig_types[308]
+#define SWIGTYPE_p_TemplateOverrideValues_traits swig_types[309]
+#define SWIGTYPE_p_TemplateOverrideValues_type swig_types[310]
+#define SWIGTYPE_p_TemplatesForMembers_optional swig_types[311]
+#define SWIGTYPE_p_TemplatesForMembers_traits swig_types[312]
+#define SWIGTYPE_p_TemplatesForMembers_type swig_types[313]
+#define SWIGTYPE_p_TypeDefCreationParams_optional swig_types[314]
+#define SWIGTYPE_p_TypeDefCreationParams_traits swig_types[315]
+#define SWIGTYPE_p_TypeDefCreationParams_type swig_types[316]
+#define SWIGTYPE_p_TypeDefinition_optional swig_types[317]
+#define SWIGTYPE_p_TypeDefinition_traits swig_types[318]
+#define SWIGTYPE_p_TypeDefinition_type swig_types[319]
+#define SWIGTYPE_p_UnitType_String_optional swig_types[320]
+#define SWIGTYPE_p_UnitType_String_traits swig_types[321]
+#define SWIGTYPE_p_UnitType_String_type swig_types[322]
+#define SWIGTYPE_p_XDirectionX_optional swig_types[323]
+#define SWIGTYPE_p_XDirectionX_traits swig_types[324]
+#define SWIGTYPE_p_XDirectionX_type swig_types[325]
+#define SWIGTYPE_p_XDirectionY_optional swig_types[326]
+#define SWIGTYPE_p_XDirectionY_traits swig_types[327]
+#define SWIGTYPE_p_XDirectionY_type swig_types[328]
+#define SWIGTYPE_p_XDirectionZ_optional swig_types[329]
+#define SWIGTYPE_p_XDirectionZ_traits swig_types[330]
+#define SWIGTYPE_p_XDirectionZ_type swig_types[331]
+#define SWIGTYPE_p__3dHeight_optional swig_types[332]
+#define SWIGTYPE_p__3dHeight_traits swig_types[333]
+#define SWIGTYPE_p__3dHeight_type swig_types[334]
+#define SWIGTYPE_p__3dLength_optional swig_types[335]
+#define SWIGTYPE_p__3dLength_traits swig_types[336]
+#define SWIGTYPE_p__3dLength_type swig_types[337]
+#define SWIGTYPE_p__3dWidth_optional swig_types[338]
+#define SWIGTYPE_p__3dWidth_traits swig_types[339]
+#define SWIGTYPE_p__3dWidth_type swig_types[340]
+#define SWIGTYPE_p_allocator_type swig_types[341]
+#define SWIGTYPE_p_base_const_iterator swig_types[342]
+#define SWIGTYPE_p_base_iterator swig_types[343]
+#define SWIGTYPE_p_base_sequence swig_types[344]
+#define SWIGTYPE_p_base_type swig_types[345]
+#define SWIGTYPE_p_bool swig_types[346]
+#define SWIGTYPE_p_bool_convertible swig_types[347]
+#define SWIGTYPE_p_char swig_types[348]
+#define SWIGTYPE_p_const_iterator swig_types[349]
+#define SWIGTYPE_p_const_reverse_iterator swig_types[350]
+#define SWIGTYPE_p_difference_type swig_types[351]
+#define SWIGTYPE_p_dom_content_optional swig_types[352]
+#define SWIGTYPE_p_double swig_types[353]
+#define SWIGTYPE_p_float swig_types[354]
+#define SWIGTYPE_p_int swig_types[355]
+#define SWIGTYPE_p_iterator swig_types[356]
+#define SWIGTYPE_p_iterator_adapterT_std__vectorT_xsd__cxx__tree__sequence_common__ptr_std__allocatorT_xsd__cxx__tree__sequence_common__ptr_t_t__const_iterator_schema__simxml__BuildingModel__SimBuilding_Building_Default_const_t swig_types[357]
+#define SWIGTYPE_p_iterator_adapterT_std__vectorT_xsd__cxx__tree__sequence_common__ptr_std__allocatorT_xsd__cxx__tree__sequence_common__ptr_t_t__const_reverse_iterator_schema__simxml__BuildingModel__SimBuilding_Building_Default_const_t swig_types[358]
+#define SWIGTYPE_p_iterator_adapterT_std__vectorT_xsd__cxx__tree__sequence_common__ptr_std__allocatorT_xsd__cxx__tree__sequence_common__ptr_t_t__iterator___schema__simxml__BuildingModel__SimBuilding_Building_Default_t swig_types[359]
+#define SWIGTYPE_p_iterator_adapterT_std__vectorT_xsd__cxx__tree__sequence_common__ptr_std__allocatorT_xsd__cxx__tree__sequence_common__ptr_t_t__reverse_iterator___schema__simxml__BuildingModel__SimBuilding_Building_Default_t swig_types[360]
+#define SWIGTYPE_p_long_long swig_types[361]
+#define SWIGTYPE_p_ptr swig_types[362]
+#define SWIGTYPE_p_reverse_iterator swig_types[363]
+#define SWIGTYPE_p_schema__simxml__BuildingModel__SimBuilding swig_types[364]
+#define SWIGTYPE_p_schema__simxml__BuildingModel__SimBuilding_Building swig_types[365]
+#define SWIGTYPE_p_schema__simxml__BuildingModel__SimBuilding_Building_Default swig_types[366]
+#define SWIGTYPE_p_schema__simxml__MepModel__SimFlowEnergyConverter swig_types[367]
+#define SWIGTYPE_p_schema__simxml__Model__SimModel swig_types[368]
+#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimArrayParams swig_types[369]
+#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimNode swig_types[370]
+#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimPort swig_types[371]
+#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimUnitType swig_types[372]
+#define SWIGTYPE_p_schema__simxml__ResourcesGeometry__SimProfileDefinition swig_types[373]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SelectedPropertyGroups swig_types[374]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimActorDefinition swig_types[375]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimAppDefault swig_types[376]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimBldgModelParams swig_types[377]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimBuildingElement swig_types[378]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimDistributionControlElement swig_types[379]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimDistributionElement swig_types[380]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimDistributionFlowElement swig_types[381]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimElement swig_types[382]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimFeatureElement swig_types[383]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimGeometricRepresentationItem swig_types[384]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimGroup swig_types[385]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimObject swig_types[386]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimObjectDefinition swig_types[387]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimObjectPlacement swig_types[388]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimObjectTypeDefinition swig_types[389]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimPropertySetDefinition swig_types[390]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimRepresentation swig_types[391]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimRepresentationItem swig_types[392]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimResourceObject swig_types[393]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimRoot swig_types[394]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimSpatialStructureElement swig_types[395]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimTemplate swig_types[396]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimTopologicalRepresentationItem swig_types[397]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__doubleList swig_types[398]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__integerList swig_types[399]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__logical swig_types[400]
+#define SWIGTYPE_p_self_ swig_types[401]
+#define SWIGTYPE_p_short swig_types[402]
+#define SWIGTYPE_p_signed_char swig_types[403]
+#define SWIGTYPE_p_size_type swig_types[404]
+#define SWIGTYPE_p_std__auto_ptrT_T_t swig_types[405]
+#define SWIGTYPE_p_std__auto_ptrT_schema__simxml__BuildingModel__SimBuilding_Building_Default_t swig_types[406]
+#define SWIGTYPE_p_std__auto_ptrT_schema__simxml__SimModelCore__logical_t swig_types[407]
+#define SWIGTYPE_p_std__auto_ptrT_xml_schema__idref_t swig_types[408]
+#define SWIGTYPE_p_std__auto_ptrT_xml_schema__string_t swig_types[409]
+#define SWIGTYPE_p_std__vectorT_xsd__cxx__tree__sequence_common__ptr_std__allocatorT_xsd__cxx__tree__sequence_common__ptr_t_t__size_type swig_types[410]
+#define SWIGTYPE_p_unsigned_char swig_types[411]
+#define SWIGTYPE_p_unsigned_int swig_types[412]
+#define SWIGTYPE_p_unsigned_long_long swig_types[413]
+#define SWIGTYPE_p_unsigned_short swig_types[414]
+#define SWIGTYPE_p_value_type swig_types[415]
+#define SWIGTYPE_p_xercesc__DOMElement swig_types[416]
+#define SWIGTYPE_p_xsd__cxx__tree___type swig_types[417]
+#define SWIGTYPE_p_xsd__cxx__tree__base64_binaryT_char_xsd__cxx__tree__simple_type_t swig_types[418]
+#define SWIGTYPE_p_xsd__cxx__tree__boundsT_char_t swig_types[419]
+#define SWIGTYPE_p_xsd__cxx__tree__bufferT_char_t swig_types[420]
+#define SWIGTYPE_p_xsd__cxx__tree__content_order swig_types[421]
+#define SWIGTYPE_p_xsd__cxx__tree__dateT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[422]
+#define SWIGTYPE_p_xsd__cxx__tree__date_timeT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[423]
+#define SWIGTYPE_p_xsd__cxx__tree__diagnosticsT_char_t swig_types[424]
+#define SWIGTYPE_p_xsd__cxx__tree__duplicate_idT_char_t swig_types[425]
+#define SWIGTYPE_p_xsd__cxx__tree__durationT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[426]
+#define SWIGTYPE_p_xsd__cxx__tree__entitiesT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__entity_t swig_types[427]
+#define SWIGTYPE_p_xsd__cxx__tree__entityT_char_xsd__cxx__tree__ncname_t swig_types[428]
+#define SWIGTYPE_p_xsd__cxx__tree__errorT_char_t swig_types[429]
+#define SWIGTYPE_p_xsd__cxx__tree__exceptionT_char_t swig_types[430]
+#define SWIGTYPE_p_xsd__cxx__tree__expected_attributeT_char_t swig_types[431]
+#define SWIGTYPE_p_xsd__cxx__tree__expected_elementT_char_t swig_types[432]
+#define SWIGTYPE_p_xsd__cxx__tree__expected_text_contentT_char_t swig_types[433]
+#define SWIGTYPE_p_xsd__cxx__tree__flags swig_types[434]
+#define SWIGTYPE_p_xsd__cxx__tree__gdayT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[435]
+#define SWIGTYPE_p_xsd__cxx__tree__gmonthT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[436]
+#define SWIGTYPE_p_xsd__cxx__tree__gmonth_dayT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[437]
+#define SWIGTYPE_p_xsd__cxx__tree__gyearT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[438]
+#define SWIGTYPE_p_xsd__cxx__tree__gyear_monthT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[439]
+#define SWIGTYPE_p_xsd__cxx__tree__hex_binaryT_char_xsd__cxx__tree__simple_type_t swig_types[440]
+#define SWIGTYPE_p_xsd__cxx__tree__idT_char_xsd__cxx__tree__ncname_t swig_types[441]
+#define SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t swig_types[442]
+#define SWIGTYPE_p_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t swig_types[443]
+#define SWIGTYPE_p_xsd__cxx__tree__languageT_char_xsd__cxx__tree__token_t swig_types[444]
+#define SWIGTYPE_p_xsd__cxx__tree__nameT_char_xsd__cxx__tree__token_t swig_types[445]
+#define SWIGTYPE_p_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__name_t swig_types[446]
+#define SWIGTYPE_p_xsd__cxx__tree__nmtokenT_char_xsd__cxx__tree__token_t swig_types[447]
+#define SWIGTYPE_p_xsd__cxx__tree__nmtokensT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__nmtoken_t swig_types[448]
+#define SWIGTYPE_p_xsd__cxx__tree__no_prefix_mappingT_char_t swig_types[449]
+#define SWIGTYPE_p_xsd__cxx__tree__no_type_infoT_char_t swig_types[450]
+#define SWIGTYPE_p_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__string_t swig_types[451]
+#define SWIGTYPE_p_xsd__cxx__tree__not_derivedT_char_t swig_types[452]
+#define SWIGTYPE_p_xsd__cxx__tree__optionalT_bool_true_t swig_types[453]
+#define SWIGTYPE_p_xsd__cxx__tree__optionalT_double_true_t swig_types[454]
+#define SWIGTYPE_p_xsd__cxx__tree__optionalT_int_true_t swig_types[455]
+#define SWIGTYPE_p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__logical_xsd__cxx__tree__fundamental_pT_schema__simxml__SimModelCore__logical_t__r_t swig_types[456]
+#define SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t swig_types[457]
+#define SWIGTYPE_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_false_t swig_types[458]
+#define SWIGTYPE_p_xsd__cxx__tree__parsingT_char_t swig_types[459]
+#define SWIGTYPE_p_xsd__cxx__tree__propertiesT_char_t swig_types[460]
+#define SWIGTYPE_p_xsd__cxx__tree__qnameT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__uri_xsd__cxx__tree__ncname_t swig_types[461]
+#define SWIGTYPE_p_xsd__cxx__tree__sequenceT_schema__simxml__BuildingModel__SimBuilding_Building_Default_false_t swig_types[462]
+#define SWIGTYPE_p_xsd__cxx__tree__sequenceT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree__type_t_t_false_t swig_types[463]
+#define SWIGTYPE_p_xsd__cxx__tree__sequence_common swig_types[464]
+#define SWIGTYPE_p_xsd__cxx__tree__severity swig_types[465]
+#define SWIGTYPE_p_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t swig_types[466]
+#define SWIGTYPE_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree__type_t_t swig_types[467]
+#define SWIGTYPE_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t swig_types[468]
+#define SWIGTYPE_p_xsd__cxx__tree__timeT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[469]
+#define SWIGTYPE_p_xsd__cxx__tree__time_zone swig_types[470]
+#define SWIGTYPE_p_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_string_t swig_types[471]
+#define SWIGTYPE_p_xsd__cxx__tree__unexpected_elementT_char_t swig_types[472]
+#define SWIGTYPE_p_xsd__cxx__tree__unexpected_enumeratorT_char_t swig_types[473]
+#define SWIGTYPE_p_xsd__cxx__tree__uriT_char_xsd__cxx__tree__simple_type_t swig_types[474]
+#define SWIGTYPE_p_xsd__cxx__tree__user_data_keys_templateT_0_t swig_types[475]
+#define SWIGTYPE_p_xsd__cxx__xml__error_handlerT_char_t swig_types[476]
+static swig_type_info *swig_types[478];
+static swig_module_info swig_module = {swig_types, 477, 0, 0, 0, 0};
 #define SWIG_TypeQuery(name) SWIG_TypeQueryModule(&swig_module, &swig_module, name)
 #define SWIG_MangledTypeQuery(name) SWIG_MangledTypeQueryModule(&swig_module, &swig_module, name)
 
@@ -4137,6 +4134,1015 @@ namespace swig {
 
 
 #include <algorithm>
+
+
+namespace swig {  
+  template <class Type>
+  struct noconst_traits {
+    typedef Type noconst_type;
+  };
+
+  template <class Type>
+  struct noconst_traits<const Type> {
+    typedef Type noconst_type;
+  };
+
+  /*
+    type categories
+  */
+  struct pointer_category { };  
+  struct value_category { };
+
+  /*
+    General traits that provides type_name and type_info
+  */
+  template <class Type> struct traits { };
+
+  template <class Type>
+  inline const char* type_name() {
+    return traits<typename noconst_traits<Type >::noconst_type >::type_name();
+  }
+
+  template <class Type> 
+  struct traits_info {
+    static swig_type_info *type_query(std::string name) {
+      name += " *";
+      return SWIG_TypeQuery(name.c_str());
+    }    
+    static swig_type_info *type_info() {
+      static swig_type_info *info = type_query(type_name<Type>());
+      return info;
+    }
+  };
+
+  template <class Type>
+  inline swig_type_info *type_info() {
+    return traits_info<Type>::type_info();
+  }
+
+  /*
+    Partial specialization for pointers
+  */
+  template <class Type> struct traits <Type *> {
+    typedef pointer_category category;
+    static std::string make_ptr_name(const char* name) {
+      std::string ptrname = name;
+      ptrname += " *";
+      return ptrname;
+    }    
+    static const char* type_name() {
+      static std::string name = make_ptr_name(swig::type_name<Type>());
+      return name.c_str();
+    }
+  };
+
+  template <class Type, class Category> 
+  struct traits_as { };
+ 
+  template <class Type, class Category> 
+  struct traits_check { };
+
+}
+
+
+namespace swig {  
+  /*
+    Traits that provides the from method
+  */
+  template <class Type> struct traits_from_ptr {
+    static PyObject *from(Type *val, int owner = 0) {
+      return SWIG_InternalNewPointerObj(val, type_info<Type>(), owner);
+    }
+  };
+
+  template <class Type> struct traits_from {
+    static PyObject *from(const Type& val) {
+      return traits_from_ptr<Type>::from(new Type(val), 1);
+    }
+  };
+
+  template <class Type> struct traits_from<Type *> {
+    static PyObject *from(Type* val) {
+      return traits_from_ptr<Type>::from(val, 0);
+    }
+  };
+
+  template <class Type> struct traits_from<const Type *> {
+    static PyObject *from(const Type* val) {
+      return traits_from_ptr<Type>::from(const_cast<Type*>(val), 0);
+    }
+  };
+
+
+  template <class Type>
+  inline PyObject *from(const Type& val) {
+    return traits_from<Type>::from(val);
+  }
+
+  template <class Type>
+  inline PyObject *from_ptr(Type* val, int owner) {
+    return traits_from_ptr<Type>::from(val, owner);
+  }
+
+  /*
+    Traits that provides the asval/as/check method
+  */
+  template <class Type>
+  struct traits_asptr {   
+    static int asptr(PyObject *obj, Type **val) {
+      Type *p;
+      int res = SWIG_ConvertPtr(obj, (void**)&p, type_info<Type>(), 0);
+      if (SWIG_IsOK(res)) {
+	if (val) *val = p;
+      }
+      return res;
+    }
+  }; 
+
+  template <class Type>
+  inline int asptr(PyObject *obj, Type **vptr) {
+    return traits_asptr<Type>::asptr(obj, vptr);
+  }
+
+  template <class Type> 
+  struct traits_asval {
+    static int asval(PyObject *obj, Type *val) {
+      if (val) {
+	Type *p = 0;
+	int res = traits_asptr<Type>::asptr(obj, &p);
+	if (!SWIG_IsOK(res)) return res;	
+	if (p) {
+	  typedef typename noconst_traits<Type>::noconst_type noconst_type;
+	  *(const_cast<noconst_type*>(val)) = *p;
+	  if (SWIG_IsNewObj(res)){
+	    delete p;
+	    res = SWIG_DelNewMask(res);
+	  }
+	  return res;
+	} else {
+	  return SWIG_ERROR;
+	}
+      } else {
+	return traits_asptr<Type>::asptr(obj, (Type **)(0));
+      }
+    }
+  };
+
+  template <class Type> struct traits_asval<Type*> {
+    static int asval(PyObject *obj, Type **val) {
+      if (val) {
+        typedef typename noconst_traits<Type>::noconst_type noconst_type;
+        noconst_type *p = 0;
+        int res = traits_asptr<noconst_type>::asptr(obj,  &p);
+        if (SWIG_IsOK(res)) {
+          *(const_cast<noconst_type**>(val)) = p;
+	}
+	return res;
+      } else {
+	return traits_asptr<Type>::asptr(obj, (Type **)(0));
+      }
+    }
+  };
+  
+  template <class Type>
+  inline int asval(PyObject *obj, Type *val) {
+    return traits_asval<Type>::asval(obj, val);
+  }
+
+  template <class Type> 
+  struct traits_as<Type, value_category> {
+    static Type as(PyObject *obj, bool throw_error) {
+      Type v;
+      int res = asval(obj, &v);
+      if (!obj || !SWIG_IsOK(res)) {
+	if (!PyErr_Occurred()) {
+	  ::SWIG_Error(SWIG_TypeError,  swig::type_name<Type>());
+	}
+	if (throw_error) throw std::invalid_argument("bad type");
+      }
+      return v;
+    }
+  };
+
+  template <class Type> 
+  struct traits_as<Type, pointer_category> {
+    static Type as(PyObject *obj, bool throw_error) {
+      Type *v = 0;      
+      int res = (obj ? traits_asptr<Type>::asptr(obj, &v) : SWIG_ERROR);
+      if (SWIG_IsOK(res) && v) {
+	if (SWIG_IsNewObj(res)) {
+	  Type r(*v);
+	  delete v;
+	  return r;
+	} else {
+	  return *v;
+	}
+      } else {
+	// Uninitialized return value, no Type() constructor required.
+	static Type *v_def = (Type*) malloc(sizeof(Type));
+	if (!PyErr_Occurred()) {
+	  SWIG_Error(SWIG_TypeError,  swig::type_name<Type>());
+	}
+	if (throw_error) throw std::invalid_argument("bad type");
+	memset(v_def,0,sizeof(Type));
+	return *v_def;
+      }
+    }
+  };
+
+  template <class Type> 
+  struct traits_as<Type*, pointer_category> {
+    static Type* as(PyObject *obj, bool throw_error) {
+      Type *v = 0;      
+      int res = (obj ? traits_asptr<Type>::asptr(obj, &v) : SWIG_ERROR);
+      if (SWIG_IsOK(res)) {
+	return v;
+      } else {
+	if (!PyErr_Occurred()) {
+	  SWIG_Error(SWIG_TypeError,  swig::type_name<Type>());
+	}
+	if (throw_error) throw std::invalid_argument("bad type");
+	return 0;
+      }
+    }
+  };
+    
+  template <class Type>
+  inline Type as(PyObject *obj, bool te = false) {
+    return traits_as<Type, typename traits<Type>::category>::as(obj, te);
+  }
+
+  template <class Type> 
+  struct traits_check<Type, value_category> {
+    static bool check(PyObject *obj) {
+      int res = obj ? asval(obj, (Type *)(0)) : SWIG_ERROR;
+      return SWIG_IsOK(res) ? true : false;
+    }
+  };
+
+  template <class Type> 
+  struct traits_check<Type, pointer_category> {
+    static bool check(PyObject *obj) {
+      int res = obj ? asptr(obj, (Type **)(0)) : SWIG_ERROR;
+      return SWIG_IsOK(res) ? true : false;
+    }
+  };
+
+  template <class Type>
+  inline bool check(PyObject *obj) {
+    return traits_check<Type, typename traits<Type>::category>::check(obj);
+  }
+}
+
+
+#include <functional>
+
+namespace std {
+  template <>
+  struct less <PyObject *>: public binary_function<PyObject *, PyObject *, bool>
+  {
+    bool
+    operator()(PyObject * v, PyObject *w) const
+    { 
+      bool res;
+      SWIG_PYTHON_THREAD_BEGIN_BLOCK;
+      res = PyObject_RichCompareBool(v, w, Py_LT) ? true : false;
+      /* This may fall into a case of inconsistent
+               eg. ObjA > ObjX > ObjB
+               but ObjA < ObjB
+      */
+      if( PyErr_Occurred() && PyErr_ExceptionMatches(PyExc_TypeError) )
+      {
+        /* Objects can't be compared, this mostly occurred in Python 3.0 */
+        /* Compare their ptr directly for a workaround */
+        res = (v < w);
+        PyErr_Clear();
+      }
+      SWIG_PYTHON_THREAD_END_BLOCK;
+      return res;
+    }
+  };
+
+  template <>
+  struct less <swig::SwigPtr_PyObject>: public binary_function<swig::SwigPtr_PyObject, swig::SwigPtr_PyObject, bool>
+  {
+    bool
+    operator()(const swig::SwigPtr_PyObject& v, const swig::SwigPtr_PyObject& w) const
+    {
+      return std::less<PyObject *>()(v, w);
+    }
+  };
+
+  template <>
+  struct less <swig::SwigVar_PyObject>: public binary_function<swig::SwigVar_PyObject, swig::SwigVar_PyObject, bool>
+  {
+    bool
+    operator()(const swig::SwigVar_PyObject& v, const swig::SwigVar_PyObject& w) const
+    {
+      return std::less<PyObject *>()(v, w);
+    }
+  };
+
+}
+
+namespace swig {
+  template <> struct traits<PyObject *> {
+    typedef value_category category;
+    static const char* type_name() { return "PyObject *"; }
+  };  
+
+  template <>  struct traits_asval<PyObject * > {   
+    typedef PyObject * value_type;
+    static int asval(PyObject *obj, value_type *val) {
+      if (val) *val = obj;
+      return SWIG_OK;
+    }
+  };
+
+  template <> 
+  struct traits_check<PyObject *, value_category> {
+    static bool check(PyObject *) {
+      return true;
+    }
+  };
+
+  template <>  struct traits_from<PyObject *> {
+    typedef PyObject * value_type;
+    static PyObject *from(const value_type& val) {
+      Py_XINCREF(val);
+      return val;
+    }
+  };
+  
+}
+
+namespace swig {
+  template <class Difference>
+  inline size_t
+  check_index(Difference i, size_t size, bool insert = false) {
+    if ( i < 0 ) {
+      if ((size_t) (-i) <= size)
+	return (size_t) (i + size);
+    } else if ( (size_t) i < size ) {
+      return (size_t) i;
+    } else if (insert && ((size_t) i == size)) {
+      return size;
+    }
+    throw std::out_of_range("index out of range");
+  }
+
+  template <class Difference>
+  void
+  slice_adjust(Difference i, Difference j, Py_ssize_t step, size_t size, Difference &ii, Difference &jj, bool insert = false) {
+    if (step == 0) {
+      throw std::invalid_argument("slice step cannot be zero");
+    } else if (step > 0) {
+      // Required range: 0 <= i < size, 0 <= j < size
+      if (i < 0) {
+        ii = 0;
+      } else if (i < (Difference)size) {
+        ii = i;
+      } else if (insert && (i >= (Difference)size)) {
+        ii = (Difference)size;
+      }
+      if ( j < 0 ) {
+        jj = 0;
+      } else {
+        jj = (j < (Difference)size) ? j : (Difference)size;
+      }
+    } else {
+      // Required range: -1 <= i < size-1, -1 <= j < size-1
+      if (i < -1) {
+        ii = -1;
+      } else if (i < (Difference) size) {
+        ii = i;
+      } else if (i >= (Difference)(size-1)) {
+        ii = (Difference)(size-1);
+      }
+      if (j < -1) {
+        jj = -1;
+      } else {
+        jj = (j < (Difference)size ) ? j : (Difference)(size-1);
+      }
+    }
+  }
+
+  template <class Sequence, class Difference>
+  inline typename Sequence::iterator
+  getpos(Sequence* self, Difference i)  {
+    typename Sequence::iterator pos = self->begin();
+    std::advance(pos, check_index(i,self->size()));
+    return pos;
+  }
+
+  template <class Sequence, class Difference>
+  inline typename Sequence::const_iterator
+  cgetpos(const Sequence* self, Difference i)  {
+    typename Sequence::const_iterator pos = self->begin();
+    std::advance(pos, check_index(i,self->size()));
+    return pos;
+  }
+
+  template <class Sequence, class Difference>
+  inline Sequence*
+  getslice(const Sequence* self, Difference i, Difference j, Py_ssize_t step) {
+    typename Sequence::size_type size = self->size();
+    Difference ii = 0;
+    Difference jj = 0;
+    swig::slice_adjust(i, j, step, size, ii, jj);
+
+    if (step > 0) {
+      typename Sequence::const_iterator sb = self->begin();
+      typename Sequence::const_iterator se = self->begin();
+      std::advance(sb,ii);
+      std::advance(se,jj);
+      if (step == 1) {
+        return new Sequence(sb, se);
+      } else {
+        Sequence *sequence = new Sequence();
+        typename Sequence::const_iterator it = sb;
+        while (it!=se) {
+          sequence->push_back(*it);
+          for (Py_ssize_t c=0; c<step && it!=se; ++c)
+            it++;
+        }
+        return sequence;
+      } 
+    } else {
+      Sequence *sequence = new Sequence();
+      if (ii > jj) {
+        typename Sequence::const_reverse_iterator sb = self->rbegin();
+        typename Sequence::const_reverse_iterator se = self->rbegin();
+        std::advance(sb,size-ii-1);
+        std::advance(se,size-jj-1);
+        typename Sequence::const_reverse_iterator it = sb;
+        while (it!=se) {
+          sequence->push_back(*it);
+          for (Py_ssize_t c=0; c<-step && it!=se; ++c)
+            it++;
+        }
+      }
+      return sequence;
+    }
+  }
+
+  template <class Sequence, class Difference, class InputSeq>
+  inline void
+  setslice(Sequence* self, Difference i, Difference j, Py_ssize_t step, const InputSeq& is = InputSeq()) {
+    typename Sequence::size_type size = self->size();
+    Difference ii = 0;
+    Difference jj = 0;
+    swig::slice_adjust(i, j, step, size, ii, jj, true);
+    if (step > 0) {
+      if (jj < ii)
+        jj = ii;
+      if (step == 1) {
+        size_t ssize = jj - ii;
+        if (ssize <= is.size()) {
+          // expanding/staying the same size
+          typename Sequence::iterator sb = self->begin();
+          typename InputSeq::const_iterator isit = is.begin();
+          std::advance(sb,ii);
+          std::advance(isit, jj - ii);
+          self->insert(std::copy(is.begin(), isit, sb), isit, is.end());
+        } else {
+          // shrinking
+          typename Sequence::iterator sb = self->begin();
+          typename Sequence::iterator se = self->begin();
+          std::advance(sb,ii);
+          std::advance(se,jj);
+          self->erase(sb,se);
+          sb = self->begin();
+          std::advance(sb,ii);
+          self->insert(sb, is.begin(), is.end());
+        }
+      } else {
+        size_t replacecount = (jj - ii + step - 1) / step;
+        if (is.size() != replacecount) {
+          char msg[1024];
+          sprintf(msg, "attempt to assign sequence of size %lu to extended slice of size %lu", (unsigned long)is.size(), (unsigned long)replacecount);
+          throw std::invalid_argument(msg);
+        }
+        typename Sequence::const_iterator isit = is.begin();
+        typename Sequence::iterator it = self->begin();
+        std::advance(it,ii);
+        for (size_t rc=0; rc<replacecount; ++rc) {
+          *it++ = *isit++;
+          for (Py_ssize_t c=0; c<(step-1) && it != self->end(); ++c)
+            it++;
+        }
+      }
+    } else {
+      if (jj > ii)
+        jj = ii;
+      size_t replacecount = (ii - jj - step - 1) / -step;
+      if (is.size() != replacecount) {
+        char msg[1024];
+        sprintf(msg, "attempt to assign sequence of size %lu to extended slice of size %lu", (unsigned long)is.size(), (unsigned long)replacecount);
+        throw std::invalid_argument(msg);
+      }
+      typename Sequence::const_iterator isit = is.begin();
+      typename Sequence::reverse_iterator it = self->rbegin();
+      std::advance(it,size-ii-1);
+      for (size_t rc=0; rc<replacecount; ++rc) {
+        *it++ = *isit++;
+        for (Py_ssize_t c=0; c<(-step-1) && it != self->rend(); ++c)
+          it++;
+      }
+    }
+  }
+
+  template <class Sequence, class Difference>
+  inline void
+  delslice(Sequence* self, Difference i, Difference j, Py_ssize_t step) {
+    typename Sequence::size_type size = self->size();
+    Difference ii = 0;
+    Difference jj = 0;
+    swig::slice_adjust(i, j, step, size, ii, jj, true);
+    if (step > 0) {
+      if (jj > ii) {
+        typename Sequence::iterator sb = self->begin();
+        std::advance(sb,ii);
+        if (step == 1) {
+          typename Sequence::iterator se = self->begin();
+          std::advance(se,jj);
+          self->erase(sb,se);
+        } else {
+          typename Sequence::iterator it = sb;
+          size_t delcount = (jj - ii + step - 1) / step;
+          while (delcount) {
+            it = self->erase(it);
+            for (Py_ssize_t c=0; c<(step-1) && it != self->end(); ++c)
+              it++;
+            delcount--;
+          }
+        }
+      }
+    } else {
+      if (ii > jj) {
+        typename Sequence::reverse_iterator sb = self->rbegin();
+        std::advance(sb,size-ii-1);
+        typename Sequence::reverse_iterator it = sb;
+        size_t delcount = (ii - jj - step - 1) / -step;
+        while (delcount) {
+          it = typename Sequence::reverse_iterator(self->erase((++it).base()));
+          for (Py_ssize_t c=0; c<(-step-1) && it != self->rend(); ++c)
+            it++;
+          delcount--;
+        }
+      }
+    }
+  }
+}
+
+
+#if defined(__SUNPRO_CC) && defined(_RWSTD_VER)
+#  if !defined(SWIG_NO_STD_NOITERATOR_TRAITS_STL)
+#    define SWIG_STD_NOITERATOR_TRAITS_STL
+#  endif
+#endif
+
+#if !defined(SWIG_STD_NOITERATOR_TRAITS_STL)
+#include <iterator>
+#else
+namespace std {
+  template <class Iterator>
+  struct iterator_traits {
+    typedef ptrdiff_t difference_type;
+    typedef typename Iterator::value_type value_type;
+  };
+
+  template <class Iterator, class Category,class T, class Reference, class Pointer, class Distance>
+  struct iterator_traits<__reverse_bi_iterator<Iterator,Category,T,Reference,Pointer,Distance> > {
+    typedef Distance difference_type;
+    typedef T value_type;
+  };
+
+  template <class T>
+  struct iterator_traits<T*> {
+    typedef T value_type;
+    typedef ptrdiff_t difference_type;
+  };
+
+  template<typename _InputIterator>
+  inline typename iterator_traits<_InputIterator>::difference_type
+  distance(_InputIterator __first, _InputIterator __last)
+  {
+    typename iterator_traits<_InputIterator>::difference_type __n = 0;
+    while (__first != __last) {
+      ++__first; ++__n;
+    }
+    return __n;
+  }
+}
+#endif
+
+
+namespace swig {
+  template<typename OutIterator>
+  class SwigPyIterator_T :  public SwigPyIterator
+  {
+  public:
+    typedef OutIterator out_iterator;
+    typedef typename std::iterator_traits<out_iterator>::value_type value_type;    
+    typedef SwigPyIterator_T<out_iterator> self_type;
+
+    SwigPyIterator_T(out_iterator curr, PyObject *seq)
+      : SwigPyIterator(seq), current(curr)
+    {
+    }
+
+    const out_iterator& get_current() const
+    {
+      return current;
+    }
+
+    
+    bool equal (const SwigPyIterator &iter) const
+    {
+      const self_type *iters = dynamic_cast<const self_type *>(&iter);
+      if (iters) {
+	return (current == iters->get_current());
+      } else {
+	throw std::invalid_argument("bad iterator type");
+      }
+    }
+    
+    ptrdiff_t distance(const SwigPyIterator &iter) const
+    {
+      const self_type *iters = dynamic_cast<const self_type *>(&iter);
+      if (iters) {
+	return std::distance(current, iters->get_current());
+      } else {
+	throw std::invalid_argument("bad iterator type");
+      }
+    }    
+    
+  protected:
+    out_iterator current;
+  };
+  
+  template <class ValueType>
+  struct from_oper 
+  {
+    typedef const ValueType& argument_type;
+    typedef PyObject *result_type;
+    result_type operator()(argument_type v) const
+    {
+      return swig::from(v);
+    }
+  };
+
+  template<typename OutIterator, 
+	   typename ValueType = typename std::iterator_traits<OutIterator>::value_type,
+	   typename FromOper = from_oper<ValueType> >
+  class SwigPyIteratorOpen_T :  public SwigPyIterator_T<OutIterator>
+  {
+  public:
+    FromOper from;
+    typedef OutIterator out_iterator;
+    typedef ValueType value_type;
+    typedef SwigPyIterator_T<out_iterator>  base;
+    typedef SwigPyIteratorOpen_T<OutIterator, ValueType, FromOper> self_type;
+    
+    SwigPyIteratorOpen_T(out_iterator curr, PyObject *seq)
+      : SwigPyIterator_T<OutIterator>(curr, seq)
+    {
+    }
+    
+    PyObject *value() const {
+      return from(static_cast<const value_type&>(*(base::current)));
+    }
+    
+    SwigPyIterator *copy() const
+    {
+      return new self_type(*this);
+    }
+
+    SwigPyIterator *incr(size_t n = 1)
+    {
+      while (n--) {
+	++base::current;
+      }
+      return this;
+    }
+
+    SwigPyIterator *decr(size_t n = 1)
+    {
+      while (n--) {
+	--base::current;
+      }
+      return this;
+    }
+  };
+
+  template<typename OutIterator, 
+	   typename ValueType = typename std::iterator_traits<OutIterator>::value_type,
+	   typename FromOper = from_oper<ValueType> >
+  class SwigPyIteratorClosed_T :  public SwigPyIterator_T<OutIterator>
+  {
+  public:
+    FromOper from;
+    typedef OutIterator out_iterator;
+    typedef ValueType value_type;
+    typedef SwigPyIterator_T<out_iterator>  base;    
+    typedef SwigPyIteratorClosed_T<OutIterator, ValueType, FromOper> self_type;
+    
+    SwigPyIteratorClosed_T(out_iterator curr, out_iterator first, out_iterator last, PyObject *seq)
+      : SwigPyIterator_T<OutIterator>(curr, seq), begin(first), end(last)
+    {
+    }
+    
+    PyObject *value() const {
+      if (base::current == end) {
+	throw stop_iteration();
+      } else {
+	return from(static_cast<const value_type&>(*(base::current)));
+      }
+    }
+    
+    SwigPyIterator *copy() const
+    {
+      return new self_type(*this);
+    }
+
+    SwigPyIterator *incr(size_t n = 1)
+    {
+      while (n--) {
+	if (base::current == end) {
+	  throw stop_iteration();
+	} else {
+	  ++base::current;
+	}
+      }
+      return this;
+    }
+
+    SwigPyIterator *decr(size_t n = 1)
+    {
+      while (n--) {
+	if (base::current == begin) {
+	  throw stop_iteration();
+	} else {
+	  --base::current;
+	}
+      }
+      return this;
+    }
+
+  private:
+    out_iterator begin;
+    out_iterator end;
+  };
+
+  template<typename OutIter>
+  inline SwigPyIterator*
+  make_output_iterator(const OutIter& current, const OutIter& begin,const OutIter& end, PyObject *seq = 0)
+  {
+    return new SwigPyIteratorClosed_T<OutIter>(current, begin, end, seq);
+  }
+
+  template<typename OutIter>
+  inline SwigPyIterator*
+  make_output_iterator(const OutIter& current, PyObject *seq = 0)
+  {
+    return new SwigPyIteratorOpen_T<OutIter>(current, seq);
+  }
+
+}
+
+
+namespace swig
+{
+  template <class T>
+  struct SwigPySequence_Ref
+  {
+    SwigPySequence_Ref(PyObject* seq, int index)
+      : _seq(seq), _index(index)
+    {
+    }
+    
+    operator T () const
+    {
+      swig::SwigVar_PyObject item = PySequence_GetItem(_seq, _index);
+      try {
+	return swig::as<T>(item, true);
+      } catch (std::exception& e) {
+	char msg[1024];
+	sprintf(msg, "in sequence element %d ", _index);
+	if (!PyErr_Occurred()) {
+	  ::SWIG_Error(SWIG_TypeError,  swig::type_name<T>());
+	}
+	SWIG_Python_AddErrorMsg(msg);
+	SWIG_Python_AddErrorMsg(e.what());
+	throw;
+      }
+    }
+
+    SwigPySequence_Ref& operator=(const T& v)
+    {
+      PySequence_SetItem(_seq, _index, swig::from<T>(v));
+      return *this;
+    }
+
+  private:
+    PyObject* _seq;
+    int _index;
+  };
+
+  template <class T>
+  struct SwigPySequence_ArrowProxy
+  {
+    SwigPySequence_ArrowProxy(const T& x): m_value(x) {}
+    const T* operator->() const { return &m_value; }
+    operator const T*() const { return &m_value; }
+    T m_value;
+  };
+
+  template <class T, class Reference >
+  struct SwigPySequence_InputIterator
+  {
+    typedef SwigPySequence_InputIterator<T, Reference > self;
+
+    typedef std::random_access_iterator_tag iterator_category;
+    typedef Reference reference;
+    typedef T value_type;
+    typedef T* pointer;
+    typedef int difference_type;
+
+    SwigPySequence_InputIterator()
+    {
+    }
+
+    SwigPySequence_InputIterator(PyObject* seq, int index)
+      : _seq(seq), _index(index)
+    {
+    }
+
+    reference operator*() const
+    {
+      return reference(_seq, _index);
+    }
+
+    SwigPySequence_ArrowProxy<T>
+    operator->() const {
+      return SwigPySequence_ArrowProxy<T>(operator*());
+    }
+
+    bool operator==(const self& ri) const
+    {
+      return (_index == ri._index) && (_seq == ri._seq);
+    }
+
+    bool operator!=(const self& ri) const
+    {
+      return !(operator==(ri));
+    }
+
+    self& operator ++ ()
+    {
+      ++_index;
+      return *this;
+    }
+
+    self& operator -- ()
+    {
+      --_index;
+      return *this;
+    }
+
+    self& operator += (difference_type n)
+    {
+      _index += n;
+      return *this;
+    }
+
+    self operator +(difference_type n) const
+    {
+      return self(_seq, _index + n);
+    }
+
+    self& operator -= (difference_type n)
+    {
+      _index -= n;
+      return *this;
+    }
+
+    self operator -(difference_type n) const
+    {
+      return self(_seq, _index - n);
+    }
+
+    difference_type operator - (const self& ri) const
+    {
+      return _index - ri._index;
+    }
+
+    bool operator < (const self& ri) const
+    {
+      return _index < ri._index;
+    }
+
+    reference
+    operator[](difference_type n) const
+    {
+      return reference(_seq, _index + n);
+    }
+
+  private:
+    PyObject* _seq;
+    difference_type _index;
+  };
+
+  template <class T>
+  struct SwigPySequence_Cont
+  {
+    typedef SwigPySequence_Ref<T> reference;
+    typedef const SwigPySequence_Ref<T> const_reference;
+    typedef T value_type;
+    typedef T* pointer;
+    typedef int difference_type;
+    typedef int size_type;
+    typedef const pointer const_pointer;
+    typedef SwigPySequence_InputIterator<T, reference> iterator;
+    typedef SwigPySequence_InputIterator<T, const_reference> const_iterator;
+
+    SwigPySequence_Cont(PyObject* seq) : _seq(0)
+    {
+      if (!PySequence_Check(seq)) {
+	throw std::invalid_argument("a sequence is expected");
+      }
+      _seq = seq;
+      Py_INCREF(_seq);
+    }
+
+    ~SwigPySequence_Cont()
+    {
+      Py_XDECREF(_seq);
+    }
+
+    size_type size() const
+    {
+      return static_cast<size_type>(PySequence_Size(_seq));
+    }
+
+    bool empty() const
+    {
+      return size() == 0;
+    }
+
+    iterator begin()
+    {
+      return iterator(_seq, 0);
+    }
+
+    const_iterator begin() const
+    {
+      return const_iterator(_seq, 0);
+    }
+
+    iterator end()
+    {
+      return iterator(_seq, size());
+    }
+
+    const_iterator end() const
+    {
+      return const_iterator(_seq, size());
+    }
+
+    reference operator[](difference_type n)
+    {
+      return reference(_seq, n);
+    }
+
+    const_reference operator[](difference_type n)  const
+    {
+      return const_reference(_seq, n);
+    }
+
+    bool check(bool set_err = true) const
+    {
+      int s = size();
+      for (int i = 0; i < s; ++i) {
+	swig::SwigVar_PyObject item = PySequence_GetItem(_seq, i);
+	if (!swig::check<value_type>(item)) {
+	  if (set_err) {
+	    char msg[1024];
+	    sprintf(msg, "in sequence element %d", i);
+	    SWIG_Error(SWIG_RuntimeError, msg);
+	  }
+	  return false;
+	}
+      }
+      return true;
+    }
+
+  private:
+    PyObject* _seq;
+  };
+
+}
 
 
 SWIGINTERN int
@@ -11950,21 +12956,21 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_SimBuilding_Building_AboveGradeStoryCountAltered__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_SimBuilding_Building_T24AboveGradeStoryCountAltered__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::BuildingModel::SimBuilding_Building *arg1 = (schema::simxml::BuildingModel::SimBuilding_Building *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
-  schema::simxml::BuildingModel::SimBuilding_Building::AboveGradeStoryCountAltered_optional *result = 0 ;
+  schema::simxml::BuildingModel::SimBuilding_Building::T24AboveGradeStoryCountAltered_optional *result = 0 ;
   
-  if (!PyArg_ParseTuple(args,(char *)"O:SimBuilding_Building_AboveGradeStoryCountAltered",&obj0)) SWIG_fail;
+  if (!PyArg_ParseTuple(args,(char *)"O:SimBuilding_Building_T24AboveGradeStoryCountAltered",&obj0)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_schema__simxml__BuildingModel__SimBuilding_Building, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_AboveGradeStoryCountAltered" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building const *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_T24AboveGradeStoryCountAltered" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building const *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::BuildingModel::SimBuilding_Building * >(argp1);
-  result = (schema::simxml::BuildingModel::SimBuilding_Building::AboveGradeStoryCountAltered_optional *) &((schema::simxml::BuildingModel::SimBuilding_Building const *)arg1)->AboveGradeStoryCountAltered();
+  result = (schema::simxml::BuildingModel::SimBuilding_Building::T24AboveGradeStoryCountAltered_optional *) &((schema::simxml::BuildingModel::SimBuilding_Building const *)arg1)->T24AboveGradeStoryCountAltered();
   resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_int_true_t, 0 |  0 );
   return resultobj;
 fail:
@@ -11972,21 +12978,21 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_SimBuilding_Building_AboveGradeStoryCountAltered__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_SimBuilding_Building_T24AboveGradeStoryCountAltered__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::BuildingModel::SimBuilding_Building *arg1 = (schema::simxml::BuildingModel::SimBuilding_Building *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
-  schema::simxml::BuildingModel::SimBuilding_Building::AboveGradeStoryCountAltered_optional *result = 0 ;
+  schema::simxml::BuildingModel::SimBuilding_Building::T24AboveGradeStoryCountAltered_optional *result = 0 ;
   
-  if (!PyArg_ParseTuple(args,(char *)"O:SimBuilding_Building_AboveGradeStoryCountAltered",&obj0)) SWIG_fail;
+  if (!PyArg_ParseTuple(args,(char *)"O:SimBuilding_Building_T24AboveGradeStoryCountAltered",&obj0)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_schema__simxml__BuildingModel__SimBuilding_Building, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_AboveGradeStoryCountAltered" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_T24AboveGradeStoryCountAltered" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::BuildingModel::SimBuilding_Building * >(argp1);
-  result = (schema::simxml::BuildingModel::SimBuilding_Building::AboveGradeStoryCountAltered_optional *) &(arg1)->AboveGradeStoryCountAltered();
+  result = (schema::simxml::BuildingModel::SimBuilding_Building::T24AboveGradeStoryCountAltered_optional *) &(arg1)->T24AboveGradeStoryCountAltered();
   resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_int_true_t, 0 |  0 );
   return resultobj;
 fail:
@@ -11994,31 +13000,31 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_SimBuilding_Building_AboveGradeStoryCountAltered__SWIG_2(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_SimBuilding_Building_T24AboveGradeStoryCountAltered__SWIG_2(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::BuildingModel::SimBuilding_Building *arg1 = (schema::simxml::BuildingModel::SimBuilding_Building *) 0 ;
-  schema::simxml::BuildingModel::SimBuilding_Building::AboveGradeStoryCountAltered_type *arg2 = 0 ;
+  schema::simxml::BuildingModel::SimBuilding_Building::T24AboveGradeStoryCountAltered_type *arg2 = 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  schema::simxml::BuildingModel::SimBuilding_Building::AboveGradeStoryCountAltered_type temp2 ;
+  schema::simxml::BuildingModel::SimBuilding_Building::T24AboveGradeStoryCountAltered_type temp2 ;
   int val2 ;
   int ecode2 = 0 ;
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
   
-  if (!PyArg_ParseTuple(args,(char *)"OO:SimBuilding_Building_AboveGradeStoryCountAltered",&obj0,&obj1)) SWIG_fail;
+  if (!PyArg_ParseTuple(args,(char *)"OO:SimBuilding_Building_T24AboveGradeStoryCountAltered",&obj0,&obj1)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_schema__simxml__BuildingModel__SimBuilding_Building, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_AboveGradeStoryCountAltered" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_T24AboveGradeStoryCountAltered" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::BuildingModel::SimBuilding_Building * >(argp1);
   ecode2 = SWIG_AsVal_int(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "SimBuilding_Building_AboveGradeStoryCountAltered" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building::AboveGradeStoryCountAltered_type""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "SimBuilding_Building_T24AboveGradeStoryCountAltered" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building::T24AboveGradeStoryCountAltered_type""'");
   } 
-  temp2 = static_cast< schema::simxml::BuildingModel::SimBuilding_Building::AboveGradeStoryCountAltered_type >(val2);
+  temp2 = static_cast< schema::simxml::BuildingModel::SimBuilding_Building::T24AboveGradeStoryCountAltered_type >(val2);
   arg2 = &temp2;
-  (arg1)->AboveGradeStoryCountAltered((schema::simxml::BuildingModel::SimBuilding_Building::AboveGradeStoryCountAltered_type const &)*arg2);
+  (arg1)->T24AboveGradeStoryCountAltered((schema::simxml::BuildingModel::SimBuilding_Building::T24AboveGradeStoryCountAltered_type const &)*arg2);
   resultobj = SWIG_Py_Void();
   return resultobj;
 fail:
@@ -12026,10 +13032,10 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_SimBuilding_Building_AboveGradeStoryCountAltered__SWIG_3(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_SimBuilding_Building_T24AboveGradeStoryCountAltered__SWIG_3(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::BuildingModel::SimBuilding_Building *arg1 = (schema::simxml::BuildingModel::SimBuilding_Building *) 0 ;
-  schema::simxml::BuildingModel::SimBuilding_Building::AboveGradeStoryCountAltered_optional *arg2 = 0 ;
+  schema::simxml::BuildingModel::SimBuilding_Building::T24AboveGradeStoryCountAltered_optional *arg2 = 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 = 0 ;
@@ -12037,21 +13043,21 @@ SWIGINTERN PyObject *_wrap_SimBuilding_Building_AboveGradeStoryCountAltered__SWI
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
   
-  if (!PyArg_ParseTuple(args,(char *)"OO:SimBuilding_Building_AboveGradeStoryCountAltered",&obj0,&obj1)) SWIG_fail;
+  if (!PyArg_ParseTuple(args,(char *)"OO:SimBuilding_Building_T24AboveGradeStoryCountAltered",&obj0,&obj1)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_schema__simxml__BuildingModel__SimBuilding_Building, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_AboveGradeStoryCountAltered" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_T24AboveGradeStoryCountAltered" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::BuildingModel::SimBuilding_Building * >(argp1);
   res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_int_true_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimBuilding_Building_AboveGradeStoryCountAltered" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building::AboveGradeStoryCountAltered_optional const &""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimBuilding_Building_T24AboveGradeStoryCountAltered" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building::T24AboveGradeStoryCountAltered_optional const &""'"); 
   }
   if (!argp2) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "SimBuilding_Building_AboveGradeStoryCountAltered" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building::AboveGradeStoryCountAltered_optional const &""'"); 
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "SimBuilding_Building_T24AboveGradeStoryCountAltered" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building::T24AboveGradeStoryCountAltered_optional const &""'"); 
   }
-  arg2 = reinterpret_cast< schema::simxml::BuildingModel::SimBuilding_Building::AboveGradeStoryCountAltered_optional * >(argp2);
-  (arg1)->AboveGradeStoryCountAltered((schema::simxml::BuildingModel::SimBuilding_Building::AboveGradeStoryCountAltered_optional const &)*arg2);
+  arg2 = reinterpret_cast< schema::simxml::BuildingModel::SimBuilding_Building::T24AboveGradeStoryCountAltered_optional * >(argp2);
+  (arg1)->T24AboveGradeStoryCountAltered((schema::simxml::BuildingModel::SimBuilding_Building::T24AboveGradeStoryCountAltered_optional const &)*arg2);
   resultobj = SWIG_Py_Void();
   return resultobj;
 fail:
@@ -12059,7 +13065,7 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_SimBuilding_Building_AboveGradeStoryCountAltered(PyObject *self, PyObject *args) {
+SWIGINTERN PyObject *_wrap_SimBuilding_Building_T24AboveGradeStoryCountAltered(PyObject *self, PyObject *args) {
   int argc;
   PyObject *argv[3] = {
     0
@@ -12077,7 +13083,7 @@ SWIGINTERN PyObject *_wrap_SimBuilding_Building_AboveGradeStoryCountAltered(PyOb
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__BuildingModel__SimBuilding_Building, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      return _wrap_SimBuilding_Building_AboveGradeStoryCountAltered__SWIG_1(self, args);
+      return _wrap_SimBuilding_Building_T24AboveGradeStoryCountAltered__SWIG_1(self, args);
     }
   }
   if (argc == 1) {
@@ -12086,7 +13092,7 @@ SWIGINTERN PyObject *_wrap_SimBuilding_Building_AboveGradeStoryCountAltered(PyOb
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__BuildingModel__SimBuilding_Building, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      return _wrap_SimBuilding_Building_AboveGradeStoryCountAltered__SWIG_0(self, args);
+      return _wrap_SimBuilding_Building_T24AboveGradeStoryCountAltered__SWIG_0(self, args);
     }
   }
   if (argc == 2) {
@@ -12098,7 +13104,7 @@ SWIGINTERN PyObject *_wrap_SimBuilding_Building_AboveGradeStoryCountAltered(PyOb
       int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_int_true_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
-        return _wrap_SimBuilding_Building_AboveGradeStoryCountAltered__SWIG_3(self, args);
+        return _wrap_SimBuilding_Building_T24AboveGradeStoryCountAltered__SWIG_3(self, args);
       }
     }
   }
@@ -12113,37 +13119,37 @@ SWIGINTERN PyObject *_wrap_SimBuilding_Building_AboveGradeStoryCountAltered(PyOb
         _v = SWIG_CheckState(res);
       }
       if (_v) {
-        return _wrap_SimBuilding_Building_AboveGradeStoryCountAltered__SWIG_2(self, args);
+        return _wrap_SimBuilding_Building_T24AboveGradeStoryCountAltered__SWIG_2(self, args);
       }
     }
   }
   
 fail:
-  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'SimBuilding_Building_AboveGradeStoryCountAltered'.\n"
+  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'SimBuilding_Building_T24AboveGradeStoryCountAltered'.\n"
     "  Possible C/C++ prototypes are:\n"
-    "    schema::simxml::BuildingModel::SimBuilding_Building::AboveGradeStoryCountAltered() const\n"
-    "    schema::simxml::BuildingModel::SimBuilding_Building::AboveGradeStoryCountAltered()\n"
-    "    schema::simxml::BuildingModel::SimBuilding_Building::AboveGradeStoryCountAltered(schema::simxml::BuildingModel::SimBuilding_Building::AboveGradeStoryCountAltered_type const &)\n"
-    "    schema::simxml::BuildingModel::SimBuilding_Building::AboveGradeStoryCountAltered(schema::simxml::BuildingModel::SimBuilding_Building::AboveGradeStoryCountAltered_optional const &)\n");
+    "    schema::simxml::BuildingModel::SimBuilding_Building::T24AboveGradeStoryCountAltered() const\n"
+    "    schema::simxml::BuildingModel::SimBuilding_Building::T24AboveGradeStoryCountAltered()\n"
+    "    schema::simxml::BuildingModel::SimBuilding_Building::T24AboveGradeStoryCountAltered(schema::simxml::BuildingModel::SimBuilding_Building::T24AboveGradeStoryCountAltered_type const &)\n"
+    "    schema::simxml::BuildingModel::SimBuilding_Building::T24AboveGradeStoryCountAltered(schema::simxml::BuildingModel::SimBuilding_Building::T24AboveGradeStoryCountAltered_optional const &)\n");
   return 0;
 }
 
 
-SWIGINTERN PyObject *_wrap_SimBuilding_Building_AboveGradeStoryCountExists__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_SimBuilding_Building_T24AboveGradeStoryCountExists__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::BuildingModel::SimBuilding_Building *arg1 = (schema::simxml::BuildingModel::SimBuilding_Building *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
-  schema::simxml::BuildingModel::SimBuilding_Building::AboveGradeStoryCountExists_optional *result = 0 ;
+  schema::simxml::BuildingModel::SimBuilding_Building::T24AboveGradeStoryCountExists_optional *result = 0 ;
   
-  if (!PyArg_ParseTuple(args,(char *)"O:SimBuilding_Building_AboveGradeStoryCountExists",&obj0)) SWIG_fail;
+  if (!PyArg_ParseTuple(args,(char *)"O:SimBuilding_Building_T24AboveGradeStoryCountExists",&obj0)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_schema__simxml__BuildingModel__SimBuilding_Building, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_AboveGradeStoryCountExists" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building const *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_T24AboveGradeStoryCountExists" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building const *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::BuildingModel::SimBuilding_Building * >(argp1);
-  result = (schema::simxml::BuildingModel::SimBuilding_Building::AboveGradeStoryCountExists_optional *) &((schema::simxml::BuildingModel::SimBuilding_Building const *)arg1)->AboveGradeStoryCountExists();
+  result = (schema::simxml::BuildingModel::SimBuilding_Building::T24AboveGradeStoryCountExists_optional *) &((schema::simxml::BuildingModel::SimBuilding_Building const *)arg1)->T24AboveGradeStoryCountExists();
   resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_int_true_t, 0 |  0 );
   return resultobj;
 fail:
@@ -12151,21 +13157,21 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_SimBuilding_Building_AboveGradeStoryCountExists__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_SimBuilding_Building_T24AboveGradeStoryCountExists__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::BuildingModel::SimBuilding_Building *arg1 = (schema::simxml::BuildingModel::SimBuilding_Building *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
-  schema::simxml::BuildingModel::SimBuilding_Building::AboveGradeStoryCountExists_optional *result = 0 ;
+  schema::simxml::BuildingModel::SimBuilding_Building::T24AboveGradeStoryCountExists_optional *result = 0 ;
   
-  if (!PyArg_ParseTuple(args,(char *)"O:SimBuilding_Building_AboveGradeStoryCountExists",&obj0)) SWIG_fail;
+  if (!PyArg_ParseTuple(args,(char *)"O:SimBuilding_Building_T24AboveGradeStoryCountExists",&obj0)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_schema__simxml__BuildingModel__SimBuilding_Building, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_AboveGradeStoryCountExists" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_T24AboveGradeStoryCountExists" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::BuildingModel::SimBuilding_Building * >(argp1);
-  result = (schema::simxml::BuildingModel::SimBuilding_Building::AboveGradeStoryCountExists_optional *) &(arg1)->AboveGradeStoryCountExists();
+  result = (schema::simxml::BuildingModel::SimBuilding_Building::T24AboveGradeStoryCountExists_optional *) &(arg1)->T24AboveGradeStoryCountExists();
   resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_int_true_t, 0 |  0 );
   return resultobj;
 fail:
@@ -12173,31 +13179,31 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_SimBuilding_Building_AboveGradeStoryCountExists__SWIG_2(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_SimBuilding_Building_T24AboveGradeStoryCountExists__SWIG_2(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::BuildingModel::SimBuilding_Building *arg1 = (schema::simxml::BuildingModel::SimBuilding_Building *) 0 ;
-  schema::simxml::BuildingModel::SimBuilding_Building::AboveGradeStoryCountExists_type *arg2 = 0 ;
+  schema::simxml::BuildingModel::SimBuilding_Building::T24AboveGradeStoryCountExists_type *arg2 = 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  schema::simxml::BuildingModel::SimBuilding_Building::AboveGradeStoryCountExists_type temp2 ;
+  schema::simxml::BuildingModel::SimBuilding_Building::T24AboveGradeStoryCountExists_type temp2 ;
   int val2 ;
   int ecode2 = 0 ;
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
   
-  if (!PyArg_ParseTuple(args,(char *)"OO:SimBuilding_Building_AboveGradeStoryCountExists",&obj0,&obj1)) SWIG_fail;
+  if (!PyArg_ParseTuple(args,(char *)"OO:SimBuilding_Building_T24AboveGradeStoryCountExists",&obj0,&obj1)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_schema__simxml__BuildingModel__SimBuilding_Building, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_AboveGradeStoryCountExists" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_T24AboveGradeStoryCountExists" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::BuildingModel::SimBuilding_Building * >(argp1);
   ecode2 = SWIG_AsVal_int(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "SimBuilding_Building_AboveGradeStoryCountExists" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building::AboveGradeStoryCountExists_type""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "SimBuilding_Building_T24AboveGradeStoryCountExists" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building::T24AboveGradeStoryCountExists_type""'");
   } 
-  temp2 = static_cast< schema::simxml::BuildingModel::SimBuilding_Building::AboveGradeStoryCountExists_type >(val2);
+  temp2 = static_cast< schema::simxml::BuildingModel::SimBuilding_Building::T24AboveGradeStoryCountExists_type >(val2);
   arg2 = &temp2;
-  (arg1)->AboveGradeStoryCountExists((schema::simxml::BuildingModel::SimBuilding_Building::AboveGradeStoryCountExists_type const &)*arg2);
+  (arg1)->T24AboveGradeStoryCountExists((schema::simxml::BuildingModel::SimBuilding_Building::T24AboveGradeStoryCountExists_type const &)*arg2);
   resultobj = SWIG_Py_Void();
   return resultobj;
 fail:
@@ -12205,10 +13211,10 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_SimBuilding_Building_AboveGradeStoryCountExists__SWIG_3(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_SimBuilding_Building_T24AboveGradeStoryCountExists__SWIG_3(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::BuildingModel::SimBuilding_Building *arg1 = (schema::simxml::BuildingModel::SimBuilding_Building *) 0 ;
-  schema::simxml::BuildingModel::SimBuilding_Building::AboveGradeStoryCountExists_optional *arg2 = 0 ;
+  schema::simxml::BuildingModel::SimBuilding_Building::T24AboveGradeStoryCountExists_optional *arg2 = 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 = 0 ;
@@ -12216,21 +13222,21 @@ SWIGINTERN PyObject *_wrap_SimBuilding_Building_AboveGradeStoryCountExists__SWIG
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
   
-  if (!PyArg_ParseTuple(args,(char *)"OO:SimBuilding_Building_AboveGradeStoryCountExists",&obj0,&obj1)) SWIG_fail;
+  if (!PyArg_ParseTuple(args,(char *)"OO:SimBuilding_Building_T24AboveGradeStoryCountExists",&obj0,&obj1)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_schema__simxml__BuildingModel__SimBuilding_Building, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_AboveGradeStoryCountExists" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_T24AboveGradeStoryCountExists" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::BuildingModel::SimBuilding_Building * >(argp1);
   res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_int_true_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimBuilding_Building_AboveGradeStoryCountExists" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building::AboveGradeStoryCountExists_optional const &""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimBuilding_Building_T24AboveGradeStoryCountExists" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building::T24AboveGradeStoryCountExists_optional const &""'"); 
   }
   if (!argp2) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "SimBuilding_Building_AboveGradeStoryCountExists" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building::AboveGradeStoryCountExists_optional const &""'"); 
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "SimBuilding_Building_T24AboveGradeStoryCountExists" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building::T24AboveGradeStoryCountExists_optional const &""'"); 
   }
-  arg2 = reinterpret_cast< schema::simxml::BuildingModel::SimBuilding_Building::AboveGradeStoryCountExists_optional * >(argp2);
-  (arg1)->AboveGradeStoryCountExists((schema::simxml::BuildingModel::SimBuilding_Building::AboveGradeStoryCountExists_optional const &)*arg2);
+  arg2 = reinterpret_cast< schema::simxml::BuildingModel::SimBuilding_Building::T24AboveGradeStoryCountExists_optional * >(argp2);
+  (arg1)->T24AboveGradeStoryCountExists((schema::simxml::BuildingModel::SimBuilding_Building::T24AboveGradeStoryCountExists_optional const &)*arg2);
   resultobj = SWIG_Py_Void();
   return resultobj;
 fail:
@@ -12238,7 +13244,7 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_SimBuilding_Building_AboveGradeStoryCountExists(PyObject *self, PyObject *args) {
+SWIGINTERN PyObject *_wrap_SimBuilding_Building_T24AboveGradeStoryCountExists(PyObject *self, PyObject *args) {
   int argc;
   PyObject *argv[3] = {
     0
@@ -12256,7 +13262,7 @@ SWIGINTERN PyObject *_wrap_SimBuilding_Building_AboveGradeStoryCountExists(PyObj
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__BuildingModel__SimBuilding_Building, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      return _wrap_SimBuilding_Building_AboveGradeStoryCountExists__SWIG_1(self, args);
+      return _wrap_SimBuilding_Building_T24AboveGradeStoryCountExists__SWIG_1(self, args);
     }
   }
   if (argc == 1) {
@@ -12265,7 +13271,7 @@ SWIGINTERN PyObject *_wrap_SimBuilding_Building_AboveGradeStoryCountExists(PyObj
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__BuildingModel__SimBuilding_Building, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      return _wrap_SimBuilding_Building_AboveGradeStoryCountExists__SWIG_0(self, args);
+      return _wrap_SimBuilding_Building_T24AboveGradeStoryCountExists__SWIG_0(self, args);
     }
   }
   if (argc == 2) {
@@ -12277,7 +13283,7 @@ SWIGINTERN PyObject *_wrap_SimBuilding_Building_AboveGradeStoryCountExists(PyObj
       int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_int_true_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
-        return _wrap_SimBuilding_Building_AboveGradeStoryCountExists__SWIG_3(self, args);
+        return _wrap_SimBuilding_Building_T24AboveGradeStoryCountExists__SWIG_3(self, args);
       }
     }
   }
@@ -12292,37 +13298,37 @@ SWIGINTERN PyObject *_wrap_SimBuilding_Building_AboveGradeStoryCountExists(PyObj
         _v = SWIG_CheckState(res);
       }
       if (_v) {
-        return _wrap_SimBuilding_Building_AboveGradeStoryCountExists__SWIG_2(self, args);
+        return _wrap_SimBuilding_Building_T24AboveGradeStoryCountExists__SWIG_2(self, args);
       }
     }
   }
   
 fail:
-  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'SimBuilding_Building_AboveGradeStoryCountExists'.\n"
+  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'SimBuilding_Building_T24AboveGradeStoryCountExists'.\n"
     "  Possible C/C++ prototypes are:\n"
-    "    schema::simxml::BuildingModel::SimBuilding_Building::AboveGradeStoryCountExists() const\n"
-    "    schema::simxml::BuildingModel::SimBuilding_Building::AboveGradeStoryCountExists()\n"
-    "    schema::simxml::BuildingModel::SimBuilding_Building::AboveGradeStoryCountExists(schema::simxml::BuildingModel::SimBuilding_Building::AboveGradeStoryCountExists_type const &)\n"
-    "    schema::simxml::BuildingModel::SimBuilding_Building::AboveGradeStoryCountExists(schema::simxml::BuildingModel::SimBuilding_Building::AboveGradeStoryCountExists_optional const &)\n");
+    "    schema::simxml::BuildingModel::SimBuilding_Building::T24AboveGradeStoryCountExists() const\n"
+    "    schema::simxml::BuildingModel::SimBuilding_Building::T24AboveGradeStoryCountExists()\n"
+    "    schema::simxml::BuildingModel::SimBuilding_Building::T24AboveGradeStoryCountExists(schema::simxml::BuildingModel::SimBuilding_Building::T24AboveGradeStoryCountExists_type const &)\n"
+    "    schema::simxml::BuildingModel::SimBuilding_Building::T24AboveGradeStoryCountExists(schema::simxml::BuildingModel::SimBuilding_Building::T24AboveGradeStoryCountExists_optional const &)\n");
   return 0;
 }
 
 
-SWIGINTERN PyObject *_wrap_SimBuilding_Building_AboveGradeStoryCountNew__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_SimBuilding_Building_T24AboveGradeStoryCountNew__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::BuildingModel::SimBuilding_Building *arg1 = (schema::simxml::BuildingModel::SimBuilding_Building *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
-  schema::simxml::BuildingModel::SimBuilding_Building::AboveGradeStoryCountNew_optional *result = 0 ;
+  schema::simxml::BuildingModel::SimBuilding_Building::T24AboveGradeStoryCountNew_optional *result = 0 ;
   
-  if (!PyArg_ParseTuple(args,(char *)"O:SimBuilding_Building_AboveGradeStoryCountNew",&obj0)) SWIG_fail;
+  if (!PyArg_ParseTuple(args,(char *)"O:SimBuilding_Building_T24AboveGradeStoryCountNew",&obj0)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_schema__simxml__BuildingModel__SimBuilding_Building, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_AboveGradeStoryCountNew" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building const *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_T24AboveGradeStoryCountNew" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building const *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::BuildingModel::SimBuilding_Building * >(argp1);
-  result = (schema::simxml::BuildingModel::SimBuilding_Building::AboveGradeStoryCountNew_optional *) &((schema::simxml::BuildingModel::SimBuilding_Building const *)arg1)->AboveGradeStoryCountNew();
+  result = (schema::simxml::BuildingModel::SimBuilding_Building::T24AboveGradeStoryCountNew_optional *) &((schema::simxml::BuildingModel::SimBuilding_Building const *)arg1)->T24AboveGradeStoryCountNew();
   resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_int_true_t, 0 |  0 );
   return resultobj;
 fail:
@@ -12330,21 +13336,21 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_SimBuilding_Building_AboveGradeStoryCountNew__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_SimBuilding_Building_T24AboveGradeStoryCountNew__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::BuildingModel::SimBuilding_Building *arg1 = (schema::simxml::BuildingModel::SimBuilding_Building *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
-  schema::simxml::BuildingModel::SimBuilding_Building::AboveGradeStoryCountNew_optional *result = 0 ;
+  schema::simxml::BuildingModel::SimBuilding_Building::T24AboveGradeStoryCountNew_optional *result = 0 ;
   
-  if (!PyArg_ParseTuple(args,(char *)"O:SimBuilding_Building_AboveGradeStoryCountNew",&obj0)) SWIG_fail;
+  if (!PyArg_ParseTuple(args,(char *)"O:SimBuilding_Building_T24AboveGradeStoryCountNew",&obj0)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_schema__simxml__BuildingModel__SimBuilding_Building, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_AboveGradeStoryCountNew" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_T24AboveGradeStoryCountNew" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::BuildingModel::SimBuilding_Building * >(argp1);
-  result = (schema::simxml::BuildingModel::SimBuilding_Building::AboveGradeStoryCountNew_optional *) &(arg1)->AboveGradeStoryCountNew();
+  result = (schema::simxml::BuildingModel::SimBuilding_Building::T24AboveGradeStoryCountNew_optional *) &(arg1)->T24AboveGradeStoryCountNew();
   resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_int_true_t, 0 |  0 );
   return resultobj;
 fail:
@@ -12352,31 +13358,31 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_SimBuilding_Building_AboveGradeStoryCountNew__SWIG_2(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_SimBuilding_Building_T24AboveGradeStoryCountNew__SWIG_2(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::BuildingModel::SimBuilding_Building *arg1 = (schema::simxml::BuildingModel::SimBuilding_Building *) 0 ;
-  schema::simxml::BuildingModel::SimBuilding_Building::AboveGradeStoryCountNew_type *arg2 = 0 ;
+  schema::simxml::BuildingModel::SimBuilding_Building::T24AboveGradeStoryCountNew_type *arg2 = 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  schema::simxml::BuildingModel::SimBuilding_Building::AboveGradeStoryCountNew_type temp2 ;
+  schema::simxml::BuildingModel::SimBuilding_Building::T24AboveGradeStoryCountNew_type temp2 ;
   int val2 ;
   int ecode2 = 0 ;
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
   
-  if (!PyArg_ParseTuple(args,(char *)"OO:SimBuilding_Building_AboveGradeStoryCountNew",&obj0,&obj1)) SWIG_fail;
+  if (!PyArg_ParseTuple(args,(char *)"OO:SimBuilding_Building_T24AboveGradeStoryCountNew",&obj0,&obj1)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_schema__simxml__BuildingModel__SimBuilding_Building, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_AboveGradeStoryCountNew" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_T24AboveGradeStoryCountNew" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::BuildingModel::SimBuilding_Building * >(argp1);
   ecode2 = SWIG_AsVal_int(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "SimBuilding_Building_AboveGradeStoryCountNew" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building::AboveGradeStoryCountNew_type""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "SimBuilding_Building_T24AboveGradeStoryCountNew" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building::T24AboveGradeStoryCountNew_type""'");
   } 
-  temp2 = static_cast< schema::simxml::BuildingModel::SimBuilding_Building::AboveGradeStoryCountNew_type >(val2);
+  temp2 = static_cast< schema::simxml::BuildingModel::SimBuilding_Building::T24AboveGradeStoryCountNew_type >(val2);
   arg2 = &temp2;
-  (arg1)->AboveGradeStoryCountNew((schema::simxml::BuildingModel::SimBuilding_Building::AboveGradeStoryCountNew_type const &)*arg2);
+  (arg1)->T24AboveGradeStoryCountNew((schema::simxml::BuildingModel::SimBuilding_Building::T24AboveGradeStoryCountNew_type const &)*arg2);
   resultobj = SWIG_Py_Void();
   return resultobj;
 fail:
@@ -12384,10 +13390,10 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_SimBuilding_Building_AboveGradeStoryCountNew__SWIG_3(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_SimBuilding_Building_T24AboveGradeStoryCountNew__SWIG_3(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::BuildingModel::SimBuilding_Building *arg1 = (schema::simxml::BuildingModel::SimBuilding_Building *) 0 ;
-  schema::simxml::BuildingModel::SimBuilding_Building::AboveGradeStoryCountNew_optional *arg2 = 0 ;
+  schema::simxml::BuildingModel::SimBuilding_Building::T24AboveGradeStoryCountNew_optional *arg2 = 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 = 0 ;
@@ -12395,21 +13401,21 @@ SWIGINTERN PyObject *_wrap_SimBuilding_Building_AboveGradeStoryCountNew__SWIG_3(
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
   
-  if (!PyArg_ParseTuple(args,(char *)"OO:SimBuilding_Building_AboveGradeStoryCountNew",&obj0,&obj1)) SWIG_fail;
+  if (!PyArg_ParseTuple(args,(char *)"OO:SimBuilding_Building_T24AboveGradeStoryCountNew",&obj0,&obj1)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_schema__simxml__BuildingModel__SimBuilding_Building, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_AboveGradeStoryCountNew" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_T24AboveGradeStoryCountNew" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::BuildingModel::SimBuilding_Building * >(argp1);
   res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_int_true_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimBuilding_Building_AboveGradeStoryCountNew" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building::AboveGradeStoryCountNew_optional const &""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimBuilding_Building_T24AboveGradeStoryCountNew" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building::T24AboveGradeStoryCountNew_optional const &""'"); 
   }
   if (!argp2) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "SimBuilding_Building_AboveGradeStoryCountNew" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building::AboveGradeStoryCountNew_optional const &""'"); 
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "SimBuilding_Building_T24AboveGradeStoryCountNew" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building::T24AboveGradeStoryCountNew_optional const &""'"); 
   }
-  arg2 = reinterpret_cast< schema::simxml::BuildingModel::SimBuilding_Building::AboveGradeStoryCountNew_optional * >(argp2);
-  (arg1)->AboveGradeStoryCountNew((schema::simxml::BuildingModel::SimBuilding_Building::AboveGradeStoryCountNew_optional const &)*arg2);
+  arg2 = reinterpret_cast< schema::simxml::BuildingModel::SimBuilding_Building::T24AboveGradeStoryCountNew_optional * >(argp2);
+  (arg1)->T24AboveGradeStoryCountNew((schema::simxml::BuildingModel::SimBuilding_Building::T24AboveGradeStoryCountNew_optional const &)*arg2);
   resultobj = SWIG_Py_Void();
   return resultobj;
 fail:
@@ -12417,7 +13423,7 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_SimBuilding_Building_AboveGradeStoryCountNew(PyObject *self, PyObject *args) {
+SWIGINTERN PyObject *_wrap_SimBuilding_Building_T24AboveGradeStoryCountNew(PyObject *self, PyObject *args) {
   int argc;
   PyObject *argv[3] = {
     0
@@ -12435,7 +13441,7 @@ SWIGINTERN PyObject *_wrap_SimBuilding_Building_AboveGradeStoryCountNew(PyObject
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__BuildingModel__SimBuilding_Building, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      return _wrap_SimBuilding_Building_AboveGradeStoryCountNew__SWIG_1(self, args);
+      return _wrap_SimBuilding_Building_T24AboveGradeStoryCountNew__SWIG_1(self, args);
     }
   }
   if (argc == 1) {
@@ -12444,7 +13450,7 @@ SWIGINTERN PyObject *_wrap_SimBuilding_Building_AboveGradeStoryCountNew(PyObject
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__BuildingModel__SimBuilding_Building, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      return _wrap_SimBuilding_Building_AboveGradeStoryCountNew__SWIG_0(self, args);
+      return _wrap_SimBuilding_Building_T24AboveGradeStoryCountNew__SWIG_0(self, args);
     }
   }
   if (argc == 2) {
@@ -12456,7 +13462,7 @@ SWIGINTERN PyObject *_wrap_SimBuilding_Building_AboveGradeStoryCountNew(PyObject
       int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_int_true_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
-        return _wrap_SimBuilding_Building_AboveGradeStoryCountNew__SWIG_3(self, args);
+        return _wrap_SimBuilding_Building_T24AboveGradeStoryCountNew__SWIG_3(self, args);
       }
     }
   }
@@ -12471,18 +13477,18 @@ SWIGINTERN PyObject *_wrap_SimBuilding_Building_AboveGradeStoryCountNew(PyObject
         _v = SWIG_CheckState(res);
       }
       if (_v) {
-        return _wrap_SimBuilding_Building_AboveGradeStoryCountNew__SWIG_2(self, args);
+        return _wrap_SimBuilding_Building_T24AboveGradeStoryCountNew__SWIG_2(self, args);
       }
     }
   }
   
 fail:
-  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'SimBuilding_Building_AboveGradeStoryCountNew'.\n"
+  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'SimBuilding_Building_T24AboveGradeStoryCountNew'.\n"
     "  Possible C/C++ prototypes are:\n"
-    "    schema::simxml::BuildingModel::SimBuilding_Building::AboveGradeStoryCountNew() const\n"
-    "    schema::simxml::BuildingModel::SimBuilding_Building::AboveGradeStoryCountNew()\n"
-    "    schema::simxml::BuildingModel::SimBuilding_Building::AboveGradeStoryCountNew(schema::simxml::BuildingModel::SimBuilding_Building::AboveGradeStoryCountNew_type const &)\n"
-    "    schema::simxml::BuildingModel::SimBuilding_Building::AboveGradeStoryCountNew(schema::simxml::BuildingModel::SimBuilding_Building::AboveGradeStoryCountNew_optional const &)\n");
+    "    schema::simxml::BuildingModel::SimBuilding_Building::T24AboveGradeStoryCountNew() const\n"
+    "    schema::simxml::BuildingModel::SimBuilding_Building::T24AboveGradeStoryCountNew()\n"
+    "    schema::simxml::BuildingModel::SimBuilding_Building::T24AboveGradeStoryCountNew(schema::simxml::BuildingModel::SimBuilding_Building::T24AboveGradeStoryCountNew_type const &)\n"
+    "    schema::simxml::BuildingModel::SimBuilding_Building::T24AboveGradeStoryCountNew(schema::simxml::BuildingModel::SimBuilding_Building::T24AboveGradeStoryCountNew_optional const &)\n");
   return 0;
 }
 
@@ -13075,21 +14081,21 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_SimBuilding_Building_HighRiseResidentialLivingUnitCount__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_SimBuilding_Building_T24HighRiseResidentialLivingUnitCount__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::BuildingModel::SimBuilding_Building *arg1 = (schema::simxml::BuildingModel::SimBuilding_Building *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
-  schema::simxml::BuildingModel::SimBuilding_Building::HighRiseResidentialLivingUnitCount_optional *result = 0 ;
+  schema::simxml::BuildingModel::SimBuilding_Building::T24HighRiseResidentialLivingUnitCount_optional *result = 0 ;
   
-  if (!PyArg_ParseTuple(args,(char *)"O:SimBuilding_Building_HighRiseResidentialLivingUnitCount",&obj0)) SWIG_fail;
+  if (!PyArg_ParseTuple(args,(char *)"O:SimBuilding_Building_T24HighRiseResidentialLivingUnitCount",&obj0)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_schema__simxml__BuildingModel__SimBuilding_Building, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_HighRiseResidentialLivingUnitCount" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building const *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_T24HighRiseResidentialLivingUnitCount" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building const *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::BuildingModel::SimBuilding_Building * >(argp1);
-  result = (schema::simxml::BuildingModel::SimBuilding_Building::HighRiseResidentialLivingUnitCount_optional *) &((schema::simxml::BuildingModel::SimBuilding_Building const *)arg1)->HighRiseResidentialLivingUnitCount();
+  result = (schema::simxml::BuildingModel::SimBuilding_Building::T24HighRiseResidentialLivingUnitCount_optional *) &((schema::simxml::BuildingModel::SimBuilding_Building const *)arg1)->T24HighRiseResidentialLivingUnitCount();
   resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_int_true_t, 0 |  0 );
   return resultobj;
 fail:
@@ -13097,21 +14103,21 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_SimBuilding_Building_HighRiseResidentialLivingUnitCount__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_SimBuilding_Building_T24HighRiseResidentialLivingUnitCount__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::BuildingModel::SimBuilding_Building *arg1 = (schema::simxml::BuildingModel::SimBuilding_Building *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
-  schema::simxml::BuildingModel::SimBuilding_Building::HighRiseResidentialLivingUnitCount_optional *result = 0 ;
+  schema::simxml::BuildingModel::SimBuilding_Building::T24HighRiseResidentialLivingUnitCount_optional *result = 0 ;
   
-  if (!PyArg_ParseTuple(args,(char *)"O:SimBuilding_Building_HighRiseResidentialLivingUnitCount",&obj0)) SWIG_fail;
+  if (!PyArg_ParseTuple(args,(char *)"O:SimBuilding_Building_T24HighRiseResidentialLivingUnitCount",&obj0)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_schema__simxml__BuildingModel__SimBuilding_Building, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_HighRiseResidentialLivingUnitCount" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_T24HighRiseResidentialLivingUnitCount" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::BuildingModel::SimBuilding_Building * >(argp1);
-  result = (schema::simxml::BuildingModel::SimBuilding_Building::HighRiseResidentialLivingUnitCount_optional *) &(arg1)->HighRiseResidentialLivingUnitCount();
+  result = (schema::simxml::BuildingModel::SimBuilding_Building::T24HighRiseResidentialLivingUnitCount_optional *) &(arg1)->T24HighRiseResidentialLivingUnitCount();
   resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_int_true_t, 0 |  0 );
   return resultobj;
 fail:
@@ -13119,31 +14125,31 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_SimBuilding_Building_HighRiseResidentialLivingUnitCount__SWIG_2(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_SimBuilding_Building_T24HighRiseResidentialLivingUnitCount__SWIG_2(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::BuildingModel::SimBuilding_Building *arg1 = (schema::simxml::BuildingModel::SimBuilding_Building *) 0 ;
-  schema::simxml::BuildingModel::SimBuilding_Building::HighRiseResidentialLivingUnitCount_type *arg2 = 0 ;
+  schema::simxml::BuildingModel::SimBuilding_Building::T24HighRiseResidentialLivingUnitCount_type *arg2 = 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  schema::simxml::BuildingModel::SimBuilding_Building::HighRiseResidentialLivingUnitCount_type temp2 ;
+  schema::simxml::BuildingModel::SimBuilding_Building::T24HighRiseResidentialLivingUnitCount_type temp2 ;
   int val2 ;
   int ecode2 = 0 ;
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
   
-  if (!PyArg_ParseTuple(args,(char *)"OO:SimBuilding_Building_HighRiseResidentialLivingUnitCount",&obj0,&obj1)) SWIG_fail;
+  if (!PyArg_ParseTuple(args,(char *)"OO:SimBuilding_Building_T24HighRiseResidentialLivingUnitCount",&obj0,&obj1)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_schema__simxml__BuildingModel__SimBuilding_Building, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_HighRiseResidentialLivingUnitCount" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_T24HighRiseResidentialLivingUnitCount" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::BuildingModel::SimBuilding_Building * >(argp1);
   ecode2 = SWIG_AsVal_int(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "SimBuilding_Building_HighRiseResidentialLivingUnitCount" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building::HighRiseResidentialLivingUnitCount_type""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "SimBuilding_Building_T24HighRiseResidentialLivingUnitCount" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building::T24HighRiseResidentialLivingUnitCount_type""'");
   } 
-  temp2 = static_cast< schema::simxml::BuildingModel::SimBuilding_Building::HighRiseResidentialLivingUnitCount_type >(val2);
+  temp2 = static_cast< schema::simxml::BuildingModel::SimBuilding_Building::T24HighRiseResidentialLivingUnitCount_type >(val2);
   arg2 = &temp2;
-  (arg1)->HighRiseResidentialLivingUnitCount((schema::simxml::BuildingModel::SimBuilding_Building::HighRiseResidentialLivingUnitCount_type const &)*arg2);
+  (arg1)->T24HighRiseResidentialLivingUnitCount((schema::simxml::BuildingModel::SimBuilding_Building::T24HighRiseResidentialLivingUnitCount_type const &)*arg2);
   resultobj = SWIG_Py_Void();
   return resultobj;
 fail:
@@ -13151,10 +14157,10 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_SimBuilding_Building_HighRiseResidentialLivingUnitCount__SWIG_3(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_SimBuilding_Building_T24HighRiseResidentialLivingUnitCount__SWIG_3(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::BuildingModel::SimBuilding_Building *arg1 = (schema::simxml::BuildingModel::SimBuilding_Building *) 0 ;
-  schema::simxml::BuildingModel::SimBuilding_Building::HighRiseResidentialLivingUnitCount_optional *arg2 = 0 ;
+  schema::simxml::BuildingModel::SimBuilding_Building::T24HighRiseResidentialLivingUnitCount_optional *arg2 = 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 = 0 ;
@@ -13162,21 +14168,21 @@ SWIGINTERN PyObject *_wrap_SimBuilding_Building_HighRiseResidentialLivingUnitCou
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
   
-  if (!PyArg_ParseTuple(args,(char *)"OO:SimBuilding_Building_HighRiseResidentialLivingUnitCount",&obj0,&obj1)) SWIG_fail;
+  if (!PyArg_ParseTuple(args,(char *)"OO:SimBuilding_Building_T24HighRiseResidentialLivingUnitCount",&obj0,&obj1)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_schema__simxml__BuildingModel__SimBuilding_Building, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_HighRiseResidentialLivingUnitCount" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_T24HighRiseResidentialLivingUnitCount" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::BuildingModel::SimBuilding_Building * >(argp1);
   res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_int_true_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimBuilding_Building_HighRiseResidentialLivingUnitCount" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building::HighRiseResidentialLivingUnitCount_optional const &""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimBuilding_Building_T24HighRiseResidentialLivingUnitCount" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building::T24HighRiseResidentialLivingUnitCount_optional const &""'"); 
   }
   if (!argp2) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "SimBuilding_Building_HighRiseResidentialLivingUnitCount" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building::HighRiseResidentialLivingUnitCount_optional const &""'"); 
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "SimBuilding_Building_T24HighRiseResidentialLivingUnitCount" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building::T24HighRiseResidentialLivingUnitCount_optional const &""'"); 
   }
-  arg2 = reinterpret_cast< schema::simxml::BuildingModel::SimBuilding_Building::HighRiseResidentialLivingUnitCount_optional * >(argp2);
-  (arg1)->HighRiseResidentialLivingUnitCount((schema::simxml::BuildingModel::SimBuilding_Building::HighRiseResidentialLivingUnitCount_optional const &)*arg2);
+  arg2 = reinterpret_cast< schema::simxml::BuildingModel::SimBuilding_Building::T24HighRiseResidentialLivingUnitCount_optional * >(argp2);
+  (arg1)->T24HighRiseResidentialLivingUnitCount((schema::simxml::BuildingModel::SimBuilding_Building::T24HighRiseResidentialLivingUnitCount_optional const &)*arg2);
   resultobj = SWIG_Py_Void();
   return resultobj;
 fail:
@@ -13184,7 +14190,7 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_SimBuilding_Building_HighRiseResidentialLivingUnitCount(PyObject *self, PyObject *args) {
+SWIGINTERN PyObject *_wrap_SimBuilding_Building_T24HighRiseResidentialLivingUnitCount(PyObject *self, PyObject *args) {
   int argc;
   PyObject *argv[3] = {
     0
@@ -13202,7 +14208,7 @@ SWIGINTERN PyObject *_wrap_SimBuilding_Building_HighRiseResidentialLivingUnitCou
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__BuildingModel__SimBuilding_Building, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      return _wrap_SimBuilding_Building_HighRiseResidentialLivingUnitCount__SWIG_1(self, args);
+      return _wrap_SimBuilding_Building_T24HighRiseResidentialLivingUnitCount__SWIG_1(self, args);
     }
   }
   if (argc == 1) {
@@ -13211,7 +14217,7 @@ SWIGINTERN PyObject *_wrap_SimBuilding_Building_HighRiseResidentialLivingUnitCou
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__BuildingModel__SimBuilding_Building, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      return _wrap_SimBuilding_Building_HighRiseResidentialLivingUnitCount__SWIG_0(self, args);
+      return _wrap_SimBuilding_Building_T24HighRiseResidentialLivingUnitCount__SWIG_0(self, args);
     }
   }
   if (argc == 2) {
@@ -13223,7 +14229,7 @@ SWIGINTERN PyObject *_wrap_SimBuilding_Building_HighRiseResidentialLivingUnitCou
       int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_int_true_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
-        return _wrap_SimBuilding_Building_HighRiseResidentialLivingUnitCount__SWIG_3(self, args);
+        return _wrap_SimBuilding_Building_T24HighRiseResidentialLivingUnitCount__SWIG_3(self, args);
       }
     }
   }
@@ -13238,37 +14244,37 @@ SWIGINTERN PyObject *_wrap_SimBuilding_Building_HighRiseResidentialLivingUnitCou
         _v = SWIG_CheckState(res);
       }
       if (_v) {
-        return _wrap_SimBuilding_Building_HighRiseResidentialLivingUnitCount__SWIG_2(self, args);
+        return _wrap_SimBuilding_Building_T24HighRiseResidentialLivingUnitCount__SWIG_2(self, args);
       }
     }
   }
   
 fail:
-  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'SimBuilding_Building_HighRiseResidentialLivingUnitCount'.\n"
+  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'SimBuilding_Building_T24HighRiseResidentialLivingUnitCount'.\n"
     "  Possible C/C++ prototypes are:\n"
-    "    schema::simxml::BuildingModel::SimBuilding_Building::HighRiseResidentialLivingUnitCount() const\n"
-    "    schema::simxml::BuildingModel::SimBuilding_Building::HighRiseResidentialLivingUnitCount()\n"
-    "    schema::simxml::BuildingModel::SimBuilding_Building::HighRiseResidentialLivingUnitCount(schema::simxml::BuildingModel::SimBuilding_Building::HighRiseResidentialLivingUnitCount_type const &)\n"
-    "    schema::simxml::BuildingModel::SimBuilding_Building::HighRiseResidentialLivingUnitCount(schema::simxml::BuildingModel::SimBuilding_Building::HighRiseResidentialLivingUnitCount_optional const &)\n");
+    "    schema::simxml::BuildingModel::SimBuilding_Building::T24HighRiseResidentialLivingUnitCount() const\n"
+    "    schema::simxml::BuildingModel::SimBuilding_Building::T24HighRiseResidentialLivingUnitCount()\n"
+    "    schema::simxml::BuildingModel::SimBuilding_Building::T24HighRiseResidentialLivingUnitCount(schema::simxml::BuildingModel::SimBuilding_Building::T24HighRiseResidentialLivingUnitCount_type const &)\n"
+    "    schema::simxml::BuildingModel::SimBuilding_Building::T24HighRiseResidentialLivingUnitCount(schema::simxml::BuildingModel::SimBuilding_Building::T24HighRiseResidentialLivingUnitCount_optional const &)\n");
   return 0;
 }
 
 
-SWIGINTERN PyObject *_wrap_SimBuilding_Building_LivingUnitCountAltered__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_SimBuilding_Building_T24LivingUnitCountAltered__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::BuildingModel::SimBuilding_Building *arg1 = (schema::simxml::BuildingModel::SimBuilding_Building *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
-  schema::simxml::BuildingModel::SimBuilding_Building::LivingUnitCountAltered_optional *result = 0 ;
+  schema::simxml::BuildingModel::SimBuilding_Building::T24LivingUnitCountAltered_optional *result = 0 ;
   
-  if (!PyArg_ParseTuple(args,(char *)"O:SimBuilding_Building_LivingUnitCountAltered",&obj0)) SWIG_fail;
+  if (!PyArg_ParseTuple(args,(char *)"O:SimBuilding_Building_T24LivingUnitCountAltered",&obj0)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_schema__simxml__BuildingModel__SimBuilding_Building, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_LivingUnitCountAltered" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building const *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_T24LivingUnitCountAltered" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building const *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::BuildingModel::SimBuilding_Building * >(argp1);
-  result = (schema::simxml::BuildingModel::SimBuilding_Building::LivingUnitCountAltered_optional *) &((schema::simxml::BuildingModel::SimBuilding_Building const *)arg1)->LivingUnitCountAltered();
+  result = (schema::simxml::BuildingModel::SimBuilding_Building::T24LivingUnitCountAltered_optional *) &((schema::simxml::BuildingModel::SimBuilding_Building const *)arg1)->T24LivingUnitCountAltered();
   resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_int_true_t, 0 |  0 );
   return resultobj;
 fail:
@@ -13276,21 +14282,21 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_SimBuilding_Building_LivingUnitCountAltered__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_SimBuilding_Building_T24LivingUnitCountAltered__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::BuildingModel::SimBuilding_Building *arg1 = (schema::simxml::BuildingModel::SimBuilding_Building *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
-  schema::simxml::BuildingModel::SimBuilding_Building::LivingUnitCountAltered_optional *result = 0 ;
+  schema::simxml::BuildingModel::SimBuilding_Building::T24LivingUnitCountAltered_optional *result = 0 ;
   
-  if (!PyArg_ParseTuple(args,(char *)"O:SimBuilding_Building_LivingUnitCountAltered",&obj0)) SWIG_fail;
+  if (!PyArg_ParseTuple(args,(char *)"O:SimBuilding_Building_T24LivingUnitCountAltered",&obj0)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_schema__simxml__BuildingModel__SimBuilding_Building, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_LivingUnitCountAltered" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_T24LivingUnitCountAltered" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::BuildingModel::SimBuilding_Building * >(argp1);
-  result = (schema::simxml::BuildingModel::SimBuilding_Building::LivingUnitCountAltered_optional *) &(arg1)->LivingUnitCountAltered();
+  result = (schema::simxml::BuildingModel::SimBuilding_Building::T24LivingUnitCountAltered_optional *) &(arg1)->T24LivingUnitCountAltered();
   resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_int_true_t, 0 |  0 );
   return resultobj;
 fail:
@@ -13298,31 +14304,31 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_SimBuilding_Building_LivingUnitCountAltered__SWIG_2(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_SimBuilding_Building_T24LivingUnitCountAltered__SWIG_2(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::BuildingModel::SimBuilding_Building *arg1 = (schema::simxml::BuildingModel::SimBuilding_Building *) 0 ;
-  schema::simxml::BuildingModel::SimBuilding_Building::LivingUnitCountAltered_type *arg2 = 0 ;
+  schema::simxml::BuildingModel::SimBuilding_Building::T24LivingUnitCountAltered_type *arg2 = 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  schema::simxml::BuildingModel::SimBuilding_Building::LivingUnitCountAltered_type temp2 ;
+  schema::simxml::BuildingModel::SimBuilding_Building::T24LivingUnitCountAltered_type temp2 ;
   int val2 ;
   int ecode2 = 0 ;
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
   
-  if (!PyArg_ParseTuple(args,(char *)"OO:SimBuilding_Building_LivingUnitCountAltered",&obj0,&obj1)) SWIG_fail;
+  if (!PyArg_ParseTuple(args,(char *)"OO:SimBuilding_Building_T24LivingUnitCountAltered",&obj0,&obj1)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_schema__simxml__BuildingModel__SimBuilding_Building, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_LivingUnitCountAltered" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_T24LivingUnitCountAltered" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::BuildingModel::SimBuilding_Building * >(argp1);
   ecode2 = SWIG_AsVal_int(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "SimBuilding_Building_LivingUnitCountAltered" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building::LivingUnitCountAltered_type""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "SimBuilding_Building_T24LivingUnitCountAltered" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building::T24LivingUnitCountAltered_type""'");
   } 
-  temp2 = static_cast< schema::simxml::BuildingModel::SimBuilding_Building::LivingUnitCountAltered_type >(val2);
+  temp2 = static_cast< schema::simxml::BuildingModel::SimBuilding_Building::T24LivingUnitCountAltered_type >(val2);
   arg2 = &temp2;
-  (arg1)->LivingUnitCountAltered((schema::simxml::BuildingModel::SimBuilding_Building::LivingUnitCountAltered_type const &)*arg2);
+  (arg1)->T24LivingUnitCountAltered((schema::simxml::BuildingModel::SimBuilding_Building::T24LivingUnitCountAltered_type const &)*arg2);
   resultobj = SWIG_Py_Void();
   return resultobj;
 fail:
@@ -13330,10 +14336,10 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_SimBuilding_Building_LivingUnitCountAltered__SWIG_3(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_SimBuilding_Building_T24LivingUnitCountAltered__SWIG_3(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::BuildingModel::SimBuilding_Building *arg1 = (schema::simxml::BuildingModel::SimBuilding_Building *) 0 ;
-  schema::simxml::BuildingModel::SimBuilding_Building::LivingUnitCountAltered_optional *arg2 = 0 ;
+  schema::simxml::BuildingModel::SimBuilding_Building::T24LivingUnitCountAltered_optional *arg2 = 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 = 0 ;
@@ -13341,21 +14347,21 @@ SWIGINTERN PyObject *_wrap_SimBuilding_Building_LivingUnitCountAltered__SWIG_3(P
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
   
-  if (!PyArg_ParseTuple(args,(char *)"OO:SimBuilding_Building_LivingUnitCountAltered",&obj0,&obj1)) SWIG_fail;
+  if (!PyArg_ParseTuple(args,(char *)"OO:SimBuilding_Building_T24LivingUnitCountAltered",&obj0,&obj1)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_schema__simxml__BuildingModel__SimBuilding_Building, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_LivingUnitCountAltered" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_T24LivingUnitCountAltered" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::BuildingModel::SimBuilding_Building * >(argp1);
   res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_int_true_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimBuilding_Building_LivingUnitCountAltered" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building::LivingUnitCountAltered_optional const &""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimBuilding_Building_T24LivingUnitCountAltered" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building::T24LivingUnitCountAltered_optional const &""'"); 
   }
   if (!argp2) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "SimBuilding_Building_LivingUnitCountAltered" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building::LivingUnitCountAltered_optional const &""'"); 
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "SimBuilding_Building_T24LivingUnitCountAltered" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building::T24LivingUnitCountAltered_optional const &""'"); 
   }
-  arg2 = reinterpret_cast< schema::simxml::BuildingModel::SimBuilding_Building::LivingUnitCountAltered_optional * >(argp2);
-  (arg1)->LivingUnitCountAltered((schema::simxml::BuildingModel::SimBuilding_Building::LivingUnitCountAltered_optional const &)*arg2);
+  arg2 = reinterpret_cast< schema::simxml::BuildingModel::SimBuilding_Building::T24LivingUnitCountAltered_optional * >(argp2);
+  (arg1)->T24LivingUnitCountAltered((schema::simxml::BuildingModel::SimBuilding_Building::T24LivingUnitCountAltered_optional const &)*arg2);
   resultobj = SWIG_Py_Void();
   return resultobj;
 fail:
@@ -13363,7 +14369,7 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_SimBuilding_Building_LivingUnitCountAltered(PyObject *self, PyObject *args) {
+SWIGINTERN PyObject *_wrap_SimBuilding_Building_T24LivingUnitCountAltered(PyObject *self, PyObject *args) {
   int argc;
   PyObject *argv[3] = {
     0
@@ -13381,7 +14387,7 @@ SWIGINTERN PyObject *_wrap_SimBuilding_Building_LivingUnitCountAltered(PyObject 
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__BuildingModel__SimBuilding_Building, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      return _wrap_SimBuilding_Building_LivingUnitCountAltered__SWIG_1(self, args);
+      return _wrap_SimBuilding_Building_T24LivingUnitCountAltered__SWIG_1(self, args);
     }
   }
   if (argc == 1) {
@@ -13390,7 +14396,7 @@ SWIGINTERN PyObject *_wrap_SimBuilding_Building_LivingUnitCountAltered(PyObject 
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__BuildingModel__SimBuilding_Building, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      return _wrap_SimBuilding_Building_LivingUnitCountAltered__SWIG_0(self, args);
+      return _wrap_SimBuilding_Building_T24LivingUnitCountAltered__SWIG_0(self, args);
     }
   }
   if (argc == 2) {
@@ -13402,7 +14408,7 @@ SWIGINTERN PyObject *_wrap_SimBuilding_Building_LivingUnitCountAltered(PyObject 
       int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_int_true_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
-        return _wrap_SimBuilding_Building_LivingUnitCountAltered__SWIG_3(self, args);
+        return _wrap_SimBuilding_Building_T24LivingUnitCountAltered__SWIG_3(self, args);
       }
     }
   }
@@ -13417,37 +14423,37 @@ SWIGINTERN PyObject *_wrap_SimBuilding_Building_LivingUnitCountAltered(PyObject 
         _v = SWIG_CheckState(res);
       }
       if (_v) {
-        return _wrap_SimBuilding_Building_LivingUnitCountAltered__SWIG_2(self, args);
+        return _wrap_SimBuilding_Building_T24LivingUnitCountAltered__SWIG_2(self, args);
       }
     }
   }
   
 fail:
-  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'SimBuilding_Building_LivingUnitCountAltered'.\n"
+  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'SimBuilding_Building_T24LivingUnitCountAltered'.\n"
     "  Possible C/C++ prototypes are:\n"
-    "    schema::simxml::BuildingModel::SimBuilding_Building::LivingUnitCountAltered() const\n"
-    "    schema::simxml::BuildingModel::SimBuilding_Building::LivingUnitCountAltered()\n"
-    "    schema::simxml::BuildingModel::SimBuilding_Building::LivingUnitCountAltered(schema::simxml::BuildingModel::SimBuilding_Building::LivingUnitCountAltered_type const &)\n"
-    "    schema::simxml::BuildingModel::SimBuilding_Building::LivingUnitCountAltered(schema::simxml::BuildingModel::SimBuilding_Building::LivingUnitCountAltered_optional const &)\n");
+    "    schema::simxml::BuildingModel::SimBuilding_Building::T24LivingUnitCountAltered() const\n"
+    "    schema::simxml::BuildingModel::SimBuilding_Building::T24LivingUnitCountAltered()\n"
+    "    schema::simxml::BuildingModel::SimBuilding_Building::T24LivingUnitCountAltered(schema::simxml::BuildingModel::SimBuilding_Building::T24LivingUnitCountAltered_type const &)\n"
+    "    schema::simxml::BuildingModel::SimBuilding_Building::T24LivingUnitCountAltered(schema::simxml::BuildingModel::SimBuilding_Building::T24LivingUnitCountAltered_optional const &)\n");
   return 0;
 }
 
 
-SWIGINTERN PyObject *_wrap_SimBuilding_Building_LivingUnitCountExisting__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_SimBuilding_Building_T24LivingUnitCountExisting__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::BuildingModel::SimBuilding_Building *arg1 = (schema::simxml::BuildingModel::SimBuilding_Building *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
-  schema::simxml::BuildingModel::SimBuilding_Building::LivingUnitCountExisting_optional *result = 0 ;
+  schema::simxml::BuildingModel::SimBuilding_Building::T24LivingUnitCountExisting_optional *result = 0 ;
   
-  if (!PyArg_ParseTuple(args,(char *)"O:SimBuilding_Building_LivingUnitCountExisting",&obj0)) SWIG_fail;
+  if (!PyArg_ParseTuple(args,(char *)"O:SimBuilding_Building_T24LivingUnitCountExisting",&obj0)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_schema__simxml__BuildingModel__SimBuilding_Building, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_LivingUnitCountExisting" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building const *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_T24LivingUnitCountExisting" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building const *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::BuildingModel::SimBuilding_Building * >(argp1);
-  result = (schema::simxml::BuildingModel::SimBuilding_Building::LivingUnitCountExisting_optional *) &((schema::simxml::BuildingModel::SimBuilding_Building const *)arg1)->LivingUnitCountExisting();
+  result = (schema::simxml::BuildingModel::SimBuilding_Building::T24LivingUnitCountExisting_optional *) &((schema::simxml::BuildingModel::SimBuilding_Building const *)arg1)->T24LivingUnitCountExisting();
   resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_int_true_t, 0 |  0 );
   return resultobj;
 fail:
@@ -13455,21 +14461,21 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_SimBuilding_Building_LivingUnitCountExisting__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_SimBuilding_Building_T24LivingUnitCountExisting__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::BuildingModel::SimBuilding_Building *arg1 = (schema::simxml::BuildingModel::SimBuilding_Building *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
-  schema::simxml::BuildingModel::SimBuilding_Building::LivingUnitCountExisting_optional *result = 0 ;
+  schema::simxml::BuildingModel::SimBuilding_Building::T24LivingUnitCountExisting_optional *result = 0 ;
   
-  if (!PyArg_ParseTuple(args,(char *)"O:SimBuilding_Building_LivingUnitCountExisting",&obj0)) SWIG_fail;
+  if (!PyArg_ParseTuple(args,(char *)"O:SimBuilding_Building_T24LivingUnitCountExisting",&obj0)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_schema__simxml__BuildingModel__SimBuilding_Building, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_LivingUnitCountExisting" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_T24LivingUnitCountExisting" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::BuildingModel::SimBuilding_Building * >(argp1);
-  result = (schema::simxml::BuildingModel::SimBuilding_Building::LivingUnitCountExisting_optional *) &(arg1)->LivingUnitCountExisting();
+  result = (schema::simxml::BuildingModel::SimBuilding_Building::T24LivingUnitCountExisting_optional *) &(arg1)->T24LivingUnitCountExisting();
   resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_int_true_t, 0 |  0 );
   return resultobj;
 fail:
@@ -13477,31 +14483,31 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_SimBuilding_Building_LivingUnitCountExisting__SWIG_2(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_SimBuilding_Building_T24LivingUnitCountExisting__SWIG_2(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::BuildingModel::SimBuilding_Building *arg1 = (schema::simxml::BuildingModel::SimBuilding_Building *) 0 ;
-  schema::simxml::BuildingModel::SimBuilding_Building::LivingUnitCountExisting_type *arg2 = 0 ;
+  schema::simxml::BuildingModel::SimBuilding_Building::T24LivingUnitCountExisting_type *arg2 = 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  schema::simxml::BuildingModel::SimBuilding_Building::LivingUnitCountExisting_type temp2 ;
+  schema::simxml::BuildingModel::SimBuilding_Building::T24LivingUnitCountExisting_type temp2 ;
   int val2 ;
   int ecode2 = 0 ;
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
   
-  if (!PyArg_ParseTuple(args,(char *)"OO:SimBuilding_Building_LivingUnitCountExisting",&obj0,&obj1)) SWIG_fail;
+  if (!PyArg_ParseTuple(args,(char *)"OO:SimBuilding_Building_T24LivingUnitCountExisting",&obj0,&obj1)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_schema__simxml__BuildingModel__SimBuilding_Building, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_LivingUnitCountExisting" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_T24LivingUnitCountExisting" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::BuildingModel::SimBuilding_Building * >(argp1);
   ecode2 = SWIG_AsVal_int(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "SimBuilding_Building_LivingUnitCountExisting" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building::LivingUnitCountExisting_type""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "SimBuilding_Building_T24LivingUnitCountExisting" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building::T24LivingUnitCountExisting_type""'");
   } 
-  temp2 = static_cast< schema::simxml::BuildingModel::SimBuilding_Building::LivingUnitCountExisting_type >(val2);
+  temp2 = static_cast< schema::simxml::BuildingModel::SimBuilding_Building::T24LivingUnitCountExisting_type >(val2);
   arg2 = &temp2;
-  (arg1)->LivingUnitCountExisting((schema::simxml::BuildingModel::SimBuilding_Building::LivingUnitCountExisting_type const &)*arg2);
+  (arg1)->T24LivingUnitCountExisting((schema::simxml::BuildingModel::SimBuilding_Building::T24LivingUnitCountExisting_type const &)*arg2);
   resultobj = SWIG_Py_Void();
   return resultobj;
 fail:
@@ -13509,10 +14515,10 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_SimBuilding_Building_LivingUnitCountExisting__SWIG_3(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_SimBuilding_Building_T24LivingUnitCountExisting__SWIG_3(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::BuildingModel::SimBuilding_Building *arg1 = (schema::simxml::BuildingModel::SimBuilding_Building *) 0 ;
-  schema::simxml::BuildingModel::SimBuilding_Building::LivingUnitCountExisting_optional *arg2 = 0 ;
+  schema::simxml::BuildingModel::SimBuilding_Building::T24LivingUnitCountExisting_optional *arg2 = 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 = 0 ;
@@ -13520,21 +14526,21 @@ SWIGINTERN PyObject *_wrap_SimBuilding_Building_LivingUnitCountExisting__SWIG_3(
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
   
-  if (!PyArg_ParseTuple(args,(char *)"OO:SimBuilding_Building_LivingUnitCountExisting",&obj0,&obj1)) SWIG_fail;
+  if (!PyArg_ParseTuple(args,(char *)"OO:SimBuilding_Building_T24LivingUnitCountExisting",&obj0,&obj1)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_schema__simxml__BuildingModel__SimBuilding_Building, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_LivingUnitCountExisting" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_T24LivingUnitCountExisting" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::BuildingModel::SimBuilding_Building * >(argp1);
   res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_int_true_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimBuilding_Building_LivingUnitCountExisting" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building::LivingUnitCountExisting_optional const &""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimBuilding_Building_T24LivingUnitCountExisting" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building::T24LivingUnitCountExisting_optional const &""'"); 
   }
   if (!argp2) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "SimBuilding_Building_LivingUnitCountExisting" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building::LivingUnitCountExisting_optional const &""'"); 
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "SimBuilding_Building_T24LivingUnitCountExisting" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building::T24LivingUnitCountExisting_optional const &""'"); 
   }
-  arg2 = reinterpret_cast< schema::simxml::BuildingModel::SimBuilding_Building::LivingUnitCountExisting_optional * >(argp2);
-  (arg1)->LivingUnitCountExisting((schema::simxml::BuildingModel::SimBuilding_Building::LivingUnitCountExisting_optional const &)*arg2);
+  arg2 = reinterpret_cast< schema::simxml::BuildingModel::SimBuilding_Building::T24LivingUnitCountExisting_optional * >(argp2);
+  (arg1)->T24LivingUnitCountExisting((schema::simxml::BuildingModel::SimBuilding_Building::T24LivingUnitCountExisting_optional const &)*arg2);
   resultobj = SWIG_Py_Void();
   return resultobj;
 fail:
@@ -13542,7 +14548,7 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_SimBuilding_Building_LivingUnitCountExisting(PyObject *self, PyObject *args) {
+SWIGINTERN PyObject *_wrap_SimBuilding_Building_T24LivingUnitCountExisting(PyObject *self, PyObject *args) {
   int argc;
   PyObject *argv[3] = {
     0
@@ -13560,7 +14566,7 @@ SWIGINTERN PyObject *_wrap_SimBuilding_Building_LivingUnitCountExisting(PyObject
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__BuildingModel__SimBuilding_Building, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      return _wrap_SimBuilding_Building_LivingUnitCountExisting__SWIG_1(self, args);
+      return _wrap_SimBuilding_Building_T24LivingUnitCountExisting__SWIG_1(self, args);
     }
   }
   if (argc == 1) {
@@ -13569,7 +14575,7 @@ SWIGINTERN PyObject *_wrap_SimBuilding_Building_LivingUnitCountExisting(PyObject
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__BuildingModel__SimBuilding_Building, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      return _wrap_SimBuilding_Building_LivingUnitCountExisting__SWIG_0(self, args);
+      return _wrap_SimBuilding_Building_T24LivingUnitCountExisting__SWIG_0(self, args);
     }
   }
   if (argc == 2) {
@@ -13581,7 +14587,7 @@ SWIGINTERN PyObject *_wrap_SimBuilding_Building_LivingUnitCountExisting(PyObject
       int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_int_true_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
-        return _wrap_SimBuilding_Building_LivingUnitCountExisting__SWIG_3(self, args);
+        return _wrap_SimBuilding_Building_T24LivingUnitCountExisting__SWIG_3(self, args);
       }
     }
   }
@@ -13596,37 +14602,37 @@ SWIGINTERN PyObject *_wrap_SimBuilding_Building_LivingUnitCountExisting(PyObject
         _v = SWIG_CheckState(res);
       }
       if (_v) {
-        return _wrap_SimBuilding_Building_LivingUnitCountExisting__SWIG_2(self, args);
+        return _wrap_SimBuilding_Building_T24LivingUnitCountExisting__SWIG_2(self, args);
       }
     }
   }
   
 fail:
-  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'SimBuilding_Building_LivingUnitCountExisting'.\n"
+  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'SimBuilding_Building_T24LivingUnitCountExisting'.\n"
     "  Possible C/C++ prototypes are:\n"
-    "    schema::simxml::BuildingModel::SimBuilding_Building::LivingUnitCountExisting() const\n"
-    "    schema::simxml::BuildingModel::SimBuilding_Building::LivingUnitCountExisting()\n"
-    "    schema::simxml::BuildingModel::SimBuilding_Building::LivingUnitCountExisting(schema::simxml::BuildingModel::SimBuilding_Building::LivingUnitCountExisting_type const &)\n"
-    "    schema::simxml::BuildingModel::SimBuilding_Building::LivingUnitCountExisting(schema::simxml::BuildingModel::SimBuilding_Building::LivingUnitCountExisting_optional const &)\n");
+    "    schema::simxml::BuildingModel::SimBuilding_Building::T24LivingUnitCountExisting() const\n"
+    "    schema::simxml::BuildingModel::SimBuilding_Building::T24LivingUnitCountExisting()\n"
+    "    schema::simxml::BuildingModel::SimBuilding_Building::T24LivingUnitCountExisting(schema::simxml::BuildingModel::SimBuilding_Building::T24LivingUnitCountExisting_type const &)\n"
+    "    schema::simxml::BuildingModel::SimBuilding_Building::T24LivingUnitCountExisting(schema::simxml::BuildingModel::SimBuilding_Building::T24LivingUnitCountExisting_optional const &)\n");
   return 0;
 }
 
 
-SWIGINTERN PyObject *_wrap_SimBuilding_Building_LivingUnitCountNew__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_SimBuilding_Building_T24LivingUnitCountNew__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::BuildingModel::SimBuilding_Building *arg1 = (schema::simxml::BuildingModel::SimBuilding_Building *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
-  schema::simxml::BuildingModel::SimBuilding_Building::LivingUnitCountNew_optional *result = 0 ;
+  schema::simxml::BuildingModel::SimBuilding_Building::T24LivingUnitCountNew_optional *result = 0 ;
   
-  if (!PyArg_ParseTuple(args,(char *)"O:SimBuilding_Building_LivingUnitCountNew",&obj0)) SWIG_fail;
+  if (!PyArg_ParseTuple(args,(char *)"O:SimBuilding_Building_T24LivingUnitCountNew",&obj0)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_schema__simxml__BuildingModel__SimBuilding_Building, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_LivingUnitCountNew" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building const *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_T24LivingUnitCountNew" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building const *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::BuildingModel::SimBuilding_Building * >(argp1);
-  result = (schema::simxml::BuildingModel::SimBuilding_Building::LivingUnitCountNew_optional *) &((schema::simxml::BuildingModel::SimBuilding_Building const *)arg1)->LivingUnitCountNew();
+  result = (schema::simxml::BuildingModel::SimBuilding_Building::T24LivingUnitCountNew_optional *) &((schema::simxml::BuildingModel::SimBuilding_Building const *)arg1)->T24LivingUnitCountNew();
   resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_int_true_t, 0 |  0 );
   return resultobj;
 fail:
@@ -13634,21 +14640,21 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_SimBuilding_Building_LivingUnitCountNew__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_SimBuilding_Building_T24LivingUnitCountNew__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::BuildingModel::SimBuilding_Building *arg1 = (schema::simxml::BuildingModel::SimBuilding_Building *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
-  schema::simxml::BuildingModel::SimBuilding_Building::LivingUnitCountNew_optional *result = 0 ;
+  schema::simxml::BuildingModel::SimBuilding_Building::T24LivingUnitCountNew_optional *result = 0 ;
   
-  if (!PyArg_ParseTuple(args,(char *)"O:SimBuilding_Building_LivingUnitCountNew",&obj0)) SWIG_fail;
+  if (!PyArg_ParseTuple(args,(char *)"O:SimBuilding_Building_T24LivingUnitCountNew",&obj0)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_schema__simxml__BuildingModel__SimBuilding_Building, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_LivingUnitCountNew" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_T24LivingUnitCountNew" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::BuildingModel::SimBuilding_Building * >(argp1);
-  result = (schema::simxml::BuildingModel::SimBuilding_Building::LivingUnitCountNew_optional *) &(arg1)->LivingUnitCountNew();
+  result = (schema::simxml::BuildingModel::SimBuilding_Building::T24LivingUnitCountNew_optional *) &(arg1)->T24LivingUnitCountNew();
   resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_int_true_t, 0 |  0 );
   return resultobj;
 fail:
@@ -13656,31 +14662,31 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_SimBuilding_Building_LivingUnitCountNew__SWIG_2(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_SimBuilding_Building_T24LivingUnitCountNew__SWIG_2(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::BuildingModel::SimBuilding_Building *arg1 = (schema::simxml::BuildingModel::SimBuilding_Building *) 0 ;
-  schema::simxml::BuildingModel::SimBuilding_Building::LivingUnitCountNew_type *arg2 = 0 ;
+  schema::simxml::BuildingModel::SimBuilding_Building::T24LivingUnitCountNew_type *arg2 = 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  schema::simxml::BuildingModel::SimBuilding_Building::LivingUnitCountNew_type temp2 ;
+  schema::simxml::BuildingModel::SimBuilding_Building::T24LivingUnitCountNew_type temp2 ;
   int val2 ;
   int ecode2 = 0 ;
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
   
-  if (!PyArg_ParseTuple(args,(char *)"OO:SimBuilding_Building_LivingUnitCountNew",&obj0,&obj1)) SWIG_fail;
+  if (!PyArg_ParseTuple(args,(char *)"OO:SimBuilding_Building_T24LivingUnitCountNew",&obj0,&obj1)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_schema__simxml__BuildingModel__SimBuilding_Building, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_LivingUnitCountNew" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_T24LivingUnitCountNew" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::BuildingModel::SimBuilding_Building * >(argp1);
   ecode2 = SWIG_AsVal_int(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "SimBuilding_Building_LivingUnitCountNew" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building::LivingUnitCountNew_type""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "SimBuilding_Building_T24LivingUnitCountNew" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building::T24LivingUnitCountNew_type""'");
   } 
-  temp2 = static_cast< schema::simxml::BuildingModel::SimBuilding_Building::LivingUnitCountNew_type >(val2);
+  temp2 = static_cast< schema::simxml::BuildingModel::SimBuilding_Building::T24LivingUnitCountNew_type >(val2);
   arg2 = &temp2;
-  (arg1)->LivingUnitCountNew((schema::simxml::BuildingModel::SimBuilding_Building::LivingUnitCountNew_type const &)*arg2);
+  (arg1)->T24LivingUnitCountNew((schema::simxml::BuildingModel::SimBuilding_Building::T24LivingUnitCountNew_type const &)*arg2);
   resultobj = SWIG_Py_Void();
   return resultobj;
 fail:
@@ -13688,10 +14694,10 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_SimBuilding_Building_LivingUnitCountNew__SWIG_3(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_SimBuilding_Building_T24LivingUnitCountNew__SWIG_3(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::BuildingModel::SimBuilding_Building *arg1 = (schema::simxml::BuildingModel::SimBuilding_Building *) 0 ;
-  schema::simxml::BuildingModel::SimBuilding_Building::LivingUnitCountNew_optional *arg2 = 0 ;
+  schema::simxml::BuildingModel::SimBuilding_Building::T24LivingUnitCountNew_optional *arg2 = 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 = 0 ;
@@ -13699,21 +14705,21 @@ SWIGINTERN PyObject *_wrap_SimBuilding_Building_LivingUnitCountNew__SWIG_3(PyObj
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
   
-  if (!PyArg_ParseTuple(args,(char *)"OO:SimBuilding_Building_LivingUnitCountNew",&obj0,&obj1)) SWIG_fail;
+  if (!PyArg_ParseTuple(args,(char *)"OO:SimBuilding_Building_T24LivingUnitCountNew",&obj0,&obj1)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_schema__simxml__BuildingModel__SimBuilding_Building, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_LivingUnitCountNew" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_T24LivingUnitCountNew" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::BuildingModel::SimBuilding_Building * >(argp1);
   res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_int_true_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimBuilding_Building_LivingUnitCountNew" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building::LivingUnitCountNew_optional const &""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimBuilding_Building_T24LivingUnitCountNew" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building::T24LivingUnitCountNew_optional const &""'"); 
   }
   if (!argp2) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "SimBuilding_Building_LivingUnitCountNew" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building::LivingUnitCountNew_optional const &""'"); 
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "SimBuilding_Building_T24LivingUnitCountNew" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building::T24LivingUnitCountNew_optional const &""'"); 
   }
-  arg2 = reinterpret_cast< schema::simxml::BuildingModel::SimBuilding_Building::LivingUnitCountNew_optional * >(argp2);
-  (arg1)->LivingUnitCountNew((schema::simxml::BuildingModel::SimBuilding_Building::LivingUnitCountNew_optional const &)*arg2);
+  arg2 = reinterpret_cast< schema::simxml::BuildingModel::SimBuilding_Building::T24LivingUnitCountNew_optional * >(argp2);
+  (arg1)->T24LivingUnitCountNew((schema::simxml::BuildingModel::SimBuilding_Building::T24LivingUnitCountNew_optional const &)*arg2);
   resultobj = SWIG_Py_Void();
   return resultobj;
 fail:
@@ -13721,7 +14727,7 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_SimBuilding_Building_LivingUnitCountNew(PyObject *self, PyObject *args) {
+SWIGINTERN PyObject *_wrap_SimBuilding_Building_T24LivingUnitCountNew(PyObject *self, PyObject *args) {
   int argc;
   PyObject *argv[3] = {
     0
@@ -13739,7 +14745,7 @@ SWIGINTERN PyObject *_wrap_SimBuilding_Building_LivingUnitCountNew(PyObject *sel
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__BuildingModel__SimBuilding_Building, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      return _wrap_SimBuilding_Building_LivingUnitCountNew__SWIG_1(self, args);
+      return _wrap_SimBuilding_Building_T24LivingUnitCountNew__SWIG_1(self, args);
     }
   }
   if (argc == 1) {
@@ -13748,7 +14754,7 @@ SWIGINTERN PyObject *_wrap_SimBuilding_Building_LivingUnitCountNew(PyObject *sel
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__BuildingModel__SimBuilding_Building, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      return _wrap_SimBuilding_Building_LivingUnitCountNew__SWIG_0(self, args);
+      return _wrap_SimBuilding_Building_T24LivingUnitCountNew__SWIG_0(self, args);
     }
   }
   if (argc == 2) {
@@ -13760,7 +14766,7 @@ SWIGINTERN PyObject *_wrap_SimBuilding_Building_LivingUnitCountNew(PyObject *sel
       int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_int_true_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
-        return _wrap_SimBuilding_Building_LivingUnitCountNew__SWIG_3(self, args);
+        return _wrap_SimBuilding_Building_T24LivingUnitCountNew__SWIG_3(self, args);
       }
     }
   }
@@ -13775,18 +14781,18 @@ SWIGINTERN PyObject *_wrap_SimBuilding_Building_LivingUnitCountNew(PyObject *sel
         _v = SWIG_CheckState(res);
       }
       if (_v) {
-        return _wrap_SimBuilding_Building_LivingUnitCountNew__SWIG_2(self, args);
+        return _wrap_SimBuilding_Building_T24LivingUnitCountNew__SWIG_2(self, args);
       }
     }
   }
   
 fail:
-  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'SimBuilding_Building_LivingUnitCountNew'.\n"
+  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'SimBuilding_Building_T24LivingUnitCountNew'.\n"
     "  Possible C/C++ prototypes are:\n"
-    "    schema::simxml::BuildingModel::SimBuilding_Building::LivingUnitCountNew() const\n"
-    "    schema::simxml::BuildingModel::SimBuilding_Building::LivingUnitCountNew()\n"
-    "    schema::simxml::BuildingModel::SimBuilding_Building::LivingUnitCountNew(schema::simxml::BuildingModel::SimBuilding_Building::LivingUnitCountNew_type const &)\n"
-    "    schema::simxml::BuildingModel::SimBuilding_Building::LivingUnitCountNew(schema::simxml::BuildingModel::SimBuilding_Building::LivingUnitCountNew_optional const &)\n");
+    "    schema::simxml::BuildingModel::SimBuilding_Building::T24LivingUnitCountNew() const\n"
+    "    schema::simxml::BuildingModel::SimBuilding_Building::T24LivingUnitCountNew()\n"
+    "    schema::simxml::BuildingModel::SimBuilding_Building::T24LivingUnitCountNew(schema::simxml::BuildingModel::SimBuilding_Building::T24LivingUnitCountNew_type const &)\n"
+    "    schema::simxml::BuildingModel::SimBuilding_Building::T24LivingUnitCountNew(schema::simxml::BuildingModel::SimBuilding_Building::T24LivingUnitCountNew_optional const &)\n");
   return 0;
 }
 
@@ -14149,21 +15155,21 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_SimBuilding_Building_RelocatablePublicSchoolBuilding__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_SimBuilding_Building_T24RelocatablePublicSchoolBuilding__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::BuildingModel::SimBuilding_Building *arg1 = (schema::simxml::BuildingModel::SimBuilding_Building *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
-  schema::simxml::BuildingModel::SimBuilding_Building::RelocatablePublicSchoolBuilding_optional *result = 0 ;
+  schema::simxml::BuildingModel::SimBuilding_Building::T24RelocatablePublicSchoolBuilding_optional *result = 0 ;
   
-  if (!PyArg_ParseTuple(args,(char *)"O:SimBuilding_Building_RelocatablePublicSchoolBuilding",&obj0)) SWIG_fail;
+  if (!PyArg_ParseTuple(args,(char *)"O:SimBuilding_Building_T24RelocatablePublicSchoolBuilding",&obj0)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_schema__simxml__BuildingModel__SimBuilding_Building, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_RelocatablePublicSchoolBuilding" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building const *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_T24RelocatablePublicSchoolBuilding" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building const *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::BuildingModel::SimBuilding_Building * >(argp1);
-  result = (schema::simxml::BuildingModel::SimBuilding_Building::RelocatablePublicSchoolBuilding_optional *) &((schema::simxml::BuildingModel::SimBuilding_Building const *)arg1)->RelocatablePublicSchoolBuilding();
+  result = (schema::simxml::BuildingModel::SimBuilding_Building::T24RelocatablePublicSchoolBuilding_optional *) &((schema::simxml::BuildingModel::SimBuilding_Building const *)arg1)->T24RelocatablePublicSchoolBuilding();
   resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_int_true_t, 0 |  0 );
   return resultobj;
 fail:
@@ -14171,21 +15177,21 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_SimBuilding_Building_RelocatablePublicSchoolBuilding__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_SimBuilding_Building_T24RelocatablePublicSchoolBuilding__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::BuildingModel::SimBuilding_Building *arg1 = (schema::simxml::BuildingModel::SimBuilding_Building *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
-  schema::simxml::BuildingModel::SimBuilding_Building::RelocatablePublicSchoolBuilding_optional *result = 0 ;
+  schema::simxml::BuildingModel::SimBuilding_Building::T24RelocatablePublicSchoolBuilding_optional *result = 0 ;
   
-  if (!PyArg_ParseTuple(args,(char *)"O:SimBuilding_Building_RelocatablePublicSchoolBuilding",&obj0)) SWIG_fail;
+  if (!PyArg_ParseTuple(args,(char *)"O:SimBuilding_Building_T24RelocatablePublicSchoolBuilding",&obj0)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_schema__simxml__BuildingModel__SimBuilding_Building, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_RelocatablePublicSchoolBuilding" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_T24RelocatablePublicSchoolBuilding" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::BuildingModel::SimBuilding_Building * >(argp1);
-  result = (schema::simxml::BuildingModel::SimBuilding_Building::RelocatablePublicSchoolBuilding_optional *) &(arg1)->RelocatablePublicSchoolBuilding();
+  result = (schema::simxml::BuildingModel::SimBuilding_Building::T24RelocatablePublicSchoolBuilding_optional *) &(arg1)->T24RelocatablePublicSchoolBuilding();
   resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_int_true_t, 0 |  0 );
   return resultobj;
 fail:
@@ -14193,31 +15199,31 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_SimBuilding_Building_RelocatablePublicSchoolBuilding__SWIG_2(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_SimBuilding_Building_T24RelocatablePublicSchoolBuilding__SWIG_2(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::BuildingModel::SimBuilding_Building *arg1 = (schema::simxml::BuildingModel::SimBuilding_Building *) 0 ;
-  schema::simxml::BuildingModel::SimBuilding_Building::RelocatablePublicSchoolBuilding_type *arg2 = 0 ;
+  schema::simxml::BuildingModel::SimBuilding_Building::T24RelocatablePublicSchoolBuilding_type *arg2 = 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  schema::simxml::BuildingModel::SimBuilding_Building::RelocatablePublicSchoolBuilding_type temp2 ;
+  schema::simxml::BuildingModel::SimBuilding_Building::T24RelocatablePublicSchoolBuilding_type temp2 ;
   int val2 ;
   int ecode2 = 0 ;
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
   
-  if (!PyArg_ParseTuple(args,(char *)"OO:SimBuilding_Building_RelocatablePublicSchoolBuilding",&obj0,&obj1)) SWIG_fail;
+  if (!PyArg_ParseTuple(args,(char *)"OO:SimBuilding_Building_T24RelocatablePublicSchoolBuilding",&obj0,&obj1)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_schema__simxml__BuildingModel__SimBuilding_Building, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_RelocatablePublicSchoolBuilding" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_T24RelocatablePublicSchoolBuilding" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::BuildingModel::SimBuilding_Building * >(argp1);
   ecode2 = SWIG_AsVal_int(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "SimBuilding_Building_RelocatablePublicSchoolBuilding" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building::RelocatablePublicSchoolBuilding_type""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "SimBuilding_Building_T24RelocatablePublicSchoolBuilding" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building::T24RelocatablePublicSchoolBuilding_type""'");
   } 
-  temp2 = static_cast< schema::simxml::BuildingModel::SimBuilding_Building::RelocatablePublicSchoolBuilding_type >(val2);
+  temp2 = static_cast< schema::simxml::BuildingModel::SimBuilding_Building::T24RelocatablePublicSchoolBuilding_type >(val2);
   arg2 = &temp2;
-  (arg1)->RelocatablePublicSchoolBuilding((schema::simxml::BuildingModel::SimBuilding_Building::RelocatablePublicSchoolBuilding_type const &)*arg2);
+  (arg1)->T24RelocatablePublicSchoolBuilding((schema::simxml::BuildingModel::SimBuilding_Building::T24RelocatablePublicSchoolBuilding_type const &)*arg2);
   resultobj = SWIG_Py_Void();
   return resultobj;
 fail:
@@ -14225,10 +15231,10 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_SimBuilding_Building_RelocatablePublicSchoolBuilding__SWIG_3(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_SimBuilding_Building_T24RelocatablePublicSchoolBuilding__SWIG_3(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::BuildingModel::SimBuilding_Building *arg1 = (schema::simxml::BuildingModel::SimBuilding_Building *) 0 ;
-  schema::simxml::BuildingModel::SimBuilding_Building::RelocatablePublicSchoolBuilding_optional *arg2 = 0 ;
+  schema::simxml::BuildingModel::SimBuilding_Building::T24RelocatablePublicSchoolBuilding_optional *arg2 = 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 = 0 ;
@@ -14236,21 +15242,21 @@ SWIGINTERN PyObject *_wrap_SimBuilding_Building_RelocatablePublicSchoolBuilding_
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
   
-  if (!PyArg_ParseTuple(args,(char *)"OO:SimBuilding_Building_RelocatablePublicSchoolBuilding",&obj0,&obj1)) SWIG_fail;
+  if (!PyArg_ParseTuple(args,(char *)"OO:SimBuilding_Building_T24RelocatablePublicSchoolBuilding",&obj0,&obj1)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_schema__simxml__BuildingModel__SimBuilding_Building, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_RelocatablePublicSchoolBuilding" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_T24RelocatablePublicSchoolBuilding" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::BuildingModel::SimBuilding_Building * >(argp1);
   res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_int_true_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimBuilding_Building_RelocatablePublicSchoolBuilding" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building::RelocatablePublicSchoolBuilding_optional const &""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimBuilding_Building_T24RelocatablePublicSchoolBuilding" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building::T24RelocatablePublicSchoolBuilding_optional const &""'"); 
   }
   if (!argp2) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "SimBuilding_Building_RelocatablePublicSchoolBuilding" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building::RelocatablePublicSchoolBuilding_optional const &""'"); 
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "SimBuilding_Building_T24RelocatablePublicSchoolBuilding" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building::T24RelocatablePublicSchoolBuilding_optional const &""'"); 
   }
-  arg2 = reinterpret_cast< schema::simxml::BuildingModel::SimBuilding_Building::RelocatablePublicSchoolBuilding_optional * >(argp2);
-  (arg1)->RelocatablePublicSchoolBuilding((schema::simxml::BuildingModel::SimBuilding_Building::RelocatablePublicSchoolBuilding_optional const &)*arg2);
+  arg2 = reinterpret_cast< schema::simxml::BuildingModel::SimBuilding_Building::T24RelocatablePublicSchoolBuilding_optional * >(argp2);
+  (arg1)->T24RelocatablePublicSchoolBuilding((schema::simxml::BuildingModel::SimBuilding_Building::T24RelocatablePublicSchoolBuilding_optional const &)*arg2);
   resultobj = SWIG_Py_Void();
   return resultobj;
 fail:
@@ -14258,7 +15264,7 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_SimBuilding_Building_RelocatablePublicSchoolBuilding(PyObject *self, PyObject *args) {
+SWIGINTERN PyObject *_wrap_SimBuilding_Building_T24RelocatablePublicSchoolBuilding(PyObject *self, PyObject *args) {
   int argc;
   PyObject *argv[3] = {
     0
@@ -14276,7 +15282,7 @@ SWIGINTERN PyObject *_wrap_SimBuilding_Building_RelocatablePublicSchoolBuilding(
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__BuildingModel__SimBuilding_Building, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      return _wrap_SimBuilding_Building_RelocatablePublicSchoolBuilding__SWIG_1(self, args);
+      return _wrap_SimBuilding_Building_T24RelocatablePublicSchoolBuilding__SWIG_1(self, args);
     }
   }
   if (argc == 1) {
@@ -14285,7 +15291,7 @@ SWIGINTERN PyObject *_wrap_SimBuilding_Building_RelocatablePublicSchoolBuilding(
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__BuildingModel__SimBuilding_Building, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      return _wrap_SimBuilding_Building_RelocatablePublicSchoolBuilding__SWIG_0(self, args);
+      return _wrap_SimBuilding_Building_T24RelocatablePublicSchoolBuilding__SWIG_0(self, args);
     }
   }
   if (argc == 2) {
@@ -14297,7 +15303,7 @@ SWIGINTERN PyObject *_wrap_SimBuilding_Building_RelocatablePublicSchoolBuilding(
       int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_int_true_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
-        return _wrap_SimBuilding_Building_RelocatablePublicSchoolBuilding__SWIG_3(self, args);
+        return _wrap_SimBuilding_Building_T24RelocatablePublicSchoolBuilding__SWIG_3(self, args);
       }
     }
   }
@@ -14312,37 +15318,37 @@ SWIGINTERN PyObject *_wrap_SimBuilding_Building_RelocatablePublicSchoolBuilding(
         _v = SWIG_CheckState(res);
       }
       if (_v) {
-        return _wrap_SimBuilding_Building_RelocatablePublicSchoolBuilding__SWIG_2(self, args);
+        return _wrap_SimBuilding_Building_T24RelocatablePublicSchoolBuilding__SWIG_2(self, args);
       }
     }
   }
   
 fail:
-  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'SimBuilding_Building_RelocatablePublicSchoolBuilding'.\n"
+  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'SimBuilding_Building_T24RelocatablePublicSchoolBuilding'.\n"
     "  Possible C/C++ prototypes are:\n"
-    "    schema::simxml::BuildingModel::SimBuilding_Building::RelocatablePublicSchoolBuilding() const\n"
-    "    schema::simxml::BuildingModel::SimBuilding_Building::RelocatablePublicSchoolBuilding()\n"
-    "    schema::simxml::BuildingModel::SimBuilding_Building::RelocatablePublicSchoolBuilding(schema::simxml::BuildingModel::SimBuilding_Building::RelocatablePublicSchoolBuilding_type const &)\n"
-    "    schema::simxml::BuildingModel::SimBuilding_Building::RelocatablePublicSchoolBuilding(schema::simxml::BuildingModel::SimBuilding_Building::RelocatablePublicSchoolBuilding_optional const &)\n");
+    "    schema::simxml::BuildingModel::SimBuilding_Building::T24RelocatablePublicSchoolBuilding() const\n"
+    "    schema::simxml::BuildingModel::SimBuilding_Building::T24RelocatablePublicSchoolBuilding()\n"
+    "    schema::simxml::BuildingModel::SimBuilding_Building::T24RelocatablePublicSchoolBuilding(schema::simxml::BuildingModel::SimBuilding_Building::T24RelocatablePublicSchoolBuilding_type const &)\n"
+    "    schema::simxml::BuildingModel::SimBuilding_Building::T24RelocatablePublicSchoolBuilding(schema::simxml::BuildingModel::SimBuilding_Building::T24RelocatablePublicSchoolBuilding_optional const &)\n");
   return 0;
 }
 
 
-SWIGINTERN PyObject *_wrap_SimBuilding_Building_TotalStoryCountAltered__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_SimBuilding_Building_T24TotalStoryCountAltered__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::BuildingModel::SimBuilding_Building *arg1 = (schema::simxml::BuildingModel::SimBuilding_Building *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
-  schema::simxml::BuildingModel::SimBuilding_Building::TotalStoryCountAltered_optional *result = 0 ;
+  schema::simxml::BuildingModel::SimBuilding_Building::T24TotalStoryCountAltered_optional *result = 0 ;
   
-  if (!PyArg_ParseTuple(args,(char *)"O:SimBuilding_Building_TotalStoryCountAltered",&obj0)) SWIG_fail;
+  if (!PyArg_ParseTuple(args,(char *)"O:SimBuilding_Building_T24TotalStoryCountAltered",&obj0)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_schema__simxml__BuildingModel__SimBuilding_Building, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_TotalStoryCountAltered" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building const *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_T24TotalStoryCountAltered" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building const *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::BuildingModel::SimBuilding_Building * >(argp1);
-  result = (schema::simxml::BuildingModel::SimBuilding_Building::TotalStoryCountAltered_optional *) &((schema::simxml::BuildingModel::SimBuilding_Building const *)arg1)->TotalStoryCountAltered();
+  result = (schema::simxml::BuildingModel::SimBuilding_Building::T24TotalStoryCountAltered_optional *) &((schema::simxml::BuildingModel::SimBuilding_Building const *)arg1)->T24TotalStoryCountAltered();
   resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_int_true_t, 0 |  0 );
   return resultobj;
 fail:
@@ -14350,21 +15356,21 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_SimBuilding_Building_TotalStoryCountAltered__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_SimBuilding_Building_T24TotalStoryCountAltered__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::BuildingModel::SimBuilding_Building *arg1 = (schema::simxml::BuildingModel::SimBuilding_Building *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
-  schema::simxml::BuildingModel::SimBuilding_Building::TotalStoryCountAltered_optional *result = 0 ;
+  schema::simxml::BuildingModel::SimBuilding_Building::T24TotalStoryCountAltered_optional *result = 0 ;
   
-  if (!PyArg_ParseTuple(args,(char *)"O:SimBuilding_Building_TotalStoryCountAltered",&obj0)) SWIG_fail;
+  if (!PyArg_ParseTuple(args,(char *)"O:SimBuilding_Building_T24TotalStoryCountAltered",&obj0)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_schema__simxml__BuildingModel__SimBuilding_Building, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_TotalStoryCountAltered" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_T24TotalStoryCountAltered" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::BuildingModel::SimBuilding_Building * >(argp1);
-  result = (schema::simxml::BuildingModel::SimBuilding_Building::TotalStoryCountAltered_optional *) &(arg1)->TotalStoryCountAltered();
+  result = (schema::simxml::BuildingModel::SimBuilding_Building::T24TotalStoryCountAltered_optional *) &(arg1)->T24TotalStoryCountAltered();
   resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_int_true_t, 0 |  0 );
   return resultobj;
 fail:
@@ -14372,31 +15378,31 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_SimBuilding_Building_TotalStoryCountAltered__SWIG_2(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_SimBuilding_Building_T24TotalStoryCountAltered__SWIG_2(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::BuildingModel::SimBuilding_Building *arg1 = (schema::simxml::BuildingModel::SimBuilding_Building *) 0 ;
-  schema::simxml::BuildingModel::SimBuilding_Building::TotalStoryCountAltered_type *arg2 = 0 ;
+  schema::simxml::BuildingModel::SimBuilding_Building::T24TotalStoryCountAltered_type *arg2 = 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  schema::simxml::BuildingModel::SimBuilding_Building::TotalStoryCountAltered_type temp2 ;
+  schema::simxml::BuildingModel::SimBuilding_Building::T24TotalStoryCountAltered_type temp2 ;
   int val2 ;
   int ecode2 = 0 ;
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
   
-  if (!PyArg_ParseTuple(args,(char *)"OO:SimBuilding_Building_TotalStoryCountAltered",&obj0,&obj1)) SWIG_fail;
+  if (!PyArg_ParseTuple(args,(char *)"OO:SimBuilding_Building_T24TotalStoryCountAltered",&obj0,&obj1)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_schema__simxml__BuildingModel__SimBuilding_Building, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_TotalStoryCountAltered" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_T24TotalStoryCountAltered" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::BuildingModel::SimBuilding_Building * >(argp1);
   ecode2 = SWIG_AsVal_int(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "SimBuilding_Building_TotalStoryCountAltered" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building::TotalStoryCountAltered_type""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "SimBuilding_Building_T24TotalStoryCountAltered" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building::T24TotalStoryCountAltered_type""'");
   } 
-  temp2 = static_cast< schema::simxml::BuildingModel::SimBuilding_Building::TotalStoryCountAltered_type >(val2);
+  temp2 = static_cast< schema::simxml::BuildingModel::SimBuilding_Building::T24TotalStoryCountAltered_type >(val2);
   arg2 = &temp2;
-  (arg1)->TotalStoryCountAltered((schema::simxml::BuildingModel::SimBuilding_Building::TotalStoryCountAltered_type const &)*arg2);
+  (arg1)->T24TotalStoryCountAltered((schema::simxml::BuildingModel::SimBuilding_Building::T24TotalStoryCountAltered_type const &)*arg2);
   resultobj = SWIG_Py_Void();
   return resultobj;
 fail:
@@ -14404,10 +15410,10 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_SimBuilding_Building_TotalStoryCountAltered__SWIG_3(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_SimBuilding_Building_T24TotalStoryCountAltered__SWIG_3(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::BuildingModel::SimBuilding_Building *arg1 = (schema::simxml::BuildingModel::SimBuilding_Building *) 0 ;
-  schema::simxml::BuildingModel::SimBuilding_Building::TotalStoryCountAltered_optional *arg2 = 0 ;
+  schema::simxml::BuildingModel::SimBuilding_Building::T24TotalStoryCountAltered_optional *arg2 = 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 = 0 ;
@@ -14415,21 +15421,21 @@ SWIGINTERN PyObject *_wrap_SimBuilding_Building_TotalStoryCountAltered__SWIG_3(P
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
   
-  if (!PyArg_ParseTuple(args,(char *)"OO:SimBuilding_Building_TotalStoryCountAltered",&obj0,&obj1)) SWIG_fail;
+  if (!PyArg_ParseTuple(args,(char *)"OO:SimBuilding_Building_T24TotalStoryCountAltered",&obj0,&obj1)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_schema__simxml__BuildingModel__SimBuilding_Building, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_TotalStoryCountAltered" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_T24TotalStoryCountAltered" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::BuildingModel::SimBuilding_Building * >(argp1);
   res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_int_true_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimBuilding_Building_TotalStoryCountAltered" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building::TotalStoryCountAltered_optional const &""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimBuilding_Building_T24TotalStoryCountAltered" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building::T24TotalStoryCountAltered_optional const &""'"); 
   }
   if (!argp2) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "SimBuilding_Building_TotalStoryCountAltered" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building::TotalStoryCountAltered_optional const &""'"); 
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "SimBuilding_Building_T24TotalStoryCountAltered" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building::T24TotalStoryCountAltered_optional const &""'"); 
   }
-  arg2 = reinterpret_cast< schema::simxml::BuildingModel::SimBuilding_Building::TotalStoryCountAltered_optional * >(argp2);
-  (arg1)->TotalStoryCountAltered((schema::simxml::BuildingModel::SimBuilding_Building::TotalStoryCountAltered_optional const &)*arg2);
+  arg2 = reinterpret_cast< schema::simxml::BuildingModel::SimBuilding_Building::T24TotalStoryCountAltered_optional * >(argp2);
+  (arg1)->T24TotalStoryCountAltered((schema::simxml::BuildingModel::SimBuilding_Building::T24TotalStoryCountAltered_optional const &)*arg2);
   resultobj = SWIG_Py_Void();
   return resultobj;
 fail:
@@ -14437,7 +15443,7 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_SimBuilding_Building_TotalStoryCountAltered(PyObject *self, PyObject *args) {
+SWIGINTERN PyObject *_wrap_SimBuilding_Building_T24TotalStoryCountAltered(PyObject *self, PyObject *args) {
   int argc;
   PyObject *argv[3] = {
     0
@@ -14455,7 +15461,7 @@ SWIGINTERN PyObject *_wrap_SimBuilding_Building_TotalStoryCountAltered(PyObject 
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__BuildingModel__SimBuilding_Building, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      return _wrap_SimBuilding_Building_TotalStoryCountAltered__SWIG_1(self, args);
+      return _wrap_SimBuilding_Building_T24TotalStoryCountAltered__SWIG_1(self, args);
     }
   }
   if (argc == 1) {
@@ -14464,7 +15470,7 @@ SWIGINTERN PyObject *_wrap_SimBuilding_Building_TotalStoryCountAltered(PyObject 
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__BuildingModel__SimBuilding_Building, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      return _wrap_SimBuilding_Building_TotalStoryCountAltered__SWIG_0(self, args);
+      return _wrap_SimBuilding_Building_T24TotalStoryCountAltered__SWIG_0(self, args);
     }
   }
   if (argc == 2) {
@@ -14476,7 +15482,7 @@ SWIGINTERN PyObject *_wrap_SimBuilding_Building_TotalStoryCountAltered(PyObject 
       int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_int_true_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
-        return _wrap_SimBuilding_Building_TotalStoryCountAltered__SWIG_3(self, args);
+        return _wrap_SimBuilding_Building_T24TotalStoryCountAltered__SWIG_3(self, args);
       }
     }
   }
@@ -14491,37 +15497,37 @@ SWIGINTERN PyObject *_wrap_SimBuilding_Building_TotalStoryCountAltered(PyObject 
         _v = SWIG_CheckState(res);
       }
       if (_v) {
-        return _wrap_SimBuilding_Building_TotalStoryCountAltered__SWIG_2(self, args);
+        return _wrap_SimBuilding_Building_T24TotalStoryCountAltered__SWIG_2(self, args);
       }
     }
   }
   
 fail:
-  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'SimBuilding_Building_TotalStoryCountAltered'.\n"
+  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'SimBuilding_Building_T24TotalStoryCountAltered'.\n"
     "  Possible C/C++ prototypes are:\n"
-    "    schema::simxml::BuildingModel::SimBuilding_Building::TotalStoryCountAltered() const\n"
-    "    schema::simxml::BuildingModel::SimBuilding_Building::TotalStoryCountAltered()\n"
-    "    schema::simxml::BuildingModel::SimBuilding_Building::TotalStoryCountAltered(schema::simxml::BuildingModel::SimBuilding_Building::TotalStoryCountAltered_type const &)\n"
-    "    schema::simxml::BuildingModel::SimBuilding_Building::TotalStoryCountAltered(schema::simxml::BuildingModel::SimBuilding_Building::TotalStoryCountAltered_optional const &)\n");
+    "    schema::simxml::BuildingModel::SimBuilding_Building::T24TotalStoryCountAltered() const\n"
+    "    schema::simxml::BuildingModel::SimBuilding_Building::T24TotalStoryCountAltered()\n"
+    "    schema::simxml::BuildingModel::SimBuilding_Building::T24TotalStoryCountAltered(schema::simxml::BuildingModel::SimBuilding_Building::T24TotalStoryCountAltered_type const &)\n"
+    "    schema::simxml::BuildingModel::SimBuilding_Building::T24TotalStoryCountAltered(schema::simxml::BuildingModel::SimBuilding_Building::T24TotalStoryCountAltered_optional const &)\n");
   return 0;
 }
 
 
-SWIGINTERN PyObject *_wrap_SimBuilding_Building_TotalStoryCountExisting__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_SimBuilding_Building_T24TotalStoryCountExisting__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::BuildingModel::SimBuilding_Building *arg1 = (schema::simxml::BuildingModel::SimBuilding_Building *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
-  schema::simxml::BuildingModel::SimBuilding_Building::TotalStoryCountExisting_optional *result = 0 ;
+  schema::simxml::BuildingModel::SimBuilding_Building::T24TotalStoryCountExisting_optional *result = 0 ;
   
-  if (!PyArg_ParseTuple(args,(char *)"O:SimBuilding_Building_TotalStoryCountExisting",&obj0)) SWIG_fail;
+  if (!PyArg_ParseTuple(args,(char *)"O:SimBuilding_Building_T24TotalStoryCountExisting",&obj0)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_schema__simxml__BuildingModel__SimBuilding_Building, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_TotalStoryCountExisting" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building const *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_T24TotalStoryCountExisting" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building const *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::BuildingModel::SimBuilding_Building * >(argp1);
-  result = (schema::simxml::BuildingModel::SimBuilding_Building::TotalStoryCountExisting_optional *) &((schema::simxml::BuildingModel::SimBuilding_Building const *)arg1)->TotalStoryCountExisting();
+  result = (schema::simxml::BuildingModel::SimBuilding_Building::T24TotalStoryCountExisting_optional *) &((schema::simxml::BuildingModel::SimBuilding_Building const *)arg1)->T24TotalStoryCountExisting();
   resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_int_true_t, 0 |  0 );
   return resultobj;
 fail:
@@ -14529,21 +15535,21 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_SimBuilding_Building_TotalStoryCountExisting__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_SimBuilding_Building_T24TotalStoryCountExisting__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::BuildingModel::SimBuilding_Building *arg1 = (schema::simxml::BuildingModel::SimBuilding_Building *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
-  schema::simxml::BuildingModel::SimBuilding_Building::TotalStoryCountExisting_optional *result = 0 ;
+  schema::simxml::BuildingModel::SimBuilding_Building::T24TotalStoryCountExisting_optional *result = 0 ;
   
-  if (!PyArg_ParseTuple(args,(char *)"O:SimBuilding_Building_TotalStoryCountExisting",&obj0)) SWIG_fail;
+  if (!PyArg_ParseTuple(args,(char *)"O:SimBuilding_Building_T24TotalStoryCountExisting",&obj0)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_schema__simxml__BuildingModel__SimBuilding_Building, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_TotalStoryCountExisting" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_T24TotalStoryCountExisting" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::BuildingModel::SimBuilding_Building * >(argp1);
-  result = (schema::simxml::BuildingModel::SimBuilding_Building::TotalStoryCountExisting_optional *) &(arg1)->TotalStoryCountExisting();
+  result = (schema::simxml::BuildingModel::SimBuilding_Building::T24TotalStoryCountExisting_optional *) &(arg1)->T24TotalStoryCountExisting();
   resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_int_true_t, 0 |  0 );
   return resultobj;
 fail:
@@ -14551,31 +15557,31 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_SimBuilding_Building_TotalStoryCountExisting__SWIG_2(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_SimBuilding_Building_T24TotalStoryCountExisting__SWIG_2(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::BuildingModel::SimBuilding_Building *arg1 = (schema::simxml::BuildingModel::SimBuilding_Building *) 0 ;
-  schema::simxml::BuildingModel::SimBuilding_Building::TotalStoryCountExisting_type *arg2 = 0 ;
+  schema::simxml::BuildingModel::SimBuilding_Building::T24TotalStoryCountExisting_type *arg2 = 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  schema::simxml::BuildingModel::SimBuilding_Building::TotalStoryCountExisting_type temp2 ;
+  schema::simxml::BuildingModel::SimBuilding_Building::T24TotalStoryCountExisting_type temp2 ;
   int val2 ;
   int ecode2 = 0 ;
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
   
-  if (!PyArg_ParseTuple(args,(char *)"OO:SimBuilding_Building_TotalStoryCountExisting",&obj0,&obj1)) SWIG_fail;
+  if (!PyArg_ParseTuple(args,(char *)"OO:SimBuilding_Building_T24TotalStoryCountExisting",&obj0,&obj1)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_schema__simxml__BuildingModel__SimBuilding_Building, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_TotalStoryCountExisting" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_T24TotalStoryCountExisting" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::BuildingModel::SimBuilding_Building * >(argp1);
   ecode2 = SWIG_AsVal_int(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "SimBuilding_Building_TotalStoryCountExisting" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building::TotalStoryCountExisting_type""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "SimBuilding_Building_T24TotalStoryCountExisting" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building::T24TotalStoryCountExisting_type""'");
   } 
-  temp2 = static_cast< schema::simxml::BuildingModel::SimBuilding_Building::TotalStoryCountExisting_type >(val2);
+  temp2 = static_cast< schema::simxml::BuildingModel::SimBuilding_Building::T24TotalStoryCountExisting_type >(val2);
   arg2 = &temp2;
-  (arg1)->TotalStoryCountExisting((schema::simxml::BuildingModel::SimBuilding_Building::TotalStoryCountExisting_type const &)*arg2);
+  (arg1)->T24TotalStoryCountExisting((schema::simxml::BuildingModel::SimBuilding_Building::T24TotalStoryCountExisting_type const &)*arg2);
   resultobj = SWIG_Py_Void();
   return resultobj;
 fail:
@@ -14583,10 +15589,10 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_SimBuilding_Building_TotalStoryCountExisting__SWIG_3(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_SimBuilding_Building_T24TotalStoryCountExisting__SWIG_3(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::BuildingModel::SimBuilding_Building *arg1 = (schema::simxml::BuildingModel::SimBuilding_Building *) 0 ;
-  schema::simxml::BuildingModel::SimBuilding_Building::TotalStoryCountExisting_optional *arg2 = 0 ;
+  schema::simxml::BuildingModel::SimBuilding_Building::T24TotalStoryCountExisting_optional *arg2 = 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 = 0 ;
@@ -14594,21 +15600,21 @@ SWIGINTERN PyObject *_wrap_SimBuilding_Building_TotalStoryCountExisting__SWIG_3(
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
   
-  if (!PyArg_ParseTuple(args,(char *)"OO:SimBuilding_Building_TotalStoryCountExisting",&obj0,&obj1)) SWIG_fail;
+  if (!PyArg_ParseTuple(args,(char *)"OO:SimBuilding_Building_T24TotalStoryCountExisting",&obj0,&obj1)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_schema__simxml__BuildingModel__SimBuilding_Building, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_TotalStoryCountExisting" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_T24TotalStoryCountExisting" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::BuildingModel::SimBuilding_Building * >(argp1);
   res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_int_true_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimBuilding_Building_TotalStoryCountExisting" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building::TotalStoryCountExisting_optional const &""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimBuilding_Building_T24TotalStoryCountExisting" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building::T24TotalStoryCountExisting_optional const &""'"); 
   }
   if (!argp2) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "SimBuilding_Building_TotalStoryCountExisting" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building::TotalStoryCountExisting_optional const &""'"); 
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "SimBuilding_Building_T24TotalStoryCountExisting" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building::T24TotalStoryCountExisting_optional const &""'"); 
   }
-  arg2 = reinterpret_cast< schema::simxml::BuildingModel::SimBuilding_Building::TotalStoryCountExisting_optional * >(argp2);
-  (arg1)->TotalStoryCountExisting((schema::simxml::BuildingModel::SimBuilding_Building::TotalStoryCountExisting_optional const &)*arg2);
+  arg2 = reinterpret_cast< schema::simxml::BuildingModel::SimBuilding_Building::T24TotalStoryCountExisting_optional * >(argp2);
+  (arg1)->T24TotalStoryCountExisting((schema::simxml::BuildingModel::SimBuilding_Building::T24TotalStoryCountExisting_optional const &)*arg2);
   resultobj = SWIG_Py_Void();
   return resultobj;
 fail:
@@ -14616,7 +15622,7 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_SimBuilding_Building_TotalStoryCountExisting(PyObject *self, PyObject *args) {
+SWIGINTERN PyObject *_wrap_SimBuilding_Building_T24TotalStoryCountExisting(PyObject *self, PyObject *args) {
   int argc;
   PyObject *argv[3] = {
     0
@@ -14634,7 +15640,7 @@ SWIGINTERN PyObject *_wrap_SimBuilding_Building_TotalStoryCountExisting(PyObject
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__BuildingModel__SimBuilding_Building, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      return _wrap_SimBuilding_Building_TotalStoryCountExisting__SWIG_1(self, args);
+      return _wrap_SimBuilding_Building_T24TotalStoryCountExisting__SWIG_1(self, args);
     }
   }
   if (argc == 1) {
@@ -14643,7 +15649,7 @@ SWIGINTERN PyObject *_wrap_SimBuilding_Building_TotalStoryCountExisting(PyObject
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__BuildingModel__SimBuilding_Building, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      return _wrap_SimBuilding_Building_TotalStoryCountExisting__SWIG_0(self, args);
+      return _wrap_SimBuilding_Building_T24TotalStoryCountExisting__SWIG_0(self, args);
     }
   }
   if (argc == 2) {
@@ -14655,7 +15661,7 @@ SWIGINTERN PyObject *_wrap_SimBuilding_Building_TotalStoryCountExisting(PyObject
       int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_int_true_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
-        return _wrap_SimBuilding_Building_TotalStoryCountExisting__SWIG_3(self, args);
+        return _wrap_SimBuilding_Building_T24TotalStoryCountExisting__SWIG_3(self, args);
       }
     }
   }
@@ -14670,37 +15676,37 @@ SWIGINTERN PyObject *_wrap_SimBuilding_Building_TotalStoryCountExisting(PyObject
         _v = SWIG_CheckState(res);
       }
       if (_v) {
-        return _wrap_SimBuilding_Building_TotalStoryCountExisting__SWIG_2(self, args);
+        return _wrap_SimBuilding_Building_T24TotalStoryCountExisting__SWIG_2(self, args);
       }
     }
   }
   
 fail:
-  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'SimBuilding_Building_TotalStoryCountExisting'.\n"
+  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'SimBuilding_Building_T24TotalStoryCountExisting'.\n"
     "  Possible C/C++ prototypes are:\n"
-    "    schema::simxml::BuildingModel::SimBuilding_Building::TotalStoryCountExisting() const\n"
-    "    schema::simxml::BuildingModel::SimBuilding_Building::TotalStoryCountExisting()\n"
-    "    schema::simxml::BuildingModel::SimBuilding_Building::TotalStoryCountExisting(schema::simxml::BuildingModel::SimBuilding_Building::TotalStoryCountExisting_type const &)\n"
-    "    schema::simxml::BuildingModel::SimBuilding_Building::TotalStoryCountExisting(schema::simxml::BuildingModel::SimBuilding_Building::TotalStoryCountExisting_optional const &)\n");
+    "    schema::simxml::BuildingModel::SimBuilding_Building::T24TotalStoryCountExisting() const\n"
+    "    schema::simxml::BuildingModel::SimBuilding_Building::T24TotalStoryCountExisting()\n"
+    "    schema::simxml::BuildingModel::SimBuilding_Building::T24TotalStoryCountExisting(schema::simxml::BuildingModel::SimBuilding_Building::T24TotalStoryCountExisting_type const &)\n"
+    "    schema::simxml::BuildingModel::SimBuilding_Building::T24TotalStoryCountExisting(schema::simxml::BuildingModel::SimBuilding_Building::T24TotalStoryCountExisting_optional const &)\n");
   return 0;
 }
 
 
-SWIGINTERN PyObject *_wrap_SimBuilding_Building_TotalStoryCountNew__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_SimBuilding_Building_T24TotalStoryCountNew__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::BuildingModel::SimBuilding_Building *arg1 = (schema::simxml::BuildingModel::SimBuilding_Building *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
-  schema::simxml::BuildingModel::SimBuilding_Building::TotalStoryCountNew_optional *result = 0 ;
+  schema::simxml::BuildingModel::SimBuilding_Building::T24TotalStoryCountNew_optional *result = 0 ;
   
-  if (!PyArg_ParseTuple(args,(char *)"O:SimBuilding_Building_TotalStoryCountNew",&obj0)) SWIG_fail;
+  if (!PyArg_ParseTuple(args,(char *)"O:SimBuilding_Building_T24TotalStoryCountNew",&obj0)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_schema__simxml__BuildingModel__SimBuilding_Building, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_TotalStoryCountNew" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building const *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_T24TotalStoryCountNew" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building const *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::BuildingModel::SimBuilding_Building * >(argp1);
-  result = (schema::simxml::BuildingModel::SimBuilding_Building::TotalStoryCountNew_optional *) &((schema::simxml::BuildingModel::SimBuilding_Building const *)arg1)->TotalStoryCountNew();
+  result = (schema::simxml::BuildingModel::SimBuilding_Building::T24TotalStoryCountNew_optional *) &((schema::simxml::BuildingModel::SimBuilding_Building const *)arg1)->T24TotalStoryCountNew();
   resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_int_true_t, 0 |  0 );
   return resultobj;
 fail:
@@ -14708,21 +15714,21 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_SimBuilding_Building_TotalStoryCountNew__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_SimBuilding_Building_T24TotalStoryCountNew__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::BuildingModel::SimBuilding_Building *arg1 = (schema::simxml::BuildingModel::SimBuilding_Building *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
-  schema::simxml::BuildingModel::SimBuilding_Building::TotalStoryCountNew_optional *result = 0 ;
+  schema::simxml::BuildingModel::SimBuilding_Building::T24TotalStoryCountNew_optional *result = 0 ;
   
-  if (!PyArg_ParseTuple(args,(char *)"O:SimBuilding_Building_TotalStoryCountNew",&obj0)) SWIG_fail;
+  if (!PyArg_ParseTuple(args,(char *)"O:SimBuilding_Building_T24TotalStoryCountNew",&obj0)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_schema__simxml__BuildingModel__SimBuilding_Building, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_TotalStoryCountNew" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_T24TotalStoryCountNew" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::BuildingModel::SimBuilding_Building * >(argp1);
-  result = (schema::simxml::BuildingModel::SimBuilding_Building::TotalStoryCountNew_optional *) &(arg1)->TotalStoryCountNew();
+  result = (schema::simxml::BuildingModel::SimBuilding_Building::T24TotalStoryCountNew_optional *) &(arg1)->T24TotalStoryCountNew();
   resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_int_true_t, 0 |  0 );
   return resultobj;
 fail:
@@ -14730,31 +15736,31 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_SimBuilding_Building_TotalStoryCountNew__SWIG_2(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_SimBuilding_Building_T24TotalStoryCountNew__SWIG_2(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::BuildingModel::SimBuilding_Building *arg1 = (schema::simxml::BuildingModel::SimBuilding_Building *) 0 ;
-  schema::simxml::BuildingModel::SimBuilding_Building::TotalStoryCountNew_type *arg2 = 0 ;
+  schema::simxml::BuildingModel::SimBuilding_Building::T24TotalStoryCountNew_type *arg2 = 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  schema::simxml::BuildingModel::SimBuilding_Building::TotalStoryCountNew_type temp2 ;
+  schema::simxml::BuildingModel::SimBuilding_Building::T24TotalStoryCountNew_type temp2 ;
   int val2 ;
   int ecode2 = 0 ;
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
   
-  if (!PyArg_ParseTuple(args,(char *)"OO:SimBuilding_Building_TotalStoryCountNew",&obj0,&obj1)) SWIG_fail;
+  if (!PyArg_ParseTuple(args,(char *)"OO:SimBuilding_Building_T24TotalStoryCountNew",&obj0,&obj1)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_schema__simxml__BuildingModel__SimBuilding_Building, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_TotalStoryCountNew" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_T24TotalStoryCountNew" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::BuildingModel::SimBuilding_Building * >(argp1);
   ecode2 = SWIG_AsVal_int(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "SimBuilding_Building_TotalStoryCountNew" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building::TotalStoryCountNew_type""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "SimBuilding_Building_T24TotalStoryCountNew" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building::T24TotalStoryCountNew_type""'");
   } 
-  temp2 = static_cast< schema::simxml::BuildingModel::SimBuilding_Building::TotalStoryCountNew_type >(val2);
+  temp2 = static_cast< schema::simxml::BuildingModel::SimBuilding_Building::T24TotalStoryCountNew_type >(val2);
   arg2 = &temp2;
-  (arg1)->TotalStoryCountNew((schema::simxml::BuildingModel::SimBuilding_Building::TotalStoryCountNew_type const &)*arg2);
+  (arg1)->T24TotalStoryCountNew((schema::simxml::BuildingModel::SimBuilding_Building::T24TotalStoryCountNew_type const &)*arg2);
   resultobj = SWIG_Py_Void();
   return resultobj;
 fail:
@@ -14762,10 +15768,10 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_SimBuilding_Building_TotalStoryCountNew__SWIG_3(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_SimBuilding_Building_T24TotalStoryCountNew__SWIG_3(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   schema::simxml::BuildingModel::SimBuilding_Building *arg1 = (schema::simxml::BuildingModel::SimBuilding_Building *) 0 ;
-  schema::simxml::BuildingModel::SimBuilding_Building::TotalStoryCountNew_optional *arg2 = 0 ;
+  schema::simxml::BuildingModel::SimBuilding_Building::T24TotalStoryCountNew_optional *arg2 = 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 = 0 ;
@@ -14773,21 +15779,21 @@ SWIGINTERN PyObject *_wrap_SimBuilding_Building_TotalStoryCountNew__SWIG_3(PyObj
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
   
-  if (!PyArg_ParseTuple(args,(char *)"OO:SimBuilding_Building_TotalStoryCountNew",&obj0,&obj1)) SWIG_fail;
+  if (!PyArg_ParseTuple(args,(char *)"OO:SimBuilding_Building_T24TotalStoryCountNew",&obj0,&obj1)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_schema__simxml__BuildingModel__SimBuilding_Building, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_TotalStoryCountNew" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimBuilding_Building_T24TotalStoryCountNew" "', argument " "1"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::BuildingModel::SimBuilding_Building * >(argp1);
   res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_int_true_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimBuilding_Building_TotalStoryCountNew" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building::TotalStoryCountNew_optional const &""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimBuilding_Building_T24TotalStoryCountNew" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building::T24TotalStoryCountNew_optional const &""'"); 
   }
   if (!argp2) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "SimBuilding_Building_TotalStoryCountNew" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building::TotalStoryCountNew_optional const &""'"); 
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "SimBuilding_Building_T24TotalStoryCountNew" "', argument " "2"" of type '" "schema::simxml::BuildingModel::SimBuilding_Building::T24TotalStoryCountNew_optional const &""'"); 
   }
-  arg2 = reinterpret_cast< schema::simxml::BuildingModel::SimBuilding_Building::TotalStoryCountNew_optional * >(argp2);
-  (arg1)->TotalStoryCountNew((schema::simxml::BuildingModel::SimBuilding_Building::TotalStoryCountNew_optional const &)*arg2);
+  arg2 = reinterpret_cast< schema::simxml::BuildingModel::SimBuilding_Building::T24TotalStoryCountNew_optional * >(argp2);
+  (arg1)->T24TotalStoryCountNew((schema::simxml::BuildingModel::SimBuilding_Building::T24TotalStoryCountNew_optional const &)*arg2);
   resultobj = SWIG_Py_Void();
   return resultobj;
 fail:
@@ -14795,7 +15801,7 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_SimBuilding_Building_TotalStoryCountNew(PyObject *self, PyObject *args) {
+SWIGINTERN PyObject *_wrap_SimBuilding_Building_T24TotalStoryCountNew(PyObject *self, PyObject *args) {
   int argc;
   PyObject *argv[3] = {
     0
@@ -14813,7 +15819,7 @@ SWIGINTERN PyObject *_wrap_SimBuilding_Building_TotalStoryCountNew(PyObject *sel
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__BuildingModel__SimBuilding_Building, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      return _wrap_SimBuilding_Building_TotalStoryCountNew__SWIG_1(self, args);
+      return _wrap_SimBuilding_Building_T24TotalStoryCountNew__SWIG_1(self, args);
     }
   }
   if (argc == 1) {
@@ -14822,7 +15828,7 @@ SWIGINTERN PyObject *_wrap_SimBuilding_Building_TotalStoryCountNew(PyObject *sel
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__BuildingModel__SimBuilding_Building, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      return _wrap_SimBuilding_Building_TotalStoryCountNew__SWIG_0(self, args);
+      return _wrap_SimBuilding_Building_T24TotalStoryCountNew__SWIG_0(self, args);
     }
   }
   if (argc == 2) {
@@ -14834,7 +15840,7 @@ SWIGINTERN PyObject *_wrap_SimBuilding_Building_TotalStoryCountNew(PyObject *sel
       int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_int_true_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
-        return _wrap_SimBuilding_Building_TotalStoryCountNew__SWIG_3(self, args);
+        return _wrap_SimBuilding_Building_T24TotalStoryCountNew__SWIG_3(self, args);
       }
     }
   }
@@ -14849,18 +15855,18 @@ SWIGINTERN PyObject *_wrap_SimBuilding_Building_TotalStoryCountNew(PyObject *sel
         _v = SWIG_CheckState(res);
       }
       if (_v) {
-        return _wrap_SimBuilding_Building_TotalStoryCountNew__SWIG_2(self, args);
+        return _wrap_SimBuilding_Building_T24TotalStoryCountNew__SWIG_2(self, args);
       }
     }
   }
   
 fail:
-  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'SimBuilding_Building_TotalStoryCountNew'.\n"
+  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'SimBuilding_Building_T24TotalStoryCountNew'.\n"
     "  Possible C/C++ prototypes are:\n"
-    "    schema::simxml::BuildingModel::SimBuilding_Building::TotalStoryCountNew() const\n"
-    "    schema::simxml::BuildingModel::SimBuilding_Building::TotalStoryCountNew()\n"
-    "    schema::simxml::BuildingModel::SimBuilding_Building::TotalStoryCountNew(schema::simxml::BuildingModel::SimBuilding_Building::TotalStoryCountNew_type const &)\n"
-    "    schema::simxml::BuildingModel::SimBuilding_Building::TotalStoryCountNew(schema::simxml::BuildingModel::SimBuilding_Building::TotalStoryCountNew_optional const &)\n");
+    "    schema::simxml::BuildingModel::SimBuilding_Building::T24TotalStoryCountNew() const\n"
+    "    schema::simxml::BuildingModel::SimBuilding_Building::T24TotalStoryCountNew()\n"
+    "    schema::simxml::BuildingModel::SimBuilding_Building::T24TotalStoryCountNew(schema::simxml::BuildingModel::SimBuilding_Building::T24TotalStoryCountNew_type const &)\n"
+    "    schema::simxml::BuildingModel::SimBuilding_Building::T24TotalStoryCountNew(schema::simxml::BuildingModel::SimBuilding_Building::T24TotalStoryCountNew_optional const &)\n");
   return 0;
 }
 
@@ -18035,22 +19041,22 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"SimBuilding_Building_RoofIrrigation_IrrigationModelType", _wrap_SimBuilding_Building_RoofIrrigation_IrrigationModelType, METH_VARARGS, NULL},
 	 { (char *)"SimBuilding_Building_RoofIrrigation_IrrigationRateSchedName", _wrap_SimBuilding_Building_RoofIrrigation_IrrigationRateSchedName, METH_VARARGS, NULL},
 	 { (char *)"SimBuilding_Building_RoofIrrigation_IrrigationMaxSaturatThreshold", _wrap_SimBuilding_Building_RoofIrrigation_IrrigationMaxSaturatThreshold, METH_VARARGS, NULL},
-	 { (char *)"SimBuilding_Building_AboveGradeStoryCountAltered", _wrap_SimBuilding_Building_AboveGradeStoryCountAltered, METH_VARARGS, NULL},
-	 { (char *)"SimBuilding_Building_AboveGradeStoryCountExists", _wrap_SimBuilding_Building_AboveGradeStoryCountExists, METH_VARARGS, NULL},
-	 { (char *)"SimBuilding_Building_AboveGradeStoryCountNew", _wrap_SimBuilding_Building_AboveGradeStoryCountNew, METH_VARARGS, NULL},
+	 { (char *)"SimBuilding_Building_T24AboveGradeStoryCountAltered", _wrap_SimBuilding_Building_T24AboveGradeStoryCountAltered, METH_VARARGS, NULL},
+	 { (char *)"SimBuilding_Building_T24AboveGradeStoryCountExists", _wrap_SimBuilding_Building_T24AboveGradeStoryCountExists, METH_VARARGS, NULL},
+	 { (char *)"SimBuilding_Building_T24AboveGradeStoryCountNew", _wrap_SimBuilding_Building_T24AboveGradeStoryCountNew, METH_VARARGS, NULL},
 	 { (char *)"SimBuilding_Building_T24CoilCoolingCapacity", _wrap_SimBuilding_Building_T24CoilCoolingCapacity, METH_VARARGS, NULL},
 	 { (char *)"SimBuilding_Building_T24CoilHeatingCapacity", _wrap_SimBuilding_Building_T24CoilHeatingCapacity, METH_VARARGS, NULL},
 	 { (char *)"SimBuilding_Building_T24FunctionClassificationMethod", _wrap_SimBuilding_Building_T24FunctionClassificationMethod, METH_VARARGS, NULL},
-	 { (char *)"SimBuilding_Building_HighRiseResidentialLivingUnitCount", _wrap_SimBuilding_Building_HighRiseResidentialLivingUnitCount, METH_VARARGS, NULL},
-	 { (char *)"SimBuilding_Building_LivingUnitCountAltered", _wrap_SimBuilding_Building_LivingUnitCountAltered, METH_VARARGS, NULL},
-	 { (char *)"SimBuilding_Building_LivingUnitCountExisting", _wrap_SimBuilding_Building_LivingUnitCountExisting, METH_VARARGS, NULL},
-	 { (char *)"SimBuilding_Building_LivingUnitCountNew", _wrap_SimBuilding_Building_LivingUnitCountNew, METH_VARARGS, NULL},
+	 { (char *)"SimBuilding_Building_T24HighRiseResidentialLivingUnitCount", _wrap_SimBuilding_Building_T24HighRiseResidentialLivingUnitCount, METH_VARARGS, NULL},
+	 { (char *)"SimBuilding_Building_T24LivingUnitCountAltered", _wrap_SimBuilding_Building_T24LivingUnitCountAltered, METH_VARARGS, NULL},
+	 { (char *)"SimBuilding_Building_T24LivingUnitCountExisting", _wrap_SimBuilding_Building_T24LivingUnitCountExisting, METH_VARARGS, NULL},
+	 { (char *)"SimBuilding_Building_T24LivingUnitCountNew", _wrap_SimBuilding_Building_T24LivingUnitCountNew, METH_VARARGS, NULL},
 	 { (char *)"SimBuilding_Building_T24PlantCoolingCapacity", _wrap_SimBuilding_Building_T24PlantCoolingCapacity, METH_VARARGS, NULL},
 	 { (char *)"SimBuilding_Building_T24PlantHeatingCapacity", _wrap_SimBuilding_Building_T24PlantHeatingCapacity, METH_VARARGS, NULL},
-	 { (char *)"SimBuilding_Building_RelocatablePublicSchoolBuilding", _wrap_SimBuilding_Building_RelocatablePublicSchoolBuilding, METH_VARARGS, NULL},
-	 { (char *)"SimBuilding_Building_TotalStoryCountAltered", _wrap_SimBuilding_Building_TotalStoryCountAltered, METH_VARARGS, NULL},
-	 { (char *)"SimBuilding_Building_TotalStoryCountExisting", _wrap_SimBuilding_Building_TotalStoryCountExisting, METH_VARARGS, NULL},
-	 { (char *)"SimBuilding_Building_TotalStoryCountNew", _wrap_SimBuilding_Building_TotalStoryCountNew, METH_VARARGS, NULL},
+	 { (char *)"SimBuilding_Building_T24RelocatablePublicSchoolBuilding", _wrap_SimBuilding_Building_T24RelocatablePublicSchoolBuilding, METH_VARARGS, NULL},
+	 { (char *)"SimBuilding_Building_T24TotalStoryCountAltered", _wrap_SimBuilding_Building_T24TotalStoryCountAltered, METH_VARARGS, NULL},
+	 { (char *)"SimBuilding_Building_T24TotalStoryCountExisting", _wrap_SimBuilding_Building_T24TotalStoryCountExisting, METH_VARARGS, NULL},
+	 { (char *)"SimBuilding_Building_T24TotalStoryCountNew", _wrap_SimBuilding_Building_T24TotalStoryCountNew, METH_VARARGS, NULL},
 	 { (char *)"new_SimBuilding_Building", _wrap_new_SimBuilding_Building, METH_VARARGS, NULL},
 	 { (char *)"SimBuilding_Building__clone", _wrap_SimBuilding_Building__clone, METH_VARARGS, NULL},
 	 { (char *)"delete_SimBuilding_Building", _wrap_delete_SimBuilding_Building, METH_VARARGS, NULL},
@@ -18131,101 +19137,110 @@ static void *_p_schema__simxml__BuildingModel__SimBuilding_BuildingTo_p_schema__
 static void *_p_schema__simxml__BuildingModel__SimBuilding_Building_DefaultTo_p_schema__simxml__SimModelCore__SimSpatialStructureElement(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((schema::simxml::SimModelCore::SimSpatialStructureElement *) (schema::simxml::BuildingModel::SimBuilding *)(schema::simxml::BuildingModel::SimBuilding_Building *) ((schema::simxml::BuildingModel::SimBuilding_Building_Default *) x));
 }
-static void *_p_schema__simxml__SimModelCore__SimObjectDefinitionTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *) ((schema::simxml::SimModelCore::SimObjectDefinition *) x));
-}
-static void *_p_schema__simxml__SimModelCore__SimRepresentationItemTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimResourceObject *) ((schema::simxml::SimModelCore::SimRepresentationItem *) x));
-}
-static void *_p_schema__simxml__SimModelCore__SimActorDefinitionTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimResourceObject *) ((schema::simxml::SimModelCore::SimActorDefinition *) x));
-}
-static void *_p_schema__simxml__ResourcesGeneral__SimArrayParamsTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimResourceObject *)(schema::simxml::SimModelCore::SimBldgModelParams *) ((schema::simxml::ResourcesGeneral::SimArrayParams *) x));
-}
-static void *_p_schema__simxml__SimModelCore__SimTopologicalRepresentationItemTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimResourceObject *)(schema::simxml::SimModelCore::SimRepresentationItem *) ((schema::simxml::SimModelCore::SimTopologicalRepresentationItem *) x));
-}
-static void *_p_schema__simxml__ResourcesGeneral__SimNodeTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimResourceObject *) ((schema::simxml::ResourcesGeneral::SimNode *) x));
-}
-static void *_p_schema__simxml__SimModelCore__SimTemplateTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimResourceObject *) ((schema::simxml::SimModelCore::SimTemplate *) x));
-}
-static void *_p_schema__simxml__SimModelCore__SimBldgModelParamsTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimResourceObject *) ((schema::simxml::SimModelCore::SimBldgModelParams *) x));
-}
-static void *_p_schema__simxml__SimModelCore__SimGeometricRepresentationItemTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimResourceObject *)(schema::simxml::SimModelCore::SimRepresentationItem *) ((schema::simxml::SimModelCore::SimGeometricRepresentationItem *) x));
-}
-static void *_p_schema__simxml__SimModelCore__SimObjectTypeDefinitionTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimObjectDefinition *) ((schema::simxml::SimModelCore::SimObjectTypeDefinition *) x));
-}
-static void *_p_schema__simxml__SimModelCore__SimAppDefaultTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimResourceObject *) ((schema::simxml::SimModelCore::SimAppDefault *) x));
-}
-static void *_p_schema__simxml__SimModelCore__SimDistributionControlElementTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimObjectDefinition *)(schema::simxml::SimModelCore::SimObject *)(schema::simxml::SimModelCore::SimElement *)(schema::simxml::SimModelCore::SimDistributionElement *) ((schema::simxml::SimModelCore::SimDistributionControlElement *) x));
+static void *_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree__type_t_tTo_p_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > *)  ((xsd::cxx::tree::string< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::type > > *) x));
 }
 static void *_p_schema__simxml__SimModelCore__SimSpatialStructureElementTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimObjectDefinition *)(schema::simxml::SimModelCore::SimObject *) ((schema::simxml::SimModelCore::SimSpatialStructureElement *) x));
 }
-static void *_p_schema__simxml__SimModelCore__SimPropertySetDefinitionTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimResourceObject *) ((schema::simxml::SimModelCore::SimPropertySetDefinition *) x));
-}
-static void *_p_schema__simxml__BuildingModel__SimBuildingTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimObjectDefinition *)(schema::simxml::SimModelCore::SimObject *)(schema::simxml::SimModelCore::SimSpatialStructureElement *) ((schema::simxml::BuildingModel::SimBuilding *) x));
-}
-static void *_p_schema__simxml__ResourcesGeneral__SimPortTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimResourceObject *)(schema::simxml::ResourcesGeneral::SimNode *) ((schema::simxml::ResourcesGeneral::SimPort *) x));
-}
-static void *_p_schema__simxml__SimModelCore__SimDistributionElementTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimObjectDefinition *)(schema::simxml::SimModelCore::SimObject *)(schema::simxml::SimModelCore::SimElement *) ((schema::simxml::SimModelCore::SimDistributionElement *) x));
-}
-static void *_p_schema__simxml__SimModelCore__SimGroupTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimObjectDefinition *)(schema::simxml::SimModelCore::SimObject *) ((schema::simxml::SimModelCore::SimGroup *) x));
-}
-static void *_p_schema__simxml__ResourcesGeneral__SimUnitTypeTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimResourceObject *) ((schema::simxml::ResourcesGeneral::SimUnitType *) x));
-}
-static void *_p_schema__simxml__SimModelCore__SimObjectPlacementTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimResourceObject *) ((schema::simxml::SimModelCore::SimObjectPlacement *) x));
-}
-static void *_p_schema__simxml__SimModelCore__SimResourceObjectTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *) ((schema::simxml::SimModelCore::SimResourceObject *) x));
-}
-static void *_p_schema__simxml__SimModelCore__SimObjectTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimObjectDefinition *) ((schema::simxml::SimModelCore::SimObject *) x));
-}
-static void *_p_schema__simxml__SimModelCore__SimElementTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimObjectDefinition *)(schema::simxml::SimModelCore::SimObject *) ((schema::simxml::SimModelCore::SimElement *) x));
-}
-static void *_p_schema__simxml__SimModelCore__SimFeatureElementTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimResourceObject *) ((schema::simxml::SimModelCore::SimFeatureElement *) x));
-}
-static void *_p_schema__simxml__SimModelCore__SimBuildingElementTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimObjectDefinition *)(schema::simxml::SimModelCore::SimObject *)(schema::simxml::SimModelCore::SimElement *) ((schema::simxml::SimModelCore::SimBuildingElement *) x));
-}
-static void *_p_schema__simxml__SimModelCore__SimDistributionFlowElementTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimObjectDefinition *)(schema::simxml::SimModelCore::SimObject *)(schema::simxml::SimModelCore::SimElement *)(schema::simxml::SimModelCore::SimDistributionElement *) ((schema::simxml::SimModelCore::SimDistributionFlowElement *) x));
-}
-static void *_p_schema__simxml__MepModel__SimFlowEnergyConverterTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimObjectDefinition *)(schema::simxml::SimModelCore::SimObject *)(schema::simxml::SimModelCore::SimElement *)(schema::simxml::SimModelCore::SimDistributionElement *)(schema::simxml::SimModelCore::SimDistributionFlowElement *) ((schema::simxml::MepModel::SimFlowEnergyConverter *) x));
-}
-static void *_p_schema__simxml__BuildingModel__SimBuilding_BuildingTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimObjectDefinition *)(schema::simxml::SimModelCore::SimObject *)(schema::simxml::SimModelCore::SimSpatialStructureElement *)(schema::simxml::BuildingModel::SimBuilding *) ((schema::simxml::BuildingModel::SimBuilding_Building *) x));
-}
-static void *_p_schema__simxml__BuildingModel__SimBuilding_Building_DefaultTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimObjectDefinition *)(schema::simxml::SimModelCore::SimObject *)(schema::simxml::SimModelCore::SimSpatialStructureElement *)(schema::simxml::BuildingModel::SimBuilding *)(schema::simxml::BuildingModel::SimBuilding_Building *) ((schema::simxml::BuildingModel::SimBuilding_Building_Default *) x));
+static void *_p_schema__simxml__SimModelCore__SimDistributionControlElementTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimObjectDefinition *)(schema::simxml::SimModelCore::SimObject *)(schema::simxml::SimModelCore::SimElement *)(schema::simxml::SimModelCore::SimDistributionElement *) ((schema::simxml::SimModelCore::SimDistributionControlElement *) x));
 }
 static void *_p_schema__simxml__ResourcesGeometry__SimProfileDefinitionTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimResourceObject *)(schema::simxml::SimModelCore::SimRepresentationItem *) ((schema::simxml::ResourcesGeometry::SimProfileDefinition *) x));
 }
+static void *_p_schema__simxml__SimModelCore__SimGeometricRepresentationItemTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimResourceObject *)(schema::simxml::SimModelCore::SimRepresentationItem *) ((schema::simxml::SimModelCore::SimGeometricRepresentationItem *) x));
+}
 static void *_p_schema__simxml__SimModelCore__SimRootTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((xsd::cxx::tree::_type *)  ((schema::simxml::SimModelCore::SimRoot *) x));
 }
+static void *_p_schema__simxml__ResourcesGeneral__SimUnitTypeTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimResourceObject *) ((schema::simxml::ResourcesGeneral::SimUnitType *) x));
+}
+static void *_p_schema__simxml__BuildingModel__SimBuildingTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimObjectDefinition *)(schema::simxml::SimModelCore::SimObject *)(schema::simxml::SimModelCore::SimSpatialStructureElement *) ((schema::simxml::BuildingModel::SimBuilding *) x));
+}
+static void *_p_schema__simxml__ResourcesGeneral__SimArrayParamsTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimResourceObject *)(schema::simxml::SimModelCore::SimBldgModelParams *) ((schema::simxml::ResourcesGeneral::SimArrayParams *) x));
+}
+static void *_p_schema__simxml__SimModelCore__SimActorDefinitionTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimResourceObject *) ((schema::simxml::SimModelCore::SimActorDefinition *) x));
+}
+static void *_p_schema__simxml__SimModelCore__SimObjectDefinitionTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *) ((schema::simxml::SimModelCore::SimObjectDefinition *) x));
+}
+static void *_p_schema__simxml__SimModelCore__SimGroupTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimObjectDefinition *)(schema::simxml::SimModelCore::SimObject *) ((schema::simxml::SimModelCore::SimGroup *) x));
+}
+static void *_p_schema__simxml__SimModelCore__SimDistributionElementTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimObjectDefinition *)(schema::simxml::SimModelCore::SimObject *)(schema::simxml::SimModelCore::SimElement *) ((schema::simxml::SimModelCore::SimDistributionElement *) x));
+}
+static void *_p_schema__simxml__SimModelCore__SimObjectTypeDefinitionTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimObjectDefinition *) ((schema::simxml::SimModelCore::SimObjectTypeDefinition *) x));
+}
+static void *_p_schema__simxml__ResourcesGeneral__SimPortTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimResourceObject *)(schema::simxml::ResourcesGeneral::SimNode *) ((schema::simxml::ResourcesGeneral::SimPort *) x));
+}
+static void *_p_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_tTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((xsd::cxx::tree::_type *)  ((xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > *) x));
+}
+static void *_p_schema__simxml__SimModelCore__SimPropertySetDefinitionTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimResourceObject *) ((schema::simxml::SimModelCore::SimPropertySetDefinition *) x));
+}
+static void *_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree__type_t_tTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((xsd::cxx::tree::_type *) (xsd::cxx::tree::simple_type< char,xsd::cxx::tree::type > *) ((xsd::cxx::tree::string< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::type > > *) x));
+}
 static void *_p_schema__simxml__SimModelCore__SimRepresentationTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimResourceObject *) ((schema::simxml::SimModelCore::SimRepresentation *) x));
+}
+static void *_p_schema__simxml__SimModelCore__SimTemplateTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimResourceObject *) ((schema::simxml::SimModelCore::SimTemplate *) x));
+}
+static void *_p_schema__simxml__SimModelCore__SimObjectTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimObjectDefinition *) ((schema::simxml::SimModelCore::SimObject *) x));
+}
+static void *_p_schema__simxml__SimModelCore__SimResourceObjectTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *) ((schema::simxml::SimModelCore::SimResourceObject *) x));
+}
+static void *_p_schema__simxml__BuildingModel__SimBuilding_Building_DefaultTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimObjectDefinition *)(schema::simxml::SimModelCore::SimObject *)(schema::simxml::SimModelCore::SimSpatialStructureElement *)(schema::simxml::BuildingModel::SimBuilding *)(schema::simxml::BuildingModel::SimBuilding_Building *) ((schema::simxml::BuildingModel::SimBuilding_Building_Default *) x));
+}
+static void *_p_schema__simxml__BuildingModel__SimBuilding_BuildingTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimObjectDefinition *)(schema::simxml::SimModelCore::SimObject *)(schema::simxml::SimModelCore::SimSpatialStructureElement *)(schema::simxml::BuildingModel::SimBuilding *) ((schema::simxml::BuildingModel::SimBuilding_Building *) x));
+}
+static void *_p_schema__simxml__ResourcesGeneral__SimNodeTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimResourceObject *) ((schema::simxml::ResourcesGeneral::SimNode *) x));
+}
+static void *_p_schema__simxml__SimModelCore__SimBuildingElementTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimObjectDefinition *)(schema::simxml::SimModelCore::SimObject *)(schema::simxml::SimModelCore::SimElement *) ((schema::simxml::SimModelCore::SimBuildingElement *) x));
+}
+static void *_p_schema__simxml__SimModelCore__SimFeatureElementTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimResourceObject *) ((schema::simxml::SimModelCore::SimFeatureElement *) x));
+}
+static void *_p_schema__simxml__SimModelCore__SimElementTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimObjectDefinition *)(schema::simxml::SimModelCore::SimObject *) ((schema::simxml::SimModelCore::SimElement *) x));
+}
+static void *_p_schema__simxml__SimModelCore__SimAppDefaultTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimResourceObject *) ((schema::simxml::SimModelCore::SimAppDefault *) x));
+}
+static void *_p_schema__simxml__SimModelCore__SimDistributionFlowElementTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimObjectDefinition *)(schema::simxml::SimModelCore::SimObject *)(schema::simxml::SimModelCore::SimElement *)(schema::simxml::SimModelCore::SimDistributionElement *) ((schema::simxml::SimModelCore::SimDistributionFlowElement *) x));
+}
+static void *_p_schema__simxml__SimModelCore__SimTopologicalRepresentationItemTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimResourceObject *)(schema::simxml::SimModelCore::SimRepresentationItem *) ((schema::simxml::SimModelCore::SimTopologicalRepresentationItem *) x));
+}
+static void *_p_schema__simxml__SimModelCore__SimRepresentationItemTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimResourceObject *) ((schema::simxml::SimModelCore::SimRepresentationItem *) x));
+}
+static void *_p_schema__simxml__MepModel__SimFlowEnergyConverterTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimObjectDefinition *)(schema::simxml::SimModelCore::SimObject *)(schema::simxml::SimModelCore::SimElement *)(schema::simxml::SimModelCore::SimDistributionElement *)(schema::simxml::SimModelCore::SimDistributionFlowElement *) ((schema::simxml::MepModel::SimFlowEnergyConverter *) x));
+}
+static void *_p_schema__simxml__SimModelCore__SimBldgModelParamsTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimResourceObject *) ((schema::simxml::SimModelCore::SimBldgModelParams *) x));
+}
+static void *_p_schema__simxml__SimModelCore__SimObjectPlacementTo_p_xsd__cxx__tree___type(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((xsd::cxx::tree::_type *) (schema::simxml::SimModelCore::SimRoot *)(schema::simxml::SimModelCore::SimResourceObject *) ((schema::simxml::SimModelCore::SimObjectPlacement *) x));
 }
 static void *_p_schema__simxml__SimModelCore__SimSpatialStructureElementTo_p_schema__simxml__SimModelCore__SimObjectDefinition(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((schema::simxml::SimModelCore::SimObjectDefinition *) (schema::simxml::SimModelCore::SimObject *) ((schema::simxml::SimModelCore::SimSpatialStructureElement *) x));
@@ -18359,21 +19374,15 @@ static void *_p_schema__simxml__ResourcesGeometry__SimProfileDefinitionTo_p_sche
 static void *_p_schema__simxml__SimModelCore__SimRepresentationTo_p_schema__simxml__SimModelCore__SimRoot(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((schema::simxml::SimModelCore::SimRoot *) (schema::simxml::SimModelCore::SimResourceObject *) ((schema::simxml::SimModelCore::SimRepresentation *) x));
 }
+static void *_p_xsd__cxx__tree__sequenceT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree__type_t_t_false_tTo_p_xsd__cxx__tree__sequence_common(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((xsd::cxx::tree::sequence_common *)  ((xsd::cxx::tree::sequence< xsd::cxx::tree::string< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::type > >,false > *) x));
+}
 static void *_p_xsd__cxx__tree__sequenceT_schema__simxml__BuildingModel__SimBuilding_Building_Default_false_tTo_p_xsd__cxx__tree__sequence_common(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((xsd::cxx::tree::sequence_common *)  ((xsd::cxx::tree::sequence< ::schema::simxml::BuildingModel::SimBuilding_Building_Default,false > *) x));
 }
 static void *_p_schema__simxml__BuildingModel__SimBuilding_Building_DefaultTo_p_schema__simxml__BuildingModel__SimBuilding_Building(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((schema::simxml::BuildingModel::SimBuilding_Building *)  ((schema::simxml::BuildingModel::SimBuilding_Building_Default *) x));
 }
-static swig_type_info _swigt__p_AboveGradeStoryCountAltered_optional = {"_p_AboveGradeStoryCountAltered_optional", "AboveGradeStoryCountAltered_optional *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_AboveGradeStoryCountAltered_traits = {"_p_AboveGradeStoryCountAltered_traits", "AboveGradeStoryCountAltered_traits *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_AboveGradeStoryCountAltered_type = {"_p_AboveGradeStoryCountAltered_type", "AboveGradeStoryCountAltered_type *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_AboveGradeStoryCountExists_optional = {"_p_AboveGradeStoryCountExists_optional", "AboveGradeStoryCountExists_optional *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_AboveGradeStoryCountExists_traits = {"_p_AboveGradeStoryCountExists_traits", "AboveGradeStoryCountExists_traits *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_AboveGradeStoryCountExists_type = {"_p_AboveGradeStoryCountExists_type", "AboveGradeStoryCountExists_type *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_AboveGradeStoryCountNew_optional = {"_p_AboveGradeStoryCountNew_optional", "AboveGradeStoryCountNew_optional *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_AboveGradeStoryCountNew_traits = {"_p_AboveGradeStoryCountNew_traits", "AboveGradeStoryCountNew_traits *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_AboveGradeStoryCountNew_type = {"_p_AboveGradeStoryCountNew_type", "AboveGradeStoryCountNew_type *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_ApplicableOccurrence_optional = {"_p_ApplicableOccurrence_optional", "ApplicableOccurrence_optional *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_ApplicableOccurrence_traits = {"_p_ApplicableOccurrence_traits", "ApplicableOccurrence_traits *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_ApplicableOccurrence_type = {"_p_ApplicableOccurrence_type", "ApplicableOccurrence_type *", 0, 0, (void*)0, 0};
@@ -18458,15 +19467,6 @@ static swig_type_info _swigt__p_DecimalPrecision_type = {"_p_DecimalPrecision_ty
 static swig_type_info _swigt__p_Decomposes_optional = {"_p_Decomposes_optional", "Decomposes_optional *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_Decomposes_traits = {"_p_Decomposes_traits", "Decomposes_traits *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_Decomposes_type = {"_p_Decomposes_type", "Decomposes_type *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_DefaultForPerson_optional = {"_p_DefaultForPerson_optional", "DefaultForPerson_optional *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_DefaultForPerson_traits = {"_p_DefaultForPerson_traits", "DefaultForPerson_traits *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_DefaultForPerson_type = {"_p_DefaultForPerson_type", "DefaultForPerson_type *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_DefaultForProject_optional = {"_p_DefaultForProject_optional", "DefaultForProject_optional *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_DefaultForProject_traits = {"_p_DefaultForProject_traits", "DefaultForProject_traits *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_DefaultForProject_type = {"_p_DefaultForProject_type", "DefaultForProject_type *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_DefaultForUnitSystem_optional = {"_p_DefaultForUnitSystem_optional", "DefaultForUnitSystem_optional *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_DefaultForUnitSystem_traits = {"_p_DefaultForUnitSystem_traits", "DefaultForUnitSystem_traits *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_DefaultForUnitSystem_type = {"_p_DefaultForUnitSystem_type", "DefaultForUnitSystem_type *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_Description_optional = {"_p_Description_optional", "Description_optional *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_Description_traits = {"_p_Description_traits", "Description_traits *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_Description_type = {"_p_Description_type", "Description_type *", 0, 0, (void*)0, 0};
@@ -18485,9 +19485,6 @@ static swig_type_info _swigt__p_HasPropertySets_type = {"_p_HasPropertySets_type
 static swig_type_info _swigt__p_HasTemplateChanged_optional = {"_p_HasTemplateChanged_optional", "HasTemplateChanged_optional *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_HasTemplateChanged_traits = {"_p_HasTemplateChanged_traits", "HasTemplateChanged_traits *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_HasTemplateChanged_type = {"_p_HasTemplateChanged_type", "HasTemplateChanged_type *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_HighRiseResidentialLivingUnitCount_optional = {"_p_HighRiseResidentialLivingUnitCount_optional", "HighRiseResidentialLivingUnitCount_optional *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_HighRiseResidentialLivingUnitCount_traits = {"_p_HighRiseResidentialLivingUnitCount_traits", "HighRiseResidentialLivingUnitCount_traits *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_HighRiseResidentialLivingUnitCount_type = {"_p_HighRiseResidentialLivingUnitCount_type", "HighRiseResidentialLivingUnitCount_type *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_HostElement_optional = {"_p_HostElement_optional", "HostElement_optional *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_HostElement_traits = {"_p_HostElement_traits", "HostElement_traits *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_HostElement_type = {"_p_HostElement_type", "HostElement_type *", 0, 0, (void*)0, 0};
@@ -18503,15 +19500,9 @@ static swig_type_info _swigt__p_IsAutoGenerated_type = {"_p_IsAutoGenerated_type
 static swig_type_info _swigt__p_IsTemplateObject_optional = {"_p_IsTemplateObject_optional", "IsTemplateObject_optional *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_IsTemplateObject_traits = {"_p_IsTemplateObject_traits", "IsTemplateObject_traits *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_IsTemplateObject_type = {"_p_IsTemplateObject_type", "IsTemplateObject_type *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_LivingUnitCountAltered_optional = {"_p_LivingUnitCountAltered_optional", "LivingUnitCountAltered_optional *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_LivingUnitCountAltered_traits = {"_p_LivingUnitCountAltered_traits", "LivingUnitCountAltered_traits *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_LivingUnitCountAltered_type = {"_p_LivingUnitCountAltered_type", "LivingUnitCountAltered_type *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_LivingUnitCountExisting_optional = {"_p_LivingUnitCountExisting_optional", "LivingUnitCountExisting_optional *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_LivingUnitCountExisting_traits = {"_p_LivingUnitCountExisting_traits", "LivingUnitCountExisting_traits *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_LivingUnitCountExisting_type = {"_p_LivingUnitCountExisting_type", "LivingUnitCountExisting_type *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_LivingUnitCountNew_optional = {"_p_LivingUnitCountNew_optional", "LivingUnitCountNew_optional *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_LivingUnitCountNew_traits = {"_p_LivingUnitCountNew_traits", "LivingUnitCountNew_traits *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_LivingUnitCountNew_type = {"_p_LivingUnitCountNew_type", "LivingUnitCountNew_type *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_LocalPlacementCoordinates_optional = {"_p_LocalPlacementCoordinates_optional", "LocalPlacementCoordinates_optional *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_LocalPlacementCoordinates_traits = {"_p_LocalPlacementCoordinates_traits", "LocalPlacementCoordinates_traits *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_LocalPlacementCoordinates_type = {"_p_LocalPlacementCoordinates_type", "LocalPlacementCoordinates_type *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_LocalPlacementRotation_optional = {"_p_LocalPlacementRotation_optional", "LocalPlacementRotation_optional *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_LocalPlacementRotation_traits = {"_p_LocalPlacementRotation_traits", "LocalPlacementRotation_traits *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_LocalPlacementRotation_type = {"_p_LocalPlacementRotation_type", "LocalPlacementRotation_type *", 0, 0, (void*)0, 0};
@@ -18571,9 +19562,6 @@ static swig_type_info _swigt__p_ProfileType_traits = {"_p_ProfileType_traits", "
 static swig_type_info _swigt__p_ProfileType_type = {"_p_ProfileType_type", "ProfileType_type *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_RefId_traits = {"_p_RefId_traits", "RefId_traits *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_RefId_type = {"_p_RefId_type", "RefId_type *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_RelocatablePublicSchoolBuilding_optional = {"_p_RelocatablePublicSchoolBuilding_optional", "RelocatablePublicSchoolBuilding_optional *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_RelocatablePublicSchoolBuilding_traits = {"_p_RelocatablePublicSchoolBuilding_traits", "RelocatablePublicSchoolBuilding_traits *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_RelocatablePublicSchoolBuilding_type = {"_p_RelocatablePublicSchoolBuilding_type", "RelocatablePublicSchoolBuilding_type *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_RepresentationContext_optional = {"_p_RepresentationContext_optional", "RepresentationContext_optional *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_RepresentationContext_traits = {"_p_RepresentationContext_traits", "RepresentationContext_traits *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_RepresentationContext_type = {"_p_RepresentationContext_type", "RepresentationContext_type *", 0, 0, (void*)0, 0};
@@ -18652,6 +19640,15 @@ static swig_type_info _swigt__p_SourceModelSchema_type = {"_p_SourceModelSchema_
 static swig_type_info _swigt__p_SpaceBoundsNotCurrent_optional = {"_p_SpaceBoundsNotCurrent_optional", "SpaceBoundsNotCurrent_optional *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_SpaceBoundsNotCurrent_traits = {"_p_SpaceBoundsNotCurrent_traits", "SpaceBoundsNotCurrent_traits *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_SpaceBoundsNotCurrent_type = {"_p_SpaceBoundsNotCurrent_type", "SpaceBoundsNotCurrent_type *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_T24AboveGradeStoryCountAltered_optional = {"_p_T24AboveGradeStoryCountAltered_optional", "T24AboveGradeStoryCountAltered_optional *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_T24AboveGradeStoryCountAltered_traits = {"_p_T24AboveGradeStoryCountAltered_traits", "T24AboveGradeStoryCountAltered_traits *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_T24AboveGradeStoryCountAltered_type = {"_p_T24AboveGradeStoryCountAltered_type", "T24AboveGradeStoryCountAltered_type *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_T24AboveGradeStoryCountExists_optional = {"_p_T24AboveGradeStoryCountExists_optional", "T24AboveGradeStoryCountExists_optional *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_T24AboveGradeStoryCountExists_traits = {"_p_T24AboveGradeStoryCountExists_traits", "T24AboveGradeStoryCountExists_traits *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_T24AboveGradeStoryCountExists_type = {"_p_T24AboveGradeStoryCountExists_type", "T24AboveGradeStoryCountExists_type *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_T24AboveGradeStoryCountNew_optional = {"_p_T24AboveGradeStoryCountNew_optional", "T24AboveGradeStoryCountNew_optional *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_T24AboveGradeStoryCountNew_traits = {"_p_T24AboveGradeStoryCountNew_traits", "T24AboveGradeStoryCountNew_traits *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_T24AboveGradeStoryCountNew_type = {"_p_T24AboveGradeStoryCountNew_type", "T24AboveGradeStoryCountNew_type *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_T24CoilCoolingCapacity_optional = {"_p_T24CoilCoolingCapacity_optional", "T24CoilCoolingCapacity_optional *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_T24CoilCoolingCapacity_traits = {"_p_T24CoilCoolingCapacity_traits", "T24CoilCoolingCapacity_traits *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_T24CoilCoolingCapacity_type = {"_p_T24CoilCoolingCapacity_type", "T24CoilCoolingCapacity_type *", 0, 0, (void*)0, 0};
@@ -18661,12 +19658,36 @@ static swig_type_info _swigt__p_T24CoilHeatingCapacity_type = {"_p_T24CoilHeatin
 static swig_type_info _swigt__p_T24FunctionClassificationMethod_optional = {"_p_T24FunctionClassificationMethod_optional", "T24FunctionClassificationMethod_optional *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_T24FunctionClassificationMethod_traits = {"_p_T24FunctionClassificationMethod_traits", "T24FunctionClassificationMethod_traits *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_T24FunctionClassificationMethod_type = {"_p_T24FunctionClassificationMethod_type", "T24FunctionClassificationMethod_type *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_T24HighRiseResidentialLivingUnitCount_optional = {"_p_T24HighRiseResidentialLivingUnitCount_optional", "T24HighRiseResidentialLivingUnitCount_optional *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_T24HighRiseResidentialLivingUnitCount_traits = {"_p_T24HighRiseResidentialLivingUnitCount_traits", "T24HighRiseResidentialLivingUnitCount_traits *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_T24HighRiseResidentialLivingUnitCount_type = {"_p_T24HighRiseResidentialLivingUnitCount_type", "T24HighRiseResidentialLivingUnitCount_type *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_T24LivingUnitCountAltered_optional = {"_p_T24LivingUnitCountAltered_optional", "T24LivingUnitCountAltered_optional *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_T24LivingUnitCountAltered_traits = {"_p_T24LivingUnitCountAltered_traits", "T24LivingUnitCountAltered_traits *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_T24LivingUnitCountAltered_type = {"_p_T24LivingUnitCountAltered_type", "T24LivingUnitCountAltered_type *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_T24LivingUnitCountExisting_optional = {"_p_T24LivingUnitCountExisting_optional", "T24LivingUnitCountExisting_optional *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_T24LivingUnitCountExisting_traits = {"_p_T24LivingUnitCountExisting_traits", "T24LivingUnitCountExisting_traits *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_T24LivingUnitCountExisting_type = {"_p_T24LivingUnitCountExisting_type", "T24LivingUnitCountExisting_type *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_T24LivingUnitCountNew_optional = {"_p_T24LivingUnitCountNew_optional", "T24LivingUnitCountNew_optional *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_T24LivingUnitCountNew_traits = {"_p_T24LivingUnitCountNew_traits", "T24LivingUnitCountNew_traits *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_T24LivingUnitCountNew_type = {"_p_T24LivingUnitCountNew_type", "T24LivingUnitCountNew_type *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_T24PlantCoolingCapacity_optional = {"_p_T24PlantCoolingCapacity_optional", "T24PlantCoolingCapacity_optional *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_T24PlantCoolingCapacity_traits = {"_p_T24PlantCoolingCapacity_traits", "T24PlantCoolingCapacity_traits *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_T24PlantCoolingCapacity_type = {"_p_T24PlantCoolingCapacity_type", "T24PlantCoolingCapacity_type *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_T24PlantHeatingCapacity_optional = {"_p_T24PlantHeatingCapacity_optional", "T24PlantHeatingCapacity_optional *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_T24PlantHeatingCapacity_traits = {"_p_T24PlantHeatingCapacity_traits", "T24PlantHeatingCapacity_traits *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_T24PlantHeatingCapacity_type = {"_p_T24PlantHeatingCapacity_type", "T24PlantHeatingCapacity_type *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_T24RelocatablePublicSchoolBuilding_optional = {"_p_T24RelocatablePublicSchoolBuilding_optional", "T24RelocatablePublicSchoolBuilding_optional *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_T24RelocatablePublicSchoolBuilding_traits = {"_p_T24RelocatablePublicSchoolBuilding_traits", "T24RelocatablePublicSchoolBuilding_traits *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_T24RelocatablePublicSchoolBuilding_type = {"_p_T24RelocatablePublicSchoolBuilding_type", "T24RelocatablePublicSchoolBuilding_type *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_T24TotalStoryCountAltered_optional = {"_p_T24TotalStoryCountAltered_optional", "T24TotalStoryCountAltered_optional *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_T24TotalStoryCountAltered_traits = {"_p_T24TotalStoryCountAltered_traits", "T24TotalStoryCountAltered_traits *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_T24TotalStoryCountAltered_type = {"_p_T24TotalStoryCountAltered_type", "T24TotalStoryCountAltered_type *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_T24TotalStoryCountExisting_optional = {"_p_T24TotalStoryCountExisting_optional", "T24TotalStoryCountExisting_optional *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_T24TotalStoryCountExisting_traits = {"_p_T24TotalStoryCountExisting_traits", "T24TotalStoryCountExisting_traits *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_T24TotalStoryCountExisting_type = {"_p_T24TotalStoryCountExisting_type", "T24TotalStoryCountExisting_type *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_T24TotalStoryCountNew_optional = {"_p_T24TotalStoryCountNew_optional", "T24TotalStoryCountNew_optional *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_T24TotalStoryCountNew_traits = {"_p_T24TotalStoryCountNew_traits", "T24TotalStoryCountNew_traits *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_T24TotalStoryCountNew_type = {"_p_T24TotalStoryCountNew_type", "T24TotalStoryCountNew_type *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_Tag_optional = {"_p_Tag_optional", "Tag_optional *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_Tag_traits = {"_p_Tag_traits", "Tag_traits *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_Tag_type = {"_p_Tag_type", "Tag_type *", 0, 0, (void*)0, 0};
@@ -18676,15 +19697,6 @@ static swig_type_info _swigt__p_TemplateOverrideValues_type = {"_p_TemplateOverr
 static swig_type_info _swigt__p_TemplatesForMembers_optional = {"_p_TemplatesForMembers_optional", "TemplatesForMembers_optional *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_TemplatesForMembers_traits = {"_p_TemplatesForMembers_traits", "TemplatesForMembers_traits *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_TemplatesForMembers_type = {"_p_TemplatesForMembers_type", "TemplatesForMembers_type *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_TotalStoryCountAltered_optional = {"_p_TotalStoryCountAltered_optional", "TotalStoryCountAltered_optional *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_TotalStoryCountAltered_traits = {"_p_TotalStoryCountAltered_traits", "TotalStoryCountAltered_traits *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_TotalStoryCountAltered_type = {"_p_TotalStoryCountAltered_type", "TotalStoryCountAltered_type *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_TotalStoryCountExisting_optional = {"_p_TotalStoryCountExisting_optional", "TotalStoryCountExisting_optional *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_TotalStoryCountExisting_traits = {"_p_TotalStoryCountExisting_traits", "TotalStoryCountExisting_traits *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_TotalStoryCountExisting_type = {"_p_TotalStoryCountExisting_type", "TotalStoryCountExisting_type *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_TotalStoryCountNew_optional = {"_p_TotalStoryCountNew_optional", "TotalStoryCountNew_optional *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_TotalStoryCountNew_traits = {"_p_TotalStoryCountNew_traits", "TotalStoryCountNew_traits *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_TotalStoryCountNew_type = {"_p_TotalStoryCountNew_type", "TotalStoryCountNew_type *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_TypeDefCreationParams_optional = {"_p_TypeDefCreationParams_optional", "TypeDefCreationParams_optional *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_TypeDefCreationParams_traits = {"_p_TypeDefCreationParams_traits", "TypeDefCreationParams_traits *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_TypeDefCreationParams_type = {"_p_TypeDefCreationParams_type", "TypeDefCreationParams_type *", 0, 0, (void*)0, 0};
@@ -18716,6 +19728,7 @@ static swig_type_info _swigt__p_allocator_type = {"_p_allocator_type", "allocato
 static swig_type_info _swigt__p_base_const_iterator = {"_p_base_const_iterator", "base_const_iterator *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_base_iterator = {"_p_base_iterator", "base_iterator *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_base_sequence = {"_p_base_sequence", "base_sequence *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_base_type = {"_p_base_type", "base_type *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_bool = {"_p_bool", "bool *|xml_schema::boolean *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_bool_convertible = {"_p_bool_convertible", "bool_convertible *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_char = {"_p_char", "char *", 0, 0, (void*)0, 0};
@@ -18788,6 +19801,7 @@ static swig_type_info _swigt__p_unsigned_short = {"_p_unsigned_short", "unsigned
 static swig_type_info _swigt__p_value_type = {"_p_value_type", "value_type *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xercesc__DOMElement = {"_p_xercesc__DOMElement", "::xercesc::DOMElement *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree___type = {"_p_xsd__cxx__tree___type", "xsd::cxx::tree::_type *|xsd::cxx::tree::type *|xml_schema::type *|xsd::cxx::tree::container *|xml_schema::container *|::xml_schema::container *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree__type_t_t = {"_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree__type_t_t", 0, 0, 0, 0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__base64_binaryT_char_xsd__cxx__tree__simple_type_t = {"_p_xsd__cxx__tree__base64_binaryT_char_xsd__cxx__tree__simple_type_t", "xml_schema::base64_binary *|::xsd::cxx::tree::base64_binary< char,xsd::cxx::tree::simple_type > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__boundsT_char_t = {"_p_xsd__cxx__tree__boundsT_char_t", "::xsd::cxx::tree::bounds< char > *|xml_schema::bounds *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__bufferT_char_t = {"_p_xsd__cxx__tree__bufferT_char_t", "::xsd::cxx::tree::buffer< char > *|xml_schema::buffer *", 0, 0, (void*)0, 0};
@@ -18825,7 +19839,7 @@ static swig_type_info _swigt__p_xsd__cxx__tree__normalized_stringT_char_xsd__cxx
 static swig_type_info _swigt__p_xsd__cxx__tree__not_derivedT_char_t = {"_p_xsd__cxx__tree__not_derivedT_char_t", "::xsd::cxx::tree::not_derived< char > *|xml_schema::not_derived *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__optionalT_bool_true_t = {"_p_xsd__cxx__tree__optionalT_bool_true_t", "xsd::cxx::tree::optional< bool,true > *|xsd::cxx::tree::optional< bool,xsd::cxx::tree::fundamental_p< bool >::r > *|schema::simxml::BuildingModel::SimBuilding::SpaceBoundsNotCurrent_optional *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__optionalT_double_true_t = {"_p_xsd__cxx__tree__optionalT_double_true_t", "xsd::cxx::tree::optional< double,true > *|schema::simxml::BuildingModel::SimBuilding::BuildingEnergyTargetValue_optional *|schema::simxml::BuildingModel::SimBuilding::BuildingHeight_optional *|schema::simxml::BuildingModel::SimBuilding::BuildingGrossFloorArea_optional *|schema::simxml::BuildingModel::SimBuilding::BuildingInfiltrationValue_optional *|schema::simxml::BuildingModel::SimBuilding::BuildingDatumElevation_optional *|schema::simxml::BuildingModel::SimBuilding::BuildingGrossPlannedArea_optional *|schema::simxml::BuildingModel::SimBuilding::BuildingNumberofStoreys_optional *|schema::simxml::BuildingModel::SimBuilding_Building::T24PlantHeatingCapacity_optional *|schema::simxml::BuildingModel::SimBuilding_Building::T24PlantCoolingCapacity_optional *|schema::simxml::BuildingModel::SimBuilding_Building::T24CoilHeatingCapacity_optional *|schema::simxml::BuildingModel::SimBuilding_Building::T24CoilCoolingCapacity_optional *|schema::simxml::BuildingModel::SimBuilding_Building::RoofIrrigation_IrrigationMaxSaturatThreshold_optional *|schema::simxml::BuildingModel::SimBuilding_Building::SimBuilding_TempConvergTolVal_optional *|schema::simxml::BuildingModel::SimBuilding_Building::SimBuilding_LoadsConvergTolVal_optional *|schema::simxml::BuildingModel::SimBuilding_Building::SimBuilding_NorthAxis_optional *|schema::simxml::BuildingModel::SimBuilding::ElevationOfTerrain_optional *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_xsd__cxx__tree__optionalT_int_true_t = {"_p_xsd__cxx__tree__optionalT_int_true_t", "xsd::cxx::tree::optional< int,true > *|schema::simxml::BuildingModel::SimBuilding_Building::TotalStoryCountNew_optional *|schema::simxml::BuildingModel::SimBuilding_Building::TotalStoryCountExisting_optional *|schema::simxml::BuildingModel::SimBuilding_Building::TotalStoryCountAltered_optional *|schema::simxml::BuildingModel::SimBuilding_Building::RelocatablePublicSchoolBuilding_optional *|schema::simxml::BuildingModel::SimBuilding_Building::LivingUnitCountNew_optional *|schema::simxml::BuildingModel::SimBuilding_Building::AboveGradeStoryCountAltered_optional *|schema::simxml::BuildingModel::SimBuilding_Building::SimBuilding_MinNumberWarmupDays_optional *|schema::simxml::BuildingModel::SimBuilding_Building::SimBuilding_MaxNumWarmupDays_optional *|schema::simxml::BuildingModel::SimBuilding_Building::AboveGradeStoryCountExists_optional *|schema::simxml::BuildingModel::SimBuilding_Building::AboveGradeStoryCountNew_optional *|schema::simxml::BuildingModel::SimBuilding_Building::HighRiseResidentialLivingUnitCount_optional *|schema::simxml::BuildingModel::SimBuilding_Building::LivingUnitCountAltered_optional *|schema::simxml::BuildingModel::SimBuilding_Building::LivingUnitCountExisting_optional *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_xsd__cxx__tree__optionalT_int_true_t = {"_p_xsd__cxx__tree__optionalT_int_true_t", "xsd::cxx::tree::optional< int,true > *|schema::simxml::BuildingModel::SimBuilding_Building::T24TotalStoryCountNew_optional *|schema::simxml::BuildingModel::SimBuilding_Building::T24TotalStoryCountExisting_optional *|schema::simxml::BuildingModel::SimBuilding_Building::T24TotalStoryCountAltered_optional *|schema::simxml::BuildingModel::SimBuilding_Building::T24RelocatablePublicSchoolBuilding_optional *|schema::simxml::BuildingModel::SimBuilding_Building::T24LivingUnitCountNew_optional *|schema::simxml::BuildingModel::SimBuilding_Building::T24AboveGradeStoryCountAltered_optional *|schema::simxml::BuildingModel::SimBuilding_Building::SimBuilding_MinNumberWarmupDays_optional *|schema::simxml::BuildingModel::SimBuilding_Building::SimBuilding_MaxNumWarmupDays_optional *|schema::simxml::BuildingModel::SimBuilding_Building::T24AboveGradeStoryCountExists_optional *|schema::simxml::BuildingModel::SimBuilding_Building::T24AboveGradeStoryCountNew_optional *|schema::simxml::BuildingModel::SimBuilding_Building::T24HighRiseResidentialLivingUnitCount_optional *|schema::simxml::BuildingModel::SimBuilding_Building::T24LivingUnitCountAltered_optional *|schema::simxml::BuildingModel::SimBuilding_Building::T24LivingUnitCountExisting_optional *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__logical_xsd__cxx__tree__fundamental_pT_schema__simxml__SimModelCore__logical_t__r_t = {"_p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__logical_xsd__cxx__tree__fundamental_pT_schema__simxml__SimModelCore__logical_t__r_t", "schema::simxml::BuildingModel::SimBuilding::BuildingisLandmarked_optional *|xsd::cxx::tree::optional< ::schema::simxml::SimModelCore::logical,xsd::cxx::tree::fundamental_p< ::schema::simxml::SimModelCore::logical >::r > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t = {"_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t_false_t", "schema::simxml::BuildingModel::SimBuilding::NatVentilationDefault_optional *|xsd::cxx::tree::optional< xsd::cxx::tree::idref< char,xsd::cxx::tree::ncname,xsd::cxx::tree::_type >,false > *|schema::simxml::BuildingModel::SimBuilding::DaylightControlsDefault_optional *|schema::simxml::BuildingModel::SimBuilding::BuildingConstructionsTemplate_optional *|schema::simxml::BuildingModel::SimBuilding::BuildingAddress_optional *|schema::simxml::BuildingModel::SimBuilding::BuildingInSpatialContainer_optional *|schema::simxml::BuildingModel::SimBuilding::TemplateOverrideValues_optional *|schema::simxml::BuildingModel::SimBuilding::Representation_optional *|schema::simxml::BuildingModel::SimBuilding::ClassRef_ConstEntByFunction_optional *|schema::simxml::BuildingModel::SimBuilding_Building::RoofIrrigation_IrrigationRateSchedName_optional *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_false_t = {"_p_xsd__cxx__tree__optionalT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t_false_t", "schema::simxml::BuildingModel::SimBuilding::Name_optional *|schema::simxml::BuildingModel::SimBuilding::BuildingInfiltrationType_optional *|schema::simxml::BuildingModel::SimBuilding::BuildingEnergyTargetUnits_optional *|schema::simxml::BuildingModel::SimBuilding::BuildingOccupancyType_optional *|schema::simxml::BuildingModel::SimBuilding::BuildingYearOfConstruction_optional *|xsd::cxx::tree::optional< ::xsd::cxx::tree::string< char,xsd::cxx::tree::simple_type >,false > *|schema::simxml::BuildingModel::SimBuilding_Building::SimBuilding_SolarDist_optional *|schema::simxml::BuildingModel::SimBuilding_Building::SimBuilding_Terrain_optional *|schema::simxml::BuildingModel::SimBuilding_Building::SimBuilding_Name_optional *|schema::simxml::BuildingModel::SimBuilding_Building::RoofIrrigation_IrrigationModelType_optional *|schema::simxml::BuildingModel::SimBuilding_Building::T24FunctionClassificationMethod_optional *", 0, 0, (void*)0, 0};
@@ -18834,6 +19848,7 @@ static swig_type_info _swigt__p_xsd__cxx__tree__propertiesT_char_t = {"_p_xsd__c
 static swig_type_info _swigt__p_xsd__cxx__tree__qnameT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__uri_xsd__cxx__tree__ncname_t = {"_p_xsd__cxx__tree__qnameT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__uri_xsd__cxx__tree__ncname_t", "xml_schema::qname *|::xsd::cxx::tree::qname< char,xsd::cxx::tree::simple_type,xsd::cxx::tree::uri,xsd::cxx::tree::ncname > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__sequenceT_schema__simxml__BuildingModel__SimBuilding_Building_Default_false_t = {"_p_xsd__cxx__tree__sequenceT_schema__simxml__BuildingModel__SimBuilding_Building_Default_false_t", "xsd::cxx::tree::sequence< ::schema::simxml::BuildingModel::SimBuilding_Building_Default,false > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__sequence_common = {"_p_xsd__cxx__tree__sequence_common", "xsd::cxx::tree::sequence_common *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_xsd__cxx__tree__sequenceT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree__type_t_t_false_t = {"_p_xsd__cxx__tree__sequenceT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree__type_t_t_false_t", 0, 0, 0, 0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__severity = {"_p_xsd__cxx__tree__severity", "::xsd::cxx::tree::severity *|xml_schema::severity *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t = {"_p_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t", "xml_schema::simple_type *|xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t = {"_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t", "::xsd::cxx::tree::string< char,xsd::cxx::tree::simple_type > *|schema::simxml::BuildingModel::SimBuilding::BuildingInfiltrationType_type *|schema::simxml::BuildingModel::SimBuilding::BuildingEnergyTargetUnits_type *|schema::simxml::BuildingModel::SimBuilding::BuildingYearOfConstruction_type *|schema::simxml::BuildingModel::SimBuilding::BuildingOccupancyType_type *|xml_schema::string *|::xml_schema::string *|schema::simxml::BuildingModel::SimBuilding::Name_type *|schema::simxml::BuildingModel::SimBuilding_Building::SimBuilding_Name_type *|schema::simxml::BuildingModel::SimBuilding_Building::SimBuilding_Terrain_type *|schema::simxml::BuildingModel::SimBuilding_Building::SimBuilding_SolarDist_type *|schema::simxml::BuildingModel::SimBuilding_Building::RoofIrrigation_IrrigationModelType_type *|schema::simxml::BuildingModel::SimBuilding_Building::T24FunctionClassificationMethod_type *", 0, 0, (void*)0, 0};
@@ -18847,15 +19862,6 @@ static swig_type_info _swigt__p_xsd__cxx__tree__user_data_keys_templateT_0_t = {
 static swig_type_info _swigt__p_xsd__cxx__xml__error_handlerT_char_t = {"_p_xsd__cxx__xml__error_handlerT_char_t", "::xsd::cxx::xml::error_handler< char > *|xml_schema::error_handler *", 0, 0, (void*)0, 0};
 
 static swig_type_info *swig_type_initial[] = {
-  &_swigt__p_AboveGradeStoryCountAltered_optional,
-  &_swigt__p_AboveGradeStoryCountAltered_traits,
-  &_swigt__p_AboveGradeStoryCountAltered_type,
-  &_swigt__p_AboveGradeStoryCountExists_optional,
-  &_swigt__p_AboveGradeStoryCountExists_traits,
-  &_swigt__p_AboveGradeStoryCountExists_type,
-  &_swigt__p_AboveGradeStoryCountNew_optional,
-  &_swigt__p_AboveGradeStoryCountNew_traits,
-  &_swigt__p_AboveGradeStoryCountNew_type,
   &_swigt__p_ApplicableOccurrence_optional,
   &_swigt__p_ApplicableOccurrence_traits,
   &_swigt__p_ApplicableOccurrence_type,
@@ -18940,15 +19946,6 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_Decomposes_optional,
   &_swigt__p_Decomposes_traits,
   &_swigt__p_Decomposes_type,
-  &_swigt__p_DefaultForPerson_optional,
-  &_swigt__p_DefaultForPerson_traits,
-  &_swigt__p_DefaultForPerson_type,
-  &_swigt__p_DefaultForProject_optional,
-  &_swigt__p_DefaultForProject_traits,
-  &_swigt__p_DefaultForProject_type,
-  &_swigt__p_DefaultForUnitSystem_optional,
-  &_swigt__p_DefaultForUnitSystem_traits,
-  &_swigt__p_DefaultForUnitSystem_type,
   &_swigt__p_Description_optional,
   &_swigt__p_Description_traits,
   &_swigt__p_Description_type,
@@ -18967,9 +19964,6 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_HasTemplateChanged_optional,
   &_swigt__p_HasTemplateChanged_traits,
   &_swigt__p_HasTemplateChanged_type,
-  &_swigt__p_HighRiseResidentialLivingUnitCount_optional,
-  &_swigt__p_HighRiseResidentialLivingUnitCount_traits,
-  &_swigt__p_HighRiseResidentialLivingUnitCount_type,
   &_swigt__p_HostElement_optional,
   &_swigt__p_HostElement_traits,
   &_swigt__p_HostElement_type,
@@ -18985,15 +19979,9 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_IsTemplateObject_optional,
   &_swigt__p_IsTemplateObject_traits,
   &_swigt__p_IsTemplateObject_type,
-  &_swigt__p_LivingUnitCountAltered_optional,
-  &_swigt__p_LivingUnitCountAltered_traits,
-  &_swigt__p_LivingUnitCountAltered_type,
-  &_swigt__p_LivingUnitCountExisting_optional,
-  &_swigt__p_LivingUnitCountExisting_traits,
-  &_swigt__p_LivingUnitCountExisting_type,
-  &_swigt__p_LivingUnitCountNew_optional,
-  &_swigt__p_LivingUnitCountNew_traits,
-  &_swigt__p_LivingUnitCountNew_type,
+  &_swigt__p_LocalPlacementCoordinates_optional,
+  &_swigt__p_LocalPlacementCoordinates_traits,
+  &_swigt__p_LocalPlacementCoordinates_type,
   &_swigt__p_LocalPlacementRotation_optional,
   &_swigt__p_LocalPlacementRotation_traits,
   &_swigt__p_LocalPlacementRotation_type,
@@ -19053,9 +20041,6 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_ProfileType_type,
   &_swigt__p_RefId_traits,
   &_swigt__p_RefId_type,
-  &_swigt__p_RelocatablePublicSchoolBuilding_optional,
-  &_swigt__p_RelocatablePublicSchoolBuilding_traits,
-  &_swigt__p_RelocatablePublicSchoolBuilding_type,
   &_swigt__p_RepresentationContext_optional,
   &_swigt__p_RepresentationContext_traits,
   &_swigt__p_RepresentationContext_type,
@@ -19134,6 +20119,15 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_SpaceBoundsNotCurrent_optional,
   &_swigt__p_SpaceBoundsNotCurrent_traits,
   &_swigt__p_SpaceBoundsNotCurrent_type,
+  &_swigt__p_T24AboveGradeStoryCountAltered_optional,
+  &_swigt__p_T24AboveGradeStoryCountAltered_traits,
+  &_swigt__p_T24AboveGradeStoryCountAltered_type,
+  &_swigt__p_T24AboveGradeStoryCountExists_optional,
+  &_swigt__p_T24AboveGradeStoryCountExists_traits,
+  &_swigt__p_T24AboveGradeStoryCountExists_type,
+  &_swigt__p_T24AboveGradeStoryCountNew_optional,
+  &_swigt__p_T24AboveGradeStoryCountNew_traits,
+  &_swigt__p_T24AboveGradeStoryCountNew_type,
   &_swigt__p_T24CoilCoolingCapacity_optional,
   &_swigt__p_T24CoilCoolingCapacity_traits,
   &_swigt__p_T24CoilCoolingCapacity_type,
@@ -19143,12 +20137,36 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_T24FunctionClassificationMethod_optional,
   &_swigt__p_T24FunctionClassificationMethod_traits,
   &_swigt__p_T24FunctionClassificationMethod_type,
+  &_swigt__p_T24HighRiseResidentialLivingUnitCount_optional,
+  &_swigt__p_T24HighRiseResidentialLivingUnitCount_traits,
+  &_swigt__p_T24HighRiseResidentialLivingUnitCount_type,
+  &_swigt__p_T24LivingUnitCountAltered_optional,
+  &_swigt__p_T24LivingUnitCountAltered_traits,
+  &_swigt__p_T24LivingUnitCountAltered_type,
+  &_swigt__p_T24LivingUnitCountExisting_optional,
+  &_swigt__p_T24LivingUnitCountExisting_traits,
+  &_swigt__p_T24LivingUnitCountExisting_type,
+  &_swigt__p_T24LivingUnitCountNew_optional,
+  &_swigt__p_T24LivingUnitCountNew_traits,
+  &_swigt__p_T24LivingUnitCountNew_type,
   &_swigt__p_T24PlantCoolingCapacity_optional,
   &_swigt__p_T24PlantCoolingCapacity_traits,
   &_swigt__p_T24PlantCoolingCapacity_type,
   &_swigt__p_T24PlantHeatingCapacity_optional,
   &_swigt__p_T24PlantHeatingCapacity_traits,
   &_swigt__p_T24PlantHeatingCapacity_type,
+  &_swigt__p_T24RelocatablePublicSchoolBuilding_optional,
+  &_swigt__p_T24RelocatablePublicSchoolBuilding_traits,
+  &_swigt__p_T24RelocatablePublicSchoolBuilding_type,
+  &_swigt__p_T24TotalStoryCountAltered_optional,
+  &_swigt__p_T24TotalStoryCountAltered_traits,
+  &_swigt__p_T24TotalStoryCountAltered_type,
+  &_swigt__p_T24TotalStoryCountExisting_optional,
+  &_swigt__p_T24TotalStoryCountExisting_traits,
+  &_swigt__p_T24TotalStoryCountExisting_type,
+  &_swigt__p_T24TotalStoryCountNew_optional,
+  &_swigt__p_T24TotalStoryCountNew_traits,
+  &_swigt__p_T24TotalStoryCountNew_type,
   &_swigt__p_Tag_optional,
   &_swigt__p_Tag_traits,
   &_swigt__p_Tag_type,
@@ -19158,15 +20176,6 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_TemplatesForMembers_optional,
   &_swigt__p_TemplatesForMembers_traits,
   &_swigt__p_TemplatesForMembers_type,
-  &_swigt__p_TotalStoryCountAltered_optional,
-  &_swigt__p_TotalStoryCountAltered_traits,
-  &_swigt__p_TotalStoryCountAltered_type,
-  &_swigt__p_TotalStoryCountExisting_optional,
-  &_swigt__p_TotalStoryCountExisting_traits,
-  &_swigt__p_TotalStoryCountExisting_type,
-  &_swigt__p_TotalStoryCountNew_optional,
-  &_swigt__p_TotalStoryCountNew_traits,
-  &_swigt__p_TotalStoryCountNew_type,
   &_swigt__p_TypeDefCreationParams_optional,
   &_swigt__p_TypeDefCreationParams_traits,
   &_swigt__p_TypeDefCreationParams_type,
@@ -19198,6 +20207,7 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_base_const_iterator,
   &_swigt__p_base_iterator,
   &_swigt__p_base_sequence,
+  &_swigt__p_base_type,
   &_swigt__p_bool,
   &_swigt__p_bool_convertible,
   &_swigt__p_char,
@@ -19315,9 +20325,11 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_xsd__cxx__tree__propertiesT_char_t,
   &_swigt__p_xsd__cxx__tree__qnameT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__uri_xsd__cxx__tree__ncname_t,
   &_swigt__p_xsd__cxx__tree__sequenceT_schema__simxml__BuildingModel__SimBuilding_Building_Default_false_t,
+  &_swigt__p_xsd__cxx__tree__sequenceT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree__type_t_t_false_t,
   &_swigt__p_xsd__cxx__tree__sequence_common,
   &_swigt__p_xsd__cxx__tree__severity,
   &_swigt__p_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t,
+  &_swigt__p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree__type_t_t,
   &_swigt__p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t,
   &_swigt__p_xsd__cxx__tree__timeT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t,
   &_swigt__p_xsd__cxx__tree__time_zone,
@@ -19329,15 +20341,6 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_xsd__cxx__xml__error_handlerT_char_t,
 };
 
-static swig_cast_info _swigc__p_AboveGradeStoryCountAltered_optional[] = {  {&_swigt__p_AboveGradeStoryCountAltered_optional, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_AboveGradeStoryCountAltered_traits[] = {  {&_swigt__p_AboveGradeStoryCountAltered_traits, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_AboveGradeStoryCountAltered_type[] = {  {&_swigt__p_AboveGradeStoryCountAltered_type, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_AboveGradeStoryCountExists_optional[] = {  {&_swigt__p_AboveGradeStoryCountExists_optional, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_AboveGradeStoryCountExists_traits[] = {  {&_swigt__p_AboveGradeStoryCountExists_traits, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_AboveGradeStoryCountExists_type[] = {  {&_swigt__p_AboveGradeStoryCountExists_type, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_AboveGradeStoryCountNew_optional[] = {  {&_swigt__p_AboveGradeStoryCountNew_optional, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_AboveGradeStoryCountNew_traits[] = {  {&_swigt__p_AboveGradeStoryCountNew_traits, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_AboveGradeStoryCountNew_type[] = {  {&_swigt__p_AboveGradeStoryCountNew_type, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_ApplicableOccurrence_optional[] = {  {&_swigt__p_ApplicableOccurrence_optional, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_ApplicableOccurrence_traits[] = {  {&_swigt__p_ApplicableOccurrence_traits, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_ApplicableOccurrence_type[] = {  {&_swigt__p_ApplicableOccurrence_type, 0, 0, 0},{0, 0, 0, 0}};
@@ -19422,15 +20425,6 @@ static swig_cast_info _swigc__p_DecimalPrecision_type[] = {  {&_swigt__p_Decimal
 static swig_cast_info _swigc__p_Decomposes_optional[] = {  {&_swigt__p_Decomposes_optional, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_Decomposes_traits[] = {  {&_swigt__p_Decomposes_traits, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_Decomposes_type[] = {  {&_swigt__p_Decomposes_type, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_DefaultForPerson_optional[] = {  {&_swigt__p_DefaultForPerson_optional, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_DefaultForPerson_traits[] = {  {&_swigt__p_DefaultForPerson_traits, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_DefaultForPerson_type[] = {  {&_swigt__p_DefaultForPerson_type, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_DefaultForProject_optional[] = {  {&_swigt__p_DefaultForProject_optional, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_DefaultForProject_traits[] = {  {&_swigt__p_DefaultForProject_traits, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_DefaultForProject_type[] = {  {&_swigt__p_DefaultForProject_type, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_DefaultForUnitSystem_optional[] = {  {&_swigt__p_DefaultForUnitSystem_optional, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_DefaultForUnitSystem_traits[] = {  {&_swigt__p_DefaultForUnitSystem_traits, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_DefaultForUnitSystem_type[] = {  {&_swigt__p_DefaultForUnitSystem_type, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_Description_optional[] = {  {&_swigt__p_Description_optional, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_Description_traits[] = {  {&_swigt__p_Description_traits, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_Description_type[] = {  {&_swigt__p_Description_type, 0, 0, 0},{0, 0, 0, 0}};
@@ -19449,9 +20443,6 @@ static swig_cast_info _swigc__p_HasPropertySets_type[] = {  {&_swigt__p_HasPrope
 static swig_cast_info _swigc__p_HasTemplateChanged_optional[] = {  {&_swigt__p_HasTemplateChanged_optional, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_HasTemplateChanged_traits[] = {  {&_swigt__p_HasTemplateChanged_traits, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_HasTemplateChanged_type[] = {  {&_swigt__p_HasTemplateChanged_type, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_HighRiseResidentialLivingUnitCount_optional[] = {  {&_swigt__p_HighRiseResidentialLivingUnitCount_optional, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_HighRiseResidentialLivingUnitCount_traits[] = {  {&_swigt__p_HighRiseResidentialLivingUnitCount_traits, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_HighRiseResidentialLivingUnitCount_type[] = {  {&_swigt__p_HighRiseResidentialLivingUnitCount_type, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_HostElement_optional[] = {  {&_swigt__p_HostElement_optional, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_HostElement_traits[] = {  {&_swigt__p_HostElement_traits, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_HostElement_type[] = {  {&_swigt__p_HostElement_type, 0, 0, 0},{0, 0, 0, 0}};
@@ -19467,15 +20458,9 @@ static swig_cast_info _swigc__p_IsAutoGenerated_type[] = {  {&_swigt__p_IsAutoGe
 static swig_cast_info _swigc__p_IsTemplateObject_optional[] = {  {&_swigt__p_IsTemplateObject_optional, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_IsTemplateObject_traits[] = {  {&_swigt__p_IsTemplateObject_traits, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_IsTemplateObject_type[] = {  {&_swigt__p_IsTemplateObject_type, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_LivingUnitCountAltered_optional[] = {  {&_swigt__p_LivingUnitCountAltered_optional, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_LivingUnitCountAltered_traits[] = {  {&_swigt__p_LivingUnitCountAltered_traits, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_LivingUnitCountAltered_type[] = {  {&_swigt__p_LivingUnitCountAltered_type, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_LivingUnitCountExisting_optional[] = {  {&_swigt__p_LivingUnitCountExisting_optional, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_LivingUnitCountExisting_traits[] = {  {&_swigt__p_LivingUnitCountExisting_traits, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_LivingUnitCountExisting_type[] = {  {&_swigt__p_LivingUnitCountExisting_type, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_LivingUnitCountNew_optional[] = {  {&_swigt__p_LivingUnitCountNew_optional, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_LivingUnitCountNew_traits[] = {  {&_swigt__p_LivingUnitCountNew_traits, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_LivingUnitCountNew_type[] = {  {&_swigt__p_LivingUnitCountNew_type, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_LocalPlacementCoordinates_optional[] = {  {&_swigt__p_LocalPlacementCoordinates_optional, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_LocalPlacementCoordinates_traits[] = {  {&_swigt__p_LocalPlacementCoordinates_traits, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_LocalPlacementCoordinates_type[] = {  {&_swigt__p_LocalPlacementCoordinates_type, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_LocalPlacementRotation_optional[] = {  {&_swigt__p_LocalPlacementRotation_optional, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_LocalPlacementRotation_traits[] = {  {&_swigt__p_LocalPlacementRotation_traits, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_LocalPlacementRotation_type[] = {  {&_swigt__p_LocalPlacementRotation_type, 0, 0, 0},{0, 0, 0, 0}};
@@ -19535,9 +20520,6 @@ static swig_cast_info _swigc__p_ProfileType_traits[] = {  {&_swigt__p_ProfileTyp
 static swig_cast_info _swigc__p_ProfileType_type[] = {  {&_swigt__p_ProfileType_type, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_RefId_traits[] = {  {&_swigt__p_RefId_traits, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_RefId_type[] = {  {&_swigt__p_RefId_type, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_RelocatablePublicSchoolBuilding_optional[] = {  {&_swigt__p_RelocatablePublicSchoolBuilding_optional, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_RelocatablePublicSchoolBuilding_traits[] = {  {&_swigt__p_RelocatablePublicSchoolBuilding_traits, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_RelocatablePublicSchoolBuilding_type[] = {  {&_swigt__p_RelocatablePublicSchoolBuilding_type, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_RepresentationContext_optional[] = {  {&_swigt__p_RepresentationContext_optional, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_RepresentationContext_traits[] = {  {&_swigt__p_RepresentationContext_traits, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_RepresentationContext_type[] = {  {&_swigt__p_RepresentationContext_type, 0, 0, 0},{0, 0, 0, 0}};
@@ -19616,6 +20598,15 @@ static swig_cast_info _swigc__p_SourceModelSchema_type[] = {  {&_swigt__p_Source
 static swig_cast_info _swigc__p_SpaceBoundsNotCurrent_optional[] = {  {&_swigt__p_SpaceBoundsNotCurrent_optional, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_SpaceBoundsNotCurrent_traits[] = {  {&_swigt__p_SpaceBoundsNotCurrent_traits, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_SpaceBoundsNotCurrent_type[] = {  {&_swigt__p_SpaceBoundsNotCurrent_type, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_T24AboveGradeStoryCountAltered_optional[] = {  {&_swigt__p_T24AboveGradeStoryCountAltered_optional, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_T24AboveGradeStoryCountAltered_traits[] = {  {&_swigt__p_T24AboveGradeStoryCountAltered_traits, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_T24AboveGradeStoryCountAltered_type[] = {  {&_swigt__p_T24AboveGradeStoryCountAltered_type, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_T24AboveGradeStoryCountExists_optional[] = {  {&_swigt__p_T24AboveGradeStoryCountExists_optional, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_T24AboveGradeStoryCountExists_traits[] = {  {&_swigt__p_T24AboveGradeStoryCountExists_traits, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_T24AboveGradeStoryCountExists_type[] = {  {&_swigt__p_T24AboveGradeStoryCountExists_type, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_T24AboveGradeStoryCountNew_optional[] = {  {&_swigt__p_T24AboveGradeStoryCountNew_optional, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_T24AboveGradeStoryCountNew_traits[] = {  {&_swigt__p_T24AboveGradeStoryCountNew_traits, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_T24AboveGradeStoryCountNew_type[] = {  {&_swigt__p_T24AboveGradeStoryCountNew_type, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_T24CoilCoolingCapacity_optional[] = {  {&_swigt__p_T24CoilCoolingCapacity_optional, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_T24CoilCoolingCapacity_traits[] = {  {&_swigt__p_T24CoilCoolingCapacity_traits, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_T24CoilCoolingCapacity_type[] = {  {&_swigt__p_T24CoilCoolingCapacity_type, 0, 0, 0},{0, 0, 0, 0}};
@@ -19625,12 +20616,36 @@ static swig_cast_info _swigc__p_T24CoilHeatingCapacity_type[] = {  {&_swigt__p_T
 static swig_cast_info _swigc__p_T24FunctionClassificationMethod_optional[] = {  {&_swigt__p_T24FunctionClassificationMethod_optional, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_T24FunctionClassificationMethod_traits[] = {  {&_swigt__p_T24FunctionClassificationMethod_traits, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_T24FunctionClassificationMethod_type[] = {  {&_swigt__p_T24FunctionClassificationMethod_type, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_T24HighRiseResidentialLivingUnitCount_optional[] = {  {&_swigt__p_T24HighRiseResidentialLivingUnitCount_optional, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_T24HighRiseResidentialLivingUnitCount_traits[] = {  {&_swigt__p_T24HighRiseResidentialLivingUnitCount_traits, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_T24HighRiseResidentialLivingUnitCount_type[] = {  {&_swigt__p_T24HighRiseResidentialLivingUnitCount_type, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_T24LivingUnitCountAltered_optional[] = {  {&_swigt__p_T24LivingUnitCountAltered_optional, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_T24LivingUnitCountAltered_traits[] = {  {&_swigt__p_T24LivingUnitCountAltered_traits, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_T24LivingUnitCountAltered_type[] = {  {&_swigt__p_T24LivingUnitCountAltered_type, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_T24LivingUnitCountExisting_optional[] = {  {&_swigt__p_T24LivingUnitCountExisting_optional, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_T24LivingUnitCountExisting_traits[] = {  {&_swigt__p_T24LivingUnitCountExisting_traits, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_T24LivingUnitCountExisting_type[] = {  {&_swigt__p_T24LivingUnitCountExisting_type, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_T24LivingUnitCountNew_optional[] = {  {&_swigt__p_T24LivingUnitCountNew_optional, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_T24LivingUnitCountNew_traits[] = {  {&_swigt__p_T24LivingUnitCountNew_traits, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_T24LivingUnitCountNew_type[] = {  {&_swigt__p_T24LivingUnitCountNew_type, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_T24PlantCoolingCapacity_optional[] = {  {&_swigt__p_T24PlantCoolingCapacity_optional, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_T24PlantCoolingCapacity_traits[] = {  {&_swigt__p_T24PlantCoolingCapacity_traits, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_T24PlantCoolingCapacity_type[] = {  {&_swigt__p_T24PlantCoolingCapacity_type, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_T24PlantHeatingCapacity_optional[] = {  {&_swigt__p_T24PlantHeatingCapacity_optional, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_T24PlantHeatingCapacity_traits[] = {  {&_swigt__p_T24PlantHeatingCapacity_traits, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_T24PlantHeatingCapacity_type[] = {  {&_swigt__p_T24PlantHeatingCapacity_type, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_T24RelocatablePublicSchoolBuilding_optional[] = {  {&_swigt__p_T24RelocatablePublicSchoolBuilding_optional, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_T24RelocatablePublicSchoolBuilding_traits[] = {  {&_swigt__p_T24RelocatablePublicSchoolBuilding_traits, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_T24RelocatablePublicSchoolBuilding_type[] = {  {&_swigt__p_T24RelocatablePublicSchoolBuilding_type, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_T24TotalStoryCountAltered_optional[] = {  {&_swigt__p_T24TotalStoryCountAltered_optional, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_T24TotalStoryCountAltered_traits[] = {  {&_swigt__p_T24TotalStoryCountAltered_traits, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_T24TotalStoryCountAltered_type[] = {  {&_swigt__p_T24TotalStoryCountAltered_type, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_T24TotalStoryCountExisting_optional[] = {  {&_swigt__p_T24TotalStoryCountExisting_optional, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_T24TotalStoryCountExisting_traits[] = {  {&_swigt__p_T24TotalStoryCountExisting_traits, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_T24TotalStoryCountExisting_type[] = {  {&_swigt__p_T24TotalStoryCountExisting_type, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_T24TotalStoryCountNew_optional[] = {  {&_swigt__p_T24TotalStoryCountNew_optional, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_T24TotalStoryCountNew_traits[] = {  {&_swigt__p_T24TotalStoryCountNew_traits, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_T24TotalStoryCountNew_type[] = {  {&_swigt__p_T24TotalStoryCountNew_type, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_Tag_optional[] = {  {&_swigt__p_Tag_optional, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_Tag_traits[] = {  {&_swigt__p_Tag_traits, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_Tag_type[] = {  {&_swigt__p_Tag_type, 0, 0, 0},{0, 0, 0, 0}};
@@ -19640,15 +20655,6 @@ static swig_cast_info _swigc__p_TemplateOverrideValues_type[] = {  {&_swigt__p_T
 static swig_cast_info _swigc__p_TemplatesForMembers_optional[] = {  {&_swigt__p_TemplatesForMembers_optional, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_TemplatesForMembers_traits[] = {  {&_swigt__p_TemplatesForMembers_traits, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_TemplatesForMembers_type[] = {  {&_swigt__p_TemplatesForMembers_type, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_TotalStoryCountAltered_optional[] = {  {&_swigt__p_TotalStoryCountAltered_optional, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_TotalStoryCountAltered_traits[] = {  {&_swigt__p_TotalStoryCountAltered_traits, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_TotalStoryCountAltered_type[] = {  {&_swigt__p_TotalStoryCountAltered_type, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_TotalStoryCountExisting_optional[] = {  {&_swigt__p_TotalStoryCountExisting_optional, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_TotalStoryCountExisting_traits[] = {  {&_swigt__p_TotalStoryCountExisting_traits, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_TotalStoryCountExisting_type[] = {  {&_swigt__p_TotalStoryCountExisting_type, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_TotalStoryCountNew_optional[] = {  {&_swigt__p_TotalStoryCountNew_optional, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_TotalStoryCountNew_traits[] = {  {&_swigt__p_TotalStoryCountNew_traits, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_TotalStoryCountNew_type[] = {  {&_swigt__p_TotalStoryCountNew_type, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_TypeDefCreationParams_optional[] = {  {&_swigt__p_TypeDefCreationParams_optional, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_TypeDefCreationParams_traits[] = {  {&_swigt__p_TypeDefCreationParams_traits, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_TypeDefCreationParams_type[] = {  {&_swigt__p_TypeDefCreationParams_type, 0, 0, 0},{0, 0, 0, 0}};
@@ -19680,6 +20686,7 @@ static swig_cast_info _swigc__p_allocator_type[] = {  {&_swigt__p_allocator_type
 static swig_cast_info _swigc__p_base_const_iterator[] = {  {&_swigt__p_base_const_iterator, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_base_iterator[] = {  {&_swigt__p_base_iterator, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_base_sequence[] = {  {&_swigt__p_base_sequence, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_base_type[] = {  {&_swigt__p_base_type, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_bool[] = {  {&_swigt__p_bool, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_bool_convertible[] = {  {&_swigt__p_bool_convertible, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_char[] = {  {&_swigt__p_char, 0, 0, 0},{0, 0, 0, 0}};
@@ -19751,7 +20758,8 @@ static swig_cast_info _swigc__p_unsigned_long_long[] = {  {&_swigt__p_unsigned_l
 static swig_cast_info _swigc__p_unsigned_short[] = {  {&_swigt__p_unsigned_short, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_value_type[] = {  {&_swigt__p_value_type, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xercesc__DOMElement[] = {  {&_swigt__p_xercesc__DOMElement, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_xsd__cxx__tree___type[] = {  {&_swigt__p_schema__simxml__SimModelCore__SimObjectDefinition, _p_schema__simxml__SimModelCore__SimObjectDefinitionTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimDistributionElement, _p_schema__simxml__SimModelCore__SimDistributionElementTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimSpatialStructureElement, _p_schema__simxml__SimModelCore__SimSpatialStructureElementTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimTemplate, _p_schema__simxml__SimModelCore__SimTemplateTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeneral__SimNode, _p_schema__simxml__ResourcesGeneral__SimNodeTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__MepModel__SimFlowEnergyConverter, _p_schema__simxml__MepModel__SimFlowEnergyConverterTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimAppDefault, _p_schema__simxml__SimModelCore__SimAppDefaultTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimActorDefinition, _p_schema__simxml__SimModelCore__SimActorDefinitionTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeneral__SimArrayParams, _p_schema__simxml__ResourcesGeneral__SimArrayParamsTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeometry__SimProfileDefinition, _p_schema__simxml__ResourcesGeometry__SimProfileDefinitionTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__BuildingModel__SimBuilding_Building_Default, _p_schema__simxml__BuildingModel__SimBuilding_Building_DefaultTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__BuildingModel__SimBuilding_Building, _p_schema__simxml__BuildingModel__SimBuilding_BuildingTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimDistributionControlElement, _p_schema__simxml__SimModelCore__SimDistributionControlElementTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__BuildingModel__SimBuilding, _p_schema__simxml__BuildingModel__SimBuildingTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeneral__SimPort, _p_schema__simxml__ResourcesGeneral__SimPortTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimPropertySetDefinition, _p_schema__simxml__SimModelCore__SimPropertySetDefinitionTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimGroup, _p_schema__simxml__SimModelCore__SimGroupTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimBuildingElement, _p_schema__simxml__SimModelCore__SimBuildingElementTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeneral__SimUnitType, _p_schema__simxml__ResourcesGeneral__SimUnitTypeTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimObjectPlacement, _p_schema__simxml__SimModelCore__SimObjectPlacementTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimObject, _p_schema__simxml__SimModelCore__SimObjectTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimElement, _p_schema__simxml__SimModelCore__SimElementTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimTopologicalRepresentationItem, _p_schema__simxml__SimModelCore__SimTopologicalRepresentationItemTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimResourceObject, _p_schema__simxml__SimModelCore__SimResourceObjectTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimFeatureElement, _p_schema__simxml__SimModelCore__SimFeatureElementTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimObjectTypeDefinition, _p_schema__simxml__SimModelCore__SimObjectTypeDefinitionTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimGeometricRepresentationItem, _p_schema__simxml__SimModelCore__SimGeometricRepresentationItemTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimBldgModelParams, _p_schema__simxml__SimModelCore__SimBldgModelParamsTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_xsd__cxx__tree___type, 0, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimDistributionFlowElement, _p_schema__simxml__SimModelCore__SimDistributionFlowElementTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimRepresentationItem, _p_schema__simxml__SimModelCore__SimRepresentationItemTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimRoot, _p_schema__simxml__SimModelCore__SimRootTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimRepresentation, _p_schema__simxml__SimModelCore__SimRepresentationTo_p_xsd__cxx__tree___type, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree__type_t_t[] = {{&_swigt__p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree__type_t_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_xsd__cxx__tree___type[] = {  {&_swigt__p_schema__simxml__SimModelCore__SimBldgModelParams, _p_schema__simxml__SimModelCore__SimBldgModelParamsTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeneral__SimArrayParams, _p_schema__simxml__ResourcesGeneral__SimArrayParamsTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimTopologicalRepresentationItem, _p_schema__simxml__SimModelCore__SimTopologicalRepresentationItemTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimBuildingElement, _p_schema__simxml__SimModelCore__SimBuildingElementTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimRoot, _p_schema__simxml__SimModelCore__SimRootTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeneral__SimUnitType, _p_schema__simxml__ResourcesGeneral__SimUnitTypeTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__BuildingModel__SimBuilding, _p_schema__simxml__BuildingModel__SimBuildingTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimDistributionFlowElement, _p_schema__simxml__SimModelCore__SimDistributionFlowElementTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimObjectTypeDefinition, _p_schema__simxml__SimModelCore__SimObjectTypeDefinitionTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimDistributionElement, _p_schema__simxml__SimModelCore__SimDistributionElementTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimObjectDefinition, _p_schema__simxml__SimModelCore__SimObjectDefinitionTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimGroup, _p_schema__simxml__SimModelCore__SimGroupTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimGeometricRepresentationItem, _p_schema__simxml__SimModelCore__SimGeometricRepresentationItemTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeneral__SimPort, _p_schema__simxml__ResourcesGeneral__SimPortTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimSpatialStructureElement, _p_schema__simxml__SimModelCore__SimSpatialStructureElementTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree__type_t_t, _p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree__type_t_tTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__BuildingModel__SimBuilding_Building, _p_schema__simxml__BuildingModel__SimBuilding_BuildingTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__BuildingModel__SimBuilding_Building_Default, _p_schema__simxml__BuildingModel__SimBuilding_Building_DefaultTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimRepresentation, _p_schema__simxml__SimModelCore__SimRepresentationTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimRepresentationItem, _p_schema__simxml__SimModelCore__SimRepresentationItemTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_xsd__cxx__tree___type, 0, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimTemplate, _p_schema__simxml__SimModelCore__SimTemplateTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__MepModel__SimFlowEnergyConverter, _p_schema__simxml__MepModel__SimFlowEnergyConverterTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimResourceObject, _p_schema__simxml__SimModelCore__SimResourceObjectTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimObject, _p_schema__simxml__SimModelCore__SimObjectTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimDistributionControlElement, _p_schema__simxml__SimModelCore__SimDistributionControlElementTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimActorDefinition, _p_schema__simxml__SimModelCore__SimActorDefinitionTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t, _p_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_tTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeneral__SimNode, _p_schema__simxml__ResourcesGeneral__SimNodeTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimPropertySetDefinition, _p_schema__simxml__SimModelCore__SimPropertySetDefinitionTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__ResourcesGeometry__SimProfileDefinition, _p_schema__simxml__ResourcesGeometry__SimProfileDefinitionTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimFeatureElement, _p_schema__simxml__SimModelCore__SimFeatureElementTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimElement, _p_schema__simxml__SimModelCore__SimElementTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimAppDefault, _p_schema__simxml__SimModelCore__SimAppDefaultTo_p_xsd__cxx__tree___type, 0, 0},  {&_swigt__p_schema__simxml__SimModelCore__SimObjectPlacement, _p_schema__simxml__SimModelCore__SimObjectPlacementTo_p_xsd__cxx__tree___type, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__base64_binaryT_char_xsd__cxx__tree__simple_type_t[] = {  {&_swigt__p_xsd__cxx__tree__base64_binaryT_char_xsd__cxx__tree__simple_type_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__boundsT_char_t[] = {  {&_swigt__p_xsd__cxx__tree__boundsT_char_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__bufferT_char_t[] = {  {&_swigt__p_xsd__cxx__tree__bufferT_char_t, 0, 0, 0},{0, 0, 0, 0}};
@@ -19797,9 +20805,10 @@ static swig_cast_info _swigc__p_xsd__cxx__tree__parsingT_char_t[] = {  {&_swigt_
 static swig_cast_info _swigc__p_xsd__cxx__tree__propertiesT_char_t[] = {  {&_swigt__p_xsd__cxx__tree__propertiesT_char_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__qnameT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__uri_xsd__cxx__tree__ncname_t[] = {  {&_swigt__p_xsd__cxx__tree__qnameT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__uri_xsd__cxx__tree__ncname_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__sequenceT_schema__simxml__BuildingModel__SimBuilding_Building_Default_false_t[] = {  {&_swigt__p_xsd__cxx__tree__sequenceT_schema__simxml__BuildingModel__SimBuilding_Building_Default_false_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_xsd__cxx__tree__sequence_common[] = {  {&_swigt__p_xsd__cxx__tree__sequence_common, 0, 0, 0},  {&_swigt__p_xsd__cxx__tree__sequenceT_schema__simxml__BuildingModel__SimBuilding_Building_Default_false_t, _p_xsd__cxx__tree__sequenceT_schema__simxml__BuildingModel__SimBuilding_Building_Default_false_tTo_p_xsd__cxx__tree__sequence_common, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_xsd__cxx__tree__sequenceT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree__type_t_t_false_t[] = {{&_swigt__p_xsd__cxx__tree__sequenceT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree__type_t_t_false_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_xsd__cxx__tree__sequence_common[] = {  {&_swigt__p_xsd__cxx__tree__sequence_common, 0, 0, 0},  {&_swigt__p_xsd__cxx__tree__sequenceT_schema__simxml__BuildingModel__SimBuilding_Building_Default_false_t, _p_xsd__cxx__tree__sequenceT_schema__simxml__BuildingModel__SimBuilding_Building_Default_false_tTo_p_xsd__cxx__tree__sequence_common, 0, 0},  {&_swigt__p_xsd__cxx__tree__sequenceT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree__type_t_t_false_t, _p_xsd__cxx__tree__sequenceT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree__type_t_t_false_tTo_p_xsd__cxx__tree__sequence_common, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__severity[] = {  {&_swigt__p_xsd__cxx__tree__severity, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t[] = {  {&_swigt__p_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t[] = {  {&_swigt__p_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t, 0, 0, 0},  {&_swigt__p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree__type_t_t, _p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree__type_t_tTo_p_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t[] = {  {&_swigt__p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__timeT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t[] = {  {&_swigt__p_xsd__cxx__tree__timeT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__time_zone[] = {  {&_swigt__p_xsd__cxx__tree__time_zone, 0, 0, 0},{0, 0, 0, 0}};
@@ -19811,15 +20820,6 @@ static swig_cast_info _swigc__p_xsd__cxx__tree__user_data_keys_templateT_0_t[] =
 static swig_cast_info _swigc__p_xsd__cxx__xml__error_handlerT_char_t[] = {  {&_swigt__p_xsd__cxx__xml__error_handlerT_char_t, 0, 0, 0},{0, 0, 0, 0}};
 
 static swig_cast_info *swig_cast_initial[] = {
-  _swigc__p_AboveGradeStoryCountAltered_optional,
-  _swigc__p_AboveGradeStoryCountAltered_traits,
-  _swigc__p_AboveGradeStoryCountAltered_type,
-  _swigc__p_AboveGradeStoryCountExists_optional,
-  _swigc__p_AboveGradeStoryCountExists_traits,
-  _swigc__p_AboveGradeStoryCountExists_type,
-  _swigc__p_AboveGradeStoryCountNew_optional,
-  _swigc__p_AboveGradeStoryCountNew_traits,
-  _swigc__p_AboveGradeStoryCountNew_type,
   _swigc__p_ApplicableOccurrence_optional,
   _swigc__p_ApplicableOccurrence_traits,
   _swigc__p_ApplicableOccurrence_type,
@@ -19904,15 +20904,6 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_Decomposes_optional,
   _swigc__p_Decomposes_traits,
   _swigc__p_Decomposes_type,
-  _swigc__p_DefaultForPerson_optional,
-  _swigc__p_DefaultForPerson_traits,
-  _swigc__p_DefaultForPerson_type,
-  _swigc__p_DefaultForProject_optional,
-  _swigc__p_DefaultForProject_traits,
-  _swigc__p_DefaultForProject_type,
-  _swigc__p_DefaultForUnitSystem_optional,
-  _swigc__p_DefaultForUnitSystem_traits,
-  _swigc__p_DefaultForUnitSystem_type,
   _swigc__p_Description_optional,
   _swigc__p_Description_traits,
   _swigc__p_Description_type,
@@ -19931,9 +20922,6 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_HasTemplateChanged_optional,
   _swigc__p_HasTemplateChanged_traits,
   _swigc__p_HasTemplateChanged_type,
-  _swigc__p_HighRiseResidentialLivingUnitCount_optional,
-  _swigc__p_HighRiseResidentialLivingUnitCount_traits,
-  _swigc__p_HighRiseResidentialLivingUnitCount_type,
   _swigc__p_HostElement_optional,
   _swigc__p_HostElement_traits,
   _swigc__p_HostElement_type,
@@ -19949,15 +20937,9 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_IsTemplateObject_optional,
   _swigc__p_IsTemplateObject_traits,
   _swigc__p_IsTemplateObject_type,
-  _swigc__p_LivingUnitCountAltered_optional,
-  _swigc__p_LivingUnitCountAltered_traits,
-  _swigc__p_LivingUnitCountAltered_type,
-  _swigc__p_LivingUnitCountExisting_optional,
-  _swigc__p_LivingUnitCountExisting_traits,
-  _swigc__p_LivingUnitCountExisting_type,
-  _swigc__p_LivingUnitCountNew_optional,
-  _swigc__p_LivingUnitCountNew_traits,
-  _swigc__p_LivingUnitCountNew_type,
+  _swigc__p_LocalPlacementCoordinates_optional,
+  _swigc__p_LocalPlacementCoordinates_traits,
+  _swigc__p_LocalPlacementCoordinates_type,
   _swigc__p_LocalPlacementRotation_optional,
   _swigc__p_LocalPlacementRotation_traits,
   _swigc__p_LocalPlacementRotation_type,
@@ -20017,9 +20999,6 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_ProfileType_type,
   _swigc__p_RefId_traits,
   _swigc__p_RefId_type,
-  _swigc__p_RelocatablePublicSchoolBuilding_optional,
-  _swigc__p_RelocatablePublicSchoolBuilding_traits,
-  _swigc__p_RelocatablePublicSchoolBuilding_type,
   _swigc__p_RepresentationContext_optional,
   _swigc__p_RepresentationContext_traits,
   _swigc__p_RepresentationContext_type,
@@ -20098,6 +21077,15 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_SpaceBoundsNotCurrent_optional,
   _swigc__p_SpaceBoundsNotCurrent_traits,
   _swigc__p_SpaceBoundsNotCurrent_type,
+  _swigc__p_T24AboveGradeStoryCountAltered_optional,
+  _swigc__p_T24AboveGradeStoryCountAltered_traits,
+  _swigc__p_T24AboveGradeStoryCountAltered_type,
+  _swigc__p_T24AboveGradeStoryCountExists_optional,
+  _swigc__p_T24AboveGradeStoryCountExists_traits,
+  _swigc__p_T24AboveGradeStoryCountExists_type,
+  _swigc__p_T24AboveGradeStoryCountNew_optional,
+  _swigc__p_T24AboveGradeStoryCountNew_traits,
+  _swigc__p_T24AboveGradeStoryCountNew_type,
   _swigc__p_T24CoilCoolingCapacity_optional,
   _swigc__p_T24CoilCoolingCapacity_traits,
   _swigc__p_T24CoilCoolingCapacity_type,
@@ -20107,12 +21095,36 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_T24FunctionClassificationMethod_optional,
   _swigc__p_T24FunctionClassificationMethod_traits,
   _swigc__p_T24FunctionClassificationMethod_type,
+  _swigc__p_T24HighRiseResidentialLivingUnitCount_optional,
+  _swigc__p_T24HighRiseResidentialLivingUnitCount_traits,
+  _swigc__p_T24HighRiseResidentialLivingUnitCount_type,
+  _swigc__p_T24LivingUnitCountAltered_optional,
+  _swigc__p_T24LivingUnitCountAltered_traits,
+  _swigc__p_T24LivingUnitCountAltered_type,
+  _swigc__p_T24LivingUnitCountExisting_optional,
+  _swigc__p_T24LivingUnitCountExisting_traits,
+  _swigc__p_T24LivingUnitCountExisting_type,
+  _swigc__p_T24LivingUnitCountNew_optional,
+  _swigc__p_T24LivingUnitCountNew_traits,
+  _swigc__p_T24LivingUnitCountNew_type,
   _swigc__p_T24PlantCoolingCapacity_optional,
   _swigc__p_T24PlantCoolingCapacity_traits,
   _swigc__p_T24PlantCoolingCapacity_type,
   _swigc__p_T24PlantHeatingCapacity_optional,
   _swigc__p_T24PlantHeatingCapacity_traits,
   _swigc__p_T24PlantHeatingCapacity_type,
+  _swigc__p_T24RelocatablePublicSchoolBuilding_optional,
+  _swigc__p_T24RelocatablePublicSchoolBuilding_traits,
+  _swigc__p_T24RelocatablePublicSchoolBuilding_type,
+  _swigc__p_T24TotalStoryCountAltered_optional,
+  _swigc__p_T24TotalStoryCountAltered_traits,
+  _swigc__p_T24TotalStoryCountAltered_type,
+  _swigc__p_T24TotalStoryCountExisting_optional,
+  _swigc__p_T24TotalStoryCountExisting_traits,
+  _swigc__p_T24TotalStoryCountExisting_type,
+  _swigc__p_T24TotalStoryCountNew_optional,
+  _swigc__p_T24TotalStoryCountNew_traits,
+  _swigc__p_T24TotalStoryCountNew_type,
   _swigc__p_Tag_optional,
   _swigc__p_Tag_traits,
   _swigc__p_Tag_type,
@@ -20122,15 +21134,6 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_TemplatesForMembers_optional,
   _swigc__p_TemplatesForMembers_traits,
   _swigc__p_TemplatesForMembers_type,
-  _swigc__p_TotalStoryCountAltered_optional,
-  _swigc__p_TotalStoryCountAltered_traits,
-  _swigc__p_TotalStoryCountAltered_type,
-  _swigc__p_TotalStoryCountExisting_optional,
-  _swigc__p_TotalStoryCountExisting_traits,
-  _swigc__p_TotalStoryCountExisting_type,
-  _swigc__p_TotalStoryCountNew_optional,
-  _swigc__p_TotalStoryCountNew_traits,
-  _swigc__p_TotalStoryCountNew_type,
   _swigc__p_TypeDefCreationParams_optional,
   _swigc__p_TypeDefCreationParams_traits,
   _swigc__p_TypeDefCreationParams_type,
@@ -20162,6 +21165,7 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_base_const_iterator,
   _swigc__p_base_iterator,
   _swigc__p_base_sequence,
+  _swigc__p_base_type,
   _swigc__p_bool,
   _swigc__p_bool_convertible,
   _swigc__p_char,
@@ -20279,9 +21283,11 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_xsd__cxx__tree__propertiesT_char_t,
   _swigc__p_xsd__cxx__tree__qnameT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__uri_xsd__cxx__tree__ncname_t,
   _swigc__p_xsd__cxx__tree__sequenceT_schema__simxml__BuildingModel__SimBuilding_Building_Default_false_t,
+  _swigc__p_xsd__cxx__tree__sequenceT_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree__type_t_t_false_t,
   _swigc__p_xsd__cxx__tree__sequence_common,
   _swigc__p_xsd__cxx__tree__severity,
   _swigc__p_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t,
+  _swigc__p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree__type_t_t,
   _swigc__p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t,
   _swigc__p_xsd__cxx__tree__timeT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t,
   _swigc__p_xsd__cxx__tree__time_zone,

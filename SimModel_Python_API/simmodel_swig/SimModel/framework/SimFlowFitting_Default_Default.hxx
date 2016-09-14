@@ -260,6 +260,24 @@ namespace schema
       class SimFlowFitting_Default_Default: public ::schema::simxml::MepModel::SimFlowFitting_Default
       {
         public:
+        // InteriorRoughnessCoeff
+        //
+        typedef ::xml_schema::double_ InteriorRoughnessCoeff_type;
+        typedef ::xsd::cxx::tree::optional< InteriorRoughnessCoeff_type, true > InteriorRoughnessCoeff_optional;
+        typedef ::xsd::cxx::tree::traits< InteriorRoughnessCoeff_type, char, ::xsd::cxx::tree::schema_type::double_ > InteriorRoughnessCoeff_traits;
+
+        const InteriorRoughnessCoeff_optional&
+        InteriorRoughnessCoeff () const;
+
+        InteriorRoughnessCoeff_optional&
+        InteriorRoughnessCoeff ();
+
+        void
+        InteriorRoughnessCoeff (const InteriorRoughnessCoeff_type& x);
+
+        void
+        InteriorRoughnessCoeff (const InteriorRoughnessCoeff_optional& x);
+
         // Constructors.
         //
         SimFlowFitting_Default_Default ();
@@ -278,8 +296,21 @@ namespace schema
         _clone (::xml_schema::flags f = 0,
                 ::xml_schema::container* c = 0) const;
 
+        SimFlowFitting_Default_Default&
+        operator= (const SimFlowFitting_Default_Default& x);
+
         virtual 
         ~SimFlowFitting_Default_Default ();
+
+        // Implementation.
+        //
+        protected:
+        void
+        parse (::xsd::cxx::xml::dom::parser< char >&,
+               ::xml_schema::flags);
+
+        protected:
+        InteriorRoughnessCoeff_optional InteriorRoughnessCoeff_;
       };
     }
   }

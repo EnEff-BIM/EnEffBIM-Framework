@@ -111,6 +111,9 @@ class SimMaterial_GlazingMaterial_Glazing(SimMaterial_GlazingMaterial_Gas.SimMat
     __getattr__ = lambda self, name: _swig_getattr(self, SimMaterial_GlazingMaterial_Glazing, name)
     __repr__ = _swig_repr
 
+    def SimMaterial_Name(self, *args):
+        return _SimMaterial_GlazingMaterial_Glazing.SimMaterial_GlazingMaterial_Glazing_SimMaterial_Name(self, *args)
+
     def SimMaterial_Thick(self, *args):
         return _SimMaterial_GlazingMaterial_Glazing.SimMaterial_GlazingMaterial_Glazing_SimMaterial_Thick(self, *args)
 

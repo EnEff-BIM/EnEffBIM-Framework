@@ -260,6 +260,183 @@ namespace schema
       class SimSystem_ElectricalLighting_LightingCircuit: public ::schema::simxml::BuildingModel::SimSystem_ElectricalLighting
       {
         public:
+        // T24DaylitAreaType
+        //
+        typedef ::xml_schema::string T24DaylitAreaType_type;
+        typedef ::xsd::cxx::tree::optional< T24DaylitAreaType_type > T24DaylitAreaType_optional;
+        typedef ::xsd::cxx::tree::traits< T24DaylitAreaType_type, char > T24DaylitAreaType_traits;
+
+        const T24DaylitAreaType_optional&
+        T24DaylitAreaType () const;
+
+        T24DaylitAreaType_optional&
+        T24DaylitAreaType ();
+
+        void
+        T24DaylitAreaType (const T24DaylitAreaType_type& x);
+
+        void
+        T24DaylitAreaType (const T24DaylitAreaType_optional& x);
+
+        void
+        T24DaylitAreaType (::std::auto_ptr< T24DaylitAreaType_type > p);
+
+        // T24IsAcceptanceTestRequiredReport
+        //
+        typedef ::xml_schema::int_ T24IsAcceptanceTestRequiredReport_type;
+        typedef ::xsd::cxx::tree::optional< T24IsAcceptanceTestRequiredReport_type > T24IsAcceptanceTestRequiredReport_optional;
+        typedef ::xsd::cxx::tree::traits< T24IsAcceptanceTestRequiredReport_type, char > T24IsAcceptanceTestRequiredReport_traits;
+
+        const T24IsAcceptanceTestRequiredReport_optional&
+        T24IsAcceptanceTestRequiredReport () const;
+
+        T24IsAcceptanceTestRequiredReport_optional&
+        T24IsAcceptanceTestRequiredReport ();
+
+        void
+        T24IsAcceptanceTestRequiredReport (const T24IsAcceptanceTestRequiredReport_type& x);
+
+        void
+        T24IsAcceptanceTestRequiredReport (const T24IsAcceptanceTestRequiredReport_optional& x);
+
+        // T24LightingControlCountReport
+        //
+        typedef ::xml_schema::int_ T24LightingControlCountReport_type;
+        typedef ::xsd::cxx::tree::optional< T24LightingControlCountReport_type > T24LightingControlCountReport_optional;
+        typedef ::xsd::cxx::tree::traits< T24LightingControlCountReport_type, char > T24LightingControlCountReport_traits;
+
+        const T24LightingControlCountReport_optional&
+        T24LightingControlCountReport () const;
+
+        T24LightingControlCountReport_optional&
+        T24LightingControlCountReport ();
+
+        void
+        T24LightingControlCountReport (const T24LightingControlCountReport_type& x);
+
+        void
+        T24LightingControlCountReport (const T24LightingControlCountReport_optional& x);
+
+        // T24NonRegExclusion
+        //
+        typedef ::xml_schema::string T24NonRegExclusion_type;
+        typedef ::xsd::cxx::tree::optional< T24NonRegExclusion_type > T24NonRegExclusion_optional;
+        typedef ::xsd::cxx::tree::traits< T24NonRegExclusion_type, char > T24NonRegExclusion_traits;
+
+        const T24NonRegExclusion_optional&
+        T24NonRegExclusion () const;
+
+        T24NonRegExclusion_optional&
+        T24NonRegExclusion ();
+
+        void
+        T24NonRegExclusion (const T24NonRegExclusion_type& x);
+
+        void
+        T24NonRegExclusion (const T24NonRegExclusion_optional& x);
+
+        void
+        T24NonRegExclusion (::std::auto_ptr< T24NonRegExclusion_type > p);
+
+        // T24PwrAdjFacCreditType
+        //
+        typedef ::xml_schema::string T24PwrAdjFacCreditType_type;
+        typedef ::xsd::cxx::tree::optional< T24PwrAdjFacCreditType_type > T24PwrAdjFacCreditType_optional;
+        typedef ::xsd::cxx::tree::traits< T24PwrAdjFacCreditType_type, char > T24PwrAdjFacCreditType_traits;
+
+        const T24PwrAdjFacCreditType_optional&
+        T24PwrAdjFacCreditType () const;
+
+        T24PwrAdjFacCreditType_optional&
+        T24PwrAdjFacCreditType ();
+
+        void
+        T24PwrAdjFacCreditType (const T24PwrAdjFacCreditType_type& x);
+
+        void
+        T24PwrAdjFacCreditType (const T24PwrAdjFacCreditType_optional& x);
+
+        void
+        T24PwrAdjFacCreditType (::std::auto_ptr< T24PwrAdjFacCreditType_type > p);
+
+        // T24PowerRegulated
+        //
+        typedef ::xml_schema::int_ T24PowerRegulated_type;
+        typedef ::xsd::cxx::tree::optional< T24PowerRegulated_type > T24PowerRegulated_optional;
+        typedef ::xsd::cxx::tree::traits< T24PowerRegulated_type, char > T24PowerRegulated_traits;
+
+        const T24PowerRegulated_optional&
+        T24PowerRegulated () const;
+
+        T24PowerRegulated_optional&
+        T24PowerRegulated ();
+
+        void
+        T24PowerRegulated (const T24PowerRegulated_type& x);
+
+        void
+        T24PowerRegulated (const T24PowerRegulated_optional& x);
+
+        // T24ConstructStatus4
+        //
+        typedef ::xml_schema::string T24ConstructStatus4_type;
+        typedef ::xsd::cxx::tree::optional< T24ConstructStatus4_type > T24ConstructStatus4_optional;
+        typedef ::xsd::cxx::tree::traits< T24ConstructStatus4_type, char > T24ConstructStatus4_traits;
+
+        const T24ConstructStatus4_optional&
+        T24ConstructStatus4 () const;
+
+        T24ConstructStatus4_optional&
+        T24ConstructStatus4 ();
+
+        void
+        T24ConstructStatus4 (const T24ConstructStatus4_type& x);
+
+        void
+        T24ConstructStatus4 (const T24ConstructStatus4_optional& x);
+
+        void
+        T24ConstructStatus4 (::std::auto_ptr< T24ConstructStatus4_type > p);
+
+        // T24VeryValuableDisplayDescription
+        //
+        typedef ::xml_schema::string T24VeryValuableDisplayDescription_type;
+        typedef ::xsd::cxx::tree::optional< T24VeryValuableDisplayDescription_type > T24VeryValuableDisplayDescription_optional;
+        typedef ::xsd::cxx::tree::traits< T24VeryValuableDisplayDescription_type, char > T24VeryValuableDisplayDescription_traits;
+
+        const T24VeryValuableDisplayDescription_optional&
+        T24VeryValuableDisplayDescription () const;
+
+        T24VeryValuableDisplayDescription_optional&
+        T24VeryValuableDisplayDescription ();
+
+        void
+        T24VeryValuableDisplayDescription (const T24VeryValuableDisplayDescription_type& x);
+
+        void
+        T24VeryValuableDisplayDescription (const T24VeryValuableDisplayDescription_optional& x);
+
+        void
+        T24VeryValuableDisplayDescription (::std::auto_ptr< T24VeryValuableDisplayDescription_type > p);
+
+        // T24WorkPlaneHeight
+        //
+        typedef ::xml_schema::double_ T24WorkPlaneHeight_type;
+        typedef ::xsd::cxx::tree::optional< T24WorkPlaneHeight_type > T24WorkPlaneHeight_optional;
+        typedef ::xsd::cxx::tree::traits< T24WorkPlaneHeight_type, char, ::xsd::cxx::tree::schema_type::double_ > T24WorkPlaneHeight_traits;
+
+        const T24WorkPlaneHeight_optional&
+        T24WorkPlaneHeight () const;
+
+        T24WorkPlaneHeight_optional&
+        T24WorkPlaneHeight ();
+
+        void
+        T24WorkPlaneHeight (const T24WorkPlaneHeight_type& x);
+
+        void
+        T24WorkPlaneHeight (const T24WorkPlaneHeight_optional& x);
+
         // Constructors.
         //
         SimSystem_ElectricalLighting_LightingCircuit ();
@@ -278,8 +455,29 @@ namespace schema
         _clone (::xml_schema::flags f = 0,
                 ::xml_schema::container* c = 0) const;
 
+        SimSystem_ElectricalLighting_LightingCircuit&
+        operator= (const SimSystem_ElectricalLighting_LightingCircuit& x);
+
         virtual 
         ~SimSystem_ElectricalLighting_LightingCircuit ();
+
+        // Implementation.
+        //
+        protected:
+        void
+        parse (::xsd::cxx::xml::dom::parser< char >&,
+               ::xml_schema::flags);
+
+        protected:
+        T24DaylitAreaType_optional T24DaylitAreaType_;
+        T24IsAcceptanceTestRequiredReport_optional T24IsAcceptanceTestRequiredReport_;
+        T24LightingControlCountReport_optional T24LightingControlCountReport_;
+        T24NonRegExclusion_optional T24NonRegExclusion_;
+        T24PwrAdjFacCreditType_optional T24PwrAdjFacCreditType_;
+        T24PowerRegulated_optional T24PowerRegulated_;
+        T24ConstructStatus4_optional T24ConstructStatus4_;
+        T24VeryValuableDisplayDescription_optional T24VeryValuableDisplayDescription_;
+        T24WorkPlaneHeight_optional T24WorkPlaneHeight_;
       };
     }
   }

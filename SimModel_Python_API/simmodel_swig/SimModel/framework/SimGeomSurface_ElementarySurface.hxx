@@ -263,8 +263,7 @@ namespace schema
         // Position
         //
         typedef ::xml_schema::idref Position_type;
-        typedef ::xsd::cxx::tree::optional< Position_type
-, false > Position_optional;
+        typedef ::xsd::cxx::tree::optional< Position_type, false > Position_optional;
         typedef ::xsd::cxx::tree::traits< Position_type, char > Position_traits;
 
         const Position_optional&

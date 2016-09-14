@@ -264,7 +264,6 @@ namespace schema
         //
         typedef ::xml_schema::string SiteShape_type;
         typedef ::xsd::cxx::tree::optional< SiteShape_type, false > SiteShape_optional;
-		//typedef ::xsd::cxx::tree::optional< SiteShape_type, false > SiteShape_optional;
         typedef ::xsd::cxx::tree::traits< SiteShape_type, char > SiteShape_traits;
 
         const SiteShape_optional&

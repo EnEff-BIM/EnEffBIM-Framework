@@ -291,12 +291,6 @@ class SimSlab_RoofSlab_RoofUnderAir(SimSlab_RoofSlab):
     def T24FieldAppliedCoating(self, *args):
         return _SimSlab_RoofSlab_RoofUnderAir.SimSlab_RoofSlab_RoofUnderAir_T24FieldAppliedCoating(self, *args)
 
-    def T24RoofAgedSolarReflectance(self, *args):
-        return _SimSlab_RoofSlab_RoofUnderAir.SimSlab_RoofSlab_RoofUnderAir_T24RoofAgedSolarReflectance(self, *args)
-
-    def T24RoofAgedThermalEmittance(self, *args):
-        return _SimSlab_RoofSlab_RoofUnderAir.SimSlab_RoofSlab_RoofUnderAir_T24RoofAgedThermalEmittance(self, *args)
-
     def T24ConstructStatus3(self, *args):
         return _SimSlab_RoofSlab_RoofUnderAir.SimSlab_RoofSlab_RoofUnderAir_T24ConstructStatus3(self, *args)
 

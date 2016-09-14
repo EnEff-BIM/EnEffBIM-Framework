@@ -260,6 +260,624 @@ namespace schema
       class SimFlowPlant_ElectricalGenerator_FuelCellPowerModule: public ::schema::simxml::MepModel::SimFlowPlant_ElectricalGenerator
       {
         public:
+        // SimFlowPlant_Name
+        //
+        typedef ::xml_schema::string SimFlowPlant_Name_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_Name_type > SimFlowPlant_Name_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_Name_type, char > SimFlowPlant_Name_traits;
+
+        const SimFlowPlant_Name_optional&
+        SimFlowPlant_Name () const;
+
+        SimFlowPlant_Name_optional&
+        SimFlowPlant_Name ();
+
+        void
+        SimFlowPlant_Name (const SimFlowPlant_Name_type& x);
+
+        void
+        SimFlowPlant_Name (const SimFlowPlant_Name_optional& x);
+
+        void
+        SimFlowPlant_Name (::std::auto_ptr< SimFlowPlant_Name_type > p);
+
+        // SimFlowPlant_EffCurveMode
+        //
+        typedef ::xml_schema::string SimFlowPlant_EffCurveMode_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_EffCurveMode_type > SimFlowPlant_EffCurveMode_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_EffCurveMode_type, char > SimFlowPlant_EffCurveMode_traits;
+
+        const SimFlowPlant_EffCurveMode_optional&
+        SimFlowPlant_EffCurveMode () const;
+
+        SimFlowPlant_EffCurveMode_optional&
+        SimFlowPlant_EffCurveMode ();
+
+        void
+        SimFlowPlant_EffCurveMode (const SimFlowPlant_EffCurveMode_type& x);
+
+        void
+        SimFlowPlant_EffCurveMode (const SimFlowPlant_EffCurveMode_optional& x);
+
+        void
+        SimFlowPlant_EffCurveMode (::std::auto_ptr< SimFlowPlant_EffCurveMode_type > p);
+
+        // SimFlowPlant_EffCurveName
+        //
+        typedef ::xml_schema::idref SimFlowPlant_EffCurveName_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_EffCurveName_type > SimFlowPlant_EffCurveName_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_EffCurveName_type, char > SimFlowPlant_EffCurveName_traits;
+
+        const SimFlowPlant_EffCurveName_optional&
+        SimFlowPlant_EffCurveName () const;
+
+        SimFlowPlant_EffCurveName_optional&
+        SimFlowPlant_EffCurveName ();
+
+        void
+        SimFlowPlant_EffCurveName (const SimFlowPlant_EffCurveName_type& x);
+
+        void
+        SimFlowPlant_EffCurveName (const SimFlowPlant_EffCurveName_optional& x);
+
+        void
+        SimFlowPlant_EffCurveName (::std::auto_ptr< SimFlowPlant_EffCurveName_type > p);
+
+        // SimFlowPlant_NomEff
+        //
+        typedef ::xml_schema::double_ SimFlowPlant_NomEff_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_NomEff_type > SimFlowPlant_NomEff_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_NomEff_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_NomEff_traits;
+
+        const SimFlowPlant_NomEff_optional&
+        SimFlowPlant_NomEff () const;
+
+        SimFlowPlant_NomEff_optional&
+        SimFlowPlant_NomEff ();
+
+        void
+        SimFlowPlant_NomEff (const SimFlowPlant_NomEff_type& x);
+
+        void
+        SimFlowPlant_NomEff (const SimFlowPlant_NomEff_optional& x);
+
+        // SimFlowPlant_NomElecPwr
+        //
+        typedef ::xml_schema::double_ SimFlowPlant_NomElecPwr_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_NomElecPwr_type > SimFlowPlant_NomElecPwr_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_NomElecPwr_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_NomElecPwr_traits;
+
+        const SimFlowPlant_NomElecPwr_optional&
+        SimFlowPlant_NomElecPwr () const;
+
+        SimFlowPlant_NomElecPwr_optional&
+        SimFlowPlant_NomElecPwr ();
+
+        void
+        SimFlowPlant_NomElecPwr (const SimFlowPlant_NomElecPwr_type& x);
+
+        void
+        SimFlowPlant_NomElecPwr (const SimFlowPlant_NomElecPwr_optional& x);
+
+        // SimFlowPlant_NumStopsAtStartSim
+        //
+        typedef ::xml_schema::double_ SimFlowPlant_NumStopsAtStartSim_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_NumStopsAtStartSim_type > SimFlowPlant_NumStopsAtStartSim_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_NumStopsAtStartSim_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_NumStopsAtStartSim_traits;
+
+        const SimFlowPlant_NumStopsAtStartSim_optional&
+        SimFlowPlant_NumStopsAtStartSim () const;
+
+        SimFlowPlant_NumStopsAtStartSim_optional&
+        SimFlowPlant_NumStopsAtStartSim ();
+
+        void
+        SimFlowPlant_NumStopsAtStartSim (const SimFlowPlant_NumStopsAtStartSim_type& x);
+
+        void
+        SimFlowPlant_NumStopsAtStartSim (const SimFlowPlant_NumStopsAtStartSim_optional& x);
+
+        // SimFlowPlant_CyclingPerfDegradCoef
+        //
+        typedef ::xml_schema::double_ SimFlowPlant_CyclingPerfDegradCoef_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_CyclingPerfDegradCoef_type > SimFlowPlant_CyclingPerfDegradCoef_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_CyclingPerfDegradCoef_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_CyclingPerfDegradCoef_traits;
+
+        const SimFlowPlant_CyclingPerfDegradCoef_optional&
+        SimFlowPlant_CyclingPerfDegradCoef () const;
+
+        SimFlowPlant_CyclingPerfDegradCoef_optional&
+        SimFlowPlant_CyclingPerfDegradCoef ();
+
+        void
+        SimFlowPlant_CyclingPerfDegradCoef (const SimFlowPlant_CyclingPerfDegradCoef_type& x);
+
+        void
+        SimFlowPlant_CyclingPerfDegradCoef (const SimFlowPlant_CyclingPerfDegradCoef_optional& x);
+
+        // SimFlowPlant_NumRunHoursAtBeginningSim
+        //
+        typedef ::xml_schema::double_ SimFlowPlant_NumRunHoursAtBeginningSim_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_NumRunHoursAtBeginningSim_type > SimFlowPlant_NumRunHoursAtBeginningSim_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_NumRunHoursAtBeginningSim_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_NumRunHoursAtBeginningSim_traits;
+
+        const SimFlowPlant_NumRunHoursAtBeginningSim_optional&
+        SimFlowPlant_NumRunHoursAtBeginningSim () const;
+
+        SimFlowPlant_NumRunHoursAtBeginningSim_optional&
+        SimFlowPlant_NumRunHoursAtBeginningSim ();
+
+        void
+        SimFlowPlant_NumRunHoursAtBeginningSim (const SimFlowPlant_NumRunHoursAtBeginningSim_type& x);
+
+        void
+        SimFlowPlant_NumRunHoursAtBeginningSim (const SimFlowPlant_NumRunHoursAtBeginningSim_optional& x);
+
+        // SimFlowPlant_AccumRunTimeDegradCoef
+        //
+        typedef ::xml_schema::double_ SimFlowPlant_AccumRunTimeDegradCoef_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_AccumRunTimeDegradCoef_type > SimFlowPlant_AccumRunTimeDegradCoef_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_AccumRunTimeDegradCoef_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_AccumRunTimeDegradCoef_traits;
+
+        const SimFlowPlant_AccumRunTimeDegradCoef_optional&
+        SimFlowPlant_AccumRunTimeDegradCoef () const;
+
+        SimFlowPlant_AccumRunTimeDegradCoef_optional&
+        SimFlowPlant_AccumRunTimeDegradCoef ();
+
+        void
+        SimFlowPlant_AccumRunTimeDegradCoef (const SimFlowPlant_AccumRunTimeDegradCoef_type& x);
+
+        void
+        SimFlowPlant_AccumRunTimeDegradCoef (const SimFlowPlant_AccumRunTimeDegradCoef_optional& x);
+
+        // SimFlowPlant_RunTimeDegradTimeThresh
+        //
+        typedef ::xml_schema::double_ SimFlowPlant_RunTimeDegradTimeThresh_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_RunTimeDegradTimeThresh_type > SimFlowPlant_RunTimeDegradTimeThresh_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_RunTimeDegradTimeThresh_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_RunTimeDegradTimeThresh_traits;
+
+        const SimFlowPlant_RunTimeDegradTimeThresh_optional&
+        SimFlowPlant_RunTimeDegradTimeThresh () const;
+
+        SimFlowPlant_RunTimeDegradTimeThresh_optional&
+        SimFlowPlant_RunTimeDegradTimeThresh ();
+
+        void
+        SimFlowPlant_RunTimeDegradTimeThresh (const SimFlowPlant_RunTimeDegradTimeThresh_type& x);
+
+        void
+        SimFlowPlant_RunTimeDegradTimeThresh (const SimFlowPlant_RunTimeDegradTimeThresh_optional& x);
+
+        // SimFlowPlant_PwrUpTransientLimit
+        //
+        typedef ::xml_schema::double_ SimFlowPlant_PwrUpTransientLimit_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_PwrUpTransientLimit_type > SimFlowPlant_PwrUpTransientLimit_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_PwrUpTransientLimit_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_PwrUpTransientLimit_traits;
+
+        const SimFlowPlant_PwrUpTransientLimit_optional&
+        SimFlowPlant_PwrUpTransientLimit () const;
+
+        SimFlowPlant_PwrUpTransientLimit_optional&
+        SimFlowPlant_PwrUpTransientLimit ();
+
+        void
+        SimFlowPlant_PwrUpTransientLimit (const SimFlowPlant_PwrUpTransientLimit_type& x);
+
+        void
+        SimFlowPlant_PwrUpTransientLimit (const SimFlowPlant_PwrUpTransientLimit_optional& x);
+
+        // SimFlowPlant_PwrDownTransientLimit
+        //
+        typedef ::xml_schema::double_ SimFlowPlant_PwrDownTransientLimit_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_PwrDownTransientLimit_type > SimFlowPlant_PwrDownTransientLimit_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_PwrDownTransientLimit_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_PwrDownTransientLimit_traits;
+
+        const SimFlowPlant_PwrDownTransientLimit_optional&
+        SimFlowPlant_PwrDownTransientLimit () const;
+
+        SimFlowPlant_PwrDownTransientLimit_optional&
+        SimFlowPlant_PwrDownTransientLimit ();
+
+        void
+        SimFlowPlant_PwrDownTransientLimit (const SimFlowPlant_PwrDownTransientLimit_type& x);
+
+        void
+        SimFlowPlant_PwrDownTransientLimit (const SimFlowPlant_PwrDownTransientLimit_optional& x);
+
+        // SimFlowPlant_StartUpTime
+        //
+        typedef ::xml_schema::double_ SimFlowPlant_StartUpTime_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_StartUpTime_type > SimFlowPlant_StartUpTime_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_StartUpTime_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_StartUpTime_traits;
+
+        const SimFlowPlant_StartUpTime_optional&
+        SimFlowPlant_StartUpTime () const;
+
+        SimFlowPlant_StartUpTime_optional&
+        SimFlowPlant_StartUpTime ();
+
+        void
+        SimFlowPlant_StartUpTime (const SimFlowPlant_StartUpTime_type& x);
+
+        void
+        SimFlowPlant_StartUpTime (const SimFlowPlant_StartUpTime_optional& x);
+
+        // SimFlowPlant_StartUpFuel
+        //
+        typedef ::xml_schema::double_ SimFlowPlant_StartUpFuel_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_StartUpFuel_type > SimFlowPlant_StartUpFuel_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_StartUpFuel_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_StartUpFuel_traits;
+
+        const SimFlowPlant_StartUpFuel_optional&
+        SimFlowPlant_StartUpFuel () const;
+
+        SimFlowPlant_StartUpFuel_optional&
+        SimFlowPlant_StartUpFuel ();
+
+        void
+        SimFlowPlant_StartUpFuel (const SimFlowPlant_StartUpFuel_type& x);
+
+        void
+        SimFlowPlant_StartUpFuel (const SimFlowPlant_StartUpFuel_optional& x);
+
+        // SimFlowPlant_StartUpElecityConsump
+        //
+        typedef ::xml_schema::double_ SimFlowPlant_StartUpElecityConsump_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_StartUpElecityConsump_type > SimFlowPlant_StartUpElecityConsump_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_StartUpElecityConsump_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_StartUpElecityConsump_traits;
+
+        const SimFlowPlant_StartUpElecityConsump_optional&
+        SimFlowPlant_StartUpElecityConsump () const;
+
+        SimFlowPlant_StartUpElecityConsump_optional&
+        SimFlowPlant_StartUpElecityConsump ();
+
+        void
+        SimFlowPlant_StartUpElecityConsump (const SimFlowPlant_StartUpElecityConsump_type& x);
+
+        void
+        SimFlowPlant_StartUpElecityConsump (const SimFlowPlant_StartUpElecityConsump_optional& x);
+
+        // SimFlowPlant_StartUpElecityProInduced
+        //
+        typedef ::xml_schema::double_ SimFlowPlant_StartUpElecityProInduced_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_StartUpElecityProInduced_type > SimFlowPlant_StartUpElecityProInduced_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_StartUpElecityProInduced_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_StartUpElecityProInduced_traits;
+
+        const SimFlowPlant_StartUpElecityProInduced_optional&
+        SimFlowPlant_StartUpElecityProInduced () const;
+
+        SimFlowPlant_StartUpElecityProInduced_optional&
+        SimFlowPlant_StartUpElecityProInduced ();
+
+        void
+        SimFlowPlant_StartUpElecityProInduced (const SimFlowPlant_StartUpElecityProInduced_type& x);
+
+        void
+        SimFlowPlant_StartUpElecityProInduced (const SimFlowPlant_StartUpElecityProInduced_optional& x);
+
+        // SimFlowPlant_ShutDownTime
+        //
+        typedef ::xml_schema::double_ SimFlowPlant_ShutDownTime_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_ShutDownTime_type > SimFlowPlant_ShutDownTime_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_ShutDownTime_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_ShutDownTime_traits;
+
+        const SimFlowPlant_ShutDownTime_optional&
+        SimFlowPlant_ShutDownTime () const;
+
+        SimFlowPlant_ShutDownTime_optional&
+        SimFlowPlant_ShutDownTime ();
+
+        void
+        SimFlowPlant_ShutDownTime (const SimFlowPlant_ShutDownTime_type& x);
+
+        void
+        SimFlowPlant_ShutDownTime (const SimFlowPlant_ShutDownTime_optional& x);
+
+        // SimFlowPlant_ShutDownFuel
+        //
+        typedef ::xml_schema::double_ SimFlowPlant_ShutDownFuel_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_ShutDownFuel_type > SimFlowPlant_ShutDownFuel_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_ShutDownFuel_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_ShutDownFuel_traits;
+
+        const SimFlowPlant_ShutDownFuel_optional&
+        SimFlowPlant_ShutDownFuel () const;
+
+        SimFlowPlant_ShutDownFuel_optional&
+        SimFlowPlant_ShutDownFuel ();
+
+        void
+        SimFlowPlant_ShutDownFuel (const SimFlowPlant_ShutDownFuel_type& x);
+
+        void
+        SimFlowPlant_ShutDownFuel (const SimFlowPlant_ShutDownFuel_optional& x);
+
+        // SimFlowPlant_ShutDownElecityConsump
+        //
+        typedef ::xml_schema::double_ SimFlowPlant_ShutDownElecityConsump_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_ShutDownElecityConsump_type > SimFlowPlant_ShutDownElecityConsump_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_ShutDownElecityConsump_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_ShutDownElecityConsump_traits;
+
+        const SimFlowPlant_ShutDownElecityConsump_optional&
+        SimFlowPlant_ShutDownElecityConsump () const;
+
+        SimFlowPlant_ShutDownElecityConsump_optional&
+        SimFlowPlant_ShutDownElecityConsump ();
+
+        void
+        SimFlowPlant_ShutDownElecityConsump (const SimFlowPlant_ShutDownElecityConsump_type& x);
+
+        void
+        SimFlowPlant_ShutDownElecityConsump (const SimFlowPlant_ShutDownElecityConsump_optional& x);
+
+        // SimFlowPlant_AncilliaryElecityConstTerm
+        //
+        typedef ::xml_schema::double_ SimFlowPlant_AncilliaryElecityConstTerm_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_AncilliaryElecityConstTerm_type > SimFlowPlant_AncilliaryElecityConstTerm_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_AncilliaryElecityConstTerm_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_AncilliaryElecityConstTerm_traits;
+
+        const SimFlowPlant_AncilliaryElecityConstTerm_optional&
+        SimFlowPlant_AncilliaryElecityConstTerm () const;
+
+        SimFlowPlant_AncilliaryElecityConstTerm_optional&
+        SimFlowPlant_AncilliaryElecityConstTerm ();
+
+        void
+        SimFlowPlant_AncilliaryElecityConstTerm (const SimFlowPlant_AncilliaryElecityConstTerm_type& x);
+
+        void
+        SimFlowPlant_AncilliaryElecityConstTerm (const SimFlowPlant_AncilliaryElecityConstTerm_optional& x);
+
+        // SimFlowPlant_AncilliaryElecityLinearTerm
+        //
+        typedef ::xml_schema::double_ SimFlowPlant_AncilliaryElecityLinearTerm_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_AncilliaryElecityLinearTerm_type > SimFlowPlant_AncilliaryElecityLinearTerm_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_AncilliaryElecityLinearTerm_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_AncilliaryElecityLinearTerm_traits;
+
+        const SimFlowPlant_AncilliaryElecityLinearTerm_optional&
+        SimFlowPlant_AncilliaryElecityLinearTerm () const;
+
+        SimFlowPlant_AncilliaryElecityLinearTerm_optional&
+        SimFlowPlant_AncilliaryElecityLinearTerm ();
+
+        void
+        SimFlowPlant_AncilliaryElecityLinearTerm (const SimFlowPlant_AncilliaryElecityLinearTerm_type& x);
+
+        void
+        SimFlowPlant_AncilliaryElecityLinearTerm (const SimFlowPlant_AncilliaryElecityLinearTerm_optional& x);
+
+        // SimFlowPlant_SkinLossCalcMode
+        //
+        typedef ::xml_schema::string SimFlowPlant_SkinLossCalcMode_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_SkinLossCalcMode_type > SimFlowPlant_SkinLossCalcMode_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_SkinLossCalcMode_type, char > SimFlowPlant_SkinLossCalcMode_traits;
+
+        const SimFlowPlant_SkinLossCalcMode_optional&
+        SimFlowPlant_SkinLossCalcMode () const;
+
+        SimFlowPlant_SkinLossCalcMode_optional&
+        SimFlowPlant_SkinLossCalcMode ();
+
+        void
+        SimFlowPlant_SkinLossCalcMode (const SimFlowPlant_SkinLossCalcMode_type& x);
+
+        void
+        SimFlowPlant_SkinLossCalcMode (const SimFlowPlant_SkinLossCalcMode_optional& x);
+
+        void
+        SimFlowPlant_SkinLossCalcMode (::std::auto_ptr< SimFlowPlant_SkinLossCalcMode_type > p);
+
+        // SimFlowPlant_ZoneName
+        //
+        typedef ::xml_schema::idref SimFlowPlant_ZoneName_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_ZoneName_type > SimFlowPlant_ZoneName_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_ZoneName_type, char > SimFlowPlant_ZoneName_traits;
+
+        const SimFlowPlant_ZoneName_optional&
+        SimFlowPlant_ZoneName () const;
+
+        SimFlowPlant_ZoneName_optional&
+        SimFlowPlant_ZoneName ();
+
+        void
+        SimFlowPlant_ZoneName (const SimFlowPlant_ZoneName_type& x);
+
+        void
+        SimFlowPlant_ZoneName (const SimFlowPlant_ZoneName_optional& x);
+
+        void
+        SimFlowPlant_ZoneName (::std::auto_ptr< SimFlowPlant_ZoneName_type > p);
+
+        // SimFlowPlant_SkinLossRadiativeFract
+        //
+        typedef ::xml_schema::double_ SimFlowPlant_SkinLossRadiativeFract_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_SkinLossRadiativeFract_type > SimFlowPlant_SkinLossRadiativeFract_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_SkinLossRadiativeFract_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_SkinLossRadiativeFract_traits;
+
+        const SimFlowPlant_SkinLossRadiativeFract_optional&
+        SimFlowPlant_SkinLossRadiativeFract () const;
+
+        SimFlowPlant_SkinLossRadiativeFract_optional&
+        SimFlowPlant_SkinLossRadiativeFract ();
+
+        void
+        SimFlowPlant_SkinLossRadiativeFract (const SimFlowPlant_SkinLossRadiativeFract_type& x);
+
+        void
+        SimFlowPlant_SkinLossRadiativeFract (const SimFlowPlant_SkinLossRadiativeFract_optional& x);
+
+        // SimFlowPlant_ConstSkinLossRate
+        //
+        typedef ::xml_schema::double_ SimFlowPlant_ConstSkinLossRate_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_ConstSkinLossRate_type > SimFlowPlant_ConstSkinLossRate_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_ConstSkinLossRate_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_ConstSkinLossRate_traits;
+
+        const SimFlowPlant_ConstSkinLossRate_optional&
+        SimFlowPlant_ConstSkinLossRate () const;
+
+        SimFlowPlant_ConstSkinLossRate_optional&
+        SimFlowPlant_ConstSkinLossRate ();
+
+        void
+        SimFlowPlant_ConstSkinLossRate (const SimFlowPlant_ConstSkinLossRate_type& x);
+
+        void
+        SimFlowPlant_ConstSkinLossRate (const SimFlowPlant_ConstSkinLossRate_optional& x);
+
+        // SimFlowPlant_SkinLossUFactorTimesAreaTerm
+        //
+        typedef ::xml_schema::double_ SimFlowPlant_SkinLossUFactorTimesAreaTerm_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_SkinLossUFactorTimesAreaTerm_type > SimFlowPlant_SkinLossUFactorTimesAreaTerm_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_SkinLossUFactorTimesAreaTerm_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_SkinLossUFactorTimesAreaTerm_traits;
+
+        const SimFlowPlant_SkinLossUFactorTimesAreaTerm_optional&
+        SimFlowPlant_SkinLossUFactorTimesAreaTerm () const;
+
+        SimFlowPlant_SkinLossUFactorTimesAreaTerm_optional&
+        SimFlowPlant_SkinLossUFactorTimesAreaTerm ();
+
+        void
+        SimFlowPlant_SkinLossUFactorTimesAreaTerm (const SimFlowPlant_SkinLossUFactorTimesAreaTerm_type& x);
+
+        void
+        SimFlowPlant_SkinLossUFactorTimesAreaTerm (const SimFlowPlant_SkinLossUFactorTimesAreaTerm_optional& x);
+
+        // SimFlowPlant_SkinLossQuadraticCurveName
+        //
+        typedef ::xml_schema::idref SimFlowPlant_SkinLossQuadraticCurveName_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_SkinLossQuadraticCurveName_type > SimFlowPlant_SkinLossQuadraticCurveName_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_SkinLossQuadraticCurveName_type, char > SimFlowPlant_SkinLossQuadraticCurveName_traits;
+
+        const SimFlowPlant_SkinLossQuadraticCurveName_optional&
+        SimFlowPlant_SkinLossQuadraticCurveName () const;
+
+        SimFlowPlant_SkinLossQuadraticCurveName_optional&
+        SimFlowPlant_SkinLossQuadraticCurveName ();
+
+        void
+        SimFlowPlant_SkinLossQuadraticCurveName (const SimFlowPlant_SkinLossQuadraticCurveName_type& x);
+
+        void
+        SimFlowPlant_SkinLossQuadraticCurveName (const SimFlowPlant_SkinLossQuadraticCurveName_optional& x);
+
+        void
+        SimFlowPlant_SkinLossQuadraticCurveName (::std::auto_ptr< SimFlowPlant_SkinLossQuadraticCurveName_type > p);
+
+        // SimFlowPlant_DilutionAirFlowRate
+        //
+        typedef ::xml_schema::double_ SimFlowPlant_DilutionAirFlowRate_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_DilutionAirFlowRate_type > SimFlowPlant_DilutionAirFlowRate_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_DilutionAirFlowRate_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_DilutionAirFlowRate_traits;
+
+        const SimFlowPlant_DilutionAirFlowRate_optional&
+        SimFlowPlant_DilutionAirFlowRate () const;
+
+        SimFlowPlant_DilutionAirFlowRate_optional&
+        SimFlowPlant_DilutionAirFlowRate ();
+
+        void
+        SimFlowPlant_DilutionAirFlowRate (const SimFlowPlant_DilutionAirFlowRate_type& x);
+
+        void
+        SimFlowPlant_DilutionAirFlowRate (const SimFlowPlant_DilutionAirFlowRate_optional& x);
+
+        // SimFlowPlant_StackHeatLossToDilutionAir
+        //
+        typedef ::xml_schema::double_ SimFlowPlant_StackHeatLossToDilutionAir_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_StackHeatLossToDilutionAir_type > SimFlowPlant_StackHeatLossToDilutionAir_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_StackHeatLossToDilutionAir_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_StackHeatLossToDilutionAir_traits;
+
+        const SimFlowPlant_StackHeatLossToDilutionAir_optional&
+        SimFlowPlant_StackHeatLossToDilutionAir () const;
+
+        SimFlowPlant_StackHeatLossToDilutionAir_optional&
+        SimFlowPlant_StackHeatLossToDilutionAir ();
+
+        void
+        SimFlowPlant_StackHeatLossToDilutionAir (const SimFlowPlant_StackHeatLossToDilutionAir_type& x);
+
+        void
+        SimFlowPlant_StackHeatLossToDilutionAir (const SimFlowPlant_StackHeatLossToDilutionAir_optional& x);
+
+        // SimFlowPlant_DilutionInletAirNodeName
+        //
+        typedef ::xml_schema::string SimFlowPlant_DilutionInletAirNodeName_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_DilutionInletAirNodeName_type > SimFlowPlant_DilutionInletAirNodeName_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_DilutionInletAirNodeName_type, char > SimFlowPlant_DilutionInletAirNodeName_traits;
+
+        const SimFlowPlant_DilutionInletAirNodeName_optional&
+        SimFlowPlant_DilutionInletAirNodeName () const;
+
+        SimFlowPlant_DilutionInletAirNodeName_optional&
+        SimFlowPlant_DilutionInletAirNodeName ();
+
+        void
+        SimFlowPlant_DilutionInletAirNodeName (const SimFlowPlant_DilutionInletAirNodeName_type& x);
+
+        void
+        SimFlowPlant_DilutionInletAirNodeName (const SimFlowPlant_DilutionInletAirNodeName_optional& x);
+
+        void
+        SimFlowPlant_DilutionInletAirNodeName (::std::auto_ptr< SimFlowPlant_DilutionInletAirNodeName_type > p);
+
+        // SimFlowPlant_DilutionOutletAirNodeName
+        //
+        typedef ::xml_schema::string SimFlowPlant_DilutionOutletAirNodeName_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_DilutionOutletAirNodeName_type > SimFlowPlant_DilutionOutletAirNodeName_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_DilutionOutletAirNodeName_type, char > SimFlowPlant_DilutionOutletAirNodeName_traits;
+
+        const SimFlowPlant_DilutionOutletAirNodeName_optional&
+        SimFlowPlant_DilutionOutletAirNodeName () const;
+
+        SimFlowPlant_DilutionOutletAirNodeName_optional&
+        SimFlowPlant_DilutionOutletAirNodeName ();
+
+        void
+        SimFlowPlant_DilutionOutletAirNodeName (const SimFlowPlant_DilutionOutletAirNodeName_type& x);
+
+        void
+        SimFlowPlant_DilutionOutletAirNodeName (const SimFlowPlant_DilutionOutletAirNodeName_optional& x);
+
+        void
+        SimFlowPlant_DilutionOutletAirNodeName (::std::auto_ptr< SimFlowPlant_DilutionOutletAirNodeName_type > p);
+
+        // SimFlowPlant_MinOperatPoint
+        //
+        typedef ::xml_schema::double_ SimFlowPlant_MinOperatPoint_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_MinOperatPoint_type > SimFlowPlant_MinOperatPoint_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_MinOperatPoint_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_MinOperatPoint_traits;
+
+        const SimFlowPlant_MinOperatPoint_optional&
+        SimFlowPlant_MinOperatPoint () const;
+
+        SimFlowPlant_MinOperatPoint_optional&
+        SimFlowPlant_MinOperatPoint ();
+
+        void
+        SimFlowPlant_MinOperatPoint (const SimFlowPlant_MinOperatPoint_type& x);
+
+        void
+        SimFlowPlant_MinOperatPoint (const SimFlowPlant_MinOperatPoint_optional& x);
+
+        // SimFlowPlant_MaxOperatPoint
+        //
+        typedef ::xml_schema::double_ SimFlowPlant_MaxOperatPoint_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_MaxOperatPoint_type > SimFlowPlant_MaxOperatPoint_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_MaxOperatPoint_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_MaxOperatPoint_traits;
+
+        const SimFlowPlant_MaxOperatPoint_optional&
+        SimFlowPlant_MaxOperatPoint () const;
+
+        SimFlowPlant_MaxOperatPoint_optional&
+        SimFlowPlant_MaxOperatPoint ();
+
+        void
+        SimFlowPlant_MaxOperatPoint (const SimFlowPlant_MaxOperatPoint_type& x);
+
+        void
+        SimFlowPlant_MaxOperatPoint (const SimFlowPlant_MaxOperatPoint_optional& x);
+
         // Constructors.
         //
         SimFlowPlant_ElectricalGenerator_FuelCellPowerModule ();
@@ -278,8 +896,53 @@ namespace schema
         _clone (::xml_schema::flags f = 0,
                 ::xml_schema::container* c = 0) const;
 
+        SimFlowPlant_ElectricalGenerator_FuelCellPowerModule&
+        operator= (const SimFlowPlant_ElectricalGenerator_FuelCellPowerModule& x);
+
         virtual 
         ~SimFlowPlant_ElectricalGenerator_FuelCellPowerModule ();
+
+        // Implementation.
+        //
+        protected:
+        void
+        parse (::xsd::cxx::xml::dom::parser< char >&,
+               ::xml_schema::flags);
+
+        protected:
+        SimFlowPlant_Name_optional SimFlowPlant_Name_;
+        SimFlowPlant_EffCurveMode_optional SimFlowPlant_EffCurveMode_;
+        SimFlowPlant_EffCurveName_optional SimFlowPlant_EffCurveName_;
+        SimFlowPlant_NomEff_optional SimFlowPlant_NomEff_;
+        SimFlowPlant_NomElecPwr_optional SimFlowPlant_NomElecPwr_;
+        SimFlowPlant_NumStopsAtStartSim_optional SimFlowPlant_NumStopsAtStartSim_;
+        SimFlowPlant_CyclingPerfDegradCoef_optional SimFlowPlant_CyclingPerfDegradCoef_;
+        SimFlowPlant_NumRunHoursAtBeginningSim_optional SimFlowPlant_NumRunHoursAtBeginningSim_;
+        SimFlowPlant_AccumRunTimeDegradCoef_optional SimFlowPlant_AccumRunTimeDegradCoef_;
+        SimFlowPlant_RunTimeDegradTimeThresh_optional SimFlowPlant_RunTimeDegradTimeThresh_;
+        SimFlowPlant_PwrUpTransientLimit_optional SimFlowPlant_PwrUpTransientLimit_;
+        SimFlowPlant_PwrDownTransientLimit_optional SimFlowPlant_PwrDownTransientLimit_;
+        SimFlowPlant_StartUpTime_optional SimFlowPlant_StartUpTime_;
+        SimFlowPlant_StartUpFuel_optional SimFlowPlant_StartUpFuel_;
+        SimFlowPlant_StartUpElecityConsump_optional SimFlowPlant_StartUpElecityConsump_;
+        SimFlowPlant_StartUpElecityProInduced_optional SimFlowPlant_StartUpElecityProInduced_;
+        SimFlowPlant_ShutDownTime_optional SimFlowPlant_ShutDownTime_;
+        SimFlowPlant_ShutDownFuel_optional SimFlowPlant_ShutDownFuel_;
+        SimFlowPlant_ShutDownElecityConsump_optional SimFlowPlant_ShutDownElecityConsump_;
+        SimFlowPlant_AncilliaryElecityConstTerm_optional SimFlowPlant_AncilliaryElecityConstTerm_;
+        SimFlowPlant_AncilliaryElecityLinearTerm_optional SimFlowPlant_AncilliaryElecityLinearTerm_;
+        SimFlowPlant_SkinLossCalcMode_optional SimFlowPlant_SkinLossCalcMode_;
+        SimFlowPlant_ZoneName_optional SimFlowPlant_ZoneName_;
+        SimFlowPlant_SkinLossRadiativeFract_optional SimFlowPlant_SkinLossRadiativeFract_;
+        SimFlowPlant_ConstSkinLossRate_optional SimFlowPlant_ConstSkinLossRate_;
+        SimFlowPlant_SkinLossUFactorTimesAreaTerm_optional SimFlowPlant_SkinLossUFactorTimesAreaTerm_;
+        SimFlowPlant_SkinLossQuadraticCurveName_optional SimFlowPlant_SkinLossQuadraticCurveName_;
+        SimFlowPlant_DilutionAirFlowRate_optional SimFlowPlant_DilutionAirFlowRate_;
+        SimFlowPlant_StackHeatLossToDilutionAir_optional SimFlowPlant_StackHeatLossToDilutionAir_;
+        SimFlowPlant_DilutionInletAirNodeName_optional SimFlowPlant_DilutionInletAirNodeName_;
+        SimFlowPlant_DilutionOutletAirNodeName_optional SimFlowPlant_DilutionOutletAirNodeName_;
+        SimFlowPlant_MinOperatPoint_optional SimFlowPlant_MinOperatPoint_;
+        SimFlowPlant_MaxOperatPoint_optional SimFlowPlant_MaxOperatPoint_;
       };
     }
   }

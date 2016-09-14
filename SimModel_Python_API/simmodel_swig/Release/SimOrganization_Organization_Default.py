@@ -115,11 +115,11 @@ class SimOrganization(base.SimActorDefinition):
     def Name(self, *args):
         return _SimOrganization_Organization_Default.SimOrganization_Name(self, *args)
 
-    def Roles(self, *args):
-        return _SimOrganization_Organization_Default.SimOrganization_Roles(self, *args)
-
     def Addresses(self, *args):
         return _SimOrganization_Organization_Default.SimOrganization_Addresses(self, *args)
+
+    def ActorPersonAndOrganization(self, *args):
+        return _SimOrganization_Organization_Default.SimOrganization_ActorPersonAndOrganization(self, *args)
 
     def __init__(self, *args):
         this = _SimOrganization_Organization_Default.new_SimOrganization(*args)

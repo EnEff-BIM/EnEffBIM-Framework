@@ -25,6 +25,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="SimPerson_Person_Default.i" />
+    <CustomBuild Include="SimPerson_Person_Default.i" />
   </ItemGroup>
 </Project>

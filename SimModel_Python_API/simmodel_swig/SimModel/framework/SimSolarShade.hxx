@@ -341,7 +341,7 @@ namespace schema
         void
         Azimuth (const Azimuth_optional& x);
 
-        // Inclination.MeasureValue
+        // Inclination_MeasureValue
         //
         typedef ::xml_schema::double_ Inclination_MeasureValue_type;
         typedef ::xsd::cxx::tree::optional< Inclination_MeasureValue_type, true > Inclination_MeasureValue_optional;
@@ -359,7 +359,7 @@ namespace schema
         void
         Inclination_MeasureValue (const Inclination_MeasureValue_optional& x);
 
-        // TiltRange.MeasureValue
+        // TiltRange_MeasureValue
         //
         typedef ::xml_schema::double_ TiltRange_MeasureValue_type;
         typedef ::xsd::cxx::tree::optional< TiltRange_MeasureValue_type, true > TiltRange_MeasureValue_optional;
@@ -431,7 +431,7 @@ namespace schema
         void
         Reflectance (const Reflectance_optional& x);
 
-        // Roughness.MeasureValue
+        // Roughness_MeasureValue
         //
         typedef ::xml_schema::double_ Roughness_MeasureValue_type;
         typedef ::xsd::cxx::tree::optional< Roughness_MeasureValue_type, true > Roughness_MeasureValue_optional;

@@ -260,6 +260,27 @@ namespace schema
       class SimFlowEnergyTransfer_HeatingCoilWater: public ::schema::simxml::MepModel::SimFlowEnergyTransfer
       {
         public:
+        // SimFlowEnergyTrans_Name
+        //
+        typedef ::xml_schema::string SimFlowEnergyTrans_Name_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowEnergyTrans_Name_type > SimFlowEnergyTrans_Name_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowEnergyTrans_Name_type, char > SimFlowEnergyTrans_Name_traits;
+
+        const SimFlowEnergyTrans_Name_optional&
+        SimFlowEnergyTrans_Name () const;
+
+        SimFlowEnergyTrans_Name_optional&
+        SimFlowEnergyTrans_Name ();
+
+        void
+        SimFlowEnergyTrans_Name (const SimFlowEnergyTrans_Name_type& x);
+
+        void
+        SimFlowEnergyTrans_Name (const SimFlowEnergyTrans_Name_optional& x);
+
+        void
+        SimFlowEnergyTrans_Name (::std::auto_ptr< SimFlowEnergyTrans_Name_type > p);
+
         // Constructors.
         //
         SimFlowEnergyTransfer_HeatingCoilWater ();
@@ -278,8 +299,21 @@ namespace schema
         _clone (::xml_schema::flags f = 0,
                 ::xml_schema::container* c = 0) const;
 
+        SimFlowEnergyTransfer_HeatingCoilWater&
+        operator= (const SimFlowEnergyTransfer_HeatingCoilWater& x);
+
         virtual 
         ~SimFlowEnergyTransfer_HeatingCoilWater ();
+
+        // Implementation.
+        //
+        protected:
+        void
+        parse (::xsd::cxx::xml::dom::parser< char >&,
+               ::xml_schema::flags);
+
+        protected:
+        SimFlowEnergyTrans_Name_optional SimFlowEnergyTrans_Name_;
       };
     }
   }

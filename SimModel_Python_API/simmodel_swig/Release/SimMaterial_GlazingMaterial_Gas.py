@@ -110,9 +110,6 @@ class SimMaterial_GlazingMaterial(SimMaterial_Default_Default.SimMaterial):
     __getattr__ = lambda self, name: _swig_getattr(self, SimMaterial_GlazingMaterial, name)
     __repr__ = _swig_repr
 
-    def SimMaterial_Name(self, *args):
-        return _SimMaterial_GlazingMaterial_Gas.SimMaterial_GlazingMaterial_SimMaterial_Name(self, *args)
-
     def MatProp_MoistPeneDepth_Settings_Name(self, *args):
         return _SimMaterial_GlazingMaterial_Gas.SimMaterial_GlazingMaterial_MatProp_MoistPeneDepth_Settings_Name(self, *args)
 
@@ -245,6 +242,9 @@ class SimMaterial_GlazingMaterial_Gas(SimMaterial_GlazingMaterial):
         __swig_getmethods__.update(getattr(_s, '__swig_getmethods__', {}))
     __getattr__ = lambda self, name: _swig_getattr(self, SimMaterial_GlazingMaterial_Gas, name)
     __repr__ = _swig_repr
+
+    def SimMaterial_Name(self, *args):
+        return _SimMaterial_GlazingMaterial_Gas.SimMaterial_GlazingMaterial_Gas_SimMaterial_Name(self, *args)
 
     def SimMaterial_Thick(self, *args):
         return _SimMaterial_GlazingMaterial_Gas.SimMaterial_GlazingMaterial_Gas_SimMaterial_Thick(self, *args)

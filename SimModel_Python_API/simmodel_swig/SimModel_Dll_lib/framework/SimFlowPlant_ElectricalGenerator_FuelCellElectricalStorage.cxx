@@ -48,6 +48,210 @@ namespace schema
     {
       // SimFlowPlant_ElectricalGenerator_FuelCellElectricalStorage
       // 
+
+      const SimFlowPlant_ElectricalGenerator_FuelCellElectricalStorage::SimFlowPlant_Name_optional& SimFlowPlant_ElectricalGenerator_FuelCellElectricalStorage::
+      SimFlowPlant_Name () const
+      {
+        return this->SimFlowPlant_Name_;
+      }
+
+      SimFlowPlant_ElectricalGenerator_FuelCellElectricalStorage::SimFlowPlant_Name_optional& SimFlowPlant_ElectricalGenerator_FuelCellElectricalStorage::
+      SimFlowPlant_Name ()
+      {
+        return this->SimFlowPlant_Name_;
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellElectricalStorage::
+      SimFlowPlant_Name (const SimFlowPlant_Name_type& x)
+      {
+        this->SimFlowPlant_Name_.set (x);
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellElectricalStorage::
+      SimFlowPlant_Name (const SimFlowPlant_Name_optional& x)
+      {
+        this->SimFlowPlant_Name_ = x;
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellElectricalStorage::
+      SimFlowPlant_Name (::std::auto_ptr< SimFlowPlant_Name_type > x)
+      {
+        this->SimFlowPlant_Name_.set (x);
+      }
+
+      const SimFlowPlant_ElectricalGenerator_FuelCellElectricalStorage::SimFlowPlant_ChoiceModel_optional& SimFlowPlant_ElectricalGenerator_FuelCellElectricalStorage::
+      SimFlowPlant_ChoiceModel () const
+      {
+        return this->SimFlowPlant_ChoiceModel_;
+      }
+
+      SimFlowPlant_ElectricalGenerator_FuelCellElectricalStorage::SimFlowPlant_ChoiceModel_optional& SimFlowPlant_ElectricalGenerator_FuelCellElectricalStorage::
+      SimFlowPlant_ChoiceModel ()
+      {
+        return this->SimFlowPlant_ChoiceModel_;
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellElectricalStorage::
+      SimFlowPlant_ChoiceModel (const SimFlowPlant_ChoiceModel_type& x)
+      {
+        this->SimFlowPlant_ChoiceModel_.set (x);
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellElectricalStorage::
+      SimFlowPlant_ChoiceModel (const SimFlowPlant_ChoiceModel_optional& x)
+      {
+        this->SimFlowPlant_ChoiceModel_ = x;
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellElectricalStorage::
+      SimFlowPlant_ChoiceModel (::std::auto_ptr< SimFlowPlant_ChoiceModel_type > x)
+      {
+        this->SimFlowPlant_ChoiceModel_.set (x);
+      }
+
+      const SimFlowPlant_ElectricalGenerator_FuelCellElectricalStorage::SimFlowPlant_NomChargingEnergeticEff_optional& SimFlowPlant_ElectricalGenerator_FuelCellElectricalStorage::
+      SimFlowPlant_NomChargingEnergeticEff () const
+      {
+        return this->SimFlowPlant_NomChargingEnergeticEff_;
+      }
+
+      SimFlowPlant_ElectricalGenerator_FuelCellElectricalStorage::SimFlowPlant_NomChargingEnergeticEff_optional& SimFlowPlant_ElectricalGenerator_FuelCellElectricalStorage::
+      SimFlowPlant_NomChargingEnergeticEff ()
+      {
+        return this->SimFlowPlant_NomChargingEnergeticEff_;
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellElectricalStorage::
+      SimFlowPlant_NomChargingEnergeticEff (const SimFlowPlant_NomChargingEnergeticEff_type& x)
+      {
+        this->SimFlowPlant_NomChargingEnergeticEff_.set (x);
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellElectricalStorage::
+      SimFlowPlant_NomChargingEnergeticEff (const SimFlowPlant_NomChargingEnergeticEff_optional& x)
+      {
+        this->SimFlowPlant_NomChargingEnergeticEff_ = x;
+      }
+
+      const SimFlowPlant_ElectricalGenerator_FuelCellElectricalStorage::SimFlowPlant_NomDischargEnergeticEff_optional& SimFlowPlant_ElectricalGenerator_FuelCellElectricalStorage::
+      SimFlowPlant_NomDischargEnergeticEff () const
+      {
+        return this->SimFlowPlant_NomDischargEnergeticEff_;
+      }
+
+      SimFlowPlant_ElectricalGenerator_FuelCellElectricalStorage::SimFlowPlant_NomDischargEnergeticEff_optional& SimFlowPlant_ElectricalGenerator_FuelCellElectricalStorage::
+      SimFlowPlant_NomDischargEnergeticEff ()
+      {
+        return this->SimFlowPlant_NomDischargEnergeticEff_;
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellElectricalStorage::
+      SimFlowPlant_NomDischargEnergeticEff (const SimFlowPlant_NomDischargEnergeticEff_type& x)
+      {
+        this->SimFlowPlant_NomDischargEnergeticEff_.set (x);
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellElectricalStorage::
+      SimFlowPlant_NomDischargEnergeticEff (const SimFlowPlant_NomDischargEnergeticEff_optional& x)
+      {
+        this->SimFlowPlant_NomDischargEnergeticEff_ = x;
+      }
+
+      const SimFlowPlant_ElectricalGenerator_FuelCellElectricalStorage::SimFlowPlant_SimpleMaxCap_optional& SimFlowPlant_ElectricalGenerator_FuelCellElectricalStorage::
+      SimFlowPlant_SimpleMaxCap () const
+      {
+        return this->SimFlowPlant_SimpleMaxCap_;
+      }
+
+      SimFlowPlant_ElectricalGenerator_FuelCellElectricalStorage::SimFlowPlant_SimpleMaxCap_optional& SimFlowPlant_ElectricalGenerator_FuelCellElectricalStorage::
+      SimFlowPlant_SimpleMaxCap ()
+      {
+        return this->SimFlowPlant_SimpleMaxCap_;
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellElectricalStorage::
+      SimFlowPlant_SimpleMaxCap (const SimFlowPlant_SimpleMaxCap_type& x)
+      {
+        this->SimFlowPlant_SimpleMaxCap_.set (x);
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellElectricalStorage::
+      SimFlowPlant_SimpleMaxCap (const SimFlowPlant_SimpleMaxCap_optional& x)
+      {
+        this->SimFlowPlant_SimpleMaxCap_ = x;
+      }
+
+      const SimFlowPlant_ElectricalGenerator_FuelCellElectricalStorage::SimFlowPlant_SimpleMaxPwrDraw_optional& SimFlowPlant_ElectricalGenerator_FuelCellElectricalStorage::
+      SimFlowPlant_SimpleMaxPwrDraw () const
+      {
+        return this->SimFlowPlant_SimpleMaxPwrDraw_;
+      }
+
+      SimFlowPlant_ElectricalGenerator_FuelCellElectricalStorage::SimFlowPlant_SimpleMaxPwrDraw_optional& SimFlowPlant_ElectricalGenerator_FuelCellElectricalStorage::
+      SimFlowPlant_SimpleMaxPwrDraw ()
+      {
+        return this->SimFlowPlant_SimpleMaxPwrDraw_;
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellElectricalStorage::
+      SimFlowPlant_SimpleMaxPwrDraw (const SimFlowPlant_SimpleMaxPwrDraw_type& x)
+      {
+        this->SimFlowPlant_SimpleMaxPwrDraw_.set (x);
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellElectricalStorage::
+      SimFlowPlant_SimpleMaxPwrDraw (const SimFlowPlant_SimpleMaxPwrDraw_optional& x)
+      {
+        this->SimFlowPlant_SimpleMaxPwrDraw_ = x;
+      }
+
+      const SimFlowPlant_ElectricalGenerator_FuelCellElectricalStorage::SimFlowPlant_SimpleMaxPwrStore_optional& SimFlowPlant_ElectricalGenerator_FuelCellElectricalStorage::
+      SimFlowPlant_SimpleMaxPwrStore () const
+      {
+        return this->SimFlowPlant_SimpleMaxPwrStore_;
+      }
+
+      SimFlowPlant_ElectricalGenerator_FuelCellElectricalStorage::SimFlowPlant_SimpleMaxPwrStore_optional& SimFlowPlant_ElectricalGenerator_FuelCellElectricalStorage::
+      SimFlowPlant_SimpleMaxPwrStore ()
+      {
+        return this->SimFlowPlant_SimpleMaxPwrStore_;
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellElectricalStorage::
+      SimFlowPlant_SimpleMaxPwrStore (const SimFlowPlant_SimpleMaxPwrStore_type& x)
+      {
+        this->SimFlowPlant_SimpleMaxPwrStore_.set (x);
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellElectricalStorage::
+      SimFlowPlant_SimpleMaxPwrStore (const SimFlowPlant_SimpleMaxPwrStore_optional& x)
+      {
+        this->SimFlowPlant_SimpleMaxPwrStore_ = x;
+      }
+
+      const SimFlowPlant_ElectricalGenerator_FuelCellElectricalStorage::SimFlowPlant_InitChargeState_optional& SimFlowPlant_ElectricalGenerator_FuelCellElectricalStorage::
+      SimFlowPlant_InitChargeState () const
+      {
+        return this->SimFlowPlant_InitChargeState_;
+      }
+
+      SimFlowPlant_ElectricalGenerator_FuelCellElectricalStorage::SimFlowPlant_InitChargeState_optional& SimFlowPlant_ElectricalGenerator_FuelCellElectricalStorage::
+      SimFlowPlant_InitChargeState ()
+      {
+        return this->SimFlowPlant_InitChargeState_;
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellElectricalStorage::
+      SimFlowPlant_InitChargeState (const SimFlowPlant_InitChargeState_type& x)
+      {
+        this->SimFlowPlant_InitChargeState_.set (x);
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellElectricalStorage::
+      SimFlowPlant_InitChargeState (const SimFlowPlant_InitChargeState_optional& x)
+      {
+        this->SimFlowPlant_InitChargeState_ = x;
+      }
     }
   }
 }
@@ -74,13 +278,29 @@ namespace schema
 
       SimFlowPlant_ElectricalGenerator_FuelCellElectricalStorage::
       SimFlowPlant_ElectricalGenerator_FuelCellElectricalStorage ()
-      : ::schema::simxml::MepModel::SimFlowPlant_ElectricalGenerator ()
+      : ::schema::simxml::MepModel::SimFlowPlant_ElectricalGenerator (),
+        SimFlowPlant_Name_ (this),
+        SimFlowPlant_ChoiceModel_ (this),
+        SimFlowPlant_NomChargingEnergeticEff_ (this),
+        SimFlowPlant_NomDischargEnergeticEff_ (this),
+        SimFlowPlant_SimpleMaxCap_ (this),
+        SimFlowPlant_SimpleMaxPwrDraw_ (this),
+        SimFlowPlant_SimpleMaxPwrStore_ (this),
+        SimFlowPlant_InitChargeState_ (this)
       {
       }
 
       SimFlowPlant_ElectricalGenerator_FuelCellElectricalStorage::
       SimFlowPlant_ElectricalGenerator_FuelCellElectricalStorage (const RefId_type& RefId)
-      : ::schema::simxml::MepModel::SimFlowPlant_ElectricalGenerator (RefId)
+      : ::schema::simxml::MepModel::SimFlowPlant_ElectricalGenerator (RefId),
+        SimFlowPlant_Name_ (this),
+        SimFlowPlant_ChoiceModel_ (this),
+        SimFlowPlant_NomChargingEnergeticEff_ (this),
+        SimFlowPlant_NomDischargEnergeticEff_ (this),
+        SimFlowPlant_SimpleMaxCap_ (this),
+        SimFlowPlant_SimpleMaxPwrDraw_ (this),
+        SimFlowPlant_SimpleMaxPwrStore_ (this),
+        SimFlowPlant_InitChargeState_ (this)
       {
       }
 
@@ -88,7 +308,15 @@ namespace schema
       SimFlowPlant_ElectricalGenerator_FuelCellElectricalStorage (const SimFlowPlant_ElectricalGenerator_FuelCellElectricalStorage& x,
                                                                   ::xml_schema::flags f,
                                                                   ::xml_schema::container* c)
-      : ::schema::simxml::MepModel::SimFlowPlant_ElectricalGenerator (x, f, c)
+      : ::schema::simxml::MepModel::SimFlowPlant_ElectricalGenerator (x, f, c),
+        SimFlowPlant_Name_ (x.SimFlowPlant_Name_, f, this),
+        SimFlowPlant_ChoiceModel_ (x.SimFlowPlant_ChoiceModel_, f, this),
+        SimFlowPlant_NomChargingEnergeticEff_ (x.SimFlowPlant_NomChargingEnergeticEff_, f, this),
+        SimFlowPlant_NomDischargEnergeticEff_ (x.SimFlowPlant_NomDischargEnergeticEff_, f, this),
+        SimFlowPlant_SimpleMaxCap_ (x.SimFlowPlant_SimpleMaxCap_, f, this),
+        SimFlowPlant_SimpleMaxPwrDraw_ (x.SimFlowPlant_SimpleMaxPwrDraw_, f, this),
+        SimFlowPlant_SimpleMaxPwrStore_ (x.SimFlowPlant_SimpleMaxPwrStore_, f, this),
+        SimFlowPlant_InitChargeState_ (x.SimFlowPlant_InitChargeState_, f, this)
       {
       }
 
@@ -96,8 +324,131 @@ namespace schema
       SimFlowPlant_ElectricalGenerator_FuelCellElectricalStorage (const ::xercesc::DOMElement& e,
                                                                   ::xml_schema::flags f,
                                                                   ::xml_schema::container* c)
-      : ::schema::simxml::MepModel::SimFlowPlant_ElectricalGenerator (e, f, c)
+      : ::schema::simxml::MepModel::SimFlowPlant_ElectricalGenerator (e, f | ::xml_schema::flags::base, c),
+        SimFlowPlant_Name_ (this),
+        SimFlowPlant_ChoiceModel_ (this),
+        SimFlowPlant_NomChargingEnergeticEff_ (this),
+        SimFlowPlant_NomDischargEnergeticEff_ (this),
+        SimFlowPlant_SimpleMaxCap_ (this),
+        SimFlowPlant_SimpleMaxPwrDraw_ (this),
+        SimFlowPlant_SimpleMaxPwrStore_ (this),
+        SimFlowPlant_InitChargeState_ (this)
       {
+        if ((f & ::xml_schema::flags::base) == 0)
+        {
+          ::xsd::cxx::xml::dom::parser< char > p (e, true, false, true);
+          this->parse (p, f);
+        }
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellElectricalStorage::
+      parse (::xsd::cxx::xml::dom::parser< char >& p,
+             ::xml_schema::flags f)
+      {
+        this->::schema::simxml::MepModel::SimFlowPlant_ElectricalGenerator::parse (p, f);
+
+        for (; p.more_content (); p.next_content (false))
+        {
+          const ::xercesc::DOMElement& i (p.cur_element ());
+          const ::xsd::cxx::xml::qualified_name< char > n (
+            ::xsd::cxx::xml::dom::name< char > (i));
+
+          // SimFlowPlant_Name
+          //
+          if (n.name () == "SimFlowPlant_Name" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            ::std::auto_ptr< SimFlowPlant_Name_type > r (
+              SimFlowPlant_Name_traits::create (i, f, this));
+
+            if (!this->SimFlowPlant_Name_)
+            {
+              this->SimFlowPlant_Name_.set (r);
+              continue;
+            }
+          }
+
+          // SimFlowPlant_ChoiceModel
+          //
+          if (n.name () == "SimFlowPlant_ChoiceModel" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            ::std::auto_ptr< SimFlowPlant_ChoiceModel_type > r (
+              SimFlowPlant_ChoiceModel_traits::create (i, f, this));
+
+            if (!this->SimFlowPlant_ChoiceModel_)
+            {
+              this->SimFlowPlant_ChoiceModel_.set (r);
+              continue;
+            }
+          }
+
+          // SimFlowPlant_NomChargingEnergeticEff
+          //
+          if (n.name () == "SimFlowPlant_NomChargingEnergeticEff" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            if (!this->SimFlowPlant_NomChargingEnergeticEff_)
+            {
+              this->SimFlowPlant_NomChargingEnergeticEff_.set (SimFlowPlant_NomChargingEnergeticEff_traits::create (i, f, this));
+              continue;
+            }
+          }
+
+          // SimFlowPlant_NomDischargEnergeticEff
+          //
+          if (n.name () == "SimFlowPlant_NomDischargEnergeticEff" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            if (!this->SimFlowPlant_NomDischargEnergeticEff_)
+            {
+              this->SimFlowPlant_NomDischargEnergeticEff_.set (SimFlowPlant_NomDischargEnergeticEff_traits::create (i, f, this));
+              continue;
+            }
+          }
+
+          // SimFlowPlant_SimpleMaxCap
+          //
+          if (n.name () == "SimFlowPlant_SimpleMaxCap" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            if (!this->SimFlowPlant_SimpleMaxCap_)
+            {
+              this->SimFlowPlant_SimpleMaxCap_.set (SimFlowPlant_SimpleMaxCap_traits::create (i, f, this));
+              continue;
+            }
+          }
+
+          // SimFlowPlant_SimpleMaxPwrDraw
+          //
+          if (n.name () == "SimFlowPlant_SimpleMaxPwrDraw" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            if (!this->SimFlowPlant_SimpleMaxPwrDraw_)
+            {
+              this->SimFlowPlant_SimpleMaxPwrDraw_.set (SimFlowPlant_SimpleMaxPwrDraw_traits::create (i, f, this));
+              continue;
+            }
+          }
+
+          // SimFlowPlant_SimpleMaxPwrStore
+          //
+          if (n.name () == "SimFlowPlant_SimpleMaxPwrStore" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            if (!this->SimFlowPlant_SimpleMaxPwrStore_)
+            {
+              this->SimFlowPlant_SimpleMaxPwrStore_.set (SimFlowPlant_SimpleMaxPwrStore_traits::create (i, f, this));
+              continue;
+            }
+          }
+
+          // SimFlowPlant_InitChargeState
+          //
+          if (n.name () == "SimFlowPlant_InitChargeState" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            if (!this->SimFlowPlant_InitChargeState_)
+            {
+              this->SimFlowPlant_InitChargeState_.set (SimFlowPlant_InitChargeState_traits::create (i, f, this));
+              continue;
+            }
+          }
+
+          break;
+        }
       }
 
       SimFlowPlant_ElectricalGenerator_FuelCellElectricalStorage* SimFlowPlant_ElectricalGenerator_FuelCellElectricalStorage::
@@ -105,6 +456,25 @@ namespace schema
               ::xml_schema::container* c) const
       {
         return new class SimFlowPlant_ElectricalGenerator_FuelCellElectricalStorage (*this, f, c);
+      }
+
+      SimFlowPlant_ElectricalGenerator_FuelCellElectricalStorage& SimFlowPlant_ElectricalGenerator_FuelCellElectricalStorage::
+      operator= (const SimFlowPlant_ElectricalGenerator_FuelCellElectricalStorage& x)
+      {
+        if (this != &x)
+        {
+          static_cast< ::schema::simxml::MepModel::SimFlowPlant_ElectricalGenerator& > (*this) = x;
+          this->SimFlowPlant_Name_ = x.SimFlowPlant_Name_;
+          this->SimFlowPlant_ChoiceModel_ = x.SimFlowPlant_ChoiceModel_;
+          this->SimFlowPlant_NomChargingEnergeticEff_ = x.SimFlowPlant_NomChargingEnergeticEff_;
+          this->SimFlowPlant_NomDischargEnergeticEff_ = x.SimFlowPlant_NomDischargEnergeticEff_;
+          this->SimFlowPlant_SimpleMaxCap_ = x.SimFlowPlant_SimpleMaxCap_;
+          this->SimFlowPlant_SimpleMaxPwrDraw_ = x.SimFlowPlant_SimpleMaxPwrDraw_;
+          this->SimFlowPlant_SimpleMaxPwrStore_ = x.SimFlowPlant_SimpleMaxPwrStore_;
+          this->SimFlowPlant_InitChargeState_ = x.SimFlowPlant_InitChargeState_;
+        }
+
+        return *this;
       }
 
       SimFlowPlant_ElectricalGenerator_FuelCellElectricalStorage::

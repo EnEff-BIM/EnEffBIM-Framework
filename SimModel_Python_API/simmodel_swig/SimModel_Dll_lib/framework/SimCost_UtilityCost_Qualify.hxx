@@ -283,7 +283,7 @@ namespace schema
 
         // SimCost_TariffName
         //
-        typedef ::xml_schema::string SimCost_TariffName_type;
+        typedef ::xml_schema::idref SimCost_TariffName_type;
         typedef ::xsd::cxx::tree::optional< SimCost_TariffName_type > SimCost_TariffName_optional;
         typedef ::xsd::cxx::tree::traits< SimCost_TariffName_type, char > SimCost_TariffName_traits;
 

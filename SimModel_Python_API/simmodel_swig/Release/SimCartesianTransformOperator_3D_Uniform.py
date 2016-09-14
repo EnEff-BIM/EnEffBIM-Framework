@@ -121,6 +121,9 @@ class SimCartesianTransformOperator(base.SimRepresentationItem):
     def Scale(self, *args):
         return _SimCartesianTransformOperator_3D_Uniform.SimCartesianTransformOperator_Scale(self, *args)
 
+    def Coordinates(self, *args):
+        return _SimCartesianTransformOperator_3D_Uniform.SimCartesianTransformOperator_Coordinates(self, *args)
+
     def __init__(self, *args):
         this = _SimCartesianTransformOperator_3D_Uniform.new_SimCartesianTransformOperator(*args)
         try:

@@ -112,6 +112,9 @@ class SimPlacement(base.SimGeometricRepresentationItem):
     def Location(self, *args):
         return _SimPlacement_Axis2Placement2D_Default.SimPlacement_Location(self, *args)
 
+    def Coordinates(self, *args):
+        return _SimPlacement_Axis2Placement2D_Default.SimPlacement_Coordinates(self, *args)
+
     def __init__(self, *args):
         this = _SimPlacement_Axis2Placement2D_Default.new_SimPlacement(*args)
         try:

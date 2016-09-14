@@ -344,6 +344,27 @@ namespace schema
         void
         ContainedBldgElementTypeDefs (::std::auto_ptr< ContainedBldgElementTypeDefs_type > p);
 
+        // ClassRef_ConstEntByFunction
+        //
+        typedef ::xml_schema::idref ClassRef_ConstEntByFunction_type;
+        typedef ::xsd::cxx::tree::optional< ClassRef_ConstEntByFunction_type > ClassRef_ConstEntByFunction_optional;
+        typedef ::xsd::cxx::tree::traits< ClassRef_ConstEntByFunction_type, char > ClassRef_ConstEntByFunction_traits;
+
+        const ClassRef_ConstEntByFunction_optional&
+        ClassRef_ConstEntByFunction () const;
+
+        ClassRef_ConstEntByFunction_optional&
+        ClassRef_ConstEntByFunction ();
+
+        void
+        ClassRef_ConstEntByFunction (const ClassRef_ConstEntByFunction_type& x);
+
+        void
+        ClassRef_ConstEntByFunction (const ClassRef_ConstEntByFunction_optional& x);
+
+        void
+        ClassRef_ConstEntByFunction (::std::auto_ptr< ClassRef_ConstEntByFunction_type > p);
+
         // Constructors.
         //
         SimBldgStoryType ();
@@ -380,6 +401,7 @@ namespace schema
         Tag_optional Tag_;
         ContainedSpaceTypeDefs_optional ContainedSpaceTypeDefs_;
         ContainedBldgElementTypeDefs_optional ContainedBldgElementTypeDefs_;
+        ClassRef_ConstEntByFunction_optional ClassRef_ConstEntByFunction_;
       };
     }
   }

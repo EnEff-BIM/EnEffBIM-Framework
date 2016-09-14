@@ -8,6 +8,8 @@
 using namespace xsd::cxx::tree;
 %}
 
+%ignore xsd::cxx::tree::sequence<::schema::simxml::BuildingModel::SimList_SchemeList_AirLoopAvailabilityMgrScheme, false>::getValue(int n);
+
 //3. class auto ptr
 %auto_ptr(::schema::simxml::BuildingModel::SimList_SchemeList_AirLoopAvailabilityMgrScheme)
 %auto_ptr(::schema::simxml::BuildingModel::SimList_AvailMngrObjectType_1_6)

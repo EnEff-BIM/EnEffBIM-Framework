@@ -25,6 +25,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="SimList_SchemeList_DemandManagerScheme.i" />
+    <CustomBuild Include="SimList_SchemeList_DemandManagerScheme.i" />
   </ItemGroup>
 </Project>

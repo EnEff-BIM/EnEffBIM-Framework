@@ -473,59 +473,59 @@ namespace schema
         void
         RoofIrrigation_IrrigationMaxSaturatThreshold (const RoofIrrigation_IrrigationMaxSaturatThreshold_optional& x);
 
-        // AboveGradeStoryCountAltered
+        // T24AboveGradeStoryCountAltered
         //
-        typedef ::xml_schema::int_ AboveGradeStoryCountAltered_type;
-        typedef ::xsd::cxx::tree::optional< AboveGradeStoryCountAltered_type, true > AboveGradeStoryCountAltered_optional;
-        typedef ::xsd::cxx::tree::traits< AboveGradeStoryCountAltered_type, char > AboveGradeStoryCountAltered_traits;
+        typedef ::xml_schema::int_ T24AboveGradeStoryCountAltered_type;
+        typedef ::xsd::cxx::tree::optional< T24AboveGradeStoryCountAltered_type, true > T24AboveGradeStoryCountAltered_optional;
+        typedef ::xsd::cxx::tree::traits< T24AboveGradeStoryCountAltered_type, char > T24AboveGradeStoryCountAltered_traits;
 
-        const AboveGradeStoryCountAltered_optional&
-        AboveGradeStoryCountAltered () const;
+        const T24AboveGradeStoryCountAltered_optional&
+        T24AboveGradeStoryCountAltered () const;
 
-        AboveGradeStoryCountAltered_optional&
-        AboveGradeStoryCountAltered ();
-
-        void
-        AboveGradeStoryCountAltered (const AboveGradeStoryCountAltered_type& x);
+        T24AboveGradeStoryCountAltered_optional&
+        T24AboveGradeStoryCountAltered ();
 
         void
-        AboveGradeStoryCountAltered (const AboveGradeStoryCountAltered_optional& x);
+        T24AboveGradeStoryCountAltered (const T24AboveGradeStoryCountAltered_type& x);
 
-        // AboveGradeStoryCountExists
+        void
+        T24AboveGradeStoryCountAltered (const T24AboveGradeStoryCountAltered_optional& x);
+
+        // T24AboveGradeStoryCountExists
         //
-        typedef ::xml_schema::int_ AboveGradeStoryCountExists_type;
-        typedef ::xsd::cxx::tree::optional< AboveGradeStoryCountExists_type, true > AboveGradeStoryCountExists_optional;
-        typedef ::xsd::cxx::tree::traits< AboveGradeStoryCountExists_type, char > AboveGradeStoryCountExists_traits;
+        typedef ::xml_schema::int_ T24AboveGradeStoryCountExists_type;
+        typedef ::xsd::cxx::tree::optional< T24AboveGradeStoryCountExists_type, true > T24AboveGradeStoryCountExists_optional;
+        typedef ::xsd::cxx::tree::traits< T24AboveGradeStoryCountExists_type, char > T24AboveGradeStoryCountExists_traits;
 
-        const AboveGradeStoryCountExists_optional&
-        AboveGradeStoryCountExists () const;
+        const T24AboveGradeStoryCountExists_optional&
+        T24AboveGradeStoryCountExists () const;
 
-        AboveGradeStoryCountExists_optional&
-        AboveGradeStoryCountExists ();
-
-        void
-        AboveGradeStoryCountExists (const AboveGradeStoryCountExists_type& x);
+        T24AboveGradeStoryCountExists_optional&
+        T24AboveGradeStoryCountExists ();
 
         void
-        AboveGradeStoryCountExists (const AboveGradeStoryCountExists_optional& x);
+        T24AboveGradeStoryCountExists (const T24AboveGradeStoryCountExists_type& x);
 
-        // AboveGradeStoryCountNew
+        void
+        T24AboveGradeStoryCountExists (const T24AboveGradeStoryCountExists_optional& x);
+
+        // T24AboveGradeStoryCountNew
         //
-        typedef ::xml_schema::int_ AboveGradeStoryCountNew_type;
-        typedef ::xsd::cxx::tree::optional< AboveGradeStoryCountNew_type, true > AboveGradeStoryCountNew_optional;
-        typedef ::xsd::cxx::tree::traits< AboveGradeStoryCountNew_type, char > AboveGradeStoryCountNew_traits;
+        typedef ::xml_schema::int_ T24AboveGradeStoryCountNew_type;
+        typedef ::xsd::cxx::tree::optional< T24AboveGradeStoryCountNew_type, true > T24AboveGradeStoryCountNew_optional;
+        typedef ::xsd::cxx::tree::traits< T24AboveGradeStoryCountNew_type, char > T24AboveGradeStoryCountNew_traits;
 
-        const AboveGradeStoryCountNew_optional&
-        AboveGradeStoryCountNew () const;
+        const T24AboveGradeStoryCountNew_optional&
+        T24AboveGradeStoryCountNew () const;
 
-        AboveGradeStoryCountNew_optional&
-        AboveGradeStoryCountNew ();
-
-        void
-        AboveGradeStoryCountNew (const AboveGradeStoryCountNew_type& x);
+        T24AboveGradeStoryCountNew_optional&
+        T24AboveGradeStoryCountNew ();
 
         void
-        AboveGradeStoryCountNew (const AboveGradeStoryCountNew_optional& x);
+        T24AboveGradeStoryCountNew (const T24AboveGradeStoryCountNew_type& x);
+
+        void
+        T24AboveGradeStoryCountNew (const T24AboveGradeStoryCountNew_optional& x);
 
         // T24CoilCoolingCapacity
         //
@@ -584,77 +584,77 @@ namespace schema
         void
         T24FunctionClassificationMethod (::std::auto_ptr< T24FunctionClassificationMethod_type > p);
 
-        // HighRiseResidentialLivingUnitCount
+        // T24HighRiseResidentialLivingUnitCount
         //
-        typedef ::xml_schema::int_ HighRiseResidentialLivingUnitCount_type;
-        typedef ::xsd::cxx::tree::optional< HighRiseResidentialLivingUnitCount_type, true > HighRiseResidentialLivingUnitCount_optional;
-        typedef ::xsd::cxx::tree::traits< HighRiseResidentialLivingUnitCount_type, char > HighRiseResidentialLivingUnitCount_traits;
+        typedef ::xml_schema::int_ T24HighRiseResidentialLivingUnitCount_type;
+        typedef ::xsd::cxx::tree::optional< T24HighRiseResidentialLivingUnitCount_type, true > T24HighRiseResidentialLivingUnitCount_optional;
+        typedef ::xsd::cxx::tree::traits< T24HighRiseResidentialLivingUnitCount_type, char > T24HighRiseResidentialLivingUnitCount_traits;
 
-        const HighRiseResidentialLivingUnitCount_optional&
-        HighRiseResidentialLivingUnitCount () const;
+        const T24HighRiseResidentialLivingUnitCount_optional&
+        T24HighRiseResidentialLivingUnitCount () const;
 
-        HighRiseResidentialLivingUnitCount_optional&
-        HighRiseResidentialLivingUnitCount ();
-
-        void
-        HighRiseResidentialLivingUnitCount (const HighRiseResidentialLivingUnitCount_type& x);
+        T24HighRiseResidentialLivingUnitCount_optional&
+        T24HighRiseResidentialLivingUnitCount ();
 
         void
-        HighRiseResidentialLivingUnitCount (const HighRiseResidentialLivingUnitCount_optional& x);
+        T24HighRiseResidentialLivingUnitCount (const T24HighRiseResidentialLivingUnitCount_type& x);
 
-        // LivingUnitCountAltered
+        void
+        T24HighRiseResidentialLivingUnitCount (const T24HighRiseResidentialLivingUnitCount_optional& x);
+
+        // T24LivingUnitCountAltered
         //
-        typedef ::xml_schema::int_ LivingUnitCountAltered_type;
-        typedef ::xsd::cxx::tree::optional< LivingUnitCountAltered_type, true > LivingUnitCountAltered_optional;
-        typedef ::xsd::cxx::tree::traits< LivingUnitCountAltered_type, char > LivingUnitCountAltered_traits;
+        typedef ::xml_schema::int_ T24LivingUnitCountAltered_type;
+        typedef ::xsd::cxx::tree::optional< T24LivingUnitCountAltered_type, true > T24LivingUnitCountAltered_optional;
+        typedef ::xsd::cxx::tree::traits< T24LivingUnitCountAltered_type, char > T24LivingUnitCountAltered_traits;
 
-        const LivingUnitCountAltered_optional&
-        LivingUnitCountAltered () const;
+        const T24LivingUnitCountAltered_optional&
+        T24LivingUnitCountAltered () const;
 
-        LivingUnitCountAltered_optional&
-        LivingUnitCountAltered ();
-
-        void
-        LivingUnitCountAltered (const LivingUnitCountAltered_type& x);
+        T24LivingUnitCountAltered_optional&
+        T24LivingUnitCountAltered ();
 
         void
-        LivingUnitCountAltered (const LivingUnitCountAltered_optional& x);
+        T24LivingUnitCountAltered (const T24LivingUnitCountAltered_type& x);
 
-        // LivingUnitCountExisting
+        void
+        T24LivingUnitCountAltered (const T24LivingUnitCountAltered_optional& x);
+
+        // T24LivingUnitCountExisting
         //
-        typedef ::xml_schema::int_ LivingUnitCountExisting_type;
-        typedef ::xsd::cxx::tree::optional< LivingUnitCountExisting_type, true > LivingUnitCountExisting_optional;
-        typedef ::xsd::cxx::tree::traits< LivingUnitCountExisting_type, char > LivingUnitCountExisting_traits;
+        typedef ::xml_schema::int_ T24LivingUnitCountExisting_type;
+        typedef ::xsd::cxx::tree::optional< T24LivingUnitCountExisting_type, true > T24LivingUnitCountExisting_optional;
+        typedef ::xsd::cxx::tree::traits< T24LivingUnitCountExisting_type, char > T24LivingUnitCountExisting_traits;
 
-        const LivingUnitCountExisting_optional&
-        LivingUnitCountExisting () const;
+        const T24LivingUnitCountExisting_optional&
+        T24LivingUnitCountExisting () const;
 
-        LivingUnitCountExisting_optional&
-        LivingUnitCountExisting ();
-
-        void
-        LivingUnitCountExisting (const LivingUnitCountExisting_type& x);
+        T24LivingUnitCountExisting_optional&
+        T24LivingUnitCountExisting ();
 
         void
-        LivingUnitCountExisting (const LivingUnitCountExisting_optional& x);
+        T24LivingUnitCountExisting (const T24LivingUnitCountExisting_type& x);
 
-        // LivingUnitCountNew
+        void
+        T24LivingUnitCountExisting (const T24LivingUnitCountExisting_optional& x);
+
+        // T24LivingUnitCountNew
         //
-        typedef ::xml_schema::int_ LivingUnitCountNew_type;
-        typedef ::xsd::cxx::tree::optional< LivingUnitCountNew_type, true > LivingUnitCountNew_optional;
-        typedef ::xsd::cxx::tree::traits< LivingUnitCountNew_type, char > LivingUnitCountNew_traits;
+        typedef ::xml_schema::int_ T24LivingUnitCountNew_type;
+        typedef ::xsd::cxx::tree::optional< T24LivingUnitCountNew_type, true > T24LivingUnitCountNew_optional;
+        typedef ::xsd::cxx::tree::traits< T24LivingUnitCountNew_type, char > T24LivingUnitCountNew_traits;
 
-        const LivingUnitCountNew_optional&
-        LivingUnitCountNew () const;
+        const T24LivingUnitCountNew_optional&
+        T24LivingUnitCountNew () const;
 
-        LivingUnitCountNew_optional&
-        LivingUnitCountNew ();
-
-        void
-        LivingUnitCountNew (const LivingUnitCountNew_type& x);
+        T24LivingUnitCountNew_optional&
+        T24LivingUnitCountNew ();
 
         void
-        LivingUnitCountNew (const LivingUnitCountNew_optional& x);
+        T24LivingUnitCountNew (const T24LivingUnitCountNew_type& x);
+
+        void
+        T24LivingUnitCountNew (const T24LivingUnitCountNew_optional& x);
 
         // T24PlantCoolingCapacity
         //
@@ -692,77 +692,77 @@ namespace schema
         void
         T24PlantHeatingCapacity (const T24PlantHeatingCapacity_optional& x);
 
-        // RelocatablePublicSchoolBuilding
+        // T24RelocatablePublicSchoolBuilding
         //
-        typedef ::xml_schema::int_ RelocatablePublicSchoolBuilding_type;
-        typedef ::xsd::cxx::tree::optional< RelocatablePublicSchoolBuilding_type, true > RelocatablePublicSchoolBuilding_optional;
-        typedef ::xsd::cxx::tree::traits< RelocatablePublicSchoolBuilding_type, char > RelocatablePublicSchoolBuilding_traits;
+        typedef ::xml_schema::int_ T24RelocatablePublicSchoolBuilding_type;
+        typedef ::xsd::cxx::tree::optional< T24RelocatablePublicSchoolBuilding_type, true > T24RelocatablePublicSchoolBuilding_optional;
+        typedef ::xsd::cxx::tree::traits< T24RelocatablePublicSchoolBuilding_type, char > T24RelocatablePublicSchoolBuilding_traits;
 
-        const RelocatablePublicSchoolBuilding_optional&
-        RelocatablePublicSchoolBuilding () const;
+        const T24RelocatablePublicSchoolBuilding_optional&
+        T24RelocatablePublicSchoolBuilding () const;
 
-        RelocatablePublicSchoolBuilding_optional&
-        RelocatablePublicSchoolBuilding ();
-
-        void
-        RelocatablePublicSchoolBuilding (const RelocatablePublicSchoolBuilding_type& x);
+        T24RelocatablePublicSchoolBuilding_optional&
+        T24RelocatablePublicSchoolBuilding ();
 
         void
-        RelocatablePublicSchoolBuilding (const RelocatablePublicSchoolBuilding_optional& x);
+        T24RelocatablePublicSchoolBuilding (const T24RelocatablePublicSchoolBuilding_type& x);
 
-        // TotalStoryCountAltered
+        void
+        T24RelocatablePublicSchoolBuilding (const T24RelocatablePublicSchoolBuilding_optional& x);
+
+        // T24TotalStoryCountAltered
         //
-        typedef ::xml_schema::int_ TotalStoryCountAltered_type;
-        typedef ::xsd::cxx::tree::optional< TotalStoryCountAltered_type, true > TotalStoryCountAltered_optional;
-        typedef ::xsd::cxx::tree::traits< TotalStoryCountAltered_type, char > TotalStoryCountAltered_traits;
+        typedef ::xml_schema::int_ T24TotalStoryCountAltered_type;
+        typedef ::xsd::cxx::tree::optional< T24TotalStoryCountAltered_type, true > T24TotalStoryCountAltered_optional;
+        typedef ::xsd::cxx::tree::traits< T24TotalStoryCountAltered_type, char > T24TotalStoryCountAltered_traits;
 
-        const TotalStoryCountAltered_optional&
-        TotalStoryCountAltered () const;
+        const T24TotalStoryCountAltered_optional&
+        T24TotalStoryCountAltered () const;
 
-        TotalStoryCountAltered_optional&
-        TotalStoryCountAltered ();
-
-        void
-        TotalStoryCountAltered (const TotalStoryCountAltered_type& x);
+        T24TotalStoryCountAltered_optional&
+        T24TotalStoryCountAltered ();
 
         void
-        TotalStoryCountAltered (const TotalStoryCountAltered_optional& x);
+        T24TotalStoryCountAltered (const T24TotalStoryCountAltered_type& x);
 
-        // TotalStoryCountExisting
+        void
+        T24TotalStoryCountAltered (const T24TotalStoryCountAltered_optional& x);
+
+        // T24TotalStoryCountExisting
         //
-        typedef ::xml_schema::int_ TotalStoryCountExisting_type;
-        typedef ::xsd::cxx::tree::optional< TotalStoryCountExisting_type, true > TotalStoryCountExisting_optional;
-        typedef ::xsd::cxx::tree::traits< TotalStoryCountExisting_type, char > TotalStoryCountExisting_traits;
+        typedef ::xml_schema::int_ T24TotalStoryCountExisting_type;
+        typedef ::xsd::cxx::tree::optional< T24TotalStoryCountExisting_type, true > T24TotalStoryCountExisting_optional;
+        typedef ::xsd::cxx::tree::traits< T24TotalStoryCountExisting_type, char > T24TotalStoryCountExisting_traits;
 
-        const TotalStoryCountExisting_optional&
-        TotalStoryCountExisting () const;
+        const T24TotalStoryCountExisting_optional&
+        T24TotalStoryCountExisting () const;
 
-        TotalStoryCountExisting_optional&
-        TotalStoryCountExisting ();
-
-        void
-        TotalStoryCountExisting (const TotalStoryCountExisting_type& x);
+        T24TotalStoryCountExisting_optional&
+        T24TotalStoryCountExisting ();
 
         void
-        TotalStoryCountExisting (const TotalStoryCountExisting_optional& x);
+        T24TotalStoryCountExisting (const T24TotalStoryCountExisting_type& x);
 
-        // TotalStoryCountNew
+        void
+        T24TotalStoryCountExisting (const T24TotalStoryCountExisting_optional& x);
+
+        // T24TotalStoryCountNew
         //
-        typedef ::xml_schema::int_ TotalStoryCountNew_type;
-        typedef ::xsd::cxx::tree::optional< TotalStoryCountNew_type, true > TotalStoryCountNew_optional;
-        typedef ::xsd::cxx::tree::traits< TotalStoryCountNew_type, char > TotalStoryCountNew_traits;
+        typedef ::xml_schema::int_ T24TotalStoryCountNew_type;
+        typedef ::xsd::cxx::tree::optional< T24TotalStoryCountNew_type, true > T24TotalStoryCountNew_optional;
+        typedef ::xsd::cxx::tree::traits< T24TotalStoryCountNew_type, char > T24TotalStoryCountNew_traits;
 
-        const TotalStoryCountNew_optional&
-        TotalStoryCountNew () const;
+        const T24TotalStoryCountNew_optional&
+        T24TotalStoryCountNew () const;
 
-        TotalStoryCountNew_optional&
-        TotalStoryCountNew ();
-
-        void
-        TotalStoryCountNew (const TotalStoryCountNew_type& x);
+        T24TotalStoryCountNew_optional&
+        T24TotalStoryCountNew ();
 
         void
-        TotalStoryCountNew (const TotalStoryCountNew_optional& x);
+        T24TotalStoryCountNew (const T24TotalStoryCountNew_type& x);
+
+        void
+        T24TotalStoryCountNew (const T24TotalStoryCountNew_optional& x);
 
         // Constructors.
         //
@@ -807,22 +807,22 @@ namespace schema
         RoofIrrigation_IrrigationModelType_optional RoofIrrigation_IrrigationModelType_;
         RoofIrrigation_IrrigationRateSchedName_optional RoofIrrigation_IrrigationRateSchedName_;
         RoofIrrigation_IrrigationMaxSaturatThreshold_optional RoofIrrigation_IrrigationMaxSaturatThreshold_;
-        AboveGradeStoryCountAltered_optional AboveGradeStoryCountAltered_;
-        AboveGradeStoryCountExists_optional AboveGradeStoryCountExists_;
-        AboveGradeStoryCountNew_optional AboveGradeStoryCountNew_;
+        T24AboveGradeStoryCountAltered_optional T24AboveGradeStoryCountAltered_;
+        T24AboveGradeStoryCountExists_optional T24AboveGradeStoryCountExists_;
+        T24AboveGradeStoryCountNew_optional T24AboveGradeStoryCountNew_;
         T24CoilCoolingCapacity_optional T24CoilCoolingCapacity_;
         T24CoilHeatingCapacity_optional T24CoilHeatingCapacity_;
         T24FunctionClassificationMethod_optional T24FunctionClassificationMethod_;
-        HighRiseResidentialLivingUnitCount_optional HighRiseResidentialLivingUnitCount_;
-        LivingUnitCountAltered_optional LivingUnitCountAltered_;
-        LivingUnitCountExisting_optional LivingUnitCountExisting_;
-        LivingUnitCountNew_optional LivingUnitCountNew_;
+        T24HighRiseResidentialLivingUnitCount_optional T24HighRiseResidentialLivingUnitCount_;
+        T24LivingUnitCountAltered_optional T24LivingUnitCountAltered_;
+        T24LivingUnitCountExisting_optional T24LivingUnitCountExisting_;
+        T24LivingUnitCountNew_optional T24LivingUnitCountNew_;
         T24PlantCoolingCapacity_optional T24PlantCoolingCapacity_;
         T24PlantHeatingCapacity_optional T24PlantHeatingCapacity_;
-        RelocatablePublicSchoolBuilding_optional RelocatablePublicSchoolBuilding_;
-        TotalStoryCountAltered_optional TotalStoryCountAltered_;
-        TotalStoryCountExisting_optional TotalStoryCountExisting_;
-        TotalStoryCountNew_optional TotalStoryCountNew_;
+        T24RelocatablePublicSchoolBuilding_optional T24RelocatablePublicSchoolBuilding_;
+        T24TotalStoryCountAltered_optional T24TotalStoryCountAltered_;
+        T24TotalStoryCountExisting_optional T24TotalStoryCountExisting_;
+        T24TotalStoryCountNew_optional T24TotalStoryCountNew_;
       };
     }
   }

@@ -31,8 +31,8 @@
 // in the accompanying FLOSSE file.
 //
 
-#ifndef SIM_FLOW_PLANT_ELECTRICAL_GENERATOR_FUEL_CELL_EXHAUST_GASTO_WATER_HEAT_EXCHANGER_HXX
-#define SIM_FLOW_PLANT_ELECTRICAL_GENERATOR_FUEL_CELL_EXHAUST_GASTO_WATER_HEAT_EXCHANGER_HXX
+#ifndef SIM_FLOW_PLANT_ELECTRICAL_GENERATOR_FUEL_CELL_EXHAUST_GAS_TO_WATER_HEAT_EXCHANGER_HXX
+#define SIM_FLOW_PLANT_ELECTRICAL_GENERATOR_FUEL_CELL_EXHAUST_GAS_TO_WATER_HEAT_EXCHANGER_HXX
 
 #ifndef XSD_USE_CHAR
 #define XSD_USE_CHAR
@@ -230,7 +230,7 @@ namespace schema
   {
     namespace MepModel
     {
-      class SimFlowPlant_ElectricalGenerator_FuelCellExhaustGastoWaterHeatExchanger;
+      class SimFlowPlant_ElectricalGenerator_FuelCellExhaustGasToWaterHeatExchanger;
     }
   }
 }
@@ -257,29 +257,512 @@ namespace schema
   {
     namespace MepModel
     {
-      class SimFlowPlant_ElectricalGenerator_FuelCellExhaustGastoWaterHeatExchanger: public ::schema::simxml::MepModel::SimFlowPlant_ElectricalGenerator
+      class SimFlowPlant_ElectricalGenerator_FuelCellExhaustGasToWaterHeatExchanger: public ::schema::simxml::MepModel::SimFlowPlant_ElectricalGenerator
       {
         public:
+        // SimFlowPlant_Name
+        //
+        typedef ::xml_schema::string SimFlowPlant_Name_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_Name_type > SimFlowPlant_Name_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_Name_type, char > SimFlowPlant_Name_traits;
+
+        const SimFlowPlant_Name_optional&
+        SimFlowPlant_Name () const;
+
+        SimFlowPlant_Name_optional&
+        SimFlowPlant_Name ();
+
+        void
+        SimFlowPlant_Name (const SimFlowPlant_Name_type& x);
+
+        void
+        SimFlowPlant_Name (const SimFlowPlant_Name_optional& x);
+
+        void
+        SimFlowPlant_Name (::std::auto_ptr< SimFlowPlant_Name_type > p);
+
+        // SimFlowPlant_HeatRecovWaterInletNodeName
+        //
+        typedef ::xml_schema::string SimFlowPlant_HeatRecovWaterInletNodeName_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_HeatRecovWaterInletNodeName_type > SimFlowPlant_HeatRecovWaterInletNodeName_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_HeatRecovWaterInletNodeName_type, char > SimFlowPlant_HeatRecovWaterInletNodeName_traits;
+
+        const SimFlowPlant_HeatRecovWaterInletNodeName_optional&
+        SimFlowPlant_HeatRecovWaterInletNodeName () const;
+
+        SimFlowPlant_HeatRecovWaterInletNodeName_optional&
+        SimFlowPlant_HeatRecovWaterInletNodeName ();
+
+        void
+        SimFlowPlant_HeatRecovWaterInletNodeName (const SimFlowPlant_HeatRecovWaterInletNodeName_type& x);
+
+        void
+        SimFlowPlant_HeatRecovWaterInletNodeName (const SimFlowPlant_HeatRecovWaterInletNodeName_optional& x);
+
+        void
+        SimFlowPlant_HeatRecovWaterInletNodeName (::std::auto_ptr< SimFlowPlant_HeatRecovWaterInletNodeName_type > p);
+
+        // SimFlowPlant_HeatRecovWaterOutletNodeName
+        //
+        typedef ::xml_schema::string SimFlowPlant_HeatRecovWaterOutletNodeName_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_HeatRecovWaterOutletNodeName_type > SimFlowPlant_HeatRecovWaterOutletNodeName_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_HeatRecovWaterOutletNodeName_type, char > SimFlowPlant_HeatRecovWaterOutletNodeName_traits;
+
+        const SimFlowPlant_HeatRecovWaterOutletNodeName_optional&
+        SimFlowPlant_HeatRecovWaterOutletNodeName () const;
+
+        SimFlowPlant_HeatRecovWaterOutletNodeName_optional&
+        SimFlowPlant_HeatRecovWaterOutletNodeName ();
+
+        void
+        SimFlowPlant_HeatRecovWaterOutletNodeName (const SimFlowPlant_HeatRecovWaterOutletNodeName_type& x);
+
+        void
+        SimFlowPlant_HeatRecovWaterOutletNodeName (const SimFlowPlant_HeatRecovWaterOutletNodeName_optional& x);
+
+        void
+        SimFlowPlant_HeatRecovWaterOutletNodeName (::std::auto_ptr< SimFlowPlant_HeatRecovWaterOutletNodeName_type > p);
+
+        // SimFlowPlant_HeatRecovWaterMaxFlowRate
+        //
+        typedef ::xml_schema::double_ SimFlowPlant_HeatRecovWaterMaxFlowRate_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_HeatRecovWaterMaxFlowRate_type > SimFlowPlant_HeatRecovWaterMaxFlowRate_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_HeatRecovWaterMaxFlowRate_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_HeatRecovWaterMaxFlowRate_traits;
+
+        const SimFlowPlant_HeatRecovWaterMaxFlowRate_optional&
+        SimFlowPlant_HeatRecovWaterMaxFlowRate () const;
+
+        SimFlowPlant_HeatRecovWaterMaxFlowRate_optional&
+        SimFlowPlant_HeatRecovWaterMaxFlowRate ();
+
+        void
+        SimFlowPlant_HeatRecovWaterMaxFlowRate (const SimFlowPlant_HeatRecovWaterMaxFlowRate_type& x);
+
+        void
+        SimFlowPlant_HeatRecovWaterMaxFlowRate (const SimFlowPlant_HeatRecovWaterMaxFlowRate_optional& x);
+
+        // SimFlowPlant_ExhOutletAirNodeName
+        //
+        typedef ::xml_schema::string SimFlowPlant_ExhOutletAirNodeName_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_ExhOutletAirNodeName_type > SimFlowPlant_ExhOutletAirNodeName_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_ExhOutletAirNodeName_type, char > SimFlowPlant_ExhOutletAirNodeName_traits;
+
+        const SimFlowPlant_ExhOutletAirNodeName_optional&
+        SimFlowPlant_ExhOutletAirNodeName () const;
+
+        SimFlowPlant_ExhOutletAirNodeName_optional&
+        SimFlowPlant_ExhOutletAirNodeName ();
+
+        void
+        SimFlowPlant_ExhOutletAirNodeName (const SimFlowPlant_ExhOutletAirNodeName_type& x);
+
+        void
+        SimFlowPlant_ExhOutletAirNodeName (const SimFlowPlant_ExhOutletAirNodeName_optional& x);
+
+        void
+        SimFlowPlant_ExhOutletAirNodeName (::std::auto_ptr< SimFlowPlant_ExhOutletAirNodeName_type > p);
+
+        // SimFlowPlant_HeatExchngCalcMeth
+        //
+        typedef ::xml_schema::string SimFlowPlant_HeatExchngCalcMeth_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_HeatExchngCalcMeth_type > SimFlowPlant_HeatExchngCalcMeth_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_HeatExchngCalcMeth_type, char > SimFlowPlant_HeatExchngCalcMeth_traits;
+
+        const SimFlowPlant_HeatExchngCalcMeth_optional&
+        SimFlowPlant_HeatExchngCalcMeth () const;
+
+        SimFlowPlant_HeatExchngCalcMeth_optional&
+        SimFlowPlant_HeatExchngCalcMeth ();
+
+        void
+        SimFlowPlant_HeatExchngCalcMeth (const SimFlowPlant_HeatExchngCalcMeth_type& x);
+
+        void
+        SimFlowPlant_HeatExchngCalcMeth (const SimFlowPlant_HeatExchngCalcMeth_optional& x);
+
+        void
+        SimFlowPlant_HeatExchngCalcMeth (::std::auto_ptr< SimFlowPlant_HeatExchngCalcMeth_type > p);
+
+        // SimFlowPlant_Meth1HeatExchngEffect
+        //
+        typedef ::xml_schema::double_ SimFlowPlant_Meth1HeatExchngEffect_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_Meth1HeatExchngEffect_type > SimFlowPlant_Meth1HeatExchngEffect_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_Meth1HeatExchngEffect_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_Meth1HeatExchngEffect_traits;
+
+        const SimFlowPlant_Meth1HeatExchngEffect_optional&
+        SimFlowPlant_Meth1HeatExchngEffect () const;
+
+        SimFlowPlant_Meth1HeatExchngEffect_optional&
+        SimFlowPlant_Meth1HeatExchngEffect ();
+
+        void
+        SimFlowPlant_Meth1HeatExchngEffect (const SimFlowPlant_Meth1HeatExchngEffect_type& x);
+
+        void
+        SimFlowPlant_Meth1HeatExchngEffect (const SimFlowPlant_Meth1HeatExchngEffect_optional& x);
+
+        // SimFlowPlant_Method2Paramhxs0
+        //
+        typedef ::xml_schema::double_ SimFlowPlant_Method2Paramhxs0_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_Method2Paramhxs0_type > SimFlowPlant_Method2Paramhxs0_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_Method2Paramhxs0_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_Method2Paramhxs0_traits;
+
+        const SimFlowPlant_Method2Paramhxs0_optional&
+        SimFlowPlant_Method2Paramhxs0 () const;
+
+        SimFlowPlant_Method2Paramhxs0_optional&
+        SimFlowPlant_Method2Paramhxs0 ();
+
+        void
+        SimFlowPlant_Method2Paramhxs0 (const SimFlowPlant_Method2Paramhxs0_type& x);
+
+        void
+        SimFlowPlant_Method2Paramhxs0 (const SimFlowPlant_Method2Paramhxs0_optional& x);
+
+        // SimFlowPlant_Method2Paramhxs1
+        //
+        typedef ::xml_schema::double_ SimFlowPlant_Method2Paramhxs1_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_Method2Paramhxs1_type > SimFlowPlant_Method2Paramhxs1_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_Method2Paramhxs1_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_Method2Paramhxs1_traits;
+
+        const SimFlowPlant_Method2Paramhxs1_optional&
+        SimFlowPlant_Method2Paramhxs1 () const;
+
+        SimFlowPlant_Method2Paramhxs1_optional&
+        SimFlowPlant_Method2Paramhxs1 ();
+
+        void
+        SimFlowPlant_Method2Paramhxs1 (const SimFlowPlant_Method2Paramhxs1_type& x);
+
+        void
+        SimFlowPlant_Method2Paramhxs1 (const SimFlowPlant_Method2Paramhxs1_optional& x);
+
+        // SimFlowPlant_Method2Paramhxs2
+        //
+        typedef ::xml_schema::double_ SimFlowPlant_Method2Paramhxs2_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_Method2Paramhxs2_type > SimFlowPlant_Method2Paramhxs2_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_Method2Paramhxs2_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_Method2Paramhxs2_traits;
+
+        const SimFlowPlant_Method2Paramhxs2_optional&
+        SimFlowPlant_Method2Paramhxs2 () const;
+
+        SimFlowPlant_Method2Paramhxs2_optional&
+        SimFlowPlant_Method2Paramhxs2 ();
+
+        void
+        SimFlowPlant_Method2Paramhxs2 (const SimFlowPlant_Method2Paramhxs2_type& x);
+
+        void
+        SimFlowPlant_Method2Paramhxs2 (const SimFlowPlant_Method2Paramhxs2_optional& x);
+
+        // SimFlowPlant_Method2Paramhxs3
+        //
+        typedef ::xml_schema::double_ SimFlowPlant_Method2Paramhxs3_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_Method2Paramhxs3_type > SimFlowPlant_Method2Paramhxs3_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_Method2Paramhxs3_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_Method2Paramhxs3_traits;
+
+        const SimFlowPlant_Method2Paramhxs3_optional&
+        SimFlowPlant_Method2Paramhxs3 () const;
+
+        SimFlowPlant_Method2Paramhxs3_optional&
+        SimFlowPlant_Method2Paramhxs3 ();
+
+        void
+        SimFlowPlant_Method2Paramhxs3 (const SimFlowPlant_Method2Paramhxs3_type& x);
+
+        void
+        SimFlowPlant_Method2Paramhxs3 (const SimFlowPlant_Method2Paramhxs3_optional& x);
+
+        // SimFlowPlant_Method2Paramhxs4
+        //
+        typedef ::xml_schema::double_ SimFlowPlant_Method2Paramhxs4_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_Method2Paramhxs4_type > SimFlowPlant_Method2Paramhxs4_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_Method2Paramhxs4_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_Method2Paramhxs4_traits;
+
+        const SimFlowPlant_Method2Paramhxs4_optional&
+        SimFlowPlant_Method2Paramhxs4 () const;
+
+        SimFlowPlant_Method2Paramhxs4_optional&
+        SimFlowPlant_Method2Paramhxs4 ();
+
+        void
+        SimFlowPlant_Method2Paramhxs4 (const SimFlowPlant_Method2Paramhxs4_type& x);
+
+        void
+        SimFlowPlant_Method2Paramhxs4 (const SimFlowPlant_Method2Paramhxs4_optional& x);
+
+        // SimFlowPlant_Meth3H0GasCoef
+        //
+        typedef ::xml_schema::double_ SimFlowPlant_Meth3H0GasCoef_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_Meth3H0GasCoef_type > SimFlowPlant_Meth3H0GasCoef_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_Meth3H0GasCoef_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_Meth3H0GasCoef_traits;
+
+        const SimFlowPlant_Meth3H0GasCoef_optional&
+        SimFlowPlant_Meth3H0GasCoef () const;
+
+        SimFlowPlant_Meth3H0GasCoef_optional&
+        SimFlowPlant_Meth3H0GasCoef ();
+
+        void
+        SimFlowPlant_Meth3H0GasCoef (const SimFlowPlant_Meth3H0GasCoef_type& x);
+
+        void
+        SimFlowPlant_Meth3H0GasCoef (const SimFlowPlant_Meth3H0GasCoef_optional& x);
+
+        // SimFlowPlant_Meth3NdotGasRefCoef
+        //
+        typedef ::xml_schema::double_ SimFlowPlant_Meth3NdotGasRefCoef_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_Meth3NdotGasRefCoef_type > SimFlowPlant_Meth3NdotGasRefCoef_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_Meth3NdotGasRefCoef_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_Meth3NdotGasRefCoef_traits;
+
+        const SimFlowPlant_Meth3NdotGasRefCoef_optional&
+        SimFlowPlant_Meth3NdotGasRefCoef () const;
+
+        SimFlowPlant_Meth3NdotGasRefCoef_optional&
+        SimFlowPlant_Meth3NdotGasRefCoef ();
+
+        void
+        SimFlowPlant_Meth3NdotGasRefCoef (const SimFlowPlant_Meth3NdotGasRefCoef_type& x);
+
+        void
+        SimFlowPlant_Meth3NdotGasRefCoef (const SimFlowPlant_Meth3NdotGasRefCoef_optional& x);
+
+        // SimFlowPlant_Meth3NCoef
+        //
+        typedef ::xml_schema::double_ SimFlowPlant_Meth3NCoef_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_Meth3NCoef_type > SimFlowPlant_Meth3NCoef_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_Meth3NCoef_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_Meth3NCoef_traits;
+
+        const SimFlowPlant_Meth3NCoef_optional&
+        SimFlowPlant_Meth3NCoef () const;
+
+        SimFlowPlant_Meth3NCoef_optional&
+        SimFlowPlant_Meth3NCoef ();
+
+        void
+        SimFlowPlant_Meth3NCoef (const SimFlowPlant_Meth3NCoef_type& x);
+
+        void
+        SimFlowPlant_Meth3NCoef (const SimFlowPlant_Meth3NCoef_optional& x);
+
+        // SimFlowPlant_Meth3GasArea
+        //
+        typedef ::xml_schema::double_ SimFlowPlant_Meth3GasArea_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_Meth3GasArea_type > SimFlowPlant_Meth3GasArea_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_Meth3GasArea_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_Meth3GasArea_traits;
+
+        const SimFlowPlant_Meth3GasArea_optional&
+        SimFlowPlant_Meth3GasArea () const;
+
+        SimFlowPlant_Meth3GasArea_optional&
+        SimFlowPlant_Meth3GasArea ();
+
+        void
+        SimFlowPlant_Meth3GasArea (const SimFlowPlant_Meth3GasArea_type& x);
+
+        void
+        SimFlowPlant_Meth3GasArea (const SimFlowPlant_Meth3GasArea_optional& x);
+
+        // SimFlowPlant_Meth3H0WaterCoef
+        //
+        typedef ::xml_schema::double_ SimFlowPlant_Meth3H0WaterCoef_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_Meth3H0WaterCoef_type > SimFlowPlant_Meth3H0WaterCoef_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_Meth3H0WaterCoef_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_Meth3H0WaterCoef_traits;
+
+        const SimFlowPlant_Meth3H0WaterCoef_optional&
+        SimFlowPlant_Meth3H0WaterCoef () const;
+
+        SimFlowPlant_Meth3H0WaterCoef_optional&
+        SimFlowPlant_Meth3H0WaterCoef ();
+
+        void
+        SimFlowPlant_Meth3H0WaterCoef (const SimFlowPlant_Meth3H0WaterCoef_type& x);
+
+        void
+        SimFlowPlant_Meth3H0WaterCoef (const SimFlowPlant_Meth3H0WaterCoef_optional& x);
+
+        // SimFlowPlant_Meth3NDotWaterRefCoef
+        //
+        typedef ::xml_schema::double_ SimFlowPlant_Meth3NDotWaterRefCoef_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_Meth3NDotWaterRefCoef_type > SimFlowPlant_Meth3NDotWaterRefCoef_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_Meth3NDotWaterRefCoef_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_Meth3NDotWaterRefCoef_traits;
+
+        const SimFlowPlant_Meth3NDotWaterRefCoef_optional&
+        SimFlowPlant_Meth3NDotWaterRefCoef () const;
+
+        SimFlowPlant_Meth3NDotWaterRefCoef_optional&
+        SimFlowPlant_Meth3NDotWaterRefCoef ();
+
+        void
+        SimFlowPlant_Meth3NDotWaterRefCoef (const SimFlowPlant_Meth3NDotWaterRefCoef_type& x);
+
+        void
+        SimFlowPlant_Meth3NDotWaterRefCoef (const SimFlowPlant_Meth3NDotWaterRefCoef_optional& x);
+
+        // SimFlowPlant_Meth3MCoef
+        //
+        typedef ::xml_schema::double_ SimFlowPlant_Meth3MCoef_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_Meth3MCoef_type > SimFlowPlant_Meth3MCoef_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_Meth3MCoef_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_Meth3MCoef_traits;
+
+        const SimFlowPlant_Meth3MCoef_optional&
+        SimFlowPlant_Meth3MCoef () const;
+
+        SimFlowPlant_Meth3MCoef_optional&
+        SimFlowPlant_Meth3MCoef ();
+
+        void
+        SimFlowPlant_Meth3MCoef (const SimFlowPlant_Meth3MCoef_type& x);
+
+        void
+        SimFlowPlant_Meth3MCoef (const SimFlowPlant_Meth3MCoef_optional& x);
+
+        // SimFlowPlant_Method3WaterArea
+        //
+        typedef ::xml_schema::double_ SimFlowPlant_Method3WaterArea_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_Method3WaterArea_type > SimFlowPlant_Method3WaterArea_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_Method3WaterArea_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_Method3WaterArea_traits;
+
+        const SimFlowPlant_Method3WaterArea_optional&
+        SimFlowPlant_Method3WaterArea () const;
+
+        SimFlowPlant_Method3WaterArea_optional&
+        SimFlowPlant_Method3WaterArea ();
+
+        void
+        SimFlowPlant_Method3WaterArea (const SimFlowPlant_Method3WaterArea_type& x);
+
+        void
+        SimFlowPlant_Method3WaterArea (const SimFlowPlant_Method3WaterArea_optional& x);
+
+        // SimFlowPlant_Meth3FAdjFactor
+        //
+        typedef ::xml_schema::double_ SimFlowPlant_Meth3FAdjFactor_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_Meth3FAdjFactor_type > SimFlowPlant_Meth3FAdjFactor_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_Meth3FAdjFactor_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_Meth3FAdjFactor_traits;
+
+        const SimFlowPlant_Meth3FAdjFactor_optional&
+        SimFlowPlant_Meth3FAdjFactor () const;
+
+        SimFlowPlant_Meth3FAdjFactor_optional&
+        SimFlowPlant_Meth3FAdjFactor ();
+
+        void
+        SimFlowPlant_Meth3FAdjFactor (const SimFlowPlant_Meth3FAdjFactor_type& x);
+
+        void
+        SimFlowPlant_Meth3FAdjFactor (const SimFlowPlant_Meth3FAdjFactor_optional& x);
+
+        // SimFlowPlant_Meth4Hxl1Coef
+        //
+        typedef ::xml_schema::double_ SimFlowPlant_Meth4Hxl1Coef_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_Meth4Hxl1Coef_type > SimFlowPlant_Meth4Hxl1Coef_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_Meth4Hxl1Coef_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_Meth4Hxl1Coef_traits;
+
+        const SimFlowPlant_Meth4Hxl1Coef_optional&
+        SimFlowPlant_Meth4Hxl1Coef () const;
+
+        SimFlowPlant_Meth4Hxl1Coef_optional&
+        SimFlowPlant_Meth4Hxl1Coef ();
+
+        void
+        SimFlowPlant_Meth4Hxl1Coef (const SimFlowPlant_Meth4Hxl1Coef_type& x);
+
+        void
+        SimFlowPlant_Meth4Hxl1Coef (const SimFlowPlant_Meth4Hxl1Coef_optional& x);
+
+        // SimFlowPlant_Meth4Hxl2Coef
+        //
+        typedef ::xml_schema::double_ SimFlowPlant_Meth4Hxl2Coef_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_Meth4Hxl2Coef_type > SimFlowPlant_Meth4Hxl2Coef_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_Meth4Hxl2Coef_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_Meth4Hxl2Coef_traits;
+
+        const SimFlowPlant_Meth4Hxl2Coef_optional&
+        SimFlowPlant_Meth4Hxl2Coef () const;
+
+        SimFlowPlant_Meth4Hxl2Coef_optional&
+        SimFlowPlant_Meth4Hxl2Coef ();
+
+        void
+        SimFlowPlant_Meth4Hxl2Coef (const SimFlowPlant_Meth4Hxl2Coef_type& x);
+
+        void
+        SimFlowPlant_Meth4Hxl2Coef (const SimFlowPlant_Meth4Hxl2Coef_optional& x);
+
+        // SimFlowPlant_Meth4CondensationThresh
+        //
+        typedef ::xml_schema::double_ SimFlowPlant_Meth4CondensationThresh_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_Meth4CondensationThresh_type > SimFlowPlant_Meth4CondensationThresh_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_Meth4CondensationThresh_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_Meth4CondensationThresh_traits;
+
+        const SimFlowPlant_Meth4CondensationThresh_optional&
+        SimFlowPlant_Meth4CondensationThresh () const;
+
+        SimFlowPlant_Meth4CondensationThresh_optional&
+        SimFlowPlant_Meth4CondensationThresh ();
+
+        void
+        SimFlowPlant_Meth4CondensationThresh (const SimFlowPlant_Meth4CondensationThresh_type& x);
+
+        void
+        SimFlowPlant_Meth4CondensationThresh (const SimFlowPlant_Meth4CondensationThresh_optional& x);
+
         // Constructors.
         //
-        SimFlowPlant_ElectricalGenerator_FuelCellExhaustGastoWaterHeatExchanger ();
+        SimFlowPlant_ElectricalGenerator_FuelCellExhaustGasToWaterHeatExchanger ();
 
-        SimFlowPlant_ElectricalGenerator_FuelCellExhaustGastoWaterHeatExchanger (const RefId_type&);
+        SimFlowPlant_ElectricalGenerator_FuelCellExhaustGasToWaterHeatExchanger (const RefId_type&);
 
-        SimFlowPlant_ElectricalGenerator_FuelCellExhaustGastoWaterHeatExchanger (const ::xercesc::DOMElement& e,
+        SimFlowPlant_ElectricalGenerator_FuelCellExhaustGasToWaterHeatExchanger (const ::xercesc::DOMElement& e,
                                                                                  ::xml_schema::flags f = 0,
                                                                                  ::xml_schema::container* c = 0);
 
-        SimFlowPlant_ElectricalGenerator_FuelCellExhaustGastoWaterHeatExchanger (const SimFlowPlant_ElectricalGenerator_FuelCellExhaustGastoWaterHeatExchanger& x,
+        SimFlowPlant_ElectricalGenerator_FuelCellExhaustGasToWaterHeatExchanger (const SimFlowPlant_ElectricalGenerator_FuelCellExhaustGasToWaterHeatExchanger& x,
                                                                                  ::xml_schema::flags f = 0,
                                                                                  ::xml_schema::container* c = 0);
 
-        virtual SimFlowPlant_ElectricalGenerator_FuelCellExhaustGastoWaterHeatExchanger*
+        virtual SimFlowPlant_ElectricalGenerator_FuelCellExhaustGasToWaterHeatExchanger*
         _clone (::xml_schema::flags f = 0,
                 ::xml_schema::container* c = 0) const;
 
+        SimFlowPlant_ElectricalGenerator_FuelCellExhaustGasToWaterHeatExchanger&
+        operator= (const SimFlowPlant_ElectricalGenerator_FuelCellExhaustGasToWaterHeatExchanger& x);
+
         virtual 
-        ~SimFlowPlant_ElectricalGenerator_FuelCellExhaustGastoWaterHeatExchanger ();
+        ~SimFlowPlant_ElectricalGenerator_FuelCellExhaustGasToWaterHeatExchanger ();
+
+        // Implementation.
+        //
+        protected:
+        void
+        parse (::xsd::cxx::xml::dom::parser< char >&,
+               ::xml_schema::flags);
+
+        protected:
+        SimFlowPlant_Name_optional SimFlowPlant_Name_;
+        SimFlowPlant_HeatRecovWaterInletNodeName_optional SimFlowPlant_HeatRecovWaterInletNodeName_;
+        SimFlowPlant_HeatRecovWaterOutletNodeName_optional SimFlowPlant_HeatRecovWaterOutletNodeName_;
+        SimFlowPlant_HeatRecovWaterMaxFlowRate_optional SimFlowPlant_HeatRecovWaterMaxFlowRate_;
+        SimFlowPlant_ExhOutletAirNodeName_optional SimFlowPlant_ExhOutletAirNodeName_;
+        SimFlowPlant_HeatExchngCalcMeth_optional SimFlowPlant_HeatExchngCalcMeth_;
+        SimFlowPlant_Meth1HeatExchngEffect_optional SimFlowPlant_Meth1HeatExchngEffect_;
+        SimFlowPlant_Method2Paramhxs0_optional SimFlowPlant_Method2Paramhxs0_;
+        SimFlowPlant_Method2Paramhxs1_optional SimFlowPlant_Method2Paramhxs1_;
+        SimFlowPlant_Method2Paramhxs2_optional SimFlowPlant_Method2Paramhxs2_;
+        SimFlowPlant_Method2Paramhxs3_optional SimFlowPlant_Method2Paramhxs3_;
+        SimFlowPlant_Method2Paramhxs4_optional SimFlowPlant_Method2Paramhxs4_;
+        SimFlowPlant_Meth3H0GasCoef_optional SimFlowPlant_Meth3H0GasCoef_;
+        SimFlowPlant_Meth3NdotGasRefCoef_optional SimFlowPlant_Meth3NdotGasRefCoef_;
+        SimFlowPlant_Meth3NCoef_optional SimFlowPlant_Meth3NCoef_;
+        SimFlowPlant_Meth3GasArea_optional SimFlowPlant_Meth3GasArea_;
+        SimFlowPlant_Meth3H0WaterCoef_optional SimFlowPlant_Meth3H0WaterCoef_;
+        SimFlowPlant_Meth3NDotWaterRefCoef_optional SimFlowPlant_Meth3NDotWaterRefCoef_;
+        SimFlowPlant_Meth3MCoef_optional SimFlowPlant_Meth3MCoef_;
+        SimFlowPlant_Method3WaterArea_optional SimFlowPlant_Method3WaterArea_;
+        SimFlowPlant_Meth3FAdjFactor_optional SimFlowPlant_Meth3FAdjFactor_;
+        SimFlowPlant_Meth4Hxl1Coef_optional SimFlowPlant_Meth4Hxl1Coef_;
+        SimFlowPlant_Meth4Hxl2Coef_optional SimFlowPlant_Meth4Hxl2Coef_;
+        SimFlowPlant_Meth4CondensationThresh_optional SimFlowPlant_Meth4CondensationThresh_;
       };
     }
   }
@@ -308,4 +791,4 @@ namespace schema
 //
 // End epilogue.
 
-#endif // SIM_FLOW_PLANT_ELECTRICAL_GENERATOR_FUEL_CELL_EXHAUST_GASTO_WATER_HEAT_EXCHANGER_HXX
+#endif // SIM_FLOW_PLANT_ELECTRICAL_GENERATOR_FUEL_CELL_EXHAUST_GAS_TO_WATER_HEAT_EXCHANGER_HXX

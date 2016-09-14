@@ -50,7 +50,7 @@
 #include <xsd/cxx/config.hxx>
 
 #if (XSD_INT_VERSION != 4000000L)
-#error XSD runtime version mismatch
+//#error XSD runtime version mismatch
 #endif
 
 #include <xsd/cxx/pre.hxx>
@@ -263,8 +263,7 @@ namespace schema
         // BasisSurface
         //
         typedef ::xml_schema::idref BasisSurface_type;
-        typedef ::xsd::cxx::tree::optional< BasisSurface_type
-, false > BasisSurface_optional;
+        typedef ::xsd::cxx::tree::optional< BasisSurface_type, false > BasisSurface_optional;
         typedef ::xsd::cxx::tree::traits< BasisSurface_type, char > BasisSurface_traits;
 
         const BasisSurface_optional&
@@ -285,8 +284,7 @@ namespace schema
         // OuterBoundary
         //
         typedef ::xml_schema::idref OuterBoundary_type;
-        typedef ::xsd::cxx::tree::optional< OuterBoundary_type
-, false > OuterBoundary_optional;
+        typedef ::xsd::cxx::tree::optional< OuterBoundary_type, false > OuterBoundary_optional;
         typedef ::xsd::cxx::tree::traits< OuterBoundary_type, char > OuterBoundary_traits;
 
         const OuterBoundary_optional&

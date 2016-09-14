@@ -25,6 +25,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="SimSlab_Floor_FloorOverEarth.i" />
+    <CustomBuild Include="SimSlab_Floor_FloorOverEarth.i" />
   </ItemGroup>
 </Project>

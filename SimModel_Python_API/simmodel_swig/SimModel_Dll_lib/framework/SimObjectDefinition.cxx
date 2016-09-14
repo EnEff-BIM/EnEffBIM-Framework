@@ -40,6 +40,8 @@
 
 #include "SimObjectDefinition.hxx"
 
+#include "selectedpropertygroups.hxx"
+
 namespace schema
 {
   namespace simxml
@@ -78,6 +80,60 @@ namespace schema
       {
         this->Decomposes_.set (x);
       }
+
+      const SimObjectDefinition::SelectedPropertyGroups_optional& SimObjectDefinition::
+      SelectedPropertyGroups () const
+      {
+        return this->SelectedPropertyGroups_;
+      }
+
+      SimObjectDefinition::SelectedPropertyGroups_optional& SimObjectDefinition::
+      SelectedPropertyGroups ()
+      {
+        return this->SelectedPropertyGroups_;
+      }
+
+      void SimObjectDefinition::
+      SelectedPropertyGroups (const SelectedPropertyGroups_type& x)
+      {
+        this->SelectedPropertyGroups_.set (x);
+      }
+
+      void SimObjectDefinition::
+      SelectedPropertyGroups (const SelectedPropertyGroups_optional& x)
+      {
+        this->SelectedPropertyGroups_ = x;
+      }
+
+      void SimObjectDefinition::
+      SelectedPropertyGroups (::std::auto_ptr< SelectedPropertyGroups_type > x)
+      {
+        this->SelectedPropertyGroups_.set (x);
+      }
+
+      const SimObjectDefinition::IsTemplateObject_optional& SimObjectDefinition::
+      IsTemplateObject () const
+      {
+        return this->IsTemplateObject_;
+      }
+
+      SimObjectDefinition::IsTemplateObject_optional& SimObjectDefinition::
+      IsTemplateObject ()
+      {
+        return this->IsTemplateObject_;
+      }
+
+      void SimObjectDefinition::
+      IsTemplateObject (const IsTemplateObject_type& x)
+      {
+        this->IsTemplateObject_.set (x);
+      }
+
+      void SimObjectDefinition::
+      IsTemplateObject (const IsTemplateObject_optional& x)
+      {
+        this->IsTemplateObject_ = x;
+      }
     }
   }
 }
@@ -105,14 +161,18 @@ namespace schema
       SimObjectDefinition::
       SimObjectDefinition ()
       : ::schema::simxml::SimModelCore::SimRoot (),
-        Decomposes_ (this)
+        Decomposes_ (this),
+        SelectedPropertyGroups_ (this),
+        IsTemplateObject_ (this)
       {
       }
 
       SimObjectDefinition::
       SimObjectDefinition (const RefId_type& RefId)
       : ::schema::simxml::SimModelCore::SimRoot (RefId),
-        Decomposes_ (this)
+        Decomposes_ (this),
+        SelectedPropertyGroups_ (this),
+        IsTemplateObject_ (this)
       {
       }
 
@@ -121,7 +181,9 @@ namespace schema
                            ::xml_schema::flags f,
                            ::xml_schema::container* c)
       : ::schema::simxml::SimModelCore::SimRoot (x, f, c),
-        Decomposes_ (x.Decomposes_, f, this)
+        Decomposes_ (x.Decomposes_, f, this),
+        SelectedPropertyGroups_ (x.SelectedPropertyGroups_, f, this),
+        IsTemplateObject_ (x.IsTemplateObject_, f, this)
       {
       }
 
@@ -130,7 +192,9 @@ namespace schema
                            ::xml_schema::flags f,
                            ::xml_schema::container* c)
       : ::schema::simxml::SimModelCore::SimRoot (e, f | ::xml_schema::flags::base, c),
-        Decomposes_ (this)
+        Decomposes_ (this),
+        SelectedPropertyGroups_ (this),
+        IsTemplateObject_ (this)
       {
         if ((f & ::xml_schema::flags::base) == 0)
         {
@@ -165,6 +229,31 @@ namespace schema
             }
           }
 
+          // SelectedPropertyGroups
+          //
+          if (n.name () == "SelectedPropertyGroups" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/SimModelCore")
+          {
+            ::std::auto_ptr< SelectedPropertyGroups_type > r (
+              SelectedPropertyGroups_traits::create (i, f, this));
+
+            if (!this->SelectedPropertyGroups_)
+            {
+              this->SelectedPropertyGroups_.set (r);
+              continue;
+            }
+          }
+
+          // IsTemplateObject
+          //
+          if (n.name () == "IsTemplateObject" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/SimModelCore")
+          {
+            if (!this->IsTemplateObject_)
+            {
+              this->IsTemplateObject_.set (IsTemplateObject_traits::create (i, f, this));
+              continue;
+            }
+          }
+
           break;
         }
       }
@@ -183,6 +272,8 @@ namespace schema
         {
           static_cast< ::schema::simxml::SimModelCore::SimRoot& > (*this) = x;
           this->Decomposes_ = x.Decomposes_;
+          this->SelectedPropertyGroups_ = x.SelectedPropertyGroups_;
+          this->IsTemplateObject_ = x.IsTemplateObject_;
         }
 
         return *this;

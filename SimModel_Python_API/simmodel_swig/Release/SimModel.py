@@ -383,14 +383,14 @@ class SimModel(base._type):
     def SimFlowEnergyTransferStorage_HotWaterTank_Mixed(self, *args):
         return _SimModel.SimModel_SimFlowEnergyTransferStorage_HotWaterTank_Mixed(self, *args)
 
+    def SimFlowEnergyTransferStorage_HotWaterTank_Expansion(self, *args):
+        return _SimModel.SimModel_SimFlowEnergyTransferStorage_HotWaterTank_Expansion(self, *args)
+
+    def SimFlowEnergyTransferStorage_HotWaterTank_MixedDual(self, *args):
+        return _SimModel.SimModel_SimFlowEnergyTransferStorage_HotWaterTank_MixedDual(self, *args)
+
     def SimFlowFitting_Default_Default(self, *args):
         return _SimModel.SimModel_SimFlowFitting_Default_Default(self, *args)
-
-    def SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop(self, *args):
-        return _SimModel.SimModel_SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop(self, *args)
-
-    def SimFlowFitting_FlowElementProxy_SupplyProxy_AirLoop(self, *args):
-        return _SimModel.SimModel_SimFlowFitting_FlowElementProxy_SupplyProxy_AirLoop(self, *args)
 
     def SimFlowFitting_Mixer_DemandProxyMixerWater(self, *args):
         return _SimModel.SimModel_SimFlowFitting_Mixer_DemandProxyMixerWater(self, *args)
@@ -520,6 +520,9 @@ class SimModel(base._type):
 
     def SimMaterialLayer_GlazingMaterialLayer_Default(self, *args):
         return _SimModel.SimModel_SimMaterialLayer_GlazingMaterialLayer_Default(self, *args)
+
+    def SimMaterialLayer_GlazingMaterialLayer_Thermochromic(self, *args):
+        return _SimModel.SimModel_SimMaterialLayer_GlazingMaterialLayer_Thermochromic(self, *args)
 
     def SimMaterialLayer_OpaqueMaterialLayer_Default(self, *args):
         return _SimModel.SimModel_SimMaterialLayer_OpaqueMaterialLayer_Default(self, *args)
@@ -695,6 +698,9 @@ class SimModel(base._type):
     def SimTemplateZoneLoads_ZoneLoads_Default(self, *args):
         return _SimModel.SimModel_SimTemplateZoneLoads_ZoneLoads_Default(self, *args)
 
+    def SimThermalZoneType_ThermalZone_Default(self, *args):
+        return _SimModel.SimModel_SimThermalZoneType_ThermalZone_Default(self, *args)
+
     def SimTimeSeriesSchedule_Calendar_Configuration(self, *args):
         return _SimModel.SimModel_SimTimeSeriesSchedule_Calendar_Configuration(self, *args)
 
@@ -742,6 +748,27 @@ class SimModel(base._type):
 
     def SimWindowType_Window_Default(self, *args):
         return _SimModel.SimModel_SimWindowType_Window_Default(self, *args)
+
+    def SimWindowType_Window_Exterior(self, *args):
+        return _SimModel.SimModel_SimWindowType_Window_Exterior(self, *args)
+
+    def SimWindowType_Window_Interior(self, *args):
+        return _SimModel.SimModel_SimWindowType_Window_Interior(self, *args)
+
+    def SimModelVersion(self, *args):
+        return _SimModel.SimModel_SimModelVersion(self, *args)
+
+    def SimModelSchemaVersion(self, *args):
+        return _SimModel.SimModel_SimModelSchemaVersion(self, *args)
+
+    def SimModelUnitsVersion(self, *args):
+        return _SimModel.SimModel_SimModelUnitsVersion(self, *args)
+
+    def SimModelUnitDefaultsVersion(self, *args):
+        return _SimModel.SimModel_SimModelUnitDefaultsVersion(self, *args)
+
+    def SimModelSchemaIDKey(self, *args):
+        return _SimModel.SimModel_SimModelSchemaIDKey(self, *args)
 
     def __init__(self, *args):
         this = _SimModel.new_SimModel(*args)

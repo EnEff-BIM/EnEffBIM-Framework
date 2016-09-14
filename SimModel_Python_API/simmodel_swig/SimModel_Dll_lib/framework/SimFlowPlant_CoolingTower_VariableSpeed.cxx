@@ -1407,6 +1407,30 @@ namespace schema
         this->T24HeatRejectFanType_.set (x);
       }
 
+      const SimFlowPlant_CoolingTower_VariableSpeed::T24LeavingTempDesign_optional& SimFlowPlant_CoolingTower_VariableSpeed::
+      T24LeavingTempDesign () const
+      {
+        return this->T24LeavingTempDesign_;
+      }
+
+      SimFlowPlant_CoolingTower_VariableSpeed::T24LeavingTempDesign_optional& SimFlowPlant_CoolingTower_VariableSpeed::
+      T24LeavingTempDesign ()
+      {
+        return this->T24LeavingTempDesign_;
+      }
+
+      void SimFlowPlant_CoolingTower_VariableSpeed::
+      T24LeavingTempDesign (const T24LeavingTempDesign_type& x)
+      {
+        this->T24LeavingTempDesign_.set (x);
+      }
+
+      void SimFlowPlant_CoolingTower_VariableSpeed::
+      T24LeavingTempDesign (const T24LeavingTempDesign_optional& x)
+      {
+        this->T24LeavingTempDesign_ = x;
+      }
+
       const SimFlowPlant_CoolingTower_VariableSpeed::T24ConstructStatus2_optional& SimFlowPlant_CoolingTower_VariableSpeed::
       T24ConstructStatus2 () const
       {
@@ -1515,6 +1539,7 @@ namespace schema
         CoolTowerPerf_YorkCalc_MaxLiqToGasRatio_ (this),
         CoolTowerPerf_YorkCalc_Coeff_1_27_ (this),
         T24HeatRejectFanType_ (this),
+        T24LeavingTempDesign_ (this),
         T24ConstructStatus2_ (this)
       {
       }
@@ -1574,6 +1599,7 @@ namespace schema
         CoolTowerPerf_YorkCalc_MaxLiqToGasRatio_ (this),
         CoolTowerPerf_YorkCalc_Coeff_1_27_ (this),
         T24HeatRejectFanType_ (this),
+        T24LeavingTempDesign_ (this),
         T24ConstructStatus2_ (this)
       {
       }
@@ -1635,6 +1661,7 @@ namespace schema
         CoolTowerPerf_YorkCalc_MaxLiqToGasRatio_ (x.CoolTowerPerf_YorkCalc_MaxLiqToGasRatio_, f, this),
         CoolTowerPerf_YorkCalc_Coeff_1_27_ (x.CoolTowerPerf_YorkCalc_Coeff_1_27_, f, this),
         T24HeatRejectFanType_ (x.T24HeatRejectFanType_, f, this),
+        T24LeavingTempDesign_ (x.T24LeavingTempDesign_, f, this),
         T24ConstructStatus2_ (x.T24ConstructStatus2_, f, this)
       {
       }
@@ -1696,6 +1723,7 @@ namespace schema
         CoolTowerPerf_YorkCalc_MaxLiqToGasRatio_ (this),
         CoolTowerPerf_YorkCalc_Coeff_1_27_ (this),
         T24HeatRejectFanType_ (this),
+        T24LeavingTempDesign_ (this),
         T24ConstructStatus2_ (this)
       {
         if ((f & ::xml_schema::flags::base) == 0)
@@ -2343,6 +2371,17 @@ namespace schema
             }
           }
 
+          // T24LeavingTempDesign
+          //
+          if (n.name () == "T24LeavingTempDesign" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            if (!this->T24LeavingTempDesign_)
+            {
+              this->T24LeavingTempDesign_.set (T24LeavingTempDesign_traits::create (i, f, this));
+              continue;
+            }
+          }
+
           // T24ConstructStatus2
           //
           if (n.name () == "T24ConstructStatus2" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
@@ -2426,6 +2465,7 @@ namespace schema
           this->CoolTowerPerf_YorkCalc_MaxLiqToGasRatio_ = x.CoolTowerPerf_YorkCalc_MaxLiqToGasRatio_;
           this->CoolTowerPerf_YorkCalc_Coeff_1_27_ = x.CoolTowerPerf_YorkCalc_Coeff_1_27_;
           this->T24HeatRejectFanType_ = x.T24HeatRejectFanType_;
+          this->T24LeavingTempDesign_ = x.T24LeavingTempDesign_;
           this->T24ConstructStatus2_ = x.T24ConstructStatus2_;
         }
 

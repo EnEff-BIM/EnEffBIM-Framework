@@ -127,11 +127,11 @@ class SimPerson(base.SimActorDefinition):
     def SuffixTitles(self, *args):
         return _SimPerson_Person_Default.SimPerson_SuffixTitles(self, *args)
 
-    def Roles(self, *args):
-        return _SimPerson_Person_Default.SimPerson_Roles(self, *args)
-
     def Addresses(self, *args):
         return _SimPerson_Person_Default.SimPerson_Addresses(self, *args)
+
+    def ActorPersonAndOrganization(self, *args):
+        return _SimPerson_Person_Default.SimPerson_ActorPersonAndOrganization(self, *args)
 
     def __init__(self, *args):
         this = _SimPerson_Person_Default.new_SimPerson(*args)

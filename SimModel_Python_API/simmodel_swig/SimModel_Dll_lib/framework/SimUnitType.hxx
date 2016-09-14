@@ -50,7 +50,7 @@
 #include <xsd/cxx/config.hxx>
 
 #if (XSD_INT_VERSION != 4000000L)
-#error XSD runtime version mismatch
+//#error XSD runtime version mismatch
 #endif
 
 #include <xsd/cxx/pre.hxx>
@@ -260,7 +260,7 @@ namespace schema
       class __declspec(dllexport) SimUnitType: public ::schema::simxml::SimModelCore::SimResourceObject
       {
         public:
-        // UnitType.String
+        // UnitType_String
         //
         typedef ::xml_schema::string UnitType_String_type;
         typedef ::xsd::cxx::tree::optional< UnitType_String_type, false > UnitType_String_optional;

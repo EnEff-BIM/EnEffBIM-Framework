@@ -257,7 +257,7 @@ namespace schema
   {
     namespace BuildingModel
     {
-      class SimTransportSysAssembly: public ::schema::simxml::BuildingModel::SimBuildingElementAssembly
+      class SimTransportSysAssembly: public ::schema::simxml::SimModelCore::SimBuildingElementAssembly
       {
         public:
         // Name

@@ -323,23 +323,26 @@ namespace schema
         void
         ChartOrTableType (::std::auto_ptr< ChartOrTableType_type > p);
 
-        // TimeStep
+        // TimeStep_String
         //
-        typedef ::xml_schema::double_ TimeStep_type;
-        typedef ::xsd::cxx::tree::optional< TimeStep_type > TimeStep_optional;
-        typedef ::xsd::cxx::tree::traits< TimeStep_type, char, ::xsd::cxx::tree::schema_type::double_ > TimeStep_traits;
+        typedef ::xml_schema::string TimeStep_String_type;
+        typedef ::xsd::cxx::tree::optional< TimeStep_String_type > TimeStep_String_optional;
+        typedef ::xsd::cxx::tree::traits< TimeStep_String_type, char > TimeStep_String_traits;
 
-        const TimeStep_optional&
-        TimeStep () const;
+        const TimeStep_String_optional&
+        TimeStep_String () const;
 
-        TimeStep_optional&
-        TimeStep ();
-
-        void
-        TimeStep (const TimeStep_type& x);
+        TimeStep_String_optional&
+        TimeStep_String ();
 
         void
-        TimeStep (const TimeStep_optional& x);
+        TimeStep_String (const TimeStep_String_type& x);
+
+        void
+        TimeStep_String (const TimeStep_String_optional& x);
+
+        void
+        TimeStep_String (::std::auto_ptr< TimeStep_String_type > p);
 
         // Font
         //
@@ -1042,7 +1045,7 @@ namespace schema
         VariablesInView_optional VariablesInView_;
         ViewType_optional ViewType_;
         ChartOrTableType_optional ChartOrTableType_;
-        TimeStep_optional TimeStep_;
+        TimeStep_String_optional TimeStep_String_;
         Font_optional Font_;
         FontSize_optional FontSize_;
         X_AxisMeasure_optional X_AxisMeasure_;

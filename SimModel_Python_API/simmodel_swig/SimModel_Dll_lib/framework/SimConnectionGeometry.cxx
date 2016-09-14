@@ -40,6 +40,8 @@
 
 #include "SimConnectionGeometry.hxx"
 
+#include "doublelist.hxx"
+
 namespace schema
 {
   namespace simxml
@@ -48,6 +50,66 @@ namespace schema
     {
       // SimConnectionGeometry
       // 
+
+      const SimConnectionGeometry::ConnectedElements_optional& SimConnectionGeometry::
+      ConnectedElements () const
+      {
+        return this->ConnectedElements_;
+      }
+
+      SimConnectionGeometry::ConnectedElements_optional& SimConnectionGeometry::
+      ConnectedElements ()
+      {
+        return this->ConnectedElements_;
+      }
+
+      void SimConnectionGeometry::
+      ConnectedElements (const ConnectedElements_type& x)
+      {
+        this->ConnectedElements_.set (x);
+      }
+
+      void SimConnectionGeometry::
+      ConnectedElements (const ConnectedElements_optional& x)
+      {
+        this->ConnectedElements_ = x;
+      }
+
+      void SimConnectionGeometry::
+      ConnectedElements (::std::auto_ptr< ConnectedElements_type > x)
+      {
+        this->ConnectedElements_.set (x);
+      }
+
+      const SimConnectionGeometry::Coordinates_optional& SimConnectionGeometry::
+      Coordinates () const
+      {
+        return this->Coordinates_;
+      }
+
+      SimConnectionGeometry::Coordinates_optional& SimConnectionGeometry::
+      Coordinates ()
+      {
+        return this->Coordinates_;
+      }
+
+      void SimConnectionGeometry::
+      Coordinates (const Coordinates_type& x)
+      {
+        this->Coordinates_.set (x);
+      }
+
+      void SimConnectionGeometry::
+      Coordinates (const Coordinates_optional& x)
+      {
+        this->Coordinates_ = x;
+      }
+
+      void SimConnectionGeometry::
+      Coordinates (::std::auto_ptr< Coordinates_type > x)
+      {
+        this->Coordinates_.set (x);
+      }
     }
   }
 }
@@ -74,13 +136,17 @@ namespace schema
 
       SimConnectionGeometry::
       SimConnectionGeometry ()
-      : ::schema::simxml::SimModelCore::SimResourceObject ()
+      : ::schema::simxml::SimModelCore::SimResourceObject (),
+        ConnectedElements_ (this),
+        Coordinates_ (this)
       {
       }
 
       SimConnectionGeometry::
       SimConnectionGeometry (const RefId_type& RefId)
-      : ::schema::simxml::SimModelCore::SimResourceObject (RefId)
+      : ::schema::simxml::SimModelCore::SimResourceObject (RefId),
+        ConnectedElements_ (this),
+        Coordinates_ (this)
       {
       }
 
@@ -88,7 +154,9 @@ namespace schema
       SimConnectionGeometry (const SimConnectionGeometry& x,
                              ::xml_schema::flags f,
                              ::xml_schema::container* c)
-      : ::schema::simxml::SimModelCore::SimResourceObject (x, f, c)
+      : ::schema::simxml::SimModelCore::SimResourceObject (x, f, c),
+        ConnectedElements_ (x.ConnectedElements_, f, this),
+        Coordinates_ (x.Coordinates_, f, this)
       {
       }
 
@@ -96,8 +164,59 @@ namespace schema
       SimConnectionGeometry (const ::xercesc::DOMElement& e,
                              ::xml_schema::flags f,
                              ::xml_schema::container* c)
-      : ::schema::simxml::SimModelCore::SimResourceObject (e, f, c)
+      : ::schema::simxml::SimModelCore::SimResourceObject (e, f | ::xml_schema::flags::base, c),
+        ConnectedElements_ (this),
+        Coordinates_ (this)
       {
+        if ((f & ::xml_schema::flags::base) == 0)
+        {
+          ::xsd::cxx::xml::dom::parser< char > p (e, true, false, true);
+          this->parse (p, f);
+        }
+      }
+
+      void SimConnectionGeometry::
+      parse (::xsd::cxx::xml::dom::parser< char >& p,
+             ::xml_schema::flags f)
+      {
+        this->::schema::simxml::SimModelCore::SimResourceObject::parse (p, f);
+
+        for (; p.more_content (); p.next_content (false))
+        {
+          const ::xercesc::DOMElement& i (p.cur_element ());
+          const ::xsd::cxx::xml::qualified_name< char > n (
+            ::xsd::cxx::xml::dom::name< char > (i));
+
+          // ConnectedElements
+          //
+          if (n.name () == "ConnectedElements" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/ResourcesGeneral")
+          {
+            ::std::auto_ptr< ConnectedElements_type > r (
+              ConnectedElements_traits::create (i, f, this));
+
+            if (!this->ConnectedElements_)
+            {
+              this->ConnectedElements_.set (r);
+              continue;
+            }
+          }
+
+          // Coordinates
+          //
+          if (n.name () == "Coordinates" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/ResourcesGeneral")
+          {
+            ::std::auto_ptr< Coordinates_type > r (
+              Coordinates_traits::create (i, f, this));
+
+            if (!this->Coordinates_)
+            {
+              this->Coordinates_.set (r);
+              continue;
+            }
+          }
+
+          break;
+        }
       }
 
       SimConnectionGeometry* SimConnectionGeometry::
@@ -105,6 +224,19 @@ namespace schema
               ::xml_schema::container* c) const
       {
         return new class SimConnectionGeometry (*this, f, c);
+      }
+
+      SimConnectionGeometry& SimConnectionGeometry::
+      operator= (const SimConnectionGeometry& x)
+      {
+        if (this != &x)
+        {
+          static_cast< ::schema::simxml::SimModelCore::SimResourceObject& > (*this) = x;
+          this->ConnectedElements_ = x.ConnectedElements_;
+          this->Coordinates_ = x.Coordinates_;
+        }
+
+        return *this;
       }
 
       SimConnectionGeometry::

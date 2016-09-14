@@ -228,7 +228,7 @@ namespace schema
 {
   namespace simxml
   {
-    namespace BuildingModel
+    namespace SimModelCore
     {
       class SimBuildingElementAssembly;
     }
@@ -255,7 +255,7 @@ namespace schema
 {
   namespace simxml
   {
-    namespace BuildingModel
+    namespace SimModelCore
     {
       class SimBuildingElementAssembly: public ::schema::simxml::SimModelCore::SimElement
       {
@@ -295,7 +295,7 @@ namespace schema
 {
   namespace simxml
   {
-    namespace BuildingModel
+    namespace SimModelCore
     {
     }
   }

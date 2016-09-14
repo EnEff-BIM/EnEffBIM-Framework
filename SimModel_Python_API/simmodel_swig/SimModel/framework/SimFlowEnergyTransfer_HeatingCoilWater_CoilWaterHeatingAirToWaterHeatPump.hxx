@@ -260,27 +260,6 @@ namespace schema
       class SimFlowEnergyTransfer_HeatingCoilWater_CoilWaterHeatingAirToWaterHeatPump: public ::schema::simxml::MepModel::SimFlowEnergyTransfer_HeatingCoilWater
       {
         public:
-        // SimFlowEnergyTrans_Name
-        //
-        typedef ::xml_schema::string SimFlowEnergyTrans_Name_type;
-        typedef ::xsd::cxx::tree::optional< SimFlowEnergyTrans_Name_type > SimFlowEnergyTrans_Name_optional;
-        typedef ::xsd::cxx::tree::traits< SimFlowEnergyTrans_Name_type, char > SimFlowEnergyTrans_Name_traits;
-
-        const SimFlowEnergyTrans_Name_optional&
-        SimFlowEnergyTrans_Name () const;
-
-        SimFlowEnergyTrans_Name_optional&
-        SimFlowEnergyTrans_Name ();
-
-        void
-        SimFlowEnergyTrans_Name (const SimFlowEnergyTrans_Name_type& x);
-
-        void
-        SimFlowEnergyTrans_Name (const SimFlowEnergyTrans_Name_optional& x);
-
-        void
-        SimFlowEnergyTrans_Name (::std::auto_ptr< SimFlowEnergyTrans_Name_type > p);
-
         // SimFlowEnergyTrans_PartLoadFractCorrelCurveName
         //
         typedef ::xml_schema::idref SimFlowEnergyTrans_PartLoadFractCorrelCurveName_type;
@@ -844,7 +823,6 @@ namespace schema
                ::xml_schema::flags);
 
         protected:
-        SimFlowEnergyTrans_Name_optional SimFlowEnergyTrans_Name_;
         SimFlowEnergyTrans_PartLoadFractCorrelCurveName_optional SimFlowEnergyTrans_PartLoadFractCorrelCurveName_;
         SimFlowEnergyTrans_CrankcaseHeatCap_optional SimFlowEnergyTrans_CrankcaseHeatCap_;
         SimFlowEnergyTrans_RatedEvapAirFlowRate_optional SimFlowEnergyTrans_RatedEvapAirFlowRate_;

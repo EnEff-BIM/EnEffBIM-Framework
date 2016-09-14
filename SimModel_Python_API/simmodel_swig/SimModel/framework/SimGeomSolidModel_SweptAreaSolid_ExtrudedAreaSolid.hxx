@@ -263,8 +263,7 @@ namespace schema
         // ExtrudedDirection
         //
         typedef ::xml_schema::idref ExtrudedDirection_type;
-        typedef ::xsd::cxx::tree::optional< ExtrudedDirection_type
-, false > ExtrudedDirection_optional;
+        typedef ::xsd::cxx::tree::optional< ExtrudedDirection_type, false > ExtrudedDirection_optional;
         typedef ::xsd::cxx::tree::traits< ExtrudedDirection_type, char > ExtrudedDirection_traits;
 
         const ExtrudedDirection_optional&

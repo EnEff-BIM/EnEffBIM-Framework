@@ -464,27 +464,6 @@ namespace schema
         void
         T24AcceptTestReq (const T24AcceptTestReq_optional& x);
 
-        // T24AirSysCntrlSysType
-        //
-        typedef ::xml_schema::string T24AirSysCntrlSysType_type;
-        typedef ::xsd::cxx::tree::optional< T24AirSysCntrlSysType_type > T24AirSysCntrlSysType_optional;
-        typedef ::xsd::cxx::tree::traits< T24AirSysCntrlSysType_type, char > T24AirSysCntrlSysType_traits;
-
-        const T24AirSysCntrlSysType_optional&
-        T24AirSysCntrlSysType () const;
-
-        T24AirSysCntrlSysType_optional&
-        T24AirSysCntrlSysType ();
-
-        void
-        T24AirSysCntrlSysType (const T24AirSysCntrlSysType_type& x);
-
-        void
-        T24AirSysCntrlSysType (const T24AirSysCntrlSysType_optional& x);
-
-        void
-        T24AirSysCntrlSysType (::std::auto_ptr< T24AirSysCntrlSysType_type > p);
-
         // T24DuctInsul
         //
         typedef ::xml_schema::double_ T24DuctInsul_type;
@@ -584,113 +563,311 @@ namespace schema
         void
         T24HERSDuctReq (const T24HERSDuctReq_optional& x);
 
-        // T24Mch03A
+        // T24NRCAMch02A
         //
-        typedef ::xml_schema::int_ T24Mch03A_type;
-        typedef ::xsd::cxx::tree::optional< T24Mch03A_type > T24Mch03A_optional;
-        typedef ::xsd::cxx::tree::traits< T24Mch03A_type, char > T24Mch03A_traits;
+        typedef ::xml_schema::int_ T24NRCAMch02A_type;
+        typedef ::xsd::cxx::tree::optional< T24NRCAMch02A_type > T24NRCAMch02A_optional;
+        typedef ::xsd::cxx::tree::traits< T24NRCAMch02A_type, char > T24NRCAMch02A_traits;
 
-        const T24Mch03A_optional&
-        T24Mch03A () const;
+        const T24NRCAMch02A_optional&
+        T24NRCAMch02A () const;
 
-        T24Mch03A_optional&
-        T24Mch03A ();
-
-        void
-        T24Mch03A (const T24Mch03A_type& x);
+        T24NRCAMch02A_optional&
+        T24NRCAMch02A ();
 
         void
-        T24Mch03A (const T24Mch03A_optional& x);
+        T24NRCAMch02A (const T24NRCAMch02A_type& x);
 
-        // T24Mch04A
+        void
+        T24NRCAMch02A (const T24NRCAMch02A_optional& x);
+
+        // T24NRCAMch03A
         //
-        typedef ::xml_schema::int_ T24Mch04A_type;
-        typedef ::xsd::cxx::tree::optional< T24Mch04A_type > T24Mch04A_optional;
-        typedef ::xsd::cxx::tree::traits< T24Mch04A_type, char > T24Mch04A_traits;
+        typedef ::xml_schema::int_ T24NRCAMch03A_type;
+        typedef ::xsd::cxx::tree::optional< T24NRCAMch03A_type > T24NRCAMch03A_optional;
+        typedef ::xsd::cxx::tree::traits< T24NRCAMch03A_type, char > T24NRCAMch03A_traits;
 
-        const T24Mch04A_optional&
-        T24Mch04A () const;
+        const T24NRCAMch03A_optional&
+        T24NRCAMch03A () const;
 
-        T24Mch04A_optional&
-        T24Mch04A ();
-
-        void
-        T24Mch04A (const T24Mch04A_type& x);
+        T24NRCAMch03A_optional&
+        T24NRCAMch03A ();
 
         void
-        T24Mch04A (const T24Mch04A_optional& x);
+        T24NRCAMch03A (const T24NRCAMch03A_type& x);
 
-        // T24Mch05A
+        void
+        T24NRCAMch03A (const T24NRCAMch03A_optional& x);
+
+        // T24NRCAMch04A
         //
-        typedef ::xml_schema::int_ T24Mch05A_type;
-        typedef ::xsd::cxx::tree::optional< T24Mch05A_type > T24Mch05A_optional;
-        typedef ::xsd::cxx::tree::traits< T24Mch05A_type, char > T24Mch05A_traits;
+        typedef ::xml_schema::int_ T24NRCAMch04A_type;
+        typedef ::xsd::cxx::tree::optional< T24NRCAMch04A_type > T24NRCAMch04A_optional;
+        typedef ::xsd::cxx::tree::traits< T24NRCAMch04A_type, char > T24NRCAMch04A_traits;
 
-        const T24Mch05A_optional&
-        T24Mch05A () const;
+        const T24NRCAMch04A_optional&
+        T24NRCAMch04A () const;
 
-        T24Mch05A_optional&
-        T24Mch05A ();
-
-        void
-        T24Mch05A (const T24Mch05A_type& x);
+        T24NRCAMch04A_optional&
+        T24NRCAMch04A ();
 
         void
-        T24Mch05A (const T24Mch05A_optional& x);
+        T24NRCAMch04A (const T24NRCAMch04A_type& x);
 
-        // T24Mch09A
+        void
+        T24NRCAMch04A (const T24NRCAMch04A_optional& x);
+
+        // T24NRCAMch05A
         //
-        typedef ::xml_schema::int_ T24Mch09A_type;
-        typedef ::xsd::cxx::tree::optional< T24Mch09A_type > T24Mch09A_optional;
-        typedef ::xsd::cxx::tree::traits< T24Mch09A_type, char > T24Mch09A_traits;
+        typedef ::xml_schema::int_ T24NRCAMch05A_type;
+        typedef ::xsd::cxx::tree::optional< T24NRCAMch05A_type > T24NRCAMch05A_optional;
+        typedef ::xsd::cxx::tree::traits< T24NRCAMch05A_type, char > T24NRCAMch05A_traits;
 
-        const T24Mch09A_optional&
-        T24Mch09A () const;
+        const T24NRCAMch05A_optional&
+        T24NRCAMch05A () const;
 
-        T24Mch09A_optional&
-        T24Mch09A ();
-
-        void
-        T24Mch09A (const T24Mch09A_type& x);
+        T24NRCAMch05A_optional&
+        T24NRCAMch05A ();
 
         void
-        T24Mch09A (const T24Mch09A_optional& x);
+        T24NRCAMch05A (const T24NRCAMch05A_type& x);
 
-        // T24Mch15A
+        void
+        T24NRCAMch05A (const T24NRCAMch05A_optional& x);
+
+        // T24NRCAMch06A
         //
-        typedef ::xml_schema::int_ T24Mch15A_type;
-        typedef ::xsd::cxx::tree::optional< T24Mch15A_type > T24Mch15A_optional;
-        typedef ::xsd::cxx::tree::traits< T24Mch15A_type, char > T24Mch15A_traits;
+        typedef ::xml_schema::int_ T24NRCAMch06A_type;
+        typedef ::xsd::cxx::tree::optional< T24NRCAMch06A_type > T24NRCAMch06A_optional;
+        typedef ::xsd::cxx::tree::traits< T24NRCAMch06A_type, char > T24NRCAMch06A_traits;
 
-        const T24Mch15A_optional&
-        T24Mch15A () const;
+        const T24NRCAMch06A_optional&
+        T24NRCAMch06A () const;
 
-        T24Mch15A_optional&
-        T24Mch15A ();
-
-        void
-        T24Mch15A (const T24Mch15A_type& x);
+        T24NRCAMch06A_optional&
+        T24NRCAMch06A ();
 
         void
-        T24Mch15A (const T24Mch15A_optional& x);
+        T24NRCAMch06A (const T24NRCAMch06A_type& x);
 
-        // T24Mch17A
+        void
+        T24NRCAMch06A (const T24NRCAMch06A_optional& x);
+
+        // T24NRCAMch07A
         //
-        typedef ::xml_schema::int_ T24Mch17A_type;
-        typedef ::xsd::cxx::tree::optional< T24Mch17A_type > T24Mch17A_optional;
-        typedef ::xsd::cxx::tree::traits< T24Mch17A_type, char > T24Mch17A_traits;
+        typedef ::xml_schema::int_ T24NRCAMch07A_type;
+        typedef ::xsd::cxx::tree::optional< T24NRCAMch07A_type > T24NRCAMch07A_optional;
+        typedef ::xsd::cxx::tree::traits< T24NRCAMch07A_type, char > T24NRCAMch07A_traits;
 
-        const T24Mch17A_optional&
-        T24Mch17A () const;
+        const T24NRCAMch07A_optional&
+        T24NRCAMch07A () const;
 
-        T24Mch17A_optional&
-        T24Mch17A ();
-
-        void
-        T24Mch17A (const T24Mch17A_type& x);
+        T24NRCAMch07A_optional&
+        T24NRCAMch07A ();
 
         void
-        T24Mch17A (const T24Mch17A_optional& x);
+        T24NRCAMch07A (const T24NRCAMch07A_type& x);
+
+        void
+        T24NRCAMch07A (const T24NRCAMch07A_optional& x);
+
+        // T24NRCAMch08A
+        //
+        typedef ::xml_schema::int_ T24NRCAMch08A_type;
+        typedef ::xsd::cxx::tree::optional< T24NRCAMch08A_type > T24NRCAMch08A_optional;
+        typedef ::xsd::cxx::tree::traits< T24NRCAMch08A_type, char > T24NRCAMch08A_traits;
+
+        const T24NRCAMch08A_optional&
+        T24NRCAMch08A () const;
+
+        T24NRCAMch08A_optional&
+        T24NRCAMch08A ();
+
+        void
+        T24NRCAMch08A (const T24NRCAMch08A_type& x);
+
+        void
+        T24NRCAMch08A (const T24NRCAMch08A_optional& x);
+
+        // T24NRCAMch09A
+        //
+        typedef ::xml_schema::int_ T24NRCAMch09A_type;
+        typedef ::xsd::cxx::tree::optional< T24NRCAMch09A_type > T24NRCAMch09A_optional;
+        typedef ::xsd::cxx::tree::traits< T24NRCAMch09A_type, char > T24NRCAMch09A_traits;
+
+        const T24NRCAMch09A_optional&
+        T24NRCAMch09A () const;
+
+        T24NRCAMch09A_optional&
+        T24NRCAMch09A ();
+
+        void
+        T24NRCAMch09A (const T24NRCAMch09A_type& x);
+
+        void
+        T24NRCAMch09A (const T24NRCAMch09A_optional& x);
+
+        // T24NRCAMch10A
+        //
+        typedef ::xml_schema::int_ T24NRCAMch10A_type;
+        typedef ::xsd::cxx::tree::optional< T24NRCAMch10A_type > T24NRCAMch10A_optional;
+        typedef ::xsd::cxx::tree::traits< T24NRCAMch10A_type, char > T24NRCAMch10A_traits;
+
+        const T24NRCAMch10A_optional&
+        T24NRCAMch10A () const;
+
+        T24NRCAMch10A_optional&
+        T24NRCAMch10A ();
+
+        void
+        T24NRCAMch10A (const T24NRCAMch10A_type& x);
+
+        void
+        T24NRCAMch10A (const T24NRCAMch10A_optional& x);
+
+        // T24NRCAMch11A
+        //
+        typedef ::xml_schema::int_ T24NRCAMch11A_type;
+        typedef ::xsd::cxx::tree::optional< T24NRCAMch11A_type > T24NRCAMch11A_optional;
+        typedef ::xsd::cxx::tree::traits< T24NRCAMch11A_type, char > T24NRCAMch11A_traits;
+
+        const T24NRCAMch11A_optional&
+        T24NRCAMch11A () const;
+
+        T24NRCAMch11A_optional&
+        T24NRCAMch11A ();
+
+        void
+        T24NRCAMch11A (const T24NRCAMch11A_type& x);
+
+        void
+        T24NRCAMch11A (const T24NRCAMch11A_optional& x);
+
+        // T24NRCAMch12A
+        //
+        typedef ::xml_schema::int_ T24NRCAMch12A_type;
+        typedef ::xsd::cxx::tree::optional< T24NRCAMch12A_type > T24NRCAMch12A_optional;
+        typedef ::xsd::cxx::tree::traits< T24NRCAMch12A_type, char > T24NRCAMch12A_traits;
+
+        const T24NRCAMch12A_optional&
+        T24NRCAMch12A () const;
+
+        T24NRCAMch12A_optional&
+        T24NRCAMch12A ();
+
+        void
+        T24NRCAMch12A (const T24NRCAMch12A_type& x);
+
+        void
+        T24NRCAMch12A (const T24NRCAMch12A_optional& x);
+
+        // T24NRCAMch13A
+        //
+        typedef ::xml_schema::int_ T24NRCAMch13A_type;
+        typedef ::xsd::cxx::tree::optional< T24NRCAMch13A_type > T24NRCAMch13A_optional;
+        typedef ::xsd::cxx::tree::traits< T24NRCAMch13A_type, char > T24NRCAMch13A_traits;
+
+        const T24NRCAMch13A_optional&
+        T24NRCAMch13A () const;
+
+        T24NRCAMch13A_optional&
+        T24NRCAMch13A ();
+
+        void
+        T24NRCAMch13A (const T24NRCAMch13A_type& x);
+
+        void
+        T24NRCAMch13A (const T24NRCAMch13A_optional& x);
+
+        // T24NRCAMch14A
+        //
+        typedef ::xml_schema::int_ T24NRCAMch14A_type;
+        typedef ::xsd::cxx::tree::optional< T24NRCAMch14A_type > T24NRCAMch14A_optional;
+        typedef ::xsd::cxx::tree::traits< T24NRCAMch14A_type, char > T24NRCAMch14A_traits;
+
+        const T24NRCAMch14A_optional&
+        T24NRCAMch14A () const;
+
+        T24NRCAMch14A_optional&
+        T24NRCAMch14A ();
+
+        void
+        T24NRCAMch14A (const T24NRCAMch14A_type& x);
+
+        void
+        T24NRCAMch14A (const T24NRCAMch14A_optional& x);
+
+        // T24NRCAMch15A
+        //
+        typedef ::xml_schema::int_ T24NRCAMch15A_type;
+        typedef ::xsd::cxx::tree::optional< T24NRCAMch15A_type > T24NRCAMch15A_optional;
+        typedef ::xsd::cxx::tree::traits< T24NRCAMch15A_type, char > T24NRCAMch15A_traits;
+
+        const T24NRCAMch15A_optional&
+        T24NRCAMch15A () const;
+
+        T24NRCAMch15A_optional&
+        T24NRCAMch15A ();
+
+        void
+        T24NRCAMch15A (const T24NRCAMch15A_type& x);
+
+        void
+        T24NRCAMch15A (const T24NRCAMch15A_optional& x);
+
+        // T24NRCAMch16A
+        //
+        typedef ::xml_schema::int_ T24NRCAMch16A_type;
+        typedef ::xsd::cxx::tree::optional< T24NRCAMch16A_type > T24NRCAMch16A_optional;
+        typedef ::xsd::cxx::tree::traits< T24NRCAMch16A_type, char > T24NRCAMch16A_traits;
+
+        const T24NRCAMch16A_optional&
+        T24NRCAMch16A () const;
+
+        T24NRCAMch16A_optional&
+        T24NRCAMch16A ();
+
+        void
+        T24NRCAMch16A (const T24NRCAMch16A_type& x);
+
+        void
+        T24NRCAMch16A (const T24NRCAMch16A_optional& x);
+
+        // T24NRCAMch17A
+        //
+        typedef ::xml_schema::int_ T24NRCAMch17A_type;
+        typedef ::xsd::cxx::tree::optional< T24NRCAMch17A_type > T24NRCAMch17A_optional;
+        typedef ::xsd::cxx::tree::traits< T24NRCAMch17A_type, char > T24NRCAMch17A_traits;
+
+        const T24NRCAMch17A_optional&
+        T24NRCAMch17A () const;
+
+        T24NRCAMch17A_optional&
+        T24NRCAMch17A ();
+
+        void
+        T24NRCAMch17A (const T24NRCAMch17A_type& x);
+
+        void
+        T24NRCAMch17A (const T24NRCAMch17A_optional& x);
+
+        // T24NRCAMch18A
+        //
+        typedef ::xml_schema::int_ T24NRCAMch18A_type;
+        typedef ::xsd::cxx::tree::optional< T24NRCAMch18A_type > T24NRCAMch18A_optional;
+        typedef ::xsd::cxx::tree::traits< T24NRCAMch18A_type, char > T24NRCAMch18A_traits;
+
+        const T24NRCAMch18A_optional&
+        T24NRCAMch18A () const;
+
+        T24NRCAMch18A_optional&
+        T24NRCAMch18A ();
+
+        void
+        T24NRCAMch18A (const T24NRCAMch18A_type& x);
+
+        void
+        T24NRCAMch18A (const T24NRCAMch18A_optional& x);
 
         // T24ConstructStatus3
         //
@@ -734,204 +911,6 @@ namespace schema
         void
         T24AHUSubType (::std::auto_ptr< T24AHUSubType_type > p);
 
-        // T24Mch02A
-        //
-        typedef ::xml_schema::int_ T24Mch02A_type;
-        typedef ::xsd::cxx::tree::optional< T24Mch02A_type > T24Mch02A_optional;
-        typedef ::xsd::cxx::tree::traits< T24Mch02A_type, char > T24Mch02A_traits;
-
-        const T24Mch02A_optional&
-        T24Mch02A () const;
-
-        T24Mch02A_optional&
-        T24Mch02A ();
-
-        void
-        T24Mch02A (const T24Mch02A_type& x);
-
-        void
-        T24Mch02A (const T24Mch02A_optional& x);
-
-        // T24Mch06A
-        //
-        typedef ::xml_schema::int_ T24Mch06A_type;
-        typedef ::xsd::cxx::tree::optional< T24Mch06A_type > T24Mch06A_optional;
-        typedef ::xsd::cxx::tree::traits< T24Mch06A_type, char > T24Mch06A_traits;
-
-        const T24Mch06A_optional&
-        T24Mch06A () const;
-
-        T24Mch06A_optional&
-        T24Mch06A ();
-
-        void
-        T24Mch06A (const T24Mch06A_type& x);
-
-        void
-        T24Mch06A (const T24Mch06A_optional& x);
-
-        // T24Mch07A
-        //
-        typedef ::xml_schema::int_ T24Mch07A_type;
-        typedef ::xsd::cxx::tree::optional< T24Mch07A_type > T24Mch07A_optional;
-        typedef ::xsd::cxx::tree::traits< T24Mch07A_type, char > T24Mch07A_traits;
-
-        const T24Mch07A_optional&
-        T24Mch07A () const;
-
-        T24Mch07A_optional&
-        T24Mch07A ();
-
-        void
-        T24Mch07A (const T24Mch07A_type& x);
-
-        void
-        T24Mch07A (const T24Mch07A_optional& x);
-
-        // T24Mch08A
-        //
-        typedef ::xml_schema::int_ T24Mch08A_type;
-        typedef ::xsd::cxx::tree::optional< T24Mch08A_type > T24Mch08A_optional;
-        typedef ::xsd::cxx::tree::traits< T24Mch08A_type, char > T24Mch08A_traits;
-
-        const T24Mch08A_optional&
-        T24Mch08A () const;
-
-        T24Mch08A_optional&
-        T24Mch08A ();
-
-        void
-        T24Mch08A (const T24Mch08A_type& x);
-
-        void
-        T24Mch08A (const T24Mch08A_optional& x);
-
-        // T24Mch10A
-        //
-        typedef ::xml_schema::int_ T24Mch10A_type;
-        typedef ::xsd::cxx::tree::optional< T24Mch10A_type > T24Mch10A_optional;
-        typedef ::xsd::cxx::tree::traits< T24Mch10A_type, char > T24Mch10A_traits;
-
-        const T24Mch10A_optional&
-        T24Mch10A () const;
-
-        T24Mch10A_optional&
-        T24Mch10A ();
-
-        void
-        T24Mch10A (const T24Mch10A_type& x);
-
-        void
-        T24Mch10A (const T24Mch10A_optional& x);
-
-        // T24Mch11A
-        //
-        typedef ::xml_schema::int_ T24Mch11A_type;
-        typedef ::xsd::cxx::tree::optional< T24Mch11A_type > T24Mch11A_optional;
-        typedef ::xsd::cxx::tree::traits< T24Mch11A_type, char > T24Mch11A_traits;
-
-        const T24Mch11A_optional&
-        T24Mch11A () const;
-
-        T24Mch11A_optional&
-        T24Mch11A ();
-
-        void
-        T24Mch11A (const T24Mch11A_type& x);
-
-        void
-        T24Mch11A (const T24Mch11A_optional& x);
-
-        // T24Mch12A
-        //
-        typedef ::xml_schema::int_ T24Mch12A_type;
-        typedef ::xsd::cxx::tree::optional< T24Mch12A_type > T24Mch12A_optional;
-        typedef ::xsd::cxx::tree::traits< T24Mch12A_type, char > T24Mch12A_traits;
-
-        const T24Mch12A_optional&
-        T24Mch12A () const;
-
-        T24Mch12A_optional&
-        T24Mch12A ();
-
-        void
-        T24Mch12A (const T24Mch12A_type& x);
-
-        void
-        T24Mch12A (const T24Mch12A_optional& x);
-
-        // T24Mch13A
-        //
-        typedef ::xml_schema::int_ T24Mch13A_type;
-        typedef ::xsd::cxx::tree::optional< T24Mch13A_type > T24Mch13A_optional;
-        typedef ::xsd::cxx::tree::traits< T24Mch13A_type, char > T24Mch13A_traits;
-
-        const T24Mch13A_optional&
-        T24Mch13A () const;
-
-        T24Mch13A_optional&
-        T24Mch13A ();
-
-        void
-        T24Mch13A (const T24Mch13A_type& x);
-
-        void
-        T24Mch13A (const T24Mch13A_optional& x);
-
-        // T24Mch14A
-        //
-        typedef ::xml_schema::int_ T24Mch14A_type;
-        typedef ::xsd::cxx::tree::optional< T24Mch14A_type > T24Mch14A_optional;
-        typedef ::xsd::cxx::tree::traits< T24Mch14A_type, char > T24Mch14A_traits;
-
-        const T24Mch14A_optional&
-        T24Mch14A () const;
-
-        T24Mch14A_optional&
-        T24Mch14A ();
-
-        void
-        T24Mch14A (const T24Mch14A_type& x);
-
-        void
-        T24Mch14A (const T24Mch14A_optional& x);
-
-        // T24Mch16A
-        //
-        typedef ::xml_schema::int_ T24Mch16A_type;
-        typedef ::xsd::cxx::tree::optional< T24Mch16A_type > T24Mch16A_optional;
-        typedef ::xsd::cxx::tree::traits< T24Mch16A_type, char > T24Mch16A_traits;
-
-        const T24Mch16A_optional&
-        T24Mch16A () const;
-
-        T24Mch16A_optional&
-        T24Mch16A ();
-
-        void
-        T24Mch16A (const T24Mch16A_type& x);
-
-        void
-        T24Mch16A (const T24Mch16A_optional& x);
-
-        // T24Mch18A
-        //
-        typedef ::xml_schema::int_ T24Mch18A_type;
-        typedef ::xsd::cxx::tree::optional< T24Mch18A_type > T24Mch18A_optional;
-        typedef ::xsd::cxx::tree::traits< T24Mch18A_type, char > T24Mch18A_traits;
-
-        const T24Mch18A_optional&
-        T24Mch18A () const;
-
-        T24Mch18A_optional&
-        T24Mch18A ();
-
-        void
-        T24Mch18A (const T24Mch18A_type& x);
-
-        void
-        T24Mch18A (const T24Mch18A_optional& x);
-
         // Constructors.
         //
         SimSystem_HvacAir_FullSystem ();
@@ -974,31 +953,30 @@ namespace schema
         SimSys_DemandSideInNodeNames_optional SimSys_DemandSideInNodeNames_;
         SimSys_SupSideOutNodeNames_optional SimSys_SupSideOutNodeNames_;
         T24AcceptTestReq_optional T24AcceptTestReq_;
-        T24AirSysCntrlSysType_optional T24AirSysCntrlSysType_;
         T24DuctInsul_optional T24DuctInsul_;
         T24DuctLoc_optional T24DuctLoc_;
         T24AirSysExhCtrlMthd_optional T24AirSysExhCtrlMthd_;
         T24AirSysExhSysType_optional T24AirSysExhSysType_;
         T24HERSDuctReq_optional T24HERSDuctReq_;
-        T24Mch03A_optional T24Mch03A_;
-        T24Mch04A_optional T24Mch04A_;
-        T24Mch05A_optional T24Mch05A_;
-        T24Mch09A_optional T24Mch09A_;
-        T24Mch15A_optional T24Mch15A_;
-        T24Mch17A_optional T24Mch17A_;
+        T24NRCAMch02A_optional T24NRCAMch02A_;
+        T24NRCAMch03A_optional T24NRCAMch03A_;
+        T24NRCAMch04A_optional T24NRCAMch04A_;
+        T24NRCAMch05A_optional T24NRCAMch05A_;
+        T24NRCAMch06A_optional T24NRCAMch06A_;
+        T24NRCAMch07A_optional T24NRCAMch07A_;
+        T24NRCAMch08A_optional T24NRCAMch08A_;
+        T24NRCAMch09A_optional T24NRCAMch09A_;
+        T24NRCAMch10A_optional T24NRCAMch10A_;
+        T24NRCAMch11A_optional T24NRCAMch11A_;
+        T24NRCAMch12A_optional T24NRCAMch12A_;
+        T24NRCAMch13A_optional T24NRCAMch13A_;
+        T24NRCAMch14A_optional T24NRCAMch14A_;
+        T24NRCAMch15A_optional T24NRCAMch15A_;
+        T24NRCAMch16A_optional T24NRCAMch16A_;
+        T24NRCAMch17A_optional T24NRCAMch17A_;
+        T24NRCAMch18A_optional T24NRCAMch18A_;
         T24ConstructStatus3_optional T24ConstructStatus3_;
         T24AHUSubType_optional T24AHUSubType_;
-        T24Mch02A_optional T24Mch02A_;
-        T24Mch06A_optional T24Mch06A_;
-        T24Mch07A_optional T24Mch07A_;
-        T24Mch08A_optional T24Mch08A_;
-        T24Mch10A_optional T24Mch10A_;
-        T24Mch11A_optional T24Mch11A_;
-        T24Mch12A_optional T24Mch12A_;
-        T24Mch13A_optional T24Mch13A_;
-        T24Mch14A_optional T24Mch14A_;
-        T24Mch16A_optional T24Mch16A_;
-        T24Mch18A_optional T24Mch18A_;
       };
     }
   }

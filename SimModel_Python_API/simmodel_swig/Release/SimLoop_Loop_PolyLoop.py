@@ -109,6 +109,9 @@ class SimLoop(base.SimTopologicalRepresentationItem):
     __getattr__ = lambda self, name: _swig_getattr(self, SimLoop, name)
     __repr__ = _swig_repr
 
+    def Coordinates(self, *args):
+        return _SimLoop_Loop_PolyLoop.SimLoop_Coordinates(self, *args)
+
     def __init__(self, *args):
         this = _SimLoop_Loop_PolyLoop.new_SimLoop(*args)
         try:

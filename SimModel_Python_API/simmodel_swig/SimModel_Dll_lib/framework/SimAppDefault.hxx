@@ -50,7 +50,7 @@
 #include <xsd/cxx/config.hxx>
 
 #if (XSD_INT_VERSION != 4000000L)
-#error XSD runtime version mismatch
+//#error XSD runtime version mismatch
 #endif
 
 #include <xsd/cxx/pre.hxx>
@@ -260,69 +260,6 @@ namespace schema
       class __declspec(dllexport) SimAppDefault: public ::schema::simxml::SimModelCore::SimResourceObject
       {
         public:
-        // DefaultForProject
-        //
-        typedef ::xml_schema::idref DefaultForProject_type;
-        typedef ::xsd::cxx::tree::optional< DefaultForProject_type, false > DefaultForProject_optional;
-        typedef ::xsd::cxx::tree::traits< DefaultForProject_type, char > DefaultForProject_traits;
-
-        const DefaultForProject_optional&
-        DefaultForProject () const;
-
-        DefaultForProject_optional&
-        DefaultForProject ();
-
-        void
-        DefaultForProject (const DefaultForProject_type& x);
-
-        void
-        DefaultForProject (const DefaultForProject_optional& x);
-
-        void
-        DefaultForProject (::std::auto_ptr< DefaultForProject_type > p);
-
-        // DefaultForPerson
-        //
-        typedef ::xml_schema::idref DefaultForPerson_type;
-        typedef ::xsd::cxx::tree::optional< DefaultForPerson_type, false > DefaultForPerson_optional;
-        typedef ::xsd::cxx::tree::traits< DefaultForPerson_type, char > DefaultForPerson_traits;
-
-        const DefaultForPerson_optional&
-        DefaultForPerson () const;
-
-        DefaultForPerson_optional&
-        DefaultForPerson ();
-
-        void
-        DefaultForPerson (const DefaultForPerson_type& x);
-
-        void
-        DefaultForPerson (const DefaultForPerson_optional& x);
-
-        void
-        DefaultForPerson (::std::auto_ptr< DefaultForPerson_type > p);
-
-        // DefaultForUnitSystem
-        //
-        typedef ::xml_schema::string DefaultForUnitSystem_type;
-        typedef ::xsd::cxx::tree::optional< DefaultForUnitSystem_type, false > DefaultForUnitSystem_optional;
-        typedef ::xsd::cxx::tree::traits< DefaultForUnitSystem_type, char > DefaultForUnitSystem_traits;
-
-        const DefaultForUnitSystem_optional&
-        DefaultForUnitSystem () const;
-
-        DefaultForUnitSystem_optional&
-        DefaultForUnitSystem ();
-
-        void
-        DefaultForUnitSystem (const DefaultForUnitSystem_type& x);
-
-        void
-        DefaultForUnitSystem (const DefaultForUnitSystem_optional& x);
-
-        void
-        DefaultForUnitSystem (::std::auto_ptr< DefaultForUnitSystem_type > p);
-
         // Constructors.
         //
         SimAppDefault ();
@@ -341,23 +278,8 @@ namespace schema
         _clone (::xml_schema::flags f = 0,
                 ::xml_schema::container* c = 0) const;
 
-        SimAppDefault&
-        operator= (const SimAppDefault& x);
-
         virtual 
         ~SimAppDefault ();
-
-        // Implementation.
-        //
-        protected:
-        void
-        parse (::xsd::cxx::xml::dom::parser< char >&,
-               ::xml_schema::flags);
-
-        protected:
-        DefaultForProject_optional DefaultForProject_;
-        DefaultForPerson_optional DefaultForPerson_;
-        DefaultForUnitSystem_optional DefaultForUnitSystem_;
       };
     }
   }

@@ -50,7 +50,7 @@
 #include <xsd/cxx/config.hxx>
 
 #if (XSD_INT_VERSION != 4000000L)
-#error XSD runtime version mismatch
+//#error XSD runtime version mismatch
 #endif
 
 #include <xsd/cxx/pre.hxx>
@@ -344,6 +344,27 @@ namespace schema
         void
         T24ProjectTeam (::std::auto_ptr< T24ProjectTeam_type > p);
 
+        // ProjectTypeDefinitions
+        //
+        typedef ::xml_schema::idrefs ProjectTypeDefinitions_type;
+        typedef ::xsd::cxx::tree::optional< ProjectTypeDefinitions_type, false > ProjectTypeDefinitions_optional;
+        typedef ::xsd::cxx::tree::traits< ProjectTypeDefinitions_type, char > ProjectTypeDefinitions_traits;
+
+        const ProjectTypeDefinitions_optional&
+        ProjectTypeDefinitions () const;
+
+        ProjectTypeDefinitions_optional&
+        ProjectTypeDefinitions ();
+
+        void
+        ProjectTypeDefinitions (const ProjectTypeDefinitions_type& x);
+
+        void
+        ProjectTypeDefinitions (const ProjectTypeDefinitions_optional& x);
+
+        void
+        ProjectTypeDefinitions (::std::auto_ptr< ProjectTypeDefinitions_type > p);
+
         // ParentDesignAltForViews
         //
         typedef ::xml_schema::idref ParentDesignAltForViews_type;
@@ -419,6 +440,7 @@ namespace schema
         Representation_optional Representation_;
         UnitsInContext_optional UnitsInContext_;
         T24ProjectTeam_optional T24ProjectTeam_;
+        ProjectTypeDefinitions_optional ProjectTypeDefinitions_;
         ParentDesignAltForViews_optional ParentDesignAltForViews_;
         DesAltViewDateTime_optional DesAltViewDateTime_;
       };

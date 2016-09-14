@@ -25,6 +25,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="SimMaterialLayerSet_Default_Default.i" />
+    <CustomBuild Include="SimMaterialLayerSet_Default_Default.i" />
   </ItemGroup>
 </Project>

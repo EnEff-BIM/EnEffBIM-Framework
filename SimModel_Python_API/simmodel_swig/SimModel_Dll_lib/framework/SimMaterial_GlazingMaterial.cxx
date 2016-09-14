@@ -51,36 +51,6 @@ namespace schema
       // SimMaterial_GlazingMaterial
       // 
 
-      const SimMaterial_GlazingMaterial::SimMaterial_Name_optional& SimMaterial_GlazingMaterial::
-      SimMaterial_Name () const
-      {
-        return this->SimMaterial_Name_;
-      }
-
-      SimMaterial_GlazingMaterial::SimMaterial_Name_optional& SimMaterial_GlazingMaterial::
-      SimMaterial_Name ()
-      {
-        return this->SimMaterial_Name_;
-      }
-
-      void SimMaterial_GlazingMaterial::
-      SimMaterial_Name (const SimMaterial_Name_type& x)
-      {
-        this->SimMaterial_Name_.set (x);
-      }
-
-      void SimMaterial_GlazingMaterial::
-      SimMaterial_Name (const SimMaterial_Name_optional& x)
-      {
-        this->SimMaterial_Name_ = x;
-      }
-
-      void SimMaterial_GlazingMaterial::
-      SimMaterial_Name (::std::auto_ptr< SimMaterial_Name_type > x)
-      {
-        this->SimMaterial_Name_.set (x);
-      }
-
       const SimMaterial_GlazingMaterial::MatProp_MoistPeneDepth_Settings_Name_optional& SimMaterial_GlazingMaterial::
       MatProp_MoistPeneDepth_Settings_Name () const
       {
@@ -1109,7 +1079,6 @@ namespace schema
       SimMaterial_GlazingMaterial::
       SimMaterial_GlazingMaterial ()
       : ::schema::simxml::ResourcesGeneral::SimMaterial (),
-        SimMaterial_Name_ (this),
         MatProp_MoistPeneDepth_Settings_Name_ (this),
         MatProp_MoistPeneDepth_Settings_MoistPenetrationDepth_ (this),
         MatProp_MoistPeneDepth_Settings_MoistEquaCoefA_ (this),
@@ -1152,7 +1121,6 @@ namespace schema
       SimMaterial_GlazingMaterial::
       SimMaterial_GlazingMaterial (const RefId_type& RefId)
       : ::schema::simxml::ResourcesGeneral::SimMaterial (RefId),
-        SimMaterial_Name_ (this),
         MatProp_MoistPeneDepth_Settings_Name_ (this),
         MatProp_MoistPeneDepth_Settings_MoistPenetrationDepth_ (this),
         MatProp_MoistPeneDepth_Settings_MoistEquaCoefA_ (this),
@@ -1197,7 +1165,6 @@ namespace schema
                                    ::xml_schema::flags f,
                                    ::xml_schema::container* c)
       : ::schema::simxml::ResourcesGeneral::SimMaterial (x, f, c),
-        SimMaterial_Name_ (x.SimMaterial_Name_, f, this),
         MatProp_MoistPeneDepth_Settings_Name_ (x.MatProp_MoistPeneDepth_Settings_Name_, f, this),
         MatProp_MoistPeneDepth_Settings_MoistPenetrationDepth_ (x.MatProp_MoistPeneDepth_Settings_MoistPenetrationDepth_, f, this),
         MatProp_MoistPeneDepth_Settings_MoistEquaCoefA_ (x.MatProp_MoistPeneDepth_Settings_MoistEquaCoefA_, f, this),
@@ -1242,7 +1209,6 @@ namespace schema
                                    ::xml_schema::flags f,
                                    ::xml_schema::container* c)
       : ::schema::simxml::ResourcesGeneral::SimMaterial (e, f | ::xml_schema::flags::base, c),
-        SimMaterial_Name_ (this),
         MatProp_MoistPeneDepth_Settings_Name_ (this),
         MatProp_MoistPeneDepth_Settings_MoistPenetrationDepth_ (this),
         MatProp_MoistPeneDepth_Settings_MoistEquaCoefA_ (this),
@@ -1298,20 +1264,6 @@ namespace schema
           const ::xercesc::DOMElement& i (p.cur_element ());
           const ::xsd::cxx::xml::qualified_name< char > n (
             ::xsd::cxx::xml::dom::name< char > (i));
-
-          // SimMaterial_Name
-          //
-          if (n.name () == "SimMaterial_Name" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/ResourcesGeneral")
-          {
-            ::std::auto_ptr< SimMaterial_Name_type > r (
-              SimMaterial_Name_traits::create (i, f, this));
-
-            if (!this->SimMaterial_Name_)
-            {
-              this->SimMaterial_Name_.set (r);
-              continue;
-            }
-          }
 
           // MatProp_MoistPeneDepth_Settings_Name
           //
@@ -1795,7 +1747,6 @@ namespace schema
         if (this != &x)
         {
           static_cast< ::schema::simxml::ResourcesGeneral::SimMaterial& > (*this) = x;
-          this->SimMaterial_Name_ = x.SimMaterial_Name_;
           this->MatProp_MoistPeneDepth_Settings_Name_ = x.MatProp_MoistPeneDepth_Settings_Name_;
           this->MatProp_MoistPeneDepth_Settings_MoistPenetrationDepth_ = x.MatProp_MoistPeneDepth_Settings_MoistPenetrationDepth_;
           this->MatProp_MoistPeneDepth_Settings_MoistEquaCoefA_ = x.MatProp_MoistPeneDepth_Settings_MoistEquaCoefA_;

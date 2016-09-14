@@ -49,36 +49,6 @@ namespace schema
       // SimFlowEnergyTransfer_HeatingCoilWater_CoilAirPreHeatWater
       // 
 
-      const SimFlowEnergyTransfer_HeatingCoilWater_CoilAirPreHeatWater::SimFlowEnergyTrans_Name_optional& SimFlowEnergyTransfer_HeatingCoilWater_CoilAirPreHeatWater::
-      SimFlowEnergyTrans_Name () const
-      {
-        return this->SimFlowEnergyTrans_Name_;
-      }
-
-      SimFlowEnergyTransfer_HeatingCoilWater_CoilAirPreHeatWater::SimFlowEnergyTrans_Name_optional& SimFlowEnergyTransfer_HeatingCoilWater_CoilAirPreHeatWater::
-      SimFlowEnergyTrans_Name ()
-      {
-        return this->SimFlowEnergyTrans_Name_;
-      }
-
-      void SimFlowEnergyTransfer_HeatingCoilWater_CoilAirPreHeatWater::
-      SimFlowEnergyTrans_Name (const SimFlowEnergyTrans_Name_type& x)
-      {
-        this->SimFlowEnergyTrans_Name_.set (x);
-      }
-
-      void SimFlowEnergyTransfer_HeatingCoilWater_CoilAirPreHeatWater::
-      SimFlowEnergyTrans_Name (const SimFlowEnergyTrans_Name_optional& x)
-      {
-        this->SimFlowEnergyTrans_Name_ = x;
-      }
-
-      void SimFlowEnergyTransfer_HeatingCoilWater_CoilAirPreHeatWater::
-      SimFlowEnergyTrans_Name (::std::auto_ptr< SimFlowEnergyTrans_Name_type > x)
-      {
-        this->SimFlowEnergyTrans_Name_.set (x);
-      }
-
       const SimFlowEnergyTransfer_HeatingCoilWater_CoilAirPreHeatWater::SimFlowEnergyTrans_AvailSchedName_optional& SimFlowEnergyTransfer_HeatingCoilWater_CoilAirPreHeatWater::
       SimFlowEnergyTrans_AvailSchedName () const
       {
@@ -450,6 +420,54 @@ namespace schema
       {
         this->SimFlowEnergyTrans_RatedRatioForAirAndWaterConvect_ = x;
       }
+
+      const SimFlowEnergyTransfer_HeatingCoilWater_CoilAirPreHeatWater::T24BypassMinimumEfficiencyCheck_optional& SimFlowEnergyTransfer_HeatingCoilWater_CoilAirPreHeatWater::
+      T24BypassMinimumEfficiencyCheck () const
+      {
+        return this->T24BypassMinimumEfficiencyCheck_;
+      }
+
+      SimFlowEnergyTransfer_HeatingCoilWater_CoilAirPreHeatWater::T24BypassMinimumEfficiencyCheck_optional& SimFlowEnergyTransfer_HeatingCoilWater_CoilAirPreHeatWater::
+      T24BypassMinimumEfficiencyCheck ()
+      {
+        return this->T24BypassMinimumEfficiencyCheck_;
+      }
+
+      void SimFlowEnergyTransfer_HeatingCoilWater_CoilAirPreHeatWater::
+      T24BypassMinimumEfficiencyCheck (const T24BypassMinimumEfficiencyCheck_type& x)
+      {
+        this->T24BypassMinimumEfficiencyCheck_.set (x);
+      }
+
+      void SimFlowEnergyTransfer_HeatingCoilWater_CoilAirPreHeatWater::
+      T24BypassMinimumEfficiencyCheck (const T24BypassMinimumEfficiencyCheck_optional& x)
+      {
+        this->T24BypassMinimumEfficiencyCheck_ = x;
+      }
+
+      const SimFlowEnergyTransfer_HeatingCoilWater_CoilAirPreHeatWater::T24CoilPressureDrop_optional& SimFlowEnergyTransfer_HeatingCoilWater_CoilAirPreHeatWater::
+      T24CoilPressureDrop () const
+      {
+        return this->T24CoilPressureDrop_;
+      }
+
+      SimFlowEnergyTransfer_HeatingCoilWater_CoilAirPreHeatWater::T24CoilPressureDrop_optional& SimFlowEnergyTransfer_HeatingCoilWater_CoilAirPreHeatWater::
+      T24CoilPressureDrop ()
+      {
+        return this->T24CoilPressureDrop_;
+      }
+
+      void SimFlowEnergyTransfer_HeatingCoilWater_CoilAirPreHeatWater::
+      T24CoilPressureDrop (const T24CoilPressureDrop_type& x)
+      {
+        this->T24CoilPressureDrop_.set (x);
+      }
+
+      void SimFlowEnergyTransfer_HeatingCoilWater_CoilAirPreHeatWater::
+      T24CoilPressureDrop (const T24CoilPressureDrop_optional& x)
+      {
+        this->T24CoilPressureDrop_ = x;
+      }
     }
   }
 }
@@ -477,7 +495,6 @@ namespace schema
       SimFlowEnergyTransfer_HeatingCoilWater_CoilAirPreHeatWater::
       SimFlowEnergyTransfer_HeatingCoilWater_CoilAirPreHeatWater ()
       : ::schema::simxml::MepModel::SimFlowEnergyTransfer_HeatingCoilWater (),
-        SimFlowEnergyTrans_Name_ (this),
         SimFlowEnergyTrans_AvailSchedName_ (this),
         SimFlowEnergyTrans_RatedCap_ (this),
         SimFlowEnergyTrans_MaxWaterFlowRate_ (this),
@@ -491,14 +508,15 @@ namespace schema
         SimFlowEnergyTrans_RatedInletAirTemp_ (this),
         SimFlowEnergyTrans_RatedOutletWaterTemp_ (this),
         SimFlowEnergyTrans_RatedOutletAirTemp_ (this),
-        SimFlowEnergyTrans_RatedRatioForAirAndWaterConvect_ (this)
+        SimFlowEnergyTrans_RatedRatioForAirAndWaterConvect_ (this),
+        T24BypassMinimumEfficiencyCheck_ (this),
+        T24CoilPressureDrop_ (this)
       {
       }
 
       SimFlowEnergyTransfer_HeatingCoilWater_CoilAirPreHeatWater::
       SimFlowEnergyTransfer_HeatingCoilWater_CoilAirPreHeatWater (const RefId_type& RefId)
       : ::schema::simxml::MepModel::SimFlowEnergyTransfer_HeatingCoilWater (RefId),
-        SimFlowEnergyTrans_Name_ (this),
         SimFlowEnergyTrans_AvailSchedName_ (this),
         SimFlowEnergyTrans_RatedCap_ (this),
         SimFlowEnergyTrans_MaxWaterFlowRate_ (this),
@@ -512,7 +530,9 @@ namespace schema
         SimFlowEnergyTrans_RatedInletAirTemp_ (this),
         SimFlowEnergyTrans_RatedOutletWaterTemp_ (this),
         SimFlowEnergyTrans_RatedOutletAirTemp_ (this),
-        SimFlowEnergyTrans_RatedRatioForAirAndWaterConvect_ (this)
+        SimFlowEnergyTrans_RatedRatioForAirAndWaterConvect_ (this),
+        T24BypassMinimumEfficiencyCheck_ (this),
+        T24CoilPressureDrop_ (this)
       {
       }
 
@@ -521,7 +541,6 @@ namespace schema
                                                                   ::xml_schema::flags f,
                                                                   ::xml_schema::container* c)
       : ::schema::simxml::MepModel::SimFlowEnergyTransfer_HeatingCoilWater (x, f, c),
-        SimFlowEnergyTrans_Name_ (x.SimFlowEnergyTrans_Name_, f, this),
         SimFlowEnergyTrans_AvailSchedName_ (x.SimFlowEnergyTrans_AvailSchedName_, f, this),
         SimFlowEnergyTrans_RatedCap_ (x.SimFlowEnergyTrans_RatedCap_, f, this),
         SimFlowEnergyTrans_MaxWaterFlowRate_ (x.SimFlowEnergyTrans_MaxWaterFlowRate_, f, this),
@@ -535,7 +554,9 @@ namespace schema
         SimFlowEnergyTrans_RatedInletAirTemp_ (x.SimFlowEnergyTrans_RatedInletAirTemp_, f, this),
         SimFlowEnergyTrans_RatedOutletWaterTemp_ (x.SimFlowEnergyTrans_RatedOutletWaterTemp_, f, this),
         SimFlowEnergyTrans_RatedOutletAirTemp_ (x.SimFlowEnergyTrans_RatedOutletAirTemp_, f, this),
-        SimFlowEnergyTrans_RatedRatioForAirAndWaterConvect_ (x.SimFlowEnergyTrans_RatedRatioForAirAndWaterConvect_, f, this)
+        SimFlowEnergyTrans_RatedRatioForAirAndWaterConvect_ (x.SimFlowEnergyTrans_RatedRatioForAirAndWaterConvect_, f, this),
+        T24BypassMinimumEfficiencyCheck_ (x.T24BypassMinimumEfficiencyCheck_, f, this),
+        T24CoilPressureDrop_ (x.T24CoilPressureDrop_, f, this)
       {
       }
 
@@ -544,7 +565,6 @@ namespace schema
                                                                   ::xml_schema::flags f,
                                                                   ::xml_schema::container* c)
       : ::schema::simxml::MepModel::SimFlowEnergyTransfer_HeatingCoilWater (e, f | ::xml_schema::flags::base, c),
-        SimFlowEnergyTrans_Name_ (this),
         SimFlowEnergyTrans_AvailSchedName_ (this),
         SimFlowEnergyTrans_RatedCap_ (this),
         SimFlowEnergyTrans_MaxWaterFlowRate_ (this),
@@ -558,7 +578,9 @@ namespace schema
         SimFlowEnergyTrans_RatedInletAirTemp_ (this),
         SimFlowEnergyTrans_RatedOutletWaterTemp_ (this),
         SimFlowEnergyTrans_RatedOutletAirTemp_ (this),
-        SimFlowEnergyTrans_RatedRatioForAirAndWaterConvect_ (this)
+        SimFlowEnergyTrans_RatedRatioForAirAndWaterConvect_ (this),
+        T24BypassMinimumEfficiencyCheck_ (this),
+        T24CoilPressureDrop_ (this)
       {
         if ((f & ::xml_schema::flags::base) == 0)
         {
@@ -578,20 +600,6 @@ namespace schema
           const ::xercesc::DOMElement& i (p.cur_element ());
           const ::xsd::cxx::xml::qualified_name< char > n (
             ::xsd::cxx::xml::dom::name< char > (i));
-
-          // SimFlowEnergyTrans_Name
-          //
-          if (n.name () == "SimFlowEnergyTrans_Name" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
-          {
-            ::std::auto_ptr< SimFlowEnergyTrans_Name_type > r (
-              SimFlowEnergyTrans_Name_traits::create (i, f, this));
-
-            if (!this->SimFlowEnergyTrans_Name_)
-            {
-              this->SimFlowEnergyTrans_Name_.set (r);
-              continue;
-            }
-          }
 
           // SimFlowEnergyTrans_AvailSchedName
           //
@@ -765,6 +773,28 @@ namespace schema
             }
           }
 
+          // T24BypassMinimumEfficiencyCheck
+          //
+          if (n.name () == "T24BypassMinimumEfficiencyCheck" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            if (!this->T24BypassMinimumEfficiencyCheck_)
+            {
+              this->T24BypassMinimumEfficiencyCheck_.set (T24BypassMinimumEfficiencyCheck_traits::create (i, f, this));
+              continue;
+            }
+          }
+
+          // T24CoilPressureDrop
+          //
+          if (n.name () == "T24CoilPressureDrop" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            if (!this->T24CoilPressureDrop_)
+            {
+              this->T24CoilPressureDrop_.set (T24CoilPressureDrop_traits::create (i, f, this));
+              continue;
+            }
+          }
+
           break;
         }
       }
@@ -782,7 +812,6 @@ namespace schema
         if (this != &x)
         {
           static_cast< ::schema::simxml::MepModel::SimFlowEnergyTransfer_HeatingCoilWater& > (*this) = x;
-          this->SimFlowEnergyTrans_Name_ = x.SimFlowEnergyTrans_Name_;
           this->SimFlowEnergyTrans_AvailSchedName_ = x.SimFlowEnergyTrans_AvailSchedName_;
           this->SimFlowEnergyTrans_RatedCap_ = x.SimFlowEnergyTrans_RatedCap_;
           this->SimFlowEnergyTrans_MaxWaterFlowRate_ = x.SimFlowEnergyTrans_MaxWaterFlowRate_;
@@ -797,6 +826,8 @@ namespace schema
           this->SimFlowEnergyTrans_RatedOutletWaterTemp_ = x.SimFlowEnergyTrans_RatedOutletWaterTemp_;
           this->SimFlowEnergyTrans_RatedOutletAirTemp_ = x.SimFlowEnergyTrans_RatedOutletAirTemp_;
           this->SimFlowEnergyTrans_RatedRatioForAirAndWaterConvect_ = x.SimFlowEnergyTrans_RatedRatioForAirAndWaterConvect_;
+          this->T24BypassMinimumEfficiencyCheck_ = x.T24BypassMinimumEfficiencyCheck_;
+          this->T24CoilPressureDrop_ = x.T24CoilPressureDrop_;
         }
 
         return *this;

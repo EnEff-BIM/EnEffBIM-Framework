@@ -78,6 +78,54 @@ namespace schema
       {
         this->Representation_.set (x);
       }
+
+      const SimFlowCompoundEqmt::IsSingleZone_optional& SimFlowCompoundEqmt::
+      IsSingleZone () const
+      {
+        return this->IsSingleZone_;
+      }
+
+      SimFlowCompoundEqmt::IsSingleZone_optional& SimFlowCompoundEqmt::
+      IsSingleZone ()
+      {
+        return this->IsSingleZone_;
+      }
+
+      void SimFlowCompoundEqmt::
+      IsSingleZone (const IsSingleZone_type& x)
+      {
+        this->IsSingleZone_.set (x);
+      }
+
+      void SimFlowCompoundEqmt::
+      IsSingleZone (const IsSingleZone_optional& x)
+      {
+        this->IsSingleZone_ = x;
+      }
+
+      const SimFlowCompoundEqmt::Is3Phase_optional& SimFlowCompoundEqmt::
+      Is3Phase () const
+      {
+        return this->Is3Phase_;
+      }
+
+      SimFlowCompoundEqmt::Is3Phase_optional& SimFlowCompoundEqmt::
+      Is3Phase ()
+      {
+        return this->Is3Phase_;
+      }
+
+      void SimFlowCompoundEqmt::
+      Is3Phase (const Is3Phase_type& x)
+      {
+        this->Is3Phase_.set (x);
+      }
+
+      void SimFlowCompoundEqmt::
+      Is3Phase (const Is3Phase_optional& x)
+      {
+        this->Is3Phase_ = x;
+      }
     }
   }
 }
@@ -105,14 +153,18 @@ namespace schema
       SimFlowCompoundEqmt::
       SimFlowCompoundEqmt ()
       : ::schema::simxml::MepModel::SimFlowEnergyConverter (),
-        Representation_ (this)
+        Representation_ (this),
+        IsSingleZone_ (this),
+        Is3Phase_ (this)
       {
       }
 
       SimFlowCompoundEqmt::
       SimFlowCompoundEqmt (const RefId_type& RefId)
       : ::schema::simxml::MepModel::SimFlowEnergyConverter (RefId),
-        Representation_ (this)
+        Representation_ (this),
+        IsSingleZone_ (this),
+        Is3Phase_ (this)
       {
       }
 
@@ -121,7 +173,9 @@ namespace schema
                            ::xml_schema::flags f,
                            ::xml_schema::container* c)
       : ::schema::simxml::MepModel::SimFlowEnergyConverter (x, f, c),
-        Representation_ (x.Representation_, f, this)
+        Representation_ (x.Representation_, f, this),
+        IsSingleZone_ (x.IsSingleZone_, f, this),
+        Is3Phase_ (x.Is3Phase_, f, this)
       {
       }
 
@@ -130,7 +184,9 @@ namespace schema
                            ::xml_schema::flags f,
                            ::xml_schema::container* c)
       : ::schema::simxml::MepModel::SimFlowEnergyConverter (e, f | ::xml_schema::flags::base, c),
-        Representation_ (this)
+        Representation_ (this),
+        IsSingleZone_ (this),
+        Is3Phase_ (this)
       {
         if ((f & ::xml_schema::flags::base) == 0)
         {
@@ -165,6 +221,28 @@ namespace schema
             }
           }
 
+          // IsSingleZone
+          //
+          if (n.name () == "IsSingleZone" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            if (!this->IsSingleZone_)
+            {
+              this->IsSingleZone_.set (IsSingleZone_traits::create (i, f, this));
+              continue;
+            }
+          }
+
+          // Is3Phase
+          //
+          if (n.name () == "Is3Phase" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            if (!this->Is3Phase_)
+            {
+              this->Is3Phase_.set (Is3Phase_traits::create (i, f, this));
+              continue;
+            }
+          }
+
           break;
         }
       }
@@ -183,6 +261,8 @@ namespace schema
         {
           static_cast< ::schema::simxml::MepModel::SimFlowEnergyConverter& > (*this) = x;
           this->Representation_ = x.Representation_;
+          this->IsSingleZone_ = x.IsSingleZone_;
+          this->Is3Phase_ = x.Is3Phase_;
         }
 
         return *this;
