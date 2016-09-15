@@ -1,0 +1,785 @@
+<?xml version="1.0"?>
+<Data_Model_Map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.e3d.rwth-aachen.de/namespaces/Sim/DataMap"
+          xsi:schemaLocation="http://www.e3d.rwth-aachen.de/namespaces/Sim/DataMap ..\mapping_rule_schema\mapping_rule_schema.xsd">
+
+  <!-- property mapping for the hot water boiler -->
+  <!-- the part load ratio given as an input paramter of the boiler efficiency curve -->
+  <InputParameter RefId="ID01141">
+    <Description>Part load ratio</Description>
+    <ParameterName>plr</ParameterName>
+    <ValueType>range</ValueType>
+    <IsReferenced>false</IsReferenced>
+    <LowerBoundRef>SimFlowPlant_MinPartLoadRatio</LowerBoundRef>
+    <UpperBoundRef>SimFlowPlant_MaxPartLoadRatio</UpperBoundRef>
+  </InputParameter>
+
+  <!-- property mapping for the hot water boiler controller -->
+  <!-- the constant temperature value of the boiler outlet water -->
+  <InputParameter RefId="ID01211">
+    <Description>Constant output value [degC]</Description>
+    <ParameterName>const_c</ParameterName>
+    <ValueType>single</ValueType>
+    <IsReferenced>false</IsReferenced>
+    <RefValue>SimFlowPlant_DesignWaterOutletTemp</RefValue>
+  </InputParameter>
+  
+  <!-- <InputParameter RefId="ID01211">
+    <Description>Constant output value [degC]</Description>
+    <ParameterName>const_c</ParameterName>
+    <ValueType>single</ValueType>
+    <IsReferenced>false</IsReferenced>
+    <RefValue>ConstantSetpointValue</RefValue>
+  </InputParameter> -->
+
+  <!-- property mapping for the water pump of variable speed return -->
+  <!-- Volume flow rate through the pump [m3/s] -->
+  <InputParameter RefId="ID03111">
+    <Description>Volume flow rate through the pump [m3/s]</Description>
+    <ParameterName>v_flow</ParameterName>
+    <ValueType>range</ValueType>
+    <IsReferenced>false</IsReferenced>
+    <LowerBoundValue>0</LowerBoundValue>
+    <UpperBoundRef>SimFlowMover_RatedFlowRate</UpperBoundRef>
+  </InputParameter>
+
+  <!-- property mapping for the water pump of variable speed return -->
+  <!-- pump head for the control strategy [m] -->
+  <InputParameter RefId="ID03121">
+    <Description>Pump head for the control strategy [m]</Description>
+    <ParameterName>Headmax_in</ParameterName>
+    <ValueType>single</ValueType>
+    <IsReferenced>false</IsReferenced>
+    <RefValue>SimFlowMover_RatedPumpHead</RefValue>
+  </InputParameter>
+
+  <!-- property mapping for the water pump of variable speed return -->
+  <!-- control strategy: VariableSpeedReturn or ConstantSpeedReturn -->
+  <InputParameter RefId="ID03131">
+    <Description>Control strategy: VariableSpeedReturn or ConstantSpeedReturn</Description>
+    <ParameterName>ctl_in</ParameterName>
+    <ValueType>single</ValueType>
+    <IsReferenced>false</IsReferenced>
+    <RefValue>SimModelSubtype</RefValue>
+  </InputParameter>
+
+  <!-- property mapping for the night signal controller -->
+  <!-- referenced the time schedule -->
+  <InputParameter RefId="ID03221">
+    <Description>Time series</Description>
+    <ParameterName>hour_1_24</ParameterName>
+    <ValueType>array</ValueType>
+    <IsReferenced>true</IsReferenced>
+    <!-- referenced id, referenced element, referenced value -->
+    <RefValue>SimFlowMover_PumprpmSchedName SimTimeSeriesSchedule_Day_Hourly SimTimeSeriesSched_Hour_1_24</RefValue>
+  </InputParameter>
+  
+  <!-- property mapping for the hot water boiler -->
+  <!-- cofficient a0 of the boiler efficiency curve -->
+  <InputCoefficient RefId="ID01142">
+    <Description>Coefficient a0</Description>
+    <CoefficientName>a0</CoefficientName>
+    <IsReferenced>true</IsReferenced>
+    <!-- referenced id, referenced element, referenced value -->
+    <RefValue>SimFlowPlant_NrmlizedBoilerEffCurveName SimPerformanceCurve_Mathematical_Quadratic SimPerfCurve_Coef1Constant</RefValue>
+  </InputCoefficient>
+
+  <!-- property mapping for the hot water boiler -->
+  <!-- cofficient a1 of the boiler efficiency curve -->
+  <InputCoefficient RefId="ID01143">
+    <Description>Coefficient a1</Description>
+    <CoefficientName>a1</CoefficientName>
+    <IsReferenced>true</IsReferenced>
+    <!-- referenced id, referenced element, referenced value -->
+    <RefValue>SimFlowPlant_NrmlizedBoilerEffCurveName SimPerformanceCurve_Mathematical_Quadratic SimPerfCurve_Coef_2_X</RefValue>
+  </InputCoefficient>
+
+  <!-- property mapping for the hot water boiler -->
+  <!-- cofficient a2 of the boiler efficiency curve -->
+  <InputCoefficient RefId="ID01144">
+    <Description>Coefficient a2</Description>
+    <CoefficientName>a2</CoefficientName>
+    <IsReferenced>true</IsReferenced>
+    <!-- referenced id, referenced element, referenced value -->
+    <RefValue>SimFlowPlant_NrmlizedBoilerEffCurveName SimPerformanceCurve_Mathematical_Quadratic SimPerfCurve_Coef_3_X_2</RefValue>
+  </InputCoefficient>
+
+  <!-- property mapping for the water pump of variable speed return -->
+  <!-- cofficient c1 of the min and max rotational speed defintion -->
+  <InputCoefficient RefId="ID03112">
+    <Description>Coefficient c1</Description>
+    <CoefficientName>c1</CoefficientName>
+    <IsReferenced>false</IsReferenced>
+    <RefValue>SimFlowMover_Coef1OfThePartLoadPerfCurve</RefValue>
+  </InputCoefficient>
+
+  <!-- property mapping for the water pump of variable speed return -->
+  <!-- cofficient c2 of the min and max rotational speed defintion -->
+  <InputCoefficient RefId="ID03113">
+    <Description>Coefficient c2</Description>
+    <CoefficientName>c2</CoefficientName>
+    <IsReferenced>false</IsReferenced>
+    <RefValue>SimFlowMover_Coef2OfThePartLoadPerfCurve</RefValue>
+  </InputCoefficient>
+
+  <!-- property mapping for the water pump of variable speed return -->
+  <!-- cofficient c3 of the min and max rotational speed defintion -->
+  <InputCoefficient RefId="ID03114">
+    <Description>Coefficient c3</Description>
+    <CoefficientName>c3</CoefficientName>
+    <IsReferenced>false</IsReferenced>
+    <RefValue>SimFlowMover_Coef3OfThePartLoadPerfCurve</RefValue>
+  </InputCoefficient>
+
+  <!-- property mapping for the water pump of variable speed return -->
+  <!-- cofficient c4 of the min and max rotational speed defintion -->
+  <InputCoefficient RefId="ID03115">
+    <Description>Coefficient c4</Description>
+    <CoefficientName>c4</CoefficientName>
+    <IsReferenced>false</IsReferenced>
+    <RefValue>SimFlowMover_Coef4OfThePartLoadPerfCurve</RefValue>
+  </InputCoefficient>
+  
+  <!-- property mapping for the hot water boiler -->
+  <!-- Output values of the boiler efficiency curve -->
+  <OutputParameter RefId="ID01145">
+    <Description>Output values of the boiler efficiency curve</Description>
+    <!-- support setting relative directory for the parameter, such as: -->
+    <!-- boilerEfficiencyB boilerEfficiency -->
+    <ParameterName>boilerEfficiency</ParameterName>
+    <ValueType>matrix</ValueType>
+    <ValueFormat>plr bec</ValueFormat>
+  </OutputParameter>
+
+  <!-- property mapping for the hot water boiler controller -->
+  <!-- the constant temperature value of the boiler outlet water -->
+  <OutputParameter RefId="ID01212">
+    <Description>Constant output value [K]</Description>
+    <ParameterName>k</ParameterName>
+    <ValueType>single</ValueType>
+    <ValueFormat>const_k</ValueFormat>
+  </OutputParameter>
+
+  <!-- property mapping for the water pump of variable speed return -->
+  <!-- the min and max values of the rotational speed -->
+  <OutputParameter RefId="ID03116">
+    <Description>Min and max values of the rotational speed</Description>
+    <ParameterName>minMaxHead</ParameterName>
+    <ValueType>matrix</ValueType>
+    <ValueFormat>v_flow rs rs</ValueFormat>
+  </OutputParameter>
+
+  <!-- property mapping for the water pump of variable speed return -->
+  <!-- pump head for the control strategy [m] -->
+  <OutputParameter RefId="ID03122">
+    <Description>Pump head for the control strategy [m]</Description>
+    <ParameterName>Head_max</ParameterName>
+    <ValueType>single</ValueType>
+    <ValueFormat>Headmax_out</ValueFormat>
+  </OutputParameter>
+
+  <!-- property mapping for the water pump of variable speed return -->
+  <!-- control strategy: 2 or 1 -->
+  <OutputParameter RefId="ID03132">
+    <Description>control strategy: 2 or 1</Description>
+    <ParameterName>ControlStrategy</ParameterName>
+    <ValueType>single</ValueType>
+    <ValueFormat>ctl_out</ValueFormat>
+  </OutputParameter>
+
+  <!-- property mapping for the night signal controller -->
+  <!-- width of pulse in % of period -->
+  <OutputParameter RefId="ID03222">
+    <Description>Width of pulse in % of period</Description>
+    <ParameterName>width</ParameterName>
+    <ValueType>single</ValueType>
+    <ValueFormat>w_out</ValueFormat>
+  </OutputParameter>
+
+  <!-- property mapping for the night signal controller -->
+  <!-- time instant of first pulse [s] -->
+  <OutputParameter RefId="ID03231">
+    <Description>time instant of first pulse [s]</Description>
+    <ParameterName>startTime</ParameterName>
+    <ValueType>single</ValueType>
+    <ValueFormat>st_out</ValueFormat>
+  </OutputParameter>
+  
+  <!-- property mapping of the maiximum heat output for the hot water boiler -->
+  <Property_Map_One2One RefId="ID0111">
+    <Description>Maximum heat output of boiler at full load [W]</Description>
+    <RefValue>SimFlowPlant_NomCap</RefValue>
+    <TargetPropertyName>Q_flow_max</TargetPropertyName>
+  </Property_Map_One2One>
+
+  <!-- property mapping for the water pump of variable speed return -->
+  <!-- vmax in m3/h for the control strategy -->
+  <Property_Map_One2One RefId="ID0314">
+    <Description>Vmax in m3/h for the control strategy</Description>
+    <RefValue>SimFlowMover_RatedFlowRate</RefValue>
+    <TargetPropertyName>V_flow_max</TargetPropertyName>
+  </Property_Map_One2One>
+  
+  <!-- property mapping for the water pipe -->
+  <!-- pipe inside diameter [m] -->
+  <Property_Map_One2One RefId="ID061">
+    <Description>Diameter [m]</Description>
+    <RefValue>SimFlowSeg_PipesideDiam</RefValue>
+    <TargetPropertyName>D</TargetPropertyName>
+  </Property_Map_One2One>
+
+  <!-- property mapping for the expansion vessel -->
+  <!-- fixed value of pressure [bar] -->
+  <Property_Map_One2One RefId="ID041x">
+    <Description>Fixed value of pressure [bar]</Description>
+    <RefValue>SimFlowEnergyTransSto_TankVol</RefValue>
+    <TargetPropertyName>p</TargetPropertyName>
+  </Property_Map_One2One>
+
+
+  <!-- property mapping for the water pipe -->
+  <!-- pipe length -->
+  <Property_Map_Gap RefId="ID063">
+    <Description>Pipe length</Description>
+    <TargetPropertyName>l</TargetPropertyName>
+	  <DefaultValueNumber>2</DefaultValueNumber>
+  </Property_Map_Gap>
+
+  <!-- property mapping for the water pipe -->
+  <!-- pipe inside diameter [m] -->
+  <Property_Map_Gap RefId="ID061T">
+    <Description>Pipe inside diameter [m]</Description>
+    <TargetPropertyName>D</TargetPropertyName>
+	  <DefaultValueNumber>14</DefaultValueNumber>    
+  </Property_Map_Gap>
+
+  <!-- property mapping for the water type radiator -->
+  <!-- Initialize properties: V -->
+  <Property_Map_Gap RefId="ID021">
+    <Description>Volume in m3</Description>
+    <TargetPropertyName>V</TargetPropertyName>
+	  <TargetLocation>volume</TargetLocation>
+    <DefaultValueNumber>0.00467999977991</DefaultValueNumber>
+  </Property_Map_Gap>
+
+  <!-- property mapping for the water type radiator -->
+  <!-- Initialize properties declared in a base data record: 
+       e.g., NominalPower, T_flow_nom, T_return_nom, ... -->
+  <Property_Map_Gap RefId="ID022">
+    <Description>Initialize properties declared in the base data record</Description>
+    <TargetPropertyName>NominalPower</TargetPropertyName>
+    <DefaultValueNumber>644</DefaultValueNumber>
+	  <RecordInstance>RadiatorType</RecordInstance>
+	  <RecordLocation>AixLib.DataBase.Radiators.RadiatiorBaseDataDefinition</RecordLocation>
+  </Property_Map_Gap>
+
+  <Property_Map_Gap RefId="ID0221">
+    <Description>Initialize properties declared in the base data record</Description>
+    <TargetPropertyName>T_flow_nom</TargetPropertyName>
+    <DefaultValueNumber>55</DefaultValueNumber>
+	  <RecordInstance>RadiatorType</RecordInstance>
+	  <RecordLocation>AixLib.DataBase.Radiators.RadiatiorBaseDataDefinition</RecordLocation>
+  </Property_Map_Gap>
+
+  <Property_Map_Gap RefId="ID0222">
+    <Description>Initialize properties declared in the base data record</Description>
+    <TargetPropertyName>T_return_nom</TargetPropertyName>
+    <DefaultValueNumber>45</DefaultValueNumber>
+	  <RecordInstance>RadiatorType</RecordInstance>
+	  <RecordLocation>AixLib.DataBase.Radiators.RadiatiorBaseDataDefinition</RecordLocation>
+  </Property_Map_Gap>
+
+  <Property_Map_Gap RefId="ID0223">
+    <Description>Initialize properties declared in the base data record</Description>
+    <TargetPropertyName>T_room_nom</TargetPropertyName>
+    <DefaultValueNumber>20</DefaultValueNumber>
+	  <RecordInstance>RadiatorType</RecordInstance>
+	  <RecordLocation>AixLib.DataBase.Radiators.RadiatiorBaseDataDefinition</RecordLocation>
+  </Property_Map_Gap>
+
+  <Property_Map_Gap RefId="ID0224">
+    <Description>Initialize properties declared in the base data record</Description>
+    <TargetPropertyName>Exponent</TargetPropertyName>
+    <DefaultValueNumber>1.2776</DefaultValueNumber>
+	  <RecordInstance>RadiatorType</RecordInstance>
+	  <RecordLocation>AixLib.DataBase.Radiators.RadiatiorBaseDataDefinition</RecordLocation>
+  </Property_Map_Gap>
+
+  <Property_Map_Gap RefId="ID0225">
+    <Description>Initialize properties declared in the base data record</Description>
+    <TargetPropertyName>VolumeWater</TargetPropertyName>
+    <DefaultValueNumber>4.68</DefaultValueNumber>
+	  <RecordInstance>RadiatorType</RecordInstance>
+	  <RecordLocation>AixLib.DataBase.Radiators.RadiatiorBaseDataDefinition</RecordLocation>
+  </Property_Map_Gap>
+
+  <Property_Map_Gap RefId="ID0226">
+    <Description>Initialize properties declared in the base data record</Description>
+    <TargetPropertyName>MassSteel</TargetPropertyName>
+    <DefaultValueNumber>22.11</DefaultValueNumber>
+	  <RecordInstance>RadiatorType</RecordInstance>
+	  <RecordLocation>AixLib.DataBase.Radiators.RadiatiorBaseDataDefinition</RecordLocation>
+  </Property_Map_Gap>
+
+  <Property_Map_Gap RefId="ID0227">
+    <Description>Initialize properties declared in the base data record</Description>
+    <TargetPropertyName>RadPercent</TargetPropertyName>
+    <DefaultValueNumber>0.3</DefaultValueNumber>
+	  <RecordInstance>RadiatorType</RecordInstance>
+	  <RecordLocation>AixLib.DataBase.Radiators.RadiatiorBaseDataDefinition</RecordLocation>
+  </Property_Map_Gap>
+
+  <Property_Map_Gap RefId="ID0228">
+    <Description>Initialize properties declared in the base data record</Description>
+    <TargetPropertyName>length</TargetPropertyName>
+    <DefaultValueNumber>1.3</DefaultValueNumber>
+	  <RecordInstance>RadiatorType</RecordInstance>
+	  <RecordLocation>AixLib.DataBase.Radiators.RadiatiorBaseDataDefinition</RecordLocation>
+  </Property_Map_Gap>
+
+  <Property_Map_Gap RefId="ID0229">
+    <Description>Initialize properties declared in the base data record</Description>
+    <TargetPropertyName>height</TargetPropertyName>
+    <DefaultValueNumber>0.3</DefaultValueNumber>
+	  <RecordInstance>RadiatorType</RecordInstance>
+	  <RecordLocation>AixLib.DataBase.Radiators.RadiatiorBaseDataDefinition</RecordLocation>
+  </Property_Map_Gap>
+
+  <!-- property mapping for the water type radiator -->
+  <!-- Initialize properties: T.start, T.fixed -->
+  <Property_Map_Gap RefId="ID0211">
+    <Description>Temperature inside the CV in K</Description>
+    <TargetPropertyName>T</TargetPropertyName>
+	  <TargetLocation>volume</TargetLocation>
+    <DefaultValueNumber>303.1499938965</DefaultValueNumber>
+  </Property_Map_Gap>
+
+  <!-- property mapping for the hot water boiler -->
+  <!-- Initialize properties: T.start, T.fixed -->
+  <Property_Map_Gap RefId="ID0112">
+    <Description>Initialization: temperature inside the CV in K</Description>
+    <TargetPropertyName>T</TargetPropertyName>
+	  <TargetLocation>volume</TargetLocation>
+    <DefaultValueNumber>328.15</DefaultValueNumber>
+  </Property_Map_Gap>
+
+  <!-- property mapping for the hot water boiler -->
+  <!-- volume inside the heat generation unit [m3] -->
+  <Property_Map_Gap RefId="ID0113">
+    <Description>Fluid volume inside the heat generation unit [m3]</Description>
+    <TargetPropertyName>Volume</TargetPropertyName>
+    <DefaultValueNumber>0.00999999977648</DefaultValueNumber>
+  </Property_Map_Gap>
+
+  <!-- property mapping for the water pump of variable speed return -->
+  <!-- volume flow rate through the pump [m3/s]: V_flow.start -->
+  <Property_Map_Gap RefId="ID0315">
+    <Description>Volume flow rate through the pump [m3/s]</Description>
+    <TargetPropertyName>start</TargetPropertyName>
+    <TargetLocation>V_flow</TargetLocation>
+    <DefaultValueNumber>0.0000112961579362</DefaultValueNumber>
+  </Property_Map_Gap>
+
+  <!-- property mapping for the water pump of variable speed return -->
+  <!-- pumping head [m]: Head.start -->
+  <Property_Map_Gap RefId="ID0316">
+    <Description>Pumping head [m]</Description>
+    <TargetPropertyName>start</TargetPropertyName>
+    <TargetLocation>Head</TargetLocation>
+    <DefaultValueNumber>1</DefaultValueNumber>
+  </Property_Map_Gap>
+
+  <!-- property mapping for the night signal controller -->
+  <!-- time for one period [s] -->
+  <Property_Map_Gap RefId="ID0321">
+    <Description>Time for one period [s]</Description>
+    <TargetPropertyName>period</TargetPropertyName>
+    <DefaultValueNumber>86400</DefaultValueNumber>
+  </Property_Map_Gap>
+
+  <!-- property mapping for the expansion vessel -->
+  <!-- fixed value of pressure [bar] -->
+  <Property_Map_Gap RefId="ID041">
+    <Description>Fixed value of pressure [bar]</Description>
+    <TargetPropertyName>p</TargetPropertyName>
+    <DefaultValueNumber>100000</DefaultValueNumber>
+  </Property_Map_Gap>
+  
+  <!-- property mapping for the base paramters -->
+  <!-- default ambient pressure [bar] -->
+  <Property_Map_Gap RefId="ID051">
+    <Description>Default ambient pressure [bar]</Description>
+    <TargetPropertyName>p_ambient</TargetPropertyName>
+    <DefaultValueNumber>101325</DefaultValueNumber>
+  </Property_Map_Gap>
+
+  <!-- property mapping for the base paramters -->
+  <!-- default ambient temperature [degC] -->
+  <Property_Map_Gap RefId="ID052">
+    <Description>Default ambient temperature [degC]</Description>
+    <TargetPropertyName>T_ambient</TargetPropertyName>
+    <DefaultValueNumber>19.9999938965</DefaultValueNumber>
+  </Property_Map_Gap>
+
+  <!-- property mapping for the base paramters -->
+  <!-- gravity [m/s2] -->
+  <Property_Map_Gap RefId="ID053">
+    <Description>Gravity [m/s2]</Description>
+    <TargetPropertyName>g</TargetPropertyName>
+    <DefaultValueNumber>9.81000041962</DefaultValueNumber>
+  </Property_Map_Gap>
+
+  <!-- property mapping for the base paramters -->
+  <!-- dynamic viscosity [Pa.s] -->
+  <Property_Map_Gap RefId="ID054">
+    <Description>Dynamic viscosity [Pa.s]</Description>
+    <TargetPropertyName>mu_Water</TargetPropertyName>
+    <DefaultValueNumber>0.0010000000475</DefaultValueNumber>
+  </Property_Map_Gap>
+
+  <!-- property mapping for the base paramters -->
+  <!-- density of the fluid [g/cm3] -->
+  <Property_Map_Gap RefId="ID055">
+    <Description>Density of the fluid [g/cm3]</Description>
+    <TargetPropertyName>rho_Water</TargetPropertyName>
+    <DefaultValueNumber>995.585998535</DefaultValueNumber>
+  </Property_Map_Gap>
+
+  <!-- property mapping for the base paramters -->
+  <!-- specific heat capacity of fluid [J/(kg.K)] -->
+  <Property_Map_Gap RefId="ID056">
+    <Description>Specific heat capacity of fluid [J/(kg.K)]</Description>
+    <TargetPropertyName>cp_Water</TargetPropertyName>
+    <DefaultValueNumber>4184</DefaultValueNumber>
+  </Property_Map_Gap>
+
+  <!-- property mapping for the base paramters -->
+  <!-- thermal conductivity of fluid [W/(m.K)] -->
+  <Property_Map_Gap RefId="ID057">
+    <Description>Thermal conductivity of fluid [W/(m.K)]</Description>
+    <TargetPropertyName>lambda_Water</TargetPropertyName>
+    <DefaultValueNumber>0.600000023842</DefaultValueNumber>
+  </Property_Map_Gap>
+
+  <!-- property mapping for the base paramters -->
+  <!-- reference temperature by zero enthalpy [K] -->
+  <Property_Map_Gap RefId="ID058">
+    <Description>Reference temperature by zero enthalpy [K]</Description>
+    <TargetPropertyName>T_ref</TargetPropertyName>
+    <DefaultValueNumber>273.1499938964844</DefaultValueNumber>
+  </Property_Map_Gap>
+
+  <!-- property mapping for the base paramters -->
+  <!-- initial temperature [K] -->
+  <Property_Map_Gap RefId="ID059">
+    <Description>Initial temperature [K]</Description>
+    <TargetPropertyName>T0</TargetPropertyName>
+    <DefaultValueNumber>303.1499938965</DefaultValueNumber>
+  </Property_Map_Gap>
+
+  <!-- property mapping for the base paramters -->
+  <!-- calculate m_flow from p -->
+  <Property_Map_Gap RefId="ID060">
+    <Description>Calculate m_flow from p</Description>
+    <TargetPropertyName>calcMFlow</TargetPropertyName>
+    <DefaultValueString>true</DefaultValueString>
+  </Property_Map_Gap>
+
+  <!-- property mapping for the water pipe -->
+  <!-- pressure drop between the two ports [bar]: p.start -->
+  <Property_Map_Gap RefId="ID062">
+    <Description>Pressure drop between the two ports [bar]</Description>
+    <TargetPropertyName>start</TargetPropertyName>
+    <TargetLocation>p</TargetLocation>
+    <DefaultValueNumber>100</DefaultValueNumber>
+  </Property_Map_Gap>
+
+  <!-- property mapping for the water pipe -->
+  <!-- roughness [m] -->
+  <Property_Map_Gap RefId="ID064">
+    <Description>Roughness [m]</Description>
+    <TargetPropertyName>e</TargetPropertyName>
+    <DefaultValueNumber>0.0000249999993684</DefaultValueNumber>
+  </Property_Map_Gap>
+
+  <!-- a temporary rule instance for boiler outlet water temperature setting -->
+  <Property_Map_Gap RefId="ID0121T">
+    <Description>boiler outlet water temperature defintion</Description>
+    <TargetPropertyName>k</TargetPropertyName>
+    <DefaultValueNumber>328.15</DefaultValueNumber>
+  </Property_Map_Gap>
+
+  <!-- a temporary rule instance for the pump head for the control strategy [m] -->
+  <Property_Map_Gap RefId="ID0312T">
+    <Description>Pump head for the control strategy [m]</Description>
+    <TargetPropertyName>Head_max</TargetPropertyName>
+    <DefaultValueNumber>1</DefaultValueNumber>
+  </Property_Map_Gap>
+
+  <!-- a temporary rule instance for the control strategy -->
+  <Property_Map_Gap RefId="ID0313T">
+    <Description>control strategy: 2 or 1</Description>
+    <TargetPropertyName>ControlStrategy</TargetPropertyName>
+    <DefaultValueNumber>1</DefaultValueNumber>
+  </Property_Map_Gap>
+
+  <!-- a temporary rule instance for the width of pulse -->
+  <Property_Map_Gap RefId="ID0322T">
+    <Description>Width of pulse in % of period</Description>
+    <TargetPropertyName>width</TargetPropertyName>
+    <DefaultValueNumber>45.8</DefaultValueNumber>
+  </Property_Map_Gap>
+
+   <!-- a temporary rule instance for the time instant of first pulse [s] -->
+  <Property_Map_Gap RefId="ID0323T">
+    <Description>time instant of first pulse [s]</Description>
+    <TargetPropertyName>startTime</TargetPropertyName>
+    <DefaultValueNumber>64800</DefaultValueNumber>
+  </Property_Map_Gap>
+
+  <!-- property mapping for the hot water boiler -->
+  <!-- boiler efficiency curve defintion: reuse a record structure -->
+  <Property_Map_Transformation RefId="ID0114">
+    <Description>Boiler efficiency curve defintion</Description>
+    <InputParameterName>ID01141</InputParameterName>
+    <InputCoefficientName>ID01142</InputCoefficientName>
+    <InputCoefficientName>ID01143</InputCoefficientName>
+    <InputCoefficientName>ID01144</InputCoefficientName>
+    <Function>bec = a0 + ( a1 * plr ) + ( a2 * plr * plr )</Function>
+    <OutputParameterName>ID01145</OutputParameterName>
+    <RecordInstance>boilerEfficiencyB</RecordInstance>
+    <RecordLocation>AixLib.DataBase.Boiler.BoilerEfficiencyBaseDataDefinition</RecordLocation>
+  </Property_Map_Transformation>
+
+  <!-- property mapping for the hot water boiler controller -->
+  <!-- boiler outlet water temperature setting: unit transformation -->
+  <Property_Map_Transformation RefId="ID0121">
+    <Description>boiler outlet water temperature defintion</Description>
+    <InputParameterName>ID01211</InputParameterName>
+    <Function>const_k = const_c + 273.15</Function>
+    <OutputParameterName>ID01212</OutputParameterName>
+  </Property_Map_Transformation>
+
+  <!-- property mapping for the water pump of variable speed return -->
+  <!-- pump head for min and max rotational speed defintion: reuse a record structure -->
+  <Property_Map_Transformation RefId="ID0311">
+    <Description>Pump head for min and max rotational speed defintion</Description>
+    <InputParameterName>ID03111</InputParameterName>
+    <InputCoefficientName>ID03112</InputCoefficientName>
+    <InputCoefficientName>ID03113</InputCoefficientName>
+    <InputCoefficientName>ID03114</InputCoefficientName>
+    <InputCoefficientName>ID03115</InputCoefficientName>
+    <Function>rs = c1 + ( c2 * v_flow ) + ( c3 * v_flow * v_flow ) + ( c4 * v_flow * v_flow * v_flow )</Function>
+    <OutputParameterName>ID03116</OutputParameterName>
+    <RecordInstance>MinMaxCharacteristics</RecordInstance>
+    <RecordLocation>AixLib.DataBase.Pumps.MinMaxCharacteristicsBaseDataDefinition</RecordLocation>
+  </Property_Map_Transformation>
+
+  <!-- property mapping for the water pump of variable speed return -->
+  <!-- set head for the control strategy [m]: unit transformation -->
+  <Property_Map_Transformation RefId="ID0312">
+    <Description>Set head for the control strategy [m]</Description>
+    <InputParameterName>ID03121</InputParameterName>
+    <Function>Headmax_out = Headmax_in * 0.0001019716</Function>
+    <OutputParameterName>ID03122</OutputParameterName>
+  </Property_Map_Transformation>
+
+  <!-- property mapping for the water pump of variable speed return -->
+  <!-- set control strategy: 2 or 1 -->
+  <Property_Map_Transformation RefId="ID0313">
+    <Description>Set control strategy: 2 or 1</Description>
+    <InputParameterName>ID03131</InputParameterName>
+    <Function>ctl_out = ( ctl_in == ( " VariableSpeedReturn " ) ) ? ( 2 : 1 )</Function>
+    <OutputParameterName>ID03132</OutputParameterName>
+  </Property_Map_Transformation>
+
+  <!-- property mapping for the night signal controller -->
+  <!-- set width of pulse in % of period -->
+  <Property_Map_Transformation RefId="ID0322">
+    <Description>Set width of pulse in % of period</Description>
+    <InputParameterName>ID03221</InputParameterName>
+    <Function>w_out = ( 1.0 - ( SUM ( hour_1_24 1 ) / 24.0 ) ) * 100 </Function>
+    <OutputParameterName>ID03222</OutputParameterName>
+  </Property_Map_Transformation>
+
+  <!-- property mapping for the night signal controller -->
+  <!-- set time instant of first pulse [s] -->
+  <Property_Map_Transformation RefId="ID0323">
+    <Description>Set time instant of first pulse [s]</Description>
+    <InputParameterName>ID03221</InputParameterName>
+    <Function>st_out = ( POSE ( hour_1_24 1 ) - 1 ) * 3600 </Function>
+    <OutputParameterName>ID03231</OutputParameterName>
+  </Property_Map_Transformation>
+
+    <!--Empty component without propeties. It does not exist in the official SimModel schema and is not defined on the Modelica side. Using a pipe as a temporary replacement, to allow a representation of this component coming form the IFC side!-->  
+  <Component_Map_One2One RefId="ID99">
+    <Description>Map an empty fitting into a pipe as a place holder.</Description>
+	<SourceComponentName>SimFlowFitting_Default_Default</SourceComponentName>
+	<TargetComponentName>pipe_HeatTransfer</TargetComponentName>
+    <TargetLocation>AixLib.HVAC.Pipes.Pipe</TargetLocation>
+  </Component_Map_One2One>
+  
+  <!-- component mapping for the water pipe -->
+  <Component_Map_One2One RefId="ID013">
+	<Description>map a water pipe into AixLib</Description>
+	<SourceComponentName>SimFlowSegment_Pipe_Indoor</SourceComponentName>
+    <TargetComponentName>pipe_HeatTransfer</TargetComponentName>
+    <TargetLocation>AixLib.HVAC.Pipes.Pipe</TargetLocation>
+    <Property_Map_One2One_Name>ID061</Property_Map_One2One_Name>
+	<Property_Map_Gap_Name>ID061T</Property_Map_Gap_Name>
+    <Property_Map_Gap_Name>ID063</Property_Map_Gap_Name>
+    <Property_Map_Gap_Name>ID062</Property_Map_Gap_Name>
+    <Property_Map_Gap_Name>ID064</Property_Map_Gap_Name>
+  </Component_Map_One2One>
+
+  <!-- component mapping for the hot water boiler -->
+  <ComponentMappingGroup RefId="ID011">
+    <Description>Hot water boiler mapping</Description>
+    <TargetComponentName>boiler</TargetComponentName>
+    <TargetLocation>AixLib.HVAC.HeatGeneration.Boiler</TargetLocation>
+    <Property_Map_One2One_Name>ID0111</Property_Map_One2One_Name>
+	<Property_Map_Gap_Name>ID0112</Property_Map_Gap_Name>
+    <Property_Map_Gap_Name>ID0113</Property_Map_Gap_Name>
+    <Property_Map_Transformation_Name>ID0114</Property_Map_Transformation_Name>
+  </ComponentMappingGroup>
+
+  <!-- component mapping for the outlet water temperature control of the boiler -->
+  <ComponentMappingGroup RefId="ID012">
+    <Description>Boiler outlet water temperature mapping</Description>
+    <TargetComponentName>const</TargetComponentName>
+    <TargetLocation>Modelica.Blocks.Sources.Constant</TargetLocation>
+	<Property_Map_Gap_Name>ID0121T</Property_Map_Gap_Name>
+    <Property_Map_Transformation_Name>ID0121</Property_Map_Transformation_Name>
+  </ComponentMappingGroup>
+
+  <!-- component mapping for the water pipe -->
+  <!-- <ComponentMappingGroup RefId="ID013">
+    <Description>map a water pipe into AixLib</Description>
+    <TargetComponentName>pipe_HeatTransfer</TargetComponentName>
+    <TargetLocation>AixLib.HVAC.Pipes.Pipe</TargetLocation>
+    <Property_Map_One2One_Name>ID061</Property_Map_One2One_Name>
+    <Property_Map_Gap_Name>ID063</Property_Map_Gap_Name>
+    <Property_Map_Gap_Name>ID062</Property_Map_Gap_Name>
+    <Property_Map_Gap_Name>ID064</Property_Map_Gap_Name>
+  </ComponentMappingGroup> -->
+  
+  <!-- component mapping for the water pump of variable speed return -->
+  <ComponentMappingGroup RefId="ID031">
+    <Description>Water pump of variable speed return mapping</Description>
+    <TargetComponentName>pump</TargetComponentName>
+    <TargetLocation>AixLib.HVAC.Pumps.Pump</TargetLocation>
+    <Property_Map_One2One_Name>ID0314</Property_Map_One2One_Name>
+    <Property_Map_Gap_Name>ID0315</Property_Map_Gap_Name>
+    <Property_Map_Gap_Name>ID0316</Property_Map_Gap_Name>
+	<Property_Map_Gap_Name>ID0312T</Property_Map_Gap_Name>
+	<Property_Map_Gap_Name>ID0313T</Property_Map_Gap_Name>
+    <Property_Map_Transformation_Name>ID0311</Property_Map_Transformation_Name>
+    <Property_Map_Transformation_Name>ID0312</Property_Map_Transformation_Name>
+    <Property_Map_Transformation_Name>ID0313</Property_Map_Transformation_Name>
+  </ComponentMappingGroup>
+
+  <!-- component mapping for the water pump of variable speed return -->
+  <!-- night signal controller -->
+  <ComponentMappingGroup RefId="ID032">
+    <Description>Night signal controller</Description>
+    <TargetComponentName>NightSignal</TargetComponentName>
+    <TargetLocation>Modelica.Blocks.Sources.BooleanPulse</TargetLocation>
+    <Property_Map_Gap_Name>ID0321</Property_Map_Gap_Name>
+	<Property_Map_Gap_Name>ID0322T</Property_Map_Gap_Name>
+	<Property_Map_Gap_Name>ID0323T</Property_Map_Gap_Name>
+    <Property_Map_Transformation_Name>ID0322</Property_Map_Transformation_Name>
+    <Property_Map_Transformation_Name>ID0323</Property_Map_Transformation_Name>
+  </ComponentMappingGroup>
+  
+  <!-- component mapping for the water type radiator -->
+  <ComponentMappingGroup RefId="ID02T1">
+    <Description>map a water type radiator into AixLib</Description>
+    <TargetComponentName>radiator</TargetComponentName>
+    <TargetLocation>AixLib.HVAC.Radiators.Radiator</TargetLocation>
+	<Property_Map_Gap_Name>ID021</Property_Map_Gap_Name>
+	<Property_Map_Gap_Name>ID0211</Property_Map_Gap_Name>
+	<Property_Map_Gap_Name>ID022</Property_Map_Gap_Name>
+	<Property_Map_Gap_Name>ID0221</Property_Map_Gap_Name>
+	<Property_Map_Gap_Name>ID0222</Property_Map_Gap_Name>
+	<Property_Map_Gap_Name>ID0223</Property_Map_Gap_Name>
+	<Property_Map_Gap_Name>ID0224</Property_Map_Gap_Name>
+	<Property_Map_Gap_Name>ID0225</Property_Map_Gap_Name>
+	<Property_Map_Gap_Name>ID0226</Property_Map_Gap_Name>
+	<Property_Map_Gap_Name>ID0227</Property_Map_Gap_Name>
+	<Property_Map_Gap_Name>ID0228</Property_Map_Gap_Name>
+	<Property_Map_Gap_Name>ID0229</Property_Map_Gap_Name>
+  </ComponentMappingGroup>
+
+  <!-- component mapping for the expansion vessel -->
+  <ComponentMappingGroup RefId="ID04">
+    <Description> Add an expansion vessel connecting to the radiator</Description>
+    <TargetComponentName>boundary_p</TargetComponentName>
+    <TargetLocation>AixLib.HVAC.Sources.Boundary_p</TargetLocation>
+    <Property_Map_Gap_Name>ID041</Property_Map_Gap_Name>
+  </ComponentMappingGroup>
+  
+  <!-- waiting for the new class SimFlowEnergyTransferStorage_HotWaterTank_Expansion from simxml -->
+  <!-- <ComponentMappingGroup RefId="ID04x">
+    <Description> Add an expansion vessel connecting to the radiator</Description>
+    <TargetComponentName>boundary_p</TargetComponentName>
+    <TargetLocation>AixLib.HVAC.Sources.Boundary_p</TargetLocation>
+    <Property_Map_One2One_Name>ID041x</Property_Map_One2One_Name>
+  </ComponentMappingGroup> -->
+
+  <!-- component mapping for the hot water boiler -->
+  <!-- a hot water boiler maps into: a boiler, a water temperature controller, -->
+  <!-- and a pipe -->
+  <Component_Map_One2Many RefId="ID01">
+    <Description>Map a hot water boiler into one boiler and one controller</Description>
+    <SourceComponentName>SimFlowPlant_Boiler_BoilerHotWater</SourceComponentName>
+    <ComponentMappingGroupName>ID011</ComponentMappingGroupName>
+    <ComponentMappingGroupName>ID012</ComponentMappingGroupName>
+	<!-- <ComponentMappingGroupName>ID013</ComponentMappingGroupName> -->
+  </Component_Map_One2Many>
+
+  <!-- component mapping for the convective radiator -->
+  <Component_Map_One2Many RefId="ID02">
+	<Description>Map a convective radiator into one radiator and one controller</Description>
+	<SourceComponentName>SimFlowEnergyTransfer_ConvectiveHeater_Radiant_Water</SourceComponentName>
+	<ComponentMappingGroupName>ID02T1</ComponentMappingGroupName>
+	<ComponentMappingGroupName>ID04</ComponentMappingGroupName>
+	<!-- <ComponentMappingGroupName>ID013</ComponentMappingGroupName> -->
+  </Component_Map_One2Many>
+
+  <!-- component mapping for the water pump of variable speed return -->
+  <!-- a water pump maps into: a pump, a night signal controller, -->
+  <Component_Map_One2Many RefId="ID03">
+    <Description>Map a pump (variable speed return) into one pump and one controller</Description>
+    <SourceComponentName>SimFlowMover_Pump_VariableSpeedReturn</SourceComponentName>
+    <ComponentMappingGroupName>ID031</ComponentMappingGroupName>
+    <ComponentMappingGroupName>ID032</ComponentMappingGroupName>
+  </Component_Map_One2Many>
+
+  <!-- component mapping for the base paramters -->
+  <Component_Map_Gap RefId="ID05">
+    <Description>Map different properties into the base parameters</Description>
+    <TargetComponentName>baseParameters</TargetComponentName>
+    <TargetLocation>AixLib.HVAC.BaseParameters</TargetLocation>
+    <Property_Map_Gap_Name>ID051</Property_Map_Gap_Name>
+    <Property_Map_Gap_Name>ID052</Property_Map_Gap_Name>
+    <Property_Map_Gap_Name>ID053</Property_Map_Gap_Name>
+    <Property_Map_Gap_Name>ID054</Property_Map_Gap_Name>
+    <Property_Map_Gap_Name>ID055</Property_Map_Gap_Name>
+    <Property_Map_Gap_Name>ID056</Property_Map_Gap_Name>
+    <Property_Map_Gap_Name>ID057</Property_Map_Gap_Name>
+    <Property_Map_Gap_Name>ID058</Property_Map_Gap_Name>
+    <Property_Map_Gap_Name>ID059</Property_Map_Gap_Name>
+    <Property_Map_Gap_Name>ID060</Property_Map_Gap_Name>
+  </Component_Map_Gap>
+
+  <!-- mapping rules defined for AixLib -->
+  <Library_Mapping_Rule>
+    <Description>The XML mapping rule instance between SimModel and AixLib</Description>
+    <TargetLibraryName>AixLib version 1.0</TargetLibraryName>
+	<Component_Map_One2One_Name>ID99</Component_Map_One2One_Name>
+	<Component_Map_One2One_Name>ID013</Component_Map_One2One_Name>
+	<Component_Map_One2Many_Name>ID01</Component_Map_One2Many_Name>
+	<Component_Map_One2Many_Name>ID02</Component_Map_One2Many_Name>
+    <Component_Map_One2Many_Name>ID03</Component_Map_One2Many_Name>
+	<Component_Map_Gap_Name>ID05</Component_Map_Gap_Name>
+  </Library_Mapping_Rule>
+</Data_Model_Map>
