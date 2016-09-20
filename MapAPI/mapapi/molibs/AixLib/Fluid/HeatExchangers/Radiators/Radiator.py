@@ -29,7 +29,7 @@ class Radiator(MapHierarchy.MapComponent):
         self.radPort = self.add_connector(name="radPort", type="HeatPort",
                                           dimension=1, hierarchy_node=None)
         #needs to be changed if thermalZone is implemented
-        self.connect_zone(self.project.buildings[0].thermal_zones[0])
+#        self.connect_zone(self.project.buildings[0].thermal_zones[0])
 
         #self.add_pipe()
 
