@@ -17,14 +17,17 @@ modulePath = os.path.join(default_path,
 
 from mapapi.MapClasses import MapProject
 
-zoneFile_path = os.path.join(modulePath,"UseCase1_1_BoilerGasRadiatorFromSimergy.simxml")
+zoneFile_path = os.path.join(modulePath,
+                             "UseCase1_1_BoilerGasRadiatorFromSimergy.simxml")
 hvacFile_path = os.path.join(modulePath,
                              "1.1_Architecture+HVAC+Zone_Curve+Schedule_korr_ZumTesten.simxml")
-fullFile_path = os.path.join(modulePath,"Boiler_Gas_VDI6020_V12.simxml")
-
+fullFile_path = os.path.join(modulePath,
+                             "Boiler_Gas_VDI6020_V12.simxml")
+hvacFile_controller = os.path.join(modulePath,
+                                   "1.1_Architecture+HVAC+Controller.simxml")
 
 print(hvacFile_path)
-pathList = (zoneFile_path, hvacFile_path)
+pathList = (zoneFile_path, hvacFile_controller)
 mappingFile_path = os.path.join(
     modulePath+"\\mapping_rule\\mapping_rule_xml\\AixLib_v2.0.xml")
 #test_file_tobias = os.path.join(modulePath,
