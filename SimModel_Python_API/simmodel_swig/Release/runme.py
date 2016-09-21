@@ -74,8 +74,6 @@ translator = SimTranslator()
 # load and parse multiple SimXML files
 zoneFile_path = ("UseCase1_1_BoilerGasRadiatorFromSimergy.simxml")
 hvacFile_path = ("1.1_Architecture+HVAC+Zone_Curve+Schedule_korr.simxml")
-zoneFile_path = ("UseCase1_1_BoilerGasRadiatorFromSimergy.simxml")
-hvacFile_path = ("1.1_Architecture+HVAC+Zone_Curve+Schedule_korr_ZumTesten.simxml")
 pathList = [zoneFile_path, hvacFile_path]
 
 simxml_data = translator.loadSimModel(zoneFile_path, hvacFile_path)
