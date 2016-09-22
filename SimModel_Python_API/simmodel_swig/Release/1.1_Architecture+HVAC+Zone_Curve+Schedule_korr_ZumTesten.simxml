@@ -1,4 +1,4 @@
-<SimModel xsi:schemaLocation="http://d-alchemy.com/schema/simxml/Model simmodel_schema_v2.2/simmodel.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://d-alchemy.com/schema/simxml/Model" xmlns:simcore="http://d-alchemy.com/schema/simxml/SimModelCore" xmlns:simres="http://d-alchemy.com/schema/simxml/ResourcesGeneral" xmlns:simgeom="http://d-alchemy.com/schema/simxml/ResourcesGeometry" xmlns:simbldg="http://d-alchemy.com/schema/simxml/BuildingModel" xmlns:simmep="http://d-alchemy.com/schema/simxml/MepModel">
+﻿<SimModel xsi:schemaLocation="http://d-alchemy.com/schema/simxml/Model simmodel_schema_v2.2/simmodel.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://d-alchemy.com/schema/simxml/Model" xmlns:simcore="http://d-alchemy.com/schema/simxml/SimModelCore" xmlns:simres="http://d-alchemy.com/schema/simxml/ResourcesGeneral" xmlns:simgeom="http://d-alchemy.com/schema/simxml/ResourcesGeometry" xmlns:simbldg="http://d-alchemy.com/schema/simxml/BuildingModel" xmlns:simmep="http://d-alchemy.com/schema/simxml/MepModel">
 	<SimConnection_HotWaterFlow_Default RefId="ID3p35CawrFJw5pp0C0J6SQ">
 		<simcore:SimUniqueID>3$p35CawrFJw5pp0C0J6SQ</simcore:SimUniqueID>
 		<simcore:SimModelType>HotWaterFlow</simcore:SimModelType>
@@ -247,9 +247,28 @@
 		<simres:SourcePort>ID2yEnEkU_bFLf4y3vG65EGa</simres:SourcePort>
 		<simres:TargetPort>ID39CM7ORU903PFWaliiSqS</simres:TargetPort>
 	</SimConnection_HotWaterFlow_Default>
+	<SimController_Default_Default RefId="ID_cntrl_0LMbjl8XfFaui1YxJs_D1L">
+		<simcore:AssignedToFlowElement> ID0LMbjl8XfFaui1YxJs_D1L</simcore:AssignedToFlowElement>
+		<simmep:ControllerType>PID</simmep:ControllerType>
+		<simmep:ControllerVariable>FLOW</simmep:ControllerVariable>
+	</SimController_Default_Default>
+	<SimController_Default_Default RefId="ID_cntrl_0LMbjl8XfFaui1YxJs_D6B">
+		<simcore:AssignedToFlowElement> ID0LMbjl8XfFaui1YxJs_D6B</simcore:AssignedToFlowElement>
+		<simmep:ControllerType>MANUAL</simmep:ControllerType>
+		<simmep:ControllerVariable>FLOW</simmep:ControllerVariable>
+	</SimController_Default_Default>
+	<SimController_Default_Default RefId="ID_cntrl_0LMbjl8XfFaui1YxJs_D1q">
+		<simcore:AssignedToFlowElement> ID0LMbjl8XfFaui1YxJs_D1q</simcore:AssignedToFlowElement>
+		<simmep:ControllerType>OnOff</simmep:ControllerType>
+	</SimController_Default_Default>
+	<SimController_Default_Default RefId="ID_cntrl_0LMbjl8XfFaui1YxJs_D1t">
+		<simcore:AssignedToFlowElement> ID0LMbjl8XfFaui1YxJs_D1t</simcore:AssignedToFlowElement>
+		<simmep:ControllerType>MANUAL</simmep:ControllerType>
+		<simmep:ControllerVariable>FLOW</simmep:ControllerVariable>
+	</SimController_Default_Default>
 	<SimController_SupplyWater_Temperature RefId="ID_cntrl_0LMbjl8XfFaui1YxJs_D66">
-		<simmep:ConstantSetpointValue>70</simmep:ConstantSetpointValue>
-		<simmep:ControllerType>Variable</simmep:ControllerType>
+		<simcore:AssignedToFlowElement> ID0LMbjl8XfFaui1YxJs_D66</simcore:AssignedToFlowElement>
+		<simmep:ControllerVariable>FLOW</simmep:ControllerVariable>
 	</SimController_SupplyWater_Temperature>
 	<SimDistributionPort_HotWaterFlowPort_Water_In RefId="ID1erT_ZevT3geJE5rild3l1">
 		<simcore:SimUniqueID>1erT_ZevT3geJE5rild3l1</simcore:SimUniqueID>
@@ -685,10 +704,6 @@
 		<simcore:SimModelName>InPort_1104309</simcore:SimModelName>
 		<simres:HostElement>ID1tDPbdBSHCbuhhpltlQZsB</simres:HostElement>
 	</SimDistributionPort_HotWaterFlowPort_Water_Out>
-	<SimFlowController_Valve_Default RefId="ID0LMbjl8XfFaui1YxJs_D1L">
-		<simcore:SimModelName>EnEff_ThermostaticValve:DN15:908065</simcore:SimModelName>
-		<simcore:AssignedToGroups>ID0LMbjl8XfFaui1YxJs_D10 </simcore:AssignedToGroups>
-	</SimFlowController_Valve_Default>
 	<SimFlowController_Valve_Default RefId="ID0LMbjl8XfFaui1YxJs_D6B">
 		<simcore:SimModelName>EnEff_Valve:Standard:908031</simcore:SimModelName>
 		<simcore:AssignedToGroups>ID0LMbjl8XfFaui1YxJs_D10 </simcore:AssignedToGroups>
@@ -697,48 +712,63 @@
 		<simcore:SimModelName>EnEff_Valve:Standard:908035</simcore:SimModelName>
 		<simcore:AssignedToGroups>ID0LMbjl8XfFaui1YxJs_D10 </simcore:AssignedToGroups>
 	</SimFlowController_Valve_Default>
+	<SimFlowController_Valve_TemperingValve RefId="ID0LMbjl8XfFaui1YxJs_D1L">
+		<simcore:SimModelName>EnEff_ThermostaticValve:DN15:908065</simcore:SimModelName>
+		<simcore:AssignedToGroups>ID0LMbjl8XfFaui1YxJs_D10 </simcore:AssignedToGroups>
+	</SimFlowController_Valve_TemperingValve>
 	<SimFlowEnergyTransfer_ConvectiveHeater_Radiant_Water RefId="ID0LMbjl8XfFaui1YxJs_D1K">
-		<simcore:AssignedToGroups>ID0LMbjl8XfFaui1YxJs_D10 ID0LMbjl8XfFaui1YxJs_D11 </simcore:AssignedToGroups>
+		<simcore:SimModelName>EnEff_Radiator:600/800/100 D15:908064</simcore:SimModelName>
+		<simcore:AssignedToGroups>ID0LMbjl8XfFaui1YxJs_D10 ID0LMbjl8XfFaui1YxJs_D11 ID2ZBTbFXf0mACYyGlm4STd </simcore:AssignedToGroups>
 	</SimFlowEnergyTransfer_ConvectiveHeater_Radiant_Water>
-	<SimFlowEnergyTransferStorage_HotWaterTank_Mixed RefId="ID0LMbjl8XfFaui1YxJs_D1u">
+	<SimFlowEnergyTransferStorage_HotWaterTank_Expansion RefId="ID0LMbjl8XfFaui1YxJs_D1u">
 		<simcore:SimModelName>EnEff_Vessel:ND 25:908044</simcore:SimModelName>
 		<simcore:AssignedToGroups>ID0LMbjl8XfFaui1YxJs_D11 </simcore:AssignedToGroups>
-	</SimFlowEnergyTransferStorage_HotWaterTank_Mixed>
+		<simmep:EffectiveCapacity>0.001</simmep:EffectiveCapacity>
+	</SimFlowEnergyTransferStorage_HotWaterTank_Expansion>
 	<SimFlowFitting_Default_Default RefId="ID0LMbjl8XfFaui1YxJs_D1I">
 		<simcore:SimModelName>EnEff_PipeFittingBend:Standard:908070</simcore:SimModelName>
 		<simcore:AssignedToGroups>ID0LMbjl8XfFaui1YxJs_D10 </simcore:AssignedToGroups>
+		<simmep:InteriorRoughnessCoeff>0.001</simmep:InteriorRoughnessCoeff>
 	</SimFlowFitting_Default_Default>
 	<SimFlowFitting_Default_Default RefId="ID0LMbjl8XfFaui1YxJs_D1O">
 		<simcore:SimModelName>EnEff_PipeFittingBend:Standard:908076</simcore:SimModelName>
 		<simcore:AssignedToGroups>ID0LMbjl8XfFaui1YxJs_D11 </simcore:AssignedToGroups>
+		<simmep:InteriorRoughnessCoeff>0.001</simmep:InteriorRoughnessCoeff>
 	</SimFlowFitting_Default_Default>
 	<SimFlowFitting_Default_Default RefId="ID0LMbjl8XfFaui1YxJs_D1Q">
 		<simcore:SimModelName>EnEff_PipeFittingBend:Standard:908078</simcore:SimModelName>
 		<simcore:AssignedToGroups>ID0LMbjl8XfFaui1YxJs_D11 </simcore:AssignedToGroups>
+		<simmep:InteriorRoughnessCoeff>0.001</simmep:InteriorRoughnessCoeff>
 	</SimFlowFitting_Default_Default>
 	<SimFlowFitting_Default_Default RefId="ID0LMbjl8XfFaui1YxJs_D6F">
 		<simcore:SimModelName>EnEff_PipeFittingBend:Standard:908027</simcore:SimModelName>
 		<simcore:AssignedToGroups>ID0LMbjl8XfFaui1YxJs_D10 </simcore:AssignedToGroups>
+		<simmep:InteriorRoughnessCoeff>0.001</simmep:InteriorRoughnessCoeff>
 	</SimFlowFitting_Default_Default>
 	<SimFlowFitting_Default_Default RefId="ID0LMbjl8XfFaui1YxJs_D1_">
 		<simcore:SimModelName>EnEff_PipeFittingBend:Standard:908042</simcore:SimModelName>
 		<simcore:AssignedToGroups>ID0LMbjl8XfFaui1YxJs_D11 </simcore:AssignedToGroups>
+		<simmep:InteriorRoughnessCoeff>0.001</simmep:InteriorRoughnessCoeff>
 	</SimFlowFitting_Default_Default>
 	<SimFlowFitting_Default_Default RefId="ID0LMbjl8XfFaui1YxJs_D1d">
 		<simcore:SimModelName>EnEff_PipeFittingJunction:Standard:908051</simcore:SimModelName>
 		<simcore:AssignedToGroups>ID0LMbjl8XfFaui1YxJs_D11 </simcore:AssignedToGroups>
+		<simmep:InteriorRoughnessCoeff>0.0002</simmep:InteriorRoughnessCoeff>
 	</SimFlowFitting_Default_Default>
 	<SimFlowFitting_Default_Default RefId="ID0LMbjl8XfFaui1YxJs_D1Z">
 		<simcore:SimModelName>EnEff_PipeFittingBend:Standard:908055</simcore:SimModelName>
 		<simcore:AssignedToGroups>ID0LMbjl8XfFaui1YxJs_D11 </simcore:AssignedToGroups>
+		<simmep:InteriorRoughnessCoeff>0.001</simmep:InteriorRoughnessCoeff>
 	</SimFlowFitting_Default_Default>
 	<SimFlowFitting_Default_Default RefId="ID0LMbjl8XfFaui1YxJs_D1j">
 		<simcore:SimModelName>EnEff_PipeFittingBend:Standard:908057</simcore:SimModelName>
 		<simcore:AssignedToGroups>ID0LMbjl8XfFaui1YxJs_D11 </simcore:AssignedToGroups>
+		<simmep:InteriorRoughnessCoeff>0.001</simmep:InteriorRoughnessCoeff>
 	</SimFlowFitting_Default_Default>
 	<SimFlowFitting_Default_Default RefId="ID1tDPbdBSHCbuhhpltlQZsB">
 		<simcore:SimModelName>EnEff_PipeFittingBend:Standard:1104309</simcore:SimModelName>
 		<simcore:AssignedToGroups>ID0LMbjl8XfFaui1YxJs_D10 </simcore:AssignedToGroups>
+		<simmep:InteriorRoughnessCoeff>0.001</simmep:InteriorRoughnessCoeff>
 	</SimFlowFitting_Default_Default>
 	<SimFlowMover_Pump_VariableSpeedReturn RefId="ID0LMbjl8XfFaui1YxJs_D1q">
 		<simcore:SimUniqueID>0LMbjl8XfFaui1YxJs_D1q</simcore:SimUniqueID>
@@ -768,10 +798,9 @@
 		<simmep:SimFlowPlant_FuelType>NaturalGas</simmep:SimFlowPlant_FuelType>
 		<simmep:SimFlowPlant_NomCap>215005.058334194</simmep:SimFlowPlant_NomCap>
 		<simmep:SimFlowPlant_NomThermalEff>846.85</simmep:SimFlowPlant_NomThermalEff>
+		<simmep:SimFlowPlant_NrmlizedBoilerEffCurveName> ID_cp_0LMbjl8XfFaui1YxJs_D66</simmep:SimFlowPlant_NrmlizedBoilerEffCurveName>
 		<simmep:SimFlowPlant_DesignWaterOutletTemp>70</simmep:SimFlowPlant_DesignWaterOutletTemp>
 		<simmep:SimFlowPlant_DesignWaterFlowRate>0.00706293334429772</simmep:SimFlowPlant_DesignWaterFlowRate>
-		<simmep:SimFlowPlant_MinPartLoadRatio>1</simmep:SimFlowPlant_MinPartLoadRatio>
-		<simmep:SimFlowPlant_MaxPartLoadRatio>0</simmep:SimFlowPlant_MaxPartLoadRatio>
 		<simmep:SimFlowPlant_OptimumPartLoadRatio>0.9</simmep:SimFlowPlant_OptimumPartLoadRatio>
 		<simmep:SimFlowPlant_WaterOutletUpTempLimit>383.15</simmep:SimFlowPlant_WaterOutletUpTempLimit>
 		<simmep:SimFlowPlant_BoilerFlowMode>Variable</simmep:SimFlowPlant_BoilerFlowMode>
@@ -856,9 +885,27 @@
 		<simcore:SimModelType>EquipmentList</simcore:SimModelType>
 		<simcore:SimModelSubtype>ZoneHvac</simcore:SimModelSubtype>
 		<simcore:SimModelName>ZoneList1</simcore:SimModelName>
-		<!-- <simcore:ParentGroups/> -->
-    <!-- <simbldg:SimList_ZoneEqmt_1_18_Name/> -->
+		<simcore:ParentGroups>ID2ZBTbFXf0mACYyGlm4STs</simcore:ParentGroups>
+		<simbldg:SimList_ZoneEqmt_1_18_Name>ID0LMbjl8XfFaui1YxJs_D1K </simbldg:SimList_ZoneEqmt_1_18_Name>
 	</SimList_EquipmentList_ZoneHvac>
+	<SimPerformanceCurve_Mathematical_Bicubic RefId="ID_cp_0LMbjl8XfFaui1YxJs_D66">
+		<simgeom:SimPerfCurve_MinCurveOutput>0</simgeom:SimPerfCurve_MinCurveOutput>
+		<simgeom:SimPerfCurve_MaxCurveOutput>1</simgeom:SimPerfCurve_MaxCurveOutput>
+		<simgeom:SimPerfCurve_Coef1Constant>0.1</simgeom:SimPerfCurve_Coef1Constant>
+		<simgeom:SimPerfCurve_Coef_2_X>0.2</simgeom:SimPerfCurve_Coef_2_X>
+		<simgeom:SimPerfCurve_MinValX>0</simgeom:SimPerfCurve_MinValX>
+		<simgeom:SimPerfCurve_MaxValX>1</simgeom:SimPerfCurve_MaxValX>
+		<simgeom:SimPerfCurve_Coef_4_Y>0.4</simgeom:SimPerfCurve_Coef_4_Y>
+		<simgeom:SimPerfCurve_MinValY>0</simgeom:SimPerfCurve_MinValY>
+		<simgeom:SimPerfCurve_MaxValY>1</simgeom:SimPerfCurve_MaxValY>
+		<simgeom:SimPerfCurve_Coef_3_X_2>0.3</simgeom:SimPerfCurve_Coef_3_X_2>
+		<simgeom:SimPerfCurve_Coeff5_Y_2>0.5</simgeom:SimPerfCurve_Coeff5_Y_2>
+		<simgeom:SimPerfCurve_Coeff6_X_y>0.6</simgeom:SimPerfCurve_Coeff6_X_y>
+		<simgeom:SimPerfCurve_Coeff7_X_3>0.7</simgeom:SimPerfCurve_Coeff7_X_3>
+		<simgeom:SimPerfCurve_Coeff8_Y_3>0.8</simgeom:SimPerfCurve_Coeff8_Y_3>
+		<simgeom:SimPerfCurve_Coeff9_X_2_Y>0.8</simgeom:SimPerfCurve_Coeff9_X_2_Y>
+		<simgeom:SimPerfCurve_Coeff10_X_y_2>0.8</simgeom:SimPerfCurve_Coeff10_X_y_2>
+	</SimPerformanceCurve_Mathematical_Bicubic>
 	<SimSpace_Occupied_Default RefId="ID2ZBTbFXf0mACYyGlm4STy">
 		<simcore:SimUniqueID>2ZBTbFX$f0mACYyGlm4STy</simcore:SimUniqueID>
 		<simcore:SimModelType>Occupied</simcore:SimModelType>
@@ -871,7 +918,6 @@
 		<simcore:SimModelType>ThermalZone</simcore:SimModelType>
 		<simcore:SimModelSubtype>Default</simcore:SimModelSubtype>
 		<simcore:SimModelName>1C:1123516</simcore:SimModelName>
-		<simcore:ParentGroups>ID2ZBTbFXf0mACYyGlm4STd</simcore:ParentGroups>
 	</SimSpatialZone_ThermalZone_Default>
 	<SimSystem_HvacHotWater_Demand RefId="ID0LMbjl8XfFaui1YxJs_D11">
 		<simcore:SimUniqueID>0LMbjl8XfFaui1YxJs_D11</simcore:SimUniqueID>
