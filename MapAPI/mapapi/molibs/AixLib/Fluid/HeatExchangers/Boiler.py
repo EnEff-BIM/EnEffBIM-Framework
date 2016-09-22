@@ -25,6 +25,13 @@ class Boiler(MapHierarchy.MapComponent):
         self.T_set = self.add_connector(name="T_set", type="Real", \
                                                             dimension=1)
         #self.add_constant_flow(set_temp=320.0)
+        #boil_child = self.hierarchy_node.getChildList()
+        #for a in range(boil_child.size()):
+        #    print(boil_child[a].getSimModelObject())
+        #boil_parent = self.hierarchy_node.getParentList()
+        #for b in range(boil_parent.size()):
+        #    print("parent")
+        #    print(boil_parent[b].getSimModelObject())
 
     def add_constant_flow(self, set_temp):
         '''adds a constants flow Temperature for the hot water loop'''

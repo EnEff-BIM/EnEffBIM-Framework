@@ -41,6 +41,12 @@ from SimSlab_RoofSlab_RoofUnderAir import SimSlab_RoofSlab_RoofUnderAir
 from SimSlab_Floor_FloorOverEarth import SimSlab_Floor_FloorOverEarth
 from SimWall_Wall_ExteriorAboveGrade import SimWall_Wall_ExteriorAboveGrade
 from SimWindow_Window_Exterior import SimWindow_Window_Exterior
+from SimSlab_Default_Default import SimSlab_Default_Default
+from SimSlab_RoofSlab_RoofUnderAir import SimSlab_RoofSlab_RoofUnderAir
+from SimSlab_Floor_FloorOverEarth import SimSlab_Floor_FloorOverEarth
+from SimWall_Wall_Default import SimWall_Wall_Default
+from SimWall_Wall_ExteriorAboveGrade import SimWall_Wall_ExteriorAboveGrade
+from SimWindow_Window_Exterior import SimWindow_Window_Exterior
 from SimMaterialLayerSet_OpaqueLayerSet_Wall import SimMaterialLayerSet_OpaqueLayerSet_Wall
 from SimMaterialLayer_OpaqueMaterialLayer_Default import SimMaterialLayer_OpaqueMaterialLayer_Default
 from SimMaterialLayerSet_OpaqueLayerSet_Roof import SimMaterialLayerSet_OpaqueLayerSet_Roof
@@ -505,6 +511,7 @@ class MapThermalZone(MoObject):
                 for b in range(occ_child.size()):
                     if occ_child[b].ClassType() == \
                             "SimSpaceBoundary_SecondLevel_SubTypeA":
+                        print(occ_child[b].getSimModelObject())
                         space_bound = MapSpaceBoundary(self, occ_child[b])
                         space_bound.instantiate_element()
                         self.space_boundaries.append(space_bound)
@@ -1048,7 +1055,10 @@ class MapSpaceBoundary(object):
 
     def instantiate_element(self):
         bound_child = self.hierarchy_node.getChildList()
+        print(self.sim_instance.InternalOrExternalBoundary().getValue())
         for a in range(bound_child.size()):
+            print(bound_child[a].ClassType())
+
             if bound_child[a].ClassType() in self.possible_types:
                 self.type = bound_child[a].ClassType()
                 self.building_element = bound_child[a].getSimModelObject()

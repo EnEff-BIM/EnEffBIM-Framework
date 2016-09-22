@@ -21,7 +21,7 @@ class Radiator(MapHierarchy.MapComponent):
 
         self.target_location = map_sim[0].getTargetLocation()
         prop_list = map_sim[0].getMappedPropertyList()
-        print(prop_list)
+        #print(prop_list)
         self.arrange_parameters(prop_list)
 
         self.convPort = self.add_connector(name="convPort", type="HeatPort",
@@ -30,6 +30,13 @@ class Radiator(MapHierarchy.MapComponent):
                                           dimension=1, hierarchy_node=None)
         #needs to be changed if thermalZone is implemented
 #        self.connect_zone(self.project.buildings[0].thermal_zones[0])
+        #boil_child = self.hierarchy_node.getChildList()
+        #for a in range(boil_child.size()):
+        #    print(boil_child[a].getSimModelObject())
+        #boil_parent = self.hierarchy_node.getParentList()
+        #for b in range(boil_parent.size()):
+        #    print("parent")
+        #    print(boil_parent[b].getSimModelObject())
 
         #self.add_pipe()
 
