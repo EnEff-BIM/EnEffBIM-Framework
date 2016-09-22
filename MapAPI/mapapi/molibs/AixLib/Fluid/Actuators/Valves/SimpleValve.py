@@ -19,6 +19,7 @@ class SimpleValve(MapHierarchy.MapComponent):
 
 
     def mapp_me(self):
+        self.target_name += "valve"
         pass
         """
         map_sim = self.hierarchy_node.getMappedComponents()

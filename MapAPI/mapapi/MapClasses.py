@@ -568,9 +568,10 @@ class MapComponent(MoObject):
                             Pipe,
                         "SimFlowSegment_Pipe_Indoor" : Pipe,
                         "SimFlowFitting_Default_Default" : Pipe,
-                        "SimFlowEnergyTransferStorage_HotWaterTank_Mixed" :
+                        "SimFlowEnergyTransferStorage_HotWaterTank_Expansion" :
                             ExpansionVessel,
-                        "SimFlowController_Valve_Default" : SimpleValve}
+                        "SimFlowController_Valve_Default" : SimpleValve,
+                        "SimFlowController_Valve_TemperingValve" : SimpleValve}
 
 
     def find_loop_connection(self, hierarchy_node=None):
@@ -637,6 +638,7 @@ class MapComponent(MoObject):
                                             "SimConnection_HotWaterFlow_Default":
                                         self.connected_in.append(inlet_parent[h])
                                         for x in range(comp_child.size()):
+                                            print(comp_child[i].getSimModelObject().RefId(),comp_child[x].getSimModelObject().RefId())
                                             if comp_child[x].ClassType() ==\
                                                     "SimDistributionPort_HotWaterFlowPort_Water_InOrOut" and \
                                                             comp_child[i].getSimModelObject().RefId() != comp_child[x].getSimModelObject().RefId():

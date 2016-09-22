@@ -13,10 +13,11 @@ class ExpansionVessel(MapHierarchy.MapComponent):
     """
     
     def init_me(self):
-
+        print("hal")
         self.port_a = self.add_connector("port_a", "FluidPort")
 
     def mapp_me(self):
+        self.target_name += "vessel"
         self.target_location = ("AixLib.Fluid.Storage.ExpansionVessel")
         self.target_name = "_expansionVessel"
         self.V_start = self.add_parameter(name="V_start",

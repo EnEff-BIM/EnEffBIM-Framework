@@ -21,6 +21,7 @@ class Pipe(MapHierarchy.MapComponent):
 
 
     def mapp_me(self):
+        self.target_name += "pipe"
         map_sim = self.hierarchy_node.getMappedComponents()
         #print(self.sim_instance)
         #print(map_sim[0])
