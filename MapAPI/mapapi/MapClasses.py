@@ -656,7 +656,7 @@ class MapComponent(MoObject):
                                                                         self.connected_out.append(outlet_parent[w])
                                                                         return
                                             else:
-                                                return
+                                                pass
 
     def create_connection(self, test):
         self.project.connections.append(MapConnection(self,test))
