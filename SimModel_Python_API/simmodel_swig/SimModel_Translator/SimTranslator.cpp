@@ -27,7 +27,9 @@ void SimTranslator::loadSimModel(std::string _geoName, std::string _sysName)
 	simSysData = SimModel_(_sysName);
 
 	// parse SimModel hierarchy data
-	_simHierarchyPtr->parser(simGeometryData, simSysData, _geoName, _sysName);
+	//_simHierarchyPtr->parser(simGeometryData, simSysData, _geoName, _sysName);
+	// new update for version 2.2
+	_simHierarchyPtr->parser2_2(simGeometryData, simSysData, _geoName, _sysName);
 }
 
 // get SimModel hierarchy object

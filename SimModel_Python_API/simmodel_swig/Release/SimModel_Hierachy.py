@@ -226,6 +226,15 @@ class SimHierarchyNodeBase(_object):
     def dataType_SimProject_Project_DesignAlternative(self):
         return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimProject_Project_DesignAlternative(self)
 
+    def dataType_SimModelRepresentationContext_GeometricRepresentationContext_Default(self):
+        return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimModelRepresentationContext_GeometricRepresentationContext_Default(self)
+
+    def dataType_SimPlacement_Axis2Placement3D_Default(self):
+        return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimPlacement_Axis2Placement3D_Default(self)
+
+    def dataType_SimGeomVector_Vector_Direction(self):
+        return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimGeomVector_Vector_Direction(self)
+
     def dataType_SimSite_BuildingSite_Default(self):
         return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimSite_BuildingSite_Default(self)
 
@@ -258,6 +267,9 @@ class SimHierarchyNodeBase(_object):
 
     def dataType_SimWall_Wall_ExteriorAboveGrade(self):
         return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimWall_Wall_ExteriorAboveGrade(self)
+
+    def dataType_SimWall_Wall_Interior(self):
+        return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimWall_Wall_Interior(self)
 
     def dataType_SimWindow_Window_Exterior(self):
         return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimWindow_Window_Exterior(self)
@@ -301,8 +313,14 @@ class SimHierarchyNodeBase(_object):
     def dataType_SimMaterial_GlazingMaterial_Glazing(self):
         return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimMaterial_GlazingMaterial_Glazing(self)
 
+    def dataType_SimMaterial_Default_Default(self):
+        return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimMaterial_Default_Default(self)
+
     def dataType_SimSlab_Default_Default(self):
         return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimSlab_Default_Default(self)
+
+    def dataType_SimSlab_Floor_InterzoneFloor(self):
+        return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimSlab_Floor_InterzoneFloor(self)
 
     def dataType_SimWall_Wall_Default(self):
         return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimWall_Wall_Default(self)
@@ -334,6 +352,9 @@ class SimHierarchyNodeBase(_object):
     def dataType_SimFlowEnergyTransferStorage_HotWaterTank_Mixed(self):
         return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimFlowEnergyTransferStorage_HotWaterTank_Mixed(self)
 
+    def dataType_SimFlowEnergyTransferStorage_HotWaterTank_Expansion(self):
+        return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimFlowEnergyTransferStorage_HotWaterTank_Expansion(self)
+
     def dataType_SimFlowFitting_Mixer_DemandProxyMixerWater(self):
         return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimFlowFitting_Mixer_DemandProxyMixerWater(self)
 
@@ -348,6 +369,9 @@ class SimHierarchyNodeBase(_object):
 
     def dataType_SimFlowController_Valve_Default(self):
         return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimFlowController_Valve_Default(self)
+
+    def dataType_SimFlowController_Valve_TemperingValve(self):
+        return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimFlowController_Valve_TemperingValve(self)
 
     def dataType_SimFlowMover_Pump_VariableSpeedReturn(self):
         return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimFlowMover_Pump_VariableSpeedReturn(self)

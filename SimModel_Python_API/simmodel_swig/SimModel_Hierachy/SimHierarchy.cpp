@@ -349,33 +349,42 @@ void SimHierarchy::parseSimSpaceTree(::std::auto_ptr< ::schema::simxml::Model::S
 																// save index pair for parent-child relationships
 																_nodeIndexPairList.push_back(std::pair<int, int>(_nodeIndexList.find(_materialLayerSetId)->second, _id_SimProxyClass));*/
 																// add other MaterialLayers
-																for(::xml_schema::idrefs::iterator _simTmpIt=_simMaterialLayerSetObj_tmp->SimMatLayerSet_Layer_2_10().get().begin(); _simTmpIt!=_simMaterialLayerSetObj_tmp->SimMatLayerSet_Layer_2_10().get().end(); ++_simTmpIt)
+																if(_simMaterialLayerSetObj_tmp->SimMatLayerSet_Layer_2_10().present())
 																{
-																	SimRoot* _tmpObj = _callback->getSimClassObj(*_simTmpIt);
-																	// add metrial layer
-																	parseMaterialLayer(_tmpObj, _nodeIndexPairList, _nodeIndexList, _id_SimMaterialLayerSet);
+																	for(::xml_schema::idrefs::iterator _simTmpIt=_simMaterialLayerSetObj_tmp->SimMatLayerSet_Layer_2_10().get().begin(); _simTmpIt!=_simMaterialLayerSetObj_tmp->SimMatLayerSet_Layer_2_10().get().end(); ++_simTmpIt)
+																	{
+																		SimRoot* _tmpObj = _callback->getSimClassObj(*_simTmpIt);
+																		// add metrial layer
+																		parseMaterialLayer(_tmpObj, _nodeIndexPairList, _nodeIndexList, _id_SimMaterialLayerSet);
+																	}
 																}
 															}
 															else if(ClassType(_simMaterialLayerSetObj)=="SimMaterialLayerSet_OpaqueLayerSet_Floor")
 															{
 																SimMaterialLayerSet_OpaqueLayerSet_Floor* _simMaterialLayerSetObj_tmp = static_cast<SimMaterialLayerSet_OpaqueLayerSet_Floor*>(_simMaterialLayerSetObj);
 																// add other MaterialLayers
-																for(::xml_schema::idrefs::iterator _simTmpIt=_simMaterialLayerSetObj_tmp->SimMatLayerSet_Layer_2_10().get().begin(); _simTmpIt!=_simMaterialLayerSetObj_tmp->SimMatLayerSet_Layer_2_10().get().end(); ++_simTmpIt)
+																if(_simMaterialLayerSetObj_tmp->SimMatLayerSet_Layer_2_10().present())
 																{
-																	SimRoot* _tmpObj = _callback->getSimClassObj(*_simTmpIt);
-																	// add metrial layer
-																	parseMaterialLayer(_tmpObj, _nodeIndexPairList, _nodeIndexList, _id_SimMaterialLayerSet);
+																	for(::xml_schema::idrefs::iterator _simTmpIt=_simMaterialLayerSetObj_tmp->SimMatLayerSet_Layer_2_10().get().begin(); _simTmpIt!=_simMaterialLayerSetObj_tmp->SimMatLayerSet_Layer_2_10().get().end(); ++_simTmpIt)
+																	{
+																		SimRoot* _tmpObj = _callback->getSimClassObj(*_simTmpIt);
+																		// add metrial layer
+																		parseMaterialLayer(_tmpObj, _nodeIndexPairList, _nodeIndexList, _id_SimMaterialLayerSet);
+																	}
 																}
 															}
 															else if(ClassType(_simMaterialLayerSetObj)=="SimMaterialLayerSet_OpaqueLayerSet_Wall")
 															{
 																SimMaterialLayerSet_OpaqueLayerSet_Wall* _simMaterialLayerSetObj_tmp = static_cast<SimMaterialLayerSet_OpaqueLayerSet_Wall*>(_simMaterialLayerSetObj);
 																// add other MaterialLayers
-																for(::xml_schema::idrefs::iterator _simTmpIt=_simMaterialLayerSetObj_tmp->SimMatLayerSet_Layer_2_10().get().begin(); _simTmpIt!=_simMaterialLayerSetObj_tmp->SimMatLayerSet_Layer_2_10().get().end(); ++_simTmpIt)
+																if(_simMaterialLayerSetObj_tmp->SimMatLayerSet_Layer_2_10().present())
 																{
-																	SimRoot* _tmpObj = _callback->getSimClassObj(*_simTmpIt);
-																	// add metrial layer
-																	parseMaterialLayer(_tmpObj, _nodeIndexPairList, _nodeIndexList, _id_SimMaterialLayerSet);
+																	for(::xml_schema::idrefs::iterator _simTmpIt=_simMaterialLayerSetObj_tmp->SimMatLayerSet_Layer_2_10().get().begin(); _simTmpIt!=_simMaterialLayerSetObj_tmp->SimMatLayerSet_Layer_2_10().get().end(); ++_simTmpIt)
+																	{
+																		SimRoot* _tmpObj = _callback->getSimClassObj(*_simTmpIt);
+																		// add metrial layer
+																		parseMaterialLayer(_tmpObj, _nodeIndexPairList, _nodeIndexList, _id_SimMaterialLayerSet);
+																	}
 																}
 															}
 															else if(ClassType(_simMaterialLayerSetObj)=="SimMaterialLayerSet_GlazingLayerSet_Window")
@@ -403,7 +412,8 @@ void SimHierarchy::parseSimSpaceTree(::std::auto_ptr< ::schema::simxml::Model::S
 														}
 													}
 												}
-										
+
+												/*insert code begin*/
 												// opening on building element
 												for(SimModel::SimFeatureElementSubtraction_Void_Opening_iterator _simFeatureElementSubtractionVoidOpeningIt=simGeometryData->SimFeatureElementSubtraction_Void_Opening().begin(); _simFeatureElementSubtractionVoidOpeningIt!=simGeometryData->SimFeatureElementSubtraction_Void_Opening().end(); ++_simFeatureElementSubtractionVoidOpeningIt)
 												{
@@ -436,15 +446,22 @@ void SimHierarchy::parseSimSpaceTree(::std::auto_ptr< ::schema::simxml::Model::S
 																		_nodeIndexList.insert(std::pair<std::string, int>(_simWindowExteriorIt->RefId(), _id_SimWindowExterior));
 																		// save index pair for parent-child relationships
 																		_nodeIndexPairList.push_back(std::pair<int, int>(_nodeIndexList.find(_simFeatureElementSubtractionVoidOpeningIt->RefId())->second, _id_SimWindowExterior));
+
+																		// building story link
+																		if(_simWindowExteriorIt->ContainingSpatialStructure().present() && _nodeIndexList.find(_simWindowExteriorIt->ContainingSpatialStructure().get())!=_nodeIndexList.end())
+																		{
+																			// save index pair for parent-child relationships
+																			_nodeIndexPairList.push_back(std::pair<int, int>(_nodeIndexList.find(_simWindowExteriorIt->ContainingSpatialStructure().get())->second, _id_SimWindowExterior));
+																		}
 																	}
 																	else
 																	{
 																		// save index pair for parent-child relationships
 																		_nodeIndexPairList.push_back(std::pair<int, int>(_nodeIndexList.find(_simFeatureElementSubtractionVoidOpeningIt->RefId())->second, _nodeIndexList.find(_simWindowExteriorIt->RefId())->second));
 																	}
+
+																	break;
 																}
-													
-																break;
 															}
 														}
 														else
@@ -463,6 +480,7 @@ void SimHierarchy::parseSimSpaceTree(::std::auto_ptr< ::schema::simxml::Model::S
 													// save index pair for parent-child relationships
 													_nodeIndexPairList.push_back(std::pair<int, int>(_nodeIndexList.find(_storeyId)->second, _nodeIndexList.find(_simBuildingElementObj->RefId())->second));
 												}
+												/*insert code end*/
 											}
 											else
 											{
@@ -502,8 +520,10 @@ void SimHierarchy::loadSimGeomClassObj(std::string _geoName)
 		// building element
 		_simClassList.push_back("SimSlab_RoofSlab_RoofUnderAir");
 		_simClassList.push_back("SimSlab_Floor_FloorOverEarth");
+		_simClassList.push_back("SimSlab_Floor_InterzoneFloor");
 		_simClassList.push_back("SimWall_Wall_ExteriorAboveGrade");
 		_simClassList.push_back("SimWindow_Window_Exterior");
+		_simClassList.push_back("SimWall_Wall_Interior");
 		// building MaterialLayerSet
 		_simClassList.push_back("SimMaterialLayerSet_OpaqueLayerSet_Roof");
 		_simClassList.push_back("SimMaterialLayerSet_OpaqueLayerSet_Floor");
@@ -513,6 +533,7 @@ void SimHierarchy::loadSimGeomClassObj(std::string _geoName)
 		_simClassList.push_back("SimMaterialLayer_OpaqueMaterialLayer_Default");
 		_simClassList.push_back("SimMaterialLayer_GlazingMaterialLayer_Default");
 		// building Material
+		_simClassList.push_back("SimMaterial_Default_Default");
 		_simClassList.push_back("SimMaterial_OpaqueMaterial_Default");
 		_simClassList.push_back("SimMaterial_OpaqueMaterial_AirGap");
 		_simClassList.push_back("SimMaterial_GlazingMaterial_Gas");
@@ -688,70 +709,132 @@ void SimHierarchy::parseTimeSeries(::std::auto_ptr< ::schema::simxml::Model::Sim
 }
 
 // for new feature testing
-void SimHierarchy::parseSimSystemTmp(::std::auto_ptr< ::schema::simxml::Model::SimModel >& simSysData, int _id_SimBuilding, std::vector<std::pair<int, int> >& _nodeIndexPairList, std::map<std::string, int>& _nodeIndexList)
+void SimHierarchy::parseSimSystemTmp(::std::auto_ptr< ::schema::simxml::Model::SimModel >& simSysData, ::std::auto_ptr< ::schema::simxml::Model::SimModel >& simGeometryData, int _id_SimBuilding, std::vector<std::pair<int, int> >& _nodeIndexPairList, std::map<std::string, int>& _nodeIndexList)
 {
-	// Simsystem is not existed?
-	// for simsystem
+	std::set<std::string> _subSystemIdList;
+	// Simsystem
+	for(SimModel::SimSystem_HvacHotWater_FullSystem_iterator _simFullSystemIt=simSysData->SimSystem_HvacHotWater_FullSystem().begin(); _simFullSystemIt!=simSysData->SimSystem_HvacHotWater_FullSystem().end(); ++_simFullSystemIt)
 	{
-		std::set<std::string> _subSystemIdList;
-		// supply side
-		for(SimModel::SimSystem_HvacHotWater_Supply_iterator _simSystemIt=simSysData->SimSystem_HvacHotWater_Supply().begin(); _simSystemIt!=simSysData->SimSystem_HvacHotWater_Supply().end(); ++_simSystemIt)
+		// save sub-system Ref Id
+		_subSystemIdList.insert(_simFullSystemIt->RefId());
+		// create the child node of the SimBuilding node in the hierarch tree
+		if(_nodeIndexList.find(_simFullSystemIt->RefId())==_nodeIndexList.end())
 		{
-			// save sub-system Ref Id
-			_subSystemIdList.insert(_simSystemIt->RefId());
-			// create the child node of the SimBuilding node in the hierarch tree
-			if(_nodeIndexList.find(_simSystemIt->RefId())==_nodeIndexList.end())
-			{
-				SimHierarchyNode SimSystem_Node;
-				setCurrentObject(SimSystem_Node, *_simSystemIt);
-				addHierarchyNode(SimSystem_Node);
-				int _id_SimSystem = SimHierarchyNodeList.size() - 1;
+			SimHierarchyNode SimSystem_Node;
+			setCurrentObject(SimSystem_Node, *_simFullSystemIt);
+			addHierarchyNode(SimSystem_Node);
+			int _id_SimSystem = SimHierarchyNodeList.size() - 1;
 
-				// save current object index position: <ref_id, index_pos>
-				_nodeIndexList.insert(std::pair<std::string, int>(_simSystemIt->RefId(), _id_SimSystem));
-				// save index pair for parent-child relationships
-				_nodeIndexPairList.push_back(std::pair<int, int>(_id_SimBuilding, _id_SimSystem));
-			}
-			else
-			{
-				// save index pair for parent-child relationships
-				_nodeIndexPairList.push_back(std::pair<int, int>(_id_SimBuilding, _nodeIndexList.find(_simSystemIt->RefId())->second));
-			}
+			// save current object index position: <ref_id, index_pos>
+			_nodeIndexList.insert(std::pair<std::string, int>(_simFullSystemIt->RefId(), _id_SimSystem));
+			// save index pair for parent-child relationships
+			_nodeIndexPairList.push_back(std::pair<int, int>(_id_SimBuilding, _id_SimSystem));
 		}
-
-		// demand side
-		for(SimModel::SimSystem_HvacHotWater_Demand_iterator _simSystemIt=simSysData->SimSystem_HvacHotWater_Demand().begin(); _simSystemIt!=simSysData->SimSystem_HvacHotWater_Demand().end(); ++_simSystemIt)
+		else
 		{
-			// save sub-system Ref Id
-			_subSystemIdList.insert(_simSystemIt->RefId());
-			// create the child node of the SimBuilding node in the hierarch tree
-			if(_nodeIndexList.find(_simSystemIt->RefId())==_nodeIndexList.end())
-			{
-				SimHierarchyNode SimSystem_Node;
-				setCurrentObject(SimSystem_Node, *_simSystemIt);
-				addHierarchyNode(SimSystem_Node);
-				int _id_SimSystem = SimHierarchyNodeList.size() - 1;
+			// save index pair for parent-child relationships
+			_nodeIndexPairList.push_back(std::pair<int, int>(_id_SimBuilding, _nodeIndexList.find(_simFullSystemIt->RefId())->second));
+		}
+	}
 
-				// save current object index position: <ref_id, index_pos>
-				_nodeIndexList.insert(std::pair<std::string, int>(_simSystemIt->RefId(), _id_SimSystem));
-				// save index pair for parent-child relationships
-				_nodeIndexPairList.push_back(std::pair<int, int>(_id_SimBuilding, _id_SimSystem));
-			}
-			else
-			{
-				// save index pair for parent-child relationships
-				_nodeIndexPairList.push_back(std::pair<int, int>(_id_SimBuilding, _nodeIndexList.find(_simSystemIt->RefId())->second));
-			}
-		}	
-
+	{
 		// parse system element
 		if(_subSystemIdList.size())
 		{
+			// supply side
+			for(SimModel::SimSystem_HvacHotWater_Supply_iterator _simSystemIt=simSysData->SimSystem_HvacHotWater_Supply().begin(); _simSystemIt!=simSysData->SimSystem_HvacHotWater_Supply().end(); ++_simSystemIt)
+			{
+				if(_simSystemIt->ParentSystem().present() && _nodeIndexList.find(_simSystemIt->ParentSystem().get())!=_nodeIndexList.end())
+				{
+					// save sub-system Ref Id
+					_subSystemIdList.insert(_simSystemIt->RefId());
+					// create the child node of the SimBuilding node in the hierarch tree
+					if(_nodeIndexList.find(_simSystemIt->RefId())==_nodeIndexList.end())
+					{
+						SimHierarchyNode SimSystem_Node;
+						setCurrentObject(SimSystem_Node, *_simSystemIt);
+						addHierarchyNode(SimSystem_Node);
+						int _id_SimSystem = SimHierarchyNodeList.size() - 1;
+
+						// save current object index position: <ref_id, index_pos>
+						_nodeIndexList.insert(std::pair<std::string, int>(_simSystemIt->RefId(), _id_SimSystem));
+						// save index pair for parent-child relationships
+						_nodeIndexPairList.push_back(std::pair<int, int>(_nodeIndexList.find(_simSystemIt->ParentSystem().get())->second, _id_SimSystem));
+					}
+					else
+					{
+						// save index pair for parent-child relationships
+						_nodeIndexPairList.push_back(std::pair<int, int>(_nodeIndexList.find(_simSystemIt->ParentSystem().get())->second, _nodeIndexList.find(_simSystemIt->RefId())->second));
+					}
+				}
+			}
+
+			// demand side
+			for(SimModel::SimSystem_HvacHotWater_Demand_iterator _simSystemIt=simSysData->SimSystem_HvacHotWater_Demand().begin(); _simSystemIt!=simSysData->SimSystem_HvacHotWater_Demand().end(); ++_simSystemIt)
+			{
+				if(_simSystemIt->ParentSystem().present() && _nodeIndexList.find(_simSystemIt->ParentSystem().get())!=_nodeIndexList.end())
+				{
+					// save sub-system Ref Id
+					_subSystemIdList.insert(_simSystemIt->RefId());
+					// create the child node of the SimBuilding node in the hierarch tree
+					if(_nodeIndexList.find(_simSystemIt->RefId())==_nodeIndexList.end())
+					{
+						SimHierarchyNode SimSystem_Node;
+						setCurrentObject(SimSystem_Node, *_simSystemIt);
+						addHierarchyNode(SimSystem_Node);
+						int _id_SimSystem = SimHierarchyNodeList.size() - 1;
+
+						// save current object index position: <ref_id, index_pos>
+						_nodeIndexList.insert(std::pair<std::string, int>(_simSystemIt->RefId(), _id_SimSystem));
+						// save index pair for parent-child relationships
+						_nodeIndexPairList.push_back(std::pair<int, int>(_nodeIndexList.find(_simSystemIt->ParentSystem().get())->second, _id_SimSystem));
+					}
+					else
+					{
+						// save index pair for parent-child relationships
+						_nodeIndexPairList.push_back(std::pair<int, int>(_nodeIndexList.find(_simSystemIt->ParentSystem().get())->second, _nodeIndexList.find(_simSystemIt->RefId())->second));
+					}
+				}
+			}
+
+			// SimFlowController_Valve_TemperingValve
+			for(SimModel::SimFlowController_Valve_TemperingValve_iterator _simFlowControllerValveIt=simSysData->SimFlowController_Valve_TemperingValve().begin(); _simFlowControllerValveIt!=simSysData->SimFlowController_Valve_TemperingValve().end(); ++_simFlowControllerValveIt)
+			{
+				if(_simFlowControllerValveIt->AssignedToGroups().present())
+				{
+					for(::xml_schema::idrefs::iterator _simFlowControllerValveSubIt=_simFlowControllerValveIt->AssignedToGroups().get().begin(); _simFlowControllerValveSubIt!=_simFlowControllerValveIt->AssignedToGroups().get().end(); ++_simFlowControllerValveSubIt)
+					
+					{
+						if(_subSystemIdList.find(*_simFlowControllerValveSubIt)!=_subSystemIdList.end())
+						{
+							if(_nodeIndexList.find(_simFlowControllerValveIt->RefId())==_nodeIndexList.end())
+							{
+								SimHierarchyNode SimFlowControllerValve_Node;
+								setCurrentObject(SimFlowControllerValve_Node, *_simFlowControllerValveIt);
+								addHierarchyNode(SimFlowControllerValve_Node);
+								int _id_SimFlowControllerValve = SimHierarchyNodeList.size() - 1;
+								// save current object index position: <ref_id, index_pos>
+								_nodeIndexList.insert(std::pair<std::string, int>(_simFlowControllerValveIt->RefId(), _id_SimFlowControllerValve));
+								// save index pair for parent-child relationships
+								_nodeIndexPairList.push_back(std::pair<int, int>(_nodeIndexList.find(*_simFlowControllerValveSubIt)->second, _id_SimFlowControllerValve));
+							}
+							else
+							{
+								// save index pair for parent-child relationships
+								_nodeIndexPairList.push_back(std::pair<int, int>(_nodeIndexList.find(*_simFlowControllerValveSubIt)->second, _nodeIndexList.find(_simFlowControllerValveIt->RefId())->second));
+							}
+						}
+					}
+				}
+			}
+
+			//
 			for(SimModel::SimFlowController_Valve_Default_iterator _simFlowControllerValveIt=simSysData->SimFlowController_Valve_Default().begin(); _simFlowControllerValveIt!=simSysData->SimFlowController_Valve_Default().end(); ++_simFlowControllerValveIt)
 			{
 				if(_simFlowControllerValveIt->AssignedToGroups().present())
 				{
 					for(::xml_schema::idrefs::iterator _simFlowControllerValveSubIt=_simFlowControllerValveIt->AssignedToGroups().get().begin(); _simFlowControllerValveSubIt!=_simFlowControllerValveIt->AssignedToGroups().get().end(); ++_simFlowControllerValveSubIt)
+					
 					{
 						if(_subSystemIdList.find(*_simFlowControllerValveSubIt)!=_subSystemIdList.end())
 						{
@@ -808,6 +891,37 @@ void SimHierarchy::parseSimSystemTmp(::std::auto_ptr< ::schema::simxml::Model::S
 					}
 				}
 			}
+			
+			// SimFlowEnergyTransferStorage_HotWaterTank_Expansion
+			for(SimModel::SimFlowEnergyTransferStorage_HotWaterTank_Expansion_iterator _simSystemElementIt=simSysData->SimFlowEnergyTransferStorage_HotWaterTank_Expansion().begin(); _simSystemElementIt!=simSysData->SimFlowEnergyTransferStorage_HotWaterTank_Expansion().end(); ++_simSystemElementIt)
+			{
+				if(_simSystemElementIt->AssignedToGroups().present())
+				{
+					for(::xml_schema::idrefs::iterator _simSystemElementSubIt=_simSystemElementIt->AssignedToGroups().get().begin(); _simSystemElementSubIt!=_simSystemElementIt->AssignedToGroups().get().end(); ++_simSystemElementSubIt)
+					{
+						if(_subSystemIdList.find(*_simSystemElementSubIt)!=_subSystemIdList.end())
+						{
+							if(_nodeIndexList.find(_simSystemElementIt->RefId())==_nodeIndexList.end())
+							{
+								SimHierarchyNode SimSystemElement_Node;
+								setCurrentObject(SimSystemElement_Node, *_simSystemElementIt);
+								addHierarchyNode(SimSystemElement_Node);
+								int _id_SimSystemElement = SimHierarchyNodeList.size() - 1;
+								// save current object index position: <ref_id, index_pos>
+								_nodeIndexList.insert(std::pair<std::string, int>(_simSystemElementIt->RefId(), _id_SimSystemElement));
+								// save index pair for parent-child relationships
+								_nodeIndexPairList.push_back(std::pair<int, int>(_nodeIndexList.find(*_simSystemElementSubIt)->second, _id_SimSystemElement));
+							}
+							else
+							{
+								// save index pair for parent-child relationships
+								_nodeIndexPairList.push_back(std::pair<int, int>(_nodeIndexList.find(*_simSystemElementSubIt)->second, _nodeIndexList.find(_simSystemElementIt->RefId())->second));
+							}
+						}
+					}
+				}
+			}
+
 			// system element
 			for(SimModel::SimFlowEnergyTransferStorage_HotWaterTank_Mixed_iterator _simSystemElementIt=simSysData->SimFlowEnergyTransferStorage_HotWaterTank_Mixed().begin(); _simSystemElementIt!=simSysData->SimFlowEnergyTransferStorage_HotWaterTank_Mixed().end(); ++_simSystemElementIt)
 			{
@@ -962,6 +1076,119 @@ void SimHierarchy::parseSimSystemTmp(::std::auto_ptr< ::schema::simxml::Model::S
 					}
 				}
 			}
+
+			// SimController_SupplyWater_Temperature
+			for(SimModel::SimController_SupplyWater_Temperature_iterator _simSystemElementIt=simSysData->SimController_SupplyWater_Temperature().begin(); _simSystemElementIt!=simSysData->SimController_SupplyWater_Temperature().end(); ++_simSystemElementIt)
+			{
+				if(_simSystemElementIt->AssignedToFlowElement().present())
+				{
+					for(::xml_schema::idrefs::iterator _simSystemElementSubIt=_simSystemElementIt->AssignedToFlowElement().get().begin(); _simSystemElementSubIt!=_simSystemElementIt->AssignedToFlowElement().get().end(); ++_simSystemElementSubIt)
+					{
+						if(_nodeIndexList.find(*_simSystemElementSubIt)!=_nodeIndexList.end())
+						{
+							if(_nodeIndexList.find(_simSystemElementIt->RefId())==_nodeIndexList.end())
+							{
+								SimHierarchyNode SimSystemElement_Node;
+								setCurrentObject(SimSystemElement_Node, *_simSystemElementIt);
+								addHierarchyNode(SimSystemElement_Node);
+								int _id_SimSystemElement = SimHierarchyNodeList.size() - 1;
+								// save current object index position: <ref_id, index_pos>
+								_nodeIndexList.insert(std::pair<std::string, int>(_simSystemElementIt->RefId(), _id_SimSystemElement));
+								// save index pair for parent-child relationships
+								_nodeIndexPairList.push_back(std::pair<int, int>(_nodeIndexList.find(*_simSystemElementSubIt)->second, _id_SimSystemElement));
+							}
+							else
+							{
+								// save index pair for parent-child relationships
+								_nodeIndexPairList.push_back(std::pair<int, int>(_nodeIndexList.find(*_simSystemElementSubIt)->second, _nodeIndexList.find(_simSystemElementIt->RefId())->second));
+							}
+						}
+					}
+				}
+			}
+
+			// save thermal zone id mapping info
+			std::map<std::string, std::string> _simThermalZoneMap;
+			// SimSpatialZone_ThermalZone_Default
+			for(SimModel::SimSpatialZone_ThermalZone_Default_iterator _simSystemElementIt=simSysData->SimSpatialZone_ThermalZone_Default().begin(); _simSystemElementIt!=simSysData->SimSpatialZone_ThermalZone_Default().end(); ++_simSystemElementIt)
+			{
+				if(_simSystemElementIt->SimModelName().present())
+				{
+					for(SimModel::SimSpatialZone_ThermalZone_Default_iterator _simGeomElementIt=simGeometryData->SimSpatialZone_ThermalZone_Default().begin(); _simGeomElementIt!=simGeometryData->SimSpatialZone_ThermalZone_Default().end(); ++_simGeomElementIt)
+					{
+						if(_simGeomElementIt->IfcName().present() && _simSystemElementIt->SimModelName().get()==_simGeomElementIt->IfcName().get())
+						{
+							_simThermalZoneMap.insert(std::pair<std::string, std::string>(_simSystemElementIt->RefId(), _simGeomElementIt->RefId()));
+						}
+					}
+				}
+			}
+
+			// SimList_EquipmentList_ZoneHvac
+			for(SimModel::SimList_EquipmentList_ZoneHvac_iterator _simSystemElementIt=simSysData->SimList_EquipmentList_ZoneHvac().begin(); _simSystemElementIt!=simSysData->SimList_EquipmentList_ZoneHvac().end(); ++_simSystemElementIt)
+			{
+				// link to radiator
+				if(_simSystemElementIt->SimList_ZoneEqmt_1_18_Name().present())
+				{
+					for(::xml_schema::idrefs::iterator _simSystemElementSubIt=_simSystemElementIt->SimList_ZoneEqmt_1_18_Name().get().begin(); _simSystemElementSubIt!=_simSystemElementIt->SimList_ZoneEqmt_1_18_Name().get().end(); ++_simSystemElementSubIt)
+					{
+						if(_nodeIndexList.find(*_simSystemElementSubIt)!=_nodeIndexList.end())
+						{
+							if(_nodeIndexList.find(_simSystemElementIt->RefId())==_nodeIndexList.end())
+							{
+								SimHierarchyNode SimSystemElement_Node;
+								setCurrentObject(SimSystemElement_Node, *_simSystemElementIt);
+								addHierarchyNode(SimSystemElement_Node);
+								int _id_SimSystemElement = SimHierarchyNodeList.size() - 1;
+								// save current object index position: <ref_id, index_pos>
+								_nodeIndexList.insert(std::pair<std::string, int>(_simSystemElementIt->RefId(), _id_SimSystemElement));
+								// save index pair for parent-child relationships
+								_nodeIndexPairList.push_back(std::pair<int, int>(_id_SimSystemElement, _nodeIndexList.find(*_simSystemElementSubIt)->second));
+							}
+							else
+							{
+								// save index pair for parent-child relationships
+								_nodeIndexPairList.push_back(std::pair<int, int>(_nodeIndexList.find(_simSystemElementIt->RefId())->second, _nodeIndexList.find(*_simSystemElementSubIt)->second));
+							}
+						}
+					}
+				}
+
+				// link to thermal zone
+				if(_simSystemElementIt->ParentGroups().present())
+				{
+					for(::xml_schema::idrefs::iterator _simThermalZoneIt=_simSystemElementIt->ParentGroups().get().begin(); _simThermalZoneIt!=_simSystemElementIt->ParentGroups().get().end(); ++_simThermalZoneIt)
+					{
+						if(_simThermalZoneMap.find(*_simThermalZoneIt)!=_simThermalZoneMap.end())
+						{
+							// retrieve the real thermal zone ref id defined in the geometry file
+							std::string _thermalZoneRefId = _simThermalZoneMap.find(*_simThermalZoneIt)->second;
+
+							if(_nodeIndexList.find(_thermalZoneRefId)!=_nodeIndexList.end())
+							{
+								// build parent child link
+								if(_nodeIndexList.find(_simSystemElementIt->RefId())==_nodeIndexList.end())
+								{
+									SimHierarchyNode SimSystemElement_Node;
+									setCurrentObject(SimSystemElement_Node, *_simSystemElementIt);
+									addHierarchyNode(SimSystemElement_Node);
+									int _id_SimSystemElement = SimHierarchyNodeList.size() - 1;
+									// save current object index position: <ref_id, index_pos>
+									_nodeIndexList.insert(std::pair<std::string, int>(_simSystemElementIt->RefId(), _id_SimSystemElement));
+									// save index pair for parent-child relationships
+									_nodeIndexPairList.push_back(std::pair<int, int>(_nodeIndexList.find(_thermalZoneRefId)->second, _id_SimSystemElement));
+								}
+								else
+								{
+									// save index pair for parent-child relationships
+									_nodeIndexPairList.push_back(std::pair<int, int>(_nodeIndexList.find(_thermalZoneRefId)->second, _nodeIndexList.find(_simSystemElementIt->RefId())->second));
+								}
+							}
+						}
+					}
+				}
+			}
+
 			// simconnection
 			for(SimModel::SimDistributionPort_HotWaterFlowPort_Water_Out_iterator _simPortElementIt=simSysData->SimDistributionPort_HotWaterFlowPort_Water_Out().begin(); _simPortElementIt!=simSysData->SimDistributionPort_HotWaterFlowPort_Water_Out().end(); ++_simPortElementIt)
 			{
@@ -1681,7 +1908,386 @@ void SimHierarchy::parser(::std::auto_ptr< ::schema::simxml::Model::SimModel >& 
 
 								// parse SimSystem
 								//parseSimSystem(simSysData, _id_SimBuilding, _nodeIndexPairList, _nodeIndexList);
-								parseSimSystemTmp(simSysData, _id_SimBuilding, _nodeIndexPairList, _nodeIndexList);
+								parseSimSystemTmp(simSysData, simGeometryData, _id_SimBuilding, _nodeIndexPairList, _nodeIndexList);
+
+								/*SimHierarchyNode SimSystem_Node;
+								setCurrentObject(SimSystem_Node, simSysData->SimSystem_HvacHotWater_FullSystem().front());
+								addHierarchyNode(SimSystem_Node);
+								int _id_SimSystem = SimHierarchyNodeList.size() - 1;
+
+								// save index pair for parent-child relationships
+								_nodeIndexPairList.push_back(std::pair<int, int>(_id_SimBuilding, _id_SimSystem));*/
+								
+								/*for(SimModel::SimSystem_HvacHotWater_FullSystem_iterator _simSystemIt=simSysData->SimSystem_HvacHotWater_FullSystem().begin(); _simSystemIt!=simSysData->SimSystem_HvacHotWater_FullSystem().end(); ++_simSystemIt)
+								{
+								}*/
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	/**/
+
+	// build hierarchy search map <ref_id, node>
+	for(unsigned int i=0; i<SimHierarchyNodeList.size(); ++i)
+	{
+		SimHierarchyNode_IdMapList.insert(
+			std::pair<std::string, SimHierarchyNode*>(SimHierarchyNodeList.at(i)._SimRootObject->RefId(), &SimHierarchyNodeList.at(i))
+		);
+	}
+
+	// add parent-child relationship
+	for(unsigned int _i=0; _i<_nodeIndexPairList.size(); ++_i)
+	{
+		addNodesRelationship(SimHierarchyNodeList.at(_nodeIndexPairList[_i].first), SimHierarchyNodeList.at(_nodeIndexPairList[_i].second));
+	}
+	
+	//addNodesRelationship(SimHierarchyNodeList.at(_id_SimProject), SimHierarchyNodeList.at(_id_SimSite));
+}
+
+// new update for version 2.2
+void SimHierarchy::parser2_2(::std::auto_ptr< ::schema::simxml::Model::SimModel >& simGeometryData, ::std::auto_ptr< ::schema::simxml::Model::SimModel >& simSysData, std::string _geoName, std::string _sysName)
+{
+	// load specified geometry class objects
+	loadSimGeomClassObj(_geoName);
+
+	//return;
+	// parsing SimXML hierarchy
+	// save <parent_node_index, child_node_index>
+	std::vector<std::pair<int, int> > _nodeIndexPairList;
+	// save object index position: <node_refId, node_index>
+	std::map<std::string, int> _nodeIndexList;
+	//
+	std::map<std::string, SimModel::SimGeomVector_Vector_Direction_iterator> _simGeomVectorMap;
+	for(SimModel::SimGeomVector_Vector_Direction_iterator _simGeomVecIt=simGeometryData->SimGeomVector_Vector_Direction().begin(); _simGeomVecIt!=simGeometryData->SimGeomVector_Vector_Direction().end(); ++_simGeomVecIt)
+	{
+		_simGeomVectorMap.insert(std::pair<std::string, SimModel::SimGeomVector_Vector_Direction_iterator>(_simGeomVecIt->RefId(), _simGeomVecIt));
+	}
+
+	// parse SimProject
+	if(simGeometryData->SimProject_Project_DesignAlternative().size())
+	{
+		SimHierarchyNode SimProject_Node;
+		setCurrentObject(SimProject_Node, simGeometryData->SimProject_Project_DesignAlternative().front());
+		addHierarchyNode(SimProject_Node);
+		int _id_SimProject = SimHierarchyNodeList.size() - 1;
+
+		// parse coordinates
+		if(simGeometryData->SimProject_Project_DesignAlternative().front()._3DModelRepresentationContexts().present())
+		{
+			for(::xml_schema::idrefs::iterator _simProjectSubIt=simGeometryData->SimProject_Project_DesignAlternative().front()._3DModelRepresentationContexts().get().begin(); _simProjectSubIt!=simGeometryData->SimProject_Project_DesignAlternative().front()._3DModelRepresentationContexts().get().end(); ++_simProjectSubIt)
+			{
+				for(SimModel::SimModelRepresentationContext_GeometricRepresentationContext_Default_iterator _simGeomRepIt=simGeometryData->SimModelRepresentationContext_GeometricRepresentationContext_Default().begin(); _simGeomRepIt!=simGeometryData->SimModelRepresentationContext_GeometricRepresentationContext_Default().end(); ++_simGeomRepIt)
+				{
+					if(_simGeomRepIt->RefId()==*_simProjectSubIt)
+					{
+						// check node index list: avoid recreating the same node
+						if(_nodeIndexList.find(_simGeomRepIt->RefId())==_nodeIndexList.end())
+						{
+							SimHierarchyNode SimGeometricRepresentationContext_Node;
+							setCurrentObject(SimGeometricRepresentationContext_Node, *_simGeomRepIt);
+							addHierarchyNode(SimGeometricRepresentationContext_Node);
+							int _id_SimGeometricRepresentationContext_Node = SimHierarchyNodeList.size() - 1;
+							// save current object index position: <ref_id, index_pos>
+							_nodeIndexList.insert(std::pair<std::string, int>(_simGeomRepIt->RefId(), _id_SimGeometricRepresentationContext_Node));
+						
+							// save index pair for parent-child relationships
+							_nodeIndexPairList.push_back(std::pair<int, int>(_id_SimProject, _id_SimGeometricRepresentationContext_Node));
+
+							// parse WorldCoordinateSystem
+							if(_simGeomRepIt->WorldCoordinateSystem().present())
+							{
+								for(SimModel::SimPlacement_Axis2Placement3D_Default_iterator _simPlace3DIt=simGeometryData->SimPlacement_Axis2Placement3D_Default().begin(); _simPlace3DIt!=simGeometryData->SimPlacement_Axis2Placement3D_Default().end(); ++_simPlace3DIt)
+								{
+									if(_simPlace3DIt->RefId()==_simGeomRepIt->WorldCoordinateSystem().get())
+									{
+										// check node index list: avoid recreating the same node
+										if(_nodeIndexList.find(_simPlace3DIt->RefId())==_nodeIndexList.end())
+										{
+											SimHierarchyNode SimAxis2Placement3D_Node;
+											setCurrentObject(SimAxis2Placement3D_Node, *_simPlace3DIt);
+											addHierarchyNode(SimAxis2Placement3D_Node);
+											int _id_SimAxis2Placement3D_Node = SimHierarchyNodeList.size() - 1;
+											// save current object index position: <ref_id, index_pos>
+											_nodeIndexList.insert(std::pair<std::string, int>(_simPlace3DIt->RefId(), _id_SimAxis2Placement3D_Node));
+						
+											// save index pair for parent-child relationships
+											_nodeIndexPairList.push_back(std::pair<int, int>(_nodeIndexList.find(_simGeomRepIt->RefId())->second, _id_SimAxis2Placement3D_Node));
+
+											// Axis
+											if(_simPlace3DIt->Axis().present() && _simGeomVectorMap.find(_simPlace3DIt->Axis().get())!=_simGeomVectorMap.end())
+											{
+												// check node index list: avoid recreating the same node
+												if(_nodeIndexList.find(_simPlace3DIt->Axis().get())==_nodeIndexList.end())
+												{
+													SimHierarchyNode SimGeomVector_Node;
+													setCurrentObject(SimGeomVector_Node, *_simGeomVectorMap.find(_simPlace3DIt->Axis().get())->second);
+													addHierarchyNode(SimGeomVector_Node);
+													int _id_SimGeomVector_Node = SimHierarchyNodeList.size() - 1;
+													// save current object index position: <ref_id, index_pos>
+													_nodeIndexList.insert(std::pair<std::string, int>(_simPlace3DIt->Axis().get(), _id_SimGeomVector_Node));
+						
+													// save index pair for parent-child relationships
+													_nodeIndexPairList.push_back(std::pair<int, int>(_nodeIndexList.find(_simPlace3DIt->RefId())->second, _id_SimGeomVector_Node));
+												}
+												else
+												{
+													// save index pair for parent-child relationships
+													_nodeIndexPairList.push_back(std::pair<int, int>(_nodeIndexList.find(_simPlace3DIt->RefId())->second, _nodeIndexList.find(_simPlace3DIt->Axis().get())->second));
+												}
+											}
+
+											// RefDirection
+											if(_simPlace3DIt->RefDirection().present() && _simGeomVectorMap.find(_simPlace3DIt->RefDirection().get())!=_simGeomVectorMap.end())
+											{
+												// check node index list: avoid recreating the same node
+												if(_nodeIndexList.find(_simPlace3DIt->RefDirection().get())==_nodeIndexList.end())
+												{
+													SimHierarchyNode SimGeomVector_Node;
+													setCurrentObject(SimGeomVector_Node, *_simGeomVectorMap.find(_simPlace3DIt->RefDirection().get())->second);
+													addHierarchyNode(SimGeomVector_Node);
+													int _id_SimGeomVector_Node = SimHierarchyNodeList.size() - 1;
+													// save current object index position: <ref_id, index_pos>
+													_nodeIndexList.insert(std::pair<std::string, int>(_simPlace3DIt->RefDirection().get(), _id_SimGeomVector_Node));
+						
+													// save index pair for parent-child relationships
+													_nodeIndexPairList.push_back(std::pair<int, int>(_nodeIndexList.find(_simPlace3DIt->RefId())->second, _id_SimGeomVector_Node));
+												}
+												else
+												{
+													// save index pair for parent-child relationships
+													_nodeIndexPairList.push_back(std::pair<int, int>(_nodeIndexList.find(_simPlace3DIt->RefId())->second, _nodeIndexList.find(_simPlace3DIt->RefDirection().get())->second));
+												}
+											}
+										}
+										else
+										{
+											// save index pair for parent-child relationships
+											_nodeIndexPairList.push_back(std::pair<int, int>(_nodeIndexList.find(_simGeomRepIt->RefId())->second, _nodeIndexList.find(_simPlace3DIt->RefId())->second));
+										}
+
+										break;
+									}
+								}
+							}
+
+							// TrueNorth
+							if(_simGeomRepIt->TrueNorth().present() && _simGeomVectorMap.find(_simGeomRepIt->TrueNorth().get())!=_simGeomVectorMap.end())
+							{
+								// check node index list: avoid recreating the same node
+								if(_nodeIndexList.find(_simGeomRepIt->TrueNorth().get())==_nodeIndexList.end())
+								{
+									SimHierarchyNode SimGeomVector_Node;
+									setCurrentObject(SimGeomVector_Node, *_simGeomVectorMap.find(_simGeomRepIt->TrueNorth().get())->second);
+									addHierarchyNode(SimGeomVector_Node);
+									int _id_SimGeomVector_Node = SimHierarchyNodeList.size() - 1;
+									// save current object index position: <ref_id, index_pos>
+									_nodeIndexList.insert(std::pair<std::string, int>(_simGeomRepIt->TrueNorth().get(), _id_SimGeomVector_Node));
+						
+									// save index pair for parent-child relationships
+									_nodeIndexPairList.push_back(std::pair<int, int>(_nodeIndexList.find(_simGeomRepIt->RefId())->second, _id_SimGeomVector_Node));
+								}
+								else
+								{
+									// save index pair for parent-child relationships
+									_nodeIndexPairList.push_back(std::pair<int, int>(_nodeIndexList.find(_simGeomRepIt->RefId())->second, _nodeIndexList.find(_simGeomRepIt->TrueNorth().get())->second));
+								}
+							}
+						}
+						else
+						{
+							// save index pair for parent-child relationships
+							_nodeIndexPairList.push_back(std::pair<int, int>(_id_SimProject, _nodeIndexList.find(_simGeomRepIt->RefId())->second));
+						}
+
+						break;
+					}
+				}
+			}
+		}
+
+		// parse SimSite
+		for(SimModel::SimSite_BuildingSite_Default_iterator _simSiteIt=simGeometryData->SimSite_BuildingSite_Default().begin(); _simSiteIt!=simGeometryData->SimSite_BuildingSite_Default().end(); ++_simSiteIt)
+		{
+			if(_simSiteIt->SiteInSpatialContainer().present())
+			{	
+				// check reference id
+				if(_simSiteIt->SiteInSpatialContainer().get()==simGeometryData->SimProject_Project_DesignAlternative().front().RefId())
+				{
+					SimHierarchyNode SimSite_Node;
+					setCurrentObject(SimSite_Node, *_simSiteIt);
+					addHierarchyNode(SimSite_Node);
+					int _id_SimSite = SimHierarchyNodeList.size() - 1;
+
+					// save index pair for parent-child relationships
+					_nodeIndexPairList.push_back(std::pair<int, int>(_id_SimProject, _id_SimSite));
+
+					// parse SimBuilding
+					for(SimModel::SimBuilding_Building_Default_iterator _simBuildingIt=simGeometryData->SimBuilding_Building_Default().begin(); _simBuildingIt!=simGeometryData->SimBuilding_Building_Default().end(); ++_simBuildingIt)
+					{
+						if(_simBuildingIt->BuildingInSpatialContainer().present())
+						{
+							if(_simBuildingIt->BuildingInSpatialContainer().get()==_simSiteIt->RefId())
+							{
+								SimHierarchyNode SimBuilding_Node;
+								setCurrentObject(SimBuilding_Node, *_simBuildingIt);
+								addHierarchyNode(SimBuilding_Node);
+								int _id_SimBuilding = SimHierarchyNodeList.size() - 1;
+
+								// save index pair for parent-child relationships
+								_nodeIndexPairList.push_back(std::pair<int, int>(_id_SimSite, _id_SimBuilding));								
+								// parse building story
+								for(SimModel::SimBuildingStory_BuildingStory_Default_iterator _simBuildingStoryIt=simGeometryData->SimBuildingStory_BuildingStory_Default().begin(); _simBuildingStoryIt!=simGeometryData->SimBuildingStory_BuildingStory_Default().end(); ++_simBuildingStoryIt)
+								{
+									if(_simBuildingStoryIt->BldgStoryInSpatialContainer().present() && _simBuildingStoryIt->BldgStoryInSpatialContainer().get()==_simBuildingIt->RefId())
+									{
+										SimHierarchyNode SimBuildingStory_Node;
+										setCurrentObject(SimBuildingStory_Node, *_simBuildingStoryIt);
+										addHierarchyNode(SimBuildingStory_Node);
+										int _id_SimBuildingStory = SimHierarchyNodeList.size() - 1;
+										// save current object index position: <ref_id, index_pos>
+										_nodeIndexList.insert(std::pair<std::string, int>(_simBuildingStoryIt->RefId(), _id_SimBuildingStory));
+										// save index pair for parent-child relationships
+										_nodeIndexPairList.push_back(std::pair<int, int>(_id_SimBuilding, _id_SimBuildingStory));
+									}
+								}
+
+								// parse SimGroup (ZoneGroup)
+								for(SimModel::SimGroup_SpatialZoneGroup_ZoneGroup_iterator _simGroupZoneIt=simGeometryData->SimGroup_SpatialZoneGroup_ZoneGroup().begin(); _simGroupZoneIt!=simGeometryData->SimGroup_SpatialZoneGroup_ZoneGroup().end(); ++_simGroupZoneIt)
+								{
+									if(_simGroupZoneIt->ContainingBuildings().present())
+									{
+										// stop checking when finding the 1st id instance meet the requriement: only one building each SimXML file
+										for(::xml_schema::idrefs::iterator _simGroupZoneSubIt=_simGroupZoneIt->ContainingBuildings().get().begin(); _simGroupZoneSubIt!=_simGroupZoneIt->ContainingBuildings().get().end(); ++_simGroupZoneSubIt)
+										{
+											if(*_simGroupZoneSubIt==_simBuildingIt->RefId())
+											{
+												// check node index list: avoid recreating the same node
+												if(_nodeIndexList.find(_simGroupZoneIt->RefId())==_nodeIndexList.end())
+												{
+													SimHierarchyNode SimGroup_ZoneGroup_Node;
+													setCurrentObject(SimGroup_ZoneGroup_Node, *_simGroupZoneIt);
+													addHierarchyNode(SimGroup_ZoneGroup_Node);
+													int _id_SimGroup_ZoneGroup = SimHierarchyNodeList.size() - 1;
+													// save current object index position: <ref_id, index_pos>
+													_nodeIndexList.insert(std::pair<std::string, int>(_simGroupZoneIt->RefId(), _id_SimGroup_ZoneGroup));
+
+													// save index pair for parent-child relationships
+													_nodeIndexPairList.push_back(std::pair<int, int>(_id_SimBuilding, _id_SimGroup_ZoneGroup));
+												}
+												else
+												{
+													// save index pair for parent-child relationships
+													_nodeIndexPairList.push_back(std::pair<int, int>(_id_SimBuilding, _nodeIndexList.find(_simGroupZoneIt->RefId())->second));
+												}
+												
+												break;
+											}
+										}
+									}
+								}
+
+								// parse SimGroup (ZoneHVAC)
+								for(SimModel::SimGroup_SpatialZoneGroup_ZoneHvacGroup_iterator _simGroupZoneHvacIt=simGeometryData->SimGroup_SpatialZoneGroup_ZoneHvacGroup().begin(); _simGroupZoneHvacIt!=simGeometryData->SimGroup_SpatialZoneGroup_ZoneHvacGroup().end(); ++_simGroupZoneHvacIt)
+								{
+									// select non-template objects
+									if(!_simGroupZoneHvacIt->IsTemplateObject().present() || !_simGroupZoneHvacIt->IsTemplateObject().get())
+									{
+										if(_simGroupZoneHvacIt->ContainingBuildings().present())
+										{
+											for(::xml_schema::idrefs::iterator _simGroupZoneHvacSubIt=_simGroupZoneHvacIt->ContainingBuildings().get().begin(); _simGroupZoneHvacSubIt!=_simGroupZoneHvacIt->ContainingBuildings().get().end(); ++_simGroupZoneHvacSubIt)
+											{
+												if(*_simGroupZoneHvacSubIt==_simBuildingIt->RefId())
+												{
+													// check node index list: avoid recreating the same node
+													if(_nodeIndexList.find(_simGroupZoneHvacIt->RefId())==_nodeIndexList.end())
+													{
+														SimHierarchyNode SimGroup_ZoneHvacGroup_Node;
+														setCurrentObject(SimGroup_ZoneHvacGroup_Node, *_simGroupZoneHvacIt);
+														addHierarchyNode(SimGroup_ZoneHvacGroup_Node);
+														int _id_SimGroup_ZoneHvacGroup = SimHierarchyNodeList.size() - 1;
+														// save current object index position: <ref_id, index_pos>
+														_nodeIndexList.insert(std::pair<std::string, int>(_simGroupZoneHvacIt->RefId(), _id_SimGroup_ZoneHvacGroup));
+
+														// save index pair for parent-child relationships
+														_nodeIndexPairList.push_back(std::pair<int, int>(_id_SimBuilding, _id_SimGroup_ZoneHvacGroup));
+													}
+													else
+													{
+														// save index pair for parent-child relationships
+														_nodeIndexPairList.push_back(std::pair<int, int>(_id_SimBuilding, _nodeIndexList.find(_simGroupZoneHvacIt->RefId())->second));
+													}
+
+													break;
+												}
+											}
+										}
+									}
+								}
+
+								// parse SimZone (ThermalZone)
+								// from version 2.2, SimSpatialZone_ThermalZone_Default class was moved into HVAC file
+								for(SimModel::SimSpatialZone_ThermalZone_Default_iterator _simThermalZoneIt=simGeometryData->SimSpatialZone_ThermalZone_Default().begin(); _simThermalZoneIt!=simGeometryData->SimSpatialZone_ThermalZone_Default().end(); ++_simThermalZoneIt)
+								{
+									// assigned to SimBuilding
+									if(_simThermalZoneIt->ContainingBuilding().present() && _simThermalZoneIt->ContainingBuilding().get()==_simBuildingIt->RefId())
+									{
+										SimHierarchyNode SimThermalZone_Node;
+										setCurrentObject(SimThermalZone_Node, *_simThermalZoneIt);
+										addHierarchyNode(SimThermalZone_Node);
+										int _id_SimThermalZone = SimHierarchyNodeList.size() - 1;
+										// save current object index position: <ref_id, index_pos>
+										_nodeIndexList.insert(std::pair<std::string, int>(_simThermalZoneIt->RefId(), _id_SimThermalZone));
+
+										// save index pair for parent-child relationships
+										_nodeIndexPairList.push_back(std::pair<int, int>(_id_SimBuilding, _id_SimThermalZone));
+
+										/********error*********/
+										// parse SimSpace tree
+										parseSimSpaceTree(simGeometryData, _nodeIndexPairList, _nodeIndexList, _simThermalZoneIt);
+									}
+
+									// assigned to SimGroup: ZoneGroup + ZoneHVAC
+									if(_simThermalZoneIt->ParentGroups().present())
+									{
+										for(::xml_schema::idrefs::iterator _simThermalZoneSubIt=_simThermalZoneIt->ParentGroups().get().begin(); _simThermalZoneSubIt!=_simThermalZoneIt->ParentGroups().get().end(); ++_simThermalZoneSubIt)
+										{
+											if(_nodeIndexList.find(*_simThermalZoneSubIt)!=_nodeIndexList.end())
+											{
+												if(_nodeIndexList.find(_simThermalZoneIt->RefId())==_nodeIndexList.end())
+												{
+													SimHierarchyNode SimThermalZone_Node;
+													setCurrentObject(SimThermalZone_Node, *_simThermalZoneIt);
+													addHierarchyNode(SimThermalZone_Node);
+													int _id_SimThermalZone = SimHierarchyNodeList.size() - 1;
+													// save current object index position: <ref_id, index_pos>
+													_nodeIndexList.insert(std::pair<std::string, int>(_simThermalZoneIt->RefId(), _id_SimThermalZone));
+
+													// save index pair for parent-child relationships
+													_nodeIndexPairList.push_back(std::pair<int, int>(_nodeIndexList.find(*_simThermalZoneSubIt)->second, _id_SimThermalZone));
+
+													/********error*********/
+													// parse SimSpace tree
+													parseSimSpaceTree(simGeometryData, _nodeIndexPairList, _nodeIndexList, _simThermalZoneIt);
+												}
+												else
+												{
+													// save index pair for parent-child relationships
+													_nodeIndexPairList.push_back(std::pair<int, int>(_nodeIndexList.find(*_simThermalZoneSubIt)->second, _nodeIndexList.find(_simThermalZoneIt->RefId())->second));
+												}	
+											}
+										}
+									}
+								}
+
+								// parse SimSpatialZone_ThermalZone_AboveCeilingVoid
+
+								// parse SimSystem
+								//parseSimSystem(simSysData, _id_SimBuilding, _nodeIndexPairList, _nodeIndexList);
+								parseSimSystemTmp(simSysData, simGeometryData, _id_SimBuilding, _nodeIndexPairList, _nodeIndexList);
 
 								/*SimHierarchyNode SimSystem_Node;
 								setCurrentObject(SimSystem_Node, simSysData->SimSystem_HvacHotWater_FullSystem().front());

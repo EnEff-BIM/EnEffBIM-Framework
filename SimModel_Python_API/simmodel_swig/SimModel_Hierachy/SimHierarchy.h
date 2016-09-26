@@ -123,7 +123,7 @@ private:
 	// parse SimSystem
 	void parseSimSystem(::std::auto_ptr< ::schema::simxml::Model::SimModel >& simSysData, int _id_SimBuilding, std::vector<std::pair<int, int> >& _nodeIndexPairList, std::map<std::string, int>& _nodeIndexList);
 	// for new feature testing
-	void parseSimSystemTmp(::std::auto_ptr< ::schema::simxml::Model::SimModel >& simSysData, int _id_SimBuilding, std::vector<std::pair<int, int> >& _nodeIndexPairList, std::map<std::string, int>& _nodeIndexList);
+	void parseSimSystemTmp(::std::auto_ptr< ::schema::simxml::Model::SimModel >& simSysData, ::std::auto_ptr< ::schema::simxml::Model::SimModel >& simGeometryData, int _id_SimBuilding, std::vector<std::pair<int, int> >& _nodeIndexPairList, std::map<std::string, int>& _nodeIndexList);
 	// parse time series
 	void parseTimeSeries(::std::auto_ptr< ::schema::simxml::Model::SimModel >& simSysData, int _id_SimSystemElement, std::string _timeSeriesId, std::vector<std::pair<int, int> >& _nodeIndexPairList, std::map<std::string, int>& _nodeIndexList);
 	// parse year time series
@@ -135,6 +135,8 @@ private:
 
 	// parse SimSpace
 	void parseSimSpaceTree(::std::auto_ptr< ::schema::simxml::Model::SimModel >& simGeometryData, std::vector<std::pair<int, int> >& _nodeIndexPairList, std::map<std::string, int>& _nodeIndexList, SimModel::SimSpatialZone_ThermalZone_Default_iterator& _simThermalZoneIt);
+	// new update for version 2.2
+	void parseSimSpaceTree2_2(::std::auto_ptr< ::schema::simxml::Model::SimModel >& simGeometryData, std::vector<std::pair<int, int> >& _nodeIndexPairList, std::map<std::string, int>& _nodeIndexList, SimModel::SimSpatialZone_ThermalZone_Default_iterator& _simThermalZoneIt);
 	void parseMaterialLayer(SimRoot* _simMaterialLayerObj, std::vector<std::pair<int, int> >& _nodeIndexPairList, std::map<std::string, int>& _nodeIndexList, int _id_MaterialLayerSet);
 
 	// Python callback
@@ -177,6 +179,8 @@ public:
 	// hierarchy parser
 	void parser(::std::auto_ptr< ::schema::simxml::Model::SimModel >& SimModel_Data);
 	void parser(::std::auto_ptr< ::schema::simxml::Model::SimModel >& simGeometryData, ::std::auto_ptr< ::schema::simxml::Model::SimModel >& simSysData, std::string _geoName, std::string _sysName);
+	// new update for version 2.2
+	void parser2_2(::std::auto_ptr< ::schema::simxml::Model::SimModel >& simGeometryData, ::std::auto_ptr< ::schema::simxml::Model::SimModel >& simSysData, std::string _geoName, std::string _sysName);
 	// set Python callback function
 	void setCallBack(SimPyCallBack& callback);
 };

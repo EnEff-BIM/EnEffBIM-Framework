@@ -30053,7 +30053,7 @@ namespace schema
 
         void
         SimFlowController_Valve_NonReturnValve (const SimFlowController_Valve_NonReturnValve_sequence& s);
-
+		*/
         // SimFlowController_Valve_TemperingValve
         //
         typedef ::schema::simxml::MepModel::SimFlowController_Valve_TemperingValve SimFlowController_Valve_TemperingValve_type;
@@ -30070,7 +30070,7 @@ namespace schema
 
         void
         SimFlowController_Valve_TemperingValve (const SimFlowController_Valve_TemperingValve_sequence& s);
-
+		/*
         // SimFlowEnergyTransfer_Coil_UserDefined
         //
         typedef ::schema::simxml::MepModel::SimFlowEnergyTransfer_Coil_UserDefined SimFlowEnergyTransfer_Coil_UserDefined_type;
@@ -47393,7 +47393,7 @@ namespace schema
 
         void
         SimSlab_Floor_FloorOverEarthDetailed (const SimSlab_Floor_FloorOverEarthDetailed_sequence& s);
-
+		*/
         // SimSlab_Floor_InterzoneFloor
         //
         typedef ::schema::simxml::BuildingModel::SimSlab_Floor_InterzoneFloor SimSlab_Floor_InterzoneFloor_type;
@@ -47410,7 +47410,7 @@ namespace schema
 
         void
         SimSlab_Floor_InterzoneFloor (const SimSlab_Floor_InterzoneFloor_sequence& s);
-
+		/*
         // SimSlab_Floor_InterzoneFloorDetailed
         //
         typedef ::schema::simxml::BuildingModel::SimSlab_Floor_InterzoneFloorDetailed SimSlab_Floor_InterzoneFloorDetailed_type;
@@ -52306,7 +52306,7 @@ namespace schema
 
         void
         SimWall_Wall_ExteriorBelowGradeStandard (const SimWall_Wall_ExteriorBelowGradeStandard_sequence& s);
-
+		*/
         // SimWall_Wall_Interior
         //
         typedef ::schema::simxml::BuildingModel::SimWall_Wall_Interior SimWall_Wall_Interior_type;
@@ -52323,7 +52323,7 @@ namespace schema
 
         void
         SimWall_Wall_Interior (const SimWall_Wall_Interior_sequence& s);
-
+		/*
         // SimWall_Wall_InteriorDetailed
         //
         typedef ::schema::simxml::BuildingModel::SimWall_Wall_InteriorDetailed SimWall_Wall_InteriorDetailed_type;

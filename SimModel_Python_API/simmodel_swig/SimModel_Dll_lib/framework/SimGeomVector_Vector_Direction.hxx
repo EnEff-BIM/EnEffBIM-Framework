@@ -274,7 +274,7 @@ namespace schema
         // DirectionRatios
         //
         typedef ::schema::simxml::SimModelCore::doubleList DirectionRatios_type;
-        typedef ::xsd::cxx::tree::optional< DirectionRatios_type > DirectionRatios_optional;
+        typedef ::xsd::cxx::tree::optional< DirectionRatios_type, false > DirectionRatios_optional;
         typedef ::xsd::cxx::tree::traits< DirectionRatios_type, char > DirectionRatios_traits;
 
         const DirectionRatios_optional&
