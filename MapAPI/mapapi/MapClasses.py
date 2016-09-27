@@ -593,7 +593,7 @@ class MapComponent(MoObject):
                         "SimFlowFitting_Default_Default" : Pipe,
                         "SimFlowEnergyTransferStorage_HotWaterTank_Expansion" :
                             ExpansionVessel,
-                        "SimFlowController_Valve_Default" : SimpleValve,
+                        "SimFlowController_Valve_Default" : Pipe,
                         "SimFlowController_Valve_TemperingValve" : SimpleValve}
 
 
@@ -759,10 +759,19 @@ class MapComponent(MoObject):
                                        value=map_prop_list[b].getPropertyValue())
             elif map_prop_list[b].getValueType() =="Matrix":
                 matrix_data = map_prop_list[b].getPropertyValue()
-                self.add_parameter(name=map_prop_list[b].getPropertyName(),
+                if map_prop_list[b].getRecordInstance() != "":
+                    for rec in self.records:
+                        if map_prop_list[b].getRecordInstance() == rec.name:
+                            rec.add_parameter(name=map_prop_list[b].getPropertyName(),
                                    value=[])
-                for row in range(matrix_data.size()):
-                    self.parameters[-1].value.append(matrix_data[row])
+                        for row in range(matrix_data.size()):
+                            rec.parameters[-1].value.append(matrix_data[row])
+                else:
+                    self.add_parameter(name=map_prop_list[b].getPropertyName(),
+                                   value=[])
+                    for row in range(matrix_data.size()):
+                        self.parameters[-1].value.append(matrix_data[row])
+
 
 
 class MapConnection(object):
@@ -1192,7 +1201,6 @@ class MapMaterial(object):
         self.parent = parent
         self.hierarchy_node = hierarchy_node
         self.sim_instance = self.hierarchy_node.getSimModelObject()
-        print(self.sim_instance)
         self.name = self.sim_instance.SimModelName().getValue()
         """
         self.density = self.sim_instance.SimMaterial_Density().getValue()
