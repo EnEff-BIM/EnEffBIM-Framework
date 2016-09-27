@@ -628,7 +628,8 @@ class MapComponent(MoObject):
                                 for h in range(inlet_parent.size()):
                                     if inlet_parent[h].ClassType() != \
                                             "SimConnection_HotWaterFlow_Default":
-                                        self.connected_out.append(inlet_parent[h])
+                                        self.connected_in.append(
+                                            inlet_parent[h])
 
             elif comp_child[i].ClassType() == \
                 "SimDistributionPort_HotWaterFlowPort_Water_In":
@@ -642,7 +643,7 @@ class MapComponent(MoObject):
                                 outlet_parent = connection_parent[k].getParentList()
                                 for h in range(outlet_parent.size()):
                                     if outlet_parent[h].ClassType != "SimConnection_HotWaterFlow_Default":
-                                        self.connected_in.append(outlet_parent[h])
+                                        self.connected_out.append(outlet_parent[h])
 
             elif comp_child[i].ClassType() == \
                     "SimDistributionPort_HotWaterFlowPort_Water_InOrOut" and \
