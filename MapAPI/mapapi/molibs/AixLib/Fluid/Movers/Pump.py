@@ -22,9 +22,9 @@ class Pump(MapHierarchy.MapComponent):
     def mapp_me(self):
         self.target_name += "pump"
         map_sim = self.hierarchy_node.getMappedComponents()
-        self.target_location = map_sim[0].getTargetLocation()
-        prop_list = map_sim[0].getMappedPropertyList()
-        self.arrange_parameters(prop_list)
+#        self.target_location = map_sim[0].getTargetLocation()
+#        prop_list = map_sim[0].getMappedPropertyList()
+#        self.arrange_parameters(prop_list)
         self.IsNight = self.add_connector("IsNight", "Boolean")
 
         #self.add_night_set_back()

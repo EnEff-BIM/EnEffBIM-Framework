@@ -52,7 +52,7 @@ import SimMaterial_GlazingMaterial_Glazing
 import SimModelRepresentationContext_GeometricRepresentationContext_Default
 import SimPlacement_Axis2Placement3D_Default
 import SimGeomVector_Vector_Direction
-import SimSystem_HvacHotWater_FullSystem
+from SimSystem_HvacHotWater_FullSystem import SimSystem_HvacHotWater_FullSystem
 import SimSystem_HvacHotWater_Control
 import SimController_SupplyWater_Temperature
 import SimSensor_TemperatureSensor_DryBulb
@@ -135,7 +135,7 @@ class MoObject(object):
             self.sim_instance = self.hierarchy_node.getSimModelObject()
         else:
             self.sim_instance = None
-
+        print(self.sim_instance.RefId())
         if self.sim_instance is not None:
             self.target_name = "Random" + self.sim_instance.RefId()[-5:]
             #self.target_name = self.sim_instance.SimModelName().getValue(
@@ -401,11 +401,12 @@ class MapBuilding(MoObject):
                     for c in self.project.hvac_components:
 
                         if c.sim_ref_id == b.getSimModelObject().RefId():
-                            if type(a).__name__ == "ExpansionVessel" or type(
-                                    c).__name__ == "ExpansionVessel":
-                                a.add_connection(a.port_a, c.port_a)
-                            else:
-                                a.add_connection(a.port_b, c.port_a)
+                            a.add_connection(a.port_b, c.port_a)
+            else:
+                for b in a.connected_in:
+                    for c in self.project.hvac_components:
+                        if c.sim_ref_id == b.getSimModelObject().RefId():
+                            a.add_connection(a.port_a, c.port_a)
 
     def instantiate_thermal_zones(self):
         '''Instantiates for each SimSpatialZone_ThermalZone_Default a
@@ -435,18 +436,25 @@ class MapBuilding(MoObject):
         bldg_child = self.hierarchy_node.getChildList()
         for a in range(bldg_child.size()):
             if isinstance(bldg_child[a].getSimModelObject(),
-                          SimSystem_HvacHotWater_Supply):
-                supply_child = bldg_child[a].getChildList()
-                for e in range(supply_child.size()):
-                    comp_help[supply_child[e].getSimModelObject().RefId()] = \
-                        supply_child[e]
+                          SimSystem_HvacHotWater_FullSystem):
+                full_system_child = bldg_child[a].getChildList()
+                for b in range (full_system_child.size()):
+                    if isinstance(full_system_child[b].getSimModelObject(),
+                                  SimSystem_HvacHotWater_Supply):
+                        supply_child = full_system_child[b].getChildList()
+                        for e in range(supply_child.size()):
+                            comp_help[supply_child[e].getSimModelObject().RefId()] = supply_child[e]
 
         for a in range(bldg_child.size()):
             if isinstance(bldg_child[a].getSimModelObject(),
-                             SimSystem_HvacHotWater_Demand):
-                demand_child = bldg_child[a].getChildList()
-                for e in range(demand_child.size()):
-                    comp_help[demand_child[e].getSimModelObject().RefId()] = demand_child[e]
+                          SimSystem_HvacHotWater_FullSystem):
+                full_system_child = bldg_child[a].getChildList()
+                for b in range(full_system_child.size()):
+                    if isinstance(full_system_child[b].getSimModelObject(),
+                                     SimSystem_HvacHotWater_Demand):
+                        demand_child = full_system_child[b].getChildList()
+                        for f in range(demand_child.size()):
+                            comp_help[demand_child[f].getSimModelObject().RefId()] = demand_child[f]
         #print(comp_help)
         for key, value in comp_help.items():
             component = MapComponent(self.project, value)
@@ -644,13 +652,12 @@ class MapComponent(MoObject):
                                 inlet_parent = connection_parent[k].getParentList()
                                 for h in range(inlet_parent.size()):
                                     if inlet_parent[h].ClassType != \
-                                            "SimConnection_HotWaterFlow_Default":
+                                            "SimConnection_HotWaterFlow_Default" and comp_child.size() > 1:
                                         self.connected_in.append(inlet_parent[h])
                                         for x in range(comp_child.size()):
-                                            print(comp_child[i].getSimModelObject().RefId(),comp_child[x].getSimModelObject().RefId())
                                             if comp_child[x].ClassType() ==\
                                                     "SimDistributionPort_HotWaterFlowPort_Water_InOrOut" and \
-                                                            comp_child[i].getSimModelObject().RefId() != comp_child[x].getSimModelObject().RefId():
+                                                            comp_child[i].getSimModelObject().RefId() != comp_child[x].getSimModelObject().RefId() :
                                                 inlet_child = comp_child[x].getChildList()
                                                 for y in range(inlet_child.size()):
                                                     if inlet_child[y].ClassType() == "SimConnection_HotWaterFlow_Default":
@@ -666,6 +673,10 @@ class MapComponent(MoObject):
                                                                         return
                                             else:
                                                 pass
+                                    elif inlet_parent[h].ClassType != \
+                                            "SimConnection_HotWaterFlow_Default":
+                                        self.connected_in.append(inlet_parent[h])
+                                        return
 
     def create_connection(self, test):
         self.project.connections.append(MapConnection(self,test))

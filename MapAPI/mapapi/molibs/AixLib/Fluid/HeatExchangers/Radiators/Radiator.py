@@ -19,10 +19,10 @@ class Radiator(MapHierarchy.MapComponent):
         self.target_name += "radiator"
         map_sim = self.hierarchy_node.getMappedComponents()
 
-        self.target_location = map_sim[0].getTargetLocation()
-        prop_list = map_sim[0].getMappedPropertyList()
+        #self.target_location = map_sim[0].getTargetLocation()
+        #prop_list = map_sim[0].getMappedPropertyList()
         #print(prop_list)
-        self.arrange_parameters(prop_list)
+        #self.arrange_parameters(prop_list)
 
         self.convPort = self.add_connector(name="convPort", type="HeatPort",
                                            dimension=1, hierarchy_node=None)
