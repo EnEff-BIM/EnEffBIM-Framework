@@ -6,7 +6,7 @@ Created on Mon Nov 23 12:00:26 2015
 """
 
 import mapapi.MapClasses as MapHierarchy
-
+import warnings
 
 class Boiler(MapHierarchy.MapComponent):
     """Representation of AixLib.Fluid.HeatExchangers.Boiler
@@ -29,7 +29,10 @@ class Boiler(MapHierarchy.MapComponent):
         boil_child = self.hierarchy_node.getChildList()
         for a in range(boil_child.size()):
             if boil_child[a].ClassType() == "SimController_SupplyWater_Temperature":
-                self.add_constant_flow(set_temp=boil_child[a].getSimModelObject().ConstantSetpointValue().getValue()+ 273.15)
+                try:
+                    self.add_constant_flow(set_temp=boil_child[a].getSimModelObject().ConstantSetpointValue().getValue()+ 273.15)
+                except:
+                    warnings.warn("Could not apply controller")
 
     def add_constant_flow(self, set_temp):
         '''adds a constants flow Temperature for the hot water loop'''

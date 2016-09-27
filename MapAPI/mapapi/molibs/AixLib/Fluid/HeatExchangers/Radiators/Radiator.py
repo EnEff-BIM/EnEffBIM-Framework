@@ -5,7 +5,7 @@ Created on Mon Nov 23 12:00:26 2015
 @author: pre
 """
 import mapapi.MapClasses as MapHierarchy
-
+import warnings
 class Radiator(MapHierarchy.MapComponent):
     """Representation of AixLib.Fluid.HeatExchangers.Radiators.Radiator
     """
@@ -37,12 +37,17 @@ class Radiator(MapHierarchy.MapComponent):
                         if tz.sim_ref_id == eq_parent[b].getSimModelObject().RefId():
                             self.parent = tz
                             self.connect_zone(self.parent)
+                        else:
+                            warnings.warn("Could not connect to zone")
 
         for con_in in self.connected_in:
             if con_in.ClassType() == 'SimFlowController_Valve_TemperingValve':
                 for comp in self.project.hvac_components:
                     if comp.sim_ref_id == con_in.getSimModelObject().RefId():
-                        self.ctrl_valve(self.parent, comp)
+                        try:
+                            self.ctrl_valve(self.parent, comp)
+                        except:
+                            warnings.warn("Could not apply controller")
 
     def ctrl_valve(self, thermal_zone, valve_component):
         """

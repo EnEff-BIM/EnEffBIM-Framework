@@ -946,9 +946,11 @@
 	<SimTimeSeriesSchedule_Day_Interval RefId="ID_prv03_0LMbjl8XfFaui1YxJs_D1q">
 		<simcore:SimUniqueID>_prv03_0LMbjl8XfFaui1YxJs_D1q</simcore:SimUniqueID>
 		<simres:SimTimeSeriesSched_Time_1_144>
+			<simcore:stringItem>Until: 6:00</simcore:stringItem>
+			<simcore:stringItem>Until: 18:00</simcore:stringItem>
 			<simcore:stringItem>Until: 24:00</simcore:stringItem>
 		</simres:SimTimeSeriesSched_Time_1_144>
-		<simres:SimTimeSeriesSched_ValUntilTime_1_144>1 </simres:SimTimeSeriesSched_ValUntilTime_1_144>
+		<simres:SimTimeSeriesSched_ValUntilTime_1_144>1 0 1 </simres:SimTimeSeriesSched_ValUntilTime_1_144>
 	</SimTimeSeriesSchedule_Day_Interval>
 	<SimTimeSeriesSchedule_Week_Daily RefId="ID_prv02_0LMbjl8XfFaui1YxJs_D1q">
 		<simcore:SimUniqueID>_prv02_0LMbjl8XfFaui1YxJs_D1q</simcore:SimUniqueID>
