@@ -32,8 +32,5 @@ mappingFile_path = os.path.join(
 # "1.1_Architecture+HVAC+Zone_Curve+Schedule_korr.simxml")
 prj = MapProject(pathList, mappingFile_path)
 
-for test in prj.connections:
-    print(test.connector_a.parent.target_name, "connects",
-          test.connector_b.parent.target_name)
 
 print("finish")

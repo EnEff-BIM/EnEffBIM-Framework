@@ -16,6 +16,8 @@ except:
     sys.path.append(modulePath)
     import SimModel
 
+import SimModel_Mapping
+import SimModel_Hierachy
 
 from  SimProject_Project_DesignAlternative import SimProject_Project_DesignAlternative
 from  SimSite_BuildingSite_Default import SimSite_BuildingSite_Default
