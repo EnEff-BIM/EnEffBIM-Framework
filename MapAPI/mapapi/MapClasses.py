@@ -379,16 +379,17 @@ class MapBuilding(MoObject):
     def instantiate_connections(self):
         '''instantiates the SimModel topology connections
         '''
-        for a in self.hvac_components_sim:
-            for b in a.connected_in:
-                for c in self.hvac_components_sim:
+        for a in self.project.hvac_components:
+            if a.connected_in and a.connected_out:
+                for b in a.connected_in:
+                    for c in self.project.hvac_components:
 
-                    if c.sim_ref_id == b.getSimModelObject().RefId():
-                        if type(a).__name__ == "ExpansionVessel" or type(
-                                c).__name__ == "ExpansionVessel":
-                            a.add_connection(a.port_a, c.port_a)
-                        else:
-                            a.add_connection(a.port_b, c.port_a)
+                        if c.sim_ref_id == b.getSimModelObject().RefId():
+                            if type(a).__name__ == "ExpansionVessel" or type(
+                                    c).__name__ == "ExpansionVessel":
+                                a.add_connection(a.port_a, c.port_a)
+                            else:
+                                a.add_connection(a.port_b, c.port_a)
 
     def instantiate_thermal_zones(self):
         '''Instantiates for each SimSpatialZone_ThermalZone_Default a
@@ -436,15 +437,7 @@ class MapBuilding(MoObject):
             component.find_loop_connection()
             self.hvac_components_sim.append(component)
         self.project.hvac_components = self.hvac_components_sim
-        """
-        for duplicate in comp_help:
-            if duplicate not in self.hvac_components_node:
-                self.hvac_components_node.append(duplicate)
-        for comp in self.hvac_components_node:
-            component = MapComponent(self.project, comp)
-            self.hvac_components_sim.append(component)
 
-        """
 
 
     def convert_components(self):
