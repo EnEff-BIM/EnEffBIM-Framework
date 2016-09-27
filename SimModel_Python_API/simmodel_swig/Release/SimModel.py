@@ -374,6 +374,9 @@ class SimModel(base._type):
     def SimFlowController_Valve_Default(self, *args):
         return _SimModel.SimModel_SimFlowController_Valve_Default(self, *args)
 
+    def SimFlowController_Valve_TemperingValve(self, *args):
+        return _SimModel.SimModel_SimFlowController_Valve_TemperingValve(self, *args)
+
     def SimFlowEnergyTransfer_ConvectiveHeater_Radiant_Water(self, *args):
         return _SimModel.SimModel_SimFlowEnergyTransfer_ConvectiveHeater_Radiant_Water(self, *args)
 
@@ -632,6 +635,9 @@ class SimModel(base._type):
     def SimSlab_Floor_FloorOverEarth(self, *args):
         return _SimModel.SimModel_SimSlab_Floor_FloorOverEarth(self, *args)
 
+    def SimSlab_Floor_InterzoneFloor(self, *args):
+        return _SimModel.SimModel_SimSlab_Floor_InterzoneFloor(self, *args)
+
     def SimSlab_RoofSlab_RoofUnderAir(self, *args):
         return _SimModel.SimModel_SimSlab_RoofSlab_RoofUnderAir(self, *args)
 
@@ -721,6 +727,9 @@ class SimModel(base._type):
 
     def SimWall_Wall_ExteriorAboveGrade(self, *args):
         return _SimModel.SimModel_SimWall_Wall_ExteriorAboveGrade(self, *args)
+
+    def SimWall_Wall_Interior(self, *args):
+        return _SimModel.SimModel_SimWall_Wall_Interior(self, *args)
 
     def SimWallParams_Wall_Default(self, *args):
         return _SimModel.SimModel_SimWallParams_Wall_Default(self, *args)

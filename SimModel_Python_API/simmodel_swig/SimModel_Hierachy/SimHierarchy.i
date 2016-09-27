@@ -46,6 +46,13 @@ del __re_init__
 
 // SimModel hierarchy classes
 %template(dataType_SimProject_Project_DesignAlternative) SimHierarchyNodeBase::dataType<SimProject_Project_DesignAlternative>;
+
+%template(dataType_SimModelRepresentationContext_GeometricRepresentationContext_Default) SimHierarchyNodeBase::dataType<SimModelRepresentationContext_GeometricRepresentationContext_Default>;
+
+%template(dataType_SimPlacement_Axis2Placement3D_Default) SimHierarchyNodeBase::dataType<SimPlacement_Axis2Placement3D_Default>;
+
+%template(dataType_SimGeomVector_Vector_Direction) SimHierarchyNodeBase::dataType<SimGeomVector_Vector_Direction>;
+
 %template(dataType_SimSite_BuildingSite_Default) SimHierarchyNodeBase::dataType<SimSite_BuildingSite_Default>;
 %template(dataType_SimBuilding_Building_Default) SimHierarchyNodeBase::dataType<SimBuilding_Building_Default>;
 %template(dataType_SimGroup_SpatialZoneGroup_ZoneGroup) SimHierarchyNodeBase::dataType<SimGroup_SpatialZoneGroup_ZoneGroup>;
@@ -58,6 +65,9 @@ del __re_init__
 %template(dataType_SimSlab_RoofSlab_RoofUnderAir) SimHierarchyNodeBase::dataType<SimSlab_RoofSlab_RoofUnderAir>;
 %template(dataType_SimSlab_Floor_FloorOverEarth) SimHierarchyNodeBase::dataType<SimSlab_Floor_FloorOverEarth>;
 %template(dataType_SimWall_Wall_ExteriorAboveGrade) SimHierarchyNodeBase::dataType<SimWall_Wall_ExteriorAboveGrade>;
+
+%template(dataType_SimWall_Wall_Interior) SimHierarchyNodeBase::dataType<SimWall_Wall_Interior>;
+
 %template(dataType_SimWindow_Window_Exterior) SimHierarchyNodeBase::dataType<SimWindow_Window_Exterior>;
 
 %template(dataType_SimMaterialLayerSet_OpaqueLayerSet_Roof) SimHierarchyNodeBase::dataType<SimMaterialLayerSet_OpaqueLayerSet_Roof>;
@@ -77,7 +87,12 @@ del __re_init__
 %template(dataType_SimMaterial_GlazingMaterial_SimpleGlazingSystem) SimHierarchyNodeBase::dataType<SimMaterial_GlazingMaterial_SimpleGlazingSystem>;
 %template(dataType_SimMaterial_GlazingMaterial_Glazing) SimHierarchyNodeBase::dataType<SimMaterial_GlazingMaterial_Glazing>;
 
+%template(dataType_SimMaterial_Default_Default) SimHierarchyNodeBase::dataType<SimMaterial_Default_Default>;
+
 %template(dataType_SimSlab_Default_Default) SimHierarchyNodeBase::dataType<SimSlab_Default_Default>;
+
+%template(dataType_SimSlab_Floor_InterzoneFloor) SimHierarchyNodeBase::dataType<SimSlab_Floor_InterzoneFloor>;
+
 %template(dataType_SimWall_Wall_Default) SimHierarchyNodeBase::dataType<SimWall_Wall_Default>;
 %template(dataType_SimMaterialLayerSet_Default_Default) SimHierarchyNodeBase::dataType<SimMaterialLayerSet_Default_Default>;
 %template(dataType_SimSystem_HvacHotWater_FullSystem) SimHierarchyNodeBase::dataType<SimSystem_HvacHotWater_FullSystem>;
@@ -87,12 +102,18 @@ del __re_init__
 %template(dataType_SimSystem_HvacHotWater_Demand) SimHierarchyNodeBase::dataType<SimSystem_HvacHotWater_Demand>;
 %template(dataType_SimFlowEnergyTransfer_ConvectiveHeater_Water) SimHierarchyNodeBase::dataType<SimFlowEnergyTransfer_ConvectiveHeater_Water>;
 %template(dataType_SimFlowEnergyTransfer_ConvectiveHeater_Radiant_Water) SimHierarchyNodeBase::dataType<SimFlowEnergyTransfer_ConvectiveHeater_Radiant_Water>;
+
 %template(dataType_SimFlowEnergyTransferStorage_HotWaterTank_Mixed) SimHierarchyNodeBase::dataType<SimFlowEnergyTransferStorage_HotWaterTank_Mixed>;
+%template(dataType_SimFlowEnergyTransferStorage_HotWaterTank_Expansion) SimHierarchyNodeBase::dataType<SimFlowEnergyTransferStorage_HotWaterTank_Expansion>;
+
 %template(dataType_SimFlowFitting_Mixer_DemandProxyMixerWater) SimHierarchyNodeBase::dataType<SimFlowFitting_Mixer_DemandProxyMixerWater>;
 %template(dataType_SimFlowFitting_Default_Default) SimHierarchyNodeBase::dataType<SimFlowFitting_Default_Default>;
 %template(dataType_SimFlowFitting_Splitter_DemandProxySplitterWater) SimHierarchyNodeBase::dataType<SimFlowFitting_Splitter_DemandProxySplitterWater>;
 %template(dataType_SimSystem_HvacHotWater_Supply) SimHierarchyNodeBase::dataType<SimSystem_HvacHotWater_Supply>;
+
 %template(dataType_SimFlowController_Valve_Default) SimHierarchyNodeBase::dataType<SimFlowController_Valve_Default>;
+%template(dataType_SimFlowController_Valve_TemperingValve) SimHierarchyNodeBase::dataType<SimFlowController_Valve_TemperingValve>;
+
 %template(dataType_SimFlowMover_Pump_VariableSpeedReturn) SimHierarchyNodeBase::dataType<SimFlowMover_Pump_VariableSpeedReturn>;
 %template(dataType_SimFlowPlant_Boiler_BoilerHotWater) SimHierarchyNodeBase::dataType<SimFlowPlant_Boiler_BoilerHotWater>;
 %template(dataType_SimFlowSegment_Pipe_Indoor) SimHierarchyNodeBase::dataType<SimFlowSegment_Pipe_Indoor>;

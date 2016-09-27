@@ -385,6 +385,14 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimDistributionPort_HotWate
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimDistributionPort_HotWaterFlowPort_Water_InOrOut", "SimDistributionPort_HotWaterFlowPort_Water_InOrOut\SimDistributionPort_HotWaterFlowPort_Water_InOrOut.vcxproj", "{66414386-BAEE-4F00-B9B0-C1C70882648B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimWall_Wall_Interior", "SimWall_Wall_Interior\SimWall_Wall_Interior.vcxproj", "{B41FBED0-B9C0-46A6-BBE9-6EF47B48FC4D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimSlab_Floor_InterzoneFloor", "SimSlab_Floor_InterzoneFloor\SimSlab_Floor_InterzoneFloor.vcxproj", "{BFB105E5-135B-4383-B4F9-943755ED3276}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimFlowController_Valve_TemperingValve", "SimFlowController_Valve_TemperingValve\SimFlowController_Valve_TemperingValve.vcxproj", "{A2C90543-0E86-4792-BC1B-3532DDA9873E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimFlowEnergyTransferStorage_HotWaterTank_Expansion", "SimFlowEnergyTransferStorage_HotWaterTank_Expansion\SimFlowEnergyTransferStorage_HotWaterTank_Expansion.vcxproj", "{35E1B13C-83AF-4356-9779-7BA6C5512502}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -1159,6 +1167,22 @@ Global
 		{66414386-BAEE-4F00-B9B0-C1C70882648B}.Debug|Win32.Build.0 = Debug|Win32
 		{66414386-BAEE-4F00-B9B0-C1C70882648B}.Release|Win32.ActiveCfg = Release|Win32
 		{66414386-BAEE-4F00-B9B0-C1C70882648B}.Release|Win32.Build.0 = Release|Win32
+		{B41FBED0-B9C0-46A6-BBE9-6EF47B48FC4D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B41FBED0-B9C0-46A6-BBE9-6EF47B48FC4D}.Debug|Win32.Build.0 = Debug|Win32
+		{B41FBED0-B9C0-46A6-BBE9-6EF47B48FC4D}.Release|Win32.ActiveCfg = Release|Win32
+		{B41FBED0-B9C0-46A6-BBE9-6EF47B48FC4D}.Release|Win32.Build.0 = Release|Win32
+		{BFB105E5-135B-4383-B4F9-943755ED3276}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BFB105E5-135B-4383-B4F9-943755ED3276}.Debug|Win32.Build.0 = Debug|Win32
+		{BFB105E5-135B-4383-B4F9-943755ED3276}.Release|Win32.ActiveCfg = Release|Win32
+		{BFB105E5-135B-4383-B4F9-943755ED3276}.Release|Win32.Build.0 = Release|Win32
+		{A2C90543-0E86-4792-BC1B-3532DDA9873E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A2C90543-0E86-4792-BC1B-3532DDA9873E}.Debug|Win32.Build.0 = Debug|Win32
+		{A2C90543-0E86-4792-BC1B-3532DDA9873E}.Release|Win32.ActiveCfg = Release|Win32
+		{A2C90543-0E86-4792-BC1B-3532DDA9873E}.Release|Win32.Build.0 = Release|Win32
+		{35E1B13C-83AF-4356-9779-7BA6C5512502}.Debug|Win32.ActiveCfg = Debug|Win32
+		{35E1B13C-83AF-4356-9779-7BA6C5512502}.Debug|Win32.Build.0 = Debug|Win32
+		{35E1B13C-83AF-4356-9779-7BA6C5512502}.Release|Win32.ActiveCfg = Release|Win32
+		{35E1B13C-83AF-4356-9779-7BA6C5512502}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

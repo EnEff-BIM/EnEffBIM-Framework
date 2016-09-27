@@ -274,7 +274,7 @@ namespace schema
         // AssignedToGroups
         //
         typedef ::xml_schema::idrefs AssignedToGroups_type;
-        typedef ::xsd::cxx::tree::optional< AssignedToGroups_type > AssignedToGroups_optional;
+        typedef ::xsd::cxx::tree::optional< AssignedToGroups_type, false > AssignedToGroups_optional;
         typedef ::xsd::cxx::tree::traits< AssignedToGroups_type, char > AssignedToGroups_traits;
 
         const AssignedToGroups_optional&

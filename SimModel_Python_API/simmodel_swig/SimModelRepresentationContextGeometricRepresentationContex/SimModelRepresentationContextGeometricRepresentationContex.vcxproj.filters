@@ -15,16 +15,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="SimModelRepresentationContextGeometricRepresentationContex_wrap.cxx">
+    <CustomBuild Include="SimModelRepresentationContext_GeometricRepresentationContext_Default.i" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="SimModelRepresentationContext_GeometricRepresentationContext_Default_wrap.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="SimModelRepresentationContextGeometricRepresentationContex_wrap.h">
+    <ClInclude Include="SimModelRepresentationContext_GeometricRepresentationContext_Default_wrap.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <CustomBuild Include="SimModelRepresentationContextGeometricRepresentationContex.i" />
   </ItemGroup>
 </Project>

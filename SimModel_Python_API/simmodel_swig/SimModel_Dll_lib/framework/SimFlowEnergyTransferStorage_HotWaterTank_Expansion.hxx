@@ -50,7 +50,7 @@
 #include <xsd/cxx/config.hxx>
 
 #if (XSD_INT_VERSION != 4000000L)
-#error XSD runtime version mismatch
+//#error XSD runtime version mismatch
 #endif
 
 #include <xsd/cxx/pre.hxx>
@@ -257,13 +257,13 @@ namespace schema
   {
     namespace MepModel
     {
-      class SimFlowEnergyTransferStorage_HotWaterTank_Expansion: public ::schema::simxml::MepModel::SimFlowEnergyTransferStorage_HotWaterTank
+      class __declspec(dllexport) SimFlowEnergyTransferStorage_HotWaterTank_Expansion: public ::schema::simxml::MepModel::SimFlowEnergyTransferStorage_HotWaterTank
       {
         public:
         // EffectiveCapacity
         //
         typedef ::xml_schema::double_ EffectiveCapacity_type;
-        typedef ::xsd::cxx::tree::optional< EffectiveCapacity_type > EffectiveCapacity_optional;
+        typedef ::xsd::cxx::tree::optional< EffectiveCapacity_type, true > EffectiveCapacity_optional;
         typedef ::xsd::cxx::tree::traits< EffectiveCapacity_type, char, ::xsd::cxx::tree::schema_type::double_ > EffectiveCapacity_traits;
 
         const EffectiveCapacity_optional&
