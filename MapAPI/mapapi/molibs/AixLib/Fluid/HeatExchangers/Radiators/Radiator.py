@@ -27,37 +27,66 @@ class Radiator(MapHierarchy.MapComponent):
                                            dimension=1, hierarchy_node=None)
         self.radPort = self.add_connector(name="radPort", type="HeatPort",
                                           dimension=1, hierarchy_node=None)
-        #needs to be changed if thermalZone is implemented
-#        self.connect_zone(self.project.buildings[0].thermal_zones[0])
-        #boil_child = self.hierarchy_node.getChildList()
-        #for a in range(boil_child.size()):
-        #    print(boil_child[a].getSimModelObject())
-        #boil_parent = self.hierarchy_node.getParentList()
-        #for b in range(boil_parent.size()):
-        #    print("parent")
-        #    print(boil_parent[b].getSimModelObject())
 
-        #self.add_pipe()
+        rad_parent = self.hierarchy_node.getParentList()
+        for a in range(rad_parent.size()):
+            if rad_parent[a].ClassType() == "SimList_EquipmentList_ZoneHvac":
+                eq_parent = rad_parent[a].getParentList()
+                for b in range(eq_parent.size()):
+                    for tz in self.project.buildings[0].thermal_zones:
+                        if tz.sim_ref_id == eq_parent[b].getSimModelObject().RefId():
+                            self.parent = tz
+                            self.connect_zone(self.parent)
 
-    def add_pipe(self):
-        from mapapi.molibs.AixLib.Fluid.FixedResitances.StaticPipe import Pipe
+        for con_in in self.connected_in:
+            if con_in.ClassType() == 'SimFlowController_Valve_TemperingValve':
+                for comp in self.project.hvac_components:
+                    if comp.sim_ref_id == con_in.getSimModelObject().RefId():
+                        self.ctrl_valve(self.parent, comp)
 
-        pipe = Pipe(self.project, self.hierarchy_node, self)
-        pipe.init_me()
-        pipe.mapp_me()
-        self.project.buildings[0].hvac_components_mod.append(pipe)
-        self.add_connection(self.port_a, pipe.port_b)
-        self.port_a = pipe.port_a
-        self.connectors.append(pipe.port_a)
+    def ctrl_valve(self, thermal_zone, valve_component):
+        """
 
-    def ctrl_valve(self, thermal_zone):
-        from mapapi.molibs.AixLib.Fluid.Actuators.Valves.SimpleValve import \
-            SimpleValve
+        Parameters
+        ----------
+        thermal_zone
 
+        valve component
 
+        Returns
+        -------
+
+        """
+
+        from mapapi.molibs.MSL.Blocks.Continuous.LimPID import LimPID
+        pid = LimPID(self.project,
+                     valve_component.hierarchy_node,
+                     valve_component)
+        pid.init_me()
+        pid.target_name = "pid" + "_" + valve_component.target_name
+        valve_component.add_connection(valve_component.opening, pid.y)
+        self.project.mod_components.append(pid)
+
+        from mapapi.molibs.MSL.Blocks.Sources.Constant import Constant
+        const = Constant(self.project,
+                         valve_component.hierarchy_node,
+                         valve_component)
+        const.init_me()
+        const.target_name = "setTemp" + "_" + valve_component.target_name
+        const.k.value = 293.15
+        const.add_connection(const.y, pid.u_s)
+        self.project.mod_components.append(const)
+
+        from mapapi.molibs.MSL.Thermal.HeatTransfer.Sensors.TemperatureSensor \
+            import TemperatureSensor
+
+        sens = TemperatureSensor(self.project, self.hierarchy_node, self)
+        sens.init_me()
+        sens.add_connection(sens.T, pid.u_m)
+        sens.add_connection(sens.port, thermal_zone.internalGainsConv)
+        self.project.mod_components.append(sens)
 
     def connect_zone(self, thermal_zone):
 
         self.add_connection(self.convPort, thermal_zone.internalGainsConv)
         self.add_connection(self.radPort, thermal_zone.internalGainsRad)
-        #self.ctrl_valve(thermal_zone=thermal_zone)

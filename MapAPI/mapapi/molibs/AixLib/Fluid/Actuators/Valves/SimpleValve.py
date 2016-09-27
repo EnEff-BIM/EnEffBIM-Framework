@@ -14,23 +14,15 @@ class SimpleValve(MapHierarchy.MapComponent):
     def init_me(self):
 
         self.fluid_two_port()
-
+        self.opening = self.add_connector(name='opening', type='Real')
         return True
 
 
     def mapp_me(self):
+
         self.target_name += "valve"
-        pass
-        """
-        map_sim = self.hierarchy_node.getMappedComponents()
-        self.target_location = map_sim.getTargetLocation()
-        prop_list = map_sim[0].getMappedPropertyList()
-        self.arrange_parameters(prop_list)
+        #map_sim = self.hierarchy_node.getMappedComponents()
+        #self.target_location = map_sim[0].getTargetLocation()
+        #prop_list = map_sim[0].getMappedPropertyList()
+        #self.arrange_parameters(prop_list)
 
-        self.target_location = "AixLib.Fluid.Actuators.Valves.SimpleValve"
-
-        from mapapi.molibs.MSL.Blocks.Continuous.LimPID import LimPID
-        ctrl = LimPID(self.project, self.hierarchy_node, self)
-        ctrl.init_me()
-        self.project.buildings[0].hvac_components_mod.append(ctrl)
-        """
