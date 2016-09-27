@@ -137,7 +137,6 @@ class MoObject(object):
             self.sim_instance = self.hierarchy_node.getSimModelObject()
         else:
             self.sim_instance = None
-        print(self.sim_instance.RefId())
         if self.sim_instance is not None:
             self.target_name = "Random" + self.sim_instance.RefId()[-5:]
             #self.target_name = self.sim_instance.SimModelName().getValue(
@@ -304,6 +303,10 @@ class MapProject(object):
     hvac_components : list of MapComponents()
         This is an iterable list containing all MapComponents.
 
+    mod_components : list of MapComponents()
+        This is an iterable list containing all additionally added
+        MapComponents (e.g. Non-Fluid)
+
     sim_hierarchy : instance of SimHierarchy
         SImHierarchy object, generic class
     """
@@ -317,6 +320,7 @@ class MapProject(object):
         self.buildings = []
         self.connections = []
         self.hvac_components = []
+        self.mod_components = []
 
         """Instantiate the SimModel Hierarchy and load the SimXML file through
         libSimModelAPI"""
@@ -457,7 +461,7 @@ class MapBuilding(MoObject):
                         demand_child = full_system_child[b].getChildList()
                         for f in range(demand_child.size()):
                             comp_help[demand_child[f].getSimModelObject().RefId()] = demand_child[f]
-        #print(comp_help)
+
         for key, value in comp_help.items():
             component = MapComponent(self.project, value)
             component.find_loop_connection()
@@ -530,7 +534,6 @@ class MapThermalZone(MoObject):
                 for b in range(occ_child.size()):
                     if occ_child[b].ClassType() == \
                             "SimSpaceBoundary_SecondLevel_SubTypeA":
-                        print(occ_child[b].getSimModelObject())
                         space_bound = MapSpaceBoundary(self, occ_child[b])
                         space_bound.instantiate_element()
                         self.space_boundaries.append(space_bound)
@@ -1079,10 +1082,7 @@ class MapSpaceBoundary(object):
 
     def instantiate_element(self):
         bound_child = self.hierarchy_node.getChildList()
-        print(self.sim_instance.InternalOrExternalBoundary().getValue())
         for a in range(bound_child.size()):
-            print(bound_child[a].ClassType())
-
             if bound_child[a].ClassType() in self.possible_types:
                 self.type = bound_child[a].ClassType()
                 self.building_element = bound_child[a].getSimModelObject()

@@ -11,9 +11,8 @@ import mapapi.MapClasses as MapHierarchy
 class ExpansionVessel(MapHierarchy.MapComponent):
     """Representation of AixLib.Fluid.Movers.Pump
     """
-    
+
     def init_me(self):
-        print("hal")
         self.port_a = self.add_connector("port_a", "FluidPort")
 
     def mapp_me(self):
