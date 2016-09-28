@@ -4657,152 +4657,159 @@ namespace Swig {
 #define SWIGTYPE_p_schema__simxml__BuildingModel__SimWall_Wall_Interior swig_types[1239]
 #define SWIGTYPE_p_schema__simxml__BuildingModel__SimWindow_Window_Exterior swig_types[1240]
 #define SWIGTYPE_p_schema__simxml__MepModel__SimController_SupplyWater_Temperature swig_types[1241]
-#define SWIGTYPE_p_schema__simxml__MepModel__SimFlowController_Valve_Default swig_types[1242]
-#define SWIGTYPE_p_schema__simxml__MepModel__SimFlowController_Valve_TemperingValve swig_types[1243]
-#define SWIGTYPE_p_schema__simxml__MepModel__SimFlowEnergyConverter swig_types[1244]
-#define SWIGTYPE_p_schema__simxml__MepModel__SimFlowEnergyTransferStorage_HotWaterTank_Expansion swig_types[1245]
-#define SWIGTYPE_p_schema__simxml__MepModel__SimFlowEnergyTransferStorage_HotWaterTank_Mixed swig_types[1246]
-#define SWIGTYPE_p_schema__simxml__MepModel__SimFlowEnergyTransfer_ConvectiveHeater_Radiant_Water swig_types[1247]
-#define SWIGTYPE_p_schema__simxml__MepModel__SimFlowEnergyTransfer_ConvectiveHeater_Water swig_types[1248]
-#define SWIGTYPE_p_schema__simxml__MepModel__SimFlowFitting_Default_Default swig_types[1249]
-#define SWIGTYPE_p_schema__simxml__MepModel__SimFlowFitting_Mixer_DemandProxyMixerWater swig_types[1250]
-#define SWIGTYPE_p_schema__simxml__MepModel__SimFlowFitting_Splitter_DemandProxySplitterWater swig_types[1251]
-#define SWIGTYPE_p_schema__simxml__MepModel__SimFlowMover_Pump_VariableSpeedReturn swig_types[1252]
-#define SWIGTYPE_p_schema__simxml__MepModel__SimFlowPlant_Boiler_BoilerHotWater swig_types[1253]
-#define SWIGTYPE_p_schema__simxml__MepModel__SimFlowSegment_Pipe_Indoor swig_types[1254]
-#define SWIGTYPE_p_schema__simxml__MepModel__SimSensor_TemperatureSensor_DryBulb swig_types[1255]
-#define SWIGTYPE_p_schema__simxml__Model__SimModel swig_types[1256]
-#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimArrayParams swig_types[1257]
-#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimConnection_HotWaterFlow_Default swig_types[1258]
-#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimDistributionPort_HotWaterFlowPort_Water_In swig_types[1259]
-#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimDistributionPort_HotWaterFlowPort_Water_InOrOut swig_types[1260]
-#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimDistributionPort_HotWaterFlowPort_Water_Out swig_types[1261]
-#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimMaterialLayerSet_Default_Default swig_types[1262]
-#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimMaterialLayerSet_GlazingLayerSet_Window swig_types[1263]
-#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimMaterialLayerSet_OpaqueLayerSet_Floor swig_types[1264]
-#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimMaterialLayerSet_OpaqueLayerSet_Roof swig_types[1265]
-#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimMaterialLayerSet_OpaqueLayerSet_Wall swig_types[1266]
-#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimMaterialLayer_GlazingMaterialLayer_Default swig_types[1267]
-#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimMaterialLayer_OpaqueMaterialLayer_Default swig_types[1268]
-#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimMaterial_Default_Default swig_types[1269]
-#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimMaterial_GlazingMaterial_Gas swig_types[1270]
-#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimMaterial_GlazingMaterial_Glazing swig_types[1271]
-#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimMaterial_GlazingMaterial_SimpleGlazingSystem swig_types[1272]
-#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimMaterial_OpaqueMaterial_AirGap swig_types[1273]
-#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimMaterial_OpaqueMaterial_Default swig_types[1274]
-#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimModelRepresentationContext_GeometricRepresentationContext_Default swig_types[1275]
-#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimNode swig_types[1276]
-#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimNode_DigitalControl_HWLoop_DigitalSignal_In swig_types[1277]
-#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimNode_HotWaterFlowPort_Water_In swig_types[1278]
-#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimNode_HotWaterFlowPort_Water_Out swig_types[1279]
-#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimPort swig_types[1280]
-#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimSpaceBoundary_SecondLevel_SubTypeA swig_types[1281]
-#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Day_Interval swig_types[1282]
-#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Week_Daily swig_types[1283]
-#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Year_Default swig_types[1284]
-#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimUnitType swig_types[1285]
-#define SWIGTYPE_p_schema__simxml__ResourcesGeometry__SimFeatureElementSubtraction_Void_Opening swig_types[1286]
-#define SWIGTYPE_p_schema__simxml__ResourcesGeometry__SimGeomVector_Vector_Direction swig_types[1287]
-#define SWIGTYPE_p_schema__simxml__ResourcesGeometry__SimPlacement_Axis2Placement3D_Default swig_types[1288]
-#define SWIGTYPE_p_schema__simxml__ResourcesGeometry__SimProfileDefinition swig_types[1289]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SelectedPropertyGroups swig_types[1290]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimActorDefinition swig_types[1291]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimAppDefault swig_types[1292]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimBldgModelParams swig_types[1293]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimBuildingElement swig_types[1294]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimDistributionControlElement swig_types[1295]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimDistributionElement swig_types[1296]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimDistributionFlowElement swig_types[1297]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimElement swig_types[1298]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimFeatureElement swig_types[1299]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimGeometricRepresentationItem swig_types[1300]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimGroup swig_types[1301]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimGroup_SpatialZoneGroup_ZoneGroup swig_types[1302]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimGroup_SpatialZoneGroup_ZoneHvacGroup swig_types[1303]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimObject swig_types[1304]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimObjectDefinition swig_types[1305]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimObjectPlacement swig_types[1306]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimObjectTypeDefinition swig_types[1307]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimPropertySetDefinition swig_types[1308]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimRepresentation swig_types[1309]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimRepresentationItem swig_types[1310]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimResourceObject swig_types[1311]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimRoot swig_types[1312]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimSpatialStructureElement swig_types[1313]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimTemplate swig_types[1314]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__SimTopologicalRepresentationItem swig_types[1315]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__doubleList swig_types[1316]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__integerList swig_types[1317]
-#define SWIGTYPE_p_schema__simxml__SimModelCore__logical swig_types[1318]
-#define SWIGTYPE_p_self_ swig_types[1319]
-#define SWIGTYPE_p_short swig_types[1320]
-#define SWIGTYPE_p_signed_char swig_types[1321]
-#define SWIGTYPE_p_size_type swig_types[1322]
-#define SWIGTYPE_p_std__allocatorT_SimHierarchyNode_p_t swig_types[1323]
-#define SWIGTYPE_p_std__allocatorT_SimHierarchyNode_t swig_types[1324]
-#define SWIGTYPE_p_std__invalid_argument swig_types[1325]
-#define SWIGTYPE_p_std__vectorT_MappedComponent_p_std__allocatorT_MappedComponent_p_t_t swig_types[1326]
-#define SWIGTYPE_p_std__vectorT_SimHierarchyNode_p_std__allocatorT_SimHierarchyNode_p_t_t swig_types[1327]
-#define SWIGTYPE_p_std__vectorT_SimHierarchyNode_std__allocatorT_SimHierarchyNode_t_t swig_types[1328]
-#define SWIGTYPE_p_swig__SwigPyIterator swig_types[1329]
-#define SWIGTYPE_p_unsigned_char swig_types[1330]
-#define SWIGTYPE_p_unsigned_int swig_types[1331]
-#define SWIGTYPE_p_unsigned_long_long swig_types[1332]
-#define SWIGTYPE_p_unsigned_short swig_types[1333]
-#define SWIGTYPE_p_value_type swig_types[1334]
-#define SWIGTYPE_p_xsd__cxx__tree___type swig_types[1335]
-#define SWIGTYPE_p_xsd__cxx__tree__base64_binaryT_char_xsd__cxx__tree__simple_type_t swig_types[1336]
-#define SWIGTYPE_p_xsd__cxx__tree__boundsT_char_t swig_types[1337]
-#define SWIGTYPE_p_xsd__cxx__tree__bufferT_char_t swig_types[1338]
-#define SWIGTYPE_p_xsd__cxx__tree__content_order swig_types[1339]
-#define SWIGTYPE_p_xsd__cxx__tree__dateT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[1340]
-#define SWIGTYPE_p_xsd__cxx__tree__date_timeT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[1341]
-#define SWIGTYPE_p_xsd__cxx__tree__diagnosticsT_char_t swig_types[1342]
-#define SWIGTYPE_p_xsd__cxx__tree__duplicate_idT_char_t swig_types[1343]
-#define SWIGTYPE_p_xsd__cxx__tree__durationT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[1344]
-#define SWIGTYPE_p_xsd__cxx__tree__entitiesT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__entity_t swig_types[1345]
-#define SWIGTYPE_p_xsd__cxx__tree__entityT_char_xsd__cxx__tree__ncname_t swig_types[1346]
-#define SWIGTYPE_p_xsd__cxx__tree__errorT_char_t swig_types[1347]
-#define SWIGTYPE_p_xsd__cxx__tree__exceptionT_char_t swig_types[1348]
-#define SWIGTYPE_p_xsd__cxx__tree__expected_attributeT_char_t swig_types[1349]
-#define SWIGTYPE_p_xsd__cxx__tree__expected_elementT_char_t swig_types[1350]
-#define SWIGTYPE_p_xsd__cxx__tree__expected_text_contentT_char_t swig_types[1351]
-#define SWIGTYPE_p_xsd__cxx__tree__flags swig_types[1352]
-#define SWIGTYPE_p_xsd__cxx__tree__gdayT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[1353]
-#define SWIGTYPE_p_xsd__cxx__tree__gmonthT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[1354]
-#define SWIGTYPE_p_xsd__cxx__tree__gmonth_dayT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[1355]
-#define SWIGTYPE_p_xsd__cxx__tree__gyearT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[1356]
-#define SWIGTYPE_p_xsd__cxx__tree__gyear_monthT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[1357]
-#define SWIGTYPE_p_xsd__cxx__tree__hex_binaryT_char_xsd__cxx__tree__simple_type_t swig_types[1358]
-#define SWIGTYPE_p_xsd__cxx__tree__idT_char_xsd__cxx__tree__ncname_t swig_types[1359]
-#define SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t swig_types[1360]
-#define SWIGTYPE_p_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t swig_types[1361]
-#define SWIGTYPE_p_xsd__cxx__tree__languageT_char_xsd__cxx__tree__token_t swig_types[1362]
-#define SWIGTYPE_p_xsd__cxx__tree__nameT_char_xsd__cxx__tree__token_t swig_types[1363]
-#define SWIGTYPE_p_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__name_t swig_types[1364]
-#define SWIGTYPE_p_xsd__cxx__tree__nmtokenT_char_xsd__cxx__tree__token_t swig_types[1365]
-#define SWIGTYPE_p_xsd__cxx__tree__nmtokensT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__nmtoken_t swig_types[1366]
-#define SWIGTYPE_p_xsd__cxx__tree__no_prefix_mappingT_char_t swig_types[1367]
-#define SWIGTYPE_p_xsd__cxx__tree__no_type_infoT_char_t swig_types[1368]
-#define SWIGTYPE_p_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__string_t swig_types[1369]
-#define SWIGTYPE_p_xsd__cxx__tree__not_derivedT_char_t swig_types[1370]
-#define SWIGTYPE_p_xsd__cxx__tree__parsingT_char_t swig_types[1371]
-#define SWIGTYPE_p_xsd__cxx__tree__propertiesT_char_t swig_types[1372]
-#define SWIGTYPE_p_xsd__cxx__tree__qnameT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__uri_xsd__cxx__tree__ncname_t swig_types[1373]
-#define SWIGTYPE_p_xsd__cxx__tree__severity swig_types[1374]
-#define SWIGTYPE_p_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t swig_types[1375]
-#define SWIGTYPE_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree__type_t_t swig_types[1376]
-#define SWIGTYPE_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t swig_types[1377]
-#define SWIGTYPE_p_xsd__cxx__tree__timeT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[1378]
-#define SWIGTYPE_p_xsd__cxx__tree__time_zone swig_types[1379]
-#define SWIGTYPE_p_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_string_t swig_types[1380]
-#define SWIGTYPE_p_xsd__cxx__tree__unexpected_elementT_char_t swig_types[1381]
-#define SWIGTYPE_p_xsd__cxx__tree__unexpected_enumeratorT_char_t swig_types[1382]
-#define SWIGTYPE_p_xsd__cxx__tree__uriT_char_xsd__cxx__tree__simple_type_t swig_types[1383]
-#define SWIGTYPE_p_xsd__cxx__tree__user_data_keys_templateT_0_t swig_types[1384]
-#define SWIGTYPE_p_xsd__cxx__xml__error_handlerT_char_t swig_types[1385]
-static swig_type_info *swig_types[1387];
-static swig_module_info swig_module = {swig_types, 1386, 0, 0, 0, 0};
+#define SWIGTYPE_p_schema__simxml__MepModel__SimController_ZoneControlTemperature_Thermostat swig_types[1242]
+#define SWIGTYPE_p_schema__simxml__MepModel__SimFlowController_Valve_Default swig_types[1243]
+#define SWIGTYPE_p_schema__simxml__MepModel__SimFlowController_Valve_TemperingValve swig_types[1244]
+#define SWIGTYPE_p_schema__simxml__MepModel__SimFlowEnergyConverter swig_types[1245]
+#define SWIGTYPE_p_schema__simxml__MepModel__SimFlowEnergyTransferStorage_HotWaterTank_Expansion swig_types[1246]
+#define SWIGTYPE_p_schema__simxml__MepModel__SimFlowEnergyTransferStorage_HotWaterTank_Mixed swig_types[1247]
+#define SWIGTYPE_p_schema__simxml__MepModel__SimFlowEnergyTransfer_ConvectiveHeater_Radiant_Water swig_types[1248]
+#define SWIGTYPE_p_schema__simxml__MepModel__SimFlowEnergyTransfer_ConvectiveHeater_Water swig_types[1249]
+#define SWIGTYPE_p_schema__simxml__MepModel__SimFlowFitting_Default_Default swig_types[1250]
+#define SWIGTYPE_p_schema__simxml__MepModel__SimFlowFitting_Mixer_DemandProxyMixerWater swig_types[1251]
+#define SWIGTYPE_p_schema__simxml__MepModel__SimFlowFitting_Splitter_DemandProxySplitterWater swig_types[1252]
+#define SWIGTYPE_p_schema__simxml__MepModel__SimFlowMover_Pump_VariableSpeedReturn swig_types[1253]
+#define SWIGTYPE_p_schema__simxml__MepModel__SimFlowPlant_Boiler_BoilerHotWater swig_types[1254]
+#define SWIGTYPE_p_schema__simxml__MepModel__SimFlowSegment_Pipe_Indoor swig_types[1255]
+#define SWIGTYPE_p_schema__simxml__MepModel__SimSensor_TemperatureSensor_DryBulb swig_types[1256]
+#define SWIGTYPE_p_schema__simxml__Model__SimModel swig_types[1257]
+#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimArrayParams swig_types[1258]
+#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimConnection_HotWaterFlow_Default swig_types[1259]
+#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimControlScheme_SetpointScheme_SingleHeating swig_types[1260]
+#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimDistributionPort_HotWaterFlowPort_Water_In swig_types[1261]
+#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimDistributionPort_HotWaterFlowPort_Water_InOrOut swig_types[1262]
+#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimDistributionPort_HotWaterFlowPort_Water_Out swig_types[1263]
+#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimInternalLoad_Equipment_Electric swig_types[1264]
+#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimInternalLoad_Lights_Default swig_types[1265]
+#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimInternalLoad_People_Default swig_types[1266]
+#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimMaterialLayerSet_Default_Default swig_types[1267]
+#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimMaterialLayerSet_GlazingLayerSet_Window swig_types[1268]
+#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimMaterialLayerSet_OpaqueLayerSet_Floor swig_types[1269]
+#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimMaterialLayerSet_OpaqueLayerSet_Roof swig_types[1270]
+#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimMaterialLayerSet_OpaqueLayerSet_Wall swig_types[1271]
+#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimMaterialLayer_GlazingMaterialLayer_Default swig_types[1272]
+#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimMaterialLayer_OpaqueMaterialLayer_Default swig_types[1273]
+#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimMaterial_Default_Default swig_types[1274]
+#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimMaterial_GlazingMaterial_Gas swig_types[1275]
+#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimMaterial_GlazingMaterial_Glazing swig_types[1276]
+#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimMaterial_GlazingMaterial_SimpleGlazingSystem swig_types[1277]
+#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimMaterial_OpaqueMaterial_AirGap swig_types[1278]
+#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimMaterial_OpaqueMaterial_Default swig_types[1279]
+#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimModelRepresentationContext_GeometricRepresentationContext_Default swig_types[1280]
+#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimNode swig_types[1281]
+#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimNode_DigitalControl_HWLoop_DigitalSignal_In swig_types[1282]
+#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimNode_HotWaterFlowPort_Water_In swig_types[1283]
+#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimNode_HotWaterFlowPort_Water_Out swig_types[1284]
+#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimPort swig_types[1285]
+#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimSpaceBoundary_SecondLevel_SubTypeA swig_types[1286]
+#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimTemplateZoneConditions_ZoneConditions_Default swig_types[1287]
+#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimTemplateZoneLoads_ZoneLoads_Default swig_types[1288]
+#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Day_Interval swig_types[1289]
+#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Week_Daily swig_types[1290]
+#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Year_Default swig_types[1291]
+#define SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimUnitType swig_types[1292]
+#define SWIGTYPE_p_schema__simxml__ResourcesGeometry__SimFeatureElementSubtraction_Void_Opening swig_types[1293]
+#define SWIGTYPE_p_schema__simxml__ResourcesGeometry__SimGeomVector_Vector_Direction swig_types[1294]
+#define SWIGTYPE_p_schema__simxml__ResourcesGeometry__SimPlacement_Axis2Placement3D_Default swig_types[1295]
+#define SWIGTYPE_p_schema__simxml__ResourcesGeometry__SimProfileDefinition swig_types[1296]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SelectedPropertyGroups swig_types[1297]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimActorDefinition swig_types[1298]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimAppDefault swig_types[1299]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimBldgModelParams swig_types[1300]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimBuildingElement swig_types[1301]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimDistributionControlElement swig_types[1302]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimDistributionElement swig_types[1303]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimDistributionFlowElement swig_types[1304]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimElement swig_types[1305]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimFeatureElement swig_types[1306]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimGeometricRepresentationItem swig_types[1307]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimGroup swig_types[1308]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimGroup_SpatialZoneGroup_ZoneGroup swig_types[1309]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimGroup_SpatialZoneGroup_ZoneHvacGroup swig_types[1310]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimObject swig_types[1311]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimObjectDefinition swig_types[1312]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimObjectPlacement swig_types[1313]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimObjectTypeDefinition swig_types[1314]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimPropertySetDefinition swig_types[1315]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimRepresentation swig_types[1316]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimRepresentationItem swig_types[1317]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimResourceObject swig_types[1318]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimRoot swig_types[1319]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimSpatialStructureElement swig_types[1320]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimTemplate swig_types[1321]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__SimTopologicalRepresentationItem swig_types[1322]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__doubleList swig_types[1323]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__integerList swig_types[1324]
+#define SWIGTYPE_p_schema__simxml__SimModelCore__logical swig_types[1325]
+#define SWIGTYPE_p_self_ swig_types[1326]
+#define SWIGTYPE_p_short swig_types[1327]
+#define SWIGTYPE_p_signed_char swig_types[1328]
+#define SWIGTYPE_p_size_type swig_types[1329]
+#define SWIGTYPE_p_std__allocatorT_SimHierarchyNode_p_t swig_types[1330]
+#define SWIGTYPE_p_std__allocatorT_SimHierarchyNode_t swig_types[1331]
+#define SWIGTYPE_p_std__invalid_argument swig_types[1332]
+#define SWIGTYPE_p_std__vectorT_MappedComponent_p_std__allocatorT_MappedComponent_p_t_t swig_types[1333]
+#define SWIGTYPE_p_std__vectorT_SimHierarchyNode_p_std__allocatorT_SimHierarchyNode_p_t_t swig_types[1334]
+#define SWIGTYPE_p_std__vectorT_SimHierarchyNode_std__allocatorT_SimHierarchyNode_t_t swig_types[1335]
+#define SWIGTYPE_p_swig__SwigPyIterator swig_types[1336]
+#define SWIGTYPE_p_unsigned_char swig_types[1337]
+#define SWIGTYPE_p_unsigned_int swig_types[1338]
+#define SWIGTYPE_p_unsigned_long_long swig_types[1339]
+#define SWIGTYPE_p_unsigned_short swig_types[1340]
+#define SWIGTYPE_p_value_type swig_types[1341]
+#define SWIGTYPE_p_xsd__cxx__tree___type swig_types[1342]
+#define SWIGTYPE_p_xsd__cxx__tree__base64_binaryT_char_xsd__cxx__tree__simple_type_t swig_types[1343]
+#define SWIGTYPE_p_xsd__cxx__tree__boundsT_char_t swig_types[1344]
+#define SWIGTYPE_p_xsd__cxx__tree__bufferT_char_t swig_types[1345]
+#define SWIGTYPE_p_xsd__cxx__tree__content_order swig_types[1346]
+#define SWIGTYPE_p_xsd__cxx__tree__dateT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[1347]
+#define SWIGTYPE_p_xsd__cxx__tree__date_timeT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[1348]
+#define SWIGTYPE_p_xsd__cxx__tree__diagnosticsT_char_t swig_types[1349]
+#define SWIGTYPE_p_xsd__cxx__tree__duplicate_idT_char_t swig_types[1350]
+#define SWIGTYPE_p_xsd__cxx__tree__durationT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[1351]
+#define SWIGTYPE_p_xsd__cxx__tree__entitiesT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__entity_t swig_types[1352]
+#define SWIGTYPE_p_xsd__cxx__tree__entityT_char_xsd__cxx__tree__ncname_t swig_types[1353]
+#define SWIGTYPE_p_xsd__cxx__tree__errorT_char_t swig_types[1354]
+#define SWIGTYPE_p_xsd__cxx__tree__exceptionT_char_t swig_types[1355]
+#define SWIGTYPE_p_xsd__cxx__tree__expected_attributeT_char_t swig_types[1356]
+#define SWIGTYPE_p_xsd__cxx__tree__expected_elementT_char_t swig_types[1357]
+#define SWIGTYPE_p_xsd__cxx__tree__expected_text_contentT_char_t swig_types[1358]
+#define SWIGTYPE_p_xsd__cxx__tree__flags swig_types[1359]
+#define SWIGTYPE_p_xsd__cxx__tree__gdayT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[1360]
+#define SWIGTYPE_p_xsd__cxx__tree__gmonthT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[1361]
+#define SWIGTYPE_p_xsd__cxx__tree__gmonth_dayT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[1362]
+#define SWIGTYPE_p_xsd__cxx__tree__gyearT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[1363]
+#define SWIGTYPE_p_xsd__cxx__tree__gyear_monthT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[1364]
+#define SWIGTYPE_p_xsd__cxx__tree__hex_binaryT_char_xsd__cxx__tree__simple_type_t swig_types[1365]
+#define SWIGTYPE_p_xsd__cxx__tree__idT_char_xsd__cxx__tree__ncname_t swig_types[1366]
+#define SWIGTYPE_p_xsd__cxx__tree__idrefT_char_xsd__cxx__tree__ncname_xsd__cxx__tree___type_t swig_types[1367]
+#define SWIGTYPE_p_xsd__cxx__tree__idrefsT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__idref_t swig_types[1368]
+#define SWIGTYPE_p_xsd__cxx__tree__languageT_char_xsd__cxx__tree__token_t swig_types[1369]
+#define SWIGTYPE_p_xsd__cxx__tree__nameT_char_xsd__cxx__tree__token_t swig_types[1370]
+#define SWIGTYPE_p_xsd__cxx__tree__ncnameT_char_xsd__cxx__tree__name_t swig_types[1371]
+#define SWIGTYPE_p_xsd__cxx__tree__nmtokenT_char_xsd__cxx__tree__token_t swig_types[1372]
+#define SWIGTYPE_p_xsd__cxx__tree__nmtokensT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__nmtoken_t swig_types[1373]
+#define SWIGTYPE_p_xsd__cxx__tree__no_prefix_mappingT_char_t swig_types[1374]
+#define SWIGTYPE_p_xsd__cxx__tree__no_type_infoT_char_t swig_types[1375]
+#define SWIGTYPE_p_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__string_t swig_types[1376]
+#define SWIGTYPE_p_xsd__cxx__tree__not_derivedT_char_t swig_types[1377]
+#define SWIGTYPE_p_xsd__cxx__tree__parsingT_char_t swig_types[1378]
+#define SWIGTYPE_p_xsd__cxx__tree__propertiesT_char_t swig_types[1379]
+#define SWIGTYPE_p_xsd__cxx__tree__qnameT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__uri_xsd__cxx__tree__ncname_t swig_types[1380]
+#define SWIGTYPE_p_xsd__cxx__tree__severity swig_types[1381]
+#define SWIGTYPE_p_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t swig_types[1382]
+#define SWIGTYPE_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree__type_t_t swig_types[1383]
+#define SWIGTYPE_p_xsd__cxx__tree__stringT_char_xsd__cxx__tree__simple_type_t swig_types[1384]
+#define SWIGTYPE_p_xsd__cxx__tree__timeT_char_xsd__cxx__tree__simple_typeT_char_xsd__cxx__tree___type_t_t swig_types[1385]
+#define SWIGTYPE_p_xsd__cxx__tree__time_zone swig_types[1386]
+#define SWIGTYPE_p_xsd__cxx__tree__tokenT_char_xsd__cxx__tree__normalized_string_t swig_types[1387]
+#define SWIGTYPE_p_xsd__cxx__tree__unexpected_elementT_char_t swig_types[1388]
+#define SWIGTYPE_p_xsd__cxx__tree__unexpected_enumeratorT_char_t swig_types[1389]
+#define SWIGTYPE_p_xsd__cxx__tree__uriT_char_xsd__cxx__tree__simple_type_t swig_types[1390]
+#define SWIGTYPE_p_xsd__cxx__tree__user_data_keys_templateT_0_t swig_types[1391]
+#define SWIGTYPE_p_xsd__cxx__xml__error_handlerT_char_t swig_types[1392]
+static swig_type_info *swig_types[1394];
+static swig_module_info swig_module = {swig_types, 1393, 0, 0, 0, 0};
 #define SWIG_TypeQuery(name) SWIG_TypeQueryModule(&swig_module, &swig_module, name)
 #define SWIG_MangledTypeQuery(name) SWIG_MangledTypeQueryModule(&swig_module, &swig_module, name)
 
@@ -9233,6 +9240,160 @@ SWIGINTERN PyObject *_wrap_SimHierarchyNodeBase_dataType_SimTimeSeriesSchedule_D
   arg1 = reinterpret_cast< SimHierarchyNodeBase * >(argp1);
   result = (schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Day_Interval *)(arg1)->SWIGTEMPLATEDISAMBIGUATOR dataType< schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Day_Interval >();
   resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Day_Interval, 0 |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_SimHierarchyNodeBase_dataType_SimTemplateZoneLoads_ZoneLoads_Default(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  SimHierarchyNodeBase *arg1 = (SimHierarchyNodeBase *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  schema::simxml::ResourcesGeneral::SimTemplateZoneLoads_ZoneLoads_Default *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:SimHierarchyNodeBase_dataType_SimTemplateZoneLoads_ZoneLoads_Default",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_SimHierarchyNodeBase, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimHierarchyNodeBase_dataType_SimTemplateZoneLoads_ZoneLoads_Default" "', argument " "1"" of type '" "SimHierarchyNodeBase *""'"); 
+  }
+  arg1 = reinterpret_cast< SimHierarchyNodeBase * >(argp1);
+  result = (schema::simxml::ResourcesGeneral::SimTemplateZoneLoads_ZoneLoads_Default *)(arg1)->SWIGTEMPLATEDISAMBIGUATOR dataType< schema::simxml::ResourcesGeneral::SimTemplateZoneLoads_ZoneLoads_Default >();
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimTemplateZoneLoads_ZoneLoads_Default, 0 |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_SimHierarchyNodeBase_dataType_SimTemplateZoneConditions_ZoneConditions_Default(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  SimHierarchyNodeBase *arg1 = (SimHierarchyNodeBase *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  schema::simxml::ResourcesGeneral::SimTemplateZoneConditions_ZoneConditions_Default *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:SimHierarchyNodeBase_dataType_SimTemplateZoneConditions_ZoneConditions_Default",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_SimHierarchyNodeBase, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimHierarchyNodeBase_dataType_SimTemplateZoneConditions_ZoneConditions_Default" "', argument " "1"" of type '" "SimHierarchyNodeBase *""'"); 
+  }
+  arg1 = reinterpret_cast< SimHierarchyNodeBase * >(argp1);
+  result = (schema::simxml::ResourcesGeneral::SimTemplateZoneConditions_ZoneConditions_Default *)(arg1)->SWIGTEMPLATEDISAMBIGUATOR dataType< schema::simxml::ResourcesGeneral::SimTemplateZoneConditions_ZoneConditions_Default >();
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimTemplateZoneConditions_ZoneConditions_Default, 0 |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_SimHierarchyNodeBase_dataType_SimInternalLoad_Equipment_Electric(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  SimHierarchyNodeBase *arg1 = (SimHierarchyNodeBase *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  schema::simxml::ResourcesGeneral::SimInternalLoad_Equipment_Electric *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:SimHierarchyNodeBase_dataType_SimInternalLoad_Equipment_Electric",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_SimHierarchyNodeBase, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimHierarchyNodeBase_dataType_SimInternalLoad_Equipment_Electric" "', argument " "1"" of type '" "SimHierarchyNodeBase *""'"); 
+  }
+  arg1 = reinterpret_cast< SimHierarchyNodeBase * >(argp1);
+  result = (schema::simxml::ResourcesGeneral::SimInternalLoad_Equipment_Electric *)(arg1)->SWIGTEMPLATEDISAMBIGUATOR dataType< schema::simxml::ResourcesGeneral::SimInternalLoad_Equipment_Electric >();
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimInternalLoad_Equipment_Electric, 0 |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_SimHierarchyNodeBase_dataType_SimInternalLoad_People_Default(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  SimHierarchyNodeBase *arg1 = (SimHierarchyNodeBase *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  schema::simxml::ResourcesGeneral::SimInternalLoad_People_Default *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:SimHierarchyNodeBase_dataType_SimInternalLoad_People_Default",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_SimHierarchyNodeBase, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimHierarchyNodeBase_dataType_SimInternalLoad_People_Default" "', argument " "1"" of type '" "SimHierarchyNodeBase *""'"); 
+  }
+  arg1 = reinterpret_cast< SimHierarchyNodeBase * >(argp1);
+  result = (schema::simxml::ResourcesGeneral::SimInternalLoad_People_Default *)(arg1)->SWIGTEMPLATEDISAMBIGUATOR dataType< schema::simxml::ResourcesGeneral::SimInternalLoad_People_Default >();
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimInternalLoad_People_Default, 0 |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_SimHierarchyNodeBase_dataType_SimInternalLoad_Lights_Default(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  SimHierarchyNodeBase *arg1 = (SimHierarchyNodeBase *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  schema::simxml::ResourcesGeneral::SimInternalLoad_Lights_Default *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:SimHierarchyNodeBase_dataType_SimInternalLoad_Lights_Default",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_SimHierarchyNodeBase, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimHierarchyNodeBase_dataType_SimInternalLoad_Lights_Default" "', argument " "1"" of type '" "SimHierarchyNodeBase *""'"); 
+  }
+  arg1 = reinterpret_cast< SimHierarchyNodeBase * >(argp1);
+  result = (schema::simxml::ResourcesGeneral::SimInternalLoad_Lights_Default *)(arg1)->SWIGTEMPLATEDISAMBIGUATOR dataType< schema::simxml::ResourcesGeneral::SimInternalLoad_Lights_Default >();
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimInternalLoad_Lights_Default, 0 |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_SimHierarchyNodeBase_dataType_SimController_ZoneControlTemperature_Thermostat(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  SimHierarchyNodeBase *arg1 = (SimHierarchyNodeBase *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  schema::simxml::MepModel::SimController_ZoneControlTemperature_Thermostat *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:SimHierarchyNodeBase_dataType_SimController_ZoneControlTemperature_Thermostat",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_SimHierarchyNodeBase, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimHierarchyNodeBase_dataType_SimController_ZoneControlTemperature_Thermostat" "', argument " "1"" of type '" "SimHierarchyNodeBase *""'"); 
+  }
+  arg1 = reinterpret_cast< SimHierarchyNodeBase * >(argp1);
+  result = (schema::simxml::MepModel::SimController_ZoneControlTemperature_Thermostat *)(arg1)->SWIGTEMPLATEDISAMBIGUATOR dataType< schema::simxml::MepModel::SimController_ZoneControlTemperature_Thermostat >();
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_schema__simxml__MepModel__SimController_ZoneControlTemperature_Thermostat, 0 |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_SimHierarchyNodeBase_dataType_SimControlScheme_SetpointScheme_SingleHeating(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  SimHierarchyNodeBase *arg1 = (SimHierarchyNodeBase *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  schema::simxml::ResourcesGeneral::SimControlScheme_SetpointScheme_SingleHeating *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:SimHierarchyNodeBase_dataType_SimControlScheme_SetpointScheme_SingleHeating",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_SimHierarchyNodeBase, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimHierarchyNodeBase_dataType_SimControlScheme_SetpointScheme_SingleHeating" "', argument " "1"" of type '" "SimHierarchyNodeBase *""'"); 
+  }
+  arg1 = reinterpret_cast< SimHierarchyNodeBase * >(argp1);
+  result = (schema::simxml::ResourcesGeneral::SimControlScheme_SetpointScheme_SingleHeating *)(arg1)->SWIGTEMPLATEDISAMBIGUATOR dataType< schema::simxml::ResourcesGeneral::SimControlScheme_SetpointScheme_SingleHeating >();
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_schema__simxml__ResourcesGeneral__SimControlScheme_SetpointScheme_SingleHeating, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -14129,6 +14290,13 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"SimHierarchyNodeBase_dataType_SimTimeSeriesSchedule_Year_Default", _wrap_SimHierarchyNodeBase_dataType_SimTimeSeriesSchedule_Year_Default, METH_VARARGS, NULL},
 	 { (char *)"SimHierarchyNodeBase_dataType_SimTimeSeriesSchedule_Week_Daily", _wrap_SimHierarchyNodeBase_dataType_SimTimeSeriesSchedule_Week_Daily, METH_VARARGS, NULL},
 	 { (char *)"SimHierarchyNodeBase_dataType_SimTimeSeriesSchedule_Day_Interval", _wrap_SimHierarchyNodeBase_dataType_SimTimeSeriesSchedule_Day_Interval, METH_VARARGS, NULL},
+	 { (char *)"SimHierarchyNodeBase_dataType_SimTemplateZoneLoads_ZoneLoads_Default", _wrap_SimHierarchyNodeBase_dataType_SimTemplateZoneLoads_ZoneLoads_Default, METH_VARARGS, NULL},
+	 { (char *)"SimHierarchyNodeBase_dataType_SimTemplateZoneConditions_ZoneConditions_Default", _wrap_SimHierarchyNodeBase_dataType_SimTemplateZoneConditions_ZoneConditions_Default, METH_VARARGS, NULL},
+	 { (char *)"SimHierarchyNodeBase_dataType_SimInternalLoad_Equipment_Electric", _wrap_SimHierarchyNodeBase_dataType_SimInternalLoad_Equipment_Electric, METH_VARARGS, NULL},
+	 { (char *)"SimHierarchyNodeBase_dataType_SimInternalLoad_People_Default", _wrap_SimHierarchyNodeBase_dataType_SimInternalLoad_People_Default, METH_VARARGS, NULL},
+	 { (char *)"SimHierarchyNodeBase_dataType_SimInternalLoad_Lights_Default", _wrap_SimHierarchyNodeBase_dataType_SimInternalLoad_Lights_Default, METH_VARARGS, NULL},
+	 { (char *)"SimHierarchyNodeBase_dataType_SimController_ZoneControlTemperature_Thermostat", _wrap_SimHierarchyNodeBase_dataType_SimController_ZoneControlTemperature_Thermostat, METH_VARARGS, NULL},
+	 { (char *)"SimHierarchyNodeBase_dataType_SimControlScheme_SetpointScheme_SingleHeating", _wrap_SimHierarchyNodeBase_dataType_SimControlScheme_SetpointScheme_SingleHeating, METH_VARARGS, NULL},
 	 { (char *)"new_SimHierarchyNodeBase", _wrap_new_SimHierarchyNodeBase, METH_VARARGS, NULL},
 	 { (char *)"delete_SimHierarchyNodeBase", _wrap_delete_SimHierarchyNodeBase, METH_VARARGS, NULL},
 	 { (char *)"SimHierarchyNodeBase_swigregister", SimHierarchyNodeBase_swigregister, METH_VARARGS, NULL},
@@ -15660,6 +15828,7 @@ static swig_type_info _swigt__p_schema__simxml__BuildingModel__SimWall_Wall_Exte
 static swig_type_info _swigt__p_schema__simxml__BuildingModel__SimWall_Wall_Interior = {"_p_schema__simxml__BuildingModel__SimWall_Wall_Interior", "schema::simxml::BuildingModel::SimWall_Wall_Interior *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_schema__simxml__BuildingModel__SimWindow_Window_Exterior = {"_p_schema__simxml__BuildingModel__SimWindow_Window_Exterior", "schema::simxml::BuildingModel::SimWindow_Window_Exterior *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_schema__simxml__MepModel__SimController_SupplyWater_Temperature = {"_p_schema__simxml__MepModel__SimController_SupplyWater_Temperature", "schema::simxml::MepModel::SimController_SupplyWater_Temperature *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_schema__simxml__MepModel__SimController_ZoneControlTemperature_Thermostat = {"_p_schema__simxml__MepModel__SimController_ZoneControlTemperature_Thermostat", "schema::simxml::MepModel::SimController_ZoneControlTemperature_Thermostat *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_schema__simxml__MepModel__SimFlowController_Valve_Default = {"_p_schema__simxml__MepModel__SimFlowController_Valve_Default", "schema::simxml::MepModel::SimFlowController_Valve_Default *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_schema__simxml__MepModel__SimFlowController_Valve_TemperingValve = {"_p_schema__simxml__MepModel__SimFlowController_Valve_TemperingValve", "schema::simxml::MepModel::SimFlowController_Valve_TemperingValve *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_schema__simxml__MepModel__SimFlowEnergyTransferStorage_HotWaterTank_Expansion = {"_p_schema__simxml__MepModel__SimFlowEnergyTransferStorage_HotWaterTank_Expansion", "schema::simxml::MepModel::SimFlowEnergyTransferStorage_HotWaterTank_Expansion *", 0, 0, (void*)0, 0};
@@ -15675,9 +15844,13 @@ static swig_type_info _swigt__p_schema__simxml__MepModel__SimFlowSegment_Pipe_In
 static swig_type_info _swigt__p_schema__simxml__MepModel__SimSensor_TemperatureSensor_DryBulb = {"_p_schema__simxml__MepModel__SimSensor_TemperatureSensor_DryBulb", "schema::simxml::MepModel::SimSensor_TemperatureSensor_DryBulb *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_schema__simxml__Model__SimModel = {"_p_schema__simxml__Model__SimModel", "::schema::simxml::Model::SimModel *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_schema__simxml__ResourcesGeneral__SimConnection_HotWaterFlow_Default = {"_p_schema__simxml__ResourcesGeneral__SimConnection_HotWaterFlow_Default", "schema::simxml::ResourcesGeneral::SimConnection_HotWaterFlow_Default *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_schema__simxml__ResourcesGeneral__SimControlScheme_SetpointScheme_SingleHeating = {"_p_schema__simxml__ResourcesGeneral__SimControlScheme_SetpointScheme_SingleHeating", "schema::simxml::ResourcesGeneral::SimControlScheme_SetpointScheme_SingleHeating *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_schema__simxml__ResourcesGeneral__SimDistributionPort_HotWaterFlowPort_Water_In = {"_p_schema__simxml__ResourcesGeneral__SimDistributionPort_HotWaterFlowPort_Water_In", "schema::simxml::ResourcesGeneral::SimDistributionPort_HotWaterFlowPort_Water_In *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_schema__simxml__ResourcesGeneral__SimDistributionPort_HotWaterFlowPort_Water_InOrOut = {"_p_schema__simxml__ResourcesGeneral__SimDistributionPort_HotWaterFlowPort_Water_InOrOut", "schema::simxml::ResourcesGeneral::SimDistributionPort_HotWaterFlowPort_Water_InOrOut *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_schema__simxml__ResourcesGeneral__SimDistributionPort_HotWaterFlowPort_Water_Out = {"_p_schema__simxml__ResourcesGeneral__SimDistributionPort_HotWaterFlowPort_Water_Out", "schema::simxml::ResourcesGeneral::SimDistributionPort_HotWaterFlowPort_Water_Out *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_schema__simxml__ResourcesGeneral__SimInternalLoad_Equipment_Electric = {"_p_schema__simxml__ResourcesGeneral__SimInternalLoad_Equipment_Electric", "schema::simxml::ResourcesGeneral::SimInternalLoad_Equipment_Electric *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_schema__simxml__ResourcesGeneral__SimInternalLoad_Lights_Default = {"_p_schema__simxml__ResourcesGeneral__SimInternalLoad_Lights_Default", "schema::simxml::ResourcesGeneral::SimInternalLoad_Lights_Default *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_schema__simxml__ResourcesGeneral__SimInternalLoad_People_Default = {"_p_schema__simxml__ResourcesGeneral__SimInternalLoad_People_Default", "schema::simxml::ResourcesGeneral::SimInternalLoad_People_Default *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_schema__simxml__ResourcesGeneral__SimMaterialLayerSet_Default_Default = {"_p_schema__simxml__ResourcesGeneral__SimMaterialLayerSet_Default_Default", "schema::simxml::ResourcesGeneral::SimMaterialLayerSet_Default_Default *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_schema__simxml__ResourcesGeneral__SimMaterialLayerSet_GlazingLayerSet_Window = {"_p_schema__simxml__ResourcesGeneral__SimMaterialLayerSet_GlazingLayerSet_Window", "schema::simxml::ResourcesGeneral::SimMaterialLayerSet_GlazingLayerSet_Window *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_schema__simxml__ResourcesGeneral__SimMaterialLayerSet_OpaqueLayerSet_Floor = {"_p_schema__simxml__ResourcesGeneral__SimMaterialLayerSet_OpaqueLayerSet_Floor", "schema::simxml::ResourcesGeneral::SimMaterialLayerSet_OpaqueLayerSet_Floor *", 0, 0, (void*)0, 0};
@@ -15696,6 +15869,8 @@ static swig_type_info _swigt__p_schema__simxml__ResourcesGeneral__SimNode_Digita
 static swig_type_info _swigt__p_schema__simxml__ResourcesGeneral__SimNode_HotWaterFlowPort_Water_In = {"_p_schema__simxml__ResourcesGeneral__SimNode_HotWaterFlowPort_Water_In", "schema::simxml::ResourcesGeneral::SimNode_HotWaterFlowPort_Water_In *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_schema__simxml__ResourcesGeneral__SimNode_HotWaterFlowPort_Water_Out = {"_p_schema__simxml__ResourcesGeneral__SimNode_HotWaterFlowPort_Water_Out", "schema::simxml::ResourcesGeneral::SimNode_HotWaterFlowPort_Water_Out *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_schema__simxml__ResourcesGeneral__SimSpaceBoundary_SecondLevel_SubTypeA = {"_p_schema__simxml__ResourcesGeneral__SimSpaceBoundary_SecondLevel_SubTypeA", "schema::simxml::ResourcesGeneral::SimSpaceBoundary_SecondLevel_SubTypeA *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_schema__simxml__ResourcesGeneral__SimTemplateZoneConditions_ZoneConditions_Default = {"_p_schema__simxml__ResourcesGeneral__SimTemplateZoneConditions_ZoneConditions_Default", "schema::simxml::ResourcesGeneral::SimTemplateZoneConditions_ZoneConditions_Default *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_schema__simxml__ResourcesGeneral__SimTemplateZoneLoads_ZoneLoads_Default = {"_p_schema__simxml__ResourcesGeneral__SimTemplateZoneLoads_ZoneLoads_Default", "schema::simxml::ResourcesGeneral::SimTemplateZoneLoads_ZoneLoads_Default *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Day_Interval = {"_p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Day_Interval", "schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Day_Interval *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Week_Daily = {"_p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Week_Daily", "schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Week_Daily *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Year_Default = {"_p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Year_Default", "schema::simxml::ResourcesGeneral::SimTimeSeriesSchedule_Year_Default *", 0, 0, (void*)0, 0};
@@ -17048,6 +17223,7 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_schema__simxml__BuildingModel__SimWall_Wall_Interior,
   &_swigt__p_schema__simxml__BuildingModel__SimWindow_Window_Exterior,
   &_swigt__p_schema__simxml__MepModel__SimController_SupplyWater_Temperature,
+  &_swigt__p_schema__simxml__MepModel__SimController_ZoneControlTemperature_Thermostat,
   &_swigt__p_schema__simxml__MepModel__SimFlowController_Valve_Default,
   &_swigt__p_schema__simxml__MepModel__SimFlowController_Valve_TemperingValve,
   &_swigt__p_schema__simxml__MepModel__SimFlowEnergyConverter,
@@ -17065,9 +17241,13 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_schema__simxml__Model__SimModel,
   &_swigt__p_schema__simxml__ResourcesGeneral__SimArrayParams,
   &_swigt__p_schema__simxml__ResourcesGeneral__SimConnection_HotWaterFlow_Default,
+  &_swigt__p_schema__simxml__ResourcesGeneral__SimControlScheme_SetpointScheme_SingleHeating,
   &_swigt__p_schema__simxml__ResourcesGeneral__SimDistributionPort_HotWaterFlowPort_Water_In,
   &_swigt__p_schema__simxml__ResourcesGeneral__SimDistributionPort_HotWaterFlowPort_Water_InOrOut,
   &_swigt__p_schema__simxml__ResourcesGeneral__SimDistributionPort_HotWaterFlowPort_Water_Out,
+  &_swigt__p_schema__simxml__ResourcesGeneral__SimInternalLoad_Equipment_Electric,
+  &_swigt__p_schema__simxml__ResourcesGeneral__SimInternalLoad_Lights_Default,
+  &_swigt__p_schema__simxml__ResourcesGeneral__SimInternalLoad_People_Default,
   &_swigt__p_schema__simxml__ResourcesGeneral__SimMaterialLayerSet_Default_Default,
   &_swigt__p_schema__simxml__ResourcesGeneral__SimMaterialLayerSet_GlazingLayerSet_Window,
   &_swigt__p_schema__simxml__ResourcesGeneral__SimMaterialLayerSet_OpaqueLayerSet_Floor,
@@ -17088,6 +17268,8 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_schema__simxml__ResourcesGeneral__SimNode_HotWaterFlowPort_Water_Out,
   &_swigt__p_schema__simxml__ResourcesGeneral__SimPort,
   &_swigt__p_schema__simxml__ResourcesGeneral__SimSpaceBoundary_SecondLevel_SubTypeA,
+  &_swigt__p_schema__simxml__ResourcesGeneral__SimTemplateZoneConditions_ZoneConditions_Default,
+  &_swigt__p_schema__simxml__ResourcesGeneral__SimTemplateZoneLoads_ZoneLoads_Default,
   &_swigt__p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Day_Interval,
   &_swigt__p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Week_Daily,
   &_swigt__p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Year_Default,
@@ -18436,6 +18618,7 @@ static swig_cast_info _swigc__p_schema__simxml__BuildingModel__SimWall_Wall_Exte
 static swig_cast_info _swigc__p_schema__simxml__BuildingModel__SimWall_Wall_Interior[] = {  {&_swigt__p_schema__simxml__BuildingModel__SimWall_Wall_Interior, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_schema__simxml__BuildingModel__SimWindow_Window_Exterior[] = {  {&_swigt__p_schema__simxml__BuildingModel__SimWindow_Window_Exterior, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_schema__simxml__MepModel__SimController_SupplyWater_Temperature[] = {  {&_swigt__p_schema__simxml__MepModel__SimController_SupplyWater_Temperature, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_schema__simxml__MepModel__SimController_ZoneControlTemperature_Thermostat[] = {  {&_swigt__p_schema__simxml__MepModel__SimController_ZoneControlTemperature_Thermostat, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_schema__simxml__MepModel__SimFlowController_Valve_Default[] = {  {&_swigt__p_schema__simxml__MepModel__SimFlowController_Valve_Default, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_schema__simxml__MepModel__SimFlowController_Valve_TemperingValve[] = {  {&_swigt__p_schema__simxml__MepModel__SimFlowController_Valve_TemperingValve, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_schema__simxml__MepModel__SimFlowEnergyTransferStorage_HotWaterTank_Expansion[] = {  {&_swigt__p_schema__simxml__MepModel__SimFlowEnergyTransferStorage_HotWaterTank_Expansion, 0, 0, 0},{0, 0, 0, 0}};
@@ -18451,9 +18634,13 @@ static swig_cast_info _swigc__p_schema__simxml__MepModel__SimFlowSegment_Pipe_In
 static swig_cast_info _swigc__p_schema__simxml__MepModel__SimSensor_TemperatureSensor_DryBulb[] = {  {&_swigt__p_schema__simxml__MepModel__SimSensor_TemperatureSensor_DryBulb, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_schema__simxml__Model__SimModel[] = {  {&_swigt__p_schema__simxml__Model__SimModel, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_schema__simxml__ResourcesGeneral__SimConnection_HotWaterFlow_Default[] = {  {&_swigt__p_schema__simxml__ResourcesGeneral__SimConnection_HotWaterFlow_Default, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_schema__simxml__ResourcesGeneral__SimControlScheme_SetpointScheme_SingleHeating[] = {  {&_swigt__p_schema__simxml__ResourcesGeneral__SimControlScheme_SetpointScheme_SingleHeating, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_schema__simxml__ResourcesGeneral__SimDistributionPort_HotWaterFlowPort_Water_In[] = {  {&_swigt__p_schema__simxml__ResourcesGeneral__SimDistributionPort_HotWaterFlowPort_Water_In, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_schema__simxml__ResourcesGeneral__SimDistributionPort_HotWaterFlowPort_Water_InOrOut[] = {  {&_swigt__p_schema__simxml__ResourcesGeneral__SimDistributionPort_HotWaterFlowPort_Water_InOrOut, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_schema__simxml__ResourcesGeneral__SimDistributionPort_HotWaterFlowPort_Water_Out[] = {  {&_swigt__p_schema__simxml__ResourcesGeneral__SimDistributionPort_HotWaterFlowPort_Water_Out, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_schema__simxml__ResourcesGeneral__SimInternalLoad_Equipment_Electric[] = {  {&_swigt__p_schema__simxml__ResourcesGeneral__SimInternalLoad_Equipment_Electric, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_schema__simxml__ResourcesGeneral__SimInternalLoad_Lights_Default[] = {  {&_swigt__p_schema__simxml__ResourcesGeneral__SimInternalLoad_Lights_Default, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_schema__simxml__ResourcesGeneral__SimInternalLoad_People_Default[] = {  {&_swigt__p_schema__simxml__ResourcesGeneral__SimInternalLoad_People_Default, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_schema__simxml__ResourcesGeneral__SimMaterialLayerSet_Default_Default[] = {  {&_swigt__p_schema__simxml__ResourcesGeneral__SimMaterialLayerSet_Default_Default, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_schema__simxml__ResourcesGeneral__SimMaterialLayerSet_GlazingLayerSet_Window[] = {  {&_swigt__p_schema__simxml__ResourcesGeneral__SimMaterialLayerSet_GlazingLayerSet_Window, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_schema__simxml__ResourcesGeneral__SimMaterialLayerSet_OpaqueLayerSet_Floor[] = {  {&_swigt__p_schema__simxml__ResourcesGeneral__SimMaterialLayerSet_OpaqueLayerSet_Floor, 0, 0, 0},{0, 0, 0, 0}};
@@ -18472,6 +18659,8 @@ static swig_cast_info _swigc__p_schema__simxml__ResourcesGeneral__SimNode_Digita
 static swig_cast_info _swigc__p_schema__simxml__ResourcesGeneral__SimNode_HotWaterFlowPort_Water_In[] = {  {&_swigt__p_schema__simxml__ResourcesGeneral__SimNode_HotWaterFlowPort_Water_In, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_schema__simxml__ResourcesGeneral__SimNode_HotWaterFlowPort_Water_Out[] = {  {&_swigt__p_schema__simxml__ResourcesGeneral__SimNode_HotWaterFlowPort_Water_Out, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_schema__simxml__ResourcesGeneral__SimSpaceBoundary_SecondLevel_SubTypeA[] = {  {&_swigt__p_schema__simxml__ResourcesGeneral__SimSpaceBoundary_SecondLevel_SubTypeA, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_schema__simxml__ResourcesGeneral__SimTemplateZoneConditions_ZoneConditions_Default[] = {  {&_swigt__p_schema__simxml__ResourcesGeneral__SimTemplateZoneConditions_ZoneConditions_Default, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_schema__simxml__ResourcesGeneral__SimTemplateZoneLoads_ZoneLoads_Default[] = {  {&_swigt__p_schema__simxml__ResourcesGeneral__SimTemplateZoneLoads_ZoneLoads_Default, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Day_Interval[] = {  {&_swigt__p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Day_Interval, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Week_Daily[] = {  {&_swigt__p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Week_Daily, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Year_Default[] = {  {&_swigt__p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Year_Default, 0, 0, 0},{0, 0, 0, 0}};
@@ -19824,6 +20013,7 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_schema__simxml__BuildingModel__SimWall_Wall_Interior,
   _swigc__p_schema__simxml__BuildingModel__SimWindow_Window_Exterior,
   _swigc__p_schema__simxml__MepModel__SimController_SupplyWater_Temperature,
+  _swigc__p_schema__simxml__MepModel__SimController_ZoneControlTemperature_Thermostat,
   _swigc__p_schema__simxml__MepModel__SimFlowController_Valve_Default,
   _swigc__p_schema__simxml__MepModel__SimFlowController_Valve_TemperingValve,
   _swigc__p_schema__simxml__MepModel__SimFlowEnergyConverter,
@@ -19841,9 +20031,13 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_schema__simxml__Model__SimModel,
   _swigc__p_schema__simxml__ResourcesGeneral__SimArrayParams,
   _swigc__p_schema__simxml__ResourcesGeneral__SimConnection_HotWaterFlow_Default,
+  _swigc__p_schema__simxml__ResourcesGeneral__SimControlScheme_SetpointScheme_SingleHeating,
   _swigc__p_schema__simxml__ResourcesGeneral__SimDistributionPort_HotWaterFlowPort_Water_In,
   _swigc__p_schema__simxml__ResourcesGeneral__SimDistributionPort_HotWaterFlowPort_Water_InOrOut,
   _swigc__p_schema__simxml__ResourcesGeneral__SimDistributionPort_HotWaterFlowPort_Water_Out,
+  _swigc__p_schema__simxml__ResourcesGeneral__SimInternalLoad_Equipment_Electric,
+  _swigc__p_schema__simxml__ResourcesGeneral__SimInternalLoad_Lights_Default,
+  _swigc__p_schema__simxml__ResourcesGeneral__SimInternalLoad_People_Default,
   _swigc__p_schema__simxml__ResourcesGeneral__SimMaterialLayerSet_Default_Default,
   _swigc__p_schema__simxml__ResourcesGeneral__SimMaterialLayerSet_GlazingLayerSet_Window,
   _swigc__p_schema__simxml__ResourcesGeneral__SimMaterialLayerSet_OpaqueLayerSet_Floor,
@@ -19864,6 +20058,8 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_schema__simxml__ResourcesGeneral__SimNode_HotWaterFlowPort_Water_Out,
   _swigc__p_schema__simxml__ResourcesGeneral__SimPort,
   _swigc__p_schema__simxml__ResourcesGeneral__SimSpaceBoundary_SecondLevel_SubTypeA,
+  _swigc__p_schema__simxml__ResourcesGeneral__SimTemplateZoneConditions_ZoneConditions_Default,
+  _swigc__p_schema__simxml__ResourcesGeneral__SimTemplateZoneLoads_ZoneLoads_Default,
   _swigc__p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Day_Interval,
   _swigc__p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Week_Daily,
   _swigc__p_schema__simxml__ResourcesGeneral__SimTimeSeriesSchedule_Year_Default,
