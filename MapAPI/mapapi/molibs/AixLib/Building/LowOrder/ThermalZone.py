@@ -6,7 +6,6 @@ Created on Mon Nov 23 12:00:26 2015
 """
 import mapapi.MapClasses as MapHierarchy
 
-
 class ThermalZone(MapHierarchy.MapThermalZone):
     """Representation of AixLib.Building.LowOrder.ThermalZone
     """
@@ -30,6 +29,20 @@ class ThermalZone(MapHierarchy.MapThermalZone):
         self.weather = self.add_connector(name="weather",
                                           type="Real",
                                           dimension=3)
+
+    def mapp_me(self):
+
+        from teaser.project import Project
+        import teaser.data.input.simmodel_input as t_sim
+
+        t_prj = Project(load_data=False)
+
+        t_sim.load_lib_sim_model(sim_api=self.project, t_prj=t_prj)
+
+        t_prj.calc_all_buildings(raise_errors=True)
+
+
+
 
         self.target_location = "AixLib.Building.LowOrder.ThermalZone.ThermalZone"
         self.target_name = "thermal_zone" + "_" + self.target_name

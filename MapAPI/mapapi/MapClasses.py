@@ -397,6 +397,9 @@ class MapBuilding(MoObject):
         self.convert_components()
         self.instantiate_connections()
 
+        for tz in self.thermal_zones:
+            tz.mapp_me()
+
 
     def instantiate_connections(self):
         '''instantiates the SimModel topology connections
@@ -467,8 +470,6 @@ class MapBuilding(MoObject):
             component.find_loop_connection()
             self.hvac_components_sim.append(component)
         self.project.hvac_components = self.hvac_components_sim
-
-
 
     def convert_components(self):
         '''Once all hvac components in the SimXML are identified and
