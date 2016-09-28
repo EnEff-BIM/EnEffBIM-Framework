@@ -61,14 +61,39 @@
   </InputParameter>
 
   <!-- property mapping for the night signal controller -->
-  <!-- referenced the time schedule -->
-  <InputParameter RefId="ID03221">
-    <Description>Time series</Description>
-    <ParameterName>hour_1_24</ParameterName>
+  <!-- referenced the end time of the night setback -->
+  <!-- the string items are in the format "Until: HH:MM". The Inputparameter should be of format "HH.MM" -->
+  <InputParameter RefId="ID03221a">
+    <Description>width_value_end</Description>
+    <ParameterName>end_time_1_144a</ParameterName>
     <ValueType>array</ValueType>
     <IsReferenced>true</IsReferenced>
-    <!-- referenced id, referenced element, referenced value -->
-    <RefValue>SimFlowMover_PumprpmSchedName SimTimeSeriesSchedule_Day_Hourly SimTimeSeriesSched_Hour_1_24</RefValue>
+    <!-- referenced id - pointer to the year schedule, referenced element - pointer to the week schedule, referenced subelement - pointer to the day interval, referenced subsubelement - pointer to the definition of the interval, referenced first value in string item elements -->
+    <RefValue>SimFlowMover_PumprpmSchedName SimTimeSeriesSched_Sched_WeekName_1_53 SimTimeSeriesSched_CustomDay_1_2_SchedDayName SimTimeSeriesSched_Time_1_144</RefValue>
+  </InputParameter>
+  
+  <!-- property mapping for the night signal controller -->
+  <!-- referenced the start time of the night setback -->
+  <!-- the string items are in the format "Until: HH:MM". The Inputparameter should be of format "HH.MM" -->
+  <InputParameter RefId="ID03221b">
+    <Description>width_value_start_Time</Description>
+    <ParameterName>start_time_1_144b</ParameterName>
+    <ValueType>array</ValueType>
+    <IsReferenced>true</IsReferenced>
+    <!-- referenced id - pointer to the year schedule, referenced element - pointer to the week schedule, referenced subelement - pointer to the day interval, referenced subsubelement - pointer to the definition of the interval, referenced second value in string item elements -->
+    <RefValue>SimFlowMover_PumprpmSchedName SimTimeSeriesSched_Sched_WeekName_1_53 SimTimeSeriesSched_CustomDay_1_2_SchedDayName SimTimeSeriesSched_Time_1_144</RefValue>
+  </InputParameter>
+  
+  <!-- property mapping for the night signal controller -->
+  <!-- referenced the period of the schedule -->
+  <!-- the string items are in the format "Until: HH:MM". The Inputparameter should be of format "HH.MM" -->
+  <InputParameter RefId="ID03221c">
+    <Description>period</Description>
+    <ParameterName>period_time_1_144c</ParameterName>
+    <ValueType>array</ValueType>
+    <IsReferenced>true</IsReferenced>
+    <!-- referenced id - pointer to the year schedule, referenced element - pointer to the week schedule, referenced subelement - pointer to the day interval, referenced subsubelement - pointer to the definition of the interval, referenced third value in string item elements -->
+    <RefValue>SimFlowMover_PumprpmSchedName SimTimeSeriesSched_Sched_WeekName_1_53 SimTimeSeriesSched_CustomDay_1_2_SchedDayName SimTimeSeriesSched_Time_1_144</RefValue>
   </InputParameter>
   
   <!-- property mapping for the hot water boiler -->
@@ -200,6 +225,13 @@
     <ParameterName>startTime</ParameterName>
     <ValueType>single</ValueType>
     <ValueFormat>st_out</ValueFormat>
+  </OutputParameter>
+  
+  <OutputParameter RefId="ID03233">
+    <Description>Time for one period [s]</Description>
+    <ParameterName>period</ParameterName>
+    <ValueType>single</ValueType>
+    <ValueFormat>p_out</ValueFormat>
   </OutputParameter>
   
   <!-- property mapping of the maiximum heat output for the hot water boiler -->
@@ -499,35 +531,35 @@
     <DefaultValueNumber>0.0000249999993684</DefaultValueNumber>
   </Property_Map_Gap>
 
-  <!-- a temporary rule instance for boiler outlet water temperature setting -->
+  <!-- a temporary rule instance for boiler outlet water temperature setting, if no transformation algorithm is given. -->
   <Property_Map_Gap RefId="ID0121T">
     <Description>boiler outlet water temperature defintion</Description>
     <TargetPropertyName>k</TargetPropertyName>
     <DefaultValueNumber>328.15</DefaultValueNumber>
   </Property_Map_Gap>
 
-  <!-- a temporary rule instance for the pump head for the control strategy [m] -->
+  <!-- a temporary rule instance for the pump head for the control strategy [m], if no transformation algorithm is given. -->
   <Property_Map_Gap RefId="ID0312T">
     <Description>Pump head for the control strategy [m]</Description>
     <TargetPropertyName>Head_max</TargetPropertyName>
     <DefaultValueNumber>1</DefaultValueNumber>
   </Property_Map_Gap>
 
-  <!-- a temporary rule instance for the control strategy -->
+  <!-- a temporary rule instance for the control strategy, if no transformation algorithm is given. -->
   <Property_Map_Gap RefId="ID0313T">
     <Description>control strategy: 2 or 1</Description>
     <TargetPropertyName>ControlStrategy</TargetPropertyName>
     <DefaultValueNumber>1</DefaultValueNumber>
   </Property_Map_Gap>
 
-  <!-- a temporary rule instance for the width of pulse -->
+  <!-- a temporary rule instance for the width of pulse, if no transformation algorithm is given. -->
   <Property_Map_Gap RefId="ID0322T">
     <Description>Width of pulse in % of period</Description>
     <TargetPropertyName>width</TargetPropertyName>
-    <DefaultValueNumber>45.8</DefaultValueNumber>
+    <DefaultValueNumber>50.0</DefaultValueNumber>
   </Property_Map_Gap>
 
-   <!-- a temporary rule instance for the time instant of first pulse [s] -->
+   <!-- a temporary rule instance for the time instant of first pulse [s], if no transformation algorithm is given. -->
   <Property_Map_Gap RefId="ID0323T">
     <Description>time instant of first pulse [s]</Description>
     <TargetPropertyName>startTime</TargetPropertyName>
@@ -642,10 +674,14 @@
 
   <!-- property mapping for the night signal controller -->
   <!-- set width of pulse in % of period -->
+  <!-- ((18-6)/24)*100=width -->
   <Property_Map_Transformation RefId="ID0322">
     <Description>Set width of pulse in % of period</Description>
-    <InputParameterName>ID03221</InputParameterName>
-    <Function>w_out = ( 1.0 - ( SUM ( hour_1_24 1 ) / 24.0 ) ) * 100 </Function>
+    <InputParameterName>ID03221a</InputParameterName>
+    <InputParameterName>ID03221b</InputParameterName>
+    <InputParameterName>ID03221c</InputParameterName>
+    <Function>w_out = ( ( start_time_1_144b - end_time_1_144a ) / period_time_1_144c ) * 100 </Function>
+    <!-- Function>w_out = ( 1.0 - ( SUM ( hour_1_24 1 ) / 24.0 ) ) * 100 </Function -->
     <OutputParameterName>ID03222</OutputParameterName>
   </Property_Map_Transformation>
 
@@ -653,9 +689,18 @@
   <!-- set time instant of first pulse [s] -->
   <Property_Map_Transformation RefId="ID0323">
     <Description>Set time instant of first pulse [s]</Description>
-    <InputParameterName>ID03221</InputParameterName>
-    <Function>st_out = ( POSE ( hour_1_24 1 ) - 1 ) * 3600 </Function>
+    <InputParameterName>ID03221b</InputParameterName>
+    <Function>st_out = start_time_1_144b * 3600 </Function>
     <OutputParameterName>ID03231</OutputParameterName>
+  </Property_Map_Transformation>
+  
+  <!-- property mapping for the night signal controller -->
+  <!-- set period for boolean pulse -->
+  <Property_Map_Transformation RefId="ID0324">
+    <Description>set time for one period for the boolean pulse [s]</Description>
+    <InputParameterName>ID03221c</InputParameterName>
+    <Function>p_out = start_time_1_144c * 3600 </Function>
+    <OutputParameterName>ID03233</OutputParameterName>
   </Property_Map_Transformation>
 
     <!--Empty component without propeties. It does not exist in the official SimModel schema and is not defined on the Modelica side. Using a pipe as a temporary replacement, to allow a representation of this component coming form the IFC side!-->  
@@ -773,6 +818,7 @@
 	<Property_Map_Gap_Name>ID0323T</Property_Map_Gap_Name>
     <Property_Map_Transformation_Name>ID0322</Property_Map_Transformation_Name>
     <Property_Map_Transformation_Name>ID0323</Property_Map_Transformation_Name>
+    <Property_Map_Transformation_Name>ID0324</Property_Map_Transformation_Name>
   </ComponentMappingGroup>
   
   <!-- component mapping for the water type radiator -->
