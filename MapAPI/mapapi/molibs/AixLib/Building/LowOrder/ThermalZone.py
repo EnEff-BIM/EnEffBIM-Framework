@@ -32,21 +32,21 @@ class ThermalZone(MapHierarchy.MapThermalZone):
 
     def mapp_me(self):
 
-        from teaser.project import Project
-        import teaser.data.input.simmodel_input as t_sim
+        #from teaser.project import Project
+        #import teaser.data.input.simmodel_input as t_sim
 
-        t_prj = Project(load_data=False)
+        #t_prj = Project(load_data=False)
 
-        t_sim.load_lib_sim_model(sim_api=self.project, t_prj=t_prj)
+       # t_sim.load_lib_sim_model(sim_api=self.project, t_prj=t_prj)
 
-        t_prj.calc_all_buildings(raise_errors=True)
+       # t_prj.calc_all_buildings(raise_errors=True)
 
 
 
 
         self.target_location = "AixLib.Building.LowOrder.ThermalZone.ThermalZone"
         self.target_name = "thermal_zone" + "_" + self.target_name
-        """
+
         from mapapi.molibs.MSL.Blocks.Sources.Constant import Constant
         const = Constant(self.project,
                          self.hierarchy_node,
@@ -56,11 +56,58 @@ class ThermalZone(MapHierarchy.MapThermalZone):
         const.k.value = 0.5
         const.add_connection(const.y, self.infiltrationRate)
         self.project.mod_components.append(const)
-        table = [(0, 0)]
+
+        table_elect = [(0, 0)]
+        table_light = [(0, 0)]
+        table_people = [(0, 0)]
         zone_child = self.hierarchy_node.getChildList()
-        for a in range(zone_child.size()):
-            if zone_child[a].ClassType() == "SimTimeSeriesSchedule_Year_Default":
-                year_child = zone_child[a].getChildList()
+        for x in range(zone_child.size()):
+            if zone_child[x].isClassType(
+                    "SimTemplateZoneLoads_ZoneLoads_Default"):
+                load_child = zone_child[x].getChildList()
+                for z in range(load_child.size()):
+                    if load_child[z].isClassType(
+                            "SimInternalLoad_Equipment_Electric"):
+                        table_elect = self._help_schedule(table_elect,
+                                                         load_child[z])
+                    if load_child[z].isClassType(
+                            "SimInternalLoad_Lights_Default"):
+                        table_light = self._help_schedule(table_light,
+                                                        load_child[z])
+                    elif load_child[z].isClassType(
+                            "SimInternalLoad_People_Default"):
+                        table_people = self._help_schedule(table_people,
+                                                         load_child[z])
+
+        from mapapi.molibs.MSL.Blocks.Sources.CombiTimeTable import \
+            CombiTimeTable
+        combi_time = CombiTimeTable(
+            self.project,
+            self.hierarchy_node,
+            self)
+        table = []
+        for i, value in enumerate(table_elect):
+            table.append(value)
+        for i, value in enumerate(table_light):
+            table[i] += (value[1],)
+        for i, value in enumerate(table_people):
+            table[i] += (value[1],)
+        combi_time.init_me()
+        combi_time.target_name = "combi_time" + "_" + self.target_name
+        combi_time.table.value = table
+        combi_time.y.dimension = 3
+        self.add_connection(self.internalGains, combi_time.y)
+        self.project.mod_components.append(combi_time)
+
+        # import teaser.Data.Input.simxml_input as teaser
+        # self.teaser_parameters = teaser.api_to_teaser(self)
+
+    def _help_schedule(self, table, hierarchy_schedule_internal):
+
+        child = hierarchy_schedule_internal.getChildList()
+        for a in range(child.size()):
+            if child[a].ClassType() == "SimTimeSeriesSchedule_Year_Default":
+                year_child = child[a].getChildList()
                 for b in range(len(year_child)):
                     if year_child[b].ClassType() == \
                             "SimTimeSeriesSchedule_Week_Daily":
@@ -74,18 +121,5 @@ class ThermalZone(MapHierarchy.MapThermalZone):
                                 value = \
                                     sim_obje.SimTimeSeriesSched_ValUntilTime_1_144().getNumberList()[i]
                                 table.append((end_time, value))
+        return table
 
-        from mapapi.molibs.MSL.Blocks.Sources.CombiTimeTable import \
-            CombiTimeTable
-        combi_time = CombiTimeTable(
-            self.project,
-            self.hierarchy_node,
-            self)
-        combi_time.init_me()
-        combi_time.target_name = "combi_time" + "_" + self.target_name
-        combi_time.table.value = table
-        self.project.mod_components.append(combi_time)
-
-        # import teaser.Data.Input.simxml_input as teaser
-        # self.teaser_parameters = teaser.api_to_teaser(self)
-        """

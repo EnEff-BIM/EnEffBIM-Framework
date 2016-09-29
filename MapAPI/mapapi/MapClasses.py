@@ -82,6 +82,13 @@ import SimNode_DigitalControl_HWLoop_DigitalSignal_In
 import SimTimeSeriesSchedule_Year_Default
 import SimTimeSeriesSchedule_Week_Daily
 import SimTimeSeriesSchedule_Day_Interval
+import SimTemplateZoneLoads_ZoneLoads_Default
+import SimTemplateZoneConditions_ZoneConditions_Default
+import SimInternalLoad_Equipment_Electric
+import SimInternalLoad_People_Default
+import SimInternalLoad_Lights_Default
+import SimController_ZoneControlTemperature_Thermostat
+import SimControlScheme_SetpointScheme_SingleHeating
 
 from SimModel_Translator import SimTranslator
 
@@ -1082,6 +1089,14 @@ class MapSpaceBoundary(object):
         self.internal_external = \
             self.sim_instance.InternalOrExternalBoundary().getValue()
         self.area = self.sim_instance.GrossSurfaceArea().getValue()/1000000
+
+        child = self.hierarchy_node.getChildList()
+        for q in range(child.size()):
+            if child[q].isClassType("SimGeomVector_Vector_Direction"):
+                pass
+                # self.simmodel_normal_vector = child[q].getSimModelObject(
+                # ).DirectionRatios()
+
 
         self.simmodel_normal_vector = None
         self.tilt = None
