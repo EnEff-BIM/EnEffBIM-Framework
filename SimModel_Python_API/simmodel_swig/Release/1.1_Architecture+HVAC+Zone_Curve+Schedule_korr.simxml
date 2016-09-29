@@ -794,7 +794,7 @@
 		<simcore:AssignedToGroups>ID0LMbjl8XfFaui1YxJs_D10 ID0LMbjl8XfFaui1YxJs_D11 </simcore:AssignedToGroups>
 		<simmep:SimFlowPlant_Name>EnEff_Boiler:Standard:908018</simmep:SimFlowPlant_Name>
 		<simmep:SimFlowPlant_FuelType>NaturalGas</simmep:SimFlowPlant_FuelType>
-		<simmep:SimFlowPlant_NomCap>215005.058334194</simmep:SimFlowPlant_NomCap>
+		<simmep:SimFlowPlant_NomCap>1300.00</simmep:SimFlowPlant_NomCap>
 		<simmep:SimFlowPlant_NomThermalEff>846.85</simmep:SimFlowPlant_NomThermalEff>
 		<simmep:SimFlowPlant_NrmlizedBoilerEffCurveName> ID_cp_0LMbjl8XfFaui1YxJs_D66</simmep:SimFlowPlant_NrmlizedBoilerEffCurveName>
 		<simmep:SimFlowPlant_DesignWaterOutletTemp>70</simmep:SimFlowPlant_DesignWaterOutletTemp>
