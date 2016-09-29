@@ -781,9 +781,9 @@
 		<simmep:SimFlowMover_RatedPumpHead>544.13</simmep:SimFlowMover_RatedPumpHead>
 		<simmep:SimFlowMover_FracMotorInEffToFluidStream>0</simmep:SimFlowMover_FracMotorInEffToFluidStream>
 		<simmep:SimFlowMover_Coef1OfThePartLoadPerfCurve>0.78</simmep:SimFlowMover_Coef1OfThePartLoadPerfCurve>
-		<simmep:SimFlowMover_Coef2OfThePartLoadPerfCurve>0</simmep:SimFlowMover_Coef2OfThePartLoadPerfCurve>
-		<simmep:SimFlowMover_Coef3OfThePartLoadPerfCurve>0</simmep:SimFlowMover_Coef3OfThePartLoadPerfCurve>
-		<simmep:SimFlowMover_Coef4OfThePartLoadPerfCurve>0</simmep:SimFlowMover_Coef4OfThePartLoadPerfCurve>
+		<simmep:SimFlowMover_Coef2OfThePartLoadPerfCurve>0.6</simmep:SimFlowMover_Coef2OfThePartLoadPerfCurve>
+		<simmep:SimFlowMover_Coef3OfThePartLoadPerfCurve>0.5</simmep:SimFlowMover_Coef3OfThePartLoadPerfCurve>
+		<simmep:SimFlowMover_Coef4OfThePartLoadPerfCurve>0.8</simmep:SimFlowMover_Coef4OfThePartLoadPerfCurve>
 		<simmep:SimFlowMover_PumpContType>OnOff</simmep:SimFlowMover_PumpContType>
 		<simmep:SimFlowMover_PumprpmSchedName>ID_prv01_0LMbjl8XfFaui1YxJs_D1q</simmep:SimFlowMover_PumprpmSchedName>
 	</SimFlowMover_Pump_VariableSpeedReturn>

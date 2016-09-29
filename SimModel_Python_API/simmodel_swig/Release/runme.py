@@ -73,6 +73,13 @@ import SimNode_DigitalControl_HWLoop_DigitalSignal_In
 import SimTimeSeriesSchedule_Year_Default
 import SimTimeSeriesSchedule_Week_Daily
 import SimTimeSeriesSchedule_Day_Interval
+import SimTemplateZoneLoads_ZoneLoads_Default
+import SimTemplateZoneConditions_ZoneConditions_Default
+import SimInternalLoad_Equipment_Electric
+import SimInternalLoad_People_Default
+import SimInternalLoad_Lights_Default
+import SimController_ZoneControlTemperature_Thermostat
+import SimControlScheme_SetpointScheme_SingleHeating
 
 from SimModel_Translator import SimTranslator
 
@@ -94,6 +101,7 @@ simxml_data = translator.loadSimModel(zoneFile_path, hvacFile_path)
 # get SimModel mapped data
 # here we need to specify the mapping rule xml file location before translating the data
 simxml_mapped_data = translator.getSimMappedData(".\\mapping_rule\\mapping_rule_xml\\AixLib_v2.0.xml")
+#simxml_mapped_data = translator.getSimMappedData(".\\mapping_rule\\mapping_rule_xml\\BuildingSystems_v1.0.xml")
 
 # we provide two different methods for accessing the mapped data
 #

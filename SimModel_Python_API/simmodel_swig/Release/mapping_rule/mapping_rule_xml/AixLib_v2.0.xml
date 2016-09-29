@@ -103,7 +103,7 @@
     <CoefficientName>a0</CoefficientName>
     <IsReferenced>true</IsReferenced>
     <!-- referenced id, referenced element, referenced value -->
-    <RefValue>SimFlowPlant_NrmlizedBoilerEffCurveName SimPerformanceCurve_Mathematical_Quadratic SimPerfCurve_Coef1Constant</RefValue>
+    <RefValue>SimFlowPlant_NrmlizedBoilerEffCurveName SimPerformanceCurve_Mathematical_Bicubic SimPerfCurve_Coef1Constant</RefValue>
   </InputCoefficient>
 
   <!-- property mapping for the hot water boiler -->
@@ -113,7 +113,7 @@
     <CoefficientName>a1</CoefficientName>
     <IsReferenced>true</IsReferenced>
     <!-- referenced id, referenced element, referenced value -->
-    <RefValue>SimFlowPlant_NrmlizedBoilerEffCurveName SimPerformanceCurve_Mathematical_Quadratic SimPerfCurve_Coef_2_X</RefValue>
+    <RefValue>SimFlowPlant_NrmlizedBoilerEffCurveName SimPerformanceCurve_Mathematical_Bicubic SimPerfCurve_Coef_2_X</RefValue>
   </InputCoefficient>
 
   <!-- property mapping for the hot water boiler -->
@@ -123,7 +123,7 @@
     <CoefficientName>a2</CoefficientName>
     <IsReferenced>true</IsReferenced>
     <!-- referenced id, referenced element, referenced value -->
-    <RefValue>SimFlowPlant_NrmlizedBoilerEffCurveName SimPerformanceCurve_Mathematical_Quadratic SimPerfCurve_Coef_3_X_2</RefValue>
+    <RefValue>SimFlowPlant_NrmlizedBoilerEffCurveName SimPerformanceCurve_Mathematical_Bicubic SimPerfCurve_Coef_3_X_2</RefValue>
   </InputCoefficient>
 
   <!-- property mapping for the water pump of variable speed return -->
@@ -718,7 +718,7 @@
     <TargetComponentName>pipe_HeatTransfer</TargetComponentName>
     <TargetLocation>AixLib.Fluid.FixedResistances.StaticPipe</TargetLocation>
     <Property_Map_One2One_Name>ID061</Property_Map_One2One_Name>
-	<Property_Map_Gap_Name>ID061T</Property_Map_Gap_Name>
+	<!-- <Property_Map_Gap_Name>ID061T</Property_Map_Gap_Name> -->
     <Property_Map_Gap_Name>ID063</Property_Map_Gap_Name>
     <Property_Map_Gap_Name>ID062</Property_Map_Gap_Name>
     <Property_Map_Gap_Name>ID064</Property_Map_Gap_Name>
@@ -800,7 +800,7 @@
     <Property_Map_One2One_Name>ID0314</Property_Map_One2One_Name>
     <Property_Map_Gap_Name>ID0315</Property_Map_Gap_Name>
     <Property_Map_Gap_Name>ID0316</Property_Map_Gap_Name>
-	<Property_Map_Gap_Name>ID0312T</Property_Map_Gap_Name>
+	<!-- <Property_Map_Gap_Name>ID0312T</Property_Map_Gap_Name> -->
 	<Property_Map_Gap_Name>ID0313T</Property_Map_Gap_Name>
     <Property_Map_Transformation_Name>ID0311</Property_Map_Transformation_Name>
     <Property_Map_Transformation_Name>ID0312</Property_Map_Transformation_Name>
@@ -922,6 +922,7 @@
 	<Component_Map_One2Many_Name>ID01</Component_Map_One2Many_Name>
 	<Component_Map_One2Many_Name>ID02</Component_Map_One2Many_Name>
     <Component_Map_One2Many_Name>ID03</Component_Map_One2Many_Name>
+	<Component_Map_One2Many_Name>ID10</Component_Map_One2Many_Name>
 	<Component_Map_Gap_Name>ID05</Component_Map_Gap_Name>
   </Library_Mapping_Rule>
 </Data_Model_Map>

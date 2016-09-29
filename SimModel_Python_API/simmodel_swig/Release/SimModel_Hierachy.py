@@ -415,6 +415,27 @@ class SimHierarchyNodeBase(_object):
     def dataType_SimTimeSeriesSchedule_Day_Interval(self):
         return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimTimeSeriesSchedule_Day_Interval(self)
 
+    def dataType_SimTemplateZoneLoads_ZoneLoads_Default(self):
+        return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimTemplateZoneLoads_ZoneLoads_Default(self)
+
+    def dataType_SimTemplateZoneConditions_ZoneConditions_Default(self):
+        return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimTemplateZoneConditions_ZoneConditions_Default(self)
+
+    def dataType_SimInternalLoad_Equipment_Electric(self):
+        return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimInternalLoad_Equipment_Electric(self)
+
+    def dataType_SimInternalLoad_People_Default(self):
+        return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimInternalLoad_People_Default(self)
+
+    def dataType_SimInternalLoad_Lights_Default(self):
+        return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimInternalLoad_Lights_Default(self)
+
+    def dataType_SimController_ZoneControlTemperature_Thermostat(self):
+        return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimController_ZoneControlTemperature_Thermostat(self)
+
+    def dataType_SimControlScheme_SetpointScheme_SingleHeating(self):
+        return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimControlScheme_SetpointScheme_SingleHeating(self)
+
     def __init__(self):
         this = _SimModel_Hierachy.new_SimHierarchyNodeBase()
         try:
