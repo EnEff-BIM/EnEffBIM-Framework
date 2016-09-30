@@ -141,7 +141,10 @@ class MoObject(object):
         self.target_location = None
         self.hierarchy_node = hierarchy_node
         if self.hierarchy_node is not None:
-            self.sim_instance = self.hierarchy_node.getSimModelObject()
+            try:
+                self.sim_instance = self.hierarchy_node.getSimModelObject()
+            except:
+                self.sim_instance = None
         else:
             self.sim_instance = None
         if self.sim_instance is not None:

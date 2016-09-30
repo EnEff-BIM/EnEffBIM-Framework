@@ -44,10 +44,10 @@ class Radiator(MapHierarchy.MapComponent):
             if con_in.ClassType() == 'SimFlowController_Valve_TemperingValve':
                 for comp in self.project.hvac_components:
                     if comp.sim_ref_id == con_in.getSimModelObject().RefId():
-                        try:
-                            self.pid_ctrl_valve(self.parent, comp)
-                        except:
-                            warnings.warn("Could not apply controller")
+                        #try:
+                        self.pid_ctrl_valve(self.parent, comp)
+                        #except:
+                        #    warnings.warn("Could not apply controller")
 
     def pid_ctrl_valve(self, thermal_zone, valve_component):
         """
@@ -64,8 +64,6 @@ class Radiator(MapHierarchy.MapComponent):
         """
 
         valve_component.pid_control(thermal_zone)
-
-
 
     def connect_zone(self, thermal_zone):
 

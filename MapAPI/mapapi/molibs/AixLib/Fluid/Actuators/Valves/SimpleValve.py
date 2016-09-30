@@ -29,11 +29,14 @@ class SimpleValve(MapHierarchy.MapComponent):
     def pid_control(self, thermal_zone):
         map_sim = self.hierarchy_node.getMappedComponents()
         for i in range(map_sim.size()):
-            if map_sim[i].isClassType('Modelica.Blocks.Continuous.LimPID'):
+            if map_sim[i].getTargetLocation() == \
+                    "Modelica.Blocks.Continuous.LimPID":
                 map_pid = map_sim[i]
-            elif map_sim[i].isClassType('Modelica.Blocks.Sources.Constant'):
+            elif map_sim[i].getTargetLocation() == \
+                    'Modelica.Blocks.Sources.Constant':
                 map_const = map_sim[i]
-            elif map_sim[i].isClassType('Modelica.Thermal.HeatTransfer.Sensors.TemperatureSensor'):
+            elif map_sim[i].getTargetLocation() == \
+                    'Modelica.Thermal.HeatTransfer.Sensors.TemperatureSensor':
                 map_sens = map_sim[i]
 
         from mapapi.molibs.MSL.Blocks.Continuous.LimPID import LimPID

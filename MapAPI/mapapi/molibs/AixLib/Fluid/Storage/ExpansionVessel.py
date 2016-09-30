@@ -16,6 +16,7 @@ class ExpansionVessel(MapHierarchy.MapComponent):
         self.port_a = self.add_connector("port_a", "FluidPort")
 
     def mapp_me(self):
+        
         self.target_name += "vessel"
         self.target_location = ("AixLib.Fluid.Storage.ExpansionVessel")
         self.target_name = "_expansionVessel"
