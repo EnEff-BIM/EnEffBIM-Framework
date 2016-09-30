@@ -45,11 +45,11 @@ class Radiator(MapHierarchy.MapComponent):
                 for comp in self.project.hvac_components:
                     if comp.sim_ref_id == con_in.getSimModelObject().RefId():
                         try:
-                            self.ctrl_valve(self.parent, comp)
+                            self.pid_ctrl_valve(self.parent, comp)
                         except:
                             warnings.warn("Could not apply controller")
 
-    def ctrl_valve(self, thermal_zone, valve_component):
+    def pid_ctrl_valve(self, thermal_zone, valve_component):
         """
 
         Parameters
@@ -63,33 +63,9 @@ class Radiator(MapHierarchy.MapComponent):
 
         """
 
-        from mapapi.molibs.MSL.Blocks.Continuous.LimPID import LimPID
-        pid = LimPID(self.project,
-                     valve_component.hierarchy_node,
-                     valve_component)
-        pid.init_me()
-        pid.target_name = "pid" + "_" + valve_component.target_name
-        valve_component.add_connection(valve_component.opening, pid.y)
-        self.project.mod_components.append(pid)
+        valve_component.pid_control(thermal_zone)
 
-        from mapapi.molibs.MSL.Blocks.Sources.Constant import Constant
-        const = Constant(self.project,
-                         valve_component.hierarchy_node,
-                         valve_component)
-        const.init_me()
-        const.target_name = "setTemp" + "_" + valve_component.target_name
-        const.k.value = 293.15
-        const.add_connection(const.y, pid.u_s)
-        self.project.mod_components.append(const)
 
-        from mapapi.molibs.MSL.Thermal.HeatTransfer.Sensors.TemperatureSensor \
-            import TemperatureSensor
-
-        sens = TemperatureSensor(self.project, self.hierarchy_node, self)
-        sens.init_me()
-        sens.add_connection(sens.T, pid.u_m)
-        sens.add_connection(sens.port, thermal_zone.internalGainsConv)
-        self.project.mod_components.append(sens)
 
     def connect_zone(self, thermal_zone):
 

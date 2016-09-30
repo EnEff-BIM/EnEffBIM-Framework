@@ -17,6 +17,8 @@ class Pump(MapHierarchy.MapComponent):
 
     def init_me(self):
         self.fluid_two_port()
+        self.IsNight = self.add_connector("IsNight", "Boolean")
+
         return True
 
     def mapp_me(self):
@@ -26,7 +28,7 @@ class Pump(MapHierarchy.MapComponent):
         prop_list = map_sim[0].getMappedPropertyList()
         self.arrange_parameters(prop_list)
 
-        self.IsNight = self.add_connector("IsNight", "Boolean")
+
         table = [(0, 0)]
         pump_child = self.hierarchy_node.getChildList()
         for a in range(pump_child.size()):
@@ -68,7 +70,6 @@ class Pump(MapHierarchy.MapComponent):
                     self)
         r_to_b.init_me()
         r_to_b.target_name = "reatToBool" + "_" + self.target_name
-        r_to_b.threshold.value = 1.0
         r_to_b.add_connection(r_to_b.u, combi_time.y)
         r_to_b.add_connection(r_to_b.y, self.IsNight)
         self.project.mod_components.append(r_to_b)
