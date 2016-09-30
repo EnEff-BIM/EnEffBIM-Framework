@@ -3726,7 +3726,7 @@ namespace Swig {
 #define SWIGTYPE_p_xsd__cxx__tree__no_type_infoT_char_t swig_types[311]
 #define SWIGTYPE_p_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__string_t swig_types[312]
 #define SWIGTYPE_p_xsd__cxx__tree__not_derivedT_char_t swig_types[313]
-#define SWIGTYPE_p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__doubleList_xsd__cxx__tree__fundamental_pT_schema__simxml__SimModelCore__doubleList_t__r_t swig_types[314]
+#define SWIGTYPE_p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__doubleList_false_t swig_types[314]
 #define SWIGTYPE_p_xsd__cxx__tree__parsingT_char_t swig_types[315]
 #define SWIGTYPE_p_xsd__cxx__tree__propertiesT_char_t swig_types[316]
 #define SWIGTYPE_p_xsd__cxx__tree__qnameT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__uri_xsd__cxx__tree__ncname_t swig_types[317]
@@ -5186,7 +5186,7 @@ SWIGINTERN PyObject *_wrap_SimGeomVector_Vector_Direction_DirectionRatios__SWIG_
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeometry::SimGeomVector_Vector_Direction * >(argp1);
   result = (schema::simxml::ResourcesGeometry::SimGeomVector_Vector_Direction::DirectionRatios_optional *) &((schema::simxml::ResourcesGeometry::SimGeomVector_Vector_Direction const *)arg1)->DirectionRatios();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__doubleList_xsd__cxx__tree__fundamental_pT_schema__simxml__SimModelCore__doubleList_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__doubleList_false_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -5208,7 +5208,7 @@ SWIGINTERN PyObject *_wrap_SimGeomVector_Vector_Direction_DirectionRatios__SWIG_
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeometry::SimGeomVector_Vector_Direction * >(argp1);
   result = (schema::simxml::ResourcesGeometry::SimGeomVector_Vector_Direction::DirectionRatios_optional *) &(arg1)->DirectionRatios();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__doubleList_xsd__cxx__tree__fundamental_pT_schema__simxml__SimModelCore__doubleList_t__r_t, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__doubleList_false_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -5265,7 +5265,7 @@ SWIGINTERN PyObject *_wrap_SimGeomVector_Vector_Direction_DirectionRatios__SWIG_
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimGeomVector_Vector_Direction_DirectionRatios" "', argument " "1"" of type '" "schema::simxml::ResourcesGeometry::SimGeomVector_Vector_Direction *""'"); 
   }
   arg1 = reinterpret_cast< schema::simxml::ResourcesGeometry::SimGeomVector_Vector_Direction * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__doubleList_xsd__cxx__tree__fundamental_pT_schema__simxml__SimModelCore__doubleList_t__r_t,  0  | 0);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__doubleList_false_t,  0  | 0);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SimGeomVector_Vector_Direction_DirectionRatios" "', argument " "2"" of type '" "schema::simxml::ResourcesGeometry::SimGeomVector_Vector_Direction::DirectionRatios_optional const &""'"); 
   }
@@ -5368,7 +5368,7 @@ SWIGINTERN PyObject *_wrap_SimGeomVector_Vector_Direction_DirectionRatios(PyObje
     int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_schema__simxml__ResourcesGeometry__SimGeomVector_Vector_Direction, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__doubleList_xsd__cxx__tree__fundamental_pT_schema__simxml__SimModelCore__doubleList_t__r_t, 0);
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__doubleList_false_t, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_SimGeomVector_Vector_Direction_DirectionRatios__SWIG_3(self, args);
@@ -8611,7 +8611,7 @@ static swig_type_info _swigt__p_xsd__cxx__tree__no_prefix_mappingT_char_t = {"_p
 static swig_type_info _swigt__p_xsd__cxx__tree__no_type_infoT_char_t = {"_p_xsd__cxx__tree__no_type_infoT_char_t", "xml_schema::no_type_info *|::xsd::cxx::tree::no_type_info< char > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__string_t = {"_p_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__string_t", "::xsd::cxx::tree::normalized_string< char,xsd::cxx::tree::string > *|xml_schema::normalized_string *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__not_derivedT_char_t = {"_p_xsd__cxx__tree__not_derivedT_char_t", "::xsd::cxx::tree::not_derived< char > *|xml_schema::not_derived *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__doubleList_xsd__cxx__tree__fundamental_pT_schema__simxml__SimModelCore__doubleList_t__r_t = {"_p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__doubleList_xsd__cxx__tree__fundamental_pT_schema__simxml__SimModelCore__doubleList_t__r_t", "schema::simxml::ResourcesGeometry::SimGeomVector_Vector_Direction::DirectionRatios_optional *|xsd::cxx::tree::optional< ::schema::simxml::SimModelCore::doubleList,xsd::cxx::tree::fundamental_p< ::schema::simxml::SimModelCore::doubleList >::r > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__doubleList_false_t = {"_p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__doubleList_false_t", "schema::simxml::ResourcesGeometry::SimGeomVector_Vector_Direction::DirectionRatios_optional *|xsd::cxx::tree::optional< ::schema::simxml::SimModelCore::doubleList,false > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__parsingT_char_t = {"_p_xsd__cxx__tree__parsingT_char_t", "xml_schema::parsing *|::xsd::cxx::tree::parsing< char > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__propertiesT_char_t = {"_p_xsd__cxx__tree__propertiesT_char_t", "::xsd::cxx::tree::properties< char > *|xml_schema::properties *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_xsd__cxx__tree__qnameT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__uri_xsd__cxx__tree__ncname_t = {"_p_xsd__cxx__tree__qnameT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__uri_xsd__cxx__tree__ncname_t", "xml_schema::qname *|::xsd::cxx::tree::qname< char,xsd::cxx::tree::simple_type,xsd::cxx::tree::uri,xsd::cxx::tree::ncname > *", 0, 0, (void*)0, 0};
@@ -8946,7 +8946,7 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_xsd__cxx__tree__no_type_infoT_char_t,
   &_swigt__p_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__string_t,
   &_swigt__p_xsd__cxx__tree__not_derivedT_char_t,
-  &_swigt__p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__doubleList_xsd__cxx__tree__fundamental_pT_schema__simxml__SimModelCore__doubleList_t__r_t,
+  &_swigt__p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__doubleList_false_t,
   &_swigt__p_xsd__cxx__tree__parsingT_char_t,
   &_swigt__p_xsd__cxx__tree__propertiesT_char_t,
   &_swigt__p_xsd__cxx__tree__qnameT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__uri_xsd__cxx__tree__ncname_t,
@@ -9283,7 +9283,7 @@ static swig_cast_info _swigc__p_xsd__cxx__tree__no_prefix_mappingT_char_t[] = { 
 static swig_cast_info _swigc__p_xsd__cxx__tree__no_type_infoT_char_t[] = {  {&_swigt__p_xsd__cxx__tree__no_type_infoT_char_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__string_t[] = {  {&_swigt__p_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__string_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__not_derivedT_char_t[] = {  {&_swigt__p_xsd__cxx__tree__not_derivedT_char_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__doubleList_xsd__cxx__tree__fundamental_pT_schema__simxml__SimModelCore__doubleList_t__r_t[] = {  {&_swigt__p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__doubleList_xsd__cxx__tree__fundamental_pT_schema__simxml__SimModelCore__doubleList_t__r_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__doubleList_false_t[] = {  {&_swigt__p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__doubleList_false_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__parsingT_char_t[] = {  {&_swigt__p_xsd__cxx__tree__parsingT_char_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__propertiesT_char_t[] = {  {&_swigt__p_xsd__cxx__tree__propertiesT_char_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_xsd__cxx__tree__qnameT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__uri_xsd__cxx__tree__ncname_t[] = {  {&_swigt__p_xsd__cxx__tree__qnameT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__uri_xsd__cxx__tree__ncname_t, 0, 0, 0},{0, 0, 0, 0}};
@@ -9618,7 +9618,7 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_xsd__cxx__tree__no_type_infoT_char_t,
   _swigc__p_xsd__cxx__tree__normalized_stringT_char_xsd__cxx__tree__string_t,
   _swigc__p_xsd__cxx__tree__not_derivedT_char_t,
-  _swigc__p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__doubleList_xsd__cxx__tree__fundamental_pT_schema__simxml__SimModelCore__doubleList_t__r_t,
+  _swigc__p_xsd__cxx__tree__optionalT_schema__simxml__SimModelCore__doubleList_false_t,
   _swigc__p_xsd__cxx__tree__parsingT_char_t,
   _swigc__p_xsd__cxx__tree__propertiesT_char_t,
   _swigc__p_xsd__cxx__tree__qnameT_char_xsd__cxx__tree__simple_type_xsd__cxx__tree__uri_xsd__cxx__tree__ncname_t,

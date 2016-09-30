@@ -1,6 +1,4 @@
-<?xml version="1.0"?>
-<Data_Model_Map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.e3d.rwth-aachen.de/namespaces/Sim/DataMap"
-          xsi:schemaLocation="http://www.e3d.rwth-aachen.de/namespaces/Sim/DataMap ..\mapping_rule_schema\mapping_rule_schema.xsd">
+<Data_Model_Map xmlns="http://www.e3d.rwth-aachen.de/namespaces/Sim/DataMap" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.e3d.rwth-aachen.de/namespaces/Sim/DataMap ..\mapping_rule_schema\mapping_rule_schema.xsd">
 
   <!-- property mapping for the hot water boiler controller -->
   <!-- the constant temperature value of the boiler outlet water -->
@@ -518,7 +516,8 @@
 
   <!-- component mapping for the water pump of variable speed return -->
   <!-- night signal controller -->
-  <ComponentMappingGroup RefId="ID032">
+  <!-- night signal controller will be handled via the python side -->
+  <!-- <ComponentMappingGroup RefId="ID032">
     <Description>Night signal controller</Description>
     <TargetComponentName>NightSignal</TargetComponentName>
     <TargetLocation>Modelica.Blocks.Sources.BooleanPulse</TargetLocation>
@@ -527,7 +526,7 @@
 	<Property_Map_Gap_Name>ID0323T</Property_Map_Gap_Name>
     <Property_Map_Transformation_Name>ID0322</Property_Map_Transformation_Name>
     <Property_Map_Transformation_Name>ID0323</Property_Map_Transformation_Name>
-  </ComponentMappingGroup>
+  </ComponentMappingGroup> -->
 
   <!-- component mapping for the water pump of variable speed return -->
   <!-- Pressure set for pump -->
@@ -632,11 +631,12 @@
 
   <!-- component mapping for the water pump of variable speed return -->
   <!-- a water pump maps into: a pump, a night signal controller, ... -->
+  <!-- night signal controller will be handled via the python side -->
   <Component_Map_One2Many RefId="ID03">
     <Description>Map a pump into one pump and controls</Description>
     <SourceComponentName>SimFlowMover_Pump_VariableSpeedReturn</SourceComponentName>
     <ComponentMappingGroupName>ID031</ComponentMappingGroupName>
-    <ComponentMappingGroupName>ID032</ComponentMappingGroupName>
+    <!-- <ComponentMappingGroupName>ID032</ComponentMappingGroupName> -->
     <ComponentMappingGroupName>ID033</ComponentMappingGroupName>
     <ComponentMappingGroupName>ID034</ComponentMappingGroupName>
     <ComponentMappingGroupName>ID035</ComponentMappingGroupName>

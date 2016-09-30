@@ -7,8 +7,8 @@
     <ParameterName>plr</ParameterName>
     <ValueType>range</ValueType>
     <IsReferenced>false</IsReferenced>
-    <LowerBoundRef>SimFlowPlant_MinPartLoadRatio</LowerBoundRef>
-    <UpperBoundRef>SimFlowPlant_MaxPartLoadRatio</UpperBoundRef>
+    <LowerBoundRef>SimFlowPlant_NrmlizedBoilerEffCurveName SimPerformanceCurve_Mathematical_Bicubic SimPerfCurve_MinValX</LowerBoundRef>
+    <UpperBoundRef>SimFlowPlant_NrmlizedBoilerEffCurveName SimPerformanceCurve_Mathematical_Bicubic SimPerfCurve_MaxValX</UpperBoundRef>
   </InputParameter>
 
   <!-- property mapping for the hot water boiler controller -->
@@ -99,8 +99,8 @@
   <!-- property mapping for the hot water boiler -->
   <!-- cofficient a0 of the boiler efficiency curve -->
   <InputCoefficient RefId="ID01142">
-    <Description>Coefficient a0</Description>
-    <CoefficientName>a0</CoefficientName>
+    <Description>Coefficient a1</Description>
+    <CoefficientName>a1</CoefficientName>
     <IsReferenced>true</IsReferenced>
     <!-- referenced id, referenced element, referenced value -->
     <RefValue>SimFlowPlant_NrmlizedBoilerEffCurveName SimPerformanceCurve_Mathematical_Bicubic SimPerfCurve_Coef1Constant</RefValue>
@@ -109,8 +109,8 @@
   <!-- property mapping for the hot water boiler -->
   <!-- cofficient a1 of the boiler efficiency curve -->
   <InputCoefficient RefId="ID01143">
-    <Description>Coefficient a1</Description>
-    <CoefficientName>a1</CoefficientName>
+    <Description>Coefficient a2</Description>
+    <CoefficientName>a2</CoefficientName>
     <IsReferenced>true</IsReferenced>
     <!-- referenced id, referenced element, referenced value -->
     <RefValue>SimFlowPlant_NrmlizedBoilerEffCurveName SimPerformanceCurve_Mathematical_Bicubic SimPerfCurve_Coef_2_X</RefValue>
@@ -119,11 +119,21 @@
   <!-- property mapping for the hot water boiler -->
   <!-- cofficient a2 of the boiler efficiency curve -->
   <InputCoefficient RefId="ID01144">
-    <Description>Coefficient a2</Description>
-    <CoefficientName>a2</CoefficientName>
+    <Description>Coefficient a3</Description>
+    <CoefficientName>a3</CoefficientName>
     <IsReferenced>true</IsReferenced>
     <!-- referenced id, referenced element, referenced value -->
     <RefValue>SimFlowPlant_NrmlizedBoilerEffCurveName SimPerformanceCurve_Mathematical_Bicubic SimPerfCurve_Coef_3_X_2</RefValue>
+  </InputCoefficient>
+  
+  <!-- property mapping for the hot water boiler -->
+  <!-- cofficient a2 of the boiler efficiency curve -->
+  <InputCoefficient RefId="ID01145">
+    <Description>Coefficient a4</Description>
+    <CoefficientName>a4</CoefficientName>
+    <IsReferenced>true</IsReferenced>
+    <!-- referenced id, referenced element, referenced value -->
+    <RefValue>SimFlowPlant_NrmlizedBoilerEffCurveName SimPerformanceCurve_Mathematical_Bicubic SimPerfCurve_Coef_4_X_3</RefValue>
   </InputCoefficient>
 
   <!-- property mapping for the water pump of variable speed return -->
@@ -164,7 +174,7 @@
   
   <!-- property mapping for the hot water boiler -->
   <!-- Output values of the boiler efficiency curve -->
-  <OutputParameter RefId="ID01145">
+  <OutputParameter RefId="ID01146">
     <Description>Output values of the boiler efficiency curve</Description>
     <!-- support setting relative directory for the parameter, such as: -->
     <!-- boilerEfficiencyB boilerEfficiency -->
@@ -618,14 +628,17 @@
 
   <!-- property mapping for the hot water boiler -->
   <!-- boiler efficiency curve defintion: reuse a record structure -->
+  <!-- plr values of the matrix determine which values are used for the function -->
+  <!-- The coefficients are the given constants -->
   <Property_Map_Transformation RefId="ID0114">
     <Description>Boiler efficiency curve defintion</Description>
     <InputParameterName>ID01141</InputParameterName>
     <InputCoefficientName>ID01142</InputCoefficientName>
     <InputCoefficientName>ID01143</InputCoefficientName>
     <InputCoefficientName>ID01144</InputCoefficientName>
-    <Function>bec = a0 + ( a1 * plr ) + ( a2 * plr * plr )</Function>
-    <OutputParameterName>ID01145</OutputParameterName>
+    <InputCoefficientName>ID01145</InputCoefficientName>
+    <Function>bec = a1 + ( a2 * plr ) + ( a3 * plr * plr ) + ( a4 * plr * plr * plr)</Function>
+    <OutputParameterName>ID01146</OutputParameterName>
     <RecordInstance>boilerEfficiencyB</RecordInstance>
     <RecordLocation>AixLib.DataBase.Boiler.BoilerEfficiencyBaseDataDefinition</RecordLocation>
   </Property_Map_Transformation>
@@ -809,7 +822,8 @@
 
   <!-- component mapping for the water pump of variable speed return -->
   <!-- night signal controller -->
-  <ComponentMappingGroup RefId="ID032">
+  <!-- this will be put into comments, it will be handled via the python side -->
+  <!-- <ComponentMappingGroup RefId="ID032">
     <Description>Night signal controller</Description>
     <TargetComponentName>NightSignal</TargetComponentName>
     <TargetLocation>Modelica.Blocks.Sources.BooleanPulse</TargetLocation>
@@ -818,8 +832,7 @@
 	<Property_Map_Gap_Name>ID0323T</Property_Map_Gap_Name>
     <Property_Map_Transformation_Name>ID0322</Property_Map_Transformation_Name>
     <Property_Map_Transformation_Name>ID0323</Property_Map_Transformation_Name>
-    <Property_Map_Transformation_Name>ID0324</Property_Map_Transformation_Name>
-  </ComponentMappingGroup>
+  </ComponentMappingGroup> -->
   
   <!-- component mapping for the water type radiator -->
   <ComponentMappingGroup RefId="ID02T1">
@@ -878,11 +891,12 @@
 
   <!-- component mapping for the water pump of variable speed return -->
   <!-- a water pump maps into: a pump, a night signal controller, -->
+  <!-- night signal controller (ID032) will be handled via the python side -->
   <Component_Map_One2Many RefId="ID03">
     <Description>Map a pump (variable speed return) into one pump and one controller</Description>
     <SourceComponentName>SimFlowMover_Pump_VariableSpeedReturn</SourceComponentName>
     <ComponentMappingGroupName>ID031</ComponentMappingGroupName>
-    <ComponentMappingGroupName>ID032</ComponentMappingGroupName>
+    <!-- <ComponentMappingGroupName>ID032</ComponentMappingGroupName> -->
   </Component_Map_One2Many>
 
   <!-- component mapping for the valve -->

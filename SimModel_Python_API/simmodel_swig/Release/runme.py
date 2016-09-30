@@ -100,8 +100,8 @@ simxml_data = translator.loadSimModel(zoneFile_path, hvacFile_path)
 
 # get SimModel mapped data
 # here we need to specify the mapping rule xml file location before translating the data
-simxml_mapped_data = translator.getSimMappedData(".\\mapping_rule\\mapping_rule_xml\\AixLib_v2.0.xml")
-#simxml_mapped_data = translator.getSimMappedData(".\\mapping_rule\\mapping_rule_xml\\BuildingSystems_v1.0.xml")
+#simxml_mapped_data = translator.getSimMappedData(".\\mapping_rule\\mapping_rule_xml\\AixLib_v2.1.xml")
+simxml_mapped_data = translator.getSimMappedData(".\\mapping_rule\\mapping_rule_xml\\BuildingSystems_v1.1.xml")
 
 # we provide two different methods for accessing the mapped data
 #
@@ -345,5 +345,14 @@ if(hierarchy_node0.isParent(hierarchy_node1)):
 # whether the given node1 is the child of node0
 if(hierarchy_node0.isChild(hierarchy_node1)):
     print(hierarchy_node1.ClassType(), " is the child of ", hierarchy_node0.ClassType())
+
+print("\n")
+# DirectionRatios
+print("Geom_Vector\n")
+sim_object_id = "ID984"
+
+hierarchy_node = sim_hierarchy.getHierarchyNode(sim_object_id)
+print("DirectionRatios: ", hierarchy_node.getSimModelObject().DirectionRatios().getNumberList()[0])
+print("size: ", len(hierarchy_node.getSimModelObject().DirectionRatios().getNumberList()))
 
 print("finish")
