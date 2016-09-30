@@ -25,6 +25,7 @@ class Pump(MapHierarchy.MapComponent):
         self.target_location = map_sim[0].getTargetLocation()
         prop_list = map_sim[0].getMappedPropertyList()
         self.arrange_parameters(prop_list)
+
         self.IsNight = self.add_connector("IsNight", "Boolean")
         table = [(0, 0)]
         pump_child = self.hierarchy_node.getChildList()
@@ -40,9 +41,8 @@ class Pump(MapHierarchy.MapComponent):
                             for i in range(sim_obje.SimTimeSeriesSched_Time_1_144().get().stringItem().sizeInt()):
                                 str_until = \
                                     sim_obje.SimTimeSeriesSched_Time_1_144().get().stringItem().getValue(i)
-                                end_time = (int((str_until.replace("Until:","").replace(":", ""))) / 100) * 3600
-                                value = \
-                                    sim_obje.SimTimeSeriesSched_ValUntilTime_1_144().getNumberList()[i]
+                                end_time = (int((str_until.replace("Until:", "").replace(":", ""))) / 100) * 3600
+                                value = sim_obje.SimTimeSeriesSched_ValUntilTime_1_144().getNumberList()[i]
                                 table.append((end_time, value))
                             self.add_night_set_back(table)
 

@@ -15,8 +15,8 @@ class Pipe(MapHierarchy.MapComponent):
     """
 
     def init_me(self):
-        self.fluid_two_port()
 
+        self.fluid_two_port()
         return True
 
 
