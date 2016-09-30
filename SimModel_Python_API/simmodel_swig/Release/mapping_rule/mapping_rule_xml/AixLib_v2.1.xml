@@ -7,8 +7,8 @@
     <ParameterName>plr</ParameterName>
     <ValueType>range</ValueType>
     <IsReferenced>false</IsReferenced>
-    <LowerBoundRef>SimPerfCurve_MinValX</LowerBoundRef>
-    <UpperBoundRef>SimPerfCurve_MaxValX</UpperBoundRef>
+    <LowerBoundRef>SimFlowPlant_NrmlizedBoilerEffCurveName SimPerformanceCurve_Mathematical_Bicubic SimPerfCurve_MinValX</LowerBoundRef>
+    <UpperBoundRef>SimFlowPlant_NrmlizedBoilerEffCurveName SimPerformanceCurve_Mathematical_Bicubic SimPerfCurve_MaxValX</UpperBoundRef>
   </InputParameter>
 
   <!-- property mapping for the hot water boiler controller -->
@@ -78,7 +78,7 @@
     <CoefficientName>a1</CoefficientName>
     <IsReferenced>true</IsReferenced>
     <!-- referenced id, referenced element, referenced value -->
-    <RefValue>SimFlowPlant_NrmlizedBoilerEffCurveName SimPerformanceCurve_Mathematical_Cubic SimPerfCurve_Coef1Constant</RefValue>
+    <RefValue>SimFlowPlant_NrmlizedBoilerEffCurveName SimPerformanceCurve_Mathematical_Bicubic SimPerfCurve_Coef1Constant</RefValue>
   </InputCoefficient>
 
   <!-- property mapping for the hot water boiler -->
@@ -88,7 +88,7 @@
     <CoefficientName>a2</CoefficientName>
     <IsReferenced>true</IsReferenced>
     <!-- referenced id, referenced element, referenced value -->
-    <RefValue>SimFlowPlant_NrmlizedBoilerEffCurveName SimPerformanceCurve_Mathematical_Cubic SimPerfCurve_Coef_2_X</RefValue>
+    <RefValue>SimFlowPlant_NrmlizedBoilerEffCurveName SimPerformanceCurve_Mathematical_Bicubic SimPerfCurve_Coef_2_X</RefValue>
   </InputCoefficient>
 
   <!-- property mapping for the hot water boiler -->
@@ -98,7 +98,7 @@
     <CoefficientName>a3</CoefficientName>
     <IsReferenced>true</IsReferenced>
     <!-- referenced id, referenced element, referenced value -->
-    <RefValue>SimFlowPlant_NrmlizedBoilerEffCurveName SimPerformanceCurve_Mathematical_Cubic SimPerfCurve_Coef_3_X_2</RefValue>
+    <RefValue>SimFlowPlant_NrmlizedBoilerEffCurveName SimPerformanceCurve_Mathematical_Bicubic SimPerfCurve_Coef_3_X_2</RefValue>
   </InputCoefficient>
   
   <!-- property mapping for the hot water boiler -->
@@ -108,7 +108,7 @@
     <CoefficientName>a4</CoefficientName>
     <IsReferenced>true</IsReferenced>
     <!-- referenced id, referenced element, referenced value -->
-    <RefValue>SimFlowPlant_NrmlizedBoilerEffCurveName SimPerformanceCurve_Mathematical_Cubic SimPerfCurve_Coef_4_X_3</RefValue>
+    <RefValue>SimFlowPlant_NrmlizedBoilerEffCurveName SimPerformanceCurve_Mathematical_Bicubic SimPerfCurve_Coef_4_X_3</RefValue>
   </InputCoefficient>
 
   <!-- property mapping for the water pump of variable speed return -->

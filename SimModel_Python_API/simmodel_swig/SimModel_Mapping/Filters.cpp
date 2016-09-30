@@ -102,6 +102,38 @@ std::vector<MappedComponent> RuleFilter::getMappedData(SimHierarchyNode& _simHie
 				_mapCom.addMappedProperty(_mapPro);
 			}
 
+			if(_simHierarchyNode.ClassType()=="SimFlowSegment_Pipe_Indoor")
+			{
+				SimFlowSegment_Pipe_Indoor* _simPipeObj = static_cast<SimFlowSegment_Pipe_Indoor*>(_simHierarchyNode._SimRootObject);
+				
+				if(_it->second->TargetLocation().get().front()=="AixLib.Fluid.FixedResistances.StaticPipe")
+				{
+					// property
+					if(_simPipeObj->SimFlowSeg_PipesideDiam().present())
+					{
+						MappedProperty _mapPro;
+						_mapPro.setPropertyName("D");
+						_mapPro.setValueType("Number");
+						_mapPro.setValueNumber(_simPipeObj->SimFlowSeg_PipesideDiam().get());
+						// add property
+						_mapCom.addMappedProperty(_mapPro);
+					}
+				}
+				else if(_it->second->TargetLocation().get().front()=="BuildingSystems.Fluid.FixedResistances.FixedResistanceDpM")
+				{
+					// property
+					if(_simPipeObj->SimFlowSeg_PipesideDiam().present())
+					{
+						MappedProperty _mapPro;
+						_mapPro.setPropertyName("dh");
+						_mapPro.setValueType("Number");
+						_mapPro.setValueNumber(_simPipeObj->SimFlowSeg_PipesideDiam().get());
+						// add property
+						_mapCom.addMappedProperty(_mapPro);
+					}
+				}
+			}
+
 			// add mapped component
 			_mapComList.push_back(_mapCom);
 		}

@@ -1,6 +1,4 @@
-<?xml version="1.0"?>
-<Data_Model_Map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.e3d.rwth-aachen.de/namespaces/Sim/DataMap"
-          xsi:schemaLocation="http://www.e3d.rwth-aachen.de/namespaces/Sim/DataMap ..\mapping_rule_schema\mapping_rule_schema.xsd">
+<Data_Model_Map xmlns="http://www.e3d.rwth-aachen.de/namespaces/Sim/DataMap" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.e3d.rwth-aachen.de/namespaces/Sim/DataMap ..\mapping_rule_schema\mapping_rule_schema.xsd">
 
   <!-- property mapping for the hot water boiler controller -->
   <!-- the constant temperature value of the boiler outlet water -->
