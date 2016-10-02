@@ -360,6 +360,41 @@ class MapProject(object):
         #load_sim = self.translator.loadSimModel(simxml_file)
         load_sim = self.translator.loadSimModel(simxml_file[0], simxml_file[1])
         self.sim_mapping = self.translator.getSimMappedData(mapping_file)
+        mapped_list = self.sim_mapping.getMappedComponentList()
+        self.mapped_components = {}
+        for a in range(mapped_list.size()):
+            if mapped_list[a].getMappingRuleName() == "Component_Map_One2Many":
+                if mapped_list[a].getUnmappedSimHierarchyNodes()[0].ClassType() in self.mapped_components:
+                    pass
+                else:
+                    self.mapped_components[mapped_list[a].getUnmappedSimHierarchyNodes()[0].ClassType()] = str(mapped_list[a].getTargetLocation())
+            elif mapped_list[a].getMappingRuleName() == "Component_Map_Map_Gap":
+                pass
+            elif mapped_list[a].getMappingRuleName() == "Component_Map_One2One":
+                self.mapped_components[mapped_list[a].getUnmappedSimHierarchyNodes()[0].ClassType()] = str(mapped_list[a].getTargetLocation())
+
+        #add missing mapped components
+
+        self.mapped_components["SimFlowController_Valve_Default"] = \
+            "AixLib.Fluid.FixedResistances.StaticPipe"
+        self.mapped_components[
+            "SimFlowEnergyTransferStorage_HotWaterTank_Expansion"] = \
+            "AixLib.Fluid.Storage.ExpansionVessel"
+        self.mapped_components["SimFlowController_Valve_Default"] = \
+            "AixLib.Fluid.FixedResistances.StaticPipe"
+
+        self.library_objects = {}
+
+        import importlib
+        import sys
+        this_module = sys.modules[__name__]
+
+        for key, value in self.mapped_components.items():
+            m_class = value[(value.rfind(".")+1):len(value)]
+            m_module = importlib.import_module("mapapi.molibs."+value)
+            m_temp = getattr(m_module, m_class)
+            self.library_objects[key] = m_temp
+            setattr(this_module, m_class, m_temp)
 
         self.instantiate_buildings()
 
@@ -607,26 +642,6 @@ class MapComponent(MoObject):
         self.connected_in = []
         self.connected_out = []
         self.connected_out_ref_id = []
-        from mapapi.molibs.AixLib.Fluid.HeatExchangers.Boiler import Boiler
-        from mapapi.molibs.AixLib.Fluid.Movers.Pump import Pump
-        from mapapi.molibs.AixLib.Fluid.FixedResistances.StaticPipe import Pipe
-        from mapapi.molibs.AixLib.Fluid.HeatExchangers.Radiators.Radiator import Radiator
-        from mapapi.molibs.AixLib.Fluid.Storage.ExpansionVessel import ExpansionVessel
-        from mapapi.molibs.AixLib.Fluid.Actuators.Valves.SimpleValve import SimpleValve
-
-        self.aix_lib = {"SimFlowPlant_Boiler_BoilerHotWater": Boiler,
-                        "SimFlowMover_Pump_VariableSpeedReturn" : Pump,
-                        "SimFlowEnergyTransfer_ConvectiveHeater_Radiant_Water" :
-                            Radiator,
-                        "SimFlowFitting_Mixer_DemandProxyMixerWater" : Pipe,
-                        "SimFlowFitting_Splitter_DemandProxySplitterWater" :
-                            Pipe,
-                        "SimFlowSegment_Pipe_Indoor" : Pipe,
-                        "SimFlowFitting_Default_Default" : Pipe,
-                        "SimFlowEnergyTransferStorage_HotWaterTank_Expansion" :
-                            ExpansionVessel,
-                        "SimFlowController_Valve_Default" : Pipe,
-                        "SimFlowController_Valve_TemperingValve" : SimpleValve}
 
 
     def find_loop_connection(self, hierarchy_node=None):
@@ -722,7 +737,7 @@ class MapComponent(MoObject):
 
     def convert_me(self):
         """Converts the MapComponent to a library specific component"""
-        for key, value in self.aix_lib.items():
+        for key, value in self.project.library_objects.items():
 
             if self.hierarchy_node.ClassType() == key:
                 self.__class__ = value
@@ -803,8 +818,6 @@ class MapComponent(MoObject):
                                    value=[])
                     for row in range(matrix_data.size()):
                         self.parameters[-1].value.append(matrix_data[row])
-
-
 
 class MapConnection(object):
     """Representation of a mapped connector

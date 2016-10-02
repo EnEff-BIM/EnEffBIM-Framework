@@ -10,7 +10,7 @@ import random
 import mapapi.MapClasses as MapHierarchy
 
 
-class Pipe(MapHierarchy.MapComponent):
+class StaticPipe(MapHierarchy.MapComponent):
     """Representation of AixLib.Fluid.FixedResistances.Pipe
     """
 
