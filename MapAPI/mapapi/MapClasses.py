@@ -151,7 +151,7 @@ class MoObject(object):
             except:
                 self.sim_instance = None
         else:
-            self.hierarchy_node = None
+            self.sim_instance = None
 
         try:
             self.mapped_component = self.hierarchy_node.getMappedComponents()[0]

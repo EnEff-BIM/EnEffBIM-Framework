@@ -46,8 +46,9 @@ class SimpleValve(MapHierarchy.MapComponent):
 
         from mapapi.molibs.MSL.Blocks.Continuous.LimPID import LimPID
         pid = LimPID(self.project,
-                     map_pid,
+                     None,
                      self)
+        pid.mapped_component = map_pid
         pid.init_me()
         pid.mapp_me()
         pid.target_name = "pid" + "_" + self.target_name
@@ -56,8 +57,9 @@ class SimpleValve(MapHierarchy.MapComponent):
 
         from mapapi.molibs.MSL.Blocks.Sources.Constant import Constant
         const = Constant(self.project,
-                         map_const,
+                         None,
                          self)
+        const.mapped_component = map_const
         const.init_me()
         const.mapp_me()
         const.target_name = "setTemp" + "_" + self.target_name
@@ -67,7 +69,10 @@ class SimpleValve(MapHierarchy.MapComponent):
         from mapapi.molibs.MSL.Thermal.HeatTransfer.Sensors.TemperatureSensor \
             import TemperatureSensor
 
-        sens = TemperatureSensor(self.project, map_sens, self)
+        sens = TemperatureSensor(self.project,
+                                 None,
+                                 self)
+        sens.mapped_component = map_sens
         sens.init_me()
         sens.mapp_me()
         sens.add_connection(sens.T, pid.u_m)

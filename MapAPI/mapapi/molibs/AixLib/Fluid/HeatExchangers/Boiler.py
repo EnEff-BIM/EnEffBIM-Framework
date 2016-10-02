@@ -49,7 +49,7 @@ class Boiler(MapHierarchy.MapComponent):
         const = Constant(self.project,
                          self.hierarchy_node,
                          self)
-
+        const.mapped_component = map_const
         const.init_me()
         const.mapp_me()
         const.target_name = "setTemp" + "_" + self.target_name

@@ -20,13 +20,13 @@ class TemperatureSensor(MapHierarchy.MapComponent):
         self.T = self.add_connector("T", "Real")
 
     def mapp_me(self):
+        self.target_name = "sensT" + str(random.randint(1, 100))
         try:
-            self.target_name = "sensT" + str(random.randint(1, 100))
-            map_sim = self.hierarchy_node.getMappedComponents()
-            self.target_location = map_sim[0].getTargetLocation()
-            prop_list = map_sim[0].getMappedPropertyList()
+            self.target_location = self.mapped_component.getTargetLocation()
+            prop_list = self.mapped_component.getMappedPropertyList()
             self.arrange_parameters(prop_list)
-        except:
-            self.target_location = ("Modelica.Thermal.HeatTransfer.Sensors."
-                                    "TemperatureSensor")
-            self.target_name = "sensT" + str(random.randint(1, 100))
+        except Exception:
+            import warnings
+            warning_text = ("can't apply mapping, please check if you are "
+                            "using one to many mappings correctly. We are "
+                            "using default values")

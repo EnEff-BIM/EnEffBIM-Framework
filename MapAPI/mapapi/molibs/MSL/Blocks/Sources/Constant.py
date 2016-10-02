@@ -15,20 +15,22 @@ class Constant(MapHierarchy.MapComponent):
     """
 
     def init_me(self):
-
-        self.k = self.add_parameter(name="k", value=1.0)
         self.y = self.add_connector("y","Real")
         return True
 
 
     def mapp_me(self):
-
+        self.target_name = "const" + str(random.randint(1, 100))
         try:
-            self.target_name = "const" + str(random.randint(1, 100))
-            map_sim = self.hierarchy_node.getMappedComponents()
-            self.target_location = map_sim[0].getTargetLocation()
-            prop_list = map_sim[0].getMappedPropertyList()
+            self.target_location = self.mapped_component.getTargetLocation()
+            prop_list = self.mapped_component.getMappedPropertyList()
             self.arrange_parameters(prop_list)
-        except:
+        except Exception:
+            import warnings
+            warning_text = ("can't apply mapping, please check if you are "
+                            "using one to many mappings correctly. We are "
+                            "using default values")
+            warnings.warn(warning_text)
             self.target_location = "Modelica.Blocks.Sources.Constant"
             self.target_name = "const" + str(random.randint(1, 100))
+            self.k = self.add_parameter(name="k", value=1.0)

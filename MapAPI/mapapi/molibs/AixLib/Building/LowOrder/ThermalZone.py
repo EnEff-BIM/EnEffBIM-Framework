@@ -55,7 +55,7 @@ class ThermalZone(MapHierarchy.MapThermalZone):
                          self)
         const.init_me()
         const.target_name = "infil" + "_" + self.target_name
-        const.k.value = rate
+        const.add_parameter('k', rate)
         const.add_connection(const.y, self.infiltrationRate)
         self.project.mod_components.append(const)
 

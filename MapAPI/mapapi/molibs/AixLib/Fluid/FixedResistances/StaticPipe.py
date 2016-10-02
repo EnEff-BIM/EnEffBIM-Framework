@@ -22,7 +22,6 @@ class Pipe(MapHierarchy.MapComponent):
 
     def mapp_me(self):
 
-        map_sim = self.hierarchy_node.getMappedComponents()
         self.target_name += "pipe"
         try:
             self.target_location = self.mapped_component.getTargetLocation()

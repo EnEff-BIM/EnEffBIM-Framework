@@ -19,14 +19,17 @@ class LimPID(MapHierarchy.MapComponent):
         self.u_m = self.add_connector("u_m", "Real")
 
     def mapp_me(self):
-
+        self.target_name = "pidCtrl" + str(random.randint(1, 100))
         try:
-            self.target_name = "pid" + str(random.randint(1, 100))
-            map_sim = self.hierarchy_node.getMappedComponents()
-            self.target_location = map_sim[0].getTargetLocation()
-            prop_list = map_sim[0].getMappedPropertyList()
+            self.target_location = self.mapped_component.getTargetLocation()
+            prop_list = self.mapped_component.getMappedPropertyList()
             self.arrange_parameters(prop_list)
-        except:
+        except Exception:
+            import warnings
+            warning_text = ("can't apply mapping, please check if you are "
+                            "using one to many mappings correctly. We are "
+                            "using default values")
+            warnings.warn(warning_text)
             self.target_location = "Modelica.Blocks.Continuous.LimPID"
             self.target_name = "pidCtrl" + str(random.randint(1, 100))
 
