@@ -38,14 +38,16 @@ class ThermalZone(MapHierarchy.MapThermalZone):
         #t_prj = Project(load_data=False)
 
        # t_sim.load_lib_sim_model(sim_api=self.project, t_prj=t_prj)
-
        # t_prj.calc_all_buildings(raise_errors=True)
-
-
 
 
         self.target_location = "AixLib.Building.LowOrder.ThermalZone.ThermalZone"
         self.target_name = "thermal_zone" + "_" + self.target_name
+
+        self.infiltration_rate(rate=0.5)
+        self.internal_loads()
+
+    def infiltration_rate(self, rate):
 
         from mapapi.molibs.MSL.Blocks.Sources.Constant import Constant
         const = Constant(self.project,
@@ -53,9 +55,11 @@ class ThermalZone(MapHierarchy.MapThermalZone):
                          self)
         const.init_me()
         const.target_name = "infil" + "_" + self.target_name
-        const.k.value = 0.5
+        const.k.value = rate
         const.add_connection(const.y, self.infiltrationRate)
         self.project.mod_components.append(const)
+
+    def internal_loads(self):
 
         table_elect = [(0, 0)]
         table_light = [(0, 0)]
@@ -98,9 +102,6 @@ class ThermalZone(MapHierarchy.MapThermalZone):
         combi_time.y.dimension = 3
         self.add_connection(self.internalGains, combi_time.y)
         self.project.mod_components.append(combi_time)
-
-        # import teaser.Data.Input.simxml_input as teaser
-        # self.teaser_parameters = teaser.api_to_teaser(self)
 
     def _help_schedule(self, table, hierarchy_schedule_internal):
 

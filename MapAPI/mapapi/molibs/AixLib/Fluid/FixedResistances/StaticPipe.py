@@ -30,8 +30,14 @@ class Pipe(MapHierarchy.MapComponent):
             self.arrange_parameters(prop_list)
         except:
             import warnings
-            warnings.warn("can't apply mapping, probably because class "
+            warning_text = ("can't apply mapping, probably because class "
                           "SimFlowFitting_Default_Default or "
                           "SimFlowController_Valve_Default are used, "
-                          "that are not part of mapping rules")
+                          "that are not part of mapping rules. We are using "
+                          "default values!")
+            warnings.warn(warning_text)
+            self.target_location = "AixLib.Fluid.FixedResistances.StaticPipe"
+            self.add_parameter(name="D", value="0.014")
+            self.add_parameter(name="l", value="0.05")
+            self.add_parameter(name="D", value="2.5e-5")
             pass

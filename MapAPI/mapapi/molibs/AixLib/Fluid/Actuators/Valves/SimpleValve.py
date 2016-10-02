@@ -27,6 +27,9 @@ class SimpleValve(MapHierarchy.MapComponent):
         self.arrange_parameters(prop_list)
 
     def pid_control(self, thermal_zone):
+        """function for temperature PID controlled valve with measured value
+        from AixLib Thermal zone. Intended use with radiator"""
+
         map_sim = self.hierarchy_node.getMappedComponents()
         for i in range(map_sim.size()):
             if map_sim[i].getTargetLocation() == \

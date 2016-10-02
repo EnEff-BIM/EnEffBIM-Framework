@@ -588,12 +588,12 @@ class MapComponent(MoObject):
         self.connected_out_ref_id = []
         from mapapi.molibs.AixLib.Fluid.HeatExchangers.Boiler import Boiler
         from mapapi.molibs.AixLib.Fluid.Movers.Pump import Pump
-        from mapapi.molibs.AixLib.Fluid.FixedResitances.StaticPipe import Pipe
+        from mapapi.molibs.AixLib.Fluid.FixedResistances.StaticPipe import Pipe
         from mapapi.molibs.AixLib.Fluid.HeatExchangers.Radiators.Radiator import Radiator
         from mapapi.molibs.AixLib.Fluid.Storage.ExpansionVessel import ExpansionVessel
         from mapapi.molibs.AixLib.Fluid.Actuators.Valves.SimpleValve import SimpleValve
 
-        self.aix_lib = {"SimFlowPlant_Boiler_BoilerHotWater" : Boiler,
+        self.aix_lib = {"SimFlowPlant_Boiler_BoilerHotWater": Boiler,
                         "SimFlowMover_Pump_VariableSpeedReturn" : Pump,
                         "SimFlowEnergyTransfer_ConvectiveHeater_Radiant_Water" :
                             Radiator,
@@ -1096,9 +1096,7 @@ class MapSpaceBoundary(object):
         child = self.hierarchy_node.getChildList()
         for q in range(child.size()):
             if child[q].isClassType("SimGeomVector_Vector_Direction"):
-                pass
-                # self.simmodel_normal_vector = child[q].getSimModelObject(
-                # ).DirectionRatios()
+                self.simmodel_normal_vector = child[q].getSimModelObject().DirectionRatios().getNumberList()
 
 
         self.simmodel_normal_vector = None
