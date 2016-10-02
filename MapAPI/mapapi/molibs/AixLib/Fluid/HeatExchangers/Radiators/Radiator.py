@@ -40,6 +40,7 @@ class Radiator(MapHierarchy.MapComponent):
                                 self.connect_zone(self.parent)
         except Exception:
             warnings.warn("Could not connect radiator to zone", self, tz)
+            pass
 
         try:
             for con_in in self.connected_in:
@@ -50,6 +51,7 @@ class Radiator(MapHierarchy.MapComponent):
                             self.pid_ctrl_valve(self.parent, comp)
         except Exception:
             warnings.warn("Could not apply valve to radiator", comp, self)
+            pass
 
     def pid_ctrl_valve(self, thermal_zone, valve_component):
         """

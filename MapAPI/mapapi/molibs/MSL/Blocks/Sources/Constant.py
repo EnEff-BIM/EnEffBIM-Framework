@@ -29,8 +29,9 @@ class Constant(MapHierarchy.MapComponent):
             import warnings
             warning_text = ("can't apply mapping, please check if you are "
                             "using one to many mappings correctly. We are "
-                            "using default values")
+                            "using default values", self)
             warnings.warn(warning_text)
             self.target_location = "Modelica.Blocks.Sources.Constant"
             self.target_name = "const" + str(random.randint(1, 100))
             self.k = self.add_parameter(name="k", value=1.0)
+            pass

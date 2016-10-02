@@ -36,4 +36,5 @@ class LimPID(MapHierarchy.MapComponent):
             self.k = self.add_parameter(name="k", value=0.5)
             self.yMax = self.add_parameter(name="yMax", value=1)
             self.yMin = self.add_parameter(name="yMin", value=0)
+            pass
 

@@ -23,41 +23,49 @@ class Pump(MapHierarchy.MapComponent):
 
     def mapp_me(self):
         self.target_name += "pump"
-        map_sim = self.hierarchy_node.getMappedComponents()
-        self.target_location = map_sim[0].getTargetLocation()
-        prop_list = map_sim[0].getMappedPropertyList()
-        self.arrange_parameters(prop_list)
+        try:
+            self.target_location = self.mapped_component.getTargetLocation()
+            prop_list = self.mapped_component.getMappedPropertyList()
+            self.arrange_parameters(prop_list)
+        except RuntimeError:
+            raise ("could not apply mapping", self)
 
+        try:
+            table = [(0, 0)]
+            pump_child = self.hierarchy_node.getChildList()
+            for a in range(pump_child.size()):
+                if pump_child[a].ClassType() == "SimTimeSeriesSchedule_Year_Default":
+                    year_child = pump_child[a].getChildList()
+                    for b in range(len(year_child)):
+                        if year_child[b].ClassType() == \
+                                "SimTimeSeriesSchedule_Week_Daily":
+                            week_child = year_child[b].getChildList()
+                            for c in range(len(week_child)):
+                                sim_obje = week_child[c].getSimModelObject()
+                                for i in range(sim_obje.SimTimeSeriesSched_Time_1_144().get().stringItem().sizeInt()):
+                                    str_until = \
+                                        sim_obje.SimTimeSeriesSched_Time_1_144().get().stringItem().getValue(i)
+                                    end_time = (int((str_until.replace("Until:", "").replace(":", ""))) / 100) * 3600
+                                    value = sim_obje.SimTimeSeriesSched_ValUntilTime_1_144().getNumberList()[i]
+                                    table.append((end_time, value))
+                                self.add_night_set_back(table)
+        except:
+            import warnings
+            warnings.warn("Could not apply controller to pump",self)
 
-        table = [(0, 0)]
-        pump_child = self.hierarchy_node.getChildList()
-        for a in range(pump_child.size()):
-            if pump_child[a].ClassType() == "SimTimeSeriesSchedule_Year_Default":
-                year_child = pump_child[a].getChildList()
-                for b in range(len(year_child)):
-                    if year_child[b].ClassType() == \
-                            "SimTimeSeriesSchedule_Week_Daily":
-                        week_child = year_child[b].getChildList()
-                        for c in range(len(week_child)):
-                            sim_obje = week_child[c].getSimModelObject()
-                            for i in range(sim_obje.SimTimeSeriesSched_Time_1_144().get().stringItem().sizeInt()):
-                                str_until = \
-                                    sim_obje.SimTimeSeriesSched_Time_1_144().get().stringItem().getValue(i)
-                                end_time = (int((str_until.replace("Until:", "").replace(":", ""))) / 100) * 3600
-                                value = sim_obje.SimTimeSeriesSched_ValUntilTime_1_144().getNumberList()[i]
-                                table.append((end_time, value))
-                            self.add_night_set_back(table)
 
     def add_night_set_back(self, time_table):
         '''adds a constants Boolean pulse for night setback'''
 
         from mapapi.molibs.MSL.Blocks.Sources.CombiTimeTable import \
             CombiTimeTable
+
         combi_time = CombiTimeTable(
                 self.project,
-                self.hierarchy_node,
+                None,
                 self)
         combi_time.init_me()
+        combi_time.mapp_me()
         combi_time.target_name = "combi_time" + "_" + self.target_name
         combi_time.table.value = time_table
         self.project.mod_components.append(combi_time)
@@ -66,9 +74,10 @@ class Pump(MapHierarchy.MapComponent):
 
         r_to_b = RealToBoolean(
                     self.project,
-                    self.hierarchy_node,
+                    None,
                     self)
         r_to_b.init_me()
+        r_to_b.mapp_me()
         r_to_b.target_name = "reatToBool" + "_" + self.target_name
         r_to_b.add_connection(r_to_b.u, combi_time.y)
         r_to_b.add_connection(r_to_b.y, self.IsNight)

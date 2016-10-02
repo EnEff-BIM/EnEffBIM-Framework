@@ -97,6 +97,7 @@ class ThermalZone(MapHierarchy.MapThermalZone):
         for i, value in enumerate(table_people):
             table[i] += (value[1],)
         combi_time.init_me()
+        combi_time.mapp_me()
         combi_time.target_name = "combi_time" + "_" + self.target_name
         combi_time.table.value = table
         combi_time.y.dimension = 3
