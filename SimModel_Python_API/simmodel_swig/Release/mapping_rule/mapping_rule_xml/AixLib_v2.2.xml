@@ -234,6 +234,12 @@
     <RefValue>SimFlowSeg_PipesideDiam</RefValue>
     <TargetPropertyName>D</TargetPropertyName>
   </Property_Map_One2One>
+  
+  <Property_Map_One2One RefId="ID09999">
+    <Description>Volume of expansion vessel</Description>
+    <RefValue>EffectiveCapacity</RefValue>
+    <TargetPropertyName>V_start</TargetPropertyName>
+  </Property_Map_One2One>
 
   <!-- property mapping for the expansion vessel -->
   <!-- fixed value of pressure [bar] -->
@@ -691,7 +697,16 @@
     <Property_Map_Gap_Name>ID062</Property_Map_Gap_Name>
     <Property_Map_Gap_Name>ID064</Property_Map_Gap_Name>
   </Component_Map_One2One>
-
+  
+   <Component_Map_One2One RefId="ID099">
+	<Description>Expansion Vessel of AixLib</Description>
+	<SourceComponentName>SimFlowEnergyTransferStorage_HotWaterTank_Expansion</SourceComponentName>
+    <TargetComponentName>test</TargetComponentName>
+    <TargetLocation>AixLib.Fluid.Storage.ExpansionVessel</TargetLocation>
+	<Property_Map_One2One_Name>ID09999</Property_Map_One2One_Name>
+  </Component_Map_One2One>
+  
+  
   <!-- component mapping for the valve -->  
    <ComponentMappingGroup RefId="ID101c">
 	<Description>map a valve into AixLib</Description>
@@ -887,6 +902,7 @@
     <Description>The XML mapping rule instance between SimModel and AixLib</Description>
     <TargetLibraryName>AixLib version 1.0</TargetLibraryName>
 	<Component_Map_One2One_Name>ID99</Component_Map_One2One_Name>
+	<Component_Map_One2One_Name>ID099</Component_Map_One2One_Name>
 	<Component_Map_One2One_Name>ID013</Component_Map_One2One_Name>
 	<Component_Map_One2Many_Name>ID01</Component_Map_One2Many_Name>
 	<Component_Map_One2Many_Name>ID02</Component_Map_One2Many_Name>
