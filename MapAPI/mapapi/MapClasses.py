@@ -373,16 +373,6 @@ class MapProject(object):
             elif mapped_list[a].getMappingRuleName() == "Component_Map_One2One":
                 self.mapped_components[mapped_list[a].getUnmappedSimHierarchyNodes()[0].ClassType()] = str(mapped_list[a].getTargetLocation())
 
-        #add missing mapped components
-
-        self.mapped_components["SimFlowController_Valve_Default"] = \
-            "AixLib.Fluid.FixedResistances.StaticPipe"
-        self.mapped_components[
-            "SimFlowEnergyTransferStorage_HotWaterTank_Expansion"] = \
-            "AixLib.Fluid.Storage.ExpansionVessel"
-        self.mapped_components["SimFlowController_Valve_Default"] = \
-            "AixLib.Fluid.FixedResistances.StaticPipe"
-
         self.library_objects = {}
 
         import importlib
@@ -549,7 +539,6 @@ class MapBuilding(MoObject):
             a.mapp_me()
             pass
 
-
 class MapThermalZone(MoObject):
     """Representation of a mapped thermal zone
 
@@ -605,7 +594,6 @@ class MapThermalZone(MoObject):
                             space_bound = MapSpaceBoundary(self, occ_child[b])
                             space_bound.instantiate_element()
                             self.space_boundaries.append(space_bound)
-
 
 class MapComponent(MoObject):
     """Representation of a mapped component
