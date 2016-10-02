@@ -5,7 +5,7 @@ Created on Mon Nov 23 17:36:54 2015
 @author: pre
 """
 import mapapi.MapClasses as MapHierarchy
-
+import warnings
 
 class SimpleValve(MapHierarchy.MapComponent):
     """Representation of AixLib.Fluid.Actuators.Valves.SimpleValve
@@ -21,10 +21,12 @@ class SimpleValve(MapHierarchy.MapComponent):
     def mapp_me(self):
 
         self.target_name += "valve"
-        map_sim = self.hierarchy_node.getMappedComponents()
-        self.target_location = map_sim[0].getTargetLocation()
-        prop_list = map_sim[0].getMappedPropertyList()
-        self.arrange_parameters(prop_list)
+        try:
+            self.target_location = self.mapped_component.getTargetLocation()
+            prop_list = self.mapped_component.getMappedPropertyList()
+            self.arrange_parameters(prop_list)
+        except RuntimeError:
+            raise ("could not apply mapping", self)
 
     def pid_control(self, thermal_zone):
         """function for temperature PID controlled valve with measured value
@@ -54,10 +56,10 @@ class SimpleValve(MapHierarchy.MapComponent):
 
         from mapapi.molibs.MSL.Blocks.Sources.Constant import Constant
         const = Constant(self.project,
-                         self.hierarchy_node,
+                         map_const,
                          self)
         const.init_me()
-        pid.mapp_me()
+        const.mapp_me()
         const.target_name = "setTemp" + "_" + self.target_name
         const.add_connection(const.y, pid.u_s)
         self.project.mod_components.append(const)

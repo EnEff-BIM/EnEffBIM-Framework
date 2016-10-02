@@ -133,6 +133,11 @@ class MoObject(object):
         This is an *iterable* list containing all  Modelica connectors of the
         MoObject (e.g. Real, Heatport, Fluid)
 
+    mapped_component : libSimModelAPI.MappedComponent Object
+        if available mapped component. If there is an explicit SimModelObject
+        for the hierarchy node, the first entry of MappedCompomponent is
+        assinged, otherwise mapped_component is None and needs to be set for
+        one to many mapping individually
     """
 
     def __init__(self, project, hierarchy_node):
@@ -146,7 +151,13 @@ class MoObject(object):
             except:
                 self.sim_instance = None
         else:
-            self.sim_instance = None
+            self.hierarchy_node = None
+
+        try:
+            self.mapped_component = self.hierarchy_node.getMappedComponents()[0]
+        except:
+            self.mapped_component = None
+
         if self.sim_instance is not None:
             self.target_name = "Random" + self.sim_instance.RefId()[-5:]
             #self.target_name = self.sim_instance.SimModelName().getValue(
@@ -227,11 +238,20 @@ class MoObject(object):
             returns the MapParameter instance
 
         """
-        mapped_prop = MapParameter(self, name, value)
-
-        self.parameters.append(mapped_prop)
-
-        return mapped_prop
+        existing_para = False
+        for para in self.parameters:
+            if para.name == name:
+                existing_para = True
+                break
+            else:
+                pass
+        if existing_para is True:
+            para.value = value
+            return para
+        elif existing_para is False:
+            mapped_prop = MapParameter(self, name, value)
+            self.parameters.append(mapped_prop)
+            return mapped_prop
 
     def add_connection(self, connector_a, connector_b):
         """This connects the MoObject to another Object

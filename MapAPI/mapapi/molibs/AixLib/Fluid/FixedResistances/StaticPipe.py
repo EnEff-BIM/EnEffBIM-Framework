@@ -25,10 +25,10 @@ class Pipe(MapHierarchy.MapComponent):
         map_sim = self.hierarchy_node.getMappedComponents()
         self.target_name += "pipe"
         try:
-            self.target_location = map_sim[0].getTargetLocation()
-            prop_list = map_sim[0].getMappedPropertyList()
+            self.target_location = self.mapped_component.getTargetLocation()
+            prop_list = self.mapped_component.getMappedPropertyList()
             self.arrange_parameters(prop_list)
-        except:
+        except Exception:
             import warnings
             warning_text = ("can't apply mapping, probably because class "
                           "SimFlowFitting_Default_Default or "
@@ -41,3 +41,5 @@ class Pipe(MapHierarchy.MapComponent):
             self.add_parameter(name="l", value="0.05")
             self.add_parameter(name="D", value="2.5e-5")
             pass
+
+
