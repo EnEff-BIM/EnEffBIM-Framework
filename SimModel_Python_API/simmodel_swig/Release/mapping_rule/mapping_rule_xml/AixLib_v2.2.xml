@@ -691,6 +691,15 @@
     <Property_Map_Gap_Name>ID062</Property_Map_Gap_Name>
     <Property_Map_Gap_Name>ID064</Property_Map_Gap_Name>
   </Component_Map_One2One>
+  
+  <!-- component mapping for the expansion vessel, changed it to a one to one component mapping -->
+  <Component_Map_One2One RefId="ID04">
+    <Description> Map an expansion vessel into AixLib</Description>
+	<SourceComponentName>SimFlowEnergyTransferStorage_HotWaterTank_Expansion</SourceComponentName>
+    <TargetComponentName>expansionVessel</TargetComponentName>
+    <TargetLocation>AixLib.Fluid.Sources.FixedBoundary</TargetLocation>
+    <Property_Map_Gap_Name>ID041</Property_Map_Gap_Name>
+  </Component_Map_One2One>
 
   <!-- component mapping for the valve -->  
    <ComponentMappingGroup RefId="ID101c">
@@ -808,13 +817,13 @@
 	<Property_Map_Gap_Name>ID0229</Property_Map_Gap_Name>
   </ComponentMappingGroup>
 
-  <!-- component mapping for the expansion vessel -->
-  <ComponentMappingGroup RefId="ID04">
+  <!-- component mapping for the expansion vessel, changed it to a one to one component mapping -->
+  <!-- <ComponentMappingGroup RefId="ID04">
     <Description> Add an expansion vessel connecting to the radiator</Description>
     <TargetComponentName>expansionVessel</TargetComponentName>
     <TargetLocation>AixLib.Fluid.Sources.FixedBoundary</TargetLocation>
     <Property_Map_Gap_Name>ID041</Property_Map_Gap_Name>
-  </ComponentMappingGroup>
+  </ComponentMappingGroup> -->
   
   <!-- waiting for the new class SimFlowEnergyTransferStorage_HotWaterTank_Expansion from simxml -->
   <!-- <ComponentMappingGroup RefId="ID04x">
@@ -840,7 +849,7 @@
 	<Description>Map a convective radiator into one radiator and one controller</Description>
 	<SourceComponentName>SimFlowEnergyTransfer_ConvectiveHeater_Radiant_Water</SourceComponentName>
 	<ComponentMappingGroupName>ID02T1</ComponentMappingGroupName>
-	<ComponentMappingGroupName>ID04</ComponentMappingGroupName>
+	<!-- <ComponentMappingGroupName>ID04</ComponentMappingGroupName> -->
 	<!-- <ComponentMappingGroupName>ID013</ComponentMappingGroupName> -->
   </Component_Map_One2Many>
 
@@ -891,6 +900,7 @@
 	<Component_Map_One2Many_Name>ID01</Component_Map_One2Many_Name>
 	<Component_Map_One2Many_Name>ID02</Component_Map_One2Many_Name>
     <Component_Map_One2Many_Name>ID03</Component_Map_One2Many_Name>
+    <Component_Map_One2Many_Name>ID04</Component_Map_One2Many_Name>
 	<Component_Map_One2Many_Name>ID10</Component_Map_One2Many_Name>
 	<Component_Map_Gap_Name>ID05</Component_Map_Gap_Name>
   </Library_Mapping_Rule>
