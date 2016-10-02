@@ -33,7 +33,7 @@ class Pipe(MapHierarchy.MapComponent):
                           "SimFlowFitting_Default_Default or "
                           "SimFlowController_Valve_Default are used, "
                           "that are not part of mapping rules. We are using "
-                          "default values!", self)
+                          "default values!")
             warnings.warn(warning_text)
             self.target_location = "AixLib.Fluid.FixedResistances.StaticPipe"
             self.add_parameter(name="D", value="0.014")

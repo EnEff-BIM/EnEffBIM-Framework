@@ -27,7 +27,7 @@ class CombiTimeTable(MapHierarchy.MapComponent):
             import warnings
             warning_text = ("can't apply mapping, probably because class is "
                             "not defined in Mapping Rules. We are "
-                            "using default values", self)
+                            "using default values")
             warnings.warn(warning_text)
             self.target_location = "Modelica.Blocks.Sources.CombiTimeTable"
 

@@ -26,7 +26,7 @@ class SimpleValve(MapHierarchy.MapComponent):
             prop_list = self.mapped_component.getMappedPropertyList()
             self.arrange_parameters(prop_list)
         except RuntimeError:
-            raise ("could not apply mapping", self)
+            raise ("could not apply mapping")
 
     def pid_control(self, thermal_zone):
         """function for temperature PID controlled valve with measured value

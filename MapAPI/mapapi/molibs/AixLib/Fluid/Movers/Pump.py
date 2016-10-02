@@ -28,7 +28,7 @@ class Pump(MapHierarchy.MapComponent):
             prop_list = self.mapped_component.getMappedPropertyList()
             self.arrange_parameters(prop_list)
         except RuntimeError:
-            raise ("could not apply mapping", self)
+            raise ("could not apply mapping")
 
         try:
             table = [(0, 0)]
@@ -51,7 +51,7 @@ class Pump(MapHierarchy.MapComponent):
                                 self.add_night_set_back(table)
         except:
             import warnings
-            warnings.warn("Could not apply controller to pump",self)
+            warnings.warn("Could not apply controller to pump")
 
 
     def add_night_set_back(self, time_table):

@@ -26,7 +26,7 @@ class Radiator(MapHierarchy.MapComponent):
             prop_list = self.mapped_component.getMappedPropertyList()
             self.arrange_parameters(prop_list)
         except RuntimeError:
-            raise ("could not apply mapping", self)
+            raise ("could not apply mapping")
 
         rad_parent = self.hierarchy_node.getParentList()
         try:
@@ -39,7 +39,7 @@ class Radiator(MapHierarchy.MapComponent):
                                 self.parent = tz
                                 self.connect_zone(self.parent)
         except Exception:
-            warnings.warn("Could not connect radiator to zone", self, tz)
+            warnings.warn("Could not connect radiator to zone")
             pass
 
         try:
@@ -50,7 +50,7 @@ class Radiator(MapHierarchy.MapComponent):
                             #try:
                             self.pid_ctrl_valve(self.parent, comp)
         except Exception:
-            warnings.warn("Could not apply valve to radiator", comp, self)
+            warnings.warn("Could not apply valve to radiator")
             pass
 
     def pid_ctrl_valve(self, thermal_zone, valve_component):

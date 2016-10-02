@@ -26,7 +26,7 @@ class Boiler(MapHierarchy.MapComponent):
             prop_list = self.mapped_component.getMappedPropertyList()
             self.arrange_parameters(prop_list)
         except RuntimeError:
-            raise("could not apply mapping", self)
+            raise("could not apply mapping")
 
         try:
             boil_child = self.hierarchy_node.getChildList()
