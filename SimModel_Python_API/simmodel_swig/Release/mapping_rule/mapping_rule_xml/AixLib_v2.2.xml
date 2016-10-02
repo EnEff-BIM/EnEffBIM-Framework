@@ -685,6 +685,13 @@
     <TargetLocation>AixLib.Fluid.FixedResistances.StaticPipe</TargetLocation>
   </Component_Map_One2One>
   
+  <Component_Map_One2One RefId="ID909">
+    <Description>Map an static valve into a pipe as a place holder.</Description>
+	<SourceComponentName>SimFlowController_Valve_Default</SourceComponentName>
+	<TargetComponentName>pipe_HeatTransfer</TargetComponentName>
+    <TargetLocation>AixLib.Fluid.FixedResistances.StaticPipe</TargetLocation>
+  </Component_Map_One2One>
+  
   <!-- component mapping for the water pipe -->
   <Component_Map_One2One RefId="ID013">
 	<Description>map a water pipe into AixLib</Description>
@@ -903,6 +910,7 @@
     <TargetLibraryName>AixLib version 1.0</TargetLibraryName>
 	<Component_Map_One2One_Name>ID99</Component_Map_One2One_Name>
 	<Component_Map_One2One_Name>ID099</Component_Map_One2One_Name>
+	<Component_Map_One2One_Name>ID909</Component_Map_One2One_Name>
 	<Component_Map_One2One_Name>ID013</Component_Map_One2One_Name>
 	<Component_Map_One2Many_Name>ID01</Component_Map_One2Many_Name>
 	<Component_Map_One2Many_Name>ID02</Component_Map_One2Many_Name>
