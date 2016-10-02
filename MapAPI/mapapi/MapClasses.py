@@ -15,7 +15,8 @@ except:
     os.environ['PATH'] = ';'.join([modulePath, os.environ['PATH']])
     sys.path.append(modulePath)
     import SimModel
-
+import numpy as np
+from numpy import linalg as LA
 import SimModel_Mapping
 import SimModel_Hierachy
 
@@ -1113,13 +1114,6 @@ class MapSpaceBoundary(object):
             self.sim_instance.InternalOrExternalBoundary().getValue()
         self.area = self.sim_instance.GrossSurfaceArea().getValue()/1000000
 
-        child = self.hierarchy_node.getChildList()
-        for q in range(child.size()):
-            if child[q].isClassType("SimGeomVector_Vector_Direction"):
-                self.simmodel_normal_vector = child[q].getSimModelObject().DirectionRatios().getNumberList()
-
-
-        self.simmodel_normal_vector = None
         self.tilt = None
         self.orientation = None
 
@@ -1132,6 +1126,16 @@ class MapSpaceBoundary(object):
         self.building_element = None
         self.layer_set = None
         self.mapped_layer = []
+
+        child = self.hierarchy_node.getChildList()
+        for q in range(child.size()):
+            if child[q].isClassType("SimGeomVector_Vector_Direction"):
+                self.simmodel_normal_vector = child[q].getSimModelObject().DirectionRatios().getNumberList()
+
+                self.set_orientation()
+                self.set_tilt()
+            else:
+                self.simmodel_normal_vector = None
 
     def instantiate_element(self):
         bound_child = self.hierarchy_node.getChildList()
@@ -1147,8 +1151,52 @@ class MapSpaceBoundary(object):
                         for c in range(layer_child.size()):
                             self.mapped_layer.append(MapMaterialLayer(self,layer_child[c]))
 
+    def set_orientation(self):
 
+        normal_uni = np.asarray(self.simmodel_normal_vector)
 
+        if normal_uni[0] > 0:
+            phi = np.arctan(normal_uni[1]/normal_uni[0])
+        elif normal_uni[0] < 0 <= normal_uni[1]:
+            phi = np.arctan(normal_uni[1]/normal_uni[0]) + np.pi
+        elif normal_uni[0] < 0 > normal_uni[1]:
+            phi = np.arctan(normal_uni[1]/normal_uni[0]) - np.pi
+        elif normal_uni[0] == 0 < normal_uni[1]:
+            phi = np.pi/2
+        elif normal_uni[0] == 0 > normal_uni[1]:
+            phi = -np.pi/2
+        elif normal_uni[0] == 0 and normal_uni [1] == 0:
+            phi = None
+
+        if phi is None:
+            if normal_uni[2] == -1:
+                self.orientation = "Slab"
+            elif normal_uni[2] == 1:
+                self.orientation = "Roof"
+        elif phi < 0:
+            self.orientation = (phi+2*np.pi)*360/(2*np.pi)
+        else:
+            self.orientation = phi*360/(2*np.pi)
+
+        if self.orientation in ["Slab","Roof"]:
+            pass
+        elif 0 <= self.orientation <= 90:
+            self.orientation = 90 - self.orientation
+        else:
+            self.orientation = 450 - self.orientation
+
+    def set_tilt(self):
+
+        normal_uni = np.asarray(self.simmodel_normal_vector)
+        z_axis = np.array([0, 0, 1])
+
+        self.tilt = np.arccos(np.dot(normal_uni, z_axis) / (LA.norm(z_axis) * LA.norm(normal_uni))) * 360 / (2 * np.pi)
+
+        if self.tilt == 180:
+            self.tilt = 0.0
+        elif str(self.tilt) == "nan":
+            self.tilt = None
+        print(self.tilt)
 
 class MapMaterialLayer(object):
     """Representation of a mapped building element layer
