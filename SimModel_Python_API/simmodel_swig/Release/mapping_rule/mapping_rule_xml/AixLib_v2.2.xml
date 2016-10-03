@@ -711,6 +711,8 @@
 	<SourceComponentName>SimFlowEnergyTransferStorage_HotWaterTank_Expansion</SourceComponentName>
 	<TargetComponentName>expansionVessel</TargetComponentName>
     <TargetLocation>AixLib.Fluid.Storage.ExpansionVessel</TargetLocation>
+	<Property_Map_One2One_Name>ID0419</Property_Map_One2One_Name>
+	<Property_Map_Gap_Name>ID041</Property_Map_Gap_Name>
   </Component_Map_One2One>
 
   <!-- component mapping for the valve -->  
