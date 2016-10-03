@@ -234,6 +234,12 @@
     <RefValue>SimFlowSeg_PipesideDiam</RefValue>
     <TargetPropertyName>D</TargetPropertyName>
   </Property_Map_One2One>
+  
+  <Property_Map_One2One RefId="ID0419">
+    <Description>Start volume of expansion vessel</Description>
+    <RefValue>EffectiveCapacity</RefValue>
+    <TargetPropertyName>V_start</TargetPropertyName>
+  </Property_Map_One2One>
 
   <!-- property mapping for the expansion vessel -->
   <!-- fixed value of pressure [bar] -->
@@ -697,7 +703,8 @@
     <Description> Map an expansion vessel into AixLib</Description>
 	<SourceComponentName>SimFlowEnergyTransferStorage_HotWaterTank_Expansion</SourceComponentName>
     <TargetComponentName>expansionVessel</TargetComponentName>
-    <TargetLocation>AixLib.Fluid.Sources.FixedBoundary</TargetLocation>
+    <TargetLocation>AixLib.Fluid.Storage.ExpansionVessel</TargetLocation>
+	<Property_Map_One2One_Name>ID0419</Property_Map_One2One_Name>
     <Property_Map_Gap_Name>ID041</Property_Map_Gap_Name>
   </Component_Map_One2One>
   
