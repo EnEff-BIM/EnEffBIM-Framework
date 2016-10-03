@@ -234,6 +234,12 @@
     <RefValue>SimFlowSeg_PipesideDiam</RefValue>
     <TargetPropertyName>D</TargetPropertyName>
   </Property_Map_One2One>
+  
+  <Property_Map_One2One RefId="ID0419">
+    <Description>Volume of liquid stored in the vessel at the start of the simulation</Description>
+    <RefValue>EffectiveCapacity</RefValue>
+    <TargetPropertyName>V_start</TargetPropertyName>
+  </Property_Map_One2One>
 
   <!-- property mapping for the expansion vessel -->
   <!-- fixed value of pressure [bar] -->
@@ -407,7 +413,7 @@
   <!-- property mapping for the expansion vessel -->
   <!-- fixed value of pressure [bar] -->
   <Property_Map_Gap RefId="ID041">
-    <Description>Fixed value of pressure [bar]</Description>
+    <Description>Constant pressure of the expansion vessel [Pa]</Description>
     <TargetPropertyName>p</TargetPropertyName>
     <DefaultValueNumber>100000</DefaultValueNumber>
   </Property_Map_Gap>
@@ -692,13 +698,21 @@
     <Property_Map_Gap_Name>ID064</Property_Map_Gap_Name>
   </Component_Map_One2One>
   
+  <Component_Map_One2One RefId="ID909">
+    <Description>Map an static valve into a pipe as a place holder.</Description>
+	<SourceComponentName>SimFlowController_Valve_Default</SourceComponentName>
+	<TargetComponentName>pipe_HeatTransfer</TargetComponentName>
+    <TargetLocation>AixLib.Fluid.FixedResistances.StaticPipe</TargetLocation>
+  </Component_Map_One2One>
+  
   <!-- component mapping for the expansion vessel, changed it to a one to one component mapping -->
-  <Component_Map_One2One RefId="ID04">
-    <Description> Map an expansion vessel into AixLib</Description>
+  <Component_Map_One2One RefId="ID9099">
+    <Description>Map an expansion vessel into AixLib</Description>
 	<SourceComponentName>SimFlowEnergyTransferStorage_HotWaterTank_Expansion</SourceComponentName>
-    <TargetComponentName>expansionVessel</TargetComponentName>
-    <TargetLocation>AixLib.Fluid.Sources.FixedBoundary</TargetLocation>
-    <Property_Map_Gap_Name>ID041</Property_Map_Gap_Name>
+	<TargetComponentName>expansionVessel</TargetComponentName>
+    <TargetLocation>AixLib.Fluid.Storage.ExpansionVessel</TargetLocation>
+	<Property_Map_One2One_Name>ID0419</Property_Map_One2One_Name>
+	<Property_Map_Gap_Name>ID041</Property_Map_Gap_Name>
   </Component_Map_One2One>
 
   <!-- component mapping for the valve -->  
@@ -709,7 +723,8 @@
     <Property_Map_Gap_Name>ID101</Property_Map_Gap_Name>
     <Property_Map_Gap_Name>ID102</Property_Map_Gap_Name>
   </ComponentMappingGroup>
-
+  
+  
   <!-- component mapping for the hot water boiler -->
   <ComponentMappingGroup RefId="ID011">
     <Description>Hot water boiler mapping</Description>
@@ -897,10 +912,11 @@
     <TargetLibraryName>AixLib version 1.0</TargetLibraryName>
 	<Component_Map_One2One_Name>ID99</Component_Map_One2One_Name>
 	<Component_Map_One2One_Name>ID013</Component_Map_One2One_Name>
+	<Component_Map_One2One_Name>ID909</Component_Map_One2One_Name>
+	<Component_Map_One2One_Name>ID9099</Component_Map_One2One_Name>
 	<Component_Map_One2Many_Name>ID01</Component_Map_One2Many_Name>
 	<Component_Map_One2Many_Name>ID02</Component_Map_One2Many_Name>
     <Component_Map_One2Many_Name>ID03</Component_Map_One2Many_Name>
-    <Component_Map_One2Many_Name>ID04</Component_Map_One2Many_Name>
 	<Component_Map_One2Many_Name>ID10</Component_Map_One2Many_Name>
 	<Component_Map_Gap_Name>ID05</Component_Map_Gap_Name>
   </Library_Mapping_Rule>
