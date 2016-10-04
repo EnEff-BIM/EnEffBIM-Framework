@@ -8,13 +8,13 @@ Created on Mon Nov 23 12:00:26 2015
 import mapapi.MapClasses as MapHierarchy
 import warnings
 
-class Boiler(MapHierarchy.MapComponent):
-    """Representation of AixLib.Fluid.HeatExchangers.Boiler
+class HeaterCooler_T(MapHierarchy.MapComponent):
+    """Representation of BuildingSystems.Fluid.HeatExchangers.HeaterCooler_T
     """
 
     def init_me(self):
         self.fluid_two_port()
-        self.T_set = self.add_connector(name="T_set", type="Real", \
+        self.TSet = self.add_connector(name="TSet", type="Real", \
                                         dimension=1)
         return True
 
@@ -55,4 +55,4 @@ class Boiler(MapHierarchy.MapComponent):
         const.target_name = "setTemp" + "_" + self.target_name
         self.project.mod_components.append(const)
 
-        self.add_connection(self.T_set, const.y)
+        self.add_connection(self.TSet, const.y)

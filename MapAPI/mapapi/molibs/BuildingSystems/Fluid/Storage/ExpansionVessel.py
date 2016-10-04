@@ -29,7 +29,8 @@ class ExpansionVessel(MapHierarchy.MapComponent):
                             "is not defined in Mapping Rules. We are using "
                             "default values")
             warnings.warn(warning_text)
-            self.target_location = "AixLib.Fluid.Storage.ExpansionVessel"
+            self.target_location = \
+                "BuildingSystems.Fluid.Storage.ExpansionVessel"
             self.add_parameter(name="V_start", value=0.001)
             self.add_parameter(name="p", value="Medium.p_default")
             pass

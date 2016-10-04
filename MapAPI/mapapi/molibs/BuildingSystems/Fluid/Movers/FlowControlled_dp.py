@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Module for AixLib.Fluid.Movers.Pump
+
 
 containes the python class Pump, as well as a function to instantiate classes
 from the corresponding SimModel instances.
@@ -11,13 +11,13 @@ import SimTimeSeriesSchedule_Year_Default
 import SimTimeSeriesSchedule_Week_Daily
 import SimTimeSeriesSchedule_Day_Interval
 
-class Pump(MapHierarchy.MapComponent):
-    """Representation of AixLib.Fluid.Movers.Pump
+class FlowControlled_dp(MapHierarchy.MapComponent):
+    """Representation of BuildingSystems.Fluid.Movers.FlowControlled_dp
     """
 
     def init_me(self):
         self.fluid_two_port()
-        self.IsNight = self.add_connector("IsNight", "Boolean")
+        self.dp_in = self.add_connector("dp_in", "Boolean")
 
         return True
 
@@ -46,7 +46,12 @@ class Pump(MapHierarchy.MapComponent):
                                     str_until = \
                                         sim_obje.SimTimeSeriesSched_Time_1_144().get().stringItem().getValue(i)
                                     end_time = (int((str_until.replace("Until:", "").replace(":", ""))) / 100) * 3600
+                                    '''there is some input needed here. you
+                                    need to set the value to 0.7*5e5 and 5e5
+                                    (see use case) currently its 0 and 1. You
+                                    can do this in SimXML or here'''
                                     value = sim_obje.SimTimeSeriesSched_ValUntilTime_1_144().getNumberList()[i]
+
                                     table.append((end_time, value))
                                 self.add_night_set_back(table)
         except:
@@ -68,17 +73,5 @@ class Pump(MapHierarchy.MapComponent):
         combi_time.mapp_me()
         combi_time.target_name = "combi_time" + "_" + self.target_name
         combi_time.table.value = time_table
+        self.add_connection(self.dp_in, combi_time.y)
         self.project.mod_components.append(combi_time)
-
-        from mapapi.molibs.MSL.Blocks.Math.RealToBoolean import RealToBoolean
-
-        r_to_b = RealToBoolean(
-                    self.project,
-                    None,
-                    self)
-        r_to_b.init_me()
-        r_to_b.mapp_me()
-        r_to_b.target_name = "reatToBool" + "_" + self.target_name
-        r_to_b.add_connection(r_to_b.u, combi_time.y)
-        r_to_b.add_connection(r_to_b.y, self.IsNight)
-        self.project.mod_components.append(r_to_b)

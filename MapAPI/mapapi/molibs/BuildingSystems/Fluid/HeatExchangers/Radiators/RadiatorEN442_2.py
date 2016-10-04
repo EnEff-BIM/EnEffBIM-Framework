@@ -16,7 +16,8 @@ class RadiatorEN442_2(MapHierarchy.MapComponent):
         self.fluid_two_port()
         self.heatPortCon = self.add_connector(name="heatPortCon", type="HeatPort",
                                            dimension=1, hierarchy_node=None)
-        self.heatPortCon = self.add_connector(name="heatPortRad", type="HeatPort",
+        self.heatPortRad = self.add_connector(name="heatPortRad",
+                                             type="HeatPort",
                                           dimension=1, hierarchy_node=None)
         return True
 
@@ -72,5 +73,5 @@ class RadiatorEN442_2(MapHierarchy.MapComponent):
 
     def connect_zone(self, thermal_zone):
 
-        self.add_connection(self.convPort, thermal_zone.internalGainsConv)
-        self.add_connection(self.radPort, thermal_zone.internalGainsRad)
+        self.add_connection(self.heatPortCon, thermal_zone.internalGainsConv)
+        self.add_connection(self.heatPortRad, thermal_zone.internalGainsRad)
