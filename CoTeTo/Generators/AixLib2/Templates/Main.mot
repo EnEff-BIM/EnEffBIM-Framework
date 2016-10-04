@@ -19,9 +19,33 @@ model Test "just testing"
   % for param in myComp.parameters:
     ${param.name}=${param.value}${punCom if not loop.last else strEmp}
   % endfor
+  %for record in myComp.records:
+${record.name}=${record.record_location}(
+%for para in record.parameters:
+${para.name} = ${para.value}
+%endfor
+)
+%endfor
     ) "${myComp.sim_ref_id}"
     annotation (Placement(transformation(extent={{-10,-10},{10,10}})));${punLin}
 % endfor
+
+% for myComp in MapData.mod_components:
+  ${myComp.target_location} ${myComp.target_name}(
+  % for param in myComp.parameters:
+    ${param.name}=${param.value}${punCom if not loop.last else strEmp}
+  % endfor
+  %for record in myComp.records:
+${record.name}=${record.record_location}(
+%for para in record.parameters:
+${para.name} = ${para.value}
+%endfor
+)
+%endfor
+    ) "${myComp.sim_ref_id}"
+    annotation (Placement(transformation(extent={{-10,-10},{10,10}})));${punLin}
+% endfor
+
 
 // Print thermal_zones attribute of buildings[0]
 % for myZone in MapData.buildings[0].thermal_zones:

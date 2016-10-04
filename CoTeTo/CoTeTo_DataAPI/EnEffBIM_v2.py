@@ -26,7 +26,7 @@ def fetchData(uriList, systemCfg, generatorCfg, logger):
     pathList = (zoneFile_path, hvacFile_path)
     print(pathList[0])
     mappingFile_path = os.path.join(
-        modulePath + "\\mapping_rule\\mapping_rule_xml\\AixLib_v2.0.xml")
+        modulePath + "\\mapping_rule\\mapping_rule_xml\\AixLib_v2.2.xml")
     from mapapi.MapClasses import MapProject
     prj = MapProject(pathList,
                      mappingFile_path)
