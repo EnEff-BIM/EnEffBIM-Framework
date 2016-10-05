@@ -249,12 +249,6 @@
     <RefValue>SimFlowSeg_PipesideDiam</RefValue>
     <TargetPropertyName>D</TargetPropertyName>
   </Property_Map_One2One> -->
-  
-  <Property_Map_One2One RefId="ID0419">
-    <Description>Start volume of expansion vessel</Description>
-    <RefValue>EffectiveCapacity</RefValue>
-    <TargetPropertyName>V_start</TargetPropertyName>
-  </Property_Map_One2One>
 
   <!-- property mapping for the expansion vessel -->
   <!-- Volume of liquid in [m^3] -->
