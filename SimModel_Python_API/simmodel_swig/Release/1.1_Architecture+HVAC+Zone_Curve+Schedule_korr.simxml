@@ -781,9 +781,9 @@
 		<simmep:SimFlowMover_RatedPumpHead>544.13</simmep:SimFlowMover_RatedPumpHead>
 		<simmep:SimFlowMover_FracMotorInEffToFluidStream>0</simmep:SimFlowMover_FracMotorInEffToFluidStream>
 		<simmep:SimFlowMover_Coef1OfThePartLoadPerfCurve>0.78</simmep:SimFlowMover_Coef1OfThePartLoadPerfCurve>
-		<simmep:SimFlowMover_Coef2OfThePartLoadPerfCurve>0.6</simmep:SimFlowMover_Coef2OfThePartLoadPerfCurve>
-		<simmep:SimFlowMover_Coef3OfThePartLoadPerfCurve>0.5</simmep:SimFlowMover_Coef3OfThePartLoadPerfCurve>
-		<simmep:SimFlowMover_Coef4OfThePartLoadPerfCurve>0.8</simmep:SimFlowMover_Coef4OfThePartLoadPerfCurve>
+		<simmep:SimFlowMover_Coef2OfThePartLoadPerfCurve>0.5</simmep:SimFlowMover_Coef2OfThePartLoadPerfCurve>
+		<simmep:SimFlowMover_Coef3OfThePartLoadPerfCurve>0.4</simmep:SimFlowMover_Coef3OfThePartLoadPerfCurve>
+		<simmep:SimFlowMover_Coef4OfThePartLoadPerfCurve>0.3</simmep:SimFlowMover_Coef4OfThePartLoadPerfCurve>
 		<simmep:SimFlowMover_PumpContType>OnOff</simmep:SimFlowMover_PumpContType>
 		<simmep:SimFlowMover_PumprpmSchedName>ID_prv01_0LMbjl8XfFaui1YxJs_D1q</simmep:SimFlowMover_PumprpmSchedName>
 	</SimFlowMover_Pump_VariableSpeedReturn>
@@ -794,7 +794,7 @@
 		<simcore:AssignedToGroups>ID0LMbjl8XfFaui1YxJs_D10 ID0LMbjl8XfFaui1YxJs_D11 </simcore:AssignedToGroups>
 		<simmep:SimFlowPlant_Name>EnEff_Boiler:Standard:908018</simmep:SimFlowPlant_Name>
 		<simmep:SimFlowPlant_FuelType>NaturalGas</simmep:SimFlowPlant_FuelType>
-		<simmep:SimFlowPlant_NomCap>1300.00</simmep:SimFlowPlant_NomCap>
+		<simmep:SimFlowPlant_NomCap>1400</simmep:SimFlowPlant_NomCap>
 		<simmep:SimFlowPlant_NomThermalEff>846.85</simmep:SimFlowPlant_NomThermalEff>
 		<simmep:SimFlowPlant_NrmlizedBoilerEffCurveName> ID_cp_0LMbjl8XfFaui1YxJs_D66</simmep:SimFlowPlant_NrmlizedBoilerEffCurveName>
 		<simmep:SimFlowPlant_DesignWaterOutletTemp>70</simmep:SimFlowPlant_DesignWaterOutletTemp>
@@ -886,7 +886,17 @@
 		<simcore:ParentGroups>ID2ZBTbFXf0mACYyGlm4STs</simcore:ParentGroups>
 		<simbldg:SimList_ZoneEqmt_1_18_Name>ID0LMbjl8XfFaui1YxJs_D1K </simbldg:SimList_ZoneEqmt_1_18_Name>
 	</SimList_EquipmentList_ZoneHvac>
-	<SimPerformanceCurve_Mathematical_Bicubic RefId="ID_cp_0LMbjl8XfFaui1YxJs_D66">
+	<SimPerformanceCurve_Mathematical_Cubic RefId="ID_cp_0LMbjl8XfFaui1YxJs_D66">
+		<simgeom:SimPerfCurve_Coef1Constant>0.1</simgeom:SimPerfCurve_Coef1Constant>
+		<simgeom:SimPerfCurve_Coef_2_X>0.2</simgeom:SimPerfCurve_Coef_2_X>
+		<simgeom:SimPerfCurve_MinValX>0</simgeom:SimPerfCurve_MinValX>
+		<simgeom:SimPerfCurve_MaxValX>1</simgeom:SimPerfCurve_MaxValX>
+		<simgeom:SimPerfCurve_InputUnitTypeForX>Dimensionless</simgeom:SimPerfCurve_InputUnitTypeForX>
+		<simgeom:SimPerfCurve_OutputUnitType>Dimensionless</simgeom:SimPerfCurve_OutputUnitType>
+		<simgeom:SimPerfCurve_Coef_3_X_2>0.3</simgeom:SimPerfCurve_Coef_3_X_2>
+		<simgeom:SimPerfCurve_Coef_4_X_3>0.4</simgeom:SimPerfCurve_Coef_4_X_3>
+	</SimPerformanceCurve_Mathematical_Cubic>
+	<!-- <SimPerformanceCurve_Mathematical_Bicubic RefId="ID_cp_0LMbjl8XfFaui1YxJs_D66">
 		<simgeom:SimPerfCurve_MinCurveOutput>0</simgeom:SimPerfCurve_MinCurveOutput>
 		<simgeom:SimPerfCurve_MaxCurveOutput>1</simgeom:SimPerfCurve_MaxCurveOutput>
 		<simgeom:SimPerfCurve_Coef1Constant>0.1</simgeom:SimPerfCurve_Coef1Constant>
@@ -903,7 +913,7 @@
 		<simgeom:SimPerfCurve_Coeff8_Y_3>0.8</simgeom:SimPerfCurve_Coeff8_Y_3>
 		<simgeom:SimPerfCurve_Coeff9_X_2_Y>0.8</simgeom:SimPerfCurve_Coeff9_X_2_Y>
 		<simgeom:SimPerfCurve_Coeff10_X_y_2>0.8</simgeom:SimPerfCurve_Coeff10_X_y_2>
-	</SimPerformanceCurve_Mathematical_Bicubic>
+	</SimPerformanceCurve_Mathematical_Bicubic> -->
 	<SimSpace_Occupied_Default RefId="ID2ZBTbFXf0mACYyGlm4STy">
 		<simcore:SimUniqueID>2ZBTbFX$f0mACYyGlm4STy</simcore:SimUniqueID>
 		<simcore:SimModelType>Occupied</simcore:SimModelType>
