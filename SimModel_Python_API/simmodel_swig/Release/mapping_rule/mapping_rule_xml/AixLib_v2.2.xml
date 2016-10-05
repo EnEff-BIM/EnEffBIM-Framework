@@ -21,6 +21,14 @@
     <RefValue>SimFlowPlant_DesignWaterOutletTemp</RefValue>
   </InputParameter>
   
+  <InputParameter RefId="ID0611">
+    <Description>Diameter of the pipe in mm</Description>
+    <ParameterName>Diammeter</ParameterName>
+    <ValueType>single</ValueType>
+    <IsReferenced>false</IsReferenced>
+    <RefValue>SimFlowSeg_PipesideDiam</RefValue>
+  </InputParameter>
+  
   <!-- <InputParameter RefId="ID01211">
     <Description>Constant output value [degC]</Description>
     <ParameterName>const_c</ParameterName>
@@ -166,6 +174,13 @@
     <ValueType>single</ValueType>
     <ValueFormat>const_k</ValueFormat>
   </OutputParameter>
+  
+  <OutputParameter RefId="ID0612">
+    <Description>Diameter of the pipe in m</Description>
+    <ParameterName>D</ParameterName>
+    <ValueType>single</ValueType>
+    <ValueFormat>Diameter</ValueFormat>
+  </OutputParameter>
 
   <!-- property mapping for the water pump of variable speed return -->
   <!-- the min and max values of the rotational speed -->
@@ -229,18 +244,20 @@
   
   <!-- property mapping for the water pipe -->
   <!-- pipe inside diameter [m] -->
-  <Property_Map_One2One RefId="ID061">
+  <!--<Property_Map_One2One RefId="ID061">
     <Description>Diameter [m]</Description>
     <RefValue>SimFlowSeg_PipesideDiam</RefValue>
     <TargetPropertyName>D</TargetPropertyName>
-  </Property_Map_One2One>
-  
+  </Property_Map_One2One> -->
+
+  <!-- property mapping for the expansion vessel -->
+  <!-- Volume of liquid in [m^3] -->
   <Property_Map_One2One RefId="ID0419">
     <Description>Volume of liquid stored in the vessel at the start of the simulation</Description>
     <RefValue>EffectiveCapacity</RefValue>
     <TargetPropertyName>V_start</TargetPropertyName>
   </Property_Map_One2One>
-
+  
   <!-- property mapping for the expansion vessel -->
   <!-- fixed value of pressure [bar] -->
   <Property_Map_One2One RefId="ID041x">
@@ -271,8 +288,9 @@
   <Property_Map_Gap RefId="ID021">
     <Description>Volume in m3</Description>
     <TargetPropertyName>V</TargetPropertyName>
-	  <TargetLocation>volume</TargetLocation>
     <DefaultValueNumber>0.00467999977991</DefaultValueNumber>
+	  <RecordInstance>RadiatorType</RecordInstance>
+	  <RecordLocation>AixLib.DataBase.Radiators.RadiatiorBaseDataDefinition</RecordLocation>
   </Property_Map_Gap>
 
   <!-- property mapping for the water type radiator -->
@@ -363,8 +381,9 @@
   <Property_Map_Gap RefId="ID0211">
     <Description>Temperature inside the CV in K</Description>
     <TargetPropertyName>T</TargetPropertyName>
-	  <TargetLocation>volume</TargetLocation>
     <DefaultValueNumber>303.1499938965</DefaultValueNumber>
+	  <RecordInstance>RadiatorType</RecordInstance>
+	  <RecordLocation>AixLib.DataBase.Radiators.RadiatiorBaseDataDefinition</RecordLocation>
   </Property_Map_Gap>
 
   <!-- property mapping for the hot water boiler -->
@@ -386,12 +405,12 @@
 
   <!-- property mapping for the water pump of variable speed return -->
   <!-- volume flow rate through the pump [m3/s]: V_flow.start -->
-  <Property_Map_Gap RefId="ID0315">
+  <!-- <Property_Map_Gap RefId="ID0315">
     <Description>Volume flow rate through the pump [m3/s]</Description>
     <TargetPropertyName>start</TargetPropertyName>
     <TargetLocation>V_flow</TargetLocation>
     <DefaultValueNumber>0.0000112961579362</DefaultValueNumber>
-  </Property_Map_Gap>
+  </Property_Map_Gap> -->
 
   <!-- property mapping for the water pump of variable speed return -->
   <!-- pumping head [m]: Head.start -->
@@ -399,7 +418,7 @@
     <Description>Pumping head [m]</Description>
     <TargetPropertyName>start</TargetPropertyName>
     <TargetLocation>Head</TargetLocation>
-    <DefaultValueNumber>1</DefaultValueNumber>
+    <DefaultValueNumber>3.9688</DefaultValueNumber>
   </Property_Map_Gap>
 
   <!-- property mapping for the night signal controller -->
@@ -616,6 +635,13 @@
     <RecordInstance>boilerEfficiencyB</RecordInstance>
     <RecordLocation>AixLib.DataBase.Boiler.BoilerEfficiencyBaseDataDefinition</RecordLocation>
   </Property_Map_Transformation>
+  
+  <Property_Map_Transformation RefId="ID061">
+    <Description>Diameter from mm to m</Description>
+	<InputParameterName>ID0611</InputParameterName>
+    <Function>Diameter = Diammeter / 1000</Function>
+    <OutputParameterName>ID0612</OutputParameterName>
+  </Property_Map_Transformation>
 
   <!-- property mapping for the hot water boiler controller -->
   <!-- boiler outlet water temperature setting: unit transformation -->
@@ -691,15 +717,15 @@
 	<SourceComponentName>SimFlowSegment_Pipe_Indoor</SourceComponentName>
     <TargetComponentName>pipe_HeatTransfer</TargetComponentName>
     <TargetLocation>AixLib.Fluid.FixedResistances.StaticPipe</TargetLocation>
-    <Property_Map_One2One_Name>ID061</Property_Map_One2One_Name>
 	<!-- <Property_Map_Gap_Name>ID061T</Property_Map_Gap_Name> -->
     <Property_Map_Gap_Name>ID063</Property_Map_Gap_Name>
     <Property_Map_Gap_Name>ID062</Property_Map_Gap_Name>
     <Property_Map_Gap_Name>ID064</Property_Map_Gap_Name>
+    <Property_Map_Transformation_Name>ID061</Property_Map_Transformation_Name>
   </Component_Map_One2One>
   
   <Component_Map_One2One RefId="ID909">
-    <Description>Map an static valve into a pipe as a place holder.</Description>
+    <Description>Map a static valve into a pipe as a place holder.</Description>
 	<SourceComponentName>SimFlowController_Valve_Default</SourceComponentName>
 	<TargetComponentName>pipe_HeatTransfer</TargetComponentName>
     <TargetLocation>AixLib.Fluid.FixedResistances.StaticPipe</TargetLocation>
@@ -790,7 +816,7 @@
     <TargetComponentName>pump</TargetComponentName>
     <TargetLocation>AixLib.Fluid.Movers.Pump</TargetLocation>
     <Property_Map_One2One_Name>ID0314</Property_Map_One2One_Name>
-    <Property_Map_Gap_Name>ID0315</Property_Map_Gap_Name>
+    <!-- <Property_Map_Gap_Name>ID0315</Property_Map_Gap_Name> -->
     <Property_Map_Gap_Name>ID0316</Property_Map_Gap_Name>
 	<!-- <Property_Map_Gap_Name>ID0312T</Property_Map_Gap_Name> -->
 	<Property_Map_Gap_Name>ID0313T</Property_Map_Gap_Name>
