@@ -114,7 +114,7 @@ std::vector<MappedComponent> RuleFilter::getMappedData(SimHierarchyNode& _simHie
 						MappedProperty _mapPro;
 						_mapPro.setPropertyName("D");
 						_mapPro.setValueType("Number");
-						_mapPro.setValueNumber(_simPipeObj->SimFlowSeg_PipesideDiam().get());
+						_mapPro.setValueNumber(_simPipeObj->SimFlowSeg_PipesideDiam().get()/(double)1000.0);
 						// add property
 						_mapCom.addMappedProperty(_mapPro);
 					}
@@ -127,12 +127,31 @@ std::vector<MappedComponent> RuleFilter::getMappedData(SimHierarchyNode& _simHie
 						MappedProperty _mapPro;
 						_mapPro.setPropertyName("dh");
 						_mapPro.setValueType("Number");
-						_mapPro.setValueNumber(_simPipeObj->SimFlowSeg_PipesideDiam().get());
+						_mapPro.setValueNumber(_simPipeObj->SimFlowSeg_PipesideDiam().get()/(double)1000.0);
 						// add property
 						_mapCom.addMappedProperty(_mapPro);
 					}
 				}
 			}
+			else if(_simHierarchyNode.ClassType()=="SimFlowEnergyTransferStorage_HotWaterTank_Expansion")
+			{
+				SimFlowEnergyTransferStorage_HotWaterTank_Expansion* _simModelObj = static_cast<SimFlowEnergyTransferStorage_HotWaterTank_Expansion*>(_simHierarchyNode._SimRootObject);
+
+				if(_it->second->TargetLocation().get().front()=="AixLib.Fluid.Storage.ExpansionVessel")
+				{
+					// property
+					if(_simModelObj->EffectiveCapacity().present())
+					{
+						MappedProperty _mapPro;
+						_mapPro.setPropertyName("V_start");
+						_mapPro.setValueType("Number");
+						_mapPro.setValueNumber(_simModelObj->EffectiveCapacity().get());
+						// add property
+						_mapCom.addMappedProperty(_mapPro);
+					}
+				}
+			}
+
 
 			// add mapped component
 			_mapComList.push_back(_mapCom);
@@ -189,29 +208,10 @@ std::vector<MappedComponent> RuleFilter::getMappedData(SimHierarchyNode& _simHie
 								_mapCom.addMappedProperty(_mapPro);
 							}
 
-							MappedProperty _mapPro4;
-							_mapPro4.setPropertyName("boilerEfficiency");
-							_mapPro4.setValueType("Matrix");
-							// set matrix
-							std::vector<std::vector<double> > _matrix;
-							_matrix.resize(6);
-							_matrix[0].push_back(0);
-							_matrix[0].push_back(0.78);
-							_matrix[1].push_back(0.2);
-							_matrix[1].push_back(0.79);
-							_matrix[2].push_back(0.4);
-							_matrix[2].push_back(0.82);
-							_matrix[3].push_back(0.6);
-							_matrix[3].push_back(0.84);
-							_matrix[4].push_back(0.8);
-							_matrix[4].push_back(0.86);
-							_matrix[5].push_back(1);
-							_matrix[5].push_back(0.88);
-							_mapPro4.setValueMatrix(_matrix);
-							_mapPro4.setRecordInstance("boilerEfficiencyB");
-							_mapPro4.setRecordLocation("AixLib.DataBase.Boiler.BoilerEfficiencyBaseDataDefinition");
-							// add property
-							_mapCom.addMappedProperty(_mapPro4);
+							if(_simBoilerObj->SimFlowPlant_NrmlizedBoilerEffCurveName().present())
+							{
+								_simBoilerObj->SimFlowPlant_NrmlizedBoilerEffCurveName().get();
+							}
 						}
 						else if(_comMapGroupIt->TargetLocation().get().front()=="BuildingSystems.Fluid.HeatExchangers.HeaterCooler_T")
 						{
@@ -222,6 +222,376 @@ std::vector<MappedComponent> RuleFilter::getMappedData(SimHierarchyNode& _simHie
 								_mapPro.setPropertyName("Q_flow_maxHeat");
 								_mapPro.setValueType("Number");
 								_mapPro.setValueNumber(_simBoilerObj->SimFlowPlant_NomCap().get());
+								// add property
+								_mapCom.addMappedProperty(_mapPro);
+							}
+						}
+					}
+					else if(_simHierarchyNode.ClassType()=="SimFlowMover_Pump_VariableSpeedReturn")
+					{
+						SimFlowMover_Pump_VariableSpeedReturn* _simPumpObj = static_cast<SimFlowMover_Pump_VariableSpeedReturn*>(_simHierarchyNode._SimRootObject);
+
+						if(_comMapGroupIt->TargetLocation().get().front()=="AixLib.Fluid.Movers.Pump")
+						{
+							// property
+							if(_simPumpObj->SimFlowMover_RatedFlowRate().present())
+							{
+								MappedProperty _mapPro;
+								_mapPro.setPropertyName("V_flow_max");
+								_mapPro.setValueType("Number");
+								_mapPro.setValueNumber(_simPumpObj->SimFlowMover_RatedFlowRate().get());
+								// add property
+								_mapCom.addMappedProperty(_mapPro);
+
+								// Pump head for min and max rotational speed
+								if(_simPumpObj->SimFlowMover_Coef1OfThePartLoadPerfCurve().present() && _simPumpObj->SimFlowMover_Coef2OfThePartLoadPerfCurve().present() && _simPumpObj->SimFlowMover_Coef3OfThePartLoadPerfCurve().present() && _simPumpObj->SimFlowMover_Coef4OfThePartLoadPerfCurve().present())
+								{
+									double _c1 = _simPumpObj->SimFlowMover_Coef1OfThePartLoadPerfCurve().get();
+									double _c2 = _simPumpObj->SimFlowMover_Coef2OfThePartLoadPerfCurve().get();
+									double _c3 = _simPumpObj->SimFlowMover_Coef3OfThePartLoadPerfCurve().get();
+									double _c4 = _simPumpObj->SimFlowMover_Coef4OfThePartLoadPerfCurve().get();
+									int _dim = 9;
+									double _step = _simPumpObj->SimFlowMover_RatedFlowRate().get() / (double)_dim;
+
+
+									MappedProperty _mapPro4;
+									_mapPro4.setPropertyName("minMaxHead");
+									_mapPro4.setValueType("Matrix");
+									// set matrix
+									std::vector<std::vector<double> > _matrix;
+									_matrix.resize(_dim+1);
+									
+									double _v_flow=0;
+									for(int _time = 0; _time<_dim+1; ++_time)
+									{
+										double _RS = _c1 + _c2*_v_flow + _c3*_v_flow*_v_flow + _c4*_v_flow*_v_flow*_v_flow;
+
+										_matrix[_time].push_back(_v_flow);
+										_matrix[_time].push_back(_RS);
+										_matrix[_time].push_back(_RS);
+
+										_v_flow += _step;
+										// _v_flow<=_simPumpObj->SimFlowMover_RatedFlowRate().get()
+									}
+
+									_mapPro4.setValueMatrix(_matrix);
+									_mapPro4.setRecordInstance("MinMaxCharacteristics");
+									_mapPro4.setRecordLocation("AixLib.DataBase.Pumps.MinMaxCharacteristicsBaseDataDefinition");
+									// add property
+									_mapCom.addMappedProperty(_mapPro4);
+								}
+							}
+
+							// transformation
+							if(_simPumpObj->SimFlowMover_RatedPumpHead().present())
+							{
+								MappedProperty _mapPro;
+								_mapPro.setPropertyName("Head_max");
+								_mapPro.setValueType("Number");
+								_mapPro.setValueNumber(_simPumpObj->SimFlowMover_RatedPumpHead().get()*0.0001019716);
+								// add property
+								_mapCom.addMappedProperty(_mapPro);
+							}
+						}
+						else if(_comMapGroupIt->TargetLocation().get().front()=="BuildingSystems.Fluid.Movers.FlowControlled_dp")
+						{
+							// property
+							if(_simPumpObj->SimFlowMover_RatedFlowRate().present())
+							{
+								MappedProperty _mapPro;
+								_mapPro.setPropertyName("m_flow_nominal");
+								_mapPro.setValueType("Number");
+								_mapPro.setValueNumber(_simPumpObj->SimFlowMover_RatedFlowRate().get());
+								// add property
+								_mapCom.addMappedProperty(_mapPro);
+
+								// Pump head for min and max rotational speed
+								if(_simPumpObj->SimFlowMover_Coef1OfThePartLoadPerfCurve().present() && _simPumpObj->SimFlowMover_Coef2OfThePartLoadPerfCurve().present() && _simPumpObj->SimFlowMover_Coef3OfThePartLoadPerfCurve().present() && _simPumpObj->SimFlowMover_Coef4OfThePartLoadPerfCurve().present())
+								{
+									double _c1 = _simPumpObj->SimFlowMover_Coef1OfThePartLoadPerfCurve().get();
+									double _c2 = _simPumpObj->SimFlowMover_Coef2OfThePartLoadPerfCurve().get();
+									double _c3 = _simPumpObj->SimFlowMover_Coef3OfThePartLoadPerfCurve().get();
+									double _c4 = _simPumpObj->SimFlowMover_Coef4OfThePartLoadPerfCurve().get();
+									int _dim = 9;
+									double _step = _simPumpObj->SimFlowMover_RatedFlowRate().get() / (double)_dim;
+
+
+									MappedProperty _mapPro4;
+									_mapPro4.setPropertyName("per");
+									_mapPro4.setValueType("Matrix");
+									// set matrix
+									std::vector<std::vector<double> > _matrix;
+									_matrix.resize(_dim+1);
+									
+									double _v_flow=0;
+									for(int _time = 0; _time<_dim+1; ++_time)
+									{
+										double _RS = _c1 + _c2*_v_flow + _c3*_v_flow*_v_flow + _c4*_v_flow*_v_flow*_v_flow;
+
+										_matrix[_time].push_back(_v_flow);
+										_matrix[_time].push_back(_RS);
+										_matrix[_time].push_back(_RS);
+
+										_v_flow += _step;
+										// _v_flow<=_simPumpObj->SimFlowMover_RatedFlowRate().get()
+									}
+
+									_mapPro4.setValueMatrix(_matrix);
+									_mapPro4.setRecordInstance("FlowControlled");
+									_mapPro4.setRecordLocation("BuildingSystems.Fluid.Movers.Data.FlowControlled");
+									// add property
+									_mapCom.addMappedProperty(_mapPro4);
+								}
+							}
+						}
+					}
+					else if(_simHierarchyNode.ClassType()=="SimFlowSegment_Pipe_Indoor")
+					{
+						SimFlowSegment_Pipe_Indoor* _simPipeObj = static_cast<SimFlowSegment_Pipe_Indoor*>(_simHierarchyNode._SimRootObject);
+
+						if(_comMapGroupIt->TargetLocation().get().front()=="AixLib.Fluid.FixedResistances.StaticPipe")
+						{
+							// property
+							if(_simPipeObj->SimFlowSeg_PipesideDiam().present())
+							{
+								MappedProperty _mapPro;
+								_mapPro.setPropertyName("D");
+								_mapPro.setValueType("Number");
+								_mapPro.setValueNumber(_simPipeObj->SimFlowSeg_PipesideDiam().get());
+								// add property
+								_mapCom.addMappedProperty(_mapPro);
+							}
+						}
+						else if(_comMapGroupIt->TargetLocation().get().front()=="BuildingSystems.Fluid.FixedResistances.FixedResistanceDpM")
+						{
+							// property
+							if(_simPipeObj->SimFlowSeg_PipesideDiam().present())
+							{
+								MappedProperty _mapPro;
+								_mapPro.setPropertyName("dh");
+								_mapPro.setValueType("Number");
+								_mapPro.setValueNumber(_simPipeObj->SimFlowSeg_PipesideDiam().get());
+								// add property
+								_mapCom.addMappedProperty(_mapPro);
+							}
+						}
+					}
+
+
+					// add mapped component
+					_mapComList.push_back(_mapCom);
+				}
+			}
+		}
+	}
+
+	return _mapComList;
+}
+
+std::vector<MappedComponent> RuleFilter::getMappedData(SimHierarchyNode& _simHierarchyNode, ::std::auto_ptr< ::schema::simxml::Model::SimModel >& simSysData)
+{
+	// save mapped data
+	std::vector<MappedComponent> _mapComList;
+
+	// component One2One mapping
+	if(isComRuleOne2One(_simHierarchyNode.ClassType()))
+	{
+		// component level
+		// load mapping rules
+		std::pair<std::multimap<std::string, Data_Model_Map::Component_Map_One2One_iterator>::iterator, std::multimap<std::string, Data_Model_Map::Component_Map_One2One_iterator>::iterator> retIt = getComRuleOne2One(_simHierarchyNode.ClassType());
+		// iterate rules
+		for(std::multimap<std::string, Data_Model_Map::Component_Map_One2One_iterator>::iterator _it=retIt.first; _it!=retIt.second; ++_it)
+		{
+			// create mapped component
+			MappedComponent _mapCom;
+			setMappingRuleName(_mapCom, "Component_Map_One2One");
+			setTargetComponentName(_mapCom, _it->second->TargetComponentName());
+			if(_it->second->TargetLocation().present())
+				setTargetLocation(_mapCom, _it->second->TargetLocation().get().front());
+
+			// property level
+			// property rule Gap
+			for(Component_Map_One2One::Property_Map_Gap_Name_iterator _proMapGapIt=_it->second->Property_Map_Gap_Name().begin(); _proMapGapIt!=_it->second->Property_Map_Gap_Name().end(); ++_proMapGapIt)
+			{
+				// create mapped property
+				MappedProperty _mapPro = getProRuleGapData(*_proMapGapIt);
+				// add property
+				_mapCom.addMappedProperty(_mapPro);
+			}
+
+			if(_simHierarchyNode.ClassType()=="SimFlowSegment_Pipe_Indoor")
+			{
+				SimFlowSegment_Pipe_Indoor* _simPipeObj = static_cast<SimFlowSegment_Pipe_Indoor*>(_simHierarchyNode._SimRootObject);
+				
+				if(_it->second->TargetLocation().get().front()=="AixLib.Fluid.FixedResistances.StaticPipe")
+				{
+					// property
+					if(_simPipeObj->SimFlowSeg_PipesideDiam().present())
+					{
+						MappedProperty _mapPro;
+						_mapPro.setPropertyName("D");
+						_mapPro.setValueType("Number");
+						_mapPro.setValueNumber(_simPipeObj->SimFlowSeg_PipesideDiam().get()/(double)1000.0);
+						// add property
+						_mapCom.addMappedProperty(_mapPro);
+					}
+				}
+				else if(_it->second->TargetLocation().get().front()=="BuildingSystems.Fluid.FixedResistances.FixedResistanceDpM")
+				{
+					// property
+					if(_simPipeObj->SimFlowSeg_PipesideDiam().present())
+					{
+						MappedProperty _mapPro;
+						_mapPro.setPropertyName("dh");
+						_mapPro.setValueType("Number");
+						_mapPro.setValueNumber(_simPipeObj->SimFlowSeg_PipesideDiam().get()/(double)1000.0);
+						// add property
+						_mapCom.addMappedProperty(_mapPro);
+					}
+				}
+			}
+			else if(_simHierarchyNode.ClassType()=="SimFlowEnergyTransferStorage_HotWaterTank_Expansion")
+			{
+				SimFlowEnergyTransferStorage_HotWaterTank_Expansion* _simModelObj = static_cast<SimFlowEnergyTransferStorage_HotWaterTank_Expansion*>(_simHierarchyNode._SimRootObject);
+
+				if(_it->second->TargetLocation().get().front()=="AixLib.Fluid.Storage.ExpansionVessel")
+				{
+					// property
+					if(_simModelObj->EffectiveCapacity().present())
+					{
+						MappedProperty _mapPro;
+						_mapPro.setPropertyName("V_start");
+						_mapPro.setValueType("Number");
+						_mapPro.setValueNumber(_simModelObj->EffectiveCapacity().get());
+						// add property
+						_mapCom.addMappedProperty(_mapPro);
+					}
+				}
+			}
+
+
+			// add mapped component
+			_mapComList.push_back(_mapCom);
+		}
+	}
+
+	// component One2Many mapping
+	if(isComRuleOne2Many(_simHierarchyNode.ClassType()))
+	{
+		// component level
+		// load mapping rules
+		std::pair<std::multimap<std::string, Data_Model_Map::Component_Map_One2Many_iterator>::iterator, std::multimap<std::string, Data_Model_Map::Component_Map_One2Many_iterator>::iterator> retIt = getComRuleOne2Many(_simHierarchyNode.ClassType());
+		// iterate rules
+		for(std::multimap<std::string, Data_Model_Map::Component_Map_One2Many_iterator>::iterator _it=retIt.first; _it!=retIt.second; ++_it)
+		{	// iterate component mapping group id
+			for(Component_Map_One2Many::ComponentMappingGroupName_iterator subIt=_it->second->ComponentMappingGroupName().begin(); subIt!=_it->second->ComponentMappingGroupName().end(); ++subIt)
+			{
+				// get the real mapping group
+				if(ComMappingGroupList.find(*subIt) != ComMappingGroupList.end())
+				{
+					Data_Model_Map::ComponentMappingGroup_iterator _comMapGroupIt = ComMappingGroupList.find(*subIt)->second;
+					// create mapped component
+					MappedComponent _mapCom;
+					setMappingRuleName(_mapCom, "Component_Map_One2Many");
+					setTargetComponentName(_mapCom, _comMapGroupIt->TargetComponentName());
+					if(_comMapGroupIt->TargetLocation().present())
+						setTargetLocation(_mapCom, _comMapGroupIt->TargetLocation().get().front());
+
+					// property level
+					// property rule Gap
+					for(ComponentMappingGroup::Property_Map_Gap_Name_iterator _proMapGapIt=_comMapGroupIt->Property_Map_Gap_Name().begin(); _proMapGapIt!=_comMapGroupIt->Property_Map_Gap_Name().end(); ++_proMapGapIt)
+					{
+						// create mapped property
+						MappedProperty _mapPro = getProRuleGapData(*_proMapGapIt);
+						// add property
+						_mapCom.addMappedProperty(_mapPro);
+					}
+
+					// move to Python later
+					if(_simHierarchyNode.ClassType()=="SimFlowPlant_Boiler_BoilerHotWater")
+					{
+						SimFlowPlant_Boiler_BoilerHotWater* _simBoilerObj = static_cast<SimFlowPlant_Boiler_BoilerHotWater*>(_simHierarchyNode._SimRootObject);
+
+						if(_comMapGroupIt->TargetLocation().get().front()=="AixLib.Fluid.HeatExchangers.Boiler")
+						{
+							// property
+							if(_simBoilerObj->SimFlowPlant_NomCap().present())
+							{
+								MappedProperty _mapPro;
+								_mapPro.setPropertyName("Q_flow_max");
+								_mapPro.setValueType("Number");
+								_mapPro.setValueNumber(_simBoilerObj->SimFlowPlant_NomCap().get());
+								// add property
+								_mapCom.addMappedProperty(_mapPro);
+							}
+
+							if(_simBoilerObj->SimFlowPlant_NrmlizedBoilerEffCurveName().present())
+							{
+								for(SimModel::SimPerformanceCurve_Mathematical_Cubic_iterator _itSimCurveIt=simSysData->SimPerformanceCurve_Mathematical_Cubic().begin(); _itSimCurveIt!=simSysData->SimPerformanceCurve_Mathematical_Cubic().end(); ++_itSimCurveIt)
+								{
+									if(_itSimCurveIt->RefId()==_simBoilerObj->SimFlowPlant_NrmlizedBoilerEffCurveName().get())
+									{
+										if(_itSimCurveIt->SimPerfCurve_MinValX().present() && _itSimCurveIt->SimPerfCurve_MaxValX().present() && _itSimCurveIt->SimPerfCurve_Coef1Constant().present() && _itSimCurveIt->SimPerfCurve_Coef_2_X().present() && _itSimCurveIt->SimPerfCurve_Coef_3_X_2().present() && _itSimCurveIt->SimPerfCurve_Coef_4_X_3().present())
+										{
+											// defintion for coefficients
+											double _a1 = _itSimCurveIt->SimPerfCurve_Coef1Constant().get();
+											double _a2 = _itSimCurveIt->SimPerfCurve_Coef_2_X().get();
+											double _a3 = _itSimCurveIt->SimPerfCurve_Coef_3_X_2().get();
+											double _a4 = _itSimCurveIt->SimPerfCurve_Coef_4_X_3().get();
+											int _dim = 5;
+											double _step = (_itSimCurveIt->SimPerfCurve_MaxValX().get()-_itSimCurveIt->SimPerfCurve_MinValX().get()) / (double)_dim;
+
+											MappedProperty _mapPro4;
+											_mapPro4.setPropertyName("boilerEfficiency");
+											_mapPro4.setValueType("Matrix");
+											// set matrix
+											std::vector<std::vector<double> > _matrix;
+											_matrix.resize(_dim+1);
+
+											double _plr = _itSimCurveIt->SimPerfCurve_MinValX().get();
+											for(int _time = 0; _time<_dim+1; ++_time)
+											{
+												double _bec = _a1 + _a2*_plr + _a3*_plr*_plr + _a4*_plr*_plr*_plr;
+
+												_matrix[_time].push_back(_plr);
+												_matrix[_time].push_back(_bec);
+
+												_plr += _step;
+											}
+
+											_mapPro4.setValueMatrix(_matrix);
+											_mapPro4.setRecordInstance("boilerEfficiencyB");
+											_mapPro4.setRecordLocation("AixLib.DataBase.Boiler.BoilerEfficiencyBaseDataDefinition");
+											// add property
+											_mapCom.addMappedProperty(_mapPro4);
+										}
+
+										break;
+									}
+								}
+							}							
+						}
+						else if(_comMapGroupIt->TargetLocation().get().front()=="BuildingSystems.Fluid.HeatExchangers.HeaterCooler_T")
+						{
+							// property
+							if(_simBoilerObj->SimFlowPlant_NomCap().present())
+							{
+								MappedProperty _mapPro;
+								_mapPro.setPropertyName("Q_flow_maxHeat");
+								_mapPro.setValueType("Number");
+								_mapPro.setValueNumber(_simBoilerObj->SimFlowPlant_NomCap().get());
+								// add property
+								_mapCom.addMappedProperty(_mapPro);
+							}
+						}
+						else if(_comMapGroupIt->TargetLocation().get().front()=="Modelica.Blocks.Sources.Constant")
+						{
+							if(_simBoilerObj->SimFlowPlant_DesignWaterOutletTemp().present())
+							{
+								MappedProperty _mapPro;
+								_mapPro.setPropertyName("k");
+								_mapPro.setValueType("Number");
+								_mapPro.setValueNumber(_simBoilerObj->SimFlowPlant_DesignWaterOutletTemp().get()+273.15);
 								// add property
 								_mapCom.addMappedProperty(_mapPro);
 							}

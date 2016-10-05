@@ -67,6 +67,8 @@ public:
 	bool isMappedComponent(SimHierarchyNode& _simHierarchyNode);
 	// translate the SimModel component saved in the hierarchy node
 	std::vector<MappedComponent> getMappedData(SimHierarchyNode& _simHierarchyNode);
+	// v2.2
+	std::vector<MappedComponent> getMappedData(SimHierarchyNode& _simHierarchyNode, ::std::auto_ptr< ::schema::simxml::Model::SimModel >& simSysData);
 	// check whether there are newly added components defined by the mapping rule Gap
 	bool isNewComponentAdded();
 	// add new component into Modelica as defined in the component mapping rule Gap

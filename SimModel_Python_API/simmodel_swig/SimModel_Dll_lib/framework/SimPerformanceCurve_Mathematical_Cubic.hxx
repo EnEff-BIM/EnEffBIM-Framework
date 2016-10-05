@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeometry
     {
-      class SimPerformanceCurve_Mathematical_Cubic: public ::schema::simxml::ResourcesGeometry::SimPerformanceCurve_Mathematical
+      class __declspec(dllexport) SimPerformanceCurve_Mathematical_Cubic: public ::schema::simxml::ResourcesGeometry::SimPerformanceCurve_Mathematical
       {
         public:
         // SimPerfCurve_Coef1Constant

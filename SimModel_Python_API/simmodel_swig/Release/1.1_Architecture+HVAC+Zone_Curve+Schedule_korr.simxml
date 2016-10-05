@@ -796,7 +796,7 @@
 		<simmep:SimFlowPlant_FuelType>NaturalGas</simmep:SimFlowPlant_FuelType>
 		<simmep:SimFlowPlant_NomCap>1400</simmep:SimFlowPlant_NomCap>
 		<simmep:SimFlowPlant_NomThermalEff>846.85</simmep:SimFlowPlant_NomThermalEff>
-		<simmep:SimFlowPlant_NrmlizedBoilerEffCurveName> ID_cp_0LMbjl8XfFaui1YxJs_D66</simmep:SimFlowPlant_NrmlizedBoilerEffCurveName>
+		<simmep:SimFlowPlant_NrmlizedBoilerEffCurveName>ID_cp_0LMbjl8XfFaui1YxJs_D66</simmep:SimFlowPlant_NrmlizedBoilerEffCurveName>
 		<simmep:SimFlowPlant_DesignWaterOutletTemp>70</simmep:SimFlowPlant_DesignWaterOutletTemp>
 		<simmep:SimFlowPlant_DesignWaterFlowRate>0.00706293334429772</simmep:SimFlowPlant_DesignWaterFlowRate>
 		<simmep:SimFlowPlant_OptimumPartLoadRatio>0.9</simmep:SimFlowPlant_OptimumPartLoadRatio>
