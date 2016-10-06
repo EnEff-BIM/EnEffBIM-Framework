@@ -887,14 +887,14 @@
 		<simbldg:SimList_ZoneEqmt_1_18_Name>ID0LMbjl8XfFaui1YxJs_D1K </simbldg:SimList_ZoneEqmt_1_18_Name>
 	</SimList_EquipmentList_ZoneHvac>
 	<SimPerformanceCurve_Mathematical_Cubic RefId="ID_cp_0LMbjl8XfFaui1YxJs_D66">
-		<simgeom:SimPerfCurve_Coef1Constant>0.1</simgeom:SimPerfCurve_Coef1Constant>
-		<simgeom:SimPerfCurve_Coef_2_X>0.2</simgeom:SimPerfCurve_Coef_2_X>
+		<simgeom:SimPerfCurve_Coef1Constant>0.78</simgeom:SimPerfCurve_Coef1Constant>
+		<simgeom:SimPerfCurve_Coef_2_X>0.002</simgeom:SimPerfCurve_Coef_2_X>
 		<simgeom:SimPerfCurve_MinValX>0</simgeom:SimPerfCurve_MinValX>
 		<simgeom:SimPerfCurve_MaxValX>1</simgeom:SimPerfCurve_MaxValX>
 		<simgeom:SimPerfCurve_InputUnitTypeForX>Dimensionless</simgeom:SimPerfCurve_InputUnitTypeForX>
 		<simgeom:SimPerfCurve_OutputUnitType>Dimensionless</simgeom:SimPerfCurve_OutputUnitType>
-		<simgeom:SimPerfCurve_Coef_3_X_2>0.3</simgeom:SimPerfCurve_Coef_3_X_2>
-		<simgeom:SimPerfCurve_Coef_4_X_3>0.4</simgeom:SimPerfCurve_Coef_4_X_3>
+		<simgeom:SimPerfCurve_Coef_3_X_2>0.07</simgeom:SimPerfCurve_Coef_3_X_2>
+		<simgeom:SimPerfCurve_Coef_4_X_3>0.059</simgeom:SimPerfCurve_Coef_4_X_3>
 	</SimPerformanceCurve_Mathematical_Cubic>
 	<!-- <SimPerformanceCurve_Mathematical_Bicubic RefId="ID_cp_0LMbjl8XfFaui1YxJs_D66">
 		<simgeom:SimPerfCurve_MinCurveOutput>0</simgeom:SimPerfCurve_MinCurveOutput>
