@@ -22,6 +22,8 @@
     <RefValue>SimFlowPlant_DesignWaterOutletTemp</RefValue>
   </InputParameter>
   
+  <!-- property mapping for the pipe -->
+  <!-- Pip Diameter in mm -->
   <InputParameter RefId="ID0611">
     <Description>Diameter of the pipe in mm</Description>
     <ParameterName>Diammeter</ParameterName>
@@ -178,7 +180,9 @@
     <ValueType>single</ValueType>
     <ValueFormat>const_k</ValueFormat>
   </OutputParameter>
-  
+
+  <!-- property mapping for the pipe -->
+  <!-- output in m -->  
   <OutputParameter RefId="ID0612">
     <Description>Diameter of the pipe in m</Description>
     <ParameterName>D</ParameterName>
