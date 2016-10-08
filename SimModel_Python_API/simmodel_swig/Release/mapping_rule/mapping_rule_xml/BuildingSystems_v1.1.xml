@@ -51,6 +51,14 @@
     <!-- referenced id, referenced element, referenced value -->
     <RefValue>SimFlowMover_PumprpmSchedName SimTimeSeriesSchedule_Day_Hourly SimTimeSeriesSched_Hour_1_24</RefValue>
   </InputParameter>
+  
+  <InputParameter RefId="ID0611">
+    <Description>Diameter of the pipe in mm</Description>
+    <ParameterName>Diammeter</ParameterName>
+    <ValueType>single</ValueType>
+    <IsReferenced>false</IsReferenced>
+    <RefValue>SimFlowSeg_PipesideDiam</RefValue>
+  </InputParameter>
 
   <!-- property mapping for the water pump of variable speed return -->
   <!-- cofficient c1 of the min and max rotational speed defintion -->
@@ -124,6 +132,13 @@
     <ValueFormat>st_out</ValueFormat>
   </OutputParameter>
   
+  <OutputParameter RefId="ID0612">
+    <Description>Diameter of the pipe in m</Description>
+    <ParameterName>D</ParameterName>
+    <ValueType>single</ValueType>
+    <ValueFormat>Diameter</ValueFormat>
+  </OutputParameter>
+  
   <!-- property mapping of the maiximum heat output for the hot water boiler -->
   <Property_Map_One2One RefId="ID0111">
     <Description>Maximum heat output of boiler at full load [W]</Description>
@@ -141,11 +156,11 @@
   
   <!-- property mapping for the water pipe -->
   <!-- pipe inside diameter [m] -->
-  <Property_Map_One2One RefId="ID061">
+  <!-- <Property_Map_One2One RefId="ID061">
     <Description>Diameter [m]</Description>
     <RefValue>SimFlowSeg_PipesideDiam</RefValue>
     <TargetPropertyName>dh</TargetPropertyName>
-  </Property_Map_One2One>
+  </Property_Map_One2One> -->
 
   <!-- property mapping for the expansion vessel -->
   <!-- fixed value of pressure [bar] -->
@@ -153,6 +168,16 @@
     <Description>Fixed value of pressure [bar]</Description>
     <RefValue>SimFlowEnergyTransSto_TankVol</RefValue>
     <TargetPropertyName>p</TargetPropertyName>
+  </Property_Map_One2One>
+  
+  <!-- property mapping for the water pump of variable speed return -->
+  <!-- Electric Motor Efficiency -->
+  <Property_Map_One2One RefId="ID0311">
+    <Description>Electric Motor Efficiency</Description>
+    <RefValue>SimFlowMover_MotorEff</RefValue>
+    <TargetPropertyName>motorEfficiency</TargetPropertyName>
+    <RecordInstance>per</RecordInstance>
+    <RecordLocation>BuildingSystems.Fluid.Movers.Data.FlowControlled</RecordLocation>
   </Property_Map_One2One>
 
   <!-- property mapping for the water pipe -->
@@ -175,7 +200,7 @@
   <Property_Map_Gap RefId="ID0221">
     <Description>Water inlet temperature at nominal condition</Description>
     <TargetPropertyName>T_a_nominal</TargetPropertyName>
-    <DefaultValueNumber>40</DefaultValueNumber>
+    <DefaultValueNumber>313.15</DefaultValueNumber>
   </Property_Map_Gap>
 
   <!-- property mapping for the radiator -->
@@ -183,7 +208,7 @@
   <Property_Map_Gap RefId="ID0222">
     <Description>Water outlet temperature at nominal condition</Description>
     <TargetPropertyName>T_b_nominal</TargetPropertyName>
-    <DefaultValueNumber>25</DefaultValueNumber>
+    <DefaultValueNumber>298.15</DefaultValueNumber>
   </Property_Map_Gap>
 
   <!-- property mapping for the radiator -->
@@ -275,7 +300,7 @@
   <Property_Map_Gap RefId="ID041">
     <Description>Contant pressure of the expansion vessel [bar]</Description>
     <TargetPropertyName>p</TargetPropertyName>
-    <DefaultValueNumber>5</DefaultValueNumber>
+    <DefaultValueNumber>500000</DefaultValueNumber>
   </Property_Map_Gap>
 
   <!-- property mapping for the expansion vessel -->
@@ -371,7 +396,7 @@
   <Property_Map_Gap RefId="ID062">
     <Description>Pressure drop under nominal conditions [bar]</Description>
     <TargetPropertyName>dp_nominal</TargetPropertyName>
-    <DefaultValueNumber>1e4</DefaultValueNumber>
+    <DefaultValueString>1e4</DefaultValueString>
   </Property_Map_Gap>
 
   <!-- a temporary rule instance for boiler outlet water temperature setting -->
@@ -408,6 +433,15 @@
     <TargetPropertyName>dpValve_nominal</TargetPropertyName>
     <DefaultValueNumber>1e4</DefaultValueNumber>
   </Property_Map_Gap>
+  
+   <!-- hydraulic efficiency of pump -->
+  <Property_Map_Gap RefId="ID0315">
+    <Description>hydraulic efficiency of pump</Description>
+    <TargetPropertyName>hydraulicEfficiency</TargetPropertyName>
+    <DefaultValueNumber>0.8</DefaultValueNumber>
+	<RecordInstance>per</RecordInstance>
+    <RecordLocation>BuildingSystems.Fluid.Movers.Data.FlowControlled</RecordLocation>
+  </Property_Map_Gap>
 
   <!-- property mapping for the hot water boiler controller -->
   <!-- boiler outlet water temperature setting: unit transformation -->
@@ -416,21 +450,6 @@
     <InputParameterName>ID01211</InputParameterName>
     <Function>const_k = const_c + 273.15</Function>
     <OutputParameterName>ID01212</OutputParameterName>
-  </Property_Map_Transformation>
-
-  <!-- property mapping for the water pump of variable speed return -->
-  <!-- pump head for min and max rotational speed defintion: reuse a record structure -->
-  <Property_Map_Transformation RefId="ID0311">
-    <Description>Pump head for min and max rotational speed defintion</Description>
-    <InputParameterName>ID03111</InputParameterName>
-    <InputCoefficientName>ID03112</InputCoefficientName>
-    <InputCoefficientName>ID03113</InputCoefficientName>
-    <InputCoefficientName>ID03114</InputCoefficientName>
-    <InputCoefficientName>ID03115</InputCoefficientName>
-    <Function>rs = c1 + ( c2 * v_flow ) + ( c3 * v_flow * v_flow ) + ( c4 * v_flow * v_flow * v_flow )</Function>
-    <OutputParameterName>ID03116</OutputParameterName>
-    <RecordInstance>FlowControlled</RecordInstance>
-    <RecordLocation>BuildingSystems.Fluid.Movers.Data.FlowControlled</RecordLocation>
   </Property_Map_Transformation>
 
   <!-- property mapping for the night signal controller -->
@@ -450,6 +469,13 @@
     <Function>st_out = ( POSE ( hour_1_24 1 ) - 1 ) * 3600 </Function>
     <OutputParameterName>ID03231</OutputParameterName>
   </Property_Map_Transformation>
+  
+  <Property_Map_Transformation RefId="ID061">
+    <Description>Diameter from mm to m</Description>
+	<InputParameterName>ID0611</InputParameterName>
+    <Function>Diameter = Diammeter / 1000</Function>
+    <OutputParameterName>ID0612</OutputParameterName>
+  </Property_Map_Transformation>
 
     <!--Empty component without propeties. It does not exist in the official SimModel schema and is not defined on the Modelica side. Using a pipe as a temporary replacement, to allow a representation of this component coming form the IFC side!-->  
   <Component_Map_One2One RefId="ID99">
@@ -465,10 +491,11 @@
 	<SourceComponentName>SimFlowSegment_Pipe_Indoor</SourceComponentName>
     <TargetComponentName>returnPipe</TargetComponentName>
     <TargetLocation>BuildingSystems.Fluid.FixedResistances.FixedResistanceDpM</TargetLocation>
-    <Property_Map_One2One_Name>ID061</Property_Map_One2One_Name>
-	<Property_Map_Gap_Name>ID061T</Property_Map_Gap_Name>
+    <!--  <Property_Map_One2One_Name>ID061</Property_Map_One2One_Name> -->
+	<!--  <Property_Map_Gap_Name>ID061T</Property_Map_Gap_Name> -->
 	<Property_Map_Gap_Name>ID063</Property_Map_Gap_Name>
     <Property_Map_Gap_Name>ID062</Property_Map_Gap_Name>
+	<Property_Map_Transformation_Name>ID061</Property_Map_Transformation_Name>
   </Component_Map_One2One>
 
   <!-- component mapping for the water pipe -->
@@ -504,8 +531,9 @@
     <Description>Water pump mapping</Description>
     <TargetComponentName>pump</TargetComponentName>
     <TargetLocation>BuildingSystems.Fluid.Movers.FlowControlled_dp</TargetLocation>
+    <Property_Map_One2One_Name>ID0311</Property_Map_One2One_Name>
     <Property_Map_One2One_Name>ID0314</Property_Map_One2One_Name>
-    <Property_Map_Transformation_Name>ID0311</Property_Map_Transformation_Name>
+	<Property_Map_Gap_Name>ID0315</Property_Map_Gap_Name>
   </ComponentMappingGroup>
 
   <!-- component mapping for the water pump of variable speed return -->
@@ -552,7 +580,7 @@
   <!-- switch for pressure set -->
   <ComponentMappingGroup RefId="ID036">
     <Description>switch for pressure set</Description>
-    <TargetComponentName>product</TargetComponentName>
+    <TargetComponentName>switch</TargetComponentName>
     <TargetLocation>Modelica.Blocks.Logical.Switch</TargetLocation>
   </ComponentMappingGroup>
   
