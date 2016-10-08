@@ -2,6 +2,7 @@
 
   <!-- property mapping for the hot water boiler -->
   <!-- the part load ratio given as an input paramter of the boiler efficiency curve -->
+  <!-- Recommendation: To generate the matrix, use 0.1 steps between lower and upper boundary. -->
   <InputParameter RefId="ID01141">
     <Description>Part load ratio</Description>
     <ParameterName>plr</ParameterName>
@@ -39,13 +40,16 @@
 
   <!-- property mapping for the water pump of variable speed return -->
   <!-- Volume flow rate through the pump [m3/s] -->
+  <!-- Upper boundary set to five, to have a more flexible volume flow, necessary to determine the matrix in the AixLib matrix for the pumps MinMaxCahrachteristics -->
+  <!-- Recommendation: To generate the matrix, use 0.5 steps between lower and upper boundary. -->
   <InputParameter RefId="ID03111">
     <Description>Volume flow rate through the pump [m3/s]</Description>
     <ParameterName>v_flow</ParameterName>
     <ValueType>range</ValueType>
     <IsReferenced>false</IsReferenced>
     <LowerBoundValue>0</LowerBoundValue>
-    <UpperBoundRef>SimFlowMover_RatedFlowRate</UpperBoundRef>
+    <!-- <UpperBoundRef>SimFlowMover_RatedFlowRate</UpperBoundRef> -->
+	<UpperBoundRef>5.0</UpperBoundRef>
   </InputParameter>
 
   <!-- property mapping for the water pump of variable speed return -->
@@ -429,12 +433,52 @@
     <DefaultValueNumber>86400</DefaultValueNumber>
   </Property_Map_Gap>
 
+  <!-- property mapping for the hot water tank schedule -->
+  <!-- Width of pulse in % of period -->
+  <Property_Map_Gap RefId="ID11401">
+    <Description>Width of pulse in % of period</Description>
+    <TargetPropertyName>width</TargetPropertyName>
+    <DefaultValueString>( 1 / 48 ) * 100</DefaultValueString>
+  </Property_Map_Gap>
+  
+  <!-- property mapping for the hot water tank schedule -->
+  <!-- time for one period [s] -->
+  <Property_Map_Gap RefId="ID11402">
+    <Description>Time for one period [s]</Description>
+    <TargetPropertyName>period</TargetPropertyName>
+    <DefaultValueNumber>86400</DefaultValueNumber>
+  </Property_Map_Gap>
+  
+  <!-- property mapping for the hot water tank schedule -->
+  <!-- Time instant of first pulse [s] -->
+  <Property_Map_Gap RefId="ID11403">
+    <Description>Time instant of first pulse [s]]</Description>
+    <TargetPropertyName>startTime</TargetPropertyName>
+    <DefaultValueNumber>36000</DefaultValueNumber>
+  </Property_Map_Gap>
+  
   <!-- property mapping for the expansion vessel -->
   <!-- fixed value of pressure [bar] -->
   <Property_Map_Gap RefId="ID041">
     <Description>Constant pressure of the expansion vessel [Pa]</Description>
     <TargetPropertyName>p</TargetPropertyName>
     <DefaultValueNumber>100000</DefaultValueNumber>
+  </Property_Map_Gap>
+  
+  <!-- property mapping for the water storage tank -->
+  <!-- fixed value of pressure [bar] -->
+  <Property_Map_Gap RefId="ID1121">
+    <Description>Constant pressure of the water sink [bar]</Description>
+    <TargetPropertyName>p</TargetPropertyName>
+    <DefaultValueNumber>1</DefaultValueNumber>
+  </Property_Map_Gap>
+  
+  <!-- property mapping for the water storage tank -->
+  <!-- fixed value of pressure [bar] -->
+  <Property_Map_Gap RefId="ID1131">
+    <Description>Constant pressure of the water source [bar]</Description>
+    <TargetPropertyName>waterSource</TargetPropertyName>
+    <DefaultValueNumber>4</DefaultValueNumber>
   </Property_Map_Gap>
   
   <!-- property mapping for the base paramters -->
@@ -618,6 +662,182 @@
     <TargetPropertyName>k</TargetPropertyName>
     <DefaultValueNumber>293.15</DefaultValueNumber>
   </Property_Map_Gap>
+  
+  <!-- property mapping for hot water storage tank -->
+  <!-- number of layers -->
+  <Property_Map_Gap RefId="ID1111">
+    <Description>number of layers</Description>
+    <TargetPropertyName>n</TargetPropertyName>
+    <DefaultValueNumber>6</DefaultValueNumber>
+  </Property_Map_Gap>
+  
+  <!-- property mapping for hot water storage tank -->
+  <!-- storage diameter [m] -->
+  <Property_Map_Gap RefId="ID1112">
+    <Description>storage diameter [m]</Description>
+    <TargetPropertyName>d</TargetPropertyName>
+    <DefaultValueNumber>0.71365</DefaultValueNumber>
+  </Property_Map_Gap>
+  
+  <!-- property mapping for hot water storage tank -->
+  <!-- storage height [m] -->
+  <Property_Map_Gap RefId="ID1113">
+    <Description>storage height [m]</Description>
+    <TargetPropertyName>h</TargetPropertyName>
+    <DefaultValueNumber>1</DefaultValueNumber>
+  </Property_Map_Gap>
+  
+  <!-- property mapping for hot water storage tank -->
+  <!-- thermal conductivity of insulation [W/(m.K)] -->
+  <Property_Map_Gap RefId="ID1114">
+    <Description>thermal conductivity of insulation [W/(m.K)]</Description>
+    <TargetPropertyName>lambda_ins</TargetPropertyName>
+    <DefaultValueNumber>0.04</DefaultValueNumber>
+  </Property_Map_Gap>
+  
+  <!-- property mapping for hot water storage tank -->
+  <!-- thickness of insulation [m] -->
+  <Property_Map_Gap RefId="ID1115">
+    <Description>thickness of insulation [m]</Description>
+    <TargetPropertyName>s_ins</TargetPropertyName>
+    <DefaultValueNumber>0.2</DefaultValueNumber>
+  </Property_Map_Gap>
+  
+  <!-- property mapping for hot water storage tank -->
+  <!-- internal heat transfer coefficient [W/(m2.K)] -->
+  <Property_Map_Gap RefId="ID1116">
+    <Description>internal heat transfer coefficient [W/(m2.K)]</Description>
+    <TargetPropertyName>alpha_in</TargetPropertyName>
+    <DefaultValueNumber>1500</DefaultValueNumber>
+  </Property_Map_Gap>
+  
+  <!-- property mapping for hot water storage tank -->
+  <!-- external heat transfer coefficient [W/(m2.K)] -->
+  <Property_Map_Gap RefId="ID1117">
+    <Description>external heat transfer coefficient [W/(m2.K)]</Description>
+    <TargetPropertyName>alpha_out</TargetPropertyName>
+    <DefaultValueNumber>15</DefaultValueNumber>
+  </Property_Map_Gap>
+  
+  <!-- property mapping for hot water storage tank -->
+  <!-- heat exchanger volume [m3] -->
+  <Property_Map_Gap RefId="ID1118">
+    <Description>heat exchanger volume [m3]</Description>
+    <TargetPropertyName>V_HE</TargetPropertyName>
+    <DefaultValueNumber>0.05</DefaultValueNumber>
+  </Property_Map_Gap>
+  
+  <!-- property mapping for hot water storage tank -->
+  <!-- heat exchanger heat transfer coefficient [W/(m2.K)] -->
+  <Property_Map_Gap RefId="ID1119">
+    <Description>heat exchanger heat transfer coefficient [W/(m2.K)]</Description>
+    <TargetPropertyName>k_HE</TargetPropertyName>
+    <DefaultValueNumber>1500</DefaultValueNumber>
+  </Property_Map_Gap>
+  
+  <!-- property mapping for hot water storage tank -->
+  <!-- heat exchanger area [m2] -->
+  <Property_Map_Gap RefId="ID11110">
+    <Description>heat exchanger area [m2]</Description>
+    <TargetPropertyName>A_HE</TargetPropertyName>
+    <DefaultValueNumber>20</DefaultValueNumber>
+  </Property_Map_Gap>
+  
+  <!-- property mapping for hot water storage tank -->
+  <!-- beta [1/K] -->
+  <Property_Map_Gap RefId="ID11111">
+    <Description>beta [1/K]</Description>
+    <TargetPropertyName>beta</TargetPropertyName>
+    <DefaultValueNumber>0.00035</DefaultValueNumber>
+  </Property_Map_Gap>
+  
+  <!-- property mapping for hot water storage tank -->
+  <!-- kappa [-] -->
+  <Property_Map_Gap RefId="ID11112">
+    <Description>kappa [-]</Description>
+    <TargetPropertyName>kappa</TargetPropertyName>
+    <DefaultValueNumber>0.4</DefaultValueNumber>
+  </Property_Map_Gap>  
+  
+  <!-- property mapping for Hysteresis -->
+  <!-- if y=true and u smaller and equal to uLow, switch to y=false -->
+  <Property_Map_Gap RefId="ID1141">
+    <Description>if y=true and u smaller and equal to uLow, switch to y=false</Description>
+    <TargetPropertyName>uLow</TargetPropertyName>
+    <DefaultValueNumber>0.1</DefaultValueNumber>
+  </Property_Map_Gap> 
+  
+  <!-- property mapping for Hysteresis -->
+  <!-- if y=false and u bigger and equal to uHigh, switch to y=true -->
+  <Property_Map_Gap RefId="ID1142">
+    <Description>if y=false and u bigger and equal to uHigh, switch to y=true</Description>
+    <TargetPropertyName>uHigh</TargetPropertyName>
+    <DefaultValueNumber>0.3</DefaultValueNumber>
+  </Property_Map_Gap> 
+  
+  <!-- property mapping for Hysteresis -->
+  <!-- if y=true and u smaller and equal to uLow, switch to y=false -->
+  <Property_Map_Gap RefId="ID1171">
+    <Description>if y=true and u smaller and equal to uLow, switch to y=false</Description>
+    <TargetPropertyName>uLow</TargetPropertyName>
+    <DefaultValueNumber>355</DefaultValueNumber>
+  </Property_Map_Gap> 
+  
+  <!-- property mapping for Hysteresis -->
+  <!-- if y=false and u bigger and equal to uHigh, switch to y=true -->
+  <Property_Map_Gap RefId="ID1172">
+    <Description>if y=false and u bigger and equal to uHigh, switch to y=true</Description>
+    <TargetPropertyName>uHigh</TargetPropertyName>
+    <DefaultValueNumber>360</DefaultValueNumber>
+  </Property_Map_Gap> 
+  
+  <!-- property mapping for Hysteresis -->
+  <!-- Output signal for true Boolean input -->
+  <Property_Map_Gap RefId="ID1191">
+    <Description>Output signal for true Boolean input</Description>
+    <TargetPropertyName>realTrue</TargetPropertyName>
+    <DefaultValueNumber>1.0</DefaultValueNumber>
+  </Property_Map_Gap> 
+  
+  <!-- property mapping for Hysteresis -->
+  <!-- if y=false and u bigger and equal to uHigh, switch to y=true -->
+  <Property_Map_Gap RefId="ID1192">
+    <Description>Output signal for false Boolean input</Description>
+    <TargetPropertyName>realFalse</TargetPropertyName>
+    <DefaultValueNumber>0.0</DefaultValueNumber>
+  </Property_Map_Gap>
+  
+  <!-- property mapping for Hysteresis -->
+  <!-- Output signal for true Boolean input -->
+  <Property_Map_Gap RefId="ID11101">
+    <Description>Output signal for true Boolean input</Description>
+    <TargetPropertyName>realTrue</TargetPropertyName>
+    <DefaultValueNumber>0.000001</DefaultValueNumber>
+  </Property_Map_Gap> 
+  
+  <!-- property mapping for Hysteresis -->
+  <!-- if y=false and u bigger and equal to uHigh, switch to y=true -->
+  <Property_Map_Gap RefId="ID11102">
+    <Description>Output signal for false Boolean input</Description>
+    <TargetPropertyName>realFalse</TargetPropertyName>
+    <DefaultValueNumber>0.1</DefaultValueNumber>
+  </Property_Map_Gap>
+  
+  <!-- property mapping for Hysteresis -->
+  <!-- Output signal for true Boolean input -->
+  <Property_Map_Gap RefId="ID11201">
+    <Description>Output signal for true Boolean input</Description>
+    <TargetPropertyName>realTrue</TargetPropertyName>
+    <DefaultValueNumber>0.047156</DefaultValueNumber>
+  </Property_Map_Gap> 
+  
+  <!-- property mapping for Hysteresis -->
+  <!-- if y=false and u bigger and equal to uHigh, switch to y=true -->
+  <Property_Map_Gap RefId="ID11202">
+    <Description>Output signal for false Boolean input</Description>
+    <TargetPropertyName>realFalse</TargetPropertyName>
+    <DefaultValueNumber>0.0</DefaultValueNumber>
+  </Property_Map_Gap>
 
   <!-- property mapping for the hot water boiler -->
   <!-- boiler efficiency curve defintion: reuse a record structure -->
@@ -740,6 +960,25 @@
 	<Property_Map_One2One_Name>ID0419</Property_Map_One2One_Name>
 	<Property_Map_Gap_Name>ID041</Property_Map_Gap_Name>
   </Component_Map_One2One>
+  
+  <Component_Map_One2One RefId="ID111">
+    <Description>Map a hot water storage tank into AixLib</Description>
+	<SourceComponentName>SimFlowEnergyTransferStorage_HotWaterTank_DomesticHotWater</SourceComponentName>
+	<TargetComponentName>storage</TargetComponentName>
+    <TargetLocation>AixLib.Fluid.Storage.Storage</TargetLocation>
+	<Property_Map_Gap_Name>ID1111</Property_Map_Gap_Name>
+	<Property_Map_Gap_Name>ID1112</Property_Map_Gap_Name>
+	<Property_Map_Gap_Name>ID1113</Property_Map_Gap_Name>
+	<Property_Map_Gap_Name>ID1114</Property_Map_Gap_Name>
+	<Property_Map_Gap_Name>ID1115</Property_Map_Gap_Name>
+	<Property_Map_Gap_Name>ID1116</Property_Map_Gap_Name>
+	<Property_Map_Gap_Name>ID1117</Property_Map_Gap_Name>
+	<Property_Map_Gap_Name>ID1118</Property_Map_Gap_Name>
+	<Property_Map_Gap_Name>ID1119</Property_Map_Gap_Name>
+	<Property_Map_Gap_Name>ID11110</Property_Map_Gap_Name>
+	<Property_Map_Gap_Name>ID11111</Property_Map_Gap_Name>
+	<Property_Map_Gap_Name>ID11112</Property_Map_Gap_Name>
+  </Component_Map_One2One>
 
   <!-- component mapping for the valve -->  
    <ComponentMappingGroup RefId="ID101c">
@@ -750,7 +989,79 @@
     <Property_Map_Gap_Name>ID102</Property_Map_Gap_Name>
   </ComponentMappingGroup>
   
+  <!-- Hysteres mapping for the storage tank -->  
+   <ComponentMappingGroup RefId="ID114">
+	<Description>map a hysterese into AixLib</Description>
+	<TargetComponentName>roomToColdHys</TargetComponentName>
+    <TargetLocation>Modelica.Blocks.Logical.Hysteresis</TargetLocation>
+    <Property_Map_Gap_Name>ID1141</Property_Map_Gap_Name>
+    <Property_Map_Gap_Name>ID1142</Property_Map_Gap_Name>
+  </ComponentMappingGroup>
   
+  <!-- Logical Not mapping for the storage tank -->  
+   <ComponentMappingGroup RefId="ID115">
+	<Description>Logical Not mapping for the storage tank</Description>
+	<TargetComponentName>roomWarm</TargetComponentName>
+    <TargetLocation>Modelica.Blocks.Logical.Not</TargetLocation>
+  </ComponentMappingGroup>
+  
+  <!-- Logical And mapping for the storage tank -->  
+   <ComponentMappingGroup RefId="ID116">
+	<Description>Logical And mapping for the storage tank</Description>
+	<TargetComponentName>heatTank</TargetComponentName>
+    <TargetLocation>Modelica.Blocks.Logical.And</TargetLocation>
+  </ComponentMappingGroup>
+  
+  <!-- Hysteres mapping for the storage tank -->  
+   <ComponentMappingGroup RefId="ID117">
+	<Description>map a hysterese into AixLib</Description>
+	<TargetComponentName>tankWarmHys</TargetComponentName>
+    <TargetLocation>Modelica.Blocks.Logical.Hysteresis</TargetLocation>
+    <Property_Map_Gap_Name>ID1171</Property_Map_Gap_Name>
+    <Property_Map_Gap_Name>ID1172</Property_Map_Gap_Name>
+  </ComponentMappingGroup>
+  
+  <!-- Logical Not mapping for the storage tank -->  
+   <ComponentMappingGroup RefId="ID118">
+	<Description>Logical Not mapping for the storage tank</Description>
+	<TargetComponentName>tankNotWarm</TargetComponentName>
+    <TargetLocation>Modelica.Blocks.Logical.Not</TargetLocation>
+  </ComponentMappingGroup>
+  
+  <!-- map a booelan to real into AixLib -->  
+   <ComponentMappingGroup RefId="ID119">
+	<Description>map a booelan to real into AixLib</Description>
+	<TargetComponentName>tankValveSet</TargetComponentName>
+    <TargetLocation>Modelica.Blocks.Math.BooleanToReal</TargetLocation>
+    <Property_Map_Gap_Name>ID1191</Property_Map_Gap_Name>
+    <Property_Map_Gap_Name>ID1192</Property_Map_Gap_Name>
+  </ComponentMappingGroup>
+  
+  <!-- map a booelan to real into AixLib -->  
+   <ComponentMappingGroup RefId="ID1110">
+	<Description>map a booelan to real into AixLib</Description>
+	<TargetComponentName>radiatorValveSet</TargetComponentName>
+    <TargetLocation>Modelica.Blocks.Math.BooleanToReal</TargetLocation>
+    <Property_Map_Gap_Name>ID11101</Property_Map_Gap_Name>
+    <Property_Map_Gap_Name>ID11102</Property_Map_Gap_Name>
+  </ComponentMappingGroup>
+  
+  <!-- map a booelan to real into AixLib -->  
+   <ComponentMappingGroup RefId="ID1120">
+	<Description>map a booelan to real into AixLib</Description>
+	<TargetComponentName>Nutzwasser_Ventil_Set</TargetComponentName>
+    <TargetLocation>Modelica.Blocks.Math.BooleanToReal</TargetLocation>
+    <Property_Map_Gap_Name>ID11201</Property_Map_Gap_Name>
+    <Property_Map_Gap_Name>ID11202</Property_Map_Gap_Name>
+  </ComponentMappingGroup>
+  
+  <!-- Logical Not mapping for the storage tank -->  
+   <ComponentMappingGroup RefId="ID1130">
+	<Description>Math MultiSum mapping for the storage tank</Description>
+	<TargetComponentName>multiSum</TargetComponentName>
+    <TargetLocation>Modelica.Blocks.Math.MultiSum</TargetLocation>
+  </ComponentMappingGroup>
+    
   <!-- component mapping for the hot water boiler -->
   <ComponentMappingGroup RefId="ID011">
     <Description>Hot water boiler mapping</Description>
@@ -839,6 +1150,17 @@
     <Property_Map_Transformation_Name>ID0323</Property_Map_Transformation_Name>
   </ComponentMappingGroup> -->
   
+  <!-- component mapping for the hot water storage tank -->
+  <!-- Schedule for the water use on the componente side, for the sotrage tank -->
+  <ComponentMappingGroup RefId="ID1140">
+    <Description>Schedule for the water use on the componente side, for the sotrage tank</Description>
+    <TargetComponentName>Wateruse_Active</TargetComponentName>
+    <TargetLocation>Modelica.Blocks.Sources.BooleanPulse</TargetLocation>
+    <Property_Map_Gap_Name>ID11401</Property_Map_Gap_Name>
+	<Property_Map_Gap_Name>ID11402</Property_Map_Gap_Name>
+	<Property_Map_Gap_Name>ID11403</Property_Map_Gap_Name>
+  </ComponentMappingGroup>
+  
   <!-- component mapping for the water type radiator -->
   <ComponentMappingGroup RefId="ID02T1">
     <Description>map a water type radiator into AixLib</Description>
@@ -858,21 +1180,21 @@
 	<Property_Map_Gap_Name>ID0229</Property_Map_Gap_Name>
   </ComponentMappingGroup>
 
-  <!-- component mapping for the expansion vessel, changed it to a one to one component mapping -->
-  <!-- <ComponentMappingGroup RefId="ID04">
-    <Description> Add an expansion vessel connecting to the radiator</Description>
-    <TargetComponentName>expansionVessel</TargetComponentName>
+  <!-- Water sink for the hot water storage tank -->
+  <ComponentMappingGroup RefId="ID112">
+    <Description> Add a water sink to the storage tank</Description>
+    <TargetComponentName>waterSink</TargetComponentName>
     <TargetLocation>AixLib.Fluid.Sources.FixedBoundary</TargetLocation>
-    <Property_Map_Gap_Name>ID041</Property_Map_Gap_Name>
-  </ComponentMappingGroup> -->
+    <Property_Map_Gap_Name>ID1121</Property_Map_Gap_Name>
+  </ComponentMappingGroup>
   
-  <!-- waiting for the new class SimFlowEnergyTransferStorage_HotWaterTank_Expansion from simxml -->
-  <!-- <ComponentMappingGroup RefId="ID04x">
+  <!-- Water source for the hot water storage tank -->
+  <ComponentMappingGroup RefId="ID113">
     <Description> Add an expansion vessel connecting to the radiator</Description>
-    <TargetComponentName>boundary_p</TargetComponentName>
-    <TargetLocation>AixLib.HVAC.Sources.Boundary_p</TargetLocation>
-    <Property_Map_One2One_Name>ID041x</Property_Map_One2One_Name>
-  </ComponentMappingGroup> -->
+    <TargetComponentName>waterSource</TargetComponentName>
+    <TargetLocation>AixLib.Fluid.Sources.FixedBoundary</TargetLocation>
+    <Property_Map_One2One_Name>ID1131</Property_Map_One2One_Name>
+  </ComponentMappingGroup>
 
   <!-- component mapping for the hot water boiler -->
   <!-- a hot water boiler maps into: a boiler, a water temperature controller, -->
@@ -914,7 +1236,25 @@
     <ComponentMappingGroupName>ID103c</ComponentMappingGroupName>
     <ComponentMappingGroupName>ID104c</ComponentMappingGroupName>
   </Component_Map_One2Many>
-
+  
+  <Component_Map_One2Many RefId="ID11">
+	<Description>Map a domestic hot water tank into a tank with sink, source and numerous controls</Description>
+    <SourceComponentName>SimFlowEnergyTransferStorage_HotWaterTank_DomesticHotWater</SourceComponentName>
+	<ComponentMappingGroupName>ID111</ComponentMappingGroupName>
+	<ComponentMappingGroupName>ID112</ComponentMappingGroupName>
+	<ComponentMappingGroupName>ID113</ComponentMappingGroupName>
+	<ComponentMappingGroupName>ID114</ComponentMappingGroupName>
+	<ComponentMappingGroupName>ID115</ComponentMappingGroupName>
+	<ComponentMappingGroupName>ID116</ComponentMappingGroupName>
+	<ComponentMappingGroupName>ID117</ComponentMappingGroupName>
+	<ComponentMappingGroupName>ID118</ComponentMappingGroupName>
+	<ComponentMappingGroupName>ID119</ComponentMappingGroupName>
+	<ComponentMappingGroupName>ID1110</ComponentMappingGroupName>
+	<ComponentMappingGroupName>ID1120</ComponentMappingGroupName>
+	<ComponentMappingGroupName>ID1130</ComponentMappingGroupName>
+	<ComponentMappingGroupName>ID1140</ComponentMappingGroupName>
+  </Component_Map_One2Many>
+  
   <!-- component mapping for the base paramters -->
   <Component_Map_Gap RefId="ID05">
     <Description>Map different properties into the base parameters</Description>
@@ -944,6 +1284,7 @@
 	<Component_Map_One2Many_Name>ID02</Component_Map_One2Many_Name>
     <Component_Map_One2Many_Name>ID03</Component_Map_One2Many_Name>
 	<Component_Map_One2Many_Name>ID10</Component_Map_One2Many_Name>
+	<Component_Map_One2Many_Name>ID11</Component_Map_One2Many_Name>
 	<Component_Map_Gap_Name>ID05</Component_Map_Gap_Name>
   </Library_Mapping_Rule>
 </Data_Model_Map>
