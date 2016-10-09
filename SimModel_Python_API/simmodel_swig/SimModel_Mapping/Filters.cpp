@@ -441,12 +441,26 @@ std::vector<MappedComponent> RuleFilter::getMappedData(SimHierarchyNode& _simHie
 					// property
 					if(_simPipeObj->SimFlowSeg_PipesideDiam().present())
 					{
-						MappedProperty _mapPro;
-						_mapPro.setPropertyName("dh");
-						_mapPro.setValueType("Number");
-						_mapPro.setValueNumber(_simPipeObj->SimFlowSeg_PipesideDiam().get()/(double)1000.0);
-						// add property
-						_mapCom.addMappedProperty(_mapPro);
+						for(Component_Map_One2One::Property_Map_Transformation_Name_iterator _proMapTranIt=_it->second->Property_Map_Transformation_Name().begin(); _proMapTranIt!=_it->second->Property_Map_Transformation_Name().end(); ++_proMapTranIt)
+						{
+							std::map<std::string, Data_Model_Map::Property_Map_Transformation_iterator>::iterator _itTran = ProRuleTransforList.find(*_proMapTranIt);
+							if(_itTran!=ProRuleTransforList.end())
+							{
+								if(_itTran->second->Description().present() && _itTran->second->Description().get()=="Diameter from mm to m")
+								{
+									std::map<std::string, Data_Model_Map::OutputParameter_iterator>::iterator _itOutputPara = ProOutputParaList.find(*_itTran->second->OutputParameterName().begin());
+									if(_itOutputPara!=ProOutputParaList.end())
+									{
+										MappedProperty _mapPro;
+										_mapPro.setPropertyName(*_itOutputPara->second->ParameterName().begin());
+										_mapPro.setValueType("Number");
+										_mapPro.setValueNumber(_simPipeObj->SimFlowSeg_PipesideDiam().get()/(double)1000.0);
+										// add property
+										_mapCom.addMappedProperty(_mapPro);
+									}
+								}
+							}
+						}
 					}
 				}
 			}
@@ -675,43 +689,66 @@ std::vector<MappedComponent> RuleFilter::getMappedData(SimHierarchyNode& _simHie
 								// add property
 								_mapCom.addMappedProperty(_mapPro);
 
-								// Pump head for min and max rotational speed
-								if(_simPumpObj->SimFlowMover_Coef1OfThePartLoadPerfCurve().present() && _simPumpObj->SimFlowMover_Coef2OfThePartLoadPerfCurve().present() && _simPumpObj->SimFlowMover_Coef3OfThePartLoadPerfCurve().present() && _simPumpObj->SimFlowMover_Coef4OfThePartLoadPerfCurve().present())
+								//
+								for(ComponentMappingGroup::Property_Map_Transformation_Name_iterator _proMapTranIt=_comMapGroupIt->Property_Map_Transformation_Name().begin(); _proMapTranIt!=_comMapGroupIt->Property_Map_Transformation_Name().end(); ++_proMapTranIt)
 								{
-									double _c1 = _simPumpObj->SimFlowMover_Coef1OfThePartLoadPerfCurve().get();
-									double _c2 = _simPumpObj->SimFlowMover_Coef2OfThePartLoadPerfCurve().get();
-									double _c3 = _simPumpObj->SimFlowMover_Coef3OfThePartLoadPerfCurve().get();
-									double _c4 = _simPumpObj->SimFlowMover_Coef4OfThePartLoadPerfCurve().get();
-									int _dim = 9;
-									double _step = _simPumpObj->SimFlowMover_RatedFlowRate().get() / (double)_dim;
-
-
-									MappedProperty _mapPro4;
-									_mapPro4.setPropertyName("per");
-									_mapPro4.setValueType("Matrix");
-									// set matrix
-									std::vector<std::vector<double> > _matrix;
-									_matrix.resize(_dim+1);
-									
-									double _v_flow=0;
-									for(int _time = 0; _time<_dim+1; ++_time)
+									std::map<std::string, Data_Model_Map::Property_Map_Transformation_iterator>::iterator _itTran = ProRuleTransforList.find(*_proMapTranIt);
+									if(_itTran!=ProRuleTransforList.end())
 									{
-										double _RS = _c1 + _c2*_v_flow + _c3*_v_flow*_v_flow + _c4*_v_flow*_v_flow*_v_flow;
+										if(_itTran->second->Description().present() && _itTran->second->Description().get()=="Pump head for min and max rotational speed defintion")
+										{
+											// Pump head for min and max rotational speed
+											if(_simPumpObj->SimFlowMover_Coef1OfThePartLoadPerfCurve().present() && _simPumpObj->SimFlowMover_Coef2OfThePartLoadPerfCurve().present() && _simPumpObj->SimFlowMover_Coef3OfThePartLoadPerfCurve().present() && _simPumpObj->SimFlowMover_Coef4OfThePartLoadPerfCurve().present())
+											{
+												double _c1 = _simPumpObj->SimFlowMover_Coef1OfThePartLoadPerfCurve().get();
+												double _c2 = _simPumpObj->SimFlowMover_Coef2OfThePartLoadPerfCurve().get();
+												double _c3 = _simPumpObj->SimFlowMover_Coef3OfThePartLoadPerfCurve().get();
+												double _c4 = _simPumpObj->SimFlowMover_Coef4OfThePartLoadPerfCurve().get();
+												int _dim = 9;
+												double _step = _simPumpObj->SimFlowMover_RatedFlowRate().get() / (double)_dim;
 
-										_matrix[_time].push_back(_v_flow);
-										_matrix[_time].push_back(_RS);
-										_matrix[_time].push_back(_RS);
 
-										_v_flow += _step;
-										// _v_flow<=_simPumpObj->SimFlowMover_RatedFlowRate().get()
+												MappedProperty _mapPro4;
+												_mapPro4.setPropertyName("per");
+												_mapPro4.setValueType("Matrix");
+												// set matrix
+												std::vector<std::vector<double> > _matrix;
+												_matrix.resize(_dim+1);
+									
+												double _v_flow=0;
+												for(int _time = 0; _time<_dim+1; ++_time)
+												{
+													double _RS = _c1 + _c2*_v_flow + _c3*_v_flow*_v_flow + _c4*_v_flow*_v_flow*_v_flow;
+
+													_matrix[_time].push_back(_v_flow);
+													_matrix[_time].push_back(_RS);
+													_matrix[_time].push_back(_RS);
+
+													_v_flow += _step;
+													// _v_flow<=_simPumpObj->SimFlowMover_RatedFlowRate().get()
+												}
+
+												_mapPro4.setValueMatrix(_matrix);
+												_mapPro4.setRecordInstance("FlowControlled");
+												_mapPro4.setRecordLocation("BuildingSystems.Fluid.Movers.Data.FlowControlled");
+												// add property
+												_mapCom.addMappedProperty(_mapPro4);
+											}
+										}
 									}
-
-									_mapPro4.setValueMatrix(_matrix);
-									_mapPro4.setRecordInstance("FlowControlled");
-									_mapPro4.setRecordLocation("BuildingSystems.Fluid.Movers.Data.FlowControlled");
-									// add property
-									_mapCom.addMappedProperty(_mapPro4);
 								}
+							}
+
+							if(_simPumpObj->SimFlowMover_MotorEff().present())
+							{
+								MappedProperty _mapPro;
+								_mapPro.setPropertyName("motorEfficiency");
+								_mapPro.setValueType("Number");
+								_mapPro.setValueNumber(_simPumpObj->SimFlowMover_MotorEff().get());
+								_mapPro.setRecordInstance("per");
+								_mapPro.setRecordLocation("BuildingSystems.Fluid.Movers.Data.FlowControlled");
+								// add property
+								_mapCom.addMappedProperty(_mapPro);
 							}
 						}
 					}
@@ -895,5 +932,16 @@ void RuleFilter::setMappingRule(::std::auto_ptr<Data_Model_Map>& _mapping_rule)
 	{
 		if(_ProRuleIdlist.find(_it->RefId()) != _ProRuleIdlist.end())
 			ProRuleGapList.insert(std::pair<std::string, Data_Model_Map::Property_Map_Gap_iterator>(_it->RefId(), _it));
+	}
+
+	// temp
+	for(Data_Model_Map::InputParameter_iterator _it=_mapping_rule->InputParameter().begin(); _it!=_mapping_rule->InputParameter().end(); ++_it)
+	{
+		ProInputParaList.insert(std::pair<std::string, Data_Model_Map::InputParameter_iterator>(_it->RefId(), _it));
+	}
+
+	for(Data_Model_Map::OutputParameter_iterator _it=_mapping_rule->OutputParameter().begin(); _it!=_mapping_rule->OutputParameter().end(); ++_it)
+	{
+		ProOutputParaList.insert(std::pair<std::string, Data_Model_Map::OutputParameter_iterator>(_it->RefId(), _it));
 	}
 }

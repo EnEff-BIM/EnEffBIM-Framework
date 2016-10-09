@@ -50,6 +50,8 @@ private:
 	std::map<std::string, Data_Model_Map::Property_Map_Transformation_iterator> ProRuleTransforList;
 	std::map<std::string, Data_Model_Map::Property_Map_One2One_iterator> ProRuleOne2OneList;
 	std::map<std::string, Data_Model_Map::Property_Map_Gap_iterator> ProRuleGapList;
+	std::map<std::string, Data_Model_Map::InputParameter_iterator> ProInputParaList;
+	std::map<std::string, Data_Model_Map::OutputParameter_iterator> ProOutputParaList;
 
 	// get the lower and upper bounding iterators refering to the rules
 	std::pair<std::multimap<std::string, Data_Model_Map::Component_Map_One2One_iterator>::iterator, std::multimap<std::string, Data_Model_Map::Component_Map_One2One_iterator>::iterator> getComRuleOne2One(std::string SimComponentName);

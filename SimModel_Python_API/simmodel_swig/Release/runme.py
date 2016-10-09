@@ -100,8 +100,8 @@ simxml_data = translator.loadSimModel(zoneFile_path, hvacFile_path)
 
 # get SimModel mapped data
 # here we need to specify the mapping rule xml file location before translating the data
-#simxml_mapped_data = translator.getSimMappedData(".\\mapping_rule\\mapping_rule_xml\\AixLib_v2.2.xml")
-simxml_mapped_data = translator.getSimMappedData(".\\mapping_rule\\mapping_rule_xml\\BuildingSystems_v1.1.xml")
+simxml_mapped_data = translator.getSimMappedData(".\\mapping_rule\\mapping_rule_xml\\AixLib_v2.2.xml")
+#simxml_mapped_data = translator.getSimMappedData(".\\mapping_rule\\mapping_rule_xml\\BuildingSystems_v1.2.xml")
 
 # we provide two different methods for accessing the mapped data
 #
