@@ -630,7 +630,7 @@
     <InputCoefficientName>ID01143</InputCoefficientName>
     <InputCoefficientName>ID01144</InputCoefficientName>
     <InputCoefficientName>ID01145</InputCoefficientName>
-    <Function>bec = a1 + ( a2 * plr ) + ( a3 * plr * plr ) + ( a4 * plr * plr * plr)</Function>
+    <Function>bec = a1 + ( a2 * plr ) + ( a3 * plr * plr ) + ( a4 * plr * plr * plr )</Function>
     <OutputParameterName>ID01146</OutputParameterName>
     <RecordInstance>boilerEfficiencyB</RecordInstance>
     <RecordLocation>AixLib.DataBase.Boiler.BoilerEfficiencyBaseDataDefinition</RecordLocation>
@@ -767,7 +767,7 @@
     <Description>Boiler outlet water temperature mapping</Description>
     <TargetComponentName>const</TargetComponentName>
     <TargetLocation>Modelica.Blocks.Sources.Constant</TargetLocation>
-	<Property_Map_Gap_Name>ID0121T</Property_Map_Gap_Name>
+	<!-- <Property_Map_Gap_Name>ID0121T</Property_Map_Gap_Name> -->
     <Property_Map_Transformation_Name>ID0121</Property_Map_Transformation_Name>
   </ComponentMappingGroup>
   

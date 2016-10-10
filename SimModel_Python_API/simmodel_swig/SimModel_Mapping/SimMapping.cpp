@@ -234,3 +234,53 @@ void SimMappedData::translator(SimHierarchy& _simHierarchy, std::string _name)
 		MappedComponentList[_it->second].addUnmappedSimHierarchyNode(_simHierarchy.getHierarchyNodeList()[_it->first]);
 	}
 }
+
+// new
+void SimMappedData::translator(SimHierarchy& _simHierarchy, std::string _name, ::std::auto_ptr< ::schema::simxml::Model::SimModel >& simSysData)
+{
+	// load mapping rules of the given library
+	::std::auto_ptr<Data_Model_Map> _mapping_rule = Data_Model_Map_(_name);
+	// load mapping rule filter
+	RuleFilter _rule_filter;
+	// set mapping rule parsing environment
+	_rule_filter.setMappingRule(_mapping_rule);
+		
+
+	std::multimap<int, int> _idList;
+	for(unsigned int i=0; i<_simHierarchy.getHierarchyNodeList().size(); ++i)
+	{
+		// check whether the component is necessary to be translated
+		if(_rule_filter.isMappedComponent(_simHierarchy.getHierarchyNodeList()[i]))
+		{
+			// translate the SimModel component
+			std::vector<MappedComponent> _mapComList = _rule_filter.getMappedData(_simHierarchy.getHierarchyNodeList()[i], simSysData);
+
+			// add mapped component
+			for(unsigned int j=0; j<_mapComList.size(); ++j)
+			{
+				addMappedComponent(_mapComList[j]);
+				// save index
+				_idList.insert(std::pair<int, int>(i, MappedComponentList.size()-1));
+			}
+		}
+	}
+
+	// check whether there are newly added components
+	if(_rule_filter.isNewComponentAdded())
+	{
+		// get new component
+		std::vector<MappedComponent> _mapComList = _rule_filter.getNewComponent();
+
+		// add mapped component
+		for(unsigned int j=0; j<_mapComList.size(); ++j)
+			addMappedComponent(_mapComList[j]);
+	}
+	
+
+	// in the end, add linker
+	for(std::multimap<int, int>::iterator _it=_idList.begin(); _it!=_idList.end(); ++_it)
+	{
+		_simHierarchy.getHierarchyNodeList()[_it->first].addMappedComponent(MappedComponentList[_it->second]);
+		MappedComponentList[_it->second].addUnmappedSimHierarchyNode(_simHierarchy.getHierarchyNodeList()[_it->first]);
+	}
+}

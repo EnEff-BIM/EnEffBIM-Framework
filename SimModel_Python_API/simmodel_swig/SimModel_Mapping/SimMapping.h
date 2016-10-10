@@ -9,6 +9,12 @@ using namespace namespaces::Sim::DataMap;
 // forward declaration
 class SimHierarchyNode;
 class SimHierarchy;
+//using namespace std;
+#include "../SimModel_Dll_lib/framework/simmodel.hxx"
+using namespace schema::simxml::Model;
+using namespace schema::simxml::SimModelCore;
+using namespace schema::simxml::ResourcesGeneral;
+using namespace schema::simxml::MepModel;
 
 class __declspec(dllexport) MappedProperty
 {
@@ -150,6 +156,8 @@ public:
 	std::vector<MappedComponent>& getMappedComponentList();
 	// translate the SimModel data based on mapping rules
 	void translator(SimHierarchy& _simHierarchy, std::string _name);
+	// new
+	void translator(SimHierarchy& _simHierarchy, std::string _name, ::std::auto_ptr< ::schema::simxml::Model::SimModel >& simSysData);
 };
 
 #endif // SIM_MAPPING_H

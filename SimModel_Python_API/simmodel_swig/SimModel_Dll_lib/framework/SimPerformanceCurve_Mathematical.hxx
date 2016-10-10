@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeometry
     {
-      class SimPerformanceCurve_Mathematical: public ::schema::simxml::ResourcesGeometry::SimPerformanceCurve
+      class __declspec(dllexport) SimPerformanceCurve_Mathematical: public ::schema::simxml::ResourcesGeometry::SimPerformanceCurve
       {
         public:
         // SimPerfCurve_MinCurveOutput
