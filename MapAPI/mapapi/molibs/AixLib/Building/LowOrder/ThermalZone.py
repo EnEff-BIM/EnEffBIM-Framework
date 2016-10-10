@@ -32,13 +32,13 @@ class ThermalZone(MapHierarchy.MapThermalZone):
 
     def mapp_me(self):
 
-        #from teaser.project import Project
-        #import teaser.data.input.simmodel_input as t_sim
+        from teaser.project import Project
+        import teaser.data.input.simmodel_input as t_sim
 
-        #t_prj = Project(load_data=False)
+        t_prj = Project(load_data=False)
 
-       # t_sim.load_lib_sim_model(sim_api=self.project, t_prj=t_prj)
-       # t_prj.calc_all_buildings(raise_errors=True)
+        t_sim.load_lib_sim_model(sim_api=self.project, t_prj=t_prj)
+        t_prj.calc_all_buildings(raise_errors=True)
 
 
         self.target_location = "AixLib.Building.LowOrder.ThermalZone.ThermalZone"

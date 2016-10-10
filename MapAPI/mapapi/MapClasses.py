@@ -566,11 +566,18 @@ class MapThermalZone(MoObject):
         super(MapThermalZone, self).__init__(project, hierarchy_node)
 
         self.parent = parent
+        self.height = None
+        self.area = None
+        self.volume = None
         self.space_boundaries = []
         from mapapi.molibs.AixLib.Building.LowOrder.ThermalZone import \
             ThermalZone
         self.aix_lib = {"SimSpatialZone_ThermalZone_Default" : ThermalZone}
         self.instantiate_space_boundaries()
+        spatial_child = self.hierarchy_node.getChildList()
+        for a in range(spatial_child.size()):
+            if spatial_child[a].ClassType() == "SimSpace_Occupied_Default":
+                self.height = spatial_child[a].getSimModelObject().SpaceHeight().getValue()
 
     def convert_me(self):
         """Converts the MapComponent to a library specific component"""
@@ -1287,20 +1294,11 @@ class MapMaterial(object):
         self.parent = parent
         self.hierarchy_node = hierarchy_node
         self.sim_instance = self.hierarchy_node.getSimModelObject()
-        self.name = self.sim_instance.SimModelName().getValue()
-        """
-        self.density = self.sim_instance.SimMaterial_Density().getValue()
-        self.thermal_conduc = self.sim_instance.SimMaterial_Cond().getValue()
-        self.heat_capac = self.sim_instance.SimMaterial_SpecificHeat().getValue()
-        self.solar_absorp = self.sim_instance.SimMaterial_SolarAbsorptance().getValue()
-        self.ir_emissivity = self.sim_instance.SimMaterial_ThermalAbsorptance().getValue()
-        self.transmittance = (1 -
-                              self.sim_instance.SimMaterial_VisAbsorptance().getValue())
 
         if self.hierarchy_node is not None:
 
             if self.hierarchy_node.ClassType() == \
-                    "SimMaterial_Default_Default":
+                    "SimMaterial_OpaqueMaterial_Default":
                 self.name = self.sim_instance.SimModelName().getValue()
                 self.density = self.sim_instance.SimMaterial_Density().getValue()
                 self.thermal_conduc = self.sim_instance.SimMaterial_Cond().getValue()
@@ -1309,12 +1307,17 @@ class MapMaterial(object):
                 self.ir_emissivity = self.sim_instance.SimMaterial_ThermalAbsorptance().getValue()
                 self.transmittance =(1-
                     self.sim_instance.SimMaterial_VisAbsorptance().getValue())
-            elif self.hierarchy_node.ClassType() == \
-                    "SimMaterial_GlazingMaterial_SimpleGlazingSystem":
+            elif self.hierarchy_node.ClassType() ==  \
+                    "SimMaterial_GlazingMaterial_Glazing":
                 self.name = self.sim_instance.SimModelName().getValue()
-                self.u_factor = self.sim_instance.SimMaterial_UFactor().getValue()
-                self.u_gvalue = self.sim_instance.SimMaterial_SolarHeatGainCoef().getValue()
-                self.transmittance = self.sim_instance.SimMaterial_VisTrans().getValue()
+                self.thermal_conduc = self.sim_instance.SimMaterial_Cond().getValue()
+            elif self.hierarchy_node.ClassType() == \
+                    "SimMaterial_GlazingMaterial_Gas":
+                self.name = self.sim_instance.SimModelName().getValue()
+                self.heat_capac = \
+                    self.sim_instance.SimMaterial_SpecificHeatCoefA().getValue()
+                self.thermal_conduc = \
+                    self.sim_instance.SimMaterial_CondCoefA().getValue()
+
             else:
                 print(self.hierarchy_node.ClassType())
-        """
