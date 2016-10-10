@@ -41,9 +41,11 @@ class ThermalZone(MapHierarchy.MapThermalZone):
         t_prj.calc_all_buildings(raise_errors=True)
 
 
+
         self.target_location = "AixLib.Building.LowOrder.ThermalZone.ThermalZone"
         self.target_name = "thermal_zone" + "_" + self.target_name
 
+        self.apply_teaser_parameters(t_prj)
         self.infiltration_rate(rate=0.5)
         self.internal_loads()
 
@@ -103,6 +105,70 @@ class ThermalZone(MapHierarchy.MapThermalZone):
         combi_time.y.dimension = 3
         self.add_connection(self.internalGains, combi_time.y)
         self.project.mod_components.append(combi_time)
+
+    def apply_teaser_parameters(self, teaser_project):
+        """adds zone paramters to framework
+
+        Parameters
+        ----------
+        teaser_project: instance of teaser.project()
+
+        Returns
+        -------
+
+        """
+
+        thermal_zone = teaser_project.buildings[0].thermal_zones[0]
+        self.records.append(MapHierarchy.MapRecord(parent=self,
+                                      record_location="BaseClasses.BuildingPhysics.BuildingPhysics",
+                                      name="buildingPhysics"))
+        rec = self.records[-1]
+        rec.add_parameter(name="RRest", value=thermal_zone.r_rest_ow)
+        rec.add_parameter(name="R1o", value=thermal_zone.r1_ow)
+        rec.add_parameter(name="C1o", value=thermal_zone.c1_ow)
+        rec.add_parameter(name="Ao", value=thermal_zone.area_ow)
+        rec.add_parameter(name="alphaowi", value=thermal_zone.alpha_comb_inner_ow)
+        rec.add_parameter(name="alphaowo", value=thermal_zone.alpha_comb_outer_ow)
+        rec.add_parameter(name="epso", value=thermal_zone.ir_emissivity_outer_ow)
+        rec.add_parameter(name="R1i", value=thermal_zone.r1_iw)
+        rec.add_parameter(name="C1i", value=thermal_zone.c1_iw)
+        rec.add_parameter(name="Ai", value=thermal_zone.area_iw)
+        rec.add_parameter(name="Vair", value=thermal_zone.volume)
+        rec.add_parameter(name="alphaiwi", value=thermal_zone.alpha_comb_inner_iw)
+        rec.add_parameter(name="rhoair", value=thermal_zone.density_air)
+        rec.add_parameter(name="cair", value=thermal_zone.heat_capac_air)
+        rec.add_parameter(name="epsi", value=thermal_zone.ir_emissivity_inner_ow)
+        rec.add_parameter(name="aowo", value=thermal_zone.solar_absorp_ow)
+        rec.add_parameter(name="epsw", value=thermal_zone.ir_emissivity_win)
+        # rec.add_parameter(name="g", value=thermal_zone.g) tbd
+        # rec.add_parameter(name="Imax", value=thermal_zone.as) tbd
+        # rec.add_parameter(name="n", value=thermal_zone.n)
+        rec.add_parameter(name="weightfactorswall", value=thermal_zone.weightfactor_ow)
+        rec.add_parameter(name="weightfactorswindow",
+                          value=thermal_zone.weightfactor_win)
+        rec.add_parameter(name="weightfactorground",
+                          value=thermal_zone.weightfactor_ground)
+        # rec.add_parameter(name="temperatureground",
+                         # value=thermal_zone.temperatureground) tbd
+        rec.add_parameter(name="AWin", value=thermal_zone.window_areas)
+        # rec.add_parameter(name="UWin", value=thermal_zone.ua_value_win) tbd
+        # rec.add_parameter(name="gsunblind", value=thermal_zone.asd)
+        # rec.add_parameter(name="withInnerwalls",
+        # value=thermal_zone.) tbd
+        # rec.add_parameter(name="withWindows", value=thermal_zone.)
+        # rec.add_parameter(name="withOuterwalls", value=thermal_zone.)
+        # rec.add_parameter(name="splitfac", value=thermal_zone.)
+        rec.add_parameter(name="RWin", value=thermal_zone.r1_win)
+        rec.add_parameter(name="alphaConvWinInner", value=thermal_zone.alpha_conv_inner_win)
+        rec.add_parameter(name="alphaConvWinOuter", value=thermal_zone.alpha_conv_outer_win)
+        # rec.add_parameter(name="awin", value=thermal_zone.awin) tbd
+        rec.add_parameter(name="orientationswallshorizontal",
+                          value=thermal_zone.orientation_wall)
+
+
+
+
+
 
     def _help_schedule(self, table, hierarchy_schedule_internal):
 
