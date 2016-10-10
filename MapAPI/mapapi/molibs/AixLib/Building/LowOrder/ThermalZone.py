@@ -40,8 +40,6 @@ class ThermalZone(MapHierarchy.MapThermalZone):
         t_sim.load_lib_sim_model(sim_api=self.project, t_prj=t_prj)
         t_prj.calc_all_buildings(raise_errors=True)
 
-
-
         self.target_location = "AixLib.Building.LowOrder.ThermalZone.ThermalZone"
         self.target_name = "thermal_zone" + "_" + self.target_name
 
@@ -120,8 +118,8 @@ class ThermalZone(MapHierarchy.MapThermalZone):
 
         thermal_zone = teaser_project.buildings[0].thermal_zones[0]
         self.records.append(MapHierarchy.MapRecord(parent=self,
-                                      record_location="BaseClasses.BuildingPhysics.BuildingPhysics",
-                                      name="buildingPhysics"))
+                                      record_location="AixLib.DataBase.Buildings.ZoneBaseRecord",
+                                      name="zoneParam"))
         rec = self.records[-1]
         rec.add_parameter(name="RRest", value=thermal_zone.r_rest_ow)
         rec.add_parameter(name="R1o", value=thermal_zone.r1_ow)
