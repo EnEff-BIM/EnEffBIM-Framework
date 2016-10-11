@@ -965,7 +965,7 @@
 	<Property_Map_Gap_Name>ID041</Property_Map_Gap_Name>
   </Component_Map_One2One>
   
-  <Component_Map_One2One RefId="ID111">
+  <ComponentMappingGroup RefId="ID111">
     <Description>Map a hot water storage tank into AixLib</Description>
 	<SourceComponentName>SimFlowEnergyTransferStorage_HotWaterTank_DomesticHotWater</SourceComponentName>
 	<TargetComponentName>storage</TargetComponentName>
@@ -982,7 +982,7 @@
 	<Property_Map_Gap_Name>ID11110</Property_Map_Gap_Name>
 	<Property_Map_Gap_Name>ID11111</Property_Map_Gap_Name>
 	<Property_Map_Gap_Name>ID11112</Property_Map_Gap_Name>
-  </Component_Map_One2One>
+  </ComponentMappingGroup>
 
   <!-- component mapping for the valve -->  
    <ComponentMappingGroup RefId="ID101c">
