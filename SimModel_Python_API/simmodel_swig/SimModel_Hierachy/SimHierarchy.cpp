@@ -177,6 +177,12 @@ void SimHierarchy::setCallBack(SimPyCallBack& callback)
 	_callback = &callback;
 }
 
+// get Python callback handler
+SimPyCallBack* SimHierarchy::getCallBack()
+{
+	return _callback;
+}
+
 void SimHierarchy::parseMaterialLayer(SimRoot* _simMaterialLayerObj, std::vector<std::pair<int, int> >& _nodeIndexPairList, std::map<std::string, int>& _nodeIndexList, int _id_MaterialLayerSet)
 {
 	if(_simMaterialLayerObj)
@@ -689,7 +695,7 @@ void SimHierarchy::loadSimSysClassObj(std::string _sysName)
 		std::vector<std::string> _simClassList;
 		// building element
 		_simClassList.push_back("SimFlowEnergyTransfer_ConvectiveHeater_Radiant_Water");
-		_simClassList.push_back("SimFlowEnergyTransferStorage_HotWaterTank_Mixed");
+		_simClassList.push_back("SimFlowEnergyTransferStorage_HotWaterTank_Expansion");
 		_simClassList.push_back("SimFlowFitting_Default_Default");
 		_simClassList.push_back("SimFlowMover_Pump_VariableSpeedReturn");
 		_simClassList.push_back("SimFlowPlant_Boiler_BoilerHotWater");
@@ -2090,6 +2096,8 @@ void SimHierarchy::parser2_2(::std::auto_ptr< ::schema::simxml::Model::SimModel 
 {
 	// load specified geometry class objects
 	loadSimGeomClassObj(_geoName);
+	// load HVAC components
+	loadSimSysClassObj(_sysName);
 
 	//return;
 	// parsing SimXML hierarchy
