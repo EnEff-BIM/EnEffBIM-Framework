@@ -321,9 +321,13 @@ class MapProject(object):
         """Instantiate the SimModel Hierarchy and load the SimXML file through
         libSimModelAPI"""
         self.translator = SimTranslator()
-        self.sim_hierarchy = self.translator.getSimHierarchy()
-        load_sim = self.translator.loadSimModel(simxml_file)
-
+        self.sim_hierarchy = self.translator.getSimHierarchy()       		
+        if isinstance(simxml_file,list):
+            zone = simxml_file[0].replace('\\','\\\\')
+            hvac = simxml_file[1].replace('\\','\\\\')
+            load_sim = self.translator.loadSimModel(zone,hvac)
+        else:		
+            load_sim = self.translator.loadSimModel(simxml_file)
         self.instantiate_buildings()
 
     def instantiate_buildings(self):
