@@ -462,8 +462,8 @@ class MapBuilding(MoObject):
         for a in self.hvac_components_sim:
             a.convert_me()
             print("after conversion",a)
-        for a in self.hvac_components_sim:
-            a.mapp_me()
+        for a in self.hvac_components_sim:		
+            #a.mapp_me()
             print(a)
 
 
