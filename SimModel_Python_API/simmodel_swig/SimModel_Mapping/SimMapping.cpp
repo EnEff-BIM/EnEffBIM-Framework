@@ -179,7 +179,7 @@ void SimMappedData::translator(SimHierarchy& _simHierarchy, std::string _name)
 	// load mapping rule filter
 	RuleFilter _rule_filter;
 	// set mapping rule parsing environment
-	_rule_filter.setMappingRule(_mapping_rule);
+	_rule_filter.setMappingRule(_mapping_rule, _simHierarchy.getCallBack());
 		
 
 	std::multimap<int, int> _idList;
@@ -243,7 +243,7 @@ void SimMappedData::translator(SimHierarchy& _simHierarchy, std::string _name, :
 	// load mapping rule filter
 	RuleFilter _rule_filter;
 	// set mapping rule parsing environment
-	_rule_filter.setMappingRule(_mapping_rule);
+	_rule_filter.setMappingRule(_mapping_rule, _simHierarchy.getCallBack()); // set callback here
 		
 
 	std::multimap<int, int> _idList;
@@ -253,7 +253,7 @@ void SimMappedData::translator(SimHierarchy& _simHierarchy, std::string _name, :
 		if(_rule_filter.isMappedComponent(_simHierarchy.getHierarchyNodeList()[i]))
 		{
 			// translate the SimModel component
-			std::vector<MappedComponent> _mapComList = _rule_filter.getMappedData(_simHierarchy.getHierarchyNodeList()[i], simSysData);
+			std::vector<MappedComponent> _mapComList = _rule_filter.getMappedData2_2(_simHierarchy.getHierarchyNodeList()[i], simSysData);
 
 			// add mapped component
 			for(unsigned int j=0; j<_mapComList.size(); ++j)

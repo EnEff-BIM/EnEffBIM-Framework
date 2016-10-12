@@ -26,6 +26,9 @@ public:
     virtual schema::simxml::SimModelCore::SimRoot *getSimClassObj(std::string _id);
     virtual std::string getReferenceId(std::string _classId, std::string _propertyName);
     virtual void getIO(std::string _name);
+    virtual std::string getRefValueType(std::string _classId, std::string _propertyName);
+    virtual double getRefNumberValue(std::string _classId, std::string _propertyName);
+    virtual std::string getRefStringValue(std::string _classId, std::string _propertyName);
 
 /* Internal director utilities */
 public:
@@ -56,7 +59,7 @@ private:
       return method;
     }
 private:
-    mutable swig::SwigVar_PyObject vtable[6];
+    mutable swig::SwigVar_PyObject vtable[9];
 #endif
 
 };

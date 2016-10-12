@@ -37,3 +37,18 @@ class CallBack(SimPyCallBack):
             return getattr(_classObj, _propertyName)().getValue()
     def getIO(self, _name):
         print(_name)
+    def getRefValueType(self, _classId, _propertyName):
+        _classObj = self.getSimClassObj(_classId)
+        if _classObj is not None and getattr(_classObj, _propertyName)().present():
+            if type(getattr(_classObj, _propertyName)().getValue()) is str:
+                return "String"
+            else:
+                return "Number"
+    def getRefNumberValue(self, _classId, _propertyName):
+        _classObj = self.getSimClassObj(_classId)
+        if _classObj is not None and getattr(_classObj, _propertyName)().present():
+            return getattr(_classObj, _propertyName)().getValue()
+    def getRefStringValue(self, _classId, _propertyName):
+        _classObj = self.getSimClassObj(_classId)
+        if _classObj is not None and getattr(_classObj, _propertyName)().present():
+            return getattr(_classObj, _propertyName)().getValue()    

@@ -183,6 +183,8 @@ public:
 	void parser2_2(::std::auto_ptr< ::schema::simxml::Model::SimModel >& simGeometryData, ::std::auto_ptr< ::schema::simxml::Model::SimModel >& simSysData, std::string _geoName, std::string _sysName);
 	// set Python callback function
 	void setCallBack(SimPyCallBack& callback);
+	// get Python callback handler
+	SimPyCallBack* getCallBack();
 };
 
 #endif // SIM_HIERARCHY_H

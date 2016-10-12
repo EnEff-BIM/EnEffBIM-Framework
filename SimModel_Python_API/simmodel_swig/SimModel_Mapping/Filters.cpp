@@ -1,5 +1,6 @@
 #include "Filters.h"
 #include "SimMapping.h"
+#include "../SimModel_PyCallBack/SimPyCallBack.h"
 
 // get the lower and upper bounding iterators refering to the rules
 std::pair<std::multimap<std::string, Data_Model_Map::Component_Map_One2One_iterator>::iterator, std::multimap<std::string, Data_Model_Map::Component_Map_One2One_iterator>::iterator> RuleFilter::getComRuleOne2One(std::string SimComponentName)
@@ -35,6 +36,7 @@ MappedProperty RuleFilter::getProRuleGapData(std::string _id)
 	// save mapped property
 	MappedProperty _mapPro;
 	
+	// get the real property Gap rule
 	std::map<std::string, Data_Model_Map::Property_Map_Gap_iterator>::iterator _it = ProRuleGapList.find(_id);
 	if(_it != ProRuleGapList.end())
 	{
@@ -59,6 +61,71 @@ MappedProperty RuleFilter::getProRuleGapData(std::string _id)
 		// save record location
 		if(_it->second->RecordLocation().present())
 			_mapPro.setRecordLocation(_it->second->RecordLocation().get());
+	}
+
+	return _mapPro;
+}
+
+MappedProperty RuleFilter::getProRuleOne2OneData(std::string SimComponentId, std::string _id)
+{
+	// save mapped property
+	MappedProperty _mapPro;
+	
+	// get the real property One2One rule
+	std::map<std::string, Data_Model_Map::Property_Map_One2One_iterator>::iterator _it = ProRuleOne2OneList.find(_id);
+	if(_it!=ProRuleOne2OneList.end())
+	{
+		_mapPro.setPropertyName(_it->second->TargetPropertyName());
+		// save target location
+		if(_it->second->TargetLocation().present())
+			_mapPro.setPropertyLocation(_it->second->TargetLocation().get().front());
+		// save record instance
+		if(_it->second->RecordInstance().present())
+			_mapPro.setRecordInstance(_it->second->RecordInstance().get());
+		// save record location
+		if(_it->second->RecordLocation().present())
+			_mapPro.setRecordLocation(_it->second->RecordLocation().get());
+
+		// save property value
+		if(_callback)
+		{
+			std::string _refType = _callback->getRefValueType(SimComponentId, _it->second->RefValue().front());
+			if(_refType == "String")
+			{
+				_mapPro.setValueType("String");
+				std::string _refValue = "";
+				_refValue = _callback->getRefStringValue(SimComponentId, _it->second->RefValue().front());
+
+				if(_refValue != "")
+					_mapPro.setValueString(_refValue);
+			}
+			else if(_refType == "Number")
+			{
+				// retrieve the property value
+				_mapPro.setValueType("Number");
+				double _refValue = std::numeric_limits<double>::max();
+				_refValue = _callback->getRefNumberValue(SimComponentId, _it->second->RefValue().front());
+
+				if(_refValue != std::numeric_limits<double>::max())
+					_mapPro.setValueNumber(_refValue);
+			}
+		}
+	}
+
+	return _mapPro;
+}
+
+MappedProperty RuleFilter::getProRuleTransformationData(std::string SimComponentId, std::string _id)
+{
+	// save mapped property
+	MappedProperty _mapPro;
+
+	// get the real property Transformation rule
+	std::map<std::string, Data_Model_Map::Property_Map_Transformation_iterator>::iterator _it = ProRuleTransforList.find(_id);
+	if(_it!=ProRuleTransforList.end())
+	{
+		// get output parameter
+		_it->second->OutputParameterName().front();
 	}
 
 	return _mapPro;
@@ -795,6 +862,113 @@ std::vector<MappedComponent> RuleFilter::getMappedData(SimHierarchyNode& _simHie
 	return _mapComList;
 }
 
+std::vector<MappedComponent> RuleFilter::getMappedData2_2(SimHierarchyNode& _simHierarchyNode, ::std::auto_ptr< ::schema::simxml::Model::SimModel >& simSysData)
+{
+	// save mapped data
+	std::vector<MappedComponent> _mapComList;
+
+	// component One2One mapping
+	if(isComRuleOne2One(_simHierarchyNode.ClassType()))
+	{
+		// component level
+		// load mapping rules
+		std::pair<std::multimap<std::string, Data_Model_Map::Component_Map_One2One_iterator>::iterator, std::multimap<std::string, Data_Model_Map::Component_Map_One2One_iterator>::iterator> retIt = getComRuleOne2One(_simHierarchyNode.ClassType());
+		// iterate rules
+		for(std::multimap<std::string, Data_Model_Map::Component_Map_One2One_iterator>::iterator _it=retIt.first; _it!=retIt.second; ++_it)
+		{
+			// create mapped component
+			MappedComponent _mapCom;
+			setMappingRuleName(_mapCom, "Component_Map_One2One");
+			setTargetComponentName(_mapCom, _it->second->TargetComponentName());
+			if(_it->second->TargetLocation().present())
+				setTargetLocation(_mapCom, _it->second->TargetLocation().get().front());
+
+			// property level
+			// property rule Gap
+			for(Component_Map_One2One::Property_Map_Gap_Name_iterator _proMapGapIt=_it->second->Property_Map_Gap_Name().begin(); _proMapGapIt!=_it->second->Property_Map_Gap_Name().end(); ++_proMapGapIt)
+			{
+				// create mapped property
+				MappedProperty _mapPro = getProRuleGapData(*_proMapGapIt);
+				// add property
+				_mapCom.addMappedProperty(_mapPro);
+			}
+
+			// property rule One2One
+			for(Component_Map_One2One::Property_Map_One2One_Name_iterator _proMapOne2OneIt=_it->second->Property_Map_One2One_Name().begin(); _proMapOne2OneIt!=_it->second->Property_Map_One2One_Name().end(); ++_proMapOne2OneIt)
+			{
+				// create mapped property
+				MappedProperty _mapPro = getProRuleOne2OneData(_simHierarchyNode._SimRootObject->RefId(), *_proMapOne2OneIt);
+				// add property
+				_mapCom.addMappedProperty(_mapPro);
+			}
+
+			// property rule Transformation
+			for(Component_Map_One2One::Property_Map_Transformation_Name_iterator _proMapTranIt=_it->second->Property_Map_Transformation_Name().begin(); _proMapTranIt!=_it->second->Property_Map_Transformation_Name().end(); ++_proMapTranIt)
+			{
+				// create mapped property
+				MappedProperty _mapPro = getProRuleTransformationData(_simHierarchyNode._SimRootObject->RefId(), *_proMapTranIt);
+				// add property
+				_mapCom.addMappedProperty(_mapPro);
+			}
+
+			// add mapped component
+			_mapComList.push_back(_mapCom);
+		}
+	}
+
+	// component One2Many mapping
+	if(isComRuleOne2Many(_simHierarchyNode.ClassType()))
+	{
+		// component level
+		// load mapping rules
+		std::pair<std::multimap<std::string, Data_Model_Map::Component_Map_One2Many_iterator>::iterator, std::multimap<std::string, Data_Model_Map::Component_Map_One2Many_iterator>::iterator> retIt = getComRuleOne2Many(_simHierarchyNode.ClassType());
+		// iterate rules
+		for(std::multimap<std::string, Data_Model_Map::Component_Map_One2Many_iterator>::iterator _it=retIt.first; _it!=retIt.second; ++_it)
+		{	// iterate component mapping group id
+			for(Component_Map_One2Many::ComponentMappingGroupName_iterator subIt=_it->second->ComponentMappingGroupName().begin(); subIt!=_it->second->ComponentMappingGroupName().end(); ++subIt)
+			{
+				// get the real mapping group
+				if(ComMappingGroupList.find(*subIt) != ComMappingGroupList.end())
+				{
+					Data_Model_Map::ComponentMappingGroup_iterator _comMapGroupIt = ComMappingGroupList.find(*subIt)->second;
+					// create mapped component
+					MappedComponent _mapCom;
+					setMappingRuleName(_mapCom, "Component_Map_One2Many");
+					setTargetComponentName(_mapCom, _comMapGroupIt->TargetComponentName());
+					if(_comMapGroupIt->TargetLocation().present())
+						setTargetLocation(_mapCom, _comMapGroupIt->TargetLocation().get().front());
+
+					// property level
+					// property rule Gap
+					for(ComponentMappingGroup::Property_Map_Gap_Name_iterator _proMapGapIt=_comMapGroupIt->Property_Map_Gap_Name().begin(); _proMapGapIt!=_comMapGroupIt->Property_Map_Gap_Name().end(); ++_proMapGapIt)
+					{
+						// create mapped property
+						MappedProperty _mapPro = getProRuleGapData(*_proMapGapIt);
+						// add property
+						_mapCom.addMappedProperty(_mapPro);
+					}
+
+					// property rule One2One
+					for(ComponentMappingGroup::Property_Map_One2One_Name_iterator _proMapOne2OneIt=_comMapGroupIt->Property_Map_One2One_Name().begin(); _proMapOne2OneIt!=_comMapGroupIt->Property_Map_One2One_Name().end(); ++_proMapOne2OneIt)
+					{
+						// create mapped property
+						MappedProperty _mapPro = getProRuleOne2OneData(_simHierarchyNode._SimRootObject->RefId(), *_proMapOne2OneIt);
+						// add property
+						_mapCom.addMappedProperty(_mapPro);
+					}
+
+					// property rule Transformation
+
+					// add mapped component
+					_mapComList.push_back(_mapCom);
+				}
+			}
+		}
+	}
+
+	return _mapComList;
+}
+
 // check whether there are newly added components defined by the mapping rule Gap
 bool RuleFilter::isNewComponentAdded()
 {
@@ -837,8 +1011,11 @@ std::vector<MappedComponent> RuleFilter::getNewComponent()
 }
 
 // set mapping rule parsing environment
-void RuleFilter::setMappingRule(::std::auto_ptr<Data_Model_Map>& _mapping_rule)
+void RuleFilter::setMappingRule(::std::auto_ptr<Data_Model_Map>& _mapping_rule, SimPyCallBack* _passCallback)
 {
+	// set Python callback handle
+	_callback = _passCallback;
+
 	// component level setting
 	// load One2One rules
 	std::set<std::string> _One2OneRuleIdList;
@@ -934,14 +1111,48 @@ void RuleFilter::setMappingRule(::std::auto_ptr<Data_Model_Map>& _mapping_rule)
 			ProRuleGapList.insert(std::pair<std::string, Data_Model_Map::Property_Map_Gap_iterator>(_it->RefId(), _it));
 	}
 
-	// temp
-	for(Data_Model_Map::InputParameter_iterator _it=_mapping_rule->InputParameter().begin(); _it!=_mapping_rule->InputParameter().end(); ++_it)
+	// parse internal parameter IDs of property transformation rule
+	std::set<std::string> _ParametersRuleIdlist;
+	for(std::map<std::string, Data_Model_Map::Property_Map_Transformation_iterator>::iterator _it=ProRuleTransforList.begin(); _it!=ProRuleTransforList.end(); ++_it)
 	{
-		ProInputParaList.insert(std::pair<std::string, Data_Model_Map::InputParameter_iterator>(_it->RefId(), _it));
+		// parse input parameter IDs
+		for(Property_Map_Transformation::InputParameterName_iterator __it=_it->second->InputParameterName().begin(); __it!=_it->second->InputParameterName().end(); ++__it)
+		{
+			_ParametersRuleIdlist.insert(*__it);
+		}
+
+		// parse input coefficient IDs
+		for(Property_Map_Transformation::InputCoefficientName_iterator __it=_it->second->InputCoefficientName().begin(); __it!=_it->second->InputCoefficientName().end(); ++__it)
+		{
+			_ParametersRuleIdlist.insert(*__it);
+		}
+
+		// parse output parameter IDs
+		for(Property_Map_Transformation::OutputParameterName_iterator __it=_it->second->OutputParameterName().begin(); __it!=_it->second->OutputParameterName().end(); ++__it)
+		{
+			_ParametersRuleIdlist.insert(*__it);
+		}
 	}
 
+	// load different paramters used by property Transformation rules
+	// load input parameters
+	for(Data_Model_Map::InputParameter_iterator _it=_mapping_rule->InputParameter().begin(); _it!=_mapping_rule->InputParameter().end(); ++_it)
+	{
+		if(_ParametersRuleIdlist.find(_it->RefId()) != _ParametersRuleIdlist.end())
+			InputParaList.insert(std::pair<std::string, Data_Model_Map::InputParameter_iterator>(_it->RefId(), _it));
+	}
+
+	// load input coefficients
+	for(Data_Model_Map::InputCoefficient_iterator _it=_mapping_rule->InputCoefficient().begin(); _it!=_mapping_rule->InputCoefficient().end(); ++_it)
+	{
+		if(_ParametersRuleIdlist.find(_it->RefId()) != _ParametersRuleIdlist.end())
+			InputCoeffList.insert(std::pair<std::string, Data_Model_Map::InputCoefficient_iterator>(_it->RefId(), _it));
+	}
+
+	// load output parameters
 	for(Data_Model_Map::OutputParameter_iterator _it=_mapping_rule->OutputParameter().begin(); _it!=_mapping_rule->OutputParameter().end(); ++_it)
 	{
-		ProOutputParaList.insert(std::pair<std::string, Data_Model_Map::OutputParameter_iterator>(_it->RefId(), _it));
+		if(_ParametersRuleIdlist.find(_it->RefId()) != _ParametersRuleIdlist.end())
+			OutputParaList.insert(std::pair<std::string, Data_Model_Map::OutputParameter_iterator>(_it->RefId(), _it));
 	}
 }

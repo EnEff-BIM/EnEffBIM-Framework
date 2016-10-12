@@ -200,6 +200,15 @@ class SimPyCallBack(_object):
 
     def getIO(self, _name):
         return _SimModel_PyCallBack.SimPyCallBack_getIO(self, _name)
+
+    def getRefValueType(self, _classId, _propertyName):
+        return _SimModel_PyCallBack.SimPyCallBack_getRefValueType(self, _classId, _propertyName)
+
+    def getRefNumberValue(self, _classId, _propertyName):
+        return _SimModel_PyCallBack.SimPyCallBack_getRefNumberValue(self, _classId, _propertyName)
+
+    def getRefStringValue(self, _classId, _propertyName):
+        return _SimModel_PyCallBack.SimPyCallBack_getRefStringValue(self, _classId, _propertyName)
     def __disown__(self):
         self.this.disown()
         _SimModel_PyCallBack.disown_SimPyCallBack(self)
@@ -246,6 +255,21 @@ class CallBack(SimPyCallBack):
             return getattr(_classObj, _propertyName)().getValue()
     def getIO(self, _name):
         print(_name)
+    def getRefValueType(self, _classId, _propertyName):
+        _classObj = self.getSimClassObj(_classId)
+        if _classObj is not None and getattr(_classObj, _propertyName)().present():
+            if type(getattr(_classObj, _propertyName)().getValue()) is str:
+                return "String"
+            else:
+                return "Number"
+    def getRefNumberValue(self, _classId, _propertyName):
+        _classObj = self.getSimClassObj(_classId)
+        if _classObj is not None and getattr(_classObj, _propertyName)().present():
+            return getattr(_classObj, _propertyName)().getValue()
+    def getRefStringValue(self, _classId, _propertyName):
+        _classObj = self.getSimClassObj(_classId)
+        if _classObj is not None and getattr(_classObj, _propertyName)().present():
+            return getattr(_classObj, _propertyName)().getValue()    
 
 # This file is compatible with both classic and new-style classes.
 
