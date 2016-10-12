@@ -630,17 +630,17 @@ class MapComponent(MoObject):
 
         child = self.hierarchy_node.getChildList()
         for id in range(child.size()):
+            #print("child[id]: ", child[id], " of the type: ", child[id].ClassType(), "\n")		
             if child[id].ClassType() == \
-                    "SimNode_HotWaterFlowPort_Water_In":
+                    "SimNode_HotWaterFlowPort_Water_In" or "SimDistributionPort_HotWaterFlowPort_Water_In" :
                 sim_port_in = child[id]
             if child[id].ClassType () == \
                     "SimNode_HotWaterFlowPort_Water_Out":
-                sim_port_out = child[id]
+                sim_port_out = child[id]				
+            self.port_a = self.add_connector(name="port_a", type="FluidPort",dimension=1, hierarchy_node=sim_port_in)				
+            self.port_b = self.add_connector(name="port_b", type="FluidPort",dimension=1, hierarchy_node=sim_port_out)
 
-        self.port_a = self.add_connector(name="port_a", type="FluidPort",
-         dimension=1, hierarchy_node=sim_port_in)
-        self.port_b = self.add_connector(name="port_b", type="FluidPort",
-         dimension=1, hierarchy_node=sim_port_out)
+
 
 class MapConnection(object):
     """Representation of a mapped connector
