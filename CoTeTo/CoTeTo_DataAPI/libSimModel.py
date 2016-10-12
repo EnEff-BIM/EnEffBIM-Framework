@@ -15,4 +15,4 @@ def fetchData(uriList, systemCfg, generatorCfg, logger):
     if not uriList:
         logger.critical('libSimModel - no files specified!')
         raise Exception('No files specified!')
-    return {'MapProject': MapProject(uriList[0])}
+    return {'MapProject': MapProject(uriList)}
