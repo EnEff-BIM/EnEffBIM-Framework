@@ -26,7 +26,7 @@ fullFile_path = os.path.join(modulePath,
 
 pathList = (zoneFile_path, hvacFile_path)
 mappingFile_path = os.path.join(
-    modulePath+"\\mapping_rule\\mapping_rule_xml\\AixLib_v2.2.xml")
+    modulePath+"\\mapping_rule\\mapping_rule_xml\\AixLib_v2.6.xml")
 #test_file_tobias = os.path.join(modulePath,
 #
 # "1.1_Architecture+HVAC+Zone_Curve+Schedule_korr.simxml")
