@@ -68,12 +68,62 @@ private:
 	MappedProperty getProRuleGapData(std::string _id);
 	// <SimModel component instance RefId, property rule id>
 	MappedProperty getProRuleOne2OneData(std::string SimComponentId, std::string _id);
-	MappedProperty getProRuleTransformationData(std::string SimComponentId, std::string _id);
+	MappedProperty getProRuleTransformationData(std::string SimComponentId, std::string _id, ::std::auto_ptr< ::schema::simxml::Model::SimModel >& simSysData);
 
 	// Python callback
 	SimPyCallBack* _callback;
 
+	class _treeNode
+	{
+	public:
+		// operator or leaf paramter
+		std::string _nodeName;
+		// leaf or opeator
+		bool isLeaf;
+		// constant or parameter
+		bool isConstant;
+		// constant string or number
+		bool isConstantNumber;
+		double constantValue;
+		// parent node
+		bool hasParent;
+		int parentId;
+		// children
+		bool hasLeftChild, hasRightChild;
+		int leftChildId, rightChildId;
+
+		_treeNode()
+		{
+			isLeaf = false;
+			isConstant = false;
+			isConstantNumber = false;
+			constantValue = 0;
+			hasParent = false;
+			hasLeftChild = false;
+			hasRightChild = false;
+			parentId = leftChildId = rightChildId = 100;
+		}
+	};
+	// save parsed function elements
+	std::vector<_treeNode> _treeNodeList;
+	// save the memergy positions of parsed function elements
+	// <_nodeName, vector_pos>
+	std::map<std::string, int> _treeNodePosMap, _operatorRankMap;
+	// set the left node
+	void setLeftChild(int _funItPos, int leftNeighborPos, int _deep);
+
 public:
+	RuleFilter()
+	{
+		_operatorRankMap.insert(std::pair<std::string, int>("==", 3));
+		_operatorRankMap.insert(std::pair<std::string, int>(":", 3));
+		_operatorRankMap.insert(std::pair<std::string, int>("?", 2));
+		_operatorRankMap.insert(std::pair<std::string, int>("*", 1));
+		_operatorRankMap.insert(std::pair<std::string, int>("/", 1));
+		_operatorRankMap.insert(std::pair<std::string, int>("+", 0));
+		_operatorRankMap.insert(std::pair<std::string, int>("-", 0));
+	}
+
 	// check whether the component is necessary to be translated
 	bool isMappedComponent(SimHierarchyNode& _simHierarchyNode);
 	// translate the SimModel component saved in the hierarchy node

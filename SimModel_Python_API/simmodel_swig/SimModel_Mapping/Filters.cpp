@@ -115,7 +115,27 @@ MappedProperty RuleFilter::getProRuleOne2OneData(std::string SimComponentId, std
 	return _mapPro;
 }
 
-MappedProperty RuleFilter::getProRuleTransformationData(std::string SimComponentId, std::string _id)
+// set the left node
+void RuleFilter::setLeftChild(int _funItPos, int leftNeighborPos, int _deep)
+{
+	if(!_treeNodeList[leftNeighborPos].hasParent)
+	{
+		// building parent-child link
+		_treeNodeList[_funItPos].hasLeftChild = true;
+		_treeNodeList[_funItPos].leftChildId = leftNeighborPos;
+		_treeNodeList[leftNeighborPos].hasParent = true;
+		_treeNodeList[leftNeighborPos].parentId = _funItPos;
+	}
+	else
+	{
+		//if(_deep>10)
+			//return;
+		// get parent
+		setLeftChild(_funItPos, _treeNodeList[leftNeighborPos].parentId, _deep+1);
+	}
+}
+
+MappedProperty RuleFilter::getProRuleTransformationData(std::string SimComponentId, std::string _id, ::std::auto_ptr< ::schema::simxml::Model::SimModel >& simSysData)
 {
 	// save mapped property
 	MappedProperty _mapPro;
@@ -124,8 +144,328 @@ MappedProperty RuleFilter::getProRuleTransformationData(std::string SimComponent
 	std::map<std::string, Data_Model_Map::Property_Map_Transformation_iterator>::iterator _it = ProRuleTransforList.find(_id);
 	if(_it!=ProRuleTransforList.end())
 	{
+		// get input parameter
+		std::map<std::string, Data_Model_Map::InputParameter_iterator>::iterator _inputParaIt = InputParaList.find(_it->second->InputParameterName().front());
 		// get output parameter
-		_it->second->OutputParameterName().front();
+		std::map<std::string, Data_Model_Map::OutputParameter_iterator>::iterator _outputParaIt = OutputParaList.find(_it->second->OutputParameterName().front());
+		
+		if(_inputParaIt != InputParaList.end() && _outputParaIt != OutputParaList.end() && _it->second->Function().size())
+		{
+			// set output property name
+			_mapPro.setPropertyName(_outputParaIt->second->ParameterName().front());
+
+			// get input parameter name
+			std::string _inputParaName = _inputParaIt->second->ParameterName().front();
+			// get input paramter value type
+			// default type is single value
+			std::string _inputParaType = "single";
+			if(_inputParaIt->second->ValueType().present())
+				_inputParaType = _inputParaIt->second->ValueType().get();
+			// get value
+			if(_inputParaType=="single")
+			{
+				// Type: RefValue
+				if(_inputParaIt->second->RefValue().present() && _callback)
+				{
+					// get input paramter value
+					std::string _refType = _callback->getRefValueType(SimComponentId, _inputParaIt->second->RefValue().get().front());
+					if(_refType == "Number")
+					{
+						double _inputParaRefValue = std::numeric_limits<double>::max();
+						_inputParaRefValue = _callback->getRefNumberValue(SimComponentId, _inputParaIt->second->RefValue().get().front());
+						// save to structure
+
+						// testing
+						// retrieve the property value
+						//_mapPro.setValueType("Number");
+						//if(_inputParaRefValue != std::numeric_limits<double>::max())
+							//_mapPro.setValueNumber(_inputParaRefValue);
+					}
+					// else if(_refType == "String")
+				}
+				//else if(_inputParaIt->second->ValueList().present())
+			}
+			else if(_inputParaType=="range")
+			{
+				// get input paramter value lower bounding
+				double _inputParaLowerBoundValue = std::numeric_limits<double>::max();
+				if(_inputParaIt->second->LowerBoundValue().present())
+				{
+					_inputParaLowerBoundValue = _inputParaIt->second->LowerBoundValue().get();
+				}
+				else if(_inputParaIt->second->LowerBoundRef().present() && _callback)
+				{
+					if(_inputParaIt->second->LowerBoundRef().get().size()==1)
+					{
+						// get input paramter lower bounding value
+						std::string _refType = _callback->getRefValueType(SimComponentId, _inputParaIt->second->LowerBoundRef().get().front());
+						if(_refType == "Number")
+							_inputParaLowerBoundValue = _callback->getRefNumberValue(SimComponentId, _inputParaIt->second->LowerBoundRef().get().front());
+					}
+					else
+					{
+						std::string _refType = _callback->getRefValueType(SimComponentId, _inputParaIt->second->LowerBoundRef().get().at(0));
+						if(_refType == "String")
+						{
+							// get a RefId
+							std::string _lowerBoundRefId = _callback->getRefStringValue(SimComponentId, _inputParaIt->second->LowerBoundRef().get().at(0));
+							// get the referenced class instance for cubic interpolation
+							if(_inputParaIt->second->LowerBoundRef().get().at(1)=="SimPerformanceCurve_Mathematical_Cubic")
+							{
+								for(SimModel::SimPerformanceCurve_Mathematical_Cubic_iterator _itSimCurveIt=simSysData->SimPerformanceCurve_Mathematical_Cubic().begin(); _itSimCurveIt!=simSysData->SimPerformanceCurve_Mathematical_Cubic().end(); ++_itSimCurveIt)
+								{
+									if(_itSimCurveIt->RefId()==_lowerBoundRefId)
+									{
+										
+										if(_inputParaIt->second->LowerBoundRef().get().at(2)=="SimPerfCurve_MinValX" && _itSimCurveIt->SimPerfCurve_MinValX().present())
+											_inputParaLowerBoundValue = _itSimCurveIt->SimPerfCurve_MinValX().get();
+
+										break;
+									}
+								}
+							}
+						}
+					}
+				}
+
+				// get input paramter value upper bounding
+				double _inputParaUpperBoundValue = std::numeric_limits<double>::max();
+				if(_inputParaIt->second->UpperBoundValue().present())
+				{
+					_inputParaUpperBoundValue = _inputParaIt->second->UpperBoundValue().get();
+				}
+				else if(_inputParaIt->second->UpperBoundRef().present() && _callback)
+				{
+					if(_inputParaIt->second->UpperBoundRef().get().size()==1)
+					{
+						// get input paramter upper bounding value
+						std::string _refType = _callback->getRefValueType(SimComponentId, _inputParaIt->second->UpperBoundRef().get().front());
+						if(_refType == "Number")
+							_inputParaUpperBoundValue = _callback->getRefNumberValue(SimComponentId, _inputParaIt->second->UpperBoundRef().get().front());
+					}
+					else
+					{
+						std::string _refType = _callback->getRefValueType(SimComponentId, _inputParaIt->second->UpperBoundRef().get().at(0));
+						if(_refType == "String")
+						{
+							// get a RefId
+							std::string _upperBoundRefId = _callback->getRefStringValue(SimComponentId, _inputParaIt->second->UpperBoundRef().get().at(0));
+							// get the referenced class instance for cubic interpolation
+							if(_inputParaIt->second->UpperBoundRef().get().at(1)=="SimPerformanceCurve_Mathematical_Cubic")
+							{
+								for(SimModel::SimPerformanceCurve_Mathematical_Cubic_iterator _itSimCurveIt=simSysData->SimPerformanceCurve_Mathematical_Cubic().begin(); _itSimCurveIt!=simSysData->SimPerformanceCurve_Mathematical_Cubic().end(); ++_itSimCurveIt)
+								{
+									if(_itSimCurveIt->RefId()==_upperBoundRefId)
+									{
+										
+										if(_inputParaIt->second->UpperBoundRef().get().at(2)=="SimPerfCurve_MaxValX" && _itSimCurveIt->SimPerfCurve_MaxValX().present())
+											_inputParaUpperBoundValue = _itSimCurveIt->SimPerfCurve_MaxValX().get();
+
+										break;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+
+			// parse function
+			if(_it->second->Function().front() != "=")
+			{
+				// clear cache: can be optimized by saving parsed function
+				_treeNodeList.resize(0);
+
+				// get result name
+				std::string _fun_result_name = _it->second->Function().front();
+				// minimum number of function item: result = input parameter
+				if(_it->second->Function().size()>=3 && _it->second->Function().at(1)=="=")
+				{
+					// parse internal items
+					// beginning from the right side of the '='
+					/*bool isConditionalOperator = false;
+					for(unsigned int _funIt=2; _funIt<_it->second->Function().size(); ++_funIt)
+					{
+						if(_it->second->Function().at(_funIt)=="==")
+						{
+							// set flag
+							isConditionalOperator = true;
+							// process
+
+
+							break;
+						}
+					}*/
+
+					// calcuation operation
+					//if(!isConditionalOperator)
+					{
+						for(unsigned int _funIt=2; _funIt<_it->second->Function().size(); ++_funIt)
+						{
+							std::string _fun_item = _it->second->Function().at(_funIt);
+							// parse tree node
+							if(_fun_item=="+" || _fun_item=="-" || _fun_item=="*" || _fun_item=="/" || _fun_item=="==" || _fun_item==":" || _fun_item=="?")
+							{
+								// create a new node
+								//if(_treeNodeList.size() < _funIt-1)
+								{
+									_treeNode _node;
+									_node._nodeName = _fun_item;
+									_treeNodeList.push_back(_node);
+								}
+							}
+							else if(_fun_item=="\"")
+							{
+								// create a new node
+								//if(_treeNodeList.size() < _funIt-1)
+								{
+									_treeNode _node;
+									_node._nodeName = _fun_item;
+									_treeNodeList.push_back(_node);
+								}
+								// check neighboring constant string item
+								if(_funIt+1<_it->second->Function().size() && _funIt+2<_it->second->Function().size())
+								{
+									std::string _cstStrItem = _it->second->Function().at(_funIt+1);
+									if(_cstStrItem!="+" && _cstStrItem!="-" && _cstStrItem!="*" && _cstStrItem!="/" && _cstStrItem!="==" && _cstStrItem!=":" && _cstStrItem!="?" && _it->second->Function().at(_funIt+2)=="\"")
+									{
+										// save constant string item as a leaf
+										_treeNode _leaf;
+										_leaf._nodeName = _cstStrItem;
+										_leaf.isLeaf = true;
+										_leaf.isConstant = true;
+										_treeNodeList.push_back(_leaf);
+										// move to next item
+										++_funIt;
+									}
+								}
+							}
+							else
+							{
+								// param, coeff, constant
+								// create a new leaf
+								//if(_treeNodeList.size() < _funIt-1)
+								{
+									_treeNode _leaf;
+									_leaf._nodeName = _fun_item;
+									_leaf.isLeaf = true;
+
+									// whether _fun_item is a constant?
+									unsigned int __i = 0;
+									while(__i < _fun_item.size() && ((_fun_item[__i]=='0' || _fun_item[__i]=='1' || _fun_item[__i]=='2' || _fun_item[__i]=='3' || _fun_item[__i]=='4' || _fun_item[__i]=='5' || _fun_item[__i]=='6' || _fun_item[__i]=='7' || _fun_item[__i]=='8' || _fun_item[__i]=='9') || _fun_item[__i]=='.' && __i>0))
+									{
+										++__i;
+									}
+									// Yes, convert to double
+									if(!_fun_item.empty() && __i==_fun_item.size())
+									{
+									
+										_leaf.isConstant = true;
+										_leaf.isConstantNumber = true;
+										_leaf.constantValue = std::stod(_fun_item);
+									}
+
+									// add the leaf
+									_treeNodeList.push_back(_leaf);
+								}
+							}
+
+							// parse left neighborhood
+							if(_funIt > 2 && _it->second->Function().at(_funIt)!="\"")
+							{
+								// get current node
+								if(_treeNodeList[_funIt-2].isLeaf)
+								{
+									// leaf node: parameter, constant number, constant string
+									// check left side & right side, skip \"
+									// 1st left side
+									if(!_treeNodeList[_funIt-2].hasParent)
+									{
+										int leftNeighbor = _funIt - 1;
+										while(_it->second->Function().at(leftNeighbor)=="\"" && leftNeighbor>2)
+											--leftNeighbor;
+
+										// 2nd right side
+										if(_funIt+1<_it->second->Function().size())
+										{
+											unsigned int rightNeighbor = _funIt + 1;
+											while(rightNeighbor<_it->second->Function().size() && _it->second->Function().at(rightNeighbor)=="\"")
+												++rightNeighbor;
+
+											// compare left and right
+											if(rightNeighbor<_it->second->Function().size() && _it->second->Function().at(rightNeighbor)!="\"" && _it->second->Function().at(leftNeighbor)!="\"" && !_treeNodeList[rightNeighbor-2].isLeaf && !_treeNodeList[leftNeighbor-2].isLeaf)
+											{
+												// only add left item if it's possible
+												int _rightRank = _operatorRankMap.find(_it->second->Function().at(rightNeighbor))->second;
+												int _leftRank = _operatorRankMap.find(_it->second->Function().at(leftNeighbor))->second;
+												if(_leftRank>=_rightRank && !_treeNodeList[leftNeighbor-2].hasRightChild)
+												{
+													// add parent-child link
+													_treeNodeList[leftNeighbor-2].hasRightChild = true;
+													_treeNodeList[leftNeighbor-2].rightChildId = _funIt-2;
+													_treeNodeList[_funIt-2].hasParent = true;
+													_treeNodeList[_funIt-2].parentId = leftNeighbor-2;
+													// testing
+													_mapPro.setValueType("String");
+													_mapPro.setValueString(_treeNodeList[_funIt-2]._nodeName);
+												}
+											}
+										}
+										else
+										{
+											// only left checking
+											if(_it->second->Function().at(leftNeighbor)!="\"" && !_treeNodeList[leftNeighbor-2].isLeaf && !_treeNodeList[leftNeighbor-2].hasRightChild)
+											{
+												// add parent-child link
+												_treeNodeList[leftNeighbor-2].hasRightChild = true;
+												_treeNodeList[leftNeighbor-2].rightChildId = _funIt-2;
+												_treeNodeList[_funIt-2].hasParent = true;
+												_treeNodeList[_funIt-2].parentId = leftNeighbor-2;
+											}
+										}
+									}					
+								}
+								else
+								{
+									// operator: 7
+									// check left side: skip \"
+									int leftNeighbor = _funIt - 1;
+									while(_it->second->Function().at(leftNeighbor)=="\"" && leftNeighbor>2)
+										--leftNeighbor;
+									// check left item
+									if(_it->second->Function().at(leftNeighbor)!="\"" && !_treeNodeList[_funIt-2].hasLeftChild)
+									{
+										// set the left node
+										// building parent-child link
+										setLeftChild(_funIt-2, leftNeighbor-2, 0);
+										// testing
+										//_mapPro.setValueType("String");
+										//_mapPro.setValueString(_treeNodeList[_funIt-2]._nodeName);
+										//_mapPro.setValueType("Number");
+										//_mapPro.setValueNumber(_treeNodeList[_funIt-2].parentId);
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			
+			//_mapPro.setValueType("String");
+			//_mapPro.setValueString(_fun_result_name);
+			// testing
+			//_mapPro.setValueType("Number");
+			//_mapPro.setValueNumber(_const_value);
+
+			
+		}
+
+		// save record instance
+		if(_it->second->RecordInstance().present())
+			_mapPro.setRecordInstance(_it->second->RecordInstance().get());
+		// save record location
+		if(_it->second->RecordLocation().present())
+			_mapPro.setRecordLocation(_it->second->RecordLocation().get());
 	}
 
 	return _mapPro;
@@ -906,7 +1246,7 @@ std::vector<MappedComponent> RuleFilter::getMappedData2_2(SimHierarchyNode& _sim
 			for(Component_Map_One2One::Property_Map_Transformation_Name_iterator _proMapTranIt=_it->second->Property_Map_Transformation_Name().begin(); _proMapTranIt!=_it->second->Property_Map_Transformation_Name().end(); ++_proMapTranIt)
 			{
 				// create mapped property
-				MappedProperty _mapPro = getProRuleTransformationData(_simHierarchyNode._SimRootObject->RefId(), *_proMapTranIt);
+				MappedProperty _mapPro = getProRuleTransformationData(_simHierarchyNode._SimRootObject->RefId(), *_proMapTranIt, simSysData);
 				// add property
 				_mapCom.addMappedProperty(_mapPro);
 			}
@@ -958,6 +1298,13 @@ std::vector<MappedComponent> RuleFilter::getMappedData2_2(SimHierarchyNode& _sim
 					}
 
 					// property rule Transformation
+					for(ComponentMappingGroup::Property_Map_Transformation_Name_iterator _proMapTranIt=_comMapGroupIt->Property_Map_Transformation_Name().begin(); _proMapTranIt!=_comMapGroupIt->Property_Map_Transformation_Name().end(); ++_proMapTranIt)
+					{
+						// create mapped property
+						MappedProperty _mapPro = getProRuleTransformationData(_simHierarchyNode._SimRootObject->RefId(), *_proMapTranIt, simSysData);
+						// add property
+						_mapCom.addMappedProperty(_mapPro);
+					}
 
 					// add mapped component
 					_mapComList.push_back(_mapCom);
