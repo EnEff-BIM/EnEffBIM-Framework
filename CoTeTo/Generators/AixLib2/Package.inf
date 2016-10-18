@@ -20,5 +20,6 @@ module = Filter01
 function = filter01
 
 [TEMPLATES]
-topFile = Main.mot
+#topFile = Main.mot
+topFile = Main1.mot
 type = mako
