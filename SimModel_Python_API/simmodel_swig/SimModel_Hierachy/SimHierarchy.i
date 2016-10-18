@@ -138,3 +138,5 @@ del __re_init__
 %template(dataType_SimInternalLoad_Lights_Default) SimHierarchyNodeBase::dataType<SimInternalLoad_Lights_Default>;
 %template(dataType_SimController_ZoneControlTemperature_Thermostat) SimHierarchyNodeBase::dataType<SimController_ZoneControlTemperature_Thermostat>;
 %template(dataType_SimControlScheme_SetpointScheme_SingleHeating) SimHierarchyNodeBase::dataType<SimControlScheme_SetpointScheme_SingleHeating>;
+
+%template(dataType_SimPerformanceCurve_Mathematical_Cubic) SimHierarchyNodeBase::dataType<SimPerformanceCurve_Mathematical_Cubic>;

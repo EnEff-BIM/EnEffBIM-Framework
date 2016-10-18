@@ -117,11 +117,8 @@ private:
 	std::map<std::string, SimHierarchyNode*> SimHierarchyNode_IdMapList;
 	// add SimModel Hiearachial Node
 	void addHierarchyNode(SimHierarchyNode& _simNode);
-	// unmapped SimModel data
-	//std::auto_ptr<SimModel> SimModel_Data;
 
 	// parse SimSystem
-	void parseSimSystem(::std::auto_ptr< ::schema::simxml::Model::SimModel >& simSysData, int _id_SimBuilding, std::vector<std::pair<int, int> >& _nodeIndexPairList, std::map<std::string, int>& _nodeIndexList);
 	// for new feature testing
 	void parseSimSystemTmp(::std::auto_ptr< ::schema::simxml::Model::SimModel >& simSysData, ::std::auto_ptr< ::schema::simxml::Model::SimModel >& simGeometryData, int _id_SimBuilding, std::vector<std::pair<int, int> >& _nodeIndexPairList, std::map<std::string, int>& _nodeIndexList);
 	// parse time series
@@ -135,8 +132,6 @@ private:
 
 	// parse SimSpace
 	void parseSimSpaceTree(::std::auto_ptr< ::schema::simxml::Model::SimModel >& simGeometryData, std::vector<std::pair<int, int> >& _nodeIndexPairList, std::map<std::string, int>& _nodeIndexList, SimModel::SimSpatialZone_ThermalZone_Default_iterator& _simThermalZoneIt);
-	// new update for version 2.2
-	void parseSimSpaceTree2_2(::std::auto_ptr< ::schema::simxml::Model::SimModel >& simGeometryData, std::vector<std::pair<int, int> >& _nodeIndexPairList, std::map<std::string, int>& _nodeIndexList, SimModel::SimSpatialZone_ThermalZone_Default_iterator& _simThermalZoneIt);
 	void parseMaterialLayer(SimRoot* _simMaterialLayerObj, std::vector<std::pair<int, int> >& _nodeIndexPairList, std::map<std::string, int>& _nodeIndexList, int _id_MaterialLayerSet);
 
 	// Python callback
@@ -153,13 +148,6 @@ public:
 	SimHierarchy() : _callback(NULL) 
 	{ 
 		SimHierarchyNodeList.resize(0);
-
-		// create proxy layer class id
-		/*for(unsigned int _i=0; _i<3; ++_i)
-		{
-			std::string _proxyClassId = "P" + std::to_string(long double(_i));
-			simProxyClassList.push_back(SimMaterialLayer2_10(_proxyClassId));
-		}*/
 	}
 	// get SimModel Hierarchical Root Node
 	SimHierarchyNode* getHierarchyRootNode();
@@ -174,11 +162,7 @@ public:
 	// get SimModel object class type
 	std::string ClassType(SimRoot& _simObj);
 	std::string ClassType(SimRoot* _simObj);
-	// load SimModel data
-	//::std::auto_ptr< ::schema::simxml::Model::SimModel > loadSimModel(std::string _name);
 	// hierarchy parser
-	void parser(::std::auto_ptr< ::schema::simxml::Model::SimModel >& SimModel_Data);
-	void parser(::std::auto_ptr< ::schema::simxml::Model::SimModel >& simGeometryData, ::std::auto_ptr< ::schema::simxml::Model::SimModel >& simSysData, std::string _geoName, std::string _sysName);
 	// new update for version 2.2
 	void parser2_2(::std::auto_ptr< ::schema::simxml::Model::SimModel >& simGeometryData, ::std::auto_ptr< ::schema::simxml::Model::SimModel >& simSysData, std::string _geoName, std::string _sysName);
 	// set Python callback function

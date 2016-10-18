@@ -184,8 +184,8 @@ class SimTranslator(_object):
     def setTranslator(self, _simHierarchyObj):
         return _SimModel_Translator.SimTranslator_setTranslator(self, _simHierarchyObj)
 
-    def loadSimModel(self, *args):
-        return _SimModel_Translator.SimTranslator_loadSimModel(self, *args)
+    def loadSimModel(self, _geoName, _sysName):
+        return _SimModel_Translator.SimTranslator_loadSimModel(self, _geoName, _sysName)
 
     def getSimHierarchy(self):
         return _SimModel_Translator.SimTranslator_getSimHierarchy(self)

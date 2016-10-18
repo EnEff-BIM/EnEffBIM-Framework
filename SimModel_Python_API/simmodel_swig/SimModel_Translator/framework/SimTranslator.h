@@ -19,7 +19,6 @@ public:
 	// set SimHierarchy init object
 	void setTranslator(SimHierarchy& _simHierarchyObj);
 	// load SimModel data
-	::std::auto_ptr< ::schema::simxml::Model::SimModel > loadSimModel(std::string _name);
 	void loadSimModel(std::string _geoName, std::string _sysName);
 	// get SimModel hierarchy object
 	SimHierarchy& getSimHierarchy();
