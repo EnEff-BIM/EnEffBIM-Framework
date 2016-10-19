@@ -1,0 +1,32 @@
+
+import networkx as nx
+import matplotlib.pyplot as plt
+
+listnodes = ["Randoms_D66boiler","Randoms_D1mpipe","Randoms_D1Mpipe","Randoms_D1tpipe","Randoms_D6Dpipe","Randoms_D1dpipe","Randoms_D1_pipe","Randoms_D1jpipe","Randoms_D1Wpipe","Randoms_D63pipe","Randoms_D1Zpipe","Randoms_D1opipe","Randoms_D1Ipipe","Randoms_D1ypipe","Randoms_D1Lvalve","Randoms_D1rpipe","Randoms_D6Fpipe","Randoms_D1Gpipe","Randoms_D1bpipe","Randoms_D1qpump","Randoms_D1Qpipe","Randoms_D1xpipe","Randoms_D67pipe","Randoms_D1Spipe","Randoms_D6Bpipe","Randoms_D1Upipe","Randoms_D1vpipe","Randoms_D1uvessel","Randoms_D1Kradiator","Randoms_D1Opipe","RandomlQZsBpipe","setTemp_Randoms_D66boiler","combi_time_Randoms_D1qpump","reatToBool_Randoms_D1qpump","pid_Randoms_D1Lvalve","setTemp_Randoms_D1Lvalve","sensT27","infil_thermal_zone_RandomID11","combi_time_thermal_zone_RandomID11","thermal_zone_RandomID11"]
+listcomponents = [("setTemp_Randoms_D66boiler","Randoms_D66boiler"),("combi_time_Randoms_D1qpump","reatToBool_Randoms_D1qpump"),("Randoms_D1qpump","reatToBool_Randoms_D1qpump"),("thermal_zone_RandomID11","Randoms_D1Kradiator"),("thermal_zone_RandomID11","Randoms_D1Kradiator"),("pid_Randoms_D1Lvalve","Randoms_D1Lvalve"),("pid_Randoms_D1Lvalve","setTemp_Randoms_D1Lvalve"),("pid_Randoms_D1Lvalve","sensT27"),("thermal_zone_RandomID11","sensT27"),("Randoms_D1ypipe","Randoms_D66boiler"),("Randoms_D1qpump","Randoms_D1mpipe"),("Randoms_D1tpipe","Randoms_D1Mpipe"),("Randoms_D1mpipe","Randoms_D1tpipe"),("Randoms_D66boiler","Randoms_D6Dpipe"),("Randoms_D1Wpipe","Randoms_D1dpipe"),("Randoms_D1opipe","Randoms_D1_pipe"),("Randoms_D1xpipe","Randoms_D1jpipe"),("Randoms_D1Opipe","Randoms_D1Wpipe"),("Randoms_D6Fpipe","Randoms_D63pipe"),("Randoms_D1bpipe","Randoms_D1Zpipe"),("Randoms_D1dpipe","Randoms_D1opipe"),("Randoms_D1Mpipe","Randoms_D1Ipipe"),("Randoms_D1_pipe","Randoms_D1ypipe"),("Randoms_D1Gpipe","Randoms_D1Lvalve"),("Randoms_D6Bpipe","Randoms_D1rpipe"),("Randoms_D6Dpipe","Randoms_D6Fpipe"),("Randoms_D1Ipipe","Randoms_D1Gpipe"),("Randoms_D1bpipe","Randoms_D1bpipe"),("Randoms_D1rpipe","Randoms_D1qpump"),("Randoms_D1Upipe","Randoms_D1Qpipe"),("Randoms_D1xpipe","Randoms_D1xpipe"),("RandomlQZsBpipe","Randoms_D67pipe"),("Randoms_D1Qpipe","Randoms_D1Spipe"),("Randoms_D67pipe","Randoms_D6Bpipe"),("Randoms_D1Kradiator","Randoms_D1Upipe"),("Randoms_D1vpipe","Randoms_D1vpipe"),("Randoms_D1uvessel","Randoms_D1uvessel"),("Randoms_D1Lvalve","Randoms_D1Kradiator"),("Randoms_D1Spipe","Randoms_D1Opipe"),("Randoms_D63pipe","RandomlQZsBpipe"),("thermal_zone_RandomID11","infil_thermal_zone_RandomID11"),("combi_time_thermal_zone_RandomID11","thermal_zone_RandomID11")]
+G=nx.Graph()
+G.add_nodes_from(listnodes)
+G.add_edges_from(listcomponents)
+for node in listnodes:
+    G.node[node]['Text'] = node
+	
+nx.write_graphml(G, "test.graphml")
+
+nx.draw(G,with_labels=True)
+
+#http://thirld.com/blog/2012/01/31/making-yed-import-labels-from-graphml-files/
+
+Pipe
+
+ID0LMbjl8XfFaui1YxJs_D1x (SimFlowSegment_Pipe_Indoor) declared as Randoms_D1xpipe
+is assigned to group: ID0LMbjl8XfFaui1YxJs_D11 (SimSystem_HvacHotWater_Demand)
+
+as well as:
+ID0LMbjl8XfFaui1YxJs_D1b (SimFlowSegment_Pipe_Indoor) declared as Randoms_D1bpipe out of loop
+ID0LMbjl8XfFaui1YxJs_D1W (SimFlowSegment_Pipe_Indoor) declared as Randoms_D1Wpipe in loop
+ID0LMbjl8XfFaui1YxJs_D1S (SimFlowSegment_Pipe_Indoor) declared as Randoms_D1Spipe in loop
+ID0LMbjl8XfFaui1YxJs_D1U (SimFlowSegment_Pipe_Indoor) declared as Randoms_D1Upipe in loop
+ID0LMbjl8XfFaui1YxJs_D1v (SimFlowSegment_Pipe_Indoor) declared as Randoms_D1vpipe out of loop
+ID0LMbjl8XfFaui1YxJs_D1y (SimFlowSegment_Pipe_Indoor) declared as Randoms_D1ypipe in loop
+ID0LMbjl8XfFaui1YxJs_D1o (SimFlowSegment_Pipe_Indoor) declared as Randoms_D1opipe in loop 
+ID0LMbjl8XfFaui1YxJs_D66 (SimFlowPlant_Boiler_BoilerHotWater) declared as setTemp_Randoms_D66boiler in loop
