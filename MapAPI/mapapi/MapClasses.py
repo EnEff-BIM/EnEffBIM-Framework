@@ -90,6 +90,7 @@ import SimInternalLoad_People_Default
 import SimInternalLoad_Lights_Default
 import SimController_ZoneControlTemperature_Thermostat
 import SimControlScheme_SetpointScheme_SingleHeating
+import SimPerformanceCurve_Mathematical_Cubic
 
 from SimModel_Translator import SimTranslator
 
@@ -761,7 +762,7 @@ class MapComponent(MoObject):
         self.add_parameter(name="m_flow_small",
                            value=0.01)
         if medium == "Water":
-            self.add_parameter(name="Medium",
+            self.add_parameter(name="replacable package Medium",
                                value="SimpleWater")
         else:
             pass

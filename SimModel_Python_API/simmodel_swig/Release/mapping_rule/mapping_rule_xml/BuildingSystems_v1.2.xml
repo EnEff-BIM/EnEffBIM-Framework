@@ -451,24 +451,6 @@
     <Function>const_k = const_c + 273.15</Function>
     <OutputParameterName>ID01212</OutputParameterName>
   </Property_Map_Transformation>
-
-  <!-- property mapping for the night signal controller -->
-  <!-- set width of pulse in % of period -->
-  <Property_Map_Transformation RefId="ID0322">
-    <Description>Set width of pulse in % of period</Description>
-    <InputParameterName>ID03221</InputParameterName>
-    <Function>w_out = ( 1.0 - ( SUM ( hour_1_24 1 ) / 24.0 ) ) * 100 </Function>
-    <OutputParameterName>ID03222</OutputParameterName>
-  </Property_Map_Transformation>
-
-  <!-- property mapping for the night signal controller -->
-  <!-- set time instant of first pulse [s] -->
-  <Property_Map_Transformation RefId="ID0323">
-    <Description>Set time instant of first pulse [s]</Description>
-    <InputParameterName>ID03221</InputParameterName>
-    <Function>st_out = ( POSE ( hour_1_24 1 ) - 1 ) * 3600 </Function>
-    <OutputParameterName>ID03231</OutputParameterName>
-  </Property_Map_Transformation>
   
   <Property_Map_Transformation RefId="ID061">
     <Description>Diameter from mm to m</Description>

@@ -393,6 +393,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimFlowController_Valve_Tem
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimFlowEnergyTransferStorage_HotWaterTank_Expansion", "SimFlowEnergyTransferStorage_HotWaterTank_Expansion\SimFlowEnergyTransferStorage_HotWaterTank_Expansion.vcxproj", "{35E1B13C-83AF-4356-9779-7BA6C5512502}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimPerformanceCurve_Mathematical_Cubic", "SimPerformanceCurve_Mathematical_Cubic\SimPerformanceCurve_Mathematical_Cubic.vcxproj", "{0C0817D4-C245-4F03-837F-C451CF125EEA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -1183,6 +1185,10 @@ Global
 		{35E1B13C-83AF-4356-9779-7BA6C5512502}.Debug|Win32.Build.0 = Debug|Win32
 		{35E1B13C-83AF-4356-9779-7BA6C5512502}.Release|Win32.ActiveCfg = Release|Win32
 		{35E1B13C-83AF-4356-9779-7BA6C5512502}.Release|Win32.Build.0 = Release|Win32
+		{0C0817D4-C245-4F03-837F-C451CF125EEA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0C0817D4-C245-4F03-837F-C451CF125EEA}.Debug|Win32.Build.0 = Debug|Win32
+		{0C0817D4-C245-4F03-837F-C451CF125EEA}.Release|Win32.ActiveCfg = Release|Win32
+		{0C0817D4-C245-4F03-837F-C451CF125EEA}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

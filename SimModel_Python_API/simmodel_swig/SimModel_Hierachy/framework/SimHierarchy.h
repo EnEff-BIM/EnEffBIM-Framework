@@ -6,11 +6,13 @@
 #include <string>
 #include <typeinfo>
 #include <map>
+#include <set>
 //using namespace std;
 #include "../SimModel_Dll_lib/framework/simmodel.hxx"
 using namespace schema::simxml::Model;
 using namespace schema::simxml::SimModelCore;
 using namespace schema::simxml::ResourcesGeneral;
+using namespace schema::simxml::MepModel;
 
 // forward declaration
 class MappedComponent;
@@ -23,12 +25,20 @@ public:
 	std::string getValue() { return "SimMatLayerSet_Layer_2_10 metrial layers"; }
 };
 
-class SimMaterialLayer2_10 : SimRoot
+class SimMaterialLayer2_10 : public SimRoot
 {
 private:
 	SimModelBase _modelObj;
+	std::string _refId;
 
 public:
+	SimMaterialLayer2_10() {}
+	SimMaterialLayer2_10(std::string _Id) 
+	{ 
+		_refId = _Id;
+		//RefId(_refId);
+	}
+	//std::string RefId() { return _refId; }
 	SimModelBase& SimModelName() { return _modelObj; }
 };
 
@@ -107,22 +117,38 @@ private:
 	std::map<std::string, SimHierarchyNode*> SimHierarchyNode_IdMapList;
 	// add SimModel Hiearachial Node
 	void addHierarchyNode(SimHierarchyNode& _simNode);
-	// unmapped SimModel data
-	//std::auto_ptr<SimModel> SimModel_Data;
+
+	// parse SimSystem
+	// for new feature testing
+	void parseSimSystemTmp(::std::auto_ptr< ::schema::simxml::Model::SimModel >& simSysData, ::std::auto_ptr< ::schema::simxml::Model::SimModel >& simGeometryData, int _id_SimBuilding, std::vector<std::pair<int, int> >& _nodeIndexPairList, std::map<std::string, int>& _nodeIndexList);
+	// parse time series
+	void parseTimeSeries(::std::auto_ptr< ::schema::simxml::Model::SimModel >& simSysData, int _id_SimSystemElement, std::string _timeSeriesId, std::vector<std::pair<int, int> >& _nodeIndexPairList, std::map<std::string, int>& _nodeIndexList);
+	// parse year time series
+	bool parseYearTimeSeries(::std::auto_ptr< ::schema::simxml::Model::SimModel >& simSysData, int _id_ParentNode, std::string _timeSeriesId, std::vector<std::pair<int, int> >& _nodeIndexPairList, std::map<std::string, int>& _nodeIndexList);
+	// parse week time series
+	bool parseWeekTimeSeries(::std::auto_ptr< ::schema::simxml::Model::SimModel >& simSysData, int _id_ParentNode, std::string _timeSeriesId, std::vector<std::pair<int, int> >& _nodeIndexPairList, std::map<std::string, int>& _nodeIndexList);
+	// parse day time series
+	bool parseDayTimeSeries(::std::auto_ptr< ::schema::simxml::Model::SimModel >& simSysData, int _id_ParentNode, std::string _timeSeriesId, std::vector<std::pair<int, int> >& _nodeIndexPairList, std::map<std::string, int>& _nodeIndexList);
 
 	// parse SimSpace
 	void parseSimSpaceTree(::std::auto_ptr< ::schema::simxml::Model::SimModel >& simGeometryData, std::vector<std::pair<int, int> >& _nodeIndexPairList, std::map<std::string, int>& _nodeIndexList, SimModel::SimSpatialZone_ThermalZone_Default_iterator& _simThermalZoneIt);
+	void parseMaterialLayer(SimRoot* _simMaterialLayerObj, std::vector<std::pair<int, int> >& _nodeIndexPairList, std::map<std::string, int>& _nodeIndexList, int _id_MaterialLayerSet);
 
 	// Python callback
 	SimPyCallBack* _callback;
 	// load specified geometry class objects
 	void loadSimGeomClassObj(std::string _geoName);
+	// load specified system class objects
+	void loadSimSysClassObj(std::string _sysName);
 	// get a list of SimModel hierarchy class names need to be parsed
 	//std::vector<std::string> getSimClassNameList(std::string _name);
-	
+	std::vector<SimMaterialLayer2_10> simProxyClassList;
 
 public:
-	SimHierarchy() : _callback(NULL) { SimHierarchyNodeList.resize(0); }
+	SimHierarchy() : _callback(NULL) 
+	{ 
+		SimHierarchyNodeList.resize(0);
+	}
 	// get SimModel Hierarchical Root Node
 	SimHierarchyNode* getHierarchyRootNode();
 	// get SimModel Hierarchical Nodes
@@ -136,13 +162,13 @@ public:
 	// get SimModel object class type
 	std::string ClassType(SimRoot& _simObj);
 	std::string ClassType(SimRoot* _simObj);
-	// load SimModel data
-	//::std::auto_ptr< ::schema::simxml::Model::SimModel > loadSimModel(std::string _name);
 	// hierarchy parser
-	void parser(::std::auto_ptr< ::schema::simxml::Model::SimModel >& SimModel_Data);
-	void parser(::std::auto_ptr< ::schema::simxml::Model::SimModel >& simGeometryData, ::std::auto_ptr< ::schema::simxml::Model::SimModel >& simSysData, std::string _geoName, std::string _sysName);
+	// new update for version 2.2
+	void parser2_2(::std::auto_ptr< ::schema::simxml::Model::SimModel >& simGeometryData, ::std::auto_ptr< ::schema::simxml::Model::SimModel >& simSysData, std::string _geoName, std::string _sysName);
 	// set Python callback function
 	void setCallBack(SimPyCallBack& callback);
+	// get Python callback handler
+	SimPyCallBack* getCallBack();
 };
 
 #endif // SIM_HIERARCHY_H

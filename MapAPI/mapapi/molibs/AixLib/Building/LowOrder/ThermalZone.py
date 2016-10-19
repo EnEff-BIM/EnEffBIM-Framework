@@ -19,8 +19,8 @@ class ThermalZone(MapHierarchy.MapThermalZone):
         self.infiltrationTemperature = self.add_connector(
                                         name="infiltrationTemperature",
                                         type="Real")
-        self.infiltrationRate = self.add_connector(name="infiltrationRate",
-                                                   type="Real")
+        self.ventilationRate = self.add_connector(name="ventilationRate ",
+                                                  type="Real")
         self.internalGains = self.add_connector(name="internalGains",
                                                 type="Real",
                                                 dimension=3)
@@ -56,7 +56,7 @@ class ThermalZone(MapHierarchy.MapThermalZone):
         const.init_me()
         const.target_name = "infil" + "_" + self.target_name
         const.add_parameter('k', rate)
-        const.add_connection(const.y, self.infiltrationRate)
+        const.add_connection(const.y, self.ventilationRate)
         self.project.mod_components.append(const)
 
     def internal_loads(self):
@@ -148,7 +148,7 @@ class ThermalZone(MapHierarchy.MapThermalZone):
                           value=thermal_zone.weightfactor_ground)
         # rec.add_parameter(name="temperatureground",
                          # value=thermal_zone.temperatureground) tbd
-        rec.add_parameter(name="AWin", value=thermal_zone.window_areas)
+        rec.add_parameter(name="Aw", value=thermal_zone.window_areas)
         # rec.add_parameter(name="UWin", value=thermal_zone.ua_value_win) tbd
         # rec.add_parameter(name="gsunblind", value=thermal_zone.asd)
         # rec.add_parameter(name="withInnerwalls",

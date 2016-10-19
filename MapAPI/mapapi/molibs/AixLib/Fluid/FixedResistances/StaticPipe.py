@@ -38,7 +38,7 @@ class StaticPipe(MapHierarchy.MapComponent):
             self.target_location = "AixLib.Fluid.FixedResistances.StaticPipe"
             self.add_parameter(name="D", value="0.014")
             self.add_parameter(name="l", value="0.05")
-            self.add_parameter(name="D", value="2.5e-5")
+            self.add_parameter(name="e", value="2.5e-5")
             pass
 
 
