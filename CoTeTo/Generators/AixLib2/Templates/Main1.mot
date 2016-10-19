@@ -1,6 +1,6 @@
 <%
 def projectdescription(MapData):
-    return " The Project was created using a mako template.\n The information comes originally from " + " and ".join(MapData.simxml_file) + ". \n The used library is: " + str(MapData.used_library)+ "."
+    return "The Project was created using a mako template.\n The information comes originally from " + " and ".join(MapData.simxml_file) + ". \n The used library is: " + str(MapData.used_library)+ "."
 
 def printproject(pro):
     com_parlist=[]
@@ -57,6 +57,7 @@ ${projectdescription(MapData)}
   %for j in range(0,len(param_section)):
     ${param_section[j]} 
   %endfor
+    "${myComp.sim_ref_id}"; 
 %endfor
 
 %for myComp in MapData.mod_components:
@@ -65,6 +66,7 @@ ${projectdescription(MapData)}
   %for j in range(0,len(param_section)):
     ${param_section[j]} 
   %endfor
+    "${myComp.sim_ref_id}"; 
 %endfor
 
 %for myBuilding in MapData.buildings:
@@ -74,7 +76,7 @@ ${projectdescription(MapData)}
     %for j in range(0,len(param_section)):
     ${param_section[j]} 
     %endfor
-  "${myZone.sim_ref_id}"
+    "${myZone.sim_ref_id}";
   %endfor
 %endfor
 
