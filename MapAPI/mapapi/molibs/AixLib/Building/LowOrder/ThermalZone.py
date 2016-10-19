@@ -148,7 +148,7 @@ class ThermalZone(MapHierarchy.MapThermalZone):
                           value=thermal_zone.weightfactor_ground)
         # rec.add_parameter(name="temperatureground",
                          # value=thermal_zone.temperatureground) tbd
-        rec.add_parameter(name="AWin", value=thermal_zone.window_areas)
+        rec.add_parameter(name="Aw", value=thermal_zone.window_areas)
         # rec.add_parameter(name="UWin", value=thermal_zone.ua_value_win) tbd
         # rec.add_parameter(name="gsunblind", value=thermal_zone.asd)
         # rec.add_parameter(name="withInnerwalls",
