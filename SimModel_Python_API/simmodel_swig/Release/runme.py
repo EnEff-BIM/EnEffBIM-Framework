@@ -80,6 +80,7 @@ import SimInternalLoad_People_Default
 import SimInternalLoad_Lights_Default
 import SimController_ZoneControlTemperature_Thermostat
 import SimControlScheme_SetpointScheme_SingleHeating
+import SimPerformanceCurve_Mathematical_Cubic
 
 from SimModel_Translator import SimTranslator
 
@@ -93,10 +94,6 @@ pathList = [zoneFile_path, hvacFile_path]
 
 simxml_data = translator.loadSimModel(zoneFile_path, hvacFile_path)
 
-# simxml_data is the unmapped SimXML data without hierarchy structure
-# like our former demo, you can access the SimXML data via calling a SimModel class name
-# e.g. retrieve the property 'SimModelName' of 1st instance of class SimProject_Project_DesignAlternative
-#print("access SimXML data: ", simxml_data.SimProject_Project_DesignAlternative().at(0).SimModelName().getValue(), "\n")
 
 # get SimModel mapped data
 # here we need to specify the mapping rule xml file location before translating the data

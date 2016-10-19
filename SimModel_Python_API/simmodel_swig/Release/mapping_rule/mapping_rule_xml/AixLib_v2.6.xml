@@ -757,7 +757,7 @@
 		<InputCoefficientName>ID01143</InputCoefficientName>
 		<InputCoefficientName>ID01144</InputCoefficientName>
 		<InputCoefficientName>ID01145</InputCoefficientName>
-		<Function>bec = a1 + ( a2 * plr ) + ( a3 * plr * plr ) + ( a4 * plr * plr * plr )</Function>
+		<Function>bec = a1 + a2 * plr + a3 * plr * plr + a4 * plr * plr * plr</Function>
 		<OutputParameterName>ID01146</OutputParameterName>
 		<RecordInstance>boilerEfficiencyB</RecordInstance>
 		<RecordLocation>AixLib.DataBase.Boiler.BoilerEfficiencyBaseDataDefinition</RecordLocation>
@@ -785,7 +785,7 @@
 		<InputCoefficientName>ID03113</InputCoefficientName>
 		<InputCoefficientName>ID03114</InputCoefficientName>
 		<InputCoefficientName>ID03115</InputCoefficientName>
-		<Function>rs = c1 + ( c2 * v_flow ) + ( c3 * v_flow * v_flow ) + ( c4 * v_flow * v_flow * v_flow )</Function>
+		<Function>rs = c1 + c2 * v_flow + c3 * v_flow * v_flow + c4 * v_flow * v_flow * v_flow</Function>
 		<OutputParameterName>ID03116</OutputParameterName>
 		<RecordInstance>MinMaxCharacteristics</RecordInstance>
 		<RecordLocation>AixLib.DataBase.Pumps.MinMaxCharacteristicsBaseDataDefinition</RecordLocation>
@@ -803,24 +803,8 @@
 	<Property_Map_Transformation RefId="ID0313">
 		<Description>Set control strategy: 2 or 1</Description>
 		<InputParameterName>ID03131</InputParameterName>
-		<Function>ctl_out = ( ctl_in == ( " VariableSpeedReturn " ) ) ? ( 2 : 1 )</Function>
+		<Function>ctl_out = ctl_in == " VariableSpeedReturn " ? 2 : 1</Function>
 		<OutputParameterName>ID03132</OutputParameterName>
-	</Property_Map_Transformation>
-	<!-- property mapping for the night signal controller -->
-	<!-- set width of pulse in % of period -->
-	<Property_Map_Transformation RefId="ID0322">
-		<Description>Set width of pulse in % of period</Description>
-		<InputParameterName>ID03221</InputParameterName>
-		<Function>w_out = ( 1.0 - ( SUM ( hour_1_24 1 ) / 24.0 ) ) * 100 </Function>
-		<OutputParameterName>ID03222</OutputParameterName>
-	</Property_Map_Transformation>
-	<!-- property mapping for the night signal controller -->
-	<!-- set time instant of first pulse [s] -->
-	<Property_Map_Transformation RefId="ID0323">
-		<Description>Set time instant of first pulse [s]</Description>
-		<InputParameterName>ID03221</InputParameterName>
-		<Function>st_out = ( POSE ( hour_1_24 1 ) - 1 ) * 3600 </Function>
-		<OutputParameterName>ID03231</OutputParameterName>
 	</Property_Map_Transformation>
 	<!--Empty component without propeties. It does not exist in the official SimModel schema and is not defined on the Modelica side. Using a pipe as a temporary replacement, to allow a representation of this component coming form the IFC side!-->
 	<Component_Map_One2One RefId="ID99">
@@ -1008,24 +992,11 @@
 		<!-- <Property_Map_Gap_Name>ID0315</Property_Map_Gap_Name> -->
 		<Property_Map_Gap_Name>ID0316</Property_Map_Gap_Name>
 		<!-- <Property_Map_Gap_Name>ID0312T</Property_Map_Gap_Name> -->
-		<Property_Map_Gap_Name>ID0313T</Property_Map_Gap_Name>
+		<!-- <Property_Map_Gap_Name>ID0313T</Property_Map_Gap_Name> -->
 		<Property_Map_Transformation_Name>ID0311</Property_Map_Transformation_Name>
 		<Property_Map_Transformation_Name>ID0312</Property_Map_Transformation_Name>
 		<Property_Map_Transformation_Name>ID0313</Property_Map_Transformation_Name>
 	</ComponentMappingGroup>
-	<!-- component mapping for the water pump of variable speed return -->
-	<!-- night signal controller -->
-	<!-- this will be put into comments, it will be handled via the python side -->
-	<!-- <ComponentMappingGroup RefId="ID032">
-    <Description>Night signal controller</Description>
-    <TargetComponentName>NightSignal</TargetComponentName>
-    <TargetLocation>Modelica.Blocks.Sources.BooleanPulse</TargetLocation>
-    <Property_Map_Gap_Name>ID0321</Property_Map_Gap_Name>
-	<Property_Map_Gap_Name>ID0322T</Property_Map_Gap_Name>
-	<Property_Map_Gap_Name>ID0323T</Property_Map_Gap_Name>
-    <Property_Map_Transformation_Name>ID0322</Property_Map_Transformation_Name>
-    <Property_Map_Transformation_Name>ID0323</Property_Map_Transformation_Name>
-  </ComponentMappingGroup> -->
 	<!-- component mapping for the hot water storage tank -->
 	<!-- Schedule for the water use on the componente side, for the sotrage tank -->
 	<ComponentMappingGroup RefId="ID1140">

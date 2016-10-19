@@ -191,22 +191,26 @@ class SimModelBase(_object):
 SimModelBase_swigregister = _SimModel_Hierachy.SimModelBase_swigregister
 SimModelBase_swigregister(SimModelBase)
 
-class SimMaterialLayer2_10(_object):
+class SimMaterialLayer2_10(base.SimRoot):
     __swig_setmethods__ = {}
+    for _s in [base.SimRoot]:
+        __swig_setmethods__.update(getattr(_s, '__swig_setmethods__', {}))
     __setattr__ = lambda self, name, value: _swig_setattr(self, SimMaterialLayer2_10, name, value)
     __swig_getmethods__ = {}
+    for _s in [base.SimRoot]:
+        __swig_getmethods__.update(getattr(_s, '__swig_getmethods__', {}))
     __getattr__ = lambda self, name: _swig_getattr(self, SimMaterialLayer2_10, name)
     __repr__ = _swig_repr
 
-    def SimModelName(self):
-        return _SimModel_Hierachy.SimMaterialLayer2_10_SimModelName(self)
-
-    def __init__(self):
-        this = _SimModel_Hierachy.new_SimMaterialLayer2_10()
+    def __init__(self, *args):
+        this = _SimModel_Hierachy.new_SimMaterialLayer2_10(*args)
         try:
             self.this.append(this)
         except:
             self.this = this
+
+    def SimModelName(self):
+        return _SimModel_Hierachy.SimMaterialLayer2_10_SimModelName(self)
     __swig_destroy__ = _SimModel_Hierachy.delete_SimMaterialLayer2_10
     __del__ = lambda self: None
 SimMaterialLayer2_10_swigregister = _SimModel_Hierachy.SimMaterialLayer2_10_swigregister
@@ -436,6 +440,9 @@ class SimHierarchyNodeBase(_object):
     def dataType_SimControlScheme_SetpointScheme_SingleHeating(self):
         return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimControlScheme_SetpointScheme_SingleHeating(self)
 
+    def dataType_SimPerformanceCurve_Mathematical_Cubic(self):
+        return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimPerformanceCurve_Mathematical_Cubic(self)
+
     def __init__(self):
         this = _SimModel_Hierachy.new_SimHierarchyNodeBase()
         try:
@@ -535,8 +542,14 @@ class SimHierarchy(_object):
     def ClassType(self, *args):
         return _SimModel_Hierachy.SimHierarchy_ClassType(self, *args)
 
+    def parser2_2(self, simGeometryData, simSysData, _geoName, _sysName):
+        return _SimModel_Hierachy.SimHierarchy_parser2_2(self, simGeometryData, simSysData, _geoName, _sysName)
+
     def setCallBack(self, callback):
         return _SimModel_Hierachy.SimHierarchy_setCallBack(self, callback)
+
+    def getCallBack(self):
+        return _SimModel_Hierachy.SimHierarchy_getCallBack(self)
     __swig_destroy__ = _SimModel_Hierachy.delete_SimHierarchy
     __del__ = lambda self: None
 SimHierarchy_swigregister = _SimModel_Hierachy.SimHierarchy_swigregister

@@ -156,8 +156,6 @@ public:
 	std::vector<MappedComponent>& getMappedComponentList();
 	// translate the SimModel data based on mapping rules
 	void translator(SimHierarchy& _simHierarchy, std::string _name);
-	// new
-	void translator(SimHierarchy& _simHierarchy, std::string _name, ::std::auto_ptr< ::schema::simxml::Model::SimModel >& simSysData);
 };
 
 #endif // SIM_MAPPING_H

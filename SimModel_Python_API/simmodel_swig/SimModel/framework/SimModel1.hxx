@@ -42361,7 +42361,7 @@ namespace schema
 
         void
         SimPerformanceCurve_Mathematical_Biquadratic (const SimPerformanceCurve_Mathematical_Biquadratic_sequence& s);
-
+		*/
         // SimPerformanceCurve_Mathematical_Cubic
         //
         typedef ::schema::simxml::ResourcesGeometry::SimPerformanceCurve_Mathematical_Cubic SimPerformanceCurve_Mathematical_Cubic_type;
@@ -42378,7 +42378,7 @@ namespace schema
 
         void
         SimPerformanceCurve_Mathematical_Cubic (const SimPerformanceCurve_Mathematical_Cubic_sequence& s);
-
+		/*
         // SimPerformanceCurve_Mathematical_DoubleExponentialDecay
         //
         typedef ::schema::simxml::ResourcesGeometry::SimPerformanceCurve_Mathematical_DoubleExponentialDecay SimPerformanceCurve_Mathematical_DoubleExponentialDecay_type;

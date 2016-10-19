@@ -50,7 +50,7 @@
 #include <xsd/cxx/config.hxx>
 
 #if (XSD_INT_VERSION != 4000000L)
-#error XSD runtime version mismatch
+//#error XSD runtime version mismatch
 #endif
 
 #include <xsd/cxx/pre.hxx>
@@ -263,7 +263,7 @@ namespace schema
         // SimPerfCurve_Coef1Constant
         //
         typedef ::xml_schema::double_ SimPerfCurve_Coef1Constant_type;
-        typedef ::xsd::cxx::tree::optional< SimPerfCurve_Coef1Constant_type > SimPerfCurve_Coef1Constant_optional;
+        typedef ::xsd::cxx::tree::optional< SimPerfCurve_Coef1Constant_type, true > SimPerfCurve_Coef1Constant_optional;
         typedef ::xsd::cxx::tree::traits< SimPerfCurve_Coef1Constant_type, char, ::xsd::cxx::tree::schema_type::double_ > SimPerfCurve_Coef1Constant_traits;
 
         const SimPerfCurve_Coef1Constant_optional&
@@ -281,7 +281,7 @@ namespace schema
         // SimPerfCurve_Coef_2_X
         //
         typedef ::xml_schema::double_ SimPerfCurve_Coef_2_X_type;
-        typedef ::xsd::cxx::tree::optional< SimPerfCurve_Coef_2_X_type > SimPerfCurve_Coef_2_X_optional;
+        typedef ::xsd::cxx::tree::optional< SimPerfCurve_Coef_2_X_type, true > SimPerfCurve_Coef_2_X_optional;
         typedef ::xsd::cxx::tree::traits< SimPerfCurve_Coef_2_X_type, char, ::xsd::cxx::tree::schema_type::double_ > SimPerfCurve_Coef_2_X_traits;
 
         const SimPerfCurve_Coef_2_X_optional&
@@ -299,7 +299,7 @@ namespace schema
         // SimPerfCurve_MinValX
         //
         typedef ::xml_schema::double_ SimPerfCurve_MinValX_type;
-        typedef ::xsd::cxx::tree::optional< SimPerfCurve_MinValX_type > SimPerfCurve_MinValX_optional;
+        typedef ::xsd::cxx::tree::optional< SimPerfCurve_MinValX_type, true > SimPerfCurve_MinValX_optional;
         typedef ::xsd::cxx::tree::traits< SimPerfCurve_MinValX_type, char, ::xsd::cxx::tree::schema_type::double_ > SimPerfCurve_MinValX_traits;
 
         const SimPerfCurve_MinValX_optional&
@@ -317,7 +317,7 @@ namespace schema
         // SimPerfCurve_MaxValX
         //
         typedef ::xml_schema::double_ SimPerfCurve_MaxValX_type;
-        typedef ::xsd::cxx::tree::optional< SimPerfCurve_MaxValX_type > SimPerfCurve_MaxValX_optional;
+        typedef ::xsd::cxx::tree::optional< SimPerfCurve_MaxValX_type, true > SimPerfCurve_MaxValX_optional;
         typedef ::xsd::cxx::tree::traits< SimPerfCurve_MaxValX_type, char, ::xsd::cxx::tree::schema_type::double_ > SimPerfCurve_MaxValX_traits;
 
         const SimPerfCurve_MaxValX_optional&
@@ -335,7 +335,7 @@ namespace schema
         // SimPerfCurve_InputUnitTypeForX
         //
         typedef ::xml_schema::string SimPerfCurve_InputUnitTypeForX_type;
-        typedef ::xsd::cxx::tree::optional< SimPerfCurve_InputUnitTypeForX_type > SimPerfCurve_InputUnitTypeForX_optional;
+        typedef ::xsd::cxx::tree::optional< SimPerfCurve_InputUnitTypeForX_type, false > SimPerfCurve_InputUnitTypeForX_optional;
         typedef ::xsd::cxx::tree::traits< SimPerfCurve_InputUnitTypeForX_type, char > SimPerfCurve_InputUnitTypeForX_traits;
 
         const SimPerfCurve_InputUnitTypeForX_optional&
@@ -356,7 +356,7 @@ namespace schema
         // SimPerfCurve_OutputUnitType
         //
         typedef ::xml_schema::string SimPerfCurve_OutputUnitType_type;
-        typedef ::xsd::cxx::tree::optional< SimPerfCurve_OutputUnitType_type > SimPerfCurve_OutputUnitType_optional;
+        typedef ::xsd::cxx::tree::optional< SimPerfCurve_OutputUnitType_type, false > SimPerfCurve_OutputUnitType_optional;
         typedef ::xsd::cxx::tree::traits< SimPerfCurve_OutputUnitType_type, char > SimPerfCurve_OutputUnitType_traits;
 
         const SimPerfCurve_OutputUnitType_optional&
@@ -377,7 +377,7 @@ namespace schema
         // SimPerfCurve_Coef_3_X_2
         //
         typedef ::xml_schema::double_ SimPerfCurve_Coef_3_X_2_type;
-        typedef ::xsd::cxx::tree::optional< SimPerfCurve_Coef_3_X_2_type > SimPerfCurve_Coef_3_X_2_optional;
+        typedef ::xsd::cxx::tree::optional< SimPerfCurve_Coef_3_X_2_type, true > SimPerfCurve_Coef_3_X_2_optional;
         typedef ::xsd::cxx::tree::traits< SimPerfCurve_Coef_3_X_2_type, char, ::xsd::cxx::tree::schema_type::double_ > SimPerfCurve_Coef_3_X_2_traits;
 
         const SimPerfCurve_Coef_3_X_2_optional&
@@ -395,7 +395,7 @@ namespace schema
         // SimPerfCurve_Coef_4_X_3
         //
         typedef ::xml_schema::double_ SimPerfCurve_Coef_4_X_3_type;
-        typedef ::xsd::cxx::tree::optional< SimPerfCurve_Coef_4_X_3_type > SimPerfCurve_Coef_4_X_3_optional;
+        typedef ::xsd::cxx::tree::optional< SimPerfCurve_Coef_4_X_3_type, true > SimPerfCurve_Coef_4_X_3_optional;
         typedef ::xsd::cxx::tree::traits< SimPerfCurve_Coef_4_X_3_type, char, ::xsd::cxx::tree::schema_type::double_ > SimPerfCurve_Coef_4_X_3_traits;
 
         const SimPerfCurve_Coef_4_X_3_optional&

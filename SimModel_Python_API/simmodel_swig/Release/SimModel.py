@@ -590,6 +590,9 @@ class SimModel(base._type):
     def SimParameterizedProfileDef_ParameterizedProfile_Rectangle(self, *args):
         return _SimModel.SimModel_SimParameterizedProfileDef_ParameterizedProfile_Rectangle(self, *args)
 
+    def SimPerformanceCurve_Mathematical_Cubic(self, *args):
+        return _SimModel.SimModel_SimPerformanceCurve_Mathematical_Cubic(self, *args)
+
     def SimPerson_Person_Default(self, *args):
         return _SimModel.SimModel_SimPerson_Person_Default(self, *args)
 

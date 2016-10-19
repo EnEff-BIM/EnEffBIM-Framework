@@ -50,7 +50,7 @@
 #include <xsd/cxx/config.hxx>
 
 #if (XSD_INT_VERSION != 4000000L)
-#error XSD runtime version mismatch
+//#error XSD runtime version mismatch
 #endif
 
 #include <xsd/cxx/pre.hxx>
@@ -257,7 +257,7 @@ namespace schema
   {
     namespace ResourcesGeometry
     {
-      class SimAnalyticalRepresentationItem: public ::schema::simxml::SimModelCore::SimRepresentationItem
+      class __declspec(dllexport) SimAnalyticalRepresentationItem: public ::schema::simxml::SimModelCore::SimRepresentationItem
       {
         public:
         // Constructors.
