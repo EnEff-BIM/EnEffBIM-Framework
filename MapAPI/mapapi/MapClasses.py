@@ -90,6 +90,7 @@ import SimInternalLoad_People_Default
 import SimInternalLoad_Lights_Default
 import SimController_ZoneControlTemperature_Thermostat
 import SimControlScheme_SetpointScheme_SingleHeating
+import SimPerformanceCurve_Mathematical_Cubic
 
 from SimModel_Translator import SimTranslator
 
