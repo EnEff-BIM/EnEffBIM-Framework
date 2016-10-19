@@ -1,0 +1,93 @@
+<%
+def projectdescription(MapData):
+    return " The Project was created using a mako template.\n The information comes originally from " + " and ".join(MapData.simxml_file) + ". \n The used library is: " + str(MapData.used_library)+ "."
+
+def printproject(pro):
+    com_parlist=[]
+    for com in pro.hvac_components:
+        com_parlist.append(printcomponent(com))
+    for com in pro.mod_components:
+        com_parlist.append(printcomponent(com)) 		
+    return com_parlist
+	
+def printcomponent(com):
+    parlist=[]
+    for par in com.parameters:
+        if par != com.parameters[-1]:		
+            parlist.append(printparameter(par)+",")
+        elif com.records:
+            parlist.append(printparameter(par)+",")
+        else:
+            parlist.append(printparameter(par)+")")		
+    for rec in com.records:
+        parlist.append(rec.name+"="+rec.record_location+"(")
+        for par in rec.parameters:
+            if par != rec.parameters[-1]:		
+                parlist.append(printparameter(par)+",")
+            elif rec != com.records[-1]:
+                parlist.append(printparameter(par)+"),")
+            else:
+                parlist.append(printparameter(par)+"))")
+    if com.parameters or com.records:
+        header = str(com.target_location) + " " + str(com.target_name) + "("
+    else:
+        header = str(com.target_location) + " " + str(com.target_name) 
+    return parlist,header		
+
+def printparameter(par):
+    if isinstance(par.value,list):
+        if isinstance(par.value[0],tuple):
+            aux=[]		
+            for j in range(0,len(par.value)):
+                aux2 = par.value[j]			
+                aux.append(",".join(str(elem) for elem in aux2))		
+            return par.name+"=["+";".join(aux)+"]" 		
+        else:
+            return par.name+"={"+",".join(str(elem) for elem in par.value)+"}"            		
+    else:
+        return par.name+"="+str(par.value)	
+%>
+
+model CoTeTo_${MapData.project_name}
+${projectdescription(MapData)}
+
+%for myComp in MapData.hvac_components:
+  <%param_section,header = printcomponent(myComp)%>
+  ${header}
+  %for j in range(0,len(param_section)):
+    ${param_section[j]} 
+  %endfor
+%endfor
+
+%for myComp in MapData.mod_components:
+  <%param_section,header = printcomponent(myComp)%>
+  ${header}
+  %for j in range(0,len(param_section)):
+    ${param_section[j]} 
+  %endfor
+%endfor
+
+%for myBuilding in MapData.buildings:
+  %for myZone in myBuilding.thermal_zones:
+  <%param_section,header = printcomponent(myZone)%>
+  ${header}
+    %for j in range(0,len(param_section)):
+    ${param_section[j]} 
+    %endfor
+  "${myZone.sim_ref_id}"
+  %endfor
+%endfor
+
+equation
+% for MyCon in MapData.connections:
+  connect(${MyCon.connector_a.parent.target_name}.${MyCon.connector_a.name}, ${MyCon.connector_b.parent.target_name}.${MyCon.connector_b.name});
+% endfor
+
+annotation(
+  Documentation(
+    info="<html>
+        used xml file was ${MapData.simxml_file}
+      </html>")
+);
+
+end CoTeTo_${MapData.project_name};
