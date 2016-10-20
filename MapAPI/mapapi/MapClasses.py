@@ -462,7 +462,7 @@ class MapBuilding(MoObject):
         '''instantiates the SimModel topology connections
         '''
         for a in self.project.hvac_components:
-            if a.connected_in and a.connected_out:
+            if (a.connected_in and a.connected_out):
                 for b in a.connected_in:
                     for c in self.project.hvac_components:
 
