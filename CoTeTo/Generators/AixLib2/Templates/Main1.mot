@@ -22,7 +22,7 @@ def creategraphml(MapData):
     #nx.draw(G,with_labels=True)
 	
 def projectdescription(MapData):
-    return "The Project was created using a mako template.\n The information comes originally from " + " and ".join(MapData.simxml_file) + ". \n The used library is: " + str(MapData.used_library)+ "."
+	return ""
 
 def printproject(pro):
     com_parlist=[]
