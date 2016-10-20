@@ -7,7 +7,10 @@ import importlib
 import base 
 
 def importSwigApis():
-    """The SimModel classes are loaded. It gives access to the properties defined within the classes. Otherwise one will have SwigPyObjects!"""
+    """The SimModel classes are loaded.It gives access to the properties
+    defined within the classes. Otherwise one will have SwigPyObjects!.
+    help: use dir /b /a-d > filenames.txt"""
+    import base
     import SimAddress_Postal_Default
     import SimAppLibraryDefault_AppLibraryDefault_GlobalLibrary
     import SimAppObjNameDefaultDistributionSystemHvacChilledWaterLoop
@@ -80,6 +83,8 @@ def importSwigApis():
     import SimFlowEnergyTransfer_ConvectiveHeater_Radiant_Water
     import SimFlowEnergyTransfer_ConvectiveHeater_Water
     import SimFlowFitting_Default_Default
+    #no module named: import SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop
+    #no module named: import SimFlowFitting_FlowElementProxy_SupplyProxy_AirLoop
     import SimFlowFitting_Mixer_DemandProxyMixerWater
     import SimFlowFitting_Splitter_DemandProxySplitterWater
     import SimFlowMover_Pump_VariableSpeedReturn
@@ -133,8 +138,8 @@ def importSwigApis():
     import SimMaterial_OpaqueMaterial_AirGap
     import SimMaterial_OpaqueMaterial_Default
     import SimModel
-    import SimModelRepresentationContext_GeometricRepresentationContext_Default	
-    #import SimModelRepresentationContextGeometricRepresentationSubCon #Error -> "No model named SimModelRepresentationContextGeometricRepresentationContex"
+    # No module named ... RepresentationContex import SimModelRepresentationContextGeometricRepresentationSubCon
+    import SimModelRepresentationContext_GeometricRepresentationContext_Default
     import SimModel_Hierachy
     import SimModel_Mapping
     import SimModel_PyCallBack
@@ -149,7 +154,8 @@ def importSwigApis():
     import SimOrganization_Organization_Default
     import SimOwnerHistory_Default_Default
     import SimParameterizedProfileDef_ParameterizedProfile_Rectangle
-    #import SimPersonAndOrganization_PersonAndOrganization_Default Error: "DLL load failed: Die angegebene Prozedur wurde nicht gefunden"
+    import SimPerformanceCurve_Mathematical_Cubic
+    #Dll load failed import SimPersonAndOrganization_PersonAndOrganization_Default
     import SimPerson_Person_Default
     import SimPlacement_Axis2Placement2D_Default
     import SimPlacement_Axis2Placement3D_Default
@@ -158,7 +164,7 @@ def importSwigApis():
     import SimRepresentationMap_RepresentationMap_Default
     import SimSensor_TemperatureSensor_DryBulb
     import SimShapeRepresentation_ShapeRepresentation_Default
-    import SimSimulationConfiguration_SimulationConfiguration_Default 
+    import SimSimulationConfiguration_SimulationConfiguration_Default
     import SimSimulationParameters_HvacDesign_WaterLoopSizing
     import SimSite_BuildingSite_Default
     import SimSIUnitType_SiUnit_Default
