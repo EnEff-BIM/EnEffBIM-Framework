@@ -669,7 +669,8 @@ class MapComponent(MoObject):
                         for k in range(connection_parent.size()):
 
                             if connection_parent[k].ClassType() == \
-                                    "SimDistributionPort_HotWaterFlowPort_Water_In":
+                                    "SimDistributionPort_HotWaterFlowPort_Water_In" or connection_parent[k].ClassType()== \
+                                    "SimDistributionPort_HotWaterFlowPort_Water_InOrOut":
                                 inlet_parent = connection_parent[k].getParentList()
                                 for h in range(inlet_parent.size()):
                                     if inlet_parent[h].ClassType() != \
@@ -685,26 +686,26 @@ class MapComponent(MoObject):
                         connection_parent = outlet_child[j].getParentList()
                         for k in range(connection_parent.size()):
                             if connection_parent[k].ClassType() == \
-                                    "SimDistributionPort_HotWaterFlowPort_Water_Out":
+                                    "SimDistributionPort_HotWaterFlowPort_Water_Out" or connection_parent[k].ClassType()== \
+                                    "SimDistributionPort_HotWaterFlowPort_Water_InOrOut":
                                 outlet_parent = connection_parent[k].getParentList()
                                 for h in range(outlet_parent.size()):
                                     if outlet_parent[h].ClassType != "SimConnection_HotWaterFlow_Default":
                                         self.connected_out.append(outlet_parent[h])
 
             elif comp_child[i].ClassType() == \
-                    "SimDistributionPort_HotWaterFlowPort_Water_InOrOut" and \
-                    i == 0:
+                    "SimDistributionPort_HotWaterFlowPort_Water_InOrOut":
                 outlet_child = comp_child[i].getChildList()
                 for j in range(outlet_child.size()):
                     if outlet_child[j].ClassType() == "SimConnection_HotWaterFlow_Default":
                         connection_parent = outlet_child[j].getParentList()
                         for k in range(connection_parent.size()):
                             if connection_parent[k].ClassType() == \
-                                    "SimDistributionPort_HotWaterFlowPort_Water_InOrOut":
+                                    "SimDistributionPort_HotWaterFlowPort_Water_InOrOut" and connection_parent[k].getSimModelObject().RefId() != comp_child[i].getSimModelObject().RefId():
                                 inlet_parent = connection_parent[k].getParentList()
                                 for h in range(inlet_parent.size()):
                                     if inlet_parent[h].ClassType() != \
-                                            "SimConnection_HotWaterFlow_Default" and comp_child.size() > 1:
+                                            "SimConnection_HotWaterFlow_Default" and comp_child.size() > 1 and inlet_parent[h].getSimModelObject().RefId != self.sim_ref_id:
                                         self.connected_in.append(inlet_parent[h])
                                         for x in range(comp_child.size()):
                                             if comp_child[x].ClassType() ==\
@@ -725,8 +726,8 @@ class MapComponent(MoObject):
                                                                         return
                                             else:
                                                 pass
-                                    elif inlet_parent[h].ClassType != \
-                                            "SimConnection_HotWaterFlow_Default":
+                                    elif inlet_parent[h].ClassType() != \
+                                            "SimConnection_HotWaterFlow_Default" and inlet_parent[h].getSimModelObject().RefId != self.sim_ref_id:
                                         self.connected_in.append(inlet_parent[h])
                                         return
 
