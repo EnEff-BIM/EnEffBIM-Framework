@@ -13,7 +13,7 @@ class ExpansionVessel(MapHierarchy.MapComponent):
     """
 
     def init_me(self):
-        self.add_parameter(name="Medium", value="SimpleWater")
+        self.add_parameter(name="replaceable package Medium", value="AixLib.Media.Water")
         self.port_a = self.add_connector("port_a", "FluidPort")
 
     def mapp_me(self):
