@@ -358,8 +358,10 @@ class MapProject(object):
         libSimModelAPI"""
         self.translator = SimTranslator()
         self.sim_hierarchy = self.translator.getSimHierarchy()
-        #load_sim = self.translator.loadSimModel(simxml_file)
-        load_sim = self.translator.loadSimModel(simxml_file[0], simxml_file[1])
+        if isinstance(simxml_file,list) or isinstance(simxml_file,tuple):    
+            load_sim = self.translator.loadSimModel(simxml_file[0], simxml_file[1])
+        else:
+            load_sim = self.translator.loadSimModel(simxml_file)                        
         self.sim_mapping = self.translator.getSimMappedData(mapping_file)
         mapped_list = self.sim_mapping.getMappedComponentList()
         self.mapped_components = {}
@@ -762,8 +764,8 @@ class MapComponent(MoObject):
         self.add_parameter(name="m_flow_small",
                            value=0.01)
         if medium == "Water":
-            self.add_parameter(name="replacable package Medium",
-                               value="SimpleWater")
+            self.add_parameter(name="replaceable package Medium",
+                               value="AixLib.Media.Water")
         else:
             pass
 
