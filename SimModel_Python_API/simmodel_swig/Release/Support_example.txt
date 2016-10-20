@@ -30,3 +30,33 @@ ID0LMbjl8XfFaui1YxJs_D1v (SimFlowSegment_Pipe_Indoor) declared as Randoms_D1vpip
 ID0LMbjl8XfFaui1YxJs_D1y (SimFlowSegment_Pipe_Indoor) declared as Randoms_D1ypipe in loop
 ID0LMbjl8XfFaui1YxJs_D1o (SimFlowSegment_Pipe_Indoor) declared as Randoms_D1opipe in loop 
 ID0LMbjl8XfFaui1YxJs_D66 (SimFlowPlant_Boiler_BoilerHotWater) declared as setTemp_Randoms_D66boiler in loop
+
+
+Randoms_D1Opipe -- Randoms_D1Wpipe -- Randoms_D1dpipe
+
+Randoms_D1Wpipe
+	InPort: ID3BdZR7tEf6zAVU_ULydQTs
+		SourcePort: ID3BdZR7tEf6zAVU_ULydQTs
+		TargetPort: ID0AC1ggreb818c885BxhHn0
+	OutPort: ID1Dk1wdTpP9NQvmiRkaZ_pT
+		SourcePort: ID22cPssZX11hMkaVaeK0rO
+		TargetPort: ID1Dk1wdTpP9NQvmiRkaZ_pT	
+
+Randoms_D1dpipe
+	InPort: ID22cPssZX11hMkaVaeK0rO
+		SourcePort: ID22cPssZX11hMkaVaeK0rO
+		TargetPort: ID1Dk1wdTpP9NQvmiRkaZ_pT
+	OutPort: ID0pfczDFH56FBjyU4B4Tu7q
+		SourcePort: ID0vdMh5TyD5qgqUP5WkfiUW
+		TargetPort: ID0pfczDFH56FBjyU4B4Tu7q
+	OutPort: ID3p76r9APPEO9afc_GmiX7Z
+		SourcePort: ID35gmfocYDCGOAS24WQBzzy
+		TargetPort: ID3p76r9APPEO9afc_GmiX7Z
+		
+Randoms_D1Opipe (ID0LMbjl8XfFaui1YxJs_D1O)
+	InPort: ID3XmdSRzzv3lB8Tiv_ud98S
+		SourcePort: ID3XmdSRzzv3lB8Tiv_ud98S
+		TargetPort: ID2bCGVod56K8WawYKqCjA
+	OutPort: ID0AC1ggreb818c885BxhHn0
+		SourcePort: ID3BdZR7tEf6zAVU_ULydQTs
+		TargetPort: ID0AC1ggreb818c885BxhHn0
