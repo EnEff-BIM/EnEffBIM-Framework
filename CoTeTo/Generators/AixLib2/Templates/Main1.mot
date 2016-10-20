@@ -18,7 +18,7 @@ def creategraphml(MapData):
         tup = (MyCon.connector_a.parent.target_name,MyCon.connector_b.parent.target_name)		
         listofedges.append(tup)		
     G.add_edges_from(listofedges)
-    nx.write_graphml(G,"CoTeTo_"+MapData.project_name".graphml")
+    nx.write_graphml(G,"CoTeTo_"+MapData.project_name+".graphml")
     #nx.draw(G,with_labels=True)
 	
 def projectdescription(MapData):
