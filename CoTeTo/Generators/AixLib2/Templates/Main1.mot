@@ -1,4 +1,26 @@
 <%
+def creategraphml(MapData):
+    import networkx as nx
+    G=nx.Graph()
+    listofnodes = []
+    for x in MapData.hvac_components:
+        listofnodes.append(x.target_name)	
+    for x in MapData.mod_components:
+        listofnodes.append(x.target_name)		
+    for x in MapData.buildings:
+        for myZone in x.thermal_zones:	
+            listofnodes.append(myZone.target_name)		
+    G.add_nodes_from(listofnodes)
+    for node in listofnodes:
+        G.node[node]['Text']=node	
+    listofedges = []
+    for MyCon in MapData.connections:
+        tup = (MyCon.connector_a.parent.target_name,MyCon.connector_b.parent.target_name)		
+        listofedges.append(tup)		
+    G.add_edges_from(listofedges)
+    nx.write_graphml(G,"CoTeTo_"+MapData.project_name".graphml")
+    #nx.draw(G,with_labels=True)
+	
 def projectdescription(MapData):
     return "The Project was created using a mako template.\n The information comes originally from " + " and ".join(MapData.simxml_file) + ". \n The used library is: " + str(MapData.used_library)+ "."
 
@@ -47,6 +69,8 @@ def printparameter(par):
     else:
         return par.name+"="+str(par.value)	
 %>
+
+<%creategraphml(MapData)%>
 
 model CoTeTo_${MapData.project_name}
 ${projectdescription(MapData)}
