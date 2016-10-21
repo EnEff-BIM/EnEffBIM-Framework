@@ -43,20 +43,74 @@ Randoms_D1Wpipe
 		TargetPort: ID1Dk1wdTpP9NQvmiRkaZ_pT	
 
 Randoms_D1dpipe
-	InPort: ID22cPssZX11hMkaVaeK0rO
+	InPort: ID22cPssZX11hMkaVaeK0rO (Water_Out)
 		SourcePort: ID22cPssZX11hMkaVaeK0rO
 		TargetPort: ID1Dk1wdTpP9NQvmiRkaZ_pT
-	OutPort: ID0pfczDFH56FBjyU4B4Tu7q
-		SourcePort: ID0vdMh5TyD5qgqUP5WkfiUW
+	OutPort: ID0pfczDFH56FBjyU4B4Tu7q (Water_In)
+		SourcePort: ID0vdMh5TyD5qgqUP5WkfiUW 
 		TargetPort: ID0pfczDFH56FBjyU4B4Tu7q
-	OutPort: ID3p76r9APPEO9afc_GmiX7Z
+	OutPort: ID3p76r9APPEO9afc_GmiX7Z  (Water_InOrOut)
 		SourcePort: ID35gmfocYDCGOAS24WQBzzy
 		TargetPort: ID3p76r9APPEO9afc_GmiX7Z
 		
 Randoms_D1Opipe (ID0LMbjl8XfFaui1YxJs_D1O)
-	InPort: ID3XmdSRzzv3lB8Tiv_ud98S
+	InPort: ID3XmdSRzzv3lB8Tiv_ud98S (Water_Out)
 		SourcePort: ID3XmdSRzzv3lB8Tiv_ud98S
 		TargetPort: ID2bCGVod56K8WawYKqCjA
-	OutPort: ID0AC1ggreb818c885BxhHn0
+	OutPort: ID0AC1ggreb818c885BxhHn0 (Water_In)
 		SourcePort: ID3BdZR7tEf6zAVU_ULydQTs
 		TargetPort: ID0AC1ggreb818c885BxhHn0
+		
+---------------------------------------------------------------------------		
+		
+From what  I see InOrPort:
+If Id = SourcePort --> We have an InPort
+If Id = TargetPort --> We have an OutPort
+
+(ID0LMbjl8XfFaui1YxJs_D1x)
+	ID34vMM6wnjE7unBCQ1tZmGu (Water_InOrOut)
+		SourcePort: ID34vMM6wnjE7unBCQ1tZmGu
+		TargetPort: ID1E1u2obBL6gR1EmBQNmuG
+	ID1ZwXL01SP6LgPm0ufh5D5q (Water_InOrOut)
+		SourcePort: ID1ZwXL01SP6LgPm0ufh5D5q
+		TargetPort: ID0d4HNNeu51MxTsgicXECgc
+		
+---------------------------------------------------------------------------		
+BOILER (ID0LMbjl8XfFaui1YxJs_D66)
+	InPort: ID0fjWAxxg1F4vVZuvXm8O85 (Water_Out)
+		SourcePort: ID0fjWAxxg1F4vVZuvXm8O85
+		TargetPort: ID1T_nbEbPn98QDe1d1YDBg6
+	OutPort: ID13UhRNCnX1rAwEBMyxljsq (Water_In)
+		SourcePort: ID3zs117w1n5lwSRidPGhKht
+		TargetPort: ID13UhRNCnX1rAwEBMyxljsq
+		
+Boiler connected to ID0LMbjl8XfFaui1YxJs_D6D & ID0LMbjl8XfFaui1YxJs_D1y
+
+ID0LMbjl8XfFaui1YxJs_D6D
+	InPort: ID3zs117w1n5lwSRidPGhKht (Water_Out)
+		SourcePort: ID3zs117w1n5lwSRidPGhKht
+		TargetPort: ID13UhRNCnX1rAwEBMyxljsq
+	OutPort: ID1a5meudDCPOBQD1vrPCFy (Water_In)
+		SourcePort: ID3mJZcz594IfdQpbAKBQkZ
+		TargetPort: ID1a5meudDCPOBQD1vrPCFy
+		
+ID0LMbjl8XfFaui1YxJs_D1y
+	InPort: ID2EuOFRboL2y9bL6adm_e5r (Water_Out)
+		SourcePort: ID2EuOFRboL2y9bL6adm_e5r
+		TargetPort: ID1vp7wk2LL5Q8745mWkelb
+	OutPort: ID1T_nbEbPn98QDe1d1YDBg6 (Water_In)
+		SourcePort: ID0fjWAxxg1F4vVZuvXm8O85
+		TargetPort: ID1T_nbEbPn98QDe1d1YDBg6	
+
+ID0LMbjl8XfFaui1YxJs_D1_		
+	InPort: ID2XrUSZY14oBAxy3nTDwLW (Water_Out)
+		SourcePort: ID2XrUSZY14oBAxy3nTDwLW
+		TargetPort: ID0Wqjvtg_L4gzwbFcZyfxD
+	OutPort: ID1vp7wk2LL5Q8745mWkelb (Water_In)
+		SourcePort: ID2EuOFRboL2y9bL6adm_e5r
+		TargetPort: ID1vp7wk2LL5Q8745mWkelb		
+		
+From ObtainPipeInfo.py
+
+('ID0LMbjl8XfFaui1YxJs_D1_', 'ID0LMbjl8XfFaui1YxJs_D1y')
+('ID0LMbjl8XfFaui1YxJs_D66', 'ID0LMbjl8XfFaui1YxJs_D1y')
