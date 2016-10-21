@@ -19,7 +19,7 @@ class ThermalZone(MapHierarchy.MapThermalZone):
         self.infiltrationTemperature = self.add_connector(
                                         name="infiltrationTemperature",
                                         type="Real")
-        self.ventilationRate = self.add_connector(name="ventilationRate ",
+        self.infiltrationRate = self.add_connector(name="infiltrationRate ",
                                                   type="Real")
         self.internalGains = self.add_connector(name="internalGains",
                                                 type="Real",
@@ -56,7 +56,7 @@ class ThermalZone(MapHierarchy.MapThermalZone):
         const.init_me()
         const.target_name = "infil" + "_" + self.target_name
         const.add_parameter('k', rate)
-        const.add_connection(const.y, self.ventilationRate)
+        const.add_connection(const.y, self.infiltrationRate)
         self.project.mod_components.append(const)
 
     def internal_loads(self):
