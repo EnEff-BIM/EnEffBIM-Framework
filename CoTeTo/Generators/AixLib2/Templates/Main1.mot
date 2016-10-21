@@ -1,21 +1,23 @@
 <%
 def creategraphml(MapData):
     import networkx as nx
-    G=nx.Graph()
-    listofnodes = []
+    G=nx.DiGraph()
+    node_and_attribute = []
     for x in MapData.hvac_components:
-        listofnodes.append(x.target_name)	
+        node_and_attribute.append([x.target_location,x.target_name])	
     for x in MapData.mod_components:
-        listofnodes.append(x.target_name)		
+        node_and_attribute.append([x.target_location,x.target_name])		
     for x in MapData.buildings:
         for myZone in x.thermal_zones:	
-            listofnodes.append(myZone.target_name)		
+            node_and_attribute.append([myZone.target_location,myZone.target_name])
+	listofnodes = [elem[1] for elem in node_and_attribute]	
     G.add_nodes_from(listofnodes)
-    for node in listofnodes:
-        G.node[node]['Text']=node	
+    for node in node_and_attribute:
+        G.node[node[1]]['Text']=node[1]
+        G.node[node[1]]['Description']= node[0] if isinstance(node[0],str) else 'None'
     listofedges = []
     for MyCon in MapData.connections:
-        tup = (MyCon.connector_a.parent.target_name,MyCon.connector_b.parent.target_name)		
+        tup = (MyCon.connector_b.parent.target_name,MyCon.connector_a.parent.target_name)		
         listofedges.append(tup)		
     G.add_edges_from(listofedges)
     nx.write_graphml(G,"CoTeTo_"+MapData.project_name+".graphml")
