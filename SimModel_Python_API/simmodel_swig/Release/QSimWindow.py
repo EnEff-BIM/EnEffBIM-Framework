@@ -617,7 +617,7 @@ class MainWidget(QtGui.QWidget):
         """ 	
         if len(self.Filename2) >= 2:
             #The order of the files is actually important. UseCase1_1_... should be in the first place, and 1.1_Architecture+HVAC... in the second place. 		
-            print("Filename[0]: ", self.Filename2[0], " should be the zone and, \nFilename[1]: ", self.Filename2[1], "the HVAC \n")			
+            #print("Filename[0]: ", self.Filename2[0], " should be the zone and, \nFilename[1]: ", self.Filename2[1], "the HVAC \n")			
             return self.translator.loadSimModel(self.Filename2[0],self.Filename2[1])			
         else:
             return self.translator.loadSimModel(self.Filename2[0])		
@@ -646,7 +646,7 @@ class MainWidget(QtGui.QWidget):
         #print ("os.getcwd: ",os.getcwd(), "\n")
         #print("self.Mapping: - - - - - - -> ", str(type(self.Mapping)))		
         self.simxml_mapped_data = self.translator.getSimMappedData(self.Mapping)        
-        print("simxml_mapped_data type: ", str(type(self.simxml_mapped_data)))
+        #print("simxml_mapped_data type: ", str(type(self.simxml_mapped_data)))
         #print("simxml_mapped_data: size:", self.simxml_mapped_data,"\n")		
         self.sim_hierarchy = self.translator.getSimHierarchy()		
         self.nodeList = self.sim_hierarchy.getHierarchyNodeList()
