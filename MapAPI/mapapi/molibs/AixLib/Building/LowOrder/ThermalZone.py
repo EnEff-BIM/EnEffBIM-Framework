@@ -19,7 +19,7 @@ class ThermalZone(MapHierarchy.MapThermalZone):
         self.infiltrationTemperature = self.add_connector(
                                         name="infiltrationTemperature",
                                         type="Real")
-        self.ventilationRate = self.add_connector(name="ventilationRate ",
+        self.infiltrationRate = self.add_connector(name="infiltrationRate ",
                                                   type="Real")
         self.internalGains = self.add_connector(name="internalGains",
                                                 type="Real",
@@ -56,7 +56,7 @@ class ThermalZone(MapHierarchy.MapThermalZone):
         const.init_me()
         const.target_name = "infil" + "_" + self.target_name
         const.add_parameter('k', rate)
-        const.add_connection(const.y, self.ventilationRate)
+        const.add_connection(const.y, self.infiltrationRate)
         self.project.mod_components.append(const)
 
     def internal_loads(self):
@@ -138,28 +138,40 @@ class ThermalZone(MapHierarchy.MapThermalZone):
         rec.add_parameter(name="epsi", value=thermal_zone.ir_emissivity_inner_ow)
         rec.add_parameter(name="aowo", value=thermal_zone.solar_absorp_ow)
         rec.add_parameter(name="epsw", value=thermal_zone.ir_emissivity_win)
-        # rec.add_parameter(name="g", value=thermal_zone.g) tbd
-        # rec.add_parameter(name="Imax", value=thermal_zone.as) tbd
-        # rec.add_parameter(name="n", value=thermal_zone.n)
+        rec.add_parameter(name="g", value=thermal_zone.weighted_g_value)
+        rec.add_parameter(name="n", value=len(thermal_zone.tilt_wall))
         rec.add_parameter(name="weightfactorswall", value=thermal_zone.weightfactor_ow)
         rec.add_parameter(name="weightfactorswindow",
                           value=thermal_zone.weightfactor_win)
+        # AixLib weightfactor ground can't be multidimensional (different in
+        # Annex thats why it is a list)
         rec.add_parameter(name="weightfactorground",
-                          value=thermal_zone.weightfactor_ground)
+                          value=thermal_zone.weightfactor_ground[0])
         # rec.add_parameter(name="temperatureground",
-                         # value=thermal_zone.temperatureground) tbd
+                         # value=thermal_zone.temperatureground) ???
         rec.add_parameter(name="Aw", value=thermal_zone.window_areas)
-        # rec.add_parameter(name="UWin", value=thermal_zone.ua_value_win) tbd
-        # rec.add_parameter(name="gsunblind", value=thermal_zone.asd)
-        # rec.add_parameter(name="withInnerwalls",
-        # value=thermal_zone.) tbd
-        # rec.add_parameter(name="withWindows", value=thermal_zone.)
-        # rec.add_parameter(name="withOuterwalls", value=thermal_zone.)
-        # rec.add_parameter(name="splitfac", value=thermal_zone.)
+        rec.add_parameter(name="UWin",
+                          value=thermal_zone.ua_value_win/thermal_zone.area_win)
+        rec.add_parameter(name="gsunblind", value=thermal_zone.g_sunblind_list)
+        if thermal_zone.inner_walls:
+            value_help=True
+        else:
+            value_help=False
+        rec.add_parameter(name="withInnerwalls", value=value_help)
+        if thermal_zone.windows:
+            value_help=True
+        else:
+            value_help=False
+        rec.add_parameter(name="withWindows", value=value_help)
+        if thermal_zone.outer_walls:
+            value_help=True
+        else:
+            value_help=False
+        rec.add_parameter(name="withOuterwalls", value=value_help)
         rec.add_parameter(name="RWin", value=thermal_zone.r1_win)
         rec.add_parameter(name="alphaConvWinInner", value=thermal_zone.alpha_conv_inner_win)
         rec.add_parameter(name="alphaConvWinOuter", value=thermal_zone.alpha_conv_outer_win)
-        # rec.add_parameter(name="awin", value=thermal_zone.awin) tbd
+        rec.add_parameter(name="awin", value=thermal_zone.solar_absorp_win)
         rec.add_parameter(name="orientationswallshorizontal",
                           value=thermal_zone.orientation_wall)
 
