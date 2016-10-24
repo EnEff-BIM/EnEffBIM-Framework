@@ -491,6 +491,26 @@ class MapBuilding(MoObject):
                         if c.sim_ref_id == b.getSimModelObject().RefId():
                             a.add_connection(a.port_a, c.port_a)
 
+        # two connections between two objects with fluid ports and port
+        # dimension 1 can't have two connections
+        drop_con = []
+        for test in self.project.connections:
+            if test.type == "FluidPort" and test.connector_a.dimension == 1 \
+                    and test.connector_b.dimension == 1:
+                for lo in self.project.connections:
+                    if test.connector_a.parent == lo.connector_b.parent and \
+                        test.connector_b.parent == lo.connector_a.parent:
+                        # print("invalid connection")
+                        if test not in drop_con:
+                            drop_con.append(lo)
+
+        for rem_con in drop_con:
+            self.project.connections.remove(rem_con)
+
+
+
+
+
     def instantiate_thermal_zones(self):
         '''Instantiates for each SimSpatialZone_ThermalZone_Default a
         MapThermalZone.
@@ -712,7 +732,8 @@ class MapComponent(MoObject):
                     "SimDistributionPort_HotWaterFlowPort_Water_InOrOut":
                 outlet_child = comp_child[i].getChildList()
                 for j in range(outlet_child.size()):
-                    if outlet_child[j].ClassType() == "SimConnection_HotWaterFlow_Default":
+                    if outlet_child[j].ClassType() == \
+                            "SimConnection_HotWaterFlow_Default":
                         connection_parent = outlet_child[j].getParentList()
                         for k in range(connection_parent.size()):
                             if connection_parent[k].ClassType() == \
@@ -736,15 +757,18 @@ class MapComponent(MoObject):
                                                                 outlet_parent = connection_parent_2[z].getParentList()
                                                                 for w in range(outlet_parent.size()):
                                                                     if outlet_parent[w].ClassType != \
-                                                                            "SimConnection_HotWaterFlow_Default":
+                                                                            "SimConnection_HotWaterFlow_Default" and outlet_parent[w].getSimModelObject().RefId() != self.sim_ref_id:
                                                                         self.connected_out.append(outlet_parent[w])
                                                                         return
+                                                                    else:
+                                                                        pass
                                             else:
                                                 pass
                                     elif inlet_parent[h].ClassType() != \
                                             "SimConnection_HotWaterFlow_Default" and inlet_parent[h].getSimModelObject().RefId != self.sim_ref_id:
                                         self.connected_in.append(inlet_parent[h])
                                         return
+
 
     def create_connection(self, test):
         self.project.connections.append(MapConnection(self,test))
@@ -1223,7 +1247,6 @@ class MapSpaceBoundary(object):
             self.tilt = 0.0
         elif str(self.tilt) == "nan":
             self.tilt = None
-        print(self.tilt)
 
 class MapMaterialLayer(object):
     """Representation of a mapped building element layer
