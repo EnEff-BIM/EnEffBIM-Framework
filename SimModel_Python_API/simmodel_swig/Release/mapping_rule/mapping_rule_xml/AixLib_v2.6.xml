@@ -508,7 +508,7 @@
 	<!-- pressure drop between the two ports [bar]: p.start -->
 	<Property_Map_Gap RefId="ID062">
 		<Description>Pressure drop between the two ports [bar]</Description>
-		<TargetPropertyName>start</TargetPropertyName>
+		<TargetPropertyName>dp_start</TargetPropertyName>
 		<TargetLocation>p</TargetLocation>
 		<DefaultValueNumber>100</DefaultValueNumber>
 	</Property_Map_Gap>
@@ -863,7 +863,6 @@
 		<Description>map a valve into AixLib</Description>
 		<TargetComponentName>simpleValve</TargetComponentName>
 		<TargetLocation>AixLib.Fluid.Actuators.Valves.SimpleValve</TargetLocation>
-		<Property_Map_Gap_Name>ID101</Property_Map_Gap_Name>
 		<Property_Map_Gap_Name>ID102</Property_Map_Gap_Name>
 	</ComponentMappingGroup>
 	<!-- Hysteres mapping for the storage tank -->
