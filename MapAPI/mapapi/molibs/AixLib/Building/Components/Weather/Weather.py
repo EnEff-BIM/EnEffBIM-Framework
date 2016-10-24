@@ -15,6 +15,10 @@ class Weather(MapHierarchy.MapComponent):
 
 
     def mapp_me(self):
+        self.target_location = \
+            "AixLib.Building.Components.Weather.Weather"
+        self.target_name = "weather"
+
         # individual outputs for aixlib
         self.Outop = self.add_parameter(name="Outopt",
                                         value=2)
@@ -59,8 +63,7 @@ class Weather(MapHierarchy.MapComponent):
         rec.add_parameter(name="Azimut",
                           value=self._convert_azimut(teaser_bldg.orientation_bldg))
         rec.add_parameter(name="Tilt",
-                          value=self._convert_azimut(
-                              teaser_bldg.tilt_bldg))
+                          value=teaser_bldg.tilt_bldg)
 
         # apply connections to thermal_zone
 
