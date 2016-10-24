@@ -47,6 +47,8 @@ class ThermalZone(MapHierarchy.MapThermalZone):
         self.infiltration_rate(rate=0.5)
         self.internal_loads()
 
+        self.connect_to_weather(t_prj)
+
     def infiltration_rate(self, rate):
 
         from mapapi.molibs.MSL.Blocks.Sources.Constant import Constant
@@ -175,8 +177,17 @@ class ThermalZone(MapHierarchy.MapThermalZone):
         rec.add_parameter(name="orientationswallshorizontal",
                           value=thermal_zone.orientation_wall)
 
-
-
+    def connect_to_weather(self, teaser_project):
+        from mapapi.molibs.AixLib.Building.Components.Weather.Weather import\
+            Weather
+        we = Weather(self.project,
+                     self.hierarchy_node,
+                     self)
+        teaser_bldg = teaser_project.buildings[0]
+        we.init_me()
+        we.mapp_me()
+        we.connect_to_zone(self, teaser_bldg)
+        self.project.mod_components.append(we)
 
 
 
