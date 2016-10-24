@@ -33,7 +33,7 @@ class ThermalZone(MapHierarchy.MapThermalZone):
     def mapp_me(self):
 
         from teaser.project import Project
-        import teaser.data.input.simmodel_input as t_sim
+        import mapapi.molibs.AixLib.resources.simmodel_teaser as t_sim
 
         t_prj = Project(load_data=False)
 
