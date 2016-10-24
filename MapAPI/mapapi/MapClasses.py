@@ -255,7 +255,11 @@ class MoObject(object):
             self.parameters.append(mapped_prop)
             return mapped_prop
 
-    def add_connection(self, connector_a, connector_b):
+    def add_connection(self,
+                       connector_a,
+                       connector_b,
+                       index_a=None,
+                       index_b=None):
         """This connects the MoObject to another Object
 
         For topology mapping it might be necessary to connect two MoObjects.
@@ -271,6 +275,12 @@ class MoObject(object):
         connector_b : MapConnector
             Connector of the MoObject that is connected
 
+        index_a : index of connector_a
+            default is None, only appicable if MapConnector A has an index
+
+        index_b : index of connector_b
+            default is None, only appicable if MapConnector B has an index
+
         Returns
         ----------
 
@@ -282,11 +292,14 @@ class MoObject(object):
             pass
         else:
             raise ValueError("input_connector is not assigned to MoObject")
-        if connector_a.type == connector_b.type and \
-                connector_a.dimension == connector_b.dimension:
+        if connector_a.type == connector_b.type:
 
-            mapped_con = MapConnection(connector_b,connector_a)
+            mapped_con = MapConnection(connector_a,
+                                       connector_b,
+                                       index_a,
+                                       index_b)
             mapped_con.type = connector_a.type
+
             self.project.connections.append(mapped_con)
 
             return mapped_con
@@ -442,6 +455,8 @@ class MapBuilding(MoObject):
     def __init__(self, project, hierarchy_node):
 
         super(MapBuilding, self).__init__(project, hierarchy_node)
+
+        #self.Longitude = self.hierarchy_node.getSimModelObject().Longitude()
 
         self.project.buildings.append(self)
         self.thermal_zones = []
