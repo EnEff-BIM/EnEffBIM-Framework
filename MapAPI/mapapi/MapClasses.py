@@ -713,9 +713,7 @@ class MapComponent(MoObject):
                 outlet_child = comp_child[i].getChildList()
                 for j in range(outlet_child.size()):
                     if outlet_child[j].ClassType() == \
-                            "SimConnection_HotWaterFlow_Default" and \
-                            comp_child[i].getSimModelObject().RefId() == outlet_child[j].getSimModelObject().SourcePort().getValue():
-
+                            "SimConnection_HotWaterFlow_Default":
                         connection_parent = outlet_child[j].getParentList()
                         for k in range(connection_parent.size()):
                             if connection_parent[k].ClassType() == \
@@ -739,17 +737,18 @@ class MapComponent(MoObject):
                                                                 outlet_parent = connection_parent_2[z].getParentList()
                                                                 for w in range(outlet_parent.size()):
                                                                     if outlet_parent[w].ClassType != \
-                                                                            "SimConnection_HotWaterFlow_Default":
+                                                                            "SimConnection_HotWaterFlow_Default" and outlet_parent[w].getSimModelObject().RefId() != self.sim_ref_id:
                                                                         self.connected_out.append(outlet_parent[w])
                                                                         return
+                                                                    else:
+                                                                        pass
                                             else:
                                                 pass
                                     elif inlet_parent[h].ClassType() != \
                                             "SimConnection_HotWaterFlow_Default" and inlet_parent[h].getSimModelObject().RefId != self.sim_ref_id:
                                         self.connected_in.append(inlet_parent[h])
                                         return
-                    else:
-                        pass
+
 
     def create_connection(self, test):
         self.project.connections.append(MapConnection(self,test))
