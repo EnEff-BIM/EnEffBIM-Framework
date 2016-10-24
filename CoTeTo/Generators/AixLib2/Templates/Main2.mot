@@ -1,0 +1,322 @@
+<%
+##
+## Set surface temperatures as an output of the building model: surTemOut = True
+surTemOut = True
+#surTemOut = False
+
+## Classes for storing the information of the building model instances
+class Construction:
+  def __init__(self, name = "", nLayers = 1, thickness = [], material = []):
+    self.name = name
+    self.nLayers = nLayers
+    self.thickness = thickness
+    self.material = material
+
+class Zone:
+  def __init__(self, name, nElements, volume, height, TSetHeating, TSetCooling, airchange, heatsource):
+    self.name = name
+    self.nElements = nElements
+    self.volume = volume
+    self.height = height
+    self.TSetHeating = TSetHeating
+    self.TSetCooling = TSetCooling
+    self.airchange = airchange
+    self.heatsource = heatsource
+
+class Element:
+  def __init__(self, name, angleDegAzi, angleDegTil, height, width):
+    self.name = name
+    self.angleDegAzi = angleDegAzi
+    self.angleDegTil = angleDegTil
+    self.height = height
+    self.width = width
+
+class ElementOpaque(Element):
+  def __init__(self, name, angleDegAzi, angleDegTil, height, width, constructionData, nInnSur = 0, innerSurfaces = []):
+    Element.__init__(self, name, angleDegAzi, angleDegTil, height, width)
+    self.constructionData = constructionData
+    self.nInnSur = nInnSur
+    self.innerSurfaces = innerSurfaces
+
+class ElementTransparent(Element):
+  def __init__(self, name, angleDegAzi, angleDegTil, height, width):
+    Element.__init__(self, name, angleDegAzi, angleDegTil, height, width)
+
+class ConnectionElementZone:
+  def __init__(self, element, elementPort, zone, zonePort):
+    self.element = element
+    self.elementPort = elementPort
+    self.zone = zone
+    self.zonePort = zonePort
+
+class ConnectionElementAmbient:
+  def __init__(self, element, elementPort, ambientPort):
+    self.element = element
+    self.elementPort = elementPort
+    self.ambientPort = ambientPort
+
+class ConnectionElementSolid:
+  def __init__(self, element, elementPort, solidPort):
+    self.element = element
+    self.elementPort = elementPort
+    self.solidPort = solidPort
+
+class BuildingSystem:
+  def __init__(self, name = "BuildingSystem", location = ""):
+    self.name = name
+    self.location = location
+
+## Definition of the multi-zone building
+##for filename in json_files:
+##  jdata = json_files[filename]
+## Zugriff auf SimModel-API (Low-Level)
+
+## Construction types
+constructions = []
+##for con in jdata['constructions']:
+##  constructions.append(Construction(con['name'],con['nLay'],con['thi'],con['mat']))
+for i in range(1):
+  constructions.append(Construction("ConstructionStandard",3,[0.015,0.2,0.02],["BuildingSystems.HAM.Data.MaterialProperties.Thermal.Masea.HighGradePlaster","BuildingSystems.HAM.Data.MaterialProperties.Thermal.Masea.Concrete","BuildingSystems.HAM.Data.MaterialProperties.Thermal.Masea.ExpandedPolystyrene"]))
+
+## Thermal zones
+zones = []
+#for zone in jdata['zones']:
+#  zones.append(Zone(zone['name'],zone['nEle'],zone['vol'],zone['hei'],zone['TSetHea'],zone['TSetCoo'],zone['ach'],zone['heaSou']))
+for i in range(1):
+  zones.append(Zone("zone_"+str(i),8,1.0,1.0,293.15,298.15,0.5,0.0))
+
+## Opaque elements
+elementsOpaque = []
+#for eleOpa in jdata['elementsOpaque']:
+#  elementsOpaque.append(ElementOpaque(eleOpa['name'],eleOpa['angAzi'],eleOpa['angTil'],eleOpa['hei'],eleOpa['wid'],eleOpa['conDat'],eleOpa['nInnSur'],eleOpa['innSur']))
+for i in range(7):
+  elementsOpaque.append(ElementOpaque("wall_"+str(i),0.0,90.0,1.0,1.0,"ConstructionStandard",0,""))
+
+## Transparent elements
+elementsTransparent = []
+##for eleTra in jdata['elementsTransparent']:
+##  elementsTransparent.append(ElementTransparent(eleTra['name'],eleTra['angAzi'],eleTra['angTil'],eleTra['hei'],eleTra['wid']))
+for i in range(1):
+  elementsTransparent.append(ElementTransparent("window_"+str(i),0.0,90.0,1.0,1.0))
+  
+## Element <-> zone
+conEleZon = []
+## for con in jdata['conEleZon']:
+##  conEleZon.append(ConnectionElementZone(con['ele'],con['elePor'],con['zon'],con['zonPor']))
+for i in range(7):
+  conEleZon.append(ConnectionElementZone("wall_"+str(i),"1","zone_0",str(i+1)))
+for i in range(1):
+  conEleZon.append(ConnectionElementZone("window_"+str(i),"1","zone_0",str(7+i+1)))
+  
+## Element <-> ambient
+conEleAmb = []
+##for con in jdata['conEleAmb']:
+##  conEleAmb.append(ConnectionElementAmbient(con['ele'],con['elePor'],con['ambPor']))
+  
+for i in range(6):
+  conEleAmb.append(ConnectionElementAmbient("wall_"+str(i),"2",str(i+1)))
+for i in range(1):
+  conEleAmb.append(ConnectionElementAmbient("window_"+str(i),"2",str(6+i+1)))
+
+## Element <-> solid ambient
+conEleSol = []
+## for con in jdata['conEleSol']:
+##  conEleSol.append(ConnectionElementSolid(con['ele'],con['elePor'],con['solPor']))
+for i in range(1):
+  conEleSol.append(ConnectionElementSolid("wall_6","2",str(i+1)))
+
+## Building sytem
+buildingSystem = BuildingSystem("OneZone","BuildingSystems.Climate.WeatherDataMeteonorm.WeatherDataFile_Germany_Berlin()")
+%>\
+within;
+model ${buildingSystem.name}
+  "Model of a building with its climate ambient"
+  extends Modelica.Icons.Example;
+
+  % for con in constructions:
+  record ${con.name}
+    extends BuildingSystems.Buildings.Data.Constructions.OpaqueThermalConstruction(
+      nLayers=${con.nLayers},
+      thickness={
+      % for value in con.thickness:
+        ${value}${',' if not loop.last else ''}
+      % endfor
+      },
+      material={
+      % for value in con.material:
+        ${value}()${',' if not loop.last else ''}
+      % endfor
+      });
+  end ${con.name};
+  % endfor
+
+  model Building
+    "Automatically generated multi-zone building model"
+    extends BuildingSystems.Buildings.BaseClasses.BuildingTemplate(
+    nZones = ${len(zones)},
+    surfacesToAmbient(nSurfaces = ${len(conEleAmb)}),
+    nSurfacesSolid = ${len(conEleSol)},
+    surfacesToSolids(nSurfaces = nSurfacesSolid),
+    convectionOnSurfaces = BuildingSystems.HAM.ConvectiveHeatTransfer.Types.Convection.forced,
+    useAirPathes = false,
+    heatSources = true,
+    nHeatSources = ${len(zones)});
+
+    parameter BuildingSystems.Buildings.Data.Constructions.Transparent.HeatProtectionDoubleGlazingUVal14 constructionWindow;
+
+  % for zone in zones:
+    BuildingSystems.Buildings.Zones.ZoneTemplateAirvolumeMixed ${zone.name}(
+      V=${zone.volume},
+      height=${zone.height},
+      nConstructions1=${zone.nElements},
+      heatSources=true,
+      nHeatSources=1);
+  % endfor
+
+  % for ele in elementsOpaque:
+    BuildingSystems.Buildings.Constructions.Walls.WallThermal1DNodes ${ele.name}(
+    % if surTemOut == True:
+      show_TSur = true,
+    % endif
+      redeclare ${ele.constructionData} constructionData,
+      angleDegAzi = ${ele.angleDegAzi},
+      angleDegTil = ${ele.angleDegTil},
+      nInnSur = ${ele.nInnSur}, ${'AInnSur = ' if ele.nInnSur > 0 else ''}${'{' if ele.nInnSur > 0 else ''}${ele.innerSurfaces[0] if ele.nInnSur > 0 else ''}${'}' if ele.nInnSur > 0 else ''}${',' if ele.nInnSur > 0 else ''}
+      height = ${ele.height},
+      width = ${ele.width});
+  % endfor
+
+  % for ele in elementsTransparent:
+    BuildingSystems.Buildings.Constructions.Windows.Window ${ele.name}(
+    % if surTemOut == True:
+      show_TSur = true,
+    % endif
+      angleDegAzi = ${ele.angleDegAzi},
+      angleDegTil = ${ele.angleDegTil},
+      height = ${ele.height},
+      width = ${ele.width},
+      UVal = (1.0 - ${ele.name}.framePortion) * constructionWindow.UValGla + ${ele.name}.framePortion * constructionWindow.UValFra,
+      tauDir0 = constructionWindow.g,
+      tauDif = constructionWindow.g);
+  % endfor
+
+  equation
+    // connections between construction elements and zones
+  % for con in conEleZon:
+    connect(${con.element}.toSurfacePort_${con.elementPort}, ${con.zone}.toConstructionPorts1[${con.zonePort}]);
+  % endfor
+    // connections between construction elements and ambient
+  % for con in conEleAmb:
+    connect(${con.element}.toSurfacePort_${con.elementPort}, surfacesToAmbient.toConstructionPorts[${con.ambientPort}]);
+  % endfor
+    // connections between construction elements and ground
+  % for con in conEleSol:
+    connect(${con.element}.toSurfacePort_${con.elementPort}, surfacesToSolids.toConstructionPorts[${con.solidPort}]);
+  % endfor
+  // Heating set temperature of each thermal zones
+  % for i in range(len(zones)):
+    connect(${zones[i].name}.T_setHeating, T_setHeating[${i+1}]);
+  % endfor
+  // Cooling set temperatures of each thermal zones
+  % for i in range(len(zones)):
+    connect(${zones[i].name}.T_setCooling, T_setCooling[${i+1}]);
+  % endfor
+  // airchange rates of each thermal zones
+  % for i in range(len(zones)):
+    connect(${zones[i].name}.airchange, airchange[${i+1}]);
+  % endfor
+  // ambient temperature of each thermal zones
+  % for i in range(len(zones)):
+    connect(${zones[i].name}.TAirAmb, TAirAmb);
+  % endfor
+  // ambient moisture of each thermal zones
+  % for i in range(len(zones)):
+    connect(${zones[i].name}.xAirAmb, xAirAmb);
+  % endfor
+  // Cooling load of each thermal zones
+  % for i in range(len(zones)):
+    connect(${zones[i].name}.Q_flow_cooling, Q_flow_cooling[${i+1}]);
+  % endfor
+  // Heating load of each thermal zones
+  % for i in range(len(zones)):
+    connect(${zones[i].name}.Q_flow_heating, Q_flow_heating[${i+1}]);
+  % endfor
+  // Radiative heating source of each thermal zones
+  % for i in range(len(zones)):
+    connect(${zones[i].name}.radHeatSourcesPorts[1], radHeatSourcesPorts[${i+1}]);
+  % endfor
+  // Convective heating source of each thermal zones
+  % for i in range(len(zones)):
+    connect(${zones[i].name}.conHeatSourcesPorts[1], conHeatSourcesPorts[${i+1}]);
+  % endfor
+  % if surTemOut == True:
+  // Connections for surface temperatures
+<% i = 1 %>\
+    % for ele in elementsOpaque:
+    connect(${ele.name}.TSur_1, TSur[${i}]);<% i = i + 1 %>
+    connect(${ele.name}.TSur_2, TSur[${i}]);<% i = i + 1 %>
+    % endfor
+    % for ele in elementsTransparent:
+    connect(${ele.name}.TSur_1, TSur[${i}]);<% i = i + 1 %>
+    connect(${ele.name}.TSur_2, TSur[${i}]);<% i = i + 1 %>
+    % endfor
+  % endif
+  end Building;
+
+  Building building(
+  % if surTemOut == True:
+    show_TSur = true,
+    nSurfaces = ${2*len(elementsOpaque)+2*len(elementsTransparent)},
+  % endif
+    nZones = ${len(zones)});
+
+  BuildingSystems.Buildings.Ambient ambient(
+    nSurfaces = building.nSurfacesAmbient,
+    weatherDataFile = ${buildingSystem.location});
+
+    // Heating set temperature of the thermal zones
+    % for zone in zones:
+    Modelica.Blocks.Sources.Constant TSetHeating_${zone.name}(k=273.15 + ${zone.TSetHeating});
+    % endfor
+    // Cooling set temperature of each thermal zones
+    % for zone in zones:
+    Modelica.Blocks.Sources.Constant TSetCooling_${zone.name}(k=273.15 + ${zone.TSetCooling});
+    % endfor
+    // Air change rate of each thermal zones
+    % for zone in zones:
+    Modelica.Blocks.Sources.Constant airchange_${zone.name}(k=${zone.airchange});
+    % endfor
+    // Heating source of each thermal zones
+    % for zone in zones:
+    Modelica.Blocks.Sources.Constant heatsources_${zone.name}(k=${zone.heatsource});
+    % endfor
+    Modelica.Thermal.HeatTransfer.Sources.PrescribedHeatFlow heatFlow[${len(zones)}];
+    BuildingSystems.Buildings.BaseClasses.RelationRadiationConvection relationRadiationConvection[${len(zones)}](each radiationportion = 0.5);
+  equation
+    connect(ambient.toSurfacePorts, building.toAmbientSurfacesPorts);
+    connect(ambient.toAirPorts, building.toAmbientAirPorts);
+    connect(ambient.TAirRef, building.TAirAmb);
+    connect(ambient.xAir, building.xAirAmb);
+    // Heating set temperature of each thermal zones
+    % for i in range(len(zones)):
+    connect(TSetHeating_${zones[i].name}.y, building.T_setHeating[${i+1}]);
+    % endfor
+    // Cooling set temperature of each thermal zones
+    % for i in range(len(zones)):
+    connect(TSetCooling_${zones[i].name}.y, building.T_setCooling[${i+1}]);
+    % endfor
+    // Air change rate of each thermal zones
+    % for i in range(len(zones)):
+    connect(airchange_${zones[i].name}.y, building.airchange[${i+1}]);
+    % endfor
+    // Heating source of each thermal zones
+    % for i in range(len(zones)):
+    connect(heatsources_${zones[i].name}.y, heatFlow[${i+1}].Q_flow);
+    % endfor
+    connect(relationRadiationConvection.heatPort, heatFlow.port);
+    connect(relationRadiationConvection.heatPortCv, building.conHeatSourcesPorts[1:${len(zones)}]);
+    connect(relationRadiationConvection.heatPortLw, building.radHeatSourcesPorts[1:${len(zones)}]);
+
+  annotation(experiment(StartTime=0, StopTime=31536000),
+    Diagram(coordinateSystem(preserveAspectRatio=false, extent={{-100,-100},{100,100}})));
+end ${buildingSystem.name};
