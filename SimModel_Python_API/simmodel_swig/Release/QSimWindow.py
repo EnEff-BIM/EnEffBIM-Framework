@@ -397,8 +397,8 @@ class Window(QtGui.QMainWindow):
         """
         This function (action) save the FIRST! (...[0]) name of the selected files
         """	
-        #self.Mapping = ".\\mapping_rule\\mapping_rule_xml\\AixLib_v2.1.xml"		
-        self.Mapping = QtGui.QFileDialog.getOpenFileNames(self,'Load xml File','','*.xml')[0]						
+        self.Mapping = ".\\mapping_rule\\mapping_rule_xml\\AixLib_v2.6.xml"		
+        #self.Mapping = QtGui.QFileDialog.getOpenFileNames(self,'Load xml File','','*.xml')[0]						
 			
     def clear(self):
         """
