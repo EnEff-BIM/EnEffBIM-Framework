@@ -491,6 +491,26 @@ class MapBuilding(MoObject):
                         if c.sim_ref_id == b.getSimModelObject().RefId():
                             a.add_connection(a.port_a, c.port_a)
 
+        # two connections between two objects with fluid ports and port
+        # dimension 1 can't have two connections
+        drop_con = []
+        for test in self.project.connections:
+            if test.type == "FluidPort" and test.connector_a.dimension == 1 \
+                    and test.connector_b.dimension == 1:
+                for lo in self.project.connections:
+                    if test.connector_a.parent == lo.connector_b.parent and \
+                        test.connector_b.parent == lo.connector_a.parent:
+                        # print("invalid connection")
+                        if test not in drop_con:
+                            drop_con.append(lo)
+
+        for rem_con in drop_con:
+            self.project.connections.remove(rem_con)
+
+
+
+
+
     def instantiate_thermal_zones(self):
         '''Instantiates for each SimSpatialZone_ThermalZone_Default a
         MapThermalZone.
@@ -1227,7 +1247,6 @@ class MapSpaceBoundary(object):
             self.tilt = 0.0
         elif str(self.tilt) == "nan":
             self.tilt = None
-        print(self.tilt)
 
 class MapMaterialLayer(object):
     """Representation of a mapped building element layer
