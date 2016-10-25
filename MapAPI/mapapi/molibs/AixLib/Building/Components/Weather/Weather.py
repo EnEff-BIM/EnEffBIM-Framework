@@ -24,15 +24,15 @@ class Weather(MapHierarchy.MapComponent):
                                         value=2)
         # output of air temperature, longwave radiation (conditional!!)
         self.Air_temp = self.add_parameter(name="Air_temp",
-                                           value=True)
+                                           value="true")
         self.AirTemp = self.add_connector(name="AirTemp",
                                            type="Real")
         self.Sky_rad = self.add_parameter(name="Sky_rad",
-                                          value=True)
+                                          value="true")
         self.SkyRadiation = self.add_connector(name="SkyRadiation",
                                                 type="Real")
         self.Ter_rad = self.add_parameter(name="Ter_rad",
-                                          value=True)
+                                          value="true")
         self.TerrestrialRadiation = self.add_connector(
             name="TerrestrialRadiation",
             type="Real")
@@ -71,7 +71,7 @@ class Weather(MapHierarchy.MapComponent):
         self.add_connection(self.SkyRadiation, thermal_zone.weather, index_b=2)
         self.add_connection(self.TerrestrialRadiation, thermal_zone.weather,
                             index_b=3)
-        self.add_connection(self.AirTemp, thermal_zone.infiltrationRate)
+        self.add_connection(self.AirTemp, thermal_zone.infiltrationTemperature)
         self.add_connection(self.SolarRadiation_OrientedSurfaces,
                             thermal_zone.solarRad_in)
 

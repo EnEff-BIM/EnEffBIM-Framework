@@ -158,19 +158,19 @@ class ThermalZone(MapHierarchy.MapThermalZone):
         # .area_win)
         rec.add_parameter(name="gsunblind", value=thermal_zone.g_sunblind_list)
         if thermal_zone.inner_walls:
-            value_help=True
+            value_help="true"
         else:
-            value_help=False
+            value_help="false"
         rec.add_parameter(name="withInnerwalls", value=value_help)
         if thermal_zone.windows:
-            value_help=True
+            value_help = "true"
         else:
-            value_help=False
+            value_help = "false"
         rec.add_parameter(name="withWindows", value=value_help)
         if thermal_zone.outer_walls:
-            value_help=True
+            value_help = "true"
         else:
-            value_help=False
+            value_help = "false"
         rec.add_parameter(name="withOuterwalls", value=value_help)
         rec.add_parameter(name="RWin", value=thermal_zone.r1_win)
         rec.add_parameter(name="alphaConvWinInner", value=thermal_zone.alpha_conv_inner_win)

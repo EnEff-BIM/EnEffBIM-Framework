@@ -943,6 +943,7 @@
 		<Property_Map_One2One_Name>ID0111</Property_Map_One2One_Name>
 		<Property_Map_Gap_Name>ID0112</Property_Map_Gap_Name>
 		<Property_Map_Gap_Name>ID0113</Property_Map_Gap_Name>
+		<Property_Map_Gap_Name>ID101</Property_Map_Gap_Name>
 		<Property_Map_Transformation_Name>ID0114</Property_Map_Transformation_Name>
 	</ComponentMappingGroup>
 	<!-- component mapping for the outlet water temperature control of the boiler -->
@@ -1029,6 +1030,7 @@
 		<Property_Map_Gap_Name>ID0227</Property_Map_Gap_Name>
 		<Property_Map_Gap_Name>ID0228</Property_Map_Gap_Name>
 		<Property_Map_Gap_Name>ID0229</Property_Map_Gap_Name>
+		<Property_Map_Gap_Name>ID101</Property_Map_Gap_Name>
 	</ComponentMappingGroup>
 	<!-- Water sink for the hot water storage tank -->
 	<ComponentMappingGroup RefId="ID112">

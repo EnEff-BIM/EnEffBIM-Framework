@@ -108,7 +108,15 @@ ${projectdescription(MapData)}
 
 equation
 % for MyCon in MapData.connections:
-  connect(${MyCon.connector_a.parent.target_name}.${MyCon.connector_a.name}, ${MyCon.connector_b.parent.target_name}.${MyCon.connector_b.name});
+    % if MyCon.index_a is not None:
+      connect(${MyCon.connector_a.parent.target_name}.${MyCon.connector_a.name}[${MyCon.index_a}],${MyCon.connector_b.parent.target_name}.${MyCon.connector_b.name});
+    % elif MyCon.index_b is not None:
+      connect(${MyCon.connector_a.parent.target_name}.${MyCon.connector_a.name},${MyCon.connector_b.parent.target_name}.${MyCon.connector_b.name}[${MyCon.index_b}]);
+    % elif MyCon.index_b is not None and MyCon.index_a is not None:
+      connect(${MyCon.connector_a.parent.target_name}.${MyCon.connector_a.name}[${MyCon.index_a}],${MyCon.connector_b.parent.target_name}.${MyCon.connector_b.name}[${MyCon.index_b}]);
+    % else:
+      connect(${MyCon.connector_a.parent.target_name}.${MyCon.connector_a.name},${MyCon.connector_b.parent.target_name}.${MyCon.connector_b.name});
+    % endif
 % endfor
 
 annotation(

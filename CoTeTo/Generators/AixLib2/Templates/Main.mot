@@ -60,8 +60,28 @@ ${para.name} = ${para.value}
 equation
 // Found ${sum(1 for _ in MapData.connections)} connect equations
 % for conny in MapData.connections:
-  connect(${conny.connector_a.parent.target_name}.${conny.connector_a.name}, ${conny.connector_b.parent.target_name}.${conny.connector_b.name})
+  % if conny.index_a is not None:
+  connect(${conny.connector_a.parent.target_name}.${conny.connector_a.name}[${conny.index_a}], ${conny.connector_b.parent.target_name}.${conny
+  .connector_b.name})
     annotation (Line(points={{0,0},{1,1}}));${punLin}
+  % elif conny.index_b is not None:
+  connect(${conny.connector_a.parent.target_name}.${conny.connector_a
+  .name}, ${conny.connector_b.parent.target_name}.${conny
+  .connector_b
+  .name}[${conny.index_b}])
+    annotation (Line(points={{0,0},{1,1}}));${punLin}
+  % elif conny.index_b is not None and conny.index_a is not None:
+  connect(${conny.connector_a.parent.target_name}.${conny.connector_a
+  .name}[${conny.index_b}], ${conny.connector_b.parent.target_name}.${conny
+  .connector_b
+  .name}[${conny.index_b}])
+    annotation (Line(points={{0,0},{1,1}}));${punLin}
+   % else:
+   connect(${conny.connector_a.parent.target_name}.${conny.connector_a
+  .name}, ${conny.connector_b.parent.target_name}.${conny
+  .connector_b
+  .name})    annotation (Line(points={{0,0},{1,1}}));${punLin}
+% endif
 % endfor
 
 annotation(
