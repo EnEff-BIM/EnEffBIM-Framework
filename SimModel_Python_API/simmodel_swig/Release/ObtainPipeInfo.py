@@ -171,7 +171,8 @@ for id in range(0, nodeList.size()):
                     SourcePort_Id = class_name().getValue()
 		# If TargetPort_Id = child_2lvl.getSimModelObject().RefId() we have an OutPort (Water_In class)
 		# we append SourcePort_Id to OutPortlist otherwise
-        # we have an InPort (Water_Out class) so we append SourcePort_Id to the InPort list!		
+        # we have an InPort (Water_Out class) so we append SourcePort_Id to the InPort list!
+                    print("Water_InOrOut: ", child.getSimModelObject().RefId())		
                     if child_2lvl.getSimModelObject().RefId() == TargetPort_Id:
                         OutPortlist.append(TargetPort_Id)
                     else:
@@ -187,18 +188,23 @@ listof_type   = [elem[1] for elem in Structured_HVAC]
 listof_InPorts  = [elem[2] for elem in Structured_HVAC]
 listof_OutPorts = [elem[3] for elem in Structured_HVAC]
 
+
 G.add_nodes_from(listof_RefId)	
 for node in Structured_HVAC:
     G.node[node[0]]['Text'] = node[0]
     G.node[node[0]]['Description'] = node[1]
 	
+listofusedPorts = []	
 for element_in in Structured_HVAC:
     for InPort in element_in[2]:   
         for element_out in Structured_HVAC:
             for OutPort in element_out[3]: 		
                if InPort == OutPort:
                     print("ElementIN: ", element_in[0]," with InPort: ", InPort, "found OutPort: ", OutPort, " in element ", element_out[0])			   
-                    G.add_edge(element_in[0],element_out[0])		
+                    G.add_edge(element_in[0],element_out[0],connection=InPort)
+                    if InPort in listofusedPorts:
+                        #print("[in]: ", element_in[0], "[out]: ", element_out[0], "port: ", InPort)					
+                    listofusedPorts.append(InPort)					
 	
 print("number of edges: ", G.number_of_edges(), " - number of nodes: ", G.number_of_nodes())	
 nx.write_graphml(G,"test.graphml")
