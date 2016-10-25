@@ -241,13 +241,20 @@ class MoObject(object):
 
         """
         existing_para = False
+        #Values from Mapping rules are being readed as float! even if they are defined as int.
+		#Modelica complain when int ist defined as float. -> convert when possible to int! 
+        if type(value) == float and value.is_integer():
+            value = int(value)		
         for para in self.parameters:
+            #if type(value) == float and value.is_integer():
+            #    print("value will be converted to int! ", para.name, " = ", value) 			
+            #    value=int(value)			
             if para.name == name:
                 existing_para = True
                 break
             else:
                 pass
-        if existing_para is True:
+        if existing_para is True:            		
             para.value = value
             return para
         elif existing_para is False:
