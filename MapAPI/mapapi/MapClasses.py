@@ -368,6 +368,7 @@ class MapProject(object):
         self.mod_components = []
 
         self.dict_con = {}
+        self.dict_con_inout = {}
 
         """Instantiate the SimModel Hierarchy and load the SimXML file through
         libSimModelAPI"""
@@ -470,42 +471,54 @@ class MapBuilding(MoObject):
 
         self.instantiate_components()
         self.instantiate_thermal_zones()
+
         self.convert_components()
         self.instantiate_connections()
 
         for tz in self.thermal_zones:
             tz.mapp_me()
-
+        for a in self.hvac_components_sim:
+            a.mapp_me()
+            pass
 
     def instantiate_connections(self):
         '''instantiates the SimModel topology connections
         '''
 
         for key, value in self.project.dict_con.items():
-            print(key)
-            print("Source", value['Source'].getSimModelObject().HostElement().getValue())
-            print("Target", value['Target'].getSimModelObject().HostElement().getValue())
-            print("___________________________________________________________")
             for comp in self.hvac_components_sim:
-                try:
-                    if value['Source'].getSimModelObject().HostElement().getValue() == comp.sim_ref_id:
-                        value['Source'] = comp
-                except:
-                    pass
-                try:
-                    if value['Target'].getSimModelObject().HostElement().getValue() == comp.sim_ref_id:
-                        value['Target'] = comp
-                except:
-                    pass
-            if hasattr(value['Target'], 'port_b'):
-                con = MapConnection(value['Source'].port_a, value['Target'].port_b)
-            else:
-                con = MapConnection(value['Source'].port_a,
-                                    value['Target'].port_a)
+                if value['Source'].getSimModelObject().HostElement().getValue() == comp.sim_ref_id:
+                    comp.connected_in.append(self.project.sim_hierarchy.getHierarchyNode(
+                            value['Target'].getSimModelObject().HostElement().getValue()))
+                if value['Target'].getSimModelObject().HostElement().getValue() == comp.sim_ref_id:
+                    comp.connected_out.append(self.project.sim_hierarchy.getHierarchyNode(
+                            value['Source'].getSimModelObject().HostElement().getValue()))
+
+        for key, value in self.project.dict_con.items():
+            for comp in self.hvac_components_sim:
+                if value['Source'].getSimModelObject().HostElement().getValue() == comp.sim_ref_id:
+                    value['Source_Mod'] = comp
+                elif value['Target'].getSimModelObject().HostElement().getValue() == comp.sim_ref_id:
+                    value['Target_Mod'] = comp
+
+            con = MapConnection(value['Source_Mod'].port_a,
+                                value['Target_Mod'].port_b)
+
             self.project.connections.append(con)
 
+        in_out_keep = []
+        in_out_rem = []
+        for comp in self.project.hvac_components:
+            if comp.comp_con_inout:
+                if len(comp.comp_con_inout) == 1:
+                    in_out_keep.append(comp)
+                else:
+                    in_out_rem.append(comp)
+        for y in in_out_rem:
+            self.project.hvac_components.remove(y)
 
-        print("asd")
+        con = MapConnection(in_out_keep[0].port_a, in_out_keep[1].port_a)
+        self.project.connections.append(con)
 
     def instantiate_thermal_zones(self):
         '''Instantiates for each SimSpatialZone_ThermalZone_Default a
@@ -569,9 +582,7 @@ class MapBuilding(MoObject):
         function'''
         for a in self.hvac_components_sim:
             a.convert_me()
-        for a in self.hvac_components_sim:
-            a.mapp_me()
-            pass
+
 
 class MapThermalZone(MoObject):
     """Representation of a mapped thermal zone
@@ -674,6 +685,7 @@ class MapComponent(MoObject):
         self.connected_out_ref_id = []
 
         self.comp_con = {}
+        self.comp_con_inout = {}
 
 
     def find_loop_connection(self, hierarchy_node=None):
@@ -696,23 +708,43 @@ class MapComponent(MoObject):
             comp_child = self.hierarchy_node.getChildList()
         for i in range(comp_child.size()):
             outlet_child = comp_child[i].getChildList()
-            for j in range(outlet_child.size()):
-                if outlet_child[j].ClassType() == "SimConnection_HotWaterFlow_Default":
-                    self.project.dict_con[outlet_child[j].getSimModelObject().RefId()] = {}
-                    self.project.dict_con[outlet_child[j].getSimModelObject().RefId()]['Source'] = \
-                        self.project.sim_hierarchy.getHierarchyNode(outlet_child[j].getSimModelObject().SourcePort().getValue())
-                    self.project.dict_con[outlet_child[j].getSimModelObject().RefId()]['Target'] = \
-                        self.project.sim_hierarchy.getHierarchyNode(outlet_child[ j].getSimModelObject().TargetPort().getValue())
-                    self.comp_con[
-                        outlet_child[j].getSimModelObject().RefId()] = {}
-                    self.comp_con[outlet_child[j].getSimModelObject().RefId()]['Source'] = \
-                        self.project.sim_hierarchy.getHierarchyNode(outlet_child[j].getSimModelObject().SourcePort().getValue())
-                    self.comp_con[outlet_child[j].getSimModelObject().RefId()]['Target'] = \
-                        self.project.sim_hierarchy.getHierarchyNode(outlet_child[ j].getSimModelObject().TargetPort().getValue())
+            if comp_child[i].ClassType() == \
+                    "SimDistributionPort_HotWaterFlowPort_Water_Out" or comp_child[i].ClassType() == \
+                    "SimDistributionPort_HotWaterFlowPort_Water_In":
+                for j in range(outlet_child.size()):
+                    if outlet_child[j].ClassType() == "SimConnection_HotWaterFlow_Default":
+                        self.project.dict_con[outlet_child[j].getSimModelObject().RefId()] = {}
+                        self.project.dict_con[outlet_child[j].getSimModelObject().RefId()]['Source'] = \
+                            self.project.sim_hierarchy.getHierarchyNode(outlet_child[j].getSimModelObject().SourcePort().getValue())
+                        self.project.dict_con[outlet_child[j].getSimModelObject().RefId()]['Target'] = \
+                            self.project.sim_hierarchy.getHierarchyNode(outlet_child[ j].getSimModelObject().TargetPort().getValue())
+                        self.comp_con[
+                            outlet_child[j].getSimModelObject().RefId()] = {}
+                        self.comp_con[outlet_child[j].getSimModelObject().RefId()]['Source'] = \
+                            self.project.sim_hierarchy.getHierarchyNode(outlet_child[j].getSimModelObject().SourcePort().getValue())
+                        self.comp_con[outlet_child[j].getSimModelObject().RefId()]['Target'] = \
+                            self.project.sim_hierarchy.getHierarchyNode(outlet_child[ j].getSimModelObject().TargetPort().getValue())
 
-
-
-
+            elif comp_child[i].ClassType() == \
+                    "SimDistributionPort_HotWaterFlowPort_Water_InOrOut":
+                for j in range(outlet_child.size()):
+                    if outlet_child[j].ClassType() == "SimConnection_HotWaterFlow_Default":
+                        self.project.dict_con_inout[outlet_child[
+                            j].getSimModelObject().RefId()] = []
+                        self.project.dict_con_inout[outlet_child[
+                            j].getSimModelObject().RefId()].append(
+                            self.project.sim_hierarchy.getHierarchyNode(outlet_child[j].getSimModelObject().SourcePort().getValue()))
+                        self.project.dict_con_inout[outlet_child[j].getSimModelObject().RefId()].append(
+                            self.project.sim_hierarchy.getHierarchyNode(
+                                outlet_child[ j].getSimModelObject().TargetPort().getValue()))
+                        self.comp_con_inout[
+                            outlet_child[j].getSimModelObject().RefId()] = []
+                        self.comp_con_inout[outlet_child[j].getSimModelObject().RefId()].append(
+                            self.project.sim_hierarchy.getHierarchyNode(
+                                outlet_child[j].getSimModelObject().SourcePort().getValue()))
+                        self.comp_con_inout[outlet_child[j].getSimModelObject().RefId()].append(
+                            self.project.sim_hierarchy.getHierarchyNode(
+                                outlet_child[ j].getSimModelObject().TargetPort().getValue()))
 
     def create_connection(self, test):
         self.project.connections.append(MapConnection(self,test))
