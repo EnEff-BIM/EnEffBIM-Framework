@@ -210,5 +210,7 @@ class ThermalZone(MapHierarchy.MapThermalZone):
                                 value = \
                                     sim_obje.SimTimeSeriesSched_ValUntilTime_1_144().getNumberList()[i]
                                 table.append((end_time, value))
+
+                            break
         return table
 
