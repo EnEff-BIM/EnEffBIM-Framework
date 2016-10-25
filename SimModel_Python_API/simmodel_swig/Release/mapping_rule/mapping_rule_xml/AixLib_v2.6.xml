@@ -263,16 +263,13 @@
 		<TargetPropertyName>D</TargetPropertyName>
 		<DefaultValueNumber>14</DefaultValueNumber>
 	</Property_Map_Gap>
-	<!-- property mapping for the water type radiator -->
-	<!-- Initialize properties: V -->
-	<Property_Map_Gap RefId="ID021">
-		<Description>Volume in m3</Description>
-		<TargetPropertyName>V</TargetPropertyName>
-		<DefaultValueNumber>0.00467999977991</DefaultValueNumber>
-		<RecordInstance>RadiatorType</RecordInstance>
-		<RecordLocation>AixLib.DataBase.Radiators.RadiatiorBaseDataDefinition</RecordLocation>
-	</Property_Map_Gap>
-	<!-- property mapping for the water type radiator -->
+    <!-- Initialize properties for the radiator -->
+    <!-- m_flow_nominal in kg/s -->
+	<Property_Map_Gap RefId="ID0230">
+		<Description>Nominal mass flow rate of radiator</Description>
+		<TargetPropertyName>m_flow_nominal</TargetPropertyName>
+		<DefaultValueNumber>1</DefaultValueNumber>
+	</Property_Map_Gap>	
 	<!-- Initialize properties declared in a base data record: 
        e.g., NominalPower, T_flow_nom, T_return_nom, ... -->
 	<Property_Map_Gap RefId="ID022">
@@ -345,20 +342,10 @@
 		<RecordInstance>RadiatorType</RecordInstance>
 		<RecordLocation>AixLib.DataBase.Radiators.RadiatiorBaseDataDefinition</RecordLocation>
 	</Property_Map_Gap>
-	<!-- property mapping for the water type radiator -->
-	<!-- Initialize properties: T.start, T.fixed -->
-	<Property_Map_Gap RefId="ID0211">
-		<Description>Temperature inside the CV in K</Description>
-		<TargetPropertyName>T</TargetPropertyName>
-		<DefaultValueNumber>303.1499938965</DefaultValueNumber>
-		<RecordInstance>RadiatorType</RecordInstance>
-		<RecordLocation>AixLib.DataBase.Radiators.RadiatiorBaseDataDefinition</RecordLocation>
-	</Property_Map_Gap>
-	<!-- property mapping for the hot water boiler -->
 	<!-- Initialize properties: T.start, T.fixed -->
 	<Property_Map_Gap RefId="ID0112">
 		<Description>Initialization: temperature inside the CV in K</Description>
-		<TargetPropertyName>T</TargetPropertyName>
+		<TargetPropertyName>T_ref</TargetPropertyName>
 		<TargetLocation>volume</TargetLocation>
 		<DefaultValueNumber>328.15</DefaultValueNumber>
 	</Property_Map_Gap>
@@ -369,6 +356,11 @@
 		<TargetPropertyName>Volume</TargetPropertyName>
 		<DefaultValueNumber>0.00999999977648</DefaultValueNumber>
 	</Property_Map_Gap>
+	<Property_Map_Gap RefId="ID0115">
+		<Description>Initialization: nominal mass flow rate</Description>
+		<TargetPropertyName>m_flow_nominal</TargetPropertyName>
+		<DefaultValueNumber>1</DefaultValueNumber>
+	</Property_Map_Gap>		
 	<!-- property mapping for the water pump of variable speed return -->
 	<!-- volume flow rate through the pump [m3/s]: V_flow.start -->
 	<!-- <Property_Map_Gap RefId="ID0315">
@@ -381,9 +373,9 @@
 	<!-- pumping head [m]: Head.start -->
 	<Property_Map_Gap RefId="ID0316">
 		<Description>Pumping head [m]</Description>
-		<TargetPropertyName>start</TargetPropertyName>
+		<TargetPropertyName>dp_start</TargetPropertyName>
 		<TargetLocation>Head</TargetLocation>
-		<DefaultValueNumber>3.9688</DefaultValueNumber>
+		<DefaultValueNumber>-3.9688</DefaultValueNumber>
 	</Property_Map_Gap>
 	<!-- property mapping for the night signal controller -->
 	<!-- time for one period [s] -->
@@ -557,9 +549,9 @@
 	</Property_Map_Gap>
 	<!-- pressure loss for the simple valve -->
 	<Property_Map_Gap RefId="ID102">
-		<Description>nominal pressure loss for the valve</Description>
-		<TargetPropertyName>dpValve_nominal</TargetPropertyName>
-		<DefaultValueNumber>1e4</DefaultValueNumber>
+		<Description>Kv value at full opening for the valve</Description>
+		<TargetPropertyName>Kvs</TargetPropertyName>
+		<DefaultValueNumber>0.4</DefaultValueNumber>
 	</Property_Map_Gap>
 	<!-- PID mapping -->
 	<Property_Map_Gap RefId="ID102c1">
@@ -812,6 +804,9 @@
 		<SourceComponentName>SimFlowFitting_Default_Default</SourceComponentName>
 		<TargetComponentName>pipe_HeatTransfer</TargetComponentName>
 		<TargetLocation>AixLib.Fluid.FixedResistances.StaticPipe</TargetLocation>
+		<Property_Map_Gap_Name>ID063</Property_Map_Gap_Name>
+		<Property_Map_Gap_Name>ID062</Property_Map_Gap_Name>
+		<Property_Map_Gap_Name>ID064</Property_Map_Gap_Name>
 	</Component_Map_One2One>
 	<!-- component mapping for the water pipe -->
 	<Component_Map_One2One RefId="ID013">
@@ -830,6 +825,9 @@
 		<SourceComponentName>SimFlowController_Valve_Default</SourceComponentName>
 		<TargetComponentName>pipe_HeatTransfer</TargetComponentName>
 		<TargetLocation>AixLib.Fluid.FixedResistances.StaticPipe</TargetLocation>
+		<Property_Map_Gap_Name>ID063</Property_Map_Gap_Name>
+		<Property_Map_Gap_Name>ID062</Property_Map_Gap_Name>
+		<Property_Map_Gap_Name>ID064</Property_Map_Gap_Name>		
 	</Component_Map_One2One>
 	<!-- component mapping for the expansion vessel, changed it to a one to one component mapping -->
 	<Component_Map_One2One RefId="ID9099">
@@ -935,6 +933,7 @@
 		<TargetComponentName>boiler</TargetComponentName>
 		<TargetLocation>AixLib.Fluid.HeatExchangers.Boiler</TargetLocation>
 		<Property_Map_One2One_Name>ID0111</Property_Map_One2One_Name>
+		<Property_Map_Gap_Name>ID0115</Property_Map_Gap_Name>		
 		<Property_Map_Gap_Name>ID0112</Property_Map_Gap_Name>
 		<Property_Map_Gap_Name>ID0113</Property_Map_Gap_Name>
 		<Property_Map_Transformation_Name>ID0114</Property_Map_Transformation_Name>
@@ -1011,8 +1010,7 @@
 		<Description>map a water type radiator into AixLib</Description>
 		<TargetComponentName>radiator</TargetComponentName>
 		<TargetLocation>AixLib.Fluid.HeatExchangers.Radiators.Radiator</TargetLocation>
-		<Property_Map_Gap_Name>ID021</Property_Map_Gap_Name>
-		<Property_Map_Gap_Name>ID0211</Property_Map_Gap_Name>
+		<Property_Map_Gap_Name>ID0230</Property_Map_Gap_Name>
 		<Property_Map_Gap_Name>ID022</Property_Map_Gap_Name>
 		<Property_Map_Gap_Name>ID0221</Property_Map_Gap_Name>
 		<Property_Map_Gap_Name>ID0222</Property_Map_Gap_Name>
