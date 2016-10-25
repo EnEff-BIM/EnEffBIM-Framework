@@ -38,6 +38,7 @@ class ThermalZone(MapHierarchy.MapThermalZone):
         t_prj = Project(load_data=False)
 
         t_sim.load_lib_sim_model(sim_api=self.project, t_prj=t_prj)
+        t_prj.merge_windows_calc = True
         t_prj.calc_all_buildings(raise_errors=True)
 
         self.target_location = "AixLib.Building.LowOrder.ThermalZone"
