@@ -153,8 +153,9 @@ class ThermalZone(MapHierarchy.MapThermalZone):
         # rec.add_parameter(name="temperatureground",
                          # value=thermal_zone.temperatureground) ???
         rec.add_parameter(name="Aw", value=thermal_zone.window_areas)
-        rec.add_parameter(name="UWin",
-                          value=thermal_zone.ua_value_win/thermal_zone.area_win)
+        #rec.add_parameter(name="UWin",
+        #                  value=thermal_zone.ua_value_win/thermal_zone
+        # .area_win)
         rec.add_parameter(name="gsunblind", value=thermal_zone.g_sunblind_list)
         if thermal_zone.inner_walls:
             value_help=True
@@ -175,8 +176,8 @@ class ThermalZone(MapHierarchy.MapThermalZone):
         rec.add_parameter(name="alphaConvWinInner", value=thermal_zone.alpha_conv_inner_win)
         rec.add_parameter(name="alphaConvWinOuter", value=thermal_zone.alpha_conv_outer_win)
         rec.add_parameter(name="awin", value=thermal_zone.solar_absorp_win)
-        rec.add_parameter(name="orientationswallshorizontal",
-                          value=thermal_zone.orientation_wall)
+        #rec.add_parameter(name="orientationswallshorizontal",
+        #                  value=thermal_zone.orientation_wall)
 
     def connect_to_weather(self, teaser_project):
         from mapapi.molibs.AixLib.Building.Components.Weather.Weather import\
