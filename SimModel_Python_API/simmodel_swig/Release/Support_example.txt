@@ -74,7 +74,37 @@ If Id = TargetPort --> We have an OutPort
 	ID1ZwXL01SP6LgPm0ufh5D5q (Water_InOrOut)
 		SourcePort: ID1ZwXL01SP6LgPm0ufh5D5q
 		TargetPort: ID0d4HNNeu51MxTsgicXECgc
+
+(ID0LMbjl8XfFaui1YxJs_D1Z)
+	ID1ymbgu3sD6uw9vCyB2KBw_ (Water_InOrOut)
+		SourcePort: ID1JKhYNh354dxFsmODU1QSr
+		TargetPort: ID1ymbgu3sD6uw9vCyB2KBw_
+	ID1E1u2obBL6gR1EmBQNmuG (Water_InOrOut)
+		SourcePort: ID34vMM6wnjE7unBCQ1tZmGu
+		TargetPort: ID1E1u2obBL6gR1EmBQNmuG
+
+(ID0LMbjl8XfFaui1YxJs_D1j)		
+	ID0d4HNNeu51MxTsgicXECgc (Water_InOrOut)
+		SourcePort: ID1ZwXL01SP6LgPm0ufh5D5q
+		TargetPort: ID0d4HNNeu51MxTsgicXECgc
+	ID0LKfta5Pj8cxyY316mkQm2 (Water_InOrOut)
+		SourcePort: ID2qx8_WZ4j0GPPQ_pDcJDJA
+		TargetPort: ID0LKfta5Pj8cxyY316mkQm2		
+
+(ID0LMbjl8XfFaui1YxJs_D1b)		
+	ID1JKhYNh354dxFsmODU1QSr (Water_InOrOut)
+		SourcePort: ID1JKhYNh354dxFsmODU1QSr
+		TargetPort: ID1ymbgu3sD6uw9vCyB2KBw_
+	ID35gmfocYDCGOAS24WQBzzy (Water_InOrOut)
+		SourcePort: ID35gmfocYDCGOAS24WQBzzy
+		TargetPort: ID3p76r9APPEO9afc_GmiX7Z
+
+
 		
+(ID0LMbjl8XfFaui1YxJs_D1x) ID34vMM6wnjE7unBCQ1tZmGu connected to ID1E1u2obBL6gR1EmBQNmuG (ID0LMbjl8XfFaui1YxJs_D1Z)
+(ID0LMbjl8XfFaui1YxJs_D1x) ID1ZwXL01SP6LgPm0ufh5D5q connected to ID0d4HNNeu51MxTsgicXECgc (ID0LMbjl8XfFaui1YxJs_D1Z)
+
+	
 ---------------------------------------------------------------------------		
 BOILER (ID0LMbjl8XfFaui1YxJs_D66)
 	InPort: ID0fjWAxxg1F4vVZuvXm8O85 (Water_Out)
@@ -112,5 +142,4 @@ ID0LMbjl8XfFaui1YxJs_D1_
 		
 From ObtainPipeInfo.py
 
-('ID0LMbjl8XfFaui1YxJs_D1_', 'ID0LMbjl8XfFaui1YxJs_D1y')
-('ID0LMbjl8XfFaui1YxJs_D66', 'ID0LMbjl8XfFaui1YxJs_D1y')
+
