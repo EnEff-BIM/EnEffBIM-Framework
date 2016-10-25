@@ -618,7 +618,7 @@ class MainWidget(QtGui.QWidget):
         if len(self.Filename2) >= 2:
             #The order of the files is actually important. UseCase1_1_... should be in the first place, and 1.1_Architecture+HVAC... in the second place. 		
             #print("Filename[0]: ", self.Filename2[0], " should be the zone and, \nFilename[1]: ", self.Filename2[1], "the HVAC \n")			
-            return self.translator.loadSimModel(self.Filename2[0],self.Filename2[1])			
+            return self.translator.loadSimModel(self.Filename2[1],self.Filename2[0])			
         else:
             return self.translator.loadSimModel(self.Filename2[0])		
             #return self.translator.loadSimModel("UseCase1_1_BoilerGasRadiatorFromSimergy.simxml","1.1_Architecture+HVAC+Zone_Curve+Schedule_korr.simxml")		

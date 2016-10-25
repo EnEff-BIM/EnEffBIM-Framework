@@ -203,7 +203,7 @@ for element_in in Structured_HVAC:
                     print("ElementIN: ", element_in[0]," with InPort: ", InPort, "found OutPort: ", OutPort, " in element ", element_out[0])			   
                     G.add_edge(element_in[0],element_out[0],connection=InPort)
                     if InPort in listofusedPorts:
-                        #print("[in]: ", element_in[0], "[out]: ", element_out[0], "port: ", InPort)					
+                        print("[in]: ", element_in[0], "[out]: ", element_out[0], "port: ", InPort)					
                     listofusedPorts.append(InPort)					
 	
 print("number of edges: ", G.number_of_edges(), " - number of nodes: ", G.number_of_nodes())	
