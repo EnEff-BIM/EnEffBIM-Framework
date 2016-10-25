@@ -59,7 +59,7 @@ class Weather(MapHierarchy.MapComponent):
             teaser_bldg.orientation_bldg))
         rec.add_parameter(name="name",
                           value=[str(name_orient) for name_orient in
-                                 teaser_bldg.orientation_bldg])
+                                 teaser_bldg.orientation_bldg])					 
         rec.add_parameter(name="Azimut",
                           value=self._convert_azimut(teaser_bldg.orientation_bldg))
         rec.add_parameter(name="Tilt",
@@ -71,7 +71,7 @@ class Weather(MapHierarchy.MapComponent):
         self.add_connection(self.SkyRadiation, thermal_zone.weather, index_b=2)
         self.add_connection(self.TerrestrialRadiation, thermal_zone.weather,
                             index_b=3)
-        self.add_connection(self.AirTemp, thermal_zone.infiltrationRate)
+        self.add_connection(self.AirTemp, thermal_zone.infiltrationTemperature)
         self.add_connection(self.SolarRadiation_OrientedSurfaces,
                             thermal_zone.solarRad_in)
 
