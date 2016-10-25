@@ -40,7 +40,7 @@ class ThermalZone(MapHierarchy.MapThermalZone):
         t_sim.load_lib_sim_model(sim_api=self.project, t_prj=t_prj)
         t_prj.calc_all_buildings(raise_errors=True)
 
-        self.target_location = "AixLib.Building.LowOrder.ThermalZone.ThermalZone"
+        self.target_location = "AixLib.Building.LowOrder.ThermalZone"
         self.target_name = "thermal_zone" + "_" + self.target_name
 
         self.apply_teaser_parameters(t_prj)
@@ -56,6 +56,7 @@ class ThermalZone(MapHierarchy.MapThermalZone):
                          self.hierarchy_node,
                          self)
         const.init_me()
+        const.mapp_me()
         const.target_name = "infil" + "_" + self.target_name
         const.add_parameter('k', rate)
         const.add_connection(const.y, self.infiltrationRate)
@@ -188,8 +189,6 @@ class ThermalZone(MapHierarchy.MapThermalZone):
         we.mapp_me()
         we.connect_to_zone(self, teaser_bldg)
         self.project.mod_components.append(we)
-
-
 
     def _help_schedule(self, table, hierarchy_schedule_internal):
 

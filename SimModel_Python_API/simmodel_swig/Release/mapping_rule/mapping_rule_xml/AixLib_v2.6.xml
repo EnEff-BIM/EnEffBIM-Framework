@@ -358,8 +358,7 @@
 	<!-- Initialize properties: T.start, T.fixed -->
 	<Property_Map_Gap RefId="ID0112">
 		<Description>Initialization: temperature inside the CV in K</Description>
-		<TargetPropertyName>T</TargetPropertyName>
-		<TargetLocation>volume</TargetLocation>
+		<TargetPropertyName>T_ref</TargetPropertyName>
 		<DefaultValueNumber>328.15</DefaultValueNumber>
 	</Property_Map_Gap>
 	<!-- property mapping for the hot water boiler -->
@@ -508,7 +507,7 @@
 	<!-- pressure drop between the two ports [bar]: p.start -->
 	<Property_Map_Gap RefId="ID062">
 		<Description>Pressure drop between the two ports [bar]</Description>
-		<TargetPropertyName>start</TargetPropertyName>
+		<TargetPropertyName>dp_start</TargetPropertyName>
 		<TargetLocation>p</TargetLocation>
 		<DefaultValueNumber>100</DefaultValueNumber>
 	</Property_Map_Gap>
@@ -558,8 +557,8 @@
 	<!-- pressure loss for the simple valve -->
 	<Property_Map_Gap RefId="ID102">
 		<Description>nominal pressure loss for the valve</Description>
-		<TargetPropertyName>dpValve_nominal</TargetPropertyName>
-		<DefaultValueNumber>1e4</DefaultValueNumber>
+		<TargetPropertyName>Kvs</TargetPropertyName>
+		<DefaultValueNumber>1.4</DefaultValueNumber>
 	</Property_Map_Gap>
 	<!-- PID mapping -->
 	<Property_Map_Gap RefId="ID102c1">
@@ -812,6 +811,9 @@
 		<SourceComponentName>SimFlowFitting_Default_Default</SourceComponentName>
 		<TargetComponentName>pipe_HeatTransfer</TargetComponentName>
 		<TargetLocation>AixLib.Fluid.FixedResistances.StaticPipe</TargetLocation>
+		<Property_Map_Gap_Name>ID063</Property_Map_Gap_Name>
+		<!-- <Property_Map_Gap_Name>ID062</Property_Map_Gap_Name> -->
+		<Property_Map_Gap_Name>ID064</Property_Map_Gap_Name>
 	</Component_Map_One2One>
 	<!-- component mapping for the water pipe -->
 	<Component_Map_One2One RefId="ID013">
@@ -821,7 +823,7 @@
 		<TargetLocation>AixLib.Fluid.FixedResistances.StaticPipe</TargetLocation>
 		<!-- <Property_Map_Gap_Name>ID061T</Property_Map_Gap_Name> -->
 		<Property_Map_Gap_Name>ID063</Property_Map_Gap_Name>
-		<Property_Map_Gap_Name>ID062</Property_Map_Gap_Name>
+		<!-- <Property_Map_Gap_Name>ID062</Property_Map_Gap_Name> -->
 		<Property_Map_Gap_Name>ID064</Property_Map_Gap_Name>
 		<Property_Map_Transformation_Name>ID061</Property_Map_Transformation_Name>
 	</Component_Map_One2One>
@@ -830,6 +832,9 @@
 		<SourceComponentName>SimFlowController_Valve_Default</SourceComponentName>
 		<TargetComponentName>pipe_HeatTransfer</TargetComponentName>
 		<TargetLocation>AixLib.Fluid.FixedResistances.StaticPipe</TargetLocation>
+		<Property_Map_Gap_Name>ID063</Property_Map_Gap_Name>
+		<!-- <Property_Map_Gap_Name>ID062</Property_Map_Gap_Name> -->
+		<Property_Map_Gap_Name>ID064</Property_Map_Gap_Name>
 	</Component_Map_One2One>
 	<!-- component mapping for the expansion vessel, changed it to a one to one component mapping -->
 	<Component_Map_One2One RefId="ID9099">
@@ -863,7 +868,7 @@
 		<Description>map a valve into AixLib</Description>
 		<TargetComponentName>simpleValve</TargetComponentName>
 		<TargetLocation>AixLib.Fluid.Actuators.Valves.SimpleValve</TargetLocation>
-		<Property_Map_Gap_Name>ID101</Property_Map_Gap_Name>
+		<!-- <Property_Map_Gap_Name>ID101</Property_Map_Gap_Name> -->
 		<Property_Map_Gap_Name>ID102</Property_Map_Gap_Name>
 	</ComponentMappingGroup>
 	<!-- Hysteres mapping for the storage tank -->
@@ -990,7 +995,7 @@
 		<TargetLocation>AixLib.Fluid.Movers.Pump</TargetLocation>
 		<Property_Map_One2One_Name>ID0314</Property_Map_One2One_Name>
 		<!-- <Property_Map_Gap_Name>ID0315</Property_Map_Gap_Name> -->
-		<Property_Map_Gap_Name>ID0316</Property_Map_Gap_Name>
+		<!--<Property_Map_Gap_Name>ID0316</Property_Map_Gap_Name> -->
 		<!-- <Property_Map_Gap_Name>ID0312T</Property_Map_Gap_Name> -->
 		<!-- <Property_Map_Gap_Name>ID0313T</Property_Map_Gap_Name> -->
 		<Property_Map_Transformation_Name>ID0311</Property_Map_Transformation_Name>
@@ -1012,8 +1017,8 @@
 		<Description>map a water type radiator into AixLib</Description>
 		<TargetComponentName>radiator</TargetComponentName>
 		<TargetLocation>AixLib.Fluid.HeatExchangers.Radiators.Radiator</TargetLocation>
-		<Property_Map_Gap_Name>ID021</Property_Map_Gap_Name>
-		<Property_Map_Gap_Name>ID0211</Property_Map_Gap_Name>
+		<!-- <Property_Map_Gap_Name>ID021</Property_Map_Gap_Name> -->
+		<!-- <Property_Map_Gap_Name>ID0211</Property_Map_Gap_Name> -->
 		<Property_Map_Gap_Name>ID022</Property_Map_Gap_Name>
 		<Property_Map_Gap_Name>ID0221</Property_Map_Gap_Name>
 		<Property_Map_Gap_Name>ID0222</Property_Map_Gap_Name>
