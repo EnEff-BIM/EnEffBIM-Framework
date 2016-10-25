@@ -79,6 +79,6 @@ class Pump(MapHierarchy.MapComponent):
         r_to_b.init_me()
         r_to_b.mapp_me()
         r_to_b.target_name = "reatToBool" + "_" + self.target_name
-        r_to_b.add_connection(r_to_b.u, combi_time.y)
+        r_to_b.add_connection(r_to_b.u, combi_time.y, index_b=1)
         r_to_b.add_connection(r_to_b.y, self.IsNight)
         self.project.mod_components.append(r_to_b)

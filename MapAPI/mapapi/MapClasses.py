@@ -288,10 +288,10 @@ class MoObject(object):
             returns the MapConnector instance
         """
 
-        if connector_a in self.connectors:
-            pass
-        else:
-            raise ValueError("input_connector is not assigned to MoObject")
+#        if connector_a in self.connectors:
+#            pass
+#        else:
+#            raise ValueError("input_connector is not assigned to MoObject")
         if connector_a.type == connector_b.type:
 
             mapped_con = MapConnection(connector_a,
@@ -482,18 +482,46 @@ class MapBuilding(MoObject):
             if (a.connected_in and a.connected_out):
                 for b in a.connected_in:
                     for c in self.project.hvac_components:
-
                         if c.sim_ref_id == b.getSimModelObject().RefId():
                             a.add_connection(a.port_b, c.port_a)
             else:
-                for b in a.connected_in:
+                for b in a.connected_out:
                     for c in self.project.hvac_components:
                         if c.sim_ref_id == b.getSimModelObject().RefId():
                             a.add_connection(a.port_a, c.port_a)
 
+        for in_or_out in self.project.hvac_components:
+            if in_or_out.connected_in_or_out:
+                if (in_or_out.connected_in and in_or_out.connected_out):
+                    for three_junction in in_or_out.connected_in_or_out:
+                        for c in self.project.hvac_components:
+                                if c.sim_ref_id == three_junction.getSimModelObject().RefId():
+                                    if hasattr(in_or_out, 'port_b'):
+                                        self.add_connection(in_or_out.port_a,
+                                                            c.port_b)
+                else:
+                    for i, in_port in enumerate(in_or_out.connected_in_or_out):
+                        for c in self.project.hvac_components:
+                            if i == 0:
+                                if c.sim_ref_id == in_port.getSimModelObject().RefId():
+                                    if hasattr(in_or_out, 'port_b'):
+                                        self.add_connection(in_or_out.port_b,
+                                                            c.port_a)
+                                    else:
+                                        self.add_connection(in_or_out.port_a,
+                                                            c.port_a)
+                            elif i == 1:
+                                if c.sim_ref_id == in_port.getSimModelObject().RefId():
+                                    if hasattr(c, 'port_b'):
+                                        self.add_connection(in_or_out.port_a, c.port_b)
+                                    else:
+                                        self.add_connection(in_or_out.port_a,
+                                                            c.port_a)
+
         # two connections between two objects with fluid ports and port
         # dimension 1 can't have two connections
         drop_con = []
+        drop_con_test = []
         for test in self.project.connections:
             if test.type == "FluidPort" and test.connector_a.dimension == 1 \
                     and test.connector_b.dimension == 1:
@@ -501,15 +529,13 @@ class MapBuilding(MoObject):
                     if test.connector_a.parent == lo.connector_b.parent and \
                         test.connector_b.parent == lo.connector_a.parent:
                         # print("invalid connection")
-                        if test not in drop_con:
-                            drop_con.append(lo)
+                        if lo not in drop_con:
+                            drop_con.append(test)
+                        else:
+                            drop_con_test.append(test)
 
         for rem_con in drop_con:
             self.project.connections.remove(rem_con)
-
-
-
-
 
     def instantiate_thermal_zones(self):
         '''Instantiates for each SimSpatialZone_ThermalZone_Default a
@@ -674,6 +700,7 @@ class MapComponent(MoObject):
         self.hvac_loop = None
         self.connected_in = []
         self.connected_out = []
+        self.connected_in_or_out = []
         self.connected_out_ref_id = []
 
 
@@ -742,7 +769,8 @@ class MapComponent(MoObject):
                                 for h in range(inlet_parent.size()):
                                     if inlet_parent[h].ClassType() != \
                                             "SimConnection_HotWaterFlow_Default" and comp_child.size() > 1 and inlet_parent[h].getSimModelObject().RefId != self.sim_ref_id:
-                                        self.connected_in.append(inlet_parent[h])
+                                        self.connected_in_or_out.append(
+                                            inlet_parent[h])
                                         for x in range(comp_child.size()):
                                             if comp_child[x].ClassType() ==\
                                                     "SimDistributionPort_HotWaterFlowPort_Water_InOrOut" and \
@@ -758,7 +786,7 @@ class MapComponent(MoObject):
                                                                 for w in range(outlet_parent.size()):
                                                                     if outlet_parent[w].ClassType != \
                                                                             "SimConnection_HotWaterFlow_Default" and outlet_parent[w].getSimModelObject().RefId() != self.sim_ref_id:
-                                                                        self.connected_out.append(outlet_parent[w])
+                                                                        self.connected_in_or_out.append(outlet_parent[w])
                                                                         return
                                                                     else:
                                                                         pass
@@ -766,7 +794,8 @@ class MapComponent(MoObject):
                                                 pass
                                     elif inlet_parent[h].ClassType() != \
                                             "SimConnection_HotWaterFlow_Default" and inlet_parent[h].getSimModelObject().RefId != self.sim_ref_id:
-                                        self.connected_in.append(inlet_parent[h])
+                                        self.connected_in_or_out.append(
+                                            inlet_parent[h])
                                         return
 
 
@@ -1337,6 +1366,17 @@ class MapMaterial(object):
         self.hierarchy_node = hierarchy_node
         self.sim_instance = self.hierarchy_node.getSimModelObject()
 
+        self.name = None
+        self.density = None
+        self.thermal_conduc = None
+        self.heat_capac = None
+        self.solar_absorp = None
+        self.ir_emissivity = None
+        self.transmittance = None
+        self.g_value = None
+        self.tau = None
+        self.u_value = None
+
         if self.hierarchy_node is not None:
 
             if self.hierarchy_node.ClassType() == \
@@ -1360,6 +1400,11 @@ class MapMaterial(object):
                     self.sim_instance.SimMaterial_SpecificHeatCoefA().getValue()
                 self.thermal_conduc = \
                     self.sim_instance.SimMaterial_CondCoefA().getValue()
-
+            elif self.hierarchy_node.ClassType() == \
+                    "SimMaterial_GlazingMaterial_SimpleGlazingSystem":
+                self.name = self.sim_instance.SimModelName().getValue()
+                self.g_value = self.sim_instance.SimMaterial_SolarHeatGainCoef().getValue()
+                self.tau = self.sim_instance.SimMaterial_VisTrans().getValue()
+                self.u_value = self.sim_instance.SimMaterial_UFactor().getValue()
             else:
                 print(self.hierarchy_node.ClassType())

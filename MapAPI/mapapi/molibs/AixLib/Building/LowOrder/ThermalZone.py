@@ -33,7 +33,7 @@ class ThermalZone(MapHierarchy.MapThermalZone):
     def mapp_me(self):
 
         from teaser.project import Project
-        import teaser.data.input.simmodel_input as t_sim
+        import mapapi.molibs.AixLib.resources.simmodel_teaser as t_sim
 
         t_prj = Project(load_data=False)
 
@@ -46,6 +46,8 @@ class ThermalZone(MapHierarchy.MapThermalZone):
         self.apply_teaser_parameters(t_prj)
         self.infiltration_rate(rate=0.5)
         self.internal_loads()
+
+        self.connect_to_weather(t_prj)
 
     def infiltration_rate(self, rate):
 
@@ -175,8 +177,17 @@ class ThermalZone(MapHierarchy.MapThermalZone):
         rec.add_parameter(name="orientationswallshorizontal",
                           value=thermal_zone.orientation_wall)
 
-
-
+    def connect_to_weather(self, teaser_project):
+        from mapapi.molibs.AixLib.Building.Components.Weather.Weather import\
+            Weather
+        we = Weather(self.project,
+                     self.hierarchy_node,
+                     self)
+        teaser_bldg = teaser_project.buildings[0]
+        we.init_me()
+        we.mapp_me()
+        we.connect_to_zone(self, teaser_bldg)
+        self.project.mod_components.append(we)
 
 
 
@@ -199,5 +210,7 @@ class ThermalZone(MapHierarchy.MapThermalZone):
                                 value = \
                                     sim_obje.SimTimeSeriesSched_ValUntilTime_1_144().getNumberList()[i]
                                 table.append((end_time, value))
+
+                            break
         return table
 
