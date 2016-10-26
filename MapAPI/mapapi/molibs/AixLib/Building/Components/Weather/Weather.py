@@ -33,6 +33,8 @@ class Weather(MapHierarchy.MapComponent):
                                                 type="Real")
         self.Ter_rad = self.add_parameter(name="Ter_rad",
                                           value="true")
+        self.fileName = self.add_parameter(name="fileName",
+                          value="Modelica.Utilities.Files.loadResource(\""+"modelica://AixLib/Resources/WeatherData/TRY2010_12_Jahr_Modelica-Library.txt"+"\")")
         self.TerrestrialRadiation = self.add_connector(
             name="TerrestrialRadiation",
             type="Real")
