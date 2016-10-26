@@ -812,7 +812,7 @@
 		<TargetComponentName>pipe_HeatTransfer</TargetComponentName>
 		<TargetLocation>AixLib.Fluid.FixedResistances.StaticPipe</TargetLocation>
 		<Property_Map_Gap_Name>ID063</Property_Map_Gap_Name>
-		<!-- <Property_Map_Gap_Name>ID062</Property_Map_Gap_Name> -->
+		<Property_Map_Gap_Name>ID062</Property_Map_Gap_Name>
 		<Property_Map_Gap_Name>ID064</Property_Map_Gap_Name>
 	</Component_Map_One2One>
 	<!-- component mapping for the water pipe -->
@@ -823,7 +823,7 @@
 		<TargetLocation>AixLib.Fluid.FixedResistances.StaticPipe</TargetLocation>
 		<!-- <Property_Map_Gap_Name>ID061T</Property_Map_Gap_Name> -->
 		<Property_Map_Gap_Name>ID063</Property_Map_Gap_Name>
-		<!-- <Property_Map_Gap_Name>ID062</Property_Map_Gap_Name> -->
+		<Property_Map_Gap_Name>ID062</Property_Map_Gap_Name>
 		<Property_Map_Gap_Name>ID064</Property_Map_Gap_Name>
 		<Property_Map_Transformation_Name>ID061</Property_Map_Transformation_Name>
 	</Component_Map_One2One>
@@ -833,7 +833,7 @@
 		<TargetComponentName>pipe_HeatTransfer</TargetComponentName>
 		<TargetLocation>AixLib.Fluid.FixedResistances.StaticPipe</TargetLocation>
 		<Property_Map_Gap_Name>ID063</Property_Map_Gap_Name>
-		<!-- <Property_Map_Gap_Name>ID062</Property_Map_Gap_Name> -->
+		<Property_Map_Gap_Name>ID062</Property_Map_Gap_Name>
 		<Property_Map_Gap_Name>ID064</Property_Map_Gap_Name>
 	</Component_Map_One2One>
 	<!-- component mapping for the expansion vessel, changed it to a one to one component mapping -->
