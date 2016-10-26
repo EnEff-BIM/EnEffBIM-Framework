@@ -38,6 +38,7 @@ class ThermalZone(MapHierarchy.MapThermalZone):
         t_prj = Project(load_data=False)
 
         t_sim.load_lib_sim_model(sim_api=self.project, t_prj=t_prj)
+        t_prj.merge_windows_calc = True
         t_prj.calc_all_buildings(raise_errors=True)
 
         self.target_location = "AixLib.Building.LowOrder.ThermalZone"
@@ -56,7 +57,7 @@ class ThermalZone(MapHierarchy.MapThermalZone):
                          self.hierarchy_node,
                          self)
         const.init_me()
-        const.target_location = "Modelica.Blocks.Sources.Constant"		
+        const.mapp_me()
         const.target_name = "infil" + "_" + self.target_name
         const.add_parameter('k', rate)
         const.add_connection(const.y, self.infiltrationRate)
@@ -154,7 +155,8 @@ class ThermalZone(MapHierarchy.MapThermalZone):
                          # value=thermal_zone.temperatureground) ???
         rec.add_parameter(name="Aw", value=thermal_zone.window_areas)
         #rec.add_parameter(name="UWin",
-        #                  value=thermal_zone.ua_value_win/thermal_zone.area_win)
+        #                  value=thermal_zone.ua_value_win/thermal_zone
+        # .area_win)
         rec.add_parameter(name="gsunblind", value=thermal_zone.g_sunblind_list)
         if thermal_zone.inner_walls:
             value_help="true"
@@ -162,20 +164,21 @@ class ThermalZone(MapHierarchy.MapThermalZone):
             value_help="false"
         rec.add_parameter(name="withInnerwalls", value=value_help)
         if thermal_zone.windows:
-            value_help="true"
+            value_help = "true"
         else:
-            value_help="false"
+            value_help = "false"
         rec.add_parameter(name="withWindows", value=value_help)
         if thermal_zone.outer_walls:
-            value_help="true"
+            value_help = "true"
         else:
-            value_help="false"
+            value_help = "false"
         rec.add_parameter(name="withOuterwalls", value=value_help)
         rec.add_parameter(name="RWin", value=thermal_zone.r1_win)
         rec.add_parameter(name="alphaConvWinInner", value=thermal_zone.alpha_conv_inner_win)
         rec.add_parameter(name="alphaConvWinOuter", value=thermal_zone.alpha_conv_outer_win)
         rec.add_parameter(name="awin", value=thermal_zone.solar_absorp_win)
-        #rec.add_parameter(name="orientationswallshorizontal",value=thermal_zone.orientation_wall)
+        #rec.add_parameter(name="orientationswallshorizontal",
+        #                  value=thermal_zone.orientation_wall)
 
     def connect_to_weather(self, teaser_project):
         from mapapi.molibs.AixLib.Building.Components.Weather.Weather import\
@@ -188,8 +191,6 @@ class ThermalZone(MapHierarchy.MapThermalZone):
         we.mapp_me()
         we.connect_to_zone(self, teaser_bldg)
         self.project.mod_components.append(we)
-
-
 
     def _help_schedule(self, table, hierarchy_schedule_internal):
 
