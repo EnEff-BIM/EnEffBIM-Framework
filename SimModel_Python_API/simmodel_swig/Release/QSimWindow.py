@@ -505,7 +505,7 @@ class MainWidget(QtGui.QWidget):
         ClassTypeShort = classType.split('_', 1)[0]	
         ClassTypeShort_aux = ClassTypeShort+ "_" + classType.split('_', 2)[1]			
         my_module = importlib.import_module(classType)
-        print("Lets look into the module: ", str(my_module),"\n")
+        #print("Lets look into the module: ", str(my_module),"\n")
         while True:		
             if hasattr(my_module, classType):
                 #print("It looks like ", classType, " did exits!")			
@@ -538,13 +538,15 @@ class MainWidget(QtGui.QWidget):
                 ListOfMethods = ListOfMethods[:i]				
                 break
         #print("\n ListOfMethods Filtered!: ",ListOfMethods, "\n")		
-		# Not all the attributes defined within a clase are obviously used. It means they are not declared in the simxml file.  Try to obtain a non defined value for instance by calling getValue() will cause the
-		# the program to crash. Some Parameters like Description, etc are common. The "best" solution I found is to search within the simxml for each object and check wheter the attribute is actually defined.			
+		# Not all the attributes defined within a class are obviously used. It means they are not declared in the simxml file.
+		# Try to obtain a non defined value for instance by calling getValue() will cause the
+		# the program to crash. Some Parameters like Description, etc are common.
+		# The "best" solution I found is to search within the simxml for each object and check whether the attribute is actually defined.			
 		
         #print("The selected object is of the class: ", self.selected_object.ObjClass , "we try now to extract some value from it:")
 		
         # The following piece of code search for the "start" and "end" lines between which the object, based on its RefId, is defined.
-        for x in range(0,len(self.Filename2)): 		
+        for x in range(0,len(self.Filename2)): # Iterate over files
             with open(self.Filename2[x]) as inF:				
                 for start, line in enumerate(inF,1):
                     if "\""+self.selected_object._refId+"\"" in line:
@@ -556,12 +558,13 @@ class MainWidget(QtGui.QWidget):
                     if end >= start:
                         if classType+">" in line:
                             #print("found at line: ",end)
-                            break
+                            break						
             if (start!=end): # if start != end means that the object was found at that file!! otherwise open() read till the end of the file.						
                 ToBeRemoved = []
                 InTheList = []
                 Values = ["RefId"]
-        # The Program search within the start and end lines of each object (RefId) for the attributes/methods that are actually defined based on the methods/attributes that could actually be defined, based on its class.		
+        # The Program search within the start and end lines of each object (RefId) for the attributes/methods
+		# that are actually defined based on the methods/attributes that could actually be defined, based on its class.		
                 for i in range(0,len(ListOfMethods)): 		
                     with open(self.Filename2[x]) as inF:
                         for n_line, line in enumerate(inF,1):
@@ -578,12 +581,18 @@ class MainWidget(QtGui.QWidget):
                                     break
         # The ListOfMethods is updated. Just the elements that are actually defined within the simxml file are saved.							
                 ListOfMethods = ["RefId"] + InTheList
-        # The following piece of code extract the values of the attributes/methods of the selected object. Depending on the type a different function has to be used to extract the information.
-        # Information is directly extracted (string) or extracted using getValue() or getNumberList().  		
+            else: 
+                pass #search in the other file.
+			
+        # The following piece of code extract the values of the attributes/methods of the selected object.
+		# Depending on the type a different function has to be used to extract the information.
+        # Information is directly extracted (string) or extracted using getValue() or getNumberList(). 
+        #print("Values ", len(Values), " -> ", Values) 		
         for i in range(0,len(ListOfMethods)):							
             if True:
-                print(str(type(self.selected_object._simModelObject)), "\n", str(ListOfMethods[i]))
-		        # getattr is used to call a function/class name using an string!! an instance of the class is created so that isinstance() can be used to compare types and know how the attribute should be extracted.				
+                #print(str(type(self.selected_object._simModelObject)), "\n", str(ListOfMethods[i]))
+		        # getattr is used to call a function/class name using an string!!
+				# an instance of the class is created so that isinstance() can be used to compare types and know how the attribute should be extracted.				
                 class_name = getattr(self.selected_object._simModelObject,ListOfMethods[i])			
                 instance = class_name()
                 #L1 = [method for method in dir(instance) if callable(getattr(instance, method))]
