@@ -64,7 +64,7 @@ def parameterstructur(par):
     if isinstance(par.value,list):
         if isinstance(par.value[0],tuple):
             aux=[]
-            if isinstance(par.value[0][0],str) and par.value[0][0] not in ("true","false") and par.value[0][0].find(used_libraries[0]) == -1 and par.value[0][0].find(used_libraries[1]) == -1:		
+            if isinstance(par.value[0][0],str) and par.value[0][0] not in ("true","false") and par.value[0][0].find(used_libraries[0]+".") == -1 and par.value[0][0].find(used_libraries[1]+".") == -1:		
                 for j in range(0,len(par.value)):
                     aux2 = par.value[j]			
                     aux.append(",".join("\""+str(elem)+"\"" for elem in aux2))		
@@ -75,14 +75,14 @@ def parameterstructur(par):
                     aux.append(",".join(str(elem) for elem in aux2))		
                 return par.name+"=["+";".join(aux)+"]" 				
         else:
-            if isinstance(par.value[0],str) and par.value[0] not in ("true","false") and par.value[0].find(used_libraries[0]) == -1 and par.value[0].find(used_libraries[1]) == -1:
+            if isinstance(par.value[0],str) and par.value[0] not in ("true","false") and par.value[0].find(used_libraries[0]+".") == -1 and par.value[0].find(used_libraries[1]+".") == -1:
                 #print("List and str ", par.name)			
                 return par.name+"={"+",".join("\""+str(elem)+"\"" for elem in par.value)+"}"
             else:
                 #print("List but no str", par.name, "[0]: ", type(par.value[0]) , " = ", par.value[0])				
                 return par.name+"={"+",".join(str(elem) for elem in par.value)+"}"				
     else:
-        if isinstance(par.value,str) and par.value not in ("true","false") and par.value.find(used_libraries[0]) == -1 and par.value.find(used_libraries[1]) == -1:	
+        if isinstance(par.value,str) and par.value not in ("true","false") and par.value.find(used_libraries[0]+".") == -1 and par.value.find(used_libraries[1]+".") == -1:	
             return par.name+"=\""+str(par.value)+"\""		
         else: 	
             return par.name+"="+str(par.value)	
