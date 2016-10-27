@@ -1478,6 +1478,10 @@ void SimHierarchy::parseSimSystemTmp(::std::auto_ptr< ::schema::simxml::Model::S
 // new update for version 2.2
 void SimHierarchy::parser2_2(::std::auto_ptr< ::schema::simxml::Model::SimModel >& simGeometryData, ::std::auto_ptr< ::schema::simxml::Model::SimModel >& simSysData, std::string _geoName, std::string _sysName)
 {
+	// clear cached data
+	if(SimHierarchyNodeList.size())
+		SimHierarchyNodeList.resize(0);
+
 	// load specified geometry class objects
 	loadSimGeomClassObj(_geoName);
 	// load HVAC components
