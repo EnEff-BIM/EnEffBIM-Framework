@@ -8,7 +8,7 @@ author = EnEff-BIM team
 modelicaLibs = [AIXLIB]
 
 [API]
-name = EnEffBIM
+name = directAPI
 minVer = 0.0
 maxVer = 9.9
 
@@ -21,5 +21,5 @@ function = filter01
 
 [TEMPLATES]
 #topFile = Main.mot
-topFile = Main1.mot
+topFile = Main2.mot
 type = mako
