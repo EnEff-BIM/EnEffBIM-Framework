@@ -72,9 +72,13 @@ def _set_basic_data(t_element, space_bound):
         t_lay.thickness = lay.thickness/1000
         mat = Material(parent=t_lay)
         mat.name = lay.material.name
-        mat.density = lay.material.density
+        mat.density = lay.material.density	
         mat.thermal_conduc = lay.material.thermal_conduc
-        mat.heat_capac = lay.material.heat_capac/1000
+        mat.thermal_conduc = 1		
+        if lay.material.heat_capac is not None:		
+            mat.heat_capac = lay.material.heat_capac/1000
+        else:		
+            mat.heat_capac = None		
 
 def _set_window_data(t_element, space_bound):
 
