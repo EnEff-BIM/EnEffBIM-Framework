@@ -241,14 +241,11 @@ class MoObject(object):
 
         """
         existing_para = False
-        #Values from Mapping rules are being readed as float! even if they are defined as int.
-		#Modelica complain when int ist defined as float. -> convert when possible to int! 
+        #Values from Mapping rules are being readed as float, even if they are defined as int.
+		#Modelica complain when an int is set to a float. Convert float:
         if type(value) == float and value.is_integer():
             value = int(value)		
-        for para in self.parameters:
-            #if type(value) == float and value.is_integer():
-            #    print("value will be converted to int! ", para.name, " = ", value) 			
-            #    value=int(value)			
+        for para in self.parameters:		
             if para.name == name:
                 existing_para = True
                 break
@@ -466,8 +463,13 @@ class MapBuilding(MoObject):
 
         super(MapBuilding, self).__init__(project, hierarchy_node)
 
-        #self.Longitude = self.hierarchy_node.getSimModelObject().Longitude()
-
+# Information from SimSite_BuildingSite_Default: 
+# Latitude and Longitude can not be obtained from .simxml file (missing support from API)
+        self.site_node = self.hierarchy_node.getParentList()[0]	
+        #self.Latitude = self.site_node.getSimModelObject().Latitude()
+        #self.Longitude = self.site_node.getSimModelObject().Longitude()						
+        self.SiteReferenceElevation = self.site_node.getSimModelObject().SiteReferenceElevation().getValue()/1000		
+		
         self.project.buildings.append(self)
         self.thermal_zones = []
         self.hvac_components_node = []
@@ -1207,11 +1209,11 @@ class MapSpaceBoundary(object):
                         self.RelatedBuildingElement = self.sim_instance.RelatedBuildingElement().getValue()						
                     else:				
                         self.RelatedBuildingElement = self.sim_instance.RelatedBuildingElement().getValue()
-                        if elements_to_boundaries[self.RelatedBuildingElement].index(self.sim_ref_id) == 0:
-                            index = 1						
-                        else:						
-                            index = 0                         						
-                        self.OthersideSpaceBoundary = elements_to_boundaries[self.RelatedBuildingElement][index]							
+                        #if elements_to_boundaries[self.RelatedBuildingElement].index(self.sim_ref_id) == 0:
+                        #    index = 1						
+                        #else:						
+                        #    index = 0                         						
+                        #self.OthersideSpaceBoundary = elements_to_boundaries[self.RelatedBuildingElement][index]							
 					
     def instantiate_element(self):
         bound_child = self.hierarchy_node.getChildList()
@@ -1402,5 +1404,8 @@ class MapMaterial(object):
                 self.g_value = self.sim_instance.SimMaterial_SolarHeatGainCoef().getValue()
                 self.tau = self.sim_instance.SimMaterial_VisTrans().getValue()
                 self.u_value = self.sim_instance.SimMaterial_UFactor().getValue()
+            elif self.hierarchy_node.ClassType() == \
+                    "SimMaterial_Default_Default":
+                self.name = self.sim_instance.SimModelName().getValue()				
             else:
                 print(self.hierarchy_node.ClassType())
