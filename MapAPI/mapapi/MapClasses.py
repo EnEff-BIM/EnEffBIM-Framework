@@ -98,7 +98,7 @@ class MoObject(object):
     """Base class for all mapped objects
 
     The MoObject class is the base class for all mapped objects in the
-    StaticAPI. It contains some library specific data and ist always referenced
+    StaticAPI. It contains some library specific data and is always referenced
     directly or indirectly (MapGap) to a SimModel Object.
 
 
