@@ -1,0 +1,57 @@
+The Generator directAPI sends merely the paths of the .simxml files (zone and hvac) and the path of the module
+"...\\simmodel_swig\\Release"
+
+The process of obtaind/read the needed information and map it to the specific classes* is defined within the 
+python section of the Main.mot template file
+
+*The follwoing classes are defined:
+Construction, Zone, Element, ElementOpaque, ElementTransparent, ConnecftionElementZone, ConnectionElementAmbient,
+ConnectionElementSolid, BuildingSystem
+
+To extract the information we first import the needed modules calling "importSwigApis" (the modulePath should be first
+included in sys path. Otherwise the modules cannot be found. Furthermore the SimTranslator could not be succesfully 
+imported with importSwigApis, and is therfore defined outside the function).
+
+1. CREATE CONSTRUCTIONS
+
+2. CREATE DICTIONARIES WITH USEFUL INFORMATION FOR LATER USE:
+	DoorsInZone   = {}  # key = Zone's Id, value = list of door's Id
+	WindowsInZone = {}  # key = Zone's Id, value = list of window's Id
+	WindowsToVoid = {}  # key = Window's Id, value = void's Id 
+	DoorsToVoid   = {}  # key = Door's Id, value = void's Id	
+	WindowVoidInZone = {}  # key = Window's Id, value = zone's Id
+	DoorVoidInZone = {}  # key = Door's Id, value = zone's Id 
+
+IMPORTANT: Not all simxml classes are supported and therefore not readed by the simxml API. As a provisional solution 
+the zone .simxml file (pathList[0]) is open and read to extract minimal but important information.
+Non supported classes are: SimDoor_GlazedDoor_Interior, SimWindow_Window_Interior, ...?
+
+3. WORK WITH SIMXML INFORMATION FROM SIMXML-API
+	- VIRTUAL boundaries are ignored, just PHYSICAL are considered
+	- Depending on the .simxml class a diferent class is instantiate and the needed values might be extracted
+        in a different way. For instance, Windows are instantiate as "ElementTransparent". For SimWindow_Window_Exterior
+	parameters can be readed, while for SimWindow_Window_Interior a not. Thus a dummy element is instantiate. 
+	- At the same time the classes for the connections are instantiate.
+
+4. PRINT MODELICA CODE
+
+
+
+---------------------------------
+Different limitations and difficulties that appear during the implementation are in part here summarized:
+
+- Missing support for important classes: SimWindow_Window_Interior and SimDoor_GlazedDoor_Interior
+
+- In some .simxml files such as OneZone, TwoZones, ... the internal boundaries, SimSpaceBoundary_SecondLevel_SubTypeA, contain 
+the parameter "OthersideSpaceBoundary" which give the Id of the boundary at the other side of the boundary (wall, ...). 
+This parameter is but not find in boundaries of other .simxml files.
+An alternative can be find for boundaries associated to windows and doors, such kind of elements will be rarely part of more than two zones.
+However, Walls can be connected to many zones...
+http://d-alchemy.com:81/#simLibrary~simLibrary.SimSpaceBoundary_members.html
+
+- External elements, "InternalOrExternalBoundary= EXTERNAL" might be instance of an interior class SimWindow_Window_Interior and viceversa,
+thus it is important to check the attribute ""InternalOrExternalBoundary".   
+
+- Material classes might be just contain a name ("SimModelName") and not physical/thermal properties. It is necessary to find a way to deal with it, 
+using some materials defined within the modelica library to be used.
+ 
