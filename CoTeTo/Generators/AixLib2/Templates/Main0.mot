@@ -1,0 +1,217 @@
+<%
+used_libraries = ("Modelica","AixLib","BuildingSystems")
+
+def projectdescription(MapData):
+	return ""
+
+def printcomponent(com):
+    parlist=[]
+    if com.parameters or com.records or com.hvac_components_mod:
+        parlist.append("(")    	
+    for par in com.parameters:
+        if par != com.parameters[-1]: # No the last element		
+            parlist.append(parameterstructur(par)+",")
+        elif com.records: # There are records that will be later add
+            parlist.append(parameterstructur(par)+",")
+        elif com.hvac_components_mod: # There are components that will be later add
+            parlist.append(parameterstructur(par)+",")			
+        else: # Last element and there are no records.				
+            parlist.append(parameterstructur(par)+")")		
+    for rec in com.records:
+        parlist.append(rec.name+"="+rec.record_location+"(")
+        for par in rec.parameters:
+            if par != rec.parameters[-1]:		
+                parlist.append(parameterstructur(par)+",")
+            elif rec != com.records[-1]:
+                parlist.append(parameterstructur(par)+"),")
+            elif com.hvac_components_mod: # There are components that will be later add
+                parlist.append(parameterstructur(par)+"),")			
+            else:
+                parlist.append(parameterstructur(par)+"))")
+    for comlvl2 in com.hvac_components_mod:
+# Records in comlvl2 not added/considered so far!	
+        parlist.append(comlvl2.target_name+"(")
+        for par in comlvl2.parameters:
+            if par != comlvl2.parameters[-1]:		
+                parlist.append(parameterstructur(par)+",")
+            elif comlvl2.records:
+                parlist.append(parameterstructur(par)+",")		
+            elif comlvl2 != com.hvac_components_mod[-1]:
+                parlist.append(parameterstructur(par)+"),")			
+            else:			
+                parlist.append(parameterstructur(par)+"))")
+			
+    if com.prefix == "extends" or com.prefix == "record" or com.prefix == "model":
+        header = com.prefix + " " + str(com.target_location) 
+    else:	
+        header = str(com.target_location) + " " + str(com.target_name) 
+    return parlist,header		
+
+	
+def parameterstructur(par):
+    if isinstance(par.value,list):
+        if isinstance(par.value[0],tuple):
+            aux=[]
+            if isinstance(par.value[0][0],str) and par.value[0][0] not in ("true","false") and par.value[0][0].find(used_libraries[0]+".") == -1 and par.value[0][0].find(used_libraries[1]+".") == -1 and par.value[0][0].find(used_libraries[2]+".") == -1:		
+                for j in range(0,len(par.value)):
+                    aux2 = par.value[j]			
+                    aux.append(",".join("\""+str(elem)+"\"" for elem in aux2))		
+                return par.name+"=["+";".join(aux)+"]"
+            else: 			
+                for j in range(0,len(par.value)):
+                    aux2 = par.value[j]			
+                    aux.append(",".join(str(elem) for elem in aux2))		
+                return par.name+"=["+";".join(aux)+"]" 				
+        else:
+            if isinstance(par.value[0],str) and par.value[0] not in ("true","false") and par.value[0].find(used_libraries[0]+".") == -1 and par.value[0].find(used_libraries[1]+".") == -1 and par.value[0].find(used_libraries[2]+".") == -1:
+                #print("List and str ", par.name)			
+                return par.name+"={"+",".join("\""+str(elem)+"\"" for elem in par.value)+"}"
+            else:
+                #print("List but no str", par.name, "[0]: ", type(par.value[0]) , " = ", par.value[0])				
+                return par.name+"={"+",".join(str(elem) for elem in par.value)+"}"				
+    else:
+        if (par.typ == "redeclare"): 
+            return par.typ + " " + par.value + " " + par.name
+        if (par.typ == "parameter"): 
+            return par.typ + " " + par.name + "=" + par.value			
+        elif isinstance(par.value,str) and par.value not in ("true","false") and par.value.find(used_libraries[0]+".") == -1 and par.value.find(used_libraries[1]+".") == -1 and par.value.find(used_libraries[2]+".") == -1:
+            print(str(par.value))			
+            return par.name + "=\"" + str(par.value) + "\""		
+        else:		
+            return par.name + "=" + str(par.value)	
+	
+
+def printconnections(MyCon):
+    if not MyCon.index_a:
+        if not MyCon.index_b:
+            if MyCon.inside_b:
+                if MyCon.inside_a:                			
+                    return MyCon.connector_a.name+","+MyCon.connector_b.name
+                else:
+                    return MyCon.connector_a.parent.target_name+"."+MyCon.connector_a.name+","+MyCon.connector_b.name				
+            else:
+                if MyCon.inside_a:
+                    return MyCon.connector_a.name+","+MyCon.connector_b.parent.target_name+"."+MyCon.connector_b.name	
+                else:				
+                    return MyCon.connector_a.parent.target_name+"."+MyCon.connector_a.name+","+MyCon.connector_b.parent.target_name+"."+MyCon.connector_b.name			
+        else:
+            if MyCon.inside_b:
+                if MyCon.inside_a:
+                    return MyCon.connector_a.name+","+MyCon.connector_b.name+"["+str(MyCon.index_b)+"]"
+                else:				
+                    return MyCon.connector_a.parent.target_name+"."+MyCon.connector_a.name+","+MyCon.connector_b.name+"["+str(MyCon.index_b)+"]"
+            else:
+                if MyCon.inside_a:
+                    return MyCon.connector_a.name+","+MyCon.connector_b.parent.target_name+"."+MyCon.connector_b.name+"["+str(MyCon.index_b)+"]"	
+                else:			
+                    return MyCon.connector_a.parent.target_name+"."+MyCon.connector_a.name+","+MyCon.connector_b.parent.target_name+"."+MyCon.connector_b.name+"["+str(MyCon.index_b)+"]"			
+    else:
+        if not MyCon.index_b:
+            if MyCon.inside_b:
+                if MyCon.inside_a:
+                    return MyCon.connector_a.name+"["+str(MyCon.index_a)+"],"+MyCon.connector_b.name
+                else:				
+                    return MyCon.connector_a.parent.target_name+"."+MyCon.connector_a.name+"["+str(MyCon.index_a)+"],"+MyCon.connector_b.name
+            else:
+                if MyCon.inside_a:
+                    return MyCon.connector_a.name+"["+str(MyCon.index_a)+"],"+MyCon.connector_b.parent.target_name+"."+MyCon.connector_b.name
+                else:			
+                    return MyCon.connector_a.parent.target_name+"."+MyCon.connector_a.name+"["+str(MyCon.index_a)+"],"+MyCon.connector_b.parent.target_name+"."+MyCon.connector_b.name
+        else:
+            if MyCon.inside_b:
+                if MyCon.inside_a:
+                    return MyCon.connector_a.name+"["+str(MyCon.index_a)+"],"+MyCon.connector_b.name+"["+str(MyCon.index_b)+"]"	
+                else:			
+                    return MyCon.connector_a.parent.target_name+"."+MyCon.connector_a.name+"["+str(MyCon.index_a)+"],"+MyCon.connector_b.name+"["+str(MyCon.index_b)+"]"	
+            else:
+                if MyCon.inside_a:
+                    return MyCon.connector_a.name+"["+str(MyCon.index_a)+"],"+MyCon.connector_b.parent.target_name+"."+MyCon.connector_b.name+"["+str(MyCon.index_b)+"]"	
+                else:				
+                    return MyCon.connector_a.parent.target_name+"."+MyCon.connector_a.name+"["+str(MyCon.index_a)+"],"+MyCon.connector_b.parent.target_name+"."+MyCon.connector_b.name+"["+str(MyCon.index_b)+"]"		
+%>
+
+model CoTeTo_${MapData.project_name}
+${projectdescription(MapData)}
+
+%for myComp in MapData.hvac_components:
+  <%param_section,header = printcomponent(myComp)%>
+  ${header}
+  %for j in range(0,len(param_section)):
+    ${param_section[j]} 
+  %endfor
+    "${myComp.sim_ref_id}"; 
+%endfor
+
+%for myComp in MapData.mod_components:
+  <%param_section,header = printcomponent(myComp)%>
+  ${header}
+  %for j in range(0,len(param_section)):
+    ${param_section[j]} 
+  %endfor
+    "${myComp.sim_ref_id}";
+%endfor
+
+%for myBuilding in MapData.buildings:
+  <%param_section,header = printcomponent(myBuilding)%>
+  ${header} "${myBuilding.sim_ref_id}";
+  %for mComponent in MapData.mappend_component:
+    <%param_section,header = printcomponent(mComponent)%>
+    ${header} 
+    %for j in range(0,len(param_section)):
+        ${param_section[j]}
+    %endfor		
+  %endfor
+%endfor
+%for myBuilding in MapData.buildings:
+model ${myBuilding.target_location}
+<%param_section,header = printcomponent(myBuilding)%>
+    %for j in range(0,len(param_section)):
+        ${param_section[j]}
+     %endfor	 
+  %for myZone in myBuilding.thermal_zones:
+  <%param_section,header = printcomponent(myZone)%>
+  ${header}
+    %for j in range(0,len(param_section)):
+    ${param_section[j]} 
+    %endfor
+    "${myZone.sim_ref_id}";
+  %endfor
+  %for myZone in myBuilding.thermal_zones:
+    %for myBoundary in myZone.space_boundaries:  
+  <%param_section,header = printcomponent(myBoundary)%>
+  ${header}
+    %for j in range(0,len(param_section)):
+    ${param_section[j]} 
+    %endfor
+    "${myZone.sim_ref_id}";
+    %endfor
+  %endfor  
+  %for hvac in myBuilding.hvac_components_mod:
+    <%param_section,header = printcomponent(hvac)%>
+    ${header}
+    %for j in range(0,len(param_section)):
+     ${param_section[j]} 
+    %endfor ;	
+  %endfor 
+
+equation
+% for MyCon in myBuilding.connections:
+   <%con = printconnections(MyCon)%> connect(${con});
+% endfor
+
+end ${myBuilding.target_location};
+%endfor
+
+equation
+% for MyCon in MapData.connections:
+   <%con = printconnections(MyCon)%> connect(${con});
+% endfor
+
+annotation(
+  Documentation(
+    info="<html>
+        used xml file was ${MapData.simxml_file}
+      </html>")
+);
+
+end CoTeTo_${MapData.project_name};

@@ -18,8 +18,8 @@ def fetchData(uriList, systemCfg, generatorCfg, logger):
     modulePath = os.path.join(default_path, "EnEffBIM-Framework\\SimModel_Python_API"
                               "\\simmodel_swig\\Release")
     print("modulepath: ", modulePath)
-    zoneFile_path = os.path.join(modulePath,
-                                 "UseCase1_1_BoilerGasRadiatorFromSimergy.simxml")
+    #zoneFile_path = os.path.join(modulePath,"UseCase1_1_BoilerGasRadiatorFromSimergy.simxml")
+    zoneFile_path = os.path.join(modulePath,"TwoZonesW.simxml")	
     hvacFile_path = os.path.join(modulePath,
                                  "1.1_Architecture+HVAC+Zone_Curve+Schedule_korr.simxml")
     fullFile_path = os.path.join(modulePath,"Boiler_Gas_VDI6020_V12.simxml")

@@ -127,10 +127,12 @@ class MoObject(object):
         for some application it might be useful to store the SimModel
         Reference ID of the mapped Object
 
-    parameters : list of MapParameter or MapRecord
-        This is an *iterable* list containing all records and parameters of
-        the MoObject
+    parameters : list of MapParameter
+        This is an *iterable* list containing all parameters of the MoObject
 
+    records : list of MapRecord
+        This is an *iterable* list containing all records of the MoObject
+		
     connectors : list of MapConnector
         This is an *iterable* list containing all  Modelica connectors of the
         MoObject (e.g. Real, Heatport, Fluid)
@@ -140,6 +142,11 @@ class MoObject(object):
         for the hierarchy node, the first entry of MappedCompomponent is
         assinged, otherwise mapped_component is None and needs to be set for
         one to many mapping individually
+		
+    prefix : str
+        Modelica components might have a prefix such as "extends", "replaceable", ...
+        this attribute is used to set the object prefix.		
+		
     """
 
     def __init__(self, project, hierarchy_node):
@@ -176,6 +183,8 @@ class MoObject(object):
         self.parameters = []
         self.records = []
         self.connectors = []
+        self.prefix = ""		
+		
 
     def add_connector(self,
                       name,
@@ -212,12 +221,12 @@ class MoObject(object):
         connector = MapConnector(self, hierarchy_node)
         connector.name = name
         connector.type = type
-        connector.dimension = dimension
+        connector.dimension = dimension	
         self.connectors.append(connector)
 
         return connector
 
-    def add_parameter(self, name, value):
+    def add_parameter(self, name, value, typ=""):
         """This adds a MapParameter to the MoObject
 
         For topology mapping it might be necessary to add additional
@@ -242,7 +251,7 @@ class MoObject(object):
         """
         existing_para = False
         #Values from Mapping rules are being readed as float, even if they are defined as int.
-		#Modelica complain when an int is set to a float. Convert float:
+		#Modelica complain when an int is set to a float. Convert float:		
         if type(value) == float and value.is_integer():
             value = int(value)		
         for para in self.parameters:		
@@ -255,7 +264,7 @@ class MoObject(object):
             para.value = value
             return para
         elif existing_para is False:
-            mapped_prop = MapParameter(self, name, value)
+            mapped_prop = MapParameter(self, name, value, typ)
             self.parameters.append(mapped_prop)
             return mapped_prop
 
@@ -263,7 +272,9 @@ class MoObject(object):
                        connector_a,
                        connector_b,
                        index_a=None,
-                       index_b=None):
+                       index_b=None,
+                       inside_a=False,
+                       inside_b=False):
         """This connects the MoObject to another Object
 
         For topology mapping it might be necessary to connect two MoObjects.
@@ -301,7 +312,9 @@ class MoObject(object):
             mapped_con = MapConnection(connector_a,
                                        connector_b,
                                        index_a,
-                                       index_b)
+                                       index_b,
+                                       inside_a,
+                                       inside_b)
             mapped_con.type = connector_a.type
 
             self.project.connections.append(mapped_con)
@@ -475,18 +488,21 @@ class MapBuilding(MoObject):
         self.hvac_components_node = []
         self.hvac_components_sim = []
         self.hvac_components_mod = []
+        self.connections = []		
         self.internalGainsConv = self.add_connector(name="internalGainsConv",
                                                     type="HeatPort")
         
         self.instantiate_components()
         self.instantiate_thermal_zones(self.building_element_to_boundaries())
-        
+
+        self.convert_me()
 		
         self.convert_components()
         self.instantiate_connections()
 
-        for tz in self.thermal_zones:
-            tz.mapp_me()
+        #for tz in self.thermal_zones:
+        #    tz.mapp_me()
+        self.mapp_me()		
         for a in self.hvac_components_sim:
             a.mapp_me()
             pass
@@ -547,7 +563,7 @@ class MapBuilding(MoObject):
                 self.thermal_zones.append(MapThermalZone(project=self.project,
                                                          hierarchy_node=bldg_child[a],
                                                          parent=self,elements_to_boundaries=elements_to_boundaries))
-                self.thermal_zones[-1].convert_me()
+                #self.thermal_zones[-1].convert_me()
 	
     def building_element_to_boundaries(self):
         '''Dictionary where the building elements' ID are the keys
@@ -616,7 +632,14 @@ class MapBuilding(MoObject):
         for a in self.hvac_components_sim:
             a.convert_me()
 
+    def convert_me(self):
+        """Converts the MapBuilding and childs MapThermalZone to a library specific class"""
+        from mapapi.molibs.BuildingSystems.Buildings.Building import Building        		
+        self.__class__ = Building
+        self.init_me()
 
+			
+			
 class MapThermalZone(MoObject):
     """Representation of a mapped thermal zone
 
@@ -648,17 +671,20 @@ class MapThermalZone(MoObject):
         self.area = None
         self.volume = None
         self.space_boundaries = []
-        from mapapi.molibs.AixLib.Building.LowOrder.ThermalZone import \
-            ThermalZone
-        self.aix_lib = {"SimSpatialZone_ThermalZone_Default" : ThermalZone}
+        self.hvac_components_mod = []		
+        #from mapapi.molibs.AixLib.Building.LowOrder.ThermalZone import \
+        #    ThermalZone
+        #self.aix_lib = {"SimSpatialZone_ThermalZone_Default" : ThermalZone}
         self.instantiate_space_boundaries()
         spatial_child = self.hierarchy_node.getChildList()
         for a in range(spatial_child.size()):
             if spatial_child[a].ClassType() == "SimSpace_Occupied_Default":
                 self.height = spatial_child[a].getSimModelObject().SpaceHeight().getValue()
-
+                self.volume = spatial_child[a].getSimModelObject().SpaceNetVolume().getValue()				
+                self.area = spatial_child[a].getSimModelObject().SpaceNetFloorArea().getValue()
+				
     def convert_me(self):
-        """Converts the MapComponent to a library specific component"""
+        """Converts the MapThermalZone to a library specific class"""
         for key, value in self.aix_lib.items():
             if self.hierarchy_node.ClassType() == key:
                 self.__class__ = value
@@ -676,7 +702,7 @@ class MapThermalZone(MoObject):
                     if occ_child[b].ClassType() == \
                             "SimSpaceBoundary_SecondLevel_SubTypeA":
                         if occ_child[b].getSimModelObject().PhysicalOrVirtualBoundary().getValue() == "PHYSICAL":
-                            space_bound = MapSpaceBoundary(self, hierarchy_node=occ_child[b],elements_to_boundaries=self.elements_to_boundaries)
+                            space_bound = MapSpaceBoundary(self, hierarchy_node=occ_child[b],elements_to_boundaries=self.elements_to_boundaries,project=self.project)
                             space_bound.instantiate_element()
                             self.space_boundaries.append(space_bound)
 
@@ -704,6 +730,7 @@ class MapComponent(MoObject):
     connected_out : list of HierarchyNodes
         list of hierarchy nodes that are connected FROM this MapComponent
 
+    hvac_components_mod: A component might contain other components!		
     """
 
     def __init__(self, project, hierarchy_node, parent=None):
@@ -720,7 +747,7 @@ class MapComponent(MoObject):
         self.comp_con = {}
         self.comp_con_inout = {}
 
-
+        self.hvac_components_mod = []
     def find_loop_connection(self, hierarchy_node=None):
         '''
 
@@ -889,6 +916,14 @@ class MapConnection(object):
     index_b : index of connector_b
         default is None, only appicable if MapConnector has an index
 
+    inside_a : Connectors might be accessed from inside (class definition)
+        and from outside (instance of the class). When used from inside, 
+        the name of the connector should be directly used
+
+    inside_b : Connectors might be accessed from inside (class definition)
+        and from outside (instance of the class). When used from inside, 
+        the name of the connector should be directly used
+		
     Attributes
     ----------
 
@@ -908,12 +943,16 @@ class MapConnection(object):
                  connector_a,
                  connector_b,
                  index_a = None,
-                 index_b = None):
+                 index_b = None,
+                 inside_a = False,
+                 inside_b = False):
 
         self.connector_a = connector_a
         self.connector_b = connector_b
         self.index_a = index_a
         self.index_b = index_b
+        self.inside_a = inside_a
+        self.inside_b = inside_b		
         self.type = ""
         self.sim_ref_id = None
 
@@ -957,7 +996,7 @@ class MapConnector(object):
         self.hierarchy_node = hierarchy_node
         self.name = ""
         self.type = ""
-        self.dimension = 1
+        self.dimension = 1		
         self.sim_ref_id = None
 
 class MapControl(object):
@@ -1014,13 +1053,18 @@ class MapParameter(object):
         Value of the Parameter, can be float, int, boolean, string, list or array
         with corresponding data type.
 
+    typ : str
+        Modelica type for the parameter. Real/Boolean/... 
+        Modelica.SIunits.<any type> or an own defined type.
+		It might be used to add a prefix - final, ...		
     """
 
-    def __init__(self, parent, name, value):
+    def __init__(self, parent, name, value, typ=""):
 
         self.parent = parent
-        self.name = name
+        self.name  = name
         self.value = value
+        self.typ  = typ
 
 class MapRecord(object):
     """Representation of a mapped record
@@ -1055,7 +1099,7 @@ class MapRecord(object):
         self.record_location = record_location
         self.parameters = []
 
-    def add_parameter(self, name, value):
+    def add_parameter(self, name, value, typ=""):
         """This adds a Parameter to the MapRecord
 
         For topology mapping it might be necessary to add additional propertys,
@@ -1079,13 +1123,13 @@ class MapRecord(object):
             returns the MapParameter instance
 
         """
-        mapped_prop = MapParameter(self, name, value)
+        mapped_prop = MapParameter(self, name, value, typ)
 
         self.parameters.append(mapped_prop)
 
         return mapped_prop
 
-class MapSpaceBoundary(object):
+class MapSpaceBoundary(MoObject):
     """Representation of a mapped space boundary
 
     The MapSpaceBoundary class is a representation of a space boundary
@@ -1112,13 +1156,17 @@ class MapSpaceBoundary(object):
 
     OthersideSpaceBoundary: str		
         ID of the space boundary linked to the same INTERNAL element
-        (wall, window, ...)        		
+        (wall, window, ...)
+
+    OthersideZone: str		
+        ID of the zone linked to the same INTERNAL element
+        (wall, window, ...)   		
 
     RelatedBuildingElement: str		
         ID of the building element associated to this boundary
 		
     area : float
-        area of building element
+        area of building element		
 
     tilt : float
         tilt against horizontal
@@ -1152,12 +1200,14 @@ class MapSpaceBoundary(object):
 
     """
 
-    def __init__(self, parent, elements_to_boundaries, hierarchy_node=None):
+    def __init__(self, parent, elements_to_boundaries, project, hierarchy_node=None):
 
+        super(MapSpaceBoundary, self).__init__(project, hierarchy_node)	
         self.parent = parent
         self.hierarchy_node = hierarchy_node
         self.type = None
-        self.OthersideSpaceBoundary = None		
+        self.OthersideSpaceBoundary = None
+        self.OthersideZone = None		
         if self.hierarchy_node is not None:
             self.sim_instance = self.hierarchy_node.getSimModelObject()
             self.sim_ref_id = self.sim_instance.RefId()
@@ -1180,7 +1230,7 @@ class MapSpaceBoundary(object):
         self.internal_external = \
             self.sim_instance.InternalOrExternalBoundary().getValue()      		
         self.area = self.sim_instance.GrossSurfaceArea().getValue()/1000000
-
+	
         self.tilt = None
         self.orientation = None
 
@@ -1193,7 +1243,7 @@ class MapSpaceBoundary(object):
         self.building_element = None
         self.layer_set = None
         self.mapped_layer = []
-
+        self.hvac_components_mod = []
         child = self.hierarchy_node.getChildList()
         for q in range(child.size()):
             if child[q].isClassType("SimGeomVector_Vector_Direction"):
@@ -1205,7 +1255,7 @@ class MapSpaceBoundary(object):
                 self.simmodel_normal_vector = None
                 if self.internal_external == "INTERNAL":
                     if child[q].ClassType() in ["SimWall_Wall_Interior","SimWall_Wall_ExteriorAboveGrade","SimWall_Wall_Default"]:				
-                        #self.OthersideSpaceBoundary = self.sim_instance.OthersideSpaceBoundary().getValue()
+                        self.OthersideSpaceBoundary = self.sim_instance.OthersideSpaceBoundary().getValue()
                         self.RelatedBuildingElement = self.sim_instance.RelatedBuildingElement().getValue()						
                     else:				
                         self.RelatedBuildingElement = self.sim_instance.RelatedBuildingElement().getValue()

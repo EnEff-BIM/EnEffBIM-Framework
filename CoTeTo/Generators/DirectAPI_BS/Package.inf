@@ -1,0 +1,25 @@
+[GENERATOR]
+name = directAPI
+version = 1
+description = Generates Modelica code for BuildingSystems from EnEFF-BIM datas
+author = crt
+
+[REQUIRES]
+modelicaLibs = [BuildingSystems]
+
+[API]
+name = directAPI
+minVer = 0.0
+maxVer = 9.9
+
+[MAPRULES]
+files = RuleSet01.xml
+
+[PYFILTER]
+module = Filter01
+function = filter01
+
+[TEMPLATES]
+#topFile = Main0.mot
+topFile = Main4.mot
+type = mako

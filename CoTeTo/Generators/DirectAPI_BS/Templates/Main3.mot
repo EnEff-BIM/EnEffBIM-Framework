@@ -1,0 +1,838 @@
+<%
+##
+## Set surface temperatures as an output of the building model: surTemOut = True
+surTemOut = True
+#surTemOut = False
+import numpy as np
+import math
+
+## Classes for storing the information of the building model instances
+class Construction:
+  def __init__(self, name = "", nLayers = 1, thickness = [], material = []):
+    self.name = name
+    self.nLayers = nLayers
+    self.thickness = thickness
+    self.material = material
+
+class Zone:
+  def __init__(self, name, nElements, volume, height, TSetHeating, TSetCooling, airchange, heatsource):
+    self.name = name
+    self.nElements = nElements
+    self.volume = volume
+    self.height = height
+    self.TSetHeating = TSetHeating
+    self.TSetCooling = TSetCooling
+    self.airchange = airchange
+    self.heatsource = heatsource
+
+class Element:
+  def __init__(self, name, angleDegAzi, angleDegTil, height, width):
+    self.name = name
+    self.angleDegAzi = angleDegAzi
+    self.angleDegTil = angleDegTil
+    self.height = height
+    self.width = width
+
+class ElementOpaque(Element):
+  def __init__(self, name, angleDegAzi, angleDegTil, height, width, constructionData, nInnSur = 0, innerSurfaces = []):
+    Element.__init__(self, name, angleDegAzi, angleDegTil, height, width)
+    self.constructionData = constructionData
+    self.nInnSur = nInnSur
+    self.innerSurfaces = innerSurfaces
+
+class ElementTransparent(Element):
+  def __init__(self, name, angleDegAzi, angleDegTil, height, width):
+    Element.__init__(self, name, angleDegAzi, angleDegTil, height, width)
+
+class ConnectionElementZone:
+  def __init__(self, element, elementPort, zone, zonePort):
+    self.element = element
+    self.elementPort = elementPort
+    self.zone = zone
+    self.zonePort = zonePort
+
+class ConnectionElementAmbient:
+  def __init__(self, element, elementPort, ambientPort):
+    self.element = element
+    self.elementPort = elementPort
+    self.ambientPort = ambientPort
+
+class ConnectionElementSolid:
+  def __init__(self, element, elementPort, solidPort):
+    self.element = element
+    self.elementPort = elementPort
+    self.solidPort = solidPort
+
+class BuildingSystem:
+  def __init__(self, name = "BuildingSystem", location = ""):
+    self.name = name
+    self.location = location
+
+## Definition of the multi-zone building
+##for filename in json_files:
+##  jdata = json_files[filename]
+## Zugriff auf SimModel-API (Low-Level)
+
+import os,sys
+
+def importSwigApis():
+    """The SimModel classes are loaded.It gives access to the properties
+    defined within the classes. Otherwise one will have SwigPyObjects!.
+    help: use dir /b /a-d > filenames.txt"""		
+    import base
+    import SimModel_Hierachy
+    import SimModel_Mapping
+    import SimAddress_Postal_Default
+    import SimAppLibraryDefault_AppLibraryDefault_GlobalLibrary
+    import SimAppObjNameDefaultDistributionSystemHvacChilledWaterLoop
+    import SimAppObjNameDefault_BldgComponentGroup_HvacComponent
+    import SimAppObjNameDefault_BldgComponentGroup_HvacComponentGroup
+    import SimAppObjNameDefault_DistributionSystemSitePowerGeneration
+    import SimAppObjNameDefault_DistributionSystem_HvacAirLoop
+    import SimAppObjNameDefault_DistributionSystem_HvacCondenserLoop
+    import SimAppObjNameDefault_DistributionSystem_HvacHotWaterLoop
+    import SimAppObjNameDefault_DistributionSystem_HvacSteamLoop
+    import SimAppObjNameDefault_DistributionSystem_MixedWaterLoop
+    import SimAppObjNameDefault_DistributionSystem_RefrigerationLoop
+    import SimAppObjNameDefault_DistributionSystem_SitePowerDemand
+    import SimAppObjNameDefault_DistributionSystem_VarRefrigerantFlow
+    import SimAppObjNameDefault_SiteContext_AdjacentSite
+    import SimAppObjNameDefault_SiteContext_SolarObstruction
+    import SimAppObjNameDefault_Space_Space
+    import SimAppObjNameDefault_SpatialContainer_Building
+    import SimAppObjNameDefault_SpatialContainer_BuildingStory
+    import SimAppObjNameDefault_SpatialContainer_Project
+    import SimAppObjNameDefault_SpatialContainer_Site
+    import SimAppObjNameDefault_SpatialZone_CeilingPlenumZone
+    import SimAppObjNameDefault_SpatialZone_FloorPlenumZone
+    import SimAppObjNameDefault_SpatialZone_ThermalZone
+    import SimAppObjNameDefault_ZoneGroup_CeilingPlenumZoneGroup
+    import SimAppObjNameDefault_ZoneGroup_DaylightingZoneGroup
+    import SimAppObjNameDefault_ZoneGroup_FloorPlenumZoneGroup
+    import SimAppObjNameDefault_ZoneGroup_HvacEquipmentGroup
+    import SimAppObjNameDefault_ZoneGroup_NatVentZoneGroup
+    import SimAppObjNameDefault_ZoneGroup_ThermalZoneGroup
+    import SimAppPreferences_AppPreferences_AutoSave
+    import SimAppPreferences_AppPreferences_AutoSaveInterval
+    import SimAppPreferences_AppPreferences_MinMonthlyChargeType
+    import SimAppUnitDefault_AppUnitDefault_DatabaseDefault
+    import SimArbitraryProfileDef_ArbitraryProfile_Closed
+    import SimBldgSiteParams_BuildingSite_Default
+    import SimBldgStoryParams_BuildingStory_Default
+    import SimBuildingStory_BuildingStory_Default
+    import SimBuilding_Building_Default
+    import SimCartesianTransformOperator_3D_Uniform
+    import SimClassificationClassificationReferenceSpaceCategoryOwner
+    import SimClassification_ClassificationReferenceSpaceCategoryBoma
+    import SimClassification_ClassificationReference_SpaceTypeOwner
+    import SimClassification_ClassificationSystem_Default
+    import SimClassification_ClassificationSystem_OmniClass
+    import SimConnectedFaceSet_ConnectedFaceSet_ClosedShell
+    import SimConnectedFaceSet_ConnectedFaceSet_Default
+    import SimConnection_HotWaterFlow_Default
+    import SimConnection_ZoneAirFlow_Default
+    import SimController_SupplyWater_Temperature
+    import SimController_ZoneControlTemperature_Thermostat
+    import SimControlScheme_AvailabilityManagerScheme_Scheduled
+    import SimControlScheme_ControlAndSequencingScheme_HeatingLoad
+    import SimControlScheme_SetpointManagerScheme_ScheduledSetpoint
+    import SimControlScheme_SetpointScheme_SingleHeating
+    import SimDerivedUnitType_DerivedUnit_Default
+    import SimDistributionPort_AirFlowPort_Air_In
+    import SimDistributionPort_AirFlowPort_Air_Out
+    import SimDistributionPort_HotWaterFlowPort_Water_In
+    import SimDistributionPort_HotWaterFlowPort_Water_InOrOut
+    import SimDistributionPort_HotWaterFlowPort_Water_Out
+    import SimFaceBound_FaceBound_Default
+    import SimFaceBound_FaceBound_FaceOuterBound
+    import SimFace_Face_Default
+    import SimFeatureElementSubtraction_Void_Opening
+    import SimFlowController_Valve_Default
+    import SimFlowController_Valve_TemperingValve
+    import SimFlowEnergyTransferStorage_HotWaterTank_Expansion
+    import SimFlowEnergyTransferStorage_HotWaterTank_Mixed
+    import SimFlowEnergyTransfer_ConvectiveHeater_Radiant_Water
+    import SimFlowEnergyTransfer_ConvectiveHeater_Water
+    import SimFlowFitting_Default_Default
+    #no module named: import SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop
+    #no module named: import SimFlowFitting_FlowElementProxy_SupplyProxy_AirLoop
+    import SimFlowFitting_Mixer_DemandProxyMixerWater
+    import SimFlowFitting_Splitter_DemandProxySplitterWater
+    import SimFlowMover_Pump_VariableSpeedReturn
+    import SimFlowPlant_Boiler_BoilerHotWater
+    import SimFlowSegment_Pipe_Indoor
+    import SimGeomBooleanResult_BooleanClippingResult_Default
+    import SimGeomCurve_Polyline_Default
+    import SimGeomHalfSpaceSolid_HalfSpaceSolid_PolygonalBoundedHalfSpace
+    import SimGeomPoint_Point_CartesianPoint
+    import SimGeomSolidModel_FacetedBrep_Default
+    import SimGeomSolidModel_SweptAreaSolid_ExtrudedAreaSolid
+    import SimGeomSurfaceModel_FaceBasedSurfaceModel_Default
+    import SimGeomSurface_BoundedSurface_CurveBoundedPlane
+    import SimGeomSurface_ElementarySurface_Plane
+    import SimGeomVector_Vector_Default
+    import SimGeomVector_Vector_Direction
+    import SimGroup_BldgCompGroup_ZoneEquipment
+    import SimGroup_HvacDemandGroup_WaterSystem
+    import SimGroup_SpatialZoneGroup_ZoneGroup
+    import SimGroup_SpatialZoneGroup_ZoneHvacGroup
+    import SimInternalLoad_Equipment_Electric
+    import SimInternalLoad_Lights_Default
+    import SimInternalLoad_People_Default
+    import SimList_ConnectorList_SimConnections
+    import SimList_EquipmentList_ZoneHvac
+    import SimList_MaterialList_Default
+    import SimList_SchemeList_AirLoopAvailabilityMgrScheme
+    import SimList_SchemeList_DemandManagerScheme
+    import SimList_SchemeList_PlantOperatingScheme
+    import SimList_SchemeList_WaterTempControlScheme
+    import SimLocalPlacement_LocalPlacement_AbsolutePlacement
+    import SimLocalPlacement_LocalPlacement_RelativePlacement
+    import SimLocationAndWeather_DesignDay_Default
+    import SimLocationAndWeather_Location_Default
+    import SimLoop_Loop_PolyLoop
+    import SimMappedRepresentationItem_Default_Default
+    import SimMaterialLayerSet_Default_Default
+    import SimMaterialLayerSet_GlazingLayerSet_Window
+    import SimMaterialLayerSet_OpaqueLayerSet_Ceiling
+    import SimMaterialLayerSet_OpaqueLayerSet_Door
+    import SimMaterialLayerSet_OpaqueLayerSet_Floor
+    import SimMaterialLayerSet_OpaqueLayerSet_InternalSource
+    import SimMaterialLayerSet_OpaqueLayerSet_Roof
+    import SimMaterialLayerSet_OpaqueLayerSet_Wall
+    import SimMaterialLayer_GlazingMaterialLayer_Default
+    import SimMaterialLayer_OpaqueMaterialLayer_Default
+    import SimMaterial_Default_Default
+    import SimMaterial_GlazingMaterial_Gas
+    import SimMaterial_GlazingMaterial_Glazing
+    import SimMaterial_GlazingMaterial_SimpleGlazingSystem
+    import SimMaterial_OpaqueMaterial_AirGap
+    import SimMaterial_OpaqueMaterial_Default
+    import SimModel
+    # No module named ... RepresentationContex import SimModelRepresentationContextGeometricRepresentationSubCon
+    import SimModelRepresentationContext_GeometricRepresentationContext_Default
+    import SimModel_Hierachy
+    import SimModel_Mapping
+    import SimModel_PyCallBack
+    import SimNode_AirFlowPort_Air_In
+    import SimNode_AirFlowPort_Air_Out
+    import SimNode_DigitalControl_AirLoop_DigitalSignal_In
+    import SimNode_DigitalControl_HWLoop_DigitalSignal_In
+    import SimNode_Docking_Default
+    import SimNode_HotWaterFlowPort_Water_In
+    import SimNode_HotWaterFlowPort_Water_Out
+    import SimOrganization_Organization_Default
+    import SimOwnerHistory_Default_Default
+    import SimParameterizedProfileDef_ParameterizedProfile_Rectangle
+    import SimPerformanceCurve_Mathematical_Cubic
+    #Dll load failed import SimPersonAndOrganization_PersonAndOrganization_Default
+    import SimPerson_Person_Default
+    import SimPlacement_Axis2Placement2D_Default
+    import SimPlacement_Axis2Placement3D_Default
+    import SimPresentationLayerAssignment_Default_Default
+    import SimProject_Project_DesignAlternative
+    import SimRepresentationMap_RepresentationMap_Default
+    import SimSensor_TemperatureSensor_DryBulb
+    import SimShapeRepresentation_ShapeRepresentation_Default
+    import SimSimulationConfiguration_SimulationConfiguration_Default
+    import SimSimulationParameters_HvacDesign_WaterLoopSizing
+    import SimSite_BuildingSite_Default
+    import SimSIUnitType_SiUnit_Default
+    import SimSlabParams_Slab_Floor
+    import SimSlab_Default_Default
+    import SimSlab_Floor_FloorOverEarth
+    import SimSlab_Floor_InterzoneFloor
+    import SimSlab_RoofSlab_RoofUnderAir
+    import SimSoftwareApplication_Default_Default
+    import SimSolarShade_Fin_Default
+    import SimSolarShade_Overhang_Default
+    import SimSpaceBoundary_SecondLevel_SubTypeA
+    import SimSpaceParams_Space_Default
+    import SimSpace_Occupied_Default
+    import SimSpatialZone_ThermalZone_Default
+    import SimSpatialZone_ThermalZone_TemplateForZoneGroup
+    import SimSystem_HvacHotWater_Control
+    import SimSystem_HvacHotWater_Demand
+    import SimSystem_HvacHotWater_FullSystem
+    import SimSystem_HvacHotWater_Supply
+    import SimSystem_ZoneHvacGroup_Control
+    import SimSystem_ZoneHvacGroup_Demand
+    import SimSystem_ZoneHvacGroup_FullSystem
+    import SimSystem_ZoneHvacGroup_Supply
+    import SimTemplateConstructions_Constructions_Default
+    import SimTemplateLocation_Location_Default
+    import SimTemplateZoneConditions_ZoneConditions_Default
+    import SimTemplateZoneLoads_ZoneLoads_Default
+    import SimTimeSeriesSchedule_Calendar_Configuration
+    import SimTimeSeriesSchedule_Day_Interval
+    import SimTimeSeriesSchedule_Limits_Default
+    import SimTimeSeriesSchedule_Week_Daily
+    import SimTimeSeriesSchedule_Year_Default
+    import SimWallParams_Wall_Default
+    import SimWallType_Wall_Default
+    import SimWall_Wall_Default
+    import SimWall_Wall_ExteriorAboveGrade
+    import SimWall_Wall_Interior
+    import SimWindowArrayParams_WindowArray_Default
+    import SimWindowLiningProps_WindowLiningProps_Default
+    import SimWindowParams_Window_Default
+    import SimWindowType_Window_Default
+    import SimWindow_Window_Default
+    import SimWindow_Window_Exterior
+
+sys.path.insert(0, modulePath)
+importSwigApis()
+from SimModel_Translator import SimTranslator	
+translator = SimTranslator()
+simxml_data = translator.loadSimModel(pathList[0], pathList[1])
+sim_hierarchy = translator.getSimHierarchy()
+nodeList = sim_hierarchy.getHierarchyNodeList()	
+
+## Construction types
+constructions = []
+##for con in jdata['constructions']:
+##  constructions.append(Construction(con['name'],con['nLay'],con['thi'],con['mat']))
+for i in range(1):
+  constructions.append(Construction("ConstructionStandard",3,[0.015,0.2,0.02],["BuildingSystems.HAM.Data.MaterialProperties.Thermal.Masea.HighGradePlaster","BuildingSystems.HAM.Data.MaterialProperties.Thermal.Masea.Concrete","BuildingSystems.HAM.Data.MaterialProperties.Thermal.Masea.ExpandedPolystyrene"]))
+
+constructions_new = []
+for id in range(0, nodeList.size()):
+    hierarchy_node = nodeList[id]
+    if hierarchy_node.isClassType("SimMaterialLayerSet_OpaqueLayerSet_Wall") or hierarchy_node.isClassType("SimMaterialLayerSet_OpaqueLayerSet_Floor"):
+        child_node_list = hierarchy_node.getChildList()
+        thickness=[]
+        MatName=[]		
+        for node in child_node_list:
+            class_name = getattr(node.getSimModelObject(),"LayerThickness")		
+            thickness.append(class_name().getValue()/1000)
+            class_name = getattr(node.getSimModelObject(),"SimModelName")			
+            #MatName.append(class_name().getValue().replace("_","").replace(",","_").replace(" ","").replace(")","").replace("(",""))
+            MatName.append("BuildingSystems.HAM.Data.MaterialProperties.Thermal.Masea.Concrete")
+        #print("id: ", id, " --> construction with ID: ", hierarchy_node.getSimModelObject().RefId())			
+        #print("thicknes: ", thickness, " Material: ", MatName)      		
+        constructions_new.append(Construction(str(hierarchy_node.getSimModelObject().RefId()),len(child_node_list),thickness,MatName))
+  
+## Thermal zones
+zones = []
+#for zone in jdata['zones']:
+#  zones.append(Zone(zone['name'],zone['nEle'],zone['vol'],zone['hei'],zone['TSetHea'],zone['TSetCoo'],zone['ach'],zone['heaSou']))
+for i in range(1):
+  zones.append(Zone("zone_"+str(i),8,1.0,1.0,293.15,298.15,0.5,0.0))
+
+zones_new = []
+connectionsZoneDict ={}
+for id in range(0, nodeList.size()):
+    hierarchy_node = nodeList[id]
+    if hierarchy_node.isClassType("SimSpatialZone_ThermalZone_Default"): # We have a zone!
+        child = hierarchy_node.getChildList()[0]	
+        name = child.getSimModelObject().RefId() # We use RefId as name (alternative combination of Id with LongName?)
+        # Retrieve needed info to instantiate Zone:		
+        class_name = getattr(child.getSimModelObject(),"SpaceGrossVolume")	
+        volume = class_name().getValue()	
+        class_name = getattr(child.getSimModelObject(),"SpaceHeight")	
+        height = class_name().getValue()/1000
+        zones_new.append(Zone(name,len(child.getChildList()),volume,height,20,25,0.5,0.0))
+        # Initialize number of connections with number of childs (SimSpaceBoundary_SecondLevel_SubTypeA)		
+        connectionsZone = [i for i in range(1,1+len(child.getChildList()))]
+        # Store information in list in a dictionary of zones. 		
+        connectionsZoneDict[name] = connectionsZone		
+
+print("connectionsZoneDict ", connectionsZoneDict)
+ 		
+		
+## Opaque elements
+elementsOpaque = []
+#for eleOpa in jdata['elementsOpaque']:
+#  elementsOpaque.append(ElementOpaque(eleOpa['name'],eleOpa['angAzi'],eleOpa['angTil'],eleOpa['hei'],eleOpa['wid'],eleOpa['conDat'],eleOpa['nInnSur'],eleOpa['innSur']))
+for i in range(7):
+  elementsOpaque.append(ElementOpaque("wall_"+str(i),0.0,90.0,1.0,1.0,"ConstructionStandard",0,""))
+
+# It is not possible to easily distinguish between doors and windows because they are just seen as "...Void_Opening".
+# A short code is written that read the simxml file, identify doors and windows and the element (wall) they
+# are "voiding".
+
+ListOfDoors = {} # key = Door's Id, value = Void's Id
+ListOfWindows = {} # key = Window's Id, value = Void's Id
+
+with open(pathList[0]) as inF:
+    for line in inF:	
+        if "<SimWindow_Window_Exterior" in line or "<SimWindow_Window_Interior" in line: #we have a window							
+            Id = line.split("RefId=\"")[1].split("\"")[0]		
+        elif "<simbldg:OpeningFilledByWindow>"  in line:
+                value = line.split(">")[1].split("<")[0]			
+                ListOfWindows[Id] = value    
+        elif "<SimDoor_GlazedDoor_Interior" in line: # we have a door
+            Id = line.split("RefId=\"")[1].split("\"")[0]
+        elif "<simbldg:OpeningFilledByDoor>" in line:				
+                value = line.split(">")[1].split("<")[0]			
+                ListOfDoors[Id] = value  
+
+print("ListOfDoors (", len(ListOfDoors), "): ", ListOfDoors)
+print("ListOfWindows (", len(ListOfWindows), "): ", ListOfWindows)
+
+# The following piece of code is used to create a Dict: Where keys are zone RedId, 
+# and values are a list of the windows and doors attached to the zone.
+
+DictWindowAndDoors = {}
+for id in range(0, nodeList.size()):
+# A dictionary of zone with a list of elements (Windows & doors) attached to the zone are obtained.
+    hierarchy_node = nodeList[id]
+    ListOfWindowsAndDoors = []	
+    if hierarchy_node.isClassType("SimSpace_Occupied_Default"):
+        child_node_list =  hierarchy_node.getChildList()
+        class_name = getattr(hierarchy_node.getSimModelObject(),"LongName")	
+        simpleName = class_name().getValue()		
+        for child in child_node_list: #"child" are of the class "SimSpaceBoundary_SecondLevel_SubTypeA"
+            child_node_list_2lvl =  child.getChildList()		
+            if len(child_node_list_2lvl)<=1: # we have either a window or door
+	#create list of doors and windows that belong to specific zone:
+                class_name = getattr(child.getSimModelObject(),"PhysicalOrVirtualBoundary")			
+                if class_name().getValue() == "PHYSICAL":				
+                    class_name = getattr(child.getSimModelObject(),"RelatedBuildingElement")			
+                    nameId = class_name().getValue() #Rewrite Id				
+                    ListOfWindowsAndDoors.append(nameId)			
+        DictWindowAndDoors[hierarchy_node.getSimModelObject().RefId()] = ListOfWindowsAndDoors	
+
+print("DictWindowAndDoors ", DictWindowAndDoors)
+
+DictWindowAndDoors_void = {}
+aux=[]
+# The  Dictionary DictWindowAndDoors is adapted for an easier (later) use.
+# The Id keeps being the Id of the zone, but values are changed:
+# The Id of Void element instead of windows and doors Id:
+for key in DictWindowAndDoors:
+    for value in DictWindowAndDoors[key]:
+        if value in ListOfDoors:
+            aux.append(ListOfDoors[value]) 
+        elif value in ListOfWindows:
+            aux.append(ListOfWindows[value])		
+    DictWindowAndDoors_void[key] = aux
+    aux = []		
+
+print("DictWindowAndDoors ", DictWindowAndDoors)
+print("DictWindowAndDoors_void ", DictWindowAndDoors_void)			
+
+# The following piece of code iterate over the nodes searching for Boundaries: Each boundary becomes an element
+# The elements might be: opaque or transparent, external or internal. 
+# Furthermore, external elements can be connected to the ground or ambient.
+ 
+elementsOpaque_new = []
+ElementToGround = []
+InnerElement = []
+elementsTransparent_new = []
+conEleZon_new = []
+for id in range(0, nodeList.size()):
+    hierarchy_node = nodeList[id]
+    if hierarchy_node.isClassType("SimSpaceBoundary_SecondLevel_SubTypeA"):
+        #print("Dealing with hierarchy_node: ", hierarchy_node.getSimModelObject().RefId())		
+        child_node_list =  hierarchy_node.getChildList()
+        nameId = hierarchy_node.getSimModelObject().RefId()
+        ignoreme=False		
+        for child in child_node_list:
+            #print("Dealing with child: ", child.getSimModelObject().RefId())				
+            if child.isClassType("SimGeomVector_Vector_Direction"):
+# We have a vector -> obtain orientation of the selected element 			
+                class_name = getattr(child.getSimModelObject(),"DirectionRatios")
+                v = np.array(class_name().getNumberList())		
+                module = np.sum(v*v)			 			
+                angTil = math.acos((v[2])/module)*180/math.pi
+                vmod = np.array([v[0],v[1],0])
+                module = np.sum(vmod*vmod)
+                if module != 0: #south = 0°, east = -90°, west=90°, north= 180°				
+                    angAzi = np.sign(vmod[1])*math.acos(vmod[0]/np.sum(vmod*vmod))*180/math.pi
+                    if vmod[0] >= 0:
+                        pass
+                    else:					
+                        angAzi= angAzi-180					
+                else:
+                    angAzi = 0				
+                #print("\n Id: ", hierarchy_node.getSimModelObject().RefId()," = ", v,"\n angTil: ", angTil, " angAzi: ", angAzi)
+# The following if /elif clauses are here to detect which kind of elemnt we have.
+# Walls are "SimWall_Wall_ExteriorAboveGrade" or "SimWall_Wall_Interior".
+# Floor/Ceiling are "SimSlab_Floor_InterzoneFloor"
+# Doors and Windows does not have a specific class... not parsed by API. we have just "...Void_Opening"	
+            elif child.isClassType("SimWall_Wall_ExteriorAboveGrade") or child.isClassType("SimWall_Wall_Interior"):
+                # We have a wall -> opaque = True			
+                opaque = True			
+                class_name = getattr(child.getSimModelObject(),"WallHeight")	
+                height = class_name().getValue()/1000
+# we cannot use child's WallLength because wall might belong to more than one zone!				
+                class_name = getattr(hierarchy_node.getSimModelObject(),"GrossSurfaceArea") 
+                width = (class_name().getValue()/(1000*1000))/height
+                child_2lvl_List = child.getChildList()
+                nInnSur = 0
+                innSur = []	# Assume that it is the area of each enclosed surface in m2			
+                for child_2lvl in child_2lvl_List:
+                    #print("Dealing with child_2lvl: ", child_2lvl.getSimModelObject().RefId())				
+                    if child_2lvl.isClassType("SimMaterialLayerSet_OpaqueLayerSet_Wall"):					
+                        conDat=child_2lvl.getSimModelObject().RefId()
+                    if child_2lvl.isClassType("SimFeatureElementSubtraction_Void_Opening"):
+# The wall area is diminish by the "void" elements. However the void elements, child of the wall, are 
+# not necessarily connected to the zone we are dealing with. The API does not support neither windows nor doors.
+# In this regard there is not an easy way to now whether a void element is related to the zone. Suppose we have 
+# a Window or door element, then such classes contain the attribute "OpeningFilledByWindow" which correspond
+# to the Id of the wall being "voided". As provisional solution we previously readed the file searching for the attribute 
+# "OpeningFilledBy..." and adding this information into a dictionary. Alternatively the "Space Boundary Tool"
+# might be used to simplify the IFC file, thus the simxml file.
+                        if 	child_2lvl.getSimModelObject().RefId() in DictWindowAndDoors_void[hierarchy_node.getParentList()[0].getSimModelObject().RefId()]:
+# The Void_Opening element is attached to the zone and have to be therefore be considered, increasing nInnSur to reduce
+# the area of the wall.	If not in the list, we can ignore the Void_Opening.					
+                            nInnSur = nInnSur + 1					 
+                            class_name = getattr(child_2lvl.getSimModelObject(),"OpeningHeight")	
+                            height_opening = class_name().getValue()/1000
+                            class_name = getattr(child_2lvl.getSimModelObject(),"OpeningWidth")	
+                            width_opening = class_name().getValue()/1000 
+                            innSur.append(width_opening*height_opening)
+                if child.isClassType("SimWall_Wall_Interior"):
+#Rewrite Id - Because Element is shared by two zones. Name is a composition of the boundaries ID. the ID are joined and ordered.
+                    class_name = getattr(hierarchy_node.getSimModelObject(),"OthersideSpaceBoundary")	
+                    BoundariesNames = [class_name().getValue(),hierarchy_node.getSimModelObject().RefId()]					
+                    nameId = "".join(sorted(BoundariesNames))  					
+            elif child.isClassType("SimSlab_Floor_InterzoneFloor"):
+                #We have a floor or ceiling
+                #print("\n Id: ", hierarchy_node.getSimModelObject().RefId()," = ", v,"\n angTil: ", angTil, " angAzi: ", angAzi)				
+                opaque = True			
+                class_name = getattr(hierarchy_node.getSimModelObject(),"GrossSurfaceArea")	
+                area = class_name().getValue()/(1000*1000) # we have to look at ..SubTypeA because wall might belong to more than one zone...
+                height = math.sqrt(area)				
+                width  = height
+                conDat=child.getChildList()[0].getSimModelObject().RefId()					
+                nInnSur = 0
+                innSur = ""	# Assume there are no openings in floor/roof
+            elif child.isClassType("SimWindow_Window_Exterior"):
+                #We have Window
+                #print("\n Id: ", hierarchy_node.getSimModelObject().RefId()," = ", v,"\n angTil: ", angTil, " angAzi: ", angAzi)				
+                opaque = False			
+                class_name = getattr(hierarchy_node.getSimModelObject(),"OverallHeight")	
+                height = class_name().getValue()/(1000) # we have to look at ..SubTypeA because wall might belong to more than one zone...
+                class_name = getattr(hierarchy_node.getSimModelObject(),"OverallWidth")				
+                width  = class_name().getValue()/(1000)
+				# Besides the Window has Material this information is, for now, not used.
+            if len(child_node_list)<=1:
+            # We have a door or window
+                print("We have a door or a window")			
+                class_name = getattr(hierarchy_node.getSimModelObject(),"PhysicalOrVirtualBoundary")
+            # I Think virtual elements are not needed it... are they?				
+                if class_name().getValue() == "PHYSICAL":				
+                    class_name = getattr(hierarchy_node.getSimModelObject(),"GrossSurfaceArea") # we cannot use child's WallLength because wall might belong to more than one zone
+                    width = math.sqrt(class_name().getValue()/(1000*1000))
+                    height = width
+                    class_name = getattr(hierarchy_node.getSimModelObject(),"RelatedBuildingElement")				
+                    nameId = class_name().getValue() # Rewrite Id					
+                    if nameId in ListOfDoors: # No need to add .keys()
+		# We have a door. Windows are not parsed in API! no easy way to detect them (preread file?)			
+                        opaque = True					 
+                        conDat = constructions_new[0].name
+                        nInnSur = 0
+                        innSur = ""						
+                    else: # Windows are not parsed in API! just "Void"
+                        opaque = False
+                else: #What do we do with VIRTUAL elements...? Ignore them!
+                    ignoreme=True					
+        class_name = getattr(hierarchy_node.getSimModelObject(),"RelatingSpace")	
+        nameZone = class_name().getValue()
+# The Boundary and its childs were already examined: We proceed to create an instance
+# of the object and define the connections:		
+        if not ignoreme:
+            print("WORK with me: ", nameId)		
+            if opaque and not nameId in [x.name for x in elementsOpaque_new]: 
+# The element is opaque and was not already defined: do not add element twice!			
+                elementsOpaque_new.append(ElementOpaque(nameId,angAzi,angTil,height,width,conDat,nInnSur,innSur))
+            # Add conection of the element to the zone.	
+                conEleZon_new.append(ConnectionElementZone(nameId,"1",nameZone,connectionsZoneDict[nameZone].pop()))			
+                if v[2] == -1:
+                    print("nameId: ", nameId," = ", v,"\n angTil: ", angTil, " angAzi: ", angAzi)						
+                # If necessary add connection to the ground.			
+                    ElementToGround.append(nameId)			
+            #print("nameId: ", nameId, " to be found in ", [x.name for x in elementsOpaque_new])
+            elif opaque:
+                #print("Inner element found: ", nameId)		
+        # Object was already part of elementsOpaque_new and already used one port.
+        # It means we are dealing with an inner wall which has already used toSurfacePort_1. We connect with toSurfacePort_2 to its zone.	
+                conEleZon_new.append(ConnectionElementZone(nameId,"2",nameZone,connectionsZoneDict[nameZone].pop()))
+                InnerElement.append(nameId)			
+            else:
+        # We have a Window
+                elementsTransparent_new.append(ElementTransparent(nameId,angAzi,angTil,height,width))			
+                conEleZon_new.append(ConnectionElementZone(nameId,"1",nameZone,connectionsZoneDict[nameZone].pop()))
+        else:
+            print("Ignore it: ", nameId)		
+
+print("List in Dict should be empty: ", connectionsZoneDict)
+#for con in conEleZon_new:
+#    print("element", con.element, " with port ", con.elementPort," connected to zone ", con.zone, " with port ", con.zonePort)
+
+	 
+## Transparent elements
+elementsTransparent = []
+##for eleTra in jdata['elementsTransparent']:
+##  elementsTransparent.append(ElementTransparent(eleTra['name'],eleTra['angAzi'],eleTra['angTil'],eleTra['hei'],eleTra['wid']))
+for i in range(1):
+  elementsTransparent.append(ElementTransparent("window_"+str(i),0.0,90.0,1.0,1.0))
+  
+## Element <-> zone
+conEleZon = []
+## for con in jdata['conEleZon']:
+##  conEleZon.append(ConnectionElementZone(con['ele'],con['elePor'],con['zon'],con['zonPor']))
+for i in range(7):
+  conEleZon.append(ConnectionElementZone("wall_"+str(i),"1","zone_0",str(i+1)))
+for i in range(1):
+  conEleZon.append(ConnectionElementZone("window_"+str(i),"1","zone_0",str(7+i+1)))
+
+  
+## Element <-> ambient
+conEleAmb = []
+##for con in jdata['conEleAmb']:
+##  conEleAmb.append(ConnectionElementAmbient(con['ele'],con['elePor'],con['ambPor']))
+
+ 
+for i in range(6):
+  conEleAmb.append(ConnectionElementAmbient("wall_"+str(i),"2",str(i+1)))
+for i in range(1):
+  conEleAmb.append(ConnectionElementAmbient("window_"+str(i),"2",str(6+i+1)))
+
+conEleAmb_new = []
+conEleSol_new = []
+contoground = [i for i in range(1,1+len(ElementToGround))]
+contoambient = [i for i in range(1,1+len(elementsOpaque_new)+len(elementsTransparent_new)-len(contoground)-len(InnerElement))]
+
+print("Number of elementsOpaque_new: ", len(elementsOpaque_new))
+print("Number of elementsTransparent_new: ", len(elementsTransparent_new))
+print("Contoambient: ", len(contoambient))	
+print("Contoground: " , len(contoground))		
+print("InnerElement: ", len(InnerElement), " = ", InnerElement)	
+
+
+for elem in elementsOpaque_new:
+    if elem.name in ElementToGround:
+        conEleSol_new.append(ConnectionElementSolid(elem.name,"2",contoground.pop())) 
+    elif elem.name in InnerElement:
+        pass	
+    else:	
+        conEleAmb_new.append(ConnectionElementAmbient(elem.name,"2",contoambient.pop()))		
+
+for elem in elementsTransparent_new:
+    #print("elementsTransparent_new: ", elem.name)
+    conEleAmb_new.append(ConnectionElementAmbient(elem.name,"2",contoambient.pop())) 
+
+#print("contoambient after \"poping\"", contoambient)	
+
+	
+'''
+for con in conEleAmb_new:
+    print("element", con.element, " with port ", con.elementPort," connected to ambient port ", con.ambientPort)
+	
+for con in conEleSol_new:
+    print("element", con.element, " with port ", con.elementPort," connected to solidPort ", con.solidPort)
+'''
+	
+## Element <-> solid ambient
+conEleSol = []
+## for con in jdata['conEleSol']:
+##  conEleSol.append(ConnectionElementSolid(con['ele'],con['elePor'],con['solPor']))
+for i in range(1):
+  conEleSol.append(ConnectionElementSolid("wall_6","2",str(i+1)))
+
+constructions = constructions_new  
+zones = zones_new
+conEleZon = conEleZon_new 
+conEleAmb = conEleAmb_new  
+conEleSol = conEleSol_new
+elementsOpaque = elementsOpaque_new  
+elementsTransparent = elementsTransparent_new  
+  
+## Building sytem
+buildingSystem = BuildingSystem("OneZone","BuildingSystems.Climate.WeatherDataMeteonorm.WeatherDataFile_Germany_Berlin()")
+%>\
+within;
+model ${buildingSystem.name}
+  "Model of a building with its climate ambient"
+  extends Modelica.Icons.Example;
+
+  % for con in constructions:
+  record ${con.name}
+    extends BuildingSystems.Buildings.Data.Constructions.OpaqueThermalConstruction(
+      nLayers=${con.nLayers},
+      thickness={
+      % for value in con.thickness:
+        ${value}${',' if not loop.last else ''}
+      % endfor
+      },
+      material={
+      % for value in con.material:
+        ${value}()${',' if not loop.last else ''}
+      % endfor
+      });
+  end ${con.name};
+  % endfor
+
+  model Building
+    "Automatically generated multi-zone building model"
+    extends BuildingSystems.Buildings.BaseClasses.BuildingTemplate(
+    nZones = ${len(zones)},
+    surfacesToAmbient(nSurfaces = ${len(conEleAmb)}),
+    nSurfacesSolid = ${len(conEleSol)},
+    surfacesToSolids(nSurfaces = nSurfacesSolid),
+    convectionOnSurfaces = BuildingSystems.HAM.ConvectiveHeatTransfer.Types.Convection.forced,
+    useAirPathes = false,
+    heatSources = true,
+    nHeatSources = ${len(zones)});
+
+    parameter BuildingSystems.Buildings.Data.Constructions.Transparent.HeatProtectionDoubleGlazingUVal14 constructionWindow;
+
+  % for zone in zones:
+    BuildingSystems.Buildings.Zones.ZoneTemplateAirvolumeMixed ${zone.name}(
+      V=${zone.volume},
+      height=${zone.height},
+      nConstructions1=${zone.nElements},
+      heatSources=true,
+      nHeatSources=1);
+  % endfor
+
+  % for ele in elementsOpaque:
+    BuildingSystems.Buildings.Constructions.Walls.WallThermal1DNodes ${ele.name}(
+    % if surTemOut == True:
+      show_TSur = true,
+    % endif
+      redeclare ${ele.constructionData} constructionData,
+      angleDegAzi = ${ele.angleDegAzi},
+      angleDegTil = ${ele.angleDegTil},
+      nInnSur = ${ele.nInnSur}, ${'AInnSur = ' if ele.nInnSur > 0 else ''}${'{' if ele.nInnSur > 0 else ''}${ele.innerSurfaces[0] if ele.nInnSur > 0 else ''}${'}' if ele.nInnSur > 0 else ''}${',' if ele.nInnSur > 0 else ''}
+      height = ${ele.height},
+      width = ${ele.width});
+  % endfor
+
+  % for ele in elementsTransparent:
+    BuildingSystems.Buildings.Constructions.Windows.Window ${ele.name}(
+    % if surTemOut == True:
+      show_TSur = true,
+    % endif
+      angleDegAzi = ${ele.angleDegAzi},
+      angleDegTil = ${ele.angleDegTil},
+      height = ${ele.height},
+      width = ${ele.width},
+      UVal = (1.0 - ${ele.name}.framePortion) * constructionWindow.UValGla + ${ele.name}.framePortion * constructionWindow.UValFra,
+      tauDir0 = constructionWindow.g,
+      tauDif = constructionWindow.g);
+  % endfor
+
+  equation
+    // connections between construction elements and zones
+  % for con in conEleZon:
+    connect(${con.element}.toSurfacePort_${con.elementPort}, ${con.zone}.toConstructionPorts1[${con.zonePort}]);
+  % endfor
+    // connections between construction elements and ambient
+  % for con in conEleAmb:
+    connect(${con.element}.toSurfacePort_${con.elementPort}, surfacesToAmbient.toConstructionPorts[${con.ambientPort}]);
+  % endfor
+    // connections between construction elements and ground
+  % for con in conEleSol:
+    connect(${con.element}.toSurfacePort_${con.elementPort}, surfacesToSolids.toConstructionPorts[${con.solidPort}]);
+  % endfor
+  // Heating set temperature of each thermal zones
+  % for i in range(len(zones)):
+    connect(${zones[i].name}.T_setHeating, T_setHeating[${i+1}]);
+  % endfor
+  // Cooling set temperatures of each thermal zones
+  % for i in range(len(zones)):
+    connect(${zones[i].name}.T_setCooling, T_setCooling[${i+1}]);
+  % endfor
+  // airchange rates of each thermal zones
+  % for i in range(len(zones)):
+    connect(${zones[i].name}.airchange, airchange[${i+1}]);
+  % endfor
+  // ambient temperature of each thermal zones
+  % for i in range(len(zones)):
+    connect(${zones[i].name}.TAirAmb, TAirAmb);
+  % endfor
+  // ambient moisture of each thermal zones
+  % for i in range(len(zones)):
+    connect(${zones[i].name}.xAirAmb, xAirAmb);
+  % endfor
+  // Cooling load of each thermal zones
+  % for i in range(len(zones)):
+    connect(${zones[i].name}.Q_flow_cooling, Q_flow_cooling[${i+1}]);
+  % endfor
+  // Heating load of each thermal zones
+  % for i in range(len(zones)):
+    connect(${zones[i].name}.Q_flow_heating, Q_flow_heating[${i+1}]);
+  % endfor
+  // Radiative heating source of each thermal zones
+  % for i in range(len(zones)):
+    connect(${zones[i].name}.radHeatSourcesPorts[1], radHeatSourcesPorts[${i+1}]);
+  % endfor
+  // Convective heating source of each thermal zones
+  % for i in range(len(zones)):
+    connect(${zones[i].name}.conHeatSourcesPorts[1], conHeatSourcesPorts[${i+1}]);
+  % endfor
+  % if surTemOut == True:
+  // Connections for surface temperatures
+<% i = 1 %>\
+    % for ele in elementsOpaque:
+    connect(${ele.name}.TSur_1, TSur[${i}]);<% i = i + 1 %>
+    connect(${ele.name}.TSur_2, TSur[${i}]);<% i = i + 1 %>
+    % endfor
+    % for ele in elementsTransparent:
+    connect(${ele.name}.TSur_1, TSur[${i}]);<% i = i + 1 %>
+    connect(${ele.name}.TSur_2, TSur[${i}]);<% i = i + 1 %>
+    % endfor
+  % endif
+  end Building;
+
+  Building building(
+  % if surTemOut == True:
+    show_TSur = true,
+    nSurfaces = ${2*len(elementsOpaque)+2*len(elementsTransparent)},
+  % endif
+    nZones = ${len(zones)});
+
+  BuildingSystems.Buildings.Ambient ambient(
+    nSurfaces = building.nSurfacesAmbient,
+    weatherDataFile = ${buildingSystem.location});
+
+    // Heating set temperature of the thermal zones
+    % for zone in zones:
+    Modelica.Blocks.Sources.Constant TSetHeating_${zone.name}(k=273.15 + ${zone.TSetHeating});
+    % endfor
+    // Cooling set temperature of each thermal zones
+    % for zone in zones:
+    Modelica.Blocks.Sources.Constant TSetCooling_${zone.name}(k=273.15 + ${zone.TSetCooling});
+    % endfor
+    // Air change rate of each thermal zones
+    % for zone in zones:
+    Modelica.Blocks.Sources.Constant airchange_${zone.name}(k=${zone.airchange});
+    % endfor
+    // Heating source of each thermal zones
+    % for zone in zones:
+    Modelica.Blocks.Sources.Constant heatsources_${zone.name}(k=${zone.heatsource});
+    % endfor
+    Modelica.Thermal.HeatTransfer.Sources.PrescribedHeatFlow heatFlow[${len(zones)}];
+    BuildingSystems.Buildings.BaseClasses.RelationRadiationConvection relationRadiationConvection[${len(zones)}](each radiationportion = 0.5);
+  equation
+    connect(ambient.toSurfacePorts, building.toAmbientSurfacesPorts);
+    connect(ambient.toAirPorts, building.toAmbientAirPorts);
+    connect(ambient.TAirRef, building.TAirAmb);
+    connect(ambient.xAir, building.xAirAmb);
+    // Heating set temperature of each thermal zones
+    % for i in range(len(zones)):
+    connect(TSetHeating_${zones[i].name}.y, building.T_setHeating[${i+1}]);
+    % endfor
+    // Cooling set temperature of each thermal zones
+    % for i in range(len(zones)):
+    connect(TSetCooling_${zones[i].name}.y, building.T_setCooling[${i+1}]);
+    % endfor
+    // Air change rate of each thermal zones
+    % for i in range(len(zones)):
+    connect(airchange_${zones[i].name}.y, building.airchange[${i+1}]);
+    % endfor
+    // Heating source of each thermal zones
+    % for i in range(len(zones)):
+    connect(heatsources_${zones[i].name}.y, heatFlow[${i+1}].Q_flow);
+    % endfor
+    connect(relationRadiationConvection.heatPort, heatFlow.port);
+    connect(relationRadiationConvection.heatPortCv, building.conHeatSourcesPorts[1:${len(zones)}]);
+    connect(relationRadiationConvection.heatPortLw, building.radHeatSourcesPorts[1:${len(zones)}]);
+
+  annotation(experiment(StartTime=0, StopTime=31536000),
+    Diagram(coordinateSystem(preserveAspectRatio=false, extent={{-100,-100},{100,100}})));
+end ${buildingSystem.name};

@@ -1,0 +1,150 @@
+<%
+used_libraries = ("Modelica","AixLib")
+
+def creategraphml(MapData):
+    import networkx as nx
+    G=nx.DiGraph()
+    node_and_attribute = []
+    for x in MapData.hvac_components:
+        node_and_attribute.append([x.target_location,x.target_name])	
+    for x in MapData.mod_components:
+        node_and_attribute.append([x.target_location,x.target_name])		
+    for x in MapData.buildings:
+        for myZone in x.thermal_zones:	
+            node_and_attribute.append([myZone.target_location,myZone.target_name])
+	listofnodes = [elem[1] for elem in node_and_attribute]	
+    G.add_nodes_from(listofnodes)
+    for node in node_and_attribute:
+        G.node[node[1]]['Text']=node[1]
+        G.node[node[1]]['Description']= node[0] if isinstance(node[0],str) else 'None'
+    listofedges = []
+    for MyCon in MapData.connections:
+        tup = (MyCon.connector_b.parent.target_name,MyCon.connector_a.parent.target_name)		
+        listofedges.append(tup)		
+    G.add_edges_from(listofedges)
+    nx.write_graphml(G,"CoTeTo_"+MapData.project_name+".graphml")
+    #nx.draw(G,with_labels=True)
+	
+def projectdescription(MapData):
+	return ""
+
+def printproject(pro):
+    com_parlist=[]
+    for com in pro.hvac_components:
+        com_parlist.append(printcomponent(com))
+    for com in pro.mod_components:
+        com_parlist.append(printcomponent(com)) 		
+    return com_parlist
+	
+def printcomponent(com):
+    parlist=[]
+    for par in com.parameters:
+        if par != com.parameters[-1]:		
+            parlist.append(parameterstructur(par)+",")
+        elif com.records:
+            parlist.append(parameterstructur(par)+",")
+        else:
+            parlist.append(parameterstructur(par)+")")		
+    for rec in com.records:
+        parlist.append(rec.name+"="+rec.record_location+"(")
+        for par in rec.parameters:
+            if par != rec.parameters[-1]:		
+                parlist.append(parameterstructur(par)+",")
+            elif rec != com.records[-1]:
+                parlist.append(parameterstructur(par)+"),")
+            else:
+                parlist.append(parameterstructur(par)+"))")
+    if com.parameters or com.records:
+        header = str(com.target_location) + " " + str(com.target_name) + "("
+    else:
+        header = str(com.target_location) + " " + str(com.target_name) 
+    return parlist,header		
+
+def parameterstructur(par):
+    if isinstance(par.value,list):
+        if isinstance(par.value[0],tuple):
+            aux=[]
+            if isinstance(par.value[0][0],str) and par.value[0][0] not in ("true","false") and par.value[0][0].find(used_libraries[0]+".") == -1 and par.value[0][0].find(used_libraries[1]+".") == -1:		
+                for j in range(0,len(par.value)):
+                    aux2 = par.value[j]			
+                    aux.append(",".join("\""+str(elem)+"\"" for elem in aux2))		
+                return par.name+"=["+";".join(aux)+"]"
+            else: 			
+                for j in range(0,len(par.value)):
+                    aux2 = par.value[j]			
+                    aux.append(",".join(str(elem) for elem in aux2))		
+                return par.name+"=["+";".join(aux)+"]" 				
+        else:
+            if isinstance(par.value[0],str) and par.value[0] not in ("true","false") and par.value[0].find(used_libraries[0]+".") == -1 and par.value[0].find(used_libraries[1]+".") == -1:
+                #print("List and str ", par.name)			
+                return par.name+"={"+",".join("\""+str(elem)+"\"" for elem in par.value)+"}"
+            else:
+                #print("List but no str", par.name, "[0]: ", type(par.value[0]) , " = ", par.value[0])				
+                return par.name+"={"+",".join(str(elem) for elem in par.value)+"}"				
+    else:
+        if isinstance(par.value,str) and par.value not in ("true","false") and par.value.find(used_libraries[0]+".") == -1 and par.value.find(used_libraries[1]+".") == -1:	
+            return par.name+"=\""+str(par.value)+"\""		
+        else: 	
+            return par.name+"="+str(par.value)	
+	
+
+def printconnections(MyCon):
+    if not MyCon.index_a:
+        if not MyCon.index_b:
+            return MyCon.connector_a.parent.target_name+"."+MyCon.connector_a.name+","+MyCon.connector_b.parent.target_name+"."+MyCon.connector_b.name
+        else:
+            return MyCon.connector_a.parent.target_name+"."+MyCon.connector_a.name+","+MyCon.connector_b.parent.target_name+"."+MyCon.connector_b.name+"["+str(MyCon.index_b)+"]"			
+    else:
+        if not MyCon.index_b:	
+            return MyCon.connector_a.parent.target_name+"."+MyCon.connector_a.name+"["+str(MyCon.index_a)+"],"+MyCon.connector_b.parent.target_name+"."+MyCon.connector_b.name
+        else:
+            return MyCon.connector_a.parent.target_name+"."+MyCon.connector_a.name+"["+str(MyCon.index_a)+"],"+MyCon.connector_b.parent.target_name+"."+MyCon.connector_b.name+"["+str(MyCon.index_b)+"]"		
+%>
+
+<%creategraphml(MapData)%>
+
+model CoTeTo_${MapData.project_name}
+${projectdescription(MapData)}
+
+%for myComp in MapData.hvac_components:
+  <%param_section,header = printcomponent(myComp)%>
+  ${header}
+  %for j in range(0,len(param_section)):
+    ${param_section[j]} 
+  %endfor
+    "${myComp.sim_ref_id}"; 
+%endfor
+
+%for myComp in MapData.mod_components:
+  <%param_section,header = printcomponent(myComp)%>
+  ${header}
+  %for j in range(0,len(param_section)):
+    ${param_section[j]} 
+  %endfor
+    "${myComp.sim_ref_id}"; 
+%endfor
+
+%for myBuilding in MapData.buildings:
+  %for myZone in myBuilding.thermal_zones:
+  <%param_section,header = printcomponent(myZone)%>
+  ${header}
+    %for j in range(0,len(param_section)):
+    ${param_section[j]} 
+    %endfor
+    "${myZone.sim_ref_id}";
+  %endfor
+%endfor
+
+equation
+% for MyCon in MapData.connections:
+   <%con = printconnections(MyCon)%> connect(${con});
+% endfor
+
+annotation(
+  Documentation(
+    info="<html>
+        used xml file was ${MapData.simxml_file}
+      </html>")
+);
+
+end CoTeTo_${MapData.project_name};
