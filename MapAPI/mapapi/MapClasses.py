@@ -502,7 +502,7 @@ class MapBuilding(MoObject):
 
         #for tz in self.thermal_zones:
         #    tz.mapp_me()
-        self.mapp_me()		
+        self.mapp_me()
         for a in self.hvac_components_sim:
             a.mapp_me()
             pass
@@ -567,27 +567,27 @@ class MapBuilding(MoObject):
 	
     def building_element_to_boundaries(self):
         '''Dictionary where the building elements' ID are the keys
-        and a list of SimSpaceBoundaries' ID the values.	
-        '''	
-        elements_to_boundaries = {}		
-        child_list = self.hierarchy_node.getChildList()			
+        and a list of SimSpaceBoundaries' ID the values.
+        '''
+        elements_to_boundaries = {}
+        child_list = self.hierarchy_node.getChildList()
         for child in child_list:
-            if child.isClassType("SimSpatialZone_ThermalZone_Default"):		
+            if child.isClassType("SimSpatialZone_ThermalZone_Default"):
                 child2_list = child.getChildList()[0].getChildList()
-                for child2 in child2_list:				
-                    if child2.isClassType("SimSpaceBoundary_SecondLevel_SubTypeA"):				
-                        if  child2.getSimModelObject().InternalOrExternalBoundary().getValue() == "INTERNAL":			
-                            child3_list = child2.getChildList()			
-                            for child3 in child3_list:					
+                for child2 in child2_list:
+                    if child2.isClassType("SimSpaceBoundary_SecondLevel_SubTypeA"):
+                        if  child2.getSimModelObject().InternalOrExternalBoundary().getValue() == "INTERNAL":
+                            child3_list = child2.getChildList()
+                            for child3 in child3_list:
                                 if child3.ClassType() in ["SimWindow_Window_Exterior","SimDoor_GlazedDoor_Interior","SimWindow_Window_Interior"]:
                                     if child3.getSimModelObject().RefId() in elements_to_boundaries.keys():
                                         elements_to_boundaries[child3.getSimModelObject().RefId()].append(child2.getSimModelObject().RefId()) 
                                     else: 
                                         elements_to_boundaries = {child3.getSimModelObject().RefId():[child2.getSimModelObject().RefId()]}
-        print("building_element -> ", elements_to_boundaries)								
+        print("building_element -> ", elements_to_boundaries)
         return elements_to_boundaries 
-		
-				
+
+
     def instantiate_components(self):
         '''Search for Items attached to SimSystem_HvacHotWater_Supply and
         SimSystemHvacHotWater_Demand in SimModel, for each found: create
@@ -634,12 +634,11 @@ class MapBuilding(MoObject):
 
     def convert_me(self):
         """Converts the MapBuilding and childs MapThermalZone to a library specific class"""
-        from mapapi.molibs.BuildingSystems.Buildings.Building import Building        		
+        from mapapi.molibs.BuildingSystems.Buildings.Building import Building
         self.__class__ = Building
         self.init_me()
 
-			
-			
+
 class MapThermalZone(MoObject):
     """Representation of a mapped thermal zone
 
@@ -680,9 +679,9 @@ class MapThermalZone(MoObject):
         for a in range(spatial_child.size()):
             if spatial_child[a].ClassType() == "SimSpace_Occupied_Default":
                 self.height = spatial_child[a].getSimModelObject().SpaceHeight().getValue()
-                self.volume = spatial_child[a].getSimModelObject().SpaceNetVolume().getValue()				
+                self.volume = spatial_child[a].getSimModelObject().SpaceNetVolume().getValue()
                 self.area = spatial_child[a].getSimModelObject().SpaceNetFloorArea().getValue()
-				
+
     def convert_me(self):
         """Converts the MapThermalZone to a library specific class"""
         for key, value in self.aix_lib.items():
@@ -730,7 +729,7 @@ class MapComponent(MoObject):
     connected_out : list of HierarchyNodes
         list of hierarchy nodes that are connected FROM this MapComponent
 
-    hvac_components_mod: A component might contain other components!		
+    hvac_components_mod: A component might contain other components!
     """
 
     def __init__(self, project, hierarchy_node, parent=None):
@@ -1254,17 +1253,17 @@ class MapSpaceBoundary(MoObject):
             else:
                 self.simmodel_normal_vector = None
                 if self.internal_external == "INTERNAL":
-                    if child[q].ClassType() in ["SimWall_Wall_Interior","SimWall_Wall_ExteriorAboveGrade","SimWall_Wall_Default"]:				
+                    if child[q].ClassType() in ["SimWall_Wall_Interior","SimWall_Wall_ExteriorAboveGrade","SimWall_Wall_Default"]:
                         self.OthersideSpaceBoundary = self.sim_instance.OthersideSpaceBoundary().getValue()
-                        self.RelatedBuildingElement = self.sim_instance.RelatedBuildingElement().getValue()						
-                    else:				
+                        self.RelatedBuildingElement = self.sim_instance.RelatedBuildingElement().getValue()
+                    else:
                         self.RelatedBuildingElement = self.sim_instance.RelatedBuildingElement().getValue()
                         #if elements_to_boundaries[self.RelatedBuildingElement].index(self.sim_ref_id) == 0:
-                        #    index = 1						
-                        #else:						
-                        #    index = 0                         						
-                        #self.OthersideSpaceBoundary = elements_to_boundaries[self.RelatedBuildingElement][index]							
-					
+                        #    index = 1
+                        #else:
+                        #    index = 0
+                        #self.OthersideSpaceBoundary = elements_to_boundaries[self.RelatedBuildingElement][index]
+
     def instantiate_element(self):
         bound_child = self.hierarchy_node.getChildList()
         for a in range(bound_child.size()):
