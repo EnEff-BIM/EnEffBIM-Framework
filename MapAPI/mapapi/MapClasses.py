@@ -45,9 +45,51 @@ from SimMaterialLayer_OpaqueMaterialLayer_Default import SimMaterialLayer_Opaque
 from SimMaterialLayerSet_OpaqueLayerSet_Roof import SimMaterialLayerSet_OpaqueLayerSet_Roof
 from SimMaterialLayerSet_OpaqueLayerSet_Floor import SimMaterialLayerSet_OpaqueLayerSet_Floor
 from SimMaterialLayerSet_GlazingLayerSet_Window import SimMaterialLayerSet_GlazingLayerSet_Window
-from SimMaterial_OpaqueMaterial_Default import SimMaterial_OpaqueMaterial_Default
 from SimMaterialLayer_GlazingMaterialLayer_Default import SimMaterialLayer_GlazingMaterialLayer_Default
 from SimMaterial_GlazingMaterial_SimpleGlazingSystem import SimMaterial_GlazingMaterial_SimpleGlazingSystem
+import SimBuildingStory_BuildingStory_Default
+import SimGroup_SpatialZoneGroup_ZoneGroup
+import SimList_EquipmentList_ZoneHvac
+import SimSlab_Default_Default
+import SimSlab_Floor_InterzoneFloor
+import SimWall_Wall_Default
+import SimWall_Wall_Interior
+import SimMaterialLayerSet_Default_Default
+import SimMaterial_Default_Default
+import SimMaterial_OpaqueMaterial_AirGap
+import SimMaterial_GlazingMaterial_Gas
+import SimMaterial_GlazingMaterial_Glazing
+import SimModelRepresentationContext_GeometricRepresentationContext_Default
+import SimPlacement_Axis2Placement3D_Default
+import SimGeomVector_Vector_Direction
+from SimSystem_HvacHotWater_FullSystem import SimSystem_HvacHotWater_FullSystem
+import SimSystem_HvacHotWater_Control
+import SimController_SupplyWater_Temperature
+import SimSensor_TemperatureSensor_DryBulb
+import SimFlowController_Valve_Default
+import SimFlowController_Valve_TemperingValve
+import SimFlowEnergyTransfer_ConvectiveHeater_Radiant_Water
+import SimFlowEnergyTransferStorage_HotWaterTank_Expansion
+import SimFlowEnergyTransferStorage_HotWaterTank_Mixed
+import SimFlowFitting_Default_Default
+import SimFlowSegment_Pipe_Indoor
+import SimConnection_HotWaterFlow_Default
+import SimNode_HotWaterFlowPort_Water_Out
+import SimNode_HotWaterFlowPort_Water_In
+import SimDistributionPort_HotWaterFlowPort_Water_Out
+#import SimDistributionPort_HotWaterFlowPort_Water_In
+#import SimDistributionPort_HotWaterFlowPort_Water_InOrOut
+import SimNode_DigitalControl_HWLoop_DigitalSignal_In
+import SimTimeSeriesSchedule_Year_Default
+import SimTimeSeriesSchedule_Week_Daily
+import SimTimeSeriesSchedule_Day_Interval
+import SimTemplateZoneLoads_ZoneLoads_Default
+import SimTemplateZoneConditions_ZoneConditions_Default
+import SimInternalLoad_Equipment_Electric
+import SimInternalLoad_People_Default
+import SimInternalLoad_Lights_Default
+import SimController_ZoneControlTemperature_Thermostat
+import SimControlScheme_SetpointScheme_SingleHeating
 
 class MoObject(object):
     """Base class for all mapped objects
@@ -279,9 +321,13 @@ class MapProject(object):
         """Instantiate the SimModel Hierarchy and load the SimXML file through
         libSimModelAPI"""
         self.translator = SimTranslator()
-        self.sim_hierarchy = self.translator.getSimHierarchy()
-        load_sim = self.translator.loadSimModel(simxml_file)
-
+        self.sim_hierarchy = self.translator.getSimHierarchy()       		
+        if isinstance(simxml_file,list):
+            zone = simxml_file[0].replace('\\','\\\\')
+            hvac = simxml_file[1].replace('\\','\\\\')
+            load_sim = self.translator.loadSimModel(zone,hvac)
+        else:		
+            load_sim = self.translator.loadSimModel(simxml_file)
         self.instantiate_buildings()
 
     def instantiate_buildings(self):
@@ -416,8 +462,8 @@ class MapBuilding(MoObject):
         for a in self.hvac_components_sim:
             a.convert_me()
             print("after conversion",a)
-        for a in self.hvac_components_sim:
-            a.mapp_me()
+        for a in self.hvac_components_sim:		
+            #a.mapp_me()
             print(a)
 
 
@@ -584,17 +630,17 @@ class MapComponent(MoObject):
 
         child = self.hierarchy_node.getChildList()
         for id in range(child.size()):
+            #print("child[id]: ", child[id], " of the type: ", child[id].ClassType(), "\n")		
             if child[id].ClassType() == \
-                    "SimNode_HotWaterFlowPort_Water_In":
+                    "SimNode_HotWaterFlowPort_Water_In" or "SimDistributionPort_HotWaterFlowPort_Water_In" :
                 sim_port_in = child[id]
             if child[id].ClassType () == \
                     "SimNode_HotWaterFlowPort_Water_Out":
-                sim_port_out = child[id]
+                sim_port_out = child[id]				
+            self.port_a = self.add_connector(name="port_a", type="FluidPort",dimension=1, hierarchy_node=sim_port_in)				
+            self.port_b = self.add_connector(name="port_b", type="FluidPort",dimension=1, hierarchy_node=sim_port_out)
 
-        self.port_a = self.add_connector(name="port_a", type="FluidPort",
-         dimension=1, hierarchy_node=sim_port_in)
-        self.port_b = self.add_connector(name="port_b", type="FluidPort",
-         dimension=1, hierarchy_node=sim_port_out)
+
 
 class MapConnection(object):
     """Representation of a mapped connector
