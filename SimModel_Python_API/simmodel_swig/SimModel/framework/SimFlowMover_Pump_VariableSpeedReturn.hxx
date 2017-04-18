@@ -263,8 +263,7 @@ namespace schema
         // SimFlowMover_Name
         //
         typedef ::xml_schema::string SimFlowMover_Name_type;
-        typedef ::xsd::cxx::tree::optional< SimFlowMover_Name_type
-, false > SimFlowMover_Name_optional;
+        typedef ::xsd::cxx::tree::optional< SimFlowMover_Name_type, false > SimFlowMover_Name_optional;
         typedef ::xsd::cxx::tree::traits< SimFlowMover_Name_type, char > SimFlowMover_Name_traits;
 
         const SimFlowMover_Name_optional&
@@ -321,8 +320,7 @@ namespace schema
         // SimFlowMover_InNodeName
         //
         typedef ::xml_schema::string SimFlowMover_InNodeName_type;
-        typedef ::xsd::cxx::tree::optional< SimFlowMover_InNodeName_type
-, false > SimFlowMover_InNodeName_optional;
+        typedef ::xsd::cxx::tree::optional< SimFlowMover_InNodeName_type, false > SimFlowMover_InNodeName_optional;
         typedef ::xsd::cxx::tree::traits< SimFlowMover_InNodeName_type, char > SimFlowMover_InNodeName_traits;
 
         const SimFlowMover_InNodeName_optional&
@@ -343,8 +341,7 @@ namespace schema
         // SimFlowMover_OutNodeName
         //
         typedef ::xml_schema::string SimFlowMover_OutNodeName_type;
-        typedef ::xsd::cxx::tree::optional< SimFlowMover_OutNodeName_type
-, false > SimFlowMover_OutNodeName_optional;
+        typedef ::xsd::cxx::tree::optional< SimFlowMover_OutNodeName_type, false > SimFlowMover_OutNodeName_optional;
         typedef ::xsd::cxx::tree::traits< SimFlowMover_OutNodeName_type, char > SimFlowMover_OutNodeName_traits;
 
         const SimFlowMover_OutNodeName_optional&
@@ -509,8 +506,7 @@ namespace schema
         // SimFlowMover_PumpContType
         //
         typedef ::xml_schema::string SimFlowMover_PumpContType_type;
-        typedef ::xsd::cxx::tree::optional< SimFlowMover_PumpContType_type
-, false > SimFlowMover_PumpContType_optional;
+        typedef ::xsd::cxx::tree::optional< SimFlowMover_PumpContType_type, false > SimFlowMover_PumpContType_optional;
         typedef ::xsd::cxx::tree::traits< SimFlowMover_PumpContType_type, char > SimFlowMover_PumpContType_traits;
 
         const SimFlowMover_PumpContType_optional&
@@ -531,8 +527,7 @@ namespace schema
         // SimFlowMover_PumpFlowRateSchedName
         //
         typedef ::xml_schema::idref SimFlowMover_PumpFlowRateSchedName_type;
-        typedef ::xsd::cxx::tree::optional< SimFlowMover_PumpFlowRateSchedName_type
-, false > SimFlowMover_PumpFlowRateSchedName_optional;
+        typedef ::xsd::cxx::tree::optional< SimFlowMover_PumpFlowRateSchedName_type, false > SimFlowMover_PumpFlowRateSchedName_optional;
         typedef ::xsd::cxx::tree::traits< SimFlowMover_PumpFlowRateSchedName_type, char > SimFlowMover_PumpFlowRateSchedName_traits;
 
         const SimFlowMover_PumpFlowRateSchedName_optional&
@@ -553,8 +548,7 @@ namespace schema
         // SimFlowMover_PumpCurveName
         //
         typedef ::xml_schema::idref SimFlowMover_PumpCurveName_type;
-        typedef ::xsd::cxx::tree::optional< SimFlowMover_PumpCurveName_type
-, false > SimFlowMover_PumpCurveName_optional;
+        typedef ::xsd::cxx::tree::optional< SimFlowMover_PumpCurveName_type, false > SimFlowMover_PumpCurveName_optional;
         typedef ::xsd::cxx::tree::traits< SimFlowMover_PumpCurveName_type, char > SimFlowMover_PumpCurveName_traits;
 
         const SimFlowMover_PumpCurveName_optional&
@@ -593,8 +587,7 @@ namespace schema
         // SimFlowMover_VFDCtrlType
         //
         typedef ::xml_schema::string SimFlowMover_VFDCtrlType_type;
-        typedef ::xsd::cxx::tree::optional< SimFlowMover_VFDCtrlType_type
-, false > SimFlowMover_VFDCtrlType_optional;
+        typedef ::xsd::cxx::tree::optional< SimFlowMover_VFDCtrlType_type, false > SimFlowMover_VFDCtrlType_optional;
         typedef ::xsd::cxx::tree::traits< SimFlowMover_VFDCtrlType_type, char > SimFlowMover_VFDCtrlType_traits;
 
         const SimFlowMover_VFDCtrlType_optional&
@@ -615,8 +608,7 @@ namespace schema
         // SimFlowMover_PumprpmSchedName
         //
         typedef ::xml_schema::idref SimFlowMover_PumprpmSchedName_type;
-        typedef ::xsd::cxx::tree::optional< SimFlowMover_PumprpmSchedName_type
-, false > SimFlowMover_PumprpmSchedName_optional;
+        typedef ::xsd::cxx::tree::optional< SimFlowMover_PumprpmSchedName_type, false > SimFlowMover_PumprpmSchedName_optional;
         typedef ::xsd::cxx::tree::traits< SimFlowMover_PumprpmSchedName_type, char > SimFlowMover_PumprpmSchedName_traits;
 
         const SimFlowMover_PumprpmSchedName_optional&
@@ -637,8 +629,7 @@ namespace schema
         // SimFlowMover_MinPressureSched
         //
         typedef ::xml_schema::idref SimFlowMover_MinPressureSched_type;
-        typedef ::xsd::cxx::tree::optional< SimFlowMover_MinPressureSched_type
-, false > SimFlowMover_MinPressureSched_optional;
+        typedef ::xsd::cxx::tree::optional< SimFlowMover_MinPressureSched_type, false > SimFlowMover_MinPressureSched_optional;
         typedef ::xsd::cxx::tree::traits< SimFlowMover_MinPressureSched_type, char > SimFlowMover_MinPressureSched_traits;
 
         const SimFlowMover_MinPressureSched_optional&
@@ -659,8 +650,7 @@ namespace schema
         // SimFlowMover_MaxPressureSched
         //
         typedef ::xml_schema::idref SimFlowMover_MaxPressureSched_type;
-        typedef ::xsd::cxx::tree::optional< SimFlowMover_MaxPressureSched_type
-, false > SimFlowMover_MaxPressureSched_optional;
+        typedef ::xsd::cxx::tree::optional< SimFlowMover_MaxPressureSched_type, false > SimFlowMover_MaxPressureSched_optional;
         typedef ::xsd::cxx::tree::traits< SimFlowMover_MaxPressureSched_type, char > SimFlowMover_MaxPressureSched_traits;
 
         const SimFlowMover_MaxPressureSched_optional&
@@ -681,8 +671,7 @@ namespace schema
         // SimFlowMover_MinRPMSched
         //
         typedef ::xml_schema::idref SimFlowMover_MinRPMSched_type;
-        typedef ::xsd::cxx::tree::optional< SimFlowMover_MinRPMSched_type
-, false > SimFlowMover_MinRPMSched_optional;
+        typedef ::xsd::cxx::tree::optional< SimFlowMover_MinRPMSched_type, false > SimFlowMover_MinRPMSched_optional;
         typedef ::xsd::cxx::tree::traits< SimFlowMover_MinRPMSched_type, char > SimFlowMover_MinRPMSched_traits;
 
         const SimFlowMover_MinRPMSched_optional&
@@ -703,8 +692,7 @@ namespace schema
         // SimFlowMover_MaxRPMSched
         //
         typedef ::xml_schema::idref SimFlowMover_MaxRPMSched_type;
-        typedef ::xsd::cxx::tree::optional< SimFlowMover_MaxRPMSched_type
-, false > SimFlowMover_MaxRPMSched_optional;
+        typedef ::xsd::cxx::tree::optional< SimFlowMover_MaxRPMSched_type, false > SimFlowMover_MaxRPMSched_optional;
         typedef ::xsd::cxx::tree::traits< SimFlowMover_MaxRPMSched_type, char > SimFlowMover_MaxRPMSched_traits;
 
         const SimFlowMover_MaxRPMSched_optional&
@@ -725,8 +713,7 @@ namespace schema
         // SimFlowMover_ZoneName
         //
         typedef ::xml_schema::idref SimFlowMover_ZoneName_type;
-        typedef ::xsd::cxx::tree::optional< SimFlowMover_ZoneName_type
-, false > SimFlowMover_ZoneName_optional;
+        typedef ::xsd::cxx::tree::optional< SimFlowMover_ZoneName_type, false > SimFlowMover_ZoneName_optional;
         typedef ::xsd::cxx::tree::traits< SimFlowMover_ZoneName_type, char > SimFlowMover_ZoneName_traits;
 
         const SimFlowMover_ZoneName_optional&

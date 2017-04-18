@@ -40,6 +40,8 @@
 
 #include "SimPlacement.hxx"
 
+#include "doublelist.hxx"
+
 namespace schema
 {
   namespace simxml
@@ -78,6 +80,36 @@ namespace schema
       {
         this->Location_.set (x);
       }
+
+      const SimPlacement::Coordinates_optional& SimPlacement::
+      Coordinates () const
+      {
+        return this->Coordinates_;
+      }
+
+      SimPlacement::Coordinates_optional& SimPlacement::
+      Coordinates ()
+      {
+        return this->Coordinates_;
+      }
+
+      void SimPlacement::
+      Coordinates (const Coordinates_type& x)
+      {
+        this->Coordinates_.set (x);
+      }
+
+      void SimPlacement::
+      Coordinates (const Coordinates_optional& x)
+      {
+        this->Coordinates_ = x;
+      }
+
+      void SimPlacement::
+      Coordinates (::std::auto_ptr< Coordinates_type > x)
+      {
+        this->Coordinates_.set (x);
+      }
     }
   }
 }
@@ -105,14 +137,16 @@ namespace schema
       SimPlacement::
       SimPlacement ()
       : ::schema::simxml::SimModelCore::SimGeometricRepresentationItem (),
-        Location_ (this)
+        Location_ (this),
+        Coordinates_ (this)
       {
       }
 
       SimPlacement::
       SimPlacement (const RefId_type& RefId)
       : ::schema::simxml::SimModelCore::SimGeometricRepresentationItem (RefId),
-        Location_ (this)
+        Location_ (this),
+        Coordinates_ (this)
       {
       }
 
@@ -121,7 +155,8 @@ namespace schema
                     ::xml_schema::flags f,
                     ::xml_schema::container* c)
       : ::schema::simxml::SimModelCore::SimGeometricRepresentationItem (x, f, c),
-        Location_ (x.Location_, f, this)
+        Location_ (x.Location_, f, this),
+        Coordinates_ (x.Coordinates_, f, this)
       {
       }
 
@@ -130,7 +165,8 @@ namespace schema
                     ::xml_schema::flags f,
                     ::xml_schema::container* c)
       : ::schema::simxml::SimModelCore::SimGeometricRepresentationItem (e, f | ::xml_schema::flags::base, c),
-        Location_ (this)
+        Location_ (this),
+        Coordinates_ (this)
       {
         if ((f & ::xml_schema::flags::base) == 0)
         {
@@ -165,6 +201,20 @@ namespace schema
             }
           }
 
+          // Coordinates
+          //
+          if (n.name () == "Coordinates" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/ResourcesGeometry")
+          {
+            ::std::auto_ptr< Coordinates_type > r (
+              Coordinates_traits::create (i, f, this));
+
+            if (!this->Coordinates_)
+            {
+              this->Coordinates_.set (r);
+              continue;
+            }
+          }
+
           break;
         }
       }
@@ -183,6 +233,7 @@ namespace schema
         {
           static_cast< ::schema::simxml::SimModelCore::SimGeometricRepresentationItem& > (*this) = x;
           this->Location_ = x.Location_;
+          this->Coordinates_ = x.Coordinates_;
         }
 
         return *this;

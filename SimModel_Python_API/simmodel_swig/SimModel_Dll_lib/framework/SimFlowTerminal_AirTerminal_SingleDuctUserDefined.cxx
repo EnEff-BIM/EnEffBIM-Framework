@@ -40,6 +40,10 @@
 
 #include "SimFlowTerminal_AirTerminal_SingleDuctUserDefined.hxx"
 
+#include "simflowterm_plantconn_1_2_inletnodename.hxx"
+
+#include "simflowterm_plantconn_1_2_outletnodename.hxx"
+
 namespace schema
 {
   namespace simxml
@@ -48,6 +52,390 @@ namespace schema
     {
       // SimFlowTerminal_AirTerminal_SingleDuctUserDefined
       // 
+
+      const SimFlowTerminal_AirTerminal_SingleDuctUserDefined::SimFlowTerm_Name_optional& SimFlowTerminal_AirTerminal_SingleDuctUserDefined::
+      SimFlowTerm_Name () const
+      {
+        return this->SimFlowTerm_Name_;
+      }
+
+      SimFlowTerminal_AirTerminal_SingleDuctUserDefined::SimFlowTerm_Name_optional& SimFlowTerminal_AirTerminal_SingleDuctUserDefined::
+      SimFlowTerm_Name ()
+      {
+        return this->SimFlowTerm_Name_;
+      }
+
+      void SimFlowTerminal_AirTerminal_SingleDuctUserDefined::
+      SimFlowTerm_Name (const SimFlowTerm_Name_type& x)
+      {
+        this->SimFlowTerm_Name_.set (x);
+      }
+
+      void SimFlowTerminal_AirTerminal_SingleDuctUserDefined::
+      SimFlowTerm_Name (const SimFlowTerm_Name_optional& x)
+      {
+        this->SimFlowTerm_Name_ = x;
+      }
+
+      void SimFlowTerminal_AirTerminal_SingleDuctUserDefined::
+      SimFlowTerm_Name (::std::auto_ptr< SimFlowTerm_Name_type > x)
+      {
+        this->SimFlowTerm_Name_.set (x);
+      }
+
+      const SimFlowTerminal_AirTerminal_SingleDuctUserDefined::SimFlowTerm_SecondAirInletNodeName_optional& SimFlowTerminal_AirTerminal_SingleDuctUserDefined::
+      SimFlowTerm_SecondAirInletNodeName () const
+      {
+        return this->SimFlowTerm_SecondAirInletNodeName_;
+      }
+
+      SimFlowTerminal_AirTerminal_SingleDuctUserDefined::SimFlowTerm_SecondAirInletNodeName_optional& SimFlowTerminal_AirTerminal_SingleDuctUserDefined::
+      SimFlowTerm_SecondAirInletNodeName ()
+      {
+        return this->SimFlowTerm_SecondAirInletNodeName_;
+      }
+
+      void SimFlowTerminal_AirTerminal_SingleDuctUserDefined::
+      SimFlowTerm_SecondAirInletNodeName (const SimFlowTerm_SecondAirInletNodeName_type& x)
+      {
+        this->SimFlowTerm_SecondAirInletNodeName_.set (x);
+      }
+
+      void SimFlowTerminal_AirTerminal_SingleDuctUserDefined::
+      SimFlowTerm_SecondAirInletNodeName (const SimFlowTerm_SecondAirInletNodeName_optional& x)
+      {
+        this->SimFlowTerm_SecondAirInletNodeName_ = x;
+      }
+
+      void SimFlowTerminal_AirTerminal_SingleDuctUserDefined::
+      SimFlowTerm_SecondAirInletNodeName (::std::auto_ptr< SimFlowTerm_SecondAirInletNodeName_type > x)
+      {
+        this->SimFlowTerm_SecondAirInletNodeName_.set (x);
+      }
+
+      const SimFlowTerminal_AirTerminal_SingleDuctUserDefined::SimFlowTerm_OverallMdlSimulationProgCallingMngrName_optional& SimFlowTerminal_AirTerminal_SingleDuctUserDefined::
+      SimFlowTerm_OverallMdlSimulationProgCallingMngrName () const
+      {
+        return this->SimFlowTerm_OverallMdlSimulationProgCallingMngrName_;
+      }
+
+      SimFlowTerminal_AirTerminal_SingleDuctUserDefined::SimFlowTerm_OverallMdlSimulationProgCallingMngrName_optional& SimFlowTerminal_AirTerminal_SingleDuctUserDefined::
+      SimFlowTerm_OverallMdlSimulationProgCallingMngrName ()
+      {
+        return this->SimFlowTerm_OverallMdlSimulationProgCallingMngrName_;
+      }
+
+      void SimFlowTerminal_AirTerminal_SingleDuctUserDefined::
+      SimFlowTerm_OverallMdlSimulationProgCallingMngrName (const SimFlowTerm_OverallMdlSimulationProgCallingMngrName_type& x)
+      {
+        this->SimFlowTerm_OverallMdlSimulationProgCallingMngrName_.set (x);
+      }
+
+      void SimFlowTerminal_AirTerminal_SingleDuctUserDefined::
+      SimFlowTerm_OverallMdlSimulationProgCallingMngrName (const SimFlowTerm_OverallMdlSimulationProgCallingMngrName_optional& x)
+      {
+        this->SimFlowTerm_OverallMdlSimulationProgCallingMngrName_ = x;
+      }
+
+      void SimFlowTerminal_AirTerminal_SingleDuctUserDefined::
+      SimFlowTerm_OverallMdlSimulationProgCallingMngrName (::std::auto_ptr< SimFlowTerm_OverallMdlSimulationProgCallingMngrName_type > x)
+      {
+        this->SimFlowTerm_OverallMdlSimulationProgCallingMngrName_.set (x);
+      }
+
+      const SimFlowTerminal_AirTerminal_SingleDuctUserDefined::SimFlowTerm_MdlSetupandSizingProgCallingMngrName_optional& SimFlowTerminal_AirTerminal_SingleDuctUserDefined::
+      SimFlowTerm_MdlSetupandSizingProgCallingMngrName () const
+      {
+        return this->SimFlowTerm_MdlSetupandSizingProgCallingMngrName_;
+      }
+
+      SimFlowTerminal_AirTerminal_SingleDuctUserDefined::SimFlowTerm_MdlSetupandSizingProgCallingMngrName_optional& SimFlowTerminal_AirTerminal_SingleDuctUserDefined::
+      SimFlowTerm_MdlSetupandSizingProgCallingMngrName ()
+      {
+        return this->SimFlowTerm_MdlSetupandSizingProgCallingMngrName_;
+      }
+
+      void SimFlowTerminal_AirTerminal_SingleDuctUserDefined::
+      SimFlowTerm_MdlSetupandSizingProgCallingMngrName (const SimFlowTerm_MdlSetupandSizingProgCallingMngrName_type& x)
+      {
+        this->SimFlowTerm_MdlSetupandSizingProgCallingMngrName_.set (x);
+      }
+
+      void SimFlowTerminal_AirTerminal_SingleDuctUserDefined::
+      SimFlowTerm_MdlSetupandSizingProgCallingMngrName (const SimFlowTerm_MdlSetupandSizingProgCallingMngrName_optional& x)
+      {
+        this->SimFlowTerm_MdlSetupandSizingProgCallingMngrName_ = x;
+      }
+
+      void SimFlowTerminal_AirTerminal_SingleDuctUserDefined::
+      SimFlowTerm_MdlSetupandSizingProgCallingMngrName (::std::auto_ptr< SimFlowTerm_MdlSetupandSizingProgCallingMngrName_type > x)
+      {
+        this->SimFlowTerm_MdlSetupandSizingProgCallingMngrName_.set (x);
+      }
+
+      const SimFlowTerminal_AirTerminal_SingleDuctUserDefined::SimFlowTerm_PrimaryAirInletNodeName_optional& SimFlowTerminal_AirTerminal_SingleDuctUserDefined::
+      SimFlowTerm_PrimaryAirInletNodeName () const
+      {
+        return this->SimFlowTerm_PrimaryAirInletNodeName_;
+      }
+
+      SimFlowTerminal_AirTerminal_SingleDuctUserDefined::SimFlowTerm_PrimaryAirInletNodeName_optional& SimFlowTerminal_AirTerminal_SingleDuctUserDefined::
+      SimFlowTerm_PrimaryAirInletNodeName ()
+      {
+        return this->SimFlowTerm_PrimaryAirInletNodeName_;
+      }
+
+      void SimFlowTerminal_AirTerminal_SingleDuctUserDefined::
+      SimFlowTerm_PrimaryAirInletNodeName (const SimFlowTerm_PrimaryAirInletNodeName_type& x)
+      {
+        this->SimFlowTerm_PrimaryAirInletNodeName_.set (x);
+      }
+
+      void SimFlowTerminal_AirTerminal_SingleDuctUserDefined::
+      SimFlowTerm_PrimaryAirInletNodeName (const SimFlowTerm_PrimaryAirInletNodeName_optional& x)
+      {
+        this->SimFlowTerm_PrimaryAirInletNodeName_ = x;
+      }
+
+      void SimFlowTerminal_AirTerminal_SingleDuctUserDefined::
+      SimFlowTerm_PrimaryAirInletNodeName (::std::auto_ptr< SimFlowTerm_PrimaryAirInletNodeName_type > x)
+      {
+        this->SimFlowTerm_PrimaryAirInletNodeName_.set (x);
+      }
+
+      const SimFlowTerminal_AirTerminal_SingleDuctUserDefined::SimFlowTerm_PrimaryAirOutInletNodeName_optional& SimFlowTerminal_AirTerminal_SingleDuctUserDefined::
+      SimFlowTerm_PrimaryAirOutInletNodeName () const
+      {
+        return this->SimFlowTerm_PrimaryAirOutInletNodeName_;
+      }
+
+      SimFlowTerminal_AirTerminal_SingleDuctUserDefined::SimFlowTerm_PrimaryAirOutInletNodeName_optional& SimFlowTerminal_AirTerminal_SingleDuctUserDefined::
+      SimFlowTerm_PrimaryAirOutInletNodeName ()
+      {
+        return this->SimFlowTerm_PrimaryAirOutInletNodeName_;
+      }
+
+      void SimFlowTerminal_AirTerminal_SingleDuctUserDefined::
+      SimFlowTerm_PrimaryAirOutInletNodeName (const SimFlowTerm_PrimaryAirOutInletNodeName_type& x)
+      {
+        this->SimFlowTerm_PrimaryAirOutInletNodeName_.set (x);
+      }
+
+      void SimFlowTerminal_AirTerminal_SingleDuctUserDefined::
+      SimFlowTerm_PrimaryAirOutInletNodeName (const SimFlowTerm_PrimaryAirOutInletNodeName_optional& x)
+      {
+        this->SimFlowTerm_PrimaryAirOutInletNodeName_ = x;
+      }
+
+      void SimFlowTerminal_AirTerminal_SingleDuctUserDefined::
+      SimFlowTerm_PrimaryAirOutInletNodeName (::std::auto_ptr< SimFlowTerm_PrimaryAirOutInletNodeName_type > x)
+      {
+        this->SimFlowTerm_PrimaryAirOutInletNodeName_.set (x);
+      }
+
+      const SimFlowTerminal_AirTerminal_SingleDuctUserDefined::SimFlowTerm_SecondAirOutletNodeName_optional& SimFlowTerminal_AirTerminal_SingleDuctUserDefined::
+      SimFlowTerm_SecondAirOutletNodeName () const
+      {
+        return this->SimFlowTerm_SecondAirOutletNodeName_;
+      }
+
+      SimFlowTerminal_AirTerminal_SingleDuctUserDefined::SimFlowTerm_SecondAirOutletNodeName_optional& SimFlowTerminal_AirTerminal_SingleDuctUserDefined::
+      SimFlowTerm_SecondAirOutletNodeName ()
+      {
+        return this->SimFlowTerm_SecondAirOutletNodeName_;
+      }
+
+      void SimFlowTerminal_AirTerminal_SingleDuctUserDefined::
+      SimFlowTerm_SecondAirOutletNodeName (const SimFlowTerm_SecondAirOutletNodeName_type& x)
+      {
+        this->SimFlowTerm_SecondAirOutletNodeName_.set (x);
+      }
+
+      void SimFlowTerminal_AirTerminal_SingleDuctUserDefined::
+      SimFlowTerm_SecondAirOutletNodeName (const SimFlowTerm_SecondAirOutletNodeName_optional& x)
+      {
+        this->SimFlowTerm_SecondAirOutletNodeName_ = x;
+      }
+
+      void SimFlowTerminal_AirTerminal_SingleDuctUserDefined::
+      SimFlowTerm_SecondAirOutletNodeName (::std::auto_ptr< SimFlowTerm_SecondAirOutletNodeName_type > x)
+      {
+        this->SimFlowTerm_SecondAirOutletNodeName_.set (x);
+      }
+
+      const SimFlowTerminal_AirTerminal_SingleDuctUserDefined::SimFlowTerm_NumberOfPlantLoopConns_optional& SimFlowTerminal_AirTerminal_SingleDuctUserDefined::
+      SimFlowTerm_NumberOfPlantLoopConns () const
+      {
+        return this->SimFlowTerm_NumberOfPlantLoopConns_;
+      }
+
+      SimFlowTerminal_AirTerminal_SingleDuctUserDefined::SimFlowTerm_NumberOfPlantLoopConns_optional& SimFlowTerminal_AirTerminal_SingleDuctUserDefined::
+      SimFlowTerm_NumberOfPlantLoopConns ()
+      {
+        return this->SimFlowTerm_NumberOfPlantLoopConns_;
+      }
+
+      void SimFlowTerminal_AirTerminal_SingleDuctUserDefined::
+      SimFlowTerm_NumberOfPlantLoopConns (const SimFlowTerm_NumberOfPlantLoopConns_type& x)
+      {
+        this->SimFlowTerm_NumberOfPlantLoopConns_.set (x);
+      }
+
+      void SimFlowTerminal_AirTerminal_SingleDuctUserDefined::
+      SimFlowTerm_NumberOfPlantLoopConns (const SimFlowTerm_NumberOfPlantLoopConns_optional& x)
+      {
+        this->SimFlowTerm_NumberOfPlantLoopConns_ = x;
+      }
+
+      const SimFlowTerminal_AirTerminal_SingleDuctUserDefined::SimFlowTerm_PlantConn_1_2_InletNodeName_optional& SimFlowTerminal_AirTerminal_SingleDuctUserDefined::
+      SimFlowTerm_PlantConn_1_2_InletNodeName () const
+      {
+        return this->SimFlowTerm_PlantConn_1_2_InletNodeName_;
+      }
+
+      SimFlowTerminal_AirTerminal_SingleDuctUserDefined::SimFlowTerm_PlantConn_1_2_InletNodeName_optional& SimFlowTerminal_AirTerminal_SingleDuctUserDefined::
+      SimFlowTerm_PlantConn_1_2_InletNodeName ()
+      {
+        return this->SimFlowTerm_PlantConn_1_2_InletNodeName_;
+      }
+
+      void SimFlowTerminal_AirTerminal_SingleDuctUserDefined::
+      SimFlowTerm_PlantConn_1_2_InletNodeName (const SimFlowTerm_PlantConn_1_2_InletNodeName_type& x)
+      {
+        this->SimFlowTerm_PlantConn_1_2_InletNodeName_.set (x);
+      }
+
+      void SimFlowTerminal_AirTerminal_SingleDuctUserDefined::
+      SimFlowTerm_PlantConn_1_2_InletNodeName (const SimFlowTerm_PlantConn_1_2_InletNodeName_optional& x)
+      {
+        this->SimFlowTerm_PlantConn_1_2_InletNodeName_ = x;
+      }
+
+      void SimFlowTerminal_AirTerminal_SingleDuctUserDefined::
+      SimFlowTerm_PlantConn_1_2_InletNodeName (::std::auto_ptr< SimFlowTerm_PlantConn_1_2_InletNodeName_type > x)
+      {
+        this->SimFlowTerm_PlantConn_1_2_InletNodeName_.set (x);
+      }
+
+      const SimFlowTerminal_AirTerminal_SingleDuctUserDefined::SimFlowTerm_PlantConn_1_2_OutletNodeName_optional& SimFlowTerminal_AirTerminal_SingleDuctUserDefined::
+      SimFlowTerm_PlantConn_1_2_OutletNodeName () const
+      {
+        return this->SimFlowTerm_PlantConn_1_2_OutletNodeName_;
+      }
+
+      SimFlowTerminal_AirTerminal_SingleDuctUserDefined::SimFlowTerm_PlantConn_1_2_OutletNodeName_optional& SimFlowTerminal_AirTerminal_SingleDuctUserDefined::
+      SimFlowTerm_PlantConn_1_2_OutletNodeName ()
+      {
+        return this->SimFlowTerm_PlantConn_1_2_OutletNodeName_;
+      }
+
+      void SimFlowTerminal_AirTerminal_SingleDuctUserDefined::
+      SimFlowTerm_PlantConn_1_2_OutletNodeName (const SimFlowTerm_PlantConn_1_2_OutletNodeName_type& x)
+      {
+        this->SimFlowTerm_PlantConn_1_2_OutletNodeName_.set (x);
+      }
+
+      void SimFlowTerminal_AirTerminal_SingleDuctUserDefined::
+      SimFlowTerm_PlantConn_1_2_OutletNodeName (const SimFlowTerm_PlantConn_1_2_OutletNodeName_optional& x)
+      {
+        this->SimFlowTerm_PlantConn_1_2_OutletNodeName_ = x;
+      }
+
+      void SimFlowTerminal_AirTerminal_SingleDuctUserDefined::
+      SimFlowTerm_PlantConn_1_2_OutletNodeName (::std::auto_ptr< SimFlowTerm_PlantConn_1_2_OutletNodeName_type > x)
+      {
+        this->SimFlowTerm_PlantConn_1_2_OutletNodeName_.set (x);
+      }
+
+      const SimFlowTerminal_AirTerminal_SingleDuctUserDefined::SimFlowTerm_SupplyInletWaterStorageTankName_optional& SimFlowTerminal_AirTerminal_SingleDuctUserDefined::
+      SimFlowTerm_SupplyInletWaterStorageTankName () const
+      {
+        return this->SimFlowTerm_SupplyInletWaterStorageTankName_;
+      }
+
+      SimFlowTerminal_AirTerminal_SingleDuctUserDefined::SimFlowTerm_SupplyInletWaterStorageTankName_optional& SimFlowTerminal_AirTerminal_SingleDuctUserDefined::
+      SimFlowTerm_SupplyInletWaterStorageTankName ()
+      {
+        return this->SimFlowTerm_SupplyInletWaterStorageTankName_;
+      }
+
+      void SimFlowTerminal_AirTerminal_SingleDuctUserDefined::
+      SimFlowTerm_SupplyInletWaterStorageTankName (const SimFlowTerm_SupplyInletWaterStorageTankName_type& x)
+      {
+        this->SimFlowTerm_SupplyInletWaterStorageTankName_.set (x);
+      }
+
+      void SimFlowTerminal_AirTerminal_SingleDuctUserDefined::
+      SimFlowTerm_SupplyInletWaterStorageTankName (const SimFlowTerm_SupplyInletWaterStorageTankName_optional& x)
+      {
+        this->SimFlowTerm_SupplyInletWaterStorageTankName_ = x;
+      }
+
+      void SimFlowTerminal_AirTerminal_SingleDuctUserDefined::
+      SimFlowTerm_SupplyInletWaterStorageTankName (::std::auto_ptr< SimFlowTerm_SupplyInletWaterStorageTankName_type > x)
+      {
+        this->SimFlowTerm_SupplyInletWaterStorageTankName_.set (x);
+      }
+
+      const SimFlowTerminal_AirTerminal_SingleDuctUserDefined::SimFlowTerm_CollectionOutletWaterStorageTankName_optional& SimFlowTerminal_AirTerminal_SingleDuctUserDefined::
+      SimFlowTerm_CollectionOutletWaterStorageTankName () const
+      {
+        return this->SimFlowTerm_CollectionOutletWaterStorageTankName_;
+      }
+
+      SimFlowTerminal_AirTerminal_SingleDuctUserDefined::SimFlowTerm_CollectionOutletWaterStorageTankName_optional& SimFlowTerminal_AirTerminal_SingleDuctUserDefined::
+      SimFlowTerm_CollectionOutletWaterStorageTankName ()
+      {
+        return this->SimFlowTerm_CollectionOutletWaterStorageTankName_;
+      }
+
+      void SimFlowTerminal_AirTerminal_SingleDuctUserDefined::
+      SimFlowTerm_CollectionOutletWaterStorageTankName (const SimFlowTerm_CollectionOutletWaterStorageTankName_type& x)
+      {
+        this->SimFlowTerm_CollectionOutletWaterStorageTankName_.set (x);
+      }
+
+      void SimFlowTerminal_AirTerminal_SingleDuctUserDefined::
+      SimFlowTerm_CollectionOutletWaterStorageTankName (const SimFlowTerm_CollectionOutletWaterStorageTankName_optional& x)
+      {
+        this->SimFlowTerm_CollectionOutletWaterStorageTankName_ = x;
+      }
+
+      void SimFlowTerminal_AirTerminal_SingleDuctUserDefined::
+      SimFlowTerm_CollectionOutletWaterStorageTankName (::std::auto_ptr< SimFlowTerm_CollectionOutletWaterStorageTankName_type > x)
+      {
+        this->SimFlowTerm_CollectionOutletWaterStorageTankName_.set (x);
+      }
+
+      const SimFlowTerminal_AirTerminal_SingleDuctUserDefined::SimFlowTerm_AmbientZoneName_optional& SimFlowTerminal_AirTerminal_SingleDuctUserDefined::
+      SimFlowTerm_AmbientZoneName () const
+      {
+        return this->SimFlowTerm_AmbientZoneName_;
+      }
+
+      SimFlowTerminal_AirTerminal_SingleDuctUserDefined::SimFlowTerm_AmbientZoneName_optional& SimFlowTerminal_AirTerminal_SingleDuctUserDefined::
+      SimFlowTerm_AmbientZoneName ()
+      {
+        return this->SimFlowTerm_AmbientZoneName_;
+      }
+
+      void SimFlowTerminal_AirTerminal_SingleDuctUserDefined::
+      SimFlowTerm_AmbientZoneName (const SimFlowTerm_AmbientZoneName_type& x)
+      {
+        this->SimFlowTerm_AmbientZoneName_.set (x);
+      }
+
+      void SimFlowTerminal_AirTerminal_SingleDuctUserDefined::
+      SimFlowTerm_AmbientZoneName (const SimFlowTerm_AmbientZoneName_optional& x)
+      {
+        this->SimFlowTerm_AmbientZoneName_ = x;
+      }
+
+      void SimFlowTerminal_AirTerminal_SingleDuctUserDefined::
+      SimFlowTerm_AmbientZoneName (::std::auto_ptr< SimFlowTerm_AmbientZoneName_type > x)
+      {
+        this->SimFlowTerm_AmbientZoneName_.set (x);
+      }
     }
   }
 }
@@ -74,13 +462,39 @@ namespace schema
 
       SimFlowTerminal_AirTerminal_SingleDuctUserDefined::
       SimFlowTerminal_AirTerminal_SingleDuctUserDefined ()
-      : ::schema::simxml::MepModel::SimFlowTerminal_AirTerminal ()
+      : ::schema::simxml::MepModel::SimFlowTerminal_AirTerminal (),
+        SimFlowTerm_Name_ (this),
+        SimFlowTerm_SecondAirInletNodeName_ (this),
+        SimFlowTerm_OverallMdlSimulationProgCallingMngrName_ (this),
+        SimFlowTerm_MdlSetupandSizingProgCallingMngrName_ (this),
+        SimFlowTerm_PrimaryAirInletNodeName_ (this),
+        SimFlowTerm_PrimaryAirOutInletNodeName_ (this),
+        SimFlowTerm_SecondAirOutletNodeName_ (this),
+        SimFlowTerm_NumberOfPlantLoopConns_ (this),
+        SimFlowTerm_PlantConn_1_2_InletNodeName_ (this),
+        SimFlowTerm_PlantConn_1_2_OutletNodeName_ (this),
+        SimFlowTerm_SupplyInletWaterStorageTankName_ (this),
+        SimFlowTerm_CollectionOutletWaterStorageTankName_ (this),
+        SimFlowTerm_AmbientZoneName_ (this)
       {
       }
 
       SimFlowTerminal_AirTerminal_SingleDuctUserDefined::
       SimFlowTerminal_AirTerminal_SingleDuctUserDefined (const RefId_type& RefId)
-      : ::schema::simxml::MepModel::SimFlowTerminal_AirTerminal (RefId)
+      : ::schema::simxml::MepModel::SimFlowTerminal_AirTerminal (RefId),
+        SimFlowTerm_Name_ (this),
+        SimFlowTerm_SecondAirInletNodeName_ (this),
+        SimFlowTerm_OverallMdlSimulationProgCallingMngrName_ (this),
+        SimFlowTerm_MdlSetupandSizingProgCallingMngrName_ (this),
+        SimFlowTerm_PrimaryAirInletNodeName_ (this),
+        SimFlowTerm_PrimaryAirOutInletNodeName_ (this),
+        SimFlowTerm_SecondAirOutletNodeName_ (this),
+        SimFlowTerm_NumberOfPlantLoopConns_ (this),
+        SimFlowTerm_PlantConn_1_2_InletNodeName_ (this),
+        SimFlowTerm_PlantConn_1_2_OutletNodeName_ (this),
+        SimFlowTerm_SupplyInletWaterStorageTankName_ (this),
+        SimFlowTerm_CollectionOutletWaterStorageTankName_ (this),
+        SimFlowTerm_AmbientZoneName_ (this)
       {
       }
 
@@ -88,7 +502,20 @@ namespace schema
       SimFlowTerminal_AirTerminal_SingleDuctUserDefined (const SimFlowTerminal_AirTerminal_SingleDuctUserDefined& x,
                                                          ::xml_schema::flags f,
                                                          ::xml_schema::container* c)
-      : ::schema::simxml::MepModel::SimFlowTerminal_AirTerminal (x, f, c)
+      : ::schema::simxml::MepModel::SimFlowTerminal_AirTerminal (x, f, c),
+        SimFlowTerm_Name_ (x.SimFlowTerm_Name_, f, this),
+        SimFlowTerm_SecondAirInletNodeName_ (x.SimFlowTerm_SecondAirInletNodeName_, f, this),
+        SimFlowTerm_OverallMdlSimulationProgCallingMngrName_ (x.SimFlowTerm_OverallMdlSimulationProgCallingMngrName_, f, this),
+        SimFlowTerm_MdlSetupandSizingProgCallingMngrName_ (x.SimFlowTerm_MdlSetupandSizingProgCallingMngrName_, f, this),
+        SimFlowTerm_PrimaryAirInletNodeName_ (x.SimFlowTerm_PrimaryAirInletNodeName_, f, this),
+        SimFlowTerm_PrimaryAirOutInletNodeName_ (x.SimFlowTerm_PrimaryAirOutInletNodeName_, f, this),
+        SimFlowTerm_SecondAirOutletNodeName_ (x.SimFlowTerm_SecondAirOutletNodeName_, f, this),
+        SimFlowTerm_NumberOfPlantLoopConns_ (x.SimFlowTerm_NumberOfPlantLoopConns_, f, this),
+        SimFlowTerm_PlantConn_1_2_InletNodeName_ (x.SimFlowTerm_PlantConn_1_2_InletNodeName_, f, this),
+        SimFlowTerm_PlantConn_1_2_OutletNodeName_ (x.SimFlowTerm_PlantConn_1_2_OutletNodeName_, f, this),
+        SimFlowTerm_SupplyInletWaterStorageTankName_ (x.SimFlowTerm_SupplyInletWaterStorageTankName_, f, this),
+        SimFlowTerm_CollectionOutletWaterStorageTankName_ (x.SimFlowTerm_CollectionOutletWaterStorageTankName_, f, this),
+        SimFlowTerm_AmbientZoneName_ (x.SimFlowTerm_AmbientZoneName_, f, this)
       {
       }
 
@@ -96,8 +523,221 @@ namespace schema
       SimFlowTerminal_AirTerminal_SingleDuctUserDefined (const ::xercesc::DOMElement& e,
                                                          ::xml_schema::flags f,
                                                          ::xml_schema::container* c)
-      : ::schema::simxml::MepModel::SimFlowTerminal_AirTerminal (e, f, c)
+      : ::schema::simxml::MepModel::SimFlowTerminal_AirTerminal (e, f | ::xml_schema::flags::base, c),
+        SimFlowTerm_Name_ (this),
+        SimFlowTerm_SecondAirInletNodeName_ (this),
+        SimFlowTerm_OverallMdlSimulationProgCallingMngrName_ (this),
+        SimFlowTerm_MdlSetupandSizingProgCallingMngrName_ (this),
+        SimFlowTerm_PrimaryAirInletNodeName_ (this),
+        SimFlowTerm_PrimaryAirOutInletNodeName_ (this),
+        SimFlowTerm_SecondAirOutletNodeName_ (this),
+        SimFlowTerm_NumberOfPlantLoopConns_ (this),
+        SimFlowTerm_PlantConn_1_2_InletNodeName_ (this),
+        SimFlowTerm_PlantConn_1_2_OutletNodeName_ (this),
+        SimFlowTerm_SupplyInletWaterStorageTankName_ (this),
+        SimFlowTerm_CollectionOutletWaterStorageTankName_ (this),
+        SimFlowTerm_AmbientZoneName_ (this)
       {
+        if ((f & ::xml_schema::flags::base) == 0)
+        {
+          ::xsd::cxx::xml::dom::parser< char > p (e, true, false, true);
+          this->parse (p, f);
+        }
+      }
+
+      void SimFlowTerminal_AirTerminal_SingleDuctUserDefined::
+      parse (::xsd::cxx::xml::dom::parser< char >& p,
+             ::xml_schema::flags f)
+      {
+        this->::schema::simxml::MepModel::SimFlowTerminal_AirTerminal::parse (p, f);
+
+        for (; p.more_content (); p.next_content (false))
+        {
+          const ::xercesc::DOMElement& i (p.cur_element ());
+          const ::xsd::cxx::xml::qualified_name< char > n (
+            ::xsd::cxx::xml::dom::name< char > (i));
+
+          // SimFlowTerm_Name
+          //
+          if (n.name () == "SimFlowTerm_Name" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            ::std::auto_ptr< SimFlowTerm_Name_type > r (
+              SimFlowTerm_Name_traits::create (i, f, this));
+
+            if (!this->SimFlowTerm_Name_)
+            {
+              this->SimFlowTerm_Name_.set (r);
+              continue;
+            }
+          }
+
+          // SimFlowTerm_SecondAirInletNodeName
+          //
+          if (n.name () == "SimFlowTerm_SecondAirInletNodeName" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            ::std::auto_ptr< SimFlowTerm_SecondAirInletNodeName_type > r (
+              SimFlowTerm_SecondAirInletNodeName_traits::create (i, f, this));
+
+            if (!this->SimFlowTerm_SecondAirInletNodeName_)
+            {
+              this->SimFlowTerm_SecondAirInletNodeName_.set (r);
+              continue;
+            }
+          }
+
+          // SimFlowTerm_OverallMdlSimulationProgCallingMngrName
+          //
+          if (n.name () == "SimFlowTerm_OverallMdlSimulationProgCallingMngrName" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            ::std::auto_ptr< SimFlowTerm_OverallMdlSimulationProgCallingMngrName_type > r (
+              SimFlowTerm_OverallMdlSimulationProgCallingMngrName_traits::create (i, f, this));
+
+            if (!this->SimFlowTerm_OverallMdlSimulationProgCallingMngrName_)
+            {
+              this->SimFlowTerm_OverallMdlSimulationProgCallingMngrName_.set (r);
+              continue;
+            }
+          }
+
+          // SimFlowTerm_MdlSetupandSizingProgCallingMngrName
+          //
+          if (n.name () == "SimFlowTerm_MdlSetupandSizingProgCallingMngrName" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            ::std::auto_ptr< SimFlowTerm_MdlSetupandSizingProgCallingMngrName_type > r (
+              SimFlowTerm_MdlSetupandSizingProgCallingMngrName_traits::create (i, f, this));
+
+            if (!this->SimFlowTerm_MdlSetupandSizingProgCallingMngrName_)
+            {
+              this->SimFlowTerm_MdlSetupandSizingProgCallingMngrName_.set (r);
+              continue;
+            }
+          }
+
+          // SimFlowTerm_PrimaryAirInletNodeName
+          //
+          if (n.name () == "SimFlowTerm_PrimaryAirInletNodeName" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            ::std::auto_ptr< SimFlowTerm_PrimaryAirInletNodeName_type > r (
+              SimFlowTerm_PrimaryAirInletNodeName_traits::create (i, f, this));
+
+            if (!this->SimFlowTerm_PrimaryAirInletNodeName_)
+            {
+              this->SimFlowTerm_PrimaryAirInletNodeName_.set (r);
+              continue;
+            }
+          }
+
+          // SimFlowTerm_PrimaryAirOutInletNodeName
+          //
+          if (n.name () == "SimFlowTerm_PrimaryAirOutInletNodeName" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            ::std::auto_ptr< SimFlowTerm_PrimaryAirOutInletNodeName_type > r (
+              SimFlowTerm_PrimaryAirOutInletNodeName_traits::create (i, f, this));
+
+            if (!this->SimFlowTerm_PrimaryAirOutInletNodeName_)
+            {
+              this->SimFlowTerm_PrimaryAirOutInletNodeName_.set (r);
+              continue;
+            }
+          }
+
+          // SimFlowTerm_SecondAirOutletNodeName
+          //
+          if (n.name () == "SimFlowTerm_SecondAirOutletNodeName" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            ::std::auto_ptr< SimFlowTerm_SecondAirOutletNodeName_type > r (
+              SimFlowTerm_SecondAirOutletNodeName_traits::create (i, f, this));
+
+            if (!this->SimFlowTerm_SecondAirOutletNodeName_)
+            {
+              this->SimFlowTerm_SecondAirOutletNodeName_.set (r);
+              continue;
+            }
+          }
+
+          // SimFlowTerm_NumberOfPlantLoopConns
+          //
+          if (n.name () == "SimFlowTerm_NumberOfPlantLoopConns" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            if (!this->SimFlowTerm_NumberOfPlantLoopConns_)
+            {
+              this->SimFlowTerm_NumberOfPlantLoopConns_.set (SimFlowTerm_NumberOfPlantLoopConns_traits::create (i, f, this));
+              continue;
+            }
+          }
+
+          // SimFlowTerm_PlantConn_1_2_InletNodeName
+          //
+          if (n.name () == "SimFlowTerm_PlantConn_1_2_InletNodeName" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            ::std::auto_ptr< SimFlowTerm_PlantConn_1_2_InletNodeName_type > r (
+              SimFlowTerm_PlantConn_1_2_InletNodeName_traits::create (i, f, this));
+
+            if (!this->SimFlowTerm_PlantConn_1_2_InletNodeName_)
+            {
+              this->SimFlowTerm_PlantConn_1_2_InletNodeName_.set (r);
+              continue;
+            }
+          }
+
+          // SimFlowTerm_PlantConn_1_2_OutletNodeName
+          //
+          if (n.name () == "SimFlowTerm_PlantConn_1_2_OutletNodeName" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            ::std::auto_ptr< SimFlowTerm_PlantConn_1_2_OutletNodeName_type > r (
+              SimFlowTerm_PlantConn_1_2_OutletNodeName_traits::create (i, f, this));
+
+            if (!this->SimFlowTerm_PlantConn_1_2_OutletNodeName_)
+            {
+              this->SimFlowTerm_PlantConn_1_2_OutletNodeName_.set (r);
+              continue;
+            }
+          }
+
+          // SimFlowTerm_SupplyInletWaterStorageTankName
+          //
+          if (n.name () == "SimFlowTerm_SupplyInletWaterStorageTankName" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            ::std::auto_ptr< SimFlowTerm_SupplyInletWaterStorageTankName_type > r (
+              SimFlowTerm_SupplyInletWaterStorageTankName_traits::create (i, f, this));
+
+            if (!this->SimFlowTerm_SupplyInletWaterStorageTankName_)
+            {
+              this->SimFlowTerm_SupplyInletWaterStorageTankName_.set (r);
+              continue;
+            }
+          }
+
+          // SimFlowTerm_CollectionOutletWaterStorageTankName
+          //
+          if (n.name () == "SimFlowTerm_CollectionOutletWaterStorageTankName" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            ::std::auto_ptr< SimFlowTerm_CollectionOutletWaterStorageTankName_type > r (
+              SimFlowTerm_CollectionOutletWaterStorageTankName_traits::create (i, f, this));
+
+            if (!this->SimFlowTerm_CollectionOutletWaterStorageTankName_)
+            {
+              this->SimFlowTerm_CollectionOutletWaterStorageTankName_.set (r);
+              continue;
+            }
+          }
+
+          // SimFlowTerm_AmbientZoneName
+          //
+          if (n.name () == "SimFlowTerm_AmbientZoneName" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            ::std::auto_ptr< SimFlowTerm_AmbientZoneName_type > r (
+              SimFlowTerm_AmbientZoneName_traits::create (i, f, this));
+
+            if (!this->SimFlowTerm_AmbientZoneName_)
+            {
+              this->SimFlowTerm_AmbientZoneName_.set (r);
+              continue;
+            }
+          }
+
+          break;
+        }
       }
 
       SimFlowTerminal_AirTerminal_SingleDuctUserDefined* SimFlowTerminal_AirTerminal_SingleDuctUserDefined::
@@ -105,6 +745,30 @@ namespace schema
               ::xml_schema::container* c) const
       {
         return new class SimFlowTerminal_AirTerminal_SingleDuctUserDefined (*this, f, c);
+      }
+
+      SimFlowTerminal_AirTerminal_SingleDuctUserDefined& SimFlowTerminal_AirTerminal_SingleDuctUserDefined::
+      operator= (const SimFlowTerminal_AirTerminal_SingleDuctUserDefined& x)
+      {
+        if (this != &x)
+        {
+          static_cast< ::schema::simxml::MepModel::SimFlowTerminal_AirTerminal& > (*this) = x;
+          this->SimFlowTerm_Name_ = x.SimFlowTerm_Name_;
+          this->SimFlowTerm_SecondAirInletNodeName_ = x.SimFlowTerm_SecondAirInletNodeName_;
+          this->SimFlowTerm_OverallMdlSimulationProgCallingMngrName_ = x.SimFlowTerm_OverallMdlSimulationProgCallingMngrName_;
+          this->SimFlowTerm_MdlSetupandSizingProgCallingMngrName_ = x.SimFlowTerm_MdlSetupandSizingProgCallingMngrName_;
+          this->SimFlowTerm_PrimaryAirInletNodeName_ = x.SimFlowTerm_PrimaryAirInletNodeName_;
+          this->SimFlowTerm_PrimaryAirOutInletNodeName_ = x.SimFlowTerm_PrimaryAirOutInletNodeName_;
+          this->SimFlowTerm_SecondAirOutletNodeName_ = x.SimFlowTerm_SecondAirOutletNodeName_;
+          this->SimFlowTerm_NumberOfPlantLoopConns_ = x.SimFlowTerm_NumberOfPlantLoopConns_;
+          this->SimFlowTerm_PlantConn_1_2_InletNodeName_ = x.SimFlowTerm_PlantConn_1_2_InletNodeName_;
+          this->SimFlowTerm_PlantConn_1_2_OutletNodeName_ = x.SimFlowTerm_PlantConn_1_2_OutletNodeName_;
+          this->SimFlowTerm_SupplyInletWaterStorageTankName_ = x.SimFlowTerm_SupplyInletWaterStorageTankName_;
+          this->SimFlowTerm_CollectionOutletWaterStorageTankName_ = x.SimFlowTerm_CollectionOutletWaterStorageTankName_;
+          this->SimFlowTerm_AmbientZoneName_ = x.SimFlowTerm_AmbientZoneName_;
+        }
+
+        return *this;
       }
 
       SimFlowTerminal_AirTerminal_SingleDuctUserDefined::

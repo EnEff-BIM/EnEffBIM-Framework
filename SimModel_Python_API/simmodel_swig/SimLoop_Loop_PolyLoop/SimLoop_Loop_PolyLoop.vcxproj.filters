@@ -25,6 +25,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="SimLoop_Loop_PolyLoop.i" />
+    <CustomBuild Include="SimLoop_Loop_PolyLoop.i" />
   </ItemGroup>
 </Project>

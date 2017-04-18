@@ -179,7 +179,7 @@ void SimMappedData::translator(SimHierarchy& _simHierarchy, std::string _name)
 	// load mapping rule filter
 	RuleFilter _rule_filter;
 	// set mapping rule parsing environment
-	_rule_filter.setMappingRule(_mapping_rule);
+	_rule_filter.setMappingRule(_mapping_rule, _simHierarchy.getCallBack()); // set callback here
 		
 
 	std::multimap<int, int> _idList;
@@ -189,7 +189,7 @@ void SimMappedData::translator(SimHierarchy& _simHierarchy, std::string _name)
 		if(_rule_filter.isMappedComponent(_simHierarchy.getHierarchyNodeList()[i]))
 		{
 			// translate the SimModel component
-			std::vector<MappedComponent> _mapComList = _rule_filter.getMappedData(_simHierarchy.getHierarchyNodeList()[i]);
+			std::vector<MappedComponent> _mapComList = _rule_filter.getMappedData2_2(_simHierarchy.getHierarchyNodeList()[i]);
 
 			// add mapped component
 			for(unsigned int j=0; j<_mapComList.size(); ++j)
@@ -199,20 +199,6 @@ void SimMappedData::translator(SimHierarchy& _simHierarchy, std::string _name)
 				_idList.insert(std::pair<int, int>(i, MappedComponentList.size()-1));
 			}
 		}
-
-		//_simHierarchy.getHierarchyNodeList()[i]._SimRootObject->RefId();
-		// 1. load mapping rule: component mapping list multimap<component_name, rule_ref1,2,3>:1one2one, 2one2many, 3gap
-		// finite type casting
-
-		// 2. search the class type in the component mapping list
-
-		// 3. if found, then load data of component level: one by one from the list
-
-		// 4. In each instance of the list, load data of the property level: 
-		// python callback(SimHierarchyNode:getSimObject, property_name):simobject
-		// multiple jump?
-		// return value: string, double,
-		// array: not resolved?
 	}
 
 	// check whether there are newly added components

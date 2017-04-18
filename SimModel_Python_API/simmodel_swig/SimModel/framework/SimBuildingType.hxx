@@ -323,6 +323,453 @@ namespace schema
         void
         ContainedBldgStoryTypeDefs (::std::auto_ptr< ContainedBldgStoryTypeDefs_type > p);
 
+        // BuildingOccupancyType
+        //
+        typedef ::xml_schema::string BuildingOccupancyType_type;
+        typedef ::xsd::cxx::tree::optional< BuildingOccupancyType_type > BuildingOccupancyType_optional;
+        typedef ::xsd::cxx::tree::traits< BuildingOccupancyType_type, char > BuildingOccupancyType_traits;
+
+        const BuildingOccupancyType_optional&
+        BuildingOccupancyType () const;
+
+        BuildingOccupancyType_optional&
+        BuildingOccupancyType ();
+
+        void
+        BuildingOccupancyType (const BuildingOccupancyType_type& x);
+
+        void
+        BuildingOccupancyType (const BuildingOccupancyType_optional& x);
+
+        void
+        BuildingOccupancyType (::std::auto_ptr< BuildingOccupancyType_type > p);
+
+        // BuildingEnergyTargetUnits
+        //
+        typedef ::xml_schema::string BuildingEnergyTargetUnits_type;
+        typedef ::xsd::cxx::tree::optional< BuildingEnergyTargetUnits_type > BuildingEnergyTargetUnits_optional;
+        typedef ::xsd::cxx::tree::traits< BuildingEnergyTargetUnits_type, char > BuildingEnergyTargetUnits_traits;
+
+        const BuildingEnergyTargetUnits_optional&
+        BuildingEnergyTargetUnits () const;
+
+        BuildingEnergyTargetUnits_optional&
+        BuildingEnergyTargetUnits ();
+
+        void
+        BuildingEnergyTargetUnits (const BuildingEnergyTargetUnits_type& x);
+
+        void
+        BuildingEnergyTargetUnits (const BuildingEnergyTargetUnits_optional& x);
+
+        void
+        BuildingEnergyTargetUnits (::std::auto_ptr< BuildingEnergyTargetUnits_type > p);
+
+        // BuildingEnergyTargetValue
+        //
+        typedef ::xml_schema::double_ BuildingEnergyTargetValue_type;
+        typedef ::xsd::cxx::tree::optional< BuildingEnergyTargetValue_type > BuildingEnergyTargetValue_optional;
+        typedef ::xsd::cxx::tree::traits< BuildingEnergyTargetValue_type, char, ::xsd::cxx::tree::schema_type::double_ > BuildingEnergyTargetValue_traits;
+
+        const BuildingEnergyTargetValue_optional&
+        BuildingEnergyTargetValue () const;
+
+        BuildingEnergyTargetValue_optional&
+        BuildingEnergyTargetValue ();
+
+        void
+        BuildingEnergyTargetValue (const BuildingEnergyTargetValue_type& x);
+
+        void
+        BuildingEnergyTargetValue (const BuildingEnergyTargetValue_optional& x);
+
+        // ClassRef_ConstEntByFunction
+        //
+        typedef ::xml_schema::idref ClassRef_ConstEntByFunction_type;
+        typedef ::xsd::cxx::tree::optional< ClassRef_ConstEntByFunction_type > ClassRef_ConstEntByFunction_optional;
+        typedef ::xsd::cxx::tree::traits< ClassRef_ConstEntByFunction_type, char > ClassRef_ConstEntByFunction_traits;
+
+        const ClassRef_ConstEntByFunction_optional&
+        ClassRef_ConstEntByFunction () const;
+
+        ClassRef_ConstEntByFunction_optional&
+        ClassRef_ConstEntByFunction ();
+
+        void
+        ClassRef_ConstEntByFunction (const ClassRef_ConstEntByFunction_type& x);
+
+        void
+        ClassRef_ConstEntByFunction (const ClassRef_ConstEntByFunction_optional& x);
+
+        void
+        ClassRef_ConstEntByFunction (::std::auto_ptr< ClassRef_ConstEntByFunction_type > p);
+
+        // BuildingConstructionsTemplate
+        //
+        typedef ::xml_schema::idref BuildingConstructionsTemplate_type;
+        typedef ::xsd::cxx::tree::optional< BuildingConstructionsTemplate_type > BuildingConstructionsTemplate_optional;
+        typedef ::xsd::cxx::tree::traits< BuildingConstructionsTemplate_type, char > BuildingConstructionsTemplate_traits;
+
+        const BuildingConstructionsTemplate_optional&
+        BuildingConstructionsTemplate () const;
+
+        BuildingConstructionsTemplate_optional&
+        BuildingConstructionsTemplate ();
+
+        void
+        BuildingConstructionsTemplate (const BuildingConstructionsTemplate_type& x);
+
+        void
+        BuildingConstructionsTemplate (const BuildingConstructionsTemplate_optional& x);
+
+        void
+        BuildingConstructionsTemplate (::std::auto_ptr< BuildingConstructionsTemplate_type > p);
+
+        // DaylightControlsDefault
+        //
+        typedef ::xml_schema::idref DaylightControlsDefault_type;
+        typedef ::xsd::cxx::tree::optional< DaylightControlsDefault_type > DaylightControlsDefault_optional;
+        typedef ::xsd::cxx::tree::traits< DaylightControlsDefault_type, char > DaylightControlsDefault_traits;
+
+        const DaylightControlsDefault_optional&
+        DaylightControlsDefault () const;
+
+        DaylightControlsDefault_optional&
+        DaylightControlsDefault ();
+
+        void
+        DaylightControlsDefault (const DaylightControlsDefault_type& x);
+
+        void
+        DaylightControlsDefault (const DaylightControlsDefault_optional& x);
+
+        void
+        DaylightControlsDefault (::std::auto_ptr< DaylightControlsDefault_type > p);
+
+        // SkylightControlsDefault
+        //
+        typedef ::xml_schema::idref SkylightControlsDefault_type;
+        typedef ::xsd::cxx::tree::optional< SkylightControlsDefault_type > SkylightControlsDefault_optional;
+        typedef ::xsd::cxx::tree::traits< SkylightControlsDefault_type, char > SkylightControlsDefault_traits;
+
+        const SkylightControlsDefault_optional&
+        SkylightControlsDefault () const;
+
+        SkylightControlsDefault_optional&
+        SkylightControlsDefault ();
+
+        void
+        SkylightControlsDefault (const SkylightControlsDefault_type& x);
+
+        void
+        SkylightControlsDefault (const SkylightControlsDefault_optional& x);
+
+        void
+        SkylightControlsDefault (::std::auto_ptr< SkylightControlsDefault_type > p);
+
+        // NatVentilationDefault
+        //
+        typedef ::xml_schema::idref NatVentilationDefault_type;
+        typedef ::xsd::cxx::tree::optional< NatVentilationDefault_type > NatVentilationDefault_optional;
+        typedef ::xsd::cxx::tree::traits< NatVentilationDefault_type, char > NatVentilationDefault_traits;
+
+        const NatVentilationDefault_optional&
+        NatVentilationDefault () const;
+
+        NatVentilationDefault_optional&
+        NatVentilationDefault ();
+
+        void
+        NatVentilationDefault (const NatVentilationDefault_type& x);
+
+        void
+        NatVentilationDefault (const NatVentilationDefault_optional& x);
+
+        void
+        NatVentilationDefault (::std::auto_ptr< NatVentilationDefault_type > p);
+
+        // BuildingInfiltrationType
+        //
+        typedef ::xml_schema::string BuildingInfiltrationType_type;
+        typedef ::xsd::cxx::tree::optional< BuildingInfiltrationType_type > BuildingInfiltrationType_optional;
+        typedef ::xsd::cxx::tree::traits< BuildingInfiltrationType_type, char > BuildingInfiltrationType_traits;
+
+        const BuildingInfiltrationType_optional&
+        BuildingInfiltrationType () const;
+
+        BuildingInfiltrationType_optional&
+        BuildingInfiltrationType ();
+
+        void
+        BuildingInfiltrationType (const BuildingInfiltrationType_type& x);
+
+        void
+        BuildingInfiltrationType (const BuildingInfiltrationType_optional& x);
+
+        void
+        BuildingInfiltrationType (::std::auto_ptr< BuildingInfiltrationType_type > p);
+
+        // BuildingInfiltrationValue
+        //
+        typedef ::xml_schema::double_ BuildingInfiltrationValue_type;
+        typedef ::xsd::cxx::tree::optional< BuildingInfiltrationValue_type > BuildingInfiltrationValue_optional;
+        typedef ::xsd::cxx::tree::traits< BuildingInfiltrationValue_type, char, ::xsd::cxx::tree::schema_type::double_ > BuildingInfiltrationValue_traits;
+
+        const BuildingInfiltrationValue_optional&
+        BuildingInfiltrationValue () const;
+
+        BuildingInfiltrationValue_optional&
+        BuildingInfiltrationValue ();
+
+        void
+        BuildingInfiltrationValue (const BuildingInfiltrationValue_type& x);
+
+        void
+        BuildingInfiltrationValue (const BuildingInfiltrationValue_optional& x);
+
+        // SimBuilding_LoadsConvergTolVal
+        //
+        typedef ::xml_schema::double_ SimBuilding_LoadsConvergTolVal_type;
+        typedef ::xsd::cxx::tree::optional< SimBuilding_LoadsConvergTolVal_type > SimBuilding_LoadsConvergTolVal_optional;
+        typedef ::xsd::cxx::tree::traits< SimBuilding_LoadsConvergTolVal_type, char, ::xsd::cxx::tree::schema_type::double_ > SimBuilding_LoadsConvergTolVal_traits;
+
+        const SimBuilding_LoadsConvergTolVal_optional&
+        SimBuilding_LoadsConvergTolVal () const;
+
+        SimBuilding_LoadsConvergTolVal_optional&
+        SimBuilding_LoadsConvergTolVal ();
+
+        void
+        SimBuilding_LoadsConvergTolVal (const SimBuilding_LoadsConvergTolVal_type& x);
+
+        void
+        SimBuilding_LoadsConvergTolVal (const SimBuilding_LoadsConvergTolVal_optional& x);
+
+        // SimBuilding_TempConvergTolVal_Double
+        //
+        typedef ::xml_schema::double_ SimBuilding_TempConvergTolVal_Double_type;
+        typedef ::xsd::cxx::tree::optional< SimBuilding_TempConvergTolVal_Double_type > SimBuilding_TempConvergTolVal_Double_optional;
+        typedef ::xsd::cxx::tree::traits< SimBuilding_TempConvergTolVal_Double_type, char, ::xsd::cxx::tree::schema_type::double_ > SimBuilding_TempConvergTolVal_Double_traits;
+
+        const SimBuilding_TempConvergTolVal_Double_optional&
+        SimBuilding_TempConvergTolVal_Double () const;
+
+        SimBuilding_TempConvergTolVal_Double_optional&
+        SimBuilding_TempConvergTolVal_Double ();
+
+        void
+        SimBuilding_TempConvergTolVal_Double (const SimBuilding_TempConvergTolVal_Double_type& x);
+
+        void
+        SimBuilding_TempConvergTolVal_Double (const SimBuilding_TempConvergTolVal_Double_optional& x);
+
+        // SimBuilding_MaxNumWarmupDays
+        //
+        typedef ::xml_schema::int_ SimBuilding_MaxNumWarmupDays_type;
+        typedef ::xsd::cxx::tree::optional< SimBuilding_MaxNumWarmupDays_type > SimBuilding_MaxNumWarmupDays_optional;
+        typedef ::xsd::cxx::tree::traits< SimBuilding_MaxNumWarmupDays_type, char > SimBuilding_MaxNumWarmupDays_traits;
+
+        const SimBuilding_MaxNumWarmupDays_optional&
+        SimBuilding_MaxNumWarmupDays () const;
+
+        SimBuilding_MaxNumWarmupDays_optional&
+        SimBuilding_MaxNumWarmupDays ();
+
+        void
+        SimBuilding_MaxNumWarmupDays (const SimBuilding_MaxNumWarmupDays_type& x);
+
+        void
+        SimBuilding_MaxNumWarmupDays (const SimBuilding_MaxNumWarmupDays_optional& x);
+
+        // SimBuilding_MinNumberWarmupDays
+        //
+        typedef ::xml_schema::int_ SimBuilding_MinNumberWarmupDays_type;
+        typedef ::xsd::cxx::tree::optional< SimBuilding_MinNumberWarmupDays_type > SimBuilding_MinNumberWarmupDays_optional;
+        typedef ::xsd::cxx::tree::traits< SimBuilding_MinNumberWarmupDays_type, char > SimBuilding_MinNumberWarmupDays_traits;
+
+        const SimBuilding_MinNumberWarmupDays_optional&
+        SimBuilding_MinNumberWarmupDays () const;
+
+        SimBuilding_MinNumberWarmupDays_optional&
+        SimBuilding_MinNumberWarmupDays ();
+
+        void
+        SimBuilding_MinNumberWarmupDays (const SimBuilding_MinNumberWarmupDays_type& x);
+
+        void
+        SimBuilding_MinNumberWarmupDays (const SimBuilding_MinNumberWarmupDays_optional& x);
+
+        // RoofIrrigation_IrrigationModelType
+        //
+        typedef ::xml_schema::string RoofIrrigation_IrrigationModelType_type;
+        typedef ::xsd::cxx::tree::optional< RoofIrrigation_IrrigationModelType_type > RoofIrrigation_IrrigationModelType_optional;
+        typedef ::xsd::cxx::tree::traits< RoofIrrigation_IrrigationModelType_type, char > RoofIrrigation_IrrigationModelType_traits;
+
+        const RoofIrrigation_IrrigationModelType_optional&
+        RoofIrrigation_IrrigationModelType () const;
+
+        RoofIrrigation_IrrigationModelType_optional&
+        RoofIrrigation_IrrigationModelType ();
+
+        void
+        RoofIrrigation_IrrigationModelType (const RoofIrrigation_IrrigationModelType_type& x);
+
+        void
+        RoofIrrigation_IrrigationModelType (const RoofIrrigation_IrrigationModelType_optional& x);
+
+        void
+        RoofIrrigation_IrrigationModelType (::std::auto_ptr< RoofIrrigation_IrrigationModelType_type > p);
+
+        // RoofIrrigation_IrrigationRateSchedName
+        //
+        typedef ::xml_schema::idref RoofIrrigation_IrrigationRateSchedName_type;
+        typedef ::xsd::cxx::tree::optional< RoofIrrigation_IrrigationRateSchedName_type > RoofIrrigation_IrrigationRateSchedName_optional;
+        typedef ::xsd::cxx::tree::traits< RoofIrrigation_IrrigationRateSchedName_type, char > RoofIrrigation_IrrigationRateSchedName_traits;
+
+        const RoofIrrigation_IrrigationRateSchedName_optional&
+        RoofIrrigation_IrrigationRateSchedName () const;
+
+        RoofIrrigation_IrrigationRateSchedName_optional&
+        RoofIrrigation_IrrigationRateSchedName ();
+
+        void
+        RoofIrrigation_IrrigationRateSchedName (const RoofIrrigation_IrrigationRateSchedName_type& x);
+
+        void
+        RoofIrrigation_IrrigationRateSchedName (const RoofIrrigation_IrrigationRateSchedName_optional& x);
+
+        void
+        RoofIrrigation_IrrigationRateSchedName (::std::auto_ptr< RoofIrrigation_IrrigationRateSchedName_type > p);
+
+        // RoofIrrigation_IrrigationMaxSaturatThreshold_Double
+        //
+        typedef ::xml_schema::double_ RoofIrrigation_IrrigationMaxSaturatThreshold_Double_type;
+        typedef ::xsd::cxx::tree::optional< RoofIrrigation_IrrigationMaxSaturatThreshold_Double_type > RoofIrrigation_IrrigationMaxSaturatThreshold_Double_optional;
+        typedef ::xsd::cxx::tree::traits< RoofIrrigation_IrrigationMaxSaturatThreshold_Double_type, char, ::xsd::cxx::tree::schema_type::double_ > RoofIrrigation_IrrigationMaxSaturatThreshold_Double_traits;
+
+        const RoofIrrigation_IrrigationMaxSaturatThreshold_Double_optional&
+        RoofIrrigation_IrrigationMaxSaturatThreshold_Double () const;
+
+        RoofIrrigation_IrrigationMaxSaturatThreshold_Double_optional&
+        RoofIrrigation_IrrigationMaxSaturatThreshold_Double ();
+
+        void
+        RoofIrrigation_IrrigationMaxSaturatThreshold_Double (const RoofIrrigation_IrrigationMaxSaturatThreshold_Double_type& x);
+
+        void
+        RoofIrrigation_IrrigationMaxSaturatThreshold_Double (const RoofIrrigation_IrrigationMaxSaturatThreshold_Double_optional& x);
+
+        // T24CoilCoolingCapacity_Double
+        //
+        typedef ::xml_schema::double_ T24CoilCoolingCapacity_Double_type;
+        typedef ::xsd::cxx::tree::optional< T24CoilCoolingCapacity_Double_type > T24CoilCoolingCapacity_Double_optional;
+        typedef ::xsd::cxx::tree::traits< T24CoilCoolingCapacity_Double_type, char, ::xsd::cxx::tree::schema_type::double_ > T24CoilCoolingCapacity_Double_traits;
+
+        const T24CoilCoolingCapacity_Double_optional&
+        T24CoilCoolingCapacity_Double () const;
+
+        T24CoilCoolingCapacity_Double_optional&
+        T24CoilCoolingCapacity_Double ();
+
+        void
+        T24CoilCoolingCapacity_Double (const T24CoilCoolingCapacity_Double_type& x);
+
+        void
+        T24CoilCoolingCapacity_Double (const T24CoilCoolingCapacity_Double_optional& x);
+
+        // T24CoilHeatingCapacity_Double
+        //
+        typedef ::xml_schema::double_ T24CoilHeatingCapacity_Double_type;
+        typedef ::xsd::cxx::tree::optional< T24CoilHeatingCapacity_Double_type > T24CoilHeatingCapacity_Double_optional;
+        typedef ::xsd::cxx::tree::traits< T24CoilHeatingCapacity_Double_type, char, ::xsd::cxx::tree::schema_type::double_ > T24CoilHeatingCapacity_Double_traits;
+
+        const T24CoilHeatingCapacity_Double_optional&
+        T24CoilHeatingCapacity_Double () const;
+
+        T24CoilHeatingCapacity_Double_optional&
+        T24CoilHeatingCapacity_Double ();
+
+        void
+        T24CoilHeatingCapacity_Double (const T24CoilHeatingCapacity_Double_type& x);
+
+        void
+        T24CoilHeatingCapacity_Double (const T24CoilHeatingCapacity_Double_optional& x);
+
+        // T24FunctionClassificationMethod
+        //
+        typedef ::xml_schema::string T24FunctionClassificationMethod_type;
+        typedef ::xsd::cxx::tree::optional< T24FunctionClassificationMethod_type > T24FunctionClassificationMethod_optional;
+        typedef ::xsd::cxx::tree::traits< T24FunctionClassificationMethod_type, char > T24FunctionClassificationMethod_traits;
+
+        const T24FunctionClassificationMethod_optional&
+        T24FunctionClassificationMethod () const;
+
+        T24FunctionClassificationMethod_optional&
+        T24FunctionClassificationMethod ();
+
+        void
+        T24FunctionClassificationMethod (const T24FunctionClassificationMethod_type& x);
+
+        void
+        T24FunctionClassificationMethod (const T24FunctionClassificationMethod_optional& x);
+
+        void
+        T24FunctionClassificationMethod (::std::auto_ptr< T24FunctionClassificationMethod_type > p);
+
+        // T24PlantCoolingCapacity_Double
+        //
+        typedef ::xml_schema::double_ T24PlantCoolingCapacity_Double_type;
+        typedef ::xsd::cxx::tree::optional< T24PlantCoolingCapacity_Double_type > T24PlantCoolingCapacity_Double_optional;
+        typedef ::xsd::cxx::tree::traits< T24PlantCoolingCapacity_Double_type, char, ::xsd::cxx::tree::schema_type::double_ > T24PlantCoolingCapacity_Double_traits;
+
+        const T24PlantCoolingCapacity_Double_optional&
+        T24PlantCoolingCapacity_Double () const;
+
+        T24PlantCoolingCapacity_Double_optional&
+        T24PlantCoolingCapacity_Double ();
+
+        void
+        T24PlantCoolingCapacity_Double (const T24PlantCoolingCapacity_Double_type& x);
+
+        void
+        T24PlantCoolingCapacity_Double (const T24PlantCoolingCapacity_Double_optional& x);
+
+        // T24PlantHeatingCapacity_Double
+        //
+        typedef ::xml_schema::double_ T24PlantHeatingCapacity_Double_type;
+        typedef ::xsd::cxx::tree::optional< T24PlantHeatingCapacity_Double_type > T24PlantHeatingCapacity_Double_optional;
+        typedef ::xsd::cxx::tree::traits< T24PlantHeatingCapacity_Double_type, char, ::xsd::cxx::tree::schema_type::double_ > T24PlantHeatingCapacity_Double_traits;
+
+        const T24PlantHeatingCapacity_Double_optional&
+        T24PlantHeatingCapacity_Double () const;
+
+        T24PlantHeatingCapacity_Double_optional&
+        T24PlantHeatingCapacity_Double ();
+
+        void
+        T24PlantHeatingCapacity_Double (const T24PlantHeatingCapacity_Double_type& x);
+
+        void
+        T24PlantHeatingCapacity_Double (const T24PlantHeatingCapacity_Double_optional& x);
+
+        // RelocatablePublicSchoolBuilding
+        //
+        typedef ::xml_schema::int_ RelocatablePublicSchoolBuilding_type;
+        typedef ::xsd::cxx::tree::optional< RelocatablePublicSchoolBuilding_type > RelocatablePublicSchoolBuilding_optional;
+        typedef ::xsd::cxx::tree::traits< RelocatablePublicSchoolBuilding_type, char > RelocatablePublicSchoolBuilding_traits;
+
+        const RelocatablePublicSchoolBuilding_optional&
+        RelocatablePublicSchoolBuilding () const;
+
+        RelocatablePublicSchoolBuilding_optional&
+        RelocatablePublicSchoolBuilding ();
+
+        void
+        RelocatablePublicSchoolBuilding (const RelocatablePublicSchoolBuilding_type& x);
+
+        void
+        RelocatablePublicSchoolBuilding (const RelocatablePublicSchoolBuilding_optional& x);
+
         // Constructors.
         //
         SimBuildingType ();
@@ -358,6 +805,29 @@ namespace schema
         RepresentationMaps_optional RepresentationMaps_;
         Tag_optional Tag_;
         ContainedBldgStoryTypeDefs_optional ContainedBldgStoryTypeDefs_;
+        BuildingOccupancyType_optional BuildingOccupancyType_;
+        BuildingEnergyTargetUnits_optional BuildingEnergyTargetUnits_;
+        BuildingEnergyTargetValue_optional BuildingEnergyTargetValue_;
+        ClassRef_ConstEntByFunction_optional ClassRef_ConstEntByFunction_;
+        BuildingConstructionsTemplate_optional BuildingConstructionsTemplate_;
+        DaylightControlsDefault_optional DaylightControlsDefault_;
+        SkylightControlsDefault_optional SkylightControlsDefault_;
+        NatVentilationDefault_optional NatVentilationDefault_;
+        BuildingInfiltrationType_optional BuildingInfiltrationType_;
+        BuildingInfiltrationValue_optional BuildingInfiltrationValue_;
+        SimBuilding_LoadsConvergTolVal_optional SimBuilding_LoadsConvergTolVal_;
+        SimBuilding_TempConvergTolVal_Double_optional SimBuilding_TempConvergTolVal_Double_;
+        SimBuilding_MaxNumWarmupDays_optional SimBuilding_MaxNumWarmupDays_;
+        SimBuilding_MinNumberWarmupDays_optional SimBuilding_MinNumberWarmupDays_;
+        RoofIrrigation_IrrigationModelType_optional RoofIrrigation_IrrigationModelType_;
+        RoofIrrigation_IrrigationRateSchedName_optional RoofIrrigation_IrrigationRateSchedName_;
+        RoofIrrigation_IrrigationMaxSaturatThreshold_Double_optional RoofIrrigation_IrrigationMaxSaturatThreshold_Double_;
+        T24CoilCoolingCapacity_Double_optional T24CoilCoolingCapacity_Double_;
+        T24CoilHeatingCapacity_Double_optional T24CoilHeatingCapacity_Double_;
+        T24FunctionClassificationMethod_optional T24FunctionClassificationMethod_;
+        T24PlantCoolingCapacity_Double_optional T24PlantCoolingCapacity_Double_;
+        T24PlantHeatingCapacity_Double_optional T24PlantHeatingCapacity_Double_;
+        RelocatablePublicSchoolBuilding_optional RelocatablePublicSchoolBuilding_;
       };
     }
   }

@@ -25,6 +25,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="SimRepresentationMap_RepresentationMap_Default.i" />
+    <CustomBuild Include="SimRepresentationMap_RepresentationMap_Default.i" />
   </ItemGroup>
 </Project>

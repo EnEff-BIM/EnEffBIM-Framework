@@ -154,6 +154,9 @@ class SimWindowType(base.SimObjectTypeDefinition):
     def ContainingOpeningTypeDef(self, *args):
         return _SimWindowType_Window_Default.SimWindowType_ContainingOpeningTypeDef(self, *args)
 
+    def MaterialLayerSet(self, *args):
+        return _SimWindowType_Window_Default.SimWindowType_MaterialLayerSet(self, *args)
+
     def __init__(self, *args):
         this = _SimWindowType_Window_Default.new_SimWindowType(*args)
         try:

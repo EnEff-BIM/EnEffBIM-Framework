@@ -255,11 +255,64 @@ namespace schema
 {
   namespace simxml
   {
+    namespace SimModelCore
+    {
+      class doubleList;
+    }
+  }
+}
+
+namespace schema
+{
+  namespace simxml
+  {
     namespace ResourcesGeneral
     {
       class SimConnectionGeometry: public ::schema::simxml::SimModelCore::SimResourceObject
       {
         public:
+        // ConnectedElements
+        //
+        typedef ::xml_schema::idrefs ConnectedElements_type;
+        typedef ::xsd::cxx::tree::optional< ConnectedElements_type > ConnectedElements_optional;
+        typedef ::xsd::cxx::tree::traits< ConnectedElements_type, char > ConnectedElements_traits;
+
+        const ConnectedElements_optional&
+        ConnectedElements () const;
+
+        ConnectedElements_optional&
+        ConnectedElements ();
+
+        void
+        ConnectedElements (const ConnectedElements_type& x);
+
+        void
+        ConnectedElements (const ConnectedElements_optional& x);
+
+        void
+        ConnectedElements (::std::auto_ptr< ConnectedElements_type > p);
+
+        // Coordinates
+        //
+        typedef ::schema::simxml::SimModelCore::doubleList Coordinates_type;
+        typedef ::xsd::cxx::tree::optional< Coordinates_type > Coordinates_optional;
+        typedef ::xsd::cxx::tree::traits< Coordinates_type, char > Coordinates_traits;
+
+        const Coordinates_optional&
+        Coordinates () const;
+
+        Coordinates_optional&
+        Coordinates ();
+
+        void
+        Coordinates (const Coordinates_type& x);
+
+        void
+        Coordinates (const Coordinates_optional& x);
+
+        void
+        Coordinates (::std::auto_ptr< Coordinates_type > p);
+
         // Constructors.
         //
         SimConnectionGeometry ();
@@ -278,8 +331,22 @@ namespace schema
         _clone (::xml_schema::flags f = 0,
                 ::xml_schema::container* c = 0) const;
 
+        SimConnectionGeometry&
+        operator= (const SimConnectionGeometry& x);
+
         virtual 
         ~SimConnectionGeometry ();
+
+        // Implementation.
+        //
+        protected:
+        void
+        parse (::xsd::cxx::xml::dom::parser< char >&,
+               ::xml_schema::flags);
+
+        protected:
+        ConnectedElements_optional ConnectedElements_;
+        Coordinates_optional Coordinates_;
       };
     }
   }

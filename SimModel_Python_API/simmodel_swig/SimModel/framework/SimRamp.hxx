@@ -257,7 +257,7 @@ namespace schema
   {
     namespace BuildingModel
     {
-      class SimRamp: public ::schema::simxml::BuildingModel::SimBuildingElementAssembly
+      class SimRamp: public ::schema::simxml::SimModelCore::SimBuildingElementAssembly
       {
         public:
         // Name

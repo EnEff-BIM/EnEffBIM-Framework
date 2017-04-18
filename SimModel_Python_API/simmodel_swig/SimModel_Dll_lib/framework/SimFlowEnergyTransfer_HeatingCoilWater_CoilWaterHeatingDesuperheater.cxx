@@ -49,36 +49,6 @@ namespace schema
       // SimFlowEnergyTransfer_HeatingCoilWater_CoilWaterHeatingDesuperheater
       // 
 
-      const SimFlowEnergyTransfer_HeatingCoilWater_CoilWaterHeatingDesuperheater::SimFlowEnergyTrans_Name_optional& SimFlowEnergyTransfer_HeatingCoilWater_CoilWaterHeatingDesuperheater::
-      SimFlowEnergyTrans_Name () const
-      {
-        return this->SimFlowEnergyTrans_Name_;
-      }
-
-      SimFlowEnergyTransfer_HeatingCoilWater_CoilWaterHeatingDesuperheater::SimFlowEnergyTrans_Name_optional& SimFlowEnergyTransfer_HeatingCoilWater_CoilWaterHeatingDesuperheater::
-      SimFlowEnergyTrans_Name ()
-      {
-        return this->SimFlowEnergyTrans_Name_;
-      }
-
-      void SimFlowEnergyTransfer_HeatingCoilWater_CoilWaterHeatingDesuperheater::
-      SimFlowEnergyTrans_Name (const SimFlowEnergyTrans_Name_type& x)
-      {
-        this->SimFlowEnergyTrans_Name_.set (x);
-      }
-
-      void SimFlowEnergyTransfer_HeatingCoilWater_CoilWaterHeatingDesuperheater::
-      SimFlowEnergyTrans_Name (const SimFlowEnergyTrans_Name_optional& x)
-      {
-        this->SimFlowEnergyTrans_Name_ = x;
-      }
-
-      void SimFlowEnergyTransfer_HeatingCoilWater_CoilWaterHeatingDesuperheater::
-      SimFlowEnergyTrans_Name (::std::auto_ptr< SimFlowEnergyTrans_Name_type > x)
-      {
-        this->SimFlowEnergyTrans_Name_.set (x);
-      }
-
       const SimFlowEnergyTransfer_HeatingCoilWater_CoilWaterHeatingDesuperheater::SimFlowEnergyTrans_AvailSchedName_optional& SimFlowEnergyTransfer_HeatingCoilWater_CoilWaterHeatingDesuperheater::
       SimFlowEnergyTrans_AvailSchedName () const
       {
@@ -615,7 +585,6 @@ namespace schema
       SimFlowEnergyTransfer_HeatingCoilWater_CoilWaterHeatingDesuperheater::
       SimFlowEnergyTransfer_HeatingCoilWater_CoilWaterHeatingDesuperheater ()
       : ::schema::simxml::MepModel::SimFlowEnergyTransfer_HeatingCoilWater (),
-        SimFlowEnergyTrans_Name_ (this),
         SimFlowEnergyTrans_AvailSchedName_ (this),
         SimFlowEnergyTrans_WaterInletNodeName_ (this),
         SimFlowEnergyTrans_WaterOutletNodeName_ (this),
@@ -641,7 +610,6 @@ namespace schema
       SimFlowEnergyTransfer_HeatingCoilWater_CoilWaterHeatingDesuperheater::
       SimFlowEnergyTransfer_HeatingCoilWater_CoilWaterHeatingDesuperheater (const RefId_type& RefId)
       : ::schema::simxml::MepModel::SimFlowEnergyTransfer_HeatingCoilWater (RefId),
-        SimFlowEnergyTrans_Name_ (this),
         SimFlowEnergyTrans_AvailSchedName_ (this),
         SimFlowEnergyTrans_WaterInletNodeName_ (this),
         SimFlowEnergyTrans_WaterOutletNodeName_ (this),
@@ -669,7 +637,6 @@ namespace schema
                                                                             ::xml_schema::flags f,
                                                                             ::xml_schema::container* c)
       : ::schema::simxml::MepModel::SimFlowEnergyTransfer_HeatingCoilWater (x, f, c),
-        SimFlowEnergyTrans_Name_ (x.SimFlowEnergyTrans_Name_, f, this),
         SimFlowEnergyTrans_AvailSchedName_ (x.SimFlowEnergyTrans_AvailSchedName_, f, this),
         SimFlowEnergyTrans_WaterInletNodeName_ (x.SimFlowEnergyTrans_WaterInletNodeName_, f, this),
         SimFlowEnergyTrans_WaterOutletNodeName_ (x.SimFlowEnergyTrans_WaterOutletNodeName_, f, this),
@@ -697,7 +664,6 @@ namespace schema
                                                                             ::xml_schema::flags f,
                                                                             ::xml_schema::container* c)
       : ::schema::simxml::MepModel::SimFlowEnergyTransfer_HeatingCoilWater (e, f | ::xml_schema::flags::base, c),
-        SimFlowEnergyTrans_Name_ (this),
         SimFlowEnergyTrans_AvailSchedName_ (this),
         SimFlowEnergyTrans_WaterInletNodeName_ (this),
         SimFlowEnergyTrans_WaterOutletNodeName_ (this),
@@ -736,20 +702,6 @@ namespace schema
           const ::xercesc::DOMElement& i (p.cur_element ());
           const ::xsd::cxx::xml::qualified_name< char > n (
             ::xsd::cxx::xml::dom::name< char > (i));
-
-          // SimFlowEnergyTrans_Name
-          //
-          if (n.name () == "SimFlowEnergyTrans_Name" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
-          {
-            ::std::auto_ptr< SimFlowEnergyTrans_Name_type > r (
-              SimFlowEnergyTrans_Name_traits::create (i, f, this));
-
-            if (!this->SimFlowEnergyTrans_Name_)
-            {
-              this->SimFlowEnergyTrans_Name_.set (r);
-              continue;
-            }
-          }
 
           // SimFlowEnergyTrans_AvailSchedName
           //
@@ -1004,7 +956,6 @@ namespace schema
         if (this != &x)
         {
           static_cast< ::schema::simxml::MepModel::SimFlowEnergyTransfer_HeatingCoilWater& > (*this) = x;
-          this->SimFlowEnergyTrans_Name_ = x.SimFlowEnergyTrans_Name_;
           this->SimFlowEnergyTrans_AvailSchedName_ = x.SimFlowEnergyTrans_AvailSchedName_;
           this->SimFlowEnergyTrans_WaterInletNodeName_ = x.SimFlowEnergyTrans_WaterInletNodeName_;
           this->SimFlowEnergyTrans_WaterOutletNodeName_ = x.SimFlowEnergyTrans_WaterOutletNodeName_;

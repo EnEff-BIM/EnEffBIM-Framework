@@ -260,6 +260,216 @@ namespace schema
       class SimFlowPlant_ElectricalGenerator_FuelCell: public ::schema::simxml::MepModel::SimFlowPlant_ElectricalGenerator
       {
         public:
+        // SimFlowPlant_Name
+        //
+        typedef ::xml_schema::string SimFlowPlant_Name_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_Name_type > SimFlowPlant_Name_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_Name_type, char > SimFlowPlant_Name_traits;
+
+        const SimFlowPlant_Name_optional&
+        SimFlowPlant_Name () const;
+
+        SimFlowPlant_Name_optional&
+        SimFlowPlant_Name ();
+
+        void
+        SimFlowPlant_Name (const SimFlowPlant_Name_type& x);
+
+        void
+        SimFlowPlant_Name (const SimFlowPlant_Name_optional& x);
+
+        void
+        SimFlowPlant_Name (::std::auto_ptr< SimFlowPlant_Name_type > p);
+
+        // SimFlowPlant_PwrModuleName
+        //
+        typedef ::xml_schema::idref SimFlowPlant_PwrModuleName_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_PwrModuleName_type > SimFlowPlant_PwrModuleName_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_PwrModuleName_type, char > SimFlowPlant_PwrModuleName_traits;
+
+        const SimFlowPlant_PwrModuleName_optional&
+        SimFlowPlant_PwrModuleName () const;
+
+        SimFlowPlant_PwrModuleName_optional&
+        SimFlowPlant_PwrModuleName ();
+
+        void
+        SimFlowPlant_PwrModuleName (const SimFlowPlant_PwrModuleName_type& x);
+
+        void
+        SimFlowPlant_PwrModuleName (const SimFlowPlant_PwrModuleName_optional& x);
+
+        void
+        SimFlowPlant_PwrModuleName (::std::auto_ptr< SimFlowPlant_PwrModuleName_type > p);
+
+        // SimFlowPlant_AirSupplyName
+        //
+        typedef ::xml_schema::idref SimFlowPlant_AirSupplyName_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_AirSupplyName_type > SimFlowPlant_AirSupplyName_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_AirSupplyName_type, char > SimFlowPlant_AirSupplyName_traits;
+
+        const SimFlowPlant_AirSupplyName_optional&
+        SimFlowPlant_AirSupplyName () const;
+
+        SimFlowPlant_AirSupplyName_optional&
+        SimFlowPlant_AirSupplyName ();
+
+        void
+        SimFlowPlant_AirSupplyName (const SimFlowPlant_AirSupplyName_type& x);
+
+        void
+        SimFlowPlant_AirSupplyName (const SimFlowPlant_AirSupplyName_optional& x);
+
+        void
+        SimFlowPlant_AirSupplyName (::std::auto_ptr< SimFlowPlant_AirSupplyName_type > p);
+
+        // SimFlowPlant_FuelSupplyName
+        //
+        typedef ::xml_schema::idref SimFlowPlant_FuelSupplyName_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_FuelSupplyName_type > SimFlowPlant_FuelSupplyName_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_FuelSupplyName_type, char > SimFlowPlant_FuelSupplyName_traits;
+
+        const SimFlowPlant_FuelSupplyName_optional&
+        SimFlowPlant_FuelSupplyName () const;
+
+        SimFlowPlant_FuelSupplyName_optional&
+        SimFlowPlant_FuelSupplyName ();
+
+        void
+        SimFlowPlant_FuelSupplyName (const SimFlowPlant_FuelSupplyName_type& x);
+
+        void
+        SimFlowPlant_FuelSupplyName (const SimFlowPlant_FuelSupplyName_optional& x);
+
+        void
+        SimFlowPlant_FuelSupplyName (::std::auto_ptr< SimFlowPlant_FuelSupplyName_type > p);
+
+        // SimFlowPlant_WaterSupplyName
+        //
+        typedef ::xml_schema::idref SimFlowPlant_WaterSupplyName_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_WaterSupplyName_type > SimFlowPlant_WaterSupplyName_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_WaterSupplyName_type, char > SimFlowPlant_WaterSupplyName_traits;
+
+        const SimFlowPlant_WaterSupplyName_optional&
+        SimFlowPlant_WaterSupplyName () const;
+
+        SimFlowPlant_WaterSupplyName_optional&
+        SimFlowPlant_WaterSupplyName ();
+
+        void
+        SimFlowPlant_WaterSupplyName (const SimFlowPlant_WaterSupplyName_type& x);
+
+        void
+        SimFlowPlant_WaterSupplyName (const SimFlowPlant_WaterSupplyName_optional& x);
+
+        void
+        SimFlowPlant_WaterSupplyName (::std::auto_ptr< SimFlowPlant_WaterSupplyName_type > p);
+
+        // SimFlowPlant_AuxHeatName
+        //
+        typedef ::xml_schema::idref SimFlowPlant_AuxHeatName_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_AuxHeatName_type > SimFlowPlant_AuxHeatName_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_AuxHeatName_type, char > SimFlowPlant_AuxHeatName_traits;
+
+        const SimFlowPlant_AuxHeatName_optional&
+        SimFlowPlant_AuxHeatName () const;
+
+        SimFlowPlant_AuxHeatName_optional&
+        SimFlowPlant_AuxHeatName ();
+
+        void
+        SimFlowPlant_AuxHeatName (const SimFlowPlant_AuxHeatName_type& x);
+
+        void
+        SimFlowPlant_AuxHeatName (const SimFlowPlant_AuxHeatName_optional& x);
+
+        void
+        SimFlowPlant_AuxHeatName (::std::auto_ptr< SimFlowPlant_AuxHeatName_type > p);
+
+        // SimFlowPlant_HeatExchngName
+        //
+        typedef ::xml_schema::idref SimFlowPlant_HeatExchngName_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_HeatExchngName_type > SimFlowPlant_HeatExchngName_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_HeatExchngName_type, char > SimFlowPlant_HeatExchngName_traits;
+
+        const SimFlowPlant_HeatExchngName_optional&
+        SimFlowPlant_HeatExchngName () const;
+
+        SimFlowPlant_HeatExchngName_optional&
+        SimFlowPlant_HeatExchngName ();
+
+        void
+        SimFlowPlant_HeatExchngName (const SimFlowPlant_HeatExchngName_type& x);
+
+        void
+        SimFlowPlant_HeatExchngName (const SimFlowPlant_HeatExchngName_optional& x);
+
+        void
+        SimFlowPlant_HeatExchngName (::std::auto_ptr< SimFlowPlant_HeatExchngName_type > p);
+
+        // SimFlowPlant_ElecStorageName
+        //
+        typedef ::xml_schema::idref SimFlowPlant_ElecStorageName_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_ElecStorageName_type > SimFlowPlant_ElecStorageName_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_ElecStorageName_type, char > SimFlowPlant_ElecStorageName_traits;
+
+        const SimFlowPlant_ElecStorageName_optional&
+        SimFlowPlant_ElecStorageName () const;
+
+        SimFlowPlant_ElecStorageName_optional&
+        SimFlowPlant_ElecStorageName ();
+
+        void
+        SimFlowPlant_ElecStorageName (const SimFlowPlant_ElecStorageName_type& x);
+
+        void
+        SimFlowPlant_ElecStorageName (const SimFlowPlant_ElecStorageName_optional& x);
+
+        void
+        SimFlowPlant_ElecStorageName (::std::auto_ptr< SimFlowPlant_ElecStorageName_type > p);
+
+        // SimFlowPlant_verterName
+        //
+        typedef ::xml_schema::idref SimFlowPlant_verterName_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_verterName_type > SimFlowPlant_verterName_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_verterName_type, char > SimFlowPlant_verterName_traits;
+
+        const SimFlowPlant_verterName_optional&
+        SimFlowPlant_verterName () const;
+
+        SimFlowPlant_verterName_optional&
+        SimFlowPlant_verterName ();
+
+        void
+        SimFlowPlant_verterName (const SimFlowPlant_verterName_type& x);
+
+        void
+        SimFlowPlant_verterName (const SimFlowPlant_verterName_optional& x);
+
+        void
+        SimFlowPlant_verterName (::std::auto_ptr< SimFlowPlant_verterName_type > p);
+
+        // SimFlowPlant_StackCoolerName
+        //
+        typedef ::xml_schema::idref SimFlowPlant_StackCoolerName_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_StackCoolerName_type > SimFlowPlant_StackCoolerName_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_StackCoolerName_type, char > SimFlowPlant_StackCoolerName_traits;
+
+        const SimFlowPlant_StackCoolerName_optional&
+        SimFlowPlant_StackCoolerName () const;
+
+        SimFlowPlant_StackCoolerName_optional&
+        SimFlowPlant_StackCoolerName ();
+
+        void
+        SimFlowPlant_StackCoolerName (const SimFlowPlant_StackCoolerName_type& x);
+
+        void
+        SimFlowPlant_StackCoolerName (const SimFlowPlant_StackCoolerName_optional& x);
+
+        void
+        SimFlowPlant_StackCoolerName (::std::auto_ptr< SimFlowPlant_StackCoolerName_type > p);
+
         // Constructors.
         //
         SimFlowPlant_ElectricalGenerator_FuelCell ();
@@ -278,8 +488,30 @@ namespace schema
         _clone (::xml_schema::flags f = 0,
                 ::xml_schema::container* c = 0) const;
 
+        SimFlowPlant_ElectricalGenerator_FuelCell&
+        operator= (const SimFlowPlant_ElectricalGenerator_FuelCell& x);
+
         virtual 
         ~SimFlowPlant_ElectricalGenerator_FuelCell ();
+
+        // Implementation.
+        //
+        protected:
+        void
+        parse (::xsd::cxx::xml::dom::parser< char >&,
+               ::xml_schema::flags);
+
+        protected:
+        SimFlowPlant_Name_optional SimFlowPlant_Name_;
+        SimFlowPlant_PwrModuleName_optional SimFlowPlant_PwrModuleName_;
+        SimFlowPlant_AirSupplyName_optional SimFlowPlant_AirSupplyName_;
+        SimFlowPlant_FuelSupplyName_optional SimFlowPlant_FuelSupplyName_;
+        SimFlowPlant_WaterSupplyName_optional SimFlowPlant_WaterSupplyName_;
+        SimFlowPlant_AuxHeatName_optional SimFlowPlant_AuxHeatName_;
+        SimFlowPlant_HeatExchngName_optional SimFlowPlant_HeatExchngName_;
+        SimFlowPlant_ElecStorageName_optional SimFlowPlant_ElecStorageName_;
+        SimFlowPlant_verterName_optional SimFlowPlant_verterName_;
+        SimFlowPlant_StackCoolerName_optional SimFlowPlant_StackCoolerName_;
       };
     }
   }

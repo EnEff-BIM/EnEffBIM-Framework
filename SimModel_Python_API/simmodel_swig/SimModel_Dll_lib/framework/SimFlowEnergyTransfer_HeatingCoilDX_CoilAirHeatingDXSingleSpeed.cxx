@@ -816,6 +816,54 @@ namespace schema
       {
         this->CoilSys_Heat_DX_HeatingCoilName_.set (x);
       }
+
+      const SimFlowEnergyTransfer_HeatingCoilDX_CoilAirHeatingDXSingleSpeed::T24BypassMinimumEfficiencyCheck_optional& SimFlowEnergyTransfer_HeatingCoilDX_CoilAirHeatingDXSingleSpeed::
+      T24BypassMinimumEfficiencyCheck () const
+      {
+        return this->T24BypassMinimumEfficiencyCheck_;
+      }
+
+      SimFlowEnergyTransfer_HeatingCoilDX_CoilAirHeatingDXSingleSpeed::T24BypassMinimumEfficiencyCheck_optional& SimFlowEnergyTransfer_HeatingCoilDX_CoilAirHeatingDXSingleSpeed::
+      T24BypassMinimumEfficiencyCheck ()
+      {
+        return this->T24BypassMinimumEfficiencyCheck_;
+      }
+
+      void SimFlowEnergyTransfer_HeatingCoilDX_CoilAirHeatingDXSingleSpeed::
+      T24BypassMinimumEfficiencyCheck (const T24BypassMinimumEfficiencyCheck_type& x)
+      {
+        this->T24BypassMinimumEfficiencyCheck_.set (x);
+      }
+
+      void SimFlowEnergyTransfer_HeatingCoilDX_CoilAirHeatingDXSingleSpeed::
+      T24BypassMinimumEfficiencyCheck (const T24BypassMinimumEfficiencyCheck_optional& x)
+      {
+        this->T24BypassMinimumEfficiencyCheck_ = x;
+      }
+
+      const SimFlowEnergyTransfer_HeatingCoilDX_CoilAirHeatingDXSingleSpeed::T24CoilPressureDrop_optional& SimFlowEnergyTransfer_HeatingCoilDX_CoilAirHeatingDXSingleSpeed::
+      T24CoilPressureDrop () const
+      {
+        return this->T24CoilPressureDrop_;
+      }
+
+      SimFlowEnergyTransfer_HeatingCoilDX_CoilAirHeatingDXSingleSpeed::T24CoilPressureDrop_optional& SimFlowEnergyTransfer_HeatingCoilDX_CoilAirHeatingDXSingleSpeed::
+      T24CoilPressureDrop ()
+      {
+        return this->T24CoilPressureDrop_;
+      }
+
+      void SimFlowEnergyTransfer_HeatingCoilDX_CoilAirHeatingDXSingleSpeed::
+      T24CoilPressureDrop (const T24CoilPressureDrop_type& x)
+      {
+        this->T24CoilPressureDrop_.set (x);
+      }
+
+      void SimFlowEnergyTransfer_HeatingCoilDX_CoilAirHeatingDXSingleSpeed::
+      T24CoilPressureDrop (const T24CoilPressureDrop_optional& x)
+      {
+        this->T24CoilPressureDrop_ = x;
+      }
     }
   }
 }
@@ -870,7 +918,9 @@ namespace schema
         CoilSys_Heat_DX_Name_ (this),
         CoilSys_Heat_DX_AvailSchedName_ (this),
         CoilSys_Heat_DX_HeatingCoilObjType_ (this),
-        CoilSys_Heat_DX_HeatingCoilName_ (this)
+        CoilSys_Heat_DX_HeatingCoilName_ (this),
+        T24BypassMinimumEfficiencyCheck_ (this),
+        T24CoilPressureDrop_ (this)
       {
       }
 
@@ -904,7 +954,9 @@ namespace schema
         CoilSys_Heat_DX_Name_ (this),
         CoilSys_Heat_DX_AvailSchedName_ (this),
         CoilSys_Heat_DX_HeatingCoilObjType_ (this),
-        CoilSys_Heat_DX_HeatingCoilName_ (this)
+        CoilSys_Heat_DX_HeatingCoilName_ (this),
+        T24BypassMinimumEfficiencyCheck_ (this),
+        T24CoilPressureDrop_ (this)
       {
       }
 
@@ -940,7 +992,9 @@ namespace schema
         CoilSys_Heat_DX_Name_ (x.CoilSys_Heat_DX_Name_, f, this),
         CoilSys_Heat_DX_AvailSchedName_ (x.CoilSys_Heat_DX_AvailSchedName_, f, this),
         CoilSys_Heat_DX_HeatingCoilObjType_ (x.CoilSys_Heat_DX_HeatingCoilObjType_, f, this),
-        CoilSys_Heat_DX_HeatingCoilName_ (x.CoilSys_Heat_DX_HeatingCoilName_, f, this)
+        CoilSys_Heat_DX_HeatingCoilName_ (x.CoilSys_Heat_DX_HeatingCoilName_, f, this),
+        T24BypassMinimumEfficiencyCheck_ (x.T24BypassMinimumEfficiencyCheck_, f, this),
+        T24CoilPressureDrop_ (x.T24CoilPressureDrop_, f, this)
       {
       }
 
@@ -976,7 +1030,9 @@ namespace schema
         CoilSys_Heat_DX_Name_ (this),
         CoilSys_Heat_DX_AvailSchedName_ (this),
         CoilSys_Heat_DX_HeatingCoilObjType_ (this),
-        CoilSys_Heat_DX_HeatingCoilName_ (this)
+        CoilSys_Heat_DX_HeatingCoilName_ (this),
+        T24BypassMinimumEfficiencyCheck_ (this),
+        T24CoilPressureDrop_ (this)
       {
         if ((f & ::xml_schema::flags::base) == 0)
         {
@@ -1353,6 +1409,28 @@ namespace schema
             }
           }
 
+          // T24BypassMinimumEfficiencyCheck
+          //
+          if (n.name () == "T24BypassMinimumEfficiencyCheck" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            if (!this->T24BypassMinimumEfficiencyCheck_)
+            {
+              this->T24BypassMinimumEfficiencyCheck_.set (T24BypassMinimumEfficiencyCheck_traits::create (i, f, this));
+              continue;
+            }
+          }
+
+          // T24CoilPressureDrop
+          //
+          if (n.name () == "T24CoilPressureDrop" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            if (!this->T24CoilPressureDrop_)
+            {
+              this->T24CoilPressureDrop_.set (T24CoilPressureDrop_traits::create (i, f, this));
+              continue;
+            }
+          }
+
           break;
         }
       }
@@ -1398,6 +1476,8 @@ namespace schema
           this->CoilSys_Heat_DX_AvailSchedName_ = x.CoilSys_Heat_DX_AvailSchedName_;
           this->CoilSys_Heat_DX_HeatingCoilObjType_ = x.CoilSys_Heat_DX_HeatingCoilObjType_;
           this->CoilSys_Heat_DX_HeatingCoilName_ = x.CoilSys_Heat_DX_HeatingCoilName_;
+          this->T24BypassMinimumEfficiencyCheck_ = x.T24BypassMinimumEfficiencyCheck_;
+          this->T24CoilPressureDrop_ = x.T24CoilPressureDrop_;
         }
 
         return *this;

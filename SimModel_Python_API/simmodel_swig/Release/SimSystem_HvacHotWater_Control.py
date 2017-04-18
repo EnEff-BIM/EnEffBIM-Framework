@@ -118,6 +118,12 @@ class SimSystem(base.SimGroup):
     def HvacSystemSizingParams(self, *args):
         return _SimSystem_HvacHotWater_Control.SimSystem_HvacSystemSizingParams(self, *args)
 
+    def IsSingleZone(self, *args):
+        return _SimSystem_HvacHotWater_Control.SimSystem_IsSingleZone(self, *args)
+
+    def Is3Phase(self, *args):
+        return _SimSystem_HvacHotWater_Control.SimSystem_Is3Phase(self, *args)
+
     def __init__(self, *args):
         this = _SimSystem_HvacHotWater_Control.new_SimSystem(*args)
         try:

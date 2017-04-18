@@ -40,6 +40,8 @@
 
 #include "SimGeomBoundingBox.hxx"
 
+#include "doublelist.hxx"
+
 namespace schema
 {
   namespace simxml
@@ -150,6 +152,36 @@ namespace schema
       {
         this->ZDim_ = x;
       }
+
+      const SimGeomBoundingBox::Coordinates_optional& SimGeomBoundingBox::
+      Coordinates () const
+      {
+        return this->Coordinates_;
+      }
+
+      SimGeomBoundingBox::Coordinates_optional& SimGeomBoundingBox::
+      Coordinates ()
+      {
+        return this->Coordinates_;
+      }
+
+      void SimGeomBoundingBox::
+      Coordinates (const Coordinates_type& x)
+      {
+        this->Coordinates_.set (x);
+      }
+
+      void SimGeomBoundingBox::
+      Coordinates (const Coordinates_optional& x)
+      {
+        this->Coordinates_ = x;
+      }
+
+      void SimGeomBoundingBox::
+      Coordinates (::std::auto_ptr< Coordinates_type > x)
+      {
+        this->Coordinates_.set (x);
+      }
     }
   }
 }
@@ -180,7 +212,8 @@ namespace schema
         Corner_ (this),
         XDim_ (this),
         YDim_ (this),
-        ZDim_ (this)
+        ZDim_ (this),
+        Coordinates_ (this)
       {
       }
 
@@ -190,7 +223,8 @@ namespace schema
         Corner_ (this),
         XDim_ (this),
         YDim_ (this),
-        ZDim_ (this)
+        ZDim_ (this),
+        Coordinates_ (this)
       {
       }
 
@@ -202,7 +236,8 @@ namespace schema
         Corner_ (x.Corner_, f, this),
         XDim_ (x.XDim_, f, this),
         YDim_ (x.YDim_, f, this),
-        ZDim_ (x.ZDim_, f, this)
+        ZDim_ (x.ZDim_, f, this),
+        Coordinates_ (x.Coordinates_, f, this)
       {
       }
 
@@ -214,7 +249,8 @@ namespace schema
         Corner_ (this),
         XDim_ (this),
         YDim_ (this),
-        ZDim_ (this)
+        ZDim_ (this),
+        Coordinates_ (this)
       {
         if ((f & ::xml_schema::flags::base) == 0)
         {
@@ -282,6 +318,20 @@ namespace schema
             }
           }
 
+          // Coordinates
+          //
+          if (n.name () == "Coordinates" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/ResourcesGeometry")
+          {
+            ::std::auto_ptr< Coordinates_type > r (
+              Coordinates_traits::create (i, f, this));
+
+            if (!this->Coordinates_)
+            {
+              this->Coordinates_.set (r);
+              continue;
+            }
+          }
+
           break;
         }
       }
@@ -303,6 +353,7 @@ namespace schema
           this->XDim_ = x.XDim_;
           this->YDim_ = x.YDim_;
           this->ZDim_ = x.ZDim_;
+          this->Coordinates_ = x.Coordinates_;
         }
 
         return *this;

@@ -1,0 +1,116 @@
+
+import networkx as nx
+import matplotlib.pyplot as plt
+
+listnodes = ["Randoms_D66boiler","Randoms_D1mpipe","Randoms_D1Mpipe","Randoms_D1tpipe","Randoms_D6Dpipe","Randoms_D1dpipe","Randoms_D1_pipe","Randoms_D1jpipe","Randoms_D1Wpipe","Randoms_D63pipe","Randoms_D1Zpipe","Randoms_D1opipe","Randoms_D1Ipipe","Randoms_D1ypipe","Randoms_D1Lvalve","Randoms_D1rpipe","Randoms_D6Fpipe","Randoms_D1Gpipe","Randoms_D1bpipe","Randoms_D1qpump","Randoms_D1Qpipe","Randoms_D1xpipe","Randoms_D67pipe","Randoms_D1Spipe","Randoms_D6Bpipe","Randoms_D1Upipe","Randoms_D1vpipe","Randoms_D1uvessel","Randoms_D1Kradiator","Randoms_D1Opipe","RandomlQZsBpipe","setTemp_Randoms_D66boiler","combi_time_Randoms_D1qpump","reatToBool_Randoms_D1qpump","pid_Randoms_D1Lvalve","setTemp_Randoms_D1Lvalve","sensT27","infil_thermal_zone_RandomID11","combi_time_thermal_zone_RandomID11","thermal_zone_RandomID11"]
+listcomponents = [("setTemp_Randoms_D66boiler","Randoms_D66boiler"),("combi_time_Randoms_D1qpump","reatToBool_Randoms_D1qpump"),("Randoms_D1qpump","reatToBool_Randoms_D1qpump"),("thermal_zone_RandomID11","Randoms_D1Kradiator"),("thermal_zone_RandomID11","Randoms_D1Kradiator"),("pid_Randoms_D1Lvalve","Randoms_D1Lvalve"),("pid_Randoms_D1Lvalve","setTemp_Randoms_D1Lvalve"),("pid_Randoms_D1Lvalve","sensT27"),("thermal_zone_RandomID11","sensT27"),("Randoms_D1ypipe","Randoms_D66boiler"),("Randoms_D1qpump","Randoms_D1mpipe"),("Randoms_D1tpipe","Randoms_D1Mpipe"),("Randoms_D1mpipe","Randoms_D1tpipe"),("Randoms_D66boiler","Randoms_D6Dpipe"),("Randoms_D1Wpipe","Randoms_D1dpipe"),("Randoms_D1opipe","Randoms_D1_pipe"),("Randoms_D1xpipe","Randoms_D1jpipe"),("Randoms_D1Opipe","Randoms_D1Wpipe"),("Randoms_D6Fpipe","Randoms_D63pipe"),("Randoms_D1bpipe","Randoms_D1Zpipe"),("Randoms_D1dpipe","Randoms_D1opipe"),("Randoms_D1Mpipe","Randoms_D1Ipipe"),("Randoms_D1_pipe","Randoms_D1ypipe"),("Randoms_D1Gpipe","Randoms_D1Lvalve"),("Randoms_D6Bpipe","Randoms_D1rpipe"),("Randoms_D6Dpipe","Randoms_D6Fpipe"),("Randoms_D1Ipipe","Randoms_D1Gpipe"),("Randoms_D1bpipe","Randoms_D1bpipe"),("Randoms_D1rpipe","Randoms_D1qpump"),("Randoms_D1Upipe","Randoms_D1Qpipe"),("Randoms_D1xpipe","Randoms_D1xpipe"),("RandomlQZsBpipe","Randoms_D67pipe"),("Randoms_D1Qpipe","Randoms_D1Spipe"),("Randoms_D67pipe","Randoms_D6Bpipe"),("Randoms_D1Kradiator","Randoms_D1Upipe"),("Randoms_D1vpipe","Randoms_D1vpipe"),("Randoms_D1uvessel","Randoms_D1uvessel"),("Randoms_D1Lvalve","Randoms_D1Kradiator"),("Randoms_D1Spipe","Randoms_D1Opipe"),("Randoms_D63pipe","RandomlQZsBpipe"),("thermal_zone_RandomID11","infil_thermal_zone_RandomID11"),("combi_time_thermal_zone_RandomID11","thermal_zone_RandomID11")]
+G=nx.Graph()
+G.add_nodes_from(listnodes)
+G.add_edges_from(listcomponents)
+for node in listnodes:
+    G.node[node]['Text'] = node
+	
+nx.write_graphml(G, "test.graphml")
+
+nx.draw(G,with_labels=True)
+
+#http://thirld.com/blog/2012/01/31/making-yed-import-labels-from-graphml-files/
+
+Pipe
+
+ID0LMbjl8XfFaui1YxJs_D1x (SimFlowSegment_Pipe_Indoor) declared as Randoms_D1xpipe
+is assigned to group: ID0LMbjl8XfFaui1YxJs_D11 (SimSystem_HvacHotWater_Demand)
+
+as well as:
+ID0LMbjl8XfFaui1YxJs_D1b (SimFlowSegment_Pipe_Indoor) declared as Randoms_D1bpipe out of loop
+ID0LMbjl8XfFaui1YxJs_D1W (SimFlowSegment_Pipe_Indoor) declared as Randoms_D1Wpipe in loop
+ID0LMbjl8XfFaui1YxJs_D1S (SimFlowSegment_Pipe_Indoor) declared as Randoms_D1Spipe in loop
+ID0LMbjl8XfFaui1YxJs_D1U (SimFlowSegment_Pipe_Indoor) declared as Randoms_D1Upipe in loop
+ID0LMbjl8XfFaui1YxJs_D1v (SimFlowSegment_Pipe_Indoor) declared as Randoms_D1vpipe out of loop
+ID0LMbjl8XfFaui1YxJs_D1y (SimFlowSegment_Pipe_Indoor) declared as Randoms_D1ypipe in loop
+ID0LMbjl8XfFaui1YxJs_D1o (SimFlowSegment_Pipe_Indoor) declared as Randoms_D1opipe in loop 
+ID0LMbjl8XfFaui1YxJs_D66 (SimFlowPlant_Boiler_BoilerHotWater) declared as setTemp_Randoms_D66boiler in loop
+
+
+Randoms_D1Opipe -- Randoms_D1Wpipe -- Randoms_D1dpipe
+
+Randoms_D1Wpipe
+	InPort: ID3BdZR7tEf6zAVU_ULydQTs
+		SourcePort: ID3BdZR7tEf6zAVU_ULydQTs
+		TargetPort: ID0AC1ggreb818c885BxhHn0
+	OutPort: ID1Dk1wdTpP9NQvmiRkaZ_pT
+		SourcePort: ID22cPssZX11hMkaVaeK0rO
+		TargetPort: ID1Dk1wdTpP9NQvmiRkaZ_pT	
+
+Randoms_D1dpipe
+	InPort: ID22cPssZX11hMkaVaeK0rO (Water_Out)
+		SourcePort: ID22cPssZX11hMkaVaeK0rO
+		TargetPort: ID1Dk1wdTpP9NQvmiRkaZ_pT
+	OutPort: ID0pfczDFH56FBjyU4B4Tu7q (Water_In)
+		SourcePort: ID0vdMh5TyD5qgqUP5WkfiUW 
+		TargetPort: ID0pfczDFH56FBjyU4B4Tu7q
+	OutPort: ID3p76r9APPEO9afc_GmiX7Z  (Water_InOrOut)
+		SourcePort: ID35gmfocYDCGOAS24WQBzzy
+		TargetPort: ID3p76r9APPEO9afc_GmiX7Z
+		
+Randoms_D1Opipe (ID0LMbjl8XfFaui1YxJs_D1O)
+	InPort: ID3XmdSRzzv3lB8Tiv_ud98S (Water_Out)
+		SourcePort: ID3XmdSRzzv3lB8Tiv_ud98S
+		TargetPort: ID2bCGVod56K8WawYKqCjA
+	OutPort: ID0AC1ggreb818c885BxhHn0 (Water_In)
+		SourcePort: ID3BdZR7tEf6zAVU_ULydQTs
+		TargetPort: ID0AC1ggreb818c885BxhHn0
+		
+---------------------------------------------------------------------------		
+		
+From what  I see InOrPort:
+If Id = SourcePort --> We have an InPort
+If Id = TargetPort --> We have an OutPort
+
+(ID0LMbjl8XfFaui1YxJs_D1x)
+	ID34vMM6wnjE7unBCQ1tZmGu (Water_InOrOut)
+		SourcePort: ID34vMM6wnjE7unBCQ1tZmGu
+		TargetPort: ID1E1u2obBL6gR1EmBQNmuG
+	ID1ZwXL01SP6LgPm0ufh5D5q (Water_InOrOut)
+		SourcePort: ID1ZwXL01SP6LgPm0ufh5D5q
+		TargetPort: ID0d4HNNeu51MxTsgicXECgc
+		
+---------------------------------------------------------------------------		
+BOILER (ID0LMbjl8XfFaui1YxJs_D66)
+	InPort: ID0fjWAxxg1F4vVZuvXm8O85 (Water_Out)
+		SourcePort: ID0fjWAxxg1F4vVZuvXm8O85
+		TargetPort: ID1T_nbEbPn98QDe1d1YDBg6
+	OutPort: ID13UhRNCnX1rAwEBMyxljsq (Water_In)
+		SourcePort: ID3zs117w1n5lwSRidPGhKht
+		TargetPort: ID13UhRNCnX1rAwEBMyxljsq
+		
+Boiler connected to ID0LMbjl8XfFaui1YxJs_D6D & ID0LMbjl8XfFaui1YxJs_D1y
+
+ID0LMbjl8XfFaui1YxJs_D6D
+	InPort: ID3zs117w1n5lwSRidPGhKht (Water_Out)
+		SourcePort: ID3zs117w1n5lwSRidPGhKht
+		TargetPort: ID13UhRNCnX1rAwEBMyxljsq
+	OutPort: ID1a5meudDCPOBQD1vrPCFy (Water_In)
+		SourcePort: ID3mJZcz594IfdQpbAKBQkZ
+		TargetPort: ID1a5meudDCPOBQD1vrPCFy
+		
+ID0LMbjl8XfFaui1YxJs_D1y
+	InPort: ID2EuOFRboL2y9bL6adm_e5r (Water_Out)
+		SourcePort: ID2EuOFRboL2y9bL6adm_e5r
+		TargetPort: ID1vp7wk2LL5Q8745mWkelb
+	OutPort: ID1T_nbEbPn98QDe1d1YDBg6 (Water_In)
+		SourcePort: ID0fjWAxxg1F4vVZuvXm8O85
+		TargetPort: ID1T_nbEbPn98QDe1d1YDBg6	
+
+ID0LMbjl8XfFaui1YxJs_D1_		
+	InPort: ID2XrUSZY14oBAxy3nTDwLW (Water_Out)
+		SourcePort: ID2XrUSZY14oBAxy3nTDwLW
+		TargetPort: ID0Wqjvtg_L4gzwbFcZyfxD
+	OutPort: ID1vp7wk2LL5Q8745mWkelb (Water_In)
+		SourcePort: ID2EuOFRboL2y9bL6adm_e5r
+		TargetPort: ID1vp7wk2LL5Q8745mWkelb		
+		
+From ObtainPipeInfo.py
+
+('ID0LMbjl8XfFaui1YxJs_D1_', 'ID0LMbjl8XfFaui1YxJs_D1y')
+('ID0LMbjl8XfFaui1YxJs_D66', 'ID0LMbjl8XfFaui1YxJs_D1y')

@@ -22,6 +22,13 @@ class __declspec(dllexport) SimPyCallBack
 	  virtual std::string getReferenceId(std::string _classId, std::string _propertyName) = 0;
 	  // I/O function
 	  virtual void getIO(std::string _name) {}
+	  // property mapping rule One2One
+	  // retrieve property type
+	  virtual std::string getRefValueType(std::string _classId, std::string _propertyName) = 0;
+	  // retrieve the property value of a number
+	  virtual double getRefNumberValue(std::string _classId, std::string _propertyName) = 0;
+	  // retrieve the property value of a string
+	  virtual std::string getRefStringValue(std::string _classId, std::string _propertyName) = 0;
 };
 
 #endif

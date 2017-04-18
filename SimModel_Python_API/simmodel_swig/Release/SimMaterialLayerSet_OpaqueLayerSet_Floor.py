@@ -120,26 +120,26 @@ class SimMaterialLayerSet_OpaqueLayerSet_Floor(SimMaterialLayerSet_OpaqueLayerSe
     def T24ConsAssmNotes(self, *args):
         return _SimMaterialLayerSet_OpaqueLayerSet_Floor.SimMaterialLayerSet_OpaqueLayerSet_Floor_T24ConsAssmNotes(self, *args)
 
-    def T24CrrcAgedEmittance(self, *args):
-        return _SimMaterialLayerSet_OpaqueLayerSet_Floor.SimMaterialLayerSet_OpaqueLayerSet_Floor_T24CrrcAgedEmittance(self, *args)
+    def T24CRRCAgedEmittance(self, *args):
+        return _SimMaterialLayerSet_OpaqueLayerSet_Floor.SimMaterialLayerSet_OpaqueLayerSet_Floor_T24CRRCAgedEmittance(self, *args)
 
-    def T24CrrcAgedReflectance(self, *args):
-        return _SimMaterialLayerSet_OpaqueLayerSet_Floor.SimMaterialLayerSet_OpaqueLayerSet_Floor_T24CrrcAgedReflectance(self, *args)
+    def T24CRRCAgedReflectance(self, *args):
+        return _SimMaterialLayerSet_OpaqueLayerSet_Floor.SimMaterialLayerSet_OpaqueLayerSet_Floor_T24CRRCAgedReflectance(self, *args)
 
-    def T24CrrcAgedSRI(self, *args):
-        return _SimMaterialLayerSet_OpaqueLayerSet_Floor.SimMaterialLayerSet_OpaqueLayerSet_Floor_T24CrrcAgedSRI(self, *args)
+    def T24CRRCAgedSRI(self, *args):
+        return _SimMaterialLayerSet_OpaqueLayerSet_Floor.SimMaterialLayerSet_OpaqueLayerSet_Floor_T24CRRCAgedSRI(self, *args)
 
-    def T24CrrcInitialEmitance(self, *args):
-        return _SimMaterialLayerSet_OpaqueLayerSet_Floor.SimMaterialLayerSet_OpaqueLayerSet_Floor_T24CrrcInitialEmitance(self, *args)
+    def T24CRRCInitialEmitance(self, *args):
+        return _SimMaterialLayerSet_OpaqueLayerSet_Floor.SimMaterialLayerSet_OpaqueLayerSet_Floor_T24CRRCInitialEmitance(self, *args)
 
-    def T24CrrcInitialReflectance(self, *args):
-        return _SimMaterialLayerSet_OpaqueLayerSet_Floor.SimMaterialLayerSet_OpaqueLayerSet_Floor_T24CrrcInitialReflectance(self, *args)
+    def T24CRRCInitialReflectance(self, *args):
+        return _SimMaterialLayerSet_OpaqueLayerSet_Floor.SimMaterialLayerSet_OpaqueLayerSet_Floor_T24CRRCInitialReflectance(self, *args)
 
-    def T24CrrcInitialSRI(self, *args):
-        return _SimMaterialLayerSet_OpaqueLayerSet_Floor.SimMaterialLayerSet_OpaqueLayerSet_Floor_T24CrrcInitialSRI(self, *args)
+    def T24CRRCInitialSRI(self, *args):
+        return _SimMaterialLayerSet_OpaqueLayerSet_Floor.SimMaterialLayerSet_OpaqueLayerSet_Floor_T24CRRCInitialSRI(self, *args)
 
-    def T24CrrcProductID(self, *args):
-        return _SimMaterialLayerSet_OpaqueLayerSet_Floor.SimMaterialLayerSet_OpaqueLayerSet_Floor_T24CrrcProductID(self, *args)
+    def T24CRRCProductID(self, *args):
+        return _SimMaterialLayerSet_OpaqueLayerSet_Floor.SimMaterialLayerSet_OpaqueLayerSet_Floor_T24CRRCProductID(self, *args)
 
     def T24FieldAppliedCoating(self, *args):
         return _SimMaterialLayerSet_OpaqueLayerSet_Floor.SimMaterialLayerSet_OpaqueLayerSet_Floor_T24FieldAppliedCoating(self, *args)
@@ -155,12 +155,6 @@ class SimMaterialLayerSet_OpaqueLayerSet_Floor(SimMaterialLayerSet_OpaqueLayerSe
 
     def T24SlabType(self, *args):
         return _SimMaterialLayerSet_OpaqueLayerSet_Floor.SimMaterialLayerSet_OpaqueLayerSet_Floor_T24SlabType(self, *args)
-
-    def T24SolarReflectanceASTMCertification(self, *args):
-        return _SimMaterialLayerSet_OpaqueLayerSet_Floor.SimMaterialLayerSet_OpaqueLayerSet_Floor_T24SolarReflectanceASTMCertification(self, *args)
-
-    def T24ThermalEmittanceASTMCertification(self, *args):
-        return _SimMaterialLayerSet_OpaqueLayerSet_Floor.SimMaterialLayerSet_OpaqueLayerSet_Floor_T24ThermalEmittanceASTMCertification(self, *args)
 
     def __init__(self, *args):
         this = _SimMaterialLayerSet_OpaqueLayerSet_Floor.new_SimMaterialLayerSet_OpaqueLayerSet_Floor(*args)

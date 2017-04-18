@@ -48,6 +48,252 @@ namespace schema
     {
       // SimSystem_ElectricalLighting_LightingCircuit
       // 
+
+      const SimSystem_ElectricalLighting_LightingCircuit::T24DaylitAreaType_optional& SimSystem_ElectricalLighting_LightingCircuit::
+      T24DaylitAreaType () const
+      {
+        return this->T24DaylitAreaType_;
+      }
+
+      SimSystem_ElectricalLighting_LightingCircuit::T24DaylitAreaType_optional& SimSystem_ElectricalLighting_LightingCircuit::
+      T24DaylitAreaType ()
+      {
+        return this->T24DaylitAreaType_;
+      }
+
+      void SimSystem_ElectricalLighting_LightingCircuit::
+      T24DaylitAreaType (const T24DaylitAreaType_type& x)
+      {
+        this->T24DaylitAreaType_.set (x);
+      }
+
+      void SimSystem_ElectricalLighting_LightingCircuit::
+      T24DaylitAreaType (const T24DaylitAreaType_optional& x)
+      {
+        this->T24DaylitAreaType_ = x;
+      }
+
+      void SimSystem_ElectricalLighting_LightingCircuit::
+      T24DaylitAreaType (::std::auto_ptr< T24DaylitAreaType_type > x)
+      {
+        this->T24DaylitAreaType_.set (x);
+      }
+
+      const SimSystem_ElectricalLighting_LightingCircuit::T24IsAcceptanceTestRequiredReport_optional& SimSystem_ElectricalLighting_LightingCircuit::
+      T24IsAcceptanceTestRequiredReport () const
+      {
+        return this->T24IsAcceptanceTestRequiredReport_;
+      }
+
+      SimSystem_ElectricalLighting_LightingCircuit::T24IsAcceptanceTestRequiredReport_optional& SimSystem_ElectricalLighting_LightingCircuit::
+      T24IsAcceptanceTestRequiredReport ()
+      {
+        return this->T24IsAcceptanceTestRequiredReport_;
+      }
+
+      void SimSystem_ElectricalLighting_LightingCircuit::
+      T24IsAcceptanceTestRequiredReport (const T24IsAcceptanceTestRequiredReport_type& x)
+      {
+        this->T24IsAcceptanceTestRequiredReport_.set (x);
+      }
+
+      void SimSystem_ElectricalLighting_LightingCircuit::
+      T24IsAcceptanceTestRequiredReport (const T24IsAcceptanceTestRequiredReport_optional& x)
+      {
+        this->T24IsAcceptanceTestRequiredReport_ = x;
+      }
+
+      const SimSystem_ElectricalLighting_LightingCircuit::T24LightingControlCountReport_optional& SimSystem_ElectricalLighting_LightingCircuit::
+      T24LightingControlCountReport () const
+      {
+        return this->T24LightingControlCountReport_;
+      }
+
+      SimSystem_ElectricalLighting_LightingCircuit::T24LightingControlCountReport_optional& SimSystem_ElectricalLighting_LightingCircuit::
+      T24LightingControlCountReport ()
+      {
+        return this->T24LightingControlCountReport_;
+      }
+
+      void SimSystem_ElectricalLighting_LightingCircuit::
+      T24LightingControlCountReport (const T24LightingControlCountReport_type& x)
+      {
+        this->T24LightingControlCountReport_.set (x);
+      }
+
+      void SimSystem_ElectricalLighting_LightingCircuit::
+      T24LightingControlCountReport (const T24LightingControlCountReport_optional& x)
+      {
+        this->T24LightingControlCountReport_ = x;
+      }
+
+      const SimSystem_ElectricalLighting_LightingCircuit::T24NonRegExclusion_optional& SimSystem_ElectricalLighting_LightingCircuit::
+      T24NonRegExclusion () const
+      {
+        return this->T24NonRegExclusion_;
+      }
+
+      SimSystem_ElectricalLighting_LightingCircuit::T24NonRegExclusion_optional& SimSystem_ElectricalLighting_LightingCircuit::
+      T24NonRegExclusion ()
+      {
+        return this->T24NonRegExclusion_;
+      }
+
+      void SimSystem_ElectricalLighting_LightingCircuit::
+      T24NonRegExclusion (const T24NonRegExclusion_type& x)
+      {
+        this->T24NonRegExclusion_.set (x);
+      }
+
+      void SimSystem_ElectricalLighting_LightingCircuit::
+      T24NonRegExclusion (const T24NonRegExclusion_optional& x)
+      {
+        this->T24NonRegExclusion_ = x;
+      }
+
+      void SimSystem_ElectricalLighting_LightingCircuit::
+      T24NonRegExclusion (::std::auto_ptr< T24NonRegExclusion_type > x)
+      {
+        this->T24NonRegExclusion_.set (x);
+      }
+
+      const SimSystem_ElectricalLighting_LightingCircuit::T24PwrAdjFacCreditType_optional& SimSystem_ElectricalLighting_LightingCircuit::
+      T24PwrAdjFacCreditType () const
+      {
+        return this->T24PwrAdjFacCreditType_;
+      }
+
+      SimSystem_ElectricalLighting_LightingCircuit::T24PwrAdjFacCreditType_optional& SimSystem_ElectricalLighting_LightingCircuit::
+      T24PwrAdjFacCreditType ()
+      {
+        return this->T24PwrAdjFacCreditType_;
+      }
+
+      void SimSystem_ElectricalLighting_LightingCircuit::
+      T24PwrAdjFacCreditType (const T24PwrAdjFacCreditType_type& x)
+      {
+        this->T24PwrAdjFacCreditType_.set (x);
+      }
+
+      void SimSystem_ElectricalLighting_LightingCircuit::
+      T24PwrAdjFacCreditType (const T24PwrAdjFacCreditType_optional& x)
+      {
+        this->T24PwrAdjFacCreditType_ = x;
+      }
+
+      void SimSystem_ElectricalLighting_LightingCircuit::
+      T24PwrAdjFacCreditType (::std::auto_ptr< T24PwrAdjFacCreditType_type > x)
+      {
+        this->T24PwrAdjFacCreditType_.set (x);
+      }
+
+      const SimSystem_ElectricalLighting_LightingCircuit::T24PowerRegulated_optional& SimSystem_ElectricalLighting_LightingCircuit::
+      T24PowerRegulated () const
+      {
+        return this->T24PowerRegulated_;
+      }
+
+      SimSystem_ElectricalLighting_LightingCircuit::T24PowerRegulated_optional& SimSystem_ElectricalLighting_LightingCircuit::
+      T24PowerRegulated ()
+      {
+        return this->T24PowerRegulated_;
+      }
+
+      void SimSystem_ElectricalLighting_LightingCircuit::
+      T24PowerRegulated (const T24PowerRegulated_type& x)
+      {
+        this->T24PowerRegulated_.set (x);
+      }
+
+      void SimSystem_ElectricalLighting_LightingCircuit::
+      T24PowerRegulated (const T24PowerRegulated_optional& x)
+      {
+        this->T24PowerRegulated_ = x;
+      }
+
+      const SimSystem_ElectricalLighting_LightingCircuit::T24ConstructStatus4_optional& SimSystem_ElectricalLighting_LightingCircuit::
+      T24ConstructStatus4 () const
+      {
+        return this->T24ConstructStatus4_;
+      }
+
+      SimSystem_ElectricalLighting_LightingCircuit::T24ConstructStatus4_optional& SimSystem_ElectricalLighting_LightingCircuit::
+      T24ConstructStatus4 ()
+      {
+        return this->T24ConstructStatus4_;
+      }
+
+      void SimSystem_ElectricalLighting_LightingCircuit::
+      T24ConstructStatus4 (const T24ConstructStatus4_type& x)
+      {
+        this->T24ConstructStatus4_.set (x);
+      }
+
+      void SimSystem_ElectricalLighting_LightingCircuit::
+      T24ConstructStatus4 (const T24ConstructStatus4_optional& x)
+      {
+        this->T24ConstructStatus4_ = x;
+      }
+
+      void SimSystem_ElectricalLighting_LightingCircuit::
+      T24ConstructStatus4 (::std::auto_ptr< T24ConstructStatus4_type > x)
+      {
+        this->T24ConstructStatus4_.set (x);
+      }
+
+      const SimSystem_ElectricalLighting_LightingCircuit::T24VeryValuableDisplayDescription_optional& SimSystem_ElectricalLighting_LightingCircuit::
+      T24VeryValuableDisplayDescription () const
+      {
+        return this->T24VeryValuableDisplayDescription_;
+      }
+
+      SimSystem_ElectricalLighting_LightingCircuit::T24VeryValuableDisplayDescription_optional& SimSystem_ElectricalLighting_LightingCircuit::
+      T24VeryValuableDisplayDescription ()
+      {
+        return this->T24VeryValuableDisplayDescription_;
+      }
+
+      void SimSystem_ElectricalLighting_LightingCircuit::
+      T24VeryValuableDisplayDescription (const T24VeryValuableDisplayDescription_type& x)
+      {
+        this->T24VeryValuableDisplayDescription_.set (x);
+      }
+
+      void SimSystem_ElectricalLighting_LightingCircuit::
+      T24VeryValuableDisplayDescription (const T24VeryValuableDisplayDescription_optional& x)
+      {
+        this->T24VeryValuableDisplayDescription_ = x;
+      }
+
+      void SimSystem_ElectricalLighting_LightingCircuit::
+      T24VeryValuableDisplayDescription (::std::auto_ptr< T24VeryValuableDisplayDescription_type > x)
+      {
+        this->T24VeryValuableDisplayDescription_.set (x);
+      }
+
+      const SimSystem_ElectricalLighting_LightingCircuit::T24WorkPlaneHeight_optional& SimSystem_ElectricalLighting_LightingCircuit::
+      T24WorkPlaneHeight () const
+      {
+        return this->T24WorkPlaneHeight_;
+      }
+
+      SimSystem_ElectricalLighting_LightingCircuit::T24WorkPlaneHeight_optional& SimSystem_ElectricalLighting_LightingCircuit::
+      T24WorkPlaneHeight ()
+      {
+        return this->T24WorkPlaneHeight_;
+      }
+
+      void SimSystem_ElectricalLighting_LightingCircuit::
+      T24WorkPlaneHeight (const T24WorkPlaneHeight_type& x)
+      {
+        this->T24WorkPlaneHeight_.set (x);
+      }
+
+      void SimSystem_ElectricalLighting_LightingCircuit::
+      T24WorkPlaneHeight (const T24WorkPlaneHeight_optional& x)
+      {
+        this->T24WorkPlaneHeight_ = x;
+      }
     }
   }
 }
@@ -74,13 +320,31 @@ namespace schema
 
       SimSystem_ElectricalLighting_LightingCircuit::
       SimSystem_ElectricalLighting_LightingCircuit ()
-      : ::schema::simxml::BuildingModel::SimSystem_ElectricalLighting ()
+      : ::schema::simxml::BuildingModel::SimSystem_ElectricalLighting (),
+        T24DaylitAreaType_ (this),
+        T24IsAcceptanceTestRequiredReport_ (this),
+        T24LightingControlCountReport_ (this),
+        T24NonRegExclusion_ (this),
+        T24PwrAdjFacCreditType_ (this),
+        T24PowerRegulated_ (this),
+        T24ConstructStatus4_ (this),
+        T24VeryValuableDisplayDescription_ (this),
+        T24WorkPlaneHeight_ (this)
       {
       }
 
       SimSystem_ElectricalLighting_LightingCircuit::
       SimSystem_ElectricalLighting_LightingCircuit (const RefId_type& RefId)
-      : ::schema::simxml::BuildingModel::SimSystem_ElectricalLighting (RefId)
+      : ::schema::simxml::BuildingModel::SimSystem_ElectricalLighting (RefId),
+        T24DaylitAreaType_ (this),
+        T24IsAcceptanceTestRequiredReport_ (this),
+        T24LightingControlCountReport_ (this),
+        T24NonRegExclusion_ (this),
+        T24PwrAdjFacCreditType_ (this),
+        T24PowerRegulated_ (this),
+        T24ConstructStatus4_ (this),
+        T24VeryValuableDisplayDescription_ (this),
+        T24WorkPlaneHeight_ (this)
       {
       }
 
@@ -88,7 +352,16 @@ namespace schema
       SimSystem_ElectricalLighting_LightingCircuit (const SimSystem_ElectricalLighting_LightingCircuit& x,
                                                     ::xml_schema::flags f,
                                                     ::xml_schema::container* c)
-      : ::schema::simxml::BuildingModel::SimSystem_ElectricalLighting (x, f, c)
+      : ::schema::simxml::BuildingModel::SimSystem_ElectricalLighting (x, f, c),
+        T24DaylitAreaType_ (x.T24DaylitAreaType_, f, this),
+        T24IsAcceptanceTestRequiredReport_ (x.T24IsAcceptanceTestRequiredReport_, f, this),
+        T24LightingControlCountReport_ (x.T24LightingControlCountReport_, f, this),
+        T24NonRegExclusion_ (x.T24NonRegExclusion_, f, this),
+        T24PwrAdjFacCreditType_ (x.T24PwrAdjFacCreditType_, f, this),
+        T24PowerRegulated_ (x.T24PowerRegulated_, f, this),
+        T24ConstructStatus4_ (x.T24ConstructStatus4_, f, this),
+        T24VeryValuableDisplayDescription_ (x.T24VeryValuableDisplayDescription_, f, this),
+        T24WorkPlaneHeight_ (x.T24WorkPlaneHeight_, f, this)
       {
       }
 
@@ -96,8 +369,152 @@ namespace schema
       SimSystem_ElectricalLighting_LightingCircuit (const ::xercesc::DOMElement& e,
                                                     ::xml_schema::flags f,
                                                     ::xml_schema::container* c)
-      : ::schema::simxml::BuildingModel::SimSystem_ElectricalLighting (e, f, c)
+      : ::schema::simxml::BuildingModel::SimSystem_ElectricalLighting (e, f | ::xml_schema::flags::base, c),
+        T24DaylitAreaType_ (this),
+        T24IsAcceptanceTestRequiredReport_ (this),
+        T24LightingControlCountReport_ (this),
+        T24NonRegExclusion_ (this),
+        T24PwrAdjFacCreditType_ (this),
+        T24PowerRegulated_ (this),
+        T24ConstructStatus4_ (this),
+        T24VeryValuableDisplayDescription_ (this),
+        T24WorkPlaneHeight_ (this)
       {
+        if ((f & ::xml_schema::flags::base) == 0)
+        {
+          ::xsd::cxx::xml::dom::parser< char > p (e, true, false, true);
+          this->parse (p, f);
+        }
+      }
+
+      void SimSystem_ElectricalLighting_LightingCircuit::
+      parse (::xsd::cxx::xml::dom::parser< char >& p,
+             ::xml_schema::flags f)
+      {
+        this->::schema::simxml::BuildingModel::SimSystem_ElectricalLighting::parse (p, f);
+
+        for (; p.more_content (); p.next_content (false))
+        {
+          const ::xercesc::DOMElement& i (p.cur_element ());
+          const ::xsd::cxx::xml::qualified_name< char > n (
+            ::xsd::cxx::xml::dom::name< char > (i));
+
+          // T24DaylitAreaType
+          //
+          if (n.name () == "T24DaylitAreaType" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          {
+            ::std::auto_ptr< T24DaylitAreaType_type > r (
+              T24DaylitAreaType_traits::create (i, f, this));
+
+            if (!this->T24DaylitAreaType_)
+            {
+              this->T24DaylitAreaType_.set (r);
+              continue;
+            }
+          }
+
+          // T24IsAcceptanceTestRequiredReport
+          //
+          if (n.name () == "T24IsAcceptanceTestRequiredReport" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          {
+            if (!this->T24IsAcceptanceTestRequiredReport_)
+            {
+              this->T24IsAcceptanceTestRequiredReport_.set (T24IsAcceptanceTestRequiredReport_traits::create (i, f, this));
+              continue;
+            }
+          }
+
+          // T24LightingControlCountReport
+          //
+          if (n.name () == "T24LightingControlCountReport" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          {
+            if (!this->T24LightingControlCountReport_)
+            {
+              this->T24LightingControlCountReport_.set (T24LightingControlCountReport_traits::create (i, f, this));
+              continue;
+            }
+          }
+
+          // T24NonRegExclusion
+          //
+          if (n.name () == "T24NonRegExclusion" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          {
+            ::std::auto_ptr< T24NonRegExclusion_type > r (
+              T24NonRegExclusion_traits::create (i, f, this));
+
+            if (!this->T24NonRegExclusion_)
+            {
+              this->T24NonRegExclusion_.set (r);
+              continue;
+            }
+          }
+
+          // T24PwrAdjFacCreditType
+          //
+          if (n.name () == "T24PwrAdjFacCreditType" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          {
+            ::std::auto_ptr< T24PwrAdjFacCreditType_type > r (
+              T24PwrAdjFacCreditType_traits::create (i, f, this));
+
+            if (!this->T24PwrAdjFacCreditType_)
+            {
+              this->T24PwrAdjFacCreditType_.set (r);
+              continue;
+            }
+          }
+
+          // T24PowerRegulated
+          //
+          if (n.name () == "T24PowerRegulated" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          {
+            if (!this->T24PowerRegulated_)
+            {
+              this->T24PowerRegulated_.set (T24PowerRegulated_traits::create (i, f, this));
+              continue;
+            }
+          }
+
+          // T24ConstructStatus4
+          //
+          if (n.name () == "T24ConstructStatus4" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          {
+            ::std::auto_ptr< T24ConstructStatus4_type > r (
+              T24ConstructStatus4_traits::create (i, f, this));
+
+            if (!this->T24ConstructStatus4_)
+            {
+              this->T24ConstructStatus4_.set (r);
+              continue;
+            }
+          }
+
+          // T24VeryValuableDisplayDescription
+          //
+          if (n.name () == "T24VeryValuableDisplayDescription" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          {
+            ::std::auto_ptr< T24VeryValuableDisplayDescription_type > r (
+              T24VeryValuableDisplayDescription_traits::create (i, f, this));
+
+            if (!this->T24VeryValuableDisplayDescription_)
+            {
+              this->T24VeryValuableDisplayDescription_.set (r);
+              continue;
+            }
+          }
+
+          // T24WorkPlaneHeight
+          //
+          if (n.name () == "T24WorkPlaneHeight" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          {
+            if (!this->T24WorkPlaneHeight_)
+            {
+              this->T24WorkPlaneHeight_.set (T24WorkPlaneHeight_traits::create (i, f, this));
+              continue;
+            }
+          }
+
+          break;
+        }
       }
 
       SimSystem_ElectricalLighting_LightingCircuit* SimSystem_ElectricalLighting_LightingCircuit::
@@ -105,6 +522,26 @@ namespace schema
               ::xml_schema::container* c) const
       {
         return new class SimSystem_ElectricalLighting_LightingCircuit (*this, f, c);
+      }
+
+      SimSystem_ElectricalLighting_LightingCircuit& SimSystem_ElectricalLighting_LightingCircuit::
+      operator= (const SimSystem_ElectricalLighting_LightingCircuit& x)
+      {
+        if (this != &x)
+        {
+          static_cast< ::schema::simxml::BuildingModel::SimSystem_ElectricalLighting& > (*this) = x;
+          this->T24DaylitAreaType_ = x.T24DaylitAreaType_;
+          this->T24IsAcceptanceTestRequiredReport_ = x.T24IsAcceptanceTestRequiredReport_;
+          this->T24LightingControlCountReport_ = x.T24LightingControlCountReport_;
+          this->T24NonRegExclusion_ = x.T24NonRegExclusion_;
+          this->T24PwrAdjFacCreditType_ = x.T24PwrAdjFacCreditType_;
+          this->T24PowerRegulated_ = x.T24PowerRegulated_;
+          this->T24ConstructStatus4_ = x.T24ConstructStatus4_;
+          this->T24VeryValuableDisplayDescription_ = x.T24VeryValuableDisplayDescription_;
+          this->T24WorkPlaneHeight_ = x.T24WorkPlaneHeight_;
+        }
+
+        return *this;
       }
 
       SimSystem_ElectricalLighting_LightingCircuit::

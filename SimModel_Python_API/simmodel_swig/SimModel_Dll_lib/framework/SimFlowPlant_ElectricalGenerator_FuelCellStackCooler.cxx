@@ -40,6 +40,8 @@
 
 #include "SimFlowPlant_ElectricalGenerator_FuelCellStackCooler.hxx"
 
+#include "doublelist.hxx"
+
 namespace schema
 {
   namespace simxml
@@ -48,6 +50,474 @@ namespace schema
     {
       // SimFlowPlant_ElectricalGenerator_FuelCellStackCooler
       // 
+
+      const SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::SimFlowPlant_Name_optional& SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      SimFlowPlant_Name () const
+      {
+        return this->SimFlowPlant_Name_;
+      }
+
+      SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::SimFlowPlant_Name_optional& SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      SimFlowPlant_Name ()
+      {
+        return this->SimFlowPlant_Name_;
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      SimFlowPlant_Name (const SimFlowPlant_Name_type& x)
+      {
+        this->SimFlowPlant_Name_.set (x);
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      SimFlowPlant_Name (const SimFlowPlant_Name_optional& x)
+      {
+        this->SimFlowPlant_Name_ = x;
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      SimFlowPlant_Name (::std::auto_ptr< SimFlowPlant_Name_type > x)
+      {
+        this->SimFlowPlant_Name_.set (x);
+      }
+
+      const SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::SimFlowPlant_HeatRecovWaterInletNodeName_optional& SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      SimFlowPlant_HeatRecovWaterInletNodeName () const
+      {
+        return this->SimFlowPlant_HeatRecovWaterInletNodeName_;
+      }
+
+      SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::SimFlowPlant_HeatRecovWaterInletNodeName_optional& SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      SimFlowPlant_HeatRecovWaterInletNodeName ()
+      {
+        return this->SimFlowPlant_HeatRecovWaterInletNodeName_;
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      SimFlowPlant_HeatRecovWaterInletNodeName (const SimFlowPlant_HeatRecovWaterInletNodeName_type& x)
+      {
+        this->SimFlowPlant_HeatRecovWaterInletNodeName_.set (x);
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      SimFlowPlant_HeatRecovWaterInletNodeName (const SimFlowPlant_HeatRecovWaterInletNodeName_optional& x)
+      {
+        this->SimFlowPlant_HeatRecovWaterInletNodeName_ = x;
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      SimFlowPlant_HeatRecovWaterInletNodeName (::std::auto_ptr< SimFlowPlant_HeatRecovWaterInletNodeName_type > x)
+      {
+        this->SimFlowPlant_HeatRecovWaterInletNodeName_.set (x);
+      }
+
+      const SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::SimFlowPlant_HeatRecovWaterOutletNodeName_optional& SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      SimFlowPlant_HeatRecovWaterOutletNodeName () const
+      {
+        return this->SimFlowPlant_HeatRecovWaterOutletNodeName_;
+      }
+
+      SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::SimFlowPlant_HeatRecovWaterOutletNodeName_optional& SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      SimFlowPlant_HeatRecovWaterOutletNodeName ()
+      {
+        return this->SimFlowPlant_HeatRecovWaterOutletNodeName_;
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      SimFlowPlant_HeatRecovWaterOutletNodeName (const SimFlowPlant_HeatRecovWaterOutletNodeName_type& x)
+      {
+        this->SimFlowPlant_HeatRecovWaterOutletNodeName_.set (x);
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      SimFlowPlant_HeatRecovWaterOutletNodeName (const SimFlowPlant_HeatRecovWaterOutletNodeName_optional& x)
+      {
+        this->SimFlowPlant_HeatRecovWaterOutletNodeName_ = x;
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      SimFlowPlant_HeatRecovWaterOutletNodeName (::std::auto_ptr< SimFlowPlant_HeatRecovWaterOutletNodeName_type > x)
+      {
+        this->SimFlowPlant_HeatRecovWaterOutletNodeName_.set (x);
+      }
+
+      const SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::SimFlowPlant_NomStackTemp_optional& SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      SimFlowPlant_NomStackTemp () const
+      {
+        return this->SimFlowPlant_NomStackTemp_;
+      }
+
+      SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::SimFlowPlant_NomStackTemp_optional& SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      SimFlowPlant_NomStackTemp ()
+      {
+        return this->SimFlowPlant_NomStackTemp_;
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      SimFlowPlant_NomStackTemp (const SimFlowPlant_NomStackTemp_type& x)
+      {
+        this->SimFlowPlant_NomStackTemp_.set (x);
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      SimFlowPlant_NomStackTemp (const SimFlowPlant_NomStackTemp_optional& x)
+      {
+        this->SimFlowPlant_NomStackTemp_ = x;
+      }
+
+      const SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::SimFlowPlant_ActStackTemp_optional& SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      SimFlowPlant_ActStackTemp () const
+      {
+        return this->SimFlowPlant_ActStackTemp_;
+      }
+
+      SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::SimFlowPlant_ActStackTemp_optional& SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      SimFlowPlant_ActStackTemp ()
+      {
+        return this->SimFlowPlant_ActStackTemp_;
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      SimFlowPlant_ActStackTemp (const SimFlowPlant_ActStackTemp_type& x)
+      {
+        this->SimFlowPlant_ActStackTemp_.set (x);
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      SimFlowPlant_ActStackTemp (const SimFlowPlant_ActStackTemp_optional& x)
+      {
+        this->SimFlowPlant_ActStackTemp_ = x;
+      }
+
+      const SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::SimFlowPlant_Coeff_r_1_4_optional& SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      SimFlowPlant_Coeff_r_1_4 () const
+      {
+        return this->SimFlowPlant_Coeff_r_1_4_;
+      }
+
+      SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::SimFlowPlant_Coeff_r_1_4_optional& SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      SimFlowPlant_Coeff_r_1_4 ()
+      {
+        return this->SimFlowPlant_Coeff_r_1_4_;
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      SimFlowPlant_Coeff_r_1_4 (const SimFlowPlant_Coeff_r_1_4_type& x)
+      {
+        this->SimFlowPlant_Coeff_r_1_4_.set (x);
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      SimFlowPlant_Coeff_r_1_4 (const SimFlowPlant_Coeff_r_1_4_optional& x)
+      {
+        this->SimFlowPlant_Coeff_r_1_4_ = x;
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      SimFlowPlant_Coeff_r_1_4 (::std::auto_ptr< SimFlowPlant_Coeff_r_1_4_type > x)
+      {
+        this->SimFlowPlant_Coeff_r_1_4_.set (x);
+      }
+
+      const SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::SimFlowPlant_StackCoolantFlowRate_optional& SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      SimFlowPlant_StackCoolantFlowRate () const
+      {
+        return this->SimFlowPlant_StackCoolantFlowRate_;
+      }
+
+      SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::SimFlowPlant_StackCoolantFlowRate_optional& SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      SimFlowPlant_StackCoolantFlowRate ()
+      {
+        return this->SimFlowPlant_StackCoolantFlowRate_;
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      SimFlowPlant_StackCoolantFlowRate (const SimFlowPlant_StackCoolantFlowRate_type& x)
+      {
+        this->SimFlowPlant_StackCoolantFlowRate_.set (x);
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      SimFlowPlant_StackCoolantFlowRate (const SimFlowPlant_StackCoolantFlowRate_optional& x)
+      {
+        this->SimFlowPlant_StackCoolantFlowRate_ = x;
+      }
+
+      const SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::SimFlowPlant_StackCoolerUFactorTimesAreaVal_optional& SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      SimFlowPlant_StackCoolerUFactorTimesAreaVal () const
+      {
+        return this->SimFlowPlant_StackCoolerUFactorTimesAreaVal_;
+      }
+
+      SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::SimFlowPlant_StackCoolerUFactorTimesAreaVal_optional& SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      SimFlowPlant_StackCoolerUFactorTimesAreaVal ()
+      {
+        return this->SimFlowPlant_StackCoolerUFactorTimesAreaVal_;
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      SimFlowPlant_StackCoolerUFactorTimesAreaVal (const SimFlowPlant_StackCoolerUFactorTimesAreaVal_type& x)
+      {
+        this->SimFlowPlant_StackCoolerUFactorTimesAreaVal_.set (x);
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      SimFlowPlant_StackCoolerUFactorTimesAreaVal (const SimFlowPlant_StackCoolerUFactorTimesAreaVal_optional& x)
+      {
+        this->SimFlowPlant_StackCoolerUFactorTimesAreaVal_ = x;
+      }
+
+      const SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::SimFlowPlant_FscogenAdjFactor_optional& SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      SimFlowPlant_FscogenAdjFactor () const
+      {
+        return this->SimFlowPlant_FscogenAdjFactor_;
+      }
+
+      SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::SimFlowPlant_FscogenAdjFactor_optional& SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      SimFlowPlant_FscogenAdjFactor ()
+      {
+        return this->SimFlowPlant_FscogenAdjFactor_;
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      SimFlowPlant_FscogenAdjFactor (const SimFlowPlant_FscogenAdjFactor_type& x)
+      {
+        this->SimFlowPlant_FscogenAdjFactor_.set (x);
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      SimFlowPlant_FscogenAdjFactor (const SimFlowPlant_FscogenAdjFactor_optional& x)
+      {
+        this->SimFlowPlant_FscogenAdjFactor_ = x;
+      }
+
+      const SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::SimFlowPlant_StackCogenerationExchngArea_optional& SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      SimFlowPlant_StackCogenerationExchngArea () const
+      {
+        return this->SimFlowPlant_StackCogenerationExchngArea_;
+      }
+
+      SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::SimFlowPlant_StackCogenerationExchngArea_optional& SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      SimFlowPlant_StackCogenerationExchngArea ()
+      {
+        return this->SimFlowPlant_StackCogenerationExchngArea_;
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      SimFlowPlant_StackCogenerationExchngArea (const SimFlowPlant_StackCogenerationExchngArea_type& x)
+      {
+        this->SimFlowPlant_StackCogenerationExchngArea_.set (x);
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      SimFlowPlant_StackCogenerationExchngArea (const SimFlowPlant_StackCogenerationExchngArea_optional& x)
+      {
+        this->SimFlowPlant_StackCogenerationExchngArea_ = x;
+      }
+
+      const SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::SimFlowPlant_StackCogenerationExchngNomFlowRate_optional& SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      SimFlowPlant_StackCogenerationExchngNomFlowRate () const
+      {
+        return this->SimFlowPlant_StackCogenerationExchngNomFlowRate_;
+      }
+
+      SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::SimFlowPlant_StackCogenerationExchngNomFlowRate_optional& SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      SimFlowPlant_StackCogenerationExchngNomFlowRate ()
+      {
+        return this->SimFlowPlant_StackCogenerationExchngNomFlowRate_;
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      SimFlowPlant_StackCogenerationExchngNomFlowRate (const SimFlowPlant_StackCogenerationExchngNomFlowRate_type& x)
+      {
+        this->SimFlowPlant_StackCogenerationExchngNomFlowRate_.set (x);
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      SimFlowPlant_StackCogenerationExchngNomFlowRate (const SimFlowPlant_StackCogenerationExchngNomFlowRate_optional& x)
+      {
+        this->SimFlowPlant_StackCogenerationExchngNomFlowRate_ = x;
+      }
+
+      const SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::SimFlowPlant_StackCogenerationExchngNomHeatTransCoef_optional& SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      SimFlowPlant_StackCogenerationExchngNomHeatTransCoef () const
+      {
+        return this->SimFlowPlant_StackCogenerationExchngNomHeatTransCoef_;
+      }
+
+      SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::SimFlowPlant_StackCogenerationExchngNomHeatTransCoef_optional& SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      SimFlowPlant_StackCogenerationExchngNomHeatTransCoef ()
+      {
+        return this->SimFlowPlant_StackCogenerationExchngNomHeatTransCoef_;
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      SimFlowPlant_StackCogenerationExchngNomHeatTransCoef (const SimFlowPlant_StackCogenerationExchngNomHeatTransCoef_type& x)
+      {
+        this->SimFlowPlant_StackCogenerationExchngNomHeatTransCoef_.set (x);
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      SimFlowPlant_StackCogenerationExchngNomHeatTransCoef (const SimFlowPlant_StackCogenerationExchngNomHeatTransCoef_optional& x)
+      {
+        this->SimFlowPlant_StackCogenerationExchngNomHeatTransCoef_ = x;
+      }
+
+      const SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::SimFlowPlant_StackCogenerationExchngNomHeatTransCoefExp_optional& SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      SimFlowPlant_StackCogenerationExchngNomHeatTransCoefExp () const
+      {
+        return this->SimFlowPlant_StackCogenerationExchngNomHeatTransCoefExp_;
+      }
+
+      SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::SimFlowPlant_StackCogenerationExchngNomHeatTransCoefExp_optional& SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      SimFlowPlant_StackCogenerationExchngNomHeatTransCoefExp ()
+      {
+        return this->SimFlowPlant_StackCogenerationExchngNomHeatTransCoefExp_;
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      SimFlowPlant_StackCogenerationExchngNomHeatTransCoefExp (const SimFlowPlant_StackCogenerationExchngNomHeatTransCoefExp_type& x)
+      {
+        this->SimFlowPlant_StackCogenerationExchngNomHeatTransCoefExp_.set (x);
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      SimFlowPlant_StackCogenerationExchngNomHeatTransCoefExp (const SimFlowPlant_StackCogenerationExchngNomHeatTransCoefExp_optional& x)
+      {
+        this->SimFlowPlant_StackCogenerationExchngNomHeatTransCoefExp_ = x;
+      }
+
+      const SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::SimFlowPlant_StackCoolerPumpPwr_optional& SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      SimFlowPlant_StackCoolerPumpPwr () const
+      {
+        return this->SimFlowPlant_StackCoolerPumpPwr_;
+      }
+
+      SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::SimFlowPlant_StackCoolerPumpPwr_optional& SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      SimFlowPlant_StackCoolerPumpPwr ()
+      {
+        return this->SimFlowPlant_StackCoolerPumpPwr_;
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      SimFlowPlant_StackCoolerPumpPwr (const SimFlowPlant_StackCoolerPumpPwr_type& x)
+      {
+        this->SimFlowPlant_StackCoolerPumpPwr_.set (x);
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      SimFlowPlant_StackCoolerPumpPwr (const SimFlowPlant_StackCoolerPumpPwr_optional& x)
+      {
+        this->SimFlowPlant_StackCoolerPumpPwr_ = x;
+      }
+
+      const SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::SimFlowPlant_StackCoolerPumpHeatLossFraction_optional& SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      SimFlowPlant_StackCoolerPumpHeatLossFraction () const
+      {
+        return this->SimFlowPlant_StackCoolerPumpHeatLossFraction_;
+      }
+
+      SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::SimFlowPlant_StackCoolerPumpHeatLossFraction_optional& SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      SimFlowPlant_StackCoolerPumpHeatLossFraction ()
+      {
+        return this->SimFlowPlant_StackCoolerPumpHeatLossFraction_;
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      SimFlowPlant_StackCoolerPumpHeatLossFraction (const SimFlowPlant_StackCoolerPumpHeatLossFraction_type& x)
+      {
+        this->SimFlowPlant_StackCoolerPumpHeatLossFraction_.set (x);
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      SimFlowPlant_StackCoolerPumpHeatLossFraction (const SimFlowPlant_StackCoolerPumpHeatLossFraction_optional& x)
+      {
+        this->SimFlowPlant_StackCoolerPumpHeatLossFraction_ = x;
+      }
+
+      const SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::SimFlowPlant_StackAirCoolerFanCoefff_0_0_optional& SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      SimFlowPlant_StackAirCoolerFanCoefff_0_0 () const
+      {
+        return this->SimFlowPlant_StackAirCoolerFanCoefff_0_0_;
+      }
+
+      SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::SimFlowPlant_StackAirCoolerFanCoefff_0_0_optional& SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      SimFlowPlant_StackAirCoolerFanCoefff_0_0 ()
+      {
+        return this->SimFlowPlant_StackAirCoolerFanCoefff_0_0_;
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      SimFlowPlant_StackAirCoolerFanCoefff_0_0 (const SimFlowPlant_StackAirCoolerFanCoefff_0_0_type& x)
+      {
+        this->SimFlowPlant_StackAirCoolerFanCoefff_0_0_.set (x);
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      SimFlowPlant_StackAirCoolerFanCoefff_0_0 (const SimFlowPlant_StackAirCoolerFanCoefff_0_0_optional& x)
+      {
+        this->SimFlowPlant_StackAirCoolerFanCoefff_0_0_ = x;
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      SimFlowPlant_StackAirCoolerFanCoefff_0_0 (::std::auto_ptr< SimFlowPlant_StackAirCoolerFanCoefff_0_0_type > x)
+      {
+        this->SimFlowPlant_StackAirCoolerFanCoefff_0_0_.set (x);
+      }
+
+      const SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::SimFlowPlant_StackAirCoolerFanCoefff_1_1_optional& SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      SimFlowPlant_StackAirCoolerFanCoefff_1_1 () const
+      {
+        return this->SimFlowPlant_StackAirCoolerFanCoefff_1_1_;
+      }
+
+      SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::SimFlowPlant_StackAirCoolerFanCoefff_1_1_optional& SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      SimFlowPlant_StackAirCoolerFanCoefff_1_1 ()
+      {
+        return this->SimFlowPlant_StackAirCoolerFanCoefff_1_1_;
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      SimFlowPlant_StackAirCoolerFanCoefff_1_1 (const SimFlowPlant_StackAirCoolerFanCoefff_1_1_type& x)
+      {
+        this->SimFlowPlant_StackAirCoolerFanCoefff_1_1_.set (x);
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      SimFlowPlant_StackAirCoolerFanCoefff_1_1 (const SimFlowPlant_StackAirCoolerFanCoefff_1_1_optional& x)
+      {
+        this->SimFlowPlant_StackAirCoolerFanCoefff_1_1_ = x;
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      SimFlowPlant_StackAirCoolerFanCoefff_1_1 (::std::auto_ptr< SimFlowPlant_StackAirCoolerFanCoefff_1_1_type > x)
+      {
+        this->SimFlowPlant_StackAirCoolerFanCoefff_1_1_.set (x);
+      }
+
+      const SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::SimFlowPlant_StackAirCoolerFanCoeff2_optional& SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      SimFlowPlant_StackAirCoolerFanCoeff2 () const
+      {
+        return this->SimFlowPlant_StackAirCoolerFanCoeff2_;
+      }
+
+      SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::SimFlowPlant_StackAirCoolerFanCoeff2_optional& SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      SimFlowPlant_StackAirCoolerFanCoeff2 ()
+      {
+        return this->SimFlowPlant_StackAirCoolerFanCoeff2_;
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      SimFlowPlant_StackAirCoolerFanCoeff2 (const SimFlowPlant_StackAirCoolerFanCoeff2_type& x)
+      {
+        this->SimFlowPlant_StackAirCoolerFanCoeff2_.set (x);
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      SimFlowPlant_StackAirCoolerFanCoeff2 (const SimFlowPlant_StackAirCoolerFanCoeff2_optional& x)
+      {
+        this->SimFlowPlant_StackAirCoolerFanCoeff2_ = x;
+      }
     }
   }
 }
@@ -74,13 +544,49 @@ namespace schema
 
       SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
       SimFlowPlant_ElectricalGenerator_FuelCellStackCooler ()
-      : ::schema::simxml::MepModel::SimFlowPlant_ElectricalGenerator ()
+      : ::schema::simxml::MepModel::SimFlowPlant_ElectricalGenerator (),
+        SimFlowPlant_Name_ (this),
+        SimFlowPlant_HeatRecovWaterInletNodeName_ (this),
+        SimFlowPlant_HeatRecovWaterOutletNodeName_ (this),
+        SimFlowPlant_NomStackTemp_ (this),
+        SimFlowPlant_ActStackTemp_ (this),
+        SimFlowPlant_Coeff_r_1_4_ (this),
+        SimFlowPlant_StackCoolantFlowRate_ (this),
+        SimFlowPlant_StackCoolerUFactorTimesAreaVal_ (this),
+        SimFlowPlant_FscogenAdjFactor_ (this),
+        SimFlowPlant_StackCogenerationExchngArea_ (this),
+        SimFlowPlant_StackCogenerationExchngNomFlowRate_ (this),
+        SimFlowPlant_StackCogenerationExchngNomHeatTransCoef_ (this),
+        SimFlowPlant_StackCogenerationExchngNomHeatTransCoefExp_ (this),
+        SimFlowPlant_StackCoolerPumpPwr_ (this),
+        SimFlowPlant_StackCoolerPumpHeatLossFraction_ (this),
+        SimFlowPlant_StackAirCoolerFanCoefff_0_0_ (this),
+        SimFlowPlant_StackAirCoolerFanCoefff_1_1_ (this),
+        SimFlowPlant_StackAirCoolerFanCoeff2_ (this)
       {
       }
 
       SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
       SimFlowPlant_ElectricalGenerator_FuelCellStackCooler (const RefId_type& RefId)
-      : ::schema::simxml::MepModel::SimFlowPlant_ElectricalGenerator (RefId)
+      : ::schema::simxml::MepModel::SimFlowPlant_ElectricalGenerator (RefId),
+        SimFlowPlant_Name_ (this),
+        SimFlowPlant_HeatRecovWaterInletNodeName_ (this),
+        SimFlowPlant_HeatRecovWaterOutletNodeName_ (this),
+        SimFlowPlant_NomStackTemp_ (this),
+        SimFlowPlant_ActStackTemp_ (this),
+        SimFlowPlant_Coeff_r_1_4_ (this),
+        SimFlowPlant_StackCoolantFlowRate_ (this),
+        SimFlowPlant_StackCoolerUFactorTimesAreaVal_ (this),
+        SimFlowPlant_FscogenAdjFactor_ (this),
+        SimFlowPlant_StackCogenerationExchngArea_ (this),
+        SimFlowPlant_StackCogenerationExchngNomFlowRate_ (this),
+        SimFlowPlant_StackCogenerationExchngNomHeatTransCoef_ (this),
+        SimFlowPlant_StackCogenerationExchngNomHeatTransCoefExp_ (this),
+        SimFlowPlant_StackCoolerPumpPwr_ (this),
+        SimFlowPlant_StackCoolerPumpHeatLossFraction_ (this),
+        SimFlowPlant_StackAirCoolerFanCoefff_0_0_ (this),
+        SimFlowPlant_StackAirCoolerFanCoefff_1_1_ (this),
+        SimFlowPlant_StackAirCoolerFanCoeff2_ (this)
       {
       }
 
@@ -88,7 +594,25 @@ namespace schema
       SimFlowPlant_ElectricalGenerator_FuelCellStackCooler (const SimFlowPlant_ElectricalGenerator_FuelCellStackCooler& x,
                                                             ::xml_schema::flags f,
                                                             ::xml_schema::container* c)
-      : ::schema::simxml::MepModel::SimFlowPlant_ElectricalGenerator (x, f, c)
+      : ::schema::simxml::MepModel::SimFlowPlant_ElectricalGenerator (x, f, c),
+        SimFlowPlant_Name_ (x.SimFlowPlant_Name_, f, this),
+        SimFlowPlant_HeatRecovWaterInletNodeName_ (x.SimFlowPlant_HeatRecovWaterInletNodeName_, f, this),
+        SimFlowPlant_HeatRecovWaterOutletNodeName_ (x.SimFlowPlant_HeatRecovWaterOutletNodeName_, f, this),
+        SimFlowPlant_NomStackTemp_ (x.SimFlowPlant_NomStackTemp_, f, this),
+        SimFlowPlant_ActStackTemp_ (x.SimFlowPlant_ActStackTemp_, f, this),
+        SimFlowPlant_Coeff_r_1_4_ (x.SimFlowPlant_Coeff_r_1_4_, f, this),
+        SimFlowPlant_StackCoolantFlowRate_ (x.SimFlowPlant_StackCoolantFlowRate_, f, this),
+        SimFlowPlant_StackCoolerUFactorTimesAreaVal_ (x.SimFlowPlant_StackCoolerUFactorTimesAreaVal_, f, this),
+        SimFlowPlant_FscogenAdjFactor_ (x.SimFlowPlant_FscogenAdjFactor_, f, this),
+        SimFlowPlant_StackCogenerationExchngArea_ (x.SimFlowPlant_StackCogenerationExchngArea_, f, this),
+        SimFlowPlant_StackCogenerationExchngNomFlowRate_ (x.SimFlowPlant_StackCogenerationExchngNomFlowRate_, f, this),
+        SimFlowPlant_StackCogenerationExchngNomHeatTransCoef_ (x.SimFlowPlant_StackCogenerationExchngNomHeatTransCoef_, f, this),
+        SimFlowPlant_StackCogenerationExchngNomHeatTransCoefExp_ (x.SimFlowPlant_StackCogenerationExchngNomHeatTransCoefExp_, f, this),
+        SimFlowPlant_StackCoolerPumpPwr_ (x.SimFlowPlant_StackCoolerPumpPwr_, f, this),
+        SimFlowPlant_StackCoolerPumpHeatLossFraction_ (x.SimFlowPlant_StackCoolerPumpHeatLossFraction_, f, this),
+        SimFlowPlant_StackAirCoolerFanCoefff_0_0_ (x.SimFlowPlant_StackAirCoolerFanCoefff_0_0_, f, this),
+        SimFlowPlant_StackAirCoolerFanCoefff_1_1_ (x.SimFlowPlant_StackAirCoolerFanCoefff_1_1_, f, this),
+        SimFlowPlant_StackAirCoolerFanCoeff2_ (x.SimFlowPlant_StackAirCoolerFanCoeff2_, f, this)
       {
       }
 
@@ -96,8 +620,263 @@ namespace schema
       SimFlowPlant_ElectricalGenerator_FuelCellStackCooler (const ::xercesc::DOMElement& e,
                                                             ::xml_schema::flags f,
                                                             ::xml_schema::container* c)
-      : ::schema::simxml::MepModel::SimFlowPlant_ElectricalGenerator (e, f, c)
+      : ::schema::simxml::MepModel::SimFlowPlant_ElectricalGenerator (e, f | ::xml_schema::flags::base, c),
+        SimFlowPlant_Name_ (this),
+        SimFlowPlant_HeatRecovWaterInletNodeName_ (this),
+        SimFlowPlant_HeatRecovWaterOutletNodeName_ (this),
+        SimFlowPlant_NomStackTemp_ (this),
+        SimFlowPlant_ActStackTemp_ (this),
+        SimFlowPlant_Coeff_r_1_4_ (this),
+        SimFlowPlant_StackCoolantFlowRate_ (this),
+        SimFlowPlant_StackCoolerUFactorTimesAreaVal_ (this),
+        SimFlowPlant_FscogenAdjFactor_ (this),
+        SimFlowPlant_StackCogenerationExchngArea_ (this),
+        SimFlowPlant_StackCogenerationExchngNomFlowRate_ (this),
+        SimFlowPlant_StackCogenerationExchngNomHeatTransCoef_ (this),
+        SimFlowPlant_StackCogenerationExchngNomHeatTransCoefExp_ (this),
+        SimFlowPlant_StackCoolerPumpPwr_ (this),
+        SimFlowPlant_StackCoolerPumpHeatLossFraction_ (this),
+        SimFlowPlant_StackAirCoolerFanCoefff_0_0_ (this),
+        SimFlowPlant_StackAirCoolerFanCoefff_1_1_ (this),
+        SimFlowPlant_StackAirCoolerFanCoeff2_ (this)
       {
+        if ((f & ::xml_schema::flags::base) == 0)
+        {
+          ::xsd::cxx::xml::dom::parser< char > p (e, true, false, true);
+          this->parse (p, f);
+        }
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      parse (::xsd::cxx::xml::dom::parser< char >& p,
+             ::xml_schema::flags f)
+      {
+        this->::schema::simxml::MepModel::SimFlowPlant_ElectricalGenerator::parse (p, f);
+
+        for (; p.more_content (); p.next_content (false))
+        {
+          const ::xercesc::DOMElement& i (p.cur_element ());
+          const ::xsd::cxx::xml::qualified_name< char > n (
+            ::xsd::cxx::xml::dom::name< char > (i));
+
+          // SimFlowPlant_Name
+          //
+          if (n.name () == "SimFlowPlant_Name" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            ::std::auto_ptr< SimFlowPlant_Name_type > r (
+              SimFlowPlant_Name_traits::create (i, f, this));
+
+            if (!this->SimFlowPlant_Name_)
+            {
+              this->SimFlowPlant_Name_.set (r);
+              continue;
+            }
+          }
+
+          // SimFlowPlant_HeatRecovWaterInletNodeName
+          //
+          if (n.name () == "SimFlowPlant_HeatRecovWaterInletNodeName" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            ::std::auto_ptr< SimFlowPlant_HeatRecovWaterInletNodeName_type > r (
+              SimFlowPlant_HeatRecovWaterInletNodeName_traits::create (i, f, this));
+
+            if (!this->SimFlowPlant_HeatRecovWaterInletNodeName_)
+            {
+              this->SimFlowPlant_HeatRecovWaterInletNodeName_.set (r);
+              continue;
+            }
+          }
+
+          // SimFlowPlant_HeatRecovWaterOutletNodeName
+          //
+          if (n.name () == "SimFlowPlant_HeatRecovWaterOutletNodeName" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            ::std::auto_ptr< SimFlowPlant_HeatRecovWaterOutletNodeName_type > r (
+              SimFlowPlant_HeatRecovWaterOutletNodeName_traits::create (i, f, this));
+
+            if (!this->SimFlowPlant_HeatRecovWaterOutletNodeName_)
+            {
+              this->SimFlowPlant_HeatRecovWaterOutletNodeName_.set (r);
+              continue;
+            }
+          }
+
+          // SimFlowPlant_NomStackTemp
+          //
+          if (n.name () == "SimFlowPlant_NomStackTemp" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            if (!this->SimFlowPlant_NomStackTemp_)
+            {
+              this->SimFlowPlant_NomStackTemp_.set (SimFlowPlant_NomStackTemp_traits::create (i, f, this));
+              continue;
+            }
+          }
+
+          // SimFlowPlant_ActStackTemp
+          //
+          if (n.name () == "SimFlowPlant_ActStackTemp" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            if (!this->SimFlowPlant_ActStackTemp_)
+            {
+              this->SimFlowPlant_ActStackTemp_.set (SimFlowPlant_ActStackTemp_traits::create (i, f, this));
+              continue;
+            }
+          }
+
+          // SimFlowPlant_Coeff_r_1_4
+          //
+          if (n.name () == "SimFlowPlant_Coeff_r_1_4" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            ::std::auto_ptr< SimFlowPlant_Coeff_r_1_4_type > r (
+              SimFlowPlant_Coeff_r_1_4_traits::create (i, f, this));
+
+            if (!this->SimFlowPlant_Coeff_r_1_4_)
+            {
+              this->SimFlowPlant_Coeff_r_1_4_.set (r);
+              continue;
+            }
+          }
+
+          // SimFlowPlant_StackCoolantFlowRate
+          //
+          if (n.name () == "SimFlowPlant_StackCoolantFlowRate" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            if (!this->SimFlowPlant_StackCoolantFlowRate_)
+            {
+              this->SimFlowPlant_StackCoolantFlowRate_.set (SimFlowPlant_StackCoolantFlowRate_traits::create (i, f, this));
+              continue;
+            }
+          }
+
+          // SimFlowPlant_StackCoolerUFactorTimesAreaVal
+          //
+          if (n.name () == "SimFlowPlant_StackCoolerUFactorTimesAreaVal" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            if (!this->SimFlowPlant_StackCoolerUFactorTimesAreaVal_)
+            {
+              this->SimFlowPlant_StackCoolerUFactorTimesAreaVal_.set (SimFlowPlant_StackCoolerUFactorTimesAreaVal_traits::create (i, f, this));
+              continue;
+            }
+          }
+
+          // SimFlowPlant_FscogenAdjFactor
+          //
+          if (n.name () == "SimFlowPlant_FscogenAdjFactor" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            if (!this->SimFlowPlant_FscogenAdjFactor_)
+            {
+              this->SimFlowPlant_FscogenAdjFactor_.set (SimFlowPlant_FscogenAdjFactor_traits::create (i, f, this));
+              continue;
+            }
+          }
+
+          // SimFlowPlant_StackCogenerationExchngArea
+          //
+          if (n.name () == "SimFlowPlant_StackCogenerationExchngArea" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            if (!this->SimFlowPlant_StackCogenerationExchngArea_)
+            {
+              this->SimFlowPlant_StackCogenerationExchngArea_.set (SimFlowPlant_StackCogenerationExchngArea_traits::create (i, f, this));
+              continue;
+            }
+          }
+
+          // SimFlowPlant_StackCogenerationExchngNomFlowRate
+          //
+          if (n.name () == "SimFlowPlant_StackCogenerationExchngNomFlowRate" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            if (!this->SimFlowPlant_StackCogenerationExchngNomFlowRate_)
+            {
+              this->SimFlowPlant_StackCogenerationExchngNomFlowRate_.set (SimFlowPlant_StackCogenerationExchngNomFlowRate_traits::create (i, f, this));
+              continue;
+            }
+          }
+
+          // SimFlowPlant_StackCogenerationExchngNomHeatTransCoef
+          //
+          if (n.name () == "SimFlowPlant_StackCogenerationExchngNomHeatTransCoef" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            if (!this->SimFlowPlant_StackCogenerationExchngNomHeatTransCoef_)
+            {
+              this->SimFlowPlant_StackCogenerationExchngNomHeatTransCoef_.set (SimFlowPlant_StackCogenerationExchngNomHeatTransCoef_traits::create (i, f, this));
+              continue;
+            }
+          }
+
+          // SimFlowPlant_StackCogenerationExchngNomHeatTransCoefExp
+          //
+          if (n.name () == "SimFlowPlant_StackCogenerationExchngNomHeatTransCoefExp" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            if (!this->SimFlowPlant_StackCogenerationExchngNomHeatTransCoefExp_)
+            {
+              this->SimFlowPlant_StackCogenerationExchngNomHeatTransCoefExp_.set (SimFlowPlant_StackCogenerationExchngNomHeatTransCoefExp_traits::create (i, f, this));
+              continue;
+            }
+          }
+
+          // SimFlowPlant_StackCoolerPumpPwr
+          //
+          if (n.name () == "SimFlowPlant_StackCoolerPumpPwr" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            if (!this->SimFlowPlant_StackCoolerPumpPwr_)
+            {
+              this->SimFlowPlant_StackCoolerPumpPwr_.set (SimFlowPlant_StackCoolerPumpPwr_traits::create (i, f, this));
+              continue;
+            }
+          }
+
+          // SimFlowPlant_StackCoolerPumpHeatLossFraction
+          //
+          if (n.name () == "SimFlowPlant_StackCoolerPumpHeatLossFraction" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            if (!this->SimFlowPlant_StackCoolerPumpHeatLossFraction_)
+            {
+              this->SimFlowPlant_StackCoolerPumpHeatLossFraction_.set (SimFlowPlant_StackCoolerPumpHeatLossFraction_traits::create (i, f, this));
+              continue;
+            }
+          }
+
+          // SimFlowPlant_StackAirCoolerFanCoefff_0_0
+          //
+          if (n.name () == "SimFlowPlant_StackAirCoolerFanCoefff_0_0" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            ::std::auto_ptr< SimFlowPlant_StackAirCoolerFanCoefff_0_0_type > r (
+              SimFlowPlant_StackAirCoolerFanCoefff_0_0_traits::create (i, f, this));
+
+            if (!this->SimFlowPlant_StackAirCoolerFanCoefff_0_0_)
+            {
+              this->SimFlowPlant_StackAirCoolerFanCoefff_0_0_.set (r);
+              continue;
+            }
+          }
+
+          // SimFlowPlant_StackAirCoolerFanCoefff_1_1
+          //
+          if (n.name () == "SimFlowPlant_StackAirCoolerFanCoefff_1_1" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            ::std::auto_ptr< SimFlowPlant_StackAirCoolerFanCoefff_1_1_type > r (
+              SimFlowPlant_StackAirCoolerFanCoefff_1_1_traits::create (i, f, this));
+
+            if (!this->SimFlowPlant_StackAirCoolerFanCoefff_1_1_)
+            {
+              this->SimFlowPlant_StackAirCoolerFanCoefff_1_1_.set (r);
+              continue;
+            }
+          }
+
+          // SimFlowPlant_StackAirCoolerFanCoeff2
+          //
+          if (n.name () == "SimFlowPlant_StackAirCoolerFanCoeff2" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            if (!this->SimFlowPlant_StackAirCoolerFanCoeff2_)
+            {
+              this->SimFlowPlant_StackAirCoolerFanCoeff2_.set (SimFlowPlant_StackAirCoolerFanCoeff2_traits::create (i, f, this));
+              continue;
+            }
+          }
+
+          break;
+        }
       }
 
       SimFlowPlant_ElectricalGenerator_FuelCellStackCooler* SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
@@ -105,6 +884,35 @@ namespace schema
               ::xml_schema::container* c) const
       {
         return new class SimFlowPlant_ElectricalGenerator_FuelCellStackCooler (*this, f, c);
+      }
+
+      SimFlowPlant_ElectricalGenerator_FuelCellStackCooler& SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::
+      operator= (const SimFlowPlant_ElectricalGenerator_FuelCellStackCooler& x)
+      {
+        if (this != &x)
+        {
+          static_cast< ::schema::simxml::MepModel::SimFlowPlant_ElectricalGenerator& > (*this) = x;
+          this->SimFlowPlant_Name_ = x.SimFlowPlant_Name_;
+          this->SimFlowPlant_HeatRecovWaterInletNodeName_ = x.SimFlowPlant_HeatRecovWaterInletNodeName_;
+          this->SimFlowPlant_HeatRecovWaterOutletNodeName_ = x.SimFlowPlant_HeatRecovWaterOutletNodeName_;
+          this->SimFlowPlant_NomStackTemp_ = x.SimFlowPlant_NomStackTemp_;
+          this->SimFlowPlant_ActStackTemp_ = x.SimFlowPlant_ActStackTemp_;
+          this->SimFlowPlant_Coeff_r_1_4_ = x.SimFlowPlant_Coeff_r_1_4_;
+          this->SimFlowPlant_StackCoolantFlowRate_ = x.SimFlowPlant_StackCoolantFlowRate_;
+          this->SimFlowPlant_StackCoolerUFactorTimesAreaVal_ = x.SimFlowPlant_StackCoolerUFactorTimesAreaVal_;
+          this->SimFlowPlant_FscogenAdjFactor_ = x.SimFlowPlant_FscogenAdjFactor_;
+          this->SimFlowPlant_StackCogenerationExchngArea_ = x.SimFlowPlant_StackCogenerationExchngArea_;
+          this->SimFlowPlant_StackCogenerationExchngNomFlowRate_ = x.SimFlowPlant_StackCogenerationExchngNomFlowRate_;
+          this->SimFlowPlant_StackCogenerationExchngNomHeatTransCoef_ = x.SimFlowPlant_StackCogenerationExchngNomHeatTransCoef_;
+          this->SimFlowPlant_StackCogenerationExchngNomHeatTransCoefExp_ = x.SimFlowPlant_StackCogenerationExchngNomHeatTransCoefExp_;
+          this->SimFlowPlant_StackCoolerPumpPwr_ = x.SimFlowPlant_StackCoolerPumpPwr_;
+          this->SimFlowPlant_StackCoolerPumpHeatLossFraction_ = x.SimFlowPlant_StackCoolerPumpHeatLossFraction_;
+          this->SimFlowPlant_StackAirCoolerFanCoefff_0_0_ = x.SimFlowPlant_StackAirCoolerFanCoefff_0_0_;
+          this->SimFlowPlant_StackAirCoolerFanCoefff_1_1_ = x.SimFlowPlant_StackAirCoolerFanCoefff_1_1_;
+          this->SimFlowPlant_StackAirCoolerFanCoeff2_ = x.SimFlowPlant_StackAirCoolerFanCoeff2_;
+        }
+
+        return *this;
       }
 
       SimFlowPlant_ElectricalGenerator_FuelCellStackCooler::

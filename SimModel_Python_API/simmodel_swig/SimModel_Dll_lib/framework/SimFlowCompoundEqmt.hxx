@@ -281,6 +281,42 @@ namespace schema
         void
         Representation (::std::auto_ptr< Representation_type > p);
 
+        // IsSingleZone
+        //
+        typedef ::xml_schema::boolean IsSingleZone_type;
+        typedef ::xsd::cxx::tree::optional< IsSingleZone_type > IsSingleZone_optional;
+        typedef ::xsd::cxx::tree::traits< IsSingleZone_type, char > IsSingleZone_traits;
+
+        const IsSingleZone_optional&
+        IsSingleZone () const;
+
+        IsSingleZone_optional&
+        IsSingleZone ();
+
+        void
+        IsSingleZone (const IsSingleZone_type& x);
+
+        void
+        IsSingleZone (const IsSingleZone_optional& x);
+
+        // Is3Phase
+        //
+        typedef ::xml_schema::boolean Is3Phase_type;
+        typedef ::xsd::cxx::tree::optional< Is3Phase_type > Is3Phase_optional;
+        typedef ::xsd::cxx::tree::traits< Is3Phase_type, char > Is3Phase_traits;
+
+        const Is3Phase_optional&
+        Is3Phase () const;
+
+        Is3Phase_optional&
+        Is3Phase ();
+
+        void
+        Is3Phase (const Is3Phase_type& x);
+
+        void
+        Is3Phase (const Is3Phase_optional& x);
+
         // Constructors.
         //
         SimFlowCompoundEqmt ();
@@ -314,6 +350,8 @@ namespace schema
 
         protected:
         Representation_optional Representation_;
+        IsSingleZone_optional IsSingleZone_;
+        Is3Phase_optional Is3Phase_;
       };
     }
   }

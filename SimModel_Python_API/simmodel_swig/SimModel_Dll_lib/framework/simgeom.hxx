@@ -1390,6 +1390,99 @@ namespace schema
       // Parse a URI or a local file.
       //
 
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
+      Coordinates (const ::std::string& uri,
+                   ::xml_schema::flags f = 0,
+                   const ::xml_schema::properties& p = ::xml_schema::properties ());
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
+      Coordinates (const ::std::string& uri,
+                   ::xml_schema::error_handler& eh,
+                   ::xml_schema::flags f = 0,
+                   const ::xml_schema::properties& p = ::xml_schema::properties ());
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
+      Coordinates (const ::std::string& uri,
+                   ::xercesc::DOMErrorHandler& eh,
+                   ::xml_schema::flags f = 0,
+                   const ::xml_schema::properties& p = ::xml_schema::properties ());
+
+      // Parse std::istream.
+      //
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
+      Coordinates (::std::istream& is,
+                   ::xml_schema::flags f = 0,
+                   const ::xml_schema::properties& p = ::xml_schema::properties ());
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
+      Coordinates (::std::istream& is,
+                   ::xml_schema::error_handler& eh,
+                   ::xml_schema::flags f = 0,
+                   const ::xml_schema::properties& p = ::xml_schema::properties ());
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
+      Coordinates (::std::istream& is,
+                   ::xercesc::DOMErrorHandler& eh,
+                   ::xml_schema::flags f = 0,
+                   const ::xml_schema::properties& p = ::xml_schema::properties ());
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
+      Coordinates (::std::istream& is,
+                   const ::std::string& id,
+                   ::xml_schema::flags f = 0,
+                   const ::xml_schema::properties& p = ::xml_schema::properties ());
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
+      Coordinates (::std::istream& is,
+                   const ::std::string& id,
+                   ::xml_schema::error_handler& eh,
+                   ::xml_schema::flags f = 0,
+                   const ::xml_schema::properties& p = ::xml_schema::properties ());
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
+      Coordinates (::std::istream& is,
+                   const ::std::string& id,
+                   ::xercesc::DOMErrorHandler& eh,
+                   ::xml_schema::flags f = 0,
+                   const ::xml_schema::properties& p = ::xml_schema::properties ());
+
+      // Parse xercesc::InputSource.
+      //
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
+      Coordinates (::xercesc::InputSource& is,
+                   ::xml_schema::flags f = 0,
+                   const ::xml_schema::properties& p = ::xml_schema::properties ());
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
+      Coordinates (::xercesc::InputSource& is,
+                   ::xml_schema::error_handler& eh,
+                   ::xml_schema::flags f = 0,
+                   const ::xml_schema::properties& p = ::xml_schema::properties ());
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
+      Coordinates (::xercesc::InputSource& is,
+                   ::xercesc::DOMErrorHandler& eh,
+                   ::xml_schema::flags f = 0,
+                   const ::xml_schema::properties& p = ::xml_schema::properties ());
+
+      // Parse xercesc::DOMDocument.
+      //
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
+      Coordinates (const ::xercesc::DOMDocument& d,
+                   ::xml_schema::flags f = 0,
+                   const ::xml_schema::properties& p = ::xml_schema::properties ());
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
+      Coordinates (::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d,
+                   ::xml_schema::flags f = 0,
+                   const ::xml_schema::properties& p = ::xml_schema::properties ());
+
+      // Parse a URI or a local file.
+      //
+
       ::std::auto_ptr< ::xml_schema::double_ >
       Scale2 (const ::std::string& uri,
               ::xml_schema::flags f = 0,
@@ -10133,94 +10226,94 @@ namespace schema
       //
 
       ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
-      Coordinates (const ::std::string& uri,
-                   ::xml_schema::flags f = 0,
-                   const ::xml_schema::properties& p = ::xml_schema::properties ());
+      Coordinates_MeasureValue (const ::std::string& uri,
+                                ::xml_schema::flags f = 0,
+                                const ::xml_schema::properties& p = ::xml_schema::properties ());
 
       ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
-      Coordinates (const ::std::string& uri,
-                   ::xml_schema::error_handler& eh,
-                   ::xml_schema::flags f = 0,
-                   const ::xml_schema::properties& p = ::xml_schema::properties ());
+      Coordinates_MeasureValue (const ::std::string& uri,
+                                ::xml_schema::error_handler& eh,
+                                ::xml_schema::flags f = 0,
+                                const ::xml_schema::properties& p = ::xml_schema::properties ());
 
       ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
-      Coordinates (const ::std::string& uri,
-                   ::xercesc::DOMErrorHandler& eh,
-                   ::xml_schema::flags f = 0,
-                   const ::xml_schema::properties& p = ::xml_schema::properties ());
+      Coordinates_MeasureValue (const ::std::string& uri,
+                                ::xercesc::DOMErrorHandler& eh,
+                                ::xml_schema::flags f = 0,
+                                const ::xml_schema::properties& p = ::xml_schema::properties ());
 
       // Parse std::istream.
       //
 
       ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
-      Coordinates (::std::istream& is,
-                   ::xml_schema::flags f = 0,
-                   const ::xml_schema::properties& p = ::xml_schema::properties ());
+      Coordinates_MeasureValue (::std::istream& is,
+                                ::xml_schema::flags f = 0,
+                                const ::xml_schema::properties& p = ::xml_schema::properties ());
 
       ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
-      Coordinates (::std::istream& is,
-                   ::xml_schema::error_handler& eh,
-                   ::xml_schema::flags f = 0,
-                   const ::xml_schema::properties& p = ::xml_schema::properties ());
+      Coordinates_MeasureValue (::std::istream& is,
+                                ::xml_schema::error_handler& eh,
+                                ::xml_schema::flags f = 0,
+                                const ::xml_schema::properties& p = ::xml_schema::properties ());
 
       ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
-      Coordinates (::std::istream& is,
-                   ::xercesc::DOMErrorHandler& eh,
-                   ::xml_schema::flags f = 0,
-                   const ::xml_schema::properties& p = ::xml_schema::properties ());
+      Coordinates_MeasureValue (::std::istream& is,
+                                ::xercesc::DOMErrorHandler& eh,
+                                ::xml_schema::flags f = 0,
+                                const ::xml_schema::properties& p = ::xml_schema::properties ());
 
       ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
-      Coordinates (::std::istream& is,
-                   const ::std::string& id,
-                   ::xml_schema::flags f = 0,
-                   const ::xml_schema::properties& p = ::xml_schema::properties ());
+      Coordinates_MeasureValue (::std::istream& is,
+                                const ::std::string& id,
+                                ::xml_schema::flags f = 0,
+                                const ::xml_schema::properties& p = ::xml_schema::properties ());
 
       ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
-      Coordinates (::std::istream& is,
-                   const ::std::string& id,
-                   ::xml_schema::error_handler& eh,
-                   ::xml_schema::flags f = 0,
-                   const ::xml_schema::properties& p = ::xml_schema::properties ());
+      Coordinates_MeasureValue (::std::istream& is,
+                                const ::std::string& id,
+                                ::xml_schema::error_handler& eh,
+                                ::xml_schema::flags f = 0,
+                                const ::xml_schema::properties& p = ::xml_schema::properties ());
 
       ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
-      Coordinates (::std::istream& is,
-                   const ::std::string& id,
-                   ::xercesc::DOMErrorHandler& eh,
-                   ::xml_schema::flags f = 0,
-                   const ::xml_schema::properties& p = ::xml_schema::properties ());
+      Coordinates_MeasureValue (::std::istream& is,
+                                const ::std::string& id,
+                                ::xercesc::DOMErrorHandler& eh,
+                                ::xml_schema::flags f = 0,
+                                const ::xml_schema::properties& p = ::xml_schema::properties ());
 
       // Parse xercesc::InputSource.
       //
 
       ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
-      Coordinates (::xercesc::InputSource& is,
-                   ::xml_schema::flags f = 0,
-                   const ::xml_schema::properties& p = ::xml_schema::properties ());
+      Coordinates_MeasureValue (::xercesc::InputSource& is,
+                                ::xml_schema::flags f = 0,
+                                const ::xml_schema::properties& p = ::xml_schema::properties ());
 
       ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
-      Coordinates (::xercesc::InputSource& is,
-                   ::xml_schema::error_handler& eh,
-                   ::xml_schema::flags f = 0,
-                   const ::xml_schema::properties& p = ::xml_schema::properties ());
+      Coordinates_MeasureValue (::xercesc::InputSource& is,
+                                ::xml_schema::error_handler& eh,
+                                ::xml_schema::flags f = 0,
+                                const ::xml_schema::properties& p = ::xml_schema::properties ());
 
       ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
-      Coordinates (::xercesc::InputSource& is,
-                   ::xercesc::DOMErrorHandler& eh,
-                   ::xml_schema::flags f = 0,
-                   const ::xml_schema::properties& p = ::xml_schema::properties ());
+      Coordinates_MeasureValue (::xercesc::InputSource& is,
+                                ::xercesc::DOMErrorHandler& eh,
+                                ::xml_schema::flags f = 0,
+                                const ::xml_schema::properties& p = ::xml_schema::properties ());
 
       // Parse xercesc::DOMDocument.
       //
 
       ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
-      Coordinates (const ::xercesc::DOMDocument& d,
-                   ::xml_schema::flags f = 0,
-                   const ::xml_schema::properties& p = ::xml_schema::properties ());
+      Coordinates_MeasureValue (const ::xercesc::DOMDocument& d,
+                                ::xml_schema::flags f = 0,
+                                const ::xml_schema::properties& p = ::xml_schema::properties ());
 
       ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
-      Coordinates (::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d,
-                   ::xml_schema::flags f = 0,
-                   const ::xml_schema::properties& p = ::xml_schema::properties ());
+      Coordinates_MeasureValue (::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d,
+                                ::xml_schema::flags f = 0,
+                                const ::xml_schema::properties& p = ::xml_schema::properties ());
 
       // Parse a URI or a local file.
       //

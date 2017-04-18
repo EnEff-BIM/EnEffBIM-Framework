@@ -50,7 +50,7 @@
 #include <xsd/cxx/config.hxx>
 
 #if (XSD_INT_VERSION != 4000000L)
-#error XSD runtime version mismatch
+//#error XSD runtime version mismatch
 #endif
 
 #include <xsd/cxx/pre.hxx>
@@ -274,7 +274,7 @@ namespace schema
         // SimSlab_SurfType
         //
         typedef ::xml_schema::string SimSlab_SurfType_type;
-        typedef ::xsd::cxx::tree::optional< SimSlab_SurfType_type > SimSlab_SurfType_optional;
+        typedef ::xsd::cxx::tree::optional< SimSlab_SurfType_type, false > SimSlab_SurfType_optional;
         typedef ::xsd::cxx::tree::traits< SimSlab_SurfType_type, char > SimSlab_SurfType_traits;
 
         const SimSlab_SurfType_optional&
@@ -295,7 +295,7 @@ namespace schema
         // SimSlab_OutsdBndCond
         //
         typedef ::xml_schema::string SimSlab_OutsdBndCond_type;
-        typedef ::xsd::cxx::tree::optional< SimSlab_OutsdBndCond_type > SimSlab_OutsdBndCond_optional;
+        typedef ::xsd::cxx::tree::optional< SimSlab_OutsdBndCond_type, false > SimSlab_OutsdBndCond_optional;
         typedef ::xsd::cxx::tree::traits< SimSlab_OutsdBndCond_type, char > SimSlab_OutsdBndCond_traits;
 
         const SimSlab_OutsdBndCond_optional&
@@ -316,7 +316,7 @@ namespace schema
         // SimSlab_OutsdBndCondObject
         //
         typedef ::xml_schema::idref SimSlab_OutsdBndCondObject_type;
-        typedef ::xsd::cxx::tree::optional< SimSlab_OutsdBndCondObject_type > SimSlab_OutsdBndCondObject_optional;
+        typedef ::xsd::cxx::tree::optional< SimSlab_OutsdBndCondObject_type, false > SimSlab_OutsdBndCondObject_optional;
         typedef ::xsd::cxx::tree::traits< SimSlab_OutsdBndCondObject_type, char > SimSlab_OutsdBndCondObject_traits;
 
         const SimSlab_OutsdBndCondObject_optional&
@@ -337,7 +337,7 @@ namespace schema
         // SimSlab_SunExposure
         //
         typedef ::xml_schema::string SimSlab_SunExposure_type;
-        typedef ::xsd::cxx::tree::optional< SimSlab_SunExposure_type > SimSlab_SunExposure_optional;
+        typedef ::xsd::cxx::tree::optional< SimSlab_SunExposure_type, false > SimSlab_SunExposure_optional;
         typedef ::xsd::cxx::tree::traits< SimSlab_SunExposure_type, char > SimSlab_SunExposure_traits;
 
         const SimSlab_SunExposure_optional&
@@ -358,7 +358,7 @@ namespace schema
         // SimSlab_WindExposure
         //
         typedef ::xml_schema::string SimSlab_WindExposure_type;
-        typedef ::xsd::cxx::tree::optional< SimSlab_WindExposure_type > SimSlab_WindExposure_optional;
+        typedef ::xsd::cxx::tree::optional< SimSlab_WindExposure_type, false > SimSlab_WindExposure_optional;
         typedef ::xsd::cxx::tree::traits< SimSlab_WindExposure_type, char > SimSlab_WindExposure_traits;
 
         const SimSlab_WindExposure_optional&
@@ -379,7 +379,7 @@ namespace schema
         // SimSlab_ViewFactToGnd
         //
         typedef ::xml_schema::double_ SimSlab_ViewFactToGnd_type;
-        typedef ::xsd::cxx::tree::optional< SimSlab_ViewFactToGnd_type > SimSlab_ViewFactToGnd_optional;
+        typedef ::xsd::cxx::tree::optional< SimSlab_ViewFactToGnd_type, true > SimSlab_ViewFactToGnd_optional;
         typedef ::xsd::cxx::tree::traits< SimSlab_ViewFactToGnd_type, char, ::xsd::cxx::tree::schema_type::double_ > SimSlab_ViewFactToGnd_traits;
 
         const SimSlab_ViewFactToGnd_optional&
@@ -397,7 +397,7 @@ namespace schema
         // SimSlab_NumbVerts
         //
         typedef ::xml_schema::double_ SimSlab_NumbVerts_type;
-        typedef ::xsd::cxx::tree::optional< SimSlab_NumbVerts_type > SimSlab_NumbVerts_optional;
+        typedef ::xsd::cxx::tree::optional< SimSlab_NumbVerts_type, true > SimSlab_NumbVerts_optional;
         typedef ::xsd::cxx::tree::traits< SimSlab_NumbVerts_type, char, ::xsd::cxx::tree::schema_type::double_ > SimSlab_NumbVerts_traits;
 
         const SimSlab_NumbVerts_optional&
@@ -415,7 +415,7 @@ namespace schema
         // SimSlab_Vertex_1_120_X_Coord
         //
         typedef ::schema::simxml::SimModelCore::doubleList SimSlab_Vertex_1_120_X_Coord_type;
-        typedef ::xsd::cxx::tree::optional< SimSlab_Vertex_1_120_X_Coord_type > SimSlab_Vertex_1_120_X_Coord_optional;
+        typedef ::xsd::cxx::tree::optional< SimSlab_Vertex_1_120_X_Coord_type, false > SimSlab_Vertex_1_120_X_Coord_optional;
         typedef ::xsd::cxx::tree::traits< SimSlab_Vertex_1_120_X_Coord_type, char > SimSlab_Vertex_1_120_X_Coord_traits;
 
         const SimSlab_Vertex_1_120_X_Coord_optional&
@@ -436,7 +436,7 @@ namespace schema
         // SimSlab_Vertex_1_120_Y_Coord
         //
         typedef ::schema::simxml::SimModelCore::doubleList SimSlab_Vertex_1_120_Y_Coord_type;
-        typedef ::xsd::cxx::tree::optional< SimSlab_Vertex_1_120_Y_Coord_type > SimSlab_Vertex_1_120_Y_Coord_optional;
+        typedef ::xsd::cxx::tree::optional< SimSlab_Vertex_1_120_Y_Coord_type, false > SimSlab_Vertex_1_120_Y_Coord_optional;
         typedef ::xsd::cxx::tree::traits< SimSlab_Vertex_1_120_Y_Coord_type, char > SimSlab_Vertex_1_120_Y_Coord_traits;
 
         const SimSlab_Vertex_1_120_Y_Coord_optional&
@@ -457,7 +457,7 @@ namespace schema
         // SimSlab_Vertex_1_120_Z_Coord
         //
         typedef ::schema::simxml::SimModelCore::doubleList SimSlab_Vertex_1_120_Z_Coord_type;
-        typedef ::xsd::cxx::tree::optional< SimSlab_Vertex_1_120_Z_Coord_type > SimSlab_Vertex_1_120_Z_Coord_optional;
+        typedef ::xsd::cxx::tree::optional< SimSlab_Vertex_1_120_Z_Coord_type, false > SimSlab_Vertex_1_120_Z_Coord_optional;
         typedef ::xsd::cxx::tree::traits< SimSlab_Vertex_1_120_Z_Coord_type, char > SimSlab_Vertex_1_120_Z_Coord_traits;
 
         const SimSlab_Vertex_1_120_Z_Coord_optional&
@@ -478,7 +478,7 @@ namespace schema
         // SimSlab_AzimuthAng
         //
         typedef ::xml_schema::double_ SimSlab_AzimuthAng_type;
-        typedef ::xsd::cxx::tree::optional< SimSlab_AzimuthAng_type > SimSlab_AzimuthAng_optional;
+        typedef ::xsd::cxx::tree::optional< SimSlab_AzimuthAng_type, true > SimSlab_AzimuthAng_optional;
         typedef ::xsd::cxx::tree::traits< SimSlab_AzimuthAng_type, char, ::xsd::cxx::tree::schema_type::double_ > SimSlab_AzimuthAng_traits;
 
         const SimSlab_AzimuthAng_optional&
@@ -496,7 +496,7 @@ namespace schema
         // SimSlab_TiltAng
         //
         typedef ::xml_schema::double_ SimSlab_TiltAng_type;
-        typedef ::xsd::cxx::tree::optional< SimSlab_TiltAng_type > SimSlab_TiltAng_optional;
+        typedef ::xsd::cxx::tree::optional< SimSlab_TiltAng_type, true > SimSlab_TiltAng_optional;
         typedef ::xsd::cxx::tree::traits< SimSlab_TiltAng_type, char, ::xsd::cxx::tree::schema_type::double_ > SimSlab_TiltAng_traits;
 
         const SimSlab_TiltAng_optional&
@@ -514,7 +514,7 @@ namespace schema
         // SimSlab_StartXCoord
         //
         typedef ::xml_schema::double_ SimSlab_StartXCoord_type;
-        typedef ::xsd::cxx::tree::optional< SimSlab_StartXCoord_type > SimSlab_StartXCoord_optional;
+        typedef ::xsd::cxx::tree::optional< SimSlab_StartXCoord_type, true > SimSlab_StartXCoord_optional;
         typedef ::xsd::cxx::tree::traits< SimSlab_StartXCoord_type, char, ::xsd::cxx::tree::schema_type::double_ > SimSlab_StartXCoord_traits;
 
         const SimSlab_StartXCoord_optional&
@@ -532,7 +532,7 @@ namespace schema
         // SimSlab_StartYCoord
         //
         typedef ::xml_schema::double_ SimSlab_StartYCoord_type;
-        typedef ::xsd::cxx::tree::optional< SimSlab_StartYCoord_type > SimSlab_StartYCoord_optional;
+        typedef ::xsd::cxx::tree::optional< SimSlab_StartYCoord_type, true > SimSlab_StartYCoord_optional;
         typedef ::xsd::cxx::tree::traits< SimSlab_StartYCoord_type, char, ::xsd::cxx::tree::schema_type::double_ > SimSlab_StartYCoord_traits;
 
         const SimSlab_StartYCoord_optional&
@@ -550,7 +550,7 @@ namespace schema
         // SimSlab_StartZCoord
         //
         typedef ::xml_schema::double_ SimSlab_StartZCoord_type;
-        typedef ::xsd::cxx::tree::optional< SimSlab_StartZCoord_type > SimSlab_StartZCoord_optional;
+        typedef ::xsd::cxx::tree::optional< SimSlab_StartZCoord_type, true > SimSlab_StartZCoord_optional;
         typedef ::xsd::cxx::tree::traits< SimSlab_StartZCoord_type, char, ::xsd::cxx::tree::schema_type::double_ > SimSlab_StartZCoord_traits;
 
         const SimSlab_StartZCoord_optional&
@@ -568,7 +568,7 @@ namespace schema
         // SimSlab_Length
         //
         typedef ::xml_schema::double_ SimSlab_Length_type;
-        typedef ::xsd::cxx::tree::optional< SimSlab_Length_type > SimSlab_Length_optional;
+        typedef ::xsd::cxx::tree::optional< SimSlab_Length_type, true > SimSlab_Length_optional;
         typedef ::xsd::cxx::tree::traits< SimSlab_Length_type, char, ::xsd::cxx::tree::schema_type::double_ > SimSlab_Length_traits;
 
         const SimSlab_Length_optional&
@@ -586,7 +586,7 @@ namespace schema
         // SimSlab_Width
         //
         typedef ::xml_schema::double_ SimSlab_Width_type;
-        typedef ::xsd::cxx::tree::optional< SimSlab_Width_type > SimSlab_Width_optional;
+        typedef ::xsd::cxx::tree::optional< SimSlab_Width_type, true > SimSlab_Width_optional;
         typedef ::xsd::cxx::tree::traits< SimSlab_Width_type, char, ::xsd::cxx::tree::schema_type::double_ > SimSlab_Width_traits;
 
         const SimSlab_Width_optional&
@@ -604,7 +604,7 @@ namespace schema
         // SurfaceProperty_SolarIncidentInside_Name
         //
         typedef ::xml_schema::string SurfaceProperty_SolarIncidentInside_Name_type;
-        typedef ::xsd::cxx::tree::optional< SurfaceProperty_SolarIncidentInside_Name_type > SurfaceProperty_SolarIncidentInside_Name_optional;
+        typedef ::xsd::cxx::tree::optional< SurfaceProperty_SolarIncidentInside_Name_type, false > SurfaceProperty_SolarIncidentInside_Name_optional;
         typedef ::xsd::cxx::tree::traits< SurfaceProperty_SolarIncidentInside_Name_type, char > SurfaceProperty_SolarIncidentInside_Name_traits;
 
         const SurfaceProperty_SolarIncidentInside_Name_optional&
@@ -625,7 +625,7 @@ namespace schema
         // SurfaceProperty_SolarIncidentInside_SurfName
         //
         typedef ::xml_schema::idref SurfaceProperty_SolarIncidentInside_SurfName_type;
-        typedef ::xsd::cxx::tree::optional< SurfaceProperty_SolarIncidentInside_SurfName_type > SurfaceProperty_SolarIncidentInside_SurfName_optional;
+        typedef ::xsd::cxx::tree::optional< SurfaceProperty_SolarIncidentInside_SurfName_type, false > SurfaceProperty_SolarIncidentInside_SurfName_optional;
         typedef ::xsd::cxx::tree::traits< SurfaceProperty_SolarIncidentInside_SurfName_type, char > SurfaceProperty_SolarIncidentInside_SurfName_traits;
 
         const SurfaceProperty_SolarIncidentInside_SurfName_optional&
@@ -646,7 +646,7 @@ namespace schema
         // SurfaceProperty_SolarIncidentInside_ConstructionName
         //
         typedef ::xml_schema::idref SurfaceProperty_SolarIncidentInside_ConstructionName_type;
-        typedef ::xsd::cxx::tree::optional< SurfaceProperty_SolarIncidentInside_ConstructionName_type > SurfaceProperty_SolarIncidentInside_ConstructionName_optional;
+        typedef ::xsd::cxx::tree::optional< SurfaceProperty_SolarIncidentInside_ConstructionName_type, false > SurfaceProperty_SolarIncidentInside_ConstructionName_optional;
         typedef ::xsd::cxx::tree::traits< SurfaceProperty_SolarIncidentInside_ConstructionName_type, char > SurfaceProperty_SolarIncidentInside_ConstructionName_traits;
 
         const SurfaceProperty_SolarIncidentInside_ConstructionName_optional&
@@ -667,7 +667,7 @@ namespace schema
         // SurfaceProperty_SolarIncidentInside_InsideSurfaceIncidentSunSolarRadSchedName
         //
         typedef ::xml_schema::idref SurfaceProperty_SolarIncidentInside_InsideSurfaceIncidentSunSolarRadSchedName_type;
-        typedef ::xsd::cxx::tree::optional< SurfaceProperty_SolarIncidentInside_InsideSurfaceIncidentSunSolarRadSchedName_type > SurfaceProperty_SolarIncidentInside_InsideSurfaceIncidentSunSolarRadSchedName_optional;
+        typedef ::xsd::cxx::tree::optional< SurfaceProperty_SolarIncidentInside_InsideSurfaceIncidentSunSolarRadSchedName_type, false > SurfaceProperty_SolarIncidentInside_InsideSurfaceIncidentSunSolarRadSchedName_optional;
         typedef ::xsd::cxx::tree::traits< SurfaceProperty_SolarIncidentInside_InsideSurfaceIncidentSunSolarRadSchedName_type, char > SurfaceProperty_SolarIncidentInside_InsideSurfaceIncidentSunSolarRadSchedName_traits;
 
         const SurfaceProperty_SolarIncidentInside_InsideSurfaceIncidentSunSolarRadSchedName_optional&
@@ -688,7 +688,7 @@ namespace schema
         // SurfProp_HeatTransAlg_MultSurf_Name
         //
         typedef ::xml_schema::string SurfProp_HeatTransAlg_MultSurf_Name_type;
-        typedef ::xsd::cxx::tree::optional< SurfProp_HeatTransAlg_MultSurf_Name_type > SurfProp_HeatTransAlg_MultSurf_Name_optional;
+        typedef ::xsd::cxx::tree::optional< SurfProp_HeatTransAlg_MultSurf_Name_type, false > SurfProp_HeatTransAlg_MultSurf_Name_optional;
         typedef ::xsd::cxx::tree::traits< SurfProp_HeatTransAlg_MultSurf_Name_type, char > SurfProp_HeatTransAlg_MultSurf_Name_traits;
 
         const SurfProp_HeatTransAlg_MultSurf_Name_optional&
@@ -709,7 +709,7 @@ namespace schema
         // SurfProp_HeatTransAlg_MultSurf_SurfType
         //
         typedef ::xml_schema::string SurfProp_HeatTransAlg_MultSurf_SurfType_type;
-        typedef ::xsd::cxx::tree::optional< SurfProp_HeatTransAlg_MultSurf_SurfType_type > SurfProp_HeatTransAlg_MultSurf_SurfType_optional;
+        typedef ::xsd::cxx::tree::optional< SurfProp_HeatTransAlg_MultSurf_SurfType_type, false > SurfProp_HeatTransAlg_MultSurf_SurfType_optional;
         typedef ::xsd::cxx::tree::traits< SurfProp_HeatTransAlg_MultSurf_SurfType_type, char > SurfProp_HeatTransAlg_MultSurf_SurfType_traits;
 
         const SurfProp_HeatTransAlg_MultSurf_SurfType_optional&
@@ -730,7 +730,7 @@ namespace schema
         // SurfProp_HeatTransAlg_MultSurf_Algorithm
         //
         typedef ::xml_schema::string SurfProp_HeatTransAlg_MultSurf_Algorithm_type;
-        typedef ::xsd::cxx::tree::optional< SurfProp_HeatTransAlg_MultSurf_Algorithm_type > SurfProp_HeatTransAlg_MultSurf_Algorithm_optional;
+        typedef ::xsd::cxx::tree::optional< SurfProp_HeatTransAlg_MultSurf_Algorithm_type, false > SurfProp_HeatTransAlg_MultSurf_Algorithm_optional;
         typedef ::xsd::cxx::tree::traits< SurfProp_HeatTransAlg_MultSurf_Algorithm_type, char > SurfProp_HeatTransAlg_MultSurf_Algorithm_traits;
 
         const SurfProp_HeatTransAlg_MultSurf_Algorithm_optional&

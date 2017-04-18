@@ -314,6 +314,42 @@ namespace schema
         void
         SimFlowEnergyTrans_ParasiticElecLoad (const SimFlowEnergyTrans_ParasiticElecLoad_optional& x);
 
+        // T24BypassMinimumEfficiencyCheck
+        //
+        typedef ::xml_schema::int_ T24BypassMinimumEfficiencyCheck_type;
+        typedef ::xsd::cxx::tree::optional< T24BypassMinimumEfficiencyCheck_type > T24BypassMinimumEfficiencyCheck_optional;
+        typedef ::xsd::cxx::tree::traits< T24BypassMinimumEfficiencyCheck_type, char > T24BypassMinimumEfficiencyCheck_traits;
+
+        const T24BypassMinimumEfficiencyCheck_optional&
+        T24BypassMinimumEfficiencyCheck () const;
+
+        T24BypassMinimumEfficiencyCheck_optional&
+        T24BypassMinimumEfficiencyCheck ();
+
+        void
+        T24BypassMinimumEfficiencyCheck (const T24BypassMinimumEfficiencyCheck_type& x);
+
+        void
+        T24BypassMinimumEfficiencyCheck (const T24BypassMinimumEfficiencyCheck_optional& x);
+
+        // T24CoilPressureDrop
+        //
+        typedef ::xml_schema::double_ T24CoilPressureDrop_type;
+        typedef ::xsd::cxx::tree::optional< T24CoilPressureDrop_type > T24CoilPressureDrop_optional;
+        typedef ::xsd::cxx::tree::traits< T24CoilPressureDrop_type, char, ::xsd::cxx::tree::schema_type::double_ > T24CoilPressureDrop_traits;
+
+        const T24CoilPressureDrop_optional&
+        T24CoilPressureDrop () const;
+
+        T24CoilPressureDrop_optional&
+        T24CoilPressureDrop ();
+
+        void
+        T24CoilPressureDrop (const T24CoilPressureDrop_type& x);
+
+        void
+        T24CoilPressureDrop (const T24CoilPressureDrop_optional& x);
+
         // T24CoilHeatFurnIgnType
         //
         typedef ::xml_schema::string T24CoilHeatFurnIgnType_type;
@@ -370,6 +406,8 @@ namespace schema
         SimFlowEnergyTrans_NomCap_optional SimFlowEnergyTrans_NomCap_;
         SimFlowEnergyTrans_GasBurnerEff_optional SimFlowEnergyTrans_GasBurnerEff_;
         SimFlowEnergyTrans_ParasiticElecLoad_optional SimFlowEnergyTrans_ParasiticElecLoad_;
+        T24BypassMinimumEfficiencyCheck_optional T24BypassMinimumEfficiencyCheck_;
+        T24CoilPressureDrop_optional T24CoilPressureDrop_;
         T24CoilHeatFurnIgnType_optional T24CoilHeatFurnIgnType_;
       };
     }

@@ -130,6 +130,21 @@ class SimController(base.SimDistributionControlElement):
     def ControllerSchemeList(self, *args):
         return _SimController_SupplyWater_Temperature.SimController_ControllerSchemeList(self, *args)
 
+    def ConstantSetpointValue(self, *args):
+        return _SimController_SupplyWater_Temperature.SimController_ConstantSetpointValue(self, *args)
+
+    def ControllerType(self, *args):
+        return _SimController_SupplyWater_Temperature.SimController_ControllerType(self, *args)
+
+    def ControllerVariable(self, *args):
+        return _SimController_SupplyWater_Temperature.SimController_ControllerVariable(self, *args)
+
+    def MeasuredVariable(self, *args):
+        return _SimController_SupplyWater_Temperature.SimController_MeasuredVariable(self, *args)
+
+    def ScheduledSetpointValue(self, *args):
+        return _SimController_SupplyWater_Temperature.SimController_ScheduledSetpointValue(self, *args)
+
     def __init__(self, *args):
         this = _SimController_SupplyWater_Temperature.new_SimController(*args)
         try:

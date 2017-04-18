@@ -257,6 +257,17 @@ namespace schema
   {
     namespace SimModelCore
     {
+      class SelectedPropertyGroups;
+    }
+  }
+}
+
+namespace schema
+{
+  namespace simxml
+  {
+    namespace SimModelCore
+    {
       class __declspec(dllexport) SimObjectDefinition: public ::schema::simxml::SimModelCore::SimRoot
       {
         public:
@@ -280,6 +291,45 @@ namespace schema
 
         void
         Decomposes (::std::auto_ptr< Decomposes_type > p);
+
+        // SelectedPropertyGroups
+        //
+        typedef ::schema::simxml::SimModelCore::SelectedPropertyGroups SelectedPropertyGroups_type;
+        typedef ::xsd::cxx::tree::optional< SelectedPropertyGroups_type > SelectedPropertyGroups_optional;
+        typedef ::xsd::cxx::tree::traits< SelectedPropertyGroups_type, char > SelectedPropertyGroups_traits;
+
+        const SelectedPropertyGroups_optional&
+        SelectedPropertyGroups () const;
+
+        SelectedPropertyGroups_optional&
+        SelectedPropertyGroups ();
+
+        void
+        SelectedPropertyGroups (const SelectedPropertyGroups_type& x);
+
+        void
+        SelectedPropertyGroups (const SelectedPropertyGroups_optional& x);
+
+        void
+        SelectedPropertyGroups (::std::auto_ptr< SelectedPropertyGroups_type > p);
+
+        // IsTemplateObject
+        //
+        typedef ::xml_schema::boolean IsTemplateObject_type;
+        typedef ::xsd::cxx::tree::optional< IsTemplateObject_type, true > IsTemplateObject_optional;
+        typedef ::xsd::cxx::tree::traits< IsTemplateObject_type, char > IsTemplateObject_traits;
+
+        const IsTemplateObject_optional&
+        IsTemplateObject () const;
+
+        IsTemplateObject_optional&
+        IsTemplateObject ();
+
+        void
+        IsTemplateObject (const IsTemplateObject_type& x);
+
+        void
+        IsTemplateObject (const IsTemplateObject_optional& x);
 
         // Constructors.
         //
@@ -314,6 +364,8 @@ namespace schema
 
         protected:
         Decomposes_optional Decomposes_;
+        SelectedPropertyGroups_optional SelectedPropertyGroups_;
+        IsTemplateObject_optional IsTemplateObject_;
       };
     }
   }

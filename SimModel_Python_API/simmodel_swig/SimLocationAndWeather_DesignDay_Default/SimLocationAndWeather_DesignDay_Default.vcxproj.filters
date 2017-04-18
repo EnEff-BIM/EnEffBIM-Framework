@@ -25,6 +25,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="SimLocationAndWeather_DesignDay_Default.i" />
+    <CustomBuild Include="SimLocationAndWeather_DesignDay_Default.i" />
   </ItemGroup>
 </Project>

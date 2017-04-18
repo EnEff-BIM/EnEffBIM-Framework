@@ -260,6 +260,27 @@ namespace schema
       class SimMaterial_GlazingMaterial_Blind: public ::schema::simxml::ResourcesGeneral::SimMaterial_GlazingMaterial
       {
         public:
+        // SimMaterial_Name
+        //
+        typedef ::xml_schema::string SimMaterial_Name_type;
+        typedef ::xsd::cxx::tree::optional< SimMaterial_Name_type > SimMaterial_Name_optional;
+        typedef ::xsd::cxx::tree::traits< SimMaterial_Name_type, char > SimMaterial_Name_traits;
+
+        const SimMaterial_Name_optional&
+        SimMaterial_Name () const;
+
+        SimMaterial_Name_optional&
+        SimMaterial_Name ();
+
+        void
+        SimMaterial_Name (const SimMaterial_Name_type& x);
+
+        void
+        SimMaterial_Name (const SimMaterial_Name_optional& x);
+
+        void
+        SimMaterial_Name (::std::auto_ptr< SimMaterial_Name_type > p);
+
         // SimMaterial_SlatWidth
         //
         typedef ::xml_schema::double_ SimMaterial_SlatWidth_type;
@@ -799,6 +820,7 @@ namespace schema
                ::xml_schema::flags);
 
         protected:
+        SimMaterial_Name_optional SimMaterial_Name_;
         SimMaterial_SlatWidth_optional SimMaterial_SlatWidth_;
         SimMaterial_SlatThick_optional SimMaterial_SlatThick_;
         SimMaterial_SlatAngle_optional SimMaterial_SlatAngle_;

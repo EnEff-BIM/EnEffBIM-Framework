@@ -49,6 +49,36 @@ namespace schema
       // SimMaterial_GlazingMaterial_ComplexShade
       // 
 
+      const SimMaterial_GlazingMaterial_ComplexShade::SimMaterial_Name_optional& SimMaterial_GlazingMaterial_ComplexShade::
+      SimMaterial_Name () const
+      {
+        return this->SimMaterial_Name_;
+      }
+
+      SimMaterial_GlazingMaterial_ComplexShade::SimMaterial_Name_optional& SimMaterial_GlazingMaterial_ComplexShade::
+      SimMaterial_Name ()
+      {
+        return this->SimMaterial_Name_;
+      }
+
+      void SimMaterial_GlazingMaterial_ComplexShade::
+      SimMaterial_Name (const SimMaterial_Name_type& x)
+      {
+        this->SimMaterial_Name_.set (x);
+      }
+
+      void SimMaterial_GlazingMaterial_ComplexShade::
+      SimMaterial_Name (const SimMaterial_Name_optional& x)
+      {
+        this->SimMaterial_Name_ = x;
+      }
+
+      void SimMaterial_GlazingMaterial_ComplexShade::
+      SimMaterial_Name (::std::auto_ptr< SimMaterial_Name_type > x)
+      {
+        this->SimMaterial_Name_.set (x);
+      }
+
       const SimMaterial_GlazingMaterial_ComplexShade::SimMaterial_Thick_optional& SimMaterial_GlazingMaterial_ComplexShade::
       SimMaterial_Thick () const
       {
@@ -489,6 +519,7 @@ namespace schema
       SimMaterial_GlazingMaterial_ComplexShade::
       SimMaterial_GlazingMaterial_ComplexShade ()
       : ::schema::simxml::ResourcesGeneral::SimMaterial_GlazingMaterial (),
+        SimMaterial_Name_ (this),
         SimMaterial_Thick_ (this),
         SimMaterial_Cond_ (this),
         SimMaterial_TopOpngMult_ (this),
@@ -512,6 +543,7 @@ namespace schema
       SimMaterial_GlazingMaterial_ComplexShade::
       SimMaterial_GlazingMaterial_ComplexShade (const RefId_type& RefId)
       : ::schema::simxml::ResourcesGeneral::SimMaterial_GlazingMaterial (RefId),
+        SimMaterial_Name_ (this),
         SimMaterial_Thick_ (this),
         SimMaterial_Cond_ (this),
         SimMaterial_TopOpngMult_ (this),
@@ -537,6 +569,7 @@ namespace schema
                                                 ::xml_schema::flags f,
                                                 ::xml_schema::container* c)
       : ::schema::simxml::ResourcesGeneral::SimMaterial_GlazingMaterial (x, f, c),
+        SimMaterial_Name_ (x.SimMaterial_Name_, f, this),
         SimMaterial_Thick_ (x.SimMaterial_Thick_, f, this),
         SimMaterial_Cond_ (x.SimMaterial_Cond_, f, this),
         SimMaterial_TopOpngMult_ (x.SimMaterial_TopOpngMult_, f, this),
@@ -562,6 +595,7 @@ namespace schema
                                                 ::xml_schema::flags f,
                                                 ::xml_schema::container* c)
       : ::schema::simxml::ResourcesGeneral::SimMaterial_GlazingMaterial (e, f | ::xml_schema::flags::base, c),
+        SimMaterial_Name_ (this),
         SimMaterial_Thick_ (this),
         SimMaterial_Cond_ (this),
         SimMaterial_TopOpngMult_ (this),
@@ -598,6 +632,20 @@ namespace schema
           const ::xercesc::DOMElement& i (p.cur_element ());
           const ::xsd::cxx::xml::qualified_name< char > n (
             ::xsd::cxx::xml::dom::name< char > (i));
+
+          // SimMaterial_Name
+          //
+          if (n.name () == "SimMaterial_Name" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/ResourcesGeneral")
+          {
+            ::std::auto_ptr< SimMaterial_Name_type > r (
+              SimMaterial_Name_traits::create (i, f, this));
+
+            if (!this->SimMaterial_Name_)
+            {
+              this->SimMaterial_Name_.set (r);
+              continue;
+            }
+          }
 
           // SimMaterial_Thick
           //
@@ -806,6 +854,7 @@ namespace schema
         if (this != &x)
         {
           static_cast< ::schema::simxml::ResourcesGeneral::SimMaterial_GlazingMaterial& > (*this) = x;
+          this->SimMaterial_Name_ = x.SimMaterial_Name_;
           this->SimMaterial_Thick_ = x.SimMaterial_Thick_;
           this->SimMaterial_Cond_ = x.SimMaterial_Cond_;
           this->SimMaterial_TopOpngMult_ = x.SimMaterial_TopOpngMult_;

@@ -25,6 +25,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="SimGeomSolidModel_SweptAreaSolid_ExtrudedAreaSolid.i" />
+    <CustomBuild Include="SimGeomSolidModel_SweptAreaSolid_ExtrudedAreaSolid.i" />
   </ItemGroup>
 </Project>

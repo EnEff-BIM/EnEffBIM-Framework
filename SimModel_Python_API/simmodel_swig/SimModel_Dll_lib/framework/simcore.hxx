@@ -266,6 +266,8 @@ namespace schema
 
 #include "simbuildingelement.hxx"
 
+#include "simbuildingelementassembly.hxx"
+
 #include "simdistributioncontrolelement.hxx"
 
 #include "simdistributionelement.hxx"
@@ -388,10 +390,6 @@ namespace schema
 
 #include "simgroup_outputrequestlist_variables.hxx"
 
-#include "simgroup_refrigeration.hxx"
-
-#include "simgroup_refrigeration_chillerset.hxx"
-
 #include "simgroup_schemelist.hxx"
 
 #include "simgroup_schemelist_airloopavailabilitymgrscheme.hxx"
@@ -484,11 +482,11 @@ namespace schema
 
 #include "mixeditem.hxx"
 
-#include "selectedpropertygroups.hxx"
-
 #include "simgroup_slabinnodenameforsurf_1_10.hxx"
 
 #include "simgroup_slaboutnodenamesurf_1_10.hxx"
+
+#include "selectedpropertygroups.hxx"
 
 #include "value.hxx"
 
@@ -1075,285 +1073,6 @@ namespace schema
       // Parse a URI or a local file.
       //
 
-      ::std::auto_ptr< ::xml_schema::idref >
-      DefaultForProject (const ::std::string& uri,
-                         ::xml_schema::flags f = 0,
-                         const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      ::std::auto_ptr< ::xml_schema::idref >
-      DefaultForProject (const ::std::string& uri,
-                         ::xml_schema::error_handler& eh,
-                         ::xml_schema::flags f = 0,
-                         const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      ::std::auto_ptr< ::xml_schema::idref >
-      DefaultForProject (const ::std::string& uri,
-                         ::xercesc::DOMErrorHandler& eh,
-                         ::xml_schema::flags f = 0,
-                         const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      // Parse std::istream.
-      //
-
-      ::std::auto_ptr< ::xml_schema::idref >
-      DefaultForProject (::std::istream& is,
-                         ::xml_schema::flags f = 0,
-                         const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      ::std::auto_ptr< ::xml_schema::idref >
-      DefaultForProject (::std::istream& is,
-                         ::xml_schema::error_handler& eh,
-                         ::xml_schema::flags f = 0,
-                         const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      ::std::auto_ptr< ::xml_schema::idref >
-      DefaultForProject (::std::istream& is,
-                         ::xercesc::DOMErrorHandler& eh,
-                         ::xml_schema::flags f = 0,
-                         const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      ::std::auto_ptr< ::xml_schema::idref >
-      DefaultForProject (::std::istream& is,
-                         const ::std::string& id,
-                         ::xml_schema::flags f = 0,
-                         const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      ::std::auto_ptr< ::xml_schema::idref >
-      DefaultForProject (::std::istream& is,
-                         const ::std::string& id,
-                         ::xml_schema::error_handler& eh,
-                         ::xml_schema::flags f = 0,
-                         const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      ::std::auto_ptr< ::xml_schema::idref >
-      DefaultForProject (::std::istream& is,
-                         const ::std::string& id,
-                         ::xercesc::DOMErrorHandler& eh,
-                         ::xml_schema::flags f = 0,
-                         const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      // Parse xercesc::InputSource.
-      //
-
-      ::std::auto_ptr< ::xml_schema::idref >
-      DefaultForProject (::xercesc::InputSource& is,
-                         ::xml_schema::flags f = 0,
-                         const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      ::std::auto_ptr< ::xml_schema::idref >
-      DefaultForProject (::xercesc::InputSource& is,
-                         ::xml_schema::error_handler& eh,
-                         ::xml_schema::flags f = 0,
-                         const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      ::std::auto_ptr< ::xml_schema::idref >
-      DefaultForProject (::xercesc::InputSource& is,
-                         ::xercesc::DOMErrorHandler& eh,
-                         ::xml_schema::flags f = 0,
-                         const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      // Parse xercesc::DOMDocument.
-      //
-
-      ::std::auto_ptr< ::xml_schema::idref >
-      DefaultForProject (const ::xercesc::DOMDocument& d,
-                         ::xml_schema::flags f = 0,
-                         const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      ::std::auto_ptr< ::xml_schema::idref >
-      DefaultForProject (::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d,
-                         ::xml_schema::flags f = 0,
-                         const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      // Parse a URI or a local file.
-      //
-
-      ::std::auto_ptr< ::xml_schema::idref >
-      DefaultForPerson (const ::std::string& uri,
-                        ::xml_schema::flags f = 0,
-                        const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      ::std::auto_ptr< ::xml_schema::idref >
-      DefaultForPerson (const ::std::string& uri,
-                        ::xml_schema::error_handler& eh,
-                        ::xml_schema::flags f = 0,
-                        const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      ::std::auto_ptr< ::xml_schema::idref >
-      DefaultForPerson (const ::std::string& uri,
-                        ::xercesc::DOMErrorHandler& eh,
-                        ::xml_schema::flags f = 0,
-                        const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      // Parse std::istream.
-      //
-
-      ::std::auto_ptr< ::xml_schema::idref >
-      DefaultForPerson (::std::istream& is,
-                        ::xml_schema::flags f = 0,
-                        const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      ::std::auto_ptr< ::xml_schema::idref >
-      DefaultForPerson (::std::istream& is,
-                        ::xml_schema::error_handler& eh,
-                        ::xml_schema::flags f = 0,
-                        const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      ::std::auto_ptr< ::xml_schema::idref >
-      DefaultForPerson (::std::istream& is,
-                        ::xercesc::DOMErrorHandler& eh,
-                        ::xml_schema::flags f = 0,
-                        const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      ::std::auto_ptr< ::xml_schema::idref >
-      DefaultForPerson (::std::istream& is,
-                        const ::std::string& id,
-                        ::xml_schema::flags f = 0,
-                        const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      ::std::auto_ptr< ::xml_schema::idref >
-      DefaultForPerson (::std::istream& is,
-                        const ::std::string& id,
-                        ::xml_schema::error_handler& eh,
-                        ::xml_schema::flags f = 0,
-                        const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      ::std::auto_ptr< ::xml_schema::idref >
-      DefaultForPerson (::std::istream& is,
-                        const ::std::string& id,
-                        ::xercesc::DOMErrorHandler& eh,
-                        ::xml_schema::flags f = 0,
-                        const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      // Parse xercesc::InputSource.
-      //
-
-      ::std::auto_ptr< ::xml_schema::idref >
-      DefaultForPerson (::xercesc::InputSource& is,
-                        ::xml_schema::flags f = 0,
-                        const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      ::std::auto_ptr< ::xml_schema::idref >
-      DefaultForPerson (::xercesc::InputSource& is,
-                        ::xml_schema::error_handler& eh,
-                        ::xml_schema::flags f = 0,
-                        const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      ::std::auto_ptr< ::xml_schema::idref >
-      DefaultForPerson (::xercesc::InputSource& is,
-                        ::xercesc::DOMErrorHandler& eh,
-                        ::xml_schema::flags f = 0,
-                        const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      // Parse xercesc::DOMDocument.
-      //
-
-      ::std::auto_ptr< ::xml_schema::idref >
-      DefaultForPerson (const ::xercesc::DOMDocument& d,
-                        ::xml_schema::flags f = 0,
-                        const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      ::std::auto_ptr< ::xml_schema::idref >
-      DefaultForPerson (::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d,
-                        ::xml_schema::flags f = 0,
-                        const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      // Parse a URI or a local file.
-      //
-
-      ::std::auto_ptr< ::xml_schema::string >
-      DefaultForUnitSystem (const ::std::string& uri,
-                            ::xml_schema::flags f = 0,
-                            const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      ::std::auto_ptr< ::xml_schema::string >
-      DefaultForUnitSystem (const ::std::string& uri,
-                            ::xml_schema::error_handler& eh,
-                            ::xml_schema::flags f = 0,
-                            const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      ::std::auto_ptr< ::xml_schema::string >
-      DefaultForUnitSystem (const ::std::string& uri,
-                            ::xercesc::DOMErrorHandler& eh,
-                            ::xml_schema::flags f = 0,
-                            const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      // Parse std::istream.
-      //
-
-      ::std::auto_ptr< ::xml_schema::string >
-      DefaultForUnitSystem (::std::istream& is,
-                            ::xml_schema::flags f = 0,
-                            const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      ::std::auto_ptr< ::xml_schema::string >
-      DefaultForUnitSystem (::std::istream& is,
-                            ::xml_schema::error_handler& eh,
-                            ::xml_schema::flags f = 0,
-                            const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      ::std::auto_ptr< ::xml_schema::string >
-      DefaultForUnitSystem (::std::istream& is,
-                            ::xercesc::DOMErrorHandler& eh,
-                            ::xml_schema::flags f = 0,
-                            const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      ::std::auto_ptr< ::xml_schema::string >
-      DefaultForUnitSystem (::std::istream& is,
-                            const ::std::string& id,
-                            ::xml_schema::flags f = 0,
-                            const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      ::std::auto_ptr< ::xml_schema::string >
-      DefaultForUnitSystem (::std::istream& is,
-                            const ::std::string& id,
-                            ::xml_schema::error_handler& eh,
-                            ::xml_schema::flags f = 0,
-                            const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      ::std::auto_ptr< ::xml_schema::string >
-      DefaultForUnitSystem (::std::istream& is,
-                            const ::std::string& id,
-                            ::xercesc::DOMErrorHandler& eh,
-                            ::xml_schema::flags f = 0,
-                            const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      // Parse xercesc::InputSource.
-      //
-
-      ::std::auto_ptr< ::xml_schema::string >
-      DefaultForUnitSystem (::xercesc::InputSource& is,
-                            ::xml_schema::flags f = 0,
-                            const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      ::std::auto_ptr< ::xml_schema::string >
-      DefaultForUnitSystem (::xercesc::InputSource& is,
-                            ::xml_schema::error_handler& eh,
-                            ::xml_schema::flags f = 0,
-                            const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      ::std::auto_ptr< ::xml_schema::string >
-      DefaultForUnitSystem (::xercesc::InputSource& is,
-                            ::xercesc::DOMErrorHandler& eh,
-                            ::xml_schema::flags f = 0,
-                            const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      // Parse xercesc::DOMDocument.
-      //
-
-      ::std::auto_ptr< ::xml_schema::string >
-      DefaultForUnitSystem (const ::xercesc::DOMDocument& d,
-                            ::xml_schema::flags f = 0,
-                            const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      ::std::auto_ptr< ::xml_schema::string >
-      DefaultForUnitSystem (::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d,
-                            ::xml_schema::flags f = 0,
-                            const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      // Parse a URI or a local file.
-      //
-
       ::std::auto_ptr< ::xml_schema::int_ >
       ObjectIndex (const ::std::string& uri,
                    ::xml_schema::flags f = 0,
@@ -1908,6 +1627,99 @@ namespace schema
       LocalPlacementZ (::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d,
                        ::xml_schema::flags f = 0,
                        const ::xml_schema::properties& p = ::xml_schema::properties ());
+
+      // Parse a URI or a local file.
+      //
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
+      LocalPlacementCoordinates (const ::std::string& uri,
+                                 ::xml_schema::flags f = 0,
+                                 const ::xml_schema::properties& p = ::xml_schema::properties ());
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
+      LocalPlacementCoordinates (const ::std::string& uri,
+                                 ::xml_schema::error_handler& eh,
+                                 ::xml_schema::flags f = 0,
+                                 const ::xml_schema::properties& p = ::xml_schema::properties ());
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
+      LocalPlacementCoordinates (const ::std::string& uri,
+                                 ::xercesc::DOMErrorHandler& eh,
+                                 ::xml_schema::flags f = 0,
+                                 const ::xml_schema::properties& p = ::xml_schema::properties ());
+
+      // Parse std::istream.
+      //
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
+      LocalPlacementCoordinates (::std::istream& is,
+                                 ::xml_schema::flags f = 0,
+                                 const ::xml_schema::properties& p = ::xml_schema::properties ());
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
+      LocalPlacementCoordinates (::std::istream& is,
+                                 ::xml_schema::error_handler& eh,
+                                 ::xml_schema::flags f = 0,
+                                 const ::xml_schema::properties& p = ::xml_schema::properties ());
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
+      LocalPlacementCoordinates (::std::istream& is,
+                                 ::xercesc::DOMErrorHandler& eh,
+                                 ::xml_schema::flags f = 0,
+                                 const ::xml_schema::properties& p = ::xml_schema::properties ());
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
+      LocalPlacementCoordinates (::std::istream& is,
+                                 const ::std::string& id,
+                                 ::xml_schema::flags f = 0,
+                                 const ::xml_schema::properties& p = ::xml_schema::properties ());
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
+      LocalPlacementCoordinates (::std::istream& is,
+                                 const ::std::string& id,
+                                 ::xml_schema::error_handler& eh,
+                                 ::xml_schema::flags f = 0,
+                                 const ::xml_schema::properties& p = ::xml_schema::properties ());
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
+      LocalPlacementCoordinates (::std::istream& is,
+                                 const ::std::string& id,
+                                 ::xercesc::DOMErrorHandler& eh,
+                                 ::xml_schema::flags f = 0,
+                                 const ::xml_schema::properties& p = ::xml_schema::properties ());
+
+      // Parse xercesc::InputSource.
+      //
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
+      LocalPlacementCoordinates (::xercesc::InputSource& is,
+                                 ::xml_schema::flags f = 0,
+                                 const ::xml_schema::properties& p = ::xml_schema::properties ());
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
+      LocalPlacementCoordinates (::xercesc::InputSource& is,
+                                 ::xml_schema::error_handler& eh,
+                                 ::xml_schema::flags f = 0,
+                                 const ::xml_schema::properties& p = ::xml_schema::properties ());
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
+      LocalPlacementCoordinates (::xercesc::InputSource& is,
+                                 ::xercesc::DOMErrorHandler& eh,
+                                 ::xml_schema::flags f = 0,
+                                 const ::xml_schema::properties& p = ::xml_schema::properties ());
+
+      // Parse xercesc::DOMDocument.
+      //
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
+      LocalPlacementCoordinates (const ::xercesc::DOMDocument& d,
+                                 ::xml_schema::flags f = 0,
+                                 const ::xml_schema::properties& p = ::xml_schema::properties ());
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
+      LocalPlacementCoordinates (::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d,
+                                 ::xml_schema::flags f = 0,
+                                 const ::xml_schema::properties& p = ::xml_schema::properties ());
 
       // Parse a URI or a local file.
       //
@@ -3396,99 +3208,6 @@ namespace schema
       Tag (::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d,
            ::xml_schema::flags f = 0,
            const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      // Parse a URI or a local file.
-      //
-
-      ::std::auto_ptr< ::schema::simxml::SimModelCore::SelectedPropertyGroups >
-      SelectedPropertyGroups_ (const ::std::string& uri,
-                               ::xml_schema::flags f = 0,
-                               const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      ::std::auto_ptr< ::schema::simxml::SimModelCore::SelectedPropertyGroups >
-      SelectedPropertyGroups_ (const ::std::string& uri,
-                               ::xml_schema::error_handler& eh,
-                               ::xml_schema::flags f = 0,
-                               const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      ::std::auto_ptr< ::schema::simxml::SimModelCore::SelectedPropertyGroups >
-      SelectedPropertyGroups_ (const ::std::string& uri,
-                               ::xercesc::DOMErrorHandler& eh,
-                               ::xml_schema::flags f = 0,
-                               const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      // Parse std::istream.
-      //
-
-      ::std::auto_ptr< ::schema::simxml::SimModelCore::SelectedPropertyGroups >
-      SelectedPropertyGroups_ (::std::istream& is,
-                               ::xml_schema::flags f = 0,
-                               const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      ::std::auto_ptr< ::schema::simxml::SimModelCore::SelectedPropertyGroups >
-      SelectedPropertyGroups_ (::std::istream& is,
-                               ::xml_schema::error_handler& eh,
-                               ::xml_schema::flags f = 0,
-                               const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      ::std::auto_ptr< ::schema::simxml::SimModelCore::SelectedPropertyGroups >
-      SelectedPropertyGroups_ (::std::istream& is,
-                               ::xercesc::DOMErrorHandler& eh,
-                               ::xml_schema::flags f = 0,
-                               const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      ::std::auto_ptr< ::schema::simxml::SimModelCore::SelectedPropertyGroups >
-      SelectedPropertyGroups_ (::std::istream& is,
-                               const ::std::string& id,
-                               ::xml_schema::flags f = 0,
-                               const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      ::std::auto_ptr< ::schema::simxml::SimModelCore::SelectedPropertyGroups >
-      SelectedPropertyGroups_ (::std::istream& is,
-                               const ::std::string& id,
-                               ::xml_schema::error_handler& eh,
-                               ::xml_schema::flags f = 0,
-                               const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      ::std::auto_ptr< ::schema::simxml::SimModelCore::SelectedPropertyGroups >
-      SelectedPropertyGroups_ (::std::istream& is,
-                               const ::std::string& id,
-                               ::xercesc::DOMErrorHandler& eh,
-                               ::xml_schema::flags f = 0,
-                               const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      // Parse xercesc::InputSource.
-      //
-
-      ::std::auto_ptr< ::schema::simxml::SimModelCore::SelectedPropertyGroups >
-      SelectedPropertyGroups_ (::xercesc::InputSource& is,
-                               ::xml_schema::flags f = 0,
-                               const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      ::std::auto_ptr< ::schema::simxml::SimModelCore::SelectedPropertyGroups >
-      SelectedPropertyGroups_ (::xercesc::InputSource& is,
-                               ::xml_schema::error_handler& eh,
-                               ::xml_schema::flags f = 0,
-                               const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      ::std::auto_ptr< ::schema::simxml::SimModelCore::SelectedPropertyGroups >
-      SelectedPropertyGroups_ (::xercesc::InputSource& is,
-                               ::xercesc::DOMErrorHandler& eh,
-                               ::xml_schema::flags f = 0,
-                               const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      // Parse xercesc::DOMDocument.
-      //
-
-      ::std::auto_ptr< ::schema::simxml::SimModelCore::SelectedPropertyGroups >
-      SelectedPropertyGroups_ (const ::xercesc::DOMDocument& d,
-                               ::xml_schema::flags f = 0,
-                               const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      ::std::auto_ptr< ::schema::simxml::SimModelCore::SelectedPropertyGroups >
-      SelectedPropertyGroups_ (::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d,
-                               ::xml_schema::flags f = 0,
-                               const ::xml_schema::properties& p = ::xml_schema::properties ());
 
       // Parse a URI or a local file.
       //
@@ -5818,99 +5537,6 @@ namespace schema
       // Parse a URI or a local file.
       //
 
-      ::std::auto_ptr< ::xml_schema::boolean >
-      IsTemplateObject (const ::std::string& uri,
-                        ::xml_schema::flags f = 0,
-                        const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      ::std::auto_ptr< ::xml_schema::boolean >
-      IsTemplateObject (const ::std::string& uri,
-                        ::xml_schema::error_handler& eh,
-                        ::xml_schema::flags f = 0,
-                        const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      ::std::auto_ptr< ::xml_schema::boolean >
-      IsTemplateObject (const ::std::string& uri,
-                        ::xercesc::DOMErrorHandler& eh,
-                        ::xml_schema::flags f = 0,
-                        const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      // Parse std::istream.
-      //
-
-      ::std::auto_ptr< ::xml_schema::boolean >
-      IsTemplateObject (::std::istream& is,
-                        ::xml_schema::flags f = 0,
-                        const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      ::std::auto_ptr< ::xml_schema::boolean >
-      IsTemplateObject (::std::istream& is,
-                        ::xml_schema::error_handler& eh,
-                        ::xml_schema::flags f = 0,
-                        const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      ::std::auto_ptr< ::xml_schema::boolean >
-      IsTemplateObject (::std::istream& is,
-                        ::xercesc::DOMErrorHandler& eh,
-                        ::xml_schema::flags f = 0,
-                        const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      ::std::auto_ptr< ::xml_schema::boolean >
-      IsTemplateObject (::std::istream& is,
-                        const ::std::string& id,
-                        ::xml_schema::flags f = 0,
-                        const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      ::std::auto_ptr< ::xml_schema::boolean >
-      IsTemplateObject (::std::istream& is,
-                        const ::std::string& id,
-                        ::xml_schema::error_handler& eh,
-                        ::xml_schema::flags f = 0,
-                        const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      ::std::auto_ptr< ::xml_schema::boolean >
-      IsTemplateObject (::std::istream& is,
-                        const ::std::string& id,
-                        ::xercesc::DOMErrorHandler& eh,
-                        ::xml_schema::flags f = 0,
-                        const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      // Parse xercesc::InputSource.
-      //
-
-      ::std::auto_ptr< ::xml_schema::boolean >
-      IsTemplateObject (::xercesc::InputSource& is,
-                        ::xml_schema::flags f = 0,
-                        const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      ::std::auto_ptr< ::xml_schema::boolean >
-      IsTemplateObject (::xercesc::InputSource& is,
-                        ::xml_schema::error_handler& eh,
-                        ::xml_schema::flags f = 0,
-                        const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      ::std::auto_ptr< ::xml_schema::boolean >
-      IsTemplateObject (::xercesc::InputSource& is,
-                        ::xercesc::DOMErrorHandler& eh,
-                        ::xml_schema::flags f = 0,
-                        const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      // Parse xercesc::DOMDocument.
-      //
-
-      ::std::auto_ptr< ::xml_schema::boolean >
-      IsTemplateObject (const ::xercesc::DOMDocument& d,
-                        ::xml_schema::flags f = 0,
-                        const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      ::std::auto_ptr< ::xml_schema::boolean >
-      IsTemplateObject (::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d,
-                        ::xml_schema::flags f = 0,
-                        const ::xml_schema::properties& p = ::xml_schema::properties ());
-
-      // Parse a URI or a local file.
-      //
-
       ::std::auto_ptr< ::xml_schema::idref >
       Decomposes (const ::std::string& uri,
                   ::xml_schema::flags f = 0,
@@ -6000,6 +5626,192 @@ namespace schema
       Decomposes (::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d,
                   ::xml_schema::flags f = 0,
                   const ::xml_schema::properties& p = ::xml_schema::properties ());
+
+      // Parse a URI or a local file.
+      //
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::SelectedPropertyGroups >
+      SelectedPropertyGroups_ (const ::std::string& uri,
+                               ::xml_schema::flags f = 0,
+                               const ::xml_schema::properties& p = ::xml_schema::properties ());
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::SelectedPropertyGroups >
+      SelectedPropertyGroups_ (const ::std::string& uri,
+                               ::xml_schema::error_handler& eh,
+                               ::xml_schema::flags f = 0,
+                               const ::xml_schema::properties& p = ::xml_schema::properties ());
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::SelectedPropertyGroups >
+      SelectedPropertyGroups_ (const ::std::string& uri,
+                               ::xercesc::DOMErrorHandler& eh,
+                               ::xml_schema::flags f = 0,
+                               const ::xml_schema::properties& p = ::xml_schema::properties ());
+
+      // Parse std::istream.
+      //
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::SelectedPropertyGroups >
+      SelectedPropertyGroups_ (::std::istream& is,
+                               ::xml_schema::flags f = 0,
+                               const ::xml_schema::properties& p = ::xml_schema::properties ());
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::SelectedPropertyGroups >
+      SelectedPropertyGroups_ (::std::istream& is,
+                               ::xml_schema::error_handler& eh,
+                               ::xml_schema::flags f = 0,
+                               const ::xml_schema::properties& p = ::xml_schema::properties ());
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::SelectedPropertyGroups >
+      SelectedPropertyGroups_ (::std::istream& is,
+                               ::xercesc::DOMErrorHandler& eh,
+                               ::xml_schema::flags f = 0,
+                               const ::xml_schema::properties& p = ::xml_schema::properties ());
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::SelectedPropertyGroups >
+      SelectedPropertyGroups_ (::std::istream& is,
+                               const ::std::string& id,
+                               ::xml_schema::flags f = 0,
+                               const ::xml_schema::properties& p = ::xml_schema::properties ());
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::SelectedPropertyGroups >
+      SelectedPropertyGroups_ (::std::istream& is,
+                               const ::std::string& id,
+                               ::xml_schema::error_handler& eh,
+                               ::xml_schema::flags f = 0,
+                               const ::xml_schema::properties& p = ::xml_schema::properties ());
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::SelectedPropertyGroups >
+      SelectedPropertyGroups_ (::std::istream& is,
+                               const ::std::string& id,
+                               ::xercesc::DOMErrorHandler& eh,
+                               ::xml_schema::flags f = 0,
+                               const ::xml_schema::properties& p = ::xml_schema::properties ());
+
+      // Parse xercesc::InputSource.
+      //
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::SelectedPropertyGroups >
+      SelectedPropertyGroups_ (::xercesc::InputSource& is,
+                               ::xml_schema::flags f = 0,
+                               const ::xml_schema::properties& p = ::xml_schema::properties ());
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::SelectedPropertyGroups >
+      SelectedPropertyGroups_ (::xercesc::InputSource& is,
+                               ::xml_schema::error_handler& eh,
+                               ::xml_schema::flags f = 0,
+                               const ::xml_schema::properties& p = ::xml_schema::properties ());
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::SelectedPropertyGroups >
+      SelectedPropertyGroups_ (::xercesc::InputSource& is,
+                               ::xercesc::DOMErrorHandler& eh,
+                               ::xml_schema::flags f = 0,
+                               const ::xml_schema::properties& p = ::xml_schema::properties ());
+
+      // Parse xercesc::DOMDocument.
+      //
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::SelectedPropertyGroups >
+      SelectedPropertyGroups_ (const ::xercesc::DOMDocument& d,
+                               ::xml_schema::flags f = 0,
+                               const ::xml_schema::properties& p = ::xml_schema::properties ());
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::SelectedPropertyGroups >
+      SelectedPropertyGroups_ (::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d,
+                               ::xml_schema::flags f = 0,
+                               const ::xml_schema::properties& p = ::xml_schema::properties ());
+
+      // Parse a URI or a local file.
+      //
+
+      ::std::auto_ptr< ::xml_schema::boolean >
+      IsTemplateObject (const ::std::string& uri,
+                        ::xml_schema::flags f = 0,
+                        const ::xml_schema::properties& p = ::xml_schema::properties ());
+
+      ::std::auto_ptr< ::xml_schema::boolean >
+      IsTemplateObject (const ::std::string& uri,
+                        ::xml_schema::error_handler& eh,
+                        ::xml_schema::flags f = 0,
+                        const ::xml_schema::properties& p = ::xml_schema::properties ());
+
+      ::std::auto_ptr< ::xml_schema::boolean >
+      IsTemplateObject (const ::std::string& uri,
+                        ::xercesc::DOMErrorHandler& eh,
+                        ::xml_schema::flags f = 0,
+                        const ::xml_schema::properties& p = ::xml_schema::properties ());
+
+      // Parse std::istream.
+      //
+
+      ::std::auto_ptr< ::xml_schema::boolean >
+      IsTemplateObject (::std::istream& is,
+                        ::xml_schema::flags f = 0,
+                        const ::xml_schema::properties& p = ::xml_schema::properties ());
+
+      ::std::auto_ptr< ::xml_schema::boolean >
+      IsTemplateObject (::std::istream& is,
+                        ::xml_schema::error_handler& eh,
+                        ::xml_schema::flags f = 0,
+                        const ::xml_schema::properties& p = ::xml_schema::properties ());
+
+      ::std::auto_ptr< ::xml_schema::boolean >
+      IsTemplateObject (::std::istream& is,
+                        ::xercesc::DOMErrorHandler& eh,
+                        ::xml_schema::flags f = 0,
+                        const ::xml_schema::properties& p = ::xml_schema::properties ());
+
+      ::std::auto_ptr< ::xml_schema::boolean >
+      IsTemplateObject (::std::istream& is,
+                        const ::std::string& id,
+                        ::xml_schema::flags f = 0,
+                        const ::xml_schema::properties& p = ::xml_schema::properties ());
+
+      ::std::auto_ptr< ::xml_schema::boolean >
+      IsTemplateObject (::std::istream& is,
+                        const ::std::string& id,
+                        ::xml_schema::error_handler& eh,
+                        ::xml_schema::flags f = 0,
+                        const ::xml_schema::properties& p = ::xml_schema::properties ());
+
+      ::std::auto_ptr< ::xml_schema::boolean >
+      IsTemplateObject (::std::istream& is,
+                        const ::std::string& id,
+                        ::xercesc::DOMErrorHandler& eh,
+                        ::xml_schema::flags f = 0,
+                        const ::xml_schema::properties& p = ::xml_schema::properties ());
+
+      // Parse xercesc::InputSource.
+      //
+
+      ::std::auto_ptr< ::xml_schema::boolean >
+      IsTemplateObject (::xercesc::InputSource& is,
+                        ::xml_schema::flags f = 0,
+                        const ::xml_schema::properties& p = ::xml_schema::properties ());
+
+      ::std::auto_ptr< ::xml_schema::boolean >
+      IsTemplateObject (::xercesc::InputSource& is,
+                        ::xml_schema::error_handler& eh,
+                        ::xml_schema::flags f = 0,
+                        const ::xml_schema::properties& p = ::xml_schema::properties ());
+
+      ::std::auto_ptr< ::xml_schema::boolean >
+      IsTemplateObject (::xercesc::InputSource& is,
+                        ::xercesc::DOMErrorHandler& eh,
+                        ::xml_schema::flags f = 0,
+                        const ::xml_schema::properties& p = ::xml_schema::properties ());
+
+      // Parse xercesc::DOMDocument.
+      //
+
+      ::std::auto_ptr< ::xml_schema::boolean >
+      IsTemplateObject (const ::xercesc::DOMDocument& d,
+                        ::xml_schema::flags f = 0,
+                        const ::xml_schema::properties& p = ::xml_schema::properties ());
+
+      ::std::auto_ptr< ::xml_schema::boolean >
+      IsTemplateObject (::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d,
+                        ::xml_schema::flags f = 0,
+                        const ::xml_schema::properties& p = ::xml_schema::properties ());
 
       // Parse a URI or a local file.
       //

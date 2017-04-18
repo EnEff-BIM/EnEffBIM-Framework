@@ -40,6 +40,8 @@
 
 #include "SimPersonAndOrganization.hxx"
 
+#include "personsrolesinorganization.hxx"
+
 namespace schema
 {
   namespace simxml
@@ -109,34 +111,64 @@ namespace schema
         this->TheOrganization_.set (x);
       }
 
-      const SimPersonAndOrganization::Roles_optional& SimPersonAndOrganization::
-      Roles () const
+      const SimPersonAndOrganization::ActorPersonAndOrganization_optional& SimPersonAndOrganization::
+      ActorPersonAndOrganization () const
       {
-        return this->Roles_;
+        return this->ActorPersonAndOrganization_;
       }
 
-      SimPersonAndOrganization::Roles_optional& SimPersonAndOrganization::
-      Roles ()
+      SimPersonAndOrganization::ActorPersonAndOrganization_optional& SimPersonAndOrganization::
+      ActorPersonAndOrganization ()
       {
-        return this->Roles_;
-      }
-
-      void SimPersonAndOrganization::
-      Roles (const Roles_type& x)
-      {
-        this->Roles_.set (x);
+        return this->ActorPersonAndOrganization_;
       }
 
       void SimPersonAndOrganization::
-      Roles (const Roles_optional& x)
+      ActorPersonAndOrganization (const ActorPersonAndOrganization_type& x)
       {
-        this->Roles_ = x;
+        this->ActorPersonAndOrganization_.set (x);
       }
 
       void SimPersonAndOrganization::
-      Roles (::std::auto_ptr< Roles_type > x)
+      ActorPersonAndOrganization (const ActorPersonAndOrganization_optional& x)
       {
-        this->Roles_.set (x);
+        this->ActorPersonAndOrganization_ = x;
+      }
+
+      void SimPersonAndOrganization::
+      ActorPersonAndOrganization (::std::auto_ptr< ActorPersonAndOrganization_type > x)
+      {
+        this->ActorPersonAndOrganization_.set (x);
+      }
+
+      const SimPersonAndOrganization::PersonsRolesInOrganization_optional& SimPersonAndOrganization::
+      PersonsRolesInOrganization () const
+      {
+        return this->PersonsRolesInOrganization_;
+      }
+
+      SimPersonAndOrganization::PersonsRolesInOrganization_optional& SimPersonAndOrganization::
+      PersonsRolesInOrganization ()
+      {
+        return this->PersonsRolesInOrganization_;
+      }
+
+      void SimPersonAndOrganization::
+      PersonsRolesInOrganization (const PersonsRolesInOrganization_type& x)
+      {
+        this->PersonsRolesInOrganization_.set (x);
+      }
+
+      void SimPersonAndOrganization::
+      PersonsRolesInOrganization (const PersonsRolesInOrganization_optional& x)
+      {
+        this->PersonsRolesInOrganization_ = x;
+      }
+
+      void SimPersonAndOrganization::
+      PersonsRolesInOrganization (::std::auto_ptr< PersonsRolesInOrganization_type > x)
+      {
+        this->PersonsRolesInOrganization_.set (x);
       }
     }
   }
@@ -167,7 +199,8 @@ namespace schema
       : ::schema::simxml::SimModelCore::SimActorDefinition (),
         ThePerson_ (this),
         TheOrganization_ (this),
-        Roles_ (this)
+        ActorPersonAndOrganization_ (this),
+        PersonsRolesInOrganization_ (this)
       {
       }
 
@@ -176,7 +209,8 @@ namespace schema
       : ::schema::simxml::SimModelCore::SimActorDefinition (RefId),
         ThePerson_ (this),
         TheOrganization_ (this),
-        Roles_ (this)
+        ActorPersonAndOrganization_ (this),
+        PersonsRolesInOrganization_ (this)
       {
       }
 
@@ -187,7 +221,8 @@ namespace schema
       : ::schema::simxml::SimModelCore::SimActorDefinition (x, f, c),
         ThePerson_ (x.ThePerson_, f, this),
         TheOrganization_ (x.TheOrganization_, f, this),
-        Roles_ (x.Roles_, f, this)
+        ActorPersonAndOrganization_ (x.ActorPersonAndOrganization_, f, this),
+        PersonsRolesInOrganization_ (x.PersonsRolesInOrganization_, f, this)
       {
       }
 
@@ -198,7 +233,8 @@ namespace schema
       : ::schema::simxml::SimModelCore::SimActorDefinition (e, f | ::xml_schema::flags::base, c),
         ThePerson_ (this),
         TheOrganization_ (this),
-        Roles_ (this)
+        ActorPersonAndOrganization_ (this),
+        PersonsRolesInOrganization_ (this)
       {
         if ((f & ::xml_schema::flags::base) == 0)
         {
@@ -247,16 +283,30 @@ namespace schema
             }
           }
 
-          // Roles
+          // ActorPersonAndOrganization
           //
-          if (n.name () == "Roles" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/ResourcesGeneral")
+          if (n.name () == "ActorPersonAndOrganization" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/ResourcesGeneral")
           {
-            ::std::auto_ptr< Roles_type > r (
-              Roles_traits::create (i, f, this));
+            ::std::auto_ptr< ActorPersonAndOrganization_type > r (
+              ActorPersonAndOrganization_traits::create (i, f, this));
 
-            if (!this->Roles_)
+            if (!this->ActorPersonAndOrganization_)
             {
-              this->Roles_.set (r);
+              this->ActorPersonAndOrganization_.set (r);
+              continue;
+            }
+          }
+
+          // PersonsRolesInOrganization
+          //
+          if (n.name () == "PersonsRolesInOrganization" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/ResourcesGeneral")
+          {
+            ::std::auto_ptr< PersonsRolesInOrganization_type > r (
+              PersonsRolesInOrganization_traits::create (i, f, this));
+
+            if (!this->PersonsRolesInOrganization_)
+            {
+              this->PersonsRolesInOrganization_.set (r);
               continue;
             }
           }
@@ -280,7 +330,8 @@ namespace schema
           static_cast< ::schema::simxml::SimModelCore::SimActorDefinition& > (*this) = x;
           this->ThePerson_ = x.ThePerson_;
           this->TheOrganization_ = x.TheOrganization_;
-          this->Roles_ = x.Roles_;
+          this->ActorPersonAndOrganization_ = x.ActorPersonAndOrganization_;
+          this->PersonsRolesInOrganization_ = x.PersonsRolesInOrganization_;
         }
 
         return *this;

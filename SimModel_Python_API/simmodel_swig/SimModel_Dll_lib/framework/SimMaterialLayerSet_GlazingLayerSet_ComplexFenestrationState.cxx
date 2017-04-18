@@ -1119,52 +1119,28 @@ namespace schema
         this->T24FenestraTint_.set (x);
       }
 
-      const SimMaterialLayerSet_GlazingLayerSet_ComplexFenestrationState::GreenhouseGardenWindow_optional& SimMaterialLayerSet_GlazingLayerSet_ComplexFenestrationState::
-      GreenhouseGardenWindow () const
+      const SimMaterialLayerSet_GlazingLayerSet_ComplexFenestrationState::T24GreenhouseGardenWindow_optional& SimMaterialLayerSet_GlazingLayerSet_ComplexFenestrationState::
+      T24GreenhouseGardenWindow () const
       {
-        return this->GreenhouseGardenWindow_;
+        return this->T24GreenhouseGardenWindow_;
       }
 
-      SimMaterialLayerSet_GlazingLayerSet_ComplexFenestrationState::GreenhouseGardenWindow_optional& SimMaterialLayerSet_GlazingLayerSet_ComplexFenestrationState::
-      GreenhouseGardenWindow ()
+      SimMaterialLayerSet_GlazingLayerSet_ComplexFenestrationState::T24GreenhouseGardenWindow_optional& SimMaterialLayerSet_GlazingLayerSet_ComplexFenestrationState::
+      T24GreenhouseGardenWindow ()
       {
-        return this->GreenhouseGardenWindow_;
-      }
-
-      void SimMaterialLayerSet_GlazingLayerSet_ComplexFenestrationState::
-      GreenhouseGardenWindow (const GreenhouseGardenWindow_type& x)
-      {
-        this->GreenhouseGardenWindow_.set (x);
+        return this->T24GreenhouseGardenWindow_;
       }
 
       void SimMaterialLayerSet_GlazingLayerSet_ComplexFenestrationState::
-      GreenhouseGardenWindow (const GreenhouseGardenWindow_optional& x)
+      T24GreenhouseGardenWindow (const T24GreenhouseGardenWindow_type& x)
       {
-        this->GreenhouseGardenWindow_ = x;
-      }
-
-      const SimMaterialLayerSet_GlazingLayerSet_ComplexFenestrationState::T24SHGC_optional& SimMaterialLayerSet_GlazingLayerSet_ComplexFenestrationState::
-      T24SHGC () const
-      {
-        return this->T24SHGC_;
-      }
-
-      SimMaterialLayerSet_GlazingLayerSet_ComplexFenestrationState::T24SHGC_optional& SimMaterialLayerSet_GlazingLayerSet_ComplexFenestrationState::
-      T24SHGC ()
-      {
-        return this->T24SHGC_;
+        this->T24GreenhouseGardenWindow_.set (x);
       }
 
       void SimMaterialLayerSet_GlazingLayerSet_ComplexFenestrationState::
-      T24SHGC (const T24SHGC_type& x)
+      T24GreenhouseGardenWindow (const T24GreenhouseGardenWindow_optional& x)
       {
-        this->T24SHGC_.set (x);
-      }
-
-      void SimMaterialLayerSet_GlazingLayerSet_ComplexFenestrationState::
-      T24SHGC (const T24SHGC_optional& x)
-      {
-        this->T24SHGC_ = x;
+        this->T24GreenhouseGardenWindow_ = x;
       }
 
       const SimMaterialLayerSet_GlazingLayerSet_ComplexFenestrationState::T24SHGCCenterOfGlass_optional& SimMaterialLayerSet_GlazingLayerSet_ComplexFenestrationState::
@@ -1314,8 +1290,7 @@ namespace schema
         T24FenestraPanes_ (this),
         T24FenestraProdType_ (this),
         T24FenestraTint_ (this),
-        GreenhouseGardenWindow_ (this),
-        T24SHGC_ (this),
+        T24GreenhouseGardenWindow_ (this),
         T24SHGCCenterOfGlass_ (this),
         T24FenestraSkyltCurb_ (this),
         T24FenestraSkyltGlaze_ (this)
@@ -1362,8 +1337,7 @@ namespace schema
         T24FenestraPanes_ (this),
         T24FenestraProdType_ (this),
         T24FenestraTint_ (this),
-        GreenhouseGardenWindow_ (this),
-        T24SHGC_ (this),
+        T24GreenhouseGardenWindow_ (this),
         T24SHGCCenterOfGlass_ (this),
         T24FenestraSkyltCurb_ (this),
         T24FenestraSkyltGlaze_ (this)
@@ -1412,8 +1386,7 @@ namespace schema
         T24FenestraPanes_ (x.T24FenestraPanes_, f, this),
         T24FenestraProdType_ (x.T24FenestraProdType_, f, this),
         T24FenestraTint_ (x.T24FenestraTint_, f, this),
-        GreenhouseGardenWindow_ (x.GreenhouseGardenWindow_, f, this),
-        T24SHGC_ (x.T24SHGC_, f, this),
+        T24GreenhouseGardenWindow_ (x.T24GreenhouseGardenWindow_, f, this),
         T24SHGCCenterOfGlass_ (x.T24SHGCCenterOfGlass_, f, this),
         T24FenestraSkyltCurb_ (x.T24FenestraSkyltCurb_, f, this),
         T24FenestraSkyltGlaze_ (x.T24FenestraSkyltGlaze_, f, this)
@@ -1462,8 +1435,7 @@ namespace schema
         T24FenestraPanes_ (this),
         T24FenestraProdType_ (this),
         T24FenestraTint_ (this),
-        GreenhouseGardenWindow_ (this),
-        T24SHGC_ (this),
+        T24GreenhouseGardenWindow_ (this),
         T24SHGCCenterOfGlass_ (this),
         T24FenestraSkyltCurb_ (this),
         T24FenestraSkyltGlaze_ (this)
@@ -1984,24 +1956,13 @@ namespace schema
             }
           }
 
-          // GreenhouseGardenWindow
+          // T24GreenhouseGardenWindow
           //
-          if (n.name () == "GreenhouseGardenWindow" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/ResourcesGeneral")
+          if (n.name () == "T24GreenhouseGardenWindow" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/ResourcesGeneral")
           {
-            if (!this->GreenhouseGardenWindow_)
+            if (!this->T24GreenhouseGardenWindow_)
             {
-              this->GreenhouseGardenWindow_.set (GreenhouseGardenWindow_traits::create (i, f, this));
-              continue;
-            }
-          }
-
-          // T24SHGC
-          //
-          if (n.name () == "T24SHGC" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/ResourcesGeneral")
-          {
-            if (!this->T24SHGC_)
-            {
-              this->T24SHGC_.set (T24SHGC_traits::create (i, f, this));
+              this->T24GreenhouseGardenWindow_.set (T24GreenhouseGardenWindow_traits::create (i, f, this));
               continue;
             }
           }
@@ -2099,8 +2060,7 @@ namespace schema
           this->T24FenestraPanes_ = x.T24FenestraPanes_;
           this->T24FenestraProdType_ = x.T24FenestraProdType_;
           this->T24FenestraTint_ = x.T24FenestraTint_;
-          this->GreenhouseGardenWindow_ = x.GreenhouseGardenWindow_;
-          this->T24SHGC_ = x.T24SHGC_;
+          this->T24GreenhouseGardenWindow_ = x.T24GreenhouseGardenWindow_;
           this->T24SHGCCenterOfGlass_ = x.T24SHGCCenterOfGlass_;
           this->T24FenestraSkyltCurb_ = x.T24FenestraSkyltCurb_;
           this->T24FenestraSkyltGlaze_ = x.T24FenestraSkyltGlaze_;

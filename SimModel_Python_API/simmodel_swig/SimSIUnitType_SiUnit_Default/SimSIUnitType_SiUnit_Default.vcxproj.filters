@@ -25,6 +25,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="SimSIUnitType_SiUnit_Default.i" />
+    <CustomBuild Include="SimSIUnitType_SiUnit_Default.i" />
   </ItemGroup>
 </Project>

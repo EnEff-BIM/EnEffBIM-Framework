@@ -260,6 +260,27 @@ namespace schema
       class SimSiteAssembly_SiteAssembly_SolarPhotovoltaic: public ::schema::simxml::BuildingModel::SimSiteAssembly_SiteAssembly
       {
         public:
+        // PVSurface_Name
+        //
+        typedef ::xml_schema::string PVSurface_Name_type;
+        typedef ::xsd::cxx::tree::optional< PVSurface_Name_type > PVSurface_Name_optional;
+        typedef ::xsd::cxx::tree::traits< PVSurface_Name_type, char > PVSurface_Name_traits;
+
+        const PVSurface_Name_optional&
+        PVSurface_Name () const;
+
+        PVSurface_Name_optional&
+        PVSurface_Name ();
+
+        void
+        PVSurface_Name (const PVSurface_Name_type& x);
+
+        void
+        PVSurface_Name (const PVSurface_Name_optional& x);
+
+        void
+        PVSurface_Name (::std::auto_ptr< PVSurface_Name_type > p);
+
         // Constructors.
         //
         SimSiteAssembly_SiteAssembly_SolarPhotovoltaic ();
@@ -278,8 +299,21 @@ namespace schema
         _clone (::xml_schema::flags f = 0,
                 ::xml_schema::container* c = 0) const;
 
+        SimSiteAssembly_SiteAssembly_SolarPhotovoltaic&
+        operator= (const SimSiteAssembly_SiteAssembly_SolarPhotovoltaic& x);
+
         virtual 
         ~SimSiteAssembly_SiteAssembly_SolarPhotovoltaic ();
+
+        // Implementation.
+        //
+        protected:
+        void
+        parse (::xsd::cxx::xml::dom::parser< char >&,
+               ::xml_schema::flags);
+
+        protected:
+        PVSurface_Name_optional PVSurface_Name_;
       };
     }
   }

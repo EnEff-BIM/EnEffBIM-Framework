@@ -50,7 +50,7 @@
 #include <xsd/cxx/config.hxx>
 
 #if (XSD_INT_VERSION != 4000000L)
-#error XSD runtime version mismatch
+//#error XSD runtime version mismatch
 #endif
 
 #include <xsd/cxx/pre.hxx>
@@ -257,13 +257,13 @@ namespace schema
   {
     namespace ResourcesGeometry
     {
-      class SimPerformanceCurve: public ::schema::simxml::ResourcesGeometry::SimAnalyticalRepresentationItem
+      class __declspec(dllexport) SimPerformanceCurve: public ::schema::simxml::ResourcesGeometry::SimAnalyticalRepresentationItem
       {
         public:
         // SimPerfCurve_Name
         //
         typedef ::xml_schema::string SimPerfCurve_Name_type;
-        typedef ::xsd::cxx::tree::optional< SimPerfCurve_Name_type > SimPerfCurve_Name_optional;
+        typedef ::xsd::cxx::tree::optional< SimPerfCurve_Name_type, false > SimPerfCurve_Name_optional;
         typedef ::xsd::cxx::tree::traits< SimPerfCurve_Name_type, char > SimPerfCurve_Name_traits;
 
         const SimPerfCurve_Name_optional&

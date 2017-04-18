@@ -1219,6 +1219,30 @@ namespace schema
         this->T24ElecIgnit_ = x;
       }
 
+      const SimFlowEnergyTransferStorage_HotWaterTank_Mixed::T24PilotEnergy_optional& SimFlowEnergyTransferStorage_HotWaterTank_Mixed::
+      T24PilotEnergy () const
+      {
+        return this->T24PilotEnergy_;
+      }
+
+      SimFlowEnergyTransferStorage_HotWaterTank_Mixed::T24PilotEnergy_optional& SimFlowEnergyTransferStorage_HotWaterTank_Mixed::
+      T24PilotEnergy ()
+      {
+        return this->T24PilotEnergy_;
+      }
+
+      void SimFlowEnergyTransferStorage_HotWaterTank_Mixed::
+      T24PilotEnergy (const T24PilotEnergy_type& x)
+      {
+        this->T24PilotEnergy_.set (x);
+      }
+
+      void SimFlowEnergyTransferStorage_HotWaterTank_Mixed::
+      T24PilotEnergy (const T24PilotEnergy_optional& x)
+      {
+        this->T24PilotEnergy_ = x;
+      }
+
       const SimFlowEnergyTransferStorage_HotWaterTank_Mixed::T24RecEff_optional& SimFlowEnergyTransferStorage_HotWaterTank_Mixed::
       T24RecEff () const
       {
@@ -1397,6 +1421,7 @@ namespace schema
         T24DraftFanPwr_ (this),
         T24EnergyFactor_ (this),
         T24ElecIgnit_ (this),
+        T24PilotEnergy_ (this),
         T24RecEff_ (this),
         T24StdbyLossFrac_ (this),
         T24ConstructStatus2_ (this),
@@ -1451,6 +1476,7 @@ namespace schema
         T24DraftFanPwr_ (this),
         T24EnergyFactor_ (this),
         T24ElecIgnit_ (this),
+        T24PilotEnergy_ (this),
         T24RecEff_ (this),
         T24StdbyLossFrac_ (this),
         T24ConstructStatus2_ (this),
@@ -1507,6 +1533,7 @@ namespace schema
         T24DraftFanPwr_ (x.T24DraftFanPwr_, f, this),
         T24EnergyFactor_ (x.T24EnergyFactor_, f, this),
         T24ElecIgnit_ (x.T24ElecIgnit_, f, this),
+        T24PilotEnergy_ (x.T24PilotEnergy_, f, this),
         T24RecEff_ (x.T24RecEff_, f, this),
         T24StdbyLossFrac_ (x.T24StdbyLossFrac_, f, this),
         T24ConstructStatus2_ (x.T24ConstructStatus2_, f, this),
@@ -1563,6 +1590,7 @@ namespace schema
         T24DraftFanPwr_ (this),
         T24EnergyFactor_ (this),
         T24ElecIgnit_ (this),
+        T24PilotEnergy_ (this),
         T24RecEff_ (this),
         T24StdbyLossFrac_ (this),
         T24ConstructStatus2_ (this),
@@ -2128,6 +2156,17 @@ namespace schema
             }
           }
 
+          // T24PilotEnergy
+          //
+          if (n.name () == "T24PilotEnergy" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            if (!this->T24PilotEnergy_)
+            {
+              this->T24PilotEnergy_.set (T24PilotEnergy_traits::create (i, f, this));
+              continue;
+            }
+          }
+
           // T24RecEff
           //
           if (n.name () == "T24RecEff" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
@@ -2239,6 +2278,7 @@ namespace schema
           this->T24DraftFanPwr_ = x.T24DraftFanPwr_;
           this->T24EnergyFactor_ = x.T24EnergyFactor_;
           this->T24ElecIgnit_ = x.T24ElecIgnit_;
+          this->T24PilotEnergy_ = x.T24PilotEnergy_;
           this->T24RecEff_ = x.T24RecEff_;
           this->T24StdbyLossFrac_ = x.T24StdbyLossFrac_;
           this->T24ConstructStatus2_ = x.T24ConstructStatus2_;

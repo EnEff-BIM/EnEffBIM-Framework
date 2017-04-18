@@ -191,22 +191,26 @@ class SimModelBase(_object):
 SimModelBase_swigregister = _SimModel_Hierachy.SimModelBase_swigregister
 SimModelBase_swigregister(SimModelBase)
 
-class SimMaterialLayer2_10(_object):
+class SimMaterialLayer2_10(base.SimRoot):
     __swig_setmethods__ = {}
+    for _s in [base.SimRoot]:
+        __swig_setmethods__.update(getattr(_s, '__swig_setmethods__', {}))
     __setattr__ = lambda self, name, value: _swig_setattr(self, SimMaterialLayer2_10, name, value)
     __swig_getmethods__ = {}
+    for _s in [base.SimRoot]:
+        __swig_getmethods__.update(getattr(_s, '__swig_getmethods__', {}))
     __getattr__ = lambda self, name: _swig_getattr(self, SimMaterialLayer2_10, name)
     __repr__ = _swig_repr
 
-    def SimModelName(self):
-        return _SimModel_Hierachy.SimMaterialLayer2_10_SimModelName(self)
-
-    def __init__(self):
-        this = _SimModel_Hierachy.new_SimMaterialLayer2_10()
+    def __init__(self, *args):
+        this = _SimModel_Hierachy.new_SimMaterialLayer2_10(*args)
         try:
             self.this.append(this)
         except:
             self.this = this
+
+    def SimModelName(self):
+        return _SimModel_Hierachy.SimMaterialLayer2_10_SimModelName(self)
     __swig_destroy__ = _SimModel_Hierachy.delete_SimMaterialLayer2_10
     __del__ = lambda self: None
 SimMaterialLayer2_10_swigregister = _SimModel_Hierachy.SimMaterialLayer2_10_swigregister
@@ -225,6 +229,15 @@ class SimHierarchyNodeBase(_object):
 
     def dataType_SimProject_Project_DesignAlternative(self):
         return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimProject_Project_DesignAlternative(self)
+
+    def dataType_SimModelRepresentationContext_GeometricRepresentationContext_Default(self):
+        return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimModelRepresentationContext_GeometricRepresentationContext_Default(self)
+
+    def dataType_SimPlacement_Axis2Placement3D_Default(self):
+        return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimPlacement_Axis2Placement3D_Default(self)
+
+    def dataType_SimGeomVector_Vector_Direction(self):
+        return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimGeomVector_Vector_Direction(self)
 
     def dataType_SimSite_BuildingSite_Default(self):
         return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimSite_BuildingSite_Default(self)
@@ -258,6 +271,9 @@ class SimHierarchyNodeBase(_object):
 
     def dataType_SimWall_Wall_ExteriorAboveGrade(self):
         return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimWall_Wall_ExteriorAboveGrade(self)
+
+    def dataType_SimWall_Wall_Interior(self):
+        return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimWall_Wall_Interior(self)
 
     def dataType_SimWindow_Window_Exterior(self):
         return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimWindow_Window_Exterior(self)
@@ -301,8 +317,14 @@ class SimHierarchyNodeBase(_object):
     def dataType_SimMaterial_GlazingMaterial_Glazing(self):
         return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimMaterial_GlazingMaterial_Glazing(self)
 
+    def dataType_SimMaterial_Default_Default(self):
+        return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimMaterial_Default_Default(self)
+
     def dataType_SimSlab_Default_Default(self):
         return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimSlab_Default_Default(self)
+
+    def dataType_SimSlab_Floor_InterzoneFloor(self):
+        return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimSlab_Floor_InterzoneFloor(self)
 
     def dataType_SimWall_Wall_Default(self):
         return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimWall_Wall_Default(self)
@@ -334,6 +356,9 @@ class SimHierarchyNodeBase(_object):
     def dataType_SimFlowEnergyTransferStorage_HotWaterTank_Mixed(self):
         return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimFlowEnergyTransferStorage_HotWaterTank_Mixed(self)
 
+    def dataType_SimFlowEnergyTransferStorage_HotWaterTank_Expansion(self):
+        return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimFlowEnergyTransferStorage_HotWaterTank_Expansion(self)
+
     def dataType_SimFlowFitting_Mixer_DemandProxyMixerWater(self):
         return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimFlowFitting_Mixer_DemandProxyMixerWater(self)
 
@@ -348,6 +373,9 @@ class SimHierarchyNodeBase(_object):
 
     def dataType_SimFlowController_Valve_Default(self):
         return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimFlowController_Valve_Default(self)
+
+    def dataType_SimFlowController_Valve_TemperingValve(self):
+        return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimFlowController_Valve_TemperingValve(self)
 
     def dataType_SimFlowMover_Pump_VariableSpeedReturn(self):
         return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimFlowMover_Pump_VariableSpeedReturn(self)
@@ -370,6 +398,9 @@ class SimHierarchyNodeBase(_object):
     def dataType_SimNode_HotWaterFlowPort_Water_In(self):
         return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimNode_HotWaterFlowPort_Water_In(self)
 
+    def dataType_SimDistributionPort_HotWaterFlowPort_Water_InOrOut(self):
+        return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimDistributionPort_HotWaterFlowPort_Water_InOrOut(self)
+
     def dataType_SimNode_DigitalControl_HWLoop_DigitalSignal_In(self):
         return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimNode_DigitalControl_HWLoop_DigitalSignal_In(self)
 
@@ -378,6 +409,39 @@ class SimHierarchyNodeBase(_object):
 
     def dataType_SimDistributionPort_HotWaterFlowPort_Water_In(self):
         return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimDistributionPort_HotWaterFlowPort_Water_In(self)
+
+    def dataType_SimTimeSeriesSchedule_Year_Default(self):
+        return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimTimeSeriesSchedule_Year_Default(self)
+
+    def dataType_SimTimeSeriesSchedule_Week_Daily(self):
+        return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimTimeSeriesSchedule_Week_Daily(self)
+
+    def dataType_SimTimeSeriesSchedule_Day_Interval(self):
+        return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimTimeSeriesSchedule_Day_Interval(self)
+
+    def dataType_SimTemplateZoneLoads_ZoneLoads_Default(self):
+        return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimTemplateZoneLoads_ZoneLoads_Default(self)
+
+    def dataType_SimTemplateZoneConditions_ZoneConditions_Default(self):
+        return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimTemplateZoneConditions_ZoneConditions_Default(self)
+
+    def dataType_SimInternalLoad_Equipment_Electric(self):
+        return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimInternalLoad_Equipment_Electric(self)
+
+    def dataType_SimInternalLoad_People_Default(self):
+        return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimInternalLoad_People_Default(self)
+
+    def dataType_SimInternalLoad_Lights_Default(self):
+        return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimInternalLoad_Lights_Default(self)
+
+    def dataType_SimController_ZoneControlTemperature_Thermostat(self):
+        return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimController_ZoneControlTemperature_Thermostat(self)
+
+    def dataType_SimControlScheme_SetpointScheme_SingleHeating(self):
+        return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimControlScheme_SetpointScheme_SingleHeating(self)
+
+    def dataType_SimPerformanceCurve_Mathematical_Cubic(self):
+        return _SimModel_Hierachy.SimHierarchyNodeBase_dataType_SimPerformanceCurve_Mathematical_Cubic(self)
 
     def __init__(self):
         this = _SimModel_Hierachy.new_SimHierarchyNodeBase()
@@ -478,8 +542,14 @@ class SimHierarchy(_object):
     def ClassType(self, *args):
         return _SimModel_Hierachy.SimHierarchy_ClassType(self, *args)
 
+    def parser2_2(self, simGeometryData, simSysData, _geoName, _sysName):
+        return _SimModel_Hierachy.SimHierarchy_parser2_2(self, simGeometryData, simSysData, _geoName, _sysName)
+
     def setCallBack(self, callback):
         return _SimModel_Hierachy.SimHierarchy_setCallBack(self, callback)
+
+    def getCallBack(self):
+        return _SimModel_Hierachy.SimHierarchy_getCallBack(self)
     __swig_destroy__ = _SimModel_Hierachy.delete_SimHierarchy
     __del__ = lambda self: None
 SimHierarchy_swigregister = _SimModel_Hierachy.SimHierarchy_swigregister

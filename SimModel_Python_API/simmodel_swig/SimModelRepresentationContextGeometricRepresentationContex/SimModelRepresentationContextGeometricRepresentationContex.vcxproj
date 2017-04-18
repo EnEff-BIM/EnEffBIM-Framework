@@ -42,7 +42,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <TargetName>_$(ProjectName)</TargetName>
+    <TargetName>_SimModelRepresentationContext_GeometricRepresentationContext_Default</TargetName>
     <TargetExt>.pyd</TargetExt>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -80,22 +80,22 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <None Include="SimModelRepresentationContextGeometricRepresentationContex.i">
+    <CustomBuild Include="SimModelRepresentationContext_GeometricRepresentationContext_Default.i">
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Research\EnEff-BIM\Python\SWIG\swigwin-3.0.7\swig.exe -c++ -python -outdir $(Outdir) %(Identity)</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename)_wrap.cxx;$(Outdir)%(Filename).py</Outputs>
       <FileType>Document</FileType>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="SimModelRepresentationContextGeometricRepresentationContex_wrap.cxx" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="SimModelRepresentationContextGeometricRepresentationContex_wrap.h" />
+    </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SimModel_Dll_lib\SimModel_Dll_lib.vcxproj">
       <Project>{89e708e9-0bb0-4caa-8026-77d0eb1102ce}</Project>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="SimModelRepresentationContext_GeometricRepresentationContext_Default_wrap.cxx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SimModelRepresentationContext_GeometricRepresentationContext_Default_wrap.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

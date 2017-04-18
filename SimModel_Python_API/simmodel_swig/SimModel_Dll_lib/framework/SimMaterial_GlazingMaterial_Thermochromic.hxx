@@ -255,64 +255,11 @@ namespace schema
 {
   namespace simxml
   {
-    namespace SimModelCore
-    {
-      class doubleList;
-    }
-  }
-}
-
-namespace schema
-{
-  namespace simxml
-  {
     namespace ResourcesGeneral
     {
       class SimMaterial_GlazingMaterial_Thermochromic: public ::schema::simxml::ResourcesGeneral::SimMaterial_GlazingMaterial
       {
         public:
-        // SimMaterial_OpticalDataTemp_1_45
-        //
-        typedef ::schema::simxml::SimModelCore::doubleList SimMaterial_OpticalDataTemp_1_45_type;
-        typedef ::xsd::cxx::tree::optional< SimMaterial_OpticalDataTemp_1_45_type > SimMaterial_OpticalDataTemp_1_45_optional;
-        typedef ::xsd::cxx::tree::traits< SimMaterial_OpticalDataTemp_1_45_type, char > SimMaterial_OpticalDataTemp_1_45_traits;
-
-        const SimMaterial_OpticalDataTemp_1_45_optional&
-        SimMaterial_OpticalDataTemp_1_45 () const;
-
-        SimMaterial_OpticalDataTemp_1_45_optional&
-        SimMaterial_OpticalDataTemp_1_45 ();
-
-        void
-        SimMaterial_OpticalDataTemp_1_45 (const SimMaterial_OpticalDataTemp_1_45_type& x);
-
-        void
-        SimMaterial_OpticalDataTemp_1_45 (const SimMaterial_OpticalDataTemp_1_45_optional& x);
-
-        void
-        SimMaterial_OpticalDataTemp_1_45 (::std::auto_ptr< SimMaterial_OpticalDataTemp_1_45_type > p);
-
-        // SimMaterial_WndwMatlGlazingName_1_45
-        //
-        typedef ::xml_schema::idrefs SimMaterial_WndwMatlGlazingName_1_45_type;
-        typedef ::xsd::cxx::tree::optional< SimMaterial_WndwMatlGlazingName_1_45_type > SimMaterial_WndwMatlGlazingName_1_45_optional;
-        typedef ::xsd::cxx::tree::traits< SimMaterial_WndwMatlGlazingName_1_45_type, char > SimMaterial_WndwMatlGlazingName_1_45_traits;
-
-        const SimMaterial_WndwMatlGlazingName_1_45_optional&
-        SimMaterial_WndwMatlGlazingName_1_45 () const;
-
-        SimMaterial_WndwMatlGlazingName_1_45_optional&
-        SimMaterial_WndwMatlGlazingName_1_45 ();
-
-        void
-        SimMaterial_WndwMatlGlazingName_1_45 (const SimMaterial_WndwMatlGlazingName_1_45_type& x);
-
-        void
-        SimMaterial_WndwMatlGlazingName_1_45 (const SimMaterial_WndwMatlGlazingName_1_45_optional& x);
-
-        void
-        SimMaterial_WndwMatlGlazingName_1_45 (::std::auto_ptr< SimMaterial_WndwMatlGlazingName_1_45_type > p);
-
         // Constructors.
         //
         SimMaterial_GlazingMaterial_Thermochromic ();
@@ -331,22 +278,8 @@ namespace schema
         _clone (::xml_schema::flags f = 0,
                 ::xml_schema::container* c = 0) const;
 
-        SimMaterial_GlazingMaterial_Thermochromic&
-        operator= (const SimMaterial_GlazingMaterial_Thermochromic& x);
-
         virtual 
         ~SimMaterial_GlazingMaterial_Thermochromic ();
-
-        // Implementation.
-        //
-        protected:
-        void
-        parse (::xsd::cxx::xml::dom::parser< char >&,
-               ::xml_schema::flags);
-
-        protected:
-        SimMaterial_OpticalDataTemp_1_45_optional SimMaterial_OpticalDataTemp_1_45_;
-        SimMaterial_WndwMatlGlazingName_1_45_optional SimMaterial_WndwMatlGlazingName_1_45_;
       };
     }
   }

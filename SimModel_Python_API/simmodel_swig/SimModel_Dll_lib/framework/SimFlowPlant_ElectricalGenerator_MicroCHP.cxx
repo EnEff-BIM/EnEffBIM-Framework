@@ -169,36 +169,6 @@ namespace schema
         this->SimFlowPlant_AvailSchedName_.set (x);
       }
 
-      const SimFlowPlant_ElectricalGenerator_MicroCHP::SimFlowPlant_PerfParamsName_optional& SimFlowPlant_ElectricalGenerator_MicroCHP::
-      SimFlowPlant_PerfParamsName () const
-      {
-        return this->SimFlowPlant_PerfParamsName_;
-      }
-
-      SimFlowPlant_ElectricalGenerator_MicroCHP::SimFlowPlant_PerfParamsName_optional& SimFlowPlant_ElectricalGenerator_MicroCHP::
-      SimFlowPlant_PerfParamsName ()
-      {
-        return this->SimFlowPlant_PerfParamsName_;
-      }
-
-      void SimFlowPlant_ElectricalGenerator_MicroCHP::
-      SimFlowPlant_PerfParamsName (const SimFlowPlant_PerfParamsName_type& x)
-      {
-        this->SimFlowPlant_PerfParamsName_.set (x);
-      }
-
-      void SimFlowPlant_ElectricalGenerator_MicroCHP::
-      SimFlowPlant_PerfParamsName (const SimFlowPlant_PerfParamsName_optional& x)
-      {
-        this->SimFlowPlant_PerfParamsName_ = x;
-      }
-
-      void SimFlowPlant_ElectricalGenerator_MicroCHP::
-      SimFlowPlant_PerfParamsName (::std::auto_ptr< SimFlowPlant_PerfParamsName_type > x)
-      {
-        this->SimFlowPlant_PerfParamsName_.set (x);
-      }
-
       const SimFlowPlant_ElectricalGenerator_MicroCHP::SimFlowPlant_ZoneName_optional& SimFlowPlant_ElectricalGenerator_MicroCHP::
       SimFlowPlant_ZoneName () const
       {
@@ -227,6 +197,36 @@ namespace schema
       SimFlowPlant_ZoneName (::std::auto_ptr< SimFlowPlant_ZoneName_type > x)
       {
         this->SimFlowPlant_ZoneName_.set (x);
+      }
+
+      const SimFlowPlant_ElectricalGenerator_MicroCHP::SimFlowPlant_PerfParamsName_optional& SimFlowPlant_ElectricalGenerator_MicroCHP::
+      SimFlowPlant_PerfParamsName () const
+      {
+        return this->SimFlowPlant_PerfParamsName_;
+      }
+
+      SimFlowPlant_ElectricalGenerator_MicroCHP::SimFlowPlant_PerfParamsName_optional& SimFlowPlant_ElectricalGenerator_MicroCHP::
+      SimFlowPlant_PerfParamsName ()
+      {
+        return this->SimFlowPlant_PerfParamsName_;
+      }
+
+      void SimFlowPlant_ElectricalGenerator_MicroCHP::
+      SimFlowPlant_PerfParamsName (const SimFlowPlant_PerfParamsName_type& x)
+      {
+        this->SimFlowPlant_PerfParamsName_.set (x);
+      }
+
+      void SimFlowPlant_ElectricalGenerator_MicroCHP::
+      SimFlowPlant_PerfParamsName (const SimFlowPlant_PerfParamsName_optional& x)
+      {
+        this->SimFlowPlant_PerfParamsName_ = x;
+      }
+
+      void SimFlowPlant_ElectricalGenerator_MicroCHP::
+      SimFlowPlant_PerfParamsName (::std::auto_ptr< SimFlowPlant_PerfParamsName_type > x)
+      {
+        this->SimFlowPlant_PerfParamsName_.set (x);
       }
 
       const SimFlowPlant_ElectricalGenerator_MicroCHP::SimFlowPlant_CoolingWaterInletNodeName_optional& SimFlowPlant_ElectricalGenerator_MicroCHP::
@@ -1045,8 +1045,8 @@ namespace schema
         SimFlowPlant_AirInNodeName_ (this),
         SimFlowPlant_AirOutNodeName_ (this),
         SimFlowPlant_AvailSchedName_ (this),
-        SimFlowPlant_PerfParamsName_ (this),
         SimFlowPlant_ZoneName_ (this),
+        SimFlowPlant_PerfParamsName_ (this),
         SimFlowPlant_CoolingWaterInletNodeName_ (this),
         SimFlowPlant_CoolingWaterOutletNodeName_ (this),
         SimFlowPlant_GenFuelSupplyName_ (this),
@@ -1087,8 +1087,8 @@ namespace schema
         SimFlowPlant_AirInNodeName_ (this),
         SimFlowPlant_AirOutNodeName_ (this),
         SimFlowPlant_AvailSchedName_ (this),
-        SimFlowPlant_PerfParamsName_ (this),
         SimFlowPlant_ZoneName_ (this),
+        SimFlowPlant_PerfParamsName_ (this),
         SimFlowPlant_CoolingWaterInletNodeName_ (this),
         SimFlowPlant_CoolingWaterOutletNodeName_ (this),
         SimFlowPlant_GenFuelSupplyName_ (this),
@@ -1131,8 +1131,8 @@ namespace schema
         SimFlowPlant_AirInNodeName_ (x.SimFlowPlant_AirInNodeName_, f, this),
         SimFlowPlant_AirOutNodeName_ (x.SimFlowPlant_AirOutNodeName_, f, this),
         SimFlowPlant_AvailSchedName_ (x.SimFlowPlant_AvailSchedName_, f, this),
-        SimFlowPlant_PerfParamsName_ (x.SimFlowPlant_PerfParamsName_, f, this),
         SimFlowPlant_ZoneName_ (x.SimFlowPlant_ZoneName_, f, this),
+        SimFlowPlant_PerfParamsName_ (x.SimFlowPlant_PerfParamsName_, f, this),
         SimFlowPlant_CoolingWaterInletNodeName_ (x.SimFlowPlant_CoolingWaterInletNodeName_, f, this),
         SimFlowPlant_CoolingWaterOutletNodeName_ (x.SimFlowPlant_CoolingWaterOutletNodeName_, f, this),
         SimFlowPlant_GenFuelSupplyName_ (x.SimFlowPlant_GenFuelSupplyName_, f, this),
@@ -1175,8 +1175,8 @@ namespace schema
         SimFlowPlant_AirInNodeName_ (this),
         SimFlowPlant_AirOutNodeName_ (this),
         SimFlowPlant_AvailSchedName_ (this),
-        SimFlowPlant_PerfParamsName_ (this),
         SimFlowPlant_ZoneName_ (this),
+        SimFlowPlant_PerfParamsName_ (this),
         SimFlowPlant_CoolingWaterInletNodeName_ (this),
         SimFlowPlant_CoolingWaterOutletNodeName_ (this),
         SimFlowPlant_GenFuelSupplyName_ (this),
@@ -1283,20 +1283,6 @@ namespace schema
             }
           }
 
-          // SimFlowPlant_PerfParamsName
-          //
-          if (n.name () == "SimFlowPlant_PerfParamsName" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
-          {
-            ::std::auto_ptr< SimFlowPlant_PerfParamsName_type > r (
-              SimFlowPlant_PerfParamsName_traits::create (i, f, this));
-
-            if (!this->SimFlowPlant_PerfParamsName_)
-            {
-              this->SimFlowPlant_PerfParamsName_.set (r);
-              continue;
-            }
-          }
-
           // SimFlowPlant_ZoneName
           //
           if (n.name () == "SimFlowPlant_ZoneName" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
@@ -1307,6 +1293,20 @@ namespace schema
             if (!this->SimFlowPlant_ZoneName_)
             {
               this->SimFlowPlant_ZoneName_.set (r);
+              continue;
+            }
+          }
+
+          // SimFlowPlant_PerfParamsName
+          //
+          if (n.name () == "SimFlowPlant_PerfParamsName" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            ::std::auto_ptr< SimFlowPlant_PerfParamsName_type > r (
+              SimFlowPlant_PerfParamsName_traits::create (i, f, this));
+
+            if (!this->SimFlowPlant_PerfParamsName_)
+            {
+              this->SimFlowPlant_PerfParamsName_.set (r);
               continue;
             }
           }
@@ -1695,8 +1695,8 @@ namespace schema
           this->SimFlowPlant_AirInNodeName_ = x.SimFlowPlant_AirInNodeName_;
           this->SimFlowPlant_AirOutNodeName_ = x.SimFlowPlant_AirOutNodeName_;
           this->SimFlowPlant_AvailSchedName_ = x.SimFlowPlant_AvailSchedName_;
-          this->SimFlowPlant_PerfParamsName_ = x.SimFlowPlant_PerfParamsName_;
           this->SimFlowPlant_ZoneName_ = x.SimFlowPlant_ZoneName_;
+          this->SimFlowPlant_PerfParamsName_ = x.SimFlowPlant_PerfParamsName_;
           this->SimFlowPlant_CoolingWaterInletNodeName_ = x.SimFlowPlant_CoolingWaterInletNodeName_;
           this->SimFlowPlant_CoolingWaterOutletNodeName_ = x.SimFlowPlant_CoolingWaterOutletNodeName_;
           this->SimFlowPlant_GenFuelSupplyName_ = x.SimFlowPlant_GenFuelSupplyName_;

@@ -40,8 +40,6 @@
 
 #include "SimElement.hxx"
 
-#include "selectedpropertygroups.hxx"
-
 namespace schema
 {
   namespace simxml
@@ -200,36 +198,6 @@ namespace schema
       {
         this->Tag_.set (x);
       }
-
-      const SimElement::SelectedPropertyGroups_optional& SimElement::
-      SelectedPropertyGroups () const
-      {
-        return this->SelectedPropertyGroups_;
-      }
-
-      SimElement::SelectedPropertyGroups_optional& SimElement::
-      SelectedPropertyGroups ()
-      {
-        return this->SelectedPropertyGroups_;
-      }
-
-      void SimElement::
-      SelectedPropertyGroups (const SelectedPropertyGroups_type& x)
-      {
-        this->SelectedPropertyGroups_.set (x);
-      }
-
-      void SimElement::
-      SelectedPropertyGroups (const SelectedPropertyGroups_optional& x)
-      {
-        this->SelectedPropertyGroups_ = x;
-      }
-
-      void SimElement::
-      SelectedPropertyGroups (::std::auto_ptr< SelectedPropertyGroups_type > x)
-      {
-        this->SelectedPropertyGroups_.set (x);
-      }
     }
   }
 }
@@ -261,8 +229,7 @@ namespace schema
         ContainingSpatialStructure_ (this),
         AssignedToGroups_ (this),
         Placement_ (this),
-        Tag_ (this),
-        SelectedPropertyGroups_ (this)
+        Tag_ (this)
       {
       }
 
@@ -273,8 +240,7 @@ namespace schema
         ContainingSpatialStructure_ (this),
         AssignedToGroups_ (this),
         Placement_ (this),
-        Tag_ (this),
-        SelectedPropertyGroups_ (this)
+        Tag_ (this)
       {
       }
 
@@ -287,8 +253,7 @@ namespace schema
         ContainingSpatialStructure_ (x.ContainingSpatialStructure_, f, this),
         AssignedToGroups_ (x.AssignedToGroups_, f, this),
         Placement_ (x.Placement_, f, this),
-        Tag_ (x.Tag_, f, this),
-        SelectedPropertyGroups_ (x.SelectedPropertyGroups_, f, this)
+        Tag_ (x.Tag_, f, this)
       {
       }
 
@@ -301,8 +266,7 @@ namespace schema
         ContainingSpatialStructure_ (this),
         AssignedToGroups_ (this),
         Placement_ (this),
-        Tag_ (this),
-        SelectedPropertyGroups_ (this)
+        Tag_ (this)
       {
         if ((f & ::xml_schema::flags::base) == 0)
         {
@@ -393,20 +357,6 @@ namespace schema
             }
           }
 
-          // SelectedPropertyGroups
-          //
-          if (n.name () == "SelectedPropertyGroups" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/SimModelCore")
-          {
-            ::std::auto_ptr< SelectedPropertyGroups_type > r (
-              SelectedPropertyGroups_traits::create (i, f, this));
-
-            if (!this->SelectedPropertyGroups_)
-            {
-              this->SelectedPropertyGroups_.set (r);
-              continue;
-            }
-          }
-
           break;
         }
       }
@@ -429,7 +379,6 @@ namespace schema
           this->AssignedToGroups_ = x.AssignedToGroups_;
           this->Placement_ = x.Placement_;
           this->Tag_ = x.Tag_;
-          this->SelectedPropertyGroups_ = x.SelectedPropertyGroups_;
         }
 
         return *this;

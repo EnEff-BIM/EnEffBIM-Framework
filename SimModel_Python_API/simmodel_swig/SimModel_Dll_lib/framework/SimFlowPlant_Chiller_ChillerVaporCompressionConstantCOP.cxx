@@ -456,66 +456,6 @@ namespace schema
       {
         this->SimFlowPlant_DesignCondWaterFlowRate_ = x;
       }
-
-      const SimFlowPlant_Chiller_ChillerVaporCompressionConstantCOP::T24ConstructStatus2_optional& SimFlowPlant_Chiller_ChillerVaporCompressionConstantCOP::
-      T24ConstructStatus2 () const
-      {
-        return this->T24ConstructStatus2_;
-      }
-
-      SimFlowPlant_Chiller_ChillerVaporCompressionConstantCOP::T24ConstructStatus2_optional& SimFlowPlant_Chiller_ChillerVaporCompressionConstantCOP::
-      T24ConstructStatus2 ()
-      {
-        return this->T24ConstructStatus2_;
-      }
-
-      void SimFlowPlant_Chiller_ChillerVaporCompressionConstantCOP::
-      T24ConstructStatus2 (const T24ConstructStatus2_type& x)
-      {
-        this->T24ConstructStatus2_.set (x);
-      }
-
-      void SimFlowPlant_Chiller_ChillerVaporCompressionConstantCOP::
-      T24ConstructStatus2 (const T24ConstructStatus2_optional& x)
-      {
-        this->T24ConstructStatus2_ = x;
-      }
-
-      void SimFlowPlant_Chiller_ChillerVaporCompressionConstantCOP::
-      T24ConstructStatus2 (::std::auto_ptr< T24ConstructStatus2_type > x)
-      {
-        this->T24ConstructStatus2_.set (x);
-      }
-
-      const SimFlowPlant_Chiller_ChillerVaporCompressionConstantCOP::T24ChllerType_optional& SimFlowPlant_Chiller_ChillerVaporCompressionConstantCOP::
-      T24ChllerType () const
-      {
-        return this->T24ChllerType_;
-      }
-
-      SimFlowPlant_Chiller_ChillerVaporCompressionConstantCOP::T24ChllerType_optional& SimFlowPlant_Chiller_ChillerVaporCompressionConstantCOP::
-      T24ChllerType ()
-      {
-        return this->T24ChllerType_;
-      }
-
-      void SimFlowPlant_Chiller_ChillerVaporCompressionConstantCOP::
-      T24ChllerType (const T24ChllerType_type& x)
-      {
-        this->T24ChllerType_.set (x);
-      }
-
-      void SimFlowPlant_Chiller_ChillerVaporCompressionConstantCOP::
-      T24ChllerType (const T24ChllerType_optional& x)
-      {
-        this->T24ChllerType_ = x;
-      }
-
-      void SimFlowPlant_Chiller_ChillerVaporCompressionConstantCOP::
-      T24ChllerType (::std::auto_ptr< T24ChllerType_type > x)
-      {
-        this->T24ChllerType_.set (x);
-      }
     }
   }
 }
@@ -557,9 +497,7 @@ namespace schema
         SimFlowPlant_BasinHeatOperatSchedName_ (this),
         SimFlowPlant_NomCOP_ (this),
         SimFlowPlant_DesignChilledWaterFlowRate_ (this),
-        SimFlowPlant_DesignCondWaterFlowRate_ (this),
-        T24ConstructStatus2_ (this),
-        T24ChllerType_ (this)
+        SimFlowPlant_DesignCondWaterFlowRate_ (this)
       {
       }
 
@@ -580,9 +518,7 @@ namespace schema
         SimFlowPlant_BasinHeatOperatSchedName_ (this),
         SimFlowPlant_NomCOP_ (this),
         SimFlowPlant_DesignChilledWaterFlowRate_ (this),
-        SimFlowPlant_DesignCondWaterFlowRate_ (this),
-        T24ConstructStatus2_ (this),
-        T24ChllerType_ (this)
+        SimFlowPlant_DesignCondWaterFlowRate_ (this)
       {
       }
 
@@ -605,9 +541,7 @@ namespace schema
         SimFlowPlant_BasinHeatOperatSchedName_ (x.SimFlowPlant_BasinHeatOperatSchedName_, f, this),
         SimFlowPlant_NomCOP_ (x.SimFlowPlant_NomCOP_, f, this),
         SimFlowPlant_DesignChilledWaterFlowRate_ (x.SimFlowPlant_DesignChilledWaterFlowRate_, f, this),
-        SimFlowPlant_DesignCondWaterFlowRate_ (x.SimFlowPlant_DesignCondWaterFlowRate_, f, this),
-        T24ConstructStatus2_ (x.T24ConstructStatus2_, f, this),
-        T24ChllerType_ (x.T24ChllerType_, f, this)
+        SimFlowPlant_DesignCondWaterFlowRate_ (x.SimFlowPlant_DesignCondWaterFlowRate_, f, this)
       {
       }
 
@@ -630,9 +564,7 @@ namespace schema
         SimFlowPlant_BasinHeatOperatSchedName_ (this),
         SimFlowPlant_NomCOP_ (this),
         SimFlowPlant_DesignChilledWaterFlowRate_ (this),
-        SimFlowPlant_DesignCondWaterFlowRate_ (this),
-        T24ConstructStatus2_ (this),
-        T24ChllerType_ (this)
+        SimFlowPlant_DesignCondWaterFlowRate_ (this)
       {
         if ((f & ::xml_schema::flags::base) == 0)
         {
@@ -842,34 +774,6 @@ namespace schema
             }
           }
 
-          // T24ConstructStatus2
-          //
-          if (n.name () == "T24ConstructStatus2" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
-          {
-            ::std::auto_ptr< T24ConstructStatus2_type > r (
-              T24ConstructStatus2_traits::create (i, f, this));
-
-            if (!this->T24ConstructStatus2_)
-            {
-              this->T24ConstructStatus2_.set (r);
-              continue;
-            }
-          }
-
-          // T24ChllerType
-          //
-          if (n.name () == "T24ChllerType" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
-          {
-            ::std::auto_ptr< T24ChllerType_type > r (
-              T24ChllerType_traits::create (i, f, this));
-
-            if (!this->T24ChllerType_)
-            {
-              this->T24ChllerType_.set (r);
-              continue;
-            }
-          }
-
           break;
         }
       }
@@ -902,8 +806,6 @@ namespace schema
           this->SimFlowPlant_NomCOP_ = x.SimFlowPlant_NomCOP_;
           this->SimFlowPlant_DesignChilledWaterFlowRate_ = x.SimFlowPlant_DesignChilledWaterFlowRate_;
           this->SimFlowPlant_DesignCondWaterFlowRate_ = x.SimFlowPlant_DesignCondWaterFlowRate_;
-          this->T24ConstructStatus2_ = x.T24ConstructStatus2_;
-          this->T24ChllerType_ = x.T24ChllerType_;
         }
 
         return *this;

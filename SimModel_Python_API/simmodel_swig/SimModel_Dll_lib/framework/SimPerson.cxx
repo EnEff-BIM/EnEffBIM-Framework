@@ -235,36 +235,6 @@ namespace schema
         this->SuffixTitles_.set (x);
       }
 
-      const SimPerson::Roles_optional& SimPerson::
-      Roles () const
-      {
-        return this->Roles_;
-      }
-
-      SimPerson::Roles_optional& SimPerson::
-      Roles ()
-      {
-        return this->Roles_;
-      }
-
-      void SimPerson::
-      Roles (const Roles_type& x)
-      {
-        this->Roles_.set (x);
-      }
-
-      void SimPerson::
-      Roles (const Roles_optional& x)
-      {
-        this->Roles_ = x;
-      }
-
-      void SimPerson::
-      Roles (::std::auto_ptr< Roles_type > x)
-      {
-        this->Roles_.set (x);
-      }
-
       const SimPerson::Addresses_optional& SimPerson::
       Addresses () const
       {
@@ -293,6 +263,36 @@ namespace schema
       Addresses (::std::auto_ptr< Addresses_type > x)
       {
         this->Addresses_.set (x);
+      }
+
+      const SimPerson::ActorPersonAndOrganization_optional& SimPerson::
+      ActorPersonAndOrganization () const
+      {
+        return this->ActorPersonAndOrganization_;
+      }
+
+      SimPerson::ActorPersonAndOrganization_optional& SimPerson::
+      ActorPersonAndOrganization ()
+      {
+        return this->ActorPersonAndOrganization_;
+      }
+
+      void SimPerson::
+      ActorPersonAndOrganization (const ActorPersonAndOrganization_type& x)
+      {
+        this->ActorPersonAndOrganization_.set (x);
+      }
+
+      void SimPerson::
+      ActorPersonAndOrganization (const ActorPersonAndOrganization_optional& x)
+      {
+        this->ActorPersonAndOrganization_ = x;
+      }
+
+      void SimPerson::
+      ActorPersonAndOrganization (::std::auto_ptr< ActorPersonAndOrganization_type > x)
+      {
+        this->ActorPersonAndOrganization_.set (x);
       }
     }
   }
@@ -327,8 +327,8 @@ namespace schema
         MiddleNames_ (this),
         PrefixTitles_ (this),
         SuffixTitles_ (this),
-        Roles_ (this),
-        Addresses_ (this)
+        Addresses_ (this),
+        ActorPersonAndOrganization_ (this)
       {
       }
 
@@ -341,8 +341,8 @@ namespace schema
         MiddleNames_ (this),
         PrefixTitles_ (this),
         SuffixTitles_ (this),
-        Roles_ (this),
-        Addresses_ (this)
+        Addresses_ (this),
+        ActorPersonAndOrganization_ (this)
       {
       }
 
@@ -357,8 +357,8 @@ namespace schema
         MiddleNames_ (x.MiddleNames_, f, this),
         PrefixTitles_ (x.PrefixTitles_, f, this),
         SuffixTitles_ (x.SuffixTitles_, f, this),
-        Roles_ (x.Roles_, f, this),
-        Addresses_ (x.Addresses_, f, this)
+        Addresses_ (x.Addresses_, f, this),
+        ActorPersonAndOrganization_ (x.ActorPersonAndOrganization_, f, this)
       {
       }
 
@@ -373,8 +373,8 @@ namespace schema
         MiddleNames_ (this),
         PrefixTitles_ (this),
         SuffixTitles_ (this),
-        Roles_ (this),
-        Addresses_ (this)
+        Addresses_ (this),
+        ActorPersonAndOrganization_ (this)
       {
         if ((f & ::xml_schema::flags::base) == 0)
         {
@@ -479,20 +479,6 @@ namespace schema
             }
           }
 
-          // Roles
-          //
-          if (n.name () == "Roles" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/ResourcesGeneral")
-          {
-            ::std::auto_ptr< Roles_type > r (
-              Roles_traits::create (i, f, this));
-
-            if (!this->Roles_)
-            {
-              this->Roles_.set (r);
-              continue;
-            }
-          }
-
           // Addresses
           //
           if (n.name () == "Addresses" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/ResourcesGeneral")
@@ -503,6 +489,20 @@ namespace schema
             if (!this->Addresses_)
             {
               this->Addresses_.set (r);
+              continue;
+            }
+          }
+
+          // ActorPersonAndOrganization
+          //
+          if (n.name () == "ActorPersonAndOrganization" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/ResourcesGeneral")
+          {
+            ::std::auto_ptr< ActorPersonAndOrganization_type > r (
+              ActorPersonAndOrganization_traits::create (i, f, this));
+
+            if (!this->ActorPersonAndOrganization_)
+            {
+              this->ActorPersonAndOrganization_.set (r);
               continue;
             }
           }
@@ -530,8 +530,8 @@ namespace schema
           this->MiddleNames_ = x.MiddleNames_;
           this->PrefixTitles_ = x.PrefixTitles_;
           this->SuffixTitles_ = x.SuffixTitles_;
-          this->Roles_ = x.Roles_;
           this->Addresses_ = x.Addresses_;
+          this->ActorPersonAndOrganization_ = x.ActorPersonAndOrganization_;
         }
 
         return *this;

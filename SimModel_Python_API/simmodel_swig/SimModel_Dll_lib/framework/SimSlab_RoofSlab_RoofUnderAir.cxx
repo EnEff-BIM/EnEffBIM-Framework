@@ -537,54 +537,6 @@ namespace schema
         this->T24FieldAppliedCoating_ = x;
       }
 
-      const SimSlab_RoofSlab_RoofUnderAir::T24RoofAgedSolarReflectance_optional& SimSlab_RoofSlab_RoofUnderAir::
-      T24RoofAgedSolarReflectance () const
-      {
-        return this->T24RoofAgedSolarReflectance_;
-      }
-
-      SimSlab_RoofSlab_RoofUnderAir::T24RoofAgedSolarReflectance_optional& SimSlab_RoofSlab_RoofUnderAir::
-      T24RoofAgedSolarReflectance ()
-      {
-        return this->T24RoofAgedSolarReflectance_;
-      }
-
-      void SimSlab_RoofSlab_RoofUnderAir::
-      T24RoofAgedSolarReflectance (const T24RoofAgedSolarReflectance_type& x)
-      {
-        this->T24RoofAgedSolarReflectance_.set (x);
-      }
-
-      void SimSlab_RoofSlab_RoofUnderAir::
-      T24RoofAgedSolarReflectance (const T24RoofAgedSolarReflectance_optional& x)
-      {
-        this->T24RoofAgedSolarReflectance_ = x;
-      }
-
-      const SimSlab_RoofSlab_RoofUnderAir::T24RoofAgedThermalEmittance_optional& SimSlab_RoofSlab_RoofUnderAir::
-      T24RoofAgedThermalEmittance () const
-      {
-        return this->T24RoofAgedThermalEmittance_;
-      }
-
-      SimSlab_RoofSlab_RoofUnderAir::T24RoofAgedThermalEmittance_optional& SimSlab_RoofSlab_RoofUnderAir::
-      T24RoofAgedThermalEmittance ()
-      {
-        return this->T24RoofAgedThermalEmittance_;
-      }
-
-      void SimSlab_RoofSlab_RoofUnderAir::
-      T24RoofAgedThermalEmittance (const T24RoofAgedThermalEmittance_type& x)
-      {
-        this->T24RoofAgedThermalEmittance_.set (x);
-      }
-
-      void SimSlab_RoofSlab_RoofUnderAir::
-      T24RoofAgedThermalEmittance (const T24RoofAgedThermalEmittance_optional& x)
-      {
-        this->T24RoofAgedThermalEmittance_ = x;
-      }
-
       const SimSlab_RoofSlab_RoofUnderAir::T24ConstructStatus3_optional& SimSlab_RoofSlab_RoofUnderAir::
       T24ConstructStatus3 () const
       {
@@ -660,8 +612,6 @@ namespace schema
         T24CRRCInitialSRI_ (this),
         T24CRRCProductID_ (this),
         T24FieldAppliedCoating_ (this),
-        T24RoofAgedSolarReflectance_ (this),
-        T24RoofAgedThermalEmittance_ (this),
         T24ConstructStatus3_ (this)
       {
       }
@@ -688,8 +638,6 @@ namespace schema
         T24CRRCInitialSRI_ (this),
         T24CRRCProductID_ (this),
         T24FieldAppliedCoating_ (this),
-        T24RoofAgedSolarReflectance_ (this),
-        T24RoofAgedThermalEmittance_ (this),
         T24ConstructStatus3_ (this)
       {
       }
@@ -718,8 +666,6 @@ namespace schema
         T24CRRCInitialSRI_ (x.T24CRRCInitialSRI_, f, this),
         T24CRRCProductID_ (x.T24CRRCProductID_, f, this),
         T24FieldAppliedCoating_ (x.T24FieldAppliedCoating_, f, this),
-        T24RoofAgedSolarReflectance_ (x.T24RoofAgedSolarReflectance_, f, this),
-        T24RoofAgedThermalEmittance_ (x.T24RoofAgedThermalEmittance_, f, this),
         T24ConstructStatus3_ (x.T24ConstructStatus3_, f, this)
       {
       }
@@ -748,8 +694,6 @@ namespace schema
         T24CRRCInitialSRI_ (this),
         T24CRRCProductID_ (this),
         T24FieldAppliedCoating_ (this),
-        T24RoofAgedSolarReflectance_ (this),
-        T24RoofAgedThermalEmittance_ (this),
         T24ConstructStatus3_ (this)
       {
         if ((f & ::xml_schema::flags::base) == 0)
@@ -995,28 +939,6 @@ namespace schema
             }
           }
 
-          // T24RoofAgedSolarReflectance
-          //
-          if (n.name () == "T24RoofAgedSolarReflectance" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
-          {
-            if (!this->T24RoofAgedSolarReflectance_)
-            {
-              this->T24RoofAgedSolarReflectance_.set (T24RoofAgedSolarReflectance_traits::create (i, f, this));
-              continue;
-            }
-          }
-
-          // T24RoofAgedThermalEmittance
-          //
-          if (n.name () == "T24RoofAgedThermalEmittance" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
-          {
-            if (!this->T24RoofAgedThermalEmittance_)
-            {
-              this->T24RoofAgedThermalEmittance_.set (T24RoofAgedThermalEmittance_traits::create (i, f, this));
-              continue;
-            }
-          }
-
           // T24ConstructStatus3
           //
           if (n.name () == "T24ConstructStatus3" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
@@ -1067,8 +989,6 @@ namespace schema
           this->T24CRRCInitialSRI_ = x.T24CRRCInitialSRI_;
           this->T24CRRCProductID_ = x.T24CRRCProductID_;
           this->T24FieldAppliedCoating_ = x.T24FieldAppliedCoating_;
-          this->T24RoofAgedSolarReflectance_ = x.T24RoofAgedSolarReflectance_;
-          this->T24RoofAgedThermalEmittance_ = x.T24RoofAgedThermalEmittance_;
           this->T24ConstructStatus3_ = x.T24ConstructStatus3_;
         }
 

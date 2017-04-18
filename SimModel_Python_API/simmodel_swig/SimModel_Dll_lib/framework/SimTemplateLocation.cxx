@@ -318,6 +318,36 @@ namespace schema
       {
         this->TemplateUtilityCosts_.set (x);
       }
+
+      const SimTemplateLocation::TemplateLifeCycleCosts_optional& SimTemplateLocation::
+      TemplateLifeCycleCosts () const
+      {
+        return this->TemplateLifeCycleCosts_;
+      }
+
+      SimTemplateLocation::TemplateLifeCycleCosts_optional& SimTemplateLocation::
+      TemplateLifeCycleCosts ()
+      {
+        return this->TemplateLifeCycleCosts_;
+      }
+
+      void SimTemplateLocation::
+      TemplateLifeCycleCosts (const TemplateLifeCycleCosts_type& x)
+      {
+        this->TemplateLifeCycleCosts_.set (x);
+      }
+
+      void SimTemplateLocation::
+      TemplateLifeCycleCosts (const TemplateLifeCycleCosts_optional& x)
+      {
+        this->TemplateLifeCycleCosts_ = x;
+      }
+
+      void SimTemplateLocation::
+      TemplateLifeCycleCosts (::std::auto_ptr< TemplateLifeCycleCosts_type > x)
+      {
+        this->TemplateLifeCycleCosts_.set (x);
+      }
     }
   }
 }
@@ -353,7 +383,8 @@ namespace schema
         WeatherFilename_ (this),
         TemplateSummerDesignDays_ (this),
         TemplateWinterDesignDays_ (this),
-        TemplateUtilityCosts_ (this)
+        TemplateUtilityCosts_ (this),
+        TemplateLifeCycleCosts_ (this)
       {
       }
 
@@ -368,7 +399,8 @@ namespace schema
         WeatherFilename_ (this),
         TemplateSummerDesignDays_ (this),
         TemplateWinterDesignDays_ (this),
-        TemplateUtilityCosts_ (this)
+        TemplateUtilityCosts_ (this),
+        TemplateLifeCycleCosts_ (this)
       {
       }
 
@@ -385,7 +417,8 @@ namespace schema
         WeatherFilename_ (x.WeatherFilename_, f, this),
         TemplateSummerDesignDays_ (x.TemplateSummerDesignDays_, f, this),
         TemplateWinterDesignDays_ (x.TemplateWinterDesignDays_, f, this),
-        TemplateUtilityCosts_ (x.TemplateUtilityCosts_, f, this)
+        TemplateUtilityCosts_ (x.TemplateUtilityCosts_, f, this),
+        TemplateLifeCycleCosts_ (x.TemplateLifeCycleCosts_, f, this)
       {
       }
 
@@ -402,7 +435,8 @@ namespace schema
         WeatherFilename_ (this),
         TemplateSummerDesignDays_ (this),
         TemplateWinterDesignDays_ (this),
-        TemplateUtilityCosts_ (this)
+        TemplateUtilityCosts_ (this),
+        TemplateLifeCycleCosts_ (this)
       {
         if ((f & ::xml_schema::flags::base) == 0)
         {
@@ -549,6 +583,20 @@ namespace schema
             }
           }
 
+          // TemplateLifeCycleCosts
+          //
+          if (n.name () == "TemplateLifeCycleCosts" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/ResourcesGeneral")
+          {
+            ::std::auto_ptr< TemplateLifeCycleCosts_type > r (
+              TemplateLifeCycleCosts_traits::create (i, f, this));
+
+            if (!this->TemplateLifeCycleCosts_)
+            {
+              this->TemplateLifeCycleCosts_.set (r);
+              continue;
+            }
+          }
+
           break;
         }
       }
@@ -575,6 +623,7 @@ namespace schema
           this->TemplateSummerDesignDays_ = x.TemplateSummerDesignDays_;
           this->TemplateWinterDesignDays_ = x.TemplateWinterDesignDays_;
           this->TemplateUtilityCosts_ = x.TemplateUtilityCosts_;
+          this->TemplateLifeCycleCosts_ = x.TemplateLifeCycleCosts_;
         }
 
         return *this;

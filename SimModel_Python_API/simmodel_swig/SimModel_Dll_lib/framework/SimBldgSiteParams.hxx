@@ -50,7 +50,7 @@
 #include <xsd/cxx/config.hxx>
 
 #if (XSD_INT_VERSION != 4000000L)
-#error XSD runtime version mismatch
+//#error XSD runtime version mismatch
 #endif
 
 #include <xsd/cxx/pre.hxx>
@@ -264,7 +264,6 @@ namespace schema
         //
         typedef ::xml_schema::string SiteShape_type;
         typedef ::xsd::cxx::tree::optional< SiteShape_type, false > SiteShape_optional;
-		//typedef ::xsd::cxx::tree::optional< SiteShape_type, false > SiteShape_optional;
         typedef ::xsd::cxx::tree::traits< SiteShape_type, char > SiteShape_traits;
 
         const SiteShape_optional&

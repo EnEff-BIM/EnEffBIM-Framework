@@ -25,6 +25,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="SimSensor_TemperatureSensor_DryBulb.i" />
+    <CustomBuild Include="SimSensor_TemperatureSensor_DryBulb.i" />
   </ItemGroup>
 </Project>

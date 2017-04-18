@@ -545,7 +545,7 @@ namespace schema
         void
         RunName (::std::auto_ptr< RunName_type > p);
 
-        // Unit.String
+        // Unit_String
         //
         typedef ::xml_schema::string Unit_String_type;
         typedef ::xsd::cxx::tree::optional< Unit_String_type > Unit_String_optional;
@@ -608,7 +608,7 @@ namespace schema
         void
         Area (::std::auto_ptr< Area_type > p);
 
-        // TimeStep.String
+        // TimeStep_String
         //
         typedef ::xml_schema::string TimeStep_String_type;
         typedef ::xsd::cxx::tree::optional< TimeStep_String_type > TimeStep_String_optional;

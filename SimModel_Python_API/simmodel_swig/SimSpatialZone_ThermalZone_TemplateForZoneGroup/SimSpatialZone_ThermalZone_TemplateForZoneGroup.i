@@ -8,6 +8,8 @@
 using namespace xsd::cxx::tree;
 %}
 
+%ignore xsd::cxx::tree::sequence<::schema::simxml::BuildingModel::SimSpatialZone_ThermalZone_TemplateForZoneGroup, false>::getValue(int n);
+
 //3. class auto ptr
 %auto_ptr(::schema::simxml::BuildingModel::SimSpatialZone_ThermalZone_TemplateForZoneGroup)
 

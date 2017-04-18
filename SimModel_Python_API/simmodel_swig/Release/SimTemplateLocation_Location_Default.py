@@ -136,6 +136,9 @@ class SimTemplateLocation(base.SimTemplate):
     def TemplateUtilityCosts(self, *args):
         return _SimTemplateLocation_Location_Default.SimTemplateLocation_TemplateUtilityCosts(self, *args)
 
+    def TemplateLifeCycleCosts(self, *args):
+        return _SimTemplateLocation_Location_Default.SimTemplateLocation_TemplateLifeCycleCosts(self, *args)
+
     def __init__(self, *args):
         this = _SimTemplateLocation_Location_Default.new_SimTemplateLocation(*args)
         try:

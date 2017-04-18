@@ -269,29 +269,8 @@ class SimSpace_Occupied(SimSpace):
     __getattr__ = lambda self, name: _swig_getattr(self, SimSpace_Occupied, name)
     __repr__ = _swig_repr
 
-    def T24BaselineCommercialRefrigerationEPD(self, *args):
-        return _SimSpace_Occupied_Default.SimSpace_Occupied_T24BaselineCommercialRefrigerationEPD(self, *args)
-
-    def T24BaselineCommercialRefrigerationEquipmentScheduleReference(self, *args):
-        return _SimSpace_Occupied_Default.SimSpace_Occupied_T24BaselineCommercialRefrigerationEquipmentScheduleReference(self, *args)
-
-    def T24BaselineGasEquipmentPowerDensity(self, *args):
-        return _SimSpace_Occupied_Default.SimSpace_Occupied_T24BaselineGasEquipmentPowerDensity(self, *args)
-
-    def T24BaselineGasEquipmentScheduleReference(self, *args):
-        return _SimSpace_Occupied_Default.SimSpace_Occupied_T24BaselineGasEquipmentScheduleReference(self, *args)
-
-    def T24BaselineReceptaclePowerDensity(self, *args):
-        return _SimSpace_Occupied_Default.SimSpace_Occupied_T24BaselineReceptaclePowerDensity(self, *args)
-
-    def T24BaselineReceptacleScheduleReference(self, *args):
-        return _SimSpace_Occupied_Default.SimSpace_Occupied_T24BaselineReceptacleScheduleReference(self, *args)
-
     def T24CommRefrigEPD(self, *args):
         return _SimSpace_Occupied_Default.SimSpace_Occupied_T24CommRefrigEPD(self, *args)
-
-    def T24CommercialRefrigerationEPDExceptionalCondition(self, *args):
-        return _SimSpace_Occupied_Default.SimSpace_Occupied_T24CommercialRefrigerationEPDExceptionalCondition(self, *args)
 
     def T24CommRefrigEqmtSchedRef(self, *args):
         return _SimSpace_Occupied_Default.SimSpace_Occupied_T24CommRefrigEqmtSchedRef(self, *args)
@@ -317,17 +296,20 @@ class SimSpace_Occupied(SimSpace):
     def T24ExhaustPerSpace(self, *args):
         return _SimSpace_Occupied_Default.SimSpace_Occupied_T24ExhaustPerSpace(self, *args)
 
+    def T24HasProcessExhaust(self, *args):
+        return _SimSpace_Occupied_Default.SimSpace_Occupied_T24HasProcessExhaust(self, *args)
+
     def T24IntLightingSpecMethod(self, *args):
         return _SimSpace_Occupied_Default.SimSpace_Occupied_T24IntLightingSpecMethod(self, *args)
 
     def T24KitchExhHoodDutyList(self, *args):
         return _SimSpace_Occupied_Default.SimSpace_Occupied_T24KitchExhHoodDutyList(self, *args)
 
-    def T24KitchExhHoodFlow(self, *args):
-        return _SimSpace_Occupied_Default.SimSpace_Occupied_T24KitchExhHoodFlow(self, *args)
+    def T24KitchExhHoodFlowList(self, *args):
+        return _SimSpace_Occupied_Default.SimSpace_Occupied_T24KitchExhHoodFlowList(self, *args)
 
-    def T24KitchExhHoodLength(self, *args):
-        return _SimSpace_Occupied_Default.SimSpace_Occupied_T24KitchExhHoodLength(self, *args)
+    def T24KitchExhHoodLengthList(self, *args):
+        return _SimSpace_Occupied_Default.SimSpace_Occupied_T24KitchExhHoodLengthList(self, *args)
 
     def T24KitchExhHoodStyleList(self, *args):
         return _SimSpace_Occupied_Default.SimSpace_Occupied_T24KitchExhHoodStyleList(self, *args)
@@ -343,9 +325,6 @@ class SimSpace_Occupied(SimSpace):
 
     def T24MandLightCntrlDescRpt(self, *args):
         return _SimSpace_Occupied_Default.SimSpace_Occupied_T24MandLightCntrlDescRpt(self, *args)
-
-    def T24MandLightCntrlRpt(self, *args):
-        return _SimSpace_Occupied_Default.SimSpace_Occupied_T24MandLightCntrlRpt(self, *args)
 
     def T24MandLightCntrlAccepReqRpt(self, *args):
         return _SimSpace_Occupied_Default.SimSpace_Occupied_T24MandLightCntrlAccepReqRpt(self, *args)

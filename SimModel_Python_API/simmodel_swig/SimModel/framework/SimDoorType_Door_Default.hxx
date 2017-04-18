@@ -260,6 +260,231 @@ namespace schema
       class SimDoorType_Door_Default: public ::schema::simxml::BuildingModel::SimDoorType_Door
       {
         public:
+        // DoorTypeApplicableOccurrence
+        //
+        typedef ::xml_schema::string DoorTypeApplicableOccurrence_type;
+        typedef ::xsd::cxx::tree::optional< DoorTypeApplicableOccurrence_type > DoorTypeApplicableOccurrence_optional;
+        typedef ::xsd::cxx::tree::traits< DoorTypeApplicableOccurrence_type, char > DoorTypeApplicableOccurrence_traits;
+
+        const DoorTypeApplicableOccurrence_optional&
+        DoorTypeApplicableOccurrence () const;
+
+        DoorTypeApplicableOccurrence_optional&
+        DoorTypeApplicableOccurrence ();
+
+        void
+        DoorTypeApplicableOccurrence (const DoorTypeApplicableOccurrence_type& x);
+
+        void
+        DoorTypeApplicableOccurrence (const DoorTypeApplicableOccurrence_optional& x);
+
+        void
+        DoorTypeApplicableOccurrence (::std::auto_ptr< DoorTypeApplicableOccurrence_type > p);
+
+        // DoorTypeTag
+        //
+        typedef ::xml_schema::string DoorTypeTag_type;
+        typedef ::xsd::cxx::tree::optional< DoorTypeTag_type > DoorTypeTag_optional;
+        typedef ::xsd::cxx::tree::traits< DoorTypeTag_type, char > DoorTypeTag_traits;
+
+        const DoorTypeTag_optional&
+        DoorTypeTag () const;
+
+        DoorTypeTag_optional&
+        DoorTypeTag ();
+
+        void
+        DoorTypeTag (const DoorTypeTag_type& x);
+
+        void
+        DoorTypeTag (const DoorTypeTag_optional& x);
+
+        void
+        DoorTypeTag (::std::auto_ptr< DoorTypeTag_type > p);
+
+        // DoorTypeOperationType
+        //
+        typedef ::xml_schema::string DoorTypeOperationType_type;
+        typedef ::xsd::cxx::tree::optional< DoorTypeOperationType_type > DoorTypeOperationType_optional;
+        typedef ::xsd::cxx::tree::traits< DoorTypeOperationType_type, char > DoorTypeOperationType_traits;
+
+        const DoorTypeOperationType_optional&
+        DoorTypeOperationType () const;
+
+        DoorTypeOperationType_optional&
+        DoorTypeOperationType ();
+
+        void
+        DoorTypeOperationType (const DoorTypeOperationType_type& x);
+
+        void
+        DoorTypeOperationType (const DoorTypeOperationType_optional& x);
+
+        void
+        DoorTypeOperationType (::std::auto_ptr< DoorTypeOperationType_type > p);
+
+        // DoorTypeConstructionType
+        //
+        typedef ::xml_schema::string DoorTypeConstructionType_type;
+        typedef ::xsd::cxx::tree::optional< DoorTypeConstructionType_type > DoorTypeConstructionType_optional;
+        typedef ::xsd::cxx::tree::traits< DoorTypeConstructionType_type, char > DoorTypeConstructionType_traits;
+
+        const DoorTypeConstructionType_optional&
+        DoorTypeConstructionType () const;
+
+        DoorTypeConstructionType_optional&
+        DoorTypeConstructionType ();
+
+        void
+        DoorTypeConstructionType (const DoorTypeConstructionType_type& x);
+
+        void
+        DoorTypeConstructionType (const DoorTypeConstructionType_optional& x);
+
+        void
+        DoorTypeConstructionType (::std::auto_ptr< DoorTypeConstructionType_type > p);
+
+        // DoorTypeParamTakesPrecedence
+        //
+        typedef ::xml_schema::boolean DoorTypeParamTakesPrecedence_type;
+        typedef ::xsd::cxx::tree::optional< DoorTypeParamTakesPrecedence_type > DoorTypeParamTakesPrecedence_optional;
+        typedef ::xsd::cxx::tree::traits< DoorTypeParamTakesPrecedence_type, char > DoorTypeParamTakesPrecedence_traits;
+
+        const DoorTypeParamTakesPrecedence_optional&
+        DoorTypeParamTakesPrecedence () const;
+
+        DoorTypeParamTakesPrecedence_optional&
+        DoorTypeParamTakesPrecedence ();
+
+        void
+        DoorTypeParamTakesPrecedence (const DoorTypeParamTakesPrecedence_type& x);
+
+        void
+        DoorTypeParamTakesPrecedence (const DoorTypeParamTakesPrecedence_optional& x);
+
+        // DoorTypeSizeable
+        //
+        typedef ::xml_schema::boolean DoorTypeSizeable_type;
+        typedef ::xsd::cxx::tree::optional< DoorTypeSizeable_type > DoorTypeSizeable_optional;
+        typedef ::xsd::cxx::tree::traits< DoorTypeSizeable_type, char > DoorTypeSizeable_traits;
+
+        const DoorTypeSizeable_optional&
+        DoorTypeSizeable () const;
+
+        DoorTypeSizeable_optional&
+        DoorTypeSizeable ();
+
+        void
+        DoorTypeSizeable (const DoorTypeSizeable_type& x);
+
+        void
+        DoorTypeSizeable (const DoorTypeSizeable_optional& x);
+
+        // LiningProperties
+        //
+        typedef ::xml_schema::idrefs LiningProperties_type;
+        typedef ::xsd::cxx::tree::optional< LiningProperties_type > LiningProperties_optional;
+        typedef ::xsd::cxx::tree::traits< LiningProperties_type, char > LiningProperties_traits;
+
+        const LiningProperties_optional&
+        LiningProperties () const;
+
+        LiningProperties_optional&
+        LiningProperties ();
+
+        void
+        LiningProperties (const LiningProperties_type& x);
+
+        void
+        LiningProperties (const LiningProperties_optional& x);
+
+        void
+        LiningProperties (::std::auto_ptr< LiningProperties_type > p);
+
+        // PanelProperties
+        //
+        typedef ::xml_schema::idrefs PanelProperties_type;
+        typedef ::xsd::cxx::tree::optional< PanelProperties_type > PanelProperties_optional;
+        typedef ::xsd::cxx::tree::traits< PanelProperties_type, char > PanelProperties_traits;
+
+        const PanelProperties_optional&
+        PanelProperties () const;
+
+        PanelProperties_optional&
+        PanelProperties ();
+
+        void
+        PanelProperties (const PanelProperties_type& x);
+
+        void
+        PanelProperties (const PanelProperties_optional& x);
+
+        void
+        PanelProperties (::std::auto_ptr< PanelProperties_type > p);
+
+        // ClassRef_UniFormat
+        //
+        typedef ::xml_schema::idref ClassRef_UniFormat_type;
+        typedef ::xsd::cxx::tree::optional< ClassRef_UniFormat_type > ClassRef_UniFormat_optional;
+        typedef ::xsd::cxx::tree::traits< ClassRef_UniFormat_type, char > ClassRef_UniFormat_traits;
+
+        const ClassRef_UniFormat_optional&
+        ClassRef_UniFormat () const;
+
+        ClassRef_UniFormat_optional&
+        ClassRef_UniFormat ();
+
+        void
+        ClassRef_UniFormat (const ClassRef_UniFormat_type& x);
+
+        void
+        ClassRef_UniFormat (const ClassRef_UniFormat_optional& x);
+
+        void
+        ClassRef_UniFormat (::std::auto_ptr< ClassRef_UniFormat_type > p);
+
+        // MaterialList
+        //
+        typedef ::xml_schema::idref MaterialList_type;
+        typedef ::xsd::cxx::tree::optional< MaterialList_type > MaterialList_optional;
+        typedef ::xsd::cxx::tree::traits< MaterialList_type, char > MaterialList_traits;
+
+        const MaterialList_optional&
+        MaterialList () const;
+
+        MaterialList_optional&
+        MaterialList ();
+
+        void
+        MaterialList (const MaterialList_type& x);
+
+        void
+        MaterialList (const MaterialList_optional& x);
+
+        void
+        MaterialList (::std::auto_ptr< MaterialList_type > p);
+
+        // VoidsInDoor
+        //
+        typedef ::xml_schema::idrefs VoidsInDoor_type;
+        typedef ::xsd::cxx::tree::optional< VoidsInDoor_type > VoidsInDoor_optional;
+        typedef ::xsd::cxx::tree::traits< VoidsInDoor_type, char > VoidsInDoor_traits;
+
+        const VoidsInDoor_optional&
+        VoidsInDoor () const;
+
+        VoidsInDoor_optional&
+        VoidsInDoor ();
+
+        void
+        VoidsInDoor (const VoidsInDoor_type& x);
+
+        void
+        VoidsInDoor (const VoidsInDoor_optional& x);
+
+        void
+        VoidsInDoor (::std::auto_ptr< VoidsInDoor_type > p);
+
         // Constructors.
         //
         SimDoorType_Door_Default ();
@@ -278,8 +503,31 @@ namespace schema
         _clone (::xml_schema::flags f = 0,
                 ::xml_schema::container* c = 0) const;
 
+        SimDoorType_Door_Default&
+        operator= (const SimDoorType_Door_Default& x);
+
         virtual 
         ~SimDoorType_Door_Default ();
+
+        // Implementation.
+        //
+        protected:
+        void
+        parse (::xsd::cxx::xml::dom::parser< char >&,
+               ::xml_schema::flags);
+
+        protected:
+        DoorTypeApplicableOccurrence_optional DoorTypeApplicableOccurrence_;
+        DoorTypeTag_optional DoorTypeTag_;
+        DoorTypeOperationType_optional DoorTypeOperationType_;
+        DoorTypeConstructionType_optional DoorTypeConstructionType_;
+        DoorTypeParamTakesPrecedence_optional DoorTypeParamTakesPrecedence_;
+        DoorTypeSizeable_optional DoorTypeSizeable_;
+        LiningProperties_optional LiningProperties_;
+        PanelProperties_optional PanelProperties_;
+        ClassRef_UniFormat_optional ClassRef_UniFormat_;
+        MaterialList_optional MaterialList_;
+        VoidsInDoor_optional VoidsInDoor_;
       };
     }
   }

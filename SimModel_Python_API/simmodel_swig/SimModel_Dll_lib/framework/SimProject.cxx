@@ -169,6 +169,36 @@ namespace schema
         this->T24ProjectTeam_.set (x);
       }
 
+      const SimProject::ProjectTypeDefinitions_optional& SimProject::
+      ProjectTypeDefinitions () const
+      {
+        return this->ProjectTypeDefinitions_;
+      }
+
+      SimProject::ProjectTypeDefinitions_optional& SimProject::
+      ProjectTypeDefinitions ()
+      {
+        return this->ProjectTypeDefinitions_;
+      }
+
+      void SimProject::
+      ProjectTypeDefinitions (const ProjectTypeDefinitions_type& x)
+      {
+        this->ProjectTypeDefinitions_.set (x);
+      }
+
+      void SimProject::
+      ProjectTypeDefinitions (const ProjectTypeDefinitions_optional& x)
+      {
+        this->ProjectTypeDefinitions_ = x;
+      }
+
+      void SimProject::
+      ProjectTypeDefinitions (::std::auto_ptr< ProjectTypeDefinitions_type > x)
+      {
+        this->ProjectTypeDefinitions_.set (x);
+      }
+
       const SimProject::ParentDesignAltForViews_optional& SimProject::
       ParentDesignAltForViews () const
       {
@@ -253,6 +283,7 @@ namespace schema
         Representation_ (this),
         UnitsInContext_ (this),
         T24ProjectTeam_ (this),
+        ProjectTypeDefinitions_ (this),
         ParentDesignAltForViews_ (this),
         DesAltViewDateTime_ (this)
       {
@@ -265,6 +296,7 @@ namespace schema
         Representation_ (this),
         UnitsInContext_ (this),
         T24ProjectTeam_ (this),
+        ProjectTypeDefinitions_ (this),
         ParentDesignAltForViews_ (this),
         DesAltViewDateTime_ (this)
       {
@@ -279,6 +311,7 @@ namespace schema
         Representation_ (x.Representation_, f, this),
         UnitsInContext_ (x.UnitsInContext_, f, this),
         T24ProjectTeam_ (x.T24ProjectTeam_, f, this),
+        ProjectTypeDefinitions_ (x.ProjectTypeDefinitions_, f, this),
         ParentDesignAltForViews_ (x.ParentDesignAltForViews_, f, this),
         DesAltViewDateTime_ (x.DesAltViewDateTime_, f, this)
       {
@@ -293,6 +326,7 @@ namespace schema
         Representation_ (this),
         UnitsInContext_ (this),
         T24ProjectTeam_ (this),
+        ProjectTypeDefinitions_ (this),
         ParentDesignAltForViews_ (this),
         DesAltViewDateTime_ (this)
       {
@@ -371,6 +405,20 @@ namespace schema
             }
           }
 
+          // ProjectTypeDefinitions
+          //
+          if (n.name () == "ProjectTypeDefinitions" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          {
+            ::std::auto_ptr< ProjectTypeDefinitions_type > r (
+              ProjectTypeDefinitions_traits::create (i, f, this));
+
+            if (!this->ProjectTypeDefinitions_)
+            {
+              this->ProjectTypeDefinitions_.set (r);
+              continue;
+            }
+          }
+
           // ParentDesignAltForViews
           //
           if (n.name () == "ParentDesignAltForViews" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
@@ -417,6 +465,7 @@ namespace schema
           this->Representation_ = x.Representation_;
           this->UnitsInContext_ = x.UnitsInContext_;
           this->T24ProjectTeam_ = x.T24ProjectTeam_;
+          this->ProjectTypeDefinitions_ = x.ProjectTypeDefinitions_;
           this->ParentDesignAltForViews_ = x.ParentDesignAltForViews_;
           this->DesAltViewDateTime_ = x.DesAltViewDateTime_;
         }

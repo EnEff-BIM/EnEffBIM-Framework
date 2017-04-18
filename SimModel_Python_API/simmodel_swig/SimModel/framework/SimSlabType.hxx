@@ -302,6 +302,27 @@ namespace schema
         void
         Tag (::std::auto_ptr< Tag_type > p);
 
+        // MaterialLayerSet
+        //
+        typedef ::xml_schema::idref MaterialLayerSet_type;
+        typedef ::xsd::cxx::tree::optional< MaterialLayerSet_type > MaterialLayerSet_optional;
+        typedef ::xsd::cxx::tree::traits< MaterialLayerSet_type, char > MaterialLayerSet_traits;
+
+        const MaterialLayerSet_optional&
+        MaterialLayerSet () const;
+
+        MaterialLayerSet_optional&
+        MaterialLayerSet ();
+
+        void
+        MaterialLayerSet (const MaterialLayerSet_type& x);
+
+        void
+        MaterialLayerSet (const MaterialLayerSet_optional& x);
+
+        void
+        MaterialLayerSet (::std::auto_ptr< MaterialLayerSet_type > p);
+
         // Constructors.
         //
         SimSlabType ();
@@ -336,6 +357,7 @@ namespace schema
         protected:
         RepresentationMaps_optional RepresentationMaps_;
         Tag_optional Tag_;
+        MaterialLayerSet_optional MaterialLayerSet_;
       };
     }
   }

@@ -176,6 +176,9 @@ class SimSystem_HvacHotWater_FullSystem(SimSystem_HvacHotWater_Control.SimSystem
     def SimSys_PresSimType(self, *args):
         return _SimSystem_HvacHotWater_FullSystem.SimSystem_HvacHotWater_FullSystem_SimSys_PresSimType(self, *args)
 
+    def T24AnnualSolarFraction(self, *args):
+        return _SimSystem_HvacHotWater_FullSystem.SimSystem_HvacHotWater_FullSystem_T24AnnualSolarFraction(self, *args)
+
     def T24Brand(self, *args):
         return _SimSystem_HvacHotWater_FullSystem.SimSystem_HvacHotWater_FullSystem_T24Brand(self, *args)
 
@@ -188,32 +191,83 @@ class SimSystem_HvacHotWater_FullSystem(SimSystem_HvacHotWater_Control.SimSystem
     def T24Manufacturer(self, *args):
         return _SimSystem_HvacHotWater_FullSystem.SimSystem_HvacHotWater_FullSystem_T24Manufacturer(self, *args)
 
-    def T24Mch08A(self, *args):
-        return _SimSystem_HvacHotWater_FullSystem.SimSystem_HvacHotWater_FullSystem_T24Mch08A(self, *args)
+    def T24NRCAMch02A(self, *args):
+        return _SimSystem_HvacHotWater_FullSystem.SimSystem_HvacHotWater_FullSystem_T24NRCAMch02A(self, *args)
 
-    def T24Mch09A(self, *args):
-        return _SimSystem_HvacHotWater_FullSystem.SimSystem_HvacHotWater_FullSystem_T24Mch09A(self, *args)
+    def T24NRCAMch03A(self, *args):
+        return _SimSystem_HvacHotWater_FullSystem.SimSystem_HvacHotWater_FullSystem_T24NRCAMch03A(self, *args)
 
-    def T24Mch10A(self, *args):
-        return _SimSystem_HvacHotWater_FullSystem.SimSystem_HvacHotWater_FullSystem_T24Mch10A(self, *args)
+    def T24NRCAMch04A(self, *args):
+        return _SimSystem_HvacHotWater_FullSystem.SimSystem_HvacHotWater_FullSystem_T24NRCAMch04A(self, *args)
 
-    def T24Mch11A(self, *args):
-        return _SimSystem_HvacHotWater_FullSystem.SimSystem_HvacHotWater_FullSystem_T24Mch11A(self, *args)
+    def T24NRCAMch05A(self, *args):
+        return _SimSystem_HvacHotWater_FullSystem.SimSystem_HvacHotWater_FullSystem_T24NRCAMch05A(self, *args)
 
-    def T24Mch15A(self, *args):
-        return _SimSystem_HvacHotWater_FullSystem.SimSystem_HvacHotWater_FullSystem_T24Mch15A(self, *args)
+    def T24NRCAMch06A(self, *args):
+        return _SimSystem_HvacHotWater_FullSystem.SimSystem_HvacHotWater_FullSystem_T24NRCAMch06A(self, *args)
 
-    def T24Mch17A(self, *args):
-        return _SimSystem_HvacHotWater_FullSystem.SimSystem_HvacHotWater_FullSystem_T24Mch17A(self, *args)
+    def T24NRCAMch07A(self, *args):
+        return _SimSystem_HvacHotWater_FullSystem.SimSystem_HvacHotWater_FullSystem_T24NRCAMch07A(self, *args)
 
-    def T24Mch18A(self, *args):
-        return _SimSystem_HvacHotWater_FullSystem.SimSystem_HvacHotWater_FullSystem_T24Mch18A(self, *args)
+    def T24NRCAMch08A(self, *args):
+        return _SimSystem_HvacHotWater_FullSystem.SimSystem_HvacHotWater_FullSystem_T24NRCAMch08A(self, *args)
+
+    def T24NRCAMch09A(self, *args):
+        return _SimSystem_HvacHotWater_FullSystem.SimSystem_HvacHotWater_FullSystem_T24NRCAMch09A(self, *args)
+
+    def T24NRCAMch10A(self, *args):
+        return _SimSystem_HvacHotWater_FullSystem.SimSystem_HvacHotWater_FullSystem_T24NRCAMch10A(self, *args)
+
+    def T24NRCAMch11A(self, *args):
+        return _SimSystem_HvacHotWater_FullSystem.SimSystem_HvacHotWater_FullSystem_T24NRCAMch11A(self, *args)
+
+    def T24NRCAMch12A(self, *args):
+        return _SimSystem_HvacHotWater_FullSystem.SimSystem_HvacHotWater_FullSystem_T24NRCAMch12A(self, *args)
+
+    def T24NRCAMch13A(self, *args):
+        return _SimSystem_HvacHotWater_FullSystem.SimSystem_HvacHotWater_FullSystem_T24NRCAMch13A(self, *args)
+
+    def T24NRCAMch14A(self, *args):
+        return _SimSystem_HvacHotWater_FullSystem.SimSystem_HvacHotWater_FullSystem_T24NRCAMch14A(self, *args)
+
+    def T24NRCAMch15A(self, *args):
+        return _SimSystem_HvacHotWater_FullSystem.SimSystem_HvacHotWater_FullSystem_T24NRCAMch15A(self, *args)
+
+    def T24NRCAMch16A(self, *args):
+        return _SimSystem_HvacHotWater_FullSystem.SimSystem_HvacHotWater_FullSystem_T24NRCAMch16A(self, *args)
+
+    def T24NRCAMch17A(self, *args):
+        return _SimSystem_HvacHotWater_FullSystem.SimSystem_HvacHotWater_FullSystem_T24NRCAMch17A(self, *args)
+
+    def T24NRCAMch18A(self, *args):
+        return _SimSystem_HvacHotWater_FullSystem.SimSystem_HvacHotWater_FullSystem_T24NRCAMch18A(self, *args)
 
     def T24ModelNo(self, *args):
         return _SimSystem_HvacHotWater_FullSystem.SimSystem_HvacHotWater_FullSystem_T24ModelNo(self, *args)
 
+    def T24SolarCollectorProgramName(self, *args):
+        return _SimSystem_HvacHotWater_FullSystem.SimSystem_HvacHotWater_FullSystem_T24SolarCollectorProgramName(self, *args)
+
+    def T24NumberDwellingUnits(self, *args):
+        return _SimSystem_HvacHotWater_FullSystem.SimSystem_HvacHotWater_FullSystem_T24NumberDwellingUnits(self, *args)
+
+    def T24RatedEffCurveIntercept(self, *args):
+        return _SimSystem_HvacHotWater_FullSystem.SimSystem_HvacHotWater_FullSystem_T24RatedEffCurveIntercept(self, *args)
+
+    def T24RatedEffCurveSlope(self, *args):
+        return _SimSystem_HvacHotWater_FullSystem.SimSystem_HvacHotWater_FullSystem_T24RatedEffCurveSlope(self, *args)
+
+    def T24SecondTankVolume(self, *args):
+        return _SimSystem_HvacHotWater_FullSystem.SimSystem_HvacHotWater_FullSystem_T24SecondTankVolume(self, *args)
+
+    def T24SRRCCertificationNumber(self, *args):
+        return _SimSystem_HvacHotWater_FullSystem.SimSystem_HvacHotWater_FullSystem_T24SRRCCertificationNumber(self, *args)
+
     def T24ConstructStatus3(self, *args):
         return _SimSystem_HvacHotWater_FullSystem.SimSystem_HvacHotWater_FullSystem_T24ConstructStatus3(self, *args)
+
+    def T24SolarCollectorProgramVersion(self, *args):
+        return _SimSystem_HvacHotWater_FullSystem.SimSystem_HvacHotWater_FullSystem_T24SolarCollectorProgramVersion(self, *args)
 
     def __init__(self, *args):
         this = _SimSystem_HvacHotWater_FullSystem.new_SimSystem_HvacHotWater_FullSystem(*args)

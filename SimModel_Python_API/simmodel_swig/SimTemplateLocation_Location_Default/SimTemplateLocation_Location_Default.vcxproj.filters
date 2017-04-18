@@ -25,6 +25,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="SimTemplateLocation_Location_Default.i" />
+    <CustomBuild Include="SimTemplateLocation_Location_Default.i" />
   </ItemGroup>
 </Project>

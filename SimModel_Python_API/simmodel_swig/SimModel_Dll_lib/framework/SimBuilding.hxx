@@ -472,8 +472,7 @@ namespace schema
         // BuildingHeight
         //
         typedef ::xml_schema::double_ BuildingHeight_type;
-        //typedef ::xsd::cxx::tree::optional< BuildingHeight_type > BuildingHeight_optional;
-		typedef ::xsd::cxx::tree::optional< BuildingHeight_type, true > BuildingHeight_optional;
+        typedef ::xsd::cxx::tree::optional< BuildingHeight_type, true > BuildingHeight_optional;
         typedef ::xsd::cxx::tree::traits< BuildingHeight_type, char, ::xsd::cxx::tree::schema_type::double_ > BuildingHeight_traits;
 
         const BuildingHeight_optional&

@@ -255,11 +255,43 @@ namespace schema
 {
   namespace simxml
   {
+    namespace SimModelCore
+    {
+      class doubleList;
+    }
+  }
+}
+
+namespace schema
+{
+  namespace simxml
+  {
     namespace ResourcesGeometry
     {
       class SimGeomCurve: public ::schema::simxml::SimModelCore::SimGeometricRepresentationItem
       {
         public:
+        // Coordinates
+        //
+        typedef ::schema::simxml::SimModelCore::doubleList Coordinates_type;
+        typedef ::xsd::cxx::tree::optional< Coordinates_type, false > Coordinates_optional;
+        typedef ::xsd::cxx::tree::traits< Coordinates_type, char > Coordinates_traits;
+
+        const Coordinates_optional&
+        Coordinates () const;
+
+        Coordinates_optional&
+        Coordinates ();
+
+        void
+        Coordinates (const Coordinates_type& x);
+
+        void
+        Coordinates (const Coordinates_optional& x);
+
+        void
+        Coordinates (::std::auto_ptr< Coordinates_type > p);
+
         // Constructors.
         //
         SimGeomCurve ();
@@ -278,8 +310,21 @@ namespace schema
         _clone (::xml_schema::flags f = 0,
                 ::xml_schema::container* c = 0) const;
 
+        SimGeomCurve&
+        operator= (const SimGeomCurve& x);
+
         virtual 
         ~SimGeomCurve ();
+
+        // Implementation.
+        //
+        protected:
+        void
+        parse (::xsd::cxx::xml::dom::parser< char >&,
+               ::xml_schema::flags);
+
+        protected:
+        Coordinates_optional Coordinates_;
       };
     }
   }

@@ -25,6 +25,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="SimModelRepresentationContextGeometricRepresentationSubCon.i" />
+    <CustomBuild Include="SimModelRepresentationContextGeometricRepresentationSubCon.i" />
   </ItemGroup>
 </Project>

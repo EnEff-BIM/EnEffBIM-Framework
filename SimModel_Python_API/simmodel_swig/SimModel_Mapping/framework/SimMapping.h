@@ -5,10 +5,11 @@
 #include <string>
 // mapping rules
 #include "./mapping_rule_lib/mapping_rule_schema.hxx"
-//using namespace namespaces::Sim::DataMap;
 // forward declaration
 class SimHierarchyNode;
 class SimHierarchy;
+//using namespace std;
+#include "../SimModel_Dll_lib/framework/simmodel.hxx"
 
 class MappedProperty
 {
@@ -29,6 +30,8 @@ private:
 	
 	// the name of a record instance declared in the target data model
 	std::string recordInstance;
+	// the location of the record instance
+	std::string recordInstanceLocation;
 	// a record location in the target data model
 	std::string recordLocation;
 
@@ -38,6 +41,7 @@ public:
 		propertyName = "";
 		propertyLocation = "";
 		recordInstance = "";
+		recordInstanceLocation = "";
 		recordLocation = "";
 
 		propertyValueType = "";

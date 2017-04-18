@@ -255,6 +255,17 @@ namespace schema
 {
   namespace simxml
   {
+    namespace SimModelCore
+    {
+      class doubleList;
+    }
+  }
+}
+
+namespace schema
+{
+  namespace simxml
+  {
     namespace BuildingModel
     {
       class T24InfiltrMthd;
@@ -313,6 +324,930 @@ namespace schema
         void
         Tag (::std::auto_ptr< Tag_type > p);
 
+        // SpaceThermalSimulationType
+        //
+        typedef ::xml_schema::string SpaceThermalSimulationType_type;
+        typedef ::xsd::cxx::tree::optional< SpaceThermalSimulationType_type > SpaceThermalSimulationType_optional;
+        typedef ::xsd::cxx::tree::traits< SpaceThermalSimulationType_type, char > SpaceThermalSimulationType_traits;
+
+        const SpaceThermalSimulationType_optional&
+        SpaceThermalSimulationType () const;
+
+        SpaceThermalSimulationType_optional&
+        SpaceThermalSimulationType ();
+
+        void
+        SpaceThermalSimulationType (const SpaceThermalSimulationType_type& x);
+
+        void
+        SpaceThermalSimulationType (const SpaceThermalSimulationType_optional& x);
+
+        void
+        SpaceThermalSimulationType (::std::auto_ptr< SpaceThermalSimulationType_type > p);
+
+        // SpaceConditioningRequirement_Double
+        //
+        typedef ::xml_schema::double_ SpaceConditioningRequirement_Double_type;
+        typedef ::xsd::cxx::tree::optional< SpaceConditioningRequirement_Double_type > SpaceConditioningRequirement_Double_optional;
+        typedef ::xsd::cxx::tree::traits< SpaceConditioningRequirement_Double_type, char, ::xsd::cxx::tree::schema_type::double_ > SpaceConditioningRequirement_Double_traits;
+
+        const SpaceConditioningRequirement_Double_optional&
+        SpaceConditioningRequirement_Double () const;
+
+        SpaceConditioningRequirement_Double_optional&
+        SpaceConditioningRequirement_Double ();
+
+        void
+        SpaceConditioningRequirement_Double (const SpaceConditioningRequirement_Double_type& x);
+
+        void
+        SpaceConditioningRequirement_Double (const SpaceConditioningRequirement_Double_optional& x);
+
+        // SpaceOccupantDensity
+        //
+        typedef ::xml_schema::double_ SpaceOccupantDensity_type;
+        typedef ::xsd::cxx::tree::optional< SpaceOccupantDensity_type > SpaceOccupantDensity_optional;
+        typedef ::xsd::cxx::tree::traits< SpaceOccupantDensity_type, char, ::xsd::cxx::tree::schema_type::double_ > SpaceOccupantDensity_traits;
+
+        const SpaceOccupantDensity_optional&
+        SpaceOccupantDensity () const;
+
+        SpaceOccupantDensity_optional&
+        SpaceOccupantDensity ();
+
+        void
+        SpaceOccupantDensity (const SpaceOccupantDensity_type& x);
+
+        void
+        SpaceOccupantDensity (const SpaceOccupantDensity_optional& x);
+
+        // SpaceOccupantHeatRateLatent
+        //
+        typedef ::xml_schema::double_ SpaceOccupantHeatRateLatent_type;
+        typedef ::xsd::cxx::tree::optional< SpaceOccupantHeatRateLatent_type > SpaceOccupantHeatRateLatent_optional;
+        typedef ::xsd::cxx::tree::traits< SpaceOccupantHeatRateLatent_type, char, ::xsd::cxx::tree::schema_type::double_ > SpaceOccupantHeatRateLatent_traits;
+
+        const SpaceOccupantHeatRateLatent_optional&
+        SpaceOccupantHeatRateLatent () const;
+
+        SpaceOccupantHeatRateLatent_optional&
+        SpaceOccupantHeatRateLatent ();
+
+        void
+        SpaceOccupantHeatRateLatent (const SpaceOccupantHeatRateLatent_type& x);
+
+        void
+        SpaceOccupantHeatRateLatent (const SpaceOccupantHeatRateLatent_optional& x);
+
+        // SpaceOccupantHeatRateSensible
+        //
+        typedef ::xml_schema::double_ SpaceOccupantHeatRateSensible_type;
+        typedef ::xsd::cxx::tree::optional< SpaceOccupantHeatRateSensible_type > SpaceOccupantHeatRateSensible_optional;
+        typedef ::xsd::cxx::tree::traits< SpaceOccupantHeatRateSensible_type, char, ::xsd::cxx::tree::schema_type::double_ > SpaceOccupantHeatRateSensible_traits;
+
+        const SpaceOccupantHeatRateSensible_optional&
+        SpaceOccupantHeatRateSensible () const;
+
+        SpaceOccupantHeatRateSensible_optional&
+        SpaceOccupantHeatRateSensible ();
+
+        void
+        SpaceOccupantHeatRateSensible (const SpaceOccupantHeatRateSensible_type& x);
+
+        void
+        SpaceOccupantHeatRateSensible (const SpaceOccupantHeatRateSensible_optional& x);
+
+        // SpaceOccupantLoad
+        //
+        typedef ::xml_schema::double_ SpaceOccupantLoad_type;
+        typedef ::xsd::cxx::tree::optional< SpaceOccupantLoad_type > SpaceOccupantLoad_optional;
+        typedef ::xsd::cxx::tree::traits< SpaceOccupantLoad_type, char, ::xsd::cxx::tree::schema_type::double_ > SpaceOccupantLoad_traits;
+
+        const SpaceOccupantLoad_optional&
+        SpaceOccupantLoad () const;
+
+        SpaceOccupantLoad_optional&
+        SpaceOccupantLoad ();
+
+        void
+        SpaceOccupantLoad (const SpaceOccupantLoad_type& x);
+
+        void
+        SpaceOccupantLoad (const SpaceOccupantLoad_optional& x);
+
+        // SpaceEquipmentLoad
+        //
+        typedef ::xml_schema::double_ SpaceEquipmentLoad_type;
+        typedef ::xsd::cxx::tree::optional< SpaceEquipmentLoad_type > SpaceEquipmentLoad_optional;
+        typedef ::xsd::cxx::tree::traits< SpaceEquipmentLoad_type, char, ::xsd::cxx::tree::schema_type::double_ > SpaceEquipmentLoad_traits;
+
+        const SpaceEquipmentLoad_optional&
+        SpaceEquipmentLoad () const;
+
+        SpaceEquipmentLoad_optional&
+        SpaceEquipmentLoad ();
+
+        void
+        SpaceEquipmentLoad (const SpaceEquipmentLoad_type& x);
+
+        void
+        SpaceEquipmentLoad (const SpaceEquipmentLoad_optional& x);
+
+        // SpaceLightingLoad
+        //
+        typedef ::xml_schema::double_ SpaceLightingLoad_type;
+        typedef ::xsd::cxx::tree::optional< SpaceLightingLoad_type > SpaceLightingLoad_optional;
+        typedef ::xsd::cxx::tree::traits< SpaceLightingLoad_type, char, ::xsd::cxx::tree::schema_type::double_ > SpaceLightingLoad_traits;
+
+        const SpaceLightingLoad_optional&
+        SpaceLightingLoad () const;
+
+        SpaceLightingLoad_optional&
+        SpaceLightingLoad ();
+
+        void
+        SpaceLightingLoad (const SpaceLightingLoad_type& x);
+
+        void
+        SpaceLightingLoad (const SpaceLightingLoad_optional& x);
+
+        // InsideDryBulbTempHeating_Double
+        //
+        typedef ::xml_schema::double_ InsideDryBulbTempHeating_Double_type;
+        typedef ::xsd::cxx::tree::optional< InsideDryBulbTempHeating_Double_type > InsideDryBulbTempHeating_Double_optional;
+        typedef ::xsd::cxx::tree::traits< InsideDryBulbTempHeating_Double_type, char, ::xsd::cxx::tree::schema_type::double_ > InsideDryBulbTempHeating_Double_traits;
+
+        const InsideDryBulbTempHeating_Double_optional&
+        InsideDryBulbTempHeating_Double () const;
+
+        InsideDryBulbTempHeating_Double_optional&
+        InsideDryBulbTempHeating_Double ();
+
+        void
+        InsideDryBulbTempHeating_Double (const InsideDryBulbTempHeating_Double_type& x);
+
+        void
+        InsideDryBulbTempHeating_Double (const InsideDryBulbTempHeating_Double_optional& x);
+
+        // InsideRelHumidityHeating
+        //
+        typedef ::xml_schema::double_ InsideRelHumidityHeating_type;
+        typedef ::xsd::cxx::tree::optional< InsideRelHumidityHeating_type > InsideRelHumidityHeating_optional;
+        typedef ::xsd::cxx::tree::traits< InsideRelHumidityHeating_type, char, ::xsd::cxx::tree::schema_type::double_ > InsideRelHumidityHeating_traits;
+
+        const InsideRelHumidityHeating_optional&
+        InsideRelHumidityHeating () const;
+
+        InsideRelHumidityHeating_optional&
+        InsideRelHumidityHeating ();
+
+        void
+        InsideRelHumidityHeating (const InsideRelHumidityHeating_type& x);
+
+        void
+        InsideRelHumidityHeating (const InsideRelHumidityHeating_optional& x);
+
+        // InsideDryBulbTempCooling_Double
+        //
+        typedef ::xml_schema::double_ InsideDryBulbTempCooling_Double_type;
+        typedef ::xsd::cxx::tree::optional< InsideDryBulbTempCooling_Double_type > InsideDryBulbTempCooling_Double_optional;
+        typedef ::xsd::cxx::tree::traits< InsideDryBulbTempCooling_Double_type, char, ::xsd::cxx::tree::schema_type::double_ > InsideDryBulbTempCooling_Double_traits;
+
+        const InsideDryBulbTempCooling_Double_optional&
+        InsideDryBulbTempCooling_Double () const;
+
+        InsideDryBulbTempCooling_Double_optional&
+        InsideDryBulbTempCooling_Double ();
+
+        void
+        InsideDryBulbTempCooling_Double (const InsideDryBulbTempCooling_Double_type& x);
+
+        void
+        InsideDryBulbTempCooling_Double (const InsideDryBulbTempCooling_Double_optional& x);
+
+        // InsideRelHumidityCooling
+        //
+        typedef ::xml_schema::double_ InsideRelHumidityCooling_type;
+        typedef ::xsd::cxx::tree::optional< InsideRelHumidityCooling_type > InsideRelHumidityCooling_optional;
+        typedef ::xsd::cxx::tree::traits< InsideRelHumidityCooling_type, char, ::xsd::cxx::tree::schema_type::double_ > InsideRelHumidityCooling_traits;
+
+        const InsideRelHumidityCooling_optional&
+        InsideRelHumidityCooling () const;
+
+        InsideRelHumidityCooling_optional&
+        InsideRelHumidityCooling ();
+
+        void
+        InsideRelHumidityCooling (const InsideRelHumidityCooling_type& x);
+
+        void
+        InsideRelHumidityCooling (const InsideRelHumidityCooling_optional& x);
+
+        // IncludesReturnAirPlenum
+        //
+        typedef ::xml_schema::boolean IncludesReturnAirPlenum_type;
+        typedef ::xsd::cxx::tree::optional< IncludesReturnAirPlenum_type > IncludesReturnAirPlenum_optional;
+        typedef ::xsd::cxx::tree::traits< IncludesReturnAirPlenum_type, char > IncludesReturnAirPlenum_traits;
+
+        const IncludesReturnAirPlenum_optional&
+        IncludesReturnAirPlenum () const;
+
+        IncludesReturnAirPlenum_optional&
+        IncludesReturnAirPlenum ();
+
+        void
+        IncludesReturnAirPlenum (const IncludesReturnAirPlenum_type& x);
+
+        void
+        IncludesReturnAirPlenum (const IncludesReturnAirPlenum_optional& x);
+
+        // PeakAirFlowCooling_Double
+        //
+        typedef ::xml_schema::double_ PeakAirFlowCooling_Double_type;
+        typedef ::xsd::cxx::tree::optional< PeakAirFlowCooling_Double_type > PeakAirFlowCooling_Double_optional;
+        typedef ::xsd::cxx::tree::traits< PeakAirFlowCooling_Double_type, char, ::xsd::cxx::tree::schema_type::double_ > PeakAirFlowCooling_Double_traits;
+
+        const PeakAirFlowCooling_Double_optional&
+        PeakAirFlowCooling_Double () const;
+
+        PeakAirFlowCooling_Double_optional&
+        PeakAirFlowCooling_Double ();
+
+        void
+        PeakAirFlowCooling_Double (const PeakAirFlowCooling_Double_type& x);
+
+        void
+        PeakAirFlowCooling_Double (const PeakAirFlowCooling_Double_optional& x);
+
+        // PeakAirFlowHeating_Double
+        //
+        typedef ::xml_schema::double_ PeakAirFlowHeating_Double_type;
+        typedef ::xsd::cxx::tree::optional< PeakAirFlowHeating_Double_type > PeakAirFlowHeating_Double_optional;
+        typedef ::xsd::cxx::tree::traits< PeakAirFlowHeating_Double_type, char, ::xsd::cxx::tree::schema_type::double_ > PeakAirFlowHeating_Double_traits;
+
+        const PeakAirFlowHeating_Double_optional&
+        PeakAirFlowHeating_Double () const;
+
+        PeakAirFlowHeating_Double_optional&
+        PeakAirFlowHeating_Double ();
+
+        void
+        PeakAirFlowHeating_Double (const PeakAirFlowHeating_Double_type& x);
+
+        void
+        PeakAirFlowHeating_Double (const PeakAirFlowHeating_Double_optional& x);
+
+        // ExhaustAirFlowRate_Double
+        //
+        typedef ::xml_schema::double_ ExhaustAirFlowRate_Double_type;
+        typedef ::xsd::cxx::tree::optional< ExhaustAirFlowRate_Double_type > ExhaustAirFlowRate_Double_optional;
+        typedef ::xsd::cxx::tree::traits< ExhaustAirFlowRate_Double_type, char, ::xsd::cxx::tree::schema_type::double_ > ExhaustAirFlowRate_Double_traits;
+
+        const ExhaustAirFlowRate_Double_optional&
+        ExhaustAirFlowRate_Double () const;
+
+        ExhaustAirFlowRate_Double_optional&
+        ExhaustAirFlowRate_Double ();
+
+        void
+        ExhaustAirFlowRate_Double (const ExhaustAirFlowRate_Double_type& x);
+
+        void
+        ExhaustAirFlowRate_Double (const ExhaustAirFlowRate_Double_optional& x);
+
+        // NaturalAirChangeRate_Double
+        //
+        typedef ::xml_schema::double_ NaturalAirChangeRate_Double_type;
+        typedef ::xsd::cxx::tree::optional< NaturalAirChangeRate_Double_type > NaturalAirChangeRate_Double_optional;
+        typedef ::xsd::cxx::tree::traits< NaturalAirChangeRate_Double_type, char, ::xsd::cxx::tree::schema_type::double_ > NaturalAirChangeRate_Double_traits;
+
+        const NaturalAirChangeRate_Double_optional&
+        NaturalAirChangeRate_Double () const;
+
+        NaturalAirChangeRate_Double_optional&
+        NaturalAirChangeRate_Double ();
+
+        void
+        NaturalAirChangeRate_Double (const NaturalAirChangeRate_Double_type& x);
+
+        void
+        NaturalAirChangeRate_Double (const NaturalAirChangeRate_Double_optional& x);
+
+        // MechanicalAirChangeRate_Double
+        //
+        typedef ::xml_schema::double_ MechanicalAirChangeRate_Double_type;
+        typedef ::xsd::cxx::tree::optional< MechanicalAirChangeRate_Double_type > MechanicalAirChangeRate_Double_optional;
+        typedef ::xsd::cxx::tree::traits< MechanicalAirChangeRate_Double_type, char, ::xsd::cxx::tree::schema_type::double_ > MechanicalAirChangeRate_Double_traits;
+
+        const MechanicalAirChangeRate_Double_optional&
+        MechanicalAirChangeRate_Double () const;
+
+        MechanicalAirChangeRate_Double_optional&
+        MechanicalAirChangeRate_Double ();
+
+        void
+        MechanicalAirChangeRate_Double (const MechanicalAirChangeRate_Double_type& x);
+
+        void
+        MechanicalAirChangeRate_Double (const MechanicalAirChangeRate_Double_optional& x);
+
+        // VentilationType
+        //
+        typedef ::xml_schema::string VentilationType_type;
+        typedef ::xsd::cxx::tree::optional< VentilationType_type > VentilationType_optional;
+        typedef ::xsd::cxx::tree::traits< VentilationType_type, char > VentilationType_traits;
+
+        const VentilationType_optional&
+        VentilationType () const;
+
+        VentilationType_optional&
+        VentilationType ();
+
+        void
+        VentilationType (const VentilationType_type& x);
+
+        void
+        VentilationType (const VentilationType_optional& x);
+
+        void
+        VentilationType (::std::auto_ptr< VentilationType_type > p);
+
+        // OutsideAirPerPerson_Double
+        //
+        typedef ::xml_schema::double_ OutsideAirPerPerson_Double_type;
+        typedef ::xsd::cxx::tree::optional< OutsideAirPerPerson_Double_type > OutsideAirPerPerson_Double_optional;
+        typedef ::xsd::cxx::tree::traits< OutsideAirPerPerson_Double_type, char, ::xsd::cxx::tree::schema_type::double_ > OutsideAirPerPerson_Double_traits;
+
+        const OutsideAirPerPerson_Double_optional&
+        OutsideAirPerPerson_Double () const;
+
+        OutsideAirPerPerson_Double_optional&
+        OutsideAirPerPerson_Double ();
+
+        void
+        OutsideAirPerPerson_Double (const OutsideAirPerPerson_Double_type& x);
+
+        void
+        OutsideAirPerPerson_Double (const OutsideAirPerPerson_Double_optional& x);
+
+        // ClassRef_SpaceByFunction
+        //
+        typedef ::xml_schema::idref ClassRef_SpaceByFunction_type;
+        typedef ::xsd::cxx::tree::optional< ClassRef_SpaceByFunction_type > ClassRef_SpaceByFunction_optional;
+        typedef ::xsd::cxx::tree::traits< ClassRef_SpaceByFunction_type, char > ClassRef_SpaceByFunction_traits;
+
+        const ClassRef_SpaceByFunction_optional&
+        ClassRef_SpaceByFunction () const;
+
+        ClassRef_SpaceByFunction_optional&
+        ClassRef_SpaceByFunction ();
+
+        void
+        ClassRef_SpaceByFunction (const ClassRef_SpaceByFunction_type& x);
+
+        void
+        ClassRef_SpaceByFunction (const ClassRef_SpaceByFunction_optional& x);
+
+        void
+        ClassRef_SpaceByFunction (::std::auto_ptr< ClassRef_SpaceByFunction_type > p);
+
+        // ClassRef_SpaceTypeOwner
+        //
+        typedef ::xml_schema::idref ClassRef_SpaceTypeOwner_type;
+        typedef ::xsd::cxx::tree::optional< ClassRef_SpaceTypeOwner_type > ClassRef_SpaceTypeOwner_optional;
+        typedef ::xsd::cxx::tree::traits< ClassRef_SpaceTypeOwner_type, char > ClassRef_SpaceTypeOwner_traits;
+
+        const ClassRef_SpaceTypeOwner_optional&
+        ClassRef_SpaceTypeOwner () const;
+
+        ClassRef_SpaceTypeOwner_optional&
+        ClassRef_SpaceTypeOwner ();
+
+        void
+        ClassRef_SpaceTypeOwner (const ClassRef_SpaceTypeOwner_type& x);
+
+        void
+        ClassRef_SpaceTypeOwner (const ClassRef_SpaceTypeOwner_optional& x);
+
+        void
+        ClassRef_SpaceTypeOwner (::std::auto_ptr< ClassRef_SpaceTypeOwner_type > p);
+
+        // ClassRef_SpaceCategoryOwner
+        //
+        typedef ::xml_schema::idref ClassRef_SpaceCategoryOwner_type;
+        typedef ::xsd::cxx::tree::optional< ClassRef_SpaceCategoryOwner_type > ClassRef_SpaceCategoryOwner_optional;
+        typedef ::xsd::cxx::tree::traits< ClassRef_SpaceCategoryOwner_type, char > ClassRef_SpaceCategoryOwner_traits;
+
+        const ClassRef_SpaceCategoryOwner_optional&
+        ClassRef_SpaceCategoryOwner () const;
+
+        ClassRef_SpaceCategoryOwner_optional&
+        ClassRef_SpaceCategoryOwner ();
+
+        void
+        ClassRef_SpaceCategoryOwner (const ClassRef_SpaceCategoryOwner_type& x);
+
+        void
+        ClassRef_SpaceCategoryOwner (const ClassRef_SpaceCategoryOwner_optional& x);
+
+        void
+        ClassRef_SpaceCategoryOwner (::std::auto_ptr< ClassRef_SpaceCategoryOwner_type > p);
+
+        // ClassRef_SpaceCategoryBOMA
+        //
+        typedef ::xml_schema::idref ClassRef_SpaceCategoryBOMA_type;
+        typedef ::xsd::cxx::tree::optional< ClassRef_SpaceCategoryBOMA_type > ClassRef_SpaceCategoryBOMA_optional;
+        typedef ::xsd::cxx::tree::traits< ClassRef_SpaceCategoryBOMA_type, char > ClassRef_SpaceCategoryBOMA_traits;
+
+        const ClassRef_SpaceCategoryBOMA_optional&
+        ClassRef_SpaceCategoryBOMA () const;
+
+        ClassRef_SpaceCategoryBOMA_optional&
+        ClassRef_SpaceCategoryBOMA ();
+
+        void
+        ClassRef_SpaceCategoryBOMA (const ClassRef_SpaceCategoryBOMA_type& x);
+
+        void
+        ClassRef_SpaceCategoryBOMA (const ClassRef_SpaceCategoryBOMA_optional& x);
+
+        void
+        ClassRef_SpaceCategoryBOMA (::std::auto_ptr< ClassRef_SpaceCategoryBOMA_type > p);
+
+        // SpaceOccupantsList
+        //
+        typedef ::xml_schema::idrefs SpaceOccupantsList_type;
+        typedef ::xsd::cxx::tree::optional< SpaceOccupantsList_type > SpaceOccupantsList_optional;
+        typedef ::xsd::cxx::tree::traits< SpaceOccupantsList_type, char > SpaceOccupantsList_traits;
+
+        const SpaceOccupantsList_optional&
+        SpaceOccupantsList () const;
+
+        SpaceOccupantsList_optional&
+        SpaceOccupantsList ();
+
+        void
+        SpaceOccupantsList (const SpaceOccupantsList_type& x);
+
+        void
+        SpaceOccupantsList (const SpaceOccupantsList_optional& x);
+
+        void
+        SpaceOccupantsList (::std::auto_ptr< SpaceOccupantsList_type > p);
+
+        // OccupancyScheduleAssignment
+        //
+        typedef ::xml_schema::idref OccupancyScheduleAssignment_type;
+        typedef ::xsd::cxx::tree::optional< OccupancyScheduleAssignment_type > OccupancyScheduleAssignment_optional;
+        typedef ::xsd::cxx::tree::traits< OccupancyScheduleAssignment_type, char > OccupancyScheduleAssignment_traits;
+
+        const OccupancyScheduleAssignment_optional&
+        OccupancyScheduleAssignment () const;
+
+        OccupancyScheduleAssignment_optional&
+        OccupancyScheduleAssignment ();
+
+        void
+        OccupancyScheduleAssignment (const OccupancyScheduleAssignment_type& x);
+
+        void
+        OccupancyScheduleAssignment (const OccupancyScheduleAssignment_optional& x);
+
+        void
+        OccupancyScheduleAssignment (::std::auto_ptr< OccupancyScheduleAssignment_type > p);
+
+        // LightingScheduleAssignment
+        //
+        typedef ::xml_schema::idref LightingScheduleAssignment_type;
+        typedef ::xsd::cxx::tree::optional< LightingScheduleAssignment_type > LightingScheduleAssignment_optional;
+        typedef ::xsd::cxx::tree::traits< LightingScheduleAssignment_type, char > LightingScheduleAssignment_traits;
+
+        const LightingScheduleAssignment_optional&
+        LightingScheduleAssignment () const;
+
+        LightingScheduleAssignment_optional&
+        LightingScheduleAssignment ();
+
+        void
+        LightingScheduleAssignment (const LightingScheduleAssignment_type& x);
+
+        void
+        LightingScheduleAssignment (const LightingScheduleAssignment_optional& x);
+
+        void
+        LightingScheduleAssignment (::std::auto_ptr< LightingScheduleAssignment_type > p);
+
+        // EquipmentScheduleAssignment
+        //
+        typedef ::xml_schema::idref EquipmentScheduleAssignment_type;
+        typedef ::xsd::cxx::tree::optional< EquipmentScheduleAssignment_type > EquipmentScheduleAssignment_optional;
+        typedef ::xsd::cxx::tree::traits< EquipmentScheduleAssignment_type, char > EquipmentScheduleAssignment_traits;
+
+        const EquipmentScheduleAssignment_optional&
+        EquipmentScheduleAssignment () const;
+
+        EquipmentScheduleAssignment_optional&
+        EquipmentScheduleAssignment ();
+
+        void
+        EquipmentScheduleAssignment (const EquipmentScheduleAssignment_type& x);
+
+        void
+        EquipmentScheduleAssignment (const EquipmentScheduleAssignment_optional& x);
+
+        void
+        EquipmentScheduleAssignment (::std::auto_ptr< EquipmentScheduleAssignment_type > p);
+
+        // T24CommRefrigEPD
+        //
+        typedef ::xml_schema::double_ T24CommRefrigEPD_type;
+        typedef ::xsd::cxx::tree::optional< T24CommRefrigEPD_type > T24CommRefrigEPD_optional;
+        typedef ::xsd::cxx::tree::traits< T24CommRefrigEPD_type, char, ::xsd::cxx::tree::schema_type::double_ > T24CommRefrigEPD_traits;
+
+        const T24CommRefrigEPD_optional&
+        T24CommRefrigEPD () const;
+
+        T24CommRefrigEPD_optional&
+        T24CommRefrigEPD ();
+
+        void
+        T24CommRefrigEPD (const T24CommRefrigEPD_type& x);
+
+        void
+        T24CommRefrigEPD (const T24CommRefrigEPD_optional& x);
+
+        // T24CommRefrigEqmtSchedRef
+        //
+        typedef ::xml_schema::idref T24CommRefrigEqmtSchedRef_type;
+        typedef ::xsd::cxx::tree::optional< T24CommRefrigEqmtSchedRef_type > T24CommRefrigEqmtSchedRef_optional;
+        typedef ::xsd::cxx::tree::traits< T24CommRefrigEqmtSchedRef_type, char > T24CommRefrigEqmtSchedRef_traits;
+
+        const T24CommRefrigEqmtSchedRef_optional&
+        T24CommRefrigEqmtSchedRef () const;
+
+        T24CommRefrigEqmtSchedRef_optional&
+        T24CommRefrigEqmtSchedRef ();
+
+        void
+        T24CommRefrigEqmtSchedRef (const T24CommRefrigEqmtSchedRef_type& x);
+
+        void
+        T24CommRefrigEqmtSchedRef (const T24CommRefrigEqmtSchedRef_optional& x);
+
+        void
+        T24CommRefrigEqmtSchedRef (::std::auto_ptr< T24CommRefrigEqmtSchedRef_type > p);
+
+        // T24CommRefrigLatentFraction
+        //
+        typedef ::xml_schema::double_ T24CommRefrigLatentFraction_type;
+        typedef ::xsd::cxx::tree::optional< T24CommRefrigLatentFraction_type > T24CommRefrigLatentFraction_optional;
+        typedef ::xsd::cxx::tree::traits< T24CommRefrigLatentFraction_type, char, ::xsd::cxx::tree::schema_type::double_ > T24CommRefrigLatentFraction_traits;
+
+        const T24CommRefrigLatentFraction_optional&
+        T24CommRefrigLatentFraction () const;
+
+        T24CommRefrigLatentFraction_optional&
+        T24CommRefrigLatentFraction ();
+
+        void
+        T24CommRefrigLatentFraction (const T24CommRefrigLatentFraction_type& x);
+
+        void
+        T24CommRefrigLatentFraction (const T24CommRefrigLatentFraction_optional& x);
+
+        // T24CommRefrigLostFraction
+        //
+        typedef ::xml_schema::double_ T24CommRefrigLostFraction_type;
+        typedef ::xsd::cxx::tree::optional< T24CommRefrigLostFraction_type > T24CommRefrigLostFraction_optional;
+        typedef ::xsd::cxx::tree::traits< T24CommRefrigLostFraction_type, char, ::xsd::cxx::tree::schema_type::double_ > T24CommRefrigLostFraction_traits;
+
+        const T24CommRefrigLostFraction_optional&
+        T24CommRefrigLostFraction () const;
+
+        T24CommRefrigLostFraction_optional&
+        T24CommRefrigLostFraction ();
+
+        void
+        T24CommRefrigLostFraction (const T24CommRefrigLostFraction_type& x);
+
+        void
+        T24CommRefrigLostFraction (const T24CommRefrigLostFraction_optional& x);
+
+        // T24CommRefrigRedFraction
+        //
+        typedef ::xml_schema::double_ T24CommRefrigRedFraction_type;
+        typedef ::xsd::cxx::tree::optional< T24CommRefrigRedFraction_type > T24CommRefrigRedFraction_optional;
+        typedef ::xsd::cxx::tree::traits< T24CommRefrigRedFraction_type, char, ::xsd::cxx::tree::schema_type::double_ > T24CommRefrigRedFraction_traits;
+
+        const T24CommRefrigRedFraction_optional&
+        T24CommRefrigRedFraction () const;
+
+        T24CommRefrigRedFraction_optional&
+        T24CommRefrigRedFraction ();
+
+        void
+        T24CommRefrigRedFraction (const T24CommRefrigRedFraction_type& x);
+
+        void
+        T24CommRefrigRedFraction (const T24CommRefrigRedFraction_optional& x);
+
+        // T24DesignInfiltrationRate
+        //
+        typedef ::schema::simxml::SimModelCore::doubleList T24DesignInfiltrationRate_type;
+        typedef ::xsd::cxx::tree::optional< T24DesignInfiltrationRate_type > T24DesignInfiltrationRate_optional;
+        typedef ::xsd::cxx::tree::traits< T24DesignInfiltrationRate_type, char > T24DesignInfiltrationRate_traits;
+
+        const T24DesignInfiltrationRate_optional&
+        T24DesignInfiltrationRate () const;
+
+        T24DesignInfiltrationRate_optional&
+        T24DesignInfiltrationRate ();
+
+        void
+        T24DesignInfiltrationRate (const T24DesignInfiltrationRate_type& x);
+
+        void
+        T24DesignInfiltrationRate (const T24DesignInfiltrationRate_optional& x);
+
+        void
+        T24DesignInfiltrationRate (::std::auto_ptr< T24DesignInfiltrationRate_type > p);
+
+        // T24ElevatorCount
+        //
+        typedef ::xml_schema::int_ T24ElevatorCount_type;
+        typedef ::xsd::cxx::tree::optional< T24ElevatorCount_type > T24ElevatorCount_optional;
+        typedef ::xsd::cxx::tree::traits< T24ElevatorCount_type, char > T24ElevatorCount_traits;
+
+        const T24ElevatorCount_optional&
+        T24ElevatorCount () const;
+
+        T24ElevatorCount_optional&
+        T24ElevatorCount ();
+
+        void
+        T24ElevatorCount (const T24ElevatorCount_type& x);
+
+        void
+        T24ElevatorCount (const T24ElevatorCount_optional& x);
+
+        // T24ElevatorLatentFraction
+        //
+        typedef ::xml_schema::double_ T24ElevatorLatentFraction_type;
+        typedef ::xsd::cxx::tree::optional< T24ElevatorLatentFraction_type > T24ElevatorLatentFraction_optional;
+        typedef ::xsd::cxx::tree::traits< T24ElevatorLatentFraction_type, char, ::xsd::cxx::tree::schema_type::double_ > T24ElevatorLatentFraction_traits;
+
+        const T24ElevatorLatentFraction_optional&
+        T24ElevatorLatentFraction () const;
+
+        T24ElevatorLatentFraction_optional&
+        T24ElevatorLatentFraction ();
+
+        void
+        T24ElevatorLatentFraction (const T24ElevatorLatentFraction_type& x);
+
+        void
+        T24ElevatorLatentFraction (const T24ElevatorLatentFraction_optional& x);
+
+        // T24ElevatorLostFraction
+        //
+        typedef ::xml_schema::double_ T24ElevatorLostFraction_type;
+        typedef ::xsd::cxx::tree::optional< T24ElevatorLostFraction_type > T24ElevatorLostFraction_optional;
+        typedef ::xsd::cxx::tree::traits< T24ElevatorLostFraction_type, char, ::xsd::cxx::tree::schema_type::double_ > T24ElevatorLostFraction_traits;
+
+        const T24ElevatorLostFraction_optional&
+        T24ElevatorLostFraction () const;
+
+        T24ElevatorLostFraction_optional&
+        T24ElevatorLostFraction ();
+
+        void
+        T24ElevatorLostFraction (const T24ElevatorLostFraction_type& x);
+
+        void
+        T24ElevatorLostFraction (const T24ElevatorLostFraction_optional& x);
+
+        // T24ElevatorPower
+        //
+        typedef ::xml_schema::double_ T24ElevatorPower_type;
+        typedef ::xsd::cxx::tree::optional< T24ElevatorPower_type > T24ElevatorPower_optional;
+        typedef ::xsd::cxx::tree::traits< T24ElevatorPower_type, char, ::xsd::cxx::tree::schema_type::double_ > T24ElevatorPower_traits;
+
+        const T24ElevatorPower_optional&
+        T24ElevatorPower () const;
+
+        T24ElevatorPower_optional&
+        T24ElevatorPower ();
+
+        void
+        T24ElevatorPower (const T24ElevatorPower_type& x);
+
+        void
+        T24ElevatorPower (const T24ElevatorPower_optional& x);
+
+        // T24ElevatorRadiationFraction
+        //
+        typedef ::xml_schema::double_ T24ElevatorRadiationFraction_type;
+        typedef ::xsd::cxx::tree::optional< T24ElevatorRadiationFraction_type > T24ElevatorRadiationFraction_optional;
+        typedef ::xsd::cxx::tree::traits< T24ElevatorRadiationFraction_type, char, ::xsd::cxx::tree::schema_type::double_ > T24ElevatorRadiationFraction_traits;
+
+        const T24ElevatorRadiationFraction_optional&
+        T24ElevatorRadiationFraction () const;
+
+        T24ElevatorRadiationFraction_optional&
+        T24ElevatorRadiationFraction ();
+
+        void
+        T24ElevatorRadiationFraction (const T24ElevatorRadiationFraction_type& x);
+
+        void
+        T24ElevatorRadiationFraction (const T24ElevatorRadiationFraction_optional& x);
+
+        // T24ElevatorScheduleReference
+        //
+        typedef ::xml_schema::idref T24ElevatorScheduleReference_type;
+        typedef ::xsd::cxx::tree::optional< T24ElevatorScheduleReference_type > T24ElevatorScheduleReference_optional;
+        typedef ::xsd::cxx::tree::traits< T24ElevatorScheduleReference_type, char > T24ElevatorScheduleReference_traits;
+
+        const T24ElevatorScheduleReference_optional&
+        T24ElevatorScheduleReference () const;
+
+        T24ElevatorScheduleReference_optional&
+        T24ElevatorScheduleReference ();
+
+        void
+        T24ElevatorScheduleReference (const T24ElevatorScheduleReference_type& x);
+
+        void
+        T24ElevatorScheduleReference (const T24ElevatorScheduleReference_optional& x);
+
+        void
+        T24ElevatorScheduleReference (::std::auto_ptr< T24ElevatorScheduleReference_type > p);
+
+        // T24EscalatorCount
+        //
+        typedef ::xml_schema::double_ T24EscalatorCount_type;
+        typedef ::xsd::cxx::tree::optional< T24EscalatorCount_type > T24EscalatorCount_optional;
+        typedef ::xsd::cxx::tree::traits< T24EscalatorCount_type, char, ::xsd::cxx::tree::schema_type::double_ > T24EscalatorCount_traits;
+
+        const T24EscalatorCount_optional&
+        T24EscalatorCount () const;
+
+        T24EscalatorCount_optional&
+        T24EscalatorCount ();
+
+        void
+        T24EscalatorCount (const T24EscalatorCount_type& x);
+
+        void
+        T24EscalatorCount (const T24EscalatorCount_optional& x);
+
+        // T24EscalatorLatentFraction
+        //
+        typedef ::xml_schema::double_ T24EscalatorLatentFraction_type;
+        typedef ::xsd::cxx::tree::optional< T24EscalatorLatentFraction_type > T24EscalatorLatentFraction_optional;
+        typedef ::xsd::cxx::tree::traits< T24EscalatorLatentFraction_type, char, ::xsd::cxx::tree::schema_type::double_ > T24EscalatorLatentFraction_traits;
+
+        const T24EscalatorLatentFraction_optional&
+        T24EscalatorLatentFraction () const;
+
+        T24EscalatorLatentFraction_optional&
+        T24EscalatorLatentFraction ();
+
+        void
+        T24EscalatorLatentFraction (const T24EscalatorLatentFraction_type& x);
+
+        void
+        T24EscalatorLatentFraction (const T24EscalatorLatentFraction_optional& x);
+
+        // T24EscalatorLostFraction
+        //
+        typedef ::xml_schema::double_ T24EscalatorLostFraction_type;
+        typedef ::xsd::cxx::tree::optional< T24EscalatorLostFraction_type > T24EscalatorLostFraction_optional;
+        typedef ::xsd::cxx::tree::traits< T24EscalatorLostFraction_type, char, ::xsd::cxx::tree::schema_type::double_ > T24EscalatorLostFraction_traits;
+
+        const T24EscalatorLostFraction_optional&
+        T24EscalatorLostFraction () const;
+
+        T24EscalatorLostFraction_optional&
+        T24EscalatorLostFraction ();
+
+        void
+        T24EscalatorLostFraction (const T24EscalatorLostFraction_type& x);
+
+        void
+        T24EscalatorLostFraction (const T24EscalatorLostFraction_optional& x);
+
+        // T24EscalatorPower
+        //
+        typedef ::xml_schema::double_ T24EscalatorPower_type;
+        typedef ::xsd::cxx::tree::optional< T24EscalatorPower_type > T24EscalatorPower_optional;
+        typedef ::xsd::cxx::tree::traits< T24EscalatorPower_type, char, ::xsd::cxx::tree::schema_type::double_ > T24EscalatorPower_traits;
+
+        const T24EscalatorPower_optional&
+        T24EscalatorPower () const;
+
+        T24EscalatorPower_optional&
+        T24EscalatorPower ();
+
+        void
+        T24EscalatorPower (const T24EscalatorPower_type& x);
+
+        void
+        T24EscalatorPower (const T24EscalatorPower_optional& x);
+
+        // T24EscalatorRadiationFraction
+        //
+        typedef ::xml_schema::double_ T24EscalatorRadiationFraction_type;
+        typedef ::xsd::cxx::tree::optional< T24EscalatorRadiationFraction_type > T24EscalatorRadiationFraction_optional;
+        typedef ::xsd::cxx::tree::traits< T24EscalatorRadiationFraction_type, char, ::xsd::cxx::tree::schema_type::double_ > T24EscalatorRadiationFraction_traits;
+
+        const T24EscalatorRadiationFraction_optional&
+        T24EscalatorRadiationFraction () const;
+
+        T24EscalatorRadiationFraction_optional&
+        T24EscalatorRadiationFraction ();
+
+        void
+        T24EscalatorRadiationFraction (const T24EscalatorRadiationFraction_type& x);
+
+        void
+        T24EscalatorRadiationFraction (const T24EscalatorRadiationFraction_optional& x);
+
+        // T24EscalatorScheduleReference
+        //
+        typedef ::xml_schema::idref T24EscalatorScheduleReference_type;
+        typedef ::xsd::cxx::tree::optional< T24EscalatorScheduleReference_type > T24EscalatorScheduleReference_optional;
+        typedef ::xsd::cxx::tree::traits< T24EscalatorScheduleReference_type, char > T24EscalatorScheduleReference_traits;
+
+        const T24EscalatorScheduleReference_optional&
+        T24EscalatorScheduleReference () const;
+
+        T24EscalatorScheduleReference_optional&
+        T24EscalatorScheduleReference ();
+
+        void
+        T24EscalatorScheduleReference (const T24EscalatorScheduleReference_type& x);
+
+        void
+        T24EscalatorScheduleReference (const T24EscalatorScheduleReference_optional& x);
+
+        void
+        T24EscalatorScheduleReference (::std::auto_ptr< T24EscalatorScheduleReference_type > p);
+
+        // T24ExhaustAirChangesPerHour
+        //
+        typedef ::xml_schema::double_ T24ExhaustAirChangesPerHour_type;
+        typedef ::xsd::cxx::tree::optional< T24ExhaustAirChangesPerHour_type > T24ExhaustAirChangesPerHour_optional;
+        typedef ::xsd::cxx::tree::traits< T24ExhaustAirChangesPerHour_type, char, ::xsd::cxx::tree::schema_type::double_ > T24ExhaustAirChangesPerHour_traits;
+
+        const T24ExhaustAirChangesPerHour_optional&
+        T24ExhaustAirChangesPerHour () const;
+
+        T24ExhaustAirChangesPerHour_optional&
+        T24ExhaustAirChangesPerHour ();
+
+        void
+        T24ExhaustAirChangesPerHour (const T24ExhaustAirChangesPerHour_type& x);
+
+        void
+        T24ExhaustAirChangesPerHour (const T24ExhaustAirChangesPerHour_optional& x);
+
+        // T24ExhaustPerArea
+        //
+        typedef ::xml_schema::double_ T24ExhaustPerArea_type;
+        typedef ::xsd::cxx::tree::optional< T24ExhaustPerArea_type > T24ExhaustPerArea_optional;
+        typedef ::xsd::cxx::tree::traits< T24ExhaustPerArea_type, char, ::xsd::cxx::tree::schema_type::double_ > T24ExhaustPerArea_traits;
+
+        const T24ExhaustPerArea_optional&
+        T24ExhaustPerArea () const;
+
+        T24ExhaustPerArea_optional&
+        T24ExhaustPerArea ();
+
+        void
+        T24ExhaustPerArea (const T24ExhaustPerArea_type& x);
+
+        void
+        T24ExhaustPerArea (const T24ExhaustPerArea_optional& x);
+
+        // T24ExhaustPerSpace
+        //
+        typedef ::xml_schema::double_ T24ExhaustPerSpace_type;
+        typedef ::xsd::cxx::tree::optional< T24ExhaustPerSpace_type > T24ExhaustPerSpace_optional;
+        typedef ::xsd::cxx::tree::traits< T24ExhaustPerSpace_type, char, ::xsd::cxx::tree::schema_type::double_ > T24ExhaustPerSpace_traits;
+
+        const T24ExhaustPerSpace_optional&
+        T24ExhaustPerSpace () const;
+
+        T24ExhaustPerSpace_optional&
+        T24ExhaustPerSpace ();
+
+        void
+        T24ExhaustPerSpace (const T24ExhaustPerSpace_type& x);
+
+        void
+        T24ExhaustPerSpace (const T24ExhaustPerSpace_optional& x);
+
         // T24FuncSchedGrp
         //
         typedef ::xml_schema::string T24FuncSchedGrp_type;
@@ -334,6 +1269,177 @@ namespace schema
         void
         T24FuncSchedGrp (::std::auto_ptr< T24FuncSchedGrp_type > p);
 
+        // T24GasEquipmentLatentFraction
+        //
+        typedef ::xml_schema::double_ T24GasEquipmentLatentFraction_type;
+        typedef ::xsd::cxx::tree::optional< T24GasEquipmentLatentFraction_type > T24GasEquipmentLatentFraction_optional;
+        typedef ::xsd::cxx::tree::traits< T24GasEquipmentLatentFraction_type, char, ::xsd::cxx::tree::schema_type::double_ > T24GasEquipmentLatentFraction_traits;
+
+        const T24GasEquipmentLatentFraction_optional&
+        T24GasEquipmentLatentFraction () const;
+
+        T24GasEquipmentLatentFraction_optional&
+        T24GasEquipmentLatentFraction ();
+
+        void
+        T24GasEquipmentLatentFraction (const T24GasEquipmentLatentFraction_type& x);
+
+        void
+        T24GasEquipmentLatentFraction (const T24GasEquipmentLatentFraction_optional& x);
+
+        // T24GasEquipmentLostFraction
+        //
+        typedef ::xml_schema::double_ T24GasEquipmentLostFraction_type;
+        typedef ::xsd::cxx::tree::optional< T24GasEquipmentLostFraction_type > T24GasEquipmentLostFraction_optional;
+        typedef ::xsd::cxx::tree::traits< T24GasEquipmentLostFraction_type, char, ::xsd::cxx::tree::schema_type::double_ > T24GasEquipmentLostFraction_traits;
+
+        const T24GasEquipmentLostFraction_optional&
+        T24GasEquipmentLostFraction () const;
+
+        T24GasEquipmentLostFraction_optional&
+        T24GasEquipmentLostFraction ();
+
+        void
+        T24GasEquipmentLostFraction (const T24GasEquipmentLostFraction_type& x);
+
+        void
+        T24GasEquipmentLostFraction (const T24GasEquipmentLostFraction_optional& x);
+
+        // T24GasEquipmentPowerDensity
+        //
+        typedef ::xml_schema::double_ T24GasEquipmentPowerDensity_type;
+        typedef ::xsd::cxx::tree::optional< T24GasEquipmentPowerDensity_type > T24GasEquipmentPowerDensity_optional;
+        typedef ::xsd::cxx::tree::traits< T24GasEquipmentPowerDensity_type, char, ::xsd::cxx::tree::schema_type::double_ > T24GasEquipmentPowerDensity_traits;
+
+        const T24GasEquipmentPowerDensity_optional&
+        T24GasEquipmentPowerDensity () const;
+
+        T24GasEquipmentPowerDensity_optional&
+        T24GasEquipmentPowerDensity ();
+
+        void
+        T24GasEquipmentPowerDensity (const T24GasEquipmentPowerDensity_type& x);
+
+        void
+        T24GasEquipmentPowerDensity (const T24GasEquipmentPowerDensity_optional& x);
+
+        // T24GasEquipmentRadiationFraction
+        //
+        typedef ::xml_schema::double_ T24GasEquipmentRadiationFraction_type;
+        typedef ::xsd::cxx::tree::optional< T24GasEquipmentRadiationFraction_type > T24GasEquipmentRadiationFraction_optional;
+        typedef ::xsd::cxx::tree::traits< T24GasEquipmentRadiationFraction_type, char, ::xsd::cxx::tree::schema_type::double_ > T24GasEquipmentRadiationFraction_traits;
+
+        const T24GasEquipmentRadiationFraction_optional&
+        T24GasEquipmentRadiationFraction () const;
+
+        T24GasEquipmentRadiationFraction_optional&
+        T24GasEquipmentRadiationFraction ();
+
+        void
+        T24GasEquipmentRadiationFraction (const T24GasEquipmentRadiationFraction_type& x);
+
+        void
+        T24GasEquipmentRadiationFraction (const T24GasEquipmentRadiationFraction_optional& x);
+
+        // T24GasEquipmentScheduleReference
+        //
+        typedef ::xml_schema::idref T24GasEquipmentScheduleReference_type;
+        typedef ::xsd::cxx::tree::optional< T24GasEquipmentScheduleReference_type > T24GasEquipmentScheduleReference_optional;
+        typedef ::xsd::cxx::tree::traits< T24GasEquipmentScheduleReference_type, char > T24GasEquipmentScheduleReference_traits;
+
+        const T24GasEquipmentScheduleReference_optional&
+        T24GasEquipmentScheduleReference () const;
+
+        T24GasEquipmentScheduleReference_optional&
+        T24GasEquipmentScheduleReference ();
+
+        void
+        T24GasEquipmentScheduleReference (const T24GasEquipmentScheduleReference_type& x);
+
+        void
+        T24GasEquipmentScheduleReference (const T24GasEquipmentScheduleReference_optional& x);
+
+        void
+        T24GasEquipmentScheduleReference (::std::auto_ptr< T24GasEquipmentScheduleReference_type > p);
+
+        // T24HotWaterHeatingRate
+        //
+        typedef ::xml_schema::double_ T24HotWaterHeatingRate_type;
+        typedef ::xsd::cxx::tree::optional< T24HotWaterHeatingRate_type > T24HotWaterHeatingRate_optional;
+        typedef ::xsd::cxx::tree::traits< T24HotWaterHeatingRate_type, char, ::xsd::cxx::tree::schema_type::double_ > T24HotWaterHeatingRate_traits;
+
+        const T24HotWaterHeatingRate_optional&
+        T24HotWaterHeatingRate () const;
+
+        T24HotWaterHeatingRate_optional&
+        T24HotWaterHeatingRate ();
+
+        void
+        T24HotWaterHeatingRate (const T24HotWaterHeatingRate_type& x);
+
+        void
+        T24HotWaterHeatingRate (const T24HotWaterHeatingRate_optional& x);
+
+        // T24HotWaterHeatingScheduleReference
+        //
+        typedef ::xml_schema::idref T24HotWaterHeatingScheduleReference_type;
+        typedef ::xsd::cxx::tree::optional< T24HotWaterHeatingScheduleReference_type > T24HotWaterHeatingScheduleReference_optional;
+        typedef ::xsd::cxx::tree::traits< T24HotWaterHeatingScheduleReference_type, char > T24HotWaterHeatingScheduleReference_traits;
+
+        const T24HotWaterHeatingScheduleReference_optional&
+        T24HotWaterHeatingScheduleReference () const;
+
+        T24HotWaterHeatingScheduleReference_optional&
+        T24HotWaterHeatingScheduleReference ();
+
+        void
+        T24HotWaterHeatingScheduleReference (const T24HotWaterHeatingScheduleReference_type& x);
+
+        void
+        T24HotWaterHeatingScheduleReference (const T24HotWaterHeatingScheduleReference_optional& x);
+
+        void
+        T24HotWaterHeatingScheduleReference (::std::auto_ptr< T24HotWaterHeatingScheduleReference_type > p);
+
+        // T24HotWaterSupplyTemperature
+        //
+        typedef ::xml_schema::double_ T24HotWaterSupplyTemperature_type;
+        typedef ::xsd::cxx::tree::optional< T24HotWaterSupplyTemperature_type > T24HotWaterSupplyTemperature_optional;
+        typedef ::xsd::cxx::tree::traits< T24HotWaterSupplyTemperature_type, char, ::xsd::cxx::tree::schema_type::double_ > T24HotWaterSupplyTemperature_traits;
+
+        const T24HotWaterSupplyTemperature_optional&
+        T24HotWaterSupplyTemperature () const;
+
+        T24HotWaterSupplyTemperature_optional&
+        T24HotWaterSupplyTemperature ();
+
+        void
+        T24HotWaterSupplyTemperature (const T24HotWaterSupplyTemperature_type& x);
+
+        void
+        T24HotWaterSupplyTemperature (const T24HotWaterSupplyTemperature_optional& x);
+
+        // T24HotWaterTemteratureSchedulrReference
+        //
+        typedef ::xml_schema::idref T24HotWaterTemteratureSchedulrReference_type;
+        typedef ::xsd::cxx::tree::optional< T24HotWaterTemteratureSchedulrReference_type > T24HotWaterTemteratureSchedulrReference_optional;
+        typedef ::xsd::cxx::tree::traits< T24HotWaterTemteratureSchedulrReference_type, char > T24HotWaterTemteratureSchedulrReference_traits;
+
+        const T24HotWaterTemteratureSchedulrReference_optional&
+        T24HotWaterTemteratureSchedulrReference () const;
+
+        T24HotWaterTemteratureSchedulrReference_optional&
+        T24HotWaterTemteratureSchedulrReference ();
+
+        void
+        T24HotWaterTemteratureSchedulrReference (const T24HotWaterTemteratureSchedulrReference_type& x);
+
+        void
+        T24HotWaterTemteratureSchedulrReference (const T24HotWaterTemteratureSchedulrReference_optional& x);
+
+        void
+        T24HotWaterTemteratureSchedulrReference (::std::auto_ptr< T24HotWaterTemteratureSchedulrReference_type > p);
+
         // T24InfiltrMthd
         //
         typedef ::schema::simxml::BuildingModel::T24InfiltrMthd T24InfiltrMthd_type;
@@ -354,6 +1460,693 @@ namespace schema
 
         void
         T24InfiltrMthd (::std::auto_ptr< T24InfiltrMthd_type > p);
+
+        // T24InfiltrationModelCoefficientA
+        //
+        typedef ::schema::simxml::SimModelCore::doubleList T24InfiltrationModelCoefficientA_type;
+        typedef ::xsd::cxx::tree::optional< T24InfiltrationModelCoefficientA_type > T24InfiltrationModelCoefficientA_optional;
+        typedef ::xsd::cxx::tree::traits< T24InfiltrationModelCoefficientA_type, char > T24InfiltrationModelCoefficientA_traits;
+
+        const T24InfiltrationModelCoefficientA_optional&
+        T24InfiltrationModelCoefficientA () const;
+
+        T24InfiltrationModelCoefficientA_optional&
+        T24InfiltrationModelCoefficientA ();
+
+        void
+        T24InfiltrationModelCoefficientA (const T24InfiltrationModelCoefficientA_type& x);
+
+        void
+        T24InfiltrationModelCoefficientA (const T24InfiltrationModelCoefficientA_optional& x);
+
+        void
+        T24InfiltrationModelCoefficientA (::std::auto_ptr< T24InfiltrationModelCoefficientA_type > p);
+
+        // T24InfiltrationModelCoefficientB
+        //
+        typedef ::schema::simxml::SimModelCore::doubleList T24InfiltrationModelCoefficientB_type;
+        typedef ::xsd::cxx::tree::optional< T24InfiltrationModelCoefficientB_type > T24InfiltrationModelCoefficientB_optional;
+        typedef ::xsd::cxx::tree::traits< T24InfiltrationModelCoefficientB_type, char > T24InfiltrationModelCoefficientB_traits;
+
+        const T24InfiltrationModelCoefficientB_optional&
+        T24InfiltrationModelCoefficientB () const;
+
+        T24InfiltrationModelCoefficientB_optional&
+        T24InfiltrationModelCoefficientB ();
+
+        void
+        T24InfiltrationModelCoefficientB (const T24InfiltrationModelCoefficientB_type& x);
+
+        void
+        T24InfiltrationModelCoefficientB (const T24InfiltrationModelCoefficientB_optional& x);
+
+        void
+        T24InfiltrationModelCoefficientB (::std::auto_ptr< T24InfiltrationModelCoefficientB_type > p);
+
+        // T24InfiltrationModelCoefficientC
+        //
+        typedef ::schema::simxml::SimModelCore::doubleList T24InfiltrationModelCoefficientC_type;
+        typedef ::xsd::cxx::tree::optional< T24InfiltrationModelCoefficientC_type > T24InfiltrationModelCoefficientC_optional;
+        typedef ::xsd::cxx::tree::traits< T24InfiltrationModelCoefficientC_type, char > T24InfiltrationModelCoefficientC_traits;
+
+        const T24InfiltrationModelCoefficientC_optional&
+        T24InfiltrationModelCoefficientC () const;
+
+        T24InfiltrationModelCoefficientC_optional&
+        T24InfiltrationModelCoefficientC ();
+
+        void
+        T24InfiltrationModelCoefficientC (const T24InfiltrationModelCoefficientC_type& x);
+
+        void
+        T24InfiltrationModelCoefficientC (const T24InfiltrationModelCoefficientC_optional& x);
+
+        void
+        T24InfiltrationModelCoefficientC (::std::auto_ptr< T24InfiltrationModelCoefficientC_type > p);
+
+        // T24InfiltrationModelCoefficientD
+        //
+        typedef ::schema::simxml::SimModelCore::doubleList T24InfiltrationModelCoefficientD_type;
+        typedef ::xsd::cxx::tree::optional< T24InfiltrationModelCoefficientD_type > T24InfiltrationModelCoefficientD_optional;
+        typedef ::xsd::cxx::tree::traits< T24InfiltrationModelCoefficientD_type, char > T24InfiltrationModelCoefficientD_traits;
+
+        const T24InfiltrationModelCoefficientD_optional&
+        T24InfiltrationModelCoefficientD () const;
+
+        T24InfiltrationModelCoefficientD_optional&
+        T24InfiltrationModelCoefficientD ();
+
+        void
+        T24InfiltrationModelCoefficientD (const T24InfiltrationModelCoefficientD_type& x);
+
+        void
+        T24InfiltrationModelCoefficientD (const T24InfiltrationModelCoefficientD_optional& x);
+
+        void
+        T24InfiltrationModelCoefficientD (::std::auto_ptr< T24InfiltrationModelCoefficientD_type > p);
+
+        // T24InfiltrationScheduleReference
+        //
+        typedef ::xml_schema::idrefs T24InfiltrationScheduleReference_type;
+        typedef ::xsd::cxx::tree::optional< T24InfiltrationScheduleReference_type > T24InfiltrationScheduleReference_optional;
+        typedef ::xsd::cxx::tree::traits< T24InfiltrationScheduleReference_type, char > T24InfiltrationScheduleReference_traits;
+
+        const T24InfiltrationScheduleReference_optional&
+        T24InfiltrationScheduleReference () const;
+
+        T24InfiltrationScheduleReference_optional&
+        T24InfiltrationScheduleReference ();
+
+        void
+        T24InfiltrationScheduleReference (const T24InfiltrationScheduleReference_type& x);
+
+        void
+        T24InfiltrationScheduleReference (const T24InfiltrationScheduleReference_optional& x);
+
+        void
+        T24InfiltrationScheduleReference (::std::auto_ptr< T24InfiltrationScheduleReference_type > p);
+
+        // T24InteriorLightingNonRegulatedHeatGainRadiantFraction
+        //
+        typedef ::xml_schema::double_ T24InteriorLightingNonRegulatedHeatGainRadiantFraction_type;
+        typedef ::xsd::cxx::tree::optional< T24InteriorLightingNonRegulatedHeatGainRadiantFraction_type > T24InteriorLightingNonRegulatedHeatGainRadiantFraction_optional;
+        typedef ::xsd::cxx::tree::traits< T24InteriorLightingNonRegulatedHeatGainRadiantFraction_type, char, ::xsd::cxx::tree::schema_type::double_ > T24InteriorLightingNonRegulatedHeatGainRadiantFraction_traits;
+
+        const T24InteriorLightingNonRegulatedHeatGainRadiantFraction_optional&
+        T24InteriorLightingNonRegulatedHeatGainRadiantFraction () const;
+
+        T24InteriorLightingNonRegulatedHeatGainRadiantFraction_optional&
+        T24InteriorLightingNonRegulatedHeatGainRadiantFraction ();
+
+        void
+        T24InteriorLightingNonRegulatedHeatGainRadiantFraction (const T24InteriorLightingNonRegulatedHeatGainRadiantFraction_type& x);
+
+        void
+        T24InteriorLightingNonRegulatedHeatGainRadiantFraction (const T24InteriorLightingNonRegulatedHeatGainRadiantFraction_optional& x);
+
+        // T24InteriorLightingNonRegulatedHeatGainSpaceFraction
+        //
+        typedef ::xml_schema::double_ T24InteriorLightingNonRegulatedHeatGainSpaceFraction_type;
+        typedef ::xsd::cxx::tree::optional< T24InteriorLightingNonRegulatedHeatGainSpaceFraction_type > T24InteriorLightingNonRegulatedHeatGainSpaceFraction_optional;
+        typedef ::xsd::cxx::tree::traits< T24InteriorLightingNonRegulatedHeatGainSpaceFraction_type, char, ::xsd::cxx::tree::schema_type::double_ > T24InteriorLightingNonRegulatedHeatGainSpaceFraction_traits;
+
+        const T24InteriorLightingNonRegulatedHeatGainSpaceFraction_optional&
+        T24InteriorLightingNonRegulatedHeatGainSpaceFraction () const;
+
+        T24InteriorLightingNonRegulatedHeatGainSpaceFraction_optional&
+        T24InteriorLightingNonRegulatedHeatGainSpaceFraction ();
+
+        void
+        T24InteriorLightingNonRegulatedHeatGainSpaceFraction (const T24InteriorLightingNonRegulatedHeatGainSpaceFraction_type& x);
+
+        void
+        T24InteriorLightingNonRegulatedHeatGainSpaceFraction (const T24InteriorLightingNonRegulatedHeatGainSpaceFraction_optional& x);
+
+        // T24InteriorLightingNonRegulatedScheduleReference
+        //
+        typedef ::xml_schema::idref T24InteriorLightingNonRegulatedScheduleReference_type;
+        typedef ::xsd::cxx::tree::optional< T24InteriorLightingNonRegulatedScheduleReference_type > T24InteriorLightingNonRegulatedScheduleReference_optional;
+        typedef ::xsd::cxx::tree::traits< T24InteriorLightingNonRegulatedScheduleReference_type, char > T24InteriorLightingNonRegulatedScheduleReference_traits;
+
+        const T24InteriorLightingNonRegulatedScheduleReference_optional&
+        T24InteriorLightingNonRegulatedScheduleReference () const;
+
+        T24InteriorLightingNonRegulatedScheduleReference_optional&
+        T24InteriorLightingNonRegulatedScheduleReference ();
+
+        void
+        T24InteriorLightingNonRegulatedScheduleReference (const T24InteriorLightingNonRegulatedScheduleReference_type& x);
+
+        void
+        T24InteriorLightingNonRegulatedScheduleReference (const T24InteriorLightingNonRegulatedScheduleReference_optional& x);
+
+        void
+        T24InteriorLightingNonRegulatedScheduleReference (::std::auto_ptr< T24InteriorLightingNonRegulatedScheduleReference_type > p);
+
+        // T24InteriorLightingPowerDensityNonRegulated
+        //
+        typedef ::xml_schema::double_ T24InteriorLightingPowerDensityNonRegulated_type;
+        typedef ::xsd::cxx::tree::optional< T24InteriorLightingPowerDensityNonRegulated_type > T24InteriorLightingPowerDensityNonRegulated_optional;
+        typedef ::xsd::cxx::tree::traits< T24InteriorLightingPowerDensityNonRegulated_type, char, ::xsd::cxx::tree::schema_type::double_ > T24InteriorLightingPowerDensityNonRegulated_traits;
+
+        const T24InteriorLightingPowerDensityNonRegulated_optional&
+        T24InteriorLightingPowerDensityNonRegulated () const;
+
+        T24InteriorLightingPowerDensityNonRegulated_optional&
+        T24InteriorLightingPowerDensityNonRegulated ();
+
+        void
+        T24InteriorLightingPowerDensityNonRegulated (const T24InteriorLightingPowerDensityNonRegulated_type& x);
+
+        void
+        T24InteriorLightingPowerDensityNonRegulated (const T24InteriorLightingPowerDensityNonRegulated_optional& x);
+
+        // T24InteriorLightingPowerDensityRegulated
+        //
+        typedef ::xml_schema::double_ T24InteriorLightingPowerDensityRegulated_type;
+        typedef ::xsd::cxx::tree::optional< T24InteriorLightingPowerDensityRegulated_type > T24InteriorLightingPowerDensityRegulated_optional;
+        typedef ::xsd::cxx::tree::traits< T24InteriorLightingPowerDensityRegulated_type, char, ::xsd::cxx::tree::schema_type::double_ > T24InteriorLightingPowerDensityRegulated_traits;
+
+        const T24InteriorLightingPowerDensityRegulated_optional&
+        T24InteriorLightingPowerDensityRegulated () const;
+
+        T24InteriorLightingPowerDensityRegulated_optional&
+        T24InteriorLightingPowerDensityRegulated ();
+
+        void
+        T24InteriorLightingPowerDensityRegulated (const T24InteriorLightingPowerDensityRegulated_type& x);
+
+        void
+        T24InteriorLightingPowerDensityRegulated (const T24InteriorLightingPowerDensityRegulated_optional& x);
+
+        // T24InteriorLightingRegulatedHeatGainRadiantFraction
+        //
+        typedef ::xml_schema::double_ T24InteriorLightingRegulatedHeatGainRadiantFraction_type;
+        typedef ::xsd::cxx::tree::optional< T24InteriorLightingRegulatedHeatGainRadiantFraction_type > T24InteriorLightingRegulatedHeatGainRadiantFraction_optional;
+        typedef ::xsd::cxx::tree::traits< T24InteriorLightingRegulatedHeatGainRadiantFraction_type, char, ::xsd::cxx::tree::schema_type::double_ > T24InteriorLightingRegulatedHeatGainRadiantFraction_traits;
+
+        const T24InteriorLightingRegulatedHeatGainRadiantFraction_optional&
+        T24InteriorLightingRegulatedHeatGainRadiantFraction () const;
+
+        T24InteriorLightingRegulatedHeatGainRadiantFraction_optional&
+        T24InteriorLightingRegulatedHeatGainRadiantFraction ();
+
+        void
+        T24InteriorLightingRegulatedHeatGainRadiantFraction (const T24InteriorLightingRegulatedHeatGainRadiantFraction_type& x);
+
+        void
+        T24InteriorLightingRegulatedHeatGainRadiantFraction (const T24InteriorLightingRegulatedHeatGainRadiantFraction_optional& x);
+
+        // T24InteriorLightingRegulatedHeatGainSpaceFraction
+        //
+        typedef ::xml_schema::double_ T24InteriorLightingRegulatedHeatGainSpaceFraction_type;
+        typedef ::xsd::cxx::tree::optional< T24InteriorLightingRegulatedHeatGainSpaceFraction_type > T24InteriorLightingRegulatedHeatGainSpaceFraction_optional;
+        typedef ::xsd::cxx::tree::traits< T24InteriorLightingRegulatedHeatGainSpaceFraction_type, char, ::xsd::cxx::tree::schema_type::double_ > T24InteriorLightingRegulatedHeatGainSpaceFraction_traits;
+
+        const T24InteriorLightingRegulatedHeatGainSpaceFraction_optional&
+        T24InteriorLightingRegulatedHeatGainSpaceFraction () const;
+
+        T24InteriorLightingRegulatedHeatGainSpaceFraction_optional&
+        T24InteriorLightingRegulatedHeatGainSpaceFraction ();
+
+        void
+        T24InteriorLightingRegulatedHeatGainSpaceFraction (const T24InteriorLightingRegulatedHeatGainSpaceFraction_type& x);
+
+        void
+        T24InteriorLightingRegulatedHeatGainSpaceFraction (const T24InteriorLightingRegulatedHeatGainSpaceFraction_optional& x);
+
+        // T24InteriorLightingRegulatedScheduleReference
+        //
+        typedef ::xml_schema::idref T24InteriorLightingRegulatedScheduleReference_type;
+        typedef ::xsd::cxx::tree::optional< T24InteriorLightingRegulatedScheduleReference_type > T24InteriorLightingRegulatedScheduleReference_optional;
+        typedef ::xsd::cxx::tree::traits< T24InteriorLightingRegulatedScheduleReference_type, char > T24InteriorLightingRegulatedScheduleReference_traits;
+
+        const T24InteriorLightingRegulatedScheduleReference_optional&
+        T24InteriorLightingRegulatedScheduleReference () const;
+
+        T24InteriorLightingRegulatedScheduleReference_optional&
+        T24InteriorLightingRegulatedScheduleReference ();
+
+        void
+        T24InteriorLightingRegulatedScheduleReference (const T24InteriorLightingRegulatedScheduleReference_type& x);
+
+        void
+        T24InteriorLightingRegulatedScheduleReference (const T24InteriorLightingRegulatedScheduleReference_optional& x);
+
+        void
+        T24InteriorLightingRegulatedScheduleReference (::std::auto_ptr< T24InteriorLightingRegulatedScheduleReference_type > p);
+
+        // T24OccupantDensity
+        //
+        typedef ::xml_schema::double_ T24OccupantDensity_type;
+        typedef ::xsd::cxx::tree::optional< T24OccupantDensity_type > T24OccupantDensity_optional;
+        typedef ::xsd::cxx::tree::traits< T24OccupantDensity_type, char, ::xsd::cxx::tree::schema_type::double_ > T24OccupantDensity_traits;
+
+        const T24OccupantDensity_optional&
+        T24OccupantDensity () const;
+
+        T24OccupantDensity_optional&
+        T24OccupantDensity ();
+
+        void
+        T24OccupantDensity (const T24OccupantDensity_type& x);
+
+        void
+        T24OccupantDensity (const T24OccupantDensity_optional& x);
+
+        // T24ProcessElectricalLatentFraction
+        //
+        typedef ::xml_schema::double_ T24ProcessElectricalLatentFraction_type;
+        typedef ::xsd::cxx::tree::optional< T24ProcessElectricalLatentFraction_type > T24ProcessElectricalLatentFraction_optional;
+        typedef ::xsd::cxx::tree::traits< T24ProcessElectricalLatentFraction_type, char, ::xsd::cxx::tree::schema_type::double_ > T24ProcessElectricalLatentFraction_traits;
+
+        const T24ProcessElectricalLatentFraction_optional&
+        T24ProcessElectricalLatentFraction () const;
+
+        T24ProcessElectricalLatentFraction_optional&
+        T24ProcessElectricalLatentFraction ();
+
+        void
+        T24ProcessElectricalLatentFraction (const T24ProcessElectricalLatentFraction_type& x);
+
+        void
+        T24ProcessElectricalLatentFraction (const T24ProcessElectricalLatentFraction_optional& x);
+
+        // T24ProcessElectricalLostFraction
+        //
+        typedef ::xml_schema::double_ T24ProcessElectricalLostFraction_type;
+        typedef ::xsd::cxx::tree::optional< T24ProcessElectricalLostFraction_type > T24ProcessElectricalLostFraction_optional;
+        typedef ::xsd::cxx::tree::traits< T24ProcessElectricalLostFraction_type, char, ::xsd::cxx::tree::schema_type::double_ > T24ProcessElectricalLostFraction_traits;
+
+        const T24ProcessElectricalLostFraction_optional&
+        T24ProcessElectricalLostFraction () const;
+
+        T24ProcessElectricalLostFraction_optional&
+        T24ProcessElectricalLostFraction ();
+
+        void
+        T24ProcessElectricalLostFraction (const T24ProcessElectricalLostFraction_type& x);
+
+        void
+        T24ProcessElectricalLostFraction (const T24ProcessElectricalLostFraction_optional& x);
+
+        // T24ProcessElectricalPowerDensity
+        //
+        typedef ::xml_schema::double_ T24ProcessElectricalPowerDensity_type;
+        typedef ::xsd::cxx::tree::optional< T24ProcessElectricalPowerDensity_type > T24ProcessElectricalPowerDensity_optional;
+        typedef ::xsd::cxx::tree::traits< T24ProcessElectricalPowerDensity_type, char, ::xsd::cxx::tree::schema_type::double_ > T24ProcessElectricalPowerDensity_traits;
+
+        const T24ProcessElectricalPowerDensity_optional&
+        T24ProcessElectricalPowerDensity () const;
+
+        T24ProcessElectricalPowerDensity_optional&
+        T24ProcessElectricalPowerDensity ();
+
+        void
+        T24ProcessElectricalPowerDensity (const T24ProcessElectricalPowerDensity_type& x);
+
+        void
+        T24ProcessElectricalPowerDensity (const T24ProcessElectricalPowerDensity_optional& x);
+
+        // T24ProcessElectricalRadiationFraction
+        //
+        typedef ::xml_schema::double_ T24ProcessElectricalRadiationFraction_type;
+        typedef ::xsd::cxx::tree::optional< T24ProcessElectricalRadiationFraction_type > T24ProcessElectricalRadiationFraction_optional;
+        typedef ::xsd::cxx::tree::traits< T24ProcessElectricalRadiationFraction_type, char, ::xsd::cxx::tree::schema_type::double_ > T24ProcessElectricalRadiationFraction_traits;
+
+        const T24ProcessElectricalRadiationFraction_optional&
+        T24ProcessElectricalRadiationFraction () const;
+
+        T24ProcessElectricalRadiationFraction_optional&
+        T24ProcessElectricalRadiationFraction ();
+
+        void
+        T24ProcessElectricalRadiationFraction (const T24ProcessElectricalRadiationFraction_type& x);
+
+        void
+        T24ProcessElectricalRadiationFraction (const T24ProcessElectricalRadiationFraction_optional& x);
+
+        // T24ProcessElectricalScheduleReference
+        //
+        typedef ::xml_schema::idref T24ProcessElectricalScheduleReference_type;
+        typedef ::xsd::cxx::tree::optional< T24ProcessElectricalScheduleReference_type > T24ProcessElectricalScheduleReference_optional;
+        typedef ::xsd::cxx::tree::traits< T24ProcessElectricalScheduleReference_type, char > T24ProcessElectricalScheduleReference_traits;
+
+        const T24ProcessElectricalScheduleReference_optional&
+        T24ProcessElectricalScheduleReference () const;
+
+        T24ProcessElectricalScheduleReference_optional&
+        T24ProcessElectricalScheduleReference ();
+
+        void
+        T24ProcessElectricalScheduleReference (const T24ProcessElectricalScheduleReference_type& x);
+
+        void
+        T24ProcessElectricalScheduleReference (const T24ProcessElectricalScheduleReference_optional& x);
+
+        void
+        T24ProcessElectricalScheduleReference (::std::auto_ptr< T24ProcessElectricalScheduleReference_type > p);
+
+        // T24ProcessGasLatentFraction
+        //
+        typedef ::xml_schema::double_ T24ProcessGasLatentFraction_type;
+        typedef ::xsd::cxx::tree::optional< T24ProcessGasLatentFraction_type > T24ProcessGasLatentFraction_optional;
+        typedef ::xsd::cxx::tree::traits< T24ProcessGasLatentFraction_type, char, ::xsd::cxx::tree::schema_type::double_ > T24ProcessGasLatentFraction_traits;
+
+        const T24ProcessGasLatentFraction_optional&
+        T24ProcessGasLatentFraction () const;
+
+        T24ProcessGasLatentFraction_optional&
+        T24ProcessGasLatentFraction ();
+
+        void
+        T24ProcessGasLatentFraction (const T24ProcessGasLatentFraction_type& x);
+
+        void
+        T24ProcessGasLatentFraction (const T24ProcessGasLatentFraction_optional& x);
+
+        // T24ProcessGasLostFraction
+        //
+        typedef ::xml_schema::double_ T24ProcessGasLostFraction_type;
+        typedef ::xsd::cxx::tree::optional< T24ProcessGasLostFraction_type > T24ProcessGasLostFraction_optional;
+        typedef ::xsd::cxx::tree::traits< T24ProcessGasLostFraction_type, char, ::xsd::cxx::tree::schema_type::double_ > T24ProcessGasLostFraction_traits;
+
+        const T24ProcessGasLostFraction_optional&
+        T24ProcessGasLostFraction () const;
+
+        T24ProcessGasLostFraction_optional&
+        T24ProcessGasLostFraction ();
+
+        void
+        T24ProcessGasLostFraction (const T24ProcessGasLostFraction_type& x);
+
+        void
+        T24ProcessGasLostFraction (const T24ProcessGasLostFraction_optional& x);
+
+        // T24ProcessGasPowerDensity
+        //
+        typedef ::xml_schema::double_ T24ProcessGasPowerDensity_type;
+        typedef ::xsd::cxx::tree::optional< T24ProcessGasPowerDensity_type > T24ProcessGasPowerDensity_optional;
+        typedef ::xsd::cxx::tree::traits< T24ProcessGasPowerDensity_type, char, ::xsd::cxx::tree::schema_type::double_ > T24ProcessGasPowerDensity_traits;
+
+        const T24ProcessGasPowerDensity_optional&
+        T24ProcessGasPowerDensity () const;
+
+        T24ProcessGasPowerDensity_optional&
+        T24ProcessGasPowerDensity ();
+
+        void
+        T24ProcessGasPowerDensity (const T24ProcessGasPowerDensity_type& x);
+
+        void
+        T24ProcessGasPowerDensity (const T24ProcessGasPowerDensity_optional& x);
+
+        // T24ProcessGasRadiationFraction
+        //
+        typedef ::xml_schema::double_ T24ProcessGasRadiationFraction_type;
+        typedef ::xsd::cxx::tree::optional< T24ProcessGasRadiationFraction_type > T24ProcessGasRadiationFraction_optional;
+        typedef ::xsd::cxx::tree::traits< T24ProcessGasRadiationFraction_type, char, ::xsd::cxx::tree::schema_type::double_ > T24ProcessGasRadiationFraction_traits;
+
+        const T24ProcessGasRadiationFraction_optional&
+        T24ProcessGasRadiationFraction () const;
+
+        T24ProcessGasRadiationFraction_optional&
+        T24ProcessGasRadiationFraction ();
+
+        void
+        T24ProcessGasRadiationFraction (const T24ProcessGasRadiationFraction_type& x);
+
+        void
+        T24ProcessGasRadiationFraction (const T24ProcessGasRadiationFraction_optional& x);
+
+        // T24ProcessGasScheduleReference
+        //
+        typedef ::xml_schema::idref T24ProcessGasScheduleReference_type;
+        typedef ::xsd::cxx::tree::optional< T24ProcessGasScheduleReference_type > T24ProcessGasScheduleReference_optional;
+        typedef ::xsd::cxx::tree::traits< T24ProcessGasScheduleReference_type, char > T24ProcessGasScheduleReference_traits;
+
+        const T24ProcessGasScheduleReference_optional&
+        T24ProcessGasScheduleReference () const;
+
+        T24ProcessGasScheduleReference_optional&
+        T24ProcessGasScheduleReference ();
+
+        void
+        T24ProcessGasScheduleReference (const T24ProcessGasScheduleReference_type& x);
+
+        void
+        T24ProcessGasScheduleReference (const T24ProcessGasScheduleReference_optional& x);
+
+        void
+        T24ProcessGasScheduleReference (::std::auto_ptr< T24ProcessGasScheduleReference_type > p);
+
+        // T24ReceptacleLatentFraction
+        //
+        typedef ::xml_schema::double_ T24ReceptacleLatentFraction_type;
+        typedef ::xsd::cxx::tree::optional< T24ReceptacleLatentFraction_type > T24ReceptacleLatentFraction_optional;
+        typedef ::xsd::cxx::tree::traits< T24ReceptacleLatentFraction_type, char, ::xsd::cxx::tree::schema_type::double_ > T24ReceptacleLatentFraction_traits;
+
+        const T24ReceptacleLatentFraction_optional&
+        T24ReceptacleLatentFraction () const;
+
+        T24ReceptacleLatentFraction_optional&
+        T24ReceptacleLatentFraction ();
+
+        void
+        T24ReceptacleLatentFraction (const T24ReceptacleLatentFraction_type& x);
+
+        void
+        T24ReceptacleLatentFraction (const T24ReceptacleLatentFraction_optional& x);
+
+        // T24ReceptacleLostFraction
+        //
+        typedef ::xml_schema::double_ T24ReceptacleLostFraction_type;
+        typedef ::xsd::cxx::tree::optional< T24ReceptacleLostFraction_type > T24ReceptacleLostFraction_optional;
+        typedef ::xsd::cxx::tree::traits< T24ReceptacleLostFraction_type, char, ::xsd::cxx::tree::schema_type::double_ > T24ReceptacleLostFraction_traits;
+
+        const T24ReceptacleLostFraction_optional&
+        T24ReceptacleLostFraction () const;
+
+        T24ReceptacleLostFraction_optional&
+        T24ReceptacleLostFraction ();
+
+        void
+        T24ReceptacleLostFraction (const T24ReceptacleLostFraction_type& x);
+
+        void
+        T24ReceptacleLostFraction (const T24ReceptacleLostFraction_optional& x);
+
+        // T24ReceptaclePowerDensity
+        //
+        typedef ::xml_schema::double_ T24ReceptaclePowerDensity_type;
+        typedef ::xsd::cxx::tree::optional< T24ReceptaclePowerDensity_type > T24ReceptaclePowerDensity_optional;
+        typedef ::xsd::cxx::tree::traits< T24ReceptaclePowerDensity_type, char, ::xsd::cxx::tree::schema_type::double_ > T24ReceptaclePowerDensity_traits;
+
+        const T24ReceptaclePowerDensity_optional&
+        T24ReceptaclePowerDensity () const;
+
+        T24ReceptaclePowerDensity_optional&
+        T24ReceptaclePowerDensity ();
+
+        void
+        T24ReceptaclePowerDensity (const T24ReceptaclePowerDensity_type& x);
+
+        void
+        T24ReceptaclePowerDensity (const T24ReceptaclePowerDensity_optional& x);
+
+        // T24ReceptacleRadiationFraction
+        //
+        typedef ::xml_schema::double_ T24ReceptacleRadiationFraction_type;
+        typedef ::xsd::cxx::tree::optional< T24ReceptacleRadiationFraction_type > T24ReceptacleRadiationFraction_optional;
+        typedef ::xsd::cxx::tree::traits< T24ReceptacleRadiationFraction_type, char, ::xsd::cxx::tree::schema_type::double_ > T24ReceptacleRadiationFraction_traits;
+
+        const T24ReceptacleRadiationFraction_optional&
+        T24ReceptacleRadiationFraction () const;
+
+        T24ReceptacleRadiationFraction_optional&
+        T24ReceptacleRadiationFraction ();
+
+        void
+        T24ReceptacleRadiationFraction (const T24ReceptacleRadiationFraction_type& x);
+
+        void
+        T24ReceptacleRadiationFraction (const T24ReceptacleRadiationFraction_optional& x);
+
+        // T24ReceptacleScheduleReference
+        //
+        typedef ::xml_schema::idref T24ReceptacleScheduleReference_type;
+        typedef ::xsd::cxx::tree::optional< T24ReceptacleScheduleReference_type > T24ReceptacleScheduleReference_optional;
+        typedef ::xsd::cxx::tree::traits< T24ReceptacleScheduleReference_type, char > T24ReceptacleScheduleReference_traits;
+
+        const T24ReceptacleScheduleReference_optional&
+        T24ReceptacleScheduleReference () const;
+
+        T24ReceptacleScheduleReference_optional&
+        T24ReceptacleScheduleReference ();
+
+        void
+        T24ReceptacleScheduleReference (const T24ReceptacleScheduleReference_type& x);
+
+        void
+        T24ReceptacleScheduleReference (const T24ReceptacleScheduleReference_optional& x);
+
+        void
+        T24ReceptacleScheduleReference (::std::auto_ptr< T24ReceptacleScheduleReference_type > p);
+
+        // T24RecirculationDHWSystemReference
+        //
+        typedef ::xml_schema::idref T24RecirculationDHWSystemReference_type;
+        typedef ::xsd::cxx::tree::optional< T24RecirculationDHWSystemReference_type > T24RecirculationDHWSystemReference_optional;
+        typedef ::xsd::cxx::tree::traits< T24RecirculationDHWSystemReference_type, char > T24RecirculationDHWSystemReference_traits;
+
+        const T24RecirculationDHWSystemReference_optional&
+        T24RecirculationDHWSystemReference () const;
+
+        T24RecirculationDHWSystemReference_optional&
+        T24RecirculationDHWSystemReference ();
+
+        void
+        T24RecirculationDHWSystemReference (const T24RecirculationDHWSystemReference_type& x);
+
+        void
+        T24RecirculationDHWSystemReference (const T24RecirculationDHWSystemReference_optional& x);
+
+        void
+        T24RecirculationDHWSystemReference (::std::auto_ptr< T24RecirculationDHWSystemReference_type > p);
+
+        // T24SHWFluidSegmentReference
+        //
+        typedef ::xml_schema::idref T24SHWFluidSegmentReference_type;
+        typedef ::xsd::cxx::tree::optional< T24SHWFluidSegmentReference_type > T24SHWFluidSegmentReference_optional;
+        typedef ::xsd::cxx::tree::traits< T24SHWFluidSegmentReference_type, char > T24SHWFluidSegmentReference_traits;
+
+        const T24SHWFluidSegmentReference_optional&
+        T24SHWFluidSegmentReference () const;
+
+        T24SHWFluidSegmentReference_optional&
+        T24SHWFluidSegmentReference ();
+
+        void
+        T24SHWFluidSegmentReference (const T24SHWFluidSegmentReference_type& x);
+
+        void
+        T24SHWFluidSegmentReference (const T24SHWFluidSegmentReference_optional& x);
+
+        void
+        T24SHWFluidSegmentReference (::std::auto_ptr< T24SHWFluidSegmentReference_type > p);
+
+        // T24SpaceFunction
+        //
+        typedef ::xml_schema::string T24SpaceFunction_type;
+        typedef ::xsd::cxx::tree::optional< T24SpaceFunction_type > T24SpaceFunction_optional;
+        typedef ::xsd::cxx::tree::traits< T24SpaceFunction_type, char > T24SpaceFunction_traits;
+
+        const T24SpaceFunction_optional&
+        T24SpaceFunction () const;
+
+        T24SpaceFunction_optional&
+        T24SpaceFunction ();
+
+        void
+        T24SpaceFunction (const T24SpaceFunction_type& x);
+
+        void
+        T24SpaceFunction (const T24SpaceFunction_optional& x);
+
+        void
+        T24SpaceFunction (::std::auto_ptr< T24SpaceFunction_type > p);
+
+        // T24VentilationAirChangesPerHour
+        //
+        typedef ::xml_schema::double_ T24VentilationAirChangesPerHour_type;
+        typedef ::xsd::cxx::tree::optional< T24VentilationAirChangesPerHour_type > T24VentilationAirChangesPerHour_optional;
+        typedef ::xsd::cxx::tree::traits< T24VentilationAirChangesPerHour_type, char, ::xsd::cxx::tree::schema_type::double_ > T24VentilationAirChangesPerHour_traits;
+
+        const T24VentilationAirChangesPerHour_optional&
+        T24VentilationAirChangesPerHour () const;
+
+        T24VentilationAirChangesPerHour_optional&
+        T24VentilationAirChangesPerHour ();
+
+        void
+        T24VentilationAirChangesPerHour (const T24VentilationAirChangesPerHour_type& x);
+
+        void
+        T24VentilationAirChangesPerHour (const T24VentilationAirChangesPerHour_optional& x);
+
+        // T24VentilationPerArea
+        //
+        typedef ::xml_schema::double_ T24VentilationPerArea_type;
+        typedef ::xsd::cxx::tree::optional< T24VentilationPerArea_type > T24VentilationPerArea_optional;
+        typedef ::xsd::cxx::tree::traits< T24VentilationPerArea_type, char, ::xsd::cxx::tree::schema_type::double_ > T24VentilationPerArea_traits;
+
+        const T24VentilationPerArea_optional&
+        T24VentilationPerArea () const;
+
+        T24VentilationPerArea_optional&
+        T24VentilationPerArea ();
+
+        void
+        T24VentilationPerArea (const T24VentilationPerArea_type& x);
+
+        void
+        T24VentilationPerArea (const T24VentilationPerArea_optional& x);
+
+        // T24VentilationPerPerson
+        //
+        typedef ::xml_schema::double_ T24VentilationPerPerson_type;
+        typedef ::xsd::cxx::tree::optional< T24VentilationPerPerson_type > T24VentilationPerPerson_optional;
+        typedef ::xsd::cxx::tree::traits< T24VentilationPerPerson_type, char, ::xsd::cxx::tree::schema_type::double_ > T24VentilationPerPerson_traits;
+
+        const T24VentilationPerPerson_optional&
+        T24VentilationPerPerson () const;
+
+        T24VentilationPerPerson_optional&
+        T24VentilationPerPerson ();
+
+        void
+        T24VentilationPerPerson (const T24VentilationPerPerson_type& x);
+
+        void
+        T24VentilationPerPerson (const T24VentilationPerPerson_optional& x);
+
+        // T24VentilationPerSpace
+        //
+        typedef ::xml_schema::double_ T24VentilationPerSpace_type;
+        typedef ::xsd::cxx::tree::optional< T24VentilationPerSpace_type > T24VentilationPerSpace_optional;
+        typedef ::xsd::cxx::tree::traits< T24VentilationPerSpace_type, char, ::xsd::cxx::tree::schema_type::double_ > T24VentilationPerSpace_traits;
+
+        const T24VentilationPerSpace_optional&
+        T24VentilationPerSpace () const;
+
+        T24VentilationPerSpace_optional&
+        T24VentilationPerSpace ();
+
+        void
+        T24VentilationPerSpace (const T24VentilationPerSpace_type& x);
+
+        void
+        T24VentilationPerSpace (const T24VentilationPerSpace_optional& x);
 
         // Constructors.
         //
@@ -389,8 +2182,102 @@ namespace schema
         protected:
         RepresentationMaps_optional RepresentationMaps_;
         Tag_optional Tag_;
+        SpaceThermalSimulationType_optional SpaceThermalSimulationType_;
+        SpaceConditioningRequirement_Double_optional SpaceConditioningRequirement_Double_;
+        SpaceOccupantDensity_optional SpaceOccupantDensity_;
+        SpaceOccupantHeatRateLatent_optional SpaceOccupantHeatRateLatent_;
+        SpaceOccupantHeatRateSensible_optional SpaceOccupantHeatRateSensible_;
+        SpaceOccupantLoad_optional SpaceOccupantLoad_;
+        SpaceEquipmentLoad_optional SpaceEquipmentLoad_;
+        SpaceLightingLoad_optional SpaceLightingLoad_;
+        InsideDryBulbTempHeating_Double_optional InsideDryBulbTempHeating_Double_;
+        InsideRelHumidityHeating_optional InsideRelHumidityHeating_;
+        InsideDryBulbTempCooling_Double_optional InsideDryBulbTempCooling_Double_;
+        InsideRelHumidityCooling_optional InsideRelHumidityCooling_;
+        IncludesReturnAirPlenum_optional IncludesReturnAirPlenum_;
+        PeakAirFlowCooling_Double_optional PeakAirFlowCooling_Double_;
+        PeakAirFlowHeating_Double_optional PeakAirFlowHeating_Double_;
+        ExhaustAirFlowRate_Double_optional ExhaustAirFlowRate_Double_;
+        NaturalAirChangeRate_Double_optional NaturalAirChangeRate_Double_;
+        MechanicalAirChangeRate_Double_optional MechanicalAirChangeRate_Double_;
+        VentilationType_optional VentilationType_;
+        OutsideAirPerPerson_Double_optional OutsideAirPerPerson_Double_;
+        ClassRef_SpaceByFunction_optional ClassRef_SpaceByFunction_;
+        ClassRef_SpaceTypeOwner_optional ClassRef_SpaceTypeOwner_;
+        ClassRef_SpaceCategoryOwner_optional ClassRef_SpaceCategoryOwner_;
+        ClassRef_SpaceCategoryBOMA_optional ClassRef_SpaceCategoryBOMA_;
+        SpaceOccupantsList_optional SpaceOccupantsList_;
+        OccupancyScheduleAssignment_optional OccupancyScheduleAssignment_;
+        LightingScheduleAssignment_optional LightingScheduleAssignment_;
+        EquipmentScheduleAssignment_optional EquipmentScheduleAssignment_;
+        T24CommRefrigEPD_optional T24CommRefrigEPD_;
+        T24CommRefrigEqmtSchedRef_optional T24CommRefrigEqmtSchedRef_;
+        T24CommRefrigLatentFraction_optional T24CommRefrigLatentFraction_;
+        T24CommRefrigLostFraction_optional T24CommRefrigLostFraction_;
+        T24CommRefrigRedFraction_optional T24CommRefrigRedFraction_;
+        T24DesignInfiltrationRate_optional T24DesignInfiltrationRate_;
+        T24ElevatorCount_optional T24ElevatorCount_;
+        T24ElevatorLatentFraction_optional T24ElevatorLatentFraction_;
+        T24ElevatorLostFraction_optional T24ElevatorLostFraction_;
+        T24ElevatorPower_optional T24ElevatorPower_;
+        T24ElevatorRadiationFraction_optional T24ElevatorRadiationFraction_;
+        T24ElevatorScheduleReference_optional T24ElevatorScheduleReference_;
+        T24EscalatorCount_optional T24EscalatorCount_;
+        T24EscalatorLatentFraction_optional T24EscalatorLatentFraction_;
+        T24EscalatorLostFraction_optional T24EscalatorLostFraction_;
+        T24EscalatorPower_optional T24EscalatorPower_;
+        T24EscalatorRadiationFraction_optional T24EscalatorRadiationFraction_;
+        T24EscalatorScheduleReference_optional T24EscalatorScheduleReference_;
+        T24ExhaustAirChangesPerHour_optional T24ExhaustAirChangesPerHour_;
+        T24ExhaustPerArea_optional T24ExhaustPerArea_;
+        T24ExhaustPerSpace_optional T24ExhaustPerSpace_;
         T24FuncSchedGrp_optional T24FuncSchedGrp_;
+        T24GasEquipmentLatentFraction_optional T24GasEquipmentLatentFraction_;
+        T24GasEquipmentLostFraction_optional T24GasEquipmentLostFraction_;
+        T24GasEquipmentPowerDensity_optional T24GasEquipmentPowerDensity_;
+        T24GasEquipmentRadiationFraction_optional T24GasEquipmentRadiationFraction_;
+        T24GasEquipmentScheduleReference_optional T24GasEquipmentScheduleReference_;
+        T24HotWaterHeatingRate_optional T24HotWaterHeatingRate_;
+        T24HotWaterHeatingScheduleReference_optional T24HotWaterHeatingScheduleReference_;
+        T24HotWaterSupplyTemperature_optional T24HotWaterSupplyTemperature_;
+        T24HotWaterTemteratureSchedulrReference_optional T24HotWaterTemteratureSchedulrReference_;
         T24InfiltrMthd_optional T24InfiltrMthd_;
+        T24InfiltrationModelCoefficientA_optional T24InfiltrationModelCoefficientA_;
+        T24InfiltrationModelCoefficientB_optional T24InfiltrationModelCoefficientB_;
+        T24InfiltrationModelCoefficientC_optional T24InfiltrationModelCoefficientC_;
+        T24InfiltrationModelCoefficientD_optional T24InfiltrationModelCoefficientD_;
+        T24InfiltrationScheduleReference_optional T24InfiltrationScheduleReference_;
+        T24InteriorLightingNonRegulatedHeatGainRadiantFraction_optional T24InteriorLightingNonRegulatedHeatGainRadiantFraction_;
+        T24InteriorLightingNonRegulatedHeatGainSpaceFraction_optional T24InteriorLightingNonRegulatedHeatGainSpaceFraction_;
+        T24InteriorLightingNonRegulatedScheduleReference_optional T24InteriorLightingNonRegulatedScheduleReference_;
+        T24InteriorLightingPowerDensityNonRegulated_optional T24InteriorLightingPowerDensityNonRegulated_;
+        T24InteriorLightingPowerDensityRegulated_optional T24InteriorLightingPowerDensityRegulated_;
+        T24InteriorLightingRegulatedHeatGainRadiantFraction_optional T24InteriorLightingRegulatedHeatGainRadiantFraction_;
+        T24InteriorLightingRegulatedHeatGainSpaceFraction_optional T24InteriorLightingRegulatedHeatGainSpaceFraction_;
+        T24InteriorLightingRegulatedScheduleReference_optional T24InteriorLightingRegulatedScheduleReference_;
+        T24OccupantDensity_optional T24OccupantDensity_;
+        T24ProcessElectricalLatentFraction_optional T24ProcessElectricalLatentFraction_;
+        T24ProcessElectricalLostFraction_optional T24ProcessElectricalLostFraction_;
+        T24ProcessElectricalPowerDensity_optional T24ProcessElectricalPowerDensity_;
+        T24ProcessElectricalRadiationFraction_optional T24ProcessElectricalRadiationFraction_;
+        T24ProcessElectricalScheduleReference_optional T24ProcessElectricalScheduleReference_;
+        T24ProcessGasLatentFraction_optional T24ProcessGasLatentFraction_;
+        T24ProcessGasLostFraction_optional T24ProcessGasLostFraction_;
+        T24ProcessGasPowerDensity_optional T24ProcessGasPowerDensity_;
+        T24ProcessGasRadiationFraction_optional T24ProcessGasRadiationFraction_;
+        T24ProcessGasScheduleReference_optional T24ProcessGasScheduleReference_;
+        T24ReceptacleLatentFraction_optional T24ReceptacleLatentFraction_;
+        T24ReceptacleLostFraction_optional T24ReceptacleLostFraction_;
+        T24ReceptaclePowerDensity_optional T24ReceptaclePowerDensity_;
+        T24ReceptacleRadiationFraction_optional T24ReceptacleRadiationFraction_;
+        T24ReceptacleScheduleReference_optional T24ReceptacleScheduleReference_;
+        T24RecirculationDHWSystemReference_optional T24RecirculationDHWSystemReference_;
+        T24SHWFluidSegmentReference_optional T24SHWFluidSegmentReference_;
+        T24SpaceFunction_optional T24SpaceFunction_;
+        T24VentilationAirChangesPerHour_optional T24VentilationAirChangesPerHour_;
+        T24VentilationPerArea_optional T24VentilationPerArea_;
+        T24VentilationPerPerson_optional T24VentilationPerPerson_;
+        T24VentilationPerSpace_optional T24VentilationPerSpace_;
       };
     }
   }

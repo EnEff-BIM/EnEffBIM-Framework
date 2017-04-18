@@ -50,7 +50,7 @@
 #include <xsd/cxx/config.hxx>
 
 #if (XSD_INT_VERSION != 4000000L)
-#error XSD runtime version mismatch
+//#error XSD runtime version mismatch
 #endif
 
 #include <xsd/cxx/pre.hxx>
@@ -255,6 +255,17 @@ namespace schema
 {
   namespace simxml
   {
+    namespace SimModelCore
+    {
+      class doubleList;
+    }
+  }
+}
+
+namespace schema
+{
+  namespace simxml
+  {
     namespace ResourcesGeometry
     {
       class __declspec(dllexport) SimCartesianTransformOperator: public ::schema::simxml::SimModelCore::SimRepresentationItem
@@ -341,6 +352,27 @@ namespace schema
         void
         Scale (const Scale_optional& x);
 
+        // Coordinates
+        //
+        typedef ::schema::simxml::SimModelCore::doubleList Coordinates_type;
+        typedef ::xsd::cxx::tree::optional< Coordinates_type, false > Coordinates_optional;
+        typedef ::xsd::cxx::tree::traits< Coordinates_type, char > Coordinates_traits;
+
+        const Coordinates_optional&
+        Coordinates () const;
+
+        Coordinates_optional&
+        Coordinates ();
+
+        void
+        Coordinates (const Coordinates_type& x);
+
+        void
+        Coordinates (const Coordinates_optional& x);
+
+        void
+        Coordinates (::std::auto_ptr< Coordinates_type > p);
+
         // Constructors.
         //
         SimCartesianTransformOperator ();
@@ -377,6 +409,7 @@ namespace schema
         Axis2_optional Axis2_;
         LocalOrigin_optional LocalOrigin_;
         Scale_optional Scale_;
+        Coordinates_optional Coordinates_;
       };
     }
   }

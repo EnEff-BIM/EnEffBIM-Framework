@@ -50,7 +50,7 @@
 #include <xsd/cxx/config.hxx>
 
 #if (XSD_INT_VERSION != 4000000L)
-#error XSD runtime version mismatch
+//#error XSD runtime version mismatch
 #endif
 
 #include <xsd/cxx/pre.hxx>
@@ -260,7 +260,7 @@ namespace schema
       class __declspec(dllexport) SimGeomVector_Vector_Default: public ::schema::simxml::ResourcesGeometry::SimGeomVector_Vector
       {
         public:
-        // Orientation.Reference
+        // Orientation_Reference
         //
         typedef ::xml_schema::idref Orientation_Reference_type;
         typedef ::xsd::cxx::tree::optional< Orientation_Reference_type, false > Orientation_Reference_optional;

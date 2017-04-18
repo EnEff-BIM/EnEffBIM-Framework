@@ -48,6 +48,36 @@ namespace schema
     {
       // SimSiteAssembly_SiteAssembly_SolarHotWater
       // 
+
+      const SimSiteAssembly_SiteAssembly_SolarHotWater::SolarHotWaterSurface_Name_optional& SimSiteAssembly_SiteAssembly_SolarHotWater::
+      SolarHotWaterSurface_Name () const
+      {
+        return this->SolarHotWaterSurface_Name_;
+      }
+
+      SimSiteAssembly_SiteAssembly_SolarHotWater::SolarHotWaterSurface_Name_optional& SimSiteAssembly_SiteAssembly_SolarHotWater::
+      SolarHotWaterSurface_Name ()
+      {
+        return this->SolarHotWaterSurface_Name_;
+      }
+
+      void SimSiteAssembly_SiteAssembly_SolarHotWater::
+      SolarHotWaterSurface_Name (const SolarHotWaterSurface_Name_type& x)
+      {
+        this->SolarHotWaterSurface_Name_.set (x);
+      }
+
+      void SimSiteAssembly_SiteAssembly_SolarHotWater::
+      SolarHotWaterSurface_Name (const SolarHotWaterSurface_Name_optional& x)
+      {
+        this->SolarHotWaterSurface_Name_ = x;
+      }
+
+      void SimSiteAssembly_SiteAssembly_SolarHotWater::
+      SolarHotWaterSurface_Name (::std::auto_ptr< SolarHotWaterSurface_Name_type > x)
+      {
+        this->SolarHotWaterSurface_Name_.set (x);
+      }
     }
   }
 }
@@ -74,13 +104,15 @@ namespace schema
 
       SimSiteAssembly_SiteAssembly_SolarHotWater::
       SimSiteAssembly_SiteAssembly_SolarHotWater ()
-      : ::schema::simxml::BuildingModel::SimSiteAssembly_SiteAssembly ()
+      : ::schema::simxml::BuildingModel::SimSiteAssembly_SiteAssembly (),
+        SolarHotWaterSurface_Name_ (this)
       {
       }
 
       SimSiteAssembly_SiteAssembly_SolarHotWater::
       SimSiteAssembly_SiteAssembly_SolarHotWater (const RefId_type& RefId)
-      : ::schema::simxml::BuildingModel::SimSiteAssembly_SiteAssembly (RefId)
+      : ::schema::simxml::BuildingModel::SimSiteAssembly_SiteAssembly (RefId),
+        SolarHotWaterSurface_Name_ (this)
       {
       }
 
@@ -88,7 +120,8 @@ namespace schema
       SimSiteAssembly_SiteAssembly_SolarHotWater (const SimSiteAssembly_SiteAssembly_SolarHotWater& x,
                                                   ::xml_schema::flags f,
                                                   ::xml_schema::container* c)
-      : ::schema::simxml::BuildingModel::SimSiteAssembly_SiteAssembly (x, f, c)
+      : ::schema::simxml::BuildingModel::SimSiteAssembly_SiteAssembly (x, f, c),
+        SolarHotWaterSurface_Name_ (x.SolarHotWaterSurface_Name_, f, this)
       {
       }
 
@@ -96,8 +129,44 @@ namespace schema
       SimSiteAssembly_SiteAssembly_SolarHotWater (const ::xercesc::DOMElement& e,
                                                   ::xml_schema::flags f,
                                                   ::xml_schema::container* c)
-      : ::schema::simxml::BuildingModel::SimSiteAssembly_SiteAssembly (e, f, c)
+      : ::schema::simxml::BuildingModel::SimSiteAssembly_SiteAssembly (e, f | ::xml_schema::flags::base, c),
+        SolarHotWaterSurface_Name_ (this)
       {
+        if ((f & ::xml_schema::flags::base) == 0)
+        {
+          ::xsd::cxx::xml::dom::parser< char > p (e, true, false, true);
+          this->parse (p, f);
+        }
+      }
+
+      void SimSiteAssembly_SiteAssembly_SolarHotWater::
+      parse (::xsd::cxx::xml::dom::parser< char >& p,
+             ::xml_schema::flags f)
+      {
+        this->::schema::simxml::BuildingModel::SimSiteAssembly_SiteAssembly::parse (p, f);
+
+        for (; p.more_content (); p.next_content (false))
+        {
+          const ::xercesc::DOMElement& i (p.cur_element ());
+          const ::xsd::cxx::xml::qualified_name< char > n (
+            ::xsd::cxx::xml::dom::name< char > (i));
+
+          // SolarHotWaterSurface_Name
+          //
+          if (n.name () == "SolarHotWaterSurface_Name" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          {
+            ::std::auto_ptr< SolarHotWaterSurface_Name_type > r (
+              SolarHotWaterSurface_Name_traits::create (i, f, this));
+
+            if (!this->SolarHotWaterSurface_Name_)
+            {
+              this->SolarHotWaterSurface_Name_.set (r);
+              continue;
+            }
+          }
+
+          break;
+        }
       }
 
       SimSiteAssembly_SiteAssembly_SolarHotWater* SimSiteAssembly_SiteAssembly_SolarHotWater::
@@ -105,6 +174,18 @@ namespace schema
               ::xml_schema::container* c) const
       {
         return new class SimSiteAssembly_SiteAssembly_SolarHotWater (*this, f, c);
+      }
+
+      SimSiteAssembly_SiteAssembly_SolarHotWater& SimSiteAssembly_SiteAssembly_SolarHotWater::
+      operator= (const SimSiteAssembly_SiteAssembly_SolarHotWater& x)
+      {
+        if (this != &x)
+        {
+          static_cast< ::schema::simxml::BuildingModel::SimSiteAssembly_SiteAssembly& > (*this) = x;
+          this->SolarHotWaterSurface_Name_ = x.SolarHotWaterSurface_Name_;
+        }
+
+        return *this;
       }
 
       SimSiteAssembly_SiteAssembly_SolarHotWater::

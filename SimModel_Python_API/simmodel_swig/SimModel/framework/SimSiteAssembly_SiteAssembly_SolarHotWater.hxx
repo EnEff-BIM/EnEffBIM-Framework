@@ -260,6 +260,27 @@ namespace schema
       class SimSiteAssembly_SiteAssembly_SolarHotWater: public ::schema::simxml::BuildingModel::SimSiteAssembly_SiteAssembly
       {
         public:
+        // SolarHotWaterSurface_Name
+        //
+        typedef ::xml_schema::string SolarHotWaterSurface_Name_type;
+        typedef ::xsd::cxx::tree::optional< SolarHotWaterSurface_Name_type > SolarHotWaterSurface_Name_optional;
+        typedef ::xsd::cxx::tree::traits< SolarHotWaterSurface_Name_type, char > SolarHotWaterSurface_Name_traits;
+
+        const SolarHotWaterSurface_Name_optional&
+        SolarHotWaterSurface_Name () const;
+
+        SolarHotWaterSurface_Name_optional&
+        SolarHotWaterSurface_Name ();
+
+        void
+        SolarHotWaterSurface_Name (const SolarHotWaterSurface_Name_type& x);
+
+        void
+        SolarHotWaterSurface_Name (const SolarHotWaterSurface_Name_optional& x);
+
+        void
+        SolarHotWaterSurface_Name (::std::auto_ptr< SolarHotWaterSurface_Name_type > p);
+
         // Constructors.
         //
         SimSiteAssembly_SiteAssembly_SolarHotWater ();
@@ -278,8 +299,21 @@ namespace schema
         _clone (::xml_schema::flags f = 0,
                 ::xml_schema::container* c = 0) const;
 
+        SimSiteAssembly_SiteAssembly_SolarHotWater&
+        operator= (const SimSiteAssembly_SiteAssembly_SolarHotWater& x);
+
         virtual 
         ~SimSiteAssembly_SiteAssembly_SolarHotWater ();
+
+        // Implementation.
+        //
+        protected:
+        void
+        parse (::xsd::cxx::xml::dom::parser< char >&,
+               ::xml_schema::flags);
+
+        protected:
+        SolarHotWaterSurface_Name_optional SolarHotWaterSurface_Name_;
       };
     }
   }

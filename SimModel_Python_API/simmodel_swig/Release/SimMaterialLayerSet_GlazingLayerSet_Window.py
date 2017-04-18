@@ -165,11 +165,8 @@ class SimMaterialLayerSet_GlazingLayerSet_Window(SimMaterialLayerSet_GlazingLaye
     def T24FenestraTint(self, *args):
         return _SimMaterialLayerSet_GlazingLayerSet_Window.SimMaterialLayerSet_GlazingLayerSet_Window_T24FenestraTint(self, *args)
 
-    def GreenhouseGardenWindow(self, *args):
-        return _SimMaterialLayerSet_GlazingLayerSet_Window.SimMaterialLayerSet_GlazingLayerSet_Window_GreenhouseGardenWindow(self, *args)
-
-    def T24SHGC(self, *args):
-        return _SimMaterialLayerSet_GlazingLayerSet_Window.SimMaterialLayerSet_GlazingLayerSet_Window_T24SHGC(self, *args)
+    def T24GreenhouseGardenWindow(self, *args):
+        return _SimMaterialLayerSet_GlazingLayerSet_Window.SimMaterialLayerSet_GlazingLayerSet_Window_T24GreenhouseGardenWindow(self, *args)
 
     def T24SHGCCenterOfGlass(self, *args):
         return _SimMaterialLayerSet_GlazingLayerSet_Window.SimMaterialLayerSet_GlazingLayerSet_Window_T24SHGCCenterOfGlass(self, *args)

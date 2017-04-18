@@ -50,7 +50,7 @@
 #include <xsd/cxx/config.hxx>
 
 #if (XSD_INT_VERSION != 4000000L)
-#error XSD runtime version mismatch
+//#error XSD runtime version mismatch
 #endif
 
 #include <xsd/cxx/pre.hxx>
@@ -407,6 +407,45 @@ namespace schema
         void
         ChildSpaceBoundaries (::std::auto_ptr< ChildSpaceBoundaries_type > p);
 
+        // GrossSurfaceArea
+        //
+        typedef ::xml_schema::double_ GrossSurfaceArea_type;
+        typedef ::xsd::cxx::tree::optional< GrossSurfaceArea_type, true > GrossSurfaceArea_optional;
+        typedef ::xsd::cxx::tree::traits< GrossSurfaceArea_type, char, ::xsd::cxx::tree::schema_type::double_ > GrossSurfaceArea_traits;
+
+        const GrossSurfaceArea_optional&
+        GrossSurfaceArea () const;
+
+        GrossSurfaceArea_optional&
+        GrossSurfaceArea ();
+
+        void
+        GrossSurfaceArea (const GrossSurfaceArea_type& x);
+
+        void
+        GrossSurfaceArea (const GrossSurfaceArea_optional& x);
+
+        // SurfaceNormal
+        //
+        typedef ::xml_schema::idref SurfaceNormal_type;
+        typedef ::xsd::cxx::tree::optional< SurfaceNormal_type, false > SurfaceNormal_optional;
+        typedef ::xsd::cxx::tree::traits< SurfaceNormal_type, char > SurfaceNormal_traits;
+
+        const SurfaceNormal_optional&
+        SurfaceNormal () const;
+
+        SurfaceNormal_optional&
+        SurfaceNormal ();
+
+        void
+        SurfaceNormal (const SurfaceNormal_type& x);
+
+        void
+        SurfaceNormal (const SurfaceNormal_optional& x);
+
+        void
+        SurfaceNormal (::std::auto_ptr< SurfaceNormal_type > p);
+
         // Constructors.
         //
         SimSpaceBoundary ();
@@ -446,6 +485,8 @@ namespace schema
         InternalOrExternalBoundary_optional InternalOrExternalBoundary_;
         OthersideSpaceBoundary_optional OthersideSpaceBoundary_;
         ChildSpaceBoundaries_optional ChildSpaceBoundaries_;
+        GrossSurfaceArea_optional GrossSurfaceArea_;
+        SurfaceNormal_optional SurfaceNormal_;
       };
     }
   }

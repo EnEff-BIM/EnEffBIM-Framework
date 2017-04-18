@@ -48,6 +48,36 @@ namespace schema
     {
       // SimSiteAssembly_SiteAssembly_SolarPhotovoltaic
       // 
+
+      const SimSiteAssembly_SiteAssembly_SolarPhotovoltaic::PVSurface_Name_optional& SimSiteAssembly_SiteAssembly_SolarPhotovoltaic::
+      PVSurface_Name () const
+      {
+        return this->PVSurface_Name_;
+      }
+
+      SimSiteAssembly_SiteAssembly_SolarPhotovoltaic::PVSurface_Name_optional& SimSiteAssembly_SiteAssembly_SolarPhotovoltaic::
+      PVSurface_Name ()
+      {
+        return this->PVSurface_Name_;
+      }
+
+      void SimSiteAssembly_SiteAssembly_SolarPhotovoltaic::
+      PVSurface_Name (const PVSurface_Name_type& x)
+      {
+        this->PVSurface_Name_.set (x);
+      }
+
+      void SimSiteAssembly_SiteAssembly_SolarPhotovoltaic::
+      PVSurface_Name (const PVSurface_Name_optional& x)
+      {
+        this->PVSurface_Name_ = x;
+      }
+
+      void SimSiteAssembly_SiteAssembly_SolarPhotovoltaic::
+      PVSurface_Name (::std::auto_ptr< PVSurface_Name_type > x)
+      {
+        this->PVSurface_Name_.set (x);
+      }
     }
   }
 }
@@ -74,13 +104,15 @@ namespace schema
 
       SimSiteAssembly_SiteAssembly_SolarPhotovoltaic::
       SimSiteAssembly_SiteAssembly_SolarPhotovoltaic ()
-      : ::schema::simxml::BuildingModel::SimSiteAssembly_SiteAssembly ()
+      : ::schema::simxml::BuildingModel::SimSiteAssembly_SiteAssembly (),
+        PVSurface_Name_ (this)
       {
       }
 
       SimSiteAssembly_SiteAssembly_SolarPhotovoltaic::
       SimSiteAssembly_SiteAssembly_SolarPhotovoltaic (const RefId_type& RefId)
-      : ::schema::simxml::BuildingModel::SimSiteAssembly_SiteAssembly (RefId)
+      : ::schema::simxml::BuildingModel::SimSiteAssembly_SiteAssembly (RefId),
+        PVSurface_Name_ (this)
       {
       }
 
@@ -88,7 +120,8 @@ namespace schema
       SimSiteAssembly_SiteAssembly_SolarPhotovoltaic (const SimSiteAssembly_SiteAssembly_SolarPhotovoltaic& x,
                                                       ::xml_schema::flags f,
                                                       ::xml_schema::container* c)
-      : ::schema::simxml::BuildingModel::SimSiteAssembly_SiteAssembly (x, f, c)
+      : ::schema::simxml::BuildingModel::SimSiteAssembly_SiteAssembly (x, f, c),
+        PVSurface_Name_ (x.PVSurface_Name_, f, this)
       {
       }
 
@@ -96,8 +129,44 @@ namespace schema
       SimSiteAssembly_SiteAssembly_SolarPhotovoltaic (const ::xercesc::DOMElement& e,
                                                       ::xml_schema::flags f,
                                                       ::xml_schema::container* c)
-      : ::schema::simxml::BuildingModel::SimSiteAssembly_SiteAssembly (e, f, c)
+      : ::schema::simxml::BuildingModel::SimSiteAssembly_SiteAssembly (e, f | ::xml_schema::flags::base, c),
+        PVSurface_Name_ (this)
       {
+        if ((f & ::xml_schema::flags::base) == 0)
+        {
+          ::xsd::cxx::xml::dom::parser< char > p (e, true, false, true);
+          this->parse (p, f);
+        }
+      }
+
+      void SimSiteAssembly_SiteAssembly_SolarPhotovoltaic::
+      parse (::xsd::cxx::xml::dom::parser< char >& p,
+             ::xml_schema::flags f)
+      {
+        this->::schema::simxml::BuildingModel::SimSiteAssembly_SiteAssembly::parse (p, f);
+
+        for (; p.more_content (); p.next_content (false))
+        {
+          const ::xercesc::DOMElement& i (p.cur_element ());
+          const ::xsd::cxx::xml::qualified_name< char > n (
+            ::xsd::cxx::xml::dom::name< char > (i));
+
+          // PVSurface_Name
+          //
+          if (n.name () == "PVSurface_Name" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          {
+            ::std::auto_ptr< PVSurface_Name_type > r (
+              PVSurface_Name_traits::create (i, f, this));
+
+            if (!this->PVSurface_Name_)
+            {
+              this->PVSurface_Name_.set (r);
+              continue;
+            }
+          }
+
+          break;
+        }
       }
 
       SimSiteAssembly_SiteAssembly_SolarPhotovoltaic* SimSiteAssembly_SiteAssembly_SolarPhotovoltaic::
@@ -105,6 +174,18 @@ namespace schema
               ::xml_schema::container* c) const
       {
         return new class SimSiteAssembly_SiteAssembly_SolarPhotovoltaic (*this, f, c);
+      }
+
+      SimSiteAssembly_SiteAssembly_SolarPhotovoltaic& SimSiteAssembly_SiteAssembly_SolarPhotovoltaic::
+      operator= (const SimSiteAssembly_SiteAssembly_SolarPhotovoltaic& x)
+      {
+        if (this != &x)
+        {
+          static_cast< ::schema::simxml::BuildingModel::SimSiteAssembly_SiteAssembly& > (*this) = x;
+          this->PVSurface_Name_ = x.PVSurface_Name_;
+        }
+
+        return *this;
       }
 
       SimSiteAssembly_SiteAssembly_SolarPhotovoltaic::

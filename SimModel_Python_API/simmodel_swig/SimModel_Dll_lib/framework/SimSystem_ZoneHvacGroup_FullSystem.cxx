@@ -73,6 +73,60 @@ namespace schema
         this->T24AcceptTestReq_ = x;
       }
 
+      const SimSystem_ZoneHvacGroup_FullSystem::T24DuctInsulation_optional& SimSystem_ZoneHvacGroup_FullSystem::
+      T24DuctInsulation () const
+      {
+        return this->T24DuctInsulation_;
+      }
+
+      SimSystem_ZoneHvacGroup_FullSystem::T24DuctInsulation_optional& SimSystem_ZoneHvacGroup_FullSystem::
+      T24DuctInsulation ()
+      {
+        return this->T24DuctInsulation_;
+      }
+
+      void SimSystem_ZoneHvacGroup_FullSystem::
+      T24DuctInsulation (const T24DuctInsulation_type& x)
+      {
+        this->T24DuctInsulation_.set (x);
+      }
+
+      void SimSystem_ZoneHvacGroup_FullSystem::
+      T24DuctInsulation (const T24DuctInsulation_optional& x)
+      {
+        this->T24DuctInsulation_ = x;
+      }
+
+      const SimSystem_ZoneHvacGroup_FullSystem::T24DuctLocation_optional& SimSystem_ZoneHvacGroup_FullSystem::
+      T24DuctLocation () const
+      {
+        return this->T24DuctLocation_;
+      }
+
+      SimSystem_ZoneHvacGroup_FullSystem::T24DuctLocation_optional& SimSystem_ZoneHvacGroup_FullSystem::
+      T24DuctLocation ()
+      {
+        return this->T24DuctLocation_;
+      }
+
+      void SimSystem_ZoneHvacGroup_FullSystem::
+      T24DuctLocation (const T24DuctLocation_type& x)
+      {
+        this->T24DuctLocation_.set (x);
+      }
+
+      void SimSystem_ZoneHvacGroup_FullSystem::
+      T24DuctLocation (const T24DuctLocation_optional& x)
+      {
+        this->T24DuctLocation_ = x;
+      }
+
+      void SimSystem_ZoneHvacGroup_FullSystem::
+      T24DuctLocation (::std::auto_ptr< T24DuctLocation_type > x)
+      {
+        this->T24DuctLocation_.set (x);
+      }
+
       const SimSystem_ZoneHvacGroup_FullSystem::T24ExhCntrlMeth_optional& SimSystem_ZoneHvacGroup_FullSystem::
       T24ExhCntrlMeth () const
       {
@@ -133,148 +187,412 @@ namespace schema
         this->T24ExhSysType_.set (x);
       }
 
-      const SimSystem_ZoneHvacGroup_FullSystem::T24Mch03A_optional& SimSystem_ZoneHvacGroup_FullSystem::
-      T24Mch03A () const
+      const SimSystem_ZoneHvacGroup_FullSystem::T24NRCAMch02A_optional& SimSystem_ZoneHvacGroup_FullSystem::
+      T24NRCAMch02A () const
       {
-        return this->T24Mch03A_;
+        return this->T24NRCAMch02A_;
       }
 
-      SimSystem_ZoneHvacGroup_FullSystem::T24Mch03A_optional& SimSystem_ZoneHvacGroup_FullSystem::
-      T24Mch03A ()
+      SimSystem_ZoneHvacGroup_FullSystem::T24NRCAMch02A_optional& SimSystem_ZoneHvacGroup_FullSystem::
+      T24NRCAMch02A ()
       {
-        return this->T24Mch03A_;
-      }
-
-      void SimSystem_ZoneHvacGroup_FullSystem::
-      T24Mch03A (const T24Mch03A_type& x)
-      {
-        this->T24Mch03A_.set (x);
+        return this->T24NRCAMch02A_;
       }
 
       void SimSystem_ZoneHvacGroup_FullSystem::
-      T24Mch03A (const T24Mch03A_optional& x)
+      T24NRCAMch02A (const T24NRCAMch02A_type& x)
       {
-        this->T24Mch03A_ = x;
-      }
-
-      const SimSystem_ZoneHvacGroup_FullSystem::T24Mch04A_optional& SimSystem_ZoneHvacGroup_FullSystem::
-      T24Mch04A () const
-      {
-        return this->T24Mch04A_;
-      }
-
-      SimSystem_ZoneHvacGroup_FullSystem::T24Mch04A_optional& SimSystem_ZoneHvacGroup_FullSystem::
-      T24Mch04A ()
-      {
-        return this->T24Mch04A_;
+        this->T24NRCAMch02A_.set (x);
       }
 
       void SimSystem_ZoneHvacGroup_FullSystem::
-      T24Mch04A (const T24Mch04A_type& x)
+      T24NRCAMch02A (const T24NRCAMch02A_optional& x)
       {
-        this->T24Mch04A_.set (x);
+        this->T24NRCAMch02A_ = x;
+      }
+
+      const SimSystem_ZoneHvacGroup_FullSystem::T24NRCAMch03A_optional& SimSystem_ZoneHvacGroup_FullSystem::
+      T24NRCAMch03A () const
+      {
+        return this->T24NRCAMch03A_;
+      }
+
+      SimSystem_ZoneHvacGroup_FullSystem::T24NRCAMch03A_optional& SimSystem_ZoneHvacGroup_FullSystem::
+      T24NRCAMch03A ()
+      {
+        return this->T24NRCAMch03A_;
       }
 
       void SimSystem_ZoneHvacGroup_FullSystem::
-      T24Mch04A (const T24Mch04A_optional& x)
+      T24NRCAMch03A (const T24NRCAMch03A_type& x)
       {
-        this->T24Mch04A_ = x;
-      }
-
-      const SimSystem_ZoneHvacGroup_FullSystem::T24Mch02A_optional& SimSystem_ZoneHvacGroup_FullSystem::
-      T24Mch02A () const
-      {
-        return this->T24Mch02A_;
-      }
-
-      SimSystem_ZoneHvacGroup_FullSystem::T24Mch02A_optional& SimSystem_ZoneHvacGroup_FullSystem::
-      T24Mch02A ()
-      {
-        return this->T24Mch02A_;
+        this->T24NRCAMch03A_.set (x);
       }
 
       void SimSystem_ZoneHvacGroup_FullSystem::
-      T24Mch02A (const T24Mch02A_type& x)
+      T24NRCAMch03A (const T24NRCAMch03A_optional& x)
       {
-        this->T24Mch02A_.set (x);
+        this->T24NRCAMch03A_ = x;
+      }
+
+      const SimSystem_ZoneHvacGroup_FullSystem::T24NRCAMch04A_optional& SimSystem_ZoneHvacGroup_FullSystem::
+      T24NRCAMch04A () const
+      {
+        return this->T24NRCAMch04A_;
+      }
+
+      SimSystem_ZoneHvacGroup_FullSystem::T24NRCAMch04A_optional& SimSystem_ZoneHvacGroup_FullSystem::
+      T24NRCAMch04A ()
+      {
+        return this->T24NRCAMch04A_;
       }
 
       void SimSystem_ZoneHvacGroup_FullSystem::
-      T24Mch02A (const T24Mch02A_optional& x)
+      T24NRCAMch04A (const T24NRCAMch04A_type& x)
       {
-        this->T24Mch02A_ = x;
-      }
-
-      const SimSystem_ZoneHvacGroup_FullSystem::T24Mch09A_optional& SimSystem_ZoneHvacGroup_FullSystem::
-      T24Mch09A () const
-      {
-        return this->T24Mch09A_;
-      }
-
-      SimSystem_ZoneHvacGroup_FullSystem::T24Mch09A_optional& SimSystem_ZoneHvacGroup_FullSystem::
-      T24Mch09A ()
-      {
-        return this->T24Mch09A_;
+        this->T24NRCAMch04A_.set (x);
       }
 
       void SimSystem_ZoneHvacGroup_FullSystem::
-      T24Mch09A (const T24Mch09A_type& x)
+      T24NRCAMch04A (const T24NRCAMch04A_optional& x)
       {
-        this->T24Mch09A_.set (x);
+        this->T24NRCAMch04A_ = x;
+      }
+
+      const SimSystem_ZoneHvacGroup_FullSystem::T24NRCAMch05A_optional& SimSystem_ZoneHvacGroup_FullSystem::
+      T24NRCAMch05A () const
+      {
+        return this->T24NRCAMch05A_;
+      }
+
+      SimSystem_ZoneHvacGroup_FullSystem::T24NRCAMch05A_optional& SimSystem_ZoneHvacGroup_FullSystem::
+      T24NRCAMch05A ()
+      {
+        return this->T24NRCAMch05A_;
       }
 
       void SimSystem_ZoneHvacGroup_FullSystem::
-      T24Mch09A (const T24Mch09A_optional& x)
+      T24NRCAMch05A (const T24NRCAMch05A_type& x)
       {
-        this->T24Mch09A_ = x;
-      }
-
-      const SimSystem_ZoneHvacGroup_FullSystem::T24Mch15A_optional& SimSystem_ZoneHvacGroup_FullSystem::
-      T24Mch15A () const
-      {
-        return this->T24Mch15A_;
-      }
-
-      SimSystem_ZoneHvacGroup_FullSystem::T24Mch15A_optional& SimSystem_ZoneHvacGroup_FullSystem::
-      T24Mch15A ()
-      {
-        return this->T24Mch15A_;
+        this->T24NRCAMch05A_.set (x);
       }
 
       void SimSystem_ZoneHvacGroup_FullSystem::
-      T24Mch15A (const T24Mch15A_type& x)
+      T24NRCAMch05A (const T24NRCAMch05A_optional& x)
       {
-        this->T24Mch15A_.set (x);
+        this->T24NRCAMch05A_ = x;
+      }
+
+      const SimSystem_ZoneHvacGroup_FullSystem::T24NRCAMch06A_optional& SimSystem_ZoneHvacGroup_FullSystem::
+      T24NRCAMch06A () const
+      {
+        return this->T24NRCAMch06A_;
+      }
+
+      SimSystem_ZoneHvacGroup_FullSystem::T24NRCAMch06A_optional& SimSystem_ZoneHvacGroup_FullSystem::
+      T24NRCAMch06A ()
+      {
+        return this->T24NRCAMch06A_;
       }
 
       void SimSystem_ZoneHvacGroup_FullSystem::
-      T24Mch15A (const T24Mch15A_optional& x)
+      T24NRCAMch06A (const T24NRCAMch06A_type& x)
       {
-        this->T24Mch15A_ = x;
-      }
-
-      const SimSystem_ZoneHvacGroup_FullSystem::T24Mch17A_optional& SimSystem_ZoneHvacGroup_FullSystem::
-      T24Mch17A () const
-      {
-        return this->T24Mch17A_;
-      }
-
-      SimSystem_ZoneHvacGroup_FullSystem::T24Mch17A_optional& SimSystem_ZoneHvacGroup_FullSystem::
-      T24Mch17A ()
-      {
-        return this->T24Mch17A_;
+        this->T24NRCAMch06A_.set (x);
       }
 
       void SimSystem_ZoneHvacGroup_FullSystem::
-      T24Mch17A (const T24Mch17A_type& x)
+      T24NRCAMch06A (const T24NRCAMch06A_optional& x)
       {
-        this->T24Mch17A_.set (x);
+        this->T24NRCAMch06A_ = x;
+      }
+
+      const SimSystem_ZoneHvacGroup_FullSystem::T24NRCAMch07A_optional& SimSystem_ZoneHvacGroup_FullSystem::
+      T24NRCAMch07A () const
+      {
+        return this->T24NRCAMch07A_;
+      }
+
+      SimSystem_ZoneHvacGroup_FullSystem::T24NRCAMch07A_optional& SimSystem_ZoneHvacGroup_FullSystem::
+      T24NRCAMch07A ()
+      {
+        return this->T24NRCAMch07A_;
       }
 
       void SimSystem_ZoneHvacGroup_FullSystem::
-      T24Mch17A (const T24Mch17A_optional& x)
+      T24NRCAMch07A (const T24NRCAMch07A_type& x)
       {
-        this->T24Mch17A_ = x;
+        this->T24NRCAMch07A_.set (x);
+      }
+
+      void SimSystem_ZoneHvacGroup_FullSystem::
+      T24NRCAMch07A (const T24NRCAMch07A_optional& x)
+      {
+        this->T24NRCAMch07A_ = x;
+      }
+
+      const SimSystem_ZoneHvacGroup_FullSystem::T24NRCAMch08A_optional& SimSystem_ZoneHvacGroup_FullSystem::
+      T24NRCAMch08A () const
+      {
+        return this->T24NRCAMch08A_;
+      }
+
+      SimSystem_ZoneHvacGroup_FullSystem::T24NRCAMch08A_optional& SimSystem_ZoneHvacGroup_FullSystem::
+      T24NRCAMch08A ()
+      {
+        return this->T24NRCAMch08A_;
+      }
+
+      void SimSystem_ZoneHvacGroup_FullSystem::
+      T24NRCAMch08A (const T24NRCAMch08A_type& x)
+      {
+        this->T24NRCAMch08A_.set (x);
+      }
+
+      void SimSystem_ZoneHvacGroup_FullSystem::
+      T24NRCAMch08A (const T24NRCAMch08A_optional& x)
+      {
+        this->T24NRCAMch08A_ = x;
+      }
+
+      const SimSystem_ZoneHvacGroup_FullSystem::T24NRCAMch09A_optional& SimSystem_ZoneHvacGroup_FullSystem::
+      T24NRCAMch09A () const
+      {
+        return this->T24NRCAMch09A_;
+      }
+
+      SimSystem_ZoneHvacGroup_FullSystem::T24NRCAMch09A_optional& SimSystem_ZoneHvacGroup_FullSystem::
+      T24NRCAMch09A ()
+      {
+        return this->T24NRCAMch09A_;
+      }
+
+      void SimSystem_ZoneHvacGroup_FullSystem::
+      T24NRCAMch09A (const T24NRCAMch09A_type& x)
+      {
+        this->T24NRCAMch09A_.set (x);
+      }
+
+      void SimSystem_ZoneHvacGroup_FullSystem::
+      T24NRCAMch09A (const T24NRCAMch09A_optional& x)
+      {
+        this->T24NRCAMch09A_ = x;
+      }
+
+      const SimSystem_ZoneHvacGroup_FullSystem::T24NRCAMch10A_optional& SimSystem_ZoneHvacGroup_FullSystem::
+      T24NRCAMch10A () const
+      {
+        return this->T24NRCAMch10A_;
+      }
+
+      SimSystem_ZoneHvacGroup_FullSystem::T24NRCAMch10A_optional& SimSystem_ZoneHvacGroup_FullSystem::
+      T24NRCAMch10A ()
+      {
+        return this->T24NRCAMch10A_;
+      }
+
+      void SimSystem_ZoneHvacGroup_FullSystem::
+      T24NRCAMch10A (const T24NRCAMch10A_type& x)
+      {
+        this->T24NRCAMch10A_.set (x);
+      }
+
+      void SimSystem_ZoneHvacGroup_FullSystem::
+      T24NRCAMch10A (const T24NRCAMch10A_optional& x)
+      {
+        this->T24NRCAMch10A_ = x;
+      }
+
+      const SimSystem_ZoneHvacGroup_FullSystem::T24NRCAMch11A_optional& SimSystem_ZoneHvacGroup_FullSystem::
+      T24NRCAMch11A () const
+      {
+        return this->T24NRCAMch11A_;
+      }
+
+      SimSystem_ZoneHvacGroup_FullSystem::T24NRCAMch11A_optional& SimSystem_ZoneHvacGroup_FullSystem::
+      T24NRCAMch11A ()
+      {
+        return this->T24NRCAMch11A_;
+      }
+
+      void SimSystem_ZoneHvacGroup_FullSystem::
+      T24NRCAMch11A (const T24NRCAMch11A_type& x)
+      {
+        this->T24NRCAMch11A_.set (x);
+      }
+
+      void SimSystem_ZoneHvacGroup_FullSystem::
+      T24NRCAMch11A (const T24NRCAMch11A_optional& x)
+      {
+        this->T24NRCAMch11A_ = x;
+      }
+
+      const SimSystem_ZoneHvacGroup_FullSystem::T24NRCAMch12A_optional& SimSystem_ZoneHvacGroup_FullSystem::
+      T24NRCAMch12A () const
+      {
+        return this->T24NRCAMch12A_;
+      }
+
+      SimSystem_ZoneHvacGroup_FullSystem::T24NRCAMch12A_optional& SimSystem_ZoneHvacGroup_FullSystem::
+      T24NRCAMch12A ()
+      {
+        return this->T24NRCAMch12A_;
+      }
+
+      void SimSystem_ZoneHvacGroup_FullSystem::
+      T24NRCAMch12A (const T24NRCAMch12A_type& x)
+      {
+        this->T24NRCAMch12A_.set (x);
+      }
+
+      void SimSystem_ZoneHvacGroup_FullSystem::
+      T24NRCAMch12A (const T24NRCAMch12A_optional& x)
+      {
+        this->T24NRCAMch12A_ = x;
+      }
+
+      const SimSystem_ZoneHvacGroup_FullSystem::T24NRCAMch13A_optional& SimSystem_ZoneHvacGroup_FullSystem::
+      T24NRCAMch13A () const
+      {
+        return this->T24NRCAMch13A_;
+      }
+
+      SimSystem_ZoneHvacGroup_FullSystem::T24NRCAMch13A_optional& SimSystem_ZoneHvacGroup_FullSystem::
+      T24NRCAMch13A ()
+      {
+        return this->T24NRCAMch13A_;
+      }
+
+      void SimSystem_ZoneHvacGroup_FullSystem::
+      T24NRCAMch13A (const T24NRCAMch13A_type& x)
+      {
+        this->T24NRCAMch13A_.set (x);
+      }
+
+      void SimSystem_ZoneHvacGroup_FullSystem::
+      T24NRCAMch13A (const T24NRCAMch13A_optional& x)
+      {
+        this->T24NRCAMch13A_ = x;
+      }
+
+      const SimSystem_ZoneHvacGroup_FullSystem::T24NRCAMch14A_optional& SimSystem_ZoneHvacGroup_FullSystem::
+      T24NRCAMch14A () const
+      {
+        return this->T24NRCAMch14A_;
+      }
+
+      SimSystem_ZoneHvacGroup_FullSystem::T24NRCAMch14A_optional& SimSystem_ZoneHvacGroup_FullSystem::
+      T24NRCAMch14A ()
+      {
+        return this->T24NRCAMch14A_;
+      }
+
+      void SimSystem_ZoneHvacGroup_FullSystem::
+      T24NRCAMch14A (const T24NRCAMch14A_type& x)
+      {
+        this->T24NRCAMch14A_.set (x);
+      }
+
+      void SimSystem_ZoneHvacGroup_FullSystem::
+      T24NRCAMch14A (const T24NRCAMch14A_optional& x)
+      {
+        this->T24NRCAMch14A_ = x;
+      }
+
+      const SimSystem_ZoneHvacGroup_FullSystem::T24NRCAMch15A_optional& SimSystem_ZoneHvacGroup_FullSystem::
+      T24NRCAMch15A () const
+      {
+        return this->T24NRCAMch15A_;
+      }
+
+      SimSystem_ZoneHvacGroup_FullSystem::T24NRCAMch15A_optional& SimSystem_ZoneHvacGroup_FullSystem::
+      T24NRCAMch15A ()
+      {
+        return this->T24NRCAMch15A_;
+      }
+
+      void SimSystem_ZoneHvacGroup_FullSystem::
+      T24NRCAMch15A (const T24NRCAMch15A_type& x)
+      {
+        this->T24NRCAMch15A_.set (x);
+      }
+
+      void SimSystem_ZoneHvacGroup_FullSystem::
+      T24NRCAMch15A (const T24NRCAMch15A_optional& x)
+      {
+        this->T24NRCAMch15A_ = x;
+      }
+
+      const SimSystem_ZoneHvacGroup_FullSystem::T24NRCAMch16A_optional& SimSystem_ZoneHvacGroup_FullSystem::
+      T24NRCAMch16A () const
+      {
+        return this->T24NRCAMch16A_;
+      }
+
+      SimSystem_ZoneHvacGroup_FullSystem::T24NRCAMch16A_optional& SimSystem_ZoneHvacGroup_FullSystem::
+      T24NRCAMch16A ()
+      {
+        return this->T24NRCAMch16A_;
+      }
+
+      void SimSystem_ZoneHvacGroup_FullSystem::
+      T24NRCAMch16A (const T24NRCAMch16A_type& x)
+      {
+        this->T24NRCAMch16A_.set (x);
+      }
+
+      void SimSystem_ZoneHvacGroup_FullSystem::
+      T24NRCAMch16A (const T24NRCAMch16A_optional& x)
+      {
+        this->T24NRCAMch16A_ = x;
+      }
+
+      const SimSystem_ZoneHvacGroup_FullSystem::T24NRCAMch17A_optional& SimSystem_ZoneHvacGroup_FullSystem::
+      T24NRCAMch17A () const
+      {
+        return this->T24NRCAMch17A_;
+      }
+
+      SimSystem_ZoneHvacGroup_FullSystem::T24NRCAMch17A_optional& SimSystem_ZoneHvacGroup_FullSystem::
+      T24NRCAMch17A ()
+      {
+        return this->T24NRCAMch17A_;
+      }
+
+      void SimSystem_ZoneHvacGroup_FullSystem::
+      T24NRCAMch17A (const T24NRCAMch17A_type& x)
+      {
+        this->T24NRCAMch17A_.set (x);
+      }
+
+      void SimSystem_ZoneHvacGroup_FullSystem::
+      T24NRCAMch17A (const T24NRCAMch17A_optional& x)
+      {
+        this->T24NRCAMch17A_ = x;
+      }
+
+      const SimSystem_ZoneHvacGroup_FullSystem::T24NRCAMch18A_optional& SimSystem_ZoneHvacGroup_FullSystem::
+      T24NRCAMch18A () const
+      {
+        return this->T24NRCAMch18A_;
+      }
+
+      SimSystem_ZoneHvacGroup_FullSystem::T24NRCAMch18A_optional& SimSystem_ZoneHvacGroup_FullSystem::
+      T24NRCAMch18A ()
+      {
+        return this->T24NRCAMch18A_;
+      }
+
+      void SimSystem_ZoneHvacGroup_FullSystem::
+      T24NRCAMch18A (const T24NRCAMch18A_type& x)
+      {
+        this->T24NRCAMch18A_.set (x);
+      }
+
+      void SimSystem_ZoneHvacGroup_FullSystem::
+      T24NRCAMch18A (const T24NRCAMch18A_optional& x)
+      {
+        this->T24NRCAMch18A_ = x;
       }
 
       const SimSystem_ZoneHvacGroup_FullSystem::T24ConstructStatus3_optional& SimSystem_ZoneHvacGroup_FullSystem::
@@ -334,14 +652,27 @@ namespace schema
       SimSystem_ZoneHvacGroup_FullSystem ()
       : ::schema::simxml::BuildingModel::SimSystem_ZoneHvacGroup (),
         T24AcceptTestReq_ (this),
+        T24DuctInsulation_ (this),
+        T24DuctLocation_ (this),
         T24ExhCntrlMeth_ (this),
         T24ExhSysType_ (this),
-        T24Mch03A_ (this),
-        T24Mch04A_ (this),
-        T24Mch02A_ (this),
-        T24Mch09A_ (this),
-        T24Mch15A_ (this),
-        T24Mch17A_ (this),
+        T24NRCAMch02A_ (this),
+        T24NRCAMch03A_ (this),
+        T24NRCAMch04A_ (this),
+        T24NRCAMch05A_ (this),
+        T24NRCAMch06A_ (this),
+        T24NRCAMch07A_ (this),
+        T24NRCAMch08A_ (this),
+        T24NRCAMch09A_ (this),
+        T24NRCAMch10A_ (this),
+        T24NRCAMch11A_ (this),
+        T24NRCAMch12A_ (this),
+        T24NRCAMch13A_ (this),
+        T24NRCAMch14A_ (this),
+        T24NRCAMch15A_ (this),
+        T24NRCAMch16A_ (this),
+        T24NRCAMch17A_ (this),
+        T24NRCAMch18A_ (this),
         T24ConstructStatus3_ (this)
       {
       }
@@ -350,14 +681,27 @@ namespace schema
       SimSystem_ZoneHvacGroup_FullSystem (const RefId_type& RefId)
       : ::schema::simxml::BuildingModel::SimSystem_ZoneHvacGroup (RefId),
         T24AcceptTestReq_ (this),
+        T24DuctInsulation_ (this),
+        T24DuctLocation_ (this),
         T24ExhCntrlMeth_ (this),
         T24ExhSysType_ (this),
-        T24Mch03A_ (this),
-        T24Mch04A_ (this),
-        T24Mch02A_ (this),
-        T24Mch09A_ (this),
-        T24Mch15A_ (this),
-        T24Mch17A_ (this),
+        T24NRCAMch02A_ (this),
+        T24NRCAMch03A_ (this),
+        T24NRCAMch04A_ (this),
+        T24NRCAMch05A_ (this),
+        T24NRCAMch06A_ (this),
+        T24NRCAMch07A_ (this),
+        T24NRCAMch08A_ (this),
+        T24NRCAMch09A_ (this),
+        T24NRCAMch10A_ (this),
+        T24NRCAMch11A_ (this),
+        T24NRCAMch12A_ (this),
+        T24NRCAMch13A_ (this),
+        T24NRCAMch14A_ (this),
+        T24NRCAMch15A_ (this),
+        T24NRCAMch16A_ (this),
+        T24NRCAMch17A_ (this),
+        T24NRCAMch18A_ (this),
         T24ConstructStatus3_ (this)
       {
       }
@@ -368,14 +712,27 @@ namespace schema
                                           ::xml_schema::container* c)
       : ::schema::simxml::BuildingModel::SimSystem_ZoneHvacGroup (x, f, c),
         T24AcceptTestReq_ (x.T24AcceptTestReq_, f, this),
+        T24DuctInsulation_ (x.T24DuctInsulation_, f, this),
+        T24DuctLocation_ (x.T24DuctLocation_, f, this),
         T24ExhCntrlMeth_ (x.T24ExhCntrlMeth_, f, this),
         T24ExhSysType_ (x.T24ExhSysType_, f, this),
-        T24Mch03A_ (x.T24Mch03A_, f, this),
-        T24Mch04A_ (x.T24Mch04A_, f, this),
-        T24Mch02A_ (x.T24Mch02A_, f, this),
-        T24Mch09A_ (x.T24Mch09A_, f, this),
-        T24Mch15A_ (x.T24Mch15A_, f, this),
-        T24Mch17A_ (x.T24Mch17A_, f, this),
+        T24NRCAMch02A_ (x.T24NRCAMch02A_, f, this),
+        T24NRCAMch03A_ (x.T24NRCAMch03A_, f, this),
+        T24NRCAMch04A_ (x.T24NRCAMch04A_, f, this),
+        T24NRCAMch05A_ (x.T24NRCAMch05A_, f, this),
+        T24NRCAMch06A_ (x.T24NRCAMch06A_, f, this),
+        T24NRCAMch07A_ (x.T24NRCAMch07A_, f, this),
+        T24NRCAMch08A_ (x.T24NRCAMch08A_, f, this),
+        T24NRCAMch09A_ (x.T24NRCAMch09A_, f, this),
+        T24NRCAMch10A_ (x.T24NRCAMch10A_, f, this),
+        T24NRCAMch11A_ (x.T24NRCAMch11A_, f, this),
+        T24NRCAMch12A_ (x.T24NRCAMch12A_, f, this),
+        T24NRCAMch13A_ (x.T24NRCAMch13A_, f, this),
+        T24NRCAMch14A_ (x.T24NRCAMch14A_, f, this),
+        T24NRCAMch15A_ (x.T24NRCAMch15A_, f, this),
+        T24NRCAMch16A_ (x.T24NRCAMch16A_, f, this),
+        T24NRCAMch17A_ (x.T24NRCAMch17A_, f, this),
+        T24NRCAMch18A_ (x.T24NRCAMch18A_, f, this),
         T24ConstructStatus3_ (x.T24ConstructStatus3_, f, this)
       {
       }
@@ -386,14 +743,27 @@ namespace schema
                                           ::xml_schema::container* c)
       : ::schema::simxml::BuildingModel::SimSystem_ZoneHvacGroup (e, f | ::xml_schema::flags::base, c),
         T24AcceptTestReq_ (this),
+        T24DuctInsulation_ (this),
+        T24DuctLocation_ (this),
         T24ExhCntrlMeth_ (this),
         T24ExhSysType_ (this),
-        T24Mch03A_ (this),
-        T24Mch04A_ (this),
-        T24Mch02A_ (this),
-        T24Mch09A_ (this),
-        T24Mch15A_ (this),
-        T24Mch17A_ (this),
+        T24NRCAMch02A_ (this),
+        T24NRCAMch03A_ (this),
+        T24NRCAMch04A_ (this),
+        T24NRCAMch05A_ (this),
+        T24NRCAMch06A_ (this),
+        T24NRCAMch07A_ (this),
+        T24NRCAMch08A_ (this),
+        T24NRCAMch09A_ (this),
+        T24NRCAMch10A_ (this),
+        T24NRCAMch11A_ (this),
+        T24NRCAMch12A_ (this),
+        T24NRCAMch13A_ (this),
+        T24NRCAMch14A_ (this),
+        T24NRCAMch15A_ (this),
+        T24NRCAMch16A_ (this),
+        T24NRCAMch17A_ (this),
+        T24NRCAMch18A_ (this),
         T24ConstructStatus3_ (this)
       {
         if ((f & ::xml_schema::flags::base) == 0)
@@ -426,6 +796,31 @@ namespace schema
             }
           }
 
+          // T24DuctInsulation
+          //
+          if (n.name () == "T24DuctInsulation" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          {
+            if (!this->T24DuctInsulation_)
+            {
+              this->T24DuctInsulation_.set (T24DuctInsulation_traits::create (i, f, this));
+              continue;
+            }
+          }
+
+          // T24DuctLocation
+          //
+          if (n.name () == "T24DuctLocation" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          {
+            ::std::auto_ptr< T24DuctLocation_type > r (
+              T24DuctLocation_traits::create (i, f, this));
+
+            if (!this->T24DuctLocation_)
+            {
+              this->T24DuctLocation_.set (r);
+              continue;
+            }
+          }
+
           // T24ExhCntrlMeth
           //
           if (n.name () == "T24ExhCntrlMeth" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
@@ -454,68 +849,189 @@ namespace schema
             }
           }
 
-          // T24Mch03A
+          // T24NRCAMch02A
           //
-          if (n.name () == "T24Mch03A" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          if (n.name () == "T24NRCAMch02A" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
           {
-            if (!this->T24Mch03A_)
+            if (!this->T24NRCAMch02A_)
             {
-              this->T24Mch03A_.set (T24Mch03A_traits::create (i, f, this));
+              this->T24NRCAMch02A_.set (T24NRCAMch02A_traits::create (i, f, this));
               continue;
             }
           }
 
-          // T24Mch04A
+          // T24NRCAMch03A
           //
-          if (n.name () == "T24Mch04A" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          if (n.name () == "T24NRCAMch03A" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
           {
-            if (!this->T24Mch04A_)
+            if (!this->T24NRCAMch03A_)
             {
-              this->T24Mch04A_.set (T24Mch04A_traits::create (i, f, this));
+              this->T24NRCAMch03A_.set (T24NRCAMch03A_traits::create (i, f, this));
               continue;
             }
           }
 
-          // T24Mch02A
+          // T24NRCAMch04A
           //
-          if (n.name () == "T24Mch02A" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          if (n.name () == "T24NRCAMch04A" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
           {
-            if (!this->T24Mch02A_)
+            if (!this->T24NRCAMch04A_)
             {
-              this->T24Mch02A_.set (T24Mch02A_traits::create (i, f, this));
+              this->T24NRCAMch04A_.set (T24NRCAMch04A_traits::create (i, f, this));
               continue;
             }
           }
 
-          // T24Mch09A
+          // T24NRCAMch05A
           //
-          if (n.name () == "T24Mch09A" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          if (n.name () == "T24NRCAMch05A" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
           {
-            if (!this->T24Mch09A_)
+            if (!this->T24NRCAMch05A_)
             {
-              this->T24Mch09A_.set (T24Mch09A_traits::create (i, f, this));
+              this->T24NRCAMch05A_.set (T24NRCAMch05A_traits::create (i, f, this));
               continue;
             }
           }
 
-          // T24Mch15A
+          // T24NRCAMch06A
           //
-          if (n.name () == "T24Mch15A" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          if (n.name () == "T24NRCAMch06A" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
           {
-            if (!this->T24Mch15A_)
+            if (!this->T24NRCAMch06A_)
             {
-              this->T24Mch15A_.set (T24Mch15A_traits::create (i, f, this));
+              this->T24NRCAMch06A_.set (T24NRCAMch06A_traits::create (i, f, this));
               continue;
             }
           }
 
-          // T24Mch17A
+          // T24NRCAMch07A
           //
-          if (n.name () == "T24Mch17A" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          if (n.name () == "T24NRCAMch07A" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
           {
-            if (!this->T24Mch17A_)
+            if (!this->T24NRCAMch07A_)
             {
-              this->T24Mch17A_.set (T24Mch17A_traits::create (i, f, this));
+              this->T24NRCAMch07A_.set (T24NRCAMch07A_traits::create (i, f, this));
+              continue;
+            }
+          }
+
+          // T24NRCAMch08A
+          //
+          if (n.name () == "T24NRCAMch08A" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          {
+            if (!this->T24NRCAMch08A_)
+            {
+              this->T24NRCAMch08A_.set (T24NRCAMch08A_traits::create (i, f, this));
+              continue;
+            }
+          }
+
+          // T24NRCAMch09A
+          //
+          if (n.name () == "T24NRCAMch09A" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          {
+            if (!this->T24NRCAMch09A_)
+            {
+              this->T24NRCAMch09A_.set (T24NRCAMch09A_traits::create (i, f, this));
+              continue;
+            }
+          }
+
+          // T24NRCAMch10A
+          //
+          if (n.name () == "T24NRCAMch10A" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          {
+            if (!this->T24NRCAMch10A_)
+            {
+              this->T24NRCAMch10A_.set (T24NRCAMch10A_traits::create (i, f, this));
+              continue;
+            }
+          }
+
+          // T24NRCAMch11A
+          //
+          if (n.name () == "T24NRCAMch11A" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          {
+            if (!this->T24NRCAMch11A_)
+            {
+              this->T24NRCAMch11A_.set (T24NRCAMch11A_traits::create (i, f, this));
+              continue;
+            }
+          }
+
+          // T24NRCAMch12A
+          //
+          if (n.name () == "T24NRCAMch12A" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          {
+            if (!this->T24NRCAMch12A_)
+            {
+              this->T24NRCAMch12A_.set (T24NRCAMch12A_traits::create (i, f, this));
+              continue;
+            }
+          }
+
+          // T24NRCAMch13A
+          //
+          if (n.name () == "T24NRCAMch13A" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          {
+            if (!this->T24NRCAMch13A_)
+            {
+              this->T24NRCAMch13A_.set (T24NRCAMch13A_traits::create (i, f, this));
+              continue;
+            }
+          }
+
+          // T24NRCAMch14A
+          //
+          if (n.name () == "T24NRCAMch14A" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          {
+            if (!this->T24NRCAMch14A_)
+            {
+              this->T24NRCAMch14A_.set (T24NRCAMch14A_traits::create (i, f, this));
+              continue;
+            }
+          }
+
+          // T24NRCAMch15A
+          //
+          if (n.name () == "T24NRCAMch15A" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          {
+            if (!this->T24NRCAMch15A_)
+            {
+              this->T24NRCAMch15A_.set (T24NRCAMch15A_traits::create (i, f, this));
+              continue;
+            }
+          }
+
+          // T24NRCAMch16A
+          //
+          if (n.name () == "T24NRCAMch16A" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          {
+            if (!this->T24NRCAMch16A_)
+            {
+              this->T24NRCAMch16A_.set (T24NRCAMch16A_traits::create (i, f, this));
+              continue;
+            }
+          }
+
+          // T24NRCAMch17A
+          //
+          if (n.name () == "T24NRCAMch17A" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          {
+            if (!this->T24NRCAMch17A_)
+            {
+              this->T24NRCAMch17A_.set (T24NRCAMch17A_traits::create (i, f, this));
+              continue;
+            }
+          }
+
+          // T24NRCAMch18A
+          //
+          if (n.name () == "T24NRCAMch18A" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          {
+            if (!this->T24NRCAMch18A_)
+            {
+              this->T24NRCAMch18A_.set (T24NRCAMch18A_traits::create (i, f, this));
               continue;
             }
           }
@@ -552,14 +1068,27 @@ namespace schema
         {
           static_cast< ::schema::simxml::BuildingModel::SimSystem_ZoneHvacGroup& > (*this) = x;
           this->T24AcceptTestReq_ = x.T24AcceptTestReq_;
+          this->T24DuctInsulation_ = x.T24DuctInsulation_;
+          this->T24DuctLocation_ = x.T24DuctLocation_;
           this->T24ExhCntrlMeth_ = x.T24ExhCntrlMeth_;
           this->T24ExhSysType_ = x.T24ExhSysType_;
-          this->T24Mch03A_ = x.T24Mch03A_;
-          this->T24Mch04A_ = x.T24Mch04A_;
-          this->T24Mch02A_ = x.T24Mch02A_;
-          this->T24Mch09A_ = x.T24Mch09A_;
-          this->T24Mch15A_ = x.T24Mch15A_;
-          this->T24Mch17A_ = x.T24Mch17A_;
+          this->T24NRCAMch02A_ = x.T24NRCAMch02A_;
+          this->T24NRCAMch03A_ = x.T24NRCAMch03A_;
+          this->T24NRCAMch04A_ = x.T24NRCAMch04A_;
+          this->T24NRCAMch05A_ = x.T24NRCAMch05A_;
+          this->T24NRCAMch06A_ = x.T24NRCAMch06A_;
+          this->T24NRCAMch07A_ = x.T24NRCAMch07A_;
+          this->T24NRCAMch08A_ = x.T24NRCAMch08A_;
+          this->T24NRCAMch09A_ = x.T24NRCAMch09A_;
+          this->T24NRCAMch10A_ = x.T24NRCAMch10A_;
+          this->T24NRCAMch11A_ = x.T24NRCAMch11A_;
+          this->T24NRCAMch12A_ = x.T24NRCAMch12A_;
+          this->T24NRCAMch13A_ = x.T24NRCAMch13A_;
+          this->T24NRCAMch14A_ = x.T24NRCAMch14A_;
+          this->T24NRCAMch15A_ = x.T24NRCAMch15A_;
+          this->T24NRCAMch16A_ = x.T24NRCAMch16A_;
+          this->T24NRCAMch17A_ = x.T24NRCAMch17A_;
+          this->T24NRCAMch18A_ = x.T24NRCAMch18A_;
           this->T24ConstructStatus3_ = x.T24ConstructStatus3_;
         }
 

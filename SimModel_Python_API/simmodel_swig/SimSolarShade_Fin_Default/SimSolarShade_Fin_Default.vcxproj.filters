@@ -25,6 +25,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="SimSolarShade_Fin_Default.i" />
+    <CustomBuild Include="SimSolarShade_Fin_Default.i" />
   </ItemGroup>
 </Project>

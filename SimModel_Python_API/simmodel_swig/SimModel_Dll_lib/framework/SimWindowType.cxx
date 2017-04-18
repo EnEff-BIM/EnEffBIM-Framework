@@ -486,6 +486,36 @@ namespace schema
       {
         this->ContainingOpeningTypeDef_.set (x);
       }
+
+      const SimWindowType::MaterialLayerSet_optional& SimWindowType::
+      MaterialLayerSet () const
+      {
+        return this->MaterialLayerSet_;
+      }
+
+      SimWindowType::MaterialLayerSet_optional& SimWindowType::
+      MaterialLayerSet ()
+      {
+        return this->MaterialLayerSet_;
+      }
+
+      void SimWindowType::
+      MaterialLayerSet (const MaterialLayerSet_type& x)
+      {
+        this->MaterialLayerSet_.set (x);
+      }
+
+      void SimWindowType::
+      MaterialLayerSet (const MaterialLayerSet_optional& x)
+      {
+        this->MaterialLayerSet_ = x;
+      }
+
+      void SimWindowType::
+      MaterialLayerSet (::std::auto_ptr< MaterialLayerSet_type > x)
+      {
+        this->MaterialLayerSet_.set (x);
+      }
     }
   }
 }
@@ -527,7 +557,8 @@ namespace schema
         GeometricRepresentations_ (this),
         VoidsInWindow_ (this),
         RepresentationMaps_ (this),
-        ContainingOpeningTypeDef_ (this)
+        ContainingOpeningTypeDef_ (this),
+        MaterialLayerSet_ (this)
       {
       }
 
@@ -548,7 +579,8 @@ namespace schema
         GeometricRepresentations_ (this),
         VoidsInWindow_ (this),
         RepresentationMaps_ (this),
-        ContainingOpeningTypeDef_ (this)
+        ContainingOpeningTypeDef_ (this),
+        MaterialLayerSet_ (this)
       {
       }
 
@@ -571,7 +603,8 @@ namespace schema
         GeometricRepresentations_ (x.GeometricRepresentations_, f, this),
         VoidsInWindow_ (x.VoidsInWindow_, f, this),
         RepresentationMaps_ (x.RepresentationMaps_, f, this),
-        ContainingOpeningTypeDef_ (x.ContainingOpeningTypeDef_, f, this)
+        ContainingOpeningTypeDef_ (x.ContainingOpeningTypeDef_, f, this),
+        MaterialLayerSet_ (x.MaterialLayerSet_, f, this)
       {
       }
 
@@ -594,7 +627,8 @@ namespace schema
         GeometricRepresentations_ (this),
         VoidsInWindow_ (this),
         RepresentationMaps_ (this),
-        ContainingOpeningTypeDef_ (this)
+        ContainingOpeningTypeDef_ (this),
+        MaterialLayerSet_ (this)
       {
         if ((f & ::xml_schema::flags::base) == 0)
         {
@@ -819,6 +853,20 @@ namespace schema
             }
           }
 
+          // MaterialLayerSet
+          //
+          if (n.name () == "MaterialLayerSet" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          {
+            ::std::auto_ptr< MaterialLayerSet_type > r (
+              MaterialLayerSet_traits::create (i, f, this));
+
+            if (!this->MaterialLayerSet_)
+            {
+              this->MaterialLayerSet_.set (r);
+              continue;
+            }
+          }
+
           break;
         }
       }
@@ -851,6 +899,7 @@ namespace schema
           this->VoidsInWindow_ = x.VoidsInWindow_;
           this->RepresentationMaps_ = x.RepresentationMaps_;
           this->ContainingOpeningTypeDef_ = x.ContainingOpeningTypeDef_;
+          this->MaterialLayerSet_ = x.MaterialLayerSet_;
         }
 
         return *this;

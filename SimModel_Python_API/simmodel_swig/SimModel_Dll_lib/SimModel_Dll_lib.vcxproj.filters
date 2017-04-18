@@ -1,17 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
-    </Filter>
     <Filter Include="Resource Files">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{f423bd9b-d155-4352-8011-a0fee088308c}</UniqueIdentifier>
+      <ParseFiles>false</ParseFiles>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{33879c21-5d80-45f4-bd13-ae44055d849f}</UniqueIdentifier>
+      <ParseFiles>false</ParseFiles>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -64,6 +66,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="framework\NominalValue.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\PersonsRolesInOrganization.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="framework\PrefixTitles.cxx">
@@ -124,6 +129,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="framework\SimAddress.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\SimAddress_Default.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\SimAddress_Default_Default.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="framework\SimAddress_Postal.cxx">
@@ -366,6 +377,15 @@
     <ClCompile Include="framework\SimAppPreferences_AppPreferences_MonthlyChargeType.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="framework\SimAppProjectDefaults.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\SimAppProjectDefaults_ProjectDefaults.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\SimAppProjectDefaults_ProjectDefaults_Default.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="framework\SimAppStdSbdDefaults.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -460,6 +480,15 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="framework\SimArrayParams_PanelArrayParams_Default.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\SimArrayParams_SolarPanelArray.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\SimArrayParams_SolarPanelArray_SolarCollectorPV.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\SimArrayParams_SolarPanelArray_SolarCollectorThermal.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="framework\SimArrayParams_SolarShadeArray.cxx">
@@ -1111,6 +1140,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="framework\SimController_DemandManager_AirLoop.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\SimController_Fluid.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\SimController_Fluid_Default.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="framework\SimController_LightingControl.cxx">
@@ -2124,6 +2159,12 @@
     <ClCompile Include="framework\SimDoorType_Door_Default.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="framework\SimDoorType_Door_Exterior.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\SimDoorType_Door_Interior.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="framework\SimDwgXrefParams.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -2319,6 +2360,12 @@
     <ClCompile Include="framework\SimFeatureElementSubtraction_Void_Opening.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="framework\SimFlowCompEqmt_PlantConn_1_3_InletNodeName.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\SimFlowCompEqmt_PlantConn_1_3_OutletNodeName.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="framework\SimFlowCompoundEqmt.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -2418,10 +2465,16 @@
     <ClCompile Include="framework\SimFlowCompoundEqmt_UnitaryZoneEqmt_PTHP.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="framework\SimFlowCompoundEqmt_UnitaryZoneEqmt_RefrigerationChillerSet.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="framework\SimFlowCompoundEqmt_UnitaryZoneEqmt_UnitHeater.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="framework\SimFlowCompoundEqmt_UnitaryZoneEqmt_UnitVentialtor.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\SimFlowCompoundEqmt_UnitaryZoneEqmt_UserDefined.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="framework\SimFlowCompoundEqmt_UnitaryZoneEqmt_WaterSystemLoadProfile.cxx">
@@ -2526,10 +2579,22 @@
     <ClCompile Include="framework\SimFlowEnergyConverter.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="framework\SimFlowEnergyTrans_AirConn_1_2_InletNodeName.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\SimFlowEnergyTrans_AirConn_1_2_OutletNodeName.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="framework\SimFlowEnergyTrans_Meter_1_10_Name.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="framework\SimFlowEnergyTransfer.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\SimFlowEnergyTransfer_Coil.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\SimFlowEnergyTransfer_Coil_UserDefined.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="framework\SimFlowEnergyTransfer_ConvectiveHeater.cxx">
@@ -2593,9 +2658,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="framework\SimFlowEnergyTransfer_CoolingCoilWater_CoilAirCoolingWaterToAirHeatPumpVariableSpeedEquationFit.cxx">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="framework\SimFlowEnergyTransfer_CoolingCoilWater_CoilAirCoolingWaterUserDefined.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="framework\SimFlowEnergyTransfer_Dehumidifier.cxx">
@@ -2817,9 +2879,6 @@
     <ClCompile Include="framework\SimFlowEnergyTransfer_HeatingCoilWater_CoilAirHeatingWaterToAirHeatPumpVariableSpeedEquationFit.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="framework\SimFlowEnergyTransfer_HeatingCoilWater_CoilAirHeatingWaterUserDefined.cxx">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="framework\SimFlowEnergyTransfer_HeatingCoilWater_CoilAirPreHeatWater.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -2883,16 +2942,25 @@
     <ClCompile Include="framework\SimFlowEnergyTransferStorage_HotWaterTank_DomesticHotWater.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="framework\SimFlowEnergyTransferStorage_HotWaterTank_Expansion.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="framework\SimFlowEnergyTransferStorage_HotWaterTank_HeatPump.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="framework\SimFlowEnergyTransferStorage_HotWaterTank_Mixed.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="framework\SimFlowEnergyTransferStorage_HotWaterTank_MixedDual.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="framework\SimFlowEnergyTransferStorage_HotWaterTank_MixedTank.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="framework\SimFlowEnergyTransferStorage_HotWaterTank_Stratified.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\SimFlowEnergyTransferStorage_HotWaterTank_StratifiedDual.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="framework\SimFlowEnergyTransferStorage_HotWaterTank_StratifiedTank.cxx">
@@ -2913,28 +2981,34 @@
     <ClCompile Include="framework\SimFlowFitting_Difusser_Default.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="framework\SimFlowFitting_Difusser_Return.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\SimFlowFitting_Difusser_Supply.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="framework\SimFlowFitting_Electrical.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="framework\SimFlowFitting_Electrical_Transformer.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="framework\SimFlowFitting_FlowElementProxy.cxx">
+    <ClCompile Include="framework\SimFlowFitting_FlowFittingProxy.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="framework\SimFlowFitting_FlowElementProxy_Default.cxx">
+    <ClCompile Include="framework\SimFlowFitting_FlowFittingProxy_Default.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="framework\SimFlowFitting_FlowElementProxy_DemandProxy_AirLoop.cxx">
+    <ClCompile Include="framework\SimFlowFitting_FlowFittingProxy_DemandProxy_AirLoop.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="framework\SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop.cxx">
+    <ClCompile Include="framework\SimFlowFitting_FlowFittingProxy_DemandProxy_WaterLoop.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="framework\SimFlowFitting_FlowElementProxy_SupplyProxy_AirLoop.cxx">
+    <ClCompile Include="framework\SimFlowFitting_FlowFittingProxy_SupplyProxy_AirLoop.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="framework\SimFlowFitting_FlowElementProxy_SupplyProxy_WaterLoop.cxx">
+    <ClCompile Include="framework\SimFlowFitting_FlowFittingProxy_SupplyProxy_WaterLoop.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="framework\SimFlowFitting_Inlet_1_500_NodeName.cxx">
@@ -3150,6 +3224,9 @@
     <ClCompile Include="framework\SimFlowPlant_ChillHeatModulesPerfCompObjectType_1_20.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="framework\SimFlowPlant_ConstName_1_5.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="framework\SimFlowPlant_ConstName_1_12.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -3192,7 +3269,7 @@
     <ClCompile Include="framework\SimFlowPlant_ElectricalGenerator_FuelCellElectricalStorage.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="framework\SimFlowPlant_ElectricalGenerator_FuelCellExhaustGastoWaterHeatExchanger.cxx">
+    <ClCompile Include="framework\SimFlowPlant_ElectricalGenerator_FuelCellExhaustGasToWaterHeatExchanger.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="framework\SimFlowPlant_ElectricalGenerator_FuelCellInverter.cxx">
@@ -3280,6 +3357,24 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="framework\SimFlowPlant_OutdrAirSysZoneNode_1_5.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\SimFlowPlant_PlantComponent.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\SimFlowPlant_PlantComponent_UserDefined.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\SimFlowPlant_PlantConn_1_4_InletNodeName.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\SimFlowPlant_PlantConn_1_4_LoadingMode.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\SimFlowPlant_PlantConn_1_4_LoopFlowRequestMode.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\SimFlowPlant_PlantConn_1_4_OutletNodeName.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="framework\SimFlowPlant_SolarDevice.cxx">
@@ -3469,6 +3564,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="framework\SimFlowStorage_WaterStorage_RainWater.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\SimFlowTerm_PlantConn_1_2_InletNodeName.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\SimFlowTerm_PlantConn_1_2_OutletNodeName.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="framework\SimFlowTerminal.cxx">
@@ -4179,12 +4280,6 @@
     <ClCompile Include="framework\SimGroup_OutputRequestList_Variables.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="framework\SimGroup_Refrigeration.cxx">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="framework\SimGroup_Refrigeration_ChillerSet.cxx">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="framework\SimGroup_SchemeList.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -4629,12 +4724,6 @@
     <ClCompile Include="framework\SimList_OutputRequestList_Variables.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="framework\SimList_Refrigeration.cxx">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="framework\SimList_Refrigeration_ChillerSet.cxx">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="framework\SimList_SchemeList.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -4879,6 +4968,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="framework\SimMaterialLayer_GlazingMaterialLayer_Default.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\SimMaterialLayer_GlazingMaterialLayer_Thermochromic.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="framework\SimMaterialLayer_OpaqueMaterialLayer.cxx">
@@ -5583,6 +5675,15 @@
     <ClCompile Include="framework\SimPanel_Default_Default.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="framework\SimPanel_Glazing.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\SimPanel_Glazing_Spandrel.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\SimPanel_Glazing_Vision.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="framework\SimPanelArrayParams.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -5590,6 +5691,15 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="framework\SimPanelArrayParams_PanelArrayParams_Default.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\SimPanelArrayParams_SolarPanelArray.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\SimPanelArrayParams_SolarPanelArray_SolarCollectorPV.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\SimPanelArrayParams_SolarPanelArray_SolarCollectorThermal.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="framework\SimPanelArrayParams_SolarShadeArray.cxx">
@@ -6204,6 +6314,15 @@
     <ClCompile Include="framework\SimProject_Project_T24_View.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="framework\SimProjectType.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\SimProjectType_Project.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\SimProjectType_Project_Default.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="framework\SimProperty.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -6312,6 +6431,12 @@
     <ClCompile Include="framework\SimRefrigerationSystemElement_Compressor_Default.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="framework\SimRefrigerationSystemElement_CompressorRack.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\SimRefrigerationSystemElement_CompressorRack_Default.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="framework\SimRefrigerationSystemElement_Condenser.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -6337,12 +6462,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="framework\SimRefrigerationSystemElement_GasCooler_AirCooled.cxx">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="framework\SimRefrigerationSystemElement_PackagedCompressorRack.cxx">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="framework\SimRefrigerationSystemElement_PackagedCompressorRack_Default.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="framework\SimRefrigerationSystemElement_RefrigeratedCase.cxx">
@@ -7035,6 +7154,15 @@
     <ClCompile Include="framework\SimSiteAssembly_SiteAssembly_WindTurbine.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="framework\SimSiteType.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\SimSiteType_Site.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\SimSiteType_Site_Default.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="framework\SimSIUnitType.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -7198,6 +7326,18 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="framework\SimSolarObsParams_SolarObstruction_Default.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\SimSolarPanelArrayParams.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\SimSolarPanelArrayParams_SolarPanelArray.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\SimSolarPanelArrayParams_SolarPanelArray_SolarCollectorPV.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\SimSolarPanelArrayParams_SolarPanelArray_SolarCollectorThermal.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="framework\SimSolarShade.cxx">
@@ -8010,7 +8150,13 @@
     <ClCompile Include="framework\SimTemplateInteriorLighting_InteriorLighting.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="framework\SimTemplateInteriorLighting_InteriorLighting_Area.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="framework\SimTemplateInteriorLighting_InteriorLighting_Default.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\SimTemplateInteriorLighting_InteriorLighting_Task.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="framework\SimTemplateLocation.cxx">
@@ -8074,6 +8220,15 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="framework\SimTemplateZoneLoads_ZoneLoads_Default.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\SimThermalZoneType.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\SimThermalZoneType_ThermalZone.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\SimThermalZoneType_ThermalZone_Default.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="framework\SimTimeSeries.cxx">
@@ -8532,6 +8687,12 @@
     <ClCompile Include="framework\SimWindowType_Window_Default.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="framework\SimWindowType_Window_Exterior.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\SimWindowType_Window_Interior.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="framework\SuffixTitles.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -8560,9 +8721,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="framework\T24MandLightCntrlIsManAreaCntrlRpt.cxx">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="framework\T24MandLightCntrlRpt.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="framework\T24PipeLocs.cxx">
@@ -8636,6 +8794,9 @@
     <ClInclude Include="framework\NominalValue.hxx">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="framework\PersonsRolesInOrganization.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="framework\PrefixTitles.hxx">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -8694,6 +8855,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="framework\SimAddress.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\SimAddress_Default.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\SimAddress_Default_Default.hxx">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="framework\SimAddress_Postal.hxx">
@@ -8936,6 +9103,15 @@
     <ClInclude Include="framework\SimAppPreferences_AppPreferences_MonthlyChargeType.hxx">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="framework\SimAppProjectDefaults.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\SimAppProjectDefaults_ProjectDefaults.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\SimAppProjectDefaults_ProjectDefaults_Default.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="framework\SimAppStdSbdDefaults.hxx">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -9030,6 +9206,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="framework\SimArrayParams_PanelArrayParams_Default.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\SimArrayParams_SolarPanelArray.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\SimArrayParams_SolarPanelArray_SolarCollectorPV.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\SimArrayParams_SolarPanelArray_SolarCollectorThermal.hxx">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="framework\SimArrayParams_SolarShadeArray.hxx">
@@ -9681,6 +9866,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="framework\SimController_DemandManager_AirLoop.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\SimController_Fluid.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\SimController_Fluid_Default.hxx">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="framework\SimController_LightingControl.hxx">
@@ -10694,6 +10885,12 @@
     <ClInclude Include="framework\SimDoorType_Door_Default.hxx">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="framework\SimDoorType_Door_Exterior.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\SimDoorType_Door_Interior.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="framework\SimDwgXrefParams.hxx">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -10889,6 +11086,12 @@
     <ClInclude Include="framework\SimFeatureElementSubtraction_Void_Opening.hxx">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="framework\SimFlowCompEqmt_PlantConn_1_3_InletNodeName.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\SimFlowCompEqmt_PlantConn_1_3_OutletNodeName.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="framework\SimFlowCompoundEqmt.hxx">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -10988,10 +11191,16 @@
     <ClInclude Include="framework\SimFlowCompoundEqmt_UnitaryZoneEqmt_PTHP.hxx">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="framework\SimFlowCompoundEqmt_UnitaryZoneEqmt_RefrigerationChillerSet.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="framework\SimFlowCompoundEqmt_UnitaryZoneEqmt_UnitHeater.hxx">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="framework\SimFlowCompoundEqmt_UnitaryZoneEqmt_UnitVentialtor.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\SimFlowCompoundEqmt_UnitaryZoneEqmt_UserDefined.hxx">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="framework\SimFlowCompoundEqmt_UnitaryZoneEqmt_WaterSystemLoadProfile.hxx">
@@ -11096,10 +11305,22 @@
     <ClInclude Include="framework\SimFlowEnergyConverter.hxx">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="framework\SimFlowEnergyTrans_AirConn_1_2_InletNodeName.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\SimFlowEnergyTrans_AirConn_1_2_OutletNodeName.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="framework\SimFlowEnergyTrans_Meter_1_10_Name.hxx">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="framework\SimFlowEnergyTransfer.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\SimFlowEnergyTransfer_Coil.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\SimFlowEnergyTransfer_Coil_UserDefined.hxx">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="framework\SimFlowEnergyTransfer_ConvectiveHeater.hxx">
@@ -11163,9 +11384,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="framework\SimFlowEnergyTransfer_CoolingCoilWater_CoilAirCoolingWaterToAirHeatPumpVariableSpeedEquationFit.hxx">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="framework\SimFlowEnergyTransfer_CoolingCoilWater_CoilAirCoolingWaterUserDefined.hxx">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="framework\SimFlowEnergyTransfer_Dehumidifier.hxx">
@@ -11387,9 +11605,6 @@
     <ClInclude Include="framework\SimFlowEnergyTransfer_HeatingCoilWater_CoilAirHeatingWaterToAirHeatPumpVariableSpeedEquationFit.hxx">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="framework\SimFlowEnergyTransfer_HeatingCoilWater_CoilAirHeatingWaterUserDefined.hxx">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="framework\SimFlowEnergyTransfer_HeatingCoilWater_CoilAirPreHeatWater.hxx">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -11453,16 +11668,25 @@
     <ClInclude Include="framework\SimFlowEnergyTransferStorage_HotWaterTank_DomesticHotWater.hxx">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="framework\SimFlowEnergyTransferStorage_HotWaterTank_Expansion.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="framework\SimFlowEnergyTransferStorage_HotWaterTank_HeatPump.hxx">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="framework\SimFlowEnergyTransferStorage_HotWaterTank_Mixed.hxx">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="framework\SimFlowEnergyTransferStorage_HotWaterTank_MixedDual.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="framework\SimFlowEnergyTransferStorage_HotWaterTank_MixedTank.hxx">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="framework\SimFlowEnergyTransferStorage_HotWaterTank_Stratified.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\SimFlowEnergyTransferStorage_HotWaterTank_StratifiedDual.hxx">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="framework\SimFlowEnergyTransferStorage_HotWaterTank_StratifiedTank.hxx">
@@ -11483,28 +11707,34 @@
     <ClInclude Include="framework\SimFlowFitting_Difusser_Default.hxx">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="framework\SimFlowFitting_Difusser_Return.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\SimFlowFitting_Difusser_Supply.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="framework\SimFlowFitting_Electrical.hxx">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="framework\SimFlowFitting_Electrical_Transformer.hxx">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="framework\SimFlowFitting_FlowElementProxy.hxx">
+    <ClInclude Include="framework\SimFlowFitting_FlowFittingProxy.hxx">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="framework\SimFlowFitting_FlowElementProxy_Default.hxx">
+    <ClInclude Include="framework\SimFlowFitting_FlowFittingProxy_Default.hxx">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="framework\SimFlowFitting_FlowElementProxy_DemandProxy_AirLoop.hxx">
+    <ClInclude Include="framework\SimFlowFitting_FlowFittingProxy_DemandProxy_AirLoop.hxx">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="framework\SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop.hxx">
+    <ClInclude Include="framework\SimFlowFitting_FlowFittingProxy_DemandProxy_WaterLoop.hxx">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="framework\SimFlowFitting_FlowElementProxy_SupplyProxy_AirLoop.hxx">
+    <ClInclude Include="framework\SimFlowFitting_FlowFittingProxy_SupplyProxy_AirLoop.hxx">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="framework\SimFlowFitting_FlowElementProxy_SupplyProxy_WaterLoop.hxx">
+    <ClInclude Include="framework\SimFlowFitting_FlowFittingProxy_SupplyProxy_WaterLoop.hxx">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="framework\SimFlowFitting_Inlet_1_500_NodeName.hxx">
@@ -11720,6 +11950,9 @@
     <ClInclude Include="framework\SimFlowPlant_ChillHeatModulesPerfCompObjectType_1_20.hxx">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="framework\SimFlowPlant_ConstName_1_5.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="framework\SimFlowPlant_ConstName_1_12.hxx">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -11762,7 +11995,7 @@
     <ClInclude Include="framework\SimFlowPlant_ElectricalGenerator_FuelCellElectricalStorage.hxx">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="framework\SimFlowPlant_ElectricalGenerator_FuelCellExhaustGastoWaterHeatExchanger.hxx">
+    <ClInclude Include="framework\SimFlowPlant_ElectricalGenerator_FuelCellExhaustGasToWaterHeatExchanger.hxx">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="framework\SimFlowPlant_ElectricalGenerator_FuelCellInverter.hxx">
@@ -11850,6 +12083,24 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="framework\SimFlowPlant_OutdrAirSysZoneNode_1_5.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\SimFlowPlant_PlantComponent.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\SimFlowPlant_PlantComponent_UserDefined.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\SimFlowPlant_PlantConn_1_4_InletNodeName.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\SimFlowPlant_PlantConn_1_4_LoadingMode.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\SimFlowPlant_PlantConn_1_4_LoopFlowRequestMode.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\SimFlowPlant_PlantConn_1_4_OutletNodeName.hxx">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="framework\SimFlowPlant_SolarDevice.hxx">
@@ -12039,6 +12290,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="framework\SimFlowStorage_WaterStorage_RainWater.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\SimFlowTerm_PlantConn_1_2_InletNodeName.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\SimFlowTerm_PlantConn_1_2_OutletNodeName.hxx">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="framework\SimFlowTerminal.hxx">
@@ -12749,12 +13006,6 @@
     <ClInclude Include="framework\SimGroup_OutputRequestList_Variables.hxx">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="framework\SimGroup_Refrigeration.hxx">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="framework\SimGroup_Refrigeration_ChillerSet.hxx">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="framework\SimGroup_SchemeList.hxx">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -13199,12 +13450,6 @@
     <ClInclude Include="framework\SimList_OutputRequestList_Variables.hxx">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="framework\SimList_Refrigeration.hxx">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="framework\SimList_Refrigeration_ChillerSet.hxx">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="framework\SimList_SchemeList.hxx">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -13449,6 +13694,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="framework\SimMaterialLayer_GlazingMaterialLayer_Default.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\SimMaterialLayer_GlazingMaterialLayer_Thermochromic.hxx">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="framework\SimMaterialLayer_OpaqueMaterialLayer.hxx">
@@ -14153,6 +14401,15 @@
     <ClInclude Include="framework\SimPanel_Default_Default.hxx">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="framework\SimPanel_Glazing.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\SimPanel_Glazing_Spandrel.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\SimPanel_Glazing_Vision.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="framework\SimPanelArrayParams.hxx">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -14160,6 +14417,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="framework\SimPanelArrayParams_PanelArrayParams_Default.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\SimPanelArrayParams_SolarPanelArray.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\SimPanelArrayParams_SolarPanelArray_SolarCollectorPV.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\SimPanelArrayParams_SolarPanelArray_SolarCollectorThermal.hxx">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="framework\SimPanelArrayParams_SolarShadeArray.hxx">
@@ -14774,6 +15040,15 @@
     <ClInclude Include="framework\SimProject_Project_T24_View.hxx">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="framework\SimProjectType.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\SimProjectType_Project.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\SimProjectType_Project_Default.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="framework\SimProperty.hxx">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -14882,6 +15157,12 @@
     <ClInclude Include="framework\SimRefrigerationSystemElement_Compressor_Default.hxx">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="framework\SimRefrigerationSystemElement_CompressorRack.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\SimRefrigerationSystemElement_CompressorRack_Default.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="framework\SimRefrigerationSystemElement_Condenser.hxx">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -14907,12 +15188,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="framework\SimRefrigerationSystemElement_GasCooler_AirCooled.hxx">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="framework\SimRefrigerationSystemElement_PackagedCompressorRack.hxx">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="framework\SimRefrigerationSystemElement_PackagedCompressorRack_Default.hxx">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="framework\SimRefrigerationSystemElement_RefrigeratedCase.hxx">
@@ -15605,6 +15880,15 @@
     <ClInclude Include="framework\SimSiteAssembly_SiteAssembly_WindTurbine.hxx">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="framework\SimSiteType.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\SimSiteType_Site.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\SimSiteType_Site_Default.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="framework\SimSIUnitType.hxx">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -15768,6 +16052,18 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="framework\SimSolarObsParams_SolarObstruction_Default.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\SimSolarPanelArrayParams.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\SimSolarPanelArrayParams_SolarPanelArray.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\SimSolarPanelArrayParams_SolarPanelArray_SolarCollectorPV.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\SimSolarPanelArrayParams_SolarPanelArray_SolarCollectorThermal.hxx">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="framework\SimSolarShade.hxx">
@@ -16580,7 +16876,13 @@
     <ClInclude Include="framework\SimTemplateInteriorLighting_InteriorLighting.hxx">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="framework\SimTemplateInteriorLighting_InteriorLighting_Area.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="framework\SimTemplateInteriorLighting_InteriorLighting_Default.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\SimTemplateInteriorLighting_InteriorLighting_Task.hxx">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="framework\SimTemplateLocation.hxx">
@@ -16644,6 +16946,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="framework\SimTemplateZoneLoads_ZoneLoads_Default.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\SimThermalZoneType.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\SimThermalZoneType_ThermalZone.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\SimThermalZoneType_ThermalZone_Default.hxx">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="framework\SimTimeSeries.hxx">
@@ -17102,6 +17413,12 @@
     <ClInclude Include="framework\SimWindowType_Window_Default.hxx">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="framework\SimWindowType_Window_Exterior.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\SimWindowType_Window_Interior.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="framework\SuffixTitles.hxx">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -17130,9 +17447,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="framework\T24MandLightCntrlIsManAreaCntrlRpt.hxx">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="framework\T24MandLightCntrlRpt.hxx">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="framework\T24PipeLocs.hxx">

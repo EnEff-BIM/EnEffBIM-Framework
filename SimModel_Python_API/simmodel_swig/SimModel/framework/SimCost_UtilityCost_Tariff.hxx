@@ -603,7 +603,7 @@ namespace schema
 
         // UtilCost_Comp_TariffName
         //
-        typedef ::xml_schema::string UtilCost_Comp_TariffName_type;
+        typedef ::xml_schema::idref UtilCost_Comp_TariffName_type;
         typedef ::xsd::cxx::tree::optional< UtilCost_Comp_TariffName_type > UtilCost_Comp_TariffName_optional;
         typedef ::xsd::cxx::tree::traits< UtilCost_Comp_TariffName_type, char > UtilCost_Comp_TariffName_traits;
 

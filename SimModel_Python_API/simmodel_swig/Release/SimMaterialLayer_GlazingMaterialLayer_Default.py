@@ -110,15 +110,6 @@ class SimMaterialLayer_GlazingMaterialLayer(SimMaterialLayer_OpaqueMaterialLayer
     __getattr__ = lambda self, name: _swig_getattr(self, SimMaterialLayer_GlazingMaterialLayer, name)
     __repr__ = _swig_repr
 
-    def SimMatLayer_MaterialLayerName(self, *args):
-        return _SimMaterialLayer_GlazingMaterialLayer_Default.SimMaterialLayer_GlazingMaterialLayer_SimMatLayer_MaterialLayerName(self, *args)
-
-    def SimMatLayer_MaterialName(self, *args):
-        return _SimMaterialLayer_GlazingMaterialLayer_Default.SimMaterialLayer_GlazingMaterialLayer_SimMatLayer_MaterialName(self, *args)
-
-    def SimMatLayer_LayerThickness(self, *args):
-        return _SimMaterialLayer_GlazingMaterialLayer_Default.SimMaterialLayer_GlazingMaterialLayer_SimMatLayer_LayerThickness(self, *args)
-
     def __init__(self, *args):
         this = _SimMaterialLayer_GlazingMaterialLayer_Default.new_SimMaterialLayer_GlazingMaterialLayer(*args)
         try:
@@ -143,6 +134,15 @@ class SimMaterialLayer_GlazingMaterialLayer_Default(SimMaterialLayer_GlazingMate
         __swig_getmethods__.update(getattr(_s, '__swig_getmethods__', {}))
     __getattr__ = lambda self, name: _swig_getattr(self, SimMaterialLayer_GlazingMaterialLayer_Default, name)
     __repr__ = _swig_repr
+
+    def SimMatLayer_MaterialLayerName(self, *args):
+        return _SimMaterialLayer_GlazingMaterialLayer_Default.SimMaterialLayer_GlazingMaterialLayer_Default_SimMatLayer_MaterialLayerName(self, *args)
+
+    def SimMatLayer_MaterialName(self, *args):
+        return _SimMaterialLayer_GlazingMaterialLayer_Default.SimMaterialLayer_GlazingMaterialLayer_Default_SimMatLayer_MaterialName(self, *args)
+
+    def SimMatLayer_LayerThickness(self, *args):
+        return _SimMaterialLayer_GlazingMaterialLayer_Default.SimMaterialLayer_GlazingMaterialLayer_Default_SimMatLayer_LayerThickness(self, *args)
 
     def __init__(self, *args):
         this = _SimMaterialLayer_GlazingMaterialLayer_Default.new_SimMaterialLayer_GlazingMaterialLayer_Default(*args)

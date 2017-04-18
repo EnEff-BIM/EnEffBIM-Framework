@@ -48,6 +48,150 @@ namespace schema
     {
       // SimFlowTerminal_ElectricalTerminalExterior_LightingFixture
       // 
+
+      const SimFlowTerminal_ElectricalTerminalExterior_LightingFixture::SimFlowTerm_Name_optional& SimFlowTerminal_ElectricalTerminalExterior_LightingFixture::
+      SimFlowTerm_Name () const
+      {
+        return this->SimFlowTerm_Name_;
+      }
+
+      SimFlowTerminal_ElectricalTerminalExterior_LightingFixture::SimFlowTerm_Name_optional& SimFlowTerminal_ElectricalTerminalExterior_LightingFixture::
+      SimFlowTerm_Name ()
+      {
+        return this->SimFlowTerm_Name_;
+      }
+
+      void SimFlowTerminal_ElectricalTerminalExterior_LightingFixture::
+      SimFlowTerm_Name (const SimFlowTerm_Name_type& x)
+      {
+        this->SimFlowTerm_Name_.set (x);
+      }
+
+      void SimFlowTerminal_ElectricalTerminalExterior_LightingFixture::
+      SimFlowTerm_Name (const SimFlowTerm_Name_optional& x)
+      {
+        this->SimFlowTerm_Name_ = x;
+      }
+
+      void SimFlowTerminal_ElectricalTerminalExterior_LightingFixture::
+      SimFlowTerm_Name (::std::auto_ptr< SimFlowTerm_Name_type > x)
+      {
+        this->SimFlowTerm_Name_.set (x);
+      }
+
+      const SimFlowTerminal_ElectricalTerminalExterior_LightingFixture::SimFlowTerm_SchedName_optional& SimFlowTerminal_ElectricalTerminalExterior_LightingFixture::
+      SimFlowTerm_SchedName () const
+      {
+        return this->SimFlowTerm_SchedName_;
+      }
+
+      SimFlowTerminal_ElectricalTerminalExterior_LightingFixture::SimFlowTerm_SchedName_optional& SimFlowTerminal_ElectricalTerminalExterior_LightingFixture::
+      SimFlowTerm_SchedName ()
+      {
+        return this->SimFlowTerm_SchedName_;
+      }
+
+      void SimFlowTerminal_ElectricalTerminalExterior_LightingFixture::
+      SimFlowTerm_SchedName (const SimFlowTerm_SchedName_type& x)
+      {
+        this->SimFlowTerm_SchedName_.set (x);
+      }
+
+      void SimFlowTerminal_ElectricalTerminalExterior_LightingFixture::
+      SimFlowTerm_SchedName (const SimFlowTerm_SchedName_optional& x)
+      {
+        this->SimFlowTerm_SchedName_ = x;
+      }
+
+      void SimFlowTerminal_ElectricalTerminalExterior_LightingFixture::
+      SimFlowTerm_SchedName (::std::auto_ptr< SimFlowTerm_SchedName_type > x)
+      {
+        this->SimFlowTerm_SchedName_.set (x);
+      }
+
+      const SimFlowTerminal_ElectricalTerminalExterior_LightingFixture::SimFlowTerm_DesignLevel_optional& SimFlowTerminal_ElectricalTerminalExterior_LightingFixture::
+      SimFlowTerm_DesignLevel () const
+      {
+        return this->SimFlowTerm_DesignLevel_;
+      }
+
+      SimFlowTerminal_ElectricalTerminalExterior_LightingFixture::SimFlowTerm_DesignLevel_optional& SimFlowTerminal_ElectricalTerminalExterior_LightingFixture::
+      SimFlowTerm_DesignLevel ()
+      {
+        return this->SimFlowTerm_DesignLevel_;
+      }
+
+      void SimFlowTerminal_ElectricalTerminalExterior_LightingFixture::
+      SimFlowTerm_DesignLevel (const SimFlowTerm_DesignLevel_type& x)
+      {
+        this->SimFlowTerm_DesignLevel_.set (x);
+      }
+
+      void SimFlowTerminal_ElectricalTerminalExterior_LightingFixture::
+      SimFlowTerm_DesignLevel (const SimFlowTerm_DesignLevel_optional& x)
+      {
+        this->SimFlowTerm_DesignLevel_ = x;
+      }
+
+      const SimFlowTerminal_ElectricalTerminalExterior_LightingFixture::SimFlowTerm_ContOption_optional& SimFlowTerminal_ElectricalTerminalExterior_LightingFixture::
+      SimFlowTerm_ContOption () const
+      {
+        return this->SimFlowTerm_ContOption_;
+      }
+
+      SimFlowTerminal_ElectricalTerminalExterior_LightingFixture::SimFlowTerm_ContOption_optional& SimFlowTerminal_ElectricalTerminalExterior_LightingFixture::
+      SimFlowTerm_ContOption ()
+      {
+        return this->SimFlowTerm_ContOption_;
+      }
+
+      void SimFlowTerminal_ElectricalTerminalExterior_LightingFixture::
+      SimFlowTerm_ContOption (const SimFlowTerm_ContOption_type& x)
+      {
+        this->SimFlowTerm_ContOption_.set (x);
+      }
+
+      void SimFlowTerminal_ElectricalTerminalExterior_LightingFixture::
+      SimFlowTerm_ContOption (const SimFlowTerm_ContOption_optional& x)
+      {
+        this->SimFlowTerm_ContOption_ = x;
+      }
+
+      void SimFlowTerminal_ElectricalTerminalExterior_LightingFixture::
+      SimFlowTerm_ContOption (::std::auto_ptr< SimFlowTerm_ContOption_type > x)
+      {
+        this->SimFlowTerm_ContOption_.set (x);
+      }
+
+      const SimFlowTerminal_ElectricalTerminalExterior_LightingFixture::SimFlowTerm_EndUseSubCat_optional& SimFlowTerminal_ElectricalTerminalExterior_LightingFixture::
+      SimFlowTerm_EndUseSubCat () const
+      {
+        return this->SimFlowTerm_EndUseSubCat_;
+      }
+
+      SimFlowTerminal_ElectricalTerminalExterior_LightingFixture::SimFlowTerm_EndUseSubCat_optional& SimFlowTerminal_ElectricalTerminalExterior_LightingFixture::
+      SimFlowTerm_EndUseSubCat ()
+      {
+        return this->SimFlowTerm_EndUseSubCat_;
+      }
+
+      void SimFlowTerminal_ElectricalTerminalExterior_LightingFixture::
+      SimFlowTerm_EndUseSubCat (const SimFlowTerm_EndUseSubCat_type& x)
+      {
+        this->SimFlowTerm_EndUseSubCat_.set (x);
+      }
+
+      void SimFlowTerminal_ElectricalTerminalExterior_LightingFixture::
+      SimFlowTerm_EndUseSubCat (const SimFlowTerm_EndUseSubCat_optional& x)
+      {
+        this->SimFlowTerm_EndUseSubCat_ = x;
+      }
+
+      void SimFlowTerminal_ElectricalTerminalExterior_LightingFixture::
+      SimFlowTerm_EndUseSubCat (::std::auto_ptr< SimFlowTerm_EndUseSubCat_type > x)
+      {
+        this->SimFlowTerm_EndUseSubCat_.set (x);
+      }
     }
   }
 }
@@ -74,13 +218,23 @@ namespace schema
 
       SimFlowTerminal_ElectricalTerminalExterior_LightingFixture::
       SimFlowTerminal_ElectricalTerminalExterior_LightingFixture ()
-      : ::schema::simxml::MepModel::SimFlowTerminal_ElectricalTerminalExterior ()
+      : ::schema::simxml::MepModel::SimFlowTerminal_ElectricalTerminalExterior (),
+        SimFlowTerm_Name_ (this),
+        SimFlowTerm_SchedName_ (this),
+        SimFlowTerm_DesignLevel_ (this),
+        SimFlowTerm_ContOption_ (this),
+        SimFlowTerm_EndUseSubCat_ (this)
       {
       }
 
       SimFlowTerminal_ElectricalTerminalExterior_LightingFixture::
       SimFlowTerminal_ElectricalTerminalExterior_LightingFixture (const RefId_type& RefId)
-      : ::schema::simxml::MepModel::SimFlowTerminal_ElectricalTerminalExterior (RefId)
+      : ::schema::simxml::MepModel::SimFlowTerminal_ElectricalTerminalExterior (RefId),
+        SimFlowTerm_Name_ (this),
+        SimFlowTerm_SchedName_ (this),
+        SimFlowTerm_DesignLevel_ (this),
+        SimFlowTerm_ContOption_ (this),
+        SimFlowTerm_EndUseSubCat_ (this)
       {
       }
 
@@ -88,7 +242,12 @@ namespace schema
       SimFlowTerminal_ElectricalTerminalExterior_LightingFixture (const SimFlowTerminal_ElectricalTerminalExterior_LightingFixture& x,
                                                                   ::xml_schema::flags f,
                                                                   ::xml_schema::container* c)
-      : ::schema::simxml::MepModel::SimFlowTerminal_ElectricalTerminalExterior (x, f, c)
+      : ::schema::simxml::MepModel::SimFlowTerminal_ElectricalTerminalExterior (x, f, c),
+        SimFlowTerm_Name_ (x.SimFlowTerm_Name_, f, this),
+        SimFlowTerm_SchedName_ (x.SimFlowTerm_SchedName_, f, this),
+        SimFlowTerm_DesignLevel_ (x.SimFlowTerm_DesignLevel_, f, this),
+        SimFlowTerm_ContOption_ (x.SimFlowTerm_ContOption_, f, this),
+        SimFlowTerm_EndUseSubCat_ (x.SimFlowTerm_EndUseSubCat_, f, this)
       {
       }
 
@@ -96,8 +255,101 @@ namespace schema
       SimFlowTerminal_ElectricalTerminalExterior_LightingFixture (const ::xercesc::DOMElement& e,
                                                                   ::xml_schema::flags f,
                                                                   ::xml_schema::container* c)
-      : ::schema::simxml::MepModel::SimFlowTerminal_ElectricalTerminalExterior (e, f, c)
+      : ::schema::simxml::MepModel::SimFlowTerminal_ElectricalTerminalExterior (e, f | ::xml_schema::flags::base, c),
+        SimFlowTerm_Name_ (this),
+        SimFlowTerm_SchedName_ (this),
+        SimFlowTerm_DesignLevel_ (this),
+        SimFlowTerm_ContOption_ (this),
+        SimFlowTerm_EndUseSubCat_ (this)
       {
+        if ((f & ::xml_schema::flags::base) == 0)
+        {
+          ::xsd::cxx::xml::dom::parser< char > p (e, true, false, true);
+          this->parse (p, f);
+        }
+      }
+
+      void SimFlowTerminal_ElectricalTerminalExterior_LightingFixture::
+      parse (::xsd::cxx::xml::dom::parser< char >& p,
+             ::xml_schema::flags f)
+      {
+        this->::schema::simxml::MepModel::SimFlowTerminal_ElectricalTerminalExterior::parse (p, f);
+
+        for (; p.more_content (); p.next_content (false))
+        {
+          const ::xercesc::DOMElement& i (p.cur_element ());
+          const ::xsd::cxx::xml::qualified_name< char > n (
+            ::xsd::cxx::xml::dom::name< char > (i));
+
+          // SimFlowTerm_Name
+          //
+          if (n.name () == "SimFlowTerm_Name" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            ::std::auto_ptr< SimFlowTerm_Name_type > r (
+              SimFlowTerm_Name_traits::create (i, f, this));
+
+            if (!this->SimFlowTerm_Name_)
+            {
+              this->SimFlowTerm_Name_.set (r);
+              continue;
+            }
+          }
+
+          // SimFlowTerm_SchedName
+          //
+          if (n.name () == "SimFlowTerm_SchedName" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            ::std::auto_ptr< SimFlowTerm_SchedName_type > r (
+              SimFlowTerm_SchedName_traits::create (i, f, this));
+
+            if (!this->SimFlowTerm_SchedName_)
+            {
+              this->SimFlowTerm_SchedName_.set (r);
+              continue;
+            }
+          }
+
+          // SimFlowTerm_DesignLevel
+          //
+          if (n.name () == "SimFlowTerm_DesignLevel" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            if (!this->SimFlowTerm_DesignLevel_)
+            {
+              this->SimFlowTerm_DesignLevel_.set (SimFlowTerm_DesignLevel_traits::create (i, f, this));
+              continue;
+            }
+          }
+
+          // SimFlowTerm_ContOption
+          //
+          if (n.name () == "SimFlowTerm_ContOption" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            ::std::auto_ptr< SimFlowTerm_ContOption_type > r (
+              SimFlowTerm_ContOption_traits::create (i, f, this));
+
+            if (!this->SimFlowTerm_ContOption_)
+            {
+              this->SimFlowTerm_ContOption_.set (r);
+              continue;
+            }
+          }
+
+          // SimFlowTerm_EndUseSubCat
+          //
+          if (n.name () == "SimFlowTerm_EndUseSubCat" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            ::std::auto_ptr< SimFlowTerm_EndUseSubCat_type > r (
+              SimFlowTerm_EndUseSubCat_traits::create (i, f, this));
+
+            if (!this->SimFlowTerm_EndUseSubCat_)
+            {
+              this->SimFlowTerm_EndUseSubCat_.set (r);
+              continue;
+            }
+          }
+
+          break;
+        }
       }
 
       SimFlowTerminal_ElectricalTerminalExterior_LightingFixture* SimFlowTerminal_ElectricalTerminalExterior_LightingFixture::
@@ -105,6 +357,22 @@ namespace schema
               ::xml_schema::container* c) const
       {
         return new class SimFlowTerminal_ElectricalTerminalExterior_LightingFixture (*this, f, c);
+      }
+
+      SimFlowTerminal_ElectricalTerminalExterior_LightingFixture& SimFlowTerminal_ElectricalTerminalExterior_LightingFixture::
+      operator= (const SimFlowTerminal_ElectricalTerminalExterior_LightingFixture& x)
+      {
+        if (this != &x)
+        {
+          static_cast< ::schema::simxml::MepModel::SimFlowTerminal_ElectricalTerminalExterior& > (*this) = x;
+          this->SimFlowTerm_Name_ = x.SimFlowTerm_Name_;
+          this->SimFlowTerm_SchedName_ = x.SimFlowTerm_SchedName_;
+          this->SimFlowTerm_DesignLevel_ = x.SimFlowTerm_DesignLevel_;
+          this->SimFlowTerm_ContOption_ = x.SimFlowTerm_ContOption_;
+          this->SimFlowTerm_EndUseSubCat_ = x.SimFlowTerm_EndUseSubCat_;
+        }
+
+        return *this;
       }
 
       SimFlowTerminal_ElectricalTerminalExterior_LightingFixture::

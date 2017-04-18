@@ -1683,804 +1683,6 @@ namespace schema
           "http://d-alchemy.com/schema/simxml/SimModelCore");
       }
 
-      ::std::auto_ptr< ::xml_schema::idref >
-      DefaultForProject (const ::std::string& u,
-                         ::xml_schema::flags f,
-                         const ::xml_schema::properties& p)
-      {
-        ::xsd::cxx::xml::auto_initializer i (
-          (f & ::xml_schema::flags::dont_initialize) == 0,
-          (f & ::xml_schema::flags::keep_dom) == 0);
-
-        ::xsd::cxx::tree::error_handler< char > h;
-
-        ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
-          ::xsd::cxx::xml::dom::parse< char > (
-            u, h, p, f));
-
-        h.throw_if_failed< ::xsd::cxx::tree::parsing< char > > ();
-
-        return ::std::auto_ptr< ::xml_schema::idref > (
-          ::schema::simxml::SimModelCore::DefaultForProject (
-            d, f | ::xml_schema::flags::own_dom, p));
-      }
-
-      ::std::auto_ptr< ::xml_schema::idref >
-      DefaultForProject (const ::std::string& u,
-                         ::xml_schema::error_handler& h,
-                         ::xml_schema::flags f,
-                         const ::xml_schema::properties& p)
-      {
-        ::xsd::cxx::xml::auto_initializer i (
-          (f & ::xml_schema::flags::dont_initialize) == 0,
-          (f & ::xml_schema::flags::keep_dom) == 0);
-
-        ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
-          ::xsd::cxx::xml::dom::parse< char > (
-            u, h, p, f));
-
-        if (!d.get ())
-          throw ::xsd::cxx::tree::parsing< char > ();
-
-        return ::std::auto_ptr< ::xml_schema::idref > (
-          ::schema::simxml::SimModelCore::DefaultForProject (
-            d, f | ::xml_schema::flags::own_dom, p));
-      }
-
-      ::std::auto_ptr< ::xml_schema::idref >
-      DefaultForProject (const ::std::string& u,
-                         ::xercesc::DOMErrorHandler& h,
-                         ::xml_schema::flags f,
-                         const ::xml_schema::properties& p)
-      {
-        ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
-          ::xsd::cxx::xml::dom::parse< char > (
-            u, h, p, f));
-
-        if (!d.get ())
-          throw ::xsd::cxx::tree::parsing< char > ();
-
-        return ::std::auto_ptr< ::xml_schema::idref > (
-          ::schema::simxml::SimModelCore::DefaultForProject (
-            d, f | ::xml_schema::flags::own_dom, p));
-      }
-
-      ::std::auto_ptr< ::xml_schema::idref >
-      DefaultForProject (::std::istream& is,
-                         ::xml_schema::flags f,
-                         const ::xml_schema::properties& p)
-      {
-        ::xsd::cxx::xml::auto_initializer i (
-          (f & ::xml_schema::flags::dont_initialize) == 0,
-          (f & ::xml_schema::flags::keep_dom) == 0);
-
-        ::xsd::cxx::xml::sax::std_input_source isrc (is);
-        return ::schema::simxml::SimModelCore::DefaultForProject (isrc, f, p);
-      }
-
-      ::std::auto_ptr< ::xml_schema::idref >
-      DefaultForProject (::std::istream& is,
-                         ::xml_schema::error_handler& h,
-                         ::xml_schema::flags f,
-                         const ::xml_schema::properties& p)
-      {
-        ::xsd::cxx::xml::auto_initializer i (
-          (f & ::xml_schema::flags::dont_initialize) == 0,
-          (f & ::xml_schema::flags::keep_dom) == 0);
-
-        ::xsd::cxx::xml::sax::std_input_source isrc (is);
-        return ::schema::simxml::SimModelCore::DefaultForProject (isrc, h, f, p);
-      }
-
-      ::std::auto_ptr< ::xml_schema::idref >
-      DefaultForProject (::std::istream& is,
-                         ::xercesc::DOMErrorHandler& h,
-                         ::xml_schema::flags f,
-                         const ::xml_schema::properties& p)
-      {
-        ::xsd::cxx::xml::sax::std_input_source isrc (is);
-        return ::schema::simxml::SimModelCore::DefaultForProject (isrc, h, f, p);
-      }
-
-      ::std::auto_ptr< ::xml_schema::idref >
-      DefaultForProject (::std::istream& is,
-                         const ::std::string& sid,
-                         ::xml_schema::flags f,
-                         const ::xml_schema::properties& p)
-      {
-        ::xsd::cxx::xml::auto_initializer i (
-          (f & ::xml_schema::flags::dont_initialize) == 0,
-          (f & ::xml_schema::flags::keep_dom) == 0);
-
-        ::xsd::cxx::xml::sax::std_input_source isrc (is, sid);
-        return ::schema::simxml::SimModelCore::DefaultForProject (isrc, f, p);
-      }
-
-      ::std::auto_ptr< ::xml_schema::idref >
-      DefaultForProject (::std::istream& is,
-                         const ::std::string& sid,
-                         ::xml_schema::error_handler& h,
-                         ::xml_schema::flags f,
-                         const ::xml_schema::properties& p)
-      {
-        ::xsd::cxx::xml::auto_initializer i (
-          (f & ::xml_schema::flags::dont_initialize) == 0,
-          (f & ::xml_schema::flags::keep_dom) == 0);
-
-        ::xsd::cxx::xml::sax::std_input_source isrc (is, sid);
-        return ::schema::simxml::SimModelCore::DefaultForProject (isrc, h, f, p);
-      }
-
-      ::std::auto_ptr< ::xml_schema::idref >
-      DefaultForProject (::std::istream& is,
-                         const ::std::string& sid,
-                         ::xercesc::DOMErrorHandler& h,
-                         ::xml_schema::flags f,
-                         const ::xml_schema::properties& p)
-      {
-        ::xsd::cxx::xml::sax::std_input_source isrc (is, sid);
-        return ::schema::simxml::SimModelCore::DefaultForProject (isrc, h, f, p);
-      }
-
-      ::std::auto_ptr< ::xml_schema::idref >
-      DefaultForProject (::xercesc::InputSource& i,
-                         ::xml_schema::flags f,
-                         const ::xml_schema::properties& p)
-      {
-        ::xsd::cxx::tree::error_handler< char > h;
-
-        ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
-          ::xsd::cxx::xml::dom::parse< char > (
-            i, h, p, f));
-
-        h.throw_if_failed< ::xsd::cxx::tree::parsing< char > > ();
-
-        return ::std::auto_ptr< ::xml_schema::idref > (
-          ::schema::simxml::SimModelCore::DefaultForProject (
-            d, f | ::xml_schema::flags::own_dom, p));
-      }
-
-      ::std::auto_ptr< ::xml_schema::idref >
-      DefaultForProject (::xercesc::InputSource& i,
-                         ::xml_schema::error_handler& h,
-                         ::xml_schema::flags f,
-                         const ::xml_schema::properties& p)
-      {
-        ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
-          ::xsd::cxx::xml::dom::parse< char > (
-            i, h, p, f));
-
-        if (!d.get ())
-          throw ::xsd::cxx::tree::parsing< char > ();
-
-        return ::std::auto_ptr< ::xml_schema::idref > (
-          ::schema::simxml::SimModelCore::DefaultForProject (
-            d, f | ::xml_schema::flags::own_dom, p));
-      }
-
-      ::std::auto_ptr< ::xml_schema::idref >
-      DefaultForProject (::xercesc::InputSource& i,
-                         ::xercesc::DOMErrorHandler& h,
-                         ::xml_schema::flags f,
-                         const ::xml_schema::properties& p)
-      {
-        ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
-          ::xsd::cxx::xml::dom::parse< char > (
-            i, h, p, f));
-
-        if (!d.get ())
-          throw ::xsd::cxx::tree::parsing< char > ();
-
-        return ::std::auto_ptr< ::xml_schema::idref > (
-          ::schema::simxml::SimModelCore::DefaultForProject (
-            d, f | ::xml_schema::flags::own_dom, p));
-      }
-
-      ::std::auto_ptr< ::xml_schema::idref >
-      DefaultForProject (const ::xercesc::DOMDocument& doc,
-                         ::xml_schema::flags f,
-                         const ::xml_schema::properties& p)
-      {
-        if (f & ::xml_schema::flags::keep_dom)
-        {
-          ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
-            static_cast< ::xercesc::DOMDocument* > (doc.cloneNode (true)));
-
-          return ::std::auto_ptr< ::xml_schema::idref > (
-            ::schema::simxml::SimModelCore::DefaultForProject (
-              d, f | ::xml_schema::flags::own_dom, p));
-        }
-
-        const ::xercesc::DOMElement& e (*doc.getDocumentElement ());
-        const ::xsd::cxx::xml::qualified_name< char > n (
-          ::xsd::cxx::xml::dom::name< char > (e));
-
-        if (n.name () == "DefaultForProject" &&
-            n.namespace_ () == "http://d-alchemy.com/schema/simxml/SimModelCore")
-        {
-          ::std::auto_ptr< ::xml_schema::idref > r (
-            ::xsd::cxx::tree::traits< ::xml_schema::idref, char >::create (
-              e, f, 0));
-          return r;
-        }
-
-        throw ::xsd::cxx::tree::unexpected_element < char > (
-          n.name (),
-          n.namespace_ (),
-          "DefaultForProject",
-          "http://d-alchemy.com/schema/simxml/SimModelCore");
-      }
-
-      ::std::auto_ptr< ::xml_schema::idref >
-      DefaultForProject (::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d,
-                         ::xml_schema::flags f,
-                         const ::xml_schema::properties&)
-      {
-        ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > c (
-          ((f & ::xml_schema::flags::keep_dom) &&
-           !(f & ::xml_schema::flags::own_dom))
-          ? static_cast< ::xercesc::DOMDocument* > (d->cloneNode (true))
-          : 0);
-
-        ::xercesc::DOMDocument& doc (c.get () ? *c : *d);
-        const ::xercesc::DOMElement& e (*doc.getDocumentElement ());
-
-        const ::xsd::cxx::xml::qualified_name< char > n (
-          ::xsd::cxx::xml::dom::name< char > (e));
-
-        if (f & ::xml_schema::flags::keep_dom)
-          doc.setUserData (::xml_schema::dom::tree_node_key,
-                           (c.get () ? &c : &d),
-                           0);
-
-        if (n.name () == "DefaultForProject" &&
-            n.namespace_ () == "http://d-alchemy.com/schema/simxml/SimModelCore")
-        {
-          ::std::auto_ptr< ::xml_schema::idref > r (
-            ::xsd::cxx::tree::traits< ::xml_schema::idref, char >::create (
-              e, f, 0));
-          return r;
-        }
-
-        throw ::xsd::cxx::tree::unexpected_element < char > (
-          n.name (),
-          n.namespace_ (),
-          "DefaultForProject",
-          "http://d-alchemy.com/schema/simxml/SimModelCore");
-      }
-
-      ::std::auto_ptr< ::xml_schema::idref >
-      DefaultForPerson (const ::std::string& u,
-                        ::xml_schema::flags f,
-                        const ::xml_schema::properties& p)
-      {
-        ::xsd::cxx::xml::auto_initializer i (
-          (f & ::xml_schema::flags::dont_initialize) == 0,
-          (f & ::xml_schema::flags::keep_dom) == 0);
-
-        ::xsd::cxx::tree::error_handler< char > h;
-
-        ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
-          ::xsd::cxx::xml::dom::parse< char > (
-            u, h, p, f));
-
-        h.throw_if_failed< ::xsd::cxx::tree::parsing< char > > ();
-
-        return ::std::auto_ptr< ::xml_schema::idref > (
-          ::schema::simxml::SimModelCore::DefaultForPerson (
-            d, f | ::xml_schema::flags::own_dom, p));
-      }
-
-      ::std::auto_ptr< ::xml_schema::idref >
-      DefaultForPerson (const ::std::string& u,
-                        ::xml_schema::error_handler& h,
-                        ::xml_schema::flags f,
-                        const ::xml_schema::properties& p)
-      {
-        ::xsd::cxx::xml::auto_initializer i (
-          (f & ::xml_schema::flags::dont_initialize) == 0,
-          (f & ::xml_schema::flags::keep_dom) == 0);
-
-        ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
-          ::xsd::cxx::xml::dom::parse< char > (
-            u, h, p, f));
-
-        if (!d.get ())
-          throw ::xsd::cxx::tree::parsing< char > ();
-
-        return ::std::auto_ptr< ::xml_schema::idref > (
-          ::schema::simxml::SimModelCore::DefaultForPerson (
-            d, f | ::xml_schema::flags::own_dom, p));
-      }
-
-      ::std::auto_ptr< ::xml_schema::idref >
-      DefaultForPerson (const ::std::string& u,
-                        ::xercesc::DOMErrorHandler& h,
-                        ::xml_schema::flags f,
-                        const ::xml_schema::properties& p)
-      {
-        ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
-          ::xsd::cxx::xml::dom::parse< char > (
-            u, h, p, f));
-
-        if (!d.get ())
-          throw ::xsd::cxx::tree::parsing< char > ();
-
-        return ::std::auto_ptr< ::xml_schema::idref > (
-          ::schema::simxml::SimModelCore::DefaultForPerson (
-            d, f | ::xml_schema::flags::own_dom, p));
-      }
-
-      ::std::auto_ptr< ::xml_schema::idref >
-      DefaultForPerson (::std::istream& is,
-                        ::xml_schema::flags f,
-                        const ::xml_schema::properties& p)
-      {
-        ::xsd::cxx::xml::auto_initializer i (
-          (f & ::xml_schema::flags::dont_initialize) == 0,
-          (f & ::xml_schema::flags::keep_dom) == 0);
-
-        ::xsd::cxx::xml::sax::std_input_source isrc (is);
-        return ::schema::simxml::SimModelCore::DefaultForPerson (isrc, f, p);
-      }
-
-      ::std::auto_ptr< ::xml_schema::idref >
-      DefaultForPerson (::std::istream& is,
-                        ::xml_schema::error_handler& h,
-                        ::xml_schema::flags f,
-                        const ::xml_schema::properties& p)
-      {
-        ::xsd::cxx::xml::auto_initializer i (
-          (f & ::xml_schema::flags::dont_initialize) == 0,
-          (f & ::xml_schema::flags::keep_dom) == 0);
-
-        ::xsd::cxx::xml::sax::std_input_source isrc (is);
-        return ::schema::simxml::SimModelCore::DefaultForPerson (isrc, h, f, p);
-      }
-
-      ::std::auto_ptr< ::xml_schema::idref >
-      DefaultForPerson (::std::istream& is,
-                        ::xercesc::DOMErrorHandler& h,
-                        ::xml_schema::flags f,
-                        const ::xml_schema::properties& p)
-      {
-        ::xsd::cxx::xml::sax::std_input_source isrc (is);
-        return ::schema::simxml::SimModelCore::DefaultForPerson (isrc, h, f, p);
-      }
-
-      ::std::auto_ptr< ::xml_schema::idref >
-      DefaultForPerson (::std::istream& is,
-                        const ::std::string& sid,
-                        ::xml_schema::flags f,
-                        const ::xml_schema::properties& p)
-      {
-        ::xsd::cxx::xml::auto_initializer i (
-          (f & ::xml_schema::flags::dont_initialize) == 0,
-          (f & ::xml_schema::flags::keep_dom) == 0);
-
-        ::xsd::cxx::xml::sax::std_input_source isrc (is, sid);
-        return ::schema::simxml::SimModelCore::DefaultForPerson (isrc, f, p);
-      }
-
-      ::std::auto_ptr< ::xml_schema::idref >
-      DefaultForPerson (::std::istream& is,
-                        const ::std::string& sid,
-                        ::xml_schema::error_handler& h,
-                        ::xml_schema::flags f,
-                        const ::xml_schema::properties& p)
-      {
-        ::xsd::cxx::xml::auto_initializer i (
-          (f & ::xml_schema::flags::dont_initialize) == 0,
-          (f & ::xml_schema::flags::keep_dom) == 0);
-
-        ::xsd::cxx::xml::sax::std_input_source isrc (is, sid);
-        return ::schema::simxml::SimModelCore::DefaultForPerson (isrc, h, f, p);
-      }
-
-      ::std::auto_ptr< ::xml_schema::idref >
-      DefaultForPerson (::std::istream& is,
-                        const ::std::string& sid,
-                        ::xercesc::DOMErrorHandler& h,
-                        ::xml_schema::flags f,
-                        const ::xml_schema::properties& p)
-      {
-        ::xsd::cxx::xml::sax::std_input_source isrc (is, sid);
-        return ::schema::simxml::SimModelCore::DefaultForPerson (isrc, h, f, p);
-      }
-
-      ::std::auto_ptr< ::xml_schema::idref >
-      DefaultForPerson (::xercesc::InputSource& i,
-                        ::xml_schema::flags f,
-                        const ::xml_schema::properties& p)
-      {
-        ::xsd::cxx::tree::error_handler< char > h;
-
-        ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
-          ::xsd::cxx::xml::dom::parse< char > (
-            i, h, p, f));
-
-        h.throw_if_failed< ::xsd::cxx::tree::parsing< char > > ();
-
-        return ::std::auto_ptr< ::xml_schema::idref > (
-          ::schema::simxml::SimModelCore::DefaultForPerson (
-            d, f | ::xml_schema::flags::own_dom, p));
-      }
-
-      ::std::auto_ptr< ::xml_schema::idref >
-      DefaultForPerson (::xercesc::InputSource& i,
-                        ::xml_schema::error_handler& h,
-                        ::xml_schema::flags f,
-                        const ::xml_schema::properties& p)
-      {
-        ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
-          ::xsd::cxx::xml::dom::parse< char > (
-            i, h, p, f));
-
-        if (!d.get ())
-          throw ::xsd::cxx::tree::parsing< char > ();
-
-        return ::std::auto_ptr< ::xml_schema::idref > (
-          ::schema::simxml::SimModelCore::DefaultForPerson (
-            d, f | ::xml_schema::flags::own_dom, p));
-      }
-
-      ::std::auto_ptr< ::xml_schema::idref >
-      DefaultForPerson (::xercesc::InputSource& i,
-                        ::xercesc::DOMErrorHandler& h,
-                        ::xml_schema::flags f,
-                        const ::xml_schema::properties& p)
-      {
-        ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
-          ::xsd::cxx::xml::dom::parse< char > (
-            i, h, p, f));
-
-        if (!d.get ())
-          throw ::xsd::cxx::tree::parsing< char > ();
-
-        return ::std::auto_ptr< ::xml_schema::idref > (
-          ::schema::simxml::SimModelCore::DefaultForPerson (
-            d, f | ::xml_schema::flags::own_dom, p));
-      }
-
-      ::std::auto_ptr< ::xml_schema::idref >
-      DefaultForPerson (const ::xercesc::DOMDocument& doc,
-                        ::xml_schema::flags f,
-                        const ::xml_schema::properties& p)
-      {
-        if (f & ::xml_schema::flags::keep_dom)
-        {
-          ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
-            static_cast< ::xercesc::DOMDocument* > (doc.cloneNode (true)));
-
-          return ::std::auto_ptr< ::xml_schema::idref > (
-            ::schema::simxml::SimModelCore::DefaultForPerson (
-              d, f | ::xml_schema::flags::own_dom, p));
-        }
-
-        const ::xercesc::DOMElement& e (*doc.getDocumentElement ());
-        const ::xsd::cxx::xml::qualified_name< char > n (
-          ::xsd::cxx::xml::dom::name< char > (e));
-
-        if (n.name () == "DefaultForPerson" &&
-            n.namespace_ () == "http://d-alchemy.com/schema/simxml/SimModelCore")
-        {
-          ::std::auto_ptr< ::xml_schema::idref > r (
-            ::xsd::cxx::tree::traits< ::xml_schema::idref, char >::create (
-              e, f, 0));
-          return r;
-        }
-
-        throw ::xsd::cxx::tree::unexpected_element < char > (
-          n.name (),
-          n.namespace_ (),
-          "DefaultForPerson",
-          "http://d-alchemy.com/schema/simxml/SimModelCore");
-      }
-
-      ::std::auto_ptr< ::xml_schema::idref >
-      DefaultForPerson (::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d,
-                        ::xml_schema::flags f,
-                        const ::xml_schema::properties&)
-      {
-        ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > c (
-          ((f & ::xml_schema::flags::keep_dom) &&
-           !(f & ::xml_schema::flags::own_dom))
-          ? static_cast< ::xercesc::DOMDocument* > (d->cloneNode (true))
-          : 0);
-
-        ::xercesc::DOMDocument& doc (c.get () ? *c : *d);
-        const ::xercesc::DOMElement& e (*doc.getDocumentElement ());
-
-        const ::xsd::cxx::xml::qualified_name< char > n (
-          ::xsd::cxx::xml::dom::name< char > (e));
-
-        if (f & ::xml_schema::flags::keep_dom)
-          doc.setUserData (::xml_schema::dom::tree_node_key,
-                           (c.get () ? &c : &d),
-                           0);
-
-        if (n.name () == "DefaultForPerson" &&
-            n.namespace_ () == "http://d-alchemy.com/schema/simxml/SimModelCore")
-        {
-          ::std::auto_ptr< ::xml_schema::idref > r (
-            ::xsd::cxx::tree::traits< ::xml_schema::idref, char >::create (
-              e, f, 0));
-          return r;
-        }
-
-        throw ::xsd::cxx::tree::unexpected_element < char > (
-          n.name (),
-          n.namespace_ (),
-          "DefaultForPerson",
-          "http://d-alchemy.com/schema/simxml/SimModelCore");
-      }
-
-      ::std::auto_ptr< ::xml_schema::string >
-      DefaultForUnitSystem (const ::std::string& u,
-                            ::xml_schema::flags f,
-                            const ::xml_schema::properties& p)
-      {
-        ::xsd::cxx::xml::auto_initializer i (
-          (f & ::xml_schema::flags::dont_initialize) == 0,
-          (f & ::xml_schema::flags::keep_dom) == 0);
-
-        ::xsd::cxx::tree::error_handler< char > h;
-
-        ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
-          ::xsd::cxx::xml::dom::parse< char > (
-            u, h, p, f));
-
-        h.throw_if_failed< ::xsd::cxx::tree::parsing< char > > ();
-
-        return ::std::auto_ptr< ::xml_schema::string > (
-          ::schema::simxml::SimModelCore::DefaultForUnitSystem (
-            d, f | ::xml_schema::flags::own_dom, p));
-      }
-
-      ::std::auto_ptr< ::xml_schema::string >
-      DefaultForUnitSystem (const ::std::string& u,
-                            ::xml_schema::error_handler& h,
-                            ::xml_schema::flags f,
-                            const ::xml_schema::properties& p)
-      {
-        ::xsd::cxx::xml::auto_initializer i (
-          (f & ::xml_schema::flags::dont_initialize) == 0,
-          (f & ::xml_schema::flags::keep_dom) == 0);
-
-        ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
-          ::xsd::cxx::xml::dom::parse< char > (
-            u, h, p, f));
-
-        if (!d.get ())
-          throw ::xsd::cxx::tree::parsing< char > ();
-
-        return ::std::auto_ptr< ::xml_schema::string > (
-          ::schema::simxml::SimModelCore::DefaultForUnitSystem (
-            d, f | ::xml_schema::flags::own_dom, p));
-      }
-
-      ::std::auto_ptr< ::xml_schema::string >
-      DefaultForUnitSystem (const ::std::string& u,
-                            ::xercesc::DOMErrorHandler& h,
-                            ::xml_schema::flags f,
-                            const ::xml_schema::properties& p)
-      {
-        ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
-          ::xsd::cxx::xml::dom::parse< char > (
-            u, h, p, f));
-
-        if (!d.get ())
-          throw ::xsd::cxx::tree::parsing< char > ();
-
-        return ::std::auto_ptr< ::xml_schema::string > (
-          ::schema::simxml::SimModelCore::DefaultForUnitSystem (
-            d, f | ::xml_schema::flags::own_dom, p));
-      }
-
-      ::std::auto_ptr< ::xml_schema::string >
-      DefaultForUnitSystem (::std::istream& is,
-                            ::xml_schema::flags f,
-                            const ::xml_schema::properties& p)
-      {
-        ::xsd::cxx::xml::auto_initializer i (
-          (f & ::xml_schema::flags::dont_initialize) == 0,
-          (f & ::xml_schema::flags::keep_dom) == 0);
-
-        ::xsd::cxx::xml::sax::std_input_source isrc (is);
-        return ::schema::simxml::SimModelCore::DefaultForUnitSystem (isrc, f, p);
-      }
-
-      ::std::auto_ptr< ::xml_schema::string >
-      DefaultForUnitSystem (::std::istream& is,
-                            ::xml_schema::error_handler& h,
-                            ::xml_schema::flags f,
-                            const ::xml_schema::properties& p)
-      {
-        ::xsd::cxx::xml::auto_initializer i (
-          (f & ::xml_schema::flags::dont_initialize) == 0,
-          (f & ::xml_schema::flags::keep_dom) == 0);
-
-        ::xsd::cxx::xml::sax::std_input_source isrc (is);
-        return ::schema::simxml::SimModelCore::DefaultForUnitSystem (isrc, h, f, p);
-      }
-
-      ::std::auto_ptr< ::xml_schema::string >
-      DefaultForUnitSystem (::std::istream& is,
-                            ::xercesc::DOMErrorHandler& h,
-                            ::xml_schema::flags f,
-                            const ::xml_schema::properties& p)
-      {
-        ::xsd::cxx::xml::sax::std_input_source isrc (is);
-        return ::schema::simxml::SimModelCore::DefaultForUnitSystem (isrc, h, f, p);
-      }
-
-      ::std::auto_ptr< ::xml_schema::string >
-      DefaultForUnitSystem (::std::istream& is,
-                            const ::std::string& sid,
-                            ::xml_schema::flags f,
-                            const ::xml_schema::properties& p)
-      {
-        ::xsd::cxx::xml::auto_initializer i (
-          (f & ::xml_schema::flags::dont_initialize) == 0,
-          (f & ::xml_schema::flags::keep_dom) == 0);
-
-        ::xsd::cxx::xml::sax::std_input_source isrc (is, sid);
-        return ::schema::simxml::SimModelCore::DefaultForUnitSystem (isrc, f, p);
-      }
-
-      ::std::auto_ptr< ::xml_schema::string >
-      DefaultForUnitSystem (::std::istream& is,
-                            const ::std::string& sid,
-                            ::xml_schema::error_handler& h,
-                            ::xml_schema::flags f,
-                            const ::xml_schema::properties& p)
-      {
-        ::xsd::cxx::xml::auto_initializer i (
-          (f & ::xml_schema::flags::dont_initialize) == 0,
-          (f & ::xml_schema::flags::keep_dom) == 0);
-
-        ::xsd::cxx::xml::sax::std_input_source isrc (is, sid);
-        return ::schema::simxml::SimModelCore::DefaultForUnitSystem (isrc, h, f, p);
-      }
-
-      ::std::auto_ptr< ::xml_schema::string >
-      DefaultForUnitSystem (::std::istream& is,
-                            const ::std::string& sid,
-                            ::xercesc::DOMErrorHandler& h,
-                            ::xml_schema::flags f,
-                            const ::xml_schema::properties& p)
-      {
-        ::xsd::cxx::xml::sax::std_input_source isrc (is, sid);
-        return ::schema::simxml::SimModelCore::DefaultForUnitSystem (isrc, h, f, p);
-      }
-
-      ::std::auto_ptr< ::xml_schema::string >
-      DefaultForUnitSystem (::xercesc::InputSource& i,
-                            ::xml_schema::flags f,
-                            const ::xml_schema::properties& p)
-      {
-        ::xsd::cxx::tree::error_handler< char > h;
-
-        ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
-          ::xsd::cxx::xml::dom::parse< char > (
-            i, h, p, f));
-
-        h.throw_if_failed< ::xsd::cxx::tree::parsing< char > > ();
-
-        return ::std::auto_ptr< ::xml_schema::string > (
-          ::schema::simxml::SimModelCore::DefaultForUnitSystem (
-            d, f | ::xml_schema::flags::own_dom, p));
-      }
-
-      ::std::auto_ptr< ::xml_schema::string >
-      DefaultForUnitSystem (::xercesc::InputSource& i,
-                            ::xml_schema::error_handler& h,
-                            ::xml_schema::flags f,
-                            const ::xml_schema::properties& p)
-      {
-        ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
-          ::xsd::cxx::xml::dom::parse< char > (
-            i, h, p, f));
-
-        if (!d.get ())
-          throw ::xsd::cxx::tree::parsing< char > ();
-
-        return ::std::auto_ptr< ::xml_schema::string > (
-          ::schema::simxml::SimModelCore::DefaultForUnitSystem (
-            d, f | ::xml_schema::flags::own_dom, p));
-      }
-
-      ::std::auto_ptr< ::xml_schema::string >
-      DefaultForUnitSystem (::xercesc::InputSource& i,
-                            ::xercesc::DOMErrorHandler& h,
-                            ::xml_schema::flags f,
-                            const ::xml_schema::properties& p)
-      {
-        ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
-          ::xsd::cxx::xml::dom::parse< char > (
-            i, h, p, f));
-
-        if (!d.get ())
-          throw ::xsd::cxx::tree::parsing< char > ();
-
-        return ::std::auto_ptr< ::xml_schema::string > (
-          ::schema::simxml::SimModelCore::DefaultForUnitSystem (
-            d, f | ::xml_schema::flags::own_dom, p));
-      }
-
-      ::std::auto_ptr< ::xml_schema::string >
-      DefaultForUnitSystem (const ::xercesc::DOMDocument& doc,
-                            ::xml_schema::flags f,
-                            const ::xml_schema::properties& p)
-      {
-        if (f & ::xml_schema::flags::keep_dom)
-        {
-          ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
-            static_cast< ::xercesc::DOMDocument* > (doc.cloneNode (true)));
-
-          return ::std::auto_ptr< ::xml_schema::string > (
-            ::schema::simxml::SimModelCore::DefaultForUnitSystem (
-              d, f | ::xml_schema::flags::own_dom, p));
-        }
-
-        const ::xercesc::DOMElement& e (*doc.getDocumentElement ());
-        const ::xsd::cxx::xml::qualified_name< char > n (
-          ::xsd::cxx::xml::dom::name< char > (e));
-
-        if (n.name () == "DefaultForUnitSystem" &&
-            n.namespace_ () == "http://d-alchemy.com/schema/simxml/SimModelCore")
-        {
-          ::std::auto_ptr< ::xml_schema::string > r (
-            ::xsd::cxx::tree::traits< ::xml_schema::string, char >::create (
-              e, f, 0));
-          return r;
-        }
-
-        throw ::xsd::cxx::tree::unexpected_element < char > (
-          n.name (),
-          n.namespace_ (),
-          "DefaultForUnitSystem",
-          "http://d-alchemy.com/schema/simxml/SimModelCore");
-      }
-
-      ::std::auto_ptr< ::xml_schema::string >
-      DefaultForUnitSystem (::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d,
-                            ::xml_schema::flags f,
-                            const ::xml_schema::properties&)
-      {
-        ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > c (
-          ((f & ::xml_schema::flags::keep_dom) &&
-           !(f & ::xml_schema::flags::own_dom))
-          ? static_cast< ::xercesc::DOMDocument* > (d->cloneNode (true))
-          : 0);
-
-        ::xercesc::DOMDocument& doc (c.get () ? *c : *d);
-        const ::xercesc::DOMElement& e (*doc.getDocumentElement ());
-
-        const ::xsd::cxx::xml::qualified_name< char > n (
-          ::xsd::cxx::xml::dom::name< char > (e));
-
-        if (f & ::xml_schema::flags::keep_dom)
-          doc.setUserData (::xml_schema::dom::tree_node_key,
-                           (c.get () ? &c : &d),
-                           0);
-
-        if (n.name () == "DefaultForUnitSystem" &&
-            n.namespace_ () == "http://d-alchemy.com/schema/simxml/SimModelCore")
-        {
-          ::std::auto_ptr< ::xml_schema::string > r (
-            ::xsd::cxx::tree::traits< ::xml_schema::string, char >::create (
-              e, f, 0));
-          return r;
-        }
-
-        throw ::xsd::cxx::tree::unexpected_element < char > (
-          n.name (),
-          n.namespace_ (),
-          "DefaultForUnitSystem",
-          "http://d-alchemy.com/schema/simxml/SimModelCore");
-      }
-
       ::std::auto_ptr< ::xml_schema::int_ >
       ObjectIndex (const ::std::string& u,
                    ::xml_schema::flags f,
@@ -4084,6 +3286,272 @@ namespace schema
           n.name (),
           n.namespace_ (),
           "LocalPlacementZ",
+          "http://d-alchemy.com/schema/simxml/SimModelCore");
+      }
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
+      LocalPlacementCoordinates (const ::std::string& u,
+                                 ::xml_schema::flags f,
+                                 const ::xml_schema::properties& p)
+      {
+        ::xsd::cxx::xml::auto_initializer i (
+          (f & ::xml_schema::flags::dont_initialize) == 0,
+          (f & ::xml_schema::flags::keep_dom) == 0);
+
+        ::xsd::cxx::tree::error_handler< char > h;
+
+        ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
+          ::xsd::cxx::xml::dom::parse< char > (
+            u, h, p, f));
+
+        h.throw_if_failed< ::xsd::cxx::tree::parsing< char > > ();
+
+        return ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList > (
+          ::schema::simxml::SimModelCore::LocalPlacementCoordinates (
+            d, f | ::xml_schema::flags::own_dom, p));
+      }
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
+      LocalPlacementCoordinates (const ::std::string& u,
+                                 ::xml_schema::error_handler& h,
+                                 ::xml_schema::flags f,
+                                 const ::xml_schema::properties& p)
+      {
+        ::xsd::cxx::xml::auto_initializer i (
+          (f & ::xml_schema::flags::dont_initialize) == 0,
+          (f & ::xml_schema::flags::keep_dom) == 0);
+
+        ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
+          ::xsd::cxx::xml::dom::parse< char > (
+            u, h, p, f));
+
+        if (!d.get ())
+          throw ::xsd::cxx::tree::parsing< char > ();
+
+        return ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList > (
+          ::schema::simxml::SimModelCore::LocalPlacementCoordinates (
+            d, f | ::xml_schema::flags::own_dom, p));
+      }
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
+      LocalPlacementCoordinates (const ::std::string& u,
+                                 ::xercesc::DOMErrorHandler& h,
+                                 ::xml_schema::flags f,
+                                 const ::xml_schema::properties& p)
+      {
+        ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
+          ::xsd::cxx::xml::dom::parse< char > (
+            u, h, p, f));
+
+        if (!d.get ())
+          throw ::xsd::cxx::tree::parsing< char > ();
+
+        return ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList > (
+          ::schema::simxml::SimModelCore::LocalPlacementCoordinates (
+            d, f | ::xml_schema::flags::own_dom, p));
+      }
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
+      LocalPlacementCoordinates (::std::istream& is,
+                                 ::xml_schema::flags f,
+                                 const ::xml_schema::properties& p)
+      {
+        ::xsd::cxx::xml::auto_initializer i (
+          (f & ::xml_schema::flags::dont_initialize) == 0,
+          (f & ::xml_schema::flags::keep_dom) == 0);
+
+        ::xsd::cxx::xml::sax::std_input_source isrc (is);
+        return ::schema::simxml::SimModelCore::LocalPlacementCoordinates (isrc, f, p);
+      }
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
+      LocalPlacementCoordinates (::std::istream& is,
+                                 ::xml_schema::error_handler& h,
+                                 ::xml_schema::flags f,
+                                 const ::xml_schema::properties& p)
+      {
+        ::xsd::cxx::xml::auto_initializer i (
+          (f & ::xml_schema::flags::dont_initialize) == 0,
+          (f & ::xml_schema::flags::keep_dom) == 0);
+
+        ::xsd::cxx::xml::sax::std_input_source isrc (is);
+        return ::schema::simxml::SimModelCore::LocalPlacementCoordinates (isrc, h, f, p);
+      }
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
+      LocalPlacementCoordinates (::std::istream& is,
+                                 ::xercesc::DOMErrorHandler& h,
+                                 ::xml_schema::flags f,
+                                 const ::xml_schema::properties& p)
+      {
+        ::xsd::cxx::xml::sax::std_input_source isrc (is);
+        return ::schema::simxml::SimModelCore::LocalPlacementCoordinates (isrc, h, f, p);
+      }
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
+      LocalPlacementCoordinates (::std::istream& is,
+                                 const ::std::string& sid,
+                                 ::xml_schema::flags f,
+                                 const ::xml_schema::properties& p)
+      {
+        ::xsd::cxx::xml::auto_initializer i (
+          (f & ::xml_schema::flags::dont_initialize) == 0,
+          (f & ::xml_schema::flags::keep_dom) == 0);
+
+        ::xsd::cxx::xml::sax::std_input_source isrc (is, sid);
+        return ::schema::simxml::SimModelCore::LocalPlacementCoordinates (isrc, f, p);
+      }
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
+      LocalPlacementCoordinates (::std::istream& is,
+                                 const ::std::string& sid,
+                                 ::xml_schema::error_handler& h,
+                                 ::xml_schema::flags f,
+                                 const ::xml_schema::properties& p)
+      {
+        ::xsd::cxx::xml::auto_initializer i (
+          (f & ::xml_schema::flags::dont_initialize) == 0,
+          (f & ::xml_schema::flags::keep_dom) == 0);
+
+        ::xsd::cxx::xml::sax::std_input_source isrc (is, sid);
+        return ::schema::simxml::SimModelCore::LocalPlacementCoordinates (isrc, h, f, p);
+      }
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
+      LocalPlacementCoordinates (::std::istream& is,
+                                 const ::std::string& sid,
+                                 ::xercesc::DOMErrorHandler& h,
+                                 ::xml_schema::flags f,
+                                 const ::xml_schema::properties& p)
+      {
+        ::xsd::cxx::xml::sax::std_input_source isrc (is, sid);
+        return ::schema::simxml::SimModelCore::LocalPlacementCoordinates (isrc, h, f, p);
+      }
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
+      LocalPlacementCoordinates (::xercesc::InputSource& i,
+                                 ::xml_schema::flags f,
+                                 const ::xml_schema::properties& p)
+      {
+        ::xsd::cxx::tree::error_handler< char > h;
+
+        ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
+          ::xsd::cxx::xml::dom::parse< char > (
+            i, h, p, f));
+
+        h.throw_if_failed< ::xsd::cxx::tree::parsing< char > > ();
+
+        return ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList > (
+          ::schema::simxml::SimModelCore::LocalPlacementCoordinates (
+            d, f | ::xml_schema::flags::own_dom, p));
+      }
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
+      LocalPlacementCoordinates (::xercesc::InputSource& i,
+                                 ::xml_schema::error_handler& h,
+                                 ::xml_schema::flags f,
+                                 const ::xml_schema::properties& p)
+      {
+        ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
+          ::xsd::cxx::xml::dom::parse< char > (
+            i, h, p, f));
+
+        if (!d.get ())
+          throw ::xsd::cxx::tree::parsing< char > ();
+
+        return ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList > (
+          ::schema::simxml::SimModelCore::LocalPlacementCoordinates (
+            d, f | ::xml_schema::flags::own_dom, p));
+      }
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
+      LocalPlacementCoordinates (::xercesc::InputSource& i,
+                                 ::xercesc::DOMErrorHandler& h,
+                                 ::xml_schema::flags f,
+                                 const ::xml_schema::properties& p)
+      {
+        ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
+          ::xsd::cxx::xml::dom::parse< char > (
+            i, h, p, f));
+
+        if (!d.get ())
+          throw ::xsd::cxx::tree::parsing< char > ();
+
+        return ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList > (
+          ::schema::simxml::SimModelCore::LocalPlacementCoordinates (
+            d, f | ::xml_schema::flags::own_dom, p));
+      }
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
+      LocalPlacementCoordinates (const ::xercesc::DOMDocument& doc,
+                                 ::xml_schema::flags f,
+                                 const ::xml_schema::properties& p)
+      {
+        if (f & ::xml_schema::flags::keep_dom)
+        {
+          ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
+            static_cast< ::xercesc::DOMDocument* > (doc.cloneNode (true)));
+
+          return ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList > (
+            ::schema::simxml::SimModelCore::LocalPlacementCoordinates (
+              d, f | ::xml_schema::flags::own_dom, p));
+        }
+
+        const ::xercesc::DOMElement& e (*doc.getDocumentElement ());
+        const ::xsd::cxx::xml::qualified_name< char > n (
+          ::xsd::cxx::xml::dom::name< char > (e));
+
+        if (n.name () == "LocalPlacementCoordinates" &&
+            n.namespace_ () == "http://d-alchemy.com/schema/simxml/SimModelCore")
+        {
+          ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList > r (
+            ::xsd::cxx::tree::traits< ::schema::simxml::SimModelCore::doubleList, char >::create (
+              e, f, 0));
+          return r;
+        }
+
+        throw ::xsd::cxx::tree::unexpected_element < char > (
+          n.name (),
+          n.namespace_ (),
+          "LocalPlacementCoordinates",
+          "http://d-alchemy.com/schema/simxml/SimModelCore");
+      }
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
+      LocalPlacementCoordinates (::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d,
+                                 ::xml_schema::flags f,
+                                 const ::xml_schema::properties&)
+      {
+        ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > c (
+          ((f & ::xml_schema::flags::keep_dom) &&
+           !(f & ::xml_schema::flags::own_dom))
+          ? static_cast< ::xercesc::DOMDocument* > (d->cloneNode (true))
+          : 0);
+
+        ::xercesc::DOMDocument& doc (c.get () ? *c : *d);
+        const ::xercesc::DOMElement& e (*doc.getDocumentElement ());
+
+        const ::xsd::cxx::xml::qualified_name< char > n (
+          ::xsd::cxx::xml::dom::name< char > (e));
+
+        if (f & ::xml_schema::flags::keep_dom)
+          doc.setUserData (::xml_schema::dom::tree_node_key,
+                           (c.get () ? &c : &d),
+                           0);
+
+        if (n.name () == "LocalPlacementCoordinates" &&
+            n.namespace_ () == "http://d-alchemy.com/schema/simxml/SimModelCore")
+        {
+          ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList > r (
+            ::xsd::cxx::tree::traits< ::schema::simxml::SimModelCore::doubleList, char >::create (
+              e, f, 0));
+          return r;
+        }
+
+        throw ::xsd::cxx::tree::unexpected_element < char > (
+          n.name (),
+          n.namespace_ (),
+          "LocalPlacementCoordinates",
           "http://d-alchemy.com/schema/simxml/SimModelCore");
       }
 
@@ -8354,272 +7822,6 @@ namespace schema
           n.name (),
           n.namespace_ (),
           "Tag",
-          "http://d-alchemy.com/schema/simxml/SimModelCore");
-      }
-
-      ::std::auto_ptr< ::schema::simxml::SimModelCore::SelectedPropertyGroups >
-      SelectedPropertyGroups_ (const ::std::string& u,
-                               ::xml_schema::flags f,
-                               const ::xml_schema::properties& p)
-      {
-        ::xsd::cxx::xml::auto_initializer i (
-          (f & ::xml_schema::flags::dont_initialize) == 0,
-          (f & ::xml_schema::flags::keep_dom) == 0);
-
-        ::xsd::cxx::tree::error_handler< char > h;
-
-        ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
-          ::xsd::cxx::xml::dom::parse< char > (
-            u, h, p, f));
-
-        h.throw_if_failed< ::xsd::cxx::tree::parsing< char > > ();
-
-        return ::std::auto_ptr< ::schema::simxml::SimModelCore::SelectedPropertyGroups > (
-          ::schema::simxml::SimModelCore::SelectedPropertyGroups_ (
-            d, f | ::xml_schema::flags::own_dom, p));
-      }
-
-      ::std::auto_ptr< ::schema::simxml::SimModelCore::SelectedPropertyGroups >
-      SelectedPropertyGroups_ (const ::std::string& u,
-                               ::xml_schema::error_handler& h,
-                               ::xml_schema::flags f,
-                               const ::xml_schema::properties& p)
-      {
-        ::xsd::cxx::xml::auto_initializer i (
-          (f & ::xml_schema::flags::dont_initialize) == 0,
-          (f & ::xml_schema::flags::keep_dom) == 0);
-
-        ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
-          ::xsd::cxx::xml::dom::parse< char > (
-            u, h, p, f));
-
-        if (!d.get ())
-          throw ::xsd::cxx::tree::parsing< char > ();
-
-        return ::std::auto_ptr< ::schema::simxml::SimModelCore::SelectedPropertyGroups > (
-          ::schema::simxml::SimModelCore::SelectedPropertyGroups_ (
-            d, f | ::xml_schema::flags::own_dom, p));
-      }
-
-      ::std::auto_ptr< ::schema::simxml::SimModelCore::SelectedPropertyGroups >
-      SelectedPropertyGroups_ (const ::std::string& u,
-                               ::xercesc::DOMErrorHandler& h,
-                               ::xml_schema::flags f,
-                               const ::xml_schema::properties& p)
-      {
-        ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
-          ::xsd::cxx::xml::dom::parse< char > (
-            u, h, p, f));
-
-        if (!d.get ())
-          throw ::xsd::cxx::tree::parsing< char > ();
-
-        return ::std::auto_ptr< ::schema::simxml::SimModelCore::SelectedPropertyGroups > (
-          ::schema::simxml::SimModelCore::SelectedPropertyGroups_ (
-            d, f | ::xml_schema::flags::own_dom, p));
-      }
-
-      ::std::auto_ptr< ::schema::simxml::SimModelCore::SelectedPropertyGroups >
-      SelectedPropertyGroups_ (::std::istream& is,
-                               ::xml_schema::flags f,
-                               const ::xml_schema::properties& p)
-      {
-        ::xsd::cxx::xml::auto_initializer i (
-          (f & ::xml_schema::flags::dont_initialize) == 0,
-          (f & ::xml_schema::flags::keep_dom) == 0);
-
-        ::xsd::cxx::xml::sax::std_input_source isrc (is);
-        return ::schema::simxml::SimModelCore::SelectedPropertyGroups_ (isrc, f, p);
-      }
-
-      ::std::auto_ptr< ::schema::simxml::SimModelCore::SelectedPropertyGroups >
-      SelectedPropertyGroups_ (::std::istream& is,
-                               ::xml_schema::error_handler& h,
-                               ::xml_schema::flags f,
-                               const ::xml_schema::properties& p)
-      {
-        ::xsd::cxx::xml::auto_initializer i (
-          (f & ::xml_schema::flags::dont_initialize) == 0,
-          (f & ::xml_schema::flags::keep_dom) == 0);
-
-        ::xsd::cxx::xml::sax::std_input_source isrc (is);
-        return ::schema::simxml::SimModelCore::SelectedPropertyGroups_ (isrc, h, f, p);
-      }
-
-      ::std::auto_ptr< ::schema::simxml::SimModelCore::SelectedPropertyGroups >
-      SelectedPropertyGroups_ (::std::istream& is,
-                               ::xercesc::DOMErrorHandler& h,
-                               ::xml_schema::flags f,
-                               const ::xml_schema::properties& p)
-      {
-        ::xsd::cxx::xml::sax::std_input_source isrc (is);
-        return ::schema::simxml::SimModelCore::SelectedPropertyGroups_ (isrc, h, f, p);
-      }
-
-      ::std::auto_ptr< ::schema::simxml::SimModelCore::SelectedPropertyGroups >
-      SelectedPropertyGroups_ (::std::istream& is,
-                               const ::std::string& sid,
-                               ::xml_schema::flags f,
-                               const ::xml_schema::properties& p)
-      {
-        ::xsd::cxx::xml::auto_initializer i (
-          (f & ::xml_schema::flags::dont_initialize) == 0,
-          (f & ::xml_schema::flags::keep_dom) == 0);
-
-        ::xsd::cxx::xml::sax::std_input_source isrc (is, sid);
-        return ::schema::simxml::SimModelCore::SelectedPropertyGroups_ (isrc, f, p);
-      }
-
-      ::std::auto_ptr< ::schema::simxml::SimModelCore::SelectedPropertyGroups >
-      SelectedPropertyGroups_ (::std::istream& is,
-                               const ::std::string& sid,
-                               ::xml_schema::error_handler& h,
-                               ::xml_schema::flags f,
-                               const ::xml_schema::properties& p)
-      {
-        ::xsd::cxx::xml::auto_initializer i (
-          (f & ::xml_schema::flags::dont_initialize) == 0,
-          (f & ::xml_schema::flags::keep_dom) == 0);
-
-        ::xsd::cxx::xml::sax::std_input_source isrc (is, sid);
-        return ::schema::simxml::SimModelCore::SelectedPropertyGroups_ (isrc, h, f, p);
-      }
-
-      ::std::auto_ptr< ::schema::simxml::SimModelCore::SelectedPropertyGroups >
-      SelectedPropertyGroups_ (::std::istream& is,
-                               const ::std::string& sid,
-                               ::xercesc::DOMErrorHandler& h,
-                               ::xml_schema::flags f,
-                               const ::xml_schema::properties& p)
-      {
-        ::xsd::cxx::xml::sax::std_input_source isrc (is, sid);
-        return ::schema::simxml::SimModelCore::SelectedPropertyGroups_ (isrc, h, f, p);
-      }
-
-      ::std::auto_ptr< ::schema::simxml::SimModelCore::SelectedPropertyGroups >
-      SelectedPropertyGroups_ (::xercesc::InputSource& i,
-                               ::xml_schema::flags f,
-                               const ::xml_schema::properties& p)
-      {
-        ::xsd::cxx::tree::error_handler< char > h;
-
-        ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
-          ::xsd::cxx::xml::dom::parse< char > (
-            i, h, p, f));
-
-        h.throw_if_failed< ::xsd::cxx::tree::parsing< char > > ();
-
-        return ::std::auto_ptr< ::schema::simxml::SimModelCore::SelectedPropertyGroups > (
-          ::schema::simxml::SimModelCore::SelectedPropertyGroups_ (
-            d, f | ::xml_schema::flags::own_dom, p));
-      }
-
-      ::std::auto_ptr< ::schema::simxml::SimModelCore::SelectedPropertyGroups >
-      SelectedPropertyGroups_ (::xercesc::InputSource& i,
-                               ::xml_schema::error_handler& h,
-                               ::xml_schema::flags f,
-                               const ::xml_schema::properties& p)
-      {
-        ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
-          ::xsd::cxx::xml::dom::parse< char > (
-            i, h, p, f));
-
-        if (!d.get ())
-          throw ::xsd::cxx::tree::parsing< char > ();
-
-        return ::std::auto_ptr< ::schema::simxml::SimModelCore::SelectedPropertyGroups > (
-          ::schema::simxml::SimModelCore::SelectedPropertyGroups_ (
-            d, f | ::xml_schema::flags::own_dom, p));
-      }
-
-      ::std::auto_ptr< ::schema::simxml::SimModelCore::SelectedPropertyGroups >
-      SelectedPropertyGroups_ (::xercesc::InputSource& i,
-                               ::xercesc::DOMErrorHandler& h,
-                               ::xml_schema::flags f,
-                               const ::xml_schema::properties& p)
-      {
-        ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
-          ::xsd::cxx::xml::dom::parse< char > (
-            i, h, p, f));
-
-        if (!d.get ())
-          throw ::xsd::cxx::tree::parsing< char > ();
-
-        return ::std::auto_ptr< ::schema::simxml::SimModelCore::SelectedPropertyGroups > (
-          ::schema::simxml::SimModelCore::SelectedPropertyGroups_ (
-            d, f | ::xml_schema::flags::own_dom, p));
-      }
-
-      ::std::auto_ptr< ::schema::simxml::SimModelCore::SelectedPropertyGroups >
-      SelectedPropertyGroups_ (const ::xercesc::DOMDocument& doc,
-                               ::xml_schema::flags f,
-                               const ::xml_schema::properties& p)
-      {
-        if (f & ::xml_schema::flags::keep_dom)
-        {
-          ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
-            static_cast< ::xercesc::DOMDocument* > (doc.cloneNode (true)));
-
-          return ::std::auto_ptr< ::schema::simxml::SimModelCore::SelectedPropertyGroups > (
-            ::schema::simxml::SimModelCore::SelectedPropertyGroups_ (
-              d, f | ::xml_schema::flags::own_dom, p));
-        }
-
-        const ::xercesc::DOMElement& e (*doc.getDocumentElement ());
-        const ::xsd::cxx::xml::qualified_name< char > n (
-          ::xsd::cxx::xml::dom::name< char > (e));
-
-        if (n.name () == "SelectedPropertyGroups" &&
-            n.namespace_ () == "http://d-alchemy.com/schema/simxml/SimModelCore")
-        {
-          ::std::auto_ptr< ::schema::simxml::SimModelCore::SelectedPropertyGroups > r (
-            ::xsd::cxx::tree::traits< ::schema::simxml::SimModelCore::SelectedPropertyGroups, char >::create (
-              e, f, 0));
-          return r;
-        }
-
-        throw ::xsd::cxx::tree::unexpected_element < char > (
-          n.name (),
-          n.namespace_ (),
-          "SelectedPropertyGroups",
-          "http://d-alchemy.com/schema/simxml/SimModelCore");
-      }
-
-      ::std::auto_ptr< ::schema::simxml::SimModelCore::SelectedPropertyGroups >
-      SelectedPropertyGroups_ (::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d,
-                               ::xml_schema::flags f,
-                               const ::xml_schema::properties&)
-      {
-        ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > c (
-          ((f & ::xml_schema::flags::keep_dom) &&
-           !(f & ::xml_schema::flags::own_dom))
-          ? static_cast< ::xercesc::DOMDocument* > (d->cloneNode (true))
-          : 0);
-
-        ::xercesc::DOMDocument& doc (c.get () ? *c : *d);
-        const ::xercesc::DOMElement& e (*doc.getDocumentElement ());
-
-        const ::xsd::cxx::xml::qualified_name< char > n (
-          ::xsd::cxx::xml::dom::name< char > (e));
-
-        if (f & ::xml_schema::flags::keep_dom)
-          doc.setUserData (::xml_schema::dom::tree_node_key,
-                           (c.get () ? &c : &d),
-                           0);
-
-        if (n.name () == "SelectedPropertyGroups" &&
-            n.namespace_ () == "http://d-alchemy.com/schema/simxml/SimModelCore")
-        {
-          ::std::auto_ptr< ::schema::simxml::SimModelCore::SelectedPropertyGroups > r (
-            ::xsd::cxx::tree::traits< ::schema::simxml::SimModelCore::SelectedPropertyGroups, char >::create (
-              e, f, 0));
-          return r;
-        }
-
-        throw ::xsd::cxx::tree::unexpected_element < char > (
-          n.name (),
-          n.namespace_ (),
-          "SelectedPropertyGroups",
           "http://d-alchemy.com/schema/simxml/SimModelCore");
       }
 
@@ -15277,6 +14479,538 @@ namespace schema
           "http://d-alchemy.com/schema/simxml/SimModelCore");
       }
 
+      ::std::auto_ptr< ::xml_schema::idref >
+      Decomposes (const ::std::string& u,
+                  ::xml_schema::flags f,
+                  const ::xml_schema::properties& p)
+      {
+        ::xsd::cxx::xml::auto_initializer i (
+          (f & ::xml_schema::flags::dont_initialize) == 0,
+          (f & ::xml_schema::flags::keep_dom) == 0);
+
+        ::xsd::cxx::tree::error_handler< char > h;
+
+        ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
+          ::xsd::cxx::xml::dom::parse< char > (
+            u, h, p, f));
+
+        h.throw_if_failed< ::xsd::cxx::tree::parsing< char > > ();
+
+        return ::std::auto_ptr< ::xml_schema::idref > (
+          ::schema::simxml::SimModelCore::Decomposes (
+            d, f | ::xml_schema::flags::own_dom, p));
+      }
+
+      ::std::auto_ptr< ::xml_schema::idref >
+      Decomposes (const ::std::string& u,
+                  ::xml_schema::error_handler& h,
+                  ::xml_schema::flags f,
+                  const ::xml_schema::properties& p)
+      {
+        ::xsd::cxx::xml::auto_initializer i (
+          (f & ::xml_schema::flags::dont_initialize) == 0,
+          (f & ::xml_schema::flags::keep_dom) == 0);
+
+        ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
+          ::xsd::cxx::xml::dom::parse< char > (
+            u, h, p, f));
+
+        if (!d.get ())
+          throw ::xsd::cxx::tree::parsing< char > ();
+
+        return ::std::auto_ptr< ::xml_schema::idref > (
+          ::schema::simxml::SimModelCore::Decomposes (
+            d, f | ::xml_schema::flags::own_dom, p));
+      }
+
+      ::std::auto_ptr< ::xml_schema::idref >
+      Decomposes (const ::std::string& u,
+                  ::xercesc::DOMErrorHandler& h,
+                  ::xml_schema::flags f,
+                  const ::xml_schema::properties& p)
+      {
+        ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
+          ::xsd::cxx::xml::dom::parse< char > (
+            u, h, p, f));
+
+        if (!d.get ())
+          throw ::xsd::cxx::tree::parsing< char > ();
+
+        return ::std::auto_ptr< ::xml_schema::idref > (
+          ::schema::simxml::SimModelCore::Decomposes (
+            d, f | ::xml_schema::flags::own_dom, p));
+      }
+
+      ::std::auto_ptr< ::xml_schema::idref >
+      Decomposes (::std::istream& is,
+                  ::xml_schema::flags f,
+                  const ::xml_schema::properties& p)
+      {
+        ::xsd::cxx::xml::auto_initializer i (
+          (f & ::xml_schema::flags::dont_initialize) == 0,
+          (f & ::xml_schema::flags::keep_dom) == 0);
+
+        ::xsd::cxx::xml::sax::std_input_source isrc (is);
+        return ::schema::simxml::SimModelCore::Decomposes (isrc, f, p);
+      }
+
+      ::std::auto_ptr< ::xml_schema::idref >
+      Decomposes (::std::istream& is,
+                  ::xml_schema::error_handler& h,
+                  ::xml_schema::flags f,
+                  const ::xml_schema::properties& p)
+      {
+        ::xsd::cxx::xml::auto_initializer i (
+          (f & ::xml_schema::flags::dont_initialize) == 0,
+          (f & ::xml_schema::flags::keep_dom) == 0);
+
+        ::xsd::cxx::xml::sax::std_input_source isrc (is);
+        return ::schema::simxml::SimModelCore::Decomposes (isrc, h, f, p);
+      }
+
+      ::std::auto_ptr< ::xml_schema::idref >
+      Decomposes (::std::istream& is,
+                  ::xercesc::DOMErrorHandler& h,
+                  ::xml_schema::flags f,
+                  const ::xml_schema::properties& p)
+      {
+        ::xsd::cxx::xml::sax::std_input_source isrc (is);
+        return ::schema::simxml::SimModelCore::Decomposes (isrc, h, f, p);
+      }
+
+      ::std::auto_ptr< ::xml_schema::idref >
+      Decomposes (::std::istream& is,
+                  const ::std::string& sid,
+                  ::xml_schema::flags f,
+                  const ::xml_schema::properties& p)
+      {
+        ::xsd::cxx::xml::auto_initializer i (
+          (f & ::xml_schema::flags::dont_initialize) == 0,
+          (f & ::xml_schema::flags::keep_dom) == 0);
+
+        ::xsd::cxx::xml::sax::std_input_source isrc (is, sid);
+        return ::schema::simxml::SimModelCore::Decomposes (isrc, f, p);
+      }
+
+      ::std::auto_ptr< ::xml_schema::idref >
+      Decomposes (::std::istream& is,
+                  const ::std::string& sid,
+                  ::xml_schema::error_handler& h,
+                  ::xml_schema::flags f,
+                  const ::xml_schema::properties& p)
+      {
+        ::xsd::cxx::xml::auto_initializer i (
+          (f & ::xml_schema::flags::dont_initialize) == 0,
+          (f & ::xml_schema::flags::keep_dom) == 0);
+
+        ::xsd::cxx::xml::sax::std_input_source isrc (is, sid);
+        return ::schema::simxml::SimModelCore::Decomposes (isrc, h, f, p);
+      }
+
+      ::std::auto_ptr< ::xml_schema::idref >
+      Decomposes (::std::istream& is,
+                  const ::std::string& sid,
+                  ::xercesc::DOMErrorHandler& h,
+                  ::xml_schema::flags f,
+                  const ::xml_schema::properties& p)
+      {
+        ::xsd::cxx::xml::sax::std_input_source isrc (is, sid);
+        return ::schema::simxml::SimModelCore::Decomposes (isrc, h, f, p);
+      }
+
+      ::std::auto_ptr< ::xml_schema::idref >
+      Decomposes (::xercesc::InputSource& i,
+                  ::xml_schema::flags f,
+                  const ::xml_schema::properties& p)
+      {
+        ::xsd::cxx::tree::error_handler< char > h;
+
+        ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
+          ::xsd::cxx::xml::dom::parse< char > (
+            i, h, p, f));
+
+        h.throw_if_failed< ::xsd::cxx::tree::parsing< char > > ();
+
+        return ::std::auto_ptr< ::xml_schema::idref > (
+          ::schema::simxml::SimModelCore::Decomposes (
+            d, f | ::xml_schema::flags::own_dom, p));
+      }
+
+      ::std::auto_ptr< ::xml_schema::idref >
+      Decomposes (::xercesc::InputSource& i,
+                  ::xml_schema::error_handler& h,
+                  ::xml_schema::flags f,
+                  const ::xml_schema::properties& p)
+      {
+        ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
+          ::xsd::cxx::xml::dom::parse< char > (
+            i, h, p, f));
+
+        if (!d.get ())
+          throw ::xsd::cxx::tree::parsing< char > ();
+
+        return ::std::auto_ptr< ::xml_schema::idref > (
+          ::schema::simxml::SimModelCore::Decomposes (
+            d, f | ::xml_schema::flags::own_dom, p));
+      }
+
+      ::std::auto_ptr< ::xml_schema::idref >
+      Decomposes (::xercesc::InputSource& i,
+                  ::xercesc::DOMErrorHandler& h,
+                  ::xml_schema::flags f,
+                  const ::xml_schema::properties& p)
+      {
+        ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
+          ::xsd::cxx::xml::dom::parse< char > (
+            i, h, p, f));
+
+        if (!d.get ())
+          throw ::xsd::cxx::tree::parsing< char > ();
+
+        return ::std::auto_ptr< ::xml_schema::idref > (
+          ::schema::simxml::SimModelCore::Decomposes (
+            d, f | ::xml_schema::flags::own_dom, p));
+      }
+
+      ::std::auto_ptr< ::xml_schema::idref >
+      Decomposes (const ::xercesc::DOMDocument& doc,
+                  ::xml_schema::flags f,
+                  const ::xml_schema::properties& p)
+      {
+        if (f & ::xml_schema::flags::keep_dom)
+        {
+          ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
+            static_cast< ::xercesc::DOMDocument* > (doc.cloneNode (true)));
+
+          return ::std::auto_ptr< ::xml_schema::idref > (
+            ::schema::simxml::SimModelCore::Decomposes (
+              d, f | ::xml_schema::flags::own_dom, p));
+        }
+
+        const ::xercesc::DOMElement& e (*doc.getDocumentElement ());
+        const ::xsd::cxx::xml::qualified_name< char > n (
+          ::xsd::cxx::xml::dom::name< char > (e));
+
+        if (n.name () == "Decomposes" &&
+            n.namespace_ () == "http://d-alchemy.com/schema/simxml/SimModelCore")
+        {
+          ::std::auto_ptr< ::xml_schema::idref > r (
+            ::xsd::cxx::tree::traits< ::xml_schema::idref, char >::create (
+              e, f, 0));
+          return r;
+        }
+
+        throw ::xsd::cxx::tree::unexpected_element < char > (
+          n.name (),
+          n.namespace_ (),
+          "Decomposes",
+          "http://d-alchemy.com/schema/simxml/SimModelCore");
+      }
+
+      ::std::auto_ptr< ::xml_schema::idref >
+      Decomposes (::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d,
+                  ::xml_schema::flags f,
+                  const ::xml_schema::properties&)
+      {
+        ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > c (
+          ((f & ::xml_schema::flags::keep_dom) &&
+           !(f & ::xml_schema::flags::own_dom))
+          ? static_cast< ::xercesc::DOMDocument* > (d->cloneNode (true))
+          : 0);
+
+        ::xercesc::DOMDocument& doc (c.get () ? *c : *d);
+        const ::xercesc::DOMElement& e (*doc.getDocumentElement ());
+
+        const ::xsd::cxx::xml::qualified_name< char > n (
+          ::xsd::cxx::xml::dom::name< char > (e));
+
+        if (f & ::xml_schema::flags::keep_dom)
+          doc.setUserData (::xml_schema::dom::tree_node_key,
+                           (c.get () ? &c : &d),
+                           0);
+
+        if (n.name () == "Decomposes" &&
+            n.namespace_ () == "http://d-alchemy.com/schema/simxml/SimModelCore")
+        {
+          ::std::auto_ptr< ::xml_schema::idref > r (
+            ::xsd::cxx::tree::traits< ::xml_schema::idref, char >::create (
+              e, f, 0));
+          return r;
+        }
+
+        throw ::xsd::cxx::tree::unexpected_element < char > (
+          n.name (),
+          n.namespace_ (),
+          "Decomposes",
+          "http://d-alchemy.com/schema/simxml/SimModelCore");
+      }
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::SelectedPropertyGroups >
+      SelectedPropertyGroups_ (const ::std::string& u,
+                               ::xml_schema::flags f,
+                               const ::xml_schema::properties& p)
+      {
+        ::xsd::cxx::xml::auto_initializer i (
+          (f & ::xml_schema::flags::dont_initialize) == 0,
+          (f & ::xml_schema::flags::keep_dom) == 0);
+
+        ::xsd::cxx::tree::error_handler< char > h;
+
+        ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
+          ::xsd::cxx::xml::dom::parse< char > (
+            u, h, p, f));
+
+        h.throw_if_failed< ::xsd::cxx::tree::parsing< char > > ();
+
+        return ::std::auto_ptr< ::schema::simxml::SimModelCore::SelectedPropertyGroups > (
+          ::schema::simxml::SimModelCore::SelectedPropertyGroups_ (
+            d, f | ::xml_schema::flags::own_dom, p));
+      }
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::SelectedPropertyGroups >
+      SelectedPropertyGroups_ (const ::std::string& u,
+                               ::xml_schema::error_handler& h,
+                               ::xml_schema::flags f,
+                               const ::xml_schema::properties& p)
+      {
+        ::xsd::cxx::xml::auto_initializer i (
+          (f & ::xml_schema::flags::dont_initialize) == 0,
+          (f & ::xml_schema::flags::keep_dom) == 0);
+
+        ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
+          ::xsd::cxx::xml::dom::parse< char > (
+            u, h, p, f));
+
+        if (!d.get ())
+          throw ::xsd::cxx::tree::parsing< char > ();
+
+        return ::std::auto_ptr< ::schema::simxml::SimModelCore::SelectedPropertyGroups > (
+          ::schema::simxml::SimModelCore::SelectedPropertyGroups_ (
+            d, f | ::xml_schema::flags::own_dom, p));
+      }
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::SelectedPropertyGroups >
+      SelectedPropertyGroups_ (const ::std::string& u,
+                               ::xercesc::DOMErrorHandler& h,
+                               ::xml_schema::flags f,
+                               const ::xml_schema::properties& p)
+      {
+        ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
+          ::xsd::cxx::xml::dom::parse< char > (
+            u, h, p, f));
+
+        if (!d.get ())
+          throw ::xsd::cxx::tree::parsing< char > ();
+
+        return ::std::auto_ptr< ::schema::simxml::SimModelCore::SelectedPropertyGroups > (
+          ::schema::simxml::SimModelCore::SelectedPropertyGroups_ (
+            d, f | ::xml_schema::flags::own_dom, p));
+      }
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::SelectedPropertyGroups >
+      SelectedPropertyGroups_ (::std::istream& is,
+                               ::xml_schema::flags f,
+                               const ::xml_schema::properties& p)
+      {
+        ::xsd::cxx::xml::auto_initializer i (
+          (f & ::xml_schema::flags::dont_initialize) == 0,
+          (f & ::xml_schema::flags::keep_dom) == 0);
+
+        ::xsd::cxx::xml::sax::std_input_source isrc (is);
+        return ::schema::simxml::SimModelCore::SelectedPropertyGroups_ (isrc, f, p);
+      }
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::SelectedPropertyGroups >
+      SelectedPropertyGroups_ (::std::istream& is,
+                               ::xml_schema::error_handler& h,
+                               ::xml_schema::flags f,
+                               const ::xml_schema::properties& p)
+      {
+        ::xsd::cxx::xml::auto_initializer i (
+          (f & ::xml_schema::flags::dont_initialize) == 0,
+          (f & ::xml_schema::flags::keep_dom) == 0);
+
+        ::xsd::cxx::xml::sax::std_input_source isrc (is);
+        return ::schema::simxml::SimModelCore::SelectedPropertyGroups_ (isrc, h, f, p);
+      }
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::SelectedPropertyGroups >
+      SelectedPropertyGroups_ (::std::istream& is,
+                               ::xercesc::DOMErrorHandler& h,
+                               ::xml_schema::flags f,
+                               const ::xml_schema::properties& p)
+      {
+        ::xsd::cxx::xml::sax::std_input_source isrc (is);
+        return ::schema::simxml::SimModelCore::SelectedPropertyGroups_ (isrc, h, f, p);
+      }
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::SelectedPropertyGroups >
+      SelectedPropertyGroups_ (::std::istream& is,
+                               const ::std::string& sid,
+                               ::xml_schema::flags f,
+                               const ::xml_schema::properties& p)
+      {
+        ::xsd::cxx::xml::auto_initializer i (
+          (f & ::xml_schema::flags::dont_initialize) == 0,
+          (f & ::xml_schema::flags::keep_dom) == 0);
+
+        ::xsd::cxx::xml::sax::std_input_source isrc (is, sid);
+        return ::schema::simxml::SimModelCore::SelectedPropertyGroups_ (isrc, f, p);
+      }
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::SelectedPropertyGroups >
+      SelectedPropertyGroups_ (::std::istream& is,
+                               const ::std::string& sid,
+                               ::xml_schema::error_handler& h,
+                               ::xml_schema::flags f,
+                               const ::xml_schema::properties& p)
+      {
+        ::xsd::cxx::xml::auto_initializer i (
+          (f & ::xml_schema::flags::dont_initialize) == 0,
+          (f & ::xml_schema::flags::keep_dom) == 0);
+
+        ::xsd::cxx::xml::sax::std_input_source isrc (is, sid);
+        return ::schema::simxml::SimModelCore::SelectedPropertyGroups_ (isrc, h, f, p);
+      }
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::SelectedPropertyGroups >
+      SelectedPropertyGroups_ (::std::istream& is,
+                               const ::std::string& sid,
+                               ::xercesc::DOMErrorHandler& h,
+                               ::xml_schema::flags f,
+                               const ::xml_schema::properties& p)
+      {
+        ::xsd::cxx::xml::sax::std_input_source isrc (is, sid);
+        return ::schema::simxml::SimModelCore::SelectedPropertyGroups_ (isrc, h, f, p);
+      }
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::SelectedPropertyGroups >
+      SelectedPropertyGroups_ (::xercesc::InputSource& i,
+                               ::xml_schema::flags f,
+                               const ::xml_schema::properties& p)
+      {
+        ::xsd::cxx::tree::error_handler< char > h;
+
+        ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
+          ::xsd::cxx::xml::dom::parse< char > (
+            i, h, p, f));
+
+        h.throw_if_failed< ::xsd::cxx::tree::parsing< char > > ();
+
+        return ::std::auto_ptr< ::schema::simxml::SimModelCore::SelectedPropertyGroups > (
+          ::schema::simxml::SimModelCore::SelectedPropertyGroups_ (
+            d, f | ::xml_schema::flags::own_dom, p));
+      }
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::SelectedPropertyGroups >
+      SelectedPropertyGroups_ (::xercesc::InputSource& i,
+                               ::xml_schema::error_handler& h,
+                               ::xml_schema::flags f,
+                               const ::xml_schema::properties& p)
+      {
+        ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
+          ::xsd::cxx::xml::dom::parse< char > (
+            i, h, p, f));
+
+        if (!d.get ())
+          throw ::xsd::cxx::tree::parsing< char > ();
+
+        return ::std::auto_ptr< ::schema::simxml::SimModelCore::SelectedPropertyGroups > (
+          ::schema::simxml::SimModelCore::SelectedPropertyGroups_ (
+            d, f | ::xml_schema::flags::own_dom, p));
+      }
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::SelectedPropertyGroups >
+      SelectedPropertyGroups_ (::xercesc::InputSource& i,
+                               ::xercesc::DOMErrorHandler& h,
+                               ::xml_schema::flags f,
+                               const ::xml_schema::properties& p)
+      {
+        ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
+          ::xsd::cxx::xml::dom::parse< char > (
+            i, h, p, f));
+
+        if (!d.get ())
+          throw ::xsd::cxx::tree::parsing< char > ();
+
+        return ::std::auto_ptr< ::schema::simxml::SimModelCore::SelectedPropertyGroups > (
+          ::schema::simxml::SimModelCore::SelectedPropertyGroups_ (
+            d, f | ::xml_schema::flags::own_dom, p));
+      }
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::SelectedPropertyGroups >
+      SelectedPropertyGroups_ (const ::xercesc::DOMDocument& doc,
+                               ::xml_schema::flags f,
+                               const ::xml_schema::properties& p)
+      {
+        if (f & ::xml_schema::flags::keep_dom)
+        {
+          ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
+            static_cast< ::xercesc::DOMDocument* > (doc.cloneNode (true)));
+
+          return ::std::auto_ptr< ::schema::simxml::SimModelCore::SelectedPropertyGroups > (
+            ::schema::simxml::SimModelCore::SelectedPropertyGroups_ (
+              d, f | ::xml_schema::flags::own_dom, p));
+        }
+
+        const ::xercesc::DOMElement& e (*doc.getDocumentElement ());
+        const ::xsd::cxx::xml::qualified_name< char > n (
+          ::xsd::cxx::xml::dom::name< char > (e));
+
+        if (n.name () == "SelectedPropertyGroups" &&
+            n.namespace_ () == "http://d-alchemy.com/schema/simxml/SimModelCore")
+        {
+          ::std::auto_ptr< ::schema::simxml::SimModelCore::SelectedPropertyGroups > r (
+            ::xsd::cxx::tree::traits< ::schema::simxml::SimModelCore::SelectedPropertyGroups, char >::create (
+              e, f, 0));
+          return r;
+        }
+
+        throw ::xsd::cxx::tree::unexpected_element < char > (
+          n.name (),
+          n.namespace_ (),
+          "SelectedPropertyGroups",
+          "http://d-alchemy.com/schema/simxml/SimModelCore");
+      }
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::SelectedPropertyGroups >
+      SelectedPropertyGroups_ (::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d,
+                               ::xml_schema::flags f,
+                               const ::xml_schema::properties&)
+      {
+        ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > c (
+          ((f & ::xml_schema::flags::keep_dom) &&
+           !(f & ::xml_schema::flags::own_dom))
+          ? static_cast< ::xercesc::DOMDocument* > (d->cloneNode (true))
+          : 0);
+
+        ::xercesc::DOMDocument& doc (c.get () ? *c : *d);
+        const ::xercesc::DOMElement& e (*doc.getDocumentElement ());
+
+        const ::xsd::cxx::xml::qualified_name< char > n (
+          ::xsd::cxx::xml::dom::name< char > (e));
+
+        if (f & ::xml_schema::flags::keep_dom)
+          doc.setUserData (::xml_schema::dom::tree_node_key,
+                           (c.get () ? &c : &d),
+                           0);
+
+        if (n.name () == "SelectedPropertyGroups" &&
+            n.namespace_ () == "http://d-alchemy.com/schema/simxml/SimModelCore")
+        {
+          ::std::auto_ptr< ::schema::simxml::SimModelCore::SelectedPropertyGroups > r (
+            ::xsd::cxx::tree::traits< ::schema::simxml::SimModelCore::SelectedPropertyGroups, char >::create (
+              e, f, 0));
+          return r;
+        }
+
+        throw ::xsd::cxx::tree::unexpected_element < char > (
+          n.name (),
+          n.namespace_ (),
+          "SelectedPropertyGroups",
+          "http://d-alchemy.com/schema/simxml/SimModelCore");
+      }
+
       ::std::auto_ptr< ::xml_schema::boolean >
       IsTemplateObject (const ::std::string& u,
                         ::xml_schema::flags f,
@@ -15542,272 +15276,6 @@ namespace schema
           n.name (),
           n.namespace_ (),
           "IsTemplateObject",
-          "http://d-alchemy.com/schema/simxml/SimModelCore");
-      }
-
-      ::std::auto_ptr< ::xml_schema::idref >
-      Decomposes (const ::std::string& u,
-                  ::xml_schema::flags f,
-                  const ::xml_schema::properties& p)
-      {
-        ::xsd::cxx::xml::auto_initializer i (
-          (f & ::xml_schema::flags::dont_initialize) == 0,
-          (f & ::xml_schema::flags::keep_dom) == 0);
-
-        ::xsd::cxx::tree::error_handler< char > h;
-
-        ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
-          ::xsd::cxx::xml::dom::parse< char > (
-            u, h, p, f));
-
-        h.throw_if_failed< ::xsd::cxx::tree::parsing< char > > ();
-
-        return ::std::auto_ptr< ::xml_schema::idref > (
-          ::schema::simxml::SimModelCore::Decomposes (
-            d, f | ::xml_schema::flags::own_dom, p));
-      }
-
-      ::std::auto_ptr< ::xml_schema::idref >
-      Decomposes (const ::std::string& u,
-                  ::xml_schema::error_handler& h,
-                  ::xml_schema::flags f,
-                  const ::xml_schema::properties& p)
-      {
-        ::xsd::cxx::xml::auto_initializer i (
-          (f & ::xml_schema::flags::dont_initialize) == 0,
-          (f & ::xml_schema::flags::keep_dom) == 0);
-
-        ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
-          ::xsd::cxx::xml::dom::parse< char > (
-            u, h, p, f));
-
-        if (!d.get ())
-          throw ::xsd::cxx::tree::parsing< char > ();
-
-        return ::std::auto_ptr< ::xml_schema::idref > (
-          ::schema::simxml::SimModelCore::Decomposes (
-            d, f | ::xml_schema::flags::own_dom, p));
-      }
-
-      ::std::auto_ptr< ::xml_schema::idref >
-      Decomposes (const ::std::string& u,
-                  ::xercesc::DOMErrorHandler& h,
-                  ::xml_schema::flags f,
-                  const ::xml_schema::properties& p)
-      {
-        ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
-          ::xsd::cxx::xml::dom::parse< char > (
-            u, h, p, f));
-
-        if (!d.get ())
-          throw ::xsd::cxx::tree::parsing< char > ();
-
-        return ::std::auto_ptr< ::xml_schema::idref > (
-          ::schema::simxml::SimModelCore::Decomposes (
-            d, f | ::xml_schema::flags::own_dom, p));
-      }
-
-      ::std::auto_ptr< ::xml_schema::idref >
-      Decomposes (::std::istream& is,
-                  ::xml_schema::flags f,
-                  const ::xml_schema::properties& p)
-      {
-        ::xsd::cxx::xml::auto_initializer i (
-          (f & ::xml_schema::flags::dont_initialize) == 0,
-          (f & ::xml_schema::flags::keep_dom) == 0);
-
-        ::xsd::cxx::xml::sax::std_input_source isrc (is);
-        return ::schema::simxml::SimModelCore::Decomposes (isrc, f, p);
-      }
-
-      ::std::auto_ptr< ::xml_schema::idref >
-      Decomposes (::std::istream& is,
-                  ::xml_schema::error_handler& h,
-                  ::xml_schema::flags f,
-                  const ::xml_schema::properties& p)
-      {
-        ::xsd::cxx::xml::auto_initializer i (
-          (f & ::xml_schema::flags::dont_initialize) == 0,
-          (f & ::xml_schema::flags::keep_dom) == 0);
-
-        ::xsd::cxx::xml::sax::std_input_source isrc (is);
-        return ::schema::simxml::SimModelCore::Decomposes (isrc, h, f, p);
-      }
-
-      ::std::auto_ptr< ::xml_schema::idref >
-      Decomposes (::std::istream& is,
-                  ::xercesc::DOMErrorHandler& h,
-                  ::xml_schema::flags f,
-                  const ::xml_schema::properties& p)
-      {
-        ::xsd::cxx::xml::sax::std_input_source isrc (is);
-        return ::schema::simxml::SimModelCore::Decomposes (isrc, h, f, p);
-      }
-
-      ::std::auto_ptr< ::xml_schema::idref >
-      Decomposes (::std::istream& is,
-                  const ::std::string& sid,
-                  ::xml_schema::flags f,
-                  const ::xml_schema::properties& p)
-      {
-        ::xsd::cxx::xml::auto_initializer i (
-          (f & ::xml_schema::flags::dont_initialize) == 0,
-          (f & ::xml_schema::flags::keep_dom) == 0);
-
-        ::xsd::cxx::xml::sax::std_input_source isrc (is, sid);
-        return ::schema::simxml::SimModelCore::Decomposes (isrc, f, p);
-      }
-
-      ::std::auto_ptr< ::xml_schema::idref >
-      Decomposes (::std::istream& is,
-                  const ::std::string& sid,
-                  ::xml_schema::error_handler& h,
-                  ::xml_schema::flags f,
-                  const ::xml_schema::properties& p)
-      {
-        ::xsd::cxx::xml::auto_initializer i (
-          (f & ::xml_schema::flags::dont_initialize) == 0,
-          (f & ::xml_schema::flags::keep_dom) == 0);
-
-        ::xsd::cxx::xml::sax::std_input_source isrc (is, sid);
-        return ::schema::simxml::SimModelCore::Decomposes (isrc, h, f, p);
-      }
-
-      ::std::auto_ptr< ::xml_schema::idref >
-      Decomposes (::std::istream& is,
-                  const ::std::string& sid,
-                  ::xercesc::DOMErrorHandler& h,
-                  ::xml_schema::flags f,
-                  const ::xml_schema::properties& p)
-      {
-        ::xsd::cxx::xml::sax::std_input_source isrc (is, sid);
-        return ::schema::simxml::SimModelCore::Decomposes (isrc, h, f, p);
-      }
-
-      ::std::auto_ptr< ::xml_schema::idref >
-      Decomposes (::xercesc::InputSource& i,
-                  ::xml_schema::flags f,
-                  const ::xml_schema::properties& p)
-      {
-        ::xsd::cxx::tree::error_handler< char > h;
-
-        ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
-          ::xsd::cxx::xml::dom::parse< char > (
-            i, h, p, f));
-
-        h.throw_if_failed< ::xsd::cxx::tree::parsing< char > > ();
-
-        return ::std::auto_ptr< ::xml_schema::idref > (
-          ::schema::simxml::SimModelCore::Decomposes (
-            d, f | ::xml_schema::flags::own_dom, p));
-      }
-
-      ::std::auto_ptr< ::xml_schema::idref >
-      Decomposes (::xercesc::InputSource& i,
-                  ::xml_schema::error_handler& h,
-                  ::xml_schema::flags f,
-                  const ::xml_schema::properties& p)
-      {
-        ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
-          ::xsd::cxx::xml::dom::parse< char > (
-            i, h, p, f));
-
-        if (!d.get ())
-          throw ::xsd::cxx::tree::parsing< char > ();
-
-        return ::std::auto_ptr< ::xml_schema::idref > (
-          ::schema::simxml::SimModelCore::Decomposes (
-            d, f | ::xml_schema::flags::own_dom, p));
-      }
-
-      ::std::auto_ptr< ::xml_schema::idref >
-      Decomposes (::xercesc::InputSource& i,
-                  ::xercesc::DOMErrorHandler& h,
-                  ::xml_schema::flags f,
-                  const ::xml_schema::properties& p)
-      {
-        ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
-          ::xsd::cxx::xml::dom::parse< char > (
-            i, h, p, f));
-
-        if (!d.get ())
-          throw ::xsd::cxx::tree::parsing< char > ();
-
-        return ::std::auto_ptr< ::xml_schema::idref > (
-          ::schema::simxml::SimModelCore::Decomposes (
-            d, f | ::xml_schema::flags::own_dom, p));
-      }
-
-      ::std::auto_ptr< ::xml_schema::idref >
-      Decomposes (const ::xercesc::DOMDocument& doc,
-                  ::xml_schema::flags f,
-                  const ::xml_schema::properties& p)
-      {
-        if (f & ::xml_schema::flags::keep_dom)
-        {
-          ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
-            static_cast< ::xercesc::DOMDocument* > (doc.cloneNode (true)));
-
-          return ::std::auto_ptr< ::xml_schema::idref > (
-            ::schema::simxml::SimModelCore::Decomposes (
-              d, f | ::xml_schema::flags::own_dom, p));
-        }
-
-        const ::xercesc::DOMElement& e (*doc.getDocumentElement ());
-        const ::xsd::cxx::xml::qualified_name< char > n (
-          ::xsd::cxx::xml::dom::name< char > (e));
-
-        if (n.name () == "Decomposes" &&
-            n.namespace_ () == "http://d-alchemy.com/schema/simxml/SimModelCore")
-        {
-          ::std::auto_ptr< ::xml_schema::idref > r (
-            ::xsd::cxx::tree::traits< ::xml_schema::idref, char >::create (
-              e, f, 0));
-          return r;
-        }
-
-        throw ::xsd::cxx::tree::unexpected_element < char > (
-          n.name (),
-          n.namespace_ (),
-          "Decomposes",
-          "http://d-alchemy.com/schema/simxml/SimModelCore");
-      }
-
-      ::std::auto_ptr< ::xml_schema::idref >
-      Decomposes (::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d,
-                  ::xml_schema::flags f,
-                  const ::xml_schema::properties&)
-      {
-        ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > c (
-          ((f & ::xml_schema::flags::keep_dom) &&
-           !(f & ::xml_schema::flags::own_dom))
-          ? static_cast< ::xercesc::DOMDocument* > (d->cloneNode (true))
-          : 0);
-
-        ::xercesc::DOMDocument& doc (c.get () ? *c : *d);
-        const ::xercesc::DOMElement& e (*doc.getDocumentElement ());
-
-        const ::xsd::cxx::xml::qualified_name< char > n (
-          ::xsd::cxx::xml::dom::name< char > (e));
-
-        if (f & ::xml_schema::flags::keep_dom)
-          doc.setUserData (::xml_schema::dom::tree_node_key,
-                           (c.get () ? &c : &d),
-                           0);
-
-        if (n.name () == "Decomposes" &&
-            n.namespace_ () == "http://d-alchemy.com/schema/simxml/SimModelCore")
-        {
-          ::std::auto_ptr< ::xml_schema::idref > r (
-            ::xsd::cxx::tree::traits< ::xml_schema::idref, char >::create (
-              e, f, 0));
-          return r;
-        }
-
-        throw ::xsd::cxx::tree::unexpected_element < char > (
-          n.name (),
-          n.namespace_ (),
-          "Decomposes",
           "http://d-alchemy.com/schema/simxml/SimModelCore");
       }
 

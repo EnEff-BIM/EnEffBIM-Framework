@@ -8,6 +8,8 @@
 using namespace xsd::cxx::tree;
 %}
 
+%ignore xsd::cxx::tree::sequence<::schema::simxml::ResourcesGeometry::SimConnectedFaceSet_ConnectedFaceSet_ClosedShell, false>::getValue(int n);
+
 //3. class auto ptr
 %auto_ptr(::schema::simxml::ResourcesGeometry::SimConnectedFaceSet_ConnectedFaceSet_ClosedShell)
 

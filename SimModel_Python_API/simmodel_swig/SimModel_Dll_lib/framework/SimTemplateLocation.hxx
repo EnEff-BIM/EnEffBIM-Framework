@@ -50,7 +50,7 @@
 #include <xsd/cxx/config.hxx>
 
 #if (XSD_INT_VERSION != 4000000L)
-#error XSD runtime version mismatch
+//#error XSD runtime version mismatch
 #endif
 
 #include <xsd/cxx/pre.hxx>
@@ -449,6 +449,27 @@ namespace schema
         void
         TemplateUtilityCosts (::std::auto_ptr< TemplateUtilityCosts_type > p);
 
+        // TemplateLifeCycleCosts
+        //
+        typedef ::xml_schema::idrefs TemplateLifeCycleCosts_type;
+        typedef ::xsd::cxx::tree::optional< TemplateLifeCycleCosts_type, false > TemplateLifeCycleCosts_optional;
+        typedef ::xsd::cxx::tree::traits< TemplateLifeCycleCosts_type, char > TemplateLifeCycleCosts_traits;
+
+        const TemplateLifeCycleCosts_optional&
+        TemplateLifeCycleCosts () const;
+
+        TemplateLifeCycleCosts_optional&
+        TemplateLifeCycleCosts ();
+
+        void
+        TemplateLifeCycleCosts (const TemplateLifeCycleCosts_type& x);
+
+        void
+        TemplateLifeCycleCosts (const TemplateLifeCycleCosts_optional& x);
+
+        void
+        TemplateLifeCycleCosts (::std::auto_ptr< TemplateLifeCycleCosts_type > p);
+
         // Constructors.
         //
         SimTemplateLocation ();
@@ -490,6 +511,7 @@ namespace schema
         TemplateSummerDesignDays_optional TemplateSummerDesignDays_;
         TemplateWinterDesignDays_optional TemplateWinterDesignDays_;
         TemplateUtilityCosts_optional TemplateUtilityCosts_;
+        TemplateLifeCycleCosts_optional TemplateLifeCycleCosts_;
       };
     }
   }

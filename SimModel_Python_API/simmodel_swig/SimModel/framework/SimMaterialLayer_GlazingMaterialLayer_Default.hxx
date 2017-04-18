@@ -260,6 +260,66 @@ namespace schema
       class SimMaterialLayer_GlazingMaterialLayer_Default: public ::schema::simxml::ResourcesGeneral::SimMaterialLayer_GlazingMaterialLayer
       {
         public:
+        // SimMatLayer_MaterialLayerName
+        //
+        typedef ::xml_schema::string SimMatLayer_MaterialLayerName_type;
+        typedef ::xsd::cxx::tree::optional< SimMatLayer_MaterialLayerName_type, false > SimMatLayer_MaterialLayerName_optional;
+        typedef ::xsd::cxx::tree::traits< SimMatLayer_MaterialLayerName_type, char > SimMatLayer_MaterialLayerName_traits;
+
+        const SimMatLayer_MaterialLayerName_optional&
+        SimMatLayer_MaterialLayerName () const;
+
+        SimMatLayer_MaterialLayerName_optional&
+        SimMatLayer_MaterialLayerName ();
+
+        void
+        SimMatLayer_MaterialLayerName (const SimMatLayer_MaterialLayerName_type& x);
+
+        void
+        SimMatLayer_MaterialLayerName (const SimMatLayer_MaterialLayerName_optional& x);
+
+        void
+        SimMatLayer_MaterialLayerName (::std::auto_ptr< SimMatLayer_MaterialLayerName_type > p);
+
+        // SimMatLayer_MaterialName
+        //
+        typedef ::xml_schema::idref SimMatLayer_MaterialName_type;
+        typedef ::xsd::cxx::tree::optional< SimMatLayer_MaterialName_type, false > SimMatLayer_MaterialName_optional;
+        typedef ::xsd::cxx::tree::traits< SimMatLayer_MaterialName_type, char > SimMatLayer_MaterialName_traits;
+
+        const SimMatLayer_MaterialName_optional&
+        SimMatLayer_MaterialName () const;
+
+        SimMatLayer_MaterialName_optional&
+        SimMatLayer_MaterialName ();
+
+        void
+        SimMatLayer_MaterialName (const SimMatLayer_MaterialName_type& x);
+
+        void
+        SimMatLayer_MaterialName (const SimMatLayer_MaterialName_optional& x);
+
+        void
+        SimMatLayer_MaterialName (::std::auto_ptr< SimMatLayer_MaterialName_type > p);
+
+        // SimMatLayer_LayerThickness
+        //
+        typedef ::xml_schema::double_ SimMatLayer_LayerThickness_type;
+        typedef ::xsd::cxx::tree::optional< SimMatLayer_LayerThickness_type, true > SimMatLayer_LayerThickness_optional;
+        typedef ::xsd::cxx::tree::traits< SimMatLayer_LayerThickness_type, char, ::xsd::cxx::tree::schema_type::double_ > SimMatLayer_LayerThickness_traits;
+
+        const SimMatLayer_LayerThickness_optional&
+        SimMatLayer_LayerThickness () const;
+
+        SimMatLayer_LayerThickness_optional&
+        SimMatLayer_LayerThickness ();
+
+        void
+        SimMatLayer_LayerThickness (const SimMatLayer_LayerThickness_type& x);
+
+        void
+        SimMatLayer_LayerThickness (const SimMatLayer_LayerThickness_optional& x);
+
         // Constructors.
         //
         SimMaterialLayer_GlazingMaterialLayer_Default ();
@@ -278,8 +338,23 @@ namespace schema
         _clone (::xml_schema::flags f = 0,
                 ::xml_schema::container* c = 0) const;
 
+        SimMaterialLayer_GlazingMaterialLayer_Default&
+        operator= (const SimMaterialLayer_GlazingMaterialLayer_Default& x);
+
         virtual 
         ~SimMaterialLayer_GlazingMaterialLayer_Default ();
+
+        // Implementation.
+        //
+        protected:
+        void
+        parse (::xsd::cxx::xml::dom::parser< char >&,
+               ::xml_schema::flags);
+
+        protected:
+        SimMatLayer_MaterialLayerName_optional SimMatLayer_MaterialLayerName_;
+        SimMatLayer_MaterialName_optional SimMatLayer_MaterialName_;
+        SimMatLayer_LayerThickness_optional SimMatLayer_LayerThickness_;
       };
     }
   }

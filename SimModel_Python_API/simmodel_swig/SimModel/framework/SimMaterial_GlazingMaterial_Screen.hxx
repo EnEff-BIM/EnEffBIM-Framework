@@ -260,6 +260,27 @@ namespace schema
       class SimMaterial_GlazingMaterial_Screen: public ::schema::simxml::ResourcesGeneral::SimMaterial_GlazingMaterial
       {
         public:
+        // SimMaterial_Name
+        //
+        typedef ::xml_schema::string SimMaterial_Name_type;
+        typedef ::xsd::cxx::tree::optional< SimMaterial_Name_type > SimMaterial_Name_optional;
+        typedef ::xsd::cxx::tree::traits< SimMaterial_Name_type, char > SimMaterial_Name_traits;
+
+        const SimMaterial_Name_optional&
+        SimMaterial_Name () const;
+
+        SimMaterial_Name_optional&
+        SimMaterial_Name ();
+
+        void
+        SimMaterial_Name (const SimMaterial_Name_type& x);
+
+        void
+        SimMaterial_Name (const SimMaterial_Name_optional& x);
+
+        void
+        SimMaterial_Name (::std::auto_ptr< SimMaterial_Name_type > p);
+
         // SimMaterial_Cond
         //
         typedef ::xml_schema::double_ SimMaterial_Cond_type;
@@ -529,6 +550,7 @@ namespace schema
                ::xml_schema::flags);
 
         protected:
+        SimMaterial_Name_optional SimMaterial_Name_;
         SimMaterial_Cond_optional SimMaterial_Cond_;
         SimMaterial_TopOpngMult_optional SimMaterial_TopOpngMult_;
         SimMaterial_BotOpngMult_optional SimMaterial_BotOpngMult_;

@@ -302,27 +302,6 @@ namespace schema
         void
         Name (::std::auto_ptr< Name_type > p);
 
-        // Roles
-        //
-        typedef ::xml_schema::idrefs Roles_type;
-        typedef ::xsd::cxx::tree::optional< Roles_type > Roles_optional;
-        typedef ::xsd::cxx::tree::traits< Roles_type, char > Roles_traits;
-
-        const Roles_optional&
-        Roles () const;
-
-        Roles_optional&
-        Roles ();
-
-        void
-        Roles (const Roles_type& x);
-
-        void
-        Roles (const Roles_optional& x);
-
-        void
-        Roles (::std::auto_ptr< Roles_type > p);
-
         // Addresses
         //
         typedef ::xml_schema::idrefs Addresses_type;
@@ -343,6 +322,27 @@ namespace schema
 
         void
         Addresses (::std::auto_ptr< Addresses_type > p);
+
+        // ActorPersonAndOrganization
+        //
+        typedef ::xml_schema::idref ActorPersonAndOrganization_type;
+        typedef ::xsd::cxx::tree::optional< ActorPersonAndOrganization_type, false > ActorPersonAndOrganization_optional;
+        typedef ::xsd::cxx::tree::traits< ActorPersonAndOrganization_type, char > ActorPersonAndOrganization_traits;
+
+        const ActorPersonAndOrganization_optional&
+        ActorPersonAndOrganization () const;
+
+        ActorPersonAndOrganization_optional&
+        ActorPersonAndOrganization ();
+
+        void
+        ActorPersonAndOrganization (const ActorPersonAndOrganization_type& x);
+
+        void
+        ActorPersonAndOrganization (const ActorPersonAndOrganization_optional& x);
+
+        void
+        ActorPersonAndOrganization (::std::auto_ptr< ActorPersonAndOrganization_type > p);
 
         // Constructors.
         //
@@ -378,8 +378,8 @@ namespace schema
         protected:
         Id_optional Id_;
         Name_optional Name_;
-        Roles_optional Roles_;
         Addresses_optional Addresses_;
+        ActorPersonAndOrganization_optional ActorPersonAndOrganization_;
       };
     }
   }

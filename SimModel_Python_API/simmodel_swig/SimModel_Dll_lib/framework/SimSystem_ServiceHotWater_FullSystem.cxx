@@ -681,6 +681,30 @@ namespace schema
         this->SimSys_PresSimType_.set (x);
       }
 
+      const SimSystem_ServiceHotWater_FullSystem::T24AnnualSolarFraction_optional& SimSystem_ServiceHotWater_FullSystem::
+      T24AnnualSolarFraction () const
+      {
+        return this->T24AnnualSolarFraction_;
+      }
+
+      SimSystem_ServiceHotWater_FullSystem::T24AnnualSolarFraction_optional& SimSystem_ServiceHotWater_FullSystem::
+      T24AnnualSolarFraction ()
+      {
+        return this->T24AnnualSolarFraction_;
+      }
+
+      void SimSystem_ServiceHotWater_FullSystem::
+      T24AnnualSolarFraction (const T24AnnualSolarFraction_type& x)
+      {
+        this->T24AnnualSolarFraction_.set (x);
+      }
+
+      void SimSystem_ServiceHotWater_FullSystem::
+      T24AnnualSolarFraction (const T24AnnualSolarFraction_optional& x)
+      {
+        this->T24AnnualSolarFraction_ = x;
+      }
+
       const SimSystem_ServiceHotWater_FullSystem::T24FluidSysCntrlType_optional& SimSystem_ServiceHotWater_FullSystem::
       T24FluidSysCntrlType () const
       {
@@ -711,172 +735,412 @@ namespace schema
         this->T24FluidSysCntrlType_.set (x);
       }
 
-      const SimSystem_ServiceHotWater_FullSystem::T24Mch08A_optional& SimSystem_ServiceHotWater_FullSystem::
-      T24Mch08A () const
+      const SimSystem_ServiceHotWater_FullSystem::T24NRCAMch02A_optional& SimSystem_ServiceHotWater_FullSystem::
+      T24NRCAMch02A () const
       {
-        return this->T24Mch08A_;
+        return this->T24NRCAMch02A_;
       }
 
-      SimSystem_ServiceHotWater_FullSystem::T24Mch08A_optional& SimSystem_ServiceHotWater_FullSystem::
-      T24Mch08A ()
+      SimSystem_ServiceHotWater_FullSystem::T24NRCAMch02A_optional& SimSystem_ServiceHotWater_FullSystem::
+      T24NRCAMch02A ()
       {
-        return this->T24Mch08A_;
-      }
-
-      void SimSystem_ServiceHotWater_FullSystem::
-      T24Mch08A (const T24Mch08A_type& x)
-      {
-        this->T24Mch08A_.set (x);
+        return this->T24NRCAMch02A_;
       }
 
       void SimSystem_ServiceHotWater_FullSystem::
-      T24Mch08A (const T24Mch08A_optional& x)
+      T24NRCAMch02A (const T24NRCAMch02A_type& x)
       {
-        this->T24Mch08A_ = x;
-      }
-
-      const SimSystem_ServiceHotWater_FullSystem::T24Mch09A_optional& SimSystem_ServiceHotWater_FullSystem::
-      T24Mch09A () const
-      {
-        return this->T24Mch09A_;
-      }
-
-      SimSystem_ServiceHotWater_FullSystem::T24Mch09A_optional& SimSystem_ServiceHotWater_FullSystem::
-      T24Mch09A ()
-      {
-        return this->T24Mch09A_;
+        this->T24NRCAMch02A_.set (x);
       }
 
       void SimSystem_ServiceHotWater_FullSystem::
-      T24Mch09A (const T24Mch09A_type& x)
+      T24NRCAMch02A (const T24NRCAMch02A_optional& x)
       {
-        this->T24Mch09A_.set (x);
+        this->T24NRCAMch02A_ = x;
+      }
+
+      const SimSystem_ServiceHotWater_FullSystem::T24NRCAMch03A_optional& SimSystem_ServiceHotWater_FullSystem::
+      T24NRCAMch03A () const
+      {
+        return this->T24NRCAMch03A_;
+      }
+
+      SimSystem_ServiceHotWater_FullSystem::T24NRCAMch03A_optional& SimSystem_ServiceHotWater_FullSystem::
+      T24NRCAMch03A ()
+      {
+        return this->T24NRCAMch03A_;
       }
 
       void SimSystem_ServiceHotWater_FullSystem::
-      T24Mch09A (const T24Mch09A_optional& x)
+      T24NRCAMch03A (const T24NRCAMch03A_type& x)
       {
-        this->T24Mch09A_ = x;
-      }
-
-      const SimSystem_ServiceHotWater_FullSystem::T24Mch10A_optional& SimSystem_ServiceHotWater_FullSystem::
-      T24Mch10A () const
-      {
-        return this->T24Mch10A_;
-      }
-
-      SimSystem_ServiceHotWater_FullSystem::T24Mch10A_optional& SimSystem_ServiceHotWater_FullSystem::
-      T24Mch10A ()
-      {
-        return this->T24Mch10A_;
+        this->T24NRCAMch03A_.set (x);
       }
 
       void SimSystem_ServiceHotWater_FullSystem::
-      T24Mch10A (const T24Mch10A_type& x)
+      T24NRCAMch03A (const T24NRCAMch03A_optional& x)
       {
-        this->T24Mch10A_.set (x);
+        this->T24NRCAMch03A_ = x;
+      }
+
+      const SimSystem_ServiceHotWater_FullSystem::T24NRCAMch04A_optional& SimSystem_ServiceHotWater_FullSystem::
+      T24NRCAMch04A () const
+      {
+        return this->T24NRCAMch04A_;
+      }
+
+      SimSystem_ServiceHotWater_FullSystem::T24NRCAMch04A_optional& SimSystem_ServiceHotWater_FullSystem::
+      T24NRCAMch04A ()
+      {
+        return this->T24NRCAMch04A_;
       }
 
       void SimSystem_ServiceHotWater_FullSystem::
-      T24Mch10A (const T24Mch10A_optional& x)
+      T24NRCAMch04A (const T24NRCAMch04A_type& x)
       {
-        this->T24Mch10A_ = x;
-      }
-
-      const SimSystem_ServiceHotWater_FullSystem::T24Mch11A_optional& SimSystem_ServiceHotWater_FullSystem::
-      T24Mch11A () const
-      {
-        return this->T24Mch11A_;
-      }
-
-      SimSystem_ServiceHotWater_FullSystem::T24Mch11A_optional& SimSystem_ServiceHotWater_FullSystem::
-      T24Mch11A ()
-      {
-        return this->T24Mch11A_;
+        this->T24NRCAMch04A_.set (x);
       }
 
       void SimSystem_ServiceHotWater_FullSystem::
-      T24Mch11A (const T24Mch11A_type& x)
+      T24NRCAMch04A (const T24NRCAMch04A_optional& x)
       {
-        this->T24Mch11A_.set (x);
+        this->T24NRCAMch04A_ = x;
+      }
+
+      const SimSystem_ServiceHotWater_FullSystem::T24NRCAMch05A_optional& SimSystem_ServiceHotWater_FullSystem::
+      T24NRCAMch05A () const
+      {
+        return this->T24NRCAMch05A_;
+      }
+
+      SimSystem_ServiceHotWater_FullSystem::T24NRCAMch05A_optional& SimSystem_ServiceHotWater_FullSystem::
+      T24NRCAMch05A ()
+      {
+        return this->T24NRCAMch05A_;
       }
 
       void SimSystem_ServiceHotWater_FullSystem::
-      T24Mch11A (const T24Mch11A_optional& x)
+      T24NRCAMch05A (const T24NRCAMch05A_type& x)
       {
-        this->T24Mch11A_ = x;
-      }
-
-      const SimSystem_ServiceHotWater_FullSystem::T24Mch15A_optional& SimSystem_ServiceHotWater_FullSystem::
-      T24Mch15A () const
-      {
-        return this->T24Mch15A_;
-      }
-
-      SimSystem_ServiceHotWater_FullSystem::T24Mch15A_optional& SimSystem_ServiceHotWater_FullSystem::
-      T24Mch15A ()
-      {
-        return this->T24Mch15A_;
+        this->T24NRCAMch05A_.set (x);
       }
 
       void SimSystem_ServiceHotWater_FullSystem::
-      T24Mch15A (const T24Mch15A_type& x)
+      T24NRCAMch05A (const T24NRCAMch05A_optional& x)
       {
-        this->T24Mch15A_.set (x);
+        this->T24NRCAMch05A_ = x;
+      }
+
+      const SimSystem_ServiceHotWater_FullSystem::T24NRCAMch06A_optional& SimSystem_ServiceHotWater_FullSystem::
+      T24NRCAMch06A () const
+      {
+        return this->T24NRCAMch06A_;
+      }
+
+      SimSystem_ServiceHotWater_FullSystem::T24NRCAMch06A_optional& SimSystem_ServiceHotWater_FullSystem::
+      T24NRCAMch06A ()
+      {
+        return this->T24NRCAMch06A_;
       }
 
       void SimSystem_ServiceHotWater_FullSystem::
-      T24Mch15A (const T24Mch15A_optional& x)
+      T24NRCAMch06A (const T24NRCAMch06A_type& x)
       {
-        this->T24Mch15A_ = x;
-      }
-
-      const SimSystem_ServiceHotWater_FullSystem::T24Mch17A_optional& SimSystem_ServiceHotWater_FullSystem::
-      T24Mch17A () const
-      {
-        return this->T24Mch17A_;
-      }
-
-      SimSystem_ServiceHotWater_FullSystem::T24Mch17A_optional& SimSystem_ServiceHotWater_FullSystem::
-      T24Mch17A ()
-      {
-        return this->T24Mch17A_;
+        this->T24NRCAMch06A_.set (x);
       }
 
       void SimSystem_ServiceHotWater_FullSystem::
-      T24Mch17A (const T24Mch17A_type& x)
+      T24NRCAMch06A (const T24NRCAMch06A_optional& x)
       {
-        this->T24Mch17A_.set (x);
+        this->T24NRCAMch06A_ = x;
+      }
+
+      const SimSystem_ServiceHotWater_FullSystem::T24NRCAMch07A_optional& SimSystem_ServiceHotWater_FullSystem::
+      T24NRCAMch07A () const
+      {
+        return this->T24NRCAMch07A_;
+      }
+
+      SimSystem_ServiceHotWater_FullSystem::T24NRCAMch07A_optional& SimSystem_ServiceHotWater_FullSystem::
+      T24NRCAMch07A ()
+      {
+        return this->T24NRCAMch07A_;
       }
 
       void SimSystem_ServiceHotWater_FullSystem::
-      T24Mch17A (const T24Mch17A_optional& x)
+      T24NRCAMch07A (const T24NRCAMch07A_type& x)
       {
-        this->T24Mch17A_ = x;
-      }
-
-      const SimSystem_ServiceHotWater_FullSystem::T24Mch18A_optional& SimSystem_ServiceHotWater_FullSystem::
-      T24Mch18A () const
-      {
-        return this->T24Mch18A_;
-      }
-
-      SimSystem_ServiceHotWater_FullSystem::T24Mch18A_optional& SimSystem_ServiceHotWater_FullSystem::
-      T24Mch18A ()
-      {
-        return this->T24Mch18A_;
+        this->T24NRCAMch07A_.set (x);
       }
 
       void SimSystem_ServiceHotWater_FullSystem::
-      T24Mch18A (const T24Mch18A_type& x)
+      T24NRCAMch07A (const T24NRCAMch07A_optional& x)
       {
-        this->T24Mch18A_.set (x);
+        this->T24NRCAMch07A_ = x;
+      }
+
+      const SimSystem_ServiceHotWater_FullSystem::T24NRCAMch08A_optional& SimSystem_ServiceHotWater_FullSystem::
+      T24NRCAMch08A () const
+      {
+        return this->T24NRCAMch08A_;
+      }
+
+      SimSystem_ServiceHotWater_FullSystem::T24NRCAMch08A_optional& SimSystem_ServiceHotWater_FullSystem::
+      T24NRCAMch08A ()
+      {
+        return this->T24NRCAMch08A_;
       }
 
       void SimSystem_ServiceHotWater_FullSystem::
-      T24Mch18A (const T24Mch18A_optional& x)
+      T24NRCAMch08A (const T24NRCAMch08A_type& x)
       {
-        this->T24Mch18A_ = x;
+        this->T24NRCAMch08A_.set (x);
+      }
+
+      void SimSystem_ServiceHotWater_FullSystem::
+      T24NRCAMch08A (const T24NRCAMch08A_optional& x)
+      {
+        this->T24NRCAMch08A_ = x;
+      }
+
+      const SimSystem_ServiceHotWater_FullSystem::T24NRCAMch09A_optional& SimSystem_ServiceHotWater_FullSystem::
+      T24NRCAMch09A () const
+      {
+        return this->T24NRCAMch09A_;
+      }
+
+      SimSystem_ServiceHotWater_FullSystem::T24NRCAMch09A_optional& SimSystem_ServiceHotWater_FullSystem::
+      T24NRCAMch09A ()
+      {
+        return this->T24NRCAMch09A_;
+      }
+
+      void SimSystem_ServiceHotWater_FullSystem::
+      T24NRCAMch09A (const T24NRCAMch09A_type& x)
+      {
+        this->T24NRCAMch09A_.set (x);
+      }
+
+      void SimSystem_ServiceHotWater_FullSystem::
+      T24NRCAMch09A (const T24NRCAMch09A_optional& x)
+      {
+        this->T24NRCAMch09A_ = x;
+      }
+
+      const SimSystem_ServiceHotWater_FullSystem::T24NRCAMch10A_optional& SimSystem_ServiceHotWater_FullSystem::
+      T24NRCAMch10A () const
+      {
+        return this->T24NRCAMch10A_;
+      }
+
+      SimSystem_ServiceHotWater_FullSystem::T24NRCAMch10A_optional& SimSystem_ServiceHotWater_FullSystem::
+      T24NRCAMch10A ()
+      {
+        return this->T24NRCAMch10A_;
+      }
+
+      void SimSystem_ServiceHotWater_FullSystem::
+      T24NRCAMch10A (const T24NRCAMch10A_type& x)
+      {
+        this->T24NRCAMch10A_.set (x);
+      }
+
+      void SimSystem_ServiceHotWater_FullSystem::
+      T24NRCAMch10A (const T24NRCAMch10A_optional& x)
+      {
+        this->T24NRCAMch10A_ = x;
+      }
+
+      const SimSystem_ServiceHotWater_FullSystem::T24NRCAMch11A_optional& SimSystem_ServiceHotWater_FullSystem::
+      T24NRCAMch11A () const
+      {
+        return this->T24NRCAMch11A_;
+      }
+
+      SimSystem_ServiceHotWater_FullSystem::T24NRCAMch11A_optional& SimSystem_ServiceHotWater_FullSystem::
+      T24NRCAMch11A ()
+      {
+        return this->T24NRCAMch11A_;
+      }
+
+      void SimSystem_ServiceHotWater_FullSystem::
+      T24NRCAMch11A (const T24NRCAMch11A_type& x)
+      {
+        this->T24NRCAMch11A_.set (x);
+      }
+
+      void SimSystem_ServiceHotWater_FullSystem::
+      T24NRCAMch11A (const T24NRCAMch11A_optional& x)
+      {
+        this->T24NRCAMch11A_ = x;
+      }
+
+      const SimSystem_ServiceHotWater_FullSystem::T24NRCAMch12A_optional& SimSystem_ServiceHotWater_FullSystem::
+      T24NRCAMch12A () const
+      {
+        return this->T24NRCAMch12A_;
+      }
+
+      SimSystem_ServiceHotWater_FullSystem::T24NRCAMch12A_optional& SimSystem_ServiceHotWater_FullSystem::
+      T24NRCAMch12A ()
+      {
+        return this->T24NRCAMch12A_;
+      }
+
+      void SimSystem_ServiceHotWater_FullSystem::
+      T24NRCAMch12A (const T24NRCAMch12A_type& x)
+      {
+        this->T24NRCAMch12A_.set (x);
+      }
+
+      void SimSystem_ServiceHotWater_FullSystem::
+      T24NRCAMch12A (const T24NRCAMch12A_optional& x)
+      {
+        this->T24NRCAMch12A_ = x;
+      }
+
+      const SimSystem_ServiceHotWater_FullSystem::T24NRCAMch13A_optional& SimSystem_ServiceHotWater_FullSystem::
+      T24NRCAMch13A () const
+      {
+        return this->T24NRCAMch13A_;
+      }
+
+      SimSystem_ServiceHotWater_FullSystem::T24NRCAMch13A_optional& SimSystem_ServiceHotWater_FullSystem::
+      T24NRCAMch13A ()
+      {
+        return this->T24NRCAMch13A_;
+      }
+
+      void SimSystem_ServiceHotWater_FullSystem::
+      T24NRCAMch13A (const T24NRCAMch13A_type& x)
+      {
+        this->T24NRCAMch13A_.set (x);
+      }
+
+      void SimSystem_ServiceHotWater_FullSystem::
+      T24NRCAMch13A (const T24NRCAMch13A_optional& x)
+      {
+        this->T24NRCAMch13A_ = x;
+      }
+
+      const SimSystem_ServiceHotWater_FullSystem::T24NRCAMch14A_optional& SimSystem_ServiceHotWater_FullSystem::
+      T24NRCAMch14A () const
+      {
+        return this->T24NRCAMch14A_;
+      }
+
+      SimSystem_ServiceHotWater_FullSystem::T24NRCAMch14A_optional& SimSystem_ServiceHotWater_FullSystem::
+      T24NRCAMch14A ()
+      {
+        return this->T24NRCAMch14A_;
+      }
+
+      void SimSystem_ServiceHotWater_FullSystem::
+      T24NRCAMch14A (const T24NRCAMch14A_type& x)
+      {
+        this->T24NRCAMch14A_.set (x);
+      }
+
+      void SimSystem_ServiceHotWater_FullSystem::
+      T24NRCAMch14A (const T24NRCAMch14A_optional& x)
+      {
+        this->T24NRCAMch14A_ = x;
+      }
+
+      const SimSystem_ServiceHotWater_FullSystem::T24NRCAMch15A_optional& SimSystem_ServiceHotWater_FullSystem::
+      T24NRCAMch15A () const
+      {
+        return this->T24NRCAMch15A_;
+      }
+
+      SimSystem_ServiceHotWater_FullSystem::T24NRCAMch15A_optional& SimSystem_ServiceHotWater_FullSystem::
+      T24NRCAMch15A ()
+      {
+        return this->T24NRCAMch15A_;
+      }
+
+      void SimSystem_ServiceHotWater_FullSystem::
+      T24NRCAMch15A (const T24NRCAMch15A_type& x)
+      {
+        this->T24NRCAMch15A_.set (x);
+      }
+
+      void SimSystem_ServiceHotWater_FullSystem::
+      T24NRCAMch15A (const T24NRCAMch15A_optional& x)
+      {
+        this->T24NRCAMch15A_ = x;
+      }
+
+      const SimSystem_ServiceHotWater_FullSystem::T24NRCAMch16A_optional& SimSystem_ServiceHotWater_FullSystem::
+      T24NRCAMch16A () const
+      {
+        return this->T24NRCAMch16A_;
+      }
+
+      SimSystem_ServiceHotWater_FullSystem::T24NRCAMch16A_optional& SimSystem_ServiceHotWater_FullSystem::
+      T24NRCAMch16A ()
+      {
+        return this->T24NRCAMch16A_;
+      }
+
+      void SimSystem_ServiceHotWater_FullSystem::
+      T24NRCAMch16A (const T24NRCAMch16A_type& x)
+      {
+        this->T24NRCAMch16A_.set (x);
+      }
+
+      void SimSystem_ServiceHotWater_FullSystem::
+      T24NRCAMch16A (const T24NRCAMch16A_optional& x)
+      {
+        this->T24NRCAMch16A_ = x;
+      }
+
+      const SimSystem_ServiceHotWater_FullSystem::T24NRCAMch17A_optional& SimSystem_ServiceHotWater_FullSystem::
+      T24NRCAMch17A () const
+      {
+        return this->T24NRCAMch17A_;
+      }
+
+      SimSystem_ServiceHotWater_FullSystem::T24NRCAMch17A_optional& SimSystem_ServiceHotWater_FullSystem::
+      T24NRCAMch17A ()
+      {
+        return this->T24NRCAMch17A_;
+      }
+
+      void SimSystem_ServiceHotWater_FullSystem::
+      T24NRCAMch17A (const T24NRCAMch17A_type& x)
+      {
+        this->T24NRCAMch17A_.set (x);
+      }
+
+      void SimSystem_ServiceHotWater_FullSystem::
+      T24NRCAMch17A (const T24NRCAMch17A_optional& x)
+      {
+        this->T24NRCAMch17A_ = x;
+      }
+
+      const SimSystem_ServiceHotWater_FullSystem::T24NRCAMch18A_optional& SimSystem_ServiceHotWater_FullSystem::
+      T24NRCAMch18A () const
+      {
+        return this->T24NRCAMch18A_;
+      }
+
+      SimSystem_ServiceHotWater_FullSystem::T24NRCAMch18A_optional& SimSystem_ServiceHotWater_FullSystem::
+      T24NRCAMch18A ()
+      {
+        return this->T24NRCAMch18A_;
+      }
+
+      void SimSystem_ServiceHotWater_FullSystem::
+      T24NRCAMch18A (const T24NRCAMch18A_type& x)
+      {
+        this->T24NRCAMch18A_.set (x);
+      }
+
+      void SimSystem_ServiceHotWater_FullSystem::
+      T24NRCAMch18A (const T24NRCAMch18A_optional& x)
+      {
+        this->T24NRCAMch18A_ = x;
       }
 
       const SimSystem_ServiceHotWater_FullSystem::T24ModelNo_optional& SimSystem_ServiceHotWater_FullSystem::
@@ -907,6 +1171,192 @@ namespace schema
       T24ModelNo (::std::auto_ptr< T24ModelNo_type > x)
       {
         this->T24ModelNo_.set (x);
+      }
+
+      const SimSystem_ServiceHotWater_FullSystem::T24SolarCollectorProgramName_optional& SimSystem_ServiceHotWater_FullSystem::
+      T24SolarCollectorProgramName () const
+      {
+        return this->T24SolarCollectorProgramName_;
+      }
+
+      SimSystem_ServiceHotWater_FullSystem::T24SolarCollectorProgramName_optional& SimSystem_ServiceHotWater_FullSystem::
+      T24SolarCollectorProgramName ()
+      {
+        return this->T24SolarCollectorProgramName_;
+      }
+
+      void SimSystem_ServiceHotWater_FullSystem::
+      T24SolarCollectorProgramName (const T24SolarCollectorProgramName_type& x)
+      {
+        this->T24SolarCollectorProgramName_.set (x);
+      }
+
+      void SimSystem_ServiceHotWater_FullSystem::
+      T24SolarCollectorProgramName (const T24SolarCollectorProgramName_optional& x)
+      {
+        this->T24SolarCollectorProgramName_ = x;
+      }
+
+      void SimSystem_ServiceHotWater_FullSystem::
+      T24SolarCollectorProgramName (::std::auto_ptr< T24SolarCollectorProgramName_type > x)
+      {
+        this->T24SolarCollectorProgramName_.set (x);
+      }
+
+      const SimSystem_ServiceHotWater_FullSystem::T24NumberDwellingUnits_optional& SimSystem_ServiceHotWater_FullSystem::
+      T24NumberDwellingUnits () const
+      {
+        return this->T24NumberDwellingUnits_;
+      }
+
+      SimSystem_ServiceHotWater_FullSystem::T24NumberDwellingUnits_optional& SimSystem_ServiceHotWater_FullSystem::
+      T24NumberDwellingUnits ()
+      {
+        return this->T24NumberDwellingUnits_;
+      }
+
+      void SimSystem_ServiceHotWater_FullSystem::
+      T24NumberDwellingUnits (const T24NumberDwellingUnits_type& x)
+      {
+        this->T24NumberDwellingUnits_.set (x);
+      }
+
+      void SimSystem_ServiceHotWater_FullSystem::
+      T24NumberDwellingUnits (const T24NumberDwellingUnits_optional& x)
+      {
+        this->T24NumberDwellingUnits_ = x;
+      }
+
+      const SimSystem_ServiceHotWater_FullSystem::T24RatedEffCurveIntercept_optional& SimSystem_ServiceHotWater_FullSystem::
+      T24RatedEffCurveIntercept () const
+      {
+        return this->T24RatedEffCurveIntercept_;
+      }
+
+      SimSystem_ServiceHotWater_FullSystem::T24RatedEffCurveIntercept_optional& SimSystem_ServiceHotWater_FullSystem::
+      T24RatedEffCurveIntercept ()
+      {
+        return this->T24RatedEffCurveIntercept_;
+      }
+
+      void SimSystem_ServiceHotWater_FullSystem::
+      T24RatedEffCurveIntercept (const T24RatedEffCurveIntercept_type& x)
+      {
+        this->T24RatedEffCurveIntercept_.set (x);
+      }
+
+      void SimSystem_ServiceHotWater_FullSystem::
+      T24RatedEffCurveIntercept (const T24RatedEffCurveIntercept_optional& x)
+      {
+        this->T24RatedEffCurveIntercept_ = x;
+      }
+
+      const SimSystem_ServiceHotWater_FullSystem::T24RatedEffCurveSlope_optional& SimSystem_ServiceHotWater_FullSystem::
+      T24RatedEffCurveSlope () const
+      {
+        return this->T24RatedEffCurveSlope_;
+      }
+
+      SimSystem_ServiceHotWater_FullSystem::T24RatedEffCurveSlope_optional& SimSystem_ServiceHotWater_FullSystem::
+      T24RatedEffCurveSlope ()
+      {
+        return this->T24RatedEffCurveSlope_;
+      }
+
+      void SimSystem_ServiceHotWater_FullSystem::
+      T24RatedEffCurveSlope (const T24RatedEffCurveSlope_type& x)
+      {
+        this->T24RatedEffCurveSlope_.set (x);
+      }
+
+      void SimSystem_ServiceHotWater_FullSystem::
+      T24RatedEffCurveSlope (const T24RatedEffCurveSlope_optional& x)
+      {
+        this->T24RatedEffCurveSlope_ = x;
+      }
+
+      const SimSystem_ServiceHotWater_FullSystem::T24SecondTankVolume_optional& SimSystem_ServiceHotWater_FullSystem::
+      T24SecondTankVolume () const
+      {
+        return this->T24SecondTankVolume_;
+      }
+
+      SimSystem_ServiceHotWater_FullSystem::T24SecondTankVolume_optional& SimSystem_ServiceHotWater_FullSystem::
+      T24SecondTankVolume ()
+      {
+        return this->T24SecondTankVolume_;
+      }
+
+      void SimSystem_ServiceHotWater_FullSystem::
+      T24SecondTankVolume (const T24SecondTankVolume_type& x)
+      {
+        this->T24SecondTankVolume_.set (x);
+      }
+
+      void SimSystem_ServiceHotWater_FullSystem::
+      T24SecondTankVolume (const T24SecondTankVolume_optional& x)
+      {
+        this->T24SecondTankVolume_ = x;
+      }
+
+      const SimSystem_ServiceHotWater_FullSystem::T24SRRCCertificationNumber_optional& SimSystem_ServiceHotWater_FullSystem::
+      T24SRRCCertificationNumber () const
+      {
+        return this->T24SRRCCertificationNumber_;
+      }
+
+      SimSystem_ServiceHotWater_FullSystem::T24SRRCCertificationNumber_optional& SimSystem_ServiceHotWater_FullSystem::
+      T24SRRCCertificationNumber ()
+      {
+        return this->T24SRRCCertificationNumber_;
+      }
+
+      void SimSystem_ServiceHotWater_FullSystem::
+      T24SRRCCertificationNumber (const T24SRRCCertificationNumber_type& x)
+      {
+        this->T24SRRCCertificationNumber_.set (x);
+      }
+
+      void SimSystem_ServiceHotWater_FullSystem::
+      T24SRRCCertificationNumber (const T24SRRCCertificationNumber_optional& x)
+      {
+        this->T24SRRCCertificationNumber_ = x;
+      }
+
+      void SimSystem_ServiceHotWater_FullSystem::
+      T24SRRCCertificationNumber (::std::auto_ptr< T24SRRCCertificationNumber_type > x)
+      {
+        this->T24SRRCCertificationNumber_.set (x);
+      }
+
+      const SimSystem_ServiceHotWater_FullSystem::T24SolarCollectorProgramVersion_optional& SimSystem_ServiceHotWater_FullSystem::
+      T24SolarCollectorProgramVersion () const
+      {
+        return this->T24SolarCollectorProgramVersion_;
+      }
+
+      SimSystem_ServiceHotWater_FullSystem::T24SolarCollectorProgramVersion_optional& SimSystem_ServiceHotWater_FullSystem::
+      T24SolarCollectorProgramVersion ()
+      {
+        return this->T24SolarCollectorProgramVersion_;
+      }
+
+      void SimSystem_ServiceHotWater_FullSystem::
+      T24SolarCollectorProgramVersion (const T24SolarCollectorProgramVersion_type& x)
+      {
+        this->T24SolarCollectorProgramVersion_.set (x);
+      }
+
+      void SimSystem_ServiceHotWater_FullSystem::
+      T24SolarCollectorProgramVersion (const T24SolarCollectorProgramVersion_optional& x)
+      {
+        this->T24SolarCollectorProgramVersion_ = x;
+      }
+
+      void SimSystem_ServiceHotWater_FullSystem::
+      T24SolarCollectorProgramVersion (::std::auto_ptr< T24SolarCollectorProgramVersion_type > x)
+      {
+        this->T24SolarCollectorProgramVersion_.set (x);
       }
 
       const SimSystem_ServiceHotWater_FullSystem::T24Brand_optional& SimSystem_ServiceHotWater_FullSystem::
@@ -1335,15 +1785,33 @@ namespace schema
         SimSys_PlantLoopDemandCalcScheme_ (this),
         SimSys_CommonPipeSim_ (this),
         SimSys_PresSimType_ (this),
+        T24AnnualSolarFraction_ (this),
         T24FluidSysCntrlType_ (this),
-        T24Mch08A_ (this),
-        T24Mch09A_ (this),
-        T24Mch10A_ (this),
-        T24Mch11A_ (this),
-        T24Mch15A_ (this),
-        T24Mch17A_ (this),
-        T24Mch18A_ (this),
+        T24NRCAMch02A_ (this),
+        T24NRCAMch03A_ (this),
+        T24NRCAMch04A_ (this),
+        T24NRCAMch05A_ (this),
+        T24NRCAMch06A_ (this),
+        T24NRCAMch07A_ (this),
+        T24NRCAMch08A_ (this),
+        T24NRCAMch09A_ (this),
+        T24NRCAMch10A_ (this),
+        T24NRCAMch11A_ (this),
+        T24NRCAMch12A_ (this),
+        T24NRCAMch13A_ (this),
+        T24NRCAMch14A_ (this),
+        T24NRCAMch15A_ (this),
+        T24NRCAMch16A_ (this),
+        T24NRCAMch17A_ (this),
+        T24NRCAMch18A_ (this),
         T24ModelNo_ (this),
+        T24SolarCollectorProgramName_ (this),
+        T24NumberDwellingUnits_ (this),
+        T24RatedEffCurveIntercept_ (this),
+        T24RatedEffCurveSlope_ (this),
+        T24SecondTankVolume_ (this),
+        T24SRRCCertificationNumber_ (this),
+        T24SolarCollectorProgramVersion_ (this),
         T24Brand_ (this),
         T24CollectorType_ (this),
         T24DistribType_ (this),
@@ -1385,15 +1853,33 @@ namespace schema
         SimSys_PlantLoopDemandCalcScheme_ (this),
         SimSys_CommonPipeSim_ (this),
         SimSys_PresSimType_ (this),
+        T24AnnualSolarFraction_ (this),
         T24FluidSysCntrlType_ (this),
-        T24Mch08A_ (this),
-        T24Mch09A_ (this),
-        T24Mch10A_ (this),
-        T24Mch11A_ (this),
-        T24Mch15A_ (this),
-        T24Mch17A_ (this),
-        T24Mch18A_ (this),
+        T24NRCAMch02A_ (this),
+        T24NRCAMch03A_ (this),
+        T24NRCAMch04A_ (this),
+        T24NRCAMch05A_ (this),
+        T24NRCAMch06A_ (this),
+        T24NRCAMch07A_ (this),
+        T24NRCAMch08A_ (this),
+        T24NRCAMch09A_ (this),
+        T24NRCAMch10A_ (this),
+        T24NRCAMch11A_ (this),
+        T24NRCAMch12A_ (this),
+        T24NRCAMch13A_ (this),
+        T24NRCAMch14A_ (this),
+        T24NRCAMch15A_ (this),
+        T24NRCAMch16A_ (this),
+        T24NRCAMch17A_ (this),
+        T24NRCAMch18A_ (this),
         T24ModelNo_ (this),
+        T24SolarCollectorProgramName_ (this),
+        T24NumberDwellingUnits_ (this),
+        T24RatedEffCurveIntercept_ (this),
+        T24RatedEffCurveSlope_ (this),
+        T24SecondTankVolume_ (this),
+        T24SRRCCertificationNumber_ (this),
+        T24SolarCollectorProgramVersion_ (this),
         T24Brand_ (this),
         T24CollectorType_ (this),
         T24DistribType_ (this),
@@ -1437,15 +1923,33 @@ namespace schema
         SimSys_PlantLoopDemandCalcScheme_ (x.SimSys_PlantLoopDemandCalcScheme_, f, this),
         SimSys_CommonPipeSim_ (x.SimSys_CommonPipeSim_, f, this),
         SimSys_PresSimType_ (x.SimSys_PresSimType_, f, this),
+        T24AnnualSolarFraction_ (x.T24AnnualSolarFraction_, f, this),
         T24FluidSysCntrlType_ (x.T24FluidSysCntrlType_, f, this),
-        T24Mch08A_ (x.T24Mch08A_, f, this),
-        T24Mch09A_ (x.T24Mch09A_, f, this),
-        T24Mch10A_ (x.T24Mch10A_, f, this),
-        T24Mch11A_ (x.T24Mch11A_, f, this),
-        T24Mch15A_ (x.T24Mch15A_, f, this),
-        T24Mch17A_ (x.T24Mch17A_, f, this),
-        T24Mch18A_ (x.T24Mch18A_, f, this),
+        T24NRCAMch02A_ (x.T24NRCAMch02A_, f, this),
+        T24NRCAMch03A_ (x.T24NRCAMch03A_, f, this),
+        T24NRCAMch04A_ (x.T24NRCAMch04A_, f, this),
+        T24NRCAMch05A_ (x.T24NRCAMch05A_, f, this),
+        T24NRCAMch06A_ (x.T24NRCAMch06A_, f, this),
+        T24NRCAMch07A_ (x.T24NRCAMch07A_, f, this),
+        T24NRCAMch08A_ (x.T24NRCAMch08A_, f, this),
+        T24NRCAMch09A_ (x.T24NRCAMch09A_, f, this),
+        T24NRCAMch10A_ (x.T24NRCAMch10A_, f, this),
+        T24NRCAMch11A_ (x.T24NRCAMch11A_, f, this),
+        T24NRCAMch12A_ (x.T24NRCAMch12A_, f, this),
+        T24NRCAMch13A_ (x.T24NRCAMch13A_, f, this),
+        T24NRCAMch14A_ (x.T24NRCAMch14A_, f, this),
+        T24NRCAMch15A_ (x.T24NRCAMch15A_, f, this),
+        T24NRCAMch16A_ (x.T24NRCAMch16A_, f, this),
+        T24NRCAMch17A_ (x.T24NRCAMch17A_, f, this),
+        T24NRCAMch18A_ (x.T24NRCAMch18A_, f, this),
         T24ModelNo_ (x.T24ModelNo_, f, this),
+        T24SolarCollectorProgramName_ (x.T24SolarCollectorProgramName_, f, this),
+        T24NumberDwellingUnits_ (x.T24NumberDwellingUnits_, f, this),
+        T24RatedEffCurveIntercept_ (x.T24RatedEffCurveIntercept_, f, this),
+        T24RatedEffCurveSlope_ (x.T24RatedEffCurveSlope_, f, this),
+        T24SecondTankVolume_ (x.T24SecondTankVolume_, f, this),
+        T24SRRCCertificationNumber_ (x.T24SRRCCertificationNumber_, f, this),
+        T24SolarCollectorProgramVersion_ (x.T24SolarCollectorProgramVersion_, f, this),
         T24Brand_ (x.T24Brand_, f, this),
         T24CollectorType_ (x.T24CollectorType_, f, this),
         T24DistribType_ (x.T24DistribType_, f, this),
@@ -1489,15 +1993,33 @@ namespace schema
         SimSys_PlantLoopDemandCalcScheme_ (this),
         SimSys_CommonPipeSim_ (this),
         SimSys_PresSimType_ (this),
+        T24AnnualSolarFraction_ (this),
         T24FluidSysCntrlType_ (this),
-        T24Mch08A_ (this),
-        T24Mch09A_ (this),
-        T24Mch10A_ (this),
-        T24Mch11A_ (this),
-        T24Mch15A_ (this),
-        T24Mch17A_ (this),
-        T24Mch18A_ (this),
+        T24NRCAMch02A_ (this),
+        T24NRCAMch03A_ (this),
+        T24NRCAMch04A_ (this),
+        T24NRCAMch05A_ (this),
+        T24NRCAMch06A_ (this),
+        T24NRCAMch07A_ (this),
+        T24NRCAMch08A_ (this),
+        T24NRCAMch09A_ (this),
+        T24NRCAMch10A_ (this),
+        T24NRCAMch11A_ (this),
+        T24NRCAMch12A_ (this),
+        T24NRCAMch13A_ (this),
+        T24NRCAMch14A_ (this),
+        T24NRCAMch15A_ (this),
+        T24NRCAMch16A_ (this),
+        T24NRCAMch17A_ (this),
+        T24NRCAMch18A_ (this),
         T24ModelNo_ (this),
+        T24SolarCollectorProgramName_ (this),
+        T24NumberDwellingUnits_ (this),
+        T24RatedEffCurveIntercept_ (this),
+        T24RatedEffCurveSlope_ (this),
+        T24SecondTankVolume_ (this),
+        T24SRRCCertificationNumber_ (this),
+        T24SolarCollectorProgramVersion_ (this),
         T24Brand_ (this),
         T24CollectorType_ (this),
         T24DistribType_ (this),
@@ -1824,6 +2346,17 @@ namespace schema
             }
           }
 
+          // T24AnnualSolarFraction
+          //
+          if (n.name () == "T24AnnualSolarFraction" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          {
+            if (!this->T24AnnualSolarFraction_)
+            {
+              this->T24AnnualSolarFraction_.set (T24AnnualSolarFraction_traits::create (i, f, this));
+              continue;
+            }
+          }
+
           // T24FluidSysCntrlType
           //
           if (n.name () == "T24FluidSysCntrlType" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
@@ -1838,79 +2371,189 @@ namespace schema
             }
           }
 
-          // T24Mch08A
+          // T24NRCAMch02A
           //
-          if (n.name () == "T24Mch08A" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          if (n.name () == "T24NRCAMch02A" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
           {
-            if (!this->T24Mch08A_)
+            if (!this->T24NRCAMch02A_)
             {
-              this->T24Mch08A_.set (T24Mch08A_traits::create (i, f, this));
+              this->T24NRCAMch02A_.set (T24NRCAMch02A_traits::create (i, f, this));
               continue;
             }
           }
 
-          // T24Mch09A
+          // T24NRCAMch03A
           //
-          if (n.name () == "T24Mch09A" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          if (n.name () == "T24NRCAMch03A" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
           {
-            if (!this->T24Mch09A_)
+            if (!this->T24NRCAMch03A_)
             {
-              this->T24Mch09A_.set (T24Mch09A_traits::create (i, f, this));
+              this->T24NRCAMch03A_.set (T24NRCAMch03A_traits::create (i, f, this));
               continue;
             }
           }
 
-          // T24Mch10A
+          // T24NRCAMch04A
           //
-          if (n.name () == "T24Mch10A" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          if (n.name () == "T24NRCAMch04A" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
           {
-            if (!this->T24Mch10A_)
+            if (!this->T24NRCAMch04A_)
             {
-              this->T24Mch10A_.set (T24Mch10A_traits::create (i, f, this));
+              this->T24NRCAMch04A_.set (T24NRCAMch04A_traits::create (i, f, this));
               continue;
             }
           }
 
-          // T24Mch11A
+          // T24NRCAMch05A
           //
-          if (n.name () == "T24Mch11A" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          if (n.name () == "T24NRCAMch05A" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
           {
-            if (!this->T24Mch11A_)
+            if (!this->T24NRCAMch05A_)
             {
-              this->T24Mch11A_.set (T24Mch11A_traits::create (i, f, this));
+              this->T24NRCAMch05A_.set (T24NRCAMch05A_traits::create (i, f, this));
               continue;
             }
           }
 
-          // T24Mch15A
+          // T24NRCAMch06A
           //
-          if (n.name () == "T24Mch15A" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          if (n.name () == "T24NRCAMch06A" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
           {
-            if (!this->T24Mch15A_)
+            if (!this->T24NRCAMch06A_)
             {
-              this->T24Mch15A_.set (T24Mch15A_traits::create (i, f, this));
+              this->T24NRCAMch06A_.set (T24NRCAMch06A_traits::create (i, f, this));
               continue;
             }
           }
 
-          // T24Mch17A
+          // T24NRCAMch07A
           //
-          if (n.name () == "T24Mch17A" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          if (n.name () == "T24NRCAMch07A" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
           {
-            if (!this->T24Mch17A_)
+            if (!this->T24NRCAMch07A_)
             {
-              this->T24Mch17A_.set (T24Mch17A_traits::create (i, f, this));
+              this->T24NRCAMch07A_.set (T24NRCAMch07A_traits::create (i, f, this));
               continue;
             }
           }
 
-          // T24Mch18A
+          // T24NRCAMch08A
           //
-          if (n.name () == "T24Mch18A" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          if (n.name () == "T24NRCAMch08A" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
           {
-            if (!this->T24Mch18A_)
+            if (!this->T24NRCAMch08A_)
             {
-              this->T24Mch18A_.set (T24Mch18A_traits::create (i, f, this));
+              this->T24NRCAMch08A_.set (T24NRCAMch08A_traits::create (i, f, this));
+              continue;
+            }
+          }
+
+          // T24NRCAMch09A
+          //
+          if (n.name () == "T24NRCAMch09A" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          {
+            if (!this->T24NRCAMch09A_)
+            {
+              this->T24NRCAMch09A_.set (T24NRCAMch09A_traits::create (i, f, this));
+              continue;
+            }
+          }
+
+          // T24NRCAMch10A
+          //
+          if (n.name () == "T24NRCAMch10A" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          {
+            if (!this->T24NRCAMch10A_)
+            {
+              this->T24NRCAMch10A_.set (T24NRCAMch10A_traits::create (i, f, this));
+              continue;
+            }
+          }
+
+          // T24NRCAMch11A
+          //
+          if (n.name () == "T24NRCAMch11A" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          {
+            if (!this->T24NRCAMch11A_)
+            {
+              this->T24NRCAMch11A_.set (T24NRCAMch11A_traits::create (i, f, this));
+              continue;
+            }
+          }
+
+          // T24NRCAMch12A
+          //
+          if (n.name () == "T24NRCAMch12A" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          {
+            if (!this->T24NRCAMch12A_)
+            {
+              this->T24NRCAMch12A_.set (T24NRCAMch12A_traits::create (i, f, this));
+              continue;
+            }
+          }
+
+          // T24NRCAMch13A
+          //
+          if (n.name () == "T24NRCAMch13A" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          {
+            if (!this->T24NRCAMch13A_)
+            {
+              this->T24NRCAMch13A_.set (T24NRCAMch13A_traits::create (i, f, this));
+              continue;
+            }
+          }
+
+          // T24NRCAMch14A
+          //
+          if (n.name () == "T24NRCAMch14A" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          {
+            if (!this->T24NRCAMch14A_)
+            {
+              this->T24NRCAMch14A_.set (T24NRCAMch14A_traits::create (i, f, this));
+              continue;
+            }
+          }
+
+          // T24NRCAMch15A
+          //
+          if (n.name () == "T24NRCAMch15A" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          {
+            if (!this->T24NRCAMch15A_)
+            {
+              this->T24NRCAMch15A_.set (T24NRCAMch15A_traits::create (i, f, this));
+              continue;
+            }
+          }
+
+          // T24NRCAMch16A
+          //
+          if (n.name () == "T24NRCAMch16A" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          {
+            if (!this->T24NRCAMch16A_)
+            {
+              this->T24NRCAMch16A_.set (T24NRCAMch16A_traits::create (i, f, this));
+              continue;
+            }
+          }
+
+          // T24NRCAMch17A
+          //
+          if (n.name () == "T24NRCAMch17A" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          {
+            if (!this->T24NRCAMch17A_)
+            {
+              this->T24NRCAMch17A_.set (T24NRCAMch17A_traits::create (i, f, this));
+              continue;
+            }
+          }
+
+          // T24NRCAMch18A
+          //
+          if (n.name () == "T24NRCAMch18A" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          {
+            if (!this->T24NRCAMch18A_)
+            {
+              this->T24NRCAMch18A_.set (T24NRCAMch18A_traits::create (i, f, this));
               continue;
             }
           }
@@ -1925,6 +2568,92 @@ namespace schema
             if (!this->T24ModelNo_)
             {
               this->T24ModelNo_.set (r);
+              continue;
+            }
+          }
+
+          // T24SolarCollectorProgramName
+          //
+          if (n.name () == "T24SolarCollectorProgramName" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          {
+            ::std::auto_ptr< T24SolarCollectorProgramName_type > r (
+              T24SolarCollectorProgramName_traits::create (i, f, this));
+
+            if (!this->T24SolarCollectorProgramName_)
+            {
+              this->T24SolarCollectorProgramName_.set (r);
+              continue;
+            }
+          }
+
+          // T24NumberDwellingUnits
+          //
+          if (n.name () == "T24NumberDwellingUnits" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          {
+            if (!this->T24NumberDwellingUnits_)
+            {
+              this->T24NumberDwellingUnits_.set (T24NumberDwellingUnits_traits::create (i, f, this));
+              continue;
+            }
+          }
+
+          // T24RatedEffCurveIntercept
+          //
+          if (n.name () == "T24RatedEffCurveIntercept" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          {
+            if (!this->T24RatedEffCurveIntercept_)
+            {
+              this->T24RatedEffCurveIntercept_.set (T24RatedEffCurveIntercept_traits::create (i, f, this));
+              continue;
+            }
+          }
+
+          // T24RatedEffCurveSlope
+          //
+          if (n.name () == "T24RatedEffCurveSlope" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          {
+            if (!this->T24RatedEffCurveSlope_)
+            {
+              this->T24RatedEffCurveSlope_.set (T24RatedEffCurveSlope_traits::create (i, f, this));
+              continue;
+            }
+          }
+
+          // T24SecondTankVolume
+          //
+          if (n.name () == "T24SecondTankVolume" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          {
+            if (!this->T24SecondTankVolume_)
+            {
+              this->T24SecondTankVolume_.set (T24SecondTankVolume_traits::create (i, f, this));
+              continue;
+            }
+          }
+
+          // T24SRRCCertificationNumber
+          //
+          if (n.name () == "T24SRRCCertificationNumber" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          {
+            ::std::auto_ptr< T24SRRCCertificationNumber_type > r (
+              T24SRRCCertificationNumber_traits::create (i, f, this));
+
+            if (!this->T24SRRCCertificationNumber_)
+            {
+              this->T24SRRCCertificationNumber_.set (r);
+              continue;
+            }
+          }
+
+          // T24SolarCollectorProgramVersion
+          //
+          if (n.name () == "T24SolarCollectorProgramVersion" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/BuildingModel")
+          {
+            ::std::auto_ptr< T24SolarCollectorProgramVersion_type > r (
+              T24SolarCollectorProgramVersion_traits::create (i, f, this));
+
+            if (!this->T24SolarCollectorProgramVersion_)
+            {
+              this->T24SolarCollectorProgramVersion_.set (r);
               continue;
             }
           }
@@ -2144,15 +2873,33 @@ namespace schema
           this->SimSys_PlantLoopDemandCalcScheme_ = x.SimSys_PlantLoopDemandCalcScheme_;
           this->SimSys_CommonPipeSim_ = x.SimSys_CommonPipeSim_;
           this->SimSys_PresSimType_ = x.SimSys_PresSimType_;
+          this->T24AnnualSolarFraction_ = x.T24AnnualSolarFraction_;
           this->T24FluidSysCntrlType_ = x.T24FluidSysCntrlType_;
-          this->T24Mch08A_ = x.T24Mch08A_;
-          this->T24Mch09A_ = x.T24Mch09A_;
-          this->T24Mch10A_ = x.T24Mch10A_;
-          this->T24Mch11A_ = x.T24Mch11A_;
-          this->T24Mch15A_ = x.T24Mch15A_;
-          this->T24Mch17A_ = x.T24Mch17A_;
-          this->T24Mch18A_ = x.T24Mch18A_;
+          this->T24NRCAMch02A_ = x.T24NRCAMch02A_;
+          this->T24NRCAMch03A_ = x.T24NRCAMch03A_;
+          this->T24NRCAMch04A_ = x.T24NRCAMch04A_;
+          this->T24NRCAMch05A_ = x.T24NRCAMch05A_;
+          this->T24NRCAMch06A_ = x.T24NRCAMch06A_;
+          this->T24NRCAMch07A_ = x.T24NRCAMch07A_;
+          this->T24NRCAMch08A_ = x.T24NRCAMch08A_;
+          this->T24NRCAMch09A_ = x.T24NRCAMch09A_;
+          this->T24NRCAMch10A_ = x.T24NRCAMch10A_;
+          this->T24NRCAMch11A_ = x.T24NRCAMch11A_;
+          this->T24NRCAMch12A_ = x.T24NRCAMch12A_;
+          this->T24NRCAMch13A_ = x.T24NRCAMch13A_;
+          this->T24NRCAMch14A_ = x.T24NRCAMch14A_;
+          this->T24NRCAMch15A_ = x.T24NRCAMch15A_;
+          this->T24NRCAMch16A_ = x.T24NRCAMch16A_;
+          this->T24NRCAMch17A_ = x.T24NRCAMch17A_;
+          this->T24NRCAMch18A_ = x.T24NRCAMch18A_;
           this->T24ModelNo_ = x.T24ModelNo_;
+          this->T24SolarCollectorProgramName_ = x.T24SolarCollectorProgramName_;
+          this->T24NumberDwellingUnits_ = x.T24NumberDwellingUnits_;
+          this->T24RatedEffCurveIntercept_ = x.T24RatedEffCurveIntercept_;
+          this->T24RatedEffCurveSlope_ = x.T24RatedEffCurveSlope_;
+          this->T24SecondTankVolume_ = x.T24SecondTankVolume_;
+          this->T24SRRCCertificationNumber_ = x.T24SRRCCertificationNumber_;
+          this->T24SolarCollectorProgramVersion_ = x.T24SolarCollectorProgramVersion_;
           this->T24Brand_ = x.T24Brand_;
           this->T24CollectorType_ = x.T24CollectorType_;
           this->T24DistribType_ = x.T24DistribType_;

@@ -1261,6 +1261,24 @@ namespace schema
         void
         T24HeatRejectFanType (::std::auto_ptr< T24HeatRejectFanType_type > p);
 
+        // T24LeavingTempDesign
+        //
+        typedef ::xml_schema::double_ T24LeavingTempDesign_type;
+        typedef ::xsd::cxx::tree::optional< T24LeavingTempDesign_type > T24LeavingTempDesign_optional;
+        typedef ::xsd::cxx::tree::traits< T24LeavingTempDesign_type, char, ::xsd::cxx::tree::schema_type::double_ > T24LeavingTempDesign_traits;
+
+        const T24LeavingTempDesign_optional&
+        T24LeavingTempDesign () const;
+
+        T24LeavingTempDesign_optional&
+        T24LeavingTempDesign ();
+
+        void
+        T24LeavingTempDesign (const T24LeavingTempDesign_type& x);
+
+        void
+        T24LeavingTempDesign (const T24LeavingTempDesign_optional& x);
+
         // T24ConstructStatus2
         //
         typedef ::xml_schema::string T24ConstructStatus2_type;
@@ -1366,6 +1384,7 @@ namespace schema
         CoolTowerPerf_YorkCalc_MaxLiqToGasRatio_optional CoolTowerPerf_YorkCalc_MaxLiqToGasRatio_;
         CoolTowerPerf_YorkCalc_Coeff_1_27_optional CoolTowerPerf_YorkCalc_Coeff_1_27_;
         T24HeatRejectFanType_optional T24HeatRejectFanType_;
+        T24LeavingTempDesign_optional T24LeavingTempDesign_;
         T24ConstructStatus2_optional T24ConstructStatus2_;
       };
     }

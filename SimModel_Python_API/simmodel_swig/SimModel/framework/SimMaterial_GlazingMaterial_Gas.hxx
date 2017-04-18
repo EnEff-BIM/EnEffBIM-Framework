@@ -260,6 +260,27 @@ namespace schema
       class SimMaterial_GlazingMaterial_Gas: public ::schema::simxml::ResourcesGeneral::SimMaterial_GlazingMaterial
       {
         public:
+        // SimMaterial_Name
+        //
+        typedef ::xml_schema::string SimMaterial_Name_type;
+        typedef ::xsd::cxx::tree::optional< SimMaterial_Name_type, false > SimMaterial_Name_optional;
+        typedef ::xsd::cxx::tree::traits< SimMaterial_Name_type, char > SimMaterial_Name_traits;
+
+        const SimMaterial_Name_optional&
+        SimMaterial_Name () const;
+
+        SimMaterial_Name_optional&
+        SimMaterial_Name ();
+
+        void
+        SimMaterial_Name (const SimMaterial_Name_type& x);
+
+        void
+        SimMaterial_Name (const SimMaterial_Name_optional& x);
+
+        void
+        SimMaterial_Name (::std::auto_ptr< SimMaterial_Name_type > p);
+
         // SimMaterial_Thick
         //
         typedef ::xml_schema::double_ SimMaterial_Thick_type;
@@ -529,6 +550,7 @@ namespace schema
                ::xml_schema::flags);
 
         protected:
+        SimMaterial_Name_optional SimMaterial_Name_;
         SimMaterial_Thick_optional SimMaterial_Thick_;
         SimMaterial_GasType_optional SimMaterial_GasType_;
         SimMaterial_CondCoefA_optional SimMaterial_CondCoefA_;

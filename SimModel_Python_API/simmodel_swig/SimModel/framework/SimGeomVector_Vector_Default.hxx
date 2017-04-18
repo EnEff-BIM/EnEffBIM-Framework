@@ -260,7 +260,7 @@ namespace schema
       class SimGeomVector_Vector_Default: public ::schema::simxml::ResourcesGeometry::SimGeomVector_Vector
       {
         public:
-        // Orientation.Reference
+        // Orientation_Reference
         //
         typedef ::xml_schema::idref Orientation_Reference_type;
         typedef ::xsd::cxx::tree::optional< Orientation_Reference_type, false > Orientation_Reference_optional;

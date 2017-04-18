@@ -25,6 +25,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="SimControlScheme_SetpointManagerScheme_ScheduledSetpoint.i" />
+    <CustomBuild Include="SimControlScheme_SetpointManagerScheme_ScheduledSetpoint.i" />
   </ItemGroup>
 </Project>

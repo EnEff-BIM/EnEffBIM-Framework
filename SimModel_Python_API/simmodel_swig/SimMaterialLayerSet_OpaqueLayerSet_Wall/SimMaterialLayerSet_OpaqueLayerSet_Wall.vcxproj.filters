@@ -25,6 +25,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="SimMaterialLayerSet_OpaqueLayerSet_Wall.i" />
+    <CustomBuild Include="SimMaterialLayerSet_OpaqueLayerSet_Wall.i" />
   </ItemGroup>
 </Project>

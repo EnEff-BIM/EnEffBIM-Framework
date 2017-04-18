@@ -8,6 +8,8 @@
 using namespace xsd::cxx::tree;
 %}
 
+%ignore xsd::cxx::tree::sequence<::schema::simxml::BuildingModel::SimList_SchemeList_PlantOperatingScheme, false>::getValue(int n);
+
 //3. class auto ptr
 %auto_ptr(::schema::simxml::BuildingModel::SimList_SchemeList_PlantOperatingScheme)
 %auto_ptr(::schema::simxml::BuildingModel::SimList_ContScheme_1_8_ObjectType)

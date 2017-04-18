@@ -10,6 +10,15 @@
 using namespace xsd::cxx::tree;
 %}
 
+%ignore xsd::cxx::tree::sequence< xsd::cxx::tree::string< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::type > >,false >::detach_back(bool pop = true);
+
+//%ignore xsd::cxx::tree::sequence< xsd::cxx::tree::string< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::type > >,false >::insert(xsd::cxx::tree::iterator_adapter< std::vector< xsd::cxx::tree::sequence_common::ptr,std::allocator< xsd::cxx::tree::sequence_common::ptr > >::iterator,xsd::cxx::tree::string< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > > > position, std::auto_ptr< xsd::cxx::tree::string< char,xsd::cxx::tree::simple_type< char,xsd::cxx::tree::_type > > > x);
+
+
+
+%ignore xsd::cxx::tree::optional<::xml_schema::idrefs, false>::getValue();
+%ignore xsd::cxx::tree::optional<::schema::simxml::SimModelCore::integerList, false>::getValue();
+%ignore xsd::cxx::tree::optional<::schema::simxml::SimModelCore::doubleList, false>::getValue();
 
 %auto_ptr(::xml_schema::string)
 %auto_ptr(::xml_schema::id)
@@ -74,6 +83,9 @@ using namespace MepModel;
 using namespace ResourcesGeneral;
 using namespace ResourcesGeometry;
 
+%template(VectorDouble) std::vector<double>;
+%template(VectorString) std::vector<std::string>;
+
 namespace xsd
 {
   namespace cxx
@@ -86,6 +98,16 @@ namespace xsd
 		%template(bool_optional) optional<::xml_schema::boolean, true>;
 		%template(string_optional) optional<::xml_schema::string, false>;
 		%template(idref_optional) optional<::xml_schema::idref, false >;
+
+		// xsd string in sequence
+		%template(xml_simple_type) simple_type< char, type>;
+		%template(xml_string) string< char, simple_type< char, type > >;
+		%template(string_sequence) sequence<string< char, simple_type< char, type > >, false>;
+		
+		// additional list structure
+		%template(idrefs_optional) optional<::xml_schema::idrefs, false>;
+		%template(xsd_integer_list) optional<::schema::simxml::SimModelCore::integerList, false>;
+		%template(xsd_double_list) optional<::schema::simxml::SimModelCore::doubleList, false>;
 	}
   }
 }

@@ -312,17 +312,6 @@ namespace schema
   {
     namespace BuildingModel
     {
-      class T24MandLightCntrlRpt;
-    }
-  }
-}
-
-namespace schema
-{
-  namespace simxml
-  {
-    namespace BuildingModel
-    {
       class T24MandLightCntrlAccepReqRpt;
     }
   }
@@ -381,123 +370,6 @@ namespace schema
       class SimSpace_Occupied: public ::schema::simxml::BuildingModel::SimSpace
       {
         public:
-        // T24BaselineCommercialRefrigerationEPD
-        //
-        typedef ::xml_schema::double_ T24BaselineCommercialRefrigerationEPD_type;
-        typedef ::xsd::cxx::tree::optional< T24BaselineCommercialRefrigerationEPD_type, true > T24BaselineCommercialRefrigerationEPD_optional;
-        typedef ::xsd::cxx::tree::traits< T24BaselineCommercialRefrigerationEPD_type, char, ::xsd::cxx::tree::schema_type::double_ > T24BaselineCommercialRefrigerationEPD_traits;
-
-        const T24BaselineCommercialRefrigerationEPD_optional&
-        T24BaselineCommercialRefrigerationEPD () const;
-
-        T24BaselineCommercialRefrigerationEPD_optional&
-        T24BaselineCommercialRefrigerationEPD ();
-
-        void
-        T24BaselineCommercialRefrigerationEPD (const T24BaselineCommercialRefrigerationEPD_type& x);
-
-        void
-        T24BaselineCommercialRefrigerationEPD (const T24BaselineCommercialRefrigerationEPD_optional& x);
-
-        // T24BaselineCommercialRefrigerationEquipmentScheduleReference
-        //
-        typedef ::xml_schema::idref T24BaselineCommercialRefrigerationEquipmentScheduleReference_type;
-        typedef ::xsd::cxx::tree::optional< T24BaselineCommercialRefrigerationEquipmentScheduleReference_type, false > T24BaselineCommercialRefrigerationEquipmentScheduleReference_optional;
-        typedef ::xsd::cxx::tree::traits< T24BaselineCommercialRefrigerationEquipmentScheduleReference_type, char > T24BaselineCommercialRefrigerationEquipmentScheduleReference_traits;
-
-        const T24BaselineCommercialRefrigerationEquipmentScheduleReference_optional&
-        T24BaselineCommercialRefrigerationEquipmentScheduleReference () const;
-
-        T24BaselineCommercialRefrigerationEquipmentScheduleReference_optional&
-        T24BaselineCommercialRefrigerationEquipmentScheduleReference ();
-
-        void
-        T24BaselineCommercialRefrigerationEquipmentScheduleReference (const T24BaselineCommercialRefrigerationEquipmentScheduleReference_type& x);
-
-        void
-        T24BaselineCommercialRefrigerationEquipmentScheduleReference (const T24BaselineCommercialRefrigerationEquipmentScheduleReference_optional& x);
-
-        void
-        T24BaselineCommercialRefrigerationEquipmentScheduleReference (::std::auto_ptr< T24BaselineCommercialRefrigerationEquipmentScheduleReference_type > p);
-
-        // T24BaselineGasEquipmentPowerDensity
-        //
-        typedef ::xml_schema::double_ T24BaselineGasEquipmentPowerDensity_type;
-        typedef ::xsd::cxx::tree::optional< T24BaselineGasEquipmentPowerDensity_type, true > T24BaselineGasEquipmentPowerDensity_optional;
-        typedef ::xsd::cxx::tree::traits< T24BaselineGasEquipmentPowerDensity_type, char, ::xsd::cxx::tree::schema_type::double_ > T24BaselineGasEquipmentPowerDensity_traits;
-
-        const T24BaselineGasEquipmentPowerDensity_optional&
-        T24BaselineGasEquipmentPowerDensity () const;
-
-        T24BaselineGasEquipmentPowerDensity_optional&
-        T24BaselineGasEquipmentPowerDensity ();
-
-        void
-        T24BaselineGasEquipmentPowerDensity (const T24BaselineGasEquipmentPowerDensity_type& x);
-
-        void
-        T24BaselineGasEquipmentPowerDensity (const T24BaselineGasEquipmentPowerDensity_optional& x);
-
-        // T24BaselineGasEquipmentScheduleReference
-        //
-        typedef ::xml_schema::idref T24BaselineGasEquipmentScheduleReference_type;
-        typedef ::xsd::cxx::tree::optional< T24BaselineGasEquipmentScheduleReference_type, false > T24BaselineGasEquipmentScheduleReference_optional;
-        typedef ::xsd::cxx::tree::traits< T24BaselineGasEquipmentScheduleReference_type, char > T24BaselineGasEquipmentScheduleReference_traits;
-
-        const T24BaselineGasEquipmentScheduleReference_optional&
-        T24BaselineGasEquipmentScheduleReference () const;
-
-        T24BaselineGasEquipmentScheduleReference_optional&
-        T24BaselineGasEquipmentScheduleReference ();
-
-        void
-        T24BaselineGasEquipmentScheduleReference (const T24BaselineGasEquipmentScheduleReference_type& x);
-
-        void
-        T24BaselineGasEquipmentScheduleReference (const T24BaselineGasEquipmentScheduleReference_optional& x);
-
-        void
-        T24BaselineGasEquipmentScheduleReference (::std::auto_ptr< T24BaselineGasEquipmentScheduleReference_type > p);
-
-        // T24BaselineReceptaclePowerDensity
-        //
-        typedef ::xml_schema::double_ T24BaselineReceptaclePowerDensity_type;
-        typedef ::xsd::cxx::tree::optional< T24BaselineReceptaclePowerDensity_type, true > T24BaselineReceptaclePowerDensity_optional;
-        typedef ::xsd::cxx::tree::traits< T24BaselineReceptaclePowerDensity_type, char, ::xsd::cxx::tree::schema_type::double_ > T24BaselineReceptaclePowerDensity_traits;
-
-        const T24BaselineReceptaclePowerDensity_optional&
-        T24BaselineReceptaclePowerDensity () const;
-
-        T24BaselineReceptaclePowerDensity_optional&
-        T24BaselineReceptaclePowerDensity ();
-
-        void
-        T24BaselineReceptaclePowerDensity (const T24BaselineReceptaclePowerDensity_type& x);
-
-        void
-        T24BaselineReceptaclePowerDensity (const T24BaselineReceptaclePowerDensity_optional& x);
-
-        // T24BaselineReceptacleScheduleReference
-        //
-        typedef ::xml_schema::idref T24BaselineReceptacleScheduleReference_type;
-        typedef ::xsd::cxx::tree::optional< T24BaselineReceptacleScheduleReference_type, false > T24BaselineReceptacleScheduleReference_optional;
-        typedef ::xsd::cxx::tree::traits< T24BaselineReceptacleScheduleReference_type, char > T24BaselineReceptacleScheduleReference_traits;
-
-        const T24BaselineReceptacleScheduleReference_optional&
-        T24BaselineReceptacleScheduleReference () const;
-
-        T24BaselineReceptacleScheduleReference_optional&
-        T24BaselineReceptacleScheduleReference ();
-
-        void
-        T24BaselineReceptacleScheduleReference (const T24BaselineReceptacleScheduleReference_type& x);
-
-        void
-        T24BaselineReceptacleScheduleReference (const T24BaselineReceptacleScheduleReference_optional& x);
-
-        void
-        T24BaselineReceptacleScheduleReference (::std::auto_ptr< T24BaselineReceptacleScheduleReference_type > p);
-
         // T24CommRefrigEPD
         //
         typedef ::xml_schema::double_ T24CommRefrigEPD_type;
@@ -515,24 +387,6 @@ namespace schema
 
         void
         T24CommRefrigEPD (const T24CommRefrigEPD_optional& x);
-
-        // T24CommercialRefrigerationEPDExceptionalCondition
-        //
-        typedef ::xml_schema::int_ T24CommercialRefrigerationEPDExceptionalCondition_type;
-        typedef ::xsd::cxx::tree::optional< T24CommercialRefrigerationEPDExceptionalCondition_type, true > T24CommercialRefrigerationEPDExceptionalCondition_optional;
-        typedef ::xsd::cxx::tree::traits< T24CommercialRefrigerationEPDExceptionalCondition_type, char > T24CommercialRefrigerationEPDExceptionalCondition_traits;
-
-        const T24CommercialRefrigerationEPDExceptionalCondition_optional&
-        T24CommercialRefrigerationEPDExceptionalCondition () const;
-
-        T24CommercialRefrigerationEPDExceptionalCondition_optional&
-        T24CommercialRefrigerationEPDExceptionalCondition ();
-
-        void
-        T24CommercialRefrigerationEPDExceptionalCondition (const T24CommercialRefrigerationEPDExceptionalCondition_type& x);
-
-        void
-        T24CommercialRefrigerationEPDExceptionalCondition (const T24CommercialRefrigerationEPDExceptionalCondition_optional& x);
 
         // T24CommRefrigEqmtSchedRef
         //
@@ -684,6 +538,24 @@ namespace schema
         void
         T24ExhaustPerSpace (const T24ExhaustPerSpace_optional& x);
 
+        // T24HasProcessExhaust
+        //
+        typedef ::xml_schema::int_ T24HasProcessExhaust_type;
+        typedef ::xsd::cxx::tree::optional< T24HasProcessExhaust_type, true > T24HasProcessExhaust_optional;
+        typedef ::xsd::cxx::tree::traits< T24HasProcessExhaust_type, char > T24HasProcessExhaust_traits;
+
+        const T24HasProcessExhaust_optional&
+        T24HasProcessExhaust () const;
+
+        T24HasProcessExhaust_optional&
+        T24HasProcessExhaust ();
+
+        void
+        T24HasProcessExhaust (const T24HasProcessExhaust_type& x);
+
+        void
+        T24HasProcessExhaust (const T24HasProcessExhaust_optional& x);
+
         // T24IntLightingSpecMethod
         //
         typedef ::xml_schema::string T24IntLightingSpecMethod_type;
@@ -726,47 +598,47 @@ namespace schema
         void
         T24KitchExhHoodDutyList (::std::auto_ptr< T24KitchExhHoodDutyList_type > p);
 
-        // T24KitchExhHoodFlow
+        // T24KitchExhHoodFlowList
         //
-        typedef ::schema::simxml::SimModelCore::doubleList T24KitchExhHoodFlow_type;
-        typedef ::xsd::cxx::tree::optional< T24KitchExhHoodFlow_type > T24KitchExhHoodFlow_optional;
-        typedef ::xsd::cxx::tree::traits< T24KitchExhHoodFlow_type, char > T24KitchExhHoodFlow_traits;
+        typedef ::schema::simxml::SimModelCore::doubleList T24KitchExhHoodFlowList_type;
+        typedef ::xsd::cxx::tree::optional< T24KitchExhHoodFlowList_type, false > T24KitchExhHoodFlowList_optional;
+        typedef ::xsd::cxx::tree::traits< T24KitchExhHoodFlowList_type, char > T24KitchExhHoodFlowList_traits;
 
-        const T24KitchExhHoodFlow_optional&
-        T24KitchExhHoodFlow () const;
+        const T24KitchExhHoodFlowList_optional&
+        T24KitchExhHoodFlowList () const;
 
-        T24KitchExhHoodFlow_optional&
-        T24KitchExhHoodFlow ();
-
-        void
-        T24KitchExhHoodFlow (const T24KitchExhHoodFlow_type& x);
+        T24KitchExhHoodFlowList_optional&
+        T24KitchExhHoodFlowList ();
 
         void
-        T24KitchExhHoodFlow (const T24KitchExhHoodFlow_optional& x);
+        T24KitchExhHoodFlowList (const T24KitchExhHoodFlowList_type& x);
 
         void
-        T24KitchExhHoodFlow (::std::auto_ptr< T24KitchExhHoodFlow_type > p);
+        T24KitchExhHoodFlowList (const T24KitchExhHoodFlowList_optional& x);
 
-        // T24KitchExhHoodLength
+        void
+        T24KitchExhHoodFlowList (::std::auto_ptr< T24KitchExhHoodFlowList_type > p);
+
+        // T24KitchExhHoodLengthList
         //
-        typedef ::schema::simxml::SimModelCore::doubleList T24KitchExhHoodLength_type;
-        typedef ::xsd::cxx::tree::optional< T24KitchExhHoodLength_type > T24KitchExhHoodLength_optional;
-        typedef ::xsd::cxx::tree::traits< T24KitchExhHoodLength_type, char > T24KitchExhHoodLength_traits;
+        typedef ::schema::simxml::SimModelCore::doubleList T24KitchExhHoodLengthList_type;
+        typedef ::xsd::cxx::tree::optional< T24KitchExhHoodLengthList_type, false > T24KitchExhHoodLengthList_optional;
+        typedef ::xsd::cxx::tree::traits< T24KitchExhHoodLengthList_type, char > T24KitchExhHoodLengthList_traits;
 
-        const T24KitchExhHoodLength_optional&
-        T24KitchExhHoodLength () const;
+        const T24KitchExhHoodLengthList_optional&
+        T24KitchExhHoodLengthList () const;
 
-        T24KitchExhHoodLength_optional&
-        T24KitchExhHoodLength ();
-
-        void
-        T24KitchExhHoodLength (const T24KitchExhHoodLength_type& x);
+        T24KitchExhHoodLengthList_optional&
+        T24KitchExhHoodLengthList ();
 
         void
-        T24KitchExhHoodLength (const T24KitchExhHoodLength_optional& x);
+        T24KitchExhHoodLengthList (const T24KitchExhHoodLengthList_type& x);
 
         void
-        T24KitchExhHoodLength (::std::auto_ptr< T24KitchExhHoodLength_type > p);
+        T24KitchExhHoodLengthList (const T24KitchExhHoodLengthList_optional& x);
+
+        void
+        T24KitchExhHoodLengthList (::std::auto_ptr< T24KitchExhHoodLengthList_type > p);
 
         // T24KitchExhHoodStyleList
         //
@@ -872,27 +744,6 @@ namespace schema
 
         void
         T24MandLightCntrlDescRpt (::std::auto_ptr< T24MandLightCntrlDescRpt_type > p);
-
-        // T24MandLightCntrlRpt
-        //
-        typedef ::schema::simxml::BuildingModel::T24MandLightCntrlRpt T24MandLightCntrlRpt_type;
-        typedef ::xsd::cxx::tree::optional< T24MandLightCntrlRpt_type > T24MandLightCntrlRpt_optional;
-        typedef ::xsd::cxx::tree::traits< T24MandLightCntrlRpt_type, char > T24MandLightCntrlRpt_traits;
-
-        const T24MandLightCntrlRpt_optional&
-        T24MandLightCntrlRpt () const;
-
-        T24MandLightCntrlRpt_optional&
-        T24MandLightCntrlRpt ();
-
-        void
-        T24MandLightCntrlRpt (const T24MandLightCntrlRpt_type& x);
-
-        void
-        T24MandLightCntrlRpt (const T24MandLightCntrlRpt_optional& x);
-
-        void
-        T24MandLightCntrlRpt (::std::auto_ptr< T24MandLightCntrlRpt_type > p);
 
         // T24MandLightCntrlAccepReqRpt
         //
@@ -1115,14 +966,7 @@ namespace schema
                ::xml_schema::flags);
 
         protected:
-        T24BaselineCommercialRefrigerationEPD_optional T24BaselineCommercialRefrigerationEPD_;
-        T24BaselineCommercialRefrigerationEquipmentScheduleReference_optional T24BaselineCommercialRefrigerationEquipmentScheduleReference_;
-        T24BaselineGasEquipmentPowerDensity_optional T24BaselineGasEquipmentPowerDensity_;
-        T24BaselineGasEquipmentScheduleReference_optional T24BaselineGasEquipmentScheduleReference_;
-        T24BaselineReceptaclePowerDensity_optional T24BaselineReceptaclePowerDensity_;
-        T24BaselineReceptacleScheduleReference_optional T24BaselineReceptacleScheduleReference_;
         T24CommRefrigEPD_optional T24CommRefrigEPD_;
-        T24CommercialRefrigerationEPDExceptionalCondition_optional T24CommercialRefrigerationEPDExceptionalCondition_;
         T24CommRefrigEqmtSchedRef_optional T24CommRefrigEqmtSchedRef_;
         T24CommRefrigLatentFraction_optional T24CommRefrigLatentFraction_;
         T24CommRefrigLostFraction_optional T24CommRefrigLostFraction_;
@@ -1131,16 +975,16 @@ namespace schema
         T24ExhaustAirChangesPerHour_optional T24ExhaustAirChangesPerHour_;
         T24ExhaustPerArea_optional T24ExhaustPerArea_;
         T24ExhaustPerSpace_optional T24ExhaustPerSpace_;
+        T24HasProcessExhaust_optional T24HasProcessExhaust_;
         T24IntLightingSpecMethod_optional T24IntLightingSpecMethod_;
         T24KitchExhHoodDutyList_optional T24KitchExhHoodDutyList_;
-        T24KitchExhHoodFlow_optional T24KitchExhHoodFlow_;
-        T24KitchExhHoodLength_optional T24KitchExhHoodLength_;
+        T24KitchExhHoodFlowList_optional T24KitchExhHoodFlowList_;
+        T24KitchExhHoodLengthList_optional T24KitchExhHoodLengthList_;
         T24KitchExhHoodStyleList_optional T24KitchExhHoodStyleList_;
         T24LabExhRateType_optional T24LabExhRateType_;
         T24LightingStatus_optional T24LightingStatus_;
         T24MandLightCntrlCntRpt_optional T24MandLightCntrlCntRpt_;
         T24MandLightCntrlDescRpt_optional T24MandLightCntrlDescRpt_;
-        T24MandLightCntrlRpt_optional T24MandLightCntrlRpt_;
         T24MandLightCntrlAccepReqRpt_optional T24MandLightCntrlAccepReqRpt_;
         T24MandLightCntrlIsAutoShOffCntrlRpt_optional T24MandLightCntrlIsAutoShOffCntrlRpt_;
         T24MandLightCntrlIsDayltngCntrlRpt_optional T24MandLightCntrlIsDayltngCntrlRpt_;

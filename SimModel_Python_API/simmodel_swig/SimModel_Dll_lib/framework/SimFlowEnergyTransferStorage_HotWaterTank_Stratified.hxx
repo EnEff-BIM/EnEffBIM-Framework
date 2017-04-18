@@ -1336,6 +1336,24 @@ namespace schema
         void
         T24ElecIgnit (const T24ElecIgnit_optional& x);
 
+        // T24PilotEnergy
+        //
+        typedef ::xml_schema::double_ T24PilotEnergy_type;
+        typedef ::xsd::cxx::tree::optional< T24PilotEnergy_type > T24PilotEnergy_optional;
+        typedef ::xsd::cxx::tree::traits< T24PilotEnergy_type, char, ::xsd::cxx::tree::schema_type::double_ > T24PilotEnergy_traits;
+
+        const T24PilotEnergy_optional&
+        T24PilotEnergy () const;
+
+        T24PilotEnergy_optional&
+        T24PilotEnergy ();
+
+        void
+        T24PilotEnergy (const T24PilotEnergy_type& x);
+
+        void
+        T24PilotEnergy (const T24PilotEnergy_optional& x);
+
         // T24RecEff
         //
         typedef ::xml_schema::double_ T24RecEff_type;
@@ -1501,6 +1519,7 @@ namespace schema
         T24DraftFanPwr_optional T24DraftFanPwr_;
         T24EnergyFactor_optional T24EnergyFactor_;
         T24ElecIgnit_optional T24ElecIgnit_;
+        T24PilotEnergy_optional T24PilotEnergy_;
         T24RecEff_optional T24RecEff_;
         T24StdbyLossFrac_optional T24StdbyLossFrac_;
         T24ConstructStatus2_optional T24ConstructStatus2_;

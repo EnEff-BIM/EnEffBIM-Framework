@@ -130,6 +130,12 @@ class SimSpaceBoundary(base.SimResourceObject):
     def ChildSpaceBoundaries(self, *args):
         return _SimSpaceBoundary_SecondLevel_SubTypeA.SimSpaceBoundary_ChildSpaceBoundaries(self, *args)
 
+    def GrossSurfaceArea(self, *args):
+        return _SimSpaceBoundary_SecondLevel_SubTypeA.SimSpaceBoundary_GrossSurfaceArea(self, *args)
+
+    def SurfaceNormal(self, *args):
+        return _SimSpaceBoundary_SecondLevel_SubTypeA.SimSpaceBoundary_SurfaceNormal(self, *args)
+
     def __init__(self, *args):
         this = _SimSpaceBoundary_SecondLevel_SubTypeA.new_SimSpaceBoundary(*args)
         try:

@@ -44,7 +44,7 @@ namespace schema
 {
   namespace simxml
   {
-    namespace BuildingModel
+    namespace SimModelCore
     {
       // SimBuildingElementAssembly
       // 
@@ -67,7 +67,7 @@ namespace schema
 {
   namespace simxml
   {
-    namespace BuildingModel
+    namespace SimModelCore
     {
       // SimBuildingElementAssembly
       //
@@ -123,7 +123,7 @@ namespace schema
 {
   namespace simxml
   {
-    namespace BuildingModel
+    namespace SimModelCore
     {
     }
   }

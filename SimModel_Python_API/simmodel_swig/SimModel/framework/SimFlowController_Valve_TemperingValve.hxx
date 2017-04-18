@@ -50,7 +50,7 @@
 #include <xsd/cxx/config.hxx>
 
 #if (XSD_INT_VERSION != 4000000L)
-#error XSD runtime version mismatch
+//#error XSD runtime version mismatch
 #endif
 
 #include <xsd/cxx/pre.hxx>
@@ -263,7 +263,7 @@ namespace schema
         // SimFlowCntrl_Name
         //
         typedef ::xml_schema::string SimFlowCntrl_Name_type;
-        typedef ::xsd::cxx::tree::optional< SimFlowCntrl_Name_type > SimFlowCntrl_Name_optional;
+        typedef ::xsd::cxx::tree::optional< SimFlowCntrl_Name_type, false > SimFlowCntrl_Name_optional;
         typedef ::xsd::cxx::tree::traits< SimFlowCntrl_Name_type, char > SimFlowCntrl_Name_traits;
 
         const SimFlowCntrl_Name_optional&
@@ -284,7 +284,7 @@ namespace schema
         // SimFlowCntrl_InNodeName
         //
         typedef ::xml_schema::string SimFlowCntrl_InNodeName_type;
-        typedef ::xsd::cxx::tree::optional< SimFlowCntrl_InNodeName_type > SimFlowCntrl_InNodeName_optional;
+        typedef ::xsd::cxx::tree::optional< SimFlowCntrl_InNodeName_type, false > SimFlowCntrl_InNodeName_optional;
         typedef ::xsd::cxx::tree::traits< SimFlowCntrl_InNodeName_type, char > SimFlowCntrl_InNodeName_traits;
 
         const SimFlowCntrl_InNodeName_optional&
@@ -305,7 +305,7 @@ namespace schema
         // SimFlowCntrl_OutNodeName
         //
         typedef ::xml_schema::string SimFlowCntrl_OutNodeName_type;
-        typedef ::xsd::cxx::tree::optional< SimFlowCntrl_OutNodeName_type > SimFlowCntrl_OutNodeName_optional;
+        typedef ::xsd::cxx::tree::optional< SimFlowCntrl_OutNodeName_type, false > SimFlowCntrl_OutNodeName_optional;
         typedef ::xsd::cxx::tree::traits< SimFlowCntrl_OutNodeName_type, char > SimFlowCntrl_OutNodeName_traits;
 
         const SimFlowCntrl_OutNodeName_optional&
@@ -326,7 +326,7 @@ namespace schema
         // SimFlowCntrl_Stream2SrcNodeName
         //
         typedef ::xml_schema::string SimFlowCntrl_Stream2SrcNodeName_type;
-        typedef ::xsd::cxx::tree::optional< SimFlowCntrl_Stream2SrcNodeName_type > SimFlowCntrl_Stream2SrcNodeName_optional;
+        typedef ::xsd::cxx::tree::optional< SimFlowCntrl_Stream2SrcNodeName_type, false > SimFlowCntrl_Stream2SrcNodeName_optional;
         typedef ::xsd::cxx::tree::traits< SimFlowCntrl_Stream2SrcNodeName_type, char > SimFlowCntrl_Stream2SrcNodeName_traits;
 
         const SimFlowCntrl_Stream2SrcNodeName_optional&
@@ -347,7 +347,7 @@ namespace schema
         // SimFlowCntrl_TempSetpointNodeName
         //
         typedef ::xml_schema::string SimFlowCntrl_TempSetpointNodeName_type;
-        typedef ::xsd::cxx::tree::optional< SimFlowCntrl_TempSetpointNodeName_type > SimFlowCntrl_TempSetpointNodeName_optional;
+        typedef ::xsd::cxx::tree::optional< SimFlowCntrl_TempSetpointNodeName_type, false > SimFlowCntrl_TempSetpointNodeName_optional;
         typedef ::xsd::cxx::tree::traits< SimFlowCntrl_TempSetpointNodeName_type, char > SimFlowCntrl_TempSetpointNodeName_traits;
 
         const SimFlowCntrl_TempSetpointNodeName_optional&
@@ -368,7 +368,7 @@ namespace schema
         // SimFlowCntrl_PumpOutletNodeName
         //
         typedef ::xml_schema::string SimFlowCntrl_PumpOutletNodeName_type;
-        typedef ::xsd::cxx::tree::optional< SimFlowCntrl_PumpOutletNodeName_type > SimFlowCntrl_PumpOutletNodeName_optional;
+        typedef ::xsd::cxx::tree::optional< SimFlowCntrl_PumpOutletNodeName_type, false > SimFlowCntrl_PumpOutletNodeName_optional;
         typedef ::xsd::cxx::tree::traits< SimFlowCntrl_PumpOutletNodeName_type, char > SimFlowCntrl_PumpOutletNodeName_traits;
 
         const SimFlowCntrl_PumpOutletNodeName_optional&

@@ -260,27 +260,6 @@ namespace schema
       class SimFlowEnergyTransfer_CoolingCoilWater_CoilAirCoolingWaterSimple: public ::schema::simxml::MepModel::SimFlowEnergyTransfer_CoolingCoilWater
       {
         public:
-        // SimFlowEnergyTrans_Name
-        //
-        typedef ::xml_schema::string SimFlowEnergyTrans_Name_type;
-        typedef ::xsd::cxx::tree::optional< SimFlowEnergyTrans_Name_type > SimFlowEnergyTrans_Name_optional;
-        typedef ::xsd::cxx::tree::traits< SimFlowEnergyTrans_Name_type, char > SimFlowEnergyTrans_Name_traits;
-
-        const SimFlowEnergyTrans_Name_optional&
-        SimFlowEnergyTrans_Name () const;
-
-        SimFlowEnergyTrans_Name_optional&
-        SimFlowEnergyTrans_Name ();
-
-        void
-        SimFlowEnergyTrans_Name (const SimFlowEnergyTrans_Name_type& x);
-
-        void
-        SimFlowEnergyTrans_Name (const SimFlowEnergyTrans_Name_optional& x);
-
-        void
-        SimFlowEnergyTrans_Name (::std::auto_ptr< SimFlowEnergyTrans_Name_type > p);
-
         // SimFlowEnergyTrans_AvailSchedName
         //
         typedef ::xml_schema::idref SimFlowEnergyTrans_AvailSchedName_type;
@@ -755,6 +734,42 @@ namespace schema
         void
         Controller_WaterCoil_MinActuatedFlow (const Controller_WaterCoil_MinActuatedFlow_optional& x);
 
+        // T24BypassMinimumEfficiencyCheck
+        //
+        typedef ::xml_schema::int_ T24BypassMinimumEfficiencyCheck_type;
+        typedef ::xsd::cxx::tree::optional< T24BypassMinimumEfficiencyCheck_type > T24BypassMinimumEfficiencyCheck_optional;
+        typedef ::xsd::cxx::tree::traits< T24BypassMinimumEfficiencyCheck_type, char > T24BypassMinimumEfficiencyCheck_traits;
+
+        const T24BypassMinimumEfficiencyCheck_optional&
+        T24BypassMinimumEfficiencyCheck () const;
+
+        T24BypassMinimumEfficiencyCheck_optional&
+        T24BypassMinimumEfficiencyCheck ();
+
+        void
+        T24BypassMinimumEfficiencyCheck (const T24BypassMinimumEfficiencyCheck_type& x);
+
+        void
+        T24BypassMinimumEfficiencyCheck (const T24BypassMinimumEfficiencyCheck_optional& x);
+
+        // T24CoilPressureDrop
+        //
+        typedef ::xml_schema::double_ T24CoilPressureDrop_type;
+        typedef ::xsd::cxx::tree::optional< T24CoilPressureDrop_type > T24CoilPressureDrop_optional;
+        typedef ::xsd::cxx::tree::traits< T24CoilPressureDrop_type, char, ::xsd::cxx::tree::schema_type::double_ > T24CoilPressureDrop_traits;
+
+        const T24CoilPressureDrop_optional&
+        T24CoilPressureDrop () const;
+
+        T24CoilPressureDrop_optional&
+        T24CoilPressureDrop ();
+
+        void
+        T24CoilPressureDrop (const T24CoilPressureDrop_type& x);
+
+        void
+        T24CoilPressureDrop (const T24CoilPressureDrop_optional& x);
+
         // T24FuelSrc
         //
         typedef ::xml_schema::string T24FuelSrc_type;
@@ -808,7 +823,6 @@ namespace schema
                ::xml_schema::flags);
 
         protected:
-        SimFlowEnergyTrans_Name_optional SimFlowEnergyTrans_Name_;
         SimFlowEnergyTrans_AvailSchedName_optional SimFlowEnergyTrans_AvailSchedName_;
         SimFlowEnergyTrans_DesignWaterFlowRate_optional SimFlowEnergyTrans_DesignWaterFlowRate_;
         SimFlowEnergyTrans_DesignAirFlowRate_optional SimFlowEnergyTrans_DesignAirFlowRate_;
@@ -833,6 +847,8 @@ namespace schema
         Controller_WaterCoil_CntrlrConvergenceTolerance_optional Controller_WaterCoil_CntrlrConvergenceTolerance_;
         Controller_WaterCoil_MaxActuatedFlow_optional Controller_WaterCoil_MaxActuatedFlow_;
         Controller_WaterCoil_MinActuatedFlow_optional Controller_WaterCoil_MinActuatedFlow_;
+        T24BypassMinimumEfficiencyCheck_optional T24BypassMinimumEfficiencyCheck_;
+        T24CoilPressureDrop_optional T24CoilPressureDrop_;
         T24FuelSrc_optional T24FuelSrc_;
       };
     }

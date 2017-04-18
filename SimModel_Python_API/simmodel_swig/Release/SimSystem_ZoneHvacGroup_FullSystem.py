@@ -114,29 +114,68 @@ class SimSystem_ZoneHvacGroup_FullSystem(SimSystem_ZoneHvacGroup_Control.SimSyst
     def T24AcceptTestReq(self, *args):
         return _SimSystem_ZoneHvacGroup_FullSystem.SimSystem_ZoneHvacGroup_FullSystem_T24AcceptTestReq(self, *args)
 
+    def T24DuctInsulation(self, *args):
+        return _SimSystem_ZoneHvacGroup_FullSystem.SimSystem_ZoneHvacGroup_FullSystem_T24DuctInsulation(self, *args)
+
+    def T24DuctLocation(self, *args):
+        return _SimSystem_ZoneHvacGroup_FullSystem.SimSystem_ZoneHvacGroup_FullSystem_T24DuctLocation(self, *args)
+
     def T24ExhCntrlMeth(self, *args):
         return _SimSystem_ZoneHvacGroup_FullSystem.SimSystem_ZoneHvacGroup_FullSystem_T24ExhCntrlMeth(self, *args)
 
     def T24ExhSysType(self, *args):
         return _SimSystem_ZoneHvacGroup_FullSystem.SimSystem_ZoneHvacGroup_FullSystem_T24ExhSysType(self, *args)
 
-    def T24Mch03A(self, *args):
-        return _SimSystem_ZoneHvacGroup_FullSystem.SimSystem_ZoneHvacGroup_FullSystem_T24Mch03A(self, *args)
+    def T24NRCAMch02A(self, *args):
+        return _SimSystem_ZoneHvacGroup_FullSystem.SimSystem_ZoneHvacGroup_FullSystem_T24NRCAMch02A(self, *args)
 
-    def T24Mch04A(self, *args):
-        return _SimSystem_ZoneHvacGroup_FullSystem.SimSystem_ZoneHvacGroup_FullSystem_T24Mch04A(self, *args)
+    def T24NRCAMch03A(self, *args):
+        return _SimSystem_ZoneHvacGroup_FullSystem.SimSystem_ZoneHvacGroup_FullSystem_T24NRCAMch03A(self, *args)
 
-    def T24Mch02A(self, *args):
-        return _SimSystem_ZoneHvacGroup_FullSystem.SimSystem_ZoneHvacGroup_FullSystem_T24Mch02A(self, *args)
+    def T24NRCAMch04A(self, *args):
+        return _SimSystem_ZoneHvacGroup_FullSystem.SimSystem_ZoneHvacGroup_FullSystem_T24NRCAMch04A(self, *args)
 
-    def T24Mch09A(self, *args):
-        return _SimSystem_ZoneHvacGroup_FullSystem.SimSystem_ZoneHvacGroup_FullSystem_T24Mch09A(self, *args)
+    def T24NRCAMch05A(self, *args):
+        return _SimSystem_ZoneHvacGroup_FullSystem.SimSystem_ZoneHvacGroup_FullSystem_T24NRCAMch05A(self, *args)
 
-    def T24Mch15A(self, *args):
-        return _SimSystem_ZoneHvacGroup_FullSystem.SimSystem_ZoneHvacGroup_FullSystem_T24Mch15A(self, *args)
+    def T24NRCAMch06A(self, *args):
+        return _SimSystem_ZoneHvacGroup_FullSystem.SimSystem_ZoneHvacGroup_FullSystem_T24NRCAMch06A(self, *args)
 
-    def T24Mch17A(self, *args):
-        return _SimSystem_ZoneHvacGroup_FullSystem.SimSystem_ZoneHvacGroup_FullSystem_T24Mch17A(self, *args)
+    def T24NRCAMch07A(self, *args):
+        return _SimSystem_ZoneHvacGroup_FullSystem.SimSystem_ZoneHvacGroup_FullSystem_T24NRCAMch07A(self, *args)
+
+    def T24NRCAMch08A(self, *args):
+        return _SimSystem_ZoneHvacGroup_FullSystem.SimSystem_ZoneHvacGroup_FullSystem_T24NRCAMch08A(self, *args)
+
+    def T24NRCAMch09A(self, *args):
+        return _SimSystem_ZoneHvacGroup_FullSystem.SimSystem_ZoneHvacGroup_FullSystem_T24NRCAMch09A(self, *args)
+
+    def T24NRCAMch10A(self, *args):
+        return _SimSystem_ZoneHvacGroup_FullSystem.SimSystem_ZoneHvacGroup_FullSystem_T24NRCAMch10A(self, *args)
+
+    def T24NRCAMch11A(self, *args):
+        return _SimSystem_ZoneHvacGroup_FullSystem.SimSystem_ZoneHvacGroup_FullSystem_T24NRCAMch11A(self, *args)
+
+    def T24NRCAMch12A(self, *args):
+        return _SimSystem_ZoneHvacGroup_FullSystem.SimSystem_ZoneHvacGroup_FullSystem_T24NRCAMch12A(self, *args)
+
+    def T24NRCAMch13A(self, *args):
+        return _SimSystem_ZoneHvacGroup_FullSystem.SimSystem_ZoneHvacGroup_FullSystem_T24NRCAMch13A(self, *args)
+
+    def T24NRCAMch14A(self, *args):
+        return _SimSystem_ZoneHvacGroup_FullSystem.SimSystem_ZoneHvacGroup_FullSystem_T24NRCAMch14A(self, *args)
+
+    def T24NRCAMch15A(self, *args):
+        return _SimSystem_ZoneHvacGroup_FullSystem.SimSystem_ZoneHvacGroup_FullSystem_T24NRCAMch15A(self, *args)
+
+    def T24NRCAMch16A(self, *args):
+        return _SimSystem_ZoneHvacGroup_FullSystem.SimSystem_ZoneHvacGroup_FullSystem_T24NRCAMch16A(self, *args)
+
+    def T24NRCAMch17A(self, *args):
+        return _SimSystem_ZoneHvacGroup_FullSystem.SimSystem_ZoneHvacGroup_FullSystem_T24NRCAMch17A(self, *args)
+
+    def T24NRCAMch18A(self, *args):
+        return _SimSystem_ZoneHvacGroup_FullSystem.SimSystem_ZoneHvacGroup_FullSystem_T24NRCAMch18A(self, *args)
 
     def T24ConstructStatus3(self, *args):
         return _SimSystem_ZoneHvacGroup_FullSystem.SimSystem_ZoneHvacGroup_FullSystem_T24ConstructStatus3(self, *args)

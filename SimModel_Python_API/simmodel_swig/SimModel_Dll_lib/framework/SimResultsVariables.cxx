@@ -898,9 +898,9 @@ namespace schema
             }
           }
 
-          // Unit.String
+          // Unit_String
           //
-          if (n.name () == "Unit.String" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/ResourcesGeneral")
+          if (n.name () == "Unit_String" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/ResourcesGeneral")
           {
             ::std::auto_ptr< Unit_String_type > r (
               Unit_String_traits::create (i, f, this));
@@ -940,9 +940,9 @@ namespace schema
             }
           }
 
-          // TimeStep.String
+          // TimeStep_String
           //
-          if (n.name () == "TimeStep.String" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/ResourcesGeneral")
+          if (n.name () == "TimeStep_String" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/ResourcesGeneral")
           {
             ::std::auto_ptr< TimeStep_String_type > r (
               TimeStep_String_traits::create (i, f, this));

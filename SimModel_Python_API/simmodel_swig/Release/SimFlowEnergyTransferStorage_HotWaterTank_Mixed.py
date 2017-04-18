@@ -342,6 +342,9 @@ class SimFlowEnergyTransferStorage_HotWaterTank_Mixed(SimFlowEnergyTransferStora
     def T24ElecIgnit(self, *args):
         return _SimFlowEnergyTransferStorage_HotWaterTank_Mixed.SimFlowEnergyTransferStorage_HotWaterTank_Mixed_T24ElecIgnit(self, *args)
 
+    def T24PilotEnergy(self, *args):
+        return _SimFlowEnergyTransferStorage_HotWaterTank_Mixed.SimFlowEnergyTransferStorage_HotWaterTank_Mixed_T24PilotEnergy(self, *args)
+
     def T24RecEff(self, *args):
         return _SimFlowEnergyTransferStorage_HotWaterTank_Mixed.SimFlowEnergyTransferStorage_HotWaterTank_Mixed_T24RecEff(self, *args)
 

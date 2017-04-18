@@ -260,6 +260,234 @@ namespace schema
       class SimFlowPlant_ElectricalGenerator_FuelCellAuxilaryHeater: public ::schema::simxml::MepModel::SimFlowPlant_ElectricalGenerator
       {
         public:
+        // SimFlowPlant_Name
+        //
+        typedef ::xml_schema::string SimFlowPlant_Name_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_Name_type > SimFlowPlant_Name_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_Name_type, char > SimFlowPlant_Name_traits;
+
+        const SimFlowPlant_Name_optional&
+        SimFlowPlant_Name () const;
+
+        SimFlowPlant_Name_optional&
+        SimFlowPlant_Name ();
+
+        void
+        SimFlowPlant_Name (const SimFlowPlant_Name_type& x);
+
+        void
+        SimFlowPlant_Name (const SimFlowPlant_Name_optional& x);
+
+        void
+        SimFlowPlant_Name (::std::auto_ptr< SimFlowPlant_Name_type > p);
+
+        // SimFlowPlant_ExcessAirRatio
+        //
+        typedef ::xml_schema::double_ SimFlowPlant_ExcessAirRatio_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_ExcessAirRatio_type > SimFlowPlant_ExcessAirRatio_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_ExcessAirRatio_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_ExcessAirRatio_traits;
+
+        const SimFlowPlant_ExcessAirRatio_optional&
+        SimFlowPlant_ExcessAirRatio () const;
+
+        SimFlowPlant_ExcessAirRatio_optional&
+        SimFlowPlant_ExcessAirRatio ();
+
+        void
+        SimFlowPlant_ExcessAirRatio (const SimFlowPlant_ExcessAirRatio_type& x);
+
+        void
+        SimFlowPlant_ExcessAirRatio (const SimFlowPlant_ExcessAirRatio_optional& x);
+
+        // SimFlowPlant_AncilliaryPowerConstantTerm
+        //
+        typedef ::xml_schema::double_ SimFlowPlant_AncilliaryPowerConstantTerm_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_AncilliaryPowerConstantTerm_type > SimFlowPlant_AncilliaryPowerConstantTerm_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_AncilliaryPowerConstantTerm_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_AncilliaryPowerConstantTerm_traits;
+
+        const SimFlowPlant_AncilliaryPowerConstantTerm_optional&
+        SimFlowPlant_AncilliaryPowerConstantTerm () const;
+
+        SimFlowPlant_AncilliaryPowerConstantTerm_optional&
+        SimFlowPlant_AncilliaryPowerConstantTerm ();
+
+        void
+        SimFlowPlant_AncilliaryPowerConstantTerm (const SimFlowPlant_AncilliaryPowerConstantTerm_type& x);
+
+        void
+        SimFlowPlant_AncilliaryPowerConstantTerm (const SimFlowPlant_AncilliaryPowerConstantTerm_optional& x);
+
+        // SimFlowPlant_AncilliaryPowerLinearTerm
+        //
+        typedef ::xml_schema::double_ SimFlowPlant_AncilliaryPowerLinearTerm_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_AncilliaryPowerLinearTerm_type > SimFlowPlant_AncilliaryPowerLinearTerm_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_AncilliaryPowerLinearTerm_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_AncilliaryPowerLinearTerm_traits;
+
+        const SimFlowPlant_AncilliaryPowerLinearTerm_optional&
+        SimFlowPlant_AncilliaryPowerLinearTerm () const;
+
+        SimFlowPlant_AncilliaryPowerLinearTerm_optional&
+        SimFlowPlant_AncilliaryPowerLinearTerm ();
+
+        void
+        SimFlowPlant_AncilliaryPowerLinearTerm (const SimFlowPlant_AncilliaryPowerLinearTerm_type& x);
+
+        void
+        SimFlowPlant_AncilliaryPowerLinearTerm (const SimFlowPlant_AncilliaryPowerLinearTerm_optional& x);
+
+        // SimFlowPlant_SkinLossU_FactorTimesAreaValue
+        //
+        typedef ::xml_schema::double_ SimFlowPlant_SkinLossU_FactorTimesAreaValue_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_SkinLossU_FactorTimesAreaValue_type > SimFlowPlant_SkinLossU_FactorTimesAreaValue_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_SkinLossU_FactorTimesAreaValue_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_SkinLossU_FactorTimesAreaValue_traits;
+
+        const SimFlowPlant_SkinLossU_FactorTimesAreaValue_optional&
+        SimFlowPlant_SkinLossU_FactorTimesAreaValue () const;
+
+        SimFlowPlant_SkinLossU_FactorTimesAreaValue_optional&
+        SimFlowPlant_SkinLossU_FactorTimesAreaValue ();
+
+        void
+        SimFlowPlant_SkinLossU_FactorTimesAreaValue (const SimFlowPlant_SkinLossU_FactorTimesAreaValue_type& x);
+
+        void
+        SimFlowPlant_SkinLossU_FactorTimesAreaValue (const SimFlowPlant_SkinLossU_FactorTimesAreaValue_optional& x);
+
+        // SimFlowPlant_SkinLossDestination
+        //
+        typedef ::xml_schema::string SimFlowPlant_SkinLossDestination_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_SkinLossDestination_type > SimFlowPlant_SkinLossDestination_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_SkinLossDestination_type, char > SimFlowPlant_SkinLossDestination_traits;
+
+        const SimFlowPlant_SkinLossDestination_optional&
+        SimFlowPlant_SkinLossDestination () const;
+
+        SimFlowPlant_SkinLossDestination_optional&
+        SimFlowPlant_SkinLossDestination ();
+
+        void
+        SimFlowPlant_SkinLossDestination (const SimFlowPlant_SkinLossDestination_type& x);
+
+        void
+        SimFlowPlant_SkinLossDestination (const SimFlowPlant_SkinLossDestination_optional& x);
+
+        void
+        SimFlowPlant_SkinLossDestination (::std::auto_ptr< SimFlowPlant_SkinLossDestination_type > p);
+
+        // SimFlowPlant_ZoneNametoReceiveSkinLosses
+        //
+        typedef ::xml_schema::idref SimFlowPlant_ZoneNametoReceiveSkinLosses_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_ZoneNametoReceiveSkinLosses_type > SimFlowPlant_ZoneNametoReceiveSkinLosses_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_ZoneNametoReceiveSkinLosses_type, char > SimFlowPlant_ZoneNametoReceiveSkinLosses_traits;
+
+        const SimFlowPlant_ZoneNametoReceiveSkinLosses_optional&
+        SimFlowPlant_ZoneNametoReceiveSkinLosses () const;
+
+        SimFlowPlant_ZoneNametoReceiveSkinLosses_optional&
+        SimFlowPlant_ZoneNametoReceiveSkinLosses ();
+
+        void
+        SimFlowPlant_ZoneNametoReceiveSkinLosses (const SimFlowPlant_ZoneNametoReceiveSkinLosses_type& x);
+
+        void
+        SimFlowPlant_ZoneNametoReceiveSkinLosses (const SimFlowPlant_ZoneNametoReceiveSkinLosses_optional& x);
+
+        void
+        SimFlowPlant_ZoneNametoReceiveSkinLosses (::std::auto_ptr< SimFlowPlant_ZoneNametoReceiveSkinLosses_type > p);
+
+        // SimFlowPlant_HeatingCapacityUnits
+        //
+        typedef ::xml_schema::string SimFlowPlant_HeatingCapacityUnits_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_HeatingCapacityUnits_type > SimFlowPlant_HeatingCapacityUnits_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_HeatingCapacityUnits_type, char > SimFlowPlant_HeatingCapacityUnits_traits;
+
+        const SimFlowPlant_HeatingCapacityUnits_optional&
+        SimFlowPlant_HeatingCapacityUnits () const;
+
+        SimFlowPlant_HeatingCapacityUnits_optional&
+        SimFlowPlant_HeatingCapacityUnits ();
+
+        void
+        SimFlowPlant_HeatingCapacityUnits (const SimFlowPlant_HeatingCapacityUnits_type& x);
+
+        void
+        SimFlowPlant_HeatingCapacityUnits (const SimFlowPlant_HeatingCapacityUnits_optional& x);
+
+        void
+        SimFlowPlant_HeatingCapacityUnits (::std::auto_ptr< SimFlowPlant_HeatingCapacityUnits_type > p);
+
+        // SimFlowPlant_MaxHeatingCapacityinWatts
+        //
+        typedef ::xml_schema::double_ SimFlowPlant_MaxHeatingCapacityinWatts_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_MaxHeatingCapacityinWatts_type > SimFlowPlant_MaxHeatingCapacityinWatts_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_MaxHeatingCapacityinWatts_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_MaxHeatingCapacityinWatts_traits;
+
+        const SimFlowPlant_MaxHeatingCapacityinWatts_optional&
+        SimFlowPlant_MaxHeatingCapacityinWatts () const;
+
+        SimFlowPlant_MaxHeatingCapacityinWatts_optional&
+        SimFlowPlant_MaxHeatingCapacityinWatts ();
+
+        void
+        SimFlowPlant_MaxHeatingCapacityinWatts (const SimFlowPlant_MaxHeatingCapacityinWatts_type& x);
+
+        void
+        SimFlowPlant_MaxHeatingCapacityinWatts (const SimFlowPlant_MaxHeatingCapacityinWatts_optional& x);
+
+        // SimFlowPlant_MinHeatingCapacityinWatts
+        //
+        typedef ::xml_schema::double_ SimFlowPlant_MinHeatingCapacityinWatts_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_MinHeatingCapacityinWatts_type > SimFlowPlant_MinHeatingCapacityinWatts_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_MinHeatingCapacityinWatts_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_MinHeatingCapacityinWatts_traits;
+
+        const SimFlowPlant_MinHeatingCapacityinWatts_optional&
+        SimFlowPlant_MinHeatingCapacityinWatts () const;
+
+        SimFlowPlant_MinHeatingCapacityinWatts_optional&
+        SimFlowPlant_MinHeatingCapacityinWatts ();
+
+        void
+        SimFlowPlant_MinHeatingCapacityinWatts (const SimFlowPlant_MinHeatingCapacityinWatts_type& x);
+
+        void
+        SimFlowPlant_MinHeatingCapacityinWatts (const SimFlowPlant_MinHeatingCapacityinWatts_optional& x);
+
+        // SimFlowPlant_MaxHeatingCapacityinKmolperSecond
+        //
+        typedef ::xml_schema::double_ SimFlowPlant_MaxHeatingCapacityinKmolperSecond_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_MaxHeatingCapacityinKmolperSecond_type > SimFlowPlant_MaxHeatingCapacityinKmolperSecond_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_MaxHeatingCapacityinKmolperSecond_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_MaxHeatingCapacityinKmolperSecond_traits;
+
+        const SimFlowPlant_MaxHeatingCapacityinKmolperSecond_optional&
+        SimFlowPlant_MaxHeatingCapacityinKmolperSecond () const;
+
+        SimFlowPlant_MaxHeatingCapacityinKmolperSecond_optional&
+        SimFlowPlant_MaxHeatingCapacityinKmolperSecond ();
+
+        void
+        SimFlowPlant_MaxHeatingCapacityinKmolperSecond (const SimFlowPlant_MaxHeatingCapacityinKmolperSecond_type& x);
+
+        void
+        SimFlowPlant_MaxHeatingCapacityinKmolperSecond (const SimFlowPlant_MaxHeatingCapacityinKmolperSecond_optional& x);
+
+        // SimFlowPlant_MinHeatingCapacityinKmolperSecond
+        //
+        typedef ::xml_schema::double_ SimFlowPlant_MinHeatingCapacityinKmolperSecond_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_MinHeatingCapacityinKmolperSecond_type > SimFlowPlant_MinHeatingCapacityinKmolperSecond_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_MinHeatingCapacityinKmolperSecond_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_MinHeatingCapacityinKmolperSecond_traits;
+
+        const SimFlowPlant_MinHeatingCapacityinKmolperSecond_optional&
+        SimFlowPlant_MinHeatingCapacityinKmolperSecond () const;
+
+        SimFlowPlant_MinHeatingCapacityinKmolperSecond_optional&
+        SimFlowPlant_MinHeatingCapacityinKmolperSecond ();
+
+        void
+        SimFlowPlant_MinHeatingCapacityinKmolperSecond (const SimFlowPlant_MinHeatingCapacityinKmolperSecond_type& x);
+
+        void
+        SimFlowPlant_MinHeatingCapacityinKmolperSecond (const SimFlowPlant_MinHeatingCapacityinKmolperSecond_optional& x);
+
         // Constructors.
         //
         SimFlowPlant_ElectricalGenerator_FuelCellAuxilaryHeater ();
@@ -278,8 +506,32 @@ namespace schema
         _clone (::xml_schema::flags f = 0,
                 ::xml_schema::container* c = 0) const;
 
+        SimFlowPlant_ElectricalGenerator_FuelCellAuxilaryHeater&
+        operator= (const SimFlowPlant_ElectricalGenerator_FuelCellAuxilaryHeater& x);
+
         virtual 
         ~SimFlowPlant_ElectricalGenerator_FuelCellAuxilaryHeater ();
+
+        // Implementation.
+        //
+        protected:
+        void
+        parse (::xsd::cxx::xml::dom::parser< char >&,
+               ::xml_schema::flags);
+
+        protected:
+        SimFlowPlant_Name_optional SimFlowPlant_Name_;
+        SimFlowPlant_ExcessAirRatio_optional SimFlowPlant_ExcessAirRatio_;
+        SimFlowPlant_AncilliaryPowerConstantTerm_optional SimFlowPlant_AncilliaryPowerConstantTerm_;
+        SimFlowPlant_AncilliaryPowerLinearTerm_optional SimFlowPlant_AncilliaryPowerLinearTerm_;
+        SimFlowPlant_SkinLossU_FactorTimesAreaValue_optional SimFlowPlant_SkinLossU_FactorTimesAreaValue_;
+        SimFlowPlant_SkinLossDestination_optional SimFlowPlant_SkinLossDestination_;
+        SimFlowPlant_ZoneNametoReceiveSkinLosses_optional SimFlowPlant_ZoneNametoReceiveSkinLosses_;
+        SimFlowPlant_HeatingCapacityUnits_optional SimFlowPlant_HeatingCapacityUnits_;
+        SimFlowPlant_MaxHeatingCapacityinWatts_optional SimFlowPlant_MaxHeatingCapacityinWatts_;
+        SimFlowPlant_MinHeatingCapacityinWatts_optional SimFlowPlant_MinHeatingCapacityinWatts_;
+        SimFlowPlant_MaxHeatingCapacityinKmolperSecond_optional SimFlowPlant_MaxHeatingCapacityinKmolperSecond_;
+        SimFlowPlant_MinHeatingCapacityinKmolperSecond_optional SimFlowPlant_MinHeatingCapacityinKmolperSecond_;
       };
     }
   }

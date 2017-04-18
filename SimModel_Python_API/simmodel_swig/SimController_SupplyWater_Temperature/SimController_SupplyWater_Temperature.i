@@ -8,6 +8,8 @@
 using namespace xsd::cxx::tree;
 %}
 
+%ignore xsd::cxx::tree::sequence<::schema::simxml::MepModel::SimController_SupplyWater_Temperature, false>::getValue(int n);
+
 //3. class auto ptr
 %auto_ptr(::schema::simxml::ResourcesGeneral::AddressLines)
 %auto_ptr(::schema::simxml::MepModel::SimController_SupplyWater_Temperature)

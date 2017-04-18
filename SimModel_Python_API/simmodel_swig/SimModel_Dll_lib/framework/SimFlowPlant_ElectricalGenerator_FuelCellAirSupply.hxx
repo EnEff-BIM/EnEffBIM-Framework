@@ -257,9 +257,313 @@ namespace schema
   {
     namespace MepModel
     {
+      class SimFlowPlant_ConstName_1_5;
+    }
+  }
+}
+
+namespace schema
+{
+  namespace simxml
+  {
+    namespace SimModelCore
+    {
+      class doubleList;
+    }
+  }
+}
+
+namespace schema
+{
+  namespace simxml
+  {
+    namespace MepModel
+    {
       class SimFlowPlant_ElectricalGenerator_FuelCellAirSupply: public ::schema::simxml::MepModel::SimFlowPlant_ElectricalGenerator
       {
         public:
+        // SimFlowPlant_Name
+        //
+        typedef ::xml_schema::string SimFlowPlant_Name_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_Name_type > SimFlowPlant_Name_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_Name_type, char > SimFlowPlant_Name_traits;
+
+        const SimFlowPlant_Name_optional&
+        SimFlowPlant_Name () const;
+
+        SimFlowPlant_Name_optional&
+        SimFlowPlant_Name ();
+
+        void
+        SimFlowPlant_Name (const SimFlowPlant_Name_type& x);
+
+        void
+        SimFlowPlant_Name (const SimFlowPlant_Name_optional& x);
+
+        void
+        SimFlowPlant_Name (::std::auto_ptr< SimFlowPlant_Name_type > p);
+
+        // SimFlowPlant_AirInNodeName
+        //
+        typedef ::xml_schema::string SimFlowPlant_AirInNodeName_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_AirInNodeName_type > SimFlowPlant_AirInNodeName_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_AirInNodeName_type, char > SimFlowPlant_AirInNodeName_traits;
+
+        const SimFlowPlant_AirInNodeName_optional&
+        SimFlowPlant_AirInNodeName () const;
+
+        SimFlowPlant_AirInNodeName_optional&
+        SimFlowPlant_AirInNodeName ();
+
+        void
+        SimFlowPlant_AirInNodeName (const SimFlowPlant_AirInNodeName_type& x);
+
+        void
+        SimFlowPlant_AirInNodeName (const SimFlowPlant_AirInNodeName_optional& x);
+
+        void
+        SimFlowPlant_AirInNodeName (::std::auto_ptr< SimFlowPlant_AirInNodeName_type > p);
+
+        // SimFlowPlant_BlowerPwrCurveName
+        //
+        typedef ::xml_schema::idref SimFlowPlant_BlowerPwrCurveName_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_BlowerPwrCurveName_type > SimFlowPlant_BlowerPwrCurveName_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_BlowerPwrCurveName_type, char > SimFlowPlant_BlowerPwrCurveName_traits;
+
+        const SimFlowPlant_BlowerPwrCurveName_optional&
+        SimFlowPlant_BlowerPwrCurveName () const;
+
+        SimFlowPlant_BlowerPwrCurveName_optional&
+        SimFlowPlant_BlowerPwrCurveName ();
+
+        void
+        SimFlowPlant_BlowerPwrCurveName (const SimFlowPlant_BlowerPwrCurveName_type& x);
+
+        void
+        SimFlowPlant_BlowerPwrCurveName (const SimFlowPlant_BlowerPwrCurveName_optional& x);
+
+        void
+        SimFlowPlant_BlowerPwrCurveName (::std::auto_ptr< SimFlowPlant_BlowerPwrCurveName_type > p);
+
+        // SimFlowPlant_BlowerHeatLossFactor
+        //
+        typedef ::xml_schema::double_ SimFlowPlant_BlowerHeatLossFactor_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_BlowerHeatLossFactor_type > SimFlowPlant_BlowerHeatLossFactor_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_BlowerHeatLossFactor_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_BlowerHeatLossFactor_traits;
+
+        const SimFlowPlant_BlowerHeatLossFactor_optional&
+        SimFlowPlant_BlowerHeatLossFactor () const;
+
+        SimFlowPlant_BlowerHeatLossFactor_optional&
+        SimFlowPlant_BlowerHeatLossFactor ();
+
+        void
+        SimFlowPlant_BlowerHeatLossFactor (const SimFlowPlant_BlowerHeatLossFactor_type& x);
+
+        void
+        SimFlowPlant_BlowerHeatLossFactor (const SimFlowPlant_BlowerHeatLossFactor_optional& x);
+
+        // SimFlowPlant_AirSupplyRateCalcMode
+        //
+        typedef ::xml_schema::string SimFlowPlant_AirSupplyRateCalcMode_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_AirSupplyRateCalcMode_type > SimFlowPlant_AirSupplyRateCalcMode_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_AirSupplyRateCalcMode_type, char > SimFlowPlant_AirSupplyRateCalcMode_traits;
+
+        const SimFlowPlant_AirSupplyRateCalcMode_optional&
+        SimFlowPlant_AirSupplyRateCalcMode () const;
+
+        SimFlowPlant_AirSupplyRateCalcMode_optional&
+        SimFlowPlant_AirSupplyRateCalcMode ();
+
+        void
+        SimFlowPlant_AirSupplyRateCalcMode (const SimFlowPlant_AirSupplyRateCalcMode_type& x);
+
+        void
+        SimFlowPlant_AirSupplyRateCalcMode (const SimFlowPlant_AirSupplyRateCalcMode_optional& x);
+
+        void
+        SimFlowPlant_AirSupplyRateCalcMode (::std::auto_ptr< SimFlowPlant_AirSupplyRateCalcMode_type > p);
+
+        // SimFlowPlant_StoichiometricRatio
+        //
+        typedef ::xml_schema::double_ SimFlowPlant_StoichiometricRatio_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_StoichiometricRatio_type > SimFlowPlant_StoichiometricRatio_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_StoichiometricRatio_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_StoichiometricRatio_traits;
+
+        const SimFlowPlant_StoichiometricRatio_optional&
+        SimFlowPlant_StoichiometricRatio () const;
+
+        SimFlowPlant_StoichiometricRatio_optional&
+        SimFlowPlant_StoichiometricRatio ();
+
+        void
+        SimFlowPlant_StoichiometricRatio (const SimFlowPlant_StoichiometricRatio_type& x);
+
+        void
+        SimFlowPlant_StoichiometricRatio (const SimFlowPlant_StoichiometricRatio_optional& x);
+
+        // SimFlowPlant_AirRateFuncElecPwrCurveName
+        //
+        typedef ::xml_schema::idref SimFlowPlant_AirRateFuncElecPwrCurveName_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_AirRateFuncElecPwrCurveName_type > SimFlowPlant_AirRateFuncElecPwrCurveName_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_AirRateFuncElecPwrCurveName_type, char > SimFlowPlant_AirRateFuncElecPwrCurveName_traits;
+
+        const SimFlowPlant_AirRateFuncElecPwrCurveName_optional&
+        SimFlowPlant_AirRateFuncElecPwrCurveName () const;
+
+        SimFlowPlant_AirRateFuncElecPwrCurveName_optional&
+        SimFlowPlant_AirRateFuncElecPwrCurveName ();
+
+        void
+        SimFlowPlant_AirRateFuncElecPwrCurveName (const SimFlowPlant_AirRateFuncElecPwrCurveName_type& x);
+
+        void
+        SimFlowPlant_AirRateFuncElecPwrCurveName (const SimFlowPlant_AirRateFuncElecPwrCurveName_optional& x);
+
+        void
+        SimFlowPlant_AirRateFuncElecPwrCurveName (::std::auto_ptr< SimFlowPlant_AirRateFuncElecPwrCurveName_type > p);
+
+        // SimFlowPlant_AirRateAirTempCoef
+        //
+        typedef ::xml_schema::double_ SimFlowPlant_AirRateAirTempCoef_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_AirRateAirTempCoef_type > SimFlowPlant_AirRateAirTempCoef_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_AirRateAirTempCoef_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_AirRateAirTempCoef_traits;
+
+        const SimFlowPlant_AirRateAirTempCoef_optional&
+        SimFlowPlant_AirRateAirTempCoef () const;
+
+        SimFlowPlant_AirRateAirTempCoef_optional&
+        SimFlowPlant_AirRateAirTempCoef ();
+
+        void
+        SimFlowPlant_AirRateAirTempCoef (const SimFlowPlant_AirRateAirTempCoef_type& x);
+
+        void
+        SimFlowPlant_AirRateAirTempCoef (const SimFlowPlant_AirRateAirTempCoef_optional& x);
+
+        // SimFlowPlant_AirRateFuncFuelRateCurveName
+        //
+        typedef ::xml_schema::idref SimFlowPlant_AirRateFuncFuelRateCurveName_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_AirRateFuncFuelRateCurveName_type > SimFlowPlant_AirRateFuncFuelRateCurveName_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_AirRateFuncFuelRateCurveName_type, char > SimFlowPlant_AirRateFuncFuelRateCurveName_traits;
+
+        const SimFlowPlant_AirRateFuncFuelRateCurveName_optional&
+        SimFlowPlant_AirRateFuncFuelRateCurveName () const;
+
+        SimFlowPlant_AirRateFuncFuelRateCurveName_optional&
+        SimFlowPlant_AirRateFuncFuelRateCurveName ();
+
+        void
+        SimFlowPlant_AirRateFuncFuelRateCurveName (const SimFlowPlant_AirRateFuncFuelRateCurveName_type& x);
+
+        void
+        SimFlowPlant_AirRateFuncFuelRateCurveName (const SimFlowPlant_AirRateFuncFuelRateCurveName_optional& x);
+
+        void
+        SimFlowPlant_AirRateFuncFuelRateCurveName (::std::auto_ptr< SimFlowPlant_AirRateFuncFuelRateCurveName_type > p);
+
+        // SimFlowPlant_AirtakeHeatRecovMode
+        //
+        typedef ::xml_schema::string SimFlowPlant_AirtakeHeatRecovMode_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_AirtakeHeatRecovMode_type > SimFlowPlant_AirtakeHeatRecovMode_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_AirtakeHeatRecovMode_type, char > SimFlowPlant_AirtakeHeatRecovMode_traits;
+
+        const SimFlowPlant_AirtakeHeatRecovMode_optional&
+        SimFlowPlant_AirtakeHeatRecovMode () const;
+
+        SimFlowPlant_AirtakeHeatRecovMode_optional&
+        SimFlowPlant_AirtakeHeatRecovMode ();
+
+        void
+        SimFlowPlant_AirtakeHeatRecovMode (const SimFlowPlant_AirtakeHeatRecovMode_type& x);
+
+        void
+        SimFlowPlant_AirtakeHeatRecovMode (const SimFlowPlant_AirtakeHeatRecovMode_optional& x);
+
+        void
+        SimFlowPlant_AirtakeHeatRecovMode (::std::auto_ptr< SimFlowPlant_AirtakeHeatRecovMode_type > p);
+
+        // SimFlowPlant_AirSupplyConstMode
+        //
+        typedef ::xml_schema::string SimFlowPlant_AirSupplyConstMode_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_AirSupplyConstMode_type > SimFlowPlant_AirSupplyConstMode_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_AirSupplyConstMode_type, char > SimFlowPlant_AirSupplyConstMode_traits;
+
+        const SimFlowPlant_AirSupplyConstMode_optional&
+        SimFlowPlant_AirSupplyConstMode () const;
+
+        SimFlowPlant_AirSupplyConstMode_optional&
+        SimFlowPlant_AirSupplyConstMode ();
+
+        void
+        SimFlowPlant_AirSupplyConstMode (const SimFlowPlant_AirSupplyConstMode_type& x);
+
+        void
+        SimFlowPlant_AirSupplyConstMode (const SimFlowPlant_AirSupplyConstMode_optional& x);
+
+        void
+        SimFlowPlant_AirSupplyConstMode (::std::auto_ptr< SimFlowPlant_AirSupplyConstMode_type > p);
+
+        // SimFlowPlant_NumUserDefinedConsts
+        //
+        typedef ::xml_schema::double_ SimFlowPlant_NumUserDefinedConsts_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_NumUserDefinedConsts_type > SimFlowPlant_NumUserDefinedConsts_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_NumUserDefinedConsts_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_NumUserDefinedConsts_traits;
+
+        const SimFlowPlant_NumUserDefinedConsts_optional&
+        SimFlowPlant_NumUserDefinedConsts () const;
+
+        SimFlowPlant_NumUserDefinedConsts_optional&
+        SimFlowPlant_NumUserDefinedConsts ();
+
+        void
+        SimFlowPlant_NumUserDefinedConsts (const SimFlowPlant_NumUserDefinedConsts_type& x);
+
+        void
+        SimFlowPlant_NumUserDefinedConsts (const SimFlowPlant_NumUserDefinedConsts_optional& x);
+
+        // SimFlowPlant_ConstName_1_5
+        //
+        typedef ::schema::simxml::MepModel::SimFlowPlant_ConstName_1_5 SimFlowPlant_ConstName_1_5_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_ConstName_1_5_type > SimFlowPlant_ConstName_1_5_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_ConstName_1_5_type, char > SimFlowPlant_ConstName_1_5_traits;
+
+        const SimFlowPlant_ConstName_1_5_optional&
+        SimFlowPlant_ConstName_1_5 () const;
+
+        SimFlowPlant_ConstName_1_5_optional&
+        SimFlowPlant_ConstName_1_5 ();
+
+        void
+        SimFlowPlant_ConstName_1_5 (const SimFlowPlant_ConstName_1_5_type& x);
+
+        void
+        SimFlowPlant_ConstName_1_5 (const SimFlowPlant_ConstName_1_5_optional& x);
+
+        void
+        SimFlowPlant_ConstName_1_5 (::std::auto_ptr< SimFlowPlant_ConstName_1_5_type > p);
+
+        // SimFlowPlant_MolarFract_1_5
+        //
+        typedef ::schema::simxml::SimModelCore::doubleList SimFlowPlant_MolarFract_1_5_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_MolarFract_1_5_type > SimFlowPlant_MolarFract_1_5_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_MolarFract_1_5_type, char > SimFlowPlant_MolarFract_1_5_traits;
+
+        const SimFlowPlant_MolarFract_1_5_optional&
+        SimFlowPlant_MolarFract_1_5 () const;
+
+        SimFlowPlant_MolarFract_1_5_optional&
+        SimFlowPlant_MolarFract_1_5 ();
+
+        void
+        SimFlowPlant_MolarFract_1_5 (const SimFlowPlant_MolarFract_1_5_type& x);
+
+        void
+        SimFlowPlant_MolarFract_1_5 (const SimFlowPlant_MolarFract_1_5_optional& x);
+
+        void
+        SimFlowPlant_MolarFract_1_5 (::std::auto_ptr< SimFlowPlant_MolarFract_1_5_type > p);
+
         // Constructors.
         //
         SimFlowPlant_ElectricalGenerator_FuelCellAirSupply ();
@@ -278,8 +582,34 @@ namespace schema
         _clone (::xml_schema::flags f = 0,
                 ::xml_schema::container* c = 0) const;
 
+        SimFlowPlant_ElectricalGenerator_FuelCellAirSupply&
+        operator= (const SimFlowPlant_ElectricalGenerator_FuelCellAirSupply& x);
+
         virtual 
         ~SimFlowPlant_ElectricalGenerator_FuelCellAirSupply ();
+
+        // Implementation.
+        //
+        protected:
+        void
+        parse (::xsd::cxx::xml::dom::parser< char >&,
+               ::xml_schema::flags);
+
+        protected:
+        SimFlowPlant_Name_optional SimFlowPlant_Name_;
+        SimFlowPlant_AirInNodeName_optional SimFlowPlant_AirInNodeName_;
+        SimFlowPlant_BlowerPwrCurveName_optional SimFlowPlant_BlowerPwrCurveName_;
+        SimFlowPlant_BlowerHeatLossFactor_optional SimFlowPlant_BlowerHeatLossFactor_;
+        SimFlowPlant_AirSupplyRateCalcMode_optional SimFlowPlant_AirSupplyRateCalcMode_;
+        SimFlowPlant_StoichiometricRatio_optional SimFlowPlant_StoichiometricRatio_;
+        SimFlowPlant_AirRateFuncElecPwrCurveName_optional SimFlowPlant_AirRateFuncElecPwrCurveName_;
+        SimFlowPlant_AirRateAirTempCoef_optional SimFlowPlant_AirRateAirTempCoef_;
+        SimFlowPlant_AirRateFuncFuelRateCurveName_optional SimFlowPlant_AirRateFuncFuelRateCurveName_;
+        SimFlowPlant_AirtakeHeatRecovMode_optional SimFlowPlant_AirtakeHeatRecovMode_;
+        SimFlowPlant_AirSupplyConstMode_optional SimFlowPlant_AirSupplyConstMode_;
+        SimFlowPlant_NumUserDefinedConsts_optional SimFlowPlant_NumUserDefinedConsts_;
+        SimFlowPlant_ConstName_1_5_optional SimFlowPlant_ConstName_1_5_;
+        SimFlowPlant_MolarFract_1_5_optional SimFlowPlant_MolarFract_1_5_;
       };
     }
   }

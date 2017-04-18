@@ -8,11 +8,13 @@
 using namespace xsd::cxx::tree;
 %}
 
+%ignore xsd::cxx::tree::sequence<::schema::simxml::MepModel::SimFlowFitting_Splitter_DemandProxySplitterWater, false>::getValue(int n);
+
 //3. class auto ptr
 %auto_ptr(::schema::simxml::MepModel::SimFlowFitting_Splitter_DemandProxySplitterWater)
 
 %import  "..\base\base.i"
-%import  "..\SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop\SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop.i"
+%import  "..\SimFlowFitting_Default_Default\SimFlowFitting_Default_Default.i"
 /* Let's just grab the original header file here */
 %include "..\SimModel\framework\SimFlowFitting_Splitter.hxx"
 %include "..\SimModel\framework\SimFlowFitting_Splitter_DemandProxySplitterWater.hxx"

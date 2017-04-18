@@ -48,6 +48,210 @@ namespace schema
     {
       // SimFlowPlant_ElectricalGenerator_FuelCellWaterSupply
       // 
+
+      const SimFlowPlant_ElectricalGenerator_FuelCellWaterSupply::SimFlowPlant_Name_optional& SimFlowPlant_ElectricalGenerator_FuelCellWaterSupply::
+      SimFlowPlant_Name () const
+      {
+        return this->SimFlowPlant_Name_;
+      }
+
+      SimFlowPlant_ElectricalGenerator_FuelCellWaterSupply::SimFlowPlant_Name_optional& SimFlowPlant_ElectricalGenerator_FuelCellWaterSupply::
+      SimFlowPlant_Name ()
+      {
+        return this->SimFlowPlant_Name_;
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellWaterSupply::
+      SimFlowPlant_Name (const SimFlowPlant_Name_type& x)
+      {
+        this->SimFlowPlant_Name_.set (x);
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellWaterSupply::
+      SimFlowPlant_Name (const SimFlowPlant_Name_optional& x)
+      {
+        this->SimFlowPlant_Name_ = x;
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellWaterSupply::
+      SimFlowPlant_Name (::std::auto_ptr< SimFlowPlant_Name_type > x)
+      {
+        this->SimFlowPlant_Name_.set (x);
+      }
+
+      const SimFlowPlant_ElectricalGenerator_FuelCellWaterSupply::SimFlowPlant_ReformWaterFlowRateFuncFuelRateCurveName_optional& SimFlowPlant_ElectricalGenerator_FuelCellWaterSupply::
+      SimFlowPlant_ReformWaterFlowRateFuncFuelRateCurveName () const
+      {
+        return this->SimFlowPlant_ReformWaterFlowRateFuncFuelRateCurveName_;
+      }
+
+      SimFlowPlant_ElectricalGenerator_FuelCellWaterSupply::SimFlowPlant_ReformWaterFlowRateFuncFuelRateCurveName_optional& SimFlowPlant_ElectricalGenerator_FuelCellWaterSupply::
+      SimFlowPlant_ReformWaterFlowRateFuncFuelRateCurveName ()
+      {
+        return this->SimFlowPlant_ReformWaterFlowRateFuncFuelRateCurveName_;
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellWaterSupply::
+      SimFlowPlant_ReformWaterFlowRateFuncFuelRateCurveName (const SimFlowPlant_ReformWaterFlowRateFuncFuelRateCurveName_type& x)
+      {
+        this->SimFlowPlant_ReformWaterFlowRateFuncFuelRateCurveName_.set (x);
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellWaterSupply::
+      SimFlowPlant_ReformWaterFlowRateFuncFuelRateCurveName (const SimFlowPlant_ReformWaterFlowRateFuncFuelRateCurveName_optional& x)
+      {
+        this->SimFlowPlant_ReformWaterFlowRateFuncFuelRateCurveName_ = x;
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellWaterSupply::
+      SimFlowPlant_ReformWaterFlowRateFuncFuelRateCurveName (::std::auto_ptr< SimFlowPlant_ReformWaterFlowRateFuncFuelRateCurveName_type > x)
+      {
+        this->SimFlowPlant_ReformWaterFlowRateFuncFuelRateCurveName_.set (x);
+      }
+
+      const SimFlowPlant_ElectricalGenerator_FuelCellWaterSupply::SimFlowPlant_ReformWaterPumpPwrFuncFuelRateCurveName_optional& SimFlowPlant_ElectricalGenerator_FuelCellWaterSupply::
+      SimFlowPlant_ReformWaterPumpPwrFuncFuelRateCurveName () const
+      {
+        return this->SimFlowPlant_ReformWaterPumpPwrFuncFuelRateCurveName_;
+      }
+
+      SimFlowPlant_ElectricalGenerator_FuelCellWaterSupply::SimFlowPlant_ReformWaterPumpPwrFuncFuelRateCurveName_optional& SimFlowPlant_ElectricalGenerator_FuelCellWaterSupply::
+      SimFlowPlant_ReformWaterPumpPwrFuncFuelRateCurveName ()
+      {
+        return this->SimFlowPlant_ReformWaterPumpPwrFuncFuelRateCurveName_;
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellWaterSupply::
+      SimFlowPlant_ReformWaterPumpPwrFuncFuelRateCurveName (const SimFlowPlant_ReformWaterPumpPwrFuncFuelRateCurveName_type& x)
+      {
+        this->SimFlowPlant_ReformWaterPumpPwrFuncFuelRateCurveName_.set (x);
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellWaterSupply::
+      SimFlowPlant_ReformWaterPumpPwrFuncFuelRateCurveName (const SimFlowPlant_ReformWaterPumpPwrFuncFuelRateCurveName_optional& x)
+      {
+        this->SimFlowPlant_ReformWaterPumpPwrFuncFuelRateCurveName_ = x;
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellWaterSupply::
+      SimFlowPlant_ReformWaterPumpPwrFuncFuelRateCurveName (::std::auto_ptr< SimFlowPlant_ReformWaterPumpPwrFuncFuelRateCurveName_type > x)
+      {
+        this->SimFlowPlant_ReformWaterPumpPwrFuncFuelRateCurveName_.set (x);
+      }
+
+      const SimFlowPlant_ElectricalGenerator_FuelCellWaterSupply::SimFlowPlant_PumpHeatLossFactor_optional& SimFlowPlant_ElectricalGenerator_FuelCellWaterSupply::
+      SimFlowPlant_PumpHeatLossFactor () const
+      {
+        return this->SimFlowPlant_PumpHeatLossFactor_;
+      }
+
+      SimFlowPlant_ElectricalGenerator_FuelCellWaterSupply::SimFlowPlant_PumpHeatLossFactor_optional& SimFlowPlant_ElectricalGenerator_FuelCellWaterSupply::
+      SimFlowPlant_PumpHeatLossFactor ()
+      {
+        return this->SimFlowPlant_PumpHeatLossFactor_;
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellWaterSupply::
+      SimFlowPlant_PumpHeatLossFactor (const SimFlowPlant_PumpHeatLossFactor_type& x)
+      {
+        this->SimFlowPlant_PumpHeatLossFactor_.set (x);
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellWaterSupply::
+      SimFlowPlant_PumpHeatLossFactor (const SimFlowPlant_PumpHeatLossFactor_optional& x)
+      {
+        this->SimFlowPlant_PumpHeatLossFactor_ = x;
+      }
+
+      const SimFlowPlant_ElectricalGenerator_FuelCellWaterSupply::SimFlowPlant_WaterTempModelingMode_optional& SimFlowPlant_ElectricalGenerator_FuelCellWaterSupply::
+      SimFlowPlant_WaterTempModelingMode () const
+      {
+        return this->SimFlowPlant_WaterTempModelingMode_;
+      }
+
+      SimFlowPlant_ElectricalGenerator_FuelCellWaterSupply::SimFlowPlant_WaterTempModelingMode_optional& SimFlowPlant_ElectricalGenerator_FuelCellWaterSupply::
+      SimFlowPlant_WaterTempModelingMode ()
+      {
+        return this->SimFlowPlant_WaterTempModelingMode_;
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellWaterSupply::
+      SimFlowPlant_WaterTempModelingMode (const SimFlowPlant_WaterTempModelingMode_type& x)
+      {
+        this->SimFlowPlant_WaterTempModelingMode_.set (x);
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellWaterSupply::
+      SimFlowPlant_WaterTempModelingMode (const SimFlowPlant_WaterTempModelingMode_optional& x)
+      {
+        this->SimFlowPlant_WaterTempModelingMode_ = x;
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellWaterSupply::
+      SimFlowPlant_WaterTempModelingMode (::std::auto_ptr< SimFlowPlant_WaterTempModelingMode_type > x)
+      {
+        this->SimFlowPlant_WaterTempModelingMode_.set (x);
+      }
+
+      const SimFlowPlant_ElectricalGenerator_FuelCellWaterSupply::SimFlowPlant_WaterTempRefNodeName_optional& SimFlowPlant_ElectricalGenerator_FuelCellWaterSupply::
+      SimFlowPlant_WaterTempRefNodeName () const
+      {
+        return this->SimFlowPlant_WaterTempRefNodeName_;
+      }
+
+      SimFlowPlant_ElectricalGenerator_FuelCellWaterSupply::SimFlowPlant_WaterTempRefNodeName_optional& SimFlowPlant_ElectricalGenerator_FuelCellWaterSupply::
+      SimFlowPlant_WaterTempRefNodeName ()
+      {
+        return this->SimFlowPlant_WaterTempRefNodeName_;
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellWaterSupply::
+      SimFlowPlant_WaterTempRefNodeName (const SimFlowPlant_WaterTempRefNodeName_type& x)
+      {
+        this->SimFlowPlant_WaterTempRefNodeName_.set (x);
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellWaterSupply::
+      SimFlowPlant_WaterTempRefNodeName (const SimFlowPlant_WaterTempRefNodeName_optional& x)
+      {
+        this->SimFlowPlant_WaterTempRefNodeName_ = x;
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellWaterSupply::
+      SimFlowPlant_WaterTempRefNodeName (::std::auto_ptr< SimFlowPlant_WaterTempRefNodeName_type > x)
+      {
+        this->SimFlowPlant_WaterTempRefNodeName_.set (x);
+      }
+
+      const SimFlowPlant_ElectricalGenerator_FuelCellWaterSupply::SimFlowPlant_WaterTempSchedName_optional& SimFlowPlant_ElectricalGenerator_FuelCellWaterSupply::
+      SimFlowPlant_WaterTempSchedName () const
+      {
+        return this->SimFlowPlant_WaterTempSchedName_;
+      }
+
+      SimFlowPlant_ElectricalGenerator_FuelCellWaterSupply::SimFlowPlant_WaterTempSchedName_optional& SimFlowPlant_ElectricalGenerator_FuelCellWaterSupply::
+      SimFlowPlant_WaterTempSchedName ()
+      {
+        return this->SimFlowPlant_WaterTempSchedName_;
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellWaterSupply::
+      SimFlowPlant_WaterTempSchedName (const SimFlowPlant_WaterTempSchedName_type& x)
+      {
+        this->SimFlowPlant_WaterTempSchedName_.set (x);
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellWaterSupply::
+      SimFlowPlant_WaterTempSchedName (const SimFlowPlant_WaterTempSchedName_optional& x)
+      {
+        this->SimFlowPlant_WaterTempSchedName_ = x;
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellWaterSupply::
+      SimFlowPlant_WaterTempSchedName (::std::auto_ptr< SimFlowPlant_WaterTempSchedName_type > x)
+      {
+        this->SimFlowPlant_WaterTempSchedName_.set (x);
+      }
     }
   }
 }
@@ -74,13 +278,27 @@ namespace schema
 
       SimFlowPlant_ElectricalGenerator_FuelCellWaterSupply::
       SimFlowPlant_ElectricalGenerator_FuelCellWaterSupply ()
-      : ::schema::simxml::MepModel::SimFlowPlant_ElectricalGenerator ()
+      : ::schema::simxml::MepModel::SimFlowPlant_ElectricalGenerator (),
+        SimFlowPlant_Name_ (this),
+        SimFlowPlant_ReformWaterFlowRateFuncFuelRateCurveName_ (this),
+        SimFlowPlant_ReformWaterPumpPwrFuncFuelRateCurveName_ (this),
+        SimFlowPlant_PumpHeatLossFactor_ (this),
+        SimFlowPlant_WaterTempModelingMode_ (this),
+        SimFlowPlant_WaterTempRefNodeName_ (this),
+        SimFlowPlant_WaterTempSchedName_ (this)
       {
       }
 
       SimFlowPlant_ElectricalGenerator_FuelCellWaterSupply::
       SimFlowPlant_ElectricalGenerator_FuelCellWaterSupply (const RefId_type& RefId)
-      : ::schema::simxml::MepModel::SimFlowPlant_ElectricalGenerator (RefId)
+      : ::schema::simxml::MepModel::SimFlowPlant_ElectricalGenerator (RefId),
+        SimFlowPlant_Name_ (this),
+        SimFlowPlant_ReformWaterFlowRateFuncFuelRateCurveName_ (this),
+        SimFlowPlant_ReformWaterPumpPwrFuncFuelRateCurveName_ (this),
+        SimFlowPlant_PumpHeatLossFactor_ (this),
+        SimFlowPlant_WaterTempModelingMode_ (this),
+        SimFlowPlant_WaterTempRefNodeName_ (this),
+        SimFlowPlant_WaterTempSchedName_ (this)
       {
       }
 
@@ -88,7 +306,14 @@ namespace schema
       SimFlowPlant_ElectricalGenerator_FuelCellWaterSupply (const SimFlowPlant_ElectricalGenerator_FuelCellWaterSupply& x,
                                                             ::xml_schema::flags f,
                                                             ::xml_schema::container* c)
-      : ::schema::simxml::MepModel::SimFlowPlant_ElectricalGenerator (x, f, c)
+      : ::schema::simxml::MepModel::SimFlowPlant_ElectricalGenerator (x, f, c),
+        SimFlowPlant_Name_ (x.SimFlowPlant_Name_, f, this),
+        SimFlowPlant_ReformWaterFlowRateFuncFuelRateCurveName_ (x.SimFlowPlant_ReformWaterFlowRateFuncFuelRateCurveName_, f, this),
+        SimFlowPlant_ReformWaterPumpPwrFuncFuelRateCurveName_ (x.SimFlowPlant_ReformWaterPumpPwrFuncFuelRateCurveName_, f, this),
+        SimFlowPlant_PumpHeatLossFactor_ (x.SimFlowPlant_PumpHeatLossFactor_, f, this),
+        SimFlowPlant_WaterTempModelingMode_ (x.SimFlowPlant_WaterTempModelingMode_, f, this),
+        SimFlowPlant_WaterTempRefNodeName_ (x.SimFlowPlant_WaterTempRefNodeName_, f, this),
+        SimFlowPlant_WaterTempSchedName_ (x.SimFlowPlant_WaterTempSchedName_, f, this)
       {
       }
 
@@ -96,8 +321,131 @@ namespace schema
       SimFlowPlant_ElectricalGenerator_FuelCellWaterSupply (const ::xercesc::DOMElement& e,
                                                             ::xml_schema::flags f,
                                                             ::xml_schema::container* c)
-      : ::schema::simxml::MepModel::SimFlowPlant_ElectricalGenerator (e, f, c)
+      : ::schema::simxml::MepModel::SimFlowPlant_ElectricalGenerator (e, f | ::xml_schema::flags::base, c),
+        SimFlowPlant_Name_ (this),
+        SimFlowPlant_ReformWaterFlowRateFuncFuelRateCurveName_ (this),
+        SimFlowPlant_ReformWaterPumpPwrFuncFuelRateCurveName_ (this),
+        SimFlowPlant_PumpHeatLossFactor_ (this),
+        SimFlowPlant_WaterTempModelingMode_ (this),
+        SimFlowPlant_WaterTempRefNodeName_ (this),
+        SimFlowPlant_WaterTempSchedName_ (this)
       {
+        if ((f & ::xml_schema::flags::base) == 0)
+        {
+          ::xsd::cxx::xml::dom::parser< char > p (e, true, false, true);
+          this->parse (p, f);
+        }
+      }
+
+      void SimFlowPlant_ElectricalGenerator_FuelCellWaterSupply::
+      parse (::xsd::cxx::xml::dom::parser< char >& p,
+             ::xml_schema::flags f)
+      {
+        this->::schema::simxml::MepModel::SimFlowPlant_ElectricalGenerator::parse (p, f);
+
+        for (; p.more_content (); p.next_content (false))
+        {
+          const ::xercesc::DOMElement& i (p.cur_element ());
+          const ::xsd::cxx::xml::qualified_name< char > n (
+            ::xsd::cxx::xml::dom::name< char > (i));
+
+          // SimFlowPlant_Name
+          //
+          if (n.name () == "SimFlowPlant_Name" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            ::std::auto_ptr< SimFlowPlant_Name_type > r (
+              SimFlowPlant_Name_traits::create (i, f, this));
+
+            if (!this->SimFlowPlant_Name_)
+            {
+              this->SimFlowPlant_Name_.set (r);
+              continue;
+            }
+          }
+
+          // SimFlowPlant_ReformWaterFlowRateFuncFuelRateCurveName
+          //
+          if (n.name () == "SimFlowPlant_ReformWaterFlowRateFuncFuelRateCurveName" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            ::std::auto_ptr< SimFlowPlant_ReformWaterFlowRateFuncFuelRateCurveName_type > r (
+              SimFlowPlant_ReformWaterFlowRateFuncFuelRateCurveName_traits::create (i, f, this));
+
+            if (!this->SimFlowPlant_ReformWaterFlowRateFuncFuelRateCurveName_)
+            {
+              this->SimFlowPlant_ReformWaterFlowRateFuncFuelRateCurveName_.set (r);
+              continue;
+            }
+          }
+
+          // SimFlowPlant_ReformWaterPumpPwrFuncFuelRateCurveName
+          //
+          if (n.name () == "SimFlowPlant_ReformWaterPumpPwrFuncFuelRateCurveName" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            ::std::auto_ptr< SimFlowPlant_ReformWaterPumpPwrFuncFuelRateCurveName_type > r (
+              SimFlowPlant_ReformWaterPumpPwrFuncFuelRateCurveName_traits::create (i, f, this));
+
+            if (!this->SimFlowPlant_ReformWaterPumpPwrFuncFuelRateCurveName_)
+            {
+              this->SimFlowPlant_ReformWaterPumpPwrFuncFuelRateCurveName_.set (r);
+              continue;
+            }
+          }
+
+          // SimFlowPlant_PumpHeatLossFactor
+          //
+          if (n.name () == "SimFlowPlant_PumpHeatLossFactor" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            if (!this->SimFlowPlant_PumpHeatLossFactor_)
+            {
+              this->SimFlowPlant_PumpHeatLossFactor_.set (SimFlowPlant_PumpHeatLossFactor_traits::create (i, f, this));
+              continue;
+            }
+          }
+
+          // SimFlowPlant_WaterTempModelingMode
+          //
+          if (n.name () == "SimFlowPlant_WaterTempModelingMode" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            ::std::auto_ptr< SimFlowPlant_WaterTempModelingMode_type > r (
+              SimFlowPlant_WaterTempModelingMode_traits::create (i, f, this));
+
+            if (!this->SimFlowPlant_WaterTempModelingMode_)
+            {
+              this->SimFlowPlant_WaterTempModelingMode_.set (r);
+              continue;
+            }
+          }
+
+          // SimFlowPlant_WaterTempRefNodeName
+          //
+          if (n.name () == "SimFlowPlant_WaterTempRefNodeName" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            ::std::auto_ptr< SimFlowPlant_WaterTempRefNodeName_type > r (
+              SimFlowPlant_WaterTempRefNodeName_traits::create (i, f, this));
+
+            if (!this->SimFlowPlant_WaterTempRefNodeName_)
+            {
+              this->SimFlowPlant_WaterTempRefNodeName_.set (r);
+              continue;
+            }
+          }
+
+          // SimFlowPlant_WaterTempSchedName
+          //
+          if (n.name () == "SimFlowPlant_WaterTempSchedName" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
+          {
+            ::std::auto_ptr< SimFlowPlant_WaterTempSchedName_type > r (
+              SimFlowPlant_WaterTempSchedName_traits::create (i, f, this));
+
+            if (!this->SimFlowPlant_WaterTempSchedName_)
+            {
+              this->SimFlowPlant_WaterTempSchedName_.set (r);
+              continue;
+            }
+          }
+
+          break;
+        }
       }
 
       SimFlowPlant_ElectricalGenerator_FuelCellWaterSupply* SimFlowPlant_ElectricalGenerator_FuelCellWaterSupply::
@@ -105,6 +453,24 @@ namespace schema
               ::xml_schema::container* c) const
       {
         return new class SimFlowPlant_ElectricalGenerator_FuelCellWaterSupply (*this, f, c);
+      }
+
+      SimFlowPlant_ElectricalGenerator_FuelCellWaterSupply& SimFlowPlant_ElectricalGenerator_FuelCellWaterSupply::
+      operator= (const SimFlowPlant_ElectricalGenerator_FuelCellWaterSupply& x)
+      {
+        if (this != &x)
+        {
+          static_cast< ::schema::simxml::MepModel::SimFlowPlant_ElectricalGenerator& > (*this) = x;
+          this->SimFlowPlant_Name_ = x.SimFlowPlant_Name_;
+          this->SimFlowPlant_ReformWaterFlowRateFuncFuelRateCurveName_ = x.SimFlowPlant_ReformWaterFlowRateFuncFuelRateCurveName_;
+          this->SimFlowPlant_ReformWaterPumpPwrFuncFuelRateCurveName_ = x.SimFlowPlant_ReformWaterPumpPwrFuncFuelRateCurveName_;
+          this->SimFlowPlant_PumpHeatLossFactor_ = x.SimFlowPlant_PumpHeatLossFactor_;
+          this->SimFlowPlant_WaterTempModelingMode_ = x.SimFlowPlant_WaterTempModelingMode_;
+          this->SimFlowPlant_WaterTempRefNodeName_ = x.SimFlowPlant_WaterTempRefNodeName_;
+          this->SimFlowPlant_WaterTempSchedName_ = x.SimFlowPlant_WaterTempSchedName_;
+        }
+
+        return *this;
       }
 
       SimFlowPlant_ElectricalGenerator_FuelCellWaterSupply::

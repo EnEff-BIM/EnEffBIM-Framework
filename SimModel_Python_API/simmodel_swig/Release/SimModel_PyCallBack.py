@@ -200,6 +200,15 @@ class SimPyCallBack(_object):
 
     def getIO(self, _name):
         return _SimModel_PyCallBack.SimPyCallBack_getIO(self, _name)
+
+    def getRefValueType(self, _classId, _propertyName):
+        return _SimModel_PyCallBack.SimPyCallBack_getRefValueType(self, _classId, _propertyName)
+
+    def getRefNumberValue(self, _classId, _propertyName):
+        return _SimModel_PyCallBack.SimPyCallBack_getRefNumberValue(self, _classId, _propertyName)
+
+    def getRefStringValue(self, _classId, _propertyName):
+        return _SimModel_PyCallBack.SimPyCallBack_getRefStringValue(self, _classId, _propertyName)
     def __disown__(self):
         self.this.disown()
         _SimModel_PyCallBack.disown_SimPyCallBack(self)
@@ -246,119 +255,21 @@ class CallBack(SimPyCallBack):
             return getattr(_classObj, _propertyName)().getValue()
     def getIO(self, _name):
         print(_name)
-
-class VectorString(_object):
-    __swig_setmethods__ = {}
-    __setattr__ = lambda self, name, value: _swig_setattr(self, VectorString, name, value)
-    __swig_getmethods__ = {}
-    __getattr__ = lambda self, name: _swig_getattr(self, VectorString, name)
-    __repr__ = _swig_repr
-
-    def iterator(self):
-        return _SimModel_PyCallBack.VectorString_iterator(self)
-    def __iter__(self):
-        return self.iterator()
-
-    def __nonzero__(self):
-        return _SimModel_PyCallBack.VectorString___nonzero__(self)
-
-    def __bool__(self):
-        return _SimModel_PyCallBack.VectorString___bool__(self)
-
-    def __len__(self):
-        return _SimModel_PyCallBack.VectorString___len__(self)
-
-    def pop(self):
-        return _SimModel_PyCallBack.VectorString_pop(self)
-
-    def __getslice__(self, i, j):
-        return _SimModel_PyCallBack.VectorString___getslice__(self, i, j)
-
-    def __setslice__(self, *args):
-        return _SimModel_PyCallBack.VectorString___setslice__(self, *args)
-
-    def __delslice__(self, i, j):
-        return _SimModel_PyCallBack.VectorString___delslice__(self, i, j)
-
-    def __delitem__(self, *args):
-        return _SimModel_PyCallBack.VectorString___delitem__(self, *args)
-
-    def __getitem__(self, *args):
-        return _SimModel_PyCallBack.VectorString___getitem__(self, *args)
-
-    def __setitem__(self, *args):
-        return _SimModel_PyCallBack.VectorString___setitem__(self, *args)
-
-    def append(self, x):
-        return _SimModel_PyCallBack.VectorString_append(self, x)
-
-    def empty(self):
-        return _SimModel_PyCallBack.VectorString_empty(self)
-
-    def size(self):
-        return _SimModel_PyCallBack.VectorString_size(self)
-
-    def clear(self):
-        return _SimModel_PyCallBack.VectorString_clear(self)
-
-    def swap(self, v):
-        return _SimModel_PyCallBack.VectorString_swap(self, v)
-
-    def get_allocator(self):
-        return _SimModel_PyCallBack.VectorString_get_allocator(self)
-
-    def begin(self):
-        return _SimModel_PyCallBack.VectorString_begin(self)
-
-    def end(self):
-        return _SimModel_PyCallBack.VectorString_end(self)
-
-    def rbegin(self):
-        return _SimModel_PyCallBack.VectorString_rbegin(self)
-
-    def rend(self):
-        return _SimModel_PyCallBack.VectorString_rend(self)
-
-    def pop_back(self):
-        return _SimModel_PyCallBack.VectorString_pop_back(self)
-
-    def erase(self, *args):
-        return _SimModel_PyCallBack.VectorString_erase(self, *args)
-
-    def __init__(self, *args):
-        this = _SimModel_PyCallBack.new_VectorString(*args)
-        try:
-            self.this.append(this)
-        except:
-            self.this = this
-
-    def push_back(self, x):
-        return _SimModel_PyCallBack.VectorString_push_back(self, x)
-
-    def front(self):
-        return _SimModel_PyCallBack.VectorString_front(self)
-
-    def back(self):
-        return _SimModel_PyCallBack.VectorString_back(self)
-
-    def assign(self, n, x):
-        return _SimModel_PyCallBack.VectorString_assign(self, n, x)
-
-    def resize(self, *args):
-        return _SimModel_PyCallBack.VectorString_resize(self, *args)
-
-    def insert(self, *args):
-        return _SimModel_PyCallBack.VectorString_insert(self, *args)
-
-    def reserve(self, n):
-        return _SimModel_PyCallBack.VectorString_reserve(self, n)
-
-    def capacity(self):
-        return _SimModel_PyCallBack.VectorString_capacity(self)
-    __swig_destroy__ = _SimModel_PyCallBack.delete_VectorString
-    __del__ = lambda self: None
-VectorString_swigregister = _SimModel_PyCallBack.VectorString_swigregister
-VectorString_swigregister(VectorString)
+    def getRefValueType(self, _classId, _propertyName):
+        _classObj = self.getSimClassObj(_classId)
+        if _classObj is not None and getattr(_classObj, _propertyName)().present():
+            if type(getattr(_classObj, _propertyName)().getValue()) is str:
+                return "String"
+            else:
+                return "Number"
+    def getRefNumberValue(self, _classId, _propertyName):
+        _classObj = self.getSimClassObj(_classId)
+        if _classObj is not None and getattr(_classObj, _propertyName)().present():
+            return getattr(_classObj, _propertyName)().getValue()
+    def getRefStringValue(self, _classId, _propertyName):
+        _classObj = self.getSimClassObj(_classId)
+        if _classObj is not None and getattr(_classObj, _propertyName)().present():
+            return getattr(_classObj, _propertyName)().getValue()    
 
 # This file is compatible with both classic and new-style classes.
 

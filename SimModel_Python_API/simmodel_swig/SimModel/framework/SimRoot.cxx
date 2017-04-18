@@ -410,7 +410,7 @@ namespace schema
       }
 
       //const SimRoot::RefId_type& SimRoot::
-	  const std::string SimRoot::
+      const std::string SimRoot::
       RefId () const
       {
         return this->RefId_.get ();

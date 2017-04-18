@@ -25,6 +25,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="SimSlabParams_Slab_Floor.i" />
+    <CustomBuild Include="SimSlabParams_Slab_Floor.i" />
   </ItemGroup>
 </Project>

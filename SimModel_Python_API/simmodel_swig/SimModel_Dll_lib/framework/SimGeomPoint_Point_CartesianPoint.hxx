@@ -50,7 +50,7 @@
 #include <xsd/cxx/config.hxx>
 
 #if (XSD_INT_VERSION != 4000000L)
-#error XSD runtime version mismatch
+//#error XSD runtime version mismatch
 #endif
 
 #include <xsd/cxx/pre.hxx>
@@ -271,26 +271,26 @@ namespace schema
       class __declspec(dllexport) SimGeomPoint_Point_CartesianPoint: public ::schema::simxml::ResourcesGeometry::SimGeomPoint_Point
       {
         public:
-        // Coordinates
+        // Coordinates_MeasureValue
         //
-        typedef ::schema::simxml::SimModelCore::doubleList Coordinates_type;
-        typedef ::xsd::cxx::tree::optional< Coordinates_type > Coordinates_optional;
-        typedef ::xsd::cxx::tree::traits< Coordinates_type, char > Coordinates_traits;
+        typedef ::schema::simxml::SimModelCore::doubleList Coordinates_MeasureValue_type;
+        typedef ::xsd::cxx::tree::optional< Coordinates_MeasureValue_type, false > Coordinates_MeasureValue_optional;
+        typedef ::xsd::cxx::tree::traits< Coordinates_MeasureValue_type, char > Coordinates_MeasureValue_traits;
 
-        const Coordinates_optional&
-        Coordinates () const;
+        const Coordinates_MeasureValue_optional&
+        Coordinates_MeasureValue () const;
 
-        Coordinates_optional&
-        Coordinates ();
-
-        void
-        Coordinates (const Coordinates_type& x);
+        Coordinates_MeasureValue_optional&
+        Coordinates_MeasureValue ();
 
         void
-        Coordinates (const Coordinates_optional& x);
+        Coordinates_MeasureValue (const Coordinates_MeasureValue_type& x);
 
         void
-        Coordinates (::std::auto_ptr< Coordinates_type > p);
+        Coordinates_MeasureValue (const Coordinates_MeasureValue_optional& x);
+
+        void
+        Coordinates_MeasureValue (::std::auto_ptr< Coordinates_MeasureValue_type > p);
 
         // Constructors.
         //
@@ -324,7 +324,7 @@ namespace schema
                ::xml_schema::flags);
 
         protected:
-        Coordinates_optional Coordinates_;
+        Coordinates_MeasureValue_optional Coordinates_MeasureValue_;
       };
     }
   }

@@ -323,6 +323,24 @@ namespace schema
         void
         WindowOpeningProfilePath (::std::auto_ptr< WindowOpeningProfilePath_type > p);
 
+        // IsPunchedWindowArray
+        //
+        typedef ::xml_schema::boolean IsPunchedWindowArray_type;
+        typedef ::xsd::cxx::tree::optional< IsPunchedWindowArray_type, true > IsPunchedWindowArray_optional;
+        typedef ::xsd::cxx::tree::traits< IsPunchedWindowArray_type, char > IsPunchedWindowArray_traits;
+
+        const IsPunchedWindowArray_optional&
+        IsPunchedWindowArray () const;
+
+        IsPunchedWindowArray_optional&
+        IsPunchedWindowArray ();
+
+        void
+        IsPunchedWindowArray (const IsPunchedWindowArray_type& x);
+
+        void
+        IsPunchedWindowArray (const IsPunchedWindowArray_optional& x);
+
         // ArrayLeftOffset
         //
         typedef ::xml_schema::double_ ArrayLeftOffset_type;
@@ -412,6 +430,7 @@ namespace schema
         WindowTypeDef_optional WindowTypeDef_;
         GlazingLayerSet_optional GlazingLayerSet_;
         WindowOpeningProfilePath_optional WindowOpeningProfilePath_;
+        IsPunchedWindowArray_optional IsPunchedWindowArray_;
         ArrayLeftOffset_optional ArrayLeftOffset_;
         ArrayRightOffset_optional ArrayRightOffset_;
         ArrayWinWallRatio_optional ArrayWinWallRatio_;

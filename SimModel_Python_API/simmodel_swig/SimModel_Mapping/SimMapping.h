@@ -9,6 +9,12 @@ using namespace namespaces::Sim::DataMap;
 // forward declaration
 class SimHierarchyNode;
 class SimHierarchy;
+//using namespace std;
+#include "../SimModel_Dll_lib/framework/simmodel.hxx"
+using namespace schema::simxml::Model;
+using namespace schema::simxml::SimModelCore;
+using namespace schema::simxml::ResourcesGeneral;
+using namespace schema::simxml::MepModel;
 
 class __declspec(dllexport) MappedProperty
 {

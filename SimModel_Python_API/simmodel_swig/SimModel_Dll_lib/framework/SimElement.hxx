@@ -50,7 +50,7 @@
 #include <xsd/cxx/config.hxx>
 
 #if (XSD_INT_VERSION != 4000000L)
-#error XSD runtime version mismatch
+//#error XSD runtime version mismatch
 #endif
 
 #include <xsd/cxx/pre.hxx>
@@ -257,17 +257,6 @@ namespace schema
   {
     namespace SimModelCore
     {
-      class SelectedPropertyGroups;
-    }
-  }
-}
-
-namespace schema
-{
-  namespace simxml
-  {
-    namespace SimModelCore
-    {
       class __declspec(dllexport) SimElement: public ::schema::simxml::SimModelCore::SimObject
       {
         public:
@@ -376,27 +365,6 @@ namespace schema
         void
         Tag (::std::auto_ptr< Tag_type > p);
 
-        // SelectedPropertyGroups
-        //
-        typedef ::schema::simxml::SimModelCore::SelectedPropertyGroups SelectedPropertyGroups_type;
-        typedef ::xsd::cxx::tree::optional< SelectedPropertyGroups_type > SelectedPropertyGroups_optional;
-        typedef ::xsd::cxx::tree::traits< SelectedPropertyGroups_type, char > SelectedPropertyGroups_traits;
-
-        const SelectedPropertyGroups_optional&
-        SelectedPropertyGroups () const;
-
-        SelectedPropertyGroups_optional&
-        SelectedPropertyGroups ();
-
-        void
-        SelectedPropertyGroups (const SelectedPropertyGroups_type& x);
-
-        void
-        SelectedPropertyGroups (const SelectedPropertyGroups_optional& x);
-
-        void
-        SelectedPropertyGroups (::std::auto_ptr< SelectedPropertyGroups_type > p);
-
         // Constructors.
         //
         SimElement ();
@@ -434,7 +402,6 @@ namespace schema
         AssignedToGroups_optional AssignedToGroups_;
         Placement_optional Placement_;
         Tag_optional Tag_;
-        SelectedPropertyGroups_optional SelectedPropertyGroups_;
       };
     }
   }

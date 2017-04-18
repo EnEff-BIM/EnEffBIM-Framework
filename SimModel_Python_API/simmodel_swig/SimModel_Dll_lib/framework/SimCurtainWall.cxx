@@ -812,7 +812,7 @@ namespace schema
 
       SimCurtainWall::
       SimCurtainWall ()
-      : ::schema::simxml::BuildingModel::SimBuildingElementAssembly (),
+      : ::schema::simxml::SimModelCore::SimBuildingElementAssembly (),
         Name_ (this),
         ConstructionType_ (this),
         CurtainWallIsExternal_ (this),
@@ -845,7 +845,7 @@ namespace schema
 
       SimCurtainWall::
       SimCurtainWall (const RefId_type& RefId)
-      : ::schema::simxml::BuildingModel::SimBuildingElementAssembly (RefId),
+      : ::schema::simxml::SimModelCore::SimBuildingElementAssembly (RefId),
         Name_ (this),
         ConstructionType_ (this),
         CurtainWallIsExternal_ (this),
@@ -880,7 +880,7 @@ namespace schema
       SimCurtainWall (const SimCurtainWall& x,
                       ::xml_schema::flags f,
                       ::xml_schema::container* c)
-      : ::schema::simxml::BuildingModel::SimBuildingElementAssembly (x, f, c),
+      : ::schema::simxml::SimModelCore::SimBuildingElementAssembly (x, f, c),
         Name_ (x.Name_, f, this),
         ConstructionType_ (x.ConstructionType_, f, this),
         CurtainWallIsExternal_ (x.CurtainWallIsExternal_, f, this),
@@ -915,7 +915,7 @@ namespace schema
       SimCurtainWall (const ::xercesc::DOMElement& e,
                       ::xml_schema::flags f,
                       ::xml_schema::container* c)
-      : ::schema::simxml::BuildingModel::SimBuildingElementAssembly (e, f | ::xml_schema::flags::base, c),
+      : ::schema::simxml::SimModelCore::SimBuildingElementAssembly (e, f | ::xml_schema::flags::base, c),
         Name_ (this),
         ConstructionType_ (this),
         CurtainWallIsExternal_ (this),
@@ -955,7 +955,7 @@ namespace schema
       parse (::xsd::cxx::xml::dom::parser< char >& p,
              ::xml_schema::flags f)
       {
-        this->::schema::simxml::BuildingModel::SimBuildingElementAssembly::parse (p, f);
+        this->::schema::simxml::SimModelCore::SimBuildingElementAssembly::parse (p, f);
 
         for (; p.more_content (); p.next_content (false))
         {
@@ -1321,7 +1321,7 @@ namespace schema
       {
         if (this != &x)
         {
-          static_cast< ::schema::simxml::BuildingModel::SimBuildingElementAssembly& > (*this) = x;
+          static_cast< ::schema::simxml::SimModelCore::SimBuildingElementAssembly& > (*this) = x;
           this->Name_ = x.Name_;
           this->ConstructionType_ = x.ConstructionType_;
           this->CurtainWallIsExternal_ = x.CurtainWallIsExternal_;

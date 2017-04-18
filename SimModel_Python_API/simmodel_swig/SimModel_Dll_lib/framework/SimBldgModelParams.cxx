@@ -40,6 +40,8 @@
 
 #include "SimBldgModelParams.hxx"
 
+#include "doublelist.hxx"
+
 namespace schema
 {
   namespace simxml
@@ -199,6 +201,36 @@ namespace schema
         this->LocalPlacementZ_ = x;
       }
 
+      const SimBldgModelParams::LocalPlacementCoordinates_optional& SimBldgModelParams::
+      LocalPlacementCoordinates () const
+      {
+        return this->LocalPlacementCoordinates_;
+      }
+
+      SimBldgModelParams::LocalPlacementCoordinates_optional& SimBldgModelParams::
+      LocalPlacementCoordinates ()
+      {
+        return this->LocalPlacementCoordinates_;
+      }
+
+      void SimBldgModelParams::
+      LocalPlacementCoordinates (const LocalPlacementCoordinates_type& x)
+      {
+        this->LocalPlacementCoordinates_.set (x);
+      }
+
+      void SimBldgModelParams::
+      LocalPlacementCoordinates (const LocalPlacementCoordinates_optional& x)
+      {
+        this->LocalPlacementCoordinates_ = x;
+      }
+
+      void SimBldgModelParams::
+      LocalPlacementCoordinates (::std::auto_ptr< LocalPlacementCoordinates_type > x)
+      {
+        this->LocalPlacementCoordinates_.set (x);
+      }
+
       const SimBldgModelParams::LocalPlacementRotation_optional& SimBldgModelParams::
       LocalPlacementRotation () const
       {
@@ -327,6 +359,7 @@ namespace schema
         LocalPlacementX_ (this),
         LocalPlacementY_ (this),
         LocalPlacementZ_ (this),
+        LocalPlacementCoordinates_ (this),
         LocalPlacementRotation_ (this),
         XDirectionX_ (this),
         XDirectionY_ (this),
@@ -343,6 +376,7 @@ namespace schema
         LocalPlacementX_ (this),
         LocalPlacementY_ (this),
         LocalPlacementZ_ (this),
+        LocalPlacementCoordinates_ (this),
         LocalPlacementRotation_ (this),
         XDirectionX_ (this),
         XDirectionY_ (this),
@@ -361,6 +395,7 @@ namespace schema
         LocalPlacementX_ (x.LocalPlacementX_, f, this),
         LocalPlacementY_ (x.LocalPlacementY_, f, this),
         LocalPlacementZ_ (x.LocalPlacementZ_, f, this),
+        LocalPlacementCoordinates_ (x.LocalPlacementCoordinates_, f, this),
         LocalPlacementRotation_ (x.LocalPlacementRotation_, f, this),
         XDirectionX_ (x.XDirectionX_, f, this),
         XDirectionY_ (x.XDirectionY_, f, this),
@@ -379,6 +414,7 @@ namespace schema
         LocalPlacementX_ (this),
         LocalPlacementY_ (this),
         LocalPlacementZ_ (this),
+        LocalPlacementCoordinates_ (this),
         LocalPlacementRotation_ (this),
         XDirectionX_ (this),
         XDirectionY_ (this),
@@ -472,6 +508,20 @@ namespace schema
             }
           }
 
+          // LocalPlacementCoordinates
+          //
+          if (n.name () == "LocalPlacementCoordinates" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/SimModelCore")
+          {
+            ::std::auto_ptr< LocalPlacementCoordinates_type > r (
+              LocalPlacementCoordinates_traits::create (i, f, this));
+
+            if (!this->LocalPlacementCoordinates_)
+            {
+              this->LocalPlacementCoordinates_.set (r);
+              continue;
+            }
+          }
+
           // LocalPlacementRotation
           //
           if (n.name () == "LocalPlacementRotation" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/SimModelCore")
@@ -539,6 +589,7 @@ namespace schema
           this->LocalPlacementX_ = x.LocalPlacementX_;
           this->LocalPlacementY_ = x.LocalPlacementY_;
           this->LocalPlacementZ_ = x.LocalPlacementZ_;
+          this->LocalPlacementCoordinates_ = x.LocalPlacementCoordinates_;
           this->LocalPlacementRotation_ = x.LocalPlacementRotation_;
           this->XDirectionX_ = x.XDirectionX_;
           this->XDirectionY_ = x.XDirectionY_;

@@ -25,6 +25,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="SimControlScheme_ControlAndSequencingScheme_HeatingLoad.i" />
+    <CustomBuild Include="SimControlScheme_ControlAndSequencingScheme_HeatingLoad.i" />
   </ItemGroup>
 </Project>

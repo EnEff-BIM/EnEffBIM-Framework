@@ -257,7 +257,7 @@ namespace schema
   {
     namespace BuildingModel
     {
-      class SimCurtainWall: public ::schema::simxml::BuildingModel::SimBuildingElementAssembly
+      class SimCurtainWall: public ::schema::simxml::SimModelCore::SimBuildingElementAssembly
       {
         public:
         // Name

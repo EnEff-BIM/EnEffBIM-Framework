@@ -49,36 +49,6 @@ namespace schema
       // SimFlowEnergyTransfer_CoolingCoilWater_CoilAirCoolingWaterToAirHeatPumpParameterEstimation
       // 
 
-      const SimFlowEnergyTransfer_CoolingCoilWater_CoilAirCoolingWaterToAirHeatPumpParameterEstimation::SimFlowEnergyTrans_Name_optional& SimFlowEnergyTransfer_CoolingCoilWater_CoilAirCoolingWaterToAirHeatPumpParameterEstimation::
-      SimFlowEnergyTrans_Name () const
-      {
-        return this->SimFlowEnergyTrans_Name_;
-      }
-
-      SimFlowEnergyTransfer_CoolingCoilWater_CoilAirCoolingWaterToAirHeatPumpParameterEstimation::SimFlowEnergyTrans_Name_optional& SimFlowEnergyTransfer_CoolingCoilWater_CoilAirCoolingWaterToAirHeatPumpParameterEstimation::
-      SimFlowEnergyTrans_Name ()
-      {
-        return this->SimFlowEnergyTrans_Name_;
-      }
-
-      void SimFlowEnergyTransfer_CoolingCoilWater_CoilAirCoolingWaterToAirHeatPumpParameterEstimation::
-      SimFlowEnergyTrans_Name (const SimFlowEnergyTrans_Name_type& x)
-      {
-        this->SimFlowEnergyTrans_Name_.set (x);
-      }
-
-      void SimFlowEnergyTransfer_CoolingCoilWater_CoilAirCoolingWaterToAirHeatPumpParameterEstimation::
-      SimFlowEnergyTrans_Name (const SimFlowEnergyTrans_Name_optional& x)
-      {
-        this->SimFlowEnergyTrans_Name_ = x;
-      }
-
-      void SimFlowEnergyTransfer_CoolingCoilWater_CoilAirCoolingWaterToAirHeatPumpParameterEstimation::
-      SimFlowEnergyTrans_Name (::std::auto_ptr< SimFlowEnergyTrans_Name_type > x)
-      {
-        this->SimFlowEnergyTrans_Name_.set (x);
-      }
-
       const SimFlowEnergyTransfer_CoolingCoilWater_CoilAirCoolingWaterToAirHeatPumpParameterEstimation::SimFlowEnergyTrans_WaterInletNodeName_optional& SimFlowEnergyTransfer_CoolingCoilWater_CoilAirCoolingWaterToAirHeatPumpParameterEstimation::
       SimFlowEnergyTrans_WaterInletNodeName () const
       {
@@ -765,7 +735,6 @@ namespace schema
       SimFlowEnergyTransfer_CoolingCoilWater_CoilAirCoolingWaterToAirHeatPumpParameterEstimation::
       SimFlowEnergyTransfer_CoolingCoilWater_CoilAirCoolingWaterToAirHeatPumpParameterEstimation ()
       : ::schema::simxml::MepModel::SimFlowEnergyTransfer_CoolingCoilWater (),
-        SimFlowEnergyTrans_Name_ (this),
         SimFlowEnergyTrans_WaterInletNodeName_ (this),
         SimFlowEnergyTrans_WaterOutletNodeName_ (this),
         SimFlowEnergyTrans_AirInNodeName_ (this),
@@ -798,7 +767,6 @@ namespace schema
       SimFlowEnergyTransfer_CoolingCoilWater_CoilAirCoolingWaterToAirHeatPumpParameterEstimation::
       SimFlowEnergyTransfer_CoolingCoilWater_CoilAirCoolingWaterToAirHeatPumpParameterEstimation (const RefId_type& RefId)
       : ::schema::simxml::MepModel::SimFlowEnergyTransfer_CoolingCoilWater (RefId),
-        SimFlowEnergyTrans_Name_ (this),
         SimFlowEnergyTrans_WaterInletNodeName_ (this),
         SimFlowEnergyTrans_WaterOutletNodeName_ (this),
         SimFlowEnergyTrans_AirInNodeName_ (this),
@@ -833,7 +801,6 @@ namespace schema
                                                                                                   ::xml_schema::flags f,
                                                                                                   ::xml_schema::container* c)
       : ::schema::simxml::MepModel::SimFlowEnergyTransfer_CoolingCoilWater (x, f, c),
-        SimFlowEnergyTrans_Name_ (x.SimFlowEnergyTrans_Name_, f, this),
         SimFlowEnergyTrans_WaterInletNodeName_ (x.SimFlowEnergyTrans_WaterInletNodeName_, f, this),
         SimFlowEnergyTrans_WaterOutletNodeName_ (x.SimFlowEnergyTrans_WaterOutletNodeName_, f, this),
         SimFlowEnergyTrans_AirInNodeName_ (x.SimFlowEnergyTrans_AirInNodeName_, f, this),
@@ -868,7 +835,6 @@ namespace schema
                                                                                                   ::xml_schema::flags f,
                                                                                                   ::xml_schema::container* c)
       : ::schema::simxml::MepModel::SimFlowEnergyTransfer_CoolingCoilWater (e, f | ::xml_schema::flags::base, c),
-        SimFlowEnergyTrans_Name_ (this),
         SimFlowEnergyTrans_WaterInletNodeName_ (this),
         SimFlowEnergyTrans_WaterOutletNodeName_ (this),
         SimFlowEnergyTrans_AirInNodeName_ (this),
@@ -914,20 +880,6 @@ namespace schema
           const ::xercesc::DOMElement& i (p.cur_element ());
           const ::xsd::cxx::xml::qualified_name< char > n (
             ::xsd::cxx::xml::dom::name< char > (i));
-
-          // SimFlowEnergyTrans_Name
-          //
-          if (n.name () == "SimFlowEnergyTrans_Name" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/MepModel")
-          {
-            ::std::auto_ptr< SimFlowEnergyTrans_Name_type > r (
-              SimFlowEnergyTrans_Name_traits::create (i, f, this));
-
-            if (!this->SimFlowEnergyTrans_Name_)
-            {
-              this->SimFlowEnergyTrans_Name_.set (r);
-              continue;
-            }
-          }
 
           // SimFlowEnergyTrans_WaterInletNodeName
           //
@@ -1250,7 +1202,6 @@ namespace schema
         if (this != &x)
         {
           static_cast< ::schema::simxml::MepModel::SimFlowEnergyTransfer_CoolingCoilWater& > (*this) = x;
-          this->SimFlowEnergyTrans_Name_ = x.SimFlowEnergyTrans_Name_;
           this->SimFlowEnergyTrans_WaterInletNodeName_ = x.SimFlowEnergyTrans_WaterInletNodeName_;
           this->SimFlowEnergyTrans_WaterOutletNodeName_ = x.SimFlowEnergyTrans_WaterOutletNodeName_;
           this->SimFlowEnergyTrans_AirInNodeName_ = x.SimFlowEnergyTrans_AirInNodeName_;

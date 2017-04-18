@@ -1945,6 +1945,272 @@ namespace schema
           "http://d-alchemy.com/schema/simxml/ResourcesGeometry");
       }
 
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
+      Coordinates (const ::std::string& u,
+                   ::xml_schema::flags f,
+                   const ::xml_schema::properties& p)
+      {
+        ::xsd::cxx::xml::auto_initializer i (
+          (f & ::xml_schema::flags::dont_initialize) == 0,
+          (f & ::xml_schema::flags::keep_dom) == 0);
+
+        ::xsd::cxx::tree::error_handler< char > h;
+
+        ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
+          ::xsd::cxx::xml::dom::parse< char > (
+            u, h, p, f));
+
+        h.throw_if_failed< ::xsd::cxx::tree::parsing< char > > ();
+
+        return ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList > (
+          ::schema::simxml::ResourcesGeometry::Coordinates (
+            d, f | ::xml_schema::flags::own_dom, p));
+      }
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
+      Coordinates (const ::std::string& u,
+                   ::xml_schema::error_handler& h,
+                   ::xml_schema::flags f,
+                   const ::xml_schema::properties& p)
+      {
+        ::xsd::cxx::xml::auto_initializer i (
+          (f & ::xml_schema::flags::dont_initialize) == 0,
+          (f & ::xml_schema::flags::keep_dom) == 0);
+
+        ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
+          ::xsd::cxx::xml::dom::parse< char > (
+            u, h, p, f));
+
+        if (!d.get ())
+          throw ::xsd::cxx::tree::parsing< char > ();
+
+        return ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList > (
+          ::schema::simxml::ResourcesGeometry::Coordinates (
+            d, f | ::xml_schema::flags::own_dom, p));
+      }
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
+      Coordinates (const ::std::string& u,
+                   ::xercesc::DOMErrorHandler& h,
+                   ::xml_schema::flags f,
+                   const ::xml_schema::properties& p)
+      {
+        ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
+          ::xsd::cxx::xml::dom::parse< char > (
+            u, h, p, f));
+
+        if (!d.get ())
+          throw ::xsd::cxx::tree::parsing< char > ();
+
+        return ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList > (
+          ::schema::simxml::ResourcesGeometry::Coordinates (
+            d, f | ::xml_schema::flags::own_dom, p));
+      }
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
+      Coordinates (::std::istream& is,
+                   ::xml_schema::flags f,
+                   const ::xml_schema::properties& p)
+      {
+        ::xsd::cxx::xml::auto_initializer i (
+          (f & ::xml_schema::flags::dont_initialize) == 0,
+          (f & ::xml_schema::flags::keep_dom) == 0);
+
+        ::xsd::cxx::xml::sax::std_input_source isrc (is);
+        return ::schema::simxml::ResourcesGeometry::Coordinates (isrc, f, p);
+      }
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
+      Coordinates (::std::istream& is,
+                   ::xml_schema::error_handler& h,
+                   ::xml_schema::flags f,
+                   const ::xml_schema::properties& p)
+      {
+        ::xsd::cxx::xml::auto_initializer i (
+          (f & ::xml_schema::flags::dont_initialize) == 0,
+          (f & ::xml_schema::flags::keep_dom) == 0);
+
+        ::xsd::cxx::xml::sax::std_input_source isrc (is);
+        return ::schema::simxml::ResourcesGeometry::Coordinates (isrc, h, f, p);
+      }
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
+      Coordinates (::std::istream& is,
+                   ::xercesc::DOMErrorHandler& h,
+                   ::xml_schema::flags f,
+                   const ::xml_schema::properties& p)
+      {
+        ::xsd::cxx::xml::sax::std_input_source isrc (is);
+        return ::schema::simxml::ResourcesGeometry::Coordinates (isrc, h, f, p);
+      }
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
+      Coordinates (::std::istream& is,
+                   const ::std::string& sid,
+                   ::xml_schema::flags f,
+                   const ::xml_schema::properties& p)
+      {
+        ::xsd::cxx::xml::auto_initializer i (
+          (f & ::xml_schema::flags::dont_initialize) == 0,
+          (f & ::xml_schema::flags::keep_dom) == 0);
+
+        ::xsd::cxx::xml::sax::std_input_source isrc (is, sid);
+        return ::schema::simxml::ResourcesGeometry::Coordinates (isrc, f, p);
+      }
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
+      Coordinates (::std::istream& is,
+                   const ::std::string& sid,
+                   ::xml_schema::error_handler& h,
+                   ::xml_schema::flags f,
+                   const ::xml_schema::properties& p)
+      {
+        ::xsd::cxx::xml::auto_initializer i (
+          (f & ::xml_schema::flags::dont_initialize) == 0,
+          (f & ::xml_schema::flags::keep_dom) == 0);
+
+        ::xsd::cxx::xml::sax::std_input_source isrc (is, sid);
+        return ::schema::simxml::ResourcesGeometry::Coordinates (isrc, h, f, p);
+      }
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
+      Coordinates (::std::istream& is,
+                   const ::std::string& sid,
+                   ::xercesc::DOMErrorHandler& h,
+                   ::xml_schema::flags f,
+                   const ::xml_schema::properties& p)
+      {
+        ::xsd::cxx::xml::sax::std_input_source isrc (is, sid);
+        return ::schema::simxml::ResourcesGeometry::Coordinates (isrc, h, f, p);
+      }
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
+      Coordinates (::xercesc::InputSource& i,
+                   ::xml_schema::flags f,
+                   const ::xml_schema::properties& p)
+      {
+        ::xsd::cxx::tree::error_handler< char > h;
+
+        ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
+          ::xsd::cxx::xml::dom::parse< char > (
+            i, h, p, f));
+
+        h.throw_if_failed< ::xsd::cxx::tree::parsing< char > > ();
+
+        return ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList > (
+          ::schema::simxml::ResourcesGeometry::Coordinates (
+            d, f | ::xml_schema::flags::own_dom, p));
+      }
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
+      Coordinates (::xercesc::InputSource& i,
+                   ::xml_schema::error_handler& h,
+                   ::xml_schema::flags f,
+                   const ::xml_schema::properties& p)
+      {
+        ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
+          ::xsd::cxx::xml::dom::parse< char > (
+            i, h, p, f));
+
+        if (!d.get ())
+          throw ::xsd::cxx::tree::parsing< char > ();
+
+        return ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList > (
+          ::schema::simxml::ResourcesGeometry::Coordinates (
+            d, f | ::xml_schema::flags::own_dom, p));
+      }
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
+      Coordinates (::xercesc::InputSource& i,
+                   ::xercesc::DOMErrorHandler& h,
+                   ::xml_schema::flags f,
+                   const ::xml_schema::properties& p)
+      {
+        ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
+          ::xsd::cxx::xml::dom::parse< char > (
+            i, h, p, f));
+
+        if (!d.get ())
+          throw ::xsd::cxx::tree::parsing< char > ();
+
+        return ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList > (
+          ::schema::simxml::ResourcesGeometry::Coordinates (
+            d, f | ::xml_schema::flags::own_dom, p));
+      }
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
+      Coordinates (const ::xercesc::DOMDocument& doc,
+                   ::xml_schema::flags f,
+                   const ::xml_schema::properties& p)
+      {
+        if (f & ::xml_schema::flags::keep_dom)
+        {
+          ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
+            static_cast< ::xercesc::DOMDocument* > (doc.cloneNode (true)));
+
+          return ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList > (
+            ::schema::simxml::ResourcesGeometry::Coordinates (
+              d, f | ::xml_schema::flags::own_dom, p));
+        }
+
+        const ::xercesc::DOMElement& e (*doc.getDocumentElement ());
+        const ::xsd::cxx::xml::qualified_name< char > n (
+          ::xsd::cxx::xml::dom::name< char > (e));
+
+        if (n.name () == "Coordinates" &&
+            n.namespace_ () == "http://d-alchemy.com/schema/simxml/ResourcesGeometry")
+        {
+          ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList > r (
+            ::xsd::cxx::tree::traits< ::schema::simxml::SimModelCore::doubleList, char >::create (
+              e, f, 0));
+          return r;
+        }
+
+        throw ::xsd::cxx::tree::unexpected_element < char > (
+          n.name (),
+          n.namespace_ (),
+          "Coordinates",
+          "http://d-alchemy.com/schema/simxml/ResourcesGeometry");
+      }
+
+      ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
+      Coordinates (::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d,
+                   ::xml_schema::flags f,
+                   const ::xml_schema::properties&)
+      {
+        ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > c (
+          ((f & ::xml_schema::flags::keep_dom) &&
+           !(f & ::xml_schema::flags::own_dom))
+          ? static_cast< ::xercesc::DOMDocument* > (d->cloneNode (true))
+          : 0);
+
+        ::xercesc::DOMDocument& doc (c.get () ? *c : *d);
+        const ::xercesc::DOMElement& e (*doc.getDocumentElement ());
+
+        const ::xsd::cxx::xml::qualified_name< char > n (
+          ::xsd::cxx::xml::dom::name< char > (e));
+
+        if (f & ::xml_schema::flags::keep_dom)
+          doc.setUserData (::xml_schema::dom::tree_node_key,
+                           (c.get () ? &c : &d),
+                           0);
+
+        if (n.name () == "Coordinates" &&
+            n.namespace_ () == "http://d-alchemy.com/schema/simxml/ResourcesGeometry")
+        {
+          ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList > r (
+            ::xsd::cxx::tree::traits< ::schema::simxml::SimModelCore::doubleList, char >::create (
+              e, f, 0));
+          return r;
+        }
+
+        throw ::xsd::cxx::tree::unexpected_element < char > (
+          n.name (),
+          n.namespace_ (),
+          "Coordinates",
+          "http://d-alchemy.com/schema/simxml/ResourcesGeometry");
+      }
+
       ::std::auto_ptr< ::xml_schema::double_ >
       Scale2 (const ::std::string& u,
               ::xml_schema::flags f,
@@ -27036,9 +27302,9 @@ namespace schema
       }
 
       ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
-      Coordinates (const ::std::string& u,
-                   ::xml_schema::flags f,
-                   const ::xml_schema::properties& p)
+      Coordinates_MeasureValue (const ::std::string& u,
+                                ::xml_schema::flags f,
+                                const ::xml_schema::properties& p)
       {
         ::xsd::cxx::xml::auto_initializer i (
           (f & ::xml_schema::flags::dont_initialize) == 0,
@@ -27053,15 +27319,15 @@ namespace schema
         h.throw_if_failed< ::xsd::cxx::tree::parsing< char > > ();
 
         return ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList > (
-          ::schema::simxml::ResourcesGeometry::Coordinates (
+          ::schema::simxml::ResourcesGeometry::Coordinates_MeasureValue (
             d, f | ::xml_schema::flags::own_dom, p));
       }
 
       ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
-      Coordinates (const ::std::string& u,
-                   ::xml_schema::error_handler& h,
-                   ::xml_schema::flags f,
-                   const ::xml_schema::properties& p)
+      Coordinates_MeasureValue (const ::std::string& u,
+                                ::xml_schema::error_handler& h,
+                                ::xml_schema::flags f,
+                                const ::xml_schema::properties& p)
       {
         ::xsd::cxx::xml::auto_initializer i (
           (f & ::xml_schema::flags::dont_initialize) == 0,
@@ -27075,15 +27341,15 @@ namespace schema
           throw ::xsd::cxx::tree::parsing< char > ();
 
         return ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList > (
-          ::schema::simxml::ResourcesGeometry::Coordinates (
+          ::schema::simxml::ResourcesGeometry::Coordinates_MeasureValue (
             d, f | ::xml_schema::flags::own_dom, p));
       }
 
       ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
-      Coordinates (const ::std::string& u,
-                   ::xercesc::DOMErrorHandler& h,
-                   ::xml_schema::flags f,
-                   const ::xml_schema::properties& p)
+      Coordinates_MeasureValue (const ::std::string& u,
+                                ::xercesc::DOMErrorHandler& h,
+                                ::xml_schema::flags f,
+                                const ::xml_schema::properties& p)
       {
         ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
           ::xsd::cxx::xml::dom::parse< char > (
@@ -27093,91 +27359,91 @@ namespace schema
           throw ::xsd::cxx::tree::parsing< char > ();
 
         return ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList > (
-          ::schema::simxml::ResourcesGeometry::Coordinates (
+          ::schema::simxml::ResourcesGeometry::Coordinates_MeasureValue (
             d, f | ::xml_schema::flags::own_dom, p));
       }
 
       ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
-      Coordinates (::std::istream& is,
-                   ::xml_schema::flags f,
-                   const ::xml_schema::properties& p)
+      Coordinates_MeasureValue (::std::istream& is,
+                                ::xml_schema::flags f,
+                                const ::xml_schema::properties& p)
       {
         ::xsd::cxx::xml::auto_initializer i (
           (f & ::xml_schema::flags::dont_initialize) == 0,
           (f & ::xml_schema::flags::keep_dom) == 0);
 
         ::xsd::cxx::xml::sax::std_input_source isrc (is);
-        return ::schema::simxml::ResourcesGeometry::Coordinates (isrc, f, p);
+        return ::schema::simxml::ResourcesGeometry::Coordinates_MeasureValue (isrc, f, p);
       }
 
       ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
-      Coordinates (::std::istream& is,
-                   ::xml_schema::error_handler& h,
-                   ::xml_schema::flags f,
-                   const ::xml_schema::properties& p)
+      Coordinates_MeasureValue (::std::istream& is,
+                                ::xml_schema::error_handler& h,
+                                ::xml_schema::flags f,
+                                const ::xml_schema::properties& p)
       {
         ::xsd::cxx::xml::auto_initializer i (
           (f & ::xml_schema::flags::dont_initialize) == 0,
           (f & ::xml_schema::flags::keep_dom) == 0);
 
         ::xsd::cxx::xml::sax::std_input_source isrc (is);
-        return ::schema::simxml::ResourcesGeometry::Coordinates (isrc, h, f, p);
+        return ::schema::simxml::ResourcesGeometry::Coordinates_MeasureValue (isrc, h, f, p);
       }
 
       ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
-      Coordinates (::std::istream& is,
-                   ::xercesc::DOMErrorHandler& h,
-                   ::xml_schema::flags f,
-                   const ::xml_schema::properties& p)
+      Coordinates_MeasureValue (::std::istream& is,
+                                ::xercesc::DOMErrorHandler& h,
+                                ::xml_schema::flags f,
+                                const ::xml_schema::properties& p)
       {
         ::xsd::cxx::xml::sax::std_input_source isrc (is);
-        return ::schema::simxml::ResourcesGeometry::Coordinates (isrc, h, f, p);
+        return ::schema::simxml::ResourcesGeometry::Coordinates_MeasureValue (isrc, h, f, p);
       }
 
       ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
-      Coordinates (::std::istream& is,
-                   const ::std::string& sid,
-                   ::xml_schema::flags f,
-                   const ::xml_schema::properties& p)
+      Coordinates_MeasureValue (::std::istream& is,
+                                const ::std::string& sid,
+                                ::xml_schema::flags f,
+                                const ::xml_schema::properties& p)
       {
         ::xsd::cxx::xml::auto_initializer i (
           (f & ::xml_schema::flags::dont_initialize) == 0,
           (f & ::xml_schema::flags::keep_dom) == 0);
 
         ::xsd::cxx::xml::sax::std_input_source isrc (is, sid);
-        return ::schema::simxml::ResourcesGeometry::Coordinates (isrc, f, p);
+        return ::schema::simxml::ResourcesGeometry::Coordinates_MeasureValue (isrc, f, p);
       }
 
       ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
-      Coordinates (::std::istream& is,
-                   const ::std::string& sid,
-                   ::xml_schema::error_handler& h,
-                   ::xml_schema::flags f,
-                   const ::xml_schema::properties& p)
+      Coordinates_MeasureValue (::std::istream& is,
+                                const ::std::string& sid,
+                                ::xml_schema::error_handler& h,
+                                ::xml_schema::flags f,
+                                const ::xml_schema::properties& p)
       {
         ::xsd::cxx::xml::auto_initializer i (
           (f & ::xml_schema::flags::dont_initialize) == 0,
           (f & ::xml_schema::flags::keep_dom) == 0);
 
         ::xsd::cxx::xml::sax::std_input_source isrc (is, sid);
-        return ::schema::simxml::ResourcesGeometry::Coordinates (isrc, h, f, p);
+        return ::schema::simxml::ResourcesGeometry::Coordinates_MeasureValue (isrc, h, f, p);
       }
 
       ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
-      Coordinates (::std::istream& is,
-                   const ::std::string& sid,
-                   ::xercesc::DOMErrorHandler& h,
-                   ::xml_schema::flags f,
-                   const ::xml_schema::properties& p)
+      Coordinates_MeasureValue (::std::istream& is,
+                                const ::std::string& sid,
+                                ::xercesc::DOMErrorHandler& h,
+                                ::xml_schema::flags f,
+                                const ::xml_schema::properties& p)
       {
         ::xsd::cxx::xml::sax::std_input_source isrc (is, sid);
-        return ::schema::simxml::ResourcesGeometry::Coordinates (isrc, h, f, p);
+        return ::schema::simxml::ResourcesGeometry::Coordinates_MeasureValue (isrc, h, f, p);
       }
 
       ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
-      Coordinates (::xercesc::InputSource& i,
-                   ::xml_schema::flags f,
-                   const ::xml_schema::properties& p)
+      Coordinates_MeasureValue (::xercesc::InputSource& i,
+                                ::xml_schema::flags f,
+                                const ::xml_schema::properties& p)
       {
         ::xsd::cxx::tree::error_handler< char > h;
 
@@ -27188,15 +27454,15 @@ namespace schema
         h.throw_if_failed< ::xsd::cxx::tree::parsing< char > > ();
 
         return ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList > (
-          ::schema::simxml::ResourcesGeometry::Coordinates (
+          ::schema::simxml::ResourcesGeometry::Coordinates_MeasureValue (
             d, f | ::xml_schema::flags::own_dom, p));
       }
 
       ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
-      Coordinates (::xercesc::InputSource& i,
-                   ::xml_schema::error_handler& h,
-                   ::xml_schema::flags f,
-                   const ::xml_schema::properties& p)
+      Coordinates_MeasureValue (::xercesc::InputSource& i,
+                                ::xml_schema::error_handler& h,
+                                ::xml_schema::flags f,
+                                const ::xml_schema::properties& p)
       {
         ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
           ::xsd::cxx::xml::dom::parse< char > (
@@ -27206,15 +27472,15 @@ namespace schema
           throw ::xsd::cxx::tree::parsing< char > ();
 
         return ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList > (
-          ::schema::simxml::ResourcesGeometry::Coordinates (
+          ::schema::simxml::ResourcesGeometry::Coordinates_MeasureValue (
             d, f | ::xml_schema::flags::own_dom, p));
       }
 
       ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
-      Coordinates (::xercesc::InputSource& i,
-                   ::xercesc::DOMErrorHandler& h,
-                   ::xml_schema::flags f,
-                   const ::xml_schema::properties& p)
+      Coordinates_MeasureValue (::xercesc::InputSource& i,
+                                ::xercesc::DOMErrorHandler& h,
+                                ::xml_schema::flags f,
+                                const ::xml_schema::properties& p)
       {
         ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d (
           ::xsd::cxx::xml::dom::parse< char > (
@@ -27224,14 +27490,14 @@ namespace schema
           throw ::xsd::cxx::tree::parsing< char > ();
 
         return ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList > (
-          ::schema::simxml::ResourcesGeometry::Coordinates (
+          ::schema::simxml::ResourcesGeometry::Coordinates_MeasureValue (
             d, f | ::xml_schema::flags::own_dom, p));
       }
 
       ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
-      Coordinates (const ::xercesc::DOMDocument& doc,
-                   ::xml_schema::flags f,
-                   const ::xml_schema::properties& p)
+      Coordinates_MeasureValue (const ::xercesc::DOMDocument& doc,
+                                ::xml_schema::flags f,
+                                const ::xml_schema::properties& p)
       {
         if (f & ::xml_schema::flags::keep_dom)
         {
@@ -27239,7 +27505,7 @@ namespace schema
             static_cast< ::xercesc::DOMDocument* > (doc.cloneNode (true)));
 
           return ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList > (
-            ::schema::simxml::ResourcesGeometry::Coordinates (
+            ::schema::simxml::ResourcesGeometry::Coordinates_MeasureValue (
               d, f | ::xml_schema::flags::own_dom, p));
         }
 
@@ -27247,7 +27513,7 @@ namespace schema
         const ::xsd::cxx::xml::qualified_name< char > n (
           ::xsd::cxx::xml::dom::name< char > (e));
 
-        if (n.name () == "Coordinates" &&
+        if (n.name () == "Coordinates_MeasureValue" &&
             n.namespace_ () == "http://d-alchemy.com/schema/simxml/ResourcesGeometry")
         {
           ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList > r (
@@ -27259,14 +27525,14 @@ namespace schema
         throw ::xsd::cxx::tree::unexpected_element < char > (
           n.name (),
           n.namespace_ (),
-          "Coordinates",
+          "Coordinates_MeasureValue",
           "http://d-alchemy.com/schema/simxml/ResourcesGeometry");
       }
 
       ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList >
-      Coordinates (::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d,
-                   ::xml_schema::flags f,
-                   const ::xml_schema::properties&)
+      Coordinates_MeasureValue (::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > d,
+                                ::xml_schema::flags f,
+                                const ::xml_schema::properties&)
       {
         ::xml_schema::dom::auto_ptr< ::xercesc::DOMDocument > c (
           ((f & ::xml_schema::flags::keep_dom) &&
@@ -27285,7 +27551,7 @@ namespace schema
                            (c.get () ? &c : &d),
                            0);
 
-        if (n.name () == "Coordinates" &&
+        if (n.name () == "Coordinates_MeasureValue" &&
             n.namespace_ () == "http://d-alchemy.com/schema/simxml/ResourcesGeometry")
         {
           ::std::auto_ptr< ::schema::simxml::SimModelCore::doubleList > r (
@@ -27297,7 +27563,7 @@ namespace schema
         throw ::xsd::cxx::tree::unexpected_element < char > (
           n.name (),
           n.namespace_ (),
-          "Coordinates",
+          "Coordinates_MeasureValue",
           "http://d-alchemy.com/schema/simxml/ResourcesGeometry");
       }
 
@@ -35255,7 +35521,7 @@ namespace schema
         const ::xsd::cxx::xml::qualified_name< char > n (
           ::xsd::cxx::xml::dom::name< char > (e));
 
-        if (n.name () == "Orientation.Reference" &&
+        if (n.name () == "Orientation_Reference" &&
             n.namespace_ () == "http://d-alchemy.com/schema/simxml/ResourcesGeometry")
         {
           ::std::auto_ptr< ::xml_schema::idref > r (
@@ -35267,7 +35533,7 @@ namespace schema
         throw ::xsd::cxx::tree::unexpected_element < char > (
           n.name (),
           n.namespace_ (),
-          "Orientation.Reference",
+          "Orientation_Reference",
           "http://d-alchemy.com/schema/simxml/ResourcesGeometry");
       }
 
@@ -35293,7 +35559,7 @@ namespace schema
                            (c.get () ? &c : &d),
                            0);
 
-        if (n.name () == "Orientation.Reference" &&
+        if (n.name () == "Orientation_Reference" &&
             n.namespace_ () == "http://d-alchemy.com/schema/simxml/ResourcesGeometry")
         {
           ::std::auto_ptr< ::xml_schema::idref > r (
@@ -35305,7 +35571,7 @@ namespace schema
         throw ::xsd::cxx::tree::unexpected_element < char > (
           n.name (),
           n.namespace_ (),
-          "Orientation.Reference",
+          "Orientation_Reference",
           "http://d-alchemy.com/schema/simxml/ResourcesGeometry");
       }
 

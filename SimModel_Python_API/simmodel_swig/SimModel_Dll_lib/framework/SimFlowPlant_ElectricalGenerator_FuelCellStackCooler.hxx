@@ -255,11 +255,364 @@ namespace schema
 {
   namespace simxml
   {
+    namespace SimModelCore
+    {
+      class doubleList;
+    }
+  }
+}
+
+namespace schema
+{
+  namespace simxml
+  {
     namespace MepModel
     {
       class SimFlowPlant_ElectricalGenerator_FuelCellStackCooler: public ::schema::simxml::MepModel::SimFlowPlant_ElectricalGenerator
       {
         public:
+        // SimFlowPlant_Name
+        //
+        typedef ::xml_schema::string SimFlowPlant_Name_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_Name_type > SimFlowPlant_Name_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_Name_type, char > SimFlowPlant_Name_traits;
+
+        const SimFlowPlant_Name_optional&
+        SimFlowPlant_Name () const;
+
+        SimFlowPlant_Name_optional&
+        SimFlowPlant_Name ();
+
+        void
+        SimFlowPlant_Name (const SimFlowPlant_Name_type& x);
+
+        void
+        SimFlowPlant_Name (const SimFlowPlant_Name_optional& x);
+
+        void
+        SimFlowPlant_Name (::std::auto_ptr< SimFlowPlant_Name_type > p);
+
+        // SimFlowPlant_HeatRecovWaterInletNodeName
+        //
+        typedef ::xml_schema::string SimFlowPlant_HeatRecovWaterInletNodeName_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_HeatRecovWaterInletNodeName_type > SimFlowPlant_HeatRecovWaterInletNodeName_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_HeatRecovWaterInletNodeName_type, char > SimFlowPlant_HeatRecovWaterInletNodeName_traits;
+
+        const SimFlowPlant_HeatRecovWaterInletNodeName_optional&
+        SimFlowPlant_HeatRecovWaterInletNodeName () const;
+
+        SimFlowPlant_HeatRecovWaterInletNodeName_optional&
+        SimFlowPlant_HeatRecovWaterInletNodeName ();
+
+        void
+        SimFlowPlant_HeatRecovWaterInletNodeName (const SimFlowPlant_HeatRecovWaterInletNodeName_type& x);
+
+        void
+        SimFlowPlant_HeatRecovWaterInletNodeName (const SimFlowPlant_HeatRecovWaterInletNodeName_optional& x);
+
+        void
+        SimFlowPlant_HeatRecovWaterInletNodeName (::std::auto_ptr< SimFlowPlant_HeatRecovWaterInletNodeName_type > p);
+
+        // SimFlowPlant_HeatRecovWaterOutletNodeName
+        //
+        typedef ::xml_schema::string SimFlowPlant_HeatRecovWaterOutletNodeName_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_HeatRecovWaterOutletNodeName_type > SimFlowPlant_HeatRecovWaterOutletNodeName_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_HeatRecovWaterOutletNodeName_type, char > SimFlowPlant_HeatRecovWaterOutletNodeName_traits;
+
+        const SimFlowPlant_HeatRecovWaterOutletNodeName_optional&
+        SimFlowPlant_HeatRecovWaterOutletNodeName () const;
+
+        SimFlowPlant_HeatRecovWaterOutletNodeName_optional&
+        SimFlowPlant_HeatRecovWaterOutletNodeName ();
+
+        void
+        SimFlowPlant_HeatRecovWaterOutletNodeName (const SimFlowPlant_HeatRecovWaterOutletNodeName_type& x);
+
+        void
+        SimFlowPlant_HeatRecovWaterOutletNodeName (const SimFlowPlant_HeatRecovWaterOutletNodeName_optional& x);
+
+        void
+        SimFlowPlant_HeatRecovWaterOutletNodeName (::std::auto_ptr< SimFlowPlant_HeatRecovWaterOutletNodeName_type > p);
+
+        // SimFlowPlant_NomStackTemp
+        //
+        typedef ::xml_schema::double_ SimFlowPlant_NomStackTemp_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_NomStackTemp_type > SimFlowPlant_NomStackTemp_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_NomStackTemp_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_NomStackTemp_traits;
+
+        const SimFlowPlant_NomStackTemp_optional&
+        SimFlowPlant_NomStackTemp () const;
+
+        SimFlowPlant_NomStackTemp_optional&
+        SimFlowPlant_NomStackTemp ();
+
+        void
+        SimFlowPlant_NomStackTemp (const SimFlowPlant_NomStackTemp_type& x);
+
+        void
+        SimFlowPlant_NomStackTemp (const SimFlowPlant_NomStackTemp_optional& x);
+
+        // SimFlowPlant_ActStackTemp
+        //
+        typedef ::xml_schema::double_ SimFlowPlant_ActStackTemp_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_ActStackTemp_type > SimFlowPlant_ActStackTemp_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_ActStackTemp_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_ActStackTemp_traits;
+
+        const SimFlowPlant_ActStackTemp_optional&
+        SimFlowPlant_ActStackTemp () const;
+
+        SimFlowPlant_ActStackTemp_optional&
+        SimFlowPlant_ActStackTemp ();
+
+        void
+        SimFlowPlant_ActStackTemp (const SimFlowPlant_ActStackTemp_type& x);
+
+        void
+        SimFlowPlant_ActStackTemp (const SimFlowPlant_ActStackTemp_optional& x);
+
+        // SimFlowPlant_Coeff_r_1_4
+        //
+        typedef ::schema::simxml::SimModelCore::doubleList SimFlowPlant_Coeff_r_1_4_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_Coeff_r_1_4_type > SimFlowPlant_Coeff_r_1_4_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_Coeff_r_1_4_type, char > SimFlowPlant_Coeff_r_1_4_traits;
+
+        const SimFlowPlant_Coeff_r_1_4_optional&
+        SimFlowPlant_Coeff_r_1_4 () const;
+
+        SimFlowPlant_Coeff_r_1_4_optional&
+        SimFlowPlant_Coeff_r_1_4 ();
+
+        void
+        SimFlowPlant_Coeff_r_1_4 (const SimFlowPlant_Coeff_r_1_4_type& x);
+
+        void
+        SimFlowPlant_Coeff_r_1_4 (const SimFlowPlant_Coeff_r_1_4_optional& x);
+
+        void
+        SimFlowPlant_Coeff_r_1_4 (::std::auto_ptr< SimFlowPlant_Coeff_r_1_4_type > p);
+
+        // SimFlowPlant_StackCoolantFlowRate
+        //
+        typedef ::xml_schema::double_ SimFlowPlant_StackCoolantFlowRate_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_StackCoolantFlowRate_type > SimFlowPlant_StackCoolantFlowRate_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_StackCoolantFlowRate_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_StackCoolantFlowRate_traits;
+
+        const SimFlowPlant_StackCoolantFlowRate_optional&
+        SimFlowPlant_StackCoolantFlowRate () const;
+
+        SimFlowPlant_StackCoolantFlowRate_optional&
+        SimFlowPlant_StackCoolantFlowRate ();
+
+        void
+        SimFlowPlant_StackCoolantFlowRate (const SimFlowPlant_StackCoolantFlowRate_type& x);
+
+        void
+        SimFlowPlant_StackCoolantFlowRate (const SimFlowPlant_StackCoolantFlowRate_optional& x);
+
+        // SimFlowPlant_StackCoolerUFactorTimesAreaVal
+        //
+        typedef ::xml_schema::double_ SimFlowPlant_StackCoolerUFactorTimesAreaVal_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_StackCoolerUFactorTimesAreaVal_type > SimFlowPlant_StackCoolerUFactorTimesAreaVal_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_StackCoolerUFactorTimesAreaVal_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_StackCoolerUFactorTimesAreaVal_traits;
+
+        const SimFlowPlant_StackCoolerUFactorTimesAreaVal_optional&
+        SimFlowPlant_StackCoolerUFactorTimesAreaVal () const;
+
+        SimFlowPlant_StackCoolerUFactorTimesAreaVal_optional&
+        SimFlowPlant_StackCoolerUFactorTimesAreaVal ();
+
+        void
+        SimFlowPlant_StackCoolerUFactorTimesAreaVal (const SimFlowPlant_StackCoolerUFactorTimesAreaVal_type& x);
+
+        void
+        SimFlowPlant_StackCoolerUFactorTimesAreaVal (const SimFlowPlant_StackCoolerUFactorTimesAreaVal_optional& x);
+
+        // SimFlowPlant_FscogenAdjFactor
+        //
+        typedef ::xml_schema::double_ SimFlowPlant_FscogenAdjFactor_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_FscogenAdjFactor_type > SimFlowPlant_FscogenAdjFactor_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_FscogenAdjFactor_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_FscogenAdjFactor_traits;
+
+        const SimFlowPlant_FscogenAdjFactor_optional&
+        SimFlowPlant_FscogenAdjFactor () const;
+
+        SimFlowPlant_FscogenAdjFactor_optional&
+        SimFlowPlant_FscogenAdjFactor ();
+
+        void
+        SimFlowPlant_FscogenAdjFactor (const SimFlowPlant_FscogenAdjFactor_type& x);
+
+        void
+        SimFlowPlant_FscogenAdjFactor (const SimFlowPlant_FscogenAdjFactor_optional& x);
+
+        // SimFlowPlant_StackCogenerationExchngArea
+        //
+        typedef ::xml_schema::double_ SimFlowPlant_StackCogenerationExchngArea_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_StackCogenerationExchngArea_type > SimFlowPlant_StackCogenerationExchngArea_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_StackCogenerationExchngArea_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_StackCogenerationExchngArea_traits;
+
+        const SimFlowPlant_StackCogenerationExchngArea_optional&
+        SimFlowPlant_StackCogenerationExchngArea () const;
+
+        SimFlowPlant_StackCogenerationExchngArea_optional&
+        SimFlowPlant_StackCogenerationExchngArea ();
+
+        void
+        SimFlowPlant_StackCogenerationExchngArea (const SimFlowPlant_StackCogenerationExchngArea_type& x);
+
+        void
+        SimFlowPlant_StackCogenerationExchngArea (const SimFlowPlant_StackCogenerationExchngArea_optional& x);
+
+        // SimFlowPlant_StackCogenerationExchngNomFlowRate
+        //
+        typedef ::xml_schema::double_ SimFlowPlant_StackCogenerationExchngNomFlowRate_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_StackCogenerationExchngNomFlowRate_type > SimFlowPlant_StackCogenerationExchngNomFlowRate_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_StackCogenerationExchngNomFlowRate_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_StackCogenerationExchngNomFlowRate_traits;
+
+        const SimFlowPlant_StackCogenerationExchngNomFlowRate_optional&
+        SimFlowPlant_StackCogenerationExchngNomFlowRate () const;
+
+        SimFlowPlant_StackCogenerationExchngNomFlowRate_optional&
+        SimFlowPlant_StackCogenerationExchngNomFlowRate ();
+
+        void
+        SimFlowPlant_StackCogenerationExchngNomFlowRate (const SimFlowPlant_StackCogenerationExchngNomFlowRate_type& x);
+
+        void
+        SimFlowPlant_StackCogenerationExchngNomFlowRate (const SimFlowPlant_StackCogenerationExchngNomFlowRate_optional& x);
+
+        // SimFlowPlant_StackCogenerationExchngNomHeatTransCoef
+        //
+        typedef ::xml_schema::double_ SimFlowPlant_StackCogenerationExchngNomHeatTransCoef_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_StackCogenerationExchngNomHeatTransCoef_type > SimFlowPlant_StackCogenerationExchngNomHeatTransCoef_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_StackCogenerationExchngNomHeatTransCoef_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_StackCogenerationExchngNomHeatTransCoef_traits;
+
+        const SimFlowPlant_StackCogenerationExchngNomHeatTransCoef_optional&
+        SimFlowPlant_StackCogenerationExchngNomHeatTransCoef () const;
+
+        SimFlowPlant_StackCogenerationExchngNomHeatTransCoef_optional&
+        SimFlowPlant_StackCogenerationExchngNomHeatTransCoef ();
+
+        void
+        SimFlowPlant_StackCogenerationExchngNomHeatTransCoef (const SimFlowPlant_StackCogenerationExchngNomHeatTransCoef_type& x);
+
+        void
+        SimFlowPlant_StackCogenerationExchngNomHeatTransCoef (const SimFlowPlant_StackCogenerationExchngNomHeatTransCoef_optional& x);
+
+        // SimFlowPlant_StackCogenerationExchngNomHeatTransCoefExp
+        //
+        typedef ::xml_schema::double_ SimFlowPlant_StackCogenerationExchngNomHeatTransCoefExp_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_StackCogenerationExchngNomHeatTransCoefExp_type > SimFlowPlant_StackCogenerationExchngNomHeatTransCoefExp_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_StackCogenerationExchngNomHeatTransCoefExp_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_StackCogenerationExchngNomHeatTransCoefExp_traits;
+
+        const SimFlowPlant_StackCogenerationExchngNomHeatTransCoefExp_optional&
+        SimFlowPlant_StackCogenerationExchngNomHeatTransCoefExp () const;
+
+        SimFlowPlant_StackCogenerationExchngNomHeatTransCoefExp_optional&
+        SimFlowPlant_StackCogenerationExchngNomHeatTransCoefExp ();
+
+        void
+        SimFlowPlant_StackCogenerationExchngNomHeatTransCoefExp (const SimFlowPlant_StackCogenerationExchngNomHeatTransCoefExp_type& x);
+
+        void
+        SimFlowPlant_StackCogenerationExchngNomHeatTransCoefExp (const SimFlowPlant_StackCogenerationExchngNomHeatTransCoefExp_optional& x);
+
+        // SimFlowPlant_StackCoolerPumpPwr
+        //
+        typedef ::xml_schema::double_ SimFlowPlant_StackCoolerPumpPwr_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_StackCoolerPumpPwr_type > SimFlowPlant_StackCoolerPumpPwr_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_StackCoolerPumpPwr_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_StackCoolerPumpPwr_traits;
+
+        const SimFlowPlant_StackCoolerPumpPwr_optional&
+        SimFlowPlant_StackCoolerPumpPwr () const;
+
+        SimFlowPlant_StackCoolerPumpPwr_optional&
+        SimFlowPlant_StackCoolerPumpPwr ();
+
+        void
+        SimFlowPlant_StackCoolerPumpPwr (const SimFlowPlant_StackCoolerPumpPwr_type& x);
+
+        void
+        SimFlowPlant_StackCoolerPumpPwr (const SimFlowPlant_StackCoolerPumpPwr_optional& x);
+
+        // SimFlowPlant_StackCoolerPumpHeatLossFraction
+        //
+        typedef ::xml_schema::double_ SimFlowPlant_StackCoolerPumpHeatLossFraction_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_StackCoolerPumpHeatLossFraction_type > SimFlowPlant_StackCoolerPumpHeatLossFraction_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_StackCoolerPumpHeatLossFraction_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_StackCoolerPumpHeatLossFraction_traits;
+
+        const SimFlowPlant_StackCoolerPumpHeatLossFraction_optional&
+        SimFlowPlant_StackCoolerPumpHeatLossFraction () const;
+
+        SimFlowPlant_StackCoolerPumpHeatLossFraction_optional&
+        SimFlowPlant_StackCoolerPumpHeatLossFraction ();
+
+        void
+        SimFlowPlant_StackCoolerPumpHeatLossFraction (const SimFlowPlant_StackCoolerPumpHeatLossFraction_type& x);
+
+        void
+        SimFlowPlant_StackCoolerPumpHeatLossFraction (const SimFlowPlant_StackCoolerPumpHeatLossFraction_optional& x);
+
+        // SimFlowPlant_StackAirCoolerFanCoefff_0_0
+        //
+        typedef ::schema::simxml::SimModelCore::doubleList SimFlowPlant_StackAirCoolerFanCoefff_0_0_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_StackAirCoolerFanCoefff_0_0_type > SimFlowPlant_StackAirCoolerFanCoefff_0_0_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_StackAirCoolerFanCoefff_0_0_type, char > SimFlowPlant_StackAirCoolerFanCoefff_0_0_traits;
+
+        const SimFlowPlant_StackAirCoolerFanCoefff_0_0_optional&
+        SimFlowPlant_StackAirCoolerFanCoefff_0_0 () const;
+
+        SimFlowPlant_StackAirCoolerFanCoefff_0_0_optional&
+        SimFlowPlant_StackAirCoolerFanCoefff_0_0 ();
+
+        void
+        SimFlowPlant_StackAirCoolerFanCoefff_0_0 (const SimFlowPlant_StackAirCoolerFanCoefff_0_0_type& x);
+
+        void
+        SimFlowPlant_StackAirCoolerFanCoefff_0_0 (const SimFlowPlant_StackAirCoolerFanCoefff_0_0_optional& x);
+
+        void
+        SimFlowPlant_StackAirCoolerFanCoefff_0_0 (::std::auto_ptr< SimFlowPlant_StackAirCoolerFanCoefff_0_0_type > p);
+
+        // SimFlowPlant_StackAirCoolerFanCoefff_1_1
+        //
+        typedef ::schema::simxml::SimModelCore::doubleList SimFlowPlant_StackAirCoolerFanCoefff_1_1_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_StackAirCoolerFanCoefff_1_1_type > SimFlowPlant_StackAirCoolerFanCoefff_1_1_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_StackAirCoolerFanCoefff_1_1_type, char > SimFlowPlant_StackAirCoolerFanCoefff_1_1_traits;
+
+        const SimFlowPlant_StackAirCoolerFanCoefff_1_1_optional&
+        SimFlowPlant_StackAirCoolerFanCoefff_1_1 () const;
+
+        SimFlowPlant_StackAirCoolerFanCoefff_1_1_optional&
+        SimFlowPlant_StackAirCoolerFanCoefff_1_1 ();
+
+        void
+        SimFlowPlant_StackAirCoolerFanCoefff_1_1 (const SimFlowPlant_StackAirCoolerFanCoefff_1_1_type& x);
+
+        void
+        SimFlowPlant_StackAirCoolerFanCoefff_1_1 (const SimFlowPlant_StackAirCoolerFanCoefff_1_1_optional& x);
+
+        void
+        SimFlowPlant_StackAirCoolerFanCoefff_1_1 (::std::auto_ptr< SimFlowPlant_StackAirCoolerFanCoefff_1_1_type > p);
+
+        // SimFlowPlant_StackAirCoolerFanCoeff2
+        //
+        typedef ::xml_schema::double_ SimFlowPlant_StackAirCoolerFanCoeff2_type;
+        typedef ::xsd::cxx::tree::optional< SimFlowPlant_StackAirCoolerFanCoeff2_type > SimFlowPlant_StackAirCoolerFanCoeff2_optional;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_StackAirCoolerFanCoeff2_type, char, ::xsd::cxx::tree::schema_type::double_ > SimFlowPlant_StackAirCoolerFanCoeff2_traits;
+
+        const SimFlowPlant_StackAirCoolerFanCoeff2_optional&
+        SimFlowPlant_StackAirCoolerFanCoeff2 () const;
+
+        SimFlowPlant_StackAirCoolerFanCoeff2_optional&
+        SimFlowPlant_StackAirCoolerFanCoeff2 ();
+
+        void
+        SimFlowPlant_StackAirCoolerFanCoeff2 (const SimFlowPlant_StackAirCoolerFanCoeff2_type& x);
+
+        void
+        SimFlowPlant_StackAirCoolerFanCoeff2 (const SimFlowPlant_StackAirCoolerFanCoeff2_optional& x);
+
         // Constructors.
         //
         SimFlowPlant_ElectricalGenerator_FuelCellStackCooler ();
@@ -278,8 +631,38 @@ namespace schema
         _clone (::xml_schema::flags f = 0,
                 ::xml_schema::container* c = 0) const;
 
+        SimFlowPlant_ElectricalGenerator_FuelCellStackCooler&
+        operator= (const SimFlowPlant_ElectricalGenerator_FuelCellStackCooler& x);
+
         virtual 
         ~SimFlowPlant_ElectricalGenerator_FuelCellStackCooler ();
+
+        // Implementation.
+        //
+        protected:
+        void
+        parse (::xsd::cxx::xml::dom::parser< char >&,
+               ::xml_schema::flags);
+
+        protected:
+        SimFlowPlant_Name_optional SimFlowPlant_Name_;
+        SimFlowPlant_HeatRecovWaterInletNodeName_optional SimFlowPlant_HeatRecovWaterInletNodeName_;
+        SimFlowPlant_HeatRecovWaterOutletNodeName_optional SimFlowPlant_HeatRecovWaterOutletNodeName_;
+        SimFlowPlant_NomStackTemp_optional SimFlowPlant_NomStackTemp_;
+        SimFlowPlant_ActStackTemp_optional SimFlowPlant_ActStackTemp_;
+        SimFlowPlant_Coeff_r_1_4_optional SimFlowPlant_Coeff_r_1_4_;
+        SimFlowPlant_StackCoolantFlowRate_optional SimFlowPlant_StackCoolantFlowRate_;
+        SimFlowPlant_StackCoolerUFactorTimesAreaVal_optional SimFlowPlant_StackCoolerUFactorTimesAreaVal_;
+        SimFlowPlant_FscogenAdjFactor_optional SimFlowPlant_FscogenAdjFactor_;
+        SimFlowPlant_StackCogenerationExchngArea_optional SimFlowPlant_StackCogenerationExchngArea_;
+        SimFlowPlant_StackCogenerationExchngNomFlowRate_optional SimFlowPlant_StackCogenerationExchngNomFlowRate_;
+        SimFlowPlant_StackCogenerationExchngNomHeatTransCoef_optional SimFlowPlant_StackCogenerationExchngNomHeatTransCoef_;
+        SimFlowPlant_StackCogenerationExchngNomHeatTransCoefExp_optional SimFlowPlant_StackCogenerationExchngNomHeatTransCoefExp_;
+        SimFlowPlant_StackCoolerPumpPwr_optional SimFlowPlant_StackCoolerPumpPwr_;
+        SimFlowPlant_StackCoolerPumpHeatLossFraction_optional SimFlowPlant_StackCoolerPumpHeatLossFraction_;
+        SimFlowPlant_StackAirCoolerFanCoefff_0_0_optional SimFlowPlant_StackAirCoolerFanCoefff_0_0_;
+        SimFlowPlant_StackAirCoolerFanCoefff_1_1_optional SimFlowPlant_StackAirCoolerFanCoefff_1_1_;
+        SimFlowPlant_StackAirCoolerFanCoeff2_optional SimFlowPlant_StackAirCoolerFanCoeff2_;
       };
     }
   }

@@ -98,14 +98,14 @@ except:
 
 
 import base
-import SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop
-class SimFlowFitting_Splitter(SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop.SimFlowFitting):
+import SimFlowFitting_Default_Default
+class SimFlowFitting_Splitter(SimFlowFitting_Default_Default.SimFlowFitting):
     __swig_setmethods__ = {}
-    for _s in [SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop.SimFlowFitting]:
+    for _s in [SimFlowFitting_Default_Default.SimFlowFitting]:
         __swig_setmethods__.update(getattr(_s, '__swig_setmethods__', {}))
     __setattr__ = lambda self, name, value: _swig_setattr(self, SimFlowFitting_Splitter, name, value)
     __swig_getmethods__ = {}
-    for _s in [SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop.SimFlowFitting]:
+    for _s in [SimFlowFitting_Default_Default.SimFlowFitting]:
         __swig_getmethods__.update(getattr(_s, '__swig_getmethods__', {}))
     __getattr__ = lambda self, name: _swig_getattr(self, SimFlowFitting_Splitter, name)
     __repr__ = _swig_repr

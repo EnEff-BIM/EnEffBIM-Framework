@@ -236,14 +236,14 @@ class SimBuilding_Building(SimBuilding):
     def RoofIrrigation_IrrigationMaxSaturatThreshold(self, *args):
         return _SimBuilding_Building_Default.SimBuilding_Building_RoofIrrigation_IrrigationMaxSaturatThreshold(self, *args)
 
-    def AboveGradeStoryCountAltered(self, *args):
-        return _SimBuilding_Building_Default.SimBuilding_Building_AboveGradeStoryCountAltered(self, *args)
+    def T24AboveGradeStoryCountAltered(self, *args):
+        return _SimBuilding_Building_Default.SimBuilding_Building_T24AboveGradeStoryCountAltered(self, *args)
 
-    def AboveGradeStoryCountExists(self, *args):
-        return _SimBuilding_Building_Default.SimBuilding_Building_AboveGradeStoryCountExists(self, *args)
+    def T24AboveGradeStoryCountExists(self, *args):
+        return _SimBuilding_Building_Default.SimBuilding_Building_T24AboveGradeStoryCountExists(self, *args)
 
-    def AboveGradeStoryCountNew(self, *args):
-        return _SimBuilding_Building_Default.SimBuilding_Building_AboveGradeStoryCountNew(self, *args)
+    def T24AboveGradeStoryCountNew(self, *args):
+        return _SimBuilding_Building_Default.SimBuilding_Building_T24AboveGradeStoryCountNew(self, *args)
 
     def T24CoilCoolingCapacity(self, *args):
         return _SimBuilding_Building_Default.SimBuilding_Building_T24CoilCoolingCapacity(self, *args)
@@ -254,17 +254,17 @@ class SimBuilding_Building(SimBuilding):
     def T24FunctionClassificationMethod(self, *args):
         return _SimBuilding_Building_Default.SimBuilding_Building_T24FunctionClassificationMethod(self, *args)
 
-    def HighRiseResidentialLivingUnitCount(self, *args):
-        return _SimBuilding_Building_Default.SimBuilding_Building_HighRiseResidentialLivingUnitCount(self, *args)
+    def T24HighRiseResidentialLivingUnitCount(self, *args):
+        return _SimBuilding_Building_Default.SimBuilding_Building_T24HighRiseResidentialLivingUnitCount(self, *args)
 
-    def LivingUnitCountAltered(self, *args):
-        return _SimBuilding_Building_Default.SimBuilding_Building_LivingUnitCountAltered(self, *args)
+    def T24LivingUnitCountAltered(self, *args):
+        return _SimBuilding_Building_Default.SimBuilding_Building_T24LivingUnitCountAltered(self, *args)
 
-    def LivingUnitCountExisting(self, *args):
-        return _SimBuilding_Building_Default.SimBuilding_Building_LivingUnitCountExisting(self, *args)
+    def T24LivingUnitCountExisting(self, *args):
+        return _SimBuilding_Building_Default.SimBuilding_Building_T24LivingUnitCountExisting(self, *args)
 
-    def LivingUnitCountNew(self, *args):
-        return _SimBuilding_Building_Default.SimBuilding_Building_LivingUnitCountNew(self, *args)
+    def T24LivingUnitCountNew(self, *args):
+        return _SimBuilding_Building_Default.SimBuilding_Building_T24LivingUnitCountNew(self, *args)
 
     def T24PlantCoolingCapacity(self, *args):
         return _SimBuilding_Building_Default.SimBuilding_Building_T24PlantCoolingCapacity(self, *args)
@@ -272,17 +272,17 @@ class SimBuilding_Building(SimBuilding):
     def T24PlantHeatingCapacity(self, *args):
         return _SimBuilding_Building_Default.SimBuilding_Building_T24PlantHeatingCapacity(self, *args)
 
-    def RelocatablePublicSchoolBuilding(self, *args):
-        return _SimBuilding_Building_Default.SimBuilding_Building_RelocatablePublicSchoolBuilding(self, *args)
+    def T24RelocatablePublicSchoolBuilding(self, *args):
+        return _SimBuilding_Building_Default.SimBuilding_Building_T24RelocatablePublicSchoolBuilding(self, *args)
 
-    def TotalStoryCountAltered(self, *args):
-        return _SimBuilding_Building_Default.SimBuilding_Building_TotalStoryCountAltered(self, *args)
+    def T24TotalStoryCountAltered(self, *args):
+        return _SimBuilding_Building_Default.SimBuilding_Building_T24TotalStoryCountAltered(self, *args)
 
-    def TotalStoryCountExisting(self, *args):
-        return _SimBuilding_Building_Default.SimBuilding_Building_TotalStoryCountExisting(self, *args)
+    def T24TotalStoryCountExisting(self, *args):
+        return _SimBuilding_Building_Default.SimBuilding_Building_T24TotalStoryCountExisting(self, *args)
 
-    def TotalStoryCountNew(self, *args):
-        return _SimBuilding_Building_Default.SimBuilding_Building_TotalStoryCountNew(self, *args)
+    def T24TotalStoryCountNew(self, *args):
+        return _SimBuilding_Building_Default.SimBuilding_Building_T24TotalStoryCountNew(self, *args)
 
     def __init__(self, *args):
         this = _SimBuilding_Building_Default.new_SimBuilding_Building(*args)

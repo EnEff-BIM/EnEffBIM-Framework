@@ -179,9 +179,9 @@ namespace schema
           const ::xsd::cxx::xml::qualified_name< char > n (
             ::xsd::cxx::xml::dom::name< char > (i));
 
-          // Orientation.Reference
+          // Orientation_Reference
           //
-          if (n.name () == "Orientation.Reference" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/ResourcesGeometry")
+          if (n.name () == "Orientation_Reference" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/ResourcesGeometry")
           {
             ::std::auto_ptr< Orientation_Reference_type > r (
               Orientation_Reference_traits::create (i, f, this));

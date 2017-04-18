@@ -332,6 +332,17 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
+      class SimAddress_Default_Default;
+    }
+  }
+}
+
+namespace schema
+{
+  namespace simxml
+  {
+    namespace ResourcesGeneral
+    {
       class SimAddress_Postal_Default;
     }
   }
@@ -937,6 +948,17 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
+      class SimAppProjectDefaults_ProjectDefaults_Default;
+    }
+  }
+}
+
+namespace schema
+{
+  namespace simxml
+  {
+    namespace ResourcesGeneral
+    {
       class SimAppStdSbdDefaults_AppStdSbdDefaults_DesignTeam;
     }
   }
@@ -1136,6 +1158,28 @@ namespace schema
     namespace ResourcesGeneral
     {
       class SimArrayParams_PanelArrayParams_Default;
+    }
+  }
+}
+
+namespace schema
+{
+  namespace simxml
+  {
+    namespace ResourcesGeneral
+    {
+      class SimArrayParams_SolarPanelArray_SolarCollectorPV;
+    }
+  }
+}
+
+namespace schema
+{
+  namespace simxml
+  {
+    namespace ResourcesGeneral
+    {
+      class SimArrayParams_SolarPanelArray_SolarCollectorThermal;
     }
   }
 }
@@ -2357,6 +2401,17 @@ namespace schema
     namespace MepModel
     {
       class SimController_DemandManager_AirLoop;
+    }
+  }
+}
+
+namespace schema
+{
+  namespace simxml
+  {
+    namespace MepModel
+    {
+      class SimController_Fluid_Default;
     }
   }
 }
@@ -5181,6 +5236,28 @@ namespace schema
 {
   namespace simxml
   {
+    namespace BuildingModel
+    {
+      class SimDoorType_Door_Exterior;
+    }
+  }
+}
+
+namespace schema
+{
+  namespace simxml
+  {
+    namespace BuildingModel
+    {
+      class SimDoorType_Door_Interior;
+    }
+  }
+}
+
+namespace schema
+{
+  namespace simxml
+  {
     namespace ResourcesGeneral
     {
       class SimDwgXrefParams_DwgXref_Default;
@@ -5832,6 +5909,17 @@ namespace schema
   {
     namespace MepModel
     {
+      class SimFlowCompoundEqmt_UnitaryZoneEqmt_RefrigerationChillerSet;
+    }
+  }
+}
+
+namespace schema
+{
+  namespace simxml
+  {
+    namespace MepModel
+    {
       class SimFlowCompoundEqmt_UnitaryZoneEqmt_UnitHeater;
     }
   }
@@ -5844,6 +5932,17 @@ namespace schema
     namespace MepModel
     {
       class SimFlowCompoundEqmt_UnitaryZoneEqmt_UnitVentialtor;
+    }
+  }
+}
+
+namespace schema
+{
+  namespace simxml
+  {
+    namespace MepModel
+    {
+      class SimFlowCompoundEqmt_UnitaryZoneEqmt_UserDefined;
     }
   }
 }
@@ -6129,6 +6228,17 @@ namespace schema
   {
     namespace MepModel
     {
+      class SimFlowEnergyTransfer_Coil_UserDefined;
+    }
+  }
+}
+
+namespace schema
+{
+  namespace simxml
+  {
+    namespace MepModel
+    {
       class SimFlowEnergyTransfer_ConvectiveHeater_Electric;
     }
   }
@@ -6317,17 +6427,6 @@ namespace schema
     namespace MepModel
     {
       class SimFlowEnergyTransfer_CoolingCoilWater_CoilAirCoolingWaterToAirHeatPumpVariableSpeedEquationFit;
-    }
-  }
-}
-
-namespace schema
-{
-  namespace simxml
-  {
-    namespace MepModel
-    {
-      class SimFlowEnergyTransfer_CoolingCoilWater_CoilAirCoolingWaterUserDefined;
     }
   }
 }
@@ -6976,17 +7075,6 @@ namespace schema
   {
     namespace MepModel
     {
-      class SimFlowEnergyTransfer_HeatingCoilWater_CoilAirHeatingWaterUserDefined;
-    }
-  }
-}
-
-namespace schema
-{
-  namespace simxml
-  {
-    namespace MepModel
-    {
       class SimFlowEnergyTransfer_HeatingCoilWater_CoilAirPreHeatWater;
     }
   }
@@ -7185,6 +7273,28 @@ namespace schema
   {
     namespace MepModel
     {
+      class SimFlowEnergyTransferStorage_HotWaterTank_Expansion;
+    }
+  }
+}
+
+namespace schema
+{
+  namespace simxml
+  {
+    namespace MepModel
+    {
+      class SimFlowEnergyTransferStorage_HotWaterTank_MixedDual;
+    }
+  }
+}
+
+namespace schema
+{
+  namespace simxml
+  {
+    namespace MepModel
+    {
       class SimFlowEnergyTransferStorage_HotWaterTank_MixedTank;
     }
   }
@@ -7197,6 +7307,17 @@ namespace schema
     namespace MepModel
     {
       class SimFlowEnergyTransferStorage_HotWaterTank_Stratified;
+    }
+  }
+}
+
+namespace schema
+{
+  namespace simxml
+  {
+    namespace MepModel
+    {
+      class SimFlowEnergyTransferStorage_HotWaterTank_StratifiedDual;
     }
   }
 }
@@ -7240,6 +7361,28 @@ namespace schema
   {
     namespace MepModel
     {
+      class SimFlowFitting_Difusser_Return;
+    }
+  }
+}
+
+namespace schema
+{
+  namespace simxml
+  {
+    namespace MepModel
+    {
+      class SimFlowFitting_Difusser_Supply;
+    }
+  }
+}
+
+namespace schema
+{
+  namespace simxml
+  {
+    namespace MepModel
+    {
       class SimFlowFitting_Electrical_Transformer;
     }
   }
@@ -7251,7 +7394,7 @@ namespace schema
   {
     namespace MepModel
     {
-      class SimFlowFitting_FlowElementProxy_Default;
+      class SimFlowFitting_FlowFittingProxy_Default;
     }
   }
 }
@@ -7262,7 +7405,7 @@ namespace schema
   {
     namespace MepModel
     {
-      class SimFlowFitting_FlowElementProxy_DemandProxy_AirLoop;
+      class SimFlowFitting_FlowFittingProxy_DemandProxy_AirLoop;
     }
   }
 }
@@ -7273,7 +7416,7 @@ namespace schema
   {
     namespace MepModel
     {
-      class SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop;
+      class SimFlowFitting_FlowFittingProxy_DemandProxy_WaterLoop;
     }
   }
 }
@@ -7284,7 +7427,7 @@ namespace schema
   {
     namespace MepModel
     {
-      class SimFlowFitting_FlowElementProxy_SupplyProxy_AirLoop;
+      class SimFlowFitting_FlowFittingProxy_SupplyProxy_AirLoop;
     }
   }
 }
@@ -7295,7 +7438,7 @@ namespace schema
   {
     namespace MepModel
     {
-      class SimFlowFitting_FlowElementProxy_SupplyProxy_WaterLoop;
+      class SimFlowFitting_FlowFittingProxy_SupplyProxy_WaterLoop;
     }
   }
 }
@@ -8032,7 +8175,7 @@ namespace schema
   {
     namespace MepModel
     {
-      class SimFlowPlant_ElectricalGenerator_FuelCellExhaustGastoWaterHeatExchanger;
+      class SimFlowPlant_ElectricalGenerator_FuelCellExhaustGasToWaterHeatExchanger;
     }
   }
 }
@@ -8275,6 +8418,17 @@ namespace schema
     namespace MepModel
     {
       class SimFlowPlant_HeatPump_WaterToWater_ParameterEstimation_Heating;
+    }
+  }
+}
+
+namespace schema
+{
+  namespace simxml
+  {
+    namespace MepModel
+    {
+      class SimFlowPlant_PlantComponent_UserDefined;
     }
   }
 }
@@ -10353,17 +10507,6 @@ namespace schema
   {
     namespace SimModelCore
     {
-      class SimGroup_Refrigeration_ChillerSet;
-    }
-  }
-}
-
-namespace schema
-{
-  namespace simxml
-  {
-    namespace SimModelCore
-    {
       class SimGroup_SchemeList_AirLoopAvailabilityMgrScheme;
     }
   }
@@ -11464,17 +11607,6 @@ namespace schema
   {
     namespace BuildingModel
     {
-      class SimList_Refrigeration_ChillerSet;
-    }
-  }
-}
-
-namespace schema
-{
-  namespace simxml
-  {
-    namespace BuildingModel
-    {
       class SimList_SchemeList_AirLoopAvailabilityMgrScheme;
     }
   }
@@ -12092,6 +12224,17 @@ namespace schema
     namespace ResourcesGeneral
     {
       class SimMaterialLayer_GlazingMaterialLayer_Default;
+    }
+  }
+}
+
+namespace schema
+{
+  namespace simxml
+  {
+    namespace ResourcesGeneral
+    {
+      class SimMaterialLayer_GlazingMaterialLayer_Thermochromic;
     }
   }
 }
@@ -13805,9 +13948,53 @@ namespace schema
 {
   namespace simxml
   {
+    namespace BuildingModel
+    {
+      class SimPanel_Glazing_Spandrel;
+    }
+  }
+}
+
+namespace schema
+{
+  namespace simxml
+  {
+    namespace BuildingModel
+    {
+      class SimPanel_Glazing_Vision;
+    }
+  }
+}
+
+namespace schema
+{
+  namespace simxml
+  {
     namespace ResourcesGeneral
     {
       class SimPanelArrayParams_PanelArrayParams_Default;
+    }
+  }
+}
+
+namespace schema
+{
+  namespace simxml
+  {
+    namespace ResourcesGeneral
+    {
+      class SimPanelArrayParams_SolarPanelArray_SolarCollectorPV;
+    }
+  }
+}
+
+namespace schema
+{
+  namespace simxml
+  {
+    namespace ResourcesGeneral
+    {
+      class SimPanelArrayParams_SolarPanelArray_SolarCollectorThermal;
     }
   }
 }
@@ -15444,6 +15631,17 @@ namespace schema
 {
   namespace simxml
   {
+    namespace BuildingModel
+    {
+      class SimProjectType_Project_Default;
+    }
+  }
+}
+
+namespace schema
+{
+  namespace simxml
+  {
     namespace ResourcesGeneral
     {
       class SimPropertyListValue_SimpleProp_ListValue;
@@ -15578,6 +15776,17 @@ namespace schema
   {
     namespace MepModel
     {
+      class SimRefrigerationSystemElement_CompressorRack_Default;
+    }
+  }
+}
+
+namespace schema
+{
+  namespace simxml
+  {
+    namespace MepModel
+    {
       class SimRefrigerationSystemElement_Condenser_AirCooled;
     }
   }
@@ -15634,17 +15843,6 @@ namespace schema
     namespace MepModel
     {
       class SimRefrigerationSystemElement_GasCooler_AirCooled;
-    }
-  }
-}
-
-namespace schema
-{
-  namespace simxml
-  {
-    namespace MepModel
-    {
-      class SimRefrigerationSystemElement_PackagedCompressorRack_Default;
     }
   }
 }
@@ -17116,6 +17314,17 @@ namespace schema
 {
   namespace simxml
   {
+    namespace BuildingModel
+    {
+      class SimSiteType_Site_Default;
+    }
+  }
+}
+
+namespace schema
+{
+  namespace simxml
+  {
     namespace ResourcesGeneral
     {
       class SimSIUnitType_SiUnit_Default;
@@ -17515,6 +17724,28 @@ namespace schema
     namespace ResourcesGeneral
     {
       class SimSolarObsParams_SolarObstruction_Default;
+    }
+  }
+}
+
+namespace schema
+{
+  namespace simxml
+  {
+    namespace ResourcesGeneral
+    {
+      class SimSolarPanelArrayParams_SolarPanelArray_SolarCollectorPV;
+    }
+  }
+}
+
+namespace schema
+{
+  namespace simxml
+  {
+    namespace ResourcesGeneral
+    {
+      class SimSolarPanelArrayParams_SolarPanelArray_SolarCollectorThermal;
     }
   }
 }
@@ -19582,7 +19813,29 @@ namespace schema
   {
     namespace ResourcesGeneral
     {
+      class SimTemplateInteriorLighting_InteriorLighting_Area;
+    }
+  }
+}
+
+namespace schema
+{
+  namespace simxml
+  {
+    namespace ResourcesGeneral
+    {
       class SimTemplateInteriorLighting_InteriorLighting_Default;
+    }
+  }
+}
+
+namespace schema
+{
+  namespace simxml
+  {
+    namespace ResourcesGeneral
+    {
+      class SimTemplateInteriorLighting_InteriorLighting_Task;
     }
   }
 }
@@ -19660,6 +19913,17 @@ namespace schema
     namespace ResourcesGeneral
     {
       class SimTemplateZoneLoads_ZoneLoads_Default;
+    }
+  }
+}
+
+namespace schema
+{
+  namespace simxml
+  {
+    namespace BuildingModel
+    {
+      class SimThermalZoneType_ThermalZone_Default;
     }
   }
 }
@@ -20548,13 +20812,35 @@ namespace schema
 {
   namespace simxml
   {
+    namespace BuildingModel
+    {
+      class SimWindowType_Window_Exterior;
+    }
+  }
+}
+
+namespace schema
+{
+  namespace simxml
+  {
+    namespace BuildingModel
+    {
+      class SimWindowType_Window_Interior;
+    }
+  }
+}
+
+namespace schema
+{
+  namespace simxml
+  {
     namespace Model
     {
       class __declspec(dllexport) SimModel: public ::xml_schema::type
       {
         public:
         // SimActor_Actor_Default
-        // /*
+        //
         typedef ::schema::simxml::ResourcesGeneral::SimActor_Actor_Default SimActor_Actor_Default_type;
         typedef ::xsd::cxx::tree::sequence< SimActor_Actor_Default_type, false > SimActor_Actor_Default_sequence;
         typedef SimActor_Actor_Default_sequence::iterator SimActor_Actor_Default_iterator;
@@ -20672,11 +20958,27 @@ namespace schema
         void
         SimActuator_VirtualActuator_EmsActuator (const SimActuator_VirtualActuator_EmsActuator_sequence& s);
 
+        // SimAddress_Default_Default
+        //
+        typedef ::schema::simxml::ResourcesGeneral::SimAddress_Default_Default SimAddress_Default_Default_type;
+        typedef ::xsd::cxx::tree::sequence< SimAddress_Default_Default_type, false > SimAddress_Default_Default_sequence;
+        typedef SimAddress_Default_Default_sequence::iterator SimAddress_Default_Default_iterator;
+        typedef SimAddress_Default_Default_sequence::const_iterator SimAddress_Default_Default_const_iterator;
+        typedef ::xsd::cxx::tree::traits< SimAddress_Default_Default_type, char > SimAddress_Default_Default_traits;
+
+        const SimAddress_Default_Default_sequence&
+        SimAddress_Default_Default () const;
+
+        SimAddress_Default_Default_sequence&
+        SimAddress_Default_Default ();
+
+        void
+        SimAddress_Default_Default (const SimAddress_Default_Default_sequence& s);
+
         // SimAddress_Postal_Default
         //
         typedef ::schema::simxml::ResourcesGeneral::SimAddress_Postal_Default SimAddress_Postal_Default_type;
-        //typedef ::xsd::cxx::tree::sequence< SimAddress_Postal_Default_type, false > SimAddress_Postal_Default_sequence;
-		typedef ::xsd::cxx::tree::sequence< SimAddress_Postal_Default_type, false> SimAddress_Postal_Default_sequence;
+        typedef ::xsd::cxx::tree::sequence< SimAddress_Postal_Default_type, false > SimAddress_Postal_Default_sequence;
         typedef SimAddress_Postal_Default_sequence::iterator SimAddress_Postal_Default_iterator;
         typedef SimAddress_Postal_Default_sequence::const_iterator SimAddress_Postal_Default_const_iterator;
         typedef ::xsd::cxx::tree::traits< SimAddress_Postal_Default_type, char > SimAddress_Postal_Default_traits;
@@ -20778,8 +21080,7 @@ namespace schema
         // SimAppLibraryDefault_AppLibraryDefault_GlobalLibrary
         //
         typedef ::schema::simxml::ResourcesGeneral::SimAppLibraryDefault_AppLibraryDefault_GlobalLibrary SimAppLibraryDefault_AppLibraryDefault_GlobalLibrary_type;
-        //typedef ::xsd::cxx::tree::sequence< SimAppLibraryDefault_AppLibraryDefault_GlobalLibrary_type, false > SimAppLibraryDefault_AppLibraryDefault_GlobalLibrary_sequence;
-		typedef ::xsd::cxx::tree::sequence< SimAppLibraryDefault_AppLibraryDefault_GlobalLibrary_type, false > SimAppLibraryDefault_AppLibraryDefault_GlobalLibrary_sequence;
+        typedef ::xsd::cxx::tree::sequence< SimAppLibraryDefault_AppLibraryDefault_GlobalLibrary_type, false > SimAppLibraryDefault_AppLibraryDefault_GlobalLibrary_sequence;
         typedef SimAppLibraryDefault_AppLibraryDefault_GlobalLibrary_sequence::iterator SimAppLibraryDefault_AppLibraryDefault_GlobalLibrary_iterator;
         typedef SimAppLibraryDefault_AppLibraryDefault_GlobalLibrary_sequence::const_iterator SimAppLibraryDefault_AppLibraryDefault_GlobalLibrary_const_iterator;
         typedef ::xsd::cxx::tree::traits< SimAppLibraryDefault_AppLibraryDefault_GlobalLibrary_type, char > SimAppLibraryDefault_AppLibraryDefault_GlobalLibrary_traits;
@@ -20932,8 +21233,7 @@ namespace schema
         // SimAppObjNameDefault_BldgComponentGroup_HvacComponent
         //
         typedef ::schema::simxml::ResourcesGeneral::SimAppObjNameDefault_BldgComponentGroup_HvacComponent SimAppObjNameDefault_BldgComponentGroup_HvacComponent_type;
-        //typedef ::xsd::cxx::tree::sequence< SimAppObjNameDefault_BldgComponentGroup_HvacComponent_type, false > SimAppObjNameDefault_BldgComponentGroup_HvacComponent_sequence;
-		typedef ::xsd::cxx::tree::sequence< SimAppObjNameDefault_BldgComponentGroup_HvacComponent_type, false > SimAppObjNameDefault_BldgComponentGroup_HvacComponent_sequence;
+        typedef ::xsd::cxx::tree::sequence< SimAppObjNameDefault_BldgComponentGroup_HvacComponent_type, false > SimAppObjNameDefault_BldgComponentGroup_HvacComponent_sequence;
         typedef SimAppObjNameDefault_BldgComponentGroup_HvacComponent_sequence::iterator SimAppObjNameDefault_BldgComponentGroup_HvacComponent_iterator;
         typedef SimAppObjNameDefault_BldgComponentGroup_HvacComponent_sequence::const_iterator SimAppObjNameDefault_BldgComponentGroup_HvacComponent_const_iterator;
         typedef ::xsd::cxx::tree::traits< SimAppObjNameDefault_BldgComponentGroup_HvacComponent_type, char > SimAppObjNameDefault_BldgComponentGroup_HvacComponent_traits;
@@ -20950,8 +21250,7 @@ namespace schema
         // SimAppObjNameDefault_BldgComponentGroup_HvacComponentGroup
         //
         typedef ::schema::simxml::ResourcesGeneral::SimAppObjNameDefault_BldgComponentGroup_HvacComponentGroup SimAppObjNameDefault_BldgComponentGroup_HvacComponentGroup_type;
-        //typedef ::xsd::cxx::tree::sequence< SimAppObjNameDefault_BldgComponentGroup_HvacComponentGroup_type, false > SimAppObjNameDefault_BldgComponentGroup_HvacComponentGroup_sequence;
-		typedef ::xsd::cxx::tree::sequence< SimAppObjNameDefault_BldgComponentGroup_HvacComponentGroup_type, false > SimAppObjNameDefault_BldgComponentGroup_HvacComponentGroup_sequence;
+        typedef ::xsd::cxx::tree::sequence< SimAppObjNameDefault_BldgComponentGroup_HvacComponentGroup_type, false > SimAppObjNameDefault_BldgComponentGroup_HvacComponentGroup_sequence;
         typedef SimAppObjNameDefault_BldgComponentGroup_HvacComponentGroup_sequence::iterator SimAppObjNameDefault_BldgComponentGroup_HvacComponentGroup_iterator;
         typedef SimAppObjNameDefault_BldgComponentGroup_HvacComponentGroup_sequence::const_iterator SimAppObjNameDefault_BldgComponentGroup_HvacComponentGroup_const_iterator;
         typedef ::xsd::cxx::tree::traits< SimAppObjNameDefault_BldgComponentGroup_HvacComponentGroup_type, char > SimAppObjNameDefault_BldgComponentGroup_HvacComponentGroup_traits;
@@ -21611,6 +21910,23 @@ namespace schema
         void
         SimAppPreferences_AppPreferences_MonthlyChargeType (const SimAppPreferences_AppPreferences_MonthlyChargeType_sequence& s);
 
+        // SimAppProjectDefaults_ProjectDefaults_Default
+        //
+        typedef ::schema::simxml::ResourcesGeneral::SimAppProjectDefaults_ProjectDefaults_Default SimAppProjectDefaults_ProjectDefaults_Default_type;
+        typedef ::xsd::cxx::tree::sequence< SimAppProjectDefaults_ProjectDefaults_Default_type, false > SimAppProjectDefaults_ProjectDefaults_Default_sequence;
+        typedef SimAppProjectDefaults_ProjectDefaults_Default_sequence::iterator SimAppProjectDefaults_ProjectDefaults_Default_iterator;
+        typedef SimAppProjectDefaults_ProjectDefaults_Default_sequence::const_iterator SimAppProjectDefaults_ProjectDefaults_Default_const_iterator;
+        typedef ::xsd::cxx::tree::traits< SimAppProjectDefaults_ProjectDefaults_Default_type, char > SimAppProjectDefaults_ProjectDefaults_Default_traits;
+
+        const SimAppProjectDefaults_ProjectDefaults_Default_sequence&
+        SimAppProjectDefaults_ProjectDefaults_Default () const;
+
+        SimAppProjectDefaults_ProjectDefaults_Default_sequence&
+        SimAppProjectDefaults_ProjectDefaults_Default ();
+
+        void
+        SimAppProjectDefaults_ProjectDefaults_Default (const SimAppProjectDefaults_ProjectDefaults_Default_sequence& s);
+
         // SimAppStdSbdDefaults_AppStdSbdDefaults_DesignTeam
         //
         typedef ::schema::simxml::ResourcesGeneral::SimAppStdSbdDefaults_AppStdSbdDefaults_DesignTeam SimAppStdSbdDefaults_AppStdSbdDefaults_DesignTeam_type;
@@ -21933,6 +22249,40 @@ namespace schema
 
         void
         SimArrayParams_PanelArrayParams_Default (const SimArrayParams_PanelArrayParams_Default_sequence& s);
+
+        // SimArrayParams_SolarPanelArray_SolarCollectorPV
+        //
+        typedef ::schema::simxml::ResourcesGeneral::SimArrayParams_SolarPanelArray_SolarCollectorPV SimArrayParams_SolarPanelArray_SolarCollectorPV_type;
+        typedef ::xsd::cxx::tree::sequence< SimArrayParams_SolarPanelArray_SolarCollectorPV_type, false > SimArrayParams_SolarPanelArray_SolarCollectorPV_sequence;
+        typedef SimArrayParams_SolarPanelArray_SolarCollectorPV_sequence::iterator SimArrayParams_SolarPanelArray_SolarCollectorPV_iterator;
+        typedef SimArrayParams_SolarPanelArray_SolarCollectorPV_sequence::const_iterator SimArrayParams_SolarPanelArray_SolarCollectorPV_const_iterator;
+        typedef ::xsd::cxx::tree::traits< SimArrayParams_SolarPanelArray_SolarCollectorPV_type, char > SimArrayParams_SolarPanelArray_SolarCollectorPV_traits;
+
+        const SimArrayParams_SolarPanelArray_SolarCollectorPV_sequence&
+        SimArrayParams_SolarPanelArray_SolarCollectorPV () const;
+
+        SimArrayParams_SolarPanelArray_SolarCollectorPV_sequence&
+        SimArrayParams_SolarPanelArray_SolarCollectorPV ();
+
+        void
+        SimArrayParams_SolarPanelArray_SolarCollectorPV (const SimArrayParams_SolarPanelArray_SolarCollectorPV_sequence& s);
+
+        // SimArrayParams_SolarPanelArray_SolarCollectorThermal
+        //
+        typedef ::schema::simxml::ResourcesGeneral::SimArrayParams_SolarPanelArray_SolarCollectorThermal SimArrayParams_SolarPanelArray_SolarCollectorThermal_type;
+        typedef ::xsd::cxx::tree::sequence< SimArrayParams_SolarPanelArray_SolarCollectorThermal_type, false > SimArrayParams_SolarPanelArray_SolarCollectorThermal_sequence;
+        typedef SimArrayParams_SolarPanelArray_SolarCollectorThermal_sequence::iterator SimArrayParams_SolarPanelArray_SolarCollectorThermal_iterator;
+        typedef SimArrayParams_SolarPanelArray_SolarCollectorThermal_sequence::const_iterator SimArrayParams_SolarPanelArray_SolarCollectorThermal_const_iterator;
+        typedef ::xsd::cxx::tree::traits< SimArrayParams_SolarPanelArray_SolarCollectorThermal_type, char > SimArrayParams_SolarPanelArray_SolarCollectorThermal_traits;
+
+        const SimArrayParams_SolarPanelArray_SolarCollectorThermal_sequence&
+        SimArrayParams_SolarPanelArray_SolarCollectorThermal () const;
+
+        SimArrayParams_SolarPanelArray_SolarCollectorThermal_sequence&
+        SimArrayParams_SolarPanelArray_SolarCollectorThermal ();
+
+        void
+        SimArrayParams_SolarPanelArray_SolarCollectorThermal (const SimArrayParams_SolarPanelArray_SolarCollectorThermal_sequence& s);
 
         // SimArrayParams_SolarShadeArray_Default
         //
@@ -22341,12 +22691,11 @@ namespace schema
 
         void
         SimBuilding_AdjacentBuilding_Default (const SimBuilding_AdjacentBuilding_Default_sequence& s);
-		// */
+
         // SimBuilding_Building_Default
         //
         typedef ::schema::simxml::BuildingModel::SimBuilding_Building_Default SimBuilding_Building_Default_type;
-        //typedef ::xsd::cxx::tree::sequence< SimBuilding_Building_Default_type, false > SimBuilding_Building_Default_sequence;
-		typedef ::xsd::cxx::tree::sequence< SimBuilding_Building_Default_type, false > SimBuilding_Building_Default_sequence;
+        typedef ::xsd::cxx::tree::sequence< SimBuilding_Building_Default_type, false > SimBuilding_Building_Default_sequence;
         typedef SimBuilding_Building_Default_sequence::iterator SimBuilding_Building_Default_iterator;
         typedef SimBuilding_Building_Default_sequence::const_iterator SimBuilding_Building_Default_const_iterator;
         typedef ::xsd::cxx::tree::traits< SimBuilding_Building_Default_type, char > SimBuilding_Building_Default_traits;
@@ -22359,7 +22708,7 @@ namespace schema
 
         void
         SimBuilding_Building_Default (const SimBuilding_Building_Default_sequence& s);
-		// /*
+
         // SimBuildingElementProxy_Default_Default
         //
         typedef ::schema::simxml::BuildingModel::SimBuildingElementProxy_Default_Default SimBuildingElementProxy_Default_Default_type;
@@ -22495,12 +22844,11 @@ namespace schema
 
         void
         SimBuildingElementProxy_ThermalMass_Default (const SimBuildingElementProxy_ThermalMass_Default_sequence& s);
-		// */
+
         // SimBuildingStory_BuildingStory_Default
         //
         typedef ::schema::simxml::BuildingModel::SimBuildingStory_BuildingStory_Default SimBuildingStory_BuildingStory_Default_type;
-        //typedef ::xsd::cxx::tree::sequence< SimBuildingStory_BuildingStory_Default_type, false > SimBuildingStory_BuildingStory_Default_sequence;
-		typedef ::xsd::cxx::tree::sequence< SimBuildingStory_BuildingStory_Default_type, false > SimBuildingStory_BuildingStory_Default_sequence;
+        typedef ::xsd::cxx::tree::sequence< SimBuildingStory_BuildingStory_Default_type, false > SimBuildingStory_BuildingStory_Default_sequence;
         typedef SimBuildingStory_BuildingStory_Default_sequence::iterator SimBuildingStory_BuildingStory_Default_iterator;
         typedef SimBuildingStory_BuildingStory_Default_sequence::const_iterator SimBuildingStory_BuildingStory_Default_const_iterator;
         typedef ::xsd::cxx::tree::traits< SimBuildingStory_BuildingStory_Default_type, char > SimBuildingStory_BuildingStory_Default_traits;
@@ -22513,7 +22861,7 @@ namespace schema
 
         void
         SimBuildingStory_BuildingStory_Default (const SimBuildingStory_BuildingStory_Default_sequence& s);
-		// /*
+
         // SimBuildingType_Building_Default
         //
         typedef ::schema::simxml::BuildingModel::SimBuildingType_Building_Default SimBuildingType_Building_Default_type;
@@ -23822,6 +24170,23 @@ namespace schema
 
         void
         SimController_DemandManager_AirLoop (const SimController_DemandManager_AirLoop_sequence& s);
+
+        // SimController_Fluid_Default
+        //
+        typedef ::schema::simxml::MepModel::SimController_Fluid_Default SimController_Fluid_Default_type;
+        typedef ::xsd::cxx::tree::sequence< SimController_Fluid_Default_type, false > SimController_Fluid_Default_sequence;
+        typedef SimController_Fluid_Default_sequence::iterator SimController_Fluid_Default_iterator;
+        typedef SimController_Fluid_Default_sequence::const_iterator SimController_Fluid_Default_const_iterator;
+        typedef ::xsd::cxx::tree::traits< SimController_Fluid_Default_type, char > SimController_Fluid_Default_traits;
+
+        const SimController_Fluid_Default_sequence&
+        SimController_Fluid_Default () const;
+
+        SimController_Fluid_Default_sequence&
+        SimController_Fluid_Default ();
+
+        void
+        SimController_Fluid_Default (const SimController_Fluid_Default_sequence& s);
 
         // SimController_LightingControl_Continuous
         //
@@ -28175,6 +28540,40 @@ namespace schema
         void
         SimDoorType_Door_Default (const SimDoorType_Door_Default_sequence& s);
 
+        // SimDoorType_Door_Exterior
+        //
+        typedef ::schema::simxml::BuildingModel::SimDoorType_Door_Exterior SimDoorType_Door_Exterior_type;
+        typedef ::xsd::cxx::tree::sequence< SimDoorType_Door_Exterior_type, false > SimDoorType_Door_Exterior_sequence;
+        typedef SimDoorType_Door_Exterior_sequence::iterator SimDoorType_Door_Exterior_iterator;
+        typedef SimDoorType_Door_Exterior_sequence::const_iterator SimDoorType_Door_Exterior_const_iterator;
+        typedef ::xsd::cxx::tree::traits< SimDoorType_Door_Exterior_type, char > SimDoorType_Door_Exterior_traits;
+
+        const SimDoorType_Door_Exterior_sequence&
+        SimDoorType_Door_Exterior () const;
+
+        SimDoorType_Door_Exterior_sequence&
+        SimDoorType_Door_Exterior ();
+
+        void
+        SimDoorType_Door_Exterior (const SimDoorType_Door_Exterior_sequence& s);
+
+        // SimDoorType_Door_Interior
+        //
+        typedef ::schema::simxml::BuildingModel::SimDoorType_Door_Interior SimDoorType_Door_Interior_type;
+        typedef ::xsd::cxx::tree::sequence< SimDoorType_Door_Interior_type, false > SimDoorType_Door_Interior_sequence;
+        typedef SimDoorType_Door_Interior_sequence::iterator SimDoorType_Door_Interior_iterator;
+        typedef SimDoorType_Door_Interior_sequence::const_iterator SimDoorType_Door_Interior_const_iterator;
+        typedef ::xsd::cxx::tree::traits< SimDoorType_Door_Interior_type, char > SimDoorType_Door_Interior_traits;
+
+        const SimDoorType_Door_Interior_sequence&
+        SimDoorType_Door_Interior () const;
+
+        SimDoorType_Door_Interior_sequence&
+        SimDoorType_Door_Interior ();
+
+        void
+        SimDoorType_Door_Interior (const SimDoorType_Door_Interior_sequence& s);
+
         // SimDwgXrefParams_DwgXref_Default
         //
         typedef ::schema::simxml::ResourcesGeneral::SimDwgXrefParams_DwgXref_Default SimDwgXrefParams_DwgXref_Default_type;
@@ -29178,6 +29577,23 @@ namespace schema
         void
         SimFlowCompoundEqmt_UnitaryZoneEqmt_PTHP (const SimFlowCompoundEqmt_UnitaryZoneEqmt_PTHP_sequence& s);
 
+        // SimFlowCompoundEqmt_UnitaryZoneEqmt_RefrigerationChillerSet
+        //
+        typedef ::schema::simxml::MepModel::SimFlowCompoundEqmt_UnitaryZoneEqmt_RefrigerationChillerSet SimFlowCompoundEqmt_UnitaryZoneEqmt_RefrigerationChillerSet_type;
+        typedef ::xsd::cxx::tree::sequence< SimFlowCompoundEqmt_UnitaryZoneEqmt_RefrigerationChillerSet_type, false > SimFlowCompoundEqmt_UnitaryZoneEqmt_RefrigerationChillerSet_sequence;
+        typedef SimFlowCompoundEqmt_UnitaryZoneEqmt_RefrigerationChillerSet_sequence::iterator SimFlowCompoundEqmt_UnitaryZoneEqmt_RefrigerationChillerSet_iterator;
+        typedef SimFlowCompoundEqmt_UnitaryZoneEqmt_RefrigerationChillerSet_sequence::const_iterator SimFlowCompoundEqmt_UnitaryZoneEqmt_RefrigerationChillerSet_const_iterator;
+        typedef ::xsd::cxx::tree::traits< SimFlowCompoundEqmt_UnitaryZoneEqmt_RefrigerationChillerSet_type, char > SimFlowCompoundEqmt_UnitaryZoneEqmt_RefrigerationChillerSet_traits;
+
+        const SimFlowCompoundEqmt_UnitaryZoneEqmt_RefrigerationChillerSet_sequence&
+        SimFlowCompoundEqmt_UnitaryZoneEqmt_RefrigerationChillerSet () const;
+
+        SimFlowCompoundEqmt_UnitaryZoneEqmt_RefrigerationChillerSet_sequence&
+        SimFlowCompoundEqmt_UnitaryZoneEqmt_RefrigerationChillerSet ();
+
+        void
+        SimFlowCompoundEqmt_UnitaryZoneEqmt_RefrigerationChillerSet (const SimFlowCompoundEqmt_UnitaryZoneEqmt_RefrigerationChillerSet_sequence& s);
+
         // SimFlowCompoundEqmt_UnitaryZoneEqmt_UnitHeater
         //
         typedef ::schema::simxml::MepModel::SimFlowCompoundEqmt_UnitaryZoneEqmt_UnitHeater SimFlowCompoundEqmt_UnitaryZoneEqmt_UnitHeater_type;
@@ -29211,6 +29627,23 @@ namespace schema
 
         void
         SimFlowCompoundEqmt_UnitaryZoneEqmt_UnitVentialtor (const SimFlowCompoundEqmt_UnitaryZoneEqmt_UnitVentialtor_sequence& s);
+
+        // SimFlowCompoundEqmt_UnitaryZoneEqmt_UserDefined
+        //
+        typedef ::schema::simxml::MepModel::SimFlowCompoundEqmt_UnitaryZoneEqmt_UserDefined SimFlowCompoundEqmt_UnitaryZoneEqmt_UserDefined_type;
+        typedef ::xsd::cxx::tree::sequence< SimFlowCompoundEqmt_UnitaryZoneEqmt_UserDefined_type, false > SimFlowCompoundEqmt_UnitaryZoneEqmt_UserDefined_sequence;
+        typedef SimFlowCompoundEqmt_UnitaryZoneEqmt_UserDefined_sequence::iterator SimFlowCompoundEqmt_UnitaryZoneEqmt_UserDefined_iterator;
+        typedef SimFlowCompoundEqmt_UnitaryZoneEqmt_UserDefined_sequence::const_iterator SimFlowCompoundEqmt_UnitaryZoneEqmt_UserDefined_const_iterator;
+        typedef ::xsd::cxx::tree::traits< SimFlowCompoundEqmt_UnitaryZoneEqmt_UserDefined_type, char > SimFlowCompoundEqmt_UnitaryZoneEqmt_UserDefined_traits;
+
+        const SimFlowCompoundEqmt_UnitaryZoneEqmt_UserDefined_sequence&
+        SimFlowCompoundEqmt_UnitaryZoneEqmt_UserDefined () const;
+
+        SimFlowCompoundEqmt_UnitaryZoneEqmt_UserDefined_sequence&
+        SimFlowCompoundEqmt_UnitaryZoneEqmt_UserDefined ();
+
+        void
+        SimFlowCompoundEqmt_UnitaryZoneEqmt_UserDefined (const SimFlowCompoundEqmt_UnitaryZoneEqmt_UserDefined_sequence& s);
 
         // SimFlowCompoundEqmt_UnitaryZoneEqmt_WaterSystemLoadProfile
         //
@@ -29637,6 +30070,23 @@ namespace schema
         void
         SimFlowController_Valve_TemperingValve (const SimFlowController_Valve_TemperingValve_sequence& s);
 
+        // SimFlowEnergyTransfer_Coil_UserDefined
+        //
+        typedef ::schema::simxml::MepModel::SimFlowEnergyTransfer_Coil_UserDefined SimFlowEnergyTransfer_Coil_UserDefined_type;
+        typedef ::xsd::cxx::tree::sequence< SimFlowEnergyTransfer_Coil_UserDefined_type, false > SimFlowEnergyTransfer_Coil_UserDefined_sequence;
+        typedef SimFlowEnergyTransfer_Coil_UserDefined_sequence::iterator SimFlowEnergyTransfer_Coil_UserDefined_iterator;
+        typedef SimFlowEnergyTransfer_Coil_UserDefined_sequence::const_iterator SimFlowEnergyTransfer_Coil_UserDefined_const_iterator;
+        typedef ::xsd::cxx::tree::traits< SimFlowEnergyTransfer_Coil_UserDefined_type, char > SimFlowEnergyTransfer_Coil_UserDefined_traits;
+
+        const SimFlowEnergyTransfer_Coil_UserDefined_sequence&
+        SimFlowEnergyTransfer_Coil_UserDefined () const;
+
+        SimFlowEnergyTransfer_Coil_UserDefined_sequence&
+        SimFlowEnergyTransfer_Coil_UserDefined ();
+
+        void
+        SimFlowEnergyTransfer_Coil_UserDefined (const SimFlowEnergyTransfer_Coil_UserDefined_sequence& s);
+
         // SimFlowEnergyTransfer_ConvectiveHeater_Electric
         //
         typedef ::schema::simxml::MepModel::SimFlowEnergyTransfer_ConvectiveHeater_Electric SimFlowEnergyTransfer_ConvectiveHeater_Electric_type;
@@ -29942,23 +30392,6 @@ namespace schema
 
         void
         SimFlowEnergyTransfer_CoolingCoilWater_CoilAirCoolingWaterToAirHeatPumpVariableSpeedEquationFit (const SimFlowEnergyTransfer_CoolingCoilWater_CoilAirCoolingWaterToAirHeatPumpVariableSpeedEquationFit_sequence& s);
-
-        // SimFlowEnergyTransfer_CoolingCoilWater_CoilAirCoolingWaterUserDefined
-        //
-        typedef ::schema::simxml::MepModel::SimFlowEnergyTransfer_CoolingCoilWater_CoilAirCoolingWaterUserDefined SimFlowEnergyTransfer_CoolingCoilWater_CoilAirCoolingWaterUserDefined_type;
-        typedef ::xsd::cxx::tree::sequence< SimFlowEnergyTransfer_CoolingCoilWater_CoilAirCoolingWaterUserDefined_type, false > SimFlowEnergyTransfer_CoolingCoilWater_CoilAirCoolingWaterUserDefined_sequence;
-        typedef SimFlowEnergyTransfer_CoolingCoilWater_CoilAirCoolingWaterUserDefined_sequence::iterator SimFlowEnergyTransfer_CoolingCoilWater_CoilAirCoolingWaterUserDefined_iterator;
-        typedef SimFlowEnergyTransfer_CoolingCoilWater_CoilAirCoolingWaterUserDefined_sequence::const_iterator SimFlowEnergyTransfer_CoolingCoilWater_CoilAirCoolingWaterUserDefined_const_iterator;
-        typedef ::xsd::cxx::tree::traits< SimFlowEnergyTransfer_CoolingCoilWater_CoilAirCoolingWaterUserDefined_type, char > SimFlowEnergyTransfer_CoolingCoilWater_CoilAirCoolingWaterUserDefined_traits;
-
-        const SimFlowEnergyTransfer_CoolingCoilWater_CoilAirCoolingWaterUserDefined_sequence&
-        SimFlowEnergyTransfer_CoolingCoilWater_CoilAirCoolingWaterUserDefined () const;
-
-        SimFlowEnergyTransfer_CoolingCoilWater_CoilAirCoolingWaterUserDefined_sequence&
-        SimFlowEnergyTransfer_CoolingCoilWater_CoilAirCoolingWaterUserDefined ();
-
-        void
-        SimFlowEnergyTransfer_CoolingCoilWater_CoilAirCoolingWaterUserDefined (const SimFlowEnergyTransfer_CoolingCoilWater_CoilAirCoolingWaterUserDefined_sequence& s);
 
         // SimFlowEnergyTransfer_Dehumidifier_Default
         //
@@ -30946,23 +31379,6 @@ namespace schema
         void
         SimFlowEnergyTransfer_HeatingCoilWater_CoilAirHeatingWaterToAirHeatPumpVariableSpeedEquationFit (const SimFlowEnergyTransfer_HeatingCoilWater_CoilAirHeatingWaterToAirHeatPumpVariableSpeedEquationFit_sequence& s);
 
-        // SimFlowEnergyTransfer_HeatingCoilWater_CoilAirHeatingWaterUserDefined
-        //
-        typedef ::schema::simxml::MepModel::SimFlowEnergyTransfer_HeatingCoilWater_CoilAirHeatingWaterUserDefined SimFlowEnergyTransfer_HeatingCoilWater_CoilAirHeatingWaterUserDefined_type;
-        typedef ::xsd::cxx::tree::sequence< SimFlowEnergyTransfer_HeatingCoilWater_CoilAirHeatingWaterUserDefined_type, false > SimFlowEnergyTransfer_HeatingCoilWater_CoilAirHeatingWaterUserDefined_sequence;
-        typedef SimFlowEnergyTransfer_HeatingCoilWater_CoilAirHeatingWaterUserDefined_sequence::iterator SimFlowEnergyTransfer_HeatingCoilWater_CoilAirHeatingWaterUserDefined_iterator;
-        typedef SimFlowEnergyTransfer_HeatingCoilWater_CoilAirHeatingWaterUserDefined_sequence::const_iterator SimFlowEnergyTransfer_HeatingCoilWater_CoilAirHeatingWaterUserDefined_const_iterator;
-        typedef ::xsd::cxx::tree::traits< SimFlowEnergyTransfer_HeatingCoilWater_CoilAirHeatingWaterUserDefined_type, char > SimFlowEnergyTransfer_HeatingCoilWater_CoilAirHeatingWaterUserDefined_traits;
-
-        const SimFlowEnergyTransfer_HeatingCoilWater_CoilAirHeatingWaterUserDefined_sequence&
-        SimFlowEnergyTransfer_HeatingCoilWater_CoilAirHeatingWaterUserDefined () const;
-
-        SimFlowEnergyTransfer_HeatingCoilWater_CoilAirHeatingWaterUserDefined_sequence&
-        SimFlowEnergyTransfer_HeatingCoilWater_CoilAirHeatingWaterUserDefined ();
-
-        void
-        SimFlowEnergyTransfer_HeatingCoilWater_CoilAirHeatingWaterUserDefined (const SimFlowEnergyTransfer_HeatingCoilWater_CoilAirHeatingWaterUserDefined_sequence& s);
-
         // SimFlowEnergyTransfer_HeatingCoilWater_CoilAirPreHeatWater
         //
         typedef ::schema::simxml::MepModel::SimFlowEnergyTransfer_HeatingCoilWater_CoilAirPreHeatWater SimFlowEnergyTransfer_HeatingCoilWater_CoilAirPreHeatWater_type;
@@ -31269,6 +31685,40 @@ namespace schema
         void
         SimFlowEnergyTransferStorage_HotWaterTank_Mixed (const SimFlowEnergyTransferStorage_HotWaterTank_Mixed_sequence& s);
 
+        // SimFlowEnergyTransferStorage_HotWaterTank_Expansion
+        //
+        typedef ::schema::simxml::MepModel::SimFlowEnergyTransferStorage_HotWaterTank_Expansion SimFlowEnergyTransferStorage_HotWaterTank_Expansion_type;
+        typedef ::xsd::cxx::tree::sequence< SimFlowEnergyTransferStorage_HotWaterTank_Expansion_type, false > SimFlowEnergyTransferStorage_HotWaterTank_Expansion_sequence;
+        typedef SimFlowEnergyTransferStorage_HotWaterTank_Expansion_sequence::iterator SimFlowEnergyTransferStorage_HotWaterTank_Expansion_iterator;
+        typedef SimFlowEnergyTransferStorage_HotWaterTank_Expansion_sequence::const_iterator SimFlowEnergyTransferStorage_HotWaterTank_Expansion_const_iterator;
+        typedef ::xsd::cxx::tree::traits< SimFlowEnergyTransferStorage_HotWaterTank_Expansion_type, char > SimFlowEnergyTransferStorage_HotWaterTank_Expansion_traits;
+
+        const SimFlowEnergyTransferStorage_HotWaterTank_Expansion_sequence&
+        SimFlowEnergyTransferStorage_HotWaterTank_Expansion () const;
+
+        SimFlowEnergyTransferStorage_HotWaterTank_Expansion_sequence&
+        SimFlowEnergyTransferStorage_HotWaterTank_Expansion ();
+
+        void
+        SimFlowEnergyTransferStorage_HotWaterTank_Expansion (const SimFlowEnergyTransferStorage_HotWaterTank_Expansion_sequence& s);
+
+        // SimFlowEnergyTransferStorage_HotWaterTank_MixedDual
+        //
+        typedef ::schema::simxml::MepModel::SimFlowEnergyTransferStorage_HotWaterTank_MixedDual SimFlowEnergyTransferStorage_HotWaterTank_MixedDual_type;
+        typedef ::xsd::cxx::tree::sequence< SimFlowEnergyTransferStorage_HotWaterTank_MixedDual_type, false > SimFlowEnergyTransferStorage_HotWaterTank_MixedDual_sequence;
+        typedef SimFlowEnergyTransferStorage_HotWaterTank_MixedDual_sequence::iterator SimFlowEnergyTransferStorage_HotWaterTank_MixedDual_iterator;
+        typedef SimFlowEnergyTransferStorage_HotWaterTank_MixedDual_sequence::const_iterator SimFlowEnergyTransferStorage_HotWaterTank_MixedDual_const_iterator;
+        typedef ::xsd::cxx::tree::traits< SimFlowEnergyTransferStorage_HotWaterTank_MixedDual_type, char > SimFlowEnergyTransferStorage_HotWaterTank_MixedDual_traits;
+
+        const SimFlowEnergyTransferStorage_HotWaterTank_MixedDual_sequence&
+        SimFlowEnergyTransferStorage_HotWaterTank_MixedDual () const;
+
+        SimFlowEnergyTransferStorage_HotWaterTank_MixedDual_sequence&
+        SimFlowEnergyTransferStorage_HotWaterTank_MixedDual ();
+
+        void
+        SimFlowEnergyTransferStorage_HotWaterTank_MixedDual (const SimFlowEnergyTransferStorage_HotWaterTank_MixedDual_sequence& s);
+
         // SimFlowEnergyTransferStorage_HotWaterTank_MixedTank
         //
         typedef ::schema::simxml::MepModel::SimFlowEnergyTransferStorage_HotWaterTank_MixedTank SimFlowEnergyTransferStorage_HotWaterTank_MixedTank_type;
@@ -31302,6 +31752,23 @@ namespace schema
 
         void
         SimFlowEnergyTransferStorage_HotWaterTank_Stratified (const SimFlowEnergyTransferStorage_HotWaterTank_Stratified_sequence& s);
+
+        // SimFlowEnergyTransferStorage_HotWaterTank_StratifiedDual
+        //
+        typedef ::schema::simxml::MepModel::SimFlowEnergyTransferStorage_HotWaterTank_StratifiedDual SimFlowEnergyTransferStorage_HotWaterTank_StratifiedDual_type;
+        typedef ::xsd::cxx::tree::sequence< SimFlowEnergyTransferStorage_HotWaterTank_StratifiedDual_type, false > SimFlowEnergyTransferStorage_HotWaterTank_StratifiedDual_sequence;
+        typedef SimFlowEnergyTransferStorage_HotWaterTank_StratifiedDual_sequence::iterator SimFlowEnergyTransferStorage_HotWaterTank_StratifiedDual_iterator;
+        typedef SimFlowEnergyTransferStorage_HotWaterTank_StratifiedDual_sequence::const_iterator SimFlowEnergyTransferStorage_HotWaterTank_StratifiedDual_const_iterator;
+        typedef ::xsd::cxx::tree::traits< SimFlowEnergyTransferStorage_HotWaterTank_StratifiedDual_type, char > SimFlowEnergyTransferStorage_HotWaterTank_StratifiedDual_traits;
+
+        const SimFlowEnergyTransferStorage_HotWaterTank_StratifiedDual_sequence&
+        SimFlowEnergyTransferStorage_HotWaterTank_StratifiedDual () const;
+
+        SimFlowEnergyTransferStorage_HotWaterTank_StratifiedDual_sequence&
+        SimFlowEnergyTransferStorage_HotWaterTank_StratifiedDual ();
+
+        void
+        SimFlowEnergyTransferStorage_HotWaterTank_StratifiedDual (const SimFlowEnergyTransferStorage_HotWaterTank_StratifiedDual_sequence& s);
 
         // SimFlowEnergyTransferStorage_HotWaterTank_StratifiedTank
         //
@@ -31354,6 +31821,40 @@ namespace schema
         void
         SimFlowFitting_Difusser_Default (const SimFlowFitting_Difusser_Default_sequence& s);
 
+        // SimFlowFitting_Difusser_Return
+        //
+        typedef ::schema::simxml::MepModel::SimFlowFitting_Difusser_Return SimFlowFitting_Difusser_Return_type;
+        typedef ::xsd::cxx::tree::sequence< SimFlowFitting_Difusser_Return_type, false > SimFlowFitting_Difusser_Return_sequence;
+        typedef SimFlowFitting_Difusser_Return_sequence::iterator SimFlowFitting_Difusser_Return_iterator;
+        typedef SimFlowFitting_Difusser_Return_sequence::const_iterator SimFlowFitting_Difusser_Return_const_iterator;
+        typedef ::xsd::cxx::tree::traits< SimFlowFitting_Difusser_Return_type, char > SimFlowFitting_Difusser_Return_traits;
+
+        const SimFlowFitting_Difusser_Return_sequence&
+        SimFlowFitting_Difusser_Return () const;
+
+        SimFlowFitting_Difusser_Return_sequence&
+        SimFlowFitting_Difusser_Return ();
+
+        void
+        SimFlowFitting_Difusser_Return (const SimFlowFitting_Difusser_Return_sequence& s);
+
+        // SimFlowFitting_Difusser_Supply
+        //
+        typedef ::schema::simxml::MepModel::SimFlowFitting_Difusser_Supply SimFlowFitting_Difusser_Supply_type;
+        typedef ::xsd::cxx::tree::sequence< SimFlowFitting_Difusser_Supply_type, false > SimFlowFitting_Difusser_Supply_sequence;
+        typedef SimFlowFitting_Difusser_Supply_sequence::iterator SimFlowFitting_Difusser_Supply_iterator;
+        typedef SimFlowFitting_Difusser_Supply_sequence::const_iterator SimFlowFitting_Difusser_Supply_const_iterator;
+        typedef ::xsd::cxx::tree::traits< SimFlowFitting_Difusser_Supply_type, char > SimFlowFitting_Difusser_Supply_traits;
+
+        const SimFlowFitting_Difusser_Supply_sequence&
+        SimFlowFitting_Difusser_Supply () const;
+
+        SimFlowFitting_Difusser_Supply_sequence&
+        SimFlowFitting_Difusser_Supply ();
+
+        void
+        SimFlowFitting_Difusser_Supply (const SimFlowFitting_Difusser_Supply_sequence& s);
+
         // SimFlowFitting_Electrical_Transformer
         //
         typedef ::schema::simxml::MepModel::SimFlowFitting_Electrical_Transformer SimFlowFitting_Electrical_Transformer_type;
@@ -31371,90 +31872,90 @@ namespace schema
         void
         SimFlowFitting_Electrical_Transformer (const SimFlowFitting_Electrical_Transformer_sequence& s);
 
-        // SimFlowFitting_FlowElementProxy_Default
+        // SimFlowFitting_FlowFittingProxy_Default
         //
-        typedef ::schema::simxml::MepModel::SimFlowFitting_FlowElementProxy_Default SimFlowFitting_FlowElementProxy_Default_type;
-        typedef ::xsd::cxx::tree::sequence< SimFlowFitting_FlowElementProxy_Default_type, false > SimFlowFitting_FlowElementProxy_Default_sequence;
-        typedef SimFlowFitting_FlowElementProxy_Default_sequence::iterator SimFlowFitting_FlowElementProxy_Default_iterator;
-        typedef SimFlowFitting_FlowElementProxy_Default_sequence::const_iterator SimFlowFitting_FlowElementProxy_Default_const_iterator;
-        typedef ::xsd::cxx::tree::traits< SimFlowFitting_FlowElementProxy_Default_type, char > SimFlowFitting_FlowElementProxy_Default_traits;
+        typedef ::schema::simxml::MepModel::SimFlowFitting_FlowFittingProxy_Default SimFlowFitting_FlowFittingProxy_Default_type;
+        typedef ::xsd::cxx::tree::sequence< SimFlowFitting_FlowFittingProxy_Default_type, false > SimFlowFitting_FlowFittingProxy_Default_sequence;
+        typedef SimFlowFitting_FlowFittingProxy_Default_sequence::iterator SimFlowFitting_FlowFittingProxy_Default_iterator;
+        typedef SimFlowFitting_FlowFittingProxy_Default_sequence::const_iterator SimFlowFitting_FlowFittingProxy_Default_const_iterator;
+        typedef ::xsd::cxx::tree::traits< SimFlowFitting_FlowFittingProxy_Default_type, char > SimFlowFitting_FlowFittingProxy_Default_traits;
 
-        const SimFlowFitting_FlowElementProxy_Default_sequence&
-        SimFlowFitting_FlowElementProxy_Default () const;
+        const SimFlowFitting_FlowFittingProxy_Default_sequence&
+        SimFlowFitting_FlowFittingProxy_Default () const;
 
-        SimFlowFitting_FlowElementProxy_Default_sequence&
-        SimFlowFitting_FlowElementProxy_Default ();
+        SimFlowFitting_FlowFittingProxy_Default_sequence&
+        SimFlowFitting_FlowFittingProxy_Default ();
 
         void
-        SimFlowFitting_FlowElementProxy_Default (const SimFlowFitting_FlowElementProxy_Default_sequence& s);
+        SimFlowFitting_FlowFittingProxy_Default (const SimFlowFitting_FlowFittingProxy_Default_sequence& s);
 
-        // SimFlowFitting_FlowElementProxy_DemandProxy_AirLoop
+        // SimFlowFitting_FlowFittingProxy_DemandProxy_AirLoop
         //
-        typedef ::schema::simxml::MepModel::SimFlowFitting_FlowElementProxy_DemandProxy_AirLoop SimFlowFitting_FlowElementProxy_DemandProxy_AirLoop_type;
-        typedef ::xsd::cxx::tree::sequence< SimFlowFitting_FlowElementProxy_DemandProxy_AirLoop_type, false > SimFlowFitting_FlowElementProxy_DemandProxy_AirLoop_sequence;
-        typedef SimFlowFitting_FlowElementProxy_DemandProxy_AirLoop_sequence::iterator SimFlowFitting_FlowElementProxy_DemandProxy_AirLoop_iterator;
-        typedef SimFlowFitting_FlowElementProxy_DemandProxy_AirLoop_sequence::const_iterator SimFlowFitting_FlowElementProxy_DemandProxy_AirLoop_const_iterator;
-        typedef ::xsd::cxx::tree::traits< SimFlowFitting_FlowElementProxy_DemandProxy_AirLoop_type, char > SimFlowFitting_FlowElementProxy_DemandProxy_AirLoop_traits;
+        typedef ::schema::simxml::MepModel::SimFlowFitting_FlowFittingProxy_DemandProxy_AirLoop SimFlowFitting_FlowFittingProxy_DemandProxy_AirLoop_type;
+        typedef ::xsd::cxx::tree::sequence< SimFlowFitting_FlowFittingProxy_DemandProxy_AirLoop_type, false > SimFlowFitting_FlowFittingProxy_DemandProxy_AirLoop_sequence;
+        typedef SimFlowFitting_FlowFittingProxy_DemandProxy_AirLoop_sequence::iterator SimFlowFitting_FlowFittingProxy_DemandProxy_AirLoop_iterator;
+        typedef SimFlowFitting_FlowFittingProxy_DemandProxy_AirLoop_sequence::const_iterator SimFlowFitting_FlowFittingProxy_DemandProxy_AirLoop_const_iterator;
+        typedef ::xsd::cxx::tree::traits< SimFlowFitting_FlowFittingProxy_DemandProxy_AirLoop_type, char > SimFlowFitting_FlowFittingProxy_DemandProxy_AirLoop_traits;
 
-        const SimFlowFitting_FlowElementProxy_DemandProxy_AirLoop_sequence&
-        SimFlowFitting_FlowElementProxy_DemandProxy_AirLoop () const;
+        const SimFlowFitting_FlowFittingProxy_DemandProxy_AirLoop_sequence&
+        SimFlowFitting_FlowFittingProxy_DemandProxy_AirLoop () const;
 
-        SimFlowFitting_FlowElementProxy_DemandProxy_AirLoop_sequence&
-        SimFlowFitting_FlowElementProxy_DemandProxy_AirLoop ();
+        SimFlowFitting_FlowFittingProxy_DemandProxy_AirLoop_sequence&
+        SimFlowFitting_FlowFittingProxy_DemandProxy_AirLoop ();
 
         void
-        SimFlowFitting_FlowElementProxy_DemandProxy_AirLoop (const SimFlowFitting_FlowElementProxy_DemandProxy_AirLoop_sequence& s);
+        SimFlowFitting_FlowFittingProxy_DemandProxy_AirLoop (const SimFlowFitting_FlowFittingProxy_DemandProxy_AirLoop_sequence& s);
 
-        // SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop
+        // SimFlowFitting_FlowFittingProxy_DemandProxy_WaterLoop
         //
-        typedef ::schema::simxml::MepModel::SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop_type;
-        typedef ::xsd::cxx::tree::sequence< SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop_type, false > SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop_sequence;
-        typedef SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop_sequence::iterator SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop_iterator;
-        typedef SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop_sequence::const_iterator SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop_const_iterator;
-        typedef ::xsd::cxx::tree::traits< SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop_type, char > SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop_traits;
+        typedef ::schema::simxml::MepModel::SimFlowFitting_FlowFittingProxy_DemandProxy_WaterLoop SimFlowFitting_FlowFittingProxy_DemandProxy_WaterLoop_type;
+        typedef ::xsd::cxx::tree::sequence< SimFlowFitting_FlowFittingProxy_DemandProxy_WaterLoop_type, false > SimFlowFitting_FlowFittingProxy_DemandProxy_WaterLoop_sequence;
+        typedef SimFlowFitting_FlowFittingProxy_DemandProxy_WaterLoop_sequence::iterator SimFlowFitting_FlowFittingProxy_DemandProxy_WaterLoop_iterator;
+        typedef SimFlowFitting_FlowFittingProxy_DemandProxy_WaterLoop_sequence::const_iterator SimFlowFitting_FlowFittingProxy_DemandProxy_WaterLoop_const_iterator;
+        typedef ::xsd::cxx::tree::traits< SimFlowFitting_FlowFittingProxy_DemandProxy_WaterLoop_type, char > SimFlowFitting_FlowFittingProxy_DemandProxy_WaterLoop_traits;
 
-        const SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop_sequence&
-        SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop () const;
+        const SimFlowFitting_FlowFittingProxy_DemandProxy_WaterLoop_sequence&
+        SimFlowFitting_FlowFittingProxy_DemandProxy_WaterLoop () const;
 
-        SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop_sequence&
-        SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop ();
+        SimFlowFitting_FlowFittingProxy_DemandProxy_WaterLoop_sequence&
+        SimFlowFitting_FlowFittingProxy_DemandProxy_WaterLoop ();
 
         void
-        SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop (const SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop_sequence& s);
+        SimFlowFitting_FlowFittingProxy_DemandProxy_WaterLoop (const SimFlowFitting_FlowFittingProxy_DemandProxy_WaterLoop_sequence& s);
 
-        // SimFlowFitting_FlowElementProxy_SupplyProxy_AirLoop
+        // SimFlowFitting_FlowFittingProxy_SupplyProxy_AirLoop
         //
-        typedef ::schema::simxml::MepModel::SimFlowFitting_FlowElementProxy_SupplyProxy_AirLoop SimFlowFitting_FlowElementProxy_SupplyProxy_AirLoop_type;
-        typedef ::xsd::cxx::tree::sequence< SimFlowFitting_FlowElementProxy_SupplyProxy_AirLoop_type, false > SimFlowFitting_FlowElementProxy_SupplyProxy_AirLoop_sequence;
-        typedef SimFlowFitting_FlowElementProxy_SupplyProxy_AirLoop_sequence::iterator SimFlowFitting_FlowElementProxy_SupplyProxy_AirLoop_iterator;
-        typedef SimFlowFitting_FlowElementProxy_SupplyProxy_AirLoop_sequence::const_iterator SimFlowFitting_FlowElementProxy_SupplyProxy_AirLoop_const_iterator;
-        typedef ::xsd::cxx::tree::traits< SimFlowFitting_FlowElementProxy_SupplyProxy_AirLoop_type, char > SimFlowFitting_FlowElementProxy_SupplyProxy_AirLoop_traits;
+        typedef ::schema::simxml::MepModel::SimFlowFitting_FlowFittingProxy_SupplyProxy_AirLoop SimFlowFitting_FlowFittingProxy_SupplyProxy_AirLoop_type;
+        typedef ::xsd::cxx::tree::sequence< SimFlowFitting_FlowFittingProxy_SupplyProxy_AirLoop_type, false > SimFlowFitting_FlowFittingProxy_SupplyProxy_AirLoop_sequence;
+        typedef SimFlowFitting_FlowFittingProxy_SupplyProxy_AirLoop_sequence::iterator SimFlowFitting_FlowFittingProxy_SupplyProxy_AirLoop_iterator;
+        typedef SimFlowFitting_FlowFittingProxy_SupplyProxy_AirLoop_sequence::const_iterator SimFlowFitting_FlowFittingProxy_SupplyProxy_AirLoop_const_iterator;
+        typedef ::xsd::cxx::tree::traits< SimFlowFitting_FlowFittingProxy_SupplyProxy_AirLoop_type, char > SimFlowFitting_FlowFittingProxy_SupplyProxy_AirLoop_traits;
 
-        const SimFlowFitting_FlowElementProxy_SupplyProxy_AirLoop_sequence&
-        SimFlowFitting_FlowElementProxy_SupplyProxy_AirLoop () const;
+        const SimFlowFitting_FlowFittingProxy_SupplyProxy_AirLoop_sequence&
+        SimFlowFitting_FlowFittingProxy_SupplyProxy_AirLoop () const;
 
-        SimFlowFitting_FlowElementProxy_SupplyProxy_AirLoop_sequence&
-        SimFlowFitting_FlowElementProxy_SupplyProxy_AirLoop ();
+        SimFlowFitting_FlowFittingProxy_SupplyProxy_AirLoop_sequence&
+        SimFlowFitting_FlowFittingProxy_SupplyProxy_AirLoop ();
 
         void
-        SimFlowFitting_FlowElementProxy_SupplyProxy_AirLoop (const SimFlowFitting_FlowElementProxy_SupplyProxy_AirLoop_sequence& s);
+        SimFlowFitting_FlowFittingProxy_SupplyProxy_AirLoop (const SimFlowFitting_FlowFittingProxy_SupplyProxy_AirLoop_sequence& s);
 
-        // SimFlowFitting_FlowElementProxy_SupplyProxy_WaterLoop
+        // SimFlowFitting_FlowFittingProxy_SupplyProxy_WaterLoop
         //
-        typedef ::schema::simxml::MepModel::SimFlowFitting_FlowElementProxy_SupplyProxy_WaterLoop SimFlowFitting_FlowElementProxy_SupplyProxy_WaterLoop_type;
-        typedef ::xsd::cxx::tree::sequence< SimFlowFitting_FlowElementProxy_SupplyProxy_WaterLoop_type, false > SimFlowFitting_FlowElementProxy_SupplyProxy_WaterLoop_sequence;
-        typedef SimFlowFitting_FlowElementProxy_SupplyProxy_WaterLoop_sequence::iterator SimFlowFitting_FlowElementProxy_SupplyProxy_WaterLoop_iterator;
-        typedef SimFlowFitting_FlowElementProxy_SupplyProxy_WaterLoop_sequence::const_iterator SimFlowFitting_FlowElementProxy_SupplyProxy_WaterLoop_const_iterator;
-        typedef ::xsd::cxx::tree::traits< SimFlowFitting_FlowElementProxy_SupplyProxy_WaterLoop_type, char > SimFlowFitting_FlowElementProxy_SupplyProxy_WaterLoop_traits;
+        typedef ::schema::simxml::MepModel::SimFlowFitting_FlowFittingProxy_SupplyProxy_WaterLoop SimFlowFitting_FlowFittingProxy_SupplyProxy_WaterLoop_type;
+        typedef ::xsd::cxx::tree::sequence< SimFlowFitting_FlowFittingProxy_SupplyProxy_WaterLoop_type, false > SimFlowFitting_FlowFittingProxy_SupplyProxy_WaterLoop_sequence;
+        typedef SimFlowFitting_FlowFittingProxy_SupplyProxy_WaterLoop_sequence::iterator SimFlowFitting_FlowFittingProxy_SupplyProxy_WaterLoop_iterator;
+        typedef SimFlowFitting_FlowFittingProxy_SupplyProxy_WaterLoop_sequence::const_iterator SimFlowFitting_FlowFittingProxy_SupplyProxy_WaterLoop_const_iterator;
+        typedef ::xsd::cxx::tree::traits< SimFlowFitting_FlowFittingProxy_SupplyProxy_WaterLoop_type, char > SimFlowFitting_FlowFittingProxy_SupplyProxy_WaterLoop_traits;
 
-        const SimFlowFitting_FlowElementProxy_SupplyProxy_WaterLoop_sequence&
-        SimFlowFitting_FlowElementProxy_SupplyProxy_WaterLoop () const;
+        const SimFlowFitting_FlowFittingProxy_SupplyProxy_WaterLoop_sequence&
+        SimFlowFitting_FlowFittingProxy_SupplyProxy_WaterLoop () const;
 
-        SimFlowFitting_FlowElementProxy_SupplyProxy_WaterLoop_sequence&
-        SimFlowFitting_FlowElementProxy_SupplyProxy_WaterLoop ();
+        SimFlowFitting_FlowFittingProxy_SupplyProxy_WaterLoop_sequence&
+        SimFlowFitting_FlowFittingProxy_SupplyProxy_WaterLoop ();
 
         void
-        SimFlowFitting_FlowElementProxy_SupplyProxy_WaterLoop (const SimFlowFitting_FlowElementProxy_SupplyProxy_WaterLoop_sequence& s);
+        SimFlowFitting_FlowFittingProxy_SupplyProxy_WaterLoop (const SimFlowFitting_FlowFittingProxy_SupplyProxy_WaterLoop_sequence& s);
 
         // SimFlowFitting_Mixer_AirMixer
         //
@@ -32578,22 +33079,22 @@ namespace schema
         void
         SimFlowPlant_ElectricalGenerator_FuelCellElectricalStorage (const SimFlowPlant_ElectricalGenerator_FuelCellElectricalStorage_sequence& s);
 
-        // SimFlowPlant_ElectricalGenerator_FuelCellExhaustGastoWaterHeatExchanger
+        // SimFlowPlant_ElectricalGenerator_FuelCellExhaustGasToWaterHeatExchanger
         //
-        typedef ::schema::simxml::MepModel::SimFlowPlant_ElectricalGenerator_FuelCellExhaustGastoWaterHeatExchanger SimFlowPlant_ElectricalGenerator_FuelCellExhaustGastoWaterHeatExchanger_type;
-        typedef ::xsd::cxx::tree::sequence< SimFlowPlant_ElectricalGenerator_FuelCellExhaustGastoWaterHeatExchanger_type, false > SimFlowPlant_ElectricalGenerator_FuelCellExhaustGastoWaterHeatExchanger_sequence;
-        typedef SimFlowPlant_ElectricalGenerator_FuelCellExhaustGastoWaterHeatExchanger_sequence::iterator SimFlowPlant_ElectricalGenerator_FuelCellExhaustGastoWaterHeatExchanger_iterator;
-        typedef SimFlowPlant_ElectricalGenerator_FuelCellExhaustGastoWaterHeatExchanger_sequence::const_iterator SimFlowPlant_ElectricalGenerator_FuelCellExhaustGastoWaterHeatExchanger_const_iterator;
-        typedef ::xsd::cxx::tree::traits< SimFlowPlant_ElectricalGenerator_FuelCellExhaustGastoWaterHeatExchanger_type, char > SimFlowPlant_ElectricalGenerator_FuelCellExhaustGastoWaterHeatExchanger_traits;
+        typedef ::schema::simxml::MepModel::SimFlowPlant_ElectricalGenerator_FuelCellExhaustGasToWaterHeatExchanger SimFlowPlant_ElectricalGenerator_FuelCellExhaustGasToWaterHeatExchanger_type;
+        typedef ::xsd::cxx::tree::sequence< SimFlowPlant_ElectricalGenerator_FuelCellExhaustGasToWaterHeatExchanger_type, false > SimFlowPlant_ElectricalGenerator_FuelCellExhaustGasToWaterHeatExchanger_sequence;
+        typedef SimFlowPlant_ElectricalGenerator_FuelCellExhaustGasToWaterHeatExchanger_sequence::iterator SimFlowPlant_ElectricalGenerator_FuelCellExhaustGasToWaterHeatExchanger_iterator;
+        typedef SimFlowPlant_ElectricalGenerator_FuelCellExhaustGasToWaterHeatExchanger_sequence::const_iterator SimFlowPlant_ElectricalGenerator_FuelCellExhaustGasToWaterHeatExchanger_const_iterator;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_ElectricalGenerator_FuelCellExhaustGasToWaterHeatExchanger_type, char > SimFlowPlant_ElectricalGenerator_FuelCellExhaustGasToWaterHeatExchanger_traits;
 
-        const SimFlowPlant_ElectricalGenerator_FuelCellExhaustGastoWaterHeatExchanger_sequence&
-        SimFlowPlant_ElectricalGenerator_FuelCellExhaustGastoWaterHeatExchanger () const;
+        const SimFlowPlant_ElectricalGenerator_FuelCellExhaustGasToWaterHeatExchanger_sequence&
+        SimFlowPlant_ElectricalGenerator_FuelCellExhaustGasToWaterHeatExchanger () const;
 
-        SimFlowPlant_ElectricalGenerator_FuelCellExhaustGastoWaterHeatExchanger_sequence&
-        SimFlowPlant_ElectricalGenerator_FuelCellExhaustGastoWaterHeatExchanger ();
+        SimFlowPlant_ElectricalGenerator_FuelCellExhaustGasToWaterHeatExchanger_sequence&
+        SimFlowPlant_ElectricalGenerator_FuelCellExhaustGasToWaterHeatExchanger ();
 
         void
-        SimFlowPlant_ElectricalGenerator_FuelCellExhaustGastoWaterHeatExchanger (const SimFlowPlant_ElectricalGenerator_FuelCellExhaustGastoWaterHeatExchanger_sequence& s);
+        SimFlowPlant_ElectricalGenerator_FuelCellExhaustGasToWaterHeatExchanger (const SimFlowPlant_ElectricalGenerator_FuelCellExhaustGasToWaterHeatExchanger_sequence& s);
 
         // SimFlowPlant_ElectricalGenerator_FuelCellInverter
         //
@@ -32968,6 +33469,23 @@ namespace schema
 
         void
         SimFlowPlant_HeatPump_WaterToWater_ParameterEstimation_Heating (const SimFlowPlant_HeatPump_WaterToWater_ParameterEstimation_Heating_sequence& s);
+
+        // SimFlowPlant_PlantComponent_UserDefined
+        //
+        typedef ::schema::simxml::MepModel::SimFlowPlant_PlantComponent_UserDefined SimFlowPlant_PlantComponent_UserDefined_type;
+        typedef ::xsd::cxx::tree::sequence< SimFlowPlant_PlantComponent_UserDefined_type, false > SimFlowPlant_PlantComponent_UserDefined_sequence;
+        typedef SimFlowPlant_PlantComponent_UserDefined_sequence::iterator SimFlowPlant_PlantComponent_UserDefined_iterator;
+        typedef SimFlowPlant_PlantComponent_UserDefined_sequence::const_iterator SimFlowPlant_PlantComponent_UserDefined_const_iterator;
+        typedef ::xsd::cxx::tree::traits< SimFlowPlant_PlantComponent_UserDefined_type, char > SimFlowPlant_PlantComponent_UserDefined_traits;
+
+        const SimFlowPlant_PlantComponent_UserDefined_sequence&
+        SimFlowPlant_PlantComponent_UserDefined () const;
+
+        SimFlowPlant_PlantComponent_UserDefined_sequence&
+        SimFlowPlant_PlantComponent_UserDefined ();
+
+        void
+        SimFlowPlant_PlantComponent_UserDefined (const SimFlowPlant_PlantComponent_UserDefined_sequence& s);
 
         // SimFlowPlant_SolarDevice_SolarCollectorIntegralCollectorStorage
         //
@@ -36165,23 +36683,6 @@ namespace schema
         void
         SimGroup_OutputRequestList_Variables (const SimGroup_OutputRequestList_Variables_sequence& s);
 
-        // SimGroup_Refrigeration_ChillerSet
-        //
-        typedef ::schema::simxml::SimModelCore::SimGroup_Refrigeration_ChillerSet SimGroup_Refrigeration_ChillerSet_type;
-        typedef ::xsd::cxx::tree::sequence< SimGroup_Refrigeration_ChillerSet_type, false > SimGroup_Refrigeration_ChillerSet_sequence;
-        typedef SimGroup_Refrigeration_ChillerSet_sequence::iterator SimGroup_Refrigeration_ChillerSet_iterator;
-        typedef SimGroup_Refrigeration_ChillerSet_sequence::const_iterator SimGroup_Refrigeration_ChillerSet_const_iterator;
-        typedef ::xsd::cxx::tree::traits< SimGroup_Refrigeration_ChillerSet_type, char > SimGroup_Refrigeration_ChillerSet_traits;
-
-        const SimGroup_Refrigeration_ChillerSet_sequence&
-        SimGroup_Refrigeration_ChillerSet () const;
-
-        SimGroup_Refrigeration_ChillerSet_sequence&
-        SimGroup_Refrigeration_ChillerSet ();
-
-        void
-        SimGroup_Refrigeration_ChillerSet (const SimGroup_Refrigeration_ChillerSet_sequence& s);
-
         // SimGroup_SchemeList_AirLoopAvailabilityMgrScheme
         //
         typedef ::schema::simxml::SimModelCore::SimGroup_SchemeList_AirLoopAvailabilityMgrScheme SimGroup_SchemeList_AirLoopAvailabilityMgrScheme_type;
@@ -37882,23 +38383,6 @@ namespace schema
         void
         SimList_OutputRequestList_Variables (const SimList_OutputRequestList_Variables_sequence& s);
 
-        // SimList_Refrigeration_ChillerSet
-        //
-        typedef ::schema::simxml::BuildingModel::SimList_Refrigeration_ChillerSet SimList_Refrigeration_ChillerSet_type;
-        typedef ::xsd::cxx::tree::sequence< SimList_Refrigeration_ChillerSet_type, false > SimList_Refrigeration_ChillerSet_sequence;
-        typedef SimList_Refrigeration_ChillerSet_sequence::iterator SimList_Refrigeration_ChillerSet_iterator;
-        typedef SimList_Refrigeration_ChillerSet_sequence::const_iterator SimList_Refrigeration_ChillerSet_const_iterator;
-        typedef ::xsd::cxx::tree::traits< SimList_Refrigeration_ChillerSet_type, char > SimList_Refrigeration_ChillerSet_traits;
-
-        const SimList_Refrigeration_ChillerSet_sequence&
-        SimList_Refrigeration_ChillerSet () const;
-
-        SimList_Refrigeration_ChillerSet_sequence&
-        SimList_Refrigeration_ChillerSet ();
-
-        void
-        SimList_Refrigeration_ChillerSet (const SimList_Refrigeration_ChillerSet_sequence& s);
-
         // SimList_SchemeList_AirLoopAvailabilityMgrScheme
         //
         typedef ::schema::simxml::BuildingModel::SimList_SchemeList_AirLoopAvailabilityMgrScheme SimList_SchemeList_AirLoopAvailabilityMgrScheme_type;
@@ -38867,6 +39351,23 @@ namespace schema
 
         void
         SimMaterialLayer_GlazingMaterialLayer_Default (const SimMaterialLayer_GlazingMaterialLayer_Default_sequence& s);
+
+        // SimMaterialLayer_GlazingMaterialLayer_Thermochromic
+        //
+        typedef ::schema::simxml::ResourcesGeneral::SimMaterialLayer_GlazingMaterialLayer_Thermochromic SimMaterialLayer_GlazingMaterialLayer_Thermochromic_type;
+        typedef ::xsd::cxx::tree::sequence< SimMaterialLayer_GlazingMaterialLayer_Thermochromic_type, false > SimMaterialLayer_GlazingMaterialLayer_Thermochromic_sequence;
+        typedef SimMaterialLayer_GlazingMaterialLayer_Thermochromic_sequence::iterator SimMaterialLayer_GlazingMaterialLayer_Thermochromic_iterator;
+        typedef SimMaterialLayer_GlazingMaterialLayer_Thermochromic_sequence::const_iterator SimMaterialLayer_GlazingMaterialLayer_Thermochromic_const_iterator;
+        typedef ::xsd::cxx::tree::traits< SimMaterialLayer_GlazingMaterialLayer_Thermochromic_type, char > SimMaterialLayer_GlazingMaterialLayer_Thermochromic_traits;
+
+        const SimMaterialLayer_GlazingMaterialLayer_Thermochromic_sequence&
+        SimMaterialLayer_GlazingMaterialLayer_Thermochromic () const;
+
+        SimMaterialLayer_GlazingMaterialLayer_Thermochromic_sequence&
+        SimMaterialLayer_GlazingMaterialLayer_Thermochromic ();
+
+        void
+        SimMaterialLayer_GlazingMaterialLayer_Thermochromic (const SimMaterialLayer_GlazingMaterialLayer_Thermochromic_sequence& s);
 
         // SimMaterialLayer_OpaqueMaterialLayer_Default
         //
@@ -41503,6 +42004,40 @@ namespace schema
         void
         SimPanel_Default_Default (const SimPanel_Default_Default_sequence& s);
 
+        // SimPanel_Glazing_Spandrel
+        //
+        typedef ::schema::simxml::BuildingModel::SimPanel_Glazing_Spandrel SimPanel_Glazing_Spandrel_type;
+        typedef ::xsd::cxx::tree::sequence< SimPanel_Glazing_Spandrel_type, false > SimPanel_Glazing_Spandrel_sequence;
+        typedef SimPanel_Glazing_Spandrel_sequence::iterator SimPanel_Glazing_Spandrel_iterator;
+        typedef SimPanel_Glazing_Spandrel_sequence::const_iterator SimPanel_Glazing_Spandrel_const_iterator;
+        typedef ::xsd::cxx::tree::traits< SimPanel_Glazing_Spandrel_type, char > SimPanel_Glazing_Spandrel_traits;
+
+        const SimPanel_Glazing_Spandrel_sequence&
+        SimPanel_Glazing_Spandrel () const;
+
+        SimPanel_Glazing_Spandrel_sequence&
+        SimPanel_Glazing_Spandrel ();
+
+        void
+        SimPanel_Glazing_Spandrel (const SimPanel_Glazing_Spandrel_sequence& s);
+
+        // SimPanel_Glazing_Vision
+        //
+        typedef ::schema::simxml::BuildingModel::SimPanel_Glazing_Vision SimPanel_Glazing_Vision_type;
+        typedef ::xsd::cxx::tree::sequence< SimPanel_Glazing_Vision_type, false > SimPanel_Glazing_Vision_sequence;
+        typedef SimPanel_Glazing_Vision_sequence::iterator SimPanel_Glazing_Vision_iterator;
+        typedef SimPanel_Glazing_Vision_sequence::const_iterator SimPanel_Glazing_Vision_const_iterator;
+        typedef ::xsd::cxx::tree::traits< SimPanel_Glazing_Vision_type, char > SimPanel_Glazing_Vision_traits;
+
+        const SimPanel_Glazing_Vision_sequence&
+        SimPanel_Glazing_Vision () const;
+
+        SimPanel_Glazing_Vision_sequence&
+        SimPanel_Glazing_Vision ();
+
+        void
+        SimPanel_Glazing_Vision (const SimPanel_Glazing_Vision_sequence& s);
+
         // SimPanelArrayParams_PanelArrayParams_Default
         //
         typedef ::schema::simxml::ResourcesGeneral::SimPanelArrayParams_PanelArrayParams_Default SimPanelArrayParams_PanelArrayParams_Default_type;
@@ -41519,6 +42054,40 @@ namespace schema
 
         void
         SimPanelArrayParams_PanelArrayParams_Default (const SimPanelArrayParams_PanelArrayParams_Default_sequence& s);
+
+        // SimPanelArrayParams_SolarPanelArray_SolarCollectorPV
+        //
+        typedef ::schema::simxml::ResourcesGeneral::SimPanelArrayParams_SolarPanelArray_SolarCollectorPV SimPanelArrayParams_SolarPanelArray_SolarCollectorPV_type;
+        typedef ::xsd::cxx::tree::sequence< SimPanelArrayParams_SolarPanelArray_SolarCollectorPV_type, false > SimPanelArrayParams_SolarPanelArray_SolarCollectorPV_sequence;
+        typedef SimPanelArrayParams_SolarPanelArray_SolarCollectorPV_sequence::iterator SimPanelArrayParams_SolarPanelArray_SolarCollectorPV_iterator;
+        typedef SimPanelArrayParams_SolarPanelArray_SolarCollectorPV_sequence::const_iterator SimPanelArrayParams_SolarPanelArray_SolarCollectorPV_const_iterator;
+        typedef ::xsd::cxx::tree::traits< SimPanelArrayParams_SolarPanelArray_SolarCollectorPV_type, char > SimPanelArrayParams_SolarPanelArray_SolarCollectorPV_traits;
+
+        const SimPanelArrayParams_SolarPanelArray_SolarCollectorPV_sequence&
+        SimPanelArrayParams_SolarPanelArray_SolarCollectorPV () const;
+
+        SimPanelArrayParams_SolarPanelArray_SolarCollectorPV_sequence&
+        SimPanelArrayParams_SolarPanelArray_SolarCollectorPV ();
+
+        void
+        SimPanelArrayParams_SolarPanelArray_SolarCollectorPV (const SimPanelArrayParams_SolarPanelArray_SolarCollectorPV_sequence& s);
+
+        // SimPanelArrayParams_SolarPanelArray_SolarCollectorThermal
+        //
+        typedef ::schema::simxml::ResourcesGeneral::SimPanelArrayParams_SolarPanelArray_SolarCollectorThermal SimPanelArrayParams_SolarPanelArray_SolarCollectorThermal_type;
+        typedef ::xsd::cxx::tree::sequence< SimPanelArrayParams_SolarPanelArray_SolarCollectorThermal_type, false > SimPanelArrayParams_SolarPanelArray_SolarCollectorThermal_sequence;
+        typedef SimPanelArrayParams_SolarPanelArray_SolarCollectorThermal_sequence::iterator SimPanelArrayParams_SolarPanelArray_SolarCollectorThermal_iterator;
+        typedef SimPanelArrayParams_SolarPanelArray_SolarCollectorThermal_sequence::const_iterator SimPanelArrayParams_SolarPanelArray_SolarCollectorThermal_const_iterator;
+        typedef ::xsd::cxx::tree::traits< SimPanelArrayParams_SolarPanelArray_SolarCollectorThermal_type, char > SimPanelArrayParams_SolarPanelArray_SolarCollectorThermal_traits;
+
+        const SimPanelArrayParams_SolarPanelArray_SolarCollectorThermal_sequence&
+        SimPanelArrayParams_SolarPanelArray_SolarCollectorThermal () const;
+
+        SimPanelArrayParams_SolarPanelArray_SolarCollectorThermal_sequence&
+        SimPanelArrayParams_SolarPanelArray_SolarCollectorThermal ();
+
+        void
+        SimPanelArrayParams_SolarPanelArray_SolarCollectorThermal (const SimPanelArrayParams_SolarPanelArray_SolarCollectorThermal_sequence& s);
 
         // SimPanelArrayParams_SolarShadeArray_Default
         //
@@ -44036,6 +44605,23 @@ namespace schema
         void
         SimProject_Project_T24_View (const SimProject_Project_T24_View_sequence& s);
 
+        // SimProjectType_Project_Default
+        //
+        typedef ::schema::simxml::BuildingModel::SimProjectType_Project_Default SimProjectType_Project_Default_type;
+        typedef ::xsd::cxx::tree::sequence< SimProjectType_Project_Default_type, false > SimProjectType_Project_Default_sequence;
+        typedef SimProjectType_Project_Default_sequence::iterator SimProjectType_Project_Default_iterator;
+        typedef SimProjectType_Project_Default_sequence::const_iterator SimProjectType_Project_Default_const_iterator;
+        typedef ::xsd::cxx::tree::traits< SimProjectType_Project_Default_type, char > SimProjectType_Project_Default_traits;
+
+        const SimProjectType_Project_Default_sequence&
+        SimProjectType_Project_Default () const;
+
+        SimProjectType_Project_Default_sequence&
+        SimProjectType_Project_Default ();
+
+        void
+        SimProjectType_Project_Default (const SimProjectType_Project_Default_sequence& s);
+
         // SimPropertyListValue_SimpleProp_ListValue
         //
         typedef ::schema::simxml::ResourcesGeneral::SimPropertyListValue_SimpleProp_ListValue SimPropertyListValue_SimpleProp_ListValue_type;
@@ -44240,6 +44826,23 @@ namespace schema
         void
         SimRefrigerationSystemElement_Compressor_Default (const SimRefrigerationSystemElement_Compressor_Default_sequence& s);
 
+        // SimRefrigerationSystemElement_CompressorRack_Default
+        //
+        typedef ::schema::simxml::MepModel::SimRefrigerationSystemElement_CompressorRack_Default SimRefrigerationSystemElement_CompressorRack_Default_type;
+        typedef ::xsd::cxx::tree::sequence< SimRefrigerationSystemElement_CompressorRack_Default_type, false > SimRefrigerationSystemElement_CompressorRack_Default_sequence;
+        typedef SimRefrigerationSystemElement_CompressorRack_Default_sequence::iterator SimRefrigerationSystemElement_CompressorRack_Default_iterator;
+        typedef SimRefrigerationSystemElement_CompressorRack_Default_sequence::const_iterator SimRefrigerationSystemElement_CompressorRack_Default_const_iterator;
+        typedef ::xsd::cxx::tree::traits< SimRefrigerationSystemElement_CompressorRack_Default_type, char > SimRefrigerationSystemElement_CompressorRack_Default_traits;
+
+        const SimRefrigerationSystemElement_CompressorRack_Default_sequence&
+        SimRefrigerationSystemElement_CompressorRack_Default () const;
+
+        SimRefrigerationSystemElement_CompressorRack_Default_sequence&
+        SimRefrigerationSystemElement_CompressorRack_Default ();
+
+        void
+        SimRefrigerationSystemElement_CompressorRack_Default (const SimRefrigerationSystemElement_CompressorRack_Default_sequence& s);
+
         // SimRefrigerationSystemElement_Condenser_AirCooled
         //
         typedef ::schema::simxml::MepModel::SimRefrigerationSystemElement_Condenser_AirCooled SimRefrigerationSystemElement_Condenser_AirCooled_type;
@@ -44341,23 +44944,6 @@ namespace schema
 
         void
         SimRefrigerationSystemElement_GasCooler_AirCooled (const SimRefrigerationSystemElement_GasCooler_AirCooled_sequence& s);
-
-        // SimRefrigerationSystemElement_PackagedCompressorRack_Default
-        //
-        typedef ::schema::simxml::MepModel::SimRefrigerationSystemElement_PackagedCompressorRack_Default SimRefrigerationSystemElement_PackagedCompressorRack_Default_type;
-        typedef ::xsd::cxx::tree::sequence< SimRefrigerationSystemElement_PackagedCompressorRack_Default_type, false > SimRefrigerationSystemElement_PackagedCompressorRack_Default_sequence;
-        typedef SimRefrigerationSystemElement_PackagedCompressorRack_Default_sequence::iterator SimRefrigerationSystemElement_PackagedCompressorRack_Default_iterator;
-        typedef SimRefrigerationSystemElement_PackagedCompressorRack_Default_sequence::const_iterator SimRefrigerationSystemElement_PackagedCompressorRack_Default_const_iterator;
-        typedef ::xsd::cxx::tree::traits< SimRefrigerationSystemElement_PackagedCompressorRack_Default_type, char > SimRefrigerationSystemElement_PackagedCompressorRack_Default_traits;
-
-        const SimRefrigerationSystemElement_PackagedCompressorRack_Default_sequence&
-        SimRefrigerationSystemElement_PackagedCompressorRack_Default () const;
-
-        SimRefrigerationSystemElement_PackagedCompressorRack_Default_sequence&
-        SimRefrigerationSystemElement_PackagedCompressorRack_Default ();
-
-        void
-        SimRefrigerationSystemElement_PackagedCompressorRack_Default (const SimRefrigerationSystemElement_PackagedCompressorRack_Default_sequence& s);
 
         // SimRefrigerationSystemElement_RefrigeratedCase_Default
         //
@@ -46620,6 +47206,23 @@ namespace schema
         void
         SimSiteAssembly_SiteAssembly_WindTurbine (const SimSiteAssembly_SiteAssembly_WindTurbine_sequence& s);
 
+        // SimSiteType_Site_Default
+        //
+        typedef ::schema::simxml::BuildingModel::SimSiteType_Site_Default SimSiteType_Site_Default_type;
+        typedef ::xsd::cxx::tree::sequence< SimSiteType_Site_Default_type, false > SimSiteType_Site_Default_sequence;
+        typedef SimSiteType_Site_Default_sequence::iterator SimSiteType_Site_Default_iterator;
+        typedef SimSiteType_Site_Default_sequence::const_iterator SimSiteType_Site_Default_const_iterator;
+        typedef ::xsd::cxx::tree::traits< SimSiteType_Site_Default_type, char > SimSiteType_Site_Default_traits;
+
+        const SimSiteType_Site_Default_sequence&
+        SimSiteType_Site_Default () const;
+
+        SimSiteType_Site_Default_sequence&
+        SimSiteType_Site_Default ();
+
+        void
+        SimSiteType_Site_Default (const SimSiteType_Site_Default_sequence& s);
+
         // SimSIUnitType_SiUnit_Default
         //
         typedef ::schema::simxml::ResourcesGeneral::SimSIUnitType_SiUnit_Default SimSIUnitType_SiUnit_Default_type;
@@ -47248,6 +47851,40 @@ namespace schema
 
         void
         SimSolarObsParams_SolarObstruction_Default (const SimSolarObsParams_SolarObstruction_Default_sequence& s);
+
+        // SimSolarPanelArrayParams_SolarPanelArray_SolarCollectorPV
+        //
+        typedef ::schema::simxml::ResourcesGeneral::SimSolarPanelArrayParams_SolarPanelArray_SolarCollectorPV SimSolarPanelArrayParams_SolarPanelArray_SolarCollectorPV_type;
+        typedef ::xsd::cxx::tree::sequence< SimSolarPanelArrayParams_SolarPanelArray_SolarCollectorPV_type, false > SimSolarPanelArrayParams_SolarPanelArray_SolarCollectorPV_sequence;
+        typedef SimSolarPanelArrayParams_SolarPanelArray_SolarCollectorPV_sequence::iterator SimSolarPanelArrayParams_SolarPanelArray_SolarCollectorPV_iterator;
+        typedef SimSolarPanelArrayParams_SolarPanelArray_SolarCollectorPV_sequence::const_iterator SimSolarPanelArrayParams_SolarPanelArray_SolarCollectorPV_const_iterator;
+        typedef ::xsd::cxx::tree::traits< SimSolarPanelArrayParams_SolarPanelArray_SolarCollectorPV_type, char > SimSolarPanelArrayParams_SolarPanelArray_SolarCollectorPV_traits;
+
+        const SimSolarPanelArrayParams_SolarPanelArray_SolarCollectorPV_sequence&
+        SimSolarPanelArrayParams_SolarPanelArray_SolarCollectorPV () const;
+
+        SimSolarPanelArrayParams_SolarPanelArray_SolarCollectorPV_sequence&
+        SimSolarPanelArrayParams_SolarPanelArray_SolarCollectorPV ();
+
+        void
+        SimSolarPanelArrayParams_SolarPanelArray_SolarCollectorPV (const SimSolarPanelArrayParams_SolarPanelArray_SolarCollectorPV_sequence& s);
+
+        // SimSolarPanelArrayParams_SolarPanelArray_SolarCollectorThermal
+        //
+        typedef ::schema::simxml::ResourcesGeneral::SimSolarPanelArrayParams_SolarPanelArray_SolarCollectorThermal SimSolarPanelArrayParams_SolarPanelArray_SolarCollectorThermal_type;
+        typedef ::xsd::cxx::tree::sequence< SimSolarPanelArrayParams_SolarPanelArray_SolarCollectorThermal_type, false > SimSolarPanelArrayParams_SolarPanelArray_SolarCollectorThermal_sequence;
+        typedef SimSolarPanelArrayParams_SolarPanelArray_SolarCollectorThermal_sequence::iterator SimSolarPanelArrayParams_SolarPanelArray_SolarCollectorThermal_iterator;
+        typedef SimSolarPanelArrayParams_SolarPanelArray_SolarCollectorThermal_sequence::const_iterator SimSolarPanelArrayParams_SolarPanelArray_SolarCollectorThermal_const_iterator;
+        typedef ::xsd::cxx::tree::traits< SimSolarPanelArrayParams_SolarPanelArray_SolarCollectorThermal_type, char > SimSolarPanelArrayParams_SolarPanelArray_SolarCollectorThermal_traits;
+
+        const SimSolarPanelArrayParams_SolarPanelArray_SolarCollectorThermal_sequence&
+        SimSolarPanelArrayParams_SolarPanelArray_SolarCollectorThermal () const;
+
+        SimSolarPanelArrayParams_SolarPanelArray_SolarCollectorThermal_sequence&
+        SimSolarPanelArrayParams_SolarPanelArray_SolarCollectorThermal ();
+
+        void
+        SimSolarPanelArrayParams_SolarPanelArray_SolarCollectorThermal (const SimSolarPanelArrayParams_SolarPanelArray_SolarCollectorThermal_sequence& s);
 
         // SimSolarShade_Default_Default
         //
@@ -50428,6 +51065,23 @@ namespace schema
         void
         SimTemplateHvacZoneEquipment_HvacZoneEquipment_Default (const SimTemplateHvacZoneEquipment_HvacZoneEquipment_Default_sequence& s);
 
+        // SimTemplateInteriorLighting_InteriorLighting_Area
+        //
+        typedef ::schema::simxml::ResourcesGeneral::SimTemplateInteriorLighting_InteriorLighting_Area SimTemplateInteriorLighting_InteriorLighting_Area_type;
+        typedef ::xsd::cxx::tree::sequence< SimTemplateInteriorLighting_InteriorLighting_Area_type, false > SimTemplateInteriorLighting_InteriorLighting_Area_sequence;
+        typedef SimTemplateInteriorLighting_InteriorLighting_Area_sequence::iterator SimTemplateInteriorLighting_InteriorLighting_Area_iterator;
+        typedef SimTemplateInteriorLighting_InteriorLighting_Area_sequence::const_iterator SimTemplateInteriorLighting_InteriorLighting_Area_const_iterator;
+        typedef ::xsd::cxx::tree::traits< SimTemplateInteriorLighting_InteriorLighting_Area_type, char > SimTemplateInteriorLighting_InteriorLighting_Area_traits;
+
+        const SimTemplateInteriorLighting_InteriorLighting_Area_sequence&
+        SimTemplateInteriorLighting_InteriorLighting_Area () const;
+
+        SimTemplateInteriorLighting_InteriorLighting_Area_sequence&
+        SimTemplateInteriorLighting_InteriorLighting_Area ();
+
+        void
+        SimTemplateInteriorLighting_InteriorLighting_Area (const SimTemplateInteriorLighting_InteriorLighting_Area_sequence& s);
+
         // SimTemplateInteriorLighting_InteriorLighting_Default
         //
         typedef ::schema::simxml::ResourcesGeneral::SimTemplateInteriorLighting_InteriorLighting_Default SimTemplateInteriorLighting_InteriorLighting_Default_type;
@@ -50444,6 +51098,23 @@ namespace schema
 
         void
         SimTemplateInteriorLighting_InteriorLighting_Default (const SimTemplateInteriorLighting_InteriorLighting_Default_sequence& s);
+
+        // SimTemplateInteriorLighting_InteriorLighting_Task
+        //
+        typedef ::schema::simxml::ResourcesGeneral::SimTemplateInteriorLighting_InteriorLighting_Task SimTemplateInteriorLighting_InteriorLighting_Task_type;
+        typedef ::xsd::cxx::tree::sequence< SimTemplateInteriorLighting_InteriorLighting_Task_type, false > SimTemplateInteriorLighting_InteriorLighting_Task_sequence;
+        typedef SimTemplateInteriorLighting_InteriorLighting_Task_sequence::iterator SimTemplateInteriorLighting_InteriorLighting_Task_iterator;
+        typedef SimTemplateInteriorLighting_InteriorLighting_Task_sequence::const_iterator SimTemplateInteriorLighting_InteriorLighting_Task_const_iterator;
+        typedef ::xsd::cxx::tree::traits< SimTemplateInteriorLighting_InteriorLighting_Task_type, char > SimTemplateInteriorLighting_InteriorLighting_Task_traits;
+
+        const SimTemplateInteriorLighting_InteriorLighting_Task_sequence&
+        SimTemplateInteriorLighting_InteriorLighting_Task () const;
+
+        SimTemplateInteriorLighting_InteriorLighting_Task_sequence&
+        SimTemplateInteriorLighting_InteriorLighting_Task ();
+
+        void
+        SimTemplateInteriorLighting_InteriorLighting_Task (const SimTemplateInteriorLighting_InteriorLighting_Task_sequence& s);
 
         // SimTemplateLocation_Location_Default
         //
@@ -50563,6 +51234,23 @@ namespace schema
 
         void
         SimTemplateZoneLoads_ZoneLoads_Default (const SimTemplateZoneLoads_ZoneLoads_Default_sequence& s);
+
+        // SimThermalZoneType_ThermalZone_Default
+        //
+        typedef ::schema::simxml::BuildingModel::SimThermalZoneType_ThermalZone_Default SimThermalZoneType_ThermalZone_Default_type;
+        typedef ::xsd::cxx::tree::sequence< SimThermalZoneType_ThermalZone_Default_type, false > SimThermalZoneType_ThermalZone_Default_sequence;
+        typedef SimThermalZoneType_ThermalZone_Default_sequence::iterator SimThermalZoneType_ThermalZone_Default_iterator;
+        typedef SimThermalZoneType_ThermalZone_Default_sequence::const_iterator SimThermalZoneType_ThermalZone_Default_const_iterator;
+        typedef ::xsd::cxx::tree::traits< SimThermalZoneType_ThermalZone_Default_type, char > SimThermalZoneType_ThermalZone_Default_traits;
+
+        const SimThermalZoneType_ThermalZone_Default_sequence&
+        SimThermalZoneType_ThermalZone_Default () const;
+
+        SimThermalZoneType_ThermalZone_Default_sequence&
+        SimThermalZoneType_ThermalZone_Default ();
+
+        void
+        SimThermalZoneType_ThermalZone_Default (const SimThermalZoneType_ThermalZone_Default_sequence& s);
 
         // SimTimeSeriesSchedule_Calendar_Configuration
         //
@@ -51924,6 +52612,40 @@ namespace schema
         void
         SimWindowType_Window_Default (const SimWindowType_Window_Default_sequence& s);
 
+        // SimWindowType_Window_Exterior
+        //
+        typedef ::schema::simxml::BuildingModel::SimWindowType_Window_Exterior SimWindowType_Window_Exterior_type;
+        typedef ::xsd::cxx::tree::sequence< SimWindowType_Window_Exterior_type, false > SimWindowType_Window_Exterior_sequence;
+        typedef SimWindowType_Window_Exterior_sequence::iterator SimWindowType_Window_Exterior_iterator;
+        typedef SimWindowType_Window_Exterior_sequence::const_iterator SimWindowType_Window_Exterior_const_iterator;
+        typedef ::xsd::cxx::tree::traits< SimWindowType_Window_Exterior_type, char > SimWindowType_Window_Exterior_traits;
+
+        const SimWindowType_Window_Exterior_sequence&
+        SimWindowType_Window_Exterior () const;
+
+        SimWindowType_Window_Exterior_sequence&
+        SimWindowType_Window_Exterior ();
+
+        void
+        SimWindowType_Window_Exterior (const SimWindowType_Window_Exterior_sequence& s);
+
+        // SimWindowType_Window_Interior
+        //
+        typedef ::schema::simxml::BuildingModel::SimWindowType_Window_Interior SimWindowType_Window_Interior_type;
+        typedef ::xsd::cxx::tree::sequence< SimWindowType_Window_Interior_type, false > SimWindowType_Window_Interior_sequence;
+        typedef SimWindowType_Window_Interior_sequence::iterator SimWindowType_Window_Interior_iterator;
+        typedef SimWindowType_Window_Interior_sequence::const_iterator SimWindowType_Window_Interior_const_iterator;
+        typedef ::xsd::cxx::tree::traits< SimWindowType_Window_Interior_type, char > SimWindowType_Window_Interior_traits;
+
+        const SimWindowType_Window_Interior_sequence&
+        SimWindowType_Window_Interior () const;
+
+        SimWindowType_Window_Interior_sequence&
+        SimWindowType_Window_Interior ();
+
+        void
+        SimWindowType_Window_Interior (const SimWindowType_Window_Interior_sequence& s);
+
         // SimModelVersion
         //
         typedef ::xml_schema::string SimModelVersion_type;
@@ -52028,7 +52750,7 @@ namespace schema
 
         void
         SimModelSchemaIDKey (::std::auto_ptr< SimModelSchemaIDKey_type > p);
-		// */
+
         // Constructors.
         //
         SimModel ();
@@ -52066,6 +52788,7 @@ namespace schema
         SimActuator_ElectricalRotor_Default_sequence SimActuator_ElectricalRotor_Default_;
         SimActuator_ValveActuator_Default_sequence SimActuator_ValveActuator_Default_;
         SimActuator_VirtualActuator_EmsActuator_sequence SimActuator_VirtualActuator_EmsActuator_;
+        SimAddress_Default_Default_sequence SimAddress_Default_Default_;
         SimAddress_Postal_Default_sequence SimAddress_Postal_Default_;
         SimAddress_Telecom_Default_sequence SimAddress_Telecom_Default_;
         SimAdjacentSiteParams_AdjacentSite_Default_sequence SimAdjacentSiteParams_AdjacentSite_Default_;
@@ -52121,6 +52844,7 @@ namespace schema
         SimAppPreferences_AppPreferences_EPlusInstalVersion_sequence SimAppPreferences_AppPreferences_EPlusInstalVersion_;
         SimAppPreferences_AppPreferences_MinMonthlyChargeType_sequence SimAppPreferences_AppPreferences_MinMonthlyChargeType_;
         SimAppPreferences_AppPreferences_MonthlyChargeType_sequence SimAppPreferences_AppPreferences_MonthlyChargeType_;
+        SimAppProjectDefaults_ProjectDefaults_Default_sequence SimAppProjectDefaults_ProjectDefaults_Default_;
         SimAppStdSbdDefaults_AppStdSbdDefaults_DesignTeam_sequence SimAppStdSbdDefaults_AppStdSbdDefaults_DesignTeam_;
         SimAppStdSbdDefaults_AppStdSbdDefaults_ExceptionalConditions_sequence SimAppStdSbdDefaults_AppStdSbdDefaults_ExceptionalConditions_;
         SimAppStdSbdDefaults_AppStdSbdDefaults_NonComplyAnalysis_sequence SimAppStdSbdDefaults_AppStdSbdDefaults_NonComplyAnalysis_;
@@ -52140,6 +52864,8 @@ namespace schema
         SimArrayParams_BldgElementArray_Default_sequence SimArrayParams_BldgElementArray_Default_;
         SimArrayParams_DoorArray_Default_sequence SimArrayParams_DoorArray_Default_;
         SimArrayParams_PanelArrayParams_Default_sequence SimArrayParams_PanelArrayParams_Default_;
+        SimArrayParams_SolarPanelArray_SolarCollectorPV_sequence SimArrayParams_SolarPanelArray_SolarCollectorPV_;
+        SimArrayParams_SolarPanelArray_SolarCollectorThermal_sequence SimArrayParams_SolarPanelArray_SolarCollectorThermal_;
         SimArrayParams_SolarShadeArray_Default_sequence SimArrayParams_SolarShadeArray_Default_;
         SimArrayParams_WindowArray_Default_sequence SimArrayParams_WindowArray_Default_;
         SimBeam_Default_Default_sequence SimBeam_Default_Default_;
@@ -52251,6 +52977,7 @@ namespace schema
         SimController_Daylighting_Windows_sequence SimController_Daylighting_Windows_;
         SimController_Default_Default_sequence SimController_Default_Default_;
         SimController_DemandManager_AirLoop_sequence SimController_DemandManager_AirLoop_;
+        SimController_Fluid_Default_sequence SimController_Fluid_Default_;
         SimController_LightingControl_Continuous_sequence SimController_LightingControl_Continuous_;
         SimController_LightingControl_ContinuousOff_sequence SimController_LightingControl_ContinuousOff_;
         SimController_LightingControl_MotionSensor_sequence SimController_LightingControl_MotionSensor_;
@@ -52507,6 +53234,8 @@ namespace schema
         SimDoorPanelProps_DoorPanelProps_Default_sequence SimDoorPanelProps_DoorPanelProps_Default_;
         SimDoorParams_Door_Default_sequence SimDoorParams_Door_Default_;
         SimDoorType_Door_Default_sequence SimDoorType_Door_Default_;
+        SimDoorType_Door_Exterior_sequence SimDoorType_Door_Exterior_;
+        SimDoorType_Door_Interior_sequence SimDoorType_Door_Interior_;
         SimDwgXrefParams_DwgXref_Default_sequence SimDwgXrefParams_DwgXref_Default_;
         SimEdge_Edge_EdgeCurve_sequence SimEdge_Edge_EdgeCurve_;
         SimEdge_Edge_OrientedEdge_sequence SimEdge_Edge_OrientedEdge_;
@@ -52566,8 +53295,10 @@ namespace schema
         SimFlowCompoundEqmt_UnitaryZoneEqmt_OutdoorAirUnit_sequence SimFlowCompoundEqmt_UnitaryZoneEqmt_OutdoorAirUnit_;
         SimFlowCompoundEqmt_UnitaryZoneEqmt_PTAC_sequence SimFlowCompoundEqmt_UnitaryZoneEqmt_PTAC_;
         SimFlowCompoundEqmt_UnitaryZoneEqmt_PTHP_sequence SimFlowCompoundEqmt_UnitaryZoneEqmt_PTHP_;
+        SimFlowCompoundEqmt_UnitaryZoneEqmt_RefrigerationChillerSet_sequence SimFlowCompoundEqmt_UnitaryZoneEqmt_RefrigerationChillerSet_;
         SimFlowCompoundEqmt_UnitaryZoneEqmt_UnitHeater_sequence SimFlowCompoundEqmt_UnitaryZoneEqmt_UnitHeater_;
         SimFlowCompoundEqmt_UnitaryZoneEqmt_UnitVentialtor_sequence SimFlowCompoundEqmt_UnitaryZoneEqmt_UnitVentialtor_;
+        SimFlowCompoundEqmt_UnitaryZoneEqmt_UserDefined_sequence SimFlowCompoundEqmt_UnitaryZoneEqmt_UserDefined_;
         SimFlowCompoundEqmt_UnitaryZoneEqmt_WaterSystemLoadProfile_sequence SimFlowCompoundEqmt_UnitaryZoneEqmt_WaterSystemLoadProfile_;
         SimFlowCompoundEqmt_UnitaryZoneEqmt_ZoneVentilationDesignFlowRate_sequence SimFlowCompoundEqmt_UnitaryZoneEqmt_ZoneVentilationDesignFlowRate_;
         SimFlowCompoundEqmt_VarRefrigerantFlowEqmt_AirConditioner_sequence SimFlowCompoundEqmt_VarRefrigerantFlowEqmt_AirConditioner_;
@@ -52593,6 +53324,7 @@ namespace schema
         SimFlowController_Valve_EMSValve_sequence SimFlowController_Valve_EMSValve_;
         SimFlowController_Valve_NonReturnValve_sequence SimFlowController_Valve_NonReturnValve_;
         SimFlowController_Valve_TemperingValve_sequence SimFlowController_Valve_TemperingValve_;
+        SimFlowEnergyTransfer_Coil_UserDefined_sequence SimFlowEnergyTransfer_Coil_UserDefined_;
         SimFlowEnergyTransfer_ConvectiveHeater_Electric_sequence SimFlowEnergyTransfer_ConvectiveHeater_Electric_;
         SimFlowEnergyTransfer_ConvectiveHeater_Radiant_Electric_sequence SimFlowEnergyTransfer_ConvectiveHeater_Radiant_Electric_;
         SimFlowEnergyTransfer_ConvectiveHeater_Radiant_Steam_sequence SimFlowEnergyTransfer_ConvectiveHeater_Radiant_Steam_;
@@ -52611,7 +53343,6 @@ namespace schema
         SimFlowEnergyTransfer_CoolingCoilWater_CoilAirCoolingWaterToAirHeatPumpEquationFit_sequence SimFlowEnergyTransfer_CoolingCoilWater_CoilAirCoolingWaterToAirHeatPumpEquationFit_;
         SimFlowEnergyTransfer_CoolingCoilWater_CoilAirCoolingWaterToAirHeatPumpParameterEstimation_sequence SimFlowEnergyTransfer_CoolingCoilWater_CoilAirCoolingWaterToAirHeatPumpParameterEstimation_;
         SimFlowEnergyTransfer_CoolingCoilWater_CoilAirCoolingWaterToAirHeatPumpVariableSpeedEquationFit_sequence SimFlowEnergyTransfer_CoolingCoilWater_CoilAirCoolingWaterToAirHeatPumpVariableSpeedEquationFit_;
-        SimFlowEnergyTransfer_CoolingCoilWater_CoilAirCoolingWaterUserDefined_sequence SimFlowEnergyTransfer_CoolingCoilWater_CoilAirCoolingWaterUserDefined_;
         SimFlowEnergyTransfer_Dehumidifier_Default_sequence SimFlowEnergyTransfer_Dehumidifier_Default_;
         SimFlowEnergyTransfer_Dehumidifier_NoFans_sequence SimFlowEnergyTransfer_Dehumidifier_NoFans_;
         SimFlowEnergyTransfer_Economizer_AirToAir_sequence SimFlowEnergyTransfer_Economizer_AirToAir_;
@@ -52670,7 +53401,6 @@ namespace schema
         SimFlowEnergyTransfer_HeatingCoilWater_CoilAirHeatingWaterToAirHeatPumpEquationFit_sequence SimFlowEnergyTransfer_HeatingCoilWater_CoilAirHeatingWaterToAirHeatPumpEquationFit_;
         SimFlowEnergyTransfer_HeatingCoilWater_CoilAirHeatingWaterToAirHeatPumpParameterEstimation_sequence SimFlowEnergyTransfer_HeatingCoilWater_CoilAirHeatingWaterToAirHeatPumpParameterEstimation_;
         SimFlowEnergyTransfer_HeatingCoilWater_CoilAirHeatingWaterToAirHeatPumpVariableSpeedEquationFit_sequence SimFlowEnergyTransfer_HeatingCoilWater_CoilAirHeatingWaterToAirHeatPumpVariableSpeedEquationFit_;
-        SimFlowEnergyTransfer_HeatingCoilWater_CoilAirHeatingWaterUserDefined_sequence SimFlowEnergyTransfer_HeatingCoilWater_CoilAirHeatingWaterUserDefined_;
         SimFlowEnergyTransfer_HeatingCoilWater_CoilAirPreHeatWater_sequence SimFlowEnergyTransfer_HeatingCoilWater_CoilAirPreHeatWater_;
         SimFlowEnergyTransfer_HeatingCoilWater_CoilWaterHeatingAirToWaterHeatPump_sequence SimFlowEnergyTransfer_HeatingCoilWater_CoilWaterHeatingAirToWaterHeatPump_;
         SimFlowEnergyTransfer_HeatingCoilWater_CoilWaterHeatingDesuperheater_sequence SimFlowEnergyTransfer_HeatingCoilWater_CoilWaterHeatingDesuperheater_;
@@ -52689,17 +53419,22 @@ namespace schema
         SimFlowEnergyTransferStorage_HotWaterTank_DomesticHotWater_sequence SimFlowEnergyTransferStorage_HotWaterTank_DomesticHotWater_;
         SimFlowEnergyTransferStorage_HotWaterTank_HeatPump_sequence SimFlowEnergyTransferStorage_HotWaterTank_HeatPump_;
         SimFlowEnergyTransferStorage_HotWaterTank_Mixed_sequence SimFlowEnergyTransferStorage_HotWaterTank_Mixed_;
+        SimFlowEnergyTransferStorage_HotWaterTank_Expansion_sequence SimFlowEnergyTransferStorage_HotWaterTank_Expansion_;
+        SimFlowEnergyTransferStorage_HotWaterTank_MixedDual_sequence SimFlowEnergyTransferStorage_HotWaterTank_MixedDual_;
         SimFlowEnergyTransferStorage_HotWaterTank_MixedTank_sequence SimFlowEnergyTransferStorage_HotWaterTank_MixedTank_;
         SimFlowEnergyTransferStorage_HotWaterTank_Stratified_sequence SimFlowEnergyTransferStorage_HotWaterTank_Stratified_;
+        SimFlowEnergyTransferStorage_HotWaterTank_StratifiedDual_sequence SimFlowEnergyTransferStorage_HotWaterTank_StratifiedDual_;
         SimFlowEnergyTransferStorage_HotWaterTank_StratifiedTank_sequence SimFlowEnergyTransferStorage_HotWaterTank_StratifiedTank_;
         SimFlowFitting_Default_Default_sequence SimFlowFitting_Default_Default_;
         SimFlowFitting_Difusser_Default_sequence SimFlowFitting_Difusser_Default_;
+        SimFlowFitting_Difusser_Return_sequence SimFlowFitting_Difusser_Return_;
+        SimFlowFitting_Difusser_Supply_sequence SimFlowFitting_Difusser_Supply_;
         SimFlowFitting_Electrical_Transformer_sequence SimFlowFitting_Electrical_Transformer_;
-        SimFlowFitting_FlowElementProxy_Default_sequence SimFlowFitting_FlowElementProxy_Default_;
-        SimFlowFitting_FlowElementProxy_DemandProxy_AirLoop_sequence SimFlowFitting_FlowElementProxy_DemandProxy_AirLoop_;
-        SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop_sequence SimFlowFitting_FlowElementProxy_DemandProxy_WaterLoop_;
-        SimFlowFitting_FlowElementProxy_SupplyProxy_AirLoop_sequence SimFlowFitting_FlowElementProxy_SupplyProxy_AirLoop_;
-        SimFlowFitting_FlowElementProxy_SupplyProxy_WaterLoop_sequence SimFlowFitting_FlowElementProxy_SupplyProxy_WaterLoop_;
+        SimFlowFitting_FlowFittingProxy_Default_sequence SimFlowFitting_FlowFittingProxy_Default_;
+        SimFlowFitting_FlowFittingProxy_DemandProxy_AirLoop_sequence SimFlowFitting_FlowFittingProxy_DemandProxy_AirLoop_;
+        SimFlowFitting_FlowFittingProxy_DemandProxy_WaterLoop_sequence SimFlowFitting_FlowFittingProxy_DemandProxy_WaterLoop_;
+        SimFlowFitting_FlowFittingProxy_SupplyProxy_AirLoop_sequence SimFlowFitting_FlowFittingProxy_SupplyProxy_AirLoop_;
+        SimFlowFitting_FlowFittingProxy_SupplyProxy_WaterLoop_sequence SimFlowFitting_FlowFittingProxy_SupplyProxy_WaterLoop_;
         SimFlowFitting_Mixer_AirMixer_sequence SimFlowFitting_Mixer_AirMixer_;
         SimFlowFitting_Mixer_AirMixerOutdoor_sequence SimFlowFitting_Mixer_AirMixerOutdoor_;
         SimFlowFitting_Mixer_AirMixerZoneReturn_sequence SimFlowFitting_Mixer_AirMixerZoneReturn_;
@@ -52766,7 +53501,7 @@ namespace schema
         SimFlowPlant_ElectricalGenerator_FuelCellAirSupply_sequence SimFlowPlant_ElectricalGenerator_FuelCellAirSupply_;
         SimFlowPlant_ElectricalGenerator_FuelCellAuxilaryHeater_sequence SimFlowPlant_ElectricalGenerator_FuelCellAuxilaryHeater_;
         SimFlowPlant_ElectricalGenerator_FuelCellElectricalStorage_sequence SimFlowPlant_ElectricalGenerator_FuelCellElectricalStorage_;
-        SimFlowPlant_ElectricalGenerator_FuelCellExhaustGastoWaterHeatExchanger_sequence SimFlowPlant_ElectricalGenerator_FuelCellExhaustGastoWaterHeatExchanger_;
+        SimFlowPlant_ElectricalGenerator_FuelCellExhaustGasToWaterHeatExchanger_sequence SimFlowPlant_ElectricalGenerator_FuelCellExhaustGasToWaterHeatExchanger_;
         SimFlowPlant_ElectricalGenerator_FuelCellInverter_sequence SimFlowPlant_ElectricalGenerator_FuelCellInverter_;
         SimFlowPlant_ElectricalGenerator_FuelCellPowerModule_sequence SimFlowPlant_ElectricalGenerator_FuelCellPowerModule_;
         SimFlowPlant_ElectricalGenerator_FuelCellStackCooler_sequence SimFlowPlant_ElectricalGenerator_FuelCellStackCooler_;
@@ -52789,6 +53524,7 @@ namespace schema
         SimFlowPlant_HeatPump_WaterToWater_EquationFit_Heating_sequence SimFlowPlant_HeatPump_WaterToWater_EquationFit_Heating_;
         SimFlowPlant_HeatPump_WaterToWater_ParameterEstimation_Cooling_sequence SimFlowPlant_HeatPump_WaterToWater_ParameterEstimation_Cooling_;
         SimFlowPlant_HeatPump_WaterToWater_ParameterEstimation_Heating_sequence SimFlowPlant_HeatPump_WaterToWater_ParameterEstimation_Heating_;
+        SimFlowPlant_PlantComponent_UserDefined_sequence SimFlowPlant_PlantComponent_UserDefined_;
         SimFlowPlant_SolarDevice_SolarCollectorIntegralCollectorStorage_sequence SimFlowPlant_SolarDevice_SolarCollectorIntegralCollectorStorage_;
         SimFlowPlant_SolarDevice_SolarCollectorPerformanceIntegralCollectorStorage_sequence SimFlowPlant_SolarDevice_SolarCollectorPerformanceIntegralCollectorStorage_;
         SimFlowPlant_SolarDevice_SolarPhotoVoltaic_sequence SimFlowPlant_SolarDevice_SolarPhotoVoltaic_;
@@ -52977,7 +53713,6 @@ namespace schema
         SimGroup_OutputRequestList_Meters_sequence SimGroup_OutputRequestList_Meters_;
         SimGroup_OutputRequestList_Reports_sequence SimGroup_OutputRequestList_Reports_;
         SimGroup_OutputRequestList_Variables_sequence SimGroup_OutputRequestList_Variables_;
-        SimGroup_Refrigeration_ChillerSet_sequence SimGroup_Refrigeration_ChillerSet_;
         SimGroup_SchemeList_AirLoopAvailabilityMgrScheme_sequence SimGroup_SchemeList_AirLoopAvailabilityMgrScheme_;
         SimGroup_SchemeList_AirTempControlScheme_sequence SimGroup_SchemeList_AirTempControlScheme_;
         SimGroup_SchemeList_CondenserOperatingScheme_sequence SimGroup_SchemeList_CondenserOperatingScheme_;
@@ -53078,7 +53813,6 @@ namespace schema
         SimList_OutputRequestList_Meters_sequence SimList_OutputRequestList_Meters_;
         SimList_OutputRequestList_Reports_sequence SimList_OutputRequestList_Reports_;
         SimList_OutputRequestList_Variables_sequence SimList_OutputRequestList_Variables_;
-        SimList_Refrigeration_ChillerSet_sequence SimList_Refrigeration_ChillerSet_;
         SimList_SchemeList_AirLoopAvailabilityMgrScheme_sequence SimList_SchemeList_AirLoopAvailabilityMgrScheme_;
         SimList_SchemeList_AirTempControlScheme_sequence SimList_SchemeList_AirTempControlScheme_;
         SimList_SchemeList_CondenserOperatingScheme_sequence SimList_SchemeList_CondenserOperatingScheme_;
@@ -53136,6 +53870,7 @@ namespace schema
         SimMaterial_VirtualBoundary_Default_sequence SimMaterial_VirtualBoundary_Default_;
         SimMaterialLayer_EquivGlazingLayer_Default_sequence SimMaterialLayer_EquivGlazingLayer_Default_;
         SimMaterialLayer_GlazingMaterialLayer_Default_sequence SimMaterialLayer_GlazingMaterialLayer_Default_;
+        SimMaterialLayer_GlazingMaterialLayer_Thermochromic_sequence SimMaterialLayer_GlazingMaterialLayer_Thermochromic_;
         SimMaterialLayer_OpaqueMaterialLayer_Default_sequence SimMaterialLayer_OpaqueMaterialLayer_Default_;
         SimMaterialLayer_VirtualBoundaryLayer_Default_sequence SimMaterialLayer_VirtualBoundaryLayer_Default_;
         SimMaterialLayerSet_Default_Default_sequence SimMaterialLayerSet_Default_Default_;
@@ -53291,7 +54026,11 @@ namespace schema
         SimOrganization_Organization_Default_sequence SimOrganization_Organization_Default_;
         SimOwnerHistory_Default_Default_sequence SimOwnerHistory_Default_Default_;
         SimPanel_Default_Default_sequence SimPanel_Default_Default_;
+        SimPanel_Glazing_Spandrel_sequence SimPanel_Glazing_Spandrel_;
+        SimPanel_Glazing_Vision_sequence SimPanel_Glazing_Vision_;
         SimPanelArrayParams_PanelArrayParams_Default_sequence SimPanelArrayParams_PanelArrayParams_Default_;
+        SimPanelArrayParams_SolarPanelArray_SolarCollectorPV_sequence SimPanelArrayParams_SolarPanelArray_SolarCollectorPV_;
+        SimPanelArrayParams_SolarPanelArray_SolarCollectorThermal_sequence SimPanelArrayParams_SolarPanelArray_SolarCollectorThermal_;
         SimPanelArrayParams_SolarShadeArray_Default_sequence SimPanelArrayParams_SolarShadeArray_Default_;
         SimPanelParams_GlazingPanel_Glazing_sequence SimPanelParams_GlazingPanel_Glazing_;
         SimPanelParams_PanelParams_Default_sequence SimPanelParams_PanelParams_Default_;
@@ -53440,6 +54179,7 @@ namespace schema
         SimProject_Project_DesignAlternative_sequence SimProject_Project_DesignAlternative_;
         SimProject_Project_SBD_View_sequence SimProject_Project_SBD_View_;
         SimProject_Project_T24_View_sequence SimProject_Project_T24_View_;
+        SimProjectType_Project_Default_sequence SimProjectType_Project_Default_;
         SimPropertyListValue_SimpleProp_ListValue_sequence SimPropertyListValue_SimpleProp_ListValue_;
         SimPropertySet_PropertySet_Default_sequence SimPropertySet_PropertySet_Default_;
         SimPropertySingleValue_SimpleProp_SingleValue_sequence SimPropertySingleValue_SimpleProp_SingleValue_;
@@ -53452,13 +54192,13 @@ namespace schema
         SimRampFlightParams_RampFlight_Default_sequence SimRampFlightParams_RampFlight_Default_;
         SimRampParams_Ramp_Default_sequence SimRampParams_Ramp_Default_;
         SimRefrigerationSystemElement_Compressor_Default_sequence SimRefrigerationSystemElement_Compressor_Default_;
+        SimRefrigerationSystemElement_CompressorRack_Default_sequence SimRefrigerationSystemElement_CompressorRack_Default_;
         SimRefrigerationSystemElement_Condenser_AirCooled_sequence SimRefrigerationSystemElement_Condenser_AirCooled_;
         SimRefrigerationSystemElement_Condenser_Cascade_sequence SimRefrigerationSystemElement_Condenser_Cascade_;
         SimRefrigerationSystemElement_Condenser_EvaporativeCooled_sequence SimRefrigerationSystemElement_Condenser_EvaporativeCooled_;
         SimRefrigerationSystemElement_Condenser_WaterCooled_sequence SimRefrigerationSystemElement_Condenser_WaterCooled_;
         SimRefrigerationSystemElement_Default_Default_sequence SimRefrigerationSystemElement_Default_Default_;
         SimRefrigerationSystemElement_GasCooler_AirCooled_sequence SimRefrigerationSystemElement_GasCooler_AirCooled_;
-        SimRefrigerationSystemElement_PackagedCompressorRack_Default_sequence SimRefrigerationSystemElement_PackagedCompressorRack_Default_;
         SimRefrigerationSystemElement_RefrigeratedCase_Default_sequence SimRefrigerationSystemElement_RefrigeratedCase_Default_;
         SimRefrigerationSystemElement_RefrigerationChiller_AirChiller_sequence SimRefrigerationSystemElement_RefrigerationChiller_AirChiller_;
         SimRefrigerationSystemElement_Subcooler_Default_sequence SimRefrigerationSystemElement_Subcooler_Default_;
@@ -53592,6 +54332,7 @@ namespace schema
         SimSiteAssembly_SiteAssembly_SolarPhotovoltaic_sequence SimSiteAssembly_SiteAssembly_SolarPhotovoltaic_;
         SimSiteAssembly_SiteAssembly_Water_sequence SimSiteAssembly_SiteAssembly_Water_;
         SimSiteAssembly_SiteAssembly_WindTurbine_sequence SimSiteAssembly_SiteAssembly_WindTurbine_;
+        SimSiteType_Site_Default_sequence SimSiteType_Site_Default_;
         SimSIUnitType_SiUnit_Default_sequence SimSIUnitType_SiUnit_Default_;
         SimSlab_Ceiling_InterzoneCeiling_sequence SimSlab_Ceiling_InterzoneCeiling_;
         SimSlab_Ceiling_InterzoneCeilingAdiabatic_sequence SimSlab_Ceiling_InterzoneCeilingAdiabatic_;
@@ -53629,6 +54370,8 @@ namespace schema
         SimSlabType_Slab_Roof_sequence SimSlabType_Slab_Roof_;
         SimSoftwareApplication_Default_Default_sequence SimSoftwareApplication_Default_Default_;
         SimSolarObsParams_SolarObstruction_Default_sequence SimSolarObsParams_SolarObstruction_Default_;
+        SimSolarPanelArrayParams_SolarPanelArray_SolarCollectorPV_sequence SimSolarPanelArrayParams_SolarPanelArray_SolarCollectorPV_;
+        SimSolarPanelArrayParams_SolarPanelArray_SolarCollectorThermal_sequence SimSolarPanelArrayParams_SolarPanelArray_SolarCollectorThermal_;
         SimSolarShade_Default_Default_sequence SimSolarShade_Default_Default_;
         SimSolarShade_Fin_Default_sequence SimSolarShade_Fin_Default_;
         SimSolarShade_Fin_Projection_sequence SimSolarShade_Fin_Projection_;
@@ -53816,7 +54559,9 @@ namespace schema
         SimTemplateDaylighting_Daylighting_Skylights_sequence SimTemplateDaylighting_Daylighting_Skylights_;
         SimTemplateDaylighting_Daylighting_Windows_sequence SimTemplateDaylighting_Daylighting_Windows_;
         SimTemplateHvacZoneEquipment_HvacZoneEquipment_Default_sequence SimTemplateHvacZoneEquipment_HvacZoneEquipment_Default_;
+        SimTemplateInteriorLighting_InteriorLighting_Area_sequence SimTemplateInteriorLighting_InteriorLighting_Area_;
         SimTemplateInteriorLighting_InteriorLighting_Default_sequence SimTemplateInteriorLighting_InteriorLighting_Default_;
+        SimTemplateInteriorLighting_InteriorLighting_Task_sequence SimTemplateInteriorLighting_InteriorLighting_Task_;
         SimTemplateLocation_Location_Default_sequence SimTemplateLocation_Location_Default_;
         SimTemplateNaturalVentilation_NaturalVentilation_Default_sequence SimTemplateNaturalVentilation_NaturalVentilation_Default_;
         SimTemplateOutputFormatSet_OutputFormatSet_Default_sequence SimTemplateOutputFormatSet_OutputFormatSet_Default_;
@@ -53824,6 +54569,7 @@ namespace schema
         SimTemplateSimulationParameters_SimulationParameters_Default_sequence SimTemplateSimulationParameters_SimulationParameters_Default_;
         SimTemplateZoneConditions_ZoneConditions_Default_sequence SimTemplateZoneConditions_ZoneConditions_Default_;
         SimTemplateZoneLoads_ZoneLoads_Default_sequence SimTemplateZoneLoads_ZoneLoads_Default_;
+        SimThermalZoneType_ThermalZone_Default_sequence SimThermalZoneType_ThermalZone_Default_;
         SimTimeSeriesSchedule_Calendar_Configuration_sequence SimTimeSeriesSchedule_Calendar_Configuration_;
         SimTimeSeriesSchedule_Calendar_Default_sequence SimTimeSeriesSchedule_Calendar_Default_;
         SimTimeSeriesSchedule_Calendar_SpecialDays_sequence SimTimeSeriesSchedule_Calendar_SpecialDays_;
@@ -53904,6 +54650,8 @@ namespace schema
         SimWindowPanelProps_WindowPanelProps_Default_sequence SimWindowPanelProps_WindowPanelProps_Default_;
         SimWindowParams_Window_Default_sequence SimWindowParams_Window_Default_;
         SimWindowType_Window_Default_sequence SimWindowType_Window_Default_;
+        SimWindowType_Window_Exterior_sequence SimWindowType_Window_Exterior_;
+        SimWindowType_Window_Interior_sequence SimWindowType_Window_Interior_;
         SimModelVersion_optional SimModelVersion_;
         SimModelSchemaVersion_optional SimModelSchemaVersion_;
         SimModelUnitsVersion_optional SimModelUnitsVersion_;

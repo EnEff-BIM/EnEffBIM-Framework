@@ -138,30 +138,6 @@ namespace schema
       {
         this->ObjectCreationParams_.set (x);
       }
-
-      const SimObject::IsTemplateObject_optional& SimObject::
-      IsTemplateObject () const
-      {
-        return this->IsTemplateObject_;
-      }
-
-      SimObject::IsTemplateObject_optional& SimObject::
-      IsTemplateObject ()
-      {
-        return this->IsTemplateObject_;
-      }
-
-      void SimObject::
-      IsTemplateObject (const IsTemplateObject_type& x)
-      {
-        this->IsTemplateObject_.set (x);
-      }
-
-      void SimObject::
-      IsTemplateObject (const IsTemplateObject_optional& x)
-      {
-        this->IsTemplateObject_ = x;
-      }
     }
   }
 }
@@ -191,8 +167,7 @@ namespace schema
       : ::schema::simxml::SimModelCore::SimObjectDefinition (),
         TypeDefinition_ (this),
         ObjectType_ (this),
-        ObjectCreationParams_ (this),
-        IsTemplateObject_ (this)
+        ObjectCreationParams_ (this)
       {
       }
 
@@ -201,8 +176,7 @@ namespace schema
       : ::schema::simxml::SimModelCore::SimObjectDefinition (RefId),
         TypeDefinition_ (this),
         ObjectType_ (this),
-        ObjectCreationParams_ (this),
-        IsTemplateObject_ (this)
+        ObjectCreationParams_ (this)
       {
       }
 
@@ -213,8 +187,7 @@ namespace schema
       : ::schema::simxml::SimModelCore::SimObjectDefinition (x, f, c),
         TypeDefinition_ (x.TypeDefinition_, f, this),
         ObjectType_ (x.ObjectType_, f, this),
-        ObjectCreationParams_ (x.ObjectCreationParams_, f, this),
-        IsTemplateObject_ (x.IsTemplateObject_, f, this)
+        ObjectCreationParams_ (x.ObjectCreationParams_, f, this)
       {
       }
 
@@ -225,8 +198,7 @@ namespace schema
       : ::schema::simxml::SimModelCore::SimObjectDefinition (e, f | ::xml_schema::flags::base, c),
         TypeDefinition_ (this),
         ObjectType_ (this),
-        ObjectCreationParams_ (this),
-        IsTemplateObject_ (this)
+        ObjectCreationParams_ (this)
       {
         if ((f & ::xml_schema::flags::base) == 0)
         {
@@ -289,17 +261,6 @@ namespace schema
             }
           }
 
-          // IsTemplateObject
-          //
-          if (n.name () == "IsTemplateObject" && n.namespace_ () == "http://d-alchemy.com/schema/simxml/SimModelCore")
-          {
-            if (!this->IsTemplateObject_)
-            {
-              this->IsTemplateObject_.set (IsTemplateObject_traits::create (i, f, this));
-              continue;
-            }
-          }
-
           break;
         }
       }
@@ -320,7 +281,6 @@ namespace schema
           this->TypeDefinition_ = x.TypeDefinition_;
           this->ObjectType_ = x.ObjectType_;
           this->ObjectCreationParams_ = x.ObjectCreationParams_;
-          this->IsTemplateObject_ = x.IsTemplateObject_;
         }
 
         return *this;
